@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9342a06550427162219bf84a59178783e26473d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: febbc4e398fb2611a2968c2dbd9a922b12f45e5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="convert-dialog-box"></a>Convertir, boîte de dialogue
 La boîte de dialogue **Convertir** vous permet de sélectionner un outil de conversion pour créer un projet à partir d’un ancien projet, par exemple créer un projet [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] à partir d’un projet Visual Basic 6. Vous pouvez également utiliser le [convertisseur de projet Visual Studio](https://github.com/ssvaidya/VSProjectConverter) pour mettre à niveau des projets créés dans des versions précédentes de Visual Studio.   

@@ -12,17 +12,18 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f93c78df2128be830865026039552652fe901a8c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48072da90145fbb60157b18bde5f38ce3cd8a8dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-rules-by-id"></a>Règles de performance par ID
 |Warning|Description|  
 |-------------|-----------------|  
 |[DA0001 : Utilisez StringBuilder pour les concaténations](../profiling/da0001-use-stringbuilder-for-concatenations.md)|Les appels à System.String.Concat représentent une part importante des données de profilage. Envisagez l’utilisation de la classe <xref:System.Text.StringBuilder> pour construire des chaînes à partir de plusieurs segments.|  
-|[DA0002 : VSPerfCorProf.dll est manquant](../profiling/da0002-vsperfcorprof-dll-is-missing.md)|Le profileur n’a pas trouvé VSPerfCorProf.dll lors de l’exécution du profilage. Cet avertissement se produit quand les outils en ligne de commande pour la collecte de données du profileur sont utilisés sans l’outil VSPerfCLREnv.cmd pour initialiser les variables d’environnement nécessaires.|  
+|[DA0002 : VSPerfCorProf.dll manquant](../profiling/da0002-vsperfcorprof-dll-is-missing.md)|Le profileur n’a pas trouvé VSPerfCorProf.dll lors de l’exécution du profilage. Cet avertissement se produit quand les outils en ligne de commande pour la collecte de données du profileur sont utilisés sans l’outil VSPerfCLREnv.cmd pour initialiser les variables d’environnement nécessaires.|  
 |[DA0003 : Nombreux échantillons de noyau](../profiling/da0003-many-kernel-samples.md)|Une proportion importante des échantillons de la pile des appels qui ont été collectés pour l’application s’exécutaient en mode noyau. Envisagez de profiler votre application avec une autre méthode de profilage.|  
 |[DA0004 : Utilisation intensive du processeur](../profiling/da0004-high-processor-usage.md)|L’utilisation du processeur (UC) était très élevée dans les données de profilage qui ont été collectées à l’aide de la méthode d’instrumentation. Utilisez la méthode de profilage par échantillonnage lorsque vous profilez une application utilisant le processeur de manière intensive.|  
 |[DA0005 : Collections GC2 fréquentes](../profiling/da0005-frequent-gc2-collections.md)|Un nombre élevé d’objets mémoire .NET est actuellement récupéré dans le cadre d’un garbage collection de génération 2.|  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 |[DA0023 : temps processeur GC élevé](../profiling/da0023-high-gc-cpu-time.md)|Les données relatives aux performances système qui ont été collectées pendant le profilage indiquent que le temps consacré à la garbage collection est très important, par rapport au temps total de traitement de l’application.|  
 |[DA0024 : Temps UC GC excessif](../profiling/da0024-excessive-gc-cpu-time.md)|Les données relatives aux performances système qui sont collectées pendant le profilage indiquent que le temps consacré au garbage collection est extrêmement important, par rapport au temps total de traitement de l’application.|  
 |[DA0026 : Traitement du temps UC excessif pour le noyau](../profiling/da0026-excessive-kernel-cpu-time-processing.md)|Le temps processeur qui a été exécuté en mode noyau a dépassé le temps passé en mode utilisateur. Effectuez de nouveau un profilage et un échantillonnage du nombre d’appels système (syscalls) pour déterminer la cause des durées élevées d’exécution en mode noyau.|  
-|[DA0029 : version CLR non prise en charge](../profiling/da0029-unsupported-clr-version.md)|Vous essayez de profiler une application qui utilise le .NET Framework version 1.1, qui n’est pas pris en charge par les outils de profilage.|  
+|[DA0029 : Version CLR non prise en charge](../profiling/da0029-unsupported-clr-version.md)|Vous essayez de profiler une application qui utilise le .NET Framework version 1.1, qui n’est pas pris en charge par les outils de profilage.|  
 |[DA0030 : collecter les mesures d’interaction de couche pour les projets de base de données](../profiling/da0030-gather-tier-interaction-measurements-for-database-projects.md)|Les appels aux méthodes <xref:System.Data> représentent une part importante des données de profilage et vous n’avez pas collecté de données d’interaction de couche lors de l’exécution du profilage. Effectuez un nouveau profilage et ajoutez des données d’interaction de couche.|  
 |[DA0038 : taux élevé de conflits de verrouillage](../profiling/da0038-high-rate-of-lock-contentions.md)|Les données relatives aux performances système qui sont collectées avec les données de profilage indiquent qu’un taux très élevé de conflits de verrouillage a été relevé lors de l’exécution de l’application. Effectuez un nouveau profilage à l’aide de la méthode de profilage d’accès concurrentiel pour rechercher la cause des conflits.|  
 |[DA0039 : Taux très élevé de conflits de verrouillage](../profiling/da0039-very-high-rate-of-lock-contentions.md)|Les données relatives aux performances système qui sont collectées avec les données de profilage indiquent qu’un taux excessif de conflits de verrouillage a été relevé lors de l’exécution de l’application. Effectuez un nouveau profilage à l’aide de la méthode de profilage d’accès concurrentiel pour rechercher la cause des conflits.|  

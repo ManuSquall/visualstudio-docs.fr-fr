@@ -15,16 +15,17 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2df71ef2498e3e5cf1f1bfef1dd16867d3e8991
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eade1af6d21d4068d96f021d43f60c0ca38bb33c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>Fonctionnement de l’allocation de mémoire et des informations de durée de vie des objets
 La méthode de profilage d’*allocation de mémoire .NET* des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] collecte des informations sur la taille et le nombre d’objets qui ont été créés dans une allocation ou détruits dans un garbage collection, ainsi que des informations supplémentaires sur la *pile des appels* de la fonction quand l’événement s’est produite. Une *pile des appels* est une structure dynamique qui stocke des informations sur les fonctions qui s’exécutent sur le processeur.  
   
- **Requirements**  
+ **Spécifications**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   

@@ -18,11 +18,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50dc5727ab98f09ada660c2d92c07d908f71c548
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7459b155192869f02541d65da9cfaa80f22ddd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled, fonction
 Détermine si une session a activé le fournisseur ETW spécifié.  
@@ -53,7 +54,7 @@ HRESULT CvIsEnabledEx(
 ## <a name="return-value"></a>Valeur de retour  
  S_OK si le fournisseur est activé. S_FALSE si le fournisseur est désactivé. Code d’erreur en cas d’erreur. Utilisez la macro FAILED pour vérifier la condition d’erreur, puis recherchez S_OK/S_FALSE.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête** : cvmarkers.h  
   
 ## <a name="see-also"></a>Voir aussi  

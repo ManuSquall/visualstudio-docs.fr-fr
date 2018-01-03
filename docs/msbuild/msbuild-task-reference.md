@@ -18,11 +18,12 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c0d1474fb03acd838387677786656967e852fdf9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ae20ab8aead2369ddd3024c84b66003cf958358
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-task-reference"></a>Informations de référence sur les tâches MSBuild
 Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches de la liste suivante sont incluses dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quand [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] est installé, des tâches supplémentaires sont disponibles pour générer des projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Pour plus d’informations, consultez [Tâches Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -225,6 +226,6 @@ Les tâches fournissent le code exécuté pendant le processus de génération. 
  Transforme une entrée XML à l’aide d’une *transformation XLS* (XSLT) ou d’un XSLT compilé et envoie la sortie vers un fichier ou un périphérique de sortie.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)   
+ [Référence MSBuild](../msbuild/msbuild-reference.md)   
  [Task Writing (Écriture de tâches)](../msbuild/task-writing.md)   
  [Tâches MSBuild](../msbuild/msbuild-tasks.md)

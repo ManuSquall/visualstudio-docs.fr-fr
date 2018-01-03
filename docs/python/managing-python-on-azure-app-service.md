@@ -12,11 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d328897a4d7644e76634ecff3bfbaef4dbd0c3ec
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 5ebbded093da4b3a6bb5b829628de481d43355dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-python-on-azure-app-service"></a>Gestion de Python sur Azure App Service
 
@@ -28,7 +31,7 @@ Une prise en charge personnalisable de Python sur Azure App Service est fournie 
 > Bien que Python 2.7 et 3.4 soient installés par défaut sur App Service dans les dossiers racine du serveur, vous ne pouvez pas personnaliser ni installer des packages dans ces environnements, et vous ne devez pas dépendre de leur présence. Vous devez à la place vous appuyer sur une extension de site que vous contrôlez, comme décrit dans cette rubrique.
 
 > [!Important]
-> Les processus décrits ici sont susceptibles de changer, notamment à des fins d’amélioration. Les changements sont annoncés sur le [blog Python Engineering at Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
+> Les processus décrits ici sont susceptibles de changer, notamment à des fins d’amélioration. Les modifications sont annoncées sur le [blog Python Engineering at Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="choosing-a-python-version-through-the-azure-portal"></a>Choix d’une version de Python via le portail Azure
 
@@ -167,7 +170,7 @@ Pour installer des packages directement dans l’environnement du serveur, utili
 | [Console Kudu d’Azure App Service](#azure-app-service-kudu-console) | Installe des packages de façon interactive. Les packages doivent être du Python pur ou doivent publier des wheels. |
 | [API REST Kudu](#kudu-rest-api) | Peut être utilisée pour automatiser l’installation de packages.  Les packages doivent être du Python pur ou doivent publier des wheels. |
 | Regrouper avec une application | Installez des packages directement dans votre projet, puis déployez-les sur App Service comme s’ils faisaient partie de votre application. Selon le nombre de dépendances et la fréquence de leur mise à jour, cette méthode peut représenter le moyen le plus simple de lancer un déploiement de travail. Notez bien que les bibliothèques doivent correspondre exactement à la version de Python sur le serveur, sinon des erreurs incompréhensibles se produisent après le déploiement. Cela dit, comme les versions de Python dans les extensions de site App Service sont exactement les mêmes que celles publiées sur python.org, vous pouvez facilement obtenir une version compatible pour un développement local. |
-| Environnements virtuels | Non prise en charge. Au lieu de cela, utilisez le regroupement et définissez la variable d’environnement `PYTHONPATH` pour qu’elle pointe vers l’emplacement des packages. |
+| Environnements virtuels | Non pris en charge. Au lieu de cela, utilisez le regroupement et définissez la variable d’environnement `PYTHONPATH` pour qu’elle pointe vers l’emplacement des packages. |
 
 
 ### <a name="azure-app-service-kudu-console"></a>Console Kudu d’Azure App Service

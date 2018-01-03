@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: da6628c34570bfe637c2cc5b3d8cad12b16dac12
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 665f03744fc559727e96373512fc983e5d75293c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="securing-applications"></a>Sécurisation des applications
 Si la plupart des applications posent des défis courants en matière de sécurité, chaque domaine d'application pose néanmoins des défis en cette matière qui lui sont propres.  

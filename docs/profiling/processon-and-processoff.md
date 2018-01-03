@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e187498656f1fd781d26e6b04426621bd2f3c3c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e8a94b52ba8d2fc0ce4208014e40ab3821ecb1e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processon-and-processoff"></a>ProcessOn et ProcessOff
 Les sous commandes **ProcessOff** et **ProcessOn** de VSPerfCmd.exe permettent de suspendre et de reprendre le profilage pour le processus spécifié dans une session de profilage en ligne de commande. **ProcessOff** arrête le profilage du processus et **ProcessOn** le démarre.  
@@ -45,7 +46,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  L’identificateur entier du processus à démarrer ou à arrêter. Les ID de processus sont répertoriés sous l’onglet Processus du Gestionnaire des tâches de Windows.  
   
 ## <a name="required-subcommands"></a>Sous-commandes obligatoires  
- None  
+ Aucun.  
   
 ## <a name="valid-subcommands"></a>Sous-commandes valides  
  Vous pouvez spécifier **ProcessOn** et **ProcessOff** sur des lignes de commande qui contiennent également les sous-commandes suivantes.  
@@ -53,7 +54,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  **Start:** `Method`  
  Initialise la session de profilage en ligne de commande et définit la méthode de profilage spécifiée.  
   
- **Launch:** `AppName`  
+ **Launch :** `AppName`  
  Démarre l’application spécifiée et commence le profilage avec la méthode d’échantillonnage.  
   
  **Attach :** `PID`  

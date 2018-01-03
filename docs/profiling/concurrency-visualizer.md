@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 07/11/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,39 +12,24 @@ f1_keywords:
 - vs.cv.overview
 - vs.cv.performance.gettingstarted
 - vs.cv.gettingstarted
-helpviewer_keywords:
-- Concurrency Visualizer, Concurrency Visualizer
+helpviewer_keywords: Concurrency Visualizer, Concurrency Visualizer
 ms.assetid: ae5879a0-1e1a-455a-ba72-148e57f59289
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.workload: multiple
+ms.openlocfilehash: 8b811b664df5d64a2235d641a6facf6cec889fe4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
-ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
-ms.openlocfilehash: 01237b9565a05d9f8bac0973af66a0f90e927ef0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/13/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer"></a>Visualiseur concurrentiel
 > [!NOTE]
 >  Le visualiseur concurrentiel est une extension facultative de Visual Studio. Vous pouvez télécharger le visualiseur concurrentiel et les Outils de collecte du visualiseur concurrentiel à partir des liens suivants :  
 >   
+>  -   Télécharger l’extension              [Visualiseur concurrentiel pour Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview).  
 >  -   Télécharger l’extension              [Visualiseur concurrentiel pour Visual Studio 2015](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9).  
 > -   Télécharger les              [Outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103).  
 >   
@@ -54,7 +38,7 @@ ms.lasthandoff: 07/13/2017
  Le visualiseur concurrentiel vous permet de voir comment votre application multithread s’exécute. Les vues du visualiseur concurrentiel fournissent des données graphiques, tabulaires et textuelles qui montrent les relations temporelles entre les threads de votre programme et le système en général. Vous pouvez utiliser le visualiseur concurrentiel pour localiser les goulots d’étranglement au niveau des performances, la sous-utilisation de l’UC, les conflits de threads, la migration de threads inter-cœurs, les délais de synchronisation, l’activité DirectX, les zones d’E/S avec chevauchement et d’autres informations. Les vues fournissent des données exploitables en liant leur sortie graphique aux piles des appels et au code source.  
 
 > [!NOTE]
->  Le visualiseur concurrentiel n’est pas encore disponible pour Visual Studio 2017. Le visualiseur concurrentiel ne prend pas en charge les projets web.  
+>  Le visualiseur concurrentiel ne prend pas en charge les projets web.  
   
  Le visualiseur concurrentiel s’appuie sur la fonctionnalité [Suivi d’événements pour Windows](http://go.microsoft.com/fwlink/?LinkId=234579) .  
   
@@ -72,4 +56,5 @@ ms.lasthandoff: 07/13/2017
 |[Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Décrit comment utiliser l’utilitaire de ligne de commande du visualiseur concurrentiel (CVCollectionCmd.exe) pour collecter et traiter les traces sur les ordinateurs qui n’ont pas Visual Studio.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Profilage dans Visual Studio](../profiling/index.md) [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)
+ [Profilage dans Visual Studio](../profiling/index.md)  
+ [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)

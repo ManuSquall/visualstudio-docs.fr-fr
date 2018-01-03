@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c2618dbaad3fcae95219e2b6a8a1f9b3d87bf09
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a26dd168e83584b19a9d6ddad37496082c166f2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Page Options, Polices et couleurs, propriétés de nœud
 Ce document décrit les propriétés de police et de couleur d’une fenêtre Outil qui est inscrite pour apparaître sous **Polices et couleurs** dans la catégorie **Environnement** de la boîte de dialogue **Options**. La nature dynamique des groupes d’éléments colorables, qui peuvent changer si des packages VS sont installés ou désinstallés, est prise en charge.  
@@ -29,15 +30,15 @@ Ce document décrit les propriétés de police et de couleur d’une fenêtre Ou
 ## <a name="text-editor-or-printer-or-dialogs-and-tool-windows"></a>Éditeur de texte ou imprimante ou boîtes de dialogue et fenêtres Outil  
  `DTE.Properties("FontsAndColors", "TextEditor")`  
   
- ou  
+ - ou -  
   
  `DTE.Properties("FontsAndColors", "Printer")`  
   
- ou  
+ - ou -  
   
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`  
   
-|Nom de l'élément de propriété|Valeur|Description|  
+|Nom de l'élément de propriété|Value|Description|  
 |------------------------|-----------|-----------------|  
 |FontFamily|Get/Set (chaîne)|Nom de la police à utiliser, tel que « Courier New ».|  
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|Valeur <xref:EnvDTE.vsFontCharSet> indiquant le type de jeu de caractères à utiliser, tel que l’hébreu ou le russe.|  

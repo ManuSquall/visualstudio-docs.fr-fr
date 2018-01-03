@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0006505bb1c1825c79a7ba1b04d1323c8ca1608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 31f9f7650336c3787e68b511cf099c04317bca7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resource-contention-data-views"></a>Vues de données de conflit de ressources
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui comprennent des données de profilage des conflits de threads.  
@@ -49,13 +50,13 @@ Cette section contient des informations de référence sur les vues et les rappo
  [Vue Conflits de ressources](../profiling/resource-contentions-view-contention-data.md)  
  Liste les données de conflits de ressources par ressource bloquée.  
   
- [Vue Lignes](../profiling/lines-view-contention-data.md)  
+ [Lignes, vue](../profiling/lines-view-contention-data.md)  
  Liste les données de conflits de ressources par ligne de code source.  
   
  [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)  
  Liste les conflits de ressources par instruction.  
   
- [Vue Processus](../profiling/process-view-contention-data.md)  
+ [Processus, vue](../profiling/process-view-contention-data.md)  
  Liste les conflits de ressources par processus et par thread.  
   
 ## <a name="reference"></a>Référence  

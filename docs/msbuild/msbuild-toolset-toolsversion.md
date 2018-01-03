@@ -17,11 +17,12 @@ caps.latest.revision: "30"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 85d570564ba3e82808f0876ead938f535368ec29
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c7c8658b3c1a39efc24e65845be2ce75eafc4437
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Ensemble d'outils MSBuild (ToolsVersion)
 MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour générer une application. Un ensemble d'outils MSBuild comprend généralement un fichier microsoft.common.tasks, un fichier microsoft.common.targets et des compilateurs comme csc.exe et vbc.exe. La plupart des ensembles d'outils peuvent être utilisés pour compiler des applications pour plusieurs versions de .NET Framework et pour plusieurs plateformes système. Cependant, l'ensemble d'outils MSBuild 2.0 ne peut être utilisé que pour cibler .NET Framework 2.0.  

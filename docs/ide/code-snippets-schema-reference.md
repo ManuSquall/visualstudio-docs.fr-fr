@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 Les extraits de code IntelliSense sont des parties de code précréées et prêtes à être insérées dans votre application avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez augmenter la productivité en fournissant des extraits de code qui réduisent le nombre d'heures passées à taper un code répétitif ou à rechercher des exemples. Vous pouvez utiliser le schéma XML des extraits de code IntelliSense pour créer vos propres extraits de code et les ajouter aux extraits de code que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] contient déjà.  
@@ -122,7 +123,7 @@ Trois attributs sont disponibles pour l’élément Code :
 
 - **Langage** - Attribut _obligatoire_ qui spécifie le langage de l’extrait de code. Il peut avoir l’une des valeurs suivantes :
 
-   |Valeur|Description|  
+   |Value|Description|  
    |-----|-----------|  
    |`VB`|Identifie un extrait de code Visual Basic.|  
    |`CSharp`|Identifie un extrait de code C#.|  
@@ -134,7 +135,7 @@ Trois attributs sont disponibles pour l’élément Code :
  
 - **Kind** - Attribut _facultatif_ qui spécifie le type de code contenu dans l’extrait de code, ainsi que l’emplacement auquel un extrait de code doit être inséré pour pouvoir être compilé. Il peut avoir l’une des valeurs suivantes :
 
-   |Valeur|Description|  
+   |Value|Description|  
    |-----|-----------|  
    |`method body`|Spécifie que l'extrait de code est un corps de méthode, et par conséquent, qu'il doit être inséré à l'intérieur d'une déclaration de méthode.|  
    |`method decl`|Spécifie que l'extrait de code est une méthode, et par conséquent, qu'il doit être inséré à l'intérieur d'une classe ou d'un module.|  

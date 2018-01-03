@@ -14,16 +14,17 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9aac5f9ac8886bef61d700209f77b4b1852fe2bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a42e748e45d7db0606d585d774be254a7358d6b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tier-interactions-view"></a>Interactions de couche, vue
 Le profilage d’interaction de couche fournit des informations supplémentaires sur les temps d’exécution des fonctions des applications multicouches qui communiquent avec des bases de données via [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Les données sont collectées uniquement pour les appels de fonctions synchrones.  
   
- **Requirements**  
+ **Spécifications**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]  
   
@@ -39,7 +40,7 @@ Le profilage d’interaction de couche fournit des informations supplémentaires
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Nom**|-   Pour une ligne du plus haut niveau, le nom du processus ou de la page web profilés.<br />-   Pour une ligne de connexion de base de données, le nom du serveur qui héberge la base de données.|  
+|**Name**|-   Pour une ligne du plus haut niveau, le nom du processus ou de la page web profilés.<br />-   Pour une ligne de connexion de base de données, le nom du serveur qui héberge la base de données.|  
 |**Base de données**|Nom de la base de données (lignes de connexion de base de données uniquement).|  
 |**Nombre**|Nombre total de demandes qui sont générées par le processus, une page web ou une connexion de base de données.|  
 |**Temps écoulé total**|Temps total passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|  

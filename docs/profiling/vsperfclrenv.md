@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 580d3b5f1dab03e34dac7c452da08e00e453a503
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a8f41fdf3a337fb2dea5ccca7131de34743c9096
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 L’outil VSPerfCLREnv sert à définir les variables d’environnement nécessaires pour profiler une application .NET Framework. Il utilise la syntaxe suivante :  
@@ -39,7 +40,7 @@ VsPerfCLREnv [/option]
  **Options VSPerfCLREnv pour inclure les données d’interaction de couche**  
   
 > [!WARNING]
->  Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] ou [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)]. Cependant, ces données ne peuvent être affichées que dans [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] et [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)].  
+>  Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] ou [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)]. Cependant, les données de profilage d’interaction de couche ne peuvent être affichées que dans [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] et [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)].  
   
  Le profilage d’interaction de couche fournit des informations supplémentaires sur les requêtes ADO.NET dans des applications multicouches. Les données sont collectées uniquement pour les appels de fonctions synchrones. Vous pouvez ajouter les données d’interaction à toute exécution de profilage à l’aide de n’importe quelle méthode de profilage.  
   

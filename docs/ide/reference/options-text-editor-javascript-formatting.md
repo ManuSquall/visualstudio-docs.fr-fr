@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9255473c3c8cd73a74a6758e698b8942dedce660
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 8902d63f89167e4d977f130757af10557bffb529
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Options, Éditeur de texte, JavaScript, Mise en forme
 Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour définir les options de mise en forme du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**, **Options**, puis développez **Éditeur de texte**, **JavaScript** et **Mise en forme**.  
@@ -30,7 +31,7 @@ Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour dé
 ## <a name="automatic-formatting"></a>Mise en forme automatique  
  Ces options déterminent à quel moment la mise en forme se produit dans la vue **Source**.  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
   
 |Option|Description|  
 |------------|-----------------|  
@@ -42,7 +43,7 @@ Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour dé
 ## <a name="new-lines"></a>Nouvelles lignes  
  Ces options déterminent si l’éditeur de code place une accolade ouvrante sur une nouvelle ligne pour les fonctions et les blocs de contrôle.  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
   
 |Option|Description|  
 |------------|-----------------|  
@@ -52,7 +53,7 @@ Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour dé
 ## <a name="spacing"></a>Espacement  
  Ces options déterminent la façon dont les espaces sont insérés dans la vue **Source**.  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
   
 |Option|Description|  
 |------------|-----------------|  

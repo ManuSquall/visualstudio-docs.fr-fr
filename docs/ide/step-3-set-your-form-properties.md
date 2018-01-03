@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d83a19e04a2e795005f2e0cdf0fdfe3a30c22c87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e703372a3b59ceee439b234e02e4a2d5a3cb6275
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-3-set-your-form-properties"></a>Étape 3 : définir les propriétés de votre formulaire
 Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence de votre formulaire.  
@@ -35,7 +36,7 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 3.  Après avoir sélectionné le formulaire, recherchez la propriété **Text** dans la fenêtre **Propriétés**. Suivant la façon dont la liste est triée, vous devrez peut-être la faire défiler. Choisissez **Text**, tapez **Visionneuse d’images**, puis appuyez sur Entrée.  Le texte **Visionneuse d’images** doit maintenant s’afficher dans la barre de titre de votre formulaire, et la fenêtre **Propriétés** doit ressembler à l’image suivante.  
   
      ![Fenêtre Propriétés](../ide/media/express_edittextproperty.png "Express_EditTextProperty")  
-Propriétés (fenêtre)  
+Fenêtre Propriétés  
   
     > [!NOTE]
     >  Les propriétés peuvent être classées selon une vue Par catégorie ou Alphabétique. Vous pouvez passer d’une vue à l’autre à l’aide des boutons de la fenêtre **Propriétés**. Dans ce didacticiel, il est plus facile de rechercher des propriétés via la vue Alphabétique.  

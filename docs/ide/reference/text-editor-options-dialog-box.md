@@ -24,11 +24,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 423b2537b425066ca490eb8ae3c20d17fbc31253
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 80668df65b1250eb579597653cf32ab79d30218c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-editor-options-dialog-box"></a>Éditeur de texte, boîte de dialogue Options
 Les options de l’éditeur définies dans la boîte de dialogue **Options** permettent de personnaliser l’apparence et le comportement de l’éditeur.  
@@ -46,7 +47,7 @@ Les options de l’éditeur définies dans la boîte de dialogue **Options** per
  [Guide pratique pour afficher des URL en tant que liens dans l’éditeur](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
  Explique comment mettre en forme les URL afin qu’elles s’affichent sous forme de liens.  
   
- [Définition d’options de l’éditeur spécifiques à un langage](../../ide/reference/setting-language-specific-editor-options.md)  
+ [Définition d’options d’éditeur spécifiques du langage](../../ide/reference/setting-language-specific-editor-options.md)  
  Explique comment définir les options de l’éditeur qui s’appliquent uniquement à un langage de développement.  
   
  [Options, Éditeur de texte, Général](../../ide/reference/options-text-editor-general.md)  

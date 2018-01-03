@@ -21,11 +21,12 @@ caps.latest.revision: "44"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f97ce4480ebdf04cce6a129d7c1950ac28df2aaf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b0120e93e809d1d0f57b5b7dc993a982b1c78836
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsinstr"></a>VSInstr
 L’outil VSInstr est utilisé pour instrumenter des binaires. Il est appelé à l’aide de la syntaxe suivante :  
@@ -63,4 +64,4 @@ VSInstr [/U] filename [/options]
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   
  [Avertissements VSInstr](../profiling/vsinstr-warnings.md)   
- [Vues Rapport de performances](../profiling/performance-report-views.md)
+ [Vues du rapport des performances](../profiling/performance-report-views.md)

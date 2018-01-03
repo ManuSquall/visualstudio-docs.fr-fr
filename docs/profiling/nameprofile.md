@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 474ba0510194590a199c9a418eef2a46888342f8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: be7e6b2e29ed74fe57016bb286b54742b0add632
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="nameprofile"></a>NameProfile
 La fonction `NameProfile` affecte une chaîne au processus ou au thread spécifié.  
@@ -76,7 +77,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|Le texte du nom dépassait 32 caractères, y compris le caractère null, et a donc été tronqué.|  
 |NAME_OK|Le nom a été inscrit.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Vous ne pouvez affecter qu’un seul nom à chaque processus ou thread. Une fois qu’un élément de profilage est nommé, les appels suivants à NameProfile pour cet élément sont ignorés.  
   
  Si un même nom est affecté à différents threads ou processus, le rapport comprend les données provenant de tous les éléments de ce niveau portant ce nom.  

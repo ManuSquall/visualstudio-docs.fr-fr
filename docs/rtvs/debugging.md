@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cb5128bf6412fa0f06c211f06f0d7f87353d52e0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: aca1fc0200e57867418c2a4c5ca7a718afdbc469
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-r-in-visual-studio"></a>Débogage de R dans Visual Studio
 
@@ -57,12 +58,12 @@ Quand vous êtes arrêté dans le débogueur, vous êtes également arrêté au 
 
 Le navigateur d’environnement prend en charge plusieurs commandes spéciales :
 
-| Commande | Description | 
+| Commande | Description |
 | --- | --- |
 | n | suivant : exécute l’instruction suivante dans le fichier de code (identique au pas à pas principal). |
-| s | pas à pas détaillé : exécute l’instruction suivante dans le fichier de code et effectue un pas à pas détaillé dans la portée d’une fonction si l’instruction suivante est un appel de fonction. | 
+| s | pas à pas détaillé : exécute l’instruction suivante dans le fichier de code et effectue un pas à pas détaillé dans la portée d’une fonction si l’instruction suivante est un appel de fonction. |
 | f | terminer : exécute le reste de la portée de la fonction active et retourne à l’appelant (identique au pas à pas sortant). |
-| c, cont | continuer : exécute le programme jusqu’au point d’arrêt suivant. | 
+| c, cont | continuer : exécute le programme jusqu’au point d’arrêt suivant. |
 | N | quitte : termine la session de débogage. |
 | où | afficher la pile : affiche la pile des appels dans la fenêtre interactive. |
 | help | afficher l’aide : affiche les commandes disponibles dans la fenêtre interactive. |

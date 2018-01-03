@@ -29,11 +29,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9531a49ced6e8f72154cbdd59fce271ff673f59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2d1d3c327101e535c037dba30ed19af3dcf7faaa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Développer du code dans Visual Studio sans projets ni solutions  
 Visual Studio 2017 permet d’ouvrir du code à partir de presque n’importe quel type de projet basé sur un répertoire dans Visual Studio sans avoir recours à un fichier solution ou de projet. Cela signifie que vous pouvez, par exemple, rechercher un projet de code sur Git, le cloner, puis l’ouvrir directement dans Visual Studio et commencer à développer sans avoir à créer de solution ou de projet.  
@@ -85,7 +86,7 @@ L’exemple suivant montre comment cloner un référentiel GitHub, puis ouvrir s
 
 |         |         |
 |---------|---------|
-|  ![icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regarder une vidéo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) montrant comment cloner et ouvrir du code à partir d’un dépôt GitHub dans Visual Studio. |
+|  ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regarder une vidéo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) montrant comment cloner et ouvrir du code à partir d’un dépôt GitHub dans Visual Studio. |
 
 ## <a name="debug-your-code"></a>Déboguer votre code  
 Vous pouvez déboguer votre code dans Visual Studio sans projet ou solution. Pour déboguer certains langages, vous devrez peut-être spécifier un *fichier de démarrage* valide dans le projet de code, tel qu’un script, un exécutable ou un projet. Visual Studio exécute tout d’abord le code spécifié lorsque vous déboguez votre code.  

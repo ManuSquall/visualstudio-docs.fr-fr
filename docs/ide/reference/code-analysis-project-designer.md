@@ -16,16 +16,17 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3f993e47ea748d8caf90aee0a2ee99cbf78dbede
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8e1fc85dbd4fa5f4a8fe757b279826a81705dfd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-project-designer"></a>Analyse du code, page du Concepteur de projets
 Contient l’outil d’analyse de code que vous pouvez choisir d’exécuter sur votre code. L’outil rapporte des informations relatives à vos assemblys, notamment les éventuelles violations des règles de programmation et de conception présentées plus avant dans le cadre des règles de conception de Microsoft .NET Framework.  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
  Activer l'analyse du code  
  Active ou désactive l’analyse du code pour votre projet.  
   

@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 881075ee32ccac155237035dbe1a2f6d17a82893
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9634fe1a0fa26d5180edc9312b925e6740bac216
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-best-practices"></a>Meilleures pratiques pour MSBuild
 Nous vous recommandons les meilleures pratiques suivantes pour l'écriture de scripts MSBuild :  

@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 58032ea7c1c15de794b5374017e84f07434d8310
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ed1fee60a7cda6d260833ba60d37a7a7a762d58e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="when-element-msbuild"></a>When, élément (MSBuild)
 Spécifie un bloc de code que l’élément `Choose` peut sélectionner.  
@@ -72,7 +73,7 @@ Spécifie un bloc de code que l’élément `Choose` peut sélectionner.
 |-------------|-----------------|  
 |[Choose, élément (MSBuild)](../msbuild/choose-element-msbuild.md)|Évalue les éléments enfants pour sélectionner une section de code à exécuter.|  
 
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si l’attribut `Condition` s’évalue à true, les éléments `ItemGroup` et `PropertyGroup` enfants de l’élément `When` sont exécutés et tous les éléments `When` suivants sont ignorés.  
 
  Les éléments `Choose`, `When` et `Otherwise` sont utilisés ensemble pour permettre la sélection d’une section de code spécifique à exécuter parmi plusieurs options possibles. Pour plus d’informations, consultez [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md).  
@@ -127,4 +128,4 @@ Spécifie un bloc de code que l’élément `Choose` peut sélectionner.
 
 ## <a name="see-also"></a>Voir aussi  
  [Constructions conditionnelles MSBuild](../msbuild/msbuild-conditional-constructs.md)   
- [Informations de référence sur le schéma de fichier projet MSBuild](../msbuild/msbuild-project-file-schema-reference.md)
+ [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

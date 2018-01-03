@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf6a2a2a663854d79a33eb84bb135d349a185532
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ea4f4593f40ae08cd865d65550f6316baaee618
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="report-based-on-visible-time-range"></a>Rapport basé sur une plage horaire affichée
 La vue Profil affiche des rapports basés sur l’intervalle de temps et les canaux actuellement visibles. Pour plus de détails sur les différents sous-ensembles de données, cliquez sur les éléments dans la légende.  

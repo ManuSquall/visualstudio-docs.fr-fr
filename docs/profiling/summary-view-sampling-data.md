@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb10ac11fc49ce4ca6137e9749e802563de2a0e5
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: c78ba45fda91650b5b7deb37ce9fd5dabbee6fb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---sampling-data"></a>Vue Résumé - Données d’échantillonnage
 La vue Résumé affiche des informations sur les fonctions dont le coût est le plus élevé quant aux performances dans une exécution du profilage. Pour plus d’informations, notamment une description des liens de notification et des listes de rapports, consultez [Vue Résumé](../profiling/summary-view.md).  
@@ -37,7 +38,7 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Nom**|Nom de la fonction.|  
+|**Name**|Nom de la fonction.|  
 |**% d’échantillons inclusifs**|Pourcentage de tous les échantillons collectés quand cette fonction ou une fonction appelée par cette fonction s’exécutait.|  
 |**% d’échantillons exclusifs**|Pourcentage de tous les échantillons collectés quand la fonction exécutait du code du corps de la fonction. Ce pourcentage n’inclut pas les échantillons collectés dans les fonctions appelées par cette fonction.|  
   
@@ -50,7 +51,7 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Nom**|Nom de la fonction.|  
+|**Name**|Nom de la fonction.|  
 |**% d’échantillons exclusifs**|Pourcentage de tous les échantillons de l’exécution de la fonction collectés quand la fonction exécutait du code du corps de la fonction. Le pourcentage ne comprend pas les échantillons collectés quand des fonctions appelées par cette fonction étaient en cours d’exécution.|  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -27,13 +27,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 056101593be6119d994cab40f1536fe130fc25bb
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: c40be53bb72d0d61b0455c2f42afcb128e0d511f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="javascript-intellisense"></a>JavaScript IntelliSense
+# <a name="javascript-intellisense"></a>IntelliSense JavaScript
 
 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] procure une expérience d’édition JavaScript puissante et immédiate. Grâce à un service de langage TypeScript, Visual Studio offre des fonctionnalités IntelliSense plus riches, la prise en charge de fonctionnalités JavaScript modernes et des fonctionnalités de productivité améliorées, parmi lesquelles Atteindre la définition ou la refactorisation.
 

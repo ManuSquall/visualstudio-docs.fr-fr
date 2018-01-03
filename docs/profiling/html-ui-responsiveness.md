@@ -23,11 +23,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analyser la réactivité de l’interface utilisateur HTML dans les applications Windows universelles
 Cette rubrique explique comment isoler les problèmes de performances dans vos applications à l’aide du profileur de réactivité de l’interface utilisateur, outil d’analyse des performances disponible pour les applications Windows universelles.  
@@ -324,16 +325,16 @@ if (performance.mark && performance.measure) {
   
 -   **Décodage d'image.** Indique le temps passé à décompresser er décoder les images.  
   
- Pour le script et les catégories de style, le profileur de réactivité de l'interface utilisateur peut fournir des données sur lesquelles vous pouvez agir dans le graphique des détails de chronologie. Si vous identifiez des problèmes liés aux scripts comme un problème, vous pouvez exécuter le profileur d'échantillonnage de l'UC avec le profileur de réactivité de l'interface utilisateur. Vous pouvez également utiliser le profileur de fonction de Visual Studio pour obtenir un plus grand nombre de données détaillées. Pour plus d’informations, consultez [Mémoire JavaScript](../profiling/javascript-memory.md).  
+ Pour le script et les catégories de style, le profileur de réactivité de l'interface utilisateur peut fournir des données sur lesquelles vous pouvez agir dans le graphique des détails de chronologie. Si vous identifiez des problèmes liés aux scripts comme un problème, vous pouvez exécuter le profileur d'échantillonnage de l'UC avec le profileur de réactivité de l'interface utilisateur. Vous pouvez également utiliser le profileur de fonction de Visual Studio pour obtenir un plus grand nombre de données détaillées. Pour plus d'informations, consultez [Mémoire JavaScript](../profiling/javascript-memory.md).  
   
  Pour les autres catégories d'événements, vous pouvez peut-être identifier les effets secondaires de plateforme qui résultent de l'ajout de fonctionnalités à votre application, mais dans ce cas vous ne pouvez peut-être pas résoudre les problèmes de performance particuliers à l'aide du profileur de réactivité de l'interface utilisateur.  
   
  Ce tableau affiche les événements et leurs descriptions :  
   
-|Événement|Catégorie d'événement|Se produit lorsque|  
+|événement|Catégorie d'événement|Se produit lorsque|  
 |-----------|--------------------|-----------------|  
 |Analyse de code CSS|Chargement en cours|Un nouveau contenu CSS a été rencontré et il a été tenté d'analyser le contenu CSS.|  
-|Analyse de code HTML|Chargement en cours|Un nouveau contenu HTML a été rencontré et il a été tenté d'analyser le contenu dans des nœuds et d'insérer le contenu dans l'arborescence DOM.|  
+|Analyse de code HTML|Chargement|Un nouveau contenu HTML a été rencontré et il a été tenté d'analyser le contenu dans des nœuds et d'insérer le contenu dans l'arborescence DOM.|  
 |Requête HTTP|Chargement en cours|Une ressource distante a été trouvée dans le DOM ou un XMLHttpRequest a été créé qui a provoqué une requête HTTP.|  
 |Téléchargement spéculatif|Chargement en cours|Les ressources requises ont été recherchées dans le contenu HTML de la page de sorte que les requêtes HTTP suivantes concernant les ressources ont pu être planifiées rapidement.|  
 |Fonction de rappel d'image d'animation|Scripts|Le navigateur allait afficher une autre image et cela a déclenché une fonction de rappel fournie par l'application.|  

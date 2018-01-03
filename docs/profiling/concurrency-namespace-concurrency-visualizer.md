@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c89bde3c8aed358d64349e185f06b7cdb4ccd0a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 621f4167184d22445a3d083fe2a1c36db529f6f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency, espace de noms (visualiseur concurrentiel)
 L'espace de noms `Concurrency` fournit des classes et des fonctions qui vous donnent accès au runtime d'accès concurrentiel, infrastructure de programmation simultanée pour C++. Pour plus d’informations, consultez [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime).  
@@ -33,11 +34,11 @@ namespace Concurrency;
   
 ### <a name="namespaces"></a>Espaces de noms  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |[Diagnostic, espace de noms](../profiling/diagnostic-namespace.md)|L’espace de noms `diagnostics` fournit des fonctionnalités permettant d’émettre des marqueurs du visualiseur concurrentiel.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête** : cvmarkersobj.h  
   
 ## <a name="see-also"></a>Voir aussi  

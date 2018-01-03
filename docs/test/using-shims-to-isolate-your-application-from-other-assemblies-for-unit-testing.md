@@ -11,11 +11,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: b95b4754af66c39d741b7df8a74a433ff812f834
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8ddd21dde8057475c1169cf4ef3d43df84a1c96d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires
 Les **types shim** sont l’une des deux technologies utilisées par le framework Microsoft Fakes pour vous permettre d’isoler facilement des composants testés de l’environnement. Les shims détournent les appels à des méthodes spécifiques vers le code que vous écrivez dans le cadre de votre test. De nombreuses méthodes retournent des résultats différents selon les conditions externes, mais un shim est sous le contrôle de votre test et peut retourner des résultats cohérents lors de chaque appel. Cela facilite l'écriture de vos tests.  
@@ -24,7 +25,7 @@ Les **types shim** sont l’une des deux technologies utilisées par le framewor
   
  Pour obtenir une vue d’ensemble et un guide de démarrage rapide, consultez [Isolation du code sous test avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
- **Requirements**  
+ **Spécifications**  
   
 -   Visual Studio Enterprise  
   

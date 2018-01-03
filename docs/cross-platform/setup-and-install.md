@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: dba101890bd2f27c85e8e6053944d8781fa03ed4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: ab7dc9eb430f797f11bcdd641af2a06b2380d9ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setup-and-install"></a>Configurer et installer
 Pour générer des applications natives iOS, Android et Windows à partir d’une base de code C#/.NET commune en utilisant Xamarin, vous avez besoin des éléments suivants :  
@@ -50,7 +51,7 @@ Si vous rencontrez des problèmes d’utilisation de Xamarin après les phases d
 ##  <a name="windows"></a> Configuration de Windows (Visual Studio et Xamarin)  
   
 > [!TIP]
->  Ces instructions s’appliquent à Visual Studio 2017. Pour Visual Studio 2015, consultez [MSDN](https://msdn.microsoft.com/en-us/library/mt613162.aspx). Pour utiliser Xamarin avec Visual Studio 2013 (Update 2 obligatoire), suivez les instructions d’[installation directe de Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
+>  Ces instructions s’appliquent à Visual Studio 2017. Pour Visual Studio 2015, consultez [MSDN](setup-and-install.md). Pour utiliser Xamarin avec Visual Studio 2013 (Update 2 obligatoire), suivez les instructions d’[installation directe de Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
   
 1.  [Téléchargez et lancez le programme d’installation de n’importe quelle édition de Visual Studio 2017](https://www.visualstudio.com/downloads/) (Community, Professional ou Enterprise). Visual Studio 2017 Community est une version gratuite, tandis que les éditions Professional et Enterprise peuvent être utilisées dans le cadre d’un essai de 30 jours. Au-delà, vous devez acheter une licence.  
   

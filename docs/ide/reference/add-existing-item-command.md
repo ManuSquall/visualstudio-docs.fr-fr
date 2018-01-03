@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af35812ba5d01c174d8b9d53bcd9572a45b8e793
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a94546b8e480a661c175f946cc376fa92b30cbf8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-existing-item-command"></a>Ajouter un élément existant, commande
 Ajoute un fichier existant à la solution actuelle et l’ouvre.  
@@ -45,7 +46,7 @@ File.AddExistingItem filename [/e:editorname]
 /e:"Source Code (text) Editor"  
 ```  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La fonctionnalité de saisie semi-automatique tente de trouver le chemin et le nom de fichier correspondant aux caractères que vous tapez.  
   
 ## <a name="example"></a>Exemple  
@@ -59,4 +60,4 @@ File.AddExistingItem filename [/e:editorname]
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Alias de commande Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

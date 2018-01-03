@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04d150c517d4ac0b4f3c47c5e9e4758e24d697c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef8f94ae451902c8f7b5e5d2b5f3156d01107589
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Guide pratique pour exporter une texture qui contient des mipmaps
 Le pipeline de contenus d’image peut générer des mipmaps à partir d’une image source dans la phase de génération de votre projet. Quand vous n’avez pas besoin de spécifier le contenu de l’image de chaque niveau MIP manuellement, comme cela peut être nécessaire pour obtenir certains effets, la génération de mipmaps au moment de la génération garantit que le contenu des mipmaps n’est jamais désynchronisé et élimine la réduction des performances découlant de la génération de mipmaps au moment de l’exécution.  

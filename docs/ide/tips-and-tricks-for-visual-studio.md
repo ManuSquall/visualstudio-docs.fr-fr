@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 23cd5cf58585c8ba1397552d20cb519c1f62c236
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Conseils et astuces pour Visual Studio
 
@@ -113,7 +114,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Définir l'instruction suivante|Ctrl+Maj+F10|  
 |Définir et basculer le point d'arrêt|F9|  
 |Désactiver le point d'arrêt|Ctrl+F9|  
-|Fenêtre Exécution|Ctrl+Alt+I|  
+|Exécution (fenêtre)|Ctrl+Alt+I|  
 |Fenêtre Exécution - Mode Commande|Tapez « > »|  
 |Fenêtre Exécution - Vider la mémoire tampon|>cls|  
 |Fenêtre Exécution - Valeur d'impression|?varname|  

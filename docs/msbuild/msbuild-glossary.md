@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: dccc0592d050a07f3682834b6f2a66e2f8c6eb7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cdbe7702711c5196de42d18379d6870ca54f4dcd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-glossary"></a>Glossaire MSBuild
 Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses composants.  
@@ -101,7 +102,7 @@ Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses 
  Une fonction de propriété est une propriété système ou une méthode qui peut être utilisée pour évaluer des scripts MSBuild. Les méthodes de propriété permettent de lire l’heure système, de comparer des chaînes, d’établir des correspondances avec des expressions régulières et d’effectuer d’autres actions. Pour plus d’informations, consultez l’article [Fonctions de propriétés](../msbuild/property-functions.md).  
   
  fonction de propriété, imbriquée  
- Les fonctions de propriétés peuvent être combinées pour former des fonctions plus complexes. Par exemple :  
+ Les fonctions de propriétés peuvent être combinées pour former des fonctions plus complexes. Par exemple :  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
   

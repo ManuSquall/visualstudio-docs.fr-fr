@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 82d4687a72cb0f13291aa01ff37b91afbcc254e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 931ccda0fd42a01c9afe272ef985380bc3276e6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
 Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tous les types de projets ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier microsoft.build.commontypes.xsd.  
@@ -30,28 +31,28 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 ## <a name="common-items"></a>Éléments communs  
  Voici une liste de tous les éléments de projet communs.  
   
-### <a name="reference"></a>Reference  
+### <a name="reference"></a>Référence  
  Représente une référence (managée) d'assembly dans le projet.  
   
 |Nom d'élément|Description|  
 |---------------|-----------------|  
-|HintPath|Chaîne facultative. Chemin d'accès relatif ou absolu de l'assembly.|  
-|Nom|Chaîne facultative. Nom complet de l'assembly, par exemple, « System.Windows.Forms ».|  
+|HintPath|Chaîne facultative. Chemin d’accès relatif ou absolu de l’assembly.|  
+|Name|Chaîne facultative. Nom complet de l'assembly, par exemple, « System.Windows.Forms ».|  
 |FusionName|Chaîne facultative. Spécifie le nom de fusion simple ou fort de l'élément.<br /><br /> La présence de cet attribut peut faire gagner du temps, car il vous évite d'ouvrir le fichier d'assembly pour obtenir le nom de fusion.|  
 |SpecificVersion|Valeur booléenne facultative. Indique si seule la version figurant dans le nom de fusion doit être référencée.|  
 |Alias|Chaîne facultative. Alias éventuels de la référence.|  
-|Privé|Valeur booléenne facultative. Indique si la référence doit être copiée dans le dossier de sortie. Cet attribut correspond à la propriété **Copie locale** de la référence qui se trouve dans l’IDE Visual Studio.|  
+|Private|Valeur booléenne facultative. Indique si la référence doit être copiée dans le dossier de sortie. Cet attribut correspond à la propriété **Copie locale** de la référence qui se trouve dans l’IDE Visual Studio.|  
   
 ### <a name="comreference"></a>COMReference  
  Représente une référence de composant (non managé) COM dans le projet.  
   
 |Nom d'élément|Description|  
 |---------------|-----------------|  
-|Nom|Chaîne facultative. Nom complet du composant.|  
-|Guid|Chaîne facultative. GUID du composant sous la forme {12345678-1234-1234-1234-1234567891234}.|  
+|Name|Chaîne facultative. Nom complet du composant.|  
+|GUID|Chaîne facultative. GUID du composant sous la forme {12345678-1234-1234-1234-1234567891234}.|  
 |VersionMajor|Chaîne facultative. Partie principale du numéro de version du composant. Par exemple, « 5 » si le numéro de version complet est « 5.46 ».|  
 |VersionMinor|Chaîne facultative. Partie secondaire du numéro de version du composant. Par exemple, « 46 » si le numéro de version complet est « 5.46 ».|  
-|LCID|Chaîne facultative. LocaleID du composant.|  
+|dans le dossier HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\|Chaîne facultative. LocaleID du composant.|  
 |WrapperTool|Chaîne facultative. Nom de l'outil wrapper utilisé sur le composant, par exemple, « tlbimp ».|  
 |Isolated|Valeur booléenne facultative. Indique si le composant est un composant sans inscription.|  
   
@@ -67,17 +68,17 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
   
 |Nom d'élément|Description|  
 |---------------|-----------------|  
-|Nom|Chaîne requise. Nom de base du fichier manifeste.|  
-|HintPath|Chaîne requise. Chemin d'accès relatif du fichier manifeste.|  
+|Name|Chaîne requise. Nom de base du fichier manifeste.|  
+|HintPath|Chaîne requise. Chemin d’accès relatif du fichier manifeste.|  
   
 ### <a name="projectreference"></a>ProjectReference  
  Représente une référence à un autre projet.  
   
 |Nom d'élément|Description|  
 |---------------|-----------------|  
-|Nom|Chaîne facultative. Nom complet de la référence.|  
-|Project|Chaîne facultative. GUID de la référence sous la forme {12345678-1234-1234-1234-1234567891234}.|  
-|Package|Chaîne facultative. Chemin d'accès du fichier projet référencé.|  
+|Name|Chaîne facultative. Nom complet de la référence.|  
+|Projet|Chaîne facultative. GUID de la référence sous la forme {12345678-1234-1234-1234-1234567891234}.|  
+|Package|Chaîne facultative. Chemin d’accès du fichier projet référencé.|  
   
 ### <a name="compile"></a>Compile  
  Représente les fichiers sources du compilateur.  
@@ -96,39 +97,39 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 |Nom d'élément|Description|  
 |---------------|-----------------|  
 |DependentUpon|Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte.|  
-|Generator|Chaîne requise. Nom du générateur de fichier exécuté sur cet élément.|  
+|Générateur|Chaîne requise. Nom du générateur de fichier exécuté sur cet élément.|  
 |LastGenOutput|Chaîne requise. Nom du fichier créé par le générateur de fichier qui a été exécuté sur cet élément.|  
 |CustomToolNamespace|Chaîne requise. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code.|  
-|Link|Chaîne facultative. Le chemin d'accès codifiable s'affiche si le fichier se trouve physiquement en dehors de l'influence du projet.|  
+|Lien|Chaîne facultative. Le chemin d'accès codifiable s'affiche si le fichier se trouve physiquement en dehors de l'influence du projet.|  
 |Visible|Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Toujours<br />3.  PreserveNewest|  
 |LogicalName|Chaîne requise. Nom logique de la ressource incorporée.|  
   
-### <a name="content"></a>Content  
+### <a name="content"></a>Contenu  
  Représente les fichiers qui ne sont pas compilés dans le projet, mais qui peuvent être incorporés ou publiés en même temps.  
   
 |Nom d'élément|Description|  
 |---------------|-----------------|  
 |DependentUpon|Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte.|  
-|Generator|Chaîne requise. Nom du générateur de fichier qui s'exécute sur cet élément.|  
+|Générateur|Chaîne requise. Nom du générateur de fichier qui s'exécute sur cet élément.|  
 |LastGenOutput|Chaîne requise. Nom du fichier créé par le générateur de fichier qui a été exécuté sur cet élément.|  
 |CustomToolNamespace|Chaîne requise. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code.|  
-|Link|Chaîne facultative. Chemin d’accès codifiable à afficher si le fichier se trouve physiquement en dehors de l’influence du projet.|  
+|Lien|Chaîne facultative. Chemin d’accès codifiable à afficher si le fichier se trouve physiquement en dehors de l’influence du projet.|  
 |PublishState|Chaîne requise. État de publication du contenu, à savoir :<br /><br /> -   Default<br />-   Included<br />-   Excluded<br />-   DataFile<br />-   Prerequisite|  
 |IsAssembly|Valeur booléenne facultative. Indique si le fichier est un assembly.|  
 |Visible|Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Toujours<br />3.  PreserveNewest|  
   
-### <a name="none"></a>None  
+### <a name="none"></a>Aucun.  
  Représente les fichiers qui ne doivent avoir aucun rôle dans le processus de génération.  
   
 |Nom d'élément|Description|  
 |---------------|-----------------|  
 |DependentUpon|Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte.|  
-|Generator|Chaîne requise. Nom du générateur de fichier exécuté sur cet élément.|  
+|Générateur|Chaîne requise. Nom du générateur de fichier exécuté sur cet élément.|  
 |LastGenOutput|Chaîne requise. Nom du fichier créé par le générateur de fichier qui a été exécuté sur cet élément.|  
 |CustomToolNamespace|Chaîne requise. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code.|  
-|Link|Chaîne facultative. Chemin d'accès codifiable à afficher si le fichier se trouve physiquement en dehors de l'influence du projet.|  
+|Lien|Chaîne facultative. Chemin d’accès codifiable à afficher si le fichier se trouve physiquement en dehors de l’influence du projet.|  
 |Visible|Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |CopyToOutputDirectory|Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Toujours<br />3.  PreserveNewest|  
   

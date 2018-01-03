@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ea2f63d3e1ee4b4c694fdc025484d85fad9d739
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 47e4f57ffac71d6fb4f1c3e8cd8176c80d9f002a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="caller--callee-view----contention-data"></a>Vue Appelant/Appelé - Données de conflit
 La vue Appelant/Appelé affiche des données de conflit pour la fonction sélectionnée, ainsi que pour ses fonctions parentes et enfants. La vue Appelant/Appelé comprend trois grilles.  
@@ -50,7 +51,7 @@ La vue Appelant/Appelé affiche des données de conflit pour la fonction sélect
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
  [Vue Appelant/Appelé](../profiling/caller-callee-view.md)   
  [Vue Appelant/Appelé - Données d’échantillonnage](../profiling/caller-callee-view-sampling-data.md)   
  [Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   

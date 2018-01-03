@@ -13,11 +13,12 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 29c9397ea886024c894b977f05ec83f8d7c70f60
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1055a11a428d477ef44645fbc85d3f281b523357
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-targets"></a>Cibles de MSBuild
 Les cibles regroupent les tâches dans un ordre particulier et permet au processus de génération d’être factorisé en unités plus petites. Par exemple, une cible peut supprimer tous les fichiers du répertoire de sortie pour préparer la génération, pendant qu’une autre compile les entrées pour le projet et les place dans le répertoire vide. Pour plus d’informations sur les tâches, consultez [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
@@ -90,12 +91,12 @@ Reference: 3.5;3.5
 Reference: 4.0  
 ```  
   
- Le traitement par lot des cibles est rarement utilisé dans les scénarios de génération réels. Le traitement par lot des tâches, en revanche, est plus courant. Pour plus d’informations, consultez l’article [Traitement par lot](../msbuild/msbuild-batching.md).  
+ Le traitement par lot des cibles est rarement utilisé dans les scénarios de génération réels. Le traitement par lot des tâches, en revanche, est plus courant. Pour plus d’informations, consultez l’article [Batching (Traitement par lot MSBuild)](../msbuild/msbuild-batching.md).  
   
 ## <a name="incremental-builds"></a>Builds incrémentielles  
  Les builds incrémentielles sont des builds optimisées qui permettent de ne pas exécuter les cibles dont les fichiers de sortie sont à jour par rapport à leurs fichiers d’entrée correspondants. Un élément cible peut avoir à la fois un attribut `Inputs`, qui indique les éléments que la cible attend comme entrée, et un attribut `Outputs` qui indique les éléments qu’il produit comme sortie.  
   
- Si tous les éléments de sortie sont à jour, MSBuild ignore la cible, ce qui accélère considérablement le processus de génération. C’est ce qu’on appelle une build incrémentielle de la cible. Si seuls certains fichiers sont à jour, MSBuild exécute la cible, sans exécuter ces fichiers. C’est ce qu’on appelle une build incrémentielle partielle de la cible. Pour plus d’informations, consultez l’article [Générations incrémentielles](../msbuild/incremental-builds.md) .  
+ Si tous les éléments de sortie sont à jour, MSBuild ignore la cible, ce qui accélère considérablement le processus de génération. C’est ce qu’on appelle une build incrémentielle de la cible. Si seuls certains fichiers sont à jour, MSBuild exécute la cible, sans exécuter ces fichiers. C’est ce qu’on appelle une build incrémentielle partielle de la cible. Pour plus d’informations, consultez l’article [Incremental Builds (Générations incrémentielles)](../msbuild/incremental-builds.md) .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   

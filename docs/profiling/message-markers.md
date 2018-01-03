@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8139a54c57e37240d9be730014759951bd2bfc06
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e341db6e1c83e268d7074c2b8afed307f6c0840f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="message-markers"></a>Marqueurs de messages
 Un jeton de message représente une sortie de journal. Un message est une chaîne émise par un thread spécifique à un moment donné. Vous pouvez exporter des messages vers un fichier texte en vue de les utiliser avec d’autres outils. Vous pouvez placer le pointeur sur un message dans le visualiseur concurrentiel pour afficher la chaîne du message. Vous pouvez aussi afficher tous les marqueurs de message dans le [rapport Marqueurs](../profiling/markers-report.md).  L’illustration suivante présente un marqueur de message.  
@@ -27,4 +28,4 @@ Un jeton de message représente une sortie de journal. Un message est une chaîn
   
 ## <a name="see-also"></a>Voir aussi  
  [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md)   
- [SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)
+ [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)

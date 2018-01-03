@@ -16,18 +16,19 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 094175b329ffbb774d55566dd543795a3469e097
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 931dd6f37273954dbbdbc8465e514c6db2be590d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024 : Temps CPU GC excessif
 |||  
 |-|-|  
 |ID de règle|DA0024|  
-|Catégorie|Utilisation du .NET Framework|  
-|Méthode de profilage|Tout|  
+|Category|Utilisation du .NET Framework|  
+|Méthode de profilage|Tous|  
 |Message|% de temps dans GC très élevé. % de temps dans GC très élevé. Volume de surcharge de garbage collection trop élevé.|  
 |Type de règle|Warning|  
   

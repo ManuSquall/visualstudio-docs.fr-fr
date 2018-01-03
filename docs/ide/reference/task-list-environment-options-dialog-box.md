@@ -27,11 +27,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e99dff1fbe5638c81572f9b370f94c0337f9f7e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b6f8adfd3ce7d585cffe3c7506c4fdd56cad4a11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Liste des tâches, Environnement, boîte de dialogue Options
 Cette page Options vous permet d’ajouter, de supprimer et de modifier les jetons de commentaire qui génèrent des rappels de la **liste des tâches**. Pour afficher ces paramètres, sélectionnez **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis choisissez **Liste des tâches**.  
@@ -58,7 +59,7 @@ Cette page Options vous permet d’ajouter, de supprimer et de modifier les jeto
  Priorité  
  Définit la priorité des tâches qui utilisent le jeton sélectionné. Les commentaires de tâche qui commencent par ce jeton reçoivent automatiquement la priorité désignée dans la **liste des tâches**.  
   
- Nom  
+ Name  
  Entrez la chaîne du jeton. Cette opération active le bouton **Ajouter**. Si vous cliquez sur **Ajouter**, cette chaîne est incluse dans la **liste des jetons** et les commentaires qui commencent par ce nom sont affichés dans la **liste des tâches**.  
   
  Ajouter  

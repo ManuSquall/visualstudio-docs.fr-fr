@@ -12,14 +12,15 @@ caps.latest.revision: "4"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 96c5864deb3f5db0599eaca26a3b99bb9691c9b2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cordova
+ms.openlocfilehash: 0df91521f768a2389655339472c6d4a896347053
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Visual Studio Tools pour Apache Cordova
-Créez des applications pour les appareils iOS, Android et Windows, et partagez près de 100 % de votre code. Créez des applications en utilisant vos technologies web préférées. Apache Cordova fournit gratuitement un accès natif à diverses fonctionnalités d’appareil, telles que l’appareil photo d’un téléphone. Visual Studio ajoute ces options pour faciliter encore davantage la création d’applications :  
+Créez des applications pour les appareils iOS, Android et Windows, et partagez près de 100 % de votre code. Créez des applications en utilisant vos technologies web préférées. Apache Cordova fournit gratuitement un accès natif à diverses fonctionnalités d’appareil, telles que l’appareil photo d’un téléphone. Visual Studio ajoute ces options pour faciliter encore davantage la création d’applications :  
   
 -   Facilité d’installation et de configuration.  
   

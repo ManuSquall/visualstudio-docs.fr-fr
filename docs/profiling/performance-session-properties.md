@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 268a3b335990bc620a2eb798c3b774f34bc3262b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2038f69117c94752d14c9e8ce6f22aea98a67353
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-session-properties"></a>Propriétés d’une session de performance
 Une **session de performance** vous permet de configurer les paramètres qui déterminent le profilage de l’application. Elle stocke également les rapports générés pour la session de profilage.  

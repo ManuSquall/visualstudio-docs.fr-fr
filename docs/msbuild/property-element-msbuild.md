@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e931468b27807a99e86249008718faf4e044cbd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a93b339a062bd2e0c8dc1bf626c4ad109fa2af2a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-element-msbuild"></a>Property, élément (MSBuild)
 Contient une valeur et un nom de propriété définis par l’utilisateur. Chaque propriété utilisée dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être spécifiée en tant qu’enfant d’un élément `PropertyGroup`.  
@@ -78,4 +79,4 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
 
 ## <a name="see-also"></a>Voir aussi
 [Propriétés MSBuild](../msbuild/msbuild-properties.md)  
- [Informations de référence sur le schéma de fichier projet MSBuild](../msbuild/msbuild-project-file-schema-reference.md)
+ [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

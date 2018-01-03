@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e83f20106d4165e861c23ade178a86838a41f58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53fea09175d9d9653dd4552832cd511ed7900b8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilage sur des clusters HPC (High Performance Computing)
 Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC à l’aide de la méthode d’échantillonnage des outils de profilage [!INCLUDE[vsPreExt](../profiling/includes/vspreext_md.md)] ou [!INCLUDE[vsUltExt](../profiling/includes/vsultext_md.md)]. Pour plus d’informations sur HPC, consultez [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) sur le site web de Microsoft.  
@@ -73,7 +74,7 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
   
     -   Pour profiler un fichier binaire qui ne se trouve pas dans un projet ouvert, sélectionnez l’option **Exécutable (fichier .EXE)**.  
   
-4.  Cliquez sur **Next**.  
+4.  Cliquez sur **Suivant**.  
   
 5.  Dans la troisième page de l’Assistant :  
   
@@ -85,7 +86,7 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
   
     -   Dans **Emplacement de déploiement**, spécifiez le chemin du répertoire utilisé par le serveur HPC pour organiser des images pour le déploiement.  
   
-6.  Cliquez sur **Next**.  
+6.  Cliquez sur **Suivant**.  
   
 7.  Dans la quatrième page de l’Assistant :  
   

@@ -16,11 +16,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6547c139df10498c7be7c2ad13401001d38c067d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f95197bcd7315f432ce2fff2bd1e5dae1005e7e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-explorer"></a>Explorateur de performances
 Grâce aux outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], les développeurs peuvent mesurer, évaluer et cibler les problèmes de performances de leur code. Ces outils sont totalement intégrés à l'environnement de développement intégré (IDE) pour fournir une expérience utilisateur conviviale et accessible.  
@@ -38,7 +39,7 @@ Grâce aux outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs
 |**Techniques pour Windows 8 et ultérieur**|[Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
 |**Comprendre les concepts de profilage :** découvrez les concepts et les termes que vous allez utiliser lors de la collecte, de l’affichage et de l’analyse des performances de code à l’aide des outils de profilage.|[Vues d’ensemble](../profiling/overviews-performance-tools.md)|  
 |**Se lancer et le faire :** apprenez les procédures de base que vous allez utiliser lors de la collecte, de l’affichage et de l’analyse des performances de code à l’aide des outils de profilage. Essayez par vous-même en suivant une procédure pas à pas.|[Prise en main](../profiling/getting-started-with-performance-tools.md)|  
-|**Configurer une session de profilage :** découvrez des méthodes avancées permettant de spécifier les projets ou les fichiers binaires à profiler, de sélectionner une méthode de profilage, de choisir les données de performance à collecter, ainsi que de définir d’autres options de la session de profilage.|[Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)|  
+|**Configurer une session de profilage :** découvrez des méthodes avancées permettant de spécifier les projets ou les fichiers binaires à profiler, de sélectionner une méthode de profilage, de choisir les données de performance à collecter, ainsi que de définir d’autres options de la session de profilage.|[Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)|  
 |**Contrôler les données collectées par le profileur :** apprenez à utiliser les propriétés d’une session de performance et les procédures interactives permettant de démarrer et d’arrêter le profilage, ainsi qu’à limiter les données de performance collectées aux informations souhaitées.|[Contrôle de la collecte de données](../profiling/controlling-data-collection.md)|  
 |**Identifier les problèmes de performances :** apprenez à afficher et à analyser les données de performances collectées dans la fenêtre d’affichage Rapport des outils de profilage.|[Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)|  
 |**Analyser les modifications de performance :** apprenez à comparer deux fichiers de données du profileur pour analyser l’évolution des performances.|[Comparaison des fichiers de données de performances](../profiling/comparing-performance-data-files.md)|  

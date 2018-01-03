@@ -12,11 +12,12 @@ ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: feb31e2a5c4abf0013ee4d3ec0a20c7f3cfdff2a
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: f384722161ff46a193c1492698ab9ef7543eaefc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Outils de test pour les développeurs, scénarios et fonctions
 
@@ -95,7 +96,7 @@ Visual Studio est également extensible et accepte les adaptateurs de tests unit
 
 ![Intégration de test tiers](media/devtest-thirdparty.png)
 
-## <a name="also-see"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 * [Bien démarrer avec les tests unitaires](getting-started-with-unit-testing.md)
 * [Speeding up Unit Test Execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)

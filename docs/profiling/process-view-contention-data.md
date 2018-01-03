@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25e635ef74d19cc1f757b9a78ecbeae58fae92cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4de13644837c3fd21b38e0be6f4414700eb92414
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="process-view---contention-data"></a>Processus, vue - Données de conflit
 La vue Processus affiche les données de conflit pour les processus et les threads exécutés pendant l’exécution du profilage.  
@@ -37,7 +38,7 @@ La vue Processus affiche les données de conflit pour les processus et les threa
 |**ID**|Identificateur du processus ou du thread généré par le système.|  
 |**Durée de vie**|Nombre de millisecondes ou de cycles processeur entre le début du processus ou du thread et soit la fin du processus ou du thread, soit la fin du profilage.|  
 |**Type**|Type de ligne (processus ou thread).<br /><br /> Uniquement dans les rapports en ligne de commande **VSReport**. Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md).|  
-|**Nom**|Nom du processus ou du thread.|  
+|**Name**|Nom du processus ou du thread.|  
 |**ID unique**|Identificateur généré par le profileur unique pour le processus ou le thread.|  
   
 ## <a name="see-also"></a>Voir aussi  

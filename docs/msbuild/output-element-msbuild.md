@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 359bcd55d73429c118abc802a08ab86da96064e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: abeb4b0f4a34270b8b4ae4155cac910c08cf5f0b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="output-element-msbuild"></a>Output, élément (MSBuild)
 Stocke les valeurs de sortie d’une tâche dans les éléments et les propriétés.  
@@ -85,5 +86,5 @@ Stocke les valeurs de sortie d’une tâche dans les éléments et les propriét
 ```  
 
 ## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur le schéma de fichier projet MSBuild](../msbuild/msbuild-project-file-schema-reference.md)   
- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+ [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Tâches](../msbuild/msbuild-tasks.md)

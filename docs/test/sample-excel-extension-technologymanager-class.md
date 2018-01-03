@@ -11,11 +11,12 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: "9"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 1932646809cba6c6211f87965ffee82e918c6882
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bce4d3084cf060d2a925de8dc9a481448be1a6aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Exemple d'extension Excel : classe TechnologyManager
 Cette classe étend la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager>. Elle est chargée de fournir des services principaux pour l’extension [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Bien que la classe de base dispose de nombreuses méthodes, seule une partie d’entre elles est utilisée dans cet exemple.  

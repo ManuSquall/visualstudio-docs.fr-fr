@@ -10,13 +10,14 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0a239fa0f96b1552e72fe7501ae7a6fd5ef28025
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 8f56e834e6c2b80706e4ed1d1a91583e1015791b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Guide pratique pour suivre votre code en personnalisant la barre de défilement
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Comment : suivre votre code en personnalisant la barre de défilement
 
 Quand vous travaillez sur de longs fichiers de code, il peut être difficile de tout garder en tête. Vous pouvez personnaliser la barre de défilement de la fenêtre de code pour avoir une vue générale de ce qui se produit dans votre code.
 

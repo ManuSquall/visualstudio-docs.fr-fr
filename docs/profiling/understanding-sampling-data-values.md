@@ -15,16 +15,17 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 761f08adead5037056e07031903517e4f5d76744
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 95869fd4c3b52853417c847d32f7507c90471c2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-sampling-data-values"></a>Fonctionnement des valeurs de données d’échantillonnage
 La méthode de profilage par *échantillonnage* des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interrompt le processeur de l’ordinateur à des intervalles définis et collecte la pile des appels des fonctions. Une *pile des appels* est une structure dynamique qui stocke des informations sur les fonctions qui s’exécutent sur le processeur.  
   
- **Requirements**  
+ **Spécifications**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   

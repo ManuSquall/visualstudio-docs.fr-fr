@@ -29,11 +29,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f732a23631de181524382914e954ad50a7f0385d
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bd95d18cfbf1ce04c1178a0befbc8cbf7613862e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="file-properties-javascript"></a>Propriétés des fichiers, JavaScript
 Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que le système de projet doit effectuer sur les fichiers. Par exemple, vous pouvez définir des propriétés de fichier pour indiquer si un fichier doit être ajouté au package en tant que fichier de ressources.  
@@ -77,7 +78,7 @@ La valeur par défaut d’**Action de package** dépend de l’extension du fich
 ### <a name="file-version"></a>Version du fichier  
  Affiche la version de fichier de la référence.  
 
-### <a name="identity"></a>Identité  
+### <a name="identity"></a>identité  
  Affiche l’identité de la référence utilisée dans le projet, qui est stockée dans le fichier projet.  
 
 ### <a name="package"></a>Package  

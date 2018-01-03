@@ -21,11 +21,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 39dd727eee6f9af2f60410c4dbfc9daa9ea805a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 359f0f58a1c3b813216e4a760a1c750710fb3416
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parameter-element"></a>Parameter, élément
 Contient des informations sur un paramètre spécifique pour une tâche générée par un `UsingTask``TaskFactory`.  Le nom de l’élément est le nom du paramètre.  Pour plus d’informations, consultez l’article [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -80,6 +81,6 @@ Contient des informations sur un paramètre spécifique pour une tâche génér�
 ```  
 
 ## <a name="see-also"></a>Voir aussi  
- [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
- [Référence des tâches](../msbuild/msbuild-task-reference.md)   
+ [Tâches](../msbuild/msbuild-tasks.md)   
+ [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
  [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

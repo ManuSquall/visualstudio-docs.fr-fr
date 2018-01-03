@@ -15,11 +15,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: "32"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3f7ea8032efa4b35603568afd8b17107c293f2e6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 661a3cd872cefe54a0c6c945708bbab576c40a03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d'un fichier de configuration pour définir une source de données
 Cette procédure pas à pas illustre comment utiliser une source de données définie dans un fichier app.config pour des tests unitaires. Vous apprendrez à créer un fichier app.config qui définit une source de données pouvant être utilisée par la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. Cette procédure pas à pas illustre les tâches suivantes :  
@@ -34,7 +35,7 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
   
 -   accès aux sources de données à l'aide de la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :  
   
 -   Visual Studio Enterprise  
@@ -272,4 +273,4 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
  [Tests unitaires sur votre code](../test/unit-test-your-code.md)   
  [Création et exécution de tests unitaires pour le code existant](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Test de l’application](/devops-test-docs/test/test-apps-early-and-often)   
- [Guide pratique pour créer un test unitaire piloté par des données](../test/how-to-create-a-data-driven-unit-test.md)
+ [Guide pratique pour créer un test unitaire piloté par les données](../test/how-to-create-a-data-driven-unit-test.md)

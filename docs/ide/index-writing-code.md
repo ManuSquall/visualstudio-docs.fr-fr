@@ -6,11 +6,12 @@ ms.topic: landing-page
 title: "Écrire et gérer du code à l’aide de la documentation Visual Studio | Microsoft Docs"
 description: "Découvrez comment utiliser l’éditeur de code et d’autres outils dans Visual Studio pour écrire, parcourir, gérer et améliorer votre code."
 ms.technology: vs-ide-general
-ms.openlocfilehash: bc08b4822f411587db76f648e2b3ba508d513fb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5bc15e4bde117a474034ab4342dc43bc8db8e00f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-and-manage-code-using-visual-studio-documentation"></a>Écrire et gérer du code à l’aide de la documentation Visual Studio
 

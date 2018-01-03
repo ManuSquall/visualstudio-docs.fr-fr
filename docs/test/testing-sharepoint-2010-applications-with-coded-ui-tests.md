@@ -11,11 +11,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: d3ba0b9ce4366efd386d0b5c1b4d9c3f0094511b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4cf5eac9600be44405142666e1f94408c44b0a13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Test des applications SharePoint 2010 avec des tests codés de l'interface utilisateur
 L'ajout de tests codés de l'interface utilisateur dans une application SharePoint vous permet de vérifier si l'application entière, y compris ses contrôles d'interface utilisateur, fonctionne correctement. Les tests codés de l'interface utilisateur peuvent aussi valider les valeurs et la logique de l'interface utilisateur.  
@@ -27,7 +28,7 @@ L'ajout de tests codés de l'interface utilisateur dans une application SharePoi
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Que dois-je savoir d'autre sur les tests codés de l'interface utilisateur ?  
  Pour en savoir plus sur les avantages de l’utilisation de tests codés de l’interface utilisateur, consultez [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) et [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests (Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 Automatisation des tests système)](http://go.microsoft.com/fwlink/?LinkID=255196).  
   
- **Remarques**  
+ **Notes**  
   
 -   ![Prérequis](../test/media/prereq.png "Prereq") Les tests codés de l’interface utilisateur pour les applications SharePoint ne sont pris en charge qu’avec SharePoint 2010.  
   

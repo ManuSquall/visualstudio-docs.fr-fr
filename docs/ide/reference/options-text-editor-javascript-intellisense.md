@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6e18791f33ddb9c373af8b0af8def615c26374b3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: d43a783bc070e5903af35c780bb9fc1ff3737295
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Options, Éditeur de texte, JavaScript, IntelliSense
 Utilisez la page **IntelliSense** de la boîte de dialogue **Options** pour modifier les paramètres qui affectent le comportement d'IntelliSense pour JavaScript. Vous pouvez accéder à la page **IntelliSense** en choisissant **Outils**, **Options** dans la barre de menus, et en développant ensuite **Éditeur de texte**, **JavaScript**, **IntelliSense.**  
@@ -31,7 +32,7 @@ La page **IntelliSense** contient les sections suivantes :
 ## <a name="validation"></a>Validation  
  Vous pouvez utiliser ces options pour définir comment l'éditeur JavaScript doit valider la syntaxe dans votre document.  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
  **Afficher les erreurs de syntaxe**  
  Lorsque cette case à cocher n'est pas activée, l'éditeur de code JavaScript n'affiche aucune erreur de syntaxe. Cela est utile si vous travaillez avec du code dont vous n'êtes pas l'auteur et que vous n'avez pas l'intention de corriger les erreurs de syntaxe.  
   
@@ -49,14 +50,14 @@ La page **IntelliSense** contient les sections suivantes :
 ## <a name="statement-completion"></a>Compléter automatiquement les instructions  
  Vous pouvez utiliser ces options pour modifier le comportement de la saisie semi-automatique des instructions IntelliSense.  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
  **Utiliser uniquement la touche Tabulation ou Entrée pour valider**  
  Lorsque cette case à cocher est activée, l'éditeur de code JavaScript ajoute des instructions aux éléments sélectionnés dans la liste de saisie semi-automatique uniquement lorsque vous appuyez sur la touche Tabulation ou la touche Entrée. Lorsque cette case à cocher est désactivée, d'autres caractères, comme un point, une virgule, deux-points, une parenthèse ouvrante, et une accolade ouvrante ({)) peuvent également ajouter des instructions aux éléments sélectionnés.  
   
 ## <a name="references"></a>Références  
  Vous pouvez utiliser ces options pour spécifier les types de fichiers IntelliSense .js qui sont dans la portée pour différents types de projet JavaScript. Les références IntelliSense sont généralement utilisées pour fournir une prise en charge IntelliSense pour les objets globaux. Vous pouvez également utiliser cette page pour définir l'ordre de chargement des scripts qui doivent être chargés au moment de l'exécution, et ajouter des fichiers d'extension IntelliSense.  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
  **Groupes de référence**  
  Cette option spécifie le type de groupe de référence. Trois groupes de référence sont pris en charge :  
   

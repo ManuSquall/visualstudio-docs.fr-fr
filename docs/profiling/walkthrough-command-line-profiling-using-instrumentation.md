@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54c91b8238b21f214edda0941c0c91fd4bdda8e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29a68dc22a348c787d192bebecea91caed7aa0cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Procédure pas à pas : profilage de la ligne de commande à l’aide de l’instrumentation
 Cette procédure pas à pas explique comment profiler une application autonome [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pour collecter les données de temporisation et de nombre d’appels détaillées à l’aide de la méthode d’instrumentation des outils de profilage. Dans cette procédure pas à pas, vous accomplirez les tâches suivantes :  
@@ -33,7 +34,7 @@ Cette procédure pas à pas explique comment profiler une application autonome [
   
 -   Utiliser l’outil [VSPerfReport](../profiling/vsperfreport.md) pour générer des rapports des données de profilage basés sur les fichiers  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
   
 -   [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]  
   
@@ -127,5 +128,5 @@ Cette procédure pas à pas explique comment profiler une application autonome [
  [Vue d’ensemble des sessions de performances](../profiling/performance-session-overview.md)   
  [Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)   
- [Vues Rapport de performances](../profiling/performance-report-views.md)
+ [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)   
+ [Vues du rapport des performances](../profiling/performance-report-views.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f1a0f6df56cebe769ec514abea49ade0083c512e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6210f6e96c4e0b1330ee83a3f0f19ae58849dfce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="comparing-properties-and-items"></a>Comparaison des propriétés et des éléments
 Les propriétés et les éléments MSBuild permettent de transmettre des informations aux tâches, d’évaluer des conditions et de stocker les valeurs qui peuvent être référencées dans le fichier projet.  
@@ -42,7 +43,7 @@ Les propriétés et les éléments MSBuild permettent de transmettre des informa
 </PropertyGroup>  
 ```  
   
- La propriété `BuildDependsOn` est généralement utilisée comme argument d’un attribut `DependsOnTargets` cible, le convertissant effectivement en une liste d’éléments. Cette propriété peut être remplacée pour ajouter une cible ou modifier l’ordre d’exécution des cibles. Par exemple :  
+ La propriété `BuildDependsOn` est généralement utilisée comme argument d’un attribut `DependsOnTargets` cible, le convertissant effectivement en une liste d’éléments. Cette propriété peut être remplacée pour ajouter une cible ou modifier l’ordre d’exécution des cibles. Par exemple :  
   
 ```xml  
 <PropertyGroup>  

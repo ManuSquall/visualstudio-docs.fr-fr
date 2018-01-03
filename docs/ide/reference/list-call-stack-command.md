@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 178f219cf25ccddea0121d6c565cb5f9e99d3b33
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 71095bd7ec4b856c5fbee73e13be27dcd9abdaf4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-call-stack-command"></a>Afficher la pile des appels, commande
 Affiche la pile des appels actuelle.  
@@ -104,4 +105,4 @@ kb 2
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Alias de commande Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

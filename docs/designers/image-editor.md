@@ -15,11 +15,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d746d874b7efe18b1bd8dabf15804f1c05b57ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df78a45b5bc5dded132b58cb37b87d4198ad1e7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-editor"></a>Éditeur d’images
 Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour afficher et modifier des ressources de texture et d’image.  
@@ -108,7 +109,7 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 |**Zoom sur la taille réelle**|Affiche l’image en utilisant une relation 1:1 entre les pixels de l’image et les pixels de l’écran.|  
 |**Zoom pour ajuster**|Affiche l’image entière dans le cadre de la fenêtre.|  
 |**Zoom sur la largeur**|Affiche la largeur entière de l’image dans le cadre de la fenêtre.|  
-|**Grille**|Active ou désactive la grille qui montre les limites des pixels. Il peut être nécessaire de faire un zoom avant pour faire apparaître la grille.|  
+|**Grid**|Active ou désactive la grille qui montre les limites des pixels. Il peut être nécessaire de faire un zoom avant pour faire apparaître la grille.|  
 |**Afficher le niveau MIP suivant**|Active le niveau MIP supérieur suivant dans une chaîne de mappage MIP. Le niveau MIP actif est affiché dans l’aire de conception. Cet élément est disponible seulement pour les textures qui ont des niveaux MIP.|  
 |**Afficher le niveau MIP précédent**|Active le niveau MIP inférieur dans une chaîne de mappage MIP. Le niveau MIP actif est affiché dans l’aire de conception. Cet élément est disponible seulement pour les textures qui ont des niveaux MIP.|  
 |**Canal rouge**<br /><br /> **Canal vert**<br /><br /> **Canal bleu**<br /><br /> **Canal alpha**|Active ou désactive le canal de couleur spécifique. **Remarque :** En activant ou en désactivant de façon systématique des canaux de couleur, vous pouvez isoler les problèmes liés à une ou plusieurs de ces couleurs. Par exemple, vous pourrez identifier une transparence alpha incorrecte.|  
@@ -131,7 +132,7 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 |**Remplissage**|Utilise la sélection de couleur active pour remplir une zone de l’image. La zone affectée est définie comme le pixel où le remplissage est appliqué, ainsi que chaque pixel qui y est connecté par des pixels de la même couleur et qui est lui-même de la même couleur. Si le remplissage est appliqué dans une sélection active, la zone affectée est limitée par la sélection.<br /><br /> Par défaut, la sélection de couleur active est fusionnée avec la zone affectée de l’image en fonction de son composant alpha. Pour utiliser la sélection de couleur active pour remplacer la zone affectée, maintenez la touche Maj enfoncée quand vous utilisez l’outil de remplissage.|  
 |**Gomme**|Applique aux pixels la couleur entièrement transparente si l’image prend en charge un canal alpha. Sinon, applique aux pixels la couleur d’arrière-plan active.|  
 |**Ligne**, **Rectangle**, **Rectangle à coins arrondis**, **Ellipse**|Dessine une forme sur l’image. Vous pouvez définir la couleur et l’épaisseur du contour dans la fenêtre **Propriétés**.<br /><br /> Pour dessiner une primitive de largeur et de hauteur identiques, maintenez la touche Maj pendant que vous dessinez.|  
-|**Texte**|Utilise la sélection de couleur de premier plan pour dessiner du texte. La couleur d’arrière-plan est déterminée par la sélection de couleur d’arrière-plan. Pour un arrière-plan transparent, la valeur alpha de la sélection de couleur d’arrière-plan doit être 0. Quand la zone de texte est active, vous pouvez définir si le texte est dessiné avec un trait avec lissage, et vous pouvez définir la **Valeur**, la **Police**, la **Taille**et le style (**Gras**, **Italique** ou **Souligné**) du texte dans la fenêtre **Propriétés**. Le contenu et l’apparence du texte sont finalisés une fois que la zone de texte n’est plus active.|  
+|**Text**|Utilise la sélection de couleur de premier plan pour dessiner du texte. La couleur d’arrière-plan est déterminée par la sélection de couleur d’arrière-plan. Pour un arrière-plan transparent, la valeur alpha de la sélection de couleur d’arrière-plan doit être 0. Quand la zone de texte est active, vous pouvez définir si le texte est dessiné avec un trait avec lissage, et vous pouvez définir la **Valeur**, la **Police**, la **Taille**et le style (**Gras**, **Italique** ou **Souligné**) du texte dans la fenêtre **Propriétés**. Le contenu et l’apparence du texte sont finalisés une fois que la zone de texte n’est plus active.|  
 |**Faire pivoter**|Fait pivoter l’image de 90 degrés dans le sens des aiguilles d’une montre.|  
 |**Découper**|Découpe l’image au format de la sélection active.|  
   
@@ -218,7 +219,7 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 |----------|----------------|  
 |Tous les outils et toutes les sélections|**Faire pivoter de**<br /> Définit la quantité de la rotation, en degrés, pour la sélection ou l’effet de l’outil dans le sens des aiguilles d’une montre.|  
 |**Crayon**, **Pinceau**, **Aérographe**, **Gomme**|**Épaisseur**<br /> Définit la taille de la zone affectée par l’outil.|  
-|**Texte**|**Anticrénelage**<br /> Dessine du texte avec des contours lissés. Le texte a ainsi un aspect plus lisse.<br /><br /> **Valeur**<br /> Texte à dessiner.<br /><br /> **Police**<br /> Police utilisée pour dessiner le texte.<br /><br /> **Taille**<br /> Taille du texte.<br /><br /> **Gras**<br /> Met la police en gras.<br /><br /> **Italique**<br /> Met la police en italique.<br /><br /> **Souligné**<br /> Met la police en souligné.|  
+|**Text**|**Anticrénelage**<br /> Dessine du texte avec des contours lissés. Le texte a ainsi un aspect plus lisse.<br /><br /> **Valeur**<br /> Texte à dessiner.<br /><br /> **Police**<br /> Police utilisée pour dessiner le texte.<br /><br /> **Taille**<br /> Taille du texte.<br /><br /> **Gras**<br /> Met la police en gras.<br /><br /> **Italique**<br /> Met la police en italique.<br /><br /> **Souligné**<br /> Met la police en souligné.|  
 |**Primitive 2D**|**Anticrénelage**<br /> Dessine les primitives avec des contours lissés. Ceci leur donne une apparence plus lisse.<br /><br /> **Épaisseur**<br /> Définit l’épaisseur de la ligne qui constitue la limite de la primitive.<br /><br /> **Rayon X**<br /> (Rectangle à coins arrondis uniquement) Définit le rayon de l’arrondi pour les bords supérieur et inférieur de la primitive.<br /><br /> **Rayon Y**<br /> (Rectangle à coins arrondis uniquement) Définit le rayon de l’arrondi pour les bords gauche et droit de la primitive.|  
 |**Crayon**, **Pinceau**, **Aérographe**, **Primitive 2D**|**Canaux**<br /> Active ou désactive des canaux de couleur spécifiques pour l’affichage et le dessin. Si **Afficher** est défini pour un canal de couleur spécifique, ce canal est visible dans l’image ; sinon, il n’est pas visible. Si **Dessiner** est défini pour un canal de couleur spécifique, ce canal est affecté par les opérations de dessin ; sinon, il ne l’est pas.|  
 |**Sélection « Baguette magique »**, **Remplissage**|**Tolérance**<br /> Définit la différence maximale entre des couleurs adjacentes, selon laquelle elles sont considérées comme similaires, de sorte que plus ou moins de couleurs similaires font partie de la zone affectée ou sélectionnée. Par défaut, la valeur est 32, ce qui signifie que les pixels adjacents dans 32 nuances (plus claires ou plus sombres) de la couleur d’origine sont considérés comme faisant partie de la zone.|  
@@ -273,4 +274,4 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 |-----------|-----------------|  
 |[Utilisation de ressources 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fournit une vue d’ensemble des outils que vous pouvez utiliser dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour travailler avec des ressources graphiques, comme des textures et des images, des modèles 3D et des effets du nuanceur.|  
 |[Éditeur de modèle](../designers/model-editor.md)|Décrit l’utilisation de l’éditeur de modèle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] avec les modèles 3D.|  
-|[Concepteur de nuanceur](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour travailler avec des nuanceurs.|
+|[Concepteur Shader](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour travailler avec des nuanceurs.|

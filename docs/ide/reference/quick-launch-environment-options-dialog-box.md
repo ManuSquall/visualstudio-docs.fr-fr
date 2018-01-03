@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7cfa9fc89ad2d4776a7aa0b5071db6bd5daddd9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f71cca51a27c8ed9d6467d99425d4d3b721d195
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Lancement rapide, Environnement, boîte de dialogue Options
 Vous pouvez utiliser **Lancement rapide** pour rechercher et exécuter rapidement des actions pour les ressources de l’IDE, comme les options, les modèles ou les menus. Vous ne pouvez pas utiliser **Lancement rapide** pour rechercher du code et des symboles. La zone de recherche **Lancement rapide** se trouve dans le coin supérieur droit de la barre de menus et est accessible via Ctrl+Q. Entrez simplement votre chaîne de recherche dans la zone. Pour rechercher des chaînes qui contiennent des @, utilisez @@.  
@@ -34,7 +35,7 @@ Vous pouvez utiliser **Lancement rapide** pour rechercher et exécuter rapidemen
   
  Vous pouvez utiliser les raccourcis suivants pour limiter votre recherche à des catégories spécifiques.  
   
-|Catégorie|Raccourci|Description du raccourci|  
+|Category|Raccourci|Description du raccourci|  
 |--------------|--------------|--------------------------|  
 |Les dernières utilisées|@mru<br /><br /> Par exemple, `@mru font`.|Affiche jusqu’à cinq des éléments que vous avez **utilisés le plus récemment**.|  
 |Menus|@menu<br /><br /> Par exemple, `@menu font`.|Limite la recherche aux éléments de menu.|  

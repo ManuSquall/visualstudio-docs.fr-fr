@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8acc59afdd050998f2269cc9be1986b7f4f426ae
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: multiple
+ms.openlocfilehash: eb747b60c575aa1e49b559d3cf4a73b649808041
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Comment : utiliser des caractères XML réservés dans les fichiers projet
 Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des caractères XML réservés, par exemple, dans les valeurs de propriétés ou dans les valeurs de paramètres de tâche. Toutefois, certains caractères réservés doivent être remplacés par une entité nommée afin que le fichier projet puisse être analysé.  
@@ -74,5 +75,5 @@ Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des car
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)    
+ [Référence MSBuild](../msbuild/msbuild-reference.md)    
  [MSBuild](../msbuild/msbuild.md)    

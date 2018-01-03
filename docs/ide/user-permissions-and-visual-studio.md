@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e044e3d89f7cbaae28ff0fd3cefe1c6fe4583c65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3cf223b0b4d2f8ca710a5d5fdb349c7a423b1b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorisations utilisateur et Visual Studio
 Pour des raisons de sécurité, vous devez exécuter Visual Studio en tant qu'utilisateur normal chaque fois que c'est possible.  
@@ -31,7 +32,7 @@ Pour des raisons de sécurité, vous devez exécuter Visual Studio en tant qu'ut
 
  Vous pouvez faire quasiment tout dans l'IDE de Visual Studio comme un utilisateur normal, mais, vous devez avoir des autorisations d'administrateur pour effectuer les tâches suivantes :  
 
-|Zone|Tâche|Pour plus d'informations|  
+|Domaine|Tâche|Pour plus d'informations|  
 |----------|----------|--------------------------|  
 |Installation|Installez Visual Studio.|[Installer Visual Studio](../install/install-visual-studio.md)|  
 ||Installation, mise à jour ou suppression du contenu d'Aide locale.|[Installer et gérer un contenu local](../ide/install-and-manage-local-content.md)|  

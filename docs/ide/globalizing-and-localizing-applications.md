@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e32c592894b5d44a2d257d183c11da01c90456
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 27f298ad0317223e40f6e9a8606aa9b6aed735fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalisation et localisation d'applications
 Si vous prévoyez de distribuer votre application à un public international, vous devez garder plusieurs choses à l’esprit pendant les phases de conception et de développement. Même si tels ne sont pas vos plans, un petit effort en amont peut simplifier considérablement les choses si vous êtes amené à faire évoluer votre application. Grâce au développement managé avec Visual Studio et aux services intégrés au [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], vous pouvez facilement développer une application donnée qui peut s’adapter à différents paramètres régionaux.  

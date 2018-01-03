@@ -19,11 +19,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e345b573544839aea7601e334545e4ba410d6b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dee9f1379dd7cd4c1d134714a35fc91d74f9f128
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox"></a>Boîte à outils
 La **boîte à outils** affiche les icônes des contrôles et autres éléments que vous pouvez ajouter aux projets [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Pour ouvrir la **boîte à outils**, cliquez sur **Boîte à outils** dans le menu **Affichage**. Vous pouvez ancrer la **boîte à outils**. Vous pouvez également l’épingler ou la configurer pour se **Masquer automatiquement**.  
@@ -33,7 +34,7 @@ La **boîte à outils** affiche les icônes des contrôles et autres éléments 
  La **boîte à outils** affiche uniquement les éléments appropriés pour le type de fichier que vous utilisez. Vous pouvez rechercher des éléments dans la boîte à outils pour filtrer davantage les éléments qui s'affichent. Si votre projet nécessite un contrôle qui n'est pas pris en charge par Client Profile, vous pouvez configurer votre projet pour cibler l'infrastructure entière en modifiant les propriétés du projet.  
   
 > [!NOTE]
->  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
+>  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="help-on-toolbox-tabs"></a>Aide sur les onglets de la boîte à outils  
  Les documents suivants fournissent des informations supplémentaires sur des onglets spécifiques de la **boîte à outils**.  

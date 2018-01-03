@@ -18,11 +18,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: ec1c20ae334e81724af1b8d4e2b25d755a024bdc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f0d0250e2810adc8fd79239aa8e0807b04bbf0a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Comment : créer un test unitaire piloté par des données
 À l’aide du framework de test unitaire Microsoft pour le code managé, vous pouvez configurer une méthode de test unitaire permettant de récupérer les valeurs utilisées dans la méthode de test à partir d’une source de données. La méthode est exécutée successivement pour chaque ligne de la source de données, ce qui permet de tester facilement diverses entrées à l’aide d’une seule méthode.  
@@ -190,4 +191,4 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  [Guide pratique pour créer et exécuter un test unitaire](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
  [Tests unitaires sur votre code](../test/unit-test-your-code.md)   
  [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)   
- [Écriture de tests unitaires pour le .NET Framework à l’aide du framework de tests unitaires Microsoft pour le code managé](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+ [Écriture de tests unitaires pour le .NET Framework à l’aide de l’infrastructure de tests unitaires Microsoft pour le code managé](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

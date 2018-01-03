@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e41dd319e00dccbc180319bf3642c665cf4df58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 61f9735c61538465088b58f25e6c714a2441e34c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-existing-project-command"></a>Ajouter un projet existant, commande
 Ajoute un projet existant à la solution actuelle.  
@@ -53,4 +54,4 @@ File.AddExistingProject filename
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Alias de commande Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

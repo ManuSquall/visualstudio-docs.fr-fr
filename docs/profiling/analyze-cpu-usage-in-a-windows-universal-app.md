@@ -13,11 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 59669f0430760bb98dd0cb63e05f433cb3a1fe54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0eb22a7ac23c0848984ba872ccbcb2e40fb61fe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-cpu-usage-in-a-universal-windows-app-uwp"></a>Analyser l’utilisation du processeur dans une application Windows universelle (UWP)
 ![S’applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  Générez l'application et essayez-la. L’application est simple et vous montre certains cas courants d’analyse des données liées à l’utilisation du processeur.  
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> Collecter les données d’utilisation de l’UC  
+##  <a name="BKMK_Collect_CPU_usage_data"></a> Collecter les données d'utilisation de l'UC  
  ![Exécuter une version Release de l’application dans le simulateur](../profiling/media/cpu_use_wt_setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1.  Dans Visual Studio, définissez la cible de déploiement sur **Simulateur**, et la configuration de la solution sur **Mise en production**.  

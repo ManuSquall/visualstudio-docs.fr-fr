@@ -24,11 +24,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: df309f6b4d28da051dca9b824d06dcae221b2a9e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e45350598a50709a411da270e3607197a36ee20b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xsd-task"></a>Tâche XSD
 Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichiers de schéma ou de classe à partir d’une source.  
@@ -38,13 +39,13 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
 -   **AdditionalOptions**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Liste des options comme indiqué sur la ligne de commande. Par exemple, « */option1 /option2 /option#* ». Utilisez ce paramètre pour spécifier des options qui ne sont pas représentées par un autre paramètre de tâche **XSD**.  
   
 -   **GenerateFromSchema**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Indique les types qui sont générés à partir du schéma spécifié.  
   
@@ -56,7 +57,7 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
 -   **Language**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le langage de programmation à utiliser pour le code généré.  
   
@@ -64,7 +65,7 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
 -   **Namespace**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie l'espace de noms du runtime pour les types générés.  
   
@@ -82,7 +83,7 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
 -   **TrackerLogDirectory**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le répertoire du journal de Tracker.  
   

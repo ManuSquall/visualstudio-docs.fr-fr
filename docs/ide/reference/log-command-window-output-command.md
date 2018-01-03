@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21450a0478bb7f2388cdde6b69f6fe661e9a055c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f5dffcd68447cac398c980f0b6c0ac2319c9060
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="log-command-window-output-command"></a>Enregistrer la sortie de la fenêtre de commande, commande
 Copie toutes les entrées et sorties de la fenêtre **Commande** dans un fichier.  
@@ -48,7 +49,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
  /overwrite  
  Facultatif. Si le fichier spécifié dans l’argument `filename` est identique à un fichier existant, celui-ci est remplacé.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si aucun fichier n’est spécifié, le fichier cmdline.log est créé par défaut. L’alias par défaut de cette commande est Log.  
   
 ## <a name="examples"></a>Exemples  
@@ -74,4 +75,4 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Alias de commande Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9a719e39506e080ce55bad45124e34d79dbbfac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7218b5bdcc95ed5db7f87c6fb17230895db579cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 L’utilisation de paramètres dans vos modèles vous permet de remplacer les valeurs des parties principales du modèle, telles que les noms de classes et les espaces de noms, quand le modèle est instancié. Ces paramètres sont remplacés par l’Assistant Modèle qui s’exécute en arrière-plan quand un utilisateur clique sur **OK** dans les boîtes de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**.  

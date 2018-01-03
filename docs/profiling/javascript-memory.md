@@ -26,11 +26,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e52bef93735efc1ec5e43230ba46c7aa90cb67bc
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analyser l’utilisation de mémoire JavaScript dans les applications UWP
 L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous aider à comprendre l’utilisation de la mémoire et à rechercher les fuites de mémoire dans vos applications UWP générées pour Windows en JavaScript. Les applications dédiées aux applications Windows universelles sont prises en charge.
@@ -342,7 +343,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
   
 -   Ajoutez les commandes de l'analyseur de mémoire à votre code source.  
   
- Vous pouvez utiliser les commandes suivantes dans votre code source :  
+ Vous pouvez utiliser les commandes suivantes dans votre code source :  
   
 -   `console.takeHeapSnapshot` prend un instantané du tas qui s'affiche dans l'analyseur de mémoire JavaScript. Cette commande est l'une des [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
@@ -380,7 +381,7 @@ if (performance && performance.mark) {
   
 -   Quand il est difficile d'identifier la cause d'un problème de mémoire, utilisez les différentes vues (telles que Dominators et Types) pour rechercher des points communs, en particulier pour faciliter l'identification d'un objet (ou de quelques objets) pouvant contenir des références à de nombreux autres objets qui apparaissent dans la vue.  
   
--   Recherchez les objets qui sont conservés par inadvertance dans la mémoire après que l'utilisateur a accédé à une nouvelle page. Il s'agit d'une cause fréquente de problèmes de mémoire. Par exemple :  
+-   Recherchez les objets qui sont conservés par inadvertance dans la mémoire après que l'utilisateur a accédé à une nouvelle page. Il s'agit d'une cause fréquente de problèmes de mémoire. Exemple :  
   
     -   l'utilisation incorrecte de la fonction [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) peut entraîner ce problème.  
   

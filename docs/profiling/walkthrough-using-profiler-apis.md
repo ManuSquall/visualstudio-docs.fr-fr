@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa7ba54d15697c02b62f13c3fa54a3005f410bd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a592082cac8cf493a742c9ce6f7de3bb0c706aad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procédure pas à pas : utilisation des API du profileur
 La procédure pas à pas utilise une application C# pour montrer comment utiliser les API des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous utilisez les API du profileur pour limiter la quantité de données collectées pendant le profilage par instrumentation.  
@@ -36,7 +37,7 @@ La procédure pas à pas utilise une application C# pour montrer comment utilise
   
  Pour le code managé, les API du profileur se trouvent dans Microsoft.VisualStudio.Profiler.dll. Cette DLL se trouve dans le répertoire Microsoft Visual Studio 9\Team Tools\Performance Tools. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Profiler>.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Cette procédure pas à pas suppose que votre environnement de développement est configuré pour prendre en charge le débogage et l’échantillonnage. Les rubriques suivantes fournissent une vue d’ensemble de ces prérequis :  
   
  [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)  

@@ -16,16 +16,17 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 8bf11425439387a13db2bb77f0ce798bef076461
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: azure
+ms.openlocfilehash: f3fd548234dbd7f02be4abfab77a22d3efd9b34a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procédure pas à pas : création d’une application de bureau WPF connectée à un service mobile Azure
 Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidement une application de bureau moderne qui utilise un service mobile Azure pour stocker et fournir des données.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
 Les éléments suivants sont nécessaires pour effectuer cette procédure pas à pas :  
   
 -   Visual Studio 2017 ou toute version prenant en charge le développement WPF.  
@@ -556,7 +557,7 @@ L’étape suivante consiste à créer l’interface utilisateur de l’applicat
      Cette action appelle la méthode **UpdateCheckedTodoItem** et supprime l’élément de la liste et de la base de données.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Vous avez terminé un exemple assez simple d’une application de bureau WPF avec un serveur principal Azure. Bien entendu, une application réelle est susceptible d’être beaucoup plus complexe, mais les mêmes concepts de base s’appliquent. Consultez [WPF dans le .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
+ Vous avez terminé un exemple assez simple d’une application de bureau WPF avec un serveur principal Azure. Bien entendu, une application réelle est susceptible d’être beaucoup plus complexe, mais les mêmes concepts de base s’appliquent. Consultez [WPF dans le .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130).  
   
  Vous pouvez rendre l’interface utilisateur plus attrayante en ajoutant des couleurs, des formes, des graphiques et même des animations. Consultez [Création d’une interface utilisateur à l’aide du concepteur XAML dans Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) et [Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). Pour afficher une comparaison des outils, consultez [Conception XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
 

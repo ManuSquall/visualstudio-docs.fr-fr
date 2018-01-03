@@ -12,11 +12,12 @@ ms.assetid: d3de7b31-0262-4373-ba84-e74eda7651e4
 caps.latest.revision: "26"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5a6a1a314e837b441e2fc563baabf935659adcf8
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: f5f61b5c2c0fc5f252ed331e58137f970f6705df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-and-run-unit-tests-for-a-uwp-app-in-visual-studio"></a>Créer et exécuter des tests unitaires pour une application UWP dans Visual Studio
 Les outils de test unitaire de Visual Studio sont destinés à aider les développeurs et les équipes qui intègrent des tests unitaires à leurs pratiques de développement de logiciels. Les tests unitaires offrent aux développeurs et aux testeurs une solution efficace et facile à gérer qui permet de rechercher les erreurs dans les méthodes des classes au sein des projets Visual C#, Visual Basic et Visual C++.  
@@ -26,7 +27,7 @@ Les outils de test unitaire de Visual Studio sont destinés à aider les dévelo
 >   
 >  -   Dans VS Ultimate, VS Premium et VS Professional, vous pouvez utiliser une infrastructure de test unitaire tierce ou open source qui a créé un adaptateur complémentaire pour l'explorateur de tests Microsoft. Vous pouvez également analyser et afficher les informations de couverture du code pour vos tests avec VS Ultimate et VS Premium.  
 > -   Dans VS Ultimate, il est possible d'exécuter les tests après chaque génération. Vous pouvez également utiliser Microsoft Fakes, une infrastructure d'isolement pour le code managé, pour concentrer vos tests sur votre propre code en remplaçant le code de test pour les fonctionnalités du système et les fonctionnalités tierces.  
-> -   **JavaScript**. Le test unitaire JavaScript n'est pas disponible à partir de l'IDE de Visual Studio Express pour Windows 8. Dans Visual Studio Professional, Premium et Ultimate, les frameworks de test unitaire JavaScript sont disponibles comme extensions de la galerie Visual Studio. Vous pouvez aussi tester le code JavaScript en utilisant l’un des frameworks de test unitaire tiers autonomes ou JavaScript open source.  
+> -   **JavaScript**. Le test unitaire JavaScript n'est pas disponible à partir de l'IDE de Visual Studio Express pour Windows 8. Dans Visual Studio Professional, Premium et Ultimate, les infrastructures de test unitaire JavaScript sont disponibles comme extensions de la galerie Visual Studio. Vous pouvez aussi tester le code JavaScript en utilisant l’un des frameworks de test unitaire tiers autonomes ou JavaScript open source.  
 >   
 >  Pour plus d’informations, consultez [Tests unitaires sur votre code](../test/unit-test-your-code.md) dans MSDN Library.  
   

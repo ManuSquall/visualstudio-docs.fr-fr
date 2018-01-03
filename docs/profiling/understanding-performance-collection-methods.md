@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ad7ecfb61e1d8ecb7bcb000a659b798eb651461
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: a126ec0329695455013ca8625a8aeb774cf2ad36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-performance-collection-methods"></a>Présentation des méthodes de collecte des performances
 Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez utiliser pour collecter des données de performances. Cette rubrique décrit les différentes méthodes et suggère quelques scénarios dans lesquels la collecte des données avec une méthode particulière peut être appropriée.  
@@ -87,11 +88,11 @@ Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez
   
 -   Le visualiseur concurrentiel affiche des informations graphiques que vous pouvez utiliser pour localiser les goulots d’étranglement au niveau des performances, la sous-utilisation de l’UC, les conflits de threads, la migration de threads, les délais de synchronisation, les zones d’E/S avec chevauchement et d’autres informations. Quand c’est possible, la sortie graphique est en lien avec les données de la pile des appels et du code source. Les données de visualisation concurrentielle peuvent être collectées uniquement pour les applications de ligne de commande et les applications Windows.  
   
- [Présentation des valeurs des données de conflit de ressources](../profiling/understanding-resource-contention-data-values.md)  
+ [Fonctionnement des valeurs des données de conflit de ressources](../profiling/understanding-resource-contention-data-values.md)  
   
  [Collecte de données concurrentielles de threads et de processus](../profiling/collecting-thread-and-process-concurrency-data.md)  
   
- [Vues des données de conflit de ressources](../profiling/resource-contention-data-views.md)  
+ [Vues de données de conflit de ressources](../profiling/resource-contention-data-views.md)  
   
  [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)  
   

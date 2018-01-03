@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad53ee70cd4f1c47ab4df2a9df822c5f5be3f713
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2b48074fa04ae408f566ce15743505ae5d260dd8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="copy-selection"></a>Copier une sélection
 Pour copier l’intégralité de la pile des appels à partir de l’onglet Rapport, cliquez sur **Copier**. Vous pouvez ensuite coller la pile des appels dans n’importe quel programme prenant en charge cette action.  

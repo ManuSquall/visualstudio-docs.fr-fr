@@ -17,11 +17,12 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d52f6bfe745cf7e8684094cf9244b6eedcba13a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da961d153713c996c6f057e7bb0366c747c87205
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Procédure pas à pas : Identification des problèmes de performances
 Cette procédure pas à pas montre comment profiler une application pour identifier les problèmes de performances.  
@@ -38,7 +39,7 @@ Cette procédure pas à pas montre comment profiler une application pour identif
   
 -   Analyser les résultats d’un profilage instrumenté pour rechercher et résoudre un problème de performances  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
   
 -   Compréhension intermédiaire de C#.  
   

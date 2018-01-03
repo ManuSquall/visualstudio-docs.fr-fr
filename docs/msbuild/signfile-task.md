@@ -21,11 +21,12 @@ caps.latest.revision: "19"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f2e09933d8e1bcfc8e29712a78fe3b2454e42117
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c1e5e25d6a8b3b953d28676415266ccf245d418
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="signfile-task"></a>SignFile, tâche
 Signe le fichier spécifié à l'aide du certificat spécifié.  
@@ -45,7 +46,7 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 |`TimestampUrl`|Paramètre `String` facultatif.<br /><br /> Spécifie l'URL d'un serveur d'horodatage.|  
 |`TargetFrameworkVersion`|Version du .NET Framework utilisée pour la cible.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Task, classe de base](../msbuild/task-base-class.md).  
   
 ## <a name="example"></a>Exemple  
@@ -93,5 +94,5 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des tâches](../msbuild/msbuild-task-reference.md)   
+ [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
  [Tâches](../msbuild/msbuild-tasks.md)

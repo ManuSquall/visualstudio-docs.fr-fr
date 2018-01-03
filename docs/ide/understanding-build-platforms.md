@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ec355d4798da9a5134396801d744623fffc2da2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef7469677a9d6eb01514b9117ed4c303ae5346de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-build-platforms"></a>Présentation des plateformes de générations
 Vous pouvez stocker différentes versions de propriétés de solution et de projet qui s’appliquent à diverses plateformes cibles. Par exemple, vous pouvez créer une configuration de débogage qui cible une plateforme x86 et une autre qui cible une plateforme x64. Vous pouvez rapidement changer la plateforme active et ainsi générer facilement plusieurs configurations.  

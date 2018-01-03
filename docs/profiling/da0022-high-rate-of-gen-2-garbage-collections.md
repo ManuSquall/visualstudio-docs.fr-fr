@@ -16,18 +16,19 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2917ed46a32a6f726a5b484bb1d91e7e277854c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7110f5f145607d89af71f05c94cf154264b232f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022 : Taux élevé de garbage collection Gen 2
 |||  
 |-|-|  
 |ID de règle|DA0022|  
-|Catégorie|Utilisation du .NET Framework|  
-|Méthode de profilage|Tout|  
+|Category|Utilisation du .NET Framework|  
+|Méthode de profilage|Tous|  
 |Message|Taux relativement élevé de garbage collection Gen 2. Si, par conception, la plupart des structures de données de votre programme sont allouées et persistent pour longtemps, cela ne pose pas de problème. Cependant, si ce comportement est involontaire, votre application peut épingler des objets. Si vous n’êtes pas sûr, vous pouvez regrouper les données d’allocation de mémoire .NET et les informations de durée de vie des objets afin de comprendre le modèle d’allocation de mémoire utilisé par votre application.|  
 |Type de règle|Warning|  
   

@@ -22,18 +22,18 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting
 helpviewer_keywords:
 - formatting [C#]
-- formatting [J#]
 - Text Editor Options dialog box, formatting
 ms.assetid: 5a7bb668-1d0c-4ffe-9508-24592813162e
 caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24ebcd48e60e748a671241b5f562e67f6a3dc2a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 2032b0b50c9f22396d63b32b1d050eb40ea70a79
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-c-formatting"></a>Options, Éditeur de texte, C#, Mise en forme
 Utilisez la boîte de dialogue de page de propriétés **Mise en forme** pour définir des options de mise en forme du code dans l’éditeur de code. Pour accéder à cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**, développez **Éditeur de texte**, développez **C#**, puis cliquez sur **Mise en forme**.  
@@ -55,7 +55,7 @@ Utilisez la boîte de dialogue de page de propriétés **Mise en forme** pour d�
 ## <a name="preview-window"></a>Fenêtre Aperçu  
  Les volets d’options **Mise en retrait**, **Nouvelles lignes**, **Espacement** et **Retour à la ligne** offrent tous une fenêtre d’aperçu. La fenêtre d’aperçu montre l’effet de chaque option. Pour utiliser la fenêtre d’aperçu, sélectionnez une option de mise en forme. La fenêtre d’aperçu montre un exemple de l’option sélectionnée. Quand vous changez le paramètre, par exemple quand vous cochez ou décochez une case à cocher, la fenêtre d’aperçu se met à jour en affichant l’effet du nouveau paramètre.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les options de mise en retrait dans les pages **Tabulations** de chaque langage déterminent uniquement l’endroit où l’éditeur de code place le curseur quand vous appuyez sur Entrée en fin de ligne. Les options de mise en retrait sous **Mise en forme** s’appliquent quand le code est mis en forme automatiquement, par exemple, quand vous collez du code dans le fichier alors que l’option **Ajuster la mise en retrait lors du collage** est sélectionnée, et quand le bloc qui est mis en forme est tapé manuellement.  
   
 ## <a name="see-also"></a>Voir aussi  

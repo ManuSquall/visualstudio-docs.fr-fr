@@ -14,11 +14,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 065806ec223273bbacba6da7702f21bc25510983
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 4aed087f8280049018818e68f7db56960db7e690
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-hierarchy"></a>Hiérarchie d'appels
 La hiérarchie d’appels vous permet de parcourir votre code en affichant tous les appels à destination et en provenance d’une méthode, d’une propriété ou d’un constructeur sélectionné. Cela vous permet de mieux comprendre le flux du code et d’évaluer les effets des modifications apportées au code. Vous pouvez examiner plusieurs niveaux de code pour afficher les chaînes complexes d’appels de méthodes et les points d’entrée supplémentaires dans le code, ce qui vous permet d’explorer tous les chemins d’exécution possibles.  

@@ -18,17 +18,18 @@ caps.latest.revision: "22"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 40b1fdb27bd2a256a1cff4b5a2066a3223939771
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f780de1bac1786ac3c5ffb70bd1a2f442fc8734
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-reference"></a>Référence MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est le système de génération de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les liens indiqués ci-dessous renvoient aux rubriques qui contiennent les informations de référence sur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Informations de référence sur le schéma de fichier projet MSBuild](../msbuild/msbuild-project-file-schema-reference.md)  
+ [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)  
  Décrit les éléments XML qui composent le format de fichier [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)  

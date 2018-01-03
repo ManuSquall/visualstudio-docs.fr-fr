@@ -21,11 +21,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c4c7613cca7f9dec7c2db7ceffef1cc542cfa61
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b81517d8d8e0cc6dd1386525f7a2129ed18851c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigating-code"></a>Navigation dans le code  
 Visual Studio propose de nombreuses manières de parcourir le code dans l’éditeur. Cette rubrique résume les différentes façons de naviguer dans votre code, et fournit des liens vers des rubriques qui abordent ce sujet plus en détail.  
@@ -94,7 +95,7 @@ Entrée        | Fonction
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **F12**.
 **Souris**    | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Atteindre la définition** OU appuyez sur **Ctrl**, puis cliquez sur le nom de type (nouveauté de Visual Studio 2017 version 15.4)  
 
-## <a name="peek-definition"></a>Aperçu de la définition  
+## <a name="peek-definition"></a>Aperçu de définition  
 L’option Aperçu de la définition affiche la définition de l’élément sélectionné dans une fenêtre sans vous obliger à quitter votre emplacement actuel dans l’éditeur de code. Pour plus d’informations, consultez [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) et [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md).  
 
 Entrée        | Fonction 

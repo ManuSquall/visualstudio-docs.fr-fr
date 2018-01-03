@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2c265fde65ae20012e2846d99b86c71254d5b44
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostics de Visual Studio pour mieux comprendre l'utilisation du matériel de pointe par votre application Direct3D. Vous pouvez l'utiliser pour déterminer si les performances de votre application sont liées à l'UC ou au GPU, et mieux comprendre comment tirer parti de la plateforme matérielle plus efficacement. L'outil Utilisation du GPU prend en charge les applications Direct3D 12, Direct3D 11 et Direct3D 10. Il ne prend pas en charge les autres API graphiques telles que Direct2D ou OpenGL.  
@@ -25,7 +26,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
  ![Rapport d’utilisation du GPU, avec les chronologies GPU et UC](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  Voici les conditions requises pour l'outil Utilisation du GPU, en plus de celles de Graphics Diagnostics.  
   
 -   GPU et pilote qui prennent en charge l'instrumentation de minutage nécessaire.  

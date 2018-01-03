@@ -11,16 +11,17 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 34cfe9041a9e724136c9d7c5a19b1c74f2309b2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e293d6ef200fec89150d76d94233bb171374a1d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
 Cette rubrique traite des options et des problèmes dans la génération et la compilation de code Fakes, et décrit les conventions de nommage pour les types Fakes générés, les membres et les paramètres.  
   
- **Requirements**  
+ **Spécifications**  
   
 -   Visual Studio Enterprise  
   
@@ -269,7 +270,7 @@ attribute of the Assembly element in the .fakes:
 |Par exemple : opérateur + |`op_Add`|`AddOp`|  
 |Pour un **opérateur de conversion**, le type de retour est ajouté.|`T op_Implicit`|`ImplicitOpT`|  
   
- **Remarques**  
+ **Notes**  
   
 -   Les **accesseurs Get et Set des indexeurs** sont traités de la même façon que la propriété. Le nom par défaut pour un indexeur est `Item`.  
   

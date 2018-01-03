@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9666f4f26476544baa6afc5dad17798b4e8360d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procédure pas à pas : création d'un environnement de build sur plusieurs ordinateurs
 
@@ -289,8 +290,8 @@ Cette procédure pas à pas a été validée par rapport aux systèmes d’explo
     |Argument Vcvarsall.bat|Compilateur|Architecture de l’ordinateur de build|Architecture de sortie de génération|  
     |----------------------------|--------------|---------------------------------|-------------------------------|  
     |x86 (valeur par défaut)|Natif 32 bits|x86, x64|x86|  
-    |x86_amd64|x64 croisé|x86, x64|x64|  
-    |amd64|x64 natif|x64|x64|  
+    |x86_amd64|x64 croisé|x86, x64|X64|  
+    |amd64|x64 natif|X64|X64|  
   
      Si vcvarsall.bat s’exécute correctement, autrement dit, si aucun message d’erreur ne s’affiche, vous pouvez ignorer l’étape suivante et passer à la section [Installation d’assemblys MSBuild dans le GAC (Global Assembly Cache) sur l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) de ce document.  
   
@@ -372,7 +373,7 @@ Cette procédure pas à pas a été validée par rapport aux systèmes d’explo
   
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
   
-         par celle-ci :  
+         par celle-ci :  
   
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".  
   
@@ -382,7 +383,7 @@ Cette procédure pas à pas a été validée par rapport aux systèmes d’explo
   
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
   
-         par celle-ci :  
+         par celle-ci :  
   
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".  
   

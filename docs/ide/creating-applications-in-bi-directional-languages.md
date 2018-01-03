@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f79bc2ca79cdec10fa480d87f48abc240420c34e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db7afbc68ab4e02803959dd0ff0b4de92233fece
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Création d'applications en langues bidirectionnelles
 Vous pouvez utiliser Visual Studio pour créer des applications qui affichent correctement les langues qui s’écrivent de droite à gauche, comme l’arabe et l’hébreu. Pour certaines fonctionnalités, il suffit de définir des propriétés. Dans d’autres cas, vous devez implémenter des fonctionnalités dans le code.  
@@ -46,7 +47,7 @@ Vous pouvez utiliser Visual Studio pour créer des applications qui affichent co
 -   **Encodage des fichiers** Vous pouvez enregistrer et ouvrir des fichiers avec un encodage Unicode ou spécifique à une langue. Pour plus d’informations, consultez [Guide pratique pour enregistrer et ouvrir des fichiers avec encodage](../ide/how-to-save-and-open-files-with-encoding.md).  
   
 ## <a name="features-with-limited-or-no-support"></a>Fonctionnalités avec prise en charge limitée et fonctionnalités non prises en charge  
- Certaines fonctionnalités courantes des applications pour langues bidirectionnelles ne sont pas entièrement prises en charge par Visual Studio, voire pas du tout. à savoir :  
+ Certaines fonctionnalités courantes des applications pour langues bidirectionnelles ne sont pas entièrement prises en charge par Visual Studio, voire pas du tout. Elles incluent notamment :  
   
 -   **Ordre de lecture de droite à gauche** Par défaut, les contrôles de saisie de texte que vous utilisez dans Visual Studio utilisent l’ordre de lecture de gauche à droite. Dans la plupart des cas, vous pouvez utiliser des méthodes Windows standard pour changer l’ordre de lecture. Par exemple, vous pouvez appuyer sur Ctrl+Maj droite pour que la fenêtre Propriétés prenne en charge l’ordre de lecture de droite à gauche.  
   

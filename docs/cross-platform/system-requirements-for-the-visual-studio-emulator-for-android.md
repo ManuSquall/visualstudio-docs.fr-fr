@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 469a8298122abdc96c69f13ed96a893b02575fc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 571cc5ffc3637ecdca54cda74fd6aa20983fdab6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 L’émulateur Visual Studio pour Android s’exécute en tant que machine virtuelle sur Hyper-V, la technologie de virtualisation pour Windows 8 et versions ultérieures. Pour exécuter l’émulateur, votre ordinateur doit satisfaire à la configuration requise pour exécuter Hyper-V, comme décrit dans cette rubrique.  
@@ -63,7 +64,7 @@ L’émulateur Visual Studio pour Android s’exécute en tant que machine virtu
   
 -   Dans le BIOS, les fonctionnalités suivantes doivent être prises en charge :  
   
-    -   Assistance matérielle à la virtualisation  
+    -   Assistance matérielle à la virtualisation   
   
     -   Traduction d’adresse de second niveau (SLAT)  
   

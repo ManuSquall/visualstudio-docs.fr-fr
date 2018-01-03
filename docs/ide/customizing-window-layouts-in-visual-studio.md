@@ -27,11 +27,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 85881bf35fb89f753eb4110d7b1128b4761a73a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 596e9e6dfa5f7fb464430636f696e37748ccb8eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 Dans Visual Studio, vous pouvez personnaliser la position, la taille et le comportement des fenêtres pour créer des dispositions de fenêtres optimisées pour différents flux de travail de développement. Quand vous personnalisez la disposition, l'IDE mémorise vos paramètres. Ainsi, si vous modifiez l'emplacement d'ancrage de l' **Explorateur de solutions** et que vous fermez Visual Studio, l' **Explorateur de solutions** sera ancré au même emplacement au prochain démarrage, même si vous travaillez sur un autre ordinateur. Vous pouvez également nommer et enregistrer une disposition personnalisée, et basculer d’une disposition à une autre avec une seule commande. Vous pouvez par exemple créer une disposition pour la modification et une autre pour le débogage, et basculer de l’une à l’autre avec la commande de menu **Fenêtre &#124; Appliquer la disposition de fenêtre**.  
@@ -77,7 +78,7 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
  Pour réorganiser les fenêtres Outil et les fenêtres de document, vous pouvez les faire glisser, utiliser les commandes du menu **Fenêtre** ou encore cliquer avec le bouton droit sur la barre de titre de la fenêtre à réorganiser.  
 
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
 
 ### <a name="dock-windows"></a>Ancrer des fenêtres  
  Quand vous cliquez sur la barre de titre d'une fenêtre outil ou sur l'onglet de la fenêtre de document et que vous le faites glisser, un repère en forme de losange apparaît. Au cours de l'opération de glissement, quand le curseur de la souris se trouve sur l'une des flèches dans le losange, une zone grisée apparaît pour vous montrer où la fenêtre sera ancrée si vous relâchez le bouton de la souris à ce moment-là.  

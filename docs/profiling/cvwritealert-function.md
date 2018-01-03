@@ -22,11 +22,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a9faf31dea1eeb7b7a613b8e0c963620bc644af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2acfd3572d7586d2194e3979954049aede14a965
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert, fonction
 Écrit une alerte dans le fichier de trace du visualiseur concurrentiel.  
@@ -70,7 +71,7 @@ HRESULT CvWriteAlertVA(
 ## <a name="return-value"></a>Valeur de retour  
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête** : cvmarkers.h  
   
  **Unicode** : CvWriteAlertW, CvWriteAlertVW  

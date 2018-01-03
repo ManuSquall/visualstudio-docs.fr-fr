@@ -12,16 +12,17 @@ ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5eb576be81849215f1413a7b58c6e460479af7f3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 04472a9dee89a270c78876022b16ef54f200ecd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomie d'un test codé de l'interface utilisateur
 Quand vous créez un test codé de l'interface utilisateur dans un projet de test codé de l'interface utilisateur, plusieurs fichiers sont ajoutés à votre solution. Dans cette rubrique, nous allons utiliser un exemple de test codé de l'interface utilisateur pour examiner ces fichiers.  
   
- **Requirements**  
+ **Spécifications**  
   
 -   Visual Studio Enterprise  
   

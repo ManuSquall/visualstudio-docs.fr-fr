@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c01007e3a1fd71af8c5204130a90b448f28c93f1
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Création de projets R dans Visual Studio
 
@@ -66,7 +67,7 @@ Si vous avez un dossier de fichiers `.R` que vous souhaitez gérer dans un proje
 
 Pour ouvrir les pages de propriétés du projet, cliquez avec le bouton droit sur le projet dans l’**Explorateur de solutions** et sélectionnez **Propriétés**, ou sélectionnez l’élément de menu **Projet > Propriétés de (nom du projet)*. La fenêtre qui s’ouvre affiche les propriétés du projet :
 
-| Tab | Propriété | Description |
+| Onglet | Propriété | Description |
 | --- | --- | --- |
 | Exécuter | Fichier de démarrage | Nom du fichier qui est exécuté avec la commande **Fichier de démarrage source**, F5, **Déboguer > Démarrer le débogage**, ou **Déboguer > Démarrer sans débogage**. Vous pouvez également le définir comme fichier de démarrage en cliquant avec le bouton droit sur le fichier dans le projet et en sélectionnant **Définir comme script R de démarrage**. |
 | | Réinitialiser la Fenêtre interactive R à l’exécution | Efface toutes les variables de l’espace de travail de la fenêtre interactive quand vous exécutez le projet. Cela permet de garantir l’absence de contenu d’espace de travail résiduel des exécutions précédentes. |
@@ -106,7 +107,6 @@ Les outils R pour Visual Studio incluent plusieurs modèles pour des types de f
 | Documentation R (jeu de données) | Fichier de documentation R contenant de nombreux champs avec des commentaires pour décrire un jeu de données. |
 | Requête SQL | Fichier `.sql` vide. Voir [SQL Server integration (Intégration de SQL Server)](sql-server.md). |
 | Procédure stockée avec R | Fichier R avec un fichier de modèle de requête SQL enfant et de procédure stockée enfant. Voir [SQL Server integration (Intégration de SQL Server)](sql-server.md). |
-
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Utiliser plusieurs types de projets dans Visual Studio
 

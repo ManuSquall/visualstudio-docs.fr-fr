@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fe5e36b6d6f8cd7672c2300c385a1045bb677f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ceadf13f6567b303337b14b6b76be86ddcbac8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supplying-xml-code-comments"></a>Insertion de commentaires dans le code XML
 Vous pouvez insérer des commentaires dans les fichiers de code source IntelliSense. Quand vous ajoutez le commutateur /doc à la ligne de commande du compilateur Visual Basic, C# ou C++, un fichier .xml est généré pour servir de base à la documentation IntelliSense.  

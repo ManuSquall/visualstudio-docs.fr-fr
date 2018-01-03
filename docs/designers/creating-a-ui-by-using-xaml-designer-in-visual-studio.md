@@ -17,11 +17,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20ffb34c3c9ac1d2842995c53332eb241337b769
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 9b628769c5945817aebd790820f1f16085f6564a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
 Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous aider à concevoir des applications web et Windows basées sur XAML. Vous pouvez créer des interfaces utilisateur pour vos applications en faisant glisser des contrôles à partir de la **boîte à outils** et en définissant des propriétés dans la fenêtre **Propriétés** . Vous pouvez également modifier le XAML directement en mode XAML.  
@@ -154,7 +155,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
  **Rétablir l'étendue à pageRoot**  
  L'option en haut de la fenêtre Structure du document, qui présente un symbole de flèche vers le haut, retourne la structure du document à la portée précédente. La portée supérieure n'est applicable que quand vous êtes dans la portée d'un style ou d'un modèle.  
   
-## <a name="properties-window"></a>Propriétés (fenêtre)  
+## <a name="properties-window"></a>Fenêtre Propriétés  
  La fenêtre Propriétés vous permet de définir des valeurs de propriété sur les contrôles. Voici à quoi elle ressemble :  
   
  ![Fenêtre Propriétés](../designers/media/xaml_editor_prop_window.png "xaml_editor_prop_window")  

@@ -10,11 +10,12 @@ ms.topic: article
 ms.assetid: 84575412-1de7-4e53-811d-ae035eb21d13
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f3eff65b7a70c29adf39eda32805e0773255ba61
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: ac5389640c486d5b886454c15dc0e979c0683caf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Écrire des tests unitaires pour des DLL C++ dans Visual Studio
 
@@ -92,7 +93,7 @@ ms.lasthandoff: 11/15/2017
   
     3.  Choisissez **Propriétés de configuration | Éditeur de liens | Entrée | Dépendances supplémentaires**.  
   
-         Choisissez **Modifier**, puis ajoutez les noms des fichiers **.obj** ou **.lib**. N’utilisez pas les chemins complets.  
+         Choisissez **Modifier**, puis ajoutez les noms des fichiers **.obj** ou **.lib**. N’utilisez pas les chemins d’accès complets.  
   
     4.  Choisissez **Propriétés de configuration | Éditeur de liens | Général | Répertoires de bibliothèques supplémentaires**.  
   

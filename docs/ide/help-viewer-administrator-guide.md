@@ -12,14 +12,15 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c4c034b6aec75499d2e38af35f22cd852fa2e15
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 5f509b0ace14c4e0becd714e25ee9ec26770c6e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="help-viewer-administrator-guide"></a>Guide de l’administrateur Help Viewer
-Help Viewer vous permet de gérer les installations locales d’aide pour les environnements réseau avec ou sans accès à Internet. Le contenu d’aide locale est configuré sur la base de l’ordinateur. Par défaut, les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour leur installation d’aide locale.  
+La visionneuse d’aide vous permet de gérer les installations locales d’aide pour les environnements réseau avec ou sans accès à Internet. Le contenu d’aide locale est configuré sur la base de l’ordinateur. Par défaut, les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour leur installation d’aide locale.  
   
 Si votre environnement réseau permet aux clients d’accéder à Internet, vous pouvez déployer le contenu de l’aide locale depuis Internet à l’aide de l’exécutable Help Content Manager. Pour plus d’informations sur la syntaxe de ligne de commande HlpCtntMgr.exe, consultez [Arguments de ligne de commande pour Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md).
 
@@ -48,7 +49,7 @@ Configuration requise :
   
 -   Les ordinateurs clients doivent avoir accès à Internet.  
   
--   Les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour, ajouter ou supprimer le contenu de l’aide locale une fois celui-ci installé.  
+-   Les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour, ajouter ou supprimer le contenu d’aide locale une fois celui-ci installé.  
   
  Avertissements :  
   
@@ -74,10 +75,10 @@ Configuration requise :
   
 -   L’ordinateur sur lequel vous installez l’ensemble du contenu doit avoir accès à Internet.  
   
--   Les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour, ajouter ou supprimer le contenu de l’aide locale une fois celui-ci installé.  
+-   Les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour, ajouter ou supprimer le contenu d’aide locale une fois celui-ci installé.  
   
     > [!TIP]
-    >  Si les utilisateurs ne disposent pas des droits d’administrateur, nous vous recommandons de désactiver l’onglet Gérer le contenu dans Help Viewer. Pour plus d’informations, consultez [Substitutions dans Help Content Manager](../ide/help-content-manager-overrides.md).  
+    >  Si les utilisateurs ne disposent pas des droits d’administrateur, nous vous recommandons de désactiver l’onglet Gérer le contenu de la visionneuse d’aide. Pour plus d’informations, consultez [Substitutions dans Help Content Manager](../ide/help-content-manager-overrides.md).  
   
 Avertissements :
   

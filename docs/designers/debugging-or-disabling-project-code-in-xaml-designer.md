@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bf9220205e35a0c72d3812e1943154c6fedeacd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: bbfe3eb4f76d8237d6e1a1b7c26aa48b1f081f1e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Débogage ou désactivation de code de projet dans le concepteur XAML
 Dans bien des cas, les exceptions non gérées dans le concepteur XAML peuvent être provoquées par le code de projet, qui tente d’accéder à des propriétés ou méthodes qui retournent des valeurs différentes ou qui fonctionnent de manière différente quand votre application s’exécute dans le concepteur. Vous pouvez résoudre ces exceptions en déboguant le code du projet dans une autre instance de Visual Studio, voire les éviter temporairement en désactivant le code de projet dans le concepteur.  

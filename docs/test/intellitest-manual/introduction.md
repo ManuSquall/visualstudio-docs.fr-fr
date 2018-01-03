@@ -12,11 +12,12 @@ ms.assetid: A7B98509-7ACA-4E25-BD1B-BBC98742F028
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 454cd11d9e196e7de9775448640a8ee22c434d4c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a7dac076dabaf0d44a1eda9c267e5c9b2eafe5a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Vue d’ensemble de Microsoft IntelliTest
 
@@ -107,7 +108,7 @@ Cette section décrit les limitations d’IntelliTest :
 * [Concurrence](#concurrency)
 * [Code .NET natif](#native-code)
 * [Plateforme](#platform)
-* [Langue](#language)
+* [Language](#language)
 * [Raisonnement symbolique](#symbolic-reasoning)
 * [Traces de pile](#incorrect-stack)
 
@@ -146,7 +147,7 @@ La solution de contournement suggérée est d’avoir un mode de test où de tel
 IntelliTest est pris en charge seulement sur .NET Framework X86 32 bits.
 
 <a name="language"></a>
-### <a name="language"></a>Langage
+### <a name="language"></a>Langue
 
 En principe, IntelliTest peut analyser les programmes .NET arbitraires, écrits dans n’importe quel langage .NET. Cependant, dans Visual Studio, il prend en charge seulement C#.
 

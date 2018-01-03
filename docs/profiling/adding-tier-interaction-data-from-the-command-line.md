@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a210ce1f6aeac113033bd82306bb5b682a5e21b9
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 2d639558434e077a6ae09ce79bad6252a10a3711
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Ajout des données d’interaction de couche à partir de la ligne de commande
 Le profilage d’interaction de couche fournit des informations supplémentaires sur les temps d’exécution des appels [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] synchrones, contenus dans les fonctions d’applications multicouches qui communiquent avec une ou plusieurs bases de données.  
@@ -73,7 +74,7 @@ Le profilage d’interaction de couche fournit des informations supplémentaires
   
 5.  Testez l’application pour collecter des données de profilage, puis fermez-la normalement.  
   
-6.  Supprimez les variables d’environnement TiP. Tapez la commande suivante :  
+6.  Supprimez les variables d’environnement TiP. Tapez la commande suivante :  
   
     ```  
     vsperfclrenv /off  
@@ -126,7 +127,7 @@ Le profilage d’interaction de couche fournit des informations supplémentaires
   
 10. Testez le service, puis collectez des données de profilage.  
   
-11. Arrêtez le profileur. Tapez la commande suivante :  
+11. Arrêtez le profileur. Tapez la commande suivante :  
   
      `vsperfcmd /detach`  
   

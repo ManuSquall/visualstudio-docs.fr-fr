@@ -21,11 +21,12 @@ caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5709fc2ea456a8cfa45d8ce01e97c0c79d256c38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 86c4b896944c3241f01329202696aa72bfd0f160
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="import-element-msbuild"></a>Import, élément (MSBuild)
 Importe le contenu d’un fichier projet dans un autre fichier projet.  
@@ -51,7 +52,7 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|  
 
 ### <a name="child-elements"></a>Éléments enfants  
- None  
+ Aucun.  
 
 ### <a name="parent-elements"></a>Éléments parents  
 
@@ -60,7 +61,7 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
 |[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 |[ImportGroup](../msbuild/importgroup-element.md)|Contient une collection d’éléments `Import` regroupés sous une condition facultative.|  
 
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  L’élément `Import` vous permet de réutiliser du code commun à de nombreux fichiers projet. Cela facilite la maintenance du code, car les mises à jour que vous apportez au code partagé sont propagées à tous les projets qui l’importent.  
 
  Par convention, les fichiers projet importés partagés sont enregistrés en tant que fichiers .targets, mais il s’agit de fichiers projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] standard. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ne vous n’empêche pas d’importer un projet ayant une extension de nom de fichier différente, mais nous vous recommandons d’utiliser l’extension .targets pour des raisons de cohérence.  
@@ -114,5 +115,5 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
 ```  
 
 ## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur le schéma de fichier projet MSBuild](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
  [Guide pratique pour utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

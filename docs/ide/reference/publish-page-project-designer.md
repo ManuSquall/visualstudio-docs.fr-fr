@@ -8,23 +8,18 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
-dev_langs:
-- VB
-- CSharp
-- C++
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
-ms.assetid: 153527c6-8b95-4003-8e8e-03a489d0a629
-caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0829c1514e8d98d32914c4cc8f59de822d6b7f4d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cbe2be8ec1012295f84fbbec4cc0f614fd86d8d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publish-page-project-designer"></a>Page Publier, Concepteur de projets
 La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement ClickOnce.  
@@ -34,7 +29,7 @@ La page **Publier** du **Concepteur de projets** permet de configurer les propri
 > [!NOTE]
 >  Certaines des propriétés ClickOnce décrites ici peuvent également être définies dans **l’Assistant Publication**, accessible à partir du menu **Générer** ou en cliquant sur le bouton **Assistant Publication** dans cette page.  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
  **Emplacement du dossier de publication**  
  Spécifie l’emplacement où l’application est publiée. Peut être un chemin de lecteur (`C:\deploy\myapplication`), un partage de fichiers (`\\server\myapplication`), un serveur FTP (`ftp://ftp.microsoft.com/myapplication`) ou un site web (`http://www.microsoft.com/myapplication`). Notez que du texte doit figurer dans la zone **Emplacement de publication** pour que le bouton de navigation (**...**) fonctionne.  
   
@@ -51,7 +46,7 @@ La page **Publier** du **Concepteur de projets** permet de configurer les propri
  **Fichiers de l'application**  
  Ouvre la [Application Files Dialog Box](http://msdn.microsoft.com/en-us/b06dff3a-b87a-4caf-996b-7a4acf8137a8), qui permet de spécifier comment et où les fichiers sont installés.  
   
- **Conditions préalables**  
+ **Composants requis**  
  Ouvre la [Prerequisites Dialog Box](../../ide/reference/prerequisites-dialog-box.md), qui permet de spécifier les composants requis, tels que le .NET Framework, à installer avec l’application.  
   
  **Mises à jour**  

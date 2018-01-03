@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f4f13cabe47bc55a78733ea2bee5504d404c5c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 1fcba0ef7abec3c8f5d71d34b8ff4e19e047d50b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-build-events-c"></a>Guide pratique pour spécifier des événements de build (C#)
 Utilisez des événements de build pour spécifier des commandes à exécuter avant que la génération commence ou après qu’elle se termine. Les événements de build sont exécutés uniquement si la build atteint ces étapes du processus de génération.  

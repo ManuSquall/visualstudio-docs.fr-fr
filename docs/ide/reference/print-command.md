@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6eaf5d77da1dbc6e005764087dad338458e7ce8c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bba20817c03b7ff542c3af11a440ad8e619f5567
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="print-command"></a>Imprimer, commande
 Évalue une expression ou affiche le texte spécifié.  
@@ -36,7 +37,7 @@ Debug.Print text
  `text`  
  Obligatoire. Expression à évaluer ou texte à afficher.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Vous pouvez utiliser le point d’interrogation (?) comme alias pour cette commande. Ainsi, la commande  
   
 ```  
@@ -62,4 +63,4 @@ Debug.Print text
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Alias de commande Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

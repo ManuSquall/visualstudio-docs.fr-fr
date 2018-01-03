@@ -16,11 +16,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: abf6598cd18661575c0c6bcf6be3c70fffbd21f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: bc470eb36e700f136fec57e208c5bd920ea5e073
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-page-project-designer-c"></a>Générer, page du Concepteur de projets (C#)
 Utilisez la page **Générer** du **Concepteur de projet** pour spécifier les propriétés de configuration de build du projet. Cette page s’applique uniquement aux projets [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].  

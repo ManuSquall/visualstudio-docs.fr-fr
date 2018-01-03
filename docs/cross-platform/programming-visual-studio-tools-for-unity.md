@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7d099fae62e808f2a86db53241fc7e774c5ae945
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: unity
+ms.openlocfilehash: 4d69442124a2bca109e45282891d08f32f538c4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programming-visual-studio-tools-for-unity"></a>Programmation de Visual Studio Tools pour Unity
 Dans cette section, vous trouverez des exemples de l'utilisation de l'API Visual Studio Tools pour Unity.  

@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3ea3afdaa6a7a29bc85c46b6eff0f15c5c91c046
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 5ce79d4e8ff2056b5d713eaa781b22359141c9b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Démarrage rapide : Clonage d’un dépôt de code Python dans Visual Studio
 

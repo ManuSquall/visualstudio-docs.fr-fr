@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bb2da222b566362a069eaa9ab59d959a0c5b71d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 074ae2e5484833eb5ffaf3d3346d7d232c62e23f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Guide pratique pour filtrer les vues de rapport des outils de profilage de façon à afficher Uniquement mon code
 Visual Studio 2010 Premium fournit une fonctionnalité de filtrage qui vous permet d’afficher uniquement le code que vous avez implémenté dans les rapports de performances. Cette fonctionnalité se nomme Uniquement mon code et est activée par défaut. Elle peut être configurée via l’option **Uniquement mon code** de la boîte de dialogue **Options**.  

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24b6a19ed79db2625fc7e1ad339ab2396635767a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: afdf338d300d67964499fc67ce260fc32b8664af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Raccourcis clavier dans Blend
 ## <a name="project-shortcuts"></a>Raccourcis de Projet  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="view-shortcuts"></a>Raccourcis de mode  
   
-|Pour|Faites cela|  
+|Pour|Procédez comme suit|  
 |----------------|-------------|  
 |Basculer entre les modes **Design**, **Code** et **Fractionné**|F11|  
 |Effectuer un zoom avant sur la planche graphique|CTRL+SIGNE ÉGAL|  
@@ -110,7 +111,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="workspace-shortcuts"></a>Raccourcis Espace de travail  
   
-|Pour|Faites cela|  
+|Pour|Procédez comme suit|  
 |----------------|-------------|  
 |Basculer entre les espaces de travail **Animation** et **Conception**|CTRL+F11|  
 |Afficher ou masquer le panneau **Composants**|CTRL+POINT|  

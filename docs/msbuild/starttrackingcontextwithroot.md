@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0d49543bde0195144fb4918e9a9f173f8f9435ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 66065fe94b41c06082e878329a03de3851ee844d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 Démarre un contexte de suivi en utilisant un fichier réponse spécifiant un marqueur racine.  
@@ -44,7 +45,7 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 ## <a name="return-value"></a>Valeur de retour  
  **HRESULT** avec le bit **SUCCEEDED** défini si le contexte de suivi a été créé.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** FileTracker.h  
   
 ## <a name="see-also"></a>Voir aussi  

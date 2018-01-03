@@ -10,11 +10,12 @@ ms.topic: tutorial
 ms.technology: visual studio
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 3ea1fb096f1c5215a0f2fe8fd59c1afd4baa5b6f
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 39cffe5aa2c24c04a6543bbf0851e0e147c5ba6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Former un modèle TensorFlow dans le cloud
 
@@ -22,7 +23,7 @@ Dans ce didacticiel, nous allons former un modèle TensorFlow avec le [jeu de do
 
 La base de données MNIST a un jeu d’apprentissage constitué de 60 000 exemples et un jeu de test de 10 000 exemples de chiffres manuscrits.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 Avant de commencer, vérifiez que les composants suivants sont installés et configurés :
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Configurer la machine virtuelle Azure Deep Learning

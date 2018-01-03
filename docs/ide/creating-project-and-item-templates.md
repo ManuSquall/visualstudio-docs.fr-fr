@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d95781c2c5c4370e09c13b382016b015ec1a0d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 43b45f70e8ac7a6eeadfd3fb216b53540ec9a8b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-project-and-item-templates"></a>Création de modèles de projet et d’élément
 Les modèles de projet et d'élément [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offrent aux utilisateurs, via des stubs réutilisables, du code de base et des structures qu'ils peuvent utiliser pour leurs propres besoins.  

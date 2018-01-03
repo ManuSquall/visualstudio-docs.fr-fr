@@ -15,11 +15,12 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 011c86caae5eaa00577dcc9a5d9c372849eb28f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Nouveautés dans Visual Studio 2017 RC
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Mises à jour pour la [version 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -33,7 +34,7 @@ Voici un récapitulatif général des changements par rapport à la version ant�
 * **Développement d’applications Windows**. Avec les modèles UWP fournis dans Visual Studio 2017, créez un projet unique pour tous les appareils Windows 10 &ndash; PC, tablette, téléphone, Xbox, HoloLens, Surface Hub, etc. Ensuite, créez un package d’application et soumettez-le sur le Microsoft Store à partir de Visual Studio pour distribuer votre application aux clients.
 * **Développement d’applications mobiles**. Dans Visual Studio 2017, vous pouvez innover et obtenir des résultats rapides grâce à Xamarin, qui unifie vos besoins mobiles multi-plateformes à l’aide d’une base de code et d’un ensemble de compétences essentiels. Favorisez la mobilité de vos équipes existantes, les investissements technologiques, et optez pour le code C# pour créer des expériences consommateur en avance et pour un budget inférieur. Accélérez chaque étape du cycle de vie mobile pour offrir des expériences consommateur de classe mondiale ou un portefeuille d’applications de productivité pour encourager la mobilité de votre personnel.
 * **Développement multiplateforme**. Livrez sans plus d’effort des logiciels pour toutes les plateformes ciblées. Étendez les processus DevOps à SQL Server à l’aide de Redgate Data Tools et automatisez en toute sécurité les déploiements de bases de données à partir de Visual Studio. Sinon, utilisez .NET Core pour écrire des applications et des bibliothèques qui s’exécutent sans modification sur les systèmes d’exploitation Windows, Linux et macOS. (Autre **nouveauté de la version 15.3** : la prise en charge côte à côte des kits SDK .NET Core 2.0.)
-* **Développement de jeux**. Avec Visual Studio Tools for Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d'éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs. La dernière version de VSTU inclut la coloration de la syntaxe pour le langage ShaderLab de Unity, des visualisations du débogueur améliorées et une génération de code améliorée pour l’Assistant MonoBehavior. VSTU apporte également vos fichiers de projet Unity et vos messages de console, et offre la possibilité de démarrer votre jeu dans Visual Studio, afin de perdre moins de temps à aller et venir de l'éditeur Unity en cours d'écriture.
+* **Développement de jeux**. Avec Visual Studio Tools for Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d'éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs. La dernière mise en production de VSTU inclut la coloration de la syntaxe pour le langage ShaderLab de Unity, des visualisations du débogueur améliorées et une génération de code améliorée pour l’Assistant MonoBehavior. VSTU apporte également vos fichiers de projet Unity et vos messages de console, et offre la possibilité de démarrer votre jeu dans Visual Studio, afin de perdre moins de temps à aller et venir de l'éditeur Unity en cours d'écriture.
 * **Développement IA**. Avec Visual Studio Tools pour AI (**nouveauté de la version 15.5**), vous pouvez utiliser les fonctionnalités de productivité de Visual Studio pour accélérer l’innovation de l’intelligence artificielle (IA). Créez, testez et déployez des solutions d’apprentissage profond (deep learning) / d’intelligence artificielle (IA) qui s’intègrent parfaitement à Azure Machine Learning pour offrir de puissantes fonctionnalités d’expérimentation, telles que l’envoi des tâches de préparation des données et d’apprentissage des modèles en toute transparence à différentes cibles de calcul. Visual Studio Tools pour AI prend en charge les métriques personnalisées et le suivi de l’historique des exécutions, ce qui permet l’audit et la reproductibilité de la science des données.
 
 > [!NOTE]
@@ -301,6 +302,6 @@ Si vous souhaitez faire des suggestions sur la façon dont nous pouvons amélior
 ## <a name="see-also"></a>Voir aussi
 * [Notes de publication de Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Nouveautés de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [Nouveautés de C#](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
+* [Nouveautés de C#](/dotnet/csharp/whats-new)  
 * [Nouveautés de Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
 * [Nouveautés de Visual Studio pour Mac](https://www.visualstudio.com/vs/visual-studio-mac/)

@@ -17,13 +17,14 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d5f34e421160e8cca56897e6530ff47da7b1a84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4db6bd98fcecf6d99e9d6e98570ed8b24b7ee47c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="how-to-manually-create-web-templates"></a>Guide pratique pour créer manuellement des modèles web
+# <a name="how-to-manually-create-web-templates"></a>Comment : créer manuellement des modèles Web
 La création d’un modèle web est différente de la création d’autres types de modèles. Étant donné que les modèles de projet web apparaissent dans la boîte de dialogue **Ajouter un nouveau site web** et que les éléments de projet web sont classés par langage de programmation, le fichier .vstemplate doit spécifier le modèle comme modèle web et identifier le langage de programmation.  
   
 > [!NOTE]

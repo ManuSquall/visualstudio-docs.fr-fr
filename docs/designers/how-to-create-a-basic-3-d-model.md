@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4bba90206a428ae9bb782e7eac408b872721351f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b9a7bfb1d2eb3f54da0953a78d1e9630ed00aab3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>Procédure : créer un modèle 3D de base
 Ce document montre comment utiliser l'éditeur de modèle pour créer un modèle 3D de base.  
@@ -79,4 +80,4 @@ Ce document montre comment utiliser l'éditeur de modèle pour créer un modèle
 ## <a name="see-also"></a>Voir aussi  
  [Comment : modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)   
  [Éditeur de modèle](../designers/model-editor.md)   
- [Concepteur de nuanceur](../designers/shader-designer.md)
+ [Concepteur Shader](../designers/shader-designer.md)

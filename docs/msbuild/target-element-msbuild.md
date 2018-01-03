@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ed3af7142d556c52fbed71f03d5cc53eb3025035
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e8a444add9d28a79458dabab75b4cf62bf951dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="target-element-msbuild"></a>Target, élément (MSBuild)
 Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit exécuter séquentiellement.  
@@ -84,7 +85,7 @@ Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/int
 
 |Élément|Description|  
 |-------------|-----------------|  
-|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 
 ## <a name="remarks"></a>Notes  
  La première cible à exécuter est spécifiée au moment de l’exécution. Les cibles peuvent avoir des relations de dépendance avec d’autres cibles. Par exemple, une cible de déploiement dépend d’une cible de compilation. Le moteur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exécute des dépendances dans l’ordre dans lequel elles apparaissent dans l’attribut `DependsOnTargets`, de gauche à droite. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).  
@@ -120,4 +121,4 @@ Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/int
 
 ## <a name="see-also"></a>Voir aussi  
  [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)   
- [Informations de référence sur le schéma de fichier projet MSBuild](../msbuild/msbuild-project-file-schema-reference.md)
+ [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

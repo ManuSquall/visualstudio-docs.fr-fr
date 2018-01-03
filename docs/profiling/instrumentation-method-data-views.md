@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 595297dbafb35ed8b3bb376ce5ddfee484ac2442
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: caf3c6168e81b7384fbf056f5365614950b24ff2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instrumentation-method-data-views"></a>Vues de données de la méthode d'instrumentation
 Cette section contient des informations de référence pour les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode d’instrumentation.  
@@ -44,7 +45,7 @@ Cette section contient des informations de référence pour les vues et rapports
  [Vue Informations relatives à la fonction](../profiling/function-details-view.md)  
  Affiche un graphique de la relation qui existe entre une fonction sélectionnée et les fonctions qui l’ont appelée et qui ont été appelées par celle-ci.  
   
- [Vue Processus](../profiling/process-view.md)  
+ [Processus, vue](../profiling/process-view.md)  
  Affiche le début, la fin et la durée de vie des tous les processus qui ont été profilés.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
@@ -54,7 +55,7 @@ Cette section contient des informations de référence pour les vues et rapports
  [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)  
  Informations de référence pour les vues et rapports des fichiers de données du profileur qui incluent les données de mémoire .NET.  
   
- [Vues des données de conflit de ressources](../profiling/resource-contention-data-views.md)  
+ [Vues de données de conflit de ressources](../profiling/resource-contention-data-views.md)  
  Informations de référence pour les vues et rapports des fichiers de données du profileur générés à l’aide de la méthode appropriée pour les conflits de threads.  
   
 ## <a name="see-also"></a>Voir aussi  

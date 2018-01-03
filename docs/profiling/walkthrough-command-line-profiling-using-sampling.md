@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 338b79cfe5dbdb812b385d237523d2a79d8cc965
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 403e685fa6a386ea0de73c74a27261d9ab77786e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : profilage de la ligne de commande à l’aide de l’échantillonnage
 Cette procédure pas à pas montre comment profiler une application à l’aide d’outils en ligne de commande et de l’échantillonnage pour identifier les problèmes de performances.  
@@ -33,9 +34,9 @@ Cette procédure pas à pas montre comment profiler une application à l’aide 
   
 -   Analyser les résultats de profilage échantillonnés pour rechercher et résoudre les problèmes de performances.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
   
--   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] ou [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
+-   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]ou [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 -   Compréhension intermédiaire de [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]  
   
@@ -109,5 +110,5 @@ Cette procédure pas à pas montre comment profiler une application à l’aide 
  [Vue d’ensemble des sessions de performances](../profiling/performance-session-overview.md)   
  [Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)   
- [Vues Rapport de performances](../profiling/performance-report-views.md)
+ [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)   
+ [Vues du rapport des performances](../profiling/performance-report-views.md)

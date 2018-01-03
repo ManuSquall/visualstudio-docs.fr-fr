@@ -11,11 +11,12 @@ ms.assetid: 2e0710a8-8e8a-4f6e-8415-5ab3eb830079
 caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6bfce4aa4153d8f01fa9ef6cd6dc0d4b08eedbc4
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: af55f9f124b2ec609c4f0a590e7c2fab738624d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Guide pratique pour utiliser Boost.Test pour C++ dans Visual Studio
 Dans **Visual Studio 2017 version 15.5** et ultérieur, Boost.Test est intégré dans l’IDE Visual Studio comme composant de la charge de travail **Développement Desktop en C++**. Pour l’installer sur votre machine, ouvrez le programme d’installation de Visual Studio et recherchez **Adaptateur Boost.Test** sous la liste des composants de la charge de travail :

@@ -1,5 +1,5 @@
 ---
-title: Touches de raccourci (Help Viewer) | Microsoft Docs
+title: "Touches de raccourci (visionneuse d’aide) | Microsoft Docs"
 ms.custom: 
 ms.date: 11/02/2017
 ms.reviewer: 
@@ -15,16 +15,17 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04d63762eda13bd0b21f6532f1d401cdef638ea6
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 17f71324031bfdf01b32151288257b97c036056b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="shortcut-keys-help-viewer"></a>Touches de raccourci (Help Viewer)
+# <a name="shortcut-keys-help-viewer"></a>Touches de raccourci (Visionneuse d'aide)
 Vous pouvez naviguer dans la visionneuse d’aide Microsoft à l’aide des touches de raccourci du tableau suivant :  
   
-|Zone|Touche(s)|Action|  
+|Domaine|Touche(s)|Action|  
 |----------|---------------|------------|  
 |Application générale|Espace|À utiliser à la place d’Entrée partout, à l’exception des champs d’édition.|  
 |Application générale|F1|Ouvrir l’aide de l’élément d’interface utilisateur actuel.|  

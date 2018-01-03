@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 467d119e67db254b6e15630c08c411bb15283351
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db67f01ff2a58ee856e4588df8770fc4edef8ca2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="go-to-definition-and-peek-definition"></a>Atteindre la définition et Aperçu de la définition  
 Les fonctionnalités Atteindre la définition et Aperçu de la définition vous permettent d’afficher rapidement la définition d’un type ou d’un membre.
@@ -36,7 +37,7 @@ Vous pouvez changer la touche de modification pour activer **Atteindre la défin
 
 ![Activation du clic de souris pour la fonctionnalité Atteindre la définition](../ide/media/editor_options_mouse_click_gotodef.png)  
 
-## <a name="peek-definition"></a>Aperçu de la définition
+## <a name="peek-definition"></a>Aperçu de définition
 La fonctionnalité Aperçu de la définition vous permet d’afficher un aperçu de la définition d’un type sans avoir à quitter votre emplacement actuel dans l’éditeur. Si vous utilisez le clavier, placez le curseur texte dans le nom du type ou du membre, puis appuyez sur **Alt+F12**. Si vous utilisez la souris, sélectionnez **Aperçu de la définition** dans le menu contextuel. Visual Studio 2017 version 15.4 ou ultérieure offre aux utilisateurs de souris un nouveau moyen d’accéder à l’aperçu d’une définition. Tout d’abord, accédez à **Outils**, **Options**, **Éditeur de texte**, **Général**. Sélectionnez l’option **Ouvrir la définition dans l’aperçu** et cliquez sur **OK** pour fermer la boîte de dialogue **Options**.  
 
 ![Activation de l’option Aperçu de la définition avec un clic de souris](../ide/media/editor_options_peek_view.png)  

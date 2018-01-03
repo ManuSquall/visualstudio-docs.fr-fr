@@ -11,16 +11,17 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 6c8e2cac9d6f2622bacae0b27cecc8f074ea3a15
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 009ae62acc9685ee0d004976ce86b751cc0d1852
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Utilisation de différents navigateurs Web avec des tests codés de l'interface utilisateur
 Les tests codés de l'interface utilisateur peuvent automatiser le test des applications web en enregistrant vos tests à l'aide d'Internet Explorer. Vous pouvez ensuite personnaliser votre test et l'utiliser à l'aide d'Internet Explorer ou d'autres types de navigateurs pour ces applications web.  
   
- **Requirements**  
+ **Spécifications**  
   
 -   Visual Studio Enterprise  
   
@@ -99,7 +100,7 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
  Vous utilisez peut-être une version de [!INCLUDE[vs2011_first](../test/includes/vs2011_first_md.md)] qui ne prend pas en charge les tests codés de l'interface utilisateur à l'aide de différents navigateurs web. Pour utiliser de tels tests codés de l’interface utilisateur, vous devez utiliser Visual Studio Enterprise.  
   
  *Que dois-je savoir de plus ?*  
- **Remarques**  
+ **Notes**  
   
 -   ![Prérequis](../test/media/prereq.png "Prérequis") Le navigateur web Apple Safari n’est pas pris en charge.  
   

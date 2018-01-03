@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 831d0f60c992324c81cb1366ac28b3e3f1b066ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cd45af08abd3d3523e2c88af13f46d81ebdb8e2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="miscellaneous-files"></a>Fichiers divers
 Vous pouvez utiliser les éditeurs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour utiliser indépendamment les fichiers d’un projet ou d’une solution. Dans une solution ouverte, vous pouvez ouvrir et modifier des fichiers sans les ajouter à une solution ou un projet. Les fichiers que vous voulez utiliser indépendamment des conteneurs sont appelés fichiers divers. Les fichiers divers sont externes aux solutions et projets, et ne sont pas inclus dans les générations. Ils ne peuvent pas être inclus dans une solution sous contrôle de code source.  

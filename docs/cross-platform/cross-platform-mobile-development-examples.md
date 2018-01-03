@@ -13,13 +13,14 @@ caps.latest.revision: "3"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6809ffe0c53448d7d00fec1169b90fd87274367e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 030fe898926c1e1d124a780c9ba73fec31109cd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="cross-platform-mobile-development-examples"></a>Cross-Platform Mobile Development Examples
+# <a name="cross-platform-mobile-development-examples"></a>Exemples de développement mobile multiplateforme
 Plusieurs des modèles installés par Développement multiplateforme en Visual C++ pour appareils mobiles génèrent des exemples complets que vous pouvez utiliser pour en savoir plus. En outre, le Centre de développement Windows présente plusieurs exemples d’applications que vous pouvez télécharger et essayer dans Visual Studio.  
   
 -   [Exemple d’application Android hello-jni](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  
@@ -32,7 +33,7 @@ Plusieurs des modèles installés par Développement multiplateforme en Visual C
   
 -   [Exemple d’application Android Bitmap Plasma](https://code.msdn.microsoft.com/Bitmap-Plasma-Android-77ae296a)  
   
-     Cet exemple fait partie de l’application Bitmap Plasma du Kit de développement natif (NDK) Android. L’exemple illustre une application Android OpenGL ES 2.0 JNI (Java Native Interface) de bout en bout. Il illustre la manipulation directe des mémoires tampons de pixels de bitmaps Android pour générer un effet plasma.  
+     Cet exemple fait partie de l’application Bitmap Plasma du Kit de développement natif (NDK) Android. L’exemple illustre une application Android OpenGL ES 2.0 JNI (Java Native Interface) de bout en bout. Il illustre la manipulation directe des mémoires tampons de pixels de bitmaps Android pour générer un effet plasma.  
   
 -   [Exemple de bibliothèque Android TwoLibs](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)  
   

@@ -17,17 +17,18 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 197d5402d935d7e1b377b6ec037535fbc2f65cfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f916fd9bc7be5425f76ec23e6c7dd2fa60d7fb03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011 : CompareTo coûteux
 |||  
 |-|-|  
 |ID de règle|DA0011|  
-|Catégorie|Utilisation du .NET Framework|  
+|Category|Utilisation du .NET Framework|  
 |Méthodes de profilage|Échantillonnage<br /><br /> Mémoire .NET|  
 |Message|Les fonctions CompareTo doivent être peu coûteuses et n’allouer aucune mémoire. Réduisez si possible la complexité de la fonction CompareTo.|  
 |Type de règle|Warning|  

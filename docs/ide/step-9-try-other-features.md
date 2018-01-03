@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 35c91ef4ad9493e47aa72a4b27dc1286a18adf3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5db8c070b5e0796e64071a8c28d4d36715cd8fc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-9-try-other-features"></a>Étape 9 : Tester d’autres fonctionnalités
 Pour découvrir d'autres fonctionnalités, essayez de modifier les icônes et les couleurs, d'ajouter une horloge de jeu et d'ajouter des sons. Pour augmenter la difficulté du jeu, essayez d'agrandir la taille du plateau et d'ajuster la minuterie.  

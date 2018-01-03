@@ -13,11 +13,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 84ac56cb74db24f6b19ec80f2341c087856a7752
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ad32a8cca0efac21a0ebd430384fc38de3cc81c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="startup-environment-options-dialog-box"></a>Démarrage, Environnement, boîte de dialogue Options
 Utilisez cette page pour personnaliser la page de démarrage de Visual Studio ou pour définir une autre action par défaut au démarrage de Visual Studio. Pour plus d’informations, consultez [Personnalisation de la page de démarrage](../../ide/customizing-the-start-page-for-visual-studio.md).  

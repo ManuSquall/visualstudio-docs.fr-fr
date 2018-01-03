@@ -34,11 +34,12 @@ caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 48cf258dbe267a6e2c2b020ee6613b4dac05b2eb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e7eb9e861898c0874388f9acb4f061a8e902fef1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="link-task"></a>Lier la tâche
 Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable (.exe) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez l’article [Options de l’Éditeur de liens](/cpp/build/reference/linker-options).  
@@ -72,7 +73,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **AdditionalOptions**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Liste des options de l’Éditeur de liens indiquées sur la ligne de commande. Par exemple, **«** */option1 /option2 /option#* ». Utilisez ce paramètre pour spécifier des options de l’Éditeur de liens qui ne sont pas représentées par un autre paramètre de tâche **Link**.  
   
@@ -118,7 +119,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **BaseAddress**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Définit une adresse de base pour le programme ou la DLL en cours de génération. Spécifiez `{address[,size] | @filename,key}`.  
   
@@ -134,7 +135,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **CLRImageType**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Définit le type d’image CLR (Common Language Runtime).  
   
@@ -152,7 +153,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **CLRSupportLastError**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Préserve le dernier code d’erreur des fonctions appelées via le mécanisme P/Invoke.  
   
@@ -168,7 +169,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **CLRThreadAttribute**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie explicitement l’attribut de thread pour le point d’entrée de votre programme CLR.  
   
@@ -192,7 +193,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **CreateHotPatchableImage**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Prépare une image corrigeable en mémoire.  
   
@@ -234,7 +235,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **Driver**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifiez ce paramètre pour générer un pilote en mode noyau Windows NT.  
   
@@ -276,7 +277,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **EntryPointSymbol**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie une fonction de point d’entrée comme adresse de départ d’un fichier .exe ou d’une DLL. Spécifiez un nom de fonction comme valeur du paramètre.  
   
@@ -292,7 +293,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **ForceFileOutput**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Indique à l’Éditeur de liens de créer un fichier .exe ou une DLL valide même si un symbole est référencé sans être défini ou s’il est défini plusieurs fois.  
   
@@ -316,7 +317,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **FunctionOrder**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Ce paramètre optimise votre programme en plaçant les fonctions empaquetées spécifiées (COMDAT) dans l’image dans un ordre prédéterminé.  
   
@@ -348,7 +349,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **HeapCommitSize**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie la quantité de mémoire physique sur le tas à allouer à la fois.  
   
@@ -356,7 +357,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **HeapReserveSize**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie l’allocation totale des tas dans la mémoire virtuelle.  
   
@@ -410,7 +411,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **KeyContainer**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Conteneur qui contient la clé d’un assembly signé.  
   
@@ -418,7 +419,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **KeyFile**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie un fichier qui contient la clé d’un assembly signé.  
   
@@ -442,7 +443,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **LinkErrorReporting**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Vous permet de signaler les erreurs internes du compilateur (ICE) directement à Microsoft.  
   
@@ -484,7 +485,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **LinkTimeCodeGeneration**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie des options pour l’optimisation guidée par profil.  
   
@@ -506,7 +507,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **ManifestFile**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Remplace le nom du fichier manifeste par défaut par le nom du fichier spécifié.  
   
@@ -522,13 +523,13 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **MapFileName**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Remplace le nom du fichier de mappage par défaut par le nom du fichier spécifié.  
   
 -   **MergedIDLBaseFileName**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Indique le nom et l’extension de nom du fichier .idl.  
   
@@ -536,7 +537,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **MergeSections**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Combine des sections dans une image. Spécifiez `from-section=to-section`.  
   
@@ -544,7 +545,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **MidlCommandFile**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifiez le nom d’un fichier qui contient les options de ligne de commande MIDL.  
   
@@ -552,13 +553,13 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **MinimumRequiredVersion**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie la version minimale requise du sous-système. Les arguments sont des nombres décimaux compris entre 0 et 65 535.  
   
 -   **ModuleDefinitionFile**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le nom d’un [fichier de définition de module](/cpp/build/reference/module-definition-dot-def-files).  
   
@@ -566,7 +567,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **MSDOSStubFileName**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Attache le programme stub MS-DOS spécifié à un programme Win32.  
   
@@ -596,7 +597,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **OutputFile**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Remplace le nom et l’emplacement par défaut du programme créé par l’Éditeur de liens.  
   
@@ -632,7 +633,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **ProfileGuidedDatabase**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le nom du fichier .pgd qui permet de conserver les informations sur le programme en cours d’exécution.  
   
@@ -640,7 +641,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **ProgramDatabaseFile**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le nom de la base de données du programme (PDB) créée par l’Éditeur de liens.  
   
@@ -678,7 +679,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **ShowProgress**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le niveau de détail des rapports de progression de l’opération de liaison.  
   
@@ -708,7 +709,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **SpecifySectionAttributes**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Indique les attributs d’une section. Il remplace les attributs qui ont été définis lorsque le fichier .obj correspondant à la section a été compilé.  
   
@@ -716,7 +717,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **StackCommitSize**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie la quantité de mémoire physique contenue dans chaque allocation lorsque de la mémoire supplémentaire est allouée.  
   
@@ -724,7 +725,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **StackReserveSize**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie la taille totale d’allocation de piles dans la mémoire virtuelle.  
   
@@ -732,7 +733,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **StripPrivateSymbols**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Crée un second fichier de base de données du programme (PDB) qui omet les symboles que vous ne souhaitez pas distribuer à vos clients. Spécifiez le nom du second fichier PDB.  
   
@@ -740,7 +741,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **SubSystem**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie l'environnement pour l'exécutable.  
   
@@ -810,7 +811,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **TargetMachine**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie la plateforme cible du programme ou de la DLL.  
   
@@ -852,7 +853,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **TrackerLogDirectory**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le répertoire du journal de Tracker.  
   
@@ -874,7 +875,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **TypeLibraryFile**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Indique le nom et l’extension de nom du fichier .tlb. Spécifiez un nom de fichier, ou un chemin d’accès et un nom de fichier.  
   
@@ -890,7 +891,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **UACExecutionLevel**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le niveau d’exécution demandé pour l’application lorsqu’elle est exécutée avec le Contrôle de compte d’utilisateur.  
   
@@ -920,7 +921,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
 -   **Version**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Insère un numéro de version dans l’en-tête du fichier .exe ou .dll. Spécifiez « `major[.minor]` ». Les arguments `major` et `minor` sont des nombres décimaux compris entre 0 et 65535.  
   

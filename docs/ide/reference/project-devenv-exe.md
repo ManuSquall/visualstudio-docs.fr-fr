@@ -20,11 +20,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 06d788e672cbda254ad95b2b36c650e59d3a3314
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 16cd05607bfd6a3bec2bee143b8f735220a5b643
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 Identifie un projet unique dans la configuration de solution spécifiée à générer, nettoyer, regénérer ou déployer.  
@@ -61,7 +62,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
  /projectconfig `ProjConfigName`  
  Facultatif. Nom d’une configuration de build de projet à appliquer au `/project` nommé.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 -   Doit être utilisé dans le cadre d’une commande `devenv /build`, /`clean`, `/rebuild` ou `/deploy`.  
   

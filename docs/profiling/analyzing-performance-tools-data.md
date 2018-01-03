@@ -20,11 +20,12 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 439c3f5e433de41a0a6f4bcaf7ec0392ca16fa49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 33ae54490ab9dbb7015df1ce6bafc4794d8254ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-performance-tools-data"></a>Analyse des données des outils d’analyse des performances
 Les rapports de performances des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permettent d’afficher et d’analyser les problèmes de performances des applications. Cette section fournit une présentation des rapports et des vues de performances qui peuvent être utilisés pour examiner les données de performances.  

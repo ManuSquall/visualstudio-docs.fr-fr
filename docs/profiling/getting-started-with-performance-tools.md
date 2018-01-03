@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccfaa75052ffa90e1e06ba2943ae54305fd54541
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2c18d2ada5f150abe379d3cae7ad830392cb62ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-performance-tools"></a>Bien démarrer avec les outils d’analyse des performances
 Cette section fournit une vue d’ensemble des concepts et des tâches que vous devez suivre lorsque vous collectez, affichez et analysez les performances du code à l’aide des outils d’analyse des performances de Visual Studio.  

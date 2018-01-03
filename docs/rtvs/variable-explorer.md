@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c56250677e99a11c52ac368037525803394242b3
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: c75e15def5f9abe98be3f062650c84693716c87e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="variable-explorer"></a>Explorateur de variables
 
@@ -27,22 +28,22 @@ x <- 42
 y <- 43
 n <- c(1,2,3,5,8,13)
 ```
- 
+
 La fenêtre Explorateur de variables s’affiche comme suit :
 
 ![Fenêtre Explorateur de variables dans Visual Studio](media/variable-explorer-window.png)
 
 Si une trame de données R plus complexe est définie dans la session, vous pouvez parcourir les données. Par exemple, après avoir exécuté `cars <- mtcars`, vous pouvez parcourir le jeu de données en développant les différents nœuds dans l’Explorateur de variables :
- 
+
 ![Vue développée de l’Explorateur de variables](media/variable-explorer-expanded-results.png)
- 
+
 Pour supprimer des variables, cliquez avec le bouton droit et sélectionnez **Supprimer**, ou sélectionnez la variable et appuyez sur la touche Suppr.
 
 Vous pouvez également rechercher une observation dans une trame de données à l’aide de la recherche incrémentielle. Tout d’abord, développez les nœuds dans la trame de données dans laquelle vous souhaitez rechercher, puis entrez des termes de recherche dans la zone de recherche.
 
 ## <a name="details-table-view"></a>Vue de détails (tableau)
 
-Les données étant souvent sous forme de tableau, vous pouvez afficher n’importe quel type de données complexe sous forme de tableau distinct en sélectionnant l’icône de loupe ou en cliquant avec le bouton droit et en sélectionnant **Afficher les détails**. 
+Les données étant souvent sous forme de tableau, vous pouvez afficher n’importe quel type de données complexe sous forme de tableau distinct en sélectionnant l’icône de loupe ou en cliquant avec le bouton droit et en sélectionnant **Afficher les détails**.
 
 ![Vue de tableau de l’Explorateur de variables](media/variable-explorer-table-view.png)
 
@@ -69,7 +70,6 @@ Vous pouvez également basculer vers une portée de fonction quand vous êtes ar
 ![Explorateur de variables montrant une trame de données pendant le débogage](media/variable-explorer-as-locals-window.png)
 
 L’Explorateur de variables change automatiquement de portée de fonction à mesure que vous parcourez le code dans le débogueur, par exemple pour afficher les variables locales dans une fonction.
-
 
 ## <a name="importing-data-into-variable-explorer"></a>Importation de données dans l’Explorateur de variables
 

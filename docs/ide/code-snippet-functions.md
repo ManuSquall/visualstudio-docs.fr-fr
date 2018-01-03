@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 58c1b8332e472484a0c932018bf6725cca9c7725
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippet-functions"></a>Fonctions des extraits de code
 Trois fonctions peuvent être utilisées avec les extraits de code [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Les fonctions sont spécifiées dans l’élément [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) de l’extrait de code. Pour plus d’informations sur la création d’extraits de code, consultez [Extraits de code](../ide/code-snippets.md).  
@@ -28,7 +29,7 @@ Trois fonctions peuvent être utilisées avec les extraits de code [!INCLUDE[cs
 ## <a name="functions"></a>Fonctions  
  Le tableau suivant décrit les fonctions qui peuvent être utilisées avec l’élément `Function` dans les extraits de code.  
   
-|Fonction|Description|Langage|  
+|Fonction|Description|Langue|  
 |--------------|-----------------|--------------|  
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Génère une instruction switch et un ensemble d’instructions case pour les membres de l’énumération spécifiée par le paramètre `EnumerationLiteral`. Le paramètre `EnumerationLiteral` doit être une référence à un littéral d’énumération ou un type d’énumération.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`ClassName()`|Retourne le nom de la classe qui contient l’extrait de code inséré.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  

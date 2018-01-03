@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1f2bc5acb69aa49fb37713942edb4e018039e8a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: ca6dd3c084c6ef8287469b3c1629af49e7a6f4fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilage de site web rapide avec VSPerfASPNETCmd
 L’outil en ligne de commande **VSPerfASPNETCmd** vous permet de profiler facilement des applications web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Par rapport à l’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md), cet outil comporte moins d’options et ne nécessite ni configuration de variables d’environnement, ni redémarrage de l’ordinateur. L’utilisation de **VSPerfASPNETCmd** est la méthode recommandée pour le profilage avec le profileur autonome. Pour plus d’informations, consultez [Guide pratique pour installer le profileur autonome](../profiling/how-to-install-the-stand-alone-profiler.md).  
@@ -30,7 +31,7 @@ L’outil en ligne de commande **VSPerfASPNETCmd** vous permet de profiler facil
  Dans certains scénarios, comme la collecte des données d’accès concurrentiel, ou la suspension et reprise du profilage, **VSPerfCmd** est la méthode de profilage recommandée.  
   
 > [!NOTE]
->  Les outils en ligne de commande des outils de profilage se trouvent dans le sous-répertoire \Team Tools\Performance Tools du répertoire d’installation de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Sur les ordinateurs 64 bits, utilisez l’outil VSPerfASPNETCmd qui se trouve dans le répertoire 32 bits \Team Tools\Performance Tools. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes ou bien l’ajouter à la commande elle-même. Pour plus d’informations, consultez [Spécification du chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Les outils en ligne de commande des outils de profilage se trouvent dans le sous-répertoire \Team Tools\Performance Tools du répertoire d’installation de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Sur les ordinateurs 64 bits, utilisez l’outil VSPerfASPNETCmd qui se trouve dans le répertoire 32 bits \Team Tools\Performance Tools. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes ou bien l’ajouter à la commande elle-même. Pour plus d’informations, consultez [Spécification du chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
 ## <a name="profiling-an-aspnet-application"></a>Profilage d’une application ASP.NET  
  Pour profiler une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], tapez une des commandes décrites dans les sections suivantes. Votre site web est démarré et le profileur commence à collecter des données. Utilisez votre application, puis fermez le navigateur. Pour arrêter le profilage, appuyez sur la touche Entrée dans la fenêtre d’invite de commandes.  

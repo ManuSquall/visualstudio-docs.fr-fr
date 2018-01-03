@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7dea60ba0f6a443b8db94611460442bd08a8cf95
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e17055848d7913547fcbcd563774e8360eea73e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="memory-usage-without-the-debugger"></a>Utilisation de la mémoire sans le débogueur
 Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pour effectuer les opérations suivantes :  

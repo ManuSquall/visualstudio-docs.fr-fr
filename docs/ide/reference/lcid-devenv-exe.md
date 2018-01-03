@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa33b329002991c5629f3d48361c6f4fa3c694e0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bdc04655ccfc8ca5f6c1e45e4378f15221b99f4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 Définit la langue par défaut utilisée pour le texte, la monnaie et d’autres valeurs au sein de l’environnement de développement intégré (IDE, Integrated Development Environment).  
@@ -39,18 +40,18 @@ devenv {/LCID|/l} LocaleID
  `LocaleID`  
  Obligatoire. LCID (ID de paramètres régionaux) de la langue que vous spécifiez.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Charge l’IDE et définit le langage naturel par défaut pour l’environnement. Ce changement est persistant d’une session à une autre et est répercuté dans le volet **Paramètres internationaux** des options **Environnement** de la boîte de dialogue **Options** dans l’IDE.  
   
  Si la langue spécifiée n’est pas disponible sur le système de l’utilisateur, le commutateur /LCID est ignoré.  
   
  Le tableau suivant répertorie les LCID des langues prises en charge par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-|Langage|LCID|  
+|Langue|dans le dossier HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\|  
 |--------------|----------|  
 |Chinois (simplifié)|2052|  
 |Chinois (traditionnel)|1028|  
-|Anglais|1036|  
+|Anglais|1033|  
 |Français|1036|  
 |Allemand|1031|  
 |Italien|1040|  

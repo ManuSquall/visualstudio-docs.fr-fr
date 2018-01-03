@@ -20,11 +20,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 49da59387ccd3c7367e06c91fc7f57b824e32ab5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f5ec46e5d6aea28a4124447c0f541cfb71e2f62f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parametergroup-element"></a>ParameterGroup, élément
 Contient une liste facultative de paramètres qui seront présents sur la tâche générée par un `UsingTask``TaskFactory`. Pour plus d’informations, consultez [UsingTask, élément (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -43,7 +44,7 @@ Contient une liste facultative de paramètres qui seront présents sur la tâche
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
 
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
 
 ### <a name="child-elements"></a>Éléments enfants  
 
@@ -74,6 +75,6 @@ Contient une liste facultative de paramètres qui seront présents sur la tâche
 ```  
 
 ## <a name="see-also"></a>Voir aussi  
- [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
- [Référence des tâches](../msbuild/msbuild-task-reference.md)   
+ [Tâches](../msbuild/msbuild-tasks.md)   
+ [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
  [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

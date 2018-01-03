@@ -13,16 +13,17 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3732c842d182698ecb8b43af3e5ebc5831385433
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8ca1f5d0c310fa4f9d75f27c6baf73f7a230e87e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="setting-general-performance-session-options"></a>Définition des options générales d'une session de performances
+# <a name="setting-general-performance-session-options"></a>Définition des options générales d'une session de performance
 Vous pouvez définir la méthode de collecte et les conventions de nommage des noms de données pour une session de performances des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dans la page **Général** de la boîte de dialogue des propriétés de la session de performances. Pour ouvrir cette boîte de dialogue depuis **l’Explorateur de performances**, cliquez avec le bouton droit sur la session de performances, puis cliquez sur **Propriétés**.  
   
- **Configuration requise**  
+ **Spécifications**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   

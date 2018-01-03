@@ -30,11 +30,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ccb924164b4d590f8ed440dfa905c1c040a13924
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 23e6712dbf66c898757176aca9e89b98de2f65bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils / Options**, puis en sélectionnant **Environnement / Polices et couleurs**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.  
@@ -210,7 +211,7 @@ Répertorie les éléments pour lesquels vous pouvez modifier la couleur de prem
   
  **Par défaut** Couleur qui s’affiche pour l’élément la première fois que vous démarrez Visual Studio. Si vous cliquez sur le bouton **Par défaut**, la valeur initiale est restaurée à l’aide de cette couleur.  
   
- **Custom**  
+ **Personnalisé**  
  Affiche la boîte de dialogue Couleur pour vous permettre de définir une couleur personnalisée pour l'élément sélectionné dans la liste Éléments affichés.  
   
 > [!NOTE]
@@ -223,7 +224,7 @@ Répertorie les éléments pour lesquels vous pouvez modifier la couleur de prem
   
  **Par défaut** Couleur qui s’affiche pour l’élément la première fois que vous démarrez Visual Studio. Si vous cliquez sur le bouton **Par défaut**, la valeur initiale est restaurée à l’aide de cette couleur.  
   
- **Custom**  
+ **Personnalisé**  
  Affiche la boîte de dialogue Couleur pour vous permettre de définir une couleur personnalisée pour l'élément sélectionné dans la liste Éléments affichés.  
   
  **Gras**  

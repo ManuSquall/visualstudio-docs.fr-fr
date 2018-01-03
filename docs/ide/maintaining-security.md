@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4dcb40a02de239c8061ae2559ce6adb581625b8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01c2867c60a3aa7b00462503da08bda0a8ac80fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="maintaining-security"></a>Gestion de la sécurité
 On dit souvent qu'une vigilance permanente est le prix à payer pour bénéficier de la sécurité. Malgré toute l'attention que vous avez pu donner à la sécurité au cours des phases de conception et de développement de votre application, vous devez supposer que des défauts de sécurité surviendront après son déploiement. En auditant votre application et en analysant les journaux des événements, vous risquez de découvrir des défauts jusque-là masqués.  

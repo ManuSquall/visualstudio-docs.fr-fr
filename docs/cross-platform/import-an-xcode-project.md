@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 07dc7d8eefb7ab1183d5e5532f13a5cfdac8de80
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 9de84c4330bb87ad13b865bda39f9ecafab4debd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="import-an-xcode-project"></a>Importer un projet Xcode
 Microsoft Visual C++ pour le développement mobile multiplateforme prend en charge le déplacement de vos projets Xcode dans Visual Studio, où vous pouvez créer des bibliothèques multiplateformes et partager du code avec d’autres projets. L’Assistant Importation à partir de Xcode simplifie le processus d’importation de projets et de fractionnement du code C++ de vos cibles Xcode à utiliser en tant que bibliothèque statique ou projet de code partagé. Vous pouvez gérer votre code spécifique à iOS dans Visual Studio et continuer à utiliser Xcode pour effectuer des storyboards et des builds. Pour plus d’informations sur la façon de déplacer facilement du code entre Visual Studio et Xcode, consultez les détails relatifs au transfert de changements entre Xcode et Visual Studio.  

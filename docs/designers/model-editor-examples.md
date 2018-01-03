@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76cb42ecd0f230c81e75ac7a7fd9812f230dc61b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0a26b1f48569f5d17012bcebd576b1d1d421b2df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-editor-examples"></a>Exemples de l'éditeur de modèle
 Les articles de cette section de la documentation contiennent des exemples qui illustrent comment utiliser l’éditeur de modèle.  

@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a910c3f43dc0cb49e6b7f6f70355c6c195df7a82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 372a1efccbfa211167930710418905d95411760c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-3-d-models"></a>Utilisation des modèles 3D
 Vous pouvez utiliser l’éditeur de modèle dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour créer des modèles 3D. Vous pouvez utiliser les modèles dans votre jeu ou application DirectX.  

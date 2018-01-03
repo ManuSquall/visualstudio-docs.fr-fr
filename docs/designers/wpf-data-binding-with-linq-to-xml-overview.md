@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b18f5169558067b67795e983e93ca07141ae8be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 44f8e1bde92cec70264beea8e9a62205ec0c2e8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Vue d’ensemble de la liaison de données WPF avec LINQ to XML
 Cette rubrique présente les fonctionnalités de liaison de données dynamiques dans l'espace de noms <xref:System.Xml.Linq>. Ces fonctionnalités peuvent être utilisées en tant que source de données pour des éléments d'interface utilisateur dans Windows Presentation Foundation (WPF).  

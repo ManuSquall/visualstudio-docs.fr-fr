@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdad50eff09e96c5d9c0513be1f571a901278871
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 21b341f8900664c57fa21d33bc138a969a273759
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view-parallel-performance"></a>Vue Threads (Performances parallèles)
 La vue threads est la vue la plus détaillée et la plus riche en fonctionnalités du visualiseur concurrentiel. En utilisant cette vue, vous pouvez déterminer si les threads sont en cours d’exécution ou s’ils sont bloqués à cause d’une synchronisation, d’E/S ou pour une autre raison.  

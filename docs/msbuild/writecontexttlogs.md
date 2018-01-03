@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 30c3c96a0999fe65c6fe0fa95163feaf526adfbf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb58b8e577893549e717a824b5c89d36fee2a65c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 Écrit des fichiers journaux pour le contexte actuel.  
@@ -41,7 +42,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 ## <a name="return-value"></a>Valeur de retour  
  **HRESULT** avec le bit **SUCCEEDED** défini si le contexte de suivi a été créé.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** FileTracker.h  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f33a7f43fdd52103fcd041d1f6502b88677eef1e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: unity
+ms.openlocfilehash: 45a06d17b2a3033af64c9d9a007af4a74dedabba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Journal des modifications (Visual Studio Tools pour Unity)
 Journal des modifications Visual Studio Tools pour Unity  
@@ -59,7 +60,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
 
--   **Project Generation:**  
+-   **Génération de projet :**  
 
     -   Ajout de la prise en charge des unités de compilation assembly.json.
 
@@ -81,7 +82,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
     -   Correction des éléments générés par le compilateur avec des variables locales.
 
--   **Project Generation:**  
+-   **Génération de projet :**  
 
     -   Correction de la référence à Microsoft.CSharp fixe pour le niveau d’API 4.6.
 
@@ -145,7 +146,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
 
--   **Débogueur :**  
+-   **Débogueur :**  
 
     -   Ajout de la prise en charge du nouveau runtime Unity (avec compatibilité avec .NET 4.6 / C# 6).
 
@@ -192,7 +193,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
     -   Résolution d’un incident lié à une déclaration d’attribut sans accolade de fin.
 
--   **Débogueur :**  
+-   **Débogueur :**  
 
     -   Correction d’un problème de points d’arrêt de fonction avec les coroutines dans le nouveau compilateur/runtime Unity.
 
@@ -257,7 +258,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
 ### <a name="bug-fixes"></a>Correctifs de bogues  
 
--   **Débogueur :**  
+-   **Débogueur :**  
 
     -   Résolution d’un bogue qui provoque l’arrêt brutal d’Unity durant l’évaluation des types génériques.
 
@@ -288,11 +289,11 @@ Journal des modifications Visual Studio Tools pour Unity
 
     -   Ajout d’une option pour autoriser la modification des propriétés de projet générées.  
 
--   **Débogueur :**  
+-   **Débogueur :**  
 
     -   Ajout des visualiseurs de chaînes de texte, XML, HTML et JSON.  
 
--   **Assistants :**  
+-   **Assistants :**  
 
     -   Ajout de MonoBehaviors manquants.  
 
@@ -304,7 +305,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
     -   Résolution d’un conflit lié à Xamarin, qui empêchait le débogage dans certaines situations.  
 
--   **Débogueur :**  
+-   **Débogueur :**  
 
     -   Correction d’un problème provoquant le blocage de Visual Studio pendant le débogage.  
 

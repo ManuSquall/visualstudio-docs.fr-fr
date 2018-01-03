@@ -18,11 +18,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f31221f52e9e944dcfc82c98d18e2cf5ec263bf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 13d9fd328ffab5c182078e46bbd832cddcba6fd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)
 ![S’applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -225,7 +226,7 @@ ms.lasthandoff: 11/11/2017
   
 ##  <a name="FixingMemory"></a> Résolution du problème de mémoire  
   
-1.  Les données révélées par le profileur vous permettent d'examiner le code responsable de la suppression d'éléments DOM avec un ID d'« élément ». Cela se produit dans la fonction `initialize()` .  
+1.  Les données révélées par le profileur vous permettent d'examiner le code responsable de la suppression d'éléments DOM avec un ID d'« élément ». Cela se produit dans la fonction `initialize()`.  
   
     ```javascript  
     function initialize() {  

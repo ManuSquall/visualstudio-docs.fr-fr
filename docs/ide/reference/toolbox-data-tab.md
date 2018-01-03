@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 01dc6663c9242c1a919b47fb242343332cbc9a63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d622f1b4a71f52103d1d7a3148291dcd2dcf9129
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-data-tab"></a>Boîte à outils, onglet Données
 Affiche des objets de données que vous pouvez ajouter à un formulaire et à des composants. L’onglet **Données** de la **boîte à outils** apparaît quand vous créez un projet associé à un concepteur. La **boîte à outils** apparaît par défaut dans l’environnement de développement intégré Visual Studio ; si vous devez afficher la **boîte à outils**, sélectionnez **Boîte à outils** dans le menu **Affichage**.  
@@ -31,7 +32,7 @@ Affiche des objets de données que vous pouvez ajouter à un formulaire et à de
 ## <a name="ui-element-list"></a>Liste des éléments de l'interface utilisateur  
  Pour accéder directement à la page de référence .NET Framework d’un composant, appuyez sur **F1** avec le pointeur placé sur l’élément dans la **boîte à outils** ou sur le composant dans la barre d’état du concepteur.  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |<xref:System.Data.DataSet>|Ajoute une instance d’un dataset typé ou non typé au formulaire ou composant. Quand vous faites glisser cet objet dans un concepteur, il affiche une boîte de dialogue qui permet de sélectionner une classe de dataset typée existante ou de spécifier que vous souhaitez créer un dataset vide et non typé. **Remarque :** N’utilisez pas l’objet <xref:System.Data.DataSet> de la **boîte à outils** pour créer un schéma et une classe de dataset typés. Pour plus d’informations, consultez [Créer et configurer des datasets](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
 |<xref:System.Windows.Forms.DataGridView>|Offre un moyen puissant et souple d’afficher des données sous forme de tableau.|  

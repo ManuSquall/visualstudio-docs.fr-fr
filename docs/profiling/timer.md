@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c259b4a66a6f26443b684a005adb2899e2d77ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: decf24e945f0673bc801b18d4c0438e186098687
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="timer"></a>Minuterie
 L’option **Timer** de VSPerfCmd.exe définit l’événement de profilage qui est échantillonné aux cycles d’horloge du processeur et change éventuellement le nombre de cycles dans un intervalle d’échantillonnage (la valeur par défaut est 10 000 000). Sur un processeur d'1 GHz (un gigahertz), 10 000 000 de cycles d'horloge correspondent environ à 100 échantillons par seconde. Vous pouvez spécifier au minimum 50 000 cycles.  
@@ -40,7 +41,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="required-options"></a>Options obligatoires  
  Vous pouvez spécifier **Timer** seulement sur une ligne de commande qui contient une des options suivantes.  
   
- **Launch:** `AppName`  
+ **Launch :** `AppName`  
  Démarre le profileur et l'application spécifiée par `AppName`.  
   
  **Attach:** `PID`  

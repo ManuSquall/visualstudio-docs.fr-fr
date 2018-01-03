@@ -16,18 +16,19 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a257478cf797741aee7f52361c59cbe06b72bc4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4a624e790a618f923f5a70981fc3fef32809966d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506 : Octets privés alloués maximum au processus en cours de profilage
 |||  
 |-|-|  
 |ID de règle|DA0506|  
-|Catégorie|Analyse des ressources|  
-|Méthode de profilage|Tout|  
+|Category|Analyse des ressources|  
+|Méthode de profilage|Tous|  
 |Message|Uniquement à titre d’informations. Le compteur Octets privés de processus mesure la mémoire virtuelle allouée par le processus que vous profilez. La valeur signalée correspond à la valeur maximale observée dans l’ensemble des intervalles de mesure.|  
 |Type de règle|Information|  
   

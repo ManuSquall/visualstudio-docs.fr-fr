@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77230702bf8dc582e176e4dd0f17eab3385966c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d97695cae08352ea213ba02008ab99bef7f61c47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Guide pratique pour supprimer des avertissements du compilateur
 Vous pouvez « nettoyer » un journal de génération en spécifiant un ou plusieurs types d’avertissements du compilateur que vous ne souhaitez pas inclure. Par exemple, vous pouvez utiliser cette technique pour passer en revue uniquement certaines des informations générées automatiquement quand vous affectez la valeur Diagnostic, Détaillé ou Normal au niveau de détail du journal de génération. Pour plus d’informations sur le niveau de détail, consultez [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).  

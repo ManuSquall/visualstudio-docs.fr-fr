@@ -16,18 +16,19 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1675f6e090de5b1e3fdcd3e30d706a38481a16a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f02670778e660d7ecffa83523804d0c377af8579
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023 : Temps processeur GC élevé
 |||  
 |-|-|  
 |ID de règle|DA0023|  
-|Catégorie|Utilisation du .NET Framework|  
-|Méthode de profilage|Tout|  
+|Category|Utilisation du .NET Framework|  
+|Méthode de profilage|Tous|  
 |Message|% de temps dans GC relativement élevé. Cela indique un volume de surcharge de garbage collection trop élevé qui peut avoir un impact sur le taux de réponse de votre application. Vous pouvez regrouper les données d’allocation de mémoire .NET et les informations de durée de vie des objets afin de mieux comprendre le modèle d’allocation de mémoire utilisé par votre application.|  
 |Type de règle|Informations|  
   

@@ -16,17 +16,18 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b48ca72793528be42f1fa4a2af674bd76d3d684a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e826619a9b8b6b9109c28381b6b9f05cb37b4094
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : Application 32 bits s'exécutant aux limites de la mémoire managée du processus
 |||  
 |-|-|  
 |ID de règle|DA0018|  
-|Catégorie|Utilisation des outils de profilage|  
+|Category|Utilisation des outils de profilage|  
 |Méthode de profilage|Échantillonnage|  
 |Message|Les allocations de mémoire managée sont proches de la limite pour un processus 32 bits. Votre application peut être liée à la mémoire.|  
 |Type de règle|Warning|  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Optimisez la manière dont l’application utilise les ressources de mémoire managée.  
   
-     ou  
+     - ou -  
   
 -   Allégez les contraintes architecturales associées à la taille maximale de la mémoire virtuelle d’un processus 32 bits.  
   

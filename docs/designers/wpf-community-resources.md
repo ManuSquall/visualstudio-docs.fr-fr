@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f5f010ee5d72723ec0ef4f20b13b895dc9b75f1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a760336194482485f7b46cd35600fcb102d7113b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-community-resources"></a>Ressources de la communauté WPF
 Microsoft met en avant de nombreuses ressources de la communauté pour vous permettre de découvrir Windows Presentation Foundation (WPF), d’en discuter et de fournir des commentaires à son sujet, y compris des blogs produits par les membres de l’équipe WPF et les responsables de la communauté, des forums et le centre de commentaires Microsoft Connect.  

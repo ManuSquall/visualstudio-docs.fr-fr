@@ -14,11 +14,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a6fce612245c07cf3bcd70b56b266857db88765d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c3dd72236cf23131d510f9d512ea1dcd2a4dd15a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)
 Utilisez la boîte de dialogue **Paramètres avancés du compilateur** du **Concepteur de projets** pour spécifier les propriétés de configuration de build avancées du projet. Cette boîte de dialogue s’applique uniquement aux projets Visual Basic.  

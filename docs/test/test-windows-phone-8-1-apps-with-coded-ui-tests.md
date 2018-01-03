@@ -11,11 +11,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: "28"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 33c6d52536bc5295197c810058e959570c1d0242
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: 8aa1bac1a98d8121dcba30dace22483e4a80e1d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Tester des applications Windows UWP et des applications Windows Phone 8.1 avec des tests codés de l’interface utilisateur
 
@@ -117,7 +118,7 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
   
      ![Générer du code pour l’assertion](../test/media/cuit_phone_generatecodeassertion.png "CUIT_Phone_GenerateCodeAssertion")  
   
-10. **Visual C#**  
+10. **Visual C#**  
   
      Dans l’Explorateur de solutions, ouvrez le fichier UIMap.Designer.cs pour afficher le code que vous venez d’ajouter pour la méthode assert et les contrôles.  
   
@@ -313,7 +314,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 ```  
   
-## <a name="q--a"></a>Q et R  
+## <a name="q--a"></a>Questions et réponses  
   
 ### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>Q : suis-je obligé de déployer l’application Windows Phone dans l’émulateur pour mapper des contrôles d’interface utilisateur ?  
  **R**: oui, le générateur de test codé de l’interface utilisateur exige qu’un émulateur soit en cours d’exécution et que l’application soit déployée dessus. Sinon, il génère un message d’erreur signalant qu’aucun émulateur en cours d’exécution n’a été détecté.  
@@ -327,7 +328,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **R**: l’option d’enregistrement n’est pas prise en charge pour les applications Windows Phone.  
   
 ### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>Q : puis-je créer un test codé de l’interface utilisateur pour mes applications Windows Phone basées sur WinJS, Silverlight ou HTML5 ?  
- **R**: non, seules les applications XAML sont prises en charge.  
+ **R**: Non, seules les applications XAML sont prises en charge.  
   
 ### <a name="q-can-i-create-coded-ui-tests-for-my-windows-phone-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>Q : puis-je créer des tests codés de l’interface utilisateur pour mes applications Windows Phone sur un système qui n’exécute pas Windows 8.1 ou Windows 10 ?  
  **R**: non, les modèles Projet de test codé de l’interface utilisateur sont disponibles seulement sur Windows 8.1 et Windows 10. Pour créer l’automation pour les applications de plateforme Windows universelle, vous aurez besoin de Windows 10.  

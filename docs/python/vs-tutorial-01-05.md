@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3d0dd65ec5ca42d54c16c0c57b919f849a7a0e20
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 2acd8aebda03d7d9809563a6c1959c8dd69bf96e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Étape 5 : Installation de packages dans votre environnement Python
 
@@ -48,23 +49,22 @@ La communauté des développeurs Python a produit des milliers de packages utile
 
 1. Créez un projet avec **Fichier > Nouveau > Projet** en sélectionnant le modèle « Application Python ». Dans le fichier de code qui s’affiche, collez le code suivant, qui crée une courbe de la fonction cosinus comme dans les étapes du didacticiel précédent, mais cette fois avec seulement une représentation graphique :
 
-    ```python  
+    ```python
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
     from math import radians
 
-    def main():  
+    def main():
         x = np.arange(0, radians(1800), radians(12))
         plt.plot(x, np.cos(x), 'b')
         plt.show()
-                    
+
     main()
-    ```  
+    ```
 
 1. Exécutez le programme avec (F5) ou sans (Ctrl+F5) le débogueur pour voir la sortie :
 
   ![Sortie de l’exemple matplotlib](media/environments-add-matplotlib3.png)
-
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -72,4 +72,5 @@ La communauté des développeurs Python a produit des milliers de packages utile
 > [Utilisation de Git](vs-tutorial-01-06.md)
 
 ### <a name="going-deeper"></a>Pour aller plus loin
+
 - [Environnements Python](python-environments.md)

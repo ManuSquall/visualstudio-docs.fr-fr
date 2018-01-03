@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41bf306b96db2b3aa00fff1bdcc8562823cd9d98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c829f11efd5eddda0ea819422856cb2bcc30c2ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-tree-view---contention-data"></a>Vue Arborescence des appels - Données de conflit
 La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud de fonction répertorie toutes les fonctions appelées, le nombre de fois où la fonction a été bloquée, et la durée pendant laquelle la fonction a été bloquée car elle était en conflit pour une ressource avec d’autres threads ou processus.  
@@ -43,9 +44,9 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
 |**Adresse de la fonction**|Adresse de la fonction.|  
 |**Nom de la fonction**|Nom complet de la fonction.|  
 |**Temps bloqué inclusif**|Durée totale pendant laquelle les instances de cette fonction dans ce chemin d’exécution n’ont pas pu s’exécuter au cours de l’exécution du profilage. Cette durée inclut le temps bloqué des fonctions enfants appelées par la fonction.|  
-|**% de temps bloqué inclusif**|Pourcentage de tout le temps bloqué au cours de l’exécution de profilage qui était du temps bloqué inclusif pour les instances de cette fonction dans ce chemin d’exécution.|  
+|**% de temps bloqué inclusif**|Pourcentage de tout le temps bloqué au cours de l’exécution de profilage qui était du temps bloqué inclusif pour les instances de cette fonction dans ce chemin d’exécution.|  
 |**Conflits inclusifs**|Nombre total de conflits ayant bloqué des instances de cette fonction dans ce chemin d’exécution. Ce nombre inclut les conflits des fonctions enfants appelées par la fonction.|  
-|**% de conflits inclusifs**|Pourcentage de tous les conflits au cours de l’exécution de profilage qui étaient des conflits inclusifs des instances de cette fonction dans ce contexte d’exécution.|  
+|**% de conflits inclusifs**|Pourcentage de tous les conflits au cours de l’exécution de profilage qui étaient des conflits inclusifs des instances de cette fonction dans ce contexte d’exécution.|  
 |**Niveau**|Niveau de la fonction dans l’arborescence des appels. Uniquement dans les rapports en ligne de commande VSReport. Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Nom de module**|Nom du module qui contient la fonction.|  

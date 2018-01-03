@@ -19,11 +19,12 @@ f1_keywords:
 - VC.Project.VCNMakeTool.PreprocessorDefinitions
 - VC.Project.VCNMakeTool.IncludeSearchPath
 - VC.Project.VCNMakeTool.ForcedIncludes
-ms.openlocfilehash: ff692a62a6e9cdb6b6844d6b0358c6af856b052f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 0479f14ea73e1fda1297ea85b4d6c21e6a855b63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="nmake-properties-android-c"></a>Propriétés NMake (Android C++) 
 

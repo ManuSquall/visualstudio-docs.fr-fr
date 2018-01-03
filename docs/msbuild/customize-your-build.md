@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9392776d44602ee81358e31708d331e09d0d7a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72bcca85f57a5c68e70dfa942ec607072af86561
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-your-build"></a>Personnaliser votre build
 Dans les versions de MSBuild antérieures à la version 15, si vous souhaitiez fournir une nouvelle propriété personnalisée aux projets de votre solution, vous deviez ajouter manuellement une référence à cette propriété pour chaque fichier projet de la solution. Ou vous deviez définir la propriété dans un fichier .props, puis importer explicitement le fichier .props dans chaque projet de la solution, entre autres.
@@ -87,7 +88,7 @@ Pour que MSBuild fusionne correctement les fichiers « internes » (`2-src` et `
 Voici un résumé de l’approche générale MSBuild :
 
 - Pour un projet donné, MSBuild recherche le premier `Directory.Build.props` vers le haut de la structure de la solution, le fusionne avec les valeurs par défaut et arrête la recherche.
-- Si vous souhaitez rechercher et fusionner plusieurs niveaux, importez ([`<Import...>`](http://docs.microsoft.com/en-us/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove), ci-dessus) le fichier « externe » à partir du fichier « interne ».
+- Si vous souhaitez rechercher et fusionner plusieurs niveaux, importez ([`<Import...>`](http://docs.microsoft.com/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove), ci-dessus) le fichier « externe » à partir du fichier « interne ».
 - Si le fichier « externe » n’importe pas également un élément situé au-dessus, la recherche s’arrête.
 - Pour contrôler le processus de recherche et de fusion, utilisez `$(DirectoryBuildPropsPath)` et `$(ImportDirectoryBuildProps)`.
 

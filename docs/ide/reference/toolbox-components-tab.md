@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb474e832f815453fd84ba35bc3680b961e17954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-components-tab"></a>Boîte à outils, onglet Composants
 Affiche les composants que vous pouvez ajouter aux concepteurs [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] et [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. En plus des composants [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] inclus avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], tels que les composants <xref:System.Messaging.MessageQueue> et <xref:System.Diagnostics.EventLog>, vous pouvez ajouter vos propres composants ou des composants tiers à cet onglet. Pour plus d’informations, consultez [Comment : manipuler des onglets de boîte à outils](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  

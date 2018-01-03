@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59d24a6cc67429fb6c0231f9487d80abe91de965
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ad8aaf7dbf9960a3281add90da685c2942bd179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procédure : limiter l’instrumentation à des DLL spécifiques
 La méthode de profilage par instrumentation vous permet de limiter la collecte de données de profilage à une ou plusieurs DLL d’une application. Pour profiler une ou plusieurs DLL d’une application, créez une session de performance qui comprenne ces fichiers .dll en tant que cibles. Vous pouvez spécifier les DLL à profiler en tant que projets dans une solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou en tant que fichiers binaires indépendants.  
@@ -58,7 +59,7 @@ La méthode de profilage par instrumentation vous permet de limiter la collecte 
   
     -   Facultatif. Dans **Arguments de ligne de commande**, tapez les arguments de ligne de commande que vous voulez passer au fichier exécutable. Si nécessaire, spécifiez le répertoire de travail de l’application dans **Répertoire de travail**.  
   
-    -   Cliquez sur **Next**.  
+    -   Cliquez sur **Suivant**.  
   
 5.  Choisissez **Instrumentation** comme méthode de profilage, puis cliquez sur **Suivant**.  
   

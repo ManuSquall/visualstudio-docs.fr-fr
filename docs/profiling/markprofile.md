@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ab1c155b5c01f2278ca741ee13bb8e1a02e8b55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f9bc5537bf877afd3ff83d91516fe37d472c859f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markprofile"></a>MarkProfile
 La méthode `MarkProfile` insère une marque de profil dans le fichier .vsp. Le profilage pour le thread contenant la fonction `MarkProfile` doit être activé pour la marque à insérer.  

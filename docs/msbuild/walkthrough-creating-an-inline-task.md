@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 1f10be3f7c021c353851039a7e7d07a250aa83a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c1f05d94cb836c065597c4c646fd6a74aaff97f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Procédure pas à pas : création d’une tâche inline
 Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. À compter du .NET Framework version 4, vous pouvez créer des tâches inline dans le fichier projet. Vous n’êtes pas obligé de créer un assembly séparé pour héberger la tâche. Pour plus d’informations, consultez [Tâches Inline](../msbuild/msbuild-inline-tasks.md).  
@@ -255,5 +256,5 @@ Les tâches MSBuild sont généralement créées en compilant une classe qui imp
   
 ## <a name="see-also"></a>Voir aussi  
  [Tâches inline](../msbuild/msbuild-inline-tasks.md)   
- [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
- [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)
+ [Tâches](../msbuild/msbuild-tasks.md)   
+ [Cibles](../msbuild/msbuild-targets.md)

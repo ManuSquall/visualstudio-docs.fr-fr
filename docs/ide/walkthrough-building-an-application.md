@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a06bd1eb1ced8305425a9e3698e66f0d19438463
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 65c48fe6ff7f675add8b5bd5944e159587de2e3b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-building-an-application"></a>Procédure pas à pas : génération d'une application
 Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs options qu’il est possible de configurer lors de la génération d’applications avec Visual Studio. Vous allez créer une configuration de build personnalisée, masquer certains messages d’avertissement et afficher davantage d’informations de sortie de build dans un exemple d’application.  
@@ -178,12 +179,12 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
   
 Pour plus d’informations, consultez l’article [Comment : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
-##  <a name="BKMK_releasebuild"></a> Créer une version de mise en production  
- Vous pouvez créer une version de l’exemple d’application qui soit optimisée pour sa livraison. Pour la version de mise en production, vous allez spécifier que le fichier exécutable doit être copié vers un partage réseau avant que la génération ne démarre.  
+##  <a name="BKMK_releasebuild"></a> Créer une version Release  
+ Vous pouvez créer une version de l’exemple d’application qui soit optimisée pour sa livraison. Pour la version Release, vous allez spécifier que le fichier exécutable doit être copié vers un partage réseau avant que la génération ne démarre.  
   
  Pour plus d’informations, consultez [Guide pratique pour modifier le répertoire de sortie de la génération](../ide/how-to-change-the-build-output-directory.md) et [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
   
-#### <a name="to-specify-a-release-build-for-visual-basic"></a>Pour spécifier une version de mise en production Visual Basic  
+#### <a name="to-specify-a-release-build-for-visual-basic"></a>Pour spécifier une version Release Visual Basic  
   
 1.  Ouvrez le **Concepteur de projet**.  
   
@@ -206,7 +207,7 @@ Pour plus d’informations, consultez l’article [Comment : afficher, enregist
   
      ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
-#### <a name="to-specify-a-release-build-for-visual-c"></a>Pour spécifier une version de mise en production Visual C# #
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Pour spécifier une version Release Visual C# #
   
 1.  Ouvrez le **Concepteur de projet**.  
   
@@ -238,4 +239,4 @@ La procédure pas à pas est terminée.
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : génération d’un projet (C++)](/cpp/ide/walkthrough-building-a-project-cpp)   
  [Présentation de la précompilation de projets d’application web ASP.NET](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
- [Procédures pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md)
+ [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md)

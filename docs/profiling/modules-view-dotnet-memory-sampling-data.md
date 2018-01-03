@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f572075106d815a791ca59fa2b35a31918f02bd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 32eb0b4e34edde03cd455384d7b1c6d36e0365c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Modules, vue - Données d’échantillonnage de mémoire .NET
 La vue Modules des données d’allocation de mémoire .NET collectées à l’aide de la méthode d’échantillonnage regroupe les données de mémoire selon les modules exécutés dans le cadre de l’exécution du profilage. Chaque module est la racine d’une arborescence hiérarchique. Les fonctions du module sont répertoriées sous le nœud du module.  
@@ -26,7 +27,7 @@ La vue Modules des données d’allocation de mémoire .NET collectées à l’
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Nom**|Nom du module, de la fonction, du numéro de ligne ou de l’adresse d’instruction.|  
+|**Name**|Nom du module, de la fonction, du numéro de ligne ou de l’adresse d’instruction.|  
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
 |**Nom du module**|Nom du module qui contient la fonction.|  

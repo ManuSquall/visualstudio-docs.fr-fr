@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83bd33e6da9795a7e4e638fa91612e930a882cb0
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: b82860f4bdbf206441591703137f15decb294269
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012
 Les fonctionnalités de sécurité renforcées à compter de Windows 8 et Windows Server 2012 ont imposé des modifications importantes dans la façon dont les outils d’analyse des performances de Visual Studio collectent les données sur ces plateformes. Les applications UWP nécessitent aussi de nouvelles techniques de collecte. Cette rubrique décrit les modifications apportées aux outils d’analyse des performances à compter des plateformes Windows 8 et Windows Server 2012.

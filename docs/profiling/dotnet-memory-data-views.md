@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6bbbc764c7b5275082b6261249d48122ea3c836
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8fa1fb6dbaed5ed43f9a7eb3e69b52e91f43bd7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="net-memory-data-views"></a>Vues de données de mémoire .NET
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui comprennent des données de profilage de mémoire .NET.  
@@ -28,7 +29,7 @@ Cette section contient des informations de référence sur les vues et les rappo
  [Vue Résumé](../profiling/summary-view-dotnet-memory-data.md)  
  Répertorie les fonctions et les types qui ont alloué le plus de mémoire.  
   
- [Vue Allocations](../profiling/dotnet-memory-allocations-view.md)  
+ [Allocations, vue](../profiling/dotnet-memory-allocations-view.md)  
  Répertorie les types alloués lors de l’exécution du profilage, ainsi que les arborescences des appels (chemins d’exécution) qui ont provoqué l’allocation du type.  
   
  [Vue Durée de vie de l’objet](../profiling/object-lifetime-view.md)  

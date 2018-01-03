@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae0bd48af8c9fbaaaf8c38f50a2fe8233f15cb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5503422ece5847018e8d321dba9cf674dff9e623
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---contention-data"></a>Vue Modules - Données de conflit
 La vue Modules des données de conflit affiche les données de concurrence regroupées selon les modules qui ont été échantillonnés dans les données de profilage. Chaque module est la racine d’une arborescence hiérarchique. Les fonctions du module dans lequel les événements de concurrence se sont produits sont répertoriés sous le nœud du module.  
@@ -29,9 +30,9 @@ La vue Modules des données de conflit affiche les données de concurrence regro
 |Colonne|Description|  
 |------------|-----------------|  
 |**Temps bloqué exclusif**|-   Pour une fonction, durée pendant laquelle l’exécution du code du corps de cette fonction a été bloquée. Le temps bloqué dans les fonctions qui ont été appelées par la fonction n’est pas inclus.<br />-   Pour un module, somme des durées de blocage exclusives des fonctions du module.<br />-   Pour une ligne ou une instruction, durée pendant laquelle l’exécution de cette ligne ou de cette instruction a été bloquée.|  
-|**% de temps bloqué exclusif**|-   Pour une fonction ou un module, pourcentage de la durée totale de blocage dans l’exécution du profilage qui était du temps de blocage exclusif de cette fonction ou de ce module.<br />-   Pour une ligne ou une instruction, pourcentage de la durée totale de blocage dans l’exécution du profilage pendant lequel l’exécution de cette ligne ou de cette instruction a été bloquée.|  
+|**% de temps bloqué exclusif**|-   Pour une fonction ou un module, pourcentage de la durée totale de blocage dans l’exécution du profilage qui était du temps de blocage exclusif de cette fonction ou de ce module.<br />-   Pour une ligne ou une instruction, pourcentage de la durée totale de blocage dans l’exécution du profilage pendant lequel l’exécution de cette ligne ou de cette instruction a été bloquée.|  
 |**Conflits exclusifs**|-   Pour une fonction, nombre de fois où l’exécution de code du corps de la fonction a été bloquée. Les conflits dans les fonctions qui ont été appelées par la fonction ne sont pas incluses.<br />-   Pour un module, somme des conflits exclusifs des fonctions dans le module.<br />-   Pour une ligne ou une instruction, nombre de fois où l’exécution de cette ligne ou de cette instruction a été bloquée.|  
-|**% de conflits exclusifs**|-   Pour une fonction ou un module, pourcentage de tous les conflits dans l’exécution du profilage qui étaient des conflits exclusifs de cette fonction ou de ce module.<br />-   Pour une ligne ou une instruction, pourcentage de tous les conflits dans l’exécution du profilage qui étaient des conflits ayant bloqué l’exécution de cette ligne ou de cette instruction.|  
+|**% de conflits exclusifs**|-   Pour une fonction ou un module, pourcentage de tous les conflits dans l’exécution du profilage qui étaient des conflits exclusifs de cette fonction ou de ce module.<br />-   Pour une ligne ou une instruction, pourcentage de tous les conflits dans l’exécution du profilage qui étaient des conflits ayant bloqué l’exécution de cette ligne ou de cette instruction.|  
 |**Temps bloqué inclusif**|-   Pour une fonction, durée pendant laquelle l’exécution de cette fonction ou d’une des fonctions appelées par cette fonction a été bloquée.<br />-   Pour un module, somme du temps de blocage pendant lequel au moins une fonction du module était sur la pile.<br />-   Pour une ligne ou une instruction, durée pendant laquelle l’exécution de cette ligne ou de cette instruction a été bloquée.|  
 |**% de temps bloqué inclusif**|-   Pour une fonction ou un module, pourcentage de la durée totale de blocage dans l’exécution du profilage qui était du temps de blocage inclusif de cette fonction ou de ce module.<br />-   Pour une ligne ou une instruction, pourcentage de la durée totale de blocage dans l’exécution du profilage pendant lequel cette ligne ou cette instruction s’exécutait.|  
 |**Conflits inclusifs**|-   Pour une fonction, nombre de fois où l’exécution de cette fonction ou d’une des fonctions appelées par cette fonction a été bloquée.<br />-   Pour un module, nombre de conflits dans lesquels au moins une fonction de ce module était sur la pile.<br />-   Pour une ligne ou une instruction, nombre de fois où l’exécution de cette ligne ou de cette instruction a été bloquée.|  
@@ -39,7 +40,7 @@ La vue Modules des données de conflit affiche les données de concurrence regro
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Nom du module**|Nom du module qui contient la fonction, la ligne ou le pointeur d’instruction.|  
 |**Chemin du module**|Chemin du module qui contient le module, la fonction, la ligne ou le pointeur d’instruction.|  
-|**Nom**|Nom du module ou de la fonction.|  
+|**Name**|Nom du module ou de la fonction.|  
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|  

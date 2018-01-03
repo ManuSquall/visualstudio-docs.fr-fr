@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8356a9d4ab470b67a6e495d753fa498237e530f4
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 46048b135dc0023e2a7b918b72ec226af3ed22b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-working-with-git"></a>Étape 6 : Utilisation de Git
 
@@ -47,7 +48,6 @@ Cette rubrique décrit la création d’un dépôt Git local pour un projet exis
 ## <a name="going-deeper"></a>Pour aller plus loin
 
 Pour un didacticiel plus étendu sur l’utilisation de Git, consultez [Partager votre code avec Visual Studio 2017 et VSTS Git](https://docs.microsoft.com/vsts/git/share-your-code-in-git-vs-2017)
-
 
 ## <a name="tutorial-review"></a>Résumé du didacticiel
 

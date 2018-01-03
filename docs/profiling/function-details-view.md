@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff4c94b079d58cab51ec0539e17ada8696ebca89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 81133dadb79cc4fba24b66e97f7384232b6171ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="function-details-view"></a>Vue Informations relatives à la fonction
 La fenêtre **Vue Informations relatives à la fonction** affiche les informations suivantes :  

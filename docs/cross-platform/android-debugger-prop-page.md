@@ -16,11 +16,12 @@ f1_keywords:
 - VC.Project.AndroidDebugger.AndroidDeviceID
 - VC.Project.AndroidDebugger.PackagePath
 - VC.Project.AndroidDebugger.LaunchActivity
-ms.openlocfilehash: a296ea142b13b9bdcda888a7f382de9eeb17a40a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: d8caf579aa73a77f3c20162ae775411df551f373
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="android-debugger-properties"></a>Propriétés du débogueur Android
 

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b591f0158408161d268930416d49c465e29d0b2c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 821c0634f4e23d0aa8fd71a8b0eedd796efe3a03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Guide pratique pour utiliser la même cible dans plusieurs fichiers projet
 Si vous avez créé plusieurs fichiers projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vous avez peut-être constaté que vous deviez utiliser les mêmes tâches et les mêmes cibles dans les différents fichiers projet. Au lieu d’inclure la description complète de ces tâches ou de ces cibles dans chaque fichier projet, vous pouvez enregistrer une cible dans un fichier projet distinct et importer ensuite ce projet dans un autre projet qui doit utiliser la cible.  
@@ -116,4 +117,4 @@ Si vous avez créé plusieurs fichiers projet [!INCLUDE[vstecmsbuild](../extensi
   
 ## <a name="see-also"></a>Voir aussi  
  [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md)   
- [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)
+ [Cibles](../msbuild/msbuild-targets.md)

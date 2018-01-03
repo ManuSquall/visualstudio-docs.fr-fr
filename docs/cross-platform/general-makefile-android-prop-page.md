@@ -16,17 +16,18 @@ f1_keywords:
 - VC.Project.VCConfiguration.IntermediateDirectory
 - VC.Project.VCConfiguration.BuildLogFile
 - VC.Project.VCConfiguration.ConfigurationType
-ms.openlocfilehash: d7105b75328175abcaba98d062ebeb591ce72d46
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 95d420d57fbf37ae511d92ce32ea03b9f7c5fcad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="general-project-properties-android-c-makefile"></a>Propriétés générales du projet (makefile Android C++)
 
 Propriété | Description | Options
 --- | ---| ---
-Répertoire de sortie | Spécifie un chemin relatif au répertoire des fichiers de sortie ; peut inclure des variables d’environnement.
-Répertoire intermédiaire | Spécifie un chemin relatif au répertoire des fichiers intermédiaires ; peut inclure des variables d’environnement.
+Répertoire de sortie | Spécifie un chemin relatif vers le répertoire de fichiers de sortie ; peut inclure des variables d’environnement.
+Répertoire intermédiaire | Spécifie un chemin relatif vers le répertoire de fichiers intermédiaire ; peut inclure des variables d’environnement.
 Fichier journal de génération | Spécifie le fichier journal de génération à utiliser quand la journalisation de la génération est activée.
-Type de configuration | Spécifie le type de sortie généré par cette configuration. | **Bibliothèque dynamique (.so)** : bibliothèque dynamique (.so)<br>**Bibliothèque statique (.a)** : bibliothèque statique (.a)<br>**Utilitaire** : utilitaire<br>**Makefile** : makefile<br>
+Type de configuration | Spécifie le type de sortie générée par cette configuration. | **Bibliothèque dynamique (.so)** : bibliothèque dynamique (.so)<br>**Bibliothèque statique (.a)** : bibliothèque statique (.a)<br>**Utilitaire** : utilitaire<br>**Makefile** : fichier makefile<br>

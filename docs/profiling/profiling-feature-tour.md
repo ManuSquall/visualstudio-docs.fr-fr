@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-feature-tour"></a>Visite guidée des fonctionnalités de profilage
 
@@ -154,13 +155,13 @@ Voici un tableau qui recense les différents outils proposés par Visual Studio,
 |[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui|  
 |[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui (non pour .NET Core/ASP.NET Core)|  
 |[Utilisation du GPU](../debugger/gpu-usage.md)|oui|oui|non|  
-|[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|non|  
+|[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|Non|  
 |[Conseils sur les performances](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|  
-|[Explorateur de performances](../profiling/performance-explorer.md)|oui|non|oui (non pour ASP.NET Core)|  
+|[Explorateur de performances](../profiling/performance-explorer.md)|oui|Non|oui (non pour ASP.NET Core)|  
 |[IntelliTrace](../debugger/intellitrace.md)|.NET Enterprise uniquement|.NET Enterprise uniquement|.NET Enterprise uniquement|
-|[Utilisation du réseau](../profiling/network-usage.md)|non|oui|non| 
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|non|oui pour HTML, non pour XAML|non|  
-|[Mémoire JavaScript](../profiling/javascript-memory.md)|non|oui pour HTML, non pour XAML|non|  
+|[Utilisation du réseau](../profiling/network-usage.md)|Non|oui|Non| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Non|oui pour HTML, non pour XAML|Non|  
+|[Mémoire JavaScript](../profiling/javascript-memory.md)|Non|oui pour HTML, non pour XAML|Non|  
 
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)

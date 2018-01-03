@@ -12,13 +12,14 @@ caps.latest.revision: "14"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0c50254bc632bce298e547e5599adeb99d593da7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78b85460ad7edf7163a8a53c7c4706790f493b58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="step-2-run-your-program"></a>Étape 2 : Exécuter votre programme
+# <a name="step-2-run-your-program"></a>Étape 2 : exécuter votre programme
 Lorsque vous avez créé une solution, vous avez en fait généré un programme qui fonctionne. Pour le moment, le programme offre peu de fonctionnalités : il affiche simplement une fenêtre vide avec la barre de titre **Form1**. Mais il fonctionne réellement, comme vous allez le découvrir.  
   
  ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
@@ -39,7 +40,7 @@ Bouton de barre d'outils Démarrer le débogage
 2.  Visual Studio exécute votre programme. Une fenêtre intitulée **Form1** s’affiche. Le schéma suivant montre le programme que vous venez de générer. Le programme est exécuté, et vous allez bientôt y faire des ajouts.  
   
      ![Programme d’application Windows Forms en cours d’exécution](../ide/media/express_firstrun.png "Express_FirstRun")  
-Programme d’application Windows Forms en cours d'exécution  
+Programme d'application Windows Form en cours d'exécution  
   
 3.  Revenez à l'environnement de développement intégré (IDE) de Visual Studio et examinez la nouvelle barre d'outils. Des boutons supplémentaires apparaissent dans la barre d'outils lorsque vous exécutez un programme. Ces boutons vous permettent d'effectuer des opérations comme arrêter et démarrer votre programme, et vous aident à localiser les erreurs (bogues) possibles. Dans cet exemple, nous les utilisons pour démarrer et arrêter le programme.  
   

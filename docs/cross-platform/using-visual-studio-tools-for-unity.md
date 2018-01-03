@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c4ed4d6a90a91ac927feb3be76a06d8080267057
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: unity
+ms.openlocfilehash: 06598b54e50db1566cc35c896061b4a2d1fb1a40
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Utilisation de Visual Studio Tools pour Unity
 Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’intégration et de productivité de Visual Studio Tools pour Unity, ainsi qu’à utiliser le débogueur Visual Studio pour le développement Unity.  
@@ -97,9 +98,9 @@ Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’in
 |Ouvrir l'Explorateur de projets Unity|**Alt+Maj+E**|**View.UnityProjectExplorer**|  
 |Accéder à la documentation Unity|**Ctrl+Alt+M, Ctrl+H**|**Help.UnityAPIReference**|  
 |Attacher au débogueur Unity (lecteur ou éditeur)|***Pas de valeur par défaut***|**Debug.AttachUnityDebugger**|  
-
- Vous pouvez modifier les combinaisons de touches de raccourci si vous n'aimez pas la valeur par défaut. Pour plus d’informations sur la modification des combinaisons par défaut, consultez [Identification et personnalisation des raccourcis clavier dans Visual Studio](https://msdn.microsoft.com/en-us/library/5zwses53.aspx).  
-
+  
+ Vous pouvez modifier les combinaisons de touches de raccourci si vous n'aimez pas la valeur par défaut. Pour plus d’informations sur la modification des combinaisons par défaut, consultez [Identification et personnalisation des raccourcis clavier dans Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+  
 ## <a name="unity-debugging"></a>Débogage Unity  
  Visual Studio Tools pour Unity vous permet de déboguer les scripts de l'éditeur et de jeu de votre projet Unity à l'aide du puissant débogueur de Visual Studio.  
 

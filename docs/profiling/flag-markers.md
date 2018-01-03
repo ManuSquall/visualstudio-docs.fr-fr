@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 646faaa3c80a01565540bd05850b76286121203a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 79105e43cba14c12cf0f82edd05b57286c012ee5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flag-markers"></a>Repérer les marqueurs
 Un marqueur indicateur représente un événement qui s’est produit à un instant donné dans une application. Un indicateur peut représenter de nombreux types d’événements d’application. Par exemple, un indicateur peut apparaître lorsqu’un élément de travail a été planifié ou lorsqu’une exception a été levée. Les runtimes, tels que la bibliothèque parallèle de tâches, peuvent également générer des indicateurs.  
@@ -50,4 +51,4 @@ Indicateurs d’agrégation par niveau d’importance
   
 ## <a name="see-also"></a>Voir aussi  
  [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md)   
- [SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)
+ [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)

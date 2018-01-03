@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 42e686558088e549e43a91effee0d4938401ea9c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: e0aa2503e7e729a632c677a317493b85a6822741
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-the-help-viewer"></a>Personnaliser Help Viewer
 Vous pouvez personnaliser la disposition des fenêtres Help Viewer, ainsi que d’autres options telles que la taille de la police, le nombre maximal de résultats et l’affichage ou non du contenu en anglais.

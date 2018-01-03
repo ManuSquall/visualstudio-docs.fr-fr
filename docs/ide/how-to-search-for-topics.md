@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec4ec1c06d6c64a344e9e39d01c850b901534af8
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: e93a3ca0c6cf7446b4b943c2e6a19018f1a16c7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-topics"></a>Guide pratique pour rechercher des rubriques
 Vous pouvez utiliser la fonctionnalité de recherche en texte intégral pour trouver toutes les rubriques qui contiennent un mot particulier. Si vous le souhaitez, affinez et personnalisez également votre recherche à l’aide d’expressions génériques, d’opérateurs logiques et d’opérateurs de recherche avancée.  

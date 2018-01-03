@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 744e3031c94a3b152728000e7c5425f85fb9e9ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c938f5effc963fa881506f55d0e4b271ae3a914
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
 Le visualiseur concurrentiel permet aux développeurs de visualiser le comportement d’une application multithread. Cet outil comprend une galerie de modèles courants pour les applications multithread au comportement médiocre. La galerie comprend des modèles visuels typiques et reconnaissables, exposés via l’outil, ainsi qu’une explication du comportement représenté par chaque modèle, le résultat probable de ce comportement et l’approche la plus courante pour le résoudre.  

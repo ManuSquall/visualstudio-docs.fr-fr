@@ -17,17 +17,18 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c3825c151190641b1cc9d9815f4916ccded423a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e7451a5b18b0879a64d92525d5b72a6f4c1ec8cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003 : Nombreux échantillons de noyau
 |||  
 |-|-|  
 |ID de règle|DA0003|  
-|Catégorie|Utilisation des outils de profilage|  
+|Category|Utilisation des outils de profilage|  
 |Méthodes de profilage|Échantillonnage|  
 |Message|Vous avez une proportion élevée d’échantillons en mode noyau. Ceci peut indiquer un volume élevé d’activité d’E/S ou un taux élevé de changements de contexte. Envisagez de reprofiler votre application avec le mode Instrumentation.|  
 |Type de règle|Information|  

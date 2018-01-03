@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea578a020b4e60c3a2ff11af5d78570d636d822f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6b4c7cedd267ba02772db16e026803061933cf5d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-shader"></a>Procédure : exporter un nuanceur
 Ce document indique comment utiliser le concepteur de nuanceur pour exporter un nuanceur DGSL (Directed Graph Shader Language) afin de pouvoir l’utiliser dans votre application.  
@@ -53,4 +54,4 @@ Ce document indique comment utiliser le concepteur de nuanceur pour exporter un 
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment : créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md)   
- [Concepteur de nuanceur](../designers/shader-designer.md)
+ [Concepteur Shader](../designers/shader-designer.md)

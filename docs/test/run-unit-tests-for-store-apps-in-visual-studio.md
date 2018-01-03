@@ -11,11 +11,12 @@ ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: cdb13478a7e403be916d7773dab6315429508e9c
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: ad5a81a8b80ffb5a25a04d3aa83811e90c2785e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Exécuter des tests unitaires pour les applications UWP dans Visual Studio
 Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Explorateur de tests dans Microsoft Visual Studio.  
@@ -64,7 +65,7 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
  ![Exécuter des tests à partir de la barre d’outils de l’explorateur de tests](../test/media/ute_toolbar.png "UTE_ToolBar")  
   
 ###  <a name="BKMK_Running_tests"></a> Exécution de tests  
- Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :  
+ Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :  
   
 -   Pour exécuter tous les tests dans une solution, choisissez **Exécuter tout**.  
   
@@ -121,4 +122,4 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
   
 2.  Dans l’Explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.  
   
- Pour plus d’informations sur le débogueur, consultez [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md).
+ Pour plus d’informations sur le débogueur, consultez [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md).

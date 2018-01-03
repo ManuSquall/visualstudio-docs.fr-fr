@@ -1,10 +1,10 @@
 ---
-redirect_url: ../ide/visual-studio-ide
-ms.openlocfilehash: a615a3a6da289f265e350d529349f1fb6ba6865f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/ide/visual-studio-ide
+ms.openlocfilehash: 5f1fa39d6e6cde1664a8aaa34aed7cba726b1d56
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="get-started-with-visual-studio"></a>Bien démarrer avec Visual Studio
 Visual Studio est un outil puissant pour développer vos applications. Si ce n’est déjà fait, téléchargez et installez [Visual Studio](https://www.visualstudio.com/vs/). Regardez la vidéo sur la [mise en route de Visual Studio et la configuration de votre environnement de développement intégré](https://www.youtube.com/watch?v=xLCedknQkN0&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=1) pour plus d’informations sur le téléchargement et la configuration de Visual Studio.
@@ -66,7 +66,7 @@ Pour en savoir plus sur l’utilisation de la fenêtre de sortie pour le déboga
 - **Vidéos** - Pour plus d’informations sur les autres fonctionnalités et aspects de Visual Studio, regardez les vidéos sur le [canal de Microsoft Visual Studio](https://www.youtube.com/user/VisualStudio/videos) sur YouTube ou les vidéos Visual Studio sur [Channel 9](https://channel9.msdn.com/Tags/visual+studio) ou sur la [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!jobf=Developer).
 
 ## <a name="access-cloud-based-resources"></a>Accéder aux ressources cloud
-Si vous souhaitez utiliser des ressources cloud dans votre application ou votre jeu, vous pouvez inclure des [services Azure](https://azure.microsoft.com/en-us/services/). Vous pouvez obtenir le kit de développement logiciel SDK Azure pour .NET en installant la charge de travail de **développement Azure** à l’aide du nouveau programme d’installation de Visual Studio. Les packages installés sont au même niveau de fonctionnalité que la version 2.9.5 du kit SDK. Pour cette version de Visual Studio et toutes les versions futures, le kit SDK Azure pour .NET est seulement disponible à partir du programme d’installation de Visual Studio.
+Si vous souhaitez utiliser des ressources cloud dans votre application ou votre jeu, vous pouvez inclure des [services Azure](https://azure.microsoft.com/en-us/services/). Vous pouvez obtenir le kit de développement logiciel SDK Azure pour .NET en installant la charge de travail de **développement Azure** à l’aide du nouveau programme d’installation de Visual Studio. Les packages installés sont au même niveau de fonctionnalité que la version 2.9.5 du kit SDK. Pour cette version de Visual Studio et toutes les versions futures, le Kit de développement logiciel (SDK) Azure pour .NET est seulement disponible à partir du programme d’installation de Visual Studio.
 
 Une fois la charge de travail de développement Azure installée, une nouvelle fenêtre d’outils appelée **Cloud Explorer** devient disponible dans Visual Studio. Cloud Explorer vous permet de parcourir et de gérer vos ressources Azure à partir de Visual Studio. Si une opération particulière nécessite le portail Azure, Cloud Explorer fournit des liens vers l’emplacement du portail Azure auquel vous devez accéder.
 

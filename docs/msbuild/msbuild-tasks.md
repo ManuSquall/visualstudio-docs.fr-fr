@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: fc2afbe7b0226cb5983aa3022ff4b24ac31fe7aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6a03a05dd2d72b6733b0936849f218b3358f15cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-tasks"></a>Tâches MSBuild
 Une plateforme de génération doit pouvoir exécuter plusieurs actions pendant le processus de génération. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utilise des *tâches* pour effectuer ces actions. Une tâche est une unité de code exécutable utilisée par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour exécuter des opérations de génération atomiques.  
@@ -31,7 +32,7 @@ Une plateforme de génération doit pouvoir exécuter plusieurs actions pendant 
   
  La classe de tâche définit également les paramètres d’entrée et de sortie qui sont disponibles pour la tâche dans le fichier projet. Toutes les propriétés définissables publiques non statiques et non abstraites exposées par la classe de tâche sont accessibles dans le fichier projet en plaçant un attribut correspondant du même nom dans l’élément [Task](../msbuild/task-element-msbuild.md).  
   
- Vous pouvez écrire votre propre tâche en créant une classe managée qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. Pour plus d’informations, consultez [Écriture de tâches](../msbuild/task-writing.md).  
+ Vous pouvez écrire votre propre tâche en créant une classe managée qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. Pour plus d’informations, consultez l’article [Task Writing (Écriture de tâches)](../msbuild/task-writing.md).  
   
 ## <a name="executing-a-task-from-a-project-file"></a>Exécution d’une tâche à partir d’un fichier projet  
  Avant d’exécuter une tâche dans votre fichier projet, vous devez d’abord mapper le type inclus dans l’assembly qui implémente la tâche au nom de la tâche avec l’élément [UsingTask](../msbuild/usingtask-element-msbuild.md). Cette opération permet à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de savoir où rechercher la logique d’exécution de votre tâche lorsqu’il la trouve dans votre fichier projet.  
@@ -62,7 +63,7 @@ Une plateforme de génération doit pouvoir exécuter plusieurs actions pendant 
 ```  
   
 ## <a name="included-tasks"></a>Tâches incluses  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est fourni avec de nombreuses tâches, par exemple [Copy](../msbuild/copy-task.md), qui copie des fichiers, [MakeDir](../msbuild/makedir-task.md), qui crée des répertoires et [Csc](../msbuild/csc-task.md), qui compile des fichiers de code source [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Pour obtenir la liste complète des tâches disponibles et les informations sur leur utilisation, consultez [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est fourni avec de nombreuses tâches, par exemple [Copy](../msbuild/copy-task.md), qui copie des fichiers, [MakeDir](../msbuild/makedir-task.md), qui crée des répertoires et [Csc](../msbuild/csc-task.md), qui compile des fichiers de code source [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Pour obtenir la liste complète des tâches disponibles et les informations sur leur utilisation, consultez l’article [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="overridden-tasks"></a>Tâches substituées  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] recherche des tâches à plusieurs emplacements. Les fichiers portant l’extension .OverrideTasks, stockés dans les répertoires .NET Framework correspondent au premier emplacement. Les tâches contenues dans ces fichiers remplacent toutes les autres tâches du même nom, notamment les tâches du fichier projet. Les fichiers portant l’extension .Tasks, stockés dans les répertoires .NET Framework correspondent au second emplacement. Si la tâche est introuvable à l’un de ces emplacements, c’est celle contenue dans le fichier projet qui est utilisée.  
@@ -70,5 +71,5 @@ Une plateforme de génération doit pouvoir exécuter plusieurs actions pendant 
 ## <a name="see-also"></a>Voir aussi  
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
  [MSBuild](../msbuild/msbuild.md)   
- [Écriture de tâches](../msbuild/task-writing.md)   
- [Tâches inline](../msbuild/msbuild-inline-tasks.md)
+ [Task Writing (Écriture de tâches)](../msbuild/task-writing.md)   
+ [Inline Tasks (Tâches inline MSBuild)](../msbuild/msbuild-inline-tasks.md)

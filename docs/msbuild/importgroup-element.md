@@ -20,11 +20,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c86eb35c4ec2022d0839273c731dad240cbaeb98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df9aebf8e604ad16b99ac458bdd9d143bd461ff7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="importgroup-element"></a>Élément ImportGroup
 Contient une collection d’éléments `Import` regroupés sous une condition facultative. Pour plus d’informations, consultez [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md).  
@@ -60,9 +61,9 @@ Contient une collection d’éléments `Import` regroupés sous une condition fa
 
 |Élément|Description|  
 |-------------|-----------------|  
-|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
 
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant illustre l’élément `ImportGroup`.  
@@ -78,5 +79,5 @@ Contient une collection d’éléments `Import` regroupés sous une condition fa
 ```  
 
 ## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur le schéma de fichier projet MSBuild](../msbuild/msbuild-project-file-schema-reference.md)   
- [Éléments MSBuild](../msbuild/msbuild-items.md)
+ [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Éléments](../msbuild/msbuild-items.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: f0090c5c7cceabdfc8fde313b7d3ad23337ad409
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 5f8f5b3baa26bf9c17b016c2a480443af3990256
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Démarrage rapide : Créer un projet Python à partir de code existant
 
@@ -28,7 +29,6 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
 8. Si vous le souhaitez, exécutez le programme en appuyant sur Ctrl+F5 ou en sélectionnant **Déboguer > Démarrer sans débogage**. 
-
 
 ## <a name="next-steps"></a>Étapes suivantes
 

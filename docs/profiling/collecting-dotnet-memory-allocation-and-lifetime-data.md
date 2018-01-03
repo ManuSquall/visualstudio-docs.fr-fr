@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e31c9c065f7e285e76d85bbcd901d3a9c23cba6a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: 5607f5a2828b7589cbe803732262a52d9e760421
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET
 Les outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prennent en charge la collecte des données d’allocation de mémoire .NET et de durée de vie des objets, ce qui permet de détecter les problèmes de performances liés à la mémoire de votre application.  
@@ -28,7 +29,7 @@ Les outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)
   
 -   Les données concernant la durée de vie des objets incluent le nombre d’objets mémoire .NET Framework qui ont été récupérés dans les trois générations de garbage collection, ainsi que la taille de ces objets.  
   
- **Requirements**  
+ **Spécifications**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   

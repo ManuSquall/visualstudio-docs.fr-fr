@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da671dcac0e60c0d20754d73f9b23a9fe2de54d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6a57cb824ca6c2ec4b2f52a070ae407690f83d69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
 L’option **GC** active la collecte des données d’allocation mémoire et de durée de vie des objets de .NET Framework. L’option **GC** peut être utilisée seulement avec la méthode de profilage par échantillonnage et seulement avec l’option **Launch**.  
@@ -41,7 +42,7 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 ## <a name="required-options"></a>Options obligatoires  
  L’option **GC** peut être utilisée seulement avec l’option **Launch**.  
   
- **Launch:** `AppName`  
+ **Launch :** `AppName`  
  Démarre l’application spécifiée et commence le profilage avec la méthode d’échantillonnage.  
   
 ## <a name="example"></a>Exemple  

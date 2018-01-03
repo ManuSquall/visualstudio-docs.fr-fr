@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6bb51d32ea249ba573733babcb7c9ed0cf0dde
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-debugging-node-properties"></a>Page Options, Débogage, propriétés de nœud
 Les tableaux suivants décrivent les pages (ou collections de propriétés) associées à la catégorie **Débogage**, `DTE.Properties("Debugging", <Property Page>)`, de la boîte de dialogue **Options**.  
@@ -24,7 +25,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 ## <a name="general"></a>Général  
  `DTE.Properties("Debugging", "General")`  
   
-|Nom de l'élément de propriété|Valeur|Description|  
+|Nom de l'élément de propriété|Value|Description|  
 |------------------------|-----------|-----------------|  
 |PromptOnBreakpointDelete|Get/Set (booléen)|Détermine si le débogueur demande l’autorisation avant de supprimer tous les points d’arrêt dans un projet.|  
 |BreakAllProcesses|Get/Set (booléen)|Détermine si le débogueur interrompt tous les processus quand un processus s’arrête.|  
@@ -54,7 +55,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 ## <a name="edit-and-continue"></a>Modifier & Continuer  
  `DTE.Properties("Debugging", "EditAndContinue")`  
   
-|Nom de l'élément de propriété|Valeur|Description|  
+|Nom de l'élément de propriété|Value|Description|  
 |------------------------|-----------|-----------------|  
 |EnableEditAndContinue|Get/Set (booléen)|Détermine si Modifier & Continuer est activé. Cette option s’applique à tous les langages qui prennent en charge Modifier & Continuer.|  
 |InvokedByCommands|Get/Set (booléen)|Détermine si Modifier & Continuer applique automatiquement les modifications du code quand l’utilisateur sélectionne une commande de débogage comme **Exécuter pas à pas** ou **Continuer**. Cette option s’applique uniquement au code natif.|  
@@ -66,7 +67,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 ## <a name="just-in-time"></a>Juste-à-temps  
  `DTE.Properties("Debugging", "JustInTime")`  
   
-|Nom de l'élément de propriété|Valeur|Description|  
+|Nom de l'élément de propriété|Value|Description|  
 |------------------------|-----------|-----------------|  
 |JitManaged|Get/Set (booléen)|Détermine si le débogage juste-à-temps est activé pour le code managé.|  
 |JitNative|Get/Set (booléen)|Détermine si le débogage juste-à-temps est activé pour le code natif.|  
@@ -75,7 +76,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 ## <a name="native"></a>Natif  
  `DTE.Properties("Debugging", "Native")`  
   
-|Nom de l'élément de propriété|Valeur|Description|  
+|Nom de l'élément de propriété|Value|Description|  
 |------------------------|-----------|-----------------|  
 |LoadDllExports|Get/Set (booléen)|Détermine si le débogueur charge les tables d’exportation de DLL.|  
 |EnableRPC|Get/Set (booléen)|Détermine si le débogueur peut accéder aux appels de procédure distante COM.|  

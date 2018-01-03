@@ -17,17 +17,18 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f78e1e75eb328331adfdcdddfc659a4167ae503
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b4f472be09694e4e3bcfa0d3a60a2c1703534423
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008 : Peu d'échantillons collectés
 |||  
 |-|-|  
 |ID de règle|DA0008|  
-|Catégorie|Utilisation des outils de profilage|  
+|Category|Utilisation des outils de profilage|  
 |Méthode de profilage|Échantillonnage|  
 |Message|Un petit nombre d’échantillons a été collecté. Augmentez la durée d’exécution ou utilisez un taux d’échantillonnage plus rapide pour des résultats plus significatifs.|  
 |Type de règle|Information|  

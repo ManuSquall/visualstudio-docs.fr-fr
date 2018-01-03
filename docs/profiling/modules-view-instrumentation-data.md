@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdf78e13b7205ac5bc04a67796c1e226f194b0c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 897a64f10ce7b4970f4ec0b9b631315104bcaae8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---instrumentation-data"></a>Modules, vue - Données d’instrumentation
 La vue Modules affiche les données de performances regroupées selon les modules contenus dans les données de profilage. Les fonctions du module sont répertoriées sous le nœud du module.  
@@ -27,7 +28,7 @@ La vue Modules affiche les données de performances regroupées selon les module
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Nom**|Nom de la fonction ou du module.|  
+|**Name**|Nom de la fonction ou du module.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Nombre d’appels**|Nombre total d’appels effectués à cette fonction ou à ce module.|  
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
@@ -83,6 +84,6 @@ La vue Modules affiche les données de performances regroupées selon les module
 |**Temps exclusif d’application min.**|-   Pour une fonction, temps exclusif d’application minimal d’un appel à ce module ou à cette fonction.<br />-   Pour un module, temps exclusif d’application minimal de tous les appels aux fonctions du module.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Modules, vue](../profiling/modules-view-sampling-data.md)   
+ [Vue Modules - Données d’instrumentation](../profiling/modules-view-sampling-data.md)   
  [Modules, vue - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Modules, vue - Échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)

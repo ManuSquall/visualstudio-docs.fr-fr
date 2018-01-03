@@ -11,11 +11,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 64115171c64faf0f62b6530c37fa53c6631ac1d6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2bbac737c6f5bbb3dbe99b0ceae2eb648bcf4295
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personnalisation de l'analyse de couverture du code
 Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous les assemblys de la solution (.exe/.dll) chargés pendant les tests unitaires. Nous vous recommandons de conserver ce paramètre par défaut, car il est généralement efficace. Pour plus d’informations, consultez [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
@@ -72,7 +73,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 >  La résolution de symboles peut prendre du temps, surtout lorsque vous utilisez un emplacement de fichier distant avec de nombreux assemblys. Par conséquent, envisagez de copier les fichiers distants .pdb au même emplacement local que les fichiers binaires (.dll et .exe).  
   
 ### <a name="excluding-and-including"></a>Exclusion et inclusion  
- Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Par exemple :  
+ Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Exemple :  
   
 ```minterastlib  
 <ModulePaths>  
@@ -115,7 +116,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
   
  Les correspondances ne respectent pas la casse.  
   
- Par exemple :  
+ Exemple :  
   
 ```xml  
 <ModulePaths>  

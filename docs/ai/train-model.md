@@ -10,11 +10,12 @@ ms.topic: how-to article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.openlocfilehash: d8289a482bc83741a6b6bf31499925f5d24d0192
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: azure
+ms.openlocfilehash: af2307638209a54c7ce20df6412a1f95ea51d84d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Former des modèles IA dans Azure Batch AI
 

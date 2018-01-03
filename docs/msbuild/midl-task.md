@@ -30,11 +30,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 99c0e5dfa2c2ffdb9aaf79356c83e925290f0db2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3dc6bcbf4814a05d05aa69a42e8d19f581e78863
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="midl-task"></a>Tâche MIDL
 Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), midl.exe. Pour plus d’informations, consultez « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
@@ -52,7 +53,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **AdditionalOptions**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Liste des options de ligne de commande. Par exemple, **«** */option1 /option2 /option#* ». Utilisez ce paramètre pour spécifier des options de ligne de commande qui ne sont pas représentées par un autre paramètre de tâche MIDL.  
   
@@ -68,7 +69,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **ClientStubFile**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le nom du fichier stub client d’une interface RPC.  
   
@@ -76,7 +77,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **CPreprocessOptions**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie les options à transmettre au préprocesseur C/C++. Spécifiez une liste d’options de préprocesseur séparées par des espaces.  
   
@@ -84,13 +85,13 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **DefaultCharType**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le type de caractère par défaut que le compilateur C utilisera pour compiler le code généré.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Valeur|Option de ligne de commande|  
+    |Value|Option de ligne de commande|  
     |-----------|--------------------------|  
     |**Signed**|**/char signed**|  
     |**Unsigned**|**/char unsigned**|  
@@ -100,7 +101,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **DllDataFileName**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le nom du fichier *dlldata* généré pour une DLL de proxy.  
   
@@ -108,13 +109,13 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **EnableErrorChecks**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le type de vérification des erreurs que les stubs générés exécutent au moment de l’exécution.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Valeur|Option de ligne de commande|  
+    |Value|Option de ligne de commande|  
     |-----------|--------------------------|  
     |**Aucun**|**/error none**|  
     |**EnableCustom**|**/error**|  
@@ -164,13 +165,13 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **GenerateClientFiles**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie si le compilateur génère les fichiers sources C côté client pour une interface RPC.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Valeur|Option de ligne de commande|  
+    |Value|Option de ligne de commande|  
     |-----------|--------------------------|  
     |**Aucun**|**/client none**|  
     |**Stub**|**/client stub**|  
@@ -179,13 +180,13 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **GenerateServerFiles**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie si le compilateur génère les fichiers sources C côté serveur pour une interface RPC.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Valeur|Option de ligne de commande|  
+    |Value|Option de ligne de commande|  
     |-----------|--------------------------|  
     |**Aucun**|**/server none**|  
     |**Stub**|**/server stub**|  
@@ -210,7 +211,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **HeaderFileName**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le nom du fichier d’en-tête généré.  
   
@@ -226,7 +227,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **InterfaceIdentifierFileName**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le nom du *fichier identificateur d’interface* d’une interface COM. Cette opération remplace le nom par défaut obtenu en ajoutant « _i.c » au nom de fichier IDL.  
   
@@ -250,7 +251,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **OutputDirectory**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le répertoire par défaut dans lequel la tâche MIDL écrit les fichiers de sortie.  
   
@@ -266,7 +267,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **ProxyFileName**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le nom du fichier proxy d’une interface COM.  
   
@@ -274,7 +275,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **RedirectOutputAndErrors**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Redirige le résultat, par exemple les messages d’erreur et les avertissements, de la sortie standard vers le fichier spécifié.  
   
@@ -282,7 +283,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **ServerStubFile**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le nom du fichier stub serveur d’une interface RPC.  
   
@@ -296,13 +297,13 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **StructMemberAlignment**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie l’alignement (*niveau de compression*) des structures sur le système cible.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Valeur|Option de ligne de commande|  
+    |Value|Option de ligne de commande|  
     |-----------|--------------------------|  
     |**NotSet**|*\<aucune>*|  
     |**1**|**/Zp1**|  
@@ -330,13 +331,13 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **TargetEnvironment**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie l’environnement dans lequel l’application s’exécute.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Valeur|Option de ligne de commande|  
+    |Value|Option de ligne de commande|  
     |-----------|--------------------------|  
     |**NotSet**|*\<aucune>*|  
     |**Win32**|**/env win32**|  
@@ -353,13 +354,13 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **TypeLibFormat**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le format du fichier bibliothèque de types.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Valeur|Option de ligne de commande|  
+    |Value|Option de ligne de commande|  
     |-----------|--------------------------|  
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
@@ -368,7 +369,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **TypeLibraryName**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le nom du fichier bibliothèque de types.  
   
@@ -402,13 +403,13 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **WarningLevel**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie la gravité (*niveau d’avertissement*) des avertissements à émettre. Aucun avertissement n’est émis pour la valeur 0. Un avertissement est émis si son niveau est numériquement inférieur ou égal à la valeur spécifiée.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
-    |Valeur|Option de ligne de commande|  
+    |Value|Option de ligne de commande|  
     |-----------|--------------------------|  
     |**0**|**/W0**|  
     |**1**|**/W1**|  

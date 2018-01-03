@@ -22,11 +22,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6acfbee87e64e71ae85290ba74f1464af7181228
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff9927357b23ced05bbee6db354cbe8e82e62b4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : collecte des données de performances pour un site web
 Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données de performances pour une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] . Vous pouvez profiler une application web qui est ouverte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou vous pouvez profiler un site web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] qui se trouve sur votre ordinateur local et qui n’est pas ouvert dans l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
@@ -66,7 +67,7 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
   
 8.  Une session de performance est créée pour l’application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] et le site web est démarré dans le navigateur. Utilisez les fonctionnalités que vous voulez profiler, puis fermez le navigateur.  
   
-     Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
+     Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Pour profiler un site web sans ouvrir un projet dans Visual Studio  
   

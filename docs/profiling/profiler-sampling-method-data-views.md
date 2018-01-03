@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a27e4854371ebdae828335e84f2fab8d0165831
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e189434481c9fbe7e5f97c6e0cb6d0598b4b7379
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiler-sampling-method-data-views"></a>Vues de données de la méthode d'échantillonnage du profileur
 Cette section contient des informations de référence pour les vues et rapports des fichiers de données de profilage générés avec la méthode d’instrumentation.  
@@ -43,14 +44,14 @@ Cette section contient des informations de référence pour les vues et rapports
  [Vue Fonctions](../profiling/functions-view-sampling-data.md)  
  Organise le profilage par fonction et répertorie les fonctions qui s’exécutaient pendant la collecte des échantillons.  
   
- [Vue Lignes](../profiling/lines-view-sampling-data.md)  
+ [Lignes, vue](../profiling/lines-view-sampling-data.md)  
  Répertorie les lignes de code source qui s’exécutaient pendant la collecte des échantillons.  
   
  [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)  
  Répertorie les lignes de code source qui s’exécutaient pendant la collecte des échantillons.  
   
 ## <a name="reference"></a>Référence  
- [Vue Processus](../profiling/process-view.md)  
+ [Processus, vue](../profiling/process-view.md)  
  Répertorie les heures de début et de fin des processus et des threads.  
   
  [Vue Marques](../profiling/marks-view.md)  

@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2232c2564963a236c5698e081f2bd79c76ae3bf6
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 45aaccf19518572211bf9468a133989e651504bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Raccourcis clavier par défaut pour les commandes fréquemment utilisées dans Visual Studio
 
@@ -126,7 +127,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |Project.AddExistingItem|Maj+Alt+A [Global]|  
 |Project.AddNewItem|Ctrl+Maj+A [Global]|  
 
-## <a name="refactor"></a>Refactorisation
+## <a name="refactor"></a>Réorganiser
 
 |Commande|Raccourci clavier [Contexte]|  
 |-------------|-----------------------------------|  
@@ -138,7 +139,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |-------------|-----------------------------------|  
 |Tools.AttachtoProcess|Ctrl+Alt+P [Global]|  
 
-## <a name="view"></a>Afficher
+## <a name="view"></a>Vue
 
 |Commandes|Raccourcis clavier [Contextes]|  
 |--------------|-------------------------------------|  

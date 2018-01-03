@@ -16,18 +16,19 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8621dfbd3dea6f1c2dec7152aef586748f8e948a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b6a9d6214fc0960a5aca324f519d555f2631109f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021 : Taux élevé de garbage collection Gen 1
 |||  
 |-|-|  
 |ID de règle|DA0021|  
-|Catégorie|Utilisation du .NET Framework|  
-|Méthodes de profilage|Tout|  
+|Category|Utilisation du .NET Framework|  
+|Méthodes de profilage|Tous|  
 |Message|Taux relativement élevé de garbage collection Gen 1. Si, par conception, la plupart des structures de données de votre programme sont allouées et persistent pour longtemps, cela ne pose pas de problème. Cependant, si ce comportement est involontaire, votre application peut épingler des objets. Si vous n’êtes pas sûr, vous pouvez regrouper les données d’allocation de mémoire .NET et les informations de durée de vie des objets afin de comprendre le modèle d’allocation de mémoire utilisé par votre application.|  
 |Type de règle|Information|  
   

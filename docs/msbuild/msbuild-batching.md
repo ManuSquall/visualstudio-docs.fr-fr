@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e2ad60b0b0f98cee23de911a8ca7cf2e5d43b364
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 68977ca672aae84cd65ca169c4ca13feda6d7887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-batching"></a>Traitement par lots de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a la capacité de diviser les listes d’éléments en différentes catégories, ou lots, en fonction des métadonnées des éléments, et d’exécuter une cible ou une tâche une fois avec chaque lot.  
@@ -88,7 +89,7 @@ ms.lasthandoff: 10/31/2017
  Pour un autre exemple de traitement de cible par lots, consultez [Métadonnées d’éléments dans le traitement par lots de cibles](../msbuild/item-metadata-in-target-batching.md).  
   
 ## <a name="property-functions-using-metadata"></a>Fonctions de propriété utilisant des métadonnées  
- Le traitement par lots peut être contrôlé par des fonctions de propriété qui incluent des métadonnées. Par exemple,  
+ Le traitement par lots peut être contrôlé par des fonctions de propriété qui incluent des métadonnées. Par exemple :  
   
  `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`  
   
@@ -105,5 +106,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Voir aussi  
  [ItemMetadata, élément (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)   
+ [Référence MSBuild](../msbuild/msbuild-reference.md)   
  [Concepts avancés](../msbuild/msbuild-advanced-concepts.md)

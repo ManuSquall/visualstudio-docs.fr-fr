@@ -25,13 +25,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e39cdb06c0de1a664b3c0c698aeee2e8d7476119
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 1423e3db18a3849fdcbf93bf0a4299a0f743b242
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="using-intellisense"></a>Utilisation d’IntelliSense
+# <a name="using-intellisense"></a>Using IntelliSense
 
 IntelliSense est le terme général employé pour plusieurs fonctionnalités : Liste des membres, Informations sur les paramètres, Info express et Compléter le mot. Ces fonctionnalités vous aident à en savoir plus sur le code que vous utilisez, à assurer le suivi des paramètres que vous tapez et à ajouter des appels aux propriétés et aux méthodes en quelques séquences de touches.
 
@@ -55,7 +56,7 @@ Vous pouvez également passer en mode suggestion, où seul le texte que vous tap
 
 ## <a name="parameter-info"></a>Informations sur les paramètres
 
-Informations sur les paramètres fournit des informations sur le nombre, les noms et les types des paramètres requis par une méthode, un paramètre de type générique d'attribut (en C#) ou un modèle (en C++).
+Informations sur les paramètres fournit des informations sur le nombre, les noms et les types des paramètres requis par une méthode, un paramètre de type générique d’attribut (en C#) ou un modèle (en C++).
 
 Le paramètre suivant à taper pour la fonction vous est indiqué en gras. Pour les fonctions surchargées, vous pouvez utiliser les touches de direction Haut et Bas pour consulter les différentes informations de paramètres concernant les surcharges de fonction.
 

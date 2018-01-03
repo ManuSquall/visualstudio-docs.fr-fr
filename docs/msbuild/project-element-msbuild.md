@@ -22,14 +22,15 @@ caps.latest.revision: "31"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 013b8d0f23ad91eb6202f1ca72c36e486b0f53e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7735cce0a03f31c98cc45b481b8697d306f63f4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-element-msbuild"></a>Project, élément (MSBuild)
-Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .  
 
 ## <a name="syntax"></a>Syntaxe  
 
@@ -81,5 +82,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Voir aussi  
  [Comment : spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md)   
  [Command-Line Reference (Informations de référence sur la ligne de commande MSBuild)](../msbuild/msbuild-command-line-reference.md)   
- [Informations de référence sur le schéma de fichier projet MSBuild](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
  [MSBuild](../msbuild/msbuild.md)

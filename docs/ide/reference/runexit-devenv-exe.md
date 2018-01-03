@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fdb1cf075c97290883879537089dcee456351c8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 039c797fd5ea56a5dd1cff834764b9d905854b56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 Compile et exécute la solution ou le projet spécifié, puis ferme l’environnement de développement intégré (IDE).  
@@ -38,7 +39,7 @@ devenv /runexit {SolutionName|ProjectName}
  `ProjectName`  
  Obligatoire. Chemin complet et nom d’un fichier projet.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Compile et exécute la solution ou le projet spécifié en fonction des paramètres spécifiés pour la configuration de la solution active. Ce commutateur réduit la fenêtre de l’IDE pendant l’exécution de la solution ou du projet et ferme cette fenêtre à la fin de leur exécution.  
   
 -   Placez entre guillemets doubles les chaînes contenant des espaces.  
