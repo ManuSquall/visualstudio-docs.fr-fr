@@ -15,11 +15,12 @@ caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dff0b96bc40f857224df5222b43efac914de4f7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4996f6cd60889412958765a02811b1b6728f2efa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-session-overview"></a>Vue d’ensemble des sessions de performances
 Cette vue d’ensemble explique les principes de base du profilage. Les développeurs qui débutent dans le domaine des tâches liées aux performances vont découvrir comment les outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peuvent leur permettre de devenir rapidement productifs et d’optimiser les performances de leur code. Quant aux développeurs expérimentés dans le profilage, ils peuvent obtenir une vue d’ensemble des fonctionnalités et des processus spécifiques des outils de profilage.  

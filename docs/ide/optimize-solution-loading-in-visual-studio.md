@@ -1,137 +1,121 @@
 ---
-title: Optimize Solution Loading in Visual Studio | Microsoft Docs
-ms.custom: 
-ms.date: 8/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- startup time [Visual Studio]
-- optimizing startup time [Visual Studio]
-- speed up start time [Visual Studio]
-ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138
-caps.latest.revision: 4
-author: mikejo
-ms.author: mikejo
-manager: ghogen
-f1_keywords:
-- vs.performancecenter
+redirect_url: /visualstudio/ide/optimize-visual-studio-startup-time/
+ms.openlocfilehash: 6ba351d5b395caaddd12021b09f8792cd19b2905
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
-ms.sourcegitcommit: 4306111cd49a5299bfa5d4e5e22b212bc7799fe2
-ms.openlocfilehash: d860b3bf8f9bd7221bf4ae41b895037b30fd239d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/02/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/15/2017
 ---
+title: "Optimiser le chargement de solutions dans Visual Studio | Microsoft Docs" ms.custom: "" ms.date: 08/31/2017 ms.reviewer: "" ms.suite: "" ms.tgt_pltfrm: "" ms.topic: "article" helpviewer_keywords: 
+  - "vitesse de démarrage [Visual Studio]"
+  - "optimisation de la vitesse de démarrage [Visual Studio]"
+  - "améliorer la vitesse de démarrage [Visual Studio]" ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138 caps.latest.revision: 4 author: "gewarren" ms.author: "gewarren" manager: ghogen f1_keywords: 
+  - "vs.performancecenter" ms.technology: 
+  - "vs-ide-general"
+---
+# <a name="optimize-solution-loading-in-visual-studio"></a>Optimiser le chargement de solutions dans Visual Studio
+De nombreuses solutions contiennent un grand nombre de projets, ce qui affecte le temps nécessaire pour charger ces solutions. Toutefois, dans les environnements d’équipe, les développeurs travaillent généralement sur différents sous-ensembles de ces projets et n’ont pas besoin de charger tous les projets individuels.
 
-# <a name="optimize-solution-loading-in-visual-studio"></a>Optimize Solution Loading in Visual Studio
-Many solutions contain a large number of projects, which affects the time taken to load those solutions. However, in team environments, developers typically work on a different subset of those projects and don’t need to load all of the individual projects.
-
-Visual Studio 2017 supports **lightweight solution load**. When lightweight solution load (LSL) mode is enabled, Visual Studio 2017 loads a small subset of projects instead of loading all the projects in a large solution. Most of the commonly used IDE features work under LSL mode, and it provides the ability for you to build, search, and debug on the entire solution. (The main unsupported feature in LSL mode is edit and continue).
-
-> [!NOTE]
-> This content applies to Visual Studio 2017 Update 3
-
-For large solutions with more than 30 projects, LSL typically loads solutions twice as fast (on average). While most of the IDE features work in LSL mode, some IDE features might require all the projects to be loaded. In these cases, Visual Studio automatically loads the entire solution so that you can use the feature. In the worst-case scenario, you end up loading all the projects in the lightweight mode. 
-
-If you use an IDE feature on a project that is not currently loaded, Visual Studio loads the appropriate project(s) for you. For example, if you are trying to create or open a class diagram for an unopened project, Visual Studio automatically loads the appropriate projects. The detailed feature list is referenced in the sections following.
-
-The following sections show how to enable lightweight solution load and also help you decide whether or not to enable the feature.
-
-## <a name="enable-or-disable-lightweight-solution-load"></a>Enable or disable lightweight solution load
-
-You can right-click the solution name in Solution Explorer, and select **Enable Lightweight Solution Load**. After selecting the option, you need to close and reopen the solution to activate lightweight solution load.
+Visual Studio 2017 prend en charge le **chargement de solution allégé**. Quand le mode Chargement de solution allégé (LSL, Lightweight Solution Load) est activé, Visual Studio 2017 charge un petit sous-ensemble de projets au lieu de charger tous les projets d’une solution de grande taille. La plupart des fonctionnalités de l’IDE couramment utilisées fonctionnent en mode LSL. Vous pouvez ainsi effectuer des générations, des recherches et des débogages sur l’ensemble de la solution. (La principale fonctionnalité non prise en charge en mode LSL est Modifier & Continuer.)  
 
 > [!NOTE]
-> Similar steps apply for disabling LSL. To disable lightweight solution load, select **Disable Lightweight Solution Load**, then close and reopen the solution. 
+> Ce contenu s’applique à Visual Studio 2017 Update 3.
 
-![Solution Explorer](../ide/media/VSIDE_LSL_Solution_Setting.png)
+Pour les solutions de grande taille comportant plus de 30 projets, LSL charge généralement les solutions deux fois en tant plus vite (en moyenne). Alors que la plupart des fonctionnalités de l’IDE fonctionnent en mode LSL, certaines peuvent nécessiter le chargement de tous les projets. Dans ce cas-là, Visual Studio charge automatiquement l’ensemble de la solution pour vous permettre d’utiliser la fonctionnalité. Dans le pire des cas, vous finissez par charger tous les projets en mode allégé. 
 
-## <a name="global_solution_load_settings"></a>Configure global settings for  lightweight solution load
+Si vous utilisez une fonctionnalité de l’IDE sur un projet qui n’est actuellement pas chargé, Visual Studio charge automatiquement le ou les projets appropriés. Par exemple, si vous tentez de créer ou d’ouvrir un diagramme de classes pour un projet non ouvert, Visual Studio charge automatiquement les projets appropriés. La liste détaillée des fonctionnalités est référencée dans les sections suivantes.
 
-You can globally disable or configure LSL for all the solutions by choosing **Tools > Options > Projects and Solutions**.
+Les sections suivantes montrent comment activer le chargement de solution allégé. Elles vous permettent également de déterminer s’il faut, ou non, activer la fonctionnalité.
 
-![Tools Options dialog box](../ide/media/VSIDE_LightweightSolutionLoad.png)
+## <a name="enable-or-disable-lightweight-solution-load"></a>Activer ou désactiver le chargement de solutions allégé
 
-## <a name="how-does-lightweight-solution-load-work-behind-the-scenes"></a>How does lightweight solution load work behind the scenes?
+Vous pouvez cliquer avec le bouton droit sur le nom de la solution dans l’Explorateur de solutions, puis sélectionner **Activer le chargement de solutions allégé**. Après avoir sélectionné l’option, vous devez fermer et rouvrir la solution afin d’activer le chargement de solutions allégé.
 
-When you load your solution, Visual Studio remembers which projects you previously opened and loads only those projects. All other projects are visible in Solution Explorer but not loaded. As soon as you expand a project or right click on a project, Visual Studio auto-loads that project. Auto-loading of projects usually takes less than a second but can take longer for some projects.
-However, Visual Studio enables IDE features like search, debug, build, and source control that operate across the entire solution. For example, you can search across an entire solution even though only a few projects are loaded in the lightweight mode. 
+> [!NOTE]
+> La procédure de désactivation de LSL est similaire. Pour désactiver le chargement de solution allégé, sélectionnez **Désactiver le chargement de solution allégé**, puis fermez et rouvrez la solution. 
 
-As you expand more projects, Visual Studio remembers the list of expanded projects. When a solution is reopened, Visual Studio auto-loads projects that you previously expanded.
+![Explorateur de solutions](../ide/media/VSIDE_LSL_Solution_Setting.png)
 
-## <a name="visual-studio-prompts-developers-likely-to-see-significant-performance-gains"></a>Visual Studio prompts developers likely to see significant performance gains
+## <a name="global_solution_load_settings"></a>Configurer les paramètres globaux du chargement de solution allégé
 
-From Visual Studio telemetry, large solutions with over 30 projects significantly benefit from LSL mode. Consequently, we prompt developers with large solutions to try out LSL mode. The majority of developers who try LSL for the first time end up using it on regular basis. 
+Vous pouvez désactiver ou configurer globalement LSL pour toutes les solutions en choisissant **Outils > Options > Projets et solutions**.
 
-We are constantly reviewing Visual Studio usage telemetry to improve heuristics for offering LSL mode to developers who would benefit the most. 
+![Options des outils, boîte de dialogue](../ide/media/VSIDE_LightweightSolutionLoad.png)
 
-## <a name="visual-studio-makes-recommendations-to-turn-on-lightweight-solution-load-based-on-heuristics"></a>Visual Studio makes recommendations to turn on lightweight solution load based on heuristics
+## <a name="how-does-lightweight-solution-load-work-behind-the-scenes"></a>Comment le chargement de solution allégé fonctionne-t-il en arrière-plan ?
 
-By default, Visual Studio turns on LSL for users who are most likely to benefit. If you have multiple solutions, Visual Studio offers LSL mode for solutions that are most likely to see significant performance gains. If you select the lightweight mode option **Let Visual Studio decide** (default option), Visual Studio may open the solution in lightweight mode based on heuristics. A message bar indicates whether the solution is in lightweight mode. When the message bar shows, you have the option to learn more, or update settings.
+Quand vous chargez votre solution, Visual Studio se souvient des projets précédemment ouverts et charge uniquement ces projets. Tous les autres projets sont visibles dans l’Explorateur de solutions, mais ne sont pas chargés. Dès que vous développez un projet ou que vous cliquez avec le bouton droit sur un projet, Visual Studio le charge automatiquement. Le chargement automatique de projets prend généralement moins d’une seconde, mais il peut nécessiter plus de temps pour certains projets. Toutefois, Visual Studio active des fonctionnalités de l’IDE telles que la recherche, le débogage, la génération et le contrôle de code source qui fonctionnent sur l’ensemble de la solution. Par exemple, vous pouvez effectuer une recherche dans l’ensemble d’une solution même si seuls quelques projets sont chargés en mode allégé. 
 
-![Popup window](../ide/media/VSIDE_LSL_Popup.png)
+Quand vous développez plus de projets, Visual Studio mémorise la liste des projets développés. Quand une solution est rouverte, Visual Studio charge automatiquement les projets que vous avez précédemment développés.
 
-## <a name="ide-features-fully-supported-in-lightweight-mode"></a>IDE Features fully supported in Lightweight mode
+## <a name="visual-studio-prompts-developers-likely-to-see-significant-performance-gains"></a>Visual Studio envoie une invite aux développeurs susceptibles d’accroître les performances de manière significative
 
-|Feature|Supported in Lightweight Mode?|
+D’après la télémétrie de Visual Studio, le mode LSL est très utile pour les solutions de grande taille comprenant plus de 30 projets. Par conséquent, nous incitons les développeurs des solutions de grande taille d’essayer le mode LSL. La majorité des développeurs qui essaient LSL pour la première fois finissent par l’utiliser régulièrement. 
+
+## <a name="visual-studio-makes-recommendations-to-turn-on-lightweight-solution-load-based-on-heuristics"></a>Visual Studio utilise une méthode heuristique pour formuler des recommandations relatives à l’activation du chargement de solution allégé
+
+Par défaut, Visual Studio active LSL pour les utilisateurs les plus susceptibles d’en tirer parti. Si vous avez plusieurs solutions, Visual Studio propose le mode LSL pour celles qui sont le plus susceptibles de voir des améliorations significatives des performances. Si vous sélectionnez l’option de mode allégé **Laisser Visual Studio décider** (option par défaut), Visual Studio peut ouvrir la solution en mode allégé en fonction de l’heuristique. Une barre des messages indique si la solution est en mode allégé. Quand elle s’affiche, vous pouvez choisir entre en savoir plus ou mettre à jour les paramètres.
+
+![Fenêtre contextuelle](../ide/media/VSIDE_LSL_Popup.png)
+
+## <a name="ide-features-fully-supported-in-lightweight-mode"></a>Fonctionnalités de l’IDE entièrement prises en charge en mode allégé
+
+|Fonctionnalité|Prise en charge en mode allégé ?|
 |-|-|-|
-|IntelliSense|Yes|
-|Search|Yes|
-|Debugging|Yes|
-|Build|Yes|
-|Code Navigation (Go To Definition & Find All References)|Yes|
-|Code Lens|Yes|
-|Static Code analysis|Yes|
-|Deploy and Publish|Yes|
-|Adding & removing references|Yes|
-|Multi-targeting|Yes|
-|IntelliTrace|Yes|
-|Live Unit Testing|Yes|
-|IntelliTest|Yes|
-|Microsoft Fakes|Yes|
-|Edit and Continue|Not supported|
-|Unit Testing|Requires loading of test projects  followed by a solution build|
+|IntelliSense|Oui|
+|Rechercher|Oui|
+|Débogage|Oui|
+|Générer|Oui|
+|Navigation dans le code (Atteindre la définition et Rechercher toutes les références)|Oui|
+|CodeLens|Oui|
+|Analyse statique du code|Oui|
+|Déployer et publier|Oui|
+|Ajout et suppression de références|Oui|
+|Multi-ciblage|Oui|
+|IntelliTrace|Oui|
+|Live Unit Testing|Oui|
+|IntelliTest|Oui|
+|Microsoft Fakes|Oui|
+|Modifier & Continuer|Non pris en charge|
+|Test unitaire|Nécessite le chargement de projets de test suivi d’une build de solution|
 
-## <a name="scenarios-in-which-lightweight-solution-loads-the-appropriate-projects-to-complete-the-operation"></a>Scenarios in which Lightweight solution loads the appropriate project(s) to complete the operation
+## <a name="scenarios-in-which-lightweight-solution-loads-the-appropriate-projects-to-complete-the-operation"></a>Scénarios dans lesquels le chargement de solution allégé charge le ou les projets appropriés pour accomplir l’opération
 
-If you are not working on a project in the solution, the project is not loaded in lightweight mode. For some features, additional projects are automatically loaded to support the feature scenario. (We intend to minimize this list of scenarios. ) For these scenarios, Visual Studio either loads the project(s) itself, or prompts you to load the project(s) as needed.
+Si vous ne travaillez pas sur un projet de la solution, le projet n’est pas chargé en mode allégé. Pour certaines fonctionnalités, des projets supplémentaires sont automatiquement chargés pour prendre en charge le scénario des fonctionnalités. (Nous avons l’intention de réduire cette liste de scénarios. ) Pour ces scénarios, Visual Studio charge le ou les projets eux-mêmes ou vous invite à les charger en fonction des besoins.
 
-|Category|Issue|
+|Catégorie|Problème|
 |-|-|-|
-|Unit test|Projects that are not currently loaded do not show up in the list of test projects for both the “Create IntelliTest” and “Create Unit Test” wizards. </br>You need to load the projects for which you want to create tests (you can expand the project node to load the project).|
-|Class Diagrams|If you create or open a Class Diagram of a project, Visual Studio automatically loads the projects that are direct dependencies of that project. </br>If the entire solution is not loaded, we turn off the validation of obsolete artifacts referenced by a dependency validation diagram.|
+|Test unitaire|Les projets qui ne sont pas actuellement chargés n’apparaissent pas dans la liste des projets de test pour les Assistants « Créer IntelliTest » et « Créer un test unitaire ». </br>Vous devez charger les projets pour lesquels vous souhaitez créer des tests. (Pour ce faire, vous pouvez développer le nœud du projet.)|
+|Diagrammes de classes|Si vous créez ou ouvrez un diagramme de classes d’un projet, Visual Studio charge automatiquement les projets qui sont des dépendances directes de ce projet. </br>Si l’ensemble de la solution n’est pas chargé, nous désactivons la validation des artefacts obsolètes référencés par un schéma de validation de dépendances.|
 
-## <a name="scenarios-in-which-lightweight-solution-loads-the-entire-solution"></a>Scenarios in which lightweight solution loads the entire solution 
+## <a name="scenarios-in-which-lightweight-solution-loads-the-entire-solution"></a>Scénarios dans lesquels le chargement de solution allégé charge l’ensemble de la solution 
 
-For some features, Visual Studio automatically loads the entire solution to support the scenario. This action ensures that you always get full functionality. For example, some TFS operations may require the entire solution to be loaded. To provide full functionality, Visual Studio loads the entire solution.
+Pour certaines fonctionnalités, Visual Studio charge automatiquement l’ensemble de la solution pour prendre en charge le scénario. Cette action vous garantit de toujours disposer de toutes les fonctionnalités. Par exemple, certaines opérations TFS peuvent nécessiter que la solution soit chargée dans son intégralité. Pour offrir des fonctionnalités complètes, Visual Studio charge l’ensemble de la solution.
 
-|Category|Scenario|
+|Catégorie|Scénario|
 |-|-|-|
-|TFS SCC command on solution node|If an SCC command is triggered on the solution node (within Solution Explorer), Visual Studio automatically loads the entire solution before completing the command.|
-|Project load|If your solution contains .NET Core projects and Shared projects, Visual Studio always automatically loads these projects during initial solution load itself. These projects do not currently support lightweight mode.|
-|Solution configuration manager|If you use solution configuration manager or batch build, Visual Studio automatically loads the entire solution to provide a full experience.|
-|NuGet package manager|If you open NuGet package manager’s user interface, or the NuGet package manager console, Visual Studio automatically loads the entire solution to provide a full experience.|
+|Commande de contrôle de code source TFS sur le nœud de la solution|Si une commande de contrôle de code source est déclenchée sur le nœud de la solution (dans l’Explorateur de solutions), Visual Studio charge automatiquement l’ensemble de la solution avant d’exécuter la commande.|
+|Chargement de projet|Si votre solution contient les projets .NET Core et des projets partagés, Visual Studio charge automatiquement ces projets au moment-même du chargement de la solution initiale. Ces projets ne prennent actuellement pas en charge le mode allégé.|
+|Gestionnaire de configuration de la solution|Si vous utilisez le gestionnaire de configuration de la solution ou la génération en tâche de fond, Visual Studio charge automatiquement l’ensemble de la solution pour offrir une expérience complète.|
+|Gestionnaire de package NuGet|Si vous ouvrez l’interface utilisateur du Gestionnaire de package NuGet, ou sa console, Visual Studio charge automatiquement l’ensemble de la solution pour offrir une expérience complète.|
 
-## <a name="known-issues"></a>Known issues
+## <a name="known-issues"></a>Problèmes connus
 
-There are some scenarios that may not work in LSL mode, and require the loading of additional projects or the entire solution. We are actively working on addressing these cases. 
+Il existe certains scénarios qui peuvent ne pas fonctionner en mode LSL et nécessiter le chargement de projets supplémentaires ou l’ensemble de la solution. Nous nous efforçons activement de traiter ces cas. 
 
-|Category|Issue|Workaround|
+|Catégorie|Problème|Solution de contournement|
 |-|-|-|-|
-|IntelliSense|IntelliSense may not get updated after a configuration change (for example, changing a release build to debug and vice versa). The impact depends on code differences due to configuration change.|Reload solution after changing the configuration.|
-|Refactoring limitations for C#/VB projects|Code fixes that change project files may fail silently the first time.|Load projects if you need to make code fixes to files of these projects. Lightweight mode does not make fixes to projects that are not loaded.|
-|Unit Test Discovery|Tests discovered on deferred projects do not run when a project is loaded manually.|Rebuild the project to rediscover tests and run selected tests again.|
-|Live unit testing (LUT)|In LSL mode, you may see that LUT is not activated. It is not activated because LUT needs one of the test projects to get loaded.|Load any test project to activate live unit testing for the solution.|
-|Solution Explorer Search|1.    Solution Explorer search in LSL mode does not search within the files and there are no progression results (that is, only files are shown under the search tree, but not classes, methods, etc.).</br>2.    All files belonging to a project are shown as a flat list instead of a tree view. When files belong to a folder of a project, we show the relative path of the file, instead of just the file name on the search view.</br>There are no context menus for the file items in the search view.|Load the entire solution in non-LSL mode to get traditional Solution Explorer search.</br>You can also use Visual Studio IDE search.|
-|Object Browser for C++ Projects|Object Browser shows assembly/WinMD references for only loaded projects.|Load projects for which you want to see information in the Object browser.|
+|IntelliSense|Il est possible qu’IntelliSense ne soit pas mis à jour après un changement de configuration (par exemple, lors du passage d’une build Release à une build Debug, et vice versa). L’impact dépend des différences de code liées au changement de configuration.|Rechargez la solution après avoir changé la configuration.|
+|Refactorisation des limitations pour les projets C#/VB|Les correctifs du code qui changent les fichiers projet peuvent échouer silencieusement la première fois.|Chargez les projets si vous devez corriger du code dans des fichiers de ces projets. Le mode allégé n’applique pas de correctifs à des projets qui ne sont pas chargés.|
+|Découverte de tests unitaires|Les tests détectés sur des projets différés ne s’exécutent pas quand un projet est chargé manuellement.|Régénérez le projet pour redétecter les tests et réexécutez les tests sélectionnés.|
+|Live Unit Testing (LUT)|En mode LSL, vous pouvez voir que LUT n’est pas activé. Il n’est pas activé car LUT a besoin de l’un des projets de test pour être chargé.|Chargez un projet de test pour activer Live Unit Testing pour la solution.|
+|Recherche Explorateur de solutions|1.    La recherche dans l’Explorateur de solutions en mode LSL n’effectue pas de recherche dans les fichiers et il n’y a pas de résultats de progression (autrement dit, seuls les fichiers sont affichés sous l’arbre de recherche, mais pas les classes, les méthodes, etc.).</br>2.    Tous les fichiers appartenant à un projet sont affichés sous la forme d’une liste plate plutôt que d’une arborescence. Quand les fichiers appartiennent à un dossier d’un projet, nous affichons le chemin relatif du fichier, plutôt que simplement le nom du fichier dans la vue de recherche.</br>Aucun menu contextuel n’est disponible pour les éléments de fichier dans la vue de recherche.|Chargez l’ensemble de la solution en mode non-LSL pour obtenir la recherche dans l’Explorateur de solutions traditionnelle.</br>Vous pouvez également utiliser la recherche dans l’IDE Visual Studio.|
+|Explorateur d’objets pour les projets C++|L’Explorateur d’objets affiche les références d’assembly/WinMD uniquement pour les projets chargés.|Chargez les projets pour lesquels vous souhaitez afficher les informations dans l’Explorateur d’objets.|
 
 > [!Note]
-> Thanks to our partners, popular extensions including Resharper also work well with lightweight solution  load.
+> Grâce à nos partenaires, les extensions populaires, notamment Resharper, fonctionnent également bien avec le chargement de solution allégée.
 
-We are excited about innovations to optimize solution load time performance for developers. Since this is a new feature, we are actively looking at customer feedback, and addressing known issues. We look forward to hearing your feedback. You can email Visual Studio solution load optimization team at lslsupport@microsoft.com
+Nous sommes enthousiasmés par les innovations destinées à optimiser les performances de temps de chargement des solutions pour les développeurs. Dans la mesure où il s’agit d’une nouvelle fonctionnalité, nous examinons activement les commentaires des clients et résolvons les problèmes connus. Nous attendons vos commentaires avec impatience. Vous pouvez envoyer un e-mail à l’équipe d’optimisation du chargement de solutions Visual Studio à l’adresse lslsupport@microsoft.com
 
-## <a name="see-also"></a>See Also
-[Visual Studio Performance Tips and Tricks](../ide/visual-studio-performance-tips-and-tricks.md)
-
+## <a name="see-also"></a>Voir aussi
+[Conseils et astuces pour les performances dans Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)  
