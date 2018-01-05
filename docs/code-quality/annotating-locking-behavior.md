@@ -36,11 +36,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0fa6ecdef564f7911e6de09ad56b5934e9231f35
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 34364681aeeed7626b10b6714d785fbf861f42d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
 Pour éviter les bogues d’accès concurrentiel dans votre programme multithread, suivez toujours une discipline de verrouillage appropriée et utilisez les annotations SAL.  
@@ -49,7 +50,7 @@ Pour éviter les bogues d’accès concurrentiel dans votre programme multithrea
   
  Malheureusement, ces règles de verrouillage apparemment simples peuvent être étonnamment difficiles à suivre en pratique. Une restriction fondamentale dans les langages de programmation et les compilateurs d’aujourd'hui est qu’ils ne gèrent pas directement la spécification et l’analyse des conditions de concurrence. Les programmeurs doivent s'appuyer sur les commentaires de code informels pour exprimer leurs intentions sur la façon dont ils utilisent des verrous.  
   
- Les annotations SAL d'accès concurrentiel sont conçues pour vous aider à spécifier les effets secondaires du verrouillage, le responsable du verrouillage, la tutelle de données, la hiérarchie d'ordre de verrou et d'autres comportements de verrouillage prévus. En transformant des règles implicites en règles explicites, les annotations d'accès concurrence SAL vous permettent de documenter la façon dont votre code utilise des règles de verrouillage. Les annotations d'accès concurrentiel améliorent également la capacité des outils d'analyse du code à rechercher des conditions de concurrence, des interblocages, des opérations de synchronisation incompatibles et d'autres erreurs subtiles d'accès concurrentiel.  
+ Les annotations SAL d'accès concurrentiel sont conçues pour vous aider à spécifier les effets secondaires du verrouillage, le responsable du verrouillage, la tutelle de données, la hiérarchie d'ordre de verrou et d'autres comportements de verrouillage prévus. En transformant des règles implicites en règles explicites, les annotations d'accès concurrence SAL vous permettent de documenter la façon dont votre code utilise des règles de verrouillage. Les annotations d’accès concurrentiel améliorent également la capacité des outils d’analyse du code à rechercher des conditions de concurrence, des interblocages, des opérations de synchronisation incompatibles et d’autres erreurs subtiles d’accès concurrentiel.  
   
 ## <a name="general-guidelines"></a>Indications générales  
  Les annotations permettent aux programmeurs de déclarer les contrats sous-entendus par les définitions de fonction entre les implémentations (appelés) et les clients (appelants) et d'exprimer les invariants et d'autres propriétés du programme qui peuvent améliorer davantage l'analyse.  

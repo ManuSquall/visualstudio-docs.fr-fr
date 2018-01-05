@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 69cb1ed9c5c8da2ae511d73de45a0567d61236dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 2008ac649302d87cc2d45274de3fdb1981aa571d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-managed-code-quality-by-using-code-analysis"></a>Analyse de la qualité d’un code managé à l’aide de l’analyse du code
 Vous pouvez utiliser les outils d’analyse de code dans Visual Studio pour découvrir d’éventuels problèmes dans votre code, telles que l’accès aux données non sécurisés, les violations d’utilisation et les problèmes de conception. Analyse du code fonctionne sur les applications de base de données .NET Framework et natives (C et C++). Analyse du code pour le code managé organise des règles dans *ensembles de règles* qui ciblent les problèmes d’encodage.  

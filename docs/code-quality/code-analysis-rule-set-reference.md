@@ -13,11 +13,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a0f290fa42a04ddf60a49282d2f350111076ab0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f396bb289e7e4288dbb80c6e08990960861e970c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-rule-set-reference"></a>Référence d’ensemble de règles d’analyse du code
 Lorsque vous configurez pour l’analyse du code managé dans les projets de code [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], ou [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]vous sont présentées avec une liste des intégré *ensembles de règles*. Vous pouvez utiliser l’un des ensembles de règles standard, ou vous pouvez personnaliser une règle définie pour l’adapter à vos besoins de projet.  

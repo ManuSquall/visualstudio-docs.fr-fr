@@ -18,18 +18,19 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4dee5b21724944ea26e89c2cd1ace556f1377848
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0b4b154d6e959e636ee75481816a2424d5ea2e18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: La casse des mots composés de chaînes de ressources doit être correcte
 |||  
 |-|-|  
 |TypeName|ResourceStringCompoundWordsShouldBeCasedCorrectly|  
 |CheckId|CA1701|  
-|Catégorie|Microsoft.Naming|  
+|Category|Microsoft.Naming|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
@@ -57,4 +58,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Voir aussi  
  [Conventions de mise en majuscules](/dotnet/standard/design-guidelines/capitalization-conventions)   
- [Affectation de noms](/dotnet/standard/design-guidelines/naming-guidelines)
+ [Directives de nommage](/dotnet/standard/design-guidelines/naming-guidelines)

@@ -18,18 +18,19 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d03c07b48b2cfbfc19fcb9aa2ac4353ddf87a8a6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dc1317380eab4a63a7c60557fbec258485768885
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504 : Vérifier les noms de champs trompeurs
 |||  
 |-|-|  
 |TypeName|ReviewMisleadingFieldNames|  
 |CheckId|CA1504|  
-|Catégorie|Microsoft.Maintainability|  
+|Category|Microsoft.Maintainability|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  

@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cfd56596a49bc562ded401dc65009bcde73cec2d
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 1d5daf0f5d79683b3c6ef7f97d5f5113d294f6ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="best-practices-and-examples-sal"></a>Meilleures pratiques et exemples (SAL)
 Voici quelques méthodes permettant d’obtenir le meilleur hors de la langue Annotation du Code Source (SAL) et éviter certains problèmes courants.  

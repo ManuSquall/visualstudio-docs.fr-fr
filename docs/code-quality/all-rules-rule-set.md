@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0a6c6692810d9aca3a2958c9bface10698a4b0e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 14e7879ccc83325e5a2bb5719243c0ca92684bc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="all-rules-rule-set"></a>Ensemble de règles de toutes les règles
 L’ensemble de règles de toutes les règles contient toutes les règles pour le code natif et managé. L’ensemble de règles inclut toutes les règles qui sont décrites dans les rubriques suivantes :  

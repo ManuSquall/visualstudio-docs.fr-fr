@@ -18,18 +18,19 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7caff553adfd812e671a2d8643b2352d9868ca43
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d20496fae54b0fdf2b0f0d17de0590c325bab0ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903 : Utiliser uniquement l'API à partir du Framework cible
 |||  
 |-|-|  
 |TypeName|UseOnlyApiFromTargetedFramework|  
 |CheckId|CA1903|  
-|Catégorie|Microsoft.Portability|  
+|Category|Microsoft.Portability|  
 |Modification avec rupture|Avec rupture - lorsque déclenchée par rapport à la signature d’un type ou un membre extérieurement visible.<br /><br /> Sans rupture - lorsque déclenchée dans le corps d’une méthode.|  
   
 ## <a name="cause"></a>Cause  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
 |Lorsque le framework cible est|Se déclenche sur l’utilisation de membres introduits dans|  
 |.NET Framework 2.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2|  
 |.NET Framework 3.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
-|.NET Framework 3.5|.NET Framework 3.5 SP1|  
+|.NET Framework 3.5|.NET Framework 3.5 SP1|  
 |.NET Framework 4|N/A|  
   
  Pour modifier le framework cible d’un projet, consultez [ciblant une Version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).  
@@ -68,4 +69,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Voir aussi  
  [Avertissements de portabilité](../code-quality/portability-warnings.md)   
- [Ciblage d’une version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+ [Cibler une version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 33ce03bb04df9dc3701f6d9acff5b73e9891334f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4c07bfffff891e0dbe4ed77ada2682660c74b673
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analyse de la qualité des applications à l'aide des outils d'analyse du code
 ## <a name="in-this-section"></a>Dans cette section  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
  Corrigez les erreurs dans les fonctionnalités d'analyse de code.  
   
  [Amélioration de la qualité du code avec les stratégies d’archivage de projet d’équipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)  
- À l’aide de Team Foundation Version Control, vous pouvez créer des stratégies d’archivage pour vos projets d’équipe afin d’appliquer des pratiques permettant d’améliorer le développement de code et d’optimiser le travail en groupe. Les stratégies d'archivage sont des règles établies au niveau du projet d'équipe et appliquées sur les ordinateurs des développeurs avant que le code ne soit autorisé à être archivé.  
+ À l’aide de Team Foundation Version Control (TFVC), vous pouvez créer des stratégies d’archivage pour vos projets d’équipe afin d’appliquer des pratiques permettant d’améliorer le développement de code et d’optimiser le travail en groupe. Les stratégies d'archivage sont des règles établies au niveau du projet d'équipe et appliquées sur les ordinateurs des développeurs avant que le code ne soit autorisé à être archivé.  
   
 ### <a name="code-analysis-for-drivers"></a>Analyse du code pour les pilotes  
  Les outils d'analyse du code peuvent vous aider à renforcer la stabilité et la fiabilité de votre pilote en analysant systématiquement son code source.  

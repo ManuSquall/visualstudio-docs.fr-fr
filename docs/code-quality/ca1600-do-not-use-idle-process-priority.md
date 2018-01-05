@@ -18,18 +18,19 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e52a658bd6161542ce909b8294f33d6e4bf140ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2d1646cd587295f2854399cfc24603ce1f1910e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600 : Ne pas utiliser de priorité de processus inactif
 |||  
 |-|-|  
 |TypeName|DoNotUseIdleProcessPriority|  
 |CheckId|CA1600|  
-|Catégorie|Microsoft.Mobility|  
+|Category|Microsoft.Mobility|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  

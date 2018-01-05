@@ -18,18 +18,19 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f2d948d78f6b12352a3e4cfcb28aab41db3e873
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f023749c16a1c4fed36654036813007a83b21a72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900 : Les champs de type valeur doivent être portables
 |||  
 |-|-|  
 |TypeName|ValueTypeFieldsShouldBePortable|  
 |CheckId|CA1900|  
-|Catégorie|Microsoft.Portability|  
+|Category|Microsoft.Portability|  
 |Modification avec rupture|Avec rupture - Si le champ peut être visible à l’extérieur de l’assembly.<br /><br /> Sans rupture - Si le champ n’est pas visible à l’extérieur de l’assembly.|  
   
 ## <a name="cause"></a>Cause  

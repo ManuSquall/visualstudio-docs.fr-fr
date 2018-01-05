@@ -17,18 +17,19 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab5acc92df96c416cd614ac18ac66ff34d142a22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3439739626a81636020a6b645ba5820a59747f2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202 : Ne pas supprimer des objets plusieurs fois
 |||  
 |-|-|  
 |TypeName|DoNotDisposeObjectsMultipleTimes|  
 |CheckId|CA2202|  
-|Catégorie|Microsoft.Usage|  
+|Category|Microsoft.Usage|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
@@ -86,4 +87,4 @@ finally
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.IDisposable?displayProperty=fullName>   
- [Modèle de suppression](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Dispose, modèle](/dotnet/standard/design-guidelines/dispose-pattern)

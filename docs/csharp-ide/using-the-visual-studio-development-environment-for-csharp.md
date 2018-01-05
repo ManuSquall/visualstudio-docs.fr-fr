@@ -18,11 +18,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4836bdb470bf993bdc6f2b8f581859030016600
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 206d93d748a1d1033df48f9156997bd37b27f482
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>À l’aide de l’environnement de développement Visual Studio pour c# #
 L’environnement de développement intégré (IDE) Visual Studio est un ensemble d’outils de développement exposée via une interface utilisateur commune. Certains outils sont partagés avec d'autres langages [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tandis que d'autres, tels que le compilateur C#, sont propres à Visual C#. Cette rubrique fournit des liens vers les outils Visual C# les plus importants.  
@@ -31,8 +32,8 @@ L’environnement de développement intégré (IDE) Visual Studio est un ensembl
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Procédure pas à pas : Création d’une Application Simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Fournit une vue d’ensemble d’un grand nombre de fonctionnalités et outils inclus dans Visual Studio pour le développement d’applications.|  
-|[Création de solutions et de projets](../ide/creating-solutions-and-projects.md)|Explique comment créer un projet qui contient tous les fichiers de code source, des fichiers de ressources tels que des icônes, des références aux fichiers externes et des données de configuration telles que les paramètres de compilateur.|  
+|[Procédure pas à pas : création d’une application simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Fournit une vue d’ensemble d’un grand nombre de fonctionnalités et outils inclus dans Visual Studio pour le développement d’applications.|  
+|[Création de projets et de solutions](../ide/creating-solutions-and-projects.md)|Explique comment créer un projet qui contient tous les fichiers de code source, des fichiers de ressources tels que des icônes, des références aux fichiers externes et des données de configuration telles que les paramètres de compilateur.|  
 |[Écriture de code](../ide/writing-code-in-the-code-and-text-editor.md)|Décrit les outils Visual Studio qui vous aident à modifier et à manipuler du texte, du code et des éléments de balisage, à insérer et à configurer des contrôles, d'autres objets et des espaces de noms, et à ajouter des références à des ressources et composants externes.|  
 |[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)|Fournit des liens vers des rubriques qui décrivent Visual c#-fonctionnalités spécifiques, telles qu’automatique génération de code et IntelliSense pour les derniers membres utilisés.|  
 |[Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md)|Fournit une vue d'ensemble de l'utilisation d'extraits de code dans Visual C# pour l'ajout automatique de constructions de code courantes à votre application.|  
