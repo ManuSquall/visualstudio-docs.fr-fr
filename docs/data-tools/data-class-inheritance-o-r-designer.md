@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 13864f690af8b57cc23a218e20a098002e70a2ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: c881f70b966a4a0b4d5bf173bcac4569d6a9c1ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="data-class-inheritance-or-designer"></a>Héritage de classes de données (Concepteur O/R)
 Comme d'autres objets, les classes [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] peuvent utiliser l'héritage et être dérivées d'autres classes. Dans le code, vous pouvez spécifier des relations d'héritage entre des objets en déclarant qu'une classe hérite d'une autre. Dans une base de données, les relations d'héritage sont créées de plusieurs façons. L'[!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) prend en charge le concept d'héritage à table unique qui est souvent implémenté dans les systèmes relationnels.  

@@ -25,11 +25,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 55b1f4061d408187525c255e4ab12c3fe93eb60e
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 84ba9274258fe41b93a980c815bfd808454b9061
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-for-cc-overview"></a>Vue d'ensemble de l'analyse du code C/C++
 L'outil d'analyse du code C/C++ fournit aux développeurs des informations sur d'éventuelles erreurs présentes dans leur code source C/C++. Les erreurs de codage courantes signalées par l'outil sont les dépassements de mémoire tampon, la mémoire désinitialisée, les déréférencements du pointeur null et les fuites de mémoire et de ressources.  
@@ -38,7 +39,7 @@ L'outil d'analyse du code C/C++ fournit aux développeurs des informations sur d
  Pour faciliter aux développeurs d’utiliser l’outil d’analyse, il est entièrement intégré dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Pendant le processus de génération, tous les avertissements générés pour le code source s’affichent dans la liste d’erreurs. Vous pouvez accéder au code source qui a provoqué l’avertissement, et vous pouvez afficher des informations supplémentaires sur la cause et les solutions possibles du problème.  
   
 ## <a name="pragma-support"></a>#pragma prise en charge  
- Les développeurs peuvent utiliser le `#pragma` directive pour considérer les avertissements comme des erreurs ; activer ou désactiver des avertissements et supprimer les avertissements pour des lignes de code. Pour plus d’informations, consultez [Comment : activer et désactiver l’analyse du Code pour les avertissements C/C++ spécifiques](http://msdn.microsoft.com/en-us/910b8518-71f1-4b2e-b012-70647795642a).  
+ Les développeurs peuvent utiliser le `#pragma` directive pour considérer les avertissements comme des erreurs ; activer ou désactiver des avertissements et supprimer les avertissements pour des lignes de code. Pour plus d’informations, consultez [Comment : définir des propriétés d’analyse de Code pour les projets C/C++ ](how-to-set-code-analysis-properties-for-c-cpp-projects.md).  
   
 ## <a name="annotation-support"></a>Prise en charge de l’annotation  
  Annotations améliorent la précision de l’analyse du code. Annotations fournissent des informations supplémentaires sur les conditions antérieurs et postérieur sur les paramètres de fonction et les types de retour. Pour plus d’informations, consultez [Comment : spécifier les informations de Code supplémentaire en utilisant __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  

@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3ed52a167b607236b8493e4c8c1736ee597162b9
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: fb85f9cfb2b70838d32761b412541bf15b2884c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Enregistrer les données avec le DBDirect du TableAdapter méthodes
 Cette procédure pas à pas fournit des instructions détaillées pour l’exécution des instructions SQL directement sur une base de données à l’aide des méthodes DBDirect d’un TableAdapter. Les méthodes DBDirect d’un TableAdapter fournissent un niveau de contrôle sur vos mises à jour de la base de données. Vous pouvez les utiliser pour exécuter des instructions SQL et les procédures stockées en appelant les `Insert`, `Update`, et `Delete` méthodes selon les besoins de votre application (par opposition à surchargées `Update` méthode qui effectue la mise à jour Instructions INSERT et DELETE dans un seul appel).  
@@ -41,7 +42,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour l’exéc
   
 -   Ajouter des méthodes pour accéder à la base de données directement et d’effectuer des insertions, mises à jour et suppressions...  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
 Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de données Northwind.  
   
 1.  Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement des éditions de SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), ou via le **le programme d’installation de Visual Studio**. Dans le programme d’installation Visual Studio, SQL Server Express LocalDB peut être installé dans le cadre de la **stockage de données et de traitement** charge de travail, ou sous la forme d’un composant individuel.  
@@ -88,7 +89,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
   
     -   Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.  
   
-         ou  
+         - ou -  
   
     -   Sélectionnez **nouvelle connexion** pour lancer le **Ajouter/modifier la connexion** boîte de dialogue.  
   
@@ -117,9 +118,9 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
   
 2.  Définissez les éléments suivants **nom** et **texte** propriétés sur chaque bouton.  
   
-    |Nom|Texte|  
+    |Name|Texte|  
     |----------|----------|  
-    |`InsertButton`|**INSERT**|  
+    |`InsertButton`|**Insert**|  
     |`UpdateButton`|**Mettre à jour**|  
     |`DeleteButton`|**Supprimer**|  
   

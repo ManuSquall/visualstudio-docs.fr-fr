@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b16b7e9f4dba55babfc7ad2ad90affe0ca93c508
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b7187ef8d3342ad050c66debf939e9c6a6213957
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Création et utilisation de stratégies d’archivage de l’analyse du code
 Lorsque vous utilisez Team Foundation Version Control (TFVC), vous pouvez créer une stratégie d’archivage de l’analyse du code pour le .NET Framework et les projets de code natifs (C/C++) dans un projet d’équipe. Vous pouvez utiliser la stratégie d’archivage de l’analyse du code pour contrôler et améliorer la qualité du code archivé dans la base de code.  
@@ -43,6 +44,4 @@ Lorsque vous utilisez Team Foundation Version Control (TFVC), vous pouvez créer
  Explique comment ajouter des mots et des jetons au dictionnaire référencé dans les règles d’affectation des noms d’analyse du code.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Définir et appliquer des critères de qualité](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
-  
  [Amélioration de la qualité du code avec les stratégies d’archivage de projet d’équipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)

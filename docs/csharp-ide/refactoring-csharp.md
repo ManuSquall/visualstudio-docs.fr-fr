@@ -1,5 +1,5 @@
 ---
-title: "Refactorisation des fonctionnalités (c#) de Visual Studio | Documents Microsoft"
+title: "Fonctionnalités de Visual Studio de refactorisation c# | Documents Microsoft"
 ms.custom: 
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -16,15 +16,18 @@ helpviewer_keywords: refactoring [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a03a5a8d7b8456f6c03646304dce0a85703bf1cc
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: dotnet
+ms.openlocfilehash: 6dec764acef39550189d0b99c419a9e472c26b7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="refactoring-features-for-c"></a>Fonctionnalités de refactorisation c# #
+# <a name="refactoring-features-in-c"></a>Fonctionnalités de refactorisation en c# #
 
-La refactorisation consiste à améliorer votre code après que qu’il a été écrit. Refactorisation de modifie la structure interne du code sans modifier son comportement. Les fonctionnalités de refactorisation suivantes sont disponibles dans Visual Studio pour c# :
+La refactorisation est le processus de modification de la structure interne du code sans modifier son comportement. La refactorisation est souvent utilisée pour rendre le code plus lisible, fiable et facile à gérer.
+
+Les fonctionnalités de refactorisation suivantes sont disponibles dans Visual Studio pour c# :
 
 * [Modifier la signature de la méthode](refactoring/change-method-signature.md)
 * [Convertir la méthode Get en property/property de méthode Get](refactoring/convert-get-method-to-property.md)
@@ -40,4 +43,6 @@ La refactorisation consiste à améliorer votre code après que qu’il a été 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Utilisation de l’environnement de développement Visual Studio pour C#](using-the-visual-studio-development-environment-for-csharp.md)  
+[Refactorisation, génération de Code et des Actions rapides dans Visual Studio](../ide/refactoring-code-generation-quick-actions.md)  
+[Refactorisation dans Visual Basic](../vb-ide/refactoring-vb.md)  
+[Utilisation de l’environnement de développement Visual Studio pour C#](using-the-visual-studio-development-environment-for-csharp.md)

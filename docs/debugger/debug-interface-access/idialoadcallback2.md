@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 474b6efeecc13b197f3189804682265beeba907e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ee2733643350b2fea9b78a9d876037497d35e41a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 Reçoit les rappels de symbole DIA procédure de localisation, pour permettre à des restrictions à être imposées sur le processus de localisation.  
@@ -39,10 +40,10 @@ IDiaLoadCallback2 : IDiaLoadCallback
 |[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|Détermine si la recherche d’informations de débogage est autorisée à partir de fichiers .dbg.|  
 |[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|Détermine si la recherche les fichiers .pdb est autorisée dans le répertoire racine du système.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  L’application cliente implémente cette interface et fournit une référence à celle-ci dans l’appel à la [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (méthode). N’oubliez pas d’implémenter toutes les méthodes dans les [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) interface également.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  

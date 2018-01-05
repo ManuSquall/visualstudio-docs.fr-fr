@@ -13,18 +13,19 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 880f48a3fc6f9ae09191d8d63120e7d71091118b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 938bda4d4b5c96b9627cf11aae81c51d269c0e5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141 : Les méthodes transparentes ne répondent pas aux LinkDemands
 |||  
 |-|-|  
 |TypeName|TransparentMethodsMustNotSatisfyLinkDemands|  
 |CheckId|CA2141|  
-|Catégorie|Microsoft.Security|  
+|Category|Microsoft.Security|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  

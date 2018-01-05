@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f416f8000240101d8ac6e29603d1b2f662e1b76
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: d42545329cfce4486e17fac000035c77307f07b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Comment : créer un élément de travail pour une erreur de code managé
 Vous pouvez utiliser l’élément de travail fonctionnalité pour enregistrer l’élément de travail à partir de suivi [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]. Pour utiliser cette fonctionnalité, votre projet doit être partie du projet d’équipe dans [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].  

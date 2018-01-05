@@ -12,18 +12,19 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bcc92434640306105ccec8100d66e9c38426f88
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4847cd5a1721376e0ca9222be0390e3c7aad2926
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350 : N’utilisez pas d’algorithmes de chiffrement faibles
 |||  
 |-|-|  
 |TypeName|DoNotUseWeakCryptographicAlgorithms|  
 |CheckId|CA5350|  
-|Catégorie|Microsoft.Cryptography|  
+|Category|Microsoft.Cryptography|  
 |Modification avec rupture|Sans rupture|  
   
 > [!NOTE]

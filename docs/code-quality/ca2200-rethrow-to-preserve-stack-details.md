@@ -18,18 +18,19 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ca2e6e61b88d4d8aaccd4784e1b521e0cbb48bd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 81dff0b9e876719fdfd26409772498390344cd2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200 : Levez à nouveau une exception pour conserver les détails de la pile
 |||  
 |-|-|  
 |TypeName|RethrowToPreserveStackDetails|  
 |CheckId|CA2200|  
-|Catégorie|Microsoft.Usage|  
+|Category|Microsoft.Usage|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  

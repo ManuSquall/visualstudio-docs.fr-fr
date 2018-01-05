@@ -17,11 +17,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bd9e255b35ffb843c15d5ffa9c1547891bf437d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: d587edebcea443e0bfff52004b128c70923470d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Encapsuler le champ (Refactorisation C#)
 Le **encapsuler le champ** l’opération de refactorisation vous permet de créer rapidement une propriété d’un champ existant et de mettre facilement à jour votre code avec des références à la nouvelle propriété.  
@@ -96,7 +97,7 @@ Le **encapsuler le champ** l’opération de refactorisation vous permet de cré
     Console.WriteLine("width = {0}", mySquare.Width);  
     ```  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le **encapsuler le champ** opération est uniquement possible lorsque le curseur est positionné sur la même ligne que la déclaration de champ.  
   
  Pour les déclarations qui déclarent plusieurs champs, **encapsuler le champ** utilise la virgule comme limite entre les champs et initialise la refactorisation sur le champ qui est le plus proche du curseur et sur la même ligne que le curseur. Vous pouvez également spécifier quel champ vous voulez encapsuler en sélectionnant le nom de ce champ dans la déclaration.  

@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d7609215f7145ae05d978ba10d556782c886ee3b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 072adcf912e5921164647cf77ee561617f844786
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Lier des contrôles WPF à un dataset
 Dans cette procédure pas à pas, vous allez créer une application WPF qui contient des contrôles liés aux données. Les contrôles sont liés aux enregistrements produit encapsulés dans un dataset. Vous allez également ajouter des boutons pour parcourir les produits et enregistrer les modifications apportées aux enregistrements produit.  
@@ -40,7 +41,7 @@ Cette procédure pas à pas décrit les tâches suivantes :
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
 Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
@@ -50,8 +51,6 @@ Pour exécuter cette procédure pas à pas, vous devez disposer des composants s
 La connaissance préalable des concepts suivants s'avère également utile, mais n'est pas obligatoire pour suivre cette procédure pas à pas :  
   
 -   Datasets et TableAdapters. Pour plus d’informations, consultez [outils Dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) et [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
-  
--   Utilisation du Concepteur WPF. Pour plus d’informations, consultez [WPF et Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 -   Liaison de données WPF. Pour plus d’informations, consultez [Vue d’ensemble de la liaison de données](/dotnet/framework/wpf/data/data-binding-overview).  
   
@@ -257,5 +256,4 @@ Ajoutez le code qui permet aux utilisateurs d’enregistrer les modifications ap
 ## <a name="see-also"></a>Voir aussi
 [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
 [Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
-[WPF et vue d’ensemble du Concepteur Silverlight](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)   
 [Vue d’ensemble de la liaison de données](/dotnet/framework/wpf/data/data-binding-overview)

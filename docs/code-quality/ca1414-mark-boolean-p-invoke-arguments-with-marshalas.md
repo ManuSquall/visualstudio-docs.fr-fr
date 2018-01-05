@@ -18,18 +18,19 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25fd80168e78feda70b86f512598a850acae7010
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ce70291bd59ef3211c9fea871c8155f1a3e7fed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414 : Marquer les arguments P/Invoke booléens comme MarshalAs
 |||  
 |-|-|  
 |TypeName|MarkBooleanPInvokeArgumentsWithMarshalAs|  
 |CheckId|CA1414|  
-|Catégorie|Microsoft.Interoperability|  
+|Category|Microsoft.Interoperability|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="rule-description"></a>Description de la règle  
  Une plateforme de l’appel de méthode accède à un code non managé et est définie à l’aide de la `Declare` mot clé dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute>Spécifie le comportement de marshaling qui est utilisé pour convertir des types de données entre code managé et non managé. Types de données simples, tels que <xref:System.Byte?displayProperty=fullName> et <xref:System.Int32?displayProperty=fullName>, ont une représentation unique dans le code non managé et ne nécessitent pas de spécification de leur comportement de marshaling ; le common language runtime fournit automatiquement le comportement correct.  
   
- Le <xref:System.Boolean> type de données comporte plusieurs représentations dans le code non managé. Lorsque le <xref:System.Runtime.InteropServices.MarshalAsAttribute> n’est pas spécifié, le comportement de marshaling par défaut le <xref:System.Boolean> est de type de données <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Il s’agit d’un entier de 32 bits, ce qui n’est pas approprié dans tous les cas. La représentation Boolean requise par la méthode non managée doit être déterminée et mis en correspondance avec les <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool est le type BOOL Win32, qui est toujours de 4 octets. UnmanagedType.U1 doit être utilisé pour C++ `bool` ou d’autres types de 1 octet. Pour plus d’informations, consultez [de Marshaling par défaut pour les Types booléens](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).  
+ Le <xref:System.Boolean> type de données comporte plusieurs représentations dans le code non managé. Lorsque le <xref:System.Runtime.InteropServices.MarshalAsAttribute> n’est pas spécifié, le comportement de marshaling par défaut le <xref:System.Boolean> est de type de données <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Il s’agit d’un entier de 32 bits, ce qui n’est pas approprié dans tous les cas. La représentation Boolean requise par la méthode non managée doit être déterminée et mis en correspondance avec les <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool est le type BOOL Win32, qui est toujours de 4 octets. UnmanagedType.U1 doit être utilisé pour C++ `bool` ou d’autres types de 1 octet.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Pour corriger une violation de cette règle, appliquez <xref:System.Runtime.InteropServices.MarshalAsAttribute> à le <xref:System.Boolean> paramètre ou valeur de retour. La valeur de l’attribut approprié <xref:System.Runtime.InteropServices.UnmanagedType>.  
@@ -60,5 +61,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>   
- [Marshaling par défaut pour les Types booléens](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)   
  [Interopération avec du code non managé](/dotnet/framework/interop/index)

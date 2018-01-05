@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 178eb0cceaacd6d93f20e74c034e452d8f7fdf6f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b6389e5bf2a4df5a407b57be077134066803d33d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
 Lit `DWORD` valeurs dans un jeu de propriétés.  
@@ -42,7 +43,7 @@ HRESULT ReadDWORD (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `DWORD`.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  A `DWORD` est défini par Windows comme un entier non signé 32 bits.  
   
 ## <a name="see-also"></a>Voir aussi  

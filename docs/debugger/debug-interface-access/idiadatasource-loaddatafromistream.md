@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6db2e9fb90104de121faafc2efa90fdaf52da47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5babf70c1f7b58e85b681956c44f1e387441b8b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 Prépare les données de débogage stockées dans un fichier du programme (.pdb) de la base de données accédé via un flux de données en mémoire.  
@@ -38,13 +39,13 @@ HRESULT loadDataFromIStream (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant montre les valeurs de retournés possibles pour cette méthode.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |E_PDB_FORMAT|Vous avez tenté d’accéder à un fichier avec un format obsolète.|  
 |E_INVALIDARG|Invalidparameter.|  
 |E_UNEXPECTED|Source de données a déjà été préparée.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode permet des données de débogage pour un fichier exécutable doit être obtenu à partir de la mémoire via un <xref:IStream> objet.  
   
  Pour charger un fichier .pdb sans validation, utilisez la [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) (méthode).  

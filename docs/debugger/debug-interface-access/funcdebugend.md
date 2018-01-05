@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b81665c4709eb76b28f2e56dd83915fab66bbd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 13fa98876bef582a45ef3c3eeb5a190d8895b80b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="funcdebugend"></a>FuncDebugEnd
 Si une fonction a un point défini sur le débogage est à la fin, le point de départ de débogage est identifiée par un symbole avec une `SymTagFuncDebugEnd` balise.  

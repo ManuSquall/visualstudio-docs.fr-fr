@@ -18,18 +18,19 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c6a91cffc3ce388a3dfb9000b9f432672018f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a3a7818c3d758e8e92724af37dfe955f9a466746
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116 : Les méthodes APTCA doivent uniquement appeler des méthodes APTCA
 |||  
 |-|-|  
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|  
 |CheckId|CA2116|  
-|Catégorie|Microsoft.Security|  
+|Category|Microsoft.Security|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
  Un niveau de confiance partielle appelant `X` pouvez appeler la méthode `M1`, ce qui provoque `M1` pour appeler `M2`. Étant donné que `M2` n’a pas l’attribut APTCA, son appelant immédiat (`M1`) doit satisfaire une demande de liaison pour la confiance totale ; `M1` dispose d’une confiance totale et par conséquent satisfait cette vérification. Le risque de sécurité est car `X` ne participe pas satisfaire la demande de liaison qui protège `M2` provenant d’appelants non fiables. Par conséquent, les méthodes avec l’attribut APTCA ne doivent pas appeler les méthodes qui n’ont pas l’attribut.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Si l’attribut APCTA est requis, utilisez une demande pour protéger la méthode qui appelle l’assembly de confiance totale. Les autorisations exactes que vous la demande dépend de la fonctionnalité exposée par votre méthode. S’il est possible, protégez la méthode avec une demande pour une confiance totale pour s’assurer que la fonctionnalité sous-jacente n’est pas exposée aux appelants partiellement approuvés. Si ce n’est pas possible, sélectionnez un jeu d’autorisations qui protègent efficacement les fonctionnalités exposées. Pour plus d’informations sur les demandes, consultez [demandes](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).  
+ Si l’attribut APCTA est requis, utilisez une demande pour protéger la méthode qui appelle l’assembly de confiance totale. Les autorisations exactes que vous la demande dépend de la fonctionnalité exposée par votre méthode. S’il est possible, protégez la méthode avec une demande pour une confiance totale pour s’assurer que la fonctionnalité sous-jacente n’est pas exposée aux appelants partiellement approuvés. Si ce n’est pas possible, sélectionnez un jeu d’autorisations qui protègent efficacement les fonctionnalités exposées.  
   
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
  Pour supprimer sans risque un avertissement de cette règle, vous devez vous assurer que la fonctionnalité exposée par votre méthode pas directement ou indirectement autorise les appelants d’accéder aux informations sensibles, des opérations ou des ressources qui peuvent être utilisées dans une action destructrice.  
@@ -78,8 +79,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Voir aussi  
  [Instructions de codage sécurisé](/dotnet/standard/security/secure-coding-guidelines)   
- [Assemblys .NET framework pouvant être appelés par du Code partiellement fiable.](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [Utilisation de bibliothèques à partir de code d’un niveau de confiance partiel](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Demandes](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
  [Demandes de liaison](/dotnet/framework/misc/link-demands)   
  [Données et modélisation](/dotnet/framework/data/index)

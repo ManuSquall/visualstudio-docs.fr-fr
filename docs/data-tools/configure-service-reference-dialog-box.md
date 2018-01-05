@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 26e74c43e79012adc6b241390cd463a35c9f58c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: ce1419882422ddc12fdb380601e908eed7e5c7ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurer la référence de service (boîte de dialogue)
 Le **configurer la référence de Service** boîte de dialogue vous permet de configurer le comportement de [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] services.  
@@ -45,7 +46,7 @@ Le **configurer la référence de Service** boîte de dialogue vous permet de co
   
 -   Pour désactiver le partage de type, désactivez le **réutiliser les types dans les assemblys référencés** case à cocher. Pour activer le partage de type d’un sous-ensemble d’assemblys référencés, activez la **réutiliser les types dans les assemblys référencés** case à cocher, sélectionnez **réutiliser les types dans les assemblys référencés spécifiés**et sélectionnez l’élément référence dans le **liste des assemblys référencés**.  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
  **Adresse**  
  Permet de mettre à jour l'adresse web qu'une référence de service utilise pour rechercher un service. Par exemple, pendant le développement, le service peut être hébergé sur un serveur de développement, puis transféré ultérieurement vers un serveur de production, ce qui nécessite un changement d'adresse.  
   
@@ -62,7 +63,7 @@ Le **configurer la référence de Service** boîte de dialogue vous permet de co
  Détermine si les méthodes de service WCF sont appelées de façon synchrone (valeur par défaut) ou de façon asynchrone.  
   
  **Générer des opérations basées sur des tâches**  
- Dans le cadre de l’écriture de code asynchrone, cette option vous permet d’exploiter la bibliothèque parallèle de tâches (TPL) introduite dans .Net 4. Consultez [(TPL) de bibliothèque parallèle de tâches](http://msdn.microsoft.com/library/dd460717.aspx).  
+ Dans le cadre de l’écriture de code asynchrone, cette option vous permet d’exploiter la bibliothèque parallèle de tâches (TPL) introduite dans .Net 4. Consultez [(TPL) de bibliothèque parallèle de tâches](/dotnet/standard/parallel-programming/task-parallel-library-tpl).  
   
  **Toujours générer des contrats de message**  
  Détermine si des types de contrats de message sont générés pour un client WCF. Pour plus d’informations sur les contrats de message, consultez [à l’aide de contrats de Message](/dotnet/framework/wcf/feature-details/using-message-contracts).  
@@ -97,4 +98,4 @@ Le **configurer la référence de Service** boîte de dialogue vous permet de co
 ## <a name="see-also"></a>Voir aussi  
 
  [Comment : ajouter une référence à un Service Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
- [Services Windows Communication Foundation et Services de données WCF](../data-tools/configure-service-reference-dialog-box.md)
+ [Services Windows Communication Foundation et WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

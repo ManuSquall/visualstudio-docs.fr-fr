@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 097e7a2eac78fe85b2a3ab62d5cdf1fd18908d56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 707100d33e91d1b0920d008140dc2fb6f1e078fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Comment : ajouter un fichier de configuration d'application à un projet C#
 En ajoutant un fichier de configuration d’application (fichier app.config) à un projet c#, vous pouvez personnaliser la façon dont le common language runtime localise et charge les fichiers d’assembly. Pour plus d’informations sur les fichiers de configuration d’application, consultez [méthode de localisation des assemblys par le Runtime](/dotnet/framework/deployment/how-the-runtime-locates-assemblies).  

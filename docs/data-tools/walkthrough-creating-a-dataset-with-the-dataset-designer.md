@@ -12,37 +12,36 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-ms.assetid: 12360f54-db6c-45d2-a91f-fee43214b555
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: f327d2010105c12c4b137317ed2406cae6cad9a3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 44139e06a09fc2883c7a42202129bfd3c82343d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Procédure pas à pas : création d'un groupe de données avec le Concepteur de DataSet
+
 Dans cette procédure pas à pas, vous allez créer un jeu de données à l’aide de la **Concepteur de Dataset**. Il vous guidera le processus de création d’un projet et l’ajout d’un nouveau **DataSet** élément lui. Vous allez apprendre à créer des tables basées sur les tables dans une base de données sans utiliser d’Assistant.  
-  
- Cette procédure pas à pas décrit notamment les tâches suivantes :  
-  
+
+Cette procédure pas à pas décrit notamment les tâches suivantes :  
+
 -   Création d’un **Application Windows Forms** projet.  
-  
+
 -   Ajout de vide **DataSet** élément au projet.  
-  
+
 -   Création et configuration d’une source de données dans votre application en générant un dataset avec le **Concepteur de Dataset**.  
-  
+ 
 -   Création d’une connexion à la base de données Northwind **l’Explorateur de serveurs**.  
-  
+
 -   Création de tables avec des TableAdapters dans le jeu de données basée sur des tables dans la base de données.  
-  
+
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
 Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de données Northwind.  
   
 1.  Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement des éditions de SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), ou via le **le programme d’installation de Visual Studio**. Dans le programme d’installation Visual Studio, SQL Server Express LocalDB peut être installé dans le cadre de la **stockage de données et de traitement** charge de travail, ou sous la forme d’un composant individuel.  

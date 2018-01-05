@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 05a0a339b413495aadfa397e5fec3b826f920026
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b1f6e8ed06f9f2355ac3a740319bb75924bf3d6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 Lorsque vous créez une application qui manipule les données d’une base de données, vous effectuez des tâches de base telles que la définition des chaînes de connexion, insertion de données et l’exécution des procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données dans une application de « formulaires de données » de Windows Forms simple à l’aide de Visual c# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET, y compris les datasets, LINQ to SQL et Entity Framework — finalement les étapes qui sont très similaires à celles présentées dans cet article.  
@@ -41,7 +42,7 @@ Lorsque vous créez une application qui manipule les données d’une base de do
   
 -   [Tester votre application](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour créer l'application, vous aurez besoin des éléments suivants :  
   
 -   Visual Studio Community Edition.  

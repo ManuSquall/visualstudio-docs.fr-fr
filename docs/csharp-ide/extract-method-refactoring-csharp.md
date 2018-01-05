@@ -17,11 +17,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e85e745241d8fa880098b73a6306cbca3f19da70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 18fc4c20b39341f884fb23b51822ce7f6e427007
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-method-refactoring-c"></a>Extraire la méthode (Refactorisation C#)
 **Extraire la méthode** est une opération de refactorisation qui offre un moyen simple pour créer une nouvelle méthode à partir d’un fragment de code dans un membre existant.  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  Cliquez sur **OK**.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Lorsque vous utilisez la **extraire la méthode** de commande, la nouvelle méthode est insérée à la suite du membre source dans la même classe.  
   
 ## <a name="partial-types"></a>Types partiels  

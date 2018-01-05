@@ -16,18 +16,19 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a27054ef8732b96d5d71cbc22d567f4509877886
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 17238e140f8672e9d2d5a67594eb26b415c0b8d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102 : Interceptez les exceptions non CLSCompliant dans les gestionnaires généraux
 |||  
 |-|-|  
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|  
 |CheckId|CA2102|  
-|Catégorie|Microsoft.Security|  
+|Category|Microsoft.Security|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
@@ -83,5 +84,4 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 ## <a name="see-also"></a>Voir aussi  
  [Exceptions et gestion des exceptions](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling)   
  [Ilasm.exe (assembleur IL)](/dotnet/framework/tools/ilasm-exe-il-assembler)   
- [Substituer des vérifications de sécurité](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [Indépendance du langage et composants indépendants du langage](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [Indépendance du langage et composants indépendants du langage](/dotnet/standard/language-independence-and-language-independent-components)

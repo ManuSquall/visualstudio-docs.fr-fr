@@ -1,5 +1,5 @@
 ---
-title: "Résolution des problèmes d’analyse de Code | Documents Microsoft"
+title: "Résolution des problèmes liés à l’analyse du code | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -12,27 +12,28 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6e552570eb48b9210b366ebbfe157fe656ab3fe0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0773c429ad8e738e0de280b4fe2abbf2fa6e5c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Résolution des problèmes liés à l'analyse du code
-Cette rubrique contient des informations de dépannage pour les problèmes d’analyse de code Visual Studio suivants.  
+Cette rubrique contient des informations de résolution des problèmes suivants liés à l’analyse du code Visual Studio.  
   
--   [Modifications apportées à un Visual Studio 2010 règle jeu ne sont pas répercutées dans les Versions précédentes de Visual Studio](#ChildRuleSetChangesInPreviousVersions)  
+-   [Des modifications apportées à un ensemble de règles de Visual Studio 2010 ne sont pas répercutées dans les versions antérieures de Visual Studio](#ChildRuleSetChangesInPreviousVersions)  
   
-##  <a name="ChildRuleSetChangesInPreviousVersions"></a>Modifications apportées à un Visual Studio 2010 règle jeu ne sont pas répercutées dans les Versions précédentes de Visual Studio  
- Lorsque vous créez un ensemble de règles dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] qui contient un ensemble de règles enfant, une modification de l’ensemble de règles enfants ne soit pas appliquée dans les exécutions d’analyse du code sur les ordinateurs qui utilisent une version antérieure de Visual Studio. Pour résoudre ce problème, vous devez forcer une réécriture de l’ensemble de règles parent, qui est l’ensemble de règles qui contient l’ensemble de règles enfants.  
+##  <a name="ChildRuleSetChangesInPreviousVersions"></a> Des modifications apportées à un ensemble de règles de Visual Studio 2010 ne sont pas répercutées dans les versions antérieures de Visual Studio  
+ Quand vous créez un ensemble de règles dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] qui contient un ensemble de règles enfant, une modification de cet ensemble de règles peut ne pas être appliquée dans les exécutions de l’analyse du code sur des ordinateurs qui utilisent une version antérieure de Visual Studio. Pour résoudre ce problème, vous devez forcer une réécriture de l’ensemble de règles parent, qui est l’ensemble de règles contenant l’ensemble de règles enfant.  
   
-1.  Ouvrez la règle parente définie [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)].  
+1.  Ouvrez l’ensemble de règles parent dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)].  
   
-2.  Apportez des modifications, telles que l’ajout ou la suppression d’une règle et enregistrez l’ensemble de règles.  
+2.  Faites une modification, comme ajouter ou supprimer une règle, puis enregistrez l’ensemble de règles.  
   
-3.  Rouvrez l’ensemble de règles, d’annuler la modification, puis enregistrez l’ensemble de règles.  
+3.  Rouvrez l’ensemble de règles, annulez la modification, puis réenregistrez l’ensemble de règles.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Analyse de la qualité de l’Application](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
- [Analyse de la qualité du Code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
+ [Analyse de la qualité des applications](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
+ [Analyse de la qualité d’un code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [Utilisation d’ensembles de règles pour regrouper des règles d’analyse du code](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

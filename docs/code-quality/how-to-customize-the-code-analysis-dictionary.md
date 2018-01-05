@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a14870e494c9c8efeb7c15dabf034f059c4a3c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7fa5f88a3578998fca325500a3815b909b6ce4a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Comment : personnaliser le dictionnaire d’analyse du code
 Analyse du code utilise un dictionnaire intégré pour vérifier les identificateurs dans votre code pour les erreurs dans l’orthographe et grammaire cas autres conventions d’affectation de noms de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] des recommandations. Vous pouvez créer un fichier Xml de dictionnaire personnalisé pour ajouter, supprimer ou modifier les termes et abréviations acronymes au dictionnaire intégré.  

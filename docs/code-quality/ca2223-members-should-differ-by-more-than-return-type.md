@@ -18,18 +18,19 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 312ba498965cea7404e66d15f9136ac9a364da98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c8c0d70085f4f27dbaf26b412888415d9af666d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223 : Les membres ne doivent pas différer uniquement par leur type de retour
 |||  
 |-|-|  
 |TypeName|MembersShouldDifferByMoreThanReturnType|  
 |CheckId|CA2223|  
-|Catégorie|Microsoft.Usage|  
+|Category|Microsoft.Usage|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  

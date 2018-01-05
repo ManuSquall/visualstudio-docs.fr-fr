@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 318acd282090dd17fcfd7fd12e7370e906c67806
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 3d295cc9527aae2f566f5ec4d1ba92a2b129fbd4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Comment : créer des LINQ to SQL classes mappées aux tables et vues (Concepteur O/R)
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]les classes qui sont mappées aux tables de base de données et les vues sont appelées *des classes d’entité*. La classe d'entité mappe à un enregistrement, alors que les propriétés individuelles d'une classe d'entité mappent aux colonnes individuelles qui composent un enregistrement. Créer des classes d’entité qui sont basées sur les tables de base de données ou des vues en faisant glisser des tables ou des vues de **l’Explorateur de serveurs**/**l’Explorateur de base de données** sur la [LINQ to SQL Tools dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). Le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] génère les classes et applique la spécifique [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] attributs pour activer [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] fonctionnalité (la communication de données et modification de la <xref:System.Data.Linq.DataContext>). Pour plus d’informations sur les [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] des classes, consultez [le modèle LINQ to SQL objet](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  

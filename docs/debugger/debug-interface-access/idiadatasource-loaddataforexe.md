@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30890b66baf10f5000a9244e85a36000ea26c181
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0bf987771019755754098ad29a8d178082c59bd5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 S’ouvre et prépare les données de débogage associées au fichier.exe/.dll.  
@@ -46,7 +47,7 @@ HRESULT loadDataForExe (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant répertorie certaines des codes d’erreur possibles pour cette méthode.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |E_PDB_NOT_FOUND|Impossible d’ouvrir le fichier ou le fichier a un format non valide.|  
 |E_PDB_FORMAT|Vous avez tenté d’accéder à un fichier avec un format obsolète.|  
@@ -55,7 +56,7 @@ HRESULT loadDataForExe (
 |E_INVALIDARG|Paramètre non valide.|  
 |E_UNEXPECTED|Source de données a déjà été préparée.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  L’en-tête de débogage du fichier.exe/.dll désigne l’emplacement des données de débogage.  
   
  Cette méthode lit l’en-tête de débogage et de recherche et prépare les données de débogage. La progression de la recherche peut, le cas échéant, être signalée et contrôlée via des rappels. Par exemple, le [IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) est appelé lorsque le `IDiaDataSource::loadDataForExe` méthode recherche et traite un répertoire de débogage.  

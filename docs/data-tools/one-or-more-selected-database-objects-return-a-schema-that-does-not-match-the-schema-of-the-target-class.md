@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 40842e1067a0b764a4b35ac679ee774f04347359
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e188947f51cb8e277c71a072dfcee72922f37982
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Un ou plusieurs des objets de base de données sélectionnés retournent un schéma qui ne correspond pas au schéma de la classe cible
 Un ou plusieurs des objets de base de données sélectionnés retournent un schéma qui ne correspond pas au schéma de la classe de données cible. Aucun élément n'a été ajouté au concepteur.  

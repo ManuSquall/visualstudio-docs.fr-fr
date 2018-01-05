@@ -50,11 +50,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6a7e5741b11263ef3c3730ddaa69e566cd7c2e24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: a8c8660fbc489dd8c4926bb09b8b42006da0897a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Outils de DataSet dans Visual Studio
 > [!NOTE]
@@ -83,7 +84,7 @@ ms.lasthandoff: 10/31/2017
   
     -   [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)  
   
--   Interroger et rechercher les données dans le jeu de données. Pour plus d’informations, consultez [jeux de données de requête](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]permet de [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d) sur les données dans un <xref:System.Data.DataSet> objet. Pour plus d’informations, [consultez LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
+-   Interroger et rechercher les données dans le jeu de données. Pour plus d’informations, consultez [jeux de données de requête](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]permet de [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) sur les données dans un <xref:System.Data.DataSet> objet. Pour plus d’informations, [consultez LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
   
 -   Utilisez le **des Sources de données** fenêtre pour lier des contrôles d’interface utilisateur pour le jeu de données ou des colonnes individuelles et pour spécifier les colonnes qui sont modifiables par l’utilisateur. Pour plus d’informations, consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   

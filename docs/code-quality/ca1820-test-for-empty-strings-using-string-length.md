@@ -18,18 +18,19 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bfacf70dd1d23d0596815ad2f9fa3f51986aaad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d044f09ca26b65506bcfb7466f59da73acfad1e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820 : Vérifiez la présence de chaînes vides par la longueur de chaîne
 |||  
 |-|-|  
 |TypeName|TestForEmptyStringsUsingStringLength|  
 |CheckId|CA1820|  
-|Catégorie|Microsoft.Performance|  
+|Category|Microsoft.Performance|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  

@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f35833df8e84a4e4caba8fd46f8daea8dd5119a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 92babbf3c7a5863d178463b69525bdb722bf28ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="in-source-suppression-overview"></a>Vue d’ensemble de la suppression à la source
 Suppression à la source est la possibilité de supprimer ou d’ignorer des violations d’analyse du Code dans le code managé en ajoutant la **SuppressMessage** les segments de code qui provoquent les violations de l’attribut. Le **SuppressMessage** attribut est un attribut conditionnel qui est inclus dans les métadonnées de langage intermédiaire de votre assembly de code managé uniquement si le symbole de compilation CODE_ANALYSIS est défini au moment de la compilation.  

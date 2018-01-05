@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3aef929dbbb3555313917fbb67f618fb569d6ec6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e577a5a9723f388d829a70f51cd0a917abf157a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
 Récupère un indicateur qui indique si le pointeur de base est alloué pour le code dans cette plage d’adresses. Cette méthode est déconseillée.  
@@ -38,7 +39,7 @@ HRESULT get_allocatesBasePointer (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette propriété doit être utilisée uniquement par du code dont l’accès est anciennement FPO_DATA, ou lors de la chaîne de programme retournée par le [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) méthode est `NULL`. Sinon, la chaîne de programme contient toutes les informations nécessaires pour calculer les valeurs de Registre précédentes.  
   
 ## <a name="see-also"></a>Voir aussi  

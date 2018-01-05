@@ -25,11 +25,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9147439d6aab7a6393f37f0cf8b14b0b0401ed1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4fe5ac5ec207bb52884c097d1562a85a3414ba7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="allocation-hook-functions"></a>Fonctions de raccordement d'allocation
 Une fonction de raccordement d’allocation, installée à l’aide de [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), est appelée chaque fois en mémoire est allouée, réallouée ou libérée. Ce type de raccordement a de multiples applications. Utilisez-la, par exemple, pour tester la façon dont une application gère les situations de mémoire insuffisante, pour examiner les modèles d’allocation ou pour enregistrer les informations des allocations en vue d’une analyse ultérieure.  
@@ -57,4 +58,3 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
 ## <a name="see-also"></a>Voir aussi  
  [Raccordements d’allocation et Allocations de mémoire du runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [Écriture de fonctions de raccordement de débogage](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2, exemple](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)

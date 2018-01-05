@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9602b5af2506daebe88aac8459ea9da9c9a6ae08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 44c01069539ef5b67a9f208bc89786dfd0ac40a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Ensemble de règles des règles recommandées mixtes
 Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes plus courants et critiques dans vos projets C++ qui prennent en charge le Common Language Runtime, notamment les failles de sécurité potentielles, application tombe en panne et autres erreurs de logique et de conception importantes. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets C++ qui prennent en charge le Common Language Runtime. Ce groupe de règles est conçu pour être configuré avec l’édition de Visual Studio Professional et versions ultérieures.  
@@ -116,7 +117,6 @@ Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes pl
 |[C6504](../code-quality/c6504.md)|Null sur élément non pointeur|  
 |[C6505](../code-quality/c6505.md)|MustCheck sur Void|  
 |[C6506](../code-quality/c6506.md)|Taille de mémoire tampon sur élément non pointeur ou tableau|  
-|[C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)|Incompatibilité de null au déréférencement nul|  
 |[C6508](../code-quality/c6508.md)|Accès en écriture sur constante|  
 |[C6509](../code-quality/c6509.md)|Retour utilisé sur condition préalable|  
 |[C6510](../code-quality/c6510.md)|Terminaison par Null sur élément non pointeur|  
@@ -127,12 +127,8 @@ Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes pl
 |[C6516](../code-quality/c6516.md)|Attribut sans propriété|  
 |[C6517](../code-quality/c6517.md)|Taille valide dans mémoire tampon non lisible|  
 |[C6518](../code-quality/c6518.md)|Taille accessible en écriture dans mémoire tampon non accessible en écriture|  
-|[C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)|Annotation non valide : la propriété NeedsRelease doit avoir la valeur Yes ou No|  
-|[C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)|Déréférencement de chaîne de taille non valide|  
 |[C6522](../code-quality/c6522.md)|Type de chaîne de taille non valide|  
-|[C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)|Paramètre de chaîne de taille non valide|  
 |[C6525](../code-quality/c6525.md)|Chaîne de taille non valide. Emplacement inaccessible|  
-|[C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)|Type de tampon de chaîne de taille non valide|  
 |[C6527](../code-quality/c6527.md)|Annotation non valide : la propriété NeedsRelease ne doit pas être utilisée sur des valeurs de type void|  
 |[C6530](../code-quality/c6530.md)|Style de chaîne de format non reconnu|  
 |[C6540](../code-quality/c6540.md)|L'utilisation des annotations d'attribut sur cette fonction rendra non valides toutes ses annotations __declspec existantes|  
@@ -221,8 +217,7 @@ Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes pl
 |[C28253](../code-quality/c28253.md)|Annotation incohérente pour une fonction : le paramètre contient d'autres annotations sur cette instance.|  
 |[C28254](../code-quality/c28254.md)|dynamic_cast<>() n'est pas pris en charge dans les annotations|  
 |[C28262](../code-quality/c28262.md)|Une erreur de syntaxe dans l'annotation a été trouvée dans la fonction, pour l'annotation|  
-|[C28263](../code-quality/c28263.md)|Une erreur de syntaxe dans une annotation conditionnelle a été trouvée pour l'annotation intrinsèque|  
-|[C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)|Les valeurs des listes de résultats doivent être des constantes.|  
+|[C28263](../code-quality/c28263.md)|Une erreur de syntaxe dans une annotation conditionnelle a été trouvée pour l'annotation intrinsèque| 
 |[C28267](../code-quality/c28267.md)|Une erreur de syntaxe dans les annotations a été trouvée pour l'annotation dans la fonction.|  
 |[C28272](../code-quality/c28272.md)|L'annotation pour la fonction, paramètre pendant la vérification est incohérente avec la déclaration de fonction|  
 |[C28273](../code-quality/c28273.md)|Pour la fonction, les indices sont incohérents avec la déclaration de fonction|  

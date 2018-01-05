@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0659b9ec82353e3c658f1ba89f07fad197dd8670
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 791de4f70113df3759e920591ec94da5108eec9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215 : Les méthodes Dispose doivent appeler la fonction Dispose de la classe de base
 |||  
@@ -57,4 +58,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.IDisposable?displayProperty=fullName>   
- [Modèle de suppression](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Dispose, modèle](/dotnet/standard/design-guidelines/dispose-pattern)

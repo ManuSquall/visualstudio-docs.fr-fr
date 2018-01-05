@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f3c3be4f5a2cebda5b7fd0f705eefc0077b36f29
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: c95d03201fe9c84e01e83e7fd55bef83755337e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procédure pas à pas : analyse du code C/C++ pour rechercher les erreurs
 Cette procédure pas à pas montre comment analyser du code C/C++ pour les erreurs potentielles de code à l’aide de l’outil d’analyse du code pour le code C/C++.  
@@ -38,7 +39,7 @@ Cette procédure pas à pas montre comment analyser du code C/C++ pour les erreu
   
 -   Annoter le code source pour améliorer l’analyse des erreurs de code.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
   
 -   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] ou [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].  
   

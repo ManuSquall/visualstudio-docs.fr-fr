@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 28f572ff80888f9d207c9ade9042414127abb154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 054cf016dba69561591ad6bc8b18029272e85d8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procédure pas à pas : configuration et utilisation d’un ensemble de règles personnalisé
 Cette procédure pas à pas montre comment utiliser les outils d’analyse de code qui ont été configurés pour utiliser un texte personnalisé *ensemble de règles* sur une bibliothèque de classes. Vous pouvez sélectionner un ensemble de règles relatives au type de projet que vous avez spécifié pour votre solution, ou vous pouvez sélectionner les autres ensembles de règles pour répondre à un besoin spécifique, comme l’analyse du code hérité pour les problèmes qui peuvent être résolus de façon permanente. Dans les deux cas, les ensembles de règles peuvent également être personnalisées pour les adapter précisément aux besoins de votre projet.  
@@ -38,7 +39,7 @@ Cette procédure pas à pas montre comment utiliser les outils d’analyse de co
   
 -   Exécuter l’analyse du Code et voir la configuration de la règle fonctionne de comportement de personnalisation.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]ou [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   

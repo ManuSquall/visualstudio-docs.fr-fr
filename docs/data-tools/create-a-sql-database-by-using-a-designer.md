@@ -16,16 +16,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 47fad923b0e31d650d18426bf5f9a7da7bca3e38
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: ffbb2259ff556dcf96021adc47c733fdbcd9125d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Créer une base de données et ajouter des tables dans Visual Studio
 Vous pouvez utiliser Visual Studio pour créer et mettre à jour un fichier de base de données locale dans SQL Server Express LocalDB. Vous pouvez également créer une base de données en exécutant les instructions Transact-SQL dans le **l’Explorateur d’objets SQL Server** fenêtre outil dans Visual Studio. Dans cette rubrique, nous allons créer un fichier .mdf et ajouter des tables et des clés à l’aide du Concepteur de tables.
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
 Pour effectuer cette procédure pas à pas, vous devez disposer facultatif **stockage de données et de traitement** la charge de travail installé dans Visual Studio. Pour l’installer, ouvrez **le programme d’installation de Visual Studio** et choisissez la **les charges de travail** onglet. Sous **Web & Cloud**, choisissez **stockage de données et de traitement**. Choisissez le **modifier** pour ajouter la charge de travail pour Visual Studio.
   
 ## <a name="create-a-project-and-a-local-database-file"></a>Créez un projet et un fichier de base de données locale  

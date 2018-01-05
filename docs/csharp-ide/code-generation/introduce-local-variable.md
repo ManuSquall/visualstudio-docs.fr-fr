@@ -11,11 +11,12 @@ ms.assetid: 1490d6ac-ed56-4d03-95db-c23f23cba70d
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d3e68029ec1233eb5bc77ac21002fb7ce9befe98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: c52a29cb3dd408dacb805479b9680873abb047d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introduce-a-local-variable-in-c"></a>Introduire une variable locale en c# #
 **Ce que :** vous permet de générer d’immédiatement une variable locale pour remplacer une expression existante.

@@ -16,11 +16,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3dd0c93476e646895362b98c2f62b569d87ffe35
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 6ea39704ea232fb304257b897087f0ae60d19c4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procédure pas à pas : analyse du code managé pour les erreurs de code
 Dans cette procédure pas à pas, vous analysez un projet managé pour les erreurs de code à l’aide de l’outil d’analyse du code.  
@@ -31,7 +32,7 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour les erreu
   
 -   Analyser et corriger les avertissements d’erreur de code.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
   
 -   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)].  
   

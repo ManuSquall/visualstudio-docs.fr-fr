@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 372279d82f9f316edf0d1aed203be1ce4e48e236
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 66d972ad65bd6ff3f4f9f5d7dd71893d9fe09c2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 Énumère les différents symboles contenus dans la source de données.  
@@ -42,7 +43,7 @@ IDiaEnumSymbols : IUnknown
 |[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Réinitialise la séquence d’énumération au début.|  
 |[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette interface fournit des symboles regroupés en fonction du type de symbole, par exemple, `SymTagUDT` (types définis par l’utilisateur) ou `SymTagBaseClass`. Pour travailler avec des symboles, groupés par adresse, utilisez la [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) interface.  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
@@ -86,7 +87,7 @@ void ShowUDTs(IDiaSymbol *pGlobals)
 }  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  

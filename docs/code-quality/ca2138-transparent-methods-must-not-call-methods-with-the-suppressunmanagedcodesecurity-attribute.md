@@ -13,18 +13,19 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf17c69673649ac1f3af64bafcb718e8c84eb213
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 0cef17ce232582cd23f961850bd52c048479e849
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138 : Les méthodes transparentes ne doivent pas appeler les méthodes ayant l'attribut SuppressUnmanagedCodeSecurity
 |||  
 |-|-|  
 |TypeName|TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods|  
 |CheckId|CA2138|  
-|Catégorie|Microsoft.Security|  
+|Category|Microsoft.Security|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  

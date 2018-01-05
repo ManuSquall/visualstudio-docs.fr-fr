@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49dc861b6c250c83a6c30e2dbd0fb5035671ff28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 681e0bae46497d9b581e89340069937370831777
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
 Fournit un mappage d’adresse pour prendre en charge les traductions de disposition d’image.  
@@ -46,7 +47,7 @@ HRESULT set_addressMap (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  En général, le DIA extrait les mappages de traduction d’adresse à partir du fichier de base de données (.pdb) de programme. Si ces valeurs sont manquantes, le [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) méthode est appelée à deux reprises, une fois avec le `imagetoSymbols` paramètre la valeur `TRUE` et une fois avec le `imagetoSymbols` paramètre la valeur `FALSE`. Mappage de conversion ne peut pas être activée à l’aide de la [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) (méthode), sauf si les deux tables de traduction sont fournis.  
   
 ## <a name="see-also"></a>Voir aussi  

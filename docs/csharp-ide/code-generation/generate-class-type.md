@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vsl.GenerateFromUsage
 dev_langs: csharp
-ms.openlocfilehash: b6825be5447718e47f7145b0b3b16ec6d0ee076c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: c72b9e898bd150e0d4ec1cc6a7a91d1eb7e6b7a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-class-or-type-in-c"></a>Générer une classe ou un type en langage c# #
 **Ce que :** vous permet de générer d’immédiatement le code pour une classe ou un type. 
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
    --- | ---
    Accès | Définir le type d’avoir *par défaut*, *interne* ou *Public* accès.
    Genre | Cela peut être défini en tant que *classe* ou *struct*.
-   Nom | Cela ne peut pas être modifiée et sera le nom que vous avez déjà tapé.
+   Name | Cela ne peut pas être modifiée et sera le nom que vous avez déjà tapé.
    Projet | S’il existe plusieurs projets dans votre solution, vous pouvez choisir l’emplacement souhaité pour la classe/struct de vie.
    Nom du fichier | Vous pouvez créer un nouveau fichier, ou vous pouvez ajouter le type à un fichier existant.
 

@@ -18,25 +18,26 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20b31e4ea20fd3d1a4ec254507962bf4e8946bb4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 927e13266bf308096592fb5714e1247f4b596ca8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815 : Remplacez Equals et l'opérateur égal à dans les types valeur
 |||  
 |-|-|  
 |TypeName|OverrideEqualsAndOperatorEqualsOnValueTypes|  
 |CheckId|CA1815|  
-|Catégorie|Microsoft.Performance|  
+|Category|Microsoft.Performance|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
  Un type valeur public ne se substitue pas <xref:System.Object.Equals%2A?displayProperty=fullName>, ou n’implémente pas l’opérateur d’égalité (==). Cette règle ne vérifie pas les énumérations.  
   
 ## <a name="rule-description"></a>Description de la règle  
- Pour les types valeur, l’implémentation héritée de <xref:System.Object.Equals%2A> utilise la bibliothèque Reflection et compare le contenu de tous les champs. Le processus de réflexion sollicite fortement les ressources informatiques et la comparaison de chaque champ à la recherche d'une égalité peut s'avérer inutile. Si vous prévoyez que les utilisateurs à comparer ou trier des instances, ou les utilisez en tant que clés de table de hachage, votre type valeur doit implémenter <xref:System.Object.Equals%2A>. Si votre langage de programmation prend en charge la surcharge d’opérateur, vous devez également fournir une implémentation des opérateurs d’égalité et d’inégalité.  
+ Pour les types valeur, l’implémentation héritée de <xref:System.Object.Equals%2A> utilise la bibliothèque Reflection et compare le contenu de tous les champs. Le processus de réflexion sollicite fortement les ressources informatiques et la comparaison de chaque champ à la recherche d'une égalité peut s'avérer inutile. Si vous prévoyez que les utilisateurs à comparer ou trier des instances, ou les utilisez en tant que clés de table de hachage, votre type valeur doit implémenter <xref:System.Object.Equals%2A>. Si votre langage de programmation prend en charge la surcharge des opérateurs, vous devez également fournir une implémentation des opérateurs d’égalité et d’inégalité.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Pour corriger une violation de cette règle, fournissez une implémentation de <xref:System.Object.Equals%2A>. Si vous pouvez implémenter l’opérateur d’égalité.  

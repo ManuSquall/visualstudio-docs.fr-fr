@@ -17,11 +17,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 810583a04cea63582e560d8068827137ab5c8b89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9d8a0587bdfce2284f4767087c88faab573e04b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="interoperability-warnings"></a>avertissements liés à l’interopérabilité
 Les avertissements de l’interopérabilité prennent en charge l’interaction avec les clients COM.  

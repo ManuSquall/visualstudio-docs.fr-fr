@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 118d19a1be813b0488503be86a316ccc82bd7b37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29b783e20925b3eaa4a7b0956fdcfdbcab06a328
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="metadata-as-source"></a>Métadonnées en tant que source
 Métadonnées en tant que source vous permet d’afficher les métadonnées qui apparaissent sous forme de code source C# dans une mémoire tampon en lecture seule. Ceci active une vue des déclarations des types et des membres (sans les implémentations). Vous pouvez afficher des métadonnées en tant que source en exécutant la commande **Atteindre la définition** pour les types ou les membres dont le code source n’est pas disponible à partir de votre projet ou de votre solution.  

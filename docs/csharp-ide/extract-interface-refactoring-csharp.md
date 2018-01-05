@@ -17,11 +17,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ed81f6f0fbcc2e72fd57d7706b051dcdf7bea75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e3e606a86f5989ca928e0b093b564f997f92a559
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-interface-refactoring-c"></a>Refactorisation d'extraction d'interface (C#)
 Extraire l’Interface est une opération de refactorisation qui offre un moyen simple pour créer une nouvelle interface avec des membres qui proviennent d’une classe existante, un struct ou une interface.  
@@ -68,7 +69,7 @@ Extraire l’Interface est une opération de refactorisation qui offre un moyen 
     }  
     ```  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette fonctionnalité est accessible uniquement lorsque le curseur est positionné dans la classe, struct ou interface qui contient les membres que vous souhaitez extraire. Lorsque le curseur est dans cette position, appelez l’opération de refactorisation extraire l’Interface.  
   
  Lorsque vous appelez Extraire l’interface sur une classe ou un struct, la liste des bases et des interfaces est modifiée pour inclure le nouveau nom de l’interface. Lorsque vous appelez Extraire l’interface sur une interface, la liste des bases et des interfaces n’est pas modifiée.  

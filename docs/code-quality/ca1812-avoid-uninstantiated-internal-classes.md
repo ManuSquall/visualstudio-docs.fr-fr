@@ -18,18 +18,19 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f6344b5dca6df21cba4d9a747925a24fffe1025
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 705abf4785676cf673ff8c4c26fa951dc72e8e6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812 : Évitez les classes internes non instanciées
 |||  
 |-|-|  
 |TypeName|AvoidUninstantiatedInternalClasses|  
 |CheckId|CA1812|  
-|Catégorie|Microsoft.Performance|  
+|Category|Microsoft.Performance|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  

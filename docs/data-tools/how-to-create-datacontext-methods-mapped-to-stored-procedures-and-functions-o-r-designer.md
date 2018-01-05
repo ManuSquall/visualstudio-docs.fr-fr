@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: a162c9cb7cf7febf6e3b6e95e927a31b6591b027
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: a56bacfd2d726e2ec7bedf69f6c79ce347e3556e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Comment : créer des méthodes DataContext mappées aux procédures stockées et fonctions (Concepteur O/R)
 Procédures stockées et fonctions peuvent être ajoutées à la [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] comme <xref:System.Data.Linq.DataContext> méthodes. Appel de la méthode et en passant les paramètres requis s’exécute la procédure stockée ou fonction dans la base de données et renvoie les données dans le type de retour de la <xref:System.Data.Linq.DataContext> (méthode). Pour plus d’informations sur les <xref:System.Data.Linq.DataContext> méthodes, consultez [des méthodes DataContext (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md).  
@@ -57,4 +58,4 @@ Procédures stockées et fonctions peuvent être ajoutées à la [!INCLUDE[vs_or
  [Procédure pas à pas : Création des Classes LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
  [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
  [Introduction à LINQ en Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [Comment : écrire des requêtes LINQ en C#](http://msdn.microsoft.com/Library/45e47fcc-cfa1-4b72-b161-d038ae87bd23)
+ [LINQ en C#](/dotnet/csharp/linq/linq-in-csharp)

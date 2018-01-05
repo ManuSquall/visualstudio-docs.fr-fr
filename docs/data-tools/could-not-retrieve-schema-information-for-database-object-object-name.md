@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: da148a7258a055e230e8a1377d90adffebaff6d7
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e29edf31a0ad3535b671ed2e972e994553c78547
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Pas pu récupérer les informations de schéma pour l’objet de base de données \<nom d’objet >
 Ce message apparaît généralement lorsqu’un objet dans **Server Explorer/Database Explorer** est copié dans le Presse-papiers, supprimé de la base de données, puis collé dans le concepteur. Parce que l'objet de base de données n'existe plus, ce message apparaît.  

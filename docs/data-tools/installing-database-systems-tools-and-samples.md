@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 17bdaffa8fdbb6ddff9d7fe5590db021997aa01f
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: data-storage
+ms.openlocfilehash: af76fad7d6288aff08de22b076d27cafbb5c3cff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Systèmes de base de données compatible pour Visual Studio
 
@@ -30,7 +31,7 @@ Pour un système de base de données doit être accessible à partir d’applica
 
 Si vous utilisez l’API de stockage Azure, installez les émulateurs de stockage Azure sur votre ordinateur local pendant le développement afin d’éviter des frais jusqu'à ce que vous êtes prêt à déployer en production. Pour plus d’informations, consultez [utiliser l’émulateur de stockage Azure pour le développement et le test](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/).
 
-La liste suivante inclut certains des systèmes de base de données plus populaires qui peuvent être utilisés dans les projets Visual Studio. La liste n’est pas exhaustive. Pour obtenir la liste des fournisseurs tiers qui offrent des fournisseurs de données ADO.NET qui permettent l’intégration en profondeur avec les outils de Visual Studio, consultez [fournisseurs de données ADO.NET](https://msdn.microsoft.com/en-us/library/dd363565.aspx).
+La liste suivante inclut certains des systèmes de base de données plus populaires qui peuvent être utilisés dans les projets Visual Studio. La liste n’est pas exhaustive. Pour obtenir la liste des fournisseurs tiers qui offrent des fournisseurs de données ADO.NET qui permettent l’intégration en profondeur avec les outils de Visual Studio, consultez [fournisseurs de données ADO.NET](/dotnet/framework/data/adonet/data-providers).
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 

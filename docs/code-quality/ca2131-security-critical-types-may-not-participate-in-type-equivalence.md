@@ -13,18 +13,19 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90789a7a632084d157f94f72deb1c06370223056
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2b1ba8aa4584d0d0505c7916d05e7c9bd6f446da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131 : Les types critiques de sécurité ne peuvent pas participer à l'équivalence des types
 |||  
 |-|-|  
 |TypeName|CriticalTypesMustNotParticipateInTypeEquivalence|  
 |CheckId|CA2131|  
-|Catégorie|Microsoft.Security|  
+|Category|Microsoft.Security|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
@@ -45,4 +46,4 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../code-quality/codesnippet/CSharp/ca2131-security-critical-types-may-not-participate-in-type-equivalence_1.cs)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Code Transparent de sécurité, niveau 2](http://msdn.microsoft.com/Library/4d05610a-0da6-4f08-acea-d54c9d6143c0)
+ [Code Transparent de sécurité, niveau 2](/dotnet/framework/misc/security-transparent-code-level-2)

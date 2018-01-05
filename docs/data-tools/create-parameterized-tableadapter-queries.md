@@ -22,14 +22,15 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6b80f370f670f4dff4b65d7c0e7658f855d5e573
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 65c4ab52ead981d54cf9b0c64c7a3c1c941de5b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Créer des requêtes TableAdapter paramétrées
-Une requête paramétrable retourne des données remplissant les conditions d'une clause WHERE dans la requête. Par exemple, vous pouvez paramétrer une liste de clients de sorte à n'afficher que les clients d'une certaine ville en ajoutant `WHERE City = @City` à la fin de l'instruction SQL qui retourne une liste de clients.  
+Une requête paramétrable retourne des données remplissant les conditions d'une clause WHERE dans la requête. Par exemple, vous pouvez paramétrer une liste de clients de sorte à n'afficher que les clients d’une certaine ville en ajoutant `WHERE City = @City` à la fin de l'instruction SQL qui retourne une liste de clients.  
   
  Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dataset**. Vous pouvez également créer une application Windows avec la **paramétrer la Source de données** commande sur le **données** menu. Le **paramétrer la Source de données** commande crée des contrôles sur votre formulaire où vous pouvez entrer les valeurs de paramètre et exécuter la requête.  
   
@@ -45,7 +46,7 @@ Une requête paramétrable retourne des données remplissant les conditions d'un
   
 -   Créez un TableAdapter, en ajoutant une clause WHERE avec les paramètres souhaités à l'instruction SQL. Pour plus d’informations, consultez [créer et configurer les TableAdapters](../data-tools/create-and-configure-tableadapters.md).  
   
-     ou  
+     - ou -  
   
 -   Ajoutez une requête à un TableAdapter existant, en ajoutant une clause WHERE avec les paramètres souhaités à l'instruction SQL.
   
@@ -70,7 +71,7 @@ Une requête paramétrable retourne des données remplissant les conditions d'un
   
 4.  Tapez un nom dans la **nouveau nom de requête** zone Si vous créez une nouvelle requête.  
   
-     ou  
+     - ou -  
   
      Sélectionnez une requête dans le **nom de requête existant** boîte.  
   

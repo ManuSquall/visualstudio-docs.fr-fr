@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35c6643976faca9a6f990b4959ae8bb1110e59d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dc9554683029c4bee52a0adffcf0f613d6ac7fb8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedatagetlengthblock"></a>IDiaFrameData::get_lengthBlock
 Récupère la longueur, en octets, du bloc de code décrit par le frame.  
@@ -38,7 +39,7 @@ HRESULT get_lengthBlock (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La valeur retournée par cette méthode est généralement utilisée dans l’interprétation d’une chaîne de programme (consultez la [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) méthode pour la définition d’une chaîne de programme).  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8abfd209e5c2f59a0c55128eb235fda868f4bfd5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eec04b3ab02f10d6eb9d745c21d2d0872df0ab8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
 Définit la valeur d’un Registre.  
@@ -42,7 +43,7 @@ HRESULT put_registerValue (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  En dépit de la taille de la valeur, une implémentation doit stocker uniquement ce que le Registre maintient. Par exemple, un Registre de 8 bits contiendrait uniquement les 8-bits les plus bas de la valeur donnée.  
   
 ## <a name="see-also"></a>Voir aussi  

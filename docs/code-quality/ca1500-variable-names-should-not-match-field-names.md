@@ -18,18 +18,19 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7825078ff4d53ad5d90cdd8765f6f4120805b60f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b88d0fec56e16dfdb047aa06a5526526f362a7d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500 : Les noms de variables ne doivent pas être identiques aux noms de champs
 |||  
 |-|-|  
 |TypeName|VariableNamesShouldNotMatchFieldNames|  
 |CheckId|CA1500|  
-|Catégorie|Microsoft.Maintainability|  
+|Category|Microsoft.Maintainability|  
 |Modification avec rupture|Lorsqu’il est déclenché sur un paramètre qui porte le même nom qu’un champ :<br /><br /> -Non rupture - Si le champ et la méthode qui déclare le paramètre ne peut pas être visible à l’extérieur de l’assembly, quelle que soit la modification effectuée.<br />Rupture - Si vous modifiez le nom du champ et pouvez être consultés à l’extérieur de l’assembly.<br />-Modification avec rupture - Si vous modifiez le nom du paramètre et la méthode qui le déclare peut être consultée à l’extérieur de l’assembly.<br /><br /> Lorsqu’il est déclenché sur une variable locale qui porte le même nom qu’un champ :<br /><br /> Sans rupture - Si le champ ne peut pas être visible à l’extérieur de l’assembly, quelle que soit la modification effectuée.<br />Sans rupture - Si vous modifiez le nom de la variable locale et que vous ne modifiez pas le nom du champ.<br />-Modification avec rupture - Si vous modifiez le nom du champ et que vous pouvez le constater en dehors de l’assembly.|  
   
 ## <a name="cause"></a>Cause  

@@ -16,11 +16,12 @@ f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
 dev_langs: csharp
-ms.openlocfilehash: 9ed72704c37fcfc5d0c48ba17937f5b06097ce0b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 6344a30b5772ffa23c09baa4f38a4478d907cc9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="change-a-method-signature-in-c"></a>Modifier une signature de méthode en c# #
 **Ce que :** vous permet de supprimer ou modifier l’ordre des paramètres d’une méthode.

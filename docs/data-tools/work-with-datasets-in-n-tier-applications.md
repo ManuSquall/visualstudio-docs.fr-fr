@@ -23,11 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 85062fe6ea82a73fbc2d64e1d1ce9136d16831cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 1bb1b91894fc562b7080a8225b69b3703948a604
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Utiliser des jeux de données dans les applications multicouches
 *Applications de données multicouches* sont des applications orientées données sont divisées en plusieurs couches logiques (ou *niveaux*). En d'autres termes, une application de données multicouche est une application divisée en plusieurs projets, avec une couche d'accès aux données, une couche de logique métier et une couche Présentation dans son propre projet. Pour plus d’informations, consultez [vue d’ensemble des Applications de données multicouches](../data-tools/n-tier-data-applications-overview.md).  
@@ -51,4 +52,4 @@ Prise en charge du multicouche dans les datasets typés permet le développement
 [Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
 [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)  
 [Créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md)  
-[Multicouches et des Applications distantes avec LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+[Applications multicouches et distantes avec LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

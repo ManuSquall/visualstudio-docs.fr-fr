@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 334f31dcd68e031bfb25b4e0dcd6ce55b9d2f20c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 58d22a756edd625a9c664862d05de5fe405fd9f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Comment : se connecter à des données dans un service
 Vous vous connectez votre application aux données retournées par un service en exécutant la [Assistant de Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png) et en sélectionnant **Service** sur la **choisir un Type de Source de données**page.  

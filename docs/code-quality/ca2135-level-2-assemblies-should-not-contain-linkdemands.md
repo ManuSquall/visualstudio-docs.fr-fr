@@ -13,25 +13,26 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2374b8de7e3d4f915f836f718b32dee028bee9ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ea4d0adf3573410c9f8a25e6b5d3abf2615c8ad3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135 : Les assemblys de niveau 2 ne doivent pas contenir de LinkDemands
 |||  
 |-|-|  
 |TypeName|SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands|  
 |CheckId|CA2135|  
-|Catégorie|Microsoft.Security|  
+|Category|Microsoft.Security|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
  À l’aide d’une classe ou un membre de classe une <xref:System.Security.Permissions.SecurityAction> dans une application qui utilise la sécurité de niveau 2.  
   
 ## <a name="rule-description"></a>Description de la règle  
- L'utilisation de LinkDemands est déconseillée dans l'ensemble de règles de sécurité de niveau 2. Au lieu d’utiliser LinkDemands pour implémenter la sécurité au moment de la compilation juste-à-temps (JIT), marquez les méthodes, types et champs avec le <xref:System.Security.SecurityCriticalAttribute> attribut.  
+ L’utilisation de LinkDemands est déconseillée dans l’ensemble de règles de sécurité de niveau 2. Au lieu d’utiliser LinkDemands pour implémenter la sécurité au moment de la compilation juste-à-temps (JIT), marquez les méthodes, types et champs avec le <xref:System.Security.SecurityCriticalAttribute> attribut.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Pour corriger une violation de cette règle, supprimez le <xref:System.Security.Permissions.SecurityAction> et marquez le type ou le membre avec le <xref:System.Security.SecurityCriticalAttribute> attribut.  

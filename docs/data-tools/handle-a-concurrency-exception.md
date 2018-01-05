@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9162274d234c22e8bbe299389d2b41f57a69d714
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: 52243e28dbc35fbefb67fa1b52ce9fb6cdbda98d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="handle-a-concurrency-exception"></a>Gérer une exception d’accès concurrentiel
 Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) sont déclenchés lorsque deux utilisateurs tentent de modifier les mêmes données dans une base de données en même temps. Dans cette procédure pas à pas, vous créez une application Windows qui montre comment intercepter un <xref:System.Data.DBConcurrencyException>, recherchez la ligne qui a provoqué l’erreur et savoir comment la gérer une stratégie.  
@@ -47,7 +48,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
   
 7.  Intercepter l’erreur, puis afficher les différentes versions de l’enregistrement, permettant à l’utilisateur déterminer s’il faut continuer et mettre à jour la base de données, ou annuler la mise à jour.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
 Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de données Northwind.  
   
 1.  Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement des éditions de SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), ou via le **le programme d’installation de Visual Studio**. Dans le programme d’installation Visual Studio, SQL Server Express LocalDB peut être installé dans le cadre de la **stockage de données et de traitement** charge de travail, ou sous la forme d’un composant individuel.  

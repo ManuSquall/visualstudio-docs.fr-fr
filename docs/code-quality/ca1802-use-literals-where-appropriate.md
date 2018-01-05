@@ -18,18 +18,19 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 66ee20e099de0206664390623b7a50c5fec723a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c2e7841091d3ad5ca093b35b62cca1fdbe6b6a69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802 : Utilisez des littéraux lorsque nécessaire
 |||  
 |-|-|  
 |TypeName|UseLiteralsWhereAppropriate|  
 |CheckId|CA1802|  
-|Catégorie|Microsoft.Performance|  
+|Category|Microsoft.Performance|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  

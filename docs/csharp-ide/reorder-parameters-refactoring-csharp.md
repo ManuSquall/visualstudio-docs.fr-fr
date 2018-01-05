@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3469e9ae7101c9e180fba5558fce389c6dfcc72d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 3a011794599bf1e56e905a40c6269b5639abadb2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Réorganisation de la refactorisation de paramètres (C#)
 `Reorder Parameters`est un langage Visual c# l’opération de refactorisation qui offre un moyen simple pour modifier l’ordre des paramètres des méthodes, indexeurs et délégués. `Reorder Parameters`Modifie la déclaration, et à tous les emplacements où le membre est appelé, les paramètres sont réorganisés pour refléter le nouvel ordre.  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
          Dans cet exemple, la déclaration de méthode et tous les l’appel de méthode pour les sites `MethodB` sont mis à jour.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Vous pouvez réorganiser les paramètres à partir d’une déclaration de méthode ou un appel de méthode. Placez le curseur sur ou en regard de la déclaration de méthode ou du délégué, mais pas dans le corps.  
   
 ## <a name="see-also"></a>Voir aussi  

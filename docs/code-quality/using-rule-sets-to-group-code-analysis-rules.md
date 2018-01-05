@@ -14,11 +14,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44d64b7371f1b27afaa7796dc42d4b7864d20819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 51b282cb86ca83ecf2ace1e4b12c8444928b15e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>Utilisation d'ensembles de règles pour regrouper des règles d'analyse du code
 Lorsque vous configurez l’analyse du code dans [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], ou [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], vous pouvez choisir parmi une liste d’intégrée de Microsoft *ensembles de règles*. Un ensemble de règles est un regroupement logique de règles d’analyse du code qui identifient les problèmes ciblés et des conditions spécifiques. Par exemple, vous pouvez appliquer un ensemble de règles est conçu pour analyser le code des API publiques disponibles, ou vous pouvez appliquer un ensemble de règles qui inclut uniquement les règles minimales recommandées. Vous pouvez également appliquer un ensemble de règles qui inclut toutes les règles.  

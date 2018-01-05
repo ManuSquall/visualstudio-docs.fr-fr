@@ -22,16 +22,16 @@ caps.latest.revision: "41"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 77a2594f69fa9d6aae3742dda522b18cd50ed24b
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: cplusplus
+ms.openlocfilehash: ade7e26ba6742ca85683c74928d0564d55f8b730
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Analyse de code pour les avertissements C/C++
 Cette section répertorie les avertissements d’analyse du Code C/C++ à l’exception de celles qui sont déclenchés par le [C++ Core instructions vérificateurs](code-analysis-for-cpp-corecheck.md). Pour plus d’informations sur l’analyse du Code, consultez [/Analyze (analyse du Code)](/cpp/build/reference/analyze-code-analysis) et [démarrage rapide : analyse du Code pour C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Instructions pour l’écriture de Code sécurisé](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)   
  [Analyse de la qualité du Code C/C++ à l’aide de l’analyse du Code](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)   
  [Utilisation d’annotations SAL pour réduire les défauts du code C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

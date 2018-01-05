@@ -18,18 +18,19 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d07e63363542a9bf5a1dd756026183349659abe1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9c8eedd58df2665b9e00051e40a07a0ac226ec6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036 : Substituer les méthodes sur les types Comparable
 |||  
 |-|-|  
 |TypeName|OverrideMethodsOnComparableTypes|  
 |CheckId|CA1036|  
-|Catégorie|Microsoft.Design|  
+|Category|Microsoft.Design|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  

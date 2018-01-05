@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1850fd8eab4151dfb24bdc30dafe2e110406c37a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1f9cd36f6ea56b8defb3197abc66055616aa5d21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 Énumère les différents éléments de données image contenues dans la source de données.  
@@ -44,7 +45,7 @@ IDiaEnumFrameData : IUnknown
 |[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Retourne un frame par adresse virtuelle relative (RVA).|  
 |[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Retourne un frame à l’adresse virtuelle (VA).|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
  Obtenez cette interface à partir de la [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) (méthode). Consultez l’exemple de détails.  
@@ -101,7 +102,7 @@ void ShowFrameData(IDiaSession *pSession)
 }  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** Dia2.h  
   
  **Bibliothèque :** diaguids.lib  
