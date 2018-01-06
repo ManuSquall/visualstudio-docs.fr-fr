@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17d5686985ee6cfae0ba3765252cd50f078e362e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 35a6cecf5715eb0cf79a0468cf8da35e96d3dba2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 Cette interface spécifie un message d’erreur doit être signalée à l’utilisateur.  
@@ -42,10 +43,10 @@ IDebugErrorEvent2 : IUnknown
 |------------|-----------------|  
 |`GetErrorMessage`|Retourne une erreur sous forme de chaîne explicite.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si le moteur de débogage rencontre une erreur, il peut utiliser cette interface pour signaler le message via Visual Studio à l’utilisateur.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  
