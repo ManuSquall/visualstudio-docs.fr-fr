@@ -24,11 +24,12 @@ caps.latest.revision: "86"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b3e40a5a11e681f372b9cb76b43060b87ac900b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cf755c0e90eda2c5478d16305b7540dd86b9ef5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architecture des personnalisations au niveau du document
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] comprend des projets pour créer des personnalisations au niveau du document pour Microsoft Office Word et Microsoft Office Excel. Cette rubrique décrit les aspects suivants des personnalisations au niveau du document :  

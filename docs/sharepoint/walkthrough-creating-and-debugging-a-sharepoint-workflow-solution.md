@@ -23,16 +23,17 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d64c0767cce43d5b157fca82cc3e1e210a2f8c58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc016efd3d0a3525f733929c294946bf9376417b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-debugging-a-sharepoint-workflow-solution"></a>Procédure pas à pas : création et débogage d'une solution de flux de travail SharePoint
   Cette procédure pas à pas montre comment créer un modèle de flux de travail séquentiel. Le flux de travail vérifie une propriété d’une bibliothèque de documents partagés afin de déterminer si un document a été révisé. Si le document a été révisé, le flux de travail se termine.  
   
- Cette procédure pas à pas décrit les tâches suivantes :  
+ Cette procédure pas à pas décrit les tâches suivantes :  
   
 -   Création d’un projet de flux de travail séquentiel de définition de liste SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -43,9 +44,9 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  Bien que cette procédure pas à pas utilise un projet de flux de travail séquentiel, le processus est identique pour un projet d’ordinateur d’état du flux de travail.  
 >   
->  En outre, votre ordinateur peut afficher des noms différents ou des emplacements de l’utilisateur de Visual Studio pour les éléments d’interface dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  En outre, votre ordinateur peut afficher des noms différents ou des emplacements de l’utilisateur de Visual Studio pour les éléments d’interface dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   Éditions prises en charge de Microsoft Windows et SharePoint. Pour plus d’informations, consultez [configuration requise pour le développement de Solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
@@ -168,7 +169,7 @@ ms.lasthandoff: 10/31/2017
   
 12. Dans le **propriétés** fenêtre, définissez les propriétés comme indiqué dans le tableau suivant.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
     |**CorrelationToken**|**workflowToken**|  
     |**Appelé**|**onWorkflowItemChanged**|  

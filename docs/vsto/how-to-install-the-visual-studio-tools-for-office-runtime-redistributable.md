@@ -18,11 +18,12 @@ caps.latest.revision: "94"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d3439a98a445761a8d357d9b4bef631da034943
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cdd4ab2331bb6e21c126f10258db2e233a533f9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Comment : installer Visual Studio Tools pour Office Runtime Redistributable
   Visual Studio 2010 Tools pour Office Runtime doit être installé sur chaque ordinateur qui exécute les solutions sont créées en utilisant les outils de développement Microsoft Office dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Le runtime est installé automatiquement quand vous installez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et Microsoft Office. Pour plus d'informations, consultez [Visual Studio Tools for Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  

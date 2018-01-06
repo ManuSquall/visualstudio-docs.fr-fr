@@ -22,11 +22,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 110d6231da40ab59c3979b97441b3ac0ad458b3e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ab8d3f8f815ac2b86f58fdf14051c8032bbb5cdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-office-projects"></a>Débogage de projets Office
   Vous pouvez déboguer des projets Office à l'aide des mêmes outils Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que ceux que vous utilisez pour d'autres projets [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Les fonctionnalités du débogueur[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] telles que la capacité d'insérer des points d'arrêt et d'afficher des variables dans la fenêtre **Variables locales** , sont également disponibles lorsque vous déboguez des projets Office. Pour plus d’informations sur les outils de débogage [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , consultez [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).  

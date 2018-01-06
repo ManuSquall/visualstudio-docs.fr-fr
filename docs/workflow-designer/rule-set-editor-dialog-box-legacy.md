@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6ac342921696cb2a88426e2fd1f1ddee79e9341c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1c0b55f1539526e9386df2d6de050c14fb8f59cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Éditeur d'ensemble de règles, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** boîte de dialogue de l’héritage [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -39,7 +40,7 @@ Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** 
 |**Ajouter une règle**|Ajoute une nouvelle définition de règle à l'ensemble de règles.|  
 |**Supprimer**|Supprime la règle sélectionnée de l'ensemble de règles.|  
 |**Chaînage des propriétés**|Spécifie le type de chaînage avant à utiliser avec l'ensemble de règles. Les options disponibles sont les suivantes :<br /><br /> -   **Chaînage complet**, qui spécifie l’utilisation des mécanismes de chaînage avant tout : implicite, attribution de méthode et explicite avec un **mise à jour** (fonction).<br />-   **Séquentiel**, qui spécifie de ne pas utiliser de chaînage avant.<br />-   **Mise à jour explicite uniquement**, qui spécifie d’exécuter uniquement le chaînage avant sur **mise à jour** actions.<br /><br /> Pour plus d’informations sur le chaînage avant, consultez [à l’aide de l’activité PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).|  
-|**Nom**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par nom.|  
+|**Name**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par nom.|  
 |**Priorité**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par priorité.|  
 |**Réévaluation**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par type de réévaluation.|  
 |**Aperçu de la règle**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par l'aperçu de la condition d'une règle et actions.|  

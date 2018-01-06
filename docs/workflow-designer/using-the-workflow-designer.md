@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 5fd5d11d45ba4abdcc4f79e0369f47bfdbce0fd5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0ea166c2770e78482aa47c3fe903339e8e2501a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-workflow-designer"></a>Utilisation de Workflow Designer
 Cette section explique en détail comment créer de nouvelles activités et de nouveaux projets de workflow à l'aide des concepteurs intégrés et de l'éditeur d'expressions qui est hébergé par plusieurs des concepteurs d'activités.  

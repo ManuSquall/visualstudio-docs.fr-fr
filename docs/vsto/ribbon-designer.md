@@ -30,11 +30,12 @@ caps.latest.revision: "79"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 941ca002d2f840805253624e7e0004fb560c4167
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2655cd8f8c75f9c10063a1b85d2390b153782d85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-designer"></a>Concepteur de ruban
   Le Concepteur de ruban est une zone de conception visuelle. Utilisez le Concepteur de ruban pour ajouter des onglets personnalisés, des groupes et des contrôles au ruban d’une application Microsoft Office.  
@@ -202,7 +203,7 @@ ms.lasthandoff: 10/31/2017
 |Fermez le panneau déroulant si le panneau déroulant est ouvert et le contrôle parent est sélectionné.|LEFT|  
 |Ouvrez le panneau de la liste déroulante.|RIGHT|  
 |Sélectionnez le premier contrôle dans le volet de la liste déroulante si le panneau déroulant est ouvert.|RIGHT|  
-|Fermer un panneau déroulant.|Échap|  
+|Fermer un panneau déroulant.|ÉCHAP|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   

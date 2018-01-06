@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98dfa5c201889354f880b2076af4f949407a9b0a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4b0bb6753e83e6d0f5c871aa193ae9ab95aa8c45
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ensurevstocomponent-function"></a>EnsureVSTOComponent, fonction
   Cette API prend en charge l’infrastructure Office et n’est pas destinée à être utilisée directement depuis votre code.  

@@ -31,11 +31,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 33e431dc907de8573a4eca00b9de73bcd0f523f9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5f673d3a6752fda9256e7a71aff195dfa31fd933
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Comment : ajouter des contrôles de contenu à des documents Word
   Dans les projets Word au niveau du document, vous pouvez ajouter des contrôles de contenu au document de votre projet au moment du design ou au moment de l'exécution. Dans les projets de complément Word VSTO, vous pouvez ajouter des contrôles de contenu à un document ouvert au moment de l'exécution.  

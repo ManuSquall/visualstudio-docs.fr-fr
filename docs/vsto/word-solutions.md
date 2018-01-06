@@ -31,11 +31,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7fa4e3b548f5839b16a6bdeaf4a7d8ba6d00beb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 738c7988dbd5ee4757b231904be08dcf295ba5b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="word-solutions"></a>Solutions Word
   Visual Studio fournit des modèles de projet que vous pouvez utiliser pour créer des personnalisations au niveau du document et des compléments VSTO pour Microsoft Office Word. Vous pouvez utiliser ces solutions pour automatiser Word, étendre des fonctionnalités Word et personnaliser l'interface utilisateur de Word. Pour plus d’informations sur les différences entre les personnalisations de niveau document et des Compléments VSTO, consultez [présentation du développement de Solutions Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  

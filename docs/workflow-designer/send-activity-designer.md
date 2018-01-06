@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: abe4a4f418e2204355d55c16194ea31b939383aa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6b3e4d7b00691d7ea2c86a81d0d2880b9f7366bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="send-activity-designer"></a>Concepteur d'activités Send
 Le **envoyer** ActivityDesigner est utilisé pour créer et configurer un <xref:System.ServiceModel.Activities.Send> activité.  

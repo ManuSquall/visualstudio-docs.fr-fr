@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d442dbf376d5615b6c10842c16d01183fc70056a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5d8c1d13263972462ef30e55a34c316f5dd0c7ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-xml-snippets"></a>Procédure : utiliser des extraits XML
 Vous pouvez invoquer des extraits XML en utilisant les deux commandes suivantes du menu contextuel de l'éditeur XML. Le **insérer un extrait** commande insère l’extrait XML à la position du curseur. Le **entourer** commande encapsule l’extrait XML autour du texte sélectionné. Chaque extrait XML possède des types d'extrait désignés. Le type d’extrait détermine si l’extrait de code est disponible avec le **insérer un extrait** commande, le **entourer** commande, ou les deux.  

@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50077e430d6d9f273dd4cd3e247de3df043804c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 80d0438e7c7dfb7fd346dc5faae6f364279658ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procédure : sélectionner les schémas XML à utiliser
 L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\Schemas. Le cache de schéma contient des schémas XML connus utilisés pour IntelliSense et la validation de documents XML.  
@@ -40,7 +41,7 @@ L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\
   
     -   Sélectionnez un schéma dans le **schémas XML** boîte de dialogue, cliquez sur le **utilisez** colonne, puis sélectionnez **utiliser ce schéma**.  
   
-     ou  
+     - ou -  
   
     -   Sélectionnez plusieurs schémas dans le **schémas XML** boîte de dialogue, avec le bouton droit et sélectionnez **utiliser ce schéma**.  
   

@@ -17,11 +17,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 49c511c2d881a9996efe07dcc030e80e21a8cf88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1b57fe5f33bdbc4dfb7ab76856bdd80a3246ea9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Procédure : créer un ensemble de règles PolicyActivity (héritée)
 Cette rubrique décrit comment créer un ensemble de règles d'activité de stratégie à l'aide du [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] hérité qui cible le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -37,7 +38,7 @@ Cette rubrique décrit comment créer un ensemble de règles d'activité de stra
   
 2.  Cliquez sur le **RuleSetReference** propriété.  
   
-3.  Effectuez l’une des opérations suivantes :  
+3.  Effectuez l’une des opérations suivantes :  
   
     -   Cliquez sur le **RuleSetReference** points de suspension **[...]** , puis sélectionnez une règle existante, définie dans le [sélectionnez règle définie boîte de dialogue (héritée)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Passez à l'étape 10.  
   
@@ -45,7 +46,7 @@ Cette rubrique décrit comment créer un ensemble de règles d'activité de stra
   
     -   Tapez un nom d'ensemble de règles. Cliquez sur le **RuleSetReference** points de suspension **[...]** , puis sélectionnez **modifier** dans les [sélectionnez règle définie boîte de dialogue (héritée)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
   
-         ou  
+         - ou -  
   
     -   Tapez un nom d'ensemble de règles. Développez le **RuleSetReference** et sélectionnez les points de suspension **[...]**  dans les **RuleSet Definition** propriété.  
   
@@ -61,7 +62,7 @@ Cette rubrique décrit comment créer un ensemble de règles d'activité de stra
   
 8.  Cliquez sur **ajouter une règle** à nouveau pour ajouter une autre règle.  
   
-9. Lorsque vous avez terminé, cliquez sur **OK**.  
+9. Quand vous avez terminé, cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)   

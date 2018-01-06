@@ -21,11 +21,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d846c1a0a52011991d231e567c1727e456a1feee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a946c190197b40dbc51fe2ddbcff434a21d84c11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bookmark-control"></a>Bookmark (contrôle)
   Le contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> est un signet qui possède un nom unique, qui expose des événements et qui peut être lié à des données. Vous pouvez utiliser le signet comme espace réservé pour marquer un élément ou un emplacement dans un document Microsoft Office Word. Le contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> est une combinaison d’un objet <xref:Microsoft.Office.Interop.Word.Bookmark> et d’un objet <xref:Microsoft.Office.Interop.Word.Range> .  
@@ -76,7 +77,7 @@ ms.lasthandoff: 10/31/2017
 |Signet1|Voici un remplacement|  
 |Signet2|textuel.|  
   
- Si un signet est entièrement contenu dans un autre signet, et si vous changez le texte du signet externe, le signet interne n’est pas supprimé. Toutefois, le signet interne devient un signet vide qui est déplacé à la fin du signet externe. Le tableau suivant montre comment la phrase « Voici un exemple textuel. » est partagée par un signet contenu dans un autre signet.  
+ Si un signet est entièrement contenu dans un autre signet, et si vous changez le texte du signet externe, le signet interne n’est pas supprimé. Toutefois, le signet interne devient un signet vide qui est déplacé à la fin du signet externe. Le tableau suivant montre comment la phrase « Voici un exemple textuel. » est partagée par un signet contenu dans un autre signet.  
   
 |Signet|Texte|  
 |--------------|----------|  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
 |Signet1|Voici un exemple textuel.|  
 |Signet2|exemple|  
   
- Si vous assignez le nouveau texte « Voici un remplacement. » à Signet1, les signets ne se chevauchent plus. Par ailleurs, Signet2 devient un signet vide situé à la fin de Signet1.  
+ Si vous assignez le nouveau texte « Voici un remplacement. » à Signet1, les signets ne se chevauchent plus. Par ailleurs, Signet2 devient un signet vide situé à la fin de Signet1.  
   
 |Signet|Texte|  
 |--------------|----------|  

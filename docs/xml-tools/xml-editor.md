@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea195b8b3af284858253e6300b9a4484eb30f757
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: b6952cfdebb38030d154ad022a799c07fcb9721b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor"></a>Éditeur XML
 L'éditeur XML est basé sur l'éditeur de texte [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio et inclut la prise en charge des langages XML. L'éditeur XML intègre les fonctions suivantes :  
@@ -56,7 +57,7 @@ L'éditeur XML est invoqué pour les extensions de fichier les plus connues, tel
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Validation de documents XML](../xml-tools/xml-document-validation.md)  
- Décrit les fonctions de vérification de la syntaxe et de validation.  
+ Décrit les fonctionnalités de vérification de la syntaxe et de validation.  
   
  [Fonctionnalités IntelliSense de l’éditeur XML](../xml-tools/xml-editor-intellisense-features.md)  
  Décrit la fonctionnalité IntelliSense de l'éditeur.  

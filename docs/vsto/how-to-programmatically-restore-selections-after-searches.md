@@ -19,11 +19,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 28468eaba28d36394754b96bdb13727088885ff1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 84e0a9c18d3af7956c90390e5447011d67369216
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>Comment : restaurer des sélections après des recherches par programmation
   Si vous recherchez et remplacez du texte dans un document, vous souhaiterez restaurer la sélection d’origine de l’utilisateur une fois que la recherche est terminée.  

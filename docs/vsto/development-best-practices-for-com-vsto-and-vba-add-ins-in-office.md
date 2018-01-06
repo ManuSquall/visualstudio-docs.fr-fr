@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b3a2cbaf98eeacb78f55bea23d638cd4a1ab6d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: office
+ms.openlocfilehash: 8985b3bb6e20b24b86174286104158c8830de971
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Meilleures pratiques de développement pour COM, VSTO et VBA compléments dans Office
   Si vous développez des Compléments VSTO COM ou de VBA pour Office, suivez les meilleures pratiques de développement décrits dans cet article.   Cela aide à vérifier :
@@ -27,13 +28,13 @@ ms.lasthandoff: 11/11/2017
 -  Réduction de la complexité du déploiement de compléments pour vos utilisateurs et les administrateurs informatiques.
 -  Échecs d’installation ou d’exécution involontaires de votre complément ne se produisent pas.
 
->Remarque : L’utilisation de la [bureau pont](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root) pour préparer votre COM, VSTO VBA complément ou pour le Windows Store n’est pas pris en charge. Compléments COM, VSTO et VBA ne peut pas être distribués dans le Windows Store ou Office Store. 
+>Remarque : L’utilisation de la [bureau pont](/windows/uwp/porting/desktop-to-uwp-root) pour préparer votre COM, VSTO VBA complément ou pour le Windows Store n’est pas pris en charge. Compléments COM, VSTO et VBA ne peut pas être distribués dans le Windows Store ou Office Store. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>Ne pas vérifier Office pendant l’installation  
  Nous ne recommandons pas avoir votre complément détecter si Office est installé pendant l’installation du complément. Si Office n’est pas installé, vous pouvez installer le complément et l’utilisateur sera en mesure d’y accéder après l’installation d’Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Utilisez des Types Interop incorporés (NoPIA)  
-Si votre solution utilise .NET 4.0 ou version ultérieure, utilisez des types interop incorporés (NoPIA) au lieu de selon l’Office assemblys PIA (Primary Interop) redistribuable. À l’aide de l’incorporation de type réduit la taille de l’installation de votre solution et garantit la compatibilité future. Office 2010 était la dernière version d’Office fourni l’assembly PIA redistribuable. Pour plus d’informations, consultez [procédure pas à pas : incorporation d’informations sur le Type à partir d’assemblys Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) et [équivalence des types et Types Interop incorporés](https://docs.microsoft.com/en-us/dotnet/framework/interop/type-equivalence-and-embedded-interop-types). 
+Si votre solution utilise .NET 4.0 ou version ultérieure, utilisez des types interop incorporés (NoPIA) au lieu de selon l’Office assemblys PIA (Primary Interop) redistribuable. À l’aide de l’incorporation de type réduit la taille de l’installation de votre solution et garantit la compatibilité future. Office 2010 était la dernière version d’Office fourni l’assembly PIA redistribuable. Pour plus d’informations, consultez [procédure pas à pas : incorporation d’informations sur le Type à partir d’assemblys Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) et [équivalence des types et Types Interop incorporés](/windows/uwp/porting/desktop-to-uwp-root).
 
 Si votre solution utilise une version antérieure de .NET, nous recommandons que vous mettez à jour votre solution pour utiliser .NET 4.0 ou version ultérieure. À l’aide de .NET 4.0 ou version ultérieure réduit les conditions préalables d’exécution sur des versions plus récentes de Windows.
   
@@ -66,4 +67,4 @@ Pour fournir des instructions de prise en charge pour les applications clientes 
 >Important : Microsoft gère une liste des compléments pris en charge pour les rapports de compatibilité et les informations de contact d’éditeurs de logiciels. Pour obtenir votre complément répertorié, consultez [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Utiliser Process Monitor pour vous aider à déboguer l’installation ou le chargement des problèmes
-Si votre complément présente des problèmes de compatibilité pendant l’installation ou de la charge, il peuvent être liées à des problèmes avec un accès de fichier ou du Registre. Utilisez [Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) ou un outil de débogage similaire pour vous connecter et de comparer le comportement par rapport à un environnement de travail pour aider à identifier le problème. 
+Si votre complément présente des problèmes de compatibilité pendant l’installation ou de la charge, il peuvent être liées à des problèmes avec un accès de fichier ou du Registre. Utilisez [Process Monitor](/sysinternals/downloads/procmon) ou un outil de débogage similaire pour vous connecter et de comparer le comportement par rapport à un environnement de travail pour aider à identifier le problème.

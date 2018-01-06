@@ -19,11 +19,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f4a2b8eb816100dd47ab46ba298ea838cc7d7259
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6ecabb2b917c2d0f54085f7fe54dea2a3767f07c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-visio-documents"></a>Utilisation de documents Visio
   Les rubriques de cette section fournissent des procédures pas à pas et des exemples de code pour utiliser le modèle objet de Microsoft Office Visio pour utiliser des documents dans les projets Office.  

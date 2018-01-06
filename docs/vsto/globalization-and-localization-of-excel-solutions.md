@@ -16,11 +16,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c51065eacda271daeb12c17fdeb5fe4e6b20683
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ac0fc1ca0efe4134889d8bf5ac1d3ca9ae2551ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalisation et localisation de solutions Excel
   Cette section contient des informations sur les considérations spéciales concernant les solutions Microsoft Office Excel appelées à être exécutées sur des ordinateurs dont les paramètres Windows sont autres qu’anglais. La plupart des aspects de la globalisation et de la localisation des solutions Microsoft Office sont les mêmes que ceux que vous rencontrez quand vous créez d’autres types de solutions à l’aide de Visual Studio. Pour obtenir des informations générales, consultez [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications).  
@@ -80,7 +81,7 @@ Application.ActiveCell.Value2 = "05/12/04"
   
  Ce même code, quand il est utilisé dans une solution créée à l’aide des outils de développement Office dans Visual Studio et passé à Excel via COM Interop, produit les mêmes résultats quand la date est mise en forme dans le style en-US.  
   
- Exemple :  
+ Exemple :  
   
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]  

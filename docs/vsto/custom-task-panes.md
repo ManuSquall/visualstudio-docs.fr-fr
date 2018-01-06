@@ -30,11 +30,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 097a4247ccc7604dd4c39b81e0f733578fc91c89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5a655210f3ab8bbcdbae7c06815a05d1ad24b390
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-task-panes"></a>Volets de tâches personnalisés
   Les volets de tâches sont des panneaux d’interface utilisateur généralement ancrés à l’un des côtés d’une fenêtre dans une application Microsoft Office. Les volets de tâches personnalisés vous permettent de créer votre propre volet de tâches et de fournir aux utilisateurs une interface familière pour accéder aux fonctionnalités de votre solution. Par exemple, l'interface peut comporter des contrôles exécutant du code pour modifier des documents ou afficher des données à partir d'une source de données.  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
  Le tableau suivant répertorie les événements que vous pouvez gérer pour répondre aux modifications susceptibles d'être apportées par l'utilisateur dans le volet de tâches personnalisé.  
   
-|Tâche|Événement|  
+|Tâche|événement|  
 |----------|-----------|  
 |Répondre quand l’utilisateur modifie l’emplacement du volet de tâches|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
 |Répondre quand l’utilisateur masque ou rend visible le volet de tâches|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  

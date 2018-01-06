@@ -21,11 +21,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46b7219aa43be0ce3ae5e9ca6bc1e11c9e4dc25a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: be7cc1dfcaf367fe890b32e4ba4523800936b819
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Comment : insérer du texte dans les documents Word par programmation
   Il existe trois principaux moyens pour insérer du texte dans des documents Microsoft Office Word :  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  Spécifiez une plage au début d’un document et insérer le texte **New Text**.  
   
-     L'exemple de code suivant peut être utilisé dans une personnalisation au niveau du document.  
+     Vous pouvez utiliser l’exemple de code suivant dans une personnalisation au niveau du document.  
   
      [!code-vb[Trin_VstcoreWordAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#51)]  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  Créez un objet <xref:Microsoft.Office.Interop.Word.Range> comprenant les 12 premiers caractères du document.  
   
-     L'exemple de code suivant peut être utilisé dans une personnalisation au niveau du document.  
+     Vous pouvez utiliser l’exemple de code suivant dans une personnalisation au niveau du document.  
   
      [!code-vb[Trin_VstcoreWordAutomation#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomation#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#53)]  

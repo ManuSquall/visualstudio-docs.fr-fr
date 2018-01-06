@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a2839b44af2156ab237bd2b88c0b4c77e41f4b82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 739dff217b59bd9424594c4049c765ad5145d634
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menus contextuels (Explorateur de schémas XML)
 Les éléments de menu contextuel suivants vous permettent d'effectuer des recherches spécifiques au schéma et d'autres opérations.  

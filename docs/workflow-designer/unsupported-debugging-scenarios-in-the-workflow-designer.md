@@ -10,11 +10,12 @@ ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
 caps.latest.revision: "4"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: e442c47611edbc207b3a9ba7c8f10363cd020d10
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 79dfcd15a49b40f1473966e815ddb904c1d7f8f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Scénarios de débogage non pris en charge dans le Concepteur de workflow
 Le Concepteur de workflow du [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] a ajouté de nombreuses nouvelles fonctionnalités, mais certains scénarios de débogage ne sont pas encore pris en charge. Ce document présente en détail les scénarios de débogage du Concepteur de workflow qui ne sont pas pris en charge.  

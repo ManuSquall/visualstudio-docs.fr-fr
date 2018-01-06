@@ -19,11 +19,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7c45d25aeb548b45e032d09eb99cb289d0e2933
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 90377ffe3e8d8c69ba94730defc542d84753aa22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Comment : parcourir les éléments trouvés dans les documents par programmation
   La classe <xref:Microsoft.Office.Interop.Word.Find> a une propriété <xref:Microsoft.Office.Interop.Word.Find.Found%2A> , qui retourne **true** chaque fois qu’un élément recherché est trouvé. Vous pouvez exécuter en boucle toutes les instances trouvées dans un <xref:Microsoft.Office.Interop.Word.Range> à l’aide de la méthode <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> .  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  Déclarez un objet <xref:Microsoft.Office.Interop.Word.Range> .  
   
-     L'exemple de code suivant peut être utilisé dans une personnalisation au niveau du document.  
+     Vous pouvez utiliser l’exemple de code suivant dans une personnalisation au niveau du document.  
   
      [!code-vb[Trin_VstcoreWordAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#79)]
      [!code-csharp[Trin_VstcoreWordAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#79)]  

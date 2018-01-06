@@ -19,11 +19,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e90143904c8d628e4288e24602907a75ae4bc59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9d807c38af14249b265c411de31f6cde03855c60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-local-database-files-in-office-solutions-overview"></a>Vue d'ensemble de l'utilisation de fichiers de base de données locaux dans les solutions Office
   Vous pouvez inclure un fichier de base de données, comme un fichier SQL Server Express (.mdf) ou un fichier Microsoft Office Access (.mdb), dans votre solution Office. Cela permet aux utilisateurs finaux de gérer une base de données local dans les situations où le maintien d’une base de données centralisée n’est pas nécessaire, par exemple dans une solution de stock locale qui est utilisée sur un seul ordinateur.  

@@ -37,11 +37,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2147076bd4aa90230d1216af19459efe71209d50
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5d6a400f5c1ee523e2bb3fd95be215af0e5ba371
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-code-in-office-solutions"></a>Écriture de code dans les solutions Office
   Certains aspects de l'écriture de code dans les projets Office diffèrent des autres types de projets dans Visual Studio. La plupart de ces différences sont liées à la façon dont les modèles objet Office sont exposés au code managé. Les autres différences portent sur la conception des projets Office.  

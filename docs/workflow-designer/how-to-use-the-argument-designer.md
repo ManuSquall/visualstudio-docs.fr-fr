@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 5093e5561140a0ebff57da1f7c21a8954ee58bb3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: aa1cdd0dd563a5f87d4e32f779985afd63319032
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-argument-designer"></a>Procédure : utiliser le concepteur d’arguments
 Par rapport aux versions précédentes du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], le concepteur d'arguments permet aux données de circuler plus facilement à l'intérieur et à l'extérieur d'une activité. Le concepteur est accessible en cliquant sur le **Arguments** situé dans l’angle inférieur gauche de la zone de conception. Le concepteur contient une liste d’arguments qui s’affichent sous forme tabulaire et peuvent être triées en fonction de chacun des en-têtes de colonnes, à l’exception de la **valeur par défaut** colonne. Chaque argument contient une direction Entrée, Sortie, Entrée-Sortie ou Propriété, un type et une valeur d’expression par défaut (le cas échéant). Le nom et la valeur d’expression par défaut sont des champs de texte modifiables ; le type et la direction sont des zones de liste déroulante. [! INCLURE[crabout sur](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).  

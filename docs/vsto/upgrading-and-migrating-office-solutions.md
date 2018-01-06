@@ -21,11 +21,12 @@ caps.latest.revision: "105"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8189032a38aba69b63cb96f824c973b0d41a1aad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fd6ff05fde0e02e9b45b67ffe665a296085bf934
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrading-and-migrating-office-solutions"></a>Mise à niveau et migration de solutions Office
   Si vous disposez d'un projet Microsoft Office créé dans une version antérieure de Visual Studio, vous devez effectuer une mise à niveau du projet afin de l'utiliser dans la version actuelle de Visual Studio. Pour mettre à niveau un projet Microsoft Office, ouvrez-le dans une version de Visual Studio qui inclut les outils de développement Microsoft Office. Pour plus d’informations sur les versions de Visual Studio qui incluent des outils de développement Microsoft Office, consultez [configuration d’un ordinateur pour développer des Solutions Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  

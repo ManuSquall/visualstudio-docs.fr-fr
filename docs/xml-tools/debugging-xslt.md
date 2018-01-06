@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aebe97c9ac685ceeb0d5f3bab5f2b34b2cd023d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fe3d624fdfd187ebec59f43fbde8c750958d6703
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-xslt"></a>Débogage XSLT
 Vous pouvez utiliser le débogueur Visual Studio pour déboguer XSLT. Le débogueur prend en charge la définition de points d'arrêt, l'affichage des états d'exécution de XSLT, etc. Le débogage XSLT est disponible dans Visual Studio Team System et Visual Studio Professional Edition.  

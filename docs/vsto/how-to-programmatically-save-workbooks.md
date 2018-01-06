@@ -19,11 +19,12 @@ caps.latest.revision: "50"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5be604d75183209ecdf068409e26007277cb6d98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d0aa6421893c9d930f917e98fb8aa85b6ceb28d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Comment : enregistrer des classeurs par programmation
   Il existe plusieurs façons d'enregistrer un classeur. Vous pouvez le faire sans modifier le chemin d'accès. Si le classeur n'a pas été enregistré auparavant, vous devez l'enregistrer en spécifiant un chemin d'accès. Sans chemin d'accès explicite, Microsoft Office Excel enregistre le fichier dans le dossier actif avec le nom qui lui a été attribué lors de sa création. Vous pouvez également enregistrer une copie du classeur sans modifier le classeur ouvert en mémoire.  

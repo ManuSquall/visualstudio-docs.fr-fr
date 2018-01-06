@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 514e6e0f52867b586135050d555508caec8cb6e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a5fb633d58485ab605cbfed1d3bddeb7b70e100f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-outlook"></a>Procédure pas à pas : création de votre premier complément VSTO pour Outlook
   Cette procédure pas à pas montre comment créer un complément VSTO pour Microsoft Office Outlook. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l'application elle-même, quel que soit l'élément Outlook ouvert. Pour plus d’informations, consultez [présentation du développement de Solutions Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  

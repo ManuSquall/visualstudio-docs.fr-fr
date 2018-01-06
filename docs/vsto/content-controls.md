@@ -43,11 +43,12 @@ caps.latest.revision: "65"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b2950370b35eb8e2f60f15c5de032284c5546f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d50e7c6177152b2cef3709c983334d05b48a812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="content-controls"></a>Contrôles de contenu
   Les contrôles de contenu vous permettent de concevoir des documents et des modèles qui ont les fonctionnalités suivantes :  
@@ -98,7 +99,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="drop-down-list"></a>Liste déroulante  
  Une liste déroulante affiche la liste des éléments que les utilisateurs peuvent sélectionner. Contrairement à une zone de liste modifiable, la liste déroulante ne permet pas aux utilisateurs d'ajouter ou de modifier des éléments. Pour plus d'informations, consultez le type <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>.  
   
-### <a name="group"></a>Groupe  
+### <a name="group"></a>Regrouper  
  Un contrôle de groupe définit une zone protégée d'un document que les utilisateurs ne peuvent pas modifier ou supprimer. Un contrôle de groupe peut contenir tous types d'éléments de document : du texte, des tableaux, des graphiques et d'autres contrôles de contenu. Pour plus d'informations, consultez le type <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  
   
 ### <a name="picture"></a>Image  
@@ -167,7 +168,7 @@ ms.lasthandoff: 10/31/2017
 |---------------|-----------------------------|----------------------------------------------------------------|  
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
-|<xref:System.Drawing.Image><br /><br /> Tableau <xref:System.Byte>|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Aucune|  
+|<xref:System.Drawing.Image><br /><br /> Tableau <xref:System.Byte>|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Aucun.|  
   
  Dans les projets au niveau du document et les projets de complément VSTO, vous pouvez lier par programmation un contrôle de contenu à une source de données en utilisant la méthode <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> de la propriété <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> du contrôle. Dans ce cas, passez la chaîne **texte** à la *propertyName* paramètre de la <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> (méthode). Le **texte** propriété est la propriété de liaison de données par défaut des contrôles de contenu.  
   
@@ -208,7 +209,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-binding-events-for-content-controls"></a>Événements de liaison de données pour les contrôles de contenu  
  Tous les contrôles de contenu fournissent un jeu des événements que vous pouvez gérer afin d'effectuer des tâches liées aux données, par exemple pour vérifier que le texte d'un contrôle répond à certains critères avant que la source de données soit mise à jour. Le tableau suivant répertorie les événements de contrôle de contenu associés à la liaison de données.  
   
-|Tâche|Événement|  
+|Tâche|événement|  
 |----------|-----------|  
 |Exécuter le code juste avant que Word mette automatiquement à jour le texte d'un contrôle de contenu lié à une partie XML personnalisée.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|  
 |Exécuter le code juste avant que Word mette automatiquement à jour les données dans une partie XML personnalisée liée à un contrôle de contenu (autrement dit, après que le texte du contrôle de contenu a été modifié).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|  

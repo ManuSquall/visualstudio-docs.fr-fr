@@ -21,11 +21,12 @@ caps.latest.revision: "74"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7af3c33ed45a5e0b9678a41900280b1e665766ed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c169edc949f195d416194ae3c3ee1111977f649b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-ui-customization"></a>Personnalisation de l'interface utilisateur Office
   Vous pouvez personnaliser l'interface utilisateur des applications Microsoft Office à l'aide des outils de développement Office dans Visual Studio. Cette rubrique répertorie les fonctionnalités de l’interface utilisateur que vous pouvez personnaliser, comme décrit dans les sections suivantes :  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Vous pouvez ajouter un volet Actions à une personnalisation au niveau du document. Par défaut, ce volet s'affiche sur le côté droit de l'application, à droite du document. Il peut aussi s'afficher à gauche, en haut ou en bas du document.  
   
--   Vous pouvez ajouter un volet de tâches personnalisé à un complément VSTO. Les utilisateurs peuvent ancrer les volets de tâches personnalisés aux différents côtés de la fenêtre d'application ou les faire glisser n'importe où dans la fenêtre.  
+-   Vous pouvez ajouter un volet de tâches personnalisé à un complément VSTO. Les utilisateurs peuvent ancrer les volets de tâches personnalisés aux différents côtés de la fenêtre d’application ou les faire glisser n’importe où dans la fenêtre.  
   
  Les volets Actions et les volets de tâches personnalisés fournissent des fonctionnalités en hébergeant divers contrôles qui facilitent l'exécution de certaines tâches, telles que la saisie de données. Par rapport à un groupe Ruban, les volets Actions et les volets de tâches personnalisés proposent une zone beaucoup plus grande pour inclure le texte et les contrôles.  
   

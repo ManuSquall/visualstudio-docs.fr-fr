@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55da85b9740216cefe55911d79dab2c16b035695
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 602515daedec99bbcfa3efd58469de5d8ba3df7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>Procédure pas à pas : création d'un composant WebPart pour SharePoint à l'aide d'un concepteur
   Si vous créez des composants WebPart pour un site SharePoint, les utilisateurs peuvent modifier directement le contenu, l’apparence et comportement des pages de ce site à l’aide d’un navigateur. Cette procédure pas à pas vous montre comment créer un composant WebPart visuellement à l’aide de SharePoint **composant Visual Web Part** modèle de projet dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -43,9 +44,9 @@ ms.lasthandoff: 10/31/2017
 -   Tester le composant WebPart dans SharePoint.  
   
     > [!NOTE]  
-    >  Votre ordinateur peut afficher des noms différents ou des emplacements pour certains éléments de l’interface utilisateur pour Visual Studio dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+    >  Votre ordinateur peut afficher des noms différents ou des emplacements pour certains éléments de l’interface utilisateur pour Visual Studio dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   Éditions prises en charge de Windows et SharePoint. Consultez [configuration requise pour développer des Solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
@@ -121,7 +122,7 @@ ms.lasthandoff: 10/31/2017
      [!code-vb[SP_VisualWebPart#2](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#2)]
      [!code-csharp[SP_VisualWebPart#2](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#2)]  
   
-4.  Remplacez le `Page_Load` méthode de la `VisualWebPart1` classe par le code suivant. Ce code exécute les tâches suivantes :  
+4.  Remplacez le `Page_Load` méthode de la `VisualWebPart1` classe par le code suivant. Ce code exécute les tâches suivantes :  
   
     -   Ajoute un affichage de calendrier mensuel au contrôle utilisateur.  
   

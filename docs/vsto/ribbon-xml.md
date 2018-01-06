@@ -27,11 +27,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7c0a4dd8bb577ddc52ed6a97b2e412109c214335
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38cf7e2fd9229ddc0a99f317a0680ea272fa3ad5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-xml"></a>Élément XML Ribbon
   L'élément Ruban (XML) vous permet de personnaliser un ruban en utilisant XML. Utilisez l'élément Ruban (XML) si vous souhaitez personnaliser le ruban d'une façon qui n'est pas prise en charge par l'élément Ruban (Concepteur visuel). Pour obtenir une comparaison de ce que vous pouvez faire avec chaque élément, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
@@ -130,7 +131,7 @@ ms.lasthandoff: 10/31/2017
 |---------------|--------------------|-----------------|  
 |**onLoad**|**customUI**|Identifie une méthode qui est appelée quand l'application charge le ruban.|  
 |**idMso**|**onglet**|Identifie un onglet intégré à afficher dans le ruban.|  
-|**id**|**group**|Identifie le groupe.|  
+|**ID**|**group**|Identifie le groupe.|  
 |**étiquette**|**group**|Spécifie le texte qui apparaît sur le groupe.|  
   
  Les éléments et les attributs par défaut figurant dans le fichier XML du ruban sont un petit sous-ensemble des éléments et attributs disponibles. Pour obtenir la liste complète des éléments et des attributs disponibles, consultez l'article technique [Personnalisation de l'interface utilisateur du ruban Office (2007) pour les développeurs (partie 2 sur 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
@@ -142,7 +143,7 @@ ms.lasthandoff: 10/31/2017
   
 |Méthode|Description|  
 |------------|-----------------|  
-|`GetCustomUI`|Retourne le contenu du fichier XML du ruban. Les applications Microsoft Office appellent cette méthode pour obtenir une chaîne XML définissant l'interface utilisateur de votre ruban personnalisé. Cette méthode implémente la méthode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Remarque :** `GetCustomUI` doit être implémentée uniquement pour retourner le contenu du fichier XML du ruban ; il ne doit pas être utilisé pour initialiser votre complément, VSTO.   En particulier, vous ne devez pas essayer d'afficher des boîtes de dialogue ni d'autres fenêtres dans votre implémentation de `GetCustomUI` . Sinon, le ruban personnalisé risque de ne pas fonctionner correctement. Si vous devez exécuter du code qui initialise votre complément VSTO, ajoutez ce code au gestionnaire d’événements `ThisAddIn_Startup` .|  
+|`GetCustomUI`|Retourne le contenu du fichier XML du ruban. Les applications Microsoft Office appellent cette méthode pour obtenir une chaîne XML définissant l'interface utilisateur de votre ruban personnalisé. Cette méthode implémente la méthode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Remarque :** `GetCustomUI` doit être implémentée uniquement pour retourner le contenu du fichier XML du ruban ; il ne doit pas être utilisé pour initialiser votre complément, VSTO. En particulier, vous ne devez pas essayer d'afficher des boîtes de dialogue ni d'autres fenêtres dans votre implémentation de `GetCustomUI` . Sinon, le ruban personnalisé risque de ne pas fonctionner correctement. Si vous devez exécuter du code qui initialise votre complément VSTO, ajoutez ce code au gestionnaire d’événements `ThisAddIn_Startup` .|  
 |`OnLoad`|Affecte le paramètre <xref:Microsoft.Office.Core.IRibbonControl> au champ `ribbon` . Les applications Microsoft Office appellent cette méthode quand elles chargent le ruban personnalisé. Vous pouvez utiliser ce champ pour mettre à jour dynamiquement le ruban personnalisé. Pour plus d'informations, consultez l'article technique [Personnalisation de l'interface utilisateur du ruban Office (2007) pour les développeurs (partie 1 sur 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Appelée par la méthode `GetCustomUI` pour obtenir le contenu du fichier XML du ruban.|  
   

@@ -21,11 +21,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9f12b8944d9174ca885e90b92c8e3a0d0b83215
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bd659a1df9782c4e16dd2664a27a87e858e54ef2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Comment : marquer des contrôles comme étant des contrôles sécurisés
   Pour la sécurité, SharePoint différencie les contrôles Web qui sont protégés contre l’injection de script et des contrôles Web qui ne sont pas. Protégé par des contrôles, ou *contrôles sécurisés*, soit accessible aux utilisateurs non autorisés. Vous pouvez marquer des contrôles comme sécurisés dans la propriété entrées de contrôle sécurisé d’un élément de projet SharePoint ou dans le **Concepteur de packages** lorsque vous ajoutez un assembly au package. Pour plus d'informations, consultez  
@@ -91,7 +92,7 @@ ms.lasthandoff: 10/31/2017
   
 12. Entrez les valeurs pour les propriétés dans le tableau suivant.  
   
-    |Nom de la propriété|Valeur|  
+    |Nom de la propriété|Value|  
     |-------------------|-----------|  
     |Espace de noms|L’espace de noms qualifié complet pour le contrôle, tel que **BdcModelProject1.VisualWebPart1**.|  
     |Nom de type|Button1|  
@@ -108,7 +109,7 @@ ms.lasthandoff: 10/31/2017
   
 15. Entrez les valeurs pour les propriétés dans le tableau suivant.  
   
-    |Nom de la propriété|Valeur|  
+    |Nom de la propriété|Value|  
     |-------------------|-----------|  
     |Espace de noms|L’espace de noms qualifié complet pour le contrôle, tel que **BdcModelProject1.VisualWebPart1**.|  
     |Nom de type|TextBox1|  

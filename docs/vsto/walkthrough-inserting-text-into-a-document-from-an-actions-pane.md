@@ -20,11 +20,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ca062823968153d7c8979cb13c0e3d403237be1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 789ad22524a5c0128320bfb833b8ad97e294a86f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>Procédure pas à pas : Insertion de texte dans un document à partir d'un volet Actions
   Cette procédure pas à pas montre comment créer un volet actions dans un document Microsoft Office Word. Le volet actions contient deux contrôles qui collecter les entrées, puis envoient le texte au document.  
@@ -38,9 +39,9 @@ ms.lasthandoff: 10/31/2017
 -   Affichage du volet actions lorsque l’application s’ouvre.  
   
 > [!NOTE]  
->  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
      **21 mars 2008**  
   
-     **Nom**  
+     **Name**  
   
      **Adresse**  
   
@@ -113,28 +114,28 @@ ms.lasthandoff: 10/31/2017
   
 4.  Ajouter un **zone de texte** le contrôle à un contrôle de volet actions et modifiez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**getName**|  
+    |**Name**|**getName**|  
     |**Taille**|**130, 20**|  
   
 5.  Ajoutez un deuxième **étiquette** le contrôle à un contrôle de volet actions et modifiez le **texte** propriété **adresse**.  
   
 6.  Ajoutez un deuxième **zone de texte** le contrôle à un contrôle de volet actions et modifiez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**getAddress**|  
+    |**Name**|**getAddress**|  
     |**Accepte le retour**|**True**|  
     |**Multiline**|**True**|  
     |**Taille**|**130, 40**|  
   
 7.  Ajouter un **bouton** le contrôle à un contrôle de volet actions et modifiez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**addText**|  
-    |**Text**|**INSERT**|  
+    |**Name**|**addText**|  
+    |**Text**|**Insert**|  
   
 ## <a name="adding-code-to-insert-text-into-the-document"></a>Ajout de Code pour insérer du texte dans le Document  
  Dans le volet actions, écrire du code qui insère le texte dans les zones de texte appropriées <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles dans le document. Vous pouvez utiliser la `Globals` classe pour accéder aux contrôles dans le document à partir des contrôles dans le volet actions. Pour plus d’informations, consultez [accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
@@ -170,7 +171,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-your-document"></a>Pour tester votre document  
   
-1.  Appuyez sur F5 pour exécuter votre projet.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
 2.  Vérifiez que le volet actions est visible.  
   

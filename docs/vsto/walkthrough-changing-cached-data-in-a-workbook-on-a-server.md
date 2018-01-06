@@ -21,11 +21,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a438e34fa6c5a74d648772fd4a5d4580b5f547d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9d6f3032a2c09b176b8fb1df7443cd07ef0ab1e8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-cached-data-in-a-workbook-on-a-server"></a>Procédure pas à pas : modification des données mises en cache dans un classeur sur un serveur
   Cette procédure pas à pas montre comment modifier un jeu de données est mise en cache dans un classeur Microsoft Office Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.  
@@ -47,9 +48,9 @@ ms.lasthandoff: 10/31/2017
  Bien que cette procédure pas à pas suppose que vous exécutez le code sur votre ordinateur de développement, le code illustré dans cette procédure pas à pas peut être utilisé sur un serveur qui n’ont pas installé Excel.  
   
 > [!NOTE]  
->  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -278,7 +279,7 @@ ms.lasthandoff: 10/31/2017
      [!code-csharp[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#6)]
      [!code-vb[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#6)]  
   
-9. Ajoutez le code suivant à la `Main` (méthode), après le code que vous avez ajouté à l’étape précédente. Ce code exécute les tâches suivantes :  
+9. Ajoutez le code suivant à la `Main` (méthode), après le code que vous avez ajouté à l’étape précédente. Ce code exécute les tâches suivantes :  
   
     -   Elle utilise le <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> propriété de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe pour accéder au dataset mis en cache dans le classeur.  
   

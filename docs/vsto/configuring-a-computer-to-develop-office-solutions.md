@@ -16,11 +16,12 @@ caps.latest.revision: "97"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d3e0b354375d6116a1bcc0cc2b0d69ecc2f16b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c07a1ce1434f3ad5f3d8707a4fbaa89695d878f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuring-a-computer-to-develop-office-solutions"></a>Configuration d'un ordinateur pour développer des solutions Office
   Pour créer des compléments VSTO et des personnalisations pour Microsoft Office, installez une version prise en charge de Visual Studio, le .NET Framework et Microsoft Office.  

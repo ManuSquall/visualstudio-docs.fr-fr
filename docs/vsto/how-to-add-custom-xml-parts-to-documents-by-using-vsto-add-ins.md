@@ -24,11 +24,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e851c0dcdbb3ed86dcf4a303cc1ad26b65035bc8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4f7c88ca0ef06ea74f6963166a2b6f421058c0da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Comment : ajouter des parties XML personnalisées à des documents à l'aide de compléments VSTO
   Vous pouvez stocker des données XML dans les types suivants de documents en créant une partie XML personnalisée dans un complément VSTO :  

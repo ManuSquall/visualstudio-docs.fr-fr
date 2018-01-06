@@ -19,11 +19,12 @@ caps.latest.revision: "78"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50960f95b317f389cfe9f99154e51a5103b419d3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 45052deff58e992b427f72188fcb0dc8ade91b95
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="securing-office-solutions"></a>Sécurisation des solutions Office
   Le modèle de sécurité pour les solutions Office implique plusieurs technologies : le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], le centre de confidentialité de Microsoft Office et la zone sites sensibles d’Internet Explorer. Les sections suivantes décrivent le fonctionnement de ces différentes fonctionnalités de sécurité :  

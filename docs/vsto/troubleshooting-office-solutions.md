@@ -19,11 +19,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d4e93509595dc9bd576bc1f3f427ef222df11abd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1e335f4c8215499eedd93590455911c3ec234051
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-office-solutions"></a>Dépannage des solutions Office
   Cette section contient des conseils pour la résolution des problèmes courants que vous pouvez rencontrer lors de la création de solutions à l’aide des outils de développement Office dans Visual Studio.  

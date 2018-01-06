@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6cdc8fb745fb78ff2b5d3ce9a478005eee2737c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 00f8c4c7acec790d9982c786abe8f51be383770c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-workflow-project"></a>Création d'un projet de workflow
 Les workflows, services de workflow [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)], activités personnalisées et concepteurs d'activités personnalisées peuvent tous être créés via des modèles de projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Cette section décrit comment créer des bibliothèques et des applications avec les modèles de projet disponibles dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

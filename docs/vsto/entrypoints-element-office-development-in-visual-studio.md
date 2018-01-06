@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eb219d1f88635a82efbc41acb031cdb46a6d7713
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9b3c9d82b625b2666513f0443493aac59d916e41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;EntryPoint&gt; élément (développement Office dans Visual Studio)
   L’élément `entryPoints` de l’espace de noms `vstav3` contient tous les éléments `entryPoint` associés à une solution Office.  

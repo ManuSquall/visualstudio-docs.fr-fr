@@ -23,11 +23,12 @@ caps.latest.revision: "91"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09a356408815ed6fea416d27e59a58a4edc6a6a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e84bd10c2a7e3ce4c760e0f9231390d4fd037616
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>Déploiement d'une solution Office à l'aide de Windows Installer
 Découvrez comment créer un fichier Windows Installer pour votre solution Office à l'aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  

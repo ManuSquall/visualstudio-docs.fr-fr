@@ -35,11 +35,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3786e74f9913400e7a95d962c8512d2263d6ae39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29407d3f8d95f815b588fff30a4e1268904eb54d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-tools-in-visual-studio"></a>Outils XML dans Visual Studio
 *Langage XML (Extensible Markup)* est un langage de balisage qui fournit un format pour décrire des données. Il permet d'effectuer des déclarations de contenu plus précises et d'obtenir des résultats de recherche plus pertinents entre plusieurs plateformes. De plus, le langage XML permet de séparer la présentation des données. Par exemple, en HTML, vous utilisez des balises pour indiquer au navigateur d'afficher des données en caractères gras ou italiques, tandis qu'en langage XML, vous utilisez des balises uniquement pour décrire les données, telles qu'un nom de ville, une température ou une pression barométrique. En XML, vous utilisez des feuilles de style, telles que des feuilles de style en cascade (CSS) ou de type XSL (eXtensible Stylesheet Language) pour présenter les données dans un navigateur. Le langage XML sépare les données de la présentation et du processus. Cela vous permet d'afficher et de traiter les données comme vous le souhaitez, en appliquant différentes feuilles de style et applications.  
@@ -71,7 +72,7 @@ ms.lasthandoff: 10/31/2017
  Décrit les classes et d'autres éléments qui composent l'espace de noms <xref:System.Xml.Serialization> et fournit des liens vers des informations plus détaillées sur chaque élément.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Document Object Model (DOM) XML](/dotnet/standard/data/xml/xml-document-object-model-dom)  
+ [DOM (Document Object Model) XML](/dotnet/standard/data/xml/xml-document-object-model-dom)  
  Décrit comment la classe <xref:System.Xml.XmlDocument> et les classes qui lui sont associées se conforment aux spécifications de prise en charge d'espace de noms des modèles DOM (Document Object Model) (principaux) de niveau 1 et de niveau 2 du W3C.  
   
  [Lecture de XML avec XmlReader](http://msdn.microsoft.com/en-us/3029834c-a27e-4331-b7aa-711924062182)  

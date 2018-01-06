@@ -21,11 +21,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 847b547aae785d94f8d9025b7b4badf9d8b21075
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 36053a8ef415e35f1244d0e379a49a46ea24f33d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procédure pas à pas : liaison de données simple dans un projet au niveau du document
   Cette procédure pas à pas illustre les principes fondamentaux de la liaison de données dans un projet au niveau du document. Un champ de données dans une base de données SQL Server est lié à une plage nommée dans Microsoft Office Excel. La procédure pas à pas montre également comment ajouter des contrôles qui vous permettent de faire défiler les enregistrements dans la table.  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  

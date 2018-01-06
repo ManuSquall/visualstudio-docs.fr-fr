@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64bac205a64eaf321bb0144d9f81edfa065b9029
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d585c6019455fae5305a848ef62c74cfedf6b6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-ranges"></a>Utilisation des plages
   Les classes <xref:Microsoft.Office.Tools.Excel.NamedRange> et <xref:Microsoft.Office.Interop.Excel.Range> contiennent les méthodes et les propriétés utilisées pour effectuer des tâches avec les plages.  

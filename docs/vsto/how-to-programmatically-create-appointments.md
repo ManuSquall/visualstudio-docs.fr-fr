@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a468918bb796e5641d345902bad297d4617e6d51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9058cbd633931003751baf98fa1fcf34dd32b118
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-create-appointments"></a>Comment : créer des rendez-vous par programmation
   Cet exemple montre comment crée un rendez-vous et ajoute des destinataires à la demande de réunion du rendez-vous.  

@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 035021b3a49bd3fb2af2863e3c8a9b2f88c56077
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 75759b501741329808198aafbc7dd39d0994cb98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Comment : redimensionner des contrôles dans des cellules de feuille de calcul
   Lorsque vous redimensionnez des colonnes ou des lignes sur une feuille de calcul, tous les contrôles hôtes contenus dans les cellules automatiquement redimensionnent à la hauteur ou la largeur de la cellule qui a été redimensionnée. Contrôles Windows Forms ne se redimensionnent pas automatiquement par défaut.  

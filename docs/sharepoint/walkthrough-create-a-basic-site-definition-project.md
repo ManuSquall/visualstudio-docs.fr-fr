@@ -20,11 +20,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bea8fec27b0d53fb1cfe3405d39d271a93f5a8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a792ab750decf1a14b589116d886c847b3ddd478
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Procédure pas à pas : création d'un projet de définition de site de base
   Cette procédure pas à pas montre comment créer une définition de site de base qui contient un composant visual Web part avec certains contrôles sur celui-ci. Par souci de clarté, le composant visual WebPart que vous créez possède uniquement des contrôles. Toutefois, vous pouvez créer des définitions de site SharePoint plus sophistiquées qui incluent des fonctionnalités.  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   Éditions prises en charge de Microsoft Windows et SharePoint. Pour plus d’informations, consultez Configuration requise pour le développement de Solutions SharePoint.  

@@ -19,11 +19,12 @@ caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b1935b7657e7aad612b855ecd4e9c1c8e222c952
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0bacf394887d7e2a08d4daa4f6332721dea5a57c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>Comment : créer des documents par programmation
   Quand vous créez un document par programmation, le nouveau document est un objet <xref:Microsoft.Office.Interop.Word.Document>natif. Cet objet ne possède pas les fonctionnalités de liaison de données et les événements supplémentaires d'un élément hôte <xref:Microsoft.Office.Tools.Word.Document>. Pour plus d'informations, consultez [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  

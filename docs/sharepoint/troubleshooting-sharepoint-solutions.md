@@ -19,11 +19,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa3ecb6be4ba458c7a703e77e56c6ba51490887d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5454aa06d4256c6c5e9ee1a8aa9573377ce9abdb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Dépannage des solutions SharePoint
   Les alertes ou les problèmes suivants peuvent se produire lorsque vous déboguez des solutions SharePoint à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Pour plus d’informations, consultez [débogage de Solutions de flux de travail SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="character-restrictions-in-names-of-projects-and-project-items"></a>Restrictions de caractères dans les noms de projets et éléments de projet  
- Les noms de projets et d'éléments de projet peuvent contenir uniquement des caractères qui sont valides dans un chemin de déploiement dans SharePoint 2010. Aucun autre caractère n’est pas autorisés.  
+ Les noms de projets et d’éléments de projet peuvent contenir uniquement des caractères qui sont valides dans un chemin de déploiement dans SharePoint 2010. Aucun autre caractère n’est pas autorisés.  
   
 ### <a name="error-message"></a>Message d'erreur  
  Message d’erreur « Caractères non valide ».  
@@ -101,7 +102,7 @@ ms.lasthandoff: 10/31/2017
  Une fois que vous créez et déployez une définition de site à l’aide d’une version non anglaise de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (autrement dit, une version avec les paramètres régionaux [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] autres que 1033), le **personnalisations de SharePoint** onglet n’apparaît pas dans le **Sélection du modèle** zone et le nouveau modèle de site n’apparaît pas dans le **nouveau SharePoint Site** page.  
   
 ### <a name="error-message"></a>Message d'erreur  
- Aucun  
+ Aucun.  
   
 ### <a name="resolution"></a>Résolution  
  Ce problème se produit en raison d’une valeur incorrecte dans le **chemin d’accès** propriété pour le fichier de configuration de la définition de site webtemp, tel que webtemp_SiteDefinitionProject1.xml. Dans le **chemin d’accès** propriété pour le fichier webtemp, situé sous le **emplacement de déploiement**, remplacez 1033 par les paramètres régionaux appropriés [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Par exemple, pour utiliser un paramètre régional japonais modifier la valeur par 1041. Pour plus d’informations, consultez [ID de paramètres régionaux assignés par Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561) sur le site Web MSDN.  
@@ -141,7 +142,7 @@ ms.lasthandoff: 10/31/2017
  Lorsque vous créez un projet de récepteur d’événements et que vous sélectionnez certains événements Web tels que « un site est en cours de suppression », l’événement se produit jamais.  
   
 ### <a name="error-message"></a>Message d'erreur  
- Aucun  
+ Aucun.  
   
 ### <a name="resolution"></a>Résolution  
  Ce problème se produit parce que l’étendue de la fonctionnalité doit être « Site » pour gérer les événements au niveau du site, mais l’étendue de la fonctionnalité par défaut pour les projets de récepteur d’événements est « Web ». Les événements Web affectés sont :  
@@ -265,7 +266,7 @@ ms.lasthandoff: 10/31/2017
  Si vous exportez une solution SharePoint, importez la solution dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]et ensuite déployer la solution sur le même site à partir duquel il a été exporté, la solution SharePoint d’origine est remplacée. Ce problème ne se produit pas si vous déployez la solution sur un serveur qui ne dispose pas de la solution d’origine est activée sur ce dernier.  
   
 ### <a name="error-message"></a>Message d'erreur  
- Aucun  
+ Aucun.  
   
 ### <a name="resolution"></a>Résolution  
  Pour éviter le remplacement d’une solution sur le site à partir duquel il a été exporté, modifiez les GUID de SolutionID et les ID de fonctionnalité de toutes les fonctionnalités importées dans le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet.  

@@ -11,11 +11,12 @@ ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
 caps.latest.revision: "7"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: 517cbacd0c92d220ca446b8523c3383f8bac0a97
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7ae55ddf01ae6e9d4a2bee406a51774308cb78cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Boîtes de dialogue Ajouter des paramètres et Ajouter des arguments
 Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **ajouter des paramètres** boîte de dialogue utilisée par le <xref:System.Activities.Statements.InvokeMethod> concepteur.  
@@ -30,7 +31,7 @@ Le tableau suivant décrit les éléments d’interface utilisateur utilisateur 
   
 |||  
 |-|-|  
-|**Nom**|Nom de l’argument.|  
+|**Name**|Nom de l’argument.|  
 |**Direction**|Spécifie si l’argument représente le flux de données dans le délégué, hors du délégué, ou les deux.|  
 |**Type**|Nom du type du nouvel argument.|  
 |**Valeur**|Valeur à utiliser pour cette instance de l’argument de délégué.|

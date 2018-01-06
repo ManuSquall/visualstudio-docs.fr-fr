@@ -18,11 +18,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f9da75468ae417bd835b457cdbd5219ef9462df1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 77325f725edcec41d71e5af38572f05e59c86198
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Comment : supprimer des extensions de code managé de documents
   Vous pouvez supprimer par programmation l’assembly de personnalisation à partir d’un document ou classeur qui fait partie d’une personnalisation au niveau du document pour Microsoft Office Word ou Microsoft Office Excel. Les utilisateurs peuvent ensuite ouvrir les documents et afficher le contenu, mais toute interface utilisateur personnalisée (UI) que vous ajoutez aux documents n’apparaîtra pas et votre code ne fonctionnera pas.  

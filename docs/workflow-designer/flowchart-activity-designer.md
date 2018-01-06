@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 738568db51cce97ee0b110220aa195b4ded2adba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d8bcdcc42ada14f808c165e9e06b269817f79575
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flowchart-activity-designer"></a>Concepteur d'activités d'organigramme
 L'activité <xref:System.Activities.Statements.Flowchart> permet de créer des flux de travail qui définissent et gèrent des contrôles de flux complexes. <xref:System.Activities.Statements.Flowchart> peut être créé dans le code ou à l'aide de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Cette rubrique explique comment utiliser [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Le concepteur d'activités de flux de travail [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] permet aux développeurs de créer des flux de travail de façon naturelle.  

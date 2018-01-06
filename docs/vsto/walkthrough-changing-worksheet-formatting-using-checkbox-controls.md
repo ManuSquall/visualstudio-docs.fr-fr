@@ -19,11 +19,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f10b0ed77dc9d5f97b6fc2fc4f218c86dafee41
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e1729a7921f72df07439261cb054fe30770b24d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>Procédure pas à pas : modification de la mise en forme d'une feuille de calcul à l'aide de contrôles CheckBox
   Cette procédure pas à pas présente les notions de base de l’utilisation de cases à cocher dans une feuille de calcul Microsoft Office Excel pour modifier la mise en forme. Vous utiliserez des outils de développement Office dans Visual Studio pour créer et ajouter du code à votre projet. Pour afficher le résultat sous la forme d’un exemple complet, consultez l’exemple des contrôles Excel [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -39,9 +40,9 @@ ms.lasthandoff: 10/31/2017
 -   Votre projet de test.  
   
 > [!NOTE]  
->  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -70,23 +71,23 @@ ms.lasthandoff: 10/31/2017
   
 4.  Assurez-vous que **Checkbox1** est visible dans la zone de liste objet nom de le **propriétés** fenêtre et modifiez les propriétés suivantes :  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**applyBoldFont**|  
+    |**Name**|**applyBoldFont**|  
     |**Text**|**Gras**|  
   
 5.  Faites glisser une deuxième case à cocher sur ou à côté de la cellule **B4** et modifiez les propriétés suivantes :  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**applyItalicFont**|  
+    |**Name**|**applyItalicFont**|  
     |**Text**|**Italique**|  
   
 6.  Faites glisser une troisième case à cocher sur ou à côté de la cellule **B6** et modifiez les propriétés suivantes :  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**applyUnderlineFont**|  
+    |**Name**|**applyUnderlineFont**|  
     |**Text**|**Soulignement**|  
   
 7.  Sélectionnez tous les contrôles de case à cocher trois tout en maintenant la touche CTRL ENFONCÉE.  
@@ -114,9 +115,9 @@ ms.lasthandoff: 10/31/2017
   
 5.  Assurez-vous que **NamedRange1** est visible dans la zone de liste objet nom de le **propriétés** fenêtre et modifiez les propriétés suivantes :  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**textFont**|  
+    |**Name**|**textFont**|  
     |**Valeur2**|**Cliquez sur une case à cocher pour modifier la mise en forme du texte.**|  
   
  Ensuite, écrivez le code pour mettre en forme le texte lorsqu’une option est sélectionnée.  
@@ -152,7 +153,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-your-workbook"></a>Pour tester votre classeur  
   
-1.  Appuyez sur F5 pour exécuter votre projet.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
 2.  Activez ou désactivez une case à cocher.  
   

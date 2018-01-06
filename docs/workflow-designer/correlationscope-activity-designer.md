@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 3e6e745e470c5e5b5a279f460198729bd9429ccc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 71f2ce7f69351c0e829f43f9e491304db39e6cea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="correlationscope-activity-designer"></a>Concepteur d'activités CorrelationScope
 Le **CorrelationScope** ActivityDesigner est utilisé pour créer et configurer un <xref:System.ServiceModel.Activities.CorrelationScope> activité qui fournit une gestion implicite des activités de messagerie enfants à l’aide un <xref:System.ServiceModel.Activities.CorrelationHandle> objet.  

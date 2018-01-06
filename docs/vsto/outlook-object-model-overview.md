@@ -22,11 +22,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e8102cf760020b5584458ebd77052684a1b4af2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cffce10e443b2605e29d800cb271c4a96dc70359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlook-object-model-overview"></a>Vue d'ensemble du modèle d'objet Outlook
   Pour développer des compléments VSTO pour Microsoft Office Outlook, vous pouvez interagir avec les objets fournis par le modèle objet Outlook. Le modèle objet Outlook fournit des classes et des interfaces qui représentent des éléments dans l'interface utilisateur. Par exemple, l'objet <xref:Microsoft.Office.Interop.Outlook.Application> représente l'application entière, l'objet <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> représente un dossier qui contient des messages électroniques ou d'autres éléments, et l'objet <xref:Microsoft.Office.Interop.Outlook.MailItem> représente un message électronique.  

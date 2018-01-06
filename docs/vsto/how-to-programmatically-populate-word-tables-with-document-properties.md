@@ -18,11 +18,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d66de04cdcd50ea0702c027153cbb45eaddb7074
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e0f6a8ae9639359cb23ccc9d30adfd2eb6d84ac8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Comment : remplir des tableaux Word avec des propriétés de document par programmation
   L'exemple suivant crée un tableau Microsoft Office Word en haut du document et le remplit avec les propriétés du document hôte.  

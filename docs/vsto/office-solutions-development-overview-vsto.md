@@ -18,11 +18,12 @@ caps.latest.revision: "69"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c35be3e79aea37b82e9ae46463582a0874e51a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b3d731fd0c38eab376e99e0f143287507042652
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Vue d’ensemble du développement des solutions Office (VSTO)
   En utilisant Microsoft Office comme partie frontale des solutions, vous pouvez tirer parti des interfaces utilisateur et outils Microsoft Office familiers tels que les fonctionnalités de traitement de texte dans Word, les fonctionnalités d'analyse des données d'Excel et les fonctionnalités de gestion de la messagerie électronique d'Outlook. Vous pouvez développer des solutions dans Visual Studio pour personnaliser des applications Office et ajouter les fonctionnalités spécifiques dont vous avez besoin pour vos processus métier. Par exemple, vous pouvez transformer Word en générateur de contrats qui assemble des contrats à partir de parties préexistantes qui peuvent être modifiables ou non. Avec Excel, vous pouvez créer une feuille de calcul de budget automatisée personnalisée pour différents projets. Vos utilisateurs peuvent aussi mettre des solutions Office hors connexion, ce qui permet de rendre des solutions complexes plus pratiques qu'elles ne le seraient en utilisant une architecture basée sur le Web.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
  Les types de projets que vous pouvez créer dépendent des applications Office installées sur l'ordinateur de développement. Pour plus d'informations, consultez [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
-### <a name="document-level-customizations"></a>Personnalisations au niveau du document  
+### <a name="document-level-customizations"></a>personnalisations au niveau du document  
  Les personnalisations au niveau du document se composent d'un assembly associé à un document, classeur ou modèle unique dans Microsoft Office Word ou Microsoft Office Excel. L'assembly est chargé quand le document associé est ouvert. Les fonctionnalités des personnalisations que vous créez sont disponibles uniquement quand le document associé est ouvert. Les personnalisations ne peuvent pas apporter de modifications au niveau de l'application, comme l'affichage d'un nouvel élément de menu ou onglet de ruban quand un document est ouvert.  
   
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] inclut des outils pour vous aider à créer des personnalisations au niveau du document. Le document que vous personnalisez est hébergé comme une aire de conception dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ce qui permet de concevoir le document par glisser-déplacer de contrôles. De nombreuses autres fonctionnalités [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sont disponibles dans les projets au niveau du document, tels que les contrôles Windows Forms, les liaisons de données par glisser-déplacer et un débogueur intégré.  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
  Pour plus d'informations sur l'utilisation d'assemblys PIA dans les solutions Office VSTO, consultez les rubriques suivantes :  
   
--   [Écriture de code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)  
+-   [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
 -   [Assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)  
   

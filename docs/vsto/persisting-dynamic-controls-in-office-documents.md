@@ -23,11 +23,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e78fb90532cf75ca2e0f2a9dc6b6aa9759c75e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8aef9cc040e6a1bc2449e8b0c5b7de91083b98e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="persisting-dynamic-controls-in-office-documents"></a>Rendre des contrôles dynamiques persistants dans des documents Office
   Les contrôles ajoutés au moment de l’exécution ne sont pas rendus persistants lorsque le document ou le classeur est enregistré et fermé. Le comportement exact est différent pour les contrôles hôtes et les contrôles Windows Forms. Dans les deux cas, vous pouvez ajouter du code à votre solution pour recréer les contrôles lorsque l’utilisateur ouvre de nouveau le document.  

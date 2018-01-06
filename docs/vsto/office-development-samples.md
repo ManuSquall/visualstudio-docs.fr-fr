@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 89e050bb2a946a03e8ccf854134d46af9001dbd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89311ac792a5dfd55497ccdadea89289dca11ff5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-development-samples"></a>Exemples de développement Office
   Visual Studio inclut des exemples d'applications qui montrent comment utiliser les outils de développement Microsoft Office pour créer des solutions Office. Le code de ces exemples illustre la syntaxe, la structure et les techniques utilisées pour générer les solutions Office.  

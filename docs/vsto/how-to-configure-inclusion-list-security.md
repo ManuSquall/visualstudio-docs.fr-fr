@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7032f3663be7df1a06fa4dc16d4f4473e4666cfc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 09ea283b17a980ff9be1fae54ecc8b24912b70ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Comment : configurer la sécurité de la liste d'inclusion
   Si vous disposez des autorisations d’administrateur, vous pouvez configurer le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] invite d’approbation pour contrôler si les utilisateurs finaux sont fournies à l’option d’installation des solutions Office en enregistrant une décision d’approbation à la liste d’inclusion. Pour plus d’informations sur les listes d’inclusion, consultez [faire confiance à des Solutions Office à l’utilisation de listes d’Inclusion](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.  
   
-    |Sous-clé valeur chaîne|Valeur|  
+    |Sous-clé valeur chaîne|Value|  
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
     |**UntrustedSites**|**Désactivé**|  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
     key.Close();  
     ```  
   
-3.  Générez et exécutez l'application.  
+3.  Générez et exécutez l’application.  
   
 ## <a name="restricting-the-inclusion-list"></a>Restreindre la liste d’Inclusion  
  Limiter la liste d’inclusion afin que les solutions doivent être signées avec des certificats Authenticode dont l’identité est connue avant que les utilisateurs sont invités à une décision d’approbation.  
@@ -115,7 +116,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.  
   
-    |Sous-clé valeur chaîne|Valeur|  
+    |Sous-clé valeur chaîne|Value|  
     |-------------------------|-----------|  
     |**UntrustedSites**|**Désactivé**|  
     |**Internet**|**AuthenticodeRequired**|  
@@ -153,7 +154,7 @@ ms.lasthandoff: 10/31/2017
     key.Close();  
     ```  
   
-3.  Générez et exécutez l'application.  
+3.  Générez et exécutez l’application.  
   
 ## <a name="disabling-the-inclusion-list"></a>La désactivation de la liste d’Inclusion  
  Vous pouvez désactiver la liste d’inclusion afin que les utilisateurs finaux peuvent installer uniquement les solutions qui sont signées avec un certificat approuvé et connu.  
@@ -172,7 +173,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.  
   
-    |Sous-clé valeur chaîne|Valeur|  
+    |Sous-clé valeur chaîne|Value|  
     |-------------------------|-----------|  
     |**UntrustedSites**|**Désactivé**|  
     |**Internet**|**Désactivé**|  

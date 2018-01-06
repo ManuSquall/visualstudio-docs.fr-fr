@@ -21,11 +21,12 @@ caps.latest.revision: "79"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32fd9fe36f029296d52127cf1f3be9e3c205d82b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bcc3b19bc84d418798f296f15b36a367223c21fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entrées de Registre pour les compléments VSTO
   Vous devez créer un ensemble spécifique d'entrées de Registre quand vous déployez des compléments VSTO créés à l'aide de Visual Studio. Ces entrées de Registre fournissent des informations qui permettent à l'application Microsoft Office de découvrir et de charger le complément VSTO.  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
   
  Le tableau suivant répertorie les entrées sous cette clé de Registre.  
   
-|Entrée|Type|Valeur|  
+|Entrée|Type|Value|  
 |-----------|----------|-----------|  
 |**Description**|REG_SZ|Obligatoire. Brève description du complément VSTO.<br /><br /> Cette description s'affiche quand l'utilisateur sélectionne le complément VSTO dans le volet **Compléments** de la boîte de dialogue **Options** de l'application Microsoft Office.|  
 |**FriendlyName**|REG_SZ|Obligatoire. Nom descriptif du complément VSTO qui s'affiche dans la boîte de dialogue **Compléments COM** de l'application Microsoft Office. La valeur par défaut est l'ID du complément VSTO.|  

@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eb1dd096b08525cd03f65ed46def81979bfaf272
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ecc4913d9d508d95347945b8f4aaa816bc3d510c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Comment : mettre en cache des données dans un document protégé par un mot de passe
   Si vous ajoutez des données dans le cache de données dans un document ou le classeur est protégé par un mot de passe, les modifications apportées aux données mises en cache ne sont pas enregistrées automatiquement. Vous pouvez enregistrer les modifications aux données mises en cache en substituant deux méthodes dans votre projet.  

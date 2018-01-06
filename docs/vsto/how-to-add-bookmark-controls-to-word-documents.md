@@ -20,11 +20,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7da98e9d013f131e889c287cd1d158b3fb25e814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 86e23b3240739a063a738a984de936d8848fba9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Comment : ajouter des contrôles Bookmark à des documents Word
   Dans les projets au niveau du document, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> au document de votre projet au moment du design ou au moment de l'exécution. Dans les projets de complément VSTO, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> à tout document ouvert au moment de l’exécution.  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>Pour ajouter un contrôle Bookmark à un document à partir de la boîte à outils  
   
-1.  Ouvrez la **boîte à outils** et cliquez sur l'onglet **Contrôles Word** .  
+1.  Ouvrez la **Boîte à outils** , puis cliquez sur l'onglet **Contrôles Word** .  
   
 2.  Faites glisser un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> vers le document.  
   

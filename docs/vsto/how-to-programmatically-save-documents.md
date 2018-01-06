@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c6a47bae9923d68acc189c53766d5206244f97c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 251522a745ee7b8dc9894a403f09d1a6d3f32793
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-save-documents"></a>Comment : enregistrer des documents par programmation
   Il existe plusieurs façons d’enregistrer des documents Microsoft Office Word. Vous pouvez enregistrer un document sans modifier le nom du document, ou vous pouvez enregistrer un document avec un nouveau nom.  

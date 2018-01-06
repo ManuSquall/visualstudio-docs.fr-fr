@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3b483889dbd970b2225c773e6dd43b9333b0d8a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 35247fed0577d410db86b6d3bd436586784f240a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Comment : afficher les erreurs de l'interface utilisateur du complément
   Par défaut, si un complément VSTO tente de manipuler l’interface utilisateur de Microsoft Office et qu’il échoue, aucun message d’erreur n’est affiché. Toutefois, vous pouvez configurer les applications Microsoft Office pour afficher des messages en cas d’erreur liée à l’interface utilisateur. Vous pouvez utiliser ces messages pour vous aider à déterminer pourquoi un ruban personnalisé n’est pas affiché, ou pourquoi un ruban apparaît mais pas les contrôles.  

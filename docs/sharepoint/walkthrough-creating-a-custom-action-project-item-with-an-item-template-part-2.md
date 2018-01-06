@@ -16,11 +16,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b12a52101feebcfac08c7672834d9d7c65d41c55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 96f6e6f27938635628db66f2a6eb58a56cee0d18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Procédure pas à pas : création d'un élément de projet d'action personnalisé avec un modèle d'élément, deuxième partie
   Une fois que vous définissez un type personnalisé d’élément de projet SharePoint et l’associez à un modèle d’élément dans Visual Studio, vous souhaiterez également fournir un Assistant pour le modèle. Vous pouvez utiliser l’Assistant pour collecter des informations à partir des utilisateurs lorsqu’ils utilisent votre modèle pour ajouter une nouvelle instance de l’élément de projet à un projet. Les informations que vous recueillez peuvent être utilisées pour initialiser l’élément de projet.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  Vous pouvez télécharger un exemple qui contient les projets remplis, de code et d’autres fichiers pour cette procédure pas à pas à l’emplacement suivant : [fichiers de projet pour les procédures pas à pas de SharePoint outils d’extensibilité](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour effectuer cette procédure pas à pas, vous devez d’abord créer la solution CustomActionProjectItem en effectuant [procédure pas à pas : création d’un élément de projet d’Action personnalisé avec un modèle d’élément, partie 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Vous devez également les composants suivants sur l’ordinateur de développement pour terminer cette procédure pas à pas :  

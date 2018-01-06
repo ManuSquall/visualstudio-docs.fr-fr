@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c6bef5c0358ecdadb5f8f9aada4e69d748b3fa14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a61221f8349064305bbd925016121da01d52515b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="searching-the-schema-set"></a>Recherche dans le jeu de schémas
 L'Explorateur de schémas XML vous permet d'effectuer les recherches suivantes dans le jeu de schémas :  

@@ -21,11 +21,12 @@ caps.latest.revision: "57"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40076f607e66ec76aaa42ae297d22b38a6234ab0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 46e83b8450a441eb7bc405c855271e315edb2e3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-programming-against-events-of-a-namedrange-control"></a>Procédure pas à pas : programmation d'événements d'un contrôle NamedRange
   Cette procédure pas à pas montre comment ajouter un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle à une feuille de calcul Microsoft Office Excel et de programmer ses événements à l’aide des outils de développement Office dans Visual Studio.  
@@ -41,9 +42,9 @@ ms.lasthandoff: 10/31/2017
 -   Votre projet de test.  
   
 > [!NOTE]  
->  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -142,7 +143,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-your-document"></a>Pour tester votre document  
   
-1.  Appuyez sur F5 pour exécuter votre projet.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
 2.  Placez votre curseur dans `namedRange1`et vérifiez que le texte concernant la <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> événement est inséré et qu’un commentaire est inséré dans la feuille de calcul.  
   

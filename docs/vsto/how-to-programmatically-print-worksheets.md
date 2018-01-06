@@ -19,11 +19,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 030580d2db7490a7ce806cca86477659a0b00267
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6385798eaee40eb3d945b4d18af2d007c1f85f77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>Comment : imprimer des feuilles de calcul par programmation
   Vous pouvez imprimer une feuille de calcul dans un classeur.  

@@ -21,11 +21,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf214f2ffc55cf0846373fcaa226253f276e3d69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a0c8d44c32c03f98a0d2621eff3899ded101b7d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Procédure pas à pas : modification de la mise en forme d'un document à l'aide de contrôles CheckBox
   Cette procédure pas à pas montre comment utiliser des contrôles Windows Forms dans une personnalisation au niveau du document pour Microsoft Office Word pour modifier la mise en forme de texte.  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -71,27 +72,27 @@ ms.lasthandoff: 10/31/2017
   
 3.  Dans la fenêtre **Propriétés** , changez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**applyBoldFont**|  
+    |**Name**|**applyBoldFont**|  
     |**Text**|**Gras**|  
   
 4.  Appuyez sur **entrée** pour déplacer le point d’insertion sous la première case à cocher.  
   
 5.  Ajoutez une deuxième case à cocher au document sous la `ApplyBoldFont` case à cocher et modifiez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**applyItalicFont**|  
+    |**Name**|**applyItalicFont**|  
     |**Text**|**Italique**|  
   
 6.  Appuyez sur **entrée** pour déplacer le point d’insertion sous la deuxième case à cocher.  
   
 7.  Ajoutez une troisième case à cocher au document sous la `ApplyItalicFont` case à cocher et modifiez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**applyUnderlineFont**|  
+    |**Name**|**applyUnderlineFont**|  
     |**Text**|**Soulignement**|  
   
 #### <a name="to-add-text-and-a-bookmark-control"></a>Pour ajouter du texte et un contrôle Bookmark  
@@ -147,7 +148,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-your-document"></a>Pour tester votre document  
   
-1.  Appuyez sur F5 pour exécuter votre projet.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
 2.  Activez ou désactivez une case à cocher.  
   

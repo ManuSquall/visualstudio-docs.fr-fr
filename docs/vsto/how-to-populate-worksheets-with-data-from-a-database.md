@@ -19,11 +19,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3b7cfb842a0372d4410a0794ff8ade901af713b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6efeccfdaa6b3377869fb20f9c66613960529daf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Comment : remplir des feuilles de calcul avec des données provenant d'une base de données
   Vous pouvez accéder des données dans les projets Office au niveau du document de la même façon que vous accédez aux données dans les projets Windows Forms. Vous utilisez les mêmes outils et le même code pour importer les données dans votre solution, et vous pouvez même utiliser des contrôles Windows Forms pour afficher les données. En outre, vous pouvez tirer parti de contrôles appelés contrôles hôtes, qui sont des objets natifs dans Microsoft Office Excel qui ont été améliorés avec des événements et la fonctionnalité de liaison de données. Pour plus d'informations, consultez [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  

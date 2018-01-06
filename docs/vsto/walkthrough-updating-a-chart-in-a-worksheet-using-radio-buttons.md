@@ -19,11 +19,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74bd005514fa2fe72450a95d84f38dd17a7b639f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 90427051f2dd3ca7a906e7b6716a33ddd538f726
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procédure pas à pas : mise à jour d'un graphique dans une feuille de calcul à l'aide de cases d'option
   Cette procédure pas à pas illustre les principes fondamentaux de l’utilisation de cases d’option dans une feuille de calcul Microsoft Office Excel pour permettre à l’utilisateur pour basculer rapidement entre les options. Dans ce cas, les options changent le style d’un graphique.  
@@ -39,9 +40,9 @@ ms.lasthandoff: 10/31/2017
 -   Changement de style de graphique quand une option est sélectionnée.  
   
 > [!NOTE]  
->  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -112,9 +113,9 @@ ms.lasthandoff: 10/31/2017
   
 1.  Sélectionnez le <xref:Microsoft.Office.Tools.Excel.Chart> contrôler dans le concepteur et modifiez les propriétés suivantes dans le **propriétés** fenêtre.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**dataChart**|  
+    |**Name**|**dataChart**|  
     |**HasLegend**|**false**|  
   
 ## <a name="adding-controls"></a>Ajout de contrôles  
@@ -136,30 +137,30 @@ ms.lasthandoff: 10/31/2017
   
 2.  À partir de la **contrôles communs** onglet de la **boîte à outils**, faites glisser un **case** contrôler au contrôle utilisateur et modifiez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**columnChart**|  
+    |**Name**|**columnChart**|  
     |**Text**|**Histogramme**|  
   
 3.  Ajouter un deuxième bouton radio au contrôle utilisateur et modifiez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**barChart**|  
+    |**Name**|**barChart**|  
     |**Text**|**Graphique à barres**|  
   
 4.  Ajoutez une troisième case vers le contrôle utilisateur et modifiez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**lineChart**|  
+    |**Name**|**lineChart**|  
     |**Text**|**Graphique en courbes**|  
   
 5.  Ajoutez une quatrième case d’option au contrôle utilisateur et modifiez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**areaBlockChart**|  
+    |**Name**|**areaBlockChart**|  
     |**Text**|**Graphique en secteurs**|  
   
  Ensuite, écrivez le code pour mettre à jour le graphique lorsque vous cliquez sur une case d’option.  
@@ -238,7 +239,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-your-workbook"></a>Pour tester votre classeur  
   
-1.  Appuyez sur F5 pour exécuter votre projet.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
 2.  Sélectionnez plusieurs cases d'option.  
   

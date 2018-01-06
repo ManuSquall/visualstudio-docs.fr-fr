@@ -20,11 +20,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a07f5b47ac6d9941a24f1d452bb1e290365049ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 357da47a68e3ae25fcd30f9516ce0509b9717807
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-outlook-form-regions"></a>Creating Outlook Form Regions
   Vous pouvez utiliser des zones de formulaire pour personnaliser des formulaires Microsoft Office Outlook. Visual Studio fournit des outils avancés qui simplifient la conception, le développement et le débogage des zones de formulaire.  
@@ -154,7 +155,7 @@ ms.lasthandoff: 10/31/2017
 ###  <a name="HandlingFormRegionEvents"></a>Gestion des événements de zone de formulaire  
  Le **zone de formulaire Outlook** élément ajoute automatiquement les gestionnaires de trois événements suivant au fichier de code de la zone de formulaire.  
   
-|Événement|Description|  
+|événement|Description|  
 |-----------|-----------------|  
 |FormRegionInitializing|Se produit avant l'initialisation de la zone de formulaire. Vous pouvez vérifier des conditions dans ce gestionnaire d'événements pour déterminer si Outlook doit afficher la zone de formulaire. Pour plus d’informations, consultez [Comment : empêcher Outlook d’afficher une zone de formulaire](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).|  
 |FormRegionShowing|Se produit après la création d'une instance de la zone de formulaire, mais avant l'affichage de la zone de formulaire.|  

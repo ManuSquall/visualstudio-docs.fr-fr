@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ce726d9d86bd57e5cf245010212545f0055c8ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 508557ab96747327e090bfa12b118a1a39ad9bbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Page Publier, Concepteur de projets (Développement Office dans Visual Studio)
   La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  Vous pouvez également définir l’emplacement de publication dans l’ **Assistant Publication**. Pour plus d’informations, consultez [Comment : publier une solution Office à l’aide de ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
  **Emplacement du dossier de publication (site web, serveur ftp ou chemin du fichier)**  
  Obligatoire.  
   

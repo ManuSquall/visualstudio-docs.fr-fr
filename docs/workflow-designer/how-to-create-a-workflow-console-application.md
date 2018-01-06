@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: e4b019c2733a8e411b1d3e5be15af3b272708ce1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fcadbe113e92c761559161bdd8a7eba6e95937d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Procédure : créer une application console de workflow
 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] vous permet de créer des workflows pour l'exécution de processus système ou humains. [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] fournit l'aire de conception pour la création de ces workflows. Le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] peut être utilisé pour créer des workflows depuis [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou il peut être intégré dans d'autres applications pour réhéberger le concepteur.  

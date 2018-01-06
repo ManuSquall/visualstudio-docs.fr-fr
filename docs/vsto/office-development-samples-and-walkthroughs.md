@@ -25,11 +25,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cd90fbaf4e8f16d1975cbc540bedf2c1e26c018c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6e8af98ecf48c01a7c81afad54398afdfdc8456b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Exemples et procédures pas à pas relatifs au développement Office
   Cette section contient des exemples d’applications, des exemples de code et des procédures pas à pas qui illustrent la syntaxe, structure et les techniques utilisées pour générer des solutions Microsoft Office.  

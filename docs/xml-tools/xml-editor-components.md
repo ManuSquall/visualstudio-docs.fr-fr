@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3f1e9fca25f29bd7e649816a0529a58c7ec2f7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38d37d1c7805e98d8cf90fbb2e96e1d3c444313c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor-components"></a>Composants de l'éditeur XML
 Cette section décrit les fenêtres et boîtes de dialogue de l'éditeur XML. Étant donné que l'éditeur XML est basé sur l'éditeur de texte, une partie de l'environnement de développement intégré (IDE) est configurée à l'aide des paramètres généraux de l'éditeur de texte.  

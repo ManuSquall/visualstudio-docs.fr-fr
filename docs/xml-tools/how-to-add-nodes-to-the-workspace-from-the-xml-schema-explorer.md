@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4781830d73d36f981937a51e7f9a8bf86780198c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37da28d4c5db1e008af29c03997943720dcfbada
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procédure : ajouter des nœuds à l'espace de travail à partir de l'Explorateur de schémas XML
 Cette rubrique explique comment ajouter des nœuds à la [espace de travail du Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md) à partir de l’Explorateur de schémas XML. Pour cela, vous pouvez faire glisser-déposer des nœuds à partir de l’Explorateur de schémas XML dans une vue du concepteur XSD, ou utiliser le menu contextuel de l’Explorateur de schémas XML. Vous pouvez également ajouter les nœuds mis en surbrillance suite à une recherche effectuée par l'Explorateur de schémas XML. Pour plus d’informations, consultez [Comment : ajouter définir recherche résultat nœuds de schéma pour l’espace de travail](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  

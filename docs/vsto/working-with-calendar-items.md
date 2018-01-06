@@ -23,11 +23,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cc1cacd824e6dda08dbee555b80cdff9a1e0356d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 45117a5fd69705241c7e35dde66270deddca380e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-calendar-items"></a>Utilisation des éléments du calendrier
   La classe <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> contient les méthodes et les propriétés utilisées pour effectuer des tâches avec des éléments de calendrier.  

@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2a037bd26eb3caa24c86fdba63753894b0bd1af3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d395492d030728e65eb5e35b053641f0b684da2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Modifications requises pour exécuter des projets Office qui font l'objet d'une migration vers .NET Framework 4 ou .NET Framework 4.5
   Si l’infrastructure cible d’un projet Office est remplacée par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure à partir d’une version antérieure du .NET Framework, vous devez effectuer les tâches suivantes pour vous assurer que la solution puisse s’exécuter sur l’ordinateur de développement et sur les ordinateurs des utilisateurs finaux :  

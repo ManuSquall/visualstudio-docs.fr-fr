@@ -20,11 +20,12 @@ caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 932a7ccc3f52d80e4f75999f401c61b2663095f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 629e320cc47d65347cdd767b984a151afbf648e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="late-binding-in-office-solutions"></a>Liaison tardive dans les solutions Office
   Certains types dans les modèles objet des applications Office fournissent des fonctionnalités qui sont disponibles via les fonctionnalités de liaison tardive. Par exemple, certaines méthodes et propriétés peuvent retourner différents types d’objets en fonction du contexte de l’application Office, et certains types peuvent exposer des méthodes ou propriétés dans des contextes différents.  

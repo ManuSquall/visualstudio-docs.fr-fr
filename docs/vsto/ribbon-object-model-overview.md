@@ -16,11 +16,12 @@ caps.latest.revision: "75"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655a1b6f3d57ac15fc7a50a603b2a12791251c9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1ca5b96157ee6077d4e904d21ba2a95c4f059e02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-object-model-overview"></a>Vue d'ensemble du modèle objet de ruban
   Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expose un modèle objet fortement typé que vous pouvez utiliser pour obtenir et définir les propriétés des contrôles de ruban au moment de l’exécution. Par exemple, vous pouvez dynamiquement remplir des contrôles de menu, ou afficher et masquer les contrôles en fonction du contexte. Vous pouvez également ajouter des onglets, des groupes et des contrôles à un ruban, mais uniquement avant le chargement du ruban par l’application Office. Pour plus d’informations, consultez [définition de propriétés qui sont en lecture seule](#SettingReadOnlyProperties).  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="RibbonEvents"></a>Événements de ruban  
  Le **ruban** classe contient les trois événements suivants :  
   
-|Événement|Description|  
+|événement|Description|  
 |-----------|-----------------|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Déclenché lorsque l’application Office charge la personnalisation du ruban. Le <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> Gestionnaire d’événements est ajouté automatiquement au fichier de code du ruban. Ce gestionnaire d’événements permet d’exécuter du code personnalisé lors du chargement du ruban.|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Vous permet de cache des images dans la personnalisation du ruban lors du chargement du ruban. Vous pouvez obtenir un léger gain de performance si vous écrivez du code pour mettre en cache les images du ruban dans ce gestionnaire d’événements. Pour plus d'informations, consultez <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
@@ -148,7 +149,7 @@ ms.lasthandoff: 10/31/2017
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
-|**Nom**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
+|**Name**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**Position**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Nombre de lignes**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
@@ -171,7 +172,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="ribbon-control-events"></a>Événements de contrôle de ruban  
  Chaque classe de contrôle contient un ou plusieurs événements. Le tableau suivant décrit ces événements.  
   
-|Événement|Description|  
+|événement|Description|  
 |-----------|-----------------|  
 |Clic|Se produit lorsqu’un contrôle est activé.|  
 |TextChanged|Se produit lorsque le texte d’une zone d’édition ou de la zone de liste déroulante est modifié.|  

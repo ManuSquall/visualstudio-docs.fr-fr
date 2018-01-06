@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7d1aa39880145513049134871a48210a0e1e0b2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d2c7dfef925ff61255e57315a3980fa6a145c235
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mise à jour des personnalisations de ruban dans les projets Office qui font l'objet d'une migration vers .NET Framework 4 ou .NET Framework 4.5
   Si votre projet contient une personnalisation de ruban qui a été créée à l’aide de la **ruban (Concepteur visuel)** d’éléments de projet, vous devez vous les modifications suivantes à votre code de projet si le framework cible est remplacée par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou plus tard.  
@@ -154,7 +155,7 @@ ms.lasthandoff: 10/31/2017
   
  Le tableau suivant répertorie les événements de ruban et les délégués qui leur sont associés dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure.  
   
-|Événement|Délégué à utiliser dans les projets [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] et version ultérieure|  
+|événement|Délégué à utiliser dans les projets [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] et version ultérieure|  
 |-----------|---------------------------------------------------------------------------------------------------|  
 |Événement <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> dans une classe Ribbon générée|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  

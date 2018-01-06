@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: eda078bdfc0eae8861ac4e70b0f1f73a399f994c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7faec3b7a6bf33886928034e1f68ab31c7a60b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-workflow-designer"></a>Utilisation du Concepteur de Workflow hérité
 Le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité fourni par [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] peut être utilisé pour cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  

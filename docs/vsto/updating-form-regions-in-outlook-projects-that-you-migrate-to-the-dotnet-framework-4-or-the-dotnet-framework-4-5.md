@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57bb9bf6ddf20574b06b336b5620adb86c3070c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 44489e710de11357b68ad4312b0c2460f26f1fe6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updating-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mise à jour de zones de formulaire dans les projets Outlook qui font l'objet d'une migration vers .NET Framework 4 ou .NET Framework 4.5
   Si l’infrastructure cible d’un projet de complément VSTO Outlook avec une zone de formulaire passe à [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez apporter quelques changements au code de zone de formulaire généré, ainsi qu’au code qui instancie certaines classes de zone de formulaire au moment de l’exécution.  

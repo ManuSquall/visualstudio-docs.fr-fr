@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vsl.GenerateFromUsage
 dev_langs: VB
-ms.openlocfilehash: 1524d2899d8c775a20943d2695065bfe36885a25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0a900b912c1a15c61dc17164571c1284743581c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-class-or-type-in-visual-basic"></a>Générer une classe ou un type en Visual Basic
 **Ce que :** vous permet de générer d’immédiatement le code pour une classe ou un type. 
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
    --- | ---
    Accès | Définir le type d’avoir *par défaut*, *interne* ou *Public* accès.
    Genre | Cela peut être défini en tant que *classe* ou *struct*.
-   Nom | Cela ne peut pas être modifiée et sera le nom que vous avez déjà tapé.
+   Name | Cela ne peut pas être modifiée et sera le nom que vous avez déjà tapé.
    Projet | S’il existe plusieurs projets dans votre solution, vous pouvez choisir l’emplacement souhaité pour la classe/struct de vie.
    Nom du fichier | Vous pouvez créer un nouveau fichier, ou vous pouvez ajouter le type à un fichier existant.
 

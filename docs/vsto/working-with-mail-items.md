@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b1da36fbf982b26f079b0aebbee67bc9d5f203
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 03d7f2eedef03a4995a9f14540351df80bd537f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-mail-items"></a>Utilisation d'éléments de messagerie
   La <xref:Microsoft.Office.Interop.Outlook.MailItem> classe contient les méthodes et propriétés que vous utilisez pour effectuer des tâches avec des messages électroniques.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Tâche|Procédure|  
 |----------|---------------|  
 |Créer un message électronique.|[Guide pratique pour créer un élément de messagerie par programmation](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
-|Envoie un message électronique.|[Comment : envoyer des messages électroniques par programmation](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
+|Envoie un message électronique.|[Comment : envoyer un message électronique par programmation](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
 |Répondre aux messages électroniques avec une action personnalisée.|[Guide pratique pour exécuter des actions lors de la réception d’un message électronique par programmation](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
 |Enregistrer des pièces jointes.|[Guide pratique pour enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
 |Ajouter des pièces jointes|[Guide pratique pour joindre des fichiers aux éléments de messagerie Outlook par programmation](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  

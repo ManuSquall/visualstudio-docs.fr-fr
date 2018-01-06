@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 65510d727fdf0640ca8efa646a14d0814951cd4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d8288db6ddca4041a409b435ccd730d0b15b013b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-activity-designer"></a>Utilisation du concepteur d'activités hérité
 Cette rubrique décrit comment utiliser le concepteur d'activités dans le [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] hérité. Utilisez le concepteur hérité lorsque vous ciblez le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -49,7 +50,7 @@ Cette rubrique décrit comment utiliser le concepteur d'activités dans le [!INC
   
 |Propriété|Commentaires|  
 |--------------|--------------|  
-|**Nom**|Nom de l'activité.|  
+|**Name**|Nom de l'activité.|  
 |**Classe de base**|Classe de base dont dérive l'activité. La classe de base par défaut est [SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020). Dans le **propriétés** fenêtre, cliquez sur le **une classe de Base** points de suspension **[...]**  pour sélectionner une autre classe de base dans le [rechercher et sélectionner une boîte de dialogue du Type .NET (hérité)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|  
 |**Description**|Description de l'activité définie par l'utilisateur.|  
 |**Activé**|La valeur **True** par défaut pour permettre l’exécution de l’activité et la validation. La valeur **False** pour désactiver l’exécution de l’activité et la validation. Pour plus d’informations sur l’exécution des activités et la validation, consultez [développement d’activités de flux de travail](http://go.microsoft.com/fwlink?LinkID=65024).|  

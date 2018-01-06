@@ -18,11 +18,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 423d7691d76bb9f14fb4cd728d932bc3bb2ddaad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3c72ef641a9a60024448908d68ce9c77d2fc0618
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthroughs-using-excel"></a>Procédures pas à pas utilisant Excel
   Les procédures suivantes montrent comment vous pouvez utiliser les personnalisations de niveau document et les compléments VSTO pour automatiser Microsoft Office Excel et personnaliser l'interface utilisateur.  

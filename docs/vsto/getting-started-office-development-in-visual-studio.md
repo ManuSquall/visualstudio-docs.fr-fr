@@ -16,11 +16,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04e0419fe3c56ef51656aafb20f16d78045dabab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c50dd98c929e8875930b964f3e5f15218fb90174
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-office-development-in-visual-studio"></a>Mise en route (Développement Office dans Visual Studio)
   Cette section contient des rubriques qui vous préparent à l'utilisation des outils de développement Microsoft Office dans Visual Studio.  

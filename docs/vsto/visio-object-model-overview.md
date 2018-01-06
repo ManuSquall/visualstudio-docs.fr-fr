@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 732a270564c40c4ca20952d86abb8618f9a060f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0ba481206e24870e0772290beba129d373c30862
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visio-object-model-overview"></a>Vue d'ensemble du modèle objet Visio
   Pour développer les solutions Office pour Microsoft Office Visio, vous pouvez interagir avec le modèle objet Visio. Ce modèle objet se compose de classes et interfaces qui sont fournies dans l’assembly PIA de Visio et définies dans l’espace de noms Microsoft.Office.Interop.Visio.  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="document-object"></a>Objet Document  
  L’objet Microsoft.Office.Interop.Visio.Document est essentiel à la programmation de Visio. Il représente un fichier de dessin, de gabarit ou de modèle. Lorsque vous ouvrez un document Visio ou créez un nouveau document, vous créez un nouvel objet Microsoft.Office.Interop.Visio.Document, qui est ajouté à la collection de l’objet Microsoft.Office.Interop.Visio.Application Microsoft.Office.Interop.Visio.Documents .  
   
- Le document qui a le focus est appelé document actif. Il est représenté par la propriété Microsoft.Office.Interop.Visio.Application.ActiveDocument de l’objet Microsoft.Office.Interop.Visio.Application.  
+ Le document qui a le focus est appelé le document actif. Il est représenté par la propriété Microsoft.Office.Interop.Visio.Application.ActiveDocument de l’objet Microsoft.Office.Interop.Visio.Application.  
   
 ### <a name="page-object"></a>Page (objet)  
  L’objet Microsoft.Office.Interop.Visio.Page représente la zone de dessin d’une page de premier plan ou d’arrière-plan. Vous pouvez utiliser la propriété Microsoft.Office.Interop.Visio.Page.Background pour déterminer si une page est une page de premier plan ou en arrière-plan.  

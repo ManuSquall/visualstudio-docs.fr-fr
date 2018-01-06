@@ -18,11 +18,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 59578b57bcff053558eba522e88c2e246fc45942
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89fb10f850a082bcbad5a98763102a866fd55f92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-create-new-workbooks"></a>Comment : créer des classeurs par programmation
   Quand vous créez un classeur par programmation, il correspond à un objet <xref:Microsoft.Office.Interop.Excel.Workbook> natif et non pas à un élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook>.  

@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d220cca9ddd08004540768bbeb7322d28dedaa8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 28ed2ff2d68dc5a23cfceeb5d5f0eab6dea35eb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Procédure pas à pas : ajout de contrôles à un document au moment de l’exécution dans un complément VSTO
   Vous pouvez ajouter des contrôles à un document Microsoft Office Word ouvert en utilisant un complément VSTO. Cette procédure pas à pas montre comment utiliser le ruban pour permettre aux utilisateurs d’ajouter un <xref:Microsoft.Office.Tools.Word.Controls.Button> ou un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> à un document.  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -82,17 +83,17 @@ ms.lasthandoff: 10/31/2017
   
 8.  Dans la fenêtre **Propriétés** , changez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**addButtonCheckBox**|  
+    |**Name**|**addButtonCheckBox**|  
     |**Ajouter des contrôles**|**Bouton Ajouter**|  
   
 9. Ajoutez une deuxième case à cocher pour **group1**, puis modifiez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**addRichTextCheckBox**|  
-    |**Ajouter des contrôles**|**Ajouter un contrôle de texte enrichi**|  
+    |**Name**|**addRichTextCheckBox**|  
+    |**Label**|**Ajouter un contrôle de texte enrichi**|  
   
 10. Dans le Concepteur de ruban, double-cliquez sur **Bouton Ajouter**.  
   

@@ -46,11 +46,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3f91a3ad121305e6d7a00df1ab1b337bdea73c1c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8cf489d5a1c4246adf4f5c4220229acb05ac67d5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Projets Office dans l'environnement Visual Studio
   En termes de développement, les projets Microsoft Office offrent une expérience similaire à d'autres types de projets dans Visual Studio, tels que les projets Windows Forms. Lorsque vous créez ou ouvrez un projet Office, les éléments de projet s'affichent dans l' **Explorateur de solutions**. Pour les projets au niveau du document, le document (le document Word ou le classeur Excel) s'ouvre dans Visual Studio et se comporte comme un concepteur visuel.  
@@ -116,7 +117,7 @@ ms.lasthandoff: 10/31/2017
   
  Pour plus d’informations sur l’éditeur de Code, consultez [l’écriture de Code dans l’éditeur de texte et le Code](/visualstudio/ide/writing-code-in-the-code-and-text-editor). Pour plus d’informations sur l’écriture de code dans les projets Office, consultez [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
   
-## <a name="properties-window"></a>Fenêtre Propriétés  
+## <a name="properties-window"></a>Propriétés (fenêtre)  
  La fenêtre **Propriétés** affiche les propriétés des éléments de projet sélectionnés dans l' **Explorateur de solutions**et des éléments d'interface sélectionnés dans le concepteur, tels que les contrôles ou le document dans un projet au niveau du document. Certaines propriétés sont spécifiques à l'application et au document, alors que d'autres sont les mêmes pour tous les projets.  
   
 ## <a name="data-sources-window"></a>Fenêtre Sources de données  

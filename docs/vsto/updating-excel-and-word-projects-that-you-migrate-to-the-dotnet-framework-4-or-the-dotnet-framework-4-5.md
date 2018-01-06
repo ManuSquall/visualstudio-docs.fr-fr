@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d3783eb2bd87decc0e01bb589b08f3d0c05803e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ab2fb40485e92ff097e0c39102024528125dfc72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updating-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mise à jour des projets Excel et Word qui font l'objet d'une migration vers .NET Framework 4 ou .NET Framework 4.5
   Si vous avez un projet Excel ou Word qui utilise l'une des fonctionnalités suivantes, vous devez modifier votre code si la version cible de .NET Framework est remplacée par le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure :  
@@ -136,7 +137,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
   
 -   `Chart` *n*: <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
- Dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure, les types répertoriés dans la liste [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ci-dessus sont des interfaces, et non des classes. Les classes générées dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure dérivent des nouvelles classes suivantes dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]:  
+ Dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure, les types répertoriés dans la liste [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ci-dessus sont des interfaces, et non des classes. Les classes générées dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure dérivent des nouvelles classes suivantes dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] :  
   
 -   `ThisDocument`: <xref:Microsoft.Office.Tools.Word.DocumentBase>  
   
@@ -204,7 +205,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
   
  Le tableau suivant répertorie les événements de contrôle de contenu Word et les délégués qui leur sont associés dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure.  
   
-|Événement|Délégué à utiliser dans les projets [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] et version ultérieure|  
+|événement|Délégué à utiliser dans les projets [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] et version ultérieure|  
 |-----------|---------------------------------------------------------------------------------------------------|  
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Added>|<xref:Microsoft.Office.Tools.Word.ContentControlAddedEventHandler>|  
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlContentUpdatingEventHandler>|  

@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 05744cc6d4cba2a21dd45a3b314367e31a53a92a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 69f320ef3e7b3914d9d6eadb7466b3a216ef95d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Comment : ajouter des commentaires à du texte dans des documents par programmation
   La propriété de commentaires de la classe de Document ajoute un commentaire à une plage de texte dans un document Microsoft Office Word.  

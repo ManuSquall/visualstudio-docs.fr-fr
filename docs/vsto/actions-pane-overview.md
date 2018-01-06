@@ -20,11 +20,12 @@ caps.latest.revision: "101"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9d8bd58c8dabc1114b3516e518992b0f91bc173
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b03d391917bb472b8b7c1780942c8259562a633
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="actions-pane-overview"></a>Vue d'ensemble du volet Actions
   Un volet actions est un **Actions de Document** volet qui est attaché à un document spécifique de Microsoft Office Word ou un classeur Microsoft Office Excel. Il est hébergé dans le volet de tâches, ainsi que d’autres volets de tâches intégrés, tels que les **Source XML** volet dans Excel ou le **Styles et mise en forme** volet de tâches dans Word. Vous pouvez utiliser des contrôles Windows Forms ou WPF pour concevoir l'interface utilisateur du volet Actions.  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
 |FromLeft|Empilez à partir de la gauche du volet Actions.|  
 |FromRight|Empilez à partir de la droite du volet Actions.|  
 |FromTop|Empilez à partir du haut du volet Actions.|  
-|Aucune|Aucun ordre d'empilement défini ; l'ordre est contrôlé par le développeur.|  
+|Aucun.|Aucun ordre d'empilement défini ; l'ordre est contrôlé par le développeur.|  
   
  Le code suivant définit la propriété <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> de façon à empiler les contrôles utilisateur à partir du haut du volet Actions.  
   

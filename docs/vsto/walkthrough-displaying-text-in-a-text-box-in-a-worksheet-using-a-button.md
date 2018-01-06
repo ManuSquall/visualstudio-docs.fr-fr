@@ -20,11 +20,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b95eb6eeb5f8615f8f471ad33139afa49d5633f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7743a3d1c0548b444343b3dc96b25eabac4ac951
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Procédure pas à pas : affichage de texte dans une zone de texte d'une feuille de calcul à l'aide d'un bouton
   Cette procédure pas à pas présente les notions de base de l’utilisation des boutons et des zones de texte dans des feuilles de calcul Microsoft Office Excel et comment créer des projets Excel à l’aide des outils de développement Office dans Visual Studio. Pour afficher le résultat sous la forme d’un exemple complet, consultez l’exemple des contrôles Excel [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -40,9 +41,9 @@ ms.lasthandoff: 10/31/2017
 -   Votre projet de test.  
   
 > [!NOTE]  
->  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -73,9 +74,9 @@ ms.lasthandoff: 10/31/2017
   
 5.  Faites glisser un **bouton** contrôler sur `Sheet1` et modifiez les propriétés suivantes :  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**insertText**|  
+    |**Name**|**insertText**|  
     |**Text**|**Insérer du texte**|  
   
  Maintenant écrire le code à exécuter lorsque le bouton est activé.  
@@ -101,7 +102,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-your-workbook"></a>Pour tester votre classeur  
   
-1.  Appuyez sur F5 pour exécuter votre projet.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
 2.  Cliquez sur le bouton.  
   

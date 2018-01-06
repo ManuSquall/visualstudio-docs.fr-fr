@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: dc005e282e7581aa2af5cba7da3a23040bf9d8b1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ba4078a903c1e30b968928e13c8d160c898bbf0d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Onglet System.Activities de la boîte de dialogue Choisir des éléments de boîte à outils
 Cet onglet de la **choisir des éléments de boîte à outils** boîte de dialogue affiche une liste de [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] activités, des modèles et des éléments à votre disposition. Pour afficher la liste, sélectionnez **choisir des éléments de boîte à outils** à partir de la **outils** menu ou en cliquant sur le **boîte à outils** et en sélectionnant **choisir des éléments de**pour afficher les **choisir des éléments de boîte à outils** boîte de dialogue, puis sélectionnez ses **System.Activities** onglet. L’emploi, la liste contient les activités de flux de travail à partir des assemblys System.Activities, System.ServiceModel.Activities et System.Activities.Core.Presentation ; Toutefois, seuls fournie par le système indiquées les activités et les activités ajoutées via d’autres assemblys affichés dans le **boîte à outils** sont cochées par défaut. Récemment ajouté les activités sont sélectionnées automatiquement et s’affichent dans le **boîte à outils** lorsque vous cliquez sur **OK** sur la boîte de dialogue. En outre, ces éléments s’affichent dans le **boîte à outils** sous une nouvelle catégorie qui correspond à l’espace de noms où se trouve l’activité / / modèle d’élément.  

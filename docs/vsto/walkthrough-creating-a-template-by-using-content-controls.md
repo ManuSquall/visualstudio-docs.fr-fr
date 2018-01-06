@@ -19,11 +19,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7edb589551f888427be6abcbb8f86c2e86b4349c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8508f12d0e0bbf6dbabc0c12f8e5feb8d7d11d1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-template-by-using-content-controls"></a>Procédure pas à pas : création d'un modèle à l'aide de contrôles de contenu
   Cette procédure pas à pas montre comment créer une personnalisation au niveau du document qui utilise des contrôles de contenu pour créer un contenu structuré et réutilisable dans un modèle Microsoft Office Word.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
  Après avoir créé un document à partir du modèle, vous pouvez ajouter l'un de ces tableaux dans le document en utilisant plusieurs objets <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> qui affichent les blocs de construction disponibles dans le modèle.  
   
- Cette procédure pas à pas décrit les tâches suivantes :  
+ Cette procédure pas à pas décrit les tâches suivantes :  
   
 -   Création de tableaux contenant des contrôles de contenu dans un modèle Word au moment du design  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  

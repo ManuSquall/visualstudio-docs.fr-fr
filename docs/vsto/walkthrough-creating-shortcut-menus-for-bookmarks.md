@@ -20,11 +20,12 @@ caps.latest.revision: "57"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8dbb248fdaab10aaef6146ae68e36a64b60bb453
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 33f1e0c87130548ea5c2f9ad6ecc69e7ceac3186
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>Procédure pas à pas : création de menus contextuels pour les signets
   Cette procédure pas à pas montre comment créer des menus contextuels pour <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles dans une personnalisation au niveau du document pour Word. Lorsqu’un utilisateur clique sur le texte d’un signet, un menu contextuel s’affiche et proposant des options de mise en forme le texte.  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  

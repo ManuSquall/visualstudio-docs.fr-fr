@@ -21,11 +21,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a020b82dccd1491e0381bee8ff104b944d5cf7b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 34ee1ca7d62a661f915edba1adc22c18f90256b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Procédure pas à pas : débogage d'une application SharePoint avec IntelliTrace
   Grâce à IntelliTrace, vous pouvez déboguer plus facilement des solutions SharePoint. Les débogueurs classiques vous permettent uniquement d’un instantané d’une solution au moment actuel. Toutefois, vous pouvez utiliser IntelliTrace pour examiner les événements passés qui s’est produite dans votre solution et le contexte dans lequel ils s’est produite et accéder au code.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   Éditions prises en charge de Windows et SharePoint. Consultez [configuration requise pour développer des Solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  

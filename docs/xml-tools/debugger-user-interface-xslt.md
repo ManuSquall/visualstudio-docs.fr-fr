@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 422dd91a5b8e22bb9859d8ffa10160bdbe77a021
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 1071db6a7a8205ef337737473a18d1a6c31af43c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface utilisateur du débogueur (XSLT)
 Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle ne présente que les parties de l'interface dont le comportement de débogage est spécifique à XSLT.  
@@ -26,7 +27,7 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
 ## <a name="locals-window"></a>Fenêtre Variables locales  
  La fenêtre Variables locales affiche des informations sur les variables définies dans la feuille de style. Elle comporte trois colonnes d'informations :  
   
- **Nom**  
+ **Name**  
  Cette colonne contient les noms de toutes les variables locales dans la portée actuelle. Les collections de nœuds ont un contrôle d’arborescence que vous pouvez explorer pour en voir les sous-dossiers.  
   
  **Valeur**  

@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7768465f46e5344b88da9006a7de2396e3b75ba6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 150c8794fb35ca017be7e0873dc0d1b84ebfc38c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="iwefdebuggingsupport-interface"></a>IWefDebuggingSupport, interface
   Implémentée par un environnement de débogage, tels que Visual Studio, pour faciliter le débogage des applications pour Office. L’application Office, telles que Word ou Excel, obtient cette interface à partir de Visual Studio, puis appelle les méthodes sur l’interface à certains points durant la session de débogage.  
@@ -43,7 +44,7 @@ interface IWefDebuggingSupport : IUnknown
 ## <a name="methods"></a>Méthodes  
  Le tableau suivant répertorie les méthodes que l’iwefdebuggingsupport, interface définit.  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |[GetAutoInsertExtensions, méthode](../vsto/getautoinsertextensions-method.md)|Obtient des informations sur les applications pour Office qui doivent être insérés automatiquement pendant le débogage.|  
 |[SetWefProcessId, méthode](../vsto/setwefprocessid-method.md)|Fournit l’identificateur de processus qui s’exécutera le contenu Web Extensions Framework (WEF).|  

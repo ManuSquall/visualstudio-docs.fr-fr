@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: aa06d4c63dbb18c080c8a6b8ffda01838607ba55
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ab9ef5504b8785e31446d51f517e8ac41c27d579
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pick-activity-designer"></a>Concepteur d'activités Pick
 L'activité <xref:System.Activities.Statements.Pick> fournit un flux de contrôle basé sur les événements. Elle exécute l'une des différentes branches en réponse à un événement de déclenchement.  
@@ -41,4 +42,4 @@ L'activité <xref:System.Activities.Statements.Pick> fournit un flux de contrôl
 ## <a name="see-also"></a>Voir aussi  
  [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)   
  [Activité Pick](/dotnet/framework/windows-workflow-foundation/pick-activity)   
- [À l’aide de l’activité Pick](/dotnet/framework/windows-workflow-foundation/samples/using-the-pick-activity)
+ [Utilisation de l’activité Pick](/dotnet/framework/windows-workflow-foundation/samples/using-the-pick-activity)

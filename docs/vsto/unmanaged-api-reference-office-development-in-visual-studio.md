@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 34bcfaf84f5e1258410e383e4a049403e77e5950
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3a48af1199b041ef59c3e31e4e9496d78d21aec1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Référence des API non managées (Développement Office dans Visual Studio)
   À compter de Microsoft Office system 2007, les applications Office utilisent le [IManagedAddin Interface](../vsto/imanagedaddin-interface.md) interface pour appeler un composant de chargeur du complément VSTO qui est inclus dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Ce composant vise à faciliter le chargement des compléments VSTO managés. Vous pouvez créer votre propre composant de chargeur de complément VSTO en implémentant cette interface.  

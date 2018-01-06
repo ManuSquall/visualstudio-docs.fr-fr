@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: c73e053cc3e3dc53101595f00dcd8fd45da8abd7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: uwp
+ms.openlocfilehash: 32144a651fe9178da8bc87a10377e2c4d086d398
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Procédure : déboguer du code XAML avec Workflow Designer
 Les workflows sont définis en code XAML. La représentation de l'interface utilisateur du workflow est construite sur l'arborescence XAML définissant le workflow. L'expérience de débogage est semblable au débogage de workflows dans [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Par exemple, lors du débogage de code XAML, la fenêtre des variables locales, la fenêtre Espion et la fenêtre des threads fonctionnent de la même façon que dans le débogage [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. De plus, la vue de la pile des appels pendant le débogage de code XAML est une vue hiérarchique basée sur les lignes du flux d'exécution pour le workflow.  
