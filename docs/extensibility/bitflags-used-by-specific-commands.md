@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e66d0f67e3774b1cbc908bb6b1bd13884a1d3171
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Indicateurs de bits utilisés par des commandes spécifiques
 Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle de Source peut être modifié en définissant un ou plusieurs bits à une valeur unique. Ces valeurs sont des indicateurs de bits. Les différents indicateurs de bits utilisées par l’API de plug-in de contrôle de Source sont décrits ici, regroupés par la fonction qui les utilise.  
@@ -36,7 +37,7 @@ Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle 
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0 x 00|Le plug-in de contrôle de code source est censé détecter automatiquement si le fichier est binaire ou texte.|  
 |`SCC_FILETYPE_TEXT`|0 x 01|Est du type de fichier texte.|  
-|`SCC_FILETYPE_BINARY`|0 x 04|Type de fichier est binaire. **Remarque :** `SCC_FILETYPE_TEXT` et `SCC_FILETYPE_BINARY` les indicateurs sont mutuellement exclusifs.   Définir un seul ou aucune des deux.|  
+|`SCC_FILETYPE_BINARY`|0 x 04|Type de fichier est binaire. **Remarque :** `SCC_FILETYPE_TEXT` et `SCC_FILETYPE_BINARY` les indicateurs sont mutuellement exclusifs. Définir un seul ou aucune des deux.|  
 |`SCC_ADD_STORELATEST`|0 x 02|Conserver la dernière version uniquement (aucune deltas).|  
   
 ## <a name="diff-flags"></a>Indicateurs de comparaison  
@@ -61,7 +62,7 @@ Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle 
 ## <a name="populatedirlist-flags"></a>Indicateurs de PopulateDirList  
  Ces indicateurs sont utilisés par le [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) dans le `fOptions` paramètre.  
   
-|Valeur de l’option|Valeur|Description|  
+|Valeur de l’option|Value|Description|  
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|Examinez un seul niveau de répertoires pour les répertoires (il s’agit de la valeur par défaut).|  
 |SCC_PDL_RECURSIVE|0 x 0001|Récursive examiner tous les répertoires sous chaque répertoire donné.|  
@@ -70,7 +71,7 @@ Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle 
 ## <a name="openproject-flags"></a>Indicateurs de OpenProject  
  Ces indicateurs sont utilisés par le [SccOpenProject](../extensibility/sccopenproject-function.md) dans le `dwFlags` paramètre.  
   
-|Valeur de l’option|Valeur|Description|  
+|Valeur de l’option|Value|Description|  
 |------------------|-----------|-----------------|  
 |SCC_OP_CREATEIFNEW|0x00000001L|Si le projet n’existe pas dans le contrôle de code source, créez-le. Si cet indicateur n’est pas défini, inviter l’utilisateur pour le projet à créer (à moins que `SCC_OP_SILENTOPEN` indicateur est spécifié).|  
 |SCC_OP_SILENTOPEN|0x00000002L|Ne pas demander à l’utilisateur de créer un projet. retourner simplement `SCC_E_UNKNOWNPROJECT`.|  

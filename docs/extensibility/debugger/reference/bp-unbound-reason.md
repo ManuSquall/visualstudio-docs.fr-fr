@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfa3ab5ee6d38da45bd69cf4a9e49a86035d1252
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa824f71a4b468a131b1ebf31b3dba21bc83032c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 Donne la raison pour laquelle qu'un point d’arrêt a été séparé.  
@@ -57,10 +58,10 @@ public enum enum_BP_UNBOUND_REASON {
  BPUR_ BREAKPOINT_ERROR  
  Le point d’arrêt est déterminé comme étant dans l’erreur après que qu’il est lié. Cela se produit au point d’arrêt managé dont les conditions ne sont plus valides.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Retourné par la [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

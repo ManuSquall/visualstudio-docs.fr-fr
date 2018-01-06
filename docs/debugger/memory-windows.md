@@ -26,11 +26,12 @@ caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5c6f422e980a585b9cbac3c0b59ad8d981aba93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 96a4dc22f4f5c96d3dd9d40a565c2656ffe6e283
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Utiliser les fenêtres de mémoire dans le débogueur Visual Studio
 Le **mémoire** fenêtre fournit une vue de l’espace mémoire utilisé par votre application. Le **espion** fenêtre, **Espion express** boîte de dialogue, **automatique** fenêtre, et **variables locales** et consulter le contenu de variables qui sont dans une fenêtre stockées à des emplacements spécifiques dans la mémoire. Mais le **mémoire** fenêtre affiche l’image à grande échelle. Cette vue peut s'avérer pratique pour l'examen de grands fragments de données (mémoires tampons ou longues chaînes, par exemple) dont l'affichage n'est pas satisfaisant dans les autres fenêtres. Toutefois, le **mémoire** fenêtre n’est pas tenu d’afficher les données. Elle affiche tout ce qui se trouve dans l'espace mémoire, qu'il s'agisse de données, de code ou de bits aléatoires de garbage de la mémoire non assignée.  
@@ -59,7 +60,7 @@ Le **mémoire** fenêtre fournit une vue de l’espace mémoire utilisé par vot
 ## <a name="selecting-a-memory-location"></a>Sélection d'un emplacement de mémoire  
  Si vous souhaitez déplacer instantanément vers un emplacement mémoire sélectionné, vous pouvez le faire à l’aide d’une opération de glisser-déplacer, ou en modifiant la valeur dans la **adresse** boîte. Le **adresse** zone accepte non seulement des valeurs numériques, mais aussi des expressions qui correspondent aux adresses. Par défaut, le **mémoire** fenêtre traite un **adresse** expression sous la forme d’une expression en direct, réévalue pendant l’exécution du programme. Les expressions dynamiques peuvent être très utiles. Par exemple, elles permettent d'afficher la mémoire survolée par un pointeur.  
   
-#### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>Pour sélectionner un emplacement de mémoire par glisser-déplacer  
+#### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>Pour sélectionner un emplacement de mémoire par glisser-déposer  
   
 1.  Dans n'importe quelle fenêtre, sélectionnez une adresse mémoire ou une variable pointeur qui contient une adresse mémoire.  
   

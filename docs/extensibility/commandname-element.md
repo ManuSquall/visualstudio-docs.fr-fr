@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f81ab0253c9820f1e6c89ebf455601059d43bda
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b8e9dfcc3f918dba7444b6a3478c8b6a2fb5db21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commandname-element"></a>Élément de CommandName
 Le `CommandName` élément spécifie le texte qui apparaît dans la catégorie de clavier dans le **Options** boîte de dialogue, puis, dans le **commandes** liste dans le **personnaliser** boîte de dialogue zone.  
@@ -34,7 +35,7 @@ Le `CommandName` élément spécifie le texte qui apparaît dans la catégorie d
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  

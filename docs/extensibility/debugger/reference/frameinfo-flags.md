@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e05d7471df151642f6495907694a0057ef39dfd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9efeaee3ab2a2f7762c1ae3b95ae7548091dfe0b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
 Spécifie les informations à récupérer sur un objet de frame de pile.  
@@ -192,12 +193,12 @@ public enum enum_FRAMEINFO_FLAGS {
  FIF_DESIGN_TIME_EXPR_EVAL  
  Informations de frame doivent être obtenues à partir du domaine d’application hébergé plutôt que le processus d’hébergement.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Ces indicateurs sont passés à la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) et [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) des méthodes pour indiquer les champs qui doivent être initialisés dans le [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) ou les structures.  
   
  Ces indicateurs sont également utilisés pour indiquer les champs de la [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structure sont utilisées et valide lors de la structure est retournée. Ces valeurs peuvent être combinées avec une opération de bits `OR`.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

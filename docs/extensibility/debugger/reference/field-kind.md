@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a4d74e6ff0d3532c3aed199da841a56270195af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 095a02edb0a462e2fdbdca0f7f92018861b3d6bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 Spécifie le type de champ dans un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet.  
@@ -222,12 +223,12 @@ public enum enum_FIELD_KIND {
  FIELD_SYM_MASK  
  Indique un masque pour les informations de symboles.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Retourné par un appel à la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) (méthode).  
   
  En fonction du type de champ, [QueryInterface](/cpp/atl/queryinterface) peut être appelée sur le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface pour une forme plus spécifique de l’interface. Par exemple, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne `FIELD_TYPE_METHOD`, vous pouvez ensuite appeler `QueryInterface` sur I`DebugField` pour obtenir le [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interface.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : sh.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

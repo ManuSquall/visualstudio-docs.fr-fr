@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e944c8a998a3e8bba46d5018faf1b9103a91240
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6218e01d061bbf65e0cae051050076e4b8267a2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="addressing-dpi-issues"></a>Résoudre les problèmes de PPP
 Un nombre croissant d’appareils fournies dans les écrans « haute résolution ». Ces écrans ont en général plus de 200 pixels par pouce (PPP). Travailler avec une application sur ces ordinateurs nécessitera un contenu à être mis à l’échelle en fonction des besoins de l’affichage du contenu à une distance de l’affichage normal pour le périphérique. À compter de 2014, la cible principale pour les écrans à densité élevée et est (ordinateurs portables de coque, tablettes et téléphones) des appareils mobile.  

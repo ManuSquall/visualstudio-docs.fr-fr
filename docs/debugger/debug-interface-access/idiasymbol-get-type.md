@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67548053c45d48fa240fa836f5e59fa43edd1453
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c5d890674f8430bcb48771bfc13dc44be6025be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 Récupère le symbole qui représente le type de ce symbole.  
@@ -41,7 +42,7 @@ HRESULT get_type (
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Pour déterminer le type d’un symbole a, vous devez appeler cette méthode et examiner les résultats [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet. Notez qu’il est possible qu’un symbole de ne pas avoir un type. Par exemple, le nom d’une structure n’a aucun type, mais elle peut avoir les symboles enfants (utiliser le [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) méthode pour examiner ces enfants).  
   
 ## <a name="example"></a>Exemple  

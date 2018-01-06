@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42018230262e17bc99905833da1b15e30a7d62aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: fc083adc600b7de2538abf1ada468f3d626b7ba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-managed-code"></a>Débogage du code managé
 Cette section décrit les problèmes de débogage courants et les techniques destinées aux applications managées ou aux applications écrites dans des langages qui ciblent le Common Language Runtime, tels que Visual Basic, C# et C++. Les techniques présentées ici sont d'un niveau élevé. Pour plus d’informations, consultez [à l’aide du débogueur](../debugger/debugger-basics.md).  
@@ -49,7 +50,7 @@ Cette section décrit les problèmes de débogage courants et les techniques des
  [Débogage en Mode mixte](../debugger/debugging-mixed-mode-applications.md)  
  Présente les applications de débogage en mode mixte. Désigne toutes les applications qui combinent du code natif avec du code managé.  
   
- [Erreur : Le débogage est impossible car un débogueur du noyau est activé sur le système](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Erreur : le débogage est impossible, car un débogueur du noyau est activé sur le système](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  Décrit un message d’erreur qui se produit si vous essayez de déboguer du code managé sur un [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], ou le système de Windows NT qui a été démarré en mode débogage.  
   
  [Optimisation et débogage JIT](../debugger/jit-optimization-and-debugging.md)  

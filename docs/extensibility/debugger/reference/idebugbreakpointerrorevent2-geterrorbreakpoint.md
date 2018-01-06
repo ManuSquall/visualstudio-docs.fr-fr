@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f46a515318dc7bc293f187720f79e3d48cc10b07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0d4989fb601c45ad6e44e976b2c68756335ecf9b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 Obtient un [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) objet qui décrit la raison pourquoi un point d’arrêt n’était pas liée.  
@@ -44,7 +45,7 @@ int GetErrorBreakpoint(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Après le `IDebugErrorBreakpoint2` interface est obtenue, appelez le [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) méthode pour obtenir un [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) objet. Le [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) méthode peut être utilisée pour déterminer les raisons pour lesquelles le point d’arrêt en attente n’était pas lié, tel que le code ne pas encore, chargé, une expression non valide ou un emplacement non valide et ainsi de suite.  
   
 ## <a name="example"></a>Exemple  

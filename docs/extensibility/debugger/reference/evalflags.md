@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 45bef946605818f11d0199600849fd49b5463ab8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 62b372daffee279c3e36efde53a8b002c8b9b73a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Spécifie des indicateurs qui contrôlent l’évaluation de l’expression.  
@@ -72,12 +73,12 @@ public enum enum_EVALFLAGS {
  EVAL_NOEVENTS  
  Indicateur pour indiquer que les événements qui se produisent pendant l’évaluation d’expression ne doivent pas être envoyées vers le Gestionnaire de session de débogage (SDM) ou à l’IDE.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Ces indicateurs sont passés en tant qu’argument à la [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) et [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) méthodes.  
   
  Ces indicateurs peuvent être combinées avec une opération OR au niveau du bit.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

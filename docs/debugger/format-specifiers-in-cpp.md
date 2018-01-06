@@ -30,11 +30,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0318f5a3cb1cd19c658030d64c4f6ec8bcbf0a9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 11be1eb546902e8e37843383fe499274f819883f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Spécificateurs de format en C++ dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans la fenêtre **Espion** à l’aide de spécificateurs de format.  
@@ -67,10 +68,10 @@ int main() {
   
 |Spécificateur|Format|Valeur d’espion d’origine|Valeur affichée|  
 |---------------|------------|--------------------------|---------------------|  
-|d|entier décimal|0x00000066|102|  
+|j|entier décimal|0x00000066|102|  
 |o|entier octal non signé|0x00000066|000000000146|  
 |x<br /><br /> **h**|entier hexadécimal|102|0xcccccccc|  
-|x<br /><br /> **H**|entier hexadécimal|102|0xcccccccc|  
+|X<br /><br /> **H**|entier hexadécimal|102|0xcccccccc|  
 |c|caractère unique|0x0065, c|101 ’e’|  
 |s|chaîne const char*|\<emplacement > « hello world »|"hello world"|  
 |**sb**|const char * chaîne (sans guillemets)|\<emplacement > « hello world »|hello world|  
@@ -132,14 +133,14 @@ int main() {
 |Symbole|Format|Valeur d’espion d’origine|Valeur affichée|  
 |------------|------------|--------------------------|---------------------|  
 |**ma**|64 caractères ASCII|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
-|**m**|16 octets en hexadécimal suivis de 16 caractères ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
-|**mb**|16 octets en hexadécimal suivis de 16 caractères ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
+|**m**|16 octets en hexadécimal suivis de 16 caractères ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
+|**mb**|16 octets en hexadécimal suivis de 16 caractères ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
 |**mw**|8 mots|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
 |**md**|4 mots doubles|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 mots quadruples|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|caractères de 2 octets (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Spécificateur de taille pour les pointeurs en tant que tableaux dans le débogage d’interopérabilité avec C++/CLI  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a>Spécificateur de taille pour les pointeurs en tant que tableaux dans le débogage d’interopérabilité avec c++ / CLI  
  Si vous avez un pointeur vers un objet que vous souhaitez afficher sous forme de tableau, vous pouvez utiliser un entier pour spécifier le nombre d’éléments du tableau :  
   
 |Spécificateur|Format|Expression|Valeur affichée|  

@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc169fed9842f5bc5b7dbda3e9e9544197358a7a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fca2f1e1311b42ad7d0920c6db8acfa80a63ba7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 Récupère un indicateur qui spécifie si la fonction a une convention d’appel personnalisée.  
@@ -41,7 +42,7 @@ HRESULT get_customCallingConvention(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

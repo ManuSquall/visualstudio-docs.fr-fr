@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7dfa9c7985a1944ebff625fae7fa6ec22200c78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e4fa2b17b92e6bc38c1fb89840ec8e50497a66a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
 Récupère la valeur de durée de vie d’un fichier .pdb.  
@@ -41,10 +42,10 @@ HRESULT get_age (
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La durée de vie ne correspond pas nécessairement une valeur de temps connu ; Il est généralement utilisé pour déterminer si un fichier .pdb n’est pas synchronisé avec un fichier .exe.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

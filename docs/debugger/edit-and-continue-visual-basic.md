@@ -23,11 +23,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c3dc1b7e6eee583494070cc9ebb151181dc805da
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-and-continue-visual-basic"></a>Modifier & Continuer (Visual Basic)
 La fonctionnalité Modifier & Continuer destinée au débogage de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] vous permet d'apporter des modifications à votre code pendant qu'il s'exécute en mode Arrêt. Après avoir modifié le code, vous pouvez continuer son exécution avec les nouvelles modifications en place et observer leurs effets.  

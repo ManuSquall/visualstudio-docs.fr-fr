@@ -26,11 +26,12 @@ caps.latest.revision: "36"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: caaa710f0fc34a4e6a24038a7e65e5670bebd6ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 772c252265e15c3c928fbcc47c756ceafd9e1362
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-dlls-and-executables-using-the-modules-window-in-the-visual-studio-debugger"></a>Afficher les DLL et les exécutables à l’aide de la fenêtre Modules dans le débogueur Visual Studio
  

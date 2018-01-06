@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 437d8414c725ffe7f5dab992da262de918c03693
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 43465f919806f16154b8f3328aad7496c83ec235
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
@@ -52,7 +53,7 @@ IDebugBinder3 : IDebugBinder
 |[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|Obtient une interface à un service de visualiseur|  
 |[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Convertit un emplacement de l’objet ou d’une adresse mémoire de 64 bits à un contexte de la mémoire.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : ee.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32870ebf31c88bbc6bdf024c2c4c93ae1869660a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72c7c38dece8924f48298c0b7b661f564f9b1afc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Afficher les Threads et les tâches à l’aide de la fenêtre Piles parallèles
 Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applications multithread. Son **vue Threads** affiche les informations de la pile d’appels pour tous les threads dans votre application. Elle vous permet de naviguer entre les threads et les frames de pile sur ces threads. Dans le code managé, le **vue tâches** affiche les piles des appels <xref:System.Threading.Tasks.Task?displayProperty=fullName> objets. En code natif, le **vue tâches** affiche les piles des appels [groupes de tâches](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algorithmes parallèles](/cpp/parallel/concrt/parallel-algorithms), [agents asynchrones](/cpp/parallel/concrt/asynchronous-agents)et [tâches légères](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -38,9 +39,9 @@ Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applicati
 |Lettre de référence|Nom de l'élément|Description|  
 |--------------------|------------------|-----------------|  
 |A|Nœud ou segment de pile des appels|Contient une série de méthodes pour un ou plusieurs threads. Si le nœud n’est pas relié à des flèches, il représente le chemin d’appel entier du ou des threads.|  
-|B|Surbrillance bleue|Indique le chemin d'appel du thread actuel.|  
+|B|Surbrillance bleue|Indique le chemin d’appel du thread actuel.|  
 |C|Flèches|Relient des nœuds pour créer le chemin d'appel entier du ou des threads.|  
-|D|Info-bulle sur l'en-tête de nœud|Indique l'ID et le nom défini par l'utilisateur de chaque thread dont le chemin d'appel partage ce nœud.|  
+|D|Info-bulle sur l'en-tête de nœud|Indique l’ID et le nom défini par l’utilisateur de chaque thread dont le chemin d’appel partage ce nœud.|  
 |E|Méthode|Représente un ou plusieurs frames de pile dans la même méthode.|  
 |F|Info-bulle sur (méthode)|Dans la vue Threads, il affiche tous les threads dans une table semblable à la **Threads** fenêtre. Dans la vue tâches, il affiche toutes les tâches dans une table semblable à la **tâches** fenêtre.|  
   
@@ -63,7 +64,7 @@ Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applicati
   
 |Lettre de référence|Contrôle|Description|  
 |--------------------|-------------|-----------------|  
-|A|Zone de liste déroulante Threads/Tâches|Bascule entre la vue des piles d'appels de threads et la vue des piles d'appels de tâches. Pour plus d'informations, consultez Vue Tâches et Vue Threads.|  
+|A|Zone de liste déroulante Threads/Tâches|Bascule entre la vue des piles d’appels de threads et la vue des piles d’appels de tâches. Pour plus d’informations, consultez Vue Tâches et Vue Threads.|  
 |B|Afficher uniquement avec indicateur|Affiche les piles d’appels uniquement pour les threads qui sont marqués dans d’autres fenêtres de débogage, telles que la **Threads GPU** fenêtre et **espion parallèle** fenêtre.|  
 |C|Basculer dans la vue Méthode|Bascule entre la vue Pile et la vue Méthode. Pour plus d'informations, consultez Vue Méthode.|  
 |D|Défilement automatique vers le frame de pile actif|Fait défiler automatiquement le diagramme afin que le frame de pile actuel soit visible. Cette fonctionnalité est utile lorsque vous modifiez le frame de pile actuel d'autres fenêtres ou lorsque vous atteignez un nouveau point d'arrêt dans de grands diagrammes.|  
@@ -94,9 +95,9 @@ Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applicati
   
 -   Les piles d'appels des threads qui n'exécutent pas de tâches n'apparaissent pas.  
   
--   Les piles d'appels des threads qui exécutent des tâches sont tronquées visuellement en haut et en bas afin d'afficher les frames les plus pertinents appartenant aux tâches.  
+-   Les piles d’appels des threads qui exécutent des tâches sont tronquées visuellement en haut et en bas afin d’afficher les frames les plus pertinents appartenant aux tâches.  
   
--   Lorsque plusieurs tâches figurent sur un thread, les piles d'appels de ces tâches sont fractionnées dans des nœuds séparés.  
+-   Lorsque plusieurs tâches figurent sur un thread, les piles d’appels de ces tâches sont fractionnées dans des nœuds séparés.  
   
  L’illustration suivante présente la vue Tâches de la fenêtre Piles parallèles à droite et la vue Threads correspondante à gauche.  
   

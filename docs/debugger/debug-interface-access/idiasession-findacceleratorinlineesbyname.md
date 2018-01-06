@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25aceb146aac7d23647172e53989d30bd9d72a08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 084fa6d3021e7657ae0aef639a110450ed9f083d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 Retourne une énumération de symboles de cadres correspondant au nom de la fonction inline spécifiés.  
@@ -45,7 +46,7 @@ HRESULT findAcceleratorInlineeLinesByName (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette fonction recherche les éléments inline que dans les fonctions de stub d’accélérateur. Il ignore les enregistrements de procédure C++ natifs.  
   
 ## <a name="see-also"></a>Voir aussi  

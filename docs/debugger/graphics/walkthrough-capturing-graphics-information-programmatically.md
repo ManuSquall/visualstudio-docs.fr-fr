@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59853bf733364f2db8a60e3c9515e2771c8e4ebe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2bf34eda9c9957b8a989244da3f2fce03a5d151e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d'informations Graphics par programmation
 Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour capturer par programmation les informations graphiques d'une application Direct3D.  
@@ -194,7 +195,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
 >  Vous pouvez toujours capturer les informations graphiques manuellement pendant que vous utilisez la capture par programmation : il vous suffit d'appuyer sur **Impr. écran**pendant que l'application a le focus. Vous pouvez employer cette technique pour capturer des informations graphiques supplémentaires qui ne sont pas capturées par l'API de capture par programmation.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Cette procédure pas à pas vous a montré comment capturer des informations graphiques par programmation. Pour franchir une étape supplémentaire, envisagez cette possibilité :  
+ Cette procédure pas à pas vous a montré comment capturer des informations graphiques par programmation. Pour franchir une étape supplémentaire, envisagez cette possibilité :  
   
 -   Découvrez comment analyser les informations graphiques capturées à l'aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](overview-of-visual-studio-graphics-diagnostics.md).  
   

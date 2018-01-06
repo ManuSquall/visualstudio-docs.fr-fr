@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41c63d947d1c59e041aef051fffc4def85e0bded
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3b58e0fb18b8f41f16a6cc92e682363ff531d5ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 Cette interface indique le Gestionnaire de session de débogage (SDM) qu’un saut de ligne asynchrone a été effectuée avec succès.  
@@ -35,10 +36,10 @@ IDebugBreakEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
  Les appels SDM [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) lorsque l’utilisateur a demandé le programme en cours de débogage pour être suspendu. Lorsque le programme a correctement été suspendu, le D’envoie le `IDebugBreakEvent2` événement. Cet événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Par exemple, un utilisateur peut sélectionner la **interrompre tout** commande sur le **déboguer** menu pour sortir d’un programme qui exécute une boucle infinie. Le SDM indique au programme s’arrête en appelant [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). L’envoie DE `IDebugBreakEvent2` lorsque le programme s’arrête finalement.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

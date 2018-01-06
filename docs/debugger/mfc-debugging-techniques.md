@@ -28,11 +28,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 274cd182fa3b9eab23c151a4143c935c24f68fea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mfc-debugging-techniques"></a>Techniques de débogage MFC
 Si vous déboguez un programme MFC, les techniques de débogage suivantes peuvent vous être utiles.  
@@ -144,7 +145,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 -   Si vous voulez contrôler plus précisément les fonctionnalités de diagnostic de la mémoire, vous pouvez les activer et les désactiver individuellement, de façon sélective, en définissant la valeur de la variable globale MFC [afxMemDF](http://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Cette variable peut prendre les valeurs suivantes, comme spécifié par le type énuméré **afxMemDF**:  
   
-    |Valeur|Description|  
+    |Value|Description|  
     |-----------|-----------------|  
     |**allocMemDF**|Activer l'allocateur de mémoire de diagnostic (par défaut).|  
     |**delayFreeMemDF**|Différer la libération de la mémoire lors des appels à `delete` ou `free` jusqu'à ce que le programme s'arrête. Votre programme allouera alors la quantité maximale de mémoire possible.|  

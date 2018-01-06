@@ -30,11 +30,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6958776655f48fe22ef97f193ddffafe12da6cbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b8d915339ae8e81d16b46ca602b45d527ab78aa9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d'applications Web : erreurs et dépannage
 Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'applications Web.  

@@ -16,16 +16,17 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca8795ba56833282bac600db79ba33da70aa6c3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4229d9045dfe64fcb320eca7cf004de56e7f8f0d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Création d’un contrôle de boîte à outils Windows Forms
 Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est inclus dans les outils d’extensibilité de Visual Studio (Visual Studio SDK) vous permet de créer un contrôle qui est automatiquement ajouté à la **boîte à outils** lorsque l’extension est installée. Cette rubrique montre comment utiliser le modèle pour créer un contrôle de compteur simple que vous pouvez distribuer à d’autres utilisateurs.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-windows-forms-toolbox-control"></a>Création d’un contrôle de boîte à outils Windows Forms  
@@ -54,10 +55,10 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
   
 5.  Dans le **propriétés** fenêtre, définissez les valeurs suivantes pour les contrôles sur l’aire de conception.  
   
-    |Contrôle|Propriété|Valeur|  
+    |Contrôle|Propriété|Value|  
     |-------------|--------------|-----------|  
     |`Label1`|**Text**|""|  
-    |`Button1`|**Nom**|btnReset|  
+    |`Button1`|**Name**|btnReset|  
     |`Button1`|**Text**|Réinitialiser|  
   
 ### <a name="coding-the-user-control"></a>Codage du contrôle utilisateur  

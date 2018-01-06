@@ -16,11 +16,12 @@ caps.latest.revision: "46"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d622bd917548666e12eff6d29639f62d3ef4bc1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 087faaae07c4c240b53830ee238cee4f9065d21f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Ajout d’une plus récemment utilisés pour un sous-menu
 Cette procédure pas à pas s’appuie sur des démonstrations de [Ajout d’un sous-menu à un Menu](../extensibility/adding-a-submenu-to-a-menu.md)et montre comment ajouter une liste dynamique à un sous-menu. La liste dynamique constitue la base pour la création d’une liste récemment utilisés (MRU).  
@@ -33,7 +34,7 @@ Cette procédure pas à pas s’appuie sur des démonstrations de [Ajout d’un 
   
  Pour plus d’informations sur les menus et les fichiers .vsct, consultez [commandes, Menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="creating-an-extension"></a>Création d’une Extension  

@@ -24,11 +24,12 @@ caps.latest.revision: "45"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 8d02aa039299c5f4f31d1fa0f9e0b48b8bbeb351
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5f269369084df3d81d323e75730fad27713831ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-bootstrapper-packages"></a>Création de packages de programme d'amorçage
 Le programme d'installation est un programme d'installation générique qui peut être configuré pour détecter et installer les composants redistribuables tels que les fichiers Windows Installer (msi) et les programmes exécutables. Le programme d'installation est également appelé programme d'amorçage. Il est programmé via un ensemble de manifestes XML qui spécifient les métadonnées permettant de gérer l'installation du composant.  
@@ -125,7 +126,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : installer les composants requis avec une Application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Guide pratique pour installer des composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Boîte de dialogue composants requis](../ide/reference/prerequisites-dialog-box.md)   
  [Référence du schéma de Package et de produit](../deployment/product-and-package-schema-reference.md)   
  [Utilisez le Visual Studio 2005 du programme d’amorçage pour démarrer rapidement votre Installation](http://go.microsoft.com/fwlink/?LinkId=107537)

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51da86dbcdcc45f431d2ef73d7f15a19335f3819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4d5485906cf86693c0af7297f2640c6b54afd413
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 Récupère un type en fonction de son nom.  
@@ -55,7 +56,7 @@ int GetTypesByName(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Pour les types génériques, le nom à rechercher pour ' liste\<int >' ou ' liste\<int, int >' est 'List'. Si les types du même nom apparaissent dans plusieurs modules, le `ppEnum` paramètre contiendra toutes les copies. Vous devez utiliser [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) et distinguer selon le `guidModule` paramètre.  
   
 ## <a name="example"></a>Exemple  

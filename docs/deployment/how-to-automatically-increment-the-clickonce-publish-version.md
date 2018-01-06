@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 71665ea5053a4d3ddbdb933d2ecdf4ea20ba83c8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2e1399795400d52543b92cb13635a8485b160f22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Comment : incrémenter automatiquement la version de publication ClickOnce
 Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, la modification la `Publish Version` propriété entraîne l’application à publier en tant qu’une mise à jour. Par défaut, Visual Studio incrémente automatiquement le `Revision` numéro de la `Publish Version` chaque fois que vous publiez l’application.  
@@ -44,6 +45,6 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclic
 3.  Dans le **Publish Version** section, désactivez le **incrémenter automatiquement la révision avec chaque version** case à cocher.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : définir ClickOnce la Version de publication](../deployment/how-to-set-the-clickonce-publish-version.md)   
+ [Guide pratique pour définir la version de publication ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)   
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

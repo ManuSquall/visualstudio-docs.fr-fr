@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acf75c0fbf6f5c3cfcf645d288c4e5e2eb2450d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2c3dcd57568bdfaac3ba0f7aff33cefca8a0ee32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimisation JIT et débogage
 Lorsque vous déboguez une application managée, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supprime l’optimisation du code de juste-à-temps (JIT) par défaut. La suppression de l'optimisation JIT signifie que vous déboguez un code non optimisé. Le code s'exécute un peu plus lentement parce qu'il n'est pas optimisé, mais votre expérience de débogage est beaucoup plus complète. Le débogage de code optimisé est plus ardu et est recommandé uniquement si vous rencontrez un bogue qui se produit dans un code optimisé mais ne peut pas être reproduit dans la version non optimisée.  

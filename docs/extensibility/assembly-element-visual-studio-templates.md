@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9032fa397e8fb4cb443d0209853ba4cfe7a5e53f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5202d7468ecefe9de1754f592eef826f0390b869
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly, élément (modèles Visual Studio)
 Spécifie des informations sur un assembly, le modèle utilise pour ajouter une référence de cet assembly aux projets.  
@@ -41,7 +42,7 @@ Spécifie des informations sur un assembly, le modèle utilise pour ajouter une 
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -71,7 +72,7 @@ Spécifie des informations sur un assembly, le modèle utilise pour ajouter une 
     <Assembly> System </Assembly>  
     ```  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `Assembly` est un élément enfant obligatoire de `Reference`.  
   
  Le `Reference`, `References,` et `Assembly` éléments ne peuvent être utilisés dans les fichiers .vstemplate dont un `Type` valeur d’attribut `Item`.  

@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9541c7008129f47df93e2e4cf2c3e8248742b0c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4ec023384ab95e72d0341fb728eb0fd6a4f58480
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 Le moteur de débogage (DE) envoie cette interface pour le Gestionnaire de session de débogage (SDM) pour définir l’état de message barre symbole de charge.  
@@ -41,7 +42,7 @@ IDebugBeforeSymbolSearchEvent2 : IUnknown
 |------------|-----------------|  
 |[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Récupère le nom du module en cours de débogage.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

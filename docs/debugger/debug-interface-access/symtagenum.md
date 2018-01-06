@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ffafd105a6e492f4ce1dc1837137c6020be7dc2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9165059991e4b961fc995b96a0c285f28a1587b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symtagenum"></a>SymTagEnum
 Spécifie le type de symbole.  
@@ -179,7 +180,7 @@ enum SymTagEnum {
  `SymTagHLSLType`  
  Indique que le symbole est un type langage HLSL.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Tous les symboles dans un fichier de débogage ont une balise d’identification qui spécifie type du symbole.  
   
  Les valeurs de cette énumération sont retournées par un appel à la [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) (méthode).  
@@ -202,7 +203,7 @@ enum SymTagEnum {
   
 -   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : cvconst.h  
   
 ## <a name="see-also"></a>Voir aussi  

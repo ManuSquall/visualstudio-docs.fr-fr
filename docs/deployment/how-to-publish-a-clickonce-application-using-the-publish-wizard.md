@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f7921ccebf9872f8a1f8ed79e6ee8da05d04e320
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d314763f8ff4dc170148cca166e3ecdff051ae24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Comment : publier une application ClickOnce à l'aide de l'Assistant Publication
 Pour mettre une application ClickOnce à la disposition des utilisateurs, vous devez la publier sur un partage de fichiers ou un chemin d’accès, un serveur FTP ou un média amovible. Vous pouvez publier l’application à l’aide de l’Assistant Publication ; les propriétés supplémentaires liées à la publication sont disponibles sur le **publier** page de la **Concepteur de projet**. Pour plus d’informations, consultez [publication d’Applications ClickOnce](../deployment/publishing-clickonce-applications.md).  

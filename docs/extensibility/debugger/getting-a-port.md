@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0645cefb4d102f976663bb4293454e2ae6318ad6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f6065c91845df020325e279a1fa3858a4f75505
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-a-port"></a>Obtention d’un Port
 Un port représente une connexion à un ordinateur sur lequel les processus sont en cours d’exécution. Cet ordinateur peut être l’ordinateur local ou un ordinateur distant (ce qui peut éventuellement être qui exécute un système d’exploitation non basé sur Windows, consultez [Ports](../../extensibility/debugger/ports.md) pour plus d’informations).  

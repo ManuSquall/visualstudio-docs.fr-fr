@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.error.webdbg_ntlm_authn_not_enabled
 dev_langs:
 - CSharp
@@ -15,16 +15,16 @@ dev_langs:
 - C++
 - aspx
 helpviewer_keywords: debugger, Web application errors
-ms.assetid: 6027cd94-74cf-470f-b7ce-6f6b68bc56ba
 caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88747922ae486adf65d2babe7a349e9538e8c9c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d3d66a2892378f04061907e383965c6c02096bf1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erreur : le débogage a échoué, car l'authentification intégrée de Windows n'est pas activée
 L'authentification de l'utilisateur qui a demandé le débogage a été empêchée en raison d'une erreur d'authentification. Cette erreur peut se produire lorsque vous essayez d'accéder à une application Web ou à un service Web XML. Cette erreur peut provenir, par exemple, du fait que l'authentification Windows intégrée n'est pas activée. Pour l'activer, suivez les étapes décrites dans Activer l'authentification Windows intégrée.  
@@ -65,7 +65,7 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
 ### <a name="to-enable-integrated-windows-authentication-in-windows-vistaiis-7"></a>Pour activer l'authentification Windows intégrée dans Windows Vista/IIS 7  
   
-1.  Ouvrez une session sur le serveur Web à l'aide d'un compte d'administrateur.  
+1.  Ouvrez une session sur le serveur web à l’aide d’un compte d’administrateur.  
   
 2.  Activez l'authentification Windows et la compatibilité avec la gestion IIS 6, si ce n'est déjà fait, en procédant comme suit :  
   

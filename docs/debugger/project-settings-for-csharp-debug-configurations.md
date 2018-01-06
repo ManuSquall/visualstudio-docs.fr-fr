@@ -14,23 +14,22 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debug configurations, C#
-- debugging [J#], debugger settings
 - project settings [Visual Studio], debug configurations
 - debug builds, project settings
 - projects [Visual Studio], debug configurations
 - project configurations, debug
 - debugging [C#], debugger settings
-- debug configurations, J#
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
 caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4310b9e84986ef50f735f0e7ddf6813d9c6fd60d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: b21dcdefde586b4a2724c8c0a659462b5f0898f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Paramètres de projet pour des configurations Debug C#
 Vous pouvez modifier les paramètres de projet pour une configuration debug c# dans le **Pages de propriétés** fenêtre, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans le **Pages de propriétés** fenêtre.  
@@ -44,7 +43,7 @@ Vous pouvez modifier les paramètres de projet pour une configuration debug c# d
 |-----------------|---------------------|  
 |**Configuration**|Définit le mode de compilation de l'application. Choisissez parmi les options **Active (Debug)**, **déboguer**, **version**, **toutes les Configurations**.|  
 |**Action de démarrage**|Ce groupe de contrôles spécifie l'action exécutée lorsque vous cliquez dans le menu Déboguer sur Démarrer.<br /><br /> -   **Démarrer le projet** est la valeur par défaut, lance le projet de démarrage pour le débogage. Pour plus d’informations, consultez [en choisissant le projet de démarrage](http://msdn.microsoft.com/en-us/222e3f32-a6fe-4941-bf37-6b2a921129fd).<br />-   **Démarrer le programme externe** vous permet de démarrer et d’attacher un programme qui n’est pas dans le cadre d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet. Pour plus d’informations, consultez [attachement à un programme en cours d’exécution](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).<br />-   **Démarrer l’URL** vous permet de déboguer une application Web.|  
-|**Arguments de ligne de commande**|Spécifie les arguments de la ligne de commande pour le programme à déboguer. Le nom de la commande correspond au nom du programme spécifié dans Démarrer le programme externe. Si Action de démarrage a la valeur Démarrer l’URL, les arguments de la ligne de commande ne peuvent pas être spécifiés.|  
+|**Arguments de la ligne de commande**|Spécifie les arguments de la ligne de commande pour le programme à déboguer. Le nom de la commande correspond au nom du programme spécifié dans Démarrer le programme externe. Si Action de démarrage a la valeur Démarrer l’URL, les arguments de la ligne de commande ne peuvent pas être spécifiés.|  
 |**Répertoire de travail**|Spécifie le répertoire de travail du programme en cours de débogage. En [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], le répertoire de travail est celui à partir duquel l'application est lancée : \bin\debug par défaut.|  
 |**Utiliser l’ordinateur distant**|Le nom d’un ordinateur distant où l’application s’exécutera à des fins de débogage ou un [nom de serveur Msvsmon](../debugger/remote-debugging.md). L’emplacement du fichier EXE sur l’ordinateur distant est spécifié par la propriété Chemin de sortie dans le dossier Propriétés de configuration, catégorie Générer. L'emplacement doit être un répertoire pouvant être partagé de l'ordinateur distant.|
 |**Activer le débogage de code non managé**|Vous permet de déboguer les appels au code Win32 natif (non managé) à partir de votre application managée.|  

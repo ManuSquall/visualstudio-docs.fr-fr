@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7db6cbd73ba45d05b878648101a7643f21879076
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 919cef75834c6606cf4980b3a0e861302f29b73a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 Spécifie le type d’emplacement du point d’arrêt pour une demande de point d’arrêt.  
@@ -112,14 +113,14 @@ public enum enum_BP_LOCATION_TYPE {
  BPLT_LOCATION_TYPE_MASK  
  Spécifie un masque de bits, de telle sorte que le type d’emplacement de point d’arrêt peut être extraite en dehors de la valeur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Passé en tant que paramètre à la [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) (méthode).  
   
  Un type d’emplacement de point d’arrêt se compose d’un type de point d’arrêt et un type d’emplacement. Cela signifie qu’un type d’emplacement de point d’arrêt n’est jamais simplement un type de point d’arrêt (par exemple, `BPT_CODE`) ou un type d’emplacement (par exemple, `BPLT_FILE_LINE`). Constantes prédéfinies pour tous les types d’emplacement de point d’arrêt actuellement pris en charge sont inclus dans cette énumération (`BPLT_CODE_FILE_LINE` via `BPLT_DATA_STRING`).  
   
  `BPT_CODE`et `BPT_DATA` sont membres de la [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) énumération.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

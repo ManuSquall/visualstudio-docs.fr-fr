@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e48fd86555a2bd110f2945063b23f03d0ce64e16
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8930726d4f45164842a41fdf87ea3a8f55397278
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-finder-tool"></a>Comment : utiliser l'outil Recherche
 Vous pouvez utiliser l’outil de recherche dans les **rechercher une fenêtre** boîte de dialogue pour afficher la fenêtre Propriétés ou messages. L’outil recherche peut également localiser les fenêtres enfants désactivées et déterminer la fenêtre à mettre en surbrillance si désactivé enfant windows chevauchement.  

@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d0f30e266389a3abfa3c0af1275cada34c9cfe11
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 98043b7160caaa32ac341ad4aa5065d5cdbe8a59
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 Énumère les différents segments contenus dans la source de données.  
@@ -42,7 +43,7 @@ IDiaEnumSegments : IUnknown
 |[IDiaEnumSegments::Reset](../../debugger/debug-interface-access/idiaenumsegments-reset.md)|Réinitialise la séquence d’énumération au début.|  
 |[IDiaEnumSegments::Clone](../../debugger/debug-interface-access/idiaenumsegments-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
  Obtenez cette interface en appelant le `QueryInterface` méthode sur une [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objet. Consultez l’exemple de détails.  
@@ -65,7 +66,7 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 }  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  

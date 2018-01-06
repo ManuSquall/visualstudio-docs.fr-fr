@@ -25,11 +25,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da047f9739fc8af1c12fc084df4ef5a267192656
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: a9483983b6cbd5644827af8f647425cce61502ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="native-run-time-checks-customization"></a>Personnalisation des contrôles natifs à l'exécution
 Lorsque vous compilez avec **/RTC.** (contrôles d’exécution) ou utilisez le `runtime_checks` pragma, la bibliothèque Runtime C fournit les contrôles natifs à l’exécution. Dans certains cas, il est utile de personnaliser le contrôle à l'exécution :  
@@ -38,7 +39,7 @@ Lorsque vous compilez avec **/RTC.** (contrôles d’exécution) ou utilisez le 
   
 -   Pour spécifier une destination de sortie en cas de messages de contrôle à l'exécution venant d'un débogueur tiers.  
   
--   Pour rapporter des messages de contrôle à l'exécution en provenance d'un programme compilé avec une version finale de la bibliothèque Runtime C. Les versions finales de la bibliothèque n'utilisent pas `_CrtDbgReportW` pour rapporter les erreurs d'exécution. Au lieu de cela, ils affichent une **Assert** boîte de dialogue pour chaque erreur d’exécution.  
+-   Pour rapporter des messages de contrôle à l’exécution en provenance d’un programme compilé avec une version Release de la bibliothèque Runtime C. Les versions finales de la bibliothèque n'utilisent pas `_CrtDbgReportW` pour rapporter les erreurs d'exécution. Au lieu de cela, ils affichent une **Assert** boîte de dialogue pour chaque erreur d’exécution.  
   
  Pour personnaliser le contrôle des erreurs d'exécution, vous pouvez :  
   

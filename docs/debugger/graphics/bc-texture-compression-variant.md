@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1984941f0718b962b516ef99e37642770a4aabc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 13b97c4d9e90adf8b621100d6d2a68d11570e71d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compression de texture BC
 Permet la compression de blocs sur les textures dont le format de pixel est une variation de B8G8R8X8, B8G8R8A8 ou R8G8B8A8.  
@@ -26,7 +27,7 @@ Permet la compression de blocs sur les textures dont le format de pixel est une 
   
  Si vos textures sont adaptées à une compression de blocs et que vous n'avez pas besoin d'une fidélité des couleurs parfaite, utilisez un format de compression de blocs pour réduire l'utilisation de mémoire et moins consommer de bande passante.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Vous compressez les textures en utilisant un format de compression de blocs à chaque appel à `ID3DDevice::CreateTexture2D`, qui est chargé de créer une texture source. Plus précisément, les textures sont compressées quand :  
   
 -   L'objet `D3D11_TEXTURE2D_DESC` passé dans `pDesc` décrit une ressource de nuanceur qui ne change pas, à savoir :  

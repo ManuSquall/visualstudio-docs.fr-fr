@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c9961f9bbe0540b6b4dee04bd9446571e1f32f9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37d5c52192c30ccc3b34bfa609c3f6a7ffb99566
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Le débogage en mode mixte des processus x64 est pris en charge uniquement lorsque vous utilisez Microsoft .NET Framework 4 ou version ultérieure
 Les versions du .NET Framework antérieures à la version 4 ne prennent pas en charge le débogage en mode mixte des processus x64. Cela signifie que vous ne pouvez pas passer du code managé au code natif, ou inversement, lorsque vous procédez au débogage.  
@@ -31,11 +32,11 @@ Les versions du .NET Framework antérieures à la version 4 ne prennent pas en 
   
 -   Mettez votre projet à jour de façon à utiliser Microsoft .NET Framework 4 ou version ultérieure.  
   
-     ou  
+     - ou -  
   
      Déboguez votre code managé et natif dans des sessions de débogage distinctes.  
   
-     ou  
+     - ou -  
   
      Déboguez votre code mixte en tant que processus 32 bits, de la façon décrite dans les procédures suivantes.  
   

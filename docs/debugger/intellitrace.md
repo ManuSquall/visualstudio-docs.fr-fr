@@ -24,11 +24,12 @@ caps.latest.revision: "135"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f009abffb1c956a0f7c57315181234fbea2fc1c
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Vous pouvez consacrer moins de temps au débogage de votre application quand vous utilisez IntelliTrace pour enregistrer et effectuer le suivi de l'historique d'exécution de votre code. Vous pouvez trouver des bogues facilement car IntelliTrace vous permet d'effectuer les tâches suivantes :  
@@ -139,9 +140,9 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
      Consultez :  
   
-    -   [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
+    -   [Utiliser le collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-    -   [Utilisation des données IntelliTrace enregistrée](../debugger/using-saved-intellitrace-data.md)  
+    -   [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)  
   
     -   [Procédure pas à pas : débogage d’une application SharePoint avec IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)  
  
@@ -184,7 +185,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
  [Diagnostiquer des problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md)  
   
- [Utilisation des données IntelliTrace enregistrée](../debugger/using-saved-intellitrace-data.md)  
+ [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>Blogs  
  [Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)  

@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 238e4c0c0fe9021424b48963eac7d21bf6f9a049
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b6b6726ebf45522834d916897f456952b66a3605
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; élément (déploiement ClickOnce)
 Spécifie un URI à afficher en cas d'erreur.  
@@ -34,7 +35,7 @@ Spécifie un URI à afficher en cas d'erreur.
 />  
 ```  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cet élément est facultatif. Sans lui, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] affiche une boîte de dialogue d’erreur indiquant la pile d’exception. Si le `customErrorReporting` élément est présent, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] affichera à la place de l’URI indiqué par le `uri` paramètre. L’URI cible inclut la classe d’exception externe, la classe de l’exception interne et le message d’exception interne en tant que paramètres.  
   
  Utilisez cet élément pour ajouter le rapport d’erreurs des fonctionnalités à votre application. Étant donné que l’URI généré inclut des informations sur le type d’erreur, votre site Web peut analyser ces informations et afficher, par exemple, un écran de dépannage approprié.  

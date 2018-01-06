@@ -22,11 +22,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 5376ef32ce768100af8bc1c9f18267f7ac39895a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b1c0f8615513639081351bdf77ea9ec63fc8309b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Comment : spécifier le mode d'installation en ligne et hors connexion ClickOnce
 Le `Install Mode` pour un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application détermine si l’application est disponible en ligne ou hors connexion. Lorsque vous choisissez **l’application est disponible en ligne uniquement**, l’utilisateur doit avoir accès à la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] emplacement (une page Web ou un partage de fichiers) afin d’exécuter l’application de publication. Lorsque vous choisissez **l’application est également disponible hors connexion**, l’application ajoute des entrées à la **Démarrer** menu et **Ajout / Suppression de programmes** boîte de dialogue ; l’utilisateur est possibilité d’exécuter l’application lorsqu’ils ne sont pas connectés.  
@@ -55,5 +56,5 @@ Le `Install Mode` pour un [!INCLUDE[ndptecclick](../deployment/includes/ndpteccl
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Comment : publier une Application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [Choix d’une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

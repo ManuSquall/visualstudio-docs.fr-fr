@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 362dd868e6f9c273e9495295a453d8da4e2183cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6d672eca7b818ce9bc06df4a09a7623be9e8d89f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Élément BuildProjectOnload (modèles Visual Studio)
 Génère uniquement des projets que vous créez et les ajoutez à une solution. L’ensemble de la solution n’est pas généré.  
@@ -35,7 +36,7 @@ Génère uniquement des projets que vous créez et les ajoutez à une solution. 
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -51,7 +52,7 @@ Génère uniquement des projets que vous créez et les ajoutez à une solution. 
   
  Le texte doit être `true` ou `false` pour indiquer s’il faut générer uniquement le nouveau projet lorsqu’il est créé à partir du modèle.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `BuildProjectOnLoad` est un élément facultatif. La valeur par défaut est `false`.  
   
 ## <a name="example"></a>Exemple  

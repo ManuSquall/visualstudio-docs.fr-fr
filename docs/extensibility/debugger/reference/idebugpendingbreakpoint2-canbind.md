@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c1e64de7048f071437b6166b8cc9a6cc5cd920b2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5cd81f18e67418bdc3bf15dae46d1751b76c8584
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 Détermine si ce point d’arrêt en attente peut lier à un emplacement du code.  
@@ -46,7 +47,7 @@ int CanBind (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK.` retourne `S_FALSE` si le point d’arrêt ne peut pas effectuer de liaison, auquel cas les erreurs sont retournées par la `ppErrorEnum` paramètre. Sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode est appelée pour déterminer ce qui se passerait si cela en attente de point d’arrêt a été lié. Appelez le [lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) méthode réellement lier le point d’arrêt en attente.  
   
 ## <a name="example"></a>Exemple  

@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9cbd0ea73c7efea5cee570548dec5570ffc53b42
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff793f5d84b21d6c521a3b70b1a553177c95f75c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
 Spécifie l’étendue du flux de code machine.  
@@ -57,12 +58,12 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
  DSS_ALL  
  Spécifie le code machine pour l’espace d’adressage entière.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Est passé comme argument à la [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) (méthode) et retournée par la [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) (méthode).  
   
  Ces valeurs peuvent être combinées avec une opération de bits `OR`.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

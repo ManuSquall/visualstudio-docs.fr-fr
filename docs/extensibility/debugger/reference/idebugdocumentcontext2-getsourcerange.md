@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3fc08e761b3944aafd2303bd7266c98dc06e1be8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a7256771eed9e6d4ce12477dd34a63e8da06606e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
 Obtient la plage de code source du contexte de ce document.  
@@ -49,7 +50,7 @@ int GetSourceRange(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Une plage source est l’ensemble du code source, à l’arrière d’instruction en cours se termine juste après l’instruction précédente qui a contribué à code. La plage source est généralement utilisée pour combiner des instructions de la source, y compris les commentaires, avec le code dans la fenêtre code machine.  
   
  Pour obtenir la plage pour simplement les instructions de code contenues dans le contexte de ce document, appelez le [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) (méthode).  

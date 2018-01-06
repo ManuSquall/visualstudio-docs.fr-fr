@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7231e0cc5c9d5946fabe504c16813ea47b24bdbc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 095fb9d8477a649c72204c018f28fe6636a3903f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg, constructeur
 Construit une instance de la `VsgDbg` classe avec ou sans la préparer le composant dans l’application de graphics diagnostics pour activement capturer et enregistrer des informations graphiques par défaut, en fonction du paramètre booléen spécifié.  
@@ -33,7 +34,7 @@ VsgDbg(
  `bDefaultInit`  
  `true`Pour spécifier que le composant dans l’application de graphics diagnostics doit être préparé à activement capturer et enregistrer des informations graphiques ; `false` pour spécifier que l’application ne doit pas être préparée activement capturer et enregistrer des informations graphiques pour l’instant.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Lorsque le constructeur est appelé avec `bDefaultInit` la valeur `true`, le nom de fichier du fichier journal de graphisme est déterminé par la façon dont le `DONT_SAVE_VSGLOG_TO_TEMP` et `VSG_DEFAULT_RUN_FILENAME` symboles de préprocesseur sont définies avant `vsgcapture.h` est inclus dans votre application.  
   
  Lorsque le constructeur est appelé avec `bDefaultInit` la valeur `false`, le composant dans l’application de graphics diagnostics peut être préparé à activement capturer et enregistrer des informations graphiques ultérieurement en appelant le `Init` (fonction).  

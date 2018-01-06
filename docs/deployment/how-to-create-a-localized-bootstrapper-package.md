@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f19ec03dda8666eea39b50af40a44ab2c68694ce
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9a3339b4bd6724fec782857a74a6b51463fe8028
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Comment : créer un package du programme d'amorçage localisé
 Après avoir créé un package de programme d'amorçage, vous pouvez créer des versions localisées de ce dernier en créant deux fichiers de plus pour chacun des paramètres régionaux : un fichier des termes du contrat de licence logiciel (par exemple eula.rtf) et un manifeste du package (package.xml).  

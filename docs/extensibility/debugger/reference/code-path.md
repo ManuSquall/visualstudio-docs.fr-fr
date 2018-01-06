@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aad85bd41537073a54b319b2830ea621fd4bece4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dd2cd5de0d415e133beb6b72b63b9d42eb61c947
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="codepath"></a>CODE_PATH
 Décrit un appel de méthode ou fonction.  
@@ -46,10 +47,10 @@ public struct CODE_PATH {
  pCode  
  Le [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet identifie où dans le code pas à pas une fonction.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette structure est utilisée pour implémenter le pas à pas détaillé dans une fonction. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) renvoie tous les appels de l’emplacement actuel dans le programme en cours de débogage. Cette structure représente un appel de ce type.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

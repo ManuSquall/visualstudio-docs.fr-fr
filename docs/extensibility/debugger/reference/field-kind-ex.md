@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 700eae83a53cf9ef88c81d33a07f9a79bd77a4b8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 910ad92cbc71fd4fb1b98567ff4629ef563ac476
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 Énumère les types de champs supplémentaires qui une [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet peut contenir. Cette énumération étend la [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) énumération.  
@@ -53,7 +54,7 @@ public enum enum_FIELD_KIND_EX
  FIELD_TYPE_EX_CLASSVAR  
  Champ contient une variable de classe.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Sh.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

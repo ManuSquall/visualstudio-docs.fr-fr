@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41a52574a2e966860d9143487a1befb5d3a1b95d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1e9fdcc9de4f6e604518b9951f601c8e46815fe0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 Récupère un indicateur qui spécifie si la fonction est une fonction virtuelle de présentation.  
@@ -54,7 +55,7 @@ class B : public A {
   
  Les deux `A::f1` et `B::f1` sont des fonctions virtuelles, mais `A::f1` est intro virtuel.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

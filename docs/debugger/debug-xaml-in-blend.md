@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b89bd3b3814eb8f5a1040a93aa1fc553f91c8025
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 8406f07b6f74211b4df873c7eae054e9ab67749c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] pour déboguer le code XAML dans votre application. Lorsque vous générez un projet, des erreurs s’affichent dans le **résultats** Panneau de configuration. Double-cliquez sur une erreur pour localiser le balisage associé à l'erreur. Si vous avez besoin de plus d’espace de travail, vous pouvez masquer la **résultats** Panneau de configuration en appuyant sur F12.  
@@ -38,7 +39,7 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../debugger/includes/b
   
 -   Des guillemets sont manquants autour d'attributs ou de chaînes de texte.  
   
--   Il manque une balise de fermeture à un élément XAML.  
+-   Il manque une étiquette de fermeture à un élément XAML.  
   
 -   Il existe un élément XAML à un emplacement non autorisé.  
   

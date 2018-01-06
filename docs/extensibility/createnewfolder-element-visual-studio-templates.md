@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 60659adc2c261f498b0e5ffeebe3831faf7e6402
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dab5b47904360fbc87b6799affe290cd3ab94398
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder, élément (modèles Visual Studio)
 Détermine s'il convient de vérifier que le répertoire cible où le projet doit être créé n'existe pas. Si le répertoire existe, un nouveau répertoire peut être créé pour le projet. Ce paramètre est généralement remplacé par l'indicateur de registre `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) que tous les types de projets courants utilisent pour déterminer s'il convient de créer un nouveau projet dans un nouveau répertoire.  
@@ -42,7 +43,7 @@ Détermine s'il convient de vérifier que le répertoire cible où le projet doi
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -58,7 +59,7 @@ Détermine s'il convient de vérifier que le répertoire cible où le projet doi
   
  Le texte doit être `true` ou `false`, indiquant si un nouveau dossier conteneur doit être créé ou non quand un projet est créé à partir du modèle.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `CreateNewFolder` est un élément facultatif. La valeur par défaut est `true`.  
   
  La valeur spécifiée dans l'élément `CreateNewFolder` est honorée uniquement par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] si le système de projet sous-jacent la prend en charge.  

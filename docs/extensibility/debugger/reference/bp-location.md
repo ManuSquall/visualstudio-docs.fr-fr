@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4af879fba6dacb30e7e20913a2b155ec7a7c040c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6e268d809442b0101d5d520ca7bdd5f5c37fb62b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bplocation"></a>BP_LOCATION
 Spécifie le type de structure utilisée pour décrire l’emplacement du point d’arrêt.  
@@ -88,7 +89,7 @@ public struct BP_LOCATION {
  `unionmember4`  
  (C# uniquement) Consultez la section Notes sur l’interprétation.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette structure est un membre de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structures.  
   
  (C# uniquement) Le `unionmemberX` membres sont interprétés en fonction de la table suivante. Rechercher vers le bas de la colonne de gauche pour le `bpLocationType` valeur, puis recherchez dans les autres colonnes pour déterminer ce que chaque `unionmemberX` membre représente et marshaler le `unionmemberX` en conséquence. Consultez l’exemple d’une manière d’interpréter une partie de cette structure en c#.  
@@ -129,7 +130,7 @@ namespace MyPackage
 }  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

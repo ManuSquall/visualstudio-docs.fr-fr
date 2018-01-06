@@ -24,16 +24,17 @@ caps.latest.revision: "49"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 10f99d620060245fd7dac4e2420216a23d068a83
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Procédure pas à pas : déploiement manuel d'une application ClickOnce
 Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, ou vous devez utiliser les fonctionnalités de déploiement avancées, comme le déploiement d’applications approuvées, vous devez utiliser l’outil de ligne de commande Mage.exe pour créer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestes. Cette procédure pas à pas explique comment créer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement à l’aide de la version de ligne de commande (Mage.exe) ou graphique (MageUI.exe) de le Manifest Generation and Editing Tool.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Cette procédure pas à pas a certaines conditions préalables et les options que vous devez choisir avant de générer un déploiement.  
   
 -   Installez Mage.exe et MageUI.exe.  
@@ -162,7 +163,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
   
 13. Si vous possédez un certificat stocké en tant que fichier sur votre système de fichiers, utilisez le **signer avec le fichier de certificat** option et sélectionnez le certificat du système de fichiers en utilisant les points de suspension (**...** ) bouton. Puis tapez votre mot de passe du certificat.  
   
-     ou  
+     - ou -  
   
      Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez le **signer avec le certificat stockée** option et sélectionnez le certificat dans la liste fournie.  
   
@@ -190,7 +191,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
   
 25. Si vous possédez un certificat stocké en tant que fichier sur votre système de fichiers, utilisez le **signer avec le fichier de certificat** option et sélectionnez le certificat du système de fichiers en utilisant les points de suspension (**...** ) bouton. Puis tapez votre mot de passe du certificat.  
   
-     ou  
+     - ou -  
   
      Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez le **signer avec le certificat stockée** option et sélectionnez le certificat dans la liste fournie.  
   

@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 58baa5aca9ef5bddf5d7060fdc88022952bc9ce3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e272c92bbcc7364c967fc37c1e57b915e6cb64ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 Spécifie la condition associée le nombre de passe de point d’arrêt, le point d’arrêt sont activés.  
@@ -57,10 +58,10 @@ public enum enum_BP_PASSCOUNT_STYLE {
  BP_PASSCOUNT_MOD  
  Spécifie un modulo passer le nombre. Par exemple, si le compteur transmis est de type `BP_PASSCOUNT_MOD` et passe la valeur du nombre est 4, le se déclenche de point d’arrêt chaque fois que le nombre d’accès est un multiple de 4.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Utilisé pour le `stylePassCount` membre de la [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) structure qui est à son tour un membre de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structures.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

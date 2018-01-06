@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: facfc1670bf9d04035beffc47b7124bd5d309a7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 77002e095690da85e73f1a79d405cb5174b96851
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>L’accès à la mémoire tampon de texte à l’aide de l’API héritée
 Le texte est chargé de gérer le flux de texte et la persistance du fichier. Bien que la mémoire tampon pour lire ou écrire d’autres formats, toutes les communications normales avec la mémoire tampon sont effectuée à l’aide d’Unicode. Dans les API héritées, la mémoire tampon de texte permettre utiliser - ou un système de coordonnées à deux dimensions pour identifier les emplacements de caractère dans la mémoire tampon.  

@@ -17,11 +17,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: uwp
+ms.openlocfilehash: d5fa005273ada8869da467c9db97e0263f43f555
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Parcourir une session de débogage dans Visual Studio (XAML et C#)
 Ce guide de démarrage rapide montre comment naviguer dans les sessions de débogage Visual Studio et comment afficher et modifier l'état du programme dans la session.  
@@ -30,7 +31,7 @@ Ce guide de démarrage rapide montre comment naviguer dans les sessions de débo
   
  Les sections de ce guide de démarrage rapide ont été conçues pour être aussi indépendantes que possible. Vous pouvez sauter les sections qui contiennent des informations avec lesquelles vous êtes déjà familiarisé. Vous n'êtes pas non plus tenu de créer un exemple d'application. Toutefois, nous vous le recommandons et avons rendu le processus aussi simple que possible.  
   
- **Raccourcis clavier du débogueur.** La navigation dans le débogueur Visual Studio est optimisée pour la souris et le clavier. Plusieurs étapes dans cette rubrique présentent l'accélérateur clavier ou la touche de raccourci dans une note entre parenthèses. Par exemple, (clavier : F5) indique que la touche F5 permet de démarrer ou de continuer l'exécution du débogueur.  
+ **Raccourcis clavier du débogueur.** La navigation dans le débogueur Visual Studio est optimisée pour la souris et le clavier. Plusieurs étapes dans cette rubrique présentent l'accélérateur clavier ou la touche de raccourci dans une note entre parenthèses. Par exemple, (clavier : F5) indique que la touche F5 permet de démarrer ou de continuer l'exécution du débogueur.  
   
 ## <a name="in-this-topic"></a>Dans cette rubrique  
  Vous allez apprendre à :  
@@ -100,7 +101,7 @@ Ce guide de démarrage rapide montre comment naviguer dans les sessions de débo
   
  Placez le pointeur de la souris au-dessus de la variable `a`. Notez le nom, la valeur et le type de données. Placez le pointeur de la souris au-dessus de la variable `methodTrack`. Notez à nouveau le nom, la valeur et le type de données.  
   
- **Examiner les valeurs des variables dans la fenêtre Variables locales.** On the **Déboguer** , pointez sur **Fenêtres**, puis choisissez **Variables locales**. (clavier : Alt+4).  
+ **Examiner les valeurs des variables dans la fenêtre Variables locales.** Dans la boîte de dialogue **Déboguer** , pointez sur **Fenêtres**, puis choisissez **Variables locales**. (clavier : Alt+4).  
   
  ![Fenêtre variables locales](../debugger/media/dbg_basics_localswindow.png "DBG_Basics_LocalsWindow")  
   
@@ -158,7 +159,7 @@ Ce guide de démarrage rapide montre comment naviguer dans les sessions de débo
   
  ![Exemple3 d’appel de la méthode de démonstration](../debugger/media/dbg_basics_callexample3.png "DBG_Basics_CallExample3")  
   
- **Lancer l'exécution jusqu'au point d'arrêt.** Démarrez la session de débogage en choisissant **Démarrer le débogage** dans le menu **Déboguer** (clavier : F5). Le débogueur suspend l'exécution au point d'arrêt dans la méthode MainPage.  
+ **Lancer l'exécution jusqu'au point d'arrêt.** Démarrez la session de débogage en choisissant **Démarrer le débogage** on the **Déboguer** (clavier : F5). Le débogueur suspend l'exécution au point d'arrêt dans la méthode MainPage.  
   
  **Exécuter pas-à-pas la méthode Example3.** Choisissez **Pas à pas détaillé** dans le menu **Déboguer** (clavier : F11) pour passer au point d'entrée de la méthode Example3. Reprend l'exécution pas-à-pas dans la méthode jusqu'à l'itération d'une ou deux boucles du bloc `for` . Notez que l'exécution pas-à-pas de toutes les 1 000 itérations peut prendre du temps.  
   
@@ -187,14 +188,14 @@ Ce guide de démarrage rapide montre comment naviguer dans les sessions de débo
   
  Même si vous pouvez utiliser la fonction modifier et continuer dans un grand nombre situations, il est difficile de spécifier les conditions spécifiques qui ne prennent pas en charge cette fonction, car elles dépendent du langage de programmation, de l'état actuel de la pile du programme et de la capacité du débogueur à changer d'état sans nuire au processus. Le meilleur moyen pour déterminer si une modification est prise en charge est simplement d'essayer. Le débogueur permet de savoir immédiatement si la modification n'est pas prise en charge.  
   
-### <a name="example-4"></a>Exemple 4  
+### <a name="example-4"></a>Exemple 4  
  Dans cet exemple, vous exécutez le débogueur jusqu'à une exception, vous remontez l'exception, vous corrigez la logique de la méthode, puis vous modifiez la valeur d'une variable afin que vous puissiez continuer l'exécution de la méthode.  
   
  **Appeler la méthode Example4 dans le constructeur MainPage.** Modifiez le constructeur MainPage() et remplacez la ligne qui suit `methodTrack = String.Empty;` par la ligne `Example4();`.  
   
  ![Exemple4 d’appel de la méthode de démonstration](../debugger/media/dbg_basics_callexample4.png "DBG_Basics_CallExample4")  
   
- **Lancer l'exécution jusqu'à l'exception.** Démarrez la session de débogage en choisissant **Démarrer le débogage** dans le menu **Déboguer** (clavier : F5). Appuyez de nouveau sur F5 pour reprendre l'exécution. Le débogueur suspend l'exécution au niveau de l'exception de la méthode Example4 et affiche une boîte de dialogue d'exception.  
+ **Lancer l'exécution jusqu'à l'exception.** Démarrez la session de débogage en choisissant **Démarrer le débogage** on the **Déboguer** (clavier : F5). Appuyez de nouveau sur F5 pour reprendre l'exécution. Le débogueur suspend l'exécution au niveau de l'exception de la méthode Example4 et affiche une boîte de dialogue d'exception.  
   
  ![Boîte de dialogue exception](../debugger/media/dbg_basics_exceptiondlg.png "DBG_Basics_ExceptionDlg")  
   

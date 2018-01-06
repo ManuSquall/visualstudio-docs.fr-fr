@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 323f94ffdbb05fcf37cd749a1b29bef47738489b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 965d090868e3ea47f5802d12b6fc0296026f90a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
 Récupère un indicateur qui spécifie si la fonction contient les exceptions asynchrones (structurées).  
@@ -41,10 +42,10 @@ HRESULT get_hasEHa(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Il est possible de combiner la gestion avec gestion des exceptions C++-style asynchrone ou structurée des exceptions, mais il requiert un commutateur de compilateur spécifique, /EHa, pour l’activer.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

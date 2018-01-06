@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0870a805e834f48b0d2a7e6d6f66a0f9bb2d7fe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c7bd1b12fbad9f70555009eef6774d6f0dc7c028
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 Obtient le type du point d’arrêt représenté par cette résolution.  
@@ -44,7 +45,7 @@ int GetBreakpointType(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne E_FAIL si le `bpResLocation` champ associé [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) structure n’est pas valide.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le point d’arrêt peut être un code ou un point d’arrêt, par exemple.  
   
 ## <a name="example"></a>Exemple  

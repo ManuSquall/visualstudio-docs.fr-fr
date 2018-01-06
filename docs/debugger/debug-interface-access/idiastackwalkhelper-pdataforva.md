@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4925a4a37395dd53fabb1d8d7ba7f80bc5cc6c93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 251b54ca712078e5252a4a55c9237545e14a7536
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 Retourne le bloc de données PDATA associé à l’adresse virtuelle.  
@@ -50,7 +51,7 @@ HRESULT pdataForVA(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’existe aucun PDATA pour l’adresse spécifiée. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  PDATA (la section nommée « .pdata ») d’un module contient des informations sur la gestion des exceptions de fonctions.  
   
  L’appelant sait que la quantité de données doit être retourné pour l’appelant n’a pas besoin pour poser pour la quantité de données est disponible. Par conséquent, il est acceptable pour une implémentation de cette méthode pour retourner une erreur si le `pbData` paramètre est `NULL`.  

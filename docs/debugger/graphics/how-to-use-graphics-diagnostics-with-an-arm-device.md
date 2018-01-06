@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60898b7ea37c7e732453fd03f9c557b2494f66c5
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: eedc7e454c6523c1ab29e4ae685b14954c8e6d98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Comment : utiliser Graphics Diagnostics avec un appareil ARM
 Graphics Diagnostics prend en charge le débogage distant des applications Direct3D sur les appareils ARM qui exécutent Windows RT 8.1 ou Windows Phone 8.1. Vous pouvez capturer les informations graphiques de votre application Direct3D pendant qu'elle s'exécute sur l'appareil ou utiliser ce dernier comme ordinateur de lecture pour des informations graphiques capturées antérieurement.  

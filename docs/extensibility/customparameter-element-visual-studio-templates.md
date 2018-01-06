@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d52d22e3b4200cee0bd5d3dd3eab3e5356f0dbbd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8b2380a585b1c428516e1578587c64b93d5b1d4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter, élément (modèles Visual Studio)
 Contient un nom de paramètre personnalisé et une valeur à utiliser lorsqu’un projet ou un élément est créé à partir du modèle.  
@@ -48,7 +49,7 @@ Contient un nom de paramètre personnalisé et une valeur à utiliser lorsqu’u
 |-------------|-----------------|  
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Regroupe les paramètres personnalisés qui doivent être passés à l’Assistant modèle lorsque les remplacements de paramètres.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Lorsqu’un modèle contient `CustomParameter` éléments, chaque instance de la `Name` attribut est remplacé par le `Value` attribut dans les fichiers de projet ou un élément créés.  
   
 ## <a name="example"></a>Exemple  

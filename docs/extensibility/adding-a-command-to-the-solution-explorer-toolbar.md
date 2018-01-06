@@ -16,11 +16,12 @@ caps.latest.revision: "39"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26f5777477617b0bffe008ec92873b852af8fe08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 85d38f2347009d75c5e06365c757d2d51339bf06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Ajout d’une commande à la barre d’outils de l’Explorateur de solutions
 Cette procédure pas à pas montre comment ajouter un bouton à la **l’Explorateur de solutions** barre d’outils.  
@@ -32,7 +33,7 @@ Cette procédure pas à pas montre comment ajouter un bouton à la **l’Explora
 > [!NOTE]
 >  Utilisez les fichiers XML Command Table (.vsct) au lieu des fichiers de configuration (.ctc) de table de commande pour définir l’apparaissent des menus et des commandes dans vos VSPackages. Pour plus d'informations, consultez [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-an-extension-with-a-menu-command"></a>Création d’une Extension avec une commande de Menu  

@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dcbc4478830a730f684b008c88ff5c6490a1c596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da79744ab31b4d8edee83e0ab5b159edbb495cb7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetvirtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
 Récupère le type d’un pointeur de la table de base virtuelle.  
@@ -43,12 +44,12 @@ HRESULT get_virtualBaseTableType(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Un pointeur de la table de base virtuelle (`vbtptr`) est un pointeur masqué dans un [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] vtable qui gère l’héritage de classes de base virtuelles. A `vbtptr` peuvent avoir des tailles différentes selon les classes héritées.  
   
  Cette méthode retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui peut être utilisé pour déterminer la taille de la vbtptr.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

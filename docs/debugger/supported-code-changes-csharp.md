@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a0a7d55b19455e22836d4750c0842a47816ee86
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Modifications de code prises en charge (c# et Visual Basic)
 Modifier & Continuer gère la plupart des types de modifications du code dans le corps des méthodes. Toutefois, la plupart des modifications en dehors du corps des méthodes et quelques autres à l'intérieur ne peuvent pas s'appliquer pendant le débogage. Pour appliquer ces modifications non prises en charge, vous devez arrêter le débogage et redémarrer avec une version nouvelle du code.
@@ -36,7 +37,7 @@ Le tableau ci-dessous indique les modifications qui peuvent être effectuées da
 |Élément de langage ou une fonctionnalité|Opération de modification pris en charge|Limitations|
 |-|-|-|
 |Types|Ajouter des méthodes, champs, constructeurs, et al.|[Oui](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Itérateurs|Ajouter ou modifier|Non|
+|Iterators|Ajouter ou modifier|Non|
 |expressions asynchrones / d’attente|Ajouter ou modifier|[Oui](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Objets dynamiques|Ajouter ou modifier|Non|
 |expressions lambda|Ajouter ou modifier|[Oui](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
@@ -78,7 +79,7 @@ Le tableau ci-dessous indique les modifications qui peuvent être effectuées da
 |blocs try-catch-finally|Modifier lorsqu’elle contient une instruction active|
 |instructions Using|Ajouter|
 |méthodes/lambdas asynchrones|Modifier une méthode/lambda async dans un projet ciblant .NET Framework 4 et diminuer (voir [détails](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|Itérateurs|Modifier un itérateur dans un projet ciblant .NET Framework 4 et diminuer (voir [détails](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Iterators|Modifier un itérateur dans un projet ciblant .NET Framework 4 et diminuer (voir [détails](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
   
 ## <a name="unsafe-code"></a>Code unsafe  
  Les modifications apportées à du code unsafe présentent les mêmes restrictions que celles qui portent sur du code sécurisé, avec une restriction supplémentaire : Modifier & Continuer ne prend pas en charge les modifications de code unsafe dans une méthode qui contient l'opérateur `stackalloc`.  
@@ -98,8 +99,6 @@ Plateformes et des applications non prises en charge incluent ASP.NET 5, émulat
 -   Débogage SQL.  
   
 -   Débogage d'un dump Dr. Watson.  
-  
--   Modification de code après une exception non gérée, lorsque le «**dérouler la pile des appels sur les exceptions non gérées**« option n’est pas sélectionnée.  
   
 -   Débogage d'une application runtime incorporée.  
   

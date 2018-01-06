@@ -21,11 +21,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9808c664e5e3d06558faf8f9b44a6a2bb6e9b83
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 32aa07920c496249271e6c337952129292a3d2aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Commandes de JavaScript Console dans Visual Studio
 ![S’applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -56,12 +57,12 @@ ms.lasthandoff: 11/11/2017
 |`error(message)`|Envoie `message` dans la fenêtre de la console. Le texte du message est rouge et précédé d’un symbole d’erreur.<br /><br /> Les objets qui sont passés à l’aide de la commande sont convertis en valeur de chaîne.|`console.error("error message");`|  
 |`group(title)`|Démarre le regroupement des messages envoyés à la fenêtre de console, puis envoie le paramètre facultatif `title` comme étiquette de groupe. Les groupes peuvent être imbriqués et s’affichent dans une arborescence dans la fenêtre de console.<br /><br /> Les commandes group* peuvent faciliter l’affichage de la sortie de la fenêtre de console dans certains scénarios, par exemple lorsqu’un modèle de composant est en cours d’utilisation.|`console.group("Level 2 Header");` <br /> `console.log("Level 2");` <br /> `console.group();` <br /> `console.log("Level 3");` <br /> `console.warn("More of level 3");` <br /> `console.groupEnd();` <br /> `console.log("Back to level 2");` <br /> `console.groupEnd();` <br /> `console.debug("Back to the outer level");`|  
 |`groupCollapsed(title)`|Démarre le regroupement des messages envoyés à la fenêtre de console, puis envoie le paramètre facultatif `title` comme étiquette de groupe. Les groupes qui sont envoyés à l’aide de `groupCollapsed` s’affichent dans un affichage réduit par défaut. Les groupes peuvent être imbriqués et s’affichent dans une arborescence dans la fenêtre de console.|La syntaxe est la même que pour la commande `group` .<br /><br /> Consultez l’exemple correspondant à la commande `group` .|  
-|`groupEnd()`|Met fin au groupe actif.<br /><br /> Configuration requise :<br /><br /> Visual Studio 2013|Consultez l’exemple correspondant à la commande `group` .|  
+|`groupEnd()`|Met fin au groupe actif.<br /><br /> Configuration requise :<br /><br /> Visual Studio 2013|Consultez l’exemple correspondant à la commande `group` .|  
 |`info(message)`|Envoie `message` dans la fenêtre de la console. Le message est précédée d’un symbole d’informations.|`console.info("info message");`<br /><br /> Pour des exemples supplémentaires, consultez [Formatting console.log output](#ConsoleLog) plus loin dans cette rubrique.|  
 |`log(message)`|Envoie `message` dans la fenêtre de la console.<br /><br /> Si vous passez un objet, cette commande l’envoie à la fenêtre de la console et l’affiche dans un visualiseur d’objets. Utilisez le visualiseur pour examiner les propriétés dans la fenêtre de la console.|`console.log("logging message");`|  
-|`msIsIndependentlyComposed(element)`|Utilisée dans les applications web. Non pris en charge dans les applications UWP à l’aide de JavaScript.|Non prise en charge.|  
-|`profile(reportName)`|Utilisée dans les applications web. Non pris en charge dans les applications UWP à l’aide de JavaScript.|Non prise en charge.|  
-|`profileEnd()`|Utilisée dans les applications web. Non pris en charge dans les applications UWP à l’aide de JavaScript.|Non prise en charge.|  
+|`msIsIndependentlyComposed(element)`|Utilisée dans les applications web. Non pris en charge dans les applications UWP à l’aide de JavaScript.|Non pris en charge.|  
+|`profile(reportName)`|Utilisée dans les applications web. Non pris en charge dans les applications UWP à l’aide de JavaScript.|Non pris en charge.|  
+|`profileEnd()`|Utilisée dans les applications web. Non pris en charge dans les applications UWP à l’aide de JavaScript.|Non pris en charge.|  
 |`select(element)`|Sélectionne le code HTML spécifié `element` dans les [l’Explorateur DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|Démarre une minuterie identifiée par le paramètre facultatif `name` . Utilisée avec `console.timeEnd`, calcule le temps qui s’écoule entre `time` et `timeEnd`, puis envoie le résultat (mesuré en ms) à la console à l’aide de la chaîne `name` comme préfixe. Utilisée pour permettre l’instrumentation du code d’application pour mesurer les performances.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Arrête une minuterie identifiée par le paramètre facultatif `name` . Consultez la commande de console `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|  

@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29e05c7cef8b7bc8644ccbf7ea542e2f043547a6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5762b59a52cce2bf918c50630bbf82e176d9e82f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launching-a-program"></a>Lancement d’un programme
 Les utilisateurs qui souhaitent déboguer un programme peuvent appuyer sur F5 pour exécuter le débogueur à partir de l’IDE. Commence une série d’événements d’aboutir à l’IDE se connecter à un moteur de débogage (DE), qui est à son tour connecté ou attaché, le programme comme suit :  
@@ -28,7 +29,7 @@ Les utilisateurs qui souhaitent déboguer un programme peuvent appuyer sur F5 po
   
 2.  Si un D’est spécifié, le D’appelle le système d’exploitation pour lancer le programme. Par conséquent le lancement du programme, l’environnement d’exécution du programme est chargé. Par exemple, si un programme est écrit dans le langage MSIL, le common language runtime sera appelé pour exécuter le programme.  
   
-     ou  
+     - ou -  
   
      Si un DE n’est pas spécifié, le port appelle le système d’exploitation pour lancer le programme, ce qui entraîne l’environnement d’exécution du programme doit être chargé.  
   

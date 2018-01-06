@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 00cc60b0b6c522c6a6674456adae50aace266030
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98d6edf4da8b7f0275a7b361f5492f4f49a1f747
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-and-removing-property-pages"></a>Ajout et suppression de Pages de propriétés
 Le Concepteur de projet fournit un emplacement centralisé pour la gestion des propriétés du projet, les paramètres et les ressources dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il apparaît sous la forme d’une fenêtre unique dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] développement environnement intégré (IDE) et contient un nombre de volets qui sont accessibles via les onglets sur la gauche à droite. Les volets (souvent appelés pages de propriétés) dans le Concepteur de projet varient selon le langage et le type de projet. Le Concepteur de projet est accessible avec la **propriétés** commande sur le **projet** menu.  

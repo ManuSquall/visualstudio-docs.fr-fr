@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26acf7b8f9ad54a1ef1ed25497cd408c51c745c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fd0049e15f17d5dff58d35d4279bb0ab0673091e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 Récupère un tableau au moyen d’un index ou un nom.  
@@ -42,7 +43,7 @@ HRESULT Item (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si une variante de la chaîne est spécifiée, la chaîne de noms une table particulière. Le nom doit être un des noms de table comme défini dans [(Debug Interface Access SDK) des constantes](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).  
   
 ## <a name="example"></a>Exemple  

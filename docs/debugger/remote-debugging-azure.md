@@ -12,11 +12,15 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0527d33e47ce42449f2ae2bb75ee3e342b04c2b
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload:
+- aspnet
+- dotnetcore
+- azure
+ms.openlocfilehash: 8d0163d9834a56735daf67050dbf3b8e74011dc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Débogage distant ASP.NET Core IIS et sur Azure dans Visual Studio 2017
 Vous pouvez déployer une application Web ASP.NET sur un ordinateur Windows Server avec les services IIS et de le configurer pour le débogage distant. Ce guide explique comment installer et configurer une application Visual Studio 2017 ASP.NET Core, déployez-le sur IIS à l’aide d’Azure et attacher le débogueur distant à partir de Visual Studio.
@@ -41,17 +45,17 @@ Pour une machine virtuelle Azure, vous devez déployer votre application à part
 > [!NOTE]
 > Pour déboguer des noyaux de ASP.NET sur Azure Service Fabric, consultez [déboguer une application de Service Fabric distante](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
-### <a name="requirements"></a>Spécifications
+### <a name="requirements"></a>Configuration requise
 
 Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Débogage sur une latence élevée ou d’une connexion à faible bande passante, telles que les connexions à distance d’Internet, ou via Internet entre des pays n’est pas recommandé et peut échouer ou être trop faibles. Pour obtenir une liste complète des conditions requises, consultez [exigences](../debugger/remote-debugging.md#requirements_msvsmon).
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Créer l’application ASP.NET Core sur l’ordinateur Visual Studio 2017 
 
-1. Créez une application ASP.NET Core. (Choisissez **fichier > Nouveau > projet**, puis sélectionnez **Visual c# > Web > Application ASP.NET Core Web (.NET Core)**).
+1. Créez une application ASP.NET Core. (Choisissez **fichier > Nouveau > projet**, puis sélectionnez **Visual c# > Web > Application ASP.NET Core Web**).
 
     Dans le **ASP.NET Core** section modèles, sélectionnez **Application Web**.
 
-2. Assurez-vous que **activer la prise en charge Docker** est **pas** sélectionné et que **authentification** a la valeur **aucune authentification**.
+2. Assurez-vous que **ASP.NET Core 2.0** est sélectionnée, qui **activer la prise en charge Docker** est **pas** sélectionné et que **authentification** a la valeur **Aucune authentification**.
 
 3. Nommez le projet **MyASPApp** et cliquez sur **OK** pour créer la nouvelle solution.
 
@@ -75,7 +79,7 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 
     Le point d’arrêt doit être atteint dans Visual Studio.
 
-    Voilà ! Le reste des étapes de cette rubrique s’appliquent au débogage distant sur une machine virtuelle Azure.
+    C’est tout ! Le reste des étapes de cette rubrique s’appliquent au débogage distant sur une machine virtuelle Azure.
 
 ## <a name="BKMK_azure_vm"></a>Débogage distant ASP.NET Core sur une machine virtuelle Azure
 

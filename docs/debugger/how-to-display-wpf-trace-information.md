@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe00aff9834d612702c61f06a1d0c924852c9462
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e210d575b17552d7b5e4d6dc126335ff3711ee5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Comment : afficher les informations de trace WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]peut recevoir des informations de trace de débogage à partir d’applications WPF et afficher ces informations dans le **sortie** fenêtre. Pour afficher les informations de trace de débogage, le traçage WPF doit être activé.  

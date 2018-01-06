@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a13d9146596bfc3d13cc4eea93224c5e7dceaae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 230be9a3c1d7e3bcbddc85bc37226a2a2baef6a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="displaykind"></a>DisplayKind
 Énumère les valeurs valides qui représentent les types d’informations à prendre entre une [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) de l’objet et l’afficher à l’utilisateur.  
@@ -53,7 +54,7 @@ public enum enum_DisplayKind
  DisplayKind_Type  
  Type de champ.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Ee.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

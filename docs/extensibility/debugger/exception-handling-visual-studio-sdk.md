@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a0d950de8e9f91232e3526064561a7508c133b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 88a862c26dad97eecdb5f372f41a76d7886f32be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Exceptions (Kit de développement logiciel Visual Studio)
 La liste suivante décrit le processus qui se produit lorsque des exceptions sont levées.  
@@ -36,7 +37,7 @@ La liste suivante décrit le processus qui se produit lorsque des exceptions son
   
     -   Si la méthode retourne S_OK, appelle [IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md).  
   
-         ou  
+         - ou -  
   
          Si la méthode retourne S_FALSE, le programme débogué est donné à une deuxième chance pour gérer l’exception.  
   

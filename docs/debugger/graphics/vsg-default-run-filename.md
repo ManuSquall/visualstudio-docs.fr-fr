@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3604842dd2d84af4598b65c83cc2999930b89edf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7fe31b96911329089174772094784c0d0f3371c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
 Définit le nom de fichier par défaut du fichier journal graphique.  
@@ -31,7 +32,7 @@ Définit le nom de fichier par défaut du fichier journal graphique.
  `filename`  
  Le nom de fichier attribué par défaut pour le fichier journal de graphisme lorsque les informations graphiques sont capturées par programme.  
   
-## <a name="value"></a>Valeur  
+## <a name="value"></a>Value  
  Fichier journal d’une chaîne littérale qui représente le nom de fichier de graphiques. Par défaut, L"default.vsglog ».  
   
 ```C++  

@@ -22,11 +22,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 24a229c7c96221c0b7f04a91d5f71fa566e71e81
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8822d0aa9947dccbdfabc43d7090b52eba7d0844
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Comment : configurer le comportement de l'invite d'approbation ClickOnce
 Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si les utilisateurs finaux reçoivent la possibilité d’installer des applications ClickOnce, telles que les applications Windows Forms, les applications Windows Presentation Foundation, les applications console, navigateur WPF les applications et les solutions Office. Vous configurez l’invite d’approbation en définissant des clés de Registre sur l’ordinateur de chaque utilisateur final.  
@@ -70,7 +71,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
 3.  Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.  
   
-    |Sous-clé valeur chaîne|Valeur|  
+    |Sous-clé valeur chaîne|Value|  
     |-------------------------|-----------|  
     |`Internet`|`Enabled`|  
     |`UntrustedSites`|`Disabled`|  
@@ -129,7 +130,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
 3.  Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.  
   
-    |Sous-clé valeur chaîne|Valeur|  
+    |Sous-clé valeur chaîne|Value|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`AuthenticodeRequired`|  
@@ -165,7 +166,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
     key.Close();  
     ```  
   
-3.  Générez et exécutez l'application.  
+3.  Générez et exécutez l’application.  
   
 ## <a name="disabling-the-clickonce-trust-prompt"></a>La désactivation de l’invite d’approbation ClickOnce  
  Vous pouvez désactiver l’invite d’approbation afin que les utilisateurs finaux reçoivent pas l’option d’installation des solutions qui ne sont pas déjà approuvées dans leur stratégie de sécurité.  
@@ -186,7 +187,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
 3.  Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.  
   
-    |Sous-clé valeur chaîne|Valeur|  
+    |Sous-clé valeur chaîne|Value|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`Disabled`|  
@@ -227,12 +228,12 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Sécurité d’accès du code pour les Applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
+ [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md)   
- [Comment : activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Comment : définir une Zone de sécurité pour une Application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Comment : déboguer une Application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Guide pratique pour activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Guide pratique pour définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Guide pratique pour définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Guide pratique pour déboguer une application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Comment : ajouter un éditeur approuvé à un ordinateur Client pour les Applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [Guide pratique pour resigner des manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

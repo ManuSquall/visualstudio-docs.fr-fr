@@ -13,14 +13,15 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69fbcb828f7fd534e9f086db43f2e63110794b9c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cb12ef13e73e33b213d2b8ca79c2439b517fbda9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introducing-spy"></a>Présentation de Spy++
-Spy++ vous permet d’effectuer les tâches suivantes :  
+Spy++ vous permet d’effectuer les tâches suivantes :  
   
 -   Afficher une arborescence graphique des relations entre les objets système. Il s’agit notamment des [processus](../debugger/processes-view.md), [threads](../debugger/threads-view.md)et [fenêtres](../debugger/windows-view.md).  
   

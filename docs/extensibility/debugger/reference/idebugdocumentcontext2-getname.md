@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6cfd415f33c04999ddd5d40e7e196dcc0a167c6c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a0350336f9ca13fe4302ada8100912799b326de4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 Obtient le nom complet du document qui contient le contexte de ce document.  
@@ -49,7 +50,7 @@ int GetName(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode transfère en général, l’appel à la [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) (méthode), sauf si le contexte de document est écrites pour stocker le nom du document (comme le montrent les exemple).  
   
 ## <a name="example"></a>Exemple  

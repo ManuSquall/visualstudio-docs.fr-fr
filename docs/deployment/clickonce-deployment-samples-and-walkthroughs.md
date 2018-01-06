@@ -21,18 +21,19 @@ caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 263e3d9a01912c1b47dd518cfc9cd270937e4b7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 68c8f730bf684688cb09970a58ab79101022d4d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Exemples et procédures pas à pas relatifs au déploiement ClickOnce
 Cette section contient des exemples d’applications, des exemples de code et des procédures pas à pas qui illustrent la syntaxe, structure et les techniques utilisées pour déployer des Windows Forms, WPF et applications console.  
   
  L’exemple de code est destiné à des fins pédagogiques et ne doit pas être utilisé dans des solutions déployées sans modification. En particulier, sécurité doive être prise en considération supérieure.  
   
-## <a name="clickonce-deployment"></a>Déploiement ClickOnce  
+## <a name="clickonce-deployment"></a>déploiement ClickOnce  
   
 |Rubrique|Description|  
 |-----------|-----------------|  

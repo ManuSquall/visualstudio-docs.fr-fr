@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4446921759c1b72dd75c31b52bab35d02b219942
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98b1e4a9db18490079dd443cb296481aed64376a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 Utilisé pour déterminer si un programme peut s’arrêter l’exécution après avoir atteint un point particulier dans l’exécution.  
@@ -47,10 +48,10 @@ public enum enum_CANSTOP_REASON {
  CANSTOP_STEPIN  
  Spécifie le pas à pas détaillé dans une fonction.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Est passé comme argument à la [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) méthode pour vérifier avec le Gestionnaire de Session de débogage (SDM) s’il s’agit OK arrêter après avoir atteint le point d’entrée du programme ou après l’exécution pas à pas dans une fonction ou méthode.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

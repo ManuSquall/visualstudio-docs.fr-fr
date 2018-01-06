@@ -13,16 +13,17 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebfb54a289fe085f00c40df34256cfb2174f98fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb66dfffaf8fa8339ce9060c912dc358fb454a7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Création d’une Extension avec un éditeur de modèle d’élément
 Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK Visual Studio pour créer des extensions d’éditeur de base qui ajoutent des classifieurs, motifs et les marges pour l’éditeur. Les modèles d’élément de l’éditeur sont disponibles pour les projets Visual c# ou Visual Basic VSIX.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-classifier-extension"></a>Création d’une Extension de classifieur  

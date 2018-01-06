@@ -18,11 +18,12 @@ caps.latest.revision: "106"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0447f7ac0836f0f23334d8759d294437191aa6a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-saved-intellitrace-data"></a>Utilisation des données IntelliTrace enregistrées
 Accédez aux points spécifiques de l’exécution de votre application lorsque vous démarrez le débogage à partir d’un fichier journal IntelliTrace (.iTrace). Ce fichier contient des événements de performance, des exceptions, des threads, des étapes de test, des modules et d’autres informations système qu’IntelliTrace enregistre pendant que votre application s’exécute.  
@@ -225,7 +226,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 |**Colonne**|**Affiche**|  
 |----------------|-------------------|  
 |**ID**|Numéro d’ID de thread|  
-|**Nom**|Nom du thread. Threads sans nom apparaissent en tant que «\<aucun nom > ».|  
+|**Name**|Nom du thread. Threads sans nom apparaissent en tant que «\<aucun nom > ».|  
 |**Heure de début**|Heure de création du thread.|  
 |**Heure de fin**|Heure à laquelle le thread s’est terminé|  
   

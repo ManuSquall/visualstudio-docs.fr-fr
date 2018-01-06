@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4de35e7bc5d958f524c5f1c5167bb8fb13f3a2c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 18972ad99400ff8f52d84cbef1cfd98389cdeaed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 Crée un énumérateur de points d’arrêt qui ont été liés à cet événement.  
@@ -44,7 +45,7 @@ int EnumBoundBreakpoints(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a aucun point d’arrêt lié ; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La liste des points d’arrêt liés pour celles liées à cet événement et ne peut pas être l’intégralité de la liste des points d’arrêt lié à partir d’un point d’arrêt en attente. Pour obtenir une liste de tous les points d’arrêt lié à un point d’arrêt en attente, appelez le [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) méthode pour obtenir les informations associé [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) de l’objet, puis appelez le [ EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) méthode pour obtenir un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) objet qui contient tous les points d’arrêt liés pour le point d’arrêt en attente.  
   
 ## <a name="example"></a>Exemple  

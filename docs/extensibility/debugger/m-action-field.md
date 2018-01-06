@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ac3abdcfec9e71c3dde51e4d6445d2e97934bf3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c9d5a55f7e91b22a5b9a867991acbfe404a660fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="maction-field"></a>m_action champ
 Délégué qui représente le code à exécuter dans le <xref:System.Threading.Tasks.Task> objet.  
@@ -34,7 +35,7 @@ Délégué qui représente le code à exécuter dans le <xref:System.Threading.T
 .field assembly object m_action  
 ```  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Il s’agit de la `action` paramètre dans le <xref:System.Threading.Tasks.Task.%23ctor%2A> constructeur.  
   
 ## <a name="see-also"></a>Voir aussi  

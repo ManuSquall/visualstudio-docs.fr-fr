@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78c67ccc34d9c95914f6b46d537a4df3431c877f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 542c560805ef33e33519c055a6ed4a59285d0db9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Comment : rechercher un processus dans la vue Processus
 Vous pouvez rechercher un processus spécifique dans la vue processus à l’aide de sa chaîne de module ou d’ID de processus en tant que critères de recherche. Vous pouvez également spécifier la direction initiale de la recherche. Les champs dans la boîte de dialogue affiche les attributs du processus sélectionné dans l’arborescence du processus.  

@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54a981a57605ccb93062ac0678b1e8b5673c6d1a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8a5f7a80e8d594f3c9e62ecd2047cc1116948d2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>L’accès à des couches de texte à l’aide de l’API héritée
 Généralement, un calque de texte encapsule un aspect de la disposition du texte. Par exemple, une couche de « fonction-à-un-temps » masque le texte avant et après une fonction contenant le point d’insertion (point d’insertion de texte).  

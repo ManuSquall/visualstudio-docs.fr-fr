@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df9c61f85c56847fa1b9d881cc26cd2e79f3bd2e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 476ff209f96aa5729d20bd9a5a5d12c9e5a5c39a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Indiquez si vous souhaitez déboguer uniquement le code utilisateur à l’aide d’uniquement mon Code dans Visual Studio
 Vous pouvez configurer Visual Studio pour le survol de système, d’infrastructure et d’autres appels non utilisateur automatiquement et de réduire ces appels dans la fenêtre Pile des appels. La fonctionnalité qui active ou désactive ce comportement est appelée *uniquement mon Code*. Cette rubrique décrit comment utiliser uniquement mon Code dans les projets c#, Visual Basic, C++ et JavaScript.

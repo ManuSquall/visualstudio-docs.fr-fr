@@ -22,32 +22,33 @@ caps.latest.revision: "81"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a08c56ae60822e6d4183e5789c68cbe383b4dd5
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.workload: multiple
+ms.openlocfilehash: 8df1dcde73496f6ec8c25eb33cb4b6986a721f33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Quelles sont les nouveautés du débogueur dans[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Le débogueur inclut ces nouvelles fonctionnalités :
 
-- Nouveauté de 15.5, le **instantané débogueur** prend un instantané de vos applications de production lors de l’exécution de code qui vous intéressez. Pour indiquer au débogueur de prendre un instantané, vous définissez snappoints et logpoints dans votre code. Le débogueur vous permet de voir exactement ce qui s’est produite, sans affecter le trafic de votre application de production. Le débogueur de l’instantané peut vous aider à réduire considérablement le temps que nécessaire pour résoudre les problèmes qui se produisent dans les environnements de production.
+- Nouveauté de 15.5, le **instantané débogueur** prend un instantané de vos applications de production lors de l’exécution de code qui vous intéressez. Pour indiquer au débogueur de prendre une capture instantanée, vous définissez des points d’ancrage et des points de journalisation dans votre code. Dans le débogueur, vous pouvez voir précisément à quel endroit le code ne s’est pas exécuté correctement, sans que cela impacte le trafic de votre application en production. Snapshot Debugger peut vous aider à résoudre beaucoup plus vite les problèmes rencontrés dans les environnements de production.
 
-    Collection d’instantané est disponible pour les applications web suivantes en cours d’exécution dans Azure App Service :
+    La fonctionnalité de capture instantanée est disponible pour les applications web suivantes qui s’exécutent dans Azure App Service :
 
-    * Les applications ASP.NET exécutées sur .NET Framework 4.6.1 ou version ultérieure.
-    * Applications ASP.NET Core en cours d’exécution sur .NET Core 2.0 ou version ultérieure sur Windows.
+    * Applications ASP.NET exécutées sur .NET Framework version 4.6.1 ou ultérieure.
+    * Applications ASP.NET Core exécutées sur .NET Core version 2.0 ou ultérieure sur Windows.
 
     Pour plus d’informations, consultez [déboguer des applications ASP.NET en direct à l’aide du débogueur de l’instantané](../debugger/debug-live-azure-applications.md).
 
-- Nouveautés dans Visual Studio Enterprise 15.5 uniquement, **différée IntelliTrace étape** prend automatiquement un instantané de votre application à chaque point d’arrêt et le débogueur événement d’étape. Les instantanés enregistrés permettent de revenir en arrière pour les points d’arrêt précédents ou étapes et afficher l’état de l’application tel qu’il était dans le passé. IntelliTrace d’étape différée peut faire gagner du temps quand vous souhaitez afficher l’état précédent de l’application mais ne souhaitez pas redémarrer le débogage ou de recréer l’état de l’application souhaitée.
+- Nouveautés dans Visual Studio Enterprise 15.5 uniquement, **différée IntelliTrace étape** prend automatiquement un instantané de votre application à chaque point d’arrêt et le débogueur événement d’étape. Les captures instantanées enregistrées vous permettent de revenir à des étapes ou points d’arrêt précédents pour afficher un état antérieur de l’application. Le retour en arrière IntelliTrace peut vous faire gagner du temps quand vous souhaitez afficher un état précédent de l’application sans avoir à redémarrer le débogage ou à recréer l’état de l’application souhaité.
 
-    Vous pouvez rechercher et afficher des instantanés à l’aide de la **arrière** et **avant** boutons dans la barre d’outils de débogage. Ces boutons Parcourir les événements qui s’affichent dans le **événements** onglet dans le **outils de Diagnostic** fenêtre.
+    Vous pouvez parcourir et afficher les captures instantanées à l’aide des boutons **Étape précédente** et **Étape suivante** situés dans la barre d’outils de débogage. Utilisez ces boutons pour accéder aux événements figurant sous l’onglet **Événements** de la fenêtre **Outils de diagnostic**.
 
     ![Étape vers l’arrière et des boutons](../debugger/media/intellitrace-step-back-icons-description.png  "boutons arrière et transférer")
 
-    Pour plus d’informations, consultez la [afficher des instantanés à l’aide d’IntelliTrace étape différée](../debugger/how-to-use-intellitrace-step-back.md) page.
+    Pour plus d’informations, consultez la page [Afficher des captures instantanées avec le retour en arrière IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 
 - Le **assistance d’Exception** remplace l’Assistant Exception et apparaît dans une zone de la boîte de dialogue non modale où l’erreur s’est produite. Le **assistance d’Exception** fournit un accès plus rapide pour toutes les exceptions internes, une analyse supplémentaire par le débogueur (si disponible) et un accès immédiat à la **paramètres d’Exception** pour l’exception. L’application d’assistance de l’Exception peuvent également être déplacée à une vue flottante s’il ne bloque pas les quelque chose que vous souhaitez voir.
 

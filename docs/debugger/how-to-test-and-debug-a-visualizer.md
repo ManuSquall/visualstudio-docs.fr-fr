@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57e4387fad4a750af26245febe5d9573d43deccc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 75102abacbf93c90b6c24d2884224dd9dd1e1bae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Comment : tester et déboguer un visualiseur
 Après avoir écrit un visualiseur, vous devez le déboguer et le tester.  

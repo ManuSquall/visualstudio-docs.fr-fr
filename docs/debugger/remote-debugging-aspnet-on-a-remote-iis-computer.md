@@ -12,11 +12,14 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b73dc5b153813811a0d2b839e69200a7e5f5a1e9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload:
+- aspnet
+- dotnetcore
+ms.openlocfilehash: c4069290a8a788bd4c36166a3d7720f61f263d69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Débogage distant ASP.NET Core sur un ordinateur IIS distant dans Visual Studio 2017
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application puis attachez à votre application en cours d’exécution à partir de Visual Studio.
@@ -29,17 +32,17 @@ Ces procédures ont été testées sur ces configurations de serveur :
 * Windows Server 2012 R2 et IIS 8
 * Windows Server 2016 et IIS 10
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Débogage sur une latence élevée ou d’une connexion à faible bande passante, telles que les connexions à distance d’Internet, ou via Internet entre des pays n’est pas recommandé et peut échouer ou être trop faibles. Pour obtenir une liste complète des conditions requises, consultez [exigences](../debugger/remote-debugging.md#requirements_msvsmon).
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Créer l’application ASP.NET Core sur l’ordinateur Visual Studio 2017 
 
-1. Créez une application ASP.NET Core. (**Fichier > Nouveau > projet**, puis sélectionnez **Visual c# > Web > Application ASP.NET Core Web (.NET Core)**).
+1. Créez une application ASP.NET Core. (**Fichier > Nouveau > projet**, puis sélectionnez **Visual c# > Web > Application ASP.NET Core Web**).
 
     Dans le **ASP.NET Core** section modèles, sélectionnez **Application Web**.
 
-2. Assurez-vous que **activer la prise en charge Docker** est **pas** sélectionné et que **authentification** a la valeur **aucune authentification**.
+2. Assurez-vous que **ASP.NET Core 2.0** est sélectionnée, qui **activer la prise en charge Docker** est **pas** sélectionné et que **authentification** a la valeur **Aucune authentification**.
 
 3. Nommez le projet **MyASPApp** et cliquez sur **OK** pour créer la nouvelle solution.
 

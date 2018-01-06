@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 469024d48b1c145210aa518f10647d04315a0471
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5281d53f213d2cb09f470484ddca2fbaa8cb4601
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package&gt; élément (programme d’amorçage)
 Le `Package` élément est l’élément XML de niveau supérieur à l’intérieur d’un fichier de package.  

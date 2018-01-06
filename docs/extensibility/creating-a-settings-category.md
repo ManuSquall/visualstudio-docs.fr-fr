@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016aac6f0e23b626b9023b978efa27e76924c6c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2bdf3231f2df8b3700c7865fa53e60003b814a5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-settings-category"></a>Création d’une catégorie de paramètres
 Dans cette procédure pas à pas vous créez une catégorie de paramètres de Visual Studio et l’utiliser pour enregistrer les valeurs et restaurer les valeurs à partir d’un fichier de paramètres. Une catégorie de paramètres est un groupe de propriétés connexes qui apparaissent sous la forme d’un « point de paramètres personnalisés ; » Autrement dit, en tant qu’une case à cocher dans la **importation et exportation de paramètres** Assistant. (Vous pouvez le trouver sur le **outils** menu.) Paramètres sont enregistrées ou restaurées en tant que catégorie et les paramètres individuels ne sont pas affichés dans l’Assistant. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
@@ -26,7 +27,7 @@ Dans cette procédure pas à pas vous créez une catégorie de paramètres de Vi
   
  Pour démarrer cette procédure pas à pas, vous devez d’abord terminer la première section de [création d’une Page d’Options](../extensibility/creating-an-options-page.md). La grille des propriétés qui en résulte Options vous permet d’examiner et modifier les propriétés de la catégorie. Après avoir enregistré la catégorie de propriété dans un fichier de paramètres, vous examinez le fichier pour voir comment les valeurs de propriété sont stockées.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-settings-category"></a>Création d’une catégorie de paramètres  
@@ -38,7 +39,7 @@ Dans cette procédure pas à pas vous créez une catégorie de paramètres de Vi
   
 2.  Ouvrez le fichier VSPackage.resx et ajoutez ces ressources de chaîne de trois :  
   
-    |Nom|Valeur|  
+    |Name|Value|  
     |----------|-----------|  
     |106|Ma catégorie|  
     |107|Mes paramètres|  

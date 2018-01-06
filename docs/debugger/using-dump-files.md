@@ -24,11 +24,12 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ea763f5bbe174a0c8e58a72737e25b8a5e9a7b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Utiliser des fichiers Dump avec Visual Studio
 Fichiers dump avec ou sans tas ; créer un fichier dump ; ouvrir un fichier dump ; Rechercher les fichiers binaires, du fichier pdb et fichier source pour un fichier de vidage.
@@ -103,7 +104,7 @@ Fichiers dump avec ou sans tas ; créer un fichier dump ; ouvrir un fichier du
   
 1.  Répertoire qui contient le fichier dump.  
   
-2.  Chemin d'accès du module spécifié dans le fichier dump. Il s’agit du chemin d’accès du module sur l’ordinateur où le dump a été collecté.  
+2.  Chemin d’accès du module spécifié dans le fichier dump. Il s’agit du chemin d’accès du module sur l’ordinateur où le dump a été collecté.  
   
 3.  Les chemins d’accès aux symboles spécifiés dans le **débogage**, **Options**, **symboles** page de Visual Studio **outils**, **Options**  boîte de dialogue. Vous pouvez ajouter d'autres emplacements à rechercher sur cette page.  
   

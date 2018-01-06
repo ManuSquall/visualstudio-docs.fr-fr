@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 018f843e9e62430c780df1d3d15f06634a31908d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa6c15c59a025f4b031765b620083b7b3369c7c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 Obtient la référence de la plus dérivée d’une référence. Réservé à un usage ultérieur.  
@@ -44,7 +45,7 @@ int GetDerivedMostReference(
 ## <a name="return-value"></a>Valeur de retour  
  Retourne toujours `E_NOTIMPL`.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Par exemple, si cette propriété décrit un objet qui implémente `ClassRoot` mais qui est réellement une instanciation de `ClassDerived` qui est dérivée de `ClassRoot`, cette méthode retourne un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet qui représente une référence à la `ClassDerived` objet.  
   
 ## <a name="see-also"></a>Voir aussi  

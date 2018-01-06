@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24ae27acb2dd78b086a8b94e28c3de705cd710ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f0a9e4197f61d01d7d2054055b219b724c04fd0f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 Crée un énumérateur pour les constructeurs de cette classe.  
@@ -49,7 +50,7 @@ int EnumConstructors(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ou retourne S_FALSE, s’il n’y a aucuns constructeurs. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Chaque élément de l’énumération est un [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) objet décrivant une méthode de constructeur.  
   
  En règle générale, la liste des constructeurs n’inclut pas les constructeurs par défaut fournis par un compilateur.  

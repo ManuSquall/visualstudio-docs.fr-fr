@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9099d652012fb8b45b7b79f9c620f4102e7af602
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e406bc0cd5d7e4cb082e1f5e34fa6645538d02ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Meilleures pratiques pour implémenter un plug-in de contrôle de code Source
 Les détails techniques suivantes peuvent vous aider à implémenter de manière fiable un plug-in de contrôle de code source [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

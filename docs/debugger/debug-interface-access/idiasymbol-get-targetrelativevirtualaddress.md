@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 087a847f4f93772b8dd6afba64f451faafb86e1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e89bacdc9f16c429ff82495642689964b8e1eceb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgettargetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
 Récupère l’adresse virtuelle relative (RVA) d’une cible de la conversion de code.  
@@ -41,7 +42,7 @@ HRESULT get_targetRelativeVirtualAddress (
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette propriété est valide uniquement si le symbole en tant qu’un [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) valeur `SymTagThunk`.  
   
  Une conversion de « code » est un fragment de code qui effectue la conversion entre un espace d’adressage de mémoire de 32 bits (également appelé espace d’adresse) et un espace d’adressage de 16 bits (appelé un espace d’adressage segmentés).  

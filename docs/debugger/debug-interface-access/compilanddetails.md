@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bfbb1e05dadb18e9357e38d6ed660c248dccec4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc892cbdf49ab883c2bd45f4ef13ddda21b23d83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Informations de compiland sont partagées entre les symboles avec un `SymTagCompiland` balise (détail faible) et un `SymTagCompilandDetails` balise (détail haute). `SymTagCompilandDetails`requiert le chargement de symboles supplémentaires. Toutefois, il fournit une multitude d’informations sur le module qui n’est pas disponible avec un `SymTagCompiland` symbole.  
@@ -51,7 +52,7 @@ Informations de compiland sont partagées entre les symboles avec un `SymTagComp
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d’index du symbole.|  
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retourne `SymTagCompilandDetails` (parmi les [symtagenum, énumération](../../debugger/debug-interface-access/symtagenum.md) valeurs).|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les compilateurs utilisent souvent dans un formulaire appelé un compilateur deux passes ; dans certaines versions du compilateur, chaque passe est géré par un autre programme. Ils sont appelés des compilateurs frontaux et principaux, respectivement, par conséquent, les symboles de propriété pour les numéros de version principale et frontale.  
   
 ## <a name="see-also"></a>Voir aussi  

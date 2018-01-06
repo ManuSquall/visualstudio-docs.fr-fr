@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79d888e9b50d18b4a9d46a8914381db27f09698d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a76b14f28bdb74345813931fc334f98090abd93c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-of-execution"></a>Contrôle de l’exécution
 Le moteur de débogage (DE) envoie généralement un des événements suivants en tant que le dernier événement de démarrage :  
@@ -41,11 +42,11 @@ Le moteur de débogage (DE) envoie généralement un des événements suivants e
   
 5.  Si l’utilisateur choisit de pas à pas détaillé, plus ou en dehors d’une fonction, l’IDE vous invite à entrer la session de débogage pour appeler le programme `Step` méthode, en lui passant l’unité d’étape (instruction, l’instruction ou ligne) et le type d’étape : autrement dit, s’il faut pas à pas détaillé, plus , ou en dehors de la fonction. Lorsque l’étape est terminée, le D’envoie un événement complete étape à la session de débogage, qui est un événement d’arrêt.  
   
-     ou  
+     - ou -  
   
      Si l’utilisateur choisit de continuer l’exécution à partir du pointeur d’instruction en cours, l’IDE vous invite à entrer la session de débogage pour appeler le programme **Execute** (méthode). Le programme reprend l’exécution jusqu'à ce qu’il rencontre la condition d’arrêt suivante.  
   
-     ou  
+     - ou -  
   
      Si la session de débogage est pour ignorer un événement d’arrêt particulier, la session de débogage appelle du programme **continuer** (méthode). Si le programme a été pas à pas détaillé, principal ou en dehors d’une fonction lorsqu’il a rencontré la condition d’arrêt, il continue de l’étape.  
   

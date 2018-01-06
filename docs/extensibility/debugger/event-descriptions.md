@@ -13,18 +13,19 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ce3e623a2d1787aa67f8a6e4dcfcf9530e8766c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6ec084c0d985ce5cc3cb0a886bd1fdcaf6cc3e54
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-descriptions"></a>Descriptions des événements
 Chaque type d’événement a un objectif spécifique.  
   
 ## <a name="events-and-the-reasons-for-their-use"></a>Les événements et les raisons de leur utilisation  
   
-|Événement|Description|  
+|événement|Description|  
 |-----------|-----------------|  
 |Activer les événements de document|Se produit lorsque le moteur de débogage (DE) souhaite que l’IDE pour ouvrir ou de mettre un document au premier plan.|  
 |Point d’arrêt lié ou des événements d’erreur de point d’arrêt|Envoyé lorsqu’un point d’arrêt est lié ou un point d’arrêt ne peut pas créer une liaison et une erreur est retournée.|  

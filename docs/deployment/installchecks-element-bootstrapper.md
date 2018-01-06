@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 2a731c504355cbd3869790720af1f67f6c6bf0eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 787134277f27e901c6afe6a8e9c41d224431a122
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; élément (programme d’amorçage)
 Le `InstallChecks` élément prend en charge le démarrage d’une variété de tests sur l’ordinateur local pour vous assurer que toutes les conditions préalables requises pour une application ont été installés.  
@@ -142,7 +143,7 @@ Le `InstallChecks` élément prend en charge le démarrage d’une variété de 
 |`FileName`|Facultatif. Le nom d’un fichier. Si spécifié, la valeur obtenue à partir de la clé de Registre est censée pour être un chemin de répertoire, et ce nom est ajouté à celle-ci. Si non spécifié, la valeur retournée à partir du Registre est censée pour être le chemin complet vers un fichier.|  
 |`SearchDepth`|Facultatif. La profondeur à laquelle effectuer la recherche des sous-dossiers pour le fichier nommé. La recherche est à profondeur prioritaire. La valeur par défaut est 0, ce qui limite la recherche dans le dossier de niveau supérieur spécifié par la valeur de la clé de Registre.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si les éléments sous `InstallChecks` définissent les tests à exécuter, ils ne les exécutent pas. Pour exécuter les tests, vous devez créer `Command` éléments situés sous le `Commands` élément.  
   
 ## <a name="example"></a>Exemple  

@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7952392b55f351332ba8163fe1bd4c04c3883d87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98be0e0eec66d1829569f88b38f710ddc616be85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 Utilisée pour définir des points d’arrêt de données qui sont basées sur une chaîne que l’utilisateur peut entrer dans l’environnement de développement intégré (IDE).  
@@ -47,10 +48,10 @@ typedef struct _BP_LOCATION_DATA_STRING {
  `dwNumElements`  
  Le nombre d’éléments dans la chaîne de données dans laquelle le point d’arrêt se produit.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette structure est un membre de la [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure dans le cadre d’une union.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

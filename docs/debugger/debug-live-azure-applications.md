@@ -12,22 +12,25 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload:
+- aspnet
+- azure
+ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET Azure en direct à l’aide du débogueur de l’instantané
 
-Le débogueur d’instantané prend un instantané de vos applications de production lors de l’exécution de code qui vous intéressez. Pour indiquer au débogueur de prendre un instantané, vous définissez snappoints et logpoints dans votre code. Le débogueur vous permet de voir exactement ce qui s’est produite, sans affecter le trafic de votre application de production. Le débogueur de l’instantané peut vous aider à réduire considérablement le temps que nécessaire pour résoudre les problèmes qui se produisent dans les environnements de production.
+Le débogueur d’instantané prend un instantané de vos applications de production lors de l’exécution de code qui vous intéressez. Pour indiquer au débogueur de prendre une capture instantanée, vous définissez des points d’ancrage et des points de journalisation dans votre code. Dans le débogueur, vous pouvez voir précisément à quel endroit le code ne s’est pas exécuté correctement, sans que cela impacte le trafic de votre application en production. Snapshot Debugger peut vous aider à résoudre beaucoup plus vite les problèmes rencontrés dans les environnements de production.
 
 Snappoints et logpoints sont semblables aux points d’arrêt. Contrairement aux points d’arrêt, snappoints n’empêchent pas l’application lorsqu’il est atteint. En règle générale, la capture instantanée à un snappoint prend 10 à 20 millisecondes. 
 
-Collection d’instantané est disponible pour les applications web suivantes en cours d’exécution dans Azure App Service :
+La fonctionnalité de capture instantanée est disponible pour les applications web suivantes qui s’exécutent dans Azure App Service :
 
-- Les applications ASP.NET exécutées sur .NET Framework 4.6.1 ou version ultérieure.
-- Applications ASP.NET Core en cours d’exécution sur .NET Core 2.0 ou version ultérieure sur Windows.
+- Applications ASP.NET exécutées sur .NET Framework version 4.6.1 ou ultérieure.
+- Applications ASP.NET Core exécutées sur .NET Core version 2.0 ou ultérieure sur Windows.
 
 En outre, le débogueur de l’instantané est uniquement disponible pour Visual Studio 2017 Enterprise version 15,5 ou une version ultérieure et les plans de Service d’applications de base ou une version ultérieure. 
 

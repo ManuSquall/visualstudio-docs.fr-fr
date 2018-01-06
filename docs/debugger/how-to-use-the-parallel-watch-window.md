@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 160aa732568f92b7aa768146de13c41867064717
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 570f77cddede91a81dc15200ebcf02b27f1a4f2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Définissez un espion sur les Variables de Threads parallèles dans Visual Studio
 Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les valeurs qu'une expression contient sur plusieurs threads. Chaque ligne représente un thread s'exécutant dans une application, mais un thread peut être représenté dans plusieurs lignes. Plus spécifiquement, chaque ligne représente un appel de fonction dont la signature de la fonction correspond à la fonctionnalité sur le frame de pile actuel. Vous pouvez trier, réorganiser, supprimer et regrouper les éléments qui figurent dans les colonnes. Vous pouvez marquer ou supprimer l'indicateur, figer et libérer (reprendre) les threads. Les colonnes suivantes sont affichées dans le **espion parallèle** fenêtre :  
@@ -45,7 +46,7 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
   
 1.  Définissez un point d'arrêt dans le code.  
   
-2.  Dans la barre de menus, choisissez **déboguer**, **démarrer le débogage**. Attendez que l'application atteigne le point d'arrêt.  
+2.  Dans la barre de menus, choisissez **Débogage**, puis **Démarrer le débogage**. Attendez que l'application atteigne le point d'arrêt.  
   
 3.  Dans la barre de menus, choisissez **déboguer**, **Windows**, **espion parallèle**, puis choisissez une fenêtre Espion. Vous pouvez ouvrir quatre fenêtres maximum.  
   

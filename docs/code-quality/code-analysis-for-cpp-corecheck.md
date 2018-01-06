@@ -12,11 +12,12 @@ ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a129fcc5cfabb46dfa545d7f70e291b121ee5353
-ms.sourcegitcommit: 24f81b8fb59722cf4a856005227f6a29bb2990cd
+ms.workload: cplusplus
+ms.openlocfilehash: c17574722804409b58d648af66b255888e945db2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Référence de l’outil d’analyse les instructions C++ Core
 Cette section répertorie les avertissements du vérificateur d’instructions C++ Core. Pour plus d’informations sur l’analyse du Code, consultez [/Analyze (analyse du Code)](/cpp/build/reference/analyze-code-analysis) et [démarrage rapide : analyse du Code pour C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  

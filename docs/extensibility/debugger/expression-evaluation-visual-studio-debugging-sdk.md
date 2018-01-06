@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c66a6eac74b3d1494a1e98bcb95112c43c4c1bc8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ed0e494cc0efd48ea3c22d9fd881aafec42a984b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Évaluation de l’expression (Kit de développement logiciel de débogage de Visual Studio)
 En mode arrêt, l’IDE doit être en mesure d’évaluer des expressions simples qui impliquent plusieurs variables de votre programme. Pour ce faire, le moteur de débogage (DE) doit être en mesure d’analyser et d’évaluer une expression qui est entrée dans une des fenêtres de l’IDE.  

@@ -17,11 +17,12 @@ caps.latest.revision: "43"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e1b298f8088adf05992f7ebf8b5afbb743ec995
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: ebae0886db71b0b06f346d6bd174951b1c5d4752
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-apps-on-a-remote-machine"></a>Exécuter les applications UWP sur un ordinateur distant
 ![S’applique uniquement à Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -36,7 +37,7 @@ Dans certains scénarios, les outils à distance sont installés automatiquement
 
 Pour les PC Windows 8.1 et des PC Windows 10 version de mise à jour d’un créateur versions antérieures de Windows en cours d’exécution, vous devez installer les outils à distance sur l’ordinateur distant manuellement avant de pouvoir déboguer. Suivez les instructions de cette rubrique.
   
-##  <a name="BKMK_Prerequisites"></a> Composants requis  
+##  <a name="BKMK_Prerequisites"></a> Conditions préalables  
  Pour déboguer sur un appareil distant :  
   
 -   L'appareil distant et l'ordinateur Visual Studio doivent être connectés sur un réseau ou directement à l'aide d'un câble Ethernet. Le débogage sur Internet n'est pas pris en charge.  
@@ -105,5 +106,5 @@ Pour les PC Windows 8.1 et des PC Windows 10 version de mise à jour d’un cré
  Choisissez ensuite **Démarrer le débogage** dans le menu **Déboguer** (clavier : F5). Le projet est recompilé, puis déployé et démarré sur le périphérique distant. Le débogueur interrompt l'exécution aux points d'arrêt et vous pouvez effectuer un pas à pas détaillé, principal et sortant de votre code. Choisissez **Arrêter le débogage** pour terminer la session de débogage et fermer l'application distante. Pour plus d’informations, consultez [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Test des applications UWP avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Test d’applications UWP avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

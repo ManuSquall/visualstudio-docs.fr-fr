@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 264f67eb9a1fc7f8af739d7eea329de05230c7a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5a98081aa73d11d9a2edea9293804d6c83a211d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 Définit par sa présence si le fichier journal graphique est enregistré dans le répertoire des fichiers temporaires de l'utilisateur.  
@@ -27,7 +28,7 @@ Définit par sa présence si le fichier journal graphique est enregistré dans l
 #define DONT_SAVE_VSGLOG_TO_TEMP  
 ```  
   
-## <a name="value"></a>Valeur  
+## <a name="value"></a>Value  
  Un symbole de préprocesseur qui, par sa présence ou l’absence, détermine si les graphiques le fichier journal est enregistré dans le répertoire des fichiers temporaires de l’utilisateur. Si ce symbole est défini, le nom de fichier défini par `VSG_DEFAULT_RUN_FILENAME` est relatif au répertoire en cours de l’application capturée, ou est un chemin d’accès absolu ; sinon, le nom de fichier défini par `VSG_DEFAULT_RUN_FILENAME` est relatif au répertoire des fichiers temporaires de l’utilisateur et ne peut pas être chemin d’accès absolu.  
   
 ## <a name="remarks"></a>Notes  

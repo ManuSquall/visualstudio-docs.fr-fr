@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 26debb7d29458ab6452a2063e8e5c7e2f43fa7d0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 51643b8db91c9f8c2961b319d47cdfb7789f6a4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt; élément (déploiement ClickOnce)
 Identifie l’assembly principal de le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.  
@@ -51,7 +52,7 @@ Identifie l’assembly principal de le [!INCLUDE[ndptecclick](../deployment/incl
 |`processorArchitecture`|Obligatoire. Spécifie le processeur. Les valeurs valides sont `msil` pour tous les processeurs, `x86` pour Windows 32 bits, `IA64` pour Windows 64 bits, et `Itanium` pour les processeurs Intel 64 bits Itanium.|  
 |`type`|Obligatoire. Pour la compatibilité avec la technologie d’installation côte à Windows. La seule valeur autorisée est `win32`.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant illustre un `assemblyIdentity` élément dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Cet exemple de code fait partie d’un exemple plus complet fourni pour le [le manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) rubrique.  

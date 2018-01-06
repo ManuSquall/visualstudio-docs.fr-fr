@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea233e8bf26b3bbb9dd7b1e962e3729e172b5a7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1f50ae8c40da9c895773330f488e63850013d35b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="data-debug-interface-access-sdk"></a>Données (Kit de développement logiciel de Debug Interface Access)
 Toutes les variables, telles que les paramètres, les variables locales, les variables globales et les membres de classe, sont identifiés par `SymTagData` symboles. Les valeurs de constante (`LocIsConstant`) sont également identifiés avec ce type.  

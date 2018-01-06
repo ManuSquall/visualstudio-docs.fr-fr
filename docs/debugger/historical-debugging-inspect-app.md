@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10d9e23912da2ee5d0af1b6d2f846fa1de2f94fe
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 91cef7c8c037421b69cd13e69ab21543aaf89839
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Vérifiez que votre application avec débogage dans Visual Studio historique d’IntelliTrace
 Vous pouvez utiliser [le débogage d’historique](../debugger/historical-debugging.md) à déplacer vers le haut et vers l’avant dans l’exécution de votre application et inspecter son état.  

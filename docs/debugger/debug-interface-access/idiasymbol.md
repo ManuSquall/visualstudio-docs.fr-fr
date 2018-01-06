@@ -14,11 +14,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e4954c691795f71704aab7493ef8df3dbb3f958
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c35accc7ca75a987dae615c06df68b4f85bba4a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Décrit les propriétés d’une instance de symbole.  
@@ -221,7 +222,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|Récupère l’identificateur de forme de table virtuelle du symbole.|  
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|Récupère un indicateur qui indique si le type de données défini par l’utilisateur est volatil.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
  Obtenez cette interface en appelant une des méthodes suivantes :  
@@ -336,7 +337,7 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 }  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  `Header:`Dia2.h  
   
  Bibliothèque : diaguids.lib  

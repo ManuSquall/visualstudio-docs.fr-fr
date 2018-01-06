@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd630a2fed94604cb91dc3af7e46f96269f75ad0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5af5dce3edf1ac2910af5f8d593ed8e316cff721
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="button-element"></a>Élément de bouton
 Définit un élément de l’utilisateur peut interagir avec. Boutons peuvent être de différents types : bouton, bouton de menu et SplitDropDown.  

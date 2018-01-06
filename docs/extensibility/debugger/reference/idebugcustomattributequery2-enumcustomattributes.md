@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 47b643c8f08de60bb873f3daf69ee93e0816d31f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f7a519f8ad8b59228f776ef7ff75f7af5ec38b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
 Obtient un énumérateur pour tous les attributs personnalisés attachés à ce champ.  
@@ -44,7 +45,7 @@ int EnumCustomAttributes(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ou S_FALSE si il n’y pas d’attributs personnalisés sur ce champ. Sinon, retourne un code d’erreur ;  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Un champ peut avoir plusieurs attributs personnalisés.  
   
 ## <a name="see-also"></a>Voir aussi  

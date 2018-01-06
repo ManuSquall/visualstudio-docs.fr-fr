@@ -25,11 +25,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a532c2e238528ea32492aae22b001ab0955f8c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b05192c2d57c280cef970d4b8887ff7eadbb27b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Procédure pas à pas : Débogage d’une Application parallèle dans Visual Studio
 Cette procédure pas à pas montre comment utiliser le **tâches parallèles** et **piles parallèles** windows pour déboguer une application parallèle. Ces fenêtres vous aident à comprendre et à vérifier le comportement d’exécution de code qui utilise le [bibliothèque parallèle de tâches (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime). Cette procédure pas à pas fournit un exemple de code qui comporte des points d'arrêt intégrés. Une fois que le code s’arrête, la procédure pas à pas montre comment utiliser le **tâches parallèles** et **piles parallèles** windows pour l’examiner.  
@@ -46,7 +47,7 @@ Cette procédure pas à pas montre comment utiliser le **tâches parallèles** e
   
 -   Comment les fenêtres gèrent l’échelle avec les fonctionnalités de regroupement, de zoom et autres.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Cette procédure pas à pas suppose que **uniquement mon Code** est activée (elle est activée par défaut dans les versions plus récentes de Visual Studio). Sur le **outils** menu, cliquez sur **Options**, développez le **débogage** nœud, sélectionnez **général**, puis sélectionnez **activer Uniquement mon Code (managé uniquement)**. Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.  
   
 ## <a name="c-sample"></a>Exemple C#  
@@ -279,7 +280,7 @@ Cette procédure pas à pas montre comment utiliser le **tâches parallèles** e
   
      Étant donné que la tâche 5 est terminée, elle n’est plus affichée. Si ce n'est pas le cas sur votre ordinateur et que l'interblocage n'est pas indiqué, appuyez sur F11.  
   
-     Les tâches 3 et 4 s'attendent maintenant l'une l'autre et sont bloquées. Il y a également 5 nouvelles tâches qui sont des enfants de la tâche 2 et qui sont maintenant planifiées. Les tâches planifiées sont des tâches qui ont été démarrées dans le code mais qui n’ont pas encore été exécutées. Par conséquent, leur **emplacement** et **affectation de Thread** colonnes sont vides.  
+     Les tâches 3 et 4 s’attendent maintenant l’une l’autre et sont bloquées. Il y a également 5 nouvelles tâches qui sont des enfants de la tâche 2 et qui sont maintenant planifiées. Les tâches planifiées sont des tâches qui ont été démarrées dans le code mais qui n’ont pas encore été exécutées. Par conséquent, leur **emplacement** et **affectation de Thread** colonnes sont vides.  
   
      Afficher le **piles parallèles** fenêtre à nouveau. L'en-tête de chaque zone comporte une info-bulle qui affiche les ID et noms de thread. Basculez en vue tâches dans le **piles parallèles** fenêtre. Pointez sur un en-tête pour afficher l’ID et le nom de la tâche, ainsi que son état, comme indiqué dans l’illustration suivante.  
   
@@ -301,7 +302,7 @@ Cette procédure pas à pas montre comment utiliser le **tâches parallèles** e
   
      Vous pouvez verrouiller le thread sous-jacent d’une ou plusieurs tâches, ainsi que verrouiller tous les threads sauf celui qui est assigné. Un thread verrouillé est représenté dans le **tâches** fenêtre telle qu’elle est dans le **Threads** fenêtre, en un bleu *suspendre* icône.  
   
-## <a name="summary"></a>Résumé  
+## <a name="summary"></a>Récapitulatif  
  Cette procédure pas à pas démontré la **tâches parallèles** et **piles parallèles** fenêtres du débogueur. Vous pouvez utiliser ces fenêtres sur de véritables projets qui utilisent du code multithread. Vous pouvez examiner le code parallèle rédigé en C++, C# ou Visual Basic.  
   
 ## <a name="see-also"></a>Voir aussi  

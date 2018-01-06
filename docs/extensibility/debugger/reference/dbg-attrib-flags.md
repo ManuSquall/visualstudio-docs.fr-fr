@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b1522f1b036efbedb62f625847d0ef1d60a95a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 65775dde02df8f6f7969a4b797404d5bbb93ba4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
 Décrit les différents attributs pour un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) ou [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) interface. Membre de la [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure.  
@@ -296,7 +297,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  DBG_ATTRIB_MULTI_CUSTOM_VIEWERS  
  Indique que l’objet a plusieurs visionneuses personnalisées associées.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 > [!NOTE]
 >  Les valeurs de cette énumération ne sont pas réellement définies dans l’assembly pour c#. Au lieu de cela, vous devez copier les définitions à votre fichier source.  
@@ -305,7 +306,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
   
  Le `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` l’indicateur est une indication à [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] pour obtenir le [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) à partir de l’interface le [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface et appelez [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) pour une liste des visionneuses personnalisées.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

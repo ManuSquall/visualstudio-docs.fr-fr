@@ -17,11 +17,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4c5d1e71a4d0e0d8ac74ba02bff29ddc1c7477
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>Exécuter des applications UWP et Windows 8.1 dans le simulateur
 Le simulateur de Visual Studio pour les applications UWP et Windows 8.1 est une application de bureau qui simule une application UWP ou Windows 8.1. Vous pouvez exécuter les applications choisir la taille de l’écran physique et la résolution que vous voulez émuler. Vous pouvez également simuler la rotation des événements tactiles et courantes et simuler les propriétés de connexion réseau.
@@ -146,7 +147,7 @@ Le simulateur de Visual Studio pour les applications UWP et Windows 8.1 est une 
   
  [Comment répondre aux événements système avec des tâches en arrière-plan](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Comment déclencher suspendre, reprendre, événements et d’arrière-plan dans les applications UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [Comment déclencher des événements d’interruption, de reprise et d’arrière-plan dans des applications UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Naviguez dans le simulateur à l'aide du clavier  
  Vous pouvez parcourir la barre d’outils du simulateur en appuyant sur **CTRL + ALT + flèche haut** pour déplacer le focus à partir de la fenêtre du simulateur vers la barre d’outils du simulateur. Utilisez **Flèche haut** et **Flèche bas** pour basculer entre les boutons de la barre d'outils.  

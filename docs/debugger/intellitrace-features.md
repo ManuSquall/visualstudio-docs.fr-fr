@@ -25,11 +25,12 @@ caps.latest.revision: "67"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3672d2448c2b8872605db4a72c06d18c12e18886
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: f2ad259a116b1679f1e619dc9d281c114fa086cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace-features"></a>Fonctionnalités IntelliTrace
 Vous pouvez utiliser IntelliTrace pour enregistrer les événements et les appels de méthode dans votre application, ce qui vous permet d'examiner son état (pile des appels et valeurs des variables locales) à différents stades de l'exécution. Commencez le débogage comme d’habitude - IntelliTrace est activé par défaut, et vous pouvez voir les informations enregistrées sont affichées dans la nouvelle **outils de Diagnostic** fenêtre sous le **événements** onglet. Sélectionnez un événement et cliquez sur **activer le débogage d’historique** pour afficher la pile des appels et les variables locales enregistrées pour cet événement.  
@@ -85,7 +86,7 @@ Vous pouvez utiliser IntelliTrace pour enregistrer les événements et les appel
 ###  <a name="ControlCallData"></a>Vérifier la quantité d’informations d’appels IntelliTrace enregistre  
  Par défaut, IntelliTrace enregistre des informations pour tous les modules utilisés par votre solution. Vous pouvez configurer IntelliTrace pour qu'il enregistre des informations sur les appels uniquement pour les modules qui vous intéressent. Dans **Outils > Options > IntelliTrace > Modules**, vous pouvez spécifier les modules à inclure ou à exclure d’IntelliTrace. IntelliTrace recueille uniquement les événements provenant des modules que vous avez spécifiés et les appels de méthode qui se sont produits dans les modules qui vous intéressent.  
   
- Pour ajouter plusieurs modules, utilisez le caractère générique * au début ou à la fin de la chaîne. Pour les noms de modules, utilisez des noms de fichiers, et non des noms d'assemblys. Les chemins d'accès de fichiers ne sont pas acceptés.  
+ Pour ajouter plusieurs modules, utilisez le caractère générique * au début ou à la fin de la chaîne. Pour les noms de modules, utilisez des noms de fichiers, et non des noms d'assemblys. Les chemins d’accès de fichiers ne sont pas acceptés.  
   
  Essayez de réduire le nombre de modules au minimum. Vous obtiendrez de meilleures performances car il y aura moins de données à recueillir. Vous obtiendrez également moins de bruit dans l'interface utilisateur car il y aura moins de données à parcourir.  
   

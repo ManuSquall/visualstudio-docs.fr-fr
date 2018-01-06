@@ -19,11 +19,12 @@ caps.latest.revision: "65"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09bd8bc648b87f69720468afcdeefa1d16dd36f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 7cae82f01564d2ef36175a3ee3e207e35a1830da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Un projet Visual C++ dans Visual Studio le débogage distant
 Pour déboguer une application Visual Studio sur un autre ordinateur, installer et exécuter les outils à distance sur l’ordinateur où vous déploierez votre application, configurez votre projet pour vous connecter à l’ordinateur distant à partir de Visual Studio, puis déployer et exécuter votre application.
@@ -32,7 +33,7 @@ Pour déboguer une application Visual Studio sur un autre ordinateur, installer 
 
 Pour plus d’informations sur le débogage des applications Windows universelle (UWP) à distance, consultez [déboguer un Package d’application installé](debug-installed-app-package.md).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures (pas de téléphone) et les versions de Windows Server depuis Windows Server 2008 Service Pack 2. Pour obtenir une liste complète des conditions requises, consultez [exigences](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -68,7 +69,7 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
   
 5.  Appliquez les modifications suivantes aux propriétés :  
   
-    |Paramètre|Valeur|
+    |Paramètre|Value|
     |-|-|  
     |Commande distante|C:\remotetemp\mymfc.exe|  
     |Répertoire de travail|C:\remotetemp|  

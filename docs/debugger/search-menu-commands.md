@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65f0a4c932d9e9e84433b7fef27723d9d2e5aefb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c5508f2aeef1dbaaf7758d2732ec69b99b7c7067
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="search-menu-commands"></a>commandes du menu Rechercher
 Le **recherche** menu fournit des commandes permettant de rechercher des fenêtres spécifiques.  

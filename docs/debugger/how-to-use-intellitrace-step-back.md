@@ -12,14 +12,15 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c05905e8ffeec3aa699aac9dfa46c4b017b86be5
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9ee45132e4acf45bccffd3e05808defd3c7ced6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Afficher des instantanés à l’aide d’IntelliTrace étape différée
-Événement d’étape, IntelliTrace différée étape prend automatiquement un instantané de votre application à chaque point d’arrêt et le débogueur. Les instantanés enregistrés permettent de revenir en arrière pour les points d’arrêt précédents ou étapes et afficher l’état de l’application tel qu’il était dans le passé. IntelliTrace d’étape différée peut faire gagner du temps quand vous souhaitez afficher l’état précédent de l’application mais ne souhaitez pas redémarrer le débogage ou de recréer l’état de l’application souhaitée.
+Événement d’étape, IntelliTrace différée étape prend automatiquement un instantané de votre application à chaque point d’arrêt et le débogueur. Les captures instantanées enregistrées vous permettent de revenir à des étapes ou points d’arrêt précédents pour afficher un état antérieur de l’application. Le retour en arrière IntelliTrace peut vous faire gagner du temps quand vous souhaitez afficher un état précédent de l’application sans avoir à redémarrer le débogage ou à recréer l’état de l’application souhaité.
 
 Étape différée IntelliTrace est disponible à partir de Visual Studio de Enterprise 2017 15,5 et versions ultérieures, et nécessite le mise à jour anniversaire Windows 10 ou version ultérieure. La fonctionnalité est actuellement pris en charge pour le débogage ASP.NET, Windows Forms, WPF, les applications console gérés et bibliothèques de classes managées. Débogage des applications ASP.NET Core, .NET Core ou UWP n’est pas pris en charge actuellement. 
   
@@ -38,7 +39,7 @@ Pour des raisons de performances, les instantanés ne sont pas prises lorsque vo
 
 ## <a name="navigate-and-view-snapshots"></a>Naviguer et afficher des instantanés
 
-Vous pouvez naviguer entre les événements à l’aide de la **arrière (Alt + [)** et **avant (Alt +])** boutons dans la barre d’outils de débogage. Ces boutons Parcourir les événements qui s’affichent dans le **événements** onglet dans le **fenêtre Outils de Diagnostic**. Pas à pas détaillé vers l’arrière ou vers l’avant à un événement automatiquement Active le débogage d’historique sur l’événement sélectionné.
+Vous pouvez naviguer entre les événements à l’aide de la **arrière (Alt + [)** et **avant (Alt +])** boutons dans la barre d’outils de débogage. Ces boutons Parcourir les événements qui s’affichent dans le **événements** onglet dans le **fenêtre Outils de Diagnostic**. Quand vous passez à l’étape précédente ou suivante d’un événement, vous activez automatiquement le débogage d’historique pour l’événement sélectionné.
 
 ![Revenir en arrière et transférer des boutons](../debugger/media/intellitrace-step-back-icons-description.png "boutons arrière et avancer")
 

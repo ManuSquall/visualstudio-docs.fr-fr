@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3a5fc067ac65cea13181632c562a635599f0d7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc458bddfe354f43afd15176d0283cad4875234d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-windows-phone-81-apps-in-the-emulator"></a>Exécuter des applications Windows Phone 8.1 dans l’émulateur
 L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous pouvez déboguer et tester des applications Windows Phone sur votre ordinateur, sans appareil physique. Vous pouvez simuler des événements tactiles et de rotation courants, et choisir la taille et la résolution de l'écran physique que vous voulez émuler. Vous pouvez également tester plusieurs fonctionnalités couramment utilisées, comme la géolocalisation, la mise en réseau, les notifications, les capteurs, l’accéléromètre et la carte SD en option.  
@@ -37,7 +38,7 @@ Avec Visual Studio, l'émulateur fournit un environnement complet dans lequel vo
   
  Quand vous exécutez une application Windows Phone pour la première fois dans l'émulateur Windows Phone, les événements suivants se produisent :  
   
-1.  L'émulateur démarre.  
+1.  L’émulateur démarre.  
   
 2.  L'émulateur charge le système d'exploitation Windows Phone.  
   
@@ -213,7 +214,7 @@ Avec Visual Studio, l'émulateur fournit un environnement complet dans lequel vo
   
 8.  Vous pouvez aussi accéder à d'autres pages de votre application et créer d'autres captures d'écran.  
   
-9. Lancez un émulateur avec une résolution d'écran différente pour créer les mêmes captures d'écran avec différentes résolutions. Si vous avez exécuté votre application avec débogage, vous devez arrêter le débogage avant de pouvoir la réexécuter sur un autre émulateur.  
+9. Lancez un émulateur avec une résolution d’écran différente pour créer les mêmes captures d’écran avec différentes résolutions. Si vous avez exécuté votre application avec débogage, vous devez arrêter le débogage avant de pouvoir la réexécuter sur un autre émulateur.  
   
  Désactivez les compteurs de fréquence des trames sur l'écran de l'émulateur avant de créer des captures d'écran destinées au Windows Phone Store.  
   

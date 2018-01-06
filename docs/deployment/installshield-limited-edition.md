@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: eca5b5dff1bb7a00d8e138d367581081eaab6fc5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ada6fe4eec6b8bda3f0b44f097581103ea7b138e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installshield-limited-edition"></a>Installshield Limited Edition
 Grâce à InstallShield Limited Edition, vous pouvez créer un fichier de configuration et le distribuer aux utilisateurs pour qu’ils puissent installer un composant ou une application de bureau sans connexion à un réseau. InstallShield Limited Edition est gratuit pour les utilisateurs des éditions Professional et Enterprise de Visual Studio. Il remplace la technologie Windows Installer, que Visual Studio ne prend plus en charge. Vous pouvez également distribuer les applications et les composants à l’aide de ClickOnce, qui demande une connectivité réseau. Consultez [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  

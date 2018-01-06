@@ -26,11 +26,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a21450dda35addae55019545d67ab7f1e4ebe99a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1d0ab1ccdf6f5365c04c4a7ee0cac8ce75ab5f17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d'un Windows Form
 Un Windows Form est une des applications managées plus courantes. Il permet de créer une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, c# ou C++.  
@@ -126,7 +127,7 @@ Un Windows Form est une des applications managées plus courantes. Il permet de 
   
 4.  Sur le **déboguer** menu, choisissez **Windows**, puis **espion**, puis cliquez sur **Espion1**.  
   
-5.  Dans le **Espion1** fenêtre, cliquez sur une ligne vide. Dans le **nom** colonne, tapez `textBox1.Text` (si vous utilisez Visual Basic, Visual c# ou J#) ou `textBox1->Text` (si vous utilisez C++), puis appuyez sur ENTRÉE.  
+5.  Dans le **Espion1** fenêtre, cliquez sur une ligne vide. Dans le **nom** colonne, tapez `textBox1.Text` (si vous utilisez Visual Basic ou Visual c#) ou `textBox1->Text` (si vous utilisez C++), puis appuyez sur ENTRÉE.  
   
      Le **Espion1** fenêtre affiche la valeur de cette variable entre guillemets :  
   

@@ -31,11 +31,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84dbee96880d651ab17efd1b19dbb2589f87f9f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cbef364c316f51be8996e79f63a493b51e619f1e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Spécifiez les fichiers de symbole (.pdb) et les fichiers source dans le débogueur Visual Studio.
 Un fichier programme (.pdb) de la base de données, également appelé fichier de symboles, mappe les identificateurs que vous créez dans le code source pour les classes, méthodes et autre code pour les identificateurs qui sont utilisés dans les fichiers exécutables compilés de votre projet. Le fichier .pdb mappe également les instructions du code source aux instructions d'exécution des fichiers exécutables. Le débogueur utilise ces informations pour déterminer les deux éléments d’information clés :

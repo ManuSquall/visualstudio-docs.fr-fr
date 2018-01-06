@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7449cef9dca41aee61a3f15162252298db04e71
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb03ab88ca3d1d50b559cef87bfdf045a0a81319
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-object-table"></a>Table des objets Graphics
 La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'identifier les objets Direct3D qui prennent en charge un frame de votre jeu ou application.  
@@ -42,7 +43,7 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
 |Colonne|Description|  
 |------------|-----------------|  
 |**Identificateur**|ID de l'objet.|  
-|**Nom**|Informations spécifiques à l'application, qui ont été définies sur l'objet à l'aide de la fonction Direct3D `SetPrivateData` (en règle générale, pour fournir des informations d'identification supplémentaires sur un objet).|  
+|**Name**|Informations spécifiques à l'application, qui ont été définies sur l'objet à l'aide de la fonction Direct3D `SetPrivateData` (en règle générale, pour fournir des informations d'identification supplémentaires sur un objet).|  
 |**Type**|Type d'objet.|  
 |**Active**|Affiche « * » pour un objet défini sur D3D10Device ou D3D11DeviceContext dans le frame capturé.<br /><br /> Cela correspond aux objets affichés sous forme de texte grisé. Une entrée de colonne est fournie pour vous permettre de trier la table d'objets.|  
 |**Taille**|Taille de l'objet en octets.|  

@@ -13,11 +13,12 @@ caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1f308de55d9170b2247114ea96f611dd8e1af9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0de0874a605325f3f61547a202701eeeeb4d5a24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-state"></a>État graphique
 La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de comprendre l’état graphique actif au moment de l’événement, par exemple un appel de dessin.  
@@ -28,7 +29,7 @@ La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de compren
 ### <a name="state-views"></a>Affichages des états  
  Vous pouvez afficher la table des états de plusieurs façons différentes :  
   
-|Afficher|Description|  
+|Vue|Description|  
 |----------|-----------------|  
 |Affichage des états d'entrée API|Cet affichage présente l'état dans une disposition semblable à celle des objets Direct3D qui composent l'état.|  
 |Affichage des états d'entrée logiques|Cet affichage présente l'état selon une vue logique qui ne reflète pas la disposition des objets Direct3D qui composent l'état.|  
@@ -52,8 +53,8 @@ La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de compren
   
 |Colonne|Description|  
 |------------|-----------------|  
-|Nom|Nom de l'élément d'état. Si cet élément représente un ensemble d’états, vous pouvez développer l’élément pour l’afficher.<br /><br /> Dans le **API d’entrée d’affichage des états** et **affichage des États logiques** les États, les noms sont mis en retrait pour montrer la relation hiérarchique entre les États.<br /><br /> Dans le **affichage des États épinglés** état, les noms complets sont affichés dans une liste plate.|  
-|Valeur|Valeur de l'élément d'état.|  
+|Name|Nom de l'élément d'état. Si cet élément représente un ensemble d’états, vous pouvez développer l’élément pour l’afficher.<br /><br /> Dans le **API d’entrée d’affichage des états** et **affichage des États logiques** les États, les noms sont mis en retrait pour montrer la relation hiérarchique entre les États.<br /><br /> Dans le **affichage des États épinglés** état, les noms complets sont affichés dans une liste plate.|  
+|Value|Valeur de l'élément d'état.|  
 |Type|Type de l'élément d'état.|  
   
 ### <a name="changed-state"></a>État modifié  
