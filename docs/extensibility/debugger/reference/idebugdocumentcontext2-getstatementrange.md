@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 503b6cb2f9242d2d73ddfbcf14e89be7ec4528ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 942e8172c337621701ba827ba18b46bf3f6d7c88
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 Obtient la plage d’instruction de fichier du contexte de document.  
@@ -49,7 +50,7 @@ int GetStatementRange(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Une plage de l’instruction est la plage des lignes qui ont contribué à du code à laquelle fait référence le contexte de ce document.  
   
  Pour obtenir la plage de code source (y compris les commentaires) dans le contexte de ce document, appelez le [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) (méthode).  

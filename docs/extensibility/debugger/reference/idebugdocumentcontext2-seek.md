@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bfa007983bb1e6ffcff04a6973c332d18658c3f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec88bb39a8319fba752b52023fdc4fb0b5a6c22a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 Déplace le contexte de document en un nombre donné d’instructions ou des lignes.  

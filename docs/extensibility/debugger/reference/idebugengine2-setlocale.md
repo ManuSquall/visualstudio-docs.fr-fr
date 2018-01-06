@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41ad173f706b655f4d43a101618127070ae9ac6e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e007080f7c959b3667a95890babc819c6bba17f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 Définit les paramètres régionaux du moteur de débogage (DE).  
@@ -44,7 +45,7 @@ int SetLocale(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode est appelée par le Gestionnaire de session de débogage (SDM) pour propager les paramètres régionaux de l’IDE pour que les chaînes retournées par la DE sont correctement localisés.  
   
 ## <a name="see-also"></a>Voir aussi  

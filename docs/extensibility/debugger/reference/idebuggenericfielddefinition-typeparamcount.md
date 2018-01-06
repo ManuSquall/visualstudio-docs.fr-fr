@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dff52c4590d49fc10ffee9bbfe5020d94c912fd8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1df4aab215290f976f58f2c06f3cd42282344fee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 Récupère le nombre de paramètres de type qui sont associés au champ générique.  
@@ -45,7 +46,7 @@ int TypeParamCount(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si liste\<T >, cette méthode retourne 1 et, s’il liste\<T1, T2 >, cette méthode retourne la valeur 2. Cette méthode retourne 0 si aucun paramètre de type.  
   
 ## <a name="see-also"></a>Voir aussi  

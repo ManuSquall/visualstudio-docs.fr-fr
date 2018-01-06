@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df8ea8f5e95cf32f5b1425a4f110c424155b2ef2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f601cd38b5546d79f97e1c15a7c33c5de7df5d03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 Représente un moteur de débogage (DE) qui contrôle le débogage d’un ou plusieurs modules.  
@@ -46,7 +47,7 @@ IDebugEngine3 : IDebugEngine2
 |[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|Définit le GUID D’à partir de la métrique.|  
 |[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|Définissez toutes les exceptions actuellement en attente à un état spécifique.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

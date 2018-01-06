@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78b5a55f79c0f7d6e30574c1bfff954566c500b2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f4c4157d0c3fcdd3e0de4be4fa2fcf39c16ba67a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
 Détermine si un processus peut être arrêté.  
@@ -44,7 +45,7 @@ int CanTerminateProcess (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `S_FALSE` si le moteur ne peut pas mettre fin au processus, par exemple, car l’accès est refusé.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si cette méthode retourne `S_OK`, puis il les [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) méthode peut être appelée pour réellement mettre fin au processus.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 862d537585e3599a7069f1a30d1dc652a49e699c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 049521213437e2d28e1e26b61859685158cebc08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="taskscheduler-class---internal-members"></a>Classe TaskScheduler - membres internes
 Cette rubrique décrit les membres internes de la <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classe qui vous aident à implémenter un débogueur personnalisé. Pour obtenir des informations générales sur cette classe, consultez la <xref:System.Threading.Tasks.TaskScheduler> rubrique de référence.  
@@ -46,7 +47,7 @@ Cette rubrique décrit les membres internes de la <xref:System.Threading.Tasks.T
 |[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Récupère un tableau de toutes les tâches planifiées.|  
 |[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Récupère un tableau de tous les <xref:System.Threading.Tasks.TaskScheduler> les objets qui sont actuellement actives.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   

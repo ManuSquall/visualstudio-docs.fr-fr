@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ae7a0dd442d8a48d6c69ecfd51b2fc17a2eb2fe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6494f01a10177cc0e3fa0eb1724f64b7301e06aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 Cette interface représente une position abstraite d’une fonction dans un document source.  
@@ -43,10 +44,10 @@ IDebugFunctionPosition2 : IUnknown
 |[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Obtient le nom de la fonction relatif à cette position.|  
 |[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Obtient le décalage à partir du début de la fonction.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La position représentée par cette interface est basé sur le texte, en particulier, un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d7efe7c8c4d917e6dd1868625ca1d80996176acb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 066a8a3cf9fb4f9c39d36cfa4ea386e06cbba831
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 Informe un moteur de débogage (DE) que le programme spécifié a été arrêté anormalement et que le DE doit nettoyer toutes les références au programme et envoi d’un programme détruire l’événement.  
@@ -44,7 +45,7 @@ int DestroyProgram(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Une fois que cette méthode est appelée, le D’envoie ensuite un [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) événement vers le Gestionnaire de session de débogage (SDM).  
   
  Cette méthode n’est pas implémentée (retourne `E_NOTIMPL`) si le DE s’exécute dans le même processus que le programme en cours de débogage. Cette méthode est implémentée uniquement si le DE s’exécute dans le même processus que le SDM.  

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c73b7ebb1611b6688dbbe5703d5f84ac4c05b3b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ba9aaf9b0d23aed99397a6c52ca443a9477bc20a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
 Cette interface représente une position abstraite dans un fichier source.  
@@ -45,7 +46,7 @@ IDebugDocumentPosition2 : IUnknown
 |[IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)|Détermine si cette position est contenue dans le document donné.|  
 |[GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)|Obtient la plage pour la position de ce document.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

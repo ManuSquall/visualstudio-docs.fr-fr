@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b1f33ad83dccf2330bae048a5ebac68ed48516e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cd57bec1817ce61e15749469e2373284b32d69db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 Cette méthode définit la racine du Registre. Utilisé pour le débogage côte-à-côte.  
@@ -44,7 +45,7 @@ int SetRegistryRoot(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La racine de Registre spécifiée est généralement définie lors de l’évaluateur d’expression est instanciée et pointe vers la clé de Registre pour une version spécifique de Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y* , où *X.Y* est un numéro de version).  
   
 ## <a name="see-also"></a>Voir aussi  

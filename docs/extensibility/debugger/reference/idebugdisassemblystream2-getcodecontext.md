@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c40a76ffeae198a9d4a5a41b438262a342d877e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8079eb2650f44a2828741b27c56890c9add1a440
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 Retourne un objet de contexte de code correspondant à un identificateur d’emplacement de code spécifié.  
@@ -49,7 +50,7 @@ int GetCodeContext(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  L’identificateur d’emplacement de code peut être retournée à partir d’un appel à la [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) (méthode) et peuvent apparaître dans le [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure.  
   
  Pour convertir un contexte de code en un identificateur d’emplacement de code, appelez le [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) (méthode).  

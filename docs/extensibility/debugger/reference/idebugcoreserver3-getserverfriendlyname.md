@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9ad20c8b71132b87efae6f2b4d27b7339e574cc4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cdcffa689dc9318c54969449a6548e3d9699defd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Récupère un nom convivial pour le serveur.  
@@ -47,7 +48,7 @@ int GetServerFriendlyName(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Pour les serveurs de l’utilisateur a lancé, le nom retourné par cette méthode est le nom complet du serveur. Pour les serveurs lancé automatiquement, le nom est que de l’ordinateur, le serveur s’exécute sur.  
   
  Pour un nom orientés machine, appelez le [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) (méthode).  

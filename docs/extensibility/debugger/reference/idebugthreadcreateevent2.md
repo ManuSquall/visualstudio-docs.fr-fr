@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa5919b10df6c11089d5d8bd719a240ad2c54ceb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1fe8de545d8d9f3c2f5fa3778d1df759844ad1ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 Cette interface est envoyée par le moteur de débogage (DE) pour le Gestionnaire de session de débogage (SDM) lorsqu’un thread est créé dans un programme en cours de débogage.  
@@ -35,7 +36,7 @@ IDebugThreadCreateEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
  Le crée et envoie cet objet d’événement pour signaler qu’un thread a été créé. L’événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

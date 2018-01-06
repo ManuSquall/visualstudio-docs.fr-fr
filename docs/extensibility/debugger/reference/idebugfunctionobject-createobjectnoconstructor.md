@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 52ba30532cb1a673b61e44874e3938ca1ee3ad06
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 84fc96ae41827b06ffcb79a12276840cdf07cfac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 Crée un objet avec aucun constructeur.  
@@ -49,7 +50,7 @@ int CreateObjectNoConstructor(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Appelez cette méthode pour créer un objet qui représente une instance d’une structure ou un type complexe (qui ne nécessite pas un constructeur) qui est un paramètre à la fonction qui est représentée par le [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
   
  Si le paramètre d’objet requiert un constructeur, appelez le [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) (méthode).  

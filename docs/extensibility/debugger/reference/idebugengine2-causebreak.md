@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eeb8c262d6e1abc88e40f027d921ae2d4ae12cf2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c6fc6558ded5ab68f54170c07e2482ab2357475b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 Les demandes que tous les programmes en cours de débogage par ce moteur de débogage (DE) pour arrêter l’exécution de la prochaine fois qu’un de leurs threads tente de s’exécuter.  
@@ -38,7 +39,7 @@ int CauseBreak();
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode est asynchrone : un [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) événement est envoyé lorsque le programme tente ensuite d’exécuter une fois que cette méthode est appelée.  
   
 ## <a name="see-also"></a>Voir aussi  

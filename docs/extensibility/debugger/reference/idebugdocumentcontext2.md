@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a679fcd597251e5e76a1d3457b5cfe54e5caecb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b7184b722d0331efbfcb83e2d63563ea1ae13acc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 Cette interface représente une position dans un document de fichier source.  
@@ -49,7 +50,7 @@ IDebugDocumentContext2 : IUnknown
 |[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)|Compare ce contexte de document dans un tableau donné de contextes de document.|  
 |[Rechercher](../../../extensibility/debugger/reference/idebugdocumentcontext2-seek.md)|Déplace le contexte de document en un nombre donné d’instructions ou des lignes.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

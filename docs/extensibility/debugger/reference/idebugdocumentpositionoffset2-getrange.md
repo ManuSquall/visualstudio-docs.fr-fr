@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65ae083dcc744f93948c03c6dfb3cd37ce265701
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 09b415e01b6c768f471bdf9ad2e595d1a910d582
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 Récupère la plage pour la position actuelle du document.  
@@ -48,7 +49,7 @@ public int GetRange(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La plage spécifiée dans un emplacement de document pour un point d’arrêt d’emplacement est utilisée par le moteur de débogage (DE) pour rechercher directement une instruction qui apporte réellement le code. Considérons par exemple le code suivant :  
   
 ```  

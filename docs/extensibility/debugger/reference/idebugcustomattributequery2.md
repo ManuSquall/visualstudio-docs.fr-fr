@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57e31ef81b9f03943597e32428cc97993aa30936
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 31df907fe13cd171da8e443d3b8af876adaf3c3f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 Détermine l’existence d’un attribut personnalisé de ce champ et, si elle existe, retourne les informations d’attribut.  
@@ -51,10 +52,10 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 |------------|-----------------|  
 |[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|Obtient un énumérateur pour tous les attributs personnalisés attachés à ce champ.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) méthode peut retourner un énumérateur pour tous les attributs personnalisés définis pour ce champ.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : sh.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

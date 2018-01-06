@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 090c44d021d8852ecc33e9db1db7d5d5e9ff6557
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 85d76102b20b96257743225dbf32c95b5f619564
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 Cette interface est envoyée par le moteur de débogage (DE) pour le Gestionnaire de session de débogage (SDM) lorsqu’un thread s’est exécutée entièrement.  
@@ -42,10 +43,10 @@ IDebugThreadDestroyEvent2 : IUnknown
 |------------|-----------------|  
 |[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|Obtient le code de sortie du thread.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Visual Studio utilise cet événement pour mettre à jour le **Threads** fenêtre.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2162b001e314cc331c64ebcd54c5a04410408a73
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bc656814b355636e4bc4a9a362bd36b84c7d0786
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
 Étend les types de champs qui sont disponibles pour prendre en charge les génériques du code managé.  
@@ -36,7 +37,7 @@ IDebugExtendedField : IDebugField
 |[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|Récupère le type de champ étendues spécifié.|  
 |[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|Détermine si le champ représente un type fermé.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Sh.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

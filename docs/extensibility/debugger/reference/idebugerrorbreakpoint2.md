@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b37d8596a6bf4465d1146651673acbccdd441a13
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2ea3b71f0ae5e66e100d7252c77c2fb1068b8985
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 Cette interface représente une erreur ou un point d’arrêt avertissement, comme un emplacement non valide, une expression non valide ou les raisons pour lesquelles le point d’arrêt en attente n’a pas lié (code n’a ne pas chargé encore, et ainsi de suite).  
@@ -43,7 +44,7 @@ IDebugErrorBreakpoint2 : IUnknown
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|Obtient le point d’arrêt en attente qui a provoqué l’erreur.|  
 |[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|Obtient la résolution d’erreur de point d’arrêt qui décrit l’erreur.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

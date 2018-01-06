@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8950a69c5086616bc5f0b3177e5c6aa9aad9dfe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc9988be307b1663d8712e86a94b1fe387af2425
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
 Obtient le résultat de l’évaluation d’expression.  
@@ -44,7 +45,7 @@ int GetResult(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Retourné [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet contient la valeur de l’expression évaluée. Notez que cette valeur peut être une valeur complexe tel qu’un tableau, mais le résultat final doit être un numérique ou valeur de chaîne qui s’affiche à l’utilisateur.  
   
 ## <a name="see-also"></a>Voir aussi  

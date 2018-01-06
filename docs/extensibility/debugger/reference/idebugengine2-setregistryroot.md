@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cb553ea8b461b7b571db4970d38514873f9d467e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3a514dfb0d248ec38d130b70db432352b5c09411
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 Définit la racine du Registre pour le moteur de débogage (DE).  
@@ -44,7 +45,7 @@ int SetRegistryRoot(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode permet de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] pour spécifier une racine du Registre autre que le DE doit utiliser pour obtenir les paramètres de Registre ; par exemple, « HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp ».  
   
 ## <a name="see-also"></a>Voir aussi  

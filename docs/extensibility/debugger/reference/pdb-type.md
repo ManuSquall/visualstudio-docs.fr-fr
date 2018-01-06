@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eadfeb8ffdf7cdb1b51951c466f0cb94283da6a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f1c08df8cf56d81ebb22fbdf17f3d20084599b51
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 Cette structure fournit des informations sur un type de champ obtenue à partir d’un symbole PDB.  
@@ -51,10 +52,10 @@ public struct PDB_TYPE {
  SymID  
  ID de symbole qui correspond à ce champ.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette structure s’affiche dans le cadre de l’union dans la [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) lors de la structure la `dwKind` champ le `TYPE_INFO` structure est définie sur `TYPE_KIND_PDB` (une valeur à partir de la [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) énumération).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : sh.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

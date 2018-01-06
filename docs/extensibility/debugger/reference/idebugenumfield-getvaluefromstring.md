@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d88956f9ccdfef82f98de0b93d33c39b12955286
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e98b8c8d812bfc77351b88aa85bcf9c94cd92e0c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 Cette méthode retourne la valeur associée au nom d’une constante d’énumération.  
@@ -49,7 +50,7 @@ int GetValueFromString(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE`, si le nom n’est pas partie de l’énumération ou un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode est sensible à la casse. Si une recherche sans respecter la casse est nécessaire (par exemple, dans un langage tel que Visual Basic, où les noms ne sont pas respecter la casse), utilisez [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).  
   
 ## <a name="see-also"></a>Voir aussi  

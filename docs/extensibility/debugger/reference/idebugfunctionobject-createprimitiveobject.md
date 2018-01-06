@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c612c9bc2b535c61322364690f18699218365c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c72dd6d804c37496d2615ccd086ee095c75510d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 Crée un objet de données primitifs, comme un entier simple.  
@@ -49,7 +50,7 @@ int CreatePrimitiveObject(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Appelez cette méthode pour créer un objet qui représente un objet de type primitif qui est un paramètre à la fonction qui est représentée par le [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface. Par exemple, si la chaîne d’expression est « myString(5) », cette méthode est utilisée pour créer un objet qui représente l’entier 5.  
   
 ## <a name="see-also"></a>Voir aussi  

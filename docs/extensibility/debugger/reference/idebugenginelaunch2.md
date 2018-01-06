@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 989bea1fc3398be376c7c2d5c41ce390e59c228f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb53f64b6b98ed6d02774977138cfd4faf5b8f83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
 Utilisé par un moteur de débogage (DE) pour démarrer et arrêter les programmes.  
@@ -45,7 +46,7 @@ IDebugEngineLaunch2 : IDebugEngine2
 |[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|Détermine si un processus peut être arrêté.|  
 |[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|Arrête un processus.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd0ec398877a581109f864411ede684147e86ebd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ee3e04c16b59ae97b93a3c521aa1a63f57835eb4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 Retourne le nombre d’octets contenus dans cet objet.  
@@ -44,7 +45,7 @@ int GetSize(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Utilisez le [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) pour récupérer les octets de données réelles.  
   
 ## <a name="see-also"></a>Voir aussi  

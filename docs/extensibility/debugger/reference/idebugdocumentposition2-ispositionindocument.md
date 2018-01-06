@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc2c5d3a9b4d0a59aa85208479f57490c18d3c2c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b49f55d4391e8d002a01236bb411373316dba36f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 Détermine si la position du document se trouve dans le document donné.  
@@ -44,7 +45,7 @@ int IsPositionInDocument(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode est utilisée principalement dans la définition de points d’arrêt dans [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfaces. Comme les documents sont chargés, la position du point d’arrêt est appelée pour déterminer si le document contient cette position.  
   
 ## <a name="see-also"></a>Voir aussi  

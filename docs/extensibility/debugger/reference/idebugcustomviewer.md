@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b7d32746fa42dc270497252065c3ac117a59547
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9bbe546ffb3c6e61b251e8afbfc7fa9018ffa1b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 Cette interface permet l’évaluateur d’expression (EE) pour afficher une valeur de propriété dans le format n’est nécessaire.  
@@ -42,7 +43,7 @@ IDebugCustomViewer : IUknown
 |------------|-----------------|  
 |[Valeur d’affichage](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Fait le nécessaire pour afficher une valeur donnée.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette interface est utilisée lorsqu’une valeur de propriété ne peut pas être affichée par des moyens normaux, par exemple, avec une table de données ou un autre type de propriété complexe. Une visionneuse personnalisée, comme représenté par la `IDebugCustomViewer` l’interface, diffère d’un visualiseur de type, qui est un programme externe pour afficher les données d’un type spécifique, quelle que soit la EE. Le EE implémente une visionneuse personnalisée qui est spécifique à cette EE. Un utilisateur sélectionne le type de visualiseur à utiliser, soit un visualiseur de type ou une visionneuse personnalisée. Consultez [Visualizing et affichage des données](../../../extensibility/debugger/visualizing-and-viewing-data.md) pour plus d’informations sur ce processus.  
   
  Une visionneuse personnalisée est enregistrée dans la même façon qu’une EE et, par conséquent, requiert une langue GUID et un GUID du fournisseur. La mesure exacte (ou le nom de l’entrée du Registre) est connue uniquement du EE. Cette mesure est retournée dans le [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structure, qui à son tour, est retourné par un appel à [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md). La valeur stockée dans la métrique est la `CLSID` qui est passé à COM `CoCreateInstance` (voir l’exemple).  
@@ -51,7 +52,7 @@ IDebugCustomViewer : IUknown
   
  En règle générale, une visionneuse personnalisée fournit une vue en lecture seule des données, depuis le [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface fournie à [une valeur d’affichage](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) n’a aucune méthode permettant de modifier la valeur de propriété, sauf en tant que chaîne. Pour prendre en charge la modification des blocs de données arbitraires, le EE implémente une interface personnalisée sur le même objet qui implémente le `IDebugProperty3` interface. Cette interface personnalisée est ensuite fournir les méthodes nécessaires pour modifier un bloc arbitraire de données.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

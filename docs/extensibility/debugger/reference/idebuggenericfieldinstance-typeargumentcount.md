@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ddaf2ff3323bb7e4e1da55eb1b8ad8cd8931f9c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 94aa82ed8252a852e0f973ccc64cc7b44629b0f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 Retourne le nombre de types des arguments de paramètre pour cette instance.  
@@ -45,7 +46,7 @@ int TypeArgumentCount(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Par exemple, si liste\<int >, cette méthode retourne 1 et, s’il liste\<int, float2 > cette méthode retourne la valeur 2. Cette méthode retourne 0 si il n’existe aucun argument de type.  
   
 ## <a name="see-also"></a>Voir aussi  

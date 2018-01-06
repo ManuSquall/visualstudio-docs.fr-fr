@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c31e4c8367c1ceba5a4692438e8c1f1503f4f63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb45d2196a9f84b8f956b8ede665df6e3ed249c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Attache un moteur de débogage (DE) à un programme ou des programmes. Appelée par le Gestionnaire de session de débogage (SDM) lors de la D’est en cours d’exécution in-process pour le SDM.  
@@ -64,7 +65,7 @@ int Attach(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Il existe trois raisons pour l’attachement à un programme, comme suit :  
   
 -   `ATTACH_REASON_LAUNCH`Indique que le D’attachement au programme, car l’utilisateur a lancé le processus qui le contient.  

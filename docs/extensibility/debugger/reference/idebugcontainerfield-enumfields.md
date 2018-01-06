@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e1eb67855ae1e13970ad5eab2eba8dd6308abbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a262d2f4aa90bc9ae638fb6cfbfe8af605f2446a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 Crée un énumérateur pour les champs du conteneur.  
@@ -64,7 +65,7 @@ int EnumFields(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ou S_FALSE si aucun champ. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le `dwKindFilter`, `dwModifiersFilter`, et `pszNameFilter` paramètres peuvent être combinés, par exemple, pour sélectionner toutes les méthodes publiques virtuels nommés « MyMethod ».  
   
 ## <a name="see-also"></a>Voir aussi  

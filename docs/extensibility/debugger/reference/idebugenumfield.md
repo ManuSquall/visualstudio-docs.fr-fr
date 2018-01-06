@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90313b9cf47ab358be0341248ce134f0fabe45ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ea0297b32d89b274d8c19250b03256e050797f06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 Cette interface représente un type d’énumération.  
@@ -45,10 +46,10 @@ IDebugEnumField : IDebugContainerField
 |[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)|Retourne la valeur associée au nom de constante d’énumération donné|  
 |[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)|Retourne la valeur associée avec le nom de constante d’énumération donné mais ignorer la casse.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Il s’agit du symbole sous-jacent qui est effectivement lié à un emplacement avec [lier](../../../extensibility/debugger/reference/idebugbinder-bind.md).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : sh.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

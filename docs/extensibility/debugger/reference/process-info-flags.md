@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 228b2d3286ad0b69a2eb813e18b8837ec038f28f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9ff1df7e73c8f09934504552f33d7f9ce4c537e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 Décrit ou spécifie les propriétés d’un processus.  
@@ -57,12 +58,12 @@ enum enum_PROCESS_INFO_FLAGS {
  PIFLAG_PROCESS_RUNNING  
  Indique que le processus est en cours d’exécution. Valide uniquement si `PIFLAG_DEBUGGER_ATTACHED` est également spécifié. Disponible dans [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)] et versions ultérieures.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Utilisé pour le `Flags` membre de la [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure.  
   
  Ces indicateurs peuvent être combinées avec une opération de bits `OR`.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ffeb7c7c1abe6e5a816c2d7a67ad6820e0921bc8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b2fef7bf82992b6fdaaadbbd2bee6a9e36f68ad0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 Obtient le conteneur global de la méthode.  
@@ -44,7 +45,7 @@ int GetGlobalContainer(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Retourné [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objet représente l’ensemble du module et un objet artificiels, autrement dit, le module lui-même ne dispose pas d’une classe réelle, mais elle peut être représentée par un `IDebugClassField` objet, ce qui permet des différents éléments du module d’être énumérée et découverts.  
   
 ## <a name="see-also"></a>Voir aussi  

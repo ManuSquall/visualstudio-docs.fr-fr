@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 49de63c81c46f379630f5d5cb328a670472ddcee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0aa4a5e044dfc28302735e058c8863d4eb683670
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 Crée un énumérateur pour les variables locales statiques de la méthode.  
@@ -44,7 +45,7 @@ int EnumStaticLocals(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ou retourne S_FALSE, s’il n’y a aucuns variables locales statiques. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Chaque élément est un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet représentant les différents types de variables locales statiques. Appelez le [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) méthode sur chaque objet afin de déterminer exactement quel type de variable locale static de l’objet représente.  
   
 ## <a name="see-also"></a>Voir aussi  

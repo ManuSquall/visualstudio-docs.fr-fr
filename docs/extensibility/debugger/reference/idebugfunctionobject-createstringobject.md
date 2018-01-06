@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 60e690ebe589671e9ead6496f33f30923ea3ca36
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc5e3d3c0ad71eb3b28c67756c321326687bf325
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 Crée un objet de chaîne.  
@@ -49,7 +50,7 @@ int CreateStringObject(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Appelez cette méthode pour créer un objet qui représente une chaîne qui représente un paramètre de la fonction qui est représentée par le [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
   
 ## <a name="see-also"></a>Voir aussi  

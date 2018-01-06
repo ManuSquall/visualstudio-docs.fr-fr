@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01aa9048e26c265b1fe04ba653fb224b86ec77cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5fa01ee5eefcd8cc476abe0ce5fc512dd2191403
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 Spécifie les propriétés associées à un fournisseur de programme.  
@@ -47,12 +48,12 @@ public enum enum_PROVIDER_FIELDS {
  PFIELD_IS_DEBUGGER_PRESENT  
  Le `fIsDebuggerPresent` champ n’est valide.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Ces valeurs sont retournées dans le `Fields` membre de la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) structure pour indiquer les champs de la structure ont été explicitement renseignés.  
   
  Ces valeurs peuvent être combinées avec une opération de bits `OR`.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  
