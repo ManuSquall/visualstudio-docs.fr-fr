@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a0e2ffb58b62acd35fea209e2c0c66fc7f1a9cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 24512abd862c07079af662da0a7188a709291067
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 Récupère un indicateur qui spécifie si la fonction contient un [gestion structurée des exceptions (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (par exemple, __try /\__except blocs).  
@@ -41,7 +42,7 @@ HRESULT get_hasSEH(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

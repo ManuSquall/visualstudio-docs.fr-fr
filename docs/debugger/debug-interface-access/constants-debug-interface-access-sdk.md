@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50b6533b1036087dc8d0cdfe59b653774d781f55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8241190650bf395e1e4e2467b4862119cd2b10dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Constantes (Kit de développement logiciel Debug Interface Access)
 Ces constantes de chaîne peuvent être utilisées pour identifier les différentes sections d’un fichier de base de données (PDB) de débogage programme via le SDK DIA.  
@@ -28,7 +29,7 @@ Ces constantes de chaîne peuvent être utilisées pour identifier les différen
 ## <a name="constants"></a>Constantes  
  Les éléments suivants sont déclarés en tant que les macros C/C++.  
   
-|Macro|Valeur|  
+|Macro|Value|  
 |-----------|-----------|  
 |`DiaTable_Symbols`|L « Symboles »|  
 |`DiaTable_Sections`|L « Sections »|  
@@ -54,7 +55,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 }  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : dia2.h  
   
 ## <a name="see-also"></a>Voir aussi  

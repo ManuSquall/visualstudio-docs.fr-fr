@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 31c17df9b8b3e0a0b54d99f95e8a3d5704140cf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 093dbb5ee8f088a7f2e4ccd1dd063cfeecc2c5e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Lire des données XML dans un dataset
 ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dans cette procédure pas à pas, vous créez une application Windows qui charge des données XML dans un jeu de données. Le jeu de données est ensuite affichée dans un <xref:System.Windows.Forms.DataGridView> contrôle. Enfin, un schéma XML basé sur le contenu du fichier XML s’affiche dans une zone de texte.  
@@ -169,9 +170,9 @@ ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dan
     |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
     ||**Barres de défilement**|**Vertical**|  
-    |`Button1`|**Nom**|`ReadXmlButton`|  
+    |`Button1`|**Name**|`ReadXmlButton`|  
     ||**Text**|`Read XML`|  
-    |`Button2`|**Nom**|`ShowSchemaButton`|  
+    |`Button2`|**Name**|`ShowSchemaButton`|  
     ||**Text**|`Show Schema`|  
   
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Créer le jeu de données qui reçoit les données XML  

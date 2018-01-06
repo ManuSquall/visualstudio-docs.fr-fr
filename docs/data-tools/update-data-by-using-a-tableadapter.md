@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 7d49f0ddc965327334aea471b1276b4e78987ec2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 4968eab5e1d355543a8658e72540bc66fa2543b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Mettre à jour des données à l’aide d’un TableAdapter
 Une fois que les données dans votre jeu de données a été modifiées et validées, vous pouvez envoyer les données mises à jour à une base de données en appelant le `Update` méthode d’un [TableAdapter](../data-tools/create-and-configure-tableadapters.md). Le `Update` méthode met à jour une table de données unique et exécute la commande correcte (INSERT, UPDATE ou DELETE), selon le <xref:System.Data.DataRow.RowState%2A> de chaque ligne de données dans la table. Lorsque les tables sont liées à un jeu de données, Visual Studio génère une classe TableAdapterManager que vous utilisez pour les mises à jour. La classe TableAdapterManager garantit que les mises à jour sont effectuées dans l’ordre approprié selon les contraintes de clé étrangère sont définies dans la base de données. Lorsque vous utilisez des contrôles liés aux données, l’architecture de liaison de données crée une variable membre de la classe TableAdapterManager appelée tableAdapterManager. 

@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6628ad8decf04fdb4a031c62c2dc3c4af5b179d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e419adef776c3973ae3d470e97c88483f0d7d0ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Comment : développer et réduire des arborescences Spy++
 Vous pouvez développer et réduire les vues fenêtres, processus et Threads à l’aide de deux méthodes : en cliquant sur les icônes dans la fenêtre ou à l’aide de la **arborescence** menu. Le + et - icônes dans l’arborescence agissent comme dans la fenêtre du projet Visual C++.  

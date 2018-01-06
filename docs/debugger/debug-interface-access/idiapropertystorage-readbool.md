@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9632ada4b3e19013f05006d22770c08e83eac5ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e7f146222e76ff0f4de9f30140064e7bdd08a358
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 Lit `BOOL` valeurs dans un jeu de propriétés.  
@@ -42,7 +43,7 @@ HRESULT ReadBOOL (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `BOOL`.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Pour obtenir des résultats cohérents, interpréter la `BOOL` valeur afin que les valeurs différentes de zéro sont `TRUE` et zéro est `FALSE`.  
   
 ## <a name="see-also"></a>Voir aussi  

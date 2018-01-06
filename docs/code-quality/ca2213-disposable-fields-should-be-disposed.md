@@ -18,18 +18,19 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77cd32f97e3798362371fc21f8b38c14ce22c7fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4da3299e839be08a5ff11792aa2c80a364349b18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213 : Les champs pouvant être supprimés doivent l'être
 |||  
 |-|-|  
 |TypeName|DisposableFieldsShouldBeDisposed|  
 |CheckId|CA2213|  
-|Catégorie|Microsoft.Usage|  
+|Category|Microsoft.Usage|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
@@ -56,4 +57,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.IDisposable?displayProperty=fullName>   
- [Modèle de suppression](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Dispose, modèle](/dotnet/standard/design-guidelines/dispose-pattern)

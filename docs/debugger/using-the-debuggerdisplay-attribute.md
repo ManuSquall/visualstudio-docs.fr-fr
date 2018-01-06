@@ -16,11 +16,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 263a6628154a5c36326c7fbdbd7a522cde28c40a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5221ba5a395e1cfbbe624b3d65e6762bedb8d2e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Utilisation de l’attribut DebuggerDisplay
 Le [DebuggerDisplayAttribute (classe)](/dotnet/api/system.diagnostics.debuggerdisplayattribute) contrôle la façon dont un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys.  
@@ -95,8 +96,8 @@ public sealed class MyClass
   
 |**Name**|**Valeur**|**Type**|  
 |--------------|---------------|--------------|  
-|Clé|"trois"|objet {string}|  
-|Valeur|3|objet {int}|  
+|Touche|"trois"|objet {string}|  
+|Value|3|objet {int}|  
   
 ```CSharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  

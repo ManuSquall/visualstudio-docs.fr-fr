@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a24b85ac16f9837a4e28674567341f00a993bf9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 552a1588b4ea1b4e5bc1cbc4d7ce87233dc74ea8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 Récupère le type d’origine de ce symbole. Quand utiliser le [symtagenum, énumération](../../debugger/debug-interface-access/symtagenum.md) est définie sur le type.  
@@ -41,10 +42,10 @@ HRESULT get_unmodifiedType(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le type actuel est une modification du type d’origine retourné. Le type d’origine pour un symbole peut être déterminé en tout d’abord obtenir le type du symbole, puis en interrogeant qui a retourné le type pour le type d’origine. Notez que certains symboles n’aient pas un type de modification du type d’origine.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  

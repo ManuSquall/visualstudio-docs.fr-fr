@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 873bebaf7c457ec798c60ab2150e40fee7214eac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b9e249ed95e0860c0dc781c4c0a0c9e7e86acc95
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="more-debugging-features"></a>Plus de fonctionnalités de débogage
 Cette section traite de fonctionnalités supplémentaires que vous pouvez utiliser avec le débogueur Visual Studio.  
@@ -41,7 +42,7 @@ Cette section traite de fonctionnalités supplémentaires que vous pouvez utilis
  [le débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)  
  Décrit le débogage juste-à-temps, qui permet de démarrer automatiquement le débogueur si un programme tombe en panne lors de son exécution en dehors de Visual Studio.  
   
- [Procédure pas à pas : débogage au moment de la conception](../debugger/walkthrough-debugging-at-design-time.md)  
+ [Procédure pas à pas : débogage au moment du design](../debugger/walkthrough-debugging-at-design-time.md)  
  Montre comment utiliser la fenêtre Exécution Visual Studio pour exécuter une fonction ou une sous-routine quand votre application ne s’exécute pas. 
   
  [Modifier & Continuer](../debugger/edit-and-continue.md)  

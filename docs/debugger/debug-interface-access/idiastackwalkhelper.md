@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a092cc6044f42a53abf97ff36417a23c1f2adca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cbd88bbe3e8a752721047ee80d847e72cf115b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 Facilite le parcours de la pile à l’aide du fichier de base de données (.pdb) de débogage de programme.  
@@ -46,13 +47,13 @@ IDiaStackWalkHelper: IUnknown
 |[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|Retourne le bloc de données PDATA associé à l’adresse virtuelle spécifiée.|  
 |[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Récupère l’adresse virtuelle initiale d’un fichier exécutable, une adresse virtuelle quelque part dans l’espace de mémoire de l’exécutable donnée.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette interface est appelée par le code DIA pour obtenir des informations sur le fichier exécutable pour construire une liste de frames de pile pendant l’exécution du programme.  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
  Une application cliente implémente cette interface pour prendre en charge le parcours de la pile lors de l’exécution du programme. Une instance de cette interface est passée à la [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) ou [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) méthodes.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  

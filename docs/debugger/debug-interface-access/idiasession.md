@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e57e1fddaabe0346987a7ed27b4f3cd682055d5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f3939ab86cd9f0948a2be44756b9ed94d143ecc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasession"></a>IDiaSession
 Fournit un contexte de requête pour les symboles de débogage.  
@@ -71,7 +72,7 @@ IDiaSession : IUnknown
 |[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Retourne une énumération de symboles de cadres correspondant au nom de la fonction inline spécifiés.|  
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Retourne une énumération de symboles pour les cadres qui correspondent à l’emplacement source spécifié.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Il est important d’appeler le [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) méthode après avoir créé le `IDiaSession` objet : et la valeur passée à la `put_loadAddress` méthode doit être différente de zéro : pour toutes les propriétés d’adresse virtuelle (VA) de symboles accessible. L’adresse de chargement est fourni à partir de tout programme chargé de l’exécutable en cours de débogage. Par exemple, vous pouvez appeler la fonction Win32 `GetModuleInformation` pour récupérer l’adresse de chargement pour le fichier exécutable, en fonction d’un handle au fichier exécutable.  
   
 ## <a name="example"></a>Exemple  
@@ -110,7 +111,7 @@ void InitializeDIA(const char *szFilename)
 }  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  

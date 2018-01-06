@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29b284e466ce751e86f488203b4b22c0c18c6573
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8ad08fd9800fdc197d4218fa55c83487e132f25d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 Effectue le déroulement de pile et retourne les résultats dans une interface de frame de parcours de pile.  
@@ -38,14 +39,14 @@ HRESULT execute (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant montre les valeurs de retournés possibles pour cette méthode.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |E_DIA_INPROLOG|Impossible d’exécuter un frame de pile dans le code de prologue.|  
 |E_DIA_SYNTAX|Analyser l’erreur s’est produite dans le programme de frame.|  
 |E_DIA_FRAME_ACCESS|Impossible de registres de l’accès ou de la mémoire.|  
 |E_DIA_VALUE|Erreur dans le calcul d’une valeur (par exemple, une division par zéro).|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode est appelée pendant le débogage pour dérouler la pile. Le [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) objet est implémenté par l’application cliente pour recevoir des mises à jour aux registres et fournir les méthodes utilisées par le `execute` (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  

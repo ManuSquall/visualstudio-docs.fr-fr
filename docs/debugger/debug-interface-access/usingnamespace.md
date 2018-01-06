@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 970d14e258ca729ab861c966005efeeb218d7071
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c0dc4f85ffb6f84320b01e441297a1c8be5eb1c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 Certains symboles peuvent être référencées par un espace de noms et est par la suite être identifiés par un `SymTagUsingNameSpace` balise.  

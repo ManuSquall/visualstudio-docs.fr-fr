@@ -17,11 +17,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eba5a9f55e5d3d08eee48dc083a7e2f848118162
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 42c5f99b3bf5ba95bc279cd5e117745ccc8e02c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rename-refactoring-c"></a>Refactorisation de changement de nom (C#)
 **Renommer** est une fonctionnalité de refactorisation dans l’environnement de développement intégré (IDE) Visual Studio qui offre un moyen facile de renommer les identificateurs pour les symboles de code tels que les champs, les variables locales, les méthodes, les espaces de noms, les propriétés et les types. **Renommer** peut être utilisé pour modifier les noms dans les commentaires et les chaînes et pour modifier les déclarations et les appels d’identificateur.  
@@ -118,13 +119,13 @@ ms.lasthandoff: 10/31/2017
   
 3.  Tapez le raccourci clavier **Maj + Alt + F10** pour afficher le menu Actions rapides.  
   
-     ou  
+     - ou -  
   
      Cliquez sur le triangle noir à côté de l’ampoule pour afficher le menu Actions rapides.  
   
 4.  Sélectionnez le **renommer '\<identifer1 >' à '\<identificateur2 >'** élément de menu pour appeler la refactorisation de changement de nom. Toutes les références à  **\<identifer1 >** sera automatiquement mise à jour à  **\<identificateur2 >**.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="renaming-implemented-or-overridden-members"></a>Modification du nom des membres implémentés ou substitués  
  Lorsque vous **renommer** un membre qui implémente/substitue ou est implémenté/substitué par les membres dans d’autres types, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] affiche une boîte de dialogue indiquant que l’opération de changement de nom provoquera des mises à jour en cascade. Si vous cliquez sur **continuer**, la refactorisation du moteur de manière récursive recherche et renomme tous les membres de base et des types dérivés qui ont implémente/substitue des relations avec le membre qui est renommé.  

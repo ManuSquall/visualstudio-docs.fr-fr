@@ -18,25 +18,26 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac9a04038ba1d80e8abba2efbbab19c9779c384a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b31eb16fda818ab2eee001e0fe14c5f433f5fcd1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211 : Les champs non constants ne doivent pas être visibles
 |||  
 |-|-|  
 |TypeName|NonConstantFieldsShouldNotBeVisible|  
 |CheckId|CA2211|  
-|Catégorie|Microsoft.Usage|  
+|Category|Microsoft.Usage|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
  Un champ statique public ou protégé n’est pas constant et n’est pas en lecture seule.  
   
 ## <a name="rule-description"></a>Description de la règle  
- Les champs statiques qui ne sont ni constants ni en lecture seule ne sont pas thread-safe. Accès à un tel champ doit être scrupuleusement contrôlé et requiert des techniques de programmation évoluées pour synchroniser l’accès à l’objet de classe. Étant donné que ces compétences sont difficiles à en savoir plus et principale et le test d’un tel objet pose ses propres défis, champs statiques sont mieux utilisés pour stocker les données qui ne changent pas. Cette règle s’applique aux bibliothèques ; les applications ne doivent pas exposer de tous les champs.  
+ Les champs static qui ne sont ni constants ni en lecture seule ne sont pas thread-safe. Accès à un tel champ doit être scrupuleusement contrôlé et requiert des techniques de programmation évoluées pour synchroniser l’accès à l’objet de classe. Étant donné que ces compétences sont difficiles à en savoir plus et principale et le test d’un tel objet pose ses propres défis, champs statiques sont mieux utilisés pour stocker les données qui ne changent pas. Cette règle s’applique aux bibliothèques ; les applications ne doivent pas exposer de tous les champs.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Pour corriger une violation de cette règle, rendez le champ statique constant ou en lecture seule. Si ce n’est pas possible, modifier le type pour utiliser un autre mécanisme, par exemple une propriété de thread-safe qui gère l’accès thread-safe au champ sous-jacent. Notez que les problèmes de contention de verrouillage et les interblocages peuvent affecter les performances et le comportement de la bibliothèque.  

@@ -14,11 +14,12 @@ caps.latest.revision: "105"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29f87ccebc342e6b5b03d40aab789ff80496a96d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 04b627e1f3188a4e7e938f9446251b5be80b87e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Utilisation du collecteur autonome IntelliTrace
 Le **collecteur autonome IntelliTrace** vous permet de collecter des données de diagnostic IntelliTrace pour vos applications exécutées sur des serveurs de production ou d’autres environnements, sans avoir à installer Visual Studio sur l’ordinateur cible ni à modifier l’environnement du système cible. Ce collecteur fonctionne avec les applications web, SharePoint, WPF et Windows Forms. Quand vous avez terminé la collecte des données, supprimez simplement le collecteur pour le désinstaller.  
@@ -30,7 +31,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 >   
 >  Vous pouvez collecter les événements de performances dans les données IntelliTrace en exécutant l’agent en mode **Monitor** . Le mode**Monitor** a moins d’impact sur les performances que le mode **Trace** ou le **collecteur autonome IntelliTrace**. Microsoft Monitoring Agent modifie l’environnement du système cible quand il est installé. Consultez [à l’aide de l’agent Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).  
   
- **Requirements**  
+ **Spécifications**  
   
 -   .NET Framework 3.5, 4 ou 4.5  
   
@@ -69,7 +70,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 5.  [Collecter les données d’une application web ou d’une application SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)  
   
-     ou  
+     - ou -  
   
      [Collecter les données d’une application managée](#BKMK_Collect_Data_from_Executables)  
   
@@ -130,7 +131,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
     2.  Accordez au pool d’applications hébergeant l’application web ou SharePoint les autorisations de lecture et d’exécution pour le répertoire du collecteur.  
   
-         Par exemple :  
+         Exemple :  
   
         -   Pour une application web du pool d’applications **DefaultAppPool** :  
   
@@ -160,7 +161,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
     2.  Dans la fenêtre Commande PowerShell, utilisez la commande **Import-Module** pour importer **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.  
   
-         Par exemple :  
+         Exemple :  
   
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`  
   
@@ -178,7 +179,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 2.  Pour une application web ou SharePoint, accordez au pool d’applications correspondant toutes les autorisations d’accès au répertoire de fichiers .iTrace. Pour cela, utilisez au choix la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers).  
   
-     Par exemple :  
+     Exemple :  
   
     -   Pour définir des autorisations avec la commande Windows **icacls** :  
   
@@ -318,7 +319,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
     2.  Dans `<ModuleList>`, définissez l’attribut `isExclusionList` avec la valeur `false`.  
   
-    3.  Utilisez l’élément `<Name>` pour spécifier chaque module avec un des éléments suivants : nom de fichier, valeur de chaîne pour inclure un module dont le nom contient cette chaîne, ou clé publique.  
+    3.  Utilisez l'élément `<Name>` pour spécifier chaque module avec un des éléments suivants : nom de fichier, valeur de chaîne pour inclure un module dont le nom contient cette chaîne, ou clé publique.  
   
      Par exemple, pour collecter uniquement des données du module web principal pour l’application web Fabrikam Fiber, créez une liste comme celle-ci :  
   
@@ -329,7 +330,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
     ```  
   
-     Pour collecter des données d’un module dont le nom inclut « Fabrikam », créez une liste comme celle-ci :  
+     Pour collecter des données d'un module dont le nom inclut « Fabrikam », créez une liste comme celle-ci :  
   
     ```xml  
     <ModuleList isExclusionList="false">  
@@ -367,7 +368,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
      Oui. Pour réduire l’impact sur les performances, IntelliTrace limite la collecte des données aux valeurs de types de données primitives qui sont passées à et retournées par les méthodes ainsi qu’aux valeurs de types de données primitives dans les champs sur les objets de niveau supérieur qui sont passés à et retournés par les méthodes.  
   
-     Par exemple, supposons que vous avez une signature de méthode `AlterEmployee` qui accepte un `id` entier et un objet `Employee` `oldemployee`:  
+     Par exemple, supposons que vous avez une signature de méthode `AlterEmployee` qui accepte un `id` entier et un objet `Employee``oldemployee` :  
   
      `public Employee AlterEmployee(int id, Employee oldemployee)`  
   

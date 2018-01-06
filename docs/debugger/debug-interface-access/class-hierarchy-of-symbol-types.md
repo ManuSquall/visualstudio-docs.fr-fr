@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a89cc0342ed5b9d4e1fcb85cbc84e124588d9c9b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d2cb2374a33677f961fa798332ac96b6d801990b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hiérarchie de classes des types de symboles
 Le tableau suivant décrit les types de symboles dans la hiérarchie de classes.  

@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2434dac0a4f0e4d9ff1c998f0cd70da4f9c558b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7e4771de4237bea89836969d2274d622d36e3f89
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 Récupère un indicateur qui indique si le symbole correspond à la *symbole de plage définition* pour le composant de balise d’une variable de pointeur dans le code compilé pour un accélérateur AMP de C++. Le symbole de plage de définition est l’emplacement d’une variable pour une plage d’adresses.  

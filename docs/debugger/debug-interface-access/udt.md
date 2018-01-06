@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 975e739a3cb6ab4424875845b56b04643def107d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a2892a72a07f11a9026b6c76c9e991729b16e1a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="udt"></a>UDT
 Chaque classe, structure et union sont identifié par un `SymTagUDT` symbole. Chaque membre, fonction, les données, ou type imbriqué et chaque classe de base, apparaît comme un enfant de la classe du type défini par l’utilisateur (UDT).  

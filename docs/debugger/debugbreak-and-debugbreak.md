@@ -22,11 +22,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1763c117ce9cdb815f12213830079136169b2c35
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 83128e4d5bd274013db1e7195e8182d021c257d5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak et __debugbreak
 Vous pouvez appeler la fonction DebugBreak Win32 ou le [__debugbreak](/cpp/intrinsics/debugbreak) intrinsèque à tout moment dans votre code. `DebugBreak` et `__debugbreak` reviennent à définir un point d'arrêt à cet emplacement.  

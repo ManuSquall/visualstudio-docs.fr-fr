@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b52d62a3da405f2bc0abbac91b0de8c1690cab2c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f2cff688dcc35d87c47a23d8243b68747c1c3f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-refresh-the-view"></a>Comment : actualiser la vue
 Spy ++ prend un « instantané » des tables système et actualise une vue basée sur ces informations. Il est important que vous actualisiez périodiquement vos vues système. Si vous avez une vue Spy ++ ouvrir et n’avez pas actualisé la vue, vous verrez pas ces processus, threads et fenêtres qui sont créés par la suite. En outre, vous pouvez voir les éléments qui n’existent plus. Le **Actualiser** commande est disponible pour toutes les vues à l’exception de la vue Messages.  

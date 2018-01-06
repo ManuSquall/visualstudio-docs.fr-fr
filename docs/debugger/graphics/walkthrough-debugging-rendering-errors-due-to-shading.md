@@ -12,16 +12,17 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4e11a6b3c3a72c43bf96494a6d87ecc42e31fdf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 55638339935639c5d7bcb726f981b7edecdcadca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procédure pas à pas : débogage des erreurs de rendus dues à la trame
 Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour examiner un objet dont la couleur n’est pas correcte à cause d’un problème de nuanceur.  
   
- Cette procédure pas à pas montre comment effectuer les opérations suivantes :  
+ Cette procédure pas à pas montre comment effectuer les opérations suivantes :  
   
 -   Examiner le document du journal de graphiques pour identifier les pixels qui indiquent le problème.  
   

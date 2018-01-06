@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2d072ff29ff31a72f932f3c63b1d992f45f32ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f72a94b5ed3798c9efd57063a21b6d09e14d2097
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compilandenv"></a>CompilandEnv
 Le compilateur peut inclure des variables d’environnement supplémentaires avec les symboles. Il y a un `SymTagCompilandEnv` symbole pour chacune de ces variables.  

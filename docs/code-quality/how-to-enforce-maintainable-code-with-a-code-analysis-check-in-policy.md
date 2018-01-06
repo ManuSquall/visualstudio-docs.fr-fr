@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d9697c7d6a216c08e34eb19287d22a76d67a55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 19d8761abea6934c59673c332ea09e8a0b4e6997
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Comment : appliquer du code facile à maintenir avec une stratégie d’archivage de l’analyse du code
 Les développeurs peuvent utiliser l’outil de métrique du Code pour mesurer la complexité et la facilité de maintenance de leur code, mais ils ne peuvent pas appeler la métrique du code dans le cadre d’une stratégie d’archivage. Toutefois, une équipe peut activer des règles d’analyse du Code pour vérifier la conformité de leur code avec les normes de la métrique du Code et appliquent les règles via des stratégies d’archivage. Pour plus d’informations sur la métrique du code, consultez la [les valeurs de métrique de Code](../code-quality/code-metrics-values.md).  

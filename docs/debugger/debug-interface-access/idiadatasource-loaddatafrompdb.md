@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b9192484e2ac9c957bc53a2e5a5a5965fd7a46a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01348d666b4e6a3b9333a242bb285eff44f5b7c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 S’ouvre et prépare un fichier programme (.pdb) comme source de données de débogage.  
@@ -38,14 +39,14 @@ HRESULT loadDataFromPdb (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant montre les valeurs de retournés possibles pour cette méthode.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |E_PDB_NOT_FOUND|Impossible d’ouvrir le fichier, ou déterminé que le fichier a un format non valide.|  
 |E_PDB_FORMAT|Vous avez tenté d’accéder à un fichier avec un format obsolète.|  
 |E_INVALIDARG|Paramètre non valide.|  
 |E_UNEXPECTED|Source de données a déjà été préparée.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode charge les données de débogage directement à partir d’un fichier .pdb.  
   
  Pour valider le fichier .pdb par rapport à des critères spécifiques, utilisez la [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) (méthode).  

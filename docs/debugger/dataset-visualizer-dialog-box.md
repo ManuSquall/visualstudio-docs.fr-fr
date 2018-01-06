@@ -24,18 +24,19 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95261dd96b6fdd7350254c74ae895965a3a8eeed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 56cfc8dfdcb3c61b5f1eb1b0f14f3ad1af5fb89e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Visualiseur DataSet (boîte de dialogue)
 Le Visualiseur DataSet vous permet d'afficher le contenu d'un objet DataSet, DataTable, DataView ou DataViewManager. Vous pouvez accéder à ce visualiseur en cliquant sur l'icône de loupe qui apparaît à côté da la Valeur d'un de ces objets dans une fenêtre de variables de débogueur ou dans un DataTip.  
   
  Vous pouvez apporter des modifications aux objets dans ce visualiseur. Les modifications sont enregistrées dès que vous validez une ligne.  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
  Table  
  Utilisez cette zone de liste déroulante pour sélectionner une table dans le groupe de données que vous souhaitez afficher.  
   

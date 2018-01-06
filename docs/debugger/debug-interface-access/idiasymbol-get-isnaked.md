@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc65b6a9612565b50c0e70451a373f917bb840b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 018c1398f268b28e5bd547bfbcf69335cc973cf4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 Récupère un indicateur qui spécifie si la fonction a la [naked](/cpp/cpp/naked-cpp) attribut (autrement dit, la fonction n’a aucun code de prologue ni d’épilogue ajouté par le compilateur).  
@@ -41,7 +42,7 @@ HRESULT get_isNaked(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

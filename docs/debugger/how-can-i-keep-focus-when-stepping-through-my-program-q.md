@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba265c0719a1a2c95e4b3e3e1c5e2df8c0e246c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e5661b3a2d1936b2fa8b0a089be86312fb29704
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Comment puis-je conserver le focus lorsque j'exécute mon programme pas à pas ?
 ## <a name="description"></a>Description  

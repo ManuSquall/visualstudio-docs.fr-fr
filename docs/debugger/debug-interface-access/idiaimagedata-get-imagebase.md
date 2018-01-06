@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: daaaf26e0a33ce8e90b2b8ac621ed47d299c8276
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5e3730e7bc543d0b7bdea18e162dfe83e1d803bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
 Récupère l’emplacement de mémoire où l’image doit être basée.  
@@ -38,7 +39,7 @@ HRESULT get_imageBase (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  En raison de conflits de base d’image, une image peut être redéfinie automatiquement vers un emplacement de la mémoire inutilisée quand il est chargé. Cette méthode retourne l’indicateur de base (emplacement recommandée pour la mémoire) qui a été enregistrée dans le module au moment de la compilation.  
   
 ## <a name="see-also"></a>Voir aussi  

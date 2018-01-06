@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb35cc5cdc00b5c4225ba4fd2fb8cc2b1214cb49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 685e7beeea5921b7c555b53aaa0b396f81914cbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>En savoir plus sur les fenêtres du débogueur dans Visual Studio
 Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage de votre programme. Pour afficher la liste des fenêtres du débogueur, définir un point d’arrêt et démarrer le débogage. Lorsque vous atteignez le s’arrête au point d’arrêt et l’exécution, cliquez sur **Déboguer > Windows**.  
@@ -27,7 +28,7 @@ Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage d
 |Points d’arrêt|Ctrl+Alt+B|[Utiliser des points d’arrêt](../debugger/using-breakpoints.md)|  
 |Paramètres d’exception|Ctrl+Alt+E|[Gérer les exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md)|  
 |Sortie|Ctrl+Alt+O|[Sortie (fenêtre)](../ide/reference/output-window.md)|    
-|Espion|Ctrl+Alt+W, (1, 2, 3, 4)|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|  
+|Watch|Ctrl+Alt+W, (1, 2, 3, 4)|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|  
 |Espion express|Maj+F9|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|  
 |Autos|Ctrl+Alt+V, A|[Fenêtres Variables locales et Automatique](../debugger/autos-and-locals-windows.md)|  
 |Variables locales|Ctrl+Alt+V, L|[Fenêtres Variables locales et Automatique](../debugger/autos-and-locals-windows.md)|  

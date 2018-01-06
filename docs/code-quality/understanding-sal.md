@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d1c6ac08b47bd5ad5e6dd84bbf78496c421a21a6
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-sal"></a>Présentation de SAL
 Le langage d’annotation du code source Microsoft (SAL) fournit un ensemble d’annotations que vous pouvez utiliser pour décrire comment une fonction utilise ses paramètres, les hypothèses sur lesquelles elle émet à leur sujet et les garanties qu’elle quand elle s’achève. Les annotations sont définies dans le fichier d’en-tête `<sal.h>`. Analyse du code Visual Studio pour C++ utilise des annotations SAL pour modifier son analyse de fonctions. Pour plus d’informations sur SAL 2.0 pour le développement de pilote Windows, consultez [Annotations SAL 2.0 pour Windows pilotes](http://go.microsoft.com/fwlink/?LinkId=250979).  
@@ -84,7 +85,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>Principes de base SAL  
  SAL définit quatre types de paramètres, qui sont classés par le modèle d’utilisation de base.  
   
-|Catégorie|Annotation du paramètre|Description|  
+|Category|Annotation du paramètre|Description|  
 |--------------|--------------------------|-----------------|  
 |**Entrée de la fonction appelée**|`_In_`|Données sont passées à la fonction appelée et sont traitées comme étant en lecture seule.|  
 |**Entrée à fonction appelée et de sortie à l’appelant**|`_Inout_`|Données utilisables sont transmises à la fonction et qu’elle sont potentiellement modifiées.|  

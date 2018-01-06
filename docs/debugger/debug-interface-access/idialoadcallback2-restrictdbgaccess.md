@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: feebffca2c332466e6f5105c4f69b74744922cf0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fa90825f837341a0ad221317d1a83be090b8774f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
 Détermine si la recherche d’informations de débogage est autorisée à partir de fichiers .dbg.  
@@ -32,7 +33,7 @@ HRESULT RestrictDBGAccess();
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Toute valeur de retour autre que `S_OK` pour empêcher la recherche d’informations de débogage à partir de fichiers .dbg.  
   
 ## <a name="see-also"></a>Voir aussi  

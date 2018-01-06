@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b87233f3d63c896ea70c7efef9a65b0ce6693251
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 04894f9ef6d1779b5e27c2552b5ea05d84649a2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 Récupère le numéro de colonne source basée sur celle où l’expression ou une instruction se termine.  
@@ -38,7 +39,7 @@ HRESULT get_columnNumberEnd (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La valeur de la colonne retournée par cette méthode est un octet dans la ligne à la position de décalage après le dernier caractère de l’instruction de la ligne.  
   
 ## <a name="see-also"></a>Voir aussi  

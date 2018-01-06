@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: e0f39c75620eab8e94ecd65b1ab1f41cc5e67875
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fffb73fac64aad880531fb8ea51904fb5ac71b16
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Choix d'une stratégie de déploiement ClickOnce
 Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], trois stratégies sont possibles. Celle que vous choisissez dépend principalement du type d'application que vous déployez. Les trois stratégies de déploiement sont les suivantes :  
@@ -77,5 +78,5 @@ Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndp
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Choix d’une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
- [Comment : publier une Application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)
