@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b4c0f46924c2c828158960a924faa031be0fd14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dfe0e4b39e96d98718ff98025add521a678699ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgundef-file"></a>Modification de l’interpréteur de commandes isolé à l’aide de le. Fichier de Pkgundef
 Vous pouvez modifier le fichier .pkgundef pour exclure les entrées de Registre spécifiée à partir d’une application de shell isolé. En règle générale, lors du premier que démarrage d’une application sur un ordinateur, le shell Visual Studio copie les entrées de Registre de Visual Studio existantes dans la clé de Registre racine pour l’application. Cela inclut toutes les références aux packages VS actuellement installées.  

@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4c676c28b955fac29db5a961f3b566600bcf318
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: vssdk
+ms.openlocfilehash: 7c15956bc861f9eb20267dc97446cf5ea49cae31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit de développement logiciel de Microsoft Help Viewer
 Cet article contient les tâches suivantes pour les intégrateurs de la visionneuse d’aide Visual Studio :  
@@ -93,7 +94,7 @@ Créer un nouveau document XHTML nommé ContosoTopic4.htm et inclure la balise d
   
 ```  
   
-Ensuite, ajoutez des données pour définir comment la rubrique doit être présenté (self marque ou non), de la référencer cette rubrique pour F1, dans lequel cette rubrique existe dans la table des matières, son ID (pour la référence de lien par d’autres rubriques), etc..  Consultez le tableau « Métadonnées de contenu » ci-dessous pour obtenir la liste complète des métadonnées prises en charge.  
+Ensuite, ajoutez des données pour définir comment la rubrique doit être présenté (self marque ou non), de la référencer cette rubrique pour F1, dans lequel cette rubrique existe dans la table des matières, son ID (pour la référence de lien par d’autres rubriques), etc.  Consultez le tableau « Métadonnées de contenu » ci-dessous pour obtenir la liste complète des métadonnées prises en charge.  
   
 -   Dans ce cas, nous allons utiliser notre propre package de personnalisation, une variante du package de marque de visionneuse d’aide Visual Studio.  
   
@@ -437,12 +438,12 @@ Remarque : les variables relevées par « {n} » ont des dépendances de code
   
 |||  
 |-|-|  
-|Fonctionnalité :|**CollapsibleArea**|  
+|Fonctionnalités :|**CollapsibleArea**|  
 |Utiliser :|Développez le texte du contrôle de contenu est réduite|  
 |**Élément**|**Valeur**|  
 |ExpandText|Expand|  
 |CollapseText|Réduire|  
-|Fonctionnalité :|**CodeSnippet**|  
+|Fonctionnalités :|**CodeSnippet**|  
 |Utiliser :|Texte de contrôle l’extrait de code.  Remarque : Contenu extrait de Code avec un espace « Sans rupture » est remplacé par espace.|  
 |**Élément**|**Valeur**|  
 |CopyToClipboard|Copier dans le Presse-papiers|  
@@ -450,7 +451,7 @@ Remarque : les variables relevées par « {n} » ont des dépendances de code
 |CombinedVBTabDisplayLanguage|Visual Basic (exemple)|  
 |VBDeclaration|Déclaration|  
 |VBUsage|Utilisation|  
-|Fonctionnalité :|**Logo des commentaires et un pied de page**|  
+|Fonctionnalités :|**Logo des commentaires et un pied de page**|  
 |Utiliser :|Fournir un contrôle de commentaires au client de fournir des commentaires sur la rubrique Active par courrier électronique.  Texte de copyright pour le contenu.  Définition de logo.|  
 |**Élément**|**Valeur (ces chaînes peuvent être modifiées pour répondre aux besoins de contenu utilisateur précoce.)**|  
 |Droits d’auteur|© 2013 Microsoft Corporation. Tous droits réservés.|  
@@ -459,7 +460,7 @@ Remarque : les variables relevées par « {n} » ont des dépendances de code
 |LogoTitle|[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]|  
 |LogoFileName|vs_logo_bk.gif|  
 |LogoFileNameHC|vs_logo_wh.gif|  
-|Fonctionnalité :|**Exclusion de responsabilité**|  
+|Fonctionnalités :|**Exclusion de responsabilité**|  
 |Utiliser :|Le contenu traduit un ensemble de cas exclusions spécifiques pour l’ordinateur.|  
 |**Élément**|**Valeur**|  
 |MT_Editable|Cet article a été traduit. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne », pour afficher cette page en mode modifiable avec le contenu original en anglais, en même temps.|  
@@ -468,14 +469,14 @@ Remarque : les variables relevées par « {n} » ont des dépendances de code
 |MT_QualityNonEditable|Cet article a été traduit manuellement. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne », pour afficher cette page en mode modifiable avec le contenu original en anglais, en même temps.|  
 |MT_BetaContents|Cet article a été traduit automatiquement pour une version préliminaire. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne », pour afficher cette page en mode modifiable avec le contenu original en anglais, en même temps.|  
 |MT_BetaRecycledContents|Cet article a été traduit manuellement pour la version préliminaire. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne », pour afficher cette page en mode modifiable avec le contenu original en anglais, en même temps.|  
-|Fonctionnalité :|**Élément LinkTable**|  
+|Fonctionnalités :|**Élément LinkTable**|  
 |Utiliser :|Prise en charge des liens vers des rubriques en ligne|  
 |**Élément**|**Valeur**|  
 |LinkTableTitle|Table de liens|  
 |TopicEnuLinkText|Afficher la version anglaise\</a > de cette rubrique est disponible sur votre ordinateur.|  
 |TopicOnlineLinkText|Afficher cette rubrique \<un href = « {0} » {{1} > en ligne\</a >|  
 |OnlineText|Online|  
-|Fonctionnalité :|**Contrôle Audio vidéo**|  
+|Fonctionnalités :|**Contrôle Audio vidéo**|  
 |Utiliser :|Afficher les éléments et du texte pour le contenu vidéo|  
 |**Élément**|**Valeur**|  
 |MultiMediaNotSupported|Internet Explorer 9 ou supérieure doit être installé pour prendre en charge le contenu de {0}.|  
@@ -483,25 +484,25 @@ Remarque : les variables relevées par « {n} » ont des dépendances de code
 |Audiotexte|flux de données audio|  
 |OnlineVideoLinkText|\<p > pour afficher la vidéo de cette rubrique, cliquez sur {0}\<un href = « \ {1\\} » > {2}here\</a >.\< /p >|  
 |OnlineAudioLinkText|\<p > pour écouter le fichier audio associé à cette rubrique, cliquez sur {0}\<un href = « \ {1\\} » > {2}here\</a >.\< /p >|  
-|Fonctionnalité :|**Contrôle de contenu de pas installé**|  
+|Fonctionnalités :|**Contrôle de contenu de pas installé**|  
 |Utiliser :|Éléments de texte (chaînes) utilisés pour le rendu de contentnotinstalled.htm|  
 |**Élément**|**Valeur**|  
 |ContentNotInstalledTitle|Aucun contenu n’a été trouvé sur votre ordinateur.|  
 |ContentNotInstalledDownloadContentText|\<p > pour télécharger le contenu sur votre ordinateur, \<un href = « {0} » {{1} > cliquez sur l’onglet gérer\</a >.\< /p >|  
 |ContentNotInstalledText|\<p > aucun contenu n’est installé sur votre ordinateur. Contactez votre administrateur pour l’installation du contenu d’aide locale. \</p >|  
-|Fonctionnalité :|**Contrôle de rubrique introuvable**|  
+|Fonctionnalités :|**Contrôle de rubrique introuvable**|  
 |Utiliser :|Éléments de texte (chaînes) utilisés pour le rendu de topicnotfound.htm|  
 |**Élément**|**Valeur**|  
 |TopicNotFoundTitle|Impossible de trouver la rubrique demandée sur votre ordinateur.|  
 |TopicNotFoundViewOnlineText|\<p > la rubrique que vous avez demandée est introuvable sur votre ordinateur, mais vous pouvez \<un href = « {0} » {{1} > Afficher la rubrique en ligne\</a >.\< /p >|  
 |TopicNotFoundDownloadContentText|\<p > consultez le volet de navigation pour obtenir des liens vers des rubriques similaires ou \<un href = « {0} » {{1} > cliquez sur l’onglet gérer\</a > pour télécharger le contenu sur votre ordinateur.\< /p >|  
 |TopicNotFoundText|\<p > la rubrique que vous avez demandée est introuvable sur votre ordinateur. \</p >|  
-|Fonctionnalité :|**Rubrique endommagé contrôle**|  
+|Fonctionnalités :|**Rubrique endommagé contrôle**|  
 |Utiliser :|Éléments de texte (chaînes) utilisés pour le rendu de topiccorrupted.htm|  
 |**Élément**|**Valeur**|  
 |TopicCorruptedTitle|Impossible d’afficher la rubrique demandée.|  
 |TopicCorruptedViewOnlineText|\<p > la visionneuse d’aide ne peut pas afficher la rubrique demandée. Il peut y avoir une erreur dans le contenu de la rubrique ou une dépendance de système sous-jacent. \</p >|  
-|Fonctionnalité :|**Contrôle de la Page d’accueil**|  
+|Fonctionnalités :|**Contrôle de la Page d’accueil**|  
 |Utiliser :|Texte prenant en charge l’affichage du contenu du nœud de niveau supérieur de la visionneuse d’aide.|  
 |**Élément**|**Valeur**|  
 |HomePageTitle|Accueil de visionneuse d’aide|  
@@ -691,7 +692,7 @@ Utilisation et extension les étapes ci-dessus activera vsp déployer leurs jeux
   
 Cette procédure pas à pas montre comment incorporer le contenu d’aide dans une application de Shell Visual Studio, puis le déployer.  
   
-**Requirements**  
+**Spécifications**  
   
 1.  [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]  
   

@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 836568ff9c8b18c944ed2fe9e1e407c2176b48c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6c7bfb38e31f2ac9a8bb72f93015bfafbe270c64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-sharepoint-solutions"></a>Développement de solutions SharePoint
   Pour créer des sites et des éléments de sites SharePoint, vous disposez de plusieurs modèles de type de projet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour obtenir la liste des types de projet disponibles, consultez [projets et modèles d’élément de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md). Les éléments et propriétés d'un projet SharePoint sont décrits ci-après.  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="project-item-properties"></a>Propriétés des éléments de projet  
   
-|Nom de propriété|Description|  
+|Nom de la propriété|Description|  
 |-------------------|-----------------|  
 |Résolution de conflit de déploiement|Spécifie l'action à entreprendre lors du déploiement d'un élément de projet dont les propriétés sont identiques à celles d'un élément déjà présent sur le serveur. Pour plus d’informations, consultez [résolution des problèmes de conditionnement de SharePoint et de déploiement](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).|  
 |Propriétés de la fonctionnalité|Spécifie un ensemble de valeurs (stockées sous forme de paires clé/valeur) inclus avec une fonctionnalité au moment de son déploiement sur SharePoint. Une fois la fonctionnalité déployée, vous pouvez accéder aux valeurs de propriété dans votre code. Pour plus d’informations, consultez [fournissant l’empaquetage et du déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
@@ -96,7 +97,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="project-item-file-properties"></a>Propriétés des fichiers d'éléments de projet  
   
-|Nom de propriété|Description|  
+|Nom de la propriété|Description|  
 |-------------------|-----------------|  
 |Action de génération|Indique le lien entre le fichier et les processus de génération et de déploiement. Pour plus d’informations, consultez [Propriétés du fichier](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
 |Copier dans le répertoire de sortie|Indique si le ou les fichiers source seront copiés vers le répertoire de sortie. Peut avoir l'une des valeurs suivantes :<br /><br /> -   *Ne pas copier*<br />-   *Toujours copier*<br />-   *Copier si plus récent*<br /><br /> Pour plus d’informations, consultez [Propriétés du fichier](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
@@ -106,7 +107,7 @@ ms.lasthandoff: 10/31/2017
 |Chemin d'accès du déploiement|Le chemin d’accès relatif du fichier sur le serveur de fichiers SharePoint, tel que Workflow1\\. Le chemin d'accès qualifié complet du fichier est obtenu par concaténation de la valeur *Deployment Path* à la fin de la valeur *Deployment Root* .<br /><br /> Sélection d’une valeur de *RootFile* pour le *Type de déploiement* modifications apportées aux propriétés la *racine du déploiement* prend la valeur {SharePointRoot}\\, se traduisant par un chemin complet de {SharePointRoot} \Workflow1\\. Pour plus d’informations, consultez [empaquetage et déploiement de Solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Deployment Root|Chaîne. Dossier racine dans lequel le fichier est déployé sur le serveur SharePoint. Par exemple, {SharePointRoot} \Template\Features\\{NomFonctionnalité}\\.<br /><br /> La valeur de la propriété *Deployment Root* est déterminée par le paramètre *Deployment Type* .|  
 |Deployment Type|Type de déploiement du fichier, lequel détermine sa valeur *Deployment Root* . Peut avoir l'une des valeurs suivantes :<br /><br /> NoDeployment : \<aucune valeur ><br /><br /> ElementManifest : {SharePointRoot} \Template\Features\\{NomFonctionnalité}\\<br /><br /> ElementFile : {SharePointRoot} \Template\Features\\{NomFonctionnalité}\\<br /><br /> TemplateFile : {SharePointRoot} \Template\\<br /><br /> RootFile : {SharePointRoot}\\<br /><br /> GlobalResource : {SharePointRoot} \Resources\\<br /><br /> ClassResources : {ClassResourcePath}\\<br /><br /> Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
-|Nom de fichier|Nom du fichier ou du dossier pour le fichier d'élément.|  
+|Nom du fichier|Nom du fichier ou du dossier pour le fichier d'élément.|  
 |Chemin d'accès complet|Emplacement du fichier pour l'élément. (En lecture seule.)|  
   
 ## <a name="related-topics"></a>Rubriques connexes  

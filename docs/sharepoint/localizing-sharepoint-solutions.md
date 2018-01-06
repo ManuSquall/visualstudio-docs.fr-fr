@@ -24,11 +24,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8186110b04e3ff56b3c6b0cad03890f3233c03d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2339ee60e66bca7578c2d5d1e89c7bb649b15b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-sharepoint-solutions"></a>Localisation de solutions SharePoint
   Le processus de préparation de vos applications afin qu’ils peuvent être utilisés dans le monde entier est appelé à la localisation. Localisation est traduction de ressources pour une culture spécifique. Pour plus d’informations, consultez [globalisation et localisation d’Applications](/visualstudio/ide/globalizing-and-localizing-applications). Cette rubrique fournit une vue d’ensemble de la localisation d’une solution SharePoint.  

@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 850e4b2ef6d455bb141827fa125c4c7c6860b652
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9727b6fcbe3c552273ca521e8fd14ab5e5181eb7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisense-hosting"></a>Hébergement d’IntelliSense
 Visual Studio permet à IntelliSense d’hébergement. IntellSense hébergement vous permet de vous fournissez IntelliSense pour le code qui n’est pas hébergé par l’éditeur de texte Visual Studio.  

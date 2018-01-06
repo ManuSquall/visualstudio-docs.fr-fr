@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e22ff13f9aaffffb22f8b572968376e03796ac9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 56cef17add36ae1310b94421bfcf8a31951e00be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>Élément PreviewImage (modèles Visual Studio)
 Spécifie l’image d’aperçu, sous la forme d’un nom de fichier pour l’image d’aperçu qui s’affiche, que ce soit le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
@@ -38,7 +39,7 @@ Spécifie l’image d’aperçu, sous la forme d’un nom de fichier pour l’im
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -54,7 +55,7 @@ Spécifie l’image d’aperçu, sous la forme d’un nom de fichier pour l’im
   
  Le texte doit être une chaîne qui représente un nom de fichier.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `PreviewImage` est un élément facultatif.  
   
 ## <a name="see-also"></a>Voir aussi  

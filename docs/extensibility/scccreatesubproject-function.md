@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ce9c4ec33a76afbba1b334fdc5bac5aee17e334
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 97993833d08479fbf518fb5b4852f46cc34f9bc3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject (fonction)
 Cette fonction crée un sous-projet portant le nom indiqué sous un projet parent existant spécifié par le `lpParentProjPath` argument.  
@@ -62,7 +63,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|Sous-projet a été créé avec succès.|  
 |SCC_E_INITIALIZEFAILED|Projet parent n’a pas pu être initialisé.|  
@@ -76,7 +77,7 @@ SCCRTN SccCreateSubProject(
 |SCC_E_CONNECTIONFAILURE|Il y a un problème de connexion du plug-in de contrôle de code source.|  
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Erreur non spécifique.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si un sous-projet portant le nom existe déjà, la fonction peut modifier le nom par défaut pour créer un unique, par exemple en ajoutant « _\<numéro > » à ce dernier. L’appelant doit être prêt à accepter les modifications de `lpUser`, `lpSubProjPath`, et `lpAuxProjPath`. Le `lpSubProjPath` et`lpAuxProjPath` arguments sont ensuite utilisées dans un appel à la [SccOpenProject](../extensibility/sccopenproject-function.md). Ils ne doivent pas être modifiés par l’appelant lors du retour. Ces chaînes constituent un moyen pour le plug-in pour le suivi des informations dont il a besoin à associer à un projet de contrôle de code source. L’appelant IDE n’affiche pas ces deux paramètres au moment du retour, car le plug-in peut utiliser une chaîne de mise en forme qui peut ne pas convenir pour l’affichage. La fonction retourne un code de réussite ou l’échec et, en cas de réussite, remplit la variable `lpSubProjPath` avec le chemin d’accès de projet complet pour le nouveau projet.  
   
  Cette fonction est similaire à la [SccGetProjPath](../extensibility/sccgetprojpath-function.md), sauf qu’il crée en mode silencieux un projet au lieu d’inviter l’utilisateur à sélectionner un. Lorsque le `SccCreateSubProject` fonction est appelée, `lpParentProjName` et `lpAuxProjPath` ne sera pas vide et correspond à un projet valide. Ces chaînes sont généralement reçus par l’IDE à partir d’un appel précédent à la `SccGetProjPath` fonction ou le [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).  

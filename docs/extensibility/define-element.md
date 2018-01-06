@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b435c4e44391bbf477ed94fa96ee382613290530
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 35d33f0c440bce6d83c8a4712f0059d7f51a0ff0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="define-element"></a>Définir l’élément
 Définit une paire nom / valeur de symbole. Ce symbole peut être évalué par des attributs conditionnels. Pour plus d’informations, consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md). Voir aussi la [symboles élément](../extensibility/symbols-element.md).  
@@ -38,7 +39,7 @@ Définit une paire nom / valeur de symbole. Ce symbole peut être évalué par d
 |Attribut|Description|  
 |---------------|-----------------|  
 |name|Obligatoire. Le nom du symbole :<br /><br /> nom = « Mode »|  
-|valeur|Obligatoire. La valeur du symbole :<br /><br /> valeur = « Standard »|  
+|par défaut|Obligatoire. La valeur du symbole :<br /><br /> valeur = « Standard »|  
 |Condition|Facultatif. Pour plus d’informations, consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  

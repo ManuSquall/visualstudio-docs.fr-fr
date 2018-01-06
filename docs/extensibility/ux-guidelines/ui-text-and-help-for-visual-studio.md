@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0019a0687370ac328fe78f57f1d26e661eb214a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 555fd622f5655a69ba77f3905a39635e01831c76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texte d’interface utilisateur et l’aide de Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a>La terminologie et le texte d’interface utilisateur  

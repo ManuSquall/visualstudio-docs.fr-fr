@@ -12,17 +12,18 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b33516bd013f744813b2fdb357f224bcb0d9822
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6870f1733d507f2cf46d196b2bba027b998b5ba4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyseurs de Roslyn et de la bibliothèque de Code prenant en charge pour ImmutableArrays
 
 Le [plateforme des compilateurs .NET](https://github.com/dotnet/roslyn) (« Roslyn ») vous permet de générer des bibliothèques de code prenant en charge.  Une bibliothèque de code prenant en charge fournit les fonctionnalités que vous pouvez utiliser et les outils (analyseurs Roslyn) pour vous aider à utiliser la bibliothèque de façon optimale, ou pour éviter les erreurs.  Cette rubrique vous montre comment créer un analyseur de Roslyn réel pour intercepter les erreurs courantes lors de l’utilisation du [System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable) package NuGet.  L’exemple montre également comment fournir un correctif pour un problème de code identifié par l’analyseur.  Les utilisateurs voient les corrections du code dans l’ampoule Visual Studio UI et peuvent appliquer un correctif pour le code automatiquement.
 
-## <a name="getting-started"></a>Commencer
+## <a name="getting-started"></a>Prise en main
 
 Vous devez les éléments suivants pour générer cet exemple :
 
@@ -160,7 +161,7 @@ var immutableArrayOfTType =
 
 Vous désignez des types génériques dans les métadonnées avec backquotes (') et le nombre de paramètres génériques.  C’est pourquoi vous ne voyez pas «... » ImmutableArray\<T > » dans le nom des métadonnées.
 
-Le modèle sémantique a beaucoup de choses utiles qui vous permettent de poser des questions sur les symboles, flux de données, durée de vie des variable, etc..  Roslyn sépare les nœuds de la syntaxe du modèle sémantique pour diverses raisons engineering (performances, la modélisation de code erronée, etc.).  Vous souhaitez que le modèle de compilation pour rechercher des informations contenues dans les références pour la comparaison précis.
+Le modèle sémantique a beaucoup de choses utiles qui vous permettent de poser des questions sur les symboles, flux de données, durée de vie des variable, etc.  Roslyn sépare les nœuds de la syntaxe du modèle sémantique pour diverses raisons engineering (performances, la modélisation de code erronée, etc.).  Vous souhaitez que le modèle de compilation pour rechercher des informations contenues dans les références pour la comparaison précis.
 
 Vous pouvez faire glisser le pointeur d’exécution jaune sur le côté gauche de la fenêtre d’éditeur.  Faites-le glisser jusqu'à la ligne qui définit la `objectCreation` variable et pas à pas principal de votre nouvelle ligne de code à l’aide **F10**.  Si vous placez le pointeur de la souris au-dessus de la variable `immutableArrayOfType`, vous voyez que nous avons trouvé le type exact dans le modèle sémantique.
 

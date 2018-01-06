@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebd59cfada6064d40fe48df3cba4eaac3c3293b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c23e1fd5614963d8f52edc019e99287187fd9a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption (fonction)
 Cette fonction récupère les diverses options spécifiques à l’utilisateur.  
@@ -46,13 +47,13 @@ SCCRTN SccGetUserOption(
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|Option a été récupérée avec succès.|  
 |SCC_E_OPNOTSUPPORTED|Option n’est pas prise en charge.|  
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée s'est produite.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les options suivantes sont prises en charge par cette commande :  
   
 |Option de l’utilisateur|Description|  

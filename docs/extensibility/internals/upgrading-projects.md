@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed049293c50fc59c7f6541a3b4a4cc58c6bd5a7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 060823a04127480ef8de387200425a34c6ef1178
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrading-projects"></a>La mise à niveau des projets
 Modifie le modèle de projet d’une version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à l’autre peut nécessiter que les projets et solutions être mis à niveau afin qu’ils puissent exécuter sur une version plus récente. Le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fournit des interfaces qui peuvent être utilisés pour implémenter la mise à niveau de prise en charge dans vos propres projets.  
@@ -112,7 +113,7 @@ Si vous modifiez les informations persistantes dans le fichier projet entre des 
   
     -   Si le `VSQueryEditResult` valeur est <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult> et `VSQueryEditResultFlags` valeur a la <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> bit défini, puis le fichier projet doit être extrait en appelant <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>,...).  
   
-4.  Si le <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> provoque l’appel sur le fichier projet le fichier à récupérer et la dernière version à récupérer, puis le projet est déchargé et rechargé. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> méthode est appelée à nouveau une fois qu’une autre instance du projet est créée. À ce deuxième appel, le fichier projet peut être écrit sur le disque. Il est recommandé que le projet enregistre une copie du fichier projet dans le format antérieur avec l’extension de fichier .OLD, qu’il apporte les modifications nécessaires pour la mise à niveau, puis qu’il enregistre le fichier projet dans le nouveau format. Là encore, si une partie de la mise à niveau échoue, la méthode doit indiquer une erreur en retournant <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>. Le projet est alors déchargé dans l’Explorateur de solutions.  
+4.  Si le <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> provoque l’appel sur le fichier projet le fichier à récupérer et la dernière version à récupérer, puis le projet est déchargé et rechargé. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> méthode est appelée à nouveau une fois qu’une autre instance du projet est créée. À ce deuxième appel, le fichier projet peut être écrit sur le disque. Il est recommandé que le projet enregistre une copie du fichier projet dans le format antérieur avec l’extension de fichier .OLD, qu’il apporte les modifications nécessaires pour la mise à niveau, puis qu’il enregistre le fichier projet dans le nouveau format. Là encore, si une partie de la mise à niveau échoue, la méthode doit indiquer une erreur en retournant <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>. Le projet est alors déchargé dans l’Explorateur de solutions.  
   
      Il est important de comprendre le processus complet qui se produit dans l’environnement pour le cas dans lequel l’appel à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (méthode) (en spécifiant une valeur de ReportOnly) retourne le <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult> et <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> indicateurs.  
   

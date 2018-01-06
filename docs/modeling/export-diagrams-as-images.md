@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: b4eb0abb91ee8cfb5e3406c6211ef5934b4db0ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 253f6292331bd3a67a5f57ab6a0936928dedcf77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="export-diagrams-as-images"></a>Exporter des diagrammes en tant qu'images
 Dans Visual Studio, vous pouvez enregistrer des diagrammes dans des formats en lecture seule de modélisation afin que vous pouvez les partager avec les parties prenantes, les utilisateurs ou les membres d’équipe de projet qui n’utilisent pas la même version de Visual Studio.  

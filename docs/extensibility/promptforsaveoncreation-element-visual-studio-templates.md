@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ce7e73801b34542bcf1c6be35d950b1fabdc7c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 007cf0508d2feedcf5f23898555f57b0fe0c908d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation, élément (modèles Visual Studio)
 Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement par le biais d’enregistrement du **nouveau projet** boîte de dialogue lors de la création d’un projet. Si cet élément est défini sur `true`, puis l’utilisateur est invité à enregistrer emplacement ; si `false`, puis ils ne sont pas invités. (Autrement dit, un projet temporaire est créé.)  
@@ -37,7 +38,7 @@ Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement 
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -53,7 +54,7 @@ Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement 
   
  Le texte doit être `true` ou `false`, `true` indiquant que l’utilisateur sera invité pour un enregistrement emplacement lors de la création d’un nouveau projet.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `PromptForSaveOnCreation` est un élément facultatif. La valeur par défaut est `false`.  
   
  Projets temporaires sont des projets que vous pouvez créer et modifier sans enregistrer le contenu de ce projet sur le disque. Pour plus d’informations, consultez [NIB des projets temporaires](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  

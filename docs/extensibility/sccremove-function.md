@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 28901d9635a4a823507834cde201860fda1e2168
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f4d7d76e80fa165206a3faa53835b74c2716d94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccremove-function"></a>SccRemove (fonction)
 Cette fonction supprime les fichiers du système de contrôle de code source.  
@@ -62,7 +63,7 @@ SCCRTN SccRemove(
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|La suppression a réussi.|  
 |SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|  
@@ -73,7 +74,7 @@ SCCRTN SccRemove(
 |SCC_E_NONSPECIFICERROR|Erreur non spécifique ; fichier n’a pas été supprimé.|  
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette fonction supprime les fichiers du système de contrôle de code source, mais ne les supprime pas de disque dur local de l’utilisateur.  
   
 ## <a name="see-also"></a>Voir aussi  

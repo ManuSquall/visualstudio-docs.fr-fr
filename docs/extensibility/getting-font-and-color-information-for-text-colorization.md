@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3b31ad2ec080070dec3c68b304f400d204d47a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 97b97b6a79ac93dd614cf6557d338d5f0398192e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Mise en route de la police et les informations de couleur de colorisation de texte
 Le processus qui effectue le rendu ou affiche du texte impriment dans les éléments d’interface utilisateur utilisateur varie selon le type de projet, sa technologie et developer de préférences. Le **polices et couleurs** page de propriétés stocke les paramètres.  

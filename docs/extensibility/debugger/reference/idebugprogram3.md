@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2da4dcb4911488bd82c358efc3b8075f1941af6f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cb827c875731134b9d8f9ea2833f3629ca0d3c36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 Cette interface représente un programme qui s’exécute dans un processus et qui étend [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) en fournissant des informations sur le thread.  
@@ -41,14 +42,14 @@ IDebugProgram3 : IDebugProgram3
 |------------|-----------------|  
 |[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Exécute le programme. Le thread est retourné afin de donner les informations du débogueur threads sur lesquels l’utilisateur consulte lors de l’exécution.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Un programme est un conteneur de thread à exécuter dans une architecture d’exécution particulière, alors qu’un processus est constitué d’un ou plusieurs programmes.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b40343b3269a83854259cae80418a2c5154a78fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: aa824571b682d2c5654a4909becb0374bf987df1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden, élément (modèles Visual Studio)
 Spécifie si le modèle s’affiche, que ce soit le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
@@ -37,7 +38,7 @@ Spécifie si le modèle s’affiche, que ce soit le **nouveau projet** ou **ajou
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -53,7 +54,7 @@ Spécifie si le modèle s’affiche, que ce soit le **nouveau projet** ou **ajou
   
  Le texte doit être `true` ou `false`, qui indique si le modèle s’affiche dans le **nouveau projet** ou **ajouter un nouvel élément** boîtes de dialogue.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `Hidden` est un élément facultatif.  
   
  Si ne spécifié, aucun autre élément enfant de le `TemplateData` élément sont requis.  

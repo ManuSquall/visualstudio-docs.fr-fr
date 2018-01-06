@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32e9c8ffa2a9ca2bba889436f37cc4f5c3d188bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 47316f6bd47d5d528dc6e36dfe3a4bcb67e00909
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createpkgdef-utility"></a>Utilitaire de CreatePkgDef
 Accepte un fichier .dll pour une extension de Visual Studio en tant que paramètre et crée un fichier .pkgdef pour accompagner le fichier .dll. Le fichier .pkgdef contient toutes les informations qui sont sinon écrite dans le Registre système lors de l’extension est installée.  
@@ -48,7 +49,7 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
  `AssemblyPath`  
  Le chemin d’accès du fichier .dll à partir de laquelle vous souhaitez générer le .pkgdef.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Déploiement d’une extension à l’aide de fichiers de .pkgdef remplace la configuration requise du Registre des versions antérieures de Visual Studio.  
   
  Les fichiers .pkgdef doivent être installés dans un des emplacements suivants : %localappdata%\Microsoft\Visual Studio\14.0\Extensions\ ou %vsinstalldir%\Common7\IDE\Extensions\\. Si le dossier d’installation est %localappdata%\Microsoft\Visual Studio\14.0\Extensions\\, l’extension est reconnue par Visual Studio, mais il sera désactivée par défaut. L’utilisateur peut activer l’extension à l’aide de **Extensions et mises à jour**. Si le dossier d’installation est %vsinstalldir%\Common7\IDE\Extensions\\, l’extension est activée par défaut.  

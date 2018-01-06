@@ -9,15 +9,16 @@ dev_langs: visual-basic
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.openlocfilehash: e1d86e5a4f363a39283d32778144a1c0a7c50f23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 8478f4f7cd3bc342f19b84a085b1889405ca6676
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="great-migrations-studio-gmstudio"></a>Excellent Migrations Studio (gmStudio)
 
-gmStudio est un système unique refonte environnement de développement évolutif, personnalisé VB6/ASP/COM pour les solutions de mise à niveau de .NET. Comme un logiciel complet refonte de plateforme, gmStudio vous aide à planifier, personnaliser, améliorer, vérifier et suivre votre processus de mise à niveau et répondre aux besoins uniques de votre code source et les normes de .NET.  Si vous cherchez à conserver et améliorer la valeur de vos ressources VB6/ASP/COM, gmStudio est la solution la plus économique et plus avancée disponible. 
+gmStudio est un environnement de réingénierie à système unique pour le développement de solutions de mise à niveau de VB6/ASP/COM vers .NET évolutives et personnalisées. En tant que plateforme complète de réingénierie logicielle, gmStudio vous aide à planifier, personnaliser, améliorer, vérifier et suivre votre processus de mise à niveau ainsi qu’à remplir les exigences uniques de votre code source et de vos normes .NET.  Si vous cherchez à conserver et améliorer la valeur de vos ressources VB6/ASP/COM, gmStudio est la solution la plus économique et plus avancée disponible. 
 
 ## <a name="the-tool-assisted-rewrite"></a>La réécriture de l’outil d’assistance
 

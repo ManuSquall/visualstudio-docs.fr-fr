@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b820c7290326c29ca7453e175b588af6832f6009
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 833125b28b661abba3043b97c76b086c28eb1acf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
 Utilisé pour décrire un ordinateur.  
@@ -42,10 +43,10 @@ public enum enum_MACHINE_INFO_FLAGS {
  MCIFLAG_TERMINAL_SERVICES_AVAILABLE  
  Indique que les services Terminal Server sont disponibles.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Utilisé en tant que le `Flags` membre de la [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) structure.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

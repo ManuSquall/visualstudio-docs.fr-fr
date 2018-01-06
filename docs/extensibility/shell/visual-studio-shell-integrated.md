@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74fa1e1d23725af1041d9c635a768b7667b3b888
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f2159e0be2f54929e28a45215588515a522b542e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (intégré)
 Le shell intégré de Visual Studio inclut l’environnement de développement intégré (IDE), le débogueur et l’intégration du contrôle de code source. Aucun langage de programmation n’est incluse. Toutefois, l’environnement intégré fournit une infrastructure qui vous permet d’ajouter des langages de programmation.  
@@ -48,7 +49,7 @@ Le shell intégré de Visual Studio inclut l’environnement de développement i
 |Contrôle de Code source (SCC)|-Intégration du contrôle de code source de base. Voir la remarque 3.<br />-Les outils et les options de vérification|  
 |Extensibilité|-Consommer des composants VSPackages et MEF|  
   
-## <a name="notes"></a>Remarques  
+## <a name="notes"></a>Notes  
   
 #### <a name="1-data-tools"></a>1. Outils de données  
  L’environnement intégré inclut des outils de développement de base de données tels que les données d’extensibilité prise en charge et simplifié **l’Explorateur de solutions**. Toutefois, SQL Server Express, SQL Reporting et Crystal Reports ne sont pas inclus dans l’environnement intégré.  

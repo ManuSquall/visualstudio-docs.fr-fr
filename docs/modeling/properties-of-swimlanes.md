@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1b8eacf8fdd74fc9fe0703dc50beb46a2442e939
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f43af2ef4a3a13952fb04c594db336afcb97afbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-swimlanes"></a>Propriétés des couloirs
 Vous pouvez ajouter des couloirs pour un diagramme. Couloirs divisent un diagramme en zones verticales ou horizontales. Vous pouvez définir d’autres formes à afficher à l’intérieur des couloirs. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur la façon d’utiliser ces propriétés, consultez [personnalisation et l’extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -37,11 +38,11 @@ Vous pouvez ajouter des couloirs pour un diagramme. Couloirs divisent un diagram
 |Génère deux dérivées|Si `True`, une classe de base et une classe partielle (pour la personnalisation par des remplacements) seront générés. Pour plus d’informations, consultez [substituer et étendre les Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |A constructeur personnalisé|Si `True`, un constructeur personnalisé sera fourni dans le code source. Pour plus d’informations, consultez [substituer et étendre les Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du couloir (`none`, `abstract` ou `sealed`).|aucun|  
-|Base couloir|La classe de base de ce couloir.|(aucun)|  
-|Nom|Le nom de ce couloir.|Nom actuel|  
+|Base couloir|La classe de base de ce couloir.|(aucune)|  
+|Name|Le nom de ce couloir.|Nom actuel|  
 |Espace de noms|L’espace de noms n’est affilié à ce couloir.|Espace de noms actuel|  
 |Type de l’info-bulle|Comment l’info-bulle est défini (`fixed`, `variable`, ou `none`). Si `fixed`, alors la valeur de la `Fixed Tooltip Text` propriété est utilisée ; si `variable`, puis l’info-bulle est défini dans le code personnalisé.|\<Aucun >|  
-|Remarques|Notes informelles qui sont associés à ce couloir.|\<Aucun >|  
+|Notes|Notes informelles qui sont associés à ce couloir.|\<Aucun >|  
 |Alignement|Alignement horizontal ou vertical.|Vertical|  
 |Hauteur initiale|La hauteur initiale de ce couloir, exprimée en pouces. Applicable uniquement aux couloirs horizontaux.|0|  
 |Largeur initiale|La largeur initiale de ce couloir, exprimée en pouces. Applicable uniquement aux couloirs verticale.|0|  

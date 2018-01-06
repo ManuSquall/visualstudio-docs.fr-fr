@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea335ef6bcb2a27b4312c613062be0d365711cbc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c1f6f990bb33ddbc1d7591fa3ab9837f472f8418
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff (fonction)
 Cette fonction affiche les différences entre le répertoire local actuel sur le disque du client et le projet correspondant sous contrôle de code source.  
@@ -54,7 +55,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|Le répertoire sur le disque est le même que le projet de contrôle de code source.|  
 |SCC_I_FILESDIFFER|Le répertoire sur le disque est différent du projet dans le contrôle de code source.|  
@@ -65,7 +66,7 @@ SCCRTN SccDirDiff(
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Erreur non spécifique.|  
 |SCC_E_FILENOTEXIST|Répertoire local est introuvable.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette fonction est utilisée pour demander le contrôle de source de plug-in pour afficher la liste des modifications apportées à un répertoire spécifié à l’utilisateur. Le plug-in s’ouvre sa propre fenêtre, dans un format de son choix, pour afficher les différences entre le répertoire de l’utilisateur sur le disque et le projet correspondant sous contrôle de version.  
   
  Si une comparaison prend en charge de plug-in de répertoires du tout, il doit prendre en charge la comparaison des répertoires selon le nom de fichier même si les options « rapide-diff » ne sont pas pris en charge.  

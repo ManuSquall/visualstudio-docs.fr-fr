@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 16f9e718eaebbb1ab82ea96c08661622ef7e1cd1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fea9b99fc597a75e93392b14fe40a1be87072602
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 Termine le programme.  
@@ -38,7 +39,7 @@ int Terminate();
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si possible, le programme sera arrêté et déchargé du processus ; dans le cas contraire, le moteur de débogage (DE) effectue tout nettoyage nécessaire.  
   
  Cette méthode ou la [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) méthode est appelée par l’IDE, généralement en réponse à l’utilisateur d’arrêter le débogage de tous les. L’implémentation de cette méthode doit terminer dans l’idéal, le programme au sein du processus. Si ce n’est pas possible, le DE doit empêcher le programme en cours d’exécution d’autres dans ce processus (et effectuer tout nettoyage nécessaire). Si le `IDebugProcess2::Terminate` méthode a été appelée par l’IDE, la totalité du processus va se terminer après le `IDebugProgram2::Terminate` méthode est appelée.  

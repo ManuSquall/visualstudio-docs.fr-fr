@@ -26,11 +26,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: babb8456593ba953982390f048960449069ca6fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8ecc80a3c26b97b9754f998bd0903471d00cd1d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data"></a>Procédure pas à pas : création d'une liste externe dans SharePoint à l'aide de données métiers
   Le service de connectivité de données métiers (BDC) permet à SharePoint afficher les données d’entreprise à partir d’applications de serveur principal, les services Web et les bases de données.  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Test du projet.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   Éditions prises en charge de Windows et SharePoint. Pour plus d’informations, consultez [configuration requise pour le développement de Solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
@@ -199,11 +200,11 @@ ms.lasthandoff: 10/31/2017
   
 10. Répétez l’étape 6 pour créer un descripteur de type pour chacun des champs suivants.  
   
-    |Nom|Nom de type|  
+    |Name|Nom de type|  
     |----------|---------------|  
     |FirstName|System.String|  
     |LastName|System.String|  
-    |Phone|System.String|  
+    |Téléphone|System.String|  
     |emailAddress|System.String|  
     |EmailPromotion|System.Int32|  
     |NameStyle|System.Boolean|  
@@ -214,7 +215,7 @@ ms.lasthandoff: 10/31/2017
   
      Le fichier de code de service Contact s’ouvre dans l’éditeur de Code.  
   
-12. Dans le `ContactService` de classe, remplacez le `ReadItem` méthode avec le code suivant. Ce code exécute les tâches suivantes :  
+12. Dans le `ContactService` de classe, remplacez le `ReadItem` méthode avec le code suivant. Ce code exécute les tâches suivantes :  
   
     -   Récupère un enregistrement à partir de la table Contact de la base de données AdventureWorks.  
   
@@ -243,7 +244,7 @@ ms.lasthandoff: 10/31/2017
   
      Le fichier de code pour le service Contact s'ouvre dans l'éditeur de code.  
   
-5.  Dans le `ContactService` de classe, remplacez le `ReadList` méthode avec le code suivant. Ce code exécute les tâches suivantes :  
+5.  Dans le `ContactService` de classe, remplacez le `ReadList` méthode avec le code suivant. Ce code exécute les tâches suivantes :  
   
     -   Récupère les données à partir de la table Contacts de la base de données AdventureWorks.  
   
@@ -263,7 +264,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-the-project"></a>Pour tester le projet  
   
-1.  Choisissez le **F5** clé.  
+1.  Choisissez la touche **F5**.  
   
      Le site SharePoint s’ouvre.  
   

@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e2cd6f661afb876d06c30bdccb6786eac4e99e26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d9034be93256250c5502d5f8da9c79a4308a47ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-guids"></a>GUID de l’IDE
 La <xref:Microsoft.VisualStudio.VSConstants> classe publie GUID de certaines parties de l’environnement de développement intégré (IDE), comme indiqué dans le tableau ci-dessous.  

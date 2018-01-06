@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 00dd81c93e089a840c99efbd6165f005aff88b57
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9b2fb918d7545655b70a20629ff71427e66030b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon, élément (modèles Visual Studio)
 Spécifie le chemin d’accès et le nom de fichier du fichier image qui sert d’icône qui s’affiche, que ce soit le **nouveau projet** ou le **ajouter un nouvel élément** boîte de dialogue, pour le modèle.  
@@ -63,7 +64,7 @@ Spécifie le chemin d’accès et le nom de fichier du fichier image qui sert d�
   
  Le texte fournit le chemin d’accès et le nom de l’icône de modèle qui apparaîtra dans le **nouveau projet** boîte de dialogue.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `Icon` est un élément enfant obligatoire de `TemplateData`.  
   
 ## <a name="example"></a>Exemple  

@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e590d6fff715aae33ee757460f2b0ba3df31e6e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f7b7440ff2f42eba1d138872071d4e51d2402c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Prise en main de Service de langage et les Extensions de l’éditeur
 Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnalités de service de langage telles que le mode plan, la correspondance des accolades, IntelliSense et les ampoules pour votre propre langage de programmation ou à n’importe quel type de contenu. Vous pouvez également personnaliser l’apparence et le comportement de l’éditeur Visual Studio, par exemple texte coloration, les marges, les ornements et les autres éléments visuels. Vous pouvez également définir votre propre type de contenu et spécifier l’apparence et le comportement des vues de texte dans laquelle votre contenu s’affiche.  
@@ -75,7 +76,7 @@ Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnal
 ## <a name="managing-extensions"></a>La gestion des extensions  
  Extensions pour Visual Studio sont répertoriées dans **Extensions et mises à jour** (sur le **outils** menu). Si vous testez une extension dans l’instance expérimentale, il est répertorié dans **Extensions et mises à jour** dans l’instance expérimentale, mais n’est ne pas répertorié dans l’instance de développement.  
   
- Pour plus d’informations, consultez [recherche et utilisation des Extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
+ Pour plus d’informations, consultez [Recherche et utilisation des extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
   
 ## <a name="using-templates-to-create-editor-extensions"></a>Utilisation de modèles pour créer des Extensions de l’éditeur  
  Vous pouvez utiliser des modèles de l’éditeur pour créer des extensions MEF personnaliser classifieurs, motifs et les marges. Il existe des modèles de projets c# et Visual Basic. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  

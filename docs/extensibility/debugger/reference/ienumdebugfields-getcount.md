@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dbbafda528d88f84f9796037faa6587e8789fcc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4da98967ac8841b0bf91d30aa3a1dae6c2668d30
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
 Cette méthode retourne le nombre d’éléments dans l’énumération.  
@@ -44,7 +45,7 @@ int GetCount(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode n’est pas partie de l’interface d’énumération COM habituel qui spécifie que le suivant, Clone, Skip et réinitialiser uniquement besoin d’être implémentée.  
   
 ## <a name="see-also"></a>Voir aussi  

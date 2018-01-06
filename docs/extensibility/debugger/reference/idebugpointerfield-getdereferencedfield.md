@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35081931fcb87c73ca6643002a09b43c3ab674b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f881a7ad6f11b4c916dad8af184d84a434f3e510
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 Cette méthode retourne le type d’objet vers lequel pointe cet objet de pointeur.  
@@ -44,7 +45,7 @@ int GetDereferencedField(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Par exemple, si le [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) objet pointe vers un entier, le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) type retourné par cette méthode décrit ce type d’entier.  
   
 ## <a name="see-also"></a>Voir aussi  

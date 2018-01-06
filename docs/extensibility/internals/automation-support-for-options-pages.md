@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ca9031e623ec7009d4f489931871f093f4c05d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ffc56e4b36814a8bed7a0f93d66cc87c0b6fc466
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automation-support-for-options-pages"></a>Prise en charge d’Automation pour les Pages d’Options
 VSPackages peuvent fournir personnalisée **Options** boîtes de dialogue pour le **outils** menu (pages Outils Options) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et vous pouvez les rendre disponibles pour le modèle automation.  

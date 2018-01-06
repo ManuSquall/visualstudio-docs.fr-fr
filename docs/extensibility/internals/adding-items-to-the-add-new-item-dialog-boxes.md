@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a16698863e92e5bbae4e888502788dd76b04f56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Ajout d’éléments à l’ajouter un nouvel élément boîtes de dialogue
 Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boîte de dialogue commence par les clés de Registre. Comme indiqué dans les entrées de Registre suivantes, la section AddItemTemplates contient le chemin d’accès et le nom du répertoire dans lequel les éléments mis à disposition dans le **ajouter un nouvel élément** boîte de dialogue sont placés.  
@@ -37,7 +38,7 @@ Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boî
   
  « SortPriority » = dword:00000064  
   
-|Nom|Type|Données (fichier .rgs)|Description|  
+|Name|Type|Données (fichier .rgs)|Description|  
 |----------|----------|-----------------------------|-----------------|  
 |@ (Par défaut)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|ID de ressource pour **ajouter un élément** modèles.|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\ SomeProjectItems|Chemin d’accès des éléments de projet affichés dans la boîte de dialogue pour le **ajouter un nouvel élément** Assistant.|  

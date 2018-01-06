@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dbc17c9998be2d97e65452decf2ab97836e3128
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 261359ae3dc82f8544d0f48cf0e8f1103ccedd5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 Cette méthode évalue l’expression analysée et éventuellement convertit le résultat à un autre type de données.  
@@ -74,7 +75,7 @@ int EvaluateSync(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le contexte d’évaluation de l’expression est donné par `pAddress`, ce qui rend possible déterminer la méthode qui le contient et puis utiliser la portée du langage des règles pour déterminer la valeur des symboles dans l’expression.  
   
 ## <a name="see-also"></a>Voir aussi  

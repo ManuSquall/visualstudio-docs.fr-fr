@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a16404dc9e91c6f4383ea58d84a6a1716538c46
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c39ec782ddfdb8eedfa54c0a274ce92b25c9e1df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 Fournit la prise en charge des paramètres régionaux pour un fournisseur de port.  
@@ -38,7 +39,7 @@ IDebugPortSupplierLocale2 : IUnknown
 |------------|-----------------|  
 |[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Définit les paramètres régionaux pour le fournisseur de port.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Portpriv.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

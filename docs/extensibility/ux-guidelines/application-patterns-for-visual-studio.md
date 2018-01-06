@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fad2e8d63b0005addab20756501d18fe872b4c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modèles d’application pour Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a>Interactions de la fenêtre  
@@ -344,7 +345,7 @@ Pour obtenir une conception optimale et les fonctionnalités avec vos boîtes de
   
 Pour connaître les instructions spécifiques à la disposition, consultez [disposition pour Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).  
   
-#### <a name="size"></a>Taille  
+#### <a name="size"></a>Size  
 Les boîtes de dialogue doivent tenir dans une résolution d’écran de 1024 x 768 minimale et la taille de la boîte de dialogue initiale ne doit pas dépasser 900 x 700 pixels. Les boîtes de dialogue peuvent être redimensionnables, mais il n’est pas obligatoire.  
   
 Il existe deux recommandations pour les boîtes de dialogue redimensionnables :  
@@ -502,7 +503,7 @@ L’utilisateur doit toujours être en mesure de déterminer l’effet d’une o
 #### <a name="reference-based-projects"></a>projets basés sur une référence  
  Le tableau suivant récapitule les opérations de glisser-déplacer (ainsi que de couper/copier/coller) qui doivent être effectuées en fonction de la nature de l’élément et le modificateur clés source enfoncé pour les projets de cible basée sur référencé :  
   
-| Modificateur | Catégorie | Élément source : lien de référence / | Élément source : élément ou le fichier physique du système (`CF_HDROP`) |  
+| Modificateur | Category | Élément source : lien de référence / | Élément source : élément ou le fichier physique du système (`CF_HDROP`) |  
 | --- | --- | --- | --- |  
 | Aucun modificateur | Action | Déplacement | Lien |  
 | Aucun modificateur | une cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément d’origine |  
@@ -533,7 +534,7 @@ L’utilisateur doit toujours être en mesure de déterminer l’effet d’une o
 #### <a name="directory-based-projects"></a>Projets basés sur le répertoire  
 Le tableau suivant récapitule les opérations de glisser-déplacer (ainsi que de couper/copier/coller) qui doivent être effectuées en fonction de la nature de l’élément et le modificateur clés source enfoncé pour les projets de cible basée sur le répertoire :  
   
-| Modificateur | Catégorie | Élément source : lien de référence / | Élément source : élément ou le fichier physique du système (`CF_HDROP`) |  
+| Modificateur | Category | Élément source : lien de référence / | Élément source : élément ou le fichier physique du système (`CF_HDROP`) |  
 | --- | --- | --- | --- |  
 | Aucun modificateur | Action | Déplacement | Déplacement |  
 | Aucun modificateur | une cible | Élément de copies à l’emplacement cible | Élément de copies à l’emplacement cible |  
@@ -559,7 +560,7 @@ Le tableau suivant récapitule les opérations de glisser-déplacer (ainsi que d
 #### <a name="mixed-target-projects"></a>Projets cibles mixte  
 Le tableau suivant récapitule les opérations de glisser-déplacer (ainsi que de couper/copier/coller) qui doivent être effectuées en fonction de la nature de l’élément et le modificateur clés source enfoncé pour les projets de cible mixte :  
   
-| Modificateur | Catégorie | Élément source : lien de référence / | Élément source : élément ou le fichier physique du système (`CF_HDROP`) |  
+| Modificateur | Category | Élément source : lien de référence / | Élément source : élément ou le fichier physique du système (`CF_HDROP`) |  
 | --- | --- | --- | --- |
 | Aucun modificateur | Action | Déplacement | Déplacement |
 | Aucun modificateur | une cible | Ajoute la référence à l’élément d’origine | Élément de copies à l’emplacement cible |

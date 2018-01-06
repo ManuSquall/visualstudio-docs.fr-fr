@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb8218f37626516fbbcfa0258409f6468467f810
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c4d8368f1e73bdc5e679e1799db8926ee32dddb6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="color-theming-tools"></a>Outils de thèmes de couleurs
 Le Kit de développement logiciel Visual Studio fournit plusieurs outils pour vous aider à créer et gérer des thèmes de couleurs.  

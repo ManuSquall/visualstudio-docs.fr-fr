@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96b18bdb8aa0097071369a01013772dc3bd0d5bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 95dc4728c3c51dc8e206393ccb2a8f27f470a51b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 Continue l’exécution de ce processus à partir d’un état arrêté. N’importe quel état précédent de l’exécution (par exemple, une étape) est désactivée et que le processus commence à s’exécuter à nouveau.  
@@ -47,7 +48,7 @@ int Execute(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Lorsque l’utilisateur commence l’exécution à partir d’un état d’arrêt dans les threads d’un autre processus, cette méthode est appelée sur ce processus. Cette méthode est également appelée lorsque l’utilisateur sélectionne le **Démarrer** commande à partir de la **déboguer** menu dans l’IDE. L’implémentation de cette méthode peut être aussi simple que d’appeler le [reprise](../../../extensibility/debugger/reference/idebugthread2-resume.md) méthode sur le thread actuel dans le processus.  
   
 > [!WARNING]

@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c71d76e3b085260043f6f07de8b352ab74c3930f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c13a899e5c678040d6ffe5b1996fd3ee96e9cc09
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Comment : fournir un Service asynchrone Visual Studio
 Si vous souhaitez obtenir un service sans bloquer le thread d’interface utilisateur, vous créez un service asynchrone et charger le package sur un thread d’arrière-plan. Pour cela, vous pouvez utiliser un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> plutôt qu’un <xref:Microsoft.VisualStudio.Shell.Package>, ajoutez le service avec des méthodes asynchrones du package asynchrone spéciales  
@@ -24,9 +25,9 @@ Si vous souhaitez obtenir un service sans bloquer le thread d’interface utilis
   
 ## <a name="implementing-an-asynchronous-service"></a>Implémentation d’un Service asynchrone  
   
-1.  Créez un projet VSIX (**fichier / nouveau / projet / Visual C# / Extensiblity / projet VSIX**). Nommez le projet **TestAsync**.  
+1.  Créez un projet VSIX (**fichier > Nouveau > projet > c# > Extensiblity > projet VSIX**). Nommez le projet **TestAsync**.  
   
-2.  Ajouter un VSPackage au projet. Sélectionnez le nœud de projet dans le **l’Explorateur de solutions** et cliquez sur **Ajouter / nouvel élément / éléments Visual c# / extensibilité / Package Visual Studio**. Nommez ce fichier **TestAsyncPackage.cs**.  
+2.  Ajouter un VSPackage au projet. Sélectionnez le nœud de projet dans le **l’Explorateur de solutions** et cliquez sur **Ajouter > nouvel élément > éléments Visual c# > extensibilité > Package Visual Studio**. Nommez ce fichier **TestAsyncPackage.cs**.  
   
 3.  Dans TestAsyncPackage.cs, modifiez le package d’hériter de AsyncPackage au lieu de Package :  
   

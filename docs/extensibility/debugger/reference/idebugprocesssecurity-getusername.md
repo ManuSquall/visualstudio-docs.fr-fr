@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 909c4b4e47bdc9de60b9761974843b370c7400e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: aa8da8828dbbc314ce976572d1f6bd9d5abf5721
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
 Obtient le nom d’utilisateur du fournisseur de port.  
@@ -43,7 +44,7 @@ int GetUserName (
 ## <a name="return-value"></a>Valeur de retour  
  Si la méthode réussit, elle retourne `S_OK`. Sinon, elle retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `GetUserName`Retourne le nom d’utilisateur qui s’affiche dans le **nom d’utilisateur** colonne de la **attacher au processus** boîte de dialogue. Pour afficher le **attacher au processus** boîte de dialogue, cliquez sur **attacher au processus** sur la **outils** menu dans le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE).  
   
 ## <a name="see-also"></a>Voir aussi  

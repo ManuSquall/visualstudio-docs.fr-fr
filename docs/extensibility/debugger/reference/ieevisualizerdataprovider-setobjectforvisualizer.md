@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76a901401e854611cc987ac5c0cf8eeabb8dfd53
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: feb48452b466301f7987db613997158aed160bac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Cette méthode modifie l’objet représentant le visualiseur.  
@@ -54,7 +55,7 @@ int SetObjectForVisualizer(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Il est à l’implémenteur de déterminer la façon dont les informations d’erreur sont retournées. Toutefois, il est possible que certains appelants ne peuvent être détaillée pour voir si un objet d’exception a été retourné pour savoir il était une erreur, cette méthode doit toujours renvoyer un objet d’exception si une erreur s’est produite. La chaîne d’erreur doit également être fournie au cas où l’appelant souhaite utiliser.  
   
 ## <a name="see-also"></a>Voir aussi  

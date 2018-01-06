@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c16b1e46b84b21fc1eb9d92e9954c3d2eec5b72e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8b8c8bf932ab49027529972da7deaeca4a68f9ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Utilisation de solutions de langage spécifique à un domaine
 Un langage spécifique à un domaine (DSL) est créé en utilisant un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution. Cette section est sur la façon de configurer et personnaliser la solution.  

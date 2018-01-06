@@ -11,16 +11,17 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: "10"
 ms.author: v-brickg
 manager: ghogen
-ms.openlocfilehash: 354344fc8995f060bd62a8ea9642e8345948229f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: v-brickg
+ms.openlocfilehash: 69fad7f5bab020aea442670687e5fc781eee2955
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Dictionnaire de langage Visual pour Visual Studio
 Visual Studio utilise un langage visuel commun pour illustrer les concepts qui sont les blocs de construction de son iconographie et autres images. Lorsque vous créez de nouvelles icônes, utilisez ce dictionnaire pour identifier les concepts que vous souhaitez transmettre dans votre propre image.  
   
-## <a name="general-guidelines"></a>Recommandations générales
+## <a name="general-guidelines"></a>Indications générales
   
 -   Ces concepts visual doivent être utilisés de manière cohérente avec leur définition de dictionnaire. Sinon, vous risquez de confus à vos utilisateurs, ce qui prévoient d’avoir des significations cohérentes des éléments en commun.  
   
@@ -41,7 +42,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsA"></a>A  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 |**Accessibilité**|![Icône accessibilité](../../extensibility/ux-guidelines/media/vld_c_accessibility.png "VLD_C_Accessibility")|||  
 | **Action** | ![Icône d’action](../../extensibility/ux-guidelines/media/vld_c_action.png "VLD_C_Action") | ![Icône journal des actions](../../extensibility/ux-guidelines/media/vld_c_action_actionlog.png "VLD_C_Action_ActionLog")<br />Journal des actions | Le **Action** icône également utilisable comme une annotation pour indiquer que l’action de base sera effectuée avec les paramètres automatiques. | 
@@ -66,7 +67,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsB"></a>B  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |  
 | **Bidirectionnel** | ![Icône bidirectionnel](../../extensibility/ux-guidelines/media/vld_c_bidirectional.png "VLD_C_Bidirectional") |||  
 | **Binary** | ![Icône binaire](../../extensibility/ux-guidelines/media/vld_c_binary.png "VLD_C_Binary") | ![Icône de cible d’instrumentation binaire de lancement](../../extensibility/ux-guidelines/media/vld_c_binary_launchinstrumentationtargetbinary.png "VLD_C_Binary_LaunchInstrumentationTargetBinary")<br />Lancez le binaire de cible d’instrumentation ||  
@@ -82,7 +83,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsC"></a>C  
   
-| Concept | Icône principale | Autres exemples | Remarques |  
+| Concept | Icône principale | Autres exemples | Notes |  
 | --- | --- | --- | --- |  
 | **Cache** | ![Icône de cache](../../extensibility/ux-guidelines/media/vld_c_cache.png "VLD_C_Cache") | ![Icône de cache OK](../../extensibility/ux-guidelines/media/vld_c_cache_cacheok.png "VLD_C_Cache_CacheOK")<br />Cache OK<br />![Icône d’actualisation du cache](../../extensibility/ux-guidelines/media/vld_c_cache_cacherefresh.png "VLD_C_Cache_CacheRefresh")<br />Actualisation du cache ||
 | **Calendar** | ![Icône de calendrier](../../extensibility/ux-guidelines/media/vld_c_calendar.png "VLD_C_Calendar") | ![Date &#47; icône d’axe de temps](../../extensibility/ux-guidelines/media/vld_c_calendar_datetimeaxis.png "VLD_C_Calendar_DateTimeAxis")<br />Axe de date/heure<br />![Icône de calendrier global](../../extensibility/ux-guidelines/media/vld_c_calendar_globalcalendar.png "VLD_C_Calendar_GlobalCalendar")<br />Calendrier global ||
@@ -121,7 +122,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsD"></a>D  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- | 
 | **Thème sombre** | ![Icône de thème foncé](../../extensibility/ux-guidelines/media/vld_c_darktheme.png "VLD_C_DarkTheme") | ![Le thème sombre sur l’icône](../../extensibility/ux-guidelines/media/vld_c_darktheme_darkthemeon.png "VLD_C_DarkTheme_DarkThemeOn")<br />Sur le thème sombre ||
 | **Données** | ![Icône de données](../../extensibility/ux-guidelines/media/vld_c_data.png "VLD_C_Data") | ![Icône de deux bases de données de comparaison](../../extensibility/ux-guidelines/media/vld_c_data_comparebothdatabases.png "VLD_C_Data_CompareBothDatabases")<br />Comparer les deux bases de données<br />![Icône de spécification d’audit de base de données](../../extensibility/ux-guidelines/media/vld_c_data_databaseauditspecification.png "VLD_C_Data_DatabaseAuditSpecification")<br />Spécification d’audit de base de données<br />![Icône de projet de base de données](../../extensibility/ux-guidelines/media/vld_c_data_databaseproject.png "VLD_C_Data_DatabaseProject")<br />Projet de base de données ||
@@ -133,7 +134,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
 | **Diagramme**<br />Flux de travail | ![Icône de diagramme](../../extensibility/ux-guidelines/media/vld_c_diagram.png "VLD_C_Diagram") | ![Icône Nouveau diagramme](../../extensibility/ux-guidelines/media/vld_c_diagram_newdiagram.png "VLD_C_Diagram_NewDiagram")<br />Nouveau diagramme<br />![Afficher l’icône de volet Diagramme](../../extensibility/ux-guidelines/media/vld_c_diagram_showdiagrampane.png "VLD_C_Diagram_ShowDiagramPane")<br />Afficher le volet Diagramme ||
 | **Boîte de dialogue** | ![Icône de la boîte de dialogue](../../extensibility/ux-guidelines/media/vld_c_dialog.png "VLD_C_Dialog") | ![Icône de groupe de test de boîte de dialogue](../../extensibility/ux-guidelines/media/vld_c_dialog_dialogtestgroup.png "VLD_C_Dialog_DialogTestGroup")<br />Groupe de test de boîte de dialogue<br />![Icône de boîte de dialogue test](../../extensibility/ux-guidelines/media/vld_c_dialog_testdialog.png "VLD_C_Dialog_TestDialog")<br />Boîte de dialogue test ||
 | **Dictionary** | ![Icône du dictionnaire](../../extensibility/ux-guidelines/media/vld_c_dictionary.png "VLD_C_Dictionary") | ![Ajouter la nouvelle icône dictionnaire](../../extensibility/ux-guidelines/media/vld_c_dictionary_addnewdictionary.png "VLD_C_Dictionary_AddNewDictionary")<br />Ajouter nouveau dictionnaire<br />![Ajouter à l’icône du dictionnaire](../../extensibility/ux-guidelines/media/vld_c_dictionary_addtodictionary.png "VLD_C_Dictionary_AddToDictionary")<br />Ajouter au dictionnaire<br />![Icône d’effacement du dictionnaire](../../extensibility/ux-guidelines/media/vld_c_dictionary_cleardictionary.png "VLD_C_Dictionary_ClearDictionary")<br />Effacement du dictionnaire ||
-| **Dimension**<br />Plan | ![Icône dimension](../../extensibility/ux-guidelines/media/vld_c_dimension.png "VLD_C_Dimension") | ![Icône d’affichage navigateur dimension](../../extensibility/ux-guidelines/media/vld_c_dimension_dimensionbrowserview.png "VLD_C_Dimension_DimensionBrowserView")<br />Mode navigateur de dimension<br />![Icône d’affichage de générateur de dimension](../../extensibility/ux-guidelines/media/vld_c_dimension_dimensionbuilderview.png "VLD_C_Dimension_DimensionBuilderView")<br />Vue Générateur de dimension<br />![Icône d’affichage de traduction de dimension](../../extensibility/ux-guidelines/media/vld_c_dimension_dimensiontranslationview.png "VLD_C_Dimension_DimensionTranslationView")<br />Mode de traduction de dimension ||
+| **Dimension**<br />Planifier | ![Icône dimension](../../extensibility/ux-guidelines/media/vld_c_dimension.png "VLD_C_Dimension") | ![Icône d’affichage navigateur dimension](../../extensibility/ux-guidelines/media/vld_c_dimension_dimensionbrowserview.png "VLD_C_Dimension_DimensionBrowserView")<br />Mode navigateur de dimension<br />![Icône d’affichage de générateur de dimension](../../extensibility/ux-guidelines/media/vld_c_dimension_dimensionbuilderview.png "VLD_C_Dimension_DimensionBuilderView")<br />Vue Générateur de dimension<br />![Icône d’affichage de traduction de dimension](../../extensibility/ux-guidelines/media/vld_c_dimension_dimensiontranslationview.png "VLD_C_Dimension_DimensionTranslationView")<br />Mode de traduction de dimension ||
 | **Afficher**<br />Analyse | ![Icône d’affichage](../../extensibility/ux-guidelines/media/vld_c_display.png "VLD_C_Display") | ![Icône de configuration d’affichage](../../extensibility/ux-guidelines/media/vld_c_display_displayconfiguration.png "VLD_C_Display_DisplayConfiguration")<br />Configuration de l’affichage<br />![Icône de capture d’écran complète](../../extensibility/ux-guidelines/media/vld_c_display_fullscreenshot.png "VLD_C_Display_FullScreenshot")<br />Capture d’écran complète ||
 | **Document**<br />Fichier | ![Icône de document](../../extensibility/ux-guidelines/media/vld_c_document.png "VLD_C_Document") | ![Icône de bibliothèque de documents](../../extensibility/ux-guidelines/media/vld_c_document_documentslibrary.png "VLD_C_Document_DocumentsLibrary")<br />Bibliothèque de documents<br />![Icône de téléchargement de fichier](../../extensibility/ux-guidelines/media/vld_c_document_filedownload.png "VLD_C_Document_FileDownload")<br />Téléchargement du fichier<br />![Icône de document de format](../../extensibility/ux-guidelines/media/vld_c_document_formatdocument.png "VLD_C_Document_FormatDocument") <br />Mettre le document ||
 | **Lecteur** | ![Icône de lecteur](../../extensibility/ux-guidelines/media/vld_c_drive.png "VLD_C_Drive") | ![Icône du lecteur CD](../../extensibility/ux-guidelines/media/vld_c_drive_cddrive.png "VLD_C_Drive_CDDrive")<br />Lecteur de CD ||
@@ -143,7 +144,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsE"></a>E  
   
-| Concept | Icône principale | Autres exemples | Remarques |  
+| Concept | Icône principale | Autres exemples | Notes |  
 | --- | --- | --- | --- |
 | **Edition** | ![Icône de modification](../../extensibility/ux-guidelines/media/vld_c_edit.png "VLD_C_Edit") | ![Icône de l’éditeur adresse](../../extensibility/ux-guidelines/media/vld_c_edit_addresseditor.png "VLD_C_Edit_AddressEditor")<br />Éditeur d’adresse<br />![Icône de requête de modification](../../extensibility/ux-guidelines/media/vld_c_edit_editquery.png "VLD_C_Edit_EditQuery")<br />Modifier la requête<br />![Modifier l’icône de relation](../../extensibility/ux-guidelines/media/vld_c_edit_editrelation.png "VLD_C_Edit_EditRelation")<br />Modifier la relation | Le **modifier** annotation fait face à gauche ou à droite en fonction de l’aspect de l’icône de base. Choisissez l’orientation qui convient le mieux avec votre conception générale de l’icône. |
 | **Effets**<br />*Identique à « Fonction », « Variable (global) »* | ![Icône effets](../../extensibility/ux-guidelines/media/vld_c_effects.png "VLD_C_Effects") |||
@@ -157,7 +158,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsF"></a>F  
   
-| Concept | Icône principale | Autres exemples | Remarques | 
+| Concept | Icône principale | Autres exemples | Notes | 
 | --- | --- | --- | --- |
 | **Favori**<br />Protégé, évaluation | ![Icône favori](../../extensibility/ux-guidelines/media/vld_c_favorite.png "VLD_C_Favorite") | ![Ajouter à l’icône des favoris](../../extensibility/ux-guidelines/media/vld_c_favorite_addtofavorites.png "VLD_C_Favorite_AddToFavorites")<br />Ajouter aux favoris<br />![Icône d’évaluation](../../extensibility/ux-guidelines/media/vld_c_favorite_rating.png "VLD_C_Favorite_Rating")<br />Classification ||
 | **Champ** | ![Icône de champ](../../extensibility/ux-guidelines/media/vld_c_field.png "VLD_C_Field") | ![Ajouter une icône de champ](../../extensibility/ux-guidelines/media/vld_c_field_addfield.png "VLD_C_Field_AddField")<br />Ajoutez le champ<br />![Modifier l’icône de champ](../../extensibility/ux-guidelines/media/vld_c_field_editfield.png "VLD_C_Field_EditField")<br />Modifier le champ ||
@@ -174,18 +175,18 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsG"></a>G  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Get**<br />Téléchargement | ![Icône d’obtention](../../extensibility/ux-guidelines/media/vld_c_get.png "VLD_C_Get") | ![Icône de dossier de téléchargement](../../extensibility/ux-guidelines/media/vld_c_get_downloadfolder.png "VLD_C_Get_DownloadFolder")<br />Obtenir le dossier de téléchargement<br />![Récupération de l’icône de valeur de dictionnaire](../../extensibility/ux-guidelines/media/vld_c_get_getdictionaryvalue.png "VLD_C_Get_GetDictionaryValue")<br />Obtenir la valeur de dictionnaire<br />![Obtenir l’élément à partir de l’icône de collection](../../extensibility/ux-guidelines/media/vld_c_get_getitemfromcollection.png "VLD_C_Get_GetItemFromCollection")<br />Obtenir l’élément de collection ||
 | **Graphique**<br />Graphique à barres | ![Icône de graphique](../../extensibility/ux-guidelines/media/vld_c_graph.png "VLD_C_Graph") | ![Icône de session de performance HPC](../../extensibility/ux-guidelines/media/vld_c_graph_hpcperformancesessionwizard.png "VLD_C_Graph_HPCPerformanceSessionWizard")<br />Session de performance HPC ||
 | **Graphique (3D)** | ![Graphismes- &#40; 3D &#41; icône](../../extensibility/ux-guidelines/media/vld_c_graphics_3d.png "VLD_C_Graphics_3D") |||
-| **Grille** | ![Icône de grille](../../extensibility/ux-guidelines/media/vld_c_grid.png "VLD_C_Grid") | ![Contrôle de grille de données Asset](../../extensibility/ux-guidelines/media/vld_c_grid_assetdatagridcontrol.png "VLD_C_Grid_AssetDataGridControl")<br />Contrôle de grille de données de composants<br />![Application de quadrillage C &#43; &#43; icône](../../extensibility/ux-guidelines/media/vld_c_grid_gridappcpp.png "VLD_C_Grid_GridAppCPP")<br />Application de quadrillage C++<br />![Icône de grille bascule](../../extensibility/ux-guidelines/media/vld_c_grid_togglegrid.png "VLD_C_Grid_ToggleGrid")<br />Activer/désactiver la grille ||
+| **Grid** | ![Icône de grille](../../extensibility/ux-guidelines/media/vld_c_grid.png "VLD_C_Grid") | ![Contrôle de grille de données Asset](../../extensibility/ux-guidelines/media/vld_c_grid_assetdatagridcontrol.png "VLD_C_Grid_AssetDataGridControl")<br />Contrôle de grille de données de composants<br />![Application de quadrillage C &#43; &#43; icône](../../extensibility/ux-guidelines/media/vld_c_grid_gridappcpp.png "VLD_C_Grid_GridAppCPP")<br />Application de quadrillage C++<br />![Icône de grille bascule](../../extensibility/ux-guidelines/media/vld_c_grid_togglegrid.png "VLD_C_Grid_ToggleGrid")<br />Activer/désactiver la grille ||
 | **Mise en page de grille web** | ![Icône de mise en page de grille web](../../extensibility/ux-guidelines/media/vld_c_gridweblayout.png "VLD_C_GridWebLayout") | ![Icône d’élément de grille](../../extensibility/ux-guidelines/media/vld_c_gridweblayout_gridelement.png "VLD_C_GridWebLayout_GridElement")<br />Élément de grille<br />![Icône de l’élément splitter grille](../../extensibility/ux-guidelines/media/vld_c_gridweblayout_gridsplitterelement.png "VLD_C_GridWebLayout_GridSplitterElement")<br />Élément de séparateur de grille ||
 | **Regroupement** | ![Icône de regroupement](../../extensibility/ux-guidelines/media/vld_c_grouping.png "VLD_C_Grouping") | ![Icône de boîte de dialogue groupe](../../extensibility/ux-guidelines/media/vld_c_grouping_dialoggroup.png "VLD_C_Grouping_DialogGroup")<br />Groupe de la boîte de dialogue<br />![Icône d’équipe](../../extensibility/ux-guidelines/media/vld_c_grouping_team.png "VLD_C_Grouping_Team")<br />Équipe<br />![Icône de machines virtuelles](../../extensibility/ux-guidelines/media/vld_c_grouping_virtualmachines.png "VLD_C_Grouping_VirtualMachines")<br />Ordinateurs virtuels| Plusieurs objets superposés d’empilement représente le concept de **regroupement** ou multiplicité. |
   
 ###  <a name="BKMK_VLDConceptsH"></a>H  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Hiérarchie** | ![Icône de hiérarchie](../../extensibility/ux-guidelines/media/vld_c_hierarchy.png "VLD_C_Hierarchy") | ![Icône de variable de hiérarchie](../../extensibility/ux-guidelines/media/vld_c_hierarchy_hierarchyvariable.png "VLD_C_Hierarchy_HierarchyVariable")<br />Variable de hiérarchie<br />![Icônes de la hiérarchie d’appels](../../extensibility/ux-guidelines/media/vld_c_hierarchy_callhierarchy.png "VLD_C_Hierarchy_CallHierarchy") <br />Hiérarchie d'appels ||
 | **Historique** | ![Icône de l’historique](../../extensibility/ux-guidelines/media/vld_c_history.png "VLD_C_History") |||
@@ -193,7 +194,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsI"></a>J’AI  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Idée** | ![Icône d’idée](../../extensibility/ux-guidelines/media/vld_c_idea.png "VLD_C_Idea") |||
 | **Image**<br />Ressources, ressources | ![Icône d’image](../../extensibility/ux-guidelines/media/vld_c_image.png "VLD_C_Image") | ![Icône de chargeur d’image](../../extensibility/ux-guidelines/media/vld_c_image_imageloader.png "VLD_C_Image_ImageLoader")<br />Chargeur d’image<br />![Icône de bouton d’image](../../extensibility/ux-guidelines/media/vld_c_image_imagebutton.png "VLD_C_Image_ImageButton")<br />Bouton d’image<br />![Icône de contrôle de liste image](../../extensibility/ux-guidelines/media/vld_c_image_imagelistcontrol.png "VLD_C_Image_ImageListControl") <br />Contrôle de liste d’image ||
@@ -206,14 +207,14 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsK"></a>K  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Key**<br />ID d’autorisation | ![Icône de clé](../../extensibility/ux-guidelines/media/vld_c_key.png "VLD_C_Key") | ![Icône de nouvelle clé](../../extensibility/ux-guidelines/media/vld_c_key_newkey.png "VLD_C_Key_NewKey")<br />Nouvelle clé<br />![Icône d’autorisation](../../extensibility/ux-guidelines/media/vld_c_key_permission.png "VLD_C_Key_Permission")<br />Autorisation<br />![Récupération de l’icône d’ID élément actuel](../../extensibility/ux-guidelines/media/vld_c_key_getcurrentitemid.png "VLD_C_Key_GetCurrentItemID")<br />Obtenir l’ID de l’élément actuel ||
 | **Indicateur de performance clé (KPI)** | ![Icône d’indicateur de performance clé](../../extensibility/ux-guidelines/media/vld_c_kpi.png "VLD_C_KPI") | ![Icône d’indicateur de performance clé supprimer](../../extensibility/ux-guidelines/media/vld_c_kpi_deletekpi.png "VLD_C_KPI_DeleteKPI")<br />Supprimer l’indicateur de performance clé<br />![Icône d’indicateur de performance clé navigateur](../../extensibility/ux-guidelines/media/vld_c_kpi_kpibrowserview.png "VLD_C_KPI_KPIBrowserView")<br />Mode de navigateur d’indicateur de performance clé<br />![Indicateur de performance clé avec une icône d’erreur](../../extensibility/ux-guidelines/media/vld_c_kpi_kpiwitherror.png "VLD_C_KPI_KPIWithError")<br />Indicateur de performance clé avec l’erreur ||
   
 ###  <a name="BKMK_VLDConceptsL"></a>L  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Bibliothèque** | ![Icône de bibliothèque](../../extensibility/ux-guidelines/media/vld_c_library.png "VLD_C_Library") | ![C &#43; &#43; icône de projet de bibliothèque de classe](../../extensibility/ux-guidelines/media/vld_c_library_cppclasslibraryproject.png "VLD_C_Library_CPPClassLibraryProject")<br />Projet de bibliothèque de classes C++<br />![Icône de bibliothèque d’exportations](../../extensibility/ux-guidelines/media/vld_c_library_exportslibrary.png "VLD_C_Library_ExportsLibrary")<br />Bibliothèque d’exportations<br />![F &#35; Icône de bibliothèque de contrôle Windows Forms](../../extensibility/ux-guidelines/media/vld_c_library_fswindowsformcontrollibrary.png "VLD_C_Library_FSWindowsFormControlLibrary")<br />Bibliothèque de contrôles Windows Forms F # ||
 | **Lien** | ![Icône de lien](../../extensibility/ux-guidelines/media/vld_c_link.png "VLD_C_Link") | ![Convertir en lien hypertexte](../../extensibility/ux-guidelines/media/vld_c_link_converttohyperlink.png "VLD_C_Link_ConvertToHyperlink")<br />Convertir en lien hypertexte<br />![Créer une table liée icône](../../extensibility/ux-guidelines/media/vld_c_link_createlinkedtable.png "VLD_C_Link_CreateLinkedTable")<br />Créer une table liée<br />![Icône de lien de modification](../../extensibility/ux-guidelines/media/vld_c_link_editlink.png "VLD_C_Link_EditLink")<br />Modifier un lien ||
@@ -223,7 +224,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsM"></a>M  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Messagerie**<br />Message | ![Icône Courrier](../../extensibility/ux-guidelines/media/vld_c_mail.png "VLD_C_Mail") | ![Icône de file d’attente des messages](../../extensibility/ux-guidelines/media/vld_c_mail_messagequeue.png "VLD_C_Mail_MessageQueue")<br />File d’attente<br />![Icône de suivi de message reçu](../../extensibility/ux-guidelines/media/vld_c_mail_messagereceivedtrace.png "VLD_C_Mail_MessageReceivedTrace")<br />Suivi de message reçu<br />![Icône visionneuse d’adresse e-mail](../../extensibility/ux-guidelines/media/vld_c_mail_emailaddressviewer.png "VLD_C_Mail_EmailAddressViewer")<br />Visionneuse d’adresse de messagerie ||
 | **Manifest** | ![Icône de manifeste](../../extensibility/ux-guidelines/media/vld_c_manifest.png "VLD_C_Manifest") | ![Icône de modification de manifeste](../../extensibility/ux-guidelines/media/vld_c_manifest_editmanifest.png "VLD_C_Manifest_EditManifest")<br />Modifier le manifeste<br />![Icône de gestionnaire d’extensions manifeste](../../extensibility/ux-guidelines/media/vld_c_manifest_extensionmanagermanifest.png "VLD_C_Manifest_ExtensionManagerManifest")<br />Manifeste d’extension manager<br />![Nouvelle icône de manifeste d’application](../../extensibility/ux-guidelines/media/vld_c_manifest_newapplicationmanifest.png "VLD_C_Manifest_NewApplicationManifest")<br />Nouveau manifeste d’application ||
@@ -246,24 +247,24 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsN"></a>N  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |  
-| **Namespace** | ![Icône de Namespace](../../extensibility/ux-guidelines/media/vld_c_namespace.png "VLD_C_Namespace") | ![Supprimer à l’aide d’icône de l’espace de noms](../../extensibility/ux-guidelines/media/vld_c_namespace_removeusingnamespace.png "VLD_C_Namespace_RemoveUsingNamespace")<br />Supprimer à l’aide d’espace de noms<br />![Tri à l’aide d’icône de l’espace de noms](../../extensibility/ux-guidelines/media/vld_c_namespace_sortusingnamespace.png "VLD_C_Namespace_SortUsingNamespace")<br />Tri à l’aide d’espace de noms<br />![Ajouter à l’aide d’icône de l’espace de noms](../../extensibility/ux-guidelines/media/vld_c_namespace_addusingnamespace.png "VLD_C_Namespace_AddUsingNamespace")<br />Ajouter à l’aide d’espace de noms ||
-| **Réseau**<br />Connexion | ![Icône de réseau](../../extensibility/ux-guidelines/media/vld_c_network.png "VLD_C_Network") | ![Icône de modèle de package de pilotes réseau](../../extensibility/ux-guidelines/media/vld_c_network_networkdriverpackagetemplate.png "VLD_C_Network_NetworkDriverPackageTemplate")<br />Modèle de package de pilotes réseau<br />![Icône de connexion en mode hors connexion](../../extensibility/ux-guidelines/media/vld_c_network_connectionoffline.png "VLD_C_Network_ConnectionOffline")<br />Connexion hors connexion<br />![Icône de connexion inconnue](../../extensibility/ux-guidelines/media/vld_c_network_connectionunknown.png "VLD_C_Network_ConnectionUnknown")<br />Connexion inconnue ||
+| **Espace de noms** | ![Icône de Namespace](../../extensibility/ux-guidelines/media/vld_c_namespace.png "VLD_C_Namespace") | ![Supprimer à l’aide d’icône de l’espace de noms](../../extensibility/ux-guidelines/media/vld_c_namespace_removeusingnamespace.png "VLD_C_Namespace_RemoveUsingNamespace")<br />Supprimer à l’aide d’espace de noms<br />![Tri à l’aide d’icône de l’espace de noms](../../extensibility/ux-guidelines/media/vld_c_namespace_sortusingnamespace.png "VLD_C_Namespace_SortUsingNamespace")<br />Tri à l’aide d’espace de noms<br />![Ajouter à l’aide d’icône de l’espace de noms](../../extensibility/ux-guidelines/media/vld_c_namespace_addusingnamespace.png "VLD_C_Namespace_AddUsingNamespace")<br />Ajouter à l’aide d’espace de noms ||
+| **Network**<br />Connexion | ![Icône de réseau](../../extensibility/ux-guidelines/media/vld_c_network.png "VLD_C_Network") | ![Icône de modèle de package de pilotes réseau](../../extensibility/ux-guidelines/media/vld_c_network_networkdriverpackagetemplate.png "VLD_C_Network_NetworkDriverPackageTemplate")<br />Modèle de package de pilotes réseau<br />![Icône de connexion en mode hors connexion](../../extensibility/ux-guidelines/media/vld_c_network_connectionoffline.png "VLD_C_Network_ConnectionOffline")<br />Connexion hors connexion<br />![Icône de connexion inconnue](../../extensibility/ux-guidelines/media/vld_c_network_connectionunknown.png "VLD_C_Network_ConnectionUnknown")<br />Connexion inconnue ||
 | **Nœud**<br />Réticule | ![Icône de nœud](../../extensibility/ux-guidelines/media/vld_c_node.png "VLD_C_Node") |||
 | **Nonsubstantive (masqué ou un modèle)**<br />*Identique à « Virtuels »* | ![Icône de non-substantif](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive.png "VLD_C_Nonsubstantive") | ![Icône de champ masqué](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfield.png "VLD_C_Nonsubstantive_HiddenField")<br />Champ masqué<br />![Icône de dossier masqué](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfolder.png "VLD_C_Nonsubstantive_HiddenFolder")<br />Dossier masqué<br />![Icône de modèle dynamique](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_dynamictemplate.png "VLD_C_Nonsubstantive_DynamicTemplate")<br />Modèle dynamique | Un contour en pointillé d’un objet indique qu’il est **masqué ou basé sur un modèle**. |
 | **Remarque** | ![Icône de Remarque](../../extensibility/ux-guidelines/media/vld_c_note.png "VLD_C_Note") |||
   
 ###  <a name="BKMK_VLDConceptsO"></a>O  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Ouvrir**<br />*Identique à « Export »* | ![Icône d’ouverture](../../extensibility/ux-guidelines/media/vld_c_open.png "VLD_C_Open") | ![Icône d’ouverture de pièce jointe](../../extensibility/ux-guidelines/media/vld_c_open_openattachment.png "VLD_C_Open_OpenAttachment")<br />Ouvrir la pièce jointe<br />![Icône de résultat de comparaison Open](../../extensibility/ux-guidelines/media/vld_c_open_opencomparisonresult.png "VLD_C_Open_OpenComparisonResult")<br />Résultat de la comparaison ouvert<br />![Icône de boîte de dialogue Ouvrir un fichier](../../extensibility/ux-guidelines/media/vld_c_open_openfiledialog.png "VLD_C_Open_OpenFileDialog")<br />Boîte de dialogue Ouvrir un fichier ||
 | **Sortie** | ![Icône de sortie](../../extensibility/ux-guidelines/media/vld_c_output.png "VLD_C_Output") |||
   
 ###  <a name="BKMK_VLDConceptsP"></a>P  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Package** | ![Icône de package](../../extensibility/ux-guidelines/media/vld_c_package.png "VLD_C_Package") | ![Icône de package de cloud](../../extensibility/ux-guidelines/media/vld_c_package_cloudpackage.png "VLD_C_Package_CloudPackage")<br />Package de cloud<br />![Icône de package de création](../../extensibility/ux-guidelines/media/vld_c_package_createpackage.png "VLD_C_Package_CreatePackage")<br />Créer le package<br />![Icône de modèle de package de pilotes](../../extensibility/ux-guidelines/media/vld_c_package_driverpackagetemplate.png "VLD_C_Package_DriverPackageTemplate")<br />Modèle de package de pilotes ||
 | **Parallèle** | ![Icône de parallèle](../../extensibility/ux-guidelines/media/vld_c_parallel.png "VLD_C_Parallel") | ![Parallèle pour chaque icône](../../extensibility/ux-guidelines/media/vld_c_parallel_parallelforeach.png "VLD_C_Parallel_ParallelForEach")<br />Parallèle pour chaque ||
@@ -282,13 +283,13 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsQ"></a>Q :  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Requête** | ![Icône requête](../../extensibility/ux-guidelines/media/vld_c_query.png "VLD_C_Query") | ![Icône de requête de modification](../../extensibility/ux-guidelines/media/vld_c_query_editquery.png "VLD_C_Query_EditQuery")<br />Modifier la requête<br />![Icône d’extenseur de requête](../../extensibility/ux-guidelines/media/vld_c_query_queryextender.png "VLD_C_Query_QueryExtender")<br />Extendeur de requête<br />![Icône de requête rapide](../../extensibility/ux-guidelines/media/vld_c_query_quickquery.png "VLD_C_Query_QuickQuery")<br />Requête rapide ||
   
 ###  <a name="BKMK_VLDConceptsR"></a>R  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Enregistrement** | ![Icône d’enregistrement](../../extensibility/ux-guidelines/media/vld_c_record.png "VLD_C_Record") | ![Icône d’écran enregistrement](../../extensibility/ux-guidelines/media/vld_c_record_recordscreen.png "VLD_C_Record_RecordScreen")<br />Écran d’enregistrement<br />![Accédez à l’icône de session test enregistré](../../extensibility/ux-guidelines/media/vld_c_record_gotorecordedtestsession.png "VLD_C_Record_GoToRecordedTestSession")<br />Accéder à la session de test enregistré ||
 | **Restauration par progression** | ![Icône de rétablissement](../../extensibility/ux-guidelines/media/vld_c_redo.png "VLD_C_Redo") |||
@@ -306,12 +307,12 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsS"></a>S  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Enregistrer** | ![Icône Enregistrer](../../extensibility/ux-guidelines/media/vld_c_save.png "VLD_C_Save") | ![Icône Enregistrer tout](../../extensibility/ux-guidelines/media/vld_c_save_saveall.png "VLD_C_Save_SaveAll")<br />Enregistrer tout<br />![Icône Enregistrer et fermer](../../extensibility/ux-guidelines/media/vld_c_save_saveandclose.png "VLD_C_Save_SaveAndClose")<br />Enregistrer et fermer<br />![Enregistrer l’icône de contrôle de boîte de dialogue de fichier](../../extensibility/ux-guidelines/media/vld_c_save_savefiledialogcontrol.png "VLD_C_Save_SaveFileDialogControl")<br />Enregistrer le contrôle de boîte de dialogue fichier ||
 | **Schéma** | ![Icône de schéma](../../extensibility/ux-guidelines/media/vld_c_schema.png "VLD_C_Schema") | ![Icône Créer un schéma](../../extensibility/ux-guidelines/media/vld_c_schema_createschema.png "VLD_C_Schema_CreateSchema")<br />Créer un schéma<br />![Icône de schéma de base de données](../../extensibility/ux-guidelines/media/vld_c_schema_databaseschema.png "VLD_C_Schema_DatabaseSchema")<br />Schéma de base de données<br />![Icône de schéma XML](../../extensibility/ux-guidelines/media/vld_c_schema_xmlschema.png "VLD_C_Schema_XMLSchema")<br />Schéma XML ||
 | **Script** | ![Icône de script](../../extensibility/ux-guidelines/media/vld_c_script.png "VLD_C_Script") | ![Exporter vers l’icône de script](../../extensibility/ux-guidelines/media/vld_c_script_exporttoscript.png "VLD_C_Script_ExportToScript")<br />Exporter vers un script<br />![Générer le script changer d’icône](../../extensibility/ux-guidelines/media/vld_c_script_generatechangescript.png "VLD_C_Script_GenerateChangeScript")<br />Générer un script de modification ||
-| **Recherche**<br />Trouver, rechercher | ![Icône de recherche](../../extensibility/ux-guidelines/media/vld_c_search.png "VLD_C_Search") | ![Fichiers icône Rechercher dans les](../../extensibility/ux-guidelines/media/vld_c_search_findinfiles.png "VLD_C_Search_FindInFiles")<br />Rechercher dans les fichiers<br />![Icône des résultats de recherche](../../extensibility/ux-guidelines/media/vld_c_search_findresults.png "VLD_C_Search_FindResults")<br />Résultats de la recherche ||
+| **Rechercher**<br />Trouver, rechercher | ![Icône de recherche](../../extensibility/ux-guidelines/media/vld_c_search.png "VLD_C_Search") | ![Fichiers icône Rechercher dans les](../../extensibility/ux-guidelines/media/vld_c_search_findinfiles.png "VLD_C_Search_FindInFiles")<br />Rechercher dans les fichiers<br />![Icône des résultats de recherche](../../extensibility/ux-guidelines/media/vld_c_search_findresults.png "VLD_C_Search_FindResults")<br />Résultats de la recherche ||
 | **Serveur (local)** | ![Serveur &#40; local &#41; icône](../../extensibility/ux-guidelines/media/vld_c_server_local.png "VLD_C_Server_local") | ![Icône Ajouter SQL server](../../extensibility/ux-guidelines/media/vld_c_server_local_addsqlserver.png "VLD_C_Server_local_AddSQLServer")<br />Ajouter SQL server<br />![Icône de rôle de serveur de connexion](../../extensibility/ux-guidelines/media/vld_c_server_local_loginserverrole.png "VLD_C_Server_local_LoginServerRole")<br />Rôle de serveur de connexion<br />![Configurer les ordinateurs icône](../../extensibility/ux-guidelines/media/vld_c_server_local_configurecomputers.png "VLD_C_Server_local_ConfigureComputers")<br />Configurer des ordinateurs ||
 | **Serveur (à distance)** | ![Serveur &#40; à distance &#41; icône](../../extensibility/ux-guidelines/media/vld_c_server_remote.png "VLD_C_Server_remote") | ![Icône Ajouter le serveur](../../extensibility/ux-guidelines/media/vld_c_server_remote_addserver.png "VLD_C_Server_remote_AddServer")<br />Ajouter un serveur<br />![Icône de tests d’exécution de serveur](../../extensibility/ux-guidelines/media/vld_c_server_remote_runservertests.png "VLD_C_Server_remote_RunServerTests")<br />Exécuter des tests de serveur ||
 | **Paramètres**<br />Services, processus | ![Icône des paramètres](../../extensibility/ux-guidelines/media/vld_c_settings.png "VLD_C_Settings") | ![Appelez l’icône des paramètres de navigateur](../../extensibility/ux-guidelines/media/vld_c_settings_callbrowsersettings.png "VLD_C_Settings_CallBrowserSettings")<br />Appelez les paramètres du navigateur<br />![Icône des paramètres de test](../../extensibility/ux-guidelines/media/vld_c_settings_testsettings.png "VLD_C_Settings_TestSettings")<br />Paramètres de test<br />![Icône d’échec du processus de préparation](../../extensibility/ux-guidelines/media/vld_c_settings_prepareprocessfailed.png "VLD_C_Settings_PrepareProcessFailed")<br />Échoué du processus de préparation ||
@@ -327,7 +328,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsT"></a>T  
 
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Table** | ![Icône table](../../extensibility/ux-guidelines/media/vld_c_table.png "VLD_C_Table") | ![Icône d’avertissement table](../../extensibility/ux-guidelines/media/vld_c_table_tablewarning.png "VLD_C_Table_TableWarning")<br />Avertissement de table<br />![Icône de collection de table de stockage cloud](../../extensibility/ux-guidelines/media/vld_c_table_cloudstoragetablecollection.png "VLD_C_Table_CloudStorageTableCollection")<br />Collection de la table de stockage cloud ||
 | **Tablet PC** | ![Icône de tablette](../../extensibility/ux-guidelines/media/vld_c_tablet.png "VLD_C_Tablet") | ![Icône des paramètres de tablette](../../extensibility/ux-guidelines/media/vld_c_tablet_tabletsettings.png "VLD_C_Tablet_TabletSettings")<br />Paramètres du Tablet PC<br />![Icône d’avertissement de tablette](../../extensibility/ux-guidelines/media/vld_c_tablet_tabletwarning.png "VLD_C_Tablet_TabletWarning")<br />Avertissement de tablette ||
@@ -343,7 +344,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsU"></a>U  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Annuler**<br />Rétablir, restauration | ![Icône d’annulation](../../extensibility/ux-guidelines/media/vld_c_undo.png "VLD_C_Undo") | ![Icône de restauration d’image](../../extensibility/ux-guidelines/media/vld_c_undo_imagerestore.png "VLD_C_Undo_ImageRestore")<br />Restauration de l’image<br />![Annuler l’extraction d’icône d’élément](../../extensibility/ux-guidelines/media/vld_c_undo_undocheckoutitem.png "VLD_C_Undo_UndoCheckOutItem")<br />Annuler l’extraction d’éléments ||
 | **À distance**<br />Télécharger | ![Icône de dossier](../../extensibility/ux-guidelines/media/vld_c_up.png "VLD_C_Up") | ![Icône de paramètre de téléchargement de fichier](../../extensibility/ux-guidelines/media/vld_c_up_fileuploadparameter.png "VLD_C_Up_FileUploadParameter")<br />Paramètre de téléchargement de fichier<br />![Icône de dossier parent](../../extensibility/ux-guidelines/media/vld_c_up_onelevelup.png "VLD_C_Up_OneLevelUp")<br />Un niveau supérieur ||
@@ -352,7 +353,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsV"></a>V  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Variable (local)** | ![Variable &#40; local &#41; icône](../../extensibility/ux-guidelines/media/vld_c_variable_local.png "VLD_C_Variable_local") | ![Icône nouvelle variable](../../extensibility/ux-guidelines/media/vld_c_variable_local_newvariable.png "VLD_C_Variable_local_NewVariable")<br />Nouvelle variable<br />![Variable &#40; local &#41; icône](../../extensibility/ux-guidelines/media/vld_c_variable_local_localvariable.png "VLD_C_Variable_local_LocalVariable")<br />variable locale<br />![Icône de variable SQL](../../extensibility/ux-guidelines/media/vld_c_variable_local_sqlvariable.png "VLD_C_Variable_local_SQLVariable")<br />Variable SQL ||
 | **Variable (global)**<br />*Identique à « Effets » et « Fonction »* | ![Variable &#40; global &#41; icône](../../extensibility/ux-guidelines/media/vld_c_variable_fx.png "VLD_C_Variable_fx") | ![Icône de propriétés de la variable](../../extensibility/ux-guidelines/media/vld_c_variable_fx_variableproperties.png "VLD_C_Variable_fx_VariableProperties")<br />Propriétés de la variable<br />![Icône de variable globale](../../extensibility/ux-guidelines/media/vld_c_variable_fx_globalvariable.png "VLD_C_Variable_fx_GlobalVariable")<br />Variable globale<br />![Icône Supprimer une variable](../../extensibility/ux-guidelines/media/vld_c_variable_fx_deletevariable.png "VLD_C_Variable_fx_DeleteVariable")<br />Supprimer une variable ||
@@ -363,7 +364,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsW"></a>W  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Espion** | ![Icône espion](../../extensibility/ux-guidelines/media/vld_c_watch.png "VLD_C_Watch") | ![Icône de l’Observateur de système de fichier](../../extensibility/ux-guidelines/media/vld_c_watch_filesystemwatcher.png "VLD_C_Watch_FileSystemWatcher")<br />Observateur de système de fichiers ||
 | **Web** | ![Icône Web](../../extensibility/ux-guidelines/media/vld_c_web.png "VLD_C_Web") | ![Publier sur l’icône web](../../extensibility/ux-guidelines/media/vld_c_web_publishtoweb.png "VLD_C_Web_PublishToWeb")<br />Publier sur le web<br />![Icône des paramètres web de téléchargement](../../extensibility/ux-guidelines/media/vld_c_web_downloadwebsettings.png "VLD_C_Web_DownloadWebSettings")<br />Les paramètres web de téléchargement<br />![Icône de site Web nouveau](../../extensibility/ux-guidelines/media/vld_c_web_newwebsite.png "VLD_C_Web_NewWebsite")<br />Nouveau site Web ||
@@ -372,13 +373,13 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
   
 ###  <a name="BKMK_VLDConceptsY"></a>Y  
   
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Yield** | ![Icône de rendement](../../extensibility/ux-guidelines/media/vld_c_yield.png "VLD_C_Yield") |||
   
 ###  <a name="BKMK_VLDConceptsZ"></a>Z  
 
-| Concept | Icône principale | Autres exemples | Remarques |
+| Concept | Icône principale | Autres exemples | Notes |
 | --- | --- | --- | --- |
 | **Zoom** | ![Icône de zoom](../../extensibility/ux-guidelines/media/vld_c_zoom.png "VLD_C_Zoom") | ![Icône Zoom avant](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomin.png "VLD_C_Zoom_ZoomIn")<br />Zoom avant<br />![Icône Zoom arrière](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomout.png "VLD_C_Zoom_ZoomOut")<br />Zoom arrière ||
   

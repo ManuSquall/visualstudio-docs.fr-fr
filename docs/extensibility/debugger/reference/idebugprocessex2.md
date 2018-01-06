@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 45ef0413540729abb67caad992a557c5b4692dfe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3d23b1b97145b5e0b24ebfe814aeca5168ef6a06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 Cette interface permet à la session de débogage responsable de notifier un processus qu’elle est de s’attacher à ou de détachement d’un processus.  
@@ -51,10 +52,10 @@ IDebugProcessEx2 : IUnknown
 |[Détacher](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informe le processus qu’une session de débogage n’est plus le processus.|  
 |[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Ajoute des nœuds de programme pour obtenir la liste des moteurs de débogage.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette interface est privée entre le SDM et le processus.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Portpriv.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

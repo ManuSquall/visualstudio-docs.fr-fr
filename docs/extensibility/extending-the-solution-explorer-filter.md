@@ -15,16 +15,17 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f34f19d41f3d624c57cc6c92d51b5c19ddb2137
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: afcaef724b5fc5f8270e5126e91d421f2e15b946
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Étendre le filtre de l’Explorateur de solutions
 Vous pouvez étendre **l’Explorateur de solutions** filtrer les fonctionnalités pour afficher ou masquer les différents fichiers. Par exemple, vous pouvez créer un filtre qui affiche uniquement c# fabrique fichiers de classe dans le **l’Explorateur de solutions**, comme cette procédure pas à pas montre comment.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ### <a name="create-a-visual-studio-package-project"></a>Créer un projet de Package Visual Studio  

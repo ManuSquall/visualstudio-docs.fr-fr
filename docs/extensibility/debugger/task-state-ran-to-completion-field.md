@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86e04ded45232c18677e078f6dea3751a8ea0067
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d70f57629cb051ed3241e9ade33e84390ff55e4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="taskstaterantocompletion-field"></a>Champ TASK_STATE_RAN_TO_COMPLETION
 L’exécution de la tâche s’est terminée avec succès.  
@@ -34,7 +35,7 @@ L’exécution de la tâche s’est terminée avec succès.
 .field static assembly literal int32 TASK_STATE_RAN_TO_COMPLETION = int32(0x02000000)  
 ```  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si le [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) champ contient cette valeur, le <xref:System.Threading.Tasks.Task.Status%2A> propriété renvoie <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
   
 ## <a name="see-also"></a>Voir aussi  

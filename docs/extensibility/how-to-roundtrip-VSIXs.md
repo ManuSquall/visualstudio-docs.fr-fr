@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: willbrown
 ms.author: willbrown
 manager: justinclareburt
-ms.openlocfilehash: 99bdd5a0f31b9cbccd84a7c05f6d3cdcc0c267f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: willbrown
+ms.openlocfilehash: e6ce654e158fbfbdaa3692d37f638e72085f8c4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Comment : créer des Extensions Compatible avec Visual Studio 2017 et Visual Studio 2015
 
@@ -31,7 +32,7 @@ Voici les étapes que vous effectuerez dans ce document pour effectuer un aller-
 1. Importer les packages NuGet corrects.
 2. Mise à jour du manifeste d’Extension :
     * Cible d’installation
-    * Conditions préalables
+    * Prérequis
 3. CSProj de mise à jour :
     * Mise à jour `<MinimumVisualStudioVersion>`.
     * Ajouter le `<VsixType>` propriété.

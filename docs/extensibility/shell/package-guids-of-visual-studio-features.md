@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdb4b0385ff0d9af97e3f12d6b74c6f22391a05b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 13d45967ff6102fca9780b172ed48c077dc81b6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="package-guids-of-visual-studio-features"></a>GUID du package de fonctionnalités de Visual Studio
 Vous pouvez utiliser les GUID suivants dans le fichier .pkgundef de votre application de shell isolé pour exclure des packages spécifiques de l’application.  

@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f69bbed7c335afb6b570de34cbef70470abd373
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c24b8c5520befcc204b59609b116d9d16ee26281
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportement de nouveau ou modifié avec les adaptateurs d’éditeur
 Si vous mettez à jour le code qui a été écrit par rapport aux versions antérieures de l’éditeur principal de Visual Studio et que vous prévoyez d’utiliser l’éditeur adaptateurs (ou des shims) au lieu d’utiliser la nouvelle API, vous devez connaître les différences suivantes dans le comportement de l’éditeur de cartes en ce qui concerne l’éditeur principal précédent.  

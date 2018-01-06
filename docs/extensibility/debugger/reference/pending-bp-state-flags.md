@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c89469cd1b2d41fc0e3258d2875b9e22b7c55747
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c312123b9782b892f6ce99d7e7684b1622e75381
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
 Spécifie les indicateurs d’état de point d’arrêt en attente.  
@@ -47,10 +48,10 @@ public enum enum_PENDING_BP_STATE_FLAGS {
  PBPSF_VIRTUALIZED  
  Spécifie un virtualisé en attente de point d’arrêt, qui doit être liée à chaque chargement de nouveau code.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Utilisé pour le `flags` membre de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) structure.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

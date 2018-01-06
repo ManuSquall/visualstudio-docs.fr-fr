@@ -22,11 +22,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 80f9770fe0e6a0294ec43e450acc75f55b8ddbe2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ed085a38b77f7c323451e8209902bece3747ddb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replaceable-parameters"></a>Paramètres remplaçables
   Paramètres remplaçables, ou *jetons*, peut être utilisée dans les fichiers de projet pour fournir des valeurs pour les éléments de solution SharePoint dont les valeurs réelles ne sont pas connues au moment du design. Ils sont semblables à la norme [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] jetons de modèle. Pour plus d’informations, consultez [les paramètres de modèle](/visualstudio/ide/template-parameters).  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="tokens-list"></a>Liste des jetons  
  Le tableau suivant répertorie les jetons disponibles.  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |$SharePoint.Project.FileName$|Le nom du fichier projet contenant, par exemple, « NouvProj.csproj ».|  
 |$SharePoint.Project.FileNameWithoutExtension$|Le nom du fichier projet contenant sans l’extension de nom de fichier. Par exemple, « NewProj ».|  

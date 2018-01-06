@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25dd140a13856d5fd20288d8740cfcb331f52cd6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 096de389b7e62f70f8aad275e4fe098b399ee615
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Permet au processus de notification des événements de port.  
@@ -76,7 +77,7 @@ int WatchForProviderEvents(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Lorsque l’appelant veut supprimer un gestionnaire d’événements qui a été établi avec un appel précédent à cette méthode, l’appelant transmet les mêmes paramètres, comme il le faisait la première fois, mais laisse hors tension le `PFLAG_REASON_WATCH` indicateur.  
   
 ## <a name="example"></a>Exemple  

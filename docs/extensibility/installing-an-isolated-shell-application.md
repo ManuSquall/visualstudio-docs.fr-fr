@@ -16,11 +16,12 @@ caps.latest.revision: "40"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3c6d5d88563d97c18081cbf44b67e247d98a468
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fffbe31d9d5919c1e8b94482556c851fc07a1750
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installation d’une Application de Shell isolé
 Pour installer une application de Shell, vous devez effectuer les étapes suivantes.  
@@ -33,7 +34,7 @@ Pour installer une application de Shell, vous devez effectuer les étapes suivan
   
  Tout le code d’exemple dans ce document est fourni à partir de la [exemple de déploiement d’interpréteur de commandes](http://go.microsoft.com/fwlink/?LinkId=262245), que vous pouvez télécharger à partir de la galerie de Code sur le site Web MSDN. L’exemple montre les résultats de la réalisation de chacune de ces étapes.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour effectuer les procédures de cette rubrique, les outils suivants doivent être installés sur votre ordinateur.  
   
 -   Le SDK de Visual Studio  

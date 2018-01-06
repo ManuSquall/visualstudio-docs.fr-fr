@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f03dbae8b320161705c50da06d605cfc335074cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2dedd54aa1db26e38b6f212c616bd38c09018961
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implémentation des catégories personnalisées et des éléments d’affichage
 Un VSPackage peut fournir de contrôle des polices et couleurs de son texte à le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) par le biais des catégories personnalisées et des éléments d’affichage.  
@@ -54,9 +55,9 @@ Un VSPackage peut fournir de contrôle des polices et couleurs de son texte à l
   
 -   Remplir le Registre avec deux valeurs :  
   
-    |Nom|Type|Données|Description|  
+    |Name|Type|Données|Description|  
     |----------|----------|----------|-----------------|  
-    |Catégorie|REG_SZ|GUID|Un GUID est créé pour identifier la catégorie.|  
+    |Category|REG_SZ|GUID|Un GUID est créé pour identifier la catégorie.|  
     |Package|REG_SZ|GUID|Le GUID du service VSPackage qui prend en charge de la catégorie.|  
   
  Le service spécifié dans le Registre doit fournir une implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> pour la catégorie correspondante.  
@@ -69,9 +70,9 @@ Un VSPackage peut fournir de contrôle des polices et couleurs de son texte à l
   
 -   Remplir le Registre avec deux valeurs :  
   
-    |Nom|Type|Données|Description|  
+    |Name|Type|Données|Description|  
     |----------|----------|----------|-----------------|  
-    |Catégorie|REG_SZ|GUID|Un GUID est créé pour identifier le groupe.|  
+    |Category|REG_SZ|GUID|Un GUID est créé pour identifier le groupe.|  
     |Package|REG_SZ|GUID|Le GUID du service qui prend en charge de la catégorie.|  
   
  Le service spécifié dans le Registre doit fournir une implémentation de `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` pour le groupe correspondant.  
@@ -116,7 +117,7 @@ Un VSPackage peut fournir de contrôle des polices et couleurs de son texte à l
   
      L’IDE appelle la méthode appropriée après les modifications des utilisateurs de la **polices et couleurs** page. Par exemple, il appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> méthode si une nouvelle police est sélectionnée.  
   
-     ou  
+     - ou -  
   
 -   Interrogation de l’IDE pour les modifications.  
   

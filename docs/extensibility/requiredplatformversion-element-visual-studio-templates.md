@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f7eb4ada8378ff9009987f56341a65670a3c412
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 818405e6c7df6466208db325a7417e0b5b9387e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>Élément RequiredPlatformVersion (modèles Visual Studio)
 Spécifie la version minimale du système d’exploitation que le modèle de projet a besoin pour fonctionner correctement. Cet élément est utilisé pour des modèles de projet qui créent [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] applications.  
@@ -40,7 +41,7 @@ RequiredPlatformVersion
  Aucun.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -54,7 +55,7 @@ RequiredPlatformVersion
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Ce texte spécifie la version minimale du système d’exploitation requise par le modèle.  
   
 ## <a name="example"></a>Exemple  

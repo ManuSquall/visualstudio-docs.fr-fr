@@ -11,11 +11,12 @@ ms.assetid: d2025bd2-5984-4486-a61c-0a0933a735ea
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1291667c7acb47abe543d275549179abea0c8467
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f975fa077fe64052b54875b07d029ece71e83372
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-xml-documentation-comments-in-visual-basic"></a>Générer des commentaires de documentation XML en Visual Basic
 **Ce que :** vous permet de générer immédiatement de la base de XML nécessaires à la documentation de l’élément sélectionné. 

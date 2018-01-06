@@ -17,11 +17,12 @@ caps.latest.revision: "56"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbf9ab21b494bfc8b26251a8bdb79c16f81dc05d
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: vssdk
+ms.openlocfilehash: bf8c558d01538d477aee3670b3c119d72a83878d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-sdk"></a>SDK Visual Studio
 Le Kit de développement logiciel Visual Studio vous permet d’étendre les fonctionnalités de Visual Studio ou d’intégrer de nouvelles fonctionnalités à Visual Studio. Vous pouvez distribuer vos extensions à d’autres utilisateurs, ainsi que pour Visual Studio Marketplace. Voici quelques-unes des façons dont vous pouvez étendre Visual Studio :  
@@ -56,7 +57,7 @@ Le Kit de développement logiciel Visual Studio vous permet d’étendre les fon
  Tirer parti de la [Service d’images et de catalogue](../extensibility/image-service-and-catalog.md) pour la gestion de l’image de grande et de prise en charge des thèmes et la haute résolution.  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>Rechercher et installer des Extensions Visual Studio existants  
- Vous pouvez rechercher des extensions Visual Studio dans le **Extensions et mises à jour** boîte de dialogue sur le **outils** menu. Pour plus d’informations, consultez [recherche et utilisation des Extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Vous pouvez également rechercher des extensions dans le [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
+ Vous pouvez rechercher des extensions Visual Studio dans le **Extensions et mises à jour** boîte de dialogue sur le **outils** menu. Pour plus d’informations, consultez [Recherche et utilisation des extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Vous pouvez également rechercher des extensions dans le [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Référence du Kit de développement logiciel Visual Studio  
  Vous pouvez trouver la référence d’API du Kit de développement logiciel Visual Studio à [référence du Kit de développement logiciel Visual Studio](../extensibility/visual-studio-sdk-reference.md).  

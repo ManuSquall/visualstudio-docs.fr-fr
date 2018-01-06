@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7c42f7a0a2a87aadc63f65240b981bc3e94c5417
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ef494d68ba8ce8134483f910bc7e6d984e4717c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-model-elements"></a>Propriétés des éléments de modèle
 Cette section répertorie les propriétés que vous voyez dans la fenêtre Propriétés lorsque vous sélectionnez un élément dans le schéma de définition DSL ou dans l’Explorateur de DSL.  

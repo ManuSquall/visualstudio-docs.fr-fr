@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fd353e39e3e3edbdbdb929fa16abb74126dbbc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1133166560fa371bbb5a2b008175034d48a2a7b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Comment : fournir une prise en charge en mode plan étendue dans un Service de langage hérité
 Il existe deux options pour étendre la prise en charge en mode plan pour votre langage de prendre en charge la **réduire aux définitions** commande. Vous pouvez ajouter des régions en mode plan de contrôlés par l’éditeur et ajouter des régions en mode plan de contrôlé par le client.  

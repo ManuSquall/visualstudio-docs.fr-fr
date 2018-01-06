@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c626cfc6da56258241071476aba03690f349092
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2ce41826a3a0d778c5a417496d47f290e97806fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath (fonction)
 Cette fonction invite l’utilisateur à un chemin d’accès de projet, qui est une chaîne qui est uniquement explicite pour le plug-in de contrôle de code source. Elle est appelée lorsque l’utilisateur est :  
@@ -82,7 +83,7 @@ SCCRTN SccGetProjPath (
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|Le projet a été créé ou récupéré avec succès.|  
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée.|  
@@ -90,7 +91,7 @@ SCCRTN SccGetProjPath (
 |SCC_E_CONNECTIONFAILURE|Il a un problème, essayez de vous connecter au système de contrôle de code source.|  
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée s'est produite.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  L’objectif de cette fonction est de l’IDE acquérir les paramètres `lpProjName` et `lpAuxProjPath`. Une fois que le plug-in de contrôle de code source invite l’utilisateur pour obtenir cette information, il transmet ces deux chaînes à l’IDE. L’IDE persiste ces chaînes dans son fichier de solution et les transmet à la [SccOpenProject](../extensibility/sccopenproject-function.md) chaque fois que l’utilisateur ouvre ce projet. Ces chaînes activer le plug-in effectuer le suivi des informations associées à un projet.  
   
  Lorsque la fonction est appelée tout d’abord, `lpAuxProjPath` est définie sur une chaîne vide. `lProjName`peut également être vide, ou il peut contenir le nom du projet IDE, ce qui le plug-in de contrôle de code source peut utiliser ou ignorer. Lorsque la fonction est retournée avec succès, le plug-in retourne les deux chaînes correspondantes. L’IDE fait aucune hypothèse sur ces chaînes n’utilise pas les et n’autorisera pas l’utilisateur de les modifier. Si l’utilisateur souhaite modifier les paramètres, l’IDE appellera `SccGetProjPath` à nouveau, en passant les mêmes valeurs qu’il a reçu la dernière fois. Cela donne le contrôle complet plug-in sur ces deux chaînes.  

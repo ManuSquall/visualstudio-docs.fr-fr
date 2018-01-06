@@ -12,16 +12,17 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 962023733d2d746e0acb584e3dcbdc1a5e369012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec424f5e85f5bff9be5b276b3978b25dc3239fe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Prise en main des analyseurs de Roslyn
 Avec des analyseurs de code dynamique, basée sur le projet dans Visual Studio, les auteurs d’API peuvent être livrées analyse du code spécifique à un domaine dans le cadre de leurs packages NuGet.  Car ces analyseurs sont alimentées par la plateforme de compilateurs .NET (nom de code « Roslyn »), elles peuvent produire des avertissements dans votre code en cours de frappe avant même que vous avez terminé la ligne (pas plus en attente de générer votre code pour découvrir des problèmes).  Les analyseurs peuvent apparaître également un correctif de code automatique via l’invite d’ampoule Visual Studio pour vous permettre de nettoyer votre code immédiatement  
   
-## <a name="getting-started"></a>Commencer  
+## <a name="getting-started"></a>Prise en main  
  [Les analyseurs de Code dynamique Roslyn Introduction et procédure pas à pas](https://msdn.microsoft.com/en-us/magazine/dn879356.aspx)  
   
  [Ajout de Code résout la procédure pas à pas : Fournissent aux utilisateurs des correctifs pour les problèmes de l’analyseur](https://msdn.microsoft.com/en-us/magazine/dn904670.aspx)  

@@ -17,11 +17,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e8378114348e2cb384ab88c83e36bafc7294d871
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7cfc8b86a7a92c075d83c5693ddd6c49ddf5c9c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-user-settings-and-options"></a>Options et paramètres d’extension utilisateur
 Dans Visual Studio, il existe deux façons de mettre à jour les préférences de l’utilisateur. Le **Outils / Options** pages permettent aux utilisateurs de définir leurs propres valeurs pour différents types de paramètres, générales et spécifiques au langage. Paramètres de l’utilisateur permettent aux utilisateurs de spécifier les propriétés générales de configuration de Visual Studio. Pour plus d’informations sur les pages d’options, consultez [Options et les Pages d’Options](../extensibility/internals/options-and-options-pages.md). Pour plus d’informations sur les paramètres utilisateur, consultez [prise en charge pour les paramètres utilisateur](../extensibility/internals/support-for-user-settings.md).  

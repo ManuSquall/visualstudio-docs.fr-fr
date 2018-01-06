@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93c32d9eaa3549529a649472550ec8268cd0f6e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cf621b3050382d79fcf44df2ac5d50d9885e03d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scchistory-function"></a>SccHistory (fonction)
 Cette fonction affiche l’historique des fichiers spécifiés.  
@@ -58,7 +59,7 @@ SCCRTN SccHistory(
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|Historique de version a été obtenue avec succès.|  
 |SCC_I_RELOADFILE|Le système de contrôle de code source modifié réellement le fichier sur le disque lors de l’extraction de l’historique (par exemple, en l’obtention d’une ancienne version de celui-ci), afin de l’IDE doit recharger ce fichier.|  
@@ -69,7 +70,7 @@ SCCRTN SccHistory(
 |SCC_E_PROJNOTOPEN|Le projet n’a pas été ouvert.|  
 |SCC_E_NONSPECIFICERROR|Erreur non spécifique. L’historique des fichiers n’a pas pu être obtenu.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le plug-in de contrôle de code source peut afficher une boîte de dialogue pour afficher l’historique de chaque fichier, à l’aide de `hWnd` en tant que la fenêtre parente. Vous pouvez également le texte facultatif sortie rappel fonction fourni à la [SccOpenProject](../extensibility/sccopenproject-function.md) peut être utilisé, si elle est prise en charge.  
   
  Notez que dans certaines circonstances, le fichier en cours d’examen peut changer pendant l’exécution de cet appel. Par exemple, le [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] commande history permet de l’utilisateur pour obtenir une version ancienne du fichier. Dans ce cas, la contrôle de code source retourne plug-in `SCC_I_RELOAD` pour avertir l’IDE qu’il doit recharger le fichier.  

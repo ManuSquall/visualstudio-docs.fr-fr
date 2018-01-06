@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e409d31b4f1e16f735b9b4ef22d42dedccf55a9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c4c2fc24775cee3d40857166d3415f90b2adf756
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-vspackages"></a>Dépanner les packages VS
 Voici les problèmes courants que vous pouvez avoir avec votre VSPackage et conseils pour résoudre les problèmes.  

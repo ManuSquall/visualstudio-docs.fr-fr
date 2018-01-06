@@ -13,11 +13,12 @@ ms.suite:
 ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 manager: ghogen
-ms.openlocfilehash: be4b63e767463b7b801ab5ed98d8482e94aacd1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: v-brickg
+ms.openlocfilehash: 001e9db65209f8ae60cd070d5d68b9f72ef62672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Référence de valeur de couleur pour Visual Studio
 Cette rubrique est une référence pour la création de nouveaux jetons de couleur. Lorsque vous créez une nouvelle interface utilisateur, vous pouvez utiliser des couleurs similaires à partir de l’interface utilisateur existante pour choisir les couleurs pour chaque thème principal et le nom de la couleur système pour cet élément de thèmes de contraste élevé. 
@@ -36,7 +37,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
 -   **Pour de meilleurs résultats, couleur de la paire définit avec une interface utilisateur similaire à l’exemple.**
 
-## <a name="properties-window"></a>Propriétés (fenêtre)
+## <a name="properties-window"></a>Fenêtre Propriétés
 
 ![Fenêtre Propriétés de lumière (à gauche), foncé (centre) et bleus thèmes (à droite)](../../extensibility/ux-guidelines/media/properties-window-light-dark-blue.png "fenêtre Propriétés dans les thèmes clair et bleu foncé")<br />Fenêtre Propriétés dans les thèmes clair et bleu foncé
 
@@ -98,7 +99,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 | Premier plan : pointage | ![Échantillon de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Échantillon de #FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 échantillon")<br />`#FFF1F1F1` | ![Échantillon de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Échantillon de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
 | Présentation | ![Échantillon de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![Échantillon de #FF292929](../../extensibility/ux-guidelines/media/292929.png "#FF292929 échantillon")<br />`#FF292929` | ![Échantillon de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![Échantillon de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "des échantillons de contrôle")<br />`Control` |
 | Arrière-plan : pointage | ![Échantillon de #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 échantillon")<br />`#FFC9DEF5` | ![Échantillon de #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 échantillon")<br />`#FF3E3E40` | ![Échantillon de #FFFFFCF4](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 échantillon")<br />`#FFFFFCF4` | ![Mettez en surbrillance les échantillons](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
-| Bordure | Aucune | None | None | Aucune |
+| Bordure | Aucun. | Aucun | Aucun | Aucun. |
 | Bordure : pointage | ![Échantillon de #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 échantillon")<br />`#FFC9DEF5` | ![Échantillon de #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 échantillon")<br />`#FF3E3E40` | ![Échantillon de #FFE5C365](../../extensibility/ux-guidelines/media/E5C365.png "## FFE5C365 échantillon")<br />`#FFE5C365` | ![Cadre de fenêtre échantillon](../../extensibility/ux-guidelines/media/HCWindowFrame.png "nuance de cadre de fenêtre")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Groupe de catégories

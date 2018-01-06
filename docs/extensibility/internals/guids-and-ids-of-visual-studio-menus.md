@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cf196a227e5cb92cae48dd1eeceace25ffc0295
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 69ad8f62931b628582c73a3e370a86611795caa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID et ID de Menus Visual Studio
 Cette rubrique énumère les valeurs GUID et l’ID des menus et des groupes dans la barre de menus de Visual Studio. Ces valeurs sont définies dans les fichiers .vsct qui sont installés dans le cadre du SDK Visual Studio. Pour plus d’informations, consultez [IDE-Defined commandes, Menus et des groupes](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -89,7 +90,7 @@ Cette rubrique énumère les valeurs GUID et l’ID des menus et des groupes dan
 |-----------|--------|  
 |Annuler/Rétablir|IDG_VS_EDIT_UNDOREDO|  
 |Couper/copier/coller.|IDG_VS_EDIT_CUTCOPY|  
-|Select|IDG_VS_EDIT_SELECT|  
+|Sélectionner|IDG_VS_EDIT_SELECT|  
 |GoTo|IDG_VS_EDIT_GOTO|  
 |Find|IDG_VS_EDIT_FIND|  
 |Objets|IDG_VS_EDIT_OBJECTS|  

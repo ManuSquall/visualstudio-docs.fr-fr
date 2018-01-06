@@ -11,11 +11,12 @@ ms.assetid: a63d6407-5acb-4d5f-8c0e-ecedddc07177
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 574a1a41464ede08571e1c0201618d666fa7ad92
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3607e646f5f1ccc6121e5ee8a5b71772008f1ce8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inline-a-temporary-variable-in-visual-basic"></a>Inline, une variable temporaire en Visual Basic
 **Ce que :** vous permet de supprimer l’utilisation d’une variable temporaire et remplacez-le par le code réel à la place.

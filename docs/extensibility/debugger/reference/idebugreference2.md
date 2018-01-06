@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 27e880dbf5b602c1bd0b98c6ce5ccc2fdf88e37a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 30f3b8351789adbb52651909cf9ff3b669934d66
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Cette interface représente une référence à une propriété de frame de pile ou une autre propriété.  
@@ -55,7 +56,7 @@ IDebugReference2 : IUnknown
 |[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Définit ce type de référence.|  
 |[Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Compare cette référence avec un autre.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 > [!NOTE]
 >  Cette utilisation de « propriété » ne doit pas être confondue avec cette variable de membre d’une classe, ce qui signifie que même si un `IDebugReference2` peut représenter une telle entité.  
@@ -66,7 +67,7 @@ IDebugReference2 : IUnknown
   
  Un `IDebugProperty2` interface peut être considéré comme une valeur avec un nom, un type et une adresse. Un `IDebugReference2`sur l’autre revanche, peut être considéré comme un type et une adresse.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d16ed0f58929a6559812261c3443b3561375205
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Les notifications et progression pour Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a>Systèmes de notification  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="choosing-the-right-method"></a>Choisir la méthode de droite  
  Utilisez cette table pour vous aider à choisir la méthode appropriée pour informer l’utilisateur de votre message.  
   
-|Méthode|Utilisation|N’utilisez pas|  
+|Méthode|Utilisez|N’utilisez pas|  
 |------------|---------|----------------|  
 |[Boîtes de dialogue de message erreur modal](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|À utiliser lors de la réponse d’un utilisateur est requis avant de continuer.|N’utilisez pas lorsqu’il n’est pas nécessaire pour bloquer l’utilisateur et leur flux d’interruption. Évitez d’utiliser des boîtes de dialogue modales s’il est possible d’afficher un message dans un autre moyen moins importun.|  
 |[Barre d’état IDE](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|Utilisez lorsqu’il existe des informations textuelles ambiantes concernant l’état d’un processus.|N’utilisez pas seul. Préférable d’utiliser conjointement avec un autre mécanisme de commentaires.|  
@@ -152,7 +153,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="determinate-progress"></a>Progression déterminée  
   
-|Type de la progression|Quand et comment utiliser|Remarques|  
+|Type de la progression|Quand et comment utiliser|Notes|  
 |-------------------|-------------------------|-----------|  
 |Barre de progression (déterminée)|Durée d’attendue > 5 secondes.<br /><br /> Peut inclure une description textuelle des détails du processus.|**Ne pas** incorporer du texte dans l’animation.|  
 |Barre d'informations|Messagerie associé à l’interface utilisateur contextuelle. Consultez [barres d’informations](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).<br /><br /> Peut inclure une description textuelle des détails du processus.|**Ne pas** utiliser plusieurs barres d’informations lorsque vous avez besoin indiquer plusieurs processus. Utilisez les barres de progression empilées à la place.|  
@@ -162,7 +163,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="indeterminate-progress"></a>Progression indéterminée  
   
-|Type de la progression|Quand et comment utiliser|Remarques|  
+|Type de la progression|Quand et comment utiliser|Notes|  
 |-------------------|-------------------------|-----------|  
 |Barre de progression (indéterminé)|Durée d’attendue > 5 secondes.<br /><br /> Peut inclure une description textuelle des détails du processus.|**Ne pas** incorporer du texte dans l’animation.|  
 |Tirets (animées points horizontales)|Aller-retour au serveur.<br /><br /> Placée près du point de contexte entre le haut du conteneur parent.|**Ne pas** utiliser si ne pas apparenté à un conteneur entier.|  

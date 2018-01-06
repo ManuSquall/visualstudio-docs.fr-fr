@@ -13,18 +13,19 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 302d36a968561f9823a5d36177e21c9698fc9e2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 99144288a4da2a27956a9dc065ba5f5fba03fdcb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="restrictions-on-string-lengths"></a>Restrictions sur les longueurs de chaîne
 L’API de plug-in de contrôle de Source de limite les longueurs des chaînes utilisées dans les différentes fonctions.  
   
 ## <a name="string-length-values"></a>Valeurs de longueur de chaîne  
   
-|Constante|Valeur|  
+|Constante|Value|  
 |--------------|-----------|  
 |`SCC_NAME_LEN`|31|  
 |`SCC_AUXLABEL_LEN`|31|  
@@ -34,7 +35,7 @@ L’API de plug-in de contrôle de Source de limite les longueurs des chaînes u
 > [!NOTE]
 >  Longueur n’inclut pas la fin du `null`. Autres constantes avec un suffixe « _SIZE » au lieu de « _LEN » n’incluent pas d’espace pour la fin du `null`.  
   
-|Constante|Valeur|  
+|Constante|Value|  
 |--------------|-----------|  
 |SCC_NAME_SIZE|32|  
 |SCC_AUXLABEL_SIZE|32|  

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c4b91633c94b899157cef5418be0ac8a4d784f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9cc1e668f1d78bc6a1db66b6fd4dfebf77b0f6ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossaire du débogueur Visual Studio
 Les éléments suivants sont des termes utilisés dans le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Kit de développement logiciel de débogage.  
@@ -31,7 +32,7 @@ Les éléments suivants sont des termes utilisés dans le [!INCLUDE[vsprvs](../.
  causalité  
  Offre la possibilité de suivre un thread logique d’exécution sur plusieurs threads physiques, des processus et des ordinateurs et afin de reconstruire la pile des appels du thread logique à un moment donné dans la durée de vie de ce thread.  
   
- contexte de code  
+ Contexte de code  
  Fournit une abstraction d’une position dans le code connu du moteur de débogage. Pour la plupart des architectures d’exécution, un contexte de code est une adresse dans le flux d’instructions d’un programme. Pour les langues non traditionnel, dans lequel code ne peut-être pas être représenté par des instructions, un contexte de code peut-être être représenté par d’autres moyens.  
   
  chemin d’accès du code  
@@ -40,7 +41,7 @@ Les éléments suivants sont des termes utilisés dans le [!INCLUDE[vsprvs](../.
  moteur de débogage (DE)  
  Un composant qui autorise le débogage d’une architecture d’exécution. Un moteur de débogage fonctionne conjointement avec le système d’exploitation ou un interpréteur et fournit des services de débogage telles que de l’évaluation d’expression, points d’arrêt et contrôle l’exécution.  
   
- contexte de document  
+ Contexte de document  
  Fournit une abstraction d’une position dans un document de fichier source connu du moteur de débogage. Pour la plupart des langages, un contexte de document est une position dans un fichier source. Pour les langues non traditionnel, pour lesquels le fichier source ne peut pas être texte, un contexte de document peut-être être représenté par d’autres moyens. Voir aussi *document position*.  
   
  position du document  

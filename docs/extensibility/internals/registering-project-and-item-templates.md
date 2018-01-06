@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c1cb9e31384822dddcdd3668bfb3a54bc2782d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c064a6632741eba69a553be87fb8f829063b266b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-project-and-item-templates"></a>L’inscription des modèles de projet et élément
 Types de projets doivent inscrire les répertoires où se trouvent leurs modèles de projet et d’élément de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]utilise les informations d’inscription associées à vos types de projet pour déterminer les éléments à afficher dans le **ajouter un nouveau projet** et **ajouter un nouvel élément** boîtes de dialogue.  
@@ -40,7 +41,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|Nom|Type|Description|  
+|Name|Type|Description|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Nom par défaut des projets de ce type.|  
 |DisplayName|REG_SZ|ID de ressource du nom doit être récupéré à partir de la DLL satellite inscrit sous Packages.|  
@@ -58,7 +59,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "SortPriority"=dword:00000064  
 ```  
   
-|Nom|Type|Description|  
+|Name|Type|Description|  
 |----------|----------|-----------------|  
 |@|REG_SZ|ID de ressource pour les modèles d’ajouter un élément.|  
 |TemplatesDir|REG_SZ|Chemin d’accès des éléments de projet affichés dans la boîte de dialogue pour le **ajouter un nouvel élément** Assistant.|  
@@ -85,7 +86,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "SortPriority"=dword:00000064  
 ```  
   
-|Nom|Type|Description|  
+|Name|Type|Description|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Rend le filtre à l’un des filtres courants dans les **rechercher dans les fichiers** boîte de dialogue. Filtres courants sont répertoriés dans la liste de filtres avant les filtres ne pas marqué comme commun.|  
 |CommonOpenFilesFilter|REG_DWORD|Rend le filtre à l’un des filtres courants dans les **ouvrir le fichier** boîte de dialogue. Filtres courants sont répertoriés dans la liste de filtres avant les filtres ne pas marqué comme commun.|  

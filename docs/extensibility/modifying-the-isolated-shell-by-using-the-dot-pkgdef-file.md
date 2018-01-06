@@ -14,11 +14,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4716a2c69d64586131c913cde8e3e2d780f9aa69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a0e654e603abe0e4f1546e5b06c2b3644af2067e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modification de l’interpréteur de commandes isolé à l’aide de le. Fichier pkgdef
 Le fichier .pkgdef prend en charge les paramètres que vous pouvez utiliser pour personnaliser une application de shell isolé. Il spécifie les valeurs qui sont créés lorsqu’une application est installée sur un ordinateur et qui sont référencés par le shell Visual Studio lorsqu’il démarre l’application. Les paramètres sont organisés dans le fichier basé sur les clés de Registre applicable.  
@@ -59,10 +60,10 @@ Le fichier .pkgdef prend en charge les paramètres que vous pouvez utiliser pour
 ## <a name="settings"></a>Paramètres  
  Le tableau suivant décrit les valeurs définies sous [$$RootKey].  
   
-|Nom|Type|Valeur|  
+|Name|Type|Value|  
 |----------|----------|-----------|  
-|AddinsAllowed|DWORD|True si les compléments peuvent être chargés ; Sinon, false.<br /><br /> La valeur par défaut est true.|  
-|AllowsDroppedFilesOnMainWindow|DWORD|True si la fenêtre principale peut accepter des fichiers supprimés ; Sinon, false. Supprimé de la fenêtre principale de fichiers sont ouverts à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> (méthode). Cela est équivalent à l’ouverture d’un document à l’aide de la **ouvrir** commande sur le **fichier** menu de l’application.<br /><br /> La valeur par défaut est true.|  
+|AddinsAllowed|dword|True si les compléments peuvent être chargés ; Sinon, false.<br /><br /> La valeur par défaut est true.|  
+|AllowsDroppedFilesOnMainWindow|dword|True si la fenêtre principale peut accepter des fichiers supprimés ; Sinon, false. Supprimé de la fenêtre principale de fichiers sont ouverts à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> (méthode). Cela est équivalent à l’ouverture d’un document à l’aide de la **ouvrir** commande sur le **fichier** menu de l’application.<br /><br /> La valeur par défaut est true.|  
 |AppIcon|chaîne|Le chemin d’accès complet de l’icône de programme. Cette icône s’affiche dans la barre de titre à gauche du nom de l’application.<br /><br /> La valeur par défaut est « $RootFolder$\\*solutionName*.ico », où *solutionName* est le nom du fichier de solution d’application.|  
 |AppLocalizationPackage|chaîne|Le GUID du VSPackage qui contient l’assembly satellite de l’interface utilisateur pour l’application. Ce VSPackage inclut une version compilée du fichier .vsct et permettre inclure d’autres chaînes localisées. Ensembles de fonctionnalités et des groupes de commandes de menu peuvent activés ou désactivés en modifiant les paramètres dans le fichier .vsct de projet l’interface utilisateur.<br /><br /> La valeur par défaut est « {*vsUiPackageGuid*} », où *vsUiPackageGuid* est le GUID affecté au package de l’interface utilisateur d’application.|  
 |AppName|chaîne|Nom de l'application. Le nom apparaît dans la barre de titre de la fenêtre d’application.<br /><br /> La valeur par défaut est le nom du fichier de solution d’application.|  
@@ -72,9 +73,9 @@ Le fichier .pkgdef prend en charge les paramètres que vous pouvez utiliser pour
 |DefaultProjectsLocation|chaîne|Le chemin d’accès complet du dossier de projets par défaut. Par exemple :<br /><br /> `"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub\Projects"`<br /><br /> Si le **emplacement des projets Visual Studio** option est disponible dans l’application, ce paramètre affecte également l’état par défaut de l’option. Pour plus d’informations, consultez [NIB : général, projets et Solutions, boîte de dialogue Options](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).<br /><br /> La valeur par défaut est « $MyDocuments$\\*solutionName*», où *solutionName* est le nom du fichier de solution d’application.|  
 |DefaultSearchPage|chaîne|URL de page de recherche par défaut pour la fenêtre du navigateur Web interne.<br /><br /> Si le **page de recherche** option est disponible dans l’application, ce paramètre affecte également l’état par défaut de l’option. Pour plus d’informations, consultez [navigateur Web, environnement, boîte de dialogue Options](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> La valeur par défaut est « http://search.live.com ».|  
 |DefaultUserFilesFolderRoot|chaîne|Le nom du dossier de l’utilisateur, par rapport à l’utilisateur actuel du dossier Mes Documents.<br /><br /> La valeur par défaut est le nom du fichier de solution d’application.|  
-|DisableOutputWindow|DWORD|Indique si le shell isolé doit traiter la fenêtre de sortie comme étant désactivés.<br /><br /> Si cette valeur est définie sur true, Visual Studio n’affiche pas la sortie de gestionnaire de build de solution dans le **sortie** fenêtre et masque la **afficher la fenêtre Sortie au démarrage de la build** case à cocher dans la  **Projets et Solutions** catégorie dans le **Options** boîte de dialogue.<br /><br /> La valeur par défaut est false.|  
-|HideMiscellaneousFilesByDefault|DWORD|True pour masquer le **fichiers divers** dossier par défaut dans **l’Explorateur de solutions**; sinon, false.<br /><br /> Si le **afficher les fichiers divers dans l’Explorateur de solutions** option est disponible dans l’application, ce paramètre affecte également l’état par défaut de l’option. Pour plus d’informations, consultez [Documents, environnement, boîte de dialogue Options](../ide/reference/documents-environment-options-dialog-box.md).<br /><br /> La valeur par défaut est false.|  
-|HideSolutionConcept|DWORD|True pour créer des projets comme des applications autonomes de tous les projets et de masquer la solution et les commandes d’associés à la solution pour les projets autonomes par défaut ; Sinon, false.<br /><br /> Si le **toujours afficher la solution** option est disponible dans l’application, ce paramètre affecte également l’état par défaut de l’option. Pour plus d’informations, consultez [NIB : général, projets et Solutions, boîte de dialogue Options](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).<br /><br /> La valeur par défaut est false.|  
+|DisableOutputWindow|dword|Indique si le shell isolé doit traiter la fenêtre de sortie comme étant désactivés.<br /><br /> Si cette valeur est définie sur true, Visual Studio n’affiche pas la sortie de gestionnaire de build de solution dans le **sortie** fenêtre et masque la **afficher la fenêtre Sortie au démarrage de la build** case à cocher dans la  **Projets et Solutions** catégorie dans le **Options** boîte de dialogue.<br /><br /> La valeur par défaut est false.|  
+|HideMiscellaneousFilesByDefault|dword|True pour masquer le **fichiers divers** dossier par défaut dans **l’Explorateur de solutions**; sinon, false.<br /><br /> Si le **afficher les fichiers divers dans l’Explorateur de solutions** option est disponible dans l’application, ce paramètre affecte également l’état par défaut de l’option. Pour plus d’informations, consultez [Documents, environnement, boîte de dialogue Options](../ide/reference/documents-environment-options-dialog-box.md).<br /><br /> La valeur par défaut est false.|  
+|HideSolutionConcept|dword|True pour créer des projets comme des applications autonomes de tous les projets et de masquer la solution et les commandes d’associés à la solution pour les projets autonomes par défaut ; Sinon, false.<br /><br /> Si le **toujours afficher la solution** option est disponible dans l’application, ce paramètre affecte également l’état par défaut de l’option. Pour plus d’informations, consultez [NIB : général, projets et Solutions, boîte de dialogue Options](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).<br /><br /> La valeur par défaut est false.|  
 |NewProjDlgInstalledTemplatesHdr|chaîne|Le nom de l’en-tête de modèles Visual Studio nstalled dans les **modèles** liste dans le **nouveau projet** boîte de dialogue. Il s’agit d’une chaîne ou un identificateur de ressource localisable est chargé à partir du package de l’interface utilisateur d’application.<br /><br /> La valeur par défaut est «*solutionName* modèles installés », où *solutionName* est le nom du fichier de solution d’application.|  
 |NewProjDlgSlnTreeNodeTitle|chaîne|Le nom de la **Solutions Visual Studio** nœud dans le **types de projet** d’arborescence dans le **nouveau projet** boîte de dialogue. Il s’agit d’une chaîne ou un identificateur de ressource localisable est chargé à partir du package de l’interface utilisateur d’application.<br /><br /> La valeur par défaut est «*solutionName* modèles installés », où *solutionName* est le nom du fichier de solution d’application.|  
 |SolutionFileCreatorIdentifier|chaîne|L’identificateur d’application, qui apparaît sous forme de la deuxième ligne dans les fichiers de solution sont générés par l’application. Cette ligne indique à l’application qui a créé le fichier. Par convention, cette valeur comprend le nom de l’application et le numéro de version. Par exemple :<br /><br /> `"SolutionFileCreatorIdentifier"="MyVSShellStub Solution File, Format Version 10.00"`<br /><br /> Le programme VSLauncher.exe, qui est le programme par défaut pour l’ouverture d’un fichier de solution Visual Studio, utilise cette deuxième ligne pour déterminer la version de Visual Studio dans lequel ouvrir le fichier solution. L’application nécessite son propre Lanceur pour gérer ses fichiers de solution associés. Le service de lancement peut également utiliser cette deuxième ligne dans le fichier solution pour déterminer quelle version de l’application pour ouvrir la solution.<br /><br /> Remarque : Le programme Visual Studio VSLauncher.exe ne gère pas les fichiers .sln qui ont été créés par une application de shell isolé.<br /><br /> La valeur par défaut est «*solutionName* fichier de Solution, Version du Format 10,00", où *solutionName* est le nom du fichier de solution d’application.|  
@@ -107,14 +108,14 @@ Le fichier .pkgdef prend en charge les paramètres que vous pouvez utiliser pour
 ## <a name="profile-settings"></a>Paramètres de profil  
  Le tableau suivant décrit les valeurs qui sont définies pour chaque package associé sous [$RootKey$ \Profile].  
   
-|Nom|Type|Valeur|  
+|Name|Type|Value|  
 |----------|----------|-----------|  
 |AutoSaveFile|chaîne|Le répertoire dans lequel l’application stocke les fichiers d’enregistrement automatique.<br /><br /> La valeur par défaut est « $RootFolder$\Profiles\CurrentSettings.vssettings ».|  
   
 ## <a name="package-satellite-dll-settings"></a>Paramètres de DLL Satellite de package  
  Le tableau suivant décrit les valeurs qui sont définis sous [$RootKey$ \Packages\\{*vsPackageGuid*} \SatelliteDll] pour la DLL de chaque package associé, satellite où *vsPackageGuid* est le GUID du package associé.  
   
-|Nom|Type|Valeur|  
+|Name|Type|Value|  
 |----------|----------|-----------|  
 |DllName|chaîne|Le nom de fichier de la DLL.<br /><br /> La valeur par défaut est «*solutionName*ui.dll », où *solutionName* est le nom du fichier de solution d’application.|  
 |Chemin d’accès|chaîne|Le répertoire qui contient la DLL satellite.<br /><br /> La valeur par défaut est « $PackageFolder$ ».|  

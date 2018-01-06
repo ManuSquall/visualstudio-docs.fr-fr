@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9ba26d779d89944cb4f8852cbb7354f31c54cd8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 56e86962c8aa56b787eaf88f627ee807d894872c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 DÉCONSEILLÉE. N’UTILISEZ PAS.  
@@ -56,7 +57,7 @@ int Attach_V7 (
 ## <a name="return-value"></a>Valeur de retour  
  Une implémentation doit toujours renvoyer `E_NOTIMPL`.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 > [!WARNING]
 >  En tant que de [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)], cette méthode n’est plus utilisée et doit toujours renvoyer `E_NOTIMPL`. Consultez le [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) si le nœud du programme doit indiquer qu’il ne peut pas être attaché à ou si le nœud de programme définit simplement le programme d’interface pour une autre approche `GUID`. Sinon, mettre en œuvre la [attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md) (méthode).  

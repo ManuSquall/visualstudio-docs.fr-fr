@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b9f71c83d70dc6daca7a3906b784d6babf8dea7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7929ead4ced01561adb8c11dcaa56bc97f57884b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enumerators"></a>Énumérateurs
 Cette section répertorie les types de données d’énumérateur dans l’API de plug-in de contrôle Source qui doit reconnaître le plug-in de contrôle de code source.  

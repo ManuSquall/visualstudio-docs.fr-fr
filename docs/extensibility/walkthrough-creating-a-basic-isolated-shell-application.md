@@ -17,16 +17,17 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4df0d9f772d92ac7f1f106b9befc0a8a2f89a22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 28a555f2ab6e907a54cfb88d57ee09f5f47771ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Procédure pas à pas : Création d’une Application de base de Shell isolé
 Cette procédure pas à pas montre comment créer une solution de shell isolé, personnaliser la fenêtre outil à propos d’et créer un programme d’installation qui installe le shell isolé.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Pour déployer le shell isolé, vous devez également utiliser le Package redistribuable Visual Studio Shell (isolé).  
   
 ## <a name="creating-an-isolated-shell-solution"></a>Création d’une Solution de Shell isolé  
@@ -78,7 +79,7 @@ Cette procédure pas à pas montre comment créer une solution de shell isolé, 
   
 3.  Générez la solution et commencez le débogage.  
   
-4.  Dans **affichage / autres fenêtres**, cliquez sur **navigateur Web**. Le **navigateur Web** fenêtre affiche la page d’accueil de Microsoft Corporation.  
+4.  Dans **vue > autres fenêtres**, cliquez sur **navigateur Web**. Le **navigateur Web** fenêtre affiche la page d’accueil de Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Suppression de la commande d’impression  
  Le fichier .vsct dans un projet de l’interface utilisateur du shell isolé se compose d’un ensemble de déclarations du formulaire `<Define name=No_` *élément*`>`, où *élément* est un des menus de Visual Studio standard et des commandes.  
@@ -101,7 +102,7 @@ Cette procédure pas à pas montre comment créer une solution de shell isolé, 
   
 4.  Cette opération supprime la commande d’impression.  
   
-5.  Démarrez le débogage de l’application de shell isolé. Vérifiez que le **fichier, d’impression** commande a disparu.  
+5.  Démarrez le débogage de l’application de shell isolé. Vérifiez que le **fichier > Imprimer** commande a disparu.  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>Suppression de fonctionnalités à partir du Shell isolé  
  Vous pouvez supprimer certains des packages qui sont chargées avec Visual Studio en modifiant le fichier .pkgundef si vous ne souhaitez pas que ces fonctionnalités dans votre application de shell isolé personnalisé. Vous spécifiez le package de l’une des sous-clés de la clé de Registre \Packages $RootKey$.  
@@ -147,7 +148,7 @@ Cette procédure pas à pas montre comment créer une solution de shell isolé, 
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.")]  
     ```  
   
-4.  Démarrer le débogage et dans l’application de shell isolé, ouvrez le **aide / sur** boîte. Vous devez voir les chaînes modifiés. Le titre de l’aide/à propos de la zone est le même que le `AssemblyTitle` valeur AssemblyInfo.cs.  
+4.  Démarrer le débogage et dans l’application de shell isolé, ouvrez le **aide > sur** boîte. Vous devez voir les chaînes modifiés. Le titre de l’aide/à propos de la zone est le même que le `AssemblyTitle` valeur AssemblyInfo.cs.  
   
 5.  Les propriétés de la **propos** zone se trouvent dans le fichier MyVSShellStub.AboutBoxPackage\AboutBox.xaml. Pour modifier la largeur de l’aide/à propos de la zone, accédez à la `AboutDialogStyle` bloquer et définir le `Width` propriété à 200 :  
   

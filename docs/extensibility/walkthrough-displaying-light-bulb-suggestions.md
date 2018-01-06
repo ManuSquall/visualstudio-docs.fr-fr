@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 46a20e68874db1bc94dda4227c062174e0b72b01
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 97ab32d4bfe0772d7b50ea1ca5a0b0ec143ed536
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Procédure pas à pas : Affichage des Suggestions d’ampoule
 Les ampoules sont des icônes utilisées dans l’éditeur Visual Studio développés pour afficher un ensemble d’actions, par exemple résout des problèmes identifiés par des analyseurs de code intégrés ou de la refactorisation de code.  
@@ -39,7 +40,7 @@ Les ampoules sont des icônes utilisées dans l’éditeur Visual Studio dévelo
   
  Vous pouvez utiliser les ampoules pour fournir vos propres mesures suggérées. Par exemple, vous pouvez fournir des actions pour déplacer des accolades ouvrantes à une nouvelle ligne ou les déplacer vers la fin de la ligne précédente. La procédure suivante montre comment créer une ampoule qui s’affiche sur le mot actuel et suggère deux actions : **convertir en majuscules** et **convertir en minuscules**.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Création d’un projet Managed Extensibility Framework (MEF)  

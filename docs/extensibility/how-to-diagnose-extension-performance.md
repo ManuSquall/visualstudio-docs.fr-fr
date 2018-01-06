@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: bertaygu
+ms.openlocfilehash: 1d1034cce8b2fced5af48a0a4bfa8620b56994e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Mesurer l’impact d’extension de démarrage
 
@@ -48,7 +49,7 @@ Nous avons ajouté plusieurs fonctionnalités à partir de Visual Studio 2015 po
 
 Vous trouverez plus d’informations sur ces fonctionnalités dans les documents suivants :
 
-[Contextes d’interface utilisateur basée sur des règles](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): un moteur basé sur une règle plus riche basé sur les contextes d’interface utilisateur permettent de créer des contextes personnalisés basés sur les types de projets, les versions et les fonctionnalités. Les contextes personnalisés peuvent servir à charger un package durant les scénarios plus spécifiques telles que la présence d’un projet avec une fonctionnalité spécifique au lieu de démarrage ; ou autoriser [commande visibilité à un contexte personnalisé](https://msdn.microsoft.com/en-us/library/bb166512.aspx) basé sur les fonctionnalités de projet ou d’autres termes disponibles, éliminant ainsi la nécessité de charger un package pour inscrire un gestionnaire de requête de statut de commande.
+[Contextes d’interface utilisateur basée sur des règles](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): un moteur basé sur une règle plus riche basé sur les contextes d’interface utilisateur permettent de créer des contextes personnalisés basés sur les types de projets, les versions et les fonctionnalités. Les contextes personnalisés peuvent servir à charger un package durant les scénarios plus spécifiques telles que la présence d’un projet avec une fonctionnalité spécifique au lieu de démarrage ; ou autoriser [commande visibilité à un contexte personnalisé](visibilityconstraints-element.md) basé sur les fonctionnalités de projet ou d’autres termes disponibles, éliminant ainsi la nécessité de charger un package pour inscrire un gestionnaire de requête de statut de commande.
 
 [Prise en charge asynchrone package](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): packages de Visual Studio être chargé dans l’arrière-plan de façon asynchrone si le chargement du package a été demandé par un attribut de charge automatique ou d’une requête de service asynchrone permet à la nouvelle classe de base AsyncPackage dans Visual Studio 2015 . Ce chargement en arrière-plan permet à l’IDE à rester réactif pendant que l’extension est initialisée en arrière-plan et des scénarios critiques comme charge de solution et de démarrage n’affectées.
 
@@ -176,6 +177,6 @@ Une des vues dans la trace qui seront utiles pour déterminer l’impact sera le
 
 Il est important de réduire le nombre d’assemblys chargés à l’intérieur d’une routine d’initialisation de package que chaque assembly supplémentaire implique d’e/s disque supplémentaire qui peut ralentir le démarrage considérablement sur les ordinateurs plus lents.
 
-## <a name="summary"></a>Résumé
+## <a name="summary"></a>Récapitulatif
 
 Démarrage de Visual Studio a été un des domaines en permanence, nous obtenons des commentaires sur. Notre objectif, comme indiqué plus haut est pour tous les utilisateurs ont un démarrage cohérent avec tous les composants et qu’ils ont installé des extensions et nous souhaitons travailler avec les propriétaires d’extension pour les aider à atteindre cet objectif. Les instructions ci-dessus doivent être utiles pour comprendre un impact extensions au démarrage et soit évitant automatiquement la charge ou de charger de façon asynchrone pour réduire l’impact sur la productivité des utilisateurs.

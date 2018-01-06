@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca03fd4430c3cfcb9474cfd4c420ec5ab560aa94
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1fa2bebfe6433ed24198ace2327b72a61c376dd8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 Cette méthode crée un énumérateur pour les espaces de noms associé à l’adresse de débogage.  
@@ -49,7 +50,7 @@ int GetNamespacesUsedAtAddress(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Il peut y avoir plusieurs espaces de noms associés à une adresse donnée debug, par exemple, imbriquée des espaces de noms ou de plusieurs `using` instructions.  
   
 ## <a name="see-also"></a>Voir aussi  

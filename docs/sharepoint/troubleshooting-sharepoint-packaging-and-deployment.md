@@ -28,11 +28,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 569f177f23ce8c1e32441263b219f51d2305ca86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3c147fd683db68bed3b66f0eac146b8c98272d77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>Dépannage de la création de packages et du déploiement SharePoint
   Cette rubrique couvre différents problèmes que vous pouvez rencontrer lorsque vous empaquetez et déployez des solutions SharePoint.  
@@ -51,11 +52,11 @@ ms.lasthandoff: 10/31/2017
   
  Le tableau suivant montre les paramètres pour le **Deployment Conflict Resolution** propriété.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |Automatique|Détecte les collisions et résout automatiquement les conflits.|  
-|Prompt|Détecte les collisions et les signale au développeur avant de résoudre les conflits.|  
-|None|Ne détecte pas les collisions.|  
+|Invite|Détecte les collisions et les signale au développeur avant de résoudre les conflits.|  
+|Aucun.|Ne détecte pas les collisions.|  
   
 ## <a name="differences-between-f5-deployment"></a>Différences entre le déploiement F5  
  Lorsque vous utilisez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pour déployer votre projet SharePoint sur le serveur SharePoint local à des fins de test et de débogage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] exécute des opérations supplémentaires.  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  Association automatique des flux de travail.  
   
-3.  Définition de l'ordre d'activation des fonctionnalités en fonction de la hiérarchie du Concepteur de packages.  
+3.  Définition de l’ordre d’activation des fonctionnalités en fonction de la hiérarchie du Concepteur de packages.  
   
  Vous pouvez ajouter des étapes de déploiement personnalisées pour modifier davantage le comportement F5. Pour plus d’informations, consultez [procédure pas à pas : création d’une étape de déploiement personnalisée pour les projets SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
  L'affichage de la page SharePoint prend un certain temps lors du déploiement d'un composant Visual Web Part dans le dossier Bin sur [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] ou [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Si vous modifiez des fichiers dans un répertoire [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] de niveau supérieur, tel que le répertoire bin, l'application Web entière est recompilée. Cela peut différer de 25 secondes le rendu de la page SharePoint.  
   
 ### <a name="error-message"></a>Message d'erreur  
- Aucun  
+ Aucun.  
   
 ### <a name="resolution"></a>Résolution  
  Pour contourner ce problème, exécutez les étapes suivantes :  
@@ -98,7 +99,7 @@ ms.lasthandoff: 10/31/2017
  La première fois que vous déployez un élément Visual Web Part sur un site d'une application Web autre que celle dans laquelle il est actuellement déployé (en modifiant la propriété SiteUrl de l'élément Visual Web Part), vous obtenez une erreur.  
   
 ### <a name="error-message"></a>Message d'erreur  
- Une erreur s'est produite lors de l'étape de déploiement 'Ajouter une solution' : Une fonctionnalité avec l'ID [#] a déjà été installée dans cette batterie de serveur. Utilisez l'attribut force pour installer à nouveau la fonctionnalité de façon explicite.  
+ Une erreur s'est produite lors de l'étape de déploiement 'Ajouter une solution' : Une fonctionnalité avec l'ID [#] a déjà été installée dans cette batterie de serveur. Utilisez l’attribut force pour installer à nouveau la fonctionnalité de façon explicite.  
   
 ### <a name="resolution"></a>Résolution  
  Cette erreur est due au mode de retrait des fonctionnalités d'éléments Visual Web Part dans SharePoint. Pour déployer correctement le composant Visual Web Part, déployez de nouveau la solution en choisissant la touche F5.  

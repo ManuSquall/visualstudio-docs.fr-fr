@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c04e72f6883c00425834a03622a5efcd5a3dbb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f77b0dd072c0e1acdbe642a0ded64a554f809f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 Ajoute un port.  
@@ -49,7 +50,7 @@ int AddPort(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode crée le port demandé ainsi que l’ajouter à la liste d’interne du fournisseur de port de ports actifs. Le [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) méthode peut être appelée en premier pour éviter des retards de longue durées possible.  
   
 ## <a name="see-also"></a>Voir aussi  

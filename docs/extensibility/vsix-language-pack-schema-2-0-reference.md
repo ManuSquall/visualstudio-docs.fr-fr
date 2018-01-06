@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 ms.author: dagriffe
 author: dgriffen
 manager: ghogen
-ms.openlocfilehash: 15c63e446699f254ba33237c264c06c1da802811
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dagriffe
+ms.openlocfilehash: b601653e4b2d309d41f32ff71666567ab860e698
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Référence de schéma 2.0 VSIX Language Pack
 

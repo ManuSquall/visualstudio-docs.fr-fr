@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c47de66c7767cf18241e1b8c53e89f8d3f00dcef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a6f37c397ec7dab6095cb03e2b93cb8f65892091
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="taskstatecanceled-field"></a>Champ TASK_STATE_CANCELED
 La tâche a été annulée avant qu’il atteint l’état en cours d’exécution, ou son annulation d’accusé de réception et s’est terminée sans exception.  
@@ -34,7 +35,7 @@ La tâche a été annulée avant qu’il atteint l’état en cours d’exécuti
 .field static assembly literal int32 TASK_STATE_CANCELED = int32(0x00800000)  
 ```  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si le [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) champ contient cette valeur, le <xref:System.Threading.Tasks.Task.Status%2A> propriété renvoie <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30453237dcd95607a4f3524f115d16bc1cf4859a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 755516fb9d341193005ad39e419e708b6d28867c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analyseur et l’Analyseur de Service de langage hérité
 L’analyseur est au cœur du service de langage. Les classes de langage Managed Package Framework (MPF) requièrent un analyseur de langage pour sélectionner plus d’informations sur le code qui est affiché. Un analyseur sépare le texte en jetons lexicaux et identifie ces jetons par type et de fonctionnalités.  
@@ -51,7 +52,7 @@ namespace MyNamespace
 |MyNamespace|namespace|  
 |MyClass|class|  
 |MyFunction|méthode|  
-|arg1|paramètre|  
+|arg1|parameter|  
 |var1|variable locale|  
   
  Le rôle de l’analyseur est d’identifier les jetons. Certains jetons peuvent avoir plusieurs types. Une fois que l’analyseur a identifié les jetons, le service de langage peut utiliser les informations pour fournir des fonctionnalités utiles, telles que la mise en surbrillance de syntaxe, la correspondance des accolades et les opérations d’IntelliSense.  
@@ -115,7 +116,7 @@ namespace MyNamespace
   
 12. Opération effectuée.  
   
-### <a name="summary"></a>Résumé  
+### <a name="summary"></a>Récapitulatif  
  L’opération d’accolades correspondante est généralement limitée à des paires simples des éléments de langage. D’éléments plus complexes, telles que la mise en correspondance triplets («`if(...)`«, »`{`« et »`}`», ou «`else`«, »`{`« et »`}`»), peut être mis en surbrillance dans le cadre d’une opération de saisie semi-automatique par word. Par exemple, lorsque le mot « else » est terminé, la mise en correspondance «`if`» instruction peut être mise en surbrillance. S’il existait une série de `if` / `else if` instructions, tous les peuvent être mis en surbrillance à l’aide du même mécanisme de correspondance des accolades. Le <xref:Microsoft.VisualStudio.Package.Source> classe de base prend déjà en charge, comme suit : l’analyseur doit retourner la valeur de jeton déclencheur <xref:Microsoft.VisualStudio.Package.TokenTriggers> combinée avec la valeur de déclencheur <xref:Microsoft.VisualStudio.Package.TokenTriggers> pour le jeton qui est antérieure à la position du curseur.  
   
  Pour plus d’informations, consultez [accolades correspondantes dans un Service de langage hérité](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  

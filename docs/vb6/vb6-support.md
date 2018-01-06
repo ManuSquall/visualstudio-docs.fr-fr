@@ -10,11 +10,12 @@ helpviewer_keywords:
 ms.assetid: ffc5ba4d-44d7-4ef7-a3f6-38a8738bf127
 author: paulyuk
 ms.author: paulyuk
-ms.openlocfilehash: bdfe33cac19d488bc7763f3c61c518093d8afffa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: paulyuk
+ms.openlocfilehash: a8977aad735a115089685ed0032b3d358d8b89c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Prend en charge d’instruction pour Visual Basic 6.0 sur Windows
 
@@ -115,7 +116,7 @@ Depuis la version initiale de cette instruction de prise en charge, le système 
 
 Le runtime VB6 sera distribué et sera pris en charge dans Windows Server 2012 pour la durée de vie du système d’exploitation. Fichiers d’exécution Visual Basic 6.0 toujours 32 bits uniquement, et tous les composants doivent être hébergés dans des processus d’application 32 bits. Les développeurs peuvent considérer l’histoire de la prise en charge pour Windows Server 2012 comme étant le même pour Windows Server 2008 R2.
 
-## <a name="windows-server-2012-r2"></a>Windows Server 2012 R2
+## <a name="windows-server-2012-r2"></a>Windows Server 2012 R2
 
 Depuis la version initiale de cette instruction de prise en charge, le système d’exploitation Windows Server 2012 R2 a été publié. Ce document a été mis à jour pour préciser la prise en charge de Microsoft pour VB6 sur Windows Server 2012 R2.
 

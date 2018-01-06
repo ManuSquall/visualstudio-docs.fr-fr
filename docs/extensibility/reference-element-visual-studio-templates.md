@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f25b39178141f3e3a40899645a0a1af6c8417ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1006e85611044805c0f3bd1e0035595288a5b32d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference, élément (modèles Visual Studio)
 Spécifie la référence d’assembly à ajouter quand l’élément est ajouté à un projet.  
@@ -42,7 +43,7 @@ Spécifie la référence d’assembly à ajouter quand l’élément est ajouté
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
@@ -56,7 +57,7 @@ Spécifie la référence d’assembly à ajouter quand l’élément est ajouté
 |-------------|-----------------|  
 |[Références](../extensibility/references-element-visual-studio-templates.md)|Regroupe les références d’assembly que le modèle ajoute aux projets.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `Reference` est un élément enfant obligatoire de `References`.  
   
  Le `Reference` et `References` éléments ne peuvent être utilisés dans les fichiers .vstemplate dont un `Type` valeur d’attribut `Item`.  

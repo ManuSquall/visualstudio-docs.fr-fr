@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bfe7da717a59b114052080048e97b1d6fcdd425
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 832d80c3ca49cc03c4a66b6a4cf931dd40686c82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccdiff-function"></a>SccDiff (fonction)
 Cette fonction affiche (ou éventuellement simplement vérifie) les différences entre le fichier en cours (sur le disque local) et de sa dernière version archivée dans la source de système de contrôle.  
@@ -54,7 +55,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|La version de copie et de serveur de travail sont identiques.|  
 |SCC_I_FILESDIFFERS|La copie de travail diffère de la version sous contrôle de code source.|  
@@ -65,7 +66,7 @@ SCCRTN SccDiff(
 |SCC_E_NONSPECIFICERROR|Erreur non spécifique ; différence de fichier n’a pas été obtenu.|  
 |SCC_E_FILENOTEXIST|Le fichier local est introuvable.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette fonction sert deux objectifs différents. Par défaut, il affiche une liste des modifications dans un fichier. Le plug-in de contrôle de code source s’ouvre sa propre fenêtre, dans le format choisit, pour afficher les différences entre les fichiers de l’utilisateur sur le disque et de la dernière version du fichier sous contrôle de code source.  
   
  Vous pouvez également l’IDE peut suffit déterminer si un fichier a changé. Par exemple, l’IDE devrez peut-être déterminer si elle est sécurisée pour extraire un fichier sans en informer l’utilisateur. Dans ce cas, l’IDE passe dans le `SCC_DIFF_CONTENTS` indicateur. Le plug-in de contrôle de code source doit vérifier le fichier sur disque, octet par octet, par rapport au fichier de contrôle de code source et retourner une valeur qui indique si les deux fichiers sont différents sans rien afficher à l’utilisateur.  

@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 919244051df838861816279513f14e8e98f3e34f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 92b494788d708bcea092b73152e899c00566c49d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="name-element-visual-studio-templates"></a>Name, élément (modèles Visual Studio)
 Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
@@ -61,7 +62,7 @@ Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou 
   
  Le texte fournit le nom du modèle.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `Name` est un élément enfant obligatoire de `TemplateData`.  
   
 ## <a name="example"></a>Exemple  

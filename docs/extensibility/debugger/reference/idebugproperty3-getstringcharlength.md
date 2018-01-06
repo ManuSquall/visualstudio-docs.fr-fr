@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 139cb6deac5afc3f4b174673d623c56d3929071a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1f692d490b50b22a1e43567045dd7359cccde081
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 Retourne le nombre de caractères dans la chaîne de la propriété associée.  
@@ -46,7 +47,7 @@ int GetStringCharLength(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon retourne le code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  En règle générale, cette méthode est utilisée comme une étape préliminaire à allouer une mémoire tampon pour un appel à la [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (méthode).  
   
 ## <a name="example"></a>Exemple  

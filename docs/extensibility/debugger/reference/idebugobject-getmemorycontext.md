@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93f6d82b88be23b160effe1c8162648132f461c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e2ad135ddb69128a19d49bcc1ebb7acd77a496c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 Obtient le contexte de la mémoire qui représente l’adresse de la valeur de l’objet.  
@@ -44,7 +45,7 @@ int GetMemoryContext(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le contexte de la mémoire retournée Spécifie l’adresse de la valeur représentée par ce [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objet.  
   
 ## <a name="see-also"></a>Voir aussi  

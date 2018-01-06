@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1764bfc503e25860326b1910c432edcf95c8f21c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5bd53307323b1db4d5fa9e5407c3a0516f1187f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC (fonction)
 Cette fonction ajoute une liste de fichiers à partir du contrôle de code source pour le projet actuellement ouvert.  
@@ -70,7 +71,7 @@ SCCRTN SccAddFilesFromSCC(
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_E_PROJNOTOPEN|Projet n’est pas ouvert.|  
 |SCC_E_OPNOTPERFORMED|La connexion n’est pas le même projet, tel que spécifié par`lpAuxProjPath.`|  

@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8e00768e544dbd6bb37a4de70e0f730fe967a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 36cf7ba40deba4bd133f2c4baf92c310665ed275
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 Spécifie des indicateurs d’hôte IntelliSense.  
@@ -48,7 +49,7 @@ enum IntellisenseHostFlags
 |`IHF_FORCECOMMITTOCONTEXT`|Comme pour `CanCommitIntoReadOnlyBuffer`.|  
 |`IHF_OVERTYPE`|Modification (dans l’objet ou le contexte) doit être effectuée en mode Refrappe.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  SingleFileeditor.idl  
   
 ## <a name="see-also"></a>Voir aussi  

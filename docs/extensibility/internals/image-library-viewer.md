@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3da2368d8d30ba54dd6b4ae6a36aba6e75ea2967
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b699233d0b0ddf14079240da3bd831a172641fba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-library-viewer"></a>Visionneuse de bibliothèque d’images
 L’outil Visionneuse bibliothèque d’images Visual Studio peut charger et rechercher des manifestes d’images, permettant à l’utilisateur pour les manipuler dans la même façon Visual Studio. L’utilisateur peut modifier en arrière-plan, tailles, PPP, contraste élevé et autres paramètres. Également, l’outil affiche des informations de chargement pour chaque manifeste de l’image et affiche des informations de source pour chaque image dans le manifeste de l’image. Cet outil est utile pour :  
@@ -74,7 +75,7 @@ L’outil Visionneuse bibliothèque d’images Visual Studio peut charger et rec
 |-|-|  
 |**Sous-élément**|**Définition**|  
 |Import|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel.|  
-|Guid|Le symbole représente un GUID et doit correspondre à la mise en forme de GUID.|  
+|GUID|Le symbole représente un GUID et doit correspondre à la mise en forme de GUID.|  
 |Id|Le symbole représente un ID et doit être un entier non négatif.|  
 |Chaîne|Le symbole représente une valeur de chaîne arbitraire.|  
   
@@ -115,7 +116,7 @@ L’outil Visionneuse bibliothèque d’images Visual Studio peut charger et rec
 |||  
 |-|-|  
 |**Attribut**|**Définition**|  
-|Guid|[Obligatoire] Le GUID du moniker d’image|  
+|GUID|[Obligatoire] Le GUID du moniker d’image|  
 |Id|[Obligatoire] La partie de l’ID du moniker d’image|  
 |AllowColorInversion|[Facultatif, par défaut la valeur true] Indique si l’image peut avoir ses couleurs inversées par programmation les lorsqu’il est utilisé sur un arrière-plan sombre.|  
   
@@ -140,7 +141,7 @@ L’outil Visionneuse bibliothèque d’images Visual Studio peut charger et rec
 ||||  
 |-|-|-|  
 |**Élément**|**Attributs (tous requis)**|**Définition**|  
-|\<Taille >|Valeur|La source est utilisée pour les images de la taille donnée (en unités de l’appareil). L’image sera carrée.|  
+|\<Taille >|Value|La source est utilisée pour les images de la taille donnée (en unités de l’appareil). L’image sera carrée.|  
 |\<SizeRange >|MinSize, MaxSize|La source servira pour les images à partir de MinSize à MaxSize (en unités de périphérique) (inclus). L’image sera carrée.|  
 |\<Dimensions >|Largeur, hauteur|La source est utilisée pour les images de donnée de largeur et hauteur (en unités de l’appareil).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source servira pour les images à partir de la largeur/hauteur minimale de la largeur/hauteur maximale (en unités de périphérique) (inclus).|  
@@ -171,7 +172,7 @@ L’outil Visionneuse bibliothèque d’images Visual Studio peut charger et rec
 |||  
 |-|-|  
 |**Attribut**|**Définition**|  
-|Guid|[Obligatoire] Le GUID du moniker d’image|  
+|GUID|[Obligatoire] Le GUID du moniker d’image|  
 |Id|[Obligatoire] La partie de l’ID du moniker d’image|  
 |Ressource externe|[Facultatif, false de valeur par défaut] Indique si le moniker d’image fait référence à une image dans le manifeste actuel.|  
   
@@ -224,7 +225,7 @@ L’outil Visionneuse bibliothèque d’images Visual Studio peut charger et rec
   
  ![ID de filtre de visionneuse de bibliothèque de l’image](../../extensibility/internals/media/image-library-viewer-filter-id.png "ID de filtre de visionneuse de bibliothèque de l’Image")  
   
-## <a name="notes"></a>Remarques  
+## <a name="notes"></a>Notes  
   
 -   Par défaut, l’outil extraira dans plusieurs manifestes d’images présentes dans le répertoire d’installation de Visual Studio. La seule ayant des monikers publiquement consommables est la **Microsoft.VisualStudio.ImageCatalog** de manifeste. GUID : ae27a6b0-e345-4288-96df-5eaf394ee369 (faire **pas** remplacer ce GUID dans un manifeste personnalisé) Type : KnownMonikers  
   

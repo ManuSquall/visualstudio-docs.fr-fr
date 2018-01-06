@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 16f8c38b0d41a6365e39931bc1e2366a95ac6843
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f6f2a1b57c627425ebf63c6068f358cb8be0d3c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 Spécifie les propriétés souhaitées doivent être obtenues à partir d’un fournisseur de programme.  
@@ -72,7 +73,7 @@ public enum enum_PROVIDER_FLAGS {
  PFLAG_GET_IS_DEBUGGER_PRESENT  
  L’appelant veut le `fIsTheDebuggerPresent` champ le `PROVIDER_PROCESS_DATA` structure.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Ces indicateurs sont passés aux méthodes suivantes :  
   
 -   [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
@@ -83,7 +84,7 @@ public enum enum_PROVIDER_FLAGS {
   
  Ces valeurs peuvent être combinées avec une opération de bits `OR`.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

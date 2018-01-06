@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 281b18d1e4e802646635cfe354355762014ad40e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc15af65c6541df5ef77a3bdc85ee0e59fa20991
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Ce rappel est fourni à la [SccPopulateList](../extensibility/sccpopulatelist-function.md) par l’IDE et est utilisé par le plug-in de contrôle de code source pour mettre à jour une liste des fichiers ou répertoires (également fourni à la `SccPopulateList` fonction).  
@@ -52,12 +53,12 @@ typedef BOOL (*POPLISTFUNC) (
   
 ## <a name="return-value"></a>Valeur de retour  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`TRUE`|Le plug-in peut continuer d’appeler cette fonction.|  
 |`FALSE`|Un problème a été sur le côté de l’IDE (par exemple, une sortie de la mémoire). Le plug-in doit arrêter une opération.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Pour chaque fichier du plug-in de contrôle de code source souhaite ajouter ou supprimer de la liste des fichiers, il appelle cette fonction, en passant le `lpFileName`. Le `fAddRemove` indicateur signale un nouveau fichier à ajouter à la liste ou un ancien fichier à supprimer. Le `nStatus` paramètre indique l’état du fichier. Une fois l’analyse de plug-in a ajout et suppression de fichiers, il quitte la [SccPopulateList](../extensibility/sccpopulatelist-function.md) appeler.  
   
 > [!NOTE]

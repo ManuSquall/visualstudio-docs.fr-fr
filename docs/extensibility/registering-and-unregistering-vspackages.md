@@ -15,11 +15,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4443195babbe3f8926633a992aa942dcb80dc3f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e82b299398d83509883ff152c5f97bd43e800b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-and-unregistering-vspackages"></a>Inscription et annulation de l’inscription de VSPackages
 Vous utilisez des attributs pour inscrire un VSPackage, mais  

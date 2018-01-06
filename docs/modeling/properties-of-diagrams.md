@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fcd30a30bdae896be5aceb9dc685a5fb762ee4af
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4c1a259be5b9c8f572339279734b60ac2afd93ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-diagrams"></a>Propriétés des diagrammes
 Vous pouvez définir des propriétés qui spécifient comment les diagrammes seront affichera dans le concepteur généré. Par exemple, vous pouvez spécifier une couleur par défaut pour le texte dans le diagramme.  
@@ -34,12 +35,12 @@ Vous pouvez définir des propriétés qui spécifient comment les diagrammes ser
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe du code généré.|\<Aucun >|  
 |Génère deux dérivées|Si `True`, une classe de base et une classe partielle (pour la personnalisation par des remplacements) seront générés. Pour plus d’informations, consultez [substituer et étendre les Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |A constructeur personnalisé|Si `True`, un constructeur personnalisé sera fourni dans le code source. Pour plus d’informations, consultez [substituer et étendre les Classes générées](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
-|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du diagramme (`none`, `abstract` ou `sealed`).|Aucune|  
-|Diagramme de base|La classe de base de ce schéma.|(aucun)|  
-|Nom|Le nom de ce schéma.|Nom actuel|  
+|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du diagramme (`none`, `abstract` ou `sealed`).|Aucun.|  
+|Diagramme de base|La classe de base de ce schéma.|(aucune)|  
+|Name|Le nom de ce schéma.|Nom actuel|  
 |Espace de noms|L’espace de noms n’est affilié à ce schéma.|Espace de noms actuel|  
 |Classe représentée|La classe de domaine racine représentant ce diagramme.|Classe racine actuelle le cas échéant|  
-|Remarques|Notes informelles qui sont associés à cet élément.|\<Aucun >|  
+|Notes|Notes informelles qui sont associés à cet élément.|\<Aucun >|  
 |Couleur de remplissage expose en tant que propriété|Si `True`, l’utilisateur peut définir la couleur de remplissage du diagramme du concepteur généré. Pour configurer cela, cliquez avec le bouton droit sur la forme de diagramme, puis cliquez sur **Explosed d’ajouter**.|False|  
 |Expose la couleur du texte en tant que propriété|Si `True`, l’utilisateur peut définir la couleur du texte du diagramme dans le concepteur généré. Pour configurer cela, cliquez avec le bouton droit sur la forme de diagramme, puis cliquez sur **Explosed d’ajouter**.|False|  
 |Description|La description qui est utilisée pour documenter le concepteur généré.|\<Aucun >|  

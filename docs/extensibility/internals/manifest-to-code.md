@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd693d56011173564650c0abbd2d5d73492d335d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74a2fac33ed9e464dd6a54e5a63f46a6cd29a0d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manifest-to-code"></a>Manifeste pour le Code
 Le manifeste de l’outil du Code est une application console qui accepte un fichier .imagemanifest pour le Service d’images Visual Studio et génère un wrapper ou les fichiers pour faire référence aux valeurs du manifeste de l’image en C++, c#, VB ou fichiers .vsct des extensions Visual Studio. Cet outil génère des fichiers de wrapper qui peuvent être utilisées pour les images de demandeurs à partir de Visual Studio Image celui-ci directement, ou en passant les valeurs de manifeste via des API si le code ne gère pas un de sa propre interface utilisateur et le rendu.  
@@ -29,7 +30,7 @@ Le manifeste de l’outil du Code est une application console qui accepte un fic
   
 ||||  
 |-|-|-|  
-|**Nom du commutateur**|**Remarques**|**Obligatoire ou facultatif**|  
+|**Nom du commutateur**|**Notes**|**Obligatoire ou facultatif**|  
 |/ manifeste|Le chemin d’accès au manifeste d’image à utiliser pour créer ou mettre à jour le wrapper de code.|Obligatoire|  
 |/ Language|Le langage dans lequel générer un wrapper de code.<br /><br /> Valeurs valides : CPP, C++, CS, CSharp, c#, VB ou VSCT les valeurs respectent la casse.<br /><br /> Pour la langue VSCT option, /monikerClass, /classAccess et/namespace options sont ignorées.|Obligatoire|  
 |/imageIdClass|Le nom de l’imageIdClass et le fichier associé, créé par l’outil. Pour l’option de langage C++, seuls les fichiers .h sont générés.<br /><br /> Valeur par défaut : \<manifeste chemin d’accès > \MyImageIds.\< Lang Ext >|Facultatif|  
@@ -48,7 +49,7 @@ Le manifeste de l’outil du Code est une application console qui accepte un fic
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
   
-## <a name="notes"></a>Remarques  
+## <a name="notes"></a>Notes  
   
 -   Nous vous recommandons d’utiliser cet outil avec les manifestes d’images qui ont été générés par le manifeste à partir de l’outil de ressources.  
   

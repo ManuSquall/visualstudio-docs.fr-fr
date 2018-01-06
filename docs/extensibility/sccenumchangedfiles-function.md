@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ad62f14ea658e4af6e22d4beef410e6d9cf02df
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a3a124bbcadbf798f22b59111637038a09af7d75
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles (fonction)
 Obtenez la liste des fichiers locaux, cette fonction détermine quels fichiers sont différents dans les versions correspondantes dans la base de données de contrôle de code source.  
@@ -54,7 +55,7 @@ SCCRTN SccEnumChangedFiles(
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|Opération achevée avec succès.|  
 |SCC_UNSPECIFIEDERROR|Erreur générique.|  
