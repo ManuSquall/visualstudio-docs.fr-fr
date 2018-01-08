@@ -18,18 +18,19 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4380299fd37b456dd3be6da7cf37981ad89b1caf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Comment déclencher suspendre, reprendre et événements en arrière-plan pendant le débogage d’applications UWP dans Visual Studio
 Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management** (PLM) contrôle l'état d'exécution de votre application, soit son démarrage, sa suspension, sa reprise et sa fin en réponse aux actions utilisateur et à l'état du périphérique. Lorsque vous effectuez un débogage, Windows désactive ces événements d'activation. Cette rubrique décrit comment déclencher ces événements dans le débogueur.  
   
  Cette rubrique décrit également comment déboguer les **tâches en arrière-plan**. Les tâches en arrière-plan vous permettent d'effectuer certaines opérations dans un processus en arrière-plan, même lorsque votre application n'est pas en cours d'exécution. Utilisez le débogueur pour placer votre application en mode débogage, puis, sans démarrer l'interface utilisateur, démarrez et déboguez la tâche en arrière-plan.  
   
- Pour plus d’informations sur les tâches de gestion de durée de vie des processus et d’arrière-plan, consultez [lancement, la reprise et les travaux multitâches](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/index).  
+ Pour plus d’informations sur les tâches de gestion de durée de vie des processus et d’arrière-plan, consultez [lancement, la reprise et les travaux multitâches](/windows/uwp/launch-resume/index).  
   
 ##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
  [Déclencher les événements PLM (Process Lifetime Management)](#BKMK_Trigger_Process_Lifecycle_Management_events)  
@@ -89,7 +90,7 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
   
      Pour les projets C++, vous devrez peut-être développer **Propriétés de configuration** , puis choisir **Débogage**.  
   
-3.  Effectuez l’une des opérations suivantes :  
+3.  Effectuez l’une des opérations suivantes :  
   
     -   Pour les projets Visual C# et Visual Basic, choisissez **Ne pas lancer, mais déboguer mon code au démarrage**  
   
@@ -124,7 +125,7 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
 4.  Choisissez le journal **Diagnostic** .  
   
 ## <a name="see-also"></a>Voir aussi  
- [Test des applications UWP avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Test d’applications UWP avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [Cycle de vie des applications](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
  [Lancement de la reprise et multitâche](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)

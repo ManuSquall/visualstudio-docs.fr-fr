@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problèmes connus et dépannage pour la capture instantanée de débogage dans Visual Studio
 
@@ -68,7 +69,7 @@ Effectuez les étapes suivantes :
 - Débogage d’instantané avec plusieurs clients Visual Studio sur le même Service d’application n’est pas pris en charge actuellement.
 - Optimisations de langage intermédiaire de Roslyn ne sont pas pris en charge dans les projets ASP.NET Core. Pour certains projets ASP.NET Core, vous ne serez peut-être pas en mesure de certaines variables ou utiliser des variables dans les instructions conditionnelles. 
 - Variables spéciales, telles que *$FUNCTION* ou *$CALLER*, ne peut pas être évaluée dans des instructions conditionnelles ou logpoints pour les projets ASP.NET Core.
-- Débogage de l’instantané ne fonctionne pas sur les Services d’application qui ont [mise en cache locale](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) sous tension.
+- Débogage de l’instantané ne fonctionne pas sur les Services d’application qui ont [mise en cache locale](/azure/app-service/app-service-local-cache) sous tension.
 - Débogage des applications de l’API de capture instantanée n’est pas pris en charge actuellement.
 
 ## <a name="see-also"></a>Voir aussi

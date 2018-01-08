@@ -14,14 +14,15 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 950384dfce7de39969b054f6c1019fa36c1efa38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb8b96e3a44ae1bb03cde58fc28af4871e80aaf4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
-Cette fonction extrait un indicateur qui indique si la fonction a été marquée comme inline (à l’aide d’un de le [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp.md) attributs).  
+Cette fonction extrait un indicateur qui indique si la fonction a été marquée comme inline (à l’aide d’un de le [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) attributs).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,7 +42,7 @@ HRESULT get_inlSpec(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
@@ -50,4 +51,4 @@ HRESULT get_inlSpec(
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp.md)
+ [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp)
