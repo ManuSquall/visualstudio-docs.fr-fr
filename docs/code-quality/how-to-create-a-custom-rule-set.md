@@ -14,11 +14,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e9cba33565af81a76d043a3fc3f63eef831e1ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36b5e9e0a3ca0a994547679ba71e545b4235b6c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Comment : créer un ensemble de règles personnalisé
 Dans [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)], et [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], vous pouvez créer et modifier une personnalisée *ensemble de règles* pour répondre aux besoins de projet spécifique associés à l’analyse du code. Pour créer une règle personnalisée définie, vous ouvrez un, ou ensembles de règles plus standard dans l’éditeur d’ensemble de règles. Vous pouvez ensuite ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsque l’analyse du code détermine qu’une règle a été violée.  
@@ -47,7 +48,7 @@ Dans [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], [!INCLUD
   
      \- ou -  
   
-    -   Sélectionnez  **\<Parcourir... >** pour spécifier une règle existante du jeu qui n’est pas dans la liste.  
+    -   Sélectionnez ** \<Parcourir... >** pour spécifier une règle existante du jeu qui n’est pas dans la liste.  
   
 4.  Cliquez sur **ouvrir** pour afficher les règles dans l’éditeur d’ensemble de règles.  
   
@@ -57,7 +58,7 @@ Dans [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], [!INCLUD
   
 2.  Sur le **propriétés** , cliquez sur **l’analyse du Code**.  
   
-3.  Sélectionnez  **\<choisir plusieurs règle définit... >** de **exécuter cet ensemble de règles**.  
+3.  Sélectionnez ** \<choisir plusieurs règle définit... >** de **exécuter cet ensemble de règles**.  
   
 4.  Dans le **ajouter ou supprimer des ensembles de règles** boîte de dialogue, sélectionnez les ensembles de règles sur lequel vous souhaitez baser votre nouvel ensemble de règles, puis cliquez sur **OK**.  
   
@@ -95,7 +96,7 @@ Dans [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], [!INCLUD
   
 -   Pour réduire les règles dans tous les groupes, cliquez sur **réduire tout**.  
   
--   Pour modifier le champ règles sont regroupées par, sélectionnez le champ à partir de la **Group By** liste. Pour afficher les règles non groupés, sélectionnez  **\<aucun >**.  
+-   Pour modifier le champ règles sont regroupées par, sélectionnez le champ à partir de la **Group By** liste. Pour afficher les règles non groupés, sélectionnez ** \<aucun >**.  
   
 -   Pour ajouter ou supprimer des champs dans les colonnes de la règle, cliquez sur **Options de colonne**.  
   
