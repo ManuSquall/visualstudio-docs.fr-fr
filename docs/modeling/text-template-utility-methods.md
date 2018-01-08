@@ -12,11 +12,12 @@ caps.latest.revision: "50"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 534a7317b4bca2abe559c028d025a52997a9f508
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cff244ea8b3ba8e6dd25af06d51bf5b80b51aa06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-template-utility-methods"></a>Méthodes utilitaires de modèle de texte
 Il existe plusieurs méthodes qui sont toujours disponibles pour vous lorsque vous écrivez du code un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modèle de texte. Ces méthodes sont définies dans <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  

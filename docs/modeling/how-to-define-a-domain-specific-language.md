@@ -20,11 +20,12 @@ caps.latest.revision: "43"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0d2483fb8c3f244f2a5fd51f076d7157711cd34f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 320e244c17f8e21330aa3925030650126a0ba5a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Language), vous devez créer une solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à partir d'un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.  
@@ -36,7 +37,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
 
   
 ##  <a name="templates"></a>Sélection d’une Solution de modèle  
- Pour définir une solution DSL, vous devez avoir installé les composants suivants :  
+ Pour définir un DSL, vous devez avoir installé les composants suivants :  
   
 |||  
 |-|-|  

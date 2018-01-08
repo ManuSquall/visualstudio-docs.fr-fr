@@ -22,11 +22,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b8f75dd12e0684edd4260e796540523a2c7d08d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b16a2ee34ca757e62a26676386566b94c31ebf74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browsing-sharepoint-connections-using-server-explorer"></a>Parcours des connexions SharePoint à l'aide de l'Explorateur de serveurs
   Vous pouvez maintenant rechercher des connexions SharePoint locales dans **l’Explorateur de serveurs**. À l’aide de cette technique, vous pouvez naviguer dans les composants d’un site SharePoint sur votre système. Les composants de site SharePoint, tels que les définitions de listes et types de contenu, s’affichent dans un nœud nommé **connexions SharePoint** dans l’arborescence de **l’Explorateur de serveurs**. Pour afficher les **l’Explorateur de serveurs**, dans la barre de menus, choisissez **vue**, **l’Explorateur de serveurs**. En plus d’afficher les composants du site SharePoint, vous pouvez supprimer des éléments, afficher leurs propriétés ou actualiser l’arborescence à l’aide des commandes dans le menu contextuel.  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 |Nom de la commande|Description|  
 |------------------|-----------------|  
-|Actualiser|Met à jour la vue d’arborescence pour refléter les modifications qui se sont produites depuis la dernière fois que le nœud a été affiché.|  
+|Actualisation|Met à jour la vue d’arborescence pour refléter les modifications qui se sont produites depuis la dernière fois que le nœud a été affiché.|  
 |Supprimer|Supprime le nœud sélectionné dans l’arborescence. **Remarque :** cette commande est activée uniquement sur des connexions SharePoint répertoriées sous le **connexions SharePoint** nœud.|  
 |Propriétés|Affiche les propriétés disponibles pour le nœud sélectionné dans le **propriétés** fenêtre. Les propriétés sont en lecture seule, et pas chaque nœud possède des propriétés est associé.|  
 |Ajouter une connexion|Vous permet de spécifier un site SharePoint que vous souhaitez parcourir. Disponible sur le **connexions SharePoint** nœud et les nœuds de site secondaire.|  

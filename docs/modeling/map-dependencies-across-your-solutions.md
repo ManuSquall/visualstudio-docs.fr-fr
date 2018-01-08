@@ -31,11 +31,12 @@ caps.latest.revision: "243"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 0e0f33505754eb5047a6f8a9ce174c5c07466654
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
 Pour comprendre les dépendances présentes dans votre code, vous pouvez les visualiser en créant des cartes de code. Vous pouvez ainsi voir comment le code s’ajuste sans avoir à parcourir les fichiers et les lignes de code.  
@@ -343,7 +344,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Partager la carte avec d’autres utilisateurs de Visual Studio  
  Utilisez le menu **Fichier** pour enregistrer la carte.  
   
- ou  
+ - ou -  
   
  Pour enregistrer la carte dans le cadre d’un projet spécifique, dans la barre d’outils de la carte, choisissez **Partager**, puis **Déplacer** \<*CodeMapName*>**.dgml vers**, puis choisissez le projet dans lequel vous souhaitez enregistrer la carte.  
   

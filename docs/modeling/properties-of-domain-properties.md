@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 58402e1030516e6f587ec428bd98179ff82ec43a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 17168b43056870dc259965c31902c36450876702
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-properties"></a>Propriétés des propriétés de domaine
 A *propriété de domaine* est une fonctionnalité d’un élément de modèle qui peut contenir une valeur. Par exemple, la classe de domaine `Person` pourrait avoir des propriétés `Name` et `BirthDate`. Dans la définition DSL, les propriétés de domaine sont énumérées dans la zone de classe de domaine sur le diagramme et sous la classe de domaine dans l'Explorateur DSL. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).  
@@ -45,8 +46,8 @@ A *propriété de domaine* est une fonctionnalité d’un élément de modèle q
 |**Est le nom de l’élément**|Si `True`, cette propriété de domaine est affichée comme nom de son élément de modèle dans l'Explorateur DSL.<br /><br /> Les nouveaux éléments de modèle reçoivent une valeur par défaut unique pour cette propriété. Si vous souhaitez contrôler la façon dont ces valeurs sont générées, définissez **fournisseur de nom d’élément**.|`False`|  
 |**Est l’interface utilisateur en lecture seule**|Si `True`, la valeur de la propriété de domaine ne peut pas être modifiée à l'aide de l'interface utilisateur. Elle peut quand même être définie par des programmes et sera visible dans la fenêtre Propriétés.<br /><br /> Si vous souhaitez masquer la propriété de domaine à partir de l’utilisateur, la valeur **est consultable**. Si vous souhaitez contrôler l’accès par des programmes, définissez **modificateur d’accès Setter**.|`False`|  
 |**Type**|Genre de propriété de domaine (`Normal`, `Calculated` ou `CustomStorage`). Pour plus d’informations, consultez [calculé et les propriétés de stockage personnalisé](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|  
-|**Nom**|Nom de cette propriété de domaine. Il doit être un identificateur valid, par exemple **SongTitle**.|\<Aucun >|  
-|**Remarques**|Remarques informelles associées à cette propriété de domaine.|\<Aucun >|  
+|**Name**|Nom de cette propriété de domaine. Il doit être un identificateur valid, par exemple **SongTitle**.|\<Aucun >|  
+|**Notes**|Remarques informelles associées à cette propriété de domaine.|\<Aucun >|  
 |**Modificateur d’accès de la méthode Setter**|Modificateur d'accès pour la méthode Setter. Contrôle l'étendue selon laquelle le code de programme peut définir la propriété.|`public`|  
 |**Type**|Type de propriété. Pour ajouter à la liste des types disponibles, cliquez sur la racine de la DSL dans l’Explorateur de DSL, puis cliquez sur **ajouter un Type externe**.|`String`|  
   

@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4dd9df4832e08d33a8209181e47a38101a5658f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5703410772945a95ed0efea95a665b2a106e0ce7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Mise en route des langages spécifiques à un domaine
 Cette rubrique explique les concepts de base dans la définition et à l’aide d’un langage spécifique à un domaine (DSL) créé avec le Kit de développement de modélisation pour Visual Studio.  
@@ -39,8 +40,8 @@ Cette rubrique explique les concepts de base dans la définition et à l’aide 
   
  Le reste de cette vue d’ensemble est une procédure pas à pas qui présente les opérations de base de la création et à l’aide d’un langage spécifique à un domaine dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## <a name="prerequisites"></a>Conditions préalables  
- Pour définir une solution DSL, vous devez avoir installé les composants suivants :  
+## <a name="prerequisites"></a>Prérequis  
+ Pour définir un DSL, vous devez avoir installé les composants suivants :  
   
 |||  
 |-|-|  

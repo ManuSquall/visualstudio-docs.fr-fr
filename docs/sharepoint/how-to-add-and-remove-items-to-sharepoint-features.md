@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c925cc1cf8b1a5c70dfc1e650151d79945828935
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 071c8832e154f151d6ee9d04c45b5bc927366f7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Comment : ajouter et supprimer des éléments dans des fonctionnalités SharePoint
   Lorsque vous créez une solution SharePoint, Visual Studio ajoute les éléments de projet SharePoint par défaut à votre fonctionnalité. Avant le déploiement, vous pouvez ajouter et supprimer des éléments de projet SharePoint pour modifier la fonctionnalité SharePoint.  

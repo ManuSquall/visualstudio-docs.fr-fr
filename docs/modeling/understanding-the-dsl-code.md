@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0a4cc7b61426479a45e87568b040906426870233
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 294d10eb8a8fab361ddf5b3dadf4d779a95947a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 Une solution DSL (Domain-Specific Language) génère une API que vous pouvez utiliser pour lire et mettre à jour des instances du DSL dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Cette API est définie dans le code généré à partir de la définition DSL. Cette rubrique décrit l'API générée.  

@@ -12,21 +12,26 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e99505c0d3c4ee59f6e07a5b38d5d95533ab879f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3677dd4ad6177f4085c907d1fceaaf37978bf769
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Création de projets et modèles d’élément
-Le Kit de développement logiciel Visual Studio inclut des modèles de projet que vous créez un modèle de projet personnalisé et un modèle d’élément personnalisé. Ces modèles comprennent des substitutions de paramètre commun et créer en tant que fichiers zip. Elles ne sont pas déployées automatiquement, et elles ne sont pas disponibles dans l’instance expérimentale. Vous devez copier le fichier zip de fichiers à l’emplacement vous  
+
+Le Kit de développement logiciel Visual Studio inclut des modèles de projet que vous créez un modèle de projet personnalisé et un modèle d’élément personnalisé. Ces modèles comprennent des substitutions de paramètre commun et créer en tant que fichiers zip. Elles ne sont pas déployées automatiquement, et elles ne sont pas disponibles dans l’instance expérimentale. Vous devez copier le fichier zip générés pour le répertoire de modèles utilisateur.
   
- Les modèles de création de modèle vous permettent d’inclure des modèles dans les extensions supérieure. Cela vous permet d’implémenter le contrôle de version sur les fichiers sources et de créer un groupe de projets de modèle dans un package VSIX.  
+Les modèles de création de modèle vous permettent d’inclure des modèles dans les extensions supérieure. Cela vous permet d’implémenter le contrôle de version sur les fichiers sources et de créer un groupe de projets de modèle dans un package VSIX.  
   
- Pour les scénarios de création de modèle de base, vous devez utiliser le **exporter le modèle** Assistant, ce qui génère un fichier compressé. Pour plus d’informations sur la création du modèle de base, consultez [création de modèles de projet et élément](../ide/creating-project-and-item-templates.md).  
-  
- À partir de Visual Studio 2017, l’analyse des modèles de projets et modèles d’élément sera n’est plus effectuée. Au lieu de cela, l’extension doit fournir les fichiers de manifeste de modèle qui décrivent l’emplacement d’installation de ces modèles. Vous pouvez utiliser Visual Studio 2017 pour mettre à jour vos extensions VSIX. Si vous déployez votre extension à l’aide d’un fichier MSI, vous devez générer les fichiers manifeste de modèle à la main. Pour plus d’informations, consultez [mise à niveau des projets et des modèles d’élément pour Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Le schéma de modèle de manifeste est documenté dans [Visual Studio Template manifeste Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md).  
-  
+Vous pouvez également configurer un modèle pour installer les packages NuGet. Pour plus d’informations, consultez [les packages NuGet dans des modèles Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates).
+
+Pour les scénarios de création de modèle de base, vous devez utiliser le **exporter le modèle** Assistant, ce qui génère un fichier compressé. Pour plus d’informations sur la création du modèle de base, consultez [création de modèles de projet et élément](../ide/creating-project-and-item-templates.md).  
+
+> [!NOTE]
+> À partir de Visual Studio 2017, l’analyse des modèles de projets et modèles d’élément sera n’est plus effectuée. Au lieu de cela, l’extension doit fournir les fichiers de manifeste de modèle qui décrivent l’emplacement d’installation de ces modèles. Vous pouvez utiliser Visual Studio 2017 pour mettre à jour vos extensions VSIX. Si vous déployez votre extension à l’aide d’un fichier MSI, vous devez générer les fichiers manifeste de modèle à la main. Pour plus d’informations, consultez [mise à niveau des projets et des modèles d’élément pour Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Le schéma de modèle de manifeste est documenté dans [Visual Studio Template manifeste Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md).
+
 ## <a name="creating-a-project-template"></a>Création d’un modèle de projet  
   
 1.  Créez un projet de modèle de projet. Vous pouvez trouver le modèle de projet dans le **nouveau projet** boîte de dialogue, dans Visual Basic ou Visual c# **extensibilité** dossier.  
@@ -79,7 +84,9 @@ Le Kit de développement logiciel Visual Studio inclut des modèles de projet qu
   
 4.  Générez la solution, appuyez sur F5. L’instance expérimentale s’affiche.  
   
-5.  Pour un projet de modèle de projet, vous devez voir votre modèle de projet répertorié dans le **nouveau projet** boîte de dialogue (**fichier / nouveau / projet**), dans le nœud Visual Basic ou Visual c#. Pour un projet de modèle d’élément, vous devez voir votre modèle d’élément dans la boîte de dialogue Ajouter un nouvel élément (dans le **l’Explorateur de solutions**, sélectionnez le nœud du projet, cliquez sur **Ajouter / nouvel élément**).  
+5.  Pour un projet de modèle de projet, vous devez voir votre modèle de projet répertorié dans le **nouveau projet** boîte de dialogue (**fichier > Nouveau > projet**), dans le nœud Visual Basic ou Visual c#. Pour un projet de modèle d’élément, vous devez voir votre modèle d’élément dans la boîte de dialogue Ajouter un nouvel élément (dans le **l’Explorateur de solutions**, sélectionnez le nœud du projet, cliquez sur **Ajouter / nouvel élément**).  
   
-## <a name="see-also"></a>Voir aussi  
- [Référence de modèles Visual Studio](../ide/visual-studio-template-reference.md)
+## <a name="see-also"></a>Voir aussi
+
+[Référence de modèle Visual Studio](../ide/visual-studio-template-reference.md)  
+[Packages NuGet dans des modèles Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

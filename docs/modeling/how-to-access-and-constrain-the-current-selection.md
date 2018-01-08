@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 870a8d1c08a8ca0fa72cabf47c8e1087a39e70f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6cfc93f3e0423f57cd0df5e919854cc1a46a1b3f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Comment : accéder à et contraindre la sélection actuelle
 Lorsque vous écrivez un gestionnaire de mouvements ou de commandes pour votre langage spécifique à un domaine, vous pouvez déterminer quel élément cliqué par l’utilisateur. Vous pouvez également empêcher des formes ou des champs sélectionnés. Par exemple, vous pouvez organiser les que lorsque l’utilisateur clique sur un élément décoratif icône, la forme qui le contient est sélectionnée à la place. Contraindre la sélection de cette manière réduit le nombre de gestionnaires d’avoir à écrire. Elle facilite également pour l’utilisateur, ce qui vous pouvez cliquer sur n’importe où dans la forme sans avoir à éviter le decorator.  

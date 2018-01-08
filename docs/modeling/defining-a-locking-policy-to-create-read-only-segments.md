@@ -11,11 +11,12 @@ caps.latest.revision: "12"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0ac8ba75920c4b3b8964d473258c162c256139ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 93e4393a7b6731a10a00dc309353dba5870c269f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 L’API immuabilité de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK permet à un programme à tout ou partie de verrouillage d’un modèle de langage de spécifique à un domaine (DSL) afin qu’elle peut être lue mais pas modifié. Cette option en lecture seule peut être utilisée, par exemple, afin qu’un utilisateur peut demander à vos collègues à annoter et passez en revue un modèle DSL, mais il peut ne pas autoriser les à partir de la modification de l’original.  
@@ -78,16 +79,16 @@ partition.SetLocks(Locks.Delete);
   
  Vous ne pouvez pas défini un verrou sur une partition ou de stocker et en même temps, désactiver le verrou sur un élément individuel.  
   
-|Valeur|Ce qui signifie que si `IsLocked(Value)` a la valeur true|  
+|Value|Ce qui signifie que si `IsLocked(Value)` a la valeur true|  
 |-----------|------------------------------------------|  
-|Aucune|Aucune restriction.|  
+|Aucun.|Aucune restriction.|  
 |Propriété|Propriétés du domaine d’éléments ne peut pas être modifiées. Cela ne s’applique pas aux propriétés qui sont générées par le rôle d’une classe de domaine dans une relation.|  
 |Ajouter|Nouveaux éléments et les liens ne peut pas être créés dans une partition ou à stocker.<br /><br /> Non applicable à `ModelElement`.|  
 |Déplacement|Élément ne peut pas être déplacé entre des partitions si `element.IsLocked(Move)` a la valeur true, ou si `targetPartition.IsLocked(Move)` a la valeur true.|  
 |Supprimer|Un élément ne peut pas être supprimé si ce verrou est défini sur l’élément lui-même, ou sur un des éléments à laquelle la suppression transmettrait, tels que les formes et les éléments incorporés.<br /><br /> Vous pouvez utiliser `element.CanDelete()` pour détecter si un élément peut être supprimé.|  
 |Réorganiser les|L’ordre des liens à un roleplayer ne peut pas être modifié.|  
 |RolePlayer|L’ensemble de liens qui sont générés à cet élément ne peut pas être modifié. Par exemple, les nouveaux éléments ne peut pas être incorporés sous cet élément. Cela n’affecte pas les liens pour laquelle cet élément est la cible.<br /><br /> Si cet élément est un lien, sa source et la cible ne sont pas affectées.|  
-|Tout|De bits OR sur les autres valeurs.|  
+|Tous|De bits OR sur les autres valeurs.|  
   
 ## <a name="locking-policies"></a>Stratégies de verrouillage  
  En tant qu’auteur du DSL, vous pouvez définir un *stratégie de verrouillage*. Une stratégie de verrouillage modère le fonctionnement de SetLocks(), afin que vous pouvez empêcher verrous spécifiques définir ou d’imposer que les verrous spécifiques doivent être définies. En règle générale, vous utiliseriez une stratégie de verrouillage afin d’empêcher les utilisateurs ou les développeurs d’accidentellement contravening l’utilisation prévue de DSL, de la même manière que vous pouvez déclarer une variable `private`.  

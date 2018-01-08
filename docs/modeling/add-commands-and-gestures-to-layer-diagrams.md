@@ -14,11 +14,12 @@ caps.latest.revision: "38"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 40bad32ef38fb99032690804d572f630bb60ac6d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: f03b460c3e37bb6299047cb0e35e80895f08cfb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de dépendance
 Vous pouvez définir des commandes de menu contextuel et gestionnaires de mouvements dans des diagrammes de dépendance dans Visual Studio. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio (VSIX) et les distribuer à d’autres utilisateurs de Visual Studio.  
@@ -28,7 +29,7 @@ Vous pouvez définir des commandes de menu contextuel et gestionnaires de mouvem
 > [!NOTE]
 >  Vous pouvez également personnaliser la validation de l’architecture, dans source quels utilisateurs code est comparé aux diagrammes de dépendance. Vous devez définir la validation de l’architecture dans un projet Visual Studio distinct. Vous pouvez l’ajouter à la même extension VSIX que d’autres extensions. Pour plus d’informations, consultez [ajouter la validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  Consultez [Spécifications](../modeling/extend-layer-diagrams.md#prereqs).  
   
 ## <a name="defining-a-command-or-gesture-in-a-new-vsix"></a>Définition d’une commande ou d’un mouvement dans une nouvelle extension VSIX  
@@ -246,7 +247,7 @@ namespace MyLayerExtensions // change to your preference
   
      **OnDragDrop** : appelée quand l’utilisateur dépose un élément sur le diagramme.  
   
--   Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Par exemple :  
+-   Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Exemple :  
   
     ```  
     public void OnDragDrop(IShape target, IDataObject data)  

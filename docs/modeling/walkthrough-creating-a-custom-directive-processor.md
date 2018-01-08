@@ -14,11 +14,12 @@ caps.latest.revision: "74"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fd49e497844c85482780c925ef94bc2c422cd80a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0eb95bdd83780aa000ea6e3c696c24e319dcd4fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Procédure pas à pas : création d'un processeur de directive personnalisé
 *Processeurs de directive* fonctionnent en ajoutant du code pour le *classe de transformation générée*. Si vous appelez un *directive* d’un *modèle de texte*, le reste du code que vous écrivez dans votre modèle de texte peut faire appel aux fonctionnalités qu’elle fournit.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/27/2017
   
 -   Test du processeur de directive  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :  
   
 -   Visual Studio 2010  
@@ -635,7 +636,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  Dans cette section, vous ajoutez au Registre une clé pour votre processeur de directive personnalisé, dans le même emplacement.  
   
 > [!CAUTION]
->  Toute modification incorrecte du Registre peut gravement endommager votre système. Avant d'apporter des modifications au Registre, sauvegardez toutes les données utiles qui se trouvent sur l'ordinateur.  
+>  Une modification incorrecte du Registre peut endommager gravement votre système. Avant d'apporter des modifications au Registre, sauvegardez toutes les données utiles qui se trouvent sur l'ordinateur.  
   
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>Pour ajouter une clé de Registre pour le processeur de directive  
   
@@ -658,7 +659,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
   
      Votre clé de Registre doit avoir les valeurs suivantes :  
   
-    |Nom|Type|Données|  
+    |Name|Type|Données|  
     |----------|----------|----------|  
     |(Default)|REG_SZ|(valeur non définie)|  
     |Classe|REG_SZ|CustomDP.CustomDirectiveProcessor|  
@@ -666,7 +667,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
   
      Si vous avez placé l'assembly dans le GAC, les valeurs doivent se présenter comme suit :  
   
-    |Nom|Type|Données|  
+    |Name|Type|Données|  
     |----------|----------|----------|  
     |(Default)|REG_SZ|(valeur non définie)|  
     |Classe|REG_SZ|CustomDP.CustomDirectiveProcessor|  

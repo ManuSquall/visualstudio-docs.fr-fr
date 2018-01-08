@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f8a60f9c4ca91ff9aac516d21b3a502a2898aff1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e2631a81cd907c6946993461f953a0bc1ddbf2ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Utilisation du schéma de définition DSL
 Le diagramme d’un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] définition est un outil important pour la définition de la langue spécifique à un domaine. Vous pouvez ajouter des éléments à votre modèle de domaine et définir des relations sur le diagramme ; vous pouvez également modifier la disposition du diagramme pour accroître sa lisibilité.  
@@ -64,13 +65,13 @@ Le diagramme d’un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] définition 
 ### <a name="expandcollapse-inheritance-tree"></a>Développer/réduire l'arborescence d'héritage  
  Si une classe de domaine est la classe de base d’autres classes de domaine, vous pouvez masquer l’arborescence d’héritage en double-cliquant sur la définition de classe de domaine, puis sur **arborescence d’héritage réduire**. Pour afficher l’arborescence d’héritage, avec le bouton droit de l’élément de définition, puis cliquez sur **arborescence d’héritage développez**.  
   
-### <a name="bring-tree-here"></a>Déplacer l'arborescence ici (action)  
+### <a name="bring-tree-here"></a>Bring Tree Here (action)  
  Vous pouvez consolider le diagramme en double-cliquant sur une classe de domaine d’espace réservé, puis sur **mettre l’arborescence ici**. La classe de domaine de l'espace réservé devient un élément de définition et affiche les arborescences d'héritage et de relations. Le précédent élément de définition devient un élément d'espace réservé s'il est la cible d'une relation ou l'enfant d'une relation d'héritage ; dans le cas contraire, il disparaît.  
   
 ### <a name="split-tree"></a>Split Tree  
  Vous pouvez rompre les arborescences d’héritage ou les relations en double-cliquant sur la définition de classe de domaine qui les affiche, puis sur **fractionnement arborescence**. L'élément de définition devient un élément d'espace réservé et la classe de domaine de la définition, ainsi que ses relations d'héritage et de relation, s'affiche désormais en bas de la partition.  
   
-### <a name="show-as-class"></a>Afficher comme classe  
+### <a name="show-as-class"></a>Show As Class  
  Si une relation de domaine est dérivée des relations, ou si elle a des relations d’incorporation ou de référence avec les autres relations de domaine, vous pouvez afficher la relation en tant que classe en double-cliquant sur la relation, puis sur **afficher en tant que la classe** . La relation s’affiche avec un **propriétés du domaine** de compartiments et affiche les arborescences d’héritage et les relations.  
   
 ## <a name="see-also"></a>Voir aussi  

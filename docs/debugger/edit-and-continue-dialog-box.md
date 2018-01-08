@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.ENC.welcome
 dev_langs:
 - CSharp
@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04b5bdb609c6c4914e8eb1e5abcd0bd0270946cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 50de847fd1c7c030513237b724a15e72cbb65cd9
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="edit-and-continue-dialog-box"></a>Boîte de dialogue Modifier & Continuer
 (Natif uniquement) Cette boîte de dialogue s’affiche lorsque vous avez modifié le code pendant le débogage et **Modifier & Continuer** reconnaît pouvoir appliquer les modifications du code. Pour plus d’informations, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).  

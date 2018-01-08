@@ -18,17 +18,18 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14432de4519ed49292810af5f96399bbf87e43cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0710bad95484ada62faa042edabf5b76ac459558
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Comment : basculer vers un autre Thread pendant un débogage dans Visual Studio
 Lorsque vous déboguez une application multithread, vous pouvez utiliser l’une des méthodes pour basculer à partir du thread que vous avez travaillé avec vers un autre thread.
 
 > [!NOTE]
-> Si vous souhaitez contrôler l’ordre dans lequel les threads exécutent, vous devez [figer et libérer les threads](/debugger/get-started-debugging-multithreaded-apps.md).
+> Si vous souhaitez contrôler l’ordre dans lequel les threads exécutent, vous devez [figer et libérer les threads](../debugger/get-started-debugging-multithreaded-apps.md).
 
 Lorsque vous examinez les threads dans l’éditeur de code et les différentes fenêtres de débogage multithreads, la flèche jaune indique que le thread actuel. Une flèche verte avec extrémité recourbée indique qu’un thread non actuel possède le contexte du débogueur.
   

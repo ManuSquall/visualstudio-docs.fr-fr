@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: eae3a0ffd77fa4b399b2d62d3139e7bd8a405d48
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 850cb58f6763b521da9cdb1779b0960c0607ef88
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personnalisation du stockage de fichiers et de la sérialisation XML
 Lorsque l’utilisateur enregistre une instance, ou *modèle*, d’un langage spécifique à un domaine (DSL) dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], un fichier XML est créé ou mis à jour. Le fichier peut être rechargé pour recréer le modèle dans le magasin.  
@@ -278,7 +279,7 @@ Lorsque l’utilisateur enregistre une instance, ou *modèle*, d’un langage sp
 |Nom du Type de moniker|Nom du type xsd généré pour les monikers à des éléments de cette classe. Le schéma XSD est **Dsl\Generated Code\\\*Schema.xsd**|  
 |Sérialiser du code|Si la valeur est True, le GUID de l’élément est inclus dans le fichier. Cela doit être true s’il n’y a aucune propriété marquée **est la clé de Moniker** et la DSL définit des relations de référence à cette classe.|  
 |Nom de type|Nom du type xml généré dans le xsd à partir de la classe de domaine désigné.|  
-|Remarques|Notes informelles associées à cet élément|  
+|Notes|Notes informelles associées à cet élément|  
   
 ### <a name="xml-property-data"></a>Données de la propriété XML  
  Nœuds de la propriété XML sont trouvent sous les nœuds de la classe.  
@@ -291,7 +292,7 @@ Lorsque l’utilisateur enregistre une instance, ou *modèle*, d’un langage sp
 |Qualificateur du Moniker|Si la valeur est True, la propriété est utilisée pour créer le qualificateur dans monikers. Si la valeur false et si SerializeId n’est pas vrai pour cette classe de domaine, les monikers sont qualifiés par le moniker de l’élément parent dans l’arborescence de l’incorporation.|  
 |Représentation sous forme de|Si l’attribut, la propriété est sérialisé comme un attribut xml ; Si l’élément, il est sérialisé comme un élément ; Si Ignorer, il n’est pas sérialisé.|  
 |Nom XML|Nom utilisé pour l’élément qui représente la propriété ou un attribut xml. Par défaut, il s’agit d’une version en minuscules de la propriété du nom de domaine.|  
-|Remarques|Notes informelles associées à cet élément|  
+|Notes|Notes informelles associées à cet élément|  
   
 ### <a name="xml-role-data"></a>Données de rôle de XML  
  Les nœuds de données de rôle sont trouvent sous les nœuds de la classe source.  

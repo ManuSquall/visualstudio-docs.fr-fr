@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f17e43e2fe98e36939c91b37e72b185cb14d09e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ffbacd5748ae2a5284ed628dce974b20e25bcab3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-sharepoint-project-items"></a>Extension d'éléments de projet SharePoint
   Créer une extension d’élément de projet lorsque vous souhaitez ajouter des fonctionnalités à un type d’élément de projet SharePoint est déjà installé dans Visual Studio. Par exemple, vous pouvez créer une extension pour la fonction intégrée **récepteur d’événements** ou **définition de liste** les éléments de projet dans Visual Studio, ou vous pouvez créer une extension pour un type d’élément de projet personnalisé. Vous pouvez également créer une extension pour tous les types d’éléments de projet SharePoint.  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 |Flux de travail séquentiel<br /><br /> Flux de travail de l'ordinateur d'état|Microsoft.VisualStudio.SharePoint.Workflow|  
 |Définition de site|Microsoft.VisualStudio.SharePoint.SiteDefinition|  
 |Composant Visual Web Part|Microsoft.VisualStudio.SharePoint.VisualWebPart|  
-|Composant Web Part|Microsoft.VisualStudio.SharePoint.WebPart|  
+|Composant WebPart|Microsoft.VisualStudio.SharePoint.WebPart|  
 |Formulaire d’Association de flux de travail|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|  
   
 ## <a name="see-also"></a>Voir aussi  

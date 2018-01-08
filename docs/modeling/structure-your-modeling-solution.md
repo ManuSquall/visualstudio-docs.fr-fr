@@ -11,11 +11,12 @@ caps.latest.revision: "14"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: aeaaa6605d316804dc49a82de72fa2c43d25b03c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 3819227bbdfdd754166c886c9da0cc8bd727e94e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="structure-your-modeling-solution"></a>Structurer votre solution de modélisation
 Pour utiliser efficacement des modèles dans un projet de développement, les membres de l'équipe doivent pouvoir travailler sur des modèles de différentes parties du projet en même temps. Cette rubrique suggère comment diviser l'application en différentes parties correspondant aux couches d'un diagramme de couche global.  

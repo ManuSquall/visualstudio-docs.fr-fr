@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0effe0190d54d05d706127a8e5fada66af1c7ab6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Profilage des performances des applications SharePoint
   Si vous exécutez vos applications SharePoint à variation lente ou inefficace, vous pouvez utiliser les fonctionnalités de profilage dans Visual Studio pour identifier tout code problématique et autres éléments. À l’aide de la fonctionnalité de test de charge, vous pouvez déterminer la façon dont une application SharePoint effectue sous une charge importante, par exemple lorsque de nombreux utilisateurs accèdent à l’application simultanément. En exécutant des tests de performances web, vous pouvez mesurer la façon dont l’application s’exécute sur le web. À l’aide de tests codés de l’interface utilisateur, vous pouvez vérifier si l’application SharePoint, y compris son interface utilisateur, fonctionne correctement. Lorsque vous utilisez ces tests ensemble, ils peuvent vous aider à identifier les problèmes de performances avant de déployer votre application.  

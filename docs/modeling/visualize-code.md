@@ -16,11 +16,12 @@ caps.latest.revision: "47"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 0abc0bff93da0944ce7e413a83dafc47e375a8a2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 50904fd36dc3a4f009b87b9daa5c603fdee702ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visualize-code"></a>Visualiser du code
 Vous pouvez utiliser les outils de modélisation et de visualisation dans Visual Studio pour aider à comprendre le code existant et à décrire votre application. Cela vous permet de savoir visuellement comment vos changements peuvent affecter le code et vous aide à évaluer le travail et les risques qui résultent de ces modifications. Exemple :  

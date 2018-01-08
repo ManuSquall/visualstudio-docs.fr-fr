@@ -14,11 +14,12 @@ caps.latest.revision: "51"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 40e8529dd439060172ead1ae2f68ac3052345eb4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2edee4658c952816fc961254aee2c3cccfbe7c4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Procédure pas à pas : création d'un hôte de modèle de texte personnalisé
 A *modèle de texte**hôte* fournit un environnement qui permet la *moteur de transformation de modèle de texte* à exécuter. L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou *processeur de directive* qui a besoin d’un fichier ou un assembly peut demander une ressource à partir de l’ordinateur hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).  
@@ -34,15 +35,15 @@ A *modèle de texte**hôte* fournit un environnement qui permet la *moteur de tr
   
 -   Test de l'hôte personnalisé.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour effectuer cette procédure pas à pas, vous devez disposer des éléments suivants :  
   
 -   Visual Studio 2010 ou version ultérieure  
   
--   Kit de développement logiciel Visual Studio  
+-   SDK Visual Studio  
   
 ## <a name="creating-a-custom-text-template-host"></a>Création d'un hôte de modèle de texte personnalisé  
- Dans cette procédure pas à pas, vous allez créer un hôte personnalisé dans une application exécutable qui peut être appelée à partir de la ligne de commande. L'application accepte un fichier modèle de texte comme argument, lit le modèle, appelle le moteur pour transformer le modèle et affiche toutes les erreurs qui se produisent dans la fenêtre d'invite de commandes.  
+ Dans cette procédure pas à pas, vous allez créer un hôte personnalisé dans une application exécutable qui peut être appelée à partir de la ligne de commande. L’application accepte un fichier modèle de texte comme argument, lit le modèle, appelle le moteur pour transformer le modèle et affiche toutes les erreurs qui se produisent dans la fenêtre d’invite de commandes.  
   
 #### <a name="to-create-a-custom-host"></a>Pour créer un hôte personnalisé  
   

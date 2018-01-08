@@ -24,11 +24,12 @@ caps.latest.revision: "33"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: ce4a203fd0843fd6b15bfbf85019e85032defbd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 43901987c9f6f37e7082200f675549021fb63f83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammes de dépendance : référence
 Dans Visual Studio, vous pouvez utiliser un *diagramme de dépendances* pour visualiser l’architecture de haut niveau, la logique de votre système. Un diagramme de dépendances organise les artefacts physiques dans votre système en groupes logiques et abstraits appelés *couches*. Ces couches décrivent les tâches principales que les artefacts exécutent ou les principaux composants de votre système. Chaque couche peut également contenir des couches imbriquées qui décrivent des tâches plus détaillées.  

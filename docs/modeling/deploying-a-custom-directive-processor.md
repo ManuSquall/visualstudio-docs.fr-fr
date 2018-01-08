@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f020dbd8aef022acaafe0561fba11343e9272ff6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sur n'importe quel ordinateur, vous devez l'inscrire au moyen de l'une des méthodes décrites dans cette rubrique.  
@@ -40,7 +41,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
 -   Un fichier .pkgdef qui inscrit le processeur de directive. Le nom racine du fichier doit être identique à celui de l'assembly. Par exemple, vos fichiers peuvent être nommés CDP.dll et CDP.pkgdef.  
   
- Pour inspecter ou modifier le contenu d'un fichier .vsix, remplacez son extension de nom par .zip, puis ouvrez-le. Après avoir modifié le contenu, réaffectez l'extension .vsix au nom de fichier.  
+ Pour inspecter ou modifier le contenu d’un fichier .vsix, remplacez son extension de nom par .zip, puis ouvrez-le. Après avoir modifié le contenu, réaffectez l'extension .vsix au nom de fichier.  
   
  Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante décrit une de ces méthodes.  
   
@@ -128,7 +129,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
 -   Si vous ne voyez pas l’extension dans le Gestionnaire d’extensions, mais le système vous autorisera pas à l’installer, supprimer l’extension à partir de **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .  
   
--   Ouvrez le fichier .vsix et inspectez son contenu. Pour l'ouvrir, remplacez l'extension de nom du fichier par .zip. Vérifiez qu'il contient les fichiers .dll, .pkgdef et extension.vsixmanifest. Le fichier extension.vsixmanifest doit comporter la liste appropriée dans le nœud SupportedProducts, ainsi qu’un nœud VsPackage sous le nœud de contenu :  
+-   Ouvrez le fichier .vsix et inspectez son contenu. Pour l’ouvrir, remplacez l’extension de nom du fichier par .zip. Vérifiez qu'il contient les fichiers .dll, .pkgdef et extension.vsixmanifest. Le fichier extension.vsixmanifest doit comporter la liste appropriée dans le nœud SupportedProducts, ainsi qu’un nœud VsPackage sous le nœud de contenu :  
   
      `<Content>`  
   
@@ -150,7 +151,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
  Le fichier .pkgdef sera généré en même temps que le projet. Lorsque vous installerez le VSPackage, le fichier .pkgdef inscrira le processeur de directive.  
   
- Vérifiez que le fichier .pkgdef s'affiche dans le dossier de génération, qui correspond en général à bin\Debug ou bin\Release. S'il ne s'affiche pas, ouvrez le fichier .csproj dans un éditeur de texte et supprimez le nœud suivant : `<GeneratePkgDefFile>false</GeneratePkgDefFile>`.  
+ Vérifiez que le fichier .pkgdef s’affiche dans le dossier de génération, qui correspond en général à bin\Debug ou bin\Release. S'il ne s'affiche pas, ouvrez le fichier .csproj dans un éditeur de texte et supprimez le nœud suivant : `<GeneratePkgDefFile>false</GeneratePkgDefFile>`.  
   
  Pour plus d’informations, consultez [VSPackages](../extensibility/internals/vspackages.md).  
   
@@ -184,7 +185,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
  Si le processeur de directive personnalisé ne se trouve pas dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :  
   
-|Nom|Type|Données|  
+|Name|Type|Données|  
 |----------|----------|----------|  
 |(Default)|REG_SZ|(valeur non définie)|  
 |Classe|REG_SZ|**\<Nom de Namespace >. \<Nom de la classe >**|  
@@ -192,7 +193,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
  Si l'assembly se trouve dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :  
   
-|Nom|Type|Données|  
+|Name|Type|Données|  
 |----------|----------|----------|  
 |(Default)|REG_SZ|(valeur non définie)|  
 |Classe|REG_SZ|\<**Le nom de classe complet**>|  

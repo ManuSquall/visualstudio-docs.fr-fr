@@ -21,21 +21,18 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2c4077c57232f511097d6e1d46c49bf7337aee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 873e08817eef7d1760a717d98e413d8d4096323b
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugger-basics"></a>Principes de base du débogueur
 Le débogueur Visual Studio vous permet d’observer le comportement de votre programme au moment de l’exécution et de déterminer l’emplacement des erreurs de logique. Le débogueur fonctionne avec tous les langages de programmation Visual Studio et les bibliothèques qui leur sont associées. Avec le débogueur, vous pouvez interrompre l’exécution pour parcourir votre code et évaluer les variables dans votre application.  
   
-## <a name="in-this-section"></a>Dans cette section  
  [Bien démarrer avec le débogueur](../debugger/getting-started-with-the-debugger.md)  
  Explique comment utiliser les fonctionnalités du débogueur pour déboguer vos applications.  
-
- [Regardez une vidéo du débogueur](../debugger/getting-started-with-the-debugger.md#video)  
- Montre comment utiliser les fonctionnalités du débogueur pour déboguer vos applications.
   
  [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md)  
  Explique comment parcourir le code avec le débogueur.  

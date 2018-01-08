@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c2cbca8406f93184bab7ed80a0450047abea711
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc47c6bf1e19f66fa55d29f436ba615742d08a3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-sharepoint-development-in-visual-studio"></a>Mise en route (Développement SharePoint dans Visual Studio)
   Cette section vous permet de commencer à utiliser [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pour développer des solutions SharePoint qui tirent parti de [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] et [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].  

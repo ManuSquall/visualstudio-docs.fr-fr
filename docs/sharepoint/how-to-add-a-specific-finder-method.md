@@ -24,11 +24,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7b2277d725259fb5f95c186825773b5460ec17d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6a5dbff1d4a4c739ce8ecab0807e2d74c62f999e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Comment : ajouter une méthode de recherche spécifique
   Vous pouvez retourner une seule instance d’entité en créant un *recherche spécifique* (méthode). Le service de connectivité de données métiers (BDC) exécute la méthode de recherche spécifique lorsqu’un utilisateur choisit une entité dans une liste externe ou un composant WebPart données métier. Pour plus d’informations, consultez [vous concevez un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
   
      Le fichier de code de service entité s’ouvre dans l’éditeur de Code. Pour plus d’informations sur le fichier de code de service entité, consultez [création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-9. Ajoutez le code à la méthode de recherche spécifique. Ce code exécute les tâches suivantes :  
+9. Ajoutez le code à la méthode de recherche spécifique. Ce code exécute les tâches suivantes :  
   
     -   Récupère un enregistrement à partir d’une source de données.  
   

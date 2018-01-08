@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.selectengines
 dev_langs:
 - CSharp
@@ -24,11 +24,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 421c8a206091bf69e20a814a693f1b88bbb0d843
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d90d0bd4b310334e11a6ff394384c7e9003d3c3e
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="select-code-type-dialog-box"></a>Sélectionner le type de code, boîte de dialogue
 Pour ouvrir cette boîte de dialogue, ouvrez le **attacher au processus** boîte de dialogue, puis cliquez sur le **sélectionnez** bouton.  

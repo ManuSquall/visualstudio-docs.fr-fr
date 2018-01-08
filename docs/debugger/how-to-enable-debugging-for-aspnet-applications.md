@@ -21,23 +21,24 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9048f965ad2f04b4eed8fe3a753f6fddc280dbfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Débogage d’Applications ASP.NET dans Visual Studio
 
 Vous pouvez déboguer des applications ASP.NET à partir de Visual Studio.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 Pour suivre les instructions fournies dans cette rubrique, vous devez :
 
 - IIS Express, qui est inclus par défaut dans Visual Studio 2012 et versions ultérieures
 
-    ou
+    - ou -
 
 - Local IIS web server (version 8.0 ou version ultérieure) est correctement configuré et peut exécuter l’application ASP.NET sans erreurs.
 
@@ -124,7 +125,7 @@ Pour le débogage sur un serveur web local, définissez les propriétés du proj
 
 2. Si vous choisissez un serveur (personnalisé) externe, entrez l’URL correcte dans le **URL Project** (ou **une URL de Base**) champ.
 
-    Si le serveur externe est local IIS, IIS doit être installé et configuré correctement. Par exemple, la version correcte d’ASP.NET doit être configurée dans IIS. Pour plus d’informations, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Si vous souhaitez tester le déploiement, ainsi que le débogage, consultez [déploiement pour tester](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
+    Si le serveur externe est local IIS, IIS doit être installé et configuré correctement. Par exemple, la version correcte d’ASP.NET doit être configurée dans IIS. Pour plus d’informations, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Si vous souhaitez tester le déploiement, ainsi que le débogage, consultez [déploiement pour tester](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
 
     Si le serveur externe est [distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md), attacher au processus à la place, et ces paramètres de projet ne sont pas utilisés pour le débogage.
 
@@ -134,7 +135,7 @@ Pour IIS Express, vous n’avez pas besoin de configurer le serveur web (ignorer
 
 Si vous utilisez un serveur web IIS local, procédez comme suit.
 
-1. Assurez-vous qu’IIS est installé correctement. Pour plus d’informations, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+1. Assurez-vous qu’IIS est installé correctement. Pour plus d’informations, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     * Assurez-vous que vous installez la version correcte d’ASP.NET sur le serveur. Web Platform Installer (WebPI) permet d’installer ASP.NET 4.5 (à partir du nœud de serveur dans Windows Server 2012 R2, choisissez **obtenir nouveaux composants Web Platform** , puis recherchez ASP.NET). Pour installer ASP.NET Core, consultez [publication sur IIS](https://docs.asp.net/en/latest/publishing/iis.html#iis-configuration).
 
@@ -230,5 +231,5 @@ Par exemple, vous pouvez spécifier `debug="true"` dans www.microsoft.com/aaa/We
 [Déboguer les applications Web déployées](debugging-deployed-web-applications.md)   
 [Procédure pas à pas : Débogage d’un formulaire Web](walkthrough-debugging-a-web-form.md)   
 [Comment : déboguer des exceptions ASP.NET](how-to-debug-aspnet-exceptions.md)   
-[Débogage d’applications Web : erreurs et dépannage](debugging-web-applications-errors-and-troubleshooting.md)
+[Déboguer des applications web : erreurs et dépannage](debugging-web-applications-errors-and-troubleshooting.md)
   

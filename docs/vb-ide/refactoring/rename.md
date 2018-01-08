@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.rename
 dev_langs: VB
-ms.openlocfilehash: 35313f036e1f324d3f8908a4527cd3a2ad64ae52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da85803adf3de8afa0912a1f47e2b474952df51d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rename-a-code-symbol-in-visual-basic"></a>Renommer un symbole de code en Visual Basic
 **Ce que :** vous permet de renommer les identificateurs pour les symboles de code, tels que les champs, les variables locales, les méthodes, les espaces de noms, les propriétés et les types.

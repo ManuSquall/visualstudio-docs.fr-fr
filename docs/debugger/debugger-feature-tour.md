@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7edb1428d3dedbbe6341427e28964559d9750b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="feature-tour-of-the-visual-studio-debugger"></a>Visite guidée des fonctionnalités du débogueur Visual Studio
 
@@ -192,6 +193,26 @@ L’application d’assistance de l’Exception est une fonctionnalité intéres
 > L’application d’assistance de l’Exception remplace l’Assistant Exception dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Développez le **paramètres d’Exception** nœud pour afficher davantage d’options sur la façon de gérer ce type d’exception, mais vous n’avez pas besoin de modifications dans cette visite guidée !
+
+## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Déboguer des applications ASP.NET en direct dans Azure App Service
+
+le **instantané débogueur** prend un instantané de vos applications de production lors de l’exécution de code qui vous intéressez. Pour indiquer au débogueur de prendre une capture instantanée, vous définissez des points d’ancrage et des points de journalisation dans votre code. Dans le débogueur, vous pouvez voir précisément à quel endroit le code ne s’est pas exécuté correctement, sans que cela impacte le trafic de votre application en production. Snapshot Debugger peut vous aider à résoudre beaucoup plus vite les problèmes rencontrés dans les environnements de production.
+
+![Lancer le débogueur de l’instantané](../debugger/media/snapshot-launch.png "lancer le débogueur de l’instantané")
+
+Collection de l’instantané est disponible pour les applications ASP.NET s’exécutant dans Azure App Service. Les applications ASP.NET doivent s’exécuter sur .NET Framework 4.6.1 ou version ultérieure, et les applications ASP.NET Core doivent s’exécuter sur .NET Core 2.0 ou version ultérieure sur Windows.
+
+Pour plus d’informations, consultez [déboguer des applications ASP.NET en direct à l’aide du débogueur de l’instantané](../debugger/debug-live-azure-applications.md).
+
+## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Afficher des instantanés avec IntelliTrace étape différée (Visual Studio Enterprise)
+
+**Étape IntelliTrace différée** prend automatiquement un instantané de votre application à chaque point d’arrêt et le débogueur événement d’étape. Les captures instantanées enregistrées vous permettent de revenir à des étapes ou points d’arrêt précédents pour afficher un état antérieur de l’application. Le retour en arrière IntelliTrace peut vous faire gagner du temps quand vous souhaitez afficher un état précédent de l’application sans avoir à redémarrer le débogage ou à recréer l’état de l’application souhaité.
+
+Vous pouvez parcourir et afficher les captures instantanées à l’aide des boutons **Étape précédente** et **Étape suivante** situés dans la barre d’outils de débogage. Utilisez ces boutons pour accéder aux événements figurant sous l’onglet **Événements** de la fenêtre **Outils de diagnostic**.
+
+![Étape vers l’arrière et des boutons](../debugger/media/intellitrace-step-back-icons-description.png  "boutons arrière et transférer")  
+
+Pour plus d’informations, consultez la page [Afficher des captures instantanées avec le retour en arrière IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 
 ## <a name="more-features-to-look-at"></a>Plusieurs fonctions à examiner
 

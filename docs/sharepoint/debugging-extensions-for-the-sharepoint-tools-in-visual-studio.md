@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98bb43322d4a222d63bafac22d78e433a3000530
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cb6ddce35a45c71fb72a4e6d1f138e044afd50e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Débogage d’extensions pour les outils SharePoint dans Visual Studio
   Vous pouvez déboguer des extensions des outils SharePoint dans l’instance expérimentale ou l’instance normale de Visual Studio. Si vous avez besoin dépanner le comportement d’une extension, vous pouvez également modifier les valeurs de Registre pour afficher les informations d’erreur supplémentaires et pour configurer la façon dont Visual Studio exécute les commandes SharePoint.  
@@ -116,13 +117,13 @@ ms.lasthandoff: 10/31/2017
   
  Pour aider à résoudre les problèmes de n’importe quelle extension des outils SharePoint, vous pouvez créer et définir la valeur EnableDiagnostics. Le tableau suivant décrit cette valeur.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |EnableDiagnostics|REG_DWORD qui spécifie si les messages de diagnostic sont affichés dans le **sortie** fenêtre.<br /><br /> Pour afficher les messages de diagnostic, définissez cette valeur sur 1. Pour arrêter l’affichage des messages, définissez cette valeur sur 0, ou supprimez cette valeur.<br /><br /> Pour écrire des messages à la **sortie** extension des outils de la fenêtre à partir de SharePoint, utilisez le service de projet SharePoint. Pour plus d’informations, consultez [à l’aide du Service de projet SharePoint](../sharepoint/using-the-sharepoint-project-service.md).|  
   
  Si votre extension inclut une commande SharePoint, vous pouvez créer et définir des valeurs supplémentaires pour aider à résoudre les problèmes de la commande. Le tableau suivant décrit ces valeurs.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |AttachDebuggerToHostProcess|REG_DWORD qui spécifie s’il faut afficher une boîte de dialogue qui vous permet d’attacher le débogueur à vssphost4.exe dès qu’il démarre. Cela est utile si la commande que vous souhaitez déboguer est exécutée par vssphost.exe immédiatement après son démarrage, et il n’est pas suffisamment de temps pour attacher manuellement le débogueur avant l’exécution de la commande. Pour afficher la boîte de dialogue, vssphost4.exe appelle la <xref:System.Diagnostics.Debugger.Break%2A> méthode lorsqu’il démarre.<br /><br /> Pour activer ce comportement, définissez cette valeur sur 1. Pour désactiver ce comportement, définissez cette valeur sur 0, ou supprimez cette valeur.<br /><br /> Si vous définissez cette valeur sur 1, vous pouvez souhaiter également augmenter la valeur HostProcessStartupTimeout vous-même suffisamment de temps pour attacher le débogueur avant Visual Studio attend vssphost4.exe signale qu’il a démarré correctement.|  
 |ChannelOperationTimeout|REG_DWORD qui spécifie la durée, en secondes, pendant laquelle Visual Studio attend une commande SharePoint à exécuter. Si la commande ne s’exécute pas dans le temps, un <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> est levée.<br /><br /> La valeur par défaut est 120 secondes.|  

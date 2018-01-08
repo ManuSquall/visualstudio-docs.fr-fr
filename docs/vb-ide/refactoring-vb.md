@@ -1,5 +1,5 @@
 ---
-title: Refactorisation des fonctions (Visual Basic) de Visual Studio | Documents Microsoft
+title: "Fonctionnalités de refactorisation pour Visual Basic | Documents Microsoft"
 ms.custom: 
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -12,23 +12,24 @@ f1_keywords:
 - vs.vb.refactoring.issues
 - vs.vb.refactoring.buildwarning
 - VS.PreviewChanges
-dev_langs: visual-basic
+dev_langs: VB
 helpviewer_keywords: refactoring [VB]
-ms.assetid: 7312ea3f-7045-41e8-a699-7b580508d074
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a044fddd38627182efe0ad842524af57b119421a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e1344f3bdfdfba5b3092c1c5e3669d4b2f98698f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="refactoring"></a>Refactorisation
-La refactorisation consiste à améliorer votre code après que qu’il a été écrit en modifiant la structure interne du code sans modifier le comportement externe du code.  
-  
-Visual Basic fournit les fonctionnalités de refactorisation suivantes :  
-  
+# <a name="refactoring-in-visual-basic"></a>Refactorisation en Visual Basic
+
+La refactorisation est le processus de modification de la structure interne du code sans modifier son comportement. La refactorisation est souvent utilisée pour rendre le code plus lisible, fiable et facile à gérer.
+
+Visual Basic fournit les fonctionnalités de refactorisation suivantes :
+
 * [Modifier la signature de la méthode](refactoring/change-method-signature.md)
 * [Encapsuler le champ](refactoring/encapsulate-field.md)
 * [Extraire l’interface](refactoring/extract-interface.md)
@@ -38,3 +39,8 @@ Visual Basic fournit les fonctionnalités de refactorisation suivantes :
 * [Déplacer le type vers le fichier correspondant](refactoring/move-type-to-matching-file.md)
 * [Renommer](refactoring/rename.md)
 * [Synchroniser le type et le nom de fichier](refactoring/sync-type-and-file.md)
+
+## <a name="see-also"></a>Voir aussi
+
+[Refactorisation, génération de Code et des Actions rapides dans Visual Studio](../ide/refactoring-code-generation-quick-actions.md)  
+[Refactorisation en c#](../csharp-ide/refactoring-csharp.md)

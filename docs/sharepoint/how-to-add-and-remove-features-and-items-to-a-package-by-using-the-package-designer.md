@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9da26de3b5a3a71927e7518ff126a7186c01d7e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 37dfee49fe18fda276c1cde27bd79bcae1a13f48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Comment : ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide du Concepteur de packages
   Lorsque vous créez une solution SharePoint, Visual Studio ajoute les fonctionnalités de SharePoint par défaut pour le package dans la solution. Avant son déploiement final, vous pouvez ajouter et supprimer des éléments de projet SharePoint et des fonctionnalités pour modifier le package SharePoint.  
