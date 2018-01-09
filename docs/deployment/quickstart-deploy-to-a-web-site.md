@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a0b4051ce8ba14302e403cb213804b8193b60af
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
-ms.translationtype: HT
+ms.workload: multiple
+ms.openlocfilehash: 07944d5690433831889e56375cfa13ba774aaa8b
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Publier une application web ou une application .NET Core sur un site web à l’aide de l’outil de publication de Visual Studio
 
@@ -45,9 +46,9 @@ Ces étapes s’appliquent aux applications Python dans Visual Studio, .NET Core
 
     ![Choisissez publier](../deployment/media/quickstart-publish-aspnet.png "choisissez Publier")
 
-1. Dans le **publier** volet, choisissez **IIS, FTP, etc.**.
+1. Dans le **publier** volet, choisissez **IIS, FTP, etc**.
 
-    ![Choisissez IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png "IIS de choisir, FTP, etc.")
+    ![Choisissez IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png "IIS de choisir, FTP, etc..")
 
 1. Cliquez sur **Publier**.
 
@@ -75,4 +76,4 @@ Ces étapes s’appliquent aux applications Python dans Visual Studio, .NET Core
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Déployer ASP.NET sur IIS](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+- [Déployer ASP.NET sur IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)

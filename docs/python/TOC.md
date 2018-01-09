@@ -20,7 +20,7 @@
 ### [Modèle de projet web Django](template-django.md)
 ### [Modèle de service cloud Azure](template-azure-cloud-service.md)
 ## [Kit SDK Azure pour Python](azure-sdk-for-python.md)
-# Comment
+# Guides pratiques
 ## [Modification du code](code-editing.md)
 ### [Mise en forme du code](code-formatting.md)
 ### [Refactorisation du code](code-refactoring.md)
