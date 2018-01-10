@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 70c058f6c930b9eb58cf0518d3418ccedcf083b4
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Profilage des performances des applications SharePoint
   Si vous exécutez vos applications SharePoint à variation lente ou inefficace, vous pouvez utiliser les fonctionnalités de profilage dans Visual Studio pour identifier tout code problématique et autres éléments. À l’aide de la fonctionnalité de test de charge, vous pouvez déterminer la façon dont une application SharePoint effectue sous une charge importante, par exemple lorsque de nombreux utilisateurs accèdent à l’application simultanément. En exécutant des tests de performances web, vous pouvez mesurer la façon dont l’application s’exécute sur le web. À l’aide de tests codés de l’interface utilisateur, vous pouvez vérifier si l’application SharePoint, y compris son interface utilisateur, fonctionne correctement. Lorsque vous utilisez ces tests ensemble, ils peuvent vous aider à identifier les problèmes de performances avant de déployer votre application.  
@@ -66,9 +66,7 @@ ms.lasthandoff: 12/22/2017
 |[Tests unitaires sur votre code](/visualstudio/test/unit-test-your-code)|Explique comment rechercher des erreurs de logique dans votre code à l’aide de tests unitaires.|  
 |[Test des applications SharePoint 2010 avec des tests codés de l’interface utilisateur](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Décrit comment tester l’interface utilisateur de vos applications SharePoint.|  
   
-## <a name="see-also"></a>Voir aussi  
- [Génération et débogage de solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Test de l’application](/devops-test-docs/test/test-apps-early-and-often)   
- [Améliorer la qualité du code](/visualstudio/test/improve-code-quality)  
-  
-  
+## <a name="see-also"></a>Voir aussi
+
+[Génération et débogage de solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+[Améliorer la qualité du code](/visualstudio/test/improve-code-quality)

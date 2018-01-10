@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: e4edcc21986ae0fd033228971697057932e63670
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c5be469cd93ce0b920e9100b43d642fd96427a79
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procédure pas à pas : Personnalisation de l’instruction insert, update et supprimez le comportement des classes d’entité
+
 Le [LINQ to SQL Tools dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit une aire de conception visuelle pour créer et modifier [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] classes (classes d’entité) qui sont basées sur des objets dans une base de données. À l’aide de [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), vous pouvez utiliser la technologie LINQ aux bases de données SQL. Pour plus d’informations, consultez [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/).  
   
 Par défaut, la logique d'exécution des mises à jour est fournie par le runtime de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]. Le runtime crée les instructions d'insertion, de mise à jour et de suppression par défaut en fonction du schéma de la table (définitions de colonne et informations de clé primaire). Si vous ne souhaitez pas utiliser le comportement par défaut, vous pouvez configurer le comportement de mise à jour et désigner des procédures stockées spécifiques pour exécuter les instructions d'insertion, de mise à jour et de suppression nécessaires à la manipulation des données dans la base de données. Vous pouvez également le faire lorsque le comportement par défaut n'est pas généré, par exemple lorsque vos classes d'entité mappent aux vues. En outre, vous pouvez substituer le comportement de mise à jour par défaut lorsque la base de données nécessite un accès aux tables via des procédures stockées. Pour plus d’informations, consultez [personnalisation des opérations par à l’aide de procédures stockées](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).  
   
 > [!NOTE]
->  Cette procédure pas à pas requiert la disponibilité de la **InsertCustomer**, **UpdateCustomer**, et **DeleteCustomer** les procédures stockées pour la base de données Northwind.  
+> Cette procédure pas à pas requiert la disponibilité de la **InsertCustomer**, **UpdateCustomer**, et **DeleteCustomer** les procédures stockées pour la base de données Northwind.  
   
 Cette procédure pas à pas décrit les étapes à suivre pour substituer le comportement au moment de l'exécution par défaut de LINQ to SQL et enregistrer les données dans une base de données à l'aide de procédures stockées.  
   
@@ -48,7 +49,8 @@ Pendant cette procédure pas à pas, vous allez apprendre à effectuer les tâch
   
 -   Configurer la classe Customer pour utiliser des procédures stockées pour effectuer des insertions, des mises à jour et des suppressions.  
   
-## <a name="prerequisites"></a>Prérequis  
+## <a name="prerequisites"></a>Prérequis
+
 Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de données Northwind.  
   
 1.  Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement des éditions de SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), ou via le **le programme d’installation de Visual Studio**. Dans le programme d’installation Visual Studio, SQL Server Express LocalDB peut être installé dans le cadre de la **stockage de données et de traitement** charge de travail, ou sous la forme d’un composant individuel.  
@@ -65,12 +67,13 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
        Après une courte période, la requête est terminée et la base de données Northwind est créé.  
   
-## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Création d'une application et ajout de classes LINQ to SQL  
+## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Création d'une application et ajout de classes LINQ to SQL
+
 Comme vous allez travailler avec les classes [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] et afficher les données sur un Windows Form, vous devez créer une application Windows Forms et ajouter un fichier de classes LINQ to SQL.  
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>Pour créer un nouveau projet d’Application Windows Forms qui contient LINQ to SQL classes  
+### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>Pour créer un nouveau projet d’Application Windows Forms qui contient LINQ to SQL classes
   
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **nouveau**, **projet...** .  
   
@@ -90,10 +93,11 @@ Comme vous allez travailler avec les classes [!INCLUDE[vbtecdlinq](../data-tools
   
      Un fichier de classes LINQ to SQL vide (Northwind.dbml) est ajouté au projet et le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] s'ouvre.  
   
-## <a name="creating-the-customer-entity-class-and-object-data-source"></a>Création de la classe d'entité du client et de l'objet source de données  
- Créer [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] les classes qui sont mappées aux tables de base de données en faisant glisser des tables à partir de **l’Explorateur de serveurs**/**l’Explorateur de base de données** sur la [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Les classes d'entité LINQ to SQL qui en résultent mappent aux tables de la base de données. Après avoir créé des classes d'entité, vous pouvez les utiliser en tant qu'objets sources de données comme toute autre classe ayant des propriétés publiques.  
+## <a name="creating-the-customer-entity-class-and-object-data-source"></a>Création de la classe d'entité du client et de l'objet source de données
+
+Créer [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] les classes qui sont mappées aux tables de base de données en faisant glisser des tables à partir de **l’Explorateur de serveurs**/**l’Explorateur de base de données** sur la [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Les classes d'entité LINQ to SQL qui en résultent mappent aux tables de la base de données. Après avoir créé des classes d'entité, vous pouvez les utiliser en tant qu'objets sources de données comme toute autre classe ayant des propriétés publiques.  
   
-#### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Pour créer une classe d'entité client et configurer une source de données correspondante  
+### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Pour créer une classe d'entité client et configurer une source de données correspondante
   
 1.  Dans **l’Explorateur de serveurs**/**l’Explorateur de base de données**, localisez la table Customer dans la version de SQL Server de la base de données Northwind. 
   
@@ -118,17 +122,18 @@ Comme vous allez travailler avec les classes [!INCLUDE[vbtecdlinq](../data-tools
     >  Si le **client** classe n’est pas disponible, quittez l’Assistant, générez le projet, et réexécutez l’Assistant.  
 8.  Cliquez sur **Terminer** pour créer la source de données et ajouter la **client** classe d’entité à la **des Sources de données** fenêtre.  
   
-## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Création d'un DataGridView pour afficher les données de Customer sur un Windows Form  
- Créer des contrôles liés aux classes d’entité en faisant glisser [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] éléments à partir de la source de données le **des Sources de données** fenêtre sur un Windows Form.  
+## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Création d'un DataGridView pour afficher les données de Customer sur un Windows Form
+
+Créer des contrôles liés aux classes d’entité en faisant glisser [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] éléments à partir de la source de données le **des Sources de données** fenêtre sur un Windows Form.  
   
-#### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>Pour ajouter des contrôles liés aux classes d'entité  
+### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>Pour ajouter des contrôles liés aux classes d'entité
   
 1.  Ouvrez Form1 en mode Design.  
   
 2.  À partir de la **des Sources de données** fenêtre, faites glisser le **client** nœud vers Form1.  
   
     > [!NOTE]
-    >  Pour afficher le **des Sources de données** fenêtre, cliquez sur **afficher les Sources de données** sur la **données** menu.  
+    > Pour afficher le **des Sources de données** fenêtre, cliquez sur **afficher les Sources de données** sur la **données** menu.  
   
 3.  Ouvrez Form1 dans l'éditeur de code.  
   
@@ -154,10 +159,11 @@ Comme vous allez travailler avec les classes [!INCLUDE[vbtecdlinq](../data-tools
         = northwindDataContext1.Customers;    
     ```  
   
-## <a name="implementing-save-functionality"></a>Implémentation de la fonctionnalité d'enregistrement  
- Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité d'enregistrement n'est pas implémentée. En outre, le code n'est pas automatiquement ajouté pour enregistrer dans les bases de données des données modifiées lorsque les contrôles liés aux données sont créés pour les objets source de données. Cette section explique comment activer le bouton d'enregistrement et implémenter la fonctionnalité d'enregistrement pour les objets [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)].  
+## <a name="implementing-save-functionality"></a>Implémentation de la fonctionnalité d'enregistrement
+
+Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité d'enregistrement n'est pas implémentée. En outre, le code n'est pas automatiquement ajouté pour enregistrer dans les bases de données des données modifiées lorsque les contrôles liés aux données sont créés pour les objets source de données. Cette section explique comment activer le bouton d'enregistrement et implémenter la fonctionnalité d'enregistrement pour les objets [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)].  
   
-#### <a name="to-implement-save-functionality"></a>Pour implémenter la fonctionnalité d'enregistrement  
+### <a name="to-implement-save-functionality"></a>Pour implémenter la fonctionnalité d'enregistrement
   
 1.  Ouvrez Form1 en mode Design.  
   
@@ -177,9 +183,9 @@ Comme vous allez travailler avec les classes [!INCLUDE[vbtecdlinq](../data-tools
     northwindDataContext1.SubmitChanges();  
     ```  
   
-## <a name="overriding-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>Substitution du comportement par défaut pour effectuer des mises à jour (insertions, mises à jour et suppressions)  
+## <a name="overriding-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>Substitution du comportement par défaut pour effectuer des mises à jour (insertions, mises à jour et suppressions)
   
-#### <a name="to-override-the-default-update-behavior"></a>Pour substituer le comportement de mise à jour par défaut  
+### <a name="to-override-the-default-update-behavior"></a>Pour substituer le comportement de mise à jour par défaut
   
 1.  Ouvrez le fichier LINQ to SQL dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. (Double-cliquez sur le **Northwind.dbml** fichier **l’Explorateur de solutions**.)  
   
@@ -230,13 +236,14 @@ Comme vous allez travailler avec les classes [!INCLUDE[vbtecdlinq](../data-tools
 19. Cliquez sur **OK**.  
   
 > [!NOTE]
->  Bien qu'il ne s'agisse pas d'un problème pour cette procédure pas à pas, notez que [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] gère automatiquement les valeurs générées par une base de données pour les colonnes identity (incrémentation automatique), rowguidcol (GUID généré par la base de données) et timestamp lors des insertions et des mises à jour. Les valeurs générées par une base de données dans les autres types de colonne entraînent une valeur null de manière inopinée. Pour retourner les valeurs générées par une base de données, vous devez affecter la valeur <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> à `true` et l'une des valeurs suivantes à <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> : <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync> ou <xref:System.Data.Linq.Mapping.AutoSync>.  
+> Bien qu'il ne s'agisse pas d'un problème pour cette procédure pas à pas, notez que [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] gère automatiquement les valeurs générées par une base de données pour les colonnes identity (incrémentation automatique), rowguidcol (GUID généré par la base de données) et timestamp lors des insertions et des mises à jour. Les valeurs générées par une base de données dans les autres types de colonne entraînent une valeur null de manière inopinée. Pour retourner les valeurs générées par une base de données, vous devez affecter la valeur <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> à `true` et l'une des valeurs suivantes à <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> : <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync> ou <xref:System.Data.Linq.Mapping.AutoSync>.  
   
-## <a name="testing-the-application"></a>Test de l'application  
- Exécutez l’application à nouveau pour vérifier que le **UpdateCustomers** procédure stockée met à jour correctement l’enregistrement client dans la base de données.  
-  
-#### <a name="to-test-the-application"></a>Pour tester l'application  
-  
+## <a name="testing-the-application"></a>Test de l'application
+
+Exécutez l’application à nouveau pour vérifier que le **UpdateCustomers** procédure stockée met à jour correctement l’enregistrement client dans la base de données.
+
+### <a name="to-test-the-application"></a>Pour tester l'application
+
 1.  Appuyez sur F5.  
   
 2.  Modifiez un enregistrement dans la grille pour tester le comportement de mise à jour.  
@@ -258,19 +265,20 @@ Comme vous allez travailler avec les classes [!INCLUDE[vbtecdlinq](../data-tools
 10. Appuyez sur F5 et vérifiez que l'enregistrement effacé a été bien supprimé de la base de données.  
   
     > [!NOTE]
-    >  Si votre application utilise SQL Server Express Edition, selon la valeur de la **copier dans le répertoire de sortie** propriété du fichier de base de données, les modifications n’apparaissent pas lorsque vous appuyez sur F5 à l’étape 10. 
-  
-## <a name="next-steps"></a>Étapes suivantes  
-Selon les spécifications de votre application, vous pouvez effectuer différentes étapes après avoir créé des classes d'entité [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :  
-  
--   Implémenter la vérification des accès concurrentiels pendant les mises à jour. Pour plus d’informations, consultez [d’accès concurrentiel optimiste : vue d’ensemble](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).  
-  
--   Ajouter des requêtes LINQ pour filtrer des données. Pour plus d’informations, consultez [Introduction aux requêtes LINQ (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).  
-  
+    > Si votre application utilise SQL Server Express Edition, selon la valeur de la **copier dans le répertoire de sortie** propriété du fichier de base de données, les modifications n’apparaissent pas lorsque vous appuyez sur F5 à l’étape 10.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Selon les spécifications de votre application, vous pouvez effectuer différentes étapes après avoir créé des classes d'entité [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
+
+- Implémenter la vérification des accès concurrentiels pendant les mises à jour. Pour plus d’informations, consultez [d’accès concurrentiel optimiste : vue d’ensemble](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).
+
+- Ajouter des requêtes LINQ pour filtrer des données. Pour plus d’informations, consultez [Introduction aux requêtes LINQ (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
+
 ## <a name="see-also"></a>Voir aussi
-[LINQ to SQL des outils dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)     
-[Méthodes DataContext](../data-tools/datacontext-methods-o-r-designer.md)   
+
+[Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+[Méthodes DataContext](../data-tools/datacontext-methods-o-r-designer.md)  
 [Comment : assigner des procédures stockées pour effectuer des mises à jour, insertions et suppressions](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)  
-[Requêtes LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)  
- 
+[Requêtes LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

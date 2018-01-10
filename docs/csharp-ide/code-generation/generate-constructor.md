@@ -12,11 +12,11 @@ author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 9ffa85d768939522935199edde6d0f19b3f2b7a2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dd5e1012c37660917d77e2643922d8a90a8e2ffe
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="generate-a-constructor-in-c"></a>Générer un constructeur en c# #
 **Ce que :** vous permet de générer d’immédiatement le code pour un nouveau constructeur sur une classe. 
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
 
    ![Générer le résultat de constructeur](media/constructor_result.png)
 
-## <a id="selection"></a>Ajouter un paramètre au constructeur existant
+## <a id="addparameter"></a>Ajouter un paramètre au constructeur existant
 1. Ajouter un paramètre à une instanciation d’objet existant.
 
 1. Placez votre curseur sur la ligne où il existe une ligne ondulée rouge, indiquant vous avez utilisé un constructeur qui n’existe pas encore.

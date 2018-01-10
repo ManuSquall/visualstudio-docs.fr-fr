@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: VB
 ms.workload: multiple
-ms.openlocfilehash: 5eea45aafebe8c20431de5b2d3bd299789bf7285
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cda22612959e083cb1f0179d65554d38fab9cf03
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procédure : utiliser le Concepteur de schémas XML avec des littéraux XML
 Cette rubrique décrit comment afficher un schéma associé à un littéral XML dans un projet Visual Basic.  
@@ -70,7 +70,7 @@ Cette rubrique décrit comment afficher un schéma associé à un littéral XML 
   
        End Sub  
    End Module  
-   ```  
+   ```
   
 2.  Avec le bouton droit n’importe quel nœud XML dans un littéral XML ou une importation d’espace de noms XML et sélectionnez **afficher dans l’Explorateur de schémas**.  
   

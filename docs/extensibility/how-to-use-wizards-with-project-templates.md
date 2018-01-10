@@ -19,11 +19,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 6e76a8880e488177f12cfb949ec46e95fd825986
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8eef98d11f98e3db8216c69dcfacf478c676a837
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Comment : utiliser des Assistants avec des modèles de projet
 Visual Studio fournit la <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface qui, lorsqu’elle est implémentée, vous permet d’exécuter du code personnalisé lorsqu’un utilisateur crée un projet à partir d’un modèle.  
@@ -198,6 +198,7 @@ Visual Studio fournit la <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> in
             private void button1_Click(object sender, EventArgs e)  
             {  
                 customMessage = textBox1.Text;  
+                this.Close();
             }  
         }  
     ```  
@@ -231,13 +232,13 @@ Visual Studio fournit la <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> in
   
 10. Extraire la clé publique du fichier key.snk. Dans la fenêtre de commande, tapez  
   
-     **\<emplacement de sn.exe > \sn.exe - p key.snk outfile.key.**  
+     **\<emplacement de sn.exe > \sn.exe -p key.snk outfile.key.**  
   
      N’oubliez pas délimiter le chemin d’accès de sn.exe entre guillemets s’il existe des espaces dans les noms de répertoires.  
   
 11. Obtenir la clé publique jeton dans le fichier de sortie :  
   
-     **\<emplacement de sn.exe > \sn.exe - t outfile.key.**  
+     **\<emplacement de sn.exe > \sn.exe -t outfile.key.**  
   
      Là encore, n’oubliez pas les guillemets. Vous devez voir une ligne dans la sortie comme suit  
   

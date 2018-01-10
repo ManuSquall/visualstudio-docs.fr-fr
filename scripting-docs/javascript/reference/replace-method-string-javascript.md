@@ -21,11 +21,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e78e17d4b9060a3a52498109a744c13cdf972abb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 82894a5d7f92c8231a6ba3a1948369fb2c819a6d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="replace-method-string-javascript"></a>replace, méthode (String) (JavaScript)
 Remplace du texte dans une chaîne, à l'aide d'une expression régulière ou d'une chaîne de recherche.  
@@ -34,7 +34,7 @@ Remplace du texte dans une chaîne, à l'aide d'une expression régulière ou d'
   
 ```  
   
-stringObj. replace(rgExp, replaceText)  
+stringObj.replace(rgExp, replaceText)  
 ```  
   
 ## <a name="parameters"></a>Paramètres  
@@ -50,7 +50,7 @@ stringObj. replace(rgExp, replaceText)
 ## <a name="return-value"></a>Valeur de retour  
  Le résultat de la **remplacer** (méthode) est une copie de `stringObj` une fois que les remplacements spécifiés ont été apportées.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les variables de correspondance suivantes peuvent toutes être utilisées pour identifier la correspondance la plus récente ainsi que la chaîne où elle se situe. Ces variables peuvent être employées dans le texte de remplacement où la chaîne de remplacement doit être déterminée de façon dynamique.  
   
 |Caractères|Signification|  
@@ -89,7 +89,7 @@ var re = /(\S+)(\s+)(\S+)/g;
 var result = s.replace(re, "$3$2$1");  
 document.write(result);  
   
-// Output:  quick The fox brown over jumps lazy the dog.  
+// Output:  quick The fox brown over jumped lazy the dog.  
 ```  
   
  L'exemple suivant, qui fonctionne dans [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] et les versions ultérieures, montre comment utiliser une fonction qui retourne le texte de remplacement. Il remplace toute instance d'un nombre suivi de « F » par une conversion en degrés Celsius.  
@@ -114,7 +114,7 @@ document.write(f2c("Water freezes at 32F and boils at 212F."));
   
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **S’applique aux**: [objet chaîne](../../javascript/reference/string-object-javascript.md)  
