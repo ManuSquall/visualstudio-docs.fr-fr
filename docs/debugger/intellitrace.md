@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Vous pouvez consacrer moins de temps au débogage de votre application quand vous utilisez IntelliTrace pour enregistrer et effectuer le suivi de l'historique d'exécution de votre code. Vous pouvez trouver des bogues facilement car IntelliTrace vous permet d'effectuer les tâches suivantes :  
@@ -47,7 +47,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
 |||  
 |-|-|  
 |**Déboguer mon application avec IntelliTrace :**<br /><br /> -Afficher les événements passés.<br />-Afficher les événements passés à des informations d’appel.<br />-Enregistrer ma session IntelliTrace.<br />-Contrôle les données collectées par IntelliTrace.|-   [Procédure pas à pas : Utilisation d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Fonctionnalités d’IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Débogage d’historique](../debugger/historical-debugging.md)<br />-   [Afficher des instantanés à l’aide d’IntelliTrace étape différée](../debugger/how-to-use-intellitrace-step-back.md)|  
-|**Collecter les données IntelliTrace pendant une session de test dans Test Manager**|-   [Collecter les données de diagnostic plus dans les tests manuels](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+|**Collecter les données IntelliTrace pendant une session de test dans Test Manager**|-   [Collecter les données de diagnostic plus dans les tests manuels](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
 |**Collecter des données IntelliTrace à partir des applications déployées**|-   [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Démarrez le débogage à partir d’un fichier de journal IntelliTrace (fichier .iTrace).**|-   [À l’aide des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -89,7 +89,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
 -   Votre application se bloque sur un ordinateur de test, mais s'exécute correctement sur un ordinateur de développement.  
   
-     Vous pouvez collecter les données IntelliTrace avec Microsoft Test Manager, enregistrer les données dans un fichier .iTrace et attacher ce fichier à un élément de travail Team Foundation Server pour un examen approfondi. Consultez [collecter des données de diagnostic plus dans les tests manuels](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests) et [utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md).  
+     Vous pouvez collecter les données IntelliTrace avec Microsoft Test Manager, enregistrer les données dans un fichier .iTrace et attacher ce fichier à un élément de travail Team Foundation Server pour un examen approfondi. Consultez [collecter des données de diagnostic plus dans les tests manuels](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) et [utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md).  
   
 -   Un bogue ou un incident se produit dans une application déployée.  
   
@@ -180,8 +180,6 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)  
-  
- [Inclure les données de Trace de Diagnostic dans des bogues difficiles à reproduire](/devops-test-docs/test_notintoc/including-diagnostic-trace-data-with-bugs-that-are-difficult-to-reproduce)  
   
  [Diagnostiquer des problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md)  
   

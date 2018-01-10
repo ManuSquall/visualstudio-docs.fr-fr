@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>Utilisation des données IntelliTrace enregistrées
 Accédez aux points spécifiques de l’exécution de votre application lorsque vous démarrez le débogage à partir d’un fichier journal IntelliTrace (.iTrace). Ce fichier contient des événements de performance, des exceptions, des threads, des étapes de test, des modules et d’autres informations système qu’IntelliTrace enregistre pendant que votre application s’exécute.  
@@ -39,7 +39,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
     |**Source**|**Consultez**|  
     |----------------|-------------|  
     |Session IntelliTrace dans Visual Studio Enterprise (mais pas dans les éditions Professional ou Community).|[Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)|  
-    |Session de test dans Microsoft Test Manager. Cela lie un fichier .iTrace à un élément de travail de Team Foundation Server.|[Collecter plus de données de diagnostic dans des tests manuels](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+    |Session de test dans Microsoft Test Manager. Cela lie un fichier .iTrace à un élément de travail de Team Foundation Server.|[Collecter plus de données de diagnostic dans des tests manuels](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
     |Microsoft Monitoring Agent, seul ou avec System Center 2012 R2 Operations Manager, pour les applications web ASP.NET et les applications SharePoint en cours d’exécution dans le déploiement|-   [Diagnostiquer des problèmes après déploiement](../debugger/diagnose-problems-after-deployment.md)<br />-   [Nouveautés de System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
   
 ##  <a name="GetStarted"></a> Que voulez-vous faire ?  
@@ -266,7 +266,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
  [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Collecter plus de données de diagnostic dans des tests manuels](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)  
+ [Collecter plus de données de diagnostic dans des tests manuels](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   

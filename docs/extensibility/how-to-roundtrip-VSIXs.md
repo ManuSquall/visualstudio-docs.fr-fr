@@ -13,11 +13,11 @@ author: willbrown
 ms.author: willbrown
 manager: justinclareburt
 ms.workload: willbrown
-ms.openlocfilehash: e6ce654e158fbfbdaa3692d37f638e72085f8c4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b51673daa7a8c3526ad7de7f7cfdeac6a91d3b4b
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Comment : créer des Extensions Compatible avec Visual Studio 2017 et Visual Studio 2015
 
@@ -169,7 +169,7 @@ Il est recommandé d’avoir une référence à un .csproj modifiés ouverts lor
 Exemple :
 
 ```xml
-<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201… Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
 * Ajouter des instructions conditionnelles supplémentaires pour le `<import>` balises qui ont un Microsoft.VisualStudio.Sdk.BuildTasks.14.0.  Cela en insérant `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions seront affiche dans l’en-tête et le pied de page du fichier csproj.
@@ -177,7 +177,7 @@ Exemple :
 Exemple :
 
 ```xml
-<Import Project="packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0… Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
 * Ajouter des instructions conditionnelles supplémentaires pour le `<Error>` balises qui contiennent une référence Microsoft.VSSDK.BuildTools.  Cela en insérant `'$(VisualStudioVersion)' != '14.0' And` au début de l’instruction de condition. Ces instructions seront affichent dans le pied de page du fichier csproj.
@@ -185,7 +185,7 @@ Exemple :
 Exemple :
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…/>
+<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
 * Ajouter des instructions conditionnelles supplémentaires pour le `<Error>` balises qui ont un Microsoft.VisualStudio.Sdk.BuildTasks.14.0.  Cela en insérant `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions seront affichent dans le pied de page du fichier csproj.
@@ -193,7 +193,7 @@ Exemple :
 Exemple :
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…/>
+<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
 * Enregistrez le fichier csproj et fermez-le.
