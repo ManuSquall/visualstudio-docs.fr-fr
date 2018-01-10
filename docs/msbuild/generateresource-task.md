@@ -22,11 +22,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3004f90f05a41ef0d2557236643af18b9be89d38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef2517b05b58ac2a672a5eba04ca6f1dc48a27f3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="generateresource-task"></a>GenerateResource, tâche
 Convertit les fichiers .txt et .resx (format de ressources XML) en fichiers .resources binaires du Common Language Runtime qui peuvent être incorporés dans un exécutable binaire runtime ou compilés en assemblys satellites. Cette tâche est généralement utilisée pour convertir des fichiers .txt ou .resx en fichiers .resource. La fonctionnalité de la tâche `GenerateResource` est similaire à [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -42,7 +42,7 @@ Convertit les fichiers .txt et .resx (format de ressources XML) en fichiers .res
 |`ExecuteAsTool`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, exécute tlbimp.exe et aximp.exe à partir du framework cible approprié out-of-process pour générer les assemblys de wrappers nécessaires. Ce paramètre autorise le multi-ciblage de `ResolveComReferences`.|  
 |`FilesWritten`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les noms de tous les fichiers écrits sur disque. Cela comprend le fichier cache, le cas échéant. Ce paramètre est utile pour les implémentations de Clean.|  
 |`MinimalRebuildFromTracking`|Paramètre `Boolean` facultatif.<br /><br /> Obtient ou définit un commutateur qui spécifie si la génération incrémentielle suivie sera utilisée. Si la valeur est `true`, la génération incrémentielle est activée ; sinon, une régénération est exécutée.|  
-|`NeverLockTypeAssemblies`|Paramètre `Boolean` facultatif.<br /><br /> Obtient ou définit une valeur booléenne qui indique si un [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) doit être créé pour évaluer les fichiers de ressources (.resx) (true) ou si un [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) doit être créé uniquement quand les fichiers de ressources font référence à un assembly d’utilisateur (false).|  
+|`NeverLockTypeAssemblies`|Paramètre `Boolean` facultatif.<br /><br /> Obtient ou définit une valeur booléenne qui indique si un [AppDomain](/dotnet/api/system.appdomain) doit être créé pour évaluer les fichiers de ressources (.resx) (true) ou si un [AppDomain](/dotnet/api/system.appdomain) doit être créé uniquement quand les fichiers de ressources font référence à un assembly d’utilisateur (false).|  
 |`OutputResources`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie le nom des fichiers générés, comme les fichiers .resources. Si vous ne spécifiez pas de nom, le nom du fichier d’entrée correspondant est utilisé et le fichier .resources créé est placé dans le répertoire qui contient le fichier d’entrée.|  
 |`PublicClass`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, crée une classe de ressource fortement typée en tant que classe publique.|  
 |`References`|Paramètre `String[]` facultatif.<br /><br /> Références à partir desquelles charger les types dans les fichiers .resx. Les éléments de données de fichiers .resx peuvent avoir un type .NET. Lors de la lecture du fichier .resx, il doit être résolu. En règle générale, on utilise pour cela des règles de chargement de type standard. Si vous fournissez des assemblys dans `References`, ils sont prioritaires.<br /><br /> Ce paramètre n’est pas obligatoire pour les ressources fortement typées.|  

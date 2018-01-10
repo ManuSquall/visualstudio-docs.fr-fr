@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
-caps.latest.revision: "6"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9468b796a601956941fb8d913e6ae6198afbfa59
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 251843d3e5a32ddedfe4f9081bd52330a457fe24
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Utilisation des membres Microsoft.VisualStudio.TestTools.UnitTesting dans les tests unitaires
 Le framework de test unitaire prend en charge le test unitaire dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Utilisez les classes et les membres de l’espace de noms <xref:Microsoft.VisualStudio.TestPlatform.UnitTestFramework> quand vous codez des tests unitaires. Vous pouvez les utiliser quand vous écrivez un test unitaire de bout en bout, ou que vous affinez un test unitaire généré à partir du code que vous testez.  

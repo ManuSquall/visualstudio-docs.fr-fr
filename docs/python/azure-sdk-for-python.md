@@ -1,7 +1,7 @@
 ---
-title: Kit SDK Azure pour Python | Microsoft Docs
+title: "Kit de développement logiciel (SDK) Azure pour Python | Microsoft Docs"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 03/07/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -15,23 +15,23 @@ manager: ghogen
 ms.workload:
 - python
 - azure
-ms.openlocfilehash: 43fbcc0c5c1674d127755a61ef3e15523e792a21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 647b07e3816551e60e176280199ad5298db53200
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
-# <a name="azure-sdk-for-python"></a>Kit SDK Azure pour Python
+# <a name="azure-sdk-for-python"></a>Kit de développement logiciel (SDK) Azure pour Python
 
-Le kit SDK Azure pour Python facilite l’utilisation et la gestion des services Microsoft Azure à partir d’applications fonctionnant dans Windows, Mac OSX et Linux.
+Le Kit de développement logiciel (SDK) Azure pour Python facilite l’utilisation et la gestion des services Microsoft Azure à partir d’applications fonctionnant sous Windows, Mac OSX et Linux.
 
 ## <a name="installation"></a>Installation
 
-Le kit SDK Azure est installé à partir de l’[Index des packages Python](https://pypi.python.org/pypi/azure).
+Le Kit de développement logiciel (SDK) Azure est installé à partir de l’[Index des packages Python](https://pypi.python.org/pypi/azure).
 
 Installez la **dernière version stable** (prise en charge de Python 2.7 et 3.3 +) comme suit :
 
-```bash
+```command
 pip install azure
 ```
 
@@ -41,16 +41,16 @@ Vous pouvez également suivre les instructions d’[installation de Python et du
 
 Vous trouverez la documentation sur [azure-sdk-for-python.readthedocs.org](http://azure-sdk-for-python.readthedocs.org/en/latest/index.html).
 
-Le [kit SDK Azure pour le centre de développement Python](http://azure.microsoft.com/develop/python/) dispose également d’un certain nombre de ressources utiles, y compris d’une série de didacticiels tels que :
+Le [Kit de développement logiciel (SDK) Azure pour le centre de développement Python](http://azure.microsoft.com/develop/python/) dispose également d’un certain nombre de ressources utiles, y compris d’une série de didacticiels tels que :
 
-  - Création d’applications web avec [Django](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app) et [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
-  - [Stockage Blob](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-blob-storage)
-  - [Stockage Tables](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage)
-  - [Stockage File d’attente](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)
-  - [DocumentDB](https://docs.microsoft.com/azure/documentdb/documentdb-python-application)
-  - [Files d’attente Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
-  - [Rubriques/abonnements Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
-  - [Gestion des services](https://docs.microsoft.com/azure/cloud-services/cloud-services-python-how-to-use-service-management)
+- Création d’applications web avec [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) et [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
+- [Stockage d’objets BLOB](/azure/storage/storage-python-how-to-use-blob-storage)
+- [Stockage de tables](/azure/storage/storage-python-how-to-use-table-storage)
+- [Stockage de file d’attente](/azure/storage/storage-python-how-to-use-queue-storage)
+- [DocumentDB](/azure/documentdb/documentdb-python-application)
+- [Files d’attente Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
+- [Rubriques/abonnements Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
+- [Gestion des services](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
 Pour les API publiques sans documentation, les tests d’unités du [dépôt GitHub du SDK](https://github.com/Azure/azure-sdk-for-python) constituent une bonne source d’informations :
 
@@ -61,6 +61,6 @@ Pour les API publiques sans documentation, les tests d’unités du [dépôt Git
 
 ## <a name="support"></a>Assistance
 
-Le dépôt Git du kit SDK se trouve à l’adresse suivante : [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
+Le référentiel Git du Kit de développement logiciel (SDK) se trouve à l’adresse suivante : [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
 
-[Signalez les problèmes au niveau du dépôt](https://github.com/Azure/azure-sdk-for-python/issues) si vous rencontrez des problèmes ou avez des questions concernant l’utilisation du kit SDK.
+[Signalez les problèmes au niveau du référentiel](https://github.com/Azure/azure-sdk-for-python/issues) si vous rencontrez des problèmes ou avez des questions concernant l’utilisation du Kit SDK.

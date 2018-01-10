@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 5eab9ef6f3030e8a71547babd9dd9cc279813eee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 33a6c3b57ae47e25eeaeb22c245e77c8a810d9a2
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Utilisation d’IPython dans la fenêtre interactive
 
@@ -32,7 +32,7 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
 
 1. Examinez l’onglet **Packages** (ou **pip**) et vérifiez que `IPython` et `matplotlib` sont répertoriés. Si ce n’est pas le cas, installez-les ici.
 
-1. Sélectionnez l’onglet **Vue d’ensemble** et **Utiliser le mode interactif IPython**. (Dans Visual Studio 2015, sélectionnez **Configure interactive options** (Configurer les options interactives) pour ouvrir la boîte de dialogue **Options**, affectez à **Mode interactif** la valeur IPython, puis sélectionnez **OK**).    
+1. Sélectionnez l’onglet **Vue d’ensemble** et **Utiliser le mode interactif IPython**. (Dans Visual Studio 2015, sélectionnez **Configure interactive options** (Configurer les options interactives) pour ouvrir la boîte de dialogue **Options**, affectez à **Mode interactif** la valeur IPython, puis sélectionnez **OK**).
 
 1. Sélectionnez **Ouvrir une fenêtre interactive** pour afficher la fenêtre interactive en mode IPython. Vous devrez peut-être réinitialiser la fenêtre si vous venez de modifier le mode interactif. Vous devrez peut-être aussi appuyer sur Entrée si seule une invite >>> s’affiche.
 
@@ -76,11 +76,11 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
     ![Envoi de code de l’éditeur vers la fenêtre interactive](media/ipython-repl-05.png)
 
 1. Pour afficher les graphiques en dehors de la fenêtre interactive, exécutez le code en utilisant cette fois la commande **Debug > Start without Debugging** (Déboguer > Démarrer sans débogage).
-    
+
 IPython comporte de nombreuses autres fonctions utiles, par exemple des fonctions de sortie vers l’interpréteur de commandes système, de substitution de variables, de capture de sortie, etc. Pour plus d’informations, consultez la [documentation IPython](http://ipython.org/documentation.html).
 
 ## <a name="related-topics"></a>Rubriques connexes
 
 - Pour utiliser Jupyter facilement et sans installation, essayez gratuitement le [service hébergé Azure Notebooks](https://notebooks.azure.com/) qui vous permet de conserver et partager vos blocs-notes avec d’autres.
 
-- Vous pouvez également exécuter Jupyter (anciennement IPython) sur votre propre machine virtuelle Windows ou Linux sur Azure. Pour plus d’informations, consultez [Création d’une machine virtuelle Azure, installation de Jupyter et exécution de Jupyter Notebook sur Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).
+- Vous pouvez également exécuter Jupyter (anciennement IPython) sur votre propre machine virtuelle Windows ou Linux sur Azure. Pour plus d’informations, consultez [Création d’une machine virtuelle Azure, installation de Jupyter et exécution de Jupyter Notebook sur Azure](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).

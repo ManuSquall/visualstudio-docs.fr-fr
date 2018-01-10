@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 690d51ba7ec083e831bf9eba069676e38d6152ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1f682cd15f96cf4ea5c12e52d3471580129279f6
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Débogage à distance de code Python sur Linux
 
@@ -36,9 +36,9 @@ Les éléments suivants sont nécessaires pour suivre cette procédure pas à pa
 - Un ordinateur distant exécutant Python sur un système d’exploitation Mac OSX ou Linux.
 - Un port 5678 (entrant) ouvert sur le pare-feu de cet ordinateur (paramètre par défaut pour le débogage à distance).
 
-Vous pouvez facilement créer des [machines virtuelles Linux dans Azure](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices) et [accéder à ces machines à l’aide du Bureau à distance](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop) de Windows. Utilisez de préférence l’interpréteur Ubuntu sur la machine virtuelle, car Python est installé par défaut. Sinon, consultez [Sélection et installation des interpréteurs Python](python-environments.md#selecting-and-installing-python-interpreters) pour obtenir la liste des autres emplacements de téléchargement d’interpréteurs Python.
+Vous pouvez facilement créer des [machines virtuelles Linux dans Azure](/azure/virtual-machines/linux/creation-choices) et [accéder à ces machines à l’aide du Bureau à distance](/azure/virtual-machines/linux/use-remote-desktop) de Windows. Utilisez de préférence l’interpréteur Ubuntu sur la machine virtuelle, car Python est installé par défaut. Sinon, consultez [Sélection et installation des interpréteurs Python](python-environments.md#selecting-and-installing-python-interpreters) pour obtenir la liste des autres emplacements de téléchargement d’interpréteurs Python.
 
-Pour plus d’informations sur la création d’une règle de pare-feu pour une machine virtuelle Azure, consultez [Ouverture de ports sur une machine virtuelle dans Azure à l’aide du portail Azure](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal).
+Pour plus d’informations sur la création d’une règle de pare-feu pour une machine virtuelle Azure, consultez [Ouverture de ports sur une machine virtuelle dans Azure à l’aide du portail Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 ## <a name="preparing-the-script-for-debugging"></a>Préparation du script pour le débogage
 
@@ -132,14 +132,13 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-
 ## <a name="securing-the-debugger-connection-with-ssl"></a>Sécurisation de la connexion du débogueur avec SSL
 
 Par défaut, la connexion au serveur de débogage à distance ptvsd est sécurisée uniquement par le secret, et toutes les données sont transmises en texte brut. Pour sécuriser davantage la connexion, ptvsd prend en charge SSL, que vous devez définir comme suit :
 
 1. Sur l’ordinateur distant, générez séparément un certificat auto-signé et les fichiers de clés en utilisant openssl :
-    
-    ```bash
+
+    ```command
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
@@ -152,8 +151,8 @@ Par défaut, la connexion au serveur de débogage à distance ptvsd est sécuris
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
     ```
-    
-    Vous pouvez également effectuer la même modification dans le fichier de code sur l’ordinateur local, mais cela n’est pas obligatoire étant donné que ce code n’est pas réellement exécuté.    
+
+    Vous pouvez également effectuer la même modification dans le fichier de code sur l’ordinateur local, mais cela n’est pas obligatoire étant donné que ce code n’est pas réellement exécuté.
 
 1. Redémarrez le programme Python sur l’ordinateur distant, en préparation du débogage.
 

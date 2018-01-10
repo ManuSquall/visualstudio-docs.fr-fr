@@ -11,16 +11,15 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
-caps.latest.revision: "62"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a60e3236769cbaf35a9b232629834a8b8d52a852
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: a70433a811ad8cf45bb44b12c2971c90c8f82ff2
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="unit-test-your-code"></a>Tests unitaires sur votre code
 Les tests unitaires offrent aux développeurs et aux testeurs une méthode rapide pour rechercher des erreurs de logique dans les méthodes des classes des projets [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] et [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)].  
@@ -55,15 +54,6 @@ Les tests unitaires offrent aux développeurs et aux testeurs une méthode rapid
 |**Étendre le type de test unitaire :** vous pouvez ajouter des fonctionnalités à vos tests qui peuvent ne pas être dans le framework de tests unitaires. Par exemple, vous pouvez ajouter une propriété de test qui spécifie si un test doit s'exécuter comme utilisateur normal ou pas. Vous pouvez également étendre le framework pour ajouter des attributs de ligne à une méthode et utiliser les données de cette ligne dans le test.|Pour obtenir un exemple de code permettant d’étendre le framework de tests unitaires, consultez le [site web Microsoft](http://go.microsoft.com/fwlink/?LinkId=185591) suivant.|  
 |**Définir les options de test :** par exemple, vous pouvez spécifier l’emplacement de stockage des résultats des tests.|[Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
-## <a name="related-tasks"></a>Tâches connexes  
- [Examen des résultats des tests dans Microsoft Test Manager](http://msdn.microsoft.com/en-us/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  
-  
- Décrit les résultats des tests et la façon de les utiliser, notamment comment les afficher, les enregistrer et les supprimer.  
-  
- [Exécution de tests du système à l’aide de Microsoft Visual Studio](/devops-test-docs/test/running-automated-tests-using-microsoft-visual-studio)  
-  
- Fournit des liens vers des informations sur l'utilisation de Visual Studio plutôt que [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] pour exécuter des tests automatisés.  
-  
 ## <a name="reference"></a>Référence  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
  Décrit l’espace de noms UnitTesting qui fournit des attributs, des exceptions, des assertions et d’autres classes qui prennent en charge le test unitaire.  
@@ -85,6 +75,6 @@ Les tests unitaires offrent aux développeurs et aux testeurs une méthode rapid
 ### <a name="reference"></a>Référence  
  [Index de contenu des tests unitaires](http://go.microsoft.com/fwlink/?LinkID=254719)  
   
-## <a name="see-also"></a>Voir aussi  
- [Améliorer la qualité du code](/visualstudio/test/improve-code-quality)   
- [Test de l’application](/devops-test-docs/test/test-apps-early-and-often)
+## <a name="see-also"></a>Voir aussi
+
+[Améliorer la qualité du code](/visualstudio/test/improve-code-quality)

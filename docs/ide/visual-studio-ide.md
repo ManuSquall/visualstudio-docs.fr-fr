@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0ffadcf35be9cc12327c6ef9a561cd1149cf281c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b289868d0cc27da76becf62a2bac51f02fa55c2
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Vue d’ensemble de l’IDE de Visual Studio
 
@@ -42,7 +42,7 @@ Vous pouvez exploiter les services Azure pour vos applications à l’aide de se
 
 - [Azure Mobile Services](http://azure.microsoft.com/documentation/services/mobile-services/)
 
-- [Stockage Azure](http://azure.microsoft.com/documentation/services/storage/)
+- [Azure Storage](http://azure.microsoft.com/documentation/services/storage/)
 
 [HockeyApp](https://www.visualstudio.com/hockey-app/) vous aide à distribuer des versions bêta, collecter des rapports d’incidents en direct et obtenir des commentaires de vos utilisateurs. De plus, vous pouvez intégrer les API REST Office 365 à votre propre application pour vous connecter aux données stockées dans le cloud. Pour plus d’informations, consultez [ces exemples GitHub](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
@@ -86,7 +86,7 @@ Pour effectuer les étapes de création d’un programme ci-dessous, vous devez 
 
 Visual Studio 2017 offre des performances d’installation améliorées, et des processus de démarrage de l’IDE et de chargement des solutions plus rapides.
 
-Pour en savoir plus sur la configuration de Visual Studio sur votre système, consultez [Installer Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio).  
+Pour en savoir plus sur la configuration de Visual Studio sur votre système, consultez [Installer Visual Studio 2017](../install/install-visual-studio.md).
 
 ## <a name="sign-in"></a>Se connecter
 
@@ -152,7 +152,7 @@ Un bon moyen d’en savoir plus sur quelque chose est de l’utiliser ! Nous al
 
 1. Lorsque vous avez fini d’exécuter le programme, cliquez sur le bouton![Arrêter](../ide/media/VSIDE_StopButton.png)de la barre d’outils pour l’arrêter.
 
-Récapitulons ce que vous avez fait jusqu’à présent. Vous avez créé un projet Windows universel C# dans Visual Studio, affiché son code, ajouté un contrôle au concepteur, modifié le code XAML et exécuté le projet. Bien que le processus ait été simplifié pour cet exemple, il vous montre certaines parties de l’IDE de Visual Studio, que vous utiliserez lors du développement de vos propres applications courantes. Si vous souhaitez en savoir plus sur cet exemple, consultez [Créer une application « Hello World » (XAML)](https://docs.microsoft.com/windows/uwp/get-started/create-a-hello-world-app-xaml-universal).
+Récapitulons ce que vous avez fait jusqu’à présent. Vous avez créé un projet Windows universel C# dans Visual Studio, affiché son code, ajouté un contrôle au concepteur, modifié le code XAML et exécuté le projet. Bien que le processus ait été simplifié pour cet exemple, il vous montre certaines parties de l’IDE de Visual Studio, que vous utiliserez lors du développement de vos propres applications courantes. Si vous souhaitez en savoir plus sur cet exemple, consultez [Créer une application « Hello World » (XAML)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal).
 
 ## <a name="debug-test-and-improve-your-code"></a>Déboguer, tester et améliorer votre code
 
@@ -184,7 +184,7 @@ Pour vous donner une représentation générale de Visual Studio, l’image suiv
 
 Voici d’autres fonctionnalités de productivité courantes de Visual Studio :
 
-- La zone de recherche [Lancement rapide](https://docs.microsoft.com/en-us/visualstudio/ide/reference/quick-launch-environment-options-dialog-box) est un excellent moyen de trouver rapidement ce dont vous avez besoin dans Visual Studio. Entrez simplement le nom de l’élément que vous recherchez, et Visual Studio affiche les résultats de la recherche à partir desquels vous pouvez accéder à l’élément précis recherché. Le lancement rapide affiche également des liens permettant de démarrer Visual Studio Installer pour une charge de travail ou un composant.
+- La zone de recherche [Lancement rapide](../ide/reference/quick-launch-environment-options-dialog-box.md) est un excellent moyen de trouver rapidement ce dont vous avez besoin dans Visual Studio. Entrez simplement le nom de l’élément que vous recherchez, et Visual Studio affiche les résultats de la recherche à partir desquels vous pouvez accéder à l’élément précis recherché. Le lancement rapide affiche également des liens permettant de démarrer Visual Studio Installer pour une charge de travail ou un composant.
 
   ![Zone de recherche de lancement rapide](../ide/media/VSIDE_Tour_QuickLaunch.png)
 
@@ -196,7 +196,7 @@ Voici d’autres fonctionnalités de productivité courantes de Visual Studio :
 
   ![Liste des membres Visual Studio](../ide/media/vs2017_Intellisense.png)
 
-- Les **tildes** sont des soulignements rouges ondulés indiquant des erreurs ou des problèmes potentiels dans votre code en temps réel en cours de frappe. Cela vous permet de les corriger immédiatement sans attendre la détection de l’erreur lors de la compilation ou de l’exécution. Si vous pointez sur le tilde, vous voyez des informations supplémentaires sur l'erreur. Une icône d'ampoule peut également apparaître dans la marge gauche, avec des suggestions pour corriger l'erreur. Pour plus d'informations, consultez [Effectuer des actions rapides avec des ampoules](../ide/perform-quick-actions-with-light-bulbs.md).
+- Les **tildes** sont des soulignements rouges ondulés indiquant des erreurs ou des problèmes potentiels dans votre code en temps réel en cours de frappe. Cela vous permet de les corriger immédiatement sans attendre la détection de l’erreur lors de la compilation ou de l’exécution. Si vous pointez sur le tilde, vous voyez des informations supplémentaires sur l'erreur. Une icône d'ampoule peut également apparaître dans la marge gauche, avec des suggestions pour corriger l'erreur. Pour plus d’informations, consultez [Actions rapides](../ide/quick-actions.md).
 
  ![Tildes](../ide/media/vs2017_squiggle.png)
 
@@ -236,7 +236,7 @@ L’illustration suivante montre la fenêtre Team Explorer pour une solution qui
 
 Vous pouvez automatiser votre processus de génération pour générer le code que les développeurs de votre équipe ont archivé dans la gestion de versions. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Pour plus d’informations, consultez [Intégration continue sur n’importe quelle plateforme](https://www.visualstudio.com/en-us/docs/build/overview).
 
-## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Se connecter aux services, bases de données et ressources cloud
+## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Se connecter aux services, bases de données et ressources de Cloud
 
 Le Cloud est essentiel dans le monde connecté actuel, et Visual Studio vous permet de l’exploiter. Par exemple, la fonctionnalité Services connectés facilite la connexion de votre application aux services. Vos applications peuvent l’utiliser pour stocker leurs données sur le stockage Azure, notamment.
 
@@ -248,9 +248,9 @@ Vous pouvez afficher et gérer vos ressources de Cloud basées sur Azure dans Vi
 
 ![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-L’**Explorateur de serveurs** vous aide à parcourir et à gérer les instances et ressources SQL Server en local et à distance, et sur Azure, Salesforce.com, Office 365 et les sites web. Pour ouvrir l’Explorateur de serveurs, dans le menu principal, choisissez **Affichage**, **Explorateur de serveurs**. Consultez la page [Ajouter de nouvelles connexions](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections) pour plus d’informations sur l’Explorateur de serveurs.
+L’**Explorateur de serveurs** vous aide à parcourir et à gérer les instances et ressources SQL Server en local et à distance, et sur Azure, Salesforce.com, Office 365 et les sites web. Pour ouvrir l’Explorateur de serveurs, dans le menu principal, choisissez **Affichage**, **Explorateur de serveurs**. Consultez la page [Ajouter de nouvelles connexions](../data-tools/add-new-connections.md) pour plus d’informations sur l’Explorateur de serveurs.
 
-[SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) est un environnement de développement puissant pour SQL Server, Azure SQL Database et Azure SQL Data Warehouse. Il vous permet de générer, déboguer, gérer et refactoriser des bases de données. Vous pouvez travailler avec un projet de base de données, ou directement avec une instance de base de données connectée, locale ou hors site.
+[SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) est un environnement de développement puissant pour SQL Server, Azure SQL Database et Azure SQL Data Warehouse. Il vous permet de générer, déboguer, gérer et refactoriser des bases de données. Vous pouvez travailler avec un projet de base de données, ou directement avec une instance de base de données connectée, locale ou hors site.
 
 L’**Explorateur d’objets SQL Server** de Visual Studio offre une vue des objets de base de données similaire à celle de SQL Server Management Studio. L’Explorateur d’objets SQL Server vous permet d’effectuer des tâches simples d’administration et de conception de base de données, y compris la modification des données des tables, la comparaison de schémas et l’exécution de requêtes à l’aide de menus contextuels directement depuis l’Explorateur d’objets SQL Server, et plus encore.
 

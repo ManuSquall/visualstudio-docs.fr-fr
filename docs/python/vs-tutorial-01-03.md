@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 0124133b230da01c6e7194849466c57d86592cbd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cdbbebc65eb004c11b4c36b78bd8e0089db3234e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Étape 3 : Utilisation de la fenêtre REPL interactive
 
@@ -32,7 +32,7 @@ La *fenêtre interactive* Visual Studio pour Python offre une expérience REPL (
     ![Fenêtre interactive de Python - redimensionnement par glissement](media/vs-getting-started-python-11-interactive1b.png)
 
     > [!Tip]
-    > Vous pouvez redimensionner toutes les autres fenêtres de Visual Studio en faisant glisser les séparateurs adjacents. Vous pouvez également faire glisser des fenêtres indépendamment du cadre principal de Visual Studio et les réorganiser comme vous le souhaitez dans ce cadre. Pour plus d’informations, consultez <a href="https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio" target="_blank">Personnalisation des dispositions de fenêtres</a>.
+    > Vous pouvez redimensionner toutes les autres fenêtres de Visual Studio en faisant glisser les séparateurs adjacents. Vous pouvez également faire glisser des fenêtres indépendamment du cadre principal de Visual Studio et les réorganiser comme vous le souhaitez dans ce cadre. Pour plus d’informations, consultez [Personnalisation des dispositions de fenêtres](../ide/customizing-window-layouts-in-visual-studio.md).
 
 1. Entrez quelques instructions comme `print("Hello, Visual Studio")`, et des expressions comme `123/456` pour voir les résultats immédiats :
 

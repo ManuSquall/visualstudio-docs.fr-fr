@@ -10,14 +10,15 @@ ms.topic: article
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f3b7bb9139b1c63bca4c9cf9fbd61e21de6ed043
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: ad98bfedbccabd5b02059151ce3a5c510fecd83b
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="testing-tools-in-visual-studio"></a>Outils de test dans Visual Studio
 
@@ -34,7 +35,7 @@ Les outils de test de Visual Studio peuvent vous aider vous et votre équipe à 
 |[IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md)|IntelliTest génère automatiquement des tests unitaires et des données de test pour votre code managé.|
 |[Couverture du code](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|La couverture du code détermine la proportion de code de votre projet qui sera réellement testée par les tests codés, tels que les tests unitaires.|
 |[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|Microsoft Fakes vous permet d’isoler le code que vous testez en remplaçant d’autres parties de l’application par des stubs ou des shims.|
-|[Live Unit Testing](../test/live-unit-testing.md)|Live Unit Testing exécute automatiquement des tests unitaires en arrière-plan et affiche graphiquement les résultats de test et de couverture du code dans l’éditeur de code Visual Studio.|
+|[Tests unitaires en direct](../test/live-unit-testing.md)|Live Unit Testing exécute automatiquement des tests unitaires en arrière-plan et affiche graphiquement les résultats de test et de couverture du code dans l’éditeur de code Visual Studio.|
 |[Automation de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)|Utilisez des tests codés de l’interface utilisateur pour tester l’interface utilisateur de votre application.|
 |[Lab Management](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md)|Un environnement lab est une collection d'ordinateurs physiques et virtuels que vous pouvez utiliser pour développer et tester des applications.|
 

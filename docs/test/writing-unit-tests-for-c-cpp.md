@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
-caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: dd663d17dc7d0dc66af7cdd27f0da3cf9a253523
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikeblome
+ms.openlocfilehash: d926e28dc918900715090d32f929b6b7ff5cb482
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 Vous pouvez écrire et exécuter vos tests unitaires C++ en utilisant la fenêtre **Explorateur de tests**, tout comme pour d’autres langages. Pour plus d’informations sur l’utilisation de **l’Explorateur de tests**, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](run-unit-tests-with-test-explorer.md). 
@@ -38,7 +37,7 @@ En plus des frameworks installés, vous pouvez écrire votre propre adaptateur d
 
 2) **Boost.Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++**. Il est intégré à **l’Explorateur de tests**, mais il n’a actuellement pas de modèle de projet : il doit donc être configuré manuellement. Pour plus d’informations, consultez [Guide pratique pour utiliser Boost.Test dans Visual Studio](how-to-use-boost-test-for-cpp.md). 
 
-3) La prise en charge de **CTest** est incluse dans le composant [Outils CMake pour Visual Studio](/cpp/ide/cmake-tools-for-cpp.md) qui fait partie de la charge de travail **Développement Desktop en C++**. Toutefois, CTest n’est pas encore entièrement intégré à **l’Explorateur de tests**. Pour plus d’informations, consultez [Guide pratique pour utiliser CTest dans Visual Studio](how-to-use-ctest-for-cpp.md).
+3) La prise en charge de **CTest** est incluse dans le composant [Outils CMake pour Visual Studio](/cpp/ide/cmake-tools-for-cpp) qui fait partie de la charge de travail **Développement Desktop en C++**. Toutefois, CTest n’est pas encore entièrement intégré à **l’Explorateur de tests**. Pour plus d’informations, consultez [Guide pratique pour utiliser CTest dans Visual Studio](how-to-use-ctest-for-cpp.md).
 
 
 **Visual Studio 2015 et antérieur**

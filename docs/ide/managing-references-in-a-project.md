@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 57bc02e04f4e30e0284bacbb98ec6bfe1defaa72
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-references-in-a-project"></a>Gestion des références dans un projet
 
@@ -55,7 +55,7 @@ Vous pouvez faire référence aux types de composants et service suivants :
 
 ### <a name="project-references"></a>Références de projets
 
-Les projets de plateforme Windows universelle (UWP) peuvent créer des références à d’autres projets UWP dans la solution ou à des projets ou fichiers binaires Windows 8.1, à condition que ces projets n’utilisent pas des API dépréciées dans Windows 10. Pour plus d’informations, consultez [Passer de Windows Runtime 8 à la plateforme Windows universelle](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root).
+Les projets de plateforme Windows universelle (UWP) peuvent créer des références à d’autres projets UWP dans la solution ou à des projets ou fichiers binaires Windows 8.1, à condition que ces projets n’utilisent pas des API dépréciées dans Windows 10. Pour plus d’informations, consultez [Passer de Windows Runtime 8 à la plateforme Windows universelle](/windows/uwp/porting/w8x-to-uwp-root).
 
 Si vous choisissez de recibler les projets Windows 8.1 vers Windows 10, consultez [Porter, migrer et mettre à niveau des projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 

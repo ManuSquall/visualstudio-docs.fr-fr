@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 1215c075c1c38bb742f799948929d2f301750555
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="python-web-project-templates"></a>Modèles de projet web Python
 
@@ -68,13 +68,12 @@ Toute propriété de projet ou variable d’environnement peut être spécifiée
 Le modèle de **projet Web Bottle** inclut un code réutilisable qui effectue la configuration nécessaire. Toutefois, une application Bottle importée peut ne pas inclure ce code, auquel cas les paramètres ci-après lancent l’application à l’aide du module `bottle` installé :
 
 - Groupe **Run Server Command** (Commande du serveur d’exécution) :
-
-    - **Commande** : `bottle` (module)
-    - **Arguments** : `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Commande** : `bottle` (module)
+  - **Arguments** : `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - Groupe **Debug Server Command** (Commande du serveur de débogage) :
-    - **Commande** : `bottle` (module)
-    - **Arguments** : `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Commande** : `bottle` (module)
+  - **Arguments** : `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 L’option `--reload` n’est pas recommandée en cas d’utilisation de Visual Studio pour le débogage.
 
@@ -83,12 +82,11 @@ L’option `--reload` n’est pas recommandée en cas d’utilisation de Visual 
 Pour l’instant, la méthode de création recommandée pour les applications Pyramid consiste à utiliser l’outil en ligne de commande `pcreate`. Une fois qu’une application a été créée, elle peut être importée à l’aide du modèle [À partir de code Python existant](python-projects.md#creating-a-project-from-existing-files). Après cela, sélectionnez la personnalisation **Projet web générique** pour configurer les options. Ces paramètres reposent sur l’hypothèse que Pyramid est installé dans un environnement virtuel à l’emplacement `..\env`.
 
 - Groupe **Débogage** :
-
-    - **Port du serveur** : 6543 (ou tout port configuré dans les fichiers .ini)
+  - **Port du serveur** : 6543 (ou tout port configuré dans les fichiers .ini)
 
 - Groupe **Run Server Command** (Commande du serveur d’exécution) :
-    - Commande : `..\env\scripts\pserve-script.py` (script)
-    - Arguments : `Production.ini`
+  - Commande : `..\env\scripts\pserve-script.py` (script)
+  - Arguments : `Production.ini`
 
 - Groupe **Debug Server Command** (Commande du serveur de débogage) :
     - Commande : `..\env\scripts\pserve-script.py` (script)
@@ -146,7 +144,7 @@ Enfin, vous pouvez vous connecter par le biais de la [console de développement]
 
 Pour l’instant, la méthode recommandée pour installer des packages consiste à utiliser la console de développement après avoir installé l’extension de site et exécuté pip directement. Il est important que vous utilisiez le chemin d’accès complet à Python, sans quoi celui que vous exécutez risque d’être incorrect, et il n’est généralement pas nécessaire d’utiliser un environnement virtuel. Exemple :
 
-```
+```command
 c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 
 c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt

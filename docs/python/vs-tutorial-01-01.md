@@ -1,7 +1,7 @@
 ---
 title: "Utilisation de Python dans Visual Studio, Étape 1 | Microsoft Docs"
 ms.custom: 
-ms.date: 09/26/2017
+ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: adb49bb6070fee611a2ba67913943e68ee938d29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9c80eb8b09a7bbcfc813c70d548f9762422262ed
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Utilisation de Python dans Visual Studio
 
@@ -51,7 +51,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant un seul fich
 
     Notez que la prise en charge de Python dans Visual Studio comprend un certain nombre de modèles de projet, notamment des applications web utilisant les frameworks Bottle, Flask et Django. Dans le cadre de cette procédure pas à pas, nous allons cependant commencer avec un projet vide.
 
-1. Sélectionnez le modèle **Application Python**, spécifiez un nom pour le projet, puis sélectionnez **OK**. 
+1. Sélectionnez le modèle **Application Python**, spécifiez un nom pour le projet, puis sélectionnez **OK**.
 
 1. Après quelques instants, Visual Studio affiche la structure du projet dans la fenêtre **Explorateur de solutions** (1). Le fichier de code par défaut est ouvert dans l’éditeur (2). La fenêtre Propriétés (3) apparaît également et affiche des informations supplémentaires sur les éléments sélectionnés dans l’Explorateur de solutions, notamment son emplacement exact sur le disque.
 

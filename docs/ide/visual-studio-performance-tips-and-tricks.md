@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 519bb7b70737e4c3e2d6e80f19a056b4cd385980
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces pour améliorer les performances de Visual Studio
 
@@ -71,7 +71,7 @@ En règle générale, si vous manquez de mémoire pendant le débogage des sessi
 
     Pour désactiver les outils de diagnostic, démarrez une session de débogage, choisissez **Outils > Options > Activer les outils de diagnostic** et décochez l’option.
 
-    Pour plus d’informations, consultez [Outils de profilage](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools).
+    Pour plus d’informations, consultez [Outils de profilage](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Désactiver des outils et des extensions
 Certains outils ou extensions peuvent être désactivés pour améliorer les performances.

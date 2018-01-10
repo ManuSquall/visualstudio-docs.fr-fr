@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: ghogen
 dev_langs: C++
 ms.workload: cplusplus
-ms.openlocfilehash: 360efc2b185e6485b2bb08d5d8d0b09a128099d0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7d55fdb061b9cb2fcd0497b7dde8e5c4255cf5e3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="custom-native-etw-heap-events"></a>Événements de tas ETW natifs personnalisés
 
-Visual Studio contient de nombreux [outils de profilage et de diagnostic](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), y compris un profileur de mémoire native.  Ce profileur raccorde les [événements ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) à partir du fournisseur de tas et fournit une analyse indiquant comment la mémoire est allouée et utilisée.  Par défaut, cet outil peut uniquement analyser les allocations effectuées à partir du tas Windows standard, et aucune allocation en dehors de ce tas natif n’est affichée.
+Visual Studio contient de nombreux [outils de profilage et de diagnostic](../profiling/profiling-tools.md), y compris un profileur de mémoire native.  Ce profileur raccorde les [événements ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) à partir du fournisseur de tas et fournit une analyse indiquant comment la mémoire est allouée et utilisée.  Par défaut, cet outil peut uniquement analyser les allocations effectuées à partir du tas Windows standard, et aucune allocation en dehors de ce tas natif n’est affichée.
 
 Il existe de nombreux cas dans lesquels vous souhaiterez utiliser votre propre tas personnalisé et éviter la surcharge d’allocation liée au tas standard.  Par exemple, vous pouvez utiliser [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) pour allouer une grande quantité de mémoire au démarrage de l’application ou du jeu, puis gérer vos propres blocs dans cette liste.  Dans ce scénario, le profileur de mémoire voit uniquement cette allocation initiale, et pas la gestion personnalisée effectuée à l’intérieur du bloc de mémoire.  Toutefois, à l’aide du fournisseur ETW de tas natif personnalisé, vous pouvez laisser l’outil connaître toutes les allocations que vous effectuez en dehors du tas standard.
 
@@ -48,7 +48,7 @@ Foo* pFoo2 = (Foo*)mPool.allocate();
 Foo* pFoo3 = (Foo*)mPool.allocate();
 ```
 
-Un instantané effectué à partir de l’outil [Utilisation de la mémoire](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) sans suivi des tas personnalisés montrerait uniquement l’allocation de 8 192 octets, sans mention des allocations personnalisées effectuées par le pool :
+Un instantané effectué à partir de l’outil [Utilisation de la mémoire](../profiling/memory-usage.md) sans suivi des tas personnalisés montrerait uniquement l’allocation de 8 192 octets, sans mention des allocations personnalisées effectuées par le pool :
 
 ![Allocation des tas Windows](media/heap-example-windows-heap.png)
 
@@ -139,7 +139,7 @@ Cette bibliothèque peut facilement être utilisée en C et C++.
    ```
 
 ## <a name="tracking-memory-usage"></a>Suivi de l’utilisation de la mémoire
-Une fois ces appels en place, vous pouvez effectuer le suivi de l’utilisation du tas personnalisé à l’aide de l’outil **Utilisation de la mémoire** standard disponible dans Visual Studio.  Pour plus d’informations sur l’utilisation de cet outil, consultez la documentation [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) (Utilisation de la mémoire). Vous devez activer le profilage du tas avec des instantanés pour que l’utilisation du tas personnalisé s’affiche. 
+Une fois ces appels en place, vous pouvez effectuer le suivi de l’utilisation du tas personnalisé à l’aide de l’outil **Utilisation de la mémoire** standard disponible dans Visual Studio.  Pour plus d’informations sur l’utilisation de cet outil, consultez la documentation [Memory Usage](../profiling/memory-usage.md) (Utilisation de la mémoire). Vous devez activer le profilage du tas avec des instantanés pour que l’utilisation du tas personnalisé s’affiche. 
 
 ![Activer le profilage du tas](media/heap-enable-heap.png)
 
@@ -153,11 +153,11 @@ Le tas *Tas NT* par défaut a le même aspect qu’auparavant, à ceci près que
 
 ![Tas NT avec dispositif de suivi](media/heap-example-windows-heap.png)
 
-Comme avec le tas Windows standard, vous pouvez également utiliser cet outil pour comparer des instantanés et rechercher des fuites et des défaillances dans votre tas personnalisé, comme le décrit la documentation principale [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) (Utilisation de la mémoire).
+Comme avec le tas Windows standard, vous pouvez également utiliser cet outil pour comparer des instantanés et rechercher des fuites et des défaillances dans votre tas personnalisé, comme le décrit la documentation principale [Memory Usage](../profiling/memory-usage.md) (Utilisation de la mémoire).
 
 > [!TIP]
 > Visual Studio contient également un outil **Utilisation de la mémoire** dans l’ensemble d’outils de **profilage des performances**, que vous pouvez activer à l’aide de l’option de menu **Déboguer > Profileur de performances** ou de la combinaison de touches **Alt+F2**.  Cette fonctionnalité n’inclut pas le suivi de tas et n’affiche pas votre tas personnalisé comme décrit ici.  Cette fonctionnalité est uniquement disponible dans la fenêtre **Outils de diagnostic**, que vous pouvez activer avec le menu **Déboguer > Fenêtres > Afficher les outils de diagnostic** ou la combinaison de touches **Ctrl+Alt+F2**.
 
 ## <a name="see-also"></a>Voir aussi
-[Outils de profilage](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
-[Utilisation de la mémoire](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
+[Outils de profilage](../profiling/profiling-tools.md)  
+[Utilisation de la mémoire](../profiling/memory-usage.md)

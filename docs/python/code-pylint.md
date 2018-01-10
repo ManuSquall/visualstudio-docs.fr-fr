@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 032c6489463aaaee59b39423506f18bda82fb414
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cf97be0c7a7b5bb9d6a9d43ceeb5cd9e9334025d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-pylint-to-check-python-code"></a>Utilisation de PyLint pour vérifier le code Python
 
@@ -46,7 +46,7 @@ Par exemple, pour supprimer les avertissements « missing docstring » affich�
 
 1. Sur la ligne de commande, accédez à la racine de votre projet (qui contient votre fichier `.pyproj`) et exécutez la commande ci-après pour générer un fichier de configuration commenté :
 
-   ```bash
+   ```command
    pylint --generate-rcfile > .pylintrc
    ```
 
@@ -57,7 +57,4 @@ Par exemple, pour supprimer les avertissements « missing docstring » affich�
 1. Enregistrez le fichier `.pylintrc`, puis réexécutez PyLint pour vérifier que les avertissements sont désormais supprimés.
 
 > [!Tip]
-> Pour utiliser un fichier `.pylintrc` à partir d’un partage réseau, créez une variable d’environnement nommée `PYLINTRC` avec la valeur du nom de fichier sur le partage réseau, en utilisant un chemin UNC ou une lettre de lecteur mappée. Exemple :
-> ```
-> PYLINTRC=\\myshare\python\.pylintrc
-> ```
+> Pour utiliser un fichier `.pylintrc` à partir d’un partage réseau, créez une variable d’environnement nommée `PYLINTRC` avec la valeur du nom de fichier sur le partage réseau, en utilisant un chemin UNC ou une lettre de lecteur mappée. Par exemple, `PYLINTRC=\\myshare\python\.pylintrc`.

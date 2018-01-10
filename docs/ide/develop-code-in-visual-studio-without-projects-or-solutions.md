@@ -30,11 +30,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2d1d3c327101e535c037dba30ed19af3dcf7faaa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 78b59ff3d8d6c54465ce29334c1dbe041b7a71be
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Développer du code dans Visual Studio sans projets ni solutions  
 Visual Studio 2017 permet d’ouvrir du code à partir de presque n’importe quel type de projet basé sur un répertoire dans Visual Studio sans avoir recours à un fichier solution ou de projet. Cela signifie que vous pouvez, par exemple, rechercher un projet de code sur Git, le cloner, puis l’ouvrir directement dans Visual Studio et commencer à développer sans avoir à créer de solution ou de projet.  
@@ -172,7 +172,7 @@ Dans cette procédure, nous allons ajouter deux tâches de génération personna
 
   ![Commande de tâche de génération personnalisée](./media/VSIDE_Code_Tasks_CustTask1.png)
 
-1. Ajoutez les tâches de génération suivantes à tasks.vs.json. Pour cet exemple, nous allons ajouter deux tâches : une appelée « makefile-build » qui utilise la commande nMake pour générer le projet et une autre appelée makefile-clean qui appelle la commande nMake avec l’argument « propre ». Ces tâches doivent être ajoutées au tableau « tâches » existant. Notez qu’il s’agit uniquement d’exemples de tâches de génération. Pour qu’elles fonctionnent réellement, vous devez disposer de la charge de travail qui contient [nNake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference) installé sur votre système.)  
+1. Ajoutez les tâches de génération suivantes à tasks.vs.json. Pour cet exemple, nous allons ajouter deux tâches : une appelée « makefile-build » qui utilise la commande nMake pour générer le projet et une autre appelée makefile-clean qui appelle la commande nMake avec l’argument « propre ». Ces tâches doivent être ajoutées au tableau « tâches » existant. Notez qu’il s’agit uniquement d’exemples de tâches de génération. Pour qu’elles fonctionnent réellement, vous devez disposer de la charge de travail qui contient [nNake](/cpp/build/nmake-reference) installé sur votre système.)
 
   ```xml
   {

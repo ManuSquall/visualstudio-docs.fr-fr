@@ -15,11 +15,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 97debeab6349fefee48d6c550c39c18c3e516b75
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c757f67efb26d1ca9e029447b044d9b6c6ea8a65
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>Charge de travail Applications de science et analyse des données
 
@@ -27,7 +27,7 @@ La charge de travail Applications de science et analyse des données dans Visual
 
 - [R et Microsoft R Client](../rtvs/index.md)
 - [Python et Anaconda](../python/python-in-visual-studio.md)
-- [F# avec le .NET Framework](https://docs.microsoft.com/dotnet/fsharp/)
+- [F# avec le .NET Framework](/dotnet/fsharp/)
 
 ![Charge de travail Applications de science et analyse des données dans le programme d’installation de Visual Studio](media/data-science-workload.png)
 

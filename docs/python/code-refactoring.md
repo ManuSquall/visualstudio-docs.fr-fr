@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 60e6daf25d4ce9c43f07495e9efa89ec215ec16b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8ab260780c7cd2841d0ffe88f4eb0cc817592c4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="refactoring-python-code"></a>Refactorisation de code Python
 
@@ -26,7 +26,7 @@ Visual Studio fournit plusieurs commandes pour transformer et nettoyer automatiq
 - [Renommer](#rename) modifie le nom d’une variable, d’une méthode ou d’une classe sélectionnée
 - [Extraire la méthode](#extract-method) crée une nouvelle méthode à partir du code sélectionné
 - [Ajouter à l’importation](#add-import) fournit une balise intelligente pour ajouter une importation manquante
-- [Supprimer les importations inutilisées](#remove-imports) supprime les importations inutilisées
+- [Supprimer les importations inutilisées](#remove-unused-imports) supprime les importations inutilisées
 
 <a name="rename-variable"</a>
 
@@ -72,6 +72,7 @@ De même, Visual Studio filtre les fonctions importées à partir d’autres mod
 Enfin, si un élément doit normalement être exclu, mais qu’il a d’autres valeurs qui peuvent être incluses (parce qu’une valeur a été affectée au nom dans le module, par exemple), Visual Studio exclut l’importation. Ce comportement suppose que la valeur ne doit pas être exportée parce qu’elle est définie dans un autre module et que, par conséquent, l’affectation supplémentaire est susceptible d’être une valeur factice qui n’est pas non plus exportée.
 
 <a name="remove-imports"</a>
+
 ## <a name="remove-unused-imports"></a>Supprimer les importations inutilisées
 
 Lors de l’écriture de code, il est facile de vous retrouver avec des instructions `import` concernant des modules qui ne sont pas utilisées du tout. Visual Studio analyse votre code et détermine automatiquement si une instruction `import` est nécessaire en regardant si les noms importés sont utilisés dans le cadre ci-dessous, où l’instruction s’exécute.
