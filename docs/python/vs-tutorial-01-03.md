@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 18cd58899819e49943e009da898705cfa328ffb5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 0124133b230da01c6e7194849466c57d86592cbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Étape 3 : Utilisation de la fenêtre REPL interactive
 
@@ -47,7 +48,7 @@ La *fenêtre interactive* Visual Studio pour Python offre une expérience REPL (
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
-    def make_dot_string(x):  
+    def make_dot_string(x):
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
@@ -62,8 +63,8 @@ La *fenêtre interactive* Visual Studio pour Python offre une expérience REPL (
 
     ```python
     for i in range(360):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     ![Collage de plusieurs lignes de code à l’aide de la commande Envoyer vers Interactive](media/vs-getting-started-python-15-interactive5.png)
@@ -82,14 +83,13 @@ La *fenêtre interactive* Visual Studio pour Python offre une expérience REPL (
 
     ```python
     for i in range(0, 1800, 12):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     Si vous voulez copier le contenu exact de la fenêtre interactive, y compris les invites et la sortie, utilisez simplement la commande **Copier** standard.
 
 1. Vous venez d’utiliser l’environnement REPL rapide de la fenêtre interactive pour travailler sur les détails d’un petit morceau de code, puis vous avez ajouté ce code au fichier source de votre projet. Maintenant, quand vous réexécutez le code avec Ctrl+F5 (ou **Déboguer > Démarrer sans débogage**), vous voyez exactement les résultats souhaités.
-
 
 ## <a name="next-steps"></a>Étapes suivantes
 

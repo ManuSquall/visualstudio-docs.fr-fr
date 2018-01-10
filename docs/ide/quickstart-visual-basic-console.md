@@ -1,7 +1,7 @@
 ---
-title: "Démarrage rapide : Créer une application console dans Visual Studio avec Visual Basic | Microsoft Docs"
+title: "Démarrage rapide : Créer votre première application console dans Visual Studio avec Visual Basic | Microsoft Docs"
 ms.custom: 
-ms.date: 12/05/2017
+ms.date: 12/10/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -12,13 +12,14 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 57441895ccff8bf32b59d6306ca4ae618382d356
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: multiple
+ms.openlocfilehash: 46557b646db37b3f04420ca5b91ab71c4f5b088a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="quickstart-create-a-console-app-in-visual-studio-with-visual-basic"></a>Démarrage rapide : Créer une application console dans Visual Studio avec Visual Basic
+# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Démarrage rapide : Créer votre première application console dans Visual Studio avec Visual Basic
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer une application Visual Basic simple qui s’exécute dans la console.
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) pour l’installer gratuitement.
@@ -32,11 +33,11 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
 3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Ensuite, nommez le projet *HelloWorld*.
 
-   ![Charge de travail Développement multiplateforme .Net Core dans Visual Studio Installer](../ide/media/new-project-vb-dotnet-helloworld-console-app.png)
+   ![Modèle de projet d’application console (.NET Core) dans la boîte de dialogue Nouveau projet dans l’IDE de Visual Studio](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
 
      Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**.
 
-   ![Cliquer sur le lien Ouvrir Visual Studio Installer dans la boîte de dialogue Nouveau projet](../ide/media/vb-open-visual-studio-installer.png)
+   ![Cliquer sur le lien Ouvrir Visual Studio Installer dans la boîte de dialogue Nouveau projet](../ide/media/vb-open-visual-studio-installer-hello-world.png)
 
      Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
 
@@ -80,5 +81,6 @@ Vous allez maintenant ajouter du code pour suspendre l’application et demander
 Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur Visual Basic et l’IDE de Visual Studio. Si vous souhaitez approfondir ce sujet, poursuivez avec un didacticiel que vous trouverez dans la section **Didacticiels** de la table des matières.
 
 ## <a name="see-also"></a>Voir aussi
-* [Démarrage rapide : Créer une application Windows Forms « Hello World » dans Visual Studio avec Visual Basic](quickstart-visual-basic-winforms.md)
-* [En savoir plus sur Visual Basic IntelliSense](visual-basic-specific-intellisense.md)
+* [Démarrage rapide : Créer une application Windows Forms « Hello World » en Visual Basic avec Visual Studio](quickstart-visual-basic-winforms.md)
+* [Didacticiel : Bien démarrer avec Visual Basic dans Visual Studio](tutorial-visual-basic-console.md)
+* [IntelliSense pour les fichiers de code Visual Basic](visual-basic-specific-intellisense.md)

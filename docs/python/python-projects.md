@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 44065522229a1661efc41e79905d9650f7949ac3
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="python-projects"></a>Projets Python
 
@@ -71,7 +72,7 @@ Le tableau suivant résume les modèles disponibles dans Visual Studio 2017 (to
 
 | Modèle | Description | 
 | --- | --- |
-| [From Existing Python Code](#creating-a-project-from-existing-files) (À partir du code Python existant) | Crée un projet Visual Studio à partir du code Python existant dans une structure de dossiers.  |
+| [À partir de code Python existant](#creating-a-project-from-existing-files) | Crée un projet Visual Studio à partir du code Python existant dans une structure de dossiers.  |
 | Python Application (Application Python) | Une structure de projet de base pour une nouvelle application Python avec un fichier source unique et vide. Par défaut, le projet s’exécute dans l’interpréteur de la console de l’environnement global par défaut, que vous pouvez modifier en [attribuant un autre environnement](python-environments.md#project-specific-environments). |
 | [Azure Cloud Service](template-azure-cloud-service.md) (Service cloud Azure) | Un projet pour un service cloud Azure écrit en langage Python. |
 | [Projets Web](template-web.md) | Projets pour les serveurs web basés sur différents frameworks, notamment Bottle, Django, Flask et Flask/Jade. |
@@ -144,6 +145,6 @@ Les références dans IronPython n’étant pas disponibles tant qu’un appel �
 
 ### <a name="webpi-projects"></a>Projets WebPI
 
-Vous pouvez ajouter des références aux entrées de produit WebPI pour le déploiement sur Microsoft Azure Cloud Service où vous pouvez installer des composants supplémentaires via le flux WebPI. Par défaut, le flux affiché est spécifique à Python et inclut Django, CPython et d’autres composants de base. Vous pouvez également sélectionner votre propre flux comme illustré ci-dessous. Lorsque vous publiez vers Microsoft Azure, une tâche d’installation installe tous les produits référencés.
+Vous pouvez ajouter des références aux entrées de produit WebPI pour le déploiement sur Microsoft Azure Cloud Services où vous pouvez installer des composants supplémentaires via le flux WebPI. Par défaut, le flux affiché est spécifique à Python et inclut Django, CPython et d’autres composants de base. Vous pouvez également sélectionner votre propre flux comme illustré ci-dessous. Lorsque vous publiez vers Microsoft Azure, une tâche d’installation installe tous les produits référencés.
 
 ![Références WebPI](media/projects-webPI-components.png)

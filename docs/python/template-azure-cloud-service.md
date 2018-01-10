@@ -12,11 +12,14 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b8ddcb234d43407c256145245b4cbdac308ed9ea
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: e5bde434f3a5097f51f461aad5b02ae183e2204c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projets de service cloud Azure pour Python
 
@@ -28,7 +31,7 @@ Cette rubrique contient des détails sur le modèle de projet et les autres pris
 
 ## <a name="create-a-project"></a>Créer un projet
 
-1. Installez le [SDK Azure .NET pour Visual Studio](https://www.visualstudio.com/vs/azure-tools/) nécessaire pour utiliser le modèle Service cloud.
+1. Installez le [SDK Azure .NET pour Visual Studio](https://www.visualstudio.com/vs/azure-tools/) nécessaire pour utiliser le modèle de service cloud.
 1. Dans Visual Studio, sélectionnez **Fichier > Nouveau > Projet...** , puis recherchez « Azure Python » et sélectionnez **Service cloud Azure** dans la liste :
 
     ![Modèle de projet cloud Azure pour Python](media/template-azure-cloud-project.png)
@@ -46,7 +49,6 @@ Cette rubrique contient des détails sur le modèle de projet et les autres pris
     ![Fichiers de prise en charge des rôles de travail](media/template-azure-cloud-service-worker-role-support-files.png)
 
     Pour ajouter ces scripts de configuration à un nouveau projet, cliquez avec le bouton droit sur le projet, sélectionnez **Ajouter > Nouvel élément...**, puis sélectionnez **Fichiers de support de rôle web** ou **Fichiers de support de rôle de travail**.
-   
 
 ## <a name="configuring-role-deployment"></a>Configuration du déploiement des rôles
 
@@ -66,12 +68,11 @@ Une configuration supplémentaire peut être obtenue comme suit :
 
 ## <a name="testing-role-deployment"></a>Test du déploiement des rôles
 
-Lors de l’écriture de vos rôles, vous pouvez tester votre projet cloud en local à l’aide de l’émulateur Service cloud. Cet émulateur est fourni avec les outils du kit SDK Azure et représente une version limitée de l’environnement utilisé lorsque votre service cloud est publié dans Azure.
+Lors de l’écriture de vos rôles, vous pouvez tester votre projet cloud en local à l’aide de l’émulateur Service cloud. Cet émulateur est fourni avec les outils du kit SDK Azure et représente une version limitée de l’environnement utilisé quand votre service cloud est publié dans Azure.
 
 Pour démarrer l’émulateur, vérifiez d’abord que votre projet cloud correspond au projet de démarrage dans votre solution en cliquant avec le bouton droit et en sélectionnant **Définir comme projet de démarrage**. Sélectionnez **Déboguer > Démarrer le débogage** (F5) ou **Déboguer > Démarrer sans débogage** (Ctrl + F5).
 
 Notez que certaines limitations de l’émulateur ne permettent pas de déboguer votre code Python. Nous vous recommandons donc de déboguer les rôles en les exécutant de façon indépendante, et d’utiliser ensuite l’émulateur pour effectuer les tests d’intégration avant la publication.
-
 
 ## <a name="deploying-a-role"></a>Déploiement d’un rôle
 
@@ -83,12 +84,11 @@ Le processus de publication implique deux phases. Tout d’abord, Visual Studio 
 
 Pour finir, les rôles de travail exécutent `LaunchWorker.ps1`, qui démarre l’exécution de votre script Python ; les rôles web initialisent IIS et commencent à gérer les demandes web.
 
-
 ## <a name="dependencies"></a>Dépendances
 
-Pour le service cloud, le script `ConfigureCloudService.ps1` utilise `pip` pour installer un jeu de dépendances Python. Les dépendances doivent être spécifiées dans un fichier nommé `requirements.txt` (personnalisable en modifiant `ConfigureCloudService.ps1`). Le fichier est exécuté avec `pip install -r requirements.txt` dans le cadre de l’initialisation.
+Pour Services cloud, le script `ConfigureCloudService.ps1` utilise `pip` pour installer un jeu de dépendances Python. Les dépendances doivent être spécifiées dans un fichier nommé `requirements.txt` (personnalisable en modifiant `ConfigureCloudService.ps1`). Le fichier est exécuté avec `pip install -r requirements.txt` dans le cadre de l’initialisation.
 
-Notez que les instances Service cloud n’incluent aucun compilateur C, ce qui signifie que toutes les bibliothèques avec des extensions C doivent fournir des binaires précompilés.
+Notez que les instances de service cloud n’incluent aucun compilateur C, ce qui signifie que toutes les bibliothèques avec des extensions C doivent fournir des binaires précompilés.
 
 pip et ses dépendances, ainsi que les packages contenus dans le fichier `requirements.txt`, sont téléchargés automatiquement et peuvent être assimilés à l’utilisation de bande passante facturable. Consultez [Gestion des packages requis](python-environments.md#managing-required-packages) pour plus d’informations sur la gestion des fichiers `requirements.txt`.
 
@@ -97,6 +97,7 @@ pip et ses dépendances, ainsi que les packages contenus dans le fichier `requir
 Si votre rôle web ou de travail ne se comporte pas correctement après le déploiement, vérifiez les points suivants :
 
 - Votre projet Python inclut un dossier bin\ comprenant (au minimum) :
+
     - `ConfigureCloudService.ps1`
     - `LaunchWorker.ps1` (pour les rôles de travail)
     - `ps.cmd`

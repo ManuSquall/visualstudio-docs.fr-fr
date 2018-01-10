@@ -1,5 +1,5 @@
 ---
-title: "Démarrage rapide : Créer les projets Python à partir d’un modèle Cookiecutter dans Visual Studio | Microsoft Docs"
+title: "Démarrage rapide : Créer un projet Python à partir d’un modèle Cookiecutter dans Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 09/22/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 876fdbd4507fd7ed55e7b29834d4a3bc5e68dfad
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: d0b21c78ab31c093ef48300ac746c3c2fd7d6778
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Démarrage rapide : Créer un projet à partir d’un modèle Cookiecutter
 
@@ -41,7 +42,6 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 1. Appuyez sur Ctrl+F5 ou sélectionnez **Déboguer > Démarrer sans débogage** pour exécuter le programme. 
 
     ![Sortie du projet de modèle python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
-
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -14,18 +14,19 @@ ms.assetid: 44DB1998-68CD-4560-870A-EE5B993DCF6E
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 7618537fcceb0527b29f5c40584fb69d7ddcca63
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 1d7b9b7084b91ace1f76d4d411f117df41cfd257
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Installer Visual Studio 2017 dans des environnements réseau à faible bande passante ou non fiables
 
 Nous vous recommandons d’essayer le programme d’installation web de Visual Studio. Nous pensons qu’il répondra à vos besoins dans la plupart des situations.
 
  > [!div class="button"]
- > [Télécharger Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [Télécharger Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
 <br/>
 
 Toutefois, si votre connexion Internet n’est pas disponible ou n’est pas fiable, vous pouvez utiliser la ligne de commande pour créer un cache local des fichiers dont vous avez besoin pour effectuer une installation hors connexion. Voici comment procéder.
@@ -88,7 +89,7 @@ Utilisez cette commande pour exécuter l’installation :
 
 ## <a name="list-of-language-locales"></a>Liste des paramètres régionaux de langue
 
-| **Paramètres régionaux de langue** | **Langue** |
+| **Paramètres régionaux de langue** | **Language** |
 | ----------------------- | --------------- |
 | cs-CZ | Tchèque |
 | de-DE | Allemand |
@@ -112,7 +113,7 @@ Voici d’autres options de support :
 * Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
 * Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Vous pouvez suivre les problèmes au niveau d’un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) et y poser des questions et obtenir des réponses.
-* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio)  (Cette option nécessite un compte [GitHub](https://github.com/)).
+* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio)  (Cette option nécessite un compte [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Voir aussi
 * [Installer Visual Studio](install-visual-studio.md)

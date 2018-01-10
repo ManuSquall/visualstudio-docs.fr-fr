@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d417ac531331b62b0f711fe155a94f1ac0954310
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 964ed265f4e2587a1bef4812797987c47d52fa80
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-writing-and-running-code"></a>Étape 2 : Écriture et exécution du code
 
@@ -41,14 +42,14 @@ Si l’Explorateur de solutions soit l’endroit où vous gérez les fichiers de
     ```
 
 1. Notez la coloration syntaxique, qui différencie l’instruction `print` de l’argument `"Hello Visual Studio"`. De même, supprimez temporairement le dernier `"` sur la chaîne et notez la façon dont Visual Studio affiche un trait de soulignement rouge pour le code qui contient des erreurs de syntaxe. Remplacez ensuite le `"` pour corriger le code.
- 
+
     ![Coloration syntaxique et mise en évidence des erreurs par IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
- 
+
     > [!Tip]
     > L’environnement de développement de quelqu’un étant une affaire très personnelle, Visual Studio vous donne un contrôle complet sur son apparence et son comportement. Sélectionnez la commande de menu **Outils > Options** et explorez les paramètres sous les onglets **Environnement** et **Éditeur de texte**. Par défaut, vous voyez seulement un nombre limité d’options. Pour afficher toutes les options pour chaque langage de programmation, sélectionnez **Afficher tous les paramètres** dans le bas de la boîte de dialogue. 
 
 1. Exécutez le code que vous avez écrit à ce stade en appuyant sur Ctrl+F5 ou en sélectionnant l’élément de menu **Déboguer > Démarrer sans débogage**. Visual Studio vous avertit si votre code contient encore des erreurs.
- 
+
 1. Quand vous exécutez le programme, une fenêtre de console affiche les résultats, comme si vous exécutiez un interpréteur Python avec `PythonApplication1.py` à partir de la ligne de commande. Appuyez sur une touche pour fermer la fenêtre et revenir à l’éditeur Visual Studio.
 
     ![Sortie pour la première exécution du programme](media/vs-getting-started-python-07-output.png)
@@ -70,28 +71,26 @@ Si l’Explorateur de solutions soit l’endroit où vous gérez les fichiers de
 1. Terminez en important les membres `sin`, `cos` et `radians`, en notant pour chacun d’eux les modes de saisie automatique disponibles. Lorsque vous avez terminé, votre code doit apparaître comme suit :
 
     ```python
-    import sys  
-    from math import sin, cos, radians          
+    import sys
+    from math import sin, cos, radians
     ```
 
     > [!Tip]
-    > La saisie semi-automatique fonctionne avec des sous-chaînes au fil de la saisie, en faisant correspondre des parties de mots, des lettres en début de mots et même des caractères ignorés. Pour plus d’informations, consultez la page [Editing Code - Completions](code-editing.md#completions) (Modification du code - Saisie semi-automatique).
+    > La saisie semi-automatique fonctionne avec des sous-chaînes au fil de la saisie, en faisant correspondre des parties de mots, des lettres en début de mots et même des caractères ignorés. Pour plus d’informations, consultez la page [Modification du code - Saisie semi-automatique](code-editing.md#completions).
 
 1. Ajoutez un peu plus de code pour afficher les valeurs du cosinus pour 360 degrés :
 
     ```python 
-    for i in range(360):        
+    for i in range(360):
         print(cos(radians(i)))
     ```
 
 1. Relancez le programme avec Ctrl+F5 ou **Déboguer > Démarrer sans débogage**. Fermez la fenêtre de sortie quand vous avez terminé.
 
-
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [Utilisation de la fenêtre REPL interactive](vs-tutorial-01-03.md)
-
 
 ## <a name="going-deeper"></a>Pour aller plus loin
 

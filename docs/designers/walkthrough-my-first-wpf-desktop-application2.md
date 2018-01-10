@@ -15,11 +15,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 75a333c7e5948e13db0c0c91b41128914e23222b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e3f3002dc40c0bdae3aad6cdbacb4b9b70422157
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Procédure pas à pas : ma première application de bureau WPF
 Cette procédure pas à pas offre une introduction au développement d’une application Windows Presentation Foundation (WPF). Vous allez créer une application de base qui inclut des éléments communs à la plupart des applications de bureau WPF : balisage XAML, code-behind, définitions d’application, contrôles, disposition, liaison de données et styles.  
@@ -268,7 +269,7 @@ Dans cette section, vous allez créer l’infrastructure de l’application, c�
   
 1.  Choisissez l’image suivante et enregistrez-la sous `watermark.png`.  
   
-     ![Image en filigrane pour la procédure pas à pas](../designers/media/wpf_watermark.png "WPF_watermark")  
+     ![Image en filigrane pour la procédure pas à pas](../designers/media/wpf_watermark.png "filigrane")  
   
     > [!NOTE]
     >  Vous pouvez également créer votre propre image et l’enregistrer sous `watermark.png`.  
@@ -557,7 +558,7 @@ Dans cette section, vous allez créer l’infrastructure de l’application, c�
     </Style>  
     ```  
   
-     Ce code XAML ajoute les styles suivants :  
+     Ce code XAML ajoute les styles suivants :  
   
     -   `headerTextStyle`: pour mettre en forme le titre de la page `Label`.  
   
@@ -851,40 +852,40 @@ Dans cette section, vous allez créer l’infrastructure de l’application, c�
 ##  <a name="Best_Practices"></a> Meilleures pratiques  
  Cet exemple, dont le but est d’illustrer les principes de base de WPF, ne respecte pas les bonnes pratiques en matière de développement d’applications. Pour obtenir des informations complètes sur les bonnes pratiques en matière de développement d’applications WPF et .NET Framework, consultez les rubriques suivantes :  
   
--   Accessibilité - [Meilleures pratiques en matière d’accessibilité](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)  
+-   Accessibilité - [Meilleures pratiques en matière d’accessibilité](/dotnet/framework/ui-automation/accessibility-best-practices)  
   
--   Sécurité - [Sécurité dans Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   Sécurité - [Sécurité dans Windows Presentation Foundation](/dotnet/framework/wpf/security-wpf)  
   
--   Localisation - [Vue d’ensemble de la globalisation et de la localisation WPF](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   Localisation - [Vue d’ensemble de la globalisation et de la localisation WPF](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   Performances - [Optimisation des performances des applications WPF](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   Performances - [Optimisation des performances des applications WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
 ##  <a name="Whats_Next"></a> Étapes suivantes  
  Vous disposez à présent d’un certain nombre de techniques pour créer une application de bureau à l’aide de WPF. Vous devriez maintenant connaître les principales composantes d’une application WPF liée à des données. Cette rubrique est loin d’être exhaustive, mais j’espère qu’elle vous incitera à découvrir par vous-même d’autres techniques au-delà de celles traitées ici.  
   
  Pour plus d’informations sur les modèles d’architecture et de programmation WPF, consultez les rubriques suivantes :  
   
--   [Architecture de WPF](https://msdn.microsoft.com/en-us/library/ms750441\(v=vs.100\).aspx)  
+-   [Architecture de WPF](/dotnet/framework/wpf/advanced/wpf-architecture)  
   
--   [Vue d’ensemble du langage XAML](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)  
+-   [Vue d’ensemble du langage XAML](/dotnet/framework/wpf/advanced/xaml-overview-wpf)  
   
--   [Vue d’ensemble des propriétés de dépendance](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx)  
+-   [Vue d’ensemble des propriétés de dépendance](/dotnet/framework/wpf/advanced/dependency-properties-overview)  
   
--   [Système de disposition](https://msdn.microsoft.com/en-us/library/ms745058\(v=vs.100\).aspx)  
+-   [Système de disposition](/dotnet/framework/wpf/advanced/layout)  
   
--   [Styles et modèles](https://msdn.microsoft.com/en-us/library/bb613570\(v=vs.100\).aspx)  
+-   [Styles et modèles](/dotnet/framework/wpf/controls/styles-and-templates)  
   
  Pour plus d’informations sur la création d’applications, consultez les rubriques suivantes :  
   
--   [Vue d’ensemble du développement d’applications](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)  
+-   [Vue d’ensemble du développement d’applications](/dotnet/framework/wpf/app-development/index)  
   
--   [Vue d’ensemble des contrôles](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)  
+-   [Vue d’ensemble des contrôles](/dotnet/framework/wpf/controls/index)  
   
--   [Vue d’ensemble de la liaison de données](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)  
+-   [Vue d’ensemble de la liaison de données](/dotnet/framework/wpf/data/data-binding-overview)  
   
--   [Vue d’ensemble des médias, de l’animation et du graphisme WPF](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)  
+-   [Vue d’ensemble des médias, de l’animation et du graphisme WPF](https://msdn.microsoft.com/en-us/library/ms742562)  
   
--   [Documents dans WPF](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
+-   [Documents dans WPF](/dotnet/framework/wpf/advanced/documents-in-wpf)  
   
 ## <a name="see-also"></a>Voir aussi  
 [Créer des applications de bureau modernes à l’aide de Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

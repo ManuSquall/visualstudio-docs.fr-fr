@@ -12,11 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 388784b53018c30357f496cfbeb533c0a07a3053
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: multiple
+ms.openlocfilehash: ecab13523c5d2ae362a58527f8c15ce1f26dd225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Démarrage rapide : Créer une application Windows Forms dans Visual Studio avec Visual Basic
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer une application Visual Basic simple qui comporte une interface utilisateur Windows.
@@ -95,5 +96,5 @@ Maintenant que nous avons ajouté un contrôle bouton pour créer une action, no
 Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur Visual Basic et l’IDE de Visual Studio. Si vous souhaitez approfondir ce sujet, poursuivez avec un didacticiel que vous trouverez dans la section **Didacticiels** de la table des matières.  
 
 ## <a name="see-also"></a>Voir aussi   
-* [Démarrage rapide : Créer une application console dans Visual Studio avec Visual Basic](quickstart-visual-basic-console.md) ] (https://docs.microsoft.com/dotnet/core/tutorials/vb-with-visual-studio)
+* [Démarrage rapide : Créer une application console dans Visual Studio avec Visual Basic](quickstart-visual-basic-console.md)
 * [En savoir plus sur Visual Basic IntelliSense](visual-basic-specific-intellisense.md)  

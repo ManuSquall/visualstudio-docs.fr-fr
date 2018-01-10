@@ -1,5 +1,5 @@
 ---
-title: "Visualisation de données avec les Outils R pour Visual Studio | Microsoft Docs"
+title: "Visualisation de données avec les Outils R pour Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5d022864609dca3aeaa2a759ea05e1f37abd203f
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 7449e6037300eab33d89f32f98d58a5e265ad21f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-visual-data-plots-with-r"></a>Création de tracés de données visuels avec R
 

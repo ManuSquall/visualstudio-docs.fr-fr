@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 50f2577436eeb102424a968416f43e58cb0febd1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 60e6daf25d4ce9c43f07495e9efa89ec215ec16b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-python-code"></a>Refactorisation de code Python
 
@@ -28,6 +29,7 @@ Visual Studio fournit plusieurs commandes pour transformer et nettoyer automatiq
 - [Supprimer les importations inutilisées](#remove-imports) supprime les importations inutilisées
 
 <a name="rename-variable"</a>
+
 ## <a name="rename"></a>Renommer
 
 1. Cliquez avec le bouton droit sur l’identificateur que vous souhaitez renommer et sélectionnez **Renommer**, ou placez le signe insertion dans cet identificateur et sélectionnez la commande de menu **Modifier > Refactoriser > Renommer...**  (F2).

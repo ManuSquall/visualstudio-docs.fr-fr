@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 7cd4f3e19b6cae5adabd54593fee560c56454f07
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: f534a4116cd3955146642ba32d5da31c090b9d6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Exemples de projets Outils R pour Visual Studio
 
@@ -40,7 +41,6 @@ Cet exemple propose une introduction approfondie de R avec des commentaires dé
 
     ![Exemple de sortie de l’exemple 2-Introduction to ggplot2.R](media/samples-ggplot-output.png)
 
-
 ## <a name="microsoft-r-server-and-machine-learning"></a>Microsoft R Server et Machine Learning
 
 Cette collection d’exemples montre comment utiliser R pour créer des modèles Machine Learning, puis comment tirer parti de [MRS (Microsoft R Server)](http://aka.ms/rtvs-msft-r). Installez MRS pour exécuter les scripts comprenant `MRS` dans le titre et là où cela est mentionné.
@@ -53,12 +53,13 @@ Comme avec tous les exemples, ouvrez le fichier, placez le curseur en haut, puis
 
 - `Bike_Rental_Estimation_with_MRS` crée un modèle de prévision de demande de location de vélos selon un jeu de données d’historique à l’aide de Microsoft R Server. 
 
-- `Data_Exploration` contient trois scripts :  
-    - `Import Data from URL.R` montre comment charger un fichier de données identifié par URL dans R.
-    - `Import Data from URL to xdf.R` montre comment charger un fichier de données identifié par URL dans Microsoft R Server en tant que fichier xdf. (Nécessite MRS.)
-    - `Using ggplot2.R` est une extension de l’exemple `A First Look at R/2-Introduction to ggplot2.R`. Il traite de manière plus approfondie des fonctionnalités de ggplot2, notamment le traçage 3D interactif.
+- `Data_Exploration` contient trois scripts :
 
-        ![Sortie de l’exemple Using ggplot2.R](media/samples-3d-interactive.png)
+  - `Import Data from URL.R` montre comment charger un fichier de données identifié par URL dans R.
+  - `Import Data from URL to xdf.R` montre comment charger un fichier de données identifié par URL dans Microsoft R Server en tant que fichier xdf. (Nécessite MRS.)
+  - `Using ggplot2.R` est une extension de l’exemple `A First Look at R/2-Introduction to ggplot2.R`. Il traite de manière plus approfondie des fonctionnalités de ggplot2, notamment le traçage 3D interactif.
+
+      ![Sortie de l’exemple Using ggplot2.R](media/samples-3d-interactive.png)
 
 - `Datasets` contient trois fichiers `.csv` utilisés par d’autres exemples.
 - `Flight_Delays_Prediction_with_R` et `Flight_Delays_Prediction_with_MRS` montrent comment prédire les vols en retard à l’aide de R, de Machine Learning et des données d’historique sur les vols à l’heure et la météo. 

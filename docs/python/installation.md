@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 066612a132bf6a092771afd5fc4a876d4b3be425
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: cd1ce1ce47705e5e8b63fb3ef7cc36c401503886
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Installation de la prise en charge de Python dans Visual Studio sur Windows
 
@@ -66,12 +67,11 @@ Pour tester rapidement la prise en charge de Python après avoir suivi la procé
     | Prise en charge de Python web | Installe des outils pour le développement web incluant la prise en charge de l’édition de code HTML, CSS et JavaScript, ainsi que des modèles pour des projets utilisant les frameworks Bottle, Flask et Django. Consultez [Modèles de projet web Python](template-web.md). |
     | Prise en charge de Python IoT | Prend en charge le développement Windows IoT Core avec Python. |
     | Outils de développement natifs Python | Installe le compilateur C++ et d’autres composants nécessaires pour développer des extensions natives pour Python. Consultez [Création d’une extension C++ pour Python](cpp-and-python.md). |
-    | Outils principaux pour Azure Cloud Services | Fournit une prise en charge supplémentaire pour le développement Azure Cloud Services en Python. Consultez [Projets Azure Cloud Services](template-azure-cloud-service.md). |
+    | Outils principaux pour Azure Cloud Services | Fournit une prise en charge supplémentaire pour le développement Azure Cloud Services en Python. Voir [Projets de service cloud Azure](template-azure-cloud-service.md). |
 
 1. Après l’installation, le programme d’installation fournit des options pour modifier, lancer, réparer ou désinstaller Visual Studio. Le bouton **Modifier** se transforme en **Mettre à jour** quand des mises à jour de Visual Studio sont disponibles pour les composants installés. (L’option Modifier est alors disponible sur le menu déroulant.) Vous pouvez également lancer Visual Studio et le programme d’installation à partir du menu Démarrer de Windows en effectuant une recherche sur « Visual Studio ».
 
     ![Lancement, modification ou désinstallation de Visual Studio à partir du programme d’installation](media/installation-vs-launch.png)
-
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
 

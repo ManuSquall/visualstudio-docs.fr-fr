@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d6c5cd4395ea0251027edbc94019637b72a630a8
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: adb49bb6070fee611a2ba67913943e68ee938d29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>Utilisation de Python dans Visual Studio
 
@@ -32,7 +33,7 @@ Visual Studio fournit une prise en charge du langage de premier ordre pour Pytho
 - [Étape 5 : Installation de packages et gestion des environnements Python](vs-tutorial-01-05.md)
 - [Étape 6 : Utilisation de Git](vs-tutorial-01-06.md)
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 - Visual Studio 2017 avec la charge de travail Python installée. Pour obtenir des instructions, consultez [Étape 0](vs-tutorial-01-00.md).
 
@@ -44,20 +45,20 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant un seul fich
 
 1. Dans Visual Studio, sélectionnez **Fichier > Nouveau > Projet** (Ctrl+Maj+N) pour afficher la boîte de dialogue **Nouveau projet**. Ici, vous parcourez les modèles pour différents langages, puis vous en sélectionnez un pour votre projet et vous spécifiez l’emplacement où Visual Studio place les fichiers.
 
-1. Pour voir les modèles Python, sélectionnez **Modèles > Autres langages > Python** à gauche, ou effectuez une recherche sur « Python ». L’utilisation de la recherche est un bon moyen de trouver un modèle quand vous ne vous souvenez pas de son emplacement dans l’arborescence des langages.
+1. Pour voir les modèles Python, sélectionnez **Installés > Python** à gauche, ou effectuez une recherche sur « Python ». L’utilisation de la recherche est un bon moyen de trouver un modèle quand vous ne vous souvenez pas de son emplacement dans l’arborescence des langages.
 
     ![Boîte de dialogue Nouveau projet avec les projets Python](media/vs-getting-started-python-01-new-project.png)
 
-1. Notez que la prise en charge de Python dans Visual Studio comprend un certain nombre de modèles de projet, notamment des applications web utilisant les frameworks Bottle, Flask et Django. Dans le cadre de cette procédure pas à pas, nous allons cependant commencer avec un projet vide. 
+    Notez que la prise en charge de Python dans Visual Studio comprend un certain nombre de modèles de projet, notamment des applications web utilisant les frameworks Bottle, Flask et Django. Dans le cadre de cette procédure pas à pas, nous allons cependant commencer avec un projet vide.
 
 1. Sélectionnez le modèle **Application Python**, spécifiez un nom pour le projet, puis sélectionnez **OK**. 
 
 1. Après quelques instants, Visual Studio affiche la structure du projet dans la fenêtre **Explorateur de solutions** (1). Le fichier de code par défaut est ouvert dans l’éditeur (2). La fenêtre Propriétés (3) apparaît également et affiche des informations supplémentaires sur les éléments sélectionnés dans l’Explorateur de solutions, notamment son emplacement exact sur le disque.
- 
+
     ![Explorateur de solutions avec un projet Python](media/vs-getting-started-python-02-windows.png)
- 
+
 1. Prenez quelques moments pour vous familiariser avec l’Explorateur de solutions, qui est l’endroit où vous parcourez les fichiers et les dossiers de votre projet.
-    
+
     ![L’Explorateur de solutions développé pour montrer différentes fonctionnalités](media/vs-getting-started-python-03-solution-explorer.png)
 
     (1) Votre projet mis en gras, avec le nom que vous avez donné dans la boîte de dialogue Nouveau projet. Sur le disque, ce projet est représenté par un fichier `.pyproj` dans le dossier de votre projet.
@@ -69,7 +70,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant un seul fich
     (4) Le nœud **Environnements Python** figure également sous le projet. Une fois qu’il est développé, vous voyez les interpréteurs Python disponibles. Développez un nœud d’interpréteur pour voir les bibliothèques qui sont installées dans cet environnement (5).
 
     Cliquez avec le bouton droit sur n’importe quel nœud ou élément dans l’Explorateur de solutions pour accéder à un menu des commandes applicables. Par exemple, la commande **Renommer** vous permet de changer le nom d’un nœud ou d’un élément, y compris le projet et la solution.
-    
+
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
@@ -77,7 +78,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant un seul fich
 
 ## <a name="going-deeper"></a>Pour aller plus loin
 
-- [Projets Python dans Visual Studio](python-projects.md)
+- [Projets Python dans Visual Studio](python-projects.md).
 - [En savoir plus sur le langage Python sur python.org](https://www.python.org)
 - [Python pour les débutants](https://www.python.org/about/gettingstarted/) (python.org)
 - [Cours Python gratuits sur Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)

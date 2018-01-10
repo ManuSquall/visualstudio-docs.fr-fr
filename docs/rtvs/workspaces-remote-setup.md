@@ -1,34 +1,34 @@
 ---
-title: "Espaces de travail distants avec les Outils R pour Visual Studio | Microsoft Docs"
+title: Espaces de travail distants avec les Outils R pour Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5778c9cf-564d-47b0-8d64-e5dc09162479
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.workload: data-science
+ms.openlocfilehash: 74978a3ef43a1e98202d32ed418008071c8794be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: b708aa33b490cb01ad1e1f31664804f658f1aa55
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/22/2017
 ---
-
 # <a name="setting-up-remote-workspaces"></a>Configuration des espaces de travail distants
 
-Cette rubrique explique comment configurer un serveur distant avec SSL et un service R approprié. Les outils R pour Visual Studio (RTVS) peuvent ainsi se connecter à un espace de travail distant sur ce serveur. 
+Cette rubrique explique comment configurer un serveur distant avec SSL et un service R approprié. Les outils R pour Visual Studio (RTVS) peuvent ainsi se connecter à un espace de travail distant sur ce serveur.
 
 - [Spécifications de l’ordinateur distant](#remote-computer-requirements)
 - [Installer un certificat SSL](#install-an-ssl-certificate)
-- [Installer R Services](#install-r-services)
+- [Installer un certificat SSL sur Windows](#install-an-ssl-certificate-on-windows)
+- [Installer un certificat SSL sur Ubuntu](#install-an-ssl-certificate-on-ubuntu)
+- [Installer R Services sur Windows](#install-r-services-on-windows)
+- [Installer R Services sur Linux](#install-r-services-on-Linux)
 - [Configurer R Services](#configure-r-services)
 - [Résolution des problèmes](#troubleshooting)
 
@@ -49,9 +49,13 @@ Le champ de clé qui doit se trouver dans le certificat est le nom de domaine co
 
 Pour plus d’informations, consultez l’article sur les [certificats de clé publique](https://en.wikipedia.org/wiki/Public_key_certificate) sur Wikipedia.
 
-### <a name="obtaining-a-self-signed-certificate"></a>Obtention d’un certificat auto-signé
+## <a name="install-an-ssl-certificate-on-windows"></a>Installer un certificat SSL sur Windows
 
-Par rapport à un certificat émis par une autorité approuvée, un certificat auto-signé est comme si vous créiez vous-même votre carte d’identité. Bien évidemment, ce processus est beaucoup plus simple que de passer par une autorité approuvée, mais l’authentification obtenue est en contrepartie moins forte, ce qui signifie qu’un pirate informatique peut substituer son propre certificat au certificat non signé et ainsi capturer tout le trafic entre le client et le serveur. Par conséquent, *le certificat auto-signé doit être utilisé uniquement pour les scénarios de test, sur un réseau approuvé, et jamais en production.*
+Le certificat SSL doit être installé manuellement sur Windows. Suivez les instructions ci-dessous pour installer un certificat SSL.
+
+### <a name="obtaining-a-self-signed-certificate-windows"></a>Obtention d’un certificat auto-signé (Windows)
+
+Ignorez cette section si vous disposez d’un certificat approuvé. Par rapport à un certificat émis par une autorité approuvée, un certificat auto-signé est comme si vous créiez vous-même votre carte d’identité. Bien évidemment, ce processus est beaucoup plus simple que de passer par une autorité approuvée, mais l’authentification obtenue est en contrepartie moins forte, ce qui signifie qu’un pirate informatique peut substituer son propre certificat au certificat non signé et ainsi capturer tout le trafic entre le client et le serveur. Par conséquent, *le certificat auto-signé doit être utilisé uniquement pour les scénarios de test, sur un réseau approuvé, et jamais en production.*
 
 Pour cette raison, RTVS émet toujours l’avertissement suivant lors de la connexion à un serveur avec un certificat auto-signé :
 
@@ -80,7 +84,6 @@ Pour installer le certificat sur l’ordinateur distant, exécutez `certlm.msc` 
 
 ![Commande d’importation de certificat](media/workspaces-remote-certificate-import.png)
 
-
 ### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>Octroi d’autorisations pour lire la clé privée du certificat SSL
 
 Une fois le certificat importé, accordez des autorisations au compte `NETWORK SERVICE` pour lire la clé privée, comme indiqué dans les instructions suivantes. `NETWORK_SERVICE` est le compte utilisé pour exécuter le répartiteur R Services, qui est le service qui met fin aux connexions SSL entrantes sur le serveur.
@@ -94,8 +97,50 @@ Une fois le certificat importé, accordez des autorisations au compte `NETWORK S
 
 1. Sélectionnez **OK** deux fois pour fermer les boîtes de dialogue et valider vos modifications.
 
+## <a name="install-an-ssl-certificate-on-ubuntu"></a>Installer un certificat SSL sur Ubuntu
 
-## <a name="install-r-services"></a>Installer R Services
+Le package `rtvs-daemon` installe un certificat auto-signé par défaut dans le cadre de l’installation.
+
+### <a name="obtaining-a-self-signed-certificate-ubuntu"></a>Obtention d’un certificat auto-signé (Ubuntu)
+
+Pour les avantages et les risques liés à l’utilisation d’un certificat auto-signé, consultez la description pour Windows. Le package `rtvs-daemon` génère et configure le certificat auto-signé lors de l’installation. Vous devez faire cela seulement si vous souhaitez remplacer le certificat auto-signé généré automatiquement.
+
+Pour émettre vous-même un certificat auto-signé :
+
+1. Connectez-vous directement ou via SSH à votre ordinateur Linux.
+1. Installez le package `ssl-cert` :
+    ```sh
+    sudo apt-get install ssl-cert
+    ```
+1. Exécutez `make-ssl-cert` pour générer le certificat SSL auto-signé par défaut :
+    ```sh
+    sudo make-ssl-cert generate-default-snakeoil --force-overwrite
+    ```
+1. Convertissez la clé générée et les fichiers PEM en fichier PFX. Le fichier PFX généré doit se trouver dans votre dossier de base :
+    ```sh
+    openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
+    ```
+
+### <a name="configuring-rtvs-daemon"></a>Configuration du démon RTVS
+
+Le chemin de fichier du certificat SSL (chemin du fichier PFX) doit être défini dans `/etc/rtvs/rtvsd.config.json`. Mettez à jour `X509CertificateFile` et `X509CertificatePassword` avec respectivement le chemin du fichier et le mot de passe.
+
+    ```json
+    {
+      "logging": { "logFolder": "/tmp" },
+      "security": {
+        "allowedGroup": "",
+        "X509CertificateFile": "/etc/rtvs/ssl-cert-snakeoil.pfx",
+        "X509CertificatePassword": "SnakeOil"
+      },
+      "startup": { "name": "rtvsd" },
+      "urls": "https://0.0.0.0:5444"
+    }
+    ```
+
+Enregistrez le fichier et redémarrez le démon : `sudo systemctl restart rtvsd`.
+
+## <a name="install-r-services-on-windows"></a>Installer R Services sur Windows
 
 Pour exécuter le code R, l’ordinateur distant doit avoir un interpréteur R installé comme suit :
 
@@ -108,25 +153,41 @@ Pour exécuter le code R, l’ordinateur distant doit avoir un interpréteur R
 
 1. Exécutez le [programme d’installation de R Services](https://aka.ms/rtvs-services) et redémarrez quand vous y êtes invité. Le programme d’installation effectue les opérations suivantes :
 
-    -   Création d’un dossier dans `%PROGRAMFILES%\R Tools for Visual Studio\1.0\` et copie de tous les fichiers binaires nécessaires.
-    -   Installation de `RHostBrokerService` et `RUserProfileService`, et configuration pour un démarrage automatique.
-    -   Configuration du service `seclogon` pour qu’il démarre automatiquement.
-    -   Ajout de `Microsoft.R.Host.exe` et `Microsoft.R.Host.Broker.exe` au règles de pare-feu entrantes sur le port 5444 par défaut.
+    - Création d’un dossier dans `%PROGRAMFILES%\R Tools for Visual Studio\1.0\` et copie de tous les fichiers binaires nécessaires.
+    - Installation de `RHostBrokerService` et `RUserProfileService`, et configuration pour un démarrage automatique.
+    - Configuration du service `seclogon` pour qu’il démarre automatiquement.
+    - Ajout de `Microsoft.R.Host.exe` et `Microsoft.R.Host.Broker.exe` au règles de pare-feu entrantes sur le port 5444 par défaut.
 
 R Services démarre automatiquement au redémarrage de l’ordinateur :
 
 - Le **service de répartiteur de l’hôte R** gère tout le trafic HTTPS entre Visual Studio et le processus dans lequel s’exécute le code R sur l’ordinateur.
 - Le **service des profils utilisateur R** est un composant privilégié qui gère la création des profils utilisateur Windows. Ce service est appelé quand un nouvel utilisateur se connecte pour la première fois au serveur R.
 
-Vous pouvez afficher ces services dans la console de gestion des services (`compmgmt.msc`).  
+Vous pouvez afficher ces services dans la console de gestion des services (`compmgmt.msc`).
+
+## <a name="install-r-services-on-linux"></a>Installer R Services sur Linux
+
+Pour exécuter le code R, l’ordinateur distant doit avoir un interpréteur R installé comme suit :
+
+1. Téléchargez et installez l’un des programmes suivants :
+
+    - [Microsoft R Open](https://mran.microsoft.com/open/)
+    - [CRAN R pour Windows](https://cran.r-project.org/bin/linux/ubuntu/)
+
+    Ces deux programmes ont les mêmes fonctionnalités, mais Microsoft R Open bénéficie de bibliothèques d’algèbre linéaire à accélération matérielle, fournies par la bibliothèque [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
+
+1. Suivez les instructions données dans la rubrique [Remote R Service pour Linux](workspaces-remote-r-service-for-linux.md), qui concerne les ordinateurs Ubuntu physiques, les machines virtuelles Ubuntu Azure, le sous-système Windows pour Linux (WSL) et les conteneurs Docker, y compris ceux exécutés sur le référentiel Azure Container.
 
 ## <a name="configure-r-services"></a>Configurer R Services
 
 Une fois que R Services est en cours d’exécution sur l’ordinateur distant, vous devez aussi créer des comptes d’utilisateur, définir des règles de pare-feu, configurer le réseau Azure et configurer le certificat SSL.
 
 1. Comptes d’utilisateur : Créez des comptes pour chaque utilisateur qui accède à l’ordinateur distant. Vous pouvez créer des comptes d’utilisateur locaux standard (sans privilège), ou vous pouvez joindre votre serveur R à votre domaine et ajouter les groupes de sécurité appropriés au groupe de sécurité `Users`.
+
 1. Règles de pare-feu : Par défaut, `R Host Broker` écoute sur le port TCP 5444. Par conséquent, vérifiez qu’il existe des règles de pare-feu Windows activées pour le trafic entrant et sortant (le trafic sortant est nécessaire pour l’installation des packages et des scénarios similaires).  Le programme d’installation de R Services définit ces règles automatiquement pour le pare-feu Windows intégré. Toutefois, si vous utilisez un pare-feu tiers, ouvrez manuellement le port 5444 pour `R Host Broker`.
+
 1. Configuration d’Azure : Si l’ordinateur distant est une machine virtuelle sur Azure, ouvrez le port 5444 pour le trafic entrant dans le réseau Azure, qui est indépendant du pare-feu Windows. Pour plus d’informations, consultez [Filtrer le trafic réseau avec les groupes de sécurité réseau](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) dans la documentation Azure.
+
 1. Indiquer au répartiteur de l’hôte R le certificat SSL à charger : Si vous installez le certificat sur un serveur intranet, il est probable que le nom de domaine complet de votre serveur soit identique à son nom NETBIOS. Dans ce cas, vous n’avez rien à faire et le certificat par défaut est chargé.
 
     Toutefois, si vous installez votre certificat sur un serveur accessible sur Internet (par exemple, une machine virtuelle Azure), utilisez le nom de domaine complet (FQDN) de votre serveur, car le nom de domaine complet d’un serveur accessible sur Internet n’est jamais le même que son nom NETBIOS.
@@ -154,18 +215,19 @@ Essayez d’envoyer un test ping à l’ordinateur distant à partir de la ligne
 
 Il existe trois raisons possibles :
 
--   [.NET Framework 4.6.1](https://www.microsoft.com/download/details.aspx?id=49981) ou version supérieure n’est pas installé sur l’ordinateur.
--   Les règles de pare-feu pour `Microsoft.R.Host.Broker` et `Microsoft.R.Host` ne sont pas activées pour les connexions entrantes et sortantes sur le port 5444.
--   Un certificat SSL avec `CN=<remote-machine-name>` n’est pas installé.
+- [.NET Framework 4.6.1](https://www.microsoft.com/download/details.aspx?id=49981) ou version supérieure n’est pas installé sur l’ordinateur.
+- Les règles de pare-feu pour `Microsoft.R.Host.Broker` et `Microsoft.R.Host` ne sont pas activées pour les connexions entrantes et sortantes sur le port 5444.
+- Un certificat SSL avec `CN=<remote-machine-name>` n’est pas installé.
 
-Redémarrez l’ordinateur après avoir apporté l’une des modifications ci-dessus. Vérifiez que `RHostBrokerService` et `RUserPofileService` sont en cours d’exécution par le biais du Gestionnaire des tâches (onglet Services) ou `services.msc`.
+Redémarrez l’ordinateur après avoir apporté l’une des modifications ci-dessus. Vérifiez que `RHostBrokerService` et `RUserProfileService` sont en cours d’exécution par le biais du Gestionnaire des tâches (onglet Services) ou `services.msc`.
 
 **Q. Pourquoi la fenêtre interactive R indique « 401 Accès refusé » lors de la connexion au serveur R ?**
 
 Deux raisons possibles :
 
 - Il est très probable que le compte `NETWORK SERVICE` n’ait pas accès à la clé privée du certificat SSL. Suivez les instructions précédentes pour accorder au compte `NETWORK SERVICE` l’accès à la clé privée.
-- Vérifiez que le service `seclogon` est en cours d’exécution. Utilisez `services.msc` pour configurer `seclogon` pour qu’il démarre automatiquement.                                                         
+- Vérifiez que le service `seclogon` est en cours d’exécution. Utilisez `services.msc` pour configurer `seclogon` pour qu’il démarre automatiquement.
+
 **Q. Pourquoi la fenêtre interactive R indique « 404 Introuvable » lors de la connexion au serveur R ?**
 
 Cette erreur est probablement due à l’absence de bibliothèques redistribuables Visual C++. Consultez la fenêtre interactive R pour voir s’il existe un message concernant une bibliothèque (DLL) manquante. Ensuite, vérifiez que le package redistribuable VS 2015 est installé, ainsi que R.
@@ -177,4 +239,3 @@ Vérifiez que les règles de pare-feu pour `Microsoft.R.Host.Broker` et `Microso
 **Q. J’ai essayé toutes ces solutions et le problème n’est pas résolu. Que puis-je faire ?**
 
 Consultez les fichiers journaux dans `C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp`. Ce dossier contient des fichiers journaux distincts pour chaque instance du service de répartiteur R exécuté. Un autre fichier journal est créé chaque fois que le service redémarre. Examinez le fichier journal le plus récent pour obtenir des indices sur ce qui pourrait ne pas fonctionner.
-

@@ -12,15 +12,16 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 47c0bd7bea18f32b8e017dabb803c4db4f46e2ca
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 762829628e4f52c797bf98acf83a48eec0cbce6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-python-and-c-together"></a>Débogage conjoint de Python et de C++
 
-La plupart des débogueurs Python standard prend en charge le débogage de code Python uniquement. Toutefois, dans la pratique, Python est utilisé conjointement avec C ou C++ dans les cas qui nécessitent de hautes performances ou la possibilité d’appeler directement les API de plateforme (pour obtenir un exemple, consultez [Création d’une extension C++ pour Python](cpp-and-python.md)). Quand un projet Python est chargé, Visual Studio intègre un débogage en mode mixte simultané de code Python et C/C++ natif, incluant des piles des appels combinées, la possibilité d’effectuer un pas à pas détaillé alternant entre du code Python et natif, des points d’arrêt dans l’un ou l’autre type de code, ainsi que la possibilité de visualiser des représentations Python des objets dans des cadres natifs et vice versa :
+La plupart des débogueurs Python standard prend en charge le débogage de code Python uniquement. Toutefois, dans la pratique, Python est utilisé conjointement avec C ou C++ dans les cas qui nécessitent de hautes performances ou la possibilité d’appeler directement les API de plateforme (pour obtenir un exemple, consultez [Création d’une extension C++ pour Python](cpp-and-python.md)). Quand un projet Python est chargé, Visual Studio intègre un débogage en mode mixte simultané de code Python et C/C++ natif, incluant des piles des appels combinées, la possibilité d’effectuer un pas à pas détaillé alternant entre du code Python et natif, des points d’arrêt dans l’un ou l’autre type de code, ainsi que la possibilité de visualiser des représentations Python des objets dans des cadres natifs et vice versa :
 
 ![Débogage en mode mixte](media/mixed-mode-debugging.png) 
 

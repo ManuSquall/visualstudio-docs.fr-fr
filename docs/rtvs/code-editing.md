@@ -1,26 +1,26 @@
 ---
-title: "Modification de code avec les Outils R pour Visual Studio | Microsoft Docs"
+title: Modification de code avec les Outils R pour Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5c856bb02ca33f999273fd6da782226be5f0f2d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-science
+ms.openlocfilehash: 013c32cb1567b3a4830a5c63059b14ea23df5427
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Modification de code R dans Visual Studio
- 
+
 Les Outils R pour Visual Studio (RTVS) personnalisent l’expérience de modification dans Visual Studio spécifiquement pour R, tout en conservant toutes les fonctionnalités et la possibilité d’utiliser des extensions. (Par exemple, si vous préférez les combinaisons de touches VIM, vous pouvez installer la version gratuite de l’[extension VsVim](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) à partir de la galerie Visual Studio.)
 
 Dans cette rubrique :
@@ -33,10 +33,9 @@ Dans cette rubrique :
 - [Insertion de commentaires Roxygen](#inserting-roxygen-comments)
 - [Options de l’éditeur](#editor-options)
 
-Consultez également les rubriques sur [IntelliSense](code-intellisense.md), les [extraits de code](code-snippets.md) et [R Markdown](rmarkdown.md).
+Consultez également les rubriques sur [IntelliSense](code-intellisense.md), [linting](code-linting.md), les [extraits de code](code-snippets.md) et [R Markdown](rmarkdown.md).
 
-
-## <a name="syntax-highlighting"></a>Mise en surbrillance de la syntaxe 
+## <a name="syntax-highlighting"></a>Mise en surbrillance de la syntaxe
 
 En plus de colorer différentes parties de votre code, comme les chaînes, les commentaires et les mots clés, RTVS met en évidence et active des liens dans les commentaires :
 
@@ -69,7 +68,7 @@ Les régions de code réductibles vous permettent de masquer temporairement une 
 Pour créer une région de votre choix, entourez le code souhaité avec des commentaires qui se terminent par `---`. Les contrôles +/- à gauche du code vous permettent ensuite de développer et réduire des régions :
 
 ![Création d’une zone réductible avec des commentaires](media/editing-collapsible-regions.gif)
- 
+
 Par défaut, Visual Studio insère des espaces quand vous appuyez sur la touche Tab. Vous pouvez là encore modifier ce comportement, comme décrit dans [Options, Éditeur de texte, Onglets](../ide/reference/options-text-editor-all-languages.md).
 
 ## <a name="code-navigation"></a>Navigation dans le code
@@ -107,9 +106,9 @@ f <- function(a) { return(a + 1) }
 Pour remettre en forme la totalité du fichier de code, sélectionnez **Modifier > Avancé > Mettre le document en forme** (Ctrl+E,D).
 
 La mise en forme automatique est une opération distincte qui peut être annulée. Par exemple, si vous collez du code dans l’éditeur et que la mise en forme s’applique, en sélectionnant **Modifier > Annuler** ou en appuyant sur Ctrl+Z une fois, vous inversez la mise en forme. Une deuxième annulation inverse le collage lui-même.
- 
+
 Les options de mise en forme (dont la désactivation de la mise en forme) sont définies dans **Outils > Options** sous l’onglet **Éditeur de texte > R > Avancé**. Vous pouvez accéder directement à cette page à l’aide la commande **Outils R > Options de l’éditeur...** ou en cliquant avec le bouton droit dans l’éditeur et en sélectionnant **Options de mise en forme...**. Consultez la section des [options de l’éditeur](#editor-options) pour plus d’informations.
- 
+
 ## <a name="inserting-roxygen-comments"></a>Insertion de commentaires Roxygen
 
 RTVS fournit un raccourci pour la génération de commentaires [Roxygen](http://roxygen.org/) à l’aide des noms de paramètre d’une fonction. Il suffit de taper `###` sur une ligne vide au-dessus de la définition de fonction :
@@ -144,5 +143,5 @@ Les options de l’onglet **R > Avancé** sont propres à RTVS :
 | | Liste de saisie semi-automatique quand la touche Tab est enfoncée | Off | Appelle la liste de saisie semi-automatique en tapant un ou plusieurs caractères et en appuyant sur Tab. |
 | | Correspondance partielle de noms d’argument de types | Off | Quand vous tapez des noms d’argument dans un appel de fonction, l’aide de la signature affiche une description de l’argument qui correspond le mieux. |
 | Fenêtre interactive | Vérification syntaxique dans la console R | Off | Applique la vérification syntaxique dans la fenêtre interactive. La vérification syntaxique peut ne pas fonctionner correctement avec les instructions multilignes. | 
-| mode Plan | Plan du code | Activé | Crée automatiquement des régions réductibles pour des zones comme les instructions multilignes. | 
+| mode Plan | Plan du code | Activé | Crée automatiquement des régions réductibles pour des zones comme les instructions multilignes. |
 | Vérification syntaxique | Afficher les erreurs de syntaxe | Activé | Active la vérification syntaxique automatique du code. |

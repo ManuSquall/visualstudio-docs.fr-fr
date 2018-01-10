@@ -12,13 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ed6da27de93c371e59b8851924a39b6387c32db9
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 170d4dd3aeb5dfb2d05f8f640c653790ccab0a70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="working-with-the-r-interactive-window"></a>Utilisation de la fenêtre interactive R
+# <a name="working-with-the-r-interactive-window"></a>Utilisation de la fenêtre interactive R
 
 Outils R pour Visual Studio (RTVS) comprend une fenêtre interactive R, également appelée fenêtre **REPL** (Read-Evaluate-Print-Loop), dans laquelle vous pouvez entrer du code R et voir immédiatement les résultats. Les modules, la syntaxe, les variables et les fonctionnalités IntelliSense sont tous disponibles dans la fenêtre interactive.
 
@@ -75,7 +76,6 @@ Les commandes de la barre d’outils sont répertoriées ci-après. La plupart d
 | ![Bouton Définir le répertoire de travail à l’emplacement du projet](media/repl-toolbar-11-set-working-directory-to-project.png) | Définir le répertoire de travail à l’emplacement du projet | Ctrl+Maj+P | Définit le répertoire de travail à la racine du projet actuellement chargé dans Visual Studio. Consultez [Répertoire de travail](#working-directory). |
 | (Champ de texte) | Sélectionner le répertoire de travail | N/A | Champ d’entrée directe pour le répertoire de travail. Consultez [Répertoire de travail](#working-directory). |
 
-
 ## <a name="workspaces-and-sessions"></a>Espaces de travail et sessions
 
 L’exécution de code dans la fenêtre interactive génère un contexte dans votre session active. Le contexte est composé de variables globales, de définitions de fonctions, de charges de bibliothèque, etc. Le terme *espace de travail* désigne ce contexte. Vous pouvez enregistrer et charger des espaces de travail à tout moment. 
@@ -88,12 +88,10 @@ Pour recharger un espace de travail précédemment enregistré, sélectionnez le
 
 Utilisez le bouton **Réinitialiser** ou la commande **Outils R > Session > Réinitialiser** pour effacer le contexte de la session. Si vous utilisez une session à distance, la réinitialisation supprime également le profil utilisateur de l’ordinateur distant pour effacer tous les fichiers qu’il contient. (Consultez [Espaces de travail](workspaces.md#directories-on-local-and-remote-computers).)
 
-
 ## <a name="working-directory"></a>Répertoire de travail
 
 Les développeurs sont souvent amenés à changer de répertoire de travail au cours d’une session interactive. Pour définir facilement un répertoire de travail à l’emplacement d’un fichier source, à l’emplacement de votre projet ou dans tout autre emplacement arbitraire, utilisez les commandes disponibles dans la barre d’outils, dans le menu **Outils R > Répertoire de travail** et dans le menu contextuel du projet. Cela vous évitera de taper des noms de chemin complets ou des noms de chemin relatifs de grande taille pour faire référence aux fichiers.
 
- 
 ## <a name="history"></a>Historique
 
 Toutes les lignes que vous entrez dans la fenêtre interactive, notamment celles envoyées à partir d’un éditeur, sont conservées dans l’historique de la fenêtre REPL. Vous pouvez ensuite parcourir l’historique à l’aide des touches de direction Haut et Bas, comme vous êtes sans doute habitué à le faire sur la ligne de commande.

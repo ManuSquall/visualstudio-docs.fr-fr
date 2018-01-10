@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0133ced82f35a8daefeb3dcaaacd4822f5cad345
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0d01e7c8ef95270cde9c1054cc286b62bbe95c46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modifier le style des objets dans Blend
 Le moyen le plus simple de personnaliser un objet est d’en définir les propriétés dans le panneau **Propriétés**.  
@@ -45,15 +46,15 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
   
  Vous pouvez créer un pinceau d'image à l'aide d'une image. Les illustrations suivantes montrent le pinceau d'image, le pinceau d'image en mosaïque et le pinceau d'image retourné.  
   
- ![](../designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png "81f84f56-906d-456b-8288-d77da1e01e31") ![](../designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png "d3782ca8-64da-47a4-a095-c6cdd0fa47a2") ![](../designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png "38ae3691-f3f1-4a1e-82ca-c7fa164bf56e")  
+ ![](../designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png "81f84f56-906d-456b-8288-d77da1e01e31") ![ ] (../designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png "d3782ca8-64da-47a4-a095-c6cdd0fa47a2") ![ ] (../designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png " 38ae3691-f3f1-4a1e-82ca-c7fa164bf56e")  
   
  Vous pouvez créer un pinceau de dessin à l'aide d'un dessin vectoriel, tel qu'un trait ou une forme. Les illustrations suivantes montrent le pinceau de dessin, le pinceau de dessin en mosaïque et le pinceau de dessin retourné.  
   
- ![](../designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png "197666ac-ef57-4c5c-9779-669e991a00a5") ![](../designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png "ba09cda3-4cee-40ba-b3d4-edc032158bdc") ![](../designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png "15bf6021-620c-4490-9eae-086153d3f14f")  
+ ![](../designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png "197666ac-ef57-4c5c-9779-669e991a00a5") ![ ] (../designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png "ba09cda3-4cee-40ba-b3d4-edc032158bdc") ![ ] (../designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png " 15bf6021-620c-4490-9eae-086153d3f14f")  
   
  Vous pouvez créer un pinceau visuel à partir d'un contrôle, tel qu'un bouton. Les illustrations suivantes montrent le pinceau visuel et le pinceau visuel en mosaïque.  
   
- ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
+ ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![ ] (../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Tile Brushes (Pinceaux mosaïques)](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
@@ -71,7 +72,7 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
   
  Si vous voulez baser votre modèle sur un contrôle existant, sélectionnez un objet sur la planche graphique. Ensuite, en haut de la planche graphique, choisissez successivement le bouton de la barre de navigation, **Modifier le modèle**, puis **Modifier une copie** ou **Créer vide**.  
   
- ![](../designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png "5ebdb33f-aad2-4c10-a328-5e8b04c56a36")  
+ ![](../designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png "5ebdb33f-aad2-4C10-a328-5e8b04c56a36")  
   
  Pour créer un style, sélectionnez l’objet puis, dans le menu **Objet**, choisissez **Modifier le style**, puis **Modifier une copie** ou **Créer vide**.  
   
@@ -83,7 +84,7 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
   
  Dans la boîte de dialogue **Créer une ressource de style**, vous pouvez soit nommer le style ou le modèle pour pouvoir l’utiliser ultérieurement, soit appliquer le style ou le modèle à tous les contrôles de ce type.  
   
- ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
+ ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91C8-3b1871829eea")  
   
 > [!NOTE]
 >  Vous ne pouvez pas créer de styles ou de modèles pour chaque type de contrôle. Si un contrôle ne les prend pas en charge, le bouton de la barre de navigation ne s’affiche pas au-dessus de la planche graphique.  
@@ -114,7 +115,7 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
 ##  <a name="Resources"></a> Ressources : créer des couleurs, des styles et des modèles et les réutiliser ultérieurement  
  Vous pouvez convertir pratiquement tous les éléments de votre projet en ressource. Une ressource consiste simplement en un objet que vous pouvez réutiliser à différents endroits dans votre application. Par exemple, vous pouvez créer une couleur, en faire une ressource, puis appliquer cette couleur à plusieurs objets. Pour modifier la couleur de tous ces objets, il vous suffit de modifier la ressource de couleur.  
   
- ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
+ ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-B153-52a23cd744f7") ![ ] (../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [A brief touch on resources (Bref survol des ressources)](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
   

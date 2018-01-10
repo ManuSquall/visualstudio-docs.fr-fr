@@ -22,18 +22,19 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 2c44751b9a4eb60ddc6124311bd75592777d4cb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Procédure pas à pas : amélioration de la réactivité de l'interface utilisateur (HTML)
 Cette procédure pas à pas vous guide dans le processus d’identification et de résolution d’un problème de performance à l’aide du [profileur de réactivité de l’interface utilisateur XAML](../profiling/html-ui-responsiveness.md). Le profileur est disponible dans Visual Studio pour les applications UWP en JavaScript. Dans ce scénario, vous créez une application de test de performance qui met à jour les éléments DOM trop fréquemment, et vous utilisez le profileur pour identifier et résoudre ce problème.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Création et exécution de l'application de test de performance  
   
-1.  Dans Visual Studio, créez un projet JavaScript Windows universel. (Sélectionnez **Fichier / Nouveau / Projet**. Dans le volet gauche, sélectionnez **JavaScript** , **Windows**, **Windows 10**, puis **Universel** ou **Windows Phone**.)  
+1.  Dans Visual Studio, créez un projet JavaScript Windows universel. (Sélectionnez **Fichier > Nouveau > Projet**. Dans le volet gauche, sélectionnez **JavaScript** , **Windows**, **Windows 10**, puis **Universel** ou **Windows Phone**.)  
   
 2.  > [!IMPORTANT]
     >  Les résultats du diagnostic présentés dans cette rubrique concernent une application Windows 8.  

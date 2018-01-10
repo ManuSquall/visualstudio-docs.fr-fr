@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8d17c0a3a1d376f7b44e5fb78f362fc49458462e
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 9770a484c6949695641234a96d8b5a6cdb3c645b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-your-python-code"></a>Débogage de votre code Python
 
@@ -42,7 +43,7 @@ Consultez également les articles ci-après concernant le débogage propre à un
 <a name="debugging-without-a-project"></a>
 
 > [!Tip]
-> Python dans Visual Studio prend en charge le débogage sans projet. Après avoir ouvert un fichier Python autonome, cliquez avec le bouton droit dans l’éditeur, puis sélectionnez **Démarrer avec débogage**. Visual Studio lance alors le script avec l’environnement global par défaut (consultez l’article [Environnements Python](python-environments.md)) sans aucun argument. Mais vous bénéficiez désormais d’une prise en charge complète du débogage.
+> Python dans Visual Studio prend en charge le débogage sans projet. Après avoir ouvert un fichier Python autonome, cliquez avec le bouton droit dans l’éditeur, puis sélectionnez **Démarrer avec débogage**. Visual Studio lance alors le script avec l’environnement global par défaut (voir [Environnements Python](python-environments.md)) sans aucun argument. Mais vous bénéficiez désormais d’une prise en charge complète du débogage.
 >
 > Pour contrôler l’environnement et les arguments, créez un projet pour le code. Vous pouvez facilement effectuer cette opération à l’aide du modèle de projet [À partir de code Python existant](python-projects.md#creating-a-project-from-existing-files).
 

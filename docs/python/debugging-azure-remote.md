@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8e08bcf4cdae07cbaf621825e85fe5a8b699cfa1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: c9ac484d90d7c80cbff0e20f33ede099b36c9786
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Débogage à distance de code Python sur Azure
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 12/01/2017
 
 Une fois que votre projet est correctement déployé et que les sockets web sont activés, vous pouvez effectuer l’attachement à App Service à partir de **l’Explorateur de serveurs** dans Visual Studio (**Affichage > Explorateur de serveurs**). Recherchez votre site sous **Azure > App Service** et le groupe de ressources applicable, cliquez avec le bouton droit, puis sélectionnez **Attacher le débogueur (Python)**. (La commande **Attacher le débogueur** pour les applications .NET s’exécutant sous IIS n’est utile que si vous co-hébergez un code .NET en même temps que votre application Python.)
 
-Visual Studio peut vous diriger directement vers un ensemble d’instructions permettant d’effectuer un attachement direct, comme décrit ci-dessous à la section [Attachement sans l’Explorateur de serveurs](#attaching-without-server-explorer). Si la commande **Attacher le débogueur (Python)** n’apparaît pas ou que Visual Studio ne parvient pas à s’attacher à votre site, consultez [Résolution des problèmes du débogage distant Azure](debugging-azure-remote-troubleshooting.md).
+Visual Studio peut vous diriger directement vers un ensemble d’instructions permettant d’effectuer un attachement direct, comme décrit ci-dessous à la section [Attachement sans l’Explorateur de serveurs](#attaching-without-server-explorer). Si la commande **Attacher le débogueur (Python)** n’apparaît pas ou que Visual Studio ne parvient pas à s’attacher à votre site, consultez [Résolution des problèmes du débogage distant Azure](debugging-azure-remote-troubleshooting.md).
 
 Si l’attachement réussit, Visual Studio bascule vers une vue du débogueur. La barre d’outils indique le processus en cours de débogage tel qu’un URI `wss://` :
 

@@ -1,29 +1,18 @@
 ---
-title: "Bien démarrer avec Visual C# et Visual Basic à l’aide de Visual Studio | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-helpviewer_keywords:
-- C# tutorial
-- Visual Basic tutorial
-- learn VB
-- VB tutorial
-- learn C#
-- learn Visual Basic
-ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
-caps.latest.revision: "13"
-author: TerryGLee
-ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: edaf43791dc93693474c8cf68067dbcbb3196f79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/quickstart-visual-basic-console
+ms.openlocfilehash: 584510fdc81abd52be390759beef0ac5d412700e
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
+---
+title: "Bien démarrer avec Visual C# et Visual Basic à l’aide de Visual Studio | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: "vs-acquisition" ms.tgt_pltfrm: "" ms.topic: "get-started-article" helpviewer_keywords: 
+  - "didacticiel C#"
+  - "didacticiel Visual Basic"
+  - "découvrir VB"
+  - "didacticiel VB"
+  - "découvrir C#"
+  - "découvrir Visual Basic" author: "TerryGLee" ms.author: "tglee" manager: ghogen
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>Bien démarrer avec Visual C# et Visual Basic à l’aide de Visual Studio
 Si vous débutez en Visual C# ou en Microsoft Visual Basic, les didacticiels sont un bon point de départ. L'Aide de Mise en route comprend une suite de leçons qui vous initient à Visual C# et à Visual Basic. Amusez-vous et écrivez une grande application logicielle.  
@@ -45,7 +34,7 @@ Si vous débutez en Visual C# ou en Microsoft Visual Basic, les didacticiels so
 
 |         |         |
 |---------|---------|
-|  ![icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=nl3AuKD6D_9011787171) sur la création d’une application Windows universelle simple dans Visual Studio.  
+|  ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=nl3AuKD6D_9011787171) sur la création d’une application Windows universelle simple dans Visual Studio.  
 
 ## <a name="see-also"></a>Voir aussi
 [Bien démarrer avec le développement dans Visual Studio](get-started-developing-with-visual-studio.md)

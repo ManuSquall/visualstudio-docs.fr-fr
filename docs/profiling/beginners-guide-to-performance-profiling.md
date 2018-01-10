@@ -1,47 +1,31 @@
 ---
-title: "Guide du profilage des performances dans Visual Studio pour les débutants | Microsoft Docs"
+title: Profiler les performances de votre application dans Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords:
-- vs.performance.wizard.intropage
+f1_keywords: vs.performance.wizard.intropage
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: 45
+caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.workload: multiple
+ms.openlocfilehash: 5ff8e6fe4814d9f049a816997252dac032e631ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: a5eabb6a62e4b362d9355772621d27f574034ff1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="beginners-guide-to-performance-profiling"></a>Guide du profilage des performances pour les débutants
+# <a name="profile-application-performance-in-visual-studio"></a>Profiler les performances de votre application dans Visual Studio
 Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cette procédure montre comment utiliser l’onglet **Utilisation de l’UC** des outils de diagnostics pour obtenir les données de performances de votre application. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
   
 Quand le débogueur est suspendu, l’outil **Utilisation de l’UC** collecte les informations relatives aux fonctions qui s’exécutent dans votre application. L’outil répertorie les fonctions qui ont effectué un travail et fournit un graphique chronologique que vous pouvez utiliser pour examiner des segments spécifiques d’une session d’échantillonnage.
@@ -85,7 +69,7 @@ Dans cette rubrique, nous allons aborder l’analyse de l’utilisation du proce
 
      ![Outils de diagnostics - Activer le profilage de l’UC](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
-     Lorsque vous choisissez **Activer le profilage de l’UC**, Visual Studio commence à enregistrer vos fonctions, ainsi que la durée de leur exécution. Vous pouvez uniquement afficher les données collectées lorsque votre application s’interrompt à un point d’arrêt.
+     Quand vous choisissez **Enregistrer le profil du processeur**, Visual Studio commence à enregistrer vos fonctions, ainsi que la durée de leur exécution. Vous pouvez uniquement afficher les données collectées lorsque votre application s’interrompt à un point d’arrêt.
 
 8.  Appuyez sur F5 pour exécuter l’application jusqu’au deuxième point d’arrêt.
 
@@ -125,7 +109,6 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
     Dans cette vue, la fonction sélectionnée apparaît dans le titre et dans la zone **Fonction active** (ici, GetNumber). La fonction qui a appelé la fonction active s’affiche sur la gauche sous **Fonctions appelantes**, et toutes les fonctions appelées par la fonction active s’affichent dans la zone **Fonctions appelées** située à droite. Vous pouvez sélectionner l’une ou l’autre de ces zones pour modifier la fonction active.
 
     Cette vue montre la durée totale (en ms), ainsi que le pourcentage du temps global d’exécution de l’application, nécessaires à l’exécution de la fonction.
-
     La section **Corps de la fonction** montre également la durée totale (et le pourcentage correspondant) passée dans le corps de la fonction, à l’exclusion du temps passé dans les fonctions appelantes et appelées. Dans cet exemple, 3 713 ms sur 3 729 ont été passées dans le corps de la fonction. Les 16 ms restantes ont été passées dans le code externe appelé par cette fonction.
 
     > [!TIP]
@@ -174,5 +157,7 @@ Utilisez la zone de recherche pour trouver le nœud que vous cherchez, puis util
 </div>
   
 ## <a name="see-also"></a>Voir aussi  
- [[Utilisation de la mémoire](../profiling/memory-usage.md) [Utilisation de l’UC](../profiling/cpu-usage.md) [Profilage dans Visual Studio](../profiling/index.md) [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)
-
+ [Utilisation de la mémoire](../profiling/memory-usage.md)  
+ [Utilisation de l'UC](../profiling/cpu-usage.md)  
+ [Profilage dans Visual Studio](../profiling/index.md)  
+ [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)

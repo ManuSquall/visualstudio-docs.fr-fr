@@ -12,15 +12,16 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 9da504c9af3f0ff30f62f0d4581c4061cc22b4ec
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 690d51ba7ec083e831bf9eba069676e38d6152ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Débogage à distance de code Python sur Linux
 
-Visual Studio peut lancer et déboguer des applications Python localement et à distance sur un ordinateur Windows (consultez [Débogage à distance](../debugger/remote-debugging.md)). Il peut également effectuer un débogage à distance sur un autre système d’exploitation, un appareil différent ou une implémentation Python autre que CPython à l’aide de la [bibliothèque ptvsd](https://pypi.python.org/pypi/ptvsd).
+Visual Studio peut lancer et déboguer des applications Python localement et à distance sur un ordinateur Windows (voir [Débogage à distance](../debugger/remote-debugging.md)). Il peut également effectuer un débogage à distance sur un autre système d’exploitation, un appareil différent ou une implémentation Python autre que CPython à l’aide de la [bibliothèque ptvsd](https://pypi.python.org/pypi/ptvsd).
 
 Lorsque vous utilisez ptvsd, le code Python faisant l’objet du débogage héberge le serveur de débogage auquel Visual Studio peut être attaché. Cet hébergement nécessite une petite modification de votre code pour importer et activer le serveur, et peut exiger des configurations du réseau ou du pare-feu sur l’ordinateur distant pour autoriser les connexions TCP.
 

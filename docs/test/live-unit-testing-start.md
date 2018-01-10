@@ -10,11 +10,12 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 83458b769b5551ed07774e244cce65a97477a713
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: b0d4726bc29ebbb6f90fde5e7817ec2fb596177c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Bien démarrer avec Live Unit Testing dans Visual Studio
 
@@ -29,7 +30,7 @@ La solution Visual Basic complète peut être téléchargée à partir du dépô
 
 ---
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Ce didacticiel nécessite que Visual Studio 2017 Enterprise Edition version 15.3 soit installé avec la charge de travail .NET Core 2.0.
 
@@ -204,7 +205,7 @@ Jusqu’ici, bien que vous ayez écrit les tests pour la bibliothèque de classe
  
 1. Visual Studio démarre Live Unit Test, qui exécute automatiquement tous vos tests. 
  
-Quand il a terminé l’exécution de vos tests, **l’Explorateur de tests** affiche les résultats globaux et les résultats des tests individuels. En outre, la fenêtre de code affiche graphiquement la couverture de votre code de test et le résultat de vos tests. Comme le montre l’illustration suivante, les trois tests ont été exécutés avec succès. Elle montre également que nos tests ont couvert tous les chemins de code de la méthode `StartsWithUpper`, et que ces tests ont tous été exécutés avec succès (ce qui est indiqué par la marque de coche verte, « ✓ »). Enfin, elle montre qu’aucune des autres méthodes de `StringLibrary` n’ont une couverture du code (qui est indiquée par une ligne bleue, « ➖ »). 
+Quand il a terminé l’exécution de vos tests, **l’Explorateur de tests** affiche les résultats globaux et les résultats des tests individuels. En outre, la fenêtre de code affiche graphiquement la couverture de votre code de test et le résultat de vos tests. Comme le montre l’illustration suivante, les trois tests ont été exécutés avec succès. Elle montre également que nos tests ont couvert tous les chemins de code de la méthode `StartsWithUpper`, et que ces tests ont tous été exécutés avec succès (ce qui est indiqué par la coche verte, « ✓ »). Pour finir, elle montre qu’aucune des autres méthodes de `StringLibrary` n’ont une couverture du code (ce qui est indiquée par une ligne bleue, ""). 
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 ![L’Explorateur de tests et la fenêtre de code après le démarrage de Live Unit Testing](media/lut-start/lut-results-cs.png) 

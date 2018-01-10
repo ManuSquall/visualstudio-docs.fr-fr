@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 12/01/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
-ms.openlocfilehash: c6f4843c6bb1b6811e38668207cd0ace5c5dd445
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: de3a69fa147eed3e5880957d35d0692e82959e4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Répertoire des composants Visual Studio Test Professional 2017
 
@@ -40,16 +41,16 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
-ID de composant | Nom | Version | Type de dépendance
+ID de composant | Name | Version | Type de dépendance
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26711.1 | Obligatoire
-Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.0.26606.0 | Obligatoire
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.27005.2 | Obligatoire
+Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.0.27005.2 | Obligatoire
 
 ## <a name="unaffiliated-components"></a>Composants non affiliés
 
 Il s’agit de composants qui ne sont inclus dans aucune charge de travail, mais qui peuvent être sélectionnés de manière individuelle.
 
-ID de composant | Nom | Version
+ID de composant | Name | Version
 --- | --- | ---
 N/A | N/A | N/A
 
@@ -59,8 +60,8 @@ Parfois, des problèmes peuvent se produire. Si votre installation de Visual Stu
 Voici d’autres options de support :
 * Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
 * Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Vous pouvez suivre les problèmes au niveau d'un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), et y poser des questions et obtenir des réponses.
-* Vous pouvez également communiquer avec nous et d'autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio).  (Cette option nécessite un compte [GitHub](https://github.com/)).
+* Vous pouvez suivre les problèmes au niveau d’un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) et y poser des questions et obtenir des réponses.
+* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio)  (Cette option nécessite un compte [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Voir aussi
 

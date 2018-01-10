@@ -1,32 +1,30 @@
 ---
 title: Options pour Python dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3c714867-7a64-4b1e-aca8-09d956192279
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
+- VS.ToolsOptionsPages.Python_Tools.Diagnostics
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.workload: python
+ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a71d076e85e1e7ae070014e83186c0011ca9e58f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/22/2017
 ---
-
 # <a name="options-for-python-in-visual-studio"></a>Options pour Python dans Visual Studio
 
 Pour afficher les options pour Python, utilisez la commande de menu **Outils > Options**, vérifiez que la case **Afficher tous les paramètres** est cochée, puis accédez à **Python Tools** :
@@ -39,6 +37,7 @@ Les options spécifiques sont décrites dans les sections suivantes :
 
 - [Options générales](#general-options)
 - [Options de débogage](#debugging-options)
+- [Options des diagnostics](#diagnostics-options)
 - [Options des fenêtres interactives](#interactive-windows-options)
 - [Options avancées de l’éditeur Python](#advanced-python-editor-options)
 
@@ -70,6 +69,17 @@ Les options spécifiques sont décrites dans les sections suivantes :
 | Activer le débogage de la bibliothèque Python standard | Off | Permet d’effectuer un pas à pas détaillé dans le code source de la bibliothèque standard pendant le débogage, mais augmente le temps nécessaire au démarrage du débogueur.|
 
 ![Boîte de dialogue Options pour Python, onglet Débogage](media/options-debugging.png)
+
+
+## <a name="diagnostics-options"></a>Options des diagnostics
+
+| Option | Par défaut | Description |
+| --- | --- | --- |
+| Inclure les journaux d’analyse | Activé | Inclut des journaux détaillés relatifs à l’analyse des environnements Python installés lors de l’enregistrement des diagnostics dans un fichier ou en les copiant dans le Presse-papiers à l’aide des boutons. Cette option peut augmenter considérablement la taille du fichier généré, mais elle est souvent nécessaire pour diagnostiquer les problèmes IntelliSense. |
+| Enregistrer les diagnostics dans un fichier (bouton) | N/A | Demande un nom de fichier, puis enregistre le journal dans un fichier texte. |
+| Copier les diagnostics dans le Presse-papiers (bouton) | N/A | Copie l’intégralité du journal dans le Presse-papiers ; cette opération peut prendre un certain temps, en fonction de la taille du journal. |
+
+![Boîte de dialogue Options pour Python, onglet Diagnostics](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>Options des fenêtres interactives
 

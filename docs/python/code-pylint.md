@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: dbb4c3d0a2d9077572a80c43d9d49d9c7e898dce
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 032c6489463aaaee59b39423506f18bda82fb414
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-pylint-to-check-python-code"></a>Utilisation de PyLint pour vérifier le code Python
 
@@ -39,7 +40,7 @@ Un double-clic sur une erreur vous dirige directement vers le code source à l�
 
 ## <a name="setting-pylint-command-line-options"></a>Définition des options de ligne de commande PyLint
 
-La section [Command line options](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options) (Options de ligne de commande) de la documentation PyLint explique comment contrôler le comportement de PyLint par le biais d’un fichier de configuration `.pylintrc`. Vous pouvez placer ce type de fichier à la racine d’un projet Python dans Visual Studio, ou à un autre emplacement, selon la portée d’application souhaitée pour ces paramètres.
+La section [Command line options](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options) (Options de ligne de commande) de la documentation PyLint explique comment contrôler le comportement de PyLint par le biais d’un fichier de configuration `.pylintrc`. Vous pouvez placer ce type de fichier à la racine d’un projet Python dans Visual Studio, ou à un autre emplacement, selon la portée d’application souhaitée pour ces paramètres (pour plus de détails, consultez les [options de ligne de commande](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options)).
 
 Par exemple, pour supprimer les avertissements « missing docstring » affichés sur l’image précédente avec un fichier `.pylintrc` dans un projet, effectuez les étapes suivantes :
 
@@ -54,3 +55,9 @@ Par exemple, pour supprimer les avertissements « missing docstring » affich�
 1. Ouvrez le fichier pour modification, qui contient différents paramètres que vous pouvez manipuler. Pour désactiver un avertissement, recherchez la section `[MESSAGES CONTROL]`, puis localisez le paramètre `disable` dans cette section. Vous y voyez une longue chaîne de messages spécifiques, auxquels vous pouvez ajouter les avertissements de votre choix. Dans cet exemple, ajoutez `,missing-docstring` (y compris la virgule de délimitation).
 
 1. Enregistrez le fichier `.pylintrc`, puis réexécutez PyLint pour vérifier que les avertissements sont désormais supprimés.
+
+> [!Tip]
+> Pour utiliser un fichier `.pylintrc` à partir d’un partage réseau, créez une variable d’environnement nommée `PYLINTRC` avec la valeur du nom de fichier sur le partage réseau, en utilisant un chemin UNC ou une lettre de lecteur mappée. Exemple :
+> ```
+> PYLINTRC=\\myshare\python\.pylintrc
+> ```

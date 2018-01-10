@@ -4,8 +4,7 @@ description: "{{ESPACE RÉSERVÉ}}"
 ms.date: 08/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +12,15 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
+ms.workload: multiple
+ms.openlocfilehash: ad0dfcdaf353d94b7d0ea255def0839069b0a39e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
-ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
-ms.openlocfilehash: 1e81071d8a67fd5b8c38bcf87629604efe6fa4a5
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/22/2017
 ---
-
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Outils de détection et de gestion des instances de Visual Studio
 
 ## <a name="detecting-existing-visual-studio-instances"></a>Détection des instances existantes de Visual Studio
@@ -66,3 +64,14 @@ Vous êtes invité à fournir un nom de ruche, qui devient le nom de votre ruche
 > [!IMPORTANT]
 > Avant de redémarrer Visual Studio, vous devez décharger la ruche isolée que vous avez créée. Pour ce faire, sélectionnez Fichier -> Décharger la ruche dans le menu principal Regedit. (Si vous ne le faites pas, le fichier reste verrouillé et Visual Studio n’est pas en mesure de démarrer.)
 
+## <a name="get-support"></a>Obtenir de l’aide
+Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Voici d’autres options de support :
+* Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
+* Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Vous pouvez suivre les problèmes au niveau d’un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) et y poser des questions et obtenir des réponses.
+* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio)  (Cette option nécessite un compte [GitHub](https://github.com/).)
+
+## <a name="see-also"></a>Voir aussi
+* [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)

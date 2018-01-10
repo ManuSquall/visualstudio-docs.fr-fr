@@ -12,11 +12,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17a5d01ed0ceb139362c28168d430f19ea0fef55
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 7840b2a28d5d2aff350af7c86f19332c7b8dd087
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Guide pratique pour lancer une application autonome avec le profileur et collecter des statistiques d’applications en utilisant la ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour démarrer une application autonome (cliente) et collecter des statistiques de performances à l’aide de la méthode d’échantillonnage.  
@@ -31,7 +32,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 1.  Si vous exécutez les outils de profilage sur un ordinateur où est installé Visual Studio, la fenêtre Commande Visual Studio vous permet de définir les bons chemins. Dans le menu **Outils**, choisissez **Invite de commandes de Visual Studio**  
   
 > [!NOTE]
->  Les outils en ligne de commande des outils de profilage se trouvent dans le sous-répertoire \Team Tools\Performance Tools du répertoire d’installation Visual Studio. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécification du chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Les outils en ligne de commande des outils de profilage se trouvent dans le sous-répertoire \Team Tools\Performance Tools du répertoire d’installation Visual Studio. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécification du chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
 ## <a name="starting-the-application-with-the-profiler"></a>Démarrage de l’application avec le profileur  
  Pour démarrer une application cible à l’aide du profileur, utilisez les options **/start** et **/launch** de VSPerfCmd pour initialiser le profileur et démarrer l’application. Vous pouvez spécifier **/start** et **/launch** et leurs options respectives sur une même ligne de commande.  
@@ -98,7 +99,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
   
     -   Fermez l’application cible.  
   
-         ou  
+         - ou -  
   
     -   Tapez **VSPerfCmd /detach**  
   
