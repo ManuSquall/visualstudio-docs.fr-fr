@@ -22,17 +22,15 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-ms.assetid: a5945667-40e8-4191-9f1e-71c18ec30a2e
-caps.latest.revision: "35"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 38cf7e2fd9229ddc0a99f317a0680ea272fa3ad5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e12489431a7496b1d64d5aef93a24fcc239be81a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ribbon-xml"></a>Élément XML Ribbon
   L'élément Ruban (XML) vous permet de personnaliser un ruban en utilisant XML. Utilisez l'élément Ruban (XML) si vous souhaitez personnaliser le ruban d'une façon qui n'est pas prise en charge par l'élément Ruban (Concepteur visuel). Pour obtenir une comparaison de ce que vous pouvez faire avec chaque élément, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  

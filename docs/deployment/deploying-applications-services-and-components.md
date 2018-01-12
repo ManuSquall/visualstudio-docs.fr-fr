@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: get-started-article
 dev_langs:
 - FSharp
 - VB
@@ -26,11 +26,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: e05bf361515b45f3ebc7683fa0c83ec6116d9419
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>Vue d’ensemble du déploiement dans Visual Studio
 
@@ -50,7 +50,7 @@ Consultez les didacticiels pour obtenir des instructions pas à pas.
 
 - **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, et **.NET Core**: vous pouvez utiliser l’outil de publication pour déployer sur un site Web à l’aide de FTP ou Web Deploy. Pour plus d’informations, consultez [déployer vers un site web](quickstart-deploy-to-a-web-site.md).
 
-    Dans l’Explorateur de solutions, cliquez sur le projet et choisissez **publier**. Dans l’outil de publication, choisissez l’option souhaitée, suivez les étapes de configuration.
+    Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**. Dans l’outil de publication, choisissez l’option souhaitée, suivez les étapes de configuration.
 
     ![Choisissez IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png)
 
@@ -62,7 +62,7 @@ Consultez les didacticiels pour obtenir des instructions pas à pas.
 
 ### <a name="publish-to-azure"></a>Publier sur Azure
 
-- **ASP.NET, ASP.NET Core, Python, Node.js et .NET Core** des applications web : vous pouvez utiliser l’outil de publication pour déployer rapidement des applications vers Azure App Service ou à une Machine virtuelle de Azure. Dans l’Explorateur de solutions, cliquez sur le projet et choisissez **publier**. Dans la boîte de dialogue Publier, choisissez **Microsoft Azure App Service** ou **des Machines virtuelles Microsoft Azure**, puis suivez les étapes de configuration.
+- **ASP.NET, ASP.NET Core, Python, Node.js et .NET Core** des applications web : vous pouvez utiliser l’outil de publication pour déployer rapidement des applications vers Azure App Service ou à une Machine virtuelle de Azure. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**. Dans la boîte de dialogue Publier, choisissez **Microsoft Azure App Service** ou **des Machines virtuelles Microsoft Azure**, puis suivez les étapes de configuration.
 
     ![Choisissez le Service d’applications Azure](../deployment/media/quickstart-publish-azure.png "choisissez Azure App Service")
 

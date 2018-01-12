@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 359431356bb06a04857b93e10996a2123c80f129
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Déployer des applications de plateforme Windows universelle à partir de Visual Studio
 ![S’applique uniquement à Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -59,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 Sur un appareil distant Windows 10, vous devez activer [mode développeur](/windows/uwp/get-started/enable-your-device-for-development). Sur les appareils Windows 10 mise à jour du créateur ou une version ultérieure, les outils à distance sont installés automatiquement lorsque vous déployez votre application. Pour plus d’informations, consultez [déboguer un package d’application installés](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> Sur Windows 8.1 et versions de mise à jour du pre-créateur de Windows 10, les outils distants Visual Studio doit être installés sur le périphérique distant, et le débogueur distant doit être en cours d’exécution. Sur Windows 8.1, vous devez également installer une licence de développeur.
+> Sur Windows 8.1 et versions de mise à jour du pre-créateur de Windows 10, les outils à distance pour Visual Studio doit être installés sur le périphérique distant, et le débogueur distant doit être en cours d’exécution. Sur Windows 8.1, vous devez également installer une licence de développeur.
   
 Le déploiement utilise le canal réseau du débogueur distant pour envoyer les fichiers de l'application sur le périphérique distant.  
   
@@ -101,7 +101,7 @@ Le déploiement utilise le canal réseau du débogueur distant pour envoyer les 
  Vous pouvez définir les options de déploiement suivantes sur la page de propriétés de débogage du projet de démarrage.  
   
  **Autoriser le bouclage de réseau**  
- Pour des raisons de sécurité, une application [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] installée en mode standard n'est pas autorisée à effectuer des appels réseau vers le périphérique sur lequel elle est installée. Par défaut, le déploiement Visual Studio crée une exemption à cette règle pour l'application déployée. Cette exemption vous permet de tester les procédures de communication sur un seul ordinateur. Avant d'envoyer votre application au [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], vous devez la tester sans l'exemption.  
+ Pour des raisons de sécurité, une application UWP ou [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] application qui est installée en mode standard n’est pas autorisée à effectuer des appels réseau sur l’appareil n’est installé sur. Par défaut, le déploiement Visual Studio crée une exemption à cette règle pour l'application déployée. Cette exemption vous permet de tester les procédures de communication sur un seul ordinateur. Avant d'envoyer votre application au [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], vous devez la tester sans l'exemption.  
   
  Pour supprimer de l'application l'exemption du bouclage de réseau :  
   

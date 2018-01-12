@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bf34eda9c9957b8a989244da3f2fce03a5d151e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c84239c2f70a32558f64a299791db917926a8c44
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d'informations Graphics par programmation
 Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour capturer par programmation les informations graphiques d'une application Direct3D.  
@@ -42,7 +42,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
 -   Capture d'informations graphiques  
   
 > [!NOTE]
->  Si les implémentations précédentes de la capture par programmation dépendaient des Outils de contrôle à distance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour fournir la fonctionnalité de capture, Windows 8.1 prend directement en charge la capture via Direct3D 11.2. Ainsi, vous n'avez plus besoin d'installer les Outils de contrôle à distance pour utiliser la capture par programmation dans Windows 8.1.  
+>  Les implémentations précédentes de capture par programmation dépendaient des outils à distance pour Visual Studio pour [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour fournir la fonctionnalité de capture, Windows 8.1 prend en charge la capture directement par le biais de Direct3D 11.2. Par conséquent, vous devez n’est plus installer les outils à distance pour Visual Studio pour la capture par programmation sur Windows 8.1.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Préparation de votre application à l'utilisation de la capture par programmation  
  Pour utiliser la capture par programmation dans votre application, celle-ci doit inclure les en-têtes nécessaires. Ces en-têtes font partie du Kit de développement logiciel (SDK) Windows 8.1.  
@@ -183,10 +183,10 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
   
      Si vous n'effectuez pas cette étape, le nom de fichier est default.vsglog. Si vous n'avez pas défini `DONT_SAVE_VSGLOG_TO_TEMP`, l'emplacement du fichier est relatif au répertoire temporaire ; sinon, il est relatif au répertoire de travail ou se situe à un autre emplacement si vous avez spécifié un nom de fichier absolu.  
   
- Pour [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] applications, l’emplacement du répertoire temporaire est propre à chaque utilisateur et l’application et se trouve généralement dans un emplacement tel que C:\users\\*nom d’utilisateur*\AppData\Local\Packages\\ *nom de famille de package*\TempState\\. Pour les applications de bureau, l’emplacement du répertoire temporaire est propre à chaque utilisateur et se trouve généralement dans un emplacement tel que C:\Users\\*nom d’utilisateur*\AppData\Local\Temp\\.  
+ Pour la plateforme Windows universelle et [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] applications, l’emplacement du répertoire temporaire est propre à chaque utilisateur et l’application et se trouve généralement dans un emplacement tel que C:\users\\*nom d’utilisateur*\AppData\Local\Packages\\ *nom de famille de package*\TempState\\. Pour les applications de bureau, l’emplacement du répertoire temporaire est propre à chaque utilisateur et se trouve généralement dans un emplacement tel que C:\Users\\*nom d’utilisateur*\AppData\Local\Temp\\.  
   
 > [!NOTE]
->  Pour écrire à un emplacement spécifique, vous devez avoir des autorisations d'accès en écriture à cet emplacement ; sinon, une erreur se produit. Gardez à l'esprit que les applications [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] sont plus limitées que les applications de bureau en ce qui concerne l'écriture des données et qu'une configuration supplémentaire peut être nécessaire pour leur permettre d'écrire à certains emplacements.  
+>  Pour écrire à un emplacement spécifique, vous devez avoir des autorisations d'accès en écriture à cet emplacement ; sinon, une erreur se produit. Gardez à l’esprit que UWP et [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] applications sont plus limitées que les applications de bureau sur où ils peuvent écrire des données et peuvent nécessiter une configuration supplémentaire pour écrire à certains emplacements.  
   
 ### <a name="capturing-the-graphics-information"></a>Capture des informations graphiques  
  Après avoir préparé l'application à la capture par programmation et éventuellement configuré l'emplacement et le nom du fichier journal de graphisme, générez, puis exécutez ou déboguez l'application pour capturer les données ; ne démarrez pas Graphics Diagnostics à partir de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] quand vous utilisez l'API de capture par programmation. Le journal de graphisme est écrit à l'emplacement que vous avez spécifié. Si vous voulez conserver cette version du journal, déplacez-le à un autre emplacement ; à défaut, il sera remplacé quand vous exécuterez à nouveau l'application.  

@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a3fbe1b7c138f24167e587109fbb5f524b6b9019
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>Exécuter des applications UWP et Windows 8.1 dans le simulateur
 Le simulateur de Visual Studio pour les applications UWP et Windows 8.1 est une application de bureau qui simule une application UWP ou Windows 8.1. Vous pouvez exécuter les applications choisir la taille de l’écran physique et la résolution que vous voulez émuler. Vous pouvez également simuler la rotation des événements tactiles et courantes et simuler les propriétés de connexion réseau.
   
- Le simulateur fournit un environnement dans lequel vous pouvez concevoir, développer, déboguer et tester les applications UWP. Toutefois, avant de publier votre application au Microsoft Store, vous devez tester votre application sur un appareil réel.  
+ Le simulateur fournit un environnement dans lequel vous pouvez concevoir, développer, déboguer et tester les applications UWP. Toutefois, avant de publier votre application sur Microsoft Store, vous devez tester votre application sur un appareil réel.  
   
  Le simulateur de Visual Studio pour applications UWP ne s’exécute pas dans un environnement isolé sur votre ordinateur local. Par conséquent, les erreurs qui se produisent dans un simulateur, tel qu'une erreur irrécupérable à l'échelle du système, peuvent également affecter l'ordinateur entier.  
   

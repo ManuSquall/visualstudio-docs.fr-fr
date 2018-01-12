@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 789c2317fcb1bc46b5708f1810563b20fe8895ed
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Vous pouvez consacrer moins de temps au débogage de votre application quand vous utilisez IntelliTrace pour enregistrer et effectuer le suivi de l'historique d'exécution de votre code. Vous pouvez trouver des bogues facilement car IntelliTrace vous permet d'effectuer les tâches suivantes :  
@@ -56,7 +56,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
 |||  
 |-|-|  
 |**Prise en charge**|-Applications Visual Basic et Visual c# qui utilisent .NET Framework 2.0 ou versions ultérieures.<br />     Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br />     Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : débogage d’une Application SharePoint à l’aide de IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br />     Pour déboguer des applications Microsoft Azure avec IntelliTrace, consultez [débogage d’un Service Cloud publié avec IntelliTrace et Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|  
-|**Prise en charge limitée**|-.NET core et des applications ASP.NET Core pris en charge pour les événements uniquement<br />-Applications F # à titre expérimental<br />-Windows Store les applications prises en charge pour les événements uniquement|  
+|**Prise en charge limitée**|-.NET core et des applications ASP.NET Core pris en charge pour les événements uniquement<br />-Applications F # à titre expérimental<br />-Les applications UWP prise en charge pour les événements uniquement|  
 |**Non pris en charge**|-C++, autres langages et script<br />-Services Windows, Silverlight, Xbox ou [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] applications|  
   
 > [!NOTE]

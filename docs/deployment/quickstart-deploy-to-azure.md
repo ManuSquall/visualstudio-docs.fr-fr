@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 helpviewer_keywords: deployment, website
@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: azure
-ms.openlocfilehash: 7008ac8ea30e704403542b7b9786cffb1c5da158
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 52da1a2e618d9ececa1c8fd0d90a86e651cd7fde
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Publier une application ASP.NET ou ASP.NET Core pour le Service d’applications Azure à l’aide de Visual Studio
 
@@ -28,7 +28,7 @@ Si vous n’avez pas déjà un compte Azure, vous pouvez [Inscrivez-vous ici](ht
 
 ## <a name="create-a-new-project"></a>Créer un projet 
 
-1. Dans Visual Studio, choisissez **fichier > Nouveau projet**.
+1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 
 1. Sous **Visual C#** ou **Visual Basic**, choisissez **Web**, puis dans le volet central, choisissez soit **ASP.NET Web Applications (.NET Framework)**ou (c# uniquement) **Application ASP.NET Core Web**, puis cliquez sur **OK**.
 
@@ -42,7 +42,7 @@ Si vous n’avez pas déjà un compte Azure, vous pouvez [Inscrivez-vous ici](ht
 
 ## <a name="publish-to-azure-app-service"></a>Publier sur Azure App Service
 
-1. Dans l’Explorateur de solutions, cliquez sur le projet et choisissez **publier**.
+1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**.
 
     ![Choisissez publier](../deployment/media/quickstart-publish-aspnet.png "choisissez Publier")
 

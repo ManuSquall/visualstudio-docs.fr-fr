@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Office development in Visual Studio, reference
-ms.assetid: c7e78186-ee32-4dc1-b1fb-38310b1aadf7
-caps.latest.revision: "25"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c297381f4629b35757693fd95f003a001034060c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb41929716fe89e6723f55ce7b87c8dcc7a78bcc
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Référence générale (Développement Office dans Visual Studio)
   Cette section contient des détails techniques sur les projets Microsoft Office dans Visual Studio.  

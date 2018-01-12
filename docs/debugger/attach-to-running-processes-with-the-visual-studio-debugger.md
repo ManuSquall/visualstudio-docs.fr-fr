@@ -32,11 +32,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6ca076ef20ad8751619a715721c6423b5211bc3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d'exécution avec le débogueur Visual Studio
 Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’exécution sur un ordinateur local ou distant. Une fois le processus est en cours d’exécution, cliquez sur **Déboguer > Attacher au processus** (ou appuyez sur **CTRL + ALT + P**) pour ouvrir la **attacher au processus** boîte de dialogue.
@@ -145,12 +145,9 @@ Pour certains types d’application (par exemple, les applications UWP), ne pas 
 |Débogage distant ASP.NET 4 ou 4.5 sur un serveur IIS|Utiliser les outils distants et attacher au processus|w3wp.exe|Consultez [ASP.NET de débogage à distance sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Débogage distant ASP.NET Core sur un serveur IIS|Utiliser les outils distants et attacher au processus|dotnet.exe|Déploiement d’applications, consultez [publier sur IIS](https://docs.asp.net/en/latest/publishing/iis.html). Pour le débogage, consultez [distant débogage ASP.NET Core sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Déboguer d’autres types d’application pris en charge sur un processus serveur|Utilisez les outils à distance (si le serveur est à distance) et l’attacher au processus|Iexplore.exe ou autres processus|Si nécessaire, utilisez le Gestionnaire des tâches pour aider à identifier le processus. Consultez [débogage distant](../debugger/remote-debugging.md) et des sections plus loin dans cette rubrique|
-|Débogage à distance une application de bureau Windows|Appuyez sur F5 et outils à distance|N/A| Consultez [débogage distant](../debugger/remote-debugging.md)|
+|Débogage à distance une application de bureau Windows|Outils à distance et F5|N/A| Consultez [débogage distant](../debugger/remote-debugging.md)|
 |Une application universelle (UWP), OneCore, HoloLens et IoT de débogage à distance|Déboguer le package d’application installé|N/A|Consultez [déboguer un Package d’application installé](debug-installed-app-package.md) au lieu d’utiliser **attacher au processus**|
-|Déboguer une application Windows universelle (UWP), OneCore, HoloLens, IoT application ou que vous n’avez pas démarrer à partir de Visual Studio|Déboguer le package d’application installé|N/A|Consultez [déboguer un Package d’application installé](debug-installed-app-package.md) au lieu d’utiliser **attacher au processus**|
-  
-> [!WARNING]
->  Pour attacher une application UWP qui est écrit en JavaScript, vous devez d’abord activer le débogage de l’application. Consultez [attacher le débogueur](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) dans le centre de développement Windows.  
+|Déboguer une application Windows universelle (UWP), OneCore, HoloLens, IoT application ou que vous n’avez pas démarrer à partir de Visual Studio|Déboguer le package d’application installé|N/A|Consultez [déboguer un Package d’application installé](debug-installed-app-package.md) au lieu d’utiliser **attacher au processus**|  
   
 > [!NOTE]
 >  Pour que le débogueur s’attache au code écrit en C++, le code doit émettre `DebuggableAttribute`. Vous pouvez ajouter cela automatiquement à votre code grâce à la liaison, à l'aide de l'option [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) .

@@ -16,17 +16,15 @@ helpviewer_keywords:
 - project output references [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, project output references
 - SharePoint development in Visual Studio, advanced packaging tools
-ms.assetid: 9d6bc25e-bf0d-4483-a691-2ad7a796fa80
-caps.latest.revision: "15"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 7ced5627420f5ac90da2cae1a2930dbd0b973dbc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0114971baa164858add68f2f1d6f571407ba5320
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Comment : ajouter une référence de sortie de projet
   Pour déployer des assemblys de projet autre que SharePoint (ou fichiers .xap dans les projets Silverlight) sur SharePoint, ajoutez-les sous la forme d’une référence de sortie de projet.  

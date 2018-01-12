@@ -23,16 +23,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6250a6b5cdf502d95aea3aaec033acaad826de42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 93deb8c5a8d4d17597db0fa2f93f097b4839e88b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Démarrage rapide : déboguer du code JavaScript à l’aide de la console
 ![S’applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Vous pouvez utiliser la fenêtre de JavaScript Console pour interagir avec les applications UWP générées à l’aide de JavaScript. Ces fonctionnalités sont prises en charge pour [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] applications, Windows Phone, les applications et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour obtenir la référence des commandes de la console, voir [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+ Vous pouvez utiliser la fenêtre de JavaScript Console pour interagir avec les applications UWP générées à l’aide de JavaScript. Ces fonctionnalités sont prises en charge pour les applications UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] applications, Windows Phone, les applications et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour obtenir la référence des commandes de la console, voir [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
  La fenêtre de la console JavaScript permet les actions suivantes :  
   
@@ -269,7 +269,7 @@ ms.lasthandoff: 12/22/2017
 ##  <a name="BrowserSupport"></a> Navigateurs et plateformes pris en charge  
  La fenêtre de la console JavaScript est prise en charge sur les plateformes suivantes :  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]et les applications Windows Phone à l’aide de JavaScript et HTML  
+-   Les applications UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]et les applications Windows Phone à l’aide de JavaScript et HTML  
   
 -   Internet Explorer 11 s’exécutant sur [!INCLUDE[win81](../debugger/includes/win81_md.md)]  
   

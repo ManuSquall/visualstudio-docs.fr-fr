@@ -18,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-ms.assetid: 81756490-ab5a-4fa4-96c6-eed2cfbf8374
-caps.latest.revision: "28"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: dc016efd3d0a3525f733929c294946bf9376417b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 687116b1fc7f3ad935583b41ff9c19d2d5d13613
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-and-debugging-a-sharepoint-workflow-solution"></a>Procédure pas à pas : création et débogage d'une solution de flux de travail SharePoint
   Cette procédure pas à pas montre comment créer un modèle de flux de travail séquentiel. Le flux de travail vérifie une propriété d’une bibliothèque de documents partagés afin de déterminer si un document a été révisé. Si le document a été révisé, le flux de travail se termine.  

@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: ca1edcc26c8e015f12db6b1d564c182aa765ed52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e21d29c3a95de4e5174a9966665f3e4e6781f726
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Déboguer un package d’application installée dans Visual Studio (UWP)
 
@@ -94,6 +94,8 @@ Lorsque vous déboguez un package d’application installée sur un ordinateur d
 
 > [!NOTE]
 > Les applications UWP peuvent être développées et compilé sur Windows 8.1 ou version ultérieure, mais nécessitent Windows 10 afin de s’exécuter. Si vous développez une application UWP sur un PC de Windows 8.1, vous pouvez déboguer à distance une application UWP en cours d’exécution sur un autre appareil Windows 10, si l’ordinateur de l’hôte et la cible se trouvent sur le même réseau local. Pour ce faire, téléchargez et installez les outils à distance pour Visual Studio sur les deux ordinateurs. La version installée doit correspondre à la version existante de Visual Studio que vous avez installée, et l’architecture que vous sélectionnez (x86, x 64) doit correspondre également à celui de votre application cible.
+
+Pour plus d’informations sur les options avancées pour le déploiement distant des applications UWP, consultez [déploiement et débogage des applications UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/index.md)  

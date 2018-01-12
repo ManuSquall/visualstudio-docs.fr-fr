@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 20f1b517d271bd50cdb96c595f2e8ab9be7c5e65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utiliser des points d’arrêt dans le débogueur Visual Studio
 Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’exécution du débogueur, éventuellement pour voir l’état des variables de code ou examiner la pile des appels. Ils constituent l’une des techniques de débogage les plus importantes de la boîte à outils d’un développeur.  
@@ -232,7 +232,7 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
 ## <a name="export-and-import-breakpoints"></a>Exporter et importer des points d’arrêt  
  Vous pouvez exporter un point d’arrêt vers un fichier XML en cliquant avec le bouton droit sur le point d’arrêt et en sélectionnant **Exporter**. Le fichier est enregistré par défaut dans le répertoire de la solution. Pour importer des points d’arrêt, ouvrez la fenêtre **Points d’arrêt** (**Ctrl+Alt+B**) puis, dans la barre d’outils, cliquez sur la flèche pointant vers la droite (l’info-bulle est **Importer les points d’arrêt d’un fichier**).  
   
-## <a name="troubleshoot-breakpoints"></a>Résoudre les problèmes liés aux points d’arrêt  
+## <a name="troubleshoot"></a>Résoudre les points d’arrêt 
   
 ### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>J’ai supprimé un point d’arrêt, mais je continue de l’atteindre quand je relance le débogage  
  Si vous avez supprimé un point d’arrêt pendant le débogage, il est possible dans certains cas que vous atteigniez à nouveau le point d’arrêt au prochain lancement du débogage. Pour cesser d’atteindre ce point d’arrêt, assurez-vous que toutes les instances du point d’arrêt sont supprimées de la fenêtre **Points d’arrêt** .  

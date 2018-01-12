@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 helpviewer_keywords: deployment, local folder
@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3b97ca67c9e8d8a4cfb7d99a6c518c8e49a8c426
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 4e575a6d885b079c1c5afd0af6cbdadcd1d38d96
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Déployer une application web ou .NET Core vers un dossier local à l’aide de l’outil de publication de Visual Studio
 
@@ -28,7 +28,7 @@ Ces étapes s’appliquent aux applications Python dans Visual Studio, .NET Core
 
 ## <a name="create-a-new-project"></a>Créer un projet 
 
-1. Dans Visual Studio, choisissez **fichier > Nouveau projet**.
+1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 
 1. Sous **Visual C#** ou **Visual Basic**, choisissez **.NET Core**, puis, dans le volet central, choisissez **l’application Console (.NET Core)**.
 
@@ -38,7 +38,7 @@ Ces étapes s’appliquent aux applications Python dans Visual Studio, .NET Core
 
 ## <a name="deploy-to-a-local-folder"></a>Déployer vers un dossier local
 
-1. Dans l’Explorateur de solutions, cliquez sur le projet et choisissez **publier**.
+1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**.
 
     ![Choisissez publier](../deployment/media/quickstart-publish.png "choisissez Publier")
 

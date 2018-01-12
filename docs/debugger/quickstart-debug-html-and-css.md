@@ -24,16 +24,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: bf9049907d1648b1950f8d66e0fd183c82699e92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Déboguer le code HTML et CSS dans UWP et les applications Windows 8.1
 ![S’applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Pour les applications JavaScript, Visual Studio fournit une expérience de débogage complète qui inclut des fonctionnalités familières aux développeurs Internet Explorer et Visual Studio. Ces fonctionnalités sont prises en charge pour [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], les applications Windows Phone et pour les applications créées à l’aide de Visual Studio Tools pour Apache Cordova.  
+ Pour les applications JavaScript, Visual Studio fournit une expérience de débogage complète qui inclut des fonctionnalités familières aux développeurs Internet Explorer et Visual Studio. Ces fonctionnalités sont prises en charge pour les applications UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], les applications Windows Phone et pour les applications créées à l’aide de Visual Studio Tools pour Apache Cordova.  
   
  Grâce au modèle de débogage interactif fourni par les outils d’inspection DOM, vous pouvez afficher et modifier le rendu du code HTML et CSS. Et cela, sans avoir à arrêter ni redémarrer le débogueur.
   
@@ -268,9 +268,9 @@ ms.lasthandoff: 12/22/2017
  Pour obtenir un exemple qui montre comment sélectionner des éléments à l’aide de la **élément Select** bouton, consultez [les styles CSS de déboguer à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ##  <a name="BrowserSupport"></a> Navigateurs et plateformes pris en charge  
- Les outils Visual Studio pour JavaScript, l’explorateur DOM et la fenêtre de la console JavaScript sont pris en charge sur les plateformes suivantes :  
+ L’Explorateur DOM et la fenêtre de JavaScript Console sont pris en charge sur les plateformes suivantes :  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]et les applications Windows Phone à l’aide de JavaScript et HTML  
+-   Les applications UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] et les applications Windows Phone à l’aide de JavaScript et HTML  
   
 -   Internet Explorer 11 s’exécutant sur [!INCLUDE[win81](../debugger/includes/win81_md.md)]  
   

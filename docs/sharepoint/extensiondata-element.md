@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: ExtensionData element
-ms.assetid: caf6843b-dcf5-4688-a9eb-a424aae1beab
-caps.latest.revision: "11"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c678e75de7c05563d064b873af9d913db602082a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aafabb1d481afe41dd3dc932a176f6674bae6f99
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="extensiondata-element"></a>ExtensionData, élément
   Représente une collection d’éléments de données personnalisés qui sont associés à l’élément de projet SharePoint.  
