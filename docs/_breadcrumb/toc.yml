@@ -4,7 +4,7 @@
   items:
     - name: Visual Studio
       tocHref: /visualstudio/
-      topicHref: /visualstudio/index
+      topicHref: /visualstudio/ide/
       items:
         - name: Qualité du code
           tocHref: /visualstudio/code-quality/
@@ -22,10 +22,10 @@
           tocHref: /visualstudio/debugger/
           topicHref: /visualstudio/debugger/index
           items:
-            - name: Kit SDK Debug Interface Access
+            - name: Kit de développement logiciel de Debug Interface Access
               tocHref: /visualstudio/debugger/debug-interface-access/
               topicHref: /visualstudio/debugger/debug-interface-access/debug-interface-access-sdk
-            - name: Graphisme
+            - name: Graphiques
               tocHref: /visualstudio/debugger/graphics/
               topicHref: /visualstudio/debugger/graphics/overview-of-visual-studio-graphics-diagnostics
         - name: Déploiement

@@ -20,17 +20,15 @@ helpviewer_keywords:
 - Toolbox [Office development in Visual Studio], unsupported controls
 - user controls [Office development in Visual Studio], grouping controls
 - Windows Forms controls [Office development in Visual Studio], Toolbox
-ms.assetid: 95ff473e-4952-4977-bc88-c77289c9fb0b
-caps.latest.revision: "56"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d7fbbad8433df7dd36d8f09a13305da3e15430c5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2c8795b643afff2cc02d507a1764871aa0e0e181
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitations des contrôles Windows Forms dans les documents Office
   Il existe certaines différences entre les contrôles Windows Forms qui sont ajoutés aux documents Microsoft Office Word ou des feuilles de calcul Microsoft Office Excel et les contrôles Windows Forms qui sont ajoutés aux Windows Forms. Par exemple, lorsque vous ajoutez un <xref:Microsoft.Office.Tools.Word.Controls.Button> à un document, les propriétés de contrôle telles que <xref:Microsoft.Office.Tools.Word.Controls.Button.Dock%2A>, <xref:Microsoft.Office.Tools.Word.Controls.Button.Anchor%2A>, et <xref:Microsoft.Office.Tools.Word.Controls.Button.TabIndex%2A> ne se comportent pas comme prévu.  
