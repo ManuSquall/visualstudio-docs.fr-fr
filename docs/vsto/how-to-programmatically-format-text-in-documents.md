@@ -14,17 +14,15 @@ helpviewer_keywords:
 - formatting [Office development in Visual Studio]
 - documents [Office development in Visual Studio], formatting text
 - text [Office development in Visual Studio], formatting in documents
-ms.assetid: 0a84893b-5ccc-4515-a2dc-95773ee8eaba
-caps.latest.revision: "42"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 30bc3e878be8667b8ea306bcf7ba3a9648a706c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 602c9e8f3e846f38a50c39c34f5d08f47f74d155
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-format-text-in-documents"></a>Comment : mettre en forme du texte dans des documents par programmation
   Vous pouvez utiliser l'objet <xref:Microsoft.Office.Interop.Word.Range> pour mettre en forme le texte dans un document Microsoft Office Word.  

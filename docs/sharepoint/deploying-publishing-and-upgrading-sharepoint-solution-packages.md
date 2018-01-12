@@ -18,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, deploying
-ms.assetid: 5efc1d99-2bd2-4f1a-a7b0-86c3b8f533f0
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c1c8757de9b63c3fed75ec7e2ef7f61c89e18226
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5990ab0f6ff6ec02131921f54197dd28e7f4e6ff
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploying-publishing-and-upgrading-sharepoint-solution-packages"></a>Déploiement, publication et mise à niveau de packages de solutions SharePoint
   Après avoir développé une solution SharePoint dans Visual Studio, vous pouvez déployer le fichier de package (.wsp) sur un serveur SharePoint local ou le publier sur un serveur SharePoint local ou distant. Si vous déployez les fichiers, vous pouvez personnaliser la façon dont les fichiers de package (.wsp) sont déployées.  

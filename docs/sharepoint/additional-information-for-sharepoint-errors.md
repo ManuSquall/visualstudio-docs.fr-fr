@@ -18,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, errors
 - SharePoint development in Visual Studio, troubleshooting
-ms.assetid: 83d20a81-fd81-4cbd-8f28-bb6bddeb06de
-caps.latest.revision: "9"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 55151999b3fb0576eb71a1f112bb4c4069accba5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 45bf01c0d153eca484a480fa4aff25bb2e68769a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Informations supplémentaires pour les erreurs SharePoint
   Vous pouvez obtenir de l’aide dans la résolution des problèmes [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erreurs et avertissements dans les forums publics Microsoft Developer Network (MSDN) et les rubriques de dépannage des outils SharePoint.  

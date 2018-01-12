@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ef5fb93914f418915c11b51071419308b3ac9a0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Vous pouvez déboguer une application Visual Studio qui a été déployée sur un autre ordinateur. Pour ce faire, utilisez le débogueur distant Visual Studio.
@@ -35,15 +35,15 @@ Pour obtenir des instructions détaillées sur le débogage distant, consultez l
 |Scénario|Lien|
 |-|-|-|
 |ASP.NET|[Débogage ASP.NET Core à distance](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) ou [ASP.NET du débogage distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C# ou Visual Basic|[Débogage d’un projet c# ou Visual Basic à distance](remote-debugging-csharp.md)|
-|C++|[Débogage à distance d’un projet C++](remote-debugging-cpp.md)|
-|Applications Windows universelles (UWP)|[Déboguer le package d'application installé](debug-installed-app-package.md)|
+|C# ou Visual Basic|[Débogage d’un projet c# ou Visual Basic à distance](../debugger/remote-debugging-csharp.md)|
+|C++|[Débogage à distance d’un projet C++](../debugger/remote-debugging-cpp.md)|
+|Applications Windows universelles (UWP)|[Exécuter les applications UWP sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md) et [déboguer un package d’application installé](../debugger/debug-installed-app-package.md)|
 |Azure|[ASP.NET de débogage distant sur Azure](remote-debugging-azure.md)|
 |Azure Service Fabric|[Déboguer une application de Service Fabric distante](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).|
 
 Si vous simplement télécharger et installer le débogueur distant et que vous n’avez pas besoin des instructions supplémentaires pour votre scénario, suivez les étapes décrites dans cet article.
   
-## <a name="download-and-install-the-remote-tools"></a>Télécharger et installer les outils de contrôle à distance  
+## <a name="download-and-install-the-remote-tools"></a>Téléchargez et installez les outils à distance  
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
