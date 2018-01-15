@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 884d66aa-cb2d-4be0-ae45-8360a01f1c7d
-caps.latest.revision: "6"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ef494d68ba8ce8134483f910bc7e6d984e4717c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f43414aa2cddd7c992f49f9d75f9bee6399c2883
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="properties-of-model-elements"></a>Propriétés des éléments de modèle
 Cette section répertorie les propriétés que vous voyez dans la fenêtre Propriétés lorsque vous sélectionnez un élément dans le schéma de définition DSL ou dans l’Explorateur de DSL.  

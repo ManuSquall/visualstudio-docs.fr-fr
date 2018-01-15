@@ -17,11 +17,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fedd512f4565009c8429b43b0d9d93de943d13fb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d35c448ad143facdcd783df0551505e440521b98
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="promiserace-function-promise"></a>Promise.race, fonction (Promise)
 Crée une promesse à résoudre ou rejeter avec la même valeur de résultat que la première promesse à résoudre ou rejeter parmi les arguments transmis.  
@@ -36,7 +36,7 @@ Promise.race(iterable)
  `iterable`  
  Obligatoire. Une ou plusieurs promesses.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si l'une des promesses dans `iterable` est déjà dans un état résolu ou rejeté, `Promise.race` retourne une promesse résolue ou rejetée de la même façon avec la valeur de résultat égale à la valeur utilisée pour résoudre (ou rejeter) cette promesse. Si plusieurs promesses dans `iterable` sont déjà résolues ou rejetées, `Promise.race` retourne une promesse résolue de la même façon que la première promesse itérée. Si aucune promesse dans iterable n'est résolue ni rejetée, la promesse retournée par `Promise.race` n'est pas non plus résolue ni rejetée.  
   
 ## <a name="example"></a>Exemple  
@@ -46,7 +46,7 @@ var p1 = new Promise(function(resolve, reject) {
     setTimeout(resolve, 0, 'success');  
 });  
 var p2 = new Promise(function(resolve, reject) { });  
-var p2 = new Promise(function(resolve, reject) { });  
+var p3 = new Promise(function(resolve, reject) { });  
   
 var race = Promise.race( [p1, p2, p3] );  
 race.then(function(result) {  
@@ -67,7 +67,7 @@ race.catch(function(result) {
   
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, diagram
-ms.assetid: 259836b0-783c-46a0-b7c7-dc4b2f7b4a81
-caps.latest.revision: "31"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 68d9f4fefb1a092b90431bce335d8abcba6b6bbb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1742e157b987cf7ce25eb60dfa44ce6dad64d84d
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Personnalisation de la présentation d'un diagramme
 Le diagramme est la zone de présentation principale d'un concepteur de langage spécifique à un domaine (DSL). Généralement, les utilisateurs recourent au diagramme pour construire leurs modèles. Vous pouvez personnaliser le diagramme comme décrit dans les rubriques suivantes.  

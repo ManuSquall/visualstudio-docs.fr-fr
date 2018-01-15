@@ -26,33 +26,33 @@ helpviewer_keywords:
 - dependency graphs
 - graph documents, exporting
 - code exploration, visualizing
-ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
-caps.latest.revision: "243"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
-Pour comprendre les dépendances présentes dans votre code, vous pouvez les visualiser en créant des cartes de code. Vous pouvez ainsi voir comment le code s’ajuste sans avoir à parcourir les fichiers et les lignes de code.  
-  
- ![Afficher les dépendances dans vos solutions](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
-  
- **Voici quelques vidéos**:  
-  
--   [Comprendre les dépendances existant dans votre code grâce à la virtualisation](http://go.microsoft.com/fwlink/?LinkID=252065)  
-  
--   [Visualisation de l’impact d’une modification](http://go.microsoft.com/fwlink/?LinkID=252068)  
-  
--   [Présentation du code complexe avec des cartes de code](http://go.microsoft.com/fwlink/?LinkID=259869)  
-  
-##  <a name="GetStarted"></a> Prise en main des cartes de code  
- **Pour utiliser des cartes de code, vous aurez besoin soit**:  
+
+Pour comprendre les dépendances présentes dans votre code, vous pouvez les visualiser en créant des cartes de code. Vous pouvez ainsi voir comment le code s’ajuste sans avoir à parcourir les fichiers et les lignes de code.
+
+![Afficher les dépendances dans vos solutions](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")
+
+**Voici quelques vidéos**:
+
+- [Comprendre les dépendances de votre code grâce à la virtualisation](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
+
+- [Visualiser l’impact d’une modification](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
+
+- [Présentation du code complexe avec des cartes de code](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
+
+## <a name="GetStarted"></a> Prise en main des cartes de code
+
+**Pour utiliser des cartes de code, vous aurez besoin soit**:
   
 -   Visual Studio Enterprise pour créer des cartes de code à partir de l’éditeur de code, l’Explorateur de solutions, l’affichage de classes ou l’Explorateur d’objets ;  
   
@@ -171,7 +171,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
 10. Pour simplifier une carte de solution complexe, vous pouvez aussi générer une nouvelle carte contenant une sélection d’éléments à partir d’une carte existante. Maintenez la touche **Ctrl** enfoncée tout en sélectionnant les éléments qui vous intéressent, ouvrez le menu contextuel, puis choisissez **Nouveau graphique à partir de la sélection**.  
   
-     ![Afficher les éléments sélectionnés dans une nouvelle carte de code](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+     ![Afficher les éléments sélectionnés dans une nouvelle carte de code](../modeling/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
 11. Le contexte est reporté sur la nouvelle carte. Masquer des dossiers de Solution et tout autre conteneur que vous ne souhaitez pas afficher à l’aide du **filtres** volet.  
   

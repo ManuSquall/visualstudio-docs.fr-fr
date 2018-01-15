@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: models, versions of Visual Studio
-ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
-caps.latest.revision: "20"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f42cccacee8b46b5bc3d637ad8f7153d704f8441
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1483fe7d62baf5d81865897308fb9d25947213c3
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lire des modèles et des diagrammes dans d'autres éditions de Visual Studio
 Quand vous ouvrez un modèle dans une version de Visual Studio qui ne prend pas en charge la création de modèle, le modèle s'ouvre en mode lecture seule. Dans ce mode, vous pouvez modifier la disposition des diagrammes, mais vous ne pouvez pas modifier le modèle.  
@@ -37,7 +35,7 @@ Quand vous ouvrez un modèle dans une version de Visual Studio qui ne prend pas 
 -   Les deux fichiers de diagrammes pour le diagramme que vous souhaitez lire, par exemple, **MyDiagram.classdiagram and MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Pour les diagrammes de dépendance, vous devez également avoir le fichier nommé *MyDiagram***. layerdiagram.suppressions**.  
+    >  Pour les diagrammes de dépendance, vous devez également avoir le fichier nommé * MyDiagram ***. layerdiagram.suppressions**.  
   
 -   Fichier de projet de modélisation (**MyModel.modelproj**)  
   

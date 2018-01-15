@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Propagation de modifications en dehors du modèle par des gestionnaires d'événements
 Dans Visualization and Modeling SDK, vous pouvez définir des gestionnaires d’événements de magasin pour propager les modifications apportées aux ressources en dehors de la banque, telles que les variables non-magasin, des fichiers de modèles dans d’autres magasins, ou d’autres [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensions. Gestionnaires d’événements de magasin sont exécutés après la fin de la transaction dans laquelle l’événement de déclenchement s’est produite. Elles sont également exécutées dans une opération d’annulation ou de restauration par progression. Par conséquent, contrairement aux règles de magasin, événements de la banque sont particulièrement utiles pour mettre à jour les valeurs qui sont en dehors de la banque. Contrairement aux événements de .NET, magasin de gestionnaires d’événements sont inscrits pour l’écoute à une classe : vous n’avez pas à inscrire un gestionnaire distinct pour chaque instance. Pour plus d’informations sur le choix entre les modes de gestion des modifications, consultez [réponse aux et propager les modifications](../modeling/responding-to-and-propagating-changes.md).  
@@ -38,7 +36,7 @@ Dans Visualization and Modeling SDK, vous pouvez définir des gestionnaires d’
   
     -   `ElementDeleted`-déclenché après un élément de modèle, relation, une forme ou connecteur a été supprimé. Vous pouvez toujours accéder les valeurs de propriété de l’élément, mais il n’aura aucuns relations à d’autres éléments.  
   
-2.  Ajoutez une définition de classe partielle pour *YourDsl***DocData** dans un fichier de code séparé dans le **DslPackage** projet.  
+2.  Ajoutez une définition de classe partielle pour *YourDsl *** DocData** dans un fichier de code séparé dans le **DslPackage** projet.  
   
 3.  Écrivez le code de l’événement comme une méthode, comme dans l’exemple suivant. Il peut être `static`, sauf si vous souhaitez accéder à `DocData`.  
   

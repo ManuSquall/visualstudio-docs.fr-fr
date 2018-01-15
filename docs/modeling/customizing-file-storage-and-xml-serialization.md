@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords: Domain-Specific Language, serialization
-ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
-caps.latest.revision: "17"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 850cb58f6763b521da9cdb1779b0960c0607ef88
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ca481ef5f0994b88cc1eafd37815c07977b007cf
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personnalisation du stockage de fichiers et de la sérialisation XML
 Lorsque l’utilisateur enregistre une instance, ou *modèle*, d’un langage spécifique à un domaine (DSL) dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], un fichier XML est créé ou mis à jour. Le fichier peut être rechargé pour recréer le modèle dans le magasin.  
@@ -139,7 +137,7 @@ Lorsque l’utilisateur enregistre une instance, ou *modèle*, d’un langage sp
   
 -   Définissez **est la clé de Moniker** pour une propriété de domaine d’une classe de domaine existant. Le type de la propriété doit être `string`.  
   
-    1.  Dans l’Explorateur DSL, développez **données Behavior\Class de sérialisation Xml\\***\<la classe de domaine >***\Element données**, puis sélectionnez le propriété de domaine.  
+    1.  Dans l’Explorateur DSL, développez **données Behavior\Class de sérialisation Xml\\***\<la classe de domaine >***\Element données**, puis sélectionnez la propriété de domaine.  
   
     2.  Dans la fenêtre Propriétés, définissez **est la clé de Moniker** à `true`.  
   

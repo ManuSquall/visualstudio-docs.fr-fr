@@ -17,11 +17,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 605ce6f221df959e553cbfde2f3439da06b474c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0bc83d29eb076b70be5c9192acdbe39e301a6f16
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Création d’un contrôle de boîte à outils WPF
 Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework) vous permet de créer des contrôles WPF sont automatiquement ajoutés à la **boîte à outils** lorsque l’extension est installée. Cette rubrique montre comment utiliser le modèle pour créer un **boîte à outils** contrôle que vous pouvez distribuer à d’autres utilisateurs.  
@@ -61,7 +61,7 @@ Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework)
   
 1.  Ouvrez MyToolboxControl.xaml.cs dans le mode code.  
   
-2.  Rechercher la classe MyToolboxControl et renommez-le TestControl. (La plus rapide pour ce faire consiste à renommer la classe, puis sélectionnez **renommer** dans le menu contextuel et effectuez les étapes. (Pour plus d’informations sur la **renommer** command, consultez [Renommer (refactorisation c#)](../csharp-ide/rename-refactoring-csharp.md).)  
+2.  Rechercher la classe MyToolboxControl et renommez-le TestControl. (La plus rapide pour ce faire consiste à renommer la classe, puis sélectionnez **renommer** dans le menu contextuel et effectuez les étapes. (Pour plus d’informations sur la **renommer** command, consultez [Renommer (refactorisation c#)](../ide/reference/rename-csharp.md).)
   
 3.  Accédez à la `ProvideToolboxControl` d’attribut et modifiez la valeur du premier paramètre à **Test**. Il s’agit du nom du groupe qui contient le contrôle dans le **boîte à outils**.  
   

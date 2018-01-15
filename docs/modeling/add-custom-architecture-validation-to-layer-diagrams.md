@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: dependency diagrams, adding custom validation
-ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
-caps.latest.revision: "42"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 130d53cb0e32add0251306c261cf456459f2192a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82d65618dd510c90fa2aea95b43727787e9e727b
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Ajouter la validation d’architecture personnalisée aux diagrammes de dépendance
 Dans Visual Studio, les utilisateurs peuvent valider le code source dans un projet sur un modèle de couche afin qu’ils peuvent également vérifier que le code source est conforme aux dépendances sur un diagramme de dépendances. Il existe un algorithme de validation standard, mais vous pouvez définir vos propres extensions de validation.  
@@ -59,7 +57,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
     > [!NOTE]
     >  Votre méthode est appelée uniquement dans des circonstances spécifiques et les points d’arrêt ne fonctionnent pas automatiquement. Pour plus d’informations, consultez [Débogage de la validation de couche](#debugging).  
   
-5.  Pour installer l’extension dans l’instance principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans **bin\\\***. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
+5.  Pour installer l’extension dans l’instance principale de Visual Studio ou sur un autre ordinateur, recherchez le **.vsix** fichier **bin\\\***. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Ajout d’un validateur de couche à une extension VSIX séparée  
  Si vous souhaitez créer une extension VSIX qui contient des validateurs de couche, des commandes et d’autres extensions, nous vous recommandons de créer un projet pour définir l’extension VSIX et des projets séparés pour les gestionnaires. 
@@ -116,7 +114,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
     > [!NOTE]
     >  Votre méthode est appelée uniquement dans des circonstances spécifiques et les points d’arrêt ne fonctionnent pas automatiquement. Pour plus d’informations, consultez [Débogage de la validation de couche](#debugging).  
   
-8.  Pour installer l’extension VSIX dans l’instance principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans le répertoire **bin** du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows. (Explorateur de fichiers dans Windows 8).  
+8.  Pour installer l’extension VSIX dans l’instance principale de Visual Studio ou sur un autre ordinateur, recherchez le **.vsix** de fichiers dans le **bin** répertoire du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows.
   
      Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
   
@@ -150,7 +148,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
   
  Quand l’utilisateur appelle la commande de menu **Valider l’architecture** , le système runtime de couche analyse les couches et leurs artefacts pour produire un graphique. Le graphique se compose de quatre parties :  
   
--   les modèles de couche de la solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] représentés sous forme de nœuds et de liens dans le graphique ;  
+-   Les modèles de couche de la solution Visual Studio qui sont représentées sous forme de nœuds et les liens dans le graphique.  
   
 -   le code, les éléments de projet et d’autres artefacts définis dans la solution et représentés sous forme de nœuds, ainsi que les liens représentant les dépendances découvertes par le processus d’analyse ;  
   
@@ -190,7 +188,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
  Les liens des couches vers les éléments dans le code ont la catégorie « Représente ».  
   
 ##  <a name="debugging"></a> Débogage de la validation  
- Pour déboguer votre extension de validation de couche, appuyez sur Ctrl+F5. Une instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] s’ouvre. Dans cette instance, ouvrez ou créez un modèle de couche. Ce modèle doit être associé au code et doit avoir au moins une dépendance.  
+ Pour déboguer votre extension de validation de couche, appuyez sur Ctrl+F5. Une instance expérimentale de Visual Studio s’ouvre. Dans cette instance, ouvrez ou créez un modèle de couche. Ce modèle doit être associé au code et doit avoir au moins une dépendance.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Tester avec une solution contenant des dépendances  
  La validation n’est exécutée que si les caractéristiques suivantes sont présentes :  
@@ -199,7 +197,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
   
 -   le modèle contient des couches associées aux éléments de code.  
   
- La première fois que vous démarrez une instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour tester votre extension de validation, ouvrez ou créez une solution présentant ces caractéristiques.  
+ La première fois que vous démarrez une instance expérimentale de Visual Studio pour tester votre extension de validation, ouvrez ou créez une solution présentant ces caractéristiques.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>Exécuter la commande Nettoyer la solution avant de valider l’architecture  
  Chaque fois que vous mettez à jour votre code de validation, utilisez la commande **Nettoyer la solution** du menu **Générer** de la solution expérimentale, et ce avant de tester la commande Valider. Cette opération est nécessaire, car les résultats de la validation sont mis en cache. Si vous n’avez pas mis à jour le diagramme de dépendances de test ou son code, il se peut que les méthodes de validation ne sont pas exécutées.  
@@ -207,9 +205,9 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
 ### <a name="launch-the-debugger-explicitly"></a>Lancer le débogueur explicitement  
  La validation s’exécute dans un processus séparé. Par conséquent, les points d’arrêt dans votre méthode de validation ne sont pas déclenchés. Vous devez attacher explicitement le débogueur au processus après le démarrage de la validation.  
   
- Pour attacher le débogueur au processus de validation, insérez un appel à `System.Diagnostics.Debugger.Launch()` au début de votre méthode de validation. Quand la boîte de dialogue de débogage s’affiche, sélectionnez l’instance principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Pour attacher le débogueur au processus de validation, insérez un appel à `System.Diagnostics.Debugger.Launch()` au début de votre méthode de validation. Lorsque la boîte de dialogue de débogage s’affiche, sélectionnez l’instance principale de Visual Studio.  
   
- Vous pouvez également insérer un appel à `System.Windows.Forms.MessageBox.Show()`. Quand la boîte de message s’affiche, accédez à l’instance principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et, dans le menu **Déboguer** , cliquez sur **Attacher au processus**. Sélectionnez le processus nommé **Graphcmd.exe**.  
+ Vous pouvez également insérer un appel à `System.Windows.Forms.MessageBox.Show()`. Lorsque la boîte de message s’affiche, accédez à l’instance principale de Visual Studio et sur le **déboguer** menu, cliquez sur **attacher au processus**. Sélectionnez le processus nommé **Graphcmd.exe**.  
   
  Démarrez toujours l’instance expérimentale en appuyant sur Ctrl+F5 (**Exécuter sans débogage**).  
   
