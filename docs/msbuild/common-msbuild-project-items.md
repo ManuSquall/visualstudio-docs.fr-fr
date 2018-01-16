@@ -19,14 +19,14 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 931ccda0fd42a01c9afe272ef985380bc3276e6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772134090da6db5152ad855c1c5620f9e267b29f
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
-Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tous les types de projets ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier microsoft.build.commontypes.xsd.  
+Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tous les types de projets ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier Microsoft.Build.CommonTypes.xsd.  
   
 ## <a name="common-items"></a>Éléments communs  
  Voici une liste de tous les éléments de projet communs.  
@@ -34,7 +34,7 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 ### <a name="reference"></a>Référence  
  Représente une référence (managée) d'assembly dans le projet.  
   
-|Nom d'élément|Description|  
+|Nom des métadonnées de l’élément|Description|  
 |---------------|-----------------|  
 |HintPath|Chaîne facultative. Chemin d’accès relatif ou absolu de l’assembly.|  
 |Name|Chaîne facultative. Nom complet de l'assembly, par exemple, « System.Windows.Forms ».|  
@@ -46,7 +46,7 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 ### <a name="comreference"></a>COMReference  
  Représente une référence de composant (non managé) COM dans le projet.  
   
-|Nom d'élément|Description|  
+|Nom des métadonnées de l’élément|Description|  
 |---------------|-----------------|  
 |Name|Chaîne facultative. Nom complet du composant.|  
 |GUID|Chaîne facultative. GUID du composant sous la forme {12345678-1234-1234-1234-1234567891234}.|  
@@ -59,14 +59,14 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 ### <a name="comfilereference"></a>COMFileReference  
  Représente une liste de bibliothèques de types qui alimente la cible ResolvedComreference.  
   
-|Nom d'élément|Description|  
+|Nom des métadonnées de l’élément|Description|  
 |---------------|-----------------|  
 |WrapperTool|Chaîne facultative. Nom de l'outil wrapper utilisé sur le composant, par exemple, « tlbimp ».|  
   
 ### <a name="nativereference"></a>NativeReference  
  Représente un fichier manifeste natif ou une référence à un fichier de ce type.  
   
-|Nom d'élément|Description|  
+|Nom des métadonnées de l’élément|Description|  
 |---------------|-----------------|  
 |Name|Chaîne requise. Nom de base du fichier manifeste.|  
 |HintPath|Chaîne requise. Chemin d’accès relatif du fichier manifeste.|  
@@ -74,7 +74,7 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 ### <a name="projectreference"></a>ProjectReference  
  Représente une référence à un autre projet.  
   
-|Nom d'élément|Description|  
+|Nom des métadonnées de l’élément|Description|  
 |---------------|-----------------|  
 |Name|Chaîne facultative. Nom complet de la référence.|  
 |Projet|Chaîne facultative. GUID de la référence sous la forme {12345678-1234-1234-1234-1234567891234}.|  
@@ -83,7 +83,7 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 ### <a name="compile"></a>Compile  
  Représente les fichiers sources du compilateur.  
   
-|Nom d'élément|Description|  
+|Nom des métadonnées de l’élément|Description|  
 |---------------|-----------------|  
 |DependentUpon|Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte.|  
 |AutoGen|Valeur booléenne facultative. Indique si le fichier a été généré pour le projet par l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
@@ -94,7 +94,7 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Représente les ressources à incorporer dans l'assembly généré.  
   
-|Nom d'élément|Description|  
+|Nom des métadonnées de l’élément|Description|  
 |---------------|-----------------|  
 |DependentUpon|Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte.|  
 |Générateur|Chaîne requise. Nom du générateur de fichier exécuté sur cet élément.|  
@@ -108,7 +108,7 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 ### <a name="content"></a>Contenu  
  Représente les fichiers qui ne sont pas compilés dans le projet, mais qui peuvent être incorporés ou publiés en même temps.  
   
-|Nom d'élément|Description|  
+|Nom des métadonnées de l’élément|Description|  
 |---------------|-----------------|  
 |DependentUpon|Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte.|  
 |Générateur|Chaîne requise. Nom du générateur de fichier qui s'exécute sur cet élément.|  
@@ -123,7 +123,7 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 ### <a name="none"></a>Aucun.  
  Représente les fichiers qui ne doivent avoir aucun rôle dans le processus de génération.  
   
-|Nom d'élément|Description|  
+|Nom des métadonnées de l’élément|Description|  
 |---------------|-----------------|  
 |DependentUpon|Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte.|  
 |Générateur|Chaîne requise. Nom du générateur de fichier exécuté sur cet élément.|  

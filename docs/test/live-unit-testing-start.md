@@ -11,11 +11,11 @@ helpviewer_keywords:
 author: rpetrusha
 ms.author: ronpet
 ms.workload: dotnet
-ms.openlocfilehash: b0d4726bc29ebbb6f90fde5e7817ec2fb596177c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9034fbbffee2b3883f15be0d724f00cafad8126a
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Bien démarrer avec Live Unit Testing dans Visual Studio
 
@@ -56,7 +56,7 @@ Maintenant que vous avez créé la solution, vous créez une bibliothèque de cl
 1. Dans la boîte de dialogue **Ajouter un nouveau projet**, sélectionnez le nœud C#, puis sélectionnez **.NET Standard**. 
 
    > [!NOTE]
-   > Comme notre bibliothèque cible .NET Standard au lieu d’une implémentation particulière de .NET, elle peut être appelée à partir de toute implémentation .NET qui prend en charge cette version de .NET Standard. Pour plus d'informations, consultez [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard).
+   > Comme notre bibliothèque cible .NET Standard au lieu d’une implémentation particulière de .NET, elle peut être appelée à partir de toute implémentation .NET qui prend en charge cette version de .NET Standard. Pour plus d'informations, consultez [.NET Standard](/dotnet/standard/net-standard).
 
 1. Sélectionnez le modèle **Bibliothèque de classes (.NET Standard)** dans le volet droit, puis entrez `StringLibrary` dans la zone de texte **Nom**, comme le montre l’illustration suivante :
 
@@ -84,7 +84,7 @@ Maintenant que vous avez créé la solution, vous créez une bibliothèque de cl
 1. Dans la boîte de dialogue **Ajouter un nouveau projet**, sélectionnez le nœud Visual Basic, puis sélectionnez **.NET Standard**. 
 
    > [!NOTE]
-   > Comme notre bibliothèque cible .NET Standard au lieu d’une implémentation particulière de .NET, elle peut être appelée à partir de toute implémentation .NET qui prend en charge cette version de .NET Standard. Pour plus d'informations, consultez [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard).
+   > Comme notre bibliothèque cible .NET Standard au lieu d’une implémentation particulière de .NET, elle peut être appelée à partir de toute implémentation .NET qui prend en charge cette version de .NET Standard. Pour plus d'informations, consultez [.NET Standard](/dotnet/standard/net-standard).
 
 1. Sélectionnez le modèle **Bibliothèque de classes (.NET Standard)** dans le volet droit, puis entrez `StringLibrary` dans la zone de texte **Nom**, comme le montre l’illustration suivante :
 
@@ -104,7 +104,7 @@ Maintenant que vous avez créé la solution, vous créez une bibliothèque de cl
      
       - `HasEmbeddedSpaces` retourne `true` si une chaîne contient un espace incorporé ; sinon, elle retourne `false`.
     
-1. Cliquez avec le bouton droit sur le projet StringLibrary dans **l’Explorateur de solutions**, puis sélectionnez **Propriétés**. Sous l’onglet **Application**, supprimez le texte dans la zone de texte **Espace de noms racine**, comme le montre l’illustration suivante. L’espace de noms racine est défini par [l’instruction Namespace](https://docs.microsoft.com/dotnet/visual-basic/language-reference/statements/namespace-statement) dans le code source.
+1. Cliquez avec le bouton droit sur le projet StringLibrary dans **l’Explorateur de solutions**, puis sélectionnez **Propriétés**. Sous l’onglet **Application**, supprimez le texte dans la zone de texte **Espace de noms racine**, comme le montre l’illustration suivante. L’espace de noms racine est défini par [l’instruction Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) dans le code source.
 
    ![Boîte de dialogue Propriétés du projet pour un projet Visual Basic](./media/lut-start/vb-properties.png)
  
@@ -205,7 +205,7 @@ Jusqu’ici, bien que vous ayez écrit les tests pour la bibliothèque de classe
  
 1. Visual Studio démarre Live Unit Test, qui exécute automatiquement tous vos tests. 
  
-Quand il a terminé l’exécution de vos tests, **l’Explorateur de tests** affiche les résultats globaux et les résultats des tests individuels. En outre, la fenêtre de code affiche graphiquement la couverture de votre code de test et le résultat de vos tests. Comme le montre l’illustration suivante, les trois tests ont été exécutés avec succès. Elle montre également que nos tests ont couvert tous les chemins de code de la méthode `StartsWithUpper`, et que ces tests ont tous été exécutés avec succès (ce qui est indiqué par la coche verte, « ✓ »). Pour finir, elle montre qu’aucune des autres méthodes de `StringLibrary` n’ont une couverture du code (ce qui est indiquée par une ligne bleue, ""). 
+Quand il a terminé l’exécution de vos tests, **l’Explorateur de tests** affiche les résultats globaux et les résultats des tests individuels. En outre, la fenêtre de code affiche graphiquement la couverture de votre code de test et le résultat de vos tests. Comme le montre l’illustration suivante, les trois tests ont été exécutés avec succès. Elle montre également que nos tests ont couvert tous les chemins de code de la méthode `StartsWithUpper`, et que ces tests ont tous été exécutés avec succès (ce qui est indiqué par la coche verte, « ✓ »). Enfin, elle montre qu’aucune des autres méthodes de `StringLibrary` n’a une couverture du code (indiquée par une ligne bleue, «  »). 
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 ![L’Explorateur de tests et la fenêtre de code après le démarrage de Live Unit Testing](media/lut-start/lut-results-cs.png) 
@@ -250,7 +250,7 @@ Pour étendre la couverture du code à la méthode `StartsWithLower`, procédez 
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
 
-1. Modifiez la méthode `DirectCallWithNullOrEmpty` en ajoutant le code suivant immédiatement après l’appel à la méthode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse).
+1. Modifiez la méthode `DirectCallWithNullOrEmpty` en ajoutant le code suivant immédiatement après l’appel à la méthode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse).
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#2)]
 
@@ -267,7 +267,7 @@ Pour étendre la couverture du code à la méthode `StartsWithLower`, procédez 
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
 
-1. Modifiez la méthode `DirectCallWithNullOrEmpty` en ajoutant le code suivant immédiatement après l’appel à la méthode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse).
+1. Modifiez la méthode `DirectCallWithNullOrEmpty` en ajoutant le code suivant immédiatement après l’appel à la méthode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse).
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#2)]
 
@@ -308,7 +308,7 @@ Dans cette section, vous découvrez comment vous pouvez utiliser Live Unit Testi
     
 1. Sélectionnez **Déboguer le test sélectionné** pour déboguer le test qui a échoué. 
  
-1. Visual Studio exécute le test en mode débogage. Notre test affecte chaque chaîne dans un tableau à une variable nommée `phrase` et la passe à la méthode `HasEmbeddedSpaces`. L’exécution du programme s’interrompt et appelle le débogueur la première fois que l’expression d’assertion est `false`. La boîte de dialogue d’exception résultant de la valeur inattendue dans l’appel de méthode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) est montrée dans la figure suivante.  
+1. Visual Studio exécute le test en mode débogage. Notre test affecte chaque chaîne dans un tableau à une variable nommée `phrase` et la passe à la méthode `HasEmbeddedSpaces`. L’exécution du programme s’interrompt et appelle le débogueur la première fois que l’expression d’assertion est `false`. La boîte de dialogue d’exception résultant de la valeur inattendue dans l’appel de méthode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) est montrée dans la figure suivante.  
 
    ![Boîte de dialogue d’exception de Live Unit Testing.](media/lut-start/exception-dialog-cs.png) 
  
@@ -341,7 +341,7 @@ Dans cette section, vous découvrez comment vous pouvez utiliser Live Unit Testi
     
 1. Sélectionnez **Déboguer le test sélectionné** pour déboguer le test qui a échoué. 
  
-1. Visual Studio exécute le test en mode débogage. Notre test affecte chaque chaîne dans un tableau à une variable nommée `phrase` et la passe à la méthode `HasEmbeddedSpaces`. L’exécution du programme s’interrompt et appelle le débogueur la première fois que l’expression d’assertion est `false`. La boîte de dialogue d’exception résultant de la valeur inattendue dans l’appel de méthode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) est montrée dans la figure suivante.  
+1. Visual Studio exécute le test en mode débogage. Notre test affecte chaque chaîne dans un tableau à une variable nommée `phrase` et la passe à la méthode `HasEmbeddedSpaces`. L’exécution du programme s’interrompt et appelle le débogueur la première fois que l’expression d’assertion est `false`. La boîte de dialogue d’exception résultant de la valeur inattendue dans l’appel de méthode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) est montrée dans la figure suivante.  
 
    ![Boîte de dialogue d’exception de Live Unit Testing.](media/lut-start/exception-dialog-vb.png) 
  

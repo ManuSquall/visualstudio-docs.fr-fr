@@ -1,7 +1,7 @@
 ---
-title: "Guide pratique pour résoudre les problèmes de modèles dans Visual Studio | Microsoft Docs"
+title: "Résoudre les problèmes liés au chargement des modèles de projet et d’élément Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -11,60 +11,64 @@ helpviewer_keywords: templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1d78554f39be1fdf21c5bbcb4d0abf5cf691fce9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ba6d9a73cd45a0e497fb2ecc0f4b4697071e3b37
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Guide pratique pour résoudre les problèmes de modèles
 
 Si le chargement d’un modèle dans l’environnement de développement échoue, il existe plusieurs façons de procéder pour localiser le problème.
 
-## <a name="validating-the-vstemplate-file"></a>Validation du fichier .vstemplate
+## <a name="validate-the-vstemplate-file"></a>Valider le fichier .vstemplate
 
-Si le fichier .vstemplate d’un modèle n’adhère pas au schéma de modèle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il se peut que le modèle n’apparaisse pas dans la boîte de dialogue **Nouveau projet**.
+Si le fichier .vstemplate d’un modèle n’adhère pas au schéma de modèle Visual Studio, il se peut que le modèle n’apparaisse pas dans la boîte de dialogue **Nouveau projet**.
 
 ### <a name="to-validate-the-vstemplate-file"></a>Pour valider le fichier .vstemplate
 
-1.  Localisez le fichier .zip qui contient le modèle.  
+1. Localisez le fichier .zip qui contient le modèle.
 
-2.  Extrayez le fichier zip.  
+1. Extrayez le fichier zip.
 
-3.  Dans le menu **Fichier**, de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], cliquez sur **Ouvrir**, puis sur **Fichier**.
+1. Dans le menu **Fichier** de Visual Studio, choisissez **Ouvrir** > **Fichier**.
 
-4.  Sélectionnez le fichier .vstemplate du modèle, puis cliquez sur **Ouvrir**.  
-  
-5.  Vérifiez que le code XML du fichier .vstemplate adhère au schéma de modèle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Pour plus d’informations sur le schéma .vstemplate, consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
+1. Sélectionnez le fichier .vstemplate du modèle, puis choisissez **Ouvrir**.
+
+1. Vérifiez que le code XML du fichier .vstemplate adhère au schéma du modèle. Pour plus d’informations sur le schéma .vstemplate, consultez [Informations de référence sur les schémas de modèles](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
     > Pour obtenir une prise en charge d’IntelliSense quand vous créez le fichier .vstemplate, ajoutez un attribut `xmlns` à l’élément `VSTemplate` et attribuez-lui la valeur http://schemas.microsoft.com/developer/vstemplate/2005.
 
-6.  Enregistrez et fermez le fichier .vstemplate.   
-  
-7.  Sélectionnez les fichiers inclus dans votre modèle, cliquez avec le bouton droit, sélectionnez **Envoyer vers**, puis cliquez sur **Dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier .zip.  
-  
-8.  Placez le nouveau fichier .zip dans le même répertoire que l’ancien fichier .zip.  
-  
-9. Supprimez les fichiers de modèles extraits et l'ancien fichier .zip du modèle.
+1. Enregistrez et fermez le fichier .vstemplate. 
 
-## <a name="monitoring-the-event-log"></a>Analyse du journal des événements
+1. Sélectionnez les fichiers inclus dans votre modèle, cliquez avec le bouton droit, puis choisissez **Envoyer vers** > **Dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier .zip.
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] journalise les erreurs rencontrées lors du traitement des fichiers .zip du modèle. Si un modèle n’apparaît pas dans la boîte de dialogue **Nouveau projet** comme prévu, vous pouvez utiliser l’**observateur d’événements** pour résoudre le problème.
+1. Placez le nouveau fichier .zip dans le même répertoire que l’ancien fichier .zip.
+
+1. Supprimez les fichiers de modèles extraits et l'ancien fichier .zip du modèle.
+
+## <a name="monitor-the-event-log"></a>Surveiller le journal des événements
+
+Visual Studio journalise les erreurs rencontrées lors du traitement des fichiers .zip du modèle. Si un modèle n’apparaît pas dans la boîte de dialogue **Nouveau projet** comme prévu, vous pouvez utiliser l’**observateur d’événements** pour résoudre le problème.
 
 ### <a name="to-locate-template-errors-in-event-viewer"></a>Pour localiser des erreurs de modèle dans l’observateur d’événements
 
-1.  Dans Windows, cliquez sur **Démarrer**, sur **Panneau de configuration**, et double-cliquez sur **Outils d’administration**, puis sur **Observateur d’événements**.  
-  
-2.  Dans le volet gauche, cliquez sur **Application**.  
-  
-3.  Recherchez les événements dont la **Source** a la valeur `Visual Studio - VsTemplate`.  
-  
-4.  Double-cliquez sur un événement de modèle pour afficher l’erreur.
+1. Dans Windows, à partir du menu **Démarrer**, choisissez **Outils d’administration Windows** > **Observateur d’événements**.
+
+1. Dans le volet gauche, choisissez **Journaux Windows** > **Application**.
+
+1. Recherchez les événements dont la **Source** a la valeur `Visual Studio - VsTemplate`.
+
+1. Pour afficher une erreur, double-cliquez sur un événement de modèle.
+
+## <a name="enable-diagnostic-logging"></a>Activer la journalisation des diagnostics
+
+Vous pouvez activer la journalisation des diagnostics pour la découverte de modèles en suivant les étapes indiquées dans [Résolution des problèmes de découverte de modèles (extensibilité)](../extensibility/troubleshooting-template-discovery.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Personnalisation des modèles](../ide/customizing-project-and-item-templates.md)   
-[Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
-[Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+[Résolution des problèmes de découverte de modèles (extensibilité)](../extensibility/troubleshooting-template-discovery.md)  
+[Personnalisation des modèles](../ide/customizing-project-and-item-templates.md)  
+[Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)  
+[Informations de référence sur les schémas de modèles](../extensibility/visual-studio-template-schema-reference.md)

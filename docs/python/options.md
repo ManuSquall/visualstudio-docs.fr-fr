@@ -1,7 +1,7 @@
 ---
 title: Options pour Python dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -19,11 +19,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6776eee4436e54ca1b0215b307eeb5fa098802c3
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Options pour Python dans Visual Studio
 
@@ -40,6 +40,8 @@ Les options spécifiques sont décrites dans les sections suivantes :
 - [Options des diagnostics](#diagnostics-options)
 - [Options des fenêtres interactives](#interactive-windows-options)
 - [Options avancées de l’éditeur Python](#advanced-python-editor-options)
+
+Notez que le groupe **expérimental** contient des options pour des fonctionnalités encore en cours de développement qui ne sont pas décrites ici. Celles-ci sont souvent décrites dans les posts du [blog sur l’ingénierie Python chez Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="general-options"></a>Options générales
 
@@ -69,7 +71,6 @@ Les options spécifiques sont décrites dans les sections suivantes :
 | Activer le débogage de la bibliothèque Python standard | Off | Permet d’effectuer un pas à pas détaillé dans le code source de la bibliothèque standard pendant le débogage, mais augmente le temps nécessaire au démarrage du débogueur.|
 
 ![Boîte de dialogue Options pour Python, onglet Débogage](media/options-debugging.png)
-
 
 ## <a name="diagnostics-options"></a>Options des diagnostics
 

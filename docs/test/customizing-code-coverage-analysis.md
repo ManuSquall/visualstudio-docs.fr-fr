@@ -7,21 +7,21 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
-caps.latest.revision: "16"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bbac737c6f5bbb3dbe99b0ceae2eb648bcf4295
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e0a27e78735b85417a62d99e4f9b5d101a7a177d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
-# <a name="customizing-code-coverage-analysis"></a>Personnalisation de l'analyse de couverture du code
+# <a name="customizing-code-coverage-analysis"></a>Personnalisation de l’analyse de la couverture du code
+
 Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous les assemblys de la solution (.exe/.dll) chargés pendant les tests unitaires. Nous vous recommandons de conserver ce paramètre par défaut, car il est généralement efficace. Pour plus d’informations, consultez [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- Avant de personnaliser le comportement de la couverture du code, vérifiez les autres possibilités :  
+Avant de personnaliser le comportement de la couverture du code, vérifiez les autres possibilités :  
   
 -   *Je souhaite exclure le code de test des résultats de la couverture du code et inclure uniquement le code d’application.*  
   
@@ -31,10 +31,11 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
   
      Obtenez les fichiers .pdb de ces assemblys et copiez-les dans le même dossier que les fichiers .dll de l’assembly.  
   
- Pour personnaliser le comportement de couverture du code, copiez [l’exemple indiqué à la fin de cette rubrique](#sample) et ajoutez-le à votre solution à l’aide de l’extension de fichier .runsettings. Modifiez-le selon vos besoins, puis, dans le menu **Test**, choisissez **Paramètres de test**, **Sélectionner le fichier de paramètres des tests**. La suite de cette rubrique décrit cette procédure plus en détail.  
+Pour personnaliser le comportement de couverture du code, copiez [l’exemple indiqué à la fin de cette rubrique](#sample) et ajoutez-le à votre solution à l’aide de l’extension de fichier .runsettings. Modifiez-le selon vos besoins, puis, dans le menu **Test**, choisissez **Paramètres de test**, **Sélectionner le fichier de paramètres des tests**. La suite de cette rubrique décrit cette procédure plus en détail.  
   
-## <a name="the-runsettings-file"></a>Le fichier .runsettings  
- Les fonctionnalités avancées de couverture du code sont spécifiées dans un fichier .runsettings. Il s’agit du fichier de configuration utilisé par les outils de test unitaire. Nous vous recommandons de copier l’[exemple indiqué à la fin de cette rubrique](#sample) et de le modifier selon vos besoins.  
+## <a name="the-runsettings-file"></a>Le fichier .runsettings
+
+Les fonctionnalités avancées de couverture du code sont spécifiées dans un fichier .runsettings. Il s’agit du fichier de configuration utilisé par les outils de test unitaire. Nous vous recommandons de copier l’[exemple indiqué à la fin de cette rubrique](#sample) et de le modifier selon vos besoins.  
   
 -   *Qu’en est-il du fichier .testsettings que j’utilisais dans Visual Studio 2010 ?*  
   
@@ -58,8 +59,9 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
   
  D'autres aspects des tests unitaires peuvent être configurés dans le même fichier .runsettings. Pour plus d’informations, consultez [Tests unitaires sur votre code](../test/unit-test-your-code.md).  
   
-### <a name="specifying-symbol-search-paths"></a>Spécification des chemins de recherche de symboles  
- La couverture du code requiert que des symboles (.pdb) pour les assemblys soient présents. Pour les assemblys générés par votre solution, les fichiers de symboles sont généralement présents à côté des fichiers binaires, et la couverture du code s'exécute automatiquement. Mais, dans certains cas, vous pouvez inclure les assemblys référencés dans votre analyse de couverture du code. Dans ce cas, les fichiers .pdb peuvent ne pas être adjacents aux fichiers binaires, mais vous pouvez spécifier le chemin de recherche de symboles dans le fichier .runsettings.  
+### <a name="specifying-symbol-search-paths"></a>Spécification des chemins de recherche de symboles
+
+La couverture du code requiert que des symboles (.pdb) pour les assemblys soient présents. Pour les assemblys générés par votre solution, les fichiers de symboles sont généralement présents à côté des fichiers binaires, et la couverture du code s'exécute automatiquement. Mais, dans certains cas, vous pouvez inclure les assemblys référencés dans votre analyse de couverture du code. Dans ce cas, les fichiers .pdb peuvent ne pas être adjacents aux fichiers binaires, mais vous pouvez spécifier le chemin de recherche de symboles dans le fichier .runsettings.  
   
 ```xml  
 <SymbolSearchPaths>                
@@ -72,8 +74,9 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 > [!WARNING]
 >  La résolution de symboles peut prendre du temps, surtout lorsque vous utilisez un emplacement de fichier distant avec de nombreux assemblys. Par conséquent, envisagez de copier les fichiers distants .pdb au même emplacement local que les fichiers binaires (.dll et .exe).  
   
-### <a name="excluding-and-including"></a>Exclusion et inclusion  
- Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Exemple :  
+### <a name="excluding-and-including"></a>Exclusion et inclusion
+
+Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Exemple :  
   
 ```minterastlib  
 <ModulePaths>  
@@ -99,8 +102,9 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
   
  `Include` est traité avant `Exclude`.  
   
-### <a name="regular-expressions"></a>Expressions régulières  
- Les nœuds inclure et exclure utilisent des expressions régulières. Pour plus d’informations, consultez [Utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Les expressions régulières ne sont pas l'équivalent des caractères génériques. En particulier :  
+### <a name="regular-expressions"></a>Expressions régulières
+
+Les nœuds inclure et exclure utilisent des expressions régulières. Pour plus d’informations, consultez [Utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Les expressions régulières ne sont pas l'équivalent des caractères génériques. En particulier :  
   
 1.   **\*** correspond à une chaîne de n’importe quels caractères  
   
@@ -178,43 +182,47 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
   
 ## <a name="how-to-specify-runsettings-files-while-running-tests"></a>Procédure : Spécifier les fichiers .runsettings pendant l'exécution des tests  
   
-### <a name="to-customize-runsettings-in-visual-studio-tests"></a>Pour personnaliser un fichier .runsettings dans les tests de Visual Studio  
- Choisissez **Test**, **Paramètres de test**, **Sélectionner le fichier de paramètres des tests** et sélectionnez le fichier .runsettings. Le fichier apparaît dans le menu Paramètres de test. Vous pouvez le sélectionner ou l'annuler. Tant qu’il est sélectionné, votre fichier .runsettings s’applique lorsque vous utilisez **Analyser la couverture du code**.  
-  
-### <a name="to-customize-run-settings-in-a-command-line-test"></a>Pour personnaliser les paramètres d'exécution d'un test en ligne de commande  
- Pour exécuter des tests à partir de la ligne de commande, utilisez vstest.console.exe. Le fichier de paramètres est un paramètre de cet utilitaire. Pour plus d’informations, consultez [Utilisation de VSTest.console à partir de la ligne de commande](/devops-test-docs/test/using-vstest-console-from-the-command-line).  
-  
-1.  Lancez l'invite de commandes développeur Visual Studio :  
-  
-     Dans Windows, choisissez **Démarrer**, **Tous les programmes**, **Microsoft Visual Studio**, **Visual Studio Tools**, **Invite de commandes développeur**.  
-  
-2.  Exécutez :  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
-  
-### <a name="to-customize-run-settings-in-a-build-definition"></a>Pour personnaliser des paramètres d'exécution dans une définition de build  
- Vous pouvez obtenir des données de couverture du code depuis une build d’équipe.  
-  
- ![Spécification des paramètres d’exécution dans une définition de build](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
-  
+### <a name="to-customize-runsettings-in-visual-studio-tests"></a>Pour personnaliser un fichier .runsettings dans les tests de Visual Studio
+
+Choisissez **Test** > **Paramètres de test** > **Sélectionner le fichier de paramètres des tests** et sélectionnez le fichier .runsettings. Le fichier apparaît dans le menu Paramètres de test. Vous pouvez le sélectionner ou l'annuler. Tant qu’il est sélectionné, votre fichier .runsettings s’applique lorsque vous utilisez **Analyser la couverture du code**.
+
+### <a name="to-customize-run-settings-in-a-command-line-test"></a>Pour personnaliser les paramètres d'exécution d'un test en ligne de commande
+
+Pour exécuter des tests à partir de la ligne de commande, utilisez vstest.console.exe. Le fichier de paramètres est un paramètre de cet utilitaire.
+
+1.  Lancez l'invite de commandes développeur Visual Studio :
+
+    Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2017** > **Invite de commandes développeur pour VS 2017**.
+
+2.  Exécutez la commande suivante :
+
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
+
+### <a name="to-customize-run-settings-in-a-build-definition"></a>Pour personnaliser des paramètres d'exécution dans une définition de build
+
+Vous pouvez obtenir des données de couverture du code depuis une build d’équipe.
+
+![Spécification des paramètres d’exécution dans une définition de build](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
+
 1.  Assurez-vous que votre fichier .runsettings est archivé.  
   
 2.  Dans Team Explorer, ouvrez **Builds**, puis ajoutez ou modifiez une définition de build.  
   
-3.  Dans la page **Processus**, développez **Tests automatisés**, **Source de test**, **Paramètres d’exécution**. Sélectionnez votre fichier **.runsettings**.  
+3.  Dans la page **Processus**, développez **Tests automatisés** > **Source de test** > **Paramètres d’exécution**. Sélectionnez votre fichier **.runsettings**.
   
     -   ***Assembly de test** apparaît à la place de **Source de test**. Lorsque j’essaie de définir le champ **Paramètres d’exécution**, je ne peux sélectionner que des fichiers .testsettings.*  
   
          Sous **Tests automatisés**, sélectionnez **Assembly de test**, puis choisissez **[…]** à la fin de la ligne. Dans la boîte de dialogue **Ajouter/Modifier une série de tests**, définissez **Test Runner** sur **Visual Studio Test Runner**.  
   
- Les résultats sont visibles dans la section de résumé du rapport de build.  
+Les résultats sont visibles dans la section de résumé du rapport de build.
   
-##  <a name="sample"></a> Exemple de fichier runsettings  
- Copiez ce code et modifiez-le selon vos besoins. Il s'agit du fichier .runsettings par défaut.  
-  
- (Pour connaître d’autres utilisations du fichier .runsettings, consultez [Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)  
-  
-```xml  
+##  <a name="sample"></a> Exemple de fichier runsettings
+
+Copiez ce code et modifiez-le selon vos besoins. Il s'agit du fichier .runsettings par défaut.
+
+(Pour connaître d’autres utilisations du fichier .runsettings, consultez [Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <!-- File name extension must be .runsettings -->  
 <RunSettings>  
@@ -322,10 +330,10 @@ Included items must then not match any entries in the exclude list to remain inc
       </DataCollector>  
     </DataCollectors>  
   </DataCollectionRunSettings>  
-</RunSettings>  
-  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
- [Tests unitaires sur votre code](../test/unit-test-your-code.md)
+</RunSettings>
+```
+
+## <a name="see-also"></a>Voir aussi
+
+[Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)  
+[Tests unitaires sur votre code](../test/unit-test-your-code.md)

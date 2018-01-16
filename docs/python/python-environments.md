@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: bd871b1e78878c8ae05cb69e1ac97d50197a18b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4f190d02850f1effc9e1597d14fecf323de68356
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-environments"></a>Environnements Python
 
@@ -53,7 +53,7 @@ Pour une présentation vidéo, regardez [Gestion des environnements Python](http
 | Interpréteur | Description |
 | --- | --- |
 | [CPython](https://www.python.org/) | Interpréteur « natif » et le plus couramment utilisé, disponible en versions 32 bits et 64 bits (version 32 bits recommandée). Il inclut les dernières fonctionnalités du langage, une compatibilité des packages Python maximale, la prise en charge complète du débogage et l’interopérabilité avec [IPython](http://ipython.org/). Consultez aussi : [Should I use Python 2 or Python 3 ?](http://wiki.python.org/moin/Python2orPython3). Notez que Visual Studio 2015 et antérieur ne prend pas en charge Python 3.6, et peut provoquer l’erreur « Python version 3.6 n’est pas pris en charge ». Utilisez à la place Python 3.5 ou antérieur. |
-| [IronPython](https://github.com/IronLanguages/main) | Implémentation .NET de Python, disponible en versions 32 bits et 64 bits, fournissant une interopérabilité C#/F#/Visual Basic, un accès aux API .NET, le débogage Python standard (mais pas le débogage en mode mixte C++) et le débogage mixte IronPython/C#. Toutefois, IronPython, ne prend pas en charge les environnements virtuels. | 
+| [IronPython](https://github.com/IronLanguages/ironpython2) | Implémentation .NET de Python, disponible en versions 32 bits et 64 bits, fournissant une interopérabilité C#/F#/Visual Basic, un accès aux API .NET, le débogage Python standard (mais pas le débogage en mode mixte C++) et le débogage mixte IronPython/C#. Toutefois, IronPython, ne prend pas en charge les environnements virtuels. |
 | [Anaconda](https://www.continuum.io) | Une plateforme de science des données ouverte alimentée par Python, qui inclut la dernière version de CPython et la plupart des packages difficiles à installer. Nous vous la recommandons si vous ne pouvez pas décider autrement. |
 | [PyPy](http://www.pypy.org/) | Une implémentation JIT de suivi hautes performances de Python qui convient aux programmes longs et aux situations dans lesquelles vous identifiez des problèmes de performances, mais que vous ne trouvez pas d’autres solutions. Fonctionne avec Visual Studio, mais avec une prise en charge limitée des fonctionnalités de débogage avancées. |
 | [Jython](http://www.jython.org/) | Une implémentation de Python sur la Machine virtuelle Java (JVM). Similaire à IronPython, le code s’exécutant dans Jython peut interagir avec les bibliothèques et les classes Java, mais n’est peut-être pas en mesure d’utiliser de nombreuses bibliothèques destinées à CPython. Fonctionne avec Visual Studio, mais avec une prise en charge limitée des fonctionnalités de débogage avancées. |
@@ -73,7 +73,7 @@ Dans les deux cas, la fenêtre Environnements Python s’affiche en tant qu’on
 
 ![Fenêtre Environnements Python](media/environments-default-view.png)
 
-L’exemple ci-dessus indique que Python 3.4 (CPython 32 bits) est installé avec les versions 32 bits et 64 bits d’IronPython 2.7. Dans ce cas, l’environnement par défaut en gras est Python 3.4, qui est utilisé pour tous les nouveaux projets. Si aucun environnement n’est répertorié, cela signifie que vous avez installé Python Tools pour Visual Studio dans Visual Studio 2015 ou version antérieure, mais que vous n’avez pas installé d’interpréteur Python (consultez la section [Sélection et installation des interpréteurs Python](#selecting-and-installing-python-interpreters) ci-dessus). 
+L’exemple ci-dessus indique que Python 3.4 (CPython 32 bits) est installé avec les versions 32 bits et 64 bits d’IronPython 2.7. Dans ce cas, l’environnement par défaut en gras est Python 3.4, qui est utilisé pour tous les nouveaux projets. Si aucun environnement n’est répertorié, cela signifie que vous avez installé Python Tools pour Visual Studio dans Visual Studio 2015 ou version antérieure, mais que vous n’avez pas installé d’interpréteur Python (consultez la section [Sélection et installation des interpréteurs Python](#selecting-and-installing-python-interpreters) ci-dessus).
 
 > [!Tip]
 > Quand la fenêtre **Environnements Python** est étroite, comme illustré ci-dessus, les environnements apparaissent en haut et les différents onglets en bas. Si vous développez la fenêtre suffisamment, toutefois, vous avez un affichage plus large que vous pouvez trouver plus pratique à utiliser.
@@ -161,7 +161,7 @@ Dans le dernier cas, étant donné que l’environnement se trouve dans une zone
 
 **Élever les privilèges maintenant** accorde des privilèges d’administrateur à pip pour une seule opération, pouvant aussi faire l’objet d’une demande d’autorisations du système d’exploitation. En sélectionnant **Continuer sans privilège d’administrateur**, une tentative d’installation du package est effectuée, mais pip échoue en essayant de créer des dossiers avec une sortie telle que « Erreur. Impossible de créer 'C:\Program Files\Anaconda3\Lib\site-packages\png.py' : Autorisation refusée. ».
 
-En sélectionnant **Toujours élever les privilèges pour l’installation et la suppression des packages**, vous empêchez la boîte de dialogue de s’afficher pour l’environnement en question. Pour que la boîte de dialogue s’affiche à nouveau, accédez à **Outils > Options > Python Tools > Général** et sélectionnez le bouton **Réinitialiser toutes les boîtes de dialogue masquées définitivement**. 
+En sélectionnant **Toujours élever les privilèges pour l’installation et la suppression des packages**, vous empêchez la boîte de dialogue de s’afficher pour l’environnement en question. Pour que la boîte de dialogue s’affiche à nouveau, accédez à **Outils > Options > Python Tools > Général** et sélectionnez le bouton **Réinitialiser toutes les boîtes de dialogue masquées définitivement**.
 
 Dans ce même onglet d’options, vous pouvez également sélectionner **Toujours exécuter pip comme administrateur** pour supprimer la boîte de dialogue pour tous les environnements. Consultez [Options - Onglet Général](options.md#general-options).
 
@@ -247,13 +247,13 @@ Techniquement, tout filename peut être utilisé pour suivre les spécifications
 
     ![Options de mise à jour pour requirements.txt](media/environments-requirements-txt-replace.png)
 
-    - **Replace entire file** (Remplacer l’intégralité du fichier) supprime tous les éléments, commentaires et options qui existent.
-    - **Actualiser les entrées existantes** détecte les spécifications du package et met à jour les spécificateurs de version pour qu’ils correspondent à la version actuellement installée.
-    - **Update and add entries** (Mettre à jour et ajouter des entrées) actualise les spécifications trouvées et ajoute tous les autres packages à la fin du fichier.
+  - **Replace entire file** (Remplacer l’intégralité du fichier) supprime tous les éléments, commentaires et options qui existent.
+  - **Actualiser les entrées existantes** détecte les spécifications du package et met à jour les spécificateurs de version pour qu’ils correspondent à la version actuellement installée.
+  - **Update and add entries** (Mettre à jour et ajouter des entrées) actualise les spécifications trouvées et ajoute tous les autres packages à la fin du fichier.
 
 Les fichiers `requirements.txt` étant destinés à figer les spécifications de votre projet, tous les packages installés sont écrits avec les versions précises. L’utilisation de versions précises vous assure une reproduction simple de votre environnement sur un autre ordinateur. Les packages sont inclus même s’ils ont été installés avec une plage de versions, en tant que dépendance d’un autre package, ou avec un programme d’installation autre que pip.
 
-Si un fichier ` requirements.txt` existe quand vous ajoutez un nouvel environnement virtuel, la boîte de dialogue **Ajouter un environnement virtuel** affiche une option pour installer les packages automatiquement, ce qui vous permet de recréer facilement un environnement sur un autre ordinateur :
+Si un fichier `requirements.txt` existe quand vous ajoutez un nouvel environnement virtuel, la boîte de dialogue **Ajouter un environnement virtuel** affiche une option pour installer les packages automatiquement, ce qui vous permet de recréer facilement un environnement sur un autre ordinateur :
 
 ![Créer un environnement virtuel avec requirements.txt](media/environments-requirements-txt.png)
 

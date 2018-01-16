@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 9770a484c6949695641234a96d8b5a6cdb3c645b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71ab9d5c58ebb76ad158b9f9e66b35b4732c1d4e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debugging-your-python-code"></a>Débogage de votre code Python
 
@@ -31,7 +31,7 @@ Dans cette rubrique :
 
 - [Bases du débogage](#basic-debugging)
 - [Options de débogage d’un projet](#project-debugging-options)
-- [Fenêtre de débogage interactive](#the-debug-interactive-window)
+- [Fenêtres Exécution et interactives](#immediate-and-interactive-windows)
 
 Consultez également les articles ci-après concernant le débogage propre à un scénario :
 
@@ -163,6 +163,7 @@ Par défaut, le débogueur démarre votre programme avec le lanceur Python stand
 | Environment Variables | Dans cette zone de texte multiligne, ajoutez des entrées sous la forme `NAME=VALUE`. Comme ce paramètre est appliqué en dernier, au-dessus de toutes les variables d’environnement globales existantes et après la définition de l’élément `PYTHONPATH` en fonction du paramètre Chemins de recherche, vous pouvez l’utiliser pour remplacer manuellement ces autres variables. |
 
 <a name="the-debug-interactive-window"</a>
+
 ## <a name="immediate-and-interactive-windows"></a>Fenêtre Exécution et fenêtre interactive
 
 Dans le cadre d’une session de débogage, vous pouvez utiliser deux fenêtres interactives : la fenêtre Exécution Visual Studio standard et la fenêtre de débogage Python interactive.

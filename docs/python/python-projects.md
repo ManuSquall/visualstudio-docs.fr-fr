@@ -13,15 +13,15 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6fe63cd9258c5baf9509bb68d4258e839ebe75f0
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-projects"></a>Projets Python
 
-Les applications Python sont généralement définies à l’aide de fichiers et de dossiers uniquement, mais cette structure peut s’avérer complexe à mesure que les applications deviennent plus volumineuses et impliquent éventuellement des fichiers générés automatiquement, JavaScript pour les applications web, etc. Vous pouvez créer des projets Visual Studio pour les applications Python, afin de gérer cette complexité. Un projet Python (un fichier `.pyproj`) identifie tous les fichiers source et de contenu associés à votre projet, contient des informations de génération pour chaque fichier, conserve les informations pour l’intégration aux systèmes de contrôle de code source et vous permet d’organiser votre application en composants logiques.
+Les applications Python sont généralement définies à l’aide de fichiers et de dossiers uniquement, mais cette structure peut s’avérer complexe à mesure que les applications deviennent plus volumineuses et impliquent éventuellement des fichiers générés automatiquement, JavaScript pour les applications web, etc. Un projet Visual Studio permet de gérer cette complexité. Le projet (un fichier `.pyproj`) identifie tous les fichiers source et de contenu associés à votre projet, contient des informations de génération pour chaque fichier, conserve les informations pour l’intégration aux systèmes de contrôle de code source et vous permet d’organiser votre application en composants logiques.
 
 En outre, les projets sont toujours gérés dans une *solution* Visual Studio, qui peut contenir n’importe quel nombre de projets pouvant faire référence les uns aux autres. Par exemple, un projet Python peut faire référence à un projet C++ pour un module d’extension, de façon que Visual Studio génère automatiquement le projet C++ (si nécessaire) quand vous commencez à déboguer le projet Python. (Pour des informations d’ordre général à ce sujet, consultez [Solutions et projets dans Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).)
 
@@ -38,7 +38,7 @@ Dans cette rubrique :
 
 <a name="lightweight-usage-project-free"</a>
 > [!Tip]
-> Même sans projet, Visual Studio fonctionne bien avec le code Python, car vous pouvez ouvrir un fichier Python seul et profiter de la saisie semi-automatique, d’IntelliSense et du débogage (en cliquant avec le bouton droit dans l’éditeur et en sélectionnant **Start [with | without] Debugging** (Démarrer [avec | sans] débogage)). Étant donné que ce code utilise toujours l’environnement global par défaut, vous pouvez toutefois rencontrer des saisies semi-automatiques incorrectes ou des erreurs si le code est destiné à un autre environnement. En outre, Visual Studio analyse tous les fichiers et packages dans le dossier à partir duquel le fichier unique est ouvert, ce qui peut consommer beaucoup de temps processeur.
+> Même sans projet, Visual Studio fonctionne bien avec le code Python, car vous pouvez ouvrir un fichier Python seul et profiter de la saisie semi-automatique, d’IntelliSense et du débogage (en cliquant avec le bouton droit dans l’éditeur et en sélectionnant **Start [with | without] Debugging** (Exécuter [avec | sans] débogage)). Étant donné que ce code utilise toujours l’environnement global par défaut, vous pouvez toutefois rencontrer des saisies semi-automatiques incorrectes ou des erreurs si le code est destiné à un autre environnement. En outre, Visual Studio analyse tous les fichiers et packages dans le dossier à partir duquel le fichier unique est ouvert, ce qui peut consommer beaucoup de temps processeur.
 >
 > Il est très simple de créer un projet Visual Studio à partir du code existant, comme décrit ci-dessous dans la section [Création d’un projet à partir de fichiers existants](#creating-a-project-from-existing-files).
 
@@ -62,15 +62,16 @@ Un nouveau projet est toujours associé à l’environnement Python global par d
 ![Activation d’un environnement pour un projet Python](media/projects-activate-environment.png)
 
 <a name="project-types"</a>
+
 ## <a name="project-templates"></a>Modèles de projet
 
-Visual Studio vous propose diverses méthodes pour configurer un projet Python, que ce soit à partir de zéro ou en utilisant du code existant. Pour utiliser un modèle, sélectionnez la commande de menu **Fichier > Nouveau > Projet...** ou cliquez avec le bouton droit sur la solution dans l’Explorateur de solutions, puis sélectionnez **Ajouter > Nouveau projet...**. Ces deux options permettent d’afficher la boîte de dialogue **Nouveau projet** ci-dessous. Pour afficher les modèles spécifiques à Python, effectuez une recherche sur « Python » ou sélectionnez le nœud **Modèles > Autres langages > Python** :
+Visual Studio vous propose diverses méthodes pour configurer un projet Python, que ce soit à partir de zéro ou en utilisant du code existant. Pour utiliser un modèle, sélectionnez la commande de menu **Fichier > Nouveau > Projet...** ou cliquez avec le bouton droit sur la solution dans l’Explorateur de solutions, puis sélectionnez **Ajouter > Nouveau projet...**. Ces deux options permettent d’afficher la boîte de dialogue **Nouveau projet** ci-dessous. Pour afficher les modèles propres à Python, effectuez une recherche sur « Python » ou sélectionnez le nœud **Installé > Python** :
 
 ![Boîte de dialogue Nouveau projet avec les modèles Python](media/projects-new-project-dialog.png)
 
 Le tableau suivant résume les modèles disponibles dans Visual Studio 2017 (tous les modèles ne sont pas disponibles dans toutes les versions antérieures) :
 
-| Modèle | Description | 
+| Modèle | Description |
 | --- | --- |
 | [À partir de code Python existant](#creating-a-project-from-existing-files) | Crée un projet Visual Studio à partir du code Python existant dans une structure de dossiers.  |
 | Python Application (Application Python) | Une structure de projet de base pour une nouvelle application Python avec un fichier source unique et vide. Par défaut, le projet s’exécute dans l’interpréteur de la console de l’environnement global par défaut, que vous pouvez modifier en [attribuant un autre environnement](python-environments.md#project-specific-environments). |

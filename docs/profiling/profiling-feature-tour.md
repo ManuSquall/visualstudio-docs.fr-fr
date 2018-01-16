@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="profiling-feature-tour"></a>Visite guidée des fonctionnalités de profilage
 
@@ -147,7 +147,8 @@ Si vous avez besoin de fonctionnalités qui ne sont pas présentes dans les outi
 
 ![Outil Explorateur de performances](../profiling/media/prof-tour-performance-explorer.png "Explorateur de performances")
 
-## <a name="which-tool-should-i-use"></a>Quel outil utiliser ?  
+## <a name="tool_support_info"></a>Quel outil utiliser ?  
+
 Voici un tableau qui recense les différents outils proposés par Visual Studio, ainsi que les différents types de projet avec lesquels vous pouvez les utiliser :
   
 |Outil d’analyse des performances|Bureau Windows|Universel Windows/Store|ASP.NET/ASP.NET Core|  
@@ -158,7 +159,7 @@ Voici un tableau qui recense les différents outils proposés par Visual Studio,
 |[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|Non|  
 |[Conseils sur les performances](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|  
 |[Explorateur de performances](../profiling/performance-explorer.md)|oui|Non|oui (non pour ASP.NET Core)|  
-|[IntelliTrace](../debugger/intellitrace.md)|.NET Enterprise uniquement|.NET Enterprise uniquement|.NET Enterprise uniquement|
+|[IntelliTrace](../debugger/intellitrace.md)|.NET et Visual Studio Enterprise uniquement|.NET et Visual Studio Enterprise uniquement|.NET et Visual Studio Enterprise uniquement|
 |[Utilisation du réseau](../profiling/network-usage.md)|Non|oui|Non| 
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Non|oui pour HTML, non pour XAML|Non|  
 |[Mémoire JavaScript](../profiling/javascript-memory.md)|Non|oui pour HTML, non pour XAML|Non|  
