@@ -14,14 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f396bb289e7e4288dbb80c6e08990960861e970c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9e132146ce1ae19e95a7e8f6974dab25be38db5b
+ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="code-analysis-rule-set-reference"></a>Référence d’ensemble de règles d’analyse du code
-Lorsque vous configurez pour l’analyse du code managé dans les projets de code [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], ou [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]vous sont présentées avec une liste des intégré *ensembles de règles*. Vous pouvez utiliser l’un des ensembles de règles standard, ou vous pouvez personnaliser une règle définie pour l’adapter à vos besoins de projet.  
+Lorsque vous configurez pour l’analyse du code managé dans les projets de code [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], ou [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)] vous sont présentées avec une liste des intégré *ensembles de règles*. Vous pouvez utiliser l’un des ensembles de règles standard, ou vous pouvez personnaliser une règle définie pour l’adapter à vos besoins de projet.  
   
 ## <a name="available-rule-sets"></a>Ensembles de règles disponibles  
  Le tableau suivant répertorie les ensembles de règles par défaut :  
