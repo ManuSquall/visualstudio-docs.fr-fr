@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 492aaa5190bb0b24e7077d3523197ff4eff6ba49
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 17029522cae96200b7bc28b0f917cc5d33f6c673
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="unit-test-basics"></a>Notions de base des tests unitaires
 Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des tests unitaires. Un test unitaire consiste à décomposer les fonctionnalités de votre programme en comportements testables discrets que vous pouvez tester en tant qu’*unités* individuelles. L’explorateur de tests de Visual Studio offre un moyen souple et efficace d’exécuter vos tests unitaires et d’afficher leurs résultats dans Visual Studio. Visual Studio installe les infrastructures de tests unitaires Microsoft pour le code managé et le code natif. Utilisez une *infrastructure de tests unitaires* pour créer des tests unitaires, les exécuter et signaler les résultats de ces tests. Réexécutez des tests unitaires quand vous apportez des modifications pour vérifier que votre code fonctionne toujours correctement. Visual Studio Enterprise peut faire ceci automatiquement avec [Live Unit Testing](live-unit-testing-intro.md), qui détecte les tests affectés par les modifications de votre code et les exécute en arrière-plan au fil de votre frappe.
@@ -219,7 +219,7 @@ public void My_Test ()
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Exécuter des tests dans l’explorateur de tests  
  Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.  
   
- ![Explorateur de tests unitaires](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Explorateur de tests unitaires](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Tandis que vous exécutez, écrivez et réexécutez vos tests, par défaut l’explorateur de tests affiche les résultats par groupes : **Échecs de tests**, **Tests réussis**, **Tests ignorés** et **Tests non exécutés**. Vous pouvez choisir un en-tête de groupe pour ouvrir la vue qui affiche tous les tests de ce groupe.  
   
@@ -286,7 +286,6 @@ public void My_Test ()
  Pour créer un test piloté par les données pour la méthode `AddIntegerHelper` , nous créons d’abord une base de données Access intitulée `AccountsTest.accdb` et une table nommée `AddIntegerHelperData`. La table `AddIntegerHelperData` définit les colonnes pour spécifier les premier et deuxième opérandes de l’addition, et une colonne pour spécifier le résultat attendu. Nous remplissons un certain nombre de lignes avec les valeurs appropriées.  
   
 ```csharp  
-  
 [DataSource(  
     @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projects\MyBank\TestData\AccountsTest.accdb",   
     "AddIntegerHelperData"  
@@ -300,8 +299,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
     int expected = Convert.ToInt32(TestContext.DataRow["Sum"]);  
     int actual = target.AddIntegerHelper(x, y);  
     Assert.AreEqual(expected, actual);  
-}  
-  
+}
 ```  
   
  La méthode attribuée s’exécute une fois pour chaque ligne de la table. L’explorateur de tests indique un échec du test de la méthode si l’une des itérations échoue. Le volet Détails des résultats du test de la méthode vous indique le statut réussite/échec pour chaque ligne de données.  

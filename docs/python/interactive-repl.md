@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 2e80df306a3ce659225ae195b0b57922ab7d9a85
-ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 01e3e0d3969b483a77b524cb6fd2713c6653678e
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Utilisation de la fenêtre interactive Python
 
@@ -50,7 +52,7 @@ Tout d’abord, basculez vers la fenêtre Environnements Python (**Affichage > A
 
 Ensuite, presque tout en bas du menu **Affichage > Autres fenêtres**, figure une commande **Fenêtre interactive Python** pour votre environnement par défaut, ainsi qu’une commande pour basculer vers la fenêtre des environnements :
 
-![Éléments de menu de la fenêtre interactive dans Affichage > Autres fenêtres](media/interactive-window-menu.png)
+![Éléments de menu de la fenêtre interactive dans View > Other Windows (Affichage > Autres fenêtres)](media/interactive-window-menu.png)
 
 Vous pouvez alors ouvrir une fenêtre interactive sur le fichier de démarrage dans votre projet, ou pour un fichier autonome, en sélectionnant la commande de menu **Déboguer > Exécuter [Projet | Fichier] en mode interactif Python** (Maj+Alt+F5) :
 

@@ -7,17 +7,19 @@ ms.suite:
 ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: quickstart
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: ee329df0bda8869215969941024deba6d94743fe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 87fdca001430acc1ecef7e69b9afc2123dedafd0
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Démarrage rapide : Créer un projet Python à partir d’un modèle dans Visual Studio
 
@@ -29,7 +31,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
     ![Boîte de dialogue Nouveau projet de Visual Studio 2017 avec un modèle Python](media/projects-new-project-dialog2.png)
 
-1. Pour ce guide de démarrage rapide, sélectionnez le modèle « Application Python », donnez un nom (par exemple « MakePI ») et un emplacement au projet, puis sélectionnez **OK**. 
+1. Pour ce démarrage rapide, sélectionnez le modèle « Application Python », donnez un nom (par exemple « MakePI ») et un emplacement au projet, puis sélectionnez **OK**. 
 
 1. Visual Studio crée le fichier projet (un fichier `.pyproj` sur le disque), ainsi que tous les autres fichiers décrits par le modèle. Avec le modèle « Application Python », le projet contient seulement un fichier vide qui a le même nom que votre projet. Le fichier est ouvert dans l’éditeur Visual Studio par défaut.
 

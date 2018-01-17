@@ -11,11 +11,11 @@ helpviewer_keywords: templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6d9a73cd45a0e497fb2ecc0f4b4697071e3b37
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: d9242d053044fa66e6eb3d506382cf7cfb5d0295
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Guide pratique pour résoudre les problèmes de modèles
 
@@ -47,20 +47,6 @@ Si le fichier .vstemplate d’un modèle n’adhère pas au schéma de modèle V
 1. Placez le nouveau fichier .zip dans le même répertoire que l’ancien fichier .zip.
 
 1. Supprimez les fichiers de modèles extraits et l'ancien fichier .zip du modèle.
-
-## <a name="monitor-the-event-log"></a>Surveiller le journal des événements
-
-Visual Studio journalise les erreurs rencontrées lors du traitement des fichiers .zip du modèle. Si un modèle n’apparaît pas dans la boîte de dialogue **Nouveau projet** comme prévu, vous pouvez utiliser l’**observateur d’événements** pour résoudre le problème.
-
-### <a name="to-locate-template-errors-in-event-viewer"></a>Pour localiser des erreurs de modèle dans l’observateur d’événements
-
-1. Dans Windows, à partir du menu **Démarrer**, choisissez **Outils d’administration Windows** > **Observateur d’événements**.
-
-1. Dans le volet gauche, choisissez **Journaux Windows** > **Application**.
-
-1. Recherchez les événements dont la **Source** a la valeur `Visual Studio - VsTemplate`.
-
-1. Pour afficher une erreur, double-cliquez sur un événement de modèle.
 
 ## <a name="enable-diagnostic-logging"></a>Activer la journalisation des diagnostics
 

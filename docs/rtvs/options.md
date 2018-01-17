@@ -18,11 +18,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: a7680ff2613051cb795d2ca9cb509f725e92dd23
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7bab332a66784dd473a0cf2b841b617aecda9e9f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Options des Outils R dans Visual Studio
 
@@ -34,8 +34,8 @@ Les options et paramètres propres à R sont accessibles à l’aide des méthod
 
 - Options de mise en forme de code (consultez [Options de l’éditeur](code-editing.md#editor-options)) : menu **Outils > Options**, puis sélectionnez **Éditeur de texte > R > Mise en forme**.
 - Options Linting (consultez [Linting](code-linting.md)) : menu **Outils > Options**, puis sélectionnez **Éditeur de texte > R > Lint**.
-- Options avancées de l’éditeur ([décrites dans cette rubrique](#text-editor-r-advanced-options)) : menu **Outils > Options**, puis sélectionnez **Éditeur de texte > R > Avancé**.
-- Options comportementales ([décrites dans cette rubrique](#r-tools-advanced-options)) : menu **Outils R > Options** ou **Outils > Options**, puis faites défiler vers **Outils R**.
+- Options avancées de l’éditeur ([décrites dans cette rubrique](#text-editor-r--advanced-options)) : menu **Outils > Options**, puis sélectionnez **Éditeur de texte > R > Avancé**.
+- Options comportementales ([décrites dans cette rubrique](#r-tools--advanced-options)) : menu **Outils R > Options** ou **Outils > Options**, puis faites défiler vers **Outils R**.
 
 La commande **Outils R > Paramètres de science des données** affecte aussi plusieurs paramètres différents dans Visual Studio globalement. Cette commande est décrite dans la section suivante.
 

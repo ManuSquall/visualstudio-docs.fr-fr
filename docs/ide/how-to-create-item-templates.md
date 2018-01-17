@@ -11,11 +11,11 @@ helpviewer_keywords: item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5145263ce84cf9e1f6a5ef970701ace660ecb73d
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8fd5d7fba092df5accfaad9d26cfc05f196981ba
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="how-to-create-item-templates"></a>Guide pratique pour créer des modèles d’élément
 
@@ -62,8 +62,6 @@ L’Assistant effectue une grande partie du travail nécessaire pour créer un m
    ```xml
    <TemplateID>Microsoft.CSharp.Class</TemplateID>
    ```
-
-   Pour des projets C# Windows 8.1, dans le fichier .vstemplate, ajoutez le code XML suivant entre les balises d’ouverture et de fermeture `<TemplateData>` : `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Pour des projets C++ Windows 8.1, utilisez la valeur `WinRT-Native-6.3`. Pour Windows 10 et d’autres types de projets, consultez [TemplateGroupID, élément (extensibilité)](../extensibility/templategroupid-element-visual-studio-templates.md). Pour consulter les informations de référence complètes sur .vstemplate, consultez [Informations de référence sur les schémas de modèles (extensibilité)](../extensibility/visual-studio-template-schema-reference.md).
 
 1. Dans Visual Studio, enregistrez le fichier .vstemplate, puis fermez-le.
 
