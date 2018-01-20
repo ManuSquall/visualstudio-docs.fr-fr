@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70ca76a3b611b0490def98b1a24936f71ca42e0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40ff41cc6728244d11e93541057af1cb525c7af3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecter les propriétés XAML en phase de débogage
 Vous pouvez obtenir une vue en temps réel de votre code XAML en cours d’exécution avec la **arborescence d’éléments visuels en direct** et **Explorateur de propriétés dynamique**. Ces outils affichent une arborescence des éléments de l’interface utilisateur de votre application XAML en cours d’exécution et montrent les propriétés d’exécution de tout élément d’interface utilisateur que vous sélectionnez.  
@@ -27,7 +27,6 @@ Vous pouvez obtenir une vue en temps réel de votre code XAML en cours d’exéc
 |Type d'application|Système d'exploitation et outils|  
 |-----------------|--------------------------------|  
 |Applications Windows Presentation Foundation (4.0 et versions ultérieures).|Windows 7 et versions ultérieures|  
-|Windows 8.1 et Windows Phone 8.1 applications|Windows 10 et versions ultérieures, avec la [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
 |Applications pour la plateforme Windows universelle|Windows 10 et versions ultérieures, avec la [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
   
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Examen des éléments dans l’arborescence d’éléments visuels dynamique  

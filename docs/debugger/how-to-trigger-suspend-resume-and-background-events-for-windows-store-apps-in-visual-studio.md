@@ -1,7 +1,7 @@
 ---
 title: "Comment déclencher suspendre, reprendre et événements en arrière-plan pendant le débogage d’applications UWP | Documents Microsoft"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,17 +13,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: 824ff3ca-fedf-4cf5-b3e2-ac8dc82d40ac
 caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Comment déclencher suspendre, reprendre et événements en arrière-plan pendant le débogage d’applications UWP dans Visual Studio
 Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management** (PLM) contrôle l'état d'exécution de votre application, soit son démarrage, sa suspension, sa reprise et sa fin en réponse aux actions utilisateur et à l'état du périphérique. Lorsque vous effectuez un débogage, Windows désactive ces événements d'activation. Cette rubrique décrit comment déclencher ces événements dans le débogueur.  
@@ -31,19 +30,6 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
  Cette rubrique décrit également comment déboguer les **tâches en arrière-plan**. Les tâches en arrière-plan vous permettent d'effectuer certaines opérations dans un processus en arrière-plan, même lorsque votre application n'est pas en cours d'exécution. Utilisez le débogueur pour placer votre application en mode débogage, puis, sans démarrer l'interface utilisateur, démarrez et déboguez la tâche en arrière-plan.  
   
  Pour plus d’informations sur les tâches de gestion de durée de vie des processus et d’arrière-plan, consultez [lancement, la reprise et les travaux multitâches](/windows/uwp/launch-resume/index).  
-  
-##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
- [Déclencher les événements PLM (Process Lifetime Management)](#BKMK_Trigger_Process_Lifecycle_Management_events)  
-  
- [Déclencher les tâches en arrière-plan](#BKMK_Trigger_background_tasks)  
-  
--   [Déclencher un événement de tâche en arrière-plan à partir d'une session de débogage standard](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
-  
--   [Déclencher une tâche en arrière-plan lorsque l'application n'est pas en cours d'exécution](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
-  
- [Déclencher les événements PLM (Process Lifecycle Management) et les tâches en arrière-plan depuis une application installée](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
-  
- [Diagnostic des erreurs d'activation des tâches en arrière-plan](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Déclencher les événements PLM (Process Lifetime Management)  
  Windows peut suspendre votre application lorsque l'utilisateur la quitte ou lorsque Windows entre dans un état de faible consommation d'énergie. Répondez à l'événement `Suspending` pour enregistrer des données appropriées relatives à l'application et aux utilisateurs dans un espace de stockage permanent et pour libérer les ressources. Lorsqu'une application quitte l'état **Suspendu** , elle entre dans l'état **Exécution** et reprend là où elle a été suspendue. Vous pouvez répondre à l'événement `Resuming` pour restaurer ou actualiser l'état de l'application et pour libérer les ressources.  
@@ -88,7 +74,7 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
   
 2.  Ouvrez la page des propriétés de débogage du projet de démarrage. Dans l'Explorateur de solutions, sélectionnez le projet. Dans le menu **Déboguer** , choisissez **Propriétés**.  
   
-     Pour les projets C++, vous devrez peut-être développer **Propriétés de configuration** , puis choisir **Débogage**.  
+     Pour les projets C++ et JavaScript, développez **propriétés de Configuration** , puis **débogage**.  
   
 3.  Effectuez l’une des opérations suivantes :  
   
@@ -109,12 +95,12 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
      ![Suspendre, reprendre, terminer et tâches en arrière-plan](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Déclencher les événements PLM (Process Lifecycle Management) et les tâches en arrière-plan depuis une application installée  
- Utilisez la boîte de dialogue Déboguer l'application installée pour charger une application déjà installée dans le débogueur. Par exemple, vous pourrez déboguer une application qui a été installée à partir de Microsoft Store ou déboguer une application lorsque vous avez les fichiers sources pour l’application, mais pas un projet Visual Studio pour l’application. La boîte de dialogue Déboguer l'application installée vous permet de démarrer une application en mode débogage sur l'ordinateur Visual Studio ou sur un périphérique distant, ou de configurer l'application pour s'exécuter en mode débogage sans la démarrer. Consultez le **démarrer une application installée dans le débogueur** section de [démarrer une session de débogage dans une application UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger).
+ Utilisez le **déboguer le Package d’application installé** boîte de dialogue pour charger une application déjà installée dans le débogueur. Par exemple, vous pourrez déboguer une application qui a été installée à partir de Microsoft Store ou déboguer une application lorsque vous avez les fichiers sources pour l’application, mais pas un projet Visual Studio pour l’application. Le **déboguer le Package d’application installé** boîte de dialogue vous permet de démarrer une application en mode débogage sur l’ordinateur Visual Studio ou sur un périphérique distant, ou pour configurer l’application pour s’exécuter en mode débogage sans la démarrer. Pour plus d’informations, consultez [déboguer un package d’application installés](../debugger/debug-installed-app-package.md).
   
  Une fois l'application chargée dans le débogueur, vous pouvez utiliser l'une des procédures décrites ci-dessus.  
   
 ##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnostic des erreurs d'activation des tâches en arrière-plan  
- Les journaux de diagnostic dans l'Observateur d'événements Windows pour infrastructure en arrière-plan contiennent des informations détaillées que vous pouvez utiliser pour diagnostiquer et résoudre les erreurs des tâches en arrière-plan. Pour consulter le journal :  
+ Les journaux de diagnostic dans l’Observateur d’événements Windows pour infrastructure en arrière-plan contient des informations détaillées que vous pouvez utiliser pour diagnostiquer et résoudre les erreurs des tâches en arrière-plan. Pour consulter le journal :  
   
 1.  Ouvrez l'application Observateur d'événements.  
   
@@ -127,5 +113,5 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
 ## <a name="see-also"></a>Voir aussi  
  [Test d’applications UWP avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Cycle de vie des applications](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
- [Lancement de la reprise et multitâche](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Cycle de vie des applications](/windows/uwp/launch-resume/app-lifecycle)   
+ [Lancement de la reprise et multitâche](/windows/uwp/launch-resume/index)

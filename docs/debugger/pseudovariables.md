@@ -22,11 +22,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e2e5e716bd63170554537ec77895055de1fd83a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f2bde32d67bb2e106d058c5a9e62801940d3df25
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo-variables dans le débogueur Visual Studio
 Les pseudo-variables sont des termes utilisés pour afficher certaines informations dans une fenêtre de variable ou la **Espion express** boîte de dialogue. Vous pouvez entrer une pseudo-variable de la même façon qu'une variable normale. Toutefois, les pseudo-variables ne sont pas des variables et ne correspondent pas à des noms de variable de votre programme.  
@@ -49,10 +49,10 @@ $handles
 |`$env`|Affiche le bloc environnement de l'explorateur de chaînes.|  
 |`$cmdline`|Affiche la chaîne de ligne de commande qui a lancé le programme.|  
 |`$pid`|Affiche l'ID du processus.|  
-|`$`*registername*<br /><br /> ou<br /><br /> `@`*registername*|Affiche le contenu du Registre *registername*.<br /><br /> En règle générale, vous pouvez afficher le contenu du registre en entrant simplement son nom. Vous n'avez besoin d'utiliser cette syntaxe que lorsque le nom de registre surcharge le nom d'une variable. Si le nom de registre est le même que celui d'une variable dans la portée actuelle, le débogueur interprète le nom comme étant celui de la variable. C'est-à-dire quand `$` *registername* ou `@` *registername* s’avère pratique.|  
+|`$` *registername*<br /><br /> ou<br /><br /> `@` *registername*|Affiche le contenu du Registre *registername*.<br /><br /> En règle générale, vous pouvez afficher le contenu du registre en entrant simplement son nom. Vous n'avez besoin d'utiliser cette syntaxe que lorsque le nom de registre surcharge le nom d'une variable. Si le nom de registre est le même que celui d'une variable dans la portée actuelle, le débogueur interprète le nom comme étant celui de la variable. C'est-à-dire quand `$` *registername* ou `@` *registername* s’avère pratique.|  
 |`$clk`|Affiche le temps en cycles d'horloge.|  
 |`$user`|Affiche une structure avec les informations du compte qui exécute l'application. Pour des raisons de sécurité, les informations de mot de passe ne sont pas affichées.|  
-|`$exceptionstack`|Affiche l'arborescence des appels de procédure de l'exception Windows Runtime actuelle. `$ exceptionstack`fonctionne uniquement dans les applications UWP et Windows 8.1 ou version ultérieure. `$ exceptionstack` n'est pas pris en charge pour les exceptions C++ et SHE|  
+|`$exceptionstack`|Affiche l'arborescence des appels de procédure de l'exception Windows Runtime actuelle. `$ exceptionstack`fonctionne uniquement dans les applications UWP. `$ exceptionstack` n'est pas pris en charge pour les exceptions C++ et SHE|  
 |`$ReturnValue`|Affiche la valeur de retour d'une méthode .NET Framework.|  
   
  En C# et Visual Basic, vous pouvez utiliser les pseudo-variables indiquées dans le tableau suivant :  
@@ -68,7 +68,7 @@ $handles
 |--------------------|--------------|  
 |`$delete` ou `$$delete`|Supprime une variable implicite créée dans le **exécution** fenêtre. La syntaxe est `$delete,` *variable* ou`$delete,` *variable*`.`|  
 |`$objectids` ou `$listobjectids`|Affiche tous les ID d'objet actifs en tant qu'enfants de l'expression spécifiée. La syntaxe est `$objectid,` *expression* ou`$listobjectids,` *expression*`.`|  
-|`$`*N*`#`|Affiche l’objet avec l’ID d’objet égal à *N*.|  
+|`$` *N* `#`|Affiche l’objet avec l’ID d’objet égal à *N*.|  
 |`$dynamic`|Affiche le spécial **affichage dynamique** nœud pour un objet qui implémente le `IDynamicMetaObjectProvider`. Interface. La syntaxe est `$dynamic,` *objet*. Cette fonctionnalité s’applique uniquement au code utilisant .NET Framework version 4.|  
   
 ## <a name="see-also"></a>Voir aussi  

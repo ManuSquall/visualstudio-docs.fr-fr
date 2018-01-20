@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5317c06dc5ff6515627e562d576785c2ff25a98a
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET Azure en direct à l’aide du débogueur de l’instantané
 
@@ -47,9 +47,12 @@ En outre, le débogueur de l’instantané est uniquement disponible pour Visual
 
    ![Lancer le débogueur de l’instantané](../debugger/media/snapshot-launch.png "lancer le débogueur de l’instantané")
 
-    La première fois que vous sélectionnez **attacher le débogueur instantané**, vous êtes invité à installer le débogueur de l’instantané sur votre Service d’applications Azure. Cette installation nécessite un redémarrage de votre Service d’applications Azure. 
+    La première fois que vous sélectionnez **attacher le débogueur instantané**, vous êtes invité à installer l’extension de site du débogueur de l’instantané sur votre Service d’applications Azure. Cette installation nécessite un redémarrage de votre Service d’applications Azure. 
 
    Visual Studio est présent dans l’instantané de mode de débogage.
+
+    > [!NOTE]
+    > L’extension de site Application Insights prend également en charge le débogage de l’instantané. Si vous rencontrez un message d’erreur « extension obsolète de site », consultez [dépannage des conseils et des problèmes connus pour le débogage de l’instantané](../debugger/debug-live-azure-apps-troubleshooting.md) détails de la mise à niveau.
 
    ![Débogage en mode de capture instantanée](../debugger/media/snapshot-message.png "mode débogage d’instantané")
 
@@ -130,7 +133,7 @@ En plus d’une capture instantanée lorsqu’un snappoint est atteint, vous pou
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Pour savoir comment examiner les variables lors de l’affichage d’un instantané, consultez [visite guidée des fonctionnalités Debbuger](../debugger/debugger-feature-tour.md).
+- Pour savoir comment examiner les variables lors de l’affichage d’un instantané, consultez [présentation des fonctionnalités de débogueur](../debugger/debugger-feature-tour.md).
 - Afficher le [FAQ pour le débogage de l’instantané](../debugger/debug-live-azure-apps-faq.md).
 - Vue [dépannage des conseils et des problèmes connus pour le débogage de l’instantané](../debugger/debug-live-azure-apps-troubleshooting.md).
 - Si vous souhaitez afficher des instantanés de l’Application Insights lorsque votre application rencontre une exception, vous pouvez le faire. Pour plus d’informations, consultez [déboguer des instantanés sur les exceptions dans les applications .NET](/azure/application-insights/app-insights-snapshot-debugger). Application Insights prend en charge les applications de Service Fabric en plus du Service d’applications Azure.

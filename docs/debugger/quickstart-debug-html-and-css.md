@@ -1,5 +1,5 @@
 ---
-title: "Déboguer le code HTML et CSS (UWP et les applications Windows 8.1) | Documents Microsoft"
+title: "Déboguer le code HTML et CSS dans les applications UWP | Documents Microsoft"
 ms.custom: 
 ms.date: 07/17/2017
 ms.reviewer: 
@@ -8,32 +8,26 @@ ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.WebClient.DomExplorer
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - debugging, CSS
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: "101"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Déboguer le code HTML et CSS dans UWP et les applications Windows 8.1
-![S’applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Déboguer le code HTML et CSS dans les applications UWP dans Visual Studio
   
- Pour les applications JavaScript, Visual Studio fournit une expérience de débogage complète qui inclut des fonctionnalités familières aux développeurs Internet Explorer et Visual Studio. Ces fonctionnalités sont prises en charge pour les applications UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], les applications Windows Phone et pour les applications créées à l’aide de Visual Studio Tools pour Apache Cordova.  
+ Pour les applications JavaScript, Visual Studio fournit une expérience de débogage complète qui inclut des fonctionnalités familières aux développeurs Internet Explorer et Visual Studio. Ces fonctionnalités sont prises en charge pour les applications UWP et pour les applications créées à l’aide de Visual Studio Tools pour Apache Cordova.  
   
  Grâce au modèle de débogage interactif fourni par les outils d’inspection DOM, vous pouvez afficher et modifier le rendu du code HTML et CSS. Et cela, sans avoir à arrêter ni redémarrer le débogueur.
   
@@ -67,11 +61,11 @@ ms.lasthandoff: 01/10/2018
   
 1.  Créez une solution dans Visual Studio en sélectionnant **Fichier** > **Nouveau projet**.  
   
-2.  Choisissez **JavaScript** > **Store**, puis **Applications Windows** ou **Applications Windows Phone**, puis sélectionnez **Application vide**.  
+2.  Choisissez **JavaScript** > **Windows universel**, puis choisissez **WinJS application**.  
   
-3.  Tapez un nom pour le projet, comme `FlipViewApp`, puis choisissez **OK** pour créer l’application.  
+3.  Attribuez un nom au projet, tel que `FlipViewApp`, puis choisissez **OK** pour créer l’application.  
   
-4.  Dans l’élément BODY du fichier default.html, ajoutez le code suivant :  
+4.  Dans l’élément BODY de index.html, ajoutez ce code :  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -129,9 +123,9 @@ ms.lasthandoff: 01/10/2018
   
         function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+            pages.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+            pages.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+            pages.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
         };  
   
         app.oncheckpoint = function (args) {  
@@ -148,19 +142,17 @@ ms.lasthandoff: 01/10/2018
     })();  
     ```  
   
-     L’illustration suivante montre le résultat attendu si cette application est exécutée dans Windows Phone Emulator (même apparence dans le simulateur). Toutefois, avant de parvenir à ce résultat, il nous faudra corriger un certain nombre de bogues.  
+     L’illustration suivante montre le résultat voir si cette application est exécutée. Toutefois, avant de parvenir à ce résultat, il nous faudra corriger un certain nombre de bogues.  
   
      ![Application FlipView affichant les résultats attendus](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  Sélectionnez **Simulateur** ou **Emulator 8.1 WVGA 512 Mo** dans la liste déroulante située en regard du bouton **Démarrer le débogage** dans la barre d’outils **Déboguer** :  
+7.  Choisissez **ordinateur Local** à partir de la liste déroulante liste en regard du **démarrer le débogage** bouton sur le **déboguer** barre d’outils :  
   
      ![Liste cible de débogage sélectionnez](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 8.  Choisissez **Déboguer** > **Démarrer le débogage**, ou appuyez sur F5, pour exécuter votre application en mode débogage.  
   
-     L’application est ainsi exécutée dans le simulateur ou l’émulateur Windows Phone, mais l’écran affiché est en grande partie vide parce que le style contient quelques erreurs. La première image `FlipView` apparaît dans un petit carré non loin du milieu de l’écran.  
-  
-9. Si vous exécutez l’application dans le simulateur, choisissez la commande de la barre d’outils **Modifier la résolution** à droite du simulateur pour configurer une résolution d’écran de 1280 x 800. Cela permettra d’afficher les valeurs dans les étapes suivantes telles que vous les voyez dans le simulateur.  
+     Cette commande exécute l’application, mais que vous voyez un écran en grande partie vide parce que le style contient quelques bogues qu’elle contient. La première image `FlipView` apparaît dans un petit carré non loin du milieu de l’écran.  
   
 10. Basculez vers Visual Studio et sélectionnez l’onglet **Explorateur DOM** .  
   
@@ -169,7 +161,7 @@ ms.lasthandoff: 01/10/2018
   
 11. Dans la fenêtre de l’explorateur DOM, sélectionnez l’élément DIV de la section associée à l’ID `"fView"`. Utilisez les touches de direction pour afficher et sélectionner l’élément DIV approprié. (La touche de direction droite permet d’afficher les enfants d’un élément.)  
   
-     ![L’Explorateur DOM](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
+     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  Vous pouvez également sélectionner l’élément DIV dans l’angle inférieur gauche de la fenêtre de JavaScript Console en tapant `select(fView)` à la >> d’entrée invite et appuyez sur ENTRÉE.  
@@ -188,16 +180,16 @@ ms.lasthandoff: 01/10/2018
   
 14. Dans la fenêtre principale de l’explorateur DOM, double-cliquez sur le style intraligne pour la hauteur et la largeur de l’élément DIV `fView` . Vous pouvez maintenant modifier les valeurs ici. Dans ce scénario, il est convenu de les supprimer complètement.  
   
-15. Sélectionnez `width: 100px;height: 100px;`, appuyez sur la touche Suppr, puis sur Entrée. Dès que vous appuyez sur Entrée, les nouvelles valeurs sont immédiatement répercutées dans le simulateur ou l’émulateur Windows Phone, même si vous n’avez pas arrêté votre session de débogage.  
+15. Dans la fenêtre principale, double-cliquez sur `width: 100px;height: 100px;`, appuyez sur la **supprimer** et appuyez ensuite sur **entrée**. Une fois que vous appuyez sur entrée, les nouvelles valeurs sont immédiatement répercutées dans l’application, même si vous n’avez pas arrêté votre session de débogage.  
   
     > [!IMPORTANT]
     >  Comme vous pouvez mettre à jour les attributs dans la fenêtre de l’explorateur DOM, vous pouvez également mettre à jour les valeurs affichées sous les onglets **Styles**, **Calculé**et **Disposition** . Pour plus d’informations, consultez [les styles CSS de déboguer à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md) et [disposition pour le débogage à l’aide de l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md).  
   
-16. Basculez vers l’application en sélectionnant le simulateur ou l’émulateur Windows Phone, ou en utilisant les touches Alt+Tab.  
+16. Basculez vers l’application en sélectionnant ou en utilisant les touches Alt + Tab.  
   
      À présent, le contrôle `FlipView` est plus grand que la taille de l’écran du simulateur ou de l’émulateur Windows Phone. Ce n’est pas le résultat souhaité. Pour faire une recherche, revenez à Visual Studio.  
   
-17. Dans l’explorateur DOM, sélectionnez à nouveau l’onglet **Calculé** et ouvrez la règle de hauteur. L’élément fView affiche toujours une valeur de 100 %, comme attendu par le CSS, mais la valeur calculée est égale à la hauteur de l’écran du simulateur (par exemple, 800px ou 667.67px), ce qui ne correspond pas à la valeur souhaitée pour cette application. Pour examiner ce résultat, vous pouvez supprimer la hauteur et la largeur de l’élément DIV `fView` .  
+17. Dans l’explorateur DOM, sélectionnez à nouveau l’onglet **Calculé** et ouvrez la règle de hauteur. L’élément fView affiche toujours une valeur de 100 %, comme prévu par le CSS, mais la valeur calculée est égale à la hauteur de l’écran de l’application (par exemple, 800px, 667.67px, ou une autre valeur), qui n’est pas le résultat escompté pour cette application. Pour rechercher dans les étapes suivantes, nous supprimer la hauteur et la largeur de la `fView` élément DIV.  
   
 18. Sous l’onglet **Styles** , désactivez les propriétés de hauteur et de largeur du sélecteur CSS `#fView` .  
   
@@ -209,13 +201,11 @@ ms.lasthandoff: 01/10/2018
   
 20. Pour lancer une analyse, basculez vers Visual Studio et choisissez la **disposition** onglet d’examiner le modèle de boîte de l’élément.  
   
-     Sous l’onglet **Disposition** , les valeurs suivantes s’affichent :  
+     Dans le **disposition** onglet, vous verrez les éléments suivants :  
   
-    -   pour le simulateur, 320 px (Décalage) et 320 px (Marge) ;  
+    -   255px (décalage) et 255px (marge) ou des valeurs similaires, en fonction de la résolution de votre appareil. 
   
-    -   pour l’émulateur Windows Phone, 100 px (Décalage) et 100 px (Marge).  
-  
-     L’illustration suivante montre l’apparence de l’onglet **Disposition** si vous utilisez l’émulateur Windows Phone (décalage et marge à 100 px).  
+     L’illustration suivante montre comment la **disposition** onglet recherche si vous utilisez un émulateur avec 100px décalage et marge).  
   
      ![Onglet Disposition de l’Explorateur DOM](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
@@ -265,24 +255,8 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]
 >  La mise en surbrillance d’éléments par pointage n’est que partiellement prise en charge dans l’émulateur Windows Phone.  
   
- Pour obtenir un exemple qui montre comment sélectionner des éléments à l’aide de la **élément Select** bouton, consultez [les styles CSS de déboguer à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
-  
-##  <a name="BrowserSupport"></a> Navigateurs et plateformes pris en charge  
- L’Explorateur DOM et la fenêtre de JavaScript Console sont pris en charge sur les plateformes suivantes :  
-  
--   Les applications UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] et les applications Windows Phone à l’aide de JavaScript et HTML  
-  
--   Internet Explorer 11 s’exécutant sur [!INCLUDE[win81](../debugger/includes/win81_md.md)]  
-  
--   Internet Explorer 10 s’exécutant sur [!INCLUDE[win8](../debugger/includes/win8_md.md)]  
-  
- Allez [ici](http://go.microsoft.com/fwlink/?LinkID=232448) pour télécharger [!INCLUDE[win8](../debugger/includes/win8_md.md)] et Visual Studio.  
-  
 ## <a name="see-also"></a>Voir aussi  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Déboguer les styles CSS à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
- [Déboguer la disposition à l’aide de l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md)   
- [Afficher les écouteurs d’événements DOM](../debugger/view-dom-event-listeners.md)   
  [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)   
  [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)   

@@ -1,7 +1,7 @@
 ---
 title: "Déployer des applications de plateforme Windows universelle à partir de Visual Studio | Documents Microsoft"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,20 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: ef3a0f36-bfc9-4ca0-aa61-18261f619bff
 caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Déployer des applications de plateforme Windows universelle à partir de Visual Studio
-![S’applique uniquement à Windows](../debugger/media/windows_only_content.png "windows_only_content")  
   
  La fonctionnalité de déploiement de Visual Studio génère et enregistre les applications UWP qui sont créées avec Visual Studio sur un appareil cible. La façon dont l'application est exactement enregistrée varie selon que le périphérique cible est local ou distant :  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 Sur un appareil distant Windows 10, vous devez activer [mode développeur](/windows/uwp/get-started/enable-your-device-for-development). Sur les appareils Windows 10 mise à jour du créateur ou une version ultérieure, les outils à distance sont installés automatiquement lorsque vous déployez votre application. Pour plus d’informations, consultez [déboguer un package d’application installés](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> Sur Windows 8.1 et versions de mise à jour du pre-créateur de Windows 10, les outils à distance pour Visual Studio doit être installés sur le périphérique distant, et le débogueur distant doit être en cours d’exécution. Sur Windows 8.1, vous devez également installer une licence de développeur.
+> Sur les versions de mise à jour du pre-créateur de Windows 10, les outils à distance pour Visual Studio doit être installés sur le périphérique distant, et le débogueur distant doit être en cours d’exécution.
   
 Le déploiement utilise le canal réseau du débogueur distant pour envoyer les fichiers de l'application sur le périphérique distant.  
   
@@ -117,5 +115,6 @@ Le déploiement utilise le canal réseau du débogueur distant pour envoyer les 
 -   Dans la page de propriétés de débogage JavaScript ou C++, attribuez à **Lancer l'application** la valeur **Oui**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déboguer un package d’application installés](../debugger/debug-installed-app-package.md).   
+ [Les options de déploiement à distance avancées](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [Déboguer un package d’application installé](../debugger/debug-installed-app-package.md)   
  [Exécuter des applications à partir de Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

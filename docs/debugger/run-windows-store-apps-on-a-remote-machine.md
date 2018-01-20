@@ -1,5 +1,5 @@
 ---
-title: "Exécuter des applications UWP et Windows 8.1 sur un ordinateur distant | Documents Microsoft"
+title: "Exécuter les applications UWP sur un ordinateur distant | Documents Microsoft"
 ms.custom: 
 ms.date: 01/05/2018
 ms.reviewer: 
@@ -18,35 +18,32 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 3e27aae0b9a8e57575015d1d8d5baee3803959a9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f9d538cbc650de2d704c885a8eff6a897c9ef68e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="run-uwp-and-windows-81-apps-on-a-remote-machine"></a>Exécuter des applications UWP et Windows 8.1 sur un ordinateur distant  
+# <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Exécuter les applications UWP sur un ordinateur distant dans Visual Studio
   
-Pour exécuter une application UWP ou Windows 8.1 sur un ordinateur distant, vous devez joindre à l’aide des outils à distance pour Visual Studio. Les outils à distance permettent d’exécuter, déboguer, Profiler et tester une application UWP qui s’exécute sur un périphérique à partir d’un deuxième ordinateur exécutant Visual Studio. En cours d’exécution sur un périphérique distant peut être particulièrement efficace lorsque l’ordinateur Visual Studio ne prend pas en charge les fonctionnalités spécifiques aux applications UWP, telles que la fonction tactile, emplacement géographique et l’orientation physique. Cette rubrique décrit les procédures de configuration et de démarrage d'une session distante.
+Pour exécuter une application UWP sur un ordinateur distant, vous devez joindre à l’aide des outils à distance pour Visual Studio. Les outils à distance permettent d’exécuter, déboguer, Profiler et tester une application UWP qui s’exécute sur un périphérique à partir d’un deuxième ordinateur exécutant Visual Studio. En cours d’exécution sur un périphérique distant peut être particulièrement efficace lorsque l’ordinateur Visual Studio ne prend pas en charge les fonctionnalités spécifiques aux applications UWP, telles que la fonction tactile, emplacement géographique et l’orientation physique. Cette rubrique décrit les procédures de configuration et de démarrage d'une session distante.
 
 Dans certains scénarios, les outils à distance sont installés automatiquement lorsque vous déployez sur un périphérique distant.
 
 - Pour les PC Windows 10 en cours d’exécution mise à jour de créateurs et versions ultérieures, les outils à distance seront installés automatiquement.
 - Pour les appareils Windows 10 Xbox, IOT et HoloLens, les outils à distance seront installés automatiquement.
-- Pour Windows Phone, vous devez être connecté physiquement au numéro de téléphone, vous devez installer un [licence de développeur](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh974578.aspx) (Windows Phone 8 et 8.1) ou activer [mode développeur](/windows/uwp/get-started/enable-your-device-for-development) (Windows Mobile 10), et vous devez Sélectionnez **périphérique** en tant que la cible de débogage. Les outils à distance ne sont pas requises ou pris en charge.
+- Pour Windows Mobile 10, vous devez être connecté physiquement au numéro de téléphone, vous devez activer [mode développeur](/windows/uwp/get-started/enable-your-device-for-development) et vous devez sélectionner **périphérique** en tant que la cible de débogage. Les outils à distance ne sont pas requises ou pris en charge.
 
-Pour les PC Windows 8.1 et des PC Windows 10 version de mise à jour d’un créateur versions antérieures de Windows en cours d’exécution, vous devez installer les outils à distance sur l’ordinateur distant manuellement avant de pouvoir déboguer. Suivez les instructions de cette rubrique. 
+Pour les PC Windows 10 version de mise à jour d’un créateur versions antérieures de Windows en cours d’exécution, vous devez installer les outils à distance sur l’ordinateur distant manuellement avant de pouvoir déboguer. Suivez les instructions de cette rubrique. 
   
 ##  <a name="BKMK_Prerequisites"></a> Conditions préalables  
  Pour déboguer sur un appareil distant :  
   
--   L’appareil distant et l’ordinateur Visual Studio doivent être connectés via un réseau ou directement à l’aide d’un câble USB ou Ethernet. Le débogage sur Internet n'est pas pris en charge.  
+- L’appareil distant et l’ordinateur Visual Studio doivent être connectés via un réseau ou directement à l’aide d’un câble USB ou Ethernet. Le débogage sur Internet n'est pas pris en charge.  
 
-- Le périphérique distant doit être activé pour le développement.
-
-    - Pour les appareils Windows 8 et Windows 8.1, un [licence de développeur](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh974578.aspx) doit être installé sur le périphérique distant.
-    - Pour les appareils Windows 10, vous devez activer [mode développeur](/windows/uwp/get-started/enable-your-device-for-development). 
+- Vous devez activer [mode développeur](/windows/uwp/get-started/enable-your-device-for-development). 
   
--   Pour les PC Windows 10 exécutant une version de Windows 10 antérieure à la mise à jour du créateur de Windows 10, vous devez [installer et exécuter les composants de débogage à distance](#BKMK_download).
+- Pour les PC Windows 10 exécutant une version de Windows 10 antérieure à la mise à jour du créateur de Windows 10, vous devez [installer et exécuter les composants de débogage à distance](#BKMK_download).
   
 ##  <a name="BKMK_Security"></a> Sécurité  
 Par défaut, **universel (protocole non chiffré)** est utilisé sur Windows 10. Ths protocole doit uniquement être utilisé sur des réseaux approuvés. La connexion de débogage est vulnérable aux utilisateurs malveillants qui pourrait intercepter et modifier les données transmises entre le développement et l’ordinateur distant.
@@ -56,7 +53,7 @@ Par défaut, **universel (protocole non chiffré)** est utilisé sur Windows 10.
   
 ##  <a name="BKMK_DirectConnect"></a>Comment se connecter directement à l’aide d’un câble USB 
 
-Sur Windows 10, vous pouvez déployer sur un périphérique USB connecté en choisissant **périphérique** au lieu de **ordinateur distant** en tant que la cible de déploiement (vous pouvez le faire dans le **Standard** barre d’outils ou dans la page de propriétés de débogage). Pour Windows 8.1, les outils à distance doivent être installés sur l’appareil avant de vous connecter directement.
+Sur Windows 10, vous pouvez déployer sur un périphérique USB connecté en choisissant **périphérique** au lieu de **ordinateur distant** en tant que la cible de déploiement (vous pouvez le faire dans le **Standard** barre d’outils ou dans la page de propriétés de débogage).
 
 ##  <a name="BKMK_ConnectVS"></a>Configurer le projet Visual Studio pour le débogage distant  
  Vous spécifiez le périphérique distant auquel se connecter dans les propriétés du projet. La procédure varie en fonction du langage de programmation. Vous pouvez taper le nom de réseau de l’appareil distant ou vous pouvez le sélectionner à partir de la **connexion à distance** boîte de dialogue.  
@@ -94,7 +91,7 @@ Sur Windows 10, vous pouvez déployer sur un périphérique USB connecté en cho
   
 ## <a name="BKMK_download"></a>Téléchargez et installez les outils à distance (créateurs avant mise à jour)
 
-Si vous utilisez Windows 8.1 ou versions de mise à jour d’un créateur versions antérieures de Windows 10, puis suivez les instructions. Sinon, vous pouvez ignorer cette section.
+Si vous utilisez des versions de mise à jour d’un créateur versions antérieures de Windows 10, suivez ces instructions. Sinon, vous pouvez ignorer cette section.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
@@ -105,8 +102,9 @@ Si vous utilisez Windows 8.1 ou versions de mise à jour d’un créateur versio
 ##  <a name="BKMK_RunRemoteDebug"></a>Démarrer une session de débogage à distance  
  Le démarrage, la désactivation et l'exploration d'une session de débogage distant s'effectuent de la même façon que pour une session locale. Dans les versions de mise à jour du pre-créateur de Windows 10, assurez-vous que Remote Debugging Monitor s’exécute sur le périphérique distant.  
   
- Choisissez ensuite **Démarrer le débogage** dans le menu **Déboguer** (clavier : F5). Le projet est recompilé, puis déployé et démarré sur le périphérique distant. Le débogueur interrompt l'exécution aux points d'arrêt et vous pouvez effectuer un pas à pas détaillé, principal et sortant de votre code. Choisissez **Arrêter le débogage** pour terminer la session de débogage et fermer l'application distante. Pour plus d’informations, consultez [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Choisissez ensuite **Démarrer le débogage** dans le menu **Déboguer** (clavier : F5). Le projet est recompilé, puis déployé et démarré sur le périphérique distant. Le débogueur interrompt l'exécution aux points d'arrêt et vous pouvez effectuer un pas à pas détaillé, principal et sortant de votre code. Choisissez **Arrêter le débogage** pour terminer la session de débogage et fermer l'application distante.
   
 ## <a name="see-also"></a>Voir aussi  
+ [Les options de déploiement à distance avancées](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
  [Test d’applications UWP avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

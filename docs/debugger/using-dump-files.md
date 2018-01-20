@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Utiliser des fichiers Dump avec Visual Studio
 Fichiers dump avec ou sans tas ; créer un fichier dump ; ouvrir un fichier dump ; Rechercher les fichiers binaires, du fichier pdb et fichier source pour un fichier de vidage.
@@ -56,11 +56,11 @@ Fichiers dump avec ou sans tas ; créer un fichier dump ; ouvrir un fichier du
   
 -   Visual Studio peut déboguer les fichiers dump des applications natives à partir des périphériques ARM. Visual Studio peut également déboguer les fichiers dump des applications managées à partir des périphériques ARM, mais uniquement dans le débogueur natif.  
   
--   Pour déboguer [en mode noyau](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) dans Visual Studio 2013, les fichiers dump, téléchargez le [Windows 8.1 Version des outils de débogage pour Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Consultez [le débogage du noyau dans Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+-   Pour déboguer [en mode noyau](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) fichiers dump, téléchargez les outils de débogage pour Windows, qui fait partie de la [Windows Driver Kit (WDK)](/windows/hardware/windows-driver-kit). 
   
 -   Visual Studio ne peut pas déboguer les fichiers dump enregistrés dans l’ancien format dump appelé un [dump complet en mode utilisateur](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Notez qu'un dump complet en mode utilisateur n'est pas le même qu'un dump avec le tas.  
   
--   Pour déboguer avec le [SOS.dll (Extension de débogage SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) dans Visual Studio, vous devez installer les outils de débogage pour Windows qui fait partie de la Windows Driver Kit (WDK). Consultez [Windows 8.1 Preview : télécharger des kits et des outils](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+-   Pour déboguer avec le [SOS.dll (Extension de débogage SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) dans Visual Studio, vous devez installer les outils de débogage pour Windows, qui fait partie de la [Windows Driver Kit (WDK)](/windows/hardware/windows-driver-kit) 
   
 ##  <a name="BKMK_Create_a_dump_file"></a>Créer un fichier dump  
  Pour créer un fichier dump avec Visual Studio :  

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 628aad6f1ae097ea040a6043db1ef12f0b60a7a4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Modifications de code prises en charge (c# et Visual Basic)
 Modifier & Continuer gère la plupart des types de modifications du code dans le corps des méthodes. Toutefois, la plupart des modifications en dehors du corps des méthodes et quelques autres à l'intérieur ne peuvent pas s'appliquer pendant le débogage. Pour appliquer ces modifications non prises en charge, vous devez arrêter le débogage et redémarrer avec une version nouvelle du code.
@@ -86,7 +86,7 @@ Le tableau ci-dessous indique les modifications qui peuvent être effectuées da
 
 ## <a name="unsupported-app-scenarios"></a>Scénarios d’application non pris en charge
 
-Plateformes et des applications non prises en charge incluent ASP.NET 5, émulateur de Silverlight 5, Windows Phone et Windows Phone et Windows 8.1.
+Plateformes et des applications non prises en charge incluent ASP.NET 5, Silverlight 5 et Windows 8.1.
 
 > [!NOTE]
 > Les applications qui sont prises en charge sont notamment UWP dans Windows 10 et x86 et x64 des applications qui ciblent le .NET Framework 4.6 bureau ou versions ultérieures (.NET Framework est une version de bureau).
