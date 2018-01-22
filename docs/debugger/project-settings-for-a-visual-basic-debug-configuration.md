@@ -26,11 +26,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 47047758d237bb652d5b8e447f8fc7b6e608148e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a9d9b9c5cee3dc69698320af77a7cc909b344a2d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Paramètres de projet pour une configuration Debug Visual Basic
 Vous pouvez modifier les paramètres de projet pour un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] configuration du débogage dans le **Pages de propriétés** fenêtre, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans le **Pages de propriétés** fenêtre.  
@@ -43,7 +43,7 @@ Vous pouvez modifier les paramètres de projet pour un [!INCLUDE[vbprvb](../code
 |Paramètre|Description|  
 |-------------|-----------------|  
 |**Configuration**|Définit le mode de compilation de l'application. Choisissez parmi les options **Active (Debug)**, **déboguer**, **version**, **toutes les Configurations**.|  
-|**Action de démarrage**|Ce groupe de contrôles spécifie l'action exécutée lorsque vous cliquez dans le menu Déboguer sur Démarrer.<br /><br /> -   **Démarrer le projet** est la valeur par défaut, lance le projet de démarrage pour le débogage. Pour plus d’informations, consultez [NIB Comment : définir les projets de démarrage](http://msdn.microsoft.com/en-us/31465836-0911-48db-a5d9-e456b635e970).<br />-   **Démarrer le programme externe** vous permet de démarrer et d’attacher un programme qui n’est pas dans le cadre d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet. Pour plus d’informations, consultez [attacher au processus en cours](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Démarrer l’URL** vous permet de déboguer une application Web.|  
+|**Action de démarrage**|Ce groupe de contrôles spécifie l'action exécutée lorsque vous cliquez dans le menu Déboguer sur Démarrer.<br /><br /> -   **Démarrer le projet** est la valeur par défaut, lance le projet de démarrage pour le débogage. <br />-   **Démarrer le programme externe** vous permet de démarrer et d’attacher un programme qui n’est pas dans le cadre d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet. Pour plus d’informations, consultez [attacher au processus en cours](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Démarrer l’URL** vous permet de déboguer une application Web.|  
 |**Arguments de ligne de commande**|Spécifie les arguments de la ligne de commande pour le programme à déboguer. Le nom de la commande correspond au nom du programme spécifié dans Démarrer le programme externe. Si Action de démarrage prend la valeur Démarrer l’URL, les arguments de la ligne de commande sont ignorés.|  
 |**Répertoire de travail**|Spécifie le répertoire de travail du programme en cours de débogage. En [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], le répertoire de travail est celui à partir duquel l'application est lancée. Le répertoire de travail par défaut est \bin\Debug ou \bin\Release, en fonction de la configuration actuelle.|  
 |**Utiliser l’ordinateur distant**|Lorsque la case à cocher est activée, le débogage à distance est activé. Dans la zone de texte, vous pouvez taper le nom d’un ordinateur distant où l’application s’exécutera à des fins de débogage ou un [nom de serveur Msvsmon](../debugger/remote-debugging.md). L’emplacement du fichier EXE sur l’ordinateur distant est spécifié par la propriété Chemin de sortie dans l’onglet Générer. L'emplacement doit être un répertoire pouvant être partagé de l'ordinateur distant.|  

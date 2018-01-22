@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2 | Documents Microsoft
+title: IDebugMessageEvent2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,11 +15,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5e14e8ea2df83520724b9f6663c9624d54cf772c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e61b6bae37b9e37dc9e448122f4595f3cba20f7f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 Cette interface est utilisée par le moteur de débogage (DE) pour envoyer un message à Visual Studio qui requiert une réponse de l’utilisateur.  
@@ -49,7 +49,7 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="remarks"></a>Notes  
  Le D’utilisera cette interface s’il requiert une réponse spécifique à partir de l’utilisateur pour un message particulier. Par exemple, si le D’Obtient un message « Accès refusé » après une tentative de se connecter à distance à un programme, le D’envoie ce message particulier à Visual Studio dans un `IDebugMessageEvent2` événement avec le style de boîte de message `MB_RETRYCANCEL`. Cela permet à l’utilisateur à réessayer ou annuler l’opération d’attachement.  
   
- Le DE spécifie comment ce message doit être gérée en suivant les conventions de la fonction Win32 `MessageBox` (consultez [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8) pour plus d’informations).  
+ Le DE spécifie comment ce message doit être gérée en suivant les conventions de la fonction Win32 `MessageBox` (consultez [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) pour plus d’informations).  
   
  Utilisez le [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) interface pour envoyer des messages à Visual Studio qui ne nécessitent pas une réponse de l’utilisateur.  
   
@@ -58,7 +58,7 @@ IDebugMessageEvent2 : IUnknown
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   

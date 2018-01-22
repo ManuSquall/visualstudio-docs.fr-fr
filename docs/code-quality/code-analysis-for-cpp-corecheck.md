@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio C++ Core instructions vérificateur référence | Documents Microsoft"
 ms.custom: 
-ms.date: 11/15/2017
+ms.date: 01/18/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-code-analysis
@@ -13,11 +13,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: c17574722804409b58d648af66b255888e945db2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d5db13aa350e33a297981066f36c3d1dfd1ecb67
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Référence de l’outil d’analyse les instructions C++ Core
 Cette section répertorie les avertissements du vérificateur d’instructions C++ Core. Pour plus d’informations sur l’analyse du Code, consultez [/Analyze (analyse du Code)](/cpp/build/reference/analyze-code-analysis) et [démarrage rapide : analyse du Code pour C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
@@ -26,7 +26,7 @@ Cette section répertorie les avertissements du vérificateur d’instructions C
 
 ## <a name="ownerpointer-group"></a>Groupe de OWNER_POINTER
 
-[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)  
+[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)  
   Retourner un objet étendu au lieu d’un segment de mémoire allouée si elle a un constructeur de déplacement. Consultez [C++ Core instructions R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr). 
      
 [C26403 RESET_OR_DELETE_OWNER](C26403.md)  
@@ -55,8 +55,8 @@ Cette section répertorie les avertissements du vérificateur d’instructions C
 
 ## <a name="rawpointer-group"></a>Groupe de RAW_POINTER
  
-[C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md)  
-N’affectez pas le résultat d’une allocation ou un appel de fonction avec un propriétaire\<T > valeur de retour à un pointeur brut, utilisez le propriétaire<T> à la place. Consultez [C++ Core instructions I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
+[C26400  NO_RAW_POINTER_ASSIGNMENT](c26400.md)  
+N’affectez pas le résultat d’une allocation ou un appel de fonction avec un propriétaire\<T > valeur de retour à un pointeur brut ; utilisez propriétaire\<T > à la place. Consultez [C++ Core instructions I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
 
 [C26401 DONT_DELETE_NON_OWNER](c26401.md)  
 Ne supprimez pas un pointeur brut n’est pas un propriétaire\<T >. Consultez [C++ Core instructions I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
@@ -123,16 +123,30 @@ Ne supprimez pas un pointeur brut n’est pas un propriétaire\<T >. Consultez [
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md)  
   Initialiseur global accède à l’objet extern « symbole % ». Consultez [C++ Core instructions I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).  
   
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) Évitez sans nom des objets avec la construction personnalisée et la destruction. [ES.84 : Ne pas (tentez) déclarer une variable locale sans nom](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+
 ## <a name="class-group"></a>CLASSE de groupe
     
 [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md)  
   Si vous définissez ou supprimez toute opération par défaut dans le type '% symbole %', définissez ou voulez-vous les supprimer. Consultez [C++ Core instructions C.21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all).  
+
+
+[C26433 OVERRIDE_EXPLICITLY](c26433.md) fonction '% symbole %' doit être marquée avec 'override'. Consultez [ C.128 : fonctions virtuelles doivent spécifier un seul finale ou virtuelle, override,](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final). 
+
   
 [C26434 DONT_HIDE_METHODS](C26434.md)  
   La fonction '% symbol_1 %' masque une fonction non virtuelle '% symbol_2 %'. Consultez [C++ Core instructions C.128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).  
   
+
+[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) fonction « symbole % » doit spécifier un seul de 'virtual', 'override' ou 'final'. Consultez [ C.128 : fonctions virtuelles doivent spécifier un seul finale ou virtuelle, override,](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md). 
+
+
 [C26436 NEED_VIRTUAL_DTOR](C26436.md)  
   Le type '% symbole % avec une fonction virtuelle a besoin d’un destructeur non virtuel public virtuel ou protégé. Consultez [C++ Core instructions C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).  
+
+
+[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) destructeur de remplacement ne devez pas utiliser explicite 'substitution' ou 'virtual' spécificateurs. Consultez [C.128 : fonctions virtuelles doivent spécifier un seul finale ou virtuelle, override,](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+
 
 ## <a name="type-group"></a>TYPE de groupe
     
@@ -158,41 +172,41 @@ Ne supprimez pas un pointeur brut n’est pas un propriétaire\<T >. Consultez [
 
 ## <a name="const-group"></a>Groupe CONST
     
-C26460 USE_CONST_REFERENCE_ARGUMENTS :  
+C26460 USE_CONST_REFERENCE_ARGUMENTS  
   L’argument de référence '% argument %' pour la fonction 'fonction %' peut être marquée comme `const`. Consultez [C++ de base des recommandations con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).  
   
 C26461 USE_CONST_POINTER_ARGUMENTS : l’argument de pointeur 'argument %' pour la fonction 'fonction %' peut être marquée comme un pointeur vers `const`. Consultez [C++ de base des recommandations con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).  
   
-C26462 USE_CONST_POINTER_FOR_VARIABLE :  
+C26462 USE_CONST_POINTER_FOR_VARIABLE  
   La valeur pointée par '%variable%' attribuée qu’une seule fois, la marquer comme étant un pointeur vers `const`. Consultez [C++ de base des recommandations con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26463 USE_CONST_FOR_ELEMENTS :  
+C26463 USE_CONST_FOR_ELEMENTS  
   Les éléments du tableau 'tableau %' assignés qu’une seule fois, les éléments de marque `const`. Consultez [C++ de base des recommandations con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26464 USE_CONST_POINTER_FOR_ELEMENTS :  
+C26464 USE_CONST_POINTER_FOR_ELEMENTS  
   Les valeurs désignées par des éléments du tableau 'tableau %' sont affectées qu’une seule fois, marque les éléments comme pointeur vers `const`. Consultez [C++ de base des recommandations con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
 
-C26496 USE_CONST_FOR_VARIABLE :  
+C26496 USE_CONST_FOR_VARIABLE  
   La variable 'variable %' attribuée qu’une seule fois, marquez-le comme `const`. Consultez [C++ de base des recommandations con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26497 USE_CONSTEXPR_FOR_FUNCTION :  
+C26497 USE_CONSTEXPR_FOR_FUNCTION  
   Cet fonction % de fonction peut être marqué `constexpr` si vous le souhaitez évaluation au moment de la compilation. Consultez [C++ Core instructions F.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rf-constexpr).  
   
-C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL :  
+C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL  
   Cet fonction fonction appel % peut utiliser `constexpr` si vous le souhaitez évaluation au moment de la compilation. Consultez [C++ de base des recommandations con.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-constexpr).  
 
 ## <a name="type-group"></a>TYPE de groupe
-C26465 NO_CONST_CAST_UNNECESSARY :  
+C26465 NO_CONST_CAST_UNNECESSARY  
   N’utilisez pas `const_cast` pour caster `const`. `const_cast`n’est pas obligatoire ; constness ou la volatilité n'est pas supprimée par cette conversion. Consultez [Type.3 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).  
   
-C26466 NO_STATIC_DOWNCAST_POLYMORPHIC :  
+C26466 NO_STATIC_DOWNCAST_POLYMORPHIC  
   N’utilisez pas `static_cast` downcasts. Un cast d’un type polymorphe doit utiliser dynamic_cast. Consultez [Type.2 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast).  
   
-C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR :  
+C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR  
   N’utilisez pas `reinterpret_cast`. Un cast de void * peut utiliser `static_cast`. Consultez [Type.1 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).  
   
 [C26472 NO_CASTS_FOR_ARITHMETIC_CONVERSION](C26472.md)  
-  N’utilisez pas un `static_cast` pour les conversions arithmétiques. Utilisez des accolades, gsl::narrow_cast ou gsl::narow. Consultez [Type.1 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).  
+  N’utilisez pas un `static_cast` pour les conversions arithmétiques. Utiliser des accolades, gsl::narrow_cast ou gsl::narow. Consultez [Type.1 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).  
   
 [C26473 NO_IDENTITY_CAST](C26473.md)  
   Ne pas effectuer un cast entre types pointeur où le type source et le type de cible sont identiques. Consultez [Type.1 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).  
@@ -203,22 +217,22 @@ C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR :
 [C26475 NO_FUNCTION_STYLE_CASTS](C26475.md)  
   N’utilisez pas de style de la fonction C-casts. Consultez [C++ Core instructions ES.49](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es49-if-you-must-use-a-cast-use-a-named-cast).  
      
-C26490 NO_REINTERPRET_CAST :  
+C26490 NO_REINTERPRET_CAST  
   N’utilisez pas `reinterpret_cast`. Consultez [Type.1 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26491 NO_STATIC_DOWNCAST :  
+C26491 NO_STATIC_DOWNCAST  
   N’utilisez pas `static_cast` downcasts. Consultez [Type.2 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26492 NO_CONST_CAST :  
+C26492 NO_CONST_CAST  
   N’utilisez pas `const_cast` pour caster `const`. Consultez [Type.3 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
     
-C26493 NO_CSTYLE_CAST :  
+C26493 NO_CSTYLE_CAST  
   N’utilisez pas casts de style C. Consultez [Type.4 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type). 
      
-C26494 VAR_USE_BEFORE_INIT :  
+C26494 VAR_USE_BEFORE_INIT  
   La variable 'variable %' n’est pas initialisée. Toujours initialiser un objet. Consultez [Type.5 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26495 MEMBER_UNINIT :  
+C26495 MEMBER_UNINIT  
   La variable 'variable %' n’est pas initialisée. Toujours initialiser une variable membre. Consultez [Type.6 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
 ## <a name="bounds-group"></a>Groupe de limites
@@ -226,10 +240,10 @@ C26495 MEMBER_UNINIT :
 [C26481 NO_POINTER_ARITHMETIC](C26481.md)   
   N’utilisez pas opération arithmétique de pointeur. Utilisez étendue à la place. Consultez [Bounds.1 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
   
-C26482 NO_DYNAMIC_ARRAY_INDEXING :  
+C26482 NO_DYNAMIC_ARRAY_INDEXING  
   Uniquement les index dans les tableaux à l’aide d’expressions constantes. Consultez [Bounds.2 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
   
-C26483 STATIC_INDEX_OUT_OF_RANGE :  
+C26483 STATIC_INDEX_OUT_OF_RANGE  
   Valeur de valeur % est en dehors des limites (0, liée %) de la variable 'variable %'. Uniquement les index dans les tableaux à l’aide d’expressions de constante qui se trouvent dans les limites du tableau. Consultez [Bounds.2 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)   

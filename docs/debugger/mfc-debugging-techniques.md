@@ -29,11 +29,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1c4acfcd6cf289eae8f8abc58f589b2743b56a40
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="mfc-debugging-techniques"></a>Techniques de débogage MFC
 Si vous déboguez un programme MFC, les techniques de débogage suivantes peuvent vous être utiles.  
@@ -64,7 +64,7 @@ Si vous déboguez un programme MFC, les techniques de débogage suivantes peuven
     -   [Génération d'une application MFC avec les informations de débogage pour les modules sélectionnés](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- Les MFC fournissent une fonction spéciale, [AfxDebugBreak](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) , pour encoder de manière irréversible les points d'arrêt dans le code source :  
+ MFC fournit une spéciale [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) fonction pour le codage en dur des points d’arrêt dans le code source :  
   
 ```  
 AfxDebugBreak( );  
@@ -149,7 +149,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     |-----------|-----------------|  
     |**allocMemDF**|Activer l'allocateur de mémoire de diagnostic (par défaut).|  
     |**delayFreeMemDF**|Différer la libération de la mémoire lors des appels à `delete` ou `free` jusqu'à ce que le programme s'arrête. Votre programme allouera alors la quantité maximale de mémoire possible.|  
-    |**checkAlwaysMemDF**|Appeler [AfxCheckMemory](http://msdn.microsoft.com/Library/4644da71-7d14-41dc-adc0-ee9558fd7a28) chaque fois que la mémoire est allouée ou libérée.|  
+    |**checkAlwaysMemDF**|Appelez [AfxCheckMemory](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) chaque fois que mémoire est allouée ou libérée.|  
   
      Vous pouvez combiner ces valeurs en effectuant une opération OR logique, comme indiqué ci-après :  
   

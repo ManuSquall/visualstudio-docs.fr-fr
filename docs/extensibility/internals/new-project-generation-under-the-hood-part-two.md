@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a35010af9ee0b0d7ad885f607b8fc1e2d54a19ba
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nouvelle génération de projet : Dans les coulisses, deuxième partie
 Dans [nouvelle génération de projet : sous le capot, partie un](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) nous avons vu comment la **nouveau projet** boîte de dialogue zone est remplie. Supposons que vous avez sélectionné un **Application Windows Visual c#**, remplis le **nom** et **emplacement** zones de texte et cliqué sur OK.  
@@ -28,7 +28,7 @@ Dans [nouvelle génération de projet : sous le capot, partie un](../../extensi
 ## <a name="generating-the-solution-files"></a>Génération des fichiers de Solution  
  Choix d’un modèle d’application dirige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour décompresser et ouvrir le fichier .vstemplate correspondant et pour lancer un modèle pour interpréter les commandes XML dans ce fichier. Ces commandes créent des projets et des éléments de projet dans la solution nouvelle ou existante.  
   
- Le modèle décompresse les fichiers sources, appelés modèles d’élément, à partir du même dossier .zip qui contient le fichier .vstemplate. Le modèle copie ces fichiers dans le nouveau projet de personnalisation en conséquence. Pour une vue d’ensemble des modèles de projet et d’élément, consultez [NIB : modèles Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Le modèle décompresse les fichiers sources, appelés modèles d’élément, à partir du même dossier .zip qui contient le fichier .vstemplate. Le modèle copie ces fichiers dans le nouveau projet de personnalisation en conséquence.  
   
 ### <a name="template-parameter-replacement"></a>Remplacement de paramètre de modèle  
  Lorsque le modèle copie un modèle d’élément à un nouveau projet, il remplace tous les paramètres de modèle avec des chaînes pour personnaliser le fichier. Un paramètre de modèle est un jeton spécial qui est précédé et suivi d’un signe dollar, par exemple, un $date$.  

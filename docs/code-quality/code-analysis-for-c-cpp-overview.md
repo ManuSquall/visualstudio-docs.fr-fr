@@ -26,11 +26,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 84ba9274258fe41b93a980c815bfd808454b9061
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28a5e13c2c56c7ecdb65efdfc1bd0b3c6eb47bfc
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="code-analysis-for-cc-overview"></a>Vue d'ensemble de l'analyse du code C/C++
 L'outil d'analyse du code C/C++ fournit aux développeurs des informations sur d'éventuelles erreurs présentes dans leur code source C/C++. Les erreurs de codage courantes signalées par l'outil sont les dépassements de mémoire tampon, la mémoire désinitialisée, les déréférencements du pointeur null et les fuites de mémoire et de ressources.  
@@ -48,7 +48,7 @@ L'outil d'analyse du code C/C++ fournit aux développeurs des informations sur d
  Vous souhaiterez peut-être nécessitent que tous les source code archivages respectent certaines stratégies. En particulier, vous souhaitez vous assurer que l’analyse a été exécutée dans le cadre de la dernière build locale. Pour plus d’informations sur l’activation d’une stratégie d’archivage de l’analyse du code, consultez [création et à l’aide de Code analyse stratégies d’archivage](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
 ## <a name="team-build-integration"></a>Intégration de Team Build  
- Vous pouvez utiliser les fonctionnalités intégrées du système de génération pour exécuter l’outil d’analyse du code dans le cadre de la [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processus de génération. Pour plus d’informations, consultez l’article [Générer l’application](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+ Vous pouvez utiliser les fonctionnalités intégrées du système de génération pour exécuter l’outil d’analyse du code dans le cadre de la [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processus de génération. Pour plus d’informations, consultez [créer et libérer](/vsts/build-release/index).  
   
 ## <a name="command-line-support"></a>Prise en charge de ligne de commande  
  En plus de l’intégration complète dans l’environnement de développement, les développeurs peuvent également utiliser l’outil d’analyse à partir de la ligne de commande, comme indiqué dans l’exemple suivant :  

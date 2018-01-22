@@ -17,11 +17,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 9b3f46a0e4fb87e6064fb3e975cd6b7313270c13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 699f9176fd39cacaf2bb4f433cd9d2ceb8e326b5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Création d’un système de projet de base, partie 2
 La première procédure pas à pas dans cette série, [création d’un système de projet de base, partie 1](../extensibility/creating-a-basic-project-system-part-1.md), montre comment créer un projet de base du système. Cette procédure pas à pas repose sur le système de projet de base en ajoutant un modèle Visual Studio, une page de propriétés et autres fonctionnalités. Vous devez effectuer la première procédure avant de commencer à celle-ci.  
@@ -283,7 +283,7 @@ ZipProjects:
   
 -   $safeprojectname$ est le nom fourni par un utilisateur dans le **nouveau projet** boîte de dialogue, modifié afin de supprimer tous les caractères non sécurisés et les espaces.  
   
- Pour obtenir une liste exhaustive des paramètres de modèle, consultez [Paramètres de modèle](../ide/template-parameters.md).  Si vous souhaitez créer votre propre paramètre de modèle personnalisé, consultez [NIB : Comment : passer des paramètres personnalisés aux modèles](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+ Pour obtenir une liste exhaustive des paramètres de modèle, consultez [Paramètres de modèle](../ide/template-parameters.md).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Substitution de paramètres de modèle de projet  
   
