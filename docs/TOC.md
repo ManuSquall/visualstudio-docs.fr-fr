@@ -42,7 +42,7 @@
 ## [Installer les outils de génération dans un conteneur](install/build-tools-container.md)
 ### [Exemple avancé pour les conteneurs](install/advanced-build-tools-container.md)
 ### [Problèmes de conteneurs connus](install/build-tools-container-issues.md)
-# Guides de démarrage rapide
+# Démarrages rapides
 ## [Orientation de Visual Studio](ide/quickstart-ide-orientation.md)
 ## [Projets et solutions](ide/quickstart-projects-solutions.md)
 ## [Écrire du code dans l’éditeur](ide/quickstart-editor.md)
@@ -54,7 +54,7 @@
 ## [Visual Basic : créer une application console](ide/quickstart-visual-basic-console.md)
 # Didacticiels
 ## [C++ dans Visual Studio...](/cpp/build/vscpp-step-0-installation)
-## [Python dans Visual Studio...](python/vs-tutorial-01-01.md)
+## [Python dans Visual Studio...](python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 ## [R dans Visual Studio...](rtvs/getting-started-with-r.md)
 ## [Node.js dans Visual Studio](nodejs/tutorial-nodejs.md)
 ## [C# dans Visual Studio](ide/tutorial-csharp-aspnet-core.md)
@@ -84,13 +84,17 @@
 #### [Cibler une version spécifique du .NET Framework](ide/targeting-a-specific-dotnet-framework-version.md)
 ##### [Vue d’ensemble du multiciblage](ide/visual-studio-multi-targeting-overview.md)
 ##### [Cibler une version du .NET Framework](ide/how-to-target-a-version-of-the-dotnet-framework.md)
-#### Créer des modèles de projet et d’élément
+#### [Créer des modèles de projet et d’élément](ide/creating-project-and-item-templates.md)
 ##### [Créer des modèles de projet](ide/how-to-create-project-templates.md)
 ##### [Créer des modèles multiprojets](ide/how-to-create-multi-project-templates.md)
 ##### [Créer des modèles d’élément](ide/how-to-create-item-templates.md)
 ##### [Créer des modèles d’élément multifichier](ide/how-to-create-multi-file-item-templates.md)
 ##### [Créer des modèles web](ide/how-to-manually-create-web-templates.md)
 ##### [Dépanner des modèles](ide/how-to-troubleshoot-templates.md)
+#### [Localiser et organiser des modèles de projet et d’élément](ide/how-to-locate-and-organize-project-and-item-templates.md)
+#### [Personnaliser des modèles de projet et d’élément](ide/customizing-project-and-item-templates.md)
+##### [Mettre à jour des modèles existants](ide/how-to-update-existing-templates.md)
+##### [Substituer des paramètres dans un modèle](ide/how-to-substitute-parameters-in-a-template.md)
 #### [Prise en charge de l’IDE de Visual Studio 64 bits](ide/visual-studio-ide-64-bit-support.md)
 ### [Développer sans projet ou solution (« Ouvrir le dossier »)](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 ### [Écrire du code dans l’éditeur](ide/writing-code-in-the-code-and-text-editor.md)
@@ -193,7 +197,6 @@
 ###### [Langage .NET et conventions de mise en forme](ide/editorconfig-code-style-settings-reference.md)
 ###### [Conventions de nommage .NET](ide/editorconfig-naming-conventions.md)
 #### [Suivre votre code en personnalisant la barre de défilement](ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
-#### [Utilisation de la boîte à outils](ide/using-the-toolbox.md)
 #### [Afficher la structure du code](ide/viewing-the-structure-of-code.md)
 ##### [Affichage de classes et Explorateur d’objets, icônes](ide/class-view-and-object-browser-icons.md)
 ##### [Concevoir et afficher des classes et des types](ide/class-designer/TOC.md)
@@ -307,14 +310,9 @@
 ### [Création d’applications en langues bidirectionnelles](ide/creating-applications-in-bi-directional-languages.md)
 # Référence
 ## [Nouveautés](ide/whats-new-in-visual-studio.md)
-## [Modèles de projet et d’élément](ide/creating-project-and-item-templates.md)
-### [Localiser et organiser des modèles de projet et d’élément](ide/how-to-locate-and-organize-project-and-item-templates.md)
-### [Personnaliser des modèles de projet et d’élément](ide/customizing-project-and-item-templates.md)
-#### [Mettre à jour des modèles existants](ide/how-to-update-existing-templates.md)
-#### [Substituer des paramètres dans un modèle](ide/how-to-substitute-parameters-in-a-template.md)
 ### Modèles de projet et d’élément
 ### [Paramètres de modèle](ide/template-parameters.md)
-### [Informations de référence sur les schémas de modèles (extensibilité)](extensibility/visual-studio-template-schema-reference.md?toc=/visualstudio/toc.json)
+### [Informations de référence sur les schémas de modèles (extensibilité)](extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default)
 ## Éléments généraux de l’interface utilisateur
 ### [Hiérarchie d’appels](ide/reference/call-hierarchy.md)
 ### [Aperçu des modifications](ide/preview-changes.md)
