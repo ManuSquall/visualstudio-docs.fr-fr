@@ -16,34 +16,36 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Débogage distant ASP.NET Core IIS et sur Azure dans Visual Studio 2017
-Pour le Service d’applications Azure, nous recommandons que vous déboguez à l’aide de la [instantané débogueur](../debugger/debug-live-azure-applications.md) ou vous pouvez suivre les instructions de cette rubrique pour attacher le débogueur à partir de Visual Studio. Si vous exécutez Windows Server avec IIS sur une machine virtuelle Azure, vous pouvez également le définir pour le débogage distant. Ce guide explique comment installer et configurer une application Visual Studio 2017 ASP.NET Core, déployez-le sur IIS à l’aide d’Azure et attacher le débogueur distant à partir de Visual Studio.
+# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Débogage distant ASP.NET Core sur IIS dans Azure dans Visual Studio 2017
+
+Ce guide explique comment installer et configurer une application Visual Studio 2017 ASP.NET Core, déployez-le sur IIS à l’aide d’Azure et attacher le débogueur distant à partir de Visual Studio.
+
+La méthode recommandée pour le débogage distant sur Azure dépend de votre scénario :
+
+* Pour déboguer des noyaux de ASP.NET sur Azure App Service, consultez [Azure de déboguer les applications à l’aide du débogueur de l’instantané](../debugger/debug-live-azure-applications.md). Il s’agit de la méthode recommandée.
+* Pour déboguer des noyaux ASP.NET sur Azure App Service à l’aide des fonctionnalités de débogage plus classiques, suivez les étapes décrites dans cette rubrique (consultez la section [de débogage à distance sur Azure App Service](#remote_debug_azure_app_service)).
+
+    Dans ce scénario, vous devez déployer votre application à partir de Visual Studio vers Azure, mais vous n’avez pas besoin d’installez manuellement ou configurer les services IIS ou le débogueur distant (ces composants sont représentées par des lignes pointillées), comme indiqué dans l’illustration suivante.
+
+    ![Composants du débogueur distant](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+
+* Pour déboguer IIS sur une machine virtuelle Azure, suivez les étapes décrites dans cette rubrique (consultez la section [déboguer à distance sur une machine virtuelle Azure](#remote_debug_azure_vm)). Cela vous permet d’utiliser une configuration personnalisée d’IIS, mais les étapes de configuration et de déploiement sont plus complexes.
+
+    Pour une machine virtuelle Azure, vous devez déployer votre application à partir de Visual Studio vers Azure, et vous devez également installer manuellement le rôle IIS et le débogueur distant, comme indiqué dans l’illustration suivante.
+
+    ![Composants du débogueur distant](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+
+* Pour déboguer des noyaux de ASP.NET sur Azure Service Fabric, consultez [déboguer une application de Service Fabric distante](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 > [!WARNING]
 > Veillez à supprimer les ressources Azure que vous créez lorsque vous avez effectué les étapes de ce didacticiel. De cette façon, que vous pouvez éviter d’encourir de frais inutiles.
 
-Cette rubrique montre comment :
-
-* Débogage distant ASP.NET Core sur un Service d’application Azure
-
-* Débogage distant ASP.NET Core sur une machine virtuelle Azure
-
-Pour le Service d’applications Azure, vous devez déployer votre application à partir de Visual Studio vers Azure, mais vous n’avez pas besoin d’installez manuellement ou configurer les services IIS ou le débogueur distant (ces composants sont représentées par des lignes pointillées), comme indiqué dans l’illustration suivante.
-
-![Composants du débogueur distant](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
-
-Pour une machine virtuelle Azure, vous devez déployer votre application à partir de Visual Studio vers Azure, et vous devez également installer manuellement le rôle IIS et le débogueur distant, comme indiqué dans l’illustration suivante.
-
-![Composants du débogueur distant](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
-
-> [!NOTE]
-> Pour déboguer des noyaux de ASP.NET sur Azure Service Fabric, consultez [déboguer une application de Service Fabric distante](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 ### <a name="requirements"></a>Configuration requise
 
@@ -61,11 +63,11 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 
 4. Ouvrez le fichier About.cshtml.cs et définir un point d’arrêt dans le `OnGet` (méthode) (dans les modèles plus anciens, ouvrez plutôt HomeController.cs et définissez le point d’arrêt le `About()` méthode).
 
-## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Débogage distant ASP.NET Core sur un Service d’application Azure
+## <a name="remote_debug_azure_app_service"></a>Débogage distant ASP.NET Core sur un Service d’application Azure
 
 À partir de Visual Studio, vous pouvez rapidement publier et déboguer votre application à une instance entièrement d’IIS. Toutefois, la configuration d’IIS est prédéfinie et vous ne pouvez pas personnaliser. Pour plus d’instructions, consultez [déployer une application de web ASP.NET Core pour Azure à l’aide de Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Si vous avez besoin de la possibilité de personnaliser IIS, essayer de déboguer un [Azure VM](#BKMK_azure_vm).) 
 
-#### <a name="to-deploy-the-app-and-remote-debug"></a>Pour déployer l’application et le débogage distant
+#### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>Pour déployer l’application et le débogage distant à l’aide de l’Explorateur de serveurs
 
 1. Dans Visual Studio, cliquez sur le nœud du projet et choisissez **publier**.
 
@@ -73,7 +75,7 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 
     Pour obtenir des instructions détaillées, consultez [déployer une application de web ASP.NET Core pour Azure à l’aide de Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
-3. Dans **l’Explorateur de serveurs**, avec le bouton droit sur l’instance de Service de l’application et choisissez **attacher le débogueur**.
+3. Ouvrez **l’Explorateur de serveurs** (**vue** > **l’Explorateur de serveurs**), avec le bouton droit sur l’instance de Service de l’application et choisissez **attacher le débogueur**.
 
 4. Dans l’application ASP.NET en cours d’exécution, cliquez sur le lien vers le **sur** page.
 
@@ -81,7 +83,7 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 
     C’est tout ! Le reste des étapes de cette rubrique s’appliquent au débogage distant sur une machine virtuelle Azure.
 
-## <a name="BKMK_azure_vm"></a>Débogage distant ASP.NET Core sur une machine virtuelle Azure
+## <a name="remote_debug_azure_vm"></a>Débogage distant ASP.NET Core sur une machine virtuelle Azure
 
 Vous pouvez créer une machine virtuelle Azure pour Windows Server et puis installer et configurer IIS et les autres composants logiciels requis. Cela prend plus de temps que le déploiement à un Service d’application Azure et requiert que vous suivez les étapes restantes dans ce didacticiel.
 

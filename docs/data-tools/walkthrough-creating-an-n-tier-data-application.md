@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 7cc4d8420cd823964aeed790a412e462b14634c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9e513fc346991912dcc91e9a56062e49760d9779
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procédure pas à pas : création d'une application de données multicouche
 *Multicouches* des applications de données sont des applications qui accèdent aux données et sont divisées en plusieurs couches logiques, ou *niveaux*. La séparation des composants de l'application en couches distinctes favorise la possibilité de tenir à jour et de monter en charge l'application. Cela est possible grâce à une application plus facile des nouvelles technologies sur chaque couche sans avoir à reconcevoir toute la solution. L'architecture multicouche inclut une couche Présentation, une couche intermédiaire et une couche Données. La couche intermédiaire inclut généralement une couche d'accès aux données, une couche logique métier et des composants partagés tels que l'authentification et la validation. La couche Données inclut une base de données relationnelle. Les applications multicouches stockent généralement les informations sensibles dans la couche d'accès aux données de la couche intermédiaire, pour la tenir hors de portée des utilisateurs finaux qui accèdent à la couche Présentation. Pour plus d’informations, consultez [vue d’ensemble des Applications de données multicouches](../data-tools/n-tier-data-applications-overview.md).  
@@ -57,11 +57,11 @@ Dans cette procédure pas à pas, vous suivrez les étapes suivantes :
 ## <a name="prerequisites"></a>Prérequis  
 Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de données Northwind.  
   
-1.  Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement des éditions de SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), ou via le **le programme d’installation de Visual Studio**. Dans le programme d’installation Visual Studio, SQL Server Express LocalDB peut être installé dans le cadre de la **développement de bureau .NET** charge de travail, ou sous la forme d’un composant individuel.  
+1.  Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou via le **le programme d’installation de Visual Studio**. Dans le programme d’installation Visual Studio, SQL Server Express LocalDB peut être installé dans le cadre de la **développement de bureau .NET** charge de travail, ou sous la forme d’un composant individuel.  
   
 2.  Installer la base de données Northwind en procédant comme suit :  
 
-    1. Dans Visual Studio, ouvrez le **l’Explorateur d’objets SQL Server** fenêtre. (Explorateur d’objets SQL Server est installé dans le cadre de la **stockage de données et de traitement** charge de travail dans le programme d’installation Visual Studio.) Développez le **SQL Server** nœud. Avec le bouton droit sur votre instance de base de données locale et sélectionnez **nouvelle requête... **.  
+    1. Dans Visual Studio, ouvrez le **l’Explorateur d’objets SQL Server** fenêtre. (Explorateur d’objets SQL Server est installé dans le cadre de la **stockage de données et de traitement** charge de travail dans le programme d’installation Visual Studio.) Développez le **SQL Server** nœud. Avec le bouton droit sur votre instance de base de données locale et sélectionnez **nouvelle requête...** .  
 
        Une fenêtre d’éditeur de requête s’ouvre.  
 
@@ -79,7 +79,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Pour créer la solution multicouche et la bibliothèque de classes DataEntityTier  
 
-1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **nouveau**, **projet... **.  
+1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **nouveau**, **projet...** .  
   
 2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **de bureau Windows classique**.  
 
@@ -96,7 +96,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
   
 #### <a name="to-create-a-separate-class-library-for-the-tableadapters"></a>Pour créer une bibliothèque de classes distinct pour les TableAdapters  
   
-1.  Avec le bouton droit sur la solution dans l’Explorateur de solutions et choisissez **ajouter**, **nouveau projet... **.  
+1.  Avec le bouton droit sur la solution dans l’Explorateur de solutions et choisissez **ajouter**, **nouveau projet...** .  
   
 2.  Dans le **nouveau projet** boîte de dialogue, dans le volet central, sélectionnez **bibliothèque de classes**.  
   
@@ -166,7 +166,7 @@ Cette procédure pas à pas montre comment accéder à la couche d’accès aux 
   
 #### <a name="to-create-a-new-wcf-service-application"></a>Pour créer une application de service WCF  
   
-1.  Avec le bouton droit sur la solution dans l’Explorateur de solutions et choisissez **ajouter**, **nouveau projet... **.  
+1.  Avec le bouton droit sur la solution dans l’Explorateur de solutions et choisissez **ajouter**, **nouveau projet...** .  
   
 2.  Dans le **nouveau projet** boîte de dialogue, dans le volet gauche, sélectionnez **WCF**.  Dans le volet central, sélectionnez **bibliothèque du Service WCF**.  
   
@@ -290,7 +290,7 @@ Cette procédure pas à pas montre comment accéder à la couche d’accès aux 
   
 #### <a name="to-create-the-presentation-tier-project"></a>Pour créer le projet de couche Présentation  
   
-1.  Avec le bouton droit sur la solution dans l’Explorateur de solutions et choisissez **ajouter**, **nouveau projet... **.  
+1.  Avec le bouton droit sur la solution dans l’Explorateur de solutions et choisissez **ajouter**, **nouveau projet...** .  
   
 2.  Dans le **nouveau projet** boîte de dialogue, dans le volet gauche, sélectionnez **de bureau Windows classique**. Dans le volet central, sélectionnez **l’application Windows Forms**.  
   
@@ -338,7 +338,7 @@ Nous mettrons le projet PresentationTier comme projet de démarrage pour la solu
   
 3.  Faites glisser le **clients** nœud vers Form1.  
   
-4.  Dans le **des Sources de données** fenêtre, développez le **clients** nœud et recherchez le **commandes** nœud (le **commandes** nœud imbriqué dans le ** Clients** nœud).  
+4.  Dans le **des Sources de données** fenêtre, développez le **clients** nœud et recherchez le **commandes** nœud (le **commandes** nœud imbriqué dans le  **Clients** nœud).  
   
 5.  Faites glisser le **commandes** nœud vers Form1.  
   

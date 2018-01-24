@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: af76fad7d6288aff08de22b076d27cafbb5c3cff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8fbe818e233c8bbdaf4431c70b8962baf43a2ed2
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Systèmes de base de données compatible pour Visual Studio
 
@@ -29,13 +29,13 @@ Pour développer une application de connexion de données dans Visual Studio, vo
 
 Pour un système de base de données doit être accessible à partir d’applications .NET et pour être visible dans les fenêtres outils de données Visual Studio, il doit avoir un fournisseur de données ADO.NET. Un fournisseur doit prendre spécifiquement en charge Entity Framework si vous envisagez d’utiliser des modèles de données d’entité dans votre application .NET. De nombreux fournisseurs sont proposées par le biais du Gestionnaire de Package NuGet ou via le Marketplace Visual Studio.
 
-Si vous utilisez l’API de stockage Azure, installez les émulateurs de stockage Azure sur votre ordinateur local pendant le développement afin d’éviter des frais jusqu'à ce que vous êtes prêt à déployer en production. Pour plus d’informations, consultez [utiliser l’émulateur de stockage Azure pour le développement et le test](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/).
+Si vous utilisez l’API de stockage Azure, installez les émulateurs de stockage Azure sur votre ordinateur local pendant le développement afin d’éviter des frais jusqu'à ce que vous êtes prêt à déployer en production. Pour plus d’informations, consultez [utiliser l’émulateur de stockage Azure pour le développement et le test](/azure/storage/common/storage-use-emulator).
 
 La liste suivante inclut certains des systèmes de base de données plus populaires qui peuvent être utilisés dans les projets Visual Studio. La liste n’est pas exhaustive. Pour obtenir la liste des fournisseurs tiers qui offrent des fournisseurs de données ADO.NET qui permettent l’intégration en profondeur avec les outils de Visual Studio, consultez [fournisseurs de données ADO.NET](/dotnet/framework/data/adonet/data-providers).
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 
-SQL Server est la base de données Microsoft phare de l’offre. SQL Server 2016 offre des performances élevées, de fonctions avancées de sécurité et d’intégré complet, le rapport et de l’analytique. Il est fourni dans les différentes éditions qui sont conçues pour différentes utilisations : à partir de l’analytique d’entreprise hautement évolutive et hautes performances, à utiliser sur un seul ordinateur. SQL Server Express est une version complète de SQL Server qui est adaptée pour la redistribution et l’incorporation.  LocalDB est une version simplifiée de SQL Server Express qui ne nécessite aucune configuration et s’exécute dans le processus de votre application. Vous pouvez télécharger un ou les deux produits à partir de [la page de téléchargement de SQL Server Express](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx). La plupart des exemples SQL dans cette section utilisent SQL Server LocalDB. SQL Server Management Studio (SSMS) est une application de gestion de base de données autonome qui possède plus de fonctionnalités que celui fourni dans l’Explorateur d’objets Visual Studio SQL Server. Vous pouvez obtenir SSMS à partir du lien précédent.
+SQL Server est la base de données Microsoft phare de l’offre. SQL Server 2016 offre des performances élevées, de fonctions avancées de sécurité et d’intégré complet, le rapport et de l’analytique. Il est fourni dans les différentes éditions qui sont conçues pour différentes utilisations : à partir de l’analytique d’entreprise hautement évolutive et hautes performances, à utiliser sur un seul ordinateur. SQL Server Express est une version complète de SQL Server qui est adaptée pour la redistribution et l’incorporation.  LocalDB est une version simplifiée de SQL Server Express qui ne nécessite aucune configuration et s’exécute dans le processus de votre application. Vous pouvez télécharger un ou les deux produits à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express). La plupart des exemples SQL dans cette section utilisent SQL Server LocalDB. SQL Server Management Studio (SSMS) est une application de gestion de base de données autonome qui possède plus de fonctionnalités que celui fourni dans l’Explorateur d’objets Visual Studio SQL Server. Vous pouvez obtenir SSMS à partir du lien précédent.
 
 ## <a name="oracle"></a>Oracle
 
