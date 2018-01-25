@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66f99665fc9d580a3c0c366fa2922ea6a15e0e7c
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 74be5c65cbb4b2498f9904c6e021c774400bfbf8
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Démarrage rapide : Clonage d’un dépôt de code Python dans Visual Studio
 
-Une fois que vous avez [installé la prise en charge de Python dans Visual Studio 2017](installation.md), vous pouvez facilement cloner un dépôt de code Python et créer un projet à partir de celui-ci.
+Une fois que vous avez [installé la prise en charge de Python dans Visual Studio 2017](installing-python-support-in-visual-studio.md), vous pouvez facilement cloner un dépôt de code Python et créer un projet à partir de celui-ci.
 
 [!INCLUDE[install-github-extension](includes/install-github-extension.md)]
 
@@ -71,15 +71,15 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 14. Réexécutez le programme pour vérifier que la première vérification réussit, et le programme s’arrête sur le koan suivant. Continuez la correction des erreurs et réexécutez le programme comme vous le souhaitez.
 
 > [!Important]
-> Dans ce démarrage rapide, vous avez créé un clone direct du dépôt *python_koans* sur GitHub. Un dépôt de ce type est protégé par son auteur des modifications directes : par conséquent, la tentative de validation des modifications dans le dépôt échoue. Dans la pratique, les développeurs dupliquent (fork) ce type de dépôt dans leur propre compte GitHub, y apportent leurs modifications, puis créent des demandes de tirage (pull) pour envoyer ces modifications dans le dépôt d’origine. Ces étapes sont décrites dans [Didacticiel, Étape 6 : Utilisation de Git](vs-tutorial-01-06.md).
+> Dans ce démarrage rapide, vous avez créé un clone direct du dépôt *python_koans* sur GitHub. Un dépôt de ce type est protégé par son auteur des modifications directes : par conséquent, la tentative de validation des modifications dans le dépôt échoue. Dans la pratique, les développeurs dupliquent (fork) ce type de dépôt dans leur propre compte GitHub, y apportent leurs modifications, puis créent des demandes de tirage (pull) pour envoyer ces modifications dans le dépôt d’origine. Ces étapes sont décrites dans [Didacticiel, Étape 6 : Utilisation de Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Didacticiel : Utilisation de Python dans Visual Studio](vs-tutorial-01-01.md)
+> [Didacticiel : Utilisation de Python dans Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Création d’un environnement pour un interpréteur Python existant](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Installer la prise en charge de Python dans Visual Studio 2015 et antérieur](installation.md).
-- [Emplacements d’installation](installation.md#install-locations).
+- [Création d’un environnement pour un interpréteur Python existant](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Installer la prise en charge de Python dans Visual Studio 2015 et antérieur](installing-python-support-in-visual-studio.md).
+- [Emplacements d’installation](installing-python-support-in-visual-studio.md#install-locations).

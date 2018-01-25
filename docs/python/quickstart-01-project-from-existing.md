@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b400e8a8c9c69b0c18204c55522d287d55d845ab
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 7695287c2d9db90bc452be926ce574a1fb38b03e
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Démarrage rapide : Créer un projet Python à partir de code existant
 
-Une fois que vous avez [installé la prise en charge de Python dans Visual Studio 2017](installation.md), il est facile de placer du code Python existant dans un projet Visual Studio.
+Une fois que vous avez [installé la prise en charge de Python dans Visual Studio 2017](installing-python-support-in-visual-studio.md), il est facile de placer du code Python existant dans un projet Visual Studio.
 
 > [!Important]
 > Le processus décrit ici ne déplace pas ou ne copie pas les fichiers sources d’origine. Si vous voulez travailler avec une copie, dupliquez d’abord le dossier.
@@ -35,10 +35,10 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Didacticiel : Utilisation de Python dans Visual Studio](vs-tutorial-01-01.md)
+> [Didacticiel : Utilisation de Python dans Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Création d’un environnement pour un interpréteur Python existant](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Installer la prise en charge de Python dans Visual Studio 2015 et antérieur](installation.md).
-- [Emplacements d’installation](installation.md#install-locations).
+- [Création d’un environnement pour un interpréteur Python existant](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Installer la prise en charge de Python dans Visual Studio 2015 et antérieur](installing-python-support-in-visual-studio.md).
+- [Emplacements d’installation](installing-python-support-in-visual-studio.md#install-locations).

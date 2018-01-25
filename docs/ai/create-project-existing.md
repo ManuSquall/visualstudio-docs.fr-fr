@@ -24,7 +24,7 @@ Une fois que vous avez [installé Visual Studio Tools pour AI](installation.md),
 8. Si vous le souhaitez, exécutez le programme en appuyant sur Ctrl+F5 ou en sélectionnant **Déboguer > Démarrer sans débogage**. 
 
 > [!div class="nextstepaction"]
-> [Didacticiel : Utilisation de Python dans Visual Studio](https://docs.microsoft.com/visualstudio/python/vs-tutorial-01-00)
+> [Didacticiel : Utilisation de Python dans Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>Voir aussi
 

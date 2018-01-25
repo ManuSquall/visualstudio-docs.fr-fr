@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utiliser des points d’arrêt dans le débogueur Visual Studio
 Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’exécution du débogueur, éventuellement pour voir l’état des variables de code ou examiner la pile des appels. Ils constituent l’une des techniques de débogage les plus importantes de la boîte à outils d’un développeur.  
@@ -160,6 +160,9 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
  Si vous définissez une condition de point d’arrêt dont la syntaxe est incorrecte, un message d’avertissement s’affiche. Si vous spécifiez une condition de point d’arrêt avec une syntaxe valide, mais dont la sémantique n’est pas valide, un message d’avertissement apparaît quand le point d’arrêt est atteint pour la première fois. Dans les deux cas, le débogueur arrête l’exécution quand le point d’arrêt non valide est atteint. Le point d’arrêt n’est ignoré que si la condition est valide et prend la valeur `false`.  
   
  La condition peut être n’importe quelle expression valide reconnue par le débogueur. Pour plus d’informations sur les expressions valides, consultez [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
+
+> [!NOTE]
+> Vous pouvez utiliser **CTRL + ENTRÉE** pour fermer la **les paramètres de point d’arrêt** fenêtre.
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Utilisation d’ID d’objet dans des conditions de point d’arrêt (C# et F#)  
  Vous voulez parfois observer le comportement d’un objet spécifique ; par exemple, vous pouvez vouloir découvrir pourquoi un objet a été inséré plusieurs fois dans une collection. En C# et en F#, vous pouvez créer des ID d’objet pour des instances spécifiques de [types référence](/dotnet/csharp/language-reference/keywords/reference-types) et les utiliser dans des conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.  Pour créer un ID d’objet, procédez comme suit :  
@@ -232,20 +235,6 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
 ## <a name="export-and-import-breakpoints"></a>Exporter et importer des points d’arrêt  
  Vous pouvez exporter un point d’arrêt vers un fichier XML en cliquant avec le bouton droit sur le point d’arrêt et en sélectionnant **Exporter**. Le fichier est enregistré par défaut dans le répertoire de la solution. Pour importer des points d’arrêt, ouvrez la fenêtre **Points d’arrêt** (**Ctrl+Alt+B**) puis, dans la barre d’outils, cliquez sur la flèche pointant vers la droite (l’info-bulle est **Importer les points d’arrêt d’un fichier**).  
   
-## <a name="troubleshoot"></a>Résoudre les points d’arrêt 
-  
-### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>J’ai supprimé un point d’arrêt, mais je continue de l’atteindre quand je relance le débogage  
- Si vous avez supprimé un point d’arrêt pendant le débogage, il est possible dans certains cas que vous atteigniez à nouveau le point d’arrêt au prochain lancement du débogage. Pour cesser d’atteindre ce point d’arrêt, assurez-vous que toutes les instances du point d’arrêt sont supprimées de la fenêtre **Points d’arrêt** .  
-  
-### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>Le débogueur ne peut pas localiser la bonne version du fichier source pour un point d’arrêt  
- Si un fichier source a été modifié et que la source ne correspond plus au code que vous déboguez, le débogueur peut rechercher le fichier source correspondant à un point d’arrêt, même si le fichier source existe.  
-  
-1.  Si vous souhaitez que Visual Studio pour afficher le code source qui ne correspond pas à la version que vous déboguez, choisissez **Déboguer > Options et paramètres**. Dans la page **Débogage/Général** , désactivez l’option **Les fichiers sources doivent correspondre exactement à la version d’origine** .  
-  
-2.  Vous pouvez aussi lier le point d’arrêt au fichier source. Sélectionnez le point d’arrêt et choisissez **Conditions** dans le menu contextuel. Cochez la case **Permettre que le code source soit différent de la version d’origine** dans la fenêtre **Paramètres de point d’arrêt** .  
-  
-### <a name="breakpoints-dont-work-in-a-dll"></a>Les points d’arrêt ne fonctionnent pas dans une DLL  
- Vous ne pouvez pas définir un point d’arrêt dans un fichier source si le débogueur n’a pas chargé les informations de débogage du module dans lequel le code est situé. L’affichage de messages tels que **le point d’arrêt ne sera pas défini**est l’un des symptômes possibles. Le glyphe du point d’arrêt d’avertissement s’affiche à l’emplacement du point d’arrêt. Cependant, ces points d’arrêt d’avertissement deviennent de véritables points d’arrêt une fois que le code est chargé. Pour plus d’informations sur le chargement de symboles, consultez [spécifier de symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
-  
 ## <a name="see-also"></a>Voir aussi  
- [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md)
+[Résoudre les points d’arrêt dans le débogueur Visual Studio](../debugger/troubleshooting-breakpoints.md)  
+[Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md)

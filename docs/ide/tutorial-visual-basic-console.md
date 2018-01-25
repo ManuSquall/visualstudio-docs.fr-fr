@@ -13,11 +13,11 @@ ms.author: tglee
 manager: ghogen
 dev_langs: vb
 ms.workload: multiple
-ms.openlocfilehash: 1ceda9e53426255331c85996b54378a91324a3fa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Bien démarrer avec Visual Basic dans Visual Studio
 Dans ce didacticiel pour Visual Basic (VB), vous allez utiliser Visual Studio pour créer et exécuter différentes applications console tout en explorant certaines fonctionnalités de [l’environnement de développement intégré (IDE)](visual-studio-ide.md) de Visual Studio.
@@ -32,7 +32,7 @@ Visual Basic est un langage de programmation de type sécurisé conçu pour êtr
 Visual Studio est une suite de développement intégrée d’outils de productivité pour les développeurs. Il s’agit d’un programme qui sert à créer des applications et des programmes.  
 ### <a name="what-is-a-console-app"></a>Qu’est-ce qu’une application console ?
 Une application console prend une entrée et affiche la sortie dans une fenêtre de ligne de commande, également appelée console.
-### <a name="what-is-net-core"></a>Qu'est-ce que .NET Core ?
+### <a name="what-is-net-core"></a>Qu'est-ce que le .NET Core ?
 .NET Core est la suite logique du .NET Framework. Là où le .NET Framework vous permettait de partager du code entre les langages de programmation, .NET Core ajoute la capacité à partager du code entre des plateformes. De plus, il est open source. (Le .NET Framework et .NET Core incluent des bibliothèques de fonctionnalités prégénérées ainsi qu’un CLR (Common Language Runtime) qui agit comme une machine virtuelle dans laquelle exécuter votre code.)
 
 ## <a name="start-developing"></a>Commencer à développer
@@ -82,11 +82,11 @@ Nous allons créer une application qui vous demande votre nom et l’affiche, ai
      Console.ReadKey(True)
     ```
 
-    Ce code remplace les instructions [Console.WriteLine](/dotnet/api/system.console.writeline?view=netframework-4.7.1), [Console.Write](/dotnet/api/system.console.write?view=netframework-4.7.1) et [Console.ReadKey]() existantes.
+    Ce code remplace les instructions <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> et <xref:System.Console.ReadKey%2A> existantes.
 
  ![Fenêtre de code affichant le code « Quel est votre nom »](../ide/media/vb-codewindow-what-name.png)
 
-3. Quand la fenêtre de console s’ouvre, entrez votre nom. La fenêtre de console doit ressembler à la capture d’écran suivante :       
+3. Quand la fenêtre de console s’ouvre, entrez votre nom. La fenêtre de console doit ressembler à la capture d’écran suivante :
 
    ![Fenêtre de console qui affiche What Is Your Name, la date et l’heure, et le message Press any key to continue](../ide/media/vb-console-what-name.png)
 

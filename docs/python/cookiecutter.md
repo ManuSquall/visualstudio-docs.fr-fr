@@ -15,17 +15,17 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6c75991ed6c55d7905bcaaca5947f7f32897ab14
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d87beb4e8f475bd52c5be7f1d75f27ecf3b691ac
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="using-the-cookiecutter-extension"></a>Utilisation de l’extension Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) fournit une interface utilisateur graphique pour découvrir des modèles, des options de modèle d’entrée et créer des projets et des fichiers. Cette extension est incluse avec Visual Studio 2017 et peut être installée séparément dans les versions antérieures de Visual Studio.
 
-Cookiecutter nécessite Python 3.3 ou version ultérieure (32 bits ou 64 bits) ou Anaconda 3 4.2 ou version ultérieure (32 bits ou 64 bits). Si aucun interpréteur Python approprié n’est disponible, Visual Studio affiche un avertissement. Si vous installez un interpréteur Python pendant l’exécution de Visual Studio, cliquez sur le bouton Accueil dans la barre d’outils Cookiecutter pour détecter l’interpréteur nouvellement installé. (Consultez [Environnements Python](python-environments.md) pour plus d’informations sur les environnements en général.)
+Cookiecutter nécessite Python 3.3 ou version ultérieure (32 bits ou 64 bits) ou Anaconda 3 4.2 ou version ultérieure (32 bits ou 64 bits). Si aucun interpréteur Python approprié n’est disponible, Visual Studio affiche un avertissement. Si vous installez un interpréteur Python pendant l’exécution de Visual Studio, cliquez sur le bouton Accueil dans la barre d’outils Cookiecutter pour détecter l’interpréteur nouvellement installé. (Consultez [Environnements Python](managing-python-environments-in-visual-studio.md) pour plus d’informations sur les environnements en général.)
 
 Une fois l’installation terminée, sélectionnez **Affichage > Explorateur Cookiecutter** pour ouvrir sa fenêtre :
 

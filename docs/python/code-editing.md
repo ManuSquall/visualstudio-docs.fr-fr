@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 16f0e7d406e042d16fff4fbe257b62bac97253c3
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 518f952f4b983acbcd3d2f508126f5298e16d579
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="editing-python-code"></a>Modification de code Python
 
-Comme les développeurs passent beaucoup de temps dans l’éditeur de code, la [prise en charge de Python dans Visual Studio](installation.md) fournit plusieurs fonctionnalités pour améliorer la productivité. Ces fonctionnalités comprennent la mise en surbrillance de la syntaxe IntelliSense, la saisie semi-automatique, l’aide de signature, les substitutions de méthode, la recherche et la navigation. 
+Comme les développeurs passent beaucoup de temps dans l’éditeur de code, la [prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md) fournit plusieurs fonctionnalités pour améliorer la productivité. Ces fonctionnalités comprennent la mise en surbrillance de la syntaxe IntelliSense, la saisie semi-automatique, l’aide de signature, les substitutions de méthode, la recherche et la navigation. 
 
 Dans cette rubrique :
 
@@ -33,7 +33,7 @@ Dans cette rubrique :
 
 Consultez [Écriture de code dans l’éditeur de code et de texte](../ide/writing-code-in-the-code-and-text-editor.md) pour vous documenter sur la modification de code dans Visual Studio. Consultez également [Mode Plan](../ide/outlining.md), qui vous permet de rester concentré sur certaines sections de votre code. La prise en charge de Python inclut l’utilisation de l’Explorateur d’objets de Visual Studio (**Affichage > Autres fenêtres > Explorateur d’objets** ou Ctrl+W,J) pour l’inspection des classes définies dans chaque module et des fonctions définies dans ces classes. 
 
-L’éditeur est également intégré à la fenêtre interactive dans Visual Studio, ce qui facilite l’échange de code entre les deux. Pour plus d’informations, consultez [Étape 3 du didacticiel : Utilisation de la fenêtre REPL interactive](vs-tutorial-01-03.md) et [Utilisation de la fenêtre REPL interactive - Envoi de code à la commande interactive](interactive-repl.md#send-code-to-interactive-command).
+L’éditeur est également intégré à la fenêtre interactive dans Visual Studio, ce qui facilite l’échange de code entre les deux. Pour plus d’informations, consultez [Étape 3 du didacticiel : Utilisation de la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) et [Utilisation de la fenêtre REPL interactive - Envoi de code à la commande interactive](interactive-repl.md#send-code-to-interactive-command).
 
 Pour une introduction à l’édition de code Python, consultez [Editing Python Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2 minutes 30 secondes) :
 
@@ -41,7 +41,7 @@ Pour une introduction à l’édition de code Python, consultez [Editing Python 
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense fournit [les saisies semi-automatiques](#completions), [l’assistance pour la signature](#signature-help), [Info express](#quick-info) et [la coloration du code](#code-coloring). Pour améliorer le niveau de performance, IntelliSense dépend de la base de données de saisie semi-automatique qui est générée pour chaque environnement Python dans votre projet. Il est possible que les bases de données doivent être actualisées si vous ajoutez, supprimez ou mettez à jour des packages. Leur état est affiché dans la fenêtre **Environnements Python** (de la même famille que l’Explorateur de solutions) de l’onglet **IntelliSense** (consultez [Environnements Python](python-environments.md)). 
+IntelliSense fournit [les saisies semi-automatiques](#completions), [l’assistance pour la signature](#signature-help), [Info express](#quick-info) et [la coloration du code](#code-coloring). Pour améliorer le niveau de performance, IntelliSense dépend de la base de données de saisie semi-automatique qui est générée pour chaque environnement Python dans votre projet. Il est possible que les bases de données doivent être actualisées si vous ajoutez, supprimez ou mettez à jour des packages. Leur état est affiché dans la fenêtre **Environnements Python** (de la même famille que l’Explorateur de solutions) de l’onglet **IntelliSense** (consultez [Environnements Python](managing-python-environments-in-visual-studio.md)). 
 
 ### <a name="completions"></a>Saisies semi-automatiques
 
