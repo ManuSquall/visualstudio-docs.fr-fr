@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d14263c228cdbedc0f74acc20d81cfe58380812f
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: b33c96844abc9bbf4cc7bcd403626980e0bf37a5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projets de service cloud Azure pour Python
 
@@ -91,7 +91,7 @@ Pour Services cloud, le script `ConfigureCloudService.ps1` utilise `pip` pour in
 
 Notez que les instances de service cloud n’incluent aucun compilateur C, ce qui signifie que toutes les bibliothèques avec des extensions C doivent fournir des binaires précompilés.
 
-pip et ses dépendances, ainsi que les packages contenus dans le fichier `requirements.txt`, sont téléchargés automatiquement et peuvent être assimilés à l’utilisation de bande passante facturable. Consultez [Gestion des packages requis](python-environments.md#managing-required-packages-requirementstxt) pour plus d’informations sur la gestion des fichiers `requirements.txt`.
+pip et ses dépendances, ainsi que les packages contenus dans le fichier `requirements.txt`, sont téléchargés automatiquement et peuvent être assimilés à l’utilisation de bande passante facturable. Consultez [Gestion des packages requis](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt) pour plus d’informations sur la gestion des fichiers `requirements.txt`.
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
