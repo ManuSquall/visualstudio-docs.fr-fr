@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Gestion de Python sur Azure App Service
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) est une offre PaaS (Platform-as-a-Service) pour les applications web, qu’il s’agisse de sites accessibles via un navigateur, d’API REST utilisées par vos propres clients ou de traitement déclenché par un événement. App Service prend entièrement en charge l’utilisation de Python pour implémenter des applications.
 
-Une prise en charge personnalisable de Python sur Azure App Service est fournie sous la forme d’un ensemble *d’extensions de site* App Service qui contiennent chacune une version spécifique du runtime Python. Vous pouvez alors installer les packages souhaités directement dans cet environnement, comme décrit dans cette rubrique. En personnalisant l’environnement dans le service App Service lui-même, vous n’avez pas besoin gérer les packages dans vos projets d’application web ou de les charger avec le code de l’application. 
+Une prise en charge personnalisable de Python sur Azure App Service est fournie sous la forme d’un ensemble *d’extensions de site* App Service qui contiennent chacune une version spécifique du runtime Python. Vous pouvez alors installer les packages souhaités directement dans cet environnement, comme décrit dans cette rubrique. En personnalisant l’environnement dans le service App Service lui-même, vous n’avez pas besoin gérer les packages dans vos projets d’application web ou de les charger avec le code de l’application.
 
 > [!Tip]
 > Bien que Python 2.7 et 3.4 soient installés par défaut sur App Service dans les dossiers racine du serveur, vous ne pouvez pas personnaliser ni installer des packages dans ces environnements, et vous ne devez pas dépendre de leur présence. Vous devez à la place vous appuyer sur une extension de site que vous contrôlez, comme décrit dans cette rubrique.
@@ -87,7 +88,7 @@ Commencez par rechercher le chemin complet du fichier `python.exe` de l’extens
 
 Une extension de site Python est installée sur le serveur, sous `d:\home` dans un dossier approprié pour la version de Python et pour l’architecture (sauf dans le cas de quelques versions plus anciennes). Par exemple, Python 3.6.1 x64 est installé dans `d:\home\python361x64`. Le chemin complet de l’interpréteur Python est alors `d:\home\python361x64\python.exe`.
 
-Pour voir le chemin d’accès spécifique de votre service App Service, sélectionnez **Extensions** dans la page App Service, puis sélectionnez l’extension dans la liste. 
+Pour voir le chemin d’accès spécifique de votre service App Service, sélectionnez **Extensions** dans la page App Service, puis sélectionnez l’extension dans la liste.
 
 ![Liste des extensions sur Azure App Service](media/python-on-azure-extension-list.png)
 
@@ -165,7 +166,7 @@ L’interpréteur Python installé via une extension de site n’est qu’une pa
 
 Pour installer des packages directement dans l’environnement du serveur, utilisez une des méthodes suivantes :
 
-| Méthodes | Utilisation | 
+| Méthodes | Utilisation |
 | --- | --- |
 | [Console Kudu d’Azure App Service](#azure-app-service-kudu-console) | Installe des packages de façon interactive. Les packages doivent être du Python pur ou doivent publier des wheels. |
 | [API REST Kudu](#kudu-rest-api) | Peut être utilisée pour automatiser l’installation de packages.  Les packages doivent être du Python pur ou doivent publier des wheels. |
@@ -199,7 +200,7 @@ La [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) vous do
     L’utilisation de `requirements.txt` est recommandée, car il est facile de reproduire exactement votre ensemble de packages à la fois localement et sur le serveur. N’oubliez pas de revenir à la console après avoir déployé des modifications apportées à `requirements.txt` et de réexécuter la commande.
 
 > [!Note]
-> Comme il n’y a pas de compilateur C sur App Service, vous devez installer le format wheel pour les packages avec des modules d’extension natifs. De nombreux packages populaires fournissent leur propre format wheel. Pour les packages qui ne le font pas, utilisez `pip wheel <package_name>` sur votre ordinateur de développement local, puis chargez le format wheel sur votre site. Pour obtenir un exemple, consultez [Gestion des packages requis](python-environments.md#managing-required-packages)
+> Comme il n’y a pas de compilateur C sur App Service, vous devez installer le format wheel pour les packages avec des modules d’extension natifs. De nombreux packages populaires fournissent leur propre format wheel. Pour les packages qui ne le font pas, utilisez `pip wheel <package_name>` sur votre ordinateur de développement local, puis chargez le format wheel sur votre site. Pour obtenir un exemple, consultez [Gestion des packages requis](python-environments.md#managing-required-packages-requirementstxt).
 
 ### <a name="kudu-rest-api"></a>API REST Kudu
 

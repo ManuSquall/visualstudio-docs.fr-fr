@@ -63,11 +63,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4f26fcfb6b12266dd980fb8c38075e1937fcc022
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bde177cb8f9ec8e72a331c785addfa7fead64dc7
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>Écrire du code dans l’éditeur de code
 L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l’écriture et la gestion de votre code et de votre texte. Vous pouvez développer et réduire différents blocs de code en utilisant le mode Plan. Vous pouvez obtenir plus d’informations sur le code en utilisant IntelliSense, **l’Explorateur d’objets**et la hiérarchie d’appels. Vous pouvez rechercher du code en utilisant des fonctionnalités telles que **Atteindre**, **Atteindre la définition** et **Rechercher toutes les références**. Vous pouvez insérer des blocs de code à l’aide d’extraits de code et vous pouvez générer du code en utilisant des fonctionnalités telles que **Générer à partir de l’utilisation**. Si vous n’avez encore jamais utilisé l’éditeur Visual Studio, consultez [Modification de votre code](https://www.visualstudio.com/features/ide-vs) pour obtenir une vue d’ensemble rapide.  
@@ -130,9 +130,10 @@ Pour savoir où des éléments de code particuliers sont référencés dans tout
 ## <a name="customize-the-editor"></a>Personnaliser l’éditeur  
 Vous pouvez partager vos paramètres Visual Studio avec un autre développeur, rendre vos paramètres conformes à une norme ou rétablir les paramètres par défaut de Visual Studio à l’aide de la commande **Assistant Importation et exportation de paramètres** du menu **Outils**. Dans l’**Assistant Importation et exportation de paramètres**, vous pouvez changer des paramètres généraux sélectionnés ou des paramètres spécifiques à un langage ou à un projet.
 
-Pour définir de nouvelles touches d’accès rapide ou redéfinir les touches d’accès rapide existantes, accédez à **Outils**, **Options**, **Environnement**, **Claviers**. Pour plus d’informations sur les touches d’accès rapide, consultez [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+Pour définir de nouvelles touches d’accès rapide ou redéfinir les touches d’accès rapide existantes, accédez à **Outils**, **Options**, **Environnement**, **Claviers**. Pour plus d’informations sur les touches d’accès rapide, consultez [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Pour plus d’informations sur la personnalisation de l’éditeur, consultez [Personnalisation de l’éditeur](../ide/customizing-the-editor.md). Pour plus d’informations sur les options de l’éditeur spécifiques au langage, consultez [Utilisation de l’environnement de développement Visual Studio pour C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) et [Options, Éditeur de texte, JavaScript, Mise en forme](../ide/reference/options-text-editor-javascript-formatting.md).
+Pour plus d’informations sur la personnalisation de l’éditeur, consultez [Personnalisation de l’éditeur](../ide/customizing-the-editor.md). Pour les options de l’éditeur spécifiques à JavaScript, consultez [Options, Éditeur de texte, JavaScript, Mise en forme](../ide/reference/options-text-editor-javascript-formatting.md).
 
-## <a name="see-also"></a>Voir aussi  
- [IDE Visual Studio](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>Voir aussi
+
+[IDE Visual Studio](../ide/visual-studio-ide.md)

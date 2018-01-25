@@ -18,11 +18,11 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd5626af6417b5f0010545874bd15c86b30a303a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7275985d07f9f564dac98ba39e5ec31618dcaac4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="functions-javascript"></a>Fonctions (JavaScript)
 Les fonctions [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] exécutent des actions et peuvent également retourner des valeurs. Parfois, il s'agit du résultat d'un calcul ou d'une comparaison. Les fonctions sont également appelées « méthodes globales ».  
@@ -232,7 +232,7 @@ console.log(f(3, 3, 3));
   
 <a name="Rest"></a>   
 ## <a name="rest-parameters"></a>Paramètres REST  
- Les paramètres rest, spécifiés par l’opérateur spread (), vous permettent de convertir des arguments consécutifs d’un appel de fonction en tableau.  
+ Les paramètres rest, spécifiés par l’opérateur spread `...`, vous permettent de convertir des arguments consécutifs d’un appel de fonction en tableau.  
   
  Les paramètres rest éliminent le besoin d'utiliser l'objet `arguments`. Les paramètres rest présentent des différences par rapport à l'objet `arguments`, notamment :  
   

@@ -1,5 +1,6 @@
 ---
 title: "Démarrage rapide : utiliser Visual Studio pour créer votre première application web Python | Microsoft Docs"
+description: "Une brève introduction à l’utilisation de Python dans Visual Studio, qui génère une application web simple à l’aide de l’infrastructure Falcon."
 ms.custom: 
 ms.date: 01/08/2018
 ms.reviewer: 
@@ -12,12 +13,14 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 dev_langs: python
-ms.workload: python
-ms.openlocfilehash: 226f673dbd305f9dabf759cb11c6537a2f3ba637
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 684cbe21a7f6454549d2e014682533697306152b
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application web Python
 
@@ -67,7 +70,7 @@ Dans ce guide de démarrage rapide, toutefois, vous utilisez la bibliothèque, F
 
 Pour plus d’informations sur Falcon, visitez [falconframework.org](https://falconframework.org/).
 
-Notez qu’au lieu d’installer les bibliothèques dans l’environnement global, les développeurs créent généralement un « environnement virtuel » dans lequel installer les bibliothèques pour un projet spécifique. De nombreux modèles de projets Python dans Visual Studio incluent un fichier `requirements.txt` qui répertorie les bibliothèques dont dépend le modèle. Le fait de créer un projet à partir de l’un de ces modèles déclenche la création d’un environnement virtuel dans lequel les bibliothèques sont installées. Pour plus d’informations, consultez [Environnements Python - Environnements virtuels](../python/python-environments.md#virtual-environments).
+Notez qu’au lieu d’installer les bibliothèques dans l’environnement global, les développeurs créent généralement un « environnement virtuel » dans lequel installer les bibliothèques pour un projet spécifique. De nombreux modèles de projets Python dans Visual Studio incluent un fichier `requirements.txt` qui répertorie les bibliothèques dont dépend le modèle. Le fait de créer un projet à partir de l’un de ces modèles déclenche la création d’un environnement virtuel dans lequel les bibliothèques sont installées. Pour plus d’informations, consultez [Environnements Python - Environnements virtuels](../python/python-environments.md#creating-virtual-environments).
 
 ## <a name="add-a-code-file"></a>Ajouter un fichier de code
 

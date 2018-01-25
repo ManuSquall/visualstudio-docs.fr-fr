@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76b88d48b78ebab2058a2fa13feef327908f2b24
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procédure pas à pas : création d'un environnement de build sur plusieurs ordinateurs
 
@@ -29,7 +29,6 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 Ce document ne confère pas de droits pour redistribuer le logiciel en externe ou pour fournir des environnements de build à des tiers.  
   
 > Exclusion de responsabilité<br /><br /> Ce document est fourni « en l’état ». Nous avons testé les étapes décrites, mais nous ne pouvons pas tester exhaustivement chaque configuration. Nous tenterons de maintenir le document à jour avec toute information supplémentaire obtenue. Les informations et opinions présentées dans ce document, notamment les URL et autres références à des sites web Internet, peuvent être modifiées sans information préalable. Microsoft n’offre aucune garantie, expresse ou implicite, concernant les informations fournies ici. Vous assumez tous les risques liés à leur utilisation.<br /><br /> Ce document ne vous donne aucun droit légal de propriété intellectuelle quant aux produits Microsoft. Vous pouvez copier et utiliser ce document à titre de référence interne.<br /><br /> Vous n’avez aucune obligation de faire à Microsoft des suggestions, commentaires ou autre retour concernant ce document. Toutefois, tout commentaire que vous fournissez volontairement peut être utilisé dans des produits Microsoft et les spécifications liées ou dans une autre documentation (collectivement, les "Offres Microsoft") qui peuvent elles-mêmes être utilisées par des tiers pour développer leurs propres produits. Par conséquent, si vous envoyez des retours sous forme de commentaires à Microsoft concernant n’importe quelle version de ce document ou les Offres Microsoft auxquelles ils s’appliquent, vous acceptez les points suivants : (a) Microsoft peut librement utiliser, reproduire, autoriser, distribuer et commercialiser vos commentaires dans toute Offre Microsoft ; (b) vous n’accorderez également aux tiers, sans frais, que les droits de brevet nécessaires pour permettre à d’autres produits d’utiliser ou d’interagir avec toutes les parties spécifiques d’un produit Microsoft qui incorporent vos commentaires ; et (c) vous n’enverrez à Microsoft aucun commentaire (i) pour lequel vous avez une raison de croire qu’il est soumis à un brevet, un copyright ou une autre revendication de propriété intellectuelle ou un autre droit envers un tiers ; ou (ii) qui soit soumis aux termes d’un contrat de licence exigeant que toute Offre Microsoft intégrant ou dérivée de ces commentaires, ou d’une autre propriété intellectuelle Microsoft, soit fournie sous licence à tout tiers ou partagée avec celui-ci.
-
 
 Cette procédure pas à pas a été validée par rapport aux systèmes d’exploitation suivants, en exécutant MSBuild à partir de la ligne de commande et en utilisant Team Foundation Build.  
   
@@ -47,7 +46,7 @@ Cette procédure pas à pas a été validée par rapport aux systèmes d’explo
   
  Il n’est pas possible d’utiliser l’environnement à plusieurs ordinateurs pour générer les types d’applications suivants :  
   
--   Applications [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]. Pour générer des applications [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], vous devez installer Visual Studio sur l’ordinateur de build.  
+-   Applications UWP. Pour générer des applications UWP, vous devez installer Visual Studio sur l’ordinateur de build.  
   
 -   Applications de bureau qui ciblent .NET Framework 4 ou version antérieure. Pour générer ce genre d’applications, vous devez installer Visual Studio ou bien les outils et assemblys de référence .NET (à partir du SDK Windows 7.1) sur l’ordinateur de build.  
   

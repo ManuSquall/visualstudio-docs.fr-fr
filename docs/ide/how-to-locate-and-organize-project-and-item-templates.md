@@ -16,19 +16,31 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 167ffa269ea8051a4791000d96a86cb5788af60d
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c58bda5570be9cdb7fba7a8f90a282df7b7167a2
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Guide pratique pour localiser et organiser les modèles de projet et d’élément
 
-Les fichiers de modèle doivent être placés à un emplacement que Visual Studio reconnaît pour que les modèles s’affichent dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**. Vous pouvez créer des sous-catégories personnalisées pour les modèles qui apparaissent également dans les boîtes de dialogue.
+Les fichiers de modèle doivent être placés à un emplacement que Visual Studio reconnaît pour que les modèles s’affichent dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**. Vous pouvez également créer des sous-catégories personnalisées à l’emplacement du modèle utilisateur, et les catégories apparaissent dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**.
 
-## <a name="locating-templates"></a>Localisation de modèles
+## <a name="locate-templates"></a>Localiser les modèles
 
-Les modèles installés et les modèles utilisateur sont stockés à deux emplacements différents. Si un fichier compressé incluant un fichier .vstemplate existe à ces emplacements, le modèle apparaît dans les boîtes de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**.
+Les modèles installés et les modèles utilisateur sont stockés à deux emplacements différents.
+
+### <a name="user-templates"></a>Modèles utilisateur
+
+Si vous ajoutez un fichier compressé (.zip) incluant un fichier .vstemplate au répertoire du modèle utilisateur, le modèle apparaît dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**. Par défaut, les modèles utilisateur se trouvent dans :
+
+- %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates
+
+- %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates
+
+Par exemple, le répertoire suivant contient les modèles de projet utilisateur pour C# :
+
+   C:\Utilisateurs\Nom_Utilisateur\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\
 
 > [!TIP]
 > Vous pouvez définir l’emplacement des modèles utilisateur dans **Outils** > **Options** > **Projets et solutions** > **Emplacements**.
@@ -45,38 +57,14 @@ Par exemple, le répertoire suivant contient les modèles d’élément Visual B
 
    \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ItemTemplates\VisualBasic\1033\
 
-### <a name="user-templates"></a>Modèles utilisateur
+## <a name="organize-templates"></a>Organiser les modèles
 
-Par défaut, les modèles utilisateur se trouvent dans :
-
-- %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates
-
-- %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates
-
-Par exemple, le répertoire suivant contient les modèles de projet utilisateur pour C# :
-
-   C:\Utilisateurs\Nom_Utilisateur\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\
-
-> [!NOTE]
-> L’emplacement des modèles utilisateur n’inclut pas les sous-répertoires de paramètres régionaux des modèles localisés.
-
-Vous pouvez changer le répertoire par défaut des modèles utilisateur dans la boîte de dialogue **Options**, sous **Projets et solutions** > **Emplacements**.
-
-## <a name="organizing-templates"></a>Organisation de modèles
-
-Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément** reflètent les structures de répertoires qui existent aux emplacements des modèles installés et utilisateur. Vous pouvez modifier ces structures de répertoires pour organiser vos modèles selon votre propre logique.
+Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément** reflètent les structures de répertoires qui existent aux emplacements des modèles installés et utilisateur. Pour organiser les modèles utilisateur dans leurs propres catégories, ajoutez de nouveaux dossiers au répertoire du modèle utilisateur. Les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément** reflètent toutes les modifications que vous apportez à vos catégories de modèle utilisateur.
 
 > [!NOTE]
 > Vous ne pouvez pas créer de catégorie au niveau du langage de programmation. Vous ne pouvez créer une catégorie qu'à l'intérieur de chaque langage.
 
-> [!NOTE]
-> Si les structures de répertoires des modèles installés et utilisateur d’un langage particulier ne sont pas identiques (autrement dit, il existe des répertoires dans un seul dossier, mais pas dans l’autre), toutes les catégories apparaissent dans la boîte de dialogue **Nouveau projet**.
-
-### <a name="organizing-user-templates"></a>Organisation de modèles utilisateur
-
-Pour organiser les modèles utilisateur dans leurs propres catégories, ajoutez de nouveaux dossiers à leur emplacement. La boîte de dialogue **Nouveau projet** reflète toutes les modifications que vous apportez à vos catégories de modèles.
-
-#### <a name="to-create-new-user-project-template-categories"></a>Pour créer des catégories de modèles de projet utilisateur
+### <a name="to-create-new-user-project-template-categories"></a>Pour créer des catégories de modèles de projet utilisateur
 
 1. Créez un sous-dossier dans le dossier du langage de programmation du répertoire des modèles de projet utilisateur. Par exemple, pour créer une catégorie **HelloWorld** pour les modèles de projet C#, créez le répertoire suivant :
 
@@ -88,7 +76,7 @@ Pour organiser les modèles utilisateur dans leurs propres catégories, ajoutez 
 
    La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Nouveau projet**, sous **Installé** > **Visual C#**.
 
-#### <a name="to-create-new-user-item-template-categories"></a>Pour créer des catégories de modèles d’élément utilisateur
+### <a name="to-create-new-user-item-template-categories"></a>Pour créer des catégories de modèles d’élément utilisateur
 
 1. Créez un sous-dossier dans le dossier du langage de programmation du répertoire des modèles d’élément utilisateur. Par exemple, pour créer une catégorie **HelloWorld** pour les modèles d’élément C#, créez le répertoire suivant :
 
@@ -100,7 +88,7 @@ Pour organiser les modèles utilisateur dans leurs propres catégories, ajoutez 
 
    La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé** > **Éléments Visual C#**.
 
-### <a name="displaying-templates-in-parent-categories"></a>Affichage de modèles dans des catégories parentes
+### <a name="display-templates-in-parent-categories"></a>Afficher les modèles dans les catégories parentes
 
 Vous pouvez permettre aux modèles des sous-catégories d'être affichés dans leur catégorie parente à l'aide de l'élément `NumberOfParentCategoriesToRollUp` du fichier .vstemplate. Ces étapes sont identiques pour les modèles de projet et les modèles d’élément.
 
