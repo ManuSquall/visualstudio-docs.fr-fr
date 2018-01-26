@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de3c25f54bcfbf89ec5f4482a67741f9834222e0
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: b76309249310afd5bd88c8d8553792512e208220
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Prise en charge des éditions de Visual Studio pour visualisation &amp; Modeling SDK
 Les éléments suivants sont des listes des éditions de Visual Studio qui sont prises en charge avec [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] dans les environnements de création et le déploiement. Pour plus d’informations sur ces éditions, consultez Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [centre de développement](http://go.microsoft.com/fwlink/?LinkId=75628).  
@@ -25,9 +25,9 @@ Les éléments suivants sont des listes des éditions de Visual Studio qui sont 
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.Microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
-|SDK Visual Studio|[http://go.Microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
-|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.Microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|Kit de développement logiciel Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
+|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
@@ -46,4 +46,4 @@ Les éléments suivants sont des listes des éditions de Visual Studio qui sont 
 >  Pour rendre une DSL puissent s’exécuter sur un produit de l’interpréteur de commandes, vous devez affecter la **pris en charge une édition de Visual Studio** champ dans le manifeste d’Extension. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -19,35 +19,31 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 972fa76d83c9ecfbe9efb23897a6e0ec5928c35f
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
-Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Language), vous devez créer une solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à partir d'un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.  
-  
- Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab des outils DSL**, que vous pouvez trouver dans ce site : [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+Pour définir un langage spécifique à un domaine (DSL), vous créez une solution Visual Studio à partir d’un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.
 
+Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab des outils DSL**, que vous pouvez trouver dans ce site : [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ##  <a name="templates"></a>Sélection d’une Solution de modèle  
  Pour définir un DSL, vous devez avoir installé les composants suivants :  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.Microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling||  
 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
   
- Pour créer un langage spécifique domaine, vous devez créer une solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à l'aide du modèle de projet Langage spécifique à un domaine.  
+ Pour créer un nouveau langage spécifique à un domaine, vous créez une solution Visual Studio à l’aide du modèle de projet de langage spécifique à un domaine.  
   
 #### <a name="to-create-a-dsl-solution"></a>Pour créer une solution DSL  
   
@@ -71,7 +67,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
     -   Sélectionnez **langage minimale** dans d’autres cas, ou si vous n’êtes pas sûr.  
   
-    -   Sélectionnez **minimale WinForm concepteur** ou **minimale Concepteur WPF** pour créer une DSL est affichée sur une aire Windows Forms ou WPF. Vous devrez écrire du code pour définir l'éditeur. Pour plus d’informations, consultez les rubriques suivantes :  
+    -   Sélectionnez **minimale WinForm concepteur** ou **minimale Concepteur WPF** pour créer une DSL est affichée sur une aire Windows Forms ou WPF. Vous devrez écrire du code pour définir l'éditeur. Pour plus d’informations, consultez les rubriques suivantes :  
   
          [Création d’un langage spécifique à un domaine basé sur Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)  
   
@@ -91,24 +87,24 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
  L'interface utilisateur ressemble maintenant à l'image suivante.  
   
- ![concepteur DSL](../modeling/media/dsl_designer.png "dsl_designer")  
+ ![dsl designer](../modeling/media/dsl_designer.png "dsl_designer")  
   
  Cette solution définit un langage spécifique à un domaine. Pour plus d’informations, consultez [vue d’ensemble de l’Interface utilisateur des outils langage spécifique à un domaine](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
   
 ### <a name="test-the-solution"></a>Tester la solution  
  Le modèle de solution fournit une solution DSL opérationnelle, que vous pouvez modifier ou utiliser telle quelle.  
   
- Pour tester la solution, appuyez sur F5 ou Ctrl+F5. Une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] s'ouvre en mode expérimental.  
+ Pour tester la solution, appuyez sur F5 ou Ctrl+F5. Une nouvelle instance de Visual Studio s’ouvre en mode expérimental.  
   
- Dans la nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], dans l'Explorateur de solutions, ouvrez l'exemple de fichier. Il s'ouvre sous forme de diagramme, avec une boîte à outils.  
+ Dans la nouvelle instance de Visual Studio, dans l’Explorateur de solutions, ouvrez le fichier d’exemple. Il s'ouvre sous forme de diagramme, avec une boîte à outils.  
   
- Si vous exécutez une solution que vous avez créé à partir de la **langage minimale** modèle, votre expérimentale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ressemblera à l’exemple suivant :  
+ Si vous exécutez une solution que vous avez créé à partir de la **langage minimale** modèle, votre expérimentale de Visual Studio ressemblera à l’exemple suivant :  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
  Expérimentez avec les outils. Créez des éléments et raccordez-les.  
   
- Fermez l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Fermez l’instance expérimentale de Visual Studio.  
   
 > [!NOTE]
 >  Une fois la solution DSL modifiée, vous ne pourrez plus voir les formes dans l'exemple de fichier test. En revanche, vous pourrez créer des éléments.  
@@ -217,11 +213,11 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
 ##### <a name="to-test-the-new-domain-classes"></a>Pour tester les nouvelles classes de domaine  
   
-1.  **Cliquez sur Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, pour générer le code de concepteur DSL. Vous pouvez automatiser cette étape. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1.  **Cliquez sur Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, pour générer le code de concepteur DSL. Vous pouvez automatiser cette étape. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
   
-2.  **Générez et exécutez la DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en mode expérimental. Dans l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez ou créez un fichier ayant l'extension de nom de fichier de votre solution DSL.  
+2.  **Générez et exécutez la DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de Visual Studio en mode expérimental. Dans l’instance expérimentale de Visual Studio, ouvrez ou créez un fichier qui porte l’extension de nom de fichier de votre DSL.  
   
-3.  **Ouvrez l’Explorateur.** À la partie du diagramme est la fenêtre d’Explorateur de langage, qui est généralement nommée *YourLanguage* Explorer. Si cette fenêtre n'est pas visible, elle est peut-être sous un onglet sous l'Explorateur de solutions. Si vous ne trouvez pas, sur le **vue** menu, pointez sur **autres fenêtres**, puis cliquez sur * YourLanguage ***Explorer**.  
+3.  **Ouvrez l’Explorateur.** À la partie du diagramme est la fenêtre d’Explorateur de langage, qui est généralement nommée *YourLanguage* Explorer. Si cette fenêtre n'est pas visible, elle est peut-être sous un onglet sous l'Explorateur de solutions. Si vous ne trouvez pas, sur le **vue** menu, pointez sur **autres fenêtres**, puis cliquez sur *YourLanguage* **Explorer**.  
   
      Votre explorateur présente une arborescence du modèle.  
   
@@ -317,7 +313,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
 1.  **Cliquez sur Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, pour générer le code de concepteur DSL.  
   
-2.  **Générez et exécutez la DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en mode expérimental. Dans l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez ou créez un fichier ayant l'extension de nom de fichier de votre solution DSL.  
+2.  **Générez et exécutez la DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de Visual Studio en mode expérimental. Dans l’instance expérimentale de Visual Studio, ouvrez ou créez un fichier qui porte l’extension de nom de fichier de votre DSL.  
   
 3.  **Vérifiez que les outils de l’élément apparaissent dans la boîte à outils.**  
   
@@ -393,7 +389,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
 1.  **Cliquez sur Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, pour générer le code de concepteur DSL.  
   
-2.  **Générez et exécutez la DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en mode expérimental. Dans l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez ou créez un fichier ayant l'extension de nom de fichier de votre solution DSL.  
+2.  **Générez et exécutez la DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de Visual Studio en mode expérimental. Dans l’instance expérimentale de Visual Studio, ouvrez ou créez un fichier qui porte l’extension de nom de fichier de votre DSL.  
   
 3.  **Vérifiez que l’outil de connexion apparaît dans la boîte à outils.**  
   
@@ -494,7 +490,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
 1.  **Cliquez sur Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, pour générer le code de concepteur DSL.  
   
-2.  **Générez et exécutez la DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en mode expérimental. Dans l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez ou créez un fichier ayant l'extension de nom de fichier de votre solution DSL.  
+2.  **Générez et exécutez la DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de Visual Studio en mode expérimental. Dans l’instance expérimentale de Visual Studio, ouvrez ou créez un fichier qui porte l’extension de nom de fichier de votre DSL.  
   
 3.  **Vérifiez que l’outil s’affiche dans la boîte à outils.**  
   
@@ -623,12 +619,10 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
 |Dans l'explorateur de ma solution DSL, les éléments sont affichés uniquement avec leur nom de type.|Dans la définition DSL, sélectionnez une propriété de domaine de la classe et dans les propriétés de fenêtre, définissez **nom de l’élément est** sur true.|  
 |Ma solution DSL s'ouvre toujours dans l'éditeur XML.|Cela peut être dû à une erreur lors de la lecture du fichier. Toutefois, même après avoir corrigé cette erreur, vous devez réinitialiser de manière explicite l'éditeur pour qu'il soit votre concepteur DSL.<br /><br /> Cliquez sur l’élément de projet, cliquez sur **ouvrir avec** et sélectionnez * YourLanguage ***concepteur (par défaut)**.|  
 |La boîte à outils de ma solution DSL n'apparaît pas après que j'ai modifié les noms des assemblys.|Examiner et mettre à jour **DslPackage\GeneratedCode\Package.tt** pour plus d’informations, consultez [Comment : modifier le Namespace d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
-|La boîte à outils de ma solution DSL n'apparaît pas, mais je n'ai pas modifié le nom de l'assembly.<br /><br /> Ou une boîte de message apparaît et signale l'échec du chargement d'une extension.|Réinitialisez l'instance expérimentale et regénérez votre solution.<br /><br /> 1.  Dans les fenêtres de menu Démarrer, sous **tous les programmes**, développez [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], puis **outils**, puis cliquez sur **réinitialiser l’Instance expérimentale Microsoft Visual Studio**.<br />2.  Sur le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **générer** menu, cliquez sur **régénérer la Solution**.|  
+|La boîte à outils de ma solution DSL n'apparaît pas, mais je n'ai pas modifié le nom de l'assembly.<br /><br /> Ou une boîte de message apparaît et signale l'échec du chargement d'une extension.|Réinitialisez l'instance expérimentale et regénérez votre solution.<br /><br /> 1.  Dans les fenêtres de menu Démarrer, sous **tous les programmes**, développez [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], puis **outils**, puis cliquez sur **réinitialiser l’Instance expérimentale Microsoft Visual Studio**.<br />2.  Dans Visual Studio**générer** menu, cliquez sur **régénérer la Solution**.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Prise en main de langages spécifiques à un domaine](../modeling/getting-started-with-domain-specific-languages.md)   
  [Création d’un langage spécifique à un domaine Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [Création d’un langage spécifique à un domaine basé sur WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

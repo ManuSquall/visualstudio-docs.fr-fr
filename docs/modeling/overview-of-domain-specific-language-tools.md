@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c1a163e50e2f237430ba13d57a76cfc0d6b1d67
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 1fcba975443deb768a2b3de36bd2744183cdcf40
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Vue d'ensemble des outils de langage spécifique à un domaine
 Outils de langage spécifique à un domaine (outils DSL), qui sont hébergés dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], laissez concevoir un langage spécifique à un domaine et de générer tout ce que les utilisateurs doivent disposer pour créer des modèles qui sont basées sur le langage.  
@@ -51,7 +51,7 @@ Outils de langage spécifique à un domaine (outils DSL), qui sont hébergés da
   
  L’Assistant crée un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution qui contient les projets suivants :  
   
--   DSL  
+-   Dsl  
   
      Le projet Dsl définit le langage spécifique à un domaine et ses outils de modification et de traitement.  
   
@@ -77,4 +77,4 @@ Outils de langage spécifique à un domaine (outils DSL), qui sont hébergés da
   
 ## <a name="see-also"></a>Voir aussi  
  [L’Instance expérimentale](../extensibility/the-experimental-instance.md)   
- [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

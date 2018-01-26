@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c9c9fbaaed7375cffd581efca34465effd48d33c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 7380d4bcade2e93b7e9ab7302201b67df629e041
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-the-model-explorer"></a>Personnalisation de l'Explorateur de modèles
 Vous pouvez modifier l’apparence et le comportement de l’Explorateur de votre Concepteur de langage spécifique à un domaine comme suit :  
@@ -111,5 +111,6 @@ Vous pouvez modifier l’apparence et le comportement de l’Explorateur de votr
   
      L’Explorateur doit uniquement afficher une **acteurs** nœud et ne doit pas afficher le **commentaires** nœud.  
   
-## <a name="see-also"></a>Voir aussi  
- [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>Voir aussi
+
+[Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

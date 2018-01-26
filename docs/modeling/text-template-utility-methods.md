@@ -11,22 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f851f98fca98af8dfc95160f244c59cc0645a805
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 66b4c44a79446aacc56761b6b565d8c979d007f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="text-template-utility-methods"></a>Méthodes utilitaires de modèle de texte
-Il existe plusieurs méthodes qui sont toujours disponibles pour vous lorsque vous écrivez du code un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modèle de texte. Ces méthodes sont définies dans <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
-  
+
+Il existe plusieurs méthodes qui sont toujours disponibles pour vous lorsque vous écrivez du code dans un modèle de texte Visual Studio. Ces méthodes sont définies dans <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+
 > [!TIP]
->  Vous pouvez également utiliser d’autres méthodes et les services fournis par l’environnement d’hôte dans un modèle de texte (non prétraité) normal. Par exemple, vous pouvez résoudre les chemins d’accès de fichier, consigner les erreurs et obtenir des services fournis par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et tous les packages chargés.  Pour plus d’informations, consultez [l’accès à Visual Studio à partir d’un modèle de texte](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Vous pouvez également utiliser d’autres méthodes et les services fournis par l’environnement d’hôte dans un modèle de texte (non prétraité) normal. Par exemple, vous pouvez résoudre les chemins d’accès de fichier, consigner les erreurs et obtenir des services fournis par Visual Studio et les packages chargés. Pour plus d’informations, consultez [l’accès à Visual Studio à partir d’un modèle de texte](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
   
-## <a name="write-methods"></a>Écrire des méthodes  
- Vous pouvez utiliser la `Write()` et `WriteLine()` méthodes pour ajouter du texte à l’intérieur d’un bloc de code standard, au lieu d’utiliser un bloc de code expression. Les blocs de deux fichiers de code suivantes sont équivalentes.  
+## <a name="write-methods"></a>Écrire des méthodes
+
+Vous pouvez utiliser la `Write()` et `WriteLine()` méthodes pour ajouter du texte à l’intérieur d’un bloc de code standard, au lieu d’utiliser un bloc de code expression. Les blocs de deux fichiers de code suivantes sont équivalentes.  
   
-##### <a name="code-block-with-an-expression-block"></a>Bloc de code avec un bloc d’expression  
+### <a name="code-block-with-an-expression-block"></a>Bloc de code avec un bloc d’expression  
   
 ```  
 <#  
@@ -38,7 +40,7 @@ while (i-- > 0)
 #>  
 ```  
   
-##### <a name="code-block-using-writeline"></a>Bloc de code à l’aide de WriteLine()  
+### <a name="code-block-using-writeline"></a>Bloc de code à l’aide de WriteLine()  
   
 ```  
 <#   
@@ -66,7 +68,8 @@ while (i-- > 0)
 #>   
 ```  
   
-## <a name="indentation-methods"></a>Méthodes de mise en retrait  
+## <a name="indentation-methods"></a>Méthodes de mise en retrait
+
  Vous pouvez utiliser des méthodes de mise en retrait pour mettre en forme la sortie de votre modèle de texte. Le <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> classe a un `CurrentIndent` propriété qui indique la mise en retrait actuelle dans le modèle de texte de chaîne et un `indentLengths` champ qui est une liste des mises en retrait qui ont été ajoutés. Vous pouvez ajouter une mise en retrait avec le `PushIndent()` (méthode) et soustraire une mise en retrait avec le `PopIndent()` (méthode). Si vous souhaitez supprimer tous les retraits, utilisez le `ClearIndent()` (méthode). Le bloc de code suivant illustre l’utilisation de ces méthodes :  
   
 ```  
@@ -94,7 +97,7 @@ Hello
 ```  
   
 ## <a name="error-and-warning-methods"></a>Méthodes d’erreur et avertissement  
- Vous pouvez utiliser les méthodes utilitaires erreur et d’avertissement pour ajouter des messages à le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] liste d’erreurs. Par exemple, le code suivant ajouterez un message d’erreur à la liste d’erreurs.  
+ Vous pouvez utiliser des méthodes d’erreur et avertissement utilitaire pour ajouter des messages à la liste d’erreurs Visual Studio. Par exemple, le code suivant ajouterez un message d’erreur à la liste d’erreurs.  
   
 ```  
 <#  
@@ -115,7 +118,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- Le type de `this.Host` dépend du type d’hôte dans lequel le modèle s’exécute. Dans un modèle qui est en cours d’exécution dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez effectuer un cast `this.Host` à `IServiceProvider` pour accéder aux services tels que l’IDE. Exemple :  
+ Le type de `this.Host` dépend du type d’hôte dans lequel le modèle s’exécute. Dans un modèle qui s’exécute dans Visual Studio, vous pouvez effectuer un cast `this.Host` à `IServiceProvider` pour accéder aux services tels que l’IDE. Exemple :  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

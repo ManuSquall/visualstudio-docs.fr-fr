@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1b26da119360462c5237977a1b1da8ac5041d84a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 6848f2c0b6c8d25fe7964fdb5519aa3f075bde57
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 L’API immuabilité de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK permet à un programme à tout ou partie de verrouillage d’un modèle de langage de spécifique à un domaine (DSL) afin qu’elle peut être lue mais pas modifié. Cette option en lecture seule peut être utilisée, par exemple, afin qu’un utilisateur peut demander à vos collègues à annoter et passez en revue un modèle DSL, mais il peut ne pas autoriser les à partir de la modification de l’original.  
@@ -24,7 +24,7 @@ L’API immuabilité de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.
 > [!NOTE]
 >  Une stratégie de verrouillage peut être contournée en utilisant la réflexion. Il fournit une limite pour les développeurs tiers, mais ne fournit pas de sécurité renforcée.  
   
- Plus d’informations et des exemples sont disponibles sur le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkId=186128) site Web.  
+ Plus d’informations et des exemples sont disponibles dans Visual Studio [Visualization and Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) site Web.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
@@ -77,13 +77,13 @@ partition.SetLocks(Locks.Delete);
   
  Vous ne pouvez pas défini un verrou sur une partition ou de stocker et en même temps, désactiver le verrou sur un élément individuel.  
   
-|Value|Ce qui signifie que si `IsLocked(Value)` a la valeur true|  
+|Valeur|Ce qui signifie que si `IsLocked(Value)` a la valeur true|  
 |-----------|------------------------------------------|  
-|Aucun.|Aucune restriction.|  
+|Aucun|Aucune restriction.|  
 |Propriété|Propriétés du domaine d’éléments ne peut pas être modifiées. Cela ne s’applique pas aux propriétés qui sont générées par le rôle d’une classe de domaine dans une relation.|  
 |Ajouter|Nouveaux éléments et les liens ne peut pas être créés dans une partition ou à stocker.<br /><br /> Non applicable à `ModelElement`.|  
 |Déplacement|Élément ne peut pas être déplacé entre des partitions si `element.IsLocked(Move)` a la valeur true, ou si `targetPartition.IsLocked(Move)` a la valeur true.|  
-|Supprimer|Un élément ne peut pas être supprimé si ce verrou est défini sur l’élément lui-même, ou sur un des éléments à laquelle la suppression transmettrait, tels que les formes et les éléments incorporés.<br /><br /> Vous pouvez utiliser `element.CanDelete()` pour détecter si un élément peut être supprimé.|  
+|Delete|Un élément ne peut pas être supprimé si ce verrou est défini sur l’élément lui-même, ou sur un des éléments à laquelle la suppression transmettrait, tels que les formes et les éléments incorporés.<br /><br /> Vous pouvez utiliser `element.CanDelete()` pour détecter si un élément peut être supprimé.|  
 |Réorganiser les|L’ordre des liens à un roleplayer ne peut pas être modifié.|  
 |RolePlayer|L’ensemble de liens qui sont générés à cet élément ne peut pas être modifié. Par exemple, les nouveaux éléments ne peut pas être incorporés sous cet élément. Cela n’affecte pas les liens pour laquelle cet élément est la cible.<br /><br /> Si cet élément est un lien, sa source et la cible ne sont pas affectées.|  
 |Tous|De bits OR sur les autres valeurs.|  

@@ -10,25 +10,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b3e0d6ec6eb1449defcc49102a97e69a7105a838
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 92db1c4d27eec5a9ac18d51644dfb0141c2fef34
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Mise en route des langages spécifiques à un domaine
-Cette rubrique explique les concepts de base dans la définition et à l’aide d’un langage spécifique à un domaine (DSL) créé avec le Kit de développement de modélisation pour Visual Studio.  
+Cette rubrique explique les concepts de base dans la définition et à l’aide d’un langage spécifique à un domaine (DSL) créé avec le Kit de développement de modélisation pour Visual Studio.
 
+> [!NOTE]
+> Dans Visual Studio 2017, le SDK de Transformation de modèle de texte et le SDK de modélisation de Visual Studio sont installés automatiquement lorsque vous installez des fonctionnalités spécifiques de Visual Studio. Pour plus d’informations, consultez [ce billet de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
- Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab des outils DSL**, que vous pouvez trouver dans ce site : [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab des outils DSL**, que vous pouvez trouver dans ce site : [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Que pouvez-vous faire avec un langage spécifique à un domaine ?  
  Un langage spécifique à un domaine est une notation, en général graphique, qui est conçue pour être utilisé dans un but spécifique. En revanche, les langages tels que UML sont à usage général. Dans une DSL, vous pouvez définir les types d’élément de modèle et leurs relations, et comment elles sont présentées à l’écran.  
   
- Lorsque vous avez conçu une DSL, vous pouvez le distribuer dans le cadre d’un package d’Extension d’intégration Visual Studio (VSIX). Les utilisateurs travaillent avec la DSL dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
+ Lorsque vous avez conçu une DSL, vous pouvez le distribuer dans le cadre d’un package d’Extension d’intégration Visual Studio (VSIX). Les utilisateurs fonctionnent avec la DSL dans Visual Studio :  
   
  ![Diagramme d’arbre généalogique, boîte à outils et Explorateur](../modeling/media/familyt_instance.png "FamilyT_Instance")  
   
@@ -36,15 +35,15 @@ Cette rubrique explique les concepts de base dans la définition et à l’aide 
   
  Une des applications de DSL principales consiste à générer du code de programme, les fichiers de configuration et les autres artefacts. En particulier dans les grands projets et des gammes de produits, où plusieurs variantes d’un produit à créer, générer de nombreux aspects de la variable de DSL peut fournir une augmentation importante de la fiabilité et une réponse très rapidement aux modifications de la configuration requise.  
   
- Le reste de cette vue d’ensemble est une procédure pas à pas qui présente les opérations de base de la création et à l’aide d’un langage spécifique à un domaine dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Le reste de cette vue d’ensemble est une procédure pas à pas qui présente les opérations de base de la création et à l’aide d’un langage spécifique à un domaine dans Visual Studio.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour définir un DSL, vous devez avoir installé les composants suivants :  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.Microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Kit de développement logiciel de modélisation pour Visual Studio||  
 
 
@@ -52,7 +51,7 @@ Cette rubrique explique les concepts de base dans la définition et à l’aide 
 
   
 ## <a name="creating-a-dsl-solution"></a>Création d’une Solution DSL  
- Pour créer un nouveau langage spécifique à un domaine, vous créez un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution à l’aide du modèle de projet de langage spécifique à un domaine.  
+ Pour créer un nouveau langage spécifique à un domaine, vous créez une solution Visual Studio à l’aide du modèle de projet de langage spécifique à un domaine.  
   
 #### <a name="to-create-a-dsl-solution"></a>Pour créer une solution DSL  
   
@@ -89,7 +88,7 @@ Cette rubrique explique les concepts de base dans la définition et à l’aide 
   
  L'interface utilisateur ressemble maintenant à l'image suivante.  
   
- ![concepteur DSL](../modeling/media/dsl_designer.png "dsl_designer")  
+ ![dsl designer](../modeling/media/dsl_designer.png "dsl_designer")  
   
  Cette solution définit un langage spécifique à un domaine. Pour plus d’informations, consultez [vue d’ensemble de l’Interface utilisateur des outils langage spécifique à un domaine](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
   
@@ -100,7 +99,7 @@ Cette rubrique explique les concepts de base dans la définition et à l’aide 
   
 -   **Projet de DSL** ce projet contient du code qui définit le langage spécifique à un domaine.  
   
--   **Projet de DslPackage** ce projet contient du code qui permet aux instances de la DSL pour être ouvert et modifié dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+-   **Projet de DslPackage** ce projet contient du code qui permet aux instances de la DSL pour pouvoir ouvrir et modifier dans Visual Studio.  
   
 ##  <a name="Debugging"></a>En cours d’exécution du DSL  
  Vous pouvez exécuter la solution DSL dès que vous l’avez créé. Une version ultérieure, vous pouvez modifier la définition DSL progressivement, exécution de la solution après chaque modification.  
@@ -110,15 +109,15 @@ Cette rubrique explique les concepts de base dans la définition et à l’aide 
 1.  Cliquez sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions. Cette opération régénère la plupart du code source à partir de DslDefinition.dsl.  
   
     > [!NOTE]
-    >  Chaque fois que vous modifiez DslDefinition.dsl, vous devez cliquer sur **transformer tous les modèles** avant de reconstruire la solution. Vous pouvez automatiser cette étape. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+    >  Chaque fois que vous modifiez DslDefinition.dsl, vous devez cliquer sur **transformer tous les modèles** avant de reconstruire la solution. Vous pouvez automatiser cette étape. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
   
 2.  Appuyez sur F5, ou sur le **déboguer** menu, cliquez sur **démarrer le débogage**.  
   
-     La DSL génère et est installé dans l’instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+     La DSL génère et est installé dans l’instance expérimentale de Visual Studio.
   
-     Une instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] démarre. L’instance expérimentale a ses paramètres à partir d’une sous-arborescence distincte du Registre, où [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensions sont enregistrées à des fins de débogage. Les instances normales de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n’ont pas accès aux extensions y est inscrit.  
+     Démarrage d’une instance expérimentale de Visual Studio. L’instance expérimentale a ses paramètres à partir d’une sous-arborescence distincte du Registre, où les extensions Visual Studio sont enregistrées à des fins de débogage. Les instances normales de Visual Studio n’ont pas de l’accès aux extensions y est inscrit.  
   
-3.  Dans l’instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez le fichier de modèle nommé **Test** de **l’Explorateur de solutions**.  
+3.  Dans l’instance expérimentale de Visual Studio, ouvrez le fichier de modèle nommé **Test** de **l’Explorateur de solutions**.  
   
      \- ou -  
   
@@ -136,7 +135,7 @@ Cette rubrique explique les concepts de base dans la définition et à l’aide 
   
 5.  Cliquez sur les étiquettes des formes pour les modifier.  
   
- Votre expérience [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ressemblera à l’exemple suivant :  
+ Votre expérimentale de Visual Studio ressemblera à l’exemple suivant :  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
@@ -147,7 +146,7 @@ Cette rubrique explique les concepts de base dans la définition et à l’aide 
   
  Vous pouvez afficher un modèle sous forme d’arborescence dans le **Explorer** afficher lorsque vous modifiez un modèle. Lorsque vous ajoutez des formes au diagramme, les éléments de modèle s’affichent également dans l’Explorateur. L’Explorateur peut être utilisé même s’il n’existe aucun diagramme.  
   
- Si vous ne voyez pas l’Explorateur de l’instance de débogage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], dans le **vue** menu, pointez sur **autres fenêtres**, puis cliquez sur  *\<votre langue >* **Explorer**.  
+ Si vous ne voyez pas l’Explorateur de l’instance de débogage de Visual Studio, sur le **vue** menu, pointez sur **autres fenêtres**, puis cliquez sur  *\<votre langue >* **Explorer**.  
   
 ### <a name="the-api-of-your-dsl"></a>L’API de votre DSL  
  Votre DSL génère une API qui vous permet de lire et mettre à jour les modèles qui sont des instances de la DSL. Une application de l’API consiste à générer des fichiers texte à partir d’un modèle. Pour plus d’informations, consultez [génération du Code à l’aide de modèles de texte T4 au moment du Design](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
@@ -164,7 +163,7 @@ Cette rubrique explique les concepts de base dans la définition et à l’aide 
   
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Pour régénérer les fichiers texte après avoir modifié le fichier de modèle  
   
-1.  Dans l’instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], enregistrez le fichier de modèle.  
+1.  Dans l’instance expérimentale de Visual Studio, enregistrez le fichier de modèle.  
   
 2.  Assurez-vous que le paramètre de nom de fichier dans chaque fichier .tt fait référence au fichier de modèle que vous utilisez pour les expériences. Enregistrez le fichier .tt.  
   
@@ -182,7 +181,7 @@ Cette rubrique explique les concepts de base dans la définition et à l’aide 
  Pour plus d’informations, consultez [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md) et [écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ## <a name="customizing-the-dsl"></a>Personnalisation de la solution DSL  
- Lorsque vous souhaitez modifier la définition DSL, fermez l’instance expérimentale et mettre à jour de la définition du principal [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instance.  
+ Lorsque vous souhaitez modifier la définition DSL, fermez l’instance expérimentale et mettre à jour la définition de l’instance principale de Visual Studio.  
   
 > [!NOTE]
 >  Après avoir modifié la définition DSL, vous risquez de perdre les informations dans les modèles de test que vous avez créé à l’aide de versions antérieures.  Par exemple, la solution de débogage contient un fichier nommé exemple, qui contient des formes et des connecteurs. Une fois que vous commencez à développer votre définition DSL, ils ne seront pas visibles, et ils seront perdus lorsque vous enregistrez le fichier.  
@@ -222,9 +221,9 @@ Cette rubrique explique les concepts de base dans la définition et à l’aide 
   
     2.  Cliquez sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions  
   
-    3.  Appuyez sur F5. Attendez que l’instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] s’affiche.  
+    3.  Appuyez sur F5. Attendez que l’instance expérimentale de Visual Studio s’affiche.  
   
-4.  Dans la solution de débogage dans l’instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez un fichier de modèle de test. Faites glisser des éléments sur celui-ci à partir de la boîte à outils. Notez que les légendes de l’outil et les noms de type dans l’Explorateur de DSL ont été modifiés.  
+4.  Dans la solution de débogage dans l’instance expérimentale de Visual Studio, ouvrez un fichier de modèle de test. Faites glisser des éléments sur celui-ci à partir de la boîte à outils. Notez que les légendes de l’outil et les noms de type dans l’Explorateur de DSL ont été modifiés.  
   
 5.  Enregistrez le fichier de modèle.  
   
@@ -348,7 +347,7 @@ Cette rubrique explique les concepts de base dans la définition et à l’aide 
   
 8.  Enregistrer la définition DSL, cliquez sur **transformer tous les modèles**, puis appuyez sur **F5**.  
   
-9. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez un fichier de modèle de test. Utilisez les nouveaux outils pour créer des villes et des liens entre les villes et les personnes. Notez que vous ne pouvez créer des liens entre les types d’élément pertinents.  
+9. Dans l’instance expérimentale de Visual Studio, ouvrez un fichier de modèle de test. Utilisez les nouveaux outils pour créer des villes et des liens entre les villes et les personnes. Notez que vous ne pouvez créer des liens entre les types d’élément pertinents.  
   
 10. Créer du code qui répertorie la ville dans laquelle réside chaque personne. Modèles de texte sont les emplacements où vous pouvez exécuter ce code. Par exemple, vous pourriez modifier le fichier Sample.tt existant dans la solution de débogage pour qu’il contienne le code suivant :  
   
@@ -380,33 +379,32 @@ Cette rubrique explique les concepts de base dans la définition et à l’aide 
 ## <a name="validation-and-commands"></a>Validation et les commandes  
  Vous pouvez développer cette DSL davantage en ajoutant des contraintes de validation. Ces contraintes sont des méthodes que vous pouvez définir, assurez-vous que le modèle est dans un état correct. Par exemple, vous pouvez définir une contrainte pour vous assurer que la date de naissance de l’enfant est ultérieure à celle de ses parents. La fonctionnalité de validation affiche un avertissement si l’utilisateur DSL tente d’enregistrer un modèle qui déclenche une des contraintes. Pour plus d’informations, consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).  
   
- Vous pouvez également définir des commandes de menu que l’utilisateur peut appeler. Commandes peuvent modifier le modèle. Ils peuvent également interagir avec d’autres modèles dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et avec des ressources externes. Pour plus d’informations, consultez [Comment : modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ Vous pouvez également définir des commandes de menu que l’utilisateur peut appeler. Commandes peuvent modifier le modèle. Ils peuvent également interagir avec d’autres modèles dans Visual Studio et avec des ressources externes. Pour plus d’informations, consultez [Comment : modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="deploying-the-dsl"></a>Déploiement du DSL  
- Pour autoriser d’autres utilisateurs d’utiliser le langage spécifique à un domaine, vous distribuez un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fichier d’Extension (VSIX). Il est créé lorsque vous générez la solution DSL.  
+ Pour autoriser d’autres utilisateurs d’utiliser le langage spécifique à un domaine, vous distribuez un fichier d’Extension Visual Studio (VSIX). Il est créé lorsque vous générez la solution DSL.  
   
- Recherchez le fichier .vsix dans le dossier bin de votre solution. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer. Sur cet ordinateur, double-cliquez sur le fichier VSIX. La DSL peut être utilisée dans toutes les instances de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sur cet ordinateur.  
+ Recherchez le fichier .vsix dans le dossier bin de votre solution. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer. Sur cet ordinateur, double-cliquez sur le fichier VSIX. La DSL peut être utilisée dans toutes les instances de Visual Studio sur l’ordinateur.  
   
- Vous pouvez utiliser la même procédure pour installer la DSL sur votre ordinateur afin que vous n’avez pas à utiliser l’instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Vous pouvez utiliser la même procédure pour installer la DSL sur votre ordinateur afin que vous n’avez pas à utiliser l’instance expérimentale de Visual Studio.  
   
  Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
   
 ##  <a name="Reset"></a>Suppression des anciens DSL expérimentale  
- Si vous avez créé DSL expérimentale que vous ne voulez plus, vous pouvez les supprimer de votre ordinateur en réinitialisant le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instance expérimentale.  
+ Si vous avez créé DSL expérimentale que vous ne souhaitez plus, vous pouvez les supprimer à partir de votre ordinateur en réinitialisant l’instance expérimentale de Visual Studio.  
   
- Cela supprime de votre ordinateur toutes les DSL expérimentale et autres expérimentale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensions. Il s’agit d’extensions qui ont été exécutées en mode débogage.  
+ Cela supprimera de votre ordinateur toutes les DSL expérimentale et autres extensions de Visual Studio expérimentales. Il s’agit d’extensions qui ont été exécutées en mode débogage.  
   
- Cette procédure ne supprime pas DSL ou autre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensions qui ont été installées entièrement en exécutant le fichier VSIX.  
+ Cette procédure ne supprime pas DSL ou autres extensions de Visual Studio qui ont été entièrement installées en exécutant le fichier VSIX.  
   
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Pour réinitialiser l’instance expérimentale de Visual Studio  
   
 1.  Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **outils**, puis **réinitialiser Microsoft Visual Studio 2010 expérimental instance**.  
   
-2.  Régénérer tout expérimentale DSL ou autre expérimentale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensions que vous souhaitez toujours utiliser.  
+2.  Reconstruisez tout DSL expérimentale ou autres extensions expérimentales de Visual Studio que vous souhaitez toujours utiliser.  
   
-## <a name="see-also"></a>Voir aussi  
- [Fonctionnement des modèles, les Classes et relations](../modeling/understanding-models-classes-and-relationships.md)   
- [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)   
+## <a name="see-also"></a>Voir aussi
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+[Fonctionnement des modèles, les Classes et relations](../modeling/understanding-models-classes-and-relationships.md)   
+[Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
 

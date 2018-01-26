@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0f72632ccb56da42da3a9534a9a6d26d87dd6791
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: a8208d41631985fb6027e2827a847bb3e5e1d7ec
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Utilisation de solutions de langage spécifique à un domaine
 Un langage spécifique à un domaine (DSL) est créé en utilisant un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution. Cette section est sur la façon de configurer et personnaliser la solution.  
@@ -47,5 +47,5 @@ Un langage spécifique à un domaine (DSL) est créé en utilisant un [!INCLUDE[
  [Guide pratique pour étendre le concepteur de langage spécifique à un domaine](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  Vous pouvez personnaliser le concepteur DSL avec les commandes de menu.  
   
- [Comment automatiser la transformation tous les modèles](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [Comment automatiser la transformation tous les modèles](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  Pour éviter de cliquer sur Transformer tous les modèles, vous pouvez rendre automatique dans le cadre de la build.

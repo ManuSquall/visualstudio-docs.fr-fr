@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 49a410ef816f2e77713b65b33a2ad8bc59b5b116
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: a9a17cba8e1ff1cca66f82c1d3934ff179b04fd9
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-copy-behavior"></a>Personnalisation du comportement de la commande copier
 Dans un langage spécifique à un domaine (DSL, Domain-Specific Language) créé avec le Kit de développement logiciel (SDK) de visualisation et de modélisation de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez modifier ce qui se produit quand l'utilisateur copie et colle des éléments.  
@@ -561,11 +561,11 @@ namespace Company.MyDsl
   
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Personnalisation de la création d’élément et le déplacement](../modeling/customizing-element-creation-and-movement.md)   
- [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md)   
- [Exemple : Exemple de diagrammes de Circuit VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
+## <a name="see-also"></a>Voir aussi
+
+[Personnalisation de la création d’élément et le déplacement](../modeling/customizing-element-creation-and-movement.md)   
+[Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+[Personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md)   
+[Exemple : Exemple de diagrammes de Circuit VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
- 

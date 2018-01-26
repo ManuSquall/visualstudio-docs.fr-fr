@@ -25,19 +25,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f439ebbf7505086c3105fbb5aee9ba05f22de2e4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 26dbef0fce67b4af461e7bbc15ecb870f630ca0e
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-models-for-your-app"></a>Créer des modèles pour votre application
+
 Les diagrammes de modélisation vous aident à comprendre, clarifier et communiquer vos idées concernant votre code et les besoins des utilisateurs que votre système logiciel doit prendre en charge.
-  
- Pour connaître les versions de Visual Studio prend en charge chaque type de diagramme, consultez [prise en charge de la Version pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
- Pour visualiser l'architecture d'un système ou de code existant, créez les diagrammes suivants :  
-  
+
+Pour connaître les versions de Visual Studio prend en charge chaque type de diagramme, consultez [prise en charge de la Version pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+
+Pour visualiser l'architecture d'un système ou de code existant, créez les diagrammes suivants :  
+
 |**Diagramme**|**Éléments décrits**|  
 |-----------------|---------------|  
 |[Diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)|Architecture de haut niveau du système|  
@@ -46,17 +47,16 @@ Les diagrammes de modélisation vous aident à comprendre, clarifier et communiq
   
 ## <a name="related-tasks"></a>Tâches connexes  
   
-|**Rubrique**|**Task**|  
+|**Topic**|**Task**|  
 |---------------|--------------|  
 |[Visualiser du code](../modeling/visualize-code.md)|Créer des cartes de code et des diagrammes de dépendance pour mieux comprennent le code inconnu.|  
 |[Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)|Utiliser des modèles pour clarifier et communiquer les besoins des utilisateurs.|  
 |[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|Utiliser des modèles pour décrire la structure globale et le comportement de votre système et pour vous assurer qu'il répond aux besoins des utilisateurs.|  
 |[Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)|Assurez-vous que votre logiciel reste cohérent avec les besoins de vos utilisateurs et avec l'architecture globale de votre système.|  
-|[Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)<br /><br /> [Utiliser les modèles de développement Agile](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|Utiliser des modèles pour vous aider à comprendre et à modifier votre système lors de son développement.|  
+|[Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)<br /><br /> [Utiliser les modèles de développement Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Utiliser des modèles pour vous aider à comprendre et à modifier votre système lors de son développement.|  
 |[Structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md)|Organiser les modèles dans un projet de grande ou moyenne taille.|  
   
-## <a name="external-resources"></a>Ressources externes  
-  
-|**Catégorie**|**Links**|  
-|------------------|---------------|  
-|**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+## <a name="resources"></a>Ressources
+
+[Visual Studio Visualization and Modeling Forum des outils](http://go.microsoft.com/fwlink/?LinkId=184720)  
+[Forum d’extensibilité de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)

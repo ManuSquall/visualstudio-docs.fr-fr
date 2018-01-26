@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a3ee963ef1ac4c4159f0fe1922bfafa90875fad7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: b6e23b91f411cd5260d31927ec35957a3f6c00c1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
 Un langage spécifique à un domaine (DSL) est défini par son fichier de définition DSL, ainsi que tout code de programme personnalisé que vous pouvez écrire. La plupart du code de programme dans la solution DSL est généré à partir de ce fichier.  
@@ -25,7 +25,7 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
 ## <a name="the-dsl-definition"></a>La définition DSL  
  Lorsque vous ouvrez `Dsl\DslDefinition.dsl`, votre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fenêtre ressemble à l’image suivante.  
   
- ![concepteur DSL](../modeling/media/dsl_designer.png "dsl_designer")  
+ ![dsl designer](../modeling/media/dsl_designer.png "dsl_designer")  
   
  Les informations les plus importantes dans la définition DSL s’affiche dans le diagramme de définition DSL. Informations supplémentaires, qui fait également partie de DslDefinition.dsl, s’affiche dans l’Explorateur DSL, qui apparaît généralement situé sur le côté du diagramme. Vous travaillez avec le schéma pour les tâches les plus fréquentes et avec l’Explorateur de DSL pour les personnalisations plus avancées.  
   
@@ -150,4 +150,4 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
  Une relation dérivée spécialise ses relations de base. Le domaine des classes qu’il doivent être dérivés de liens ou le même que les classes liées par la relation de base. Lorsqu’un lien de la relation dérivée est créé dans un modèle, il est une instance de la dérivée et les relations de base. Dans le code de programme, vous pouvez naviguer à l’extrémité opposée de la liaison en utilisant les propriétés générées par la base, ou par la classe dérivée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

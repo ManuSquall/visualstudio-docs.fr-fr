@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8250f21bd95816bf0d9424dc4a3fbb45302919d7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 21e31bd582fda7884f0f246bd6eda39e5e89a375
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajout d'une propriété de suivi à une définition de langage spécifique à un domaine
 Cette procédure pas à pas montre comment ajouter une propriété de suivi à un modèle de domaine.  
@@ -27,7 +27,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
   
  Par exemple, dans les outils de langage spécifique à un domaine (outils DSL), le nom d’affichage propriété d’une classe de domaine a la valeur par défaut qui est calculée en utilisant le nom de la classe de domaine, mais un utilisateur peut modifier la valeur au moment du design ou le réinitialiser à la valeur calculée.  
   
- Dans cette procédure pas à pas, vous créez un langage spécifique à un domaine (DSL) qui a une propriété qui a la valeur par défaut en fonction de la propriété Namespace de la valeur par défaut du modèle de suivi de Namespace. Pour plus d’informations sur le suivi des propriétés, consultez [définition des propriétés de suivi](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ Dans cette procédure pas à pas, vous créez un langage spécifique à un domaine (DSL) qui a une propriété qui a la valeur par défaut en fonction de la propriété Namespace de la valeur par défaut du modèle de suivi de Namespace. Pour plus d’informations sur le suivi des propriétés, consultez [définition des propriétés de suivi](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 -   La prise en charge d’outils DSL suivi des descripteurs de propriété. Toutefois, le concepteur DSL ne peut pas être utilisé pour ajouter une propriété de suivi avec une autre langue. Par conséquent, vous devez ajouter un code personnalisé pour définir et implémenter la propriété de suivi.  
   
@@ -48,9 +48,9 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.Microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
+|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
   
 ## <a name="creating-the-dsl-project"></a>Création du projet DSL  
  Créer le projet pour votre langage spécifique à un domaine.  
@@ -253,7 +253,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
 #### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Pour modifier le descripteur de type pour la classe de domaine ExampleModel  
   
 1.  Ajoutez le code suivant au fichier TypeDescriptor.cs.  
-  
+
     ```csharp  
     using System;  
     using System.ComponentModel;  
