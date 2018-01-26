@@ -21,11 +21,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 1657a440405533ba188a101ae22c26c2777feff5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 76b7ed58713f61882130c48d808012dc35055f55
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Paramètres des conventions de codage .NET pour EditorConfig
 
@@ -316,7 +316,7 @@ Cette règle n’accepte pas une valeur **true** ou **false**, elle accepte à l
 
 | Value | Description |
 | ----- |:----------- |
-| always | Toujours préférer la déclaration de modificateurs d’accessibilité |
+| always | Préférer la déclaration de modificateurs d’accessibilité |
 | for\_non\_interface_members | Préférer la déclaration de modificateurs d’accessibilité, sauf pour des membres d’interface publique. Cette valeur a le même effet que la valeur **always** et sert pour la vérification ultérieure si C# ajoute des méthodes d’interface par défaut. |
 | never | Ne jamais préférer la déclaration de modificateurs d’accessibilité |
 
