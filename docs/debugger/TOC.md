@@ -18,6 +18,7 @@
 # Guides pratiques
 ## [Naviguer dans le code avec le débogueur](navigating-through-code-with-the-debugger.md)
 ## [Utiliser des points d’arrêt](using-breakpoints.md)
+### [Dépannage des points d’arrêt](troubleshooting-breakpoints.md)
 ## [Inspecter des données](debugger-windows.md)
 ### [Inspecter des variables](autos-and-locals-windows.md)
 ### [Définir un espion dans des variables](watch-and-quickwatch-windows.md)
