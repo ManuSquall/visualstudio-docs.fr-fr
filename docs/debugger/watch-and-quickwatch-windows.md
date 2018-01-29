@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.watch
+f1_keywords:
+- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -15,22 +17,21 @@ helpviewer_keywords:
 - expression evaluation
 - registers, evaluating
 - debugging [Visual Studio], expression evaluation
-ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Définissez un espion dans des Variables à l’aide de l’espion et Espion express, fenêtres dans Visual Studio
-Pendant le débogage, vous pouvez utiliser la **espion** (**Déboguer > Windows > espion > espion (1, 2, 3, 4)**) et **Espion express** (avec le bouton droit sur la variable /  **Déboguer > Espion express**) windows pour surveiller les variables et expressions.  La fenêtre **Espion** permet d’afficher plusieurs variables, à la différence de la fenêtre **Espion express** , qui n’en affiche qu’une à la fois.
+Pendant le débogage, vous pouvez utiliser la **espion** et **Espion express** pour observer les variables et les expressions.  La fenêtre **Espion** permet d’afficher plusieurs variables, à la différence de la fenêtre **Espion express** , qui n’en affiche qu’une à la fois. 
 
-Les fenêtres sont disponibles uniquement pendant une session de débogage. 
+Les fenêtres sont disponibles uniquement pendant une session de débogage. Pour ouvrir la **espion** fenêtre, choisissez **Déboguer > Windows > espion > espion (1, 2, 3, 4)**). Pour ouvrir la **Espion express** fenêtre, soit avec le bouton droit sur la variable et choisissez **Espion express** ou choisissez **Déboguer > Espion express**.
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Observation d’une variable dans la fenêtre Espion express  
  Vous pouvez utiliser la fenêtre **Espion express** pour observer une variable déterminée. Par exemple, si vous avez le code suivant :  
@@ -54,7 +55,7 @@ static void Main(string[] args)
   
 2.  Démarrez le débogage. L'exécution s'arrête au point d'arrêt.  
   
-3.  Ouvrez la fenêtre **Espion express** (cliquez avec le bouton droit sur a, puis choisissez **Espion express**ou **Maj+F9**)
+3.  Ouvrez le **Espion express** fenêtre (avec le bouton droit sur `a`, puis choisissez **Espion express**, ou sélectionnez `a` et appuyez sur **MAJ + F9**).
 
     Vous devez voir une variable dans le **valeurs** fenêtre, avec la valeur 1.
 
