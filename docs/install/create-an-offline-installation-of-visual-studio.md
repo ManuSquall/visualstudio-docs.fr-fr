@@ -2,10 +2,11 @@
 title: "Créer une installation hors connexion de Visual Studio | Microsoft Docs"
 description: "Découvrez comment installer Visual Studio hors connexion."
 ms.custom: 
-ms.date: 08/30/2017
+ms.date: 01/17/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,12 +17,13 @@ ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6eb68b00e429db1336f851d6e4789ae0b4c8b803
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b9badba3247846ce63b79d48da7482ff0c58b693
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Créer une installation hors connexion de Visual Studio 2017
 
@@ -41,7 +43,7 @@ Nous vous recommandons d’essayer le [programme d’installation web de Visual 
 Si vous souhaitez procéder à une installation hors connexion parce que votre connexion Internet n’est pas disponible ou fiable, consultez [Installer Visual Studio 2017 dans des environnements réseau à faible bande passante ou non fiables](../install/install-vs-inconsistent-quality-network.md). Vous pouvez utiliser la ligne de commande pour créer un cache local des fichiers dont vous avez besoin pour effectuer l’installation hors connexion. Ce processus remplace les fichiers ISO des versions précédentes.
 
 > [!NOTE]
-> Si vous êtes administrateur d’entreprise et que vous souhaitez effectuer un déploiement de Visual Studio 2017 sur un réseau de stations de travail clientes qui sont protégées d’Internet par un pare-feu, consultez nos pages [Créer une installation réseau de Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) et [Considérations particulières pour installer Visual Studio dans un environnement hors connexion](../install/install-visual-studio-in-offline-environment.md).
+> Si vous êtes administrateur d’entreprise et que vous souhaitez effectuer un déploiement de Visual Studio 2017 sur un réseau de stations de travail clientes qui sont protégées d’Internet par un pare-feu, consultez nos pages [Créer une installation réseau de Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) et [Installer les certificats nécessaires à l’installation hors connexion de Visual Studio](../install/install-certificates-for-visual-studio-offline.md).
 
 ## <a name="get-support"></a>Obtenir de l’aide
 Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).

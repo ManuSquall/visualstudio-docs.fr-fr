@@ -7,11 +7,11 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 7f91a28449ffad135058438ec767095818cc8527
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: 5de4760b001e82a0c95c593c1308746946b2c630
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Configurer et installer Visual Studio pour Mac
 
@@ -19,11 +19,11 @@ ms.lasthandoff: 12/07/2017
 
 Pour commencer à développer des applications multiplateformes natives quand vous téléchargez Visual Studio pour Mac, vous devez installer et configurer un certain nombre de choses.
 
-Pour travailler sur iOS dans Visual Studio, vous avez besoin des éléments suivants :
+Pour travailler avec iOS dans Visual Studio, vous avez besoin des éléments suivants :
 
-* Un Mac avec macOS Sierra 10.12 ou ultérieur
+* un Mac avec macOS Sierra 10.12 ou ultérieur
 * Xcode 8.3 ou ultérieur. La dernière version stable est généralement recommandée.
-* Un identifiant Apple. Si vous n’avez pas déjà un identifiant Apple, vous pouvez en créer un sur https://appleid.apple.com. Un ID Apple est nécessaire pour installer et se connecter à Xcode.
+* un ID Apple. Si vous n’avez pas déjà un ID Apple, vous pouvez en créer un sur https://appleid.apple.com. Un ID Apple est nécessaire pour installer et se connecter à Xcode.
 
 ## <a name="install"></a>Installez
 
@@ -48,6 +48,18 @@ Pour travailler sur iOS dans Visual Studio, vous avez besoin des éléments suiv
 6. Le programme d’installation affiche une liste des composants nécessaires manquants, et qui doivent être téléchargés et installés. Sélectionnez les produits que vous voulez télécharger ici :
 
   ![Sélectionner des éléments](media/installer-image5.png)
+
+  Si vous ne souhaitez pas installer toutes les plateformes, utilisez le guide ci-dessous pour vous aider à choisir les plateformes à installer :
+
+  * **Applications utilisant Xamarin** :
+      - Xamarin.Forms – Sélectionnez les plateformes **Android** et **iOS**.
+      - iOS uniquement – Sélectionnez la plateforme **iOS** (notez que vous devrez installer [ **Xcode**](https://developer.apple.com/xcode/)).
+      - Android uniquement – Sélectionnez la plateforme **Android** (notez que vous devez également sélectionner les dépendances correspondantes).
+      - Mac uniquement – Sélectionnez la plateforme **macOS** (notez que vous devrez installer [ **Xcode**](https://developer.apple.com/xcode/)).
+      - Applications Xamarin entièrement multiplateformes – Sélectionnez les plateformes **Android**, **iOS** et **macOS**.
+  * **Applications .NET Core** – Sélectionnez la plateforme **.NET Core**.
+  * **Applications web ASP.NET Core** – Sélectionnez la plateforme **.NET Core**.
+  * **Développement de jeux Unity multiplateformes** – aucune plateforme supplémentaire ne doit être installée en plus de Visual Studio pour Mac. Reportez-vous au [guide d’installation Unity](~/setup-vsmac-tools-unity.md) pour plus d’informations sur l’installation de l’extension Unity.
 
   Cet écran d’installation affiche la version et la taille de chaque composant. Vous pouvez cliquer sur chaque composant pour afficher une liste des dépendances pour ce composant (pour Android), voir les packages supplémentaires qu’il télécharge (pour .NET Core), ou afficher les applications supplémentaires nécessaires (pour iOS et macOS) :
 
@@ -74,17 +86,6 @@ Pour travailler sur iOS dans Visual Studio, vous avez besoin des éléments suiv
 > [!NOTE]
 Si vous avez choisi pas installer un outil ou une plateforme lors de l’installation d’origine (en la désélectionnant à l’étape 6), vous devez réexécuter le [programme d’installation](https://www.visualstudio.com/vs/) si vous voulez ajouter les composants plus tard.
 
-## <a name="manual-installation"></a>Installation manuelle
-
-Si votre installation échoue ou si l’un des composants de votre installation échoue, vous pourrez peut-être résoudre le problème en effectuant une installation manuelle. Pour afficher les composants requis et télécharger chacun d’eux, effectuez les étapes suivantes :
-
-1. Sur le second écran de Visual Studio Installer, accédez à la barre de menus et sélectionnez **Afficher les instructions d’installation manuelle** :
-
-    ![Option montrant l’élément de menu d’installation manuelle](media/installer-image12.png)
-
-2. Suivez les instructions pour télécharger et installer les composants manuellement :
-
-  ![Boîte de dialogue d’installation manuelle](media/installer-image13.png)
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installer Visual Studio pour Mac derrière un pare-feu ou un serveur proxy
 
@@ -92,4 +93,24 @@ Pour installer Visual Studio pour Mac derrière un pare-feu, certains points de 
 
 Configurez votre réseau de façon à autoriser l’accès aux emplacements suivants :
 
-* [Points de terminaison de Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+* [Points de terminaison de Visual Studio](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+
+## <a name="next-steps"></a>Étapes suivantes
+
+L’installation de Visual Studio pour Mac vous permet de commencer à écrire du code pour vos applications. Les guides suivants sont fournis pour vous guider à travers les étapes d’écriture et de déploiement de vos projets.
+
+### <a name="ios"></a>iOS
+
+1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
+2. [Approvisionnement d’appareil](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(pour exécuter votre application sur l’appareil).
+
+
+### <a name="android"></a>Android
+
+1. [Utilisation de Xamarin Android SDK Manager](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
+2. [Émulateur SDK Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+4. [Configuration de l’appareil pour le développement](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+
+### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Applications web .NET Core et ASP.NET Core, développement de jeux Unity
+
+Pour les autres charges de travail, reportez-vous à la page [charges de travail](~/workloads.md).

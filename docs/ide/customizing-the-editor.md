@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,12 +15,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1efd5c84459c6902073dad2b2b8ebcd5b034c0ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 513780cde8a8a9c0db86b3720382b58a55f385af
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="customizing-the-editor"></a>Personnalisation de l’éditeur
 
@@ -29,7 +31,7 @@ Pour plus d’informations sur les options de l’éditeur de texte, consultez [
 
 ## <a name="see-also"></a>Voir aussi
 
-[Démarrage rapide : Personnaliser l’éditeur et l’IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)  
+[Démarrage rapide : personnaliser l’éditeur et l’IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)  
 [Écriture de code](../ide/writing-code-in-the-code-and-text-editor.md)  
 [Définition de signets dans le code](../ide/setting-bookmarks-in-code.md)  
 [Général, Environnement, boîte de dialogue Options](../ide/reference/general-environment-options-dialog-box.md)  

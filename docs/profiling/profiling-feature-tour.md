@@ -4,21 +4,24 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="profiling-feature-tour"></a>Visite guidée des fonctionnalités de profilage
 
@@ -32,7 +35,7 @@ Pendant le débogage, vous pouvez utiliser la fenêtre **Outils de diagnostic** 
 
 ![Vue Résumé des outils de diagnostic](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Résumé des outils de diagnostic")
 
-La fenêtre **Outils de diagnostic** est souvent la meilleure méthode pour profiler des applications, mais vous pouvez également effectuer une analyse post-mortem de votre application à la place. Pour plus d’informations sur les différentes approches, consultez [Exécution des outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+La fenêtre **Outils de diagnostic** est souvent la meilleure méthode pour profiler des applications, mais pour les versions de mise en production (Release), vous pouvez également effectuer une analyse post-mortem de votre application à la place. Pour plus d’informations sur les différentes approches, consultez [Exécution des outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Pour connaître la prise en charge des outils de profilage pour différents types d’applications, consultez [Quel outil utiliser ?](#tool_support_info).
 
 ## <a name="analyze-cpu-usage"></a>Analyser l'utilisation de l'UC
 
@@ -119,13 +122,13 @@ Vous pouvez également utiliser les graphiques pour déterminer la présence év
 
 ## <a name="analyze-performance-javascript"></a>Analyser les performances (JavaScript)
 
-Pour les applications HTML universelles Windows, vous pouvez utiliser les outils Mémoire JavaScript et Réactivité de l’interface utilisateur HTML.
+Pour les applications UWP, vous pouvez utiliser les outils Mémoire JavaScript et Réactivité de l’interface utilisateur HTML.
 
 L’outil Mémoire JavaScript est similaire à l’outil Utilisation de la mémoire disponible pour les autres types d’application. Vous pouvez utiliser cet outil pour comprendre l’utilisation de la mémoire et rechercher les fuites de mémoire dans votre application. Pour plus d’informations sur l’outil, consultez [Mémoire JavaScript](../profiling/javascript-memory.md).
 
 ![Outil de profilage - Mémoire JavaScript](../profiling/media/diagjsmemory.png "DiagJSMemory")
 
-Pour diagnostiquer la réactivité de l’interface utilisateur, la lenteur du temps de chargement et la lenteur des mises à jour visuelles dans les applications HTML universelles Windows, utilisez l’outil Réactivité de l’interface utilisateur HTML. L’utilisation est similaire à l’outil Chronologie de l’application pour les autres types d’application. Pour plus d’informations, consultez [Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md).
+Pour diagnostiquer la réactivité de l’interface utilisateur, la lenteur du temps de chargement et la lenteur des mises à jour visuelles dans les applications UWP, utilisez l’outil Réactivité de l’interface utilisateur HTML. L’utilisation est similaire à l’outil Chronologie de l’application pour les autres types d’application. Pour plus d’informations, consultez [Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md).
 
 ![Outil de profilage - Réactivité de l’interface utilisateur HTML](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
 
@@ -151,7 +154,7 @@ Si vous avez besoin de fonctionnalités qui ne sont pas présentes dans les outi
 
 Voici un tableau qui recense les différents outils proposés par Visual Studio, ainsi que les différents types de projet avec lesquels vous pouvez les utiliser :
   
-|Outil d’analyse des performances|Bureau Windows|Universel Windows/Store|ASP.NET/ASP.NET Core|  
+|Outil d’analyse des performances|Bureau Windows|UWP|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui|  
 |[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui (non pour .NET Core/ASP.NET Core)|  

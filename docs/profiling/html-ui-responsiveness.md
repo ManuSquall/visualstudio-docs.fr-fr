@@ -4,31 +4,29 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+- JavaScript
 helpviewer_keywords:
 - performance, JavaScript [UWP apps]
 - performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
 - profiler, JavaScript [UWP apps]
-ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: 71e8c18401b341ef1e1b24c35dc39e80758c31d2
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analyser la réactivité de l’interface utilisateur HTML dans les applications Windows universelles
 Cette rubrique explique comment isoler les problèmes de performances dans vos applications à l’aide du profileur de réactivité de l’interface utilisateur, outil d’analyse des performances disponible pour les applications Windows universelles.  
@@ -42,9 +40,9 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
 -   Les mises à jour visuelles qui sont moins fréquentes que prévu. Cela se produit si le thread d'interface utilisateur est trop occupé pour assurer une fréquence d'images lisse. Par exemple, si le thread d'interface utilisateur est occupé, des images peuvent être supprimées. Un travail thread qui n'est pas une interface utilisateur, par exemple les demandes réseau, le décodage d'image et les peintures, peut également limiter la fréquence des mises à jour visuelles. (Les peintures ne sont pas toutes exécutées sur le thread d'interface utilisateur.)  
   
 ##  <a name="RunningProfiler"></a> Exécuter l’outil de réactivité de l’interface utilisateur HTML  
- Vous pouvez utiliser l’outil de réactivité de l’interface utilisateur HTML quand vous avez une application UWP ou Windows 8.1 ouverte dans Visual Studio, ou installée sur un ordinateur exécutant Windows 8 ou ultérieur.  
+ Vous pouvez utiliser l’outil Réactivité de l'interface utilisateur HTML lorsque vous avez une application UWP ouverte dans Visual Studio.  
   
-1.  Si vous exécutez l'application à partir de Visual Studio, sur la barre d'outils **Standard** , dans la liste **Démarrer le débogage** , sélectionnez une cible de déploiement comme l'une des émulateurs Windows Phone, **Ordinateur local**, **Simulateur**ou **Ordinateur distant**.  
+1.  Si vous exécutez l’application à partir de Visual Studio, sur la barre d’outils **Standard**, dans la liste **Démarrer le débogage**, choisissez une cible de déploiement, par exemple **Ordinateur local** ou **Appareil**.  
   
 2.  Dans le menu **Déboguer** , choisissez **Profileur de performances**.  
   

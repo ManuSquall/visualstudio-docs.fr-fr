@@ -20,12 +20,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2d937f36fcf2b76af8f5865ecdf2b137188e15eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="code-snippets"></a>Extraits de code
 
@@ -35,7 +36,7 @@ Les extraits de code sont de petits blocs de code réutilisables que vous pouvez
 
 Dans Visual Studio, il existe deux types d'extrait de code : les extraits d'extension, qui sont ajoutés à un point d'insertion spécifié et qui peuvent remplacer un raccourci d'extrait de code, et les extraits de code d'encerclement (C# et C++ uniquement), qui sont ajoutés autour d'un bloc de code sélectionné.
 
-Exemple d'extrait de code d'insertion : en C#, le raccourci tryf est utilisé pour insérer un bloc try-finally :
+Exemple d'extrait de code d'extension : en C#, le raccourci tryf est utilisé pour insérer un bloc try-finally :
 
 ```csharp
 try

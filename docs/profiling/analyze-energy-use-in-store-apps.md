@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,16 +14,17 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 9ad762745627c2c30378f5017d88e78b00921d4a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: f6728f940b1d8613587b6b879324bd37a2a35e2d
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analyser la consommation d’énergie dans les applications UWP
 Le profileur **Consommation d’énergie** de Visual Studio vous permet d’analyser la consommation d’électricité et de batterie des applications UWP sur les tablettes de faible puissance qui fonctionnent tout ou partie du temps sur batterie. Sur un périphérique alimenté par batterie, une application trop gourmande en énergie peut entraîner le mécontentement du client, voire, éventuellement, sa désinstallation. L’optimisation de l’utilisation d’énergie peut augmenter la popularité et l’utilisation de votre application par les clients.  
@@ -106,7 +108,7 @@ if (performance && performance.mark) {
      Visual Studio analyse les données collectées et affiche les résultats.  
   
 ##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Collecter les données de profil d'énergie d'une application installée  
- L'outil Consommation d'énergie ne peut être exécuté que sur des Applications Windows Store 8.1, lancées à partir d'une solution Visual Studio ou installées depuis le Windows Store. Lorsqu'une solution est ouverte dans Visual Studio, la cible par défaut est le **Projet de démarrage**. Pour cibler une application installée :  
+ L'outil Consommation d'énergie ne peut être exécuté que sur des applications UWP lancées à partir d'une solution Visual Studio ou installées depuis le Microsoft Store. Lorsqu'une solution est ouverte dans Visual Studio, la cible par défaut est le **Projet de démarrage**. Pour cibler une application installée :  
   
 1.  Choisissez **Modifier la cible** puis **Application installée**.  
   

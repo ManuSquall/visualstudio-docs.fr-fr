@@ -12,13 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 2719ecd60a68de795c51ec4363a9130e4da9019c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.technology:
+- vs-ide-general
+ms.workload:
+- multiple
+ms.openlocfilehash: d6df33919220852642bac195d47752ec88e467ee
+ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="naming-conventions-for-editorconfig"></a>Conventions de nommage pour EditorConfig
 
@@ -74,7 +76,7 @@ La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier
 - protected\_internal ou protected_friend
 
 > [!NOTE]
-> Vous devez spécifier un niveau d’accessibilité dans le cadre de votre convention de nommage, sinon celle-ci risque d’être ignorée.
+> Ne spécifiez aucun niveau d’accessibilité dans le cadre de votre convention d’affectation de noms si l’accessibilité ne s’applique pas au type de symbole que vous ciblez. Par exemple, les paramètres n’ont pas de niveaux d’accessibilité. Si vous spécifiez un niveau d’accessibilité pour une convention d’affectation de noms de paramètre, votre règle d’affectation de noms ne fonctionnera pas correctement.
 
 ### <a name="symbol-modifiers"></a>Modificateurs de symboles
 

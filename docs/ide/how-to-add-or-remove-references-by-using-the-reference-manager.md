@@ -1,13 +1,15 @@
 ---
 title: "Guide pratique pour ajouter ou supprimer des références à l’aide du gestionnaire de références | Microsoft Docs"
 ms.custom: 
-ms.date: 06/21/2017
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.ReferenceManager
+f1_keywords:
+- VS.ReferenceManager
 helpviewer_keywords:
 - Visual C# projects, references
 - references [Visual Studio], adding
@@ -23,12 +25,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 24c317a641fc178306013d8b75c3254f3d3f7b1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 34dd559abcbfa6172c52edd2ed5eae2898f0b358
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du Gestionnaire de références
 
@@ -198,7 +201,7 @@ Si un type de projet ne prend pas en charge les **extensions**, l’onglet ne s�
 
 Vous pouvez utiliser le bouton **Parcourir** pour rechercher un composant dans le système de fichiers.
 
-Un projet peut faire référence à un composant qui cible une version différente du .NET Framework. Par exemple, vous pouvez créer une application qui cible le .NET Framework 4 Client Profile, qui référence un composant qui cible le .NET Framework 2. Pour plus d’informations, consultez [Ciblage d’une version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+Un projet peut faire référence à un composant qui cible une version différente du .NET Framework. Par exemple, vous pouvez créer une application qui cible le .NET Framework 4.7, qui référence un composant qui cible le .NET Framework 4. Pour plus d’informations, consultez [Ciblage d’une version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 
 Évitez, si possible, d'ajouter des références de fichier aux sorties d'un autre projet de la même solution, car cela risquerait de provoquer des erreurs de compilation. Utilisez plutôt l’onglet **Solution** de la boîte de dialogue **Gestionnaire de références** afin de créer des références entre projets. Cela facilite le développement en équipe, en permettant une meilleure gestion des bibliothèques de classes créées dans vos projets. Pour plus d’informations, consultez [Dépannage de références rompues](../ide/troubleshooting-broken-references.md).
 

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 06/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,19 +17,20 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9f6aaafa0ff72a175b5900b1ff1dfa054fe0381b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 Pour plus d’informations sur l’accessibilité du clavier, consultez [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md) et [Guide pratique pour utiliser uniquement le clavier](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez choisir les raccourcis clavier appropriés. Cette rubrique répertorie les raccourcis par défaut propres au profil de développement général, que vous avez peut-être choisi en installant Visual Studio. Quel que soit le profil que vous avez choisi, vous pouvez identifier le raccourci d’une commande en ouvrant la boîte de dialogue **Options**, en développant le nœud **Environnement**, puis en choisissant **Clavier**. Vous pouvez également personnaliser vos raccourcis en assignant un raccourci différent à toute commande donnée.
 
-Pour obtenir la liste des raccourcis clavier courants et d’autres informations sur la productivité, consultez [Raccourcis clavier par défaut pour les commandes fréquemment utilisées dans Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Conseils et astuces](../ide/tips-and-tricks-for-visual-studio.md) et [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md).
+Pour obtenir la liste des raccourcis clavier courants et d’autres informations sur la productivité, consultez [Raccourcis clavier par défaut pour les commandes fréquemment utilisées dans Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Conseils d’utilisation du clavier](../ide/tips-and-tricks-for-visual-studio.md) et [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md).
 
 Les sections du tableau suivant incluent des commandes globales, au sens où vous pouvez y accéder en tout point de Visual Studio à l'aide des raccourcis clavier indiqués :
 

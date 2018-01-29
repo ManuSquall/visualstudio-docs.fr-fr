@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
@@ -21,11 +22,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4113eda7afc2a5509c4f3f19b74628d7a9eb36e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 1c4f90aae0644ec1ff0edad55904360ddddb4be5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Options pour Python dans Visual Studio
 
@@ -51,10 +52,10 @@ Notez que le groupe **expérimental** contient des options pour des fonctionnali
 | --- | --- | --- |
 | Afficher la fenêtre Sortie pendant la création d’environnements virtuels| Activé | Désactivez-la pour empêcher la fenêtre Sortie de s’afficher. |
 | Afficher la fenêtre Sortie pendant l’installation ou la suppression des packages | Activé |  Désactivez-la pour empêcher la fenêtre Sortie de s’afficher. |
-| Toujours exécuter pip comme administrateur | Off | Élève toujours les privilèges des opérations `pip install` pour tous les environnements. Lors de l’installation des packages, Visual Studio vous invite à entrer des privilèges d’administrateur si l’environnement se trouve dans une zone protégée du système de fichiers, par exemple `c:\Program Files`. Dans cette invite, vous pouvez choisir de toujours élever les privilèges de `pip install` pour cet environnement uniquement. Consultez [Environnements Python - Onglet pip](python-environments.md#pip-tab). |
+| Toujours exécuter pip comme administrateur | Off | Élève toujours les privilèges des opérations `pip install` pour tous les environnements. Lors de l’installation des packages, Visual Studio vous invite à entrer des privilèges d’administrateur si l’environnement se trouve dans une zone protégée du système de fichiers, par exemple `c:\Program Files`. Dans cette invite, vous pouvez choisir de toujours élever les privilèges de `pip install` pour cet environnement uniquement. Consultez [Environnements Python - Onglet pip](managing-python-environments-in-visual-studio.md#pip-tab). |
 | Générer automatiquement la base de données de saisie semi-automatique à la première utilisation | Activé | Pour que les [saisies semi-automatiques IntelliSense](code-editing.md#intellisense) fonctionnent pour une bibliothèque, Visual Studio doit générer une base de données de saisie semi-automatique pour cette bibliothèque. La génération de la base de données est effectuée en arrière-plan quand une bibliothèque est installée, mais peut ne pas être terminée lorsque vous démarrez l’écriture de code. Si cette option est sélectionnée, Visual Studio donne la priorité à l’achèvement de la base de données pour une bibliothèque quand vous écrivez du code qui l’utilise. |
-| Ignorer les variables PYTHONPATH à l’échelle du système | Activé | PYTHONPATH est ignoré par défaut, car Visual Studio fournit un moyen plus direct de spécifier des chemins de recherche dans les projets et environnements. Consultez [Environnements Python - Chemins de recherche](python-environments.md#search-paths) pour plus d’informations. |
-| Mettre à jour les chemins de recherche lors de l’ajout de fichiers liés | Activé | Quand cette option est définie, l’ajout d’un [fichier lié](python-projects.md#linked-files) à un projet met à jour les [chemins de recherche](python-environments.md#search-paths) afin qu’IntelliSense puisse inclure le contenu du dossier du fichier lié dans sa base de données de saisie semi-automatique. Désactivez cette option pour exclure ce contenu de la base de données de saisie semi-automatique. |
+| Ignorer les variables PYTHONPATH à l’échelle du système | Activé | PYTHONPATH est ignoré par défaut, car Visual Studio fournit un moyen plus direct de spécifier des chemins de recherche dans les projets et environnements. Consultez [Environnements Python - Chemins de recherche](managing-python-environments-in-visual-studio.md#search-paths) pour plus d’informations. |
+| Mettre à jour les chemins de recherche lors de l’ajout de fichiers liés | Activé | Quand cette option est définie, l’ajout d’un [fichier lié](managing-python-projects-in-visual-studio.md#linked-files) à un projet met à jour les [chemins de recherche](managing-python-environments-in-visual-studio.md#search-paths) afin qu’IntelliSense puisse inclure le contenu du dossier du fichier lié dans sa base de données de saisie semi-automatique. Désactivez cette option pour exclure ce contenu de la base de données de saisie semi-automatique. |
 | Avertir quand le module importé est introuvable | Activé | Désactivez cette option pour supprimer les avertissements quand vous savez qu’un module importé n’est actuellement pas disponible, mais n’affecte pas par ailleurs le fonctionnement du code. |
 | Signaler une indentation incohérente comme | Avertissements | Comme l’interpréteur Python dépend fortement d’une mise en retrait appropriée pour déterminer la portée, Visual Studio émet par défaut des avertissements quand il détecte des mises en retrait incohérentes pouvant indiquer des erreurs de codage. Option définie sur *Erreurs* pour être encore plus stricte, ce qui entraîne la fermeture du programme dans ces cas. Pour désactiver complètement ce comportement, sélectionnez *Ne pas le faire*. |
 | Rechercher une étude/actualité | Une fois par semaine | Définit la fréquence à laquelle vous permettez à Visual Studio d’ouvrir une fenêtre contenant une page web avec des nouveautés et des études liées à Python, le cas échéant. Les options sont *Jamais*, *Une fois par jour*, *Une fois par semaine* et *Une fois par mois*. |
@@ -88,7 +89,7 @@ Notez que le groupe **expérimental** contient des options pour des fonctionnali
 
 | Option | Par défaut | Description |
 | --- | --- | --- |
-| scripts ; | N/A | Spécifie un dossier général pour les scripts de démarrage à appliquer aux fenêtres interactives pour tous les environnements. Consultez [Scripts de démarrage](python-environments.md#startup-scripts). Notez, toutefois, que cette fonctionnalité ne fonctionne pas pour l’instant. |
+| scripts ; | N/A | Spécifie un dossier général pour les scripts de démarrage à appliquer aux fenêtres interactives pour tous les environnements. Consultez [Scripts de démarrage](managing-python-environments-in-visual-studio.md#startup-scripts). Notez, toutefois, que cette fonctionnalité ne fonctionne pas pour l’instant. |
 | Les flèches Haut/Bas explorent l’historique | Activé | Utilise les touches de direction pour parcourir l’historique dans la fenêtre interactive. Désactivez ce paramètre pour utiliser les touches de direction afin de naviguer dans la sortie de la fenêtre interactive à la place. |
 | Mode de saisie semi-automatique | Évaluer uniquement les expressions sans appel de fonction | Le processus permettant de déterminer les membres disponibles sur une expression dans la fenêtre interactive peut nécessiter l’évaluation de l’expression non terminée actuelle, ce qui peut aboutir à des effets secondaires ou des fonctions appelées à plusieurs reprises. Le paramètre par défaut, *Évaluer uniquement les expressions sans appel de fonction*, exclut les expressions qui apparaissent pour appeler une fonction, mais évalue les autres expressions. Par exemple, il évalue `a.b` mais pas `a().b`.  *Ne jamais évaluer les expressions* empêche tous les effets secondaires, en utilisant uniquement le moteur IntelliSense normal pour obtenir des suggestions. *Évaluer toutes les expressions* évalue l’expression complète pour obtenir des suggestions, indépendamment des effets secondaires. |
 | Masquer les suggestions d’analyse statique | Off | Quand cette option est définie, n’affiche que les suggestions obtenues en évaluant l’expression. Associée au mode de saisie semi-automatique *Ne jamais évaluer les expressions*, aucune saisie semi-automatique utile ne s’affiche dans la fenêtre interactive. |
