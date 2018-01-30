@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 91cef7c8c037421b69cd13e69ab21543aaf89839
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 315a5c06a1ecda7976f17e20a299daed5dad65bd
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Vérifiez que votre application avec débogage dans Visual Studio historique d’IntelliTrace
 Vous pouvez utiliser [le débogage d’historique](../debugger/historical-debugging.md) à déplacer vers le haut et vers l’avant dans l’exécution de votre application et inspecter son état.  
@@ -27,7 +29,7 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise edition, mais pa
 ## <a name="navigate-your-code-with-historical-debugging"></a>Parcourir votre code avec le débogage d’historique  
  Commençons par un programme simple qui comporte un bogue. Dans une application de console C#, ajoutez le code suivant :  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  

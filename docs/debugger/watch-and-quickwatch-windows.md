@@ -22,8 +22,8 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2018
@@ -36,7 +36,7 @@ Les fenêtres sont disponibles uniquement pendant une session de débogage. Pour
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Observation d’une variable dans la fenêtre Espion express  
  Vous pouvez utiliser la fenêtre **Espion express** pour observer une variable déterminée. Par exemple, si vous avez le code suivant :  
   
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b;  
@@ -125,7 +125,7 @@ int main()
 ##  <a name="bkmk_refreshWatch"></a> Actualisation des valeurs obsolètes dans la fenêtre Espion  
  Dans certaines circonstances, vous pouvez voir une icône d’actualisation (une flèche circulaire) lorsque l’expression est évaluée dans le **espion** fenêtre.  Par exemple, si vous avez désactivé l’évaluation propriété (**Outils > Options > Débogage > Activer l’évaluation de la propriété et d’autres appels de fonction implicite**), et vous avez le code suivant :  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     List<string> list = new List<string>();  
@@ -177,7 +177,7 @@ var1 = var2
   
  Dans le code suivant, une méthode crée un `Person` à l’aide d’une variable locale, mais vous souhaitez en savoir plus que le `Person`du nom est une autre méthode :  
   
-```CSharp  
+```csharp  
 class Person  
 {  
     public Person(string name)  
