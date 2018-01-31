@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - resources [Visual Studio], fallback system
 - resource files, fallback processes
 ms.assetid: dadf8f2c-f74c-44d7-bec0-a1e956d8d38d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8235f246a52e3f8f53536abdf1aba2c0dede875d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cc663c02d3151e6dd55c1c35388ac7b33f049bb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Organisation hiérarchique des ressources pour la localisation
 Dans Visual Studio, les ressources localisées (les données comme des chaînes et des images adaptées à chaque culture) sont stockées dans des fichiers distincts et chargées en fonction du paramètre de culture de l’interface utilisateur. Pour comprendre comment les ressources localisées sont chargées, il est utile de les penser selon une organisation hiérarchique.  
@@ -50,10 +52,9 @@ Dans Visual Studio, les ressources localisées (les données comme des chaînes 
   
  ![Graphique NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
-## <a name="see-also"></a>Voir aussi  
- [Langues des ressources neutres pour la localisation](../ide/neutral-resources-languages-for-localization.md)   
- [Sécurité et assemblys satellites localisés](../ide/security-and-localized-satellite-assemblies.md)   
- [Localisation d’applications](../ide/localizing-applications.md)   
- [Globalisation et localisation d’applications](../ide/globalizing-and-localizing-applications.md)   
- [Comment : définir la culture et la culture de l’interface utilisateur pour la globalisation des Windows Forms](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0)   
- [Comment : définir la culture et la culture d’interface utilisateur pour la globalisation des pages web ASP.NET](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+## <a name="see-also"></a>Voir aussi
+
+[Langues des ressources neutres pour la localisation](../ide/neutral-resources-languages-for-localization.md)  
+[Sécurité et assemblys satellites localisés](../ide/security-and-localized-satellite-assemblies.md)  
+[Localisation d’applications](../ide/localizing-applications.md)  
+[Globalisation et localisation d’applications](../ide/globalizing-and-localizing-applications.md)

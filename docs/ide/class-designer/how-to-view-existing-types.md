@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.CannotShowBaseType
+f1_keywords:
+- vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
 - types [Visual Studio], visualizing
 - types [Visual Studio], class diagrams
 - class diagrams, types
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2fa9ab600c4f4be61a80b819fd20104a3639f0a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f9b5b4aed79dfbfda19020cfda17af68d7ae186c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Comment : afficher des types existants (Concepteur de classes)
 Pour voir un type existant et ses membres, ajoutez sa forme à un diagramme de classes.  
@@ -50,7 +53,7 @@ Pour concevoir de nouveaux types sur les diagrammes de classes, consultez [Guide
 Vous pouvez aussi afficher les types du projet en faisant glisser un ou plusieurs nœuds depuis le nœud du projet de l'Affichage de classes vers le diagramme de classes.  
   
 > [!TIP]
->  Si l’Affichage de classes n’est pas ouvert, ouvrez-le depuis le menu **Affichage**. Pour plus d’informations sur l’affichage des classes, consultez [Affichage des classes et de leurs membres](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+> Si l’Affichage de classes n’est pas ouvert, ouvrez-le depuis le menu **Affichage**.
   
 Pour afficher les types à des emplacements par défaut du diagramme, sélectionnez un ou plusieurs types dans l’Affichage de classes, cliquez avec le bouton droit sur les types sélectionnés et choisissez **Afficher le diagramme de classes**.  
   

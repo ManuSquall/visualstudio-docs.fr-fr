@@ -3,21 +3,24 @@ title: "Conseils et astuces pour améliorer les performances de Visual Studio | 
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: f15f9b34a19617986ca64f9b13af1b28d4c9d01a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces pour améliorer les performances de Visual Studio
 
@@ -32,7 +35,7 @@ Les recommandations pour améliorer les performances de Visual Studio concernent
 
     Si vous mettez à niveau votre système d’une version 32 bits de Windows vers une version 64 bits, vous passez de 2 Go à 4 Go la quantité de mémoire virtuelle disponible pour Visual Studio. Cela permet à Visual Studio de gérer des charges de travail beaucoup plus importantes, même avec un processus 32 bits.
 
-    Pour plus d’informations, consultez la page sur les [limites de mémoire](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) et l’[utilisation de /LARGEADDRESSAWARE sur Windows 64 bits](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Pour plus d’informations, consultez la page sur les [limites de mémoire](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) et l’[utilisation de /LARGEADDRESSAWARE sur Windows 64 bits](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="configure-solution-and-projects"></a>Configurer des solutions et des projets
 
@@ -47,6 +50,7 @@ Si votre solution est très volumineuse et contient de nombreux projets, vous po
     Vous pouvez fractionner votre solution en plusieurs petits fichiers solution dans les projets couramment utilisés. Cette refactorisation doit réduire considérablement l’utilisation de mémoire pour votre flux de travail. Les solutions plus petites se chargent également plus vite.
 
 ## <a name="configure-debugging-options"></a>Configurer les options de débogage
+
 En règle générale, si vous manquez de mémoire pendant le débogage des sessions, vous pouvez optimiser les performances en modifiant un peu la configuration.
 
 - **Activer Uniquement mon code**
@@ -74,6 +78,7 @@ En règle générale, si vous manquez de mémoire pendant le débogage des sessi
     Pour plus d’informations, consultez [Outils de profilage](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Désactiver des outils et des extensions
+
 Certains outils ou extensions peuvent être désactivés pour améliorer les performances.
 
 > [!TIP]
@@ -123,7 +128,8 @@ Pour forcer une opération de garbage collection, utilisez la touche de raccourc
 
 Si le forçage de l’opération de garbage collection permet à votre scénario de fonctionner de manière fiable, envoyez un rapport à travers l’outil de commentaires de Visual Studio, car ce comportement est susceptible d’être un bogue.
 
-Pour obtenir une description détaillée du récupérateur de mémoire CLR, consultez [Fundamental of Garbage Collection](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx) (Concepts fondamentaux de l’opération de garbage collection).
+Pour obtenir une description détaillée du récupérateur de mémoire CLR, consultez [Fundamental of Garbage Collection](/dotnet/standard/garbage-collection/fundamentals) (Concepts fondamentaux de l’opération de garbage collection).
 
-## <a name="see-also"></a>Voir aussi  
- [IDE Visual Studio](../ide/index.md)
+## <a name="see-also"></a>Voir aussi
+
+[IDE Visual Studio](../ide/visual-studio-ide.md)

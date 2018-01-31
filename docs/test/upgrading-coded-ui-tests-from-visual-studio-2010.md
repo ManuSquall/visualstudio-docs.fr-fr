@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 9e89ff364b0b10ee85be6fdd98d3e328f8c337ee
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 1af9c5634770b08b7903033226f44630bdb0e133
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Mise à niveau de tests codés de l'interface utilisateur à partir de Visual Studio 2010
 Les projets de test contenant des tests codés de l’interface utilisateur qui ont été créés dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 sont réparés en mode silencieux quand vous les ouvrez dans Visual Studio 2012 ou ultérieur. Si les projets de test sont archivés dans le contrôle de code source, les fichiers projet sont extraits pour cette réparation. Une fois réparés, ces projets de test contenant des tests codés de l'interface utilisateur peuvent alors être utilisés à la fois dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 et [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -25,7 +26,7 @@ Les projets de test contenant des tests codés de l’interface utilisateur qui 
 -   Visual Studio Enterprise  
   
 > [!NOTE]
->  Visual Studio inclut plusieurs types de projets de test. Si vous créez un test codé de l'interface utilisateur, il le sera dans un type de projet de test codé de l'interface utilisateur. Pour plus d’informations, consultez [Mise à niveau des tests à partir de versions antérieures de Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
+> Visual Studio inclut plusieurs types de projets de test. Si vous créez un test codé de l'interface utilisateur, il le sera dans un type de projet de test codé de l'interface utilisateur.
   
 > [!WARNING]
 >  Les projets de test[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] qui contiennent des tests codés de l'interface utilisateur doivent être régénérés quand vous ouvrez le projet de test dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] ou [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] côte à côte avec [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -66,6 +67,5 @@ Les projets de test contenant des tests codés de l’interface utilisateur qui 
 ## <a name="see-also"></a>Voir aussi
 
 [Portage, migration et mise à niveau des projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
-[Mise à niveau des tests à partir de versions antérieures de Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)  
 [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)  
 [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: ae08752c7687844fbe620bf6314496b474b6e915
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0133db8e1060da48e5938a08ded187fa900b4d30
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extension des tests codés de l'interface utilisateur t enregistrements des actions pour prendre charge Microsoft Excel
 L'infrastructure de test pour les tests codés de l'interface utilisateur et les enregistrements des actions ne prend pas en charge toutes les interfaces utilisateur possibles. Elle risque de ne pas prendre en charge l’interface utilisateur spécifique que vous souhaitez tester. Par exemple, vous ne pouvez pas créer immédiatement un test codé de l'interface utilisateur ou un enregistrement des actions pour une feuille de calcul [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Toutefois, vous pouvez créer votre propre extension de l'infrastructure de test codé de l'interface utilisateur, qui prend en charge votre interface utilisateur spécifique en tirant parti de l'extensibilité de l'infrastructure de test codé de l'interface utilisateur. La rubrique suivante fournit un exemple montrant comment étendre l'infrastructure pour prendre en charge la création de tests codés de l'interface utilisateur et les enregistrements des actions pour [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Pour plus d’informations sur les plateformes prises en charge, consultez [Configurations et plateformes prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
@@ -68,14 +69,16 @@ Vue d'ensemble de l'architecture
   
  Vous devrez peut-être changer les chemins d'accès de copie, mais aucune installation supplémentaire n'est nécessaire. Sur un ordinateur 64 bits, utilisez l'invite de commandes de Visual Studio Enterprise 32 bits pour exécuter le fichier `CopyDrop.bat`.  
   
-### <a name="testing-excel-with-the-sampletestproject"></a>Test d'Excel avec SampleTestProject  
- Vous pouvez exécuter le test dans le projet de test fourni, lequel utilise une version spécifique d'Excel que vous n'avez peut-être pas. Toutefois, vous pouvez également créer votre propre projet de test, et enregistrer un test de votre choix. Pour plus d’informations, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
-  
-## <a name="see-also"></a>Voir aussi  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
- [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
- [Bonnes pratiques pour les tests codés de l’interface utilisateur](../test/best-practices-for-coded-ui-tests.md)   
- [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+### <a name="testing-excel-with-the-sampletestproject"></a>Test d'Excel avec SampleTestProject
+
+Vous pouvez exécuter le test dans le projet de test fourni, lequel utilise une version spécifique d'Excel que vous n'avez peut-être pas. Toutefois, vous pouvez également créer votre propre projet de test, et enregistrer un test de votre choix. Pour plus d’informations, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md).
+
+## <a name="see-also"></a>Voir aussi
+
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
+[Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
+[Bonnes pratiques pour les tests codés de l’interface utilisateur](../test/best-practices-for-coded-ui-tests.md)   
+[Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - interfaces [Visual Studio], implementing
 - interfaces [Visual Studio]
 ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c926da09cb8bbb191d0d307dd9e8ce16cfef3c20
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 819fdb15a436dbdb4059d7ecef3e23d95c0aebe4
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Comment : implémenter une interface (Concepteur de classes)
 Dans le Concepteur de classes, vous pouvez implémenter une interface pour le diagramme de classes en la connectant à une classe qui fournit du code pour les méthodes d’interface. Le Concepteur de classes génère une implémentation d’interface et affiche la relation entre l’interface et la classe sous la forme d’une relation d’héritage. Vous pouvez implémenter une interface en dessinant une ligne d’héritage entre l’interface et la classe ou en faisant glisser l’interface à partir de l’Affichage de classes.  
@@ -45,7 +47,7 @@ Dans le Concepteur de classes, vous pouvez implémenter une interface pour le di
 2.  Ouvrez l’Affichage de classes et recherchez l’interface.  
   
     > [!TIP]
-    >  Si l’Affichage de classes n’est pas ouvert, ouvrez-le depuis le menu **Affichage**. Pour plus d’informations sur l’affichage des classes, consultez [Affichage des classes et de leurs membres](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+    > Si l’Affichage de classes n’est pas ouvert, ouvrez-le depuis le menu **Affichage**.
   
 3.  Faites glisser le nœud de l’interface vers la forme de classe sur le diagramme.  
   

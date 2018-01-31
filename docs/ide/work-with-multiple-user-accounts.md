@@ -7,17 +7,16 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 33f8c8c8068f14d7cdf8bf32c4cff960b98957f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: def8b9347ec5c74cf369972602416c992dff39c7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d’utilisateur
 
@@ -52,7 +51,7 @@ La prochaine fois que vous ouvrez l'Explorateur de serveurs, les ressources corr
 1. Choisissez le nœud du projet dans l’Explorateur de solutions, puis choisissez **Ajouter, Service connecté**. Dans l’Assistant **Ajouter un service connecté** qui apparaît, vous pouvez voir la liste des services dans le compte Azure associé à votre ID de connexion Visual Studio. Notez que vous n'êtes pas obligé de vous connecter séparément à Azure. Vous devez néanmoins vous connecter aux autres comptes la première fois que vous tentez d'accéder à leurs ressources à partir d'un ordinateur donné.
 
     > [!WARNING]
-    > Si c’est la première fois que vous créez une application UWP dans Visual Studio sur un ordinateur spécifique, vous êtes invité à activer le mode développement sur votre appareil. Pour cela, accédez à **Paramètres &#124; Mises à jour et sécurité &#124; Pour les développeurs** sur votre ordinateur. Pour plus d’informations, consultez [Activer votre appareil pour le développement](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx).
+    > Si c’est la première fois que vous créez une application UWP dans Visual Studio sur un ordinateur spécifique, vous êtes invité à activer le mode développement sur votre appareil. Pour cela, accédez à **Paramètres &#124; Mises à jour et sécurité &#124; Pour les développeurs** sur votre ordinateur. Pour plus d’informations, consultez [Activer votre appareil pour le développement](/windows/uwp/get-started/enable-your-device-for-development).
 
 ### <a name="access_azure"></a> Accès à Azure Active Directory dans un projet web
 
