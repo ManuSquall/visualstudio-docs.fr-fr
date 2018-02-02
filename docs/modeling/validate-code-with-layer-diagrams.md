@@ -21,12 +21,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 7f00144687d2e9bc728cbdd1ef57342d1b19881d
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Valider le code avec des diagrammes de dépendance
 
@@ -54,7 +55,7 @@ Pour vous assurer que le code ne sont en conflit avec sa conception, validez vot
   
 -   Visual Studio sur votre serveur Team Foundation Build pour valider le code automatiquement avec Team Foundation Build  
   
--   Une solution qui contient un projet de modélisation avec un diagramme de dépendances. Ce diagramme de dépendance doit être lié aux artefacts dans les projets Visual c# .NET ou Visual Basic .NET que vous souhaitez valider. Consultez [créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md).  
+-   Une solution qui contient un projet de modélisation avec un diagramme de dépendances. Ce diagramme de dépendance doit être lié aux artefacts dans les projets c# ou Visual Basic que vous souhaitez valider. Consultez [créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md).  
   
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -120,7 +121,7 @@ Dans cette version de Visual Studio, validation de dépendance se produit en tem
 2.  Pour afficher la source de chaque erreur, double-cliquez sur l’erreur dans le **liste d’erreurs** fenêtre.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peut afficher une carte de code à la place de la source de l'erreur. Cela se produit lorsque le code a une dépendance sur un assembly qui n’est pas spécifié par le diagramme de dépendance ou le code il manque une dépendance spécifiée par le diagramme de dépendances. Examinez la carte de code ou le code pour déterminer si la dépendance doit exister. Pour plus d’informations sur les cartes de code, consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md).  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peut d’afficher une carte de code au lieu de la source de l’erreur. Cela se produit lorsque le code a une dépendance sur un assembly qui n’est pas spécifié par le diagramme de dépendance ou le code il manque une dépendance spécifiée par le diagramme de dépendances. Examinez la carte de code ou le code pour déterminer si la dépendance doit exister. Pour plus d’informations sur les cartes de code, consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
 3.  Pour gérer les erreurs, consultez [gérer les erreurs de validation](#ManageErrors).  
   

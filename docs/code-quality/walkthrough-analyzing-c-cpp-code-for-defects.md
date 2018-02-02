@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
 ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c95d03201fe9c84e01e83e7fd55bef83755337e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f9b0f8e36cddca227062550775c9f6098aeb1c6f
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procédure pas à pas : analyse du code C/C++ pour rechercher les erreurs
 Cette procédure pas à pas montre comment analyser du code C/C++ pour les erreurs potentielles de code à l’aide de l’outil d’analyse du code pour le code C/C++.  
@@ -85,9 +87,9 @@ Cette procédure pas à pas montre comment analyser du code C/C++ pour les erreu
   
 3.  Corriger cet avertissement à l’aide de la macro SUCCEEDED. Votre code doit ressembler au code suivant :  
   
-    ```  
-    if (SUCCEEDED (ReadUserAccount()) )  
-    ```  
+   ```cpp
+   if (SUCCEEDED (ReadUserAccount()) )  
+   ```  
   
 4.  Dans le **liste d’erreurs**, double-cliquez sur l’avertissement suivant :  
   
@@ -95,17 +97,17 @@ Cette procédure pas à pas montre comment analyser du code C/C++ pour les erreu
   
 5.  Corriger cet avertissement en testant l’égalité. Votre code doit ressembler au code suivant :  
   
-    ```  
-    if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
-    ```  
+   ```cpp
+   if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
+   ```  
   
 ### <a name="to-treat-warning-as-an-error"></a>Pour traiter un avertissement comme une erreur  
   
 1.  Dans le fichier Bug.cpp, ajoutez le code suivant `#pragma` instruction au début du fichier à traiter l’avertissement C6001 comme une erreur :  
   
-    ```  
-    #pragma warning (error: 6001)  
-    ```  
+   ```cpp
+   #pragma warning (error: 6001)  
+   ```  
   
 2.  Régénérez le projet CodeDefects.  
   
@@ -141,17 +143,14 @@ Cette procédure pas à pas montre comment analyser du code C/C++ pour les erreu
   
 8.  Pour corriger cet avertissement, utilisez une instruction 'if' pour tester la valeur de retour. Votre code doit ressembler au code suivant :  
   
-     `if (NULL != newNode)`  
-  
-     `{`  
-  
-     `newNode->data = value;`  
-  
-     `newNode->next = 0;`  
-  
-     `node->next = newNode;`  
-  
-     `}`  
+   ```cpp
+   if (NULL != newNode)  
+   {  
+   newNode->data = value;  
+   newNode->next = 0;  
+   node->next = newNode;  
+   }
+   ```
   
 9. Régénérez le projet Annotations.  
   
@@ -161,15 +160,13 @@ Cette procédure pas à pas montre comment analyser du code C/C++ pour les erreu
   
 1.  Annotez les paramètres formels et la valeur de retour de la fonction `AddTail` en utilisant les conditions Pre et Post comme indiqué dans cet exemple :  
   
-     `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
-  
-     `(`  
-  
-     `[SA_Pre(Null=SA_Maybe)] LinkedList* node,`  
-  
-     `int value`  
-  
-     `)`  
+   ```cpp
+   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
+   (
+   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
+   int value
+   )
+   ```
   
 2.  Régénérez le projet Annotations.  
   
@@ -181,19 +178,21 @@ Cette procédure pas à pas montre comment analyser du code C/C++ pour les erreu
   
 4.  Pour corriger cet avertissement, utilisez une instruction 'if' pour tester la valeur de retour. Votre code doit ressembler au code suivant :  
   
-    ```  
-    . . .  
-    LinkedList *newNode = NULL;   
-    if (NULL == node)  
-    {  
-         return NULL;  
+   ```cpp
+   . . .  
+   LinkedList *newNode = NULL;   
+   if (NULL == node)  
+   {  
+        return NULL;  
         . . .  
-    }  
-    ```  
+   }  
+   ```  
   
 5.  Régénérez le projet Annotations.  
   
      Le projet se génère sans les avertissements ou erreurs.  
   
-## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : analyse du code managé pour les erreurs de code](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+## <a name="see-also"></a>Voir aussi
+
+[Procédure pas à pas : analyse du code managé pour les erreurs de code](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)  
+[Analyse du code pour C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

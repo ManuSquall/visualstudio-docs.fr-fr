@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36e0ab96c1c0c3deeced62ff9808737c903e682b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c82bc929fa7633719c06569cb3dded5df651a349
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Amélioration de la qualité du code avec des stratégies d’archivage de projet d’équipe
 
@@ -48,7 +50,7 @@ Vous pouvez spécifier les stratégies d’archivage de projet d’équipe suiva
 |Tâche|Contenu de support|
 |----------|------------------------|
 |**Utiliser l’analyse du code dans le processus de développement :** les membres de l’équipe effectuent une analyse du code sur leurs ordinateurs dédiés au développement. Dans Visual Studio, les développeurs configurent et exécutent des opérations d’analyse du code pour des projets de code individuels, consultent et analysent les problèmes rencontrés dans les opérations et créent des éléments de travail pour les avertissements.|[Analyse de la qualité des applications](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|
-|**Créer et exécuter des tests unitaires** : les tests unitaires constituent, pour les développeurs et les testeurs, un moyen simple de rechercher des erreurs de logique dans les méthodes de classes, pour des projets C#, Visual Basic .NET et C++. Un test unitaire peut être créé une fois et exécuté à chaque modification du code source pour s’assurer qu’aucun bogue n’a été introduit.|[Tests unitaires sur votre code](../test/unit-test-your-code.md)|
+|**Créer et exécuter des tests unitaires :** tests unitaires offrent aux développeurs et aux testeurs une méthode rapide pour rechercher des erreurs de logique dans les méthodes des classes dans les projets c#, Visual Basic et C++. Un test unitaire peut être créé une fois et exécuté à chaque modification du code source pour s’assurer qu’aucun bogue n’a été introduit.|[Tests unitaires sur votre code](../test/unit-test-your-code.md)|
 |**Suivre des éléments de travail et des défauts :** vous pouvez utiliser des éléments de travail pour suivre et gérer à la fois votre travail et les informations concernant votre projet d’équipe. Un élément de travail est un enregistrement de base de données que [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] utilise pour effectuer le suivi de l’assignation et de la progression d’un travail. Vous pouvez utiliser différents types d’éléments de travail pour effectuer le suivi de différents types de travaux, par exemple les spécifications du client, les bogues de produits et les tâches de développement.|[Éléments de travail (VSTS)](/vsts/work/work-items/index)|
 
 ## <a name="external-resources"></a>Ressources externes

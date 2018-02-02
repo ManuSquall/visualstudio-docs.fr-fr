@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -21,18 +22,20 @@ helpviewer_keywords:
 - '#pragma directives, code analysis'
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 28a5e13c2c56c7ecdb65efdfc1bd0b3c6eb47bfc
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2261921e4266f1b58ed31650ac1ff1bb7c028942
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="code-analysis-for-cc-overview"></a>Vue d'ensemble de l'analyse du code C/C++
+# <a name="code-analysis-for-cc-overview"></a>Analyse du code pour une vue d’ensemble de C/C++
+
 L'outil d'analyse du code C/C++ fournit aux développeurs des informations sur d'éventuelles erreurs présentes dans leur code source C/C++. Les erreurs de codage courantes signalées par l'outil sont les dépassements de mémoire tampon, la mémoire désinitialisée, les déréférencements du pointeur null et les fuites de mémoire et de ressources.  
   
 ## <a name="ide-integrated-development-environment-integration"></a>Intégration IDE (environnement de développement intégré)  
@@ -48,9 +51,14 @@ L'outil d'analyse du code C/C++ fournit aux développeurs des informations sur d
  Vous souhaiterez peut-être nécessitent que tous les source code archivages respectent certaines stratégies. En particulier, vous souhaitez vous assurer que l’analyse a été exécutée dans le cadre de la dernière build locale. Pour plus d’informations sur l’activation d’une stratégie d’archivage de l’analyse du code, consultez [création et à l’aide de Code analyse stratégies d’archivage](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
 ## <a name="team-build-integration"></a>Intégration de Team Build  
- Vous pouvez utiliser les fonctionnalités intégrées du système de génération pour exécuter l’outil d’analyse du code dans le cadre de la [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processus de génération. Pour plus d’informations, consultez [créer et libérer](/vsts/build-release/index).  
+ Vous pouvez utiliser les fonctionnalités intégrées du système de génération pour exécuter l’outil d’analyse du code dans le cadre de la [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processus de génération. Pour plus d’informations, consultez [Build et mise en production](/vsts/build-release/index).  
   
 ## <a name="command-line-support"></a>Prise en charge de ligne de commande  
  En plus de l’intégration complète dans l’environnement de développement, les développeurs peuvent également utiliser l’outil d’analyse à partir de la ligne de commande, comme indiqué dans l’exemple suivant :  
   
  `C:\>cl /analyze Sample.cpp`
+
+## <a name="see-also"></a>Voir aussi
+
+[Analyse de la qualité du pilote à l’aide des outils d’analyse du Code](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)  
+[Analyse du code pour les avertissements de pilotes](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)

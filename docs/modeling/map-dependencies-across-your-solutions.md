@@ -29,12 +29,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 9b921b3b4c1bad9b68f668ec7589b4a0030052d0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
 
@@ -63,13 +64,13 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
  **Vous pouvez mapper les dépendances de code dans les langages suivants**:  
   
--   Visual C# .NET ou Visual Basic .NET dans une solution ou des assemblys (.dll ou .exe)  
+-   Visual c# ou Visual Basic dans une solution ou des assemblys (.dll ou .exe)  
   
 -   Code C ou C++ natif ou managé dans des projets, fichiers d’en-tête (.h ou `#include`) ou des fichiers binaires Visual C++  
   
 -   projets et assemblys X++ créés à partir de modules .NET pour Microsoft Dynamics AX.  
   
- **Remarque :** pour les projets autres que C# ou Visual Basic .NET, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de l’Explorateur de solutions, de l’affichage de classes et de l’Explorateur d’objets.  
+ **Remarque :** pour les projets autres que c# ou Visual Basic, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de l’Explorateur de solutions, de l’affichage de classes et de l’Explorateur d’objets.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Pour afficher les dépendances globales dans votre solution  
   
@@ -286,7 +287,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ##  <a name="SeeSourceHeader"></a> Visualiser les dépendances entre les fichiers sources et les fichiers d’en-tête C et C++  
  Si vous souhaitez créer des cartes plus complètes pour des projets C++, définissez l’option du compilateur d’informations de consultation (**/FR**) sur ces projets. Sinon, un message vous invite à définir cette option. Si vous sélectionnez **OK**, l’option est définie uniquement pour la carte active. Vous pouvez choisir de masquer le message pour toutes les cartes ultérieures. Si vous masquez ce message, vous pouvez le faire réapparaître. Affectez à la clé de Registre suivante la valeur `0` ou supprimez-la :  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Lorsque vous ouvrez une solution qui contient des projets Visual C++, la mise à jour de la base de données IntelliSense peut prendre un certain temps. Pendant ce temps, il est impossible de créer des cartes de code pour les fichiers d’en-tête (.h ou `#include`) tant que la base de données IntelliSense n’a pas terminé la mise à jour. Vous pouvez surveiller la progression des mises à jour dans la barre d’état de Visual Studio. Pour résoudre les problèmes ou messages qui s’affichent en raison de la désactivation de certains paramètres IntelliSense, consultez [Résoudre les problèmes liés aux cartes dans le code C et C++](#Troubleshooting).  
   

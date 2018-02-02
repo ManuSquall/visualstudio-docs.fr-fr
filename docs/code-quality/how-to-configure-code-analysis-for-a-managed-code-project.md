@@ -7,29 +7,30 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.propertypages.csvb
+f1_keywords:
+- vs.codeanalysis.propertypages.csvb
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
-ms.assetid: 618f6ff3-db0e-46cb-b08d-dfa35e62c9e7
-caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 134645ced3352d820165b23a73308894fed0897a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 575b81e9c213e4025cd38921ad467869686d867c
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procédure : configurer l’analyse du code pour un projet de code managé
-Dans [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] et [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], vous pouvez choisir parmi une liste d’analyse du code *ensembles de règles* à appliquer à un projet de code managé. L’ensemble de règles par défaut est de règles Microsoft minimales recommandées. Vous pouvez appliquer un autre ensemble de règles à un projet ou à tous les projets dans une solution.  
+
+Dans Visual Studio, vous pouvez choisir parmi une liste de l’analyse du code *ensembles de règles* à appliquer à un projet de code managé. L’ensemble de règles par défaut est de règles Microsoft minimales recommandées. Vous pouvez appliquer un autre ensemble de règles à un projet ou à tous les projets dans une solution.  
   
 > [!NOTE]
->  Pour plus d’informations sur la configuration d’un ensemble de règles pour les applications Web ASP.NET, consultez [Comment : configurer l’analyse du Code pour une Application Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
+> Pour plus d’informations sur la configuration d’un ensemble de règles pour les applications Web ASP.NET, consultez [Comment : configurer l’analyse du Code pour une Application Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
   
-### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Pour configurer un ensemble de règles pour un projet .NET Framework  
+## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Pour configurer un ensemble de règles pour un projet .NET Framework  
   
 1.  Dans **l’Explorateur de solutions**, cliquez sur le projet.  
   
@@ -37,12 +38,12 @@ Dans [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[
   
 3.  Dans le **Configuration** et **plateforme** listes, cliquez sur la build configuration et la plateforme cible.  
   
-4.  Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez le **activer analyse du Code sur la Build (définit la constante CODE_ANALYSIS)** case à cocher. Vous pouvez également exécuter manuellement l’analyse du code en ouvrant le **analyser** menu et en cliquant sur **exécuter l’analyse du Code sur** *nom_projet*.  
+4.  Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez le **activer l’analyse du Code sur la Build** case à cocher. Vous pouvez également exécuter manuellement l’analyse du code en ouvrant le **analyser** menu et en choisissant ** Exécuter l’analyse du Code sur * *** ProjectName.  
   
 5.  Par défaut, l'analyse du code ne signale pas d'avertissements pour le code généré automatiquement par les outils externes. Pour afficher les avertissements du code généré, désactivez le **supprimer les résultats du code généré** case à cocher.  
   
     > [!NOTE]
-    >  Cette option ne supprime pas les erreurs d'analyse du code et les avertissements du code généré qui apparaissent dans les formulaires et les modèles. Vous pouvez afficher et gérer le code source pour un formulaire ou un modèle.  
+    > Cette option ne supprime pas les erreurs d'analyse du code et les avertissements du code généré qui apparaissent dans les formulaires et les modèles. Vous pouvez afficher et mettre à jour le code source pour un formulaire ou un modèle, sans que celle-ci n’est remplacé.
   
 6.  Dans le **exécuter cet ensemble de règles** liste, effectuez l’une des opérations suivantes :  
   
@@ -54,5 +55,6 @@ Dans [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[
   
          Pour plus d’informations, consultez [création d’ensembles de règles personnalisés](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   
-## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : configuration et utilisation d’un ensemble de règles personnalisé](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
+## <a name="see-also"></a>Voir aussi
+
+[Procédure pas à pas : configuration et utilisation d’un ensemble de règles personnalisé](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

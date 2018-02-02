@@ -6,17 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
-caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
+dev_langs:
+- CPP
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 0dba021b25a63a057f882aeb5c49a560992c2c2b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 97ada4fa2abd8975bd728b48fc24b9e3e9e2af41
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Les outils d’analyse de recommandations de base C++ à l’aide de
 Les instructions de base C++ sont un ensemble portable des instructions, les règles et les meilleures pratiques sur le codage dans C++ créés par les concepteurs et les experts de C++. Visual Studio prend actuellement en charge un sous-ensemble de ces règles dans le cadre de ses outils d’analyse de code C++. Outils d’analyse de l’indication core sont installés par défaut dans Visual Studio 2017 et sont [disponible comme package NuGet pour Visual Studio 2015](#vs2015_corecheck).
@@ -191,7 +191,7 @@ Vous pouvez utiliser les vérifications des recommandations principales C++ dans
 ```
 Assurez-vous que vous ajoutez ces propriétés avant l’importation du fichier Microsoft.Cpp.targets. Vous pouvez choisir les ensembles de règles spécifique, ou créer un ensemble de règles personnalisé ou utiliser l’ensemble de règles par défaut qui inclut d’autres vérifications PREfast.
 
-Vous pouvez exécuter l’outil de vérification de base C++ uniquement sur les fichiers spécifiés à l’aide de la même approche que [décrits précédemment](#coreckeck_per_file), mais l’utilisation de fichiers de MSBuild. Les variables d’environnement peuvent être définies à l’aide de la `BuildMacro` élément :
+Vous pouvez exécuter l’outil de vérification de base C++ uniquement sur les fichiers spécifiés à l’aide de la même approche que [décrits précédemment](#corecheck_per_file), mais l’utilisation de fichiers de MSBuild. Les variables d’environnement peuvent être définies à l’aide de la `BuildMacro` élément :
 
 ```xml
 <ItemGroup>

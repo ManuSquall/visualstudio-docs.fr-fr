@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ec8c0e9010cefd1e5c6b639edf02d785422800ff
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 06eec90026054bf8081c1cd1727d6cbfc3f30bbe
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagrammes de dépendance : instructions
 Décrire l’architecture de votre application à un niveau élevé en créant *des diagrammes de dépendance* dans Visual Studio. Assurez-vous que votre code reste cohérent avec cette conception en validant votre code avec un diagramme de dépendances. Vous pouvez également inclure la validation de couche dans votre processus de génération. Consultez [vidéo Channel 9 : création et valider votre architecture à l’aide de diagrammes de dépendance](http://go.microsoft.com/fwlink/?LinkID=252073).  
@@ -62,7 +63,7 @@ Décrire l’architecture de votre application à un niveau élevé en créant *
  Consultez [créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md).  
   
 ##  <a name="CreateLayers"></a>Définir les couches pour représenter les composants ou les zones fonctionnelles  
- Couches représentent des groupes logiques de *artefacts*, tels que des projets, fichiers de code, espaces de noms, classes et méthodes. Vous pouvez créer des couches à partir d’artefacts de projets Visual C# .NET et Visual Basic .NET, ou vous pouvez attacher des spécifications ou des plans à une couche en liant des documents, tels que des fichiers Word ou des présentations PowerPoint. Chaque couche apparaît comme un rectangle sur le diagramme et indique le nombre d'artefacts qui lui sont liés. Une couche peut contenir des couches imbriquées qui décrivent des tâches plus spécifiques.  
+ Couches représentent des groupes logiques de *artefacts*, tels que des projets, fichiers de code, espaces de noms, classes et méthodes. Vous pouvez créer des couches à partir d’artefacts à partir de projets Visual c# et Visual Basic, ou vous pouvez attacher des spécifications ou des plans à une couche en liant des documents, tels que des fichiers Word ou des présentations PowerPoint. Chaque couche apparaît comme un rectangle sur le diagramme et indique le nombre d’artefacts qui lui sont liés. Une couche peut contenir des couches imbriquées qui décrivent des tâches plus spécifiques.  
   
  En règle générale, nommez les couches selon leur fonction : par exemple, « Présentation » ou « Services ». Si les artefacts sont étroitement interdépendants, placez-les dans la même couche. Si les artefacts peuvent être mis à jour séparément ou utilisés dans des applications distinctes, placez-les dans des couches différentes. Pour en savoir plus sur les modèles en couches, consultez le site Patterns & Practices à [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).  
   

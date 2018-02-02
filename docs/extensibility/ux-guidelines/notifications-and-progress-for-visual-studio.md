@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Les notifications et progression pour Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a>Systèmes de notification  
@@ -238,8 +240,6 @@ ms.lasthandoff: 12/22/2017
   
  ![Barre d’informations à l’intérieur d’une fenêtre](../../extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "0903-06_InfoBarInWindow")  
   
- **Barre d’informations à l’intérieur de la fenêtre analyse du Code**  
-  
 ##### <a name="inline"></a>Inline  
  Indication de progression inline peut être représentée par les types de chargeur de progression. En général, l’indicateur de progression est couplé avec la messagerie, mais cela n’est pas obligatoire.  
   
@@ -287,12 +287,12 @@ ms.lasthandoff: 12/22/2017
   
  **Fenêtre de sortie avec l’état du processus en cours et attendez la messagerie**  
   
-##  <a name="BKMK_Infobars"></a>Barres d’informations  
+##  <a name="BKMK_Infobars"></a> Infobars  
   
 ### <a name="overview"></a>Vue d'ensemble  
  Barres d’informations accordez à l’utilisateur un indicateur proche de leur point d’attention et l’utilisation du contrôle de barre d’informations partagées garantit la cohérence de l’apparence visuelle et d’interaction.  
   
- ![Barre d’informations](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
+ ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
   
  **Barres d’informations dans Visual Studio**  
   
@@ -522,6 +522,6 @@ public interface IVsInfoBarUIEvents
 #### <a name="watermarks"></a>Filigranes  
  Parfois, un ensemble du contrôle ou la fenêtre est dans un état d’erreur. Dans ce cas, utilisez un filigrane pour indiquer l’erreur.  
   
- ![Filigrane](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
+ ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
   
  **Validation de champ de filigrane**

@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 05/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 59131181-1caa-4b7f-be4b-e84709634edf
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36045b311a73af96df51553f9025a1de84c93b78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Prise en main de Visual Studio Graphics Diagnostics
 Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics pour la première fois, puis vous allez capturer des frames à partir d’une application Direct3D et les examiner dans Graphics Analyzer.  
@@ -31,13 +31,6 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
  La fonctionnalité Windows facultative *outils graphiques* fournit l’infrastructure de capture et de lecture nécessaire à Graphics Diagnostics sur Windows 10.  
   
  Pour plus d’informations sur l’installation des outils graphiques, consultez [installer Graphics outils pour Windows 10](#InstallGraphicsTools).  
-  
-### <a name="windows-81-prerequisites"></a>Composants requis pour Windows 8.1  
- Le Kit de développement logiciel (SDK) Windows pour Windows 8.1 fournit l’infrastructure de capture et de lecture nécessaire à Graphics Diagnostics sur Windows 8.1. En outre, il prend en charge le développement pour Windows 8.1 et Windows 8.  
-  
- [Télécharger le Kit de développement de logiciel (SDK) Windows pour Windows 8.1](https://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)  
-  
- Pour utiliser un ordinateur de lecture distant qui exécute Windows 10 à partir d’un ordinateur de développement exécutant Windows 8.1, vous devez installer le Kit de développement logiciel (SDK) Windows 10 sur l’ordinateur de développement et la fonctionnalité facultative Outils Graphics sur l’ordinateur de lecture.  
   
 ##  <a name="InstallGraphicsTools"></a>Installer les outils Graphics pour Windows 10  
  Dans Windows 10, l’infrastructure Graphics Diagnostics est fournie par une fonctionnalité facultative de Windows appelée *outils graphiques*. Cette fonctionnalité est nécessaire pour capturer et lire les informations graphiques sur Windows 10, indépendamment du fait que l’application capturée cible ou non une version antérieure de Windows, ou indépendamment de la version de Direct3D utilisée. Vous pouvez choisir d’installer la fonctionnalité Outils Graphics à l’avance. Sinon, elle est installée à la demande la première fois que vous démarrez une session Graphics Diagnostics à partir de Visual Studio.  
@@ -66,9 +59,7 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
  Si vous avez déjà votre propre application Direct3D pour Explorer Graphics Diagnostics, c’est parfait ! Sinon, utilisez une des opérations suivantes :
 
 - Le **DirectX 11 application (Windows universel)** ou **DirectX 12 application (Windows universel)** modèles de projet pour Windows 10.
-- Le **l’application DirectX (Windows 8.1)** modèle de projet pour Windows 8.1.
 - [Exemple Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) pour Windows 10.  
-- Le [exemple de jeu DirectX marble maze](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) pour Windows 8.1.  
   
  Assurez-vous que vous pouvez générer l'application avant de continuer.  
   

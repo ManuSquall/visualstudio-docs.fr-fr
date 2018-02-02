@@ -6,21 +6,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Presentation.View.ImportDesigner.UI
+f1_keywords:
+- System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 3873e444f3d9c68b632d52ab98bee07bf14af679
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cfa65ee24b99fd81712ec88e45f44bb2ed42c21a
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-use-the-imports-designer"></a>Procédure : utiliser le concepteur d'importations
-Le concepteur d'importations vous permet d'entrer des espaces de noms pour les types que vous utiliserez dans vos expressions. Tout comme le **importe** ou **à l’aide de** activer de mots clés dans Visual Basic .NET et c#, en spécifiant les espaces de noms dans le Concepteur d’importations vous permet d’entrer simplement un nom de type dans votre expression plutôt qu’un complet nom de type version.  
+Le concepteur d'importations vous permet d'entrer des espaces de noms pour les types que vous utiliserez dans vos expressions. Tout comme le **importe** ou **à l’aide de** mots clés dans Visual Basic et c#, en spécifiant les espaces de noms dans le Concepteur d’importations vous permet d’entrer simplement un nom de type dans votre expression plutôt qu’un complet activer nom de type version.  
   
  Le concepteur d'importations réagit aux modifications apportées à l'interface utilisateur ainsi qu'aux modifications apportées lors de l'enregistrement du workflow. Lorsque le workflow est enregistré, des espaces de noms peuvent être automatiquement ajoutés au concepteur d'importations. Notamment :  
   

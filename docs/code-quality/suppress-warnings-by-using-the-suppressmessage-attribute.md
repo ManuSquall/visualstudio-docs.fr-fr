@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - SuppressMessage attribute
 - code analysis, SuppressMessage attribute
 ms.assetid: a38c57a2-d29d-43c0-84ff-3308b2484ce6
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ce246c0ff960c78aed1901618fdc26bff97779d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/31/2018
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Supprimer des avertissements à l'aide de l'attribut SuppressMessage
 Il est souvent utile d’indiquer que l’avertissement est ressorti d’informer les membres de l’équipe que le code a été révisé et qu’il a été déterminé que l’avertissement doit être supprimé. Dans la Source de Suppression (ISS) permet à un développeur de placer l’attribut qui supprime un avertissement près de l’emplacement qui a généré l’avertissement. Vous pouvez ajouter l’attribut ISS directement au fichier source, ou vous pouvez utiliser le menu contextuel dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.  

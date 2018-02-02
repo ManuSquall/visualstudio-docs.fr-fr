@@ -14,30 +14,33 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5b05e295830762939e2142b550863219afaa06ce
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2b6c1d9b4fa92146b64d075ff4268bc32c0e65c1
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Créer des diagrammes de dépendance à partir de votre code.
-Pour visualiser l’architecture de haut niveau, la logique de votre système logiciel, créez un *diagramme de dépendances* dans Visual Studio. Pour vous assurer que votre code reste cohérent avec cette conception, validez votre code avec un diagramme de dépendances. Vous pouvez créer des diagrammes de dépendance pour les projets Visual c# .NET et Visual Basic .NET. Pour connaître les versions de Visual Studio prend en charge cette fonctionnalité, consultez [prise en charge de la Version pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
-  
- ![Créer un diagramme de dépendances](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
-  
- Un diagramme de dépendances vous permet d’organiser les éléments de solution Visual Studio en groupes logiques et abstraits appelés *couches*. Vous pouvez utiliser les couches pour décrire des tâches importantes que ces artefacts effectuent ou bien les principaux composants du système. Chaque couche peut contenir d’autres couches qui décrivent des tâches plus détaillées. Vous pouvez également spécifier prévues ou existantes *dépendances* entre les couches. Ces dépendances, qui sont représentées par des flèches, indiquent quels couches peuvent utiliser ou utilisent actuellement la fonctionnalité représentée par d'autres couches. Pour maintenir le contrôle architecturel du code, affichez les dépendances prévues sur le diagramme, puis validez le code par rapport au diagramme.  
-  
- [Vidéo : Valider des dépendances de votre architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
-  
-##  <a name="CreateDiagram"></a>Créer un diagramme de dépendances  
- Avant de créer un diagramme de dépendances, assurez-vous que votre solution contient un projet de modélisation. 
-  
+
+Pour visualiser l’architecture de haut niveau, la logique de votre système logiciel, créez un *diagramme de dépendances* dans Visual Studio. Pour vous assurer que votre code reste cohérent avec cette conception, validez votre code avec un diagramme de dépendances. Vous pouvez créer des diagrammes de dépendance pour les projets Visual c# et Visual Basic. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+![Créer un diagramme de dépendances](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+
+Un diagramme de dépendances vous permet d’organiser les éléments de solution Visual Studio en groupes logiques et abstraits appelés *couches*. Vous pouvez utiliser les couches pour décrire des tâches importantes que ces artefacts effectuent ou bien les principaux composants du système. Chaque couche peut contenir d’autres couches qui décrivent des tâches plus détaillées. Vous pouvez également spécifier prévues ou existantes *dépendances* entre les couches. Ces dépendances, qui sont représentées par des flèches, indiquent quels couches peuvent utiliser ou utilisent actuellement la fonctionnalité représentée par d'autres couches. Pour maintenir le contrôle architecturel du code, affichez les dépendances prévues sur le diagramme, puis validez le code par rapport au diagramme.
+
+[Vidéo : Valider des dépendances de votre architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
+
+##  <a name="CreateDiagram"></a>Créer un diagramme de dépendances
+
+Avant de créer un diagramme de dépendances, assurez-vous que votre solution contient un projet de modélisation.
+
 > [!IMPORTANT]
->  Ne pas ajouter, faites glisser ou copier un diagramme de dépendance existant à partir d’un projet de modélisation vers un autre projet de modélisation ou dans un autre emplacement dans la solution. Cela permet de conserver les références du diagramme d'origine, même si vous modifiez le diagramme. Cela empêche également un mauvais fonctionnement de la validation de couche et pourra provoquer d’autres problèmes, tels que des éléments manquants ou autre erreurs lorsque vous essayez d’ouvrir le diagramme.  
->   
->  Au lieu de cela, ajoutez un nouveau diagramme de dépendances pour le projet de modélisation. Copiez les éléments depuis le diagramme source vers le nouveau diagramme. Enregistrez le projet de modélisation et le nouveau diagramme de dépendances.  
-  
+> Ne pas ajouter, faites glisser ou copier un diagramme de dépendance existant à partir d’un projet de modélisation vers un autre projet de modélisation ou dans un autre emplacement dans la solution. Cela permet de conserver les références du diagramme d'origine, même si vous modifiez le diagramme. Cela empêche également un mauvais fonctionnement de la validation de couche et pourra provoquer d’autres problèmes, tels que des éléments manquants ou autre erreurs lorsque vous essayez d’ouvrir le diagramme.
+>
+> Au lieu de cela, ajoutez un nouveau diagramme de dépendances pour le projet de modélisation. Copiez les éléments depuis le diagramme source vers le nouveau diagramme. Enregistrez le projet de modélisation et le nouveau diagramme de dépendances.
+
 #### <a name="to-add-a-new-dependency-diagram-to-a-modeling-project"></a>Pour ajouter un nouveau diagramme de dépendance à un projet de modélisation  
   
 1.  Sur le **Architecture** menu, choisissez **nouveau diagramme de dépendance**.  
