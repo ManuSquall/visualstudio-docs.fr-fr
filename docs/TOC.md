@@ -39,6 +39,7 @@
 ### Référence
 #### [ID de charge de travail et de composant Visual Studio](install/workload-and-component-ids.md)
 #### [Numéros de builds et dates de publication de Visual Studio](install/visual-studio-build-numbers-and-release-dates.md)
+## [Utiliser Visual Studio à partir d’une machine virtuelle Azure](install/using-visual-studio-vm.md)
 ## [Installer les outils de génération dans un conteneur](install/build-tools-container.md)
 ### [Exemple avancé pour les conteneurs](install/advanced-build-tools-container.md)
 ### [Problèmes de conteneurs connus](install/build-tools-container-issues.md)
