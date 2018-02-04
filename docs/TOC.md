@@ -1,5 +1,6 @@
 # [Documentation de Visual Studio](ide/index.md)
 # [Vue d’ensemble](ide/visual-studio-ide.md)
+## [Nouveautés](ide/whats-new-in-visual-studio.md)
 # Installation
 ## [Installer Visual Studio](install/install-visual-studio.md)
 ## [Se connecter à Visual Studio](ide/signing-in-to-visual-studio.md)
@@ -309,8 +310,7 @@
 #### [Classes spécifiques à la culture pour les Windows Forms et les Web Forms globaux](ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)
 ### [Création d’applications en langues bidirectionnelles](ide/creating-applications-in-bi-directional-languages.md)
 # Référence
-## [Nouveautés](ide/whats-new-in-visual-studio.md)
-### Modèles de projet et d’élément
+## Modèles de projet et d’élément
 ### [Paramètres de modèle](ide/template-parameters.md)
 ### [Informations de référence sur les schémas de modèles (extensibilité)](extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default)
 ## Éléments généraux de l’interface utilisateur

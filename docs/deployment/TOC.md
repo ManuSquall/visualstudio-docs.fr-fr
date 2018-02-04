@@ -1,7 +1,7 @@
 # [Documentation sur le déploiement](index.md)
 # Vue d'ensemble
 ## [Vue d’ensemble du déploiement](deploying-applications-services-and-components.md)
-# Guides de démarrage rapide
+# Démarrages rapides
 ## [Déployer sur un dossier local](quickstart-deploy-to-local-folder.md)
 ## [Déployer sur un site web](quickstart-deploy-to-a-web-site.md)
 ## [Déployer sur Azure](quickstart-deploy-to-azure.md)
@@ -24,7 +24,7 @@
 ## Node.js
 ### [Publier sur un site web Azure avec Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
 ## Python
-### [Publier sur Azure App Service](/visualstudio/python/publishing-to-azure)
+### [Publier sur Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
 # Guides pratiques
 ## [Sécurité et déploiement ClickOnce](clickonce-security-and-deployment.md)
 ### [Choix d’une stratégie de déploiement ClickOnce](choosing-a-clickonce-deployment-strategy.md)
