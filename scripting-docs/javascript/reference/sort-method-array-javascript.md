@@ -5,25 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: sort
+f1_keywords:
+- sort
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: Sort method
-ms.assetid: 9bd8b54a-c838-4806-85c8-62eebe6bc48c
-caps.latest.revision: "15"
+helpviewer_keywords:
+- Sort method
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d098b47591ca7bbb4e3e8da5e5c14f8c0e9b255
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0462e60e623b99af458beb61eb7ef4215fe8ef41
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="sort-method-array-javascript"></a>sort, méthode (Array) (JavaScript)
 Trie une `Array`.  
@@ -45,16 +46,16 @@ arrayobj.sort(sortFunction)
 ## <a name="return-value"></a>Valeur de retour  
  Le tableau trié.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le `sort` méthode trie la `Array` objet sur place ; aucune nouvelle `Array` objet est créé lors de l’exécution.  
   
- Si vous fournissez une fonction dans le `sortFunction` argument, elle doit retourner une des valeurs suivantes :  
+ `sortFunction`accepte deux arguments et doit retourner l’une des valeurs suivantes :  
   
--   Une valeur négative si le premier argument passé est inférieur au deuxième argument.  
+-   Une valeur négative (inférieur à 0) si le premier argument passé est inférieur au second.  Le premier argument est trié à un index de niveau inférieur.
   
--   Zéro si les deux arguments sont équivalents.  
+-   Zéro (0) si les deux arguments sont équivalents.  Les deux arguments sont triés par rapport à d’autres éléments du tableau, mais ne sont pas triées par rapport à l’autre.
   
--   Une valeur positive si le premier argument est supérieur au deuxième argument.  
+-   Une valeur positive (supérieure à 0) si le premier argument est supérieur au deuxième argument.  Le deuxième argument est trié à un index de niveau inférieur.
   
 ## <a name="example"></a>Exemple  
  L'exemple suivant illustre l'utilisation de la méthode `sort`.  
@@ -87,5 +88,5 @@ function CompareForSort(first, second)
 }  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

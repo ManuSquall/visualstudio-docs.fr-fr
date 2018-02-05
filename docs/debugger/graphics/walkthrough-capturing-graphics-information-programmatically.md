@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a5a8aeec2421b92057ba414b5cf23b1770b1f761
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: bbce760956dda7c9399d25dd241df26ec0e59644
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d'informations Graphics par programmation
 Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour capturer par programmation les informations graphiques d'une application Direct3D.  
@@ -96,7 +96,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
   
 ##### <a name="to-capture-graphics-information"></a>Pour capturer des informations graphiques  
   
--   Pour commencer à capturer des informations graphiques, utilisez `BeginCapture`:  
+- Pour commencer à capturer des informations graphiques, utilisez `BeginCapture`:  
   
     ```  
     ...  
@@ -111,6 +111,8 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
     pGraphicsAnalysis->EndCapture();  
     ...  
     ```  
+
+- Après l’appel à `EndCapture`, libérer l’objet graphique. 
   
 ## <a name="next-steps"></a>Étapes suivantes  
  Cette procédure pas à pas vous a montré comment capturer des informations graphiques par programmation. Pour franchir une étape supplémentaire, envisagez cette possibilité :  
