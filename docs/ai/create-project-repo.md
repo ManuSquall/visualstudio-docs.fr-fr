@@ -34,7 +34,7 @@ Une fois que vous avez [installé Visual Studio Tools pour IA](installation.md),
 
     ![Première sortie du programme Python MNIST](media\create-project-repo\tensorflow-mnist-running.png)
 
-> Si vous utilisez Anaconda et obtenez une erreur relative à l’absence de numpy, vous devrez peut-être [modifier votre environnement python pour utiliser Anaconda](https://docs.microsoft.com/visualstudio/python/python-environments). 
+> Si vous utilisez Anaconda et obtenez une erreur relative à l’absence de numpy, vous devrez peut-être [modifier votre environnement python pour utiliser Anaconda](../python/managing-python-environments-in-visual-studio.md).
 
 11. Vous pouvez visualiser la progression avec TensorBoard. Cliquez avec le bouton droit sur votre projet et cliquez sur **Exécuter TensorBoard**, puis sélectionnez le répertoire de vos journaux TensorBoard de sortie.
 

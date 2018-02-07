@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d0ef17900f515ff69f25c30fc797e4e3c9cc7a6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ef58c0eb177238075b0f1cd097f8949272538a75
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Création d’une extension C++ pour Python
 
@@ -50,7 +50,7 @@ Pour plus d’informations, consultez [Installation de la prise en charge de Pyt
 
 1. Créez un projet Python dans Visual Studio en sélectionnant **Fichier > Nouveau > Projet**. Recherchez « Python », sélectionnez le modèle **Application Python** en lui attribuant un nom et un emplacement appropriés, puis sélectionnez **OK**.
 
-1. Dans le fichier `.py` du projet, collez le code suivant qui teste le calcul d’une tangente hyperbolique (implémentation sans utiliser la bibliothèque mathématique pour faciliter la comparaison). N’hésitez pas à entrer le code manuellement pour essayer certaines des [fonctionnalités d’édition de Python](code-editing.md).
+1. Dans le fichier `.py` du projet, collez le code suivant qui teste le calcul d’une tangente hyperbolique (implémentation sans utiliser la bibliothèque mathématique pour faciliter la comparaison). N’hésitez pas à entrer le code manuellement pour essayer certaines des [fonctionnalités d’édition de Python](editing-python-code-in-visual-studio.md).
 
     ```python
     from itertools import islice
@@ -289,7 +289,7 @@ Visual Studio prend en charge le débogage simultané du code Python et du code 
 
     ![Arrêt au niveau d’un point d’arrêt dans le code C++](media/cpp-debugging.png)
 
-1. À ce stade vous pouvez exécuter pas à pas le code C++, examiner les variables, etc. Ces fonctionnalités sont détaillées dans [Débogage simultané de C++ et de Python](debugging-mixed-mode.md).
+1. À ce stade vous pouvez exécuter pas à pas le code C++, examiner les variables, etc. Ces fonctionnalités sont détaillées dans [Débogage simultané de C++ et de Python](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 
 ## <a name="alternative-approaches"></a>Autres approches
 

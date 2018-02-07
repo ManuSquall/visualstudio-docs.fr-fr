@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 690eb875b0b9251dddcb36c4ad7ded17c36b67cb
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="options-page-debugging-node-properties"></a>Page Options, Débogage, propriétés de nœud
 Les tableaux suivants décrivent les pages (ou collections de propriétés) associées à la catégorie **Débogage**, `DTE.Properties("Debugging", <Property Page>)`, de la boîte de dialogue **Options**.  
@@ -39,7 +41,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 |ShowAllMembers|Get/Set (booléen)|Pour les objets non-utilisateur, détermine si le débogueur affiche tous les membres de l’objet dans les fenêtres de variables. Cette option n’a d’effet que si Uniquement mon code est activé.|  
 |WarnIfNoUserCode|Get/Set (booléen)|Détermine si le débogueur émet un avertissement quand l’utilisateur tente de s’attacher à un processus qui n’a aucun code utilisateur. Cette option n’a d’effet que si Uniquement mon code est activé.|  
 |EnablePropertyEvaluation|Get/Set (booléen)|Détermine si le débogueur évalue automatiquement les propriétés et les appels de fonction implicites dans le code managé.|  
-|CallStringConversion|Get/Set (booléen)|Détermine si le débogueur appelle implicitement une fonction de conversion de chaîne sur des objets dans les fenêtres de variables. Cette option s’applique au code C# et JScript uniquement.|  
+|CallStringConversion|Get/Set (booléen)|Détermine si le débogueur appelle implicitement une fonction de conversion de chaîne sur des objets dans les fenêtres de variables.|  
 |EnableSourceServer|Get/Set (booléen)|Détermine si le débogueur peut accéder au code à partir d’un serveur source.|  
 |PrintSourceServerDiagnostics|Get/Set (booléen)|Détermine si la fenêtre Sortie affiche les messages de diagnostic relatifs au serveur source. Cette option n’a d’effet que si l’accès au serveur source est activé.|  
 |HighlightEntireLine|Get/Set (booléen)|Détermine si le débogueur met en surbrillance une ligne entière pour les points d’arrêt et l’instruction actuelle.|  

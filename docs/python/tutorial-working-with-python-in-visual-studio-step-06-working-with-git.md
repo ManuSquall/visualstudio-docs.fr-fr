@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef6b3bddfb90c64872de331c988f10595e179eb8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-6-working-with-git"></a>Étape 6 : Utilisation de Git
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/22/2018
 
 Visual Studio fournit une intégration directe aux dépôts Git locaux, et à ceux qui se trouvent sur des services comme GitHub et Visual Studio Team Services. L’intégration inclut le clonage d’un dépôt, la validation des modifications et la gestion des branches.
 
-Cette rubrique décrit la création d’un dépôt Git local pour un projet existant. Pour une procédure pas à pas de création d’un projet à partir d’un dépôt Git distant, consultez [Démarrage rapide : cloner un dépôt de code Python dans Visual Studio](quickstart-03-project-from-repository.md).
+Cette rubrique décrit la création d’un dépôt Git local pour un projet existant. Pour une procédure pas à pas de création d’un projet à partir d’un dépôt Git distant, consultez [Démarrage rapide : cloner un dépôt de code Python dans Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 1. Avec un projet ouvert dans Visual Studio, comme le projet de [l’étape précédente](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md), cliquez avec le bouton droit sur la solution et sélectionnez **Ajouter la solution au contrôle de code source**. Visual Studio crée un dépôt Git local qui contient le code de votre projet et affiche les contrôles liés à Git, qui apparaissent également dans la partie inférieure de la fenêtre Visual Studio. Les contrôles montrent les validations en attente, les modifications, le nom du dépôt et la branche. Placez le curseur sur les contrôles pour afficher des informations supplémentaires.
 
@@ -67,6 +67,6 @@ Félicitations, vous avez terminé ce didacticiel sur Python dans Visual Studio.
 À partir d’ici, explorez les concepts et les guides pratiques, notamment les suivants :
 
 - [Création d’une extension C++ pour Python](working-with-c-cpp-python-in-visual-studio.md)
-- [Publication sur Azure App Service](publishing-to-azure.md)
-- [Profilage](profiling.md)
-- [Tests unitaires](unit-testing.md)
+- [Publication sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Profilage](profiling-python-code-in-visual-studio.md)
+- [Tests unitaires](unit-testing-python-in-visual-studio.md)

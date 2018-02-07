@@ -5,12 +5,7 @@ ms.date: 09/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- JScript
-- VB
-- CSharp
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
@@ -19,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: abde071bd67ab3f6a65891d347b9214f6dd5257b
-ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
+ms.openlocfilehash: 5847c97f3fddea65b00c35a5a0f4d5665329ae7e
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>Écrire du code dans l’éditeur de code
 
@@ -68,7 +63,6 @@ De nombreuses fonctionnalités avancées sont disponibles dans le sous-menu **Ed
 |Mettre en minuscules|Met tous les caractères de la sélection en minuscules ou, en l’absence de sélection, met en minuscule le caractère au point d’insertion.|
 |Déplacer les lignes sélectionnées vers le haut|Déplace la ligne sélectionnée d’une ligne vers le haut. Raccourci : Alt+Flèche haut.|
 |Déplacer les lignes sélectionnées vers le bas|Déplace la ligne sélectionnée d’une ligne vers le bas. Raccourci : Alt+Flèche bas.|
-|Valider le document|Valide les fichiers de code JScript.|
 |Supprimer les espaces blancs horizontaux|Supprime les tabulations et les espaces à la fin de la ligne active.|
 |Afficher les espaces blancs|Affiche les espaces sous forme de points et les tabulations sous forme de flèches. La fin d’un fichier est indiquée par un glyphe rectangulaire. Si l’option **Outils/Options/Éditeur de texte/Tous les langages/Retour automatique à la ligne/Afficher des glyphes visuels pour le retour automatique à la ligne** est sélectionnée, ce glyphe s’affiche également.|
 |Retour automatique à la ligne|Rend visibles toutes les lignes d’un document dans la fenêtre de code. Vous pouvez activer et désactiver cette option dans les paramètres Tous les langages de l’éditeur de texte (**Outils/Options/Éditeur de texte/Tous les langages**).|
