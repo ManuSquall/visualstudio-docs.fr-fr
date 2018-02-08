@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.classdesigner.typedef
 - vs.classdesigner.aliasofline
-helpviewer_keywords: Class Designer [Visual Studio], typedefs
+helpviewer_keywords:
+- Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 63bd8657d62a05edb1c9772776ca1216a0eee5ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 96d7e8cee6ce024040184aca50b5f5cb6facf388
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Typedefs de Visual C++ dans le Concepteur de classes
 Les instructions typedef créent une ou plusieurs couches d’indirection entre un nom et son type sous-jacent. Le Concepteur de classes prend en charge les types typedef C++ qui sont déclarés avec le mot clé `typedef`, par exemple :  
@@ -48,10 +51,10 @@ typedef class coord
    unsigned x;  
    unsigned y;  
 };  
-```  
-  
-Pour plus d’informations sur l’utilisation du type `typedef`, consultez [typedef, spécificateur](https://msdn.microsoft.com/en-us/library/05w82thz.aspx).  
-  
+```
+
+Pour plus d’informations sur l’utilisation du type `typedef`, consultez [Typedef](/cpp/aliases-and-typedefs-cpp#typedefs).
+
 Une forme typedef C++ a la forme du type spécifié dans le typedef. Par exemple, si la source déclare `typedef class`, la forme a des angles arrondis et l’étiquette **Class**. Pour `typedef struct`, la forme a des angles carrés et l’étiquette **Struct**.  
   
 Les classes et les structures peuvent avoir des typedefs imbriqués déclarés à l’intérieur. Ainsi, les formes de classe et de structure peuvent afficher des déclarations typedef imbriquées comme formes imbriquées.  
@@ -201,5 +204,6 @@ Classe
 -> MyIntVect  
   
 ## <a name="see-also"></a>Voir aussi
-[Utilisation du code Visual C++](working-with-visual-cpp-code.md)   
-[typedef, spécificateur](https://msdn.microsoft.com/en-us/library/05w82thz.aspx)
+
+[Utilisation du code Visual C++](working-with-visual-cpp-code.md)  
+[Typedef](/cpp/aliases-and-typedefs-cpp#typedefs)

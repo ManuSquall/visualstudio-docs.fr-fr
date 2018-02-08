@@ -9,11 +9,11 @@ Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 8059d316912e78bcbcaa9d4f54f86b4e2c2b907f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 ## <a name="signing-in-to-the-portal"></a>Connexion au portail
@@ -31,7 +31,7 @@ Si vous avez acheté un abonnement Visual Studio sur Microsoft Store, vous pouve
 #### <a name="workschool-accounts"></a>Comptes professionnels ou scolaires
 Si votre abonnement vous a été fourni par votre entreprise ou votre établissement scolaire, vous recevez un e-mail de bienvenue.  
 1.  Accédez au [portail Abonné](https://my.visualstudio.com/)
-2.  Entrez l’adresse e-mail qui est associée au nouvel abonnement Visual Studio attribué. Cette adresse est également indiquée dans la **lettre de bienvenue** envoyée à l’abonné. Si vous n’avez pas reçu la lettre de bienvenue, vérifiez qu’elle n’est pas dans le dossier de courrier indésirable.
+2.  Entrez l’adresse e-mail qui est associée au nouvel abonnement Visual Studio attribué. Cette adresse est également indiquée dans le message de bienvenue envoyé à l’abonné. Si vous n’avez pas reçu le message de bienvenue, vérifiez qu’il ne se trouve pas dans le dossier de courriers indésirables.
 3.  Cliquez sur **Continuer**.
 4.  Vous êtes redirigé vers la page de connexion de votre entreprise.
 5.  Entrez votre mot de passe.
@@ -44,7 +44,7 @@ Si votre organisation utilise Azure Active Directory, mais que vous n’avez pas
 1.  Accédez au [portail Abonné](https://my.visualstudio.com)
 2.  Entrez l’adresse e-mail qui est associée au nouvel abonnement Visual Studio attribué. Cette adresse est également indiquée dans la **lettre de bienvenue** envoyée à l’abonné.  (Si vous n’avez pas reçu l’e-mail de bienvenue, vérifiez qu’il n’est pas dans le dossier de courrier indésirable.)
 3.  Cliquez sur **Continuer**.
-4.  Vous êtes redirigé vers une **page de sélection**.   Sélectionnez **Compte professionnel ou scolaire** si votre abonnement est attribué à un compte **professionnel ou scolaire** qui est associé à un locataire Azure Active Directory (AAD).  Sélectionnez **Personnel** si l’abonnement est associé à une adresse e-mail **professionnelle**, mais qu’il a également été converti en compte Microsoft (MSA) **personnel**.
+4.  Vous êtes redirigé vers une **page de sélection**.   Sélectionnez **Compte professionnel ou scolaire** si votre abonnement est attribué à un compte **professionnel ou scolaire** associé à un locataire Azure Active Directory (AAD).  Sélectionnez **Personnel** si l’abonnement est associé à une adresse e-mail **professionnelle**, mais s’il a également été converti en compte Microsoft (MSA) **personnel**.
 5.  Entrez votre mot de passe.
 6.  Cliquez sur **Connexion**. 
 

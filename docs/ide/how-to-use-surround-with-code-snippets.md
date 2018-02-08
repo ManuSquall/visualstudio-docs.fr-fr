@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Surround-with snippets
 - snippets [C#], using Surround With
 ms.assetid: 23e5288e-7897-417a-9ded-cf60dfc889ee
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b67cf22f38366625d8aa7ff59ad1603a24074882
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d1cff0a8689635e55caf1e0ad1156fc97aa7bdbd
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Comment : utiliser des extraits de code Entourer de
 Les procédures suivantes expliquent comment utiliser des extraits de code Entourer de. Les extraits de code Entourer de sont disponibles de trois manières : via un raccourci clavier, via le menu Edition et via le menu contextuel.  
@@ -60,5 +62,5 @@ Les procédures suivantes expliquent comment utiliser des extraits de code Entou
      Vous pouvez également taper le nom de l’extrait de code, puis appuyer sur Tab ou Entrée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md)   
+ [Extraits de code C#](../ide/visual-csharp-code-snippets.md)   
  [Sélecteur d’extraits de code](../ide/reference/code-snippet-picker.md)

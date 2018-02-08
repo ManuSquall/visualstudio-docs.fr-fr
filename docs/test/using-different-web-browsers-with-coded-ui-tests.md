@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: ca381d794569ebae4da2d46225d800dbfe4cf480
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 4573d87bbb7d5f447bf6d2038cec310132a0c9f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Utilisation de différents navigateurs Web avec des tests codés de l'interface utilisateur
 Les tests codés de l'interface utilisateur peuvent automatiser le test des applications web en enregistrant vos tests à l'aide d'Internet Explorer. Vous pouvez ensuite personnaliser votre test et l'utiliser à l'aide d'Internet Explorer ou d'autres types de navigateurs pour ces applications web.  
@@ -78,7 +79,7 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
     > [!TIP]
     >  Vous pouvez également télécharger les composants Selenium pour le test codé de l’interface utilisateur sur plusieurs navigateurs [ici](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- Pour plus d’informations sur la création et l’utilisation des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+ Pour plus d’informations sur la création et l’utilisation des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md).  
   
 ### <a name="enable-debugging"></a>Activer le débogage  
  Pour activer le débogage de votre application web, vous devez utiliser les options de configuration suivantes :  
@@ -101,13 +102,13 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
  *Que dois-je savoir de plus ?*  
  **Notes**  
   
--   ![Prérequis](../test/media/prereq.png "Prérequis") Le navigateur web Apple Safari n’est pas pris en charge.  
+-   ![Prérequis](../test/media/prereq.png "Prereq") Le navigateur web Apple Safari n’est pas pris en charge.  
   
--   ![Prérequis](../test/media/prereq.png "Prérequis") L’action de démarrage du navigateur web doit faire partie du test codé de l’interface utilisateur.  
+-   ![Prérequis](../test/media/prereq.png "Prereq") L’action de démarrage du navigateur web doit faire partie du test codé de l’interface utilisateur.  
   
      Si un navigateur web est déjà ouvert et que vous souhaitez exécuter des étapes sur ce navigateur, la lecture échoue, sauf si vous utilisez Internet Explorer. Il est donc recommandé d'inclure le démarrage de votre navigateur web à vos tests codés de l'interface utilisateur.  
   
--   ![Prérequis](../test/media/prereq.png "Prérequis") L’automatisation d’actions d’interface utilisateur basées spécifiquement sur un navigateur, par exemple agrandir, réduire et restaurer, n’est pas prise en charge.  
+-   ![Prérequis](../test/media/prereq.png "Prereq") L’automatisation d’actions d’interface utilisateur basées spécifiquement sur un navigateur, par exemple agrandir, réduire et restaurer, n’est pas prise en charge.  
   
  **Conseils**  
   

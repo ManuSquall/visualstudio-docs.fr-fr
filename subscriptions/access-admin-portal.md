@@ -9,15 +9,15 @@ Description: Learn how to access the Administrator Portal
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 3028ea616f6336918e49d49856f62707876772c9
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 41bee30e54411a3b9bcaed6c72be3909f2d1cfab
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Accès au portail d’administration des abonnements Visual Studio
 ## <a name="for-mpsa"></a>Pour MPSA
-Pour accéder au portail d’administration des abonnements Visual Studio, vous devez être configuré comme administrateur dans le portail Microsoft Business Center. 
+Pour accéder au portail d’administration des abonnements Visual Studio, vous devez être configuré comme administrateur dans le portail Microsoft Business Center (BCP). 
 
 Si vous avez besoin d’informations sur la façon d’être configuré comme administrateur, consultez le guide [Quick Start: Manage Users and Partner Visibility](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf). Si vous avez déjà été assigné comme administrateur, vous pouvez accéder directement au [portail d’administration](https://manage.visualstudio.com) des abonnements Visual Studio.
 
@@ -30,9 +30,9 @@ Pour plus d’informations sur la gestion des abonnements dans le Centre de gest
 
 Le contact principal/de notifications du contrat de licence en volume de votre organisation doit effectuer quelques opérations pour vous configurer comme administrateur. 
 
-Pour plus d’informations sur l’assignation d’un administrateur, regardez [cette vidéo](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) et consultez les articles sur [l’intégration et la gestion des administrateurs](https://go.microsoft.com/fwlink/?linkid=839391) dans le portail d’administration des abonnements Visual Studio. 
+Pour plus d’informations sur la configuration d’un administrateur, regardez [cette vidéo](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) et consultez les articles sur [l’intégration et la gestion des administrateurs](https://go.microsoft.com/fwlink/?linkid=839391) dans le portail d’administration des abonnements Visual Studio. 
 
-Si vous avez déjà été assigné comme administrateur, vous pouvez accéder directement au [portail d’administration](https://manage.visualstudio.com) des abonnements Visual Studio.
+Si vous avez déjà été configuré comme administrateur, vous pouvez accéder directement au [portail d’administration](https://manage.visualstudio.com) des abonnements Visual Studio.
 
 ## <a name="for-cloud-subscriptions"></a>Pour les abonnements cloud
 Quand vous achetez des abonnements cloud Visual Studio, vous êtes automatiquement configuré comme administrateur de ces abonnements.  Si vous les avez déjà achetés, vous pouvez les gérer sur [https://manage.visualstudio.com](https://manage.visualstudio.com).

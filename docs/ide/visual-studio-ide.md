@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d4d302c84322388f96b37aa913e4debd3d331a7
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 5bde32fc86610fa451aa01659401362fe4207f5c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Vue d’ensemble de l’IDE de Visual Studio
 
@@ -30,7 +30,7 @@ Vous pouvez aussi tout simplement ouvrir du code que vous avez obtenu d’une so
 
 ### <a name="create-mobile-apps"></a>Créer des applications mobiles
 
-Vous pouvez créer des applications mobiles natives pour différentes plateformes à l’aide de Visual C# et Xamarin ou Visual C++ natives ou des applications hybrides à l’aide de JavaScript avec Apache Cordova. Vous pouvez créer des jeux mobiles pour Unity, Unreal, DirectX, Cocos, et plus encore. Visual Studio inclut un émulateur Android pour vous aider à exécuter et déboguer des applications Android.
+Vous pouvez créer des applications mobiles natives pour différentes plateformes à l’aide de C# et Xamarin ou Visual C++, ou des applications hybrides à l’aide de JavaScript avec Apache Cordova. Vous pouvez créer des jeux mobiles pour Unity, Unreal, DirectX, Cocos, et plus encore. Visual Studio inclut un émulateur Android pour vous aider à exécuter et déboguer des applications Android.
 
 Vous pouvez exploiter la puissance du Cloud pour vos applications mobiles en créant des services d’applications Azure. Les services d’applications Azure permettent à vos applications de stocker des données sur le Cloud, d’authentifier les utilisateurs de manière sécurisée et de faire évoluer automatiquement leurs ressources pour répondre aux besoins de votre application et de votre entreprise. Pour plus d’informations, consultez [Développement d’applications mobiles](https://www.visualstudio.com/vs/mobile-app-development/).
 
@@ -56,7 +56,7 @@ Pour plus d’informations, consultez [Outils web modernes](https://www.visualst
 
 ### <a name="build-cross-platform-apps-and-games"></a>Créer des applications et des jeux multiplateformes
 
-À l’aide de Visual Studio, créez des applications et des jeux pour les appareils Android, iOS, Linux, Windows, etc. Découvrez-en plus dans [Développement mobile multiplateforme](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Les applications de la plateforme Windows universelle vous permettent de tirer parti de votre code entre plusieurs plateformes. Consultez la page sur les [applications de la plateforme Windows universelle](https://dev.windows.com/en-us/windows-apps) pour plus d’informations.
+À l’aide de Visual Studio, créez des applications et des jeux pour les appareils Android, iOS, Linux, Windows, etc. Découvrez-en plus dans [Développement mobile multiplateforme](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Les applications de la plateforme Windows universelle vous permettent de tirer parti de votre code entre plusieurs plateformes. Consultez la page sur les [applications de la plateforme Windows universelle](https://dev.windows.com/windows-apps) pour plus d’informations.
 
 Choisissez les outils dont vous avez besoin en fonction des exigences de votre application et du langage utilisé :
 
@@ -109,7 +109,7 @@ Un bon moyen d’en savoir plus sur quelque chose est de l’utiliser ! Nous al
 
   ![Modèle d’application vide UWP](../ide/media/new-uwp-blank-app-template.png)
 
-  Cela crée un nouveau projet d’application Windows universel vide utilisant Visual C# et XAML comme langages de programmation. Patientez jusqu’à ce que Visual Studio configure le projet pour vous. Si vous êtes invité à saisir de nouvelles informations, acceptez simplement les valeurs par défaut pour le moment.
+  Cela crée un nouveau projet d’application Windows universel vide utilisant C# et XAML comme langages de programmation. Patientez jusqu’à ce que Visual Studio configure le projet pour vous. Si vous êtes invité à saisir de nouvelles informations, acceptez simplement les valeurs par défaut pour le moment.
 
 1. Dans la boîte de dialogue **Nouveau projet de plateforme Windows universelle**, acceptez les valeurs par défaut en choisissant **OK**.
 
@@ -195,7 +195,7 @@ Voici d’autres fonctionnalités de productivité courantes de Visual Studio :
 
  ![Refactorisation](../ide/media/VSIDE_refactor.png)
 
-- **IntelliSense** est un terme couvrant un ensemble de fonctionnalités appréciées qui affichent des informations sur les types concernant votre code directement dans l’éditeur et qui, dans certains cas, écrivent de petits extraits de code pour vous. Cela revient à avoir de la documentation de base incluse dans l’éditeur, ce qui vous évite d’avoir à rechercher des informations sur les types dans une fenêtre d’aide distincte. Les fonctionnalités d'IntelliSense varient selon le langage. Pour plus d’informations, consultez [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) et [Options IntelliSense spécifiques à Visual Basic](../ide/visual-basic-specific-intellisense.md). L’illustration suivante montre certaines fonctionnalités IntelliSense à l'œuvre :
+- **IntelliSense** est un terme couvrant un ensemble de fonctionnalités appréciées qui affichent des informations sur les types concernant votre code directement dans l’éditeur et qui, dans certains cas, écrivent de petits extraits de code pour vous. Cela revient à avoir de la documentation de base incluse dans l’éditeur, ce qui vous évite d’avoir à rechercher des informations sur les types dans une fenêtre d’aide distincte. Les fonctionnalités d'IntelliSense varient selon le langage. Pour plus d’informations, consultez [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) et [Options IntelliSense spécifiques à Visual Basic](../ide/visual-basic-specific-intellisense.md). L’illustration suivante montre certaines fonctionnalités IntelliSense à l'œuvre :
 
   ![Liste des membres Visual Studio](../ide/media/vs2017_Intellisense.png)
 
@@ -237,7 +237,7 @@ L’illustration suivante montre la fenêtre Team Explorer pour une solution qui
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
-Vous pouvez automatiser votre processus de génération pour générer le code que les développeurs de votre équipe ont archivé dans la gestion de versions. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Pour plus d’informations, consultez [Intégration continue sur n’importe quelle plateforme](https://www.visualstudio.com/en-us/docs/build/overview).
+Vous pouvez automatiser votre processus de génération pour générer le code que les développeurs de votre équipe ont archivé dans la gestion de versions. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Pour plus d’informations, consultez [Build et Release (VSTS et TFS)](/vsts/build-release/index).
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Se connecter aux services, bases de données et ressources de Cloud
 
@@ -280,6 +280,6 @@ Félicitations, vous avez terminé la visite guidée de l’IDE de Visual Studio
 * [IDE Visual Studio](https://www.visualstudio.com/vs/)
 * [Téléchargements Visual Studio](https://www.visualstudio.com/downloads/)
 * [Le blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Forums Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
+* [Forums Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
 * [Microsoft Virtual Academy](https://mva.microsoft.com/)
 * [Channel 9](https://channel9.msdn.com/)

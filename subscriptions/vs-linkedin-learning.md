@@ -1,38 +1,57 @@
 ---
-title: Avantage LinkedIn Learning
+title: Avantage LinkedIn Learning dans les abonnements Visual Studio | Microsoft Docs
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 11/7/2017
+Ms.date: 1/12/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to activate the LinkedIn Learning benefit included as part of a Premium subscription included in your Visual Studio subscription.
+Description: Learn about the LinkedIn Learning benefit included as part of a LinkedIn Premium subscription included in selected Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 62f08913a7fbefe0bd40f3dd752d96194916b0e5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 8ef318cb7cdefefc079b230f0e44fdeb5f0c2d8f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="activating-the-linkedin-learning-benefit-in-your-visual-studio-subscription"></a>Activation de l’avantage LinkedIn Learning dans votre abonnement Visual Studio
+# <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Avantage LinkedIn Learning dans les abonnements Visual Studio
 
+## <a name="overview"></a>Vue d'ensemble
 Libérez la puissance de LinkedIn en accédant aux personnes, aux insights et aux compétences dont vous avez besoin pour faire avancer votre carrière.  Découvrez les secteurs, les technologies et les compétences innovantes avec l’aide d’experts de ces domaines.
 
-Votre abonnement Visual Studio comprend un abonnement à LinkedIn Premium, qui inclut LinkedIn Learning.  La durée de votre abonnement Premium dépend du type de votre abonnement Visual Studio :
-
-| Abonnement                                                     | Avantage                      |
-|------------------------------------------------------------------|------------------------------|
-| Abonnements Visual Studio Enterprise standard et cloud annuel   | Abonnement Premium de 6 mois |
-| Abonnements Visual Studio Professional standard et cloud annuel | Abonnement Premium de 3 mois |
-| Visual Studio Test Professional                                  | Abonnement Premium de 3 mois |
-| Plateformes MSDN                                                   | Abonnement Premium de 3 mois |
-| Visual Studio Dev Essentials                                     | Abonnement Premium de 3 mois | 
-
+Les abonnements Visual Studio sélectionnés comprennent un abonnement à LinkedIn Premium, qui inclut LinkedIn Learning.  La durée de votre abonnement Premium dépend du type de votre abonnement Visual Studio.
 Vous devez disposer d’un compte LinkedIn pour tirer parti de votre avantage LinkedIn Learning.  Si vous n’en avez pas déjà un, vous avez la possibilité de le créer avant d’activer votre abonnement Premium.  
 
-Pour activer votre abonnement Premium et l’avantage LinkedIn Learning :
-1. Connectez-vous à [https://my.visualstudio.com](https://my.visualstudio.com/benefits).
+## <a name="eligibility"></a>Éligibilité
+| Niveau d'abonnement / Programme                                                  | Avantage               | Renouvelable ?                                                         |
+|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
+| Visual Studio Enterprise standard                                             | 6 mois              |  Non                                                                |
+| Visual Studio Enterprise annuel                                               | 6 mois              |  Non                                                                |
+| Visual Studio Enterprise mensuel                                              | Non disponible         |                                                                    |
+| Visual Studio Professional standard                                           | 3 mois              |  Non                                                                |
+| Visual Studio Professional annuel                                             | 3 mois              |  Non                                                                | 
+| Visual Studio Professional mensuel                                            | Non disponible         |                                                                    |
+| Visual Studio Test Pro                                                        | 3 mois              |  Non                                                                |
+| Plateformes MSDN                                                                | 3 mois              |  Non                                                                |
+| Visual Studio Dev Essentials                                                  | 3 mois              |  Non                                                                |
+| Visual Studio Enterprise - NFR<sup>1</sup>                                               | 6 mois              |  Non                                                                |
+| Visual Studio Enterprise - FTE                                                | Non disponible         |                                                                    |
+| Visual Studio Enterprise - Microsoft Partner Network                          | Non disponible         |                                                                    |
+| Visual Studio Professional - Microsoft Partner Network                        | Non disponible         |                                                                    |
+| Visual Studio Enterprise – Imagine (Standard)                                 | Non disponible         |                                                                    |
+| Visual Studio Enterprise – Imagine (Premium)                                  | Non disponible         |                                                                    |
+| Visual Studio Enterprise – BizSpark                                           | Non disponible         |                                                                    |
+| Microsoft Certified Trainer - Software & Services                             | Non disponible         |                                                                    |
+| Microsoft Certified Trainer - Software & Services Developer                   | Non disponible         |                                                                    |
+
+<sup>1</sup>  *Inclut NFR (Revente interdite), Microsoft Valued Partner (MVP), Region Director (RD) et Visual Studio Industry Partner (VSIP)*  
+
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour consulter la liste de tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
+
+## <a name="activation-steps"></a>Étapes d'activation
+Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning :
+1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette LinkedIn Learning dans la catégorie Formation, puis cliquez sur le lien **Obtenir un code**.
 
@@ -41,7 +60,7 @@ Pour activer votre abonnement Premium et l’avantage LinkedIn Learning :
 
 3. Si vous avez déjà un compte LinkedIn et que vous êtes connecté automatiquement, vous êtes immédiatement dirigé vers la page d’activation de l’avantage LinkedIn Learning.  Si vous avez un compte LinkedIn mais que vous n’êtes pas connecté automatiquement, entrez simplement votre nom d’utilisateur et votre mot de passe, puis cliquez sur **S’identifier**.  Passez à [cette étape](#activate-your-offer) pour activer votre offre.
 
-
+### <a name="create-a-linkedin-account"></a>Créer un compte LinkedIn
 4. Si vous n’avez pas encore de compte LinkedIn, cliquez sur **S’inscrire**.  
 
     ![LinkedIn Learning : S’inscrire](_img\vs-linkedin\vs-linkedin-join-now.png)
@@ -84,7 +103,7 @@ Pour activer votre abonnement Premium et l’avantage LinkedIn Learning :
 
     ![LinkedIn Learning : Charger une photo](_img\vs-linkedin\vs-linkedin-app.png)
 
-## <a name="activate-your-offer"></a>Activer votre offre
+### <a name="activate-your-offer"></a>Activer votre offre
 15. Maintenant que vous vous êtes connecté à votre compte LinkedIn ou que vous en avez créé un, vous êtes prêt à activer votre abonnement Premium et à profiter de LinkedIn Learning.  Cliquez sur **Activer votre offre**. 
 
     ![LinkedIn Learning : Activer](_img\vs-linkedin\vs-linkedin-Activate1.png)
@@ -97,3 +116,13 @@ Pour activer votre abonnement Premium et l’avantage LinkedIn Learning :
 17. Vous avez activé avec succès votre offre d’abonnement Premium, et vous pouvez désormais utiliser LinkedIn Learning ainsi que tous les avantages du service Premium !
 
     ![LinkedIn Learning : Page d’accueil des formations](_img\vs-linkedin\vs-linkedin-learning-home.png)
+
+## <a name="faq"></a>FAQ
+*Consultez les mises à jour disponibles ici.*
+
+## <a name="support-resources"></a>Ressources de support technique
+-  Besoin d’aide avec LinkedIn Learning ?  Consultez les ressources suivantes :
+    - Aide sur [l’utilisation de LinkedIn Learning](https://www.linkedin.com/help/learning).
+    - Aide sur des questions générales relatives à [LinkedIn](https://www.linkedin.com/help/linkedin), telles que la création de comptes et de profils, ou la gestion de votre réseau.
+-  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
+-  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://www.visualstudio.com/support/).    

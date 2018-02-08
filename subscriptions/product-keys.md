@@ -1,5 +1,5 @@
 ---
-title: "Utilisation des clés de produit"
+title: "Utilisation des clés de produit | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,13 +9,14 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 6d0da452a205042cee2b2c0b41990da50b303b3f
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation des clés de produit dans les abonnements Visual Studio
+
 ## <a name="product-keys-overview"></a>Vue d’ensemble des clés de produit
 Vos abonnements Visual Studio vous donnent accès à une large gamme de produits Microsoft pour la conception, le développement, le test et la démonstration d’applications. Certains de ces produits nécessitent des clés de produit pour être installés et éventuellement pour être activés.
 
@@ -45,7 +46,7 @@ Si vous avez demandé le nombre maximal de clés disponibles dans le cadre de vo
 Nos études montrent que la plupart des abonnés ont suffisamment de clés de produit dans leur abonnement pour couvrir leurs besoins. Si vous avez besoin de clés supplémentaires, vous pouvez envoyer une demande au [service client des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio. Les demandes sont étudiées et approuvées au cas par cas.
 
 ## <a name="locating-and-claiming-product-keys"></a>Recherche et demande de clés de produit
-Vous devez être connecté à votre abonnement Visual Studio pour afficher vos clés de produit. Pour rechercher des clés de produit, sélectionnez le lien bleu **Obtenir une clé** d’un produit spécifique dans la page [Téléchargements](https://my.visualstudio.com/downloads), comme illustré ci-dessous.  Toutes les clés disponibles sont également regroupées dans la page [Clés de produit](https://my.visualstudio.com/productkeys). Quand plusieurs clés d’un même produit sont disponibles, des remarques sont affichées dans la colonne Remarques du téléchargement pour vous aider à identifier la clé appropriée.
+Vous devez être connecté à votre abonnement Visual Studio pour afficher vos clés de produit. Pour rechercher des clés de produit, sélectionnez le lien bleu **Obtenir une clé** d’un produit spécifique dans la page [Téléchargements](https://my.visualstudio.com/downloads), comme illustré ci-dessous.  Toutes les clés disponibles sont également regroupées dans la page [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Quand plusieurs clés d’un même produit sont disponibles, des remarques sont affichées dans la colonne Remarques du téléchargement pour vous aider à identifier la clé appropriée.
 
 ![Obtenir une clé à partir de la page Téléchargements](_img/product-keys/download-get-key.png)
 
@@ -79,7 +80,7 @@ Seuls les abonnés ayant des abonnements actifs peuvent télécharger des produi
 
 Pour demander une clé de produit :
 1.  Connectez-vous à votre abonnement Visual Studio.  Vous devez être connecté pour pouvoir télécharger des produits ou demander des clés de produit. 
-2.  Cliquez sur l’onglet [Clés de produit](https://my.visualstudio.com/productkeys).
+2.  Cliquez sur l’onglet [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
 3.  Les clés de produit sont répertoriées par nom de produit, par ordre alphabétique.  Vous pouvez faire défiler la liste jusqu’au nom de produit recherché, ou rechercher le produit à l’aide de la barre de recherche en haut de la page.  
 ![Rechercher une clé de produit](_img\product-keys\visio-product-key-cropped.png)
 
@@ -91,7 +92,7 @@ Vous pouvez exporter une liste de toutes les clés que vous avez demandées, et 
 
 **IMPORTANT : Si votre abonnement arrive à expiration, vous ne pouvez plus demander de nouvelles clés ni exporter vos clés demandées.** 
 
-Pour exporter vos clés, cliquez simplement sur le bouton **Exporter toutes les clés** situé tout à droite de la page Clés de produit.  Un fichier .xml intitulé KeysExport.xml est créé. Vous pouvez ensuite ouvrir ou enregistrer le fichier.  Vous devez ouvrir le fichier avec une application prenant en charge les fichiers .xml.  Par exemple, vous pouvez ouvrir le fichier en tant que classeur en lecture seule dans Excel.  
+Pour exporter vos clés, cliquez simplement sur le lien **Exporter toutes les clés** situé à l’extrême droite de la page Clés de produit.  Un fichier .xml intitulé KeysExport.xml est créé. Vous pouvez ensuite ouvrir ou enregistrer le fichier.  Vous devez ouvrir le fichier avec une application prenant en charge les fichiers .xml.  Par exemple, vous pouvez ouvrir le fichier en tant que classeur en lecture seule dans Excel.  
 
 ## <a name="internet-demonstrations-via-terminal-services"></a>Démonstrations Internet par le biais des services Terminal Server
 Avec un abonnement Visual Studio, vous pouvez fournir un accès aux démonstrations Internet de vos programmes aux utilisateurs finaux par le biais des services Terminal Server (Windows Server 2003 ou Windows Server 2008) ou des services Bureau à distance (Windows Server 2008 R2 ou versions ultérieures). Jusqu’à 200 utilisateurs anonymes peuvent ainsi accéder simultanément à votre démonstration. Votre démonstration ne doit pas utiliser de données de production. Les abonnés Visual Studio sont autorisés à démontrer leurs applications aux utilisateurs finaux. Les services Terminal Server ou Bureau à distance sont les seuls moyens pour les utilisateurs finaux sans abonnement Visual Studio d’interagir avec l’application démontrée quand le logiciel est concédé sous licence par le biais d’abonnements Visual Studio.
@@ -99,8 +100,9 @@ Avec un abonnement Visual Studio, vous pouvez fournir un accès aux démonstrati
 Cela s’ajoute aux autorisations de développement et de test, qui permettent aux abonnés Visual Studio d’utiliser un nombre illimité de connexions aux services Terminal Server ou Bureau à distance.
 
 ### <a name="enabling-rds-access"></a>Activation de l’accès aux services Bureau à distance 
-Les abonnés Visual Studio peuvent augmenter le nombre d’utilisateurs autorisés à accéder à Windows Server par le biais des services Bureau à distance en entrant une clé de produit fournie sous l’onglet [Clés de produit](https://my.visualstudio.com/productkeys) dans le [portail Abonné](https://my.visualstudio.com). Pour obtenir une clé de produit, connectez-vous à la page Clés de produit et faites défiler la page jusqu’à la version Windows Server que vous utilisez. Recherchez « Connexions < utilisateur ou appareil > aux services Bureau à distance Windows Server < version > R2 », puis cliquez sur le lien **Demander une clé**. Par exemple, si vous utilisez les services Bureau à distance sur Windows Server 2012 R2 et que votre déploiement utilise des CAL utilisateur, choisissez « Connexions utilisateurs aux services Bureau à distance Windows Server 2012 (50) ».
+Les abonnés Visual Studio peuvent augmenter le nombre d’utilisateurs autorisés à accéder à Windows Server par le biais des services Bureau à distance en entrant une clé de produit fournie sous l’onglet [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) dans le [portail Abonné](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Pour obtenir une clé de produit, connectez-vous à la page Clés de produit et faites défiler la page jusqu’à la version Windows Server que vous utilisez. Recherchez « Connexions < utilisateur ou appareil > aux services Bureau à distance Windows Server < version > R2 », puis cliquez sur le lien **Demander une clé**. Par exemple, si vous utilisez les services Bureau à distance sur Windows Server 2012 R2 et que votre déploiement utilise des CAL utilisateur, choisissez « Connexions utilisateurs aux services Bureau à distance Windows Server 2012 (50) ».
 Cinq clés de chaque type sont disponibles pour Windows Server 2008 R2, et chaque clé prend en charge 20 connexions. Pour Windows Server 2012 R2, quatre clés de chaque type sont disponibles, et chaque clé prend en charge 50 connexions. 
+
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Pour activer des connexions supplémentaires dans Windows Server : 
 1.  Ouvrez le Gestionnaire de serveur.
 2.  Ouvrez la liste des serveurs dans le volet de navigation de gauche.
@@ -113,4 +115,4 @@ Les utilisateurs finaux peuvent utiliser les services Bureau à distance pour se
 - 200 connexions utilisateur au maximum peuvent être utilisées simultanément pour les démonstrations de l’application. 
 - Les clés de produit permettant d’activer les connexions utilisateur doivent être obtenues par un abonné Visual Studio.
 
-Pour obtenir des instructions sur la configuration des licences de services Bureau à distance sur votre serveur, consultez le blog [RD Licensing Configuration on Windows Server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Si vous avez des questions, consultez le [forum sur les services Bureau à distance Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS). 
+Pour obtenir des instructions sur la configuration des licences de services Bureau à distance sur votre serveur, consultez le blog [RD Licensing Configuration on Windows Server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Si vous avez des questions, consultez le [forum sur les services Bureau à distance Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS). 

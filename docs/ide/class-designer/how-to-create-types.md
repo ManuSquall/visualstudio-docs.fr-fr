@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.Clr.ClrAttributesDialog
+f1_keywords:
+- VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
 - custom attributes, applying
 - class diagrams, creating types
@@ -16,19 +18,20 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - attributes [Visual Studio], applying custom
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
-caps.latest.revision: "41"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fe4eaf38f20ed358263bb6cc07d4be5c9632cd5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: db46a4fa0faa568597deccddb528d8765e048e22
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Guide pratique pour créer des types à l'aide du Concepteur de classes
-Pour concevoir de nouveaux types pour les projets Visual C# .NET et Visual Basic .NET, créez-les dans un diagramme de classes. Pour visualiser les types existants, consultez [Guide pratique pour afficher les types existants](how-to-view-existing-types.md).  
+Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les dans un diagramme de classes. Pour visualiser les types existants, consultez [Guide pratique pour afficher les types existants](how-to-view-existing-types.md).  
   
 -   [Créer un nouveau type](#CreateType)  
   
@@ -96,7 +99,7 @@ Pour concevoir de nouveaux types pour les projets Visual C# .NET et Visual Basic
      Une fois que vous avez terminé, les attributs personnalisés sont appliqués au type.  
   
 ## <a name="see-also"></a>Voir aussi
-[Guide pratique pour créer l’héritage entre les types](how-to-create-inheritance-between-types.md)  
+[Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md)  
 [Guide pratique pour créer des associations entre des types](how-to-create-associations-between-types.md)
 [Création et configuration de membres de type](creating-and-configuring-type-members.md)   
 [Utilisation des diagrammes de classes](working-with-class-diagrams.md)   

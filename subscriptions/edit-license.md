@@ -1,5 +1,5 @@
 ---
-title: "Modifier les abonnements dans le portail d’administration | Visual Studio Marketplace"
+title: "Modifier les abonnements dans le portail d’administration | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can edit subscription assignments.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c561e7a56f2e70cae1addd32902f68a582b49a02
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Modification des attributions d’abonnement Visual Studio
 
@@ -29,13 +29,15 @@ Vous pouvez mettre à jour le prénom, le nom, le pays, la langue et les téléc
 
    ![Modifier les informations de l’abonné](_img\edit-license\edit-subscriber.png)
 
-Remarque : Pour changer le niveau d’abonnement d’un abonné, vous devez supprimer l’utilisateur à partir du portail et l’ajouter à nouveau. Les niveaux d’abonnement ne sont pas modifiables directement.
+> [!NOTE]
+> Pour changer le niveau d’abonnement d’un abonné, vous devez supprimer l’utilisateur du portail, puis l’ajouter de nouveau. Les niveaux d’abonnement ne sont pas modifiables directement.
 
 ## <a name="editing-multiple-subscribers-by-using-bulk-edit"></a>Modification de plusieurs abonnés à l’aide de la modification en bloc
 
 Vous pouvez modifier plusieurs abonnés à la fois en effectuant une modification en bloc. Cette fonctionnalité est principalement destinée aux organisations qui doivent changer les adresses e-mail de façon globale ou aux organisations qui souhaitent restreindre l’accès aux téléchargements. 
 
-**IMPORTANT** : Les niveaux d’abonnement (Enterprise, Professional, etc.) et les GUID d’abonnement ne doivent pas être modifiés.  Si vous essayez d’effectuer un chargement après avoir modifié ces éléments, le chargement échoue.  
+> [!IMPORTANT]
+> Les niveaux d’abonnement (Enterprise, Professional, etc.) et les GUID d’abonnement ne doivent pas être modifiés.  Si vous essayez d’effectuer un chargement après avoir modifié ces éléments, le chargement échoue.  
 
 1.  Pour modifier plusieurs abonnés à la fois, accédez à l’onglet Abonnés. Dans le ruban du haut, cliquez sur **Modifier en bloc**. 
 

@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fffb892efdbe3ad2731de5b0b81f6e59f237f884
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d0a00fb9fa52bcba39f4648fc3ffb9800890ac30
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ Intellisense
 
@@ -23,13 +25,13 @@ IntelliSense pour C++ peut être utilisé avec des fichiers autonomes, mais auss
 
 ## <a name="intellisense-features-in-c"></a>Fonctionnalités IntelliSense en C++
 
-IntelliSense est le nom d’un ensemble de fonctionnalités conçues pour faciliter le codage. Quasiment toutes les fonctionnalités IntelliSense peuvent être activées ou désactivées via la page de propriétés **Éditeur de texte, C/C++, Avancé**. Chaque développeur peut ainsi choisir les fonctionnalités qui lui semblent utiles.
+IntelliSense est le nom d’un ensemble de fonctionnalités conçues pour faciliter le codage. Étant donné que chaque utilisateur a sa propre opinion sur ce qui est pratique, pratiquement toutes les fonctionnalités IntelliSense peuvent être activées ou désactivées dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé**. La boîte de dialogue **Options** est accessible dans le menu **Outils** dans la barre de menus.
 
-![Outils, options, éditeur de texte, C/C++, avancé](../ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")
+![Boîte de dialogue Options d’outil](../ide/media/sintellisensecpptoolsoptions.PNG)
 
 Vous pouvez utiliser les éléments de menu et les raccourcis clavier indiqués dans l'image suivante pour accéder à IntelliSense.
 
-![Menu IntelliSense Visual C++](../ide/media/vs2015_cpp_intellisense_menu.png "vs2015_cpp_intellisense_menu")
+![Menu IntelliSense](../ide/media/vs2015_cpp_intellisense_menu.png)
 
 ### <a name="statement-completion-and-member-list"></a>Saisie semi-automatique des instructions et liste des membres
 
@@ -39,19 +41,19 @@ Pour obtenir la liste des icônes et leurs significations, consultez [Affichage 
 
 ![Fenêtre Compléter le mot Visual C++](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
 
-Au premier appel de la liste des membres, cette liste affiche uniquement les membres qui sont accessibles pour le contexte actuel. Si vous appelez ensuite cette liste avec **Ctrl+J**, elle affiche tous les membres indépendamment de leur accessibilité. Si vous l'appelez une troisième fois, la liste qui s'affiche présente encore plus d'éléments de code. Vous pouvez désactiver la saisie semi-automatique des instructions dans la page **Options générales de C/C++**.
+Au premier appel de la liste des membres, cette liste affiche uniquement les membres qui sont accessibles pour le contexte actuel. Si vous appuyez ensuite sur **Ctrl**+**J**, elle affiche tous les membres indépendamment de leur accessibilité. Si vous l'appelez une troisième fois, la liste qui s'affiche présente encore plus d'éléments de code. Vous pouvez désactiver la liste des membres dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Général**  >  **Répertorier automatiquement les membres**.
 
 ![Liste de membres Visual C++](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
 
 ### <a name="parameter-help"></a>Aide sur les paramètres
 
-Quand vous tapez une accolade ouvrante dans un appel de fonction, ou un crochet pointu dans une déclaration de variable de modèle de classe, l'éditeur ouvre une petite fenêtre qui affiche les types de paramètre pour chaque surcharge de la fonction ou du constructeur. Le paramètre « actuel », basé sur l'emplacement du curseur, est indiqué en gras. Vous pouvez désactiver la saisie semi-automatique des instructions dans la page **Options générales de C/C++**.
+Quand vous tapez une accolade ouvrante dans un appel de fonction, ou un crochet pointu dans une déclaration de variable de modèle de classe, l'éditeur ouvre une petite fenêtre qui affiche les types de paramètre pour chaque surcharge de la fonction ou du constructeur. Le paramètre « actuel »&mdash;basé sur l'emplacement du curseur&mdash;est indiqué en gras. Vous pouvez désactiver les informations de paramètre dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Général**  >  **Informations de paramètre**.
 
 ![Aide sur les paramètres Visual C++](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
 
 ### <a name="quick-info"></a>Info express
 
-Quand vous placez le curseur sur une variable, une petite fenêtre inline s'affiche, présentant les informations de type et l'en-tête où le type est défini. Placez le curseur sur un appel de fonction pour afficher la signature de la fonction. Vous pouvez désactiver la fonctionnalité Info express dans la page **Éditeur de texte, C/C++, Avancé**.
+Quand vous placez le curseur sur une variable, une petite fenêtre inline s'affiche, présentant les informations de type et l'en-tête où le type est défini. Placez le curseur sur un appel de fonction pour afficher la signature de la fonction. Vous pouvez désactiver la fonctionnalité Info express dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé** > **Info express auto**.
 
 ![Info Express Visual C++](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
 
@@ -63,7 +65,7 @@ Les tildes affichés sous un élément de code (variable, mot clé, accolade, no
 
 ### <a name="code-colorization-and-fonts"></a>Colorisation et polices du code
 
-Les couleurs et les polices par défaut peuvent être modifiées via la page de propriétés **Environnement, Polices et couleurs**. Vous pouvez modifier les polices pour de nombreuses fenêtres d'interface utilisateur ici, et pas seulement l'éditeur. Les paramètres spécifiques du langage C++ commencent par « C++ » ; les autres paramètres s'appliquent à tous les langages.
+Les couleurs par défaut et les polices peuvent être modifiés dans la boîte de dialogue **Options** sous **Environnement** > **Polices et couleurs**. Vous pouvez modifier les polices pour de nombreuses fenêtres d'interface utilisateur ici, et pas seulement l'éditeur. Les paramètres spécifiques du langage C++ commencent par « C++ » ; les autres paramètres s'appliquent à tous les langages.
 
 ### <a name="cross-platform-intellisense"></a>IntelliSense multiplateforme
 
@@ -95,7 +97,7 @@ Notez les points suivants :
 
 ### <a name="intellisense-for-stand-alone-files"></a>IntelliSense pour les fichiers autonomes
 
-IntelliSense est également disponible quand vous ouvrez un seul fichier en dehors de tout projet. Vous pouvez activer ou désactiver les fonctionnalités de votre choix, par exemple IntelliSense, dans la page de propriétés **Éditeur de texte, C/C++, Avancé**. Si vous souhaitez configurer IntelliSense pour des fichiers uniques qui ne font pas partie d’un projet, recherchez **IntelliSense et accès aux fichiers hors projet** dans la section **Avancé**. Consultez [Visite guidée de Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).
+IntelliSense est également disponible quand vous ouvrez un seul fichier en dehors de tout projet. Vous pouvez activer ou désactiver les fonctionnalités IntelliSense dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé**. Si vous souhaitez configurer IntelliSense pour des fichiers uniques qui ne font pas partie d’un projet, recherchez la section **IntelliSense et accès aux fichiers hors projet**.
 
 ![IntelliSense avec un fichier unique](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 

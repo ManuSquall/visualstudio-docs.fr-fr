@@ -7,7 +7,8 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.tools.intellisense
+f1_keywords:
+- vc.tools.intellisense
 helpviewer_keywords:
 - IntelliSense, Complete Word
 - IntelliSense, completion mode
@@ -25,12 +26,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1423e3db18a3849fdcbf93bf0a4299a0f743b242
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 42e34f5933d06bf9021ff8e0cab5b12f316ef52e
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 
@@ -109,7 +111,7 @@ MessageBox( hWnd, "String literal|")
 ## <a name="see-also"></a>Voir aussi
 
 [Options IntelliSense spécifiques à Visual Basic](../ide/visual-basic-specific-intellisense.md)  
-[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)  
+[C# IntelliSense](../ide/visual-csharp-intellisense.md)  
 [JavaScript IntelliSense](../ide/javascript-intellisense.md)  
 [Écriture et refactorisation du code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
 [Insertion de commentaires dans le code XML](../ide/supplying-xml-code-comments.md)

@@ -4,11 +4,12 @@ ms.custom:
 ms.date: 03/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C# projects, references
+- C# projects, references
 - Visual Basic projects, references
 - troubleshooting references
 - referencing files from projects
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d2b7046240f711d640b8143afddb667e2726eb35
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ecca7ee3d9d5ae6a4f347df7438cb38718d702b4
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="troubleshoot-broken-references"></a>Dépanner des références rompues
 
@@ -61,7 +63,7 @@ Pour résoudre ce problème, vous pouvez supprimer la référence rompue, puis l
 
 1. Si vous utilisez Visual Basic, sélectionnez la page **Références**, puis cliquez sur le bouton **Chemins d’accès des références**. Dans la boîte de dialogue **Chemins d’accès des références**, tapez le chemin du dossier contenant l’élément que vous voulez référencer dans le champ **Dossier**, puis cliquez sur le bouton **Ajouter un dossier**.
 
-    Si vous utilisez Visual C#, sélectionnez la page **Chemins d’accès des références**. Dans le champ **Dossier**, tapez le chemin du dossier contenant l’élément que vous voulez référencer, puis cliquez sur bouton **Ajouter un dossier**.
+    Si vous utilisez C#, sélectionnez la page **Chemins d’accès des références**. Dans le champ **Dossier**, tapez le chemin du dossier contenant l’élément que vous voulez référencer, puis cliquez sur bouton **Ajouter un dossier**.
 
 ## <a name="referenced-file-has-been-deleted"></a>Le fichier référencé a été supprimé
 

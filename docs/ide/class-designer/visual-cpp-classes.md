@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.inheritancelinelabel
-helpviewer_keywords: Class Designer [Visual Studio], classes
+f1_keywords:
+- vs.classdesigner.inheritancelinelabel
+helpviewer_keywords:
+- Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1aac0b4dd1600edc29f43195dcf95a6c5fc9b388
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 813e52dec03975c6573ed5eb75c7b5c3ed9bb9fd
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classes Visual C++ dans le Concepteur de classes
-Le Concepteur de classes prend en charge les classes C++ et visualise les classes C++ natives de la même façon que les formes de classe Visual Basic et Visual C#, excepté que les classes C++ peuvent avoir plusieurs relations d’héritage. Vous pouvez développer la forme de classe pour afficher plus de champs et de méthodes dans la classe, ou la réduire pour économiser l’espace.  
+Le Concepteur de classes prend en charge les classes C++ et visualise les classes C++ natives de la même façon que les formes de classe Visual Basic et C#, à la différence près que les classes C++ peuvent avoir plusieurs relations d’héritage. Vous pouvez développer la forme de classe pour afficher plus de champs et de méthodes dans la classe, ou la réduire pour économiser l’espace.  
   
 > [!NOTE]
 >  Le Concepteur de classes ne prend pas en charge les unions (un type spécial de classe dans laquelle la mémoire allouée est uniquement suffisante pour la plus grande donnée membre de l’union).  
@@ -53,7 +57,7 @@ Pour afficher les classes de base correspondant à la classe adoptée, cliquez a
 > [!NOTE]
 >  La commande **Afficher les classes dérivées** n’est pas prise en charge pour le code C++. Pour afficher des classes dérivées, accédez à l’affichage de classes, développez le nœud de type, développez le sous-dossier **Types dérivés**, puis faites glisser ces types sur le diagramme de classes.  
   
-Pour plus d’informations sur l’héritage de classes multiples, consultez [Héritage multiple](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx) et [Plusieurs classes de base](/cpp/cpp/multiple-base-classes).  
+Pour plus d’informations sur l’héritage de classes multiples, consultez [Héritage multiple](https://msdn.microsoft.com/library/6td5yws2.aspx) et [Plusieurs classes de base](/cpp/cpp/multiple-base-classes).  
   
 ## <a name="abstract-classes"></a>Classes abstraites  
 Le Concepteur de classes prend en charge les classes abstraites (également appelées "classes de base abstraites"). Il s’agit de classes que vous n’instanciez jamais, mais desquelles vous pouvez dériver d’autres classes. Dans le cadre de l’exemple "Héritage multiple" présenté précédemment dans ce document, vous pouvez instancier la classe `Bird` comme objets individuels, comme suit :  
@@ -166,11 +170,12 @@ Le tableau suivant présente des exemples de connexion de classes spécialisées
 |------------------|-------------------------|  
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Classe<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Classe<br /><br /> `C<T>`<br /><br /> Classe de modèle<br /><br /> `D`<br /><br /> Classe<br /><br /> ->C\<float>|  
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|  
-  
+
 ## <a name="see-also"></a>Voir aussi
-[Utilisation du code Visual C++](working-with-visual-cpp-code.md)   
-[Classes et structs](/cpp/cpp/classes-and-structs-cpp)   
-[Types de classe anonymes](/cpp/cpp/anonymous-class-types)   
-[Héritage multiple](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx)   
-[Plusieurs classes de base](/cpp/cpp/multiple-base-classes)   
+
+[Utilisation du code Visual C++](working-with-visual-cpp-code.md)  
+[Classes et structs](/cpp/cpp/classes-and-structs-cpp)  
+[Types de classes anonymes](/cpp/cpp/anonymous-class-types)  
+[Héritage multiple](https://msdn.microsoft.com/library/6td5yws2.aspx)  
+[Plusieurs classes de base](/cpp/cpp/multiple-base-classes)  
 [Modèles](/cpp/cpp/templates-cpp)

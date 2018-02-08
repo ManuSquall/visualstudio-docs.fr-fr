@@ -1,5 +1,5 @@
 ---
-title: "Gérer des licences surutilisées | Visual Studio Marketplace"
+title: "Gérer les licences surutilisées | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can resolve over-claimed subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: d5d2f2c3eed2c4d617e5e6bc8eb2ba0cc09f6bd0
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 1040c38e9c45bc833db4fb04a19d9aee45859e79
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="handling-over-claimed-subscriptions"></a>Gestion des abonnements surutilisés
 Les commandes sont parfois modifiées après l’ajout des abonnés. Le risque est que le nombre d’abonnements attribués dépasse le nombre de licences détenues par votre entreprise. Quand cela se produit, l’onglet Abonnés affiche une alerte, accompagnée d’informations détaillées. 

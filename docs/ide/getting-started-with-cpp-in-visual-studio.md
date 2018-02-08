@@ -8,13 +8,15 @@ ms.topic: get-started-article
 author: corob-msft
 ms.author: tglee
 manager: ghogen
-dev_langs: CPP
-ms.workload: cplusplus
-ms.openlocfilehash: 9c0a7a8e206704e1b7cd694a91f376f4ec531d6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2e0e0709b8a1737e3f78268ec324d4481dac285a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
 
@@ -152,7 +154,7 @@ Félicitations ! Vous avez terminé ce guide de démarrage rapide. Pour explorer
 ## <a name="see-also"></a>Voir aussi
 
 [Utilisation de l’IDE de Visual Studio pour le développement de bureau C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[Procédure pas à pas : création d’un composant simple avec Visual C# ou Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+[Procédure pas à pas : création d'une application simple avec C# ou Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
 [Conseils de productivité pour Visual Studio](../ide/productivity-tips-for-visual-studio.md)  
 [Exemples Visual Studio](../ide/visual-studio-samples.md)  
 [Bien démarrer avec le développement dans Visual Studio](../ide/get-started-developing-with-visual-studio.md)

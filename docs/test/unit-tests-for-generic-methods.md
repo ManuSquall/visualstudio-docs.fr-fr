@@ -12,20 +12,23 @@ helpviewer_keywords:
 - unit tests, and generics
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: a0acdea369d19c19c4edf9ca427801ba8df54e0a
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 61c4afb816d5cd0be3628d9c801f578a5210b4a2
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>Tests unitaires pour les méthodes génériques
-Vous pouvez générer des tests unitaires pour les méthodes génériques exactement comme vous le feriez pour d’autres méthodes, comme décrit dans [Comment : créer et exécuter un test unitaire](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Les sections suivantes fournissent des informations et des exemples de création de tests unitaires pour les méthodes génériques.  
-  
-## <a name="type-arguments-and-type-constraints"></a>Arguments de type et contraintes de type  
- Quand [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère un test unitaire pour une classe générique, comme `MyList<T>`, il génère deux méthodes : une méthode d'assistance générique et une méthode de test. Si `MyList<T>` a une ou plusieurs contraintes de type, l'argument de type doit satisfaire toutes les contraintes de type. Pour vérifier que le code générique testé fonctionne comme prévu pour toutes les entrées autorisées, la méthode de test appelle la méthode d'assistance générique avec toutes les contraintes que vous souhaitez tester.  
-  
+
+Vous pouvez générer des tests unitaires pour les méthodes génériques exactement comme vous le feriez pour d’autres méthodes. Les sections suivantes fournissent des informations et des exemples de création de tests unitaires pour les méthodes génériques.
+
+## <a name="type-arguments-and-type-constraints"></a>Arguments de type et contraintes de type
+
+Quand Visual Studio génère un test unitaire pour une classe générique, comme `MyList<T>`, il génère deux méthodes : une méthode d'assistance générique et une méthode de test. Si `MyList<T>` a une ou plusieurs contraintes de type, l'argument de type doit satisfaire toutes les contraintes de type. Pour vérifier que le code générique testé fonctionne comme prévu pour toutes les entrées autorisées, la méthode de test appelle la méthode d'assistance générique avec toutes les contraintes que vous souhaitez tester.
+
 ## <a name="examples"></a>Exemples  
  Les exemples suivants illustrent des tests unitaires pour les génériques :  
   
@@ -197,6 +200,6 @@ namespace ClassLibrary2
 }  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Anatomie d’un test unitaire](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
- [Tests unitaires sur votre code](../test/unit-test-your-code.md)
+## <a name="see-also"></a>Voir aussi
+
+[Tests unitaires sur votre code](../test/unit-test-your-code.md)

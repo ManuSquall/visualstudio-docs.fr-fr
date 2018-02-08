@@ -11,17 +11,19 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: f36df08f6f750337cdd9c68458aebb92866d0a67
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d'un fichier de configuration pour définir une source de données
+
 Cette procédure pas à pas illustre comment utiliser une source de données définie dans un fichier app.config pour des tests unitaires. Vous apprendrez à créer un fichier app.config qui définit une source de données pouvant être utilisée par la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. Cette procédure pas à pas illustre les tâches suivantes :  
   
 -   Création d'un fichier app.config  
@@ -148,20 +150,20 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 |`dataTableName`|`"Sheet1$"`|  
 |`dataAccessMethod`|`"Sequential"`|  
   
- L'élément `microsoft.visualstudio.testtools` doit être similaire à ce qui suit :   
-  
-```  
+L'élément `microsoft.visualstudio.testtools` doit être similaire à ce qui suit : 
+
+```xml
 <microsoft.visualstudio.testtools>  
     <dataSources>  
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>  
         <add name="MyExcelDataSource" connectionString="MyExcelConn" dataTableName="Sheet1$" dataAccessMethod="Sequential"/>  
     </dataSources>  
 </microsoft.visualstudio.testtools>  
-```  
-  
- Le fichier app.config final doit ressembler à ceci :  
-  
-```  
+```
+
+Le fichier app.config final doit ressembler à ceci :
+
+```xml
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
     <configSections>  
@@ -217,13 +219,11 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
   
 #### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>Pour créer un test unitaire à l'aide des sources de données app.config  
   
-1.  Ajoutez un test unitaire au projet de test.  
-  
-     Pour plus d’informations, consultez [Création et exécution de tests unitaires pour le code existant](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173).  
+1.  Ajoutez un test unitaire au projet de test.
   
 2.  Remplacez le contenu généré automatiquement du test unitaire par le code suivant :  
   
-    ```  
+    ```csharp
     using System;  
     using Microsoft.VisualStudio.TestTools.UnitTesting;  
   
@@ -264,12 +264,11 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 3.  Examinez les attributs DataSource. Notez les noms des paramètres à partir du fichier app.config.  
   
 4.  Générez votre solution et exécutez les tests MyTestMethod et MyTestMethod2.  
-  
+
 > [!IMPORTANT]
->  Déployez des éléments tels que des sources de données de sorte qu'ils soient accessibles au test dans le répertoire de déploiement.  
-  
+> Déployez des éléments tels que des sources de données de sorte qu'ils soient accessibles au test dans le répertoire de déploiement.
+
 ## <a name="see-also"></a>Voir aussi
 
 [Tests unitaires sur votre code](../test/unit-test-your-code.md)  
-[Création et exécution de tests unitaires pour le code existant](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
 [Guide pratique pour créer un test unitaire piloté par les données](../test/how-to-create-a-data-driven-unit-test.md)
