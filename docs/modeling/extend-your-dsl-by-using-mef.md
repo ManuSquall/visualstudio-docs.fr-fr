@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4a746d3b2c913025bb9fc84b4f3fec34fe2bc7cf
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 735de60d18bc5cbca7dc2ba509372d81622038be
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Extension de votre DSL à l'aide de MEF
 Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide de Managed Extensibility Framework (MEF). Vous ou autres développeurs sera en mesure d’écrire des extensions pour le DSL sans modifier la définition DSL et le code de programme. Ces extensions incluent des commandes de menu, les gestionnaires de glisser-déplacer et la validation. Les utilisateurs pourront installer votre DSL, puis éventuellement installer les extensions nécessaires.  

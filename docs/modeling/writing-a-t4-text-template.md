@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, syntax
@@ -13,12 +12,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 927b033928d200cbab5271be93679106e7f4fe72
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: e640583f42154497ffe5bd25d3c6860fb9d20ca8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
 Un modèle de texte contient le texte qui sera généré à partir du modèle. Par exemple, un modèle qui crée une page web contiendra «\<html > … » et tous les autres composants standard d’une page HTML. Inséré dans le modèle sont *blocs de contrôle*, qui sont des fragments de code de programme. Les blocs de contrôle fournissent des valeurs variables et permettent à certaines parties du texte d'être conditionnelles et répétées.  

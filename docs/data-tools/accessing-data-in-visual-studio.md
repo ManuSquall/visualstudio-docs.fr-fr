@@ -6,23 +6,25 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: "80025080"
+f1_keywords:
+- "80025080"
 helpviewer_keywords:
 - data [Visual Studio]
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-caps.latest.revision: "100"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: c3777249948ba4be917de4ec6c139e7a15bce0a7
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.workload:
+- data-storage
+ms.openlocfilehash: 7ccee10630a4b5de0aebf361c7acf6cccf8cf49c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>L’accès aux données dans Visual Studio
 
@@ -37,7 +39,7 @@ Les listes suivantes présentent quelques exemples des nombreux systèmes de bas
 ||||
 |-|-|-|
 |Base de données SQL|DocumentDB|Stockage (objets BLOB, tables, files d’attente, les fichiers)|
-|Entrepôt de données SQL|Base de données Stretch SQL Server|StorSimple|
+|SQL Data Warehouse|Base de données Stretch SQL Server|StorSimple|
 
 Et plus encore...
 
@@ -56,7 +58,7 @@ Et plus encore...
 ||||
 |-|-|-|
 |Apache Cassandra|CouchDB|MongoDB|
-|Données|OrientDB|RavenDB|
+|NDatabase|OrientDB|RavenDB|
 |VelocityDB|||
 
 Et plus encore...
@@ -86,13 +88,11 @@ Pour une base de données être utilisable dans ADO.NET, il doit avoir une perso
 
 Dans .NET, vous avez trois possibilités de modélisation et la manipulation de données en mémoire une fois que vous l’avez extrait à partir d’une source de données :
 
-[Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md)  
-La technologie Microsoft ORM préférée. Vous pouvez l’utiliser pour programmer par rapport à des données relationnelles en tant qu’objets de première classe .NET. Pour les nouvelles applications, il doit être le premier choix de valeur par défaut lorsqu’un modèle est requis. Elle nécessite la prise en charge personnalisée à partir du fournisseur ADO.NET sous-jacent.
+[Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md) la technologie Microsoft ORM préférée. Vous pouvez l’utiliser pour programmer par rapport à des données relationnelles en tant qu’objets de première classe .NET. Pour les nouvelles applications, il doit être le premier choix de valeur par défaut lorsqu’un modèle est requis. Elle nécessite la prise en charge personnalisée à partir du fournisseur ADO.NET sous-jacent.
 
-[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
-Un mappeur objet / relationnel générations antérieures. Elle fonctionne bien pour les scénarios moins complexes, mais n’est plus en cours de développement.
+[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md) un mappeur objet / relationnel de génération antérieure. Elle fonctionne bien pour les scénarios moins complexes, mais n’est plus en cours de développement.
 
-[Jeux de données](../data-tools/dataset-tools-in-visual-studio.md)  
+[Datasets](../data-tools/dataset-tools-in-visual-studio.md)  
 La plus ancienne de ces trois technologies de modélisation. Il est principalement destiné à développer rapidement des applications de « formulaires de données » dans lequel vous ne sont pas le traitement de grandes quantités de données ou effectuer des requêtes complexes ou des transformations. Un objet de jeu de données se compose des objets DataTable et DataRow qui logiquement ressemblent beaucoup plus que les objets .NET aux objets de base de données SQL. Pour les applications relativement simples basées sur des sources de données SQL, les jeux de données peut-être encore être un bon choix.
 
 Il n’est pas obligatoire d’utiliser ces technologies. Dans certains scénarios, surtout lorsque les performances sont critiques, vous pouvez simplement utiliser un objet DataReader pour lire à partir de la base de données et copiez les valeurs dont vous avez besoin dans un objet de collection telles que liste\<T >.
@@ -115,39 +115,31 @@ Pour en savoir plus sur la connexion aux bases de données à partir d’applica
 
 ## <a name="python"></a>Python
 
-Installer [outils Python pour Visual Studio](http://microsoft.github.io/PTVS/) en même temps que votre infrastructure de Python favoris pour créer des applications de CPython ou IronPython (.NET). Les outils Python pour le site Web de Visual Studio possède plusieurs didacticiels sur la connexion aux données, y compris [Django et la base de données SQL Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django et MySQL sur Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) et [d’eau et MongoDB sur Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
+Installer [Python prend en charge dans Visual Studio](../python/python-in-visual-studio.md) pour créer des applications de Python. La documentation sur Azure a plusieurs didacticiels sur la connexion aux données, notamment les suivantes :
+- [Django et base de données SQL Azure](/azure/app-service/app-service-web-get-started-python)
+- [Django et MySQL sur Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
+- Travailler avec [BLOB](/azure/storage/blobs/storage-quickstart-blobs-python), [fichiers](/azure/storage/files/storage-python-how-to-use-file-storage), [les files d’attente](/azure/storage/queues/storage-python-how-to-use-queue-storage), et [tables (DB Cosmo)](/azure/cosmos-db/table-storage-how-to-use-python).
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-[Analytique, les périphériques et les données](https://msdn.microsoft.com/data-and-devices)  
-Fournit une introduction au cloud intelligent Microsoft, y compris Cortana Analytique Suite et prise en charge de l’Internet des objets.
+[Analytique, les périphériques et les données](https://msdn.microsoft.com/data-and-devices) fournit une introduction au cloud intelligent Microsoft, y compris Cortana Analytique Suite et prise en charge de l’Internet des objets.
 
-[Microsoft Azure Storage](https://azure.microCsoft.com/documentation/services/storage/)  
-Décrit le stockage Azure et comment créer des applications à l’aide de fichiers, les tables, les files d’attente et les objets BLOB Windows Azure.
+[Microsoft Azure Storage](https://azure.microCsoft.com/documentation/services/storage/) décrit le stockage Azure et comment créer des applications à l’aide d’objets BLOB Windows Azure, les tables, les files d’attente et les fichiers.
 
-[Base de données SQL Azure](https://azure.microsoft.com/documentation/services/sql-database/)  
-Décrit comment se connecter à la base de données SQL Azure, une base de données relationnelle en tant que service.
+[Base de données SQL Azure](https://azure.microsoft.com/documentation/services/sql-database/) décrit comment se connecter à la base de données SQL Azure, une base de données relationnelle en tant que service.
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)  
-Décrit les outils qui simplifient la conception, exploration, tester et déployer des bases de données et des applications de données connectées.
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) décrit les outils qui simplifient la conception, exploration, tester et déployer des applications de données connectées et des bases de données.
 
-[ADO.NET](/dotnet/framework/data/adonet/index)  
-Décrit l’architecture ADO.NET et comment utiliser les classes ADO.NET pour gérer les données d’application et interagir avec les sources de données et XML.
+[ADO.NET](/dotnet/framework/data/adonet/index) décrit l’architecture ADO.NET et comment utiliser les classes ADO.NET pour gérer les données d’application et interagir avec les sources de données et XML.
 
-[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)  
-Décrit comment créer des applications de données qui permettent aux développeurs de programmer par rapport à un modèle conceptuel au lieu de directement par rapport à une base de données relationnelle.
+[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) décrit comment créer des applications de données qui permettent aux développeurs de programmer par rapport à un modèle conceptuel au lieu de directement par rapport à une base de données relationnelle.
 
-[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)  
-Décrit comment utiliser [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] pour déployer des services de données sur le web ou un intranet qui implémentent la [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+[Services de données WCF 4.5](/dotnet/framework/data/wcf/index) explique comment utiliser [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] pour déployer des services de données sur le web ou un intranet qui implémentent la [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
-[Données dans les solutions Office](../vsto/data-in-office-solutions.md)  
-Contient des liens vers des rubriques qui expliquent comment fonctionnent les données dans les solutions Office. Cela inclut des informations sur la programmation orientée schéma, la mise en cache des données et accès aux données côté serveur.
+[Les données dans les Solutions Office](../vsto/data-in-office-solutions.md) contient des liens vers des rubriques qui expliquent comment fonctionnent les données dans les solutions Office. Cela inclut des informations sur la programmation orientée schéma, la mise en cache des données et accès aux données côté serveur.
 
-[LINQ (Language Integrated Query)](/dotnet/csharp/linq/)  
-Décrit les fonctionnalités de requête intégrées dans c# et Visual Basic et que le modèle commun pour interroger des bases de données relationnelles, les documents XML, les jeux de données et les collections en mémoire.
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) décrit les fonctionnalités de requête intégrées dans c# et Visual Basic et que le modèle commun pour interroger des bases de données relationnelles, les documents XML, les jeux de données et les collections en mémoire.
 
-[Outils XML dans Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)  
-Décrit l’utilisation de fonctionnalités XML du .NET Framework de données, le débogage XSLT, XML et l’architecture de requête XML.
+[Outils XML dans Visual Studio](../xml-tools/xml-tools-in-visual-studio.md) décrit l’utilisation de fonctionnalités XML du .NET Framework de données, le débogage XSLT, XML et l’architecture de requête XML.
 
-[Documents et données XML](/dotnet/standard/data/xml/index)  
-Donne une vue d'ensemble d'un jeu de classes complet et intégré qui fonctionne avec les documents et les données XML dans le .NET Framework.
+[Documents et données XML](/dotnet/standard/data/xml/index) fournit une vue d’ensemble pour un ensemble complet et intégré de classes qui fonctionnent avec des documents XML et les données dans le .NET Framework.

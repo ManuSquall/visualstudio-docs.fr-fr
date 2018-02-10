@@ -4,26 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.swimlane
-helpviewer_keywords: Domain-Specific Language, swimlane
+f1_keywords:
+- vs.dsltools.dsldesigner.swimlane
+helpviewer_keywords:
+- Domain-Specific Language, swimlane
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 84107514e728dbfa79b7dfdaee6c3febaee21274
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 39bb6be4146cf7e9e163b6da5ada6f447a930bc8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="properties-of-swimlanes"></a>Propriétés des couloirs
 Vous pouvez ajouter des couloirs pour un diagramme. Couloirs divisent un diagramme en zones verticales ou horizontales. Vous pouvez définir d’autres formes à afficher à l’intérieur des couloirs. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur la façon d’utiliser ces propriétés, consultez [personnalisation et l’extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
  Couloirs ont les propriétés qui sont répertoriées dans le tableau suivant.  
   
-|Propriété|Description|Default|  
+|Propriété|Description|Par défaut|  
 |--------------|-----------------|-------------|  
 |Couleur de remplissage de corps|La couleur de remplissage pour le corps de la couloir.|Blanc|  
 |Couleur de remplissage d’en-tête|La couleur de remplissage de l’en-tête du couloir.|Gris foncé|  
@@ -36,11 +39,11 @@ Vous pouvez ajouter des couloirs pour un diagramme. Couloirs divisent un diagram
 |Génère deux dérivées|Si `True`, une classe de base et une classe partielle (pour la personnalisation par des remplacements) seront générés. Pour plus d’informations, consultez [substituer et étendre les Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |A constructeur personnalisé|Si `True`, un constructeur personnalisé sera fourni dans le code source. Pour plus d’informations, consultez [substituer et étendre les Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du couloir (`none`, `abstract` ou `sealed`).|aucun|  
-|Base couloir|La classe de base de ce couloir.|(aucun)|  
-|Nom|Le nom de ce couloir.|Nom actuel|  
+|Base couloir|La classe de base de ce couloir.|(aucune)|  
+|Name|Le nom de ce couloir.|Nom actuel|  
 |Espace de noms|L’espace de noms n’est affilié à ce couloir.|Espace de noms actuel|  
 |Type de l’info-bulle|Comment l’info-bulle est défini (`fixed`, `variable`, ou `none`). Si `fixed`, alors la valeur de la `Fixed Tooltip Text` propriété est utilisée ; si `variable`, puis l’info-bulle est défini dans le code personnalisé.|\<none>|  
-|Remarques|Notes informelles qui sont associés à ce couloir.|\<none>|  
+|Notes|Notes informelles qui sont associés à ce couloir.|\<none>|  
 |Alignement|Alignement horizontal ou vertical.|Vertical|  
 |Hauteur initiale|La hauteur initiale de ce couloir, exprimée en pouces. Applicable uniquement aux couloirs horizontaux.|0|  
 |Largeur initiale|La largeur initiale de ce couloir, exprimée en pouces. Applicable uniquement aux couloirs verticale.|0|  

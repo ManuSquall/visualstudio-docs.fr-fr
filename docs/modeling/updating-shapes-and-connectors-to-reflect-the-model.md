@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2f192b1bc65d9040ea6ae4fa1278e053398425c7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 6d50d0258a44553451deed68a8ccf17c60d88965
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Mise à jour des formes et des connecteurs pour refléter le modèle
 Dans un langage spécifique à un domaine dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez apporter à l’apparence d’une forme de refléter l’état du modèle sous-jacent.  

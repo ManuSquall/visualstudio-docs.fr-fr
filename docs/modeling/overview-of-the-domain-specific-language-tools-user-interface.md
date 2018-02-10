@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.editor
-helpviewer_keywords: Domain-Specific Language Tools, user interface
+f1_keywords:
+- vs.dsltools.dsldesigner.editor
+helpviewer_keywords:
+- Domain-Specific Language Tools, user interface
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4dabfb345d9a98228afae5e20b63e6ded760800d
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 24aad9d934b044ea42a3ad5319c2a10234ca94ef
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Vue d'ensemble de l'interface utilisateur des outils de langage spécifique à un domaine
 Lorsque vous ouvrez pour la première fois une solution d’outils de langage spécifique à un domaine (outils DSL) dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], l’interface utilisateur ressemble à l’image suivante.  

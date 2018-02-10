@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 92db1c4d27eec5a9ac18d51644dfb0141c2fef34
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 68b750735c8f5d5f6bd7f1497565692c8836914c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Mise en route des langages spécifiques à un domaine
 Cette rubrique explique les concepts de base dans la définition et à l’aide d’un langage spécifique à un domaine (DSL) créé avec le Kit de développement de modélisation pour Visual Studio.
@@ -221,7 +222,7 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
   
     2.  Cliquez sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions  
   
-    3.  Appuyez sur F5. Attendez que l’instance expérimentale de Visual Studio s’affiche.  
+    3.  Appuyez sur F5. Attendez que l’instance expérimentale de Visual Studio s’affiche.  
   
 4.  Dans la solution de débogage dans l’instance expérimentale de Visual Studio, ouvrez un fichier de modèle de test. Faites glisser des éléments sur celui-ci à partir de la boîte à outils. Notez que les légendes de l’outil et les noms de type dans l’Explorateur de DSL ont été modifiés.  
   

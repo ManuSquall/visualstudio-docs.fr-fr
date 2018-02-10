@@ -4,10 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-modeling
 ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.TextTemplating.TextTemplating
+f1_keywords:
+- VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
 - generating text
 - .tt files
@@ -17,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6eeadb77cd0250ab7b2cc48c2abdb8d9f1a1f373
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 029b5264d5275458aee1893df0ba4dd4d83d1a91
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Génération de code et modèles de texte T4
 Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], un *modèle de texte T4* est un mélange de blocs de texte et de logique de contrôle qui peut générer un fichier texte. La logique de contrôle est écrite comme des fragments de code du programme en [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Dans Visual Studio 2015 Update 2 et versions ultérieures, vous pouvez utiliser les fonctionnalités C# version 6.0 dans les directives de modèles T4. Le fichier généré peut être du texte de tout type, tel qu’une page web ou un fichier de ressources, ou du code source de programme dans tout langage.  

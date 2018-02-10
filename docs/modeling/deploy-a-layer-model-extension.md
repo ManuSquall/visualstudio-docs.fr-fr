@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, deploying extensions
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 060cf2551f6c79259c7094d52f35db92f9ebcfef
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 311add860016c914aab232ffad6e3a4efadb15c9
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="deploy-a-layer-model-extension"></a>Déployer une extension de modèle de couche
 D'autres utilisateurs de Visual Studio peuvent installer des extensions de modélisation de couche que vous créez à l'aide de Visual Studio.  
@@ -42,7 +43,7 @@ D'autres utilisateurs de Visual Studio peuvent installer des extensions de modé
 2.  Cliquez sur le nom de l’extension, puis **désinstallation**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Installation d'une extension sur un serveur Team Foundation Build  
- En général, Visual Studio n'est pas installé sur les serveurs [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]. Vous ne pouvez donc pas installer l'extension VSIX en double-cliquant dessus. L'installation de [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] inclut certains composants qui autorisent l'exécution d'une extension VSIX, mais vous devez installer l'extension manuellement.  
+ [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] serveurs n’ont pas normalement installé Visual Studio, et par conséquent, vous ne pouvez pas installer l’extension VSIX en double-cliquant dessus. L'installation de [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] inclut certains composants qui autorisent l'exécution d'une extension VSIX, mais vous devez installer l'extension manuellement.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildmiscincludesesprbuildmdmd-server"></a>Pour installer votre extension de couche sur un serveur [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]  
   
@@ -56,11 +57,11 @@ D'autres utilisateurs de Visual Studio peuvent installer des extensions de modé
   
     -   Pour installer uniquement pour le service réseau qui exécute [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] :  
   
-         %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version] \Extensions\Microsoft  
+         %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
     -   Si vous avez configuré [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] pour s'exécuter en mode interactif en tant qu'utilisateur particulier, vous pouvez effectuer l'installation uniquement pour cet utilisateur :  
   
-         %LocalAppData%\Microsoft\VisualStudio\\[version] \Extensions\Microsoft  
+         %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
         >  %LocalAppData% est généralement *%drivename*: les utilisateurs*nom d’utilisateur*AppDataLocal.  

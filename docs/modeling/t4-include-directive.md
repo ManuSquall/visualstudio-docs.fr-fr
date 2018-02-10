@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8a048fbd28b6993791e0f2475829a1aeede3f879
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 0de398b381cd1e45ff43b3eb1df79c9becd829c4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="t4-include-directive"></a>Directive d'inclusion T4
 Dans un modèle de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez inclure du texte d'un autre fichier à l'aide d'une directive `<#@include#>`. Vous pouvez placer les directives `include` n'importe où dans un modèle de texte avant le premier bloc de fonctionnalité de classe `<#+ ... #>`. Les fichiers inclus peuvent également contenir des directives `include` et d'autres directives. Cela vous permet de partager du code de modèle et du texte réutilisable entre les modèles.  
@@ -49,7 +50,7 @@ Dans un modèle de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_
   
      Cela rend fonctionnalité faciles à générer une bibliothèque d’extraits de code T4 réutilisables que vous pouvez inclure à sera qui ne certains autres extrait a déjà incluses.  Par exemple, supposons que vous avez une bibliothèque de très petits extraits de code qui traitent de traitement du modèle et de la génération de c#.  À son tour, ceux-ci sont utilisés par certains utilitaires plus spécifiques à une tâche, telles que la génération des exceptions que vous pouvez ensuite utiliser à partir de n’importe quel modèle plus spécifiques à l’application. Si vous dessinez le graphique de dépendance, vous constatez que certains extraits de code sont inclus plusieurs fois. Mais le paramètre `once` empêche les inclusions suivantes.  
   
- **MyTextTemplate.tt :**  
+ **MyTextTemplate.tt:**  
   
 ```  
 <#@ output extension=".txt" #>  
@@ -63,7 +64,7 @@ Output message 5 (from top template).
   
 ```  
   
- **TextFile1.t4 :**  
+ **TextFile1.t4:**  
   
 ```  
    Output Message 2 (from included file).  
@@ -80,7 +81,7 @@ void GenerateMessage(int n)
   
 ```  
   
- **TextFile2.t4 :**  
+ **TextFile2.t4:**  
   
 ```  
         Output Message 3 (from included file 2).  

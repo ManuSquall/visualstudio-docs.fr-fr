@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language Tools, supported Visual Studio editions
+helpviewer_keywords:
+- Domain-Specific Language Tools, supported Visual Studio editions
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b76309249310afd5bd88c8d8553792512e208220
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 359bb9864532f2f3fbeb4fecca28c54ea0a96e17
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Prise en charge des éditions de Visual Studio pour visualisation &amp; Modeling SDK
 Les éléments suivants sont des listes des éditions de Visual Studio qui sont prises en charge avec [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] dans les environnements de création et le déploiement. Pour plus d’informations sur ces éditions, consultez Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [centre de développement](http://go.microsoft.com/fwlink/?LinkId=75628).  
@@ -26,7 +28,7 @@ Les éléments suivants sont des listes des éditions de Visual Studio qui sont 
 |||  
 |-|-|  
 |[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
-|Kit de développement logiciel Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
+|SDK Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency graphs, creating path aliases
@@ -22,12 +21,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3787bea9eccd46104cd48c2bd2cdff27d8aeb872
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: a0000482b34ea3c98ac6467cbebccc83bd8b5a74
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personnaliser des cartes de code en modifiant les fichiers DGML
 Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Directed Graph Markup Language) (.dgml) d'une carte. Par exemple, vous pouvez modifier des éléments pour spécifier des styles personnalisés, affecter des propriétés et des catégories à des éléments de code et des liens, ou lier des documents ou des URL à des éléments de code ou des liens. Pour plus d’informations sur les éléments DGML, consultez [référence de balisage langage DGML (Directed Graph)](../modeling/directed-graph-markup-language-dgml-reference.md).  
@@ -255,9 +256,9 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
   
     -   `TargetType="Node` &#124; `Link | Graph"`  
   
-    -   `GroupLabel="`*NameInLegendBox*`"`  
+    -   `GroupLabel="` *NameInLegendBox* `"`  
   
-    -   `ValueLabel="`*NameInStylePickerBox*`"`  
+    -   `ValueLabel="` *NameInStylePickerBox* `"`  
   
      Pour appliquer un style personnalisé à tous les types cibles, n'utilisez pas de condition.  
   
@@ -293,7 +294,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
   
      <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
   
-     <Operator>:: = « < » &#124; «\<= » &#124; « = » &#124; « > = » &#124; « > » &#124; « ! = » &#124; « ou » &#124; « et » &#124; « + » &#124; « * » &#124; « / » &#124; "-"  
+     <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
      <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
   
@@ -301,7 +302,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
   
      <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
   
-     <PropertyGet>:: = Identificateur  
+     <PropertyGet> ::= Identifier  
   
      <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
   

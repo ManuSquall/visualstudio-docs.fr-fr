@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, generated code
+helpviewer_keywords:
+- Domain-Specific Language, generated code
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8a2e7e206e6e8b45580bd6c37b91ad62e67794b9
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 41cf1f19e03c1197c6266b5057af993b677c9c53
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 Une solution DSL (Domain-Specific Language) génère une API que vous pouvez utiliser pour lire et mettre à jour des instances du DSL dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Cette API est définie dans le code généré à partir de la définition DSL. Cette rubrique décrit l'API générée.  
@@ -57,7 +59,7 @@ Une solution DSL (Domain-Specific Language) génère une API que vous pouvez uti
 ## <a name="generated-files-in-dsl"></a>Fichiers générés dans la solution DSL  
  Les fichiers générés suivants s’affichent dans le **Dsl** projet.  
   
- *YourDsl*`Schema.xsd`  
+ *YourDsl* `Schema.xsd`  
   
  Schéma pour les fichiers qui contient les instances de votre DSL. Ce fichier est copié vers la compilation (**bin**) active. Lorsque vous installez votre DSL, vous pouvez copier ce fichier sur **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** afin que les fichiers de modèle peuvent être validés. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
   

@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d6bd4686565b24306d9c9565a5c4eddc65914f85
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: f577669c685d6f42b73c80f947e8edad0c7b9088
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-text-and-image-fields"></a>Personnalisation des champs de texte et d'image
 Lorsque vous définissez un élément décoratif de texte dans une forme, il est représenté par un objet TextField. Pour obtenir des exemples de l’initialisation de TextFields et autres ShapeFields, inspecter Dsl\GeneratedCode\Shapes.cs dans votre solution DSL.  

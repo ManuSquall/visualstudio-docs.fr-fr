@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8b5c957fbc3ae5eb3e71f087c57cbf07188de2ff
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Propagation de modifications en dehors du modèle par des gestionnaires d'événements
 Dans Visualization and Modeling SDK, vous pouvez définir des gestionnaires d’événements de magasin pour propager les modifications apportées aux ressources en dehors de la banque, telles que les variables non-magasin, des fichiers de modèles dans d’autres magasins, ou d’autres [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensions. Gestionnaires d’événements de magasin sont exécutés après la fin de la transaction dans laquelle l’événement de déclenchement s’est produite. Elles sont également exécutées dans une opération d’annulation ou de restauration par progression. Par conséquent, contrairement aux règles de magasin, événements de la banque sont particulièrement utiles pour mettre à jour les valeurs qui sont en dehors de la banque. Contrairement aux événements de .NET, magasin de gestionnaires d’événements sont inscrits pour l’écoute à une classe : vous n’avez pas à inscrire un gestionnaire distinct pour chaque instance. Pour plus d’informations sur le choix entre les modes de gestion des modifications, consultez [réponse aux et propager les modifications](../modeling/responding-to-and-propagating-changes.md).  

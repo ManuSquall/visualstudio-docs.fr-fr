@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fa3f2c0a259afdb09f5565872c9c43c72f38e1c2
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: cd72a2838e9dd7a903e5cf76aac30e2922708872
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Accès à Visual Studio ou à d'autres hôtes à partir d'un modèle de texte
 Dans un modèle de texte, vous pouvez utiliser les méthodes et propriétés exposées par l’hôte qui exécute le modèle, telles que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

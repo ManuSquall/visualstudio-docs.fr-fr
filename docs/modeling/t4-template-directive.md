@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ade36e1b21323fcb0e4ff55369069033ead63e21
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 3c4e53c4d123a5a5de493059c68ef09685c903a8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 En général, un modèle de texte T4 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] commence par une directive `template`, qui spécifie comment le modèle doit être traité. Il ne doit y avoir qu'une seule directive de modèle dans un modèle de texte et les fichiers qu'il contient.  

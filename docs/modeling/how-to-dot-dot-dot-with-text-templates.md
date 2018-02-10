@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fdbed997737b772b22d88b0542d212214e2b808f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to--with-text-templates"></a>Comment : écrire avec des modèles de texte
 Modèles de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offrent un moyen utile de générer du texte de n’importe quel type. Vous pouvez utiliser des modèles de texte pour générer du texte au moment de l’exécution en tant que partie de votre application et au moment du design pour générer une partie de votre code de projet. Cette rubrique résume les plus fréquemment posées « Comment... ? » questions.  

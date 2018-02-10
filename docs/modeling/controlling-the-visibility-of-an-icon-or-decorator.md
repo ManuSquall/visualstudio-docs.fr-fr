@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b090a2f17ad41bb46675f5e170dcbf733b7f8977
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 835d9d356a06c831bb3decf6d0a5a6a4b5620302
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Contrôle de la visibilité d'une icône ou d'un élément décoratif
 A *decorator* est une icône ou une ligne de texte qui apparaît sur la forme d’un langage spécifique à un domaine (DSL). Vous pouvez afficher l’élément décoratif et disparaissent en fonction de l’état des propriétés dans le modèle. Par exemple, sur une forme représentant une personne, vous pourriez avoir différentes icônes qui s’affichent en fonction du sexe de la personne, nombre d’enfants et ainsi de suite.  

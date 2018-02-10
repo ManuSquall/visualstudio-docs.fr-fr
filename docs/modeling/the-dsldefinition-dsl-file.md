@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, definition file
+helpviewer_keywords:
+- Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 86955d745e645d2d37e9e33f258a2662bcac59fe
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 92bd27f1590aae455c0d5bba540720421338b63c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Le fichier DslDefinition.dsl
 Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet Dsl d’un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solution, qui définit un *langage spécifique à un domaine*. Le fichier DslDefinition.dsl décrit les classes et les relations d’un langage spécifique à un domaine, ainsi que le diagramme, des formes, des connecteurs, du format de sérialisation, et **boîte à outils** du langage spécifique à un domaine et ses outils d’édition. Dans une solution de langage spécifique à un domaine, le code qui définit ces outils est généré en fonction des informations contenues dans le fichier DslDefinition.dsl.  
@@ -56,7 +58,7 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
  Diagram  
  Cette section définit un diagramme et vous l'utilisez pour spécifier des propriétés telles que la couleur d'arrière-plan et la classe racine. (La classe racine est la classe de domaine qui est représentée par le diagramme dans son ensemble.) La section Diagram contient aussi des éléments ShapeMap et ConnectorMap, qui spécifient la forme ou le connecteur qui représente chaque classe de domaine ou relation.  
   
- Concepteur  
+ Designer  
  Cette section définit un concepteur (éditeur), qui réunit un **boîte à outils**, paramètres de validation, un schéma et une méthode de sérialisation. La section Designer définit également la classe racine du modèle, qui est généralement aussi la classe racine du diagramme.  
   
  Explorateur  

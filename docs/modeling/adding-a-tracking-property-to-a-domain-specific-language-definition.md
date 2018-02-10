@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - tracking properties [Domain-Specific Language Tools], walkthrough
@@ -13,12 +12,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 21e31bd582fda7884f0f246bd6eda39e5e89a375
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: c0d6231882e8c7412248022abd2e8c578bbfad9f
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajout d'une propriété de suivi à une définition de langage spécifique à un domaine
 Cette procédure pas à pas montre comment ajouter une propriété de suivi à un modèle de domaine.  

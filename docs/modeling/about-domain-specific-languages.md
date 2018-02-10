@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language
+helpviewer_keywords:
+- Domain-Specific Language
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f98b65fbb732b6736c91c605f03b7f2de2325487
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="about-domain-specific-languages"></a>À propos des langages spécifiques à un domaine
 
@@ -53,7 +55,7 @@ Vous pouvez également définir des commandes de menu et autres outils permettan
   
 En règle générale, un langage spécifique à un domaine est créé quand une équipe de développement doit écrire un code similaire à plusieurs produits. Par exemple, une entreprise spécialisée dans les systèmes de manutention de bagages peut définir une DSL de suivi de bagages à partir duquel ils peuvent générer le code pour chaque installation. Les avantages de la DSL sont qu’il puissent être reconnus par leurs clients, que le code généré à partir de celui-ci est fiable, et que le système peut être rapidement mis à jour si l’évolution des besoins des clients.  
   
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]vous permet de créer un langage spécifique à un domaine qui contient votre propre concepteur graphique et la notation de votre propre schéma et ensuite utiliser le langage pour générer le code source approprié pour chaque projet.  
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] vous permet de créer un langage spécifique à un domaine qui contient votre propre concepteur graphique et la notation de votre propre schéma et ensuite utiliser le langage pour générer le code source approprié pour chaque projet.  
   
 ## <a name="domain-specific-development"></a>Développement de spécifique à un domaine
 

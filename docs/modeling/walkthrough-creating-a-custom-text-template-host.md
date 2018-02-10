@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bc8bcec7b5484ad1065539b5860bae115dcb4fd0
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: ad2bc2a049a0a96a8093289af4648f077f2d1478
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Procédure pas à pas : création d'un hôte de modèle de texte personnalisé
 A *modèle de texte ** hôte* fournit un environnement qui permet la *moteur de transformation de modèle de texte* à exécuter. L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou *processeur de directive* qui a besoin d’un fichier ou un assembly peut demander une ressource à partir de l’ordinateur hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).  
@@ -49,7 +50,7 @@ A *modèle de texte ** hôte* fournit un environnement qui permet la *moteur de 
   
 2.  Ajoutez des références aux assemblys suivants :  
   
-    -   **Microsoft.VisualStudio.TextTemplating. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
     -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 et versions ultérieures**  
   

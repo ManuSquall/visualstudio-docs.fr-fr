@@ -7,19 +7,21 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.projectpropertypages.codeanalysis
+f1_keywords:
+- vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
 - code analysis, managed code
 - managed code, code analysis
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 8739c5aafbc8914e3de5f0a51659b40234fa079c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Analyse du code pour une vue d’ensemble du code managé
 
@@ -39,11 +41,11 @@ Pour exécuter manuellement l’analyse du code sur un projet, dans la barre de 
 
 Règles d’analyse du code pour le code managé sont regroupés en *ensembles de règles*. Vous pouvez utiliser l'un des ensembles de règles standard Microsoft ou créer un ensemble de règles personnalisé pour répondre à un besoin particulier. Pour plus d’informations, consultez [à l’aide des ensembles de règles à un groupe de règles d’analyse du Code](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).
 
-## <a name="in-source-suppression"></a>Dans la suppression de la source
+## <a name="suppress-warnings"></a>Supprimer les avertissements
 
 Bien souvent, il est utile d'indiquer qu'un avertissement ne s'applique pas. Cela permet d’informer le développeur et les éventuels réviseurs de code, qu’un avertissement a fait l’objet d’une analyse, puis a été supprimé ou ignoré.
 
-Dans la source de la suppression des avertissements est implémentée via des attributs personnalisés. Pour supprimer un avertissement, ajoutez l'attribut `SuppressMessage` au code source comme indiqué dans l'exemple suivant :
+Suppression à la source d’avertissements est implémentée via des attributs personnalisés. Pour supprimer un avertissement, ajoutez l'attribut `SuppressMessage` au code source comme indiqué dans l'exemple suivant :
 
 ```csharp
 [System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
@@ -53,7 +55,10 @@ Public class MyClass
 }
 ```
 
-Pour plus d’informations, consultez [supprimer les avertissements par à l’aide de l’attribut SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).
+Pour plus d’informations, consultez [supprimer les avertissements](../code-quality/in-source-suppression-overview.md).
+
+> [!NOTE]
+> Si vous migrez un projet vers Visual Studio 2017, vous pouvez être confronté à avec un nombre considérable d’avertissements d’analyse du code. Si vous n’êtes pas prêt à résoudre les avertissements que vous souhaitez désactiver temporairement l’analyse du code, ouvrez les pages de propriétés du projet (**projet** > ***projet* propriétés...** ) et accédez à la **l’analyse du Code** onglet. Désélectionnez **activer l’analyse du Code sur la Build**, puis régénérez votre projet. Vous pouvez également sélectionner une règle différents, le plus petite configurée pour s’exécuter sur le code. N’oubliez pas d’activer l’analyse du code sur quand vous êtes prêt à résoudre les avertissements.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Exécuter l’analyse du code dans le cadre de la stratégie d’archivage
 

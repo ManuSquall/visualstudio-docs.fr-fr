@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: b72a86f10c6e864406929fdccfb59bdd9393752e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procédure pas à pas : configuration et utilisation d’un ensemble de règles personnalisé
 
@@ -106,7 +106,7 @@ Vous pouvez maintenant exécuter l’analyse du Code sur le projet RuleSetSample
   
 2.  Dans la fenêtre liste d’erreurs, cliquez sur **avertissements** puis cliquez sur le **Description** en-tête de colonne pour trier les avertissements dans l’ordre alphanumérique.  
   
-     Dans une application réelle, vous serez corriger toute violation de règle à ce stade, ou si vous le souhaitez désactiver ou supprimer une règle si vous avez déterminé qu’il n’a pas impératif de les corriger. Pour plus d’informations, consultez [supprimer les avertissements par à l’aide de l’attribut SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+     Dans une application réelle, vous serez corriger toute violation de règle à ce stade, ou si vous le souhaitez désactiver ou supprimer une règle si vous avez déterminé qu’il n’a pas impératif de les corriger. Pour plus d’informations, consultez [supprimer les avertissements](../code-quality/in-source-suppression-overview.md).
   
 3.  Notez que les avertissements CA1704. Les violations de cette règle indiquent que « pensez en fournissant un nom plus significatif pour les paramètres. » Vous pouvez corriger le problème dans votre code, ou vous pouvez désactiver la règle, comme expliqué dans la procédure suivante.  
   
