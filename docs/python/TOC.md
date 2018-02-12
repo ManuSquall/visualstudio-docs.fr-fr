@@ -1,6 +1,6 @@
 # [Vue d’ensemble](overview-of-python-tools-for-visual-studio.md)
 # [Installation](installing-python-support-in-visual-studio.md)
-# Guides de démarrage rapide
+# Démarrages rapides
 ## [Créer un projet à partir d’un code existant](quickstart-01-project-from-existing.md)
 ## [Créer un projet à partir d’un modèle](quickstart-02-python-in-visual-studio-project-from-template.md)
 ## [Créer un projet à partir d’un référentiel](quickstart-03-python-in-visual-studio-project-from-repository.md)
@@ -25,6 +25,7 @@
 ### [Mise en forme du code](formatting-python-code.md)
 ### [Refactorisation du code](refactoring-python-code.md)
 ### [Utilisation de PyLint](linting-python-code.md)
+## [Définition de commandes de menu personnalisées](defining-custom-python-project-commands.md)
 ## [Interactive Python (REPL)](python-interactive-repl-in-visual-studio.md)
 ### [Utilisation d’IPython REPL](interactive-repl-ipython.md)
 ## [Débogage](debugging-python-in-visual-studio.md)
