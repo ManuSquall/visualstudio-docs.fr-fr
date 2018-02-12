@@ -1,10 +1,9 @@
 ---
-title: Conventions de nommage .NET pour EditorConfig | Microsoft Docs
+title: Conventions de nommage .NET pour les fichiers EditorConfig | Microsoft Docs
 ms.custom: 
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -12,17 +11,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d6df33919220852642bac195d47752ec88e467ee
-ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
+ms.openlocfilehash: 6b6eac818512b6681307e059131992a9ac0f4534
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="naming-conventions-for-editorconfig"></a>Conventions de nommage pour EditorConfig
+# <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
 Les conventions de nommage concernent le nommage d’éléments de code tels que les classes, les propriétés et les méthodes. Par exemple, vous pouvez spécifier que les membres publics doivent être en majuscules ou que les méthodes asynchrones doivent se terminer par "Async". Vous pouvez appliquer ces règles en les spécifiant dans un [fichier .editorconfig](../ide/create-portable-custom-editor-options.md). Les violations des règles de nommage s’affichent soit dans la liste d’erreurs, soit sous forme de suggestion sous le nom, selon la gravité choisie pour vos règles. Il n’est pas nécessaire de générer le projet pour afficher les violations.
 

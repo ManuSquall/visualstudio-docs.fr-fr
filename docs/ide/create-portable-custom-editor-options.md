@@ -6,22 +6,26 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: editorconfig [Visual Studio]
+helpviewer_keywords:
+- editorconfig [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 516bd2de626fa7a5ffcbf4234c849e81860b9e08
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.openlocfilehash: 65eafeab083b85fb7e872adabf97f5497cc62291
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig
 
 Dans Visual Studio 2017, vous pouvez ajouter un fichier [EditorConfig](http://editorconfig.org/) à votre projet ou code base pour appliquer des styles de codage cohérents pour tous les utilisateurs qui travaillent dans le code base. Les paramètres EditorConfig sont prioritaires par rapport aux paramètres globaux de l’éditeur de texte Visual Studio. Vous pouvez donc personnaliser chaque base de code pour utiliser des paramètres de l’éditeur de texte qui sont propres au projet. Vous pouvez toujours définir vos propres préférences d’éditeur personnelles dans la boîte de dialogue **Options** de Visual Studio. Ces paramètres s’appliquent à chaque fois que vous travaillez dans un code base sans fichier .editorconfig, ou quand le fichier .editorconfig ne remplace pas un paramètre particulier. Le style de mise en retrait (tabulations ou espaces) constitue un exemple de préférence de ce type.
 
 Les paramètres EditorConfig sont pris en charge par de nombreux éditeurs de code et IDE, notamment Visual Studio. C’est un composant portable qui accompagne votre code et peut appliquer des styles de codage même en dehors de Visual Studio.
+
+> [!NOTE]
+> Quand vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, la mise en forme du code existant n’est pas modifiée, sauf si vous mettez en forme le document (**Modifier** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D**). Toutefois, les nouvelles lignes de code sont mises en forme selon les paramètres EditorConfig.
 
 ## <a name="coding-consistency"></a>Cohérence du codage
 
@@ -48,7 +52,7 @@ Les paramètres de l’éditeur EditorConfig sont pris en charge dans tous les l
 
 ## <a name="adding-and-removing-editorconfig-files"></a>Ajout et suppression de fichiers EditorConfig
 
-L’ajout d’un fichier EditorConfig à votre projet ou code base ne convertit pas les styles existants en nouveaux styles. Par exemple, si votre fichier contient des mises en retrait avec des tabulations, et que vous ajoutez un fichier EditorConfig qui crée des mises en retrait avec des espaces, les tabulations de mise en retrait ne sont pas converties en espaces. Toutefois, les nouvelles lignes de code seront mises en forme selon les paramètres du fichier EditorConfig.
+L’ajout d’un fichier EditorConfig à votre projet ou code base ne convertit pas les styles existants en nouveaux styles. Par exemple, si votre fichier contient des mises en retrait avec des tabulations, et que vous ajoutiez un fichier EditorConfig qui crée des mises en retrait avec des espaces, les tabulations de mise en retrait ne sont pas automatiquement converties en espaces. Toutefois, les nouvelles lignes de code sont mises en forme selon le fichier EditorConfig. Par ailleurs, si vous mettez en forme le document (**Modifier** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D**), les paramètres contenus dans le fichier EditorConfig sont appliqués aux lignes de code existantes.
 
 Si vous supprimez un fichier EditorConfig de votre projet ou base de code, vous devez fermer tous les fichiers de code ouverts et les rouvrir pour réappliquer les paramètres généraux de l’éditeur aux nouvelles lignes de code.
 
@@ -68,16 +72,16 @@ Si vous supprimez un fichier EditorConfig de votre projet ou base de code, vous 
 
 1. Modifiez le fichier comme vous le souhaitez, par exemple :
 
-```EditorConfig
-root = true
+   ```EditorConfig
+   root = true
 
-[*.{cs,vb}]
-indent_size = 4
-trim_trailing_whitespace = true
+   [*.{cs,vb}]
+   indent_size = 4
+   trim_trailing_whitespace = true
 
-[*.cs]
-csharp_new_line_before_open_brace = methods
-```
+   [*.cs]
+   csharp_new_line_before_open_brace = methods
+   ```
 
 Vous pouvez également installer l’[extension du service de langage EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig). Après avoir installé cette extension, choisissez simplement **Ajouter** > **Fichier .editorconfig** en cliquant avec le bouton droit pour afficher un menu contextuel sur le nœud de la solution, le nœud du projet ou n’importe quel dossier de l’Explorateur de solutions.
 
@@ -91,7 +95,7 @@ Pour remplacer tout ou partie des paramètres EditorConfig, ajoutez un fichier .
 
 ![Hiérarchie d’EditorConfig](../ide/media/vside_editorconfig_hierarchy.png)
 
-Si vous voulez simplement remplacer une partie des paramètres, spécifiez ces paramètres dans le fichier .editorconfig. Seules les propriétés que vous répertoriez explicitement dans le fichier de niveau inférieur sont alors remplacées. Les autres paramètres des fichiers .editorconfig de niveau supérieur continuent à s’appliquer. Pour être sûr qu’_aucun_ paramètre inclus dans _tous les_ fichiers .editorconfig de niveau supérieur n’est appliqué à cette partie du code base, ajoutez la propriété ```root=true``` au fichier .editorconfig de niveau inférieur :
+Si vous voulez remplacer une partie des paramètres, spécifiez simplement ces paramètres dans le fichier .editorconfig. Seules les propriétés que vous répertoriez explicitement dans le fichier de niveau inférieur sont alors remplacées. Les autres paramètres des fichiers .editorconfig de niveau supérieur continuent à s’appliquer. Pour être sûr qu’_aucun_ paramètre inclus dans _tous les_ fichiers .editorconfig de niveau supérieur n’est appliqué à cette partie du code base, ajoutez la propriété ```root=true``` au fichier .editorconfig de niveau inférieur :
 
 ```EditorConfig
 # top-most EditorConfig file
@@ -122,7 +126,7 @@ Comme prévu, un appui sur la touche **Tab** sur la ligne suivante met en retrai
 
 ![Code avant l’utilisation d’EditorConfig](../ide/media/vside_editorconfig_before.png)
 
-Nous allons ajouter un nouveau fichier appelé .editorconfig dans le projet, avec le contenu suivant. Le paramètre `[*.cs]` signifie que cette modification s’applique uniquement aux fichiers de code C# dans le projet.
+Ajoutez un nouveau fichier appelé .editorconfig au projet, avec le contenu suivant. Le paramètre `[*.cs]` signifie que cette modification s’applique uniquement aux fichiers de code C# dans le projet.
 
 ```EditorConfig
 # Top-most EditorConfig file
@@ -143,7 +147,7 @@ Si un fichier EditorConfig se trouve n’importe où dans la structure de réper
 
    **« Les préférences utilisateur de ce type de fichier sont remplacées par les conventions de codage de ce projet. »**
 
-Cela signifie que si des paramètres de l’éditeur dans **Outils**, **Options**, **Éditeur de texte** (tels que la taille et le style de mise en retrait, la taille des tabulations ou les conventions de codage) sont définis dans un fichier EditorConfig au niveau ou à un niveau au-dessus du projet dans la structure de répertoires, les conventions définies dans le fichier EditorConfig remplacent les paramètres définis dans Options. Vous pouvez contrôler ce comportement en activant ou en désactivant l’option **Suivre les conventions de codage du projet** dans **Outils**, **Options**, **Éditeur de texte**. Si vous décochez cette option, vous désactivez la prise en charge d’EditorConfig pour Visual Studio.
+Cela signifie que si des paramètres de l’éditeur dans **Outils** > **Options** > **Éditeur de texte** (tels que la taille et le style de mise en retrait, la taille des tabulations ou les conventions de codage) sont définis dans un fichier EditorConfig au niveau ou à un niveau au-dessus du projet dans la structure de répertoires, les conventions définies dans le fichier EditorConfig remplacent les paramètres définis dans Options. Vous pouvez contrôler ce comportement en activant ou en désactivant l’option **Suivre les conventions de codage du projet** dans **Outils** > **Options** > **Éditeur de texte**. Si vous décochez cette option, vous désactivez la prise en charge d’EditorConfig pour Visual Studio.
 
 ![Outils Options, Suivre les conventions de codage du projet](media/coding_conventions_option.png)
 
@@ -158,6 +162,7 @@ Vous pouvez contrôler la portée de vos conventions EditorConfig en définissan
 ## <a name="see-also"></a>Voir aussi
 
 [Conventions de style du code .NET](../ide/editorconfig-code-style-settings-reference.md)  
+[Conventions de nommage .NET](../ide/editorconfig-naming-conventions.md)  
 [Prise en charge d’EditorConfig pour un service de langage](../extensibility/supporting-editorconfig.md)  
 [EditorConfig.org](http://editorconfig.org/)  
 [Écrire du code dans l’éditeur de code](writing-code-in-the-code-and-text-editor.md)

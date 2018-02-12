@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a3f788b114b4250819c4867136cb1b888c816cf8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 552d256b315d6506911ae4cf8724b33173cd39a4
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Installation de la prise en charge de Python dans Visual Studio sur Windows
 
@@ -31,12 +31,12 @@ Pour installer la prise en charge de Python pour Visual Studio (également appe
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 et versions antérieures](#visual-studio-2013-and-earlier)
 
-Pour Visual Studio 2015 et antérieur, vous devez aussi installer séparément un interpréteur Python de votre choix (Python 3.5 et antérieur ; la version 3.6 n’est pas prise en charge et génère le message « Python version 3.6 n’est pas pris en charge »). Pour plus d’informations, consultez [Environnements Python](managing-python-environments-in-visual-studio.md). La même page contient également des instructions pour l’ajout d’un interpréteur Python existant à Visual Studio 2017.
+Pour Visual Studio 2015 et versions antérieures, vous devez aussi installer séparément un interpréteur Python de votre choix (Python 3.5 et versions antérieures. La version 3.6 n’est pas prise en charge et génère le message « Python version 3.6 n’est pas pris en charge »). Pour plus d’informations, consultez [Environnements Python](managing-python-environments-in-visual-studio.md). La même page contient également des instructions pour l’ajout d’un interpréteur Python existant à Visual Studio 2017.
 
 Pour tester rapidement la prise en charge de Python après avoir suivi la procédure d’installation, ouvrez la fenêtre interactive Python en appuyant sur Alt+I et en entrant `2+2`. Si vous n’obtenez pas la sortie `4`, passez en revue la procédure que vous avez suivie.
 
 > [!Tip]
-> La charge de travail Python inclut la précieuse extension Cookiecutter qui fournit une interface utilisateur graphique permettant de découvrir les modèles, d’entrer les options de modèle et de créer des projets et des fichiers. Pour plus d’informations, consultez [Utilisation de l’extension Cookiecutter](cookiecutter.md).
+> La charge de travail Python inclut la précieuse extension Cookiecutter qui fournit une interface utilisateur graphique permettant de découvrir les modèles, d’entrer les options de modèle et de créer des projets et des fichiers. Pour plus d’informations, consultez [Utilisation de l’extension Cookiecutter](using-python-cookiecutter-templates.md).
 
 > [!Note]
 > La prise en charge de Python n’est actuellement pas disponible dans Visual Studio pour Mac, mais elle est disponible sur Mac et Linux via Visual Studio Code. Consultez [Questions et réponses](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
@@ -64,11 +64,11 @@ Pour tester rapidement la prise en charge de Python après avoir suivi la procé
     | Option | Description |
     | --- | --- |
     | Distributions Python | Choisissez n’importe quelle combinaison des variantes 32 bits et 64 bits des distributions Python 2, Python 3, Anaconda2 et Anaconda3 avec lesquelles vous prévoyez de travailler. Chacune comprend l’interpréteur, le runtime et les bibliothèques de la distribution. Anaconda est une plateforme de science des données ouverte qui inclut une large gamme de packages préinstallés. (Vous pouvez revenir au programme d’installation de Visual Studio à tout moment pour ajouter ou supprimer des distributions.) |
-    | Prise en charge des modèles Cookiecutter | Installe l’interface utilisateur graphique Cookiecutter pour découvrir des modèles, entrer des options de modèle et créer des projets et fichiers. Consultez [Utilisation de l’extension Cookiecutter](cookiecutter.md). |
-    | Prise en charge de Python web | Installe des outils pour le développement web incluant la prise en charge de l’édition de code HTML, CSS et JavaScript, ainsi que des modèles pour des projets utilisant les frameworks Bottle, Flask et Django. Consultez [Modèles de projet web Python](template-web.md). |
+    | Prise en charge des modèles Cookiecutter | Installe l’interface utilisateur graphique Cookiecutter pour découvrir des modèles, entrer des options de modèle et créer des projets et fichiers. Consultez [Utilisation de l’extension Cookiecutter](using-python-cookiecutter-templates.md). |
+    | Prise en charge de Python web | Installe des outils pour le développement web incluant la prise en charge de l’édition de code HTML, CSS et JavaScript, ainsi que des modèles pour des projets utilisant les frameworks Bottle, Flask et Django. Consultez [Modèles de projet web Python](python-web-application-project-templates.md). |
     | Prise en charge de Python IoT | Prend en charge le développement Windows IoT Core avec Python. |
     | Outils de développement natifs Python | Installe le compilateur C++ et d’autres composants nécessaires pour développer des extensions natives pour Python. Consultez [Création d’une extension C++ pour Python](working-with-c-cpp-python-in-visual-studio.md). Installez également la charge de travail **Développement bureautique avec C++** pour bénéficier d’une prise en charge complète. |
-    | Outils principaux pour Azure Cloud Services | Fournit une prise en charge supplémentaire pour le développement Azure Cloud Services en Python. Voir [Projets de service cloud Azure](template-azure-cloud-service.md). |
+    | Outils principaux pour Azure Cloud Services | Fournit une prise en charge supplémentaire pour le développement Azure Cloud Services en Python. Voir [Projets de service cloud Azure](python-azure-cloud-service-project-template.md). |
 
 1. Après l’installation, le programme d’installation fournit des options pour modifier, lancer, réparer ou désinstaller Visual Studio. Le bouton **Modifier** se transforme en **Mettre à jour** quand des mises à jour de Visual Studio sont disponibles pour les composants installés. (L’option Modifier est alors disponible sur le menu déroulant.) Vous pouvez également lancer Visual Studio et le programme d’installation à partir du menu Démarrer de Windows en effectuant une recherche sur « Visual Studio ».
 

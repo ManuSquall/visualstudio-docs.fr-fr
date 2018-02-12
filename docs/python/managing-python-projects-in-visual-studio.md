@@ -1,5 +1,5 @@
 ---
-title: Gestion de projets Python dans Visual Studio | Microsoft Docs
+title: Gestion de projets pour les applications Python dans Visual Studio | Microsoft Docs
 description: "Explique l’objectif des projets dans Visual Studio, montre comment créer et gérer des projets pour le code Python, et présente les différents modèles de projet disponibles pour Python."
 ms.custom: 
 ms.date: 01/16/2018
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 90a1c568b5e97afcaa975e1fe77230fa0b65d80d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: c1909a421cc4f80653438b2dd627aef8559005d6
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="python-projects"></a>Projets Python
 
@@ -73,8 +73,8 @@ Le tableau suivant résume les modèles disponibles dans Visual Studio 2017 (to
 | --- | --- |
 | [À partir de code Python existant](#creating-a-project-from-existing-files) | Crée un projet Visual Studio à partir du code Python existant dans une structure de dossiers.  |
 | Python Application (Application Python) | Une structure de projet de base pour une nouvelle application Python avec un fichier source unique et vide. Par défaut, le projet s’exécute dans l’interpréteur de la console de l’environnement global par défaut, que vous pouvez modifier en [attribuant un autre environnement](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project). |
-| [Azure Cloud Service](template-azure-cloud-service.md) (Service cloud Azure) | Un projet pour un service cloud Azure écrit en langage Python. |
-| [Projets Web](template-web.md) | Projets pour les serveurs web basés sur différents frameworks, notamment Bottle, Django, Flask et Flask/Jade. |
+| [Azure Cloud Service](python-azure-cloud-service-project-template.md) (Service cloud Azure) | Un projet pour un service cloud Azure écrit en langage Python. |
+| [Projets Web](python-web-application-project-templates.md) | Projets pour les serveurs web basés sur différents frameworks, notamment Bottle, Django, Flask et Flask/Jade. |
 | IronPython Application (Application IronPython) | Semblable au modèle Python Application (Application Python), mais utilise IronPython par défaut pour l’activation de l’interopérabilité .NET et le débogage en mode mixte avec les langages .NET. |
 | IronPython WPF Application (Application WPF IronPython) | Une structure de projet utilisant IronPython avec les fichiers XAML Windows Presentation Foundation pour l’interface utilisateur de l’application. Visual Studio fournit un concepteur d’interface utilisateur XAML, code-behind peut être écrit en langage Python et l’application s’exécute sans affichage d’une console. |
 | IronPython Silverlight Web Page (Page web Silverlight IronPython) | Un projet IronPython qui s’exécute dans un navigateur à l’aide de Silverlight. Le code Python de l’application est inclus dans la page web en tant que script. Une balise de script réutilisable extrait du code JavaScript qui initialise IronPython s’exécutant dans Silverlight, à partir duquel votre code Python peut interagir avec DOM. |

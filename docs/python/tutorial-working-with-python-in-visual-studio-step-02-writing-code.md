@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4616b8df91ce87b8f886deb9143fa1ff55a976d7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 879b648fa761795efe38e45e1becf0433abf3755
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Étape 2 : Écriture et exécution du code
 
@@ -50,7 +50,7 @@ Si l’Explorateur de solutions soit l’endroit où vous gérez les fichiers de
     ![Coloration syntaxique et mise en évidence des erreurs par IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > L’environnement de développement de quelqu’un étant une affaire très personnelle, Visual Studio vous donne un contrôle complet sur son apparence et son comportement. Sélectionnez la commande de menu **Outils > Options** et explorez les paramètres sous les onglets **Environnement** et **Éditeur de texte**. Par défaut, vous voyez seulement un nombre limité d’options. Pour afficher toutes les options pour chaque langage de programmation, sélectionnez **Afficher tous les paramètres** dans le bas de la boîte de dialogue. 
+    > L’environnement de développement de quelqu’un étant une affaire très personnelle, Visual Studio vous donne un contrôle complet sur son apparence et son comportement. Sélectionnez la commande de menu **Outils > Options** et explorez les paramètres sous les onglets **Environnement** et **Éditeur de texte**. Par défaut, vous voyez seulement un nombre limité d’options. Pour afficher toutes les options pour chaque langage de programmation, sélectionnez **Afficher tous les paramètres** en bas de la boîte de dialogue. 
 
 1. Exécutez le code que vous avez écrit à ce stade en appuyant sur Ctrl+F5 ou en sélectionnant l’élément de menu **Déboguer > Démarrer sans débogage**. Visual Studio vous avertit si votre code contient encore des erreurs.
 
@@ -80,7 +80,7 @@ Si l’Explorateur de solutions soit l’endroit où vous gérez les fichiers de
     ```
 
     > [!Tip]
-    > La saisie semi-automatique fonctionne avec des sous-chaînes au fil de la saisie, en faisant correspondre des parties de mots, des lettres en début de mots et même des caractères ignorés. Pour plus d’informations, consultez la page [Modification du code - Saisie semi-automatique](code-editing.md#completions).
+    > La saisie semi-automatique fonctionne avec des sous-chaînes au fil de la saisie, en faisant correspondre des parties de mots, des lettres en début de mots et même des caractères ignorés. Pour plus d’informations, consultez la page [Modification du code - Saisie semi-automatique](editing-python-code-in-visual-studio.md#completions).
 
 1. Ajoutez un peu plus de code pour afficher les valeurs du cosinus pour 360 degrés :
 
@@ -98,7 +98,7 @@ Si l’Explorateur de solutions soit l’endroit où vous gérez les fichiers de
 
 ## <a name="going-deeper"></a>Pour aller plus loin
 
-- [Modification du code](code-editing.md)
-- [Mise en forme du code](code-formatting.md)
-- [Refactorisation du code](code-refactoring.md)
-- [Utilisation de PyLint](code-pylint.md)
+- [Modification du code](editing-python-code-in-visual-studio.md)
+- [Mise en forme du code](formatting-python-code.md)
+- [Refactorisation du code](refactoring-python-code.md)
+- [Utilisation de PyLint](linting-python-code.md)

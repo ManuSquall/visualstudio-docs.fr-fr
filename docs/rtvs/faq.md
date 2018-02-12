@@ -1,23 +1,26 @@
 ---
 title: FAQ des Outils R pour Visual Studio | Microsoft Docs
+description: Forum Aux Questions (FAQ) sur R dans Visual Studio.
 ms.custom: 
 ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 9fe92fb38d1b03b081cb53fc620f60180daf5b24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: 8abdaa1e156cf2be07f08f6cebcf67031bf91c2f
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="frequently-asked-questions"></a>FAQ
 
@@ -67,7 +70,7 @@ Un fichier . [CRAN R](https://cran.r-project.org/), [Microsoft R Client et Micro
 
 **Q. Où puis-je télécharger ces interpréteurs ?**
 
-Un fichier . Consultez [Installation](installation.md).
+Un fichier . Consultez [Installation](installing-r-tools-for-visual-studio.md).
 
 Q : **Qu’est-ce que Microsoft R Server ?**
 
@@ -89,7 +92,7 @@ Un fichier . Github conserve un dépôt principal des fichiers `.gitignore` reco
 
 Q. **Qu’est-ce que Remote Services dans Visual Studio ?**
 
-Un fichier . Remote R Services pour Visual Studio vous permet de configurer une machine Windows ou Linux, puis de vous y connecter depuis RTVS. Consultez [Configuration des espaces de travail distants](workspaces-remote-setup.md).
+Un fichier . Remote R Services pour Visual Studio vous permet de configurer une machine Windows ou Linux, puis de vous y connecter depuis RTVS. Consultez [Configuration des espaces de travail distants](setting-up-remote-r-workspaces.md).
 
 Q. **RTVS peut-il se connecter à Microsoft R Server ?**
 
@@ -101,7 +104,7 @@ Un fichier . Oui. L’image de [machine virtuelle Science des données - Windows
 
 Q : **RTVS peut-il se connecter à une machine distante où R est installé ?**
 
-Pour exécuter le code R sur une machine distante, il doit exister un service qui écoute les demandes, reçoit le code et renvoie les résultats à la machine cliente. C’est ce que fait Remote R Services pour Visual Studio. Consultez [Configuration des espaces de travail distants](workspaces-remote-setup.md).
+Pour exécuter le code R sur une machine distante, il doit exister un service qui écoute les demandes, reçoit le code et renvoie les résultats à la machine cliente. C’est ce que fait Remote R Services pour Visual Studio. Consultez [Configuration des espaces de travail distants](setting-up-remote-r-workspaces.md).
 
 Q. **Qu’est ce qu’une session à distance ?**
 

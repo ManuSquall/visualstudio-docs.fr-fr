@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9fdb367336d5e5a539f63fefbe97c04524bbdf6a
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostics de Visual Studio pour mieux comprendre l'utilisation du matériel de pointe par votre application Direct3D. Vous pouvez l'utiliser pour déterminer si les performances de votre application sont liées à l'UC ou au GPU, et mieux comprendre comment tirer parti de la plateforme matérielle plus efficacement. L'outil Utilisation du GPU prend en charge les applications Direct3D 12, Direct3D 11 et Direct3D 10. Il ne prend pas en charge les autres API graphiques telles que Direct2D ou OpenGL.  
@@ -118,7 +118,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
 |**ID de thread**|ID de thread d'où provient l'événement.|  
   
 > [!IMPORTANT]
->  Windows 8.1 est obligatoire pour l'attribution d'événement. En outre, si votre GPU ou pilote ne prend pas en charge les fonctionnalités d’instrumentation nécessaires, tous les événements s’affichent comme étant « non attribués ». Veillez à mettre à jour votre GPU/pilote, puis réessayez si vous rencontrez ce problème. Pour plus d’informations, consultez [Prise en charge du matériel et des pilotes](#hwsupport) ci-dessous.  
+>  Si votre GPU ou pilote ne prend pas en charge les fonctionnalités d’instrumentation nécessaires, tous les événements s’affichent comme étant « non attribués ». Veillez à mettre à jour votre GPU/pilote, puis réessayez si vous rencontrez ce problème. Pour plus d’informations, consultez [Prise en charge du matériel et des pilotes](#hwsupport) ci-dessous.  
   
 ## <a name="gpu-usage-settings"></a>Paramètres d'utilisation du GPU  
  Vous pouvez configurer l'outil Utilisation du GPU pour reporter la collecte des informations de profilage, au lieu de commencer à collecter les informations dès le démarrage de l'application. Dans la mesure où la taille des informations de profilage peut être significative, cela s’avère utile de savoir que le ralentissement des performances de votre application ne se reproduira pas avant longtemps.  

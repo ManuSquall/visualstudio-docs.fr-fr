@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -12,23 +13,25 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords: MSBuild, file schema
+helpviewer_keywords:
+- MSBuild, file schema
 ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 96676f23cd4741d084f25d1dad3c288b98bf023c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b4f21f1f70a468bd22876dad04226dba5deb4c50
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Référence du schéma de fichier de projet MSBuild
 Fournit un tableau de tous les éléments de schéma XML [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] avec leurs éléments enfants et attributs disponibles.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utilise des fichiers projet pour indiquer au moteur de génération ce qu’il convient de générer et comment procéder. Les fichiers projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sont des fichiers XML qui respectent le schéma XML [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Cette section documente le fichier de définition de schéma XML (.xsd) pour [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Utilise des fichiers projet pour indiquer au moteur de génération ce qu’il convient de générer et comment procéder. Les fichiers projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sont des fichiers XML qui respectent le schéma XML [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Cette section documente le fichier de définition de schéma XML (.xsd) pour [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
 ## <a name="msbuild-xml-schema-elements"></a>Éléments de schéma XML MSBuild  
  Le tableau suivant répertorie tous les éléments de schéma XML [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], ainsi que leurs éléments enfants et leurs attributs.  
@@ -51,6 +54,7 @@ Fournit un tableau de tous les éléments de schéma XML [!INCLUDE[vstecmsbuild]
 |[ProjectExtensions, élément (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|  
 |[Property, élément (MSBuild)](../msbuild/property-element-msbuild.md)|--|Condition|  
 |[PropertyGroup, élément (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Property*|Condition|  
+|[Sdk, élément (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|Name<br /><br /> Version|  
 |[Target, élément (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Task*|AfterTargets<br /><br /> BeforeTargets<br /><br /> Condition<br /><br /> DependsOnTargets<br /><br /> Inputs (Entrées)<br /><br /> KeepDuplicateOutputs<br /><br /> Name<br /><br /> Sorties<br /><br /> Returns (Retours)|  
 |[Task, élément (MSBuild)](../msbuild/task-element-msbuild.md)|Sortie|Condition<br /><br /> ContinueOnError<br /><br /> *Paramètre*|  
 |[TaskBody, élément (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Données*|Évaluer|  

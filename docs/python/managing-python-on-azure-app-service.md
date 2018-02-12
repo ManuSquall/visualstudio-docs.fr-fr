@@ -1,14 +1,16 @@
 ---
-title: Gestion de Python sur Azure App Service | Microsoft Docs
+title: "Installation d’interpréteurs et de bibliothèques Python sur Azure App Service | Microsoft Docs"
+description: "Guide pratique pour installer un interpréteur et des bibliothèques Python sur Azure App Service, et pour configurer correctement des applications web faisant référence à cet interpréteur."
 ms.custom: 
 ms.date: 09/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -16,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ff8fb49321d12416391edd1463f651ae169b1bee
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Gestion de Python sur Azure App Service
 
@@ -131,7 +133,7 @@ Les `<appSettings>` définis ici sont disponibles pour votre application en tant
 - `WSGI_HANDLER` doit pointer vers une application WSGI importable à partir de votre application.
 - `WSGI_LOG` est facultatif mais recommandé pour le débogage de votre application. 
 
-Consultez [Publication sur Azure](publishing-to-azure.md) pour plus d’informations sur le contenu de `web.config` pour les applications Bottle, Flask et Django.
+Consultez [Publication sur Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) pour plus d’informations sur le contenu de `web.config` pour les applications Bottle, Flask et Django.
 
 ### <a name="configuring-the-httpplatform-handler"></a>Configuration du gestionnaire HttpPlatform
 
@@ -170,7 +172,7 @@ Pour installer des packages directement dans l’environnement du serveur, utili
 | --- | --- |
 | [Console Kudu d’Azure App Service](#azure-app-service-kudu-console) | Installe des packages de façon interactive. Les packages doivent être du Python pur ou doivent publier des wheels. |
 | [API REST Kudu](#kudu-rest-api) | Peut être utilisée pour automatiser l’installation de packages.  Les packages doivent être du Python pur ou doivent publier des wheels. |
-| Regrouper avec une application | Installez des packages directement dans votre projet, puis déployez-les sur App Service comme s’ils faisaient partie de votre application. Selon le nombre de dépendances et la fréquence de leur mise à jour, cette méthode peut représenter le moyen le plus simple de lancer un déploiement de travail. Notez bien que les bibliothèques doivent correspondre exactement à la version de Python sur le serveur, sinon des erreurs incompréhensibles se produisent après le déploiement. Cela dit, comme les versions de Python dans les extensions de site App Service sont exactement les mêmes que celles publiées sur python.org, vous pouvez facilement obtenir une version compatible pour un développement local. |
+| Regrouper avec une application | Installez des packages directement dans votre projet, puis déployez-les sur App Service comme s’ils faisaient partie de votre application. Selon le nombre de dépendances et la fréquence de leur mise à jour, cette méthode peut représenter le moyen le plus simple de lancer un déploiement de travail. Notez que les bibliothèques doivent correspondre exactement à la version de Python sur le serveur. Dans le cas contraire, des erreurs incompréhensibles se produisent après le déploiement. Cela dit, comme les versions de Python dans les extensions de site App Service sont exactement les mêmes que celles publiées sur python.org, vous pouvez facilement obtenir une version compatible pour un développement local. |
 | Environnements virtuels | Non pris en charge. Au lieu de cela, utilisez le regroupement et définissez la variable d’environnement `PYTHONPATH` pour qu’elle pointe vers l’emplacement des packages. |
 
 ### <a name="azure-app-service-kudu-console"></a>Console Kudu d’Azure App Service

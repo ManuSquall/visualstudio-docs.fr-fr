@@ -11,12 +11,13 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.workload: multiple
-ms.openlocfilehash: d3349190fdfca4c0d4520a89b6c862b0a05898ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ec4618e254a84e6ae0c90b96a4e5a1780b234fbd
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Guide pratique pour signaler un problème avec Visual Studio 2017
 Si vous rencontrez un problème avec Visual Studio, nous aimerions en être informés. Voici comment nous signaler le problème pour nous permettre de le diagnostiquer et le corriger.  
@@ -24,8 +25,9 @@ Si vous rencontrez un problème avec Visual Studio, nous aimerions en être info
 ## <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 Si ce n’est pas déjà fait, connectez-vous à Visual Studio avant de signaler un problème. De cette façon, non seulement vous pouvez signaler un problème auquel vous êtes confronté, mais vous pouvez aussi voter ou le commenter. Vous pouvez même ajouter un vote ou un commentaire pour des problèmes ayant été postés par d’autres utilisateurs.
 
-1.  Cliquez sur le bouton **Se connecter** situé sur le côté droit de l’outil, comme indiqué dans la capture d’écran suivante.
-2.  Suivez les instructions à l’écran pour vous connecter.
+1.  Dans Visual Studio, sélectionnez **Aide** > **Envoyer des commentaires** > **Signaler un problème**.
+2.  Si nécessaire, cliquez sur le bouton **Se connecter** situé sur le côté droit de l’outil, comme indiqué dans la capture d’écran suivante.
+3.  Suivez les instructions à l’écran pour vous connecter.
 
  ![Se connecter pour signaler un problème](../ide/media/sign-in-new-ux.png "Se connecter pour signaler un problème")  
 

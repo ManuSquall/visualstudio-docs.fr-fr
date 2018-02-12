@@ -1,27 +1,30 @@
 ---
 title: Explorateur de variables dans les Outils R pour Visual Studio | Microsoft Docs
+description: "L’Explorateur de variables dans Visual Studio affiche toutes les variables dans une portée donnée dans la session R active."
 ms.custom: 
-ms.date: 06/30/2017
+ms.date: 01/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: c75e15def5f9abe98be3f062650c84693716c87e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: 1d766d3ad6a48a46c3f781b8a87e5f388de93e74
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="variable-explorer"></a>Explorateur de variables
 
-La fenêtre **Explorateur de variables**, que vous pouvez ouvrir en cliquant sur **Outils R > Fenêtres > Explorateur de variables** (ou Ctrl+8 si vous avez utilisé **Outils R > Paramètres de science des données**), affiche toutes les variables dans une portée donnée dans la session R active. Par exemple, si vous ouvrez l’Explorateur de variables et que vous entrez les lignes suivantes dans la [Fenêtre interactive](interactive-repl.md) :
+La fenêtre **Explorateur de variables**, que vous pouvez ouvrir en cliquant sur **Outils R > Fenêtres > Explorateur de variables** (ou Ctrl+8 si vous avez utilisé **Outils R > Paramètres de science des données**), affiche toutes les variables dans une portée donnée dans la session R active. Par exemple, si vous ouvrez l’Explorateur de variables et que vous entrez les lignes suivantes dans la [Fenêtre interactive](interactive-repl-for-r-in-visual-studio.md) :
 
 ```R
 x <- 42

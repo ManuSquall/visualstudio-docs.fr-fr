@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6924f4a4b3c2f0b4319af14ab8518bf01eaab912
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 94ee933b80c92f18fcc47cb8cb8940b48bfe7fc7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Étape 4 : Exécution du code dans le débogueur
 
@@ -96,7 +96,7 @@ En plus de ses fonctions de gestion de projets, de son expérience d’édition 
 
 1. Continuez à utiliser Pas à pas détaillé jusqu’à revenir à mi-chemin dans `make_dot_string`. Utilisez ensuite **Pas à pas sortant** et notez que vous revenez alors à la boucle `for`. Avec le Pas à pas sortant, le débogueur exécute le reste de la fonction, puis s’interrompt automatiquement dans le code appelant. Ceci est très utile quand vous avez exécuté pas à pas une partie d’une fonction longue que vous souhaitez déboguer, mais que vous n’avez pas besoin d’en parcourir le reste pas à pas et que vous ne voulez pas définir un point d’arrêt explicite dans le code appelant.
 
-1. Pour continuer l’exécution du programme jusqu’à atteindre le point d’arrêt suivant, utilisez **Continuer** (F5). Étant donné que vous avez défini un point d’arrêt dans la boucle `for`, vous allez vous arrêter sur l’itération suivante.
+1. Pour continuer l’exécution du programme jusqu’à atteindre le point d’arrêt suivant, utilisez **Continuer** (F5). Étant donné que vous avez défini un point d’arrêt dans la boucle `for`, vous vous arrêtez sur l’itération suivante.
 
 1. Parcourir pas à pas des centaines d’itérations d’une boucle peut être fastidieux : Visual Studio vous permet donc d’ajouter une *condition* à un point d’arrêt. Le débogueur interrompt alors le programme au point d’arrêt seulement quand la condition est remplie. Par exemple, vous pouvez utiliser une condition avec le point d’arrêt sur l’instruction `for` pour qu’elle s’interrompe seulement quand la valeur de `i` dépasse 1 600. Pour définir cette condition, cliquez avec le bouton droit sur le point rouge représentant le point d’arrêt et sélectionnez **Conditions...** (Alt+F9,C). Dans la fenêtre contextuelle **Paramètres de point d’arrêt** qui s’affiche, entrez `i > 1600` comme expression et sélectionnez **Fermer**. Appuyez sur F5 pour continuer et notez que le programme exécute de nombreuses itérations avant l’arrêt suivant.
 
@@ -114,5 +114,5 @@ En plus de ses fonctions de gestion de projets, de son expérience d’édition 
 
 ### <a name="going-deeper"></a>Pour aller plus loin
 
-- [Débogage](debugging.md).
+- [Débogage](debugging-python-in-visual-studio.md)
 - [Débogage dans Visual Studio](../debugger/debugger-feature-tour.md) fournit une documentation complète sur les fonctionnalités de débogage de Visual Studio.
