@@ -1,3 +1,5 @@
+---
+---
 # <a name="monitor-with-tensorboard"></a>Surveiller avec TensorBoard
 
 Vous pouvez visualiser la progression de la formation du modèle avec TensorBoard. 

@@ -1,3 +1,5 @@
+---
+---
 # <a name="view-recent-job-performance-and-details"></a>Afficher les détails et les performances des travaux récents
 Une fois que les travaux sont envoyés, vous pouvez en afficher la liste pour voir leur état, leur durée et bien plus encore.
 
