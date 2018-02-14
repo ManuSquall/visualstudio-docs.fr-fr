@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -12,18 +12,20 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords: MSBuild, tasks
+helpviewer_keywords:
+- MSBuild, tasks
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
-caps.latest.revision: "32"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7ae20ab8aead2369ddd3024c84b66003cf958358
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1d3bd0cb011dd99183e3d7318693261e19e01791
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-task-reference"></a>Informations de référence sur les tâches MSBuild
 Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches de la liste suivante sont incluses dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quand [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] est installé, des tâches supplémentaires sont disponibles pour générer des projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Pour plus d’informations, consultez [Tâches Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
