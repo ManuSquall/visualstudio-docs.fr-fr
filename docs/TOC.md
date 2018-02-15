@@ -23,9 +23,8 @@
 ### Installer sur un réseau
 #### [Créer une installation réseau de Visual Studio](install/create-a-network-installation-of-visual-studio.md)
 #### [Mettre à jour une installation réseau de Visual Studio](install/update-a-network-installation-of-visual-studio.md)
-#### [Installation de Visual Studio derrière un pare-feu ou un serveur proxy](install/install-visual-studio-behind-a-firewall-or-proxy-server.md)
-#### [Correction des erreurs d’autorisation de proxy](ide/reference/proxy-authorization-required.md)
-#### [Mise sur liste verte d’URL dans un réseau privé](ide/whitelisting-urls-in-a-private-network.md)
+#### [Installer et utiliser Visual Studio derrière un pare-feu ou un serveur proxy](install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+##### [Résolution des erreurs de réseau lorsque vous installez ou utilisez Visual Studio](install/troubleshooting-network-related-errors-in-visual-studio.md)
 ### Déployer dans une entreprise
 #### [Automatiser l’installation de Visual Studio avec un fichier réponse](install/automated-installation-with-response-file.md)
 #### [Appliquer automatiquement des clés de produit lors du déploiement de Visual Studio](install/automatically-apply-product-keys-when-deploying-visual-studio.md)
@@ -188,6 +187,7 @@
 ### [Développement Office et SharePoint](vsto/office-and-sharepoint-development-in-visual-studio.md)
 ### [Utiliser des fichiers XML et XSLT](xml-tools/xml-tools-in-visual-studio.md)
 ### Autres didacticiels
+#### [Créer une application WPF avec C# ou Visual Basic](ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 #### [Didacticiel 1 : créer une visionneuse d’images (C#)](ide/tutorial-1-create-a-picture-viewer.md)
 ##### [Étape 1 : créer un projet d’application Windows Forms](ide/step-1-create-a-windows-forms-application-project.md)
 ##### [Étape 2 : exécuter votre programme](ide/step-2-run-your-program.md)
