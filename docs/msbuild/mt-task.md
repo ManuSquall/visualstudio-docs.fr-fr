@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,16 +24,17 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: "6"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9a2da1c3012b65f71b63b61d2bc0415dbebd8b9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="mt-task"></a>MT, tâche
 Inclut l’outil Manifeste (mt.exe) de Microsoft dans un wrapper. Pour plus d’informations, consultez « Mt.exe » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
@@ -55,11 +56,11 @@ Inclut l’outil Manifeste (mt.exe) de Microsoft dans un wrapper. Pour plus d’
 |**EnableDPIAwareness**|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, ajoute au manifeste des informations qui marquent l’application comme prenant en charge DPI. Écrire une application avec prise en charge DPI permet d’obtenir une interface utilisateur agréable et cohérente pour différents paramètres d’affichage en haute résolution.<br /><br /> Pour plus d’informations, consultez « High DPI » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**GenerateCatalogFiles**|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, génère des fichiers de définition de catalogue (.cdf).<br /><br /> Pour plus d’informations, consultez l’option **/makecdfs** dans « Mt.exe » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**GenerateCategoryTags**|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, entraîne la génération d’étiquettes de catégorie. Si ce paramètre est `true`, le paramètre de tâche **ManifestFromManagedAssemblyMT** doit également être spécifié.<br /><br /> Pour plus d’informations, consultez l’option **/category** dans « Mt.exe » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
-|**InputResourceManifests**|Paramètre **String** facultatif.<br /><br /> Entre le manifeste à partir d’une ressource de type RT_MANIFEST qui a l’identificateur spécifié. Spécifiez une ressource sous la forme *\<fichier>[***;***[***#***]<resource_id>]*, où le paramètre facultatif `resource_id` paramètre est un nombre non négatif sur 16 bits.<br /><br /> Si aucun `resource_id` n’est spécifié, la valeur par défaut de CREATEPROCESS_MANIFEST_RESOURCE (1) est utilisée.<br /><br /> Pour plus d’informations, consultez l’option **/inputresource** dans « Mt.exe » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
+|**InputResourceManifests**|Paramètre **String** facultatif.<br /><br /> Entre le manifeste à partir d’une ressource de type RT_MANIFEST qui a l’identificateur spécifié. Spécifiez une ressource sous la forme *\<fichier>[***;***[***#***]<resource_id>]*, où le paramètre facultatif `resource_id` est un nombre non négatif sur 16 bits.<br /><br /> Si aucun `resource_id` n’est spécifié, la valeur par défaut de CREATEPROCESS_MANIFEST_RESOURCE (1) est utilisée.<br /><br /> Pour plus d’informations, consultez l’option **/inputresource** dans « Mt.exe » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ManifestFromManagedAssembly**|Paramètre **String** facultatif.<br /><br /> Génère un manifeste à partir de l’assembly managé spécifié.<br /><br /> Pour plus d’informations, consultez l’option **/managedassemblyname** dans « Mt.exe » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ManifestToIgnore**|Paramètre **String** facultatif.<br /><br /> (Non utilisé.)|  
 |**OutputManifestFile**|Paramètre **String** facultatif.<br /><br /> Spécifie le nom du manifeste de sortie. Si ce paramètre est omis et que vous n’utilisez qu’un seul manifeste, ce manifeste est modifié sur place.<br /><br /> Pour plus d’informations, consultez l’option **/out** dans « Mt.exe » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
-|**OutputResourceManifests**|Paramètre **String** facultatif.<br /><br /> Génère le manifeste sur une ressource de type RT_MANIFEST qui a l’identificateur spécifié. La ressource est de la forme *\<fichier>[***;***[***#***]<resource_id>]*, où le paramètre facultatif `resource_id` paramètre est un nombre non négatif sur 16 bits.<br /><br /> Si aucun `resource_id` n’est spécifié, la valeur par défaut de CREATEPROCESS_MANIFEST_RESOURCE (1) est utilisée.<br /><br /> Pour plus d’informations, consultez l’option **/outputresource** dans « Mt.exe » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
+|**OutputResourceManifests**|Paramètre **String** facultatif.<br /><br /> Génère le manifeste sur une ressource de type RT_MANIFEST qui a l’identificateur spécifié. La ressource est de la forme *\<fichier>[***;***[***#***]<resource_id>]*, où le paramètre facultatif `resource_id` est un nombre non négatif sur 16 bits.<br /><br /> Si aucun `resource_id` n’est spécifié, la valeur par défaut de CREATEPROCESS_MANIFEST_RESOURCE (1) est utilisée.<br /><br /> Pour plus d’informations, consultez l’option **/outputresource** dans « Mt.exe » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**RegistrarScriptFile**|Paramètre **String** facultatif.<br /><br /> Spécifie le nom du fichier de script d’inscription (.rgs) à utiliser pour la prise en charge du manifeste COM sans inscription.<br /><br /> Pour plus d’informations, consultez l’option **/rgs** dans « Mt.exe » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ReplacementsFile**|Paramètre **String** facultatif.<br /><br /> Spécifie le fichier qui contient des valeurs pour les chaînes remplaçables du fichier de script d’inscription (.rgs).<br /><br /> Pour plus d’informations, consultez l’option **/replacements** dans « Mt.exe » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ResourceOutputFileName**|Paramètre **String** facultatif.<br /><br /> Spécifie le fichier de ressources de sortie utilisé pour incorporer le manifeste dans la sortie du projet.|  

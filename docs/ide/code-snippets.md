@@ -5,34 +5,45 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
 helpviewer_keywords:
-- code snippets, replacement parameters
-- code snippets, surround with
-- replacement parameters
-- code snippets, expansion
 - surround with
 - code snippets
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+dev_langs:
+- CSharp
+- VB
+- CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 32aded825454ce53193d488c01e3aad70d9032f8
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 514408ff2dbbde12d243a1458c380a2e17b516cc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-snippets"></a>Extraits de code
 
-Les extraits de code sont de petits blocs de code réutilisables que vous pouvez insérer dans un fichier de code à l'aide d'une commande de menu contextuel ou une combinaison de touches d'accès rapide. Ils contiennent généralement des blocs de code fréquemment utilisés tels que les blocs try-finally ou if-else, mais ils permettent d'insérer des classes ou des méthodes entières.
+Les extraits de code sont de petits blocs de code réutilisables que vous pouvez insérer dans un fichier de code à l'aide d'une commande de menu contextuel ou une combinaison de touches d'accès rapide. Ils contiennent généralement des blocs de code fréquemment utilisés, tels que les blocs `try-finally` ou `if-else`, mais ils permettent d’insérer des classes ou des méthodes entières.
 
-## <a name="expansion-snippets-and-surround-with-snippets"></a>Extraits de code d'extension et extraits de code d'encerclement
+Les extraits de code sont disponibles dans de nombreux langages : C#, C++, Visual Basic, XML, T-SQL, etc. Pour afficher tous les extraits installés disponibles pour un langage, ouvrez le **Gestionnaire des extraits de code** à partir du menu **Outils** dans Visual Studio, puis choisissez le langage dans le menu déroulant situé dans la partie supérieure.
+
+![Boîte de dialogue Gestionnaire des extraits de code](media/code-snippets-manager.png)
+
+Pour accéder aux extraits de code, plusieurs méthodes générales s’offrent à vous :
+
+- Dans la barre de menus, choisissez **Edition** > **IntelliSense** > **Insérer un extrait...**
+
+- Dans le menu contextuel (clic droit) de l’éditeur de code, choisissez **Extrait** > **Insérer un extrait...**
+
+- Si vous préférez utiliser le clavier, appuyez sur **Ctrl**+**K**+**X**.
+
+## <a name="expansion-snippets-and-surround-with-snippets"></a>Extraits d’expansion et extraits Entourer de
 
 Dans Visual Studio, il existe deux types d'extrait de code : les extraits d'extension, qui sont ajoutés à un point d'insertion spécifié et qui peuvent remplacer un raccourci d'extrait de code, et les extraits de code d'encerclement (C# et C++ uniquement), qui sont ajoutés autour d'un bloc de code sélectionné.
 
@@ -49,9 +60,9 @@ finally
 }
 ```
 
-Pour insérer cet extrait, cliquez sur **Insérer un extrait** dans le menu contextuel de la fenêtre de code, puis sur **Visual C#**. Ensuite, tapez `tryf` et appuyez sur la touche **Tab**, ou tapez `tryf` et appuyez deux fois sur la touche **Tab**.
+Pour insérer cet extrait, cliquez sur **Insérer un extrait** dans le menu contextuel de la fenêtre de code, cliquez sur **Visual C#**, tapez `tryf`, puis appuyez sur **Tab**. Vous pouvez aussi taper `tryf` et appuyer deux fois sur **Tab**.
 
-Exemple d'extrait de code d'encerclement : en C++, le raccourci `if` peut être utilisé comme un extrait d'insertion ou comme un extrait de code d'encerclement. Si vous sélectionnez une ligne de code (par exemple `return FALSE;`), et que vous cliquez ensuite sur **Entourer de**, puis sur **if**, l’extrait est développé autour de la ligne :
+Exemple d'extrait de code d'encerclement : en C++, le raccourci `if` peut être utilisé comme un extrait d'insertion ou comme un extrait de code d'encerclement. Si vous sélectionnez une ligne de code (par exemple, `return FALSE;`), et que vous choisissez ensuite **Entourer de** > **if**, l’extrait est développé autour de la ligne :
 
 ```cpp
 if (true)
@@ -60,11 +71,15 @@ if (true)
 }
 ```
 
-## <a name="snippet-replacement-parameters"></a>Paramètres de remplacement d'extrait de code
+## <a name="snippet-replacement-parameters"></a>Paramètres de remplacement d’extrait de code
 
 Les extraits de code peuvent contenir des paramètres de remplacement, qui sont des espaces réservés que vous devez remplacer en fonction du code précis que vous écrivez. Dans l'exemple précédent, `true` est un paramètre de remplacement, que vous pouvez remplacer par la condition appropriée. Cette condition que vous apportez est répétée pour chaque instance du même paramètre de remplacement dans l'extrait de code.
 
-Par exemple, en Visual Basic, un extrait de code insère une propriété. Cliquez sur **Insérer un extrait** dans le menu contextuel de la fenêtre de code, puis sur **Modèles de code**, sur **Propriétés, procédures, événements**, et enfin sur Définir une propriété. Le code suivant est inséré :
+Par exemple, en Visual Basic, un extrait de code insère une propriété. Pour insérer l’extrait de code, choisissez **Extrait de code...** > **Insérer un extrait** à partir du menu contextuel (clic droit) d’un fichier de code Visual Basic. Ensuite, choisissez **Modèles de code** > **Propriétés, procédures, événements** > **Définir une propriété**.
+
+![Menu Extrait de code pour Définir une propriété](media/code-snippets-vb-property.png)
+
+Le code suivant est inséré :
 
 ```vb
 Private newPropertyValue As String
@@ -80,18 +95,12 @@ End Property
 
 Si vous remplacez `newPropertyValue` par `m_property`, chaque instance de `newPropertyValue` est modifiée. Si vous remplacez `String` par `Int` dans la déclaration de propriété, la valeur de la méthode set est également remplacée par `Int`.
 
-## <a name="code-snippet-manager"></a>Gestionnaire des extraits de code
-
-Vous pouvez voir tous les extraits de code qui sont actuellement installés, ainsi que leurs emplacements sur le disque, en choisissant **Outils**, **Gestionnaire des extraits de code**. Les extraits de code sont affichés par langage.
-
-Vous pouvez ajouter et supprimer des répertoires d’extraits de code à l’aide des boutons **Ajouter** et **Supprimer** dans la boîte de dialogue **Gestionnaire des extraits de code**. Pour ajouter des extraits de code individuels, utilisez le bouton **Importer**.
-
 ## <a name="see-also"></a>Voir aussi
 
-[Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)  
+[Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)  
 [Guide pratique pour distribuer des extraits de code](../ide/how-to-distribute-code-snippets.md)  
 [Bonnes pratiques pour l’utilisation des extraits de code](../ide/best-practices-for-using-code-snippets.md)  
 [Dépannage des extraits](../ide/troubleshooting-snippets.md)  
 [Extraits de code C#](../ide/visual-csharp-code-snippets.md)  
-[Extraits de code Visual C++](../ide/visual-cpp-code-snippets.md)  
+[Extraits de code Visual C++](../ide/visual-cpp-code-snippets.md)  
 [Référence de schéma des extraits de code](../ide/code-snippets-schema-reference.md)

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: db1e944f3ce12369b096c75a7fc12648a2d7e91d
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: a834f9781ff51779b2216bd7de9dd3e449c9360a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 pour développeurs .NET
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 01/23/2018
 [Documentation : Utilisation d’IntelliSense](using-intellisense.md)  
 [Documentation : Fonctionnalités de l’Éditeur Intelligent](writing-code-in-the-code-and-text-editor.md)
 
-Visual Studio propose une compréhension approfondie de votre code via le compilateur Roslyn, qui fournit des fonctionnalités d’édition intelligentes, telles que la coloration syntaxique, la complétion de code, la vérification des variables mal orthographiées, la résolution des types non importés, le mode Plan, les visualiseurs de structure, [CodeLens](find-code-changes-and-other-history-with-codelens.md), la hiérarchie des appels, les info-bulles Info express, l’aide sur les paramètres, ainsi que les outils de refactorisation, l’application des actions rapides et la génération de code.
+Visual Studio propose une compréhension approfondie de votre code par le biais du compilateur .NET (« Roslyn »), qui fournit des fonctionnalités d’édition intelligentes, telles que la coloration syntaxique, la complétion de code, la vérification des variables mal orthographiées, la résolution des types non importés, le mode Plan, les visualiseurs de structure, [CodeLens](find-code-changes-and-other-history-with-codelens.md), la hiérarchie des appels, les info-bulles Info express, l’aide sur les paramètres, ainsi que des outils de refactorisation, d’application d’actions rapides et de génération de code.
 
 ![Éditeur de code intelligent Visual Studio](../ide/media/VSIDE_Productivity_SmartCodeEditor.png "VSIDE_Productivity_SmartCodeEditor")
 

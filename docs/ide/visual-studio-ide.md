@@ -6,15 +6,18 @@ ms.reviewer:
 ms.suite: 
 ms.topic: article
 author: gewarren
+f1_keywords:
+- vs.startpage
+- VS.StartPage.HowDoI
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bde32fc86610fa451aa01659401362fe4207f5c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 242de63001f7df364dacbef3f3b57446ba1e724f
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Vue d’ensemble de l’IDE de Visual Studio
 
@@ -263,7 +266,7 @@ L’**Explorateur d’objets SQL Server** de Visual Studio offre une vue des obj
 
 Si Visual Studio ne dispose pas de la fonctionnalité exacte dont vous avez besoin, vous pouvez l’ajouter ! Vous pouvez personnaliser l’IDE en fonction de votre flux de travail et du style, ajouter la prise en charge des outils externes non intégrés à Visual Studio et modifier des fonctionnalités existantes pour accroître votre productivité. Pour obtenir la dernière version des outils d’extensibilité de Visual Studio (Visual Studio SDK), consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-Vous pouvez écrire vos propres analyseurs et générateurs de code à l’aide de la plateforme de compilateurs .NET (Roslyn). Trouvez tout ce dont vous avez besoin sur [Roslyn](https://github.com/dotnet/Roslyn).
+Vous pouvez utiliser « Roslyn » (.NET Compiler Platform) pour écrire vos propres analyseurs et générateurs de code. Trouvez tout ce dont vous avez besoin sur [Roslyn](https://github.com/dotnet/Roslyn).
 
 Découvrez les [extensions existantes](https://marketplace.visualstudio.com/vs) pour Visual Studio créées par des développeurs Microsoft et notre communauté de développement.
 

@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 40f901c65872fe593457883c36f0d60bf7e2fd8a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="python-environments"></a>Environnements Python
 
@@ -70,13 +70,13 @@ Pour les développeurs qui souhaitent créer de nouvelles formes de détection p
 
 Pour ouvrir la fenêtre Environnements Python, sélectionnez le menu de commande **Affichage > Autres fenêtres > Environnements Python**, ou cliquez avec le bouton droit sur le nœud **Environnements Python** d’un projet dans l’Explorateur de solutions, puis sélectionnez **Afficher tous les environnements Python** :
 
-    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
+![Commande Afficher tous les environnements dans l’Explorateur de solutions](media/environments-view-all.png)
 
 Dans les deux cas, la fenêtre Environnements Python s’affiche en tant qu’onglet frère de l’Explorateur de solutions :
 
 ![Fenêtre Environnements Python](media/environments-default-view.png)
 
-L’exemple ci-dessus indique que Python 3.4 (CPython 32 bits) est installé avec les versions 32 bits et 64 bits d’IronPython 2.7. L’environnement par défaut en gras est Python 3.4, qui est utilisé pour tous les nouveaux projets. Si aucun environnement n’est répertorié, cela signifie que vous avez installé Python Tools pour Visual Studio dans Visual Studio 2015 ou version antérieure, mais que vous n’avez pas installé d’interpréteur Python (consultez la section [Sélection et installation des interpréteurs Python](#selecting-and-installing-python-interpreters) ci-dessus). La commande **+ Personnalisé...** vous permet de [créer un environnement pour un interpréteur existant](#create-an-environment-for-an-existing-interpreter).
+L’exemple ci-dessus indique que Python 3.4 (CPython 32 bits) est installé avec les versions 32 bits et 64 bits d’IronPython 2.7. L’environnement par défaut en gras est Python 3.4, qui est utilisé pour tous les nouveaux projets. Si aucun environnement n’est répertorié, cela signifie que vous avez installé Python Tools pour Visual Studio dans Visual Studio 2015 ou version antérieure, mais que vous n’avez pas installé d’interpréteur Python (consultez la section [Sélection et installation des interpréteurs Python](#selecting-and-installing-python-interpreters) ci-dessus). La commande **+ Personnalisé...** vous permet de [créer un environnement pour un interpréteur existant](#creating-an-environment-for-an-existing-interpreter).
 
 À droite de chaque environnement apparaît un contrôle qui ouvre une fenêtre interactive pour cet environnement. Un autre contrôle peut s’afficher, permettant d’actualiser la base de données IntelliSense pour cet environnement.
 

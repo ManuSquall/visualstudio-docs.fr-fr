@@ -13,12 +13,13 @@ manager: ghogen
 dev_langs:
 - CSharp
 - VB
-ms.workload: multiple
-ms.openlocfilehash: 3fa79518b564ca59b560e98bd32860f6d063077f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: ea7ecb89ed732af828fb4ca26d123d131f6d1918
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="common-quick-actions"></a>Actions rapides courantes
 
@@ -240,7 +241,7 @@ public MyMethod()
 
 ### <a name="remove-type-from-default-value-expression"></a>Supprimer le type de l’expression de valeur **par défaut**
 
-Cette action rapide permet de supprimer le type de valeur d’une expression de valeur par défaut et utilise le [littéral `default`](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) lorsque le compilateur peut déduire le type de l’expression.
+Cette action rapide permet de supprimer le type de valeur d’une expression de valeur par défaut et utilise le [littéral par défaut](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) quand le compilateur peut déduire le type de l’expression.
 
 ```csharp
 // Before

@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
-ms.topic: get-started-article
-caps.latest.revision: 
+ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-working-with-git"></a>Étape 6 : Utilisation de Git
 
@@ -35,7 +35,7 @@ Cette rubrique décrit la création d’un dépôt Git local pour un projet exis
 
   ![Des informations supplémentaires apparaissent quand vous placez le curseur sur un contrôle Git dans la fenêtre Visual Studio](media/working-with-git-01.png)
 
-1. La fenêtre **Team Explorer** s’affiche également avec différentes options Git disponibles en sélectionnant l’en-tête du dépôt. Le volet **Synchronisation** qui est illustré fournit des options pour la publication sur un dépôt distant.
+1. La fenêtre **Team Explorer** s’affiche également avec différentes options Git disponibles en sélectionnant l’en-tête du dépôt. Le volet **Synchroniser**, qui apparaît ainsi quand vous sélectionnez l’en-tête **Push**, fournit des options pour la publication sur un dépôt distant.
 
   ![Team Explorer dans Visual Studio après la création d’un dépôt local](media/working-with-git-02.png)
 
@@ -47,7 +47,7 @@ Cette rubrique décrit la création d’un dépôt Git local pour un projet exis
 
   ![Team Explorer dans Visual Studio affichant des branches](media/working-with-git-04.png)
 
-1. Quand vous utilisez un dépôt local, les modifications validées vont directement dans le dépôt. Si vous êtes connecté à un dépôt distant, sélectionnez **Synchroniser** pour pousser (push) vos validations locales.
+1. Quand vous utilisez un dépôt local, les modifications validées vont directement dans le dépôt. Si vous êtes connecté à un dépôt distant, sélectionnez l’en-tête, choisissez **Synchroniser** pour passer à la section **Synchronisation** et utiliser les commandes présentées.
 
 ## <a name="going-deeper"></a>Pour aller plus loin
 

@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: automated testing, lab management, test lab
+helpviewer_keywords:
+- automated testing, lab management, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 4dae17012ecf66258d65ff3c200a0dbe8e4c9429
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 25f1007458b691b97f0ea852a1bf0e7325d79d8a
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Utiliser Build ou Release Management au lieu de Lab Management pour les tests automatisés
 
@@ -26,7 +28,7 @@ Si vous utilisez Microsoft Test Manager (MTM) et Lab Management pour les tests a
 
 * [Gestion des environnements SCVMM en libre-service](#managescvmm)
 
-Build et Release Management ne prennent pas charge la création en libre-service d’environnements SCVMM isolés du réseau, et il n’est pas prévu de fournir cette prise en charge dans le futur. Il existe cependant quelques [alternatives suggérées](#isolatedenvir).
+* [Création d’environnements isolés du réseau](#isolatedenvir)
 
 <a name="bdtautomation"></a>
 ## <a name="build-deploy-test-automation"></a>Automatisation du cycle générer-déployer-tester
@@ -74,14 +76,15 @@ Le tableau suivant récapitule les activités standard que vous aviez l’habitu
 | Prenez un point de contrôle d’un environnement ou restaurez un environnement à un point de contrôle correct. | Ouvrez l’environnement lab dans la visionneuse d’environnement. Choisissez entre prendre un point de contrôle et restaurer à un point de contrôle antérieur. | Utilisez la console d’administration SCVMM directement pour effectuer ces opérations sur les machines virtuelles. Pour effectuer ces étapes dans le cadre d’une automatisation plus vaste, vous pouvez aussi inclure les tâches du point de contrôle à partir de l’[extension d’intégration de SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) dans le cadre de l’environnement dans une définition de version. |
 
 <a name="isolatedenvir"></a>
-## <a name="self-service-creation-of-network-isolated-environments"></a>Création en libre-service d’un environnement isolé du réseau
+## <a name="creation-of-network-isolated-environments"></a>Création d’environnements isolés du réseau
 
 Un environnement lab isolé du réseau est un groupe de machines virtuelles SCVMM qui peut être cloné en toute sécurité sans provoquer de conflits réseau. Ceci a été effectué dans MTM à l’aide d’une série d’instructions qui ont utilisé un ensemble de cartes réseau pour configurer les machines virtuelles dans un réseau privé, et un autre ensemble de cartes réseau pour configurer les machines virtuelles dans un réseau public.
 
-Avec l’évolution des systèmes de gestion des clouds publics et privés de plus en plus riches, comme [Microsoft Azure](https://azure.microsoft.com/) et [Microsoft Azure Stack](https://azure.microsoft.com/overview/azure-stack/), vous pouvez vous appuyer davantage directement sur les outils de gestion cloud pour des fonctionnalités similaires. Il n’existe aucun moyen équivalent pour atteindre cet objectif dans Build et Release Management.
+Toutefois, vous pouvez utiliser VSTS et TFS, conjointement avec la tâche de génération et de déploiement SCVMM, pour gérer des environnements SCVMM, provisionner des réseaux virtuels isolés et implémenter des scénarios de génération-déploiement-test. Par exemple, vous pouvez utiliser la tâche pour :
 
-Il est conseillé de prendre en compte les alternatives suivantes si vous avez besoin d’isolement réseau :
+* Créer, restaurer et supprimer des points de contrôle
+* Créer des machines virtuelles à l’aide d’un modèle
+* Démarrer et arrêter des machines virtuelles
+* Exécuter des scripts PowerShell personnalisés pour SCVMM
 
-* Une des raisons de l’utilisation de l’isolement réseau a été la facilité de configuration de plusieurs clones. Comme chaque clone est une réplique exacte de l’original, les noms et les paramètres de configuration des ordinateurs sont conservés en l’état, ce qui facilite la configuration de nouveaux environnements. Cependant, ce même avantage provoque des problèmes plus tard dans le cycle de vie (par exemple en production), car la façon dont les applications sont déployées au final n’est pas la même. **Au lieu de cela**, vous pouvez envisager de configurer de nouveaux environnements de la même façon que vous configurez l’environnement de production et d’éviter d’utiliser l’isolement réseau.
-
-* Utilisez une infrastructure de cloud public comme [Microsoft Azure](https://azure.microsoft.com/) pour les tests dont vous avez besoin. Vous pouvez facilement utiliser des [modèles Azure Resource Manager](https://azure.microsoft.com/documentation/templates/) de la [Place de marché Azure](https://azure.microsoft.com/marketplace/) ou des [modèles de démarrage rapide Azure](https://azure.microsoft.com/documentation/templates/) pour configurer des groupes de machines virtuelles qui sont connectées via un réseau privé et qui sont exposées au réseau public seulement via un proxy ou une « jumpbox ».
+Pour plus d’informations, consultez [Créer un environnement isolé du réseau virtuel pour les scénarios de génération-déploiement-test](/vsts/build-release/actions/virtual-networks/create-virtual-network).

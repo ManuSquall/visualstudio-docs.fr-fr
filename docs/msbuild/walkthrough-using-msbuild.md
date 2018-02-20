@@ -4,23 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: MSBuild, tutorial
+helpviewer_keywords:
+- MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-caps.latest.revision: "32"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fa0ec9c483244e15e5cc51cb6bdb743c1f586e7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 00775856e57392355b1908d4849f1bbbd836c5f2
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="walkthrough-using-msbuild"></a>Procédures pas à pas : utilisation de MSBuild
+# <a name="walkthrough-using-msbuild"></a>Procédure pas à pas : utilisation de MSBuild
 MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cette procédure pas à pas vous présente les blocs de construction de MSBuild, et vous indique comment écrire, manipuler et déboguer des projets MSBuild. Vous allez découvrir comment :  
   
 -   créer et manipuler un fichier projet ;  
@@ -60,45 +61,33 @@ MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cett
      Le fichier projet s’affiche dans l’éditeur de code.  
   
 ## <a name="targets-and-tasks"></a>Cibles et tâches  
- Les fichiers projet sont des fichiers XML avec le nœud racine [Projet](../msbuild/project-element-msbuild.md).  
+Les fichiers projet sont des fichiers XML avec le nœud racine [Projet](../msbuild/project-element-msbuild.md).  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<Project ToolsVersion="12.0" DefaultTargets="Build"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- Vous devez spécifier l’espace de noms xmlns dans l’élément Project.  
+Vous devez spécifier l’espace de noms xmlns dans l’élément Project. Si `ToolsVersion` est présent dans un nouveau projet, il doit s’agir de la version « 15.0 ».
   
- Le processus de création d’une application est effectué avec les éléments [Target](../msbuild/target-element-msbuild.md) et [Task](../msbuild/task-element-msbuild.md).  
+Le processus de création d’une application est effectué avec les éléments [Target](../msbuild/target-element-msbuild.md) et [Task](../msbuild/task-element-msbuild.md).  
   
 -   Une tâche est la plus petite unité de travail, en d’autres termes, « l’atome » d’une génération. Les tâches sont des composants exécutables indépendants qui peuvent compter des entrées et des sorties. Pour le moment, aucune tâche n’est référencée ni définie dans le fichier projet. Vous ajoutez des tâches au fichier projet dans les sections ci-dessous. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
   
--   Une cible est une séquence de tâches nommée. Pour l’instant, deux cibles indiquées à la fin du fichier projet sont comprises dans les commentaires HTML : BeforeBuild et AfterBuild.  
+-   Une cible est une séquence de tâches nommée. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).  
   
-    ```xml  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
-  
-     Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).  
-  
- Le nœud Projet possède un attribut DefaultTargets facultatif qui sélectionne la cible par défaut à générer, dans ce cas Build.  
-  
-```xml  
-<Project ToolsVersion="12.0" DefaultTargets="Build" ...  
-```  
-  
- La cible Build n’est pas définie dans le fichier projet. Elle est importée à partir du fichier Microsoft.CSharp.targets à l’aide de l’élément [Import](../msbuild/import-element-msbuild.md).  
+La cible par défaut n’est pas définie dans le fichier projet. Au lieu de cela, elle est spécifiée dans les projets importés. L’élément [Import](../msbuild/import-element-msbuild.md) spécifie les projets importés. Par exemple, dans un projet C#, la cible par défaut est importée à partir du fichier Microsoft.CSharp.targets. 
   
 ```xml  
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />  
 ```  
   
- Les fichiers importés sont insérés dans le fichier projet partout où ils sont référencés.  
+Les fichiers importés sont insérés dans le fichier projet partout où ils sont référencés.  
+
+> [!NOTE]
+> Certains types de projets, tels que .NET Core, utilisent un schéma simplifié avec un attribut `Sdk` à la place de `ToolsVersion`. Ces projets ont des importations implicites et des valeurs d’attribut par défaut différentes.
   
- MSBuild effectue le suivi des cibles d’une génération et garantit que chaque cible est générée une seule fois.  
+MSBuild effectue le suivi des cibles d’une génération et garantit que chaque cible est générée une seule fois.  
   
 ## <a name="adding-a-target-and-a-task"></a>Ajout d’une cible et d’une tâche  
  Ajoutez une cible au fichier projet. Ajoutez une tâche à la cible qui imprime un message.  
@@ -158,9 +147,6 @@ MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cett
   
  En alternant entre l’éditeur de code et la fenêtre Commande, vous pouvez modifier le fichier projet et observer rapidement les résultats.  
   
-> [!NOTE]
->  Si vous exécutez msbuild sans le commutateur de commande /t, msbuild génère la cible fournie par l’attribut DefaultTarget de l’élément Project, dans ce cas « Build ». Cette opération génère l’application Windows Forms BuildApp.exe.  
-  
 ## <a name="build-properties"></a>Propriétés de build  
  Les propriétés de génération sont des paires nom-valeur qui guident la génération. Plusieurs propriétés de génération sont déjà définies en haut du fichier projet :  
   
@@ -178,10 +164,10 @@ MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cett
  Toutes les propriétés sont des éléments enfants des éléments PropertyGroup. Le nom de la propriété est le nom de l’élément enfant, et la valeur de la propriété est l’élément de texte de l’élément enfant. Par exemple :  
   
 ```xml  
-<TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
+<TargetFrameworkVersion>v15.0</TargetFrameworkVersion>  
 ```  
   
- définit la propriété nommée TargetFrameworkVersion, en lui attribuant la valeur de chaîne « v12.0 ».  
+ définit la propriété nommée TargetFrameworkVersion, en lui attribuant la valeur de chaîne « v15.0 ».  
   
  Les propriétés de génération peuvent être redéfinies à tout moment. If  
   
@@ -223,7 +209,7 @@ $(PropertyName)
   
     ```  
     Configuration is Debug  
-    MSBuildToolsPath is C:\Program Files\MSBuild\12.0\bin  
+    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin  
     ```  
   
 > [!NOTE]

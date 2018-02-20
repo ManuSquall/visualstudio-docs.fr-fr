@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -25,16 +25,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), LIB task
 - LIB task (MSBuild (Visual C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-caps.latest.revision: "7"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 20548574a15c1ac7867ff7142033e94328a40ddf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 13b6ceb908e45cf98f32f89605bf48f8e747b7aa
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="lib-task"></a>Tâche LIB
 Encapsule l'outil Gestionnaire de bibliothèques 32 bits de Microsoft, lib.exe. Le gestionnaire de bibliothèques crée et gère une bibliothèque de fichiers objets COFF (Common Object File Format). Il peut également créer des fichiers d'exportation et des bibliothèques d'importation pour référencer des définitions exportées. Pour plus d’informations, consultez [Référence LIB](/cpp/build/reference/lib-reference) et [Exécution de LIB](/cpp/build/reference/running-lib).  
@@ -46,7 +47,7 @@ Encapsule l'outil Gestionnaire de bibliothèques 32 bits de Microsoft, lib.exe.
 |---------------|-----------------|  
 |**AdditionalDependencies**|Paramètre **String[]** facultatif.<br /><br /> Spécifie les éléments supplémentaires à ajouter à la ligne de commande.|  
 |**AdditionalLibraryDirectories**|Paramètre **String[]** facultatif.<br /><br /> Substitue le chemin d’accès de la bibliothèque d’environnement. Spécifiez un nom de répertoire.<br /><br /> Pour plus d’informations, consultez l’article [/LIBPATH (Autre chemin de bibliothèque)](/cpp/build/reference/libpath-additional-libpath).|  
-|**AdditionalOptions**|Paramètre **String** facultatif.<br /><br /> Liste des options lib.exe comme indiqué sur la ligne de commande. Par exemple, **«** */option1 /option2 /option#* ». Utilisez ce paramètre pour spécifier des options lib.exe qui ne sont pas représentées par un autre paramètre de tâche **LIB**.<br /><br /> Pour plus d’informations, consultez [Exécution de LIB](/cpp/build/reference/running-lib).|  
+|**AdditionalOptions**|Paramètre **String** facultatif.<br /><br /> Liste des options lib.exe comme indiqué sur la ligne de commande. Par exemple, **"***/option1 /option2 /option#*". Utilisez ce paramètre pour spécifier des options lib.exe qui ne sont pas représentées par un autre paramètre de tâche **LIB**.<br /><br /> Pour plus d’informations, consultez [Exécution de LIB](/cpp/build/reference/running-lib).|  
 |**DisplayLibrary**|Paramètre **String** facultatif.<br /><br /> Affiche des informations sur la bibliothèque de sortie. Spécifiez un nom de fichier pour rediriger les informations vers un fichier. Spécifiez « CON » ou ne spécifiez rien pour rediriger les informations vers la console.<br /><br /> Ce paramètre correspond à l’option **/LIST** de lib.exe.|  
 |**ErrorReporting**|Paramètre **String** facultatif.<br /><br /> Spécifie comment envoyer des informations d'erreur interne à Microsoft si lib.exe échoue au moment de l'exécution.<br /><br /> Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.<br /><br /> -   **NoErrorReport** - **/ERRORREPORT:NONE**<br />-   **PromptImmediately** - **/ERRORREPORT:PROMPT**<br />-   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**<br />-   **SendErrorReport** - **/ERRORREPORT:SEND**<br /><br /> Pour plus d’informations, consultez l’option de ligne de commande **/ERRORREPORT** dans [Exécution de LIB](/cpp/build/reference/running-lib).|  
 |**ExportNamedFunctions**|Paramètre **String[]** facultatif.<br /><br /> Spécifie une ou plusieurs fonctions à exporter.<br /><br /> Ce paramètre correspond à l’option **/EXPORT:** de lib.exe.|  

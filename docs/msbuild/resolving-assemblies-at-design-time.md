@@ -4,27 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: msbuild
+helpviewer_keywords:
+- msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3db59c3cb9234231a5a5fe4f881857433ab09479
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 10c327995363b2064498f88d9ec1a02a18650970
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Résolution d'assemblys au moment du design
 Quand vous ajoutez une référence à un assembly par l’intermédiaire de l’onglet .NET de la boîte de dialogue Ajouter une référence, la référence pointe vers un assembly de référence intermédiaire, autrement dit un assembly qui contient toutes les informations de type et de signature, mais qui ne contient pas nécessairement de code. L’onglet .NET répertorie les assemblys de référence qui correspondent aux assemblys runtime du .NET Framework. Il répertorie aussi les assemblys de référence qui correspondent aux assemblys runtime dans les dossiers AssemblyFoldersEx inscrits utilisés par des tiers.  
   
 ## <a name="multi-targeting"></a>Multi-ciblage  
- [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] vous permet de cibler des versions du .NET Framework qui s’exécutent sur le Common Language Runtime (CLR) version 2.0 ou version 4. Cela inclut les versions .NET Framework 2.0, 3.0, 3.5, 4, 4.5 et 4.5.1, et les versions Silverlight 1.0, 2.0 et 3.0. Si une nouvelle version du .NET Framework basée sur le CLR version 2.0 ou version 4 est publiée, le Framework peut être installé à l’aide d’un pack de ciblage, et il apparaîtra automatiquement en tant que cible dans Visual Studio.  
+ [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] vous permet de cibler des versions du .NET Framework qui s’exécutent sur le CLR (Common Language Runtime) version 2.0 ou 4. Cela inclut les versions .NET Framework 2.0, 3.0, 3.5, 4, 4.5 et 4.5.1, et les versions Silverlight 1.0, 2.0 et 3.0. Si une nouvelle version du .NET Framework basée sur le CLR version 2.0 ou version 4 est publiée, le Framework peut être installé à l’aide d’un pack de ciblage, et il apparaîtra automatiquement en tant que cible dans Visual Studio.  
   
 ## <a name="how-type-resolution-works"></a>Fonctionnement de la résolution de type  
  Au moment de l’exécution, le CLR résout les types dans l’assembly en recherchant dans le GAC, le répertoire bin et les chemins de détection. Ceci est géré par le chargeur de fusion. Mais comment le chargeur de fusion sait-il ce qu’il doit rechercher ? Cela dépend d’une résolution effectuée au moment du design, quand l’application est générée.  
