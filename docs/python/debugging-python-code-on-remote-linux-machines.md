@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 11e48a67540ff7df665cc044557751be4b1c3be0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Débogage à distance de code Python sur Linux
 
@@ -29,9 +29,9 @@ Visual Studio peut lancer et déboguer des applications Python localement et à 
 
 Lorsque vous utilisez ptvsd, le code Python faisant l’objet du débogage héberge le serveur de débogage auquel Visual Studio peut être attaché. Cet hébergement nécessite une petite modification de votre code pour importer et activer le serveur, et peut exiger des configurations du réseau ou du pare-feu sur l’ordinateur distant pour autoriser les connexions TCP.
 
-Pour une introduction au débogage à distance, visionnez la vidéo [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6 minutes 22 secondes), qui est applicable à Visual Studio 2015 et 2017.
-
-> [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
+|   |   |
+|---|---|
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Pour une introduction au débogage à distance, visionnez la vidéo [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6 minutes 22 secondes), qui est applicable à Visual Studio 2015 et 2017. |
 
 ## <a name="setting-up-a-linux-computer"></a>Configuration d’un ordinateur Linux
 

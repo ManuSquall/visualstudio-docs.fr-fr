@@ -9,11 +9,11 @@ Description: Compare features and benefits of Visual Studio standard and cloud s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 72492331ed44c55da243960049f1e56d2a3e52f8
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="compare-visual-studio-subscription-options"></a>Comparer les options des abonnements Visual Studio
 
@@ -39,10 +39,10 @@ Que vous soyez étudiant, développeur indépendant, une petite équipe ou une e
 
 **Programmes** : en plus des abonnements standard et cloud, Microsoft propose des abonnements dans différents programmes spéciaux.
 
-- [Imagine](https://imagine.microsoft.com/en-us/about) : logiciels et outils de développement professionnels gratuits pour les étudiants. Tout le nécessaire pour créer des jeux, des applications et des sites web.
+- [Imagine](https://imagine.microsoft.com/about) : logiciels et outils de développement professionnels gratuits pour les étudiants. Tout le nécessaire pour créer des jeux, des applications et des sites web.
 - [BizSpark](https://bizspark.microsoft.com/About/Offers) : produits et services gratuits pour des start-ups.  Les membres BizSpark peuvent accéder gratuitement à tous les logiciels de développement et de test Microsoft, notamment Azure, Windows, Visual Studio, Office et SQL Server. 
-- [Microsoft Partner Network (MPN)](https://partner.microsoft.com/en-us) : en fonction de votre niveau dans MPN, vous pouvez recevoir jusqu’à 10 abonnements Enterprise. 
-- [Formateur certifié Microsoft (MCT)](https://www.microsoft.com/en-us/learning/mct-certification.aspx) : Programme tout particulièrement adapté pour fournir un accès exclusif aux ressources qui vous permettent de poursuivre le développement de votre expertise technique et de vos compétences en formation.
+- [Microsoft Partner Network (MPN)](https://partner.microsoft.com/) : en fonction de votre niveau dans MPN, vous pouvez recevoir jusqu’à 10 abonnements Enterprise. 
+- [Formateur certifié Microsoft (MCT)](https://www.microsoft.com/learning/mct-certification.aspx) : Programme tout particulièrement adapté pour fournir un accès exclusif aux ressources qui vous permettent de poursuivre le développement de votre expertise technique et de vos compétences en formation. En ce qui concerne les abonnements Logiciels et services MCT, et les abonnements Logiciels et services pour développeurs MCT, consultez le [site web des formateurs certifiés Microsoft](https://www.microsoft.com/learning/mct-certification.aspx#item-ID0EFAAAAACA) si vous souhaitez obtenir des informations sur les droits d’utilisation de la formation disponibles dans le cadre de votre abonnement. 
 
 ## <a name="visual-studio-licensing"></a>Gestion des licences Visual Studio
 Les abonnements Visual Studio sont fournis avec une licence par utilisateur. Une personne peut utiliser les logiciels pour concevoir, développer, tester ou présenter ses programmes sur autant d’appareils qu’il le souhaite. Un abonnement Visual Studio permet également à l’utilisateur titulaire d’une licence d’évaluer les logiciels et de simuler des environnements clients pour diagnostiquer les problèmes liés à son programme.
@@ -62,4 +62,4 @@ Une licence d’abonnement Visual Studio permet aussi à vos utilisateurs finaux
 
 [Comparer les IDE Visual Studio](https://www.visualstudio.com/vs/compare/)
 
-En ce qui concerne les abonnements Logiciels et services MCT, et les abonnements Logiciels et services pour développeurs MCT, consultez le [site web des formateurs certifiés Microsoft](https://www.microsoft.com/learning/en-us/mct-certification.aspx#item-ID0EFAAAAACA) si vous souhaitez obtenir des informations sur les droits d’utilisation de la formation disponibles dans le cadre de votre abonnement.  
+ 

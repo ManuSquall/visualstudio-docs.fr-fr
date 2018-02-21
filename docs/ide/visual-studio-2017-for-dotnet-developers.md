@@ -11,18 +11,18 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: a834f9781ff51779b2216bd7de9dd3e449c9360a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 pour développeurs .NET
 
 ## <a name="smart-code-editor"></a>Éditeur de code intelligent
 
-[Documentation : Utilisation d’IntelliSense](using-intellisense.md)  
-[Documentation : Fonctionnalités de l’Éditeur Intelligent](writing-code-in-the-code-and-text-editor.md)
+- [Documentation : Utilisation d’IntelliSense](using-intellisense.md)
+- [Documentation : Fonctionnalités de l’Éditeur Intelligent](writing-code-in-the-code-and-text-editor.md)
 
 Visual Studio propose une compréhension approfondie de votre code par le biais du compilateur .NET (« Roslyn »), qui fournit des fonctionnalités d’édition intelligentes, telles que la coloration syntaxique, la complétion de code, la vérification des variables mal orthographiées, la résolution des types non importés, le mode Plan, les visualiseurs de structure, [CodeLens](find-code-changes-and-other-history-with-codelens.md), la hiérarchie des appels, les info-bulles Info express, l’aide sur les paramètres, ainsi que des outils de refactorisation, d’application d’actions rapides et de génération de code.
 
@@ -50,14 +50,14 @@ En outre, utilisez les suggestions de code pour en savoir plus sur les bonnes pr
 
 [Documentation : Tests unitaires dans Visual Studio](../test/improve-code-quality.md)
 
-Exécutez et déboguez vos tests unitaires basés sur les frameworks de test MSTest, NUnit ou XUnit pour les applications qui ciblent .NET Framework, .NET Standard ou .NET Core. Explorez et examinez vos tests dans *l’Explorateur de tests* ou voyez immédiatement l’impact des modifications du code sur vos tests unitaires dans l’éditeur avec *Live Unit Testing* (version Enterprise uniquement). 
+Exécutez et déboguez vos tests unitaires basés sur les frameworks de test MSTest, NUnit ou XUnit pour les applications qui ciblent .NET Framework, .NET Standard ou .NET Core. Explorez et examinez vos tests dans *l’Explorateur de tests* ou voyez immédiatement l’impact des modifications du code sur vos tests unitaires dans l’éditeur avec *Live Unit Testing* (version Enterprise uniquement).
 
 ![Live Unit Testing dans Visual Studio](../ide/media/VSIDE_Productivity_LiveUnitTesting.png "VSIDE_Productivity_LiveUnitTesting")
 
 ## <a name="code-consistency-and-style"></a>Style et cohérence du code
 
-[Documentation : Options d’éditeur personnalisées et portables](create-portable-custom-editor-options.md)  
-[Documentation : Paramètres de style de code EditorConfig pour .NET](editorconfig-code-style-settings-reference.md)
+- [Documentation : Options d’éditeur personnalisées et portables](create-portable-custom-editor-options.md)
+- [Documentation : Paramètres de style de code EditorConfig pour .NET](editorconfig-code-style-settings-reference.md)
 
 Visual Studio permet la configuration de conventions de codage, détecte les violations de style de codage et fournit des correctifs rapides pour résoudre les problèmes de style grâce au raccourci **Ctrl +.** . Configurez et appliquez les conventions de mise en forme, de nommage et de style de code de votre équipe dans un référentiel, pour substituer les valeurs au niveau du projet et du fichier, avec *EditorConfig*.
 
@@ -107,8 +107,6 @@ Le tableau suivant liste les principaux raccourcis Visual Studio. Notez que cert
 | **Maj + F12** | Rechercher toutes les références | Affichez toutes les références de symboles et de littéraux |
 | **Ctrl + .** (également **Alt + Entrée** dans le profil C#) | Actions rapides et refactorisations | Affichez les correctifs de code, les actions de génération de code, les refactorisations et les autres actions rapides qui sont disponibles au niveau de votre curseur ou de votre sélection de code |
 | **Ctrl**+**E**,**V** | Dupliquer la ligne | Duplique la ligne de code où se trouve le curseur (disponible dans **Visual Studio 2017 version 15.6 préversion 2** et ultérieures) |
-| **Ctrl**+**W** | Développer la sélection | Étend la sélection actuelle d’une unité structurelle (disponible dans **Visual Studio 2017 version 15.5**) |
-| **Ctrl**+**Maj**+**W** | Diminuer la sélection | Diminue (réduit) la sélection actuelle d’une unité structurelle (disponible dans **Visual Studio 2017 version 15.5**) |
 | **Ctrl + Q** | Lancement rapide | Effectuez une recherche parmi tous les paramètres Visual Studio |
 | **F5** | Démarrer le débogage | Démarrez le débogage de votre application |
 | **Ctrl + F5** | Exécutez sans déboguer | Exécutez votre application localement sans débogage |
