@@ -1,48 +1,75 @@
-# [Abonnements Visual Studio](index.md)
-# Vue d'ensemble
-## [Comparer les options d’abonnement](compare-subscriptions.md)
-
-# Guides pratiques
-##  Abonnés
-### [Souscrire à un abonnement](buy-vs-subscriptions.md)
-### [Gérer votre abonnement](manage-vs-subscriptions.md)
-### [Utilisation des téléchargements de l'abonné](subscriber-downloads.md)
-### [Utilisation des clés de produit](product-keys.md)
-### Comment activer les avantages
-#### Outils
-##### [IDE Visual Studio](vs-ide-benefit.md) 
-##### [Visual Studio Team Services](vs-vsts.md)
-##### [Microsoft Azure](vs-azure.md) 
-##### [Parasoft](vs-parasoft.md)
-##### [WhiteSource Bolt](vs-whitesource.md)
-##### [Enterprise Mobility + Security ](vs-ems.md)
-##### [Compte de développeur Windows](vs-windows-dev.md)
-##### [Office 365 Développeur](vs-office-dev.md)
-##### [Power BI Pro](vs-pbi.md)
-##### [SmartOffice4TFS + ModernRequirements4TFS](vs-modernreq.md)
-##### [Paiement à l’utilisation de Microsoft Azure](vs-azure-payg.md) 
-#### Éducation
-##### [DataCamp](vs-datacamp.md)
-##### [LinkedIn Learning](vs-linkedin-learning.md)
-##### [Opsgility](vs-opsgility.md)
-##### [Pluralsight](vs-pluralsight.md)
-##### [Formation pour Xamarin University](vs-xamarin.md)
-##### [Microsoft E-Learning](vs-elearn.md)
-##### [Abonnement au magazine MSDN](vs-msdn.md)
-#### Assistance
-##### [Support technique](vs-tech-support.md)
-
-## Administrateurs
-### [Vue d’ensemble de l’administrateur](admin-responsibilities.md)
-### [Accès au portail d’administrateur](access-admin-portal.md)
-### [Utilisation du portail d’administrateur](using-admin-portal.md)
-### [Assigner un abonnement](assign-license.md)
-### [Modifier un abonnement](edit-license.md)
-### [Supprimer un abonnement](delete-license.md)
-### [Rechercher un abonnement](search-license.md)
-### [Gérer les abonnements très demandés](handle-overclaimed-license.md)
-### [Gérer les abonnements arrivés à expiration](handle-expired-license.md)
-
+# [Abonnements Visual Studio](index.md) 
+## Expériences de l’abonné
+### [Utilisation du portail de l’abonné](using-the-subscriber-portal.md)
+#### [Activation des abonnements de détail](activate-store-subscriptions.md)
+#### [Connexion](signing-in.md)
+##### [Connexion avec alias](aliasing.md)
+#### [Gestion de vos abonnements](manage-vs-subscriptions.md)
+### [Téléchargement du logiciel](subscriber-downloads.md)
+#### [Liste des téléchargements de logiciels disponibles](software-download-list.md)
+### [Obtention et gestion des clés de produit](product-keys.md)
+### Visual Studio Dev Essentials
+#### [Jonction de Visual Studio Dev Essentials](join-dev-essentials.md)
+#### [Désengagement de Visual Studio Dev Essentials](leave-vsde.md)
+### [Avantages pour les abonnés](subscriber-benefits.md)
+## Utilisation des avantages pour les abonnés
+### Outils
+#### [IDE Visual Studio](vs-ide-benefit.md) 
+#### [Visual Studio Team Services](vs-vsts.md)
+#### [Crédit Azure](vs-azure.md) 
+#### [Visual Studio App Center](vs-visual-studio-app-center.md)
+#### [Parasoft ](vs-parasoft.md)
+#### [WhiteSource Bolt](vs-whitesource.md)
+#### [Enterprise Mobility et Security](vs-ems.md)
+#### [Compte de développeur Windows](vs-windows-dev.md)
+#### [Abonnement développeur à Office 365](vs-office-dev.md)
+#### [Power BI Pro](vs-pbi.md)
+#### [Requirements4TFS modernes](vs-modernreq.md)
+#### [Paiement à l'utilisation Azure](vs-azure-payg.md)
+### Développement professionnel
+#### [LinkedIn Learning](vs-linkedin-learning.md)
+#### [DataCamp](vs-datacamp.md)
+#### [Opsgility](vs-opsgility.md)
+#### [Pluralsight](vs-pluralsight.md)
+#### [Formation pour Xamarin University](vs-xamarin.md)
+#### [Microsoft E-Learning](vs-elearn.md)
+#### [Abonnement au magazine MSDN](vs-msdn.md)
+### Avantages du support
+#### [Conversation Azure Advisory](vs-azure-advisory-chat.md)
+#### [Communauté Azure](vs-azure-community.md)
+#### [Support technique](vs-tech-support.md)
+#### [Support prioritaire du forum](vs-priority-support.md)
+#### [Support concierge](vs-concierge-chat.md)
+## Gestion des abonnements
+### Vue d'ensemble
+#### [En savoir plus sur la gestion des abonnements](subscription-management-info.md)
+#### [Responsabilités de l’administrateur](admin-responsibilities.md)
+#### [Gestion des administrateurs](managing-admins.md)
+#### [Accès au portail](access-admin-portal.md)
+#### Intégration de votre organisation
+##### [Recherchez votre PCN](find-pcn.md)
+##### [Gestion de plusieurs PCN](multiple-pcns.md)
+##### [Recherchez votre contact principal](find-primary-contact.md)
+##### [Recherchez vos ID d’abonnement](find-subscription-id.md)
+### Utilisation du portail d’administration
+#### [Assigner un abonnement](assign-license.md)
+#### [Renvoyer des messages électroniques d’assignation](resend-assignment-email.md)
+#### [Modifier un abonnement](edit-license.md)
+#### [Supprimer un abonnement](delete-license.md)
+#### [Rechercher un abonnement](search-license.md)
+#### [Surutilisations](handle-overclaimed-license.md)
+#### [Abonnements arrivés à expiration](handle-expired-license.md)
+#### [Abonnés avec connexions par e-mail personnel](personal-email-sign-ins.md)
+## Acquisition d’abonnements Visual Studio
+### [Comparaison des abonnements](compare-subscriptions.md)
+### Achat d’abonnements cloud
+#### [Vue d’ensemble](vscloud-overview.md)
+#### [Premier achat](vscloud-first-purchase.md)
+#### [Renouvellements](vscloud-renewals.md)
+#### [Acheter plus](vscloud-buy-more.md)
+#### [Annuler](vscloud-cancel.md)
 ## Ressources
-### [Conditions d'utilisation](vs-license-terms.md)
-### [Support de l’abonnement](https://www.visualstudio.com/subscriptions/support/)
+### [Termes du contrat de licence Visual Studio](vs-license-terms.md)
+### [Livre blanc accord de licence Visual Studio](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
+### [Comparer les options et les prix des abonnements](https://www.visualstudio.com/vs/pricing)
+### [Comparer les fonctionnalités IDE Visual Studio](https://www.visualstudio.com/vs/compare)
