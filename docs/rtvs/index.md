@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 762b56336fa790d57ffa38510aa319e744b5959c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7e5fd1c6f2e2d33fe3841923f1b25728ad002f6e
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Utilisation de R dans Visual Studio
 
@@ -50,11 +50,11 @@ Suivez ensuite les liens ci-dessous pour en savoir plus sur les fonctionnalités
 | [Explorateur de variables](variable-explorer.md) | Examinez les variables d’une étendue globale ou d’une étendue spécifique à un package, avec la possibilité d’afficher des tableaux que vous pouvez trier et exporter au format CSV. | N/A |
 | [Débogage complet](debugging-r-in-visual-studio.md) | Inclut l’intégration dans la fenêtre interactive. | [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md) |
 
-Voir aussi la [Foire aux questions](faq.md).
+Consultez aussi les [questions fréquentes (FAQ)](faq.md).
 
-La vidéo suivante présente aussi brièvement (5m 48s) les fonctionnalités de R Tools :
-
-> [!VIDEO https://www.youtube.com/embed/RcSDEfMgUvU]
+|   |   |
+|---|---|
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) pour une vue d’ensemble des Outils R pour Visual Studio (12m 36s). Regardez également [d’autres vidéos sur les Outils R](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
 
 ## <a name="send-us-your-feedback"></a>Envoyez-nous vos commentaires !
 
