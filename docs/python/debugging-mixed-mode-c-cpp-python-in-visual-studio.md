@@ -18,17 +18,20 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 150f4b1c7e151e0b5d6f802ae40f4b5cf6943937
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d33e4d15e9d0de5c3aa35354dd1c8840d0ed9bd2
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Débogage conjoint de Python et de C++
 
 La plupart des débogueurs Python standard prend en charge le débogage de code Python uniquement. Toutefois, dans la pratique, Python est utilisé conjointement avec C ou C++ dans les scénarios qui nécessitent de hautes performances ou la possibilité d’appeler les API de plateforme. (Pour la procédure pas à pas, consultez [Création d’une extension C++ pour Python](working-with-c-cpp-python-in-visual-studio.md).)
 
 Visual Studio fournit un débogage en mode mixte intégré et simultané pour Python et C/C++ natif si vous avez sélectionné l’option **Outils de développement natifs Python** pour la charge de travail Développement Python dans le programme d’installation de Visual Studio.
+
+> [!Note]
+> Le débogage en mode mixte n’est pas disponible avec Python Tools pour Visual Studio 1.x dans Visual Studio 2015 et version antérieure.
 
 Les fonctionnalités de débogage en mode mixte sont les suivantes, comme expliqué dans cet article :
 
@@ -40,12 +43,9 @@ Les fonctionnalités de débogage en mode mixte sont les suivantes, comme expliq
 
 ![Débogage en mode mixte](media/mixed-mode-debugging.png)
 
-Pour une vidéo d’introduction à la génération, le test et le débogage de modules C natifs avec Visual Studio, regardez [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 m 9 s). La vidéo s’applique à Visual Studio 2015 et 2017.
-
-> [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
-
-> [!Note]
-> Le débogage en mode mixte n’est pas disponible avec Python Tools pour Visual Studio 1.x.
+|   |   |
+|---|---|
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Pour introduction des modules C natifs de génération, de test et de débogage avec Visual Studio, visionnez la vidéo [Exploration : création des modules natifs](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 min09 s). La vidéo s’applique à Visual Studio 2015 et 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Activer le débogage en mode mixte dans un projet Python
 

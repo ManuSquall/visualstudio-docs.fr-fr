@@ -2,13 +2,12 @@
 title: Gestion des environnements Python dans Visual Studio | Microsoft Docs
 description: "Guide pratique pour utiliser la fenêtre Environnements Python dans Visual Studio afin de gérer des environnements globaux et virtuels, configurer des environnements personnalisés, installer des interpréteurs Python, installer des packages, définir des chemins de recherche et gérer des environnements pour des projets Visual Studio."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/13/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
-dev_langs:
-- python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 author: kraigb
@@ -17,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 40f901c65872fe593457883c36f0d60bf7e2fd8a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6abf950f7af86bf65b14752bd1cd9df4a6e292e5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="python-environments"></a>Environnements Python
 
@@ -50,7 +49,7 @@ Dans Visual Studio, vous pouvez créer un environnement virtuel pour un projet s
 
 ### <a name="selecting-and-installing-python-interpreters"></a>Sélection et installation des interpréteurs Python
 
-Par défaut, l’installation de la charge de travail de développement Python dans Visual Studio 2017 installe également Python 3 (64 bits). Vous pouvez choisir d’installer les versions 32 bits et 64 bits de Python 2, Python 3, Anaconda 2 et Anaconda 3, comme décrit dans la rubrique [Installation](installing-python-support-in-visual-studio.md). Vous pouvez également installer manuellement l’un des interpréteurs répertoriés dans le tableau suivant.
+Par défaut, l’installation de la charge de travail de développement Python dans Visual Studio 2017 installe également Python 3 (64 bits). Vous pouvez choisir d’installer les versions 32 bits et 64 bits de Python 2, Python 3, Anaconda 2 et Anaconda 3, comme décrit dans la rubrique [Installation](installing-python-support-in-visual-studio.md). Vous pouvez également installer manuellement les interpréteurs répertoriés dans le tableau suivant pour que Visual Studio les détecte. (Par exemple, si vous avez installé Anaconda 3 avant d’installer Visual Studio, vous n’avez pas besoin de le réinstaller via le programme d’installation de Visual Studio.)
 
 Pour Visual Studio 2015 et versions antérieures, vous devez installer manuellement un des interpréteurs.
 
@@ -70,13 +69,16 @@ Pour les développeurs qui souhaitent créer de nouvelles formes de détection p
 
 Pour ouvrir la fenêtre Environnements Python, sélectionnez le menu de commande **Affichage > Autres fenêtres > Environnements Python**, ou cliquez avec le bouton droit sur le nœud **Environnements Python** d’un projet dans l’Explorateur de solutions, puis sélectionnez **Afficher tous les environnements Python** :
 
-![Commande Afficher tous les environnements dans l’Explorateur de solutions](media/environments-view-all.png)
+    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
 
 Dans les deux cas, la fenêtre Environnements Python s’affiche en tant qu’onglet frère de l’Explorateur de solutions :
 
 ![Fenêtre Environnements Python](media/environments-default-view.png)
 
-L’exemple ci-dessus indique que Python 3.4 (CPython 32 bits) est installé avec les versions 32 bits et 64 bits d’IronPython 2.7. L’environnement par défaut en gras est Python 3.4, qui est utilisé pour tous les nouveaux projets. Si aucun environnement n’est répertorié, cela signifie que vous avez installé Python Tools pour Visual Studio dans Visual Studio 2015 ou version antérieure, mais que vous n’avez pas installé d’interpréteur Python (consultez la section [Sélection et installation des interpréteurs Python](#selecting-and-installing-python-interpreters) ci-dessus). La commande **+ Personnalisé...** vous permet de [créer un environnement pour un interpréteur existant](#creating-an-environment-for-an-existing-interpreter).
+L’exemple ci-dessus indique que Python 3.4 (CPython 32 bits) est installé avec les versions 32 bits et 64 bits d’IronPython 2.7. L’environnement par défaut en gras est Python 3.4, qui est utilisé pour tous les nouveaux projets. Si aucun environnement n’est répertorié, cela signifie que vous avez installé Python Tools pour Visual Studio dans Visual Studio 2015 ou version antérieure, mais que vous n’avez pas installé d’interpréteur Python (consultez la section [Sélection et installation des interpréteurs Python](#selecting-and-installing-python-interpreters) ci-dessus). La commande **+ Personnalisé...** vous permet de [créer un environnement pour un interpréteur existant](#create-an-environment-for-an-existing-interpreter).
+
+> [!Tip]
+> Visual Studio détecte les mises à jour sur un interpréteur existant, telles que la mise à niveau Python 2.7.11 à 2.7.14 à l’aide de programmes d’installation de python.org. Pendant l’installation, l’ancien environnement disparait de la liste des **environnements Python** avant l’affichage de la mise à jour à sa place.
 
 À droite de chaque environnement apparaît un contrôle qui ouvre une fenêtre interactive pour cet environnement. Un autre contrôle peut s’afficher, permettant d’actualiser la base de données IntelliSense pour cet environnement.
 
@@ -87,9 +89,9 @@ Sous la liste des environnements apparaît une liste déroulante pour les option
 > [!Note]
 > Bien que Visual Studio respecte l’option system-site-packages, il ne fournit pas de moyen permettant de la modifier à partir de Visual Studio.
 
-Pour une présentation vidéo de la gestion des environnements dans Visual Studio, regardez [Gestion des environnements Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Microsoft Virtual Academy, 2 minutes 35 secondes).
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
+|   |   |
+|---|---|
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) sur des environnements Python dans Visual Studio (2 min35s).|
 
 ### <a name="creating-an-environment-for-an-existing-interpreter"></a>Création d’un environnement pour un interpréteur existant
 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 995c3d8512c3df9bf2cc40fe962106a95f9d6268
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e41e4af21a524215550c581b1e29efc2261aaa8f
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Utilisation de la fenêtre interactive Python
 
@@ -40,9 +40,11 @@ Visual Studio propose plusieurs modes REPL Python au choix :
 
 Cette rubrique décrit les modes REPL **Standard** et **Débogage**. Pour plus d’informations sur les modes IPython, consultez [Using the IPython REPL](interactive-repl-ipython.md) (Utilisation de la boucle REPL IPython).
 
-Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment les interactions avec l’éditeur comme Ctrl+Entrée, consultez [Didacticiel - Étape 3 : Utilisation de la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). Pour une présentation vidéo, consultez [Python Interactive Window](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2 minutes 22 secondes ).
+Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment les interactions avec l’éditeur comme Ctrl+Entrée, consultez [Didacticiel - Étape 3 : Utilisation de la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
+|   |   |
+|---|---|
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) sur la fenêtre interactive (2 min22s).|
 
 ## <a name="opening-an-interactive-window"></a>Ouverture d’une fenêtre interactive
 

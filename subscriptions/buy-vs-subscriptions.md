@@ -9,11 +9,11 @@ Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 73d0f1c5016a9ea908d7d280575e297357ba78ba
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 9564af525d0c801e311e42bc9ebe93bb16166147
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-buy-a-subscription"></a>Comment acheter un abonnement
 Il existe deux principaux types d’abonnements Visual Studio, cloud et standard, présentés dans la [page des tarifs de Visual Studio](https://www.visualstudio.com/vs/pricing/).
@@ -26,13 +26,14 @@ Il existe deux principaux types d’abonnements Visual Studio, cloud et standard
 ## <a name="buy-visual-studio-standard-subscriptions"></a>Acheter un abonnement Visual Studio standard
 Vous devez contacter votre revendeur de logiciels pour souscrire un abonnement Visual Studio standard ou visiter le [Microsoft Store](https://www.microsoft.com/store) en ligne.
 
-*   Pour souscrire votre abonnement Azure et acheter sur Visual Studio Marketplace, vous avez besoin d’un [compte Microsoft](https://www.microsoft.com/account) « personnel », ou d’un [compte professionnel ou scolaire](/azure/active-directory/sign-up-organization) si vous achetez pour le compte de votre organisation, qui gère les identités avec Azure Active Directory (Azure AD).
+
+
+### <a name="buy-visual-studio-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio
+
+Pour souscrire votre abonnement Azure et acheter sur Visual Studio Marketplace, vous avez besoin d’un [compte Microsoft](https://www.microsoft.com/account) « personnel », ou d’un [compte professionnel ou scolaire](/azure/active-directory/sign-up-organization) si vous achetez pour le compte de votre organisation, qui gère les identités avec Azure Active Directory (Azure AD).
 
 > [!WARNING]
 > Si vous utilisez un abonnement Azure pour acheter des abonnements cloud Visual Studio, ces frais figureront en tant que suppléments et ne seront pas décomptés de vos crédits de contrat de licence prépayé Azure. Pour en savoir plus sur la facturation Azure, consultez le [FAQ](/vsts/billing/faq-azure-billing).  
-
-### <a name="buy-subscriptions"></a>Acheter des abonnements
-
 
 1.  Connectez-vous à [Visual Studio Marketplace > Abonnements](https://marketplace.visualstudio.com/subscriptions).
 

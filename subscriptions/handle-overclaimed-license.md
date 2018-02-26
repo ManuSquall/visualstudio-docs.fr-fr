@@ -3,21 +3,22 @@ title: "Gérer les licences surutilisées | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 10/3/2017
+Ms.date: 2/13/2018
 Ms.topic: Get-Started-Article
 Description: Learn how administrators can resolve over-claimed subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 1040c38e9c45bc833db4fb04a19d9aee45859e79
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d01474a410e2c2b115e5026da5e4d3e5b6783ad5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="handling-over-claimed-subscriptions"></a>Gestion des abonnements surutilisés
 Les commandes sont parfois modifiées après l’ajout des abonnés. Le risque est que le nombre d’abonnements attribués dépasse le nombre de licences détenues par votre entreprise. Quand cela se produit, l’onglet Abonnés affiche une alerte, accompagnée d’informations détaillées. 
-**Remarque : Les scénarios de surutilisation ne sont pas autorisés dans les programmes Open License.**
+> [!NOTE] 
+> Les scénarios de surutilisation ne sont pas autorisés dans les programmes Open License.
 
 ![Notification de surutilisation d’abonnements](_img\over-claimed\over-claimed-alert.png)
 

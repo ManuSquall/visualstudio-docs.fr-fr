@@ -9,11 +9,11 @@ Description: Find More Information About Subscription Management?
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: ed2b39a7660f7e4307c142b801ba8d43014c4726
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: eca3bbc4c906639e1946776b17537480b816c32f
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="where-can-i-find-more-information-about-subscription-management"></a>Où puis-je obtenir plus d’informations sur la gestion des abonnements ?
 
@@ -21,5 +21,5 @@ Les fonctionnalités de gestion des abonnements sont disponibles aux clients aya
 
 En raison des différents canaux d’achat utilisés, il est important que les administrateurs d’abonnements sachent comment leurs abonnements ont été achetés, de façon à recourir aux autorisations et aux guides de l’utilisateur appropriés. 
 
-L’équipe des abonnements Visual Studio a récemment créé le « [portail d’administration des abonnements](https://www.visualstudio.com/subscriptions-administration/) Visual Studio ».  L’objectif de ce portail est d’aider les administrateurs d’abonnements à rapidement maîtriser les outils et les fonctionnalités à leur disposition pour assigner et gérer les abonnements au sein de leur organisation. 
+L’équipe des abonnements Visual Studio a créé « Le [portail d’administration des abonnements](https://www.visualstudio.com/subscriptions-administration/) Visual Studio ».  L’objectif de ce portail est d’aider les administrateurs d’abonnements à rapidement maîtriser les outils et les fonctionnalités à leur disposition pour assigner et gérer les abonnements au sein de leur organisation. 
 

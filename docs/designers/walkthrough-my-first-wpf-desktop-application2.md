@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 71f0837bbc488518204e8b9336339c2d01c21600
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: c668d454cb4584cbaaa345c0ca00e286526c6aae
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Procédure pas à pas : ma première application de bureau WPF
 
@@ -58,9 +58,9 @@ Dans cette section, vous allez créer l’infrastructure de l’application, c�
   
      **NavigationWindow** ne peut pas contenir d’autres éléments d’interface utilisateur comme une **Grille**.
 
-1. Dans la boîte de dialogue **Propriétés** , développez le nœud de catégorie **Commun** et choisissez la propriété **Titre** , puis entrez `ExpenseIt` et appuyez sur la touche **Entrée** .
+1. Dans la boîte de dialogue **Propriétés** , développez le nœud de catégorie **Common** et choisissez la propriété **Title** , puis entrez `ExpenseIt` et appuyez sur la touche **Entrée** .
   
-     Notez que l’élément **Title** de la fenêtre XAML est remplacé par la nouvelle valeur. Vous pouvez modifier des propriétés XAML dans la fenêtre XAML ou la fenêtre **Propriétés** , les modifications sont synchronisées.
+     Notez que l’attribut **Titre** de la fenêtre XAML est remplacé pour correspondre à la nouvelle valeur. Vous pouvez modifier des propriétés XAML dans la fenêtre XAML ou la fenêtre **Propriétés** , les modifications sont synchronisées.
 
 1. Dans la fenêtre XAML, définissez la valeur de l’élément **Height** sur `375`et la valeur de la propriété **Width** sur `500`.
   
@@ -116,7 +116,7 @@ Dans cette section, vous allez ajouter deux pages et une image à l’applicatio
 
 1. Dans le concepteur, choisissez l’onglet **ExpenseItHome.xaml** s’il n’est pas déjà actif.
 
-1. Choisissez l’élément `<Title>` et remplacez le titre par **ExpenseIt - Home**.
+1. Choisissez l’attribut`Title` et modifiez sa valeur pour **ExpenseIt - Accueil**.
   
      Votre fichier **ExpenseItHome.xaml** doit maintenant ressembler à ceci en C# :  
   
@@ -178,7 +178,7 @@ Dans cette section, vous allez ajouter deux pages et une image à l’applicatio
 
 1. Dans le concepteur, choisissez l’onglet **ExpenseReportPage.xaml** s’il n’est pas déjà actif.
 
-1. Choisissez l’élément `<Title>` et remplacez le titre par **ExpenseIt - View Expense**.
+1. Choisissez l’attribut `Title` et modifiez sa valeur pour **ExpenseIt - Afficher les dépenses**.
   
      Votre fichier ExpenseReportPage.xaml doit maintenant ressembler à ceci en C# :  
   

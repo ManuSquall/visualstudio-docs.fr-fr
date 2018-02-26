@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # Quelles options de publication choisir ?
 
@@ -50,6 +50,8 @@ Un plan App Service s’exécute sur des machines virtuelles hébergées dans le
 - Vous n’avez pas besoin de personnaliser les ordinateurs serveur qui hébergent votre application web.
 
 > Si vous voulez utiliser Azure App Service dans votre centre de données ou sur d’autres ordinateurs locaux, vous pouvez le faire à l’aide d’[Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
+
+Pour plus d’informations sur la publication des applications ASP.NET Core, consultez [Publier une application web ASP.NET Core sur Azure App Service à l’aide de Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## Machines virtuelles Azure
 
@@ -83,7 +85,7 @@ Notez que, si pour une raison quelconque (par exemple, l’accès à l’ordinat
 - Vous avez besoin d’un déploiement de test local uniquement.
 - Vous voulez examiner et éventuellement modifier les fichiers d’application indépendamment avant de les envoyer vers une autre cible de déploiement.
 
-
+Pour plus d’informations sur le déploiement des applications .NET Core, consultez [Déploiement des applications .NET Core avec Visual Studio](/dotnet/core/deploying/deploy-with-vs).
 
 ## Cibles personnalisées
 
@@ -103,3 +105,5 @@ Vous pouvez créer autant de profils de déploiement personnalisés dans Visual 
 - Vous utilisez des services cloud sur un autre fournisseur qu’Azure accessible via des URL.
 - Vous voulez effectuer le déploiement à l’aide d’autres informations d’identification que celles que vous utilisez dans Visual Studio ou que celles directement liées à vos comptes Azure.
 - Vous voulez supprimer les fichiers de la cible à chaque déploiement.
+
+Pour plus d’informations sur la publication sur IIS, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) et [Débogage distant de ASP.NET sur un ordinateur IIS distant](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).

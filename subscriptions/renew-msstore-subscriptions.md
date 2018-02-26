@@ -9,11 +9,11 @@ Description: Learn how to renew your Visual Studio subscriptions acquired throug
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: f4f2bcdd999a008334a56d95024393d21db15e32
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 1cf92c870521907c90332a9b9d1292b7b297c8d6
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-do-i-renew-a-subscription-purchased-through-microsoft-store"></a>Comment puis-je renouveler un abonnement acheté via le Microsoft Store ?
 Vue d’ensemble : Les abonnements au détail sont souvent achetés via Microsoft Store et sont identifiables par la mention « Vente au détail » dans les informations sur les abonnements disponibles sur la page https://my.visualstudio.com/subscriptions. 
@@ -29,7 +29,7 @@ Vue d’ensemble : Les abonnements au détail sont souvent achetés via Microsof
 
 
 ## <a name="activate-your-subscription"></a>Activer votre abonnement : 
-Vous pouvez activer votre abonnement à partir de « la page de confirmation » du paiement ou de « l’e-mail de confirmation ».  (Si vous ne voyez pas l’e-mail de confirmation, vérifiez qu’il ne se trouve pas dans vos dossiers de courrier indésirable.)   
+Vous pouvez activer votre abonnement à partir de la « Page de confirmation » du paiement ou de « l’E-mail de confirmation ».  (Si vous ne voyez pas l’e-mail de confirmation, vérifiez qu’il ne se trouve pas dans vos dossiers de courrier indésirable.)   
 1. Cliquez sur **Cliquez ici pour vous connecter**.  Vous êtes redirigé vers la page [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
 2. Connectez-vous à votre abonnement.  (Pour obtenir de l’aide, [connectez-vous](/visualstudio/subscriptions/signing-in).)
 3. Entrez les informations de « clé de produit » disponibles sur la page de confirmation du paiement ou dans l’e-mail de confirmation, puis cliquez sur **Activer**.

@@ -14,37 +14,25 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f047b143a7d0955d8ac3e2708098a903c73da59
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dfdd5aee71c74febbeca0b7c9683aaa6be915e6e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
+
 Vous pouvez créer des applications pour des appareils Android, iOS et Windows à l'aide de Visual Studio.  Quand vous concevez votre application, utilisez les outils de Visual Studio pour ajouter facilement des services connectés, comme Office 365, Azure App Service et Application Insights.
 
- Créez vos applications en utilisant C# et le .NET Framework, HTML et JavaScript, ou C++. Partagez du code, des chaînes, des images et même, dans certains cas, l’interface utilisateur.
+Créez vos applications en utilisant C# et le .NET Framework, HTML et JavaScript, ou C++. Partagez du code, des chaînes, des images et même, dans certains cas, l’interface utilisateur.
 
- Si vous souhaitez créer un jeu ou une application graphique immersive, installez les Visual Studio Tools pour Unity et profitez de toutes les puissantes fonctionnalités de productivité de Visual Studio avec Unity, un moteur de jeu/moteur graphique multiplateforme très répandu, qui est aussi un environnement de développement pour les applications qui s’exécutent sur iOS, Android, Windows et d’autres plateformes.
+Si vous souhaitez créer un jeu ou une application graphique immersive, installez les Visual Studio Tools pour Unity et profitez de toutes les puissantes fonctionnalités de productivité de Visual Studio avec Unity, un moteur de jeu/moteur graphique multiplateforme très répandu, qui est aussi un environnement de développement pour les applications qui s’exécutent sur iOS, Android, Windows et d’autres plateformes.
 
- **Dans cet article :**
+## <a name="build-an-app-for-android-ios-and-windows-net-framework"></a>Générer une application pour Android, iOS et Windows (.NET Framework)
 
--   [Générer une application pour Android, iOS et Windows (.NET Framework)](#NET)
+![Appareils](../cross-platform/media/homedevices.png "HomeDevices")
 
-    -   [Cibler Android, iOS et Windows à partir d’une seule base de code](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
-
-    -   [Cibler les appareils Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
-
--   [Générer une application pour Android, iOS et Windows (HTML/JavaScript)](#HTML)
-
--   [Générer une application pour Android et Windows (C++)](#CPP)
-
--   [Créer un jeu multiplateforme pour Android, iOS et Windows à l’aide de Visual Studio Tools pour Unity](#Unity)
-
-##  <a name="NET"></a> Générer une application pour Android, iOS et Windows (.NET Framework)
- ![Appareils](../cross-platform/media/homedevices.png "HomeDevices")
-
- Avec Xamarin, vous pouvez cibler Windows, iOS et Android dans la même solution, partager du code et même l’interface utilisateur.
+Avec Xamarin, vous pouvez cibler Windows, iOS et Android dans la même solution, partager du code et même l’interface utilisateur.
 
 |**En savoir plus**|
 |--------------------|

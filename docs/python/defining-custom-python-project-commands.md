@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 24eeb39abdee21d5441c88a3fa253d4818fe61e1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1fa4c68b1d7dc89452376d6efc47e047f75d52d6
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Définition de commandes personnalisées pour les projets Python
 
@@ -140,8 +140,8 @@ Pour faire référence aux propriétés du projet ou aux variables d’environne
 | Attribut | Obligatoire | Description |
 | --- | --- | --- |
 | Name | Oui | Identificateur de la commande dans le projet Visual Studio. Ce nom doit être ajouté au groupe de propriétés `<PythonCommands>` pour que la commande apparaisse dans le sous-menu Python. |
-| Label | Oui | Nom d’affichage d’interface utilisateur qui apparaît dans le sous-menu Python. |
-| Returns | Oui | Doit contenir `@(Commands)`, qui identifie la cible en tant que commande. |
+| Ajouter des contrôles | Oui | Nom d’affichage d’interface utilisateur qui apparaît dans le sous-menu Python. |
+| Returns (Retours) | Oui | Doit contenir `@(Commands)`, qui identifie la cible en tant que commande. |
 
 ### <a name="createpythoncommanditem-attributes"></a>Attributs CreatePythonCommandItem
 
@@ -150,7 +150,7 @@ Toutes les valeurs d’attribut sont insensibles à la casse.
 | Attribut | Obligatoire | Description |
 | --- | --- | --- |
 | TargetType | Oui | Spécifie ce que contient l’attribut Target et comment il est utilisé avec l’attribut Arguments :<ul><li>**executable** : exécute l’exécutable nommé dans Target, en ajoutant la valeur dans Arguments, comme si vous l’entriez directement sur la ligne de commande. La valeur doit contenir uniquement un nom de programme sans arguments.</li><li>**script** : exécute `python.exe` avec le nom de fichier dans Target, suivi de la valeur dans Arguments.</li><li>**module** : exécute `python -m`, suivi du nom du module dans Target, suivi de la valeur dans Arguments.</li><li>**code** : exécute le code inline contenu dans Target. La valeur Arguments est ignorée.</li><li>**pip** : exécute `pip` avec la commande dans Target, suivi d’Arguments ; toutefois, si ExecuteIn a la valeur « output », pip suppose la commande `install` et utilise Target comme nom de package.</li></ul> |
-| Target | Oui | Nom de fichier, nom du module, code ou commande pip à utiliser selon le TargetType. |
+| une cible | Oui | Nom de fichier, nom du module, code ou commande pip à utiliser selon le TargetType. |
 | Arguments | Facultatif | Spécifie une chaîne d’arguments (le cas échéant) à donner à la cible. Quand le TargetType a la valeur `script`, notez que les arguments sont fournis au programme Python, et non à `python.exe`. Ignoré pour le TargetType `code`. |
 | ExecuteIn | Oui | Spécifie l’environnement dans lequel exécuter la commande :<ul><li>**console** : (par défaut) exécute Target et les arguments comme si vous les entriez directement sur la ligne de commande. Une fenêtre de commande s’affiche durant l’exécution de Target, puis se ferme automatiquement.</li><li>**consolepause** : identique à console, mais attend l’appui sur une touche avant de fermer la fenêtre.</li><li>**output** : exécute Target et affiche ses résultats dans la fenêtre Sortie de Visual Studio. Si TargetType a la valeur « pip », Visual Studio utilise Target comme nom du package et ajoute les arguments.</li><li>**repl** : exécute Target dans la [fenêtre interactive Python](interactive-repl.md) ; le nom d’affichage facultatif est utilisé pour le titre de la fenêtre.</li><li>**none** : se comporte comme console.</li></ul>|
 | WorkingDirectory | Facultatif | Dossier dans lequel exécuter la commande. |
@@ -282,7 +282,7 @@ La commande suivante exécute simplement `where` pour afficher les fichiers Pyth
 
 ```xml
 <PropertyGroup>
-  <PythonCommands>$(PythonCommands);InstallMyPackage;ShowOutdatedPackages;ShowAllPythonFilesInProject</PythonCommands>
+  <PythonCommands>$(PythonCommands);ShowAllPythonFilesInProject</PythonCommands>
 </PropertyGroup>
 
 <Target Name="ShowAllPythonFilesInProject" Label="Show Python files in project" Returns="@(Commands)">
@@ -296,6 +296,62 @@ La commande suivante exécute simplement `where` pour afficher les fichiers Pyth
 ### <a name="run-server-and-run-debug-server-commands"></a>Commandes Exécuter le serveur et Exécuter le serveur de débogage
 
 Pour explorer comment les commandes **Démarrer le serveur** et **Démarrer le serveur de débogage** sont définies pour les projets web, examinez [Microsoft.PythonTools.Web.targets](https://github.com/Microsoft/PTVS/blob/master/Python/Product/BuildTasks/Microsoft.PythonTools.Web.targets) (GitHub).
+
+### <a name="install-package-for-development"></a>Installer un package pour le développement
+
+```xml
+<PropertyGroup>
+  <PythonCommands>PipInstallDevCommand;$(PythonCommands);</PythonCommands>
+</PropertyGroup>
+
+<Target Name="PipInstallDevCommand" Label="Install package for development" Returns="@(Commands)">
+    <CreatePythonCommandItem Target="pip" TargetType="module" Arguments="install --editable $(ProjectDir)"
+        WorkingDirectory="$(WorkingDirectory)" ExecuteIn="Repl:Install package for development">
+      <Output TaskParameter="Command" ItemName="Commands" />
+    </CreatePythonCommandItem>
+  </Target>
+```
+
+*À partir de [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilisé avec autorisation.*
+
+### <a name="generate-windows-installer"></a>Générer le programme d’installation Windows
+
+```xml
+<PropertyGroup>
+  <PythonCommands>$(PythonCommands);BdistWinInstCommand;</PythonCommands>
+</PropertyGroup>
+
+<Target Name="BdistWinInstCommand" Label="Generate Windows Installer" Returns="@(Commands)">
+    <CreatePythonCommandItem Target="$(ProjectDir)setup.py" TargetType="script"
+        Arguments="bdist_wininst --user-access-control=force --title &quot;$(InstallerTitle)&quot; --dist-dir=&quot;$(DistributionOutputDir)&quot;"
+        WorkingDirectory="$(WorkingDirectory)" RequiredPackages="setuptools"
+        ExecuteIn="Repl:Generate Windows Installer">
+      <Output TaskParameter="Command" ItemName="Commands" />
+    </CreatePythonCommandItem>
+  </Target>
+```
+
+*À partir de [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilisé avec autorisation.*
+
+### <a name="generate-wheel-package"></a>Générer un package de roue
+
+```xml
+<PropertyGroup>
+  <PythonCommands>$(PythonCommands);BdistWheelCommand;</PythonCommands>
+</PropertyGroup>
+
+<Target Name="BdistWheelCommand" Label="Generate Wheel Package" Returns="@(Commands)">
+
+  <CreatePythonCommandItem Target="$(ProjectDir)setup.py" TargetType="script"
+      Arguments="bdist_wheel --dist-dir=&quot;$(DistributionOutputDir)&quot;"
+      WorkingDirectory="$(WorkingDirectory)" RequiredPackages="wheel;setuptools"
+      ExecuteIn="Repl:Generate Wheel Package">
+    <Output TaskParameter="Command" ItemName="Commands" />
+  </CreatePythonCommandItem>
+</Target>
+```
+
+*À partir de [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilisé avec autorisation.*
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 

@@ -9,17 +9,18 @@ Description: Learn how to activate the technical support benefit included with y
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 39d140f83f43d6032119d4a7e84d6f1f091af707
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4fb6294d6d70e827bd69544fcc4f07cad72b7c5a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activation de l’avantage Support technique dans les abonnements Visual Studio
 
-Résolvez les problèmes couverts par la garantie de réparation et d’assistance dans les environnements hors production.  (Remarque : Vous devez activer l’avantage avant de pouvoir envoyer une demande de support.)  Les abonnements standard et cloud annuels Visual Studio Enterprise acceptent quatre incidents, alors que les abonnements standard et cloud annuels Visual Studio Professional en acceptent deux.  
+Résolvez les problèmes couverts par la garantie de réparation et d’assistance dans les environnements hors production.  (Vous devez activer l’avantage avant de pouvoir envoyer une demande de support.)  Les abonnements standard et cloud annuels Visual Studio Enterprise acceptent quatre incidents, alors que les abonnements standard et cloud annuels Visual Studio Professional en acceptent deux.  
 
-**REMARQUE** : Les abonnements d’un même niveau ne sont pas tous éligibles pour recevoir des incidents de support technique.  C’est le cas des abonnements fournis dans le cadre des programmes FTE, NFR, MPN, MCT et d’autres programmes.  Si votre abonnement n’est pas éligible pour recevoir des incidents de support technique, la vignette Support technique n’apparaît pas dans vos avantages disponibles. 
+> [!NOTE]
+> Les abonnements d’un même niveau ne sont pas tous éligibles pour recevoir des incidents de support technique.  C’est le cas des abonnements fournis dans le cadre des programmes FTE, NFR, MPN, MCT et d’autres programmes.  Si votre abonnement n’est pas éligible pour recevoir des incidents de support technique, la vignette Support technique n’apparaît pas dans vos avantages disponibles. 
 
    ![Vignette de l’avantage Support technique](_img\vs-tech-support\vs-tech-support-tile.png)
 
@@ -33,7 +34,8 @@ Résolvez les problèmes couverts par la garantie de réparation et d’assistan
 
     ![Avantage Support technique, Rechercher un ID d’abonnement](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
-**REMARQUE** : Pour activer votre compte de support dans une autre langue que l’anglais, choisissez votre pays dans [cette liste](http://support.microsoft.com/activatesupport).   
+> [!NOTE]
+> Pour activer votre compte de support dans une autre langue que l’anglais, choisissez votre pays dans [cette liste](http://support.microsoft.com/activatesupport).   
 
 # <a name="how-to-submit-an-incident"></a>Comment signaler un incident
 Une fois que vous avez votre ID de contrat et votre ID d’accès, si vous avez besoin d’aide, vous pouvez appeler le numéro du support technique de votre pays, signaler un incident de support [en ligne](http://support.microsoft.com/oas/) ou signaler un incident dans le portail Azure.  Si vous préférez être aidé par téléphone, vous pouvez signaler votre incident en ligne et demander qu’un professionnel du support Microsoft vous rappelle.
@@ -85,7 +87,7 @@ Pour pouvoir utiliser votre avantage Support technique fourni dans l’abonnemen
 1.  Accédez au site https://portal.azure.com et connectez-vous
 2.  Dans le volet de navigation de gauche, cliquez sur « Aide et support »
 3.  Sous « Support », cliquez sur « Lier un contrat de support technique »
-4.  Entrez votre « ID d’accès » et votre « ID de contrat » fournis à l’étape 1 ci-dessus.
+4.  Entrez vos « ID d’accès » et « ID de contrat » fournis à l’étape 1 ci-dessus.
 Une fois que vous avez effectué ces étapes, vous pouvez choisir le plan de support qui est associé à votre avantage inclus dans l’abonnement Visual Studio.  (Le nom du plan peut contenir « MSDN ».)
 
  

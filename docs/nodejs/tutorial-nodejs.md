@@ -16,11 +16,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Bien démarrer avec Node.js dans Visual Studio
 Dans ce didacticiel pour le développement Node.js avec Visual Studio, vous allez créer une application web Node.js simple, ajouter du code, explorer certaines fonctionnalités de l’IDE et exécuter l’application. Si vous n’avez pas encore installé Visual Studio, installez-le gratuitement [ici](http://www.visualstudio.com).  
@@ -37,6 +37,10 @@ Vous allez d’abord créer un projet d’application web Node.js.
      Si vous ne voyez pas le modèle de projet **Application Azure Node.js Express 4 de base**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**. 
 
     Visual Studio crée la solution et ouvre votre projet. Le fichier projet **app.js** s’ouvre dans l’éditeur (volet gauche). Si vous souhaitez d’abord vous familiariser avec les projets et solutions Visual Studio, consultez [Démarrage rapide : utiliser Visual Studio pour créer votre première application Node.js](../ide/quickstart-nodejs.md).
+
+4. Si le runtime Node.js n’est pas déjà installé, installez-le à partir du site Web [Node.js](https://nodejs.org/en/download/).
+
+    En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte aucun runtime installé, vous pouvez configurer votre projet pour faire référence au runtime installé.
 
 ## <a name="add-some-code"></a>Ajouter du code
 
@@ -121,7 +125,7 @@ Vous allez d’abord créer un projet d’application web Node.js.
 
     ![Sélectionner la cible de débogage](../nodejs/media/tutorial-nodejs-deploy-target.png) 
 
-1. Appuyez sur **Ctrl+F5** pour exécuter l’application.
+1. Appuyez sur **F5** (**Déboguer** > **Démarrer le débogage**) pour exécuter l’application.
 
     Le débogueur s’arrête au point d’arrêt que vous avez défini. Vous pouvez maintenant inspecter l’état de votre application.
 
@@ -129,7 +133,7 @@ Vous allez d’abord créer un projet d’application web Node.js.
 
     ![Inspecter des variables](../nodejs/media/tutorial-nodejs-inspect-variables.png)
 
-1. Appuyez sur **F5** pour continuer.
+1. Appuyez sur **F5** (**Déboguer** > **Continuer**) pour continuer.
 
     L’application s’ouvre dans un navigateur.
 
@@ -139,7 +143,7 @@ Vous allez d’abord créer un projet d’application web Node.js.
 
     ![Exécution de l’application dans le navigateur](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
-1. Ouvrez la fenêtre interactive de Node.js en sélectionnant **Vue > Autres fenêtres > Fenêtre interactive de Node.js**.
+1. Ouvrez la fenêtre interactive Node.js en sélectionnant **Afficher** > **Autres fenêtres** > **Fenêtre interactive Node.js**.
 
    ![Ouvrir la fenêtre interactive de Node.js](../nodejs/media/tutorial-nodejs-interactive-window.png)  
 

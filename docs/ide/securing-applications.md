@@ -1,30 +1,29 @@
 ---
-title: "Sécurisation des applications | Microsoft Docs"
+title: "Sécurisation des applications dans Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - security [Visual Studio], applications
 - application design, securability
 ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
-caps.latest.revision: 
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a95521c2ce49e5dfd00863ead6f0f878547f56ec
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 4fcc188195a084169813d67a7d2e8680beab1f08
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="securing-applications"></a>Sécurisation des applications
+
 Si la plupart des applications posent des défis courants en matière de sécurité, chaque domaine d'application pose néanmoins des défis en cette matière qui lui sont propres.  
   
 ## <a name="general-security-considerations"></a>Considérations générales sur la sécurité  
@@ -66,5 +65,6 @@ Si la plupart des applications posent des défis courants en matière de sécuri
  [Sécurité de Windows Forms](/dotnet/framework/winforms/windows-forms-security)  
  Fournit une vue d'ensemble de l'implémentation de la sécurité de Windows Forms.  
   
-## <a name="see-also"></a>Voir aussi  
- [Sécurité](../ide/security-in-visual-studio.md)
+## <a name="see-also"></a>Voir aussi
+
+- [Sécurité](../ide/security-in-visual-studio.md)

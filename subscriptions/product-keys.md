@@ -9,11 +9,11 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation des clés de produit dans les abonnements Visual Studio
 
@@ -90,7 +90,8 @@ Comme vous pouvez le voir, plusieurs versions de Visio 2010 sont répertoriées
 ### <a name="exporting-your-claimed-keys"></a>Exportation de vos clés demandées
 Vous pouvez exporter une liste de toutes les clés que vous avez demandées, et d’un grand nombre de clés statiques et d’autres clés qui sont automatiquement marquées comme « demandées » pour vous.  
 
-**IMPORTANT : Si votre abonnement arrive à expiration, vous ne pouvez plus demander de nouvelles clés ni exporter vos clés demandées.** 
+> [!IMPORTANT] 
+> En cas d’expiration de votre abonnement, pour ne pourrez plus demander de nouvelles clés ni exporter vos clés demandées.** 
 
 Pour exporter vos clés, cliquez simplement sur le lien **Exporter toutes les clés** situé à l’extrême droite de la page Clés de produit.  Un fichier .xml intitulé KeysExport.xml est créé. Vous pouvez ensuite ouvrir ou enregistrer le fichier.  Vous devez ouvrir le fichier avec une application prenant en charge les fichiers .xml.  Par exemple, vous pouvez ouvrir le fichier en tant que classeur en lecture seule dans Excel.  
 

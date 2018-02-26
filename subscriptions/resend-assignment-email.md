@@ -1,22 +1,34 @@
 ---
-title: "Guide pratique pour le renvoi d’e-mails d’attribution d’abonnements à partir de VLSC | Documents Microsoft"
+title: "Comment renvoyer des e-mails d’affectation d’abonnements à partir de Manage.visualstudio.com ou VLSC | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 12/29/2017
+Ms.date: 2/13/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to resend the subscription assignment to a subscriber from within VLSC
+Description: Learn how to resend the subscription assignment to subscribers from manage.visualstudio.com or VLSC
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 7162435044a578a94249774305f2c6b8b6438219
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 0ba7d6e36c25ced78b0c6b25688e5eb5b26eb04a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-resend-subscription-assignment-emails-from-vlsc"></a>Guide pratique pour le renvoi d’e-mails d’attribution d’abonnements à partir de VLSC :
+# <a name="how-to-resend-subscription-assignment-emails"></a>Comment renvoyer des e-mails d’affectation d’abonnements :
 
+Les étapes nécessaires pour renvoyer un e-mail d’affectation varient selon le portail utilisé pour gérer vos abonnements. 
+
+## <a name="resending-assignment-emails-from-within-managevisualstudiocom"></a>Renvoi des e-mails d’affectation à partir de manage.visualstudio.com
+
+Le processus de renvoi des e-mails d’affectation à partir du portail manage.visualstudio.com est très simple :
+
+1. Visitez le portail [manage.visualstudio.com](https://manage.visualstudio.com) et connectez-vous. 
+2. Utilisez l’onglet **Filtre** pour rechercher l’abonné à qui vous voulez renvoyer l’e-mail d’affectation. (Pour plus d’informations sur le filtrage, consultez [Rechercher un abonnement](/visualstudio/subscriptions/search-license).)
+3. Cliquez sur le ou les abonnés.  Vous pouvez utiliser Ctrl + clic ou MAJ + clic pour sélectionner plusieurs abonnés.
+4. Cliquez sur **Renvoyer** en haut des résultats de recherche.  
+
+## <a name="resending-assignment-emails-from-within-vlsc"></a>Renvoi des e-mails d’affectation à partir de VLSC
 Quand un abonnement a été attribué à un abonné dans VLSC et que ce dernier demande à recevoir de nouveau l’e-mail d’attribution, vous pouvez le faire en modifiant les informations sur l’adresse e-mail de l’abonné, puis en rétablissant l’adresse d’origine. L’e-mail d’attribution sera alors automatiquement renvoyé à l’abonné.
 
 Suivez les instructions ci-dessous pour renvoyer l’e-mail d’attribution :
@@ -36,4 +48,3 @@ VLSC détectera alors que des modifications ont été apportées à l’abonneme
 
 > [!NOTE]
 > - Les nouveaux abonnements attribués génèrent automatiquement l’adresse e-mail d’attribution. La procédure ci-dessus est uniquement nécessaire quand un utilisateur demande à recevoir une nouvelle notification d’attribution par e-mail ou quand la notification n’est pas envoyée pour une raison quelconque.
-> - Elle n’est pas nécessaire pour renvoyer des e-mails d’attribution pour les abonnements attribués via https://manage.visualstudio.com.  Pour renvoyer des e-mails d’attribution aux abonnés dans le portail, sélectionnez simplement les abonnés concernés et cliquez sur le bouton **Renvoyer** en haut de la liste d’abonnés.  
