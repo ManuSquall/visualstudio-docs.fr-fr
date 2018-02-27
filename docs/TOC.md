@@ -97,6 +97,7 @@
 ##### [Substituer des paramètres dans un modèle](ide/how-to-substitute-parameters-in-a-template.md)
 #### [Prise en charge de l’IDE de Visual Studio 64 bits](ide/visual-studio-ide-64-bit-support.md)
 ### [Développer sans projet ou solution (« Ouvrir le dossier »)](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+#### [Personnaliser les tâches Build et Debug](ide/customize-build-and-debug-tasks-in-visual-studio.md)
 ### [Écrire du code dans l’éditeur](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Rechercher et remplacer du texte](ide/finding-and-replacing-text.md)
 ##### [Utiliser des expressions régulières](ide/using-regular-expressions-in-visual-studio.md)
