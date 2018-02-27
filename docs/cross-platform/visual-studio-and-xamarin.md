@@ -27,7 +27,7 @@ Xamarin est une plateforme de développement d’applications mobiles pour la cr
   
  Cette documentation vous permet d’évaluer toutes les fonctionnalités de **Visual Studio avec Xamarin** pour créer ces expériences utilisateur.  
   
--   Commencez par ceci : [Configurer et installer](../cross-platform/setup-and-install.md), processus qui prend un certain temps (généralement de 2 à 4 heures, selon la vitesse de votre connexion web, ce que vous avez déjà installé et les options sélectionnées).  
+-   Commencez par ceci : [Configurer et installer](../cross-platform/setup-and-install.md), un processus qui prend un certain temps (généralement de 2 à 4 heures, selon la vitesse de votre connexion web, vos installations précédentes et les options sélectionnées).  
   
 -   Pendant l’exécution des programmes d’installation, vous pouvez consulter [En savoir plus sur le développement mobile avec Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md). Vous y trouverez des informations sur la nature de Xamarin, vous pourrez comparer Xamarin.Forms à l’IU native, etc.  
   
