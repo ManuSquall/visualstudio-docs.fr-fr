@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,18 +19,20 @@ dev_langs:
 - FSharp
 - C++
 - JScript
-helpviewer_keywords: Options dialog box, debugging
+helpviewer_keywords:
+- Options dialog box, debugging
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
-caps.latest.revision: "46"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7f6983c2be5604867f729ed006eadb5257c3a43
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: 01c87cfc2beb030b2fd10a4455def65ab139a5f0
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Général, Débogage, boîte de dialogue Options
 Le **Outils > Options > Débogage > Général** page vous permet de définir les options suivantes :  
@@ -115,14 +118,14 @@ Envoie tous les messages du débogueur qui sont affichent normalement dans les *
 Désactive toutes les personnalisations d'affichage de la structure des objets. Pour plus d’informations sur les personnalisations d’affichage, consultez [créer des vues personnalisées d’objets de .managed](../debugger/create-custom-views-of-dot-managed-objects.md).  
   
 **Supprimer l’optimisation JIT lors du chargement du module (managé uniquement)**  
-Désactive l'optimisation JIT du code managé lorsqu'un module est chargé et que JIT est compilé pendant que le débogueur est attaché. La désactivation de l'optimisation peut simplifier le débogage de certains problèmes, mais elle se fait au détriment des performances. Si vous utilisez Uniquement mon code, la suppression de l'optimisation JIT peut entraîner l'affichage du code non-utilisateur comme du code utilisateur (« Mon code »).
+Désactive l'optimisation JIT du code managé lorsqu'un module est chargé et que JIT est compilé pendant que le débogueur est attaché. La désactivation de l'optimisation peut simplifier le débogage de certains problèmes, mais elle se fait au détriment des performances. Si vous utilisez Uniquement mon code, la suppression de l'optimisation JIT peut entraîner l'affichage du code non-utilisateur comme du code utilisateur (« Mon code »). Pour plus d’informations, consultez [l’optimisation JIT et débogage](../debugger/jit-optimization-and-debugging.md).
 
 **Activer le débogage de JavaScript pour ASP.NET (Chrome et Internet Explorer)** permet au débogueur de script pour les applications ASP.NET. La première utilisation de Chrome, vous devrez peut-être pour vous connecter dans le navigateur à la première utilisation pour activer les extensions de Chrome que vous avez installée. Désactivez cette option pour rétablir le comportement hérité.    
 
 **Charger les exportations de dll**  
 Cette option charge les tables d’exportation de dll. Les informations symboliques de tables d’exportation de dll peuvent être utiles si vous utilisez des messages Windows, des procédures Windows (WindowProcs), des objets COM, le marshaling ou toute dll pour laquelle vous n’avez pas de symbole. La lecture des informations d’exportation des dll implique une certaine charge mémoire. Par conséquent, cette fonctionnalité est désactivée par défaut.  
   
-Pour savoir quels symboles sont disponibles dans la table d’exportation d’une dll, utilisez `dumpbin /exports`. Il existe des symboles pour toutes les dll système 32 bits. En lisant le résultat de `dumpbin /exports` , vous apprenez le nom exact de la fonction, y compris les caractères non alphanumériques. Cette information peut être utile pour définir un point d'arrêt sur une fonction. Les noms de fonctions provenant de tables d’exportation de dll peuvent s’afficher sous une forme tronquée dans les autres parties du débogueur. Les appels sont répertoriés dans l'ordre chronologique inverse, la fonction en cours (la plus profondément imbriquée) apparaissant en tête de liste. Pour plus d'informations, consultez [dumpbin /exports](/cpp/build/reference/dash-exports).  
+Pour savoir quels symboles sont disponibles dans la table d’exportation d’une dll, utilisez `dumpbin /exports`. Il existe des symboles pour toutes les dll système 32 bits. En lisant le résultat de `dumpbin /exports`, vous apprenez le nom exact de la fonction, y compris les caractères non alphanumériques. Cette information peut être utile pour définir un point d'arrêt sur une fonction. Les noms de fonctions provenant de tables d’exportation de dll peuvent s’afficher sous une forme tronquée dans les autres parties du débogueur. Les appels sont répertoriés dans l'ordre chronologique inverse, la fonction en cours (la plus profondément imbriquée) apparaissant en tête de liste. Pour plus d'informations, consultez [dumpbin /exports](/cpp/build/reference/dash-exports).  
   
 **Afficher des piles parallèles diagramme ascendant**  
 Contrôle la direction dans laquelle les piles sont affichées dans le **piles parallèles** fenêtre.  

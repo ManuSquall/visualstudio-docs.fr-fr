@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 01/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: code analysis, C++ core check
+helpviewer_keywords:
+- code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d5db13aa350e33a297981066f36c3d1dfd1ecb67
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e0e12941db7f8e6f539c88014fc5fa9c55ca809c
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Référence de l’outil d’analyse les instructions C++ Core
 Cette section répertorie les avertissements du vérificateur d’instructions C++ Core. Pour plus d’informations sur l’analyse du Code, consultez [/Analyze (analyse du Code)](/cpp/build/reference/analyze-code-analysis) et [démarrage rapide : analyse du Code pour C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
@@ -197,7 +200,7 @@ C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL
 
 ## <a name="type-group"></a>TYPE de groupe
 C26465 NO_CONST_CAST_UNNECESSARY  
-  N’utilisez pas `const_cast` pour caster `const`. `const_cast`n’est pas obligatoire ; constness ou la volatilité n'est pas supprimée par cette conversion. Consultez [Type.3 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).  
+  N’utilisez pas `const_cast` pour caster `const`. `const_cast` n’est pas obligatoire ; constness ou la volatilité n'est pas supprimée par cette conversion. Consultez [Type.3 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).  
   
 C26466 NO_STATIC_DOWNCAST_POLYMORPHIC  
   N’utilisez pas `static_cast` downcasts. Un cast d’un type polymorphe doit utiliser dynamic_cast. Consultez [Type.2 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast).  
@@ -248,6 +251,20 @@ C26483 STATIC_INDEX_OUT_OF_RANGE
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)   
   L’expression 'expr %' : aucun tableau pour l’atténuation de pointeur. Consultez [Bounds.3 des instructions C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
-  
+
+## <a name="deprecated-warnings"></a>Avertissements déconseillées
+
+Les avertissements suivants sont présents dans un ensemble de règles d’expérimentale anticipée de l’outil d’analyse des recommandations principales, mais sont désormais déconseillées et peuvent être ignorés en toute sécurité. Les avertissements sont remplacés par les avertissements dans la liste ci-dessus.
+
+- 26412 DEREF_INVALID_POINTER
+- DEREF_NULLPTR 26413
+- 26420 ASSIGN_NONOWNER_TO_EXPLICIT_OWNER
+- ASSIGN_VALID_OWNER 26421
+- VALID_OWNER_LEAVING_SCOPE 26422
+- ALLOCATION_NOT_ASSIGNED_TO_OWNER 26423
+- VALID_ALLOCATION_LEAVING_SCOPE 26424
+- ASSIGNING_TO_STATIC 26425
+- NO_LIFETIME_TRACKING 26499
+
 ## <a name="see-also"></a>Voir aussi  
 [À l’aide des outils d’analyse de recommandations C++ Core](using-the-cpp-core-guidelines-checkers.md)

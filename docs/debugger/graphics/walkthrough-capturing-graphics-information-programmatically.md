@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bbce760956dda7c9399d25dd241df26ec0e59644
-ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
+ms.openlocfilehash: 3de32ab0b9ded416f57f4699e534b6401c2a483c
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d'informations Graphics par programmation
 Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour capturer par programmation les informations graphiques d'une application Direct3D.  
@@ -30,10 +30,10 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
   
 -   Appelez `CaptureCurrentFrame`quand un problème de rendu est difficile à prévoir et à capturer dans le cadre d'un test manuel, mais qui peut être prédit par programmation à partir d'informations sur l'état de l'application au moment de l'exécution.  
   
-##  <a name="CaptureDX11_2"></a>Capture par programmation dans Windows 10  
+##  <a name="CaptureDX11_2"></a> Capture par programmation dans Windows 10  
  Cette partie de la procédure pas à pas illustre la capture par programmation dans les applications qui utilisent l’API DirectX 11.2 dans Windows 10, qui utilise la méthode de capture robuste.
   
- Cette section montre comment effectuer ces tâches :  
+ Cette section montre comment effectuer ces tâches :  
   
 -   Préparation de votre application à l'utilisation de la capture par programmation  
   
@@ -49,7 +49,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
   
 ##### <a name="to-include-programmatic-capture-headers"></a>Pour inclure les en-têtes de capture par programmation  
   
--   Incluez les en-têtes suivants dans le fichier source où sera définie l'interface IDXGraphicsAnalysis :  
+-   Incluez les en-têtes suivants dans le fichier source où sera définie l'interface IDXGraphicsAnalysis :  
   
     ```  
     #include <DXGItype.h>  
@@ -59,7 +59,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
     ```  
   
     > [!IMPORTANT]
-    >  N’incluez pas l’en-tête vsgcapture.h—which prend en charge par programmation capture de fichiers dans Windows 8.0 et versions antérieures, pour effectuer la capture par programmation dans vos applications Windows 10. Cet en-tête est incompatible avec DirectX 11.2. Si ce fichier est inclus après que l’en-tête d3d11_2.h est inclus, le compilateur émet un avertissement. Si vsgcapture.h est inclus avant d3d11_2.h, l’application ne démarrera pas.  
+    >  N’incluez pas l’en-tête vsgcapture.h—which prend en charge par programmation capture de fichiers dans Windows 8.0 et versions antérieures, pour effectuer la capture par programmation dans vos applications Windows 10. Cet en-tête est incompatible avec DirectX 11.2. Si ce fichier est inclus après que l’en-tête d3d11_2.h est inclus, le compilateur émet un avertissement. Si vsgcapture.h est inclus avant d3d11_2.h, l’application ne démarrera pas.  
   
     > [!NOTE]
     >  Si le Kit de développement logiciel (SDK) DirectX de juin 2010 est installé sur votre machine et que le chemin include de votre projet contient `%DXSDK_DIR%includex86`, déplacez-le à la fin du chemin include. Faites-en autant pour le chemin d'accès à votre bibliothèque.  
@@ -79,7 +79,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     Veillez à examiner le `HRESULT` retourné par `DXGIGetDebugInterface1` pour vous assurer d'obtenir une interface valide avant de l'utiliser :  
+     Veillez à consulter le `HRESULT` retourné par [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) pour vous assurer d’obtenir une interface valide avant de l’utiliser :  
   
     ```  
     if (FAILED(getAnalysis))  
@@ -96,7 +96,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
   
 ##### <a name="to-capture-graphics-information"></a>Pour capturer des informations graphiques  
   
-- Pour commencer à capturer des informations graphiques, utilisez `BeginCapture`:  
+- Pour commencer à capturer des informations graphiques, utilisez `BeginCapture` :  
   
     ```  
     ...  
@@ -104,7 +104,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
     ...  
     ```  
   
-     La capture commence de suite après l'appel de `BeginCapture` ; il n'attend pas le frame suivant pour commencer. La capture s'arrête dès la présentation du frame actif ou l'appel de `EndCapture`:  
+     La capture commence de suite après l'appel de `BeginCapture` ; il n'attend pas le frame suivant pour commencer. La capture s'arrête dès la présentation du frame actif ou l'appel de `EndCapture` :  
   
     ```  
     ...  
