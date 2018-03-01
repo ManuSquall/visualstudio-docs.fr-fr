@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 9f5f3edfc536dce9d42d09a099c3f53a8a8ab3c7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Débogage à distance de code Python sur Linux
 
@@ -40,7 +40,7 @@ Les éléments suivants sont nécessaires pour suivre cette procédure pas à pa
 - Un ordinateur distant exécutant Python sur un système d’exploitation Mac OSX ou Linux.
 - Un port 5678 (entrant) ouvert sur le pare-feu de cet ordinateur (paramètre par défaut pour le débogage à distance).
 
-Vous pouvez facilement créer des [machines virtuelles Linux dans Azure](/azure/virtual-machines/linux/creation-choices) et [accéder à ces machines à l’aide du Bureau à distance](/azure/virtual-machines/linux/use-remote-desktop) de Windows. Utilisez de préférence l’interpréteur Ubuntu sur la machine virtuelle, car Python est installé par défaut. Sinon, consultez [Sélection et installation des interpréteurs Python](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters) pour obtenir la liste des autres emplacements de téléchargement d’interpréteurs Python.
+Vous pouvez facilement créer des [machines virtuelles Linux dans Azure](/azure/virtual-machines/linux/creation-choices) et [accéder à ces machines à l’aide du Bureau à distance](/azure/virtual-machines/linux/use-remote-desktop) de Windows. Utilisez de préférence l’interpréteur Ubuntu sur la machine virtuelle, car Python est installé par défaut. Sinon, consultez [Sélection et installation des interpréteurs Python](installing-python-interpreters.md) pour obtenir la liste des autres emplacements de téléchargement d’interpréteurs Python.
 
 Pour plus d’informations sur la création d’une règle de pare-feu pour une machine virtuelle Azure, consultez [Ouverture de ports sur une machine virtuelle dans Azure à l’aide du portail Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
 

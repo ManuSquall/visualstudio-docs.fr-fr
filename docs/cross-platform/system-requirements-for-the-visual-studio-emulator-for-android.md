@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 520cd9eacf494ac1d8f8e26a7e1ef51581a49956
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: def17f215bd157da8d0e31f400e6b353a4d38f12
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 L’émulateur Visual Studio pour Android s’exécute en tant que machine virtuelle sur Hyper-V, la technologie de virtualisation pour Windows 8 et versions ultérieures. Pour exécuter l’émulateur, votre ordinateur doit satisfaire à la configuration requise pour exécuter Hyper-V, comme décrit dans cette rubrique.  
   
- Le programme d’installation tente de satisfaire à ces conditions préalables de manière silencieuse quand vous installez l’émulateur. Une fois qu’il a configuré correctement les composants requis, l’émulateur fonctionne simplement comme prévu. Dans le cas contraire, vous devrez activer ces composants requis manuellement. Si vous devez configurer manuellement les composants requis, les outils et les étapes sont identiques à ceux décrits [ici](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx) pour l’émulateur Windows Phone.  
+ Le programme d’installation tente de satisfaire à ces conditions préalables de manière silencieuse quand vous installez l’émulateur. Une fois qu’il a configuré correctement les composants requis, l’émulateur fonctionne simplement comme prévu. Dans le cas contraire, vous devrez activer ces composants requis manuellement. Si vous devez configurer manuellement les composants requis, les outils et les étapes sont identiques à ceux décrits [ici](/previous-versions/windows/apps/jj863509\(v=vs.105\)) pour l’émulateur Windows Phone.  
   
 > [!IMPORTANT]
 >  Le programme d’installation de l’émulateur vérifie les conditions préalables pour l’exécution de l’émulateur Visual Studio pour Android. Il affiche des avertissements si les composants requis ne sont pas présents, mais il ne les exige pas.  
