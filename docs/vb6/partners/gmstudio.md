@@ -2,14 +2,17 @@
 title: Excellent Migrations Studio (gmStudio) | Documents Microsoft
 description: "Excellent outil de migration pour évolutive et personnalisé VB6/ASP/COM pour les solutions de mise à niveau de .NET"
 ms.date: 09/05/2017
-ms.technology: devlang-vb
+ms.technology:
+- devlang-vb
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: visual-basic
+dev_langs:
+- visual-basic
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 8478f4f7cd3bc342f19b84a085b1889405ca6676
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
