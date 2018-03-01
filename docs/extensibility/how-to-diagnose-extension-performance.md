@@ -182,6 +182,6 @@ Une des vues dans la trace qui seront utiles pour déterminer l’impact sera le
 
 Il est important de réduire le nombre d’assemblys chargés à l’intérieur d’une routine d’initialisation de package que chaque assembly supplémentaire implique d’e/s disque supplémentaire qui peut ralentir le démarrage considérablement sur les ordinateurs plus lents.
 
-## <a name="summary"></a>Résumé
+## <a name="summary"></a>Récapitulatif
 
 Démarrage de Visual Studio a été un des domaines en permanence, nous obtenons des commentaires sur. Notre objectif, comme indiqué plus haut est pour tous les utilisateurs ont un démarrage cohérent avec tous les composants et qu’ils ont installé des extensions et nous souhaitons travailler avec les propriétaires d’extension pour les aider à atteindre cet objectif. Les instructions ci-dessus doivent être utiles pour comprendre un impact extensions au démarrage et soit évitant automatiquement la charge ou de charger de façon asynchrone pour réduire l’impact sur la productivité des utilisateurs.

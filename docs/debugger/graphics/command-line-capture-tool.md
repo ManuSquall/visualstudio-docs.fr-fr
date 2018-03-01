@@ -22,7 +22,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 02/27/2018
 ---
 # <a name="command-line-capture-tool"></a>Outil en ligne de commande de capture
-DXCap.exe est un outil en ligne de commande pour la capture et la lecture des informations de diagnostics graphiques. Il prend en charge tous les niveaux de fonctionnalités des versions Direct3D 10 à Direct3D 12.  
+DXCap.exe est un outil en ligne de commande pour la capture et la lecture de Graphics Diagnostics. Il prend en charge tous les niveaux de fonctionnalités des versions Direct3D 10 à Direct3D 12.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -85,7 +85,7 @@ DXCap.exe -info
 >  Nous vous recommandons de commencer avec `-examine present,draw,copy,clear` , car cela sera révéler la plupart des problèmes mais beaucoup moins de temps à un ensemble plus vaste d’événements. Si nécessaire, vous pouvez spécifier un ensemble distinct ou plus important d'événements pour valider ces derniers et identifier d'autres genres de problèmes.  
   
  `-haltonfail`  
- Mode de validation, `-haltonfail` arrête la validation quand des différences sont détectées entre le matériel et Warp. La validation reprend dès que l'utilisateur appuie sur une touche.  
+ Mode de validation, `-haltonfail` arrête la validation quand des différences sont détectées entre le matériel et Warp. La validation reprend dès que l’utilisateur appuie sur une touche.  
   
  `-exitonfail`  
  Mode de validation, `-exitonfail` quitte la validation immédiatement quand des différences sont détectées entre le matériel et Warp. Lorsque le programme s’arrête de cette façon, elle retourne `0` à l’environnement ; sinon, il retourne `1`.  
@@ -265,7 +265,7 @@ DXCap.exe -p BasicHLSL11.vsglog -screenshot -frame 5, 7-9
 DXCap.exe -p regression_test_12.vsglog -toXML  
 ```  
   
- Par défaut, la sortie XML est écrite dans un fichier qui porte le même nom que le journal de graphisme, mais dont l'extension est .xml. Dans l’exemple ci-dessus, le fichier XML est nommé **regression_test_12.xml**. Pour renommer le fichier XML en un autre nom, spécifiez-le après `-toXML`.  
+ Par défaut, la sortie XML est écrite dans un fichier qui porte le même nom que le journal de graphisme, mais dont l’extension est .xml. Dans l’exemple ci-dessus, le fichier XML est nommé **regression_test_12.xml**. Pour renommer le fichier XML en un autre nom, spécifiez-le après `-toXML`.  
   
 ```ms-dos  
 DXCap.exe -p regression_test_12.vsglog -toXML temp.xml  
@@ -299,4 +299,4 @@ DXCap.exe -p regression_test_12.vsglog -toXML temp.xml
 </Method>  
 ```  
   
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise

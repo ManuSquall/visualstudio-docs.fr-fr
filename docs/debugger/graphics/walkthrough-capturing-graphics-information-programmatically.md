@@ -33,7 +33,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
 ##  <a name="CaptureDX11_2"></a> Capture par programmation dans Windows 10  
  Cette partie de la procédure pas à pas illustre la capture par programmation dans les applications qui utilisent l’API DirectX 11.2 dans Windows 10, qui utilise la méthode de capture robuste.
   
- Cette section montre comment effectuer ces tâches :  
+ Cette section montre comment effectuer ces tâches :  
   
 -   Préparation de votre application à l'utilisation de la capture par programmation  
   
@@ -49,7 +49,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
   
 ##### <a name="to-include-programmatic-capture-headers"></a>Pour inclure les en-têtes de capture par programmation  
   
--   Incluez les en-têtes suivants dans le fichier source où sera définie l'interface IDXGraphicsAnalysis :  
+-   Incluez les en-têtes suivants dans le fichier source où sera définie l'interface IDXGraphicsAnalysis :  
   
     ```  
     #include <DXGItype.h>  
@@ -59,7 +59,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
     ```  
   
     > [!IMPORTANT]
-    >  N’incluez pas l’en-tête vsgcapture.h—which prend en charge par programmation capture de fichiers dans Windows 8.0 et versions antérieures, pour effectuer la capture par programmation dans vos applications Windows 10. Cet en-tête est incompatible avec DirectX 11.2. Si ce fichier est inclus après que l’en-tête d3d11_2.h est inclus, le compilateur émet un avertissement. Si vsgcapture.h est inclus avant d3d11_2.h, l’application ne démarrera pas.  
+    >  N’incluez pas l’en-tête vsgcapture.h—which prend en charge par programmation capture de fichiers dans Windows 8.0 et versions antérieures, pour effectuer la capture par programmation dans vos applications Windows 10. Cet en-tête est incompatible avec DirectX 11.2. Si ce fichier est inclus après que l’en-tête d3d11_2.h est inclus, le compilateur émet un avertissement. Si vsgcapture.h est inclus avant d3d11_2.h, l’application ne démarrera pas.  
   
     > [!NOTE]
     >  Si le Kit de développement logiciel (SDK) DirectX de juin 2010 est installé sur votre machine et que le chemin include de votre projet contient `%DXSDK_DIR%includex86`, déplacez-le à la fin du chemin include. Faites-en autant pour le chemin d'accès à votre bibliothèque.  
@@ -96,7 +96,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
   
 ##### <a name="to-capture-graphics-information"></a>Pour capturer des informations graphiques  
   
-- Pour commencer à capturer des informations graphiques, utilisez `BeginCapture` :  
+- Pour commencer à capturer des informations graphiques, utilisez `BeginCapture`:  
   
     ```  
     ...  
@@ -104,7 +104,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
     ...  
     ```  
   
-     La capture commence de suite après l'appel de `BeginCapture` ; il n'attend pas le frame suivant pour commencer. La capture s'arrête dès la présentation du frame actif ou l'appel de `EndCapture` :  
+     La capture commence de suite après l'appel de `BeginCapture` ; il n'attend pas le frame suivant pour commencer. La capture s'arrête dès la présentation du frame actif ou l'appel de `EndCapture`:  
   
     ```  
     ...  
@@ -115,7 +115,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
 - Après l’appel à `EndCapture`, libérer l’objet graphique. 
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Cette procédure pas à pas vous a montré comment capturer des informations graphiques par programmation. Pour franchir une étape supplémentaire, envisagez cette possibilité :  
+ Cette procédure pas à pas vous a montré comment capturer des informations graphiques par programmation. Pour franchir une étape supplémentaire, envisagez cette possibilité :  
   
 -   Découvrez comment analyser les informations graphiques capturées à l'aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](overview-of-visual-studio-graphics-diagnostics.md).  
   
