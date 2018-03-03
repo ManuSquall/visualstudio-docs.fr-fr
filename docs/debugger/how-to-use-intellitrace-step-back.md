@@ -4,62 +4,74 @@ ms.custom:
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9ee45132e4acf45bccffd3e05808defd3c7ced6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="view-snapshots-using-intellitrace-step-back"></a>Afficher des instantanés à l’aide d’IntelliTrace étape différée
+# <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Étape différéent afficher des instantanés à l’aide d’IntelliTrace dans Visual Studio
+
 Événement d’étape, IntelliTrace différée étape prend automatiquement un instantané de votre application à chaque point d’arrêt et le débogueur. Les captures instantanées enregistrées vous permettent de revenir à des étapes ou points d’arrêt précédents pour afficher un état antérieur de l’application. Le retour en arrière IntelliTrace peut vous faire gagner du temps quand vous souhaitez afficher un état précédent de l’application sans avoir à redémarrer le débogage ou à recréer l’état de l’application souhaité.
 
 Étape différée IntelliTrace est disponible à partir de Visual Studio de Enterprise 2017 15,5 et versions ultérieures, et nécessite le mise à jour anniversaire Windows 10 ou version ultérieure. La fonctionnalité est actuellement pris en charge pour le débogage ASP.NET, Windows Forms, WPF, les applications console gérés et bibliothèques de classes managées. Débogage des applications ASP.NET Core, .NET Core ou UWP n’est pas pris en charge actuellement. 
   
 ## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Activer le mode d’événements et les instantanés IntelliTrace 
-Pour activer la fonctionnalité, accédez à **Outils > Options > IntelliTrace** paramètres et sélectionnez l’option **IntelliTrace événements et les instantanés**. 
 
-![Activer le mode d’événements IntelliTrace et les instantanés](../debugger/media/intellitrace-enable-snapshots.png "mode activer les événements IntelliTrace et les instantanés")
+1. Dans Visual Studio Enterprise, accédez à **Outils > Options > IntelliTrace** paramètres et sélectionnez l’option **IntelliTrace événements et les instantanés**. 
 
-IntelliTrace prend un instantané du processus de l’application de débogueur de chaque événement d’étape et le point d’arrêt. Ces événements sont enregistrés dans le **événements** onglet dans le **outils de Diagnostic** fenêtre, ainsi que d’autres événements IntelliTrace. Pour ouvrir cette fenêtre, choisissez **déboguer / Windows / afficher les outils de Diagnostic**.
+    ![Activer le mode d’événements IntelliTrace et les instantanés](../debugger/media/intellitrace-enable-snapshots.png "mode activer les événements IntelliTrace et les instantanés")
 
-Une icône de caméra s’affiche en regard des événements pour lesquels les instantanés sont disponibles. 
+2. Ouvrez votre projet dans Visual Studio.
 
-![Onglet événements avec des instantanés](../debugger/media/intellitrace-events-tab-with-snapshots.png "onglet événements avec des instantanés sur les points d’arrêt et étapes")
+3. Définir un ou plusieurs points d’arrêt dans votre projet et commencez le débogage (appuyez sur **F5**), ou démarrer le débogage en parcourant votre code (**F10** ou **F11**).
 
-Pour des raisons de performances, les instantanés ne sont pas prises lorsque vous parcourez très rapidement. Si aucune icône de caméra s’affiche en regard de l’étape, essayez d’exécuter pas à pas plus lentement.
+    IntelliTrace prend un instantané du processus de l’application de débogueur de chaque événement d’étape et le point d’arrêt. Ces événements sont enregistrés dans le **événements** onglet dans le **outils de Diagnostic** fenêtre, ainsi que d’autres événements IntelliTrace. Pour ouvrir cette fenêtre, choisissez **déboguer** > **Windows** > **afficher les outils de Diagnostic**.
+
+    Une icône de caméra s’affiche en regard des événements pour lesquels les instantanés sont disponibles. 
+
+    ![Onglet événements avec des instantanés](../debugger/media/intellitrace-events-tab-with-snapshots.png "onglet événements avec des instantanés sur les points d’arrêt et étapes")
+
+    Pour des raisons de performances, les instantanés ne sont pas prises lorsque vous parcourez très rapidement. Si aucune icône de caméra s’affiche en regard de l’étape, essayez d’exécuter pas à pas plus lentement.
 
 ## <a name="navigate-and-view-snapshots"></a>Naviguer et afficher des instantanés
 
-Vous pouvez naviguer entre les événements à l’aide de la **arrière (Alt + [)** et **avant (Alt +])** boutons dans la barre d’outils de débogage. Ces boutons Parcourir les événements qui s’affichent dans le **événements** onglet dans le **fenêtre Outils de Diagnostic**. Quand vous passez à l’étape précédente ou suivante d’un événement, vous activez automatiquement le débogage d’historique pour l’événement sélectionné.
+1. Naviguer entre les événements à l’aide de la **arrière (Alt + [)** et **avant (Alt +])** boutons dans la barre d’outils de débogage.
 
-![Revenir en arrière et transférer des boutons](../debugger/media/intellitrace-step-back-icons-description.png "boutons arrière et avancer")
+    Ces boutons Parcourir les événements qui s’affichent dans le **événements** onglet dans le **fenêtre Outils de Diagnostic**. Quand vous passez à l’étape précédente ou suivante d’un événement, vous activez automatiquement le débogage d’historique pour l’événement sélectionné.
 
-Lorsque vous reculer ou avancez, Visual Studio entre en mode débogage historique. Dans ce mode, le contexte du débogueur passe à l’heure où l’événement sélectionné a été enregistré. Visual Studio déplace également le pointeur vers la ligne de code dans la fenêtre source correspondante. 
+    ![Revenir en arrière et transférer des boutons](../debugger/media/intellitrace-step-back-icons-description.png "boutons arrière et avancer")
 
-Dans cette vue, vous pouvez inspecter les valeurs dans le **pile des appels**, **variables locales**, **automatique**, et **espion** windows. Vous pouvez également pointer sur les variables pour afficher les DataTips et effectuer l’évaluation de l’expression dans le **exécution** fenêtre. Les données que vous consultez provient de l’instantané du processus de l’application effectuée à ce stade dans le temps.
+    Lorsque vous reculer ou avancez, Visual Studio entre en mode débogage historique. Dans ce mode, le contexte du débogueur passe à l’heure où l’événement sélectionné a été enregistré. Visual Studio déplace également le pointeur vers la ligne de code dans la fenêtre source correspondante. 
 
-Ainsi, par exemple, si vous avez atteint un point d’arrêt et de franchir une étape (**F10**), la **arrière** insère Visual Studio en mode historique à la ligne de code correspondant au point d’arrêt. 
+    Dans cette vue, vous pouvez inspecter les valeurs dans le **pile des appels**, **variables locales**, **automatique**, et **espion** windows. Vous pouvez également pointer sur les variables pour afficher les DataTips et effectuer l’évaluation de l’expression dans le **exécution** fenêtre. Les données que vous consultez provient de l’instantané du processus de l’application effectuée à ce stade dans le temps.
 
-![Mode historique d’activation sur un événement avec un instantané](../debugger/media/intellitrace-historical-mode-with-snapshot.png "mode historique d’activation sur un événement avec un instantané")
+    Ainsi, par exemple, si vous avez atteint un point d’arrêt et de franchir une étape (**F10**), la **arrière** insère Visual Studio en mode historique à la ligne de code correspondant au point d’arrêt. 
 
-Pour revenir à l’exécution en direct, choisissez **continuer (F5)** ou cliquez sur le **revenir au débogage réel** lien dans la barre d’informations. 
+    ![Mode historique d’activation sur un événement avec un instantané](../debugger/media/intellitrace-historical-mode-with-snapshot.png "mode historique d’activation sur un événement avec un instantané")
 
-Vous pouvez également afficher un instantané à partir de la **événements** onglet. Sélectionnez un événement avec un instantané, cliquez sur **activer le débogage d’historique**. Vous pouvez également cliquer sur l’icône de l’appareil photo pour activer le débogage d’historique.
+2. Pour revenir à l’exécution en direct, choisissez **continuer (F5)** ou cliquez sur le **revenir au débogage réel** lien dans la barre d’informations. 
 
-![Activer le débogage d’historique d’un événement](../debugger/media/intellitrace-activate-historical-debugging.png "activer le débogage d’historique d’un événement")
+3. Vous pouvez également afficher un instantané à partir de la **événements** onglet. Pour ce faire, sélectionnez un événement avec un instantané, puis cliquez sur **activer le débogage d’historique**.
 
-Contrairement à la **définir l’instruction suivante** commande, affichage d’un instantané ne réexécutez votre code ; il vous donne une vue statique de l’état de l’application à un point dans le temps qui s’est produite dans le passé.
+    Vous pouvez également cliquer sur l’icône de l’appareil photo pour activer le débogage d’historique.
 
-![Vue d’ensemble de l’étape IntelliTrace différée](../debugger/media/intellitrace-step-back-overview.png "vue d’ensemble de IntelliTrace étape différée")
+    ![Activer le débogage d’historique d’un événement](../debugger/media/intellitrace-activate-historical-debugging.png "activer le débogage d’historique d’un événement")
+
+    Contrairement à la **définir l’instruction suivante** commande, affichage d’un instantané ne réexécutez votre code ; il vous donne une vue statique de l’état de l’application à un point dans le temps qui s’est produite dans le passé.
+
+    ![Vue d’ensemble de l’étape IntelliTrace différée](../debugger/media/intellitrace-step-back-overview.png "vue d’ensemble de IntelliTrace étape différée")
 
 ## <a name="next-steps"></a>Étapes suivantes  
  Pour savoir comment inspecter des variables dans Visual Studio, consultez [visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)  

@@ -1,5 +1,5 @@
 ---
-title: "Résultats de la métrique dans Visual Studio de code | Documents Microsoft"
+title: "La fenêtre Résultats de la métrique Code dans Visual Studio | Documents Microsoft"
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
@@ -19,15 +19,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772533e74b214d48583e5d2dc1d64278416933df
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="working-with-code-metrics-data"></a>Utilisation des données de métrique du code
+# <a name="using-the-code-metrics-results-window"></a>À l’aide de la fenêtre Résultats des métriques de Code
 
-Le **résultats de la métrique Code** fenêtre affiche les données qui sont générées par l’analyse des métriques du code. Pour plus d’informations sur les valeurs de données de métriques de code, consultez [les valeurs de métrique de Code](../code-quality/code-metrics-values.md).
+Le **résultats de la métrique Code** fenêtre affiche les données qui sont générées par l’analyse des métriques du code. Pour plus d’informations sur les valeurs de données de métriques de code, consultez [valeurs de la métrique du Code](../code-quality/code-metrics-values.md).
 
 ## <a name="displaying-code-metrics-results"></a>Affichage des résultats des métriques de code
 
@@ -41,7 +41,7 @@ Le **résultats de la métrique Code** fenêtre s’affiche automatiquement lors
 
 - Sur le **vue** menu, choisissez **autres fenêtres** > **résultats de la métrique Code**.
 
-   Le **résultats de la métrique Code** fenêtre s’affiche, même si elle ne contient aucun résultat.
+Le **résultats de la métrique Code** fenêtre s’affiche, même si elle ne contient aucun résultat.
 
 ### <a name="to-view-code-metrics-details"></a>Pour afficher les détails des métriques de code
 
@@ -73,7 +73,7 @@ Vous pouvez ajouter ou supprimer des résultats les colonnes à partir de la **r
 
 1. Cliquez sur le **Ajout/Suppression de colonnes** bouton.
 
-     \-ou - avec le bouton droit n’importe quel en-tête de colonne, puis cliquez **Ajout/Suppression de colonnes**.
+     \- ou - avec le bouton droit n’importe quel en-tête de colonne, puis cliquez **Ajout/Suppression de colonnes**.
 
 1. Dans le **Ajout/Suppression de colonnes** boîte de dialogue, désactivez la case à cocher pour la colonne que vous souhaitez supprimer, puis cliquez sur **OK**.
 
@@ -131,5 +131,5 @@ Pour plus d’informations sur VSTS des éléments de travail, consultez [(VSTS)
 
 ## <a name="see-also"></a>Voir aussi
 
-[Valeurs de la métrique du code](../code-quality/code-metrics-values.md)  
-[Guide pratique pour générer les données de la métrique du code](../code-quality/how-to-generate-code-metrics-data.md)
+- [Valeurs de métrique de code](../code-quality/code-metrics-values.md)
+- [Comment : générer des données de métrique du code](../code-quality/how-to-generate-code-metrics-data.md)

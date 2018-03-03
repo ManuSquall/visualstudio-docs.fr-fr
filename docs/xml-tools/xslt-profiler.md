@@ -10,19 +10,22 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: fc42d87dcd32fdc8a96c6295453f755e9623316c
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 95bad7dfdf38b4b8a8f2aa1a307cf7512732ae9c
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="xslt-profiler"></a>Profileur XSLT
 
-Le Générateur de profils XSLT est un outil de génération de profils pour l'analyse des performances qui vous aide à développer et à déboguer des documents XSLT. Le Générateur de profils XSLT est un outil qui permet aux développeurs de mesurer et d'évaluer les problèmes liés aux performances dans le code XSLT en créant des rapports de performances XSLT détaillés. Le Générateur de profils XSLT fournit des conseils utiles pour les  optimisations de feuille de style XSL et XSLT, qui sont essentielles pour les applications basées sur XSLT qui nécessitent des performances maximales.
+Le Générateur de profils XSLT est un outil de génération de profils pour l'analyse des performances qui vous aide à développer et à déboguer des documents XSLT. Vous pouvez mesurer et évaluer les problèmes de performances dans le code XSLT en créant des rapports de performances XSLT détaillés. Le Générateur de profils XSLT fournit des conseils utiles pour les  optimisations de feuille de style XSL et XSLT, qui sont essentielles pour les applications basées sur XSLT qui nécessitent des performances maximales.
 
 Le Générateur de profils XSLT fait partie de Visual Studio et est disponible à partir de la **XML** menu.
 
 ![Profileur XSLT](../xml-tools/media/profile-xslt-menu.png)
+
+> [!NOTE]
+> Le Générateur de profils XSLT est uniquement disponible dans l’édition Enterprise de Visual Studio 2017.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: dc9a688892ca7ec08a89c4da8e1732b5e2b3e267
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 553ed7d6a6fcc2edef436251d720919fe399653a
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="code-metrics-values"></a>Valeurs de métrique de code
 
@@ -26,9 +26,11 @@ La complexité accrue d’applications modernes augmente également la difficult
 
 Les développeurs peuvent utiliser Visual Studio pour générer des données de métrique du code qui mesurent la complexité et la facilité de maintenance de leur code managé. Données de métrique du code peuvent être générées pour une solution entière ou un seul projet.
 
+Pour plus d’informations sur la façon de générer des données de métrique du code dans Visual Studio, consultez [Comment : générer des données de métrique du code](../code-quality/how-to-generate-code-metrics-data.md).
+
 ## <a name="software-measurements"></a>Dimensions du logiciel
 
-La liste suivante présente les résultats de métriques de code qui [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] calcule :
+La liste suivante montre le code des résultats de la métrique qui calcule de Visual Studio :
 
 - **Indice de maintenabilité** -calcule une valeur d’index compris entre 0 et 100 qui représente la relative simplicité de gestion du code. Une valeur élevée signifie une meilleure facilité de maintenance. Contrôle d’accès codés en couleurs peut servir à identifier rapidement les zones à problème dans votre code. Une évaluation verte est compris entre 20 et 100 et indique que le code a bonne maintenabilité. Une évaluation jaune est comprise entre 10 et 19 et indique que le code est relativement facile à gérer. Une évaluation rouge est une évaluation comprise entre 0 et 9 et indique une maintenabilité basse.
 
@@ -51,3 +53,8 @@ Pour plus d’informations sur la façon dont la métrique du Code traite les m�
 Certains outils logiciels et les compilateurs de génèrent du code qui est ajouté à un projet et que le développeur ne voit pas ou ne doit pas modifier. Principalement, la métrique du Code ignore le code généré lorsqu’il calcule les valeurs de mesures. Ainsi, les valeurs de métriques refléter ce que le développeur peut voir et modifier.
 
 Code généré pour les Windows Forms n’est pas ignoré, car il s’agit de code que le développeur peut voir et modifier.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+- [Comment : générer des données de métrique du code](../code-quality/how-to-generate-code-metrics-data.md)
+- [Utilisez la fenêtre Résultats des métriques de Code](../code-quality/working-with-code-metrics-data.md)

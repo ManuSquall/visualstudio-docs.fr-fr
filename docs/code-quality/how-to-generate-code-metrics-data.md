@@ -1,5 +1,5 @@
 ---
-title: "Comment générer des données de métrique du Code dans Visual Studio | Documents Microsoft"
+title: "Comment générer des données de métrique du code dans Visual Studio | Documents Microsoft"
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3ca031d23d244c3b02cfea1e64685663e4e25a34
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 52726b521d3887dee31b74b0ba110aa8d25350e5
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Comment : générer des données de métrique du code
 
@@ -37,7 +38,7 @@ Vous pouvez générer des résultats de métriques de code pour une solution com
 
 - Dans le **résultats de la métrique Code** fenêtre, choisissez le **calculer la métrique du Code pour la Solution** bouton.
 
-   Les résultats sont générés et **résultats de la métrique Code** fenêtre s’affiche.
+Les résultats sont générés et **résultats de la métrique Code** fenêtre s’affiche.
 
 ## <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>Pour générer des résultats de métriques de code pour un ou plusieurs projets sélectionnés
 
@@ -49,8 +50,9 @@ Vous pouvez générer des résultats de métriques de code pour une solution com
 
 ## <a name="to-view-the-results-details"></a>Pour afficher les détails des résultats
 
-- Dans le **résultats de la métrique Code** fenêtre, développez l’arborescence dans le **hiérarchie** colonne.
+Dans le **résultats de la métrique Code** fenêtre, développez l’arborescence dans le **hiérarchie** colonne.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Valeurs de la métrique du code](../code-quality/code-metrics-values.md)
+- [Utilisez la fenêtre Résultats des métriques de Code](../code-quality/working-with-code-metrics-data.md)
+- [Valeurs de métrique de code](../code-quality/code-metrics-values.md)
