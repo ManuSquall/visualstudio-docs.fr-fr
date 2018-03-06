@@ -188,6 +188,7 @@
 ## [Guide pratique pour utiliser AsyncPackage pour charger des VSPackages en arrière-plan](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)
 ## [Guide pratique pour utiliser le contexte de l’interface utilisateur basé sur une règle pour les extensions Visual Studio](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)
 ## [Guide pratique pour diagnostiquer les performances de l’extension](how-to-diagnose-extension-performance.md)
+## [Guide pratique pour diagnostiquer les délais de l’interface utilisateur causés par les extensions](how-to-diagnose-ui-delays-caused-by-extensions.md)
 ## [Dépannage de VSPackages](troubleshooting-vspackages.md)
 # [Interpréteur de commande (intégré ou isolé)](https://vspartner.com/pages/vsshells)
 # [Publication d’extensions Visual Studio](shipping-visual-studio-extensions.md)

@@ -4,57 +4,60 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.view.tierinteraction
-helpviewer_keywords: Tier Interactions view
-ms.assetid: bb4fb21c-f3f7-473a-8b5e-442da4c2c445
-caps.latest.revision: "15"
+f1_keywords:
+- vs.performance.view.tierinteraction
+helpviewer_keywords:
+- Tier Interactions view
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a42e748e45d7db0606d585d774be254a7358d6b0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 7246d9ac119885e8a6f736d853cf0b842b84f8c9
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="tier-interactions-view"></a>Interactions de couche, vue
-Le profilage d’interaction de couche fournit des informations supplémentaires sur les temps d’exécution des fonctions des applications multicouches qui communiquent avec des bases de données via [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Les données sont collectées uniquement pour les appels de fonctions synchrones.  
-  
- **Spécifications**  
-  
--   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]  
-  
- La vue Interactions affiche les données d’interaction de couche dans deux volets :  
-  
--   Le volet principal est une arborescence hiérarchique. La ligne de plus haut niveau contient les données agrégées pour les connexions de base de données d’une page [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ou d’un processus. Les nœuds enfants contiennent des données agrégées pour les connexions de base de données du parent.  
-  
--   Quand vous cliquez sur un nœud d’appel de base de données dans le volet principal, les données de l’instance de l’appel de base de données s’affichent dans le volet des détails.  
-  
- La durée affichée correspond au nombre de millisecondes ou au nombre de cycles d’horloge de l’UC. Pour modifier l’unité d’affichage de la durée, cliquez sur le menu **Outils**, cliquez sur **Options** puis choisissez une des options de **Afficher les valeurs de date/heure comme**.  
-  
-## <a name="master-pane"></a>Page principale  
-  
-|Colonne|Description|  
-|------------|-----------------|  
-|**Name**|-   Pour une ligne du plus haut niveau, le nom du processus ou de la page web profilés.<br />-   Pour une ligne de connexion de base de données, le nom du serveur qui héberge la base de données.|  
-|**Base de données**|Nom de la base de données (lignes de connexion de base de données uniquement).|  
-|**Nombre**|Nombre total de demandes qui sont générées par le processus, une page web ou une connexion de base de données.|  
-|**Temps écoulé total**|Temps total passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|  
-|**Temps écoulé max.**|Temps maximal passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|  
-|**Temps écoulé min.**|Temps minimal passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|  
-|**Temps moyen écoulé**|Temps moyen passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|  
-  
-## <a name="database-connection-details-pane"></a>Volet Informations de connexion de la base de données  
-  
-|Colonne|Description|  
-|------------|-----------------|  
-|**Texte de la commande**|Requête SQL de la demande.|  
-|**Nombre de requêtes**|Nombre d’exécutions de la requête.|  
-|**Temps écoulé total**|Temps total passé à exécuter les instances de la requête.|  
-|**Temps écoulé max.**|Temps maximal passé à exécuter une des instances de la requête.|  
-|**Temps écoulé min.**|Temps minimal passé à exécuter une des instances de la requête.|  
+
+Le profilage d’interaction de couche fournit des informations supplémentaires sur les temps d’exécution des fonctions des applications multicouches qui communiquent avec des bases de données via [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Les données sont collectées uniquement pour les appels de fonctions synchrones.
+
+**Spécifications**
+
+- Visual Studio Enterprise
+
+La vue Interactions affiche les données d’interaction de couche dans deux volets :
+
+- Le volet principal est une arborescence hiérarchique. La ligne de plus haut niveau contient les données agrégées pour les connexions de base de données d’une page [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ou d’un processus. Les nœuds enfants contiennent des données agrégées pour les connexions de base de données du parent.
+
+- Quand vous cliquez sur un nœud d’appel de base de données dans le volet principal, les données de l’instance de l’appel de base de données s’affichent dans le volet des détails.
+
+ La durée affichée correspond au nombre de millisecondes ou au nombre de cycles d’horloge de l’UC. Pour modifier l’unité d’affichage de la durée, cliquez sur le menu **Outils**, cliquez sur **Options** puis choisissez une des options de **Afficher les valeurs de date/heure comme**.
+
+## <a name="master-pane"></a>Volet principal
+
+|Colonne|Description|
+|------------|-----------------|
+|**Name**|- Pour une ligne de haut niveau, le nom de la page web ou du processus profilé.<br />- Pour une ligne de connexion de base de données, le nom du serveur qui héberge la base de données.|
+|**Base de données**|Nom de la base de données (lignes de connexion de base de données uniquement).|
+|**Nombre**|Nombre total de demandes qui sont générées par le processus, une page web ou une connexion de base de données.|
+|**Temps écoulé total**|Temps total passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|
+|**Temps écoulé max.**|Temps maximal passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|
+|**Temps écoulé min.**|Temps minimal passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|
+|**Temps moyen écoulé**|Temps moyen passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|
+
+## <a name="database-connection-details-pane"></a>Volet d’informations de connexion de base de données
+
+|Colonne|Description|
+|------------|-----------------|
+|**Texte de la commande**|Requête SQL de la demande.|
+|**Nombre de requêtes**|Nombre d’exécutions de la requête.|
+|**Temps écoulé total**|Temps total passé à exécuter les instances de la requête.|
+|**Temps écoulé max.**|Temps maximal passé à exécuter une des instances de la requête.|
+|**Temps écoulé min.**|Temps minimal passé à exécuter une des instances de la requête.|
 |**Temps moyen écoulé**|Temps moyen passé à exécuter une instance de la requête.|

@@ -33,6 +33,8 @@
 #### [Contrôler les mises à jour applicables aux déploiements de Visual Studio](install/controlling-updates-to-visual-studio-deployments.md)
 ### Gérer les installations
 #### [Outils de détection et de gestion des instances de Visual Studio](install/tools-for-managing-visual-studio-instances.md)
+### Gérer les abonnements
+#### [Abonnements Visual Studio : vue d’ensemble pour l’administrateur](/visualstudio/subscriptions/admin-responsibilities) 
 ### [Guide de l’administrateur Help Viewer](ide/help-viewer-administrator-guide.md)
 #### [Arguments de ligne de commande pour Help Content Manager](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Substitutions Help Content Manager](ide/help-content-manager-overrides.md)
@@ -43,10 +45,10 @@
 ## [Installer les outils de génération dans un conteneur](install/build-tools-container.md)
 ### [Exemple avancé pour les conteneurs](install/advanced-build-tools-container.md)
 ### [Problèmes de conteneurs connus](install/build-tools-container-issues.md)
-# Démarrages rapides
+# Guides de démarrage rapide
 ## [Orientation de Visual Studio](ide/quickstart-ide-orientation.md)
 ## [Projets et solutions](ide/quickstart-projects-solutions.md)
-## [Écrire du code dans l’éditeur](ide/quickstart-editor.md)
+## [Utiliser l’éditeur](ide/quickstart-editor.md)
 ## [Personnaliser les couleurs des thèmes et du texte](ide/quickstart-personalize-the-ide.md)
 ## [C++ : créer une application console](ide/getting-started-with-cpp-in-visual-studio.md)
 ## [Python : créer une application web](ide/quickstart-python.md)
@@ -98,7 +100,7 @@
 #### [Prise en charge de l’IDE de Visual Studio 64 bits](ide/visual-studio-ide-64-bit-support.md)
 ### [Développer sans projet ou solution (« Ouvrir le dossier »)](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 #### [Personnaliser les tâches Build et Debug](ide/customize-build-and-debug-tasks-in-visual-studio.md)
-### [Écrire du code dans l’éditeur](ide/writing-code-in-the-code-and-text-editor.md)
+### [Utiliser l’éditeur](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Rechercher et remplacer du texte](ide/finding-and-replacing-text.md)
 ##### [Utiliser des expressions régulières](ide/using-regular-expressions-in-visual-studio.md)
 ##### [Zone Rechercher/Commande](ide/find-command-box.md)
