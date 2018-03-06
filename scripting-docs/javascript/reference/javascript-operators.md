@@ -20,11 +20,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27be497a62a21aa8dc222c96539a48f7e5d62425
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e99ead2f921f5247757192bcb3330aa4ebca8d7
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-operators"></a>JavaScript, opérateurs
 Le tableau ci-dessous répertorie les opérateurs [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
@@ -67,8 +67,8 @@ Le tableau ci-dessous répertorie les opérateurs [!INCLUDE[javascript](../../ja
 |Effectue une conjonction logique sur deux expressions.|[&& (AND logique), opérateur](../../javascript/reference/logical-and-operator-decrement-javascript.md)|  
 |Effectue une négation logique sur une expression.|[! (NOT logique), opérateur](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|  
 |Effectue une disjonction logique sur deux expressions.|[Opérateur logique OR (opérateur &#124; &#124;)](../../javascript/reference/logical-or-operator-decrement-javascript.md)|  
-|Divise la valeur d'une variable par la valeur d'une expression et assigne le reste à la variable.|[Opérateur d'assignation de module (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|  
-|Divise deux nombres et retourne le reste.|[Opérateur de module (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|  
+|Divise la valeur d'une variable par la valeur d'une expression et assigne le reste à la variable.|[Opérateur d’assignation de reste (% =)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|  
+|Divise deux nombres et retourne le reste.|[Opérateur de reste (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|  
 |Multiplie la valeur d'une variable par la valeur d'une expression et assigne le résultat à la variable.|[Opérateur d'assignation de multiplication (*=)](../../javascript/reference/multiplication-assignment-operator-decrement-equal-javascript.md)|  
 |Multiplie deux nombres.|[Opérateur Multiplication (*)](../../javascript/reference/multiplication-operator-decrement-javascript.md)|  
 |Crée un objet.|[new, opérateur](../../javascript/reference/new-operator-decrementjavascript.md)|  
