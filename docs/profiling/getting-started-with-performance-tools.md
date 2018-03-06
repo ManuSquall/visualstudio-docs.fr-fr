@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - getting started, performance
 - getting started, profiling tools
 ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c18d2ada5f150abe379d3cae7ad830392cb62ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: be3292cb4484263b9e70a4bbdde36f60f1ea7ccb
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="getting-started-with-performance-tools"></a>Bien démarrer avec les outils d’analyse des performances
 Cette section fournit une vue d’ensemble des concepts et des tâches que vous devez suivre lorsque vous collectez, affichez et analysez les performances du code à l’aide des outils d’analyse des performances de Visual Studio.  
@@ -37,7 +39,7 @@ Cette section fournit une vue d’ensemble des concepts et des tâches que vous 
 |----------|---------------------|  
 |**Profilez rapidement une application ou un site web** : utilisez l’Assistant Performance pour configurer et exécuter une session de profilage pour une solution Visual Studio ou un site web.|-   [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [Guide pratique pour collecter des données de performances pour un site web](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
 |**Profilez une application sans l’Assistant** : apprenez à utiliser les pages de propriétés des sessions de performance pour créer une session de performance.|-   [Guide pratique pour créer manuellement des sessions de performance](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**Faites un essai** : faites-vous la main en profilant un exemple d’application.|-   [Procédure pas à pas : Identification des problèmes de performances](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax, exemple](../profiling/peopletrax-sample-profiling-tools.md)|  
+|**Faites un essai** : faites-vous la main en profilant un exemple d’application.|-   [Procédure pas à pas : Identification des problèmes de performances](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [Exemple PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues d’ensemble](../profiling/overviews-performance-tools.md)   

@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour utiliser Boost.Test pour C++ dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 01/05/2018
+ms.date: 01/29/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-devops-test
@@ -10,12 +10,13 @@ ms.topic: article
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bdf772be03f6021f499b9bf777922d6d2743e0dc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2276c65dd0ed0478003c1e4f2c99683eb88b0ac8
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Guide pratique pour utiliser Boost.Test pour C++ dans Visual Studio
 
@@ -33,32 +34,40 @@ Boost.Test nécessite [Boost](http://www.boost.org/)! Si Boost n’est pas insta
 
 1. Installez la bibliothèque dynamique ou statique de Boost.Test :
 
-    - Exécutez `vcpkg install boost-test` pour installer la bibliothèque dynamique de Boost.Test.
+    - Exécutez **vcpkg install boost-test** pour installer la bibliothèque dynamique Boost.Test.
     
        - OU -
        
-    - Exécutez `vcpkg install boost-test:x86-windows-static` pour installer la bibliothèque statique de Boost.Test.
+    - Exécutez **vcpkg install boost-test:x86-windows-stati** pour installer la bibliothèque statique Boost.Test.
 
-1. Exécutez `vcpkg integrate install` pour configurer Visual Studio avec la bibliothèque et inclure les chemins des fichiers d’en-tête et des fichiers binaires de Boost.
+1. Exécutez **vcpkg integrate install** pour configurer Visual Studio avec la bibliothèque et inclure les chemins d’accès des en-têtes et des binaires Boost.
 
-## <a name="create-a-project-for-your-tests"></a>Créer un projet pour vos tests
+## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>Ajouter le modèle d’élément (Visual Studio 2017 15.6 et versions ultérieures)
 
-> [!NOTE]
-> Dans Visual Studio 2017 version 15.5, aucun modèle de projet ou d’élément de test préconfiguré n’est disponible pour Boost.Test. Vous devez donc créer un projet d’application de console pour y placer vos tests. Des modèles de test pour Boost.Test sont prévus pour une version future de Visual Studio.
+1. Pour créer un fichier .cpp à des fins de tests, cliquez avec le bouton droit sur le nœud du projet dans **l’Explorateur de solutions**, puis choisissez **Ajouter un nouvel élément**. 
+ 
+![Modèle d’élément Boost.Test](media/boost_test_item_template.png "Modèle d’élément Boost.Test")
+
+1. Le nouveau fichier contient un exemple de méthode de test. Générez votre projet pour permettre à **l’Explorateur de tests** de découvrir la méthode.
+
+Le modèle d’élément utilise la variante à en-tête unique de Boost.Test, mais vous pouvez modifier le chemin d’accès #include pour utiliser la variante avec bibliothèque autonome. Pour plus d’informations, consultez la section [Ajouter des directives include](#add_include_directives).
+
+## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Créer un projet de test (Visual Studio 2017 version 15.5)
+
+Dans Visual Studio 2017 version 15.5, aucun modèle de projet ou d’élément de test préconfiguré n’est disponible pour Boost.Test. Vous devez donc créer et configurer un projet d’application de console pour y placer vos tests. 
 
 1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de la solution et choisissez **Ajouter** > **Nouveau projet**.
 
 1. Dans le volet gauche, choisissez **Visual C++** > **Windows Desktop**, puis le modèle **Application console Windows**.
 
 1. Nommez le projet et choisissez **OK**.
+1. Supprimez la fonction `main` dans le fichier .cpp. 
 
-## <a name="link-and-configuration-boost-static-library-only"></a>Liaison et configuration (bibliothèque statique de Boost uniquement)
+1. Si vous utilisez la version à en-tête unique ou la version à bibliothèque dynamique de Boost.Test, accédez à la section [Ajouter des directives #include](#add_include_directives). Si vous utilisez la version avec bibliothèque statique, vous devrez suivre des étapes de configuration supplémentaires :
 
-Configurez le projet pour exécuter des tests Boost.Test.
+   a. Pour modifier le fichier projet, commencez par le décharger. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et choisissez **Décharger le projet**. Ensuite, cliquez avec le bouton droit sur le nœud du projet et choisissez **Modifier <nom\>.vcxproj**.
 
-1. Pour modifier le fichier projet, commencez par le décharger. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et choisissez **Décharger le projet**. Ensuite, cliquez avec le bouton droit sur le nœud du projet et choisissez **Modifier <nom\>.vcxproj**.
-
-1. Ajouter deux lignes au groupe de propriétés **Globals** comme indiqué ici :
+   b. Ajouter deux lignes au groupe de propriétés **Globals** comme indiqué ici :
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -67,19 +76,17 @@ Configurez le projet pour exécuter des tests Boost.Test.
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
-1. Enregistrez et fermez le fichier \*.vcxproj, puis rechargez le projet.
+   c. Enregistrez et fermez le fichier \*.vcxproj, puis rechargez le projet.
 
-1. Pour ouvrir les **pages de propriétés**, cliquez avec le bouton droit sur le nœud du projet et choisissez **Propriétés**.
+   d. Pour ouvrir les **pages de propriétés**, cliquez avec le bouton droit sur le nœud du projet et choisissez **Propriétés**.
 
-1. Développez **C/C++** > **Génération de code**, puis sélectionnez **Bibliothèque Runtime**. Sélectionnez `/MTd` pour une bibliothèque runtime statique de débogage ou `/MT` pour une bibliothèque runtime statique de version.
+   d. Développez **C/C++** > **Génération de code**, puis sélectionnez **Bibliothèque Runtime**. Sélectionnez **/MTd** pour une bibliothèque runtime statique de débogage ou **/MT** pour une bibliothèque runtime statique de publication.
 
-1. Développez **Éditeur de liens > Système**. Vérifiez que **Sous-système** a la valeur **Console**.
+   f. Développez **Éditeur de liens > Système**. Vérifiez que **Sous-système** a la valeur **Console**.
 
-1. Choisissez **OK** pour fermer les pages de propriétés.
+   g. Choisissez **OK** pour fermer les pages de propriétés.
 
 ## <a name="add-include-directives"></a>Ajouter des directives include
-
-1. S’il existe une fonction `main` dans votre fichier .cpp de test, supprimez-la.
 
 1. Dans votre fichier .cpp de test, ajoutez les directives `#include` nécessaires pour rendre les types et les fonctions de votre programme visibles par le code de test. En règle générale, le programme est un niveau au-dessus dans l’arborescence des dossiers. Si vous tapez `#include "../"`, une fenêtre IntelliSense apparaît et vous permet de sélectionner le chemin complet du fichier d’en-tête.
 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32a8e6413fd719bfa4be6296972d39d609eab411
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 3cc0b6b99dd76a531ed3e99dcac8ae5d438d7e63
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Installation de la prise en charge de Python dans Visual Studio sur Windows
 
@@ -31,7 +31,7 @@ Pour installer la prise en charge de Python pour Visual Studio (également appe
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 et versions antérieures](#visual-studio-2013-and-earlier)
 
-Pour Visual Studio 2015 et versions antérieures, vous devez aussi installer séparément un interpréteur Python de votre choix (Python 3.5 et versions antérieures. La version 3.6 n’est pas prise en charge et génère le message « Python version 3.6 n’est pas pris en charge »). Pour plus d’informations, consultez [Environnements Python](managing-python-environments-in-visual-studio.md). La même page contient également des instructions pour l’ajout d’un interpréteur Python existant à Visual Studio 2017.
+Pour Visual Studio 2015 et les versions antérieures, vous devez aussi [installer séparément l’interpréteur Python](installing-python-interpreters.md) de votre choix (Python 3.5 et versions antérieures ; la version 3.6 n’est pas prise en charge et génère le message « Python version 3.6 non pris en charge »). La même page contient également des instructions pour l’ajout d’un interpréteur Python existant à Visual Studio 2017.
 
 Pour tester rapidement la prise en charge de Python après avoir suivi la procédure d’installation, ouvrez la fenêtre interactive Python en appuyant sur Alt+I et en entrant `2+2`. Si vous n’obtenez pas la sortie `4`, passez en revue la procédure que vous avez suivie.
 
@@ -43,7 +43,7 @@ Pour tester rapidement la prise en charge de Python après avoir suivi la procé
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Téléchargez et exécutez la dernière version du programme d’installation de Visual Studio 2017. Si Visual Studio est déjà installé, exécutez le programme d’installation de Visual Studio et passez à l’étape 2.
+1. Téléchargez et exécutez la dernière version du programme d’installation de Visual Studio 2017. Si Visual Studio est déjà installé, exécutez le programme d’installation de Visual Studio et passez à la deuxième étape.
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Installer Visual Studio 2017 Community</a>
@@ -91,7 +91,7 @@ Pour tester rapidement la prise en charge de Python après avoir suivi la procé
 
     ![Option PTVS du programme d’installation de Visual Studio 2015](media/installation-vs2015.png)
 
-1. Une fois l’installation de Visual Studio terminée, [installez un interpréteur Python de votre choix](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters). Si un interpréteur est déjà installé, consultez [Création d’un environnement pour un interpréteur existant](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+1. Une fois l’installation de Visual Studio terminée, [installez un interpréteur Python de votre choix](installing-python-interpreters.md). Si vous disposez déjà d’un interpréteur et que Visual Studio ne le détecte pas automatiquement, consultez la page [Identifier manuellement un environnement existant](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 et versions antérieures
 
@@ -101,7 +101,7 @@ Pour tester rapidement la prise en charge de Python après avoir suivi la procé
     - Visual Studio 2012 : [PTVS 2.1 pour Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478).
     - Visual Studio 2010 : [PTVS 2.1 pour Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479).
 
-1. [Installez un interpréteur Python de votre choix](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters). Si un interpréteur est déjà installé, consultez [Création d’un environnement pour un interpréteur existant](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+1. [Installez un interpréteur Python de votre choix](installing-python-interpreters.md). Si vous disposez déjà d’un interpréteur et que Visual Studio ne le détecte pas automatiquement, consultez la page [Identifier manuellement un environnement existant](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 
 ## <a name="install-locations"></a>Emplacements d’installation
 

@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31d36ede3293a72db06e9919545dafb779cee252
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Création d’une extension C++ pour Python
 
@@ -219,7 +219,7 @@ Pour transformer la DLL C++ en extension pour Python, vous commencez par modifie
 1. Définissez la configuration cible sur « Release » et regénérez le projet C++ pour vérifier votre code. Si vous rencontrez des erreurs, vérifiez les cas suivants :
     - Impossible de localiser Python.h : vérifiez que le chemin indiqué via **C/C++ > Général > Autres répertoires Include** dans les propriétés du projet pointe vers le dossier `include` de votre installation Python.
     - Impossible de localiser des bibliothèques Python : vérifiez que le chemin indiqué via **Éditeur de liens > Général > Répertoires de bibliothèques supplémentaires** dans les propriétés du projet pointe vers le dossier `libs` de votre installation Python.
-    - Erreurs de l’éditeur de liens liées à l’architecture cible : modifiez l’architecture de projet de la cible C++ pour qu’elle corresponde à celle de votre installation Python.
+    - Erreurs de l’éditeur de liens liées à l’architecture cible : modifiez l’architecture de projet de la cible C++ pour qu’elle corresponde à celle de votre installation Python. Par exemple, si vous ciblez x64 avec le projet C++, mais que votre installation de Python est x86, modifiez le projet C++ de façon à cibler x86.
 
 ## <a name="test-the-code-and-compare-the-results"></a>Tester le code et comparer les résultats
 

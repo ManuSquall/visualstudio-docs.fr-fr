@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: beec883c66182b3a840c0052b237c2ba41c5b023
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Rechercher et utiliser des extensions Visual Studio
 
@@ -73,22 +73,22 @@ Si vous voulez désactiver les mises à jour automatiques, vous pouvez désactiv
 
 Nouveauté dans **Visual Studio 2017 version 15.3**, Visual Studio vous avertit si une extension est soupçonnée d’être impliquée dans un blocage au cours d’une session précédente. Lors d’un blocage, Visual Studio stocke la pile d’exception. À son prochain démarrage, Visual Studio examine la pile en commençant par le nœud terminal et en progressant vers la base. Si Visual Studio détermine qu’un frame appartient à un module qui fait partie d’une extension installée et activée, une notification s’affiche.
 
-Nouveauté dans **Visual Studio version 15.6 préversion 3**, Visual Studio vous avertit aussi si une extension est soupçonnée d’être à l’origine d’une absence de réponse de l’interface utilisateur.
+Nouveauté de la **préversion 3 de Visual Studio 2017 version 15.6** : Visual Studio vous avertit aussi si une extension est soupçonnée d’être à l’origine d’une absence de réponse de l’interface utilisateur.
 
 Lorsque ces notifications s’affichent, vous pouvez ignorer la notification ou effectuer l’une des actions suivantes :
 
 - Choisir **Désactiver cette extension**. Visual Studio désactive l’extension et vous indique si vous devez redémarrer votre système pour que la désactivation prenne effet. Vous pouvez réactiver l’extension dans la boîte de dialogue **Extensions et mises à jour** si vous le souhaitez.
 
-- Choisir **Ne plus afficher ce message**. 
-  - Si la notification concerne un incident dans une session antérieure, Visual Studio n’affiche plus de notification lorsqu’un incident associé à cette extension se produit. Visual Studio continue d’afficher des notifications lorsque l’absence de réponse peut être associée à cette extension, ou pour les blocages ou toute absence de réponse qui peuvent être associés à d’autres extensions. 
-  - Si la notification concerne une absence de réponse, l’IDE n’affiche plus de notification lorsque cette extension est associée à l’absence de réponse. Visual Studio continue d’afficher des notifications relatives aux blocages pour cette extension et des notifications relatives aux blocages et à l’absence de réponse pour les autres extensions. 
+- Choisir **Ne plus afficher ce message**.
+  - Si la notification concerne un incident dans une session antérieure, Visual Studio n’affiche plus de notification lorsqu’un incident associé à cette extension se produit. Visual Studio continue d’afficher des notifications lorsque l’absence de réponse peut être associée à cette extension, ou pour les blocages ou toute absence de réponse qui peuvent être associés à d’autres extensions.
+  - Si la notification concerne une absence de réponse, l’IDE n’affiche plus de notification lorsque cette extension est associée à l’absence de réponse. Visual Studio continue d’afficher des notifications relatives aux blocages pour cette extension et des notifications relatives aux blocages et à l’absence de réponse pour les autres extensions.
 
 - Choisir **En savoir plus** pour accéder à cette page.
 
 - Choisir le bouton **X** à la fin de la notification pour fermer la notification. Une nouvelle notification s’affiche pour les instances ultérieures de l’extension associées à un blocage ou une absence de réponse de l’interface utilisateur.
 
 > [!NOTE]
-> Une notification de blocage ou d’absence de réponse de l’interface utilisateur signifie seulement que l’un des modules de l’extension était sur la pile lorsque l’interface utilisateur n’a pas répondu ou lorsque le blocage s’est produit. Cela ne signifie pas nécessairement que l’extension elle-même était en cause. Il est possible que l’extension ait appelé du code qui fait partie de Visual Studio, qui à son tour a entraîné une absence de réponse de l’interface utilisateur ou un blocage. Toutefois, la notification peut toujours être utile si l’extension qui a conduit au blocage ou à l’absence de réponse de l’interface utilisateur n’est pas important(e) pour vous. Dans ce cas, la désactivation de l’extension permet d’éviter le blocage ou l’absence de réponse de l’interface utilisateur à l’avenir sans affecter votre productivité. 
+> Une notification de blocage ou d’absence de réponse de l’interface utilisateur signifie seulement que l’un des modules de l’extension était sur la pile lorsque l’interface utilisateur n’a pas répondu ou lorsque le blocage s’est produit. Cela ne signifie pas nécessairement que l’extension elle-même était en cause. Il est possible que l’extension ait appelé du code qui fait partie de Visual Studio, qui à son tour a entraîné une absence de réponse de l’interface utilisateur ou un blocage. Toutefois, la notification peut toujours être utile si l’extension qui a conduit au blocage ou à l’absence de réponse de l’interface utilisateur n’est pas important(e) pour vous. Dans ce cas, la désactivation de l’extension permet d’éviter le blocage ou l’absence de réponse de l’interface utilisateur à l’avenir sans affecter votre productivité.
 
 ## <a name="sample-master-copies-and-working-copies"></a>Exemple de copies principales et de copies de travail
 

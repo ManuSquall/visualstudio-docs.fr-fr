@@ -17,11 +17,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 65f34339e4c101818cea9b99095d765d5d417cf4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4733d51d40b0aabffa108a1f99e4e492599b67c2
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-sql-server-and-r"></a>Utilisation de SQL Server et R
 
@@ -32,9 +32,9 @@ L’excellente prise en charge de SQL Server par Visual Studio aide les scientif
 > - Visual Studio 2017 : exécutez le programme d’installation de Visual Studio et sélectionnez la charge de travail Stockage et traitement des données, qui comprend SQL Server Data Tools.
 > - Visual Studio 2015 : suivez les instructions fournies dans [Download SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
 
-La vidéo suivante (3m 03s) fournit une brève présentation de SQL Server et R :
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n4AYr0QIwdQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) qui offre une vue d’ensemble de SQL Server et de R (3 min 3 s). |
 
 ## <a name="creating-and-running-sql-queries"></a>Création et exécution de requêtes SQL
 
@@ -65,9 +65,9 @@ RTVS simplifie le processus de combinaison du code R et SQL (processus plutôt c
 - [Écrire et tester une procédure stockée SQL](#write-and-test-a-sql-stored-procedure)
 - [Publier une procédure stockée SQL](#publish-a-sql-stored-procedure)
 
-La vidéo suivante (6m 09s) fournit également une vue d’ensemble de ces fonctionnalités :
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dFKIT2OitWQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) qui offre une vue d’ensemble des procédures stockées de R et de SQL Server (6 min 9 s). |
 
 ### <a name="add-a-database-connection"></a>Ajouter une connexion de base de données
 

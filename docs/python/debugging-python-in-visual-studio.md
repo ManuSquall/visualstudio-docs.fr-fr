@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c158397d327e339955efed35f1ccc525028294e3
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="debugging-your-python-code"></a>Débogage de votre code Python
 
@@ -54,7 +54,7 @@ Le flux de travail de débogage de base implique la définition de points d’ar
 Une session de débogage est initialisée par la commande **Débogage > Démarrer le débogage**, le bouton **Démarrer** de la barre d’outils ou la touche F5. Ces opérations lancent le fichier de démarrage de votre projet (indiqué en gras dans l’Explorateur de solutions) avec l’environnement actif du projet et tous les arguments de ligne de commande ou chemins de recherche qui ont été spécifiés dans Propriétés du projet (consultez la section [Options de débogage d’un projet](#project-debugging-options)). Toutefois, si aucun fichier de démarrage n’est défini pour une raison quelconque, une fenêtre de sortie Python apparaît et disparaît brièvement. Dans ce cas, cliquez avec le bouton droit sur le fichier approprié et sélectionnez **Définir comme fichier de démarrage**.
 
 > [!Note]
-> Le débogueur démarre toujours avec l’environnement Python actif associé au projet. Pour changer d’environnement, activez un autre environnement en suivant les instructions de l’article [Environnements Python](managing-python-environments-in-visual-studio.md).
+> Le débogueur démarre toujours avec l’environnement Python actif associé au projet. Pour changer d’environnement, activez-en un autre en suivant les instructions de la page [Sélectionner un environnement Python pour un projet](selecting-a-python-environment-for-a-project.md).
 
 ### <a name="breakpoints"></a>Points d’arrêt
 

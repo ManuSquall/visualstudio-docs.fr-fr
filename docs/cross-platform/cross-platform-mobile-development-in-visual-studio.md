@@ -14,11 +14,11 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: dfdd5aee71c74febbeca0b7c9683aaa6be915e6e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: ace464f11d16f1498022cb1a0673b294a6ec408b
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 
@@ -80,8 +80,8 @@ Avec Xamarin, vous pouvez cibler Windows, iOS et Android dans la même solution,
 
 |**En savoir plus**|
 |--------------------|
-|[En savoir plus sur les applications Windows universelles](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Centre de développement Windows)|
-|[Créer votre première application](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Centre de développement Windows)|
+|[Introduction à la plateforme Windows universelle](/windows/uwp/get-started/universal-application-platform-guide)|
+|[Créer sa première application](/windows/uwp/get-started/your-first-app)|
 |[Développer des applications pour la plateforme Windows universelle (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrer des applications vers la plateforme Windows universelle (UWP)](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
 
