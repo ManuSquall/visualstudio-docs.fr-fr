@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1a3759070d406e721a12e01950e0e99cea40d1fc
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -33,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  Une fois que Visual Studio crée la collection de nœuds XML, vous pouvez programmer le contrôle directement sans avoir à parcourir le modèle objet Word. Le <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôle peut être supprimé uniquement en supprimant le mappage d’élément à partir du document.  
   
 > [!NOTE]  
->  Si vous accédez à un élément enfant de le <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôler via le <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> propriété, elle retourne un <xref:Microsoft.Office.Interop.Word.XMLNode> objet plutôt qu’un <xref:Microsoft.Office.Tools.Word.XMLNode> contrôle. Pour plus d'informations, consultez [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+>  Si vous accédez à un élément enfant de le <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôler via le <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> propriété, elle retourne un <xref:Microsoft.Office.Interop.Word.XMLNode> objet plutôt qu’un <xref:Microsoft.Office.Tools.Word.XMLNode> contrôle. Pour plus d'informations, consultez [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ## <a name="binding-data-to-the-control"></a>Liaison de données au contrôle  
  Un <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôle ne prend pas en charge la liaison de données. C’est parce que le <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôle n’a pas de fonctionnalités de liaison de données complexe, et liaison de données simple ne peut pas représenter répéter des données.  

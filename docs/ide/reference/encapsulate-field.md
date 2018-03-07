@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78d2c33002e59eab1b6e8605092a74d9995453a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 006f161df8128e1d505947a3e2907a01c4d3915e
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Encapsuler un champ (refactorisation)
 
@@ -52,7 +52,7 @@ Cette refactorisation s’applique à :
 
    - **Clavier**
      - Appuyez sur **Ctrl+R**, puis **Ctrl+E**.  (Notez que le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
-     - Appuyez sur **Ctrl+.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez l’entrée **Encapsuler le champ** dans la fenêtre contextuelle d’aperçu.
+     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez l’entrée **Encapsuler le champ** dans la fenêtre contextuelle d’aperçu.
    - **Souris**
      - Sélectionnez **Modifier > Refactoriser > Encapsuler le champ**.
      - Cliquez avec le bouton droit sur le code et choisissez le menu **Actions rapides et refactorisations**, puis sélectionnez l’entrée **Encapsuler le champ** dans la fenêtre contextuelle d’aperçu.
@@ -77,5 +77,5 @@ Cette refactorisation s’applique à :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Refactorisation](../refactoring-in-visual-studio.md)  
-[Aperçu des modifications](../../ide/preview-changes.md)
+- [Refactorisation](../refactoring-in-visual-studio.md)
+- [Aperçu des modifications](../../ide/preview-changes.md)

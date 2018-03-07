@@ -12,11 +12,11 @@ ms.author: kaseyu
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc380985231937073bff1cb9ce275c38eb70448f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0d3b4a481b56a27f17409d25646cfc235deaacf4
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Générer des substitutions des méthodes Equals et GetHashCode dans Visual Studio
 
@@ -45,7 +45,7 @@ Cette génération de code s’applique à :
 1. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl+.** pour afficher le menu **Actions rapides et refactorisations**.
+     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
      - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec la déclaration de type.
@@ -67,5 +67,5 @@ Cette génération de code s’applique à :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Génération de code](../code-generation-in-visual-studio.md)  
-[Aperçu des modifications](../../ide/preview-changes.md)
+- [Génération de code](../code-generation-in-visual-studio.md)
+- [Aperçu des modifications](../../ide/preview-changes.md)

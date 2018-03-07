@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ccdab053e06efc11b6f9c42d391d4b4fc1f85f7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d66a0e41f0c68d3d5c4378a664ef36aba0d869b7
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="extract-a-method-refactoring"></a>Extraire une méthode (refactorisation)
 
@@ -52,7 +52,7 @@ Cette refactorisation s’applique à :
 
    - **Clavier**
      - Appuyez sur **Ctrl+R**, puis **Ctrl+M**. (Notez que le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
-     - Appuyez sur **Ctrl+.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire la méthode** dans la fenêtre contextuelle d’aperçu.
+     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire la méthode** dans la fenêtre contextuelle d’aperçu.
    - **Souris**
      - Sélectionnez **Modifier > Refactoriser > Extraire la méthode**.
      - Cliquez avec le bouton droit sur le code, puis sélectionnez **Refactoriser > Extraire > Extraire la méthode**.
@@ -64,16 +64,16 @@ Cette refactorisation s’applique à :
    > Vous pouvez également mettre à jour les commentaires et autres chaînes afin d’utiliser ce nouveau nom, et [afficher un aperçu des modifications](../../ide/preview-changes.md) avant de les enregistrer, à l’aide des cases à cocher de la boîte de dialogue **Renommer** qui apparaît en haut à droite de votre IDE.
 
    - C# :
-   
+
     ![Renommer la méthode (C#)](media/extractmethod-rename-cs.png)
 
    - Visual Basic :
-   
+
     ![Renommer la méthode (Visual Basic)](media/extractmethod-rename-vb.png)
 
 1. Quand vous êtes satisfait du changement, appuyez sur le bouton **Appliquer** ou sur la touche **Entrée** pour valider les changements.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Refactorisation](../refactoring-in-visual-studio.md)  
-[Aperçu des modifications](../../ide/preview-changes.md)
+- [Refactorisation](../refactoring-in-visual-studio.md)
+- [Aperçu des modifications](../../ide/preview-changes.md)

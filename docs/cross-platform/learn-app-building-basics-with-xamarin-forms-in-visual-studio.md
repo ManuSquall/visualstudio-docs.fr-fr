@@ -7,24 +7,25 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
-caps.latest.revision: 
+ms.technology: vs-ide-mobile
 author: ghogen
 ms.author: ghogen
 manager: ghogen
 ms.workload:
 - xamarin
-ms.openlocfilehash: 3a066156f66a4e89132010a8c83edc7029dbe19e
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 71470cd03844c7761afbd07c9d454214f5dc36ca
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Principes fondamentaux de la création d’applications avec Xamarin.Forms dans Visual Studio
+
 Une fois que vous avez effectué les étapes dans [Setup and install](../cross-platform/setup-and-install.md) et [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md), cette procédure pas à pas vous montre comment créer une application de base (voir ci-dessous) avec Xamarin.Forms. Xamarin.Forms vous permet d’écrire tout le code de l’interface utilisateur une seule fois dans une bibliothèque de classes .NET Standard. Xamarin affiche ensuite automatiquement les contrôles de l’interface utilisateur native pour les plateformes iOS, Android et Windows universelle. Nous recommandons cette approche (plutôt qu’un projet partagé) car la bibliothèque .NET Standard inclut uniquement les API .NET prises en charge sur toutes les plateformes cibles, et parce que Xamarin.Forms vous permet de partager le code de l’interface utilisateur entre les plateformes.  
   
- ![Exemple d’application météo sur Android, iOS et Windows](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
+![Exemple d’application météo sur Android, iOS et Windows](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
   
- Vous allez effectuer les opérations suivantes pour la générer :  
+Vous allez effectuer les opérations suivantes pour la générer :  
   
 -   [Configurer votre solution](#solution)  
   
@@ -37,10 +38,11 @@ Une fois que vous avez effectué les étapes dans [Setup and install](../cross-p
 -   [Terminer l’interface utilisateur avec une apparence native entre les plateformes](#finish)  
   
 > [!TIP]
->  Vous trouverez le code source complet de ce projet dans le [dépôt d’exemples Xamarin.Forms sur GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).  
+> Vous trouverez le code source complet de ce projet dans le [dépôt d’exemples Xamarin.Forms sur GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).  
   
 ##  <a name="solution"></a> Configurer votre solution  
- Les étapes suivantes créent une solution Xamarin.Forms qui contient une bibliothèque de classes .NET Standard pour le code partagé et deux packages NuGet ajoutés.  
+
+Les étapes suivantes créent une solution Xamarin.Forms qui contient une bibliothèque de classes .NET Standard pour le code partagé et deux packages NuGet ajoutés.  
   
 1.  Dans Visual Studio, créez une solution **Application multiplateforme (Xamarin.Forms)** et nommez-la **WeatherApp**. Recherchez le modèle en sélectionnant **Visual C#** et **Cross-Platform** dans la liste à gauche.  
   
@@ -98,11 +100,12 @@ Une fois que vous avez effectué les étapes dans [Setup and install](../cross-p
 7.  Générez votre solution et vérifiez l’absence d’erreur de génération.  
   
 ##  <a name="dataservice"></a> Écrire le code de service de données partagé  
- Le projet **WeatherApp** est l’emplacement où vous allez écrire du code pour la bibliothèque .NET Standard partagée entre les plateformes. La bibliothèque est automatiquement incluse dans les packages d’application générés par les projets iOS, Android et Windows.  
+
+Le projet **WeatherApp** est l’emplacement où vous allez écrire du code pour la bibliothèque .NET Standard partagée entre les plateformes. La bibliothèque est automatiquement incluse dans les packages d’application générés par les projets iOS, Android et Windows.  
   
- Pour exécuter cet exemple, vous devez tout d’abord vous inscrire pour obtenir une clé API gratuite sur [http://openweathermap.org/appid](http://openweathermap.org/appid).  
+Pour exécuter cet exemple, vous devez tout d’abord vous inscrire pour obtenir une clé API gratuite sur [http://openweathermap.org/appid](http://openweathermap.org/appid).  
   
- Les étapes suivantes permettent d’ajouter du code à la bibliothèque .NET Standard pour accéder aux données de ce service météo et stocker ces données :  
+Les étapes suivantes permettent d’ajouter du code à la bibliothèque .NET Standard pour accéder aux données de ce service météo et stocker ces données :  
   
 1.  Cliquez avec le bouton droit sur le projet **WeatherApp** et sélectionnez **Ajouter > Classe**. Dans la boîte de dialogue **Ajouter un nouvel élément** , nommez le fichier **Weather.cs**. Vous allez utiliser cette classe pour stocker les données du service de données météo.  
   
@@ -206,7 +209,8 @@ Une fois que vous avez effectué les étapes dans [Setup and install](../cross-p
 7.  Générez le projet de bibliothèque **WeatherApp** pour vérifier que le code est correct.  
   
 ##  <a name="uicode"></a> Commencer la rédaction du code de l’interface utilisateur partagé  
- Xamarin.Forms vous permet d’implémenter le code de l’interface utilisateur partagé dans la bibliothèque .NET Standard. Dans cette procédure, vous allez ajouter une page au projet avec un bouton qui met à jour son texte avec les données retournées par le code du service de données météo ajouté dans la section précédente :  
+
+Xamarin.Forms vous permet d’implémenter le code de l’interface utilisateur partagé dans la bibliothèque .NET Standard. Dans cette procédure, vous allez ajouter une page au projet avec un bouton qui met à jour son texte avec les données retournées par le code du service de données météo ajouté dans la section précédente :  
   
 1.  Ajoutez une **page de contenu** nommée **WeatherPage.cs** en cliquant avec le bouton droit sur le projet **WeatherApp**, puis en sélectionnant **Ajouter > Nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément**, sélectionnez **Page de contenu**. Veillez à ne pas sélectionner **Page de contenu (C#)** ou **Affichage du contenu**. Nommez la page **WeatherPage.cs**.  
   
@@ -271,7 +275,8 @@ Une fois que vous avez effectué les étapes dans [Setup and install](../cross-p
 5.  Générez le projet **WeatherApp** pour vérifier que le code est correct.  
   
 ##  <a name="test"></a> Tester votre application avec l’émulateur Visual Studio pour Android  
- Vous êtes maintenant prêt à exécuter l’application ! À présent, exécutez simplement la version Android pour vérifier que l’application obtient des données du service météo. Par la suite, vous exécuterez également les versions iOS et UWP après avoir ajouté d’autres éléments d’interface utilisateur.   
+
+Vous êtes maintenant prêt à exécuter l’application ! À présent, exécutez simplement la version Android pour vérifier que l’application obtient des données du service météo. Par la suite, vous exécuterez également les versions iOS et UWP après avoir ajouté d’autres éléments d’interface utilisateur.   
   
 1.  Définissez **WeatherApp.Android** comme projet de démarrage en cliquant dessus avec le bouton droit et en sélectionnant **Définir comme projet de démarrage**.  
   
@@ -284,7 +289,8 @@ Une fois que vous avez effectué les étapes dans [Setup and install](../cross-p
      ![Application météo Weather App avant et après avoir appuyé sur le bouton](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin FormsGuide 8")  
   
 ##  <a name="finish"></a> Terminer l’interface utilisateur avec une apparence native entre les plateformes  
- Xamarin.Forms affiche les contrôles de l’interface utilisateur native pour chaque plateforme afin que votre application obtienne automatiquement une apparence native. Pour mieux vous rendre compte , terminez l’interface utilisateur avec un champ d’entrée pour un code postal, puis affichez les données météo retournées par le service.  
+
+Xamarin.Forms affiche les contrôles de l’interface utilisateur native pour chaque plateforme afin que votre application obtienne automatiquement une apparence native. Pour mieux vous rendre compte , terminez l’interface utilisateur avec un champ d’entrée pour un code postal, puis affichez les données météo retournées par le service.  
   
 1.  Remplacez le contenu de **WeatherPage.xaml** par le code ci-dessous. Les éléments nommés à l’aide de l’attribut **x:Name**, comme décrit précédemment, peuvent être référencés à partir du code. Xamarin.Forms fournit également un certain nombre d[’options de disposition](http://developer.xamarin.com/guides/xamarin-forms/controls/layouts/) (xamarin.com). Ici, WeatherPage utilise [Grid](http://developer.xamarin.com/api/type/Xamarin.Forms.Grid/) (xamarin.com) et [StackLayout](http://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) (xamarin.com).  
   
@@ -398,4 +404,4 @@ Une fois que vous avez effectué les étapes dans [Setup and install](../cross-p
   
      ![Exemple d’application météo sur Android, iOS et Windows Phone](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
   
- Le code source complet de ce projet est dans le [dépôt d’exemples Xamarin.Forms sur GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
+Le code source complet de ce projet est dans le [dépôt d’exemples Xamarin.Forms sur GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).

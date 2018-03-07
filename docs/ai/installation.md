@@ -9,13 +9,14 @@ ms.date: 11/13/2017
 ms.topic: article
 ms.devlang: multiple
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 85513f908421f4eee5411b5d394b378e66fa31fd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7e182a000dc9c8aaeb721b81036f878430260618
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="installation"></a>Installation
 
@@ -23,11 +24,11 @@ Visual Studio Tools pour IA peut être installé sur les systèmes d’exploitat
 
 ## <a name="installing-visual-studio-tools-for-ai"></a>Installation de Visual Studio Tools pour IA
 
-Cette extension fonctionne avec [Visual Studio](https://docs.microsoft.com/visualstudio/) 2015, 2017, Community Edition ou version ultérieure. 
+Cette extension fonctionne avec [Visual Studio](https://docs.microsoft.com/visualstudio/) 2015, 2017, Community Edition ou version ultérieure.
 
-Pour l’installer, téléchargez-la à partir de [Visual Studio Marketplace](http://aka.ms/vstoolsforai) ou à partir de Visual Studio 
+Pour l’installer, téléchargez-la à partir de [Visual Studio Marketplace](http://aka.ms/vstoolsforai) ou à partir de Visual Studio
 
-1. **Outils**> **Extensions et mises à jour** 
+1. **Outils**> **Extensions et mises à jour**
 
 ![installer CUDA sur Windows](media\installation\extensions.png)
 
