@@ -1,14 +1,15 @@
 ---
 layout: HubPage
-hide_bc: True
-title: Documentation Visual Studio | Microsoft Docs
+hide_bc: 
+title: Documentation Visual Studio | Documents Microsoft
 description: "Apprenez à utiliser Visual Studio 2017 pour développer des applications, des services et des outils dans le langage de votre choix pour vos plateformes et vos appareils."
-searchScope: 
-ms.openlocfilehash: 38ea7dc20884fe5d70cbfa483805364e43a62801
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.topic: landing-page
+searchScope: []
+ms.openlocfilehash: 910dc9db4ebdd1e2a5c9d5743b471a95ab15d407
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -32,7 +33,7 @@ ms.lasthandoff: 01/13/2018
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Environnement IDE de Visual Studio</h3>
-                                                    <p>Créez des applications et des jeux avec Windows pour tous les appareils Android, iOS, Windows, web ou cloud.</p>
+                                                    <p>Créer des applications et des jeux, à l’aide de Windows, pour atteindre chaque appareil Android, iOS, Windows, web ou cloud.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -51,7 +52,7 @@ ms.lasthandoff: 01/13/2018
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio Team Services</h3>
-                                                    <p>Augmentez la productivité de l’équipe avec les outils de projet et les rapports Agile. Créez, testez et déployez des projets à partir du contrôle de code source avec des outils d’intégration continue/de livraison continue récents.</p>
+                                                    <p>Augmenter la productivité de l’équipe avec les outils de projet et les rapports Agile. Créer, tester et déployer des projets à partir du contrôle de code source avec des outils d’intégration continue/de livraison continue modernes.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -70,7 +71,7 @@ ms.lasthandoff: 01/13/2018
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio Code</h3>
-                                                    <p>Profitez d’options d’édition et de débogage avancées dans de nombreux langages sur MacOS, Linux et Windows</p>
+                                                    <p>Édition enrichie et débogage dans des centaines de langues sur MacOS, Linux et Windows</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -89,7 +90,7 @@ ms.lasthandoff: 01/13/2018
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio pour Mac</h3>
-                                                    <p>Créez des applications et des jeux avec Mac pour le cloud, iOS, Android, macOS et les wearables.</p>
+                                                    <p>Créez des applications et des jeux à l’aide de Mac pour le cloud, iOS, Android, macOS et les technologies portables.</p>
                                                 </div>
                                             </div>
                                         </div>

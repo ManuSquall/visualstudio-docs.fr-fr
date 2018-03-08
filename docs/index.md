@@ -1,13 +1,14 @@
 ---
 layout: HubPage
-hide_bc: True
+hide_bc: 
 title: Documentation Visual Studio | Documents Microsoft
 description: "Apprenez à utiliser Visual Studio 2017 pour développer des applications, des services et des outils dans le langage de votre choix pour vos plateformes et vos appareils."
-ms.openlocfilehash: 3875594d51eeb54322eed2fbe423f045c6aa1d4a
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.topic: hub-page
+ms.openlocfilehash: dfd72526fc24ae3b0a33014b8b8ac23e350fb6cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 03/08/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -74,7 +75,7 @@ ms.lasthandoff: 12/15/2017
         <h1>Documentation de Visual Studio</h1>
         <ul class="pivots">
             <li>
-                <a href="#features">Tâches MSBuild</a>
+                <a href="#features">Tâches</a>
                 <ul id="features">
                     <li>
                         <a href="#features1"> </a>
@@ -128,7 +129,7 @@ ms.lasthandoff: 12/15/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Déboguer</h3>
+                                                    <h3>Débogage</h3>
                                                     <p>Examinez et résolvez les problèmes liés à votre code.</p>
                                                 </div>
                                             </div>
