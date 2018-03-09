@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Étape différéent afficher des instantanés à l’aide d’IntelliTrace dans Visual Studio
 
@@ -107,5 +107,7 @@ L’impact sur les performances globales de pas à pas dépend de votre applicat
 
     Solution de contournement :
     * Désactivez toutes les captures instantanées en mettant fin à la session de débogage. 
+
+* Lorsque vous déboguez une application dont le processus a un grand nombre de régions de mémoire unique, par exemple, une application qui charge un grand nombre de DLL, pas à pas détaillé des performances avec des instantanés activées peuvent être affectées. Ce problème sera résolu dans une future version de Windows. Si vous rencontrez ce problème, atteindre nous stepback@microsoft.com. 
 
 * Lors de l’enregistrement d’un fichier avec **Déboguer > IntelliTrace > session IntelliTrace d’enregistrer** en mode d’événements et les instantanés, les données supplémentaires capturées à partir d’instantanés ne sont pas disponibles dans le fichier .itrace. Sur les événements de point d’arrêt et l’étape, vous consultez les mêmes informations que si vous aviez enregistré le fichier en mode d’uniquement les événements IntelliTrace. 

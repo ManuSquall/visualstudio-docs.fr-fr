@@ -12,11 +12,11 @@ author: PooyaZv
 ms.author: pozandev
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9dede2f30a9d91e94bda3183deaae337e4c556dc
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: dffc67e550cb57f9f089e180ff399f27c817d253
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Comment : diagnostiquer l’interface utilisateur des retards causés par des extensions
 
@@ -44,7 +44,7 @@ Dans les sections suivantes, nous verrons ces étapes plus en détail.
 
 ## <a name="identifying-the-trigger-scenario"></a>Identifier le scénario de déclencheur
 
-Pour de diagnostiquer un délai de l’interface utilisateur, vous devez d’abord idetify (séquence d’actions) provoque Visual Studio pour afficher la notification. Il s’agit afin de vous en mesure de déclencher la notification ultérieurement avec la journalisation activée.
+Pour diagnostiquer les un délai de l’interface utilisateur, vous devez tout d’abord identifier quelles (séquence d’actions) provoque Visual Studio pour afficher la notification. Il s’agit afin de vous en mesure de déclencher la notification ultérieurement avec la journalisation activée.
 
 ## <a name="restarting-vs-with-activity-logging-on"></a>Le redémarrage de Visual Studio avec l’activité d’ouverture de session
 
@@ -158,3 +158,5 @@ PerfView détaille les instructions dans le menu d’aide que vous pouvez utilis
 * [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
 * [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
 
+> [!NOTE]
+> Si vous ne parvenez pas à résoudre le problème de blocage en raison de dépendances vous n’avez pas de contrôle sur (par exemple, si votre extension doit appeler des services VS synchrones sur le thread d’interface utilisateur), nous aimerions en être informés. Si vous êtes un membre de notre programme partenaire Visual Studio, vous pouvez contacter nous en envoyant une demande de prise en charge du développeur. Sinon, utilisez l’outil « Signaler un problème » pour envoyer vos commentaires et inclure `"Extension UI Delay Notifications"` dans le titre. Veuillez également inclure une description détaillée de votre analyse.
