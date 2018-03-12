@@ -1,25 +1,21 @@
 ---
 title: "L’aide du Concepteur de flux de travail | Documents Microsoft"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - Workflow Designer [WFD], using
 - Visual Studio 2010 Workflow Designer [WFD], using
 ms.assetid: 991a942f-29bc-4868-9299-ed80c5665ab5
-caps.latest.revision: "13"
-author: ErikRe
-ms.author: erikre
-manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 0ea166c2770e78482aa47c3fe903339e8e2501a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.openlocfilehash: 3df728fffc84b44243b34d03c5ea7dd2b3c28de0
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="using-the-workflow-designer"></a>Utilisation de Workflow Designer
 Cette section explique en détail comment créer de nouvelles activités et de nouveaux projets de workflow à l'aide des concepteurs intégrés et de l'éditeur d'expressions qui est hébergé par plusieurs des concepteurs d'activités.  
