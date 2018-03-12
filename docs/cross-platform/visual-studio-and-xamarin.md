@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio et Xamarin | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
@@ -38,7 +38,7 @@ Xamarin est une plateforme de développement d’applications mobiles pour la cr
  Vous pouvez travailler avec toutes les fonctionnalités de Xamarin via [n’importe quelle édition de Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional et Enterprise). Notez également qu’à partir du 31 mars 2016, Xamarin est inclus dans toutes les éditions de Visual Studio 2015 et ne nécessite plus de licence distincte. Pour Visual Studio 2013, vous pouvez installer Xamarin séparément, comme indiqué dans la rubrique [Configurer et installer](../cross-platform/setup-and-install.md).  
   
 > [!NOTE]
->  Ces instructions décrivent la configuration la plus simple et la plus directe de l’ordinateur pour ceux qui connaissent bien Windows et Visual Studio. Avec cette configuration, toute la pratique du développement est simplifiée, car vous devez seulement interagir avec le Mac pour utiliser le simulateur iOS et l’appareil attaché. En revanche, si vous connaissez mieux l’univers Mac, nous vous recommandons d’exécuter Visual Studio dans Parallels/VMWare ou d’utiliser Xamarin Studio Community. Pour obtenir des instructions, consultez [Configuration, installation et vérifications pour les utilisateurs Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md).  
+>  Ces instructions décrivent la configuration la plus simple et la plus directe de l’ordinateur pour ceux qui connaissent bien Windows et Visual Studio. Avec cette configuration, toute la pratique du développement est simplifiée, car vous devez seulement interagir avec le Mac pour utiliser le simulateur iOS et l’appareil attaché. En revanche, si vous connaissez mieux l’univers Mac, nous vous recommandons d’utiliser la version Maxc de Visual Studio. Pour obtenir des instructions, consultez [Configuration, installation et vérifications pour les utilisateurs Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md).  
   
 > [!NOTE]
 >  Si vous recherchez une solution de développement multiplateforme en HTML et CSS, consultez Visual Studio Tools pour Apache Cordova comme indiqué dans [Développement mobile multiplateforme dans Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).
