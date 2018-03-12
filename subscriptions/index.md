@@ -10,11 +10,11 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a7768be8726fe38ade6857993b67c1c32f8611aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-subscriptions"></a>Abonnements Visual Studio
 Les abonnements Visual Studio sont un ensemble complet de ressources qui vous permettent de créer, déployer et gérer des applications sur vos plateformes et appareils préférés, notamment Windows, iOS, Android et Linux.  Les avantages des abonnements sont notamment l’accès aux outils de développement, à des services cloud et à des logiciels, à de la formation et à du support pour vos besoins en développement et en tests.
@@ -137,14 +137,14 @@ Les abonnés se connectent à [https://my.visualstudio.com](https://my.visualstu
 ---
 
 <h2>Avantages</h2>
-<ul class="panelContent cardsW">
+<ul class="cardsD cols cols3">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
                         <h3>Outils de développement</h3>
-                        <p>Vous pouvez accéder aux dernières versions de Visual Studio,                         à l’IDE complet pour le développement d’applications sur Android, iOS, Windows, macOS,                         pour le web et le cloud, et à d’autres outils multiplateformes                         sur PC ou Mac.</p>
+                        <p>Vous pouvez accéder aux dernières versions de Visual Studio, à l’IDE complet pour le développement d’applications sur Android, iOS, Windows, macOS, pour le web et le cloud, et à d’autres outils multiplateformes sur PC ou Mac.</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio pour Mac</li>
