@@ -20,14 +20,14 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9d0a098418399dba19b77a12c057a3fba334e31
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3068a609da2468c59066ccd38f6de87cef1ed17
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="operators-javascript"></a>Opérateurs (JavaScript)
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] offre une gamme complète d’opérateurs, notamment des opérations arithmétiques, logiques, au niveau du bit, d’attribution, ainsi que plusieurs opérateurs divers. Pour obtenir des explications et des exemples, consultez les rubriques relatives aux opérateurs en question.  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] offre une gamme complète d’opérateurs, notamment des opérateurs arithmétiques, logiques, au niveau du bit et d’affectation, ainsi que différents autres opérateurs. Pour obtenir des explications et des exemples, consultez les rubriques relatives aux opérateurs en question.  
   
 ## <a name="computational-operators"></a>Opérateurs de calcul  
   
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/27/2017
 |[Décrément](../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Multiplication](../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Division](../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Modulo arithmétique](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Reste arithmétique](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Addition](../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Soustraction](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 10/27/2017
 |[Égalité stricte](../javascript/reference/comparison-operators-javascript.md)|===|  
 |[Inégalité stricte](../javascript/reference/comparison-operators-javascript.md)|!==|  
   
-## <a name="bitwise-operators"></a>Opérateurs de bits  
+## <a name="bitwise-operators"></a>Opérateurs au niveau du bit  
   
 |Description|Symbole|  
 |-----------------|------------|  

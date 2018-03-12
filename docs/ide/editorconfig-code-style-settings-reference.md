@@ -1,10 +1,6 @@
 ---
-title: "Paramètres des conventions de codage .NET pour EditorConfig | Microsoft Docs"
-ms.custom: 
-ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+title: "Paramètres des conventions de codage .NET pour EditorConfig dans Visual Studio | Microsoft Docs"
+ms.date: 02/28/2018
 ms.topic: article
 dev_langs:
 - CSharp
@@ -21,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 76b7ed58713f61882130c48d808012dc35055f55
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: ac6c9e79e659a7f7d152541bc5a2d7deea694086
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Paramètres des conventions de codage .NET pour EditorConfig
 
@@ -1622,7 +1618,7 @@ public int Foo { get; set; }
 
 //csharp_preserve_single_line_blocks = false
 public int MyProperty
-{ 
+{
     get; set;
 }
 ```
@@ -1638,7 +1634,7 @@ csharp_preserve_single_line_blocks = true
 
 ## <a name="see-also"></a>Voir aussi
 
-[Actions rapides](../ide/quick-actions.md)  
-[Conventions de nommage .NET pour EditorConfig](../ide/editorconfig-naming-conventions.md)  
-[Créer des options d’éditeur personnalisées et portables](../ide/create-portable-custom-editor-options.md)  
-[Fichier .editorconfig de .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)  
+- [Actions rapides](../ide/quick-actions.md)
+- [Conventions de nommage .NET pour EditorConfig](../ide/editorconfig-naming-conventions.md)
+- [Créer des options d’éditeur personnalisées et portables](../ide/create-portable-custom-editor-options.md)
+- [Fichier .editorconfig de .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

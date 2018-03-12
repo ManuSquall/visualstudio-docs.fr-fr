@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 077bb266e6ed55bfe59ec4e537b516ccde59e0c3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Utilisation d’expressions régulières dans Visual Studio
 
@@ -56,11 +56,11 @@ Voici quelques exemples :
 |Invalide une correspondance|(?!abc)|`real (?!ity)` correspond à "real" dans "realty" et dans "really", mais pas dans "reality". Trouve également le deuxième « real » (mais pas le premier « real ») dans « realityreal ».|
 |Correspond à n'importe quel caractère qui ne figure pas dans un ensemble donné de caractères|[^abc]|`be[^n-t]` correspond à "bef" dans "before », à "beh" dans "behind" et à "bel" dans "below", mais pas à "beneath".|
 |Correspond à l'expression placée avant ou après le symbole.|&#124;|`(sponge&#124;mud) bath` correspond à "sponge bath" et à "mud bath".|
-|Crée une séquence d'échappement pour le caractère placé après la barre oblique inverse|\\|`\^` correspond au caractère ^.|
+|Crée une séquence d'échappement pour le caractère placé après la barre oblique inverse| \\ |`\^` correspond au caractère ^.|
 |Spécifie le nombre d'occurrences du caractère ou du groupe précédent|{x}, où x est le nombre d'occurrences|`x(ab){2}x` correspond à "xababx", et `x(ab){2,3}x` correspond à "xababx" et à "xabababx", mais pas à "xababababx".|
 |Met en correspondance du texte dans une classe de caractères Unicode, où « X » est le nombre Unicode. Pour plus d'informations sur les classes de caractères Unicode, consultez<br /><br /> [Propriétés des caractères de la norme Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` correspond à "T" et à "D" dans "Thomas Doe".|
 |Correspond à la limite d'un mot|`\b` (En dehors d’une classe de caractères, \b spécifie une limite de mot ; à l’intérieur d’une classe de caractères, \b spécifie un retour arrière.)|`\bin` correspond à "in" dans "inside", mais pas dans "pinto".|
-|Correspond à un saut de ligne (c'est-à-dire un retour chariot suivi d'une nouvelle ligne)|\r?\n|`End\r?\nBegin` correspond à "End" et à "Begin" uniquement quand "END" est la dernière chaîne d’une ligne et "Begin" la première chaîne de la ligne suivante.|
+|Correspond à un saut de ligne (c’est-à-dire un retour chariot suivi d’une nouvelle ligne).|\r?\n|`End\r?\nBegin` correspond à "End" et à "Begin" uniquement quand "END" est la dernière chaîne d’une ligne et "Begin" la première chaîne de la ligne suivante.|
 |Correspond à n'importe quel caractère alphanumérique|\w|`a\wd` correspond à "add" et à "a1d", mais pas à "a d".|
 |Correspond à n'importe quel espace blanc|(?([^\r\n])\s)|`Public\sInterface` correspond à l’expression "Public Interface".|
 |Correspond à n'importe quel caractère numérique|\d|`\d` correspond à "3" dans "3456", à "2" dans "23" et à "1" dans "1".|
@@ -71,7 +71,7 @@ Voici quelques exemples :
 |Correspond à des nombres entiers et décimaux|\b[0-9]*\\.\*[0-9]+\b|Correspond à « 1,333 ».|
 
 > [!TIP]
-> Dans les systèmes d’exploitation Windows, la plupart des lignes se terminent par « \r\n » (retour chariot suivi d’une nouvelle ligne). Ces caractères ne sont pas visibles, mais sont présents dans l’éditeur et sont transmis au service d’expressions régulières .NET.
+> Dans les systèmes d’exploitation Windows, la plupart des lignes se terminent par « \r\n » (retour chariot suivi d’une nouvelle ligne). Ces caractères ne sont pas visibles, mais ils sont présents dans l’éditeur et sont passés au service d’expressions régulières de .NET.
 
 ## <a name="see-also"></a>Voir aussi
 

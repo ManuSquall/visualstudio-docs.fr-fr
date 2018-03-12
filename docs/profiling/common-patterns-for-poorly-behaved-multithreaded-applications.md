@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bd8f389efcde93d9a618fbbac272b0f0b2cf5c75
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 9b7b9ad17c4d0c16066b9c10e3cc5b51f152c9dc
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
 
@@ -65,7 +65,7 @@ Vous devez tenir compte de ce qui suit lorsque vous examinez ce problème :
 
 ![Inefficacité des E/S](../profiling/media/inefficient_io.png "Inefficient_IO")
 
-L’utilisation abusive ou la mauvaise utilisation des E/S est une cause fréquente de l’inefficacité des applications. Regardez l’illustration précédente. Le profil de la chronologie visible montre que 42 % du temps de thread visible sont consommés par les E/S. La chronologie montre de grandes quantités d’E/S, ce qui indique que l’application profilée est fréquemment bloquée par les E/S. Pour obtenir des informations détaillées sur les types d’E/S dont il s’agit et sur l’endroit où votre programme se bloque, zoomez sur les zones problématiques, examinez le profil de chronologie visible, puis cliquez sur un bloc d’E/S spécifique pour afficher les piles d’appels en cours.
+L’utilisation abusive ou la mauvaise utilisation des E/S est une cause fréquente de l’inefficacité des applications. Regardez l’illustration précédente. Le profil de la chronologie visible montre que 44 % du temps de thread visible sont consommés par les E/S. La chronologie montre de grandes quantités d’E/S, ce qui indique que l’application profilée est fréquemment bloquée par les E/S. Pour obtenir des informations détaillées sur les types d’E/S dont il s’agit et sur l’endroit où votre programme se bloque, zoomez sur les zones problématiques, examinez le profil de chronologie visible, puis cliquez sur un bloc d’E/S spécifique pour afficher les piles d’appels en cours.
 
 ## <a name="lock-convoys"></a>Convois de verrouillage
 
