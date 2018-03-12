@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: willbrown
 ms.author: willbrown
 manager: justinclareburt
-ms.openlocfilehash: 99bdd5a0f31b9cbccd84a7c05f6d3cdcc0c267f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: willbrown
+ms.openlocfilehash: b51673daa7a8c3526ad7de7f7cfdeac6a91d3b4b
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Comment : créer des Extensions Compatible avec Visual Studio 2017 et Visual Studio 2015
 
@@ -31,7 +32,7 @@ Voici les étapes que vous effectuerez dans ce document pour effectuer un aller-
 1. Importer les packages NuGet corrects.
 2. Mise à jour du manifeste d’Extension :
     * Cible d’installation
-    * Conditions préalables
+    * Prérequis
 3. CSProj de mise à jour :
     * Mise à jour `<MinimumVisualStudioVersion>`.
     * Ajouter le `<VsixType>` propriété.
@@ -168,7 +169,7 @@ Il est recommandé d’avoir une référence à un .csproj modifiés ouverts lor
 Exemple :
 
 ```xml
-<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201… Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
 * Ajouter des instructions conditionnelles supplémentaires pour le `<import>` balises qui ont un Microsoft.VisualStudio.Sdk.BuildTasks.14.0.  Cela en insérant `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions seront affiche dans l’en-tête et le pied de page du fichier csproj.
@@ -176,7 +177,7 @@ Exemple :
 Exemple :
 
 ```xml
-<Import Project="packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0… Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
 * Ajouter des instructions conditionnelles supplémentaires pour le `<Error>` balises qui contiennent une référence Microsoft.VSSDK.BuildTools.  Cela en insérant `'$(VisualStudioVersion)' != '14.0' And` au début de l’instruction de condition. Ces instructions seront affichent dans le pied de page du fichier csproj.
@@ -184,7 +185,7 @@ Exemple :
 Exemple :
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…/>
+<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
 * Ajouter des instructions conditionnelles supplémentaires pour le `<Error>` balises qui ont un Microsoft.VisualStudio.Sdk.BuildTasks.14.0.  Cela en insérant `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions seront affichent dans le pied de page du fichier csproj.
@@ -192,7 +193,7 @@ Exemple :
 Exemple :
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…/>
+<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
 * Enregistrez le fichier csproj et fermez-le.

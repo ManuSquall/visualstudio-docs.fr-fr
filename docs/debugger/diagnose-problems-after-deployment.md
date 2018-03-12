@@ -12,11 +12,12 @@ caps.latest.revision: "60"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f2dce73eab17d97779edec73c1c2c0c60690ac5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 562222296ca79a568a3b68aac55a879c8f2f51b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnostiquer des problèmes après le déploiement
 Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans votre application web ASP.NET après son déploiement, ajoutez les informations de build à votre version pour permettre à Visual Studio de trouver automatiquement les fichiers sources et fichiers de symboles correspondants nécessaires pour déboguer l’application à l’aide du journal IntelliTrace.  
@@ -272,7 +273,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
 
  Si vous utilisez TFS et que ces informations n’est pas dans le manifeste de build (fichier BuildInfo.config), Visual Studio recherche la source correspondante et les symboles sur votre TFS actuellement connecté. Si Visual Studio ne peut pas trouver le TFS correct ou la source correspondante, vous êtes invité à choisir un autre TFS.  
 
-####  <a name="InvalidConfigFile"></a>Q : le fichier journal IntelliTrace manque des informations relatives à mon application déployée. Comment est-ce possible ? Que dois-je faire ?  
+####  <a name="InvalidConfigFile"></a>Q : le fichier journal IntelliTrace manque des informations relatives à mon application déployée. Comment est-ce possible ? Que dois-je faire ?  
  Cela peut se produire quand vous déployez à partir de votre ordinateur de développement ou que vous n’êtes pas connecté à TFS pendant le déploiement.  
 
 1.  Accédez au dossier de déploiement de votre projet.  

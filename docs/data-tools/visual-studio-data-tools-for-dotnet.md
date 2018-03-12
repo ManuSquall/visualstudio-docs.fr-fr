@@ -12,16 +12,19 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6b48b16d33c62c2d0ca96eb1d55ce22682458029
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- data-storage
+- dotnet
+ms.openlocfilehash: 6c1558c591c982673015af4eaf4e50bc9a81f7d4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Outils de données Visual Studio pour .NET
-Visual Studio et .NET Framework constituent une API complète et une prise en charge pour la connexion aux bases de données, modélisation des données en mémoire et afficher les données dans l’interface utilisateur des outils. Les classes .NET Framework qui fournissent des fonctionnalités d’accès aux données sont appelées [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). ADO.NET, ainsi que les données pour les outils dans Visual Studio, a été conçu principalement pour prendre en charge des bases de données relationnelles et XML. De nos jours, plusieurs fournisseurs de base de données NoSQL ou des tiers offrent des fournisseurs ADO.NET.  
+Visual Studio et .NET Framework constituent une API complète et une prise en charge pour la connexion aux bases de données, modélisation des données en mémoire et afficher les données dans l’interface utilisateur des outils. Les classes .NET Framework qui fournissent des fonctionnalités d’accès aux données sont appelées [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, ainsi que les données pour les outils dans Visual Studio, a été conçu principalement pour prendre en charge des bases de données relationnelles et XML. De nos jours, plusieurs fournisseurs de base de données NoSQL ou des tiers offrent des fournisseurs ADO.NET.  
   
-[.NET core](https://www.dotnetfoundation.org/netcore) prend en charge ADO.NET, à l’exception des jeux de données et les types associés. Si vous ciblez .NET Core et que vous avez besoin d’une couche de mappage relationnel objet (ORM), utilisez [Entity Framework Core](https://docs.microsoft.com/ef/core/).  
+[.NET core](https://www.dotnetfoundation.org/netcore) prend en charge ADO.NET, à l’exception des jeux de données et les types associés. Si vous ciblez .NET Core et que vous avez besoin d’une couche de mappage relationnel objet (ORM), utilisez [Entity Framework Core](/ef/core/).  
   
 Le diagramme suivant montre une vue simplifiée de l’architecture de base :  
   
@@ -39,7 +42,7 @@ Le flux de travail typique est la suivante :
   
 5.  Ajouter du code personnalisé à des éléments tels que les règles d’entreprise, la recherche et la validation des données, ou pour tirer parti des fonctionnalités personnalisées qui expose de la base de données sous-jacente.  
   
-Vous pouvez ignorer l’étape 3 et programmer une application .NET pour envoyer des commandes directement à une base de données, au lieu d’utiliser un modèle. Dans ce cas, vous trouverez la documentation correspondante ici : [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). Notez que vous pouvez toujours utiliser l’Assistant de Configuration de Source de données et les concepteurs pour générer le code de liaison de données lorsque vous remplissez vos propres objets en mémoire, puis de lier des contrôles d’interface utilisateur à ces objets.
+Vous pouvez ignorer l’étape 3 et programmer une application .NET pour envoyer des commandes directement à une base de données, au lieu d’utiliser un modèle. Dans ce cas, vous trouverez la documentation correspondante ici : [ADO.NET](/dotnet/framework/data/adonet/index). Notez que vous pouvez toujours utiliser l’Assistant de Configuration de Source de données et les concepteurs pour générer le code de liaison de données lorsque vous remplissez vos propres objets en mémoire, puis de lier des contrôles d’interface utilisateur à ces objets.
   
 ## <a name="see-also"></a>Voir aussi
 [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

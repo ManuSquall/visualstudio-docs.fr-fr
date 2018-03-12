@@ -4,26 +4,29 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.SharePointTools.Project.DeploymentConfig
+f1_keywords:
+- VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
 - VB
 - CSharp
 - VB
 - CSharp
-helpviewer_keywords: SharePoint development in Visual Studio, deploying
-ms.assetid: bff1895b-d3fe-4ec0-ba91-f8884dc35957
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- SharePoint development in Visual Studio, deploying
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 287618def7897cd2c91a63db9d8272c919190dfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 4e5e65e82910239b596e4b19f2ea1fa1f357266c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Comment : modifier une configuration de déploiement SharePoint
   Vous pouvez créer une configuration de déploiement ou modifier une configuration de déploiement existante. Par exemple, vous pourriez exécuter une seule étape ou modifier l’ordre des étapes du processus de déploiement. Vous voudrez créer ou modifier des configurations de déploiement, car les configurations intégrées et ajoutées par programmation ne peut pas être modifiées.  

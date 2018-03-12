@@ -1,38 +1,33 @@
 ---
 title: "Créer des projets de modélisation UML et des diagrammes | Documents Microsoft"
 ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.date: 01/23/2018
 ms.topic: article
-f1_keywords:
-- vs.teamarch.addnewdiagramdialog
-- vs.teamarch.createnewmodelingprojectdialog
 helpviewer_keywords:
-- projects [Visual Studio ALM], modeling
-- diagrams - modeling, modeling
-- modeling diagrams
-- projects, UML
-- UML, deleting diagrams
-- UML
-- UML diagrams, adding
-- UML, projects
-- Visual Studio ALM, modeling projects
-- modeling projects
-- UML diagrams
-- projects, modeling
-ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
-caps.latest.revision: "48"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
-ms.openlocfilehash: 1dd23a5350f1618323005cfffdcd1ab9b6c04d1d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+- modeling diagrams (UML)
+- UML designers
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: de9c5e86e8c6cba28ebe601a4f69bc5ee9526fa7
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Créer des projets et des diagrammes de modélisation UML
 
-[!INCLUDE [uml-not-supported](includes/uml-not-supported.md)]
+À partir de Visual Studio 2017, les concepteurs UML ont été supprimés à partir de Visual Studio. Pour plus d’informations, consultez ce [billet de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+
+Si vous devez quand même utiliser UML, vous pouvez utiliser Visual Studio 2015 Enterprise edition, ce qui est compatible côte à côte avec les versions ultérieures de Visual Studio.
+
+Pour plus d’informations sur l’utilisation d’UML dans Visual Studio 2015, consultez :
+
+* [Analyser et modéliser votre architecture](https://msdn.microsoft.com/library/57b85fsc%28v=vs.140%29.aspx)
+* [Créer des modèles pour votre application](https://msdn.microsoft.com/library/dd409436%28v=vs.140%29.aspx)
+* [Utiliser des modèles dans votre processus de développement](https://msdn.microsoft.com/library/dd409423%28v=vs.140%29.aspx)
+* [Valider votre système pendant le développement](https://msdn.microsoft.com/library/dd409448%28v=vs.140%29.aspx)
+* [Étendre des diagrammes et des modèles UML](https://msdn.microsoft.com/library/ee329484%28v=vs.140%29.aspx)

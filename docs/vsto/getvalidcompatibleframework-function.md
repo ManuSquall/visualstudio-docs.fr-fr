@@ -10,16 +10,15 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-ms.assetid: dfb365c0-5ffc-4290-ab8b-bd347e0f0db9
-caps.latest.revision: "7"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 33c917f30ca7c5d42dc85036ef410519e6f0a721
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 43056033f6d23eb385609ebaf4d448ebdb2424a8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework, fonction
   Cette API prend en charge l’infrastructure Office et n’est pas destinée à être utilisée directement depuis votre code.  

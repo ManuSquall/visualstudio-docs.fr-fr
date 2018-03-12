@@ -14,16 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managing on server
 - Office documents [Office development in Visual Studio, managing on server
 - ServerDocument class, managing documents on server
-ms.assetid: 1ac90e89-d07d-4874-9d24-6741d6679a21
-caps.latest.revision: "40"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bd24d18df965535ee1315ae7807ac23723dc51d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2120e7c70abaddd4f51c0214a2c5ae517cf955cc
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="managing-documents-on-a-server-by-using-the-serverdocument-class"></a>Gestion de documents sur un serveur à l'aide de la classe ServerDocument
   Vous pouvez utiliser la classe ServerDocument dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pour gérer plusieurs aspects des personnalisations au niveau du document, même si Microsoft Office Word et Microsoft Office Excel ne sont pas installés. Vous pouvez effectuer les tâches suivantes :  

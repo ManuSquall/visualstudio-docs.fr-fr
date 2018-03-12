@@ -3,20 +3,24 @@ title: "Problèmes connus et dépannage pour le débogage de l’instantané | D
 ms.date: 11/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 511a0697-c68a-4988-9e29-8d0166ca044a
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload:
+- multiple
+ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problèmes connus et dépannage pour la capture instantanée de débogage dans Visual Studio
 
@@ -68,8 +72,19 @@ Effectuez les étapes suivantes :
 - Débogage d’instantané avec plusieurs clients Visual Studio sur le même Service d’application n’est pas pris en charge actuellement.
 - Optimisations de langage intermédiaire de Roslyn ne sont pas pris en charge dans les projets ASP.NET Core. Pour certains projets ASP.NET Core, vous ne serez peut-être pas en mesure de certaines variables ou utiliser des variables dans les instructions conditionnelles. 
 - Variables spéciales, telles que *$FUNCTION* ou *$CALLER*, ne peut pas être évaluée dans des instructions conditionnelles ou logpoints pour les projets ASP.NET Core.
-- Débogage de l’instantané ne fonctionne pas sur les Services d’application qui ont [mise en cache locale](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) sous tension.
+- Débogage de l’instantané ne fonctionne pas sur les Services d’application qui ont [mise en cache locale](/azure/app-service/app-service-local-cache) sous tension.
 - Débogage des applications de l’API de capture instantanée n’est pas pris en charge actuellement.
+
+## <a name="site-extension-upgrade"></a>Mise à niveau des extensions de site
+
+Débogage de l’instantané et Application Insights dépendent un ICorProfiler qui est chargé dans le processus de site et provoque des problèmes de verrouillage de fichier pendant la mise à niveau. Nous vous recommandons de ce processus afin de ne garantir aucun temps d’arrêt à votre site de production.
+
+- Créer un [emplacement de déploiement](/azure/app-service/web-sites-staged-publishing) au sein de votre application de Service et de déployer votre site vers l’emplacement.
+- Remplacez l’emplacement de production à partir de l’Explorateur de Cloud dans Visual Studio ou à partir du portail Azure.
+- Arrêter le site de l’emplacement. Cette opération prendra quelques secondes de tuer le processus w3wp.exe de site à partir de toutes les instances.
+- Mise à niveau de l’extension de site connecteur à partir du site Kudu ou le portail Azure (*Panneau de Service de l’application > Outils de développement > Extensions > mise à jour*).
+- Démarrer le site de l’emplacement. Nous vous recommandons de visiter le site pour le préchauffage à nouveau.
+- Remplacez l’emplacement de production.
 
 ## <a name="see-also"></a>Voir aussi
 

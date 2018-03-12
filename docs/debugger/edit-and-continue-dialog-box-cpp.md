@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.failed.commit
 - vs.debug.ENC.failed.build
@@ -23,11 +23,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd5b54f6c5bc0e70db806b0c84594d2f45b3a6ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 9bfbeb76457966c5c0da4fc55a4a3e03337fe5be
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Modifier et continuer, boîte de dialogue (C++)
 Modifier & Continuer n'a pas pu appliquer les modifications que vous avez apportées au code natif. Il peut d'agit d'une condition temporaire. Parfois, Modifier & Continuer ne peut pas appliquer immédiatement les modifications du code natif, mais peut le faire plus tard au cours de la session de débogage (par exemple, après avoir terminé l'appel à la procédure en cours d'exécution). Pour plus d’informations, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).  

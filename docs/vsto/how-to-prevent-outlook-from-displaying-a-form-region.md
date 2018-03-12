@@ -13,16 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], canceling display
 - canceling form region display
-ms.assetid: 82a25def-776a-476a-a72d-d0a48a827d3c
-caps.latest.revision: "24"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: fb181ba7bd408194bec52224496ebef7f343f5d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: def4454f1031e5958dfc10e1a1fc77ccaed59067
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Comment : empêcher Outlook d'afficher une zone de formulaire
   Il peut y avoir des situations dans lesquelles vous ne souhaitez pas de Microsoft Office Outlook pour afficher une zone de formulaire pour un élément particulier. Par exemple, si un élément de contact ne contient pas d’adresse d’entreprise, vous pouvez empêcher une zone de formulaire qui affiche l’emplacement de l’entreprise dans une carte.  

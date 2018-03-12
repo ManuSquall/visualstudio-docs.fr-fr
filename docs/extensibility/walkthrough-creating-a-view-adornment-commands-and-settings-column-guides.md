@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3db7dea958fb3d80a109c021ffb20260f0748bba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Procédure pas à pas : Création d’un ornement de vue, les commandes et les paramètres (repères de colonne)
 Vous pouvez étendre l’éditeur de texte/code de Visual Studio avec les commandes et les effets de la vue.  Cette rubrique montre comment démarrer avec une fonctionnalité d’extension populaires, repères de colonne.  Repères de colonne sont visuellement clair lignes dessinées sur la vue de l’éditeur de texte pour vous aider à gérer votre code pour les largeurs de colonne spécifique.  Code de mise en forme en particulier peut être important pour obtenir des exemples vous incluez dans les documents, des billets de blog, ou les rapports de bogues.  
@@ -39,7 +40,7 @@ Vous pouvez étendre l’éditeur de texte/code de Visual Studio avec les comman
   
  **Remarque**: dans cette procédure pas à pas, vous collez beaucoup de code dans quelques fichiers générés par les modèles d’extension visual studio, mais dès cette procédure pas à pas fait référence à une solution terminée sur github avec d’autres exemples d’extension.  Le code complet est légèrement différent dans la mesure où il a des icônes de commande réel au lieu d’utiliser des icônes de generictemplate.  
   
-## <a name="getting-started"></a>Commencer  
+## <a name="getting-started"></a>Prise en main  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="setting-up-the-solution"></a>Configuration de la Solution  
@@ -351,7 +352,7 @@ private const string _settingName = "Guides";
   
  Les premières fonctions peu sont les points d’entrée pour modifier les paramètres.  Ils vérifient comme nombre maximal autorisé de repères de contraintes de haut niveau.  Ensuite, elles appellent `WriteSettings` qui compose une chaîne de paramètres et définit la propriété `GuideLinesConfiguration`.  Définition de cette propriété enregistre les valeurs des paramètres pour le stockage de paramètres de Visual Studio et se déclenche le `SettingsChanged` pour mettre à jour tous les événements le `ColumnGuideAdornment` d’objets, chacun étant associé à une vue de texte.  
   
- Il existe quelques fonctions de point d’entrée, tels que `CanAddGuideline`, qui permettent d’implémenter des commandes qui modifient les paramètres.  Lorsque Visual Studio affiche des menus, il interroge les implémentations de commande pour voir si la commande est actuellement activée, ce qui est son nom, etc..  Ci-dessous, vous verrez comment connecter ces points d’entrée pour les implémentations de la commande.  Consultez [étendant les Menus et commandes](../extensibility/extending-menus-and-commands.md) pour plus d’informations sur les commandes.  
+ Il existe quelques fonctions de point d’entrée, tels que `CanAddGuideline`, qui permettent d’implémenter des commandes qui modifient les paramètres.  Lorsque Visual Studio affiche des menus, il interroge les implémentations de commande pour voir si la commande est actuellement activée, ce qui est son nom, etc.  Ci-dessous, vous verrez comment connecter ces points d’entrée pour les implémentations de la commande.  Consultez [étendant les Menus et commandes](../extensibility/extending-menus-and-commands.md) pour plus d’informations sur les commandes.  
   
 ## <a name="implementing-the-columnguideadornment-class"></a>Implémentation de la classe ColumnGuideAdornment  
  La `ColumnGuideAdornment` classe est instanciée pour chaque vue de texte qui peut avoir des ornements.  Cette classe est à l’écoute des événements sur la modification de la vue ou les repères de colonne mise à jour ou écran Paramètres de modification, si nécessaire.  

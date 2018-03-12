@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 552e08a653c576a0f2e4bc916beaf4749ff490ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48e849df1cb918682176befa25c688fe7b436460
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-command-aliases"></a>Alias de commandes Visual Studio
 Les alias constituent un moyen rapide d’entrer une commande dans la zone **Rechercher/Commande** ou la fenêtre **Commande** en abrégeant le texte nécessaire pour exécuter la commande. Par exemple, au lieu d’entrer le texte `>File.OpenFile` pour afficher la boîte de dialogue **Ouvrir un fichier**, vous pouvez utiliser l’alias prédéfini `>of`.  
@@ -65,7 +66,7 @@ Les alias constituent un moyen rapide d’entrer une commande dans la zone **Rec
 |[Afficher la mémoire, commande](../../ide/reference/list-memory-command.md) (format Huit octets)|dq|Debug.ListMemory /Format:EightBytes|  
 |[Afficher la mémoire, commande](../../ide/reference/list-memory-command.md) sous la forme de caractères Unicode|du|Debug.ListMemory /Unicode|  
 |[Évaluer l’instruction, commande](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|  
-|Quitter|Exit|File.Exit|  
+|Exit|Exit|File.Exit|  
 |Mettre la sélection en forme|format|Edit.FormatSelection|  
 |Plein écran|FullScreen|View.FullScreen|  
 |[Démarrer, commande](../../ide/reference/start-command.md)|g|Debug.Start|  
@@ -87,7 +88,7 @@ Les alias constituent un moyen rapide d’entrer une commande dans la zone **Rec
 |Mémoire 3 (fenêtre)|Memory3|Debug.Memory3|  
 |Mémoire 4 (fenêtre)|Memory4|Debug.Memory4|  
 |[Définir la base, commande](../../ide/reference/set-radix-command.md)|n|Debug.SetRadix|  
-|[Afficher le navigateur web, commande](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|  
+|[Afficher le navigateur Web, commande](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|  
 |Signet suivant|NextBook|Edit.NextBookmark|  
 |[Nouveau fichier, commande](../../ide/reference/new-file-command.md)|nf|File.NewFile|  
 |Nouveau projet|np NewProj|File.NewProject|  

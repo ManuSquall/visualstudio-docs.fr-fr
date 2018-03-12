@@ -17,16 +17,15 @@ helpviewer_keywords:
 - sandboxed solutions [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, farm solutions
 - farm solutions [SharePoint development in Visual Studio]
-ms.assetid: 43beb7e7-0cd9-4a8f-bb72-6b1e0cba5be8
-caps.latest.revision: "12"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d82bc012b2be9736b83fc07f7d0a83d354dda002
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c9123f028bab5319f47e4bdc0ada0dbbee49bc2c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Différences entre les solutions bac à sable (sandbox) et les solutions de batterie
   Lorsque vous compilez une solution SharePoint, il déploie sur le serveur SharePoint et un débogueur est joint pour la déboguer. Le processus utilisé pour déboguer la solution dépend de la valeur de la propriété Solution bac à sable : solution bac à sable ou une solution de batterie de serveurs.  

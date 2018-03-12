@@ -4,24 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.maintainabilityrules
+f1_keywords:
+- vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:
 - warnings, maintainability
 - managed code analysis warnings, maintainability warnings
 - maintainability warnings
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 88199541fe5d3c4be3f9f1cff6de308d45d0d85a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 8d432dab79d5cd88d398a74c352cc9d34c8b4f2e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="maintainability-warnings"></a>avertissements liés à la facilité de maintenance
 Avertissements de facilité de maintenance prennent en charge la gestion des bibliothèques et des applications.  

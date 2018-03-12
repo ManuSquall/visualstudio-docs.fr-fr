@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2c309bd30fb364c36b9e98640a02eb3cf2611aef
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 733a495c7f6865e9973f5288c9c324baef7f1d8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer des données dans la base de données
 Le dataset est une copie en mémoire des données. Si vous modifiez ces données, il est recommandé d’enregistrer ces modifications dans la base de données. Vous faire de trois manières :  
@@ -50,7 +51,7 @@ Si vous êtes familiarisé avec les TableAdapters, vous pouvez accéder directem
 |[Mise à jour hiérarchique](../data-tools/hierarchical-update.md)|Comment effectuer des mises à jour à partir d’un jeu de données de deux ou plusieurs tables connexes|  
 |[Gérer une exception d’accès concurrentiel](../data-tools/handle-a-concurrency-exception.md)|La gestion des exceptions lorsque deux utilisateurs tentent de modifier les mêmes données dans une base de données en même temps|  
 |[Comment : enregistrer des données à l’aide d’une transaction](../data-tools/save-data-by-using-a-transaction.md)|Comment enregistrer les données dans une transaction à l’aide de l’espace de noms System.Transactions et un objet de TransactionScope|  
-|[Procédure : Enregistrer des données dans une transaction](../data-tools/save-data-in-a-transaction.md)|Procédure pas à pas qui crée une application Windows Forms pour illustrer l’enregistrement de données à une base de données à l’intérieur d’une transaction|  
+|[Procédure pas à pas : enregistrer des données dans une transaction](../data-tools/save-data-in-a-transaction.md)|Procédure pas à pas qui crée une application Windows Forms pour illustrer l’enregistrement de données à une base de données à l’intérieur d’une transaction|  
 |[Enregistrer des données dans une base de données (plusieurs tables)](../data-tools/save-data-to-a-database-multiple-tables.md)|Comment modifier les enregistrements et enregistrer les modifications dans plusieurs tables à la base de données|  
 |[Guide pratique pour enregistrer les données d’un objet dans une base de données](../data-tools/save-data-from-an-object-to-a-database.md)|Comment transmettre des données à partir d’un objet qui n’est pas dans un jeu de données à une base de données à l’aide d’une méthode DbDirect du TableAdapter|  
 |[Enregistrer des données avec les méthodes DBDirect du TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Comment utiliser le TableAdapter à envoyer des requêtes SQL directement à la base de données|  
@@ -217,7 +218,7 @@ Le tableau suivant décrit les modifications qui sont validées en fonction de c
 -   Dans les données back-end, par envoi de données à la source de données, par exemple, la base de données et en l’autorisant à accepter ou refuser les données. Si vous travaillez avec une base de données qui a des fonctionnalités évoluées de validation des données et en fournissant des informations d’erreur, cela peut être une approche pratique, car vous pouvez valider les données, quel que soit la provenance. Toutefois, cette approche ne peut pas prendre en compte les exigences de validation spécifique à l’application. En outre, la source de données valider des données peut entraîner de nombreux allers-retours vers la source de données, en fonction de la façon dont votre application facilite la résolution des erreurs de validation déclenchées par le serveur principal.  
   
     > [!IMPORTANT]
-    >  Lors de l’utilisation des commandes de données avec un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriété a la valeur <xref:System.Data.CommandType.Text>, soigneusement vérifier les informations qui sont envoyées à partir d’un client avant de le transmettre à votre base de données. Les utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires dans le but d’obtenir un accès non autorisé ou d’endommager la base de données. Avant de transférer une entrée utilisateur vers une base de données, vérifiez toujours que les informations sont valides. Il est recommandé de toujours utiliser des requêtes paramétrées ou des procédures stockées lorsque cela est possible. Pour plus d’informations, consultez [Vue d’ensemble des attaques de script](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+    >  Lors de l’utilisation des commandes de données avec un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriété a la valeur <xref:System.Data.CommandType.Text>, soigneusement vérifier les informations qui sont envoyées à partir d’un client avant de le transmettre à votre base de données. Les utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires dans le but d’obtenir un accès non autorisé ou d’endommager la base de données. Avant de transférer une entrée utilisateur vers une base de données, vérifiez toujours que les informations sont valides. Il est recommandé de toujours utiliser des requêtes paramétrées ou des procédures stockées lorsque cela est possible.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Transmettre les mises à jour à la source de données  
 Une fois que les modifications ont été apportées dans un jeu de données, vous pouvez transmettre les modifications apportées à une source de données. En règle générale, cela en appelant le `Update` méthode d’un TableAdapter (ou adaptateur de données). La méthode parcourt chaque enregistrement dans une table de données détermine quel type de mise à jour est nécessaire (update, insert ou delete), le cas échéant, puis exécute la commande appropriée.  
@@ -258,7 +259,7 @@ Une fois que les modifications ont été apportées dans un jeu de données, vou
   
  Le <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> la propriété de chaque paramètre pointe vers une colonne dans la table de données. Par exemple, le `SourceColumn` propriété pour le `au_id` et `Original_au_id` paramètres est définie sur la colonne dans la table de données contenant l’id d’auteur. Lorsque l’adaptateur `Update` exécution de la méthode, il lit l’auteur de colonne d’id de l’enregistrement est mis à jour et remplit les valeurs dans l’instruction.  
   
- Dans une instruction UPDATE, vous devez spécifier les nouvelles valeurs (celles qui sont écrits dans l’enregistrement) ainsi que les anciennes valeurs (de sorte que l’enregistrement peut se trouver dans la base de données). Il existe deux paramètres pour chaque valeur : un pour la clause SET et un autre pour la clause WHERE. Les deux paramètres lisent les données à partir de l’enregistrement est mis à jour, mais ils obtiennent des versions différentes de la valeur de colonne en fonction du paramètre [propriété SqlParameter.SourceVersion](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). Le paramètre de la clause SET obtient la version actuelle, et le paramètre de la clause WHERE obtient la version d’origine.  
+ Dans une instruction UPDATE, vous devez spécifier les nouvelles valeurs (celles qui sont écrits dans l’enregistrement) ainsi que les anciennes valeurs (de sorte que l’enregistrement peut se trouver dans la base de données). Il existe deux paramètres pour chaque valeur : un pour la clause SET et un autre pour la clause WHERE. Les deux paramètres lisent les données à partir de l’enregistrement est mis à jour, mais ils obtiennent des versions différentes de la valeur de colonne en fonction du paramètre <xref:System.Data.SqlClient.SqlParameter.SourceVersion> propriété. Le paramètre de la clause SET obtient la version actuelle, et le paramètre de la clause WHERE obtient la version d’origine.  
   
 > [!NOTE]
 >  Vous pouvez également définir des valeurs le `Parameters` collection vous-même dans le code que vous effectuez en général dans un gestionnaire d’événements pour l’adaptateur de données <xref:System.Data.DataTable.RowChanging> événement.  

@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 09a118ebfc1d4a169969139cabe2d94e815964c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 21b15e04bf608610998d2e2cc38c7374b94574e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-service-tools"></a>Outils d’image de Service
 Le Kit de développement logiciel Visual Studio comprend plusieurs outils pour aider les générateurs d’extension à utiliser le service d’images Visual Studio.  

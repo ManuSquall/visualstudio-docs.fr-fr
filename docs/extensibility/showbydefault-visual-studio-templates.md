@@ -4,23 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#ShowByDefault
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#ShowByDefault
 helpviewer_keywords:
 - <ShowByDefault> element [Visual Studio Templates]
 - ShowByDefault element [Visual Studio Templates]
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b6679cdd8f6239d5548f95d8d07146c6cda1ac9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2b0622f2a264baf73ccfeb832c3f049f8ec6fef8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (modèles Visual Studio)
 Si `false`, spécifie que le modèle est uniquement affiché sous le [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
@@ -39,7 +43,7 @@ Si `false`, spécifie que le modèle est uniquement affiché sous le [TemplateGr
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -55,7 +59,7 @@ Si `false`, spécifie que le modèle est uniquement affiché sous le [TemplateGr
   
  Le texte doit être `true` ou `false`. Si la valeur est true, spécifie que le modèle s'affiche pour tous les types de projet. Si la valeur est false, le modèle s'affiche uniquement sous le `TemplateGroupID` spécifié.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `ShowByDefault` est un élément facultatif. La valeur par défaut est `true`.  
   
 ## <a name="example"></a>Exemple  

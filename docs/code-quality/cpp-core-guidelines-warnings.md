@@ -11,11 +11,12 @@ author: mblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 65f4e7ed865a3a620d58b45580914d6e0b589660
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: d03330ce8213e7df56ec9f8df73458b3819180ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Les outils d’analyse de recommandations de base C++ à l’aide de
 Les instructions de base C++ sont un ensemble portable des instructions, les règles et les meilleures pratiques sur le codage dans C++ créés par les concepteurs et les experts de C++. Visual Studio prend actuellement en charge un sous-ensemble de ces règles dans le cadre de ses outils d’analyse de code C++. Outils d’analyse de l’indication core sont installés par défaut dans Visual Studio 2017 et sont [disponible comme package NuGet pour Visual Studio 2015](#vs2015_corecheck).
@@ -62,7 +63,7 @@ int main()
   
 -   C26485 est la règle Bounds.3 : aucune perte de tableau vers pointeur.  
   
--   C26481 est la règle Bounds.1 : ne pas utiliser l’opération arithmétique de pointeur. Utilisez plutôt `span` .  
+-   C26481 est la règle Bounds.1 : ne pas utiliser l’opération arithmétique de pointeur. Utilisez plutôt `span`.  
   
  Si les ensembles de règles C++ Core vérifie l’analyse de code sont installés et activés lorsque vous compilez ce code, les deux premiers avertissements sont générés, mais le troisième est supprimé. Voici la sortie de génération à partir de l’exemple de code :  
   
@@ -201,7 +202,7 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 ### <a name="non-msbuild-projects"></a>Projets non-MSBuild
 Si vous utilisez un système de génération qui ne repose pas sur MSBuild, vous pouvez toujours exécuter l’outil d’analyse, mais vous devez vous familiariser avec certains mécanismes internes de la configuration du moteur de l’analyse du Code (qui n’est pas nécessairement être pris en charge dans le futur).
 
-Vous devrez définir quelques variables d’environnement et utilisez les options de ligne de commande appropriée pour le compilateur. Il est préférable de travailler dans l’environnement de le « invite de commandes des outils natifs » afin que vous n’êtes pas obligé de rechercher des chemins d’accès spécifiques pour le compilateur, incluez des répertoires, etc..
+Vous devrez définir quelques variables d’environnement et utilisez les options de ligne de commande appropriée pour le compilateur. Il est préférable de travailler dans l’environnement de le « invite de commandes des outils natifs » afin que vous n’êtes pas obligé de rechercher des chemins d’accès spécifiques pour le compilateur, incluez des répertoires, etc.
 
 1.  **Variables d’environnement**
   - `set esp.extensions=cppcorecheck.dll`Cela indique au moteur de charger le module de recommandations de base C++.

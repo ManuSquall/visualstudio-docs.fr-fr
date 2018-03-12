@@ -10,13 +10,15 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3b30b796ca389d5adfc4f8ece3c8f774626e994
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload:
+- multiple
+ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-projects-and-solutions"></a>Démarrage rapide : Projets et solutions
+# <a name="quickstart-projects-and-solutions"></a>Démarrage rapide : projets et solutions
 
 Dans ce guide de démarrage rapide de 10 minutes, nous allons explorer le processus de création d’une solution et d’un projet dans Visual Studio. Nous allons examiner les propriétés d’un projet et certains des fichiers associés. Nous allons aussi créer une référence à un deuxième projet.
 
@@ -61,7 +63,7 @@ Nous allons maintenant ajouter notre premier projet à la solution. Nous allons 
    Un projet nommé « QuickDate » s’affiche en dessous de la solution dans **l’Explorateur de solutions**. Il contient un seul fichier appelé **App.config**.
 
    > [!NOTE]
-   > Si vous ne voyez pas **Visual C#** dans le volet gauche de la boîte de dialogue, vous devez installer la charge de travail **Développement .NET Desktop**. Pour l’installer rapidement, cliquez sur le lien **Ouvrir Visual Studio Installer** situé en bas de ce volet gauche. Dans la fenêtre **Visual Studio Installer** qui s’ouvre, choisissez la charge de travail appropriée, puis choisissez le bouton **Modifier**.
+   > Si vous ne voyez pas **Visual C#** dans le volet gauche de la boîte de dialogue, vous devez installer la charge de travail **Développement .NET Desktop**. Pour l’installer rapidement, cliquez sur le lien **Ouvrir Visual Studio Installer** situé en bas à gauche de la boîte de dialogue. Une fois **Visual Studio Installer** lancé, choisissez la charge de travail **Développement .NET Desktop**, puis cliquez sur le bouton **Modifier**.
 
    ![Lien Ouvrir Visual Studio Installer](media/quickstart-projects-open-installer.png)
 
@@ -181,9 +183,9 @@ Félicitations ! Vous avez terminé ce guide de démarrage rapide. Vous pouvez s
 
 ## <a name="see-also"></a>Voir aussi
 
-[Démarrage rapide : premier aperçu de l’IDE Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Démarrage rapide : Personnaliser l’éditeur et l’IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)  
-[Démarrage rapide : Codage dans l’éditeur](../ide/quickstart-editor.md)  
+[Démarrage rapide : premier aperçu de l'IDE Visual Studio](../ide/quickstart-ide-orientation.md)  
+[Démarrage rapide : personnaliser l’éditeur et l’IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)  
+[Démarrage rapide : codage dans l’éditeur](../ide/quickstart-editor.md)  
 [Gestion des propriétés des projets et des solutions](../ide/managing-project-and-solution-properties.md)  
 [Gestion des références dans un projet](../ide/managing-references-in-a-project.md)  
 [Développer du code dans Visual Studio sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  

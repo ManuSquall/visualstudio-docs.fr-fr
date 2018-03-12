@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4620278c98ea373b8e0cde387f1b5526bf21349b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 52e909e911a552b69930ef6a60257fca29a0794d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Procédure : créer un nuanceur de texture de base
 Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed Graph Shader Language) pour créer un nuanceur de texture unique. Ce nuanceur définit la couleur finale directement sur les valeurs RVB et alpha échantillonnées à partir de la texture.  
@@ -36,7 +37,7 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
 ## <a name="creating-a-basic-texture-shader"></a>Création d’un nuanceur de texture de base  
  Vous pouvez implémenter un nuanceur de texture unique de base en écrivant les valeurs de couleur et alpha d’un échantillon de texture directement dans la couleur de sortie finale.  
   
- Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boîte à outils** soient affichées.  
+ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.  
   
 #### <a name="to-create-a-basic-texture-shader"></a>Pour créer un nuanceur de texture de base  
   
@@ -69,4 +70,4 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
  [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Éditeur d’images](../designers/image-editor.md)   
  [Concepteur de nuanceur](../designers/shader-designer.md)   
- [Nœuds du concepteur de nuanceur](../designers/shader-designer-nodes.md)
+ [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

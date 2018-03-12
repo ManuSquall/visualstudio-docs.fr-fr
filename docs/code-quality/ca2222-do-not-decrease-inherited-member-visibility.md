@@ -18,25 +18,26 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 520882b8d1b24cc7bc346ae185de8f186e4fa163
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ac62bc901629e65d5104bede66046711dd879930
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222 : Ne réduisez pas la visibilité des membres hérités
 |||  
 |-|-|  
 |TypeName|DoNotDecreaseInheritedMemberVisibility|  
 |CheckId|CA2222|  
-|Catégorie|Microsoft.Usage|  
+|Category|Microsoft.Usage|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
  Une méthode privée dans un type unsealed possède une signature qui est identique à une méthode publique déclarée dans un type de base. La méthode privée n’est pas finale.  
   
 ## <a name="rule-description"></a>Description de la règle  
- Vous ne devez pas modifier le modificateur d'accès destiné aux membres hérités. La modification d'un membre hérité au profit d'un état privé n'empêche pas les appelants d'accéder à l'implémentation de classe de base de la méthode. Si le membre est rendu privé et le type est non scellé, hériter des types peut appeler la dernière implémentation publique de la méthode dans la hiérarchie d’héritage. Si vous devez modifier le modificateur d’accès, la méthode doit être marquée comme finale, ou son type doit être sealed pour empêcher le remplacement de la méthode.  
+ Vous ne devez pas modifier le modificateur d’accès destiné aux membres hérités. La modification d'un membre hérité au profit d'un état privé n'empêche pas les appelants d'accéder à l'implémentation de classe de base de la méthode. Si le membre est rendu privé et le type est non scellé, hériter des types peut appeler la dernière implémentation publique de la méthode dans la hiérarchie d’héritage. Si vous devez modifier le modificateur d’accès, la méthode doit être marquée comme finale, ou son type doit être sealed pour empêcher le remplacement de la méthode.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Pour corriger une violation de cette règle, modifiez l’accès pour être non privée. Ou bien, si votre langage de programmation prend en charge, vous pouvez rendre la méthode finale.  

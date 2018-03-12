@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: text boxes, displaying text in documents
-ms.assetid: 04c54ed7-9f00-4068-aaec-1f3200110116
-caps.latest.revision: "60"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- text boxes, displaying text in documents
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 75146e583f2b15557a2f88ba18ed5d8798c7603b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 803dcbe27eedc4b93443a6389b4acf7ee2dc08cf
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button"></a>Procédure pas à pas : affichage de texte dans une zone de texte d'un document à l'aide d'un bouton
   Cette procédure pas à pas montre comment utiliser les boutons et les zones de texte dans une personnalisation au niveau du document pour Microsoft Office Word.  
@@ -35,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -71,9 +73,9 @@ ms.lasthandoff: 10/31/2017
   
 5.  Faites glisser un **bouton** contrôle au document et modifiez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**insertText**|  
+    |**Name**|**insertText**|  
     |**Text**|**Insérer du texte**|  
   
  Vous pouvez maintenant écrire le code qui s'exécute lors d'un clic sur le bouton.  
@@ -99,7 +101,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-your-document"></a>Pour tester votre document  
   
-1.  Appuyez sur F5 pour exécuter votre projet.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
 2.  Cliquez sur le bouton.  
   

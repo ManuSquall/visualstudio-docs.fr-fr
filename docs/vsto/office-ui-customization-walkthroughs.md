@@ -15,16 +15,15 @@ helpviewer_keywords:
 - smart documents, walkthroughs
 - walkthroughs [Office development in Visual Studio], smart tags
 - walkthroughs [Office development in Visual Studio], action panes
-ms.assetid: 7d47536b-742d-4643-9d98-4f1d85cf8786
-caps.latest.revision: "25"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bed22d8b5fced2f423d6c6f1af764ba3ccf07a21
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2ae30b9b157cfcd26e709d39c05af4cc0605a5a1
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Procédures pas à pas relatives à la personnalisation de l'interface utilisateur Office
   Les procédures pas à pas suivantes montrent comment personnaliser l’interface utilisateur des applications Microsoft Office à l’aide des personnalisations au niveau du document et des compléments VSTO.  

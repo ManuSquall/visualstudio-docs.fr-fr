@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Add New Item dialog box, contributing to
+helpviewer_keywords:
+- Add New Item dialog box, contributing to
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13f4d254027fe168018fe597f772518bd8ac6b94
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 923d95256a3ab0e63bdcf35c7ae38d70a117fa02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>Contribuer à la boîte de dialogue Nouvel élément Ajouter
 Un sous-type de projet peut fournir un nouveau répertoire complète des éléments pour le **ajouter un nouvel élément** boîte de dialogue en inscrivant **ajouter un élément** modèles sous la `Projects` sous-clé de Registre.  

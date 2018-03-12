@@ -26,11 +26,12 @@ caps.latest.revision: "24"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f448b7455bcbe13b7257a58a0eafbadd1165b197
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;fichier&gt; élément (déploiement ClickOnce)
 Identifie tous les autres fichiers, téléchargé et utilisé par l’application.  
@@ -183,7 +184,7 @@ Identifie tous les autres fichiers, téléchargé et utilisé par l’applicatio
 ## <a name="dsigdigestvalue"></a>dsig : DigestValue  
  Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. Le `dsig:DigestValue` élément ne possède pas d’attributs. Sa valeur texte est le hachage calculé pour le fichier spécifié.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cet élément identifie tous les fichiers autres que l’application et, en particulier, les valeurs de hachage de vérification des fichiers. Cet élément peut également inclure des données d’isolation de modèle COM (Component Object) associées au fichier. Si un fichier est modifié, le fichier manifeste d’application également doit être mis à jour pour refléter les modifications.  
   
 ## <a name="example"></a>Exemple  

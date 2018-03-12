@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ba611fe5582b65e314046b80fb15751a0152b85
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c2583014552cffacaa3e2f9760fd61ead0af605
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xelement-class-dynamic-properties"></a>Propriétés dynamiques de la classe XElement
 Cette section décrit les propriétés dynamiques de la classe <xref:System.Xml.Linq.XElement?displayProperty=fullName>.  

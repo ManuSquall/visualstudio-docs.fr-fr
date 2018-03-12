@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 59c640755223ffefd350e7af8bdbde2519495240
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 80b8c74fe4e29775d15035c98876c66b45b2d794
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Lorsqu’un point d’arrêt est lié ou devient indépendant
 Lorsqu’un point d’arrêt ne peut pas être lié à l’heure d’un appel à la [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) (méthode), la liaison de temps et de la création du point d’arrêt sont différentes.  

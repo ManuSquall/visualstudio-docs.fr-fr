@@ -18,18 +18,19 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 681785bad04a9f16ca68a1f619700e143c01cb58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d1b11db50a4e6104c09a65ebe9e7616d223ef3ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031 : Ne pas intercepter des types d'exception générale
 |||  
 |-|-|  
 |TypeName|DoNotCatchGeneralExceptionTypes|  
 |CheckId|CA1031|  
-|Catégorie|Microsoft.Design|  
+|Category|Microsoft.Design|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  

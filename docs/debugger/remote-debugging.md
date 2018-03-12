@@ -4,27 +4,32 @@ ms.custom: remotedebugging
 ms.date: 08/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-f1_keywords: vs.debug.remote.overview
+f1_keywords:
+- vs.debug.remote.overview
 dev_langs:
 - C++
 - FSharp
 - CSharp
 - JScript
 - VB
-helpviewer_keywords: remote debugging, setup
+helpviewer_keywords:
+- remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: "65"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d945c28e7fe703c80776a5f1ff124ab6e0a8bf9
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload:
+- multiple
+ms.openlocfilehash: 21867feae0d313c3ac5f93e51cf85ebe14bbba0b
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Vous pouvez déboguer une application Visual Studio qui a été déployée sur un autre ordinateur. Pour ce faire, utilisez le débogueur distant Visual Studio.
@@ -33,16 +38,17 @@ Pour obtenir des instructions détaillées sur le débogage distant, consultez l
 
 |Scénario|Lien|
 |-|-|-|
-|ASP.NET|[Débogage ASP.NET Core à distance](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) ou [ASP.NET du débogage distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C# ou Visual Basic|[Débogage d’un projet c# ou Visual Basic à distance](remote-debugging-csharp.md)|
-|C++|[Débogage à distance d’un projet C++](remote-debugging-cpp.md)|
-|Applications Windows universelles (UWP)|[Déboguer le package d'application installé](debug-installed-app-package.md)|
-|Azure|[ASP.NET de débogage distant sur Azure](remote-debugging-azure.md)|
-|Azure Service Fabric|[Déboguer une application de Service Fabric distante](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).|
+|Azure App Service|[Débogueur de capture instantanée](../debugger/debug-live-azure-applications.md) ou [à distance débogage ASP.NET sur Azure](../debugger/remote-debugging-azure.md)|
+|Machine virtuelle Azure|[Déboguer à distance ASP.NET sur Azure](../debugger/remote-debugging-azure.md)|
+|Azure Service Fabric|[Déboguer une application Azure Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
+|ASP.NET|[À distance déboguer ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) ou [ASP.NET de déboguer à distance](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|C# ou Visual Basic|[Débogage distant d’un projet C# ou Visual Basic](../debugger/remote-debugging-csharp.md)|
+|C++|[Déboguer à distance un projet C++](../debugger/remote-debugging-cpp.md)|
+|Applications Windows universelles (UWP)|[Exécuter les applications UWP sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md) ou [déboguer un package d’application installé](../debugger/debug-installed-app-package.md)|
 
 Si vous simplement télécharger et installer le débogueur distant et que vous n’avez pas besoin des instructions supplémentaires pour votre scénario, suivez les étapes décrites dans cet article.
   
-## <a name="download-and-install-the-remote-tools"></a>Télécharger et installer les outils de contrôle à distance  
+## <a name="download-and-install-the-remote-tools"></a>Téléchargez et installez les outils à distance  
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -52,9 +58,9 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
 
 1. Rechercher **msvsmon.exe** dans le répertoire correspondant à votre version de Visual Studio. Pour Visual Studio Enterprise 2017 :
 
-      **Programme fichiers (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      **Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       
-      **Programme fichiers (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
+      **Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
 
 2. Partage les **débogueur distant** dossier sur l’ordinateur Visual Studio.
 

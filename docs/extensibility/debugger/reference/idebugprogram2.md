@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugProgram2
-helpviewer_keywords: IDebugProgram2 interface
+f1_keywords:
+- IDebugProgram2
+helpviewer_keywords:
+- IDebugProgram2 interface
 ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 754b2e79131e425b8e27c0084acbd6243016815a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7f02d099fe680006966219bb626e17bc7a7114b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 Cette interface représente un programme qui s’exécute dans un processus.  
@@ -62,14 +67,14 @@ IDebugProgram2 : IUnknown
 |[EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)|Énumère les chemins de code de ce programme.|  
 |[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)|Écrit un fichier de vidage dans un fichier.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Un programme est un conteneur de thread à exécuter dans une architecture d’exécution particulière, alors qu’un processus est constitué d’un ou plusieurs programmes.  
   
 ## <a name="see-also"></a>Voir aussi  

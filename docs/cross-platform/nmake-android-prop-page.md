@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 10/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d901c572-16c4-402a-b230-7ae59ce9fad4
@@ -19,13 +19,15 @@ f1_keywords:
 - VC.Project.VCNMakeTool.PreprocessorDefinitions
 - VC.Project.VCNMakeTool.IncludeSearchPath
 - VC.Project.VCNMakeTool.ForcedIncludes
-ms.openlocfilehash: ff692a62a6e9cdb6b6844d6b0358c6af856b052f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: 955e3f7dfbab3293a01392c52b82aa2b7dce25c2
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="nmake-properties-android-c"></a>Propriétés NMake (Android C++) 
+# <a name="nmake-properties-android-c"></a>Propriétés NMake (Android C++)
 
 Propriété | Description
 --- | ---
@@ -36,4 +38,4 @@ Sortie | Spécifie le fichier de sortie à générer.
 Définitions de préprocesseur | Spécifie les définitions du préprocesseur utilisées par les fichiers sources.
 Chemin de recherche Include | Spécifie le chemin de recherche Include pour résoudre les fichiers Include.
 Fichiers Include forcés | Spécifie les fichiers Include forcés.
-Options supplémentaires | Spécifie les commutateurs du compilateur supplémentaires utilisés par IntelliSense durant l’analyse des fichiers C++
+Options supplémentaires | Spécifie les commutateurs supplémentaires du compilateur utilisés par IntelliSense lors de l’analyse des fichiers C++.

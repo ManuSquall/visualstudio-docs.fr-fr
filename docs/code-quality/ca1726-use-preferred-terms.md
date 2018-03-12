@@ -4,30 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - UsePreferredTerms
 - CA1726
-helpviewer_keywords: UsePreferredTerms
+helpviewer_keywords:
+- UsePreferredTerms
 ms.assetid: 642b2acd-3a33-4d1f-b0a7-67073ae73be2
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2ae02d0eb136d45bc2b8af7dde5f897765493050
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 63a27c62f46343ac840a550ccbefd30f20e9f06a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726 : Utilisez les termes par défaut
 |||  
 |-|-|  
 |TypeName|UsePreferredTerms|  
 |CheckId|CA1726|  
-|Catégorie|Microsoft.Naming|  
+|Category|Microsoft.Naming|  
 |Modification avec rupture|Avec rupture - lorsque déclenchée sur les assemblys<br /><br /> Sans rupture - lorsque déclenchée sur les paramètres de type|  
   
 ## <a name="cause"></a>Cause  

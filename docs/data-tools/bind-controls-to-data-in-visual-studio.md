@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9361380aa53b8f6070f4ff9d956620c5344eec7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: d6a1ab26dc402d039a5e858896ec25668be8df9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Lier des contrôles aux données dans Visual Studio
 Vous pouvez afficher des données pour les utilisateurs de votre application en liant des données à des contrôles. Vous pouvez créer ces contrôles liés aux données en faisant glisser des éléments depuis la **des Sources de données** fenêtre sur une aire de conception ou les contrôles sur une aire dans Visual Studio.  
@@ -37,7 +38,7 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 |Entity Data Model|Oui<sup>1</sup>|Oui|Oui|  
 |Classes LINQ to SQL|Ne<sup>2</sup>|Ne<sup>2</sup>|Ne<sup>2</sup>|  
 |Services (y compris [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services et les services web)|Oui|Oui|Oui|  
-|Objet|Oui|Oui|Oui|  
+|Object|Oui|Oui|Oui|  
 |SharePoint|Oui|Oui|Oui|  
   
  1. Générer le modèle à l’aide de la **Entity Data Model** Assistant, puis faites glisser ces objets vers le concepteur.  

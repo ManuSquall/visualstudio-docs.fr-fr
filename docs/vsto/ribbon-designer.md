@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Designer_Microsoft.VisualStudio.Tools.Office.Ribbon.Design.RibbonDesigner
+f1_keywords:
+- Designer_Microsoft.VisualStudio.Tools.Office.Ribbon.Design.RibbonDesigner
 dev_langs:
 - VB
 - CSharp
@@ -25,16 +27,16 @@ helpviewer_keywords:
 - Ribbon Designer [Office development in Visual Studio]
 - read-only properties
 - Ribbon [Office development in Visual Studio], shortcut keys
-ms.assetid: 26617206-f4da-416f-a18a-d817b2d4872d
-caps.latest.revision: "79"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 941ca002d2f840805253624e7e0004fb560c4167
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: cab4a223f8e2d33185f37bc6ad90397ace1d56e1
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ribbon-designer"></a>Concepteur de ruban
   Le Concepteur de ruban est une zone de conception visuelle. Utilisez le Concepteur de ruban pour ajouter des onglets personnalisés, des groupes et des contrôles au ruban d’une application Microsoft Office.  
@@ -202,7 +204,7 @@ ms.lasthandoff: 10/31/2017
 |Fermez le panneau déroulant si le panneau déroulant est ouvert et le contrôle parent est sélectionné.|LEFT|  
 |Ouvrez le panneau de la liste déroulante.|RIGHT|  
 |Sélectionnez le premier contrôle dans le volet de la liste déroulante si le panneau déroulant est ouvert.|RIGHT|  
-|Fermer un panneau déroulant.|Échap|  
+|Fermer un panneau déroulant.|ÉCHAP|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   

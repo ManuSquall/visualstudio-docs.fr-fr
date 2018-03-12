@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Modules view
+helpviewer_keywords:
+- Modules view
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d0346732de89fcc08c0f3604e8a66fa1fd7acdb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- dotnet
+ms.openlocfilehash: e67b1676495b6217a6134bc7e0f3f4cf74b1faf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Vue Modules - Données d’instrumentation de la mémoire .NET
 La vue Modules des données d’allocation de mémoire .NET collectées à l’aide de la méthode d’instrumentation regroupe les données de mémoire et de minutage selon les modules exécutés dans le cadre de l’exécution du profilage. Les données de profilage pour les fonctions du module sont répertoriées sous le nœud du module.  
@@ -26,7 +30,7 @@ La vue Modules des données d’allocation de mémoire .NET collectées à l’
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Nom**|Nom de la fonction ou du module.|  
+|**Name**|Nom de la fonction ou du module.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Nombre d’appels**|Nombre total d’appels effectués à cette fonction ou à ce module.|  
 |**Fichier source**|Fichier source contenant la définition de cette fonction.|  

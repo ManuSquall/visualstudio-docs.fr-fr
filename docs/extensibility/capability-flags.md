@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: source control plug-ins, capability flags
+helpviewer_keywords:
+- source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5104bff319f4a6517ddccde1da1407156797928e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: ec5cedcec1d79cbc3a71410a1048f5014c8aa9e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="capability-flags"></a>Indicateurs de capacité
 Le SCC_CAP_*xxx* indicateurs sont des indicateurs de bits utilisés pour indiquer les fonctionnalités d’un plug-in de contrôle de code source. Le SCC_EXCAP_*xxx* indicateurs sont incrémentielles indicateurs qui indiquent des capacités étendues et de résoudre en valeurs entières.  
   
-|Code de fonction|Valeur|Description|  
+|Code de fonction|Value|Description|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_REMOVE`|0x00000001L|Prend en charge la [SccRemove](../extensibility/sccremove-function.md) et commande.|  
 |`SCC_CAP_RENAME`|0x00000002L|Prend en charge la [SccRename](../extensibility/sccrename-function.md) et commande.|  
@@ -52,7 +56,7 @@ Le SCC_CAP_*xxx* indicateurs sont des indicateurs de bits utilisés pour indique
   
 ## <a name="capability-bits-added-in-version-12"></a>Bits de fonctionnalité ajoutées dans la Version 1.2  
   
-|Code de fonction|Valeur|Description|  
+|Code de fonction|Value|Description|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|Prend en charge la [SccCreateSubProject](../extensibility/scccreatesubproject-function.md).|  
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|Prend en charge la [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).|  
@@ -65,7 +69,7 @@ Le SCC_CAP_*xxx* indicateurs sont des indicateurs de bits utilisés pour indique
 ## <a name="capability-bits-added-in-version-13"></a>Bits de fonctionnalité ajoutées dans la Version 1.3  
  Ces indicateurs sont passés à la fois pour le [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) fonction pour déterminer si la fonctionnalité est prise en charge.  
   
-|Code de la fonctionnalité étendue|Valeur|Description|  
+|Code de la fonctionnalité étendue|Value|Description|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|Prend en charge la `SCC_CHECKOUT_LOCALVER` option des extractions.|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|Prend en charge la [SccBackgroundGet](../extensibility/sccbackgroundget-function.md).|  

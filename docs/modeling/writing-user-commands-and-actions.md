@@ -4,18 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ba5ff03f-d2e3-4188-a706-3eb68ffb5f9e
-caps.latest.revision: "7"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: c9cf2ed906cd35f201c13cc2f82f8142f598b901
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 0b75e8ec6b703672311d75d761dc1591ea75fa72
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="writing-user-commands-and-actions"></a>Écriture de commandes et d'actions utilisateur
 Vous pouvez personnaliser un langage spécifique à un domaine en ajoutant des commandes au diagramme et en répondant à des mouvements tels que des événements de clic, de double clic et glisser-déplacer.  

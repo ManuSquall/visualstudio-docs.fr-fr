@@ -4,19 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: text templates, escape sequences
-ms.assetid: 36fff542-2f42-460f-a2d5-03fc76817f3b
-caps.latest.revision: "29"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: fdf062c9b33dd4a160f54bba83991a3cdda7f0d1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- text templates, escape sequences
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: f6ab5346ed82aadea339bc8ee45ac4a3bfb72c65
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Utilisation de séquences d'échappement dans des modèles de texte
 Vous pouvez utiliser des séquences d’échappement dans les modèles de texte pour générer des balises de modèle de texte et (dans le code c# uniquement) d’échappement les caractères de contrôle et des guillemets doubles.  

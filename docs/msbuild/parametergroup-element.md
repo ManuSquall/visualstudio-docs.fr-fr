@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,15 +16,17 @@ helpviewer_keywords:
 - <ParameterGroup> element [MSBuild]
 - ParameterGroup element [MSBuild]
 ms.assetid: c3275e69-a427-4889-bc1d-51bff2c285fa
-caps.latest.revision: "6"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49da59387ccd3c7367e06c91fc7f57b824e32ab5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: ba8ea083a5479a71d39eefbc5de7a93696d06d8f
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="parametergroup-element"></a>ParameterGroup, élément
 Contient une liste facultative de paramètres qui seront présents sur la tâche générée par un `UsingTask``TaskFactory`. Pour plus d’informations, consultez [UsingTask, élément (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -43,7 +45,7 @@ Contient une liste facultative de paramètres qui seront présents sur la tâche
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
 
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
 
 ### <a name="child-elements"></a>Éléments enfants  
 
@@ -74,6 +76,6 @@ Contient une liste facultative de paramètres qui seront présents sur la tâche
 ```  
 
 ## <a name="see-also"></a>Voir aussi  
- [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
- [Référence des tâches](../msbuild/msbuild-task-reference.md)   
+ [Tâches](../msbuild/msbuild-tasks.md)   
+ [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
  [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

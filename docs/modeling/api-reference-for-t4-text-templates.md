@@ -4,18 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 63279da9-69ac-49ad-ac7d-43957c45e0ce
-caps.latest.revision: "6"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: c9ff6e10d8030a413bbcfeff1d804fea61b8d9c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: a229ea504fee1d39b697cc5f69c5c77d64758751
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Référence API pour les modèles de texte T4
 L’API de création de modèles de texte vous permet d’appeler et de personnaliser la transformation de [modèles de texte](../modeling/code-generation-and-t4-text-templates.md).  

@@ -18,24 +18,25 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5418bc8d265c32057911df2d3a15aaddacf1398e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ac50c390ca7a45cf5ef28f2d82d1f75fc5e2c1a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720 : Les identificateurs ne doivent pas contenir de noms de types
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldNotContainTypeNames|  
 |CheckId|CA1720|  
-|Catégorie|Microsoft.Naming|  
+|Category|Microsoft.Naming|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
  Le nom d’un paramètre dans un membre extérieurement visible contient un nom de type de données.  
   
- ou  
+ - ou -  
   
  Le nom d’un membre extérieurement visible contient un nom de type de données spécifiques au langage.  
   
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
 -   UInt8  
   
--   Short  
+-   Courte  
   
 -   UShort  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
 -   UInteger  
   
--   Long  
+-   Longue  
   
 -   ULong  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Signé  
   
--   Flottant  
+-   Float  
   
 -   Float32  
   
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
   
  En outre, les noms d’un paramètre sont également vérifiés par rapport aux noms de types de données indépendant du langage suivants, sans respecter la casse :  
   
--   Objet  
+-   Object  
   
 -   obj  
   
@@ -126,7 +127,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Decimal  
   
--   Guid  
+-   GUID  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  **Si le déclenchement sur un paramètre :**  

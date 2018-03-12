@@ -18,25 +18,26 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 01e795c4505b71f337212f85c3946f8800fbc05d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4ca506d827c954a9863a6a37efd0980ecf4d8452
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004 : Les méthodes génériques doivent fournir un paramètre de type
 |||  
 |-|-|  
 |TypeName|GenericMethodsShouldProvideTypeParameter|  
 |CheckId|CA1004|  
-|Catégorie|Microsoft.Design|  
+|Category|Microsoft.Design|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
  La signature de paramètre d’une méthode générique visible de l’extérieur ne contient pas de types qui correspondent à tous les paramètres de type de la méthode.  
   
 ## <a name="rule-description"></a>Description de la règle  
- L'inférence désigne la manière dont l'argument de type d'une méthode générique est déterminé par le type d'argument passé à la méthode, au lieu d'utiliser la spécification explicite de l'argument de type. Pour activer l'inférence, la signature de paramètre d'une méthode générique doit contenir un paramètre du même type que le paramètre de type de la méthode. Dans ce cas, il n'est pas nécessaire de spécifier l'argument de type. Lorsque vous utilisez l’inférence pour tous les paramètres de type, la syntaxe d’appel des méthodes d’instance génériques et non génériques est identique. Cela simplifie l’utilisation des méthodes génériques.  
+ L’inférence désigne la manière dont l’argument de type d’une méthode générique est déterminé par le type d’argument passé à la méthode, au lieu d’utiliser la spécification explicite de l’argument de type. Pour activer l’inférence, la signature de paramètre d’une méthode générique doit contenir un paramètre du même type que le paramètre de type de la méthode. Dans ce cas, il n’est pas nécessaire de spécifier l’argument de type. Lorsque vous utilisez l’inférence pour tous les paramètres de type, la syntaxe d’appel des méthodes d’instance génériques et non génériques est identique. Cela simplifie l’utilisation des méthodes génériques.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Pour corriger une violation de cette règle, modifiez la conception afin que la signature de paramètre contienne le même type pour chaque paramètre de type de la méthode.  

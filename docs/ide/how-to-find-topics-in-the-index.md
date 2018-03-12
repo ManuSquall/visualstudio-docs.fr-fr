@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea90dba4090565143c84d510b5e4f9e998cfb5fc
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 0e6c9df2254108b778eb1478311ddaa386f70d74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-topics-by-using-the-help-viewer-index"></a>Recherche de rubriques avec l’index de la visionneuse d’aide
 L’index contient une liste de mots clés qui sont associés à des rubriques dans le contenu installé. Chaque rubrique peut être associée à plusieurs mots clés et chaque mot clé peut être associé à plusieurs rubriques. Utilisez cet index comme celui d’un livre.  
@@ -42,40 +43,40 @@ Sous l’onglet **Index**, effectuez l’une des tâches suivantes :
   
     Si le mot clé que vous spécifiez est associé à une seul rubrique, il s’affiche. Sinon, une liste de toutes les rubriques qui sont associés à ce mot clé s’affiche.
 
-## <a name="index-search-tips"></a>Conseils de recherche d’index  
-L’utilisation de l’index est un processus simple ; +toutefois, comprendre comment mieux entrer des mots clés peut rendre vos recherches d’index plus productives.  
+## <a name="index-search-tips"></a>Conseils relatifs à la recherche d’index  
+L’utilisation de l’index est un processus simple ; toutefois, comprendre comment mieux entrer des mots clés peut rendre vos recherches d’index plus productives.  
   
 ### <a name="general-guidelines"></a>Indications générales  
 -   Faites défiler les entrées d’index. Toutes les rubriques ne sont pas indexées de la même façon, et celle qui peut vous aider peut être plus haut ou plus bas que prévu dans la liste.  
   
--   Omettez les articles tels que « un » ou « le », car l’index les ignore.  
+-   Omettez les articles tels que « un » ou « le », car l’index les ignore.  
   
 -   Inversez les mots entrés si vous ne trouvez pas les entrées souhaitées.  
   
-    Par exemple, si « débogage de code assembleur inline » n’affiche aucune entrée correspondante, essayez de taper « code assembleur, débogage inline ».  
+    Par exemple, si « débogage de code assembleur inline » n’affiche aucune entrée correspondante, essayez de taper « code assembleur, débogage inline ».  
   
--   Utilisez des filtres avec l’onglet **Index** pour diminuer le nombre de résultats.  
+-   Utilisez des filtres avec l’onglet **Index** pour réduire le nombre de résultats.  
   
 ### <a name="syntax-tips"></a>Conseils de syntaxe  
 Si vous ne trouvez pas d’entrée pour le mot ou l’expression que vous avez entré, essayez ce qui suit :  
   
 -   Tapez les premières lettres ou la racine du mot. En entrant une chaîne partielle, vous pouvez accéder aux rubriques qui ont été indexées avec des mots clés au singulier ou au pluriel.  
   
-    Par exemple, entrez « propriété » pour commencer votre recherche au-dessus des propriétés et de la propriété.  
+    Par exemple, entrez « propriét » pour commencer votre recherche au-dessus de « propriété » et de « propriétés ».  
   
--   Entrez le substantif (-effectue une opération) du verbe pour la tâche que vous souhaitez effectuer. Pour rechercher des entrées d’index plus spécifiques, ajoutez un mot qui décrit exactement ce que vous voulez.  
+-   Entrez le substantif correspondant au verbe pour la tâche que vous souhaitez effectuer. Pour rechercher des entrées d’index plus spécifiques, ajoutez un mot qui décrit exactement ce que vous voulez.  
   
-    Par exemple, tapez « exécution » pour obtenir plus d’entrées et « exécution de programmes » pour en obtenir moins.  
+    Par exemple, tapez « exécution » pour obtenir plus d’entrées et « exécution de programmes » pour en obtenir moins.  
   
 -   Entrez des adjectifs autonomes. Pour affiner les résultats, ajoutez un mot qui décrit exactement ce que vous voulez.  
   
-    Par exemple, entrez « COM+ » pour obtenir un grand nombre d’entrées ou « composants COM+ » pour en obtenir moins.  
+    Par exemple, entrez "COM+" pour obtenir un grand nombre d’entrées ou "composants COM+" pour en obtenir moins.  
   
--   Entrez un synonyme du terme ou de verbe que vous recherchez.  
+-   Entrez un synonyme du mot ou du verbe que vous recherchez.  
   
-    Par exemple, si vous avez entré le terme « construction », essayez « création » à la place. 
+    Par exemple, si vous avez entré le terme « génération », essayez « création » à la place. 
   
 ## <a name="see-also"></a>Voir aussi
-[Comment : rechercher des rubriques dans la table des matières](../ide/how-to-find-topics-in-the-table-of-contents.md)  
-[Comment : rechercher des rubriques](../ide/how-to-search-for-topics.md)  
+[Guide pratique pour rechercher des rubriques dans la table des matières](../ide/how-to-find-topics-in-the-table-of-contents.md)  
+[Guide pratique pour rechercher des rubriques](../ide/how-to-search-for-topics.md)  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

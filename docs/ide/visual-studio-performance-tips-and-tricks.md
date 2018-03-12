@@ -3,20 +3,24 @@ title: "Conseils et astuces pour améliorer les performances de Visual Studio | 
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 936d0df8c838227c5d6c99b0f04f1069eae8a277
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces pour améliorer les performances de Visual Studio
 
@@ -31,7 +35,7 @@ Les recommandations pour améliorer les performances de Visual Studio concernent
 
     Si vous mettez à niveau votre système d’une version 32 bits de Windows vers une version 64 bits, vous passez de 2 Go à 4 Go la quantité de mémoire virtuelle disponible pour Visual Studio. Cela permet à Visual Studio de gérer des charges de travail beaucoup plus importantes, même avec un processus 32 bits.
 
-    Pour plus d’informations, consultez la page sur les [limites de mémoire](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) et l’[utilisation de /LARGEADDRESSAWARE sur Windows 64 bits](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Pour plus d’informations, consultez la page sur les [limites de mémoire](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) et l’[utilisation de /LARGEADDRESSAWARE sur Windows 64 bits](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="configure-solution-and-projects"></a>Configurer des solutions et des projets
 
@@ -46,6 +50,7 @@ Si votre solution est très volumineuse et contient de nombreux projets, vous po
     Vous pouvez fractionner votre solution en plusieurs petits fichiers solution dans les projets couramment utilisés. Cette refactorisation doit réduire considérablement l’utilisation de mémoire pour votre flux de travail. Les solutions plus petites se chargent également plus vite.
 
 ## <a name="configure-debugging-options"></a>Configurer les options de débogage
+
 En règle générale, si vous manquez de mémoire pendant le débogage des sessions, vous pouvez optimiser les performances en modifiant un peu la configuration.
 
 - **Activer Uniquement mon code**
@@ -70,9 +75,10 @@ En règle générale, si vous manquez de mémoire pendant le débogage des sessi
 
     Pour désactiver les outils de diagnostic, démarrez une session de débogage, choisissez **Outils > Options > Activer les outils de diagnostic** et décochez l’option.
 
-    Pour plus d’informations, consultez [Outils de profilage](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools).
+    Pour plus d’informations, consultez [Outils de profilage](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Désactiver des outils et des extensions
+
 Certains outils ou extensions peuvent être désactivés pour améliorer les performances.
 
 > [!TIP]
@@ -80,7 +86,7 @@ Certains outils ou extensions peuvent être désactivés pour améliorer les per
 
 ### <a name="managed-language-services-roslyn"></a>Services de langage gérés (Roslyn)
 
-Pour plus d’informations sur les performances Roslyn, consultez [Performance considerations for large solutions] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Pour plus d’informations sur les performances de « Roslyn » (.NET Compiler Platform), consultez [Performance considerations for large solutions] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Désactiver l’analyse complète de la solution**
 
@@ -122,7 +128,8 @@ Pour forcer une opération de garbage collection, utilisez la touche de raccourc
 
 Si le forçage de l’opération de garbage collection permet à votre scénario de fonctionner de manière fiable, envoyez un rapport à travers l’outil de commentaires de Visual Studio, car ce comportement est susceptible d’être un bogue.
 
-Pour obtenir une description détaillée du récupérateur de mémoire CLR, consultez [Fundamental of Garbage Collection](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx) (Concepts fondamentaux de l’opération de garbage collection).
+Pour obtenir une description détaillée du récupérateur de mémoire CLR, consultez [Fundamental of Garbage Collection](/dotnet/standard/garbage-collection/fundamentals) (Concepts fondamentaux de l’opération de garbage collection).
 
-## <a name="see-also"></a>Voir aussi  
- [IDE Visual Studio](../ide/index.md)
+## <a name="see-also"></a>Voir aussi
+
+[IDE Visual Studio](../ide/visual-studio-ide.md)

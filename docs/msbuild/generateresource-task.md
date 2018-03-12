@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
 dev_langs:
 - VB
 - CSharp
@@ -17,15 +18,17 @@ helpviewer_keywords:
 - MSBuild, GenerateResource task
 - GenerateResource task [MSBuild]
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
-caps.latest.revision: "15"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3004b780400d2fac46866ac4ad02bda18ada9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 37aacbfd2095cf4edae78393569702fe4fea6c7e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="generateresource-task"></a>GenerateResource, tâche
 Convertit les fichiers .txt et .resx (format de ressources XML) en fichiers .resources binaires du Common Language Runtime qui peuvent être incorporés dans un exécutable binaire runtime ou compilés en assemblys satellites. Cette tâche est généralement utilisée pour convertir des fichiers .txt ou .resx en fichiers .resource. La fonctionnalité de la tâche `GenerateResource` est similaire à [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -41,7 +44,7 @@ Convertit les fichiers .txt et .resx (format de ressources XML) en fichiers .res
 |`ExecuteAsTool`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, exécute tlbimp.exe et aximp.exe à partir du framework cible approprié out-of-process pour générer les assemblys de wrappers nécessaires. Ce paramètre autorise le multi-ciblage de `ResolveComReferences`.|  
 |`FilesWritten`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les noms de tous les fichiers écrits sur disque. Cela comprend le fichier cache, le cas échéant. Ce paramètre est utile pour les implémentations de Clean.|  
 |`MinimalRebuildFromTracking`|Paramètre `Boolean` facultatif.<br /><br /> Obtient ou définit un commutateur qui spécifie si la génération incrémentielle suivie sera utilisée. Si la valeur est `true`, la génération incrémentielle est activée ; sinon, une régénération est exécutée.|  
-|`NeverLockTypeAssemblies`|Paramètre `Boolean` facultatif.<br /><br /> Obtient ou définit une valeur booléenne qui indique si un [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) doit être créé pour évaluer les fichiers de ressources (.resx) (true) ou si un [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) doit être créé uniquement quand les fichiers de ressources font référence à un assembly d’utilisateur (false).|  
+|`NeverLockTypeAssemblies`|Paramètre `Boolean` facultatif.<br /><br /> Obtient ou définit une valeur booléenne qui indique si un [AppDomain](/dotnet/api/system.appdomain) doit être créé pour évaluer les fichiers de ressources (.resx) (true) ou si un [AppDomain](/dotnet/api/system.appdomain) doit être créé uniquement quand les fichiers de ressources font référence à un assembly d’utilisateur (false).|  
 |`OutputResources`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie le nom des fichiers générés, comme les fichiers .resources. Si vous ne spécifiez pas de nom, le nom du fichier d’entrée correspondant est utilisé et le fichier .resources créé est placé dans le répertoire qui contient le fichier d’entrée.|  
 |`PublicClass`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, crée une classe de ressource fortement typée en tant que classe publique.|  
 |`References`|Paramètre `String[]` facultatif.<br /><br /> Références à partir desquelles charger les types dans les fichiers .resx. Les éléments de données de fichiers .resx peuvent avoir un type .NET. Lors de la lecture du fichier .resx, il doit être résolu. En règle générale, on utilise pour cela des règles de chargement de type standard. Si vous fournissez des assemblys dans `References`, ils sont prioritaires.<br /><br /> Ce paramètre n’est pas obligatoire pour les ressources fortement typées.|  
@@ -62,7 +65,7 @@ Convertit les fichiers .txt et .resx (format de ressources XML) en fichiers .res
 |`TrackFileAccess`|Paramètre <xref:System.Boolean> facultatif.<br /><br /> Si la valeur est true, le répertoire du fichier d’entrée est utilisé pour résoudre les chemins de fichiers relatifs.|  
 |`UseSourcePath`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, indique que le répertoire du fichier d’entrée doit être utilisé pour résoudre les chemins de fichiers relatifs.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Étant donné que les fichiers .resx peuvent contenir des liens vers d’autres fichiers de ressources, il ne suffit pas de simplement comparer les horodatages des fichiers .resx et .resource pour savoir si les sorties sont à jour. Au lieu de cela, la tâche `GenerateResource` suit les liens figurant dans les fichiers .resx et vérifie aussi les horodatages des fichiers liés. Cela signifie qu’en général vous ne devez pas utiliser d’attributs `Inputs` et `Outputs` sur la cible contenant la tâche `GenerateResource`, car elle risque dans ce cas d’être ignorée alors qu’elle doit être exécutée.  
   
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
@@ -93,5 +96,5 @@ Convertit les fichiers .txt et .resx (format de ressources XML) en fichiers .res
  Sans les métadonnées \<LogicalName>, la ressource se nommerait myAssembly.myResource.resources.  Cet exemple s’applique uniquement au processus de génération Visual Basic et Visual C#.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
+ [Tâches](../msbuild/msbuild-tasks.md)   
  [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)

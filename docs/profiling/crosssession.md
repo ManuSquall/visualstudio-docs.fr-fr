@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 196107019a43f8f76beeb55cde6a56034375b9d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 079e0ec1b2bad2ca01a698c474c37de6d5d7dfd6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="crosssession"></a>CrossSession
 L’option **CrossSession** de VSPerfCmd.exe permet au profileur de collecter des données à partir de n’importe quelle session de console. L’option **CrossSession** doit être utilisée avec l’option **Start**.  
@@ -30,7 +31,7 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- None  
+ Aucun.  
   
 ## <a name="valid-options"></a>Options valides  
  Pour activer le profilage dans une autre session, l’option **CrossSession** doit être spécifiée avec l’option **Start**. L’option **CrossSession** doit également être spécifiée dans toutes les commandes **VSPerfCmd Attach** et **Detach** suivantes.  

@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5937d37cfed89ee7f10779f764b8d78d370eb362
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b92a622b6b898c917710ac748b9205079d71ea5e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-class---internal-members"></a>Classe de tâche - membres internes
 Cette rubrique décrit les membres internes de la <xref:System.Threading.Tasks.Task?displayProperty=fullName> classe qui vous aident à implémenter un débogueur personnalisé. Pour obtenir des informations générales sur cette classe, consultez la <xref:System.Threading.Tasks.Task> rubrique de référence.  
@@ -52,7 +53,7 @@ Cette rubrique décrit les membres internes de la <xref:System.Threading.Tasks.T
   
 ### <a name="fields"></a>Champs  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |[m_action](../../extensibility/debugger/m-action-field.md)|Délégué qui représente le code à exécuter dans le <xref:System.Threading.Tasks.Task> objet.|  
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Stocke des propriétés supplémentaires de la <xref:System.Threading.Tasks.Task> objet.|  
@@ -67,7 +68,7 @@ Cette rubrique décrit les membres internes de la <xref:System.Threading.Tasks.T
 |[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|Indique que la tâche terminée avec succès de l’exécution.|  
 |[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|Indique que la tâche a terminé l’exécution de son délégué et attend implicitement les tâches enfants attachées soient terminées.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les méthodes internes suivantes sont utiles pour un moteur de débogage, car ils marquent l’entrée de <xref:System.Threading.Tasks.Task> d’exécution de code :  
   
 -   `Execute`  

@@ -17,16 +17,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], method instance
 - BDC [SharePoint development in Visual Studio], method
 - Business Data Connectivity service [SharePoint development in Visual Studio], method
-ms.assetid: f0c8a686-c0de-414e-8de9-f228f59d1eb3
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 9316eaa48b11342891584e448f8bb67bdce6f682
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: aa5f1adcaacacd2b9e08d4c12cdcafbd5f561200
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-define-a-method-instance"></a>Comment : définir une instance de méthode
   Vous devez définir au moins une instance de méthode pour chaque méthode dans votre modèle.  

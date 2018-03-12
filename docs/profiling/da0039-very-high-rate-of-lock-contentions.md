@@ -16,17 +16,18 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce8fb29aed90680dece0483891653328854b1dc0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eeec11274df74b65e1991e3a0fd3b9132bb4bcb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039 : Taux très élevé de conflits de verrou
 |||  
 |-|-|  
 |ID de règle|DA0039|  
-|Catégorie|Utilisation du .NET Framework|  
+|Category|Utilisation du .NET Framework|  
 |Méthodes de profilage|Échantillonnage<br /><br /> Instrumentation<br /><br /> Mémoire .NET|  
 |Message|Un taux très élevé de conflits de verrou .NET se produit. Analysez la raison de ce conflit de verrou en exécutant un profil Concurrence.|  
 |Type de règle|Warning|  

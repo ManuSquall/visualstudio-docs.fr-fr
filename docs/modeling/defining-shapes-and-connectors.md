@@ -4,18 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 1fae548d-9288-4dd5-a24f-ff0d69c73628
-caps.latest.revision: "3"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: 745e91e7d5cbb63238fc384c2f5cc9677218fda6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: a1a1043515afb8d7567459e1adae23f1d4fcfde9
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="defining-shapes-and-connectors"></a>Définition de formes et de connecteurs
 Il existe plusieurs types élémentaires de formes que vous pouvez utiliser pour afficher les informations sur le diagramme d'un langage spécifique à un domaine (DSL).  

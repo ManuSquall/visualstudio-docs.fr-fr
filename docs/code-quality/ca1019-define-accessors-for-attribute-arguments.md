@@ -18,25 +18,26 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f04a49c8c68fcc597ecd98471b46932d467b365
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1c67e5963cdac0c9398ee2e4d54a4cd3347fee66
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019 : Définir des accesseurs pour les arguments d'attribut
 |||  
 |-|-|  
 |TypeName|DefineAccessorsForAttributeArguments|  
 |CheckId|CA1019|  
-|Catégorie|Microsoft.Design|  
+|Category|Microsoft.Design|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
  Dans son constructeur, un attribut définit des arguments qui n’ont pas de propriétés correspondantes.  
   
 ## <a name="rule-description"></a>Description de la règle  
- Les attributs peuvent définir des arguments obligatoires qui doivent être spécifiés lorsque vous appliquez l'attribut à une cible. Ceux-ci sont également appelés arguments positionnels parce qu'ils sont fournis aux constructeurs d'attributs en tant que paramètres positionnels. Pour chaque argument obligatoire, l'attribut doit également fournir une propriété en lecture seule correspondante afin que la valeur de l'argument puisse être récupérée au moment de l'exécution. Cette règle vérifie que, pour chaque paramètre de constructeur, vous avez défini la propriété correspondante.  
+ Les attributs peuvent définir des arguments obligatoires qui doivent être spécifiés lorsque vous appliquez l’attribut à une cible. Ceux-ci sont également appelés arguments positionnels parce qu’ils sont fournis aux constructeurs d’attributs en tant que paramètres positionnels. Pour chaque argument obligatoire, l’attribut doit également fournir une propriété en lecture seule correspondante afin que la valeur de l’argument puisse être récupérée au moment de l’exécution. Cette règle vérifie que, pour chaque paramètre de constructeur, vous avez défini la propriété correspondante.  
   
  Les attributs peuvent également définir des arguments facultatifs, qui sont également appelés arguments nommés. Ces arguments sont fournis aux constructeurs d'attributs par noms et doivent disposer d'une propriété en lecture/écriture correspondante.  
   

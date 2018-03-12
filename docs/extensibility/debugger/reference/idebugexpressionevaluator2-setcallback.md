@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e2ee116f7ed858121c41628515991ed4903cb15
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a4860418edf2c0dcd4e9d0f6c98ea44db425034e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 Permet à l’évaluateur d’expression (EE) spécifier l’interface de rappel qui utilise le moteur du débogueur (DE) pour lire les paramètres de mesure.  
@@ -45,7 +46,7 @@ int SetCallback (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode fournit une interface pour le Gestionnaire de session de débogage un évaluateur d’expression peut utiliser pour lire les paramètres de mesure. Il est utile pour déboguer à distance pour lire les métriques sur le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ordinateur.  
   
 ## <a name="example"></a>Exemple  

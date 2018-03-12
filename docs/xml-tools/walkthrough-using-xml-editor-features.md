@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf90df0e5311cb1487334ba3851c5083030e2191
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: f7460071cc45c8e4994ad0a72d5f26dcce40c853
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>Procédure pas à pas : utilisation des fonctionnalités de l’Éditeur XML
 Les étapes de cette procédure pas à pas expliquent la création d'un document XML. Cette procédure utilise également certaines fonctions de l'éditeur XML qui en font un outil précieux pour l'édition XML.  
@@ -127,7 +128,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
     </xs:complexType>  
   </xs:element>  
 </xs:schema>  
-```  
+```
   
 ## <a name="see-also"></a>Voir aussi  
  [Éditeur XML](../xml-tools/xml-editor.md)

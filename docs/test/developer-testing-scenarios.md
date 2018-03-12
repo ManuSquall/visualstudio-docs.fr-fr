@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: unit testing, create unit tests
-ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: feb31e2a5c4abf0013ee4d3ec0a20c7f3cfdff2a
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+helpviewer_keywords:
+- unit testing, create unit tests
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: 0da910ddf48d0f270aa5e624628d0d6b937e9ae1
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Outils de test pour les développeurs, scénarios et fonctions
 
@@ -95,7 +97,7 @@ Visual Studio est également extensible et accepte les adaptateurs de tests unit
 
 ![Intégration de test tiers](media/devtest-thirdparty.png)
 
-## <a name="also-see"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 * [Bien démarrer avec les tests unitaires](getting-started-with-unit-testing.md)
 * [Speeding up Unit Test Execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)

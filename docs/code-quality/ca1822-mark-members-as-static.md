@@ -18,18 +18,19 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 160b263bde66496bad4f4fcb363852bdb174ff62
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d1f3c20f39fe863925d46c1f86f2f6a821e8489a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822 : Marquez les membres comme static
 |||  
 |-|-|  
 |TypeName|MarkMembersAsStatic|  
 |CheckId|CA1822|  
-|Catégorie|Microsoft.Performance|  
+|Category|Microsoft.Performance|  
 |Modification avec rupture|Sans rupture - Si le membre n’est pas visible à l’extérieur de l’assembly, quelle que soit la modification vous apporter. Sans rupture - Si vous remplacez simplement le membre à un membre d’instance avec le `this` (mot clé).<br /><br /> Avec rupture - Si vous modifiez le membre à partir d’un membre d’instance à un membre statique, et il est visible en dehors de l’assembly.|  
   
 ## <a name="cause"></a>Cause  

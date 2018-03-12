@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,17 +19,18 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: troubleshooting [Office development in Visual Studio]
-ms.assetid: 8bbf5433-1992-4ecf-ae1b-19117b8ebe43
-caps.latest.revision: "69"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- troubleshooting [Office development in Visual Studio]
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 7dd06ed6fde181760a1c4893b523bd7ef9c8dcc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 6a077949de07d89adad76c6fc68754d2018fa461
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Dépannage d'erreurs dans les solutions Office
   Vous pouvez rencontrer des problèmes quand vous effectuez les tâches suivantes en développant des solutions Office dans Visual Studio :  

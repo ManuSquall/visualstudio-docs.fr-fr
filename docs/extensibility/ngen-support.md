@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 433ff9555ce4a3e896aca1143ee649217f80dc7f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 15277f0a1038e43bb316d604cbc415da4a5d80bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Prise en charge Ngen VSIX v3
 
@@ -40,7 +41,7 @@ Il existe 4 propriétés qui peuvent être définies :
 
 1. **Ngen** (booléenne) - si la valeur est true, le programme d’installation de Visual Studio est « ngen » de l’assembly.
 2. **Application de Ngen** (chaîne), Ngen offre la possibilité d’utiliser le fichier app.config de l’application afin de résoudre les dépendances d’assembly. Cette valeur doit être définie à une application dont vous souhaitez utiliser (relatif au répertoire d’installation de Visual Studio) de app.config.
-3. **Architecture de Ngen** (enum) - l’architecture de votre assembly de la compilation en mode natif. Les options sont : un. NotSpecified b. X86 c. X64 d. Tout
+3. **Architecture de Ngen** (enum) - l’architecture de votre assembly de la compilation en mode natif. Les options sont : un. NotSpecified b. X86 c. X64 d. Tous
 4. **Priorité de Ngen** (nombre entier compris entre 1 et 3) - décrite au niveau de la priorité de Ngen [les niveaux de priorité de Ngen.exe](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
 
 Voici un aperçu de la **propriétés** fenêtre en action :

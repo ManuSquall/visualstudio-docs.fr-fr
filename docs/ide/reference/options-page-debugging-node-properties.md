@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6bb51d32ea249ba573733babcb7c9ed0cf0dde
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 690eb875b0b9251dddcb36c4ad7ded17c36b67cb
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="options-page-debugging-node-properties"></a>Page Options, Débogage, propriétés de nœud
 Les tableaux suivants décrivent les pages (ou collections de propriétés) associées à la catégorie **Débogage**, `DTE.Properties("Debugging", <Property Page>)`, de la boîte de dialogue **Options**.  
@@ -24,7 +27,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 ## <a name="general"></a>Général  
  `DTE.Properties("Debugging", "General")`  
   
-|Nom de l'élément de propriété|Valeur|Description|  
+|Nom de l'élément de propriété|Value|Description|  
 |------------------------|-----------|-----------------|  
 |PromptOnBreakpointDelete|Get/Set (booléen)|Détermine si le débogueur demande l’autorisation avant de supprimer tous les points d’arrêt dans un projet.|  
 |BreakAllProcesses|Get/Set (booléen)|Détermine si le débogueur interrompt tous les processus quand un processus s’arrête.|  
@@ -38,7 +41,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 |ShowAllMembers|Get/Set (booléen)|Pour les objets non-utilisateur, détermine si le débogueur affiche tous les membres de l’objet dans les fenêtres de variables. Cette option n’a d’effet que si Uniquement mon code est activé.|  
 |WarnIfNoUserCode|Get/Set (booléen)|Détermine si le débogueur émet un avertissement quand l’utilisateur tente de s’attacher à un processus qui n’a aucun code utilisateur. Cette option n’a d’effet que si Uniquement mon code est activé.|  
 |EnablePropertyEvaluation|Get/Set (booléen)|Détermine si le débogueur évalue automatiquement les propriétés et les appels de fonction implicites dans le code managé.|  
-|CallStringConversion|Get/Set (booléen)|Détermine si le débogueur appelle implicitement une fonction de conversion de chaîne sur des objets dans les fenêtres de variables. Cette option s’applique au code C# et JScript uniquement.|  
+|CallStringConversion|Get/Set (booléen)|Détermine si le débogueur appelle implicitement une fonction de conversion de chaîne sur des objets dans les fenêtres de variables.|  
 |EnableSourceServer|Get/Set (booléen)|Détermine si le débogueur peut accéder au code à partir d’un serveur source.|  
 |PrintSourceServerDiagnostics|Get/Set (booléen)|Détermine si la fenêtre Sortie affiche les messages de diagnostic relatifs au serveur source. Cette option n’a d’effet que si l’accès au serveur source est activé.|  
 |HighlightEntireLine|Get/Set (booléen)|Détermine si le débogueur met en surbrillance une ligne entière pour les points d’arrêt et l’instruction actuelle.|  
@@ -54,7 +57,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 ## <a name="edit-and-continue"></a>Modifier & Continuer  
  `DTE.Properties("Debugging", "EditAndContinue")`  
   
-|Nom de l'élément de propriété|Valeur|Description|  
+|Nom de l'élément de propriété|Value|Description|  
 |------------------------|-----------|-----------------|  
 |EnableEditAndContinue|Get/Set (booléen)|Détermine si Modifier & Continuer est activé. Cette option s’applique à tous les langages qui prennent en charge Modifier & Continuer.|  
 |InvokedByCommands|Get/Set (booléen)|Détermine si Modifier & Continuer applique automatiquement les modifications du code quand l’utilisateur sélectionne une commande de débogage comme **Exécuter pas à pas** ou **Continuer**. Cette option s’applique uniquement au code natif.|  
@@ -66,7 +69,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 ## <a name="just-in-time"></a>Juste-à-temps  
  `DTE.Properties("Debugging", "JustInTime")`  
   
-|Nom de l'élément de propriété|Valeur|Description|  
+|Nom de l'élément de propriété|Value|Description|  
 |------------------------|-----------|-----------------|  
 |JitManaged|Get/Set (booléen)|Détermine si le débogage juste-à-temps est activé pour le code managé.|  
 |JitNative|Get/Set (booléen)|Détermine si le débogage juste-à-temps est activé pour le code natif.|  
@@ -75,7 +78,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 ## <a name="native"></a>Natif  
  `DTE.Properties("Debugging", "Native")`  
   
-|Nom de l'élément de propriété|Valeur|Description|  
+|Nom de l'élément de propriété|Value|Description|  
 |------------------------|-----------|-----------------|  
 |LoadDllExports|Get/Set (booléen)|Détermine si le débogueur charge les tables d’exportation de DLL.|  
 |EnableRPC|Get/Set (booléen)|Détermine si le débogueur peut accéder aux appels de procédure distante COM.|  

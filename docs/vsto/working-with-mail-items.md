@@ -15,16 +15,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], mail items
 - mail items [Office development in Visual Studio]
 - mail items [Office development in Visual Studio], about mail items
-ms.assetid: e5c82974-d302-49dc-9487-9b265125af03
-caps.latest.revision: "10"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 55b1da36fbf982b26f079b0aebbee67bc9d5f203
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e1299c7296a7308d7fb8367d0cae0e6803239613
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="working-with-mail-items"></a>Utilisation d'éléments de messagerie
   La <xref:Microsoft.Office.Interop.Outlook.MailItem> classe contient les méthodes et propriétés que vous utilisez pour effectuer des tâches avec des messages électroniques.  
@@ -32,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 |Tâche|Procédure|  
 |----------|---------------|  
 |Créer un message électronique.|[Guide pratique pour créer un élément de messagerie par programmation](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
-|Envoie un message électronique.|[Comment : envoyer des messages électroniques par programmation](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
+|Envoie un message électronique.|[Comment : envoyer un message électronique par programmation](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
 |Répondre aux messages électroniques avec une action personnalisée.|[Guide pratique pour exécuter des actions lors de la réception d’un message électronique par programmation](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
 |Enregistrer des pièces jointes.|[Guide pratique pour enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
 |Ajouter des pièces jointes|[Guide pratique pour joindre des fichiers aux éléments de messagerie Outlook par programmation](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  

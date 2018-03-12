@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,17 +16,18 @@ dev_langs:
 - CSharp
 - VB
 - CSharp
-helpviewer_keywords: SharePoint development in Visual Studio, features
-ms.assetid: 2b34c8d9-c975-4fe9-b8e0-52db4a6014ea
-caps.latest.revision: "13"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- SharePoint development in Visual Studio, features
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d758c5d4f410881989492f64dd7a7e5b8dc73804
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 6e74ac8cef88319a54df0c08cd91fb2654d390cb
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>Comment : ajouter et supprimer des dépendances de fonctionnalités
   Votre fonctionnalité SharePoint peut dépendre d’autres fonctionnalités pour les fonctionnalités ou de données. Dans ce cas, vous pouvez marquer ces fonctionnalités en tant que dépendances de votre fonction. De cette manière, le serveur SharePoint garantit que les fonctionnalités dépendantes sont activées avant votre fonctionnalité est activée.  

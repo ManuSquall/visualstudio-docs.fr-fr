@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: Office projects [Office development in Visual Studio], migrating to .NET Framework 4
-ms.assetid: e2cd35cc-7731-428e-9046-34fc57a02c48
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- Office projects [Office development in Visual Studio], migrating to .NET Framework 4
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 2a037bd26eb3caa24c86fdba63753894b0bd1af3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: ee90d5c205f58736f7ccb6536e29b2fd6d16b152
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Modifications requises pour exécuter des projets Office qui font l'objet d'une migration vers .NET Framework 4 ou .NET Framework 4.5
   Si l’infrastructure cible d’un projet Office est remplacée par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure à partir d’une version antérieure du .NET Framework, vous devez effectuer les tâches suivantes pour vous assurer que la solution puisse s’exécuter sur l’ordinateur de développement et sur les ordinateurs des utilisateurs finaux :  

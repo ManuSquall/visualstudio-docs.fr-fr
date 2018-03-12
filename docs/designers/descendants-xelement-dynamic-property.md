@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0a70d56be83a824c8bfd950ea148fe68e6ffa43b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 12d50f38d8f8d907ddb663a03db459851f1e14e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="descendants-xelement-dynamic-property"></a>Descendants (propriété dynamique XElement)
 Obtient un indexeur utilisé pour récupérer tous les éléments descendants de l’élément actif qui correspondent au nom développé spécifié.  
@@ -30,10 +31,10 @@ elem.Descendants[{namespaceName}localName]
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour  
  Indexeur de type `IEnumerable<XElement> Item(String expandedName)`. Cet indexeur prend le nom développé des éléments descendants spécifiés et retourne les éléments enfants correspondants dans une collection <xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>`.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette propriété est équivalente à la méthode <xref:System.Xml.Linq.XContainer.Descendants(System.Xml.Linq.XName)?displayProperty=fullName> de la classe <xref:System.Xml.Linq.XContainer>.  
   
- Les éléments de la collection retournée sont spécifiés dans l'ordre du document source XML.  
+ Les éléments de la collection retournée sont spécifiés dans l’ordre du document source XML.  
   
  Cette propriété utilise l'exécution différée.  
   

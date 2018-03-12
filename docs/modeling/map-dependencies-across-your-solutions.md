@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: get-started-article
 f1_keywords:
 - vs.progression.codemap
@@ -26,32 +25,35 @@ helpviewer_keywords:
 - dependency graphs
 - graph documents, exporting
 - code exploration, visualizing
-ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
-caps.latest.revision: "243"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
-ms.openlocfilehash: 0e0f33505754eb5047a6f8a9ce174c5c07466654
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: f5fd14ba1a2cdad08996b1494c0510f85b929006
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
-Pour comprendre les dépendances présentes dans votre code, vous pouvez les visualiser en créant des cartes de code. Vous pouvez ainsi voir comment le code s’ajuste sans avoir à parcourir les fichiers et les lignes de code.  
-  
- ![Afficher les dépendances dans vos solutions](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
-  
- **Voici quelques vidéos**:  
-  
--   [Comprendre les dépendances existant dans votre code grâce à la virtualisation](http://go.microsoft.com/fwlink/?LinkID=252065)  
-  
--   [Visualisation de l’impact d’une modification](http://go.microsoft.com/fwlink/?LinkID=252068)  
-  
--   [Présentation du code complexe avec des cartes de code](http://go.microsoft.com/fwlink/?LinkID=259869)  
-  
-##  <a name="GetStarted"></a> Prise en main des cartes de code  
- **Pour utiliser des cartes de code, vous aurez besoin soit**:  
+
+Pour comprendre les dépendances présentes dans votre code, vous pouvez les visualiser en créant des cartes de code. Vous pouvez ainsi voir comment le code s’ajuste sans avoir à parcourir les fichiers et les lignes de code.
+
+![Afficher les dépendances dans vos solutions](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")
+
+**Voici quelques vidéos**:
+
+- [Comprendre les dépendances de votre code grâce à la virtualisation](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
+
+- [Visualiser l’impact d’une modification](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
+
+- [Présentation du code complexe avec des cartes de code](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
+
+## <a name="GetStarted"></a> Prise en main des cartes de code
+
+**Pour utiliser des cartes de code, vous aurez besoin soit**:
   
 -   Visual Studio Enterprise pour créer des cartes de code à partir de l’éditeur de code, l’Explorateur de solutions, l’affichage de classes ou l’Explorateur d’objets ;  
   
@@ -62,13 +64,13 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
  **Vous pouvez mapper les dépendances de code dans les langages suivants**:  
   
--   Visual C# .NET ou Visual Basic .NET dans une solution ou des assemblys (.dll ou .exe)  
+-   Visual c# ou Visual Basic dans une solution ou des assemblys (.dll ou .exe)  
   
 -   Code C ou C++ natif ou managé dans des projets, fichiers d’en-tête (.h ou `#include`) ou des fichiers binaires Visual C++  
   
 -   projets et assemblys X++ créés à partir de modules .NET pour Microsoft Dynamics AX.  
   
- **Remarque :** pour les projets autres que C# ou Visual Basic .NET, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de l’Explorateur de solutions, de l’affichage de classes et de l’Explorateur d’objets.  
+ **Remarque :** pour les projets autres que c# ou Visual Basic, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de l’Explorateur de solutions, de l’affichage de classes et de l’Explorateur d’objets.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Pour afficher les dépendances globales dans votre solution  
   
@@ -170,7 +172,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
 10. Pour simplifier une carte de solution complexe, vous pouvez aussi générer une nouvelle carte contenant une sélection d’éléments à partir d’une carte existante. Maintenez la touche **Ctrl** enfoncée tout en sélectionnant les éléments qui vous intéressent, ouvrez le menu contextuel, puis choisissez **Nouveau graphique à partir de la sélection**.  
   
-     ![Afficher les éléments sélectionnés dans une nouvelle carte de code](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+     ![Afficher les éléments sélectionnés dans une nouvelle carte de code](../modeling/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
 11. Le contexte est reporté sur la nouvelle carte. Masquer des dossiers de Solution et tout autre conteneur que vous ne souhaitez pas afficher à l’aide du **filtres** volet.  
   
@@ -285,7 +287,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ##  <a name="SeeSourceHeader"></a> Visualiser les dépendances entre les fichiers sources et les fichiers d’en-tête C et C++  
  Si vous souhaitez créer des cartes plus complètes pour des projets C++, définissez l’option du compilateur d’informations de consultation (**/FR**) sur ces projets. Sinon, un message vous invite à définir cette option. Si vous sélectionnez **OK**, l’option est définie uniquement pour la carte active. Vous pouvez choisir de masquer le message pour toutes les cartes ultérieures. Si vous masquez ce message, vous pouvez le faire réapparaître. Affectez à la clé de Registre suivante la valeur `0` ou supprimez-la :  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Lorsque vous ouvrez une solution qui contient des projets Visual C++, la mise à jour de la base de données IntelliSense peut prendre un certain temps. Pendant ce temps, il est impossible de créer des cartes de code pour les fichiers d’en-tête (.h ou `#include`) tant que la base de données IntelliSense n’a pas terminé la mise à jour. Vous pouvez surveiller la progression des mises à jour dans la barre d’état de Visual Studio. Pour résoudre les problèmes ou messages qui s’affichent en raison de la désactivation de certains paramètres IntelliSense, consultez [Résoudre les problèmes liés aux cartes dans le code C et C++](#Troubleshooting).  
   
@@ -343,7 +345,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Partager la carte avec d’autres utilisateurs de Visual Studio  
  Utilisez le menu **Fichier** pour enregistrer la carte.  
   
- ou  
+ - ou -  
   
  Pour enregistrer la carte dans le cadre d’un projet spécifique, dans la barre d’outils de la carte, choisissez **Partager**, puis **Déplacer** \<*CodeMapName*>**.dgml vers**, puis choisissez le projet dans lequel vous souhaitez enregistrer la carte.  
   

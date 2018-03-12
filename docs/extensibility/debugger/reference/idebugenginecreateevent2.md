@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugEngineCreateEvent2
-helpviewer_keywords: IDebugEngineCreateEvent2 interface
+f1_keywords:
+- IDebugEngineCreateEvent2
+helpviewer_keywords:
+- IDebugEngineCreateEvent2 interface
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b98b21e3e3220da2a42609c9344e24867ab11828
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5a49af7e9cec830ae3ecfb94ac07dfba68fe8344
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 Le moteur de débogage (DE) envoie cette interface pour le Gestionnaire de session de débogage (SDM) lors de la création d’une instance de la DE.  
@@ -42,7 +47,7 @@ IDebugEngineCreateEvent2 : IUnknown
 |------------|-----------------|  
 |[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Récupère l’objet qui représente le moteur de débogage qui vient d’être créé (DE).|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

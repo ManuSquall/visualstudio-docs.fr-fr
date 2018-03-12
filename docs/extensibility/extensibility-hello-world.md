@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 18a0e18589574c689ebbddbaf28448cf5539ad96
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1b7d695f2211f01ce374ee41404d5ab49abde70a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-your-first-extension-hello-world"></a>Création de votre première Extension : Hello World
 
@@ -32,7 +33,7 @@ Pour cet exemple, vous allez utiliser Visual c# pour ajouter qu'un bouton de men
 
 ![commande de Hello world](media/hello-world-say-hello-world.png)
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Avant de commencer, vérifiez que vous avez installé le **le développement d’extensions Visual Studio** charge de travail qui inclut le modèle VSIX, vous avez besoin et exemple de code.
 

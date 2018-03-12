@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9e1bbce7fd1727bc629f015894c16b1d56a2150
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ffe029ecf5839f03732a1e5162dd22da4fe0a18e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-5-change-source-control"></a>Zone de test 5 : Modifier le contrôle de Source
 Cette zone de plug-in de test de contrôle de code source couvre la modification du contrôle de code source via le **modifier le contrôle de code Source** commande.  

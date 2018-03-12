@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -12,17 +13,18 @@ dev_langs:
 - CSharp
 - VB
 - CSharp
-helpviewer_keywords: SharePoint development in Visual Studio, packages
-ms.assetid: c3880bdd-f0a1-4d53-9a97-5767cb3f7b8e
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- SharePoint development in Visual Studio, packages
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3cfe26fde4dd2d2b6617a008769fd535bb3e2cbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 210793ab224e4da324591780dd3e6b171a1d721a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Comment : créer un package de solution SharePoint à l’aide de tâches MSBuild
   Vous pouvez générer, nettoyer et valider un package SharePoint (.wsp) à l’aide des tâches MSBuild de ligne de commande sur un ordinateur de développement. Vous pouvez également utiliser ces commandes pour automatiser le processus de génération à l’aide de Team Foundation Server sur un ordinateur de build.  

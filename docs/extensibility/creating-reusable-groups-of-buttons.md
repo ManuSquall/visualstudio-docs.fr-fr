@@ -16,11 +16,12 @@ caps.latest.revision: "44"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4be8e84c6040f3b4d57082cd39920aec2196e9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c2ac175d2fd267500f19e9f22cd46d88dcc9f314
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Création de groupes réutilisables des boutons
 Un groupe de commandes est une collection de commandes qui apparaissent toujours ensemble dans un menu ou une barre d’outils. N’importe quel groupe de commandes peut être réutilisée en l’assignant à menus parent différent dans la section CommandPlacements du fichier .vsct.  

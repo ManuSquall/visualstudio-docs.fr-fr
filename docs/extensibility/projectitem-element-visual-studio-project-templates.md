@@ -4,23 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a9685d00f2df0f6819058106771a278b8494520
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: ca5143a3e5eaff488fee89b643a40adb60473bd8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem, élément (modèles de projet Visual Studio)
 Spécifie un fichier qui est inclus dans le modèle de projet.  
@@ -75,7 +79,7 @@ Spécifie un fichier qui est inclus dans le modèle de projet.
   
  Un `string` qui représente le nom ou le chemin d’accès à un fichier dans le fichier .zip du modèle.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `ProjectItem`est un enfant facultatif de `Project`.  
   
  Le `TargetFileName` attribut peut être utilisé pour créer une structure de répertoires différente de la structure de répertoires dans le fichier .zip du modèle. Par exemple, si le fichier `MyFile.vb` existe à la racine du fichier .zip du modèle, mais vous souhaitez que le fichier doit être placé dans un répertoire nommé `CustomFiles` dans tous les projets créés à partir du modèle, vous utiliseriez le code XML suivant :  

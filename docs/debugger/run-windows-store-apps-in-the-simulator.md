@@ -1,5 +1,5 @@
 ---
-title: "Exécuter des applications UWP et Windows 8.1 dans le simulateur | Documents Microsoft"
+title: "Exécuter les applications UWP dans le simulateur | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -17,26 +17,25 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4c5d1e71a4d0e0d8ac74ba02bff29ddc1c7477
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>Exécuter des applications UWP et Windows 8.1 dans le simulateur
-Le simulateur de Visual Studio pour les applications UWP et Windows 8.1 est une application de bureau qui simule une application UWP ou Windows 8.1. Vous pouvez exécuter les applications choisir la taille de l’écran physique et la résolution que vous voulez émuler. Vous pouvez également simuler la rotation des événements tactiles et courantes et simuler les propriétés de connexion réseau.
+# <a name="run-uwp-apps-in-the-simulator"></a>Exécuter les applications UWP dans le simulateur
+Le simulateur de Visual Studio pour applications UWP est une application de bureau qui simule une application UWP. En règle générale, vous devez déboguer sur l’ordinateur local, un appareil connecté ou sur un ordinateur distant. Toutefois, dans certains scénarios, il pouvez que vous souhaitez utiliser le simulateur Visual Studio pour émuler une taille de l’écran physique différent et la résolution. Vous pouvez également simuler la rotation des événements tactiles et courantes et simuler les propriétés de connexion réseau.
   
- Le simulateur fournit un environnement dans lequel vous pouvez concevoir, développer, déboguer et tester les applications UWP. Toutefois, avant de publier votre application au Microsoft Store, vous devez tester votre application sur un appareil réel.  
+ Le simulateur fournit un environnement dans lequel vous pouvez concevoir, développer, déboguer et tester les applications UWP. Toutefois, avant de publier votre application sur Microsoft Store, vous devez tester votre application sur un appareil réel.  
   
  Le simulateur de Visual Studio pour applications UWP ne s’exécute pas dans un environnement isolé sur votre ordinateur local. Par conséquent, les erreurs qui se produisent dans un simulateur, tel qu'une erreur irrécupérable à l'échelle du système, peuvent également affecter l'ordinateur entier.  
   
- Pour plus d'informations sur le Windows Phone, voir [Run Windows Phone apps in the emulator](../debugger/run-windows-phone-apps-in-the-emulator.md) .  
-  
 > [!IMPORTANT]
->  Le simulateur Visual Studio 2015 n’inclut pas le bouton de géolocalisation. En effet, le simulateur Windows 10 n’inclut pas la simulation de géolocalisation. Si vous devez effectuer ce type de simulation, vous pouvez utiliser le simulateur Visual Studio 2013 sur des systèmes d’exploitation Windows 8.1 ou antérieurs.  
+>  Le simulateur Visual Studio 2015 n’inclut pas le bouton de géolocalisation. En effet, le simulateur Windows 10 n’inclut pas la simulation de géolocalisation.
   
 ##  <a name="BKMK_Set_the_simulator_as_the_target"></a> Définir un simulateur comme cible  
- Pour exécuter votre application UWP dans le simulateur, sélectionnez **simulateur** à partir de la liste déroulante liste en regard du **démarrer le débogage** bouton du débogueur **Standard** barre d’outils.  
+ Pour exécuter votre application UWP dans le simulateur, sélectionnez **simulateur** à partir de la liste déroulante liste en regard du **démarrer le débogage** bouton du débogueur **Standard** barre d’outils. Cette option est disponible uniquement si votre application **minimale de la plateforme cible. Version** est inférieur ou égal au système d’exploitation sur votre ordinateur de développement. 
   
  ![En cours d’exécution dans le simulateur](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
   
@@ -146,7 +145,7 @@ Le simulateur de Visual Studio pour les applications UWP et Windows 8.1 est une 
   
  [Comment répondre aux événements système avec des tâches en arrière-plan](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Comment déclencher suspendre, reprendre, événements et d’arrière-plan dans les applications UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [Comment déclencher des événements d’interruption, de reprise et d’arrière-plan dans des applications UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Naviguez dans le simulateur à l'aide du clavier  
  Vous pouvez parcourir la barre d’outils du simulateur en appuyant sur **CTRL + ALT + flèche haut** pour déplacer le focus à partir de la fenêtre du simulateur vers la barre d’outils du simulateur. Utilisez **Flèche haut** et **Flèche bas** pour basculer entre les boutons de la barre d'outils.  

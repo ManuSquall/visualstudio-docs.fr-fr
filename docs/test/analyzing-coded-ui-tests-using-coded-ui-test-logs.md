@@ -7,20 +7,20 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
-caps.latest.revision: "13"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 39ed1ba397fd1c0a9ff1f30acea1cff4a38529a2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.author: gewarren
+manager: ghogen
+ms.workload: multiple
+author: gewarren
+ms.openlocfilehash: c768eda5d1b4c6b181f2b301397b050b5f7fbe99
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analyse des tests codés de l'interface utilisateur à l'aide des journaux de test codé de l'interface utilisateur
 Les journaux de tests codés de l'interface utilisateur filtrent et enregistrent des informations importantes sur l'exécution de vos tests codés de l'interface utilisateur.  
   
- **Requirements**  
+ **Spécifications**  
   
 -   Visual Studio Enterprise  
   
@@ -92,7 +92,7 @@ Les journaux de tests codés de l'interface utilisateur filtrent et enregistrent
   
      ![Fichier journal du test codé de l’interface utilisateur](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")  
   
-## <a name="q--a"></a>Q et R  
+## <a name="q--a"></a>Questions et réponses  
   
 ### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>Q : Qu'en est-il de la clé EnableHtmlLogger ?  
  Dans les versions précédentes de Visual Studio, il existait deux autres paramètres de configuration pour activer l'enregistreur d'événements HTML dans un test codé de l'interface utilisateur :  

@@ -14,16 +14,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], creating
 - Outlook [Office development in Visual Studio], creating e-mail
 - mail items [Office development in Visual Studio], creating
-ms.assetid: f8fe3f2b-36ba-4f71-abdb-d30ce7fecb30
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: c85b5582f930afab77686ecb76ac3fbdaa42e009
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 213fe5c13e4882eac450335b672731df2072c69f
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-create-an-e-mail-item"></a>Comment : créer un élément de messagerie par programmation
   Cet exemple crée un message électronique dans Microsoft Office Outlook.  

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.view.objectlifetime
+f1_keywords:
+- vs.performance.view.objectlifetime
 helpviewer_keywords:
 - lifetime, objects
 - Objects Lifetime view
@@ -15,17 +17,19 @@ helpviewer_keywords:
 - performance reports, objects lifetime view
 - profiling tools, Lifetime view
 ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b60a28d7422125a745cf1b088891b2675da0bc8a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: d8fa19da70b55e4a519153898a800bb259983c39
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="object-lifetime-view"></a>Vue Durée de vie de l'objet
+# <a name="object-lifetime-view"></a>Mode Durée de vie de l'objet
 La vue Durée de vie des objets est disponible quand l’option **Collecter aussi les informations de durée de vie des objets .NET** est activée dans les pages de propriétés de la session de performance.  
   
  Le récupérateur de mémoire du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] gère l’allocation et la libération de mémoire pour votre application. Pour optimiser les performances du garbage collector, le tas managé est divisé en trois générations : 0, 1 et 2. Le récupérateur de mémoire du runtime stocke les nouveaux objets dans la génération 0. Les objets qui survivent aux collectes sont promus et stockés dans les générations 1 et 2.  
@@ -40,7 +44,7 @@ La vue Durée de vie des objets est disponible quand l’option **Collecter auss
 |**ID du processus**|ID de processus de l’exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
 |**Nom du module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin du module qui contient la fonction.|  
+|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
   
 ## <a name="instance-data"></a>Données d’instance  
  Les données d’instance indiquent le nombre d’objets du type qui ont été créés lors de l’exécution du profilage, et la génération dans laquelle les objets ont été désalloués par le récupérateur de mémoire.  

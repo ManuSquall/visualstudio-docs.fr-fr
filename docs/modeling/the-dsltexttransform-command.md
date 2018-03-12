@@ -4,19 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, commands
-ms.assetid: 7d025d0b-6543-4a49-9f6b-8b8cfcad77ee
-caps.latest.revision: "30"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: fd45a33b421e889b05fd78eceddc0b05126e4a21
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- Domain-Specific Language, commands
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 24a3f292633b915678bad232a4a671c7906e15cb
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="the-dsltexttransform-command"></a>La commande DslTextTransform
 DslTextTransform.cmd est un script qui appelle TextTransform.exe et elle s’exécute avec les options courantes. Vous pouvez utiliser DslTextTransformation.cmd pour automatiser une build nocturne de votre [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] projets. Pour plus d’informations, consultez [génération de fichiers avec l’utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).  

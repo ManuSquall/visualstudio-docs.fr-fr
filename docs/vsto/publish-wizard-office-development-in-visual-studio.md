@@ -18,16 +18,15 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], Publish Wizard
 - Office applications [Office development in Visual Studio], Publish Wizard
 - Publish Wizard, Office solutions
-ms.assetid: 793314b6-b6a6-4509-8f1c-dd9466cf5190
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 8eeb0a002e2d62b9066165a99ce474cf7a01a88f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 43b4869435c34a29cac5fd18a13d2b4b140e8b6c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistant Publication (Développement Office dans Visual Studio)
   Utilisez le **Assistant Publication** pour copier les fichiers solution vers un emplacement spécifié, créer les fichiers manifeste et créer un programme d’installation.  

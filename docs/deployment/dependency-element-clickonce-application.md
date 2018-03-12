@@ -30,11 +30,12 @@ caps.latest.revision: "34"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7a0604113161fed432219f84ac6c4d8a6a4d7666
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c3319661a4c0df298cd844c4d71c6855cad818c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dépendance&gt; élément (déploiement ClickOnce)
 Identifie une dépendance de plateforme ou d’assembly qui est requise pour l’application.  
@@ -105,10 +106,10 @@ Identifie une dépendance de plateforme ou d’assembly qui est requise pour l�
 |`description`|Facultatif. Décrit, dans une forme lisible, le système d’exploitation décrit par le `dependentOS` élément.|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
- Requis. Cet élément est un enfant de l’élément `dependentOS` et contient l’élément `os`. Cet élément n’a pas d’attributs.  
+ Obligatoire. Cet élément est un enfant de l’élément `dependentOS` et contient l’élément `os`. Cet élément n’a pas d’attributs.  
   
 ### <a name="os"></a>système d’exploitation  
- Requis. Cet élément est un enfant de l’élément `osVersionInfo`. Cet élément comprend les attributs suivants.  
+ Obligatoire. Cet élément est un enfant de l’élément `osVersionInfo`. Cet élément comprend les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -134,7 +135,7 @@ Identifie une dépendance de plateforme ou d’assembly qui est requise pour l�
 |`size`|Obligatoire lorsque le `dependencyType` attribut a la valeur `install`. La taille de l’assembly dépendant, en octets.|  
   
 ### <a name="assemblyidentity"></a>assemblyIdentity  
- Requis. Cet élément est un enfant de l’élément `dependentAssembly` et comprend les attributs suivants.  
+ Obligatoire. Cet élément est un enfant de l’élément `dependentAssembly` et comprend les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -169,7 +170,7 @@ Identifie une dépendance de plateforme ou d’assembly qui est requise pour l�
 ### <a name="dsigdigestvalue"></a>dsig : DigestValue  
  Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. Le `dsig:DigestValue` élément ne possède pas d’attributs. Sa valeur texte est le hachage calculé pour le fichier spécifié.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Tous les assemblys utilisés par votre application doivent correspondre à une `dependency` élément. Assemblys dépendants n’incluent pas les assemblys qui doivent être préinstallés dans le global assembly cache en tant qu’assemblys de plateforme.  
   
 ## <a name="example"></a>Exemple  

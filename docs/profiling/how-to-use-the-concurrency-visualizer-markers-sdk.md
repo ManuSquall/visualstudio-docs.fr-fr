@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eacea655fe24b497b6bf9caa699e03cac99103d8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f07afd0b97177ec6cae33d9ee372390c504f686
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Guide pratique pour utiliser le kit SDK des marqueurs du visualiseur concurrentiel
 Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel pour créer des étendues et écrire des indicateurs, des messages et des alertes.  
@@ -92,7 +95,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
   
     ```  
   
-    ```CSharp  
+    ```csharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
@@ -118,7 +121,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
   
     ```  
   
-    ```CSharp  
+    ```csharp  
   
     Span flagSpan = Markers.EnterSpan("flag span");  
     Markers.WriteFlag("Here is the flag.");  
@@ -159,7 +162,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
     messageSeriesSpan.Leave()  
     ```  
   
-    ```CSharp  
+    ```csharp  
   
     MarkerSeries flagSeries = Markers.DefaultWriter.CreateMarkerSeries("flag series");  
     Span flagSeriesSpan = flagSeries.EnterSpan("flag span");  
@@ -180,4 +183,4 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
      ![Visualiseur concurrentiel avec 3 séries de marqueurs personnalisés](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")  
   
 ## <a name="see-also"></a>Voir aussi  
- [SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)
+ [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)

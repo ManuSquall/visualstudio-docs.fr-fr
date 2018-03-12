@@ -17,11 +17,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af00c9eb270604a9d918f237c50930da7a2b8cdd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e7e1e0f504c9d813b2dbcacca1689475ec42aeb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-application-errors"></a>Erreurs d’application d’analyse du code
 Cette section est une référence des messages d’erreur générés par l’outil d’analyse du code managé. Pour obtenir de l’aide d’un message d’erreur spécifique, tapez le numéro d’erreur dans le **recherchez** zone dans l’Index.  
@@ -59,8 +60,6 @@ Cette section est une référence des messages d’erreur générés par l’out
 |[Erreurs FxCopCmd](fxcopcmd-errors.md)|Erreurs d’analyse du code managé.|  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Instructions pour l’écriture de Code sécurisé](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)  
-
  [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)  
   
  [Analyse de la qualité d’un code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  

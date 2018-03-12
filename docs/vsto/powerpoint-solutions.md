@@ -17,16 +17,15 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], PowerPoint
 - PowerPoint [Office development in Visual Studio]
 - Office projects [Office development in Visual Studio], PowerPoint
-ms.assetid: 02ebad64-9fd3-495f-ab27-4f6206b3d6d2
-caps.latest.revision: "46"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: de978f92a5c410312cac00034006cd698b1c5cea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9dfa41bdecc7e47a0bf367409aac79d354daaad3
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="powerpoint-solutions"></a>Solutions PowerPoint
   Visual Studio fournit des modèles de projet que vous pouvez utiliser pour créer des compléments VSTO pour Microsoft Office PowerPoint. Vous pouvez utiliser les compléments VSTO pour automatiser PowerPoint, étendre les fonctionnalités PowerPoint ou personnaliser l’interface utilisateur PowerPoint.  

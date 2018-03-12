@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45eb359f856b9a52e8b465e01bebb5ea11aaf13e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef73c45b39c638b2dfc1f88be3323d083efa8493
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un Shader de calcul
 Cette procédure pas à pas montre comment utiliser les outils Visual Studio Graphics Diagnostics pour examiner un nuanceur de calcul qui génère des résultats incorrects.  
@@ -39,7 +40,7 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
 ## <a name="investigation"></a>Examen  
  Vous pouvez utiliser les outils Graphics Diagnostics pour charger le fichier journal de graphisme et inspecter les frames capturés.  
   
-#### <a name="to-examine-a-frame-in-a-graphics-log"></a>Pour examiner un frame dans un journal de graphisme  
+#### <a name="to-examine-a-frame-in-a-graphics-log"></a>Pour examiner un frame dans un journal de graphiques  
   
 1.  Dans Visual Studio, chargez un journal de graphisme qui contient un frame exposant les résultats de simulation incorrects. Un nouvel onglet Graphics Diagnostics s'affiche dans Visual Studio. La partie supérieure de cet onglet contient la sortie de la cible de rendu du frame sélectionné. Dans la partie inférieure est la **liste de frames**, qui affiche une miniature de chaque frame capturé.  
   
@@ -87,7 +88,7 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
      Le débogueur HLSL démarre au niveau du nuanceur qui exécute l'étape d'intégration.  
   
-3.  Examinez le code source du nuanceur de calcul à l'étape d'intégration pour rechercher la source de l'erreur. Quand vous utilisez Graphics Diagnostics pour déboguer du code de nuanceur de calcul HLSL, vous pouvez effectuer un pas à pas détaillé dans le code, et utiliser d'autres outils de débogage familiers tels que les fenêtres Espion. Dans ce scénario, vous déterminez qu'il ne semble pas y avoir d'erreurs dans le nuanceur de calcul qui exécute l'étape d'intégration.  
+3.  Examinez le code source du nuanceur de calcul à l'étape d'intégration pour rechercher la source de l'erreur. Quand vous utilisez Graphics Diagnostics pour déboguer du code de nuanceur de calcul HLSL, vous pouvez effectuer un pas à pas détaillé dans le code, et utiliser d’autres outils de débogage familiers tels que les fenêtres Espion. Dans ce scénario, vous déterminez qu'il ne semble pas y avoir d'erreurs dans le nuanceur de calcul qui exécute l'étape d'intégration.  
   
      ![Débogage du nuanceur programmable IntegrateCS. ] (media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   

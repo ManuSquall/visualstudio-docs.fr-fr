@@ -9,15 +9,16 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8d5e7a40854157c49464875edfbbdfe03f41bb8b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 9c6aab76b235c5725fe5796c333cd9353c3e3107
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="introducing-live-unit-testing"></a>Présentation de Live Unit Testing
 
-Live Unit Testing est une technologie disponible dans Visual Studio 2017 version 15.3, qui exécute automatiquement vos tests unitaires en temps réel quand vous apportez des modifications au code. Live Unit Testing :
+Live Unit Testing est une technologie disponible dans Visual Studio 2017 version 15.3, qui exécute automatiquement vos tests unitaires en temps réel quand vous apportez des modifications au code. Tests unitaires en direct :
 
 - Vous permet de refactoriser et de modifier du code avec une plus grande confiance. Live Unit Testing exécute automatiquement tous les tests impactés quand vous modifiez votre code, de façon à garantir que vos modifications ne font pas échouer les tests.
  

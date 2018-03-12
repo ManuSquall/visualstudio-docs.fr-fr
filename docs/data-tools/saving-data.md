@@ -26,13 +26,14 @@ ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 34ceecce635cb5388bd53ed191c0fc1fa861bc38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 9f4e4cd3ebb12e59fc4b7fbcf16122b381d5f610
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="saving-data"></a>Enregistrement des données
+# <a name="saving-data"></a>Enregistrement de données
 L’enregistrement de données est le processus consistant à rendre persistantes les données dans le modèle de données d’une application dans le magasin de données d’origine, généralement une base de données relationnel telles que SQL Server.  
   
  Mise à jour d’une source de données au moyen d’un modèle de données est généralement un processus en deux étapes. La première étape consiste à mettre à jour le modèle de données avec de nouvelles informations : nouveaux enregistrements, enregistrements modifiés ou enregistrements supprimés. La deuxième étape consiste à enregistrer les modifications dans votre modèle de données à la base de données.  

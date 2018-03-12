@@ -4,19 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: text templates, template code
-ms.assetid: bad198b9-57a4-4777-bd5b-ab6336c825f3
-caps.latest.revision: "32"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: 0a2f2ba54f26e84ee321f0f726f2f07dbef5c19b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- text templates, template code
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: aea2d274e209c6ea0493da4bd743b008c9a5921f
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="text-template-control-blocks"></a>Blocs de contrôle des modèles de texte
 Les blocs de contrôle vous permettent d'écrire du code dans votre modèle de texte pour faire varier la sortie. Il existe trois types de blocs de contrôle, distingués par leurs crochets d'ouverture :  
@@ -102,7 +103,7 @@ Some text.
 ```  
   
 ## <a name="class-feature-control-block"></a>Bloc de contrôle de fonctionnalité de classe  
- Vous pouvez utiliser des blocs de contrôle de fonctionnalité de classe pour ajouter des méthodes, des propriétés, des champs ou même des classes imbriquées à votre modèle de texte. Les blocs de fonctionnalité de classe sont le plus souvent utilisés pour fournir des fonctions d'assistance pour le code dans d'autres parties du modèle de texte. Par exemple, le bloc de fonctionnalité de classe suivant met en majuscule la première lettre du nom de l'attribut (ou la première lettre de chaque mot si le nom contient un espace blanc) :  
+ Vous pouvez utiliser des blocs de contrôle de fonctionnalité de classe pour ajouter des méthodes, des propriétés, des champs ou même des classes imbriquées à votre modèle de texte. Les blocs de fonctionnalité de classe sont le plus souvent utilisés pour fournir des fonctions d’assistance pour le code dans d’autres parties du modèle de texte. Par exemple, le bloc de fonctionnalité de classe suivant met en majuscule la première lettre du nom de l'attribut (ou la première lettre de chaque mot si le nom contient un espace blanc) :  
   
 ```  
 <#@ import namespace="System.Globalization" #>  

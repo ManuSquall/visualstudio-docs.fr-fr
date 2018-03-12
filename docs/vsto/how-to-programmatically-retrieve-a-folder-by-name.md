@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: Outlook folders [Office development in Visual Studio], retrieving by name
-ms.assetid: 7f819525-b431-4b57-9a7f-3a6454c74298
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- Outlook folders [Office development in Visual Studio], retrieving by name
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 32db5d1ae316b571b71a8015bd6ea5dc7fe7a110
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 536abafec5d2d8792eb966c763a89b0c78dd49fc
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Comment : récupérer un dossier par nom par programmation
   Cet exemple obtient une référence à un dossier personnalisé nommé et affiche ensuite le contenu du dossier.  

@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugStackFrame2::GetExpressionContext
-helpviewer_keywords: IDebugStackFrame2::GetExpressionContext
+f1_keywords:
+- IDebugStackFrame2::GetExpressionContext
+helpviewer_keywords:
+- IDebugStackFrame2::GetExpressionContext
 ms.assetid: a2604e6a-502d-473b-868f-b11ac64c7a35
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 733fedd41741ff0027ba4e9507782d7d9e8b4d8b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7e0d43eb0411fc61c6f3ad10e167fa6ecb901bfc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 Obtient un contexte d’évaluation pour l’évaluation d’expression dans le contexte actuel d’un frame de pile et d’un thread.  
@@ -44,7 +49,7 @@ int GetExpressionContext (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  En règle générale, un contexte d’évaluation d’expression peut être considéré comme une étendue pour effectuer l’évaluation de l’expression. Appelez le [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) méthode pour analyser une expression, puis appelez résultant [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) méthodes pour évaluer l’expression analysée.  
   
 ## <a name="see-also"></a>Voir aussi  

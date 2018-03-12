@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -12,17 +13,18 @@ dev_langs:
 - CSharp
 - VB
 - CSharp
-helpviewer_keywords: SharePoint development in Visual Studio, walkthroughs
-ms.assetid: f79cefcc-da33-49df-9e03-b9d79533a9a7
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- SharePoint development in Visual Studio, walkthroughs
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 46891daa7a91ddc842c9fe37022075dfce092861
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: bb8980a5f17e38e802e90014781c80a1cf0f6adb
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Procédures pas à pas pour le développement SharePoint
   Les procédures suivantes montrent comment développer et déployer des solutions SharePoint à l’aide de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  

@@ -15,17 +15,18 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 35d062e3ab0cae690cb6242f132a20c53604cd0c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: f706ca6fcaba9d1f5423fee3f32eefdaca163b1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Fonctionnalités d’accessibilité Help Viewer
 Microsoft s’engage à faciliter l’utilisation de ses produits et services. Cette rubrique contient des informations sur les fonctionnalités, les produits et les services qui permettent d’accéder à Microsoft Help Viewer via un large éventail de possibilités.  
   
 ## <a name="keyboard-access"></a>Accès par le clavier  
-Vous pouvez accéder à toutes les fonctionnalités Help Viewer à l’aide du clavier. Pour plus d’informations, consultez [Touches de raccourci (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
+Vous pouvez accéder à toutes les fonctionnalités de la visionneuse d’aide à l’aide du clavier. Pour plus d’informations, consultez [Touches de raccourci (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
   
 ## <a name="font-size"></a>Taille de police  
 Vous pouvez modifier la taille de police du texte des rubriques qui s'affiche dans la fenêtre de document. Pour plus d’informations, consultez [Personnaliser Help Viewer](../ide/customize-the-help-viewer.md).  

@@ -1,25 +1,29 @@
 ---
-title: "Prise en main du débogueur | Documents Microsoft"
+title: "Apprenez à déboguer à l’aide de Visual Studio | Documents Microsoft"
 ms.custom: H1HackMay2017
-ms.date: 05/18/2017
+ms.date: 10/11/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f6bcc75341297ad20d66514c92f92513ef44d2f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="get-started-with-the-visual-studio-debugger"></a>Prise en main du débogueur Visual Studio
+# <a name="learn-to-debug-using-visual-studio"></a>Apprenez à déboguer à l’aide de Visual Studio
 
 Cette rubrique présente les fonctionnalités du débogueur Visual Studio dans une procédure pas à pas. Si vous souhaitez une vue de niveau supérieur des fonctionnalités du débogueur, consultez [présentation des fonctionnalités de débogueur](../debugger/debugger-feature-tour.md).
 
@@ -27,7 +31,7 @@ Vous pouvez lire le long pour voir les fonctionnalités du débogueur, ou vous p
 
 |         |         |
 |---------|---------|
-| ![Regarder une vidéo](../install/media/video-icon.png "WatchVideo") | [Regardez une vidéo](#video) sur le débogage, qui affiche des étapes similaires. |
+|  ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sur le débogage, qui affiche des étapes similaires. |
 
 Bien que l’application de démonstration est c#, les fonctionnalités sont applicables à C++, Visual Basic, JavaScript et autres langues prises en charge par Visual Studio (sauf mention contraire).
 
@@ -138,19 +142,81 @@ Essentiellement, nous utilisons ici, des raccourcis clavier, car il s’agit d�
 
      ![Résultat de l’exécution pas à pas dans la méthode de mise à jour](../debugger/media/dbg-tour-update-method.png "étape dans la méthode de mise à jour")
 
-    Ici, nous trouver encore du code qui vous intéresse ; l’application obtient tous les fichiers *.jpg résidant dans un répertoire particulier, puis en créant un objet Photo pour chaque fichier. Ce code produit une bonne opportunité de commencer à examiner l’état de votre application (variables) avec le débogueur.
+    Ici, nous trouver encore du code qui vous intéresse ; l’application obtient tous les fichiers *.jpg résidant dans un répertoire particulier, puis en créant un objet Photo pour chaque fichier. Ce code produit une bonne opportunité de commencer à examiner l’état de votre application (variables) avec le débogueur. Nous ferons que dans les sections suivantes de ce didacticiel.
 
     Les fonctionnalités qui vous permettent d’inspecter des variables sont une des fonctionnalités plus utiles du débogueur, et il existe différentes manières de procéder. Souvent, lorsque vous essayez de déboguer un problème, vous essayez de savoir si les variables stockent les valeurs que vous attendez à leur attribuer à un moment donné.
 
+## <a name="examine-the-call-stack"></a>Examiner la pile des appels
+
+- Pendant la suspension de la `Update` (méthode), cliquez sur le **pile des appels** fenêtre, qui est par défaut ouvert dans le volet inférieur droit.
+
+     ![Examiner la pile des appels](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+
+    Le **pile des appels** fenêtre indique l’ordre dans lequel les méthodes et les fonctions sont mise en route appelées. La première ligne affiche la fonction en cours (la `Update` méthode dans l’application de la visite guidée). La deuxième ligne montre que `Update` a été appelée à partir de la `Path.set` propriété et ainsi de suite.
+
+    >  [!NOTE]
+    > Le **pile des appels** fenêtre est identique à la perspective de débogage dans certains environnements IDE comme Eclipse.
+
+    La pile des appels est un bon moyen d’examiner et de comprendre le flux d’exécution d’une application.
+
+    Vous pouvez double-cliquer sur une ligne de code pour accéder à examiner le code source et qui change également l’étendue actuelle en cours d’inspection par le débogueur. Cette action n’avance pas le débogueur.
+
+    Vous pouvez également utiliser les menus contextuels à partir de la **pile des appels** fenêtre pour effectuer d’autres opérations. Par exemple, vous pouvez insérer des points d’arrêt dans les fonctions spécifiées, le débogueur à l’aide d’avance **exécuter jusqu’au curseur**et accédez à examiner le code source. Pour plus d’informations, consultez [Comment : examiner la pile des appels](../debugger/how-to-use-the-call-stack-window.md).
+
+## <a name="step-out"></a>Pas à pas sortant
+
+Supposons que vous avez terminé examinant le `Update` méthode dans Data.cs et que vous souhaitez tirer parti de la fonction, mais restent dans le débogueur. Ce faire, vous pouvez utiliser la **pas à pas sortant** commande.
+
+1. Appuyez sur MAJ + F11 (ou **Déboguer > pas à pas sortant**).
+
+     Cette commande reprend l’exécution d’application (et avance le débogueur) jusqu’au retour de la fonction actuelle.
+
+     Vous devez être dans le `Update` appel de méthode dans Data.cs.
+
+2. Appuyez sur MAJ + F11 à nouveau et que le débogueur passe la pile des appels pour revenir le `OnApplicationStartup` Gestionnaire d’événements.
+
+## <a name="run-to-cursor"></a>Exécuter jusqu'au curseur
+
+1. Choisissez le **arrêter le débogage** bouton rouge ![arrêter le débogage](../debugger/media/dbg-tour-stop-debugging.png "arrêter le débogage") ou MAJ + F5.
+
+2. Dans le `Update` avec le bouton droit de la méthode dans Data.cs, le `Add` appel de méthode et choisissez **exécuter jusqu’au curseur**. Cette commande démarre le débogage et définit un point d’arrêt temporaire sur la ligne de code active.
+
+     ![Utilisez l’exécution de la fonctionnalité de curseur](../debugger/media/dbg-tour-run-to-cursor.png "exécuter jusqu’au curseur")
+
+    Vous devez être suspendue sur le point d’arrêt dans `MainWindow` (car il s’agit du premier point d’arrêt vous définissez).
+
+3. Appuyez sur F5 pour passer à la `Add` méthode où vous avez sélectionné **exécuter jusqu’au curseur**.
+
+    Cette commande est utile lorsque vous modifiez du code et que vous souhaitez définir un point d’arrêt temporaire rapidement et de démarrer le débogueur.
+
+## <a name="change-the-execution-flow"></a>Modifier le flux d’exécution
+
+1. Avec le débogueur en mode pause sur le `Add` appel de méthode, utilisez la souris de saisir la flèche jaune (le pointeur d’exécution) sur la gauche et déplacer la flèche jaune une ligne à la `foreach` boucle.
+
+     ![Déplacez le pointeur d’exécution](../debugger/media/dbg-tour-move-the-execution-pointer.gif "déplacer le pointeur d’exécution")
+
+    En modifiant le flux d’exécution, vous pouvez effectuer diverses tâches telles que les chemins d’exécution de code différent de test ou réexécutez le code sans redémarrer le débogueur.
+
+2. Maintenant, appuyez sur F5.
+
+    Vous pouvez voir les images ajoutées à la fenêtre de l’application. Étant donné que vous exécutez à nouveau le code dans le `foreach` boucle, certaines images ont été ajoutées à deux reprises.
+    
+    > [!WARNING]
+    > Fréquence à laquelle vous devez être prudent avec cette fonctionnalité, et un avertissement s’affiche dans l’info-bulle. Vous pouvez voir les autres avertissements, trop. Déplacer le pointeur ne peut pas rétablir votre application à un état antérieur de l’application.
+
 ## <a name="inspect-variables-with-data-tips"></a>Inspecter des variables avec info-bulles
 
-1. Pour suspendre le débogueur sur la `Add` appel de méthode, placez votre curseur sur la `Add` méthode appeler et cliquez sur le **exécuter. Cliquez ensuite sur** bouton ![exécuter. Cliquez ensuite sur](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+1. Ouvrez Data.cs dans l’application de démonstration de l’Observateur de Photo, cliquez sur le `private void Update` déclaration de fonction et choisissez **exécuter jusqu’au curseur** (arrêter tout d’abord l’application si elle est déjà en cours d’exécution).
 
-2. Maintenant, placez le curseur sur l’objet de fichier (`f`) et que sa valeur de propriété par défaut, le nom de fichier `market 031.jpg`.
+    Cela va suspendre l’application avec le débogueur attaché. Cela nous permet d’examiner son état.
+
+2. Placez le curseur sur le `Add` méthode appeler et cliquez sur le **exécuter. Cliquez ensuite sur** bouton ![exécuter. Cliquez ensuite sur](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+
+3. Maintenant, placez le curseur sur l’objet de fichier (`f`) et que sa valeur de propriété par défaut, le nom de fichier `market 031.jpg`.
 
      ![Afficher une info-bulle](../debugger/media/dbg-tour-data-tips.gif "afficher une info-bulle")
 
-3. Développez l’objet pour afficher ses propriétés, telles que le `FullPath` propriété.
+4. Développez l’objet pour afficher ses propriétés, telles que le `FullPath` propriété.
 
     Souvent, lors du débogage, vous souhaitez un moyen rapide de vérifier les valeurs de propriétés des objets et les conseils de données sont un bon moyen de le faire.
 
@@ -192,66 +258,6 @@ Essentiellement, nous utilisons ici, des raccourcis clavier, car il s’agit d�
 
     Pour plus d’informations, consultez [définissez un espion à l’aide de l’espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)
 
-## <a name="examine-the-call-stack"></a>Examiner la pile des appels
-
-1. Cliquez sur le **pile des appels** fenêtre, qui est par défaut ouvert dans le volet inférieur droit.
-
-     ![Examiner la pile des appels](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
-
-    Le **pile des appels** fenêtre indique l’ordre dans lequel les méthodes et les fonctions sont mise en route appelées. La première ligne affiche la fonction en cours (la `Update` méthode dans l’application de la visite guidée). La deuxième ligne montre que `Update` a été appelée à partir de la `Path.set` propriété et ainsi de suite.
-
-    >  [!NOTE]
-    > Le **pile des appels** fenêtre est identique à la perspective de débogage dans certains environnements IDE comme Eclipse.
-
-    La pile des appels est un bon moyen d’examiner et de comprendre le flux d’exécution d’une application.
-
-    Vous pouvez double-cliquer sur une ligne de code pour accéder à examiner le code source et qui change également l’étendue actuelle en cours d’inspection par le débogueur. Cette action n’avance pas le débogueur.
-
-    Vous pouvez également utiliser les menus contextuels à partir de la **pile des appels** fenêtre pour effectuer d’autres opérations. Par exemple, vous pouvez insérer des points d’arrêt dans les fonctions spécifiées, le débogueur à l’aide d’avance **exécuter jusqu’au curseur**et accédez à examiner le code source. Pour plus d’informations, consultez [Comment : examiner la pile des appels](../debugger/how-to-use-the-call-stack-window.md).
-
-## <a name="change-the-execution-flow"></a>Modifier le flux d’exécution
-
-1. Avec le débogueur en mode pause sur le `Add` appel de méthode, utilisez la souris de saisir la flèche jaune (le pointeur d’exécution) sur la gauche et déplacer la flèche jaune une ligne à la `foreach` boucle.
-
-     ![Déplacez le pointeur d’exécution](../debugger/media/dbg-tour-move-the-execution-pointer.gif "déplacer le pointeur d’exécution")
-
-    En modifiant le flux d’exécution, vous pouvez effectuer diverses tâches telles que les chemins d’exécution de code différent de test ou réexécutez le code sans redémarrer le débogueur.
-
-2. Maintenant, appuyez sur F5.
-
-    Vous pouvez voir les images ajoutées à la fenêtre de l’application. Étant donné que vous exécutez à nouveau le code dans le `foreach` boucle, certaines images ont été ajoutées à deux reprises.
-    
-    > [!WARNING]
-    > Fréquence à laquelle vous devez être prudent avec cette fonctionnalité, et un avertissement s’affiche dans l’info-bulle. Vous pouvez voir les autres avertissements, trop. Déplacer le pointeur ne peut pas rétablir votre application à un état antérieur de l’application.
-
-## <a name="run-to-cursor"></a>Exécuter jusqu'au curseur
-
-1. Choisissez le **arrêter le débogage** bouton rouge ![arrêter le débogage](../debugger/media/dbg-tour-stop-debugging.png "arrêter le débogage") ou MAJ + F5.
-
-2. Dans le `Update` (méthode), avec le bouton droit le `Add` appel de méthode et choisissez **exécuter jusqu’au curseur**. Cette commande démarre le débogage et définit un point d’arrêt temporaire sur la ligne de code active.
-
-     ![Utilisez l’exécution de la fonctionnalité de curseur](../debugger/media/dbg-tour-run-to-cursor.png "exécuter jusqu’au curseur")
-
-    Vous devez être suspendue sur le point d’arrêt dans `MainWindow` (puisque c’est le premier point d’arrêt.
-
-3. Appuyez sur F5 pour passer à la `Add` méthode où vous avez sélectionné **exécuter jusqu’au curseur**.
-
-    Cette commande est utile lorsque vous modifiez du code et que vous souhaitez définir un point d’arrêt temporaire rapidement et de démarrer le débogueur.
-
-## <a name="step-out"></a>Pas à pas sortant
-
-Supposons que vous avez terminé examinant le `Update` méthode dans Data.cs et que vous souhaitez tirer parti de la fonction, mais restent dans le débogueur. Ce faire, vous pouvez utiliser la **pas à pas sortant** commande.
-
-1. Appuyez sur MAJ + F11 (ou **Déboguer > pas à pas sortant**).
-
-     Cette commande reprend l’exécution d’application (et avance le débogueur) jusqu’au retour de la fonction actuelle.
-
-     Vous devez être dans le `Update` appel de méthode dans Data.cs.
-
-2. Appuyez sur MAJ + F11 à nouveau et que le débogueur passe la pile des appels pour revenir le `OnApplicationStartup` Gestionnaire d’événements.
-
-3. Appuyez sur F5 pour continuer.
-
 ## <a name="examine-an-exception"></a>Examiner une exception
 
 1. Dans la fenêtre de l’application en cours d’exécution, supprimez le texte dans le **chemin d’accès** zone d’entrée, puis sélectionnez le **modification** bouton.
@@ -277,12 +283,7 @@ Supposons que vous avez terminé examinant le `Update` méthode dans Data.cs et 
 
 Pour en savoir plus sur les fonctionnalités du débogueur, consultez [débogueur trucs et astuces](../debugger/debugger-tips-and-tricks.md).
 
-## <a name="video"></a>Regardez une vidéo sur le débogage
+## <a name="see-also"></a>Voir aussi
 
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
-</div>
-
-## <a name="see-also"></a>Voir aussi  
- [Débogage dans Visual Studio](../debugger/index.md)  
- [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
+[Débogage dans Visual Studio](../debugger/index.md)  
+[Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)

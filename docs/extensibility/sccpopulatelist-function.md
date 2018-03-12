@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: SccPopulateList
-helpviewer_keywords: SccPopulateList function
+f1_keywords:
+- SccPopulateList
+helpviewer_keywords:
+- SccPopulateList function
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 60f22174ac217a66f860415de898240d41d9a631
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 474bb834d36661c7cd85b98db78c13f619d7cba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList (fonction)
 Cette fonction met à jour une liste de fichiers pour une commande de contrôle source particulière et fournit l’état du contrôle source sur tous les fichiers donnés.  
@@ -66,12 +71,12 @@ SCCRTN SccPopulateList (
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|Opération réussie.|  
 |SCC_E_NONSPECIFICERROR|Erreur non spécifique.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette fonction examine la liste des fichiers pour son état actuel. Elle utilise le `pfnPopulate` fonction de rappel pour notifier l’appelant quand un fichier ne correspond pas aux critères pour le `nCommand`. Par exemple, si la commande est `SCC_COMMAND_CHECKIN` un fichier dans la liste n’est pas extrait, puis le rappel est utilisé pour informer l’appelant. Parfois, le plug-in de contrôle de code source peut trouver des autres fichiers qui peuvent faire partie de la commande et les ajouter. Cela permet, par exemple, un utilisateur de Visual Basic extraire un fichier .bmp qui est utilisé par son projet mais n’apparaît pas dans le fichier de projet Visual Basic. Un utilisateur choisit le **obtenir** dans l’IDE. L’IDE affiche une liste de tous les fichiers qu’il pense que l’utilisateur peut obtenir, mais avant que la liste s’affiche, le `SccPopulateList` est appelée pour vous assurer que la liste à afficher est à jour.  
   
 ## <a name="example"></a>Exemple  

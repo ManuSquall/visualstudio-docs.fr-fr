@@ -4,7 +4,7 @@
   items:
     - name: Visual Studio
       tocHref: /visualstudio/
-      topicHref: /visualstudio/index
+      topicHref: /visualstudio/ide/
       items:
         - name: Qualité du code
           tocHref: /visualstudio/code-quality/
@@ -12,9 +12,6 @@
         - name: Multiplateforme
           tocHref: /visualstudio/cross-platform/
           topicHref: /visualstudio/cross-platform/index
-        - name: 'IDE C#'
-          tocHref: /visualstudio/csharp-ide/
-          topicHref: /visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp
         - name: Outils de données
           tocHref: /visualstudio/data-tools/
           topicHref: /visualstudio/data-tools/index
@@ -22,10 +19,10 @@
           tocHref: /visualstudio/debugger/
           topicHref: /visualstudio/debugger/index
           items:
-            - name: Kit SDK Debug Interface Access
+            - name: Kit de développement logiciel de Debug Interface Access
               tocHref: /visualstudio/debugger/debug-interface-access/
               topicHref: /visualstudio/debugger/debug-interface-access/debug-interface-access-sdk
-            - name: Graphisme
+            - name: Graphiques
               tocHref: /visualstudio/debugger/graphics/
               topicHref: /visualstudio/debugger/graphics/overview-of-visual-studio-graphics-diagnostics
         - name: Déploiement
@@ -65,7 +62,7 @@
           topicHref: /visualstudio/profiling/index
         - name: Python
           tocHref: /visualstudio/python/
-          topicHref: /visualstudio/python/getting-started-with-python
+          topicHref: /visualstudio/python/overview-of-python-tools-for-visual-studio
         - name: R
           tocHref: /visualstudio/rtvs/
           topicHref: /visualstudio/rtvs/index
@@ -82,9 +79,6 @@
         - name: Test
           tocHref: /visualstudio/test/
           topicHref: /visualstudio/test/improve-code-quality
-        - name: IDE Visual Basic
-          tocHref: /visualstudio/vb-ide/
-          topicHref: /visualstudio/vb-ide/refactoring-vb
         - name: Concepteur de flux de travail
           tocHref: /visualstudio/workflow-designer/
           topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer

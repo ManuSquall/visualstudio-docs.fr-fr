@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c2853d06bf7dcf2ffd894ee3ae1a90e78e61c6d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 1c940c10c85901e5da7425c33f4bdbd726be7627
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implémentation de stratégies d'archivage de l'analyse du code personnalisées pour le code managé
 Une stratégie d’archivage spécifie un ensemble de règles que les membres d’un projet d’équipe doivent exécuter sur le code source avant l’analyse du code est archivée au contrôle de version. Microsoft fournit un ensemble de la norme *ensembles de règles* cette analyse de code de groupe de règles dans des zones fonctionnelles. *Les ensembles de règles de stratégie d’archivage personnalisée* spécifier un ensemble de règles d’analyse du code qui sont spécifiques à un projet d’équipe. Un ensemble de règles est stocké dans un fichier .ruleset.  
@@ -35,7 +36,7 @@ Une stratégie d’archivage spécifie un ensemble de règles que les membres d�
  Pour créer une règle personnalisée définie pour un projet d’équipe, vous créez tout d’abord un dossier spécial pour la règle de stratégie d’archivage **Explorateur du contrôle de code Source**. Ensuite, vous créez le fichier d’ensemble de règles et ajoutez le fichier au contrôle de version. Enfin, vous spécifiez la règle définie en tant que la stratégie de vérification d’analyse du code pour le projet d’équipe.  
   
 > [!NOTE]
->  Pour créer un dossier dans un projet d’équipe, vous devez d’abord mapper la racine du projet d’équipe vers un emplacement sur l’ordinateur local. Pour plus d’informations, consultez [créer et utiliser des espaces de travail (ancien)](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Pour créer un dossier dans un projet d’équipe, vous devez d’abord mapper la racine du projet d’équipe vers un emplacement sur l’ordinateur local.  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Pour créer le dossier de contrôle de version pour l’ensemble de règles de stratégie d’archivage  
   
@@ -61,7 +62,7 @@ Une stratégie d’archivage spécifie un ensemble de règles que les membres d�
   
 1.  Dans **Explorateur du contrôle de code Source**, cliquez sur le nouveau dossier, puis cliquez sur **ajouter des éléments au dossier**.  
   
-     Pour plus d’informations, consultez [utiliser le contrôle de version](http://msdn.microsoft.com/Library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+     Pour plus d’informations, consultez [Git et VSTS](/vsts/git/overview).  
   
 2.  Cliquez sur la règle de fichier que vous avez créé, puis cliquez sur **Terminer**.  
   

@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaDataSource::loadAndValidateDataFromPdb method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaDataSource::loadAndValidateDataFromPdb method
 ms.assetid: d66712dd-6c24-4192-919a-cce262066f0e
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb140470e45f49806087941127638f56ce5d7150
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: bcd82116c7499d2a2289fc0c198a2be053226721
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 S’ouvre et vérifie que le fichier de base de données (.pdb) de programme correspond à fourni les informations de signature et prépare le fichier .pdb comme source de données de débogage.  
@@ -50,7 +55,7 @@ HRESULT loadAndValidateDataFromPdb (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant montre les valeurs de retournés possibles pour cette méthode.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |E_PDB_NOT_FOUND|Impossible d’ouvrir le fichier ou le fichier a un format non valide.|  
 |E_PDB_FORMAT|Vous avez tenté d’accéder à un fichier avec un format obsolète.|  
@@ -59,7 +64,7 @@ HRESULT loadAndValidateDataFromPdb (
 |E_INVALIDARG|Paramètre non valide.|  
 |E_UNEXPECTED|La source de données a déjà été préparée.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Un fichier .pdb contient des valeurs de signature et âge. Ces valeurs sont répliqués dans le fichier .exe ou .dll correspondant au fichier .pdb. Avant de préparer la source de données, cette méthode vérifie la signature et l’âge du fichier .pdb nommé correspondent aux valeurs fournies.  
   
  Pour charger un fichier .pdb sans validation, utilisez la [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) (méthode).  

@@ -6,21 +6,24 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
+ms.technology: vs-ide-sdk
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-ms.openlocfilehash: 8adc348553ba613898117f10ccd21a6e5cd02ab8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 97f21f75020e77cf6780fa71c21eae827940d9ec
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Comment : utiliser AsyncPackage pour charger les VSPackages en arrière-plan
 E/s disque peuvent entraîner le chargement et l’initialisation d’un package Visual Studio. Si ces e/s se produit sur le thread d’interface utilisateur, elle peut entraîner des problèmes de réactivité. Pour résoudre ce problème, Visual Studio 2015 introduit le <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe qui permet le chargement du package sur un thread d’arrière-plan.  
   
 ## <a name="creating-an-asyncpackage"></a>Création d’un AsyncPackage  
- Commencez par créer un projet VSIX (**fichier / nouveau / projet / Visual c# / extensibilité / projet VSIX**) et l’ajout d’un VSPackage au projet (cliquez avec le bouton droit sur le projet et **élément d’ajouter un nouveau / C# élément/extensibilité/Visual Package Studio**). Vous pouvez ensuite créer vos services et ajouter ces services à votre package.  
+ Commencez par créer un projet VSIX (**fichier > Nouveau > projet > Visual c# > extensibilité > projet VSIX**) et l’ajout d’un VSPackage dans le projet (cliquez avec le bouton droit sur le projet et **ajouter un nouveau élément / élément c# / Package de Studio Extensibility/Visual**). Vous pouvez ensuite créer vos services et ajouter ces services à votre package.  
   
 1.  Dériver le package à partir de <xref:Microsoft.VisualStudio.Shell.AsyncPackage>.  
   
@@ -103,6 +106,6 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;   
   
 IAsyncServiceProvider asyncServiceProvider = Package.GetService(typeof(SAsyncServiceProvider)) as IAsyncServiceProvider;   
-IMyTestService testService = await ayncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
+IMyTestService testService = await asyncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
 ```
   

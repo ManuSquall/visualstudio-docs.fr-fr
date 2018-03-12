@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Summary view
+helpviewer_keywords:
+- Summary view
 ms.assetid: 0cb317c3-0ae6-4531-aaa8-447576eec037
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 968d46c4fe771229647282c719815982d81bf416
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- dotnet
+ms.openlocfilehash: c0223950fb5082c84de8026cb07778d1f7381a33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---net-memory-data"></a>Vue Résumé - Données de la mémoire .NET
 La vue Résumé affiche des informations sur les fonctions et les types .NET qui ont alloué le plus de mémoire, et sur les types qui ont été créés le plus grand nombre de fois dans une exécution du profilage. Pour plus d’informations, notamment une description des liens de notification et des listes de rapports, consultez [Vue Résumé](../profiling/summary-view.md).  
@@ -30,7 +34,7 @@ La vue Résumé affiche des informations sur les fonctions et les types .NET qui
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Nom**|Nom de la fonction.|  
+|**Name**|Nom de la fonction.|  
 |**% d’octets**|Pourcentage de tous les octets alloués dans l’exécution du profilage qui ont été alloués par cette fonction ou par une fonction enfant qui a été appelée par cette fonction.|  
   
 ## <a name="types-with-most-memory-allocated"></a>Types ayant le plus de mémoire allouée  
@@ -38,7 +42,7 @@ La vue Résumé affiche des informations sur les fonctions et les types .NET qui
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Nom**|Nom du type.|  
+|**Name**|Nom du type.|  
 |**% d’octets**|Pourcentage de tous les octets alloués dans l’exécution du profilage qui ont été alloués pour ce type.|  
   
 ## <a name="types-with-most-instances"></a>Types ayant le plus d’instances  
@@ -46,7 +50,7 @@ La vue Résumé affiche des informations sur les fonctions et les types .NET qui
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Nom**|Nom du type.|  
+|**Name**|Nom du type.|  
 |**% d’instances**|Pourcentage du nombre total d’objets .NET créés dans l’exécution du profilage et qui étaient des instances de ce type.|  
   
 ## <a name="see-also"></a>Voir aussi  

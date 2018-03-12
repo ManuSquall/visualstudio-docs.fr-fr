@@ -10,11 +10,15 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f6835d418cab15752ca4faa5599cead63e157d1
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2a8b1c99d1b084a6f8d3c050302e16ea40d64ac
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C++
 
@@ -30,7 +34,7 @@ Pour insérer un extrait de code, ouvrez un fichier de code C++ (.cpp ou .h), cl
 
 - Dans le menu **Edition / IntelliSense**, sélectionnez **Insérer un extrait**
 
-- Utilisez les touches d’accès rapide : **Ctrl + K + X**
+- Utilisez les touches d’accès rapide **Ctrl**+**K**+**X**
 
 Vous devez voir une liste de choix commençant par **#if**. Quand vous sélectionnez **#if**, vous devez voir le code suivant ajouté au fichier :
 
@@ -46,11 +50,11 @@ Vous pouvez alors remplacer le 0 par la condition correcte.
 
 Pour utiliser un extrait de code pour entourer du code sélectionné, sélectionnez une ligne (ou plusieurs lignes) et effectuez l'une des opérations suivantes :
 
-1. Effectuez un clic droit pour afficher le menu contextuel et sélectionnez **Entourer de**
+- Cliquez avec le bouton droit pour afficher le menu contextuel, puis sélectionnez **Entourer de**.
 
-2. Dans le menu **Edition / IntelliSense**, sélectionnez **Entourer de**
+- Dans le menu **Edition** > **IntelliSense**, sélectionnez **Entourer de**.
 
-3. Utilisez les touches d’accès rapide : **Ctrl + K + S**
+- Si vous préférez utiliser le clavier, appuyez sur **Ctrl**+**K**+**S**.
 
 Sélectionnez **#if**. Vous devez voir quelque chose de similaire à :
 

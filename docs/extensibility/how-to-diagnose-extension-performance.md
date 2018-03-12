@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- bertaygu
+ms.openlocfilehash: ac6044406c4fa065d1e5ed3dcaa8dd998f4232fb
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Mesurer l’impact d’extension de démarrage
 
@@ -29,6 +32,9 @@ Pour aider les utilisateurs à comprendre cet impact, nous avons ajouté une nou
 ![gérer les performances de Visual Studio](media/manage-performance.png)
 
 Ce document vise à aider les développeurs d’extensions en décrivant comment l’impact de l’extension est calculée et comment il peut être analysé localement pour tester si une extension peut s’afficher à l’extension de compromettre des performances.
+
+> [!NOTE]
+> Ce document se concentre sur l’impact des extensions sur la charge du démarrage et de la solution. Extensions également avoir un impact sur les performances de Visual Studio lorsqu’ils entraînent l’interface utilisateur de ne plus répondre. Pour plus d’informations sur ce sujet, consultez [Comment : diagnostiquer de l’interface utilisateur en raison des retards par les extensions](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Impact extensions de démarrage
 
@@ -48,7 +54,7 @@ Nous avons ajouté plusieurs fonctionnalités à partir de Visual Studio 2015 po
 
 Vous trouverez plus d’informations sur ces fonctionnalités dans les documents suivants :
 
-[Contextes d’interface utilisateur basée sur des règles](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): un moteur basé sur une règle plus riche basé sur les contextes d’interface utilisateur permettent de créer des contextes personnalisés basés sur les types de projets, les versions et les fonctionnalités. Les contextes personnalisés peuvent servir à charger un package durant les scénarios plus spécifiques telles que la présence d’un projet avec une fonctionnalité spécifique au lieu de démarrage ; ou autoriser [commande visibilité à un contexte personnalisé](https://msdn.microsoft.com/en-us/library/bb166512.aspx) basé sur les fonctionnalités de projet ou d’autres termes disponibles, éliminant ainsi la nécessité de charger un package pour inscrire un gestionnaire de requête de statut de commande.
+[Contextes d’interface utilisateur basée sur des règles](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): un moteur basé sur une règle plus riche basé sur les contextes d’interface utilisateur permettent de créer des contextes personnalisés basés sur les types de projets, les versions et les fonctionnalités. Les contextes personnalisés peuvent servir à charger un package durant les scénarios plus spécifiques telles que la présence d’un projet avec une fonctionnalité spécifique au lieu de démarrage ; ou autoriser [commande visibilité à un contexte personnalisé](visibilityconstraints-element.md) basé sur les fonctionnalités de projet ou d’autres termes disponibles, éliminant ainsi la nécessité de charger un package pour inscrire un gestionnaire de requête de statut de commande.
 
 [Prise en charge asynchrone package](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): packages de Visual Studio être chargé dans l’arrière-plan de façon asynchrone si le chargement du package a été demandé par un attribut de charge automatique ou d’une requête de service asynchrone permet à la nouvelle classe de base AsyncPackage dans Visual Studio 2015 . Ce chargement en arrière-plan permet à l’IDE à rester réactif pendant que l’extension est initialisée en arrière-plan et des scénarios critiques comme charge de solution et de démarrage n’affectées.
 
@@ -176,6 +182,6 @@ Une des vues dans la trace qui seront utiles pour déterminer l’impact sera le
 
 Il est important de réduire le nombre d’assemblys chargés à l’intérieur d’une routine d’initialisation de package que chaque assembly supplémentaire implique d’e/s disque supplémentaire qui peut ralentir le démarrage considérablement sur les ordinateurs plus lents.
 
-## <a name="summary"></a>Résumé
+## <a name="summary"></a>Récapitulatif
 
 Démarrage de Visual Studio a été un des domaines en permanence, nous obtenons des commentaires sur. Notre objectif, comme indiqué plus haut est pour tous les utilisateurs ont un démarrage cohérent avec tous les composants et qu’ils ont installé des extensions et nous souhaitons travailler avec les propriétaires d’extension pour les aider à atteindre cet objectif. Les instructions ci-dessus doivent être utiles pour comprendre un impact extensions au démarrage et soit évitant automatiquement la charge ou de charger de façon asynchrone pour réduire l’impact sur la productivité des utilisateurs.

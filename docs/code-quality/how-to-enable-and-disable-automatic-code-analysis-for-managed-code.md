@@ -7,26 +7,27 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 7c22d194-5fea-4f23-b02d-19344fa64a64
-caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ad960a490d92e84efdfbd73e9aa23d7b41dc0dd1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- dotnet
+ms.openlocfilehash: 3e7699d8e5d7cbf9b63149e20fd9212cae14448d
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Comment : activer et désactiver l'analyse du code automatique pour le code managé
-Vous pouvez configurer l’analyse du Code à exécuter avant chaque génération d’un projet de code managé. Vous pouvez définir différentes propriétés de l’analyse du Code pour chaque [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] configuration.  
-  
-### <a name="to-enable-or-disable-automatic-code-analysis"></a>Pour activer ou désactiver l’analyse du code automatique  
-  
-1.  Dans **l’Explorateur de solutions**, cliquez sur le projet, puis cliquez sur **propriétés**.  
-  
-2.  Dans la boîte de dialogue Propriétés du projet, cliquez sur **l’analyse du Code**.  
-  
-3.  Spécifiez le type de build dans **Configuration** et la plateforme cible dans **plateforme**.  
-  
-4.  Pour activer ou désactiver l’analyse du code automatique, activez ou désactivez le **activer analyse du Code sur la Build (définit la constante CODE_ANALYSIS)** case à cocher.
+# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Comment : activer et désactiver l’analyse du code automatique pour le code managé
+
+Vous pouvez configurer l’analyse du code à exécuter après chaque génération d’un projet de code managé. Vous pouvez définir un code différent de propriétés d’analyse pour chaque configuration de build.
+
+## <a name="to-enable-or-disable-automatic-code-analysis"></a>Pour activer ou désactiver l’analyse du code automatique
+
+1. Dans **l’Explorateur de solutions**, cliquez sur le projet, puis choisissez **propriétés**.
+
+1. Dans la boîte de dialogue Propriétés du projet, choisissez **l’analyse du Code**.
+
+1. Spécifiez le type de build dans **Configuration** et la plateforme cible dans **plateforme**.
+
+1. Pour activer ou désactiver l’analyse du code automatique, activez ou désactivez le **activer l’analyse du Code sur la Build** case à cocher.

@@ -12,15 +12,16 @@ helpviewer_keywords:
 - Assert statements
 - unit tests, Assert statements
 - unit tests, Assert classes
-ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
-caps.latest.revision: "27"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 443c3fe0ece064993655895606ad8603b96f6286
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: 01d41202f49a61a1ae2ba0f926b5c5b563ab351c
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-the-assert-classes"></a>Utilisation des classes Assert
 Utilisez les classes Assert de l’espace de noms UnitTestingFramework pour vérifier des fonctionnalités spécifiques. Une méthode de test unitaire teste le code d’une méthode dans votre code de développement. Toutefois, elle ne signale l’exactitude du comportement du code que si vous incluez des instructions Assert.  
@@ -59,6 +60,7 @@ Utilisez les classes Assert de l’espace de noms UnitTestingFramework pour vér
   
  Décorez une méthode de test avec l’attribut ExpectedExceptionAttribute quand vous souhaitez que la méthode de test vérifie qu’une exception censée être levée par une méthode dans votre code de développement est effectivement levée dans cette méthode.  
   
-## <a name="see-also"></a>Voir aussi  
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting>   
- [Création et exécution de tests unitaires pour le code existant](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)
+## <a name="see-also"></a>Voir aussi
+
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
+[Tests unitaires sur votre code](../test/unit-test-your-code.md)

@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaSymbol::get_pure method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaSymbol::get_pure method
 ms.assetid: b61107e9-9144-4981-b7ef-58a339b80c58
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11bbc11200340d51d1b680202df78fc7ab76e7d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 5c59cb3c82e60eff992ba07c382a24ec10d4b64c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
 Récupère un indicateur qui spécifie si la fonction est purement virtuelle.  

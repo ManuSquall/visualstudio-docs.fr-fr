@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f763decca7a80a7a7fc5bb86f94a76cd3eb2679c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: ebbd6bf87270bba70dc80cd7ff652c147d3a4849
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Débogage managé : paramètres de propriété recommandés
 Certaines propriétés doivent être définies de la même manière pour tous les scénarios de débogage managé.  

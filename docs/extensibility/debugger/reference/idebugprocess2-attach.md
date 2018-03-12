@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugProcess2::Attach
-helpviewer_keywords: IDebugProcess2::Attach
+f1_keywords:
+- IDebugProcess2::Attach
+helpviewer_keywords:
+- IDebugProcess2::Attach
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 840f2dee6648a84b0f7c6259049dcc701b5aef82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 47b14c3de6b5b9980e2ad420596a1243e84c8882
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 Attache le Gestionnaire de session de débogage (SDM) au processus.  
@@ -59,13 +64,13 @@ int Attach(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant répertorie les autres valeurs possibles.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Le processus spécifié est déjà attaché au débogueur.|  
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Une violation de sécurité s’est produite lors de la procédure d’attachement.|  
 |`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un processus ne peut pas être attaché au débogueur.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Attachement à un processus attache le SDM sur tous les programmes en cours d’exécution dans ce processus peut être débogué par les moteurs de débogage (DE) spécifiés dans le `rgguidSpecificEngines` tableau. Définir le `rgguidSpecificEngines` une valeur null au paramètre de valeur ou inclure `GUID_NULL` dans le tableau à attacher à tous les programmes dans le processus.  
   
  Tous les événements de débogage qui se produisent dans le processus sont envoyées à la donnée [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet. Cela `IDebugEventCallback2` objet est fourni lorsque le SDM appelle cette méthode.  

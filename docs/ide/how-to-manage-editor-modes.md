@@ -28,11 +28,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f6535c656c512d5c849a8a5d8d2fb37319aa883
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 70daed24f72e6bf9efc0c81fc309c4b893285c39
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-editor-modes"></a>Guide pratique pour gérer les modes de l’éditeur
 Vous pouvez afficher l’éditeur de code Visual Studio dans différents modes d’affichage.  

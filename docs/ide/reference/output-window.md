@@ -20,11 +20,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b58e7997d2aaec4661906743a4ef72ce82fcd91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1e886e88ad7ab4e943908e003ffe56719bd13211
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="output-window"></a>Fenêtre Sortie
 La fenêtre **Sortie** peut afficher des messages d’état pour diverses fonctionnalités dans l’environnement de développement intégré (IDE). Pour ouvrir la fenêtre **Sortie**, dans la barre de menus, choisissez **Affichage/Sortie** (ou cliquez sur Ctrl+Alt+O).  
@@ -71,4 +72,4 @@ La fenêtre **Sortie** peut afficher des messages d’état pour diverses foncti
  [Comment : contrôler la fenêtre Sortie](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)   
  [Présentation des configurations de build](../../ide/understanding-build-configurations.md)   
- [Présentation des bibliothèques de classes](/dotnet/standard/class-library-overview)
+ [Présentation des bibliothèques de classes .NET](/dotnet/standard/class-library-overview)

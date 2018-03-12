@@ -15,14 +15,15 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84d2700e1dfb5d66fb2df6376db9e0ce5352ad4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 21d7f013989607f7f5416a57829bc9b2b29b61d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-subtypes"></a>Sous-types de projet
-Les sous-types de projet vous permettent de personnaliser ou version le comportement des systèmes de projet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Personnalisations incluent l’enregistrement de données supplémentaires dans le fichier projet, en ajoutant ou en filtrant les éléments dans le **ajouter un nouvel élément** boîte de dialogue contrôle de la façon dont les assemblys sont de débogage et déployés et l’extension du projet **propriété Pages** boîte de dialogue. Les VSPackages implémenter des sous-types de projet à l’aide de regroupements COM..  
+Les sous-types de projet vous permettent de personnaliser ou version le comportement des systèmes de projet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Personnalisations incluent l’enregistrement de données supplémentaires dans le fichier projet, en ajoutant ou en filtrant les éléments dans le **ajouter un nouvel élément** boîte de dialogue contrôle de la façon dont les assemblys sont de débogage et déployés et l’extension du projet **propriété Pages** boîte de dialogue. Les VSPackages implémenter des sous-types de projet à l’aide de regroupements COM.  
   
 > [!NOTE]
 >  Le système de projet Visual C++ ne prend pas en charge les sous-types de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]lui-même utilise des sous-types de projet pour implémenter les projets Smart Device et de SQL Server.  

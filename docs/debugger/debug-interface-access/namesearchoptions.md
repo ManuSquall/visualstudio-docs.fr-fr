@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: NameSearchOptions enumeration
+dev_langs:
+- C++
+helpviewer_keywords:
+- NameSearchOptions enumeration
 ms.assetid: 67dfbede-2678-47df-b664-5c49841d0b9b
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ceadd085a3099721e73e04dd09ea5a0b81ad1d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 4a6a4237e806a6906ef984cd942e027fe7d9227d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Spécifie les options de recherche pour les noms de fichiers et de symboles.  
@@ -62,7 +67,7 @@ enum NameSearchOptions {
  `nsfUndecoratedName`  
  S’applique uniquement aux symboles qui ont à la fois non décorés et les noms décorés.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les valeurs de cette énumération sont passés aux méthodes suivantes :  
   
 -   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
@@ -71,7 +76,7 @@ enum NameSearchOptions {
   
 -   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : dia2.h  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -22,11 +22,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e635a47553cdb0eef1b690e64323ca20188b476
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 238cb35212232865f154bcf5afa029abd4b30c36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-web-applications"></a>Débogage d'applications Web
 Cette section décrit comment déboguer plusieurs types d'applications Web.  
@@ -36,7 +37,7 @@ Cette section décrit comment déboguer plusieurs types d'applications Web.
  Décrit les scripts de test et les scripts côté client dans les pages [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Débogage d’applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
+ [Déboguer des applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
  Décrit les étapes nécessaires pour activer le débogage d'applications [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  

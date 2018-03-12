@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,15 +23,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e66af6d2d38685bdd905b7991c6e8f782e4f696
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload:
+- multiple
+ms.openlocfilehash: 94f2683611dd04555fdd842e96f2c1ee4bb20fb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Génération et nettoyage de solutions et de projets dans Visual Studio
 En appliquant les procédures décrites dans cette rubrique, vous pouvez générer, régénérer ou nettoyer tout ou partie des projets ou éléments de projet dans une solution. Pour obtenir un didacticiel pas à pas, consultez [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md).  
@@ -57,11 +60,11 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
   
 1.  Dans l’**Explorateur de solutions**, choisissez ou ouvrez le projet.  
   
-2.  Dans la barre de menus, choisissez **Générer**, puis choisissez **Générer***nom_projet* ou **Régénérer***nom_projet*.  
+2.  Dans la barre de menus, choisissez **Générer**, puis choisissez **Générer***NomProjet* ou **Régénérer***NomProjet*.  
   
-    -   Choisissez **Générer***nom_projet* pour générer uniquement les composants qui ont été modifiés depuis la dernière génération du projet.  
+    -   Choisissez **Générer***NomProjet* pour générer uniquement les composants qui ont été modifiés depuis la dernière génération du projet.  
   
-    -   Choisissez **Régénérer***nom_projet* pour « nettoyer » le projet, puis générer les fichiers projet et tous les composants du projet.  
+    -   Choisissez **Régénérer***NomProjet* pour « nettoyer » le projet, puis générer les fichiers projet et tous les composants du projet.  
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Pour générer uniquement le projet de démarrage et ses dépendances  
   
@@ -110,11 +113,12 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
     -   Choisissez les touches Ctrl + Arrêt.  
   
 ## <a name="see-also"></a>Voir aussi
-[Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)   
-[Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)   
-[Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)   
-[Présentation des configurations de build](../ide/understanding-build-configurations.md)   
-[Configurations de projets Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
-[Référence à la génération C/C++](/cpp/build/reference/c-cpp-building-reference)   
-[Commutateurs de la ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md)   
+
+[Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)  
+[Obtention de journaux de génération avec MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md)  
+[Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)  
+[Présentation des configurations de build](../ide/understanding-build-configurations.md)  
+[Guide pratique pour définir des configurations de débogage et des configurations Release](../debugger/how-to-set-debug-and-release-configurations.md)  
+[Référence de la génération C/C++](/cpp/build/reference/c-cpp-building-reference)  
+[Commutateurs de la ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md)  
 [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md)

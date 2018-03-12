@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
-helpviewer_keywords: FullClassName element [Visual Studio project template]
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
+helpviewer_keywords:
+- FullClassName element [Visual Studio project template]
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a94a6d95bee32da52d484bc4203433b092ef2b82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 9df7004767641b9693745b2250eef4948d9e908d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName, élément (extension de l’Assistant Modèle de Visual Studio)
 Le nom qualifié complet de la classe qui implémente le `IWizard` interface.  
@@ -38,7 +43,7 @@ Le nom qualifié complet de la classe qui implémente le `IWizard` interface.
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -54,7 +59,7 @@ Le nom qualifié complet de la classe qui implémente le `IWizard` interface.
   
  Ce texte spécifie la classe qui implémente le `IWizard` interface. La classe spécifiée doit exister dans l’assembly spécifié par le [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) élément.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `FullClassName` est un élément enfant obligatoire de `WizardExtension`.  
   
 ## <a name="example"></a>Exemple  

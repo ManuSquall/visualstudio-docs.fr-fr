@@ -4,30 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - TestForNaNCorrectly
 - CA2242
-helpviewer_keywords: CA2242
+helpviewer_keywords:
+- CA2242
 ms.assetid: e12dcffc-e255-4e1e-8fdf-3c6054d44abe
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dd7f648880debe4b982d10e97aa7133419e0e840
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: b79c2d180bab62239dcace4bcf5b49195d339946
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242 : Effectuez correctement des tests NaN
 |||  
 |-|-|  
 |TypeName|TestForNaNCorrectly|  
 |CheckId|CA2242|  
-|Catégorie|Microsoft.Usage|  
+|Category|Microsoft.Usage|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  

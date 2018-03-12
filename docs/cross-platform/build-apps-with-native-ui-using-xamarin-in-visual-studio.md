@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 92bd6ea136c30c02e32045692d311afe93b86296
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- xamarin
+ms.openlocfilehash: d9d9ecfd180ce3d4bbd54eb091e6c0e3153bd7cd
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Générer des applications Xamarin avec une interface utilisateur native dans Visual Studio
 Une fois que vous avez effectué les étapes dans [Configurer et installer](../cross-platform/setup-and-install.md) et [Vérifier votre environnement Xamarin](../cross-platform/verify-your-xamarin-environment.md), cette procédure pas à pas vous montre comment générer une application Xamarin de base (ci-dessous) avec des couches d’IU (interface utilisateur) natives. Avec une IU native, le code partagé réside dans une bibliothèque de classes portable (PCL), et les projets de plateforme individuels contiennent les définitions d’IU.  
@@ -248,10 +250,10 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
   
 7.  Dans la fenêtre **Propriétés**, définissez les propriétés suivantes (vous pouvez éventuellement trier la liste par ordre alphabétique à l’aide du bouton de tri situé dans la barre d’outils de la fenêtre Propriétés) :  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
     |**text**|**Search by Zip Code**|  
-    |**id**|`@+id/ZipCodeSearchLabel`|  
+    |**ID**|`@+id/ZipCodeSearchLabel`|  
     |**layout_marginLeft**|`10dp`|  
     |**textColor**|`@android:color/white`|  
     |**textStyle**|`bold`|  
@@ -280,7 +282,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
   
 9. Dans la fenêtre **Propriétés** , définissez les propriétés suivantes :  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
     |**texte**|**Code postal**|  
     |**ID**|`@+id/ZipCodeLabel`|  
@@ -302,7 +304,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
   
 10. À partir de la **Boîte à outils**, faites glisser un contrôle **Number** sur **RelativeLayout**, placez-le sous l’étiquette **Zip Code**. Définissez ensuite les propriétés suivantes :  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
     |**ID**|`@+id/zipCodeEntry`|  
     |**layout_marginLeft**|`10dp`|  
@@ -325,7 +327,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
   
 11. À partir de la **Boîte à outils**, faites glisser un contrôle **Button** sur le contrôle **RelativeLayout**, puis placez-le à droite du contrôle zipCodeEntry. Définissez ensuite ces propriétés :  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
     |**ID**|`@+id/weatherBtn`|  
     |**texte**|**Obtenir la météo**|  

@@ -11,37 +11,36 @@ helpviewer_keywords:
 - Dataset Designer, creating data tables
 - tables [Visual Studio], creating
 - data [Visual Studio], Dataset Designer
-ms.assetid: abf0a2b5-e4e5-422e-97ef-55a0e35a82df
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0e1328eda7974b7e4ec04df0c4f5bd969cf09de6
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 7df2579f5556e0e35b4203c700ca3f96f46a7d2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>Procédure pas à pas : création d'un DataTable dans le Concepteur de DataSet
+
 Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTable> (sans TableAdapter) à l’aide de la **Concepteur de Dataset**. Pour plus d’informations sur la création de tables de données comprenant des TableAdapters, consultez [créer et configurer les TableAdapters](../data-tools/create-and-configure-tableadapters.md).  
-  
- Cette procédure pas à pas décrit notamment les tâches suivantes :  
-  
+
+Cette procédure pas à pas décrit notamment les tâches suivantes :  
+
 -   Création d’un projet Application Windows Forms  
-  
+
 -   Ajout d’un nouveau jeu de données à l’application  
-  
+
 -   Ajout d’une nouvelle table de données au jeu de données  
-  
+
 -   Ajout de colonnes à la table de données  
-  
+
 -   Définition de la clé primaire pour la table  
-  
-## <a name="creating-a-new-windows-forms-application"></a>Création d’une Application Windows Forms  
-  
-#### <a name="to-create-a-new-windows-forms-application-project"></a>Pour créer un nouveau projet d’Application Windows Forms  
+
+## <a name="creating-a-new-windows-forms-application"></a>Création d’une application Windows Forms
+
+### <a name="to-create-a-new-windows-forms-application-project"></a>Pour créer un projet d’application Windows Forms  
   
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **nouveau**, **projet...** .  
   
@@ -52,10 +51,10 @@ Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTab
 4. Nommez le projet **DataTableWalkthrough**, puis choisissez **OK**. 
   
      Le **DataTableWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.  
-  
-## <a name="adding-a-new-dataset-to-the-application"></a>Ajout d’un nouveau jeu de données à l’Application  
-  
-#### <a name="to-add-a-new-dataset-item-to-the-project"></a>Pour ajouter un nouvel élément dataset au projet  
+
+## <a name="adding-a-new-dataset-to-the-application"></a>Ajout d’un nouveau jeu de données à l’application
+
+### <a name="to-add-a-new-dataset-item-to-the-project"></a>Pour ajouter un nouvel élément dataset au projet  
   
 1.  Sur le **projet** menu, sélectionnez **ajouter un nouvel élément...** .  
   
@@ -66,20 +65,20 @@ Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTab
 3.  Sélectionnez **Ajouter**.  
   
      Visual Studio ajoute un fichier appelé **DataSet1.xsd** au projet et l’ouvre dans le **Concepteur de Dataset**.  
-  
+
 ## <a name="adding-a-new-datatable-to-the-dataset"></a>Ajout d’un nouveau DataTable au Dataset  
-  
-#### <a name="to-add-a-new-data-table-to-the-dataset"></a>Pour ajouter une nouvelle table de données au jeu de données  
+
+### <a name="to-add-a-new-data-table-to-the-dataset"></a>Pour ajouter une nouvelle table de données au jeu de données  
   
 1.  Faites glisser un **DataTable** à partir de la **DataSet** onglet de la **boîte à outils** sur la **Concepteur de Dataset**.  
   
      Une table nommée **DataTable1** est ajouté au jeu de données.  
    
 2.  Cliquez sur la barre de titre de **DataTable1** et renommez-le `Music`.  
-  
-## <a name="adding-columns-to-the-data-table"></a>Ajout de colonnes à la Table de données  
-  
-#### <a name="to-add-columns-to-the-data-table"></a>Pour ajouter des colonnes à la table de données  
+
+## <a name="adding-columns-to-the-datatable"></a>Ajout de colonnes à la table de données
+
+### <a name="to-add-columns-to-the-datatable"></a>Pour ajouter des colonnes dans le DataTable  
   
 1.  Cliquez sur le **musique** table. Pointez sur **ajouter**, puis cliquez sur **colonne**.  
   
@@ -95,10 +94,11 @@ Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTab
   
      `Genre`: <xref:System.String?displayProperty=fullName>  
   
-## <a name="setting-the-primary-key-for-the-table"></a>Définition de la clé primaire pour la Table  
+## <a name="setting-the-primary-key-for-the-table"></a>Définition de la clé primaire pour la table
+
 Toutes les tables de données doivent avoir une clé primaire. Une clé primaire identifie de façon unique un enregistrement spécifique dans une table de données.  
   
-#### <a name="to-set-the-primary-key-of-the-data-table"></a>Pour définir la clé primaire de la table de données  
+### <a name="to-set-the-primary-key-of-the-data-table"></a>Pour définir la clé primaire de la table de données
   
 -   Cliquez sur le **SongID** colonne, puis cliquez sur **définir la clé primaire**.  
   
@@ -106,12 +106,13 @@ Toutes les tables de données doivent avoir une clé primaire. Une clé primaire
   
 ## <a name="saving-your-project"></a>L’enregistrement de votre projet  
   
-#### <a name="to-save-the-datatablewalkthrough-project"></a>Pour enregistrer le projet DataTableWalkthrough  
+### <a name="to-save-the-datatablewalkthrough-project"></a>Pour enregistrer le projet DataTableWalkthrough  
   
 -   Sur le **fichier** menu, cliquez sur **Enregistrer tout**.  
-  
+
 ## <a name="see-also"></a>Voir aussi
+
 [Créer et configurer des datasets dans Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
-[Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
-[Validation des données](../data-tools/validate-data-in-datasets.md)   
-[Enregistrer des données](../data-tools/saving-data.md)   
+[Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+[Validation des données](../data-tools/validate-data-in-datasets.md)  
+[Enregistrer des données](../data-tools/saving-data.md)

@@ -6,18 +6,22 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
-helpviewer_keywords: Select Condition dialog box
+f1_keywords:
+- System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
+helpviewer_keywords:
+- Select Condition dialog box
 ms.assetid: fe3b415c-cb55-4295-b853-3f40765b28d0
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 5f98e1bd3052f3977a0071f2835fad1a7ed16726
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload:
+- multiple
+ms.openlocfilehash: a780cb0089a83df8f91a8c27be6c2b2953e70399
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Sélectionner la condition, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser le **sélectionner la Condition** boîte de dialogue de l’héritage [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  

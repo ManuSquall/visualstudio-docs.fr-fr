@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dddfcf34fcdd06ce63d2d7ec9e661991d880a988
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3c0d2d3c94def9f0c3dfe9b0bb2083e70bfa871f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-data-binding-with-linq-to-xml"></a>Liaison de données WPF avec LINQ to XML
 Cette section fournit des informations sur la façon d’utiliser LINQ to XML comme source de données pour la liaison de données dans des applications WPF (Windows Presentation Foundation). Ce scénario repose sur des *propriétés dynamiques* spéciales des objets <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> et <xref:System.Xml.Linq.XElement?displayProperty=fullName>. Ces propriétés dynamiques sont également documentées dans cette section.  

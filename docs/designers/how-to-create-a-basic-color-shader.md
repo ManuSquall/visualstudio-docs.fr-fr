@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1bb3ee7a4b646e39e22752d336d5414f64551ce0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7c0992b8db46155a709f58714dfd427882674d2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Comment : créer un nuanceur de couleur de base
 Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed Graph Shader Language) pour créer un nuanceur de couleur plat. Ce nuanceur définit la couleur finale sur une valeur de couleur RVB de constante.  
@@ -61,4 +62,4 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
  [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)   
  [Concepteur de nuanceur](../designers/shader-designer.md)   
- [Nœuds du concepteur de nuanceur](../designers/shader-designer-nodes.md)
+ [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

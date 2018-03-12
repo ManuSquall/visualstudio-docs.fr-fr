@@ -4,25 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: urn:schemas-microsoft-com:asm.v2#description
+f1_keywords:
+- urn:schemas-microsoft-com:asm.v2#description
 dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <description> element [ClickOnce deployment manifest]
+helpviewer_keywords:
+- <description> element [ClickOnce deployment manifest]
 ms.assetid: 18f6919e-a3ab-4942-a57d-167fabfac44e
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 41fd9fcee2d0ae954f5ec234bf23cbefd5ccd6da
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload:
+- multiple
+ms.openlocfilehash: f5045f9203d5413efdd6d192d2667e94d0119220
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Description&gt; élément (déploiement ClickOnce)
 Identifie les informations de l’application utilisées pour créer la présence d’un shell et un **Ajout / Suppression de programmes** élément dans le panneau de configuration.  
@@ -49,7 +54,7 @@ Identifie les informations de l’application utilisées pour créer la présenc
 |`suiteName`|Facultatif. Identifie un sous-dossier dans le `publisher` dossier dans les fenêtres **Démarrer** menu.|  
 |`supportUrl`|Facultatif. Spécifie une URL de prise en charge qui est indiquée dans le **Ajout / Suppression de programmes** élément dans le panneau de configuration. Un raccourci vers cette URL est également créé pour la prise en charge de l’application dans les fenêtres **Démarrer** menu, lorsque le déploiement est configuré pour l’installation.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  L’élément description est requis dans toutes les configurations de déploiement.  
   
 ## <a name="example"></a>Exemple  

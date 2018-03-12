@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: configure test agents, test lab
-ms.assetid: EBAA2E04-A97A-4047-B739-8DBA7F2D5074
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: fdcca04c9dd06132496912f4df30e3d86d24d42a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- configure test agents, test lab
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: 5caa566e15f7f3c4c69f8d33a6c7dd0eead38785
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="install-and-configure-test-agents"></a>Installer et configurer des agents de test
 
@@ -50,13 +52,13 @@ Ces programmes d’installation sont disponibles sous forme de fichiers ISO (CD 
 
 **Quelle configuration système dois-je avoir pour installer mon contrôleur de test et mes agents de test ?**
 
-| Élément | Spécifications |
+| Élément | Configuration requise |
 | ---- | ------------ |
 | **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows XP Service Pack 3<br />Windows Server 2012, Windows Server 2012 R2<br />Windows Server 2008 Release 2, Service Pack 1 |
 | **Contrôleur** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2012, Windows Server 2012 R2<br />Windows Server 2008 Release 2, Service Pack 1 |
-| **.NET Framework** | .NET Framework 4.5 |
+| **.NET Framework** | .NET Framework 4.5 |
 
-## <a name="q--a"></a>Q et R
+## <a name="q--a"></a>Questions et réponses
 
 <!-- BEGINSECTION class="m-qanda" -->
 
@@ -81,7 +83,7 @@ Le tableau suivant présente les scénarios pris en charge par les Agents pour V
 | Scénarios pris en charge par les Agents pour Visual Studio 2013 | Alternative dans TFS et TS |
 | --- | --- |
 | Flux de travail Générer-Déployer-Tester dans Visual Studio | Les utilisateurs peuvent employer une [définition de build](https://www.visualstudio.com/team-services/continuous-integration/) (pas une build XAML) pour générer, déployer et tester les scénarios dans TFS. |
-| Test de charge (test des performances) avec des ordinateurs distants locaux | Utilisez le contrôleur de test/les agents des test de la version 2013 Update 5 pour exécuter les tests de charge localement. [Complément d’information](https://msdn.microsoft.com/en-us/library/ff400223.aspx). |
+| Test de charge (test des performances) avec des ordinateurs distants locaux | Utilisez le contrôleur de test/les agents des test de la version 2013 Update 5 pour exécuter les tests de charge localement. [Complément d’information](https://msdn.microsoft.com/library/ff400223.aspx). |
 | Exécution à distance de tests automatisés à partir de Microsoft Test Manager à l’aide d’un environnement lab | Actuellement, il n’existe pas d’alternative à ce scénario. Nous vous recommandons d’utiliser la tâche Exécuter les tests fonctionnels dans les définitions de build et de mise en production (pas dans une build XAML) pour exécuter les tests à distance. |
 | Développeurs exécutant les tests à distance dans Visual Studio | N'est plus pris en charge. |
 

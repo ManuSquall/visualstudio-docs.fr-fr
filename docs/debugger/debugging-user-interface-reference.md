@@ -4,32 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vs.debug.uiref
+ms.topic: reference
+f1_keywords:
+- vs.debug.uiref
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 - JScript
-helpviewer_keywords: debugger, user interface reference
+helpviewer_keywords:
+- debugger, user interface reference
 ms.assetid: 57f1cad8-c908-42bf-8ec5-6eb567df08e9
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2187f115b9b3bc9705eb313068e155c999768ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: fedc9da2fc51648b6d29477906fa122b54a0abc8
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugging-user-interface-reference"></a>Référence du débogage de l'interface utilisateur
 Vous pouvez rencontrer les boîtes de dialogue suivantes à mesure que vous déboguez votre application.  
   
- De nombreuses fonctionnalités du débogueur peuvent être automatisées à l'aide du modèle d'extensibilité Visual Studio. Pour plus d'informations, consultez le Kit de développement Visual Studio Debugging SDK.  
+ De nombreuses fonctionnalités du débogueur peuvent être automatisées à l’aide du modèle d’extensibilité Visual Studio. Pour plus d'informations, consultez le Kit de développement Visual Studio Debugging SDK.  
   
 -   [Choisir les points d’arrêt, boîte de dialogue](../debugger/choose-breakpoints-dialog-box.md)  
   
@@ -46,4 +51,4 @@ Vous pouvez rencontrer les boîtes de dialogue suivantes à mesure que vous déb
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/index.md)  
  [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)   
- [Fenêtre Commande](../ide/reference/command-window.md)
+ [Commande, fenêtre](../ide/reference/command-window.md)

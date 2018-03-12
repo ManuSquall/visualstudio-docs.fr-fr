@@ -20,16 +20,15 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], samples
 - sample applications [Office development in Visual Studio]
 - examples [Office development in Visual Studio]
-ms.assetid: 6c59604d-7e14-41c0-bc51-851355100726
-caps.latest.revision: "28"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: cd90fbaf4e8f16d1975cbc540bedf2c1e26c018c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d13c91bebf92632e0c53f4eda9d2b771f37f1949
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Exemples et procédures pas à pas relatifs au développement Office
   Cette section contient des exemples d’applications, des exemples de code et des procédures pas à pas qui illustrent la syntaxe, structure et les techniques utilisées pour générer des solutions Microsoft Office.  

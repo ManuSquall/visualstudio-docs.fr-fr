@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: Unload method
-ms.assetid: 40a73f07-2605-4745-8ac5-0a0189167fd7
-caps.latest.revision: "8"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- Unload method
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4c904d70ea72ba485405a64d4898acc90fffbab2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: aadf5235eb64c14b14f7241b4fd2b89b0a9887da
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
   Appelée juste avant qu’un complément VSTO managé soit déchargé.  
@@ -34,7 +36,7 @@ HRESULT Unload();
 ## <a name="return-value"></a>Valeur de retour  
  Valeur HRESULT qui indique si la méthode a réussi.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode n’est pas appelée par les versions actuelles de Microsoft Office. Cette méthode est réservée à une utilisation ultérieure.  
   
 ## <a name="see-also"></a>Voir aussi  

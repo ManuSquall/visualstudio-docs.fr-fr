@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugExpressionEvaluator::GetMethodProperty
-helpviewer_keywords: IDebugExpressionEvaluator::GetMethodProperty method
+f1_keywords:
+- IDebugExpressionEvaluator::GetMethodProperty
+helpviewer_keywords:
+- IDebugExpressionEvaluator::GetMethodProperty method
 ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b80507a0ac3406474f26c6e206ac4d69c43ce27c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 9b99c1bf5dd194558cdb9f2b9419e7864a89ddd5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 Cette méthode obtient un objet de propriété qui contient les variables locales, arguments et autres propriétés d’une méthode.  
@@ -64,7 +69,7 @@ int GetMethodProperty(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Variables locales masqués sont généralement des variables qui sont générés par le compilateur.  
   
 ## <a name="see-also"></a>Voir aussi  

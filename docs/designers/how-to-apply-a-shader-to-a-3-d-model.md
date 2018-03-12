@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: adec7e86fcb33985aa61b7e20b7e9ac16d2ad7b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 852baa1c8a2b627e5426411d8c156ab28d5c6614
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Comment : appliquer un nuanceur à un modèle 3D
 Ce document indique comment utiliser l’éditeur de modèle pour appliquer un nuanceur DGSL (Directed Graph Shader Language) à un modèle 3D.  
@@ -46,4 +47,4 @@ Ce document indique comment utiliser l’éditeur de modèle pour appliquer un n
  [Comment : créer un modèle 3D de base](../designers/how-to-create-a-basic-3-d-model.md)   
  [Comment : créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md)   
  [Éditeur de modèle](../designers/model-editor.md)   
- [Concepteur de nuanceur](../designers/shader-designer.md)
+ [Concepteur Shader](../designers/shader-designer.md)

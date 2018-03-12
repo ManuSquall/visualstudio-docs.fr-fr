@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fe926dffa1230c5608d84e732740509a7c7e1a4a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b57de7b2cbc0838920df5f83d6d1e2bd8d733f2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-visual-studio-image-library"></a>Bibliothèque d’images Visual Studio
 Visual Studio Image Library contient les images d'application qui apparaissent dans Microsoft Visual Studio, Microsoft Windows, Office System et les autres logiciels Microsoft. Elle contient plus de 1 000 images qui donnent une certaine harmonie visuelle entre les applications Microsoft.  

@@ -8,14 +8,14 @@ ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
 - Live Unit Testing
-ms.assetid: 5b51fb96-94f4-4926-92b9-262156c05b85
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 38cf43429b5078de100c963df133ea1ba11c8717
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 725b9e31e725106dcd9e461a8f5d3749230fd5c9
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing avec Visual Studio 2017
 
@@ -103,7 +103,7 @@ Pour activer Live Unit Testing, sélectionnez **Tester** , **Live Unit Testing**
  
 ##  <a name="viewing-coverage-visualization-in-the-editor-as-you-type"></a>Affichage de la visualisation de couverture dans l’éditeur à mesure que vous tapez
 
-Une fois activé, Live Unit Testing met à jour chaque ligne de code dans l’éditeur Visual Studio pour vous indiquer si le code que vous écrivez est couvert par les tests unitaires et si les tests qui le couvrent réussissent.  La figure suivante montre les lignes de code avec des résultats positifs et négatifs aux tests, ainsi que les lignes de code qui ne sont pas couvertes par les tests. Les lignes avec un symbole « ✓ » vert sont couvertes seulement par des tests ayant réussi, les lignes assorties d’un symbole « x » rouge sont couvertes par un ou plusieurs tests ayant échoué, et les lignes avec un symbole « ➖ » bleu ne sont couvertes par aucun test.
+Une fois activé, Live Unit Testing met à jour chaque ligne de code dans l’éditeur Visual Studio pour vous indiquer si le code que vous écrivez est couvert par les tests unitaires et si les tests qui le couvrent réussissent.  La figure suivante montre les lignes de code avec des résultats positifs et négatifs aux tests, ainsi que les lignes de code qui ne sont pas couvertes par les tests. Les lignes avec un symbole « ✓ » vert sont couvertes seulement par des tests ayant réussi, les lignes assorties d’un symbole « x » rouge sont couvertes par un ou plusieurs tests ayant échoué et les lignes avec un symbole «  » bleu ne sont couvertes par aucun test.
 
   ![Image](./media/lut-codewindow.png)
 
@@ -117,13 +117,13 @@ En passant la souris sur le symbole de réussite ou d’échec dans la fenêtre 
  
   ![Image](./media/lut-failedinfo.png) 
 
-En plus de fournir les noms et les résultats des tests, l’infobulle vous permet de réexécuter l’ensemble des tests et d’exécuter cet ensemble des tests à l’aide du débogueur. Si vous sélectionnez un ou plusieurs des tests dans l’infobulle, vous pouvez également exécuter ou déboguer uniquement ces tests. Cela vous permet de déboguer vos tests sans quitter la fenêtre de code. Lors du débogage, en plus d’observer les points d’arrêt que vous pouvez avoir déjà définis, l’exécution du programme s’interrompt lorsque le débogueur exécute une méthode [`Assert`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) qui retourne un résultat inattendu. 
+En plus de fournir les noms et les résultats des tests, l’infobulle vous permet de réexécuter l’ensemble des tests et d’exécuter cet ensemble des tests à l’aide du débogueur. Si vous sélectionnez un ou plusieurs des tests dans l’infobulle, vous pouvez également exécuter ou déboguer uniquement ces tests. Cela vous permet de déboguer vos tests sans quitter la fenêtre de code. Lors du débogage, en plus d’observer les points d’arrêt que vous pouvez avoir déjà définis, l’exécution du programme s’interrompt lorsque le débogueur exécute une méthode [`Assert`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) qui retourne un résultat inattendu. 
 
 Lorsque vous passez la souris sur un test ayant échoué dans l’infobulle, celle-ci se développe pour fournir des informations supplémentaires sur l’échec, comme illustré dans l’image suivante. Si vous double-cliquez sur le test ayant échoué dans l’infobulle, vous pouvez y accéder directement.
 
   ![Image](./media/lut-failedmsg.png) 
 
-Lorsque vous accédez au test ayant échoué, Live Unit Testing indique également visuellement dans la signature de la méthode les tests qui ont réussi (signalés par un bécher à moitié plein avec un symbole vert « ✓ »), qui ont échoué (un bécher à moitié plein avec un symbole rouge « 🞩 »), ou ceux qui ne sont pas couverts par Live Unit Testing (bécher à moitié plein avec un symbole bleu « ➖ »). Les méthodes sans test n’affichent aucun un symbole. La figure suivante montre les quatre types de méthodes.
+Lorsque vous accédez au test ayant échoué, Live Unit Testing indique également visuellement dans la signature de la méthode les tests qui ont réussi (signalés par un bécher à moitié plein avec un symbole vert « ✓ »), qui ont échoué (un bécher à moitié plein avec un symbole rouge « 🞩 »), ou ceux qui ne sont pas couverts par Live Unit Testing (bécher à moitié plein avec un symbole bleu «  »). Les méthodes sans test n’affichent aucun un symbole. La figure suivante montre les quatre types de méthodes.
  
   ![Image](media/lut-testsource.png)
  

@@ -13,16 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Word [Office development in Visual Studio], walkthroughs
 - walkthroughs [Office development in Visual Studio], Word
-ms.assetid: cacab406-ad82-48d1-94a4-8b59453ef261
-caps.latest.revision: "33"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 65f581cbb0e1096a6be029bbdca3fe918b0918ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc3f207fea1d8572bbd6df00e92a57fd0939222a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthroughs-using-word"></a>Procédures pas à pas utilisant Word
   Les procédures suivantes montrent comment utiliser les personnalisations au niveau du document et les compléments VSTO pour automatiser Microsoft Office Word et personnaliser l’interface utilisateur.  

@@ -4,22 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
-ms.assetid: 0df68943-4c60-4f00-b1e8-b1cdee13762e
-caps.latest.revision: "15"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
-ms.openlocfilehash: b4eb0abb91ee8cfb5e3406c6211ef5934b4db0ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 5bbe67a270305dfb9f8e73d869963908502348b7
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="export-diagrams-as-images"></a>Exporter des diagrammes en tant qu'images
 Dans Visual Studio, vous pouvez enregistrer des diagrammes dans des formats en lecture seule de modélisation afin que vous pouvez les partager avec les parties prenantes, les utilisateurs ou les membres d’équipe de projet qui n’utilisent pas la même version de Visual Studio.  

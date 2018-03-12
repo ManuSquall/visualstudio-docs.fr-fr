@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 10/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 789f7a1c-38b4-41d0-809b-14f4d96c8116
@@ -16,11 +16,13 @@ f1_keywords:
 - VC.Project.AndroidDebugger.AndroidDeviceID
 - VC.Project.AndroidDebugger.PackagePath
 - VC.Project.AndroidDebugger.LaunchActivity
-ms.openlocfilehash: a296ea142b13b9bdcda888a7f382de9eeb17a40a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: 3ca25e560a4bc3060d86972b4000b3d9ad59ba1f
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="android-debugger-properties"></a>Propriétés du débogueur Android
 

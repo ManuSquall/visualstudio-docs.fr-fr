@@ -7,15 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
-caps.latest.revision: "23"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 9680f9886e4aeaefe8c476b7e9fff46fb3e24182
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.author: gewarren
+manager: ghogen
+ms.workload: uwp
+author: gewarren
+ms.openlocfilehash: 7bbb703d753770444bb9f3641778d0b1a62fc374
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>Test des applications Windows UWP avec des tests codés de l’interface utilisateur
 
@@ -233,7 +233,7 @@ Utilisez cette procédure pas à pas pour créer des tests de l’interface util
         Gesture.Tap(Me.UIMap.UIApp2Window. UIButtonButton)  
         ```  
   
-    3.  Vérifiez que l’appel à la méthode assert généré automatiquement se produit après le lancement de l’application et le mouvement d’appui sur le bouton :  
+    3.  Vérifiez que l’appel à la méthode assert généré automatiquement se produit après le lancement de l’application et le mouvement d’appui sur le bouton :  
   
         ```csharp  
         this.UIMap.AssertMethod1();  
@@ -293,7 +293,7 @@ Utilisez cette procédure pas à pas pour créer des tests de l’interface util
   
      ![Le test réussi s’affiche dans l’Explorateur de tests](../test/media/cuit_windowsstorapp_passedtest.png "CUIT_WindowsStorApp_PassedTest")  
   
-## <a name="q--a"></a>Q et R  
+## <a name="q--a"></a>Questions et réponses  
   
 #### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Q : Pourquoi l’option d’enregistrement de mon test codé de l’interface utilisateur ne figure-t-elle pas dans la boîte de dialogue Générer le code pour le test codé de l’interface utilisateur ?**  
   
@@ -301,7 +301,7 @@ Utilisez cette procédure pas à pas pour créer des tests de l’interface util
   
 #### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>Q : Puis-je créer un test codé de l’interface utilisateur pour mes applications UWP basées sur WinJS ?**  
 
-**R**: non, seules les applications XAML sont prises en charge.  
+**R**: Non, seules les applications XAML sont prises en charge.  
   
 #### <a name="q-can-i-create-coded-ui-tests-for-my-uwp-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>Q : Puis-je créer des tests codés de l’interface utilisateur pour mes applications UWP sur un système qui n’exécute pas Windows 8.1 ou Windows 10 ?**  
   

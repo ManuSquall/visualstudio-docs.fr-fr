@@ -7,20 +7,20 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
-caps.latest.revision: "16"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 34cfe9041a9e724136c9d7c5a19b1c74f2309b2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.author: gewarren
+manager: ghogen
+ms.workload: multiple
+author: gewarren
+ms.openlocfilehash: e154973c48bf0fd718b0361fd3bfbad8602e674d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
 Cette rubrique traite des options et des problèmes dans la génération et la compilation de code Fakes, et décrit les conventions de nommage pour les types Fakes générés, les membres et les paramètres.  
   
- **Requirements**  
+ **Spécifications**  
   
 -   Visual Studio Enterprise  
   
@@ -269,7 +269,7 @@ attribute of the Assembly element in the .fakes:
 |Par exemple : opérateur + |`op_Add`|`AddOp`|  
 |Pour un **opérateur de conversion**, le type de retour est ajouté.|`T op_Implicit`|`ImplicitOpT`|  
   
- **Remarques**  
+ **Notes**  
   
 -   Les **accesseurs Get et Set des indexeurs** sont traités de la même façon que la propriété. Le nom par défaut pour un indexeur est `Item`.  
   

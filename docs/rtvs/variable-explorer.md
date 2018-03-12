@@ -1,48 +1,52 @@
 ---
 title: Explorateur de variables dans les Outils R pour Visual Studio | Microsoft Docs
+description: "L’Explorateur de variables dans Visual Studio affiche toutes les variables dans une portée donnée dans la session R active."
 ms.custom: 
-ms.date: 06/30/2017
+ms.date: 01/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
-ms.devlang: r
+ms.technology:
+- devlang-r
+dev_langs:
+- R
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c56250677e99a11c52ac368037525803394242b3
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload:
+- data-science
+ms.openlocfilehash: 41dab5fa99f4f725ef3aadc76b2b2441cb2c4abb
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="variable-explorer"></a>Explorateur de variables
 
-La fenêtre **Explorateur de variables**, que vous pouvez ouvrir en cliquant sur **Outils R > Fenêtres > Explorateur de variables** (ou Ctrl+8 si vous avez utilisé **Outils R > Paramètres de science des données**), affiche toutes les variables dans une portée donnée dans la session R active. Par exemple, si vous ouvrez l’Explorateur de variables et que vous entrez les lignes suivantes dans la [Fenêtre interactive](interactive-repl.md) :
+La fenêtre **Explorateur de variables**, que vous pouvez ouvrir en cliquant sur **Outils R > Fenêtres > Explorateur de variables** (ou Ctrl+8 si vous avez utilisé **Outils R > Paramètres de science des données**), affiche toutes les variables dans une portée donnée dans la session R active. Par exemple, si vous ouvrez l’Explorateur de variables et que vous entrez les lignes suivantes dans la [Fenêtre interactive](interactive-repl-for-r-in-visual-studio.md) :
 
 ```R
 x <- 42
 y <- 43
 n <- c(1,2,3,5,8,13)
 ```
- 
+
 La fenêtre Explorateur de variables s’affiche comme suit :
 
 ![Fenêtre Explorateur de variables dans Visual Studio](media/variable-explorer-window.png)
 
 Si une trame de données R plus complexe est définie dans la session, vous pouvez parcourir les données. Par exemple, après avoir exécuté `cars <- mtcars`, vous pouvez parcourir le jeu de données en développant les différents nœuds dans l’Explorateur de variables :
- 
+
 ![Vue développée de l’Explorateur de variables](media/variable-explorer-expanded-results.png)
- 
+
 Pour supprimer des variables, cliquez avec le bouton droit et sélectionnez **Supprimer**, ou sélectionnez la variable et appuyez sur la touche Suppr.
 
 Vous pouvez également rechercher une observation dans une trame de données à l’aide de la recherche incrémentielle. Tout d’abord, développez les nœuds dans la trame de données dans laquelle vous souhaitez rechercher, puis entrez des termes de recherche dans la zone de recherche.
 
 ## <a name="details-table-view"></a>Vue de détails (tableau)
 
-Les données étant souvent sous forme de tableau, vous pouvez afficher n’importe quel type de données complexe sous forme de tableau distinct en sélectionnant l’icône de loupe ou en cliquant avec le bouton droit et en sélectionnant **Afficher les détails**. 
+Les données étant souvent sous forme de tableau, vous pouvez afficher n’importe quel type de données complexe sous forme de tableau distinct en sélectionnant l’icône de loupe ou en cliquant avec le bouton droit et en sélectionnant **Afficher les détails**.
 
 ![Vue de tableau de l’Explorateur de variables](media/variable-explorer-table-view.png)
 
@@ -69,7 +73,6 @@ Vous pouvez également basculer vers une portée de fonction quand vous êtes ar
 ![Explorateur de variables montrant une trame de données pendant le débogage](media/variable-explorer-as-locals-window.png)
 
 L’Explorateur de variables change automatiquement de portée de fonction à mesure que vous parcourez le code dans le débogueur, par exemple pour afficher les variables locales dans une fonction.
-
 
 ## <a name="importing-data-into-variable-explorer"></a>Importation de données dans l’Explorateur de variables
 

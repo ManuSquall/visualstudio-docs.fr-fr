@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb3a7122f561f2c1beaa5674be2220a565586aa4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c8d0f7a2ee52930a74566e0f7b4ddc10747204ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shader-designer"></a>Concepteur Shader
 Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour créer, modifier et exporter des effets visuels personnalisés, appelés *nuanceurs*.  
@@ -36,7 +37,7 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
 |Nuanceur HLSL (bytecode)|.cso|Exporter|  
 |En-tête C++ (tableau de bytecode HLSL)|.h|Exporter|  
   
-## <a name="getting-started"></a>Commencer  
+## <a name="getting-started"></a>Prise en main  
  Cette section explique comment ajouter un nuanceur DGSL à votre projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et fournit les informations de base pour commencer.  
   
 #### <a name="to-add-a-dgsl-shader-to-your-project"></a>Pour ajouter un nuanceur DGSL à votre projet  
@@ -68,7 +69,7 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
   
 |Élément de la barre d'outils|Description|  
 |------------------|-----------------|  
-|**Sélectionner**|Permet l’interaction avec des nœuds et des bords dans le graphique. Dans ce mode, vous pouvez sélectionner des nœuds et les déplacer ou les supprimer. Vous pouvez également créer des bords ou les couper.|  
+|**Select**|Permet l’interaction avec des nœuds et des bords dans le graphique. Dans ce mode, vous pouvez sélectionner des nœuds et les déplacer ou les supprimer. Vous pouvez également créer des bords ou les couper.|  
 |**Panoramique**|Permet de déplacer un graphe de nuanceur par rapport au cadre de la fenêtre. Pour effectuer un mouvement panoramique, sélectionnez un point dans l’aire de conception et déplacez-le.<br /><br /> En mode **Sélection**, vous pouvez appuyer sur la touche Ctrl de façon prolongée pour activer temporairement le mode **Panoramique**.|  
 |**Zoom**|Permet d’afficher un graphique de nuanceur avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans l’aire de conception et déplacez-le vers la droite ou le bas pour effectuer un zoom avant, ou vers la gauche ou le haut pour effectuer un zoom arrière.<br /><br /> En mode **Sélection**, vous pouvez appuyer sur la touche Ctrl de façon prolongée pour effectuer un zoom avant ou arrière à l’aide de la roulette de la souris.|  
 |**Zoom pour ajuster**|Affiche le graphe de nuanceur complet dans le cadre de la fenêtre.|  

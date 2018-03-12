@@ -13,16 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Excel [Office development in Visual Studio], worksheets
 - worksheets [Office development in Visual Studio], common tasks
-ms.assetid: d9204916-6471-4cf0-89a1-d46dae0e2599
-caps.latest.revision: "13"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bc188299dbc5fe6f8f048b4971fa4973ba2f72f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 61dd449c4e495f5bf70f14f4295526d4a2dc3fec
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="working-with-worksheets"></a>Utilisation des feuilles de calcul
   Les classes <xref:Microsoft.Office.Tools.Excel.Worksheet> et <xref:Microsoft.Office.Interop.Excel.Worksheet> contiennent les méthodes et les propriétés utilisées pour effectuer des tâches avec des feuilles de calcul.  

@@ -16,7 +16,6 @@ helpviewer_keywords:
 - debugging Windows applications
 - Windows applications, debugging
 - debugging [Visual Studio], Windows applications
-- debugging [J#], Windows applications
 - debugging [C#], Windows applications
 - debugging [Visual Basic], Windows applications
 ms.assetid: 7092ee7f-8378-4def-aef8-1695bd97cf14
@@ -24,11 +23,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2d8f123359e4dfff02f05709d8028c2b9fcd3e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01e9b9ced1db8f41c8ad1fb6386eec0d6080dd99
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Préparation du débogage : applications Windows Forms
 Le modèle de projet Windows Forms crée une application Windows Forms. Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est assez simple. Pour plus d’informations, consultez [création d’un projet d’Application Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
@@ -53,7 +53,7 @@ Le modèle de projet Windows Forms crée une application Windows Forms. Le débo
   
 2.  Créez des points d'arrêt selon vos besoins.  
   
-     Comme les applications Windows Forms sont pilotées par événements, vos points d'arrêt sont placés dans le code du gestionnaire d'événements ou dans des méthodes appelées par le code du gestionnaire d'événements. Les points d'arrêt sont généralement placés dans les événements suivants :  
+     Comme les applications Windows Forms sont pilotées par événements, vos points d’arrêt sont placés dans le code du gestionnaire d’événements ou dans des méthodes appelées par le code du gestionnaire d’événements. Les points d'arrêt sont généralement placés dans les événements suivants :  
   
     1.  Événements associés à un contrôle, tels que Click, Enter, etc.  
   
@@ -71,7 +71,7 @@ Le modèle de projet Windows Forms crée une application Windows Forms. Le débo
  [Débogage du code managé](../debugger/debugging-managed-code.md)   
  [Types de projets C#, F# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Comment : jeu de Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Paramètres de projet pour c# les Configurations de débogage](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Configuration de débogage de paramètres de projet pour un Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Paramètres de projet pour des configurations Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Attacher au processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Windows Forms](/dotnet/framework/winforms/index)

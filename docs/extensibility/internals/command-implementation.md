@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: commands, implementation
+helpviewer_keywords:
+- commands, implementation
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0128db8288f83ab09ffe82acd66431ea6ed9da1a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2704794e4683fb461dca971a3893ca831591ca0c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-implementation"></a>Implémentation de la commande
 Pour implémenter une commande dans un VSPackage, vous devez effectuer les tâches suivantes :  

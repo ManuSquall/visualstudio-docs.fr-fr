@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcdeee28077f2c7affd1c4cd1f82d8c8cb29494b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 739f2a9a97fefcb1bc57c7987d5afec7a09ff4ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
 Capture le reste de l’image actuelle dans le fichier journal de graphiques.  
@@ -27,7 +28,7 @@ Capture le reste de l’image actuelle dans le fichier journal de graphiques.
 void CaptureCurrentFrame();  
 ```  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si une autre capture est en cours, par exemple une capture a été démarrée par le `BeginCapture` (fonction) : cette capture est terminée et enregistrée dans le journal de graphisme en tant qu’un frame distinct. Immédiatement par la suite, graphics diagnostics commence à capturer le reste de l’image actuelle, qui est également enregistré comme un frame distinct. Fin du frame actuel est marqué par un appel à présenter.  
   
  Pour capturer une image, vous devez préparer votre application pour capturer et enregistrer des informations graphiques, autrement dit, vous devez appeler [Init](init.md) via une instance de la `VsgDbg` classe avant d’appeler `CaptureCurrentFrame`.  

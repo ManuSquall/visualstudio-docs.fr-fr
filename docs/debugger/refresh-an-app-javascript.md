@@ -1,5 +1,5 @@
 ---
-title: Actualiser un UWP ou une application de Windows 8.1 | Documents Microsoft
+title: Actualiser une application UWP | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -22,16 +22,16 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c5f5592893452c3fdf7f535758f09d7877030c03
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: ef42c0208b973707294a842376ef737216e13774
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="refresh-a-uwp-or-windows-81-app"></a>Actualiser une plateforme Windows universelle ou Windows 8.1
-![S’applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>Actualiser une application UWP dans Visual Studio
   
- Vous pouvez apporter des modifications à votre code pendant le débogage, puis actualiser une application UWP en JavaScript en sélectionnant le **actualiser l’application Windows** bouton sur le **déboguer** barre d’outils. Ce bouton permet de recharger l'application sans arrêter, ni redémarrer le débogueur. La fonctionnalité Actualiser vous permet de modifier le code HTML, CSS et JavaScript et de visualiser rapidement le résultat. Cette fonctionnalité est prise en charge pour les applications UWP et Windows 8.1.  
+ Vous pouvez apporter des modifications à votre code pendant le débogage, puis actualiser une application UWP en JavaScript en sélectionnant le **actualiser l’application Windows** bouton sur le **déboguer** barre d’outils. Ce bouton permet de recharger l'application sans arrêter, ni redémarrer le débogueur. La fonctionnalité Actualiser vous permet de modifier le code HTML, CSS et JavaScript et de visualiser rapidement le résultat. Cette fonctionnalité est prise en charge pour les applications UWP.  
   
  L'actualisation ne conserve pas l'état de votre application, ni ne reflète les modifications suivantes dans votre application :  
   
@@ -50,37 +50,19 @@ ms.lasthandoff: 11/11/2017
   
 ### <a name="to-refresh-an-app"></a>Pour actualiser une application  
   
-1.  Dans Visual Studio, créez un projet à l'aide du modèle de projet Application de navigation.  
-  
-     Il peut s’agir d’application UWP ou une application Windows 8.1.  
-  
-2.  Avec le modèle ouvert dans Visual Studio, sélectionnez une cible de débogage.  
-  
-     Si un projet Windows Phone est votre projet de démarrage actuel, sélectionnez un émulateur Windows Phone pour la cible de débogage. Sinon, sélectionnez **simulateur** ou **ordinateur Local**.  
+1.  Votre projet UWP ouvert dans Visual Studio, sélectionnez **ordinateur Local** en tant que la cible de débogage.
   
      ![Liste cible de débogage sélectionnez](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 3.  Appuyez sur F5 pour exécuter l'application en mode débogage.  
   
-4.  Passez dans Visual Studio. (Appuyez sur F12).  
+4.  Passez dans Visual Studio. 
   
-5.  Dans **l’Explorateur de solutions**, dans le **pages** > **domestique** dossier, ouvrez home.html.  
-  
-6.  Remplacez le texte du titre de la page  
-  
-    ```html  
-    Welcome to yourAppName!  
-    ```  
-  
-     par un autre texte, similaire à :  
-  
-    ```html  
-    Hello!  
-    ```  
+5.  Dans la page d’accueil de votre application UWP, vous pouvez modifier certaines du code HTML.
   
 7.  Cliquez sur le **actualiser l’application Windows** bouton, qui ressemble à ceci : ![bouton d’application Windows d’actualiser](../debugger/media/js_refresh.png "JS_Refresh"). (Ou appuyez sur F4.)  
   
-8.  Basculez vers l'application. L'application est rechargée sans que le débogueur redémarre, et le nouveau titre de la page apparaît.  
+8.  Basculez vers l'application. L’application est rechargée et le code HTML mis à jour est utilisé pour restituer l’application.
   
 ## <a name="see-also"></a>Voir aussi  
  [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

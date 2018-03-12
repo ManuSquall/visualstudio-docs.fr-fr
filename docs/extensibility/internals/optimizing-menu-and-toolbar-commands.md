@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08502ab2e1161d753323642589ed00b00ed94ad2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f95675f420284b9d67a6d36ac30b3e71f085e565
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Optimisation des menus et les commandes de la barre d’outils
 L’ajout des VSPackages et leurs commandes correspondantes à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut entraîner une interface utilisateur encombrée. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Fournit des méthodes pour aider à réduire la confusion des commandes de l’interface utilisateur.  

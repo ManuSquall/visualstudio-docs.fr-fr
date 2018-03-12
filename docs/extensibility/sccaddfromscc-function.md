@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: SccAddFromScc
-helpviewer_keywords: SccAddFromScc function
+f1_keywords:
+- SccAddFromScc
+helpviewer_keywords:
+- SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5027e765e12ff483a9a27795990f0ddfbb479a5c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: f92950bc833c2d2658c3e13cd7e800e877b32de9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc (fonction)
 Cette fonction permet à l’utilisateur rechercher des fichiers qui se trouvent déjà dans le système de contrôle de code source puis en faire partie de ces fichiers du projet actuel. Par exemple, cette fonction peut obtenir un fichier d’en-tête commun dans le projet actuel sans copier le fichier. Le tableau de retour de fichiers, `lplpFileNames`, contient la liste des fichiers que l’utilisateur souhaite ajouter au projet IDE.  
@@ -50,13 +55,13 @@ SCCRTN SccAddFromScc (
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|Les fichiers ont été correctement situés et ajoutés au projet.|  
 |SCC_I_OPERATIONCANCELED|Opération annulée avec aucun effet.|  
 |SCC_I_RELOADFILE|Un fichier ou un projet doit être rechargé.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  L’IDE appelle cette fonction. Si le plug-in de contrôle de code source prend en charge la spécification d’un dossier local de destination, l’IDE passe `lpnFiles` = 1 et transmet le nom de dossier local dans `lplpFileNames`.  
   
  Lors de l’appel à la `SccAddFromScc` fonction retourne, le plug-in a attribué des valeurs à `lpnFiles` et `lplpFileNames`, allocation de la mémoire pour le tableau de nom de fichier si nécessaire (Notez que cette affectation remplace le pointeur dans `lplpFileNames`). Le plug-in de contrôle de code source est chargé de placer tous les fichiers dans le répertoire de l’utilisateur ou dans le dossier spécifié désignation. L’IDE ajoute ensuite les fichiers au projet IDE.  

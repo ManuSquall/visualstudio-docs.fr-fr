@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugErrorEvent2
-helpviewer_keywords: IDebugErrorEvent2 interface
+f1_keywords:
+- IDebugErrorEvent2
+helpviewer_keywords:
+- IDebugErrorEvent2 interface
 ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17d5686985ee6cfae0ba3765252cd50f078e362e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 35a6cecf5715eb0cf79a0468cf8da35e96d3dba2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 Cette interface spécifie un message d’erreur doit être signalée à l’utilisateur.  
@@ -42,10 +47,10 @@ IDebugErrorEvent2 : IUnknown
 |------------|-----------------|  
 |`GetErrorMessage`|Retourne une erreur sous forme de chaîne explicite.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si le moteur de débogage rencontre une erreur, il peut utiliser cette interface pour signaler le message via Visual Studio à l’utilisateur.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

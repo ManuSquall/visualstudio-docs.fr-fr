@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23fd772b74c4caafbde37541933c38e306f9dc75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7b5b596f553c0f84c9306bba010d2b97a33e1a16
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launching-the-debugger"></a>Lancement du débogueur
 Lancement du débogueur nécessite l’envoi de la séquence des méthodes et des événements avec leurs attributs corrects.  
@@ -34,7 +35,7 @@ Lancement du débogueur nécessite l’envoi de la séquence des méthodes et de
   
      Si `S_FALSE` est retourné, le moteur de débogage (DE) est chargé en cours de l’ordinateur virtuel.  
   
-     ou  
+     - ou -  
   
      Si `S_OK` est retourné, le DE doit être chargé dans le processus de le SDM. Le SDM puis effectue les tâches suivantes :  
   

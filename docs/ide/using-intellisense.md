@@ -1,37 +1,31 @@
 ---
-title: "Utilisation d’IntelliSense | Microsoft Docs"
+title: Visual Studio IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.tools.intellisense
+f1_keywords:
+- vc.tools.intellisense
 helpviewer_keywords:
-- IntelliSense, Complete Word
-- IntelliSense, completion mode
-- parameter information
-- IntelliSense, List Members
-- Quick Info
-- Parameter Info
+- Quick info
+- Parameter info
+- Complete word
+- List members
 - IntelliSense [Visual Studio]
-- IntelliSense, suggestion mode
-- IntelliSense, Parameter Info
-- IntelliSense, customizing
-- Complete Word
-- IntelliSense
-- List Members
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e39cdb06c0de1a664b3c0c698aeee2e8d7476119
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload:
+- multiple
+ms.openlocfilehash: 88ee47502d0aa15e391155cae918c8e579e72194
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="using-intellisense"></a>Utilisation d’IntelliSense
+# <a name="using-intellisense-in-visual-studio"></a>Utilisation d’IntelliSense dans Visual Studio
 
 IntelliSense est le terme général employé pour plusieurs fonctionnalités : Liste des membres, Informations sur les paramètres, Info express et Compléter le mot. Ces fonctionnalités vous aident à en savoir plus sur le code que vous utilisez, à assurer le suivi des paramètres que vous tapez et à ajouter des appels aux propriétés et aux méthodes en quelques séquences de touches.
 
@@ -55,7 +49,7 @@ Vous pouvez également passer en mode suggestion, où seul le texte que vous tap
 
 ## <a name="parameter-info"></a>Informations sur les paramètres
 
-Informations sur les paramètres fournit des informations sur le nombre, les noms et les types des paramètres requis par une méthode, un paramètre de type générique d'attribut (en C#) ou un modèle (en C++).
+Informations sur les paramètres fournit des informations sur le nombre, les noms et les types des paramètres requis par une méthode, un paramètre de type générique d’attribut (en C#) ou un modèle (en C++).
 
 Le paramètre suivant à taper pour la fonction vous est indiqué en gras. Pour les fonctions surchargées, vous pouvez utiliser les touches de direction Haut et Bas pour consulter les différentes informations de paramètres concernant les surcharges de fonction.
 
@@ -83,7 +77,7 @@ Vous pouvez désactiver la fonctionnalité Info express pour le code C++ en acc�
 
 ## <a name="complete-word"></a>Compléter le mot
 
-La fonctionnalité Compléter le mot entre automatiquement la fin du nom de variable, de commande ou de fonction dès que vous avez entré assez de caractères pour lever toute ambiguïté sur le nom. Vous pouvez appeler la fonctionnalité Compléter le mot en choisissant **Edition** > **IntelliSense** > **Compléter le mot**, en appuyant sur **Ctrl** + **Espace** ou en choisissant le bouton **Compléter le mot** dans la barre d’outils de l’éditeur.
+La fonctionnalité Compléter le mot entre automatiquement la fin du nom de variable, de commande ou de fonction dès que vous avez entré assez de caractères pour lever toute ambiguïté sur le nom. Vous pouvez appeler la fonctionnalité Compléter le mot en choisissant **Edition** > **IntelliSense** > **Compléter le mot**, en appuyant sur **Ctrl**+**Espace** ou en choisissant le bouton **Compléter le mot** dans la barre d’outils de l’éditeur.
 
 ## <a name="intellisense-options"></a>Options IntelliSense
 
@@ -107,8 +101,8 @@ MessageBox( hWnd, "String literal|")
 
 ## <a name="see-also"></a>Voir aussi
 
-[Options IntelliSense spécifiques à Visual Basic](../ide/visual-basic-specific-intellisense.md)  
-[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)  
+[Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)  
+[C# IntelliSense](../ide/visual-csharp-intellisense.md)  
 [JavaScript IntelliSense](../ide/javascript-intellisense.md)  
 [Écriture et refactorisation du code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
 [Insertion de commentaires dans le code XML](../ide/supplying-xml-code-comments.md)

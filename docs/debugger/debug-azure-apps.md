@@ -3,20 +3,24 @@ title: "Déboguer des services Azure | Documents Microsoft"
 ms.date: 09/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 3d434de3-ee5f-419d-9a94-ac4ac02d635b
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a7bba6b70654d6e41442034c23e787325f15783
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.workload:
+- azure
+ms.openlocfilehash: 5f1102a0d882056ed55e0355d182c5de2b6dc924
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Déboguer des services Azure dans Visual Studio
 

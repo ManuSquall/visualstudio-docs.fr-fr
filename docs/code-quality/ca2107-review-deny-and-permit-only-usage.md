@@ -18,25 +18,26 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb802e0d97d265c01540ca10ffe8d0dcf9b273cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3d6f514546c298a134785740fe7bbf948031bc74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107 : Passez en revue l'utilisation des méthodes Deny et PermitOnly
 |||  
 |-|-|  
 |TypeName|ReviewDenyAndPermitOnlyUsage|  
 |CheckId|CA2107|  
-|Catégorie|Microsoft.Security|  
+|Category|Microsoft.Security|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
  Une méthode contient une vérification de sécurité qui spécifie l’action de sécurité PermitOnly ou Deny.  
   
 ## <a name="rule-description"></a>Description de la règle  
- Le [à l’aide de la méthode PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649) et <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> actions de sécurité doivent être utilisées uniquement par ceux qui ont une connaissance avancée de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sécurité. Le code qui utilise ces actions de sécurité doit subir une révision de sécurité.  
+ Le <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> action de sécurité doit être utilisée uniquement par ceux qui ont une connaissance avancée de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sécurité. Le code qui utilise ces actions de sécurité doit subir une révision de sécurité.  
   
  Refuser modifie le comportement par défaut de la pile qui se produit en réponse à une demande de sécurité. Il vous permet de spécifier des autorisations qui ne doivent pas être accordées sur la durée de la méthode de refus, indépendamment des autorisations réelles des appelants dans la pile des appels. Si le parcours de pile détecte une méthode sécurisée par Deny, et si l’autorisation demandée est incluse dans les autorisations refusées, le parcours de pile échoue. PermitOnly modifie également le comportement par défaut de la pile. Il permet au code de spécifier uniquement les autorisations qui peuvent être accordées, quelles que soient les autorisations des appelants. Si le parcours de pile détecte une méthode sécurisée par PermitOnly, et si l’autorisation demandée n’est pas incluse dans les autorisations qui sont spécifiées par l’action PermitOnly, le parcours de pile échoue.  
   
@@ -82,5 +83,4 @@ ms.lasthandoff: 10/31/2017
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>   
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>   
  [Instructions de codage sécurisé](/dotnet/standard/security/secure-coding-guidelines)   
- [Substituer des vérifications de sécurité](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [À l’aide de la méthode PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+

@@ -22,11 +22,12 @@ caps.latest.revision: "14"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ca0ae746d116ae3613b51009c3b91e6f4aa0fa4f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e6d59464050c3233e09e9d0d0844916ae3517408
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Services et produits d’accessibilité de Microsoft
 > [!TIP]
@@ -72,7 +73,7 @@ Microsoft s’engage à faciliter l’utilisation de ses produits et services. L
 ##  <a name="hearing"></a> Service clientèle pour les personnes atteintes de troubles de l’audition  
  Si vous êtes atteint de surdité ou de troubles de l’audition, un accès complet aux services clientèle et produits Microsoft est disponible via un service télétexte/téléscripteur (TTY/TDD) :  
 
--   Pour le service clientèle, contactez Microsoft Sales Information Center au (800) 892-5234 entre 6 h 30 et 17 h 30 Pacifique, du lundi au vendredi, hors jours fériés.  
+-   Pour le service clientèle, contactez Microsoft Sales Information Center au (800) 892-5234 entre 6 h 30 et 17 h 30 Pacifique, du lundi au vendredi, hors jours fériés.  
 
 -   Pour obtenir une assistance technique aux États-Unis, contactez le support technique Microsoft au (800) 892-5234 entre 6 h 00 et 18 h 00 Pacifique, du lundi au vendredi, hors jours fériés. Au Canada, composez le (905) 568-9641 entre 8 h 00 et 20 h 00 Est, du lundi au vendredi, hors jours fériés.  
 

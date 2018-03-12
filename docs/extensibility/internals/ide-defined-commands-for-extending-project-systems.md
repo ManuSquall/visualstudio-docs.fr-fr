@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5e6f4caf8466100763b6a4ae11f6760a3d4c655
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3b450a55de29e112d158cb783ad366eb4fbcaca7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Commandes définies par l’IDE pour l’extension des systèmes de projet
 Lorsque vous souhaitez étendre des systèmes de projet, vous pouvez utiliser les commandes et commande groupes fournis par le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  

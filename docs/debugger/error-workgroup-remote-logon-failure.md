@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vs.debug.error.workgroup_remote_logon_failure
+ms.topic: reference
+f1_keywords:
+- vs.debug.error.workgroup_remote_logon_failure
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +19,17 @@ dev_langs:
 helpviewer_keywords:
 - logon failure, remote debugging
 - remote debugging, logon failure
-ms.assetid: 7be2c5bb-40fe-48d6-8cfc-c231fbd3d64e
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0c52907e8735136b317200bf915ddbc76f9c5cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 38ec2de37279e1f383751c9652aeeac74473c50f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Erreur : Échec d'ouverture de session à distance du groupe de travail
 Cette erreur affiche le message suivant :  

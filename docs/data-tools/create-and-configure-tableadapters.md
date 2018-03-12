@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 11086ba17f3f2fb7af99d76b3efadece4a23c426
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 3c9b501b78a82a94b81b2a29c86fd07a7a0d7f98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-and-configure-tableadapters"></a>Créer et configurer des TableAdapters
 Les TableAdapters fournissent une communication entre votre application et une base de données. Ils se connectent à la base de données, les requêtes exécutées ou les procédures stockées et renvoient une nouvelles données de table ou de remplissage existant <xref:System.Data.DataTable> avec les données retournées. Les TableAdapters peuvent également envoyer des données mises à jour à partir de votre application dans la base de données.  

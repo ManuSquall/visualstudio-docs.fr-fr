@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce6e9ca93d9cdca191db7db8f2eb3d144b74e40d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 31409c96a63a82898fcc999fa9f441a8c766b190
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="console"></a>Console
 L’option **Console** de VSPerfCmd.exe démarre l’application spécifiée dans une nouvelle fenêtre d’invite de commandes. L’option **Console** peut être utilisée seulement avec l’option **Launch** de VSPerfCmd. Si l’application n’est pas une application en ligne de commande, **Console** n’a aucun effet.  
@@ -28,12 +29,12 @@ VSPerfCmd.exe /Launch:AppName /Console
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- Aucune  
+ Aucun.  
   
 ## <a name="required-options"></a>Options obligatoires  
  Vous pouvez spécifier **Console** seulement sur une ligne de commande qui contient aussi l’option **Launch**.  
   
- **Launch:** `AppName`  
+ **Launch :** `AppName`  
  Démarre le profileur et l'application spécifiée par `AppName`.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -6,16 +6,19 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Statements.State.UI
+f1_keywords:
+- System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
-caps.latest.revision: "5"
+caps.latest.revision: 
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: 22e9e9c6f31923eb097b34eab19e61762fb2956b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload:
+- multiple
+ms.openlocfilehash: 4321ccba1d3081023c8603df04174506df78f288
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="state-activity-designer"></a>Concepteur d'activités d'état
 Un <xref:System.Activities.Statements.State> représente un état dans lequel une machine à états peut être.  

@@ -7,15 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
-caps.latest.revision: "9"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 8a7524046d981b9938c9df00be7edbcfa595f0fe
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.author: gewarren
+manager: ghogen
+ms.workload: multiple
+author: gewarren
+ms.openlocfilehash: e36d73a0c05378a95b3ece46945de1686796493f
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="sample-excel-extension-element-classes"></a>Exemple d'extension Excel : classes d'éléments
 L’extension utilise des classes dérivées de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> et qui représentent le contrôle Worksheet et le contrôle Cell dans [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].  

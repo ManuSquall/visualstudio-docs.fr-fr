@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: Outlook folders [Office development in Visual Studio], moving items
-ms.assetid: ac524f2e-a3e8-496d-bd5a-714799be44ab
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- Outlook folders [Office development in Visual Studio], moving items
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: fc7afe28e435e0dcdd58c7403f6282ebf3609a23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 72b35bde8775a859ef15c5e18b381615974bccd7
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Comment : déplacer des éléments dans Outlook par programmation
   Cet exemple déplace les messages électroniques non lus à partir de la **boîte de réception** dans un dossier nommé **Test**. L’exemple déplace uniquement les messages qui ont le mot **Test** dans le `Subject` champ.  

@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: StartTrackingContextWithRoot
-apilocation: filetracker.dll
+apiname:
+- StartTrackingContextWithRoot
+apilocation:
+- filetracker.dll
 apitype: COM
-helpviewer_keywords: StartTrackingContextWithRoot
+helpviewer_keywords:
+- StartTrackingContextWithRoot
 ms.assetid: f6ef2b76-8035-4a14-8195-aa221c46ef48
-caps.latest.revision: "6"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d49543bde0195144fb4918e9a9f173f8f9435ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 1844901da84c91cc35df18c9867897c634705a39
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 Démarre un contexte de suivi en utilisant un fichier réponse spécifiant un marqueur racine.  
@@ -44,7 +49,7 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 ## <a name="return-value"></a>Valeur de retour  
  **HRESULT** avec le bit **SUCCEEDED** défini si le contexte de suivi a été créé.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** FileTracker.h  
   
 ## <a name="see-also"></a>Voir aussi  

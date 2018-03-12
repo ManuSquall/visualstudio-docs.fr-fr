@@ -16,18 +16,19 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 568f5b98cd652e872e7bcc7d63e85de7f134546d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98349042fe66748ed4eb72a1604893e3f4e67d80
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID d’extendeurs pour les objets qui sont généralement utilisés pour étendre des projets
 Le tableau suivant répertorie les CATID d’extendeurs qui permet d’étendre `Project` et `ProjectItem` objets automation [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], et [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projets. Ces CATID d’extendeurs est définis dans VSLangProj.olb.  
   
 ## <a name="listing-of-catids"></a>Liste des CATID  
   
-|Nom|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProject>|{610D4614-D0D5-11D2-8599-006097C68E81}|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProjectItem>|{610D4615-D0D5-11D2-8599-006097C68E81}|  
@@ -35,7 +36,7 @@ Le tableau suivant répertorie les CATID d’extendeurs qui permet d’étendre 
 ## <a name="visual-basic-catids"></a>CATID de Visual Basic  
  Le tableau suivant répertorie les CATID d’extendeurs qui permet d’étendre [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] parcourir les objets. Ils sont tous définis dans VSLangProj.olb.  
   
-|Nom|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectBrowseObject>|{E0FDC879-C32A-4751-A3D3-0B3824BD575F}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectConfigBrowseObject>|{67F8DD11-14EB-489b-87F0-F01C52AF3870}|  
@@ -46,7 +47,7 @@ Le tableau suivant répertorie les CATID d’extendeurs qui permet d’étendre 
 ## <a name="visual-c-catids"></a>CATID Visual c#  
  Le CATID suivantes peut être utilisées pour étendre [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] parcourir les objets. Ils sont tous définis dans VSLangProj.olb.  
   
-|Nom|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectBrowseObject>|{4EF9F003-DE95-4d60-96B0-212979F2A857}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectConfigBrowseObject>|{A12CE10A-227F-4963-ADB6-3A43388513CA}|  
@@ -57,7 +58,7 @@ Le tableau suivant répertorie les CATID d’extendeurs qui permet d’étendre 
 ## <a name="c-catids"></a>CATID de C++  
  Les éléments suivants [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] CATID n’est pas exposés dans les bibliothèques de types de système de projet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .NET 2003 et doit être incluse dans votre code chaque fois que vous souhaitez étendre ces objets du projet. Ces CATID est incluses dans les bibliothèques de types dans les versions ultérieures de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-|Nom|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |`CVCProjectNode`|{EE8299CB-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCFolderNode`|{EE8299CA-19B6-4f20-ABEA-E1FD9A33B683}|  
@@ -73,7 +74,7 @@ const LPOLESTR CVCFileNode::s_wszCATID = L"{EE8299C9-19B6-4f20-ABEA-E1FD9A33B683
   
  Les éléments suivants [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] CATID n’est pas également exposées dans les bibliothèques de types dans des système de projet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .NET 2003 et doit être incluse dans votre code chaque fois que vous souhaitez étendre ces objets du projet. Ces CATID d’extendeurs est uniquement disponibles dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .NET 2003 et ne seront pas disponibles dans les versions ultérieures de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-|Nom|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |`CVCAssemblyReferenceNode` **:**|{FE8299C9-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCProjectReferenceNode`|{593DCFCE-20A7-48e4-ACA1-49ADE9049887}|  

@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: Custom symbol
+dev_langs:
+- C++
+helpviewer_keywords:
+- Custom symbol
 ms.assetid: a219fc83-d2a8-4bc5-b7e1-bfafeb247f16
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3c1f768c5e4e7f76d63841bb59f07a403e1d78f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 0e367a96bd24840e734ada21d45ee35dfaee36b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Personnalisé (Kit de développement logiciel de Debug Interface Access)
 Certains compilateurs introduisent de symboles qui ne sont pas identifiées par les types de symbole lexicale standard. Ces symboles sont identifiés par un `SymTagCustom` balise.  

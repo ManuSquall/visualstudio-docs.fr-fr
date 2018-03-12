@@ -4,19 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: text templates, transformation process
-ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
-caps.latest.revision: "30"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: cc7794959f36134b85fe7d05acf07998312f9361
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- text templates, transformation process
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: e350b123f1945bdeafa7f3ff2ae3da55037922cf
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="the-text-template-transformation-process"></a>Processus de transformation du modèle de texte
 Le processus de transformation de modèle de texte prend un fichier de modèle de texte comme entrée et génère un nouveau fichier texte comme sortie. Par exemple, vous pouvez utiliser des modèles de texte pour générer du code Visual Basic ou c#, ou vous pouvez générer un rapport HTML.  
@@ -30,7 +31,7 @@ Le processus de transformation de modèle de texte prend un fichier de modèle d
 |Composant|Description|Personnalisable (Oui/non)|  
 |---------------|-----------------|------------------------------|  
 |Moteur|Le composant moteur contrôle le processus de transformation de modèle de texte|Non.|  
-|Host|L’hôte est l’interface entre le moteur et l’environnement utilisateur. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]est un hôte du processus de transformation de texte.|Oui. Vous pouvez écrire un hôte personnalisé.|  
+|Hôte|L’hôte est l’interface entre le moteur et l’environnement utilisateur. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]est un hôte du processus de transformation de texte.|Oui. Vous pouvez écrire un hôte personnalisé.|  
 |Processeurs de directive|Processeurs de directive sont des classes qui gèrent les directives de modèles de texte. Vous pouvez utiliser des directives pour fournir des données à un modèle de texte à partir d’une source d’entrée.|Oui. Vous pouvez écrire des processeurs de directive personnalisés|  
   
 ## <a name="the-engine"></a>Le moteur  

@@ -4,45 +4,35 @@ ms.custom:
 ms.date: 12/06/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
-caps.latest.revision: "64"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 95aa5c1a5df7200ff3fda3554ea5944767aeb082
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: ace464f11d16f1498022cb1a0673b294a6ec408b
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
+
 Vous pouvez créer des applications pour des appareils Android, iOS et Windows à l'aide de Visual Studio.  Quand vous concevez votre application, utilisez les outils de Visual Studio pour ajouter facilement des services connectés, comme Office 365, Azure App Service et Application Insights.
 
- Créez vos applications en utilisant C# et le .NET Framework, HTML et JavaScript, ou C++. Partagez du code, des chaînes, des images et même, dans certains cas, l’interface utilisateur.
+Créez vos applications en utilisant C# et le .NET Framework, HTML et JavaScript, ou C++. Partagez du code, des chaînes, des images et même, dans certains cas, l’interface utilisateur.
 
- Si vous souhaitez créer un jeu ou une application graphique immersive, installez les Visual Studio Tools pour Unity et profitez de toutes les puissantes fonctionnalités de productivité de Visual Studio avec Unity, un moteur de jeu/moteur graphique multiplateforme très répandu, qui est aussi un environnement de développement pour les applications qui s’exécutent sur iOS, Android, Windows et d’autres plateformes.
+Si vous souhaitez créer un jeu ou une application graphique immersive, installez les Visual Studio Tools pour Unity et profitez de toutes les puissantes fonctionnalités de productivité de Visual Studio avec Unity, un moteur de jeu/moteur graphique multiplateforme très répandu, qui est aussi un environnement de développement pour les applications qui s’exécutent sur iOS, Android, Windows et d’autres plateformes.
 
- **Dans cet article :**
+## <a name="build-an-app-for-android-ios-and-windows-net-framework"></a>Générer une application pour Android, iOS et Windows (.NET Framework)
 
--   [Générer une application pour Android, iOS et Windows (.NET Framework)](#NET)
+![Appareils](../cross-platform/media/homedevices.png "HomeDevices")
 
-    -   [Cibler Android, iOS et Windows à partir d’une seule base de code](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
-
-    -   [Cibler les appareils Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
-
--   [Générer une application pour Android, iOS et Windows (HTML/JavaScript)](#HTML)
-
--   [Générer une application pour Android et Windows (C++)](#CPP)
-
--   [Créer un jeu multiplateforme pour Android, iOS et Windows à l’aide de Visual Studio Tools pour Unity](#Unity)
-
-##  <a name="NET"></a> Générer une application pour Android, iOS et Windows (.NET Framework)
- ![Appareils](../cross-platform/media/homedevices.png "HomeDevices")
-
- Avec Xamarin, vous pouvez cibler Windows, iOS et Android dans la même solution, partager du code et même l’interface utilisateur.
+Avec Xamarin, vous pouvez cibler Windows, iOS et Android dans la même solution, partager du code et même l’interface utilisateur.
 
 |**En savoir plus**|
 |--------------------|
@@ -90,8 +80,8 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 
 |**En savoir plus**|
 |--------------------|
-|[En savoir plus sur les applications Windows universelles](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Centre de développement Windows)|
-|[Créer votre première application](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Centre de développement Windows)|
+|[Introduction à la plateforme Windows universelle](/windows/uwp/get-started/universal-application-platform-guide)|
+|[Créer sa première application](/windows/uwp/get-started/your-first-app)|
 |[Développer des applications pour la plateforme Windows universelle (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrer des applications vers la plateforme Windows universelle (UWP)](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
 
@@ -117,7 +107,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 |**En savoir plus**|
 |--------------------|
 |[Installer Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Get started with Visual Studio Tools for Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/) (Prise en main de Visual Studio Tools pour Apache Cordova) (docs.microsoft.com)|
+|[Get started with Visual Studio Tools for Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/) (Prise en main de Visual Studio Tools pour Apache Cordova) (docs.microsoft.com)|
 |[En savoir plus sur l’émulateur Visual Studio pour Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a> Générer une application pour Android et Windows (C++)

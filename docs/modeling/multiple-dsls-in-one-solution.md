@@ -4,18 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 7e668620-6217-4e87-aea7-e9036776c8e4
-caps.latest.revision: "3"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: b55d1d5ec8e84c8d16681ffd0ac738291e1bc39d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: e7b1ef7fc26cb0e46ecaf1853d6c9490016e68a5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Utilisation de plusieurs langages spécifiques à un domaine dans une solution
 Vous pouvez empaqueter plusieurs DSL comme partie intégrante d'une seule solution de telle sorte qu'ils soient installés ensemble.  
@@ -46,7 +46,7 @@ Vous pouvez empaqueter plusieurs DSL comme partie intégrante d'une seule soluti
   
 2.  Regroupez les manifestes VSIX des DSL :  
   
-    1.  Ouvrez *YourVsixProject***\source.extension.manifest**.  
+    1.  Ouvrez * YourVsixProject ***\source.extension.manifest**.  
   
     2.  Pour chaque DSL, choisissez **ajouter du contenu** et ajouter :  
   
@@ -58,7 +58,7 @@ Vous pouvez empaqueter plusieurs DSL comme partie intégrante d'une seule soluti
   
 3.  Générez la solution.  
   
- Le VSIX résultant installera les deux DSL. Vous pouvez les tester à l’aide de F5 ou déployer *YourVsixProject***\bin\Debug\\\*.vsix**.  
+ Le VSIX résultant installera les deux DSL. Vous pouvez les tester à l’aide de F5 ou déployer * YourVsixProject ***\bin\Debug\\\*.vsix**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.cv.threads.nothreadreport
-helpviewer_keywords: Concurrency Visualizer, No Thread Activity to Show (Threads View)
+f1_keywords:
+- vs.cv.threads.nothreadreport
+helpviewer_keywords:
+- Concurrency Visualizer, No Thread Activity to Show (Threads View)
 ms.assetid: aa5ae9d0-561d-4ef8-b36b-258ce553d50a
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04da9c7db2c42bd071610dcb6e66b4bac7fb2807
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: c6f002ec676ab74f9fa135ebba9270a724f3e8c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="no-thread-activity-to-show-threads-view"></a>Aucune activité du thread à afficher (vue Threads)
+# <a name="no-thread-activity-to-show-threads-view"></a>Aucune activité du thread à afficher (affichage Threads)
 Cette zone montre des données relatives aux threads non masqués dans l’intervalle de temps actuellement visible.  
   
  Si aucune information n’est visible, vérifiez les éléments suivants :  

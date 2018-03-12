@@ -13,38 +13,43 @@ f1_keywords:
 - msvse_resedit.err.nameblank
 - msvse_resedit.err.duplicatename
 helpviewer_keywords:
-- editors [Visual Studio], Resource Designer
 - Resource Designer
-- resources [Visual Studio], managing
+- resources [Visual Studio]
 - Resources page in Project Designer
-- resources types, Resource Designer
 - application resources [Visual Studio]
-- Project Designer, Resources page
-ms.assetid: f2582734-8ada-4baa-8a7c-e2ef943ddf7e
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b599a919911fcc5d2833cfe69b75f7b32cced858
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2006f565edbca8a859cd2c155645e47e083b5528
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/12/2018
 ---
-# <a name="managing-application-resources-net"></a>Gestion des ressources d'une application (.NET)
-Les fichiers de ressources sont des fichiers qui font partie d’une application, mais qui ne sont pas compilés, par exemple, des fichiers icône ou des fichiers audio. Comme ces fichiers ne font pas partie du processus de compilation, vous pouvez les modifier sans avoir à recompiler vos fichiers binaires. Si vous envisagez de localiser votre application, vous devez utiliser des fichiers de ressources pour toutes les chaînes et autres ressources qui doivent être modifiées quand vous localisez votre application.  
-  
-Pour plus d’informations sur les ressources des applications de bureau .NET, consultez [Resources in Desktop Apps](/dotnet/framework/resources/index). Pour plus d’informations sur les ressources des applications de bureau C++, consultez [Working with Resource Files](/cpp/windows/working-with-resource-files).  
-  
-Les applications UWP utilisent un autre modèle de ressources que celui des applications de bureau. Pour plus d’informations sur les ressources dans les applications Windows 8.x, consultez [Définition des ressources d’application (HTML)](https://msdn.microsoft.com/en-us/library/windows/apps/hh465228.aspx).  
-  
-## <a name="working-with-resources"></a>Utilisation de ressources  
+# <a name="managing-application-resources-net"></a>Gestion des ressources d’une application (.NET)
+
+Les fichiers de ressources sont des fichiers qui font partie d’une application, mais qui ne sont pas compilés, par exemple, des fichiers icône ou des fichiers audio. Comme ces fichiers ne font pas partie du processus de compilation, vous pouvez les modifier sans avoir à recompiler vos fichiers binaires. Si vous envisagez de localiser votre application, vous devez utiliser des fichiers de ressources pour toutes les chaînes et autres ressources qui doivent être modifiées quand vous localisez votre application.
+
+Pour plus d’informations sur les ressources des applications de bureau .NET, consultez [Resources in Desktop Apps](/dotnet/framework/resources/index).
+
+## <a name="working-with-resources"></a>Utilisation de ressources
+
 Dans un projet de code managé, ouvrez la fenêtre de propriétés du projet. Vous pouvez ouvrir la fenêtre de propriétés en procédant de l’une des façons suivantes :
 
 - en cliquant avec le bouton droit sur le nœud du projet dans l’**Explorateur de solutions**, puis sélectionnant **Propriétés**
-- en tapant **propriétés de projet** dans la fenêtre **Lancement rapide**
-- en choisissant **Alt + Entrée** dans la fenêtre **Explorateur de solutions**
+- En tapant « propriétés de projet » dans la fenêtre **Lancement rapide**.
+- En choisissant **Alt**+**Entrée** dans la fenêtre **Explorateur de solutions**.
 
-Sélectionnez l’onglet **Ressources** . Vous pouvez ajouter un fichier .resx si votre projet n’en contient pas déjà un, ajouter et supprimer différents types de ressources, et modifier des ressources existantes.  
-  
-Pour en savoir plus sur l’utilisation des ressources dans les projets C++, consultez [How to: Create a Resource](/cpp/windows/how-to-create-a-resource).
+Sélectionnez l’onglet **Ressources** . Vous pouvez ajouter un fichier .resx si votre projet n’en contient pas déjà un, ajouter et supprimer différents types de ressources, et modifier des ressources existantes.
+
+## <a name="resources-in-other-project-types"></a>Ressources dans d’autres types de projets
+
+Les ressources dans les projets .NET sont gérées différemment par rapport aux autres types de projets. Pour plus d’informations sur les ressources dans :
+
+- Les applications Plateforme Windows universelle (UWP), consultez [Ressources d’application et le système de gestion de ressources](/windows/uwp/app-resources/).
+- Les projets C++, consultez [Utilisation des fichiers de ressources](/cpp/windows/working-with-resource-files) et [Guide pratique pour créer une ressource](/cpp/windows/how-to-create-a-resource).
+
+## <a name="see-also"></a>Voir aussi
+
+[Ressources dans les applications de bureau (.NET Framework)](/dotnet/framework/resources/index)

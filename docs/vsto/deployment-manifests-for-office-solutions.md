@@ -15,23 +15,22 @@ helpviewer_keywords:
 - deployment manifests [Office development in Visual Studio]
 - manifests [Office development in Visual Studio], deployment
 - Office development in Visual Studio, deployment manifests
-ms.assetid: 3fb29743-fb96-4d61-a99a-9b1bbafeee13
-caps.latest.revision: "22"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f6569c8c4a2420949862b8d09532c217606073d8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0cbee926a2f9590526b11c1fb1ad70cfa2013011
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifestes de déploiement pour les solutions Office
   Un manifeste de déploiement est un fichier XML qui décrit les paramètres de déploiement d’une solution Office et identifie la version actuelle de l’application.  
   
  Le développement Office dans Visual Studio utilise le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schéma de manifeste de déploiement défini dans le [le manifeste de déploiement ClickOnce](/visualstudio/deployment/clickonce-deployment-manifest) référence.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le fichier manifeste de déploiement pour les solutions Office identifie la version actuelle et autres paramètres de déploiement. Il référence le manifeste d’application, qui décrit la version actuelle de la solution et tous les fichiers qui sont contenus dans la solution.  
   
 ## <a name="file-name-syntax"></a>Syntaxe du nom de fichier  

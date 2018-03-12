@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 04/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.threads
+f1_keywords:
+- vs.debug.threads
 dev_langs:
 - CSharp
 - VB
@@ -22,15 +24,17 @@ helpviewer_keywords:
 - '@TIB'
 - debugging [Visual Studio], threads
 ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
-caps.latest.revision: "44"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64d9eccdf57388428bfcd7ba5e43f75087bcf0bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: bde9f1c8aa09f8e5961bd228a5f1947c2fc30f82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-threads-in-the-debugger-in-visual-studio-using-the-threads-window"></a>Afficher les Threads dans le débogueur dans Visual Studio à l’aide de la fenêtre Threads
 Dans le **Threads** fenêtre, vous pouvez examiner et manipuler les threads de l’application que vous déboguez. Pour obtenir des instructions sur l’utilisation de la **Threads** fenêtre, consultez [procédure pas à pas : déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).

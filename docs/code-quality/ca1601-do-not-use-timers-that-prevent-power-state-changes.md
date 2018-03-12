@@ -18,18 +18,19 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5fc42c15beda68472f4a980fe96b0055b70a01cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4fb8ef82581f60cea3eb121e3d0c68fbffa82d8a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601 : Ne pas utiliser de minuteries qui empêchent les changements d'état de l'alimentation
 |||  
 |-|-|  
 |TypeName|DoNotUseTimersThatPreventPowerStateChanges|  
 |CheckId|CA1601|  
-|Catégorie|Microsoft.Mobility|  
+|Category|Microsoft.Mobility|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  

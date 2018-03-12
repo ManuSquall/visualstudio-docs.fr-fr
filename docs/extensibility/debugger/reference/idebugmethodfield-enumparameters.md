@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugMethodField::EnumParameters
-helpviewer_keywords: IDebugMethodField::EnumParameters method
+f1_keywords:
+- IDebugMethodField::EnumParameters
+helpviewer_keywords:
+- IDebugMethodField::EnumParameters method
 ms.assetid: d77b1197-deb6-4144-8d1b-8b09949ccfac
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a29f39c28651de1053f4fa7e229eab5505896ecc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: f60fbde074f660647aedd65a7bae7f98576d485d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 Crée un énumérateur pour les paramètres de la méthode.  
@@ -44,7 +49,7 @@ int EnumParameters(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ou retourne S_FALSE si aucun paramètre. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Chaque élément est un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet représentant les différents types de paramètres. Appelez le [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) méthode sur chaque objet afin de déterminer exactement le type de paramètre de l’objet représente.  
   
  Un paramètre inclut son nom de la variable et son type. Le premier paramètre à une méthode de classe est en général le pointeur « this ».  

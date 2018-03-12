@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a148a7c5fa6d0e72345ab7f96696a11d5ba5185f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3b9d05b85cacfcdf90a883ffd08d4dec316eaafc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-msbuild"></a>À l’aide de MSBuild
 MSBuild fournit un format XML bien défini et extensible pour la création de fichiers de projet qui décrivent les éléments de projet pour être créés, de tâches de génération et de configurations de build entièrement.  
@@ -57,6 +58,6 @@ MSBuild fournit un format XML bien défini et extensible pour la création de fi
  Fichier unique les générateurs sont accessibles au moment du design uniquement, mais les tâches MSBuild peuvent être utilisés au moment du design et le moment de la génération. Pour une flexibilité maximale, vous devez donc utiliser des tâches MSBuild pour transformer et de générer du code. Pour plus d’informations, consultez [outils personnalisés](../../extensibility/internals/custom-tools.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur MSBuild](../../msbuild/msbuild-reference.md)   
+ [Référence MSBuild](../../msbuild/msbuild-reference.md)   
  [MSBuild](../../msbuild/msbuild.md)   
  [Outils personnalisés](../../extensibility/internals/custom-tools.md)

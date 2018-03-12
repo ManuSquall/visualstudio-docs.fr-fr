@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f24037448970f7104174aacdc2bf53df6dc7b9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 62ec48106915f43ace3aed370e652e036e97baa0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Commutateurs de ligne de commande (Kit de développement logiciel Visual Studio)
 Devenv.exe, le fichier exécutable qui démarre le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE), prend en charge les commutateurs de ligne de commande spécialement pour le développement de VSPackages. Les VSPackages peuvent également rendre leurs propres commutateurs disponibles sur la ligne de commande Devenv. Les rubriques suivantes fournissent des informations sur l’utilisation des commutateurs de ligne de commande dans l’IDE.  

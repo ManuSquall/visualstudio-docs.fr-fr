@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,15 +14,17 @@ helpviewer_keywords:
 - cascading submenus
 - menus, creating cascading submenus
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
-caps.latest.revision: "43"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a77cd9504dffc50fd3a3be021cb4e379378f9ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 19bf2ca98c7ba6227e791a7df44b34aa125cc786
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Ajout d’un sous-menu à un Menu
 Cette procédure pas à pas repose sur la démonstration dans [Ajout d’un Menu à la barre de menus de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) en montrant comment ajouter un sous-menu à le **TestMenu** menu.  
@@ -30,14 +33,14 @@ Cette procédure pas à pas repose sur la démonstration dans [Ajout d’un Menu
   
  Cette procédure pas à pas crée un sous-menu dans un menu dans la barre de menus de Visual Studio et place une nouvelle commande dans le sous-menu. La procédure pas à pas implémente également la nouvelle commande.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="adding-a-submenu-to-a-menu"></a>Ajout d’un sous-menu à un Menu  
   
 1.  Suivez les étapes de [Ajout d’un Menu à la barre de menus de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) pour créer l’élément de projet et le menu. Les étapes de cette procédure pas à pas supposent que le nom du projet VSIX est `TopLevelMenu`.  
   
-2.  Ouvrez TestCommandPackage.vsct. Dans le `<Symbols>` section, ajoutez un `<IDSymbol>` , élément pour le sous-menu, une pour le groupe de sous-menu et un pour la commande, dans le `<GuidSymbol>` nœud nommé « guidTopLevelMenuCmdSet ». Ceci est le même nœud qui contient le `<IDSymbol>` élément de menu de niveau supérieur.  
+2.  Open TestCommandPackage.vsct. Dans le `<Symbols>` section, ajoutez un `<IDSymbol>` , élément pour le sous-menu, une pour le groupe de sous-menu et un pour la commande, dans le `<GuidSymbol>` nœud nommé « guidTopLevelMenuCmdSet ». Ceci est le même nœud qui contient le `<IDSymbol>` élément de menu de niveau supérieur.  
   
     ```xml  
     <IDSymbol name="SubMenu" value="0x1100"/>  
@@ -95,7 +98,7 @@ Cette procédure pas à pas repose sur la démonstration dans [Ajout d’un Menu
 2.  Ajoutez la sous-commande. Recherchez le constructeur de la commande. Ajoutez les lignes suivantes juste après l’appel à la `AddCommand` (méthode).  
   
     ```csharp  
-    CommandID subCommandID = new CommandID(CommandSet, (int)TestCommandPackageGuids.cmdidTestSubCmd);  
+    CommandID subCommandID = new CommandID(CommandSet, cmdidTestSubCmd);  
     MenuCommand subItem = new MenuCommand(  
         new EventHandler(SubItemCallback), subCommandID);  
     commandService.AddCommand(subItem);  

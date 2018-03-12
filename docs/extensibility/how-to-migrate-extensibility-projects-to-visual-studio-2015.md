@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Visual Studio SDK, upgrading
+helpviewer_keywords:
+- Visual Studio SDK, upgrading
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016e609acb7ad837580b4cabb6055169ac7357c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: ec87a48e61ee69e01032c3b702ae21d6944eee92
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Comment : migrer des projets d’extensibilité Visual Studio 2015
 Voici comment mettre à niveau votre extension.  
@@ -45,7 +49,7 @@ Voici comment mettre à niveau votre extension.
   
 2.  Supprimer des assemblys de référence du Kit de développement logiciel Visual Studio à partir du projet en les sélectionnant, le bouton droit sur et **supprimer**.  
   
-3.  Ajoutez les versions de NuGet des assemblys de référence du Kit de développement logiciel Visual Studio.  Toujours dans le **références de l’Explorateur de solutions** ouverture d’un nœud, le **gérer les Packages NuGet...**  boîte de dialogue.  Si vous souhaitez en savoir plus sur cette boîte de dialogue, consultez [Package Manager UI](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI). Les assemblys de référence du Kit de développement logiciel Visual Studio sont publiées sur [nuget.org](http://www.nuget.org) par [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
+3.  Ajoutez les versions de NuGet des assemblys de référence du Kit de développement logiciel Visual Studio.  Toujours dans le **références de l’Explorateur de solutions** ouverture d’un nœud, le **gérer les Packages NuGet...**  boîte de dialogue.  Si vous souhaitez en savoir plus sur cette boîte de dialogue, consultez [Package Manager UI](/NuGet/Tools/Package-Manager-UI). Les assemblys de référence du Kit de développement logiciel Visual Studio sont publiées sur [nuget.org](http://www.nuget.org) par [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
 4.  À l’aide de **nuget.org** en tant que votre **Source du Package**, recherchez le nom du package NuGet qui correspond à l’assembly de référence souhaitée (par exemple : Microsoft.VisualStudio.Shell.14.0) et l’installer dans votre projet.  NuGet peut ajouter plusieurs assemblys de référence afin de répondre à des dépendances de l’assembly initiale.  
   

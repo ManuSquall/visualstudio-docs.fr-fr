@@ -4,23 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-modeling
 ms.topic: article
 helpviewer_keywords:
 - what's new [VIsual Studio ALM], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
 - modeling software [Visual Studio ALM], What's New
-ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
-caps.latest.revision: "32"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
-ms.openlocfilehash: ce1172baf41cf670b253b2420f5538607addfeb7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.openlocfilehash: c3fe70c36daf9d137e77acf75b9bd712ecf556c7
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="what39s-new-for-design-in-visual-studio"></a>Quel &#39; s de conception dans Visual Studio
 

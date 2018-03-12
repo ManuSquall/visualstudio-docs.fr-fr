@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugExpression2::EvaluateSync
-helpviewer_keywords: IDebugExpression2::EvaluateSync
+f1_keywords:
+- IDebugExpression2::EvaluateSync
+helpviewer_keywords:
+- IDebugExpression2::EvaluateSync
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ddc090e827b0a94a6534a0c4e625299cbc2ef5a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2d17e31f3282727386654b0d1913fd00424c3c0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 Cette méthode évalue l’expression de façon synchrone.  
@@ -59,12 +64,12 @@ int EvaluateSync(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Certains codes d’erreur standard sont :  
   
-|Erreur|Description|  
+|Error|Description|  
 |-----------|-----------------|  
 |E_EVALUATE_BUSY_WITH_EVALUATION|Une autre expression est en cours d’évaluation et évaluation d’expression simultanées n’est pas pris en charge.|  
 |E_EVALUATE_TIMEOUT|Évaluation a expiré.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Pour l’évaluation synchrone, il n’est pas nécessaire envoyer un événement vers Visual Studio à l’achèvement de l’évaluation.  
   
 ## <a name="example"></a>Exemple  

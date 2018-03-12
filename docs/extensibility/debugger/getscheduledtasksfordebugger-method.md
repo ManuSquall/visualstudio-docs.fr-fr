@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: GetScheduledTasksForDebugger method, TaskScheduler class [.NET Framework debug engines]
+helpviewer_keywords:
+- GetScheduledTasksForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f3099cdbcc8c49c7b6cb5064efad240ea32dea4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1c27bd57684fc0a4de0bf56bcc8db9a5561f7d1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger (méthode)
 Récupère un tableau de toutes les tâches planifiées.  
@@ -37,7 +41,7 @@ Récupère un tableau de toutes les tâches planifiées.
 ## <a name="return-value"></a>Valeur de retour  
  Tableau de toutes les tâches planifiées. Chaque tâche s’exécute, ou l’exécution est terminée.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode n’est pas thread-safe et ne doit pas être utilisée en même temps que d’autres instances de <xref:System.Threading.Tasks.TaskScheduler> doit être appelée à partir d’un débogueur uniquement lorsque le débogueur a suspendu tous les autres threads.  
   
 ## <a name="see-also"></a>Voir aussi  

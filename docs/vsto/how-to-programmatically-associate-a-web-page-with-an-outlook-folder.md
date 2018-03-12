@@ -14,16 +14,15 @@ helpviewer_keywords:
 - folders [Office development in Visual Studio], Web pages and
 - Outlook [Office development in Visual Studio], Web pages attached to folders
 - Web pages [Office development in Visual Studio], Outlook folders
-ms.assetid: b211b1b2-11e4-4316-87b7-98a3d10f95d1
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 63f62f339bba33cb638ec4b9d3067e7a546d1015
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0fa0ccb3035bc4be8e316c96bd5da8c166dcb4b8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Comment : associer une page web à un dossier Outlook par programmation
   Cet exemple vérifie un dossier nommé `HtmlView` dans Microsoft Office Outlook. Si le dossier n’existe pas, le code crée le dossier et lui assigne une page Web. Si le dossier existe, le code affiche le contenu du dossier.  

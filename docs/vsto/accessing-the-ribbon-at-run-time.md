@@ -14,16 +14,15 @@ helpviewer_keywords:
 - Globals class, Ribbon
 - Ribbon [Office development in Visual Studio], accessing
 - RibbonManager class
-ms.assetid: 8a7c7c6d-1a18-4d6b-98ee-e483d41f0cd8
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f69818d2e7c1b6ef2babd651247fe81709b80097
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1c0f3e4d20cbb04cbcfac5123a71b3fdf03d2a26
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="accessing-the-ribbon-at-run-time"></a>Accès au ruban au moment de l'exécution
   Vous pouvez écrire du code pour afficher, masquer et modifier le ruban, et permettre aux utilisateurs d’exécuter ce code à partir de contrôles dans un volet de tâches personnalisé, un volet Actions ou une zone de formulaire Outlook.  

@@ -4,22 +4,25 @@ ms.custom:
 ms.date: 07/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: autosave
-ms.assetid: b60bb228-0e72-4f24-88bb-397dfc5d50a7
-author: ghogen
-ms.author: ghogen
+helpviewer_keywords:
+- autosave
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4b4f2b4433395cc03e24273a3eccc04bb31ad30e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: ced97cb56e099eec70ea2b87c7d1a31ee7d4d89d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>L’impact de cette fonctionnalité sur les Solutions Office
 

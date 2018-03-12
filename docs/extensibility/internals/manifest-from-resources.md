@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 297d9535a8e9655ed87230d4f947faeb29e08487
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbf234d18c48ed501987f160bd2b98ec9f768b6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manifest-from-resources"></a>Manifeste à partir des ressources
 Le manifeste à partir de l’outil de ressources est une application console qui utilise une liste de ressources d’images (fichiers .png ou .xaml) et génère un fichier .imagemanifest qui permet à ces images à utiliser avec le Service d’images Visual Studio. En outre, cet outil peut être utilisé pour ajouter des images à un .imagemanifest existant. Cet outil est utile pour l’ajout de haute résolution et des thèmes prend en charge pour les images à une extension Visual Studio. Le fichier de .imagemanifest généré doit être inclus dans et déployé dans le cadre d’une extension Visual Studio (.vsix).  
@@ -29,7 +30,7 @@ Le manifeste à partir de l’outil de ressources est une application console qu
   
 ||||  
 |-|-|-|  
-|**Nom du commutateur**|**Remarques**|**Obligatoire ou facultatif**|  
+|**Nom du commutateur**|**Notes**|**Obligatoire ou facultatif**|  
 |/Resources|Une liste délimitée par des points-virgules, des images ou des répertoires. Cette liste doit toujours contenir la liste complète des images qui figurent dans le manifeste. Si seule une liste partielle est fournie, les entrées non incluses seront perdues.<br /><br /> Si un fichier de ressources donné est une bande d’image, l’outil fractionner il en images distinctes avant d’ajouter chaque sous-image au manifeste.<br /><br /> Si l’image est un fichier .png, nous vous recommandons de vous mettre en forme le nom comme suit afin que l’outil peut remplir les attributs de l’image : \<nom >.\< Largeur >. \<Hauteur > .png.|Obligatoire|  
 |/ assembly|Le nom de l’assembly managé (sans l’extension) ou le chemin d’accès de l’exécution de l’assembly natif qui héberge les ressources (par rapport à l’emplacement du manifeste de l’exécution).|Obligatoire|  
 |/ manifeste|Nom à donner au fichier .imagemanifest généré. Cela peut également inclure un chemin d’accès absolu ou relatif pour créer le fichier dans un autre emplacement. Le nom par défaut correspond au nom de l’assembly.<br /><br /> Valeur par défaut : \<répertoire actif >\\< Assembly\>.imagemanifest|Facultatif|  
@@ -51,7 +52,7 @@ Le manifeste à partir de l’outil de ressources est une application console qu
   
 -   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
-## <a name="notes"></a>Remarques  
+## <a name="notes"></a>Notes  
   
 -   L’outil prend uniquement en charge les fichiers .png et .xaml. D’autres types d’image ou un fichier seront ignorés. Un avertissement est généré pour tous les types non pris en charge rencontrés lors de l’analyse des ressources. Si non pris en charge les images sont trouvent lorsque l’outil a terminé l’analyse des ressources, une erreur sera générée  
   

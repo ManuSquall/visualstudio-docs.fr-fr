@@ -2,12 +2,13 @@
 layout: LandingPage
 title: Profilage de vos applications avec Visual Studio | Documents Microsoft
 description: "Apprenez à utiliser Visual Studio 2017 pour profiler les performances de vos applications, services et outils dans le langage de votre choix."
+ms.topic: landing-page
 ms.technology: vs-ide-debug
-ms.openlocfilehash: e671683cf0ea257bf6170a3c2e41b8d0db503450
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 1f63e9a5a42a7a64ae69f50694668030c5421872
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="profiling-in-visual-studio"></a>Profilage dans Visual Studio
 
@@ -15,7 +16,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-feature-tour">
+        <a href="https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -33,7 +34,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/profiling/beginners-guide-to-performance-profiling">
+        <a href="https://docs.microsoft.com/visualstudio/profiling/beginners-guide-to-performance-profiling">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -51,7 +52,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
         </a>
     </li>
     <li>
-        <a href="../profiling/beginners-guide-to-performance-profiling.md#video">
+        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -69,7 +70,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage">
+        <a href="https://docs.microsoft.com/visualstudio/profiling/memory-usage">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -87,7 +88,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
         </a>
     </li>
         <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/profiling/application-timeline">
+        <a href="https://docs.microsoft.com/visualstudio/profiling/application-timeline">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -105,7 +106,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/profiling/network-usage">
+        <a href="https://docs.microsoft.com/visualstudio/profiling/network-usage">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -123,7 +124,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/gpu-usage">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/gpu-usage">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -141,7 +142,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/profiling/analyze-energy-use-in-store-apps">
+        <a href="https://docs.microsoft.com/visualstudio/profiling/analyze-energy-use-in-store-apps">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -151,7 +152,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Analyser l’utilisation de l’énergie (applications du Windows Store)</h3>
+                        <h3>Analyser la consommation d’énergie (applications UWP)</h3>
                     </div>
                 </div>
             </div>
@@ -159,7 +160,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/profiling/what-s-new-in-profiling-tools">
+        <a href="https://docs.microsoft.com/visualstudio/profiling/what-s-new-in-profiling-tools">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

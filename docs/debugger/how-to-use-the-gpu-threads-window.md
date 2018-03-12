@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,17 +16,20 @@ dev_langs:
 - VB
 - FSharp
 - C++
-helpviewer_keywords: debugger, GPU threads window
+helpviewer_keywords:
+- debugger, GPU threads window
 ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23bb4ee4550f70681152fc14cc66a642597125ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: b4782a1650034424d2616e47f46e07cec4d01ae5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Comment : utiliser la fenêtre Threads GPU
 Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui s'exécutent sur le GPU dans l'application que vous déboguez. Pour plus d’informations sur les applications qui s’exécutent sur le GPU, consultez [présentation de C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
@@ -64,7 +68,7 @@ Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui
   
 5.  Définissez un point d'arrêt dans le code GPU.  
   
-6.  Dans la barre de menus, choisissez **déboguer**, **démarrer le débogage**. Attendez que l'application atteigne le point d'arrêt.  
+6.  Dans la barre de menus, choisissez **Débogage**, puis **Démarrer le débogage**. Attendez que l'application atteigne le point d'arrêt.  
   
 7.  Une barre de menus, choisissez **déboguer**, **Windows**, **Threads GPU**.  
   

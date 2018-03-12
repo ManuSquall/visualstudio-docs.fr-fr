@@ -13,16 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Word [Office development in Visual Studio], displaying documents in print preview
 - documents [Office development in Visual Studio], displaying in print preview
-ms.assetid: 96c7faea-9c5c-42b4-a009-08894a6d15c9
-caps.latest.revision: "39"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 79facc7d8232a1dac5adc5f9e57848d4a206ba82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c4da179b2ead999634f77d8c53f32e458326e961
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Comment : afficher des documents en mode Aperçu avant impression par programmation
   Si votre solution génère un rapport, vous pouvez afficher ce dernier pour l’utilisateur en mode Aperçu avant impression.  

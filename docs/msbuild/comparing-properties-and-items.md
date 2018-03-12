@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: msbuild, msbuild properties
+helpviewer_keywords:
+- msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
-caps.latest.revision: "16"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1a0f6df56cebe769ec514abea49ade0083c512e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 79f4bbdf57497791c94ed0cafbc990f832ed6085
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="comparing-properties-and-items"></a>Comparaison des propriétés et des éléments
 Les propriétés et les éléments MSBuild permettent de transmettre des informations aux tâches, d’évaluer des conditions et de stocker les valeurs qui peuvent être référencées dans le fichier projet.  
@@ -42,7 +45,7 @@ Les propriétés et les éléments MSBuild permettent de transmettre des informa
 </PropertyGroup>  
 ```  
   
- La propriété `BuildDependsOn` est généralement utilisée comme argument d’un attribut `DependsOnTargets` cible, le convertissant effectivement en une liste d’éléments. Cette propriété peut être remplacée pour ajouter une cible ou modifier l’ordre d’exécution des cibles. Par exemple :  
+ La propriété `BuildDependsOn` est généralement utilisée comme argument d’un attribut `DependsOnTargets` cible, le convertissant effectivement en une liste d’éléments. Cette propriété peut être remplacée pour ajouter une cible ou modifier l’ordre d’exécution des cibles. Par exemple :  
   
 ```xml  
 <PropertyGroup>  

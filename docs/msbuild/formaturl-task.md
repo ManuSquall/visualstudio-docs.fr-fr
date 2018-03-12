@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,17 +16,19 @@ helpviewer_keywords:
 - MSBuild, FormatUrl task
 - FormatUrl task [MSBuild]
 ms.assetid: 81114b67-520f-43b5-8891-224f68a78516
-caps.latest.revision: "5"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef3882e29a1fb2b65d0fba454ab1c0f45a62fc02
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 8b353984812b8ce586054771355f023d433312b3
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="formaturl-task"></a>FormatUrl, tâche
+# <a name="formaturl-task"></a>Tâche FormatUrl
 Convertit une URL en URL au format correct.  
   
 ## <a name="parameters"></a>Paramètres  
@@ -37,9 +39,9 @@ Convertit une URL en URL au format correct.
 |`InputUrl`|Paramètre `String` facultatif.<br /><br /> Spécifie l’URL à mettre en forme.|  
 |`OutputUrl`|Paramètre de sortie `String` facultatif.<br /><br /> Spécifie l’URL mise en forme.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
- [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
+ [Tâches](../msbuild/msbuild-tasks.md)   
+ [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)

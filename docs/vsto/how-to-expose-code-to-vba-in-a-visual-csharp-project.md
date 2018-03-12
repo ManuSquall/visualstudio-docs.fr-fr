@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 - VBA [Office development in Visual Studio], exposing code in document-level customizations
 - document-level customizations [Office development in Visual Studio], exposing code
 - exposing code to VBA
-ms.assetid: 56d5894b-4823-42f4-8c7e-d8739b859c52
-caps.latest.revision: "25"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a52060f1a1b2200109c5003321857915d95bd12a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 1b750137a52d30688f69c825f83f72c7cbeebe45
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Comment : exposer du code à VBA dans un projet Visual C#
   Vous pouvez exposer du code dans un projet Visual c# dans Visual Basic pour Applications (VBA) si vous souhaitez que les deux types de code interagissent entre eux.  
@@ -81,7 +82,7 @@ ms.lasthandoff: 10/31/2017
   
      Pour plus d’informations sur les éléments hôtes, consultez [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
-6.  Extraire une interface à partir de la classe que vous exposez à VBA. Dans le **extraire l’Interface** boîte de dialogue, sélectionnez les membres publics que vous souhaitez inclure dans la déclaration d’interface. Pour plus d’informations, consultez [refactorisation d’extraction de Interface &#40; C &#35; &#41; ](/visualstudio/csharp-ide/extract-interface-refactoring-csharp).  
+6.  Extraire une interface à partir de la classe que vous exposez à VBA. Dans le **extraire l’Interface** boîte de dialogue, sélectionnez les membres publics que vous souhaitez inclure dans la déclaration d’interface. Pour plus d’informations, consultez [refactorisation d’extraction de Interface](../ide/reference/extract-interface.md).
   
 7.  Ajouter le **public** mot clé à la déclaration d’interface.  
   

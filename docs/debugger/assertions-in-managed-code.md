@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -22,15 +23,17 @@ helpviewer_keywords:
 - Trace.Listeners property
 - assertions, managed code
 ms.assetid: 70ab2522-6486-4076-a1a9-e0f11cd0f3a1
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 283903076a5f6e465f3cb87be7d6710af8d914ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- dotnet
+ms.openlocfilehash: 90e39956f777ddd79fad080d8bb6d13b30d4ccd0
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="assertions-in-managed-code"></a>Assertions dans du code managé
 Une assertion, ou instruction `Assert`, teste une condition, que vous spécifiez en tant qu'argument à l'instruction `Assert`. Si la condition a la valeur true, aucune action ne se produit. Si la condition a la valeur false, l'assertion échoue. S'il est exécuté avec une version Debug, votre programme passe en mode arrêt.  
@@ -67,13 +70,13 @@ Function IntegerDivide(ByVal dividend As Integer, ByVal divisor As Integer) As I
 End Function  
 ```  
   
-```CSharp  
+```csharp  
 int IntegerDivide ( int dividend , int divisor )  
     { Debug.Assert ( divisor != 0 );  
         return ( dividend / divisor ); }  
 ```  
   
- Lorsque vous exécutez ce code sous le débogueur, l'instruction d'assertion est évaluée, mais dans la version Release, la comparaison n'est pas faite, donc il n'y a pas de charge mémoire supplémentaire.  
+ Lorsque vous exécutez ce code sous le débogueur, l’instruction d’assertion est évaluée, mais dans la version Release, la comparaison n’est pas faite, donc il n’y a pas de charge mémoire supplémentaire.  
   
  Voici un autre exemple. Vous avez une classe qui implémente un compte courant de la manière suivante :  
   
@@ -84,7 +87,7 @@ Debug.Assert(amount <= balance)
 SavingsAccount.Withdraw(amount)  
 ```  
   
-```CSharp  
+```csharp  
 float balance = savingsAccount.Balance;  
 Debug.Assert ( amount <= balance );  
 savingsAccount.Withdraw ( amount );  
@@ -99,7 +102,7 @@ Trace.Assert(amount <= balance)
 SavingsAccount.Withdraw(amount)  
 ```  
   
-```CSharp  
+```csharp  
 float balance = savingsAccount.Balance;  
 Trace.Assert ( amount <= balance );  
 savingsAccount.Withdraw ( amount );  
@@ -119,7 +122,7 @@ savingsAccount.Withdraw ( amount );
 Debug.Assert (meas(i) <> 0 )  
 ```  
   
-```CSharp  
+```csharp  
 // unsafe code  
 Debug.Assert (meas(i) != 0 );  
 ```  
@@ -131,7 +134,7 @@ temp = meas( i )
 Debug.Assert (temp <> 0)  
 ```  
   
-```CSharp  
+```csharp  
 temp = meas( i );  
 Debug.Assert ( temp != 0 );  
 ```  
@@ -155,7 +158,7 @@ Debug.Assert ( temp != 0 );
   
 -   `/d:TRACE` en Visual C# et C++  
   
- Si vous avez besoin d'utiliser les méthodes Debug dans une version Release C# ou Visual Basic, vous devez définir le symbole DEBUG dans votre configuration Release.  
+ Si vous avez besoin d’utiliser les méthodes Debug dans une version Release C# ou Visual Basic, vous devez définir le symbole DEBUG dans votre configuration Release.  
   
  C++ ne prend pas en charge les méthodes de classe <xref:System.Diagnostics.Debug>. Vous pouvez obtenir le même effet en utilisant la <xref:System.Diagnostics.Trace> classe avec la compilation conditionnelle, telle que `#ifdef DEBUG`... `#endif`. Vous pouvez définir ces symboles dans le  **\<projet > Pages de propriétés** boîte de dialogue. Pour plus d’informations, consultez [modification des paramètres de projet pour une Configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) ou [modification des paramètres de projet pour une Configuration C ou C++ déboguer](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
@@ -167,19 +170,19 @@ Debug.Assert(stacksize > 0)
 Trace.Assert(stacksize > 0)  
 ```  
   
-```CSharp  
+```csharp  
 Debug.Assert ( stacksize > 0 );  
 Trace.Assert ( stacksize > 0 );   
 ```  
   
- Le deuxième et le troisième arguments, s'ils sont présents, doivent être des chaînes. Si vous appelez <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> ou <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> avec deux ou trois arguments, le premier argument est une condition. La méthode vérifie la condition et, si le résultat est false, renvoie les deuxième et troisième chaînes. L'exemple suivant montre <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> et <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName> utilisés avec deux arguments.  
+ Le deuxième et le troisième arguments, s’ils sont présents, doivent être des chaînes. Si vous appelez <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> ou <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> avec deux ou trois arguments, le premier argument est une condition. La méthode vérifie la condition et, si le résultat est false, renvoie les deuxième et troisième chaînes. L'exemple suivant montre <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> et <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName> utilisés avec deux arguments.  
   
 ```VB  
 Debug.Assert(stacksize > 0, "Out of stack space")  
 Trace.Assert(stacksize > 0, "Out of stack space")  
 ```  
   
-```CSharp  
+```csharp  
 Debug.Assert ( stacksize > 0, "Out of stack space" );  
 Trace.Assert ( stacksize > 0, "Out of stack space" );  
 ```  
@@ -192,7 +195,7 @@ Trace.Assert(stacksize > 0, "Out of stack space. Bytes left:" , Format(size, "G"
 Trace.Assert(stacksize > 0, "Out of stack space. Bytes left:", "inctemp failed on third call" )  
 ```  
   
-```CSharp  
+```csharp  
 Debug.Assert ( stacksize > 100, "Out of stack space" , "Failed in inctemp" );  
 Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );   
 ```  

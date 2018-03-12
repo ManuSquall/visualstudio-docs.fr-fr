@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency graphs, creating path aliases
@@ -19,16 +18,17 @@ helpviewer_keywords:
 - dependency graphs, customizing
 - graph documents, grouping nodes
 - dependency graphs, assigning categories and properties
-ms.assetid: a2e141f4-4fd8-4611-b236-6b9e7bc54fc1
-caps.latest.revision: "93"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
-ms.openlocfilehash: f270966c5c91dab1a492a775faca3da220a98d6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: a0000482b34ea3c98ac6467cbebccc83bd8b5a74
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personnaliser des cartes de code en modifiant les fichiers DGML
 Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Directed Graph Markup Language) (.dgml) d'une carte. Par exemple, vous pouvez modifier des éléments pour spécifier des styles personnalisés, affecter des propriétés et des catégories à des éléments de code et des liens, ou lier des documents ou des URL à des éléments de code ou des liens. Pour plus d’informations sur les éléments DGML, consultez [référence de balisage langage DGML (Directed Graph)](../modeling/directed-graph-markup-language-dgml-reference.md).  
@@ -256,9 +256,9 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
   
     -   `TargetType="Node` &#124; `Link | Graph"`  
   
-    -   `GroupLabel="`*NameInLegendBox*`"`  
+    -   `GroupLabel="` *NameInLegendBox* `"`  
   
-    -   `ValueLabel="`*NameInStylePickerBox*`"`  
+    -   `ValueLabel="` *NameInStylePickerBox* `"`  
   
      Pour appliquer un style personnalisé à tous les types cibles, n'utilisez pas de condition.  
   
@@ -294,7 +294,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
   
      <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
   
-     <Operator>:: = « < » &#124; «\<= » &#124; « = » &#124; « > = » &#124; « > » &#124; « ! = » &#124; « ou » &#124; « et » &#124; « + » &#124; « * » &#124; « / » &#124; "-"  
+     <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
      <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
   
@@ -302,7 +302,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
   
      <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
   
-     <PropertyGet>:: = Identificateur  
+     <PropertyGet> ::= Identifier  
   
      <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
   

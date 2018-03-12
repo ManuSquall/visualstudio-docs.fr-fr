@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - language service context
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - language service context
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79f58bf66e5d0a137738d0a2cc90f67a287246dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4dbee7d2998170277369f48c3b912307d2c7e414
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Fournissant un contexte de Service de langage à l’aide de l’API héritée
 Il existe deux options pour un service de langage fournir le contexte de l’utilisateur à l’aide du [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal : fournissent un contexte de marqueur de texte, ou fournir un contexte utilisateur tous les. Les différences sont décrites ici.  

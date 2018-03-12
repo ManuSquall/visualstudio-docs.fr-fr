@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -27,26 +28,26 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Windows Forms controls
 - Windows Forms controls [Office development in Visual Studio], about Windows Forms controls
 - Office applications [Office development in Visual Studio], Windows Forms
-ms.assetid: a959506b-5038-49c2-831a-d63c6d6b797d
-caps.latest.revision: "76"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: b8d086aec822d0e2e9ecc80834703cc5481f9eef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 898d0325b352f3ea8982dc68cf5a99a07181a31c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Vue d'ensemble des contrôles Windows Forms dans les documents Office
   Les contrôles Windows Forms sont des objets avec lesquels les utilisateurs peuvent interagir pour entrer ou manipuler des données. Dans des projets au niveau du document pour Microsoft Office Excel et Microsoft Office Word, vous pouvez ajouter des contrôles Windows Forms au document ou au classeur dans votre projet au moment du design, ou vous pouvez ajouter ces contrôles par programmation au moment de l’exécution. Vous pouvez ajouter ces contrôles par programmation à tout document ou feuille de calcul ouvert(e) au moment de l’exécution dans un complément VSTO pour Excel ou Word.  
   
- Pour plus d'informations, consultez [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+ Pour plus d'informations, consultez [Comment : ajouter des contrôles Windows Forms à des documents Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="using-windows-forms-controls"></a>Utilisation des contrôles Windows Forms  
- Vous pouvez ajouter des contrôles Windows Forms à des documents et à des éléments d’interface utilisateur personnalisables, y compris des volets d’actions, des volets Office personnalisés et des Windows Forms. Les contrôles Windows Forms ont généralement le même comportement dans des documents que sur ces autres éléments d’interface utilisateur, mais il existe certaines différences. Pour plus d'informations, consultez [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
+ Vous pouvez ajouter des contrôles Windows Forms à des documents et à des éléments d’interface utilisateur personnalisables, y compris des volets d’actions, des volets Office personnalisés et des Windows Forms. Les contrôles Windows Forms ont généralement le même comportement dans des documents que sur ces autres éléments d’interface utilisateur, mais il existe certaines différences. Pour plus d'informations, consultez [Limitations des contrôles Windows Forms dans les documents Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
   
  La décision d’ajouter des contrôles Windows Forms à un document ou à un autre élément d’interface utilisateur dépend de plusieurs facteurs. Lors de la conception de l’interface utilisateur de votre solution, vous pouvez utiliser les contrôles Windows Forms comme décrit dans le tableau suivant.  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="adding-windows-forms-controls-programmatically"></a>Ajout de contrôles Windows Forms par programmation  
  Vous pouvez ajouter des contrôles Windows Forms à des documents Word et des feuilles de calcul Excel au moment de l’exécution. Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] fournit des méthodes d’assistance pour ajouter les contrôles Windows Forms les plus courants. Ces méthodes d’assistance vous permettent d’ajouter rapidement des contrôles à votre document Office et d’accéder à la fonctionnalité Windows Forms et Office combinée de ces contrôles.  
   
- Pour plus d'informations, consultez [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ## <a name="using-windows-forms-controls-in-document-level-projects"></a>Utilisation de contrôles Windows Forms dans des projets au niveau du document  
  Certains aspects liés à l’utilisation des contrôles Windows Forms sur les documents sont uniques aux projets au niveau du document, qui vous permettent de concevoir l’interface utilisateur de votre document en utilisant le concepteur Visual Studio.  
@@ -117,7 +118,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="preventing-old-data-from-appearing-in-excel-workbooks-during-loading"></a>Empêcher des données anciennes d’apparaître dans les classeurs Excel pendant le chargement  
  Lorsque vous ajoutez des contrôles Windows Forms à des documents ou des feuilles de calcul au moment du design, les contrôles restent dans le document quand l’utilisateur le ferme. Les contrôles ajoutés au moment du design sont également appelés *contrôles statiques*.  
   
- Quand vous ouvrez un classeur Excel qui contient des contrôles statiques, il affiche une bitmap du contrôle dans un contrôle ActiveX jusqu’à ce que le code de personnalisation s’exécute et charge le contrôle proprement dit. Excel crée cette bitmap et la stocke dans le classeur chaque fois que celui-ci est enregistré. La bitmap affiche le contrôle tel qu’il apparaissait la dernière fois que le classeur a été enregistré, y compris les données affichées par le contrôle. Pour plus d’informations sur le contrôle ActiveX qui contient des contrôles Windows Forms et des bitmaps, consultez [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
+ Quand vous ouvrez un classeur Excel qui contient des contrôles statiques, il affiche une bitmap du contrôle dans un contrôle ActiveX jusqu’à ce que le code de personnalisation s’exécute et charge le contrôle proprement dit. Excel crée cette bitmap et la stocke dans le classeur chaque fois que celui-ci est enregistré. La bitmap affiche le contrôle tel qu’il apparaissait la dernière fois que le classeur a été enregistré, y compris les données affichées par le contrôle. Pour plus d’informations sur le contrôle ActiveX qui contient des contrôles Windows Forms et des bitmaps, consultez [Limitations des contrôles Windows Forms dans les documents Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
   
  Dans certaines conditions, par exemple lorsque l’utilisateur ouvre le classeur en mode Création, le code n’est pas chargé et seule la bitmap est affichée. En outre, si l’utilisateur ouvre le classeur sur un ordinateur sur lequel le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] n’est pas installé, la personnalisation ne peut pas s’exécuter pour charger les contrôles et seule la bitmap du contrôle est visible. Vous devez toujours supprimer les informations personnelles des contrôles dans les classeurs avant de les enregistrer et de les envoyer à un autre utilisateur, pour éviter toute divulgation involontaire.  
   
@@ -139,7 +140,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Pour ajouter le contrôle en tant que forme flottante, utilisez une surcharge qui accepte les coordonnées de gauche et supérieure du contrôle.  
   
- Pour plus d'informations, consultez [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Si vous ouvrez un modèle Word dans le concepteur Visual Studio, les contrôles non inline sur le modèle ne seront peut-être pas visibles, car Visual Studio ouvre le modèle en mode **Normal** . Pour afficher les contrôles, basculez en mode **Page**.  
   

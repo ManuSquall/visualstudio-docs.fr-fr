@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,15 +17,17 @@ helpviewer_keywords:
 - MSBuild, command line reference
 - msbuild.exe
 ms.assetid: edaa65ec-ab8a-42a1-84cb-d76d5b2f4584
-caps.latest.revision: "57"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07beb4cfbc8acad0184ff93d12121699f3b27b03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 47179698fe7a65552c10ddf24c2f49733f60fd97
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-command-line-reference"></a>Informations de référence sur la ligne de commande MSBuild
 Quand vous utilisez MSBuild.exe pour générer un fichier projet ou solution, vous pouvez inclure plusieurs commutateurs pour définir différents aspects du processus.  
@@ -64,7 +66,7 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ### <a name="switches-for-loggers"></a>Commutateurs pour les journaux  
   
-|Commutateur|Forme abrégée|Description|  
+|Basculer|Forme abrégée|Description|  
 |------------|----------------|-----------------|  
 |/consoleloggerparameters:<br /><br /> `parameters`|/clp:`parameters`|Passe les paramètres que vous spécifiez à l'enregistreur d'événements de console, qui affiche les informations de build dans la fenêtre de console. Vous pouvez spécifier les paramètres suivants :<br /><br /> -   **PerformanceSummary**. Affiche le temps consacré aux tâches, cibles et projets.<br />-   **Summary**. affiche le résumé des erreurs et avertissements à la fin.<br />-   **NoSummary**. n'affiche pas le résumé des erreurs et avertissements à la fin.<br />-   **ErrorsOnly**. affiche uniquement les erreurs.<br />-   **WarningsOnly**. affiche uniquement les avertissements.<br />-   **NoItemAndPropertyList**. n'affiche pas la liste des éléments et des propriétés qui apparaîtrait au début de chaque génération de projet si le niveau de commentaires défini était `diagnostic`.<br />-   **ShowCommandLine**. affiche les messages `TaskCommandLineEvent`.<br />-   **ShowTimestamp**. affiche l'horodatage sous forme de préfixe des messages.<br />-   **ShowEventId**. affiche l'ID d'événement pour chaque message et événement (démarré et terminé).<br />-   **ForceNoAlign**. n'adapte pas le texte à la taille de la mémoire tampon de la console.<br />-   **DisableConsoleColor**. utilise les couleurs de console par défaut pour tous les messages de journalisation.<br />-   **DisableMPLogging**. désactive le style de journalisation multiprocesseur de la sortie lors d'une exécution en mode non multiprocesseur.<br />-   **EnableMPLogging**. active le style de journalisation multiprocesseur même lors d'une exécution en mode non multiprocesseur. Ce style de journalisation est activé par défaut.<br />-   **Verbosity**. substitue le paramètre **/verbosity** de cet enregistreur d’événements.<br /><br /> Utilisez un point-virgule ou une virgule pour séparer plusieurs paramètres, comme dans l'exemple suivant :<br /><br /> `/consoleloggerparameters:PerformanceSummary;NoSummary /verbosity:minimal`|  
 |/distributedFileLogger|/dfl|consigne la sortie de génération de chaque nœud MSBuild dans son propre fichier. L'emplacement initial de ces fichiers est le répertoire actif. Par défaut, les fichiers sont nommés « MSBuild*NodeId*.log ». Vous pouvez utiliser le commutateur **/fileLoggerParameters** pour spécifier l’emplacement des fichiers et d’autres paramètres pour l’enregistreur d’événements des fichiers.<br /><br /> Si vous nommez un fichier journal à l’aide du commutateur **/fileLoggerParameters**, l’enregistreur d’événements distribué utilise ce nom comme modèle et y ajoute l’ID de nœud au moment de créer un fichier journal pour chaque nœud.|  

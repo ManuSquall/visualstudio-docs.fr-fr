@@ -4,25 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: urn:schemas-microsoft-com:asm.v2#assembly
+f1_keywords:
+- urn:schemas-microsoft-com:asm.v2#assembly
 dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <assembly> element [ClickOnce application manifest]
+helpviewer_keywords:
+- <assembly> element [ClickOnce application manifest]
 ms.assetid: 51410569-10f9-4c0a-96b5-d39185edbefc
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: fafc5df1a2aa32fa60c1f41077f7e3fff29ddef7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload:
+- multiple
+ms.openlocfilehash: c94d70f2be28a6a420d683335c99ee0466a52114
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;assembly&gt; élément (déploiement ClickOnce)
 L’élément de niveau supérieur pour le manifeste d’application.  

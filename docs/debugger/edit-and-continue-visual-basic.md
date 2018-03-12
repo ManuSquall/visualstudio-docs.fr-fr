@@ -23,11 +23,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c3dc1b7e6eee583494070cc9ebb151181dc805da
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 82ec43b02895c2067b04f52f893184a82dd0f36b
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-basic"></a>Modifier & Continuer (Visual Basic)
 La fonctionnalité Modifier & Continuer destinée au débogage de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] vous permet d'apporter des modifications à votre code pendant qu'il s'exécute en mode Arrêt. Après avoir modifié le code, vous pouvez continuer son exécution avec les nouvelles modifications en place et observer leurs effets.  
@@ -41,7 +42,7 @@ La fonctionnalité Modifier & Continuer destinée au débogage de [!INCLUDE[vbpr
  Modifier & Continuer est prise en charge dans les applications UWP pour Windows 10 et x86 et x64 des applications qui ciblent le .NET Framework 4.6 bureau ou versions ultérieures (.NET Framework est une version de bureau).
 
  > [!NOTE]
- > Plateformes et des applications non prises en charge incluent ASP.NET 5, émulateur de Silverlight 5, Windows Phone et Windows Phone et Windows 8.1.
+ > Plateformes et des applications non prises en charge incluent ASP.NET 5, Silverlight 5 et Windows 8.1.
   
  Modifier & Continuer n'est pas pris en charge lorsque vous démarrez le débogage à l’aide de **attacher au processus**. Modifier & Continuer n'est pas prise en charge pour le code optimisé ou mixte du code managé et natif. Pour plus d’informations, consultez [pris en charge les modifications de Code (c# et Visual Basic](../debugger/supported-code-changes-csharp.md).
   

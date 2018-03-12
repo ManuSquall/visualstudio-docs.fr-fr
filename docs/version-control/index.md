@@ -7,14 +7,16 @@ author: steved0x
 ms.manager: douge
 ms.author: sdanie
 ms.date: 12/15/2017
-ms.topic: article
+ms.topic: landing-page
 ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
-ms.openlocfilehash: 471e0cf7640f07c946e2808621233c6ae20b35c7
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload:
+- multiple
+ms.openlocfilehash: 428139af8680bc60f4456367d1a17d4c97874efc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="version-control-in-visual-studio"></a>Gestion de version dans Visual Studio
 

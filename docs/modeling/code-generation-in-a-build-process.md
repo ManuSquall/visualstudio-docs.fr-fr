@@ -4,21 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
-caps.latest.revision: "28"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: 70200da27d102f0ec6b8231a680965e8ee420d44
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8808fca81da991727fa439aae10d0e3541e81389
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>Génération de code dans un processus de génération
 [La transformation de texte](../modeling/code-generation-and-t4-text-templates.md) peut être appelé dans le cadre de la [processus de génération](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution. Il existe des tâches de génération qui sont spécialisées pour la transformation de texte. Les tâches de génération T4 exécutent les modèles de texte au moment du design. En outre, elles compilent les modèles de texte (prétraités) au moment de l'exécution.  
@@ -271,7 +271,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
   
  Ces directives obtiennent des valeurs à partir de T4parameterValues dans MSBuild et les hôtes Visual Studio.  
   
-## <a name="q--a"></a>Q et R  
+## <a name="q--a"></a>Questions et réponses  
  **Pourquoi voudrais-je transformer des modèles dans le serveur de builds ? J’ai déjà transformé des modèles dans Visual Studio avant d’archiver mon code.**  
   
  Si vous mettez à jour un fichier inclus ou tout autre fichier lu par le modèle, Visual Studio ne transforme pas le fichier automatiquement. La transformation des modèles de la build permet de s’assurer que tout est à jour.  

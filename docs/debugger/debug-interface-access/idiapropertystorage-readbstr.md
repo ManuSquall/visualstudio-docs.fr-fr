@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaPropertyStorage::ReadBSTR
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaPropertyStorage::ReadBSTR
 ms.assetid: 7214643b-3286-48ed-90aa-0fe95b4cae5b
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93ab7271ccef1819e16e4cdb4c690f82bfaeec35
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 7c8fc8520791228158ad336a7bb709cdbf83a5dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 Lit `BSTR` valeurs dans un jeu de propriétés.  
@@ -42,7 +47,7 @@ HRESULT ReadBSTR (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `BSTR`.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  A `BSTR` est défini par Windows en tant qu’une chaîne de caractères de large terminant par zéro.  
   
 ## <a name="see-also"></a>Voir aussi  

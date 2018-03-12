@@ -5,25 +5,28 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: instanceof_JavaScriptKeyword
+f1_keywords:
+- instanceof_JavaScriptKeyword
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: instanceOf operator
+helpviewer_keywords:
+- instanceOf operator
 ms.assetid: 92467bdc-56b5-42dc-adbd-a219776454d2
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 672047cb066a812d16edc693638c3d6d8295798b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b2124fe815c89c3c157be3ea729fa7edb9d96b39
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="instanceof-operator-javascript"></a>instanceof, opérateur (JavaScript)
 Retourne une valeur booléenne indiquant si un objet est une instance d'une classe particulière.  
@@ -45,8 +48,8 @@ result = object instanceof class
  `class`  
  Obligatoire. Toute classe d'objets définie.  
   
-## <a name="remarks"></a>Remarques  
- L'opérateur `instanceof` retourne la valeur `true` si `object` est une instance de `class`. Elle retourne `true` si `true` si `class` est présent dans la chaîne prototype de l'objet. Il retourne la valeur `false` si `object` n'est pas une instance de `class`, ou si `object` a la valeur `null`.  
+## <a name="remarks"></a>Notes  
+ L'opérateur `instanceof` retourne la valeur `true` si `object` est une instance de `class`. Elle retourne `true` si `class` est présent dans la chaîne de prototype de l’objet. Il retourne la valeur `false` si `object` n'est pas une instance de `class`, ou si `object` a la valeur `null`.  
   
 ## <a name="example"></a>Exemple  
  L'exemple suivant illustre l'utilisation de l'opérateur `instanceof`.  
@@ -78,7 +81,7 @@ document.write(objTest(obj));
 // obj is not an instance of Array  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
 ## <a name="see-also"></a>Voir aussi  

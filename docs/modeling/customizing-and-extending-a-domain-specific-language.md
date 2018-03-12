@@ -4,19 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language Tools, creating solutions
-ms.assetid: b155eb79-4e0a-4a99-a6f2-ca4f811fb5ca
-caps.latest.revision: "48"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: efdd7f5358ce0ec4afd32ebaa8ff1fd8d117dc47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+helpviewer_keywords:
+- Domain-Specific Language Tools, creating solutions
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7617deb73ecaec835b0100d243b75bc26fd54a17
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personnalisation et extension d'un langage spécifique à un domaine
 Visual Studio de modélisation et de visualisation SDK (VMSDK) fournit plusieurs niveaux à laquelle vous pouvez définir des outils de modélisation :  
@@ -56,7 +57,7 @@ Visual Studio de modélisation et de visualisation SDK (VMSDK) fournit plusieurs
 |Supprimer, redéfinir la parenté ou rétablir les liens éléments connexes lorsqu’un élément est supprimé.|Définir le **propage supprimer** valeur d’un rôle de relation. Pour obtenir des effets plus complexes, substituez `ShouldVisitRelationship` et `ShouldVisitRolePlayer` méthodes dans le `MyDslDeleteClosure` (classe), défini dans **DomainModel.cs**<br /><br /> Consultez [personnaliser le comportement de suppression](../modeling/customizing-deletion-behavior.md)|  
 |Conserver la disposition de forme et l’apparence de copie et de glisser-déplacer.|Ajouter les formes et connecteurs à copié `ElementGroupPrototype`. La méthode la plus commode de substitution est`ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md).|  
 |Coller des formes à un emplacement choisi, par exemple la position actuelle du curseur.|Substituer `ClipboardCommandSet.ProcessOnCopy()` à utiliser la version spécifique à l’emplacement de `ElementOperations.Merge().` consultez [personnalisation de comportement de copie](../modeling/customizing-copy-behavior.md).|  
-|Créer des liens supplémentaires lors du collage|Substituer ClipboardCommandSet.ProcessOnPasteCommand()|  
+|Créer des liens supplémentaires lors du collage|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Activer faites glisser et déposez les éléments de ce diagramme et d’autres DSL et Windows|Consultez [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Autoriser une forme ou un outil pour les faire glisser vers une forme enfant, par exemple un port, comme s’il a été déplacé vers le parent.|Définir une Directive d’élément de fusion sur la classe d’objet cible, pour transférer l’objet déplacé vers le parent. Consultez [personnalisation de la création d’élément et le déplacement des](../modeling/customizing-element-creation-and-movement.md).|  
 |Autoriser une forme ou un outil permettant de faire glisser vers une forme et ont des liens supplémentaires ou des objets créés. Par exemple, pour autoriser un commentaire à être déposé sur un élément auquel il doit être lié.|Définir une Directive d’élément de fusion sur la classe de domaine cible et définir les liaisons à générer. Dans les cas complexes, vous pouvez ajouter le code personnalisé. Consultez [personnalisation de la création d’élément et le déplacement des](../modeling/customizing-element-creation-and-movement.md).|  
@@ -71,10 +72,10 @@ Visual Studio de modélisation et de visualisation SDK (VMSDK) fournit plusieurs
 |Intégrer plusieurs DSL afin qu’ils fonctionnent dans le cadre d’une application.|Consultez [intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|  
 |Autoriser votre DSL à être étendue par des tiers et l’extension de contrôle.|[Étendre votre DSL à l’aide de MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Partage de classes entre plusieurs DSL à l’aide d’une bibliothèque DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Définition d’une stratégie de verrouillage pour créer des segments en lecture seule](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
   
-## <a name="see-also"></a>Voir aussi  
- [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)   
- [Écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [SDK de modélisation pour Visual Studio - Langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+## <a name="see-also"></a>Voir aussi
+
+[Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)   
+[Écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
+[SDK de modélisation pour Visual Studio - Langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-

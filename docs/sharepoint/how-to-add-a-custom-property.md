@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.SharePointTools.BDC.Property_Editor
+f1_keywords:
+- VS.SharePointTools.BDC.Property_Editor
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +20,16 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], properties
 - Business Data Connectivity service [SharePoint development in Visual Studio], custom properties
 - BDC [SharePoint development in Visual Studio], custom properties
-ms.assetid: 670c7fff-a8fb-499f-8694-d5aecc432c16
-caps.latest.revision: "10"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: b087ae9f767ed762b6d9269f60f2612127bdc705
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: d616a18850e9635dc580a3a09845640a793ac284
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-a-custom-property"></a>Comment : ajouter une propriété personnalisée
   Vous pouvez ajouter des propriétés personnalisées au modèle à l’aide de la **éditeur de la propriété**. Vous pouvez accéder à ces propriétés dans le code pour récupérer des informations telles que les chaînes de connexion et autres données en cours d’exécution.  

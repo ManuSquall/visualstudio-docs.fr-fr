@@ -12,18 +12,19 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32cd265451609e99c062270aeda0b278b98240d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fd9959fe67097b815a4a86b81b5cf78e468281a5
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 N’utilisez pas les algorithmes de chiffrement cassés
 |||  
 |-|-|  
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|  
 |CheckId|CA5351|  
-|Catégorie|Microsoft.Cryptography|  
+|Category|Microsoft.Cryptography|  
 |Modification avec rupture|Sans rupture|  
   
 > [!NOTE]
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="rule-description"></a>Description de la règle  
  Les algorithmes de chiffrement cassés ne sont pas considérés comme sécurisés, et leur utilisation doit être déconseillée. L’algorithme de hachage MD5 est vulnérable à des attaques par collision connues, bien que la vulnérabilité varie en fonction du contexte d’utilisation.  Les algorithmes de hachage utilisés pour garantir l’intégrité des données (par exemple une signature de fichier ou un certificat numérique) sont particulièrement vulnérables.  Dans ce contexte, des personnes malveillantes peuvent générer deux éléments distincts de données (et donc remplacer des données ordinaires par des données malveillantes) sans modifier la valeur de hachage ou invalider une signature numérique associée.  
   
- Pour les algorithmes de chiffrement :  
+ Pour les algorithmes de chiffrement :  
   
 -   Le chiffrement<xref:System.Security.Cryptography.DES> contient une clé de petite taille qui peut être cassée par la force brute en moins d’une journée.  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Utilisez des options de chiffrement plus fortes :  
   
--   Pour MD5, utilisez des hachages de la famille [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) (par exemple <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+-   Pour MD5, utilisez des hachages de la [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) famille (par exemple, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
 -   Pour DES et RC2, utilisez le chiffrement <xref:System.Security.Cryptography.Aes> .  
   

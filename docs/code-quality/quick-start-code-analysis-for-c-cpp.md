@@ -10,33 +10,19 @@ ms.topic: article
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
-caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 33080a55043f9c88fa8e44a71a863e3a62ab3a1b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ed2f4acfe185039950d627092839b14234cadccd
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>Démarrage rapide : analyse du code pour C/C++
-Vous pouvez améliorer la qualité de votre application en exécutant l'analyse de code de manière régulière sur le code C ou C++. Cela peut vous aider à rechercher les problèmes courants, les violations d'une bonne pratique de programmation ou les défauts difficiles à détecter à travers des tests. Les avertissements d'analyse du code diffèrent des avertissements et des erreurs du compilateur, car l'analyse du code recherche des modèles de codes spécifiques qui sont valides, mais qui peuvent engendrer des problèmes pour vous ou d'autres personnes qui utilisent votre code.  
-  
-## <a name="in-this-topic"></a>Dans cette rubrique  
-  
--   [Configurer des ensembles de règles pour un projet](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_ConfigureRuleSets)  
-  
--   [Exécuter l’analyse du code](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Run)  
-  
--   [Analyser et résoudre les avertissements d’analyse du code](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Analyze)  
-  
--   [Suppression des avertissements de l’analyse du code](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Suppress)  
-  
--   [Créer des éléments de travail pour le code les avertissements d’analyse](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Creating_work_items_for_code_analysis_warnings)  
-  
--   [Explorer et filtrer les résultats d’analyse du code](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Search)  
+# <a name="quickstart-code-analysis-for-cc"></a>Démarrage rapide : Analyse du Code pour C/C++
+Vous pouvez améliorer la qualité de votre application en exécutant l'analyse de code de manière régulière sur le code C ou C++. Cela peut vous aider à rechercher les problèmes courants, les violations d'une bonne pratique de programmation ou les défauts difficiles à détecter à travers des tests. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur, car l'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code.
   
 ##  <a name="BKMK_ConfigureRuleSets"></a>Configurer des ensembles de règles pour un projet  
   
@@ -84,20 +70,18 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
   
 -   Sur le **générer** menu, choisissez **exécuter l’analyse du Code sur** *nom du projet*.  
   
- Le projet ou la solution est compilé et l'analyse du code est exécutée. Les résultats s'affichent dans la fenêtre Analyse du code.  
+ Le projet ou la solution est compilé et l'analyse du code est exécutée. Résultats s’affichent dans la liste d’erreurs.  
   
-##  <a name="BKMK_Analyze"></a>Analyser et résoudre les avertissements d’analyse du code  
- Pour analyser un avertissement spécifique, choisissez le titre de l'avertissement dans la fenêtre Analyse du code. L'avertissement se développe pour afficher des informations supplémentaires sur le problème. Dans la mesure du possible, l'analyse du code affiche les numéros de ligne et la logique d'analyse qui a conduit à l'avertissement. Pour plus d'informations sur l'avertissement, y compris les solutions possibles au problème, choisissez l'identificateur d'avertissement pour afficher la rubrique d'aide du message dans la bibliothèque MSDN.  
-  
- Quand vous développez un avertissement, la ligne de code qui a provoqué l'avertissement est mise en surbrillance dans l'éditeur de code Visual Studio.  
-  
- Après avoir identifié le problème, vous pouvez le résoudre dans votre code. Relancez ensuite l'analyse du code pour vérifier que l'avertissement ne s'affiche plus dans la fenêtre Analyse du code, et que le correctif n'a pas levé de nouveaux avertissements.  
-  
-> [!TIP]
->  Vous pouvez réexécuter l'analyse du code dans la fenêtre Analyse du code. Choisissez le **analyser** bouton et choisissez la portée de l’analyse. Vous pouvez réexécuter l'analyse sur la solution complète ou sur un projet sélectionné.  
-  
+##  <a name="BKMK_Analyze"></a>Analyser et résoudre les avertissements d’analyse du code
+
+Pour analyser un avertissement spécifique, choisissez le titre de l’avertissement dans la liste d’erreurs. L’avertissement se développe pour afficher des informations supplémentaires sur le problème. Dans la mesure du possible, l'analyse du code affiche les numéros de ligne et la logique d'analyse qui a conduit à l'avertissement. Pour plus d’informations sur l’avertissement, y compris les solutions possibles à ce problème, choisissez l’ID d’avertissement pour afficher sa rubrique d’aide en ligne correspondante.
+
+Lorsque vous sélectionnez un avertissement, la ligne de code qui a provoqué l’avertissement est mise en surbrillance dans l’éditeur de code Visual Studio.
+
+Après avoir identifié le problème, vous pouvez le résoudre dans votre code. Ensuite, réexécutez l’analyse du code pour vous assurer que l’avertissement n’apparaît plus dans la liste d’erreurs, et que votre correctif n’a pas généré de n’importe quel nouveaux avertissements.
+
 ##  <a name="BKMK_Suppress"></a> Suppression des avertissements de l’analyse du code  
- Vous pouvez décider, dans certaines situations, de ne pas corriger un avertissement de l'analyse du code. Vous pouvez décider que la résolution de l'avertissement requiert un recodage trop important par rapport à la probabilité que le problème se produise dans une implémentation réelle de votre code. Vous pouvez également estimer que l'analyse utilisée dans l'avertissement est inadéquate pour le contexte particulier. Vous pouvez supprimer des avertissements individuels afin qu'ils n'apparaissent plus dans la fenêtre Analyse du code.  
+ Vous pouvez décider, dans certaines situations, de ne pas corriger un avertissement de l'analyse du code. Vous pouvez décider que la résolution de l'avertissement requiert un recodage trop important par rapport à la probabilité que le problème se produise dans une implémentation réelle de votre code. Vous pouvez également estimer que l'analyse utilisée dans l'avertissement est inadéquate pour le contexte particulier. Vous pouvez supprimer des avertissements individuels afin qu’ils n’apparaissent plus dans la liste d’erreurs.  
   
  Pour supprimer un avertissement :  
   
@@ -114,19 +98,22 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
   
  **Pour créer un élément de travail pour un ou plusieurs avertissements du code C/C++**  
   
-1.  Dans la fenêtre Analyse du code, développez et sélectionnez les avertissements.  
+1.  Dans la liste d’erreurs, développez et sélectionnez les avertissements  
   
-2.  Dans le menu contextuel pour les avertissements, choisissez **créer un élément de travail**, puis choisissez le type d’élément de travail.  
+2.  Dans le menu contextuel pour les avertissements, choisissez **créer un élément de travail**, puis choisissez le type d’élément de travail.
   
 3.  Visual Studio crée un élément de travail unique pour les avertissements sélectionnés et affiche l’élément de travail dans une fenêtre de document de l’IDE.  
   
 4.  Ajoutez des informations supplémentaires, puis choisissez **enregistrer l’élément de travail**.  
   
-##  <a name="BKMK_Search"></a> Explorer et filtrer les résultats d’analyse du code  
- Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.  
+##  <a name="BKMK_Search"></a> Explorer et filtrer les résultats d’analyse du code
+
+Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.  
   
-1.  **Pour filtrer des avertissements par titre ou l’id d’avertissement**: entrez le mot clé dans le **filtre** zone de texte.  
+- **Pour filtrer des avertissements par titre ou l’id d’avertissement**: entrez le mot clé dans la zone de recherche.
   
-2.  **Pour filtrer des avertissements par projet**: dans une solution à projets multiples, choisissez un ou plusieurs projets dans la liste en haut à droite de la fenêtre analyse du Code. Choisissez le nom de la solution pour afficher tous les avertissements.  
-  
-3.  **Pour filtrer des avertissements par niveau de gravité**: par défaut, messages d’analyse du code sont affectés d’une gravité **avertissement**. Vous pouvez affecter le niveau de gravité d’un ou plusieurs messages en tant que **erreur** dans une règle personnalisée définie. Choisissez **avertissement** ou **erreur** pour afficher uniquement les messages qui sont affectés à la gravité correspondante. Choisissez **tous les** pour afficher tous les messages.
+- **Pour filtrer des avertissements par niveau de gravité**: par défaut, messages d’analyse du code sont affectés d’une gravité **avertissement**. Vous pouvez affecter le niveau de gravité d’un ou plusieurs messages en tant que **erreur** dans une règle personnalisée définie. Sur le **gravité** colonne de la **liste d’erreurs**, choisissez la flèche déroulante, puis sur l’icône de filtre. Choisissez **avertissement** ou **erreur** pour afficher uniquement les messages qui sont affectés à la gravité correspondante. Choisissez **sélectionner tout** pour afficher tous les messages.
+
+## <a name="see-also"></a>Voir aussi
+
+[Analyse du code pour C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

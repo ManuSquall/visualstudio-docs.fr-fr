@@ -18,25 +18,26 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 00222c71e537856d420c6472efb104a8c928237e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc1d8c2ea663862e44b3092b0e2b8489eff3df6f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122 : N'exposez pas indirectement des méthodes avec des demandes de liaison
 |||  
 |-|-|  
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|  
 |CheckId|CA2122|  
-|Catégorie|Microsoft.Security|  
+|Category|Microsoft.Security|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
  Un membre public ou protégé a un [les demandes de liaison](/dotnet/framework/misc/link-demands) et est appelé par un membre qui n’effectue pas de vérifications de sécurité.  
   
 ## <a name="rule-description"></a>Description de la règle  
- Une demande de liaison vérifie uniquement les autorisations de l'appelant immédiat. Si un membre `X` n’effectue des demandes de sécurité aucun de ses appelants et appelle un code protégé par une demande de liaison, un appelant sans l’autorisation nécessaire peut utiliser `X` pour accéder au membre protégé.  
+ Une demande de liaison vérifie uniquement les autorisations de l’appelant immédiat. Si un membre `X` n’effectue des demandes de sécurité aucun de ses appelants et appelle un code protégé par une demande de liaison, un appelant sans l’autorisation nécessaire peut utiliser `X` pour accéder au membre protégé.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Ajouter une sécurité [données et modélisation](/dotnet/framework/data/index) ou demande de liaison au membre afin qu’il ne fournit plus accès non sécurisé au membre protégé par demande de liaison.  

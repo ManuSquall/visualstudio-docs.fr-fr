@@ -4,30 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
 helpviewer_keywords:
 - <BuildOnLoad> element [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab3744d81f99c394a2633854a0ec24b76e665ecd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 9b3fc7842e71ff1bff3bd3e362f0c12afcf4292f
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (modèles Visual Studio)
 Spécifie s’il faut générer le projet immédiatement après sa création.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<BuildProjectOnLoad >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,7 +43,7 @@ Spécifie s’il faut générer le projet immédiatement après sa création.
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -55,7 +59,7 @@ Spécifie s’il faut générer le projet immédiatement après sa création.
   
  Le texte doit être `true` ou `false`, indiquant s’il faut générer le projet immédiatement après sa création.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `BuildProjectOnLoad`est un attribut facultatif. La valeur par défaut est `false`.  
   
 ## <a name="example"></a>Exemple  
@@ -69,7 +73,7 @@ Spécifie s’il faut générer le projet immédiatement après sa création.
         <Description>A basic template</Description>  
         <Icon>TemplateIcon.ico</Icon>  
         <ProjectType>CSharp</ProjectType>  
-        <BuildProjectOnload>true</BuildProjectOnLoad>  
+        <BuildProjectOnLoad>true</BuildProjectOnLoad>  
     </TemplateData>  
     <TemplateContent>  
         <Project File="MyTemplate.csproj">  

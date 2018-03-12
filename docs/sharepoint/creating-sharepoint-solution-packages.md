@@ -13,16 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 - packages [SharePoint development in Visual Studio]
-ms.assetid: 6b1f1fbf-fa9c-453d-80af-36ec9829677a
-caps.latest.revision: "25"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f21356c34a94540d20be2bb9fa092bff270f1a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ee3da66dd8e683748198992041bec5a8139cb7e9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-sharepoint-solution-packages"></a>Création de packages de solution SharePoint
   À l’aide du Concepteur de packages, vous pouvez créer et personnaliser des packages de déploiement. Par exemple, vous pouvez ajouter des éléments de projet SharePoint et des fonctionnalités, réinitialiser le serveur IIS, définir des étendues de l’activation de fonctionnalité et identifier les dépendances de fonctionnalité. Le concepteur génère également un manifeste, un fichier XML qui décrit chaque package.  
@@ -39,9 +38,9 @@ ms.lasthandoff: 10/31/2017
   
 |Propriété de Concepteur de package|Description du paramètre par défaut|  
 |-------------------------------|------------------------------------|  
-|Nom|Obligatoire. Le nom par défaut du package a la valeur *nom_projet*.|  
+|Name|Obligatoire. Le nom par défaut du package a la valeur *nom_projet*.|  
 |Réinitialiser le serveur Web|Facultatif. Sélectionnez si vous souhaitez redémarrer le serveur Web une fois le fichier .wsp est installé sur le serveur SharePoint.|  
-|Type de serveur de déploiement|Requis. Par défaut, l’étendue est définie à ApplicationServer.<br /><br /> ApplicationServer : Décrit un serveur qui héberge des services.<br /><br /> WebFrontEnd : Décrit un serveur qui héberge des sites Web.|  
+|Type de serveur de déploiement|Obligatoire. Par défaut, l’étendue est définie à ApplicationServer.<br /><br /> ApplicationServer : Décrit un serveur qui héberge des services.<br /><br /> WebFrontEnd : Décrit un serveur qui héberge des sites Web.|  
 |Éléments dans la Solution|Tous les éléments de projet SharePoint et des fonctionnalités qui peuvent être ajoutées au package.|  
 |Éléments dans le Package|Facultatif. Tous les éléments SharePoint et les fonctionnalités que vous souhaitez déployer dans votre package.|  
   

@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.securityrules
+f1_keywords:
+- vs.codeanalysis.securityrules
 helpviewer_keywords:
 - security [Visual Studio ALM], Enterprise Templates
 - security warnings
 - managed code analysis warnings, security warnings
 - warnings, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54b7a3a62c5940419b946b85424fa745298bb89b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: f2c72525b6101f14e9aac4365cc6af75b3083545
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="security-warnings"></a>Avertissements liés à la sécurité
 Les avertissements de sécurité prennent en charge des bibliothèques et des applications plus sûres. Ces avertissements contribuent à empêcher la présence de défauts de sécurité dans votre programme. Si vous désactivez chacun de ces avertissements, vous devez indiquer clairement le motif de l’opération dans le code et également en informer le responsable de la sécurité désigné pour votre projet de développement.  
@@ -80,7 +84,7 @@ Les avertissements de sécurité prennent en charge des bibliothèques et des ap
 |[CA2149 : Les méthodes transparentes ne doivent pas appeler du code natif](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Cette règle se déclenche sur toute méthode transparente qui appelle directement en code natif (par exemple, via un appel P/Invoke). Les violations de cette règle provoquent une exception MethodAccessException dans le modèle de transparence de niveau 2, et une demande complète pour le code UnmanagedCode dans le modèle de transparence de niveau 1.|  
 |[CA2151 : Les champs avec des types critiques doivent être des champs critiques de sécurité](../code-quality/ca2151-fields-with-critical-types-should-be-security-critical.md)|Pour utiliser les types critiques de sécurité, le code qui référence le type doit être critique de sécurité ou critique sécurisé. Ceci est vrai même si la référence est indirecte. Par conséquent, un champ transparent de sécurité ou critique sécurisé est trompeur, car le code transparent ne pourra toujours pas accéder au champ.|  
 |[Déclarations ca5122 : P/Invoke ne doivent pas être sécurisées critique](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Les méthodes sont marquées SecuritySafeCritical lorsqu’elles effectuent une opération relative à la sécurité, mais elle peuvent également être utilisées en toute sécurité par du code transparent. Le code transparent peut ne jamais appeler directement du code natif via P/Invoke. Par conséquent, marquer une méthode P/Invoke comme critique sécurisé ne permet pas au code transparent de l’appeler et s’avère trompeur pour l’analyse de sécurité.|  
-|[CA2153 : Évitez la gestion des exceptions d’état endommagé](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|Les[exceptions d’état endommagé (CSE, Corrupted State Exceptions)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) indiquent une altération de la mémoire dans votre processus. Le fait d’intercepter ces exceptions au lieu d’autoriser le processus à se bloquer peut engendrer des failles de sécurité si une personne malveillante réussit à placer une attaque dans la région de la mémoire endommagée.|  
+|[CA2153 : Évitez la gestion des exceptions d’état endommagé](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Endommagé des Exceptions d’état (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) indiquent que la mémoire endommagées dans votre processus. Le fait d’intercepter ces exceptions au lieu d’autoriser le processus à se bloquer peut engendrer des failles de sécurité si une personne malveillante réussit à placer une attaque dans la région de la mémoire endommagée.|  
 |[CA3075 : Traitement DTD non sécurisé](../code-quality/ca3075-insecure-dtd-processing.md)|Si vous utilisez des instances de DTDProcessing non sécurisées ou référencez des sources d’entités externes, l’analyseur peut accepter une entrée non fiable et divulguer des informations sensibles à des personnes malveillantes.|  
 |[CA3076 : Exécution non sécurisée de script XSLT](../code-quality/ca3076-insecure-xslt-script-execution.md)|Si vous exécutez le langage XSLT (Extensible Stylesheet Language Transformations) dans les applications .NET de manière non sécurisée, le processeur peut résoudre les références URI non fiables qui pourraient divulguer des informations sensibles à des personnes malveillantes, ce qui aboutirait à des attaques par déni de service et intersites.|  
 |[CA3077 : traitement non sécurisé dans la conception d’API, le document XML et le lecteur de texte XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Lors de la conception d’une API dérivée de XMLDocument et XMLTextReader, tenez compte de DtdProcessing.  L’utilisation d’instances de DTDProcessing non sécurisées lors de la référence ou la résolution de sources d’entités externes ou la définition de valeurs non sécurisées dans le code XML peut aboutir à la divulgation d’informations.|

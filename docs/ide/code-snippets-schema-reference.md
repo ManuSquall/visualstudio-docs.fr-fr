@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,15 +14,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: c267b110b67a69b526bb7efc985bb22bb954b3a1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 Les extraits de code IntelliSense sont des parties de code précréées et prêtes à être insérées dans votre application avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez augmenter la productivité en fournissant des extraits de code qui réduisent le nombre d'heures passées à taper un code répétitif ou à rechercher des exemples. Vous pouvez utiliser le schéma XML des extraits de code IntelliSense pour créer vos propres extraits de code et les ajouter aux extraits de code que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] contient déjà.  
@@ -122,7 +125,7 @@ Trois attributs sont disponibles pour l’élément Code :
 
 - **Langage** - Attribut _obligatoire_ qui spécifie le langage de l’extrait de code. Il peut avoir l’une des valeurs suivantes :
 
-   |Valeur|Description|  
+   |Value|Description|  
    |-----|-----------|  
    |`VB`|Identifie un extrait de code Visual Basic.|  
    |`CSharp`|Identifie un extrait de code C#.|  
@@ -134,7 +137,7 @@ Trois attributs sont disponibles pour l’élément Code :
  
 - **Kind** - Attribut _facultatif_ qui spécifie le type de code contenu dans l’extrait de code, ainsi que l’emplacement auquel un extrait de code doit être inséré pour pouvoir être compilé. Il peut avoir l’une des valeurs suivantes :
 
-   |Valeur|Description|  
+   |Value|Description|  
    |-----|-----------|  
    |`method body`|Spécifie que l'extrait de code est un corps de méthode, et par conséquent, qu'il doit être inséré à l'intérieur d'une déclaration de méthode.|  
    |`method decl`|Spécifie que l'extrait de code est une méthode, et par conséquent, qu'il doit être inséré à l'intérieur d'une classe ou d'un module.|  
@@ -239,7 +242,7 @@ Trois attributs sont disponibles pour l’élément Code :
  Spécifie une fonction à exécuter lorsque le littéral ou l'objet reçoit le focus dans Visual Studio.  
   
 > [!NOTE]
->  L’élément `Function` n’est pris en charge que par les extraits de code Visual C#.  
+>  L'élément `Function` est uniquement pris en charge par les extraits de code C#.  
   
 ```xml  
 <Function>  
@@ -562,7 +565,7 @@ Trois attributs sont disponibles pour l’élément Code :
   
 -   `Expansion` : autorise à insérer l'extrait de code au curseur.  
   
--   `Refactoring` : spécifie que l'extrait de code est utilisé pendant la refactorisation Visual C#. `Refactoring` ne peut pas être utilisé dans les extraits de code personnalisés.  
+-   `Refactoring` : spécifie que l'extrait de code est utilisé pendant la refactorisation C#. `Refactoring` ne peut pas être utilisé dans les extraits de code personnalisés.  
   
 ##  <a name="snippettypes"></a> SnippetTypes, élément  
  Groupe des éléments `SnippetType` individuels. Si l'élément `SnippetTypes` est absent, l'extrait de code peut être inséré n'importe où dans le code.  

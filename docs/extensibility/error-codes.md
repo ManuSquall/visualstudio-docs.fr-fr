@@ -16,16 +16,17 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50d05e529a3202f59df53801728b40fee1c68f40
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 13eff6aca9470e88be788fe3fcb625fecc32c2c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-codes"></a>Codes d'erreur
 Lorsqu’une fonction de l’API de plug-in de contrôle de code Source retourne une erreur, il est censé être un des codes d’erreur suivants. Toutes les erreurs sont négatifs, les avertissements ou les codes d’erreur d’information sont positives, et de réussite est 0.  
   
-|Code d'erreur|Valeur|Description|  
+|Code d'erreur|Value|Description|  
 |----------------|-----------|-----------------|  
 |`SCC_I_SHARESUBPROJOK`|7|Plug-in prend en charge l’ajout de fichiers à partir du contrôle de code source en deux étapes. Pour plus d’informations, consultez [SccSetOption](../extensibility/sccsetoption-function.md).|  
 |`SCC_I_FILEDIFFERS`|6|Le fichier local est différent du fichier dans la base de données de contrôle de code source (par exemple, [SccDiff](../extensibility/sccdiff-function.md) peut retourner cette valeur).|  
@@ -75,7 +76,7 @@ IS_SCC_SUCCESS(rtn) (((rtn) == SCC_OK) ? TRUE : FALSE)
 IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)  
 ```  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Toutes les fonctions API de plug-in de contrôle de code Source (sauf la [SccAdd](../extensibility/sccadd-function.md), [SccCheckin](../extensibility/scccheckin-function.md), et [SccDiff](../extensibility/sccdiff-function.md)) sont censées aboutir lorsque les fichiers locaux qui sont passés comme arguments effectuez n’existe pas dans le dossier de travail. Par exemple, l’IDE peut émettre un appel à la [SccCheckout](../extensibility/scccheckout-function.md) ou [SccUncheckout](../extensibility/sccuncheckout-function.md) sur un fichier qui n’existe pas dans le dossier de travail, mais il existe dans le système de contrôle de code source. Cet appel réussit. Uniquement quand il n’existe aucun fichier dans le dossier de travail ou dans le système de contrôle de code source est la fonction doit échouer.  
   
  Certaines fonctions, telles que `SccAdd` et `SccCheckin`, doit retourner spécifiquement `SCC_E_FILENOTEXIST` lorsque le fichier dans le dossier de travail n’existe pas. Autres fonctions sont censées aboutir lorsque le fichier de travail n’existe pas, si les fonctions de fonctionnent sur un nom de fichier valide dans le système de contrôle de code source.  

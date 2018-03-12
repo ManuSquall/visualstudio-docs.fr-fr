@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: IntelliTest, Warnings and errors
-ms.assetid: F725B4A3-F79E-4F05-945F-847756CD69B9
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 214637302a326750abc7b782d47ed6e7241a53c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- IntelliTest, Warnings and errors
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: 77f47c2d18b43c3ab08dac5fec6281892072ab36
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="warnings-and-errors"></a>Avertissements et erreurs
 

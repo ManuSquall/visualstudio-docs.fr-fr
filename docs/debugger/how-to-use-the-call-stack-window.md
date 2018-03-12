@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.callstack
+f1_keywords:
+- vs.debug.callstack
 dev_langs:
 - CSharp
 - VB
@@ -27,15 +29,17 @@ helpviewer_keywords:
 - stack, switching stack frames
 - Call Stack window, viewing disassembly code for functions on the call stack
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
-caps.latest.revision: "40"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdbc4c62b599ac19ff5bf6b6b0eedf862cc1b77d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: e10b81ff07b77e2fd6202d2f5fb27392fe8134c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Afficher la pile des appels et utiliser la fenêtre Pile des appels dans le débogueur Visual Studio
 
@@ -136,7 +140,7 @@ Consultez [spécifier les symboles (.pdb) et les fichiers sources](../debugger/s
   
 4.  Tapez un chemin d’accès au répertoire correspondant à l’emplacement de symboles sur l’ordinateur que vous déboguez. Pour le débogage local et distant, il s’agit d’un chemin d’accès sur votre ordinateur local.
   
-5.  Cliquez sur **OK** pour fermer la **Options** boîte de dialogue.  
+5.  Cliquez sur **OK** pour fermer la boîte de dialogue **Options**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Code mixte et informations manquantes dans la fenêtre Pile des appels](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)  

@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9ae492d7fc4d110c6e5015c782f97a2561c8bd8
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.workload:
+- multiple
+ms.openlocfilehash: ff7461fc5880f744a2a32141155deb6c4b309fa0
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personnaliser l’IDE Visual Studio
 
@@ -61,4 +63,4 @@ Vous pouvez personnaliser le menu **Outils** pour lancer les outils externes. Po
 ## <a name="see-also"></a>Voir aussi
 
 [Vue d’ensemble de l’IDE de Visual Studio](../ide/visual-studio-ide.md)  
-[Démarrage rapide : premier aperçu de l’IDE Visual Studio](../ide/quickstart-ide-orientation.md)
+[Démarrage rapide : premier aperçu de l'IDE Visual Studio](../ide/quickstart-ide-orientation.md)

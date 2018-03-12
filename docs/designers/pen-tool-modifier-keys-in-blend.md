@@ -12,14 +12,15 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e2485d80fa9ec0816513ac7e5c374bdd6832dff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a8f8f21520b0ab26e3f0099097a473ee298c5674
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Touches de modification de l’outil Plume dans Blend
-Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier un tracé lors de sa création avec l’outil **Plume** ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). Vous pouvez aussi utiliser l’outil **Plume** pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants.  
+Le tableau suivant liste les raccourcis que vous pouvez utiliser pour modifier un tracé lors de sa création avec l’outil **Plume** ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). Vous pouvez aussi utiliser l’outil **Plume** pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants.  
   
 |Pour|Procédez comme suit|Pointeur|  
 |-----------------------|-------------|-------------|  
@@ -29,7 +30,7 @@ Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modi
 |Divisez la dernière tangente, de façon à ce que les points de terminaison de la tangente fonctionnent indépendamment, ce qui vous permet de faire un angle aigu.|Cliquez pour créer le point, puis maintenez la touche ALT enfoncée et faites glisser avant de relâcher le bouton de la souris.|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Pointeur d'ajustement du stylet|  
 |Déplacez le point de terminaison de la tangente autour du nouveau point par incréments de 15 degrés.|Cliquez pour créer le point, puis maintenez les touches MAJ+ALT enfoncées, et faites glisser avant de relâcher le bouton de la souris.|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Pointeur d'ajustement du stylet|  
 |Réduire la tangente à un point de terminaison à une longueur nulle|Cliquez sur le point de terminaison.|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Pointeur d'ajustement du stylet|  
-|Ajouter un nouveau point à un tracé existant|Cliquez sur le tracé à l'emplacement où vous voulez le nouveau point.|![](../designers/media/b004ad5a-33a4-46ae-81c0-20be0d819332.png "b004ad5a-33a4-46ae-81c0-20be0d819332")<br /><br /> Pointeur d'insertion du stylet|  
+|Ajouter un nouveau point à un tracé existant|Cliquez sur le tracé à l'emplacement où vous voulez le nouveau point.|![](../designers/media/b004ad5a-33a4-46ae-81c0-20be0d819332.png "b004ad5a-33a4-46AE-81c0-20be0d819332")<br /><br /> Pointeur d'insertion du stylet|  
 |Supprimer un point dans un tracé|Placez le curseur sur un point existant et cliquez.|![](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png "08a64b78-f3df-4730-8169-c56b5631b071")<br /><br /> Pointeur de suppression du stylet|  
 |Fermer un tracé avec un angle aigu|Cliquez sur le point de départ.|![](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png "a12fd3b4-a553-4762-b01c-c35efa594362")<br /><br /> Pointeur de fermeture du stylet|  
 |Fermer un tracé avec une courbe lisse au niveau de l'angle|Cliquez sur le point de départ et faites glisser pour modifier la poignée de tangente, avant de relâcher le bouton de la souris.|![](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png "a12fd3b4-a553-4762-b01c-c35efa594362")<br /><br /> Pointeur de fermeture du stylet|  

@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c52fadf04cfcc31c404163e9e1ec4fc9487461c7
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload:
+- multiple
+ms.openlocfilehash: 4290ccb1184f658d04d6903520f709384e58e837
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="command-line-capture-tool"></a>Outil en ligne de commande de capture
 DXCap.exe est un outil en ligne de commande pour la capture et la lecture de Graphics Diagnostics. Il prend en charge tous les niveaux de fonctionnalités des versions Direct3D 10 à Direct3D 12.  
@@ -41,12 +44,12 @@ DXCap.exe -info
   
  `-frame` `frames`  
  En mode de capture, `frames` spécifie les frames que vous souhaitez capturer. Le premier frame est 1. Vous pouvez spécifier plusieurs frames à l'aide de virgules et de plages. Par exemple, si `frames` est `2, 5, 7-9, 15`, frames `2`, `5`, `7`, `8`, `9`, et `15` sont capturées.  
+
+> [!TIP]
+> Utilisez `-frame` `manual` pour spécifier que les frames doivent être capturés manuellement en appuyant sur la touche Impr. écran. Les frames peuvent être capturés au démarrage de l'application. Pour arrêter la capture des frames, revenez à l'interface de ligne de commande et appuyez sur Entrée.  
   
  `-period` `periods`  
  En mode de capture, `periods` spécifie les plages de temps, en secondes, pendant lesquelles vous souhaitez capturer des frames. Vous pouvez spécifier plusieurs périodes à l'aide de virgules et de plages. Par exemple si `periods` est `2.1-5, 7.0-9.3`, puis les frames rendus entre `2.1` et `5` secondes et entre`7` et `9.3` secondes sont capturés.  
-  
- `-manual`  
- Mode de capture, `-manual` Spécifie que les frames doivent être capturés manuellement en appuyant sur la touche Impr. écran. Les frames peuvent être capturés au démarrage de l'application. Pour arrêter la capture des frames, revenez à l'interface de ligne de commande et appuyez sur Entrée.  
   
  `-c` `app` [`args...`]  
  Mode de capture. En mode de capture, `app` spécifie le nom de l'application dont vous souhaitez capturer les informations graphiques. `args...` spécifie des paramètres de ligne de commande supplémentaires pour cette application.  
@@ -163,16 +166,16 @@ DXCap.exe -e map
   
  La commande ci-dessus énumère les applications UWP qui correspondent à « map ». Voici la sortie :  
   
- **Package « Microsoft.BingMaps » :**  
- **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **Nom complet : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **Package "Microsoft.BingMaps":**  
+ **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Nom : Microsoft.BingMaps**  
  **Serveur de publication : CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
  **Version : 2.1.2914.1734**  
  **Des Applications :**  
  **ID : AppexMaps**  
- **Exe : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA : non**  
  ** AppSpec (pour lancer) : **DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** la dernière ligne de sortie pour chaque application énumérée affiche la commande que vous pouvez utiliser pour capturer les informations graphiques à partir de celui-ci.  
   
@@ -296,4 +299,4 @@ DXCap.exe -p regression_test_12.vsglog -toXML temp.xml
 </Method>  
 ```  
   
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise

@@ -6,17 +6,20 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Statements.PickBranch.UI
+f1_keywords:
+- System.Activities.Statements.PickBranch.UI
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 9a77adbe5e2663ef11242d162b6ac718d88daea5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload:
+- multiple
+ms.openlocfilehash: d583c662de31b990982b78d876bc0046e89089d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pickbranch-activity-designer"></a>Concepteur d'activités PickBranch
 L'objet <xref:System.Activities.Statements.PickBranch> fournit un chemin d'accès d'exécution basé sur les événements dans une activité <xref:System.Activities.Statements.Pick> qui peut être déclenchée par un événement entrant.  
@@ -59,4 +62,4 @@ L'objet <xref:System.Activities.Statements.PickBranch> fournit un chemin d'accè
 ## <a name="see-also"></a>Voir aussi  
  [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)   
  [Activité Pick](/dotnet/framework/windows-workflow-foundation/pick-activity)   
- [À l’aide de l’activité Pick](/dotnet/framework/windows-workflow-foundation/samples/using-the-pick-activity)
+ [Utilisation de l’activité Pick](/dotnet/framework/windows-workflow-foundation/samples/using-the-pick-activity)

@@ -17,23 +17,22 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-ms.assetid: c1f16b4c-9291-49ed-9694-a83a37109612
-caps.latest.revision: "54"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 38508a664ff94628dfd3fd5ec00eacb32fbb1187
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c21ea9555a125503230faa92a5e6508c192a8175
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="calling-code-in-vsto-add-ins-from-other-office-solutions"></a>Appel de code dans des compléments VSTO à partir d'autres solutions Office
   Vous pouvez exposer un objet inclus dans votre complément VSTO à d’autres solutions, notamment d’autres solutions Microsoft Office. Cette possibilité s’avère utile si votre complément VSTO propose un service que vous voulez permettre à d’autres solutions d’utiliser. Par exemple, si vous avez un complément VSTO pour Microsoft Office Excel qui effectue des calculs sur des données financières à partir d’un service web, d’autres solutions peuvent effectuer ces calculs en appelant le complément VSTO Excel au moment de l’exécution.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- Deux étapes principales constituent ce processus :  
+ Deux étapes principales constituent ce processus :  
   
 -   Dans le complément VSTO, exposez un objet à d’autres solutions.  
   
@@ -128,7 +127,7 @@ End Sub
 ```  
   
 ### <a name="accessing-objects-from-non-vba-solutions"></a>Accès aux objets de solutions non-VBA  
- Dans une solution non-VBA, vous devez effectuer un cast de la valeur de la propriété <xref:Microsoft.Office.Core.COMAddIn.Object%2A> vers l'interface qu'elle implémente, puis vous pouvez appeler les méthodes exposées sur l'objet interface. L'exemple de code suivant montre comment appeler la méthode `ImportData` d'un autre complément VSTO créé à l'aide des Outils de développement Office dans Visual Studio.  
+ Dans une solution non-VBA, vous devez effectuer un cast de la valeur de la propriété <xref:Microsoft.Office.Core.COMAddIn.Object%2A> vers l'interface qu'elle implémente, puis vous pouvez appeler les méthodes exposées sur l'objet interface. L'exemple de code suivant montre comment appeler la méthode `ImportData` d'un autre complément VSTO créé à l'aide des Outils de développement Office dans Visual Studio.  
   
 ```vb  
 Dim addIn As Office.COMAddIn = Globals.ThisAddIn.Application.COMAddIns.Item("ExcelImportData")  

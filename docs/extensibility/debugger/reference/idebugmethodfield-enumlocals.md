@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugMethodField::EnumLocals
-helpviewer_keywords: IDebugMethodField::EnumLocals method
+f1_keywords:
+- IDebugMethodField::EnumLocals
+helpviewer_keywords:
+- IDebugMethodField::EnumLocals method
 ms.assetid: b0456a6d-2b96-49e2-a871-516571b4f6a5
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa4ab5a8963ae8364e35cdc0e2a5237a75d35994
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 451c2ccad7d817946bd3d2c2e83ed27279124f2b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 Crée un énumérateur pour les variables locales sélectionnés de la méthode.  
@@ -49,7 +54,7 @@ int EnumLocals(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ou retourne S_FALSE, s’il n’y a aucuns variables locales. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Uniquement les variables définies dans le bloc qui contient l’adresse de débogage donné sont énumérées. Si toutes les variables locales, y compris les variables locales générées par le compilateur sont nécessaires, appelez le [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) (méthode).  
   
  Une méthode peut contenir plusieurs contextes ou des blocs de portée. Par exemple, la méthode conçue suivante contient trois étendues, les deux blocs internes et le corps de la méthode.  

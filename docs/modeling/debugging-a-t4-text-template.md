@@ -4,21 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
-ms.assetid: 0877fdf2-20bf-42da-b3cc-4c5856b80821
-caps.latest.revision: "28"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: d60acd7d0d992ced0235d5d1e1c768f146bf4acd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Débogage d'un modèle de texte T4
 Vous pouvez définir des points d’arrêt dans les modèles de texte. Pour déboguer un modèle de texte au moment du design, enregistrez le fichier de modèle de texte, puis choisissez **déboguer le modèle T4** dans le menu contextuel du fichier dans l’Explorateur de solutions. Pour déboguer un modèle de texte au moment de l’exécution, il vous suffit de déboguer l’application à laquelle il appartient.  
@@ -47,7 +47,7 @@ Vous pouvez définir des points d’arrêt dans les modèles de texte. Pour déb
 |Le chemin d’accès '{0}' doit être soit local vers cet ordinateur ou une partie de votre zone de confiance.|Se produit lorsqu’une directive ou une directive d’assembly fait référence à un fichier qui n’est pas sur votre ordinateur local ou sur la zone de confiance de votre réseau.|Assurez-vous que le répertoire où se trouvent la directive ou les directives d’assembly est dans votre zone de confiance. Vous pouvez ajouter un répertoire réseau à votre zone de confiance d’Internet Explorer.|  
 |Plusieurs erreurs de syntaxe telles que « Non valide jeton ' catch' » ou « un espace de noms ne peut pas contenir directement des membres »|Trop d’accolades fermantes dans votre code de modèle. Le compilateur est il confusion avec le code de génération standard.|Vérifier le numéro de la fermeture des accolades et des crochets à l’intérieur des délimiteurs de code.|  
 |Boucles ou conditions non compilé ou exécuté correctement. Par exemple : `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Ce code génère toujours la valeur d’i. Uniquement « nombre est : » est conditionnel.|En c#, toujours utiliser des accolades pour entourer les blocs de texte qui sont incorporés dans les instructions de contrôle.|Ajouter des accolades : `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
-|« Expression trop complexe » lors du traitement d’un modèle au moment du design ou de la compilation d’un modèle d’exécution (prétraité).<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]cesse de fonctionner lorsque vous tentez d’inspecter le code généré par un modèle d’exécution.|Bloc de texte est trop long. T4 convertit des blocs de texte à une expression de concaténation de chaîne, avec une chaîne littérale pour chaque ligne du modèle. Blocs de texte très longues peuvent dépasser les limites de taille du compilateur.|Scinder le bloc de texte long avec un bloc d’expression telles que :<br /><br /> `<#= "" #>`|  
+|« Expression trop complexe » lors du traitement d’un modèle au moment du design ou de la compilation d’un modèle d’exécution (prétraité).<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cesse de fonctionner lorsque vous tentez d’inspecter le code généré par un modèle d’exécution.|Bloc de texte est trop long. T4 convertit des blocs de texte à une expression de concaténation de chaîne, avec une chaîne littérale pour chaque ligne du modèle. Blocs de texte très longues peuvent dépasser les limites de taille du compilateur.|Scinder le bloc de texte long avec un bloc d’expression telles que :<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>Description des avertissements et des correctifs  
  Le tableau suivant répertorie les avertissements courants, ainsi que des correctifs, s’il est disponible.  

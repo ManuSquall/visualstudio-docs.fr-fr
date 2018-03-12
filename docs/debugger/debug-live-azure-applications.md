@@ -3,31 +3,36 @@ title: "Déboguer des applications ASP.NET Azure live - Visual Studio | Document
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: adb22512-4d4d-40e5-9564-1af421b7087e
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload:
+- aspnet
+- azure
+ms.openlocfilehash: 5317c06dc5ff6515627e562d576785c2ff25a98a
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET Azure en direct à l’aide du débogueur de l’instantané
 
-Le débogueur d’instantané prend un instantané de vos applications de production lors de l’exécution de code qui vous intéressez. Pour indiquer au débogueur de prendre un instantané, vous définissez snappoints et logpoints dans votre code. Le débogueur vous permet de voir exactement ce qui s’est produite, sans affecter le trafic de votre application de production. Le débogueur de l’instantané peut vous aider à réduire considérablement le temps que nécessaire pour résoudre les problèmes qui se produisent dans les environnements de production.
+Le débogueur d’instantané prend un instantané de vos applications de production lors de l’exécution de code qui vous intéressez. Pour indiquer au débogueur de prendre une capture instantanée, vous définissez des points d’ancrage et des points de journalisation dans votre code. Dans le débogueur, vous pouvez voir précisément à quel endroit le code ne s’est pas exécuté correctement, sans que cela impacte le trafic de votre application en production. Snapshot Debugger peut vous aider à résoudre beaucoup plus vite les problèmes rencontrés dans les environnements de production.
 
 Snappoints et logpoints sont semblables aux points d’arrêt. Contrairement aux points d’arrêt, snappoints n’empêchent pas l’application lorsqu’il est atteint. En règle générale, la capture instantanée à un snappoint prend 10 à 20 millisecondes. 
 
-Collection d’instantané est disponible pour les applications web suivantes en cours d’exécution dans Azure App Service :
+La fonctionnalité de capture instantanée est disponible pour les applications web suivantes qui s’exécutent dans Azure App Service :
 
-- Les applications ASP.NET exécutées sur .NET Framework 4.6.1 ou version ultérieure.
-- Applications ASP.NET Core en cours d’exécution sur .NET Core 2.0 ou version ultérieure sur Windows.
+- Applications ASP.NET exécutées sur .NET Framework version 4.6.1 ou ultérieure.
+- Applications ASP.NET Core exécutées sur .NET Core version 2.0 ou ultérieure sur Windows.
 
 En outre, le débogueur de l’instantané est uniquement disponible pour Visual Studio 2017 Enterprise version 15,5 ou une version ultérieure et les plans de Service d’applications de base ou une version ultérieure. 
 
@@ -44,9 +49,12 @@ En outre, le débogueur de l’instantané est uniquement disponible pour Visual
 
    ![Lancer le débogueur de l’instantané](../debugger/media/snapshot-launch.png "lancer le débogueur de l’instantané")
 
-    La première fois que vous sélectionnez **attacher le débogueur instantané**, vous êtes invité à installer le débogueur de l’instantané sur votre Service d’applications Azure. Cette installation nécessite un redémarrage de votre Service d’applications Azure. 
+    La première fois que vous sélectionnez **attacher le débogueur instantané**, vous êtes invité à installer l’extension de site du débogueur de l’instantané sur votre Service d’applications Azure. Cette installation nécessite un redémarrage de votre Service d’applications Azure. 
 
    Visual Studio est présent dans l’instantané de mode de débogage.
+
+    > [!NOTE]
+    > L’extension de site Application Insights prend également en charge le débogage de l’instantané. Si vous rencontrez un message d’erreur « extension obsolète de site », consultez [dépannage des conseils et des problèmes connus pour le débogage de l’instantané](../debugger/debug-live-azure-apps-troubleshooting.md) détails de la mise à niveau.
 
    ![Débogage en mode de capture instantanée](../debugger/media/snapshot-message.png "mode débogage d’instantané")
 
@@ -127,7 +135,7 @@ En plus d’une capture instantanée lorsqu’un snappoint est atteint, vous pou
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Pour savoir comment examiner les variables lors de l’affichage d’un instantané, consultez [visite guidée des fonctionnalités Debbuger](../debugger/debugger-feature-tour.md).
+- Pour savoir comment examiner les variables lors de l’affichage d’un instantané, consultez [présentation des fonctionnalités de débogueur](../debugger/debugger-feature-tour.md).
 - Afficher le [FAQ pour le débogage de l’instantané](../debugger/debug-live-azure-apps-faq.md).
 - Vue [dépannage des conseils et des problèmes connus pour le débogage de l’instantané](../debugger/debug-live-azure-apps-troubleshooting.md).
 - Si vous souhaitez afficher des instantanés de l’Application Insights lorsque votre application rencontre une exception, vous pouvez le faire. Pour plus d’informations, consultez [déboguer des instantanés sur les exceptions dans les applications .NET](/azure/application-insights/app-insights-snapshot-debugger). Application Insights prend en charge les applications de Service Fabric en plus du Service d’applications Azure.

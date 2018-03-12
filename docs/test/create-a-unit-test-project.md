@@ -7,15 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
-caps.latest.revision: "8"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: a064d56a0be2acf6000a9e7da770cb9b25d3b65f
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.author: gewarren
+manager: ghogen
+ms.workload: multiple
+author: gewarren
+ms.openlocfilehash: 71a666a2e52b49f71f5c74419cfda0eb05d78938
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="create-a-unit-test-project"></a>Créer un projet de test unitaire
 Les tests unitaires reflètent souvent la structure du code testé. Par exemple, un projet de test unitaire est créé pour chaque projet de code du produit. Le projet de test peut se trouver dans la même solution que le code de production, ou dans une solution distincte. Vous pouvez avoir plusieurs projets de test unitaire dans une solution.  
@@ -29,7 +29,7 @@ Les tests unitaires reflètent souvent la structure du code testé. Par exemple,
   
 2.  Dans la boîte de dialogue Nouveau projet, développez le nœud **Installé**, choisissez le langage à utiliser pour votre projet de test, puis sélectionnez **Test**.  
   
-3.  Pour utiliser l’un des frameworks de tests unitaires Microsoft, choisissez **Projet de test unitaire** dans la liste des modèles de projet. Sinon, choisissez le modèle de projet du framework de tests unitaires que vous souhaitez utiliser. Pour tester le projet Accounts de notre exemple, nommez le projet AccountsTests.  
+3.  Pour utiliser l’une des infrastructures de tests unitaires Microsoft, choisissez **Projet de test unitaire** dans la liste des modèles de projet. Sinon, choisissez le modèle de projet du framework de tests unitaires que vous souhaitez utiliser. Pour tester le projet Accounts de notre exemple, nommez le projet AccountsTests.  
   
 4.  Dans votre projet de test unitaire, ajoutez une référence au code testé.  Voici comment créer la référence à un projet de code dans la même solution :  
   

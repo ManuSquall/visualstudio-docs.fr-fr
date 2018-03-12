@@ -18,18 +18,19 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ebcb3325cfefdfeeb95b30477c4b266a70f40eb0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 8d387cd29b0c17bdb31db495fe42146cf1a886d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049 : Les types qui possèdent des ressources natives doivent être supprimables
 |||  
 |-|-|  
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|  
 |CheckId|CA1049|  
-|Catégorie|Microsoft.Design|  
+|Category|Microsoft.Design|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
@@ -63,4 +64,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Voir aussi  
  [Nettoyage des ressources non managées](/dotnet/standard/garbage-collection/unmanaged)   
- [Modèle de suppression](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Dispose, modèle](/dotnet/standard/design-guidelines/dispose-pattern)

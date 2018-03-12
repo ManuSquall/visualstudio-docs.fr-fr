@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,22 +15,24 @@ helpviewer_keywords:
 - CA2223
 - MembersShouldDifferByMoreThanReturnType
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 312ba498965cea7404e66d15f9136ac9a364da98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 4c72475c76a85216499a389d12f090ef302fc143
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223 : Les membres ne doivent pas différer uniquement par leur type de retour
 |||  
 |-|-|  
 |TypeName|MembersShouldDifferByMoreThanReturnType|  
 |CheckId|CA2223|  
-|Catégorie|Microsoft.Usage|  
+|Category|Microsoft.Usage|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
@@ -45,7 +48,7 @@ ms.lasthandoff: 10/31/2017
  Ne supprimez aucun avertissement de cette règle.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant, dans le langage intermédiaire Microsoft (MSIL), présente un type qui viole cette règle. Notez que cette règle ne peut pas être enfreinte à l’aide de c# ou Visual Basic .NET.  
+ L’exemple suivant, dans le langage intermédiaire Microsoft (MSIL), présente un type qui viole cette règle. Notez que cette règle ne peut pas être enfreinte à l’aide de c# ou Visual Basic.  
   
 ```  
   

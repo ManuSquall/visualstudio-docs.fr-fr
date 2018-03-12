@@ -7,15 +7,16 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
-caps.latest.revision: "6"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 1a723104cdd350dcc2c5fac80eef4e98b178df4c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: 3e0be7d788d4471f249b50f8c846343514b1c346
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Utilisation des membres Microsoft.VisualStudio.TestTools.UnitTesting dans les tests unitaires
 Le framework de test unitaire prend en charge le test unitaire dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Utilisez les classes et les membres de l’espace de noms <xref:Microsoft.VisualStudio.TestPlatform.UnitTestFramework> quand vous codez des tests unitaires. Vous pouvez les utiliser quand vous écrivez un test unitaire de bout en bout, ou que vous affinez un test unitaire généré à partir du code que vous testez.  
@@ -41,9 +42,10 @@ Le framework de test unitaire prend en charge le test unitaire dans [!INCLUDE[vs
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.DataSourceElementCollection  
   
-## <a name="attributes-used-to-establish-a-calling-order"></a>Attributs utilisés pour établir un ordre d’appel  
- Un élément de code décoré avec l’un des attributs suivants est appelé au moment spécifié. Pour plus d’informations, consultez [Anatomie d’un test unitaire](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).  
-  
+## <a name="attributes-used-to-establish-a-calling-order"></a>Attributs utilisés pour établir un ordre d’appel
+
+Un élément de code décoré avec l’un des attributs suivants est appelé au moment spécifié. Pour plus d’informations, consultez [Anatomie d’un test unitaire](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+
 ### <a name="for-assemblies"></a>Pour les assemblys  
  AssemblyInitialize et AssemblyCleanup sont appelés juste après le chargement de votre assembly et juste avant son déchargement.  
   
@@ -64,8 +66,9 @@ Le framework de test unitaire prend en charge le test unitaire dans [!INCLUDE[vs
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestCleanupAttribute  
   
-## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Attributs utilisés pour identifier les classes et méthodes de test  
- Chaque classe de test doit avoir l’attribut TestClass, et chaque méthode de test doit avoir l’attribut TestMethod. Pour plus d’informations, consultez [Anatomie d’un test unitaire](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).  
+## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Attributs utilisés pour identifier les classes et méthodes de test
+
+Chaque classe de test doit avoir l’attribut TestClass, et chaque méthode de test doit avoir l’attribut TestMethod. Pour plus d’informations, consultez [Anatomie d’un test unitaire](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute  
   
@@ -120,12 +123,10 @@ Le framework de test unitaire prend en charge le test unitaire dans [!INCLUDE[vs
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.CssProjectStructureAttribute  
   
-## <a name="classes-used-with-private-accessors"></a>Classes utilisées avec des accesseurs private  
- Comme indiqué dans [Utilisation de Publicize pour créer un accesseur private](http://msdn.microsoft.com/en-us/2056c6a7-6672-42a7-8f53-fead33c56deb), vous pouvez générer un test unitaire pour une méthode privée. Cette génération crée une classe d’accesseur private, qui instancie un objet de la classe PrivateObject. La classe PrivateObject est une classe wrapper qui utilise la réflexion dans le cadre du processus d’accesseur private. La classe PrivateType est similaire, mais elle est utilisée pour appeler des méthodes statiques privées au lieu d’appeler des méthodes d’instance privées.  
-  
--   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateObject  
-  
--   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateType  
-  
-## <a name="see-also"></a>Voir aussi  
- Microsoft.VisualStudio.TestPlatform.UnitTestFramework
+## <a name="classes-used-with-private-accessors"></a>Classes utilisées avec des accesseurs private
+
+Vous pouvez générer un test unitaire pour une méthode privée. Cette génération crée une classe d’accesseur private, qui instancie un objet de la classe PrivateObject. La classe PrivateObject est une classe wrapper qui utilise la réflexion dans le cadre du processus d’accesseur private. La classe PrivateType est similaire, mais elle est utilisée pour appeler des méthodes statiques privées au lieu d’appeler des méthodes d’instance privées.
+
+- Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateObject
+
+- Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateType

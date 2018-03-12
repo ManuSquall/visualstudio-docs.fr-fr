@@ -4,30 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - AbstractTypesShouldNotHaveConstructors
 - CA1012
-helpviewer_keywords: CA1012
+helpviewer_keywords:
+- CA1012
 ms.assetid: 09f458ac-dd88-4cd7-a47f-4106c1e80ece
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 394621874110ccae04837a991e66e2773700c33f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 42c0309181dbea76826aafb67b33579e2bd3ae78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012 : Les types abstraits ne doivent pas avoir de constructeurs
 |||  
 |-|-|  
 |TypeName|AbstractTypesShouldNotHaveConstructors|  
 |CheckId|CA1012|  
-|Catégorie|Microsoft.Design|  
+|Category|Microsoft.Design|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  

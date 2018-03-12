@@ -14,16 +14,15 @@ helpviewer_keywords:
 - printing [Office development in Visual Studio], worksheets
 - worksheets, printing
 - print preview, worksheets
-ms.assetid: 312bfcd7-0a74-421c-b42e-df71a06b7bdf
-caps.latest.revision: "46"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 030580d2db7490a7ce806cca86477659a0b00267
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 97c4c5b870cd16b07f211b952df8994b87ad159b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>Comment : imprimer des feuilles de calcul par programmation
   Vous pouvez imprimer une feuille de calcul dans un classeur.  

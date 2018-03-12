@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc6fbfee6ab64cb50c03c55604db969e8ffc2d9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2a9ef9fcce1a02820b2855b6e39c5da2d3a7cc48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Procédure pas à pas : Implémentation d’extraits de Code
 Vous pouvez créer des extraits de code et les inclure dans une extension de l’éditeur afin que les utilisateurs de l’extension de les ajouter à leur propre code.  
@@ -35,7 +36,7 @@ Vous pouvez créer des extraits de code et les inclure dans une extension de l�
   
  Cette procédure pas à pas est basée sur [procédure pas à pas : affichage de saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-and-registering-code-snippets"></a>Création et enregistrement d’extraits de Code  

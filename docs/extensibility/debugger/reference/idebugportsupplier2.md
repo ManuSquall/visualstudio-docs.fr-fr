@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugPortSupplier2
-helpviewer_keywords: IDebugPortSupplier2 interface
+f1_keywords:
+- IDebugPortSupplier2
+helpviewer_keywords:
+- IDebugPortSupplier2 interface
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc6e5c5a9091b633c4c2c5ca46990393302e5e20
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 257bbf334adbdfd3a93cf172de0b15bf63cb3217
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 Cette interface fournit des ports pour le Gestionnaire de session de débogage (SDM).  
@@ -71,10 +76,10 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 |[Ajouter un port](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Ajoute un port.|  
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Supprime un port.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Un fournisseur de port peut identifier par nom et l’ID, ajouter et supprimer les ports et énumérer tous les ports qui fournit par le fournisseur de port.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

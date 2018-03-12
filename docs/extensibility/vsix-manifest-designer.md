@@ -4,24 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.Sdk.VsixManifestEditor
+f1_keywords:
+- VS.Sdk.VsixManifestEditor
 helpviewer_keywords:
 - vsixmanifest
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eaf35854aede65b605b4578ca9ee71375ad7a479
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0d7af3ab109c922a8182a93db6852a331229ceca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-manifest-designer"></a>Concepteur de manifeste VSIX
 Modifie un fichier de manifeste de package VSIX, qui définit le comportement d’installation d’une extension de Visual Studio.  
@@ -33,7 +37,7 @@ Modifie un fichier de manifeste de package VSIX, qui définit le comportement d�
 > [!NOTE]
 >  Source.extension.vsixmanifest est extension.vsixmanifest lors de la création du package.  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
  Le **Concepteur de manifeste VSIX** contient quatre sections qui correspondent à ces éléments de niveau supérieur du schéma :  
   
 -   Métadonnées  
@@ -63,7 +67,7 @@ Modifie un fichier de manifeste de package VSIX, qui définit le comportement d�
  **Description**  
  Fournit une description de l’extension, à afficher dans **Gestionnaire d’extensions**.  
   
- **Langue**  
+ **Language**  
  Spécifie la langue par défaut pour le package, ce qui correspond aux données textuelles dans le manifeste. Le `Language` attribut suit la convention code paramètres régionaux de common language runtime (CLR) pour les assemblys de ressources, par exemple, en-us, fr, fr-fr. Par défaut, la valeur est neutre ; Cela signifie que le package s’exécute sur n’importe quelle version de langue de Visual Studio.  
   
  **Licence**  

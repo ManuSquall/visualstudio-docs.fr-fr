@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ac184805803e92758e1de93400c957d00e8ebda6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: b891f2af72de34c2ccd71043f2674c338ddb44f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Rechercher et sélectionner un type .NET, boîte de dialogue
 Dans le **propriétés** concepteurs, tels que le Concepteur de variables, lorsque vous sélectionnez, boîtes de dialogue ou fenêtre **rechercher des Types...**  à partir d’une liste des types de données, est la **rechercher et sélectionner un Type .NET** boîte de dialogue (appelée sous une forme abrégée que le navigateur de type « »). Cette boîte de dialogue vous permet de choisir un type dans une arborescence d’assemblys et de projets.  
@@ -40,7 +41,7 @@ Dans le **propriétés** concepteurs, tels que le Concepteur de variables, lorsq
   
 1.  Dans le **nom de Type** , entrez le nom du type que vous souhaitez utiliser.  
   
-2.  Effectuez l’une des opérations suivantes :  
+2.  Effectuez l’une des opérations suivantes :  
   
     -   Une fois que le nom du type que vous souhaitez utiliser s’affiche dans l’arborescence de la **nom de Type** , double-cliquez sur le type pour le sélectionner.  
   

@@ -16,47 +16,42 @@ f1_keywords:
 - File Properties.CustomTool
 - FileProperties
 helpviewer_keywords:
-- suo files
-- file types, Visual Studio
-- file extensions
-- solutions, solution files
-- solution files
 - .sln files
-- Visual Studio, file types and extensions
-- extensions, file types
-- sln files
 - .suo files
-- file extensions, Visual Studio
-- file types
-ms.assetid: 0ba5007b-465d-4efa-b1e4-f0ee68527649
-caps.latest.revision: "19"
+- file types [Visual Studio]
+- file extensions [Visual Studio]
+- solution files [Visual Studio]
+- sln files
+- suo files
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 744b35962a196e0372d1bd1fa916f247a9195da6
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: d05b7b5f1510777c758998572e78757c47148fa1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-and-solution-file-types"></a>Types de fichiers projet et solution
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge de nombreux types de fichiers. Dans une installation particulière, les composants installés déterminent les types de fichiers pris en charge. Cette rubrique répertorie les types de fichiers solution et projet qui sont pris en charge dans certaines installations standard. Pour obtenir des informations sur d'autres types de fichiers, effectuez une recherche en utilisant les extensions de nom de fichier pour chaque type.  
-  
-## <a name="solution-files-sln-and-suo"></a>Fichiers solution (.sln et .suo)  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise deux types de fichiers (.sln et .suo) pour stocker des paramètres spécifiques à des solutions. Ces fichiers, appelés collectivement fichiers solution, fournissent à l'Explorateur de solutions les informations dont il a besoin pour afficher une interface graphique de gestion de vos fichiers. Ils vous permettent de vous concentrer sur vos projets et objectifs finaux plutôt que sur l'environnement lui-même chaque fois que vous retournez à vos tâches de développement.  
-  
-|Extension|Nom|Description|  
-|---------------|----------|-----------------|  
-|.sln|Solution [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]|Organise les projets, les éléments de projet et les éléments de solution dans la solution.|  
-|.suo|Options utilisateur de solution|Assure le suivi des personnalisations au niveau de l'utilisateur que vous avez effectuées dans Visual Studio, telles que les points d'arrêt.|  
-  
-## <a name="project-files"></a>Fichiers projet  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise divers formats de fichiers pour stocker les informations spécifiques aux projets. Pour plus d'informations, consultez les rubriques d'aide suivantes :  
-  
- [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]  
- [Types de fichiers créés pour les projets Visual C++](/cpp/ide/file-types-created-for-visual-cpp-projects)    
- [Création et gestion de projets Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects)    
- [Unicode](/cpp/mfc/unicode-in-mfc)  
-  
-## <a name="see-also"></a>Voir aussi  
- [Projets et solutions](../../ide/solutions-and-projects-in-visual-studio.md)
+
+Visual Studio prend en charge de nombreux types de fichiers. Dans une installation particulière, les composants installés déterminent les types de fichiers pris en charge. Cette rubrique répertorie les types de fichiers solution et projet qui sont pris en charge dans certaines installations standard.
+
+## <a name="solution-files-sln-and-suo"></a>Fichiers solution (.sln et .suo)
+
+Visual Studio utilise deux types de fichiers (.sln et .suo) pour stocker les paramètres des solutions. Ces fichiers, appelés collectivement fichiers solution, fournissent à l'Explorateur de solutions les informations dont il a besoin pour afficher une interface graphique de gestion de vos fichiers.
+
+|Extension|Name|Description|
+|---------------|----------|-----------------|
+|.sln|Solution Visual Studio|Organise les projets, les éléments de projet et les éléments de solution dans la solution.|
+|.suo|Options utilisateur de solution|Assure le suivi des personnalisations au niveau de l’utilisateur que vous avez effectuées dans Visual Studio, telles que les points d’arrêt.|
+
+## <a name="project-files"></a>Fichiers projet
+
+Les projets peuvent contenir de nombreux types de fichiers. Par exemple, les fichiers de code C# ont une extension **.cs** et les fichiers C++ ont une extension **.cpp**. Les ressources sont stockées dans des fichiers **.resx** et le code XAML dans des fichiers **.xaml**. Les fichiers [App.config](../../ide/managing-application-settings-dotnet.md) contiennent des informations sur l’application qui ne doivent pas être incluses dans le code d’application (par exemple les chaînes de connexion).
+
+Pour plus d’informations sur les types de fichiers dans les projets C++, consultez [Types de fichiers créés pour les projets Visual C++](/cpp/ide/file-types-created-for-visual-cpp-projects) et [Unicode dans la bibliothèque Microsoft Foundation Class](/cpp/mfc/unicode-in-mfc).
+
+## <a name="see-also"></a>Voir aussi
+
+[Projets et solutions](../../ide/solutions-and-projects-in-visual-studio.md)

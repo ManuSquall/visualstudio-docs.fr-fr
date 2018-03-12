@@ -12,11 +12,12 @@ caps.latest.revision: "48"
 author: stevehoag
 ms.author: shoag
 manager: ghogen
-ms.openlocfilehash: acf69e6cddabad98a68c870ccfaeafa9b420cac7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: a696a0b827cc8fe367390efbba01c2a18ff178bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Développer des applications pour la plateforme Windows universelle (UWP)
 Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exécuter la même application sur n’importe quel appareil Windows 10, des téléphones jusqu’aux postes de travail. Créez ces applications Windows universelles avec Visual Studio et les outils de développement d’applications Windows universelles.  
@@ -27,13 +28,13 @@ Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exéc
   
  **Qu’est-ce que le noyau Windows ?**  
   
- Pour la première fois, Windows a été refactorisé pour avoir un noyau commun sur toutes les plateformes Windows 10. Il y a donc maintenant un code source commun, un noyau Windows commun, une seule pile d’E/S de fichier et un modèle d’application unique. Pour l’interface utilisateur, il y a seulement une infrastructure d’interface utilisateur XAML et une infrastructure d’interface utilisateur HTML. Vous pouvez vous concentrer sur la création de l’application proprement dite, car nous avons fait en sorte qu’il soit facile de l’exécuter sur différents appareils Windows 10.  
+ Pour la première fois, Windows a été refactorisé pour avoir un noyau commun sur toutes les plateformes Windows 10. Il y a donc maintenant un code source commun, un noyau Windows commun, une seule pile d’E/S de fichier et un modèle d’application unique. Pour l’interface utilisateur, il y a seulement un framework d’interface utilisateur XAML et un framework d’interface utilisateur HTML. Vous pouvez vous concentrer sur la création de l’application proprement dite, car nous avons fait en sorte qu’il soit facile de l’exécuter sur différents appareils Windows 10.  
   
  **Qu’est-ce que la plateforme Windows universelle plus précisément ?**  
   
 La plateforme Windows universelle est simplement un ensemble de contrats et de versions. qui vous permettent de choisir les cibles d’exécution de votre application. Vous ne ciblez plus un système d’exploitation, mais une ou plusieurs familles d’appareils. Pour obtenir plus de détails, consultez [Introduction à la plateforme Windows universelle](/windows/uwp/get-started/universal-application-platform-guide).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  Les outils de développement d’applications Windows universelles sont fournis avec des émulateurs qui vous permettent de vérifier l’apparence de votre application sur différents appareils. Si vous souhaitez utiliser ces émulateurs, vous devez installer ce logiciel sur un ordinateur physique. L’ordinateur physique doit exécuter Windows 8.1 (x64) Professionnel ou une version ultérieure, et être équipé d’un processeur qui prend en charge Hyper-V Client et la conversion SLAT (Second Level Address Translation). Vous ne pouvez pas utiliser les émulateurs quand Visual Studio est installé sur un ordinateur virtuel.  
   
  Voici la liste des logiciels dont vous avez besoin :  

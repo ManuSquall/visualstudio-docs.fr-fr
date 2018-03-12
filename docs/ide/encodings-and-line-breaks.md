@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.Encoding
+f1_keywords:
+- vs.Encoding
 helpviewer_keywords:
 - line breaks
 - encoding
@@ -16,15 +18,17 @@ helpviewer_keywords:
 - line break characters
 - Visual Studio, line break characters
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6afbc9ca8f93dcb0313c70a9d1e41579a6bf31f
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a472a09a4d4d67f59d7879d03b466932d1445e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="encodings-and-line-breaks"></a>Encodages et sauts de ligne
 Les caractères suivants sont interprétés comme des sauts de ligne dans Visual Studio :  

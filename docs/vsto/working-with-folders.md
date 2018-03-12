@@ -16,16 +16,15 @@ helpviewer_keywords:
 - folders [Office development in Visual Studio]
 - e-mail [Office development in Visual Studio], folders
 - Outlook [Office development in Visual Studio], folders
-ms.assetid: 1379b5cb-5093-46a3-80f0-b7b3c66b1df3
-caps.latest.revision: "9"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 6ffe3d79a9b7bd7e15d9281fe1500b256d4c649a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5d80d70809d0f60f8531d3ead43060f2a32bbe07
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="working-with-folders"></a>Utilisation des dossiers
   La classe <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> contient les méthodes et les propriétés utilisées pour créer et personnaliser les dossiers, ainsi que pour y accéder.  

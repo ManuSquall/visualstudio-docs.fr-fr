@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.elementmergedirective
-helpviewer_keywords: Domain-Specific Language, element merge directives
-ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
-caps.latest.revision: "36"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: d678e05046a367a722a586d13a50ef7bf0aabc79
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+f1_keywords:
+- vs.dsltools.dsldesigner.elementmergedirective
+helpviewer_keywords:
+- Domain-Specific Language, element merge directives
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personnalisation de la création et du mouvement des éléments
 Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de la boîte à outils ou dans un collage ou l’opération de déplacement. Vous pouvez avoir les éléments déplacés liés aux éléments de la cible, en utilisant les relations que vous spécifiez.  
@@ -38,7 +40,7 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
   
  La responsabilité d’un EMD est de décider comment un objet ou un groupe d’objets doit être fusionné dans un emplacement particulier dans le modèle. En particulier, il détermine quelles sont les relations doivent être instanciées pour lier le groupe fusionné dans le modèle. Vous pouvez également le personnaliser pour définir les propriétés et à créer des objets supplémentaires.  
   
- ![DSL &#45; EMD &#95; Fusion](../modeling/media/dsl-emd_merge.png "EMD_Merge de DSL")  
+ ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
 Le rôle d’une Directive d’élément de fusion  
   
  Un EMD est généré automatiquement lorsque vous définissez une relation d’incorporation. Cette valeur par défaut EMD crée une instance de la relation lorsque les utilisateurs ajoutent de nouvelles instances de l’enfant au parent. Vous pouvez modifier ces EMDs par défaut, par exemple en ajoutant du code personnalisé.  
@@ -48,7 +50,7 @@ Le rôle d’une Directive d’élément de fusion
 ## <a name="defining-an-element-merge-directive"></a>Définition d’une Directive de fusion d’élément  
  Vous pouvez ajouter des directives de fusion d’élément pour les classes de domaine, les relations de domaine, des formes, des connecteurs et des diagrammes. Vous pouvez ajouter ou les trouver dans l’Explorateur de DSL dans la classe de domaine de réception. La classe de récepteur est la classe de domaine de l’élément qui est déjà dans le modèle, et sur lequel l’élément nouveau ou copié est fusionnée.  
   
- ![DSL &#45; EMD &#95; détails](../modeling/media/dsl-emd_details.png "EMD_Details de DSL")  
+ ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
   
  Le **l’indexation de la classe** est la classe de domaine d’éléments qui peuvent être fusionnés dans les membres de la classe réceptrice. Instances des sous-classes de la classe de l’indexation seront également fusionnés par cette EMD, sauf si vous définissez **s’applique aux sous-classes** sur False.  
   

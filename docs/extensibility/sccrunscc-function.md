@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: SccRunScc
-helpviewer_keywords: SccRunScc function
+f1_keywords:
+- SccRunScc
+helpviewer_keywords:
+- SccRunScc function
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9ac82ac0363428ade1b6010a9060e15284db224
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4ad179325c4f34cd206a3c5e6b0840a69dd46037
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccrunscc-function"></a>SccRunScc (fonction)
 Cette fonction appelle l’outil d’administration de contrôle source.  
@@ -50,7 +55,7 @@ SCCRTN SccRunScc(
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|L’outil administration de contrôle de code source a été appelé avec succès.|  
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée.|  
@@ -60,7 +65,7 @@ SCCRTN SccRunScc(
 |SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|  
 |SCC_E_NONSPECIFICERROR|Erreur non spécifique.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette fonction permet à l’appelant pour accéder à la gamme complète des fonctionnalités du système de contrôle de code source via un outil d’administration externe. Si le système de contrôle de code source n’a aucune interface utilisateur, le plug-in de contrôle de code source peut implémenter une interface pour effectuer des fonctions d’administration nécessaires.  
   
  Cette fonction est appelée avec un nombre et un tableau de noms de fichiers pour les fichiers actuellement sélectionnés. Si l’outil d’administration prend en charge, la liste des fichiers peut servir à présélectionner des fichiers dans l’interface d’administration ; dans le cas contraire, la liste peut être ignorée.  

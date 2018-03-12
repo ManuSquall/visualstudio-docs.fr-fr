@@ -14,11 +14,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d647e7623820c6621f6605277a695a98454fec5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4807a84b9e1de5186e72cbe138f0f54e2f33525e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (propriété dynamique XAttribute)
 Obtient ou définit la valeur de l'attribut XML.  
@@ -38,7 +39,7 @@ attrib.Value
 |--------------------|---------------|  
 |<xref:System.ArgumentNullException>|Lors de la définition, `value` a la valeur `null`.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette propriété est équivalente à la propriété <xref:System.Xml.Linq.XAttribute.Value%2A> de la classe <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>, mais cette propriété dynamique prend également en charge les notifications de changement.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: startup projects, setting multiple startup projects
+helpviewer_keywords:
+- startup projects, setting multiple startup projects
 ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6241d739a48e8061bb9962578fd4e4158f78cac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 9b148fe01c3cd36713853531941c09611a6bf57f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Guide pratique pour définir plusieurs projets de démarrage
 Visual Studio vous permet de spécifier la façon dont plusieurs projets sont exécutés quand vous démarrez le débogueur.  
@@ -35,6 +39,6 @@ Visual Studio vous permet de spécifier la façon dont plusieurs projets sont ex
 ## <a name="see-also"></a>Voir aussi  
  [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
 
- [Création de solutions et de projets](../ide/creating-solutions-and-projects.md)
+ [Création de projets et de solutions](../ide/creating-solutions-and-projects.md)
 
  [Gestion des propriétés des projets et des solutions](../ide/managing-project-and-solution-properties.md)

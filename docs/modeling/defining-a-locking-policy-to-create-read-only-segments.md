@@ -4,18 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: fa549c71-2bf6-4b08-b7b2-7756dd6f1dc8
-caps.latest.revision: "12"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: 0ac8ba75920c4b3b8964d473258c162c256139ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: dc7e620c04e31a063bbe8fada68527d391f0a903
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 L’API immuabilité de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK permet à un programme à tout ou partie de verrouillage d’un modèle de langage de spécifique à un domaine (DSL) afin qu’elle peut être lue mais pas modifié. Cette option en lecture seule peut être utilisée, par exemple, afin qu’un utilisateur peut demander à vos collègues à annoter et passez en revue un modèle DSL, mais il peut ne pas autoriser les à partir de la modification de l’original.  
@@ -25,7 +25,7 @@ L’API immuabilité de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.
 > [!NOTE]
 >  Une stratégie de verrouillage peut être contournée en utilisant la réflexion. Il fournit une limite pour les développeurs tiers, mais ne fournit pas de sécurité renforcée.  
   
- Plus d’informations et des exemples sont disponibles sur le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkId=186128) site Web.  
+ Plus d’informations et des exemples sont disponibles dans Visual Studio [Visualization and Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) site Web.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
@@ -78,16 +78,16 @@ partition.SetLocks(Locks.Delete);
   
  Vous ne pouvez pas défini un verrou sur une partition ou de stocker et en même temps, désactiver le verrou sur un élément individuel.  
   
-|Valeur|Ce qui signifie que si `IsLocked(Value)` a la valeur true|  
+|Value|Ce qui signifie que si `IsLocked(Value)` a la valeur true|  
 |-----------|------------------------------------------|  
-|Aucune|Aucune restriction.|  
+|Aucun.|Aucune restriction.|  
 |Propriété|Propriétés du domaine d’éléments ne peut pas être modifiées. Cela ne s’applique pas aux propriétés qui sont générées par le rôle d’une classe de domaine dans une relation.|  
 |Ajouter|Nouveaux éléments et les liens ne peut pas être créés dans une partition ou à stocker.<br /><br /> Non applicable à `ModelElement`.|  
 |Déplacement|Élément ne peut pas être déplacé entre des partitions si `element.IsLocked(Move)` a la valeur true, ou si `targetPartition.IsLocked(Move)` a la valeur true.|  
 |Supprimer|Un élément ne peut pas être supprimé si ce verrou est défini sur l’élément lui-même, ou sur un des éléments à laquelle la suppression transmettrait, tels que les formes et les éléments incorporés.<br /><br /> Vous pouvez utiliser `element.CanDelete()` pour détecter si un élément peut être supprimé.|  
 |Réorganiser les|L’ordre des liens à un roleplayer ne peut pas être modifié.|  
 |RolePlayer|L’ensemble de liens qui sont générés à cet élément ne peut pas être modifié. Par exemple, les nouveaux éléments ne peut pas être incorporés sous cet élément. Cela n’affecte pas les liens pour laquelle cet élément est la cible.<br /><br /> Si cet élément est un lien, sa source et la cible ne sont pas affectées.|  
-|Tout|De bits OR sur les autres valeurs.|  
+|Tous|De bits OR sur les autres valeurs.|  
   
 ## <a name="locking-policies"></a>Stratégies de verrouillage  
  En tant qu’auteur du DSL, vous pouvez définir un *stratégie de verrouillage*. Une stratégie de verrouillage modère le fonctionnement de SetLocks(), afin que vous pouvez empêcher verrous spécifiques définir ou d’imposer que les verrous spécifiques doivent être définies. En règle générale, vous utiliseriez une stratégie de verrouillage afin d’empêcher les utilisateurs ou les développeurs d’accidentellement contravening l’utilisation prévue de DSL, de la même manière que vous pouvez déclarer une variable `private`.  

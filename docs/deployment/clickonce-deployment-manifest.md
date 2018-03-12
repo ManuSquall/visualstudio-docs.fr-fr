@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 4e0734079cc3a54666c7e9b736ec1f3284ad891a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7cca74c6b0b5f1c118bb1360184558fc383c40c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifeste de déploiement ClickOnce
 Un manifeste de déploiement est un fichier XML qui décrit un déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], y compris l'identification de la version actuelle de l'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à déployer.  
@@ -39,10 +40,10 @@ Un manifeste de déploiement est un fichier XML qui décrit un déploiement [!IN
 |[\<compatibleFrameworks > élément](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Obligatoire. Identifie les versions du .NET Framework pour lesquelles cette application peut s'installer et s'exécuter.|`SupportUrl`|  
 |[\<dépendance > élément](../deployment/dependency-element-clickonce-deployment.md)|Obligatoire. Identifie la version de l'application à installer pour le déploiement et l'emplacement du manifeste d'application.|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
 |[\<publisherIdentity > élément](../deployment/publisheridentity-element-clickonce-deployment.md)|Requis pour les manifestes signés. Contient des informations sur l'éditeur qui a signé ce manifeste de déploiement.|`Name`<br /><br /> `issuerKeyHash`|  
-|[\<Signature > élément](../deployment/signature-element-clickonce-deployment.md)|Facultatif. Contient les informations nécessaires pour signer numériquement ce manifeste de déploiement.|Aucune|  
+|[\<Signature > élément](../deployment/signature-element-clickonce-deployment.md)|Facultatif. Contient les informations nécessaires pour signer numériquement ce manifeste de déploiement.|Aucun.|  
 |[\<customErrorReporting > élément](../deployment/customerrorreporting-element-clickonce-deployment.md)|Facultatif. Spécifie un URI à afficher en cas d'erreur.|URI|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le fichier manifeste de déploiement identifie le déploiement d'une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], y compris la version actuelle et d'autres paramètres de déploiement. Il fait référence au manifeste d'application, qui décrit la version actuelle de l'application et tous les fichiers contenus dans le déploiement.  
   
  Pour plus d'informations, consultez [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  

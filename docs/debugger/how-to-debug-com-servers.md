@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.com
+f1_keywords:
+- vs.debug.com
 dev_langs:
 - CSharp
 - VB
@@ -21,15 +23,17 @@ helpviewer_keywords:
 - debugging [C++], ADI applications
 - container information
 ms.assetid: 9f013c2b-0306-4b34-ba7f-d4445a874da1
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93cc2f53715fbc76f17d05f53a9fb90dae5f1185
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: a0aedd0f60464ed56bfeb8f6f2e3147680641ea6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-com-servers"></a>Comment : déboguer des serveurs COM
 Le débogage d'applications serveur COM pose un ensemble de problèmes qui ne sont pas toujours faciles à résoudre.  

@@ -1,69 +1,36 @@
 ---
-title: "Test unitaire d’une DLL Visual C++ pour les applications du Windows Store | Microsoft Docs"
+title: "Guide pratique pour tester une DLL Visual C++ conçue pour des applications UWP | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
-caps.latest.revision: 13
-ms.author: douge
-manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 571ea6daab6ea9cbfb30976514e163b5dcbe398d
-ms.lasthandoff: 04/04/2017
-
+ms.author: mblome
+manager: ghogen
+ms.workload:
+- uwp
+author: mikeblome
+ms.openlocfilehash: 02c1e5a2bc4ba10aa1719ace69fc33de79995984
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Test unitaire d’une DLL Visual C++ pour les applications du Windows Store
-Cette rubrique décrit une méthode permettant de créer des tests unitaires pour une DLL C++ pour des applications du Windows Store. La DLL RooterLib implémente une fonction qui calcule une estimation de la racine carrée d'un nombre donné. La DLL peut ensuite être incluse dans une application du Windows Store pour montrer à l'utilisateur les choses amusantes qu'il est possible de faire avec les mathématiques.  
+# <a name="how-to-test-a-visual-c-dll"></a>Guide pratique pour tester une DLL Visual C++
+
+Cette rubrique décrit une manière de créer des tests unitaires pour une DLL C++ destinée à des applications de plateforme Windows universelle (UWP) avec le framework de test Microsoft pour C++. La DLL RooterLib illustre de vagues souvenirs de la théorie de limite du calcul en implémentant une fonction qui calcule une estimation de la racine carrée d'un nombre donné. La DLL peut ensuite être incluse dans une application UWP pour montrer à l’utilisateur les choses amusantes qu’il est possible de faire avec les mathématiques.  
   
  Cette rubrique vous montre comment utiliser les tests unitaires comme première étape du développement. Dans cette approche, vous écrivez d'abord une méthode de test qui vérifie un comportement spécifique dans le système que vous testez, puis vous écrivez le code qui réussit le test. En modifiant l'ordre des procédures suivantes, vous pouvez inverser cette stratégie de manière à écrire d'abord le code que vous souhaitez tester, puis à écrire les tests unitaires.  
   
- Cette rubrique crée également une solution Visual Studio unique et des projets distincts pour les tests unitaires et la DLL que vous souhaitez tester. Vous pouvez également inclure les tests unitaires directement dans le projet DLL, ou vous pouvez créer des solutions distinctes pour les tests unitaires et la DLL. Consultez la page [Ajout de tests unitaires aux applications C++ existantes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) pour obtenir des conseils sur la structure à utiliser.  
+ Cette rubrique crée également une solution Visual Studio unique et des projets distincts pour les tests unitaires et la DLL que vous souhaitez tester. Vous pouvez également inclure les tests unitaires directement dans le projet DLL, ou vous pouvez créer des solutions distinctes pour les tests unitaires et la DLL. Consultez la page [Ajout de tests unitaires aux applications C++ existantes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) pour obtenir des conseils sur la structure à utiliser.
   
-##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
- Cette rubrique contient les tâches suivantes :  
+##  <a name="Create_the_solution_and_the_unit_test_project"></a> Créer la solution et le projet de test unitaire  
   
- [Créer la solution et le projet de test unitaire](#BKMK_Create_the_solution_and_the_unit_test_project)  
+1.  Dans le menu **Fichier**, choisissez **Nouveau** > **Nouveau projet...**.
   
- [Vérifier que les tests s’exécutent dans l’Explorateur de tests](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)  
-  
- [Ajouter le projet DLL à la solution](#BKMK_Add_the_DLL_project_to_the_solution)  
-  
- [Associer le projet de test au projet DLL](#BKMK_Couple_the_test_project_to_the_dll_project)  
-  
- [Augmenter itérativement les tests et les faire réussir](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)  
-  
- [Déboguer un test non réussi](#BKMK_Debug_a_failing_test)  
-  
- [Refactoriser le code sans modifier les tests](#BKMK_Refactor_the_code_without_changing_tests)  
-  
-##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Créer la solution et le projet de test unitaire  
-  
-1.  Dans le menu **Fichier**, choisissez **Nouveau**, puis **Nouveau projet**.  
-  
-2.  Dans la boîte de dialogue Nouveau projet, développez **Installé**, **Visual C++**, puis choisissez **Windows Store**. Choisissez ensuite **Bibliothèque de tests unitaires (applications du Windows Store)** dans la liste des modèles de projet.  
-  
-     ![Créer une bibliothèque de tests unitaires C&#43;&#43;](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
+2.  Dans la boîte de dialogue Nouveau projet, développez **Installé** > **Visual C++**, puis choisissez **Windows universel**. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
   
 3.  Nommez le projet `RooterLibTests`, spécifiez l’emplacement, nommez la solution `RooterLib`, puis vérifiez que la case **Créer le répertoire pour la solution** est cochée.  
   
@@ -73,7 +40,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
   
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")  
   
-     Sachez que :  
+     Prenez note de ce qui suit :  
   
     -   Chaque test est défini à l'aide de `TEST_METHOD(YourTestName){...}`.  
   
@@ -83,11 +50,11 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
   
          Lorsque les tests sont exécutés, une instance de chaque classe de test est créée. Les méthodes de test sont appelées dans un ordre non défini. Vous pouvez définir des méthodes spéciales qui sont appelées avant et après chaque module, classe ou méthode. Pour plus d’informations, consultez [Utilisation de Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) dans MSDN Library.  
   
-##  <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Vérifier que les tests s’exécutent dans l’Explorateur de tests  
+##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Vérifier que les tests s’exécutent dans l’Explorateur de tests  
   
 1.  Insérez le code de test :  
   
-    ```cpp  
+    ```cpp
     TEST_METHOD(TestMethod1)  
     {  
         Assert::AreEqual(1,1);  
@@ -102,13 +69,13 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
   
      ![Explorateur de tests](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
-##  <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Ajouter le projet DLL à la solution  
+##  <a name="Add_the_DLL_project_to_the_solution"></a> Ajouter le projet DLL à la solution  
   
 1.  Dans l'Explorateur de solutions, choisissez le nom de la solution. Dans le menu contextuel, choisissez **Ajouter**, puis **Ajouter un nouveau projet**.  
   
      ![Créer le projet RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")  
   
-2.  Dans la boîte de dialogue **Ajouter un nouveau projet**, choisissez **DLL (applications du Windows Store)**.  
+2.  Dans la boîte de dialogue **Ajouter un nouveau projet**, choisissez **DLL (applications UWP)**.  
   
 3.  Ajoutez le code suivant au fichier **RooterLib.h** :  
   
@@ -162,7 +129,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
   
     ```  
   
-##  <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Associer le projet de test au projet DLL  
+##  <a name="make_the_dll_functions_visible_to_the_test_code"></a> Rendre les fonctions DLL visibles par le code de test  
   
 1.  Ajoutez RooterLib au projet RooterLibTests.  
   
@@ -215,7 +182,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
   
  Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.  
   
-##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Augmenter itérativement les tests et les faire réussir  
+##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Augmenter itérativement les tests et les faire réussir  
   
 1.  Ajoutez un nouveau test :  
   
@@ -276,7 +243,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 > [!TIP]
 >  Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.  
   
-##  <a name="BKMK_Debug_a_failing_test"></a> Déboguer un test ayant échoué  
+##  <a name="Debug_a_failing_test"></a> Déboguer un test ayant échoué  
   
 1.  Ajoutez un autre test à **unittest1.cpp** :  
   
@@ -346,7 +313,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
   
  ![Tous les tests sont concluants](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")  
   
-##  <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Refactoriser le code sans modifier les tests  
+##  <a name="Refactor_the_code_without_changing_tests"></a> Refactoriser le code sans modifier les tests  
   
 1.  Simplifiez le calcul central dans la fonction `SquareRoot` :  
   
@@ -364,4 +331,3 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
     >  Un ensemble stable de tests unitaires corrects est l'assurance que vous n'avez pas créé de bogues lors de la modification du code.  
     >   
     >  Maintenez la refactorisation distincte des autres modifications.
-

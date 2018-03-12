@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: security [Office development in Visual Studio], troubleshooting
-ms.assetid: 6f85dd61-31f5-47da-8409-21ad827eb2dd
-caps.latest.revision: "29"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- security [Office development in Visual Studio], troubleshooting
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 2bf7b639504d6bca53af590d200d9d291ddcd66b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 2ab3571da02fa56cd905369ee44e372aedea4e36
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="troubleshooting-office-solution-security"></a>Dépannage de la sécurité des solutions Office
   Cette rubrique contient des conseils pour résoudre les problèmes courants que vous pouvez rencontrer lorsque vous travaillez avec la sécurisation des solutions Office.  

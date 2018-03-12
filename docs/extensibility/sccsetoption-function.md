@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: SccSetOption
-helpviewer_keywords: SccSetOption function
+f1_keywords:
+- SccSetOption
+helpviewer_keywords:
+- SccSetOption function
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a0bc7ab99c6bc3643ee61b403e4aa0c40c41a63a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 70fe624984adce58191ee7d354185eac0bb527ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccsetoption-function"></a>SccSetOption (fonction)
 Cette fonction définit les options qui contrôlent le comportement du contrôle de source de plug-in.  
@@ -46,13 +51,13 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|L’option a été correctement définie.|  
 |SCC_I_SHARESUBPROJOK|Retourné si `nOption` a été `SCC_OPT_SHARESUBPROJ` et le plug-in de contrôle de code source permet à l’IDE définir le dossier de destination.|  
 |SCC_E_OPNOTSUPPORTED|L’option n’est pas définie et ne doit pas se reposer.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  L’IDE appelle cette fonction pour contrôler le comportement du contrôle de source de plug-in. Le premier paramètre, `nOption`, indique la valeur est définie, tandis que le second, `dwVal`, indique que faire avec cette valeur. Le plug-in stocke ces informations associées à un `pvContext``,` l’IDE doit donc appeler cette fonction après avoir appelé la [SccInitialize](../extensibility/sccinitialize-function.md) (mais pas nécessairement après chaque appel à la [SccOpenProject](../extensibility/sccopenproject-function.md)).  
   
  Résumé des options et leurs valeurs :  

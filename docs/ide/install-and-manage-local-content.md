@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-help-viewer
+ms.technology:
+- vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: hv_manage
+f1_keywords:
+- hv_manage
 helpviewer_keywords:
 - changing content installation source [Help Viewer]
 - updating local content [Help Viewer]
@@ -22,15 +24,17 @@ helpviewer_keywords:
 - Help Viewer, installing local content
 - Help Viewer, downloading content
 ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bd498004568bab80565782e11b46691a7d0ef1f
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload:
+- multiple
+ms.openlocfilehash: be2145f95ac28654852ad4e6d77aa6f33e0ecf8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-and-manage-local-content"></a>Installer et gérer du contenu local
 Microsoft Help Viewer vous permet d’ajouter, de supprimer, de mettre à jour et de déplacer le contenu d’aide installé sur votre ordinateur pour répondre à vos besoins de développement de logiciels.  

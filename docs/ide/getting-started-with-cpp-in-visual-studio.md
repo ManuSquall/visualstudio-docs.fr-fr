@@ -5,15 +5,18 @@ ms.date: 12/04/2017
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
 author: corob-msft
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: c86e7bcfe43eeaa6554efeed6654f34e140d9ea7
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2e0e0709b8a1737e3f78268ec324d4481dac285a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
 
@@ -69,7 +72,7 @@ Ensuite, vous devez ajouter le code nécessaire pour afficher le mot « Hello »
 
    ![Texte d’erreur pour cout](../ide/media/get-started-cpp-intellisense-error.png "Texte d’erreur pour cout")
 
-   Le message d’erreur s’affiche également dans la fenêtre **Liste d’erreurs**. Vous pouvez afficher cette fenêtre en choisissant **Affichage > Liste d’erreurs** dans la barre de menus.
+   Le message d’erreur s’affiche également dans la fenêtre **Liste d’erreurs** . Vous pouvez afficher cette fenêtre en choisissant **Affichage > Liste d’erreurs** dans la barre de menus.
 
    ![Erreur dans la fenêtre Liste d’erreurs](../ide/media/get-started-cpp-error-list.png "Erreur dans la fenêtre Liste d’erreurs")
 
@@ -128,11 +131,11 @@ Vous pouvez déboguer HelloApp pour vérifier si le mot « Hello » s’affiche 
 
 Pour plus d’informations sur le débogage des projets console, consultez [Projets console](../debugger/debugging-preparation-console-projects.md).
 
-## <a name="build-a-release-version-of-the-app"></a>Générer une version de mise en production de l’application
+## <a name="build-a-release-version-of-the-app"></a>Générer une version release de l’application
 
-Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer une version de mise en production de l’application. Les versions de mise en production ne conservent pas les informations de débogage et utilisent des options d’optimisation du compilateur pour créer du code d’une taille plus petite et qui s’exécute plus vite.
+Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer une version Release de l’application. Les versions de mise en production ne conservent pas les informations de débogage et utilisent des options d’optimisation du compilateur pour créer du code d’une taille plus petite et qui s’exécute plus vite.
 
-### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Pour nettoyer les fichiers solution et générer une version de mise en production
+### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Pour nettoyer les fichiers solution et générer une version Release
 
 1. Dans la barre de menus, choisissez **Générer > Nettoyer la solution** pour supprimer les fichiers intermédiaires et les fichiers de sortie créés pendant les générations précédentes.
 
@@ -140,18 +143,18 @@ Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer un
 
 1. Pour changer la configuration de la solution HelloApp de **Debug** à **Release**, dans la barre d’outils, sélectionnez la liste déroulante du contrôle Configurations de solutions, puis choisissez **Release**.
 
-   ![Générer une version de mise en production de l’application](../ide/media/get-started-cpp-set-release-configuration.png "C++IDE_ChangingBuildtoRelease")
+   ![Générer une version Release de l’application](../ide/media/get-started-cpp-set-release-configuration.png "C++IDE_ChangingBuildtoRelease")
 
 1. Générez la solution. Dans la barre de menus, choisissez **Générer > Générer la solution**.
 
 Quand cette génération est terminée, vous avez une nouvelle application prête à être copiée et exécutée dans une fenêtre d’invite de commandes. Cette application est très simple, mais il ne tient qu’à vous de créer des applications plus complexes.
 
-Félicitations ! Vous avez terminé ce guide de démarrage rapide. Pour explorer d’autres exemples, consultez [Exemples Visual Studio](../ide/visual-studio-samples.md).
+Félicitations ! Vous avez terminé ce guide de démarrage rapide. Pour explorer d’autres exemples, consultez [Visual Studio Samples](../ide/visual-studio-samples.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 [Utilisation de l’IDE de Visual Studio pour le développement de bureau C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[Procédure pas à pas : création d’un composant simple avec Visual C# ou Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+[Procédure pas à pas : création d'une application simple avec C# ou Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
 [Conseils de productivité pour Visual Studio](../ide/productivity-tips-for-visual-studio.md)  
 [Exemples Visual Studio](../ide/visual-studio-samples.md)  
 [Bien démarrer avec le développement dans Visual Studio](../ide/get-started-developing-with-visual-studio.md)

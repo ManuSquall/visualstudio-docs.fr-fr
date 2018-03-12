@@ -1,22 +1,26 @@
 ---
 title: "Fenêtre d’aide dans Outils R pour Visual Studio | Microsoft Docs"
+description: "L’aide R est directement intégrée à la fenêtre interactive de Visual Studio via la commande « ? » ."
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 001/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
-ms.devlang: r
+ms.technology:
+- devlang-r
+dev_langs:
+- R
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 7f403218d6ecdff8fceb160e044cb41b1b6b96a6
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload:
+- data-science
+ms.openlocfilehash: 2adaa5713018071ee94c14e2cb35959c256eb1d1
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Aide dans Outil R pour Visual Studio
 
@@ -27,7 +31,7 @@ L’aide R est intégrée directement à la fenêtre interactive de Visual Stud
 > [!Tip]
 > À l’instar des autres fenêtres dans Visual Studio, vous pouvez réorganiser et ancrer la fenêtre d’aide comme bon vous semble. Consultez [Personnaliser les dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Pour ouvrir les résultats de l’aide dans un navigateur, sélectionnez le menu **Outils R > Options** et affectez à la propriété **Navigateur de l’aide R** la valeur `External`. Consultez [Options](options.md).
+> Pour ouvrir les résultats de l’aide dans un navigateur, sélectionnez le menu **Outils R > Options** et affectez à la propriété **Navigateur de l’aide R** la valeur `External`. Consultez [Options](options-for-r-tools-in-visual-studio.md).
 
 Pour lancer une recherche dans l’aide, utilisez la commande `??` suivie du terme de recherche. Utilisez des guillemets si le terme de recherche contient des espaces :
 
@@ -51,7 +55,7 @@ Les développeurs recherchent souvent de l’aide sur les noms de fonctions, les
     ![Appel de l’aide par le biais du menu contextuel](media/help-right-click.png)
 
 > [!Tip]
-> Pour ouvrir l’aide intégrée dans un navigateur, sélectionnez **Outils R > Options** et affectez à **Navigateur web (F1)** la valeur `External`. Consultez [Options](options.md).
+> Pour ouvrir l’aide intégrée dans un navigateur, sélectionnez **Outils R > Options** et affectez à **Navigateur web (F1)** la valeur `External`. Consultez [Options](options-for-r-tools-in-visual-studio.md).
 
 ## <a name="integrated-stackoverflow-search"></a>Recherche dans StackOverflow intégrée
 
@@ -63,4 +67,4 @@ Vous pouvez modifier la chaîne de portée ajoutée, `R site:stackoverflow`, à 
 
 ![Changement de l’option de chaîne de recherche web (F1)](media/options-dialog.png)
 
-Si vous préférez afficher les résultats dans un navigateur, modifiez l’option **Navigateur web (F1)** comme décrit dans [Options](options.md).
+Si vous préférez afficher les résultats dans un navigateur, modifiez l’option **Navigateur web (F1)** comme décrit dans [Options](options-for-r-tools-in-visual-studio.md).

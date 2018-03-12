@@ -9,11 +9,12 @@ helpviewer_keywords:
 - Live Unit Testing What's New
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 58e3d44e1644c8582ee423cc4c1572af21efe763
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 8ccfeec23d0fbe6edd186f63e890fbfc0e75aeef
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Nouveautés de Live Unit Testing
 

@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: IntelliTest, Test generation
-ms.assetid: B6CADFD1-42C7-4FC0-B41F-0E9F8291A702
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 5bc8b15d2bd8de53cabc11986e9e848aea973c39
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- IntelliTest, Test generation
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: 478dbdd71845d8bc0eb98250318b853ba4b8e5e6
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="test-generation"></a>Génération de tests
 

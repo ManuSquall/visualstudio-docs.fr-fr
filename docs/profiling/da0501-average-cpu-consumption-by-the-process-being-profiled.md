@@ -1,5 +1,5 @@
 ---
-title: "DA0501 : Consommation UC moyenne par le processus en cours de profilage | Microsoft Docs"
+title: 'DA0501 : consommation processeur moyenne par le processus en cours de profilage. | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -16,18 +16,19 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5de803a82110720a78b5b80cada7dad1c39c46c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b17920bea82eff6e71176ff0493faf063d4c2161
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501 : Consommation UC moyenne par le processus en cours de profilage
 |||  
 |-|-|  
 |ID de règle|DA501|  
-|Catégorie|Analyse des ressources|  
-|Méthode de profilage|Tout|  
+|Category|Analyse des ressources|  
+|Méthode de profilage|Tous|  
 |Message|Consommation UC moyenne par le processus en cours de profilage.|  
 |Type de règle|Information|  
   

@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: CV_CPU_TYPE_e enumeration
+dev_langs:
+- C++
+helpviewer_keywords:
+- CV_CPU_TYPE_e enumeration
 ms.assetid: df470a7e-1d04-448e-b920-c731189514fa
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b20a81fafa3ff003c17e2aa10f4ff4341ba57449
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: b8b5ba35bda24f33461d740d5ec0d1591113e43d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 Spécifie le processeur cible.  
@@ -95,10 +100,10 @@ typedef enum CV_CPU_TYPE_e {
 } CV_CPU_TYPE_e;  
 ```  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les valeurs de cette énumération sont retournées par un appel à la [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : cvconst.h  
   
 ## <a name="see-also"></a>Voir aussi  

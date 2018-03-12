@@ -18,11 +18,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9c5d24c8a3a2bb81c87b2cc405a6885b8f23374
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sdk-helpers-for-debugging"></a>Programmes d’assistance du Kit de développement logiciel pour le débogage
 Ces fonctions et les déclarations sont des fonctions d’assistance globales pour l’implémentation des moteurs de débogage, les évaluateurs d’expression et les fournisseurs de symbole en C++.  
@@ -54,7 +55,7 @@ HRESULT GetMetric(
 |---------------|-----------------|  
 |pszMachine|[in] Nom d’un ordinateur à distance dont Registre est écrits (`NULL` signifie l’ordinateur local).|  
 |strType Argument de type|[in] Un des types de mesure.|  
-|guidSection|[in] GUID de moteur spécifique, d’évaluateur, exception, etc.. Spécifie une sous-section sous un type de mesure pour un élément spécifique.|  
+|guidSection|[in] GUID de moteur spécifique, d’évaluateur, exception, etc. Spécifie une sous-section sous un type de mesure pour un élément spécifique.|  
 |pszMetric|[in] La mesure doit être obtenu. Cela correspond au nom d’une valeur spécifique.|  
 |pdwValue|[in] L’emplacement de stockage de la valeur de la métrique. Il existe plusieurs types de GetMetric qui peut retourner une valeur DWORD (comme dans cet exemple), une chaîne BSTR, un GUID ou un tableau de GUID.|  
 |pszAltRoot|[in] Une racine de Registre de remplacement à utiliser. La valeur `NULL` à utiliser la valeur par défaut.|  
@@ -76,7 +77,7 @@ HRESULT SetMetric(
 |Paramètre|Description|  
 |---------------|-----------------|  
 |strType Argument de type|[in] Un des types de mesure.|  
-|guidSection|[in] GUID de moteur spécifique, d’évaluateur, exception, etc.. Spécifie une sous-section sous un type de mesure pour un élément spécifique.|  
+|guidSection|[in] GUID de moteur spécifique, d’évaluateur, exception, etc. Spécifie une sous-section sous un type de mesure pour un élément spécifique.|  
 |pszMetric|[in] La mesure doit être obtenu. Cela correspond au nom d’une valeur spécifique.|  
 |dwValue|[in] L’emplacement de stockage de la valeur dans la mesure. Il existe plusieurs types de SetMetric qui peut stocker une valeur DWORD (dans cet exemple), une chaîne BSTR, un GUID ou un tableau de GUID.|  
 |fUserSpecific|[in] TRUE si la métrique est spécifique à l’utilisateur et si elle doit être écrite dans la ruche de l’utilisateur au lieu de la ruche de l’ordinateur local.|  
@@ -97,7 +98,7 @@ HRESULT RemoveMetric(
 |Paramètre|Description|  
 |---------------|-----------------|  
 |strType Argument de type|[in] Un des types de mesure.|  
-|guidSection|[in] GUID de moteur spécifique, d’évaluateur, exception, etc.. Spécifie une sous-section sous un type de mesure pour un élément spécifique.|  
+|guidSection|[in] GUID de moteur spécifique, d’évaluateur, exception, etc. Spécifie une sous-section sous un type de mesure pour un élément spécifique.|  
 |pszMetric|[in] La mesure doit être supprimée. Cela correspond au nom d’une valeur spécifique.|  
 |pszAltRoot|[in] Une racine de Registre de remplacement à utiliser. La valeur `NULL` à utiliser la valeur par défaut.|  
   
@@ -267,7 +268,7 @@ HRESULT EnumMetricSections(
 |*[clé de Registre]*|`HKEY_CURRENT_USER` ou `HKEY_LOCAL_MACHINE`.|  
 |*[racine version]*|La version de Visual Studio (par exemple, `7.0`, `7.1`, ou `8.0`). Toutefois, cette racine peut également être modifiée à l’aide de la **/rootsuffix** basculer vers **devenv.exe**. VSIP, ce modificateur est généralement pour **Exp**, de sorte que la racine de la version serait, par exemple, 8.0Exp.|  
 |*[métrique racine]*|Il s’agit soit `AD7Metrics` ou `AD7Metrics(Debug)`, selon que la version debug de dbgmetric.lib est utilisée. **Remarque :** ou non dbgmetric.lib est utilisé, cette convention d’affectation de noms doit être respectée si vous avez des différences entre debug et release versions doivent être mentionnées dans le Registre.|  
-|*[type de mesure]*|Le type de mesure à écrire : `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etc.. Elles sont définies comme dbgmetric.h comme `metricTypeXXXX`, où `XXXX` est le nom de type spécifique.|  
+|*[type de mesure]*|Le type de mesure à écrire : `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etc. Elles sont définies comme dbgmetric.h comme `metricTypeXXXX`, où `XXXX` est le nom de type spécifique.|  
 |*[métrique]*|Le nom d’une entrée à assigner une valeur pour définir la métrique. L’organisation réelle des métriques varie selon le type de mesure.|  
 |*[valeur métrique]*|La valeur assignée à la métrique. Le type de que la valeur doit être (string), nombre, etc. dépend de la métrique.|  
   
@@ -420,7 +421,7 @@ HRESULT EnumMetricSections(
 |*[types d’exceptions]*|Un titre général pour la sous-clé de la classe d’exceptions qui peuvent être gérés. Les noms par défaut sont **des Exceptions C++**, **les Exceptions Win32**, **Exceptions Common Language Runtime**, et **contrôles d’exécution natifs**. Ces noms sont également utilisés pour identifier une classe d’exception à l’utilisateur particulière.|  
 |*[exception]*|Un nom pour une exception : par exemple, **_com_error** ou **contrôle d’interruption**. Ces noms sont également utilisés pour identifier une exception particulière à l’utilisateur.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  Ces fichiers se trouvent dans le [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] répertoire d’installation de kit de développement logiciel (par défaut, *[lecteur]*\Program Files\Microsoft Visual Studio 2010 SDK\\).  
   
  En-tête : includes\dbgmetric.h  

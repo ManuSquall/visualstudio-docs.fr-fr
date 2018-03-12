@@ -4,18 +4,22 @@ ms.custom:
 ms.date: 08/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: deployment, VSIX
+helpviewer_keywords:
+- deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
 manager: ghogen
-ms.openlocfilehash: c6dfe76ef1bfcfbcb0c39c33ea01668cc96f2596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5623ea382266fdbcd59bbe57b71522a7a1f4a31e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="locating-visual-studio"></a>Localisation de Visual Studio
 

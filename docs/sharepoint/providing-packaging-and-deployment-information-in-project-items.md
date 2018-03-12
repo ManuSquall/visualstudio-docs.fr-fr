@@ -26,16 +26,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, feature receiver
 - feature receiver [SharePoint development in Visual Studio]
 - safe controls [SharePoint development in Visual Studio]
-ms.assetid: 209ff3b9-d701-4d27-9d24-005fcc811cbe
-caps.latest.revision: "10"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 5f12b3af8f49270cc914e47a37077265794bf0be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: adc98932391e726e1704ebe88ec0a9120f7bb678
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="providing-packaging-and-deployment-information-in-project-items"></a>Fourniture d'informations de création de packages et de déploiement dans des éléments de projet
   Tous les éléments de projet SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ont des propriétés que vous pouvez utiliser pour fournir des données supplémentaires lorsque le projet est déployé sur SharePoint. Ces propriétés sont les suivantes :  

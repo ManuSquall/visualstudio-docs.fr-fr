@@ -15,16 +15,15 @@ helpviewer_keywords:
 - spelling checker, worksheets
 - worksheets, checking spelling
 - spelling, checking in worksheets
-ms.assetid: 16367c5d-2075-4174-bb87-dfc59f02c84c
-caps.latest.revision: "53"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f5fbd9bf79addf758b18fc21aebd43ceaf2dc3d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ed71e56c72a35f891e797b4c930e5ade9e83e332
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Comment : vérifier l'orthographe dans les feuilles de calcul par programmation
   Vous pouvez vérifier par programmation l’orthographe des mots contenus dans une feuille de calcul. La boîte de dialogue **Orthographe** s’affiche automatiquement si des mots mal orthographiés figurent dans la feuille de calcul.  

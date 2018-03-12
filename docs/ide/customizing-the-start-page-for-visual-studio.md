@@ -8,22 +8,21 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
-- vs.startpage
-- VS.StartPage.HowDoI
 - vs.ToolsOptionsPages.Startup
 helpviewer_keywords:
 - Start Page [Visual Studio]
 - customizing Start Page [Visual Studio]
-- Visual Studio Start page
-caps.latest.revision: "45"
+- Visual Studio Start Page
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 45cfb501103c762f7af6fc130a981028c262540b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload:
+- multiple
+ms.openlocfilehash: ecc22bd23b5b245173321ed3a12379c6fe5622af
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Personnaliser la page de démarrage de Visual Studio
 

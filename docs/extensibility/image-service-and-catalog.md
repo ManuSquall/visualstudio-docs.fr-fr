@@ -7,15 +7,17 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-caps.latest.revision: "37"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5813788834a7a5a99c10fe6dafc35a300bac007
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-service-and-catalog"></a>Catalogue et le Service d’images
 Ce guide contient des conseils et meilleures pratiques pour arrêter le Service d’images Visual Studio et le catalogue d’Image introduite dans Visual Studio 2015.  
@@ -108,7 +110,7 @@ Ce guide contient des conseils et meilleures pratiques pour arrêter le Service 
 |-|-|  
 |**Sous-élément**|**Définition**|  
 |Import|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel|  
-|Guid|Le symbole représente un GUID et doit correspondre au GUID de mise en forme|  
+|GUID|Le symbole représente un GUID et doit correspondre au GUID de mise en forme|  
 |Id|Le symbole représente un ID et doit être un entier non négatif|  
 |Chaîne|Le symbole représente une valeur de chaîne arbitraire|  
   
@@ -149,7 +151,7 @@ Ce guide contient des conseils et meilleures pratiques pour arrêter le Service 
 |||  
 |-|-|  
 |**Attribut**|**Définition**|  
-|Guid|[Obligatoire] Le GUID du moniker d’image|  
+|GUID|[Obligatoire] Le GUID du moniker d’image|  
 |Id|[Obligatoire] La partie de l’ID du moniker d’image|  
 |AllowColorInversion|[Facultatif, par défaut la valeur true] Indique si l’image peut avoir ses couleurs inversées par programmation les lorsqu’il est utilisé sur un arrière-plan sombre.|  
   
@@ -175,7 +177,7 @@ Ce guide contient des conseils et meilleures pratiques pour arrêter le Service 
 ||||  
 |-|-|-|  
 |**Élément**|**Attributs (tous requis)**|**Définition**|  
-|\<Taille >|Valeur|La source est utilisée pour les images de la taille donnée (en unités de l’appareil). L’image sera carrée.|  
+|\<Taille >|Value|La source est utilisée pour les images de la taille donnée (en unités de l’appareil). L’image sera carrée.|  
 |\<SizeRange >|MinSize, MaxSize|La source servira pour les images à partir de MinSize à MaxSize (en unités de périphérique) (inclus). L’image sera carrée.|  
 |\<Dimensions >|Largeur, hauteur|La source est utilisée pour les images de donnée de largeur et hauteur (en unités de l’appareil).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source servira pour les images à partir de la largeur/hauteur minimale de la largeur/hauteur maximale (en unités de périphérique) (inclus).|  
@@ -206,7 +208,7 @@ Ce guide contient des conseils et meilleures pratiques pour arrêter le Service 
 |||  
 |-|-|  
 |**Attribut**|**Définition**|  
-|Guid|[Obligatoire] Le GUID du moniker d’image|  
+|GUID|[Obligatoire] Le GUID du moniker d’image|  
 |Id|[Obligatoire] La partie de l’ID du moniker d’image|  
 |Ressource externe|[Facultatif, false de valeur par défaut] Indique si le moniker d’image fait référence à une image dans le manifeste actuel.|  
   
@@ -511,7 +513,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]  
 ```  
   
- Le **IconMappingFilename** est un chemin d’accès relatif enraciné implicitement à $ $PackageFolder (comme dans l’exemple ci-dessus), ou un chemin d’accès absolu explicitement située dans le répertoire défini par une variable d’environnement, telles que @"%UserProfile%\ dir1\dir2\MyMappingFile.csv ».  
+ Le **IconMappingFilename** est un chemin d’accès relatif enraciné implicitement à $ $PackageFolder (comme dans l’exemple ci-dessus), ou un chemin d’accès absolu explicitement située dans le répertoire défini par une variable d’environnement, telles que @"%UserProfile%\ dir1\dir2\MyMappingFile.csv».  
   
 ## <a name="how-do-i-port-a-project-system"></a>Comment de port d’un système de projet  
  **Comment fournir ImageMonikers pour un projet**  

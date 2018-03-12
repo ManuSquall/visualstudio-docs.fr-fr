@@ -17,17 +17,18 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9209d5f02d543cba3dd0dcec8f5492e2f64b9cef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff2dbc1d98375b7199ab710412639fe4333c342d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010 : GetHashCode coûteux
 |||  
 |-|-|  
 |ID de règle|DA0010|  
-|Catégorie|Utilisation du .NET Framework|  
+|Category|Utilisation du .NET Framework|  
 |Méthodes de profilage|Échantillonnage<br /><br /> Mémoire .NET|  
 |Message|Les fonctions GetHashCode doivent être peu coûteuses et n’allouer aucune mémoire. Réduisez si possible la complexité de la fonction de code de hachage.|  
 |Type de message|Warning|  

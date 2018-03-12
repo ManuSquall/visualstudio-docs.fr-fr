@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8b1fa4647cd5b145d19e2264381b186394be814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1008e1c81c6d99bc9fa0615263cf023a56101435
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Quel &#39; nouveauté dans le Kit de développement logiciel Visual Studio 2015
 Le Kit de développement logiciel Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes pour Visual Studio 2015, Visual Studio 2015 mise à jour et Visual Studio 2017.  
@@ -53,7 +54,7 @@ Le Kit de développement logiciel Visual Studio a les fonctionnalités nouvelles
  Pour C++, l’Assistant VSPackage prend en charge les commandes de menu, les fenêtres Outil et les éditeurs personnalisés. Recherchez dans le **nouveau projet** boîte de dialogue de **Visual C++ / extensibilité**.  
   
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>Assemblys de référence de kit de développement logiciel Visual Studio via NuGet  
- Pour une meilleure portabilité et le partage de projets d’extensibilité, vous pouvez utiliser les versions de NuGet des assemblys de référence du Kit de développement logiciel Visual Studio.  Ils sont disponibles sur [nuget.org](http://www.nuget.org) publié par [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) et peuvent être facilement ajoutés à votre projet ou solution via Visual Studio **fait référence à / gérer NuGet Packages** boîte de dialogue. Vous pouvez ajouter des références aux assemblys d’extensibilité spécifique ou tous le Kit de développement Visual Studio fait référence à des assemblys à la fois à l’aide du Kit de développement logiciel Visual Studio [package de métadonnées](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Pour plus d’informations sur NuGet, consultez le [documentation de NuGet](http://docs.microsoft.com/NuGet) et [Package Manager UI](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI) rubriques.  
+ Pour une meilleure portabilité et le partage de projets d’extensibilité, vous pouvez utiliser les versions de NuGet des assemblys de référence du Kit de développement logiciel Visual Studio.  Ils sont disponibles sur [nuget.org](http://www.nuget.org) publié par [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) et peuvent être facilement ajoutés à votre projet ou solution via Visual Studio **fait référence à / gérer NuGet Packages** boîte de dialogue. Vous pouvez ajouter des références aux assemblys d’extensibilité spécifique ou tous le Kit de développement Visual Studio fait référence à des assemblys à la fois à l’aide du Kit de développement logiciel Visual Studio [package de métadonnées](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Pour plus d’informations sur NuGet, consultez le [documentation de NuGet](/NuGet) et [Package Manager UI](/NuGet/Tools/Package-Manager-UI) rubriques.  
   
  Lorsque vous utilisez les versions de NuGet des assemblys de référence du Kit de développement logiciel Visual Studio, un autre utilisateur n’a pas besoin d’installer le Kit de développement Visual Studio pour ouvrir et générer votre projet.  Les assemblys de référence de NuGet et outils de génération Visual Studio SDK installe automatiquement sur leur ordinateur pour ce projet.  
   

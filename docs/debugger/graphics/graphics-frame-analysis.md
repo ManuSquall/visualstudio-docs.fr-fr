@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.graphics.frameanalysis
-ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
-caps.latest.revision: "9"
+f1_keywords:
+- vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfa87ecba50c2f731624b08719c9799923acf45e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="graphics-frame-analysis"></a>Analyse des frames graphiques
 Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer pour analyser et optimiser les performances de rendu de votre jeu ou application Direct3D.  
@@ -146,37 +148,32 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
 ### <a name="gpu-counters"></a>Compteurs GPU  
  La prise en charge des compteurs matériels GPU varie en fonction du matériel.  
   
- Comme aucun des GPU d'ordinateur actuellement proposés par Intel, AMD ou nVidia n'assure une prise en charge sûre des compteurs matériels GPU, l'analyse des frames ne collecte pas de données des compteurs de ces matériels. En revanche, l'analyse des frames collecte les données des compteurs matériels de ces GPU, qui les prennent correctement en charge :  
+ Comme aucun des GPU d'ordinateur actuellement proposés par Intel, AMD ou nVidia n'assure une prise en charge sûre des compteurs matériels GPU, l'analyse des frames ne collecte pas de données des compteurs de ces matériels. Toutefois, l’analyse des frames collecte des compteurs matériels depuis le GPU suivant, qui les prend en charge fiable :  
   
--   SOC Qualcomm (modèles compatibles avec Windows Phone) ;  
-  
--   nVidia T40 (Tegra4).  
+-   nVidia T40 (Tegra4)
   
  Aucune autre plateforme prenant en charge l'analyse des frames n'assure de collecte auprès des compteurs matériels GPU.  
   
 > [!NOTE]
 >  Dans la mesure où les compteurs matériels GPU sont des ressources matérielles, plusieurs passages peuvent être nécessaires pour collecter l'ensemble des compteurs matériels pour chaque variante de rendu. Ainsi, l'ordre dans lequel les compteurs GPU sont collectés n'est pas spécifié.  
   
-### <a name="windows-phone"></a>Windows Phone  
- Horodatages, les requêtes d’occlusion et les compteurs matériels GPU sont uniquement pris en charge sur les appareils Windows Phone initialement équipés de Windows Phone 8.1 ou Windows Phone 10. L'analyse des frames en a besoin pour lire le fichier journal de graphisme. Les appareils Windows Phone qui étaient initialement équipés de Windows Phone 8 ne gèrent pas l’analyse des frames, y compris les combinés qui ont été mis à jour pour Windows Phone 8.1 ou Windows Phone 10.  
-  
 ## <a name="unsupported-scenarios"></a>Scénarios non pris en charge  
  Certains modes d'utilisation de l'analyse des frames ne sont pas pris en charge ou sont simplement déconseillés.  
   
-### <a name="warp"></a>WARP  
- L'analyse des frames vise à profiler et à améliorer les performances de rendu sur du vrai matériel. Si l'exécution de l'analyse des frames sur des appareils WARP n'est pas interdite (l'émulateur Windows Phone fonctionne sur WARP), il n'est généralement pas payant d'insister, car l'exécution de WARP sur une UC haut de gamme reste plus lente que sur le moins performant des GPU actuels et les performances de WARP peuvent varier grandement en fonction de l'UC sur lequel il s'exécute.  
-  
-### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>Lecture de captures d'un niveau de fonctionnalité élevé sur des appareils moins élaborés  
+### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>Lecture de captures d’un niveau de fonctionnalité élevé sur des appareils moins élaborés  
  Dans Graphics Analyzer, quand vous lisez un fichier journal de graphisme qui utilise un niveau de fonctionnalité trop élevé pour l'ordinateur de lecture, il repasse automatiquement à WARP. Dans l'analyse des frames, il ne repasse pas explicitement à WARP et une erreur est générée (si WARP est utile pour examiner la justesse de votre application Direct3D, il ne l'est pas pour examiner ses performances).  
   
 > [!NOTE]
->  Bien qu'il soit important de ne pas perdre de vue les problèmes de niveau de fonctionnalité, vous pouvez capturer et lire les fichiers journaux de graphisme sur des configurations matérielles et des appareils différents. Par exemple, vous pouvez capturer des informations graphiques sur un Windows Phone et les lire sur un ordinateur de bureau, et la réciproque est également prise en charge. Dans les deux cas, le journal de graphisme peut être lu tant que le fichier journal ne contient pas d'API ou n'utilise pas des niveaux de fonctionnalité qui ne sont pas pris en charge sur l'ordinateur de lecture.  
+>  Bien qu’il soit important de ne pas perdre de vue les problèmes de niveau de fonctionnalité, vous pouvez capturer et lire les fichiers journaux de graphisme sur des configurations matérielles et des appareils différents. Le journal de graphisme peut être lu tant que le fichier journal ne contient des API ou utiliser des niveaux de fonctionnalité qui ne sont pas pris en charge sur l’ordinateur de lecture.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D version 10 et inférieure  
  Si votre application appelle l'API Direct3D 10, l'analyse des frames ne reconnaîtra ni ne profilera ces appels, même s'ils sont reconnus et utilisés par d'autres outils Graphics Analyzer.
   
 > [!NOTE]
 >  Cela vaut uniquement pour les appels d’API Direct3D que vous utilisez, et non aux niveaux de fonctionnalité.
+
+### <a name="warp"></a>WARP  
+ L'analyse des frames vise à profiler et à améliorer les performances de rendu sur du vrai matériel. Analyse des frames en cours d’exécution sur des appareils WARP n’est pas bloqué, mais n’est pas généralement insister, car il est en cours d’exécution sur une UC haut de gamme de WARP est plus lente que même les moins GPU actuels, et étant donné que les performances de WARP peuvent varier considérablement en fonction de l’UC Il s’exécute sur.  
   
 ##  <a name="Variants"></a>Variantes  
  Chaque modification de l’analyse des frames permet à la façon dont un frame est affiché pendant la lecture est appelée un *variante*. Les variantes examinées par l‘analyse des frames correspondent à des modifications courantes et relativement simples que vous pourriez apporter pour améliorer les performance de rendu ou la qualité visuelle de votre application (par exemple, en réduisant la taille des textures, en utilisant la compression de texture ou en autorisant différents types d‘anticrénelage). Les variantes substituent le contexte et les paramètres de rendu habituels de votre application. Voici un résumé :  
@@ -184,9 +181,9 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
 |Variante|Description|  
 |-------------|-----------------|  
 |**Taille de la fenêtre d’affichage 1 x 1**|Réduit les dimensions de la fenêtre d'affichage sur toutes les cibles de rendu à 1x1 pixels.<br /><br /> Pour plus d’informations, consultez [variante de taille Viewport 1 x 1](1x1-viewport-size-variant.md)|  
-|**0 MSAA**|Désactive l‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) sur toutes les cibles de rendu.<br /><br /> Pour plus d’informations, consultez [0 x / 2 x / 4 MSAA variantes](0x-2x-4x-msaa-variants.md)|  
-|**2 MSAA**|Active l‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) 2x sur toutes les cibles de rendu.<br /><br /> Pour plus d’informations, consultez [0 x / 2 x / 4 MSAA variantes](0x-2x-4x-msaa-variants.md)|  
-|**4 MSAA**|Active l‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) 4x sur toutes les cibles de rendu.<br /><br /> Pour plus d’informations, consultez [0 x / 2 x / 4 MSAA variantes](0x-2x-4x-msaa-variants.md)|  
+|**0x MSAA**|Désactive l‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) sur toutes les cibles de rendu.<br /><br /> Pour plus d’informations, consultez [0 x / 2 x / 4 MSAA variantes](0x-2x-4x-msaa-variants.md)|  
+|**2x MSAA**|Active l‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) 2x sur toutes les cibles de rendu.<br /><br /> Pour plus d’informations, consultez [0 x / 2 x / 4 MSAA variantes](0x-2x-4x-msaa-variants.md)|  
+|**4x MSAA**|Active l‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) 4x sur toutes les cibles de rendu.<br /><br /> Pour plus d’informations, consultez [0 x / 2 x / 4 MSAA variantes](0x-2x-4x-msaa-variants.md)|  
 |**Filtrage de Texture de point**|Définit le mode de filtrage `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtrage de texture de point) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [Point, bilinéaire, trilinéaire et ANISOTROPIQUE variantes de filtrage de Texture](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtrage de Texture bilinéaire**|Définit le mode de filtrage `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtrage de texture bilinéaire) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [Point, bilinéaire, trilinéaire et ANISOTROPIQUE variantes de filtrage de Texture](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtrage de Texture trilinéaire**|Définit le mode de filtrage `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtrage de texture trilinéaire) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [Point, bilinéaire, trilinéaire et ANISOTROPIQUE variantes de filtrage de Texture](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  

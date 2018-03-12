@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: ASP.NET, web applications, deployment, publishing
+helpviewer_keywords:
+- ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16bc087e6c4a12d3f70e2e71ba644faab9567fee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/19/2018
 ---
 # Quelles options de publication choisir ?
 
@@ -30,26 +34,24 @@ ms.lasthandoff: 10/31/2017
 
 Sous l’onglet **Publier**, vous pouvez sélectionner un profil de publication existant, en importer un ou en créer un à l’aide des options décrites ici.
 
-## Azure App Service
+## Azure App Service Web Apps
 
-[Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) permet aux développeurs de créer rapidement différentes applications web et services évolutifs sans gestion d’infrastructure.
+[Azure App Service Web Apps](/azure/app-service/app-service-web-overview) (ou simplement Web Apps) permet aux développeurs de créer rapidement différentes applications web et services évolutifs sans gestion d’infrastructure.
 
-Pour les applications web en particulier, un plan App Service est le conteneur d’une [*application web*](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/), qui s’apparente à un hôte web classique. Autrement dit, une application web fournit les ressources de calcul nécessaires pour exécuter votre code côté serveur et le rendre disponible sur Internet.
-
-Vous déterminez la puissance de calcul d’une application web en choisissant un [plan ou niveau tarifaire](https://azure.microsoft.com/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/) pour l’App Service qui le contient. Vous pouvez avoir plusieurs applications web (et d’autres types d’application) qui partagent le même plan App Service sans modifier le niveau tarifaire. Par exemple, vous pouvez héberger des applications web de développement, intermédiaires et de production dans le même plan App Service.
+Vous déterminez la puissance de calcul d’une application web en choisissant un [plan ou niveau tarifaire](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) pour l’App Service qui le contient. Vous pouvez avoir plusieurs applications web (et d’autres types d’application) qui partagent le même plan App Service sans modifier le niveau tarifaire. Par exemple, vous pouvez héberger des applications web de développement, intermédiaires et de production dans le même plan App Service.
 
 Un plan App Service s’exécute sur des machines virtuelles hébergées dans le cloud Azure, mais ces machines virtuelles sont gérées pour vous. Chaque application Web d’un plan App Service reçoit une URL *.azurewebsites.net \* unique. Tous les niveaux tarifaires payants permettent d’attribuer des noms de domaine personnalisés au site.
 
-### Quand choisir Azure App Service
+### Quand choisir Azure App Service Web Apps ?
 
 - Vous voulez déployer une application web accessible par Internet.
 - Vous voulez automatiquement mettre à l’échelle votre application web en fonction de la demande sans avoir à la redéployer.
 - Vous ne voulez pas gérer l’infrastructure de serveur (y compris les mises à jour logicielles).
 - Vous n’avez pas besoin de personnaliser les ordinateurs serveur qui hébergent votre application web.
 
-
 > Si vous voulez utiliser Azure App Service dans votre centre de données ou sur d’autres ordinateurs locaux, vous pouvez le faire à l’aide d’[Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
+Pour plus d’informations sur la publication des applications ASP.NET Core, consultez [Publier une application web ASP.NET Core sur Azure App Service à l’aide de Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## Machines virtuelles Azure
 
@@ -83,7 +85,7 @@ Notez que, si pour une raison quelconque (par exemple, l’accès à l’ordinat
 - Vous avez besoin d’un déploiement de test local uniquement.
 - Vous voulez examiner et éventuellement modifier les fichiers d’application indépendamment avant de les envoyer vers une autre cible de déploiement.
 
-
+Pour plus d’informations sur le déploiement des applications .NET Core, consultez [Déploiement des applications .NET Core avec Visual Studio](/dotnet/core/deploying/deploy-with-vs).
 
 ## Cibles personnalisées
 
@@ -103,3 +105,5 @@ Vous pouvez créer autant de profils de déploiement personnalisés dans Visual 
 - Vous utilisez des services cloud sur un autre fournisseur qu’Azure accessible via des URL.
 - Vous voulez effectuer le déploiement à l’aide d’autres informations d’identification que celles que vous utilisez dans Visual Studio ou que celles directement liées à vos comptes Azure.
 - Vous voulez supprimer les fichiers de la cible à chaque déploiement.
+
+Pour plus d’informations sur la publication sur IIS, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) et [Débogage distant de ASP.NET sur un ordinateur IIS distant](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).

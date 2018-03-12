@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: IntelliTest, Attribute glossary
-ms.assetid: 557C7869-48BE-4B82-9563-1FF356ABACDB
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 71f8adb78c594b6558d570bf79b7535a7517ddbe
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- IntelliTest, Attribute glossary
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: 0eab751276537de30de095d200fc0f0ffcb4ad43
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="attribute-glossary"></a>Glossaire des attributs
 

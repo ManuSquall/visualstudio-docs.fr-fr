@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,17 +14,20 @@ f1_keywords:
 - vs.vsip.LangServWiz.langSpec
 - vs.vsip.LangServWiz.langInfo
 - vs.vsip.LangServWiz.langServOpts
-helpviewer_keywords: language services, developing
+helpviewer_keywords:
+- language services, developing
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e05fb3f0a33c0f033733c40b17d636243c18ee22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: b7a88c00e980cb86764958886d737d5113dfe1fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-a-legacy-language-service"></a>Développement d’un Service de langage hérité
 Cette section fournit des liens vers des rubriques qui vous aident à créer un service de langage hérité.  

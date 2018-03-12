@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: msbuild, Item functions
+helpviewer_keywords:
+- msbuild, Item functions
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
-caps.latest.revision: "28"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 6ca0ed4d1f895216e9fb3a015796a2f9e4f95087
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="item-functions"></a>Fonctions d'élément
 À compter de MSBuild 4.0, le code dans les tâches et les cibles peut appeler des fonctions d’élément pour obtenir des informations sur les éléments du projet. Ces fonctions simplifient l’obtention des éléments Distinct() et sont plus rapides que l’exécution d’une boucle dans les éléments.  
@@ -62,7 +65,7 @@ ms.lasthandoff: 10/31/2017
 |`Reverse`|`@(MyItem->Reverse())`|Retourne les éléments en ordre inverse.|  
 |`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Retourne un `boolean` pour indiquer si un élément a le nom et la valeur des métadonnées fournies. La comparaison ne respecte pas la casse.|  
 |`ClearMetadata`|`@(MyItem->ClearMetadata())`|Retourne les éléments avec leurs métadonnées effacées. Seul `itemspec` est conservé.|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|Retourne les éléments qui ont le nom des métadonnées fourni. La comparaison ne respecte pas la casse.|  
+|`HasMetadata`|`@(MyItem->HasMetadata("MetadataName"))`|Retourne les éléments qui ont le nom des métadonnées fourni. La comparaison ne respecte pas la casse.|  
 |`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Retourne les valeurs des métadonnées qui ont le nom des métadonnées.|  
 |`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|Retourne les éléments qui ont le nom et la valeur des métadonnées fournis. La comparaison ne respecte pas la casse.|  
   
@@ -102,4 +105,4 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Éléments MSBuild](../msbuild/msbuild-items.md)
+ [Éléments](../msbuild/msbuild-items.md)

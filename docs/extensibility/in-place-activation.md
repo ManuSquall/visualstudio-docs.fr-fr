@@ -4,18 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-csharp
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], custom - in-place view activation
+helpviewer_keywords:
+- editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
-caps.latest.revision: "26"
+caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: 16c091dc6d5602e4d19b8679794ef2794b29d7ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d1fe2c1dfe71923897836f803e3a9712b4dec0f1
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="in-place-activation"></a>Activation sur Place
 Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous devez l’implémenter en tant que contrôle ActiveX ou en tant qu’objet de données de document actif à l’aide du modèle d’activation en place.  
@@ -41,7 +42,7 @@ Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous de
   
  Toutes les interfaces qui sont implémentées pour créer un éditeur d’activation en place apparaissent dans l’objet `CYourEditorDocument` unique, mais cette configuration ne prend en charge qu’une seule vue pour vos données de document. Pour plus d’informations sur la prise en charge de plusieurs vues pour vos données de document, consultez [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
   
-|Interface|Type d’objet|Utilisation|  
+|Interface|Type d’objet|Utilisez|  
 |---------------|--------------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>|Vue|Permet aux objets VSPackage sur place de fonctionner comme des composants entièrement intégrés de l’IDE grâce au service <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> . Ce service intègre les menus, les barres d’outils et les commandes de l’objet dans l’IDE, et émet des notifications concernant les changements d’état.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>|Vue|Principaux moyens utilisés par un objet incorporé pour fournir des fonctionnalités de base à son conteneur et communiquer avec lui.|  

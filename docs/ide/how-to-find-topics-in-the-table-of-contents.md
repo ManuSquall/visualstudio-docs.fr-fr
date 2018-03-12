@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-help-viewer
+ms.technology:
+- vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: hv_contents
+f1_keywords:
+- hv_contents
 helpviewer_keywords:
 - Help Viewer, table of contents filtering
 - Help Viewer, Contents tab
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b0ec26ec3305cf56f5b03312816737ed7131f4d2
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload:
+- multiple
+ms.openlocfilehash: fdb49d915871bd9ac955ed61cdc7850bf35d6f41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Guide pratique pour rechercher des rubriques dans la table des matières
 Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour rechercher des informations. La table des matières est une liste pouvant être développée qui contient toutes les rubriques des livres installés. Pour des informations d’accessibilité relatives à la navigation dans la table des matières, consultez [Touches de raccourci (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
@@ -55,5 +59,5 @@ Si vous avez ouvert une rubrique à l'aide des fonctionnalités d'index ou de re
   
 ## <a name="see-also"></a>Voir aussi
 [Guide pratique pour rechercher des rubriques dans l’index](../ide/how-to-find-topics-in-the-index.md)  
-[Comment : rechercher des rubriques](../ide/how-to-search-for-topics.md)  
+[Guide pratique pour rechercher des rubriques](../ide/how-to-search-for-topics.md)  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

@@ -4,24 +4,28 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.execution
+f1_keywords:
+- vs.debug.execution
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cda62de6fe72598674b90e4a0ef5dccd8cf2a2af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Parcourir le Code avec le débogueur Visual Studio
 Vous familiariser avec les commandes et des raccourcis pour parcourir le code dans le débogueur, et qui rend plus rapide et plus facile rechercher et résoudre les problèmes de votre application. Pendant que vous naviguez dans le code dans le débogueur, vous pouvez examiner l’état de votre application ou en savoir plus sur ses flux d’exécution.  
@@ -31,13 +35,13 @@ Vous familiariser avec les commandes et des raccourcis pour parcourir le code da
   
  La flèche verte démarre également le débogueur (identique à **F5**).  
   
- ![DBG &#95; Principes de base &#95; Démarrer &#95; le débogage](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
  Incluent d’autres manières que vous pouvez démarrer l’application avec le débogueur attaché **F11** ([pas à pas détaillé code](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([pas à pas principal code](#BKMK_Step_over_Step_out)), ou par à l’aide de **exécuter jusqu’au curseur**.  Consultez les autres sections de cette rubrique pour plus d’informations sur les opérations de ces options.  
   
  Lorsque vous déboguez, la ligne jaune indique le code qui sera exécutée ensuite.  
   
- ![DBG &#95; Principes de base &#95; Saut de &#95; Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
   
  Pendant le débogage, vous pouvez basculer entre les commandes telles que **F5**, **F11** et utiliser d’autres fonctionnalités décrites dans cette rubrique (comme les points d’arrêt) pour accéder rapidement au code que vous souhaitez consulter.  
   
@@ -55,7 +59,7 @@ Vous familiariser avec les commandes et des raccourcis pour parcourir le code da
   
 -   En fait, le débogueur parcourt les instructions de code plutôt que les lignes physiques. Par exemple, une clause `if` peut être écrite sur une ligne :  
   
-    ```CSharp  
+    ```csharp  
     int x = 42;  
     string s = "Not answered";  
     if( int x == 42) s = "Answered!";  

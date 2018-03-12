@@ -25,16 +25,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], method details
 - BDC [SharePoint development in Visual Studio], BDC Explorer
 - BDC [SharePoint development in Visual Studio], designer
-ms.assetid: dbd7b746-9e93-4ed4-a546-4a6f17a4725f
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: eaf6871f7ad9316ba2dbdaa8fa29b4810b1d6a3d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89b497221e17402567970588a5b55a49fec3d705
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="bdc-model-design-tools-overview"></a>Vue d'ensemble des outils de conception du modèle BDC
   Vous pouvez concevoir un modèle de connectivité de données métiers (BDC) en utilisant le concepteur BDC, le **détails de méthode BDC** fenêtre et la **Explorateur BDC**.  

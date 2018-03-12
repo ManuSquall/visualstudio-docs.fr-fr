@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,17 +19,20 @@ dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <deployment> element [ClickOnce deployment manifest]
+helpviewer_keywords:
+- <deployment> element [ClickOnce deployment manifest]
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ddcdc96095775f5957fbc9db872b51396798ba52
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload:
+- multiple
+ms.openlocfilehash: 0caff13f84208152b3fa2ff4e56a7a2c7f0b6dd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;déploiement&gt; élément (déploiement ClickOnce)
 Identifie les attributs utilisés pour le déploiement de mises à jour et l'exposition au système.  
@@ -76,7 +80,7 @@ Identifie les attributs utilisés pour le déploiement de mises à jour et l'exp
  Facultatif. Contient le `update` élément. Le `subscription` élément ne possède pas d’attributs. Si le `subscription` élément n’existe pas, le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application ne vérifie jamais les mises à jour. Si le `install` attribut de la `deployment` élément est `false`, le `subscription` élément est ignoré, car un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application qui est lancée à partir du réseau toujours utilise la version la plus récente.  
   
 ## <a name="update"></a>update  
- Requis. Cet élément est un enfant de la `subscription` élément et contient le `beforeApplicationStartup` ou `expiration` élément. `beforeApplicationStartup`et `expiration` ne peut pas être spécifiés dans le même manifeste de déploiement.  
+ Obligatoire. Cet élément est un enfant de la `subscription` élément et contient le `beforeApplicationStartup` ou `expiration` élément. `beforeApplicationStartup`et `expiration` ne peut pas être spécifiés dans le même manifeste de déploiement.  
   
  Le `update` élément ne possède pas d’attributs.  
   
@@ -102,7 +106,7 @@ Identifie les attributs utilisés pour le déploiement de mises à jour et l'exp
 |---------------|-----------------|  
 |`codebase`|Obligatoire. Identifie l’emplacement, comme une ressource identificateur URI (Uniform), du manifeste de déploiement qui est utilisé pour mettre à jour le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Cet élément permet également de transférer les emplacements de mise à jour pour les installations basées sur le CD. Doit être un URI valide.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Vous pouvez configurer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application pour rechercher les mises à jour au démarrage, vérifier les mises à jour après le démarrage ou ne jamais rechercher les mises à jour. Pour vérifier les mises à jour au démarrage, assurez-vous que le `beforeApplicationStartup` élément existe sous le `update` élément. Pour vérifier les mises à jour après le démarrage, assurez-vous que le `expiration` élément existe sous le `update` élément, et que les intervalles de mise à jour sont fournies.  
   
  Pour désactiver la vérification des mises à jour, supprimez le `subscription` élément. Lorsque vous spécifiez dans le manifeste de déploiement pour ne jamais vérifier les mises à jour, vous pouvez vérifier manuellement les mises à jour à l’aide de la <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> (méthode).  

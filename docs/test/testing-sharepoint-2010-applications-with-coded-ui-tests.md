@@ -7,15 +7,16 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
-caps.latest.revision: "30"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: d3ba0b9ce4366efd386d0b5c1b4d9c3f0094511b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: 15970f48791078d498fa7a187546c1c7230d3cf0
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Test des applications SharePoint 2010 avec des tests codés de l'interface utilisateur
 L'ajout de tests codés de l'interface utilisateur dans une application SharePoint vous permet de vérifier si l'application entière, y compris ses contrôles d'interface utilisateur, fonctionne correctement. Les tests codés de l'interface utilisateur peuvent aussi valider les valeurs et la logique de l'interface utilisateur.  
@@ -27,14 +28,14 @@ L'ajout de tests codés de l'interface utilisateur dans une application SharePoi
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Que dois-je savoir d'autre sur les tests codés de l'interface utilisateur ?  
  Pour en savoir plus sur les avantages de l’utilisation de tests codés de l’interface utilisateur, consultez [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) et [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests (Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 Automatisation des tests système)](http://go.microsoft.com/fwlink/?LinkID=255196).  
   
- **Remarques**  
+ **Notes**  
   
--   ![Prérequis](../test/media/prereq.png "Prereq") Les tests codés de l’interface utilisateur pour les applications SharePoint ne sont pris en charge qu’avec SharePoint 2010.  
+-   ![Prérequis](../test/media/prereq.png "Prereq") Les tests codés de l’interface utilisateur pour les applications SharePoint sont uniquement pris en charge avec SharePoint 2010.  
   
--   ![Prérequis](../test/media/prereq.png "Prereq") Les contrôles pour Visio et PowerPoint 2010 ne sont pas pris en charge dans votre application SharePoint.  
+-   ![Prérequis](../test/media/prereq.png "Prereq") Les contrôles pour Visio et PowerPoint 2010 dans votre application SharePoint ne sont pas pris en charge.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Créer un test d'interface utilisateur codé pour votre application SharePoint  
- La[création de tests codés de l'interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) pour vos applications SharePoint 2010 est identique à la création de tests pour d'autres types d'applications. L'enregistrement et la lecture sont pris en charge pour tous les contrôles sur l'interface de modification Web. L'interface de sélection des catégories et des composants WebPart est constituée de contrôles Web standard.  
+ La[création de tests codés de l'interface utilisateur](../test/use-ui-automation-to-test-your-code.md) pour vos applications SharePoint 2010 est identique à la création de tests pour d'autres types d'applications. L'enregistrement et la lecture sont pris en charge pour tous les contrôles sur l'interface de modification Web. L'interface de sélection des catégories et des composants WebPart est constituée de contrôles Web standard.  
   
  ![Composants WebPart SharePoint](../test/media/cuit_sharepoint.png "CUIT_SharePoint")  
   
@@ -143,10 +144,10 @@ uiGridKeyboardInputEdit.Text=value;
 ### <a name="forum"></a>Forum  
  [Blog Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=254496)  
   
-## <a name="see-also"></a>Voir aussi  
- [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
- [Test de performances web et tests de charge des applications SharePoint 2010 et 2013](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
- [Créer des solutions SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
- [Vérification et débogage du code SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
- [Génération et débogage de solutions SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Profilage des performances des applications SharePoint](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
+## <a name="see-also"></a>Voir aussi
+
+[Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)  
+[Créer des solutions SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
+[Vérification et débogage du code SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
+[Génération et débogage de solutions SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
+[Profilage des performances des applications SharePoint](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)

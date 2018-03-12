@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: IntelliTest, Dynamic symbolic execution
-ms.assetid: B938E2D2-7B7C-4D76-B26C-2616F5B4A9F5
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 7739a7fd1d802150ecf6cdc3e364423598ff090c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- IntelliTest, Dynamic symbolic execution
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: c8d72ad4e5b84802f3c8f2eba426f98ed5477468
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="input-generatation-using-dynamic-symbolic-execution"></a>Génération d’entrées avec l’exécution symbolique dynamique
 
@@ -38,7 +40,7 @@ Les étapes de la boucle sont :
 Le [solveur de contrainte](#constraint-solver) d’IntelliTest peut gérer les valeurs de tous les types pouvant apparaître dans les programmes .NET :
 
 * [Nombres entiers](#integers-and-floats) et [à virgule flottante](#integers-and-floats)
-* [Objets](#objects)
+* [Objects](#objects)
 * [Structs](#structs)
 * [Tableaux](#arrays-and-strings) et [chaînes](#arrays-and-strings)
 

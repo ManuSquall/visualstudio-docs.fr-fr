@@ -18,18 +18,19 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 30609be8b70f65cb48478c6d6d2c0f3b6d89a029
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dd2372acf82d275b0c240ee3fe1c17e687854340
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables
 |||  
 |-|-|  
 |TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|  
 |CheckId|CA1001|  
-|Catégorie|Microsoft.Design|  
+|Category|Microsoft.Design|  
 |Modification avec rupture|Sans rupture - Si le type n’est pas visible à l’extérieur de l’assembly.<br /><br /> Avec rupture - Si le type est visible à l’extérieur de l’assembly.|  
   
 ## <a name="cause"></a>Cause  

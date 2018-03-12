@@ -18,24 +18,25 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e16e5cf4049ed2bf813cad20fa1be16f8f95dd8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8a87359b0a4d1ac45199e4f233a7bf3174ba2bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715 : Les identificateurs doivent être dotés d'un préfixe correct
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldHaveCorrectPrefix|  
 |CheckId|CA1715|  
-|Catégorie|Microsoft.Naming|  
+|Category|Microsoft.Naming|  
 |Modification avec rupture|Avec rupture - lorsque déclenchée sur des interfaces.<br /><br /> Sans rupture - lorsque déclenchée sur les paramètres de type générique.|  
   
 ## <a name="cause"></a>Cause  
  Le nom d’une interface extérieurement visible ne commence pas par un « I » majuscule.  
   
- ou  
+ - ou -  
   
  Le nom d’un paramètre de type générique sur un type visible de l’extérieur ou de la méthode ne commence pas par une majuscule ' t ».  
   

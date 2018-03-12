@@ -18,22 +18,23 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ca904e9259855127825b594db80cdc3524d53ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e3fa59585a5233bbebde7df0d074d303285c616
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238 : Implémentez les méthodes de sérialisation comme il se doit
 |||  
 |-|-|  
 |TypeName|ImplementSerializationMethodsCorrectly|  
 |CheckId|CA2238|  
-|Catégorie|Microsoft.Usage|  
+|Category|Microsoft.Usage|  
 |Modification avec rupture|Avec rupture - Si la méthode est visible en dehors de l’assembly.<br /><br /> Sans rupture - Si la méthode n’est pas visible à l’extérieur de l’assembly.|  
   
 ## <a name="cause"></a>Cause  
- Une méthode qui gère un événement de sérialisation n'a pas la signature, le type de retour ou la visibilité appropriée.  
+ Une méthode qui gère un événement de sérialisation n’a pas la signature, le type de retour ou la visibilité appropriée.  
   
 ## <a name="rule-description"></a>Description de la règle  
  Une méthode est désignée un gestionnaire d’événements de sérialisation en appliquant l’un des attributs d’événement de sérialisation suivants :  

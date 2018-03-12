@@ -4,24 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.namingrules
+f1_keywords:
+- vs.codeanalysis.namingrules
 helpviewer_keywords:
 - managed code analysis warnings, naming warnings
 - naming warnings
 - warnings, naming
 ms.assetid: f97223ce-1d39-4134-81c9-fff2c75d979b
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c23e1ebdcf4a4c14fe269376b56a62742e44db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: f09b82507fd9876f37233c5f2ee4b98aa3b44b88
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="naming-warnings"></a>avertissements liés à l’affectation de noms
 Avertissements d’affectation de noms respect de la prise en charge les conventions d’affectation de noms de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] règles de conception.  

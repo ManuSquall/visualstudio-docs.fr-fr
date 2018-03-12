@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f399cb0c88e044224d554cf8e17cc4d217498e87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 08f1bb76f27f7ae0923eed43339f656c90f4856f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>La Structure du fichier [Content_types] .xml
 Contient des informations sur les types de contenu dans un package VSIX. Visual Studio utilise le fichier [Content_Types] .xml pour installer le package, mais il n’installe pas le fichier lui-même.  
@@ -46,7 +47,7 @@ Contient des informations sur les types de contenu dans un package VSIX. Visual 
   
 ### <a name="attribute-name-attribute"></a>{Nom de l’attribut} Attribut  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |http://schemas.OpenFormats.org/package/2006/Content-types|L’emplacement du schéma des types de contenu.|  
   

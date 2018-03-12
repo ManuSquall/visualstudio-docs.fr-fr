@@ -20,11 +20,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 9a59b97b3260beaf39ae20b62a44903add13e622
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 527ab7ae43790f7e824ead33fb601f0f8dee2bf0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; élément (déploiement ClickOnce)
 Contient des informations sur l'éditeur qui a signé ce manifeste de déploiement.  
@@ -52,8 +53,8 @@ Contient des informations sur l'éditeur qui a signé ce manifeste de déploieme
   
 ## <a name="exceptions"></a>Exceptions  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 ## <a name="subhead"></a>Sous-titre

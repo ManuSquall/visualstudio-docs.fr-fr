@@ -1,56 +1,42 @@
 ---
-title: "Procédure pas à pas Visual Studio Tools pour Unity Azure| Microsoft Docs"
+title: Programmation avec Visual Studio Tools pour Unity et Azure | Microsoft Docs
 ms.custom: 
-ms.date: 10/19/2017
+ms.date: 12/18/2017
 ms.reviewer: crdun
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-unity-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7921D4C7-5526-42F5-8E03-82D3E33A893F
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: a7e12508537a3bcda1df7997ba9e390b75b9beaf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: e7fab0df3f8f957c5c2b35fcf64c2e717358148f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 02/28/2018
 ---
-# <a name="using-azure-easy-tables-with-unity-walkthrough"></a>Utilisation des tables faciles Azure avec Unity - Procédure pas à pas
+# <a name="programming-with-unity-and-azure"></a>Programmation avec Unity et Azure
 
-![Capture d’écran d’un exemple de jeu](media/vstu_azure-test-sample-game-image2.png)
+Azure fournit une solution scalable pour le stockage des données de télémétrie et d’autres données de jeu dans le cloud. Avec la version Unity 2017, la prise en charge expérimentale de .NET 4.6 par Unity rend l’intégration d’Azure plus simple que jamais en permettant l’utilisation des kits SDK Azure .NET.
 
-## <a name="introduction"></a>Introduction
-
-Azure fournit une solution scalable pour le stockage des données de télémétrie et d’autres données de jeu dans le cloud. Avec la version Unity 2017, la prise en charge de .NET 4.6 par Unity rend l’intégration d’Azure plus simple que jamais en permettant l’utilisation du kit SDK Azure Mobile Client.
-
-Ces étapes vous guident dans le processus de configuration d’un projet Unity qui tire parti d’Azure pour enregistrer les données de télémétrie et de classement dans le cloud.
+## <a name="experimental-azure-sdks"></a>Kits SDK Azure expérimentaux
 
 > [!NOTE]
-> Ce projet requiert le runtime de script Mono .NET 4.6 « Expérimental » dans Unity 2017. [Unity a déclaré que ce sera bientôt la version par défaut](https://forum.unity3d.com/threads/future-plans-for-the-mono-runtime-upgrade.464327/) mais, pour l’instant, elle est toujours qualifiée « d’expérimentale » et vous pouvez rencontrer des problèmes.
+> Ces kits SDK ne sont pas pris en charge, mais fournis pour aider les clients à tester la prise en charge expérimentale .NET 4.6 d’Unity.
 
-> Cette procédure pas à pas décrit un exemple de connexion à un back-end Azure Mobile App à partir d’une build de PC Unity. Au moment de la rédaction de ce document, des problèmes connus empêchent ce projet de fonctionner sur les plateformes Mac et Android. Bien qu’il s’agisse de problèmes connus qui seront corrigés, la chronologie est incertaine. Pour plus d’informations, visitez le [forum Experimental Scripting Previews](https://forum.unity3d.com/forums/experimental-scripting-previews.107/) d’Unity.
+Consultez le bac à sable [Sandbox](/sandbox/) pour tester les kits SDK Azure expérimentaux suivants avec Unity :
 
-## <a name="download-the-completed-project"></a>Télécharger le projet terminé
+* [Kit SDK Azure Storage pour Unity](https://aka.ms/azstoragegamedev)
+* [Kit SDK Azure Event Hubs pour Unity](https://aka.ms/azeventhubsgamedev)
+* [Kit SDK Azure Mobile Apps pour Unity](https://aka.ms/azmobileappsgamedev)
 
-Le projet terminé est disponible sur GitHub. Toutefois, la procédure pas à pas suppose que vous démarrez à partir d’un nouveau projet vide et fournit des liens pour télécharger des ressources si nécessaire.
+## <a name="azure-sdk-sample"></a>Exemple de Kit SDK Azure
 
-## <a name="walkthrough-steps"></a>Étapes de la procédure pas à pas
+Vous disposez également d’un [exemple de jeu simple](https://aka.ms/azmobileappsracer) en utilisant le Kit SDK Easy Tables et Unity. Le jeu utilise le stockage de données Azure Easy Tables pour effectuer le suivi des meilleurs scores et stocker les données de télémétrie du jeu. Il peut être [téléchargé à partir de GitHub](https://aka.ms/azsamples-unity).
 
-1. [Configurer les tables faciles dans Azure](visual-studio-tools-for-unity-azure-configure.md)
-2. [Créer des tables faciles](visual-studio-tools-for-unity-azure-setup.md)
-3. [Préparer l’environnement de développement](visual-studio-tools-for-unity-azure-prepare.md)
-4. [Créer des classes de modèles de données](visual-studio-tools-for-unity-azure-data.md)
-5. [Implémenter Azure MobileServiceClient](visual-studio-tools-for-unity-azure-mobile-client.md)
-6. [Mettre à jour le magasin de certificats de sécurité Unity Mono](visual-studio-tools-for-unity-azure-security.md)
-7. [Tester la connexion du client](visual-studio-tools-for-unity-azure-connection.md)
-7. [Importer les ressources de l’exemple de jeu](visual-studio-tools-for-unity-azure-game-assets.md)
-8. [Tester l’exemple de jeu](visual-studio-tools-for-unity-azure-game.md)
-9. [Explication de RaceScene](visual-studio-tools-for-unity-azure-racescene.md)
-10. [Explication de HeatmapScene](visual-studio-tools-for-unity-azure-heatmapscene.md)
-11. [Explication de LeaderboardScene](visual-studio-tools-for-unity-azure-leaderboardscene.md)
-
-
-## <a name="next-step"></a>Étape suivante
-* [Configurer les tables faciles dans Azure](visual-studio-tools-for-unity-azure-configure.md)
+![Capture d’écran d’un exemple de jeu](media/vstu_azure-test-sample-game-image2.png)

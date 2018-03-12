@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a7911a505494c3af0c047208660671ec3f5a8c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 548a4cedf715faf998912500bf3e2390ac07070b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pf"></a>PF
 L’option **PF** de VSPerfCmd.exe définit l’événement de profilage qui est échantillonné lors des défauts de page. Elle peut changer le nombre de défauts de page dans un intervalle d’échantillonnage (la valeur par défaut est 10).  
@@ -43,7 +44,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="required-options"></a>Options obligatoires  
  Vous pouvez spécifier **PF** seulement sur une ligne de commande qui contient une des options suivantes.  
   
- **Launch:** `AppName`  
+ **Launch :** `AppName`  
  Démarre le profileur et l’application spécifiée par AppName.  
   
  **Attach:** `PID`  

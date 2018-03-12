@@ -12,15 +12,15 @@ helpviewer_keywords:
 - unit tests
 - unit tests, UWP apps
 - unit tests, running
-ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
-caps.latest.revision: "21"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 32cab11dd909fc8b60134ebff0d5f37c0b14dcd6
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.author: gewarren
+manager: ghogen
+ms.workload: uwp
+author: gewarren
+ms.openlocfilehash: 82ba9f9419964d9c626a81f78cf7f8ccace57320
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-uwp-apps"></a>Procédure pas à pas : création et exécution de tests unitaires pour les applications UWP
 Visual Studio inclut la prise en charge des tests unitaires des applications [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] gérées et comprend des modèles de bibliothèque de tests unitaires pour Visual C#, Visual Basic et Visual C++.  
@@ -142,7 +142,7 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
  [Channel 9 : Unit testing your UWP apps built using XAML](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Forums  
- [Tests unitaires Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  
+ [Visual Studio Unit Testing (Tests unitaires Visual Studio)](http://go.microsoft.com/fwlink/?LinkId=224477)  
   
 ### <a name="msdn-library"></a>MSDN Library  
  [MSDN Library - Création et exécution des tests unitaires pour le code existant (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)  

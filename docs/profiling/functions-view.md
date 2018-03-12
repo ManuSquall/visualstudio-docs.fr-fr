@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.view.functions
+f1_keywords:
+- vs.performance.view.functions
 helpviewer_keywords:
 - performance reports, functions view
 - Functions view
 - profiling tools reports, Functions view
 - profiling tools, Functions view
 ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea1a3e42e5ce634073e9abaf7d89dda9df51c315
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 396b7e99e0850ce5d66436d8b56d21e69ae65ea6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="functions-view"></a>Vue Fonctions
 La vue Fonctions répertorie les fonctions appelées lors du profilage.  

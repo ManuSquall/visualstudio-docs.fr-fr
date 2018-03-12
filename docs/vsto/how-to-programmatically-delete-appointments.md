@@ -14,16 +14,15 @@ helpviewer_keywords:
 - calendars [Office development in Visual Studio], deleting appointments
 - deleting appointments
 - appointments [Office development in Visual Studio]
-ms.assetid: 34bd2d5e-a075-4fbe-809f-479c72fc735a
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4b27c536a9e5b7237efdd6b11b4be75ca1d91f19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 29847c3a88c04d4d74db88008c97004ab9d648df
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Comment : supprimer des rendez-vous par programmation
   Cet exemple supprime une instance d’un rendez-vous périodique. L’exemple part du principe qu’une instance d’un rendez-vous périodique se produit le 28 juin 2006 à 08:00.  

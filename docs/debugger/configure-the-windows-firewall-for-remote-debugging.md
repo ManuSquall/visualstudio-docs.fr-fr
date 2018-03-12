@@ -12,16 +12,17 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9432c65ec6a481b23655fb2a92915a4a4365ed5e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7458c2f35bfd29c53b939b6300d2759f0e7897f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurer le Pare-feu Windows pour le débogage distant
 Cette rubrique explique comment configurer le pare-feu pour activer le débogage distant sur des ordinateurs qui exécutent les systèmes d’exploitation suivants :  
   
--   Windows 10  
+-   Windows 10  
   
 -   Windows 8/8.1  
   
@@ -118,7 +119,7 @@ Si vous utilisez le mode de compatibilité pour le débogueur (**Outils > Option
 |-|-|-|-|  
 |**Ports**|**Entrant/sortant**|**Protocole**|**Description**|  
 |135, 139, 445|Sortant|TCP|Requis.|  
-|137, 138|Sortant|UDP|Requis.|  
+|137, 138|Sortant|UDP|Obligatoire.|  
 |500, 4500|Sortant|UDP|Requis si votre stratégie de domaine nécessite que la communication réseau soit effectuée via IPSec.|  
 |80|Sortant|TCP|Requis pour le débogage du serveur web.|
   

@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
-caps.latest.revision: "23"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dccc0592d050a07f3682834b6f2a66e2f8c6eb7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 5944d549caa45a8a1b7cee335643f857d3ae38f5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-glossary"></a>Glossaire MSBuild
 Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses composants.  
@@ -101,7 +103,7 @@ Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses 
  Une fonction de propriété est une propriété système ou une méthode qui peut être utilisée pour évaluer des scripts MSBuild. Les méthodes de propriété permettent de lire l’heure système, de comparer des chaînes, d’établir des correspondances avec des expressions régulières et d’effectuer d’autres actions. Pour plus d’informations, consultez l’article [Fonctions de propriétés](../msbuild/property-functions.md).  
   
  fonction de propriété, imbriquée  
- Les fonctions de propriétés peuvent être combinées pour former des fonctions plus complexes. Par exemple :  
+ Les fonctions de propriétés peuvent être combinées pour former des fonctions plus complexes. Par exemple :  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
   

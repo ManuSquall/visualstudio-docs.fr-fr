@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: IntelliTest, Settings waterfall
-ms.assetid: 45777037-9E16-4ABF-BD26-5AF4E740D4E6
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: fda01f53c02c0de03e69b65287dd627bf4a786e3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- IntelliTest, Settings waterfall
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: b782987dd3bf1b96c063d43d80634289e5165af7
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="settings-waterfall"></a>Cascade de paramètres
 

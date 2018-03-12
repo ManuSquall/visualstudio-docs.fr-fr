@@ -13,16 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], updating using controls
 - controls [Office development in Visual Studio], updating documents
-ms.assetid: 56e6d1f2-65a4-41f0-aff5-f0cfd96d7185
-caps.latest.revision: "60"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 2d6fa02174a8b334b404a0a4ea84ee0e8089c584
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1f1340c3e67ca0647448228fb2414fa4ba7d4003
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-updating-a-chart-in-a-document-using-radio-buttons"></a>Procédure pas à pas : mise à jour d'un graphique dans un document à l'aide de cases d'option
   Cette procédure pas à pas montre comment utiliser des cases d'option dans une personnalisation de document pour Microsoft Office Word dans le but de donner aux utilisateurs la possibilité de sélectionner des styles de graphique dans le document.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -94,30 +93,30 @@ ms.lasthandoff: 10/31/2017
   
 2.  À partir de la **contrôles communs** onglet de la **boîte à outils**, faites glisser le premier **case** contrôler au contrôle utilisateur et modifiez les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**columnChart**|  
+    |**Name**|**columnChart**|  
     |**Text**|**Histogramme**|  
   
 3.  Ajoutez un deuxième **case** à l’utilisateur de contrôle et modifier les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**barChart**|  
+    |**Name**|**barChart**|  
     |**Text**|**Graphique à barres**|  
   
 4.  Ajoutez une troisième **case** à l’utilisateur de contrôle et modifier les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**lineChart**|  
+    |**Name**|**lineChart**|  
     |**Text**|**Graphique en courbes**|  
   
 5.  Ajoutez une quatrième **case** à l’utilisateur de contrôle et modifier les propriétés suivantes.  
   
-    |Propriété|Valeur|  
+    |Propriété|Value|  
     |--------------|-----------|  
-    |**Nom**|**areaBlockChart**|  
+    |**Name**|**areaBlockChart**|  
     |**Text**|**Graphique en secteurs**|  
   
 ## <a name="adding-references"></a>Ajout de références  

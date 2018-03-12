@@ -22,16 +22,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, project and project item templates
 - SharePoint development in Visual Studio, templates
-ms.assetid: 54a7576f-d3f9-475d-8ed7-b675ad21cb53
-caps.latest.revision: "41"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 513b2216a99f37ba3aff1174965470b20921072f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3890d7678fdc50a867e254edbbb7503acbebcd76
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Modèles de projets et d'éléments de projet SharePoint
   Les sections suivantes décrivent le projet SharePoint et les modèles de projet élément et comment elles sont utilisées. 

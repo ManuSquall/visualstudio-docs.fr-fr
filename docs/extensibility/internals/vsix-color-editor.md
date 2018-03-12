@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7987d2b6d22893e82893755ed76fa5253aeb600c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: aa699e0c6d4d23ec6e5cdc347627a98efb623672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-color-editor"></a>Éditeur de couleurs VSIX
 L’outil Éditeur de couleurs Extension Visual Studio peut créer et modifier des couleurs personnalisées pour Visual Studio. L’outil peut également générer des clés de ressources de thème afin que les couleurs peuvent être utilisées dans le code. Cet outil est utile pour effectuer des couleurs pour une extension Visual Studio qui prend en charge les thèmes. Cet outil peut ouvrir des fichiers .pkgdef et .xml. Les thèmes Visual Studio (fichiers .vstheme) peuvent être utilisés avec l’éditeur de couleurs Extension Visual Studio en remplaçant l’extension de fichier .xml. En outre, les fichiers .vstheme peuvent être importées dans un fichier .xml en cours.  
@@ -189,7 +190,7 @@ namespace MyCustomColors
   
  Pour rendre les modifications définitives, régénérer et redéployer de l’extension Visual Studio après l’ajout de nouvelles couleurs dans le fichier .pkgdef et l’écriture du code qui utilise ces couleurs. La reconstruction de l’extension Visual Studio fusionne les valeurs de Registre pour les nouvelles couleurs dans le reste des thèmes. Redémarrez Visual Studio, afficher l’interface utilisateur et vérifier que les nouvelles couleurs apparaissent comme prévu.  
   
-## <a name="notes"></a>Remarques  
+## <a name="notes"></a>Notes  
  Cet outil est destiné à être utilisé pour créer des couleurs personnalisées pour les thèmes Visual Studio préexistants, ou pour modifier les couleurs d’un thème personnalisé de Visual Studio. Pour créer des thèmes personnalisés Visual Studio terminées, téléchargez le [extension de l’éditeur de thème de couleur Visual Studio](http://visualstudiogallery.msdn.microsoft.com/6f4b51b6-5c6b-4a81-9cb5-f2daa560430b) à partir de la galerie d’Extensions Visual Studio.  
   
 ## <a name="sample-output"></a>Résultat de l'exemple  

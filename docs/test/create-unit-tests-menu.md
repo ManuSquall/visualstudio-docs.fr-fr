@@ -7,20 +7,22 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: unit testing, create unit tests
-ms.assetid: 5D625021-BA96-48A5-9453-3EF6F0943466
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 7e69218700314224f67094486cfd381ac1460995
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- unit testing, create unit tests
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: 763a16c4de3d3d087b813322af2fcd8518506863
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Créer des stubs de méthodes de tests unitaires avec la commande Créer des tests unitaires
 
-La commande **Créer des tests unitaires** de Visual Studio permet de créer des stubs de méthodes de tests unitaires. Cette fonctionnalité permet de configurer facilement un projet de test, la classe de test et le stub de méthode de test qui y est contenu. 
+La commande **Créer des tests unitaires** de Visual Studio permet de créer des stubs de méthodes de tests unitaires. Cette fonctionnalité permet de configurer facilement un projet de test, la classe de test et le stub de méthode de test qui y est contenu.
 
 ## <a name="availability-and-extensions"></a>Disponibilité et extensions
 
@@ -63,8 +65,7 @@ Utilisez cette fonctionnalité chaque fois que vous devez créer des tests unita
 
 Toutefois, cette fonctionnalité est également applicable à la situation où le développeur commence par écrire du code et l’utilise pour amorcer la discipline des tests unitaires. Dans le flux de codage, le développeur peut vouloir rapidement créer un stub de méthode de test unitaire (avec une classe de test et un projet de test appropriés) pour un élément de code spécifique. 
 
-## <a name="more-information"></a>Complément d'information
+## <a name="see-also"></a>Voir aussi
 
-Consultez le billet de blog [Creating unit test method stubs with "Create Unit Tests"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/).
-
-D’autres billets de blog sur les tests unitaires sont disponibles [ici](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/).
+[Creating unit test method stubs with "Create Unit Tests"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/) (Créer des stubs de méthodes de tests unitaires avec la commande « Créer des tests unitaires »)  
+[Billets de blog sur les tests unitaires](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/)

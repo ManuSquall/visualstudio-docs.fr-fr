@@ -7,19 +7,22 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: security [Visual Studio], additional information
+helpviewer_keywords:
+- security [Visual Studio], additional information
 ms.assetid: 3e839007-c388-4fc4-a6d1-8127cd207750
-caps.latest.revision: "14"
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c523af49bde89a67111acbb456d7848ea42521c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 2186630e5c93254f38bfb4bcd05fc74d73ba67e2
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="security-bibliography"></a>Bibliographie relative à la sécurité
+
 Vous trouverez ci-après une sélection de ressources disponibles en ligne et sur papier sur le thème du développement d’applications sécurisées et la configuration d’environnements sécurisés :  
   
 ## <a name="microsoft-web-sites"></a>Sites web Microsoft  

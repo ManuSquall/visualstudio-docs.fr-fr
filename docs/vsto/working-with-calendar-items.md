@@ -18,16 +18,15 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], calendars
 - calendars [Office development in Visual Studio], about calendars in Outlook
 - e-mail [Office development in Visual Studio], calendars
-ms.assetid: 8adf9a13-5bd9-4053-91fe-b8d5f8534e21
-caps.latest.revision: "8"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: cc1cacd824e6dda08dbee555b80cdff9a1e0356d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c7f08142ae1431dd27b50eca9c192cc2475448a8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="working-with-calendar-items"></a>Utilisation des éléments du calendrier
   La classe <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> contient les méthodes et les propriétés utilisées pour effectuer des tâches avec des éléments de calendrier.  

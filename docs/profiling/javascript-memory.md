@@ -4,14 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+- JavaScript
 helpviewer_keywords:
 - dominators, memory analyzer (JavaScript)
 - memory leaks (JavaScript)
@@ -21,16 +19,17 @@ helpviewer_keywords:
 - JavaScript Memory Analyzer
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
-ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
-caps.latest.revision: "49"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e52bef93735efc1ec5e43230ba46c7aa90cb67bc
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload:
+- multiple
+ms.openlocfilehash: 00162ab0ad516391b98ee0a17fa9c9f7294c92b3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analyser l’utilisation de mémoire JavaScript dans les applications UWP
 L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous aider à comprendre l’utilisation de la mémoire et à rechercher les fuites de mémoire dans vos applications UWP générées pour Windows en JavaScript. Les applications dédiées aux applications Windows universelles sont prises en charge.
@@ -47,36 +46,14 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
   
      Les objets qui ne sont pas créés directement dans votre code d'application sont automatiquement exclus. Vous pouvez également filtrer les données par nom d'objet.  
   
- Pour obtenir un didacticiel qui vous guide dans le processus d’identification d’une fuite de mémoire dans une application active, consultez [Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
-  
- Dans cette rubrique :  
-  
- [Exécuter l'analyseur de mémoire JavaScript](#Run)   
- [Vérifier l'utilisation de la mémoire](#Check)   
- [Isolate a memory leak](#Isolate)   
- [Visualiser le résumé dynamique d'utilisation de la mémoire](#LiveMemory)   
- [View a snapshot summary](#SnapshotSummary)   
- [Visualiser les détails de l'instantané](#SnapshotDetails)   
- [Visualiser une comparaison d'instantanés](#SnapshotDiff)   
- [Afficher les objets par dominateur](#FoldObjects)   
- [Filtrer les données par identificateur](#Filter)   
- [Rechercher un objet dans l'arborescence des objets](#ShowInRootsView)   
- [Visualiser les références aux objets partagés](#References)   
- [Afficher les objets intégrés](#BuiltInValues)   
- [Enregistrer les fichiers de diagnostic de session](#Save)   
- [Associate source code with memory usage data](#JSConsoleCommands)   
- [Conseils pour identifier les problèmes de mémoire](#Tips)  
-  
 ##  <a name="Run"></a> Exécuter l'analyseur de mémoire JavaScript  
- Vous pouvez utiliser l’analyseur de mémoire quand vous avez une application UWP ouverte dans Visual Studio ou installée sur un ordinateur exécutant [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou ultérieur.  
+ Vous pouvez utiliser l'analyseur de mémoire lorsqu'une application UWP est ouverte dans Visual Studio.
   
 #### <a name="to-run-the-memory-analyzer"></a>Pour exécuter l'analyseur de mémoire  
   
 1.  Ouvrez Visual Studio.  
   
-2.  Si vous exécutez l’application à partir de Visual Studio, dans la barre d’outils **Standard**, dans la liste **Démarrer le débogage**, choisissez la cible de débogage de votre projet : un émulateur Windows Phone ou, pour une application UWP, **Ordinateur local**, **Simulateur**ou **Ordinateur distant**.  
-  
-     Pour plus d'informations sur ces options, consultez [Run apps from Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
+2.  Si vous exécutez l’application à partir de Visual Studio, dans la barre d’outils **Standard**, dans la liste **Démarrer le débogage**, choisissez la cible de débogage de votre projet : **Ordinateur local** ou **Appareil**.  
   
 3.  Dans la barre de menus, choisissez **Déboguer****Profileur de performances...**  
   
@@ -342,7 +319,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
   
 -   Ajoutez les commandes de l'analyseur de mémoire à votre code source.  
   
- Vous pouvez utiliser les commandes suivantes dans votre code source :  
+ Vous pouvez utiliser les commandes suivantes dans votre code source :  
   
 -   `console.takeHeapSnapshot` prend un instantané du tas qui s'affiche dans l'analyseur de mémoire JavaScript. Cette commande est l'une des [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
@@ -380,7 +357,7 @@ if (performance && performance.mark) {
   
 -   Quand il est difficile d'identifier la cause d'un problème de mémoire, utilisez les différentes vues (telles que Dominators et Types) pour rechercher des points communs, en particulier pour faciliter l'identification d'un objet (ou de quelques objets) pouvant contenir des références à de nombreux autres objets qui apparaissent dans la vue.  
   
--   Recherchez les objets qui sont conservés par inadvertance dans la mémoire après que l'utilisateur a accédé à une nouvelle page. Il s'agit d'une cause fréquente de problèmes de mémoire. Par exemple :  
+-   Recherchez les objets qui sont conservés par inadvertance dans la mémoire après que l'utilisateur a accédé à une nouvelle page. Il s'agit d'une cause fréquente de problèmes de mémoire. Exemple :  
   
     -   l'utilisation incorrecte de la fonction [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) peut entraîner ce problème.  
   
@@ -399,6 +376,3 @@ if (performance && performance.mark) {
          Vous pouvez utiliser ces commandes pour favoriser l’isolement des problèmes que vous ne pouvez pas isoler en effectuant manuellement un instantané du tas.  
   
     -   Créez un objet de test et effectuez son suivi dans les vues de l'analyseur de mémoire JavaScript, telles que la vue Types. Par exemple, vous pouvez attacher un objet très volumineux à un autre objet pour voir si un objet ou un élément particulier a fait l'objet d'un garbage collection.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: designers [Visual Studio SDK], undo support
+helpviewer_keywords:
+- designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9a33e8386dcdc2cbf79d057cc454a959b1c06b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 98243c15f5f69a9aecba589b966d56a68201ab2a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supplying-undo-support-to-designers"></a>En fournissant la prise en charge de l’annulation pour les concepteurs
 En général, les concepteurs, tels que les éditeurs, doivent prendre en charge les opérations d’annulation afin que les utilisateurs peuvent annuler leurs modifications récentes lors de la modification d’un élément de code.  

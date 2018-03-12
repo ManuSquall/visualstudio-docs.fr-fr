@@ -27,13 +27,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 056101593be6119d994cab40f1536fe130fc25bb
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: c958958ca3b0621a4e348ebcbc4cffaf35d3cce9
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/08/2018
 ---
-# <a name="javascript-intellisense"></a>JavaScript IntelliSense
+# <a name="javascript-intellisense"></a>IntelliSense JavaScript
 
 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] procure une expérience d’édition JavaScript puissante et immédiate. Grâce à un service de langage TypeScript, Visual Studio offre des fonctionnalités IntelliSense plus riches, la prise en charge de fonctionnalités JavaScript modernes et des fonctionnalités de productivité améliorées, parmi lesquelles Atteindre la définition ou la refactorisation.
 
@@ -50,7 +51,7 @@ TypeScript utilise plusieurs sources pour générer ces informations :
 
 - [IntelliSense basé sur l’inférence de type](#TypeInference)
 - [IntelliSense basé sur JSDoc](#JsDoc)
-- [IntelliSense basé sur des fichiers de déclaration TypeScript](#TSDeclFiles)
+- [IntelliSense basé sur des fichiers de déclaration TypeScript](#TsDeclFiles)
 - [Acquisition automatique de définitions de type](#Auto)
 
 ### <a name="TypeInference"></a>IntelliSense basé sur l’inférence de type

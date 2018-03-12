@@ -4,24 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.PortabilityRules
+f1_keywords:
+- vs.codeanalysis.PortabilityRules
 helpviewer_keywords:
 - portability warnings
 - managed code analysis warnings, portability warnings
 - warnings, portability
 ms.assetid: 902e859a-2153-4970-baaa-8a5b4a11806f
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 112f3686f2a3d21b2d5d493498b42e9b63fdb05b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: efd2d56700c70b27771623e618f61675b174da01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="portability-warnings"></a>avertissements liés à la portabilité
 Les avertissements de portabilité prennent en charge la portabilité sur différents systèmes d’exploitation.  

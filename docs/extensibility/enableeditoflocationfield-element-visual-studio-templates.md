@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: EnableEditOfLocationField (Visual Studio project templates)
+helpviewer_keywords:
+- EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 99916d3affa41d90c9fcfb912e2d3f94c743d87c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 9981be12fb93073c1b4e635c4c1c6d91b59e6f21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Élément EnableEditOfLocationField (modèles Visual Studio)
 Spécifie si l’utilisateur peut modifier le champ d’emplacement.  
@@ -36,10 +40,10 @@ Spécifie si l’utilisateur peut modifier le champ d’emplacement.
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
- None  
+ Aucun.  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -52,7 +56,7 @@ Spécifie si l’utilisateur peut modifier le champ d’emplacement.
   
  Le texte doit être `true` ou `false`, qui indique si l’utilisateur peut modifier le **emplacement** zone de texte sur le **nouveau projet** boîte de dialogue.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `EnableEditOfLocationField` est un élément facultatif. La valeur par défaut est `true`, ce qui permet à l’utilisateur de modifier la valeur dans la **emplacement** zone de texte dans le **nouveau projet** boîte de dialogue.  
   
  Dans le **nouveau projet** boîte de dialogue, la **emplacement** zone de texte spécifie le répertoire dans lequel un nouveau projet est enregistré.  

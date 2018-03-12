@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff1f5d9c7c28c63e2f1f1c0783f1032888e3c645
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 40e795238e46885707cfd6eff715a27a5f53f85c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 ## <a name="using-color-in-visual-studio"></a>À l’aide de la couleur dans Visual Studio  
@@ -320,7 +321,7 @@ Parfois, que vous souhaitez autoriser l’utilisateur final de personnaliser vot
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Création d’un VSPackage pour vos couleurs personnalisables  
 Un VSPackage peut contrôler les polices et couleurs via des catégories personnalisées et afficher les éléments sur la page de propriétés de polices et couleurs. Lorsque vous utilisez ce mécanisme, VSPackages doivent implémenter le [IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx) interface et ses interfaces associées.  
   
-En principe, ce mécanisme peut être utilisé pour modifier tous les éléments d’affichage existants et les catégories qui les contiennent. Toutefois, ne doit pas être utilisé pour modifier la catégorie de l’éditeur de texte ou de ses éléments d’affichage. Pour plus d’informations sur la catégorie de l’éditeur de texte, consultez [vue d’ensemble de la couleur et de police](https://msdn.microsoft.com/en-us/library/bb165065.aspx).  
+En principe, ce mécanisme peut être utilisé pour modifier tous les éléments d’affichage existants et les catégories qui les contiennent. Toutefois, ne doit pas être utilisé pour modifier la catégorie de l’éditeur de texte ou de ses éléments d’affichage. Pour plus d’informations sur la catégorie de l’éditeur de texte, consultez [vue d’ensemble de la couleur et de police](../font-and-color-overview.md).  
   
 Pour implémenter des catégories personnalisées ou afficher les éléments, un VSPackage doit :  
   
@@ -337,9 +338,9 @@ Construire un type spécial de l’entrée de Registre de catégorie sous `[HKLM
   
 Remplir le Registre avec deux valeurs :  
 
-| Nom | Type | Données | Description |
+| Name | Type | Données | Description |
 | --- | --- | --- | --- |
-| Catégorie | REG_SZ | GUID | Un GUID est créé pour identifier la catégorie |
+| Category | REG_SZ | GUID | Un GUID est créé pour identifier la catégorie |
 | Package | REG_SZ | GUID | Le GUID du service VSPackage qui prend en charge de la catégorie |
   
  Le service spécifié dans le Registre doit fournir une implémentation de [IVsFontAndColorDefaults](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) pour la catégorie correspondante.  
@@ -349,9 +350,9 @@ Construire un type spécial de l’entrée de Registre de catégorie sous `[HKLM
   
 Remplir le Registre avec deux valeurs :
 
-| Nom | Type | Données | Description |
+| Name | Type | Données | Description |
 |--- | --- | --- | --- |
-| Catégorie | REG_SZ | GUID | Un GUID est créé pour identifier la catégorie |
+| Category | REG_SZ | GUID | Un GUID est créé pour identifier la catégorie |
 | Package | REG_SZ | GUID | Le GUID du service VSPackage qui prend en charge de la catégorie |
   
 Le service spécifié dans le Registre doit fournir une implémentation de `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` pour le groupe correspondant.
@@ -397,7 +398,7 @@ Pour ce faire, un VSPackage doit :
   
  **OR**  
   
--   **interroger l’IDE pour les modifications**. Cela est possible via l’objet implémentés par le système [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface. Bien que principalement pour la prise en charge de la persistance, la [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) méthode permettre obtenir des informations de police et la couleur pour afficher les éléments. Pour plus d’informations sur les paramètres de police et couleur, consultez l’article MSDN [l’accès à stockées paramètres de police et couleur](https://msdn.microsoft.com/en-us/library/bb166382.aspx).  
+-   **interroger l’IDE pour les modifications**. Cela est possible via l’objet implémentés par le système [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface. Bien que principalement pour la prise en charge de la persistance, la [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) méthode permettre obtenir des informations de police et la couleur pour afficher les éléments. Pour plus d’informations sur les paramètres de police et couleur, consultez l’article MSDN [l’accès à stockées paramètres de police et couleur](../accessing-stored-font-and-color-settings.md).  
   
 > **Remarque :** pour vous assurer que les résultats d’interrogation sont corrects, utilisez le [IVsFontAndColorCacheManager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) interface pour déterminer si un vidage du cache et la mise à jour sont nécessaires avant d’appeler les méthodes de récupération de la [ IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface.
   

@@ -13,16 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], walkthroughs
 - walkthroughs [Office development in Visual Studio], data
-ms.assetid: 3b2dd058-66dd-4a21-ac15-0f09a84c939f
-caps.latest.revision: "15"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 91421fbfa5474c54b15109a1d0aec6de61369713
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ff2d79e0be978295ab6ad3228f8d576e0bce82cd
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Procédures pas à pas relatives aux données dans les solutions Office
   Les procédures suivantes montrent comment utiliser des données dans les personnalisations au niveau du document et les compléments VSTO pour Microsoft Office Word et Microsoft Office Excel.  

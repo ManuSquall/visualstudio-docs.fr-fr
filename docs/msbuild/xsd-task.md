@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,15 +20,17 @@ helpviewer_keywords:
 - XSD task (MSBuild (Visual C++))
 - MSBuild (Visual C++), XSD task
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
-caps.latest.revision: "13"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df309f6b4d28da051dca9b824d06dcae221b2a9e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 5d0324b3e72cfffb73e22b3995cfc9458631e7d5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="xsd-task"></a>Tâche XSD
 Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichiers de schéma ou de classe à partir d’une source.  
@@ -38,13 +40,13 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
 -   **AdditionalOptions**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Liste des options comme indiqué sur la ligne de commande. Par exemple, « */option1 /option2 /option#* ». Utilisez ce paramètre pour spécifier des options qui ne sont pas représentées par un autre paramètre de tâche **XSD**.  
   
 -   **GenerateFromSchema**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Indique les types qui sont générés à partir du schéma spécifié.  
   
@@ -56,7 +58,7 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
 -   **Language**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le langage de programmation à utiliser pour le code généré.  
   
@@ -64,7 +66,7 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
 -   **Namespace**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie l'espace de noms du runtime pour les types générés.  
   
@@ -82,7 +84,7 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
 -   **TrackerLogDirectory**  
   
-     Paramètre de **chaîne** facultatif.  
+     Paramètre **String** facultatif.  
   
      Spécifie le répertoire du journal de Tracker.  
   

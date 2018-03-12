@@ -4,19 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, providing overridable classes
-ms.assetid: 30baa60d-a8ea-4611-96c1-8fcc3317cf21
-caps.latest.revision: "15"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: 81f218f9c0d9cd5d9c6abf8f4f9f0fb78181f4f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- Domain-Specific Language, providing overridable classes
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: f86600b6fd4bb272ece4454e9a94032ed05f3af1
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Substitution et extension des classes générées
 Définition de votre DSL est une plateforme sur laquelle vous pouvez créer un ensemble puissant d’outils qui sont basées sur un langage spécifique à un domaine. Plusieurs extensions et les adaptations est possible en substituant et en étendant les classes générées à partir de la définition DSL. Ces classes incluent non seulement les classes de domaine que vous avez définis explicitement dans le schéma de définition DSL, mais également d’autres classes qui définissent la boîte à outils, l’Explorateur, sérialisation et ainsi de suite.  

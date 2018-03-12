@@ -4,21 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, extension errors
 - dependency diagrams, troubleshooting extensions
-ms.assetid: 1fda4f8a-38b8-482b-87b8-eade1a4e5662
-caps.latest.revision: "25"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
-ms.openlocfilehash: fae53e45b231292df8b7a6ae8bf4f2babc5d9e88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 21a14ed32bb1b63e2363736e438139479ff5bf60
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Dépanner les extensions de diagrammes de dépendance
 Cette rubrique aborde certains problèmes que vous pouvez rencontrer quand vous créez des extensions de modèle de couche.  

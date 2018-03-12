@@ -18,18 +18,19 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e0701c93146b4cc460a7216d2f4159832389db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cde73eeec2b6a73f25f714c41976d3d0513e939
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|  
 |CheckId|CA1711|  
-|Catégorie|Microsoft.Naming|  
+|Category|Microsoft.Naming|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
  En outre, les suffixes suivants doivent **pas** être utilisé :  
   
--   Délégué  
+-   délégué  
   
 -   Enum  
   

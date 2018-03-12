@@ -12,16 +12,17 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11213c60eb03626f86b51f896b6edb487c3e3394
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 990385be9d9518826f764a59529a1cff61467506
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Procédure pas à pas : capture d'informations Graphics
 Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour capturer manuellement les informations graphiques d’une application Direct3D.  
   
- Cette procédure pas à pas décrit les tâches suivantes :  
+ Cette procédure pas à pas décrit les tâches suivantes :  
   
 -   Raccordement de Graphics Diagnostics à votre application  
   
@@ -50,7 +51,7 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
 -   Dans la barre d’outils Graphics Diagnostics, choisissez le bouton **Capturer** . ![Icône de bouton de capture de graphiques](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-     ou  
+     - ou -  
   
      Quand l’application a le focus, appuyez sur **Impr. écran**.  
   

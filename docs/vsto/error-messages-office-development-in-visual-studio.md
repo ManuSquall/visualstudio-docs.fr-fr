@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: error messages, Office development in Visual Studio
-ms.assetid: 7f74b826-8770-40d2-939b-4a4f20373f5a
-caps.latest.revision: "8"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- error messages, Office development in Visual Studio
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 58e0e5cd58a29a674f556f83e84e1f8063296dcd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: f10aefc928b0f9a102250e65399fb33b33ad87db
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Messages d'erreur (Développement Office dans Visual Studio)
   Chaque rubrique de message d’erreur fournit des informations sur les causes possibles d’une erreur et les solutions potentielles.  

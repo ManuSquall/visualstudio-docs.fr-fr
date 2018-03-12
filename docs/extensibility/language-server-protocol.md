@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9aeef820575a4fb055318fe11d401e85c9958bad
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: vssdk
+ms.openlocfilehash: 269c19410207e47f233eadfa984a84a7c8445743
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="language-server-protocol"></a>Protocole de serveur de langage
 
@@ -38,11 +39,11 @@ LSP a évolué au fil du temps et aujourd'hui, il est à la Version 3.0. Il a d�
 
 En même temps, Microsoft a démarré pour travailler sur un serveur de langage TypeScript, avec l’idée de prendre en charge TypeScript dans les éditeurs de Emacs et Sublime de texte. Dans cette implémentation, un éditeur communique via stdin/stdout avec le processus de serveur TypeScript et utilise une charge utile JSON d’inspirés par le protocole du débogueur V8 pour les demandes et réponses. Le serveur TypeScript a été intégré dans le plug-in Sublime TypeScript et le Code de Visual Studio pour la modification de TypeScript enrichi.
 
-Après avoir dans intégré deux serveurs de langue différente, l’équipe Visual Studio Code démarré l’exploration d’un protocole de serveur de langage commun pour les éditeurs et IDE. Un protocole commun permet à un fournisseur de langage créer un serveur de langue unique qui peut être consommé par différents IDE. Un consommateur de serveur de langage doit implémenter le côté client du protocole qu’une seule fois. Cela provoque une situation gagnant-gagnant pour le fournisseur de langage et le consommateur de langage.
+Après l’intégration de deux serveurs de langue différente, l’équipe Visual Studio Code démarré l’exploration d’un protocole de serveur de langage commun pour les éditeurs et IDE. Un protocole commun permet à un fournisseur de langage créer un serveur de langue unique qui peut être consommé par différents IDE. Un consommateur de serveur de langage doit implémenter le côté client du protocole qu’une seule fois. Cela provoque une situation gagnant-gagnant pour le fournisseur de langage et le consommateur de langage.
 
-Démarré avec le protocole de la langue utilisé par le serveur TypeScript, il a été plus général et indépendant de la langue. Le protocole a été avec plusieurs fonctionnalités de langage à l’aide de l’API du langage VS Code inspiration. Le protocole lui-même est sauvegardé avec JSON-RPC d’appel de méthode distant en raison de ses bibliothèques simplicité et la prise en charge de nombreux langages de programmation.
+Le protocole de serveur de langage a démarré avec le protocole utilisé par le serveur TypeScript, développer avec plusieurs fonctionnalités du langage inspirées par le API du langage VS Code. Le protocole est sauvegardé avec JSON-RPC d’appel de méthode distant en raison de sa simplicité et de bibliothèques existants.
 
-Le dogfooded équipe VS Code le protocole en mettant en œuvre plusieurs serveurs de langage lint. Un serveur de langue lint répond aux demandes de type "lint" (analyse) un fichier et retourne un ensemble d’erreurs et les avertissements détectés. L’objectif était de type "lint" un fichier en tant que les modifications d’utilisateurs dans un document, ce qui signifie qu’il y aura de demandes pelucheux pendant une session d’éditeur. Il avait un sens pour maintenir un serveur de configuration et en cours d’exécution afin qu’un nouveau processus pelucheux n’a pas été doivent être démarrés pour chaque modification de l’utilisateur. Plusieurs serveurs lint ont été implémentés, y compris du Code Visual Studio extensions ESLint et TSLint. Ces deux serveurs lint sont à la fois implémentés dans TypeScript/JavaScript et s’exécutent sur Node.js. Ils partagent une bibliothèque qui implémente la partie client et le serveur du protocole.
+La VS Code équipe prototypée protocole par l’implémentation de plusieurs serveurs de langage lint qui répondent à des demandes à lint (analyse) un fichier et renvoyer un ensemble d’erreurs et les avertissements détectés. L’objectif était de type "lint" un fichier en tant que les modifications d’utilisateurs dans un document, ce qui signifie qu’il y aura de demandes pelucheux pendant une session d’éditeur. Il avait un sens pour maintenir un serveur de configuration et en cours d’exécution afin qu’un nouveau processus pelucheux n’était pas nécessaire doit être démarrée pour chaque modification de l’utilisateur. Plusieurs serveurs lint ont été implémentés, y compris du Code Visual Studio extensions ESLint et TSLint. Ces deux serveurs lint sont à la fois implémentés dans TypeScript/JavaScript et s’exécutent sur Node.js. Ils partagent une bibliothèque qui implémente la partie client et le serveur du protocole.
 
 ## <a name="how-the-lsp-works"></a>Fonctionne des LSP
 

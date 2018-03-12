@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.ruleseteditor
+f1_keywords:
+- vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5a0fc10230c4c2b7638e1be75770872e0dcf4aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: c832b29512bfd7339ab60044ece81f1626be9bc7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Utilisation de l'Éditeur d'ensembles de règles d'analyse du code
 L’éditeur de jeu de règles de l’analyse du Code vous permet de spécifier les règles qui sont inclus dans un ensemble de règles personnalisé et pour spécifier l’action. Vous pouvez également spécifier l’action à entreprendre lorsque l’analyse du code rencontre une violation de la règle.  
@@ -63,8 +67,8 @@ L’éditeur de jeu de règles de l’analyse du Code vous permet de spécifier 
 |-----------|-----------------|  
 |**ID**|Identificateur de la règle.|  
 |**Catégorie**|En plus de leur appartenance aux ensembles de règles, les règles d’analyse du code sont également groupées par catégorie. Pour plus d’informations, consultez [l’analyse du Code pour les avertissements de Code managé](../code-quality/code-analysis-for-managed-code-warnings.md).|  
-|**Nom**|Le titre de la règle.|  
-|**Namespace**|L’espace de noms de la règle.|  
+|**Name**|Le titre de la règle.|  
+|**Espace de noms**|L’espace de noms de la règle.|  
 |**Type de cible**|Indique si la règle est pour natif, managé ou code de base de données.|  
 |**Action**|L’action effectuée lorsque la règle est violée dans une analyse du code exécutée.<br /><br /> **Avertissement** -génère un avertissement.<br /><br /> **Erreur** -génère une erreur.<br /><br /> **Aucun** -désactive la règle.<br /><br /> Vous pouvez modifier le champ d’Action. Définition de la valeur None est le même que la case à cocher pour la règle.|  
 |**Ensembles de règles de code source**|L’ensemble de règles qui contient la règle.|  

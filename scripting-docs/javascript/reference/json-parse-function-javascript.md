@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: JSON.parse
+f1_keywords:
+- JSON.parse
 dev_langs:
 - JavaScript
 - TypeScript
@@ -17,15 +19,15 @@ helpviewer_keywords:
 - parse JSON method
 - JSON.parse method
 ms.assetid: 20f00d31-5ab5-4c3c-ab49-2534fc39a9b4
-caps.latest.revision: "41"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d66aee32a191c8cc1879c9436788c196c05e7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 519fc733fd42a194fbd7335127ddf9bcf0bdc220
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="jsonparse-function-javascript"></a>JSON.parse, fonction (JavaScript)
 Convertit une chaîne JSON (JavaScript Object Notation) en objet.  
@@ -38,7 +40,7 @@ JSON.parse(text [, reviver])
   
 ## <a name="parameters"></a>Paramètres  
  `text`  
- Obligatoire. Chaîne JSON valide.  
+ Requis. Chaîne JSON valide.  
   
  `reviver`  
  Facultatif. Fonction qui transforme les résultats. Cette fonction est appelée pour chaque membre de l'objet. Si un membre contient des objets imbriqués, ces derniers sont transformés avant l'objet parent. Pour chaque membre, les événements suivants se produisent :  
@@ -66,7 +68,7 @@ JSON.parse(text [, reviver])
   
 -   Assurez-vous que l'argument de texte `text` a été sérialisé par une implémentation conforme à JSON, telle que `JSON.stringify`.  
   
--   Exécutez l'argument `text` dans un validateur JSON tel que [JSLint](http://www.jslint.com/) pour aider à identifier les erreurs de syntaxe.  
+-   Exécutez le `text` argument dans un validateur JSON tel que [JSLint](http://www.jslint.com/) ou [JSON au format CSV](https://json-csv.com) pour aider à identifier les erreurs de syntaxe.  
   
 ## <a name="example"></a>Exemple  
  L'exemple suivant utilise `JSON.parse` pour convertir une chaîne JSON en un objet.  
@@ -128,7 +130,7 @@ function dateReviver(key, value) {
   
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  [!INCLUDE[jsv58](../../javascript/reference/includes/jsv58-md.md)]  
   
 ## <a name="see-also"></a>Voir aussi  

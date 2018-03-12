@@ -13,16 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - workbooks [Office development in Visual Studio], common tasks
 - Excel [Office development in Visual Studio], workbooks
-ms.assetid: 4eca9d7b-5d99-4bc8-9d05-13714f017909
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a3d83847341e7689b34edb0a4582225886e5eebd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 774d22be5cf7ef65d7c323d151400a2ea2b33cc5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="working-with-workbooks"></a>Utilisation des classeurs
   Les classes <xref:Microsoft.Office.Tools.Excel.Workbook> et <xref:Microsoft.Office.Interop.Excel.Workbooks> contiennent les méthodes et les propriétés utilisées pour effectuer des tâches avec des classeurs.  

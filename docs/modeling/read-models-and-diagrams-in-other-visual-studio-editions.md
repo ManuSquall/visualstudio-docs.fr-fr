@@ -4,19 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: models, versions of Visual Studio
-ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
-caps.latest.revision: "20"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
-ms.openlocfilehash: 704c69efa4e0495a1a4aa7545fa6ba100488afe9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- models, versions of Visual Studio
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: bec543b7adbf4ea27dca40be4ba51dc0eb622669
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lire des modèles et des diagrammes dans d'autres éditions de Visual Studio
 Quand vous ouvrez un modèle dans une version de Visual Studio qui ne prend pas en charge la création de modèle, le modèle s'ouvre en mode lecture seule. Dans ce mode, vous pouvez modifier la disposition des diagrammes, mais vous ne pouvez pas modifier le modèle.  
@@ -36,7 +37,7 @@ Quand vous ouvrez un modèle dans une version de Visual Studio qui ne prend pas 
 -   Les deux fichiers de diagrammes pour le diagramme que vous souhaitez lire, par exemple, **MyDiagram.classdiagram and MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Pour les diagrammes de dépendance, vous devez également avoir le fichier nommé *MyDiagram***. layerdiagram.suppressions**.  
+    >  Pour les diagrammes de dépendance, vous devez également avoir le fichier nommé * MyDiagram ***. layerdiagram.suppressions**.  
   
 -   Fichier de projet de modélisation (**MyModel.modelproj**)  
   

@@ -19,11 +19,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c5f1ec42408e4fd7d33d9445ae09252fae8d03db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 84e850d44162a964ce6ef8b64be92ce4eeacb86e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Commande par défaut, le groupe et la sélection élective de la barre d’outils
 Pour l’uniformité de produit et de stabilité, l’interface utilisateur affiche certains groupes de commandes par défaut, et [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit les définitions pour les commandes et les groupes de commandes. VSPackages peuvent également utiliser les commandes standards et les groupes de commandes.  

@@ -12,18 +12,19 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bcc92434640306105ccec8100d66e9c38426f88
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6672922343ef6c0b56dd91eb358cf2fcd7ac6090
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350 : N’utilisez pas d’algorithmes de chiffrement faibles
 |||  
 |-|-|  
 |TypeName|DoNotUseWeakCryptographicAlgorithms|  
 |CheckId|CA5350|  
-|Catégorie|Microsoft.Cryptography|  
+|Category|Microsoft.Cryptography|  
 |Modification avec rupture|Sans rupture|  
   
 > [!NOTE]
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Pour le chiffrement TripleDES, utilisez le chiffrement <xref:System.Security.Cryptography.Aes> .  
   
--   Pour les fonctions de hachage SHA1 et RIPEMD160, utilisez les fonctions de la famille [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) (par exemple, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+-   Pour les fonctions de hachage SHA1 ou RIPEMD160, utilisez celles dans les [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) famille (par exemple, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
  Supprimez un avertissement de cette règle quand le niveau de protection nécessaire pour les données ne nécessite pas une garantie de sécurité.  

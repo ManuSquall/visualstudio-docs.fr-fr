@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-helpviewer_keywords: deployment, website
+helpviewer_keywords:
+- deployment, website
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a0b4051ce8ba14302e403cb213804b8193b60af
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
-ms.translationtype: HT
+ms.workload:
+- multiple
+ms.openlocfilehash: e324869eb90cd60cba68d9ed7b2e3fdb1ebb588d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Publier une application web ou une application .NET Core sur un site web à l’aide de l’outil de publication de Visual Studio
 
@@ -27,7 +31,7 @@ Ces étapes s’appliquent aux applications Python dans Visual Studio, .NET Core
 
 ## <a name="create-a-new-project"></a>Créer un projet 
 
-1. Dans Visual Studio, choisissez **fichier > Nouveau projet**.
+1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 
 1. Sous **Visual C#** ou **Visual Basic**, choisissez **Web**, puis dans le volet central, choisissez soit **ASP.NET Web Applications (.NET Framework)**ou (c# uniquement) **Application ASP.NET Core Web**, puis cliquez sur **OK**.
 
@@ -41,7 +45,7 @@ Ces étapes s’appliquent aux applications Python dans Visual Studio, .NET Core
 
 ## <a name="publish-to-a-web-site"></a>Publier sur un site web
 
-1. Dans l’Explorateur de solutions, cliquez sur le projet et choisissez **publier**.
+1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**.
 
     ![Choisissez publier](../deployment/media/quickstart-publish-aspnet.png "choisissez Publier")
 
@@ -75,4 +79,4 @@ Ces étapes s’appliquent aux applications Python dans Visual Studio, .NET Core
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Déployer ASP.NET sur IIS](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+- [Déployer ASP.NET sur IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)

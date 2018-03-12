@@ -17,16 +17,15 @@ helpviewer_keywords:
 - tokens [SharePoint development in Visual Studio]
 - replaceable parameters [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, replaceable parameters
-ms.assetid: 3c46bbb1-0a98-495c-9fd1-dc57a6aedc11
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 80f9770fe0e6a0294ec43e450acc75f55b8ddbe2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fa002f58ffd749cef9a4cbf9b536a36d7901b105
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="replaceable-parameters"></a>Paramètres remplaçables
   Paramètres remplaçables, ou *jetons*, peut être utilisée dans les fichiers de projet pour fournir des valeurs pour les éléments de solution SharePoint dont les valeurs réelles ne sont pas connues au moment du design. Ils sont semblables à la norme [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] jetons de modèle. Pour plus d’informations, consultez [les paramètres de modèle](/visualstudio/ide/template-parameters).  
@@ -55,7 +54,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="tokens-list"></a>Liste des jetons  
  Le tableau suivant répertorie les jetons disponibles.  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |$SharePoint.Project.FileName$|Le nom du fichier projet contenant, par exemple, « NouvProj.csproj ».|  
 |$SharePoint.Project.FileNameWithoutExtension$|Le nom du fichier projet contenant sans l’extension de nom de fichier. Par exemple, « NewProj ».|  

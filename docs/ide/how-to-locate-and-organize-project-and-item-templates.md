@@ -1,7 +1,7 @@
 ---
-title: "Guide pratique pour localiser et organiser les modèles de projet et d’élément | Microsoft Docs"
+title: "Organiser les modèles dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 06/02/2017
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -9,172 +9,123 @@ ms.tgt_pltfrm:
 ms.topic: article
 helpviewer_keywords:
 - project templates [Visual Studio], locations
-- custom template locations [Visual Studio]
-- item templates, locations
-- Visual Studio templates, locations
-- project templates [Visual Studio], displaying
-- templates [Visual Studio], locations
-ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
-caps.latest.revision: "25"
+- item templates [Visual Studio], locations
+- template locations [Visual Studio]
+- Visual Studio templates, organizing
+- templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1846b145833a7474e8662442313d0e39a262e67c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c58bda5570be9cdb7fba7a8f90a282df7b7167a2
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/13/2018
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Guide pratique pour localiser et organiser les modèles de projet et d'élément
-Les fichiers modèles doivent être placés à un emplacement que Visual Studio reconnaît afin que les modèles s’affichent dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**. Vous pouvez créer des sous-catégories personnalisées de modèles afin qu'elles apparaissent également dans l'interface utilisateur.  
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Guide pratique pour localiser et organiser les modèles de projet et d’élément
 
-## <a name="locating-templates"></a>Localisation de modèles  
- Par défaut, Visual Studio recherche les modèles de projet et d'élément à deux emplacements. Si un fichier compressé incluant un fichier .vstemplate existe à ces emplacements, un modèle apparaît dans les boîtes de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**.  
+Les fichiers de modèle doivent être placés à un emplacement que Visual Studio reconnaît pour que les modèles s’affichent dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**. Vous pouvez également créer des sous-catégories personnalisées à l’emplacement du modèle utilisateur, et les catégories apparaissent dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**.
 
-### <a name="installed-templates"></a>Modèles installés  
- Par défaut, les modèles installés avec le produit se trouvent dans :  
+## <a name="locate-templates"></a>Localiser les modèles
 
--   \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ItemTemplates\\*Langage*\\*Paramètres_régionaux*\  
+Les modèles installés et les modèles utilisateur sont stockés à deux emplacements différents.
 
--   \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ProjectTemplates\\*Langage*\\*Paramètres_régionaux\\*  
+### <a name="user-templates"></a>Modèles utilisateur
 
- Par exemple, le répertoire suivant contient les modèles de projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour l'anglais :  
+Si vous ajoutez un fichier compressé (.zip) incluant un fichier .vstemplate au répertoire du modèle utilisateur, le modèle apparaît dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**. Par défaut, les modèles utilisateur se trouvent dans :
 
- \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
+- %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates
 
-### <a name="custom-templates"></a>Modèles personnalisés  
- Par défaut, les modèles personnalisés se trouvent dans :  
+- %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates
 
--   \Mes documents\Visual Studio *Version*\Templates\ProjectTemplates\\*Langage*\  
+Par exemple, le répertoire suivant contient les modèles de projet utilisateur pour C# :
 
--   \Mes documents\Visual Studio *Version*\Templates\ItemTemplates\\*Langage*\  
+   C:\Utilisateurs\Nom_Utilisateur\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\
 
- Par exemple, le répertoire suivant contient les modèles de projet [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] personnalisés :   
+> [!TIP]
+> Vous pouvez définir l’emplacement des modèles utilisateur dans **Outils** > **Options** > **Projets et solutions** > **Emplacements**.
 
- C:\Documents and Settings\nom_utilisateur\Mes documents\Visual Studio *Version*\Templates\ProjectTemplates\Visual C#\  
+### <a name="installed-templates"></a>Modèles installés
 
- Les modèles personnalisés n'incluent pas de sous-répertoire pour les modèles localisés. Vous pouvez changer le répertoire par défaut des modèles personnalisés dans la boîte de dialogue **Options**, sous **Environnement\Projets et solutions**.  
+Par défaut, les modèles installés avec Visual Studio se trouvent dans :
 
-## <a name="organizing-templates"></a>Organisation de modèles  
- Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément** reflètent les structures de répertoires qui existent pour les modèles installés et personnalisés. Vous pouvez modifier ces structures de répertoires pour organiser vos modèles selon votre propre logique.  
+- \\*Répertoire_Installation_Visual Studio*\Common7\IDE\ItemTemplates\\*Langage de programmation*\\*ID de paramètres régionaux*
+
+- \\*Répertoire_Installation_Visual Studio*\Common7\IDE\ProjectTemplates\\*Langage de programmation*\\*ID de paramètres régionaux*
+
+Par exemple, le répertoire suivant contient les modèles d’élément Visual Basic pour l’anglais (LCID 1033) :
+
+   \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ItemTemplates\VisualBasic\1033\
+
+## <a name="organize-templates"></a>Organiser les modèles
+
+Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément** reflètent les structures de répertoires qui existent aux emplacements des modèles installés et utilisateur. Pour organiser les modèles utilisateur dans leurs propres catégories, ajoutez de nouveaux dossiers au répertoire du modèle utilisateur. Les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément** reflètent toutes les modifications que vous apportez à vos catégories de modèle utilisateur.
 
 > [!NOTE]
->  Vous ne pouvez pas créer de catégorie au niveau du langage de programmation. Vous ne pouvez créer une catégorie qu'à l'intérieur de chaque langage.  
+> Vous ne pouvez pas créer de catégorie au niveau du langage de programmation. Vous ne pouvez créer une catégorie qu'à l'intérieur de chaque langage.
 
- Si les répertoires des modèles installés et personnalisés pour un langage particulier n’ont pas la même structure (c’est-à-dire un dossier contient des répertoires qui n’existent pas dans l’autre dossier), le jeu de catégories qui apparaît dans la boîte de dialogue **Nouveau projet** est la fusion de toutes les catégories.  
+### <a name="to-create-new-user-project-template-categories"></a>Pour créer des catégories de modèles de projet utilisateur
 
-### <a name="organizing-installed-templates"></a>Organisation de modèles installés  
- Vous pouvez organiser les modèles installés en créant des sous-répertoires dans le dossier du langage de programmation. Ces sous-répertoires apparaissent dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément** en tant que dossiers virtuels dans chaque langage.  
+1. Créez un sous-dossier dans le dossier du langage de programmation du répertoire des modèles de projet utilisateur. Par exemple, pour créer une catégorie **HelloWorld** pour les modèles de projet C#, créez le répertoire suivant :
 
-##### <a name="to-create-new-installed-project-template-categories"></a>Pour créer des catégories de modèles de projet installés  
+    \%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates\Visual C#\HelloWorld\
 
-1.  Créez un dossier dans le dossier du langage du répertoire des modèles installés. Par exemple, pour créer une catégorie Office pour les modèles de projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pourriez créer le répertoire suivant :   
+1. Placez tous les modèles de cette catégorie dans le nouveau dossier.
 
-     \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
+1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**.
 
-2.  Placez tous les modèles de cette catégorie dans le nouveau dossier.  
+   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Nouveau projet**, sous **Installé** > **Visual C#**.
 
-3.  Fermez toutes les instances de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+### <a name="to-create-new-user-item-template-categories"></a>Pour créer des catégories de modèles d’élément utilisateur
 
-4.  Dans le menu **Démarrer**, cliquez sur **Exécuter**, tapez **cmd**, puis cliquez sur **OK**.  
+1. Créez un sous-dossier dans le dossier du langage de programmation du répertoire des modèles d’élément utilisateur. Par exemple, pour créer une catégorie **HelloWorld** pour les modèles d’élément C#, créez le répertoire suivant :
 
-5.  À l’invite de commandes, localisez le répertoire qui contient devenv.exe et tapez **devenv /installvstemplates**.  
+    \%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates\Visual C#\HelloWorld\
 
-6.  Exécutez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+1. Placez tous les modèles de cette catégorie dans le nouveau dossier.
 
-7.  Dans le menu **Fichier** , cliquez sur **Nouveau**, puis sur **Projet**.  
+1. Créez un projet ou ouvrez un projet existant. Ensuite, dans le menu **Projet**, choisissez **Ajouter un nouvel élément**.
 
-8.  Vérifiez que la catégorie Office apparaît dans la boîte de dialogue **Nouveau projet**, dans le volet **Types de projets**, sous [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
+   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé** > **Éléments Visual C#**.
 
- Vous pouvez également regrouper dans un dossier personnalisé un sous-ensemble de modèles d’élément de projet.  
+### <a name="display-templates-in-parent-categories"></a>Afficher les modèles dans les catégories parentes
 
-##### <a name="to-create-new-installed-item-template-categories"></a>Pour créer des catégories de modèles d'élément installés  
+Vous pouvez permettre aux modèles des sous-catégories d'être affichés dans leur catégorie parente à l'aide de l'élément `NumberOfParentCategoriesToRollUp` du fichier .vstemplate. Ces étapes sont identiques pour les modèles de projet et les modèles d’élément.
 
-1.  Créez un dossier dans le dossier du langage du répertoire des modèles installés. Par exemple, pour créer une catégorie Web pour les modèles d'élément [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], vous pourriez créer le répertoire suivant :   
+#### <a name="to-display-templates-in-parent-categories"></a>Pour afficher les modèles dans les catégories parentes
 
-     \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ItemTemplates\CSharp\1033\Web\  
+1. Localisez le fichier .zip qui contient le modèle.
 
-2.  Placez tous les modèles de cette catégorie dans le nouveau dossier.  
+1. Extrayez le fichier zip.
 
-3.  Fermez toutes les instances de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+1. Ouvrez le fichier .vstemplate dans Visual Studio.
 
-4.  Dans le menu **Démarrer**, cliquez sur **Exécuter**, tapez **cmd**, puis cliquez sur **OK**.  
+1. Dans l'élément `TemplateData`, ajoutez un élément `NumberOfParentCategoriesToRollUp`. Par exemple, le code suivant fait apparaître le modèle dans sa catégorie parente, mais pas plus haut dans la hiérarchie.
 
-5.  À l’invite de commandes, localisez le répertoire qui contient devenv.exe et tapez **devenv /setup**.  
+    ```xml
+    <TemplateData>
+        ...
+        <NumberOfParentCategoriesToRollUp>
+            1
+        </NumberOfParentCategoriesToRollUp>
+        ...
+    </TemplateData>
+    ```
 
-6.  Exécutez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+1. Enregistrez et fermez le fichier .vstemplate. 
 
-7.  Créez un projet ou ouvrez un projet existant.  
+1. Sélectionnez les fichiers inclus dans votre modèle, cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** > **Dossier compressé**.
 
-8.  Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.  
+   Les fichiers sont compressés dans un fichier .zip.
 
-9. Vérifiez que la catégorie web apparaît dans la boîte de dialogue **Ajouter un nouvel élément**, dans le volet **Types de projets**.  
+1. Supprimez les fichiers de modèles extraits et l'ancien fichier .zip du modèle.
 
-### <a name="organizing-custom-templates"></a>Organisation de modèles personnalisés  
- Pour organiser des modèles personnalisés dans leurs propres catégories, ajoutez de nouveaux dossiers à leur emplacement. La boîte de dialogue **Nouveau projet** reflète toutes les modifications que vous apportez à vos catégories de modèles.  
+1. Mettez le nouveau fichier .zip dans le répertoire duquel vous avez supprimé le fichier .zip.
 
-##### <a name="to-create-new-custom-project-template-categories"></a>Pour créer des catégories de modèles de projet personnalisés  
+## <a name="see-also"></a>Voir aussi
 
-1.  Créez un dossier dans le dossier du langage du répertoire des modèles de projet personnalisés. Par exemple, pour créer une catégorie HelloWorld pour les modèles [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], vous pourriez créer le répertoire suivant :   
-
-     \Mes documents\Visual Studio *Version*\Templates\ProjectTemplates\CSharp\HelloWorld\  
-
-2.  Placez tous les modèles de cette catégorie dans le nouveau dossier.  
-
-3.  Dans le menu **Fichier** , cliquez sur **Nouveau**, puis sur **Projet**.  
-
-4.  Vérifiez que la catégorie HelloWorld apparaît dans la boîte de dialogue **Nouveau projet** dans le volet **Types de projets**, sous [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
-
- Vous pouvez également regrouper dans un dossier personnalisé un sous-ensemble de modèles d’élément personnalisés.  
-
-##### <a name="to-create-new-custom-item-template-categories"></a>Pour créer des catégories de modèles d'élément personnalisés  
-
-1.  Créez un dossier dans le dossier du langage du répertoire des modèles d'élément personnalisés. Par exemple, pour créer une catégorie HelloWorld pour les modèles [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], vous pourriez créer le répertoire suivant :   
-
-     \Mes documents\Visual Studio *Version*\Templates\ItemTemplates\CSharp\HelloWorld\  
-
-2.  Placez tous les modèles de cette catégorie dans le nouveau dossier.  
-
-3.  Créez un projet ou ouvrez un projet existant.  
-
-4.  Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.  
-
-5.  Vérifiez que la catégorie HelloWorld apparaît dans la boîte de dialogue **Ajouter un nouvel élément** dans le volet **Types de projets**.  
-
-### <a name="displaying-templates-in-parent-categories"></a>Affichage de modèles dans des catégories parentes  
- Vous pouvez permettre aux modèles des sous-catégories d'être affichés dans leur catégorie parente à l'aide de l'élément `NumberOfParentCategoriesToRollUp` du fichier .vstemplate. Ces étapes sont identiques pour les modèles de projet et les modèles d'élément.  
-
-##### <a name="to-display-templates-in-parent-categories"></a>Pour afficher les modèles dans les catégories parentes  
-
-1.  Localisez le fichier .zip qui contient le modèle.  
-
-2.  Extrayez le fichier zip.  
-
-3.  Ouvrez le fichier .vstemplate dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-
-4.  Dans l'élément `TemplateData`, ajoutez un élément `NumberOfParentCategoriesToRollUp`. Par exemple, le code suivant fait apparaître le modèle dans sa catégorie parente, mais pas plus haut dans la hiérarchie.  
-
-    ```  
-    <TemplateData>  
-        ...  
-        <NumberOfParentCategoriesToRollUp>  
-            1  
-        </NumberOfParentCategoriesToRollUp>  
-        ...  
-    </TemplateData>  
-    ```  
-
-5.  Enregistrez et fermez le fichier .vstemplate.   
-
-6.  Sélectionnez les fichiers présents dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers**, puis sur **Dossier compressé**. Les fichiers sont compressés dans un fichier .zip.  
-
-7.  Supprimez les fichiers de modèles extraits et l'ancien fichier .zip du modèle.  
-
-8.  Mettez le nouveau fichier .zip dans le répertoire duquel vous avez supprimé le fichier .zip.  
-
-## <a name="see-also"></a>Voir aussi  
- [Personnalisation des modèles](../ide/customizing-project-and-item-templates.md)   
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Élément NumberOfParentCategoriesToRollUp (modèles Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
- [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)   
- [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)
+[Personnalisation des modèles](../ide/customizing-project-and-item-templates.md)  
+[Informations de référence sur les schémas de modèles Visual Studio (extensibilité)](../extensibility/visual-studio-template-schema-reference.md)  
+[Élément NumberOfParentCategoriesToRollUp (modèles Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)  
+[Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)  
+[Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)

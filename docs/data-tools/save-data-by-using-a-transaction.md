@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 23cf5ee9ef7369d8c0f52adde639adad4abe3ae6
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 9f2373e3a851899d139360caf0f6bb8b6ab0efa5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Comment : enregistrer des données à l’aide d’une transaction
 Vous enregistrez des données dans une transaction à l’aide de la <xref:System.Transactions> espace de noms. Utilisez le <xref:System.Transactions.TransactionScope> objet de participer à une transaction qui est gérée automatiquement pour vous.  
@@ -54,4 +55,4 @@ Pour restaurer la transaction, levez une exception avant d’appeler le <xref:Sy
   
 ## <a name="see-also"></a>Voir aussi
 [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)  
-[Procédure : Enregistrer des données dans une transaction](../data-tools/save-data-in-a-transaction.md)  
+[Procédure pas à pas : enregistrer des données dans une transaction](../data-tools/save-data-in-a-transaction.md)  

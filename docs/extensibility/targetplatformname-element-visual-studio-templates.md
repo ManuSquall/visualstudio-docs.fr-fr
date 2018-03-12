@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e6e1f1fb9dde053c91993b158486eae8527dc11f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 10aa5bca7a71294c7dbe297e9e4befb5da485bb7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>Élément TargetPlatformName (modèles Visual Studio)
 Spécifie la plateforme ciblée par le modèle de projet. Cet élément permet de spécifier qu’un modèle de projet est utilisé pour créer des applications [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] .  
@@ -33,7 +34,7 @@ Spécifie la plateforme ciblée par le modèle de projet. Cet élément permet d
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
@@ -50,7 +51,7 @@ Spécifie la plateforme ciblée par le modèle de projet. Cet élément permet d
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le texte doit être **Windows**.  
   
 ## <a name="example"></a>Exemple  

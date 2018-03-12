@@ -1,5 +1,5 @@
 ---
-title: "Visual C# IntelliSense | Microsoft Docs"
+title: C# IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,24 +8,26 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C#, IntelliSense
+- C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 510913c4989e0dac8fd3fa3091a91b2173639c83
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload:
+- dotnet
+ms.openlocfilehash: 9da494eaf71a02f7b46ce68b1cf9f781fe32e716
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-intellisense"></a>Visual C# IntelliSense
+# <a name="c-intellisense"></a>C# IntelliSense
 
-Visual C# IntelliSense est disponible quand vous écrivez du code dans l’éditeur et quand vous déboguez du code dans la fenêtre de commande [Mode Exécution](../ide/reference/immediate-window.md).
+C# IntelliSense est disponible quand vous écrivez du code dans l’éditeur et quand vous déboguez du code dans la fenêtre de commande [Mode Exécution](../ide/reference/immediate-window.md).
 
 ## <a name="completion-lists"></a>Listes de saisie semi-automatique
 
-Les listes de saisie semi-automatique IntelliSense dans Visual C# contiennent des jetons des fonctionnalités Liste des membres, Compléter le mot, etc. Vous bénéficiez d'un accès rapide aux éléments suivants :
+Les listes de saisie semi-automatique IntelliSense en C# contiennent des jetons des fonctionnalités Liste des membres, Compléter le mot, etc. Vous bénéficiez d'un accès rapide aux éléments suivants :
 
 - Membres d’un type ou d’un espace de noms
 
@@ -41,15 +43,15 @@ La liste de saisie semi-automatique en C# est également assez intelligente pour
 
 ## <a name="code-snippets-in-completion-lists"></a>Extraits de code dans les listes de saisie semi-automatique
 
-Dans Visual C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Dans la liste de saisie semi-automatique, les extraits de code sont affichés sous forme de [raccourci](../ide/code-snippets-schema-reference.md#shortcut) d’extrait de code. Pour plus d’informations sur les extraits de code fournis par défaut en Visual C#, consultez [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md).
+En C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Dans la liste de saisie semi-automatique, les extraits de code sont affichés sous forme de [raccourci](../ide/code-snippets-schema-reference.md#shortcut) d’extrait de code. Pour plus d'informations sur les extraits de code fournis par défaut en C#, consultez [Liste d'extraits de code C#](../ide/visual-csharp-code-snippets.md).
 
 ## <a name="language-keywords-in-completion-lists"></a>Mots clés de langage dans les listes de saisie semi-automatique
 
-Dans Visual C#, la liste de saisie semi-automatique inclut également des mots clés de langage. Pour plus d’informations sur les mots clés du langage C#, consultez [Mots clés C#](/dotnet/csharp/language-reference/keywords/index).
+En C#, la liste de saisie semi-automatique inclut également des mots clés de langage. Pour plus d’informations sur les mots clés du langage C#, consultez [Mots clés C#](/dotnet/csharp/language-reference/keywords/index).
 
 ## <a name="extension-methods-in-completion-lists"></a>Méthodes d’extension dans les listes de saisie semi-automatique
 
-Dans Visual C#, la liste de saisie semi-automatique inclut les méthodes d'extension qui sont dans la portée.
+En C#, la liste de saisie semi-automatique inclut les méthodes d’extension qui sont dans la portée.
 
 > [!NOTE]
 > La liste de saisie semi-automatique n'affiche pas toutes les méthodes d'extension pour les objets <xref:System.String>.
@@ -58,9 +60,9 @@ Les méthodes d’extension utilisent une icône différente de celle des métho
 
 ## <a name="filtered-completion-lists"></a>Listes de saisie semi-automatique filtrées
 
-IntelliSense supprime les membres inutiles de la liste de saisie semi-automatique à l'aide de filtres. Visual C# filtre les listes de saisie semi-automatique qui apparaissent pour les éléments suivants :
+IntelliSense supprime les membres inutiles de la liste de saisie semi-automatique à l'aide de filtres. C# filtre les listes de saisie semi-automatique qui apparaissent pour les éléments suivants :
 
-- **Interfaces et classes de base** : IntelliSense supprime automatiquement les éléments dans les listes de saisie semi-automatique des interfaces et des classes de base, à la fois dans les listes d’interfaces et de classes de base de déclaration, et dans les listes de contraintes. Par exemple, les enums n'apparaissent pas dans la liste de saisie semi-automatique pour les classes de base, car les enums ne peuvent pas être utilisés pour les classes de base. La liste de saisie semi-automatique des classes de base contient uniquement des interfaces et des espaces de noms. Si vous sélectionnez un élément dans la liste et que vous tapez une virgule, IntelliSense supprime les classes de base de la liste de saisie semi-automatique car Visual C# ne prend pas en charge l'héritage multiple. Le même comportement se produit également pour les clauses de contrainte.
+- **Interfaces et classes de base** : IntelliSense supprime automatiquement les éléments dans les listes de saisie semi-automatique des interfaces et des classes de base, à la fois dans les listes d’interfaces et de classes de base de déclaration, et dans les listes de contraintes. Par exemple, les enums n'apparaissent pas dans la liste de saisie semi-automatique pour les classes de base, car les enums ne peuvent pas être utilisés pour les classes de base. La liste de saisie semi-automatique des classes de base contient uniquement des interfaces et des espaces de noms. Si vous sélectionnez un élément dans la liste et que vous tapiez une virgule, IntelliSense supprime les classes de base de la liste de saisie semi-automatique, car C# ne prend pas en charge l'héritage multiple. Le même comportement se produit également pour les clauses de contrainte.
 
 - **Attributs** : quand vous appliquez un attribut à un type, la liste de saisie semi-automatique est filtrée afin de répertorier uniquement les types qui descendent des espaces de noms qui contiennent ces types, comme <xref:System.Attribute>.
 

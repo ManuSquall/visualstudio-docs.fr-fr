@@ -18,18 +18,19 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c8d9fe357142cf8b95be0298797c4a18e9ee0df7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f12dda380f887aca50b764d0ec20f9db1c0cd07c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409 : Les types visibles par COM doivent pouvoir être créés
 |||  
 |-|-|  
 |TypeName|ComVisibleTypesShouldBeCreatable|  
 |CheckId|CA1409|  
-|Catégorie|Microsoft.Interoperability|  
+|Category|Microsoft.Interoperability|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  

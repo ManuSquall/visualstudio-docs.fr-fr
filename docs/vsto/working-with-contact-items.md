@@ -15,16 +15,15 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio], about contacts
 - e-mail [Office development in Visual Studio], contacts
 - contacts [Office development in Visual Studio]
-ms.assetid: e1bd9493-ee33-40e0-8b62-f310e9e35b33
-caps.latest.revision: "9"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3536c224498603eb4013c06b44dc0082337b4bdf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b58f64c59d09a20f55072d601f6faa6233d543a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="working-with-contact-items"></a>Utilisation des éléments de contact
   La classe <xref:Microsoft.Office.Interop.Outlook.ContactItem> contient les méthodes et les propriétés que vous utilisez pour effectuer des tâches avec les contacts.  

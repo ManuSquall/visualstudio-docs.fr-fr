@@ -4,22 +4,23 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ddd429d9-ac70-4ac4-9e69-299c6ea2df09
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f713a1ced59ea1ed0eaf01a3d9630aa96e4c6bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 8fb52530cf5a068081ce3af3325675d2167c57a9
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Vue d’ensemble de Visual Studio Graphics Diagnostics
-Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregistrement, puis en analysant les problèmes de rendu et de performances dans les applications Direct3D. Graphics Diagnostics peut être utilisé sur les applications qui s’exécutent localement sur votre PC Windows, dans un émulateur d’appareil Windows, ou sur un PC ou un appareil distant.  
+Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregistrement, puis en analysant les problèmes de rendu et de performances dans les applications Direct3D. Graphics Diagnostics peut être utilisé sur les applications qui sont exécutent localement sur votre PC Windows ou sur un PC ou un périphérique distant.  
   
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Utilisation de Graphics Diagnostics pour déboguer les problèmes de rendu  
  Le débogage des problèmes de rendu dans une application riche en graphiques n'est pas aussi simple que de démarrer dans un débogueur et d'exécuter du code pas-à-pas. Dans chaque frame, des centaines de milliers de pixels uniques sont produits (chacun dépend d'un jeu complexe d'état, de données, de paramètres, et de code), il est possible que seuls quelques pixels présentent le problème que vous essayez de diagnostiquer. Pour compliquer encore plus les choses, le code qui génère chaque pixel est exécuté sur du matériel spécialisé qui traite des centaines de pixels en parallèle. Les outils et les techniques de débogage classiques (qui sont difficiles à exploiter même dans du code de thread léger) sont inefficaces face à autant de données.  
@@ -32,10 +33,7 @@ Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregis
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 et Direct3D 12  
  Windows 10 introduit *Direct3D 12*, qui diffère sensiblement de Direct3D 10 et Direct3D 11. Ces différences permettent à DirectX d'être en phase avec le matériel graphique moderne et d'exploiter tout son potentiel. En outre, elles apportent également d'importants changements en matière d'API et octroient une plus grande responsabilité au programmeur qui doit gérer les problèmes de contention et de durée de vie des ressources. Malgré les différences, Graphics Diagnostics avec Direct3D 12 assure la parité de fonctionnalités à Graphics Diagnostics avec Direct3D 11.2.
   
- Windows 10 assure également la prise en charge des versions précédentes de Direct3D, ainsi que des jeux et applications qui reposent sur ces dernières. Graphics Diagnostics dans Visual Studio prend toujours en charge Direct3D 10 et Direct3D 11 sur Windows 10, ainsi que sur Windows 8.1.  
-  
-### <a name="windows-81-and-direct3d-112"></a>Windows 8.1 et Direct3D 11.2  
- Dans [!INCLUDE[win81](../includes/win81_md.md)], DirectX 11.2 inaugure de nouvelles fonctionnalités qui prennent en charge la capture d'informations graphiques pendant toute son exécution. [!INCLUDE[win81](../includes/win81_md.md)]utilise la nouvelle capture basée sur le runtime, appelé *capture robuste*— exclusivement pour toutes les versions de DirectX qui [!INCLUDE[win81](../includes/win81_md.md)] prend en charge. La capture robuste prend aussi en charge les nouvelles fonctionnalités de Direct3D 11.2.  
+ Windows 10 assure également la prise en charge des versions précédentes de Direct3D, ainsi que des jeux et applications qui reposent sur ces dernières. Graphics Diagnostics dans Visual Studio prend toujours en charge Direct3D 10 et Direct3D 11 sur Windows 10.
   
 ### <a name="limited-direct2d-support"></a>Prise en charge limitée de Direct2D  
  Étant donné que Direct2D est une API en mode utilisateur qui s’appuie sur Direct3D, vous pouvez utiliser Graphics Diagnostics pour déboguer les problèmes de rendu dans les applications qui utilisent Direct2D. Toutefois, étant donné que seuls les événements de Direct3D sous-jacents sont stockés à la place des événements de niveau supérieur de Direct2D, les événements de Direct2D n'apparaîtront pas dans la liste des événements graphiques. En outre, comme les relations entre les événements de Direct2D et les événements de Direct3D qui en résultent ne sont pas toujours claires, le fait d'utiliser Graphics Diagnostics pour déboguer les problèmes de rendu dans des applications qui utilisent Direct2D n'est pas simple. Vous pouvez toujours utiliser Graphics Diagnostics pour obtenir des informations sur les problèmes de bas niveau de rendu dans les applications qui utilisent Direct2D.  

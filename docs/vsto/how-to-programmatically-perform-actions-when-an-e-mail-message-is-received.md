@@ -15,16 +15,15 @@ helpviewer_keywords:
 - NewMail event
 - mail items [Office development in Visual Studio], custom actions
 - e-mail [Office development in Visual Studio], custom actions
-ms.assetid: cdd34fe4-e3d5-405a-a0ae-1e87216fe09c
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3834ee91b06a668052a4fd86e559e0d4dbdd8f39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 82839cdc7fbe4681cb564147a252f17f8acce25f
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-e-mail-message-is-received"></a>Comment : exécuter des actions lors de la réception d'un message électronique par programmation
   Cet exemple effectue des actions personnalisées quand l’utilisateur reçoit un message électronique.  

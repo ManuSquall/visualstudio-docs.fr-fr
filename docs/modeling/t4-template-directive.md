@@ -4,18 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
-caps.latest.revision: "10"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: 9b48a6d079ebe43f3d1e3c97a9272e8ad05b6735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 3c4e53c4d123a5a5de493059c68ef09685c903a8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 En général, un modèle de texte T4 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] commence par une directive `template`, qui spécifie comment le modèle doit être traité. Il ne doit y avoir qu'une seule directive de modèle dans un modèle de texte et les fichiers qu'il contient.  
@@ -53,7 +53,7 @@ En général, un modèle de texte T4 [!INCLUDE[vsprvs](../code-quality/includes
  L'attribut de culture spécifie la culture à utiliser lorsqu'un bloc d'expression est converti en texte.  
   
 ## <a name="debug-attribute"></a>attribut de débogage  
- Exemple :  
+ Exemple :  
  ```  
 debug="true"  
 ```  
@@ -68,7 +68,7 @@ debug="true"
  Pour exécuter un modèle au moment du design dans le débogueur, enregistrez le modèle de texte, ouvrez le menu contextuel du modèle de texte dans l’Explorateur de solutions, puis choisissez **déboguer le modèle T4**.  
   
 ## <a name="hostspecific-attribute"></a>attribut hostspecific  
- Exemple :  
+ Exemple :  
  ```  
 hostspecific="true"  
 ```  

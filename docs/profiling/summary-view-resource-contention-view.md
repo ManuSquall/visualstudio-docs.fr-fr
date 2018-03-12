@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Summary view
+helpviewer_keywords:
+- Summary view
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99865ecf81fbc7873fef43c51f543f224e281928
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 7a6e681c703847c970d79c1523ab12ce89e68d28
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---resource-contention-view"></a>Vue Résumé - Vue Conflit de ressources
 La vue Résumé affiche des informations sur les événements de votre application dans lesquels un thread ou un processus a été interrompu dans l’attente de pouvoir à une ressource.  
@@ -34,7 +38,7 @@ La vue Résumé affiche des informations sur les événements de votre applicati
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Nom**|Nom de la ressource.|  
+|**Name**|Nom de la ressource.|  
 |**% de conflits**|Pourcentage de tous les événements de conflit dans les données de profilage qui étaient des conflits sur cette ressource.|  
   
 ## <a name="most-contended-thread"></a>Thread présentant le plus de conflits  
@@ -45,5 +49,5 @@ La vue Résumé affiche des informations sur les événements de votre applicati
 |Colonne|Description|  
 |------------|-----------------|  
 |**ID**|Identificateur du thread.|  
-|**Nom**|Nom du processus propriétaire du thread.|  
+|**Name**|Nom du processus propriétaire du thread.|  
 |**% de conflits**|Pourcentage de tous les événements de conflit dans les données de profilage qui étaient des conflits sur cette ressource.|

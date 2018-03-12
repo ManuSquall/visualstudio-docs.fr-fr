@@ -2,12 +2,13 @@
 layout: LandingPage
 title: "Débogage de vos applications dans Visual Studio | Documents Microsoft"
 description: "Apprenez à utiliser Visual Studio 2017 pour déboguer des applications, des services et des outils dans le langage de votre choix pour vos plateformes et vos appareils."
+ms.topic: landing-page
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 5a526302d11b259c87317ee14c660b0d6fef5541
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 6c81a60b706a02a66fce176613fce1e0dae2496c
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="debugging-in-visual-studio"></a>Débogage dans Visual Studio
 
@@ -15,7 +16,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -33,7 +34,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/getting-started-with-the-debugger">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -51,7 +52,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/navigating-through-code-with-the-debugger">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -69,7 +70,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
         </a>
     </li>
         <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/getting-started-with-the-debugger#video">
+        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -87,7 +88,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/remote-debugging">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/remote-debugging">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -105,7 +106,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/get-started-debugging-multithreaded-apps">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -123,7 +124,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
         </a>
     </li>
         <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/intellitrace">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/intellitrace">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -141,7 +142,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/debugger-tips-and-tricks">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-tips-and-tricks">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -159,7 +160,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -183,7 +184,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
 
 <ul class="panelContent cardsW">
     <li>
-        <a href="https://msdn.microsoft.com/en-us/library/ee661590.aspx">
+        <a href="https://msdn.microsoft.com/library/ee661590.aspx">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -196,7 +197,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/debug-interface-access/debug-interface-access-sdk">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/debug-interface-access-sdk">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -209,7 +210,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/spy-increment-help">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/spy-increment-help">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

@@ -21,16 +21,15 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], creating
 - document-level customizations [Office development in Visual Studio], creating
 - application-level add-ins [Office development in Visual Studio], creating projects
-ms.assetid: 0037dbd8-0d2a-4766-90ea-81c819379582
-caps.latest.revision: "96"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f97cac11c943b75f5bc74e5cb67c9810b9ba7032
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 60addb19ba78734237e6ccf888cdb69f2629f98c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Comment : créer des projets Office dans Visual Studio
   Vous pouvez utiliser [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pour créer le complément VSTO et au niveau du document personnalisations pour les applications Microsoft Office. Pour plus d’informations sur ces types de projets, consultez [présentation du développement de Solutions Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -59,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  Dans le **nom** , tapez un nom pour le projet. Par défaut, le nom du projet est également utilisé comme nom de solution.  
   
-6.  Dans le **emplacement** , entrez le chemin d’accès où vous souhaitez créer le projet. Vous pouvez utiliser des chemins d’accès UNC absolus et universels. N'utilisez pas HTTP, FTP ni d'autres chemins d'accès de protocole.  
+6.  Dans le **emplacement** , entrez le chemin d’accès où vous souhaitez créer le projet. Vous pouvez utiliser des chemins d’accès UNC absolus et universels. N’utilisez pas HTTP, FTP ni d’autres chemins d’accès de protocole.  
   
      Les emplacements ont les formats suivants :  
   
@@ -121,7 +120,7 @@ ms.lasthandoff: 10/31/2017
   
      Si vous créez un nouveau document, spécifiez le nom de la **nom** zone, puis sélectionnez le format du document à l’aide de la **Format** boîte. Pour plus d’informations sur les formats disponibles, consultez [Architecture des personnalisations de niveau Document](../vsto/architecture-of-document-level-customizations.md).  
   
-     Si vous utilisez un document existant, spécifiez l’emplacement du document dans le **chemin d’accès complet du document existant** boîte. Vous pouvez utiliser des chemins d’accès absolus ou UNC. N'utilisez aucun chemin d'accès de protocole, notamment HTTP ou FTP, vers le document.  
+     Si vous utilisez un document existant, spécifiez l’emplacement du document dans le **chemin d’accès complet du document existant** boîte. Vous pouvez utiliser des chemins d’accès absolus ou UNC. N’utilisez aucun chemin d’accès de protocole, notamment HTTP ou FTP, vers le document.  
   
      Les emplacements ont les formats suivants :  
   

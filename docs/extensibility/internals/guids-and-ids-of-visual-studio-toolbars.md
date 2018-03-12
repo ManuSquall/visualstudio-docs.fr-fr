@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 787cebc77d0ca3d06fd88be8ab6f42c6bae3ee38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbb14818cebb35f703ec6f5ade084d96ac383d6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID et ID de barres d’outils de Visual Studio
 Cette rubrique énumère les valeurs GUID et l’ID de barres d’outils qui sont inclus dans l’environnement de développement intégré (IDE) Visual Studio, et des groupes qu’ils contiennent. Ces valeurs sont définies dans les fichiers .vsct qui sont installés dans le cadre du SDK Visual Studio. Pour plus d’informations, consultez [IDE-Defined commandes, Menus et des groupes](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -46,7 +47,7 @@ Cette rubrique énumère les valeurs GUID et l’ID de barres d’outils qui son
 |Standard|IDM_VS_TOOL_STANDARD|  
 |Générer|IDM_VS_TOOL_BUILD|  
 |Éditeur de texte|IDM_VS_TOOL_TEXTEDITOR|  
-|Déboguer|guidVSDebugGroup:IDM_DEBUG_TOOLBAR|  
+|Débogage|guidVSDebugGroup:IDM_DEBUG_TOOLBAR|  
 |Emplacement de débogage|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|  
   
 ### <a name="special-toolbars"></a>Barres d’outils spéciaux  
@@ -55,7 +56,7 @@ Cette rubrique énumère les valeurs GUID et l’ID de barres d’outils qui son
 |ToolBar|Id|  
 |-------------|--------|  
 |Ajouter une commande|IDM_VS_TOOL_ADDCOMMAND|  
-|Non défini|IDM_VS_TOOL_UNDEFINED|  
+|Undefined|IDM_VS_TOOL_UNDEFINED|  
 |Schéma XML|IDM_VS_TOOL_SCHEMA|  
 |Données XML|IDM_VS_TOOL_DATA|  
   
@@ -64,7 +65,7 @@ Cette rubrique énumère les valeurs GUID et l’ID de barres d’outils qui son
   
 ### <a name="standard-toolbar-groups"></a>Groupes de la barre d’outils standard  
   
-|Nom|Id|  
+|Name|Id|  
 |----------|--------|  
 |Enregistrer/Ouvrir|IDG_VS_TOOLSB_SAVEOPEN|  
 |Couper/copier|IDG_VS_TOOLSB_CUTCOPY|  
@@ -78,14 +79,14 @@ Cette rubrique énumère les valeurs GUID et l’ID de barres d’outils qui son
   
 ### <a name="build-toolbar-groups"></a>Créez des groupes de la barre d’outils  
   
-|Nom|Id|  
+|Name|Id|  
 |----------|--------|  
 |Barre de build|IDG_VS_BUILDBAR|  
 |Annuler|IDG_VS_BUILD_CANCEL|  
   
 ### <a name="text-editor-toolbar-groups"></a>Groupes de la barre d’outils Éditeur de texte  
   
-|Nom|Id|  
+|Name|Id|  
 |----------|--------|  
 |Achèvement|IDM_VS_TOOL_TEXTEDITOR|  
 |Retrait|IDG_VS_EDITTOOLBAR_INDENT|  
@@ -94,16 +95,16 @@ Cette rubrique énumère les valeurs GUID et l’ID de barres d’outils qui son
   
 ### <a name="debug-toolbar-groups"></a>Groupes de la barre d’outils de débogage  
   
-|Nom|Id|  
+|Name|Id|  
 |----------|--------|  
 |Exécution|IDM_DEBUG_TOOLBAR|  
 |Exécution pas à pas|IDG_DEBUG_TOOLBAR_STEPPING|  
-|Espion|IDG_DEBUG_TOOLBAR_WATCH|  
+|Watch|IDG_DEBUG_TOOLBAR_WATCH|  
 |Windows|IDG_DEBUG_TOOLBAR_WINDOWS|  
   
 ### <a name="debug-location-toolbar-groups"></a>Groupes de barre d’outils emplacement de débogage  
   
-|Nom|Id|  
+|Name|Id|  
 |----------|--------|  
 |Emplacement de débogage|IDG_DEBUG_CONTEXT_TOOLBAR|  
   

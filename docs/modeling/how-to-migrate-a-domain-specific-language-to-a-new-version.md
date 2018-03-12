@@ -4,18 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 6a1ae073-443e-45ca-8bc9-9b944362b449
-caps.latest.revision: "14"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: 397efd1049ea52b2e7c67a46509d2a088c6fa488
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7f6aa84a55e629f003a1d9b896a5c095dc2d19ac
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Comment : migrer un langage spécifique à un domaine vers une nouvelle version
 Vous pouvez migrer les projets qui définissent et utilisent le langage spécifique à un domaine à [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] à partir de la version de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] qui a été distribuée avec [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].  
@@ -24,7 +24,7 @@ Vous pouvez migrer les projets qui définissent et utilisent le langage spécifi
   
  Vous devez exécuter l’outil de migration explicitement : il n’est pas lancé automatiquement lorsque vous ouvrez une solution dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous trouverez l’outil et le document des instructions détaillées sur ce chemin d’accès :  
   
- **% Programme Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>Avant de la migration de vos projets de DSL  
  L’outil de migration modifie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fichiers projet (**.csproj**) et les fichiers solution (**.sln**).  
@@ -43,7 +43,7 @@ Vous pouvez migrer les projets qui définissent et utilisent le langage spécifi
   
     -   Double-cliquez sur l’outil dans l’Explorateur Windows (ou l’Explorateur de fichiers) ou de démarrer l’outil à partir d’une invite de commandes. L’outil est à cet emplacement :  
   
-         **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2.  Choisissez un dossier qui contient les solutions et les projets que vous voulez convertir.  
   
@@ -62,9 +62,9 @@ Vous pouvez migrer les projets qui définissent et utilisent le langage spécifi
   
     1.  Cliquez sur **convertir**.  
   
-         Avant de chaque fichier de projet est converti, une copie de *projet***.csproj** est enregistré en tant que *projet***. vs2008.csproj**  
+         Avant de chaque fichier de projet est converti, une copie de *projet *** .csproj** est enregistré sous la forme *projet ***.vs2008.csproj**  
   
-         Une copie de chaque *solution***.sln** est enregistré en tant que *solution***. vs2008.sln**  
+         Une copie de chaque *solution *** .sln** est enregistré sous la forme *solution ***.vs2008.sln**  
   
     2.  Recherchez les échecs de conversion qui sont signalés.  
   
@@ -77,7 +77,7 @@ Vous pouvez migrer les projets qui définissent et utilisent le langage spécifi
     2.  Cliquez sur le **transformer tous les modèles** bouton dans l’en-tête de l’Explorateur de solutions.  
   
         > [!NOTE]
-        >  Vous pouvez effectuer cette étape inutiles. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+        >  Vous pouvez effectuer cette étape inutiles. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6.  Mettre à jour votre code personnalisé dans les projets convertis.  
   

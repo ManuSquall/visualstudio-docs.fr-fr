@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vs.debug.error.rpc_requires_authentication
+ms.topic: reference
+f1_keywords:
+- vs.debug.error.rpc_requires_authentication
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 88362b3b-8fbe-431f-96a4-80e2d822bbc7
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3431ee286787d99e8601fbed7cad3012ffcaf68e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 73cd474d415a49b6dd9075559d8618289b1b0d21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-rpc-requires-authentication"></a>Erreur : RPC requiert une authentification
 Le débogueur Visual Studio ne peut pas se connecter à l'ordinateur distant. Une stratégie RPC est activée sur l'ordinateur local qui empêche le débogage distant.  

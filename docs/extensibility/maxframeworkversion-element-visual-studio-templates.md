@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da1b30274254c5c1dd81ad20dd64e8749672f96e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c473b3253809c09f9ba0af90f7a0fed349dedb93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>Élément MaxFrameworkVersion (modèles Visual Studio)
 Spécifie la version maximale du .NET Framework requise par le modèle. Il détermine si le modèle est affiché dans le **modèles** section de la **ajouter un nouveau projet** boîte de dialogue, selon la valeur sélectionnée dans le **VersionduFrameworkcible** zone de la **ajouter un nouveau projet** boîte de dialogue.  
@@ -37,7 +38,7 @@ Spécifie la version maximale du .NET Framework requise par le modèle. Il déte
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -53,7 +54,7 @@ Spécifie la version maximale du .NET Framework requise par le modèle. Il déte
   
  Le texte doit être le numéro de version le plus élevé du .NET Framework qui est autorisé par le modèle.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `MaxFrameworkVersion` est un élément facultatif. L’élément dans le `TemplateData` section du fichier .vstemplate agit comme un filtre pour le **modèles** section de la **ajouter un nouveau projet** boîte de dialogue. Uniquement les modèles dont les spécifications .NET Framework sont moins `MaxFrameworkVersion` valeurs d’éléments seront affichés, selon la valeur sélectionnée dans le **Version du Framework cible** boîte de le **ajouter un nouveau projet**boîte de dialogue. Le `MaxFrameworkVersion` élément doit être omis sauf s’il est nécessaire, pour autant entraîner par inadvertance des modèles de s’afficher lorsqu’ils sont utilisés avec des versions plus récentes du .NET Framework.  
   
 ## <a name="example"></a>Exemple  

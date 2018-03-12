@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Otherwise
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#Otherwise
 dev_langs:
 - VB
 - CSharp
@@ -17,15 +18,17 @@ helpviewer_keywords:
 - <Otherwise> Element [MSBuild]
 - Otherwise Element [MSBuild]
 ms.assetid: de3997e9-1595-4263-a886-95530b56a319
-caps.latest.revision: "9"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae4185d56b77d40cf817d7ea3003f64dc6fff556
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: e0b824b8be8b3697673d0d1f09a20b6a7c1cee58
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise, élément (MSBuild)
 Spécifie le bloc de code à exécuter si et seulement si les conditions de tous les éléments `When` correspondent à la valeur `false`.  
@@ -53,7 +56,7 @@ Spécifie le bloc de code à exécuter si et seulement si les conditions de tous
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
 
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
 
 ### <a name="child-elements"></a>Éléments enfants  
 
@@ -67,9 +70,9 @@ Spécifie le bloc de code à exécuter si et seulement si les conditions de tous
 
 |Élément|Description|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|Évalue des éléments enfants pour sélectionner une section de code à exécuter.|  
+|[Choose](../msbuild/choose-element-msbuild.md)|Évalue les éléments enfants pour sélectionner une section de code à exécuter.|  
 
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Un élément `Choose` ne peut comprendre qu’un seul élément `Otherwise` qui doit figurer en dernière position.  
 
  Les éléments `Choose`, `When` et `Otherwise` sont utilisés ensemble pour permettre la sélection d’une section de code spécifique à exécuter parmi plusieurs options possibles. Pour plus d’informations, consultez [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md).  
@@ -124,4 +127,4 @@ Spécifie le bloc de code à exécuter si et seulement si les conditions de tous
 
 ## <a name="see-also"></a>Voir aussi  
  [Constructions conditionnelles MSBuild](../msbuild/msbuild-conditional-constructs.md)   
- [Informations de référence sur le schéma de fichier projet MSBuild](../msbuild/msbuild-project-file-schema-reference.md)
+ [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

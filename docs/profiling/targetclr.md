@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba512ba2004ec90c806e5e41d3c91c7bbb0587cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a69edb2730ff89a50dd45252258fc57e7205de3d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="targetclr"></a>TargetCLR
 L’option **TargetCLR** spécifie la version du common language runtime (CLR) à profiler quand plusieurs versions du CLR sont chargées dans une application.  
@@ -36,7 +37,7 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ## <a name="required-options"></a>Options obligatoires  
  L’option **TargetCLR** peut être utilisée seulement avec l’option **Launch** ou **Attach**.  
   
- **Launch:** `AppName`  
+ **Launch :** `AppName`  
  Démarre l’application spécifiée et démarre le profilage.  
   
  **Attach:** `PID`  

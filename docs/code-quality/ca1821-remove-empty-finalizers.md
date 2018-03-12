@@ -4,30 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - RemoveEmptyFinalizers
 - CA1821
-helpviewer_keywords: CA1821
+helpviewer_keywords:
+- CA1821
 ms.assetid: 3f4855a0-e4a0-46e6-923c-4c3b7074048d
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: afe1c05ff76a2b4c37296ef6a534e37a5d1229b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 98aebdcc889cdd3bd2bbe124b00a572e066b0e4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821 : Supprimer les finaliseurs vides
 |||  
 |-|-|  
 |TypeName|RemoveEmptyFinalizers|  
 |CheckId|CA1821|  
-|Catégorie|Microsoft.Performance|  
+|Category|Microsoft.Performance|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  

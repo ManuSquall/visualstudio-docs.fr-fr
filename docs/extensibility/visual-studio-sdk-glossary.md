@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: glossary [Visual Studio SDK]
+helpviewer_keywords:
+- glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9bf6b39d74e88289d9521216f98aa3195e30d6d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: fa0f7eaed09df717eb0746076715f9c780464df1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossaire du Kit de développement logiciel Visual Studio
 Ce glossaire fournit les définitions des termes utilisés dans le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentation.  
@@ -122,7 +126,7 @@ Ce glossaire fournit les définitions des termes utilisés dans le [!INCLUDE[vsi
  fenêtre de type de projet  
  Une fenêtre qui suit en permanence la hiérarchie de projet actif et d’un élément à partir du contexte de la sélection globale. Type de projet windows utilise le `SVsTrackSelectionEx` service pour alerter l’IDE de modifications et afficher des commentaires à l’utilisateur. L’Explorateur de solutions est un exemple d’une fenêtre de type de projet.  
   
- Propriétés (fenêtre)  
+ Fenêtre Propriétés  
  Explorateur de propriétés précédemment.  
   
  projets basés sur une référence  

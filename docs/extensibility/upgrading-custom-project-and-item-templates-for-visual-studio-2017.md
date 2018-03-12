@@ -12,26 +12,29 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76437dff5aa59e4864216318e64a07245c15c68d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c0843c8bfb899dc23bcb1ce31eb3f8b9eaffd54
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>La mise à niveau de projet personnalisés et les modèles d’élément pour Visual Studio 2017
-À partir de Visual Studio 2017, Visual Studio pour modifier le mode détecte les modèles de projet et d’élément qui ont été installés par un .vsix ou un fichier .msi. Si vous possédez des extensions qui utilisent des modèles d’élément ou de projet personnalisé, vous devez mettre à jour vos extensions. Cette rubrique explique ce que vous devez faire.  
-  
- Cette modification affecte uniquement de Visual Studio 2017. Il n’affecte pas les versions précédentes de Visual Studio.  
-  
- Si vous souhaitez créer un modèle de projet ou un élément dans le cadre d’une extension VSIX, consultez [de création de projets et modèles d’élément](../extensibility/creating-custom-project-and-item-templates.md).  
-  
-## <a name="template-scanning"></a>Modèle d’analyse  
- Auparavant, **devenv /setup** ou **devenv /installvstemplates** analysé le disque local pour rechercher des modèles de projet et d’élément. À compter de Preview 4, l’analyse est effectuée uniquement pour l’emplacement au niveau de l’utilisateur (**%USERPROFILE%\Documents\\< version de Visual Studio\>\My Exported Templates\\**) qui est utilisé pour les modèles générés par le **de fichiers / Export modèles** commande.  
-  
- Pour d’autres emplacements (non-utilisateur), vous devez inclure un fichier manifest(.vstman) qui spécifie l’emplacement et autres caractéristiques du modèle. Le fichier .vstman est généré en même temps que le fichier .vstemplate utilisé pour les modèles. Si vous installez votre extension à l’aide d’un .vsix, vous pouvez pour cela en recompilant l’extension dans Visual Studio 2017. Mais si vous utilisez un fichier .msi, vous devez apporter les modifications manuellement. Pour obtenir la liste de ce que vous devez faire pour apporter ces modifications, consultez **mises à niveau des Extensions installées avec une. MSI** plus loin dans cette rubrique.  
+
+À partir de Visual Studio 2017, Visual Studio détecte les modèles de projet et d’élément qui ont été installés par un .vsix ou un fichier .msi d’une manière différente pour les versions précédentes de Visual Studio. Si vous possédez des extensions qui utilisent des modèles d’élément ou de projet personnalisé, vous devez mettre à jour vos extensions. Cette rubrique explique ce que vous devez faire.
+
+Cette modification affecte uniquement de Visual Studio 2017. Il n’affecte pas les versions précédentes de Visual Studio.
+
+Si vous souhaitez créer un modèle de projet ou un élément dans le cadre d’une extension VSIX, consultez [de création de projets et modèles d’élément](../extensibility/creating-custom-project-and-item-templates.md).
+
+## <a name="template-scanning"></a>Modèle d’analyse
+
+Dans les versions précédentes de Visual Studio, **devenv /setup** ou **devenv /installvstemplates** analysé le disque local pour rechercher des modèles de projet et d’élément. À partir de Visual Studio 2017, l’analyse est effectuée uniquement pour l’emplacement au niveau de l’utilisateur. L’emplacement de niveau utilisateur par défaut est **%USERPROFILE%\Documents\\< version de Visual Studio\>\Templates\\**. Cet emplacement est utilisé pour les modèles générés par le **projet** > **exporter les modèles...**  commande, si le **importer automatiquement le modèle dans Visual Studio** option est sélectionnée dans l’Assistant.
+
+Pour d’autres emplacements (non-utilisateur), vous devez inclure un fichier manifest(.vstman) qui spécifie l’emplacement et autres caractéristiques du modèle. Le fichier .vstman est généré en même temps que le fichier .vstemplate utilisé pour les modèles. Si vous installez votre extension à l’aide d’un .vsix, vous pouvez pour cela en recompilant l’extension dans Visual Studio 2017. Mais si vous utilisez un fichier .msi, vous devez apporter les modifications manuellement. Pour obtenir la liste de ce que vous devez faire pour apporter ces modifications, consultez **mises à niveau des Extensions installées avec une. MSI** plus loin dans cette rubrique.  
   
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Comment mettre à jour une Extension VSIX avec le projet ou des modèles d’élément  
- Cette procédure explique comment Visual Studio 2017
+
 1.  Ouvrez la solution dans Visual Studio 2017. Vous devrez mettre à niveau le code. Cliquez sur **OK**.  
   
 2.  Une fois la mise à niveau terminée, vous devrez peut-être modifier la version de la cible de l’installation. Dans le projet VSIX, ouvrez le fichier source.extension.vsixmanifest, puis sélectionnez le **cibles d’installation** onglet. Si le **la plage de versions** champ est **[14.0]**, cliquez sur **modifier** et modifiez-le pour inclure de Visual Studio 2017. Par exemple, vous pouvez la définir **[14.0,15.0]** pour installer l’extension pour Visual Studio 2015 ou Visual Studio 2017, ou pour **[15.0]** pour l’installer à simplement de Visual Studio 2017.  
@@ -176,41 +179,19 @@ Nous montrent les points de différence entre les versions de Visual Studio 2017
   
  Pour plus d’informations sur les différents éléments du fichier .vstman, consultez [Visual Studio Template manifeste Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md).  
   
-## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Mises à niveau pour les Extensions installées avec une. MSI  
- Certaines extensions de fichier MSI déploiement des modèles à l’emplacement des modèles courants tels que les éléments suivants :  
-  
--   **\<Répertoire d’installation de Visual Studio > \Common7\IDE\\< ProjectTemplates/éléments personnalisés >**  
-  
--   **\<Répertoire d’installation de Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< projet/éléments personnalisés >**  
-  
- Si votre extension effectue un déploiement MSI, vous avez besoin générer le manifeste de modèle manuellement et vous assurer qu’il est inclus dans le programme d’installation de l’extension. Vous devez comparer les exemples .vstman répertoriés ci-dessus et le [Visual Studio Template manifeste Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md). Pour voir ce que vous devez inclure  
-  
- Vous devez créer des manifestes séparés pour les modèles de projet et d’élément, et ils doivent pointer vers la racine modèle active comme indiqué ci-dessus. Vous devez créer un seul manifeste par extension et les paramètres régionaux.  
-  
-## <a name="troubleshooting-template-installation"></a>Résolution des problèmes d’Installation du modèle  
- Si vous rencontrez des problèmes de déploiement de vos modèles de projet ou un élément, vous pouvez activer la journalisation des Diagnostics.  
-  
-1.  Créer un fichier pkgdef dans le dossier Common7\IDE\CommonExtensions pour votre installation (par exemple, C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef) avec le contenu suivant :  
-  
-     ```
-     [$RootKey$\VsTemplate]
-     "EnableTemplateDiscoveryLog"=dword:00000001
-     ```
+## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Mises à niveau pour les Extensions installées avec une. MSI
 
-2. Ouvrez un « invite de commandes développeur » pour votre installation en le recherchant dans la recherche Windows et exécutez `devenv /updateConfiguration`.
+Certaines extensions de fichier MSI déploiement des modèles à l’emplacement des modèles courants tels que les éléments suivants :
 
-3.  Démarrez Visual Studio et lancer les boîtes de dialogue Nouveau projet et un nouvel élément pour initialiser les deux arborescences du modèle. Le journal de modèle apparaît désormais dans **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid correspond à l’ID d’installation de votre instance de Visual Studio). L’initialisation de chaque arborescence de modèle ajoute des entrées dans ce fichier journal.  
-  
- Le fichier journal contient les colonnes suivantes :  
-  
--   **FullPathToTemplate**, qui a les valeurs suivantes :  
-  
-    -   1 basé sur les manifestes de déploiement  
-  
-    -   0 pour le déploiement basé sur le disque  
-  
--   **TemplateFileName**  
-  
--   Autres propriétés de modèle
+- **\<Répertoire d’installation de Visual Studio > \Common7\IDE\\< ProjectTemplates/éléments personnalisés >**
 
-Remarque : Pour désactiver la journalisation, vous devez supprimer le fichier pkgdef ou modifier la valeur de `EnableTemplateDiscoveryLog` à `dword:00000000` et exécutez `devenv /updateConfiguration` à nouveau.
+- **\<Répertoire d’installation de Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< projet/éléments personnalisés >**
+
+Si votre extension effectue un déploiement MSI, vous avez besoin générer le manifeste de modèle manuellement et vous assurer qu’il est inclus dans le programme d’installation de l’extension. Comparez les exemples .vstman répertoriés ci-dessus et le [Visual Studio Template manifeste Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md).
+
+Vous devez créer des manifestes séparés pour les modèles de projet et d’élément, et ils doivent pointer vers la racine modèle active comme indiqué ci-dessus. Créez un manifeste par extension et les paramètres régionaux.
+
+## <a name="see-also"></a>Voir aussi
+
+[Résolution des problèmes de détection de modèle](troubleshooting-template-discovery.md)  
+[Création de modèles de projet et d’élément personnalisés](creating-custom-project-and-item-templates.md)

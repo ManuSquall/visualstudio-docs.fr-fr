@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: language services, model
+helpviewer_keywords:
+- language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afc15ea50921b1feca34a8b305c5028979a0d1ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modèle d’un Service de langage hérité
 Un service de langage définit les éléments et les fonctionnalités pour une langue spécifique et est utilisé pour fournir l’éditeur avec les informations spécifiques à cette langue. Par exemple, l’éditeur doit connaître les éléments et les mots clés du langage pour prendre en charge la coloration de syntaxe.  
@@ -42,7 +46,7 @@ Modèle de service de base du langage
   
  Le tableau suivant fournit une vue d’ensemble des objets dans le modèle.  
   
-|Composant|Objet|Fonction|  
+|Composant|Object|Fonction|  
 |---------------|------------|--------------|  
 |Mémoire tampon de texte|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>|Un flux de texte Unicode en lecture/écriture. Il est possible pour le texte à utiliser d’autres encodages.|  
 |Fenêtre Code|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Une fenêtre de document qui contient une ou plusieurs vues de texte. Lorsque [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est en mode de l’interface multidocument (MDI), la fenêtre de code est un enfant MDI.|  

@@ -1,10 +1,10 @@
 ---
 title: "Propriétés communes des projets MSBuild | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,15 +18,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-caps.latest.revision: "36"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ab37b9bf44cdac647a939ed7313a2e40eb88aea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 359dda28fa02711d4def9f26f2859dcc3c2bc65d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
 Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui sont définies dans les fichiers projet Visual Studio ou incluses dans les fichiers .targets fournis par MSBuild.  
@@ -49,7 +51,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 |BaseOutputPath|Spécifie le chemin d'accès de base du fichier de sortie. S'il est défini, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utilise `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Exemple de syntaxe : `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>`|  
 |BaseIntermediateOutputPath|Dossier de niveau supérieur dans lequel tous les dossiers de sortie intermédiaires spécifiques à la configuration sont créés. La valeur par défaut est `obj\`. Le code suivant est un exemple : `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>`|  
 |BuildInParallel|Valeur booléenne qui indique si les références de projet sont générées ou nettoyées en parallèle lorsque [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est utilisé en multiprocesseur. La valeur par défaut est `true`, ce qui signifie que les projets seront générés en parallèle si le système possède plusieurs cœurs ou processeurs.|  
-|BuildProjectReferences|Valeur booléenne qui indique si les références de projet sont générées par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Affectez `false` si vous générez votre projet dans l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou `true` dans le cas contraire.|  
+|BuildProjectReferences|Valeur booléenne qui indique si les références de projet sont générées par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Affectez automatiquement la valeur `false` si vous générez votre projet dans l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou `true` dans le cas contraire. `/p:BuildProjectReferences=false` peut être spécifié sur la ligne de commande pour éviter de vérifier si les projets référencés sont à jour.|  
 |CleanFile|Nom du fichier qui sera utilisé comme « nettoyeur de cache ». Ce fichier contient une liste de fichiers générés à supprimer pendant l'opération de nettoyage. Le fichier est placé dans le chemin de sortie intermédiaire par le processus de génération.<br /><br /> Cette propriété spécifie uniquement des noms de fichier qui n'ont pas d'informations de chemin d'accès.|  
 |CodePage|Spécifie la page de codes à utiliser pour tous les fichiers de code source inclus dans la compilation. Cette propriété est équivalente au commutateur `/codepage` du compilateur.|  
 |CompilerResponseFile|Fichier réponse facultatif qui peut être passé aux tâches du compilateur.|  
@@ -70,16 +72,15 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 |ExcludeDeploymentUrl|La [tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) ajoute une balise deploymentProvider au manifeste de déploiement si le fichier projet contient l’un des éléments suivants :<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> En utilisant ExcludeDeploymentUrl, toutefois, vous pouvez empêcher l’étiquette deploymentProvider d’être ajoutée au manifeste de déploiement même si l’une des URL ci-dessus est spécifiée. Pour cela, ajoutez la propriété suivante à votre fichier projet :<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Remarque :** ExcludeDeploymentUrl n’est pas exposé dans l’IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ; pour le définir, vous devez modifier manuellement le fichier projet. La définition de cette propriété n'affecte pas la publication dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Autrement dit, la balise deploymentProvider est encore ajoutée à l'URL spécifiée par PublishUrl.|  
 |FileAlignment|Spécifie, en octets, où les sections du fichier de sortie doivent être alignées. Les valeurs valides sont 512, 1024, 2048, 4096, 8192. Cette propriété est équivalente au commutateur `/filealignment` du compilateur.|  
 |FrameworkPathOverride|Spécifie l'emplacement de mscorlib.dll et de microsoft.visualbasic.dll. Ce paramètre est équivalent au commutateur `/sdkpath` du compilateur vbc.exe.|  
-|GenerateDocumentation|(Visual Basic .NET uniquement) Paramètre booléen qui indique si la documentation est générée par la build. Si sa valeur est `true`, les informations de documentation sont générées et placées dans un fichier .xml avec le nom de la bibliothèque ou du fichier exécutable créé par la tâche de génération.|
+|GenerateDocumentation|(Visual Basic uniquement) Paramètre booléen qui indique si la documentation est générée par la build. Si sa valeur est `true`, les informations de documentation sont générées et placées dans un fichier .xml avec le nom de la bibliothèque ou du fichier exécutable créé par la tâche de génération.|
 |IntermediateOutputPath|Chemin de sortie intermédiaire complet dérivé de `BaseIntermediateOutputPath`, si aucun chemin d'accès n'est spécifié. Par exemple, \obj\debug\\. Si cette propriété est remplacée, la définition de `BaseIntermediateOutputPath` n'a alors aucun effet.|  
 |KeyContainerName|Nom du conteneur de clé de nom fort.|  
 |KeyOriginatorFile|Nom du fichier de clé de nom fort.|  
-|NoWin32Manifest|Détermine si le compilateur génère le manifeste Win32 par défaut dans l'assembly de sortie. La valeur par défaut `false` signifie que le manifeste Win32 par défaut est généré pour toutes les applications. Cette propriété est équivalente au commutateur `/nowin32manifest` du compilateur de vbc.exe.|  
 |ModuleAssemblyName|Nom de l'assembly dans lequel le module compilé doit être incorporé. Cette propriété est équivalente au commutateur `/moduleassemblyname` du compilateur.|  
 |NoLogo|Valeur booléenne qui indique si vous souhaitez que le logo du compilateur soit désactivé. Cette propriété est équivalente au commutateur `/nologo` du compilateur.|  
 |NoStdLib|Valeur booléenne qui indique s'il faut éviter de référencer la bibliothèque standard (mscorlib.dll). La valeur par défaut est `false`.|  
 |NoVBRuntimeReference|Valeur booléenne qui indique si le runtime [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] (Microsoft.VisualBasic.dll) doit être inclus comme référence dans le projet.|  
-|NoWin32Manifest|Valeur booléenne qui indique si les informations de manifeste de Contrôle de compte d'utilisateur seront incorporées dans l'exécutable de l'application. S'applique uniquement aux projets Visual Studio ciblant [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Dans les projets déployés à l'aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et de COM sans inscription, cet élément est ignoré. `False` (valeur par défaut) spécifie que les informations de manifeste de Contrôle de compte d'utilisateur doivent être incorporées dans le fichier exécutable de l'application. `True` spécifie que les informations de manifeste de Contrôle de compte d'utilisateur ne doivent pas être incorporées.<br /><br /> Cette propriété s'applique uniquement aux projets [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ciblant [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Dans les projets déployés à l'aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et de COM sans inscription, cette propriété est ignorée.<br /><br /> Vous ne devez ajouter NoWin32Manifest que si vous ne voulez pas que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] incorpore la moindre information de manifeste dans l’exécutable de l’application ; ce processus s’appelle *virtualisation*. Pour utiliser la virtualisation, définissez `<ApplicationManifest>` conjointement à `<NoWin32Manifest>`, comme suit :<br /><br /> -   Pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], supprimez le nœud `<ApplicationManifest>`. (Dans les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `<NoWin32Manifest>` est ignoré s’il existe un nœud `<ApplicationManifest>`.)<br />-   Pour les projets [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], affectez à `<ApplicationManifest>` la valeur `False` et à `<NoWin32Manifest>` la valeur `True`. (Dans les projets [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], `<ApplicationManifest>` remplace `<NoWin32Manifest>`.)|  
+|NoWin32Manifest|Valeur booléenne qui indique si les informations de manifeste de Contrôle de compte d'utilisateur seront incorporées dans l'exécutable de l'application. S'applique uniquement aux projets Visual Studio ciblant [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Dans les projets déployés à l'aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et de COM sans inscription, cet élément est ignoré. `False` (valeur par défaut) spécifie que les informations de manifeste de Contrôle de compte d'utilisateur doivent être incorporées dans le fichier exécutable de l'application. `True` spécifie que les informations de manifeste de Contrôle de compte d'utilisateur ne doivent pas être incorporées.<br /><br /> Cette propriété s'applique uniquement aux projets [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ciblant [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Dans les projets déployés à l'aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et de COM sans inscription, cette propriété est ignorée.<br /><br /> Vous ne devez ajouter NoWin32Manifest que si vous ne voulez pas que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] incorpore la moindre information de manifeste dans l’exécutable de l’application ; ce processus s’appelle *virtualisation*. Pour utiliser la virtualisation, définissez `<ApplicationManifest>` conjointement à `<NoWin32Manifest>`, comme suit :<br /><br /> -   Pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], supprimez le nœud `<ApplicationManifest>`. (Dans les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `<NoWin32Manifest>` est ignoré s’il existe un nœud `<ApplicationManifest>`.)<br />-   Pour les projets [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], affectez à `<ApplicationManifest>` la valeur `False` et à `<NoWin32Manifest>` la valeur `True`. (Dans les projets [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], `<ApplicationManifest>` remplace `<NoWin32Manifest>`.)<br /> Cette propriété est équivalente au commutateur `/nowin32manifest` du compilateur de vbc.exe.|  
 |Optimize|Valeur booléenne qui, lorsqu'elle correspond à `true`, active les optimisations du compilateur. Cette propriété est équivalente au commutateur `/optimize` du compilateur.|  
 |OptionCompare|Spécifie la façon dont sont effectuées les comparaisons de chaînes. Les valeurs valides sont "binary" et "text". Cette propriété est équivalente au commutateur `/optioncompare` du compilateur de vbc.exe.|  
 |OptionExplicit|Valeur booléenne qui, lorsqu'elle correspond à `true`, requiert une déclaration explicite des variables dans le code source. Cette propriété est équivalente au commutateur `/optionexplicit` du compilateur.|  

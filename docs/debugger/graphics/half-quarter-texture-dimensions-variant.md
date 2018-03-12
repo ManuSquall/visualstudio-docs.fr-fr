@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d71ee66c9d13dab5918e90c6434c3397d52191a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 93431c8863e2b30fb98d00bec5112257e54496f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante de dimensions de la texture moitié/un quart
 Réduit les dimensions des textures qui ne sont pas des cibles de rendu.  
@@ -30,7 +31,7 @@ Réduit les dimensions des textures qui ne sont pas des cibles de rendu.
   
  Si vos textures occupent plus de mémoire GPU que vous n'en disposez, songez à réduire la taille des textures, mais seulement après avoir envisagé de compresser les textures appropriées. Comme les textures de petite taille, les textures compressées occupent moins de mémoire et font moins appel à la pagination en mémoire système, mais elles pâtissent d'une moindre fidélité des couleurs. Si la compression ne convient pas à toutes les textures (par exemple, celles qui présentent une forte variation de couleurs sur une petite surface), ce qui dépend de leur contenu, dans bien des cas, la compression donne de meilleurs résultats en termes de qualité d'image globale que la réduction de la taille.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les dimensions des textures sont réduites à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une texture source. Plus spécifiquement, les dimensions des textures sont réduites quand l'objet D3D11_TEXTURE2D_DESC passé dans `pDesc` décrit une texture utilisée dans le rendu, à savoir :  
   
 -   Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.  

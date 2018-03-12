@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IPropertyProxyEESide::GetManagedViewerCreationData
-helpviewer_keywords: IPropertyProxyEESide::GetManagedViewerCreationData
+f1_keywords:
+- IPropertyProxyEESide::GetManagedViewerCreationData
+helpviewer_keywords:
+- IPropertyProxyEESide::GetManagedViewerCreationData
 ms.assetid: c4eb4d60-8816-4d52-bc8d-dffd4f066499
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc4d81470a1ea15573171a80034efcd6daf720ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 53964947ac69cb9b4958bff0a8a6fd4ffa0a8afa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 Récupère les informations sur la visionneuse pour ce type de propriété afin d’instancier ce visualiseur.  
@@ -69,7 +74,7 @@ int GetManagedViewerCreationData(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode est utilisée par les visualiseurs de type pour instancier une visionneuse managée.  
   
 ## <a name="see-also"></a>Voir aussi  

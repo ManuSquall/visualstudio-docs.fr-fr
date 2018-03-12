@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26a85326dec53adce4ac9c5b1bdedaca1e38beec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9998f0f4d46a37b1eccd3cdf5dc48dd994f651a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn et GlobalOff
 Les options **GlobalOff** et **GlobalOn** de VSPerfCmd.exe suspendent et reprennent le profilage pour tous les processus et threads dans une session de profilage en ligne de commande.  
@@ -46,7 +47,7 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- None  
+ Aucun.  
   
 ## <a name="valid-options"></a>Options valides  
  Vous pouvez spécifier **GlobalOn** et **GlobalOff** sur des lignes de commande qui contiennent également les options suivantes.  

@@ -15,16 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-ms.assetid: 83db570d-6b9f-4dab-9e71-db41f17b987a
-caps.latest.revision: "21"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a4a7c002bd17da5f693955a82ab2e74bf65dc0cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d29ab819dfc7efd04d27652ab3d711c89045847c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Création de définitions de site pour SharePoint
   Le projet de définition de Site SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vous permet de créer un *définition du site*, qui sert de base pour un site SharePoint. Ces définitions de déterminent non seulement l’apparence et le comportement du site SharePoint, mais également son contenu par défaut et les fonctionnalités. Dans la définition, vous pouvez placer des listes préconfigurées, des types de contenu, des récepteurs d’événements, des images et d’autres éléments. SharePoint inclut des définitions de site, tels que des blogs, par exemple. Lorsque vous créez un site basé sur la définition de site BLOG, le site contient les listes, les composants WebPart et les autres éléments nécessitant un site de création de blogs.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 |Nom du fichier|Description|  
 |---------------|-----------------|  
 |default.aspx|La page d’accueil ASPX par défaut pour le nouveau site SharePoint.|  
-|onet.Xml|Spécifie la configuration du nouveau site, les composants du modèle de définition de site et le comportement par défaut. Ces paramètres peuvent inclure des attributs, tels que les types de contenu qui sont activés, les affichages de liste par défaut, les fichiers de modèle de document et composants inclus avec le site Web. Par défaut, le `Modules` section répertorie les fichiers à ajouter au site SharePoint et la façon dont ils sont configurés.|  
+|Onet.Xml|Spécifie la configuration du nouveau site, les composants du modèle de définition de site et le comportement par défaut. Ces paramètres peuvent inclure des attributs, tels que les types de contenu qui sont activés, les affichages de liste par défaut, les fichiers de modèle de document et composants inclus avec le site Web. Par défaut, le `Modules` section répertorie les fichiers à ajouter au site SharePoint et la façon dont ils sont configurés.|  
 |webtemp_*SiteDefinitionName*.xml|Spécifie les configurations de définition de site qui s’affiche dans le **sélection du modèle** section de la **nouveau SharePoint Site** page.|  
   
  Par défaut, toutes les définitions de site sont stockées dans le *lecteur :*\Program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates dossier. Chaque définition de site possède son propre sous-dossier.  

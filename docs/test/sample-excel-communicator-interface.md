@@ -7,15 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 1dbf1090-762c-4824-82dd-2d7c2c6f00b6
-caps.latest.revision: "11"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 653d6430f18b2ca5cdbd2e1307f0c8386cebea91
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.author: gewarren
+manager: ghogen
+ms.workload: multiple
+author: gewarren
+ms.openlocfilehash: dd7db85df6e63869550cea579a894defd7be39b2
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="sample-excel-communicator-interface"></a>Exemple d'interface Communicator Excel
 L’exemple d’interface `IExcelUICommunication` est utilisé dans l’objet `ExcelUICommunicator` du projet `ExcelAddIn`.  

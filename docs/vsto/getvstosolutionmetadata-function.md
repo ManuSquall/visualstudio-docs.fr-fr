@@ -10,16 +10,15 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-ms.assetid: e8195838-fb9f-42b2-bb76-7ae3753f7751
-caps.latest.revision: "6"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e0d0a3975acc272f9c4727e6a7b35aff7f698866
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a102c0a0849240b60b6e1e728bb4e252c94ab43e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="getvstosolutionmetadata-function"></a>GetVstoSolutionMetadata, fonction
   Cette API prend en charge l’infrastructure Office et n’est pas destinée à être utilisée directement depuis votre code.  

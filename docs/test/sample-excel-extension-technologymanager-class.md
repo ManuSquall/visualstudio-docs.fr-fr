@@ -7,15 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
-caps.latest.revision: "9"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 1932646809cba6c6211f87965ffee82e918c6882
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.author: gewarren
+manager: ghogen
+ms.workload: multiple
+author: gewarren
+ms.openlocfilehash: 3493eff7352b49cc2a3b79300f7070d490354782
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Exemple d'extension Excel : classe TechnologyManager
 Cette classe étend la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager>. Elle est chargée de fournir des services principaux pour l’extension [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Bien que la classe de base dispose de nombreuses méthodes, seule une partie d’entre elles est utilisée dans cet exemple.  

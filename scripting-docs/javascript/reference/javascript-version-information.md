@@ -5,24 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: JavaScript, version information
+helpviewer_keywords:
+- JavaScript, version information
 ms.assetid: 440f4924-f7a9-48e0-873e-bd599a93b437
-caps.latest.revision: "93"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0503abb3d62e9fd61149b884a7b58a685fbc62c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a2335c3697be9ef3e2d674ac37047ddd3de242d
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-version-information"></a>Informations de version JavaScript
 Les différentes versions de JavaScript prennent en charge différents ensembles d'éléments JavaScript. Les applications[!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] prennent en charge un ensemble de fonctionnalités légèrement différent par rapport à Internet Explorer.  
@@ -35,7 +37,7 @@ Les différentes versions de JavaScript prennent en charge différents ensembles
  Le tableau suivant montre les modes de document Internet Explorer (et les applications [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] et [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)]) qui prennent en charge les éléments de langage spécifiques. Les modes de document qui prennent en charge un élément donné sont identifiés par la lettre **Y**et ceux qui ne prennent pas en charge un élément donné sont identifiés par la lettre **N**.  
   
 > [!IMPORTANT]
->  Le [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] (navigateur Edge dans Windows 10) n'inclut pas de prise en charge des modes de document hérités. La prise en charge des applications [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] commence par Windows Phone 8.1. Fonctionnalités expérimentales (sur : flags) sont signalées par « Exp ».  
+>  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] (Navigateur edge dans Windows 10) n’inclut pas de prise en charge des modes de document hérités. La prise en charge des applications [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] commence par Windows Phone 8.1. Fonctionnalités expérimentales (sur : flags) sont signalées par « Exp ».  
   
  Le tableau contient des informations résumées. Pour plus d'informations, consultez la documentation de l'élément de langage.  
   
@@ -260,8 +262,8 @@ Les différentes versions de JavaScript prennent en charge différents ensembles
 |[Propriété message](../../javascript/reference/message-property-error-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[Fonction min](../../javascript/reference/math-min-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[Constante MIN_VALUE](../../javascript/reference/number-constants-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
-|[Opérateur d'assignation de module (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
-|[Opérateur de module (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|Y|Y|Y|Y|Y|Y|Y|  
+|[Opérateur d’assignation de reste (% =)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
+|[Opérateur de reste (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[Méthode moveFirst](../../javascript/reference/movefirst-method-enumerator-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[Méthode moveNext](../../javascript/reference/movenext-method-enumerator-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[Propriété multiline](../../javascript/reference/multiline-property-regular-expression-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
@@ -410,7 +412,7 @@ Les différentes versions de JavaScript prennent en charge différents ensembles
 |[Fonction write](../../javascript/reference/debug-write-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[Fonction writeln](../../javascript/reference/debug-writeln-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
   
- \*Prend en charge les objets DOM, mais les objets non définis par l’utilisateur. Les attributs `enumerable` et `configurable` peuvent être spécifiés, mais ils ne sont pas utilisés.  
+ \* Prend en charge les objets DOM, mais les objets non définis par l’utilisateur. Les attributs `enumerable` et `configurable` peuvent être spécifiés, mais ils ne sont pas utilisés.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Définition de la compatibilité des documents](http://go.microsoft.com/fwlink/?LinkId=208537)

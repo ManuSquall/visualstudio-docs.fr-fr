@@ -15,11 +15,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2b7176a0aed65a9595730247d857dc0c263dc0cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc01c0d5a2b4ad53f1384640e06b9637cd7fbe0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-editor"></a>Éditeur de modèle
 Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour afficher, créer et modifier des modèles 3D.  
@@ -311,4 +312,4 @@ Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](..
 |-----------|-----------------|  
 |[Utilisation de ressources 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fournit une vue d'ensemble des outils [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que vous pouvez appliquer à des ressources graphiques, tels que les textures et les images, les modèles 3D et les effets de nuanceur.|  
 |[Éditeur d’images](../designers/image-editor.md)|Explique comment utiliser l'éditeur d'images de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour travailler avec des textures et des images.|  
-|[Concepteur de nuanceur](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour travailler avec des nuanceurs.|
+|[Concepteur Shader](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour travailler avec des nuanceurs.|

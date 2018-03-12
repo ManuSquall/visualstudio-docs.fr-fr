@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaEnumSegments::Clone method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaEnumSegments::Clone method
 ms.assetid: 93deaac6-72ab-4408-ba14-66174a618757
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 868921194036b9c5c5162e759e750bed7f6a0882
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: bd7d23f28064cab621462a6d1bb56e98f6a2dafe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
 Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.  

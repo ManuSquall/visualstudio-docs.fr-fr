@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -12,17 +13,18 @@ dev_langs:
 - CSharp
 - VB
 - CSharp
-helpviewer_keywords: SharePoint development in Visual Studio, building
-ms.assetid: 7ded93e6-fba2-4e7f-8865-62841fd2b04b
-caps.latest.revision: "11"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- SharePoint development in Visual Studio, building
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 5e198cce23f29cc00079c2bd60077ade3663bc8b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 71355ad98765a2022521a24c3c5bd3e4b535776d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Comment : générer des solutions SharePoint
   Générez la solution SharePoint n’est pas différente de la génération d’autres applications dans Visual Studio. Pour plus d’informations sur la création d’applications, consultez [compilation et génération dans Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio). Pour en savoir plus sur certains aspects spécifiques aux solutions SharePoint, consultez [Comment : déployer et publier une SharePoint Solution à un SharePoint Site Local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  

@@ -10,29 +10,30 @@ ms.topic: article
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
-ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
-caps.latest.revision: "30"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: a3ab1b6abf1949dd2c3a6afcca2987ebcf1594b9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.openlocfilehash: b1b92a223a54c48dd08cce2fc02904f1b66606bc
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Exemple de projet pour la création de tests unitaires
-Cet exemple de code est fourni pour une utilisation dans les procédures suivantes :  
-  
--   [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Cette procédure pas à pas vous guide à travers les étapes de création et de personnalisation des tests unitaires, de leur exécution et de l'examen des résultats des tests.  
-  
--   [Procédure pas à pas : exécution des tests et affichage de la couverture du code](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Cette procédure pas à pas illustre comment afficher les données de couverture du code, qui affiche la proportion du code de votre projet en cours de test.  
-  
--   [Procédure pas à pas : utilisation de l’utilitaire de test de ligne de commande](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). Dans cette procédure pas à pas, vous utilisez l'utilitaire en ligne de commande MSTest.exe pour exécuter les tests et afficher les résultats.  
-  
-## <a name="sample-code"></a>Exemple de code  
- L'unique erreur intentionnelle de cet exemple est que dans la méthode Debit « m_balance += amount » doit avoir le signe moins (-) et non le signe plus (+) devant le signe égal.  
-  
-```  
+
+Cet exemple de code est fourni pour une utilisation dans les procédures suivantes :
+
+- [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Cette procédure pas à pas vous guide à travers les étapes de création et de personnalisation des tests unitaires, de leur exécution et de l'examen des résultats des tests.
+
+- [Procédure pas à pas : utilisation de l’utilitaire de test de ligne de commande](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). Dans cette procédure pas à pas, vous utilisez l'utilitaire en ligne de commande MSTest.exe pour exécuter les tests et afficher les résultats.
+
+## <a name="sample-code"></a>Exemple de code
+
+L'unique erreur intentionnelle de cet exemple est que dans la méthode Debit « m_balance += amount » doit avoir le signe moins (-) et non le signe plus (+) devant le signe égal.
+
+```csharp
 using System;   
   
 namespace BankAccountNS  
@@ -120,18 +121,18 @@ namespace BankAccountNS
             ba.Credit(5.77);  
             ba.Debit(11.22);  
             Console.WriteLine("Current balance is ${0}", ba.Balance);  
-        }  
-  
-    }  
-}  
-```  
-  
- /* Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs.  Toute ressemblance avec des noms ou des événements réels est purement fortuite et involontaire. \*/  
-  
-## <a name="working-with-the-code"></a>Utilisation du code  
- Pour utiliser ce code, vous devez d'abord créer un projet pour lui dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Suivez les étapes de la section « Préparation de la procédure pas à pas » dans [Procédure pas à pas : création et exécution de tests unitaires](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).  
-  
-## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
- [Procédure pas à pas : exécution des tests et affichage de la couverture du code](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
- [Procédure pas à pas : utilisation de l’utilitaire de test de ligne de commande](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+        }
+    }
+}
+```
+
+/* Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs. Toute ressemblance avec des noms ou des événements réels est purement fortuite et involontaire. \*/
+
+## <a name="working-with-the-code"></a>Utilisation du code
+
+Pour utiliser ce code, vous devez d'abord créer un projet pour lui dans Visual Studio. Suivez les étapes de la section « Préparation de la procédure pas à pas » dans [Procédure pas à pas : création et exécution de tests unitaires](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+
+## <a name="see-also"></a>Voir aussi
+
+[Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+[Procédure pas à pas : utilisation de l’utilitaire de test de ligne de commande](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

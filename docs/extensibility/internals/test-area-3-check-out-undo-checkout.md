@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74f2c8d5589eb4e8a3df9accdd85109e9858920d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8835f1f8c312b3aba72353625a1d97b514dc21b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Zone de test 3 : Extraire / annuler l’extraction
 Cette zone de plug-in de test de contrôle de code source traite les éléments de modification et de restauration à partir de la banque des versions via le **Check Out** et **annuler l’extraction** commandes.  
@@ -60,7 +61,7 @@ Cette zone de plug-in de test de contrôle de code source traite les éléments 
 |Action|Étapes de test|Résultats attendus à vérifier|  
 |------------|----------------|--------------------------------|  
 |Vérifiez les exclusif (commun) un projet client|1.  Créez un projet de client.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Extrayez l’ensemble du projet de manière exclusive (**fichier**, **Check Out**).|La modification se produit.|  
-|Vérifiez en mode exclusif (commun), un système de fichiers ou d’un projet Web IIS local|1.  Définir la connexion au serveur Web dans le fichier de partage dans **outils**, **Options**, **projets**, **paramètres Web**.<br />2.  Créez un projet Web.<br />3.  Ajouter la solution au contrôle de code source.<br />4.  Extrayez l’ensemble du projet de manière exclusive (**fichier**, **contrôle de code Source**, **Check Out**).|La modification se produit.|  
+|Vérifiez en mode exclusif (commun), un système de fichiers ou d’un projet Web IIS local|1.  Définir la connexion au serveur Web dans le fichier de partage dans **outils**, **Options**, **projets**, **paramètres Web**.<br />2.  Créez un projet web.<br />3.  Ajouter la solution au contrôle de code source.<br />4.  Extrayez l’ensemble du projet de manière exclusive (**fichier**, **contrôle de code Source**, **Check Out**).|La modification se produit.|  
 |Extraire des éléments de solution dans une solution (nouvelle méthode de gestion des autres fichiers)|1.  Créez une solution vide.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Extraire la solution.<br />4.  Ajouter plusieurs éléments de solution.<br />5.  Vérifiez tous les éléments qui vient d’être ajouté.<br />6.  Sélectionner plusieurs éléments de solution.<br />7.  Extraire les éléments sélectionnés (Menu contextuel, **Check Out**).|Fichiers sélectionnés ont été extraits.|  
 |Extraire la Version locale (si le plug-in de test prend en charge cette fonctionnalité)|1.  Utilisateur 1 : Créer un projet client.<br />2.  L’utilisateur 1 : Ajouter la solution au contrôle de code source.<br />3.  L’utilisateur 2 : Ouvrez la solution à partir du contrôle de code source vers un autre emplacement.<br />4.  Utilisateur 2 : Vérification d’extraction d’un fichier.<br />5.  L’utilisateur 2 : Modifier le fichier.<br />6.  L’utilisateur 2 : Vérifiez dans le fichier.<br />7.  Utilisateur 1 : Extraire de la version locale du fichier (vérifier le **extraire la Version locale** option dans avancée **Check Out** boîte de dialogue).|La version locale du fichier est extrait.<br /><br /> Les modifications apportées par l’utilisateur 2 ne sont pas appliquées au fichier de l’utilisateur 1.|  
   

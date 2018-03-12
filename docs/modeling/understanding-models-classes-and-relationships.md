@@ -4,19 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, models
-ms.assetid: 2ecd569c-b369-41ea-b78e-a61b62e2e4e9
-caps.latest.revision: "35"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: 4982dcc5c6fb0184f1f467971b6255aace6bec53
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- Domain-Specific Language, models
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: c0e2faf70c6d5857d967fc26e88242c54ea9906f
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
 Un langage spécifique à un domaine (DSL) est défini par son fichier de définition DSL, ainsi que tout code de programme personnalisé que vous pouvez écrire. La plupart du code de programme dans la solution DSL est généré à partir de ce fichier.  
@@ -26,7 +27,7 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
 ## <a name="the-dsl-definition"></a>La définition DSL  
  Lorsque vous ouvrez `Dsl\DslDefinition.dsl`, votre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fenêtre ressemble à l’image suivante.  
   
- ![concepteur DSL](../modeling/media/dsl_designer.png "dsl_designer")  
+ ![dsl designer](../modeling/media/dsl_designer.png "dsl_designer")  
   
  Les informations les plus importantes dans la définition DSL s’affiche dans le diagramme de définition DSL. Informations supplémentaires, qui fait également partie de DslDefinition.dsl, s’affiche dans l’Explorateur DSL, qui apparaît généralement situé sur le côté du diagramme. Vous travaillez avec le schéma pour les tâches les plus fréquentes et avec l’Explorateur de DSL pour les personnalisations plus avancées.  
   
@@ -151,4 +152,4 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
  Une relation dérivée spécialise ses relations de base. Le domaine des classes qu’il doivent être dérivés de liens ou le même que les classes liées par la relation de base. Lorsqu’un lien de la relation dérivée est créé dans un modèle, il est une instance de la dérivée et les relations de base. Dans le code de programme, vous pouvez naviguer à l’extrémité opposée de la liaison en utilisant les propriétés générées par la base, ou par la classe dérivée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

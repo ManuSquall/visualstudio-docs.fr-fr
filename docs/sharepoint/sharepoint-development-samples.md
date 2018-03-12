@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -12,17 +13,18 @@ dev_langs:
 - CSharp
 - VB
 - CSharp
-helpviewer_keywords: SharePoint development in Visual Studio, samples
-ms.assetid: bb8c7c86-ed78-4245-8d50-31413753911d
-caps.latest.revision: "8"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- SharePoint development in Visual Studio, samples
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 884c6d590f9075a95c5d98e7e68b50280f6acfec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 9cfe4870ed7d7c976e05f6ebc8deeb197e029183
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="sharepoint-development-samples"></a>Exemples de développement SharePoint
   Vous pouvez utiliser Visual Studio pour télécharger et installer les exemples d’applications SharePoint à partir de la [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=254185).  

@@ -16,11 +16,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8429e7175ca6ab9a537952fb4a605f2281da69c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 30abe64fa54e7b63e1552ab2e4c5ce95ac11befc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-log-document"></a>Document de journal Graphics
 Le document journal de graphisme est l’enregistrement des événements graphiques qui se sont produits pendant l’exécution de votre application sous une session Graphics Diagnostics. Une fois les événements enregistrés, vous pouvez examiner le journal dans Visual Studio Graphics Analyzer pour diagnostiquer les problèmes de rendu et de performances.  
@@ -72,7 +73,7 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 |**Afficher la mémoire**|Quantité de mémoire installée sur la carte vidéo.|  
 |**Nom du pilote**|Nom du pilote de la carte vidéo.|  
 |**Version du pilote**|Version du pilote de la carte vidéo.|  
-|**Nom**|Nom du pilote de la carte vidéo.|  
+|**Name**|Nom du pilote de la carte vidéo.|  
   
  **Fichier d’expérimentation**  
  Répertorie des informations sur le fichier d'expérimentation associé à la session de capture.  

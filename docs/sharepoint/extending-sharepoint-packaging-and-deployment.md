@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: SharePoint development in Visual Studio, extending deployment
-ms.assetid: 4789ebb2-12bc-42b9-9427-e63d77137765
-caps.latest.revision: "19"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- SharePoint development in Visual Studio, extending deployment
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: b88c89d9464b5ac9bc588c4364de97c1f4e281d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 2fa807472a0787f0f1ae4c61f074fd8bb3ad5055
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="extending-sharepoint-packaging-and-deployment"></a>Extension de la création de packages et du déploiement SharePoint
   Vous pouvez étendre le processus d'empaquetage et de déploiement pour les projets SharePoint.

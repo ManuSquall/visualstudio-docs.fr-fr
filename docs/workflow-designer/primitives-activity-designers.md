@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: d8f4c4763d40583f02aa97eaea066db5de2a7479
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c691e4dc60afca2d56a63af8572d75b02e970e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="primitives-activity-designers"></a>Concepteurs d'activités primitives
 Les concepteurs d'activités primitives sont utilisés pour créer et configurer différentes activités dans l'espace de noms <xref:System.Activities.Statements> telles qu'Assign et Delay. Les rubriques contenues de cette section fournissent des conseils sur la façon d'utiliser les concepteurs d'activités et de modèles [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  

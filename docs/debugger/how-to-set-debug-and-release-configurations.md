@@ -4,10 +4,12 @@ ms.custom: H1HackMay2017
 ms.date: 04/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.builds
+f1_keywords:
+- vs.debug.builds
 dev_langs:
 - CSharp
 - VB
@@ -30,15 +32,17 @@ helpviewer_keywords:
 - release builds, switching to debug build
 - Visual Basic projects, debug and release builds
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
-caps.latest.revision: "45"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4dc53ebb4a61d6d4740effa7b17b4d0a26d46a68
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: ca61d09bb1d2ab09c6991f0cd50cc302dff7fb77
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Comment : définir debug et release de configurations dans Visual Studio
 Les projets Visual Studio ont des configurations Release et Debug distinctes pour votre programme. Comme le nom l'indique, vous générez la version Debug pour le débogage et la version Release pour la distribution de la version finale.  
@@ -47,7 +51,7 @@ La configuration Debug de votre programme est compilée avec des informations de
   
 La configuration Release de votre programme ne contient pas d’informations de débogage relatives aux symboles et est entièrement optimisée. Déboguer des informations peuvent être générées dans les fichiers .pdb, [selon les options du compilateur](#BKMK_symbols_release) qui sont utilisés. Création des fichiers .pdb peut être très utile si vous devez ultérieurement déboguer votre version release.  
   
-Pour plus d’informations sur les configurations de build, consultez [présentation des Configurations de Build](../ide/understanding-build-configurations.md).  
+Pour plus d’informations sur les configurations de build, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).  
   
 Vous pouvez modifier la configuration de build à partir de la **générer** menu, à partir de la barre d’outils ou dans les pages de propriétés du projet. Les pages de propriétés du projet sont spécifiques au langage. La procédure suivante montre comment changer la configuration de build à partir du menu et de la barre d'outils. Pour plus d’informations sur la façon de modifier la configuration de build dans les projets dans différentes langues, consultez la section Voir aussi.  
   
@@ -116,7 +120,6 @@ Pour plus d’informations sur les paramètres de projet pour les configurations
  [Spécifier les fichiers de symboles (.pdb) et les fichiers sources dans le débogueur Visua Studio](../debugger/debugger-settings-and-preparation.md)  
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)   
  [Paramètres de projet pour une Configuration de débogage C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Paramètres de projet pour c# les Configurations de débogage](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Configuration de débogage de paramètres de projet pour un Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)   
- [Configurations de projet Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)
+ [Paramètres de projet pour des configurations Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)

@@ -4,19 +4,23 @@ ms.custom:
 ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.graphics.FrameValidation
+f1_keywords:
+- vs.graphics.FrameValidation
 ms.assetid: 1e639182-1301-4e28-9c1e-b5df732f3f1b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9312ad8a96c5829aae21c87e78a0d5f2f0db1b35
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: d349222b138a8d5c359d174849faf7641befc482
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-frame-validation"></a>Validation des frames graphiques
 <!-- VERSIONLESS -->
@@ -30,9 +34,9 @@ Cliquez sur le **exécuter la Validation** bouton dans l’angle supérieur gauc
 ---|---
 ID d'événement | ID qui est mappée à une entrée dans le [liste des événements](graphics-event-list.md) fenêtre.
 Gravité | Endommagement, erreur, avertissement, information ou Message.
-Catégorie | Application définie, divers, d’initialisation, nettoyage, Compilation, la création de l’état, paramètre état, l’obtention de l’état, l’exécution, Manipulation des ressources, nuanceur, redondant et non utilisé.
+Category | Application définie, divers, d’initialisation, nettoyage, Compilation, la création de l’état, paramètre état, l’obtention de l’état, l’exécution, Manipulation des ressources, nuanceur, redondant et non utilisé.
 Message | Le message associé à l’événement.
-Événement | L’événement associé à l’erreur ou l’avertissement.
+événement | L’événement associé à l’erreur ou l’avertissement.
 
 ## <a name="see-also"></a>Voir aussi  
 [Graphics Diagnostics (débogage DirectX Graphics)](visual-studio-graphics-diagnostics.md)   

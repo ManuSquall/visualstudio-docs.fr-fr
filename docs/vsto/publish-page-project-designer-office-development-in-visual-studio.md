@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VST.ProjectProperties.Publish.2007System
+f1_keywords:
+- VST.ProjectProperties.Publish.2007System
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +17,16 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio]
 - publishing, Office solutions
 - Property Pages dialog box, Publish [Office development in Visual Studio]
-ms.assetid: 94d9bdf1-84fa-4e26-8ece-a1a0dabda5ea
-caps.latest.revision: "31"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 5ce726d9d86bd57e5cf245010212545f0055c8ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: d9cc3fa102c0552893c6f7859a256b7df26e3af5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Page Publier, Concepteur de projets (Développement Office dans Visual Studio)
   La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement.  
@@ -34,7 +36,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  Vous pouvez également définir l’emplacement de publication dans l’ **Assistant Publication**. Pour plus d’informations, consultez [Comment : publier une solution Office à l’aide de ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
  **Emplacement du dossier de publication (site web, serveur ftp ou chemin du fichier)**  
  Obligatoire.  
   

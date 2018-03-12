@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4878b71317e67c152c45d58168531f1039128f0e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4714399d1ea7b17f1d79858185157e9c11902d7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Étape 1 : créer un projet d’application Windows Forms
 Lorsque vous créez une visionneuse d’images, la première étape consiste à créer un projet d’application Windows Forms.  

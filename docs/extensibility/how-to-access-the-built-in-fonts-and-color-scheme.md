@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae5c64d0272b998d27a9eb5753c04ae764c3af8f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5d8af96857fa3e3c02ce8ea29711eaffbb532e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Comment : accéder aux polices intégrées et jeu de couleurs
 L’environnement de développement intégré (IDE) Visual Studio a un jeu de polices et couleurs qui est associé à la fenêtre de l’éditeur. Vous pouvez accéder à ce schéma via les <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.  
@@ -58,9 +59,9 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
   
 2.  Remplir le Registre pour utiliser le jeu de couleurs et polices du stock de quatre valeurs :  
   
-    |Nom|Type|Données|Description|  
+    |Name|Type|Données|Description|  
     |----------|----------|----------|-----------------|  
-    |Catégorie|REG_SZ|GUID|Un GUID arbitraire qui identifie une catégorie qui contient le schéma de police et couleur de stock.|  
+    |Category|REG_SZ|GUID|Un GUID arbitraire qui identifie une catégorie qui contient le schéma de police et couleur de stock.|  
     |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Ce GUID est utilisé par tous les packages VS qui utilisent les configurations de police et la couleur par défaut.|  
     |NameID|REG_DWORD|Id|L’ID de ressource de nom de la catégorie localisables dans le VSPackage.|  
     |ToolWindowPackage|REG_SZ|GUID|Le GUID du VSPackage qui implémente le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.|  

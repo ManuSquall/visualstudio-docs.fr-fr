@@ -14,16 +14,15 @@ helpviewer_keywords:
 - Inspectors [Office development in Visual Studio]
 - Explorers [Office development in Visual Studio]
 - form regions [Office development in Visual Studio], accessing at run time
-ms.assetid: 58eaa9e0-acba-4a13-a6dd-b7e37a38156e
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 20a60a82eacdfd06482e9765e82459b57fecb32b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70e9a970251aa5b95cff5983f5e2ce5e0c804a61
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="accessing-a-form-region-at-run-time"></a>Accès à une zone de formulaire au moment de l'exécution
   

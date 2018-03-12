@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: SccAdd
-helpviewer_keywords: SccAdd function
+f1_keywords:
+- SccAdd
+helpviewer_keywords:
+- SccAdd function
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8cd55986d7f4597030830906485ba1d7c1b3389
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 52137da9d14920a2fd5213f1110a74d895e51c7f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccadd-function"></a>SccAdd (fonction)
 Cette fonction ajoute de nouveaux fichiers au système de contrôle de code source.  
@@ -62,7 +67,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|L’opération d’ajout a réussi.|  
 |SCC_E_FILEALREADYEXISTS|Le fichier sélectionné est déjà sous contrôle de code source.|  
@@ -75,7 +80,7 @@ SCCRTN SccAdd(
 |SCC_I_RELOADFILE|Un fichier ou un projet doit être rechargé.|  
 |SCC_E_FILENOTEXIST|Impossible de trouver le fichier local.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les commandes `fOptions` sont remplacés ici par un tableau, `pfOptions`, avec une `LONG` option spécification par fichier. Il s’agit, car le type de fichier peut varier d’un fichier.  
   
 > [!NOTE]
@@ -83,7 +88,7 @@ SCCRTN SccAdd(
   
  Voici la liste des indicateurs utilisés dans le `pfOptions` tableau :  
   
-|Option|Valeur|Signification|  
+|Option|Value|Signification|  
 |------------|-----------|-------------|  
 |SCC_FILETYPE_AUTO|0 x 00|Le plug-in de contrôle de code source doit détecter le type de fichier.|  
 |SCC_FILETYPE_TEXT|0 x 01|Indique un fichier texte ASCII.|  

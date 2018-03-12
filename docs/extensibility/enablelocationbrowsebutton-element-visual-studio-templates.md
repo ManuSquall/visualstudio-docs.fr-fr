@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#EnableLocationBrowseButton
-helpviewer_keywords: EnableLocationBrowseButton [Visual Studio project templates]
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#EnableLocationBrowseButton
+helpviewer_keywords:
+- EnableLocationBrowseButton [Visual Studio project templates]
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9271df96f5fa84044b33550e0d73750030d7e66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 538dfce45136b6a8d55c9c3c8aab1931b3a6df27
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton, élément (modèles Visual Studio)
 Spécifie si le **Parcourir** bouton n’est disponible dans le **nouveau projet** boîte de dialogue, afin que les utilisateurs peuvent facilement modifier le répertoire par défaut dans lequel un nouveau projet est enregistré.  
@@ -37,7 +42,7 @@ Spécifie si le **Parcourir** bouton n’est disponible dans le **nouveau projet
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -53,7 +58,7 @@ Spécifie si le **Parcourir** bouton n’est disponible dans le **nouveau projet
   
  Le texte doit être `true` ou `false`, indiquant s’il faut ou non afficher le **Parcourir** bouton sur le **nouveau projet** boîte de dialogue.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  `EnableLocationBrowseButton` est un élément facultatif. La valeur par défaut est `true`, qui affiche le **Parcourir** situé dans le **nouveau projet** boîte de dialogue.  
   
  Dans le **nouveau projet** boîte de dialogue, la **emplacement** zone de texte spécifie le répertoire dans lequel un nouveau projet est enregistré. Le **Parcourir** bouton vous permet de modifier ce répertoire en affichant le **emplacement du projet** boîte de dialogue qui vous permet de naviguer facilement dans un répertoire différent est disponible à partir de votre ordinateur, et puis choisissez en tant que le répertoire où le nouveau projet est enregistré.  

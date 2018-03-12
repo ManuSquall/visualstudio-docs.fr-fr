@@ -19,16 +19,15 @@ helpviewer_keywords:
 - association forms [SharePoint development in Visual Studio]
 - initiation forms [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, workflow initiation forms
-ms.assetid: c8666d8c-b173-4245-8014-9c1cd6acb071
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: aa95c519ab24ba042b6a1adfa71c64499b18d4c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4b6eed3807b4031a7ab41c16f532442fb0968601
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>Procédure pas à pas : création d'un flux de travail avec des formulaires d'association et d'initiation
   Cette procédure pas à pas montre comment créer un workflow séquentiel de base qui incorpore l’utilisation des formulaires d’association et d’initiation. Il s’agit de formulaires ASPX permettant d’activer les paramètres à ajouter à un flux de travail lorsqu’il est tout d’abord associée par l’administrateur SharePoint (formulaire d’association), et lorsque le workflow est démarré par l’utilisateur (le formulaire d’initiation).  
@@ -41,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Si un bilan employé total dépasse la limite prédéfinie de l’administrateur, une tâche est créée pour le Gestionnaire de l’employé approuver la note de frais. Toutefois, si le total de rapports de dépenses d’un employé est inférieur ou égal à la limite de dépense, un message approuvée automatiquement est écrite dans la liste d’historique du flux de travail.  
   
- Cette procédure pas à pas décrit les tâches suivantes :  
+ Cette procédure pas à pas décrit les tâches suivantes :  
   
 -   Création d’un projet de flux de travail séquentiel de définition de liste SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -60,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 >   
 >  En outre, votre ordinateur peut afficher des noms différents ou des emplacements pour certaines de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] les éléments d’interface utilisateur dans les instructions suivantes. Le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] édition dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint. Pour plus d’informations, consultez [configuration requise pour le développement de Solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
@@ -96,7 +95,7 @@ ms.lasthandoff: 10/31/2017
   
      Le **Assistant Personnalisation de SharePoint** s’affiche.  
   
-10. Dans le **spécifier le nom de flux de travail pour le débogage** page, acceptez le nom par défaut (**ExpenseReport - Workflow1**). Conservez la valeur de type de modèle de flux de travail par défaut (**liste de flux de travail)**. Choisissez le **suivant** bouton.  
+10. Dans le **spécifier le nom de flux de travail pour le débogage** page, acceptez le nom par défaut (**ExpenseReport - Workflow1**). Conservez la valeur de type de modèle de flux de travail par défaut (**liste de flux de travail)**. Choisissez le bouton **Suivant**.  
   
 11. Dans le **voulez-vous que Visual Studio associe automatiquement le flux de travail dans une session de débogage ?** page, désactivez la case qui associe automatiquement votre modèle de flux de travail si elle est activée.  
   

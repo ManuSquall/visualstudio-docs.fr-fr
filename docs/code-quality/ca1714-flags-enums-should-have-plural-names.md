@@ -18,18 +18,19 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b83cb82dab5f723c656b51a5322df7d7aad4570c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 82f5e18b838e6f6c0696359a9d88ba3350e636ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714 : Les énumérations d'indicateurs doivent avoir des noms au pluriel
 |||  
 |-|-|  
 |TypeName|FlagsEnumsShouldHavePluralNames|  
 |CheckId|CA1714|  
-|Catégorie|Microsoft.Naming|  
+|Category|Microsoft.Naming|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
@@ -53,4 +54,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.FlagsAttribute?displayProperty=fullName>   
- [Conception de l’enum](/dotnet/standard/design-guidelines/enum)
+ [Conception d’énumérations](/dotnet/standard/design-guidelines/enum)

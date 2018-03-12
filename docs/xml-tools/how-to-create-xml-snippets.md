@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 36fccee0e228e4391e80388284b59f19e1f3a1b9
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 376719363bd97970bdfa333d9aab0e57a8484c73
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>Procédure : créer des extraits XML
 Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet éditeur comporte un extrait XML appelé « Snippet », qui est souvent utilisé pour la création de nouveaux extraits XML.  
@@ -53,7 +54,7 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
   <SnippetType>SurroundsWith</SnippetType>  
   <SnippetType>Expansion</SnippetType>  
 </SnippetTypes>  
-```  
+```
   
  Le `Expansion` type détermine si l’extrait apparaît lorsque vous appelez le **insérer un extrait** commande. Le `SurroundsWith` type détermine si l’extrait apparaît lorsque vous appelez le **entourer** commande.  
   
@@ -71,7 +72,7 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
   <name>$name$</name>  
   $selected$ $end$</test>]]>  
 </Code>  
-```  
+```
   
  L'élément `Code` inclut trois variables.  
   
@@ -87,7 +88,7 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
 <test>  
   <name>name</name>  
 </test>  
-```  
+```
   
  La valeur de l'élément name est marquée comme une zone modifiable.  
   
@@ -99,7 +100,7 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
   <ID>name</ID>  
   <Default>name</Default>  
 </Literal  
-```  
+```
   
  Les littéraux peuvent également faire référence à des fonctions. L’éditeur XML comprend une fonction nommée **LookupPrefix**. Le **LookupPrefix** fonction recherche l’URI d’espace de noms donné à partir de l’emplacement dans le document XML de cet extrait est appelé et retourne le préfixe d’espace de noms qui est défini pour cet espace de noms, si un, et elle inclut les deux-points ( :)) Dans ce nom. Voici un exemple d’un `Literal` élément qui utilise le **LookupPrefix** (fonction).  
   
@@ -108,7 +109,7 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
    <ID>prefix</ID>  
    <Function>LookupPrefix("namespaceURI")</Function>  
 </Literal>  
-```  
+```
   
  La variable $prefix$ _peut alors être utilisée ailleurs dans votre extrait XML.  
   

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - unit tests, generating
 - unit tests, running
 - unit tests, authoring
-ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
-caps.latest.revision: "83"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 825adc757b9ae984bb39b308bab37a0d98b63ab5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.author: gewarren
+manager: ghogen
+ms.workload: dotnet
+author: gewarren
+ms.openlocfilehash: 6320f9730be9c47da11a43b57b64c86e46a42bf4
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Procédure pas à pas : création et exécution de tests unitaires pour le code managé
 Cette procédure pas à pas décrit la création, l’exécution et la personnalisation d’une série de tests unitaires à l’aide du framework de tests unitaires Microsoft pour le code managé et de l’explorateur de tests de Visual Studio. Vous commencez avec un projet C# qui est en développement, vous créez des tests qui utilisent son code, vous exécutez les tests et vous examinez les résultats. Ensuite, vous pouvez modifier le code de votre projet et réexécuter les tests.  
@@ -293,7 +293,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
   
 ```  
   
- Nous utilisons l’attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> pour déclarer que la bonne exception a été levée. L’attribut entraîne l’échec du test à moins qu’une exception `ArgumentOutOfRangeException` ne soit levée. L’exécution du test avec à la fois les valeurs `debitAmount` positives et négatives puis en modifiant temporairement la méthode testée pour lever une exception <xref:System.ApplicationException> générique quand le montant est inférieur à zéro indique que le test se comporte correctement. Pour tester le cas où le montant retiré est supérieur au solde, il suffit d’effectuer les opérations suivantes :  
+ Nous utilisons l’attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> pour déclarer que la bonne exception a été levée. L’attribut entraîne l’échec du test à moins qu’une exception `ArgumentOutOfRangeException` ne soit levée. L’exécution du test avec à la fois les valeurs `debitAmount` positives et négatives puis en modifiant temporairement la méthode testée pour lever une exception <xref:System.ApplicationException> générique quand le montant est inférieur à zéro indique que le test se comporte correctement. Pour tester le cas où le montant retiré est supérieur au solde, il suffit d’effectuer les opérations suivantes :  
   
 1.  Créez une méthode de test nommée `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`.  
   

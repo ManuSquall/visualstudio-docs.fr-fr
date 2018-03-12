@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: services, providing
+helpviewer_keywords:
+- services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0adc9f69f1b0e873d2e1f38c9317070dc0d6a08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: ccc9b014a3d31fef4e3f491da394cdf1e9fb3ecb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-a-service"></a>Comment : fournir un Service
 Un VSPackage peut fournir des services qui permet d’autres packages VS. Pour fournir un service, un VSPackage doit inscrire le service avec Visual Studio et ajoutez le service.  
@@ -31,9 +35,9 @@ Un VSPackage peut fournir des services qui permet d’autres packages VS. Pour f
   
 #### <a name="implementing-a-service"></a>Implémentation d’un service  
   
-1.  Créez un projet VSIX (**fichier / nouveau / projet / Visual C# / Extensiblity / projet VSIX**).  
+1.  Créez un projet VSIX (**fichier > Nouveau > projet > c# > Extensiblity > projet VSIX**).  
   
-2.  Ajouter un VSPackage au projet. Sélectionnez le nœud de projet dans le **l’Explorateur de solutions** et cliquez sur **Ajouter / nouvel élément / éléments Visual c# / extensibilité / Package Visual Studio**.  
+2.  Ajouter un VSPackage au projet. Sélectionnez le nœud de projet dans le **l’Explorateur de solutions** et cliquez sur **Ajouter > nouvel élément > éléments Visual c# > extensibilité > Package Visual Studio**.  
   
 3.  Pour implémenter un service, vous devez créer trois types :  
   
@@ -109,7 +113,7 @@ Un VSPackage peut fournir des services qui permet d’autres packages VS. Pour f
   
 2.  Implémentez la méthode de rappel, qui doit créer et retourner le service ou null s’il ne peut pas être créé.  
   
-    ```  
+    ```csharp  
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  

@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf74110cf42daa51521cc7ea706c1b951b23deb8
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: vssdk
+ms.openlocfilehash: 543f107081a5cc29ac14f1c2ba2e05924b72e353
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shipping-visual-studio-extensions"></a>Envoi des Extensions Visual Studio
 Une fois que vous avez terminé de développer votre extension, vous pouvez l’installer sur d’autres ordinateurs, le partager avec vos amis et collègues ou le publier sur le Marketplace Visual Studio. Cette section explique tout ce que vous devez faire pour publier et mettre à jour votre extension : utilisation des fichiers .vsix, publication, la localisation et la mise à jour.  
@@ -33,12 +34,12 @@ Une fois que vous avez terminé de développer votre extension, vous pouvez l’
  Le format VSIX ne prend pas en charge l’installation des extraits de code. Il également ne prend pas en charge certains autres scénarios tels que l’écriture vers le Global Assembly Cache (GAC) ou dans le Registre système. Si vous avez besoin d’écrire dans le GAC ou le Registre de l’installation, vous devez utiliser le programme d’installation de Windows. Pour plus d’informations, consultez [préparation des Extensions de déploiement de Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md).  
   
 ## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>Publication de votre Extension pour Visual Studio Marketplace  
- Vous pouvez distribuer votre extension à d’autres personnes simplement par courrier le fichier .vsix ou insérer sur un serveur. Mais la meilleure façon d’obtenir votre code entre les mains d’un grand nombre de personnes consiste à placer dans le [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Extensions de Visual Studio Marketplace sont disponibles pour les utilisateurs de Visual Studio via **Extensions et mises à jour**. Pour plus d’informations, consultez [recherche et utilisation des Extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
+ Vous pouvez distribuer votre extension à d’autres personnes simplement par courrier le fichier .vsix ou insérer sur un serveur. Mais la meilleure façon d’obtenir votre code entre les mains d’un grand nombre de personnes consiste à placer dans le [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Extensions de Visual Studio Marketplace sont disponibles pour les utilisateurs de Visual Studio via **Extensions et mises à jour**. Pour plus d’informations, consultez [Recherche et utilisation des extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
   
  Pour obtenir un exemple complet qui montre comment télécharger une extension vers Visual Studio Marketplace, consultez [procédure pas à pas : publication d’une Extension Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).  
   
 ## <a name="private-galleries"></a>Private Galleries  
- Lorsque vous développez des contrôles, des modèles et des outils, vous pouvez les partager avec votre organisation en les publiant dans une galerie privée sur votre intranet. Pour plus d’informations, consultez [galeries privées](../extensibility/private-galleries.md).  
+ Lorsque vous développez des contrôles, des modèles et des outils, vous pouvez les partager avec votre organisation en les publiant dans une galerie privée sur votre intranet. Pour plus d’informations, consultez [Galeries privées](../extensibility/private-galleries.md).  
   
 ## <a name="localizing-your-extension"></a>Localisation de votre Extension  
  Si vous envisagez de publier votre extension dans les différents paramètres régionaux, vous devez envisager de sa localisation. Pour obtenir une explication de ce qui est impliqué, consultez [localisation des Packages VSIX](../extensibility/localizing-vsix-packages.md).  
@@ -62,4 +63,4 @@ Une fois que vous avez terminé de développer votre extension, vous pouvez l’
 |[Signature de packages VSIX](../extensibility/signing-vsix-packages.md)|Explique comment signer des packages VSIX.|  
 |[Galeries privées](../extensibility/private-galleries.md)|Explique comment créer des galeries privées pour les extensions.|  
 |[Prise en charge de plusieurs versions de Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Montre comment votre extension de la prise en charge de plusieurs versions de Visual Studio.|
-|[Localisation de Visual Studio](locating-visual-studio.md)|Décrit comment localiser les instances de Visual Studio pour le déploiement de l’extension personnalisée.|
+|[Recherche de Visual Studio](locating-visual-studio.md)|Décrit comment localiser les instances de Visual Studio pour le déploiement de l’extension personnalisée.|

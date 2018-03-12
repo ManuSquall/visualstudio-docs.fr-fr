@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.explorerbehavior
-helpviewer_keywords: Domain-Specific Language Tools, Domain-Specific Language Explorer
-ms.assetid: d2926444-9408-41d8-a27e-3fd0c416f9ac
-caps.latest.revision: "20"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: 880b10da32e858ce6e532bc5b8e75227a6e999d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+f1_keywords:
+- vs.dsltools.dsldesigner.explorerbehavior
+helpviewer_keywords:
+- Domain-Specific Language Tools, Domain-Specific Language Explorer
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: eac91df1a07e54b80e88538695b1cc22353396d6
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-the-model-explorer"></a>Personnalisation de l'Explorateur de modèles
 Vous pouvez modifier l’apparence et le comportement de l’Explorateur de votre Concepteur de langage spécifique à un domaine comme suit :  
@@ -112,5 +114,6 @@ Vous pouvez modifier l’apparence et le comportement de l’Explorateur de votr
   
      L’Explorateur doit uniquement afficher une **acteurs** nœud et ne doit pas afficher le **commentaires** nœud.  
   
-## <a name="see-also"></a>Voir aussi  
- [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>Voir aussi
+
+[Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

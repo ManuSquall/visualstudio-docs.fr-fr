@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,17 +23,20 @@ dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <dependency> element [ClickOnce deployment manifest]
+helpviewer_keywords:
+- <dependency> element [ClickOnce deployment manifest]
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: df1c2e36f101422655b68fd2a6a012d80b71befa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload:
+- multiple
+ms.openlocfilehash: 8716da20c989a1a8d1e36d9e071e9802a06219bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dépendance&gt; élément (déploiement ClickOnce)
 Identifie la version de l’application à installer et l’emplacement du manifeste d’application.  
@@ -78,7 +82,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
  Le `dependency` élément décrit habituellement des dépendances de l’application principale avec des assemblys contenus dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Si votre application Main.exe utilise un assembly appelé DotNetAssembly.dll, doit être répertorié dans une section de dépendance. Dépendance, toutefois, peut également s’exprimer autres types de dépendances, tels que des dépendances sur une version spécifique du common language runtime, sur un assembly dans le global assembly cache (GAC), ou sur un objet COM. S’agissant d’une technologie de déploiement no-touch, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ne peut pas initialiser le téléchargement et installation de ces types de dépendances, mais il empêche l’application de s’exécuter si une ou plusieurs des dépendances spécifiées n’existent pas.  
   
 ## <a name="dependentassembly"></a>dependentAssembly  
- Requis. Cet élément contient le `assemblyIdentity` élément. Le tableau suivant montre les attributs du `dependentAssembly` prend en charge.  
+ Obligatoire. Cet élément contient le `assemblyIdentity` élément. Le tableau suivant montre les attributs du `dependentAssembly` prend en charge.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -89,7 +93,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 |`size`|Facultatif. La taille du manifeste d’application, en octets.|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Requis. Cet élément est un enfant de l’élément `dependentAssembly`. Le contenu de `assemblyIdentity` doit être identique à celui décrit dans la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application. Le tableau suivant présente les attributs de la `assemblyIdentity` élément.  
+ Obligatoire. Cet élément est un enfant de l’élément `dependentAssembly`. Le contenu de `assemblyIdentity` doit être identique à celui décrit dans la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application. Le tableau suivant présente les attributs de la `assemblyIdentity` élément.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -125,7 +129,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 ## <a name="dsigdigestvalue"></a>dsig : DigestValue  
  Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. Le `dsig:DigestValue` élément ne possède pas d’attributs. Sa valeur texte est le hachage calculé pour le fichier spécifié.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Manifestes de déploiement possèdent en général un seul `assemblyIdentity` qui identifie le nom et la version du manifeste d’application.  
   
 ## <a name="example"></a>Exemple  

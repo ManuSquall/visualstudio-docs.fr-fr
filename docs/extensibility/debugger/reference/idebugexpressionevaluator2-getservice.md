@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d907bdd93d2c17eb86ae07f9c9cfa3034fa3c09d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1ff102b35e7492a47833fbbac710509711eac471
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 Récupère un objet de service donné son identificateur unique.  
@@ -50,7 +51,7 @@ int GetService (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cela peut être consommé par un évaluateur d’expression de tiers pour obtenir des services à partir d’un autre évaluateur d’expression. Par exemple, cette méthode peut être utilisée pour obtenir l’interface pour le service de visualiseur de l’évaluateur d’expression de valeur par défaut. Évaluateurs d’expression de tiers sont peu susceptibles d’avoir besoin d’implémenter cette interface.  
   
 ## <a name="see-also"></a>Voir aussi  

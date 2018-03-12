@@ -16,23 +16,22 @@ dev_langs:
 helpviewer_keywords:
 - project upgrade [Office development in Visual Studio]
 - Options dialog box, Project Upgrade page
-ms.assetid: 35568fe8-cbec-43cc-8cb1-75fe195e1793
-caps.latest.revision: "24"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: c35d0f13ff9dff1da3508e935e072bd0129d5d49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 18b30285dc0903101aeaa12cdf41fd3cf211fa35
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Mise à niveau du projet, boîte de dialogue Options
   Utilisez la page **Mise à niveau du projet** pour spécifier si Visual Studio modifie automatiquement les projets de complément VSTO pour cibler la version d’Office installée sur l’ordinateur de développement.  
   
  Pour accéder à cette page, dans le menu **Outils** , cliquez sur **Options**. Développez le dossier **Outils Office** , puis cliquez sur **Mise à niveau du projet**.  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## <a name="uielement-list"></a>Liste des éléments d’interface  
  **Toujours mettre à niveau vers la version d’Office installée**  
  Cette option est désactivée pour [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] car les projets Office dans [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] peuvent cibler uniquement les applications [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] ou Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] . Pour plus d'informations, consultez [Upgrading and Migrating Office Solutions](../vsto/upgrading-and-migrating-office-solutions.md).  
   

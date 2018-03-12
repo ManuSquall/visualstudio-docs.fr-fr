@@ -15,16 +15,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], document protection
 - document protection, removing from worksheets
 - Unprotect method
-ms.assetid: 034688d2-eda7-4b4a-bcc2-d0999ff879a4
-caps.latest.revision: "48"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a5d38dacb07cfce6cae2f2b83a68c7090542cac8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b4564baab3cf2daa6e8859a66dbc6e9e06ffdef
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Comment : ôter la protection des feuilles de calcul par programmation
   Vous pouvez supprimer par programmation la protection d’une feuille de calcul Microsoft Office Excel.  

@@ -10,24 +10,26 @@ ms.topic: article
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
-ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
-caps.latest.revision: "22"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 0be707ec592265c75ce6e0c36954010e496ac91c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.openlocfilehash: c2eff9fc8e8aedecb1fd9b99538fa600dbcc5eb1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Test d'une grande application avec plusieurs mappages d'IU
+
 Cette rubrique explique comment utiliser des tests codés de l'interface utilisateur quand vous testez une grande application à l'aide de plusieurs mappages d'interface utilisateur.  
   
- **Requirements**  
+ **Spécifications**  
   
 -   Visual Studio Enterprise  
   
- Quand vous créez un test codé de l’interface utilisateur, le framework de test de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère du code pour le test par défaut dans une classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).  
+ Quand vous créez un test codé de l’interface utilisateur, le framework de test de Visual Studio génère du code pour le test par défaut dans une classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).  
   
  Le code généré pour le mappage d'IU contient une classe pour chaque objet avec lequel le test interagit. Pour chaque méthode générée, une classe compagnon pour les paramètres de méthode est générée spécifiquement pour cette méthode. S'il existe un grand nombre d'objets, de pages, de formulaires et de contrôles dans votre application, le mappage d'IU peut devenir très grand. De plus, si plusieurs personnes travaillent sur des tests, l'application devient complexe avec un seul fichier de mappage d'IU de grande taille.  
   
@@ -67,24 +69,25 @@ Cette rubrique explique comment utiliser des tests codés de l'interface utilisa
   
 4.  Sélectionnez **Ajouter**.  
   
-     La fenêtre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est réduite et la boîte de dialogue **Générateur de test codé de l’interface utilisateur** s’affiche.  
+     La fenêtre Visual Studio est réduite et la boîte de dialogue **Générateur de test codé de l’interface utilisateur** s’affiche.  
   
 5.  Enregistrez les actions de la première méthode et choisissez **Générer le code**.  
   
 6.  Après avoir enregistré toutes les actions et assertions pour le premier composant ou la première page et les avoir regroupées dans des méthodes, fermez la boîte de dialogue **Générateur de test codé de l’interface utilisateur**.  
   
 7.  Continuez à créer des mappages d'IU. Enregistrez les actions et assertions, regroupez-les dans des méthodes pour chaque composant, puis générez le code.  
-  
- Dans de nombreux cas, la fenêtre de niveau supérieur de votre application reste constante pour tous les Assistants, formulaires et pages. Bien que chaque mappage d'IU ait une classe pour la fenêtre de niveau supérieur, tous les mappages font probablement référence à la même fenêtre de niveau supérieur dans laquelle tous les composants de l'application s'exécutent. Les tests codés de l'interface utilisateur recherchent les contrôles de manière hiérarchique, de haut en bas, en commençant par la fenêtre de niveau supérieur. Ainsi, dans une application complexe, la fenêtre de niveau supérieur réelle pourrait être dupliquée dans chaque mappage d'IU. Si la fenêtre de niveau supérieur réelle est dupliquée, plusieurs modifications ont lieu si cette fenêtre change. Cela pourrait provoquer des problèmes de performances quand vous basculez d'un mappage d'IU à un autre.  
-  
- Pour limiter ce risque, vous pouvez utiliser la méthode `CopyFrom()` pour vous assurer que la nouvelle fenêtre de niveau supérieur dans ce mappage d'IU est identique à la fenêtre de niveau supérieur principale.  
-  
-## <a name="example"></a>Exemple  
- L'exemple suivant fait partie d'une classe utilitaire qui fournit l'accès à chaque composant et à ses composants enfants représentés par les classes générées dans les différents mappages d'IU.  
-  
- Dans cet exemple, une application web nommée `Contoso` possède une page d'accueil, une page de produits et une page de panier. Chacune de ces pages partage une fenêtre de niveau supérieur commune qui est la fenêtre du navigateur. Il existe un mappage d'IU pour chaque page et le code de la classe utilitaire est semblable au suivant :  
-  
-```  
+
+ Dans de nombreux cas, la fenêtre de niveau supérieur de votre application reste constante pour tous les Assistants, formulaires et pages. Bien que chaque mappage d'IU ait une classe pour la fenêtre de niveau supérieur, tous les mappages font probablement référence à la même fenêtre de niveau supérieur dans laquelle tous les composants de l'application s'exécutent. Les tests codés de l'interface utilisateur recherchent les contrôles de manière hiérarchique, de haut en bas, en commençant par la fenêtre de niveau supérieur. Ainsi, dans une application complexe, la fenêtre de niveau supérieur réelle pourrait être dupliquée dans chaque mappage d'IU. Si la fenêtre de niveau supérieur réelle est dupliquée, plusieurs modifications ont lieu si cette fenêtre change. Cela pourrait provoquer des problèmes de performances quand vous basculez d'un mappage d'IU à un autre.
+
+ Pour limiter ce risque, vous pouvez utiliser la méthode `CopyFrom()` pour vous assurer que la nouvelle fenêtre de niveau supérieur dans ce mappage d’IU est identique à la fenêtre de niveau supérieur principale.
+
+## <a name="example"></a>Exemple
+
+L'exemple suivant fait partie d'une classe utilitaire qui fournit l'accès à chaque composant et à ses composants enfants représentés par les classes générées dans les différents mappages d'IU.
+
+Dans cet exemple, une application web nommée `Contoso` possède une page d'accueil, une page de produits et une page de panier. Chacune de ces pages partage une fenêtre de niveau supérieur commune qui est la fenêtre du navigateur. Il existe un mappage d'IU pour chaque page et le code de la classe utilitaire est semblable au suivant :
+
+```csharp
 using ContosoProject.UIMaps;  
 using ContosoProject.UIMaps.HomePageClasses;  
 using ContosoProject.UIMaps.ProductPageClasses;  
@@ -135,12 +138,13 @@ namespace ContosoProject
     // Continue to create properties for each page, getting the   
     // page object from the corresponding UI Map and copying the   
     // top level window properties from the Home Page.  
-}  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>   
- [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
- [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>  
+<xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>  
+[Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)  
+[Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)  
+[Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)

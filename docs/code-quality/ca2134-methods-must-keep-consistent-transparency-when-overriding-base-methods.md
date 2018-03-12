@@ -4,33 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: CA2134
+f1_keywords:
+- CA2134
 ms.assetid: 3b17e487-0326-442e-90e1-dc0ba9cdd3f2
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: feb33e630322237522c98ff3f803bc44b3fbcc86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 62438b49d91f680ae360f1d32f7cfe3b0efa2b75
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134 : La transparence des méthodes doit rester cohérente lors de la substitution de méthodes de base
 |||  
 |-|-|  
 |TypeName|MethodsMustOverrideWithConsistentTransparency|  
 |CheckId|CA2134|  
-|Catégorie|Microsoft.Security|  
+|Category|Microsoft.Security|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
  Cette règle se déclenche lorsqu’une méthode marquée avec le <xref:System.Security.SecurityCriticalAttribute> substitue une méthode qui est transparente ou marquée à le <xref:System.Security.SecuritySafeCriticalAttribute>. La règle se déclenche également lorsqu’une méthode qui est transparente ou marquée à le <xref:System.Security.SecuritySafeCriticalAttribute> substitue une méthode qui est marquée avec un <xref:System.Security.SecurityCriticalAttribute>.  
   
- La règle est appliquée lors de la substitution d'une méthode virtuelle ou de l'implémentation d'une interface.  
+ La règle est appliquée lors de la substitution d’une méthode virtuelle ou de l’implémentation d’une interface.  
   
 ## <a name="rule-description"></a>Description de la règle  
  Cette règle se déclenche sur les tentatives de modification de l’accessibilité de sécurité d’une méthode plus haut de la chaîne d’héritage. Par exemple, si une méthode virtuelle dans une classe de base est transparent ou critique sécurisé, puis la classe dérivée doit remplacer une méthode transparent ou critique sécurisé. À l’inverse, si le serveur virtuel est critique de sécurité, la classe dérivée doit remplacer avec une méthode critique de sécurité. La même règle s’applique pour l’implémentation des méthodes d’interface.  
@@ -49,4 +53,4 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Code Transparent de sécurité, niveau 2](http://msdn.microsoft.com/Library/4d05610a-0da6-4f08-acea-d54c9d6143c0)
+ [Code Transparent de sécurité, niveau 2](/dotnet/framework/misc/security-transparent-code-level-2)

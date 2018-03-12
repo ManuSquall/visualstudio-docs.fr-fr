@@ -4,24 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: debug.symbolpath
+f1_keywords:
+- debug.symbolpath
 helpviewer_keywords:
 - symbol path command
 - Debug.SymbolPath command
 - SymbolPath command
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d446779e4f84bf19e965393f9fa1142c7e4e166a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 6eb125c691cb9e6f8642093612aca142172e76d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbol-path-command"></a>Chemin d’accès aux symboles, commande
 Définit la liste des répertoires où le débogueur recherche des symboles.  
@@ -36,7 +40,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
  `pathname`  
  Facultatif. Liste de chemins délimités par des points-virgules dans laquelle le débogueur doit rechercher des symboles.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si aucun `pathname` n’est spécifié, la commande répertorie les chemins des symboles actuels.  
   
 ## <a name="example"></a>Exemple  

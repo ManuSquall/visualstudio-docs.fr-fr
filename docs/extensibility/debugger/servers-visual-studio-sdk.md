@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 496e9b361dbb7f5c3eb5cf5197a1351a1182af3e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 404048e37f0a95ac1425250cfdcd098c4eb7f59d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="servers-visual-studio-sdk"></a>Serveurs (Kit de développement logiciel Visual Studio)
 En termes de l’architecture du débogueur, une **server**:  

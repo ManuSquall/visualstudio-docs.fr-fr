@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.EditAttributesDialog
-helpviewer_keywords: Domain-Specific Language, custom attrributes
-ms.assetid: b3db3c74-920c-4701-9544-6f75cbe8b7c9
-caps.latest.revision: "19"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: 7dcbd0005b80887dae91249a6781a6982414b9e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+f1_keywords:
+- vs.dsltools.EditAttributesDialog
+helpviewer_keywords:
+- Domain-Specific Language, custom attrributes
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 1eedf41931c7f9476691e507ab0afcd9e2a4c4ee
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Comment : définir des attributs CLR sur un élément
 Les attributs personnalisés sont des attributs spéciaux qui peuvent être ajoutés à des diagrammes, des formes, des connecteurs et des éléments de domaine. Vous pouvez ajouter tout attribut qui hérite de la `System.Attribute` classe.  
@@ -40,7 +42,7 @@ Les attributs personnalisés sont des attributs spéciaux qui peuvent être ajou
   
      Le **attributs personnalisés** propriété affiche désormais l’attribut dans le format suivant :  
   
-     `[`*AttributeName* `(` *nom_paramètre* `=` *Type*`)]`  
+     `[` *AttributeName* `(` *ParameterName* `=` *Type* `)]`  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

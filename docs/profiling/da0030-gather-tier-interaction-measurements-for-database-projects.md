@@ -16,17 +16,18 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccb733d483026e7490d447c139e57700568a5f13
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a41357670b7f9c634de57f66bd292320d354dbc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030 : Collecter les mesures d'interaction de couche pour les projets de base de données
 |||  
 |-|-|  
 |ID de règle|DA0030|  
-|Catégorie|Utilisation des outils de profilage|  
+|Category|Utilisation des outils de profilage|  
 |Méthode de profilage|Échantillonnage|  
 |Message|La collecte des mesures d’interaction pour les applications multicouches vous aidera à comprendre les modèles d’utilisation de la base de données et les retards d’accès aux données de clé. Profilez de nouveau l’application en activant l’option Profilage d’interaction de couche.|  
 |Type de règle|Information|  

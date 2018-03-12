@@ -18,25 +18,26 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 113d5206d2b4827902cf83827efd5b8738387755
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4b3a6ffe04be6116fddc225d0820d3709644fe52
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810 : Initialisez les champs statiques de type référence en ligne
 |||  
 |-|-|  
 |TypeName|InitializeReferenceTypeStaticFieldsInline|  
 |CheckId|CA1810|  
-|Catégorie|Microsoft.Performance|  
+|Category|Microsoft.Performance|  
 |Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
  Un type référence déclare un constructeur statique explicite.  
   
 ## <a name="rule-description"></a>Description de la règle  
- Lorsqu'un type déclare un constructeur statique explicite, le compilateur juste-à-temps (JIT, Just-In-Time) ajoute une vérification à chacun des méthodes statiques et constructeurs d'instances du type afin de garantir que le constructeur statique a été appelé précédemment. L’initialisation statique est déclenchée lorsqu’un membre statique est accessible ou lorsqu’une instance du type est créée. Toutefois, l’initialisation statique n’est pas déclenchée si vous déclarez une variable du type, mais ne l’utilisez pas, ce qui peut être important si l’initialisation modifie l’état global.  
+ Lorsqu’un type déclare un constructeur statique explicite, le compilateur juste-à-temps (JIT, Just-In-Time) ajoute une vérification à chacun des méthodes statiques et constructeurs d’instances du type afin de garantir que le constructeur statique a été appelé précédemment. L’initialisation statique est déclenchée lorsqu’un membre statique est accessible ou lorsqu’une instance du type est créée. Toutefois, l’initialisation statique n’est pas déclenchée si vous déclarez une variable du type, mais ne l’utilisez pas, ce qui peut être important si l’initialisation modifie l’état global.  
   
  Lorsque toutes les données statiques sont initialisées inline et un constructeur statique explicite n’est pas déclaré, les compilateurs de langage intermédiaire MSIL Microsoft ajoutent la `beforefieldinit` indicateur et un constructeur statique implicit qui initialise les données statiques, pour le type MSIL définition. Lorsque le compilateur JIT rencontre le `beforefieldinit` indicateur, la plupart du temps, les vérifications des constructeurs statiques ne sont pas ajoutées. L’initialisation statique est garantie à un moment donné avant d’accéder à tous les champs statiques, mais pas avant l’appel d’un constructeur d’instance ou de méthode statique. Notez que l’initialisation statique peut se produire à tout moment après la déclaration d’une variable du type.  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
 -   Les effets de l’état global sont accessibles sans accéder à tous les champs statiques de type.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Pour corriger une violation de cette règle, initialisez toutes les données statiques lorsqu'elles sont déclarées et supprimez le constructeur statique.  
+ Pour corriger une violation de cette règle, initialisez toutes les données statiques lorsqu’elles sont déclarées et supprimez le constructeur statique.  
   
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
  Il est possible de supprimer un avertissement de cette règle si les performances ne sont pas un problème ; ou si les modifications de l’état global provoqués par l’initialisation statique sont coûteuses ou doivent être garantie avant l’appel d’une méthode statique du type ou une instance du type est créée.  

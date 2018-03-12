@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,15 +14,17 @@ helpviewer_keywords:
 - Web applications, accessibility
 - accessibility, Web applications
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a5469b3e6f09df75561cf85ba56c96721494aabf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 6df23292ef3ae5016d2ddd48f0ced93e3a577a2f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressources pour la conception d'applications accessibles
 Utilisez les liens suivants pour trouver des informations sur les technologies qui prennent en charge un design axé sur l’accessibilité, ainsi que des conseils et des exemples en matière de développement d’applications Windows et de sites web accessibles. Vous trouverez des informations en ligne d’ordre général sur l’accessibilité à l’adresse [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  
@@ -32,7 +35,7 @@ Utilisez les liens suivants pour trouver des informations sur les technologies q
   
 -   **Technologies Microsoft .NET Speech** Le SDK Microsoft .NET Speech rassemble des contrôles Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)], un complément vocal pour Microsoft Internet Explorer, des exemples d’applications et de la documentation permettant aux développeurs web de créer, déboguer et déployer des applications [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] prenant en charge la reconnaissance vocale. Les outils sont intégrés de façon transparente à Microsoft Visual Studio, ce qui permet aux développeurs de tirer parti d'un environnement de développement familier. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).  
   
--   **Présentation de SAMI 1.0** La technologie SAMI (Synchronized Accessible Media Interchange) permet aux développeurs de créer une légende pour le contenu audio des applications multimédias sur PC. Pour plus d’informations, consultez [http://msdn.microsoft.com/en-us/library/ms971327.aspx](http://msdn.microsoft.com/library/ms971327.aspx).  
+-   **Présentation de SAMI 1.0** La technologie SAMI (Synchronized Accessible Media Interchange) permet aux développeurs de créer une légende pour le contenu audio des applications multimédias sur PC. Pour plus d'informations, consultez [Comprendre SAMI 1.0](http://msdn.microsoft.com/library/ms971327.aspx).  
   
 ## <a name="windows-applications"></a>Applications Windows  
   
@@ -44,13 +47,9 @@ Utilisez les liens suivants pour trouver des informations sur les technologies q
   
 ## <a name="web-sites"></a>Sites web  
   
--   [Procédure pas à pas : directives d’accessibilité pour l’utilisation de contrôles Image, Menu et AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Cette rubrique fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page web, ainsi que des conseils de design concernant l’accessibilité pour le web.  
+-   [Procédure pas à pas : directives d’accessibilité pour l’utilisation de contrôles Image, Menu et AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Cette rubrique fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page web, ainsi que des conseils de design concernant l’accessibilité pour le web.
   
--   **Amélioration de l’accessibilité des pages web** Cet article technique répertorie les éléments HTML 3.2 accessibles, ainsi que les éléments qui peuvent être rendus accessibles dans le cadre du développement de sites web. Pour plus d’informations, consultez [http://msdn2.microsoft.com/en-us/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
-  
--   **Création de pages web accessibles en DHTML** Cet article technique répertorie les éléments HTML 4.0 accessibles, ainsi que les conseils de design concernant l’accessibilité pour le web. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).  
-  
--   **Texte de remplacement pour les pages web inaccessibles** Cet article technique décrit l’utilisation des langages XML et XSLT pour fournir plusieurs affichages de la même page web, par exemple pour produire des versions au format texte uniquement. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx).  
+-   **Création de pages web accessibles en DHTML** Cet article technique répertorie les éléments HTML 4.0 accessibles, ainsi que les conseils de design concernant l’accessibilité pour le web. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
   
 ### <a name="third-party-resources"></a>Ressources tierces  
   

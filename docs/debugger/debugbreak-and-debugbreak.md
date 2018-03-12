@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: DebugBreak
+f1_keywords:
+- DebugBreak
 dev_langs:
 - CSharp
 - VB
@@ -18,15 +20,17 @@ helpviewer_keywords:
 - DebugBreak function
 - breakpoints, DebugBreak function
 ms.assetid: 9787c795-df94-4f48-bc8d-3bf899b67421
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1763c117ce9cdb815f12213830079136169b2c35
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 83128e4d5bd274013db1e7195e8182d021c257d5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak et __debugbreak
 Vous pouvez appeler la fonction DebugBreak Win32 ou le [__debugbreak](/cpp/intrinsics/debugbreak) intrinsèque à tout moment dans votre code. `DebugBreak` et `__debugbreak` reviennent à définir un point d'arrêt à cet emplacement.  

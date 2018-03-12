@@ -4,22 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6809ffe0c53448d7d00fec1169b90fd87274367e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: 8a6c2ba508afdd209713c8c1a514377e8e322868
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="cross-platform-mobile-development-examples"></a>Cross-Platform Mobile Development Examples
+# <a name="cross-platform-mobile-development-examples"></a>Exemples de développement mobile multiplateforme
 Plusieurs des modèles installés par Développement multiplateforme en Visual C++ pour appareils mobiles génèrent des exemples complets que vous pouvez utiliser pour en savoir plus. En outre, le Centre de développement Windows présente plusieurs exemples d’applications que vous pouvez télécharger et essayer dans Visual Studio.  
   
 -   [Exemple d’application Android hello-jni](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  
@@ -32,7 +35,7 @@ Plusieurs des modèles installés par Développement multiplateforme en Visual C
   
 -   [Exemple d’application Android Bitmap Plasma](https://code.msdn.microsoft.com/Bitmap-Plasma-Android-77ae296a)  
   
-     Cet exemple fait partie de l’application Bitmap Plasma du Kit de développement natif (NDK) Android. L’exemple illustre une application Android OpenGL ES 2.0 JNI (Java Native Interface) de bout en bout. Il illustre la manipulation directe des mémoires tampons de pixels de bitmaps Android pour générer un effet plasma.  
+     Cet exemple fait partie de l’application Bitmap Plasma du Kit de développement natif (NDK) Android. L’exemple illustre une application Android OpenGL ES 2.0 JNI (Java Native Interface) de bout en bout. Il illustre la manipulation directe des mémoires tampons de pixels de bitmaps Android pour générer un effet plasma.  
   
 -   [Exemple de bibliothèque Android TwoLibs](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)  
   

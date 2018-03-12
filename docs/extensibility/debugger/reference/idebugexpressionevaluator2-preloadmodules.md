@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eaceac744b06a44e3ef73de6cc9eda7255e59cb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2721d47950f1e04172c97b12d01db08b3ad636cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 Précharge les modules désignées par le fournisseur de symbole spécifiés.  
@@ -45,7 +46,7 @@ int PreloadModules (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode facultatif est utilisée lorsque vous effectuez un attachement de processus d’hébergement. Il permet la EE 'préchauffage' dans le cadre de l’attachement.  
   
 ## <a name="example"></a>Exemple  

@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4561c8955f0ce4b1b5b50be8e31b5ff2ef5751d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2f7697217d59d430e2b4661548b7f922f8fd8c95
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 Déploie une solution après une génération ou une regénération. S’applique aux projets de code managé uniquement.  
@@ -45,7 +46,7 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
  /projectconfig `ProjConfigName`  
  Facultatif. Nom d’une configuration de génération de projet à utiliser lors de la génération du `/project` nommé.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le projet spécifié doit être un projet de déploiement. Si ce n’est pas le cas, quand le projet généré est passé en vue de son déploiement, une erreur se produit et le déploiement échoue.  
   
  Placez entre guillemets doubles les chaînes contenant des espaces.  

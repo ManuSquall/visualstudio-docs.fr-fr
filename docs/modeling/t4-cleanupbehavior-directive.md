@@ -4,18 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 9e5a211f-a3bf-4229-bff0-7d2e45b71c64
-caps.latest.revision: "2"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: f60151ba4563c07cd9f6f6619982d8e6a8657ead
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7df9fb0c4d567e6af4a0ac1ea3d8ab4832ffe5a7
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="t4-cleanupbehavior-directive"></a>Directive CleanUpBehavior T4
 Pour supprimer l'appDomain après avoir traité un modèle de texte, insérez la ligne suivante :  

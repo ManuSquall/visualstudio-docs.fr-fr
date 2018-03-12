@@ -12,16 +12,17 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f67fd72d6e7a74d0af462ef65e0ddd535474188c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c5faa495aac0538b017e341a31a2546f9a528716
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Touches de modification de la planche graphique dans Blend
 Certains raccourcis clavier ne sont pas associés à des éléments de menu et il est donc impossible d'utiliser l'interface utilisateur [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] pour les découvrir. Le tableau suivant répertorie les raccourcis qui modifient une action, par exemple le redimensionnement d’un objet.  
   
-|Pour|Faites cela|  
+|Pour|Procédez comme suit|  
 |-----------------------|-------------|  
 |Sélectionner temporairement l’outil **Sélection** tandis qu’un autre outil reste sélectionné (cela réduit le nombre de clics à effectuer sur un élément du panneau **Outils**, en faisant des allées et venues entre les outils **Sélection** et les autres)|Maintenez la touche Ctrl enfoncée.|  
 |Déplacer les objets sélectionnés alors que l’outil **Sélection** est sélectionné|Appuyez sur les touches de direction.|  
@@ -32,7 +33,7 @@ Certains raccourcis clavier ne sont pas associés à des éléments de menu et i
 |Déplacer la planche graphique vers la gauche et la droite|Maintenez la touche Maj enfoncée et faites tourner la roulette de la souris.|  
 |Déplacer la planche graphique vers le haut et le bas|Maintenez la touche Ctrl enfoncée et faites tourner la roulette de la souris.|  
 |Limiter les proportions des objets dessinés ou transformés|Maintenez la touche Maj enfoncée.|  
-|Faire pivoter un objet par incréments de 15 degrés|Maintenez la touche Maj enfoncée.|  
+|Faire pivoter un objet par incréments de 15 degrés|Maintenez la touche MAJ enfoncée.|  
 |Dupliquer un objet|Maintenez la touche ALT enfoncée et faites glisser l’objet.|  
 |Rendre à nouveau parent un objet|Faites glisser l’objet sur un panneau de disposition et appuyez sur la touche Alt avant de relâcher le bouton de la souris.|  
 |Sélectionner plusieurs objets|Maintenez la touche Ctrl enfoncée tout en sélectionnant chaque objet.|  

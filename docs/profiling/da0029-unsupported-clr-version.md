@@ -19,17 +19,18 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfc7d33396825263a5fd846c62426fa67509e0da
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e11b053b867679f65052af5dea93799e4b356892
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029 : version CLR non prise en charge
 |||  
 |-|-|  
 |ID de règle|DA0029|  
-|Catégorie|Utilisation des Outils de profilage|  
+|Category|Utilisation des outils de profilage|  
 |Méthode de profilage|Profilage à partir de la ligne de commande|  
 |Message|Une version CLR non prise en charge a été détectée lors de la collection. Les symboles managés peuvent ne pas être résolus correctement.|  
 |Type de règle|Information.|  
@@ -41,4 +42,4 @@ ms.lasthandoff: 10/31/2017
  Cet avertissement se produit car les Outils de profilage ne pourront pas résoudre les symboles du code managé qui s’exécute dans l’application. Les Outils de profilage ne peuvent pas résoudre les symboles du code managé pour les applications qui exécutent le [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Aucun
+ Aucun.

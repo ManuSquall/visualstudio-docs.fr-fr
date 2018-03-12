@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: Thread Search
+ms.topic: reference
+helpviewer_keywords:
+- Thread Search
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9887fef89ea78665a64eead02f4d7ea11a28d890
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 1f6cf674581b4e4368aab87e7ddd6c64096efe5e
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="thread-search-dialog-box"></a>Boîte de dialogue Recherche d'un thread
 Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un thread spécifique dans [vue Threads](../debugger/threads-view.md). Pour afficher cette boîte de dialogue, déplacez le focus vers un **Threads** fenêtre d’affichage. Puis choisissez **rechercher le Thread** à partir de la **recherche** menu.  

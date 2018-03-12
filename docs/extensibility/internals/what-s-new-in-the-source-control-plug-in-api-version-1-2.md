@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce5ecc4cead8ba8c5673f5ba15f8dda78a90e6be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7f9272f034e8f8679fe832ecd628e64ab64af515
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Quel &#39; s Source contrôle plug-in API version 1.2
 Cette section présente les fonctionnalités de contrôle de code source avancées dans l’API de plug-in de contrôle de Source de version 1.2. La liste suivante répertorie les nouvelles fonctionnalités dans la version 1.2 :  

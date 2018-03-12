@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaStackWalkHelper::searchForReturnAddressStart method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaStackWalkHelper::searchForReturnAddressStart method
 ms.assetid: 0a33142e-5d31-44ea-874a-a2e94d95cbd2
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d949a10e437a3f5b43a85ab9e1a5bf048438c59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 1840cb5160f5190a9ec4eceee23fe9a268448d7f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddressstart"></a>IDiaStackWalkHelper::searchForReturnAddressStart
 Recherche dans le frame de pile spécifié pour une adresse d’expéditeur à ou près de l’adresse de la pile spécifiée.  

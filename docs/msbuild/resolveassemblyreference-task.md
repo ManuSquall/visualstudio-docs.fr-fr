@@ -4,13 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveAssemblyReference
 - MSBuild.ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects
 - MSBuild.ResolveAssemblyReference.FoundConflict
+- MSBuild.ResolveAssemblyRedirects.SuggestedRedirects
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +21,17 @@ helpviewer_keywords:
 - ResolveAssemblyReference task [MSBuild]
 - MSBuild, ResolveAssemblyReference task
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
-caps.latest.revision: "29"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 094e3968b527261125753002d9b6a31c7bd5d244
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 91585ea5e72bc2ceebf07d02c2398454f775b5b7
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference, tâche
 Détermine tous les assemblys qui dépendent des assemblys spécifiés. Cela comprend les dépendances de deuxième et `n`ième ordres.  
@@ -62,7 +65,7 @@ Détermine tous les assemblys qui dépendent des assemblys spécifiés. Cela com
 |`InstalledAssemblyTables`|Paramètre `String` facultatif.<br /><br /> Contient une liste de fichiers XML qui spécifient les assemblys censés être installés sur l’ordinateur cible.<br /><br /> Quand `InstalledAssemblyTables` est défini, les versions antérieures des assemblys de la liste sont fusionnées dans les versions plus récentes mentionnées dans le fichier XML. De plus, les assemblys qui ont le paramètre InGAC=’true’ sont considérés comme des composants requis et ont la valeur CopyLocal=’false’, sauf en cas de substitution explicite.<br /><br /> En guise d’option, les éléments de cette liste peuvent spécifier les métadonnées “FrameworkDirectory” pour associer un `InstalledAssemblyTable` à un répertoire du Framework particulier.  Toutefois, ce paramètre est ignoré, sauf si la valeur Redist Name commence par<br /><br /> “Microsoft-Windows-CLRCoreComp”.<br /><br /> S’il n’y a qu’un seul élément `TargetFrameworkDirectories` , tous les éléments de cette liste dépourvus des métadonnées “FrameworkDirectory” sont traités comme s’ils avaient la valeur unique qui est transmise<br /><br /> à `TargetFrameworkDirectories`.|  
 |`LatestTargetFrameworkDirectories`|Paramètre `String[]` facultatif.<br /><br /> Spécifie une liste de répertoires qui contiennent les listes de composants redistribuables pour le Framework le plus récent qui peut être ciblé sur l’ordinateur. Si ce paramètre n’est pas configuré, le Framework le plus récent installé sur l’ordinateur pour un identificateur de Framework cible donné est utilisé.|  
 |`ProfileName`|Paramètre `String` facultatif.<br /><br /> -   Spécifie le nom du profil de framework à cibler. Par exemple Client, Web ou Réseau.|  
-|`RelatedFiles`|Paramètre de sortie en lecture seule <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient des fichiers associés, tels que des fichiers .xml et .pdb ayant le même nom de base comme référence.<br /><br /> Les fichiers répertoriés dans ce paramètre peuvent éventuellement contenir les métadonnées d’éléments suivantes :<br /><br /> -   `Primary`: valeur `Boolean` . Si `true`, l’élément de fichier a été passé dans le tableau à l’aide du paramètre `Assemblies` facultatif. La valeur par défaut est `false`.<br />-   `CopyLocal`: valeur `Boolean` . Indique si la référence donnée doit être copiée dans le répertoire de sortie.|  
+|`RelatedFiles`|Paramètre de sortie en lecture seule <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient des fichiers associés, tels que des fichiers .xml et .pdb ayant le même nom de base comme référence.<br /><br /> Les fichiers répertoriés dans ce paramètre peuvent éventuellement contenir les métadonnées d’éléments suivantes :<br /><br /> -   `Primary`: valeur `Boolean` . Si `true`, l’élément de fichier a été passé dans le tableau à l’aide du paramètre `Assemblies` facultatif. La valeur par défaut est `false`.<br />-   `CopyLocal`: valeur `Boolean` . Indique si la référence donnée doit être copiée dans le répertoire de sortie.|  
 |`ResolvedDependencyFiles`|Paramètre de sortie en lecture seule <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les chemins de *n*ième ordre aux dépendances. Ce paramètre n’inclut pas les références principales de premier ordre, qui sont contenus dans le paramètre `ResolvedFiles` .<br /><br /> Les éléments de ce paramètre contiennent éventuellement les métadonnées d’éléments suivantes :<br /><br /> -   `CopyLocal`: valeur `Boolean` . Indique si la référence donnée doit être copiée dans le répertoire de sortie.<br />-   `FusionName`: valeur `String` . Spécifie le nom de cette dépendance.<br />-   `ResolvedFrom`: valeur `String` . Spécifie le chemin de recherche littéral à partir duquel ce fichier a été résolu.|  
 |`ResolvedFiles`|Paramètre de sortie en lecture seule <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient une liste de toutes les références principales résolues en chemins complets.<br /><br /> Les éléments de ce paramètre contiennent éventuellement les métadonnées d’éléments suivantes :<br /><br /> -   `CopyLocal`: valeur `Boolean` . Indique si la référence donnée doit être copiée dans le répertoire de sortie.<br />-   `FusionName`: valeur `String` . Spécifie le nom de cette dépendance.<br />-   `ResolvedFrom`: valeur `String` . Spécifie le chemin de recherche littéral à partir duquel ce fichier a été résolu.|  
 |`SatelliteFiles`|Paramètre de sortie en lecture seule <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les fichiers satellites trouvés. Il s’agit de CopyLocal=true si la référence ou la dépendance qui a provoqué l’existence de cet élément est CopyLocal=true.<br /><br /> Les éléments de ce paramètre contiennent éventuellement les métadonnées d’éléments suivantes :<br /><br /> -   `CopyLocal`: valeur `Boolean` . Indique si la référence donnée doit être copiée dans le répertoire de sortie. Cette valeur est `true` si la référence ou la dépendance qui a provoqué l’existence de cet élément est a une valeur `CopyLocal` égale à `true`.<br />-   `DestinationSubDirectory`: valeur `String` . Spécifie le répertoire de destination relatif dans lequel copier cet élément.|  
@@ -103,9 +106,9 @@ Détermine tous les assemblys qui dépendent des assemblys spécifiés. Cela com
   
 -   `ResolveAssemblyReference.UnificationByFrameworkRetarget`  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
+ [Tâches](../msbuild/msbuild-tasks.md)   
  [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)

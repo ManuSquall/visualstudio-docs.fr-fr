@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: SccProperties
-helpviewer_keywords: SccProperties function
+f1_keywords:
+- SccProperties
+helpviewer_keywords:
+- SccProperties function
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aebe2ee8e0122db6777a341a96731398bf25b8ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: efaa2877743fcf69a61a79633108d203442489e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccproperties-function"></a>SccProperties (fonction)
 Cette fonction affiche les propriétés de contrôle de source d’un fichier ou un projet.  
@@ -46,7 +51,7 @@ SCCRTN SccProperties (
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |SCC_OK|Les propriétés ont été correctement affichées.|  
 |SCC_I_RELOADFILE|Le système de contrôle de version a modifié les propriétés du fichier, afin de l’IDE doit recharger ce fichier.|  
@@ -55,7 +60,7 @@ SCCRTN SccProperties (
 |SCC_E_FILENOTCONTROLLED|Le fichier spécifié ou le projet n’est pas sous contrôle de code source.|  
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Une erreur inconnue ou générale s’est produite.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le plug-in de contrôle de code source affiche les propriétés dans sa propre boîte de dialogue.  
   
  Les propriétés sont définies par le plug-in de contrôle de code source et peuvent différer de plug-in pour le plug-in. Si le plug-in lui permet de modifier les propriétés du contrôle de code source d’un fichier, elle doit retourner `SCC_I_RELOAD` pour signaler l’IDE ce fichier ou le projet doit être rechargé.  

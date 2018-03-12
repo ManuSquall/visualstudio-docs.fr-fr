@@ -4,26 +4,29 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.SharePointTools.RAD.CustomAssembly
+f1_keywords:
+- VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
 - VB
 - CSharp
 - VB
 - CSharp
-helpviewer_keywords: SharePoint development in Visual Studio, packages
-ms.assetid: d9d1e8db-9df2-4e07-ac8d-59ef05d24090
-caps.latest.revision: "22"
-author: gewarren
-ms.author: gewarren
+helpviewer_keywords:
+- SharePoint development in Visual Studio, packages
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 7b7859738ac1fe70bdca4cdca5d2dff1220a22b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- office
+ms.openlocfilehash: 13ea5388a7b4ce2d1a045dec6339dc59e5c68393
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Comment : ajouter et supprimer des assemblys supplémentaires
   Si un package SharePoint dépend des autres assemblys pour des fonctionnalités ou de données, vous pouvez ajouter les assemblys à votre package de solution (.wsp). De cette manière, le serveur SharePoint permet de s’assurer que les assemblys personnalisés sont installés avec un package.  

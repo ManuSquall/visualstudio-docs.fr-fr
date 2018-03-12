@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Lines view
+helpviewer_keywords:
+- Lines view
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88b8169f5e0e53a76ff2b1bee61dc80f41a9f595
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 1465b9d8a14d5889bf856caa52b807ee2954cd0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lines-view---contention-data"></a>Lignes, vue - Données de conflit
 La vue Lignes des données de conflit répertorie les données de performance pour les instructions qui étaient en cours d’exécution au moment de la collecte des échantillons dans le cadre de l’exécution du profilage. Dans un fichier source, une instruction peut couvrir plusieurs lignes d'un fichier source, et une ligne unique peut inclure plusieurs instructions.  
@@ -43,9 +47,9 @@ La vue Lignes des données de conflit répertorie les données de performance po
 |Colonne|Description|  
 |------------|-----------------|  
 |**Temps bloqué exclusif**|Durée pendant laquelle cette instruction n’a pas pu exécuter le code qu’elle contient en raison d’un événement de conflit. Le temps bloqué dans les fonctions appelées par l’instruction n’est pas inclus.|  
-|**% de temps bloqué exclusif**|Pourcentage du temps bloqué total dans le processus qui était un temps bloqué exclusif de l’instruction.|  
+|**% de temps bloqué exclusif**|Pourcentage du temps bloqué total dans le processus qui était un temps bloqué exclusif de l’instruction.|  
 |**Conflits exclusifs**|Nombre de fois où cette instruction n’a pas pu exécuter le code qu’elle contient en raison d’un événement de conflit. Les événements de conflit dans les fonctions que l’instruction a appelées ne sont pas inclus.|  
-|**% de conflits exclusifs**|Pourcentage de tous les événements de conflit dans le processus qui étaient des conflits exclusifs de cette instruction.|  
+|**% de conflits exclusifs**|Pourcentage de tous les événements de conflit dans le processus qui étaient des conflits exclusifs de cette instruction.|  
 |**Adresse de la fonction**|Adresse de la fonction qui contient cette instruction.|  
 |**Nom de la fonction**|Nom complet de la fonction qui contient cette instruction.|  
 |**Temps bloqué inclusif**|Temps bloqué dans cette instruction et fonctions appelées dans cette dernière.|  
@@ -68,4 +72,4 @@ La vue Lignes des données de conflit répertorie les données de performance po
  [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
  [Lignes, vue](../profiling/lines-view.md)   
  [Lignes, vue - Échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)   
- [Vue Lignes](../profiling/lines-view-sampling-data.md)
+ [Lignes, vue](../profiling/lines-view-sampling-data.md)

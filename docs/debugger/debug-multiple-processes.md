@@ -23,11 +23,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0696a9e45727c5d62f275d0574d5ec54e378038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7d0aaa97009662000bf1376c1684d9ca41a7133a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-multiple-processes"></a>Déboguer plusieurs processus
 Voici comment démarrer le processus de débogage, basculer entre processus, arrêter et poursuivre l’exécution, parcourir la source, arrêtez le débogage et le terminer ou détacher des processus.  
@@ -67,7 +68,7 @@ Voici comment démarrer le processus de débogage, basculer entre processus, arr
 >   
 >  -   Effectuez un attachement au processus enfant après son démarrage.  
 >   
->      ou  
+>      - ou -  
 > -   Configurez Windows pour démarrer automatiquement le processus enfant dans une nouvelle instance du débogueur.  
   
 ###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a>Démarrer le débogage de plusieurs processus dans une solution Visual Studio  

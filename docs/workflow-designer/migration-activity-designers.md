@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: bad24eb3693988c8d4f51f347a8473856dd1d224
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6310971ee43067e23a1d893924ecba4e717f5553
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="migration-activity-designers"></a>Concepteurs d'activités de migration
 Les concepteurs d'activités de migration permettent d'appeler des activités de workflow 3.0/3.5 à partir d'un workflow ciblant le [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)]. Les rubriques contenues de cette section fournissent des conseils sur la façon d'utiliser les concepteurs d'activités [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  

@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 074cf7111108b7ae4f3b6866be19f0a12d3c429b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ab9f8be1d202f21147afaf9f4f52a3c90c403ed8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="1x1-viewport-size-variant"></a>Variante de taille Viewport 1x1
 Réduit les dimensions de la fenêtre d'affichage sur toutes les cibles de rendu à 1x1 pixels.  
@@ -26,7 +27,7 @@ Réduit les dimensions de la fenêtre d'affichage sur toutes les cibles de rendu
   
  Si cette variante donne lieu à un net gain de performances, cela peut indiquer que votre application consomme un taux de remplissage trop important. Cela peut indiquer que la résolution que vous avez choisie est trop élevé pour la plateforme cible ou que votre application passe beaucoup de temps à ombrer des pixels qui sont ensuite remplacés (superposition). Ce résultat suggère que la diminution de la taille de votre tampon de trame ou la réduction du nombre de superpositions aura pour effet d'améliorer les performances de votre application.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les dimensions de la fenêtre d'affichage sont réinitialisées à 1x1 pixels après chaque appel à `ID3D11DeviceContext::OMSetRenderTargets` ou `ID3D11DeviceContext::RSSetViewports`.  
   
 ## <a name="example"></a>Exemple  

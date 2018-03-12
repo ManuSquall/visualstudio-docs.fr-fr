@@ -13,16 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - primary interop assemblies [Office development in Visual Studio], installing
 - Office primary interop assemblies, installing
-ms.assetid: 92948fcc-76c6-4b08-ba63-cab59dd60eb1
-caps.latest.revision: "61"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 14ce408395cc992e83cb26aecbc2e4ab428428ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e5bdd299c9d8d11517234fe4fd57ea0be617ab65
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Comment : installer les assemblys PIA (Primary Interop Assembly) d'Office
   Installez les assemblys PIA (Primary Interop Assembly) Microsoft Office lorsque vous installez Office.  

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-modeling
 ms.topic: get-started-article
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
@@ -30,16 +29,16 @@ helpviewer_keywords:
 - application, architecture
 - Visual Studio ALM, visualizing code
 - applications, designing
-ms.assetid: c9f04cfa-72bd-419d-a952-616eed01472e
-caps.latest.revision: "127"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
-ms.openlocfilehash: 57d04543cf604ced1b94632c2f2c3bc566267f85
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.openlocfilehash: d1bcac24b0d0a5b14cbfbc082d8272ea846a1d54
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analyser et modéliser votre architecture
 Assurez-vous que votre application répond aux impératifs de l’architecture en utilisant Visual Studio architecture et modélisation des outils permettant de concevoir et modéliser votre application. 

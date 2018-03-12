@@ -17,13 +17,14 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ad433ea0b1627d3e3ddcd80640f21a519d0264de
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 877f1e556498a31ec7ddfac12b1907d159c713cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="how-to-manage-editor-windows"></a>Guide pratique pour gérer les fenêtres de l’éditeur
+# <a name="how-to-manage-editor-windows"></a>Comment : gérer les fenêtres de l'Éditeur
 Vous avez la possibilité de travailler sur le code à plusieurs emplacements à la fois. Pour cela, vous pouvez fractionner une fenêtre de l’éditeur ou ouvrir plusieurs instances de fenêtres de l’éditeur.  
   
 > [!NOTE]

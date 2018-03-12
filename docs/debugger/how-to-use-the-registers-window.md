@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.registers
+f1_keywords:
+- vs.debug.registers
 dev_langs:
 - CSharp
 - VB
@@ -22,15 +24,17 @@ helpviewer_keywords:
 - debugging [Visual Studio], Registers window
 - Registers window
 ms.assetid: 2918ffa2-562f-40d6-9053-ef321bbeb767
-caps.latest.revision: "37"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cff6db85b29b4db6006d37fd21e2d9b109b099e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 7aa89b6e8d36c3eb47168c8672fb7eea1e3507db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Afficher les valeurs de Registre et utiliser la fenêtre registres dans le débogueur Visual Studio
 La fenêtre Registres est disponible uniquement si le débogage au niveau des adresses est activé dans le **Options** boîte de dialogue, **débogage** nœud, **général** catégorie.  
@@ -54,6 +58,6 @@ La fenêtre Registres est disponible uniquement si le débogage au niveau des ad
     >  Les informations de Registre ne sont pas disponibles aux applications de script ou SQL.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage principes de base : Fenêtre Registres](../debugger/debugging-basics-registers-window.md)   
+ [Concepts de base du débogage : fenêtre Registres](../debugger/debugging-basics-registers-window.md)   
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
  [Concepts de base du débogage : fenêtre Registres](../debugger/debugging-basics-registers-window.md)

@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: source control [Visual Studio SDK], guidelines for projects and editors
+helpviewer_keywords:
+- source control [Visual Studio SDK], guidelines for projects and editors
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ed84b4b1bf6c974f22682dcb8d899208c653ebc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 308de182e604f06fff9ad25cb65428b2d48ff257
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Instructions de contrôle sources supplémentaires pour les projets et les éditeurs
 Il existe un certain nombre d’instructions qui les éditeurs et les projets doivent respecter pour prendre en charge le contrôle de code source.  
@@ -25,7 +29,7 @@ Il existe un certain nombre d’instructions qui les éditeurs et les projets do
 ## <a name="guidelines"></a>Recommandations  
  Votre projet ou l’éditeur doit également les étapes ci-après pour prendre en charge le contrôle de code source :  
   
-|Zone|Projet|Éditeur|Détails|  
+|Domaine|Projet|Éditeur|Détails|  
 |----------|-------------|------------|-------------|  
 |Copies privées de fichiers|X||L’environnement prend en charge les copies privées de fichiers. Autrement dit, chaque personne inscrite dans le projet a sa propre copie privée des fichiers dans le projet.|  
 |Persistance de l’ANSI/Unicode|X|X|Si vous écrivez le code de persistance, conserver les fichiers dans le format ANSI, car la plupart des programmes de contrôle de code source ne prennent pas en charge Unicode.|  

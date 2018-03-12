@@ -25,11 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0f328cbaac03680885bdbda97dff7bc9ac3cf2cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b5cc63d5a83c9f1400dd183982fa68864d35fdbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-data-in-datasets"></a>Valider des données dans les jeux de données
 Validation des données est le processus consistant à confirmer que les valeurs entrées dans des objets de données sont conformes aux contraintes de schéma d’un jeu de données. Le processus de validation vérifie également que ces valeurs sont les suivantes : les règles qui ont été établies pour votre application. Il est conseillé de valider les données avant d’envoyer des mises à jour à la base de données sous-jacente. Cela réduit les erreurs, ainsi que le nombre potentiel d’allers-retours entre une application et la base de données.  
@@ -67,7 +68,7 @@ Si votre application utilise un dataset typé, vous pouvez créer des gestionnai
   
 ## <a name="data-update-events"></a>Événements de mise à jour de données  
   
-|Événement|Description|  
+|événement|Description|  
 |-----------|-----------------|  
 |<xref:System.Data.DataTable.ColumnChanging>|La valeur dans une colonne est en cours de modification. L’événement passe la ligne et colonne, ainsi que la nouvelle valeur proposée.|  
 |<xref:System.Data.DataTable.ColumnChanged>|La valeur dans une colonne a été modifiée. L’événement passe la ligne et colonne, ainsi que la valeur proposée.|  

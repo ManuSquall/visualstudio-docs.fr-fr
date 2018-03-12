@@ -12,16 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: eb4ca4445af3970828f4212c69c11d9d173d5650
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: f288d794040c533f2d00e95d628f7d04e55e96e4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Outils Entity Framework dans Visual Studio
-Entity Framework est une technologie de mappage relationnel objet qui permet aux développeurs .NET travailler avec des données relationnelles à l’aide des objets spécifiques au domaine. Elle élimine la nécessité pour la plupart du code d’accès aux données que les développeurs doivent généralement à écrire. Entity Framework est le mappage relationnel objet recommandé (ORM) technologie pour les nouvelles applications .NET de modélisation.  
+Entity Framework est une technologie de mappage relationnel objet qui permet aux développeurs .NET travailler avec des données relationnelles à l’aide des objets spécifiques au domaine. Du coup, ils n’ont plus à écrire une grande partie du code d’accès aux données qu’ils doivent généralement écrire. Entity Framework est le mappage relationnel objet recommandé (ORM) technologie pour les nouvelles applications .NET de modélisation.  
   
-Les outils Entity Framework sont conçues pour vous aider à créer des applications Entity Framework (EF). La documentation complète pour Entity Framework est ici : [EF Core et EF 6](https://docs.microsoft.com/ef/).  
+Les outils Entity Framework sont conçues pour vous aider à créer des applications Entity Framework (EF). La documentation complète pour Entity Framework est ici : [EF Core et EF 6](/ef/).  
   
 Avec les outils Entity Framework, vous pouvez créer un *modèle conceptuel* à partir d’un fichier de base de données sous forme graphique visualiser et modifier le modèle conceptuel. Vous pouvez également commencer par créer graphiquement un modèle conceptuel, puis générer une base de données prenant en charge ce modèle. Dans les deux cas, vous pouvez mettre à jour automatiquement votre modèle lorsque la base de données sous-jacente change et générer automatiquement le code de couche objet pour votre application. La génération de base de données et la génération de code de couche objet sont personnalisables.  
   

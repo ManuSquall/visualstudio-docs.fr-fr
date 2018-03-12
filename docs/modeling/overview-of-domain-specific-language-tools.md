@@ -4,19 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language
-ms.assetid: 50d93ea2-8c88-4522-853b-40ab194953db
-caps.latest.revision: "54"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: 20d4222f96958a730c563ff9bc84b2b5d0b08538
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- Domain-Specific Language
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 89ff0565bf33936f15c18c0964fc9fb2f64ab9b8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Vue d'ensemble des outils de langage spécifique à un domaine
 Outils de langage spécifique à un domaine (outils DSL), qui sont hébergés dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], laissez concevoir un langage spécifique à un domaine et de générer tout ce que les utilisateurs doivent disposer pour créer des modèles qui sont basées sur le langage.  
@@ -52,7 +53,7 @@ Outils de langage spécifique à un domaine (outils DSL), qui sont hébergés da
   
  L’Assistant crée un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution qui contient les projets suivants :  
   
--   DSL  
+-   Dsl  
   
      Le projet Dsl définit le langage spécifique à un domaine et ses outils de modification et de traitement.  
   
@@ -78,4 +79,4 @@ Outils de langage spécifique à un domaine (outils DSL), qui sont hébergés da
   
 ## <a name="see-also"></a>Voir aussi  
  [L’Instance expérimentale](../extensibility/the-experimental-instance.md)   
- [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

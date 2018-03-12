@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6ce0fccf3a957edfdf732ce3ea462bef26c5a0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles de composite pour Visual Studio
 Modèles composites combinent des éléments de conception et d’interaction dans des configurations distinctes. Les modèles composites plus importantes dans Visual Studio en matière de cohérence sont les suivantes :  
@@ -273,7 +274,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
   
 -   Disjoints  
   
--   Region  
+-   Région  
   
 #### <a name="scope"></a>Portée  
  Le composant essentiel de la sélection est de vous assurer que l’utilisateur connaît la fenêtre dans laquelle ils travaillent (activation) et où le focus est située (sélection). Visual Studio étend les fonctionnalités de gestion de fenêtre dans Windows, mais le schéma d’activation est identique : interaction avec une fenêtre place le focus dans la fenêtre. Visual Studio a deux indicateurs pour l’activation : un pour les fenêtres de document et un pour les fenêtres Outil.  
@@ -438,11 +439,11 @@ Modèles composites combinent des éléments de conception et d’interaction da
   
  Les sélections dans les listes peuvent être contiguës, disjoint, ou une région. Lorsque plusieurs sélections sont autorisées, contiguës et sélection disjointe doit toujours être pris en charge, lors de la prise en charge des sélections de région (zone) sont facultatif. Les sélections de région sont lancées en faisant glisser dans l’espace blanc du corps de la liste.  
   
-|Objet|Sélection|  
+|Object|Sélection|  
 |------------|---------------|  
 |Liste|Contiguës|Toujours pris en charge (plusieurs sélections sont autorisées).|  
 |Liste|Disjoints|Toujours pris en charge (plusieurs sélections sont autorisées).|  
-|Liste|Region|Prise en charge facultative. Lancé en faisant glisser la souris dans l’espace blanc du corps de la liste.|  
+|Liste|Région|Prise en charge facultative. Lancé en faisant glisser la souris dans l’espace blanc du corps de la liste.|  
   
  Cliquez une fois sur une liste pour sélectionner la ligne où le clic s’est produit. Si l’utilisateur de cliquer dans une cellule de liste qui prend en charge la modification sur place, la cellule est immédiatement activée pour la modification sur place. Sinon, la ligne entière est immédiatement sélectionnée et affiche une mise en surbrillance.  
   
@@ -479,7 +480,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
 ### <a name="overview"></a>Vue d'ensemble  
  Bien que chaque composant de logiciel dans Visual Studio est généralement responsable de son propre état et de persistance, Visual Studio enregistre automatiquement les paramètres dans certains cas, comme avec les positions et les tailles de fenêtre. Le tableau ci-dessous est une combinaison de paramètres enregistrés automatiquement et qui nécessitent un utilisateur explicite ou programmé l’action à entreprendre.  
   
-|Objet|Les éléments à enregistrer|Quand l’enregistrer|Emplacement d’enregistrement|  
+|Object|Les éléments à enregistrer|Quand l’enregistrer|Emplacement d’enregistrement|  
 |------------|------------------|------------------|-------------------|  
 |Objet sélectionnable (par exemple, une ligne de code)|Un point d’arrêt sur une ligne de code<br /><br /> Un raccourci de l’utilisateur associé à la ligne de code|Lorsque le projet est enregistré.|Le **options (.suo) de l’utilisateur** fichier pour le projet|  
 |Boîte de dialogue|L’emplacement de la boîte de dialogue, s’il avait été déplacé<br /><br /> La vue de l’utilisateur a utilisé dans la boîte de dialogue|Lorsque la boîte de dialogue se ferme<br /><br /> Lorsque la session de Visual Studio se termine|Dans la mémoire<br /><br /> Registre dans **HKEY_Current_User**|  

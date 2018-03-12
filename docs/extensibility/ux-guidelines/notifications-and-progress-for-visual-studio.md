@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d16ed0f58929a6559812261c3443b3561375205
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Les notifications et progression pour Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a>Systèmes de notification  
@@ -41,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="choosing-the-right-method"></a>Choisir la méthode de droite  
  Utilisez cette table pour vous aider à choisir la méthode appropriée pour informer l’utilisateur de votre message.  
   
-|Méthode|Utilisation|N’utilisez pas|  
+|Méthode|Utilisez|N’utilisez pas|  
 |------------|---------|----------------|  
 |[Boîtes de dialogue de message erreur modal](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|À utiliser lors de la réponse d’un utilisateur est requis avant de continuer.|N’utilisez pas lorsqu’il n’est pas nécessaire pour bloquer l’utilisateur et leur flux d’interruption. Évitez d’utiliser des boîtes de dialogue modales s’il est possible d’afficher un message dans un autre moyen moins importun.|  
 |[Barre d’état IDE](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|Utilisez lorsqu’il existe des informations textuelles ambiantes concernant l’état d’un processus.|N’utilisez pas seul. Préférable d’utiliser conjointement avec un autre mécanisme de commentaires.|  
@@ -152,7 +155,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="determinate-progress"></a>Progression déterminée  
   
-|Type de la progression|Quand et comment utiliser|Remarques|  
+|Type de la progression|Quand et comment utiliser|Notes|  
 |-------------------|-------------------------|-----------|  
 |Barre de progression (déterminée)|Durée d’attendue > 5 secondes.<br /><br /> Peut inclure une description textuelle des détails du processus.|**Ne pas** incorporer du texte dans l’animation.|  
 |Barre d'informations|Messagerie associé à l’interface utilisateur contextuelle. Consultez [barres d’informations](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).<br /><br /> Peut inclure une description textuelle des détails du processus.|**Ne pas** utiliser plusieurs barres d’informations lorsque vous avez besoin indiquer plusieurs processus. Utilisez les barres de progression empilées à la place.|  
@@ -162,7 +165,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="indeterminate-progress"></a>Progression indéterminée  
   
-|Type de la progression|Quand et comment utiliser|Remarques|  
+|Type de la progression|Quand et comment utiliser|Notes|  
 |-------------------|-------------------------|-----------|  
 |Barre de progression (indéterminé)|Durée d’attendue > 5 secondes.<br /><br /> Peut inclure une description textuelle des détails du processus.|**Ne pas** incorporer du texte dans l’animation.|  
 |Tirets (animées points horizontales)|Aller-retour au serveur.<br /><br /> Placée près du point de contexte entre le haut du conteneur parent.|**Ne pas** utiliser si ne pas apparenté à un conteneur entier.|  
@@ -237,8 +240,6 @@ ms.lasthandoff: 10/31/2017
   
  ![Barre d’informations à l’intérieur d’une fenêtre](../../extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "0903-06_InfoBarInWindow")  
   
- **Barre d’informations à l’intérieur de la fenêtre analyse du Code**  
-  
 ##### <a name="inline"></a>Inline  
  Indication de progression inline peut être représentée par les types de chargeur de progression. En général, l’indicateur de progression est couplé avec la messagerie, mais cela n’est pas obligatoire.  
   
@@ -286,12 +287,12 @@ ms.lasthandoff: 10/31/2017
   
  **Fenêtre de sortie avec l’état du processus en cours et attendez la messagerie**  
   
-##  <a name="BKMK_Infobars"></a>Barres d’informations  
+##  <a name="BKMK_Infobars"></a> Infobars  
   
 ### <a name="overview"></a>Vue d'ensemble  
  Barres d’informations accordez à l’utilisateur un indicateur proche de leur point d’attention et l’utilisation du contrôle de barre d’informations partagées garantit la cohérence de l’apparence visuelle et d’interaction.  
   
- ![Barre d’informations](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
+ ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
   
  **Barres d’informations dans Visual Studio**  
   
@@ -521,6 +522,6 @@ public interface IVsInfoBarUIEvents
 #### <a name="watermarks"></a>Filigranes  
  Parfois, un ensemble du contrôle ou la fenêtre est dans un état d’erreur. Dans ce cas, utilisez un filigrane pour indiquer l’erreur.  
   
- ![Filigrane](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
+ ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
   
  **Validation de champ de filigrane**

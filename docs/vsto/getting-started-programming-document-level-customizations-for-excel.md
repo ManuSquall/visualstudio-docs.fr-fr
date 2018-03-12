@@ -13,16 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Excel solutions in Visual Studio
 - Excel projects [Office development in Visual Studio], getting started
-ms.assetid: 8b73cf08-a173-4b49-b20f-2d2456dbe925
-caps.latest.revision: "41"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1755aa5c8e54bd1b84e0f88ea70b4163f3a87af6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fdf4afeb260d94b9e121628163c760244ac5f6e1
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="getting-started-programming-document-level-customizations-for-excel"></a>Mise en route de la programmation des personnalisations au niveau du document pour Excel
   Si vous êtes novice dans la création de personnalisations au niveau du document pour Microsoft Office Excel à l’aide de Visual Studio, voici ce que vous devez savoir.  
@@ -74,6 +73,6 @@ ms.lasthandoff: 10/31/2017
  [Procédure pas à pas : Création de votre première personnalisation au niveau du Document pour Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
  [Procédures pas à pas utilisant Excel](../vsto/walkthroughs-using-excel.md)   
  [Vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md)   
- [Écriture de code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

@@ -5,18 +5,20 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vs.debug.error.unsafe_func_eval_abort
-ms.assetid: 0a9f70ed-21ad-4a10-8535-b9c5885ad8f4
-caps.latest.revision: "6"
+ms.topic: reference
+f1_keywords:
+- vs.debug.error.unsafe_func_eval_abort
+ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 722abd91cb9f97aab67d0d9a5e77ff9e3a4f080d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 4d0d03efbb844c29195eca7c13303a850c168e0f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erreur : L’évaluation de la fonction &#39; function &#39; a expiré et nécessaires à l’abandon d’une manière non sécurisée
 
@@ -35,9 +37,9 @@ Il existe trois solutions possibles à ce problème.
 Le message d’erreur vous indique le nom de la fonction, que le débogueur a tenté d’appeler. Si vous pouvez modifier cette fonction, vous pouvez empêcher le débogueur de l’appel de l’accesseur Get de propriété ou de la méthode ToString. Essayez l’une des opérations suivantes :
  
 * Modifier la méthode en un autre type de code en dehors d’un accesseur Get de propriété ou méthode ToString et le problème disparaîtra.
-    ou
+    - ou -
 * (Pour ToString) Définir un attribut DebuggerDisplay sur le type et que le débogueur peut évaluer autre chose que ToString.
-    ou
+    - ou -
 * (Pour un accesseur Get de propriété) Placez le `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attribut sur la propriété. Cela peut être utile si vous avez une méthode qui doit rester une propriété pour des raisons de compatibilité d’API, mais il doit être réellement d’une méthode.
  
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Solution de #2 : Le code cible dans votre demander au débogueur d’abandon de l’évaluation

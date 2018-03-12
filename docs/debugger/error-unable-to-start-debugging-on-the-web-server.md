@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -26,16 +27,17 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5332933bf1452ca730b5c49716e10f49851fd749
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erreur : impossible de démarrer le débogage sur le serveur web
 
@@ -84,8 +86,10 @@ Le `Unable to start debugging on the Web server` message est générique. En rè
 
 ## <a name="server_error"></a>Le serveur distant a retourné une erreur
 
-Vérifiez le code d’erreur est renvoyé dans le message pour aider à identifier la cause du problème. Voici quelques codes d’erreur courants.
-- (403) interdit. Vérifiez que vous vous connectez pour le type de serveur correct et l’URL (dans **Propriétés > Web > serveurs** ou **Propriétés > débogage**, en fonction de votre type de projet). Vérifiez également que web.config du serveur inclut `debug=true` dans l’élément de compilation. Si ces paramètres sont déjà correctes, vérifiez que votre dossier d’Application Web dispose des autorisations de dossier approprié. Pour plus d’informations, consultez [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck).
+Vérifiez votre [fichier journal IIS](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) pour sous-codes d’erreur et des informations supplémentaires et cette IIS 7 [billet de blog](https://blogs.iis.net/tomkmvp/troubleshoot-a-403).
+
+Voici en outre, certains des codes d’erreur courants et quelques suggestions.
+- (403) interdit. Il existe plusieurs causes possibles de cette erreur, vérifiez votre fichier journal et les paramètres de sécurité IIS pour le site web. Assurez-vous que web.config du serveur inclut `debug=true` dans l’élément de compilation. Assurez-vous que votre dossier d’Application Web possède les autorisations appropriées et que votre configuration de Pool d’applications est correcte (un mot de passe a peut-être été modifié). Consultez [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck). Si ces paramètres sont déjà corrects et que vous déboguez localement, vérifiez également que vous vous connectez pour le type de serveur correct et l’URL (dans **Propriétés > Web > serveurs** ou **Propriétés > débogage**, en fonction de votre type de projet).
 - Serveur (503) non disponible. Le Pool d’applications peut avoir arrêté en raison d’une modification de l’erreur ou la configuration. Redémarrez le Pool d’applications.
 - (404) introuvable. Assurez-vous que le Pool d’applications est configuré pour la version correcte d’ASP.NET.
 
@@ -119,17 +123,17 @@ Après avoir suivi les étapes décrites ici pour résoudre le problème et avan
 
 * Vérifiez votre configuration de Pool d’applications, corrigez-le si nécessaire, puis réessayez.
 
-    Le Pool d’applications peut être configuré pour une version d’ASP.NET qui ne correspond pas à votre projet Visual Studio. Mettre à jour la version d’ASP.NET dans le Pool d’applications et le redémarrer. Pour plus d’informations, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+    Le Pool d’applications peut être configuré pour une version d’ASP.NET qui ne correspond pas à votre projet Visual Studio. Mettre à jour la version d’ASP.NET dans le Pool d’applications et le redémarrer. Pour plus d’informations, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     En outre, si les informations d’identification de mot de passe ont été modifiés, vous devrez peut-être mettre à jour dans votre Pool d’applications ou le site Web.  Dans le Pool d’applications, mettre à jour les informations d’identification dans **paramètres avancés > modèle de processus > identité**. Pour le site Web, mettre à jour les informations d’identification dans **les paramètres de base > se connecter en tant que...** . Redémarrez votre Pool d’applications.
     
 * Vérifiez que votre dossier d’Application Web possède les autorisations appropriées.
 
-    Assurez-vous que vous donnez à IIS_IUSRS, IUSR ou l’utilisateur spécifique associé à la lecture du Pool d’applications et droits d’exécution pour le dossier d’Application Web. Corrigez le problème et redémarrez le Pool d’applications.
+    Assurez-vous que vous donnez IIS_IUSRS, IUSR, ou associé à l’utilisateur spécifique le [Pool d’applications](/iis/manage/configuring-security/application-pool-identities) lecture et d’exécution de droits pour le dossier d’Application Web. Corrigez le problème et redémarrez le Pool d’applications.
 
 * Assurez-vous que la version correcte d’ASP.NET est installée sur IIS.
 
-    Versions incompatibles de ASP.NET sur IIS et dans votre projet Visual Studio peuvent provoquer ce problème. Vous devrez peut-être définir la version du framework dans le fichier web.config. Pour installer ASP.NET sur IIS, utilisez le [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Consultez également [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ou, pour ASP.NET Core, [hôte sous Windows avec IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+    Versions incompatibles de ASP.NET sur IIS et dans votre projet Visual Studio peuvent provoquer ce problème. Vous devrez peut-être définir la version du framework dans le fichier web.config. Pour installer ASP.NET sur IIS, utilisez le [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Consultez également [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ou, pour ASP.NET Core, [hôte sous Windows avec IIS](https://docs.asp.net/en/latest/publishing/iis.html).
   
 * Résoudre les erreurs d’authentification si vous utilisez uniquement l’adresse IP
 
@@ -155,7 +159,7 @@ Si la configuration d’IIS ne pose pas de problème, essayez les étapes suivan
 
      Si IIS n’est pas installé correctement, vous devez obtenir des erreurs quand vous tapez `http://localhost` dans un navigateur.
      
-     Pour plus d’informations sur le déploiement sur IIS, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) et, pour ASP.NET Core, [hôte sous Windows avec IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+     Pour plus d’informations sur le déploiement sur IIS, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) et, pour ASP.NET Core, [hôte sous Windows avec IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
 * Créer une application ASP.NET de base sur le serveur (ou utilisez un fichier web.config de base).
 

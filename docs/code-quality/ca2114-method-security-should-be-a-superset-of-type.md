@@ -18,22 +18,23 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9784ae650a411ef4fe5086ae8bf756147fd2365
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a3ff1a6be01b51f45b0ca5b5417ead2195d023bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114 :La sécurité de la méthode doit être un sur-ensemble du type
 |||  
 |-|-|  
 |TypeName|MethodSecurityShouldBeASupersetOfType|  
 |CheckId|CA2114|  
-|Catégorie|Microsoft.Security|  
+|Category|Microsoft.Security|  
 |Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
- Un type a la sécurité déclarative, une de ses méthodes présente une sécurité déclarative pour la même action de sécurité et l’action de sécurité n’est pas [les demandes de liaison](/dotnet/framework/misc/link-demands) ou [des demandes d’héritage](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)et les autorisations vérifiées par le type ne sont pas un sous-ensemble des autorisations vérifiées par la méthode.  
+ Un type a la sécurité déclarative, une de ses méthodes présente une sécurité déclarative pour la même action de sécurité et l’action de sécurité n’est pas [les demandes de liaison](/dotnet/framework/misc/link-demands), et les autorisations vérifiées par le type ne sont pas un sous-ensemble des autorisations vérifiée par la méthode.  
   
 ## <a name="rule-description"></a>Description de la règle  
  Une méthode ne doit pas avoir à la fois une sécurité déclarative au niveau méthode et au niveau type pour la même action. Les deux contrôles ne sont pas combinés ; uniquement la demande de niveau de la méthode est appliquée. Par exemple, si un type demande une autorisation `X`, et une de ses méthodes demande une autorisation `Y`, code ne doit pas avoir l’autorisation `X` pour exécuter la méthode.  
@@ -63,6 +64,5 @@ ms.lasthandoff: 10/31/2017
 **[Aucune autorisation de lecture (exigée par méthode)] Peut pas accéder aux données personnelles : échouée de la demande.**   
 ## <a name="see-also"></a>Voir aussi  
  [Instructions de codage sécurisé](/dotnet/standard/security/secure-coding-guidelines)   
- [Demandes d’héritage](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)   
  [Demandes de liaison](/dotnet/framework/misc/link-demands)   
  [Données et modélisation](/dotnet/framework/data/index)

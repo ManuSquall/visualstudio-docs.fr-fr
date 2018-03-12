@@ -14,16 +14,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <vstoRuntime> element
 - <vstoRuntime> element
 - vstoRuntime element
-ms.assetid: e59a8a61-9ff2-4032-9983-4a1e289e70a7
-caps.latest.revision: "10"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0d6ac2393a5cfd27b2909fb5a5d63ff0260941e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 048ad687b8754d09bd1e217e49bee2898d7791e3
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime&gt; élément (développement Office dans Visual Studio)
   L’élément `vstoRuntime` de l’espace de noms `vstav3` contient une version prise en charge du runtime Visual Studio Tools pour Office pour une solution Office spécifique.  

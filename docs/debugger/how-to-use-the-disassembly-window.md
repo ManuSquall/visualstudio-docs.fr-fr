@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.disassembly
+f1_keywords:
+- vs.debug.disassembly
 dev_langs:
 - CSharp
 - VB
@@ -20,15 +22,17 @@ helpviewer_keywords:
 - Disassembly window
 - machine code
 ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c72de947262cd87e4920d87c2d4d54664e02cc0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: c53f5404eb127f2f5eb9ec844024beafaad22e86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Afficher le Code machine dans le débogueur Visual Studio
 Cette fonctionnalité est disponible uniquement si le débogage au niveau des adresses est activé le **Options** boîte de dialogue, **débogage** nœud. Elle n'est pas disponible pour le débogage de script ni le débogage SQL.  

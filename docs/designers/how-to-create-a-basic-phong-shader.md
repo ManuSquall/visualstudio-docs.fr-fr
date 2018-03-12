@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29def0d3aef8a097f5b956bd43df7d8b53abebb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 52040b717204f151e4a370f5f2a25b29781878b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Comment : créer un nuanceur Phong de base
 Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed Graph Shader Language) pour créer un nuanceur d’éclairage implémentant le modèle d’éclairage Phong classique.  
@@ -34,7 +35,7 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
   
  Pour plus d’informations sur le modèle d’éclairage Lambert, consultez l’article [Comment : créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).  
   
- Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boîte à outils** soient affichées.  
+ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.  
   
 #### <a name="to-create-a-phong-shader"></a>Pour créer un nuanceur Phong  
   
@@ -75,4 +76,4 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
  [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)   
  [Comment : créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md)   
  [Concepteur de nuanceur](../designers/shader-designer.md)   
- [Nœuds du concepteur de nuanceur](../designers/shader-designer-nodes.md)
+ [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

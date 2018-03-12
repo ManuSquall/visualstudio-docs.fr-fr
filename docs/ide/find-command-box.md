@@ -7,18 +7,22 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.findcommandbox
-helpviewer_keywords: Find/Command box
+f1_keywords:
+- vs.findcommandbox
+helpviewer_keywords:
+- Find/Command box
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8fa54e65ed581d547d7e4a0c6c5d1c1e0908c0ca
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload:
+- multiple
+ms.openlocfilehash: ede1e6cd1340ea204199df66108c49db310949f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="findcommand-box"></a>Rechercher/Commande, zone
+# <a name="findcommand-box"></a>zone Rechercher/Commande
 
 Vous pouvez rechercher des commandes Visual Studio de texte et d’exécution à partir de la zone **Rechercher/Commande**. La zone **Rechercher/Commande** reste disponible en tant que contrôle de barre d’outils, mais n’est plus visible par défaut. Vous pouvez afficher la zone **Rechercher/Commande** en choisissant **Ajouter ou supprimer des boutons** dans la barre d’outils **Standard**, puis en choisissant **Rechercher**.
 
@@ -30,7 +34,7 @@ La zone **Rechercher/Commande** conserve les 20 derniers éléments entrés et l
 
 ## <a name="searching-for-text"></a>Recherche de texte
 
-Par défaut, quand vous spécifiez du texte dans la zone **Rechercher/Commande**, puis que vous choisissez la touche **Entrée**, Visual Studio recherche dans la fenêtre de document ou Outil actuelle en utilisant les options spécifiées dans la boîte de dialogue **Rechercher dans les fichiers**. Pour plus d’informations, consultez [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md).
+Par défaut, quand vous spécifiez du texte dans la zone **Rechercher/Commande**, puis que vous choisissez la touche **Entrée**, Visual Studio recherche dans la fenêtre de document ou Outil actuelle en utilisant les options spécifiées dans la boîte de dialogue **Rechercher dans les fichiers**. Pour plus d’informations, consultez [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
 
 ## <a name="entering-commands"></a>Entrée de commandes
 
@@ -54,5 +58,5 @@ Un accent circonflexe fonctionne de la même façon, qu’il soit à l’intéri
 
 ## <a name="see-also"></a>Voir aussi
 
-[Fenêtre Commande](../ide/reference/command-window.md)  
+[Commande, fenêtre](../ide/reference/command-window.md)  
 [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)

@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugEngine2::SetException
-helpviewer_keywords: IDebugEngine2::SetException
+f1_keywords:
+- IDebugEngine2::SetException
+helpviewer_keywords:
+- IDebugEngine2::SetException
 ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d383b1638bde801fa1abd2045666fb23fa21b32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: aa9ad865c3458c02ccdec95c6cb1f8e4fc68f8f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 Spécifie la façon dont le moteur de débogage (DE) doit gérer une exception donnée.  
@@ -44,7 +49,7 @@ int SetException(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Un DE pourrait invité à arrêter le programme de génération d’une exception à la première occasion, de deuxième chance, ou pas du tout.  
   
 ## <a name="see-also"></a>Voir aussi  

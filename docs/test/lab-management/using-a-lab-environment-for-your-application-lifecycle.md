@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: lab environment, test lab
-ms.assetid: b435eb39-dc7c-46fa-a91b-6e6dd614f01c
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 2eb863996b430c8473adb751851777c532fcfc89
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+helpviewer_keywords:
+- lab environment, test lab
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: 227068197de1d953ae6f3729888a1b6d2dfc164c
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Utiliser un environnement lab pour votre DevOps
 
@@ -103,20 +105,20 @@ Les environnements standard et SCVMM prennent en charge une grande partie de ces
 |Fonctionnalité|Environnement SCVMM|Environnements standard|  
 |----------------|------------------------|---------------------------|  
 |**Test**|||  
-|Exécuter des tests manuels|Pris en charge|Pris en charge|  
-|Exécuter des tests codés de l'interface utilisateur et autres tests automatisés|Pris en charge|Pris en charge|  
-|Signaler des bogues riches à l'aide des adaptateurs de diagnostics|Pris en charge|Prise en charge|  
+|Exécuter des tests manuels|Prise en charge|Prise en charge|  
+|Exécuter des tests codés de l'interface utilisateur et autres tests automatisés|Prise en charge|Prise en charge|  
+|Signaler des bogues riches à l'aide des adaptateurs de diagnostics|Prise en charge|Prise en charge|  
 |**Déploiement de build**|||  
-|Flux de travail Création-Déploiement-Test automatisés|Pris en charge|Prise en charge|  
+|Flux de travail Création-Déploiement-Test automatisés|Prise en charge|Prise en charge|  
 |**Création et gestion d’environnements**|||  
-|Utiliser des ordinateurs physiques en plus des ordinateurs virtuels|Non pris en charge|Pris en charge|  
-|Utiliser des ordinateurs virtuels tiers|Non pris en charge|Pris en charge|  
-|Installer automatiquement des agents de test sur les ordinateurs d'un environnement lab|Pris en charge|Pris en charge|  
-|Enregistrer et déployer l'état d'un environnement lab à l'aide d'instantanés d'environnement|Pris en charge|Non pris en charge|  
-|Créer des environnements lab à partir de modèles d'ordinateurs virtuels|Pris en charge|Non pris en charge|  
-|Démarrage, arrêt et prise d'instantané d'environnement|Pris en charge|Non pris en charge|  
-|Se connecter à l'environnement à l'aide de la visionneuse d'environnement|Pris en charge|Pris en charge|  
-|Exécuter simultanément plusieurs copies d'un environnement grâce à l'isolement réseau|Pris en charge|Non pris en charge|  
+|Utiliser des ordinateurs physiques en plus des ordinateurs virtuels|Non pris en charge|Prise en charge|  
+|Utiliser des ordinateurs virtuels tiers|Non pris en charge|Prise en charge|  
+|Installer automatiquement des agents de test sur les ordinateurs d'un environnement lab|Prise en charge|Prise en charge|  
+|Enregistrer et déployer l'état d'un environnement lab à l'aide d'instantanés d'environnement|Prise en charge|Non pris en charge|  
+|Créer des environnements lab à partir de modèles d'ordinateurs virtuels|Prise en charge|Non pris en charge|  
+|Démarrage, arrêt et prise d'instantané d'environnement|Prise en charge|Non pris en charge|  
+|Se connecter à l'environnement à l'aide de la visionneuse d'environnement|Prise en charge|Prise en charge|  
+|Exécuter simultanément plusieurs copies d'un environnement grâce à l'isolement réseau|Prise en charge|Non pris en charge|  
   
 ### <a name="lab-management-concepts"></a>Terminologie Lab management
 

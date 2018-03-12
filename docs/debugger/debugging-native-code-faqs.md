@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.faq
+f1_keywords:
+- vs.debug.faq
 dev_langs:
 - CSharp
 - VB
@@ -19,15 +21,17 @@ helpviewer_keywords:
 - debugging [MFC], FAQs
 - debugging [C++], FAQs
 ms.assetid: 9a497032-cf73-441e-923b-4bbd5d37a6da
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f007d1fa6d9a1bbdebdd78a88272c98f0c44cdb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 943f2a142eb2267ada5c9b8570068c67684bdaed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-native-code-faqs"></a>Forum Aux Questions sur le débogage du code natif
 Les rubriques suivantes contiennent des réponses à quelques questions fréquemment posées :  

@@ -4,7 +4,8 @@ ms.custom: H1Hack27Feb2017
 ms.date: 07/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,17 +17,20 @@ dev_langs:
 - CSharp
 - JScript
 - VB
-helpviewer_keywords: app package, debug
+helpviewer_keywords:
+- app package, debug
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 354c574a890ae0385a58594a22b3314a13b9d6b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- uwp
+ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Déboguer un package d’application installée dans Visual Studio (UWP)
 
@@ -91,8 +95,7 @@ Lorsque vous déboguez un package d’application installée sur un ordinateur d
      > [!NOTE]
 > À présent, une console XBox ou HoloLens appareil va redémarrer l’application avec le débogueur attaché si elle est déjà en cours d’exécution.
 
-> [!NOTE]
-> Les applications UWP peuvent être développées et compilé sur Windows 8.1 ou version ultérieure, mais nécessitent Windows 10 afin de s’exécuter. Si vous développez une application UWP sur un PC de Windows 8.1, vous pouvez déboguer à distance une application UWP en cours d’exécution sur un autre appareil Windows 10, si l’ordinateur de l’hôte et la cible se trouvent sur le même réseau local. Pour ce faire, téléchargez et installez les outils à distance pour Visual Studio sur les deux ordinateurs. La version installée doit correspondre à la version existante de Visual Studio que vous avez installée, et l’architecture que vous sélectionnez (x86, x 64) doit correspondre également à celui de votre application cible.
+Pour plus d’informations sur les options avancées pour le déploiement distant des applications UWP, consultez [déploiement et débogage des applications UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/index.md)  

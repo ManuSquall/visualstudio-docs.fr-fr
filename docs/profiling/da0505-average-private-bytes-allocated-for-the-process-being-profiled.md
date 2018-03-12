@@ -16,18 +16,19 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c0b3bd538de0d38e4104a2769cb3e6ce079a7cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5d37ebd2ec296153eefdb08d52930cfc08614e96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505 : Octets privés alloués en moyenne au processus en cours de profilage
 |||  
 |-|-|  
 |ID de règle|DA0505|  
-|Catégorie|Gestion des ressources|  
-|Méthode de profilage|Tout|  
+|Category|Gestion des ressources|  
+|Méthode de profilage|Tous|  
 |Message|Uniquement à titre d’informations. Le compteur Octets privés de processus mesure la mémoire virtuelle allouée par le processus que vous profilez. La valeur signalée correspond à la moyenne pour tous les intervalles de mesure.|  
 |Type de règle|Information|  
   

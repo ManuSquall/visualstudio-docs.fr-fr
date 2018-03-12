@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f91f6c3668b7cc1ce881dd0b98d1bd5dddebf530
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuration-options-overview"></a>Vue d’ensemble des Options de configuration
 Dans les projets [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut prendre en charge les configurations multiples qui peuvent être générées, débogué, exécution et/ou déployé. Une configuration est un type de build avec un jeu nommé de propriétés, en général, les commutateurs du compilateur et les emplacements de fichiers. Par défaut, les nouvelles solutions contiennent deux configurations Debug et Release. Ces configurations peuvent être appliquées à l’aide de leurs paramètres par défaut ou modifiés pour répondre à vos besoins spécifiques de solution ou projet. Certains packages peuvent être générées de deux manières : en tant qu’un éditeur ActiveX ou un composant en place. Pour prendre en charge les configurations à plusieurs, toutefois, les projets est inutile. S’il n'existe qu’une seule configuration disponible, cette configuration est mappée dans toutes les configurations de solution.  
@@ -34,7 +35,7 @@ Dans les projets [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pe
   
 |Nom de la configuration|Plateforme, Win32|Plateforme : Win64|  
 |------------------------|----------------------|----------------------|  
-|Déboguer|\<Déboguer des paramètres Win32 >|\<Déboguer les paramètres Win64 >|  
+|Débogage|\<Déboguer des paramètres Win32 >|\<Déboguer les paramètres Win64 >|  
 |Mise en production|\<Libérer les paramètres Win32 >|\<Libérer les paramètres Win64 >|  
 |MyConfig|N/A|\<Les paramètres MyConfig Win64 >|  
   

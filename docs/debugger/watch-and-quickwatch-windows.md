@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.watch
+f1_keywords:
+- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -15,26 +17,26 @@ helpviewer_keywords:
 - expression evaluation
 - registers, evaluating
 - debugging [Visual Studio], expression evaluation
-ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8792c9ed175d2ced5d9c10cc19b2d222f4d839a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Définissez un espion dans des Variables à l’aide de l’espion et Espion express, fenêtres dans Visual Studio
-Pendant le débogage, vous pouvez utiliser la **espion** (**Déboguer > Windows > espion > espion (1, 2, 3, 4)**) et **Espion express** (avec le bouton droit sur la variable /  **Déboguer > Espion express**) windows pour surveiller les variables et expressions.  La fenêtre **Espion** permet d’afficher plusieurs variables, à la différence de la fenêtre **Espion express** , qui n’en affiche qu’une à la fois.
+Pendant le débogage, vous pouvez utiliser la **espion** et **Espion express** pour observer les variables et les expressions.  La fenêtre **Espion** permet d’afficher plusieurs variables, à la différence de la fenêtre **Espion express** , qui n’en affiche qu’une à la fois. 
 
-Les fenêtres sont disponibles uniquement pendant une session de débogage. 
+Les fenêtres sont disponibles uniquement pendant une session de débogage. Pour ouvrir la **espion** fenêtre, choisissez **Déboguer > Windows > espion > espion (1, 2, 3, 4)**). Pour ouvrir la **Espion express** fenêtre, soit avec le bouton droit sur la variable et choisissez **Espion express** ou choisissez **Déboguer > Espion express**.
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Observation d’une variable dans la fenêtre Espion express  
  Vous pouvez utiliser la fenêtre **Espion express** pour observer une variable déterminée. Par exemple, si vous avez le code suivant :  
   
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b;  
@@ -51,9 +53,9 @@ static void Main(string[] args)
   
 1.  Définissez un point d’arrêt sur la ligne `a = a + b;` .  
   
-2.  Démarrez le débogage. L’exécution s’interrompt au point d’arrêt.  
+2.  Démarrez le débogage. L'exécution s'arrête au point d'arrêt.  
   
-3.  Ouvrez la fenêtre **Espion express** (cliquez avec le bouton droit sur a, puis choisissez **Espion express**ou **Maj+F9**)
+3.  Ouvrez le **Espion express** fenêtre (avec le bouton droit sur `a`, puis choisissez **Espion express**, ou sélectionnez `a` et appuyez sur **MAJ + F9**).
 
     Vous devez voir une variable dans le **valeurs** fenêtre, avec la valeur 1.
 
@@ -116,14 +118,14 @@ int main()
   
  ![Expression espionne](../debugger/media/watchexpression.png "WatchExpression")  
   
- En général, les règles d’évaluation des expressions dans la fenêtre **Espion** sont les mêmes que dans votre langage de codage. Si votre expression contient une erreur de syntaxe, vous pouvez vous attendre à voir la même erreur de compilateur dans l’éditeur de code. Voici un exemple :  
+ En général, les règles d’évaluation des expressions dans la fenêtre **Espion** sont les mêmes que dans votre langage de codage. Si votre expression contient une erreur de syntaxe, vous pouvez vous attendre à voir la même erreur de compilateur dans l’éditeur de code. Voici un exemple :  
   
  ![Regardez erreur Expression](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
 ##  <a name="bkmk_refreshWatch"></a> Actualisation des valeurs obsolètes dans la fenêtre Espion  
  Dans certaines circonstances, vous pouvez voir une icône d’actualisation (une flèche circulaire) lorsque l’expression est évaluée dans le **espion** fenêtre.  Par exemple, si vous avez désactivé l’évaluation propriété (**Outils > Options > Débogage > Activer l’évaluation de la propriété et d’autres appels de fonction implicite**), et vous avez le code suivant :  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     List<string> list = new List<string>();  
@@ -139,9 +141,9 @@ static void Main(string[] args)
   
  L’illustration précédente montre une erreur ou une valeur qui est obsolète. Vous pouvez généralement actualiser la valeur en cliquant sur l’icône, mais dans certains cas, vous préférerez ne pas l’actualiser. Vous devez d’abord savoir pourquoi la valeur n’a pas été évaluée.  
   
- Si vous pointez sur l’icône, une info-bulle vous donne des indications sur ce qui a empêché l’évaluation de l’expression.  Si les flèches en cercle s'affichent, l'expression n'a pas été évaluée pour l'une des raisons suivantes :  
+ Si vous pointez sur l’icône, une info-bulle vous donne des indications sur ce qui a empêché l’évaluation de l’expression.  Si les flèches en cercle s’affichent, c’est que l’expression n’a pas été évaluée pour l’une des raisons suivantes :  
   
--   Une erreur s'est produite alors que l'expression était en cours d'évaluation. Par exemple, un dépassement de délai a pu se produire ou une variable était peut-être hors de portée.  
+-   Une erreur s’est produite alors que l’expression était en cours d’évaluation. Par exemple, un dépassement de délai a pu se produire ou une variable était peut-être hors de portée.  
   
 -   L’expression contient un appel de fonction susceptible de produire un effet secondaire dans l’application (consultez [effets secondaires et Expressions](#bkmk_sideEffects)).  
   
@@ -175,7 +177,7 @@ var1 = var2
   
  Dans le code suivant, une méthode crée un `Person` à l’aide d’une variable locale, mais vous souhaitez en savoir plus que le `Person`du nom est une autre méthode :  
   
-```CSharp  
+```csharp  
 class Person  
 {  
     public Person(string name)  
@@ -232,7 +234,7 @@ public class Program
 ## <a name="dynamic-view-and-the-watch-window"></a>Affichage dynamique et la fenêtre Espion  
  Certains langages de script (par exemple, JavaScript ou Python) utilisent dynamique ou [canard en tapant](https://en.wikipedia.org/wiki/Duck_typing), et les langages .NET (version 4.0 et versions ultérieur) prennent en charge les objets qui sont difficiles à observer dans les fenêtres de débogage normales, car ils peut avoir des propriétés d’exécution et les méthodes qui ne peut pas être affichées.  
   
- Lorsque la fenêtre Espion affiche un objet créé à partir d’un type qui implémente le [IDynamicMetaObjectProvider Interface](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), le débogueur ajoute un spécial **affichage dynamique** nœud à la **automatique**  afficher. Ce nœud affiche les membres dynamiques de l’objet dynamique, mais n’autorise pas la modification des valeurs des membres.  
+ Lorsque la fenêtre Espion affiche un objet créé à partir d’un type qui implémente le [IDynamicMetaObjectProvider Interface](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), le débogueur ajoute un spécial **affichage dynamique** nœud à la **automatique**  afficher. Ce nœud affiche les membres dynamiques de l’objet dynamique, mais n’autorise pas la modification des valeurs des membres.  
   
  Si vous cliquez avec le bouton droit sur l’un des enfants d’un **Affichage dynamique** et que vous choisissez **Ajouter un espion**, le débogueur insère une nouvelle variable espion qui effectue le transtypage d’un objet vers un objet dynamique. En d’autres termes, **object Name** devient (**(dynamic)object).Name**.  
   

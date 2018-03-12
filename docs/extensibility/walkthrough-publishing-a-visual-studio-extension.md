@@ -15,17 +15,18 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8eac89a2bdde3b0a20ea3a98775de84a503f86c
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: vssdk
+ms.openlocfilehash: be1402da1677388712472d4309c40ce767358f7b
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Procédure pas à pas : Publication d’une Extension Visual Studio
 
 Cette procédure pas à pas montre comment publier une extension Visual Studio pour Visual Studio Marketplace. Lorsque vous ajoutez votre extension pour le marché, les développeurs peuvent utiliser **Extensions et mises à jour** pour y rechercher des extensions nouvelles et mises à jour.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
@@ -69,9 +70,7 @@ Dans ce cas, nous allons utiliser une extension de VSPackage par défaut, mais l
 
   ![Télécharger sur le Marketplace](media/upload-to-marketplace.png)
 
-6. Choisissez le serveur de publication que vous souhaitez utiliser pour télécharger votre extension.  Vous pouvez modifier les serveurs de publication en cliquant sur le nom du serveur de publication dans le coin supérieur gauche.
-
-  ![Publication des changements Marketplace](media/change-marketplace-publisher.png)
+6. Choisissez le serveur de publication que vous souhaitez utiliser pour télécharger votre extension.  Vous pouvez modifier les serveurs de publication en cliquant sur les noms d’éditeurs figurant sur la gauche.  Cliquez sur **nouvelle extension** et sélectionnez **Visual Studio**.
 
 7. Dans **1 : télécharger l’extension**, vous pouvez choisir de télécharger un fichier VSIX directement à Visual Studio Marketplace ou simplement ajouter un lien vers votre site Web. Dans ce cas, nous télécharger notre extension, TestPublish.vsix.  Faites glisser et déposez votre extension ou utilisez le **cliquez sur** lien pour rechercher le fichier.  Vous trouverez votre extension dans le dossier \bin\Release du projet.  Cliquez sur **Continuer**.
 
@@ -85,7 +84,7 @@ Dans ce cas, nous allons utiliser une extension de VSPackage par défaut, mais l
     
     * **ID VSIX** est l’identificateur unique que Visual Studio utilise pour votre extension.  Cela est nécessaire si vous souhaitez que votre extension pour une mise à jour automatique.  Cela est remplie automatiquement à partir du fichier source.extension.vsixmanifest.
     
-    * **Logo** qui sera utilisé pour votre extension.  Il s’agit et rempli automatiquement à partir du fichier source.extension.vsixmanifest si fourni.
+   * **Logo** qui sera utilisé pour votre extension.  Il s’agit et rempli automatiquement à partir du fichier source.extension.vsixmanifest si fourni.
     
     * **Brève description** de ce que fait votre extension.  Il s’agit et rempli automatiquement à partir du fichier source.extension.vsixmanifest.
     
@@ -107,12 +106,32 @@ Dans ce cas, nous allons utiliser une extension de VSPackage par défaut, mais l
     
     * **Autoriser Q & r pour votre extension** permettra aux utilisateurs de laisser des questions sur la page d’entrée de votre extension.
 
-9. Cliquez sur **enregistrer et charger**. Vous accéderez page Gérer le retour à votre serveur de publication.  Votre extension n’a pas encore été publiée.  Pour publier votre hover extension sur l’entrée de votre extension, puis cliquez sur **...**  , puis **rendre publique**.  Vous pouvez afficher la façon dont votre extension ressemblera sur Marketplace en sélectionnant **afficher les détails**.  Pour les numéros d’acquisition, cliquez sur **rapports**.  Pour apporter des modifications à votre extension, cliquez sur **modifier*.
+9. Cliquez sur **enregistrer et charger**. Vous accéderez page Gérer le retour à votre serveur de publication.  Votre extension n’a pas encore été publiée.  Pour publier votre extension, cliquez sur votre extension, puis sélectionnez **rendre Public**.  Vous pouvez afficher la façon dont votre extension ressemblera sur Marketplace en sélectionnant **vue Extension**.  Pour les numéros d’acquisition, cliquez sur **rapports**.  Pour apporter des modifications à votre extension, cliquez sur **modifier*.
 
   ![Menu de l’entrée extension](media/extension-entry-menu.png)
 
 10. Après avoir cliqué sur **rendre Public**, votre extension est désormais publique.  Rechercher le Visual Studio Marketplace pour votre extension.
 
+## <a name="add-additional-users-to-manage-your-publisher-account"></a>Ajouter des utilisateurs supplémentaires pour gérer votre compte de serveur de publication
+
+Marketplace prend en charge l’octroi d’autorisations des utilisateurs supplémentaires pour accéder et gérer un compte de serveur de publication.
+
+1. Naviguez vers le compte de serveur de publication que vous souhaitez ajouter des utilisateurs.
+
+2. Sélectionnez **membres** , puis cliquez sur **ajouter**
+
+  ![Ajouter des utilisateurs supplémentaires](media/add-users.png)
+
+3. Vous pouvez ensuite spécifier l’adresse de messagerie de l’utilisateur que vous souhaitez ajouter, puis accorder le niveau d’accès sous **sélectionner un rôle**.  Vous pouvez choisir parmi les priorités suivantes :
+
+  * **Créateur**: l’utilisateur peut publier des extensions, mais ne peut pas afficher ou gérer des extensions publiées par d’autres utilisateurs.
+  
+  * **Lecteur**: l’utilisateur peut afficher les extensions, mais ne peut pas publier ou gérer des extensions.
+  
+  * **Collaborateur**: l’utilisateur peut publier et gérer des extensions, mais ne peut pas modifier les paramètres du serveur de publication ou gérer l’accès.
+  
+  * **Propriétaire**: l’utilisateur peut publier et gérer des extensions, modifier les paramètres du serveur de publication et gérer l’accès.
+  
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installer l’Extension à partir de Visual Studio Marketplace
 
 Maintenant que l’extension est publiée, installez-le dans Visual Studio et testez-le.
@@ -125,7 +144,7 @@ Maintenant que l’extension est publiée, installez-le dans Visual Studio et te
 
 4. Pour terminer l’installation, fermez toutes les instances de Visual Studio.
 
-## <a name="removing-the-extension"></a>Suppression de l’Extension
+## <a name="remove-the-extension"></a>Supprimer l’Extension
 
 Vous pouvez supprimer l’extension à partir de Visual Studio Marketplace et de votre ordinateur.
 
@@ -135,7 +154,7 @@ Vous pouvez supprimer l’extension à partir de Visual Studio Marketplace et de
 
 2. Dans le coin supérieur droit, cliquez sur **publier** extensions.  Choisissez le serveur de publication que vous avez utilisé pour publier TestPublish.  La liste de TestPublish s’affiche.
 
-3. Pointez sur l’entrée d’extension et cliquez sur **...**  et **supprimer...** Vous devrez confirmer si vous souhaitez supprimer l’extension.  Cliquez sur **OK**.
+3. Avec le bouton droit sur l’entrée d’extension et cliquez sur **supprimer** vous demandera de confirmer si vous souhaitez supprimer l’extension.  Cliquez sur **OK**.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Pour supprimer l’extension à partir de votre ordinateur.
 

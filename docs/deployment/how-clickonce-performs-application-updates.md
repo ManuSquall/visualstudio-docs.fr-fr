@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 32e0b56ab5d4507c971948b98c8f7660650e70cc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6ee199aa98c0c5b72a5693c840b892929e55477a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Mises à jour des applications par ClickOnce
 ClickOnce utilise les informations de version de fichier spécifiées dans le manifeste de déploiement d’une application de décider s’il faut mettre à jour les fichiers de l’application. Après le début d’une mise à jour, ClickOnce utilise une technique appelée *mise à jour corrective du fichier* pour éviter le téléchargement redondant de fichiers d’application.  

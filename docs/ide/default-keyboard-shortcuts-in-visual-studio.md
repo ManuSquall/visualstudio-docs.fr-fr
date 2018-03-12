@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 06/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,25 +14,25 @@ helpviewer_keywords:
 - Help [Visual Studio], shortcut keys
 - keyboard shortcuts [Visual Studio], keyboard binding schemes
 - keyboard shortcuts
-ms.assetid: c2c64648-00f8-4e48-a8a0-96c67cfd968c
-caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2926543ca041ac2b2cc25bc178b99bbafd2407db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- multiple
+ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 Pour plus d’informations sur l’accessibilité du clavier, consultez [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md) et [Guide pratique pour utiliser uniquement le clavier](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez choisir les raccourcis clavier appropriés. Cette rubrique répertorie les raccourcis par défaut propres au profil de développement général, que vous avez peut-être choisi en installant Visual Studio. Quel que soit le profil que vous avez choisi, vous pouvez identifier le raccourci d’une commande en ouvrant la boîte de dialogue **Options**, en développant le nœud **Environnement**, puis en choisissant **Clavier**. Vous pouvez également personnaliser vos raccourcis en assignant un raccourci différent à toute commande donnée.
 
- Pour obtenir la liste des raccourcis clavier courants et d’autres informations sur la productivité, consultez [Raccourcis clavier par défaut pour les commandes fréquemment utilisées dans Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Conseils et astuces](../ide/tips-and-tricks-for-visual-studio.md) et [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md).
+Pour obtenir la liste des raccourcis clavier courants et d’autres informations sur la productivité, consultez [Raccourcis clavier par défaut pour les commandes fréquemment utilisées dans Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Conseils d’utilisation du clavier](../ide/tips-and-tricks-for-visual-studio.md) et [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md).
 
- Les sections du tableau suivant incluent des commandes globales, au sens où vous pouvez y accéder en tout point de Visual Studio à l'aide des raccourcis clavier indiqués :  
+Les sections du tableau suivant incluent des commandes globales, au sens où vous pouvez y accéder en tout point de Visual Studio à l'aide des raccourcis clavier indiqués :
 
 |||||  
 |-|-|-|-|  
@@ -43,12 +44,12 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |[Menus contextuels du débogueur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Autres menus contextuels](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menus contextuels Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|  
 |[Hub de diagnostic](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||  
 
- Chaque section du tableau suivant inclut les commandes dont les raccourcis clavier sont spécifiques au contexte correspondant au nom de la section.  
+Chaque section du tableau suivant inclut les commandes dont les raccourcis clavier sont spécifiques au contexte correspondant au nom de la section.
 
 |||||  
 |-|-|-|-|  
 |[ADO.NET Entity Data Model Designer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ADONET)|[Diagramme de couche](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_layerDiagram)|[Concepteur de paramètres](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SettingsDesigner)|[Éditeur d’images VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcimageeditor)|  
-|[Diagramme de classes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[Éditeur de ressources managées](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[Explorateur de solutions](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[Éditeur de chaînes VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|  
+|[Diagramme de classes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[Éditeur de ressources managées](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[Explorateur de solutions](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[Éditeur de chaînes VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|
 |[Éditeur de test codé de l’interface utilisateur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_codedUItest)|[Fenêtre de l’éditeur de fusion](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_MergeEditor)|[Team Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TeamExplorer)|[Concepteur de vues](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_viewDesigner)|  
 |[Éditeur DataSet](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Microsoft SQL Server Data Tools, Comparaison de schémas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Éditeur des détails Team Foundation Build](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|  
 |[Visionneuse de différences](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)|[Microsoft SQL Server Data Tools, Concepteur de tables](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)|[Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)|[Concepteur Windows Forms](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)|  
@@ -56,26 +57,26 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |[F# Interactive](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)|[Microsoft SQL Server Data Tools, Éditeur T-SQL PDW](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)|[Diagramme d’activités UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)|[Affichage des requêtes d’élément de travail](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)|  
 |[Éditeur de document de graphique](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphDoc)|[Inspecteur de page](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_PageInspector)|[Diagramme de classes UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLclassDiagram)|[Affichage des résultats des éléments de travail](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIresultsview)|  
 |[Graphics Diagnostics](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphicsDebugger)|[Concepteur de requêtes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryDesigner)|[Diagramme de composant UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLcomponentDiagram)|[Concepteur de flux de travail](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workflowdesigner)|  
-|[Éditeur HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[Résultats de requête](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[Diagramme de cas d’usage UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[Concepteur XAML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|  
+|[Éditeur HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[Résultats de requête](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[Diagramme de cas d’usage UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[Concepteur XAML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|
 |[Éditeur HTML, mode Création](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[Concepteur de rapports](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[Éditeur d’accélérateurs VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[Éditeur XML (Texte)](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|  
 |[Éditeur HTML en mode Source](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)|[Diagramme de séquence](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)|[Éditeur de boîtes de dialogue VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)|[Concepteur de schémas XML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)|  
 
-##  <a name="bkmk_global"></a> Global  
+##  <a name="bkmk_global"></a> Global
 
-###  <a name="bkmk_analyze"></a> Analyser  
+###  <a name="bkmk_analyze"></a> Analyser
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
 |Analyze.NavigateBackward|Maj+Alt+3|  
 |Analyze.NavigateForward|Maj+Alt+4|  
 
-###  <a name="bkmk_architecture"></a> Architecture  
+###  <a name="bkmk_architecture"></a> Architecture
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
 |Architecture.NewDiagram|Ctrl+\\, Ctrl+N|  
 
-###  <a name="bkmk_build"></a> Générer  
+###  <a name="bkmk_build"></a> Générer
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
@@ -84,13 +85,13 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |Build.Compile|Ctrl+F7|  
 |Build.RunCodeAnalysisonSolution|Alt+F11|  
 
-###  <a name="bkmk_classview"></a> Menus contextuels de l’affichage de classes  
+###  <a name="bkmk_classview"></a> Menus contextuels de l’affichage de classes
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|Alt+Entrée|  
 
-###  <a name="bkmk_debug"></a> Déboguer  
+###  <a name="bkmk_debug"></a> Déboguer
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
@@ -158,7 +159,7 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |Debug.Watch3|Ctrl+Alt+W, 3|  
 |Debug.Watch4|Ctrl+Alt+W, 4|  
 
-###  <a name="bkmk_debugger"></a> Menus contextuels du débogueur  
+###  <a name="bkmk_debugger"></a> Menus contextuels du débogueur
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
@@ -166,13 +167,13 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|Alt+F9, A|  
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|Alt+F9, S|  
 
-###  <a name="bkmk_diagnostics"></a> Hub de diagnostic  
+###  <a name="bkmk_diagnostics"></a> Hub de diagnostic
 
 |Commande|Raccourci clavier|  
 |-------------|-----------------------|  
 |DiagnosticsHub.StopCollection|Ctrl+Alt+F2|  
 
-###  <a name="bkmk_edit"></a> Edition  
+###  <a name="bkmk_edit"></a> Edition
 
 |Commandes||  
 |--------------|-|  
@@ -231,7 +232,7 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |Edit.SurroundWith|Ctrl+K, Ctrl+S|  
 |Edit.Undo|Ctrl+Z<br /><br /> ou<br /><br /> Alt+Retour arrière|  
 
-###  <a name="bkmk_editorContext"></a> Menus contextuels de l’éditeur  
+###  <a name="bkmk_editorContext"></a> Menus contextuels de l’éditeur
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
@@ -242,7 +243,7 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|Ctrl+K, Ctrl+O|  
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|Ctrl+K, Ctrl+T<br /><br /> ou<br /><br /> Ctrl+K, T|  
 
-###  <a name="bkmk_file"></a> Fichier  
+###  <a name="bkmk_file"></a> Fichier
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
@@ -258,7 +259,7 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |File.SaveSelectedItems|Ctrl+S|  
 |File.ViewinBrowser|Ctrl+Maj+W|  
 
-###  <a name="bkmk_help"></a> Aide  
+###  <a name="bkmk_help"></a> Aide
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
@@ -267,19 +268,19 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |Help.ViewHelp|Ctrl+F1|  
 |Help.WindowHelp|Maj+F1|  
 
-###  <a name="bkmk_loadtest"></a> Test de charge  
+###  <a name="bkmk_loadtest"></a> Test de charge
 
 |Commande|Raccourci clavier|  
 |-------------|-----------------------|  
 |LoadTest.JumpToCounterPane|Ctrl+R, Q|  
 
-###  <a name="bkmk_otherContext"></a> Autres menus contextuels  
+###  <a name="bkmk_otherContext"></a> Autres menus contextuels
 
 |Commande|Raccourci clavier|  
 |-------------|-----------------------|  
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|Insert|  
 
-###  <a name="bkmk_project"></a> Projet  
+###  <a name="bkmk_project"></a> Projet
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
@@ -291,14 +292,14 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |Project.Publishselectedfiles|Alt+;, Alt+P|  
 |Project.Replaceselectedfilesfromserver|Alt+;, Alt+R|  
 
-###  <a name="bkmk_projectContext"></a> Menus contextuels Projet et Solution  
+###  <a name="bkmk_projectContext"></a> Menus contextuels Projet et Solution
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
 |ProjectandSolutionContextMenus.Item.MoveDown|Alt+Bas|  
 |ProjectandSolutionContextMenus.Item.MoveUp|Alt+Haut|  
 
-###  <a name="bkmk_refactor"></a> Refactoriser  
+###  <a name="bkmk_refactor"></a> Refactoriser
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
@@ -309,7 +310,7 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |Refactor.Rename|Ctrl+R, Ctrl+R|  
 |Refactor.ReorderParameters|Ctrl+R, Ctrl+O|  
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> Explorateur de solutions  
+###  <a name="bkmk_solutionexplorerGLOBAL"></a> Explorateur de solutions
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
@@ -317,7 +318,7 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |SolutionExplorer.PendingChangesFilter|Ctrl+[, P<br /><br /> ou<br /><br /> Ctrl+[, Ctrl+P|  
 |SolutionExplorer.SyncWithActiveDocument|Ctrl+[, S<br /><br /> ou<br /><br /> Ctrl+[, Ctrl+S|  
 
-###  <a name="bkmk_team"></a> Équipe  
+###  <a name="bkmk_team"></a> Équipe
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
@@ -326,7 +327,7 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |Team.Git.GoToGitCommits|Ctrl+0, Ctrl+O<br /><br /> ou<br /><br /> Ctrl+0, O|  
 |Team.TeamExplorerSearch|Ctrl+'|  
 
-###  <a name="bkmk_TFcontext"></a> Menus contextuels Team Foundation  
+###  <a name="bkmk_TFcontext"></a> Menus contextuels Team Foundation
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
@@ -341,14 +342,14 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0, Ctrl+A<br /><br /> ou<br /><br /> Ctrl+0, A|  
 |TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0, Ctrl+W<br /><br /> ou<br /><br /> Ctrl+0, W|  
 
-###  <a name="bkmk_test"></a> Tester  
+###  <a name="bkmk_test"></a> Tester
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
 |Test.UseCodedUITestBuilder|Ctrl+\\, Ctrl+C|  
 |Test.UseExistingActionRecording|Ctrl+\\, Ctrl+A|  
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> Explorateur de tests  
+###  <a name="bkmk_testexplorerGLOBAL"></a> Explorateur de tests
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
@@ -546,7 +547,7 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 
 |Commandes|Raccourcis clavier|  
 |--------------|------------------------|  
-|Debug.Graphics.CaptureFrame|Aucun|  
+|Debug.Graphics.CaptureFrame|Aucun.|  
 |Graphics.MovePixelSelectionDown|Maj+Alt+Bas|  
 |Graphics.MovePixelSelectionLeft|Maj+Alt+Gauche|  
 |Graphics.MovePixelSelectionRight|Maj+Alt+Droite|  
@@ -967,7 +968,7 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |Format.SpaceDown|Alt+Haut<br /><br /> ou<br /><br /> Alt+Bas|  
 |Format.TabOrder|Ctrl+D|  
 |Format.TestDialog|Ctrl+T|  
-|Format.ToggleGuides|Ctrl+G|  
+|Format.ToggleGuides|CTRL+G|  
 
 ##  <a name="bkmk_vcimageeditor"></a> Éditeur d’images VC  
 
@@ -1166,6 +1167,7 @@ Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez
 |XsdDesigner.ShowGraphView|Ctrl+3|  
 |XsdDesigner.ShowStartView|Ctrl+1|  
 
-## <a name="see-also"></a>Voir aussi  
- [Éditeur d’images pour les icônes](/cpp/windows/image-editor-for-icons)   
- [Utilisation d’IntelliSense](../ide/using-intellisense.md)
+## <a name="see-also"></a>Voir aussi
+ 
+[Éditeur d’images pour les icônes](/cpp/windows/image-editor-for-icons)  
+[Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)

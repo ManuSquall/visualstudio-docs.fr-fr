@@ -20,18 +20,19 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 817c95d511ff1b02558010f3046827684b72d4f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4a43bc68a87d00dcce90f1a948b64dd786e9b440
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-constants"></a>Constantes de l’IDE
 La <xref:Microsoft.VisualStudio.VSConstants> classe fournit des constantes qui sont spécifiques à l’environnement de développement intégré (IDE) et qui ont été précédemment défini uniquement dans les fichiers d’en-tête.  
   
 ## <a name="logical-and-physical-views"></a>Affichages logique et physique  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Code>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` gestionnaires doivent passer cette valeur à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> méthode pour obtenir le **ouvrir avec** boîte de dialogue, dans ce cas sur les vues de Code possibles.|  
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Debugging>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` gestionnaires passent cette valeur à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> méthode pour obtenir le **ouvrir avec** boîte de dialogue, dans ce cas rempli avec possible <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Debugging> débogage des vues qui correspondent à la même vue comme <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Code>.|  
@@ -42,7 +43,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fournit des constantes qui s
   
 ## <a name="editor-factory-flags"></a>Indicateurs de fabrique d’éditeur  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.CEF_CLONEFILE>|Un indicateur obsolète combinées or comme premier paramètre de la <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> (méthode).|  
 |<xref:Microsoft.VisualStudio.VSConstants.CEF_OPENASNEW>|Combinées or comme premier paramètre de la <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, méthode, cela indique la fabrique d’éditeur doit effectuer les corrections nécessaires.|  
@@ -51,7 +52,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fournit des constantes qui s
   
 ## <a name="visual-studio-errors"></a>Erreurs de Visual Studio  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Une constante retournée par les interfaces au comportement asynchrone lorsque l’objet en question dans déjà occupé|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Une erreur HRESULT qui est spécifique à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour « données de document Incompatible ».|  
@@ -67,7 +68,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fournit des constantes qui s
   
 ## <a name="visual-studio-constants"></a>Constantes de Visual Studio  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Une erreur HRESULT qui est spécifique à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et qui indique « Projet transféré ».|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Constante qui est spécifique à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour un « marqueur de boîte à outils ».|  
@@ -82,7 +83,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fournit des constantes qui s
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents  
  Décrit le composant de l’IDE a simplement été sélectionné, dans un <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> appeler, par exemple.  
   
-|Constante|Valeur|  
+|Constante|Value|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.DocumentFrame>|0 x 2|  
 |<xref:Microsoft.VisualStudio.VSConstants.PropertyBrowserSID>|0 x 4|  
@@ -94,7 +95,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fournit des constantes qui s
 ## <a name="vsselelemid"></a>VSSELELEMID  
  Constantes utilisées pour indiquer un nouvel état de sélection.  
   
-|Constante|Valeur|  
+|Constante|Value|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|  
@@ -107,7 +108,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fournit des constantes qui s
   
 ## <a name="component-selector-dialog-constants"></a>Constantes de boîte de dialogue de sélection de composant  
   
-|Constante|Valeur|  
+|Constante|Value|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELCHANGED>|WM_USER + 1280|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER + 1281|  

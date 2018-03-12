@@ -4,21 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugEngine2::ContinueFromSynchronousEvent
-helpviewer_keywords: IDebugEngine2::ContinueFromSynchronousEvent
+f1_keywords:
+- IDebugEngine2::ContinueFromSynchronousEvent
+helpviewer_keywords:
+- IDebugEngine2::ContinueFromSynchronousEvent
 ms.assetid: 9a57dfcd-df8e-4be5-b1fe-bd853e3c6bb2
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cb28083d62ad200152cac0b49f99a06a693f34dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 527611e97d05ae1a600678eba69e3afc19ebf925
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Appelée par le Gestionnaire de session de débogage (SDM) pour indiquer qu’un événement de débogage synchrone précédemment envoyé par le moteur de débogage (DE) pour le SDM, a été reçu et traité.  
@@ -44,7 +49,7 @@ HRESULT ContinueFromSynchronousEvent(
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le DE doit vérifier sa source de l’événement représenté par le `pEvent` paramètre.  
   
 ## <a name="example"></a>Exemple  

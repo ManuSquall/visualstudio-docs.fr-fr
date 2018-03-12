@@ -4,24 +4,29 @@ ms.custom:
 ms.date: 06/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: natvis
-dev_langs: C++
+f1_keywords:
+- natvis
+dev_langs:
+- C++
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2aa3a6f515ca039c86d453f5729800fe8e1637c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 340d0d7366749f402cb76f3075778fb2b7ea215b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Créer des vues personnalisées d’objets natifs dans le débogueur Visual Studio
-L’infrastructure Natvis de Visual Studio vous permet de personnaliser la façon dont Visual Studio affiche les types natifs dans les fenêtres de variables du débogueur (par exemple, le **espion** fenêtre, **variables locales** fenêtre et dans  **Les DataTips**.
+L’infrastructure Natvis de Visual Studio vous permet de personnaliser la façon dont Visual Studio affiche les types natifs dans les fenêtres de variables du débogueur (par exemple, le **espion** fenêtre, **variables locales** fenêtre et dans ** Les DataTips**.
   
  Natvis remplace le fichier **autoexp.dat** utilisé dans les versions antérieures de Visual Studio et propose la syntaxe XML, de meilleurs diagnostics, le contrôle de version et la prise en charge de plusieurs fichiers.  
   
@@ -217,7 +222,7 @@ L’infrastructure Natvis de Visual Studio vous permet de personnaliser la faço
 ```  
   
 ####  <a name="BKMK_Versioning"></a> Élément Version  
- Utilisez l'élément `Version` pour définir l'étendue des visualisations à des modules spécifiques et à leurs versions afin que les collisions de nom soient réduites et que des visualisations différentes puissent être utilisées pour différentes versions des types. Par exemple :  
+ Utilisez l'élément `Version` pour définir l'étendue des visualisations à des modules spécifiques et à leurs versions afin que les collisions de nom soient réduites et que des visualisations différentes puissent être utilisées pour différentes versions des types. Exemple :  
   
 ```xml
 <Type Name="DirectUI::Border">  
@@ -537,7 +542,7 @@ Les fonctions intrinsèques suivantes sont prises en charge :
 ####  <a name="BKMK_ExpandedItem_expansion"></a> Expansion d'ExpandedItem  
  L'élément `ExpandedItem` peut servir à générer un affichage agrégé des enfants en présentant les propriétés des classes de base ou des membres de données comme s'ils étaient des enfants du type visualisé. L'expression spécifiée est évaluée et les nœuds enfants du résultat sont ajoutés à la liste enfant du type visualisé. Par exemple, supposons que vous ayez un type pointeur intelligent `auto_ptr<vector<int>>`, laquelle affiche généralement sous la forme :  
   
- ![auto &#95; ptr &#60; vecteur &#60; int &#62; &#62; expansion par défaut](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
+ ![auto & #95 ; ptr & #60 ; vecteur & #60 ; int & #62 ; & #62 ; expansion par défaut](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
   
  Pour voir les valeurs du vecteur, vous devez descendre de deux niveaux dans la fenêtre de variables en passant par le membre _Myptr. En ajoutant un élément `ExpandedItem` , vous pouvez éliminer la variable `_Myptr` de la hiérarchie et afficher directement les éléments du vecteur :  
   
@@ -550,7 +555,7 @@ Les fonctions intrinsèques suivantes sont prises en charge :
 </Type>  
 ```  
   
- ![auto &#95; ptr &#60; vecteur &#60; int &#62; &#62; Expansion ExpandedItem](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
+ ![auto & #95 ; ptr & #60 ; vecteur & #60 ; int & #62 ; & #62 ; Expansion ExpandedItem](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
   
  L’exemple suivant montre comment agréger des propriétés de la classe de base dans une classe dérivée. Supposons que la classe `CPanel` dérive de la classe `CFrameworkElement`. Au lieu de répéter les propriétés provenant de la classe `CFrameworkElement` de base, le nœud `ExpandedItem` permet à ces propriétés d'être ajoutées à la liste enfant de la classe `CPanel` . Le **nd** spécificateur de format, ce qui désactive la visualisation correspondant à la classe dérivée, est ici nécessaire. Dans le cas contraire, l’expression `*(CFrameworkElement*)this` provoque la `CPanel` visualisation à appliquer à nouveau, car les règles de correspondance de type de la visualisation par défaut considèrent comme celle la plus appropriée. À l’aide de la **nd** spécificateur de format indique au débogueur d’utiliser la visualisation de la classe de base ou l’expansion par défaut de la classe de base si la classe de base n’a pas une visualisation.  
   

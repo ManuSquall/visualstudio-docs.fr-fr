@@ -10,16 +10,21 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: CSharp
-ms.openlocfilehash: 3994c7087cb26e31c5745c99a8b7678aa7e24f23
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+dev_langs:
+- CSharp
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bbdabf7d35c2705d028c84ddc6c6dc82f71ff48
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 02/27/2018
 ---
-# <a name="quickstart-coding-in-the-editor"></a>Démarrage rapide : Codage dans l’éditeur
+# <a name="quickstart-use-the-code-editor"></a>Démarrage rapide : utiliser l’éditeur de code
 
 Dans cette présentation de 10 minutes de l’éditeur, vous allez ajouter du code dans un fichier pour découvrir de quelles façons Visual Studio facilite l’écriture, la navigation et la compréhension du code.
+
+Ce guide de démarrage rapide suppose que vous connaissez déjà un langage de programmation. Si ce n’est pas le cas, nous vous suggérons de commencer par consulter l’un des guides de démarrage rapide de programmation, par exemple, créer une application web en [Python](../ide/quickstart-python.md) ou en [C#](../ide/tutorial-csharp-aspnet-core.md), ou créer une application de console en [Visual Basic](../ide/quickstart-visual-basic-console.md) ou en [C++](../ide/quickstart-cpp.md).
 
 ## <a name="create-a-new-code-file"></a>Créer un fichier de code
 
@@ -67,7 +72,7 @@ La barre d’outils a plusieurs boutons conçus pour vous aider à écrire du co
         "brown",
         "fox",
         "jumps"
-    }
+    };
 
     string[] morewords = {
         "over",
@@ -134,7 +139,7 @@ L’éditeur de Visual Studio facilite l’inspection de la définition d’un t
 
 ## <a name="refactoring-a-name"></a>Refactorisation d’un nom
 
-Aucun développeur ne réussit à créer un code parfait dès le départ. L’une de vos premières modifications sera probablement de changer le nom d’une variable ou d’une méthode. Nous allons donc essayer la fonctionnalité de [refactorisation](../ide/refactoring-code-generation-quick-actions.md#refactoring) de Visual Studio pour renommer la variable `_words` en `words`.
+Aucun développeur ne réussit à créer un code parfait dès le départ. L’une de vos premières modifications sera probablement de changer le nom d’une variable ou d’une méthode. Nous allons donc essayer la fonctionnalité de [refactorisation](../ide/refactoring-in-visual-studio.md) de Visual Studio pour renommer la variable `_words` en `words`.
 
 1. Placez votre curseur sur la définition de la variable `words`, puis choisissez **Renommer...** dans le menu contextuel (clic droit), ou appuyez sur **Ctrl**+**R**, **Ctrl**+**R**.
 
@@ -154,11 +159,11 @@ Vous avez terminé ce guide de démarrage rapide pour l’éditeur de Visual Stu
 
 ## <a name="see-also"></a>Voir aussi
 
-[Démarrage rapide : premier aperçu de l’IDE Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Démarrage rapide : Personnaliser l’éditeur et l’IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)  
-[Démarrage rapide : Projets et solutions](../ide/quickstart-projects-solutions.md)  
-[Extraits de code](../ide/code-snippets.md)  
-[Mode Plan](../ide/outlining.md)  
-[Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)  
-[Refactorisation](../ide/refactoring-code-generation-quick-actions.md#refactoring)  
-[Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)  
+- [Démarrage rapide : premier aperçu de l'IDE Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Démarrage rapide : personnaliser l’éditeur et l’IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)
+- [Démarrage rapide : projets et solutions](../ide/quickstart-projects-solutions.md)
+- [Extraits de code](../ide/code-snippets.md)
+- [Mode Plan](../ide/outlining.md)
+- [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)
+- [Refactorisation](../ide/refactoring-in-visual-studio.md)
+- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)

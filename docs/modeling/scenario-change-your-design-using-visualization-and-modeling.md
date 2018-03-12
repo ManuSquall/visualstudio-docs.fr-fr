@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-modeling
 ms.topic: get-started-article
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - walkthrough [Visual Studio ALM], visualizing code
 - walkthrough [Visual Studio ALM], modeling software
 - walkthroughs [Visual Studio ALM], modeling software
-ms.assetid: ccc80825-a4a0-44fa-a0bb-f95254785a3b
-caps.latest.revision: "61"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
-ms.openlocfilehash: f0b99b4a4bcfbec58c23e529e3ee250ca19554ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.openlocfilehash: b2a52a146bf57213e4b73f3c097d771797288302
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à l’aide des outils de visualisation et de modélisation dans Visual Studio.
@@ -162,7 +161,7 @@ Pour dessiner des diagrammes de dépendance, vous devez créer un projet de mod�
   
  Par exemple, le développeur crée une carte de code. Il ajuste la portée pour se concentrer sur les zones concernées par le nouveau scénario. Ces zones sont sélectionnées et mises en surbrillance sur la carte :  
   
- ![Graphique de dépendance Namespace](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")  
+ ![Namespace Dependency Graph](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")  
   
  **Carte de code des espaces de noms**  
   
@@ -253,7 +252,7 @@ Pour dessiner des diagrammes de dépendance, vous devez créer un projet de mod�
   
 -   [Utiliser la gestion de version](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
--   [Générer l’application](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+-   [Build et release](/vsts/build-release/index)  
   
 ##  <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne et Dinner Now doivent intégrer leurs systèmes de paiement. Les sections suivantes présentent les diagrammes de modélisation dans Visual Studio qui les aident à effectuer cette tâche :  
@@ -486,11 +485,10 @@ Pour dessiner des diagrammes de dépendance, vous devez créer un projet de mod�
 |------------------|---------------|  
 |**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
   
-## <a name="see-also"></a>Voir aussi  
- [Visualiser le code](../modeling/visualize-code.md)   
- [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)   
- [Utiliser les modèles de développement Agile](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)   
+## <a name="see-also"></a>Voir aussi
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+[Visualiser le code](../modeling/visualize-code.md)   
+[Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)   
+[Utiliser les modèles de développement Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+[Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)
  

@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: structures [Visual Studio SDK]
+helpviewer_keywords:
+- structures [Visual Studio SDK]
 ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2fc3225bda24a9ea0d759c1f684801723ea396f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1cae50d4ff122ebea1fa11291570ac23f556f6f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="structures-and-unions"></a>Structures et Unions
 Voici les structures et unions dans le SDK de débogage de Visual Studio.  
@@ -190,7 +194,7 @@ Voici les structures et unions dans le SDK de débogage de Visual Studio.
  [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)  
  Décrit une adresse qui est relatif à un `this` pointeur (`Me` en Visual Basic).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h, sh.h ou ee.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

@@ -4,18 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 590c9a69-4e22-4841-bb23-f32e80ec1e76
-caps.latest.revision: "8"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: 1acbeb95ed7fa59fd64feefe050debc0ce9b6461
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 043ed310c3b0958a407246a4789d089096bb811d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Référence des API pour le Kit de développement logiciel de modélisation pour Visual Studio
 Le Visual Studio Visualization and Modeling SDK fournit la plateforme sur laquelle reposent vos outils de langages de spécifique à un domaine (DSL).  

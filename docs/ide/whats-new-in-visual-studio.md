@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.StartPage.WhatsNew
+f1_keywords:
+- VS.StartPage.WhatsNew
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,11 +17,13 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload:
+- multiple
+ms.openlocfilehash: a41d683701b4d8e0ca9cb973486a1e07216ea894
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Nouveautés dans Visual Studio 2017 RC
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Mises à jour pour la [version 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -33,7 +37,7 @@ Voici un récapitulatif général des changements par rapport à la version ant�
 * **Développement d’applications Windows**. Avec les modèles UWP fournis dans Visual Studio 2017, créez un projet unique pour tous les appareils Windows 10 &ndash; PC, tablette, téléphone, Xbox, HoloLens, Surface Hub, etc. Ensuite, créez un package d’application et soumettez-le sur le Microsoft Store à partir de Visual Studio pour distribuer votre application aux clients.
 * **Développement d’applications mobiles**. Dans Visual Studio 2017, vous pouvez innover et obtenir des résultats rapides grâce à Xamarin, qui unifie vos besoins mobiles multi-plateformes à l’aide d’une base de code et d’un ensemble de compétences essentiels. Favorisez la mobilité de vos équipes existantes, les investissements technologiques, et optez pour le code C# pour créer des expériences consommateur en avance et pour un budget inférieur. Accélérez chaque étape du cycle de vie mobile pour offrir des expériences consommateur de classe mondiale ou un portefeuille d’applications de productivité pour encourager la mobilité de votre personnel.
 * **Développement multiplateforme**. Livrez sans plus d’effort des logiciels pour toutes les plateformes ciblées. Étendez les processus DevOps à SQL Server à l’aide de Redgate Data Tools et automatisez en toute sécurité les déploiements de bases de données à partir de Visual Studio. Sinon, utilisez .NET Core pour écrire des applications et des bibliothèques qui s’exécutent sans modification sur les systèmes d’exploitation Windows, Linux et macOS. (Autre **nouveauté de la version 15.3** : la prise en charge côte à côte des kits SDK .NET Core 2.0.)
-* **Développement de jeux**. Avec Visual Studio Tools for Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d'éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs. La dernière version de VSTU inclut la coloration de la syntaxe pour le langage ShaderLab de Unity, des visualisations du débogueur améliorées et une génération de code améliorée pour l’Assistant MonoBehavior. VSTU apporte également vos fichiers de projet Unity et vos messages de console, et offre la possibilité de démarrer votre jeu dans Visual Studio, afin de perdre moins de temps à aller et venir de l'éditeur Unity en cours d'écriture.
+* **Développement de jeux**. Avec Visual Studio Tools for Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d'éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs. La dernière mise en production de VSTU inclut la coloration de la syntaxe pour le langage ShaderLab de Unity, des visualisations du débogueur améliorées et une génération de code améliorée pour l’Assistant MonoBehavior. VSTU apporte également vos fichiers de projet Unity et vos messages de console, et offre la possibilité de démarrer votre jeu dans Visual Studio, afin de perdre moins de temps à aller et venir de l'éditeur Unity en cours d'écriture.
 * **Développement IA**. Avec Visual Studio Tools pour AI (**nouveauté de la version 15.5**), vous pouvez utiliser les fonctionnalités de productivité de Visual Studio pour accélérer l’innovation de l’intelligence artificielle (IA). Créez, testez et déployez des solutions d’apprentissage profond (deep learning) / d’intelligence artificielle (IA) qui s’intègrent parfaitement à Azure Machine Learning pour offrir de puissantes fonctionnalités d’expérimentation, telles que l’envoi des tâches de préparation des données et d’apprentissage des modèles en toute transparence à différentes cibles de calcul. Visual Studio Tools pour AI prend en charge les métriques personnalisées et le suivi de l’historique des exécutions, ce qui permet l’audit et la reproductibilité de la science des données.
 
 > [!NOTE]
@@ -126,7 +130,7 @@ La refactorisation consiste à améliorer du code existant. Ce processus modifie
 *   Convertir if-to-switch
 *   Supprimer la variable inutilisée
 
-Pour plus d’informations, consultez [Actions rapides](../ide/quick-actions.md#common-quick-actions).
+Pour plus d’informations, consultez [Actions rapides](../ide/common-quick-actions.md).
 
 #### <a name="interact-with-git"></a>Interagir avec Git
 Lorsque vous travaillez avec un projet dans Visual Studio, vous pouvez installer et rapidement valider et publier votre code sur un service Git. Vous pouvez également gérer vos référentiels Git en cliquant dans les menus à partir des boutons situés en bas à droite de l’IDE.
@@ -223,7 +227,7 @@ En plus de simplifier le processus de développement des applications, Windows 1
 * **Le meilleur d’UWP et de Win32** <br/>
 Nous avons ajouté la fonctionnalité [Pont du bureau](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) à la plateforme Windows 10 pour que Windows 10 puisse mieux répondre aux besoins de tous les développeurs d’applications .NET ciblant UWP, WPF, Windows Forms ou Xamarin. Avec le nouveau type de projet de création de package d’application disponible dans Visual Studio 2017 version 15.5, vous pouvez créer des packages d’application Windows pour vos projets WPF ou Windows Forms, de la même manière que pour des projets UWP. Une fois que vous avez créé le package de votre application, vous pouvez utiliser toutes les fonctionnalités de déploiement d’applications Windows 10, puis distribuer votre application par le biais de Microsoft Store (pour les applications consommateur) ou de Microsoft Store pour Entreprises et Éducation. Les applications packagées ont accès à la surface d’API UWP complète et aux API Win32 du bureau. Vous pouvez donc maintenant moderniser progressivement vos applications WPF et Windows Forms avec des API UWP et des fonctionnalités Windows 10. De plus, vous pouvez ajouter vos composants Win32 dans vos applications UWP qui sont disponibles sur le bureau avec toutes les fonctionnalités Win32. 
 
-Pour plus d’informations sur UWP, consultez la page [Développer des applications pour la plateforme Windows universelle (UWP)](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp).
+Pour plus d’informations sur UWP, consultez la page [Développer des applications pour la plateforme Windows universelle (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md).
 
 ## <a name="mobile-app-development"></a>Développement d’applications mobiles
 ### <a name="xamarin"></a>Xamarin
@@ -270,7 +274,7 @@ Il offre aussi maintenant la prise en charge de Docker.
 
 **Nouveauté de 15.3** : Visual Studio 2017 version 15.3 prend en charge le développement de .NET Core 2.0. L’utilisation de .NET Core 2.0 nécessite de télécharger et d’installer le kit SDK .NET Core 2.0 séparément.  
 
-Pour plus d’informations, consultez la page [Guide .NET Core](https://docs.microsoft.com/dotnet/core/index).
+Pour plus d’informations, consultez la page [Guide .NET Core](/dotnet/core/index).
 
 ## <a name="games-development"></a>Développement de jeux
 ### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools pour Unity
@@ -301,6 +305,6 @@ Si vous souhaitez faire des suggestions sur la façon dont nous pouvons amélior
 ## <a name="see-also"></a>Voir aussi
 * [Notes de publication de Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Nouveautés de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [Nouveautés de C#](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
+* [Nouveautés de C#](/dotnet/csharp/whats-new)  
 * [Nouveautés de Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
 * [Nouveautés de Visual Studio pour Mac](https://www.visualstudio.com/vs/visual-studio-mac/)

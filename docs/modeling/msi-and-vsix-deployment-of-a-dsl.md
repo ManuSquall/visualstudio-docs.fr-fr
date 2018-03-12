@@ -4,18 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 6ce16f06-1978-4e19-8cdc-441ee65a3fb2
-caps.latest.revision: "2"
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.openlocfilehash: dafee91f26cf45d780f1b222d8daf5977980a3f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Déploiement MSI et VSIX d'un langage spécifique à un domaine
 Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur ou sur d’autres ordinateurs. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]doit déjà être installé sur l’ordinateur cible.  
@@ -76,7 +76,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
   
 1.  Définissez `InstalledByMsi` dans le manifeste d’extension. Cela empêche le VSX installé et désinstallé à l’exception par le fichier MSI. Ceci est important si vous inclurez les autres composants dans le fichier MSI.  
   
-    1.  Ouvrez DslPackage\source.extension.tt  
+    1.  Open DslPackage\source.extension.tt  
   
     2.  Insérez la ligne suivante avant de `<SupportedProducts>`:  
   
@@ -102,7 +102,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
   
 5.  Ajouter **CreateMsiSetupProject.tt** à votre projet Dsl.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Crée un fichier nommé **CreateMsiSetupProject.vdproj**.  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Crée un fichier nommé **CreateMsiSetupProject.vdproj**.  
   
 6.  Dans l’Explorateur Windows, copiez Dsl\\*.vdproj vers un nouveau dossier nommé le programme d’installation.  
   
