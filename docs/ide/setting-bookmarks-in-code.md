@@ -1,45 +1,49 @@
 ---
-title: "Définition de signets dans le code | Microsoft Docs"
+title: "Définir des signets de code dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/23/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf8367b3e4f0d20db435e16f9843e6d431c068b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ecf0aa9d18b02cffb68c68e5c844a726c749a0a3
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="setting-bookmarks-in-code"></a>Définition de signets dans le code
+# <a name="set-bookmarks-in-code"></a>Définir des signets dans le code
 
-Vous pouvez utiliser des signets pour marquer les lignes de votre code afin de pouvoir rapidement revenir à un emplacement spécifique et basculer d'un emplacement à un autre. Les commandes et les icônes de signet sont disponibles à deux emplacements : dans la fenêtre de signet (**Affichage** > **Fenêtre Signet**) et dans la barre d’outils de l’Éditeur de texte.
+Vous pouvez utiliser des signets pour marquer des lignes de votre code afin de pouvoir rapidement revenir à un emplacement spécifique, ou basculer d’un emplacement à un autre. Les commandes et les icônes de signet sont disponibles à deux emplacements : dans la fenêtre de signet **Fenêtre Signet** (**Affichage** > **Fenêtre Signet**) et dans la barre d’outils de l’Éditeur de texte.
 
-## <a name="managing-bookmarks"></a>Gestion des signets
+![Barre d’outils Signet](media/bookmark-toolbar.png)
 
-Pour ajouter un signet, placez le curseur sur la ligne où vous souhaitez insérer un signet. Cliquez sur le bouton **Basculer** ou appuyez sur Ctrl+K. Cela ajoute le signet. Si vous recliquez sur le bouton Basculer (ou si vous réappuyez sur Ctrl+K), le signet est supprimé. Vous pouvez également supprimer des signets en cliquant sur le bouton **Supprimer** dans la fenêtre de signet.
+![Fenêtre Signet](media/bookmark-window.png)
+
+## <a name="manage-bookmarks"></a>Gérer les signets
+
+Pour ajouter un signet, placez le curseur sur la ligne où vous souhaitez insérer un signet. Choisissez le bouton **Activer/désactiver un signet** ou appuyez sur **Ctrl**+**K**, **Ctrl**+**K**. Cela ajoute le signet. Si vous choisissez à nouveau le bouton **Activer/désactiver un signet** (ou si vous appuyez à nouveau sur **Ctrl**+**K**, **Ctrl**+**K**), le signet est supprimé.
+
+Pour voir facilement à quoi est destiné un signet spécifique, vous pouvez le renommer dans la **fenêtre Signet** à partir du menu contextuel obtenu en cliquant avec le bouton droit. Vous pouvez supprimer des signets en choisissant le bouton **Supprimer** de la fenêtre Signet.
 
 > [!IMPORTANT]
 > Le signet est défini au numéro de ligne, et non au code. Si vous modifiez le code, le signet est conservé au numéro de ligne ; il ne se déplace pas avec le code.
 
-Vous pouvez naviguer entre les signets à l’aide des boutons **Signet suivant** et **Signet précédent** dans la fenêtre de signet.
+Vous pouvez naviguer entre les signets à l’aide des boutons **Signet suivant** et **Signet précédent** dans la fenêtre Signet.
 
-Vous pouvez organiser les signets dans des dossiers virtuels en cliquant sur **Nouveau dossier** dans la fenêtre de signet et en faisant glisser les signets sélectionnés dans le nouveau dossier.
+Vous pouvez organiser les signets dans des dossiers virtuels en choisissant **Nouveau dossier** dans la fenêtre Signet et en faisant glisser les signets sélectionnés dans le nouveau dossier.
 
-Vous pouvez désactiver des signets (sans les supprimer) en cliquant sur le bouton **Désactiver tous les signets** dans la fenêtre de signet. Vous pouvez les réactiver en cliquant sur le même bouton (qui est maintenant libellé **Activer tous les signets**).
+Vous pouvez désactiver les signets (sans les supprimer) en choisissant le bouton **Désactiver tous les signets** dans la fenêtre Signet. Vous pouvez les réactiver en choisissant le même bouton (qui est maintenant libellé **Activer tous les signets**).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Écrire du code dans l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Écrire du code dans l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)

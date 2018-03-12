@@ -21,13 +21,13 @@ f1_keywords:
 - VC.Project.VCNMakeTool.ForcedIncludes
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 9f39aaaa17f48f832210ca26c1e255ae4b054514
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 955e3f7dfbab3293a01392c52b82aa2b7dce25c2
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="nmake-properties-android-c"></a>Propriétés NMake (Android C++) 
+# <a name="nmake-properties-android-c"></a>Propriétés NMake (Android C++)
 
 Propriété | Description
 --- | ---
@@ -38,4 +38,4 @@ Sortie | Spécifie le fichier de sortie à générer.
 Définitions de préprocesseur | Spécifie les définitions du préprocesseur utilisées par les fichiers sources.
 Chemin de recherche Include | Spécifie le chemin de recherche Include pour résoudre les fichiers Include.
 Fichiers Include forcés | Spécifie les fichiers Include forcés.
-Options supplémentaires | Spécifie les commutateurs du compilateur supplémentaires utilisés par IntelliSense durant l’analyse des fichiers C++
+Options supplémentaires | Spécifie les commutateurs supplémentaires du compilateur utilisés par IntelliSense lors de l’analyse des fichiers C++.
