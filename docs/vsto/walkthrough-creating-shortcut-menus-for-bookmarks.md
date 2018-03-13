@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,7 +19,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -191,7 +193,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="next-steps"></a>Étapes suivantes  
  Voici quelques tâches susceptibles de venir après :  
   
--   Écrire du code pour répondre aux événements de contrôles hôtes dans Excel. Pour plus d'informations, consultez [Walkthrough: Programming Against Events of a NamedRange Control](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+-   Écrire du code pour répondre aux événements de contrôles hôtes dans Excel. Pour plus d'informations, consultez [Procédure pas à pas : programmation d'événements d'un contrôle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
 -   Utilisez une case à cocher pour modifier la mise en forme dans un signet. Pour plus d’informations, consultez [procédure pas à pas : modification de Document mise en forme à l’aide de contrôles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   

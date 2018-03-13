@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: c81cba2c80f8eaabeae15fc5425ed7e02c378123
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -69,7 +71,7 @@ ms.lasthandoff: 01/10/2018
  Les projets Office dans Visual Studio 2013 peuvent cibler les applications [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] et [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]  Visual Studio modifie le projet pour cibler la version la plus récente d'Office que vous avez installée. Si aucune de ces versions d'Office n'est installée, Visual Studio ne met pas à niveau le projet.  
   
 > [!NOTE]  
->  Si vous mettez à niveau un projet de complément VSTO pour cibler [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou une version ultérieure, assurez-vous que le `ThisAddIn_Startup` Gestionnaire d’événements de la macro complémentaire VSTO ne contient pas le code qui accède à un document dans l’application. Pour plus d'informations, consultez [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
+>  Si vous mettez à niveau un projet de complément VSTO pour cibler [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou une version ultérieure, assurez-vous que le `ThisAddIn_Startup` Gestionnaire d’événements de la macro complémentaire VSTO ne contient pas le code qui accède à un document dans l’application. Pour plus d'informations, consultez [Accès à un document lorsque l'application Office démarre](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
   
  Pour les personnalisations au niveau du document, [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] convertit les documents d'un projet qui ont un format binaire, tels que les documents dotés d'une extension .xls ou .doc, au format Office Open XML. Pour plus d’informations sur Open XML, consultez [Présentation des nouvelles extensions de nom de fichier et des formats Open XML](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1).  
   
@@ -83,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  Si le document figurant dans le projet contient des contrôles Windows Forms, Visual Studio 2005 Tools pour Office Second Edition Runtime doit être installé avant la mise à niveau du projet. Si cette version du runtime n'est pas installée sur l'ordinateur de développement avant la mise à niveau du projet, le projet mis à niveau peut contenir des erreurs de compilation ou d'exécution. Une fois la mise à niveau du projet terminée, vous pourrez désinstaller Visual Studio 2005 Tools pour Office Second Edition Runtime de l'ordinateur de développement s'il n'est pas utilisé par d'autres solutions Office. Cette version du runtime est disponible sous forme de package redistribuable dans le Centre de téléchargement Microsoft : [Microsoft Visual Studio 2005 Tools pour Office Second Edition Runtime (VSTO 2005 SE) (x86)](http://go.microsoft.com/fwlink/?linkid=49612).  
   
 ### <a name="vsto-add-in-projects"></a>Projets de complément VSTO  
- Si le fichier solution de votre projet d’origine incluait un projet d’installation ou InstallShield Limited Edition configuré pour installer le complément VSTO, Visual Studio met à niveau du projet, mais il n’apporte aucune autre modification au projet. Si vous voulez continuer à utiliser un fichier Windows Installer pour déployer votre complément VSTO, vous devez modifier le projet d’installation ou InstallShield Limited Edition pour installer les nouveaux composants prérequis tels que [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], Visual Studio 2010 Tools pour Office Runtime et éventuellement les assemblys PIA (Primary Interop Assembly) référencés par votre complément VSTO. Pour plus d'informations, consultez [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
+ Si le fichier solution de votre projet d’origine incluait un projet d’installation ou InstallShield Limited Edition configuré pour installer le complément VSTO, Visual Studio met à niveau du projet, mais il n’apporte aucune autre modification au projet. Si vous voulez continuer à utiliser un fichier Windows Installer pour déployer votre complément VSTO, vous devez modifier le projet d’installation ou InstallShield Limited Edition pour installer les nouveaux composants prérequis tels que [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], Visual Studio 2010 Tools pour Office Runtime et éventuellement les assemblys PIA (Primary Interop Assembly) référencés par votre complément VSTO. Pour plus d'informations, consultez [Déploiement d'une solution Office à l'aide de Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
  Si vous voulez utiliser ClickOnce pour déployer votre complément VSTO, vous pouvez supprimer entièrement le projet d’installation ou InstallShield Limited Edition. Pour plus d’informations sur le déploiement des Compléments VSTO à l’aide de ClickOnce, consultez [déploiement d’une Solution Office](../vsto/deploying-an-office-solution.md).  
   
