@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,7 +19,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 01e9dfbe244d373eaa4e66c13e02c781b32b8691
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -32,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
  Si vous ajoutez les contrôles au moment du design, vous devez définir d’options de positionnement pour chaque contrôle.  
   
- Si vous ajoutez un contrôle Windows Forms par programmation et fournissez un argument de plage, le contrôle se redimensionne automatiquement une cellule dans la plage est redimensionnée. Pour plus d'informations, consultez [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Si vous ajoutez un contrôle Windows Forms par programmation et fournissez un argument de plage, le contrôle se redimensionne automatiquement une cellule dans la plage est redimensionnée. Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ## <a name="resizing-controls-at-design-time"></a>Redimensionnement de contrôles au moment du Design  
   

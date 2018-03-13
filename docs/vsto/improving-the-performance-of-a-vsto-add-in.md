@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,7 +14,8 @@ dev_langs:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -98,7 +100,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Cette approche n’est pas nécessaire si vous déployez votre complément, VSTO à un emplacement sécurisé sur les ordinateurs des utilisateurs.  
   
- Pour plus d'informations, consultez [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
+ Pour plus d'informations, consultez [Déploiement d'une solution Office à l'aide de Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
 ##  <a name="Bypass"></a> Bypass Ribbon Reflection  
  Si vous créez une solution à l'aide de [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], assurez-vous que vos utilisateurs ont installé la version la plus récente de Visual Studio 2010 Tools pour Office Runtime lorsque vous déployez la solution. Les versions antérieures de ce Runtime utilisaient la réflexion dans les assemblys de la solution pour localiser les personnalisations du ruban. Ce processus peut ralentir le chargement du complément VSTO.  
