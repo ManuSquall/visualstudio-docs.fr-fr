@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,7 +24,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 2c8795b643afff2cc02d507a1764871aa0e0e181
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -96,7 +98,7 @@ ms.lasthandoff: 01/10/2018
 |Redimensionnement du contrôle|Si vous redimensionnez un contrôle sur le document à l’aide d’une des huit poignées de redimensionnement, les nouvelles dimensions du contrôle ne sont pas répercutées dans le **propriétés** fenêtre jusqu'à ce que le contrôle est de nouveau activé.|  
 |Contrôler le comportement|Contrôles sur une feuille de calcul Excel peuvent se comporter de façon imprévisible lorsque la fenêtre de feuille de calcul est fractionnée. Par exemple, l’accès à un <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> sur la feuille de calcul peut être disponible uniquement dans une des fenêtres.|  
 |Contrôle d’affectation de noms|Vous ne pouvez pas utiliser les mots réservés pour nommer des contrôles. Par exemple, si vous ajoutez un <xref:Microsoft.Office.Tools.Excel.Controls.Button> à une feuille de calcul et remplacez le nom par **système**, erreurs se produisent lorsque vous générez le projet.|  
-|Ajouter des contrôles par programmation|N’utilisez pas le constructeur du contrôle pour ajouter un contrôle à votre document au moment de l’exécution. Au lieu de cela, utilisez les méthodes d’assistance fournies par le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Par exemple, utiliser le <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> méthode pour ajouter un bouton à une feuille de calcul. Si vous souhaitez ajouter un contrôle qui n’est pas pris en charge par ces méthodes d’assistance, vous pouvez utiliser la méthode AddControl. Pour plus d'informations, consultez [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).|  
+|Ajouter des contrôles par programmation|N’utilisez pas le constructeur du contrôle pour ajouter un contrôle à votre document au moment de l’exécution. Au lieu de cela, utilisez les méthodes d’assistance fournies par le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Par exemple, utiliser le <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> méthode pour ajouter un bouton à une feuille de calcul. Si vous souhaitez ajouter un contrôle qui n’est pas pris en charge par ces méthodes d’assistance, vous pouvez utiliser la méthode AddControl. Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).|  
 |Copie des contrôles|Si vous copiez un contrôle Windows Forms et collez dans un document au moment de l’exécution, un contrôle ActiveX conteneur vide est collé dans le document. Le contrôle Windows Forms n’apparaît pas dans le nouvel emplacement et code-behind du contrôle d’origine n’est pas copié dans le conteneur de contrôle ActiveX.|  
   
 ## <a name="limitations-in-document-level-projects"></a>Limitations dans les projets au niveau du Document  

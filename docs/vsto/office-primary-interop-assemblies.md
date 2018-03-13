@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 906100a572170f218a23b1887ab7fddee37251b9
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -73,7 +75,7 @@ ms.lasthandoff: 01/10/2018
 ##  <a name="usingfeatures"></a> Using Features of Multiple Microsoft Office Applications in a Single Project  
  Tous les modèles de projet Office dans Visual Studio sont conçus pour fonctionner avec une seule application Microsoft Office. Pour utiliser des fonctionnalités dans plusieurs applications Microsoft Office ou dans une application ou composant qui ne dispose pas d'un projet dans Visual Studio, vous devez ajouter une référence aux assemblys PIA requis.  
   
- Dans la plupart des cas, vous devez ajouter des références aux assemblys PIA installés par Visual Studio dans le répertoire %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\. Ces versions des assemblys apparaissent sous l'onglet **Framework** de la boîte de dialogue **Gestionnaire de références** . Pour plus d'informations, consultez [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+ Dans la plupart des cas, vous devez ajouter des références aux assemblys PIA installés par Visual Studio dans le répertoire %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\. Ces versions des assemblys apparaissent sous l'onglet **Framework** de la boîte de dialogue **Gestionnaire de références** . Pour plus d'informations, consultez [Comment : cibler les applications Office via les assemblys PIA (Primary Interop Assembly)](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
  Si vous avez installé et enregistré les assemblys PIA dans le Global Assembly Cache, ces versions des assemblys apparaissent sous l'onglet **COM** de la boîte de dialogue **Gestionnaire de références** . Vous devez éviter d'ajouter des références à ces versions d'assemblys, car des erreurs de développement peuvent se produire quand vous les utilisez. Par exemple, si vous avez enregistré différentes versions des assemblys PIA dans le Global Assembly Cache, votre projet crée automatiquement une liaison à la dernière version enregistrée de l'assembly, même si vous spécifiez une autre version de l'assembly sous l'onglet **COM** de la boîte de dialogue **Gestionnaire de références** .  
   
@@ -110,7 +112,7 @@ ms.lasthandoff: 01/10/2018
  Quand vous installez et enregistrez les assemblys PIA Office dans le Global Assembly Cache (avec Office ou en installant le package redistribuable pour les assemblys PIA), les assemblys avec redirection de liaison sont également installés uniquement dans le Global Assembly Cache. Ces assemblys permettent de faire en sorte que la version correcte des assemblys PIA est chargée au moment de l'exécution. Par exemple, quand une solution faisant référence à un assembly [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] s'exécute sur un ordinateur disposant de la version [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] du même assembly PIA, l'assembly avec redirection de liaison indique au runtime [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] de charger la version [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] de l'assembly PIA. Pour plus d’informations, consultez [Guide pratique pour activer et désactiver la redirection de liaison automatique](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
   
 ## <a name="see-also"></a>Voir aussi  
- [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Comment : cibler les applications Office via les assemblys PIA (Primary Interop Assembly)](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md)   
  [Solutions InfoPath](../vsto/infopath-solutions.md)   
  [Vue d’ensemble du modèle d’objet Outlook](../vsto/outlook-object-model-overview.md)   
