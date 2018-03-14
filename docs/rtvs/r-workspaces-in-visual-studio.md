@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 52867e51e158f2e2c2ccbccba7466c1f7246e128
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: bb520f317eb285bcc278ff9f37bb2dc25c91e950
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Décider où s’exécute le code R avec des espaces de travail
 
@@ -31,17 +31,6 @@ Pour ouvrir la fenêtre **Espaces de travail**, utilisez la commande **Outils R
 ![Fenêtre Espaces de travail dans les Outils R pour Visual Studio (VS2017)](media/workspaces-window.png)
 
 Dans cette fenêtre, la coche verte indique l’espace de travail actif auquel RTVS est lié. Vous définissez l’espace de travail actif en sélectionnant une flèche bleue. L’icône de paramètres (engrenage) à droite de chaque espace de travail vous permet de changer son nom, son emplacement et ses arguments de ligne de commande. Le X rouge supprime un espace de travail ajouté manuellement.
-
-Dans cette rubrique :
-
-- [Enregistrement et réinitialisation d’un espace de travail](#saving-and-resetting-a-workspace)
-- [Espaces de travail locaux](#local-workspaces)
-- [Espaces de travail distants](#remote-workspaces)
-- [Connexion à un espace de travail distant](#remote-workspace-logon)
-- [Basculement entre espaces de travail](#switching-between-workspaces)
-- [Répertoires sur des ordinateurs locaux et distants](#directories-on-local-and-remote-computers)
-- [Copie de fichiers projet dans des espaces de travail distants](#copying-project-files-to-remote-workspaces)
-- [Copie de fichiers à partir d’un espace de travail distant](#copying-files-from-a-remote-workspace)
 
 ## <a name="saving-and-resetting-a-workspace"></a>Enregistrement et réinitialisation d’un espace de travail
 

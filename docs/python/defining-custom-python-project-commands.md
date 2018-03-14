@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1fa4c68b1d7dc89452376d6efc47e047f75d52d6
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ec06764bb898888657a144f682827896f52ce223
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Définition de commandes personnalisées pour les projets Python
 
@@ -154,7 +154,7 @@ Toutes les valeurs d’attribut sont insensibles à la casse.
 | Arguments | Facultatif | Spécifie une chaîne d’arguments (le cas échéant) à donner à la cible. Quand le TargetType a la valeur `script`, notez que les arguments sont fournis au programme Python, et non à `python.exe`. Ignoré pour le TargetType `code`. |
 | ExecuteIn | Oui | Spécifie l’environnement dans lequel exécuter la commande :<ul><li>**console** : (par défaut) exécute Target et les arguments comme si vous les entriez directement sur la ligne de commande. Une fenêtre de commande s’affiche durant l’exécution de Target, puis se ferme automatiquement.</li><li>**consolepause** : identique à console, mais attend l’appui sur une touche avant de fermer la fenêtre.</li><li>**output** : exécute Target et affiche ses résultats dans la fenêtre Sortie de Visual Studio. Si TargetType a la valeur « pip », Visual Studio utilise Target comme nom du package et ajoute les arguments.</li><li>**repl** : exécute Target dans la [fenêtre interactive Python](interactive-repl.md) ; le nom d’affichage facultatif est utilisé pour le titre de la fenêtre.</li><li>**none** : se comporte comme console.</li></ul>|
 | WorkingDirectory | Facultatif | Dossier dans lequel exécuter la commande. |
-| ErrorRegex<br>WarningRegEx | Facultatif | Utilisé uniquement quand ExecuteIn a la valeur `output`. Les deux valeurs spécifient une expression régulière avec laquelle Visual Studio analyse le résultat de la commande pour afficher les erreurs et les avertissements dans sa fenêtre Liste d’erreurs. Si rien n’est spécifié, la commande n’affecte pas la fenêtre Liste d’erreurs. Pour plus d’informations sur ce que Visual Studio attend, consultez [Groupes de capture nommés](#named-capture-groups-for-regular-expression). |
+| ErrorRegex<br>WarningRegEx | Facultatif | Utilisé uniquement quand ExecuteIn a la valeur `output`. Les deux valeurs spécifient une expression régulière avec laquelle Visual Studio analyse le résultat de la commande pour afficher les erreurs et les avertissements dans sa fenêtre Liste d’erreurs. Si rien n’est spécifié, la commande n’affecte pas la fenêtre Liste d’erreurs. Pour plus d’informations sur ce que Visual Studio attend, consultez [Groupes de capture nommés](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Facultatif | Liste de spécifications de package pour la commande au même format que [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). Par exemple, la commande **Exécuter PyLint** spécifie `pylint>=1.0.0`. Avant d’exécuter la commande, Visual Studio vérifie que tous les packages répertoriés dans la liste sont installés. Visual Studio utilise pip pour installer les packages manquants. |
 | Environnement | Facultatif | Chaîne de variables d’environnement à définir avant d’exécuter la commande. Chaque variable utilise la forme NAME=VALUE avec plusieurs variables séparées par des points-virgules. Une variable contenant plusieurs valeurs doit être mise entre guillemets simples ou doubles. Par exemple : 'NAME=VALUE1;VALUE2'. |
 

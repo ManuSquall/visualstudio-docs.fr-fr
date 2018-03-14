@@ -13,15 +13,17 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e5195693a4ef2ba3aeec1f2d5751e56b70f19e57
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 7f6d1ebe9838102b383353ed8c7d4d9c15fadaf9
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Démarrage rapide : personnaliser l’éditeur et l’IDE de Visual Studio
 
 Dans ce démarrage rapide qui dure entre 5 et 10 minutes, nous allons personnaliser le thème de couleur de Visual Studio et deux couleurs de texte dans l’éditeur de texte.
+
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) pour l’installer gratuitement.
 
 ## <a name="set-the-color-theme"></a>Définir le thème de couleur
 

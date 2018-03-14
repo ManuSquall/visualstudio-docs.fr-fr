@@ -2,7 +2,7 @@
 title: "Utilisation de Python dans Visual Studio, Étape 4 - débogage | Microsoft Docs"
 description: "Étape 4 d’un didacticiel de base sur l’utilisation de Python dans Visual Studio, expliquant comment exécuter le code Python dans le débogueur."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 03/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed662831d37d466a89b2899b2e6822509b22c9a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8c9cf775bb7edbdb51f7eb5ce6994fedaee13c9f
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Étape 4 : Exécution du code dans le débogueur
 
@@ -32,15 +32,14 @@ En plus de ses fonctions de gestion de projets, de son expérience d’édition 
 1. Remplacez le code du fichier `PythonApplication1.py` par ceci. Cette variation du code se développe `make_dot_string`, ce qui vous permet d’examiner ses étapes discrètes dans le débogueur. Il place également la boucle `for` dans une fonction `main` et l’exécute explicitement en appelant cette fonction :
 
     ```python
-    import sys
-    from math import sin, cos, radians
+    from math import cos, radians
 
     # Create a string with spaces proportional to a cosine of x in degrees
     def make_dot_string(x):
         rad = radians(x)                             # cos works with radians
         numspaces = int(20 * cos(radians(x)) + 20)   # scale to 0-40 spaces
-        str = ' ' * numspaces + 'o'                  # place 'o' after the spaces
-        return str
+        st = ' ' * numspaces + 'o'                   # place 'o' after the spaces
+        return st
 
     def main():
         for i in range(0, 1800, 12):

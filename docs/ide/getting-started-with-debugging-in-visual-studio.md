@@ -4,23 +4,27 @@ ms.custom:
 ms.date: 12/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c75b5508cd23a2131bcdd64cf52aacc1486d2713
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Bien démarrer avec le débogage dans Visual Studio
 Visual Studio intègre un ensemble puissant d’outils de génération et de débogage de projets. Dans cette rubrique, vous allez apprendre à utiliser l’ensemble des fonctionnalités de base de l’interface utilisateur de débogage.  
+
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) pour l’installer gratuitement.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio"></a>Mon code ne fonctionne pas. Comment obtenir de l’aide dans Visual Studio ?  
  Vous avez compris comment fonctionne l’éditeur et vous venez de créer du code. Vous devez à présent déboguer ce code. Dans Visual Studio, comme dans la plupart des environnements de développement intégrés (IDE), le débogage comprend deux phases : la génération du code pour intercepter et résoudre les erreurs liées au projet et au compilateur, puis l’exécution du code dans l’environnement pour intercepter et résoudre les erreurs dynamiques et d’exécution.  
@@ -118,7 +122,7 @@ Le moyen le plus simple de générer votre projet consiste à appuyer sur **F7**
 ### <a name="inspect-your-code-at-run-time"></a>Inspecter le code au moment de l’exécution  
  Quand votre code atteint un point d’arrêt et s’interrompt, la ligne de code marquée en jaune (l’instruction en cours) n’a pas encore été exécutée. À ce stade, vous souhaiterez peut-être exécuter l’instruction en cours, puis inspecter les valeurs modifiées. Vous pouvez utiliser plusieurs commandes d’analyse *pas à pas* pour exécuter le code dans le débogueur. Si le code marqué est un appel de méthode, vous pouvez effectuer un pas à pas détaillé en appuyant sur **F11**. Vous pouvez également *exécuter pas à pas* la ligne de code en appuyant sur **F10**. Pour plus d’informations sur les commandes supplémentaires et sur la façon de parcourir le code, consultez [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md).
 
- ![Inspection de valeur d’exécution dans Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value") 
+ ![Inspection de valeur d’exécution dans Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value")
 
  Dans l’illustration précédente, vous pouvez avancer d’une instruction dans le débogueur en appuyant sur **F10** ou **F11** (comme il n’y a ici aucun appel de méthode, les deux commandes ont le même résultat).
 
@@ -126,7 +130,7 @@ Le moyen le plus simple de générer votre projet consiste à appuyer sur **F7**
 
  ![Inspection de valeur d’exécution dans Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
 
- Pointez sur une variable pour afficher la ou les valeurs et références qu'elle contient actuellement. Si vous remarquez une valeur à laquelle vous ne vous attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel.  Pour en savoir plus sur l’utilisation du débogueur, consultez [cet article](../debugger/getting-started-with-the-debugger.md). 
+ Pointez sur une variable pour afficher la ou les valeurs et références qu'elle contient actuellement. Si vous remarquez une valeur à laquelle vous ne vous attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel.  Pour en savoir plus sur l’utilisation du débogueur, consultez [cet article](../debugger/getting-started-with-the-debugger.md).
 
  Par ailleurs, Visual Studio affiche la fenêtre Outils de diagnostic. Celle-ci vous permet d’observer l’utilisation de l’UC et de la mémoire de votre application au fil du temps. Ultérieurement lors du développement de vos applications, vous pourrez utiliser ces outils pour rechercher les utilisations du processeur ou les allocations de mémoire importantes et imprévues. Utilisez-les conjointement avec la fenêtre **Espion** et les points d’arrêt pour déterminer le problème à l’origine d’une utilisation élevée inattendue ou de la non-libération de ressources.  Pour plus d’informations, consultez [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md).
 

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -39,7 +40,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1512b4774efea9639f01135932ad076f6630ea12
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -77,12 +79,12 @@ ms.lasthandoff: 01/10/2018
   
  L’élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook> n’agit pas comme un conteneur pour les contrôles qui possèdent une interface utilisateur. À la place, le concepteur de cet élément hôte fonctionne comme une barre d’état des composants, ce qui vous permet de faire glisser un composant, tel qu’un <xref:System.Data.DataSet>, sur son aire de conception. Pour plus d'informations, consultez [Workbook Host Item](../vsto/workbook-host-item.md).  
   
- Il n’est pas possible de créer par programmation des éléments hôtes dans des projets au niveau du document. Utilisez plutôt les classes `ThisDocument`, `ThisWorkbook`, ou `Sheet`*n* que Visual Studio génère automatiquement dans votre projet au moment du design. Ces classes générées dérivent des éléments hôtes et fournissent un point d’entrée pour votre code. Pour plus d'informations, consultez [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+ Il n’est pas possible de créer par programmation des éléments hôtes dans des projets au niveau du document. Utilisez plutôt les classes `ThisDocument`, `ThisWorkbook`, ou `Sheet`*n* que Visual Studio génère automatiquement dans votre projet au moment du design. Ces classes générées dérivent des éléments hôtes et fournissent un point d’entrée pour votre code. Pour plus d'informations, consultez [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ### <a name="understanding-host-items-in-vsto-add-in-projects"></a>Présentation des éléments hôtes dans les projets de complément VSTO  
  Lorsque vous créez un complément VSTO, vous n’avez pas accès à quelque élément hôte que ce soit par défaut. Toutefois, vous pouvez générer les éléments hôtes <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>et <xref:Microsoft.Office.Tools.Excel.Worksheet> dans des compléments Word et Excel VSTO au moment de l’exécution.  
   
- Après avoir généré un élément hôte, vous pouvez effectuer des tâches telles que l’ajout de contrôles à des documents. Pour plus d'informations, consultez [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Après avoir généré un élément hôte, vous pouvez effectuer des tâches telles que l’ajout de contrôles à des documents. Pour plus d'informations, consultez [Extension de documents Word et de classeurs Excel dans des compléments VSTO au moment de l'exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="host-controls"></a>Contrôles hôtes  
  Les contrôles hôtes étendent différents objets interface utilisateur dans les modèles objet Word et Excel, tels que Microsoft.Office.Interop.Word.ContentControl et <xref:Microsoft.Office.Interop.Excel.Range> objets.  
@@ -127,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Faites glisser des contrôles hôtes de la fenêtre **Sources de données** vers vos documents et feuilles de calcul. Vous pouvez ainsi ajouter des contrôles déjà liés à des données. Pour plus d’informations, consultez [liaison de données aux contrôles dans les Solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- Dans les projets au niveau du document et de complément VSTO, vous pouvez également ajouter des contrôles hôtes aux documents au moment de l’exécution. Pour plus d'informations, consultez [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Dans les projets au niveau du document et de complément VSTO, vous pouvez également ajouter des contrôles hôtes aux documents au moment de l’exécution. Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Pour plus d’informations sur la manière d’ajouter des contrôles hôtes à des documents, consultez les rubriques suivantes :  
   
@@ -158,7 +160,7 @@ ms.lasthandoff: 01/10/2018
   
  Si vous ajoutez un contrôle hôte à un document au moment du design, vous ne devez pas le supprimer par programmation au moment de l’exécution, car sinon, une exception est levée la prochaine fois que vous essayez d’utiliser le contrôle dans le code. La méthode `Delete` d’un contrôle hôte supprime uniquement les contrôles hôtes qui sont ajoutés au document au moment de l’exécution. Si vous appelez la méthode `Delete` d’un contrôle hôte qui a été créé au moment du design, une exception est levée.  
   
- Par exemple, la méthode <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> d’un <xref:Microsoft.Office.Tools.Excel.NamedRange> supprime correctement le <xref:Microsoft.Office.Tools.Excel.NamedRange> uniquement s’il a été ajouté par programmation à la feuille de calcul, ce qui correspond à la création dynamique de contrôles hôtes. Les contrôles hôtes créés dynamiquement peuvent également être supprimés en passant le nom du contrôle à la méthode `Remove` de la propriété <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> ou <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> Pour plus d'informations, consultez [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Par exemple, la méthode <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> d’un <xref:Microsoft.Office.Tools.Excel.NamedRange> supprime correctement le <xref:Microsoft.Office.Tools.Excel.NamedRange> uniquement s’il a été ajouté par programmation à la feuille de calcul, ce qui correspond à la création dynamique de contrôles hôtes. Les contrôles hôtes créés dynamiquement peuvent également être supprimés en passant le nom du contrôle à la méthode `Remove` de la propriété <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> ou <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Si les utilisateurs finaux suppriment un contrôle hôte du document au moment de l’exécution, la solution peut échouer de manière inattendue. Vous pouvez utiliser les fonctionnalités de protection de document dans Word et Excel pour empêcher la suppression des contrôles hôtes. Pour plus d'informations, consultez [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
   
@@ -172,7 +174,7 @@ ms.lasthandoff: 01/10/2018
 >  Vous ne devez pas attribuer la valeur <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> à la propriété <xref:Microsoft.Office.Interop.Excel.Application> de l'objet **T:Microsoft.Office.Interop.Excel.Application**. Si cette propriété a la valeur **false** , Excel ne peut pas déclencher d’événements, y compris les événements de contrôles hôtes.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Programmation des personnalisations au niveau du Document](../vsto/programming-document-level-customizations.md)   
  [Automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)   

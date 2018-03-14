@@ -2,7 +2,7 @@
 title: "Démarrage rapide : Créer un projet Python dans Visual Studio à l’aide d’un modèle | Microsoft Docs"
 description: "Commencez rapidement à utiliser Python en créant un projet Visual Studio à l’aide de l’un des modèles intégrés."
 ms.custom: 
-ms.date: 09/25/2017
+ms.date: 03/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 648c1e2b4ee3a5c9bc10d74ee384a08bc5ddce64
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 4ab0f91022240d1fcf60bd6889ea9b2ec39f2db3
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Démarrage rapide : Créer un projet Python à partir d’un modèle dans Visual Studio
 
@@ -66,14 +66,14 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
             output += "%04d" % (carry + (total / scale))
             carry = total % scale
 
-        return output;
+        return output
 
     def test_py():
-        digits = 1000;
+        digits = 1000
 
         start = perf_counter()
-        output = pi_digits_Python(digits);
-        elapsed = perf_counter() - start;
+        output = pi_digits_Python(digits)
+        elapsed = perf_counter() - start
 
         print("PI to " + str(digits) + " digits in " + str(int(elapsed * 10000)/10000) + " seconds:")
 
@@ -81,7 +81,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
         print(output.replace("3", "3.", 1))
 
     if __name__ == "__main__":
-        test_py();
+        test_py()
     ```
 
 1. Exécutez le programme en appuyant sur Ctrl+F5 ou en sélectionnant **Déboguer > Démarrer sans débogage** dans le menu. Les résultats s’affichent dans une fenêtre de console.
