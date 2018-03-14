@@ -513,7 +513,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]  
 ```  
   
- Le **IconMappingFilename** est un chemin d’accès relatif enraciné implicitement à $ $PackageFolder (comme dans l’exemple ci-dessus), ou un chemin d’accès absolu explicitement située dans le répertoire défini par une variable d’environnement, telles que @"%UserProfile%\ dir1\dir2\MyMappingFile.csv».  
+ Le **IconMappingFilename** est un chemin d’accès relatif enraciné implicitement à $ $PackageFolder (comme dans l’exemple ci-dessus) ou un chemin d’accès absolu explicitement située dans le répertoire défini par une variable d’environnement, telles que @"%UserProfile%\dir1\dir2\MyMappingFile.csv".  
   
 ## <a name="how-do-i-port-a-project-system"></a>Comment de port d’un système de projet  
  **Comment fournir ImageMonikers pour un projet**  
