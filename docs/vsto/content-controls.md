@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -41,7 +42,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: e06075c0e748aab34c4a1df425f95592856217db
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -170,7 +172,7 @@ ms.lasthandoff: 01/10/2018
   
  Dans les projets au niveau du document et les projets de complément VSTO, vous pouvez lier par programmation un contrôle de contenu à une source de données en utilisant la méthode <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> de la propriété <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> du contrôle. Dans ce cas, passez la chaîne **texte** à la *propertyName* paramètre de la <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> (méthode). Le **texte** propriété est la propriété de liaison de données par défaut des contrôles de contenu.  
   
- Les contrôles de contenu prennent également en charge la liaison de données bidirectionnelle, dans laquelle les modifications apportées au contrôle sont répercutées dans la source de données. Pour plus d'informations, consultez [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+ Les contrôles de contenu prennent également en charge la liaison de données bidirectionnelle, dans laquelle les modifications apportées au contrôle sont répercutées dans la source de données. Pour plus d'informations, consultez [Comment : mettre à jour une source de données avec les données d'un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
 > [!NOTE]  
 >  Les contrôles de contenu ne prennent pas en charge la liaison de données complexe. Si vous liez un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> ou un <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> à une source de données à l'aide du modèle de données Windows Forms, les utilisateurs ne verront qu'une seule valeur lorsqu'ils cliqueront sur le contrôle. Si vous voulez lier ces contrôles à une série de valeurs données à partir de laquelle les utilisateurs peuvent choisir, vous pouvez lier ces contrôles à des éléments d'une partie XML personnalisée.  

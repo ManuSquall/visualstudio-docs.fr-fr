@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,11 +21,12 @@ helpviewer_keywords:
 - custom prerequisites
 - redistributables list
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
-caps.latest.revision: "45"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 5f269369084df3d81d323e75730fad27713831ca
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -37,7 +39,7 @@ Le programme d'installation est un programme d'installation générique qui peut
  Le programme d'amorçage détecte d'abord si l'un des composants requis est déjà installé. Si des composants requis ne sont pas installés, le programme d'amorçage commence par afficher les contrats de licence. Une fois que l'utilisateur a accepté les contrats de licence, l'installation des composants requis s'exécute. Si tous les composants requis sont détectés, le programme d'amorçage démarre simplement le programme d'installation de l'application.  
   
 ## <a name="creating-custom-packages"></a>Création de packages personnalisés  
- Vous pouvez générer les manifestes à l'aide de l'Éditeur XML de Visual Studio. Pour plus d’informations, consultez [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) et [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Pour accéder à un exemple de création de package de programme d’amorçage, consultez [Walkthrough: Creating a Custom Bootstrapper to Show a Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Vous pouvez générer les manifestes à l'aide de l'Éditeur XML de Visual Studio. Pour plus d’informations, consultez [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) et [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Pour accéder à un exemple de création de package de programme d’amorçage, consultez [Procédure pas à pas : création d'un programme d'amorçage personnalisé pour afficher une invite de confidentialité](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Pour créer un package de programme d'amorçage, vous devez fournir le composant redistribuable sous la forme d'un fichier EXE ou MSI au générateur de manifeste de programme d'amorçage. Ce dernier crée ensuite les fichiers suivants :  
   

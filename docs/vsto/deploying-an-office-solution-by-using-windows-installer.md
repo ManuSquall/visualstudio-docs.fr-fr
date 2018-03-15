@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,7 +22,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -50,7 +52,7 @@ En utilisant Visual Studio pour créer un fichier Windows Installer, vous pouvez
   
 - [Configurer les modules dépendants comme des composants requis](#Configure)  
   
-- [Specify where you want to deploy the solution on the user's computer](#Location)  
+- [Spécifier où installer la solution sur l'ordinateur de l'utilisateur](#Location)  
   
 - [Configurer un complément VSTO](#ConfigureRegisitry)  
   
@@ -77,7 +79,7 @@ Cette rubrique fait référence aux exemples téléchargeables suivants.
 Avant qu'une solution puisse s'exécuter sur les ordinateurs des utilisateurs, vous devez lui accorder votre confiance de l'une des façons suivantes, ou les utilisateurs doivent répondre à une invite d'approbation lorsqu'ils installent la solution.  
   
   
-- Signez les manifestes à l'aide d'un certificat qui identifie un éditeur connu et approuvé. Pour plus d'informations, consultez [Trusting the Solution by Signing the Application and Deployment Manifests](../vsto/granting-trust-to-office-solutions.md#Signing).  
+- Signez les manifestes à l'aide d'un certificat qui identifie un éditeur connu et approuvé. Pour plus d'informations, consultez [Faire confiance à la solution en signant les manifestes d'application et de déploiement](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
 - Installez la solution dans le répertoire Program Files sur l’ordinateur de l’utilisateur.  
   
