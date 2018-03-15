@@ -1,13 +1,8 @@
 ---
 title: "Outils de données Visual Studio pour .NET | Documents Microsoft"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
@@ -15,34 +10,36 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 6c1558c591c982673015af4eaf4e50bc9a81f7d4
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: d96b92037b42c33cd7b9702705e2487b02bc69bc
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Outils de données Visual Studio pour .NET
-Visual Studio et .NET Framework constituent une API complète et une prise en charge pour la connexion aux bases de données, modélisation des données en mémoire et afficher les données dans l’interface utilisateur des outils. Les classes .NET Framework qui fournissent des fonctionnalités d’accès aux données sont appelées [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, ainsi que les données pour les outils dans Visual Studio, a été conçu principalement pour prendre en charge des bases de données relationnelles et XML. De nos jours, plusieurs fournisseurs de base de données NoSQL ou des tiers offrent des fournisseurs ADO.NET.  
-  
-[.NET core](https://www.dotnetfoundation.org/netcore) prend en charge ADO.NET, à l’exception des jeux de données et les types associés. Si vous ciblez .NET Core et que vous avez besoin d’une couche de mappage relationnel objet (ORM), utilisez [Entity Framework Core](/ef/core/).  
-  
-Le diagramme suivant montre une vue simplifiée de l’architecture de base :  
-  
-![Architecture ADO.NET](../data-tools/media/raddata-ado-net-architecture-diagram.png "raddata diagramme d’Architecture ADO.NET")  
-  
-Le flux de travail typique est la suivante :  
-  
-1.  Installer un développement ou la base de données de test sur votre ordinateur local. Consultez [l’installation de systèmes de base de données, des outils et des exemples](../data-tools/installing-database-systems-tools-and-samples.md). Si vous utilisez un service de données Azure, cette étape n’est pas nécessaire.  
-  
-2.  Tester la connexion à la base de données (ou service ou fichier local) dans Visual Studio. Consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).  
-  
-3.  (Facultatif) Utilisez les outils pour générer et configurer un nouveau modèle. Modèles basés sur Entity Framework sont la recommandation par défaut pour les nouvelles applications. Le modèle, celle que vous utilisez, est la source de données que l’application interagit avec. Le modèle se trouve logiquement entre la base de données ou de service et de l’application.  Consultez [ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md).  
-  
-4.  Faites glisser la source de données à partir de la **des Sources de données** fenêtre sur une aire de conception de Windows Forms, ASP.NET ou Windows Presentation Foundation pour générer le code de liaison de données qui affiche les données à l’utilisateur de la manière que vous spécifiez. Consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
-  
-5.  Ajouter du code personnalisé à des éléments tels que les règles d’entreprise, la recherche et la validation des données, ou pour tirer parti des fonctionnalités personnalisées qui expose de la base de données sous-jacente.  
-  
+
+Visual Studio et .NET Framework constituent une API complète et une prise en charge pour la connexion aux bases de données, modélisation des données en mémoire et afficher les données dans l’interface utilisateur des outils. Les classes .NET Framework qui fournissent des fonctionnalités d’accès aux données sont appelées [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, ainsi que les données pour les outils dans Visual Studio, a été conçu principalement pour prendre en charge des bases de données relationnelles et XML. De nos jours, plusieurs fournisseurs de base de données NoSQL ou des tiers offrent des fournisseurs ADO.NET.
+
+[.NET core](/dotnet/core/) prend en charge ADO.NET, à l’exception des jeux de données et les types associés. Si vous ciblez .NET Core et que vous avez besoin d’une couche de mappage relationnel objet (ORM), utilisez [Entity Framework Core](/ef/core/).
+
+Le diagramme suivant montre une vue simplifiée de l’architecture de base :
+
+![Architecture ADO.NET](../data-tools/media/raddata-ado-net-architecture-diagram.png)
+
+Le flux de travail typique est la suivante :
+
+1. Installer un développement ou la base de données de test sur votre ordinateur local. Consultez [l’installation de systèmes de base de données, des outils et des exemples](../data-tools/installing-database-systems-tools-and-samples.md). Si vous utilisez un service de données Azure, cette étape n’est pas nécessaire.
+
+2. Tester la connexion à la base de données (ou service ou fichier local) dans Visual Studio. Consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
+
+3. (Facultatif) Utilisez les outils pour générer et configurer un nouveau modèle. Modèles basés sur Entity Framework sont la recommandation par défaut pour les nouvelles applications. Le modèle, celle que vous utilisez, est la source de données que l’application interagit avec. Le modèle se trouve logiquement entre la base de données ou de service et de l’application. Consultez [ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md).
+
+4. Faites glisser la source de données à partir de la **des Sources de données** fenêtre sur une aire de conception de Windows Forms, ASP.NET ou Windows Presentation Foundation pour générer le code de liaison de données qui affiche les données à l’utilisateur de la manière que vous spécifiez. Consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+
+5. Ajouter du code personnalisé à des éléments tels que les règles d’entreprise, la recherche et la validation des données, ou pour tirer parti des fonctionnalités personnalisées qui expose de la base de données sous-jacente.
+
 Vous pouvez ignorer l’étape 3 et programmer une application .NET pour envoyer des commandes directement à une base de données, au lieu d’utiliser un modèle. Dans ce cas, vous trouverez la documentation correspondante ici : [ADO.NET](/dotnet/framework/data/adonet/index). Notez que vous pouvez toujours utiliser l’Assistant de Configuration de Source de données et les concepteurs pour générer le code de liaison de données lorsque vous remplissez vos propres objets en mémoire, puis de lier des contrôles d’interface utilisateur à ces objets.
-  
+
 ## <a name="see-also"></a>Voir aussi
-[Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+
+- [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

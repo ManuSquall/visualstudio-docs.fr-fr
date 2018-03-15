@@ -41,16 +41,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.openlocfilehash: 95c6f87e120cd8a62aa3959548f968b70c820d39
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utiliser des points d’arrêt dans le débogueur Visual Studio
 Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’exécution du débogueur, éventuellement pour voir l’état des variables de code ou examiner la pile des appels. Ils constituent l’une des techniques de débogage les plus importantes de la boîte à outils d’un développeur.  
   
-##  <a name="BKMK_Overview"></a>Définition d’un point d’arrêt de ligne dans le code source  
+##  <a name="BKMK_Overview"></a> Définition d’un point d’arrêt de ligne dans le code source  
  Vous définissez un point d’arrêt de ligne dans le code source en cliquant dans la marge gauche d’un fichier de code source, ou en plaçant votre curseur sur une ligne de code et en appuyant sur F9. Le point d’arrêt apparaît sous forme de point rouge dans la marge de gauche, et la ligne de code est aussi en couleur :  
   
  ![Définir un point d’arrêt](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
@@ -65,7 +65,30 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
   
  Vous pouvez définir un point d’arrêt sur n’importe quelle ligne de code exécutable. Par exemple, dans le code C# ci-dessus, vous pouvez définir un point d’arrêt sur la déclaration des variables, la boucle `for` ou tout code à l’intérieur de la boucle `for` , mais vous ne pouvez pas définir un point d’arrêt sur les déclarations d’espace de noms ou de classe ou la signature de la méthode.  
   
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Définition d’autres types de points d’arrêt  
+##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Définir un point d’arrêt (fonction)  
+  Vous pouvez arrêter l’exécution lorsqu’une fonction est appelée.
+  
+1. Ouvrez le **points d’arrêt** fenêtre et choisissez **Nouveau > point d’arrêt de la fonction**.
+
+2. Entrez un nom de fonction dans le **nom de la fonction** boîte. 
+
+   Pour affiner la spécification de fonction :
+   
+   Utilisez le nom de fonction qualifié complet. 
+   Exemple : Namespace1.ClassX.MethodA()
+   
+   Ajouter les types de paramètre d’une fonction surchargée. 
+   Exemple : MethodA (int, string)
+   
+   Utilisez le ' !' symbole pour spécifier le module.
+   Exemple : App1.dll ! MethodA
+   
+   Utilisez l’opérateur de contexte en C++ natif.
+   {fonction, [module]} [+&lt;offset de ligne du début de la méthode&gt;] exemple : {MethodA, App1.dll}+2
+
+3. Dans le **langage** liste déroulante, choisissez la langue de la fonction que vous souhaitez arrêter.
+  
+##  <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Définition d’autres types de points d’arrêt  
  Vous pouvez aussi définir des points d’arrêt dans la pile des appels, dans la fenêtre Code machine et, dans le code C++ natif, au niveau d’une condition de données ou d’une adresse mémoire.  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Définition d’un point d’arrêt dans la fenêtre Pile des appels  
@@ -213,7 +236,7 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
 ##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Actions de points d’arrêt et points de trace  
  Un point de trace est un point d’arrêt qui affiche un message dans la fenêtre Sortie. Un point de trace peut faire office d’instruction de trace temporaire dans le langage de programmation.  
   
- Dans la fenêtre **Paramètres de point d’arrêt** , cochez la case **Actions** . Choisissez **Enregistrer les messages dans la fenêtre Sortie** dans le groupe **Action** . Vous pouvez imprimer une chaîne générique, telle que **ceci est un test**. Pour inclure la valeur d’une variable ou d’une expression, vous devez la placer entre accolades.  
+ Dans la fenêtre **Paramètres de point d’arrêt** , cochez la case **Actions** . Choisissez **Enregistrer les messages dans la fenêtre Sortie** dans le groupe **Action** . Vous pouvez imprimer une chaîne générique, telle que **ceci est un test**. Pour inclure la valeur d’une variable ou d’une expression, vous devez la placer entre accolades.  Vous pouvez également utiliser des spécificateurs de format ([c#](../debugger/format-specifiers-in-csharp.md) et [C++](../debugger/format-specifiers-in-cpp.md)) pour les valeurs incluses dans un point de trace.
   
  Pour arrêter l’exécution quand le point de trace est atteint, décochez la case **Continuer l’exécution** . Quand **Continuer l’exécution** est coché, l’exécution n’est pas interrompue. Dans les deux cas, le message est imprimé.  
   

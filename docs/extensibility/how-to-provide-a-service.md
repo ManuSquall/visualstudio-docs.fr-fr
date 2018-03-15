@@ -17,16 +17,16 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccc9b014a3d31fef4e3f491da394cdf1e9fb3ecb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d2a38a2c0830b701796b8417c69a75582c5b2f89
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-provide-a-service"></a>Comment : fournir un Service
 Un VSPackage peut fournir des services qui permet d’autres packages VS. Pour fournir un service, un VSPackage doit inscrire le service avec Visual Studio et ajoutez le service.  
   
- Le <xref:Microsoft.VisualStudio.Shell.Package> classe implémente à la fois <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> et <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer>contient des méthodes de rappel qui fournissent des services à la demande.  
+ Le <xref:Microsoft.VisualStudio.Shell.Package> classe implémente à la fois <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> et <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> contient des méthodes de rappel qui fournissent des services à la demande.  
   
  Pour plus d’informations sur les services, consultez [Service Essentials](../extensibility/internals/service-essentials.md) .  
   
@@ -35,7 +35,7 @@ Un VSPackage peut fournir des services qui permet d’autres packages VS. Pour f
   
 #### <a name="implementing-a-service"></a>Implémentation d’un service  
   
-1.  Créez un projet VSIX (**fichier > Nouveau > projet > c# > Extensiblity > projet VSIX**).  
+1.  Créez un projet VSIX (**fichier > Nouveau > projet > c# > extensibilité > projet VSIX**).  
   
 2.  Ajouter un VSPackage au projet. Sélectionnez le nœud de projet dans le **l’Explorateur de solutions** et cliquez sur **Ajouter > nouvel élément > éléments Visual c# > extensibilité > Package Visual Studio**.  
   
@@ -47,7 +47,7 @@ Un VSPackage peut fournir des services qui permet d’autres packages VS. Pour f
   
     -   Une classe qui implémente le service et l’interface de service.  
   
-     L’exemple suivant montre une implémentation de base des trois types. Le constructeur de la classe de service doit définir le fournisseur de services.  
+     L’exemple suivant montre une implémentation des trois types de base. Le constructeur de la classe de service doit définir le fournisseur de services.  
   
     ```csharp  
     public class MyService : SMyService, IMyService  
@@ -117,7 +117,7 @@ Un VSPackage peut fournir des services qui permet d’autres packages VS. Pour f
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  
-            return new SMyService(this);  
+            return new MyService(this);  
         return null;  
     }  
     ```  
@@ -125,7 +125,7 @@ Un VSPackage peut fournir des services qui permet d’autres packages VS. Pour f
     > [!NOTE]
     >  Visual Studio peut rejeter une demande de fournir un service. Il le fait si un autre VSPackage fournit déjà le service.  
   
-3.  Vous pouvez désormais obtenir le service et utiliser ses méthodes. Nous allons montrer ce dans l’initialiseur, mais vous pouvez obtenir le service n’importe où que vous souhaitez utiliser le service.  
+3.  Vous pouvez désormais obtenir le service et utiliser ses méthodes. L’exemple ci-dessous illustre l’utilisation du service dans l’initialiseur, mais vous pouvez obtenir le service n’importe où que vous souhaitez utiliser le service.  
   
     ```csharp  
     protected override void Initialize()  
@@ -136,7 +136,7 @@ Un VSPackage peut fournir des services qui permet d’autres packages VS. Pour f
   
         MyService myService = (MyService) this.GetService(typeof(SMyService));  
         myService.Hello();  
-        string helloString = myService.myString;  
+        string helloString = myService.Goodbye();  
   
         base.Initialize();  
     }  

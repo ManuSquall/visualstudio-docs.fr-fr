@@ -4,29 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c27934d043a067f88bd9f47efe7d8f7972959e10
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 9f45e18ebb2ab3e83041ea0e1ba5c2de4c9b8532
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-use-the-activity-log"></a>Comment : utiliser le journal d’activité
 Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette fonctionnalité est particulièrement utile pour déboguer les VSPackages dans les environnements de vente au détail.  
   
 > [!TIP]
->  Le journal d’activité est toujours activé. Visual Studio conserve un tampon propagée de celui dernières entrées, ainsi que les entrées de dix premières, qui présentent des informations de configuration générale.  
+>  Le journal d’activité est toujours activé. Visual Studio conserve un tampon propagée des 100 dernières entrées, ainsi que les 10 premières entrées, qui présentent des informations de configuration générale.  
   
 ### <a name="to-write-an-entry-to-the-activity-log"></a>Pour écrire une entrée dans le journal d’activité  
   
@@ -42,15 +44,17 @@ Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette
         "Called for: {0}", this.ToString()));  
     ```  
   
-     Ce code obtient le <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> de service et le caste vers une <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>écrit une entrée d’information dans le journal des activités en utilisant le contexte de la culture actuels.  
+     Ce code obtient le <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> de service et le caste vers une <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> écrit une entrée d’information dans le journal des activités en utilisant le contexte de la culture actuels.  
   
 2.  Lorsque le VSPackage est chargé (généralement lorsqu’une commande est appelée ou une fenêtre est ouverte), le texte est écrit dans le journal d’activité.  
   
 ### <a name="to-examine-the-activity-log"></a>Examinez le journal d’activité  
   
-1.  Rechercher le journal d’activité dans le sous-dossier de données de Visual Studio : *%AppData%*\Microsoft\VisualStudio\15.0\ActivityLog.XML...  
+1.  Exécutez Visual Studio avec le [/journaux](../ide/reference/log-devenv-exe.md) commutateur de ligne de commande pour écrire ActivityLog.xml sur le disque pendant votre session.
+
+2.  Après la fermeture de Visual Studio, recherchez le journal d’activité dans le sous-dossier pour les données de Visual Studio : *%AppData%*\Microsoft\VisualStudio\15.0\ActivityLog.xml.  
   
-2.  Ouvrez le journal d’activité avec n’importe quel éditeur de texte. Voici une entrée de type :  
+3.  Ouvrez le journal d’activité avec n’importe quel éditeur de texte. Voici une entrée de type :  
   
     ```  
     Called for: Company.MyApp.MyAppPackage ...  
@@ -61,7 +65,8 @@ Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette
   
  Vous devez obtenir le journal d’activité juste avant l’écriture dans celle-ci. Ne pas mettre en cache ou enregistrer le journal d’activité pour une utilisation ultérieure.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
+ [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>   
  [Dépanner les packages VS](../extensibility/troubleshooting-vspackages.md)   

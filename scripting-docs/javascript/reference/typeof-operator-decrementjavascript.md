@@ -22,11 +22,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c79c69e6c447b14e61fa67ccb8600d5d83bebd2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a9ff8c7942c773d138dd599956c41d1e583e6288
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="typeof-operator-javascript"></a>typeof, opérateur (JavaScript)
 Retourne une chaîne qui identifie le type de données d'une expression.  
@@ -38,12 +38,14 @@ Retourne une chaîne qui identifie le type de données d'une expression.
 typeof[(]expression[)] ;  
 ```  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le *expression* argument peut être toute expression de type pour lequel les informations sont recherchées.  
   
- Le `typeof` opérateur retourne des informations de type sous forme de chaîne. Il existe six différentes valeurs `typeof` retourne : « number », « chaîne » « boolean », « object, » « fonction » et « non définie ».  
+ Le `typeof` opérateur retourne des informations de type sous forme de chaîne. Il existe sept différentes valeurs `typeof` retourne : « number », « chaîne » « boolean », « objet » « fonction, », « non définie » et « inconnu ».  
   
  Les parenthèses sont facultatives dans le `typeof` syntaxe.  
+
+ Un objet peut retourner comme un type inconnu dans une requête XMLHTTPRequest. Un objet COM avec aucune analogique en JavaScript peut-être également renvoyer un type inconnu.
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant teste le type de données de variables.  
@@ -81,12 +83,12 @@ var result = (typeof obj.propNotDeclared === 'undefined');
 //  var result = (notDeclared === undefined);  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonction Array.isArray](../../javascript/reference/array-isarray-function-javascript.md)   
- [Object.getprototypeof, fonction](../../javascript/reference/object-getprototypeof-function-javascript.md)   
+ [Object.getPrototypeOf Function](../../javascript/reference/object-getprototypeof-function-javascript.md)   
  [Constante undefined](../../javascript/reference/undefined-constant-javascript.md)   
  [Opérateurs de comparaison](../../javascript/reference/comparison-operators-javascript.md)   
  [Types de données](../../javascript/data-types-javascript.md)   

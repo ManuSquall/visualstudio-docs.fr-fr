@@ -17,11 +17,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2704794e4683fb461dca971a3893ca831591ca0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2e56fbdb6056ba02df0cafac73dd4baab60ab3be
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="command-implementation"></a>Implémentation de la commande
 Pour implémenter une commande dans un VSPackage, vous devez effectuer les tâches suivantes :  
@@ -62,28 +62,28 @@ if ( null != mcs )
 ## <a name="implementing-commands"></a>Implémentation des commandes  
  Il existe plusieurs façons d’implémenter des commandes. Si vous souhaitez une commande de menu statique, qui est une commande qui s’affiche toujours la même façon et dans le même menu, créer la commande à l’aide de <xref:System.ComponentModel.Design.MenuCommand> comme indiqué dans les exemples dans la section précédente. Pour créer une commande statique, vous devez fournir un gestionnaire d’événements qui est chargé d’exécuter la commande. Étant donné que la commande est toujours activé et visible, il est inutile de le fournir son état à Visual Studio. Si vous souhaitez modifier l’état d’une commande selon certaines conditions, vous pouvez créer la commande comme une instance de la <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> classe et, dans son constructeur, fournissez un gestionnaire d’événements pour exécuter la commande et un gestionnaire d’état de la requête pour notifier Visual Studio lorsque l’état de la commande change. Vous pouvez également implémenter <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> comme partie d’une classe de commande ou, vous pouvez implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> si vous fournissez une commande en tant que partie d’un projet. Les deux interfaces et les <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> tous de la classe ont des méthodes qui signalent une modification de l’état d’une commande à Visual Studio et autres méthodes qui fournissent l’exécution de la commande.  
   
- Lorsqu’une commande est ajoutée au service de commande, il est une chaîne de commandes. Lorsque vous implémentez les méthodes de notification et l’exécution de statut de la commande, veillez à fournir uniquement pour cette commande particulière et pour passer de tous les autres cas, une session sur d’autres commandes dans la chaîne. Si vous ne pouvez pas passer de la commande (généralement en retournant <xref:Microsoft.VisualStudio.OLE.Interop.Constants>), Visual Studio peut cesser de fonctionner correctement.  
+ Lorsqu’une commande est ajoutée au service de commande, il est une chaîne de commandes. Lorsque vous implémentez les méthodes de notification et l’exécution de statut de la commande, veillez à fournir uniquement pour cette commande particulière et pour passer de tous les autres cas, une session sur d’autres commandes dans la chaîne. Si vous ne pouvez pas passer de la commande (généralement en retournant <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>), Visual Studio peut cesser de fonctionner correctement.  
   
 ## <a name="query-status-methods"></a>Méthodes d’état de requête  
  Si vous implémentez une le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode ou la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> (méthode), recherchez le GUID de la commande auquel appartient la commande et l’ID de la commande. Respectez les règles ci-dessous.  
   
--   Si le GUID n’est pas reconnu, votre implémentation de ces deux méthodes doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+-   Si le GUID n’est pas reconnu, votre implémentation de ces deux méthodes doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.  
   
--   Si votre implémentation de ces deux méthodes reconnaît le GUID, mais n’a pas réellement implémentées dans la commande, alors que la méthode doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+-   Si votre implémentation de ces deux méthodes reconnaît le GUID, mais n’a pas implémenté la commande, alors que la méthode doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
--   Si votre implémentation de ces deux méthodes reconnaît le GUID et la commande, puis la méthode doit définir le champ Indicateurs de commande de chaque commande (dans le `prgCmds` paramètre) à l’aide d’indicateurs suivants :  
+-   Si votre implémentation de ces deux méthodes reconnaît le GUID et la commande, puis la méthode doit définir le champ Indicateurs de commande de chaque commande (dans le `prgCmds` paramètre) en utilisant le <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> indicateurs :  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Si la commande est prise en charge.  
+    -   OLECMDF_SUPPORTED - si la commande est prise en charge.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Si la commande ne doit pas être visible.  
+    -   OLECMDF_INVISIBLE - si la commande ne doit pas être visible.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Si la commande est activée et qu’il semble avoir été archivé.  
+    -   OLECMDF_LATCHED - si la commande est activée et a été activée.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Si la commande est activée.  
+    -   OLECMDF_ENABLED - si la commande est activée.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Si la commande doit être masquée s’il apparaît dans un menu contextuel.  
+    -   OLECMDF_DEFHIDEONCTXTMENU - si la commande doit être masquée s’il apparaît dans un menu contextuel.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Si la commande est un contrôleur de menu et n’est pas activée, mais sa liste déroulante n’est pas vide et est toujours disponible. (Cet indicateur est rarement utilisé.)  
+    -   OLECMDF_NINCHED - si la commande est un contrôleur de menu et n’est pas activée, mais sa liste déroulante n’est pas vide et qu’il est toujours disponible. (Cet indicateur est rarement utilisé.)  
   
 -   Si la commande a été définie dans le fichier .vsct avec le `TextChanges` indicateur, définissez les paramètres suivants :  
   
@@ -93,7 +93,7 @@ if ( null != mcs )
   
  Également vous assurer que le contexte actuel n’est pas une fonction d’automatisation, sauf si votre commande est conçue spécifiquement pour gérer les fonctions d’automatisation.  
   
- Pour indiquer que vous prenez en charge une commande particulière, retourner <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Pour toutes les autres commandes, retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+ Pour indiquer que vous prenez en charge une commande particulière, retourner <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Pour toutes les autres commandes, retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
  Dans l’exemple suivant, la méthode de l’état de la requête tout d’abord permet de s’assurer que le contexte n’est pas une fonction d’automation, puis recherche le GUID de jeu de commandes correcte et l’ID de commande. La commande elle-même est définie pour être activé et pris en charge. Aucune autre commande n’est pris en charge.  
   
@@ -118,7 +118,7 @@ public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, Int
 ```  
   
 ## <a name="execution-methods"></a>Méthodes d’exécution  
- Implémentation de la méthode execute s’apparente à l’implémentation de la méthode de l’état de la requête. Tout d’abord, assurez-vous que le contexte n’est pas une fonction d’automatisation. Ensuite tester le GUID et l’ID de commande. Si le GUID ou ID de commande n’est pas reconnu, retournez <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+ Implémentation de la méthode execute s’apparente à l’implémentation de la méthode de l’état de la requête. Tout d’abord, assurez-vous que le contexte n’est pas une fonction d’automatisation. Ensuite tester le GUID et l’ID de commande. Si le GUID ou ID de commande n’est pas reconnu, retournez <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
  Pour gérer la commande, exécuter et retourner <xref:Microsoft.VisualStudio.VSConstants.S_OK> si l’exécution réussit. Votre commande est responsable de la détection d’erreur et de notification ; Par conséquent, retourner un code d’erreur si l’exécution échoue. L’exemple suivant montre comment la méthode d’exécution doit être implémentée.  
   

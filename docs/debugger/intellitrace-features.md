@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 273f7f94127929a3939d21414bd8da5c12abc83e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 01515701b6aeecc1166551c6376bfd6823e73976
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="intellitrace-features"></a>Fonctionnalités IntelliTrace
 
@@ -55,7 +55,7 @@ Si vous êtes en cours de débogage, interrompez-le. Accédez à **Outils > Opti
 
 Cette option n’est pas activée par défaut, mais IntelliTrace peut capturer des instantanés de votre application à chaque événement d’étape de point d’arrêt et le débogueur, et vous pouvez afficher les instantanés AlwaysOn dans une session de débogage historique. Un instantané vous donne un aperçu de votre état complet des applications. Pour activer la capture d’instantanés, accédez à **Outils > Options > IntelliTrace > Général**, puis sélectionnez **IntelliTrace événements et les instantanés**. Pour plus d’informations, consultez [afficher des instantanés à l’aide d’IntelliTrace étape différée](../debugger/how-to-use-intellitrace-step-back.md)
 
-Les instantanés sont disponibles dans Visual Studio de Enterprise 2017 15,5 et versions ultérieures, et nécessite le mise à jour anniversaire Windows 10 ou version ultérieure.  Les instantanés ne sont pas actuellement disponibles pour les applications .NET Core et ASP.NET Core.
+Les instantanés sont disponibles dans Visual Studio de Enterprise 2017 15,5 et versions ultérieures, et nécessite le mise à jour anniversaire Windows 10 ou version ultérieure.  Pour les applications .NET Core et ASP.NET Core, 2017 de Enterprise Visual Studio version 15,7 version préliminaire 1 est requis.
 
 ## <a name="GoingFurther"></a> Collecter des événements IntelliTrace et informations d’appels
 

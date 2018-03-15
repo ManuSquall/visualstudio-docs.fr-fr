@@ -5,7 +5,8 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
@@ -13,15 +14,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 2b89abee-04fa-47e6-9676-980016cff5f8
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 489d329528e88c27df03ca0e6d6d1608a39446e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4ee75310f1d976e0a0896b1be34a80c594cdd054
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="proxy-object-javascript"></a>Objet proxy (JavaScript)
 Active le comportement personnalisé d'un objet.  
@@ -39,7 +40,7 @@ proxyObj = new Proxy(target, handler)
  `handler`  
  Obligatoire. Objet avec des méthodes (interruptions) qui implémentent le comportement personnalisé.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Un objet `Proxy` est utilisé pour intercepter les opérations internes de bas niveau sur un autre objet. Les objets de proxy peuvent être utilisés pour l'interception, la virtualisation d'objet, la journalisation/le profilage et autres objectifs.  
   
  Si l'interruption d'une opération spécifique n'a pas été définie dans le gestionnaire du proxy, l'opération est transmise à la cible.  
@@ -69,9 +70,9 @@ proxyObj = new Proxy(target, handler)
 ```JavaScript  
 var target = {};  
 var handler = {  
-  get: function (receiver, name) {  
+  get: function (target, property, receiver) {  
     // This example includes a template string.  
-    return `Hello, ${name}!`;  
+    return `Hello, ${property}!`;  
   }  
 };  
   
@@ -104,5 +105,5 @@ console.log(p()):
 // I am the proxy  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

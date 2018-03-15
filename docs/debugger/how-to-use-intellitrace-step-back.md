@@ -1,13 +1,13 @@
 ---
 title: "Afficher un instantané à l’aide d’IntelliTrace étape-back - Visual Studio | Documents Microsoft"
-ms.custom: 
+ms.custom: mvc
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 caps.latest.revision: 
 author: mikejo5000
@@ -15,27 +15,34 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e99b1bd44705a5a50c4138379a87a0ff8315ea29
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Étape différéent afficher des instantanés à l’aide d’IntelliTrace dans Visual Studio
 
 Événement d’étape, IntelliTrace différée étape prend automatiquement un instantané de votre application à chaque point d’arrêt et le débogueur. Les captures instantanées enregistrées vous permettent de revenir à des étapes ou points d’arrêt précédents pour afficher un état antérieur de l’application. Le retour en arrière IntelliTrace peut vous faire gagner du temps quand vous souhaitez afficher un état précédent de l’application sans avoir à redémarrer le débogage ou à recréer l’état de l’application souhaité.
 
-Étape différée IntelliTrace est disponible à partir de Visual Studio de Enterprise 2017 15,5 et versions ultérieures, et nécessite le mise à jour anniversaire Windows 10 ou version ultérieure. La fonctionnalité est actuellement pris en charge pour le débogage ASP.NET, Windows Forms, WPF, les applications console gérés et bibliothèques de classes managées. Débogage des applications ASP.NET Core, .NET Core ou UWP n’est pas pris en charge actuellement. 
+Étape différée IntelliTrace est disponible à partir de Visual Studio de Enterprise 2017 15,5 et versions ultérieures, et nécessite le mise à jour anniversaire Windows 10 ou version ultérieure. La fonctionnalité est actuellement pris en charge pour le débogage ASP.NET, Windows Forms, WPF, les applications console gérés et bibliothèques de classes managées. À compter de Visual Studio 2017 Enterprise version 15,7 preview 1, la fonctionnalité est également prise en charge pour les principaux d’ASP.NET et .NET Core. Déboguer les applications UWP n’est pas pris en charge actuellement.
+
+Dans ce didacticiel, vous allez :
+
+> [!div class="checklist"]
+> * Activer les événements Intellitrace et les instantanés
+> * Accédez à l’aide de commandes DOS de l’étape et avant de l’étape des événements
+> * Afficher des instantanés événement
   
 ## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Activer le mode d’événements et les instantanés IntelliTrace 
 
-1. Dans Visual Studio Enterprise, accédez à **Outils > Options > IntelliTrace** paramètres et sélectionnez l’option **IntelliTrace événements et les instantanés**. 
+1. Ouvrez votre projet dans Visual Studio Enterprise.
+
+1. Accédez à **Outils > Options > IntelliTrace** paramètres et sélectionnez l’option **IntelliTrace événements et les instantanés**. 
 
     ![Activer le mode d’événements IntelliTrace et les instantanés](../debugger/media/intellitrace-enable-snapshots.png "mode activer les événements IntelliTrace et les instantanés")
 
-2. Ouvrez votre projet dans Visual Studio.
-
-3. Définir un ou plusieurs points d’arrêt dans votre projet et commencez le débogage (appuyez sur **F5**), ou démarrer le débogage en parcourant votre code (**F10** ou **F11**).
+1. Définir un ou plusieurs points d’arrêt dans votre projet et commencez le débogage (appuyez sur **F5**), ou démarrer le débogage en parcourant votre code (**F10** ou **F11**).
 
     IntelliTrace prend un instantané du processus de l’application de débogueur de chaque événement d’étape et le point d’arrêt. Ces événements sont enregistrés dans le **événements** onglet dans le **outils de Diagnostic** fenêtre, ainsi que d’autres événements IntelliTrace. Pour ouvrir cette fenêtre, choisissez **déboguer** > **Windows** > **afficher les outils de Diagnostic**.
 
@@ -49,7 +56,7 @@ ms.lasthandoff: 03/08/2018
 
 1. Naviguer entre les événements à l’aide de la **arrière (Alt + [)** et **avant (Alt +])** boutons dans la barre d’outils de débogage.
 
-    Ces boutons Parcourir les événements qui s’affichent dans le **événements** onglet dans le **fenêtre Outils de Diagnostic**. Quand vous passez à l’étape précédente ou suivante d’un événement, vous activez automatiquement le débogage d’historique pour l’événement sélectionné.
+    Ces boutons Parcourir les événements qui s’affichent dans le **événements** onglet dans le **fenêtre Outils de Diagnostic**. Pas à pas détaillé vers l’arrière ou vers l’avant à un événement automatiquement Active [le débogage d’historique](../debugger/historical-debugging.md) sur l’événement sélectionné.
 
     ![Revenir en arrière et transférer des boutons](../debugger/media/intellitrace-step-back-icons-description.png "boutons arrière et avancer")
 
@@ -73,9 +80,7 @@ ms.lasthandoff: 03/08/2018
 
     ![Vue d’ensemble de l’étape IntelliTrace différée](../debugger/media/intellitrace-step-back-overview.png "vue d’ensemble de IntelliTrace étape différée")
 
-## <a name="next-steps"></a>Étapes suivantes  
- Pour savoir comment inspecter des variables dans Visual Studio, consultez [visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)  
- Pour une vue d’ensemble du débogage d’historique, consultez [le débogage d’historique](../debugger/historical-debugging.md).  
+    Pour en savoir plus sur la façon d’inspecter des variables dans Visual Studio, consultez [visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)  
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
@@ -111,3 +116,10 @@ L’impact sur les performances globales de pas à pas dépend de votre applicat
 * Lorsque vous déboguez une application dont le processus a un grand nombre de régions de mémoire unique, par exemple, une application qui charge un grand nombre de DLL, pas à pas détaillé des performances avec des instantanés activées peuvent être affectées. Ce problème sera résolu dans une future version de Windows. Si vous rencontrez ce problème, atteindre nous stepback@microsoft.com. 
 
 * Lors de l’enregistrement d’un fichier avec **Déboguer > IntelliTrace > session IntelliTrace d’enregistrer** en mode d’événements et les instantanés, les données supplémentaires capturées à partir d’instantanés ne sont pas disponibles dans le fichier .itrace. Sur les événements de point d’arrêt et l’étape, vous consultez les mêmes informations que si vous aviez enregistré le fichier en mode d’uniquement les événements IntelliTrace. 
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Dans ce didacticiel, vous avez appris comment utiliser IntelliTrace étape différée. Voulez-vous en savoir plus sur d’autres fonctionnalités d’IntelliTrace.
+
+> [!div class="nextstepaction"]
+> [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)

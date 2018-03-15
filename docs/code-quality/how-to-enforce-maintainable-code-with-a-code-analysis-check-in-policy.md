@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7b1a6d953128317e89672d5d9b175ce7acc1b63f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Comment : appliquer du code facile à maintenir avec une stratégie d’archivage de l’analyse du code
 
@@ -31,23 +31,23 @@ Les administrateurs du contrôle de version de Team Foundation peuvent ajouter d
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Pour ouvrir l’éditeur de stratégie d’analyse du Code
 
-1. dans **Team Explorer**, cliquez sur le projet d’équipe, cliquez sur **paramètres du projet d’équipe**, puis cliquez sur **contrôle de code Source**.
+1. Dans **Team Explorer**, cliquez sur le projet d’équipe, cliquez sur **paramètres du projet d’équipe**, puis cliquez sur **contrôle de code Source**.
 
-     The **Source Control** dialog box appears.
+     Le **contrôle de code Source** boîte de dialogue s’affiche.
 
-2. dans le **stratégie d’archivage** onglet, puis cliquez sur **ajouter**.
+2. Sur le **stratégie d’archivage** onglet, puis cliquez sur **ajouter**.
 
-     The **Add Check-in Policy** dialog box appears.
+     Le **ajouter la stratégie d’archivage** boîte de dialogue s’affiche.
 
-3 dans le **stratégie d’archivage** liste, sélectionnez le **l’analyse du Code** case à cocher, puis cliquez sur **OK**.
+3. Dans le **stratégie d’archivage** liste, sélectionnez le **l’analyse du Code** case à cocher, puis cliquez sur **OK**.
 
-     The **Code Analysis Policy Editor** dialog box appears.
+     Le **éditeur de stratégie de Code Analysis** boîte de dialogue s’affiche.
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Pour activer les règles d’analyse du code la facilité de maintenance
 
-1. dans le **éditeur de stratégie de Code Analysis** boîte de dialogue **paramètres de règle**, développez le **règles de maintenance** nœud.
+1. Dans le **éditeur de stratégie de Code Analysis** boîte de dialogue **paramètres de règle**, développez le **règles de maintenance** nœud.
 
-2. Sélectionnez les cases à cocher pour les règles suivantes :
+2. Activez les cases à cocher pour les règles suivantes :
 
     -   Profondeur d’héritage : **CA1501 AvoidExcessiveInheritance** -seuil : avertissement à plus de 5 niveaux
 
@@ -63,5 +63,5 @@ Les administrateurs du contrôle de version de Team Foundation peuvent ajouter d
 
 ## <a name="see-also"></a>Voir aussi
 
-[Valeurs de la métrique du code](../code-quality/code-metrics-values.md)
-[création et à l’aide de stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Valeurs de métrique de code](../code-quality/code-metrics-values.md)
+- [Création et utilisation de stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

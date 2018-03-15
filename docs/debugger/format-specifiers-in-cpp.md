@@ -34,16 +34,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11be1eb546902e8e37843383fe499274f819883f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Spécificateurs de format en C++ dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans la fenêtre **Espion** à l’aide de spécificateurs de format.  
   
- Vous pouvez également utiliser des spécificateurs de format dans la fenêtre **Exécution** , la fenêtre **Commande** et même les fenêtres sources. Si vous effectuez une suspension sur une expression dans ces fenêtres, le résultat apparaît dans un DataTip. L’affichage du DataTip reflète le spécificateur de format.  
+ Vous pouvez également utiliser des spécificateurs de format dans le **exécution** fenêtre, le **commande** fenêtre, dans [trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)et même les fenêtres sources. Si vous effectuez une suspension sur une expression dans ces fenêtres, le résultat s’affiche dans un DataTip. L’affichage du DataTip reflète le spécificateur de format.  
   
 > [!NOTE]
 >  Lorsque le débogueur natif Visual Studio est passé à un nouveau moteur de débogage, certains nouveaux spécificateurs de format ont été ajoutées et certaines anciennes ont été supprimés. Le débogueur plus ancien est toujours utilisé quand vous effectuez un débogage d’interopérabilité (native et managée à la fois) avec C++/CLI. Les sections suivantes présentent les spécificateurs de format pour chaque moteur de débogage.
@@ -62,7 +62,7 @@ int main() {
 }  
 ```  
   
- Ajouter le `my_var1` variable à la **espion** fenêtre (pendant le débogage, **Déboguer > Windows > espion > Espion 1**) et passez à l’affichage hexadécimal (dans le **regarder**fenêtre, avec le bouton droit de la variable et sélectionnez **affichage hexadécimal**). La fenêtre Espion indique à présent qu’elle contient la valeur 0x0065. Pour que la valeur soit exprimée sous forme de caractère plutôt que sous forme d’entier, dans la colonne Nom, après le nom de la variable, ajoutez le spécificateur de format de caractère **, c**. La colonne **Valeur** apparaît désormais avec **101 ’e’**.  
+ Ajouter le `my_var1` variable à la **espion** fenêtre (pendant le débogage, **Déboguer > Windows > espion > Espion 1**), puis définissez l’affichage au format hexadécimal (dans le **regarder**fenêtre, avec le bouton droit de la variable et sélectionnez **affichage hexadécimal**). La fenêtre Espion indique à présent qu’elle contient la valeur 0x0065. Pour que la valeur soit exprimée sous forme de caractère plutôt que sous forme d’entier, dans la colonne Nom, après le nom de la variable, ajoutez le spécificateur de format de caractère **, c**. La colonne **Valeur** apparaît désormais avec **101 ’e’**.  
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
@@ -83,12 +83,12 @@ int main() {
 |su|Chaîne Unicode (encodage UTF-16)|\<emplacement > L « hello world »|L"hello world"<br /><br /> u"hello world"|  
 |sub|Unicode (encodage UTF-16), chaîne (sans guillemets)|\<emplacement > L « hello world »|hello world|  
 |bstr|chaîne BSTR|\<emplacement > L « hello world »|L"hello world"|  
-|env|Bloc d’environnement (chaîne terminée par double-null)|\<emplacement > L » = :: = ::\\\\»|L "= :: = ::\\\\\\0 = C : = C :\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|env|Bloc d’environnement (chaîne terminée par double-null)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|chaîne UTF-32|\<emplacement > U « hello world »|u"hello world"|  
 |**s32b**|chaîne UTF-32 (sans guillemets)|\<emplacement > U « hello world »|hello world|  
 |**en**|enum|Saturday(6)|Saturday|  
 |**hv**|Type de pointeur : indique que la valeur de pointeur inspectée est le résultat de l’allocation de tas d’un tableau, par exemple, `new int[3]`.|\<emplacement > {\<premier membre >}|\<emplacement > {\<premier membre >, \<deuxième membre >,...}|  
-|**na**|Supprime l’adresse mémoire d’un pointeur vers un objet.|\<emplacement >, {membre = valeur...}|{membre = valeur...}|  
+|**na**|Supprime l’adresse mémoire d’un pointeur vers un objet.|\<location>, {member=value...}|{member=value...}|  
 |**nd**|Affiche uniquement les informations de classe de base, en ignorant les classes dérivées|`(Shape*) square` inclut les informations de classe de base et de classe dérivée|Affiche uniquement les informations de classe de base|  
 |hr|HRESULT ou code d’erreur Win32. (Le débogueur décodant automatiquement HRESULTs, le spécificateur n’est pas nécessaire dans ces cas-là.|S_OK|S_OK|  
 |wc|Indicateur de classe de fenêtre|0x0010|WC_DEFAULTCHAR|  
@@ -120,11 +120,11 @@ int main() {
 |**f**|virgule flottante signée|(3./2.), f|1,500000|  
 |**e**|notation scientifique signée|(3.0/2.0)|1.500000e+000|  
 |**g**|virgule flottante signée ou notation scientifique signée, selon ce qui est le plus court|(3.0/2.0)|1,5|  
-|c|caractère unique|\<emplacement >|101 ’e’|  
-|s|const char*|\<emplacement >|"hello world"|  
-|su|const wchar_t*<br /><br /> char16_t const\*|\<emplacement >|L"hello world"|  
-|sub|const wchar_t*<br /><br /> char16_t const\*|\<emplacement >|hello world|  
-|s8|const char*|\<emplacement >|"hello world"|  
+|c|caractère unique|\<location>|101 ’e’|  
+|s|const char*|\<location>|"hello world"|  
+|su|const wchar_t*<br /><br /> char16_t const\*|\<location>|L"hello world"|  
+|sub|const wchar_t*<br /><br /> char16_t const\*|\<location>|hello world|  
+|s8|const char*|\<location>|"hello world"|  
 |hr|HRESULT ou code d’erreur Win32. (Le débogueur décodant automatiquement HRESULTs, le spécificateur n’est pas nécessaire dans ces cas-là.|S_OK|S_OK|  
 |wc|Indicateur de classe de fenêtre.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Numéros de messages Windows|0x0010|WM_CLOSE|  
@@ -143,7 +143,7 @@ int main() {
 |**mq**|2 mots quadruples|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|caractères de 2 octets (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a>Spécificateur de taille pour les pointeurs en tant que tableaux dans le débogage d’interopérabilité avec c++ / CLI  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Spécificateur de taille pour les pointeurs en tant que tableaux dans le débogage d’interopérabilité avec c++ / CLI  
  Si vous avez un pointeur vers un objet que vous souhaitez afficher sous forme de tableau, vous pouvez utiliser un entier pour spécifier le nombre d’éléments du tableau :  
   
 |Spécificateur|Format|Expression|Valeur affichée|  

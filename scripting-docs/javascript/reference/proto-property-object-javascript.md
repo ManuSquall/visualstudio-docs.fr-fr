@@ -1,5 +1,5 @@
 ---
-title: "__proto_, propriété (objet) (JavaScript) | Documents Microsoft"
+title: "__proto__ , propriété (objet) (JavaScript) | Documents Microsoft"
 ms.custom: 
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,17 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e38669c400acba6f4ed3c4ee3fb5836c31b1bc00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f8659c7a4ece5e30378838f20341ec6712f77ca3
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="proto-property-object-javascript"></a>__proto__ , propriété (objet) (JavaScript)
 Contient une référence au prototype interne de l’objet spécifié.  
+
+> [!WARNING]
+> Le `__proto__` propriété est une fonctionnalité héritée. Utilisez [Object.getPrototypeOf](../reference/object-getprototypeof-function-javascript.md) à la place.
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,7 +42,7 @@ object.__proto__
  `object`  
  Obligatoire. L’objet sur lequel définir le prototype.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le `__proto__` propriété peut être utilisée pour définir le prototype pour un objet.  
   
  L’objet ou une fonction hérite de toutes les méthodes et propriétés du nouveau prototype, ainsi que toutes les méthodes et propriétés dans la chaîne de prototype du nouveau prototype. Un objet peut avoir uniquement un prototype unique (sans les prototypes hérités dans la chaîne prototype), par conséquent, lorsque vous appelez le `__proto__` propriété, vous remplacez le prototype de la précédent.  
@@ -108,7 +111,7 @@ if (console && console.log) {
 }  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
 ## <a name="see-also"></a>Voir aussi  
