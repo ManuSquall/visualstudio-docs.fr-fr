@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1e82a4428dde7aa25c7e9a3d7d74017b9f2a874f
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -57,9 +59,9 @@ ms.lasthandoff: 01/10/2018
 ##  <a name="ClassNames"></a> Présentation des types et des noms de classes de messages  
  Le nom de type d’un élément Outlook diffère du nom de classe de message d’un élément Outlook. Par exemple, le nom de type d’un élément RSS est Microsoft.Office.Interop.Outlook.PostItem. Le nom de classe de message d’un élément RSS est gestion intégrée. Post.RSS.  
   
- Utilisez le nom de type pour faire référence à un élément Outlook dans le code. Pour obtenir la liste des noms de types, consultez [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+ Utilisez le nom de type pour faire référence à un élément Outlook dans le code. Pour obtenir la liste des noms de types, consultez [Association d'une zone de formulaire à une classe de message Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
- Utilisez le nom de classe de message des éléments Outlook dans l’Assistant **Nouvelle zone de formulaire Outlook** pour associer l’élément à la zone de formulaire. Pour obtenir la liste des noms de classes de messages valides, consultez [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+ Utilisez le nom de classe de message des éléments Outlook dans l’Assistant **Nouvelle zone de formulaire Outlook** pour associer l’élément à la zone de formulaire. Pour obtenir la liste des noms de classes de messages valides, consultez [Association d'une zone de formulaire à une classe de message Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
 ##  <a name="ReadingPane"></a> Designing Adjoining Form Regions for the Reading Pane  
  Vous pouvez utiliser le volet de lecture Outlook pour afficher un aperçu d’un élément Outlook sans l’ouvrir. Le volet de lecture est conçu uniquement pour la lecture. Ainsi, les contrôles d’entrée que vous ajoutez à une zone de formulaire adjacente, tels qu’une zone de texte, peuvent ne pas se comporter comme prévu quand l’élément et la zone de formulaire sont ouverts dans le volet de lecture.  

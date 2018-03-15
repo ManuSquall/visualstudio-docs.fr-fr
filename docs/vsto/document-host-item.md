@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,7 +22,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 85c3520d852575eef6e9dae1fd8c1120b9eccd74
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -48,7 +50,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="understanding-document-host-items-in-application-level-projects"></a>Présentation des éléments hôtes Document dans les projets de niveau application  
  Dans les projets complément VSTO, vous pouvez générer un élément hôte <xref:Microsoft.Office.Tools.Word.Document> au moment de l’exécution pour tout document ouvert dans Word. Vous pouvez utiliser l’élément hôte <xref:Microsoft.Office.Tools.Word.Document> pour ajouter des contrôles au document associé ou pour gérer des événements qui ne sont pas disponibles sur des objets <xref:Microsoft.Office.Interop.Word.Document> .  
   
- Pour générer un <xref:Microsoft.Office.Tools.Word.Document> élément hôte, utilisez la méthode GetVstoObject. Pour plus d'informations, consultez [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Pour générer un <xref:Microsoft.Office.Tools.Word.Document> élément hôte, utilisez la méthode GetVstoObject. Pour plus d'informations, consultez [Extension de documents Word et de classeurs Excel dans des compléments VSTO au moment de l'exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
