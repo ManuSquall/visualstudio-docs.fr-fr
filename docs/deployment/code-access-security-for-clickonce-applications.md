@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,11 +24,12 @@ helpviewer_keywords:
 - ClickOnce applications, code access security policies
 - security, ClickOnce
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e4897ad027354ef54a77fdad3488d2e623264741
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -58,9 +60,9 @@ Les applications ClickOnce sont basées sur le .NET Framework et sont soumises �
   
  Différents niveaux d'autorisations sont accordés, sans demande de confirmation, à des applications déployées à partir d'emplacements différents. Par exemple, quand une application est déployée à partir d'Internet, elle reçoit un jeu d'autorisations très restrictif. Si elle est installée à partir d'un intranet local, elle reçoit des autorisations plus larges. Si elle est installée à partir d'un CD-ROM, elle reçoit des autorisations Confiance totale.  
   
- Pour définir des autorisations, commencez par choisir une zone de sécurité dans la liste **Zone** de la page **Sécurité** . Si vous comptez déployer votre application à partir de plusieurs zones, choisissez la zone avec le moins d'autorisations. Pour plus d'informations, consultez [How to: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
+ Pour définir des autorisations, commencez par choisir une zone de sécurité dans la liste **Zone** de la page **Sécurité** . Si vous comptez déployer votre application à partir de plusieurs zones, choisissez la zone avec le moins d'autorisations. Pour plus d'informations, consultez [Comment : définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
   
- Les propriétés qui peuvent être définies varient selon le jeu d'autorisations, mais tous les jeux d'autorisations ne possèdent pas des propriétés configurables. Pour plus d'informations sur la liste complète des autorisations que votre application peut demander, consultez <xref:System.Security.Permissions>. Pour plus d’informations sur la façon de définir des autorisations pour une zone personnalisée, consultez [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Les propriétés qui peuvent être définies varient selon le jeu d'autorisations, mais tous les jeux d'autorisations ne possèdent pas des propriétés configurables. Pour plus d'informations sur la liste complète des autorisations que votre application peut demander, consultez <xref:System.Security.Permissions>. Pour plus d’informations sur la façon de définir des autorisations pour une zone personnalisée, consultez [Comment : définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
 ## <a name="debugging-an-application-that-has-restricted-permissions"></a>Débogage d'une application disposant d'autorisations restreintes  
  En tant que développeur, vous utilisez très probablement votre ordinateur de développement avec les autorisations Confiance totale. Par conséquent, vous ne voyez pas apparaître les mêmes exceptions de sécurité lors du débogage de l'application que celles pouvant être rencontrées par les utilisateurs qui exécutent l'application avec des autorisations restreintes.  
@@ -71,7 +73,7 @@ Les applications ClickOnce sont basées sur le .NET Framework et sont soumises �
   
  De plus, lors de l’écriture du code, la fonctionnalité IntelliSense de l’éditeur de code désactive tous les membres qui ne sont pas inclus dans les autorisations de sécurité que vous avez configurées.  
   
- Pour plus d'informations, consultez [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Pour plus d'informations, consultez [Comment : déboguer une application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Autorisations de sécurité pour les applications hébergées dans un navigateur  
  Visual Studio fournit les types de projets suivants pour les applications Windows Presentation Foundation (WPF) :  
