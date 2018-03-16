@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,7 +24,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: af372b261b5d8527600d672c9017d7235385c170
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -55,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="understanding-worksheet-host-items-in-vsto-add-in-projects"></a>Présentation des éléments hôtes Worksheet dans les projets de complément VSTO  
  Dans les projets de niveau application, vous pouvez générer un élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> au moment de l’exécution pour toute feuille de calcul ouverte dans Excel. Vous pouvez utiliser l’élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> pour ajouter des contrôles à la feuille de calcul associée ou pour gérer des événements qui ne sont pas disponibles sur des objets <xref:Microsoft.Office.Interop.Excel.Worksheet> .  
   
- Pour générer un <xref:Microsoft.Office.Tools.Excel.Worksheet> élément hôte, utilisez la méthode GetVstoObject. Pour plus d'informations, consultez [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Pour générer un <xref:Microsoft.Office.Tools.Excel.Worksheet> élément hôte, utilisez la méthode GetVstoObject. Pour plus d'informations, consultez [Extension de documents Word et de classeurs Excel dans des compléments VSTO au moment de l'exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédures pas à pas et des exemples de développement office](../vsto/office-development-samples-and-walkthroughs.md)   
