@@ -1,5 +1,5 @@
 ---
-title: "Questions fréquentes (FAQ) sur l’Explorateur de tests | Microsoft Docs"
+title: "FAQ concernant l’Explorateur de tests | Microsoft Docs"
 ms.date: 1/15/2018
 ms.reviewer: 
 ms.suite: 
@@ -18,13 +18,13 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 63c1b25ad597dc3d56dfc398ec9c6c463aec200d
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: d06c02e651dd4acdcaebf05448282f26c20e3a75
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="visual-studio-test-explorer-faq"></a>Questions fréquentes (FAQ) sur l’Explorateur de tests Visual Studio
+# <a name="visual-studio-test-explorer-faq"></a>FAQ concernant l’Explorateur de tests Visual Studio
 
 ## <a name="test-discovery"></a>Découverte de tests
 
@@ -64,9 +64,15 @@ ms.lasthandoff: 02/12/2018
 
 ### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8. Comment fonctionne le tri des résultats de tests dans l’affichage des hiérarchies ?
 
-  L’affichage des hiérarchies trie les tests par ordre alphabétique et non par résultat. Les autres paramètres de regroupement trient normalement les résultats de tests par résultat, puis par ordre alphabétique. Le différentes options de regroupement sont indiquées ci-dessous pour comparaison. Vous pouvez fournir des commentaires sur la conception [dans ce problème GitHub](https://github.com/Microsoft/vstest/issues/1425).
+  L’affichage des hiérarchies trie les tests par ordre alphabétique et non par résultat. Les autres paramètres de regroupement trient normalement les résultats de tests par résultat, puis par ordre alphabétique. Consultez les différentes options de regroupement dans l’image suivante à des fins de comparaison. Vous pouvez fournir des commentaires sur la conception [dans ce problème GitHub](https://github.com/Microsoft/vstest/issues/1425).
 
   ![SortingExamples](media/testex-sortingex.png)
+
+### <a name="9-in-the-hierarchy-view-there-are-passed-failed-skipped-and-not-run-icons-next-to-the-project-namespace-and-class-groupings-what-do-these-icons-mean"></a>9. La vue de la hiérarchie inclut des icônes passed (réussi), failed (échec), skipped (ignoré) et not run (non exécuté) en regard des regroupements Projet, Espace de noms et Classe. Que signifient ces icônes ?
+
+  Les icônes en regard des regroupements Projet, Espace de noms et Classe reflètent l’état des tests dans le regroupement. Consultez le tableau suivant.
+
+  ![Icônes de la hiérarchie de l’Explorateur de tests](media/testex-hierarchyicons.png)
 
 ## <a name="features"></a>Fonctionnalités
 

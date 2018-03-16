@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: c97e2216c8101c03c999b4f658dcd4b6e1dc4619
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5fa5a2479b7b04cd8ad9ec84287a30d801ff90ca
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>Connexion à Visual Studio pour Mac
 
-Quand vous lancez Visual Studio pour Mac pour la première fois, vous êtes invité à vous connecter en utilisant un compte Microsoft. Vous devez utiliser un compte Microsoft qui est connecté à la licence que vous voulez utiliser. Si vous n’avez pas de compte Microsoft, consultez [S’inscrire pour obtenir un compte Microsoft](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account). 
+Quand vous lancez Visual Studio pour Mac pour la première fois, vous êtes invité à vous connecter en utilisant un compte Microsoft. Utilisez un compte Microsoft qui est connecté à la licence que vous voulez utiliser. Si vous n’avez pas de compte Microsoft, consultez [S’inscrire pour obtenir un compte Microsoft](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account). 
 
 Si vous décidez de ne pas vous connecter directement, vous pouvez utiliser une copie d’évaluation pendant 30 jours. Au terme des 30 jours, vous devez vous connecter pour continuer à utiliser votre copie de Visual Studio pour Mac. 
 
@@ -32,9 +32,9 @@ Pour vous connecter à Visual Studio pour Mac, procédez comme suit :
 
     ![](media/signing-in-image13.png)
 
-    Notez que vous ne pouvez pas utiliser les informations d’identification Xamarin pour vous connecter à Visual Studio pour Mac.
+    Vous ne pouvez pas utiliser les informations d’identification Xamarin pour vous connecter à Visual Studio pour Mac.
 
-3. 1.   Une fois que vous êtes connecté, vous voyez le type de votre licence. Dans cette boîte de dialogue, vous pouvez ajouter des comptes Microsoft supplémentaires que vous souhaitez utiliser :
+3.  Une fois que vous êtes connecté, vous voyez le type de votre licence. Dans cette boîte de dialogue, vous pouvez ajouter des comptes Microsoft supplémentaires que vous souhaitez utiliser :
 
     ![](media/signing-in-image14.png)
 

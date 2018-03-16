@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 57a33ce473cd82fcb6fb8517d7003c8772c1d4da
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: c0cd7853c65d5501213076cb7ccb533c5134c9f4
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Installer des frameworks de tests unitaires tierces
 L'Explorateur de tests Visual Studio peut exécuter n'importe quel framework de tests unitaires ayant développé une interface d'adaptateur pour l'Explorateur. Le programme d'installation du framework installe les fichiers binaires et ajoute des modèles de projet Visual Studio pour les langages qu'il prend en charge. Lorsque vous créez un projet avec le modèle, le framework est inscrit avec l'Explorateur de tests. Une solution Visual Studio peut contenir des projets de test unitaire qui utilisent des frameworks différents et qui sont destinés à des langages différents. L'Explorateur de tests les exécute tous.  
@@ -56,7 +57,24 @@ L'Explorateur de tests Visual Studio peut exécuter n'importe quel framework de 
   
 3.  Dans la liste **Catégorie** (libellée **Affichage**), développez le nœud **Outils**, puis choisissez **Test**.  
   
-4.  Choisissez un framework dans la liste des résultats pour accéder à la page de Visual Studio Marketplace correspondant à l’outil.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Tests unitaires sur votre code](../test/unit-test-your-code.md)
+4.  Choisissez un framework dans la liste des résultats pour accéder à la page de Visual Studio Marketplace correspondant à l’outil. 
+
+## <a name="update-to-the-latest-test-adapters"></a>Mettre à jour vers les adaptateurs de test les plus récents
+
+Mettez à jour vers l’adaptateur de test stable le plus récent afin de bénéficier d’une découverte et d’une exécution de test optimales. Pour plus d’informations sur les mises à jour des adaptateurs de test MSTest, NUnit et xUnit, consultez le [blog de Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/).
+
+### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Pour mettre à jour vers la version stable la plus récente de l’adaptateur de test
+
+1. Ouvrez le Gestionnaire de package Nuget pour votre solution en accédant à **Outils > Gestionnaire de package NuGet > Gérer les packages NuGet pour la solution...**
+
+2. Cliquez sur l’onglet **Mises à jour** et recherchez les adaptateurs de test NUnit ou xUnit installés.
+
+3. Sélectionnez chaque adaptateur de test, puis sélectionnez la version stable la plus récente disponible dans le menu déroulant.
+
+4. Choisissez le bouton **Installer**.
+
+![Mettre à niveau l’adaptateur de test](media/installadapter-upgrade.png)
+
+## <a name="see-also"></a>Voir aussi
+
+- [Tests unitaires sur votre code](../test/unit-test-your-code.md)

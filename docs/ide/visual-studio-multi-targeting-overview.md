@@ -1,10 +1,11 @@
 ---
 title: Ciblage du .NET Framework dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 01/18/2018
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: e78f77993c510a223056696c0beac27147d18d5a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Vue d’ensemble du multiciblage Visual Studio
 
@@ -48,7 +50,7 @@ Le ciblage du Framework inclut les fonctionnalités suivantes :
 
 Quand vous travaillez sur un projet qui cible une version antérieure du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio change dynamiquement l’environnement de développement, de la façon suivante :
 
-- Il filtre les éléments des boîtes de dialogue **Nouveau projet**, **Ajouter un nouvel élément**, **Ajouter une nouvelle référence** et **Ajouter une référence de service** de façon à omettre les choix qui ne sont pas disponibles dans la version ciblée.
+- Il filtre les éléments des boîtes de dialogue **Ajouter un nouvel élément**, **Ajouter une nouvelle référence** et **Ajouter une référence de service** de façon à omettre les choix qui ne sont pas disponibles dans la version ciblée.
 
 - Il filtre les contrôles personnalisés de la **boîte à outils** pour supprimer ceux qui ne sont pas disponibles dans la version ciblée et pour afficher la version la plus récente quand plusieurs contrôles sont disponibles.
 
@@ -65,7 +67,11 @@ Quand vous travaillez sur un projet qui cible une version antérieure du [!INCLU
 
 ## <a name="selecting-a-target-framework-version"></a>Sélection d’une version du Framework cible
 
-Quand vous créez un projet, sélectionnez la version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cible dans la boîte de dialogue **Nouveau projet**. La liste des modèles de projet disponibles est filtrée selon vos sélections. Dans un projet existant, vous pouvez modifier la version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cible dans la boîte de dialogue Propriétés du projet. Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Quand vous créez un projet, sélectionnez la version du .NET Framework cible dans la boîte de dialogue **Nouveau projet**. La liste des frameworks disponibles inclut les versions de framework installées applicables au type de modèle sélectionné. Pour les types de modèles qui n’ont pas besoin de .NET Framework, par exemple des modèles .NET Core, la liste déroulante **Framework** est masquée.
+
+![Liste déroulante Framework dans la boîte de dialogue Nouveau projet](media/vside-newproject-framework.png)
+
+Dans un projet existant, vous pouvez modifier la version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cible dans la boîte de dialogue Propriétés du projet. Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Résolution des références système et d’assembly utilisateur
 

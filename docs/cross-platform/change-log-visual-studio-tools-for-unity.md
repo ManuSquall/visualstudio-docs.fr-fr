@@ -13,14 +13,107 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 40356c5d80ee8572b4e5a6e468b9abf2919524de
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: f80e5eb1d82fab7167e86550739faaaa19000786
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Journal des modifications (Visual Studio Tools pour Unity)
 Journal des modifications Visual Studio Tools pour Unity
+
+## <a name="3604"></a>3.6.0.4
+ Publication 05-03-2018
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+-   **Génération de projet :**
+
+    -   Détection de la version mono fixe.
+
+-   **Intégration :**
+
+    -   Résolution des problèmes de synchronisation avec 2018.1 et activation du plug-in.
+
+## <a name="3603"></a>3.6.0.3
+ Publication 23-02-2018
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+-   **Génération de projet :**
+
+    -   Prise en charge ajoutée de .NET Standard.
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+-   **Génération de projet :**
+
+    -   Correction de la détection de framework cible fixe Unity.
+
+-   **Débogueur :**
+
+    -   Correction de l’arrêt sur les exceptions levées en dehors du code utilisateur.
+
+## <a name="3602"></a>3.6.0.2
+ Publication 07-02-2018
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+-   **Intégration :**
+
+    -   Mise à jour de la surface de l’API UnityMessage pour 2017.3.
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+-   **Intégration :**
+
+    -   Recharger uniquement les projets avec une modification externe (avec limitation).
+ 
+## <a name="3601"></a>3.6.0.1
+ Publication 24-01-2018
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+-   **Intégration :**
+
+    -   Correction du problème de conversion automatique des symboles de débogage pdb-mdb.
+    
+    -   Correction de l’appel indirect à EditorPrefs.GetBool affectant l’inspecteur lors de la tentative de modifier la taille du tableau.
+ 
+## <a name="3600"></a>3.6.0.0
+ Publication 10-01-2018
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+-   **Génération de projet :**
+
+    -   Prise en charge ajoutée du modèle de référence MonoIsland 2018.1.
+
+-   **Évaluation :**
+
+    -   Prise en charge ajoutée de l’identificateur $exception.
+
+-   **Débogueur :**
+
+    -   Prise en charge ajoutée des attributs DebuggerHidden/DebuggerStepThrough avec le nouveau runtime Unity.
+    
+-   **Assistants :**
+
+    -   Présentation de la version « la plus récente » pour les Assistants.
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+-   **Génération de projet :**
+
+    -   Correction du calcul GUID de projet pour les projets de lecteur.
+
+-   **Débogueur :**
+
+    -   Correction d’une concurrence dans la gestion des événements d’arrêt.
+    
+-   **Assistants :**
+
+    -   Actualiser le contexte roslyn avant d’insérer la méthode.
 
 ## <a name="3503"></a>3.5.0.3
  Publication : 09-01-2018

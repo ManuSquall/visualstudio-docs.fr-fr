@@ -2,7 +2,7 @@
 title: "Utilisation de Python dans Visual Studio, étape 5 - Installation de packages | Microsoft Docs"
 description: "L’étape 5 propose un didacticiel de base pour utiliser Python dans Visual Studio, présentant les fonctionnalités de Visual Studio permettant de gérer les packages dans un environnement Python."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb0890d5f9433e1f73039e4036b884d7bfcb7933
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d633ce061d0624c44060c5e059cf9b29733260d9
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Étape 5 : Installation de packages dans votre environnement Python
 
@@ -44,19 +44,21 @@ La communauté des développeurs Python a produit des milliers de packages utile
   ![Installation de matplotlib dans l’environnement](media/environments-add-matplotlib1.png)
 
 1. Acceptez l’élévation si vous y êtes invité.
- 
-1. Une fois que le package est installé, il apparaît dans la fenêtre Environnements Python. La marque **X** à droite du package permet de le désinstaller. 
+
+1. Une fois que le package est installé, il apparaît dans la fenêtre Environnements Python. La marque **X** à droite du package permet de le désinstaller.
 
   ![Fin de l’installation de matplotlib dans l’environnement](media/environments-add-matplotlib2.png)
 
   La petite barre de progression sous l’environnement indique que Visual Studio crée sa base de données IntelliSense pour le package nouvellement installé. L’onglet **IntelliSense** affiche également des informations plus détaillées. Notez que tant que cette base de données n’est pas terminée, les fonctionnalités IntelliSense, comme la saisie semi-automatique et la vérification de la syntaxe, ne sont pas actives dans l’éditeur pour ce package.
 
+  Notez que **Visual Studio 2017 versions 15.6** et ultérieures utilise une méthode différente et plus rapide pour travailler avec IntelliSense, et affiche un message à cet effet dans l’onglet **IntelliSense**.
+
 1. Créez un projet avec **Fichier > Nouveau > Projet** en sélectionnant le modèle « Application Python ». Dans le fichier de code qui s’affiche, collez le code suivant, qui crée une courbe de la fonction cosinus comme dans les étapes du didacticiel précédent, mais cette fois avec seulement une représentation graphique :
 
     ```python
+    from math import radians
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
-    from math import radians
 
     def main():
         x = np.arange(0, radians(1800), radians(12))

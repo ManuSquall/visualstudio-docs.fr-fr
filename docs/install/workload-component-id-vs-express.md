@@ -5,21 +5,23 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 12/01/2017
+ms.date: 03/05/2018
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.workload: multiple
-ms.openlocfilehash: a628d2af0ccfaf66c936b391a977a0869139c98b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b73c455e4a6aaf888e9a405f9ec8070f56f892ab
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-desktop-express-2017-workload-and-component-ids"></a>ID de composant et de charge de travail de Visual Studio Desktop Express 2017
 
@@ -45,43 +47,43 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 ID de composant | Name | Version | Type de dépendance
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce | Publication ClickOnce | 15.0.27019.1 | Obligatoire
-Microsoft.Component.HelpViewer | Visionneuse d'aide | 15.0.27005.2 | Obligatoire
-Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Obligatoire
-Microsoft.Component.VC.Runtime.OSSupport | Runtime Visual C++ pour UWP | 15.0.27019.1 | Obligatoire
-Microsoft.Net.Component.4.5.1.TargetingPack | Pack de ciblage .NET Framework 4.5.1 | 15.0.26621.2 | Obligatoire
-Microsoft.Net.Component.4.5.2.TargetingPack | Pack de ciblage .NET Framework 4.5.2 | 15.0.26621.2 | Obligatoire
-Microsoft.Net.Component.4.5.TargetingPack | Pack de ciblage .NET Framework 4.5 | 15.0.26621.2 | Obligatoire
-Microsoft.Net.Component.4.6.1.SDK | SDK .NET Framework 4.6.1 | 15.0.26621.2 | Obligatoire
-Microsoft.Net.Component.4.6.1.TargetingPack | Pack de ciblage .NET Framework 4.6.1 | 15.0.26621.2 | Obligatoire
-Microsoft.Net.Component.4.6.TargetingPack | Pack de ciblage .NET Framework 4.6 | 15.0.26621.2 | Obligatoire
-Microsoft.Net.Component.4.TargetingPack | Pack de ciblage .NET Framework 4 | 15.0.26621.2 | Obligatoire
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Outils de développement .NET Framework 4.6.1 | 15.0.27005.2 | Obligatoire
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Outils de développement .NET Framework 4 - 4.6 | 15.0.26606.0 | Obligatoire
+Microsoft.Component.ClickOnce | Publication ClickOnce | 15.0.27205.0 | Obligatoire
+Microsoft.Component.HelpViewer | Visionneuse d'aide | 15.6.27323.2 | Obligatoire
+Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Obligatoire
+Microsoft.Component.VC.Runtime.OSSupport | Runtime Visual C++ pour UWP | 15.6.27406.0 | Obligatoire
+Microsoft.Net.Component.4.5.1.TargetingPack | Pack de ciblage .NET Framework 4.5.1 | 15.6.27406.0 | Obligatoire
+Microsoft.Net.Component.4.5.2.TargetingPack | Pack de ciblage .NET Framework 4.5.2 | 15.6.27406.0 | Obligatoire
+Microsoft.Net.Component.4.5.TargetingPack | Pack de ciblage .NET Framework 4.5 | 15.6.27406.0 | Obligatoire
+Microsoft.Net.Component.4.6.1.SDK | SDK .NET Framework 4.6.1 | 15.6.27406.0 | Obligatoire
+Microsoft.Net.Component.4.6.1.TargetingPack | Pack de ciblage .NET Framework 4.6.1 | 15.6.27406.0 | Obligatoire
+Microsoft.Net.Component.4.6.TargetingPack | Pack de ciblage .NET Framework 4.6 | 15.6.27406.0 | Obligatoire
+Microsoft.Net.Component.4.TargetingPack | Pack de ciblage .NET Framework 4 | 15.6.27406.0 | Obligatoire
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Outils de développement .NET Framework 4.6.1 | 15.6.27406.0 | Obligatoire
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Outils de développement .NET Framework 4 - 4.6 | 15.6.27406.0 | Obligatoire
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Outils de connectivité et de publication | 1.10.50912.1 | Obligatoire
-Microsoft.VisualStudio.Component.CoreEditor | Éditeur de base de Visual Studio | 15.0.26606.0 | Obligatoire
-Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 Tools | 15.0.26208.0 | Obligatoire
-Microsoft.VisualStudio.Component.NuGet | Gestionnaire de package NuGet | 15.0.27128.1 | Obligatoire
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilateurs Roslyn C# et Visual Basic | 15.0.27019.1 | Obligatoire
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# et Visual Basic | 15.0.27019.1 | Obligatoire
-Microsoft.VisualStudio.Component.SQL.ADAL | Runtime SQL ADAL | 15.0.26606.0 | Obligatoire
+Microsoft.VisualStudio.Component.CoreEditor | Éditeur de base de Visual Studio | 15.6.27309.0 | Obligatoire
+Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 Tools | 15.6.27406.0 | Obligatoire
+Microsoft.VisualStudio.Component.NuGet | Gestionnaire de package NuGet | 15.6.27309.0 | Obligatoire
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilateurs Roslyn C# et Visual Basic | 15.6.27309.0 | Obligatoire
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# et Visual Basic | 15.0.27205.0 | Obligatoire
+Microsoft.VisualStudio.Component.SQL.ADAL | Runtime SQL ADAL | 15.6.27406.0 | Obligatoire
 Microsoft.VisualStudio.Component.SQL.CLR | Types de données CLR pour SQL Server | 15.0.26208.0 | Obligatoire
 Microsoft.VisualStudio.Component.SQL.CMDUtils | Utilitaires de ligne de commande SQL Server | 15.0.26208.0 | Obligatoire
 Microsoft.VisualStudio.Component.SQL.DataSources | Sources de données pour la prise en charge de SQL Server | 15.0.26621.2 | Obligatoire
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26919.1 | Obligatoire
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.6.27406.0 | Obligatoire
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Obligatoire
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26906.1 | Obligatoire
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Outils d’analyse statique | 15.0.26208.0 | Obligatoire
 Microsoft.VisualStudio.Component.TextTemplating | Transformation de modèle de texte | 15.0.26208.0 | Obligatoire
-Microsoft.VisualStudio.Component.VC.CLI.Support | Prise en charge de C++/CLI | 15.0.27019.1 | Obligatoire
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Compilateurs et bibliothèques Visual C++ pour ARM | 15.0.27019.1 | Obligatoire
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Compilateurs et bibliothèques Visual C++ pour ARM64 | 15.0.27019.1 | Obligatoire
-Microsoft.VisualStudio.Component.VisualStudioData | Sources de données et références de service | 15.0.26208.0 | Obligatoire
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | SDK Windows 10 (10.0.14393.0) | 15.0.26208.0 | Obligatoire
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | SDK Windows 10 (10.0.16299.0) pour plateforme desktop C++ [x86 et x64] | 15.0.27128.1 | Obligatoire
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | SDK Windows 10 (10.0.16299.0) pour plateforme desktop C++ [ARM et ARM64] | 15.0.27128.1 | Obligatoire
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK Windows 10 (10.0.16299.0) pour UWP : C#, VB, JS | 15.0.27128.1 | Obligatoire
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | SDK Windows 10 (10.0.16299.0) pour UWP : C++ | 15.0.27128.1 | Obligatoire
+Microsoft.VisualStudio.Component.VC.CLI.Support | Prise en charge de C++/CLI | 15.6.27309.0 | Obligatoire
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Compilateurs et bibliothèques Visual C++ pour ARM | 15.6.27406.0 | Obligatoire
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Compilateurs et bibliothèques Visual C++ pour ARM64 | 15.6.27309.0 | Obligatoire
+Microsoft.VisualStudio.Component.VisualStudioData | Sources de données et références de service | 15.6.27406.0 | Obligatoire
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | SDK Windows 10 (10.0.14393.0) | 15.6.27406.0 | Obligatoire
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | SDK Windows 10 (10.0.16299.0) pour plateforme desktop C++ [x86 et x64] | 15.6.27406.0 | Obligatoire
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | SDK Windows 10 (10.0.16299.0) pour plateforme desktop C++ [ARM et ARM64] | 15.6.27406.0 | Obligatoire
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK Windows 10 (10.0.16299.0) pour UWP : C#, VB, JS | 15.6.27406.0 | Obligatoire
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | SDK Windows 10 (10.0.16299.0) pour UWP : C++ | 15.6.27406.0 | Obligatoire
 
 ## <a name="unaffiliated-components"></a>Composants non affiliés
 

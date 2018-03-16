@@ -6,27 +6,27 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: f0192b63c76fe4c3fe51c0f5aa6700e072fb80d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bbc2f70f0d6774269f481cad5571dd9b78bac2da
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-ide"></a>Personnalisation de l’IDE
 
-Visual Studio pour Mac peut être personnalisé de plusieurs façons, permettant aux utilisateurs de développer des applications dans un environnement qui répond à leurs besoins en matière d’efficacité et d’esthétique. Cette rubrique explore les différentes façons dont Visual Studio pour Mac peut être adapté à vos besoins.
+Visual Studio pour Mac peut être personnalisé de plusieurs façons, permettant aux utilisateurs de développer des applications dans un environnement qui répond à leurs besoins en matière d’efficacité et d’esthétique. Cet article explore les différentes façons dont Visual Studio pour Mac peut être adapté à vos besoins.
 
 ## <a name="dark-theme"></a>Thème foncé
 
 ![Vue du thème foncé](media/customizing-the-ide-image7a.png)
 
-Vous pouvez basculer entre les thèmes de Visual Studio pour Mac en accédant à **Visual Studio > Préférences... > Environnement > Style visuel** et en sélectionnant le thème de votre choix dans la liste déroulante **Thème de l’interface utilisateur**, comme illustré dans la capture d’écran ci-dessous :
+Vous pouvez basculer entre les thèmes de Visual Studio pour Mac en accédant à **Visual Studio > Préférences... > Environnement > Style visuel** et en sélectionnant le thème de votre choix dans la liste déroulante **Thème de l’interface utilisateur**, comme illustré dans l’image suivante :
 
  ![Sélection du thème foncé](media/customizing-the-ide-image7b.png)
 
 ## <a name="localization"></a>Localisation
 
-Visual Studio pour Mac est localisé en 13 langues, ce qui lui permet d’être accessible à un plus grand nombre de développeurs. Les langues actuellement disponibles sont listées ci-dessous :
+Visual Studio pour Mac est localisé dans les 13 langues suivantes, ce qui lui permet d’être accessible à un plus grand nombre de développeurs :
 
 * Chinois - Chine
 * Chinois - Taïwan
@@ -42,29 +42,29 @@ Visual Studio pour Mac est localisé en 13 langues, ce qui lui permet d’être
 * Espagnol
 * Turc
 
-Pour changer la langue affichée par Visual Studio pour Mac, accédez à **Visual Studio > Préférences... > Environnement > Style visuel** et sélectionnez la langue de votre choix dans la liste déroulante **Langue de l’interface utilisateur**, comme illustré dans la capture d’écran ci-dessous :
+Pour changer la langue affichée par Visual Studio pour Mac, accédez à **Visual Studio > Préférences... > Environnement > Style visuel** et sélectionnez la langue de votre choix dans la liste déroulante **Langue de l’interface utilisateur**, comme illustré dans l’image suivante :
 
 
 ![Sélection de la langue](media/customizing-the-ide-image11a.png)
 
 ## <a name="author-information"></a>Informations sur l’auteur
 
-Le panneau d’informations sur l’auteur vous permet d’ajouter des informations pertinentes sur vous-même, comme votre nom, votre adresse de messagerie, le propriétaire du copyright de votre travail, votre entreprise et la marque déposée, comme illustré ci-dessous :
+Le panneau d’informations sur l’auteur vous permet d’ajouter des informations pertinentes sur vous-même, comme votre nom, votre adresse de messagerie, le propriétaire du copyright de votre travail, votre entreprise et la marque déposée :
 
  ![Modifier la section Informations sur l’auteur](media/customizing-the-ide-image9a.png)
 
-Ces informations sont utilisées pour remplir les en-têtes de fichier standard, par exemple une licence, que vous pouvez ajouter aux nouveaux fichiers créés dans Visual Studio pour Mac :
+Ces informations sont utilisées pour remplir les en-têtes de fichier standard, par exemple une licence, que vous pouvez ajouter aux nouveaux fichiers :
 
  ![Options d’en-tête standard](media/customizing-the-ide-image8a.png)
 
 
-Les champs **Nom** et **E-mail** renseignés sont utilisés pour ajouter des informations aux validations effectuées via la gestion de versions dans Visual Studio pour Mac. Si vous n’avez pas rempli ces champs, Visual Studio pour Mac vous invite à le faire quand vous essayez d’utiliser la gestion des versions.
+Les champs **Nom** et **E-mail** sont utilisés dans les validations effectuées via la gestion de versions dans Visual Studio pour Mac. Si vous n’avez pas rempli ces champs, Visual Studio pour Mac vous invite à le faire quand vous essayez d’utiliser la gestion des versions.
 
 ## <a name="key-bindings"></a>Combinaisons de touches
 
 Les combinaisons de touches vous permettent d’adapter votre environnement de développement afin de vous déplacer plus efficacement dans Visual Studio pour Mac. Il fournit des combinaisons de touches courantes dans de nombreux IDE répandus, comme Visual Studio (Windows), ReSharper, Visual Studio Code et Xcode.
 
-Les combinaisons de touches peuvent être définies en accédant à **Visual Studio > Préférences... > Environnement > Combinaisons de touches**, comme illustré ci-dessous :
+Les combinaisons de touches peuvent être définies en accédant à **Visual Studio > Préférences... > Environnement > Combinaisons de touches**, comme illustré dans l’image suivante :
 
  ![Définir des combinaisons de touches](media/customizing-the-ide-image10a.png)
 
@@ -78,7 +78,7 @@ L’espace de travail de Visual Studio pour Mac se compose d’une zone de docum
 
 ### <a name="viewing-and-arranging-pads"></a>Affichage et organisation des panneaux
 
-Quand vous ouvrez une nouvelle solution ou un nouveau fichier dans Visual Studio pour Mac, vous pouvez noter la présence de certains *panneaux* dans l’espace de travail, notamment le panneau Solution, Structure du document et Erreurs, comme illustré ci-dessous :
+Quand vous ouvrez une nouvelle solution ou un nouveau fichier dans Visual Studio pour Mac, vous pouvez noter la présence de certains *panneaux* dans l’espace de travail, notamment le panneau Solution, Structure du document et Erreurs :
 
 ![Panneaux Solution](media/customizing-the-ide-image2a.png)
 
@@ -103,7 +103,7 @@ Les panneaux masqués automatiquement sont ancrés sur les côtés de l’espace
 
 Les panneaux qui sont affichés à un moment donné dépendent du contexte actif. Par exemple, quand vous utilisez le concepteur visuel, les panneaux des outils et de la grille de propriétés sont les plus importants ; lors du débogage, il est pratique d’avoir les panneaux du débogueur pour afficher la pile et les variables locales.
 
-L’état des panneaux ouverts est représenté par une *disposition*. Vous pouvez changer les dispositions manuellement via le menu Affichage, comme illustré ci-dessous, ou elles changent elles-mêmes automatiquement quand vous exécutez une action, comme déboguer ou ouvrir un fichier Storyboard :
+L’état des panneaux ouverts est représenté par une *disposition*. Vous pouvez changer les dispositions manuellement via le menu Affichage, comme illustré dans l’image suivante, ou elles changent elles-mêmes automatiquement quand vous exécutez une action, comme déboguer ou ouvrir un fichier Storyboard :
 
 ![Sélection de nouvelles dispositions](media/customizing-the-ide-image6b.png)
 
@@ -118,7 +118,7 @@ Cependant, il est possible de créer une nouvelle disposition en utilisant l’�
 
 Visual Studio pour Mac vous permet d’ouvrir des éditeurs de texte côte à côte, ou d’avoir un éditeur dans une fenêtre flottante détachée.
 
-Le mode 2 colonnes peut être activé via l’élément de menu Afficher, en sélectionnant **Afficher > Colonnes de l’éditeur > 2 colonnes**, ou en faisant glisser l’onglet d’un éditeur sur un des bords de la zone de l’éditeur, comme indiqué ci-dessous :
+Le mode 2 colonnes peut être activé via l’élément de menu Afficher, en sélectionnant **Afficher > Colonnes de l’éditeur > 2 colonnes**, ou en faisant glisser l’onglet d’un éditeur sur un des bords de la zone de l’éditeur :
 
  ![Mode deux colonnes côte à côte](media/customizing-the-ide-sbs.png)
 

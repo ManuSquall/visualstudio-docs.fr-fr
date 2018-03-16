@@ -1,26 +1,26 @@
 ---
 title: Raccourcis clavier dans Visual Studio | Microsoft Docs
-ms.custom: 
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Conseils d’utilisation du clavier pour Visual Studio
 
-Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccourcis clavier indiqués dans cette rubrique. Cette rubrique représente uniquement un sous-ensemble des raccourcis clavier disponibles. Pour obtenir une liste plus complète, consultez [Raccourcis clavier par défaut dans Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Pour plus d’informations sur l’optimisation de Visual Studio pour l’accessibilité, consultez [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md).
+Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccourcis clavier indiqués dans cet article.
+
+Les raccourcis répertoriés ici représentent uniquement un sous-ensemble des raccourcis clavier disponibles. Pour obtenir une liste plus complète, consultez [Raccourcis clavier par défaut dans Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+Pour plus d’informations sur l’optimisation de Visual Studio pour l’accessibilité, consultez [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md).
 
 ## <a name="window-management"></a>Gestion des fenêtres
 
@@ -83,7 +83,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Éditeur de zoom|Ctrl+Maj+> (Entrée), Ctrl+Maj+< (Sortie)||
 |Sélection de bloc|Maintenez la touche Alt et faites glisser la souris, Maj+Alt+touches fléchées||
 |Déplacer la ligne vers le haut ou vers le bas|Alt+Flèche haut/Alt+Flèche bas||
-|Dupliquer la ligne|Ctrl+E,V|Visual Studio 2017 version 15.6 préversion 2|
+|Dupliquer la ligne|Ctrl+E,V|Visual Studio 2017 version 15.6|
 |Développer la sélection|**Maj**+**Alt**+**=**|Visual Studio 2017 version 15.5|
 |Diminuer la sélection|**Maj**+**Alt**+**-**|Visual Studio 2017 version 15.5|
 |Atteindre la définition|F12||

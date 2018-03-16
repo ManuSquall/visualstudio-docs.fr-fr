@@ -6,19 +6,17 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 9005cf64f4b72f39923d6525e78de745d79c3953
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: abf772f1e00239b3a66e01c95dd827a392a12902
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilation et génération dans Visual Studio pour Mac
 
 Vous pouvez utiliser Visual Studio pour Mac pour générer des applications et créer des assemblys lors du développement de votre projet. Il est important de compiler et de générer votre code régulièrement afin de pouvoir identifier les incompatibilités de type et autres erreurs de compilation.
 
-## <a name="choosing-a-build-method"></a>Choix d’une méthode de génération :
-
-### <a name="using-the-ide"></a>Utilisation de l'IDE
+## <a name="building-from-the-ide"></a>Génération à partir de l'IDE
 
 Vous pouvez utiliser Visual Studio pour Mac pour créer et exécuter des builds instantanément, tout en gardant le contrôle sur les fonctionnalités de génération. Visual Studio pour Mac utilise MSBuild comme système de génération sous-jacent.
 
@@ -40,13 +38,13 @@ Vous pouvez aussi utiliser Visual Studio pour Mac pour :
 
     ![Ajouter des commandes personnalisées](media/compiling-and-building-image6.png)
 
-### <a name="building-from-command-line"></a>Génération à partir de la ligne de commande
+## <a name="building-from-command-line"></a>Génération à partir de la ligne de commande
 
 Vous pouvez utiliser le moteur de génération MSBuild pour générer des applications via la ligne de commande.
 
 Pour plus d’informations sur l’utilisation de MSBuild, consultez [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild).
 
-### <a name="using-visual-studio-team-services"></a>Utilisation de Visual Studio Team Services
+## <a name="building-from-visual-studio-team-services"></a>Génération à partir de Visual Studio Team Services
 
 * [Générer votre application Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)
 * [Intégration continue avec Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)

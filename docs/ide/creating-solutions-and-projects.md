@@ -1,7 +1,7 @@
 ---
 title: "Créer des solutions et des projets dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 06/16/2017
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -13,7 +13,6 @@ f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
 - SolutionItemsProject
 helpviewer_keywords:
-- solutions [Visual Studio], deleting
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
 author: gewarren
@@ -21,11 +20,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b92558a7838646ff7cfde88bffd9f709a997137a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-solutions-and-projects"></a>Créer des solutions et des projets
 
@@ -46,7 +45,7 @@ Cela étant dit, le développement d’applications dans Visual Studio peut se f
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Pour créer un projet à partir d’un modèle de projet
 
-1. Il existe plusieurs façons de créer un projet dans Visual Studio. Dans la page de démarrage, entrez le nom d’un modèle de projet dans la zone **Rechercher dans les modèles de projet**, ou choisissez le lien **Créer un projet** pour ouvrir la boîte de dialogue **Nouveau projet**. Vous pouvez également choisir **Fichier**, **Nouveau**, **Projet** dans la barre de menus, ou choisir le bouton **Nouveau projet** dans la barre d’outils.
+1. Il existe plusieurs façons de créer un projet dans Visual Studio. Dans la page de démarrage, entrez le nom d’un modèle de projet dans la zone **Rechercher dans les modèles de projet**, ou choisissez le lien **Créer un projet** pour ouvrir la boîte de dialogue **Nouveau projet**. Vous pouvez également choisir **Fichier** > **Nouveau** > **Projet...**  dans la barre de menus ou le bouton **Nouveau projet** dans la barre d’outils.
 
   ![Page de démarrage](./media/vside-newproject1.png)
 
@@ -59,9 +58,9 @@ Cela étant dit, le développement d’applications dans Visual Studio peut se f
 
 1. Affichez la liste des modèles disponibles pour le langage de programmation souhaité en choisissant la flèche à côté du nom du langage, puis en choisissant un type de projet.
 
-  L’exemple suivant montre les modèles de projet disponibles pour des projets web Visual C#.
+  L’exemple suivant montre les modèles de projet disponibles pour des projets .NET Core Visual C#.
 
-  ![Modèles de projet](./media/vside-newproject-projects-list.png)
+  ![Modèles de projet](./media/new-project-dialog-net-core.png)
 
 1. Entrez le nom du nouveau projet dans la zone **Nom**. Vous pouvez enregistrer le projet à l’emplacement par défaut sur votre système, ou choisir le bouton **Parcourir** pour rechercher un autre emplacement.
 
@@ -69,13 +68,13 @@ Cela étant dit, le développement d’applications dans Visual Studio peut se f
 
 1. Choisissez le bouton **OK** pour créer la solution et le projet.
 
-1. Si vous souhaitez ajouter un projet supplémentaire à la solution, choisissez le nœud de la solution dans l’Explorateur de solutions et, dans la barre de menus, choisissez **Projet**, **Ajouter un nouvel élément**.
+1. Si vous souhaitez ajouter un projet supplémentaire à la solution, choisissez le nœud de la solution dans l’Explorateur de solutions et, dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Créer un projet à partir de fichiers de code existants
 
 Si vous avez déjà une collection de fichiers de code source, vous pouvez facilement les ajouter à un projet.
 
-1. Dans le menu, choisissez **Fichier**, **Nouveau**, **Projet à partir de code existant**.
+1. Dans le menu, choisissez **Fichier** > **Nouveau** >  **Projet à partir de code existant**.
 
 1. Dans l’Assistant **Créer un projet à partir de fichiers de code existants**, choisissez le type de projet souhaité dans la zone de liste déroulante **Quel type de projet voulez-vous créer ?**, puis choisissez le bouton **Suivant**.
 
@@ -86,21 +85,16 @@ Si vous avez déjà une collection de fichiers de code source, vous pouvez facil
 
 ## <a name="add-files-to-a-solution"></a>Ajouter des fichiers à une solution
 
-Si vous utilisez des fichiers qui s’appliquent à plusieurs projets, comme un fichier Lisezmoi pour la solution, ou d’autres fichiers qui sont logiquement associés à la solution globale plutôt qu’à un projet particulier, vous pouvez les ajouter directement à la solution. Pour ajouter un élément à une solution, dans le menu contextuel (clic droit) du nœud de la solution dans l’**Explorateur de solutions**, choisissez **Ajouter**, **Nouvel élément** ou bien **Ajouter**, **Élément existant**.
+Si vous utilisez des fichiers qui s’appliquent à plusieurs projets, comme un fichier Lisezmoi pour la solution, ou d’autres fichiers qui sont logiquement associés à la solution globale plutôt qu’à un projet particulier, vous pouvez les ajouter directement à la solution. Pour ajouter un élément à une solution, dans le menu contextuel (clic droit) du nœud de solution dans **l’Explorateur de solutions**, choisissez **Ajouter** > **Nouvel élément** ou **Ajouter** > **Élément existant**.
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Créer un projet .NET qui cible une version spécifique du .NET Framework
 
-Quand vous créez un projet, vous pouvez spécifier une version spécifique de .NET Framework à utiliser pour votre projet. Pour spécifier une version de .NET Framework, choisissez le menu déroulant **.NET Framework** dans la boîte de dialogue **Nouveau projet**.
+Quand vous créez un projet, vous pouvez spécifier une version spécifique de .NET Framework à utiliser pour votre projet. Pour spécifier une version de .NET Framework, choisissez le menu déroulant **Framework** dans la boîte de dialogue **Nouveau projet**.
 
-![Sélecteur de version de .NET Framework](./media/vside-newproject-framework.png)
+![Liste déroulante Framework dans la boîte de dialogue Nouveau projet](./media/vside-newproject-framework.png)
 
 > [!NOTE]
-> Si vous créez un projet à partir d’un modèle .NET Core, la version de .NET Framework que vous sélectionnez dans la liste déroulante est ignorée.
-
-> [!TIP]
-> Si vous définissez la version de .NET Framework avant de sélectionner un modèle de projet, Visual Studio affiche uniquement les modèles qui sont compatibles avec cette version de .NET Framework.
-
-Vous devez avoir .NET Framework 3.5 installé sur votre système pour pouvoir accéder aux versions de .NET Framework antérieures à .NET Framework 4.
+> Vous devez avoir .NET Framework 3.5 installé sur votre système pour pouvoir accéder aux versions de .NET Framework antérieures à .NET Framework 4.
 
 ## <a name="create-empty-solutions"></a>Créer des solutions vides
 
@@ -108,9 +102,9 @@ Vous pouvez également créer des solutions vides qui ne contiennent pas de proj
 
 ### <a name="to-create-an-empty-solution"></a>Pour créer une solution vide
 
-1. Dans le menu, choisissez **Fichier**, **Nouveau**, **Projet**.
+1. Dans le menu, choisissez **Fichier** > **Nouveau** > **Projet...**.
 
-1. Dans le volet (**Modèles**) de gauche, choisissez **Autres types de projets**, puis **Solutions Visual Studio** dans la liste développée.
+1. Dans le volet (**Modèles**) de gauche, choisissez **Autres types de projets** > **Solutions Visual Studio dans la liste développée**.
 
 1. Dans le volet du milieu, choisissez **Nouvelle Solution**.
 
@@ -124,7 +118,7 @@ Comme mentionné plus haut, vous pouvez aussi ouvrir des fichiers de code sans a
 
 Si vous créez un projet .NET sans spécifier un emplacement sur disque, le projet est considéré comme temporaire. Les projets temporaires sont utiles pour faire des essais avec des projets .NET. Quand vous travaillez avec un projet temporaire, vous pouvez choisir de l’enregistrer ou de le supprimer à tout moment.
 
-Pour créer un projet temporaire, accédez d’abord à **Outils**, **Options**, **Projets et solutions**, **Général**, puis décochez la case **Enregistrer les nouveaux projets lors de leur création**. Ouvrez ensuite la boîte de dialogue **Nouveau projet**.
+Pour créer un projet temporaire, accédez d’abord à **Outils** > **Options** > **Projets et solutions** > **Général** et désélectionnez la case **Enregistrer les nouveaux projets lors de la création**. Ouvrez ensuite la boîte de dialogue **Nouveau projet**.
 
 ## <a name="delete-a-solution-project-or-item"></a>Supprimer une solution, un projet ou un élément
 
@@ -143,7 +137,7 @@ Vous pouvez supprimer des solutions et tout leur contenu définitivement, mais c
 
 ## <a name="see-also"></a>Voir aussi
 
-[Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md)  
+[Solutions et projets](../ide/solutions-and-projects-in-visual-studio.md)  
 [Référentiels open source de Microsoft sur GitHub](https://github.com/Microsoft)  
 [Exemples Visual Studio](../ide/visual-studio-samples.md)  
-[Exemples de code pour développeurs](https://code.msdn.microsoft.com/)  
+[Exemples de code pour développeurs](https://code.msdn.microsoft.com/)

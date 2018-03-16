@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e41e4af21a524215550c581b1e29efc2261aaa8f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 0bd110b671806c37e59f5f0d52c62c1eed42e9cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Utilisation de la fenêtre interactive Python
 
@@ -38,7 +38,7 @@ Visual Studio propose plusieurs modes REPL Python au choix :
 | IPython | REPL qui communique avec le serveur principal IPython | Commandes IPython, avantages de Pylab | Non | Oui, inline dans REPL |
 | IPython sans Pylab | REPL qui communique avec le serveur principal IPython | IPython standard | Non | Oui, fenêtre distincte | 
 
-Cette rubrique décrit les modes REPL **Standard** et **Débogage**. Pour plus d’informations sur les modes IPython, consultez [Using the IPython REPL](interactive-repl-ipython.md) (Utilisation de la boucle REPL IPython).
+Cet article décrit les modes REPL **Standard** et **Débogage**. Pour plus d’informations sur les modes IPython, consultez [Using the IPython REPL](interactive-repl-ipython.md) (Utilisation de la boucle REPL IPython).
 
 Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment les interactions avec l’éditeur comme Ctrl+Entrée, consultez [Didacticiel - Étape 3 : Utilisation de la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
 

@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 48419196050111d12fb149612394fd9ef7935494
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8e91411539f1e511b04fd455b8ee775fa7abccc2
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Conseils de productivité pour Visual Studio
 
@@ -28,7 +28,7 @@ Pour plus d'informations sur les raccourcis clavier courants, consultez [Conseil
 
 Écrivez le code plus rapidement à l’aide des fonctionnalités suivantes.
 
-- **Utilisez des commandes pratiques**. Visual Studio propose différentes commandes pour vous aider à accomplir plus rapidement des tâches d’édition. Par exemple, dans **Visual Studio 2017 version 15.6 préversion 2** et versions ultérieures, vous pouvez choisir une commande afin de facilement dupliquer une ligne de code sans avoir à la copier, à repositionner le curseur, puis à coller la ligne. Choisissez **Edition** > **Dupliquer** ou appuyez sur **Ctrl**+**E**,**V**. Vous pouvez également développer ou diminuer rapidement une sélection de texte en choisissant **Modifier** > **Avancé** > **Développer la sélection** ou **Modifier** > **Avancé** > **Diminuer la sélection** ou en appuyant sur **Maj**+**Alt**+**=** ou sur **Maj**+**Alt**+**-**  (disponible dans **Visual Studio 2017 version 15.5** et version ultérieure).
+- **Utilisez des commandes pratiques**. Visual Studio propose différentes commandes pour vous aider à accomplir plus rapidement des tâches d’édition. Par exemple, dans **Visual Studio 2017 versions 15.6** et ultérieures, vous pouvez choisir une commande afin de facilement dupliquer une ligne de code sans avoir à la copier, à repositionner le curseur, puis à coller la ligne. Choisissez **Edition** > **Dupliquer** ou appuyez sur **Ctrl**+**E**,**V**. Vous pouvez également développer ou diminuer rapidement une sélection de texte en choisissant **Modifier** > **Avancé** > **Développer la sélection** ou **Modifier** > **Avancé** > **Diminuer la sélection** ou en appuyant sur **Maj**+**Alt**+**=** ou sur **Maj**+**Alt**+**-**  (disponible dans **Visual Studio 2017 version 15.5** et version ultérieure).
 
 - **Utiliser IntelliSense**. Lorsque vous écrivez du code dans l'éditeur, les informations IntelliSense, telles que Liste des membres, Informations sur les paramètres, Info express, l'assistance de signature et Compléter le mot, s'affichent. Ces fonctionnalités prennent en charge la correspondance approximative de texte. Par exemple, les listes de résultats pour la liste des membres comprennent non seulement les entrées qui commencent par les caractères saisis, mais également celles qui contiennent la combinaison de caractères n’importe où dans leurs noms. Pour plus d’informations, consultez [Utilisation d’IntelliSense](../ide/using-intellisense.md).
 

@@ -2,7 +2,7 @@
 title: "Options et paramètres pour Python dans Visual Studio | Microsoft Docs"
 description: "Document de référence pour les différents paramètres dans Visual Studio concernant des projets et du code Python."
 ms.custom: 
-ms.date: 02/21/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,6 +16,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
 - VS.ToolsOptionsPages.Python_Tools.Diagnostics
+- VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
@@ -24,11 +25,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25e0540c376017bfc3f3a64d23bbc6963942bb5c
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 9bb1316d46f252721230ce4ac1b14f4304693445
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Options pour Python dans Visual Studio
 
@@ -36,19 +37,21 @@ Pour afficher les options pour Python, utilisez la commande de menu **Outils > O
 
 ![Boîte de dialogue Options pour Python, onglet Général](media/options-general.png)
 
-Il existe également des options supplémentaires spécifiques à Python sur l’onglet **Éditeur de texte > Python > Avancé**.
+Il existe également des options supplémentaires spécifiques à Python dans l’onglet **Éditeur de texte > Python > Avancé** et dans l’onglet **Environnement > Polices et couleurs** au sein du groupe « Éditeur de texte ».
 
 > [!Note]
 > Le groupe **Expérimental** contient des options pour des fonctionnalités encore en cours de développement qui ne sont pas décrites ici. Celles-ci sont souvent décrites dans les posts du [blog sur l’ingénierie Python chez Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="general-options"></a>Options générales
 
+(Onglet **Outils > Options > Python**.)
+
 | Option | Par défaut | Description |
 | --- | --- | --- |
 | Afficher la fenêtre Sortie pendant la création d’environnements virtuels| Activé | Désactivez-la pour empêcher la fenêtre Sortie de s’afficher. |
 | Afficher la fenêtre Sortie pendant l’installation ou la suppression des packages | Activé | Désactivez-la pour empêcher la fenêtre Sortie de s’afficher. |
 | Toujours exécuter pip comme administrateur | Off | Élève toujours les privilèges des opérations `pip install` pour tous les environnements. Lors de l’installation des packages, Visual Studio vous invite à entrer des privilèges d’administrateur si l’environnement se trouve dans une zone protégée du système de fichiers, par exemple `c:\Program Files`. Dans cette invite, vous pouvez choisir de toujours élever les privilèges de `pip install` pour cet environnement uniquement. Consultez [l’onglet packages](python-environments-window-tab-reference.md#packages-tab). |
-| Générer automatiquement la base de données de saisie semi-automatique à la première utilisation | Activé | Pour que les [saisies semi-automatiques IntelliSense](editing-python-code-in-visual-studio.md#intellisense) fonctionnent pour une bibliothèque, Visual Studio doit générer une base de données de saisie semi-automatique pour cette bibliothèque. La génération de la base de données est effectuée en arrière-plan quand une bibliothèque est installée, mais peut ne pas être terminée lorsque vous démarrez l’écriture de code. Si cette option est sélectionnée, Visual Studio donne la priorité à l’achèvement de la base de données pour une bibliothèque quand vous écrivez du code qui l’utilise. |
+| Générer automatiquement la base de données de saisie semi-automatique à la première utilisation | Activé | *S’applique à Visual Studio 2017 version 15.5, versions antérieures et versions ultérieures lorsque vous utilisez une base de données IntelliSense.* Donne la priorité à l’achèvement de la base de données pour une bibliothèque quand vous écrivez du code qui l’utilise. Pour plus d’informations, consultez [Référence sur la fenêtre Environnements - onglet Intellisense](python-environments-window-tab-reference.md). |
 | Ignorer les variables PYTHONPATH à l’échelle du système | Activé | PYTHONPATH est ignoré par défaut, car Visual Studio fournit un moyen plus direct de spécifier des chemins de recherche dans les projets et environnements. Consultez la page [Chemins de recherche](search-paths.md) pour plus d’informations. |
 | Mettre à jour les chemins de recherche lors de l’ajout de fichiers liés | Activé | Quand cette option est définie, l’ajout d’un [fichier lié](managing-python-projects-in-visual-studio.md#linked-files) à un projet met à jour les [Chemins de recherche](search-paths.md) afin qu’IntelliSense puisse inclure le contenu du dossier du fichier lié dans sa base de données de saisie semi-automatique. Désactivez cette option pour exclure ce contenu de la base de données de saisie semi-automatique. |
 | Avertir quand le module importé est introuvable | Activé | Désactivez cette option pour supprimer les avertissements quand vous savez qu’un module importé n’est actuellement pas disponible, mais n’affecte pas par ailleurs le fonctionnement du code. |
@@ -59,6 +62,8 @@ Il existe également des options supplémentaires spécifiques à Python sur l�
 ![Boîte de dialogue Options pour Python, onglet Général](media/options-general.png)
 
 ## <a name="debugging-options"></a>Options de débogage
+
+(Onglet **Outils > Options > Python > Débogage**.)
 
 | Option | Par défaut | Description |
 | --- | --- | --- |
@@ -72,6 +77,8 @@ Il existe également des options supplémentaires spécifiques à Python sur l�
 
 ## <a name="diagnostics-options"></a>Options des diagnostics
 
+(Onglet **Outils > Options > Python > Diagnostics**.)
+
 | Option | Par défaut | Description |
 | --- | --- | --- |
 | Inclure les journaux d’analyse | Activé | Inclut des journaux détaillés relatifs à l’analyse des environnements Python installés lors de l’enregistrement des diagnostics dans un fichier ou en les copiant dans le Presse-papiers à l’aide des boutons. Cette option peut augmenter considérablement la taille du fichier généré, mais elle est souvent nécessaire pour diagnostiquer les problèmes IntelliSense. |
@@ -81,6 +88,8 @@ Il existe également des options supplémentaires spécifiques à Python sur l�
 ![Boîte de dialogue Options pour Python, onglet Diagnostics](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>Options des fenêtres interactives
+
+(Onglet **Outils > Options > Python > Windows Interactive**.)
 
 | Option | Par défaut | Description |
 | --- | --- | --- |
@@ -92,6 +101,8 @@ Il existe également des options supplémentaires spécifiques à Python sur l�
 ![Boîte de dialogue Options pour Python, onglet Fenêtres interactives](media/options-interactive-windows.png)
 
 ## <a name="advanced-python-editor-options"></a>Options avancées de l’éditeur Python
+
+(Onglet **Outils > Options > Éditeur de texte > Python > Avancé**.)
 
 ### <a name="completion-results"></a>Résultats de la saisie semi-automatique
 
@@ -105,7 +116,7 @@ Il existe également des options supplémentaires spécifiques à Python sur l�
 
 | Option | Par défaut | Description |
 | --- | --- | --- |
-| Validé en tapant les caractères suivants | {}[]().,:;+-*/%&&#124;^~=<>#@\ | Comme ces caractères suivent généralement un identificateur qui peut être sélectionné dans une liste de saisie semi-automatique, il est pratique de valider la saisie semi-automatique simplement en tapant un caractère. Vous pouvez supprimer ou ajouter des caractères spécifiques dans la liste si vous le souhaitez.  |
+| Validé en tapant les caractères suivants | `{}[]().,:;+-*/%&&#124;^~=<>#@\` | Comme ces caractères suivent généralement un identificateur qui peut être sélectionné dans une liste de saisie semi-automatique, il est pratique de valider la saisie semi-automatique simplement en tapant un caractère. Vous pouvez supprimer ou ajouter des caractères spécifiques dans la liste si vous le souhaitez.  |
 | Entrée valide la saisie semi-automatique actuelle | Activé | Quand cette option est définie, la touche Entrée choisit et applique la saisie semi-automatique sélectionnée comme avec les caractères ci-dessus (mais, bien entendu, il n’existe pas de caractère pour la touche Entrée pouvant être intégré directement dans cette liste !). |
 | Ajouter une ligne avec entrée après le mot complet tapé | Off | Par défaut, si vous tapez le mot entier qui s’affiche dans la fenêtre contextuelle de saisie semi-automatique et appuyez sur Entrée, vous validez cette saisie. En définissant cette option, vous validez effectivement les saisies semi-automatiques quand vous avez fini de taper l’identificateur, de sorte qu’Entrée insère une nouvelle ligne. |
 
@@ -118,3 +129,11 @@ Il existe également des options supplémentaires spécifiques à Python sur l�
 | Noms de couleur basés sur les types | Activé | Active les couleurs de syntaxe dans le code Python. |
 
 ![Boîte de dialogue Options de l’éditeur Python, onglet Avancé](media/options-editor-advanced.png)
+
+## <a name="fonts-and-colors-options"></a>Options Polices et couleurs
+
+(Onglet **Environnement > Polices et couleurs** au sein du groupe « Éditeur de texte ».)
+
+Les noms des options Python ont toutes le préfixe « Python » et sont explicites. La police par défaut pour tous les thèmes de couleurs Visual Studio est 10 pt Consolas regular (non gras). Les couleurs par défaut varient selon le thème. En règle générale, vous modifiez une police ou une couleur si vous la lecture du texte est difficile avec les paramètres par défaut.
+
+![Options de police et de couleur Python](media/options-fonts-and-colors.png)

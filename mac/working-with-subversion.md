@@ -6,41 +6,39 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 026e3625b4ee2d6582ce5539e5cab68c945f09c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 39f7407854b2ff74552209762565236adb403d84
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-subversion"></a>Utilisation de Subversion
 
-Comme mentionné précédemment dans cet article, Subversion est le système de gestion de version centralisé qui vous permet d’extraire une seule copie principale des données centralisées. Contrairement à Git, l’extraction d’un dépôt Subversion ne clone pas l’intégralité du dépôt, elle prend seulement une capture instantanée à ce point dans le temps.
+Subversion est le système de gestion de version centralisé qui vous permet d’extraire une seule copie principale des données centralisées. Contrairement à Git, l’extraction d’un dépôt Subversion ne clone pas l’intégralité du dépôt, elle prend seulement une capture instantanée à ce point dans le temps.
 
-Subversion utilise un modèle de type copier-modifier-fusionner pour permettre aux utilisateurs de travailler simultanément sur le même dépôt. Cela signifie que chaque utilisateur crée une copie locale, ou de travail, des données centralisées, sur laquelle ils peuvent travailler de manière indépendante. Les modifications apportées aux copies de travail des utilisateurs sont fusionnées de manière chronologique.
+Subversion utilise un modèle de type copier-modifier-fusionner pour permettre aux utilisateurs de travailler simultanément sur le même dépôt. Cela signifie que chaque utilisateur crée une copie locale, ou de travail, des données centralisées, sur laquelle il travaille de manière indépendante. Les modifications apportées aux copies de travail des utilisateurs sont fusionnées de manière chronologique.
 
 Par exemple, imaginez que l’utilisateur A et l’utilisateur B extraient tous deux une copie du dépôt distant et modifient les fichiers. L’utilisateur A termine les modifications et les valide à distance. Avant que l’utilisateur B valide son travail, il doit mettre à jour sa copie de travail avec les modifications de l’autre utilisateur, ce qui revient à fusionner les modifications de l’utilisateur A.
 
-Dans les sections ci-dessous, nous allons examiner comment Subversion peut être utilisé pour la gestion de version dans Visual Studio pour Mac.
+Les sections suivantes examinent comment Subversion peut être utilisé pour la gestion de version dans Visual Studio pour Mac.
 
 L’image ci-dessous illustre les options fournies par Visual Studio pour Mac par l’élément de menu Gestion de version :
 
 ![Éléments de menu Gestion de version](media/version-control-svnVersionControlMenu.png)
 
-Les sections ci-dessous expliquent chaque option plus en détail.
-
 ## <a name="checkout"></a>Extraire...
 
-Avant de commencer à utiliser un dépôt Subversion distant, vous devez extraire le dépôt pour créer une copie locale, ou de travail, de ce répertoire sur votre ordinateur local.
+Avant de commencer à utiliser un dépôt Subversion distant, extrayez le dépôt pour créer une copie de travail de ce répertoire sur votre ordinateur local.
 
 Pour en savoir sur l’utilisation de la fonctionnalité **Extraire** dans Visual Studio pour Mac, suivez les étapes de la section [Configuration d’un dépôt Subversion](~/set-up-subversion-repository.md).
 
 ## <a name="update-solution"></a>Mettre à jour la solution
 
-Quand vous utilisez un dépôt distant, n’oubliez pas que les autres utilisateurs peuvent aussi modifier les fichiers et rendre votre copie de travail obsolète. Pour l’éviter, il est toujours recommandé de tirer (pull) toutes les modifications du dépôt dans votre solution avant de commencer à travailler et avant la validation. Pour ce faire, sélectionnez l’élément de menu *Gestion de version > Mettre à jour la solution*.
+Quand vous utilisez un dépôt distant, n’oubliez pas que les autres utilisateurs peuvent aussi modifier les fichiers et rendre votre copie de travail obsolète. Pour éviter les conflits, il est toujours recommandé de tirer (pull) toutes les modifications du dépôt dans votre solution avant de commencer à travailler et avant la validation. Pour effectuer des modifications pull, sélectionnez l’élément de menu **Gestion de version > Mettre à jour la solution**.
 
 ## <a name="review-solution-and-commit"></a>Examiner la solution et valider
 
-Pour examiner les modifications apportées aux fichiers, utilisez les onglets Modifications, Responsable, Journal et Fusion de chaque document, comme illustré ci-dessous :
+Pour examiner les modifications apportées aux fichiers, utilisez les onglets Modifications, Responsable, Journal et Fusion de chaque document, comme illustré dans l’image suivante :
 
 ![Onglets de la gestion de version](media/version-control-vcTabs.png)
 

@@ -2,7 +2,7 @@
 title: Gestion de projets pour les applications Python dans Visual Studio | Microsoft Docs
 description: "Explique l’objectif des projets dans Visual Studio, montre comment créer et gérer des projets pour le code Python, et présente les différents modèles de projet disponibles pour Python."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: d996c99104e0a5d6b2e1acdb44273679a3998658
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-projects"></a>Projets Python
 
@@ -52,13 +52,15 @@ Quand vous développez votre application, vous devez généralement ajouter de n
 Chaque projet Python comprend un fichier de démarrage attribué, indiqué en gras dans l’Explorateur de solutions. Le fichier de démarrage est le fichier qui est exécuté quand vous démarrez le débogage (F5 ou **Déboguer > Démarrer le débogage**) ou lorsque vous exécutez votre projet dans la fenêtre interactive (Maj+Alt+F5 ou **Déboguer > Exécuter le projet en mode interactif Python**). Pour changer de fichier de démarrage, cliquez sur le nouveau fichier et sélectionnez **Définir comme fichier de démarrage**.
 
 > [!Tip]
-> Si vous supprimez le fichier de démarrage sélectionné d’un projet et que vous n’en sélectionnez pas un nouveau, l’exécution de votre projet entraîne l’affichage d’une fenêtre de sortie Python qui disparaît presque immédiatement. Si vous rencontrez ce comportement, vérifiez que vous avez un fichier de démarrage assigné. En outre, pour maintenir la fenêtre de sortie ouverte dans ces cas, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, sélectionnez l’onglet **Déboguer**, puis ajoutez `-i` au champ **Arguments de l’interpréteur**. Avec cet argument, l’interpréteur passe en mode interactif à la fin d’un programme en maintenant de cette façon la fenêtre ouverte jusqu’à ce que vous entriez Ctrl+Z, Entrée pour quitter.
+> Si vous supprimez le fichier de démarrage sélectionné à partir d’un projet et que vous n’en sélectionnez pas un autre, Visual Studio ne sait pas avec quel fichier Python démarrer lorsque vous essayez d’exécuter le projet. Dans ce cas, Visual Studio 2017 versions 15.6 et ultérieures présente une erreur ; les versions antérieures ouvrent une fenêtre de sortie avec l’interpréteur Python en cours d’exécution, ou la fenêtre de sortie s’affiche mais disparaît presque immédiatement. Si vous rencontrez l’un de ces comportements, vérifiez que vous avez un fichier de démarrage assigné.
+>
+> Si vous voulez maintenir la fenêtre de sortie ouverte pour une raison quelconque, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, sélectionnez l’onglet **Déboguer**, puis ajoutez `-i` au champ **Arguments de l’interpréteur**. Avec cet argument, l’interpréteur passe en mode interactif à la fin d’un programme en maintenant de cette façon la fenêtre ouverte jusqu’à ce que vous entriez Ctrl+Z, Entrée pour quitter.
 
 Un nouveau projet est toujours associé à l’environnement Python global par défaut. Pour associer le projet à un autre environnement (y compris les environnements virtuels), cliquez avec le bouton droit sur le nœud **Environnements Python** du projet, sélectionnez **Add/Remove Python Environments** (Ajouter/supprimer des environnement Python) et sélectionnez ceux que vous souhaitez. Pour modifier l’environnement actif, cliquez avec le bouton droit sur l’environnement souhaité et sélectionnez **Activer l’environnement** comme indiqué ci-dessous. Pour plus d’informations, consultez [Sélection d’un environnement pour un projet](selecting-a-python-environment-for-a-project.md).
 
 ![Activation d’un environnement pour un projet Python](media/projects-activate-environment.png)
 
-<a name="project-types"</a>
+<a name="project-types"></a>
 
 ## <a name="project-templates"></a>Modèles de projet
 

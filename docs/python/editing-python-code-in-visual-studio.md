@@ -2,7 +2,7 @@
 title: Modification de code Python dans Visual Studio | Microsoft Docs
 description: "La modification de Python dans Visual Studio fournit des fonctionnalités diverses telles que la navigation, des extraits de code et IntelliSense, ainsi que la mise en forme, le linting et la refactorisation."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: aae28ff5634dc59f2481140918b7ee19c29c4e1e
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="editing-python-code"></a>Modification de code Python
 
@@ -39,7 +39,11 @@ Vous pouvez également utiliser l’Explorateur d’objets de Visual Studio (**A
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense fournit [les saisies semi-automatiques](#completions), [l’assistance pour la signature](#signature-help), [Info express](#quick-info) et [la coloration du code](#code-coloring). Pour améliorer le niveau de performance, IntelliSense dépend de la base de données de saisie semi-automatique qui est générée pour chaque environnement Python dans votre projet. Il est possible que les bases de données doivent être actualisées si vous ajoutez, supprimez ou mettez à jour des packages. Leur état s’affiche sur l’onglet **IntelliSense** de la fenêtre **Environnements Python** (de la même famille que l’Explorateur de solutions) (consultez [Référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md#intellisense-tab)).
+IntelliSense fournit [les saisies semi-automatiques](#completions), [l’assistance pour la signature](#signature-help), [Info express](#quick-info) et [la coloration du code](#code-coloring).
+
+Pour améliorer le niveau de performance, IntelliSense dans **Visual Studio 2017 version 15.5** et versions antérieures dépend d’une base de données de saisie semi-automatique qui est générée pour chaque environnement Python dans votre projet. Il est possible que les bases de données doivent être actualisées si vous ajoutez, supprimez ou mettez à jour des packages. Leur état s’affiche sur l’onglet **IntelliSense** de la fenêtre **Environnements Python** (de la même famille que l’Explorateur de solutions) (consultez [Référence sur la fenêtre Environnements](python-environments-window-tab-reference.md#intellisense-tab)).
+
+**Visual Studio 2017 versions 15.6** et ultérieures utilise un autre moyen pour fournir les saisies semi-automatiques IntelliSense qui ne dépendent pas de la base de données.
 
 ### <a name="completions"></a>Saisies semi-automatiques
 
@@ -110,15 +114,41 @@ Pour personnaliser les couleurs, accédez à **Outils > Options > Environnement 
 
 ## <a name="code-snippets"></a>Extraits de code
 
-Les extraits de code sont des fragments de code qui peuvent être insérés dans vos fichiers en tapant un raccourci et en appuyant sur la touche de tabulation ou à l’aide des commandes **Modifier > IntelliSense > Insérer un extrait de code** **Entourer de**. Par exemple, si vous tapez `class` et appuyez sur la touche Tab, le reste de la classe est généré. Vous pouvez taper le nom et la liste de bases, passer d’un champ en surbrillance à l’autre avec la touche de tabulation, puis appuyer sur Entrée pour commencer à taper le corps du texte.
+Les extraits de code sont des fragments de code qui peuvent être insérés dans vos fichiers en tapant un raccourci et en appuyant sur la touche de tabulation ou à l’aide des commandes **Modifier > IntelliSense > Insérer un extrait de code** et **Entourer de**, en sélectionnant **Python**, puis en sélectionnant l’extrait de code requis.
 
-![Extraits de code](media/code-editing-code-snippets.png)
+Par exemple, `class` est un raccourci pour un extrait de code qui insère une définition de classe. L’extrait de code s’affiche dans la liste de saisie semi-automatique lorsque vous tapez `class` :
 
-Vous pouvez voir les extraits de code disponibles dans le Gestionnaire des extraits de code (**Outils > Gestionnaire des extraits de code**), en sélectionnant **Python** comme langage :
+![Raccourci d’extrait de code pour la classe](media/code-editing-code-snippet-class.png)
+
+Appuyez sur Tab générer le reste de la classe. Vous pouvez ensuite taper le nom et la liste de bases, passer d’un champ en surbrillance à l’autre avec la touche de tabulation, puis appuyer sur Entrée pour commencer à taper le corps du texte.
+
+![Mise en évidence des zones d’un extrait de code que vous devez remplir](media/code-editing-code-snippets.png)
+
+### <a name="menu-commands"></a>Commandes de menu
+
+Lorsque vous utilisez la commande de menu **Modifier > IntelliSense > Insérer un extrait de code**, sélectionnez d’abord « Python », puis sélectionnez un extrait de code :
+
+![Sélection d’un extrait de code via la commande Insérer un extrait de code](media/code-editing-code-snippet-insert.png)
+
+De la même façon, la commande **Modifier > IntelliSense > Entourer de** place la sélection actuelle dans l’éditeur de texte au sein d’un élément structurel choisi. Par exemple, supposons que vous ayez un peu de code comme suit :
+
+```python
+sum = 0
+for x in range(1, 100):
+    sum = sum + x
+```
+
+Le fait de sélectionner ce code et de choisir la commande **Entourer de** affiche la liste des extraits de code disponibles. Le fait de choisir `def` dans la liste place le code sélectionné au sein d’une définition de fonction et vous pouvez utiliser la touche Tab pour naviguer entre le nom et les arguments de la fonction sélectionnée :
+
+![Utilisation de la commande Entourer de pour les extraits de code](media/code-editing-code-snippet-surround-with.png)
+
+### <a name="examine-available-snippets"></a>Examiner les extraits de code disponibles
+
+Vous pouvez voir les extraits de code disponibles dans le Gestionnaire des extraits de code, que vous ouvrez avec la commande de menu **Outils > Gestionnaire des extraits de code** et en sélectionnant **Python** comme langage :
 
 ![Gestionnaire des extraits de code](media/code-editing-code-snippets-manager.png)
 
-Pour créer vos propres extraits de code, consultez [Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md). 
+Pour créer vos propres extraits de code, consultez [Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md).
 
 Si vous écrivez un extrait de code de qualité et que vous souhaitez le partager, n’hésitez pas à le publier dans un contenu Gist et [informez-nous](https://github.com/Microsoft/PTVS/issues). Nous pourrons peut-être l’ajouter dans une prochaine version de Visual Studio.
 

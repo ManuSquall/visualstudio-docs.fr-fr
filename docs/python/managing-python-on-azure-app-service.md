@@ -18,20 +18,20 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e5d5cbc856a6af44941d690119f2a15a8acc3d41
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Gestion de Python sur Azure App Service
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) est une offre PaaS (Platform-as-a-Service) pour les applications web, qu’il s’agisse de sites accessibles via un navigateur, d’API REST utilisées par vos propres clients ou de traitement déclenché par un événement. App Service prend entièrement en charge l’utilisation de Python pour implémenter des applications.
 
-Une prise en charge personnalisable de Python sur Azure App Service est fournie sous la forme d’un ensemble *d’extensions de site* App Service qui contiennent chacune une version spécifique du runtime Python. Vous pouvez alors installer les packages souhaités directement dans cet environnement, comme décrit dans cette rubrique. En personnalisant l’environnement dans le service App Service lui-même, vous n’avez pas besoin gérer les packages dans vos projets d’application web ou de les charger avec le code de l’application.
+Une prise en charge personnalisable de Python sur Azure App Service est fournie sous la forme d’un ensemble *d’extensions de site* App Service qui contiennent chacune une version spécifique du runtime Python. Vous pouvez alors installer les packages souhaités directement dans cet environnement, comme décrit dans cet article. En personnalisant l’environnement dans le service App Service lui-même, vous n’avez pas besoin gérer les packages dans vos projets d’application web ou de les charger avec le code de l’application.
 
 > [!Tip]
-> Bien que Python 2.7 et 3.4 soient installés par défaut sur App Service dans les dossiers racine du serveur, vous ne pouvez pas personnaliser ni installer des packages dans ces environnements, et vous ne devez pas dépendre de leur présence. Vous devez à la place vous appuyer sur une extension de site que vous contrôlez, comme décrit dans cette rubrique.
+> Bien que Python 2.7 et 3.4 soient installés par défaut sur App Service dans les dossiers racine du serveur, vous ne pouvez pas personnaliser ni installer des packages dans ces environnements, et vous ne devez pas dépendre de leur présence. Vous devez à la place vous appuyer sur une extension de site que vous contrôlez, comme décrit dans cet article.
 
 > [!Important]
 > Les processus décrits ici sont susceptibles de changer, notamment à des fins d’amélioration. Les modifications sont annoncées sur le [blog Python Engineering at Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).

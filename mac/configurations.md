@@ -6,28 +6,28 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: e435418c0c77f1577e9db8ab35d76d6bd54f8447
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf27e89b6a1a606b2a7430fc7d4394b8c5ab22bc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="understanding-build-configurations"></a>Présentation des configurations de build
 
 ## <a name="project-build-configurations"></a>Configurations de build d’un projet 
 
-Les projets peuvent avoir plusieurs configurations, et passer de l’une à l’autre permet différentes sorties au moment de la génération. Par exemple, lors de l’utilisation d’une configuration Debug, la sortie comprend des symboles de débogage, ce qui permet au débogueur de résoudre les noms de fonction, les paramètres ou les variables à partir de la trace de la pile d’une application qui s’est bloquée. Cependant, l’utilisation d’une configuration Debug a pour conséquence une augmentation de la taille des fichiers et ne conviendrait donc pas pour une application destinée à être distribuée.
+Les projets peuvent avoir plusieurs configurations, et passer de l’une à l’autre permet différentes sorties au moment de la génération. Par exemple, la sortie d’une configuration Debug comprend des symboles de débogage, ce qui permet au débogueur de résoudre les noms de fonction, les paramètres ou les variables à partir de la trace de la pile d’une application qui s’est bloquée. Bien que ces informations supplémentaires soient utiles lors du développement, elles entraînent l’augmentation de la taille d’un fichier, ce qui n’est pas idéal pour la distribution.
 
-Chaque plateforme a des configurations spécifiques pour sa génération. Le développement Xamarin.Android sera toujours limité à une configuration Debug ou une configuration Release. Xamarin.iOS a plus de configurations. Les projets iOS plus récents ont seulement des configurations Debug ou Release, mais celles-ci peuvent être définies pour un appareil ou pour n’importe quel simulateur installé.
+Chaque plateforme a des configurations spécifiques pour sa génération. 
 
 ## <a name="solution-configurations"></a>Configurations de solution
 
-Comme pour les configurations de projet, les configurations de solution sont utilisées pour créer des configurations personnalisées pour un projet entier. Sous l’onglet **Mappages de configuration** sous l’élément **Build > Configurations**, vous pouvez affecter une configuration cible pour chaque élément de la solution, comme illustré ci-dessous :
+Comme pour les configurations de projet, les configurations de solution sont utilisées pour créer des configurations personnalisées pour un projet entier. Sous l’onglet **Mappages de configuration** sous l’élément **Build > Configurations**, vous pouvez affecter une configuration cible pour chaque élément de la solution, comme illustré dans l’image suivante :
 
 
  ![Options de mappage de configuration](media/projects-and-solutions-image3.png)
 
-Pour plus d’informations, reportez-vous à la vidéo [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) de James Montemagno.
+Pour plus d’informations sur les configurations, reportez-vous à la vidéo [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) de James Montemagno.
 
 ## <a name="run-configuration"></a>Configuration d’exécution
 

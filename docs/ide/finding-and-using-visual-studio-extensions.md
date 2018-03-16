@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f3057ae7cf987c19e87329894249031b3af29806
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Rechercher et utiliser des extensions Visual Studio
 
@@ -73,7 +73,7 @@ Si vous voulez désactiver les mises à jour automatiques, vous pouvez désactiv
 
 Nouveauté dans **Visual Studio 2017 version 15.3**, Visual Studio vous avertit si une extension est soupçonnée d’être impliquée dans un blocage au cours d’une session précédente. Lors d’un blocage, Visual Studio stocke la pile d’exception. À son prochain démarrage, Visual Studio examine la pile en commençant par le nœud terminal et en progressant vers la base. Si Visual Studio détermine qu’un frame appartient à un module qui fait partie d’une extension installée et activée, une notification s’affiche.
 
-Nouveauté de la **préversion 3 de Visual Studio 2017 version 15.6** : Visual Studio vous avertit aussi si une extension est soupçonnée d’être à l’origine d’une absence de réponse de l’interface utilisateur.
+Nouveauté de **Visual Studio 2017 version 15.6** : Visual Studio vous avertit aussi si une extension est soupçonnée d’être à l’origine d’une absence de réponse de l’interface utilisateur.
 
 Lorsque ces notifications s’affichent, vous pouvez ignorer la notification ou effectuer l’une des actions suivantes :
 

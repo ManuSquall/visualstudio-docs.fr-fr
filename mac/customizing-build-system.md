@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 2d17a952c58e5ef7e593ee7aeb1980e09a376800
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 6ef9084e5cd571c0f3f2b60e2c08d8d7bb0b8518
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-build-system"></a>Personnalisation du système de génération
 
@@ -18,7 +18,7 @@ MSBuild est un moteur de génération, développé par Microsoft, qui permet de 
 
 **MSbuild** est principalement utilisé comme système de génération des projets dans Visual Studio pour Mac. 
 
-MSBuild fonctionne en prenant un ensemble d’entrées, comme des fichiers sources, et les transforme en sorties, comme des fichiers exécutables, et réalise ces sorties en appelant des outils, comme le compilateur. 
+MSBuild fonctionne en prenant un ensemble d’entrées, comme des fichiers sources, et les transforme en sorties, comme des fichiers exécutables. Il réalise ces sorties en appelant des outils, comme le compilateur. 
 
 
 ## <a name="msbuild-file"></a>Fichier MSBuild
@@ -26,11 +26,12 @@ MSBuild fonctionne en prenant un ensemble d’entrées, comme des fichiers sourc
 MSBuild utilise un fichier XML, appelé fichier projet, qui définit les *éléments* qui font partie de votre projet (par exemple des ressources d’image) et les *propriétés* nécessaires pour générer votre projet. Ce fichier projet a toujours une extension de fichier se terminant par `proj`, par exemple `.csproj` pour les projets C#. 
 
 ### <a name="viewing-the-msbuild-file"></a>Affichage du fichier MSBuild
-Vous pouvez rechercher ce fichier en cliquant sur le nom de votre projet et en sélectionnant **Afficher dans le Finder**. Ceci affiche tous les fichiers et dossiers associés à votre projet, notamment le fichier `.csproj`, comme illustré ci-dessous :
+
+Recherchez le fichier MSBuild en cliquant sur le nom de votre projet et en sélectionnant **Afficher dans le Finder**. La fenêtre du Finder affiche tous les fichiers et dossiers associés à votre projet, notamment le fichier `.csproj`, comme illustré dans l’image suivante :
 
 ![](media/customizing-build-system-image1.png)
 
-Vous pouvez également afficher le fichier `.csproj` dans un nouvel onglet de Visual Studio pour Mac en cliquant sur le nom de votre projet et en accédant à **Outils > Modifier le fichier** :
+Pour afficher le fichier `.csproj` dans un nouvel onglet de Visual Studio pour Mac, cliquez sur le nom de votre projet et accédez à **Outils > Modifier le fichier** :
 
 ![](media/customizing-build-system-image2.png)
 
@@ -44,7 +45,7 @@ Tous les fichiers MSBuild contiennent un élément racine `Project` obligatoire,
 </Project>
 ```
 
-En général, le projet importe aussi un fichier `.targets`, qui contient la plupart des règles qui décrivent comment traiter et générer les différents fichiers. Cela figure généralement dans le bas de votre fichier `proj` et ressemble à ceci pour les projets C# :
+En règle générale, le projet importe également un fichier `.targets`. Ce fichier contient la plupart des règles qui décrivent comment traiter et générer les différents fichiers. L’importation figure généralement dans le bas de votre fichier `proj` et ressemble à ceci pour les projets C# :
 
 ```
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -54,7 +55,7 @@ Le fichier .targets est un autre fichier MSBuild. Ce fichier contient le code MS
 
 ### <a name="items-and-properties"></a>Éléments et propriétés
 
-Il existe deux types de données fondamentaux dans MSBuild : les *éléments* et les *propriétés*, qui sont expliqués plus en détail ci-dessous.
+Il existe deux types de données fondamentaux dans MSBuild : les *éléments* et les *propriétés*, qui sont expliqués plus en détail dans les sections suivantes.
 
 #### <a name="properties"></a>Propriétés
 
@@ -62,7 +63,7 @@ Les propriétés sont des paires clé/valeur, qui sont utilisées pour stocker l
 
 Elles sont définies à l’aide d’un PropertyGroup et peuvent contenir un nombre quelconque de PropertiesGroups, qui peuvent eux-mêmes contenir un nombre quelconque de propriétés. 
 
-Par exemple, le PropertyGroup pour une pour une application de console simple peut se présenter comme suit :
+Par exemple, le PropertyGroup pour une pour une application de console simple peut se présenter comme le XML suivant :
 
 ```
 <PropertyGroup>
@@ -84,7 +85,7 @@ Les éléments offrent un moyen de traiter les entrées dans le système de gén
 
 Les éléments sont créés en déclarant un `ItemGroup`. Il peut y avoir un nombre quelconque d’ItemGroups, qui peuvent contenir un nombre quelconque d’éléments. 
 
-Par exemple, l’extrait de code ci-dessous crée les écrans de lancement d’iOS. Ils sont du type `BundleResource`, avec comme spécification le chemin de l’image :
+Par exemple, l’extrait de code ci-dessous crée les écrans de lancement d’iOS. Les écrans de lancement ont le type de build `BundleResource`, avec les spécifications en tant que chemin d’accès à l’image :
 
 ```
  <ItemGroup>

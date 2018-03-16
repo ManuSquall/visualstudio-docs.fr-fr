@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60b960a4a8f81f14bbbc2035670e6b9fd80b5312
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 598aa6332d69f7818f9f67134c3207a9bd365757
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Étape 3 : Utilisation de la fenêtre REPL interactive
 
@@ -31,7 +31,7 @@ La *fenêtre interactive* Visual Studio pour Python offre une expérience REPL (
 
 1. Ouvrez la fenêtre interactive en cliquant avec le bouton droit sur l’environnement Python du projet dans l’Explorateur de solutions (comme « Python 3.6 (32 bits) », qui figure dans une illustration plus haut) et en sélectionnant **Ouvrir la fenêtre Interactive**. Vous pouvez aussi sélectionner **Affichage > Autres fenêtres > Fenêtres interactives Python** dans le menu principal de Visual Studio.
 
-1. La fenêtre interactive s’ouvre en dessous de l’éditeur avec l’invite de commandes REPL Python classique `>>>`. Vous pouvez agrandir la fenêtre interactive en faisant glisser le séparateur entre les deux fenêtres :
+1. La fenêtre interactive s’ouvre en dessous de l’éditeur avec l’invite de commandes REPL Python standard `>>>`. La liste déroulante **Environnement** vous permet de sélectionner un interpréteur spécifique à utiliser. Vous pouvez aussi agrandir la fenêtre interactive en faisant glisser le séparateur entre les deux fenêtres :
 
     ![Fenêtre interactive de Python - redimensionnement par glissement](media/vs-getting-started-python-11-interactive1b.png)
 
@@ -100,7 +100,7 @@ La *fenêtre interactive* Visual Studio pour Python offre une expérience REPL (
 > [!div class="nextstepaction"]
 > [Exécution de code dans le débogueur](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
-### <a name="going-deeper"></a>Pour aller plus loin
+## <a name="going-deeper"></a>Pour aller plus loin
 
 - [Utilisation de la fenêtre interactive](python-interactive-repl-in-visual-studio.md)
 - [Utilisation d’IPython REPL](interactive-repl-ipython.md)

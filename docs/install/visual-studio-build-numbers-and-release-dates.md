@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 02/23/2018
+ms.date: 03/08/2018
 ms.topic: article
 helpviewer_keywords: 
 ms.technology:
@@ -13,11 +13,11 @@ ms.technology:
 ms.service: 
 ms.workload:
 - multiple
-ms.openlocfilehash: 61dc3ab491dffcf89e318e9419e71062c2599c79
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: fffebc62b18226d50fb836144f250894b6a013fd
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Numéros de build et dates de publication de Visual Studio 2017
 
@@ -25,6 +25,10 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.6.1 | Mise en production | 8 mars 2018 | 15.6.27428.2002 |
+| 15.6.1 préversion 1.0 | Preview | 8 mars 2018 | 15.6.27428.2002 |
+| 15.6.0 | Mise en production | 5 mars 2018 | 15.6.27428.1 |
+| 15.6.0 préversion 7.0 | Preview | 2 mars 2018 | 15.6.27428.1 |
 | 15.6.0 préversion 6.0 | Preview | 23 février 2018 | 15.6.27421.1 |
 | 15.0.10 | Mise en production | 21 février 2018 | 15.0.26228.28 |
 | 15.5.7 | Mise en production | 20 février 2018 | 15.5.27130.2036 |

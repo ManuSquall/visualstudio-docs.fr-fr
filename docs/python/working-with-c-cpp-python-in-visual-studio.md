@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 1b2f570a75be94c3bff4b38a6d0641e3ecbce2f2
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Création d’une extension C++ pour Python
 
@@ -231,7 +231,7 @@ Il existe deux façons de rendre la DLL disponible pour Python.
 
 La première méthode fonctionne si le projet Python et le projet C++ se trouvent dans la même solution. Accédez à l’Explorateur de solutions, cliquez avec le bouton droit sur le nœud **Références** de votre projet Python et sélectionnez **Ajouter une référence**. Dans la boîte de dialogue qui s’affiche, sélectionnez l’onglet **Projets**, sélectionnez le projet **superfastcode** (ou le nom que vous utilisez), puis **OK**.
 
-L’autre méthode, décrite dans les étapes suivantes, permet d’installer le module dans l’environnement Python global, ce qui le rend également accessible aux autres projets Python. (Cette méthode exige généralement une actualisation de la base de données d’exécution de code IntelliSense pour cet environnement. Une actualisation est aussi nécessaire lors de la suppression du module de l’environnement.)
+L’autre méthode, décrite dans les étapes suivantes, permet d’installer le module dans l’environnement Python global, ce qui le rend également accessible aux autres projets Python. (Cette méthode exige généralement une actualisation de la base de données d’exécution de code IntelliSense pour cet environnement dans Visual Studio 2017 version 15.5 et versions antérieures. Une actualisation est aussi nécessaire lors de la suppression du module de l’environnement.)
 
 1. Si vous utilisez Visual Studio 2017, exécutez le programme d’installation de Visual Studio, sélectionnez **Modifier**, **Composants individuels > Compilateurs, outils de génération et runtime > Ensemble d’outils VC++ 2015.3 v140**. Cette étape est nécessaire, car Python (pour Windows) est lui-même généré avec Visual Studio 2015 (version 14.0) et attend que ces outils soient disponibles lors de la génération d’une extension via la méthode décrite ici. (Notez que vous devrez peut-être installer une version 32 bits de Python et cibler la DLL sur Win32 et non sur x64.)
 

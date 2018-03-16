@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 2f6c06ff640007f28cfaed6512fdedc5dcb16e65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a8e32df2248f53a2b46a971b025b1138abba5101
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="setting-up-a-git-repository"></a>Configuration d’un dépôt Git
 
-GiT est un système de gestion de versions distribué qui permet aux équipes de travailler simultanément sur les mêmes documents. Cela signifie qu’il existe un seul serveur contenant tous les fichiers, mais que quand un dépôt est extrait de cette source centrale, l’intégralité du dépôt est cloné localement sur votre machine.
+Git est un système de gestion de versions distribué qui permet aux équipes de travailler simultanément sur les mêmes documents. Cela signifie qu’il existe un seul serveur contenant tous les fichiers, mais que quand un dépôt est extrait de cette source centrale, l’intégralité du dépôt est cloné localement sur votre machine.
 
-Il existe de nombreux hôtes distants qui vous permettent de travailler avec Git pour la gestion de versions, mais le plus répandu d’entre eux est GitHub. L’exemple ci-dessous utilise un hôte GitHub, mais vous pouvez utiliser n’importe quel hôte Git pour la gestion de versions dans Visual Studio pour Mac.
+Il existe de nombreux hôtes distants qui vous permettent de travailler avec Git pour la gestion de versions, mais le plus répandu est GitHub. L’exemple ci-dessous utilise un hôte GitHub, mais vous pouvez utiliser n’importe quel hôte Git pour la gestion de versions dans Visual Studio pour Mac.
 
-Si vous voulez utiliser GitHub, veillez à disposer d’un compte créé et configuré avant de suivre les étapes ci-dessous. 
+Si vous voulez utiliser GitHub, veillez à disposer d’un compte créé et configuré avant de suivre les étapes dans cet article. 
 
 ## <a name="creating-a-remote-repo-on-github"></a>Création d’un dépôt distant sur GitHub
 
@@ -34,20 +34,22 @@ Pour configurer un dépôt Git, effectuez les étapes suivantes :
 
     ![Définir les détails du dépôt Git](media/version-control-git2.png)
 
-3. Plus loin, vous pouvez choisir d’afficher et de copier l’adresse HTTPS ou SSH vers le dépôt que vous venez de créer :
+3. La page suivante vous permet de choisir d’afficher et de copier l’adresse HTTPS ou SSH vers le dépôt que vous avez créé :
 
-    ![Afficher et copier l’adresse](media/version-control-git3.png) Vous avez besoin de l’adresse HTTPS pour faire pointer Visual Studio pour Mac vers ce dépôt.
+    ![afficher et copier l’adresse](media/version-control-git3.png)
+
+  Vous avez besoin de l’adresse HTTPS pour faire pointer Visual Studio pour Mac vers ce dépôt.
 
 
 ## <a name="publishing-an-existing-project"></a>Publication d’un projet existant
 
 4. Revenez à votre projet ouvert dans Visual Studio pour Mac. 
 
-5. Dans la barre de menus, sélectionnez **Gestion de version > Publier dans la gestion de version...** :
+5. Dans la barre de menus, sélectionnez **Gestion de version > Publier dans la gestion de version...** pour afficher la boîte de dialogue **Sélectionner un dépôt** :
 
     ![Démarrer l’extraction dans Visual Studio pour Mac](media/version-control-git4-sml.png)
 
-6. La boîte de dialogue **Sélectionner un dépôt** s’affiche. Choisissez l’onglet **Dépôts inscrits** et cliquez sur le bouton **Ajouter** :
+6. Choisissez l’onglet **Dépôts inscrits** et cliquez sur le bouton **Ajouter** :
 
     ![](media/version-control-git5.png)
 
@@ -57,13 +59,13 @@ Pour configurer un dépôt Git, effectuez les étapes suivantes :
 
     Notez qu’il est également possible d’utiliser le protocole SSH pour se connecter à Git.
 
-8. Pour tenter de publier l’application sur Git, sélectionnez le dépôt que vous venez de créer et vérifiez que les deux champs texte **Nom du module** et **Message** sont renseignés :
+8. Pour tenter de publier l’application sur Git, sélectionnez le dépôt et vérifiez que les deux champs texte **Nom du module** et **Message** sont renseignés :
 
     ![Essayer de publier le projet sur Git](media/version-control-git7.png)
 
 9. Cliquez sur **OK** puis sur **Publier** dans la boîte de dialogue d’alerte.
 
-10. Si vous n’avez pas déjà entré vos informations d’identification Git dans les préférences de Visual Studio pour Mac, entrez-les maintenant. Vous devez d’abord créer un jeton d’accès, qui est utilisé à la place d’un mot de passe. Pour cela, suivez les étapes décrites dans la documentation [Access Token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) de Git.
+10. Si vous n’avez pas déjà entré vos informations d’identification Git dans les préférences de Visual Studio pour Mac, entrez-les maintenant. Vous devez d’abord créer un jeton d’accès, qui est utilisé à la place d’un mot de passe. Si vous n’avez pas créé de jeton d’accès, suivez les étapes décrites dans la documentation Git [Jeton d’accès](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
 
 11. Entrez le nom d’utilisateur et le jeton d’accès personnel, puis cliquez sur **OK** :
 
