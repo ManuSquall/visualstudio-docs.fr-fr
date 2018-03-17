@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afad8b464e266477c4edbb97ffc3eb3d8436e4
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 8f4edf6c446bdcd35585a60d97965d2d6ee21ad1
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -58,8 +58,8 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pa
 |||
 |-|-|
 |**Prise en charge**|-Applications Visual Basic et Visual c# qui utilisent .NET Framework 2.0 ou versions ultérieures.<br/>Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br/>Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : débogage d’une Application SharePoint à l’aide de IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Pour déboguer des applications Microsoft Azure avec IntelliTrace, consultez [débogage d’un Service Cloud publié avec IntelliTrace et Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Prise en charge limitée**|-.NET core et des applications ASP.NET Core pris en charge pour les événements uniquement<br />-Applications F # à titre expérimental<br />-Les applications UWP prise en charge pour les événements uniquement|
-|Non pris en charge|-C++, autres langages et script<br />-Services Windows, Silverlight, Xbox ou [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] applications|
+|**Prise en charge limitée**|-.NET core et des applications ASP.NET Core pris en charge pour certains événements (événements contrôleur MVC, ADO.NET et HTTPClicent) dans le débogage local. Le collecteur autonome n’est pas prise en charge pour les applications .NET Core ou ASP.NET Core.<br />-Applications F # à titre expérimental<br />-Les applications UWP prise en charge pour les événements uniquement|
+|**Non pris en charge**|-C++, autres langages et script<br />-Services Windows, Silverlight, Xbox ou [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] applications|
 
 > [!NOTE]
 > Si vous souhaitez déboguer un processus est déjà en cours d’exécution, vous pouvez collecter des événements IntelliTrace uniquement (aucune information d’appel). Vous pouvez attacher à un processus 32 bits ou 64 bits sur l’ordinateur local uniquement. Les événements qui se produisent avant d’attacher au processus ne sont pas collectés.
