@@ -57,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 >  Les outils de développement Office dans Visual Studio ne prennent pas en charge les classeurs partagés.  
   
 ## <a name="understanding-workbook-host-items-in-vsto-add-in-projects"></a>Présentation des éléments hôtes de classeur dans les projets de complément VSTO  
- Dans les projets complément VSTO, vous pouvez générer un élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook> au moment de l’exécution pour tout classeur ouvert dans Excel. Pour générer un <xref:Microsoft.Office.Tools.Excel.Workbook> élément hôte, utilisez la méthode GetVstoObject. Pour plus d'informations, consultez [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Dans les projets complément VSTO, vous pouvez générer un élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook> au moment de l’exécution pour tout classeur ouvert dans Excel. Pour générer un <xref:Microsoft.Office.Tools.Excel.Workbook> élément hôte, utilisez la méthode GetVstoObject. Pour plus d'informations, consultez [Extension de documents Word et de classeurs Excel dans des compléments VSTO au moment de l'exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédures pas à pas et des exemples de développement office](../vsto/office-development-samples-and-walkthroughs.md)   
