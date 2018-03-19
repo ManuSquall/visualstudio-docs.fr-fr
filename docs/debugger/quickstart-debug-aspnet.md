@@ -1,7 +1,7 @@
 ---
 title: "Débogage ASP.NET - Visual Studio | Documents Microsoft"
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - aspnet
-ms.openlocfilehash: c740265220f844b24ba9b4eeb133de185773a7a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0c6f3b0d074957ba8fabd93707e9a76f0dcd46e1
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>Débogage ASP.NET avec le débogueur Visual Studio
 
-Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes pour vous aider à déboguer vos applications. Cette rubrique fournit un moyen rapide pour apprendre quelques-unes des fonctionnalités de base.
+Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes pour vous aider à déboguer vos applications. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base.
 
 ## <a name="create-a-new-project"></a>Créer un projet 
 
-1. Dans Visual Studio, choisissez **fichier > Nouveau projet**.
+1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 
 1. Sous **Visual C#**, choisissez **Web**, puis, dans le volet central, choisissez **Application ASP.NET Core Web**.
 
@@ -52,7 +52,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
     }
     ```
 
-    avec ce code :
+    par le code suivant :
 
     ```c#
     public void OnGet()
@@ -94,19 +94,19 @@ A *point d’arrêt* est un marqueur qui indique où Visual Studio interrompt vo
     ![Atteindre un point d’arrêt](../debugger/media/dbg-qs-hit-breakpoint-aspnet.png)
 
     > [!TIP]
-    > Si vous disposez d’un point d’arrêt dans une boucle ou une récurrence ou si vous avez un grand nombre de points d’arrêt vous fréquemment parcourez, utilisez un [point d’arrêt conditionnel](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) pour vous assurer que votre code est interrompu uniquement lorsque certaines conditions sont remplies. Cela fait gagner du temps et peut également rendre plus facile à déboguer les problèmes difficiles à reproduire.
+    > Si vous disposez d’un point d’arrêt dans une boucle ou une récurrence ou si vous avez plusieurs points d’arrêt que vous fréquemment parcourez, utilisez un [point d’arrêt conditionnel](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) pour vous assurer que votre code est interrompu uniquement lorsque certaines conditions sont remplies. Cela fait gagner du temps et peut également rendre plus facile à déboguer les problèmes difficiles à reproduire.
 
-## <a name="navigate-code"></a>Parcourir le code
+## <a name="navigate-code"></a>Naviguer dans le code
 
-Il existe plusieurs commandes pour instruire le débogueur pour continuer. Nous allons montrer une commande de navigation de code utiles est une nouveauté de Visual Studio 2017.
+Il existe plusieurs commandes pour instruire le débogueur pour continuer. Nous affichons une commande de navigation de code utiles est une nouveauté de Visual Studio 2017.
 
-- Pendant la suspension à un point d’arrêt, placez le curseur sur l’instruction `return c2` jusqu'à ce que le vert **exécuter cliquer sur** bouton ![exécuter. Cliquez ensuite sur](../debugger/media/dbg-tour-run-to-click.png) s’affiche, puis appuyez sur la **exécuter cliquer sur** bouton.
+Pendant la suspension à un point d’arrêt, placez le curseur sur l’instruction `return c2` jusqu'à ce que le vert **exécuter cliquer sur** bouton ![exécuter. Cliquez ensuite sur](../debugger/media/dbg-tour-run-to-click.png) s’affiche, puis appuyez sur la **exécuter cliquer sur** bouton.
 
-    ![Exécution de cliquer sur](../debugger/media/dbg-qs-run-to-click-aspnet.png)
+![Exécution de cliquer sur](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
-    L’application continue l’exécution et s’arrête à la ligne de code où vous avez cliqué sur le bouton.
+L’application continue l’exécution et s’arrête à la ligne de code où vous avez cliqué sur le bouton.
 
-    Les commandes clavier courantes utilisées pour parcourir le code inclure **F10** et **F11**. Pour obtenir des instructions plus détaillées, consultez le [Guide du débutant](../debugger/getting-started-with-the-debugger.md).
+Les commandes clavier courantes utilisées pour parcourir le code inclure **F10** et **F11**. Pour obtenir des instructions plus détaillées, consultez le [Guide du débutant](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspecter des variables dans un datatip
 
@@ -136,9 +136,7 @@ Pour plus d’informations sur l’utilisation de modifier & Continuer et sur le
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Pour en savoir plus sur le débogueur, consultez [démarrer le débogueur et de parcourir le code](../debugger/getting-started-with-the-debugger.md).
-- Pour plus d’informations sur les points d’arrêt, consultez [à l’aide de points d’arrêt](../debugger/using-breakpoints.md).
+Dans ce didacticiel, vous avez appris comment démarrer le débogueur, parcourir le code et d’inspecter des variables. Vous souhaiterez plus haut niveau sur les fonctionnalités du débogueur, ainsi que des liens vers plus d’informations.
 
-## <a name="see-also"></a>Voir aussi  
- [Débogage dans Visual Studio](../debugger/index.md)  
- [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)

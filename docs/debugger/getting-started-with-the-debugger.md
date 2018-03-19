@@ -1,7 +1,8 @@
 ---
-title: "Apprenez à déboguer à l’aide de Visual Studio | Documents Microsoft"
-ms.custom: H1HackMay2017
-ms.date: 10/11/2017
+title: "Apprenez à déboguer - Visual Studio | Documents Microsoft"
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
+ms.custom: mvc
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: e0686a4138fc2489c8a63b207e98cf7780477782
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>Apprenez à déboguer à l’aide de Visual Studio
 
@@ -34,6 +35,15 @@ Vous pouvez lire le long pour voir les fonctionnalités du débogueur, ou vous p
 |  ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sur le débogage, qui affiche des étapes similaires. |
 
 Bien que l’application de démonstration est c#, les fonctionnalités sont applicables à C++, Visual Basic, JavaScript et autres langues prises en charge par Visual Studio (sauf mention contraire).
+
+Dans ce didacticiel, vous allez :
+
+> [!div class="checklist"]
+> * Démarrer le débogueur et les points d’arrêt.
+> * Découvrir les commandes pour parcourir votre code dans le débogueur
+> * Inspecter des variables dans les info-bulles et des fenêtres de débogage
+> * Examiner la pile des appels
+> * Utilisez l’Assistant Exception
 
 ## <a name="start-the-debugger"></a>Démarrez le débogueur !
 
@@ -82,11 +92,11 @@ Pour déboguer, vous devez démarrer votre application avec le débogueur attach
 
 ## <a name="restart-your-app-quickly"></a>Redémarrez votre application rapidement
 
-1. Cliquez sur le **redémarrer** ![redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") bouton dans la barre d’outils de débogage (Ctrl + Maj + F5).
+Cliquez sur le **redémarrer** ![redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") bouton dans la barre d’outils de débogage (Ctrl + Maj + F5).
 
-    Lorsque vous appuyez sur **redémarrer**, il fait gagner du temps par rapport à l’arrêt de l’application et de redémarrer le débogueur. Le débogueur s’arrête sur le premier point d’arrêt est atteint par l’exécution de code.
+Lorsque vous appuyez sur **redémarrer**, il fait gagner du temps par rapport à l’arrêt de l’application et de redémarrer le débogueur. Le débogueur s’arrête sur le premier point d’arrêt est atteint par l’exécution de code.
 
-    Le débogueur s’arrête à nouveau sur le point d’arrêt que vous avez défini dans le `MainWindow` constructeur.
+Le débogueur s’arrête à nouveau sur le point d’arrêt que vous avez défini dans le `MainWindow` constructeur.
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Parcourir le code dans le débogueur à l’aide des commandes d’étape
 
@@ -148,20 +158,20 @@ Essentiellement, nous utilisons ici, des raccourcis clavier, car il s’agit d�
 
 ## <a name="examine-the-call-stack"></a>Examiner la pile des appels
 
-- Pendant la suspension de la `Update` (méthode), cliquez sur le **pile des appels** fenêtre, qui est par défaut ouvert dans le volet inférieur droit.
+Pendant la suspension de la `Update` (méthode), cliquez sur le **pile des appels** fenêtre, qui est par défaut ouvert dans le volet inférieur droit.
 
-     ![Examiner la pile des appels](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+![Examiner la pile des appels](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
 
-    Le **pile des appels** fenêtre indique l’ordre dans lequel les méthodes et les fonctions sont mise en route appelées. La première ligne affiche la fonction en cours (la `Update` méthode dans l’application de la visite guidée). La deuxième ligne montre que `Update` a été appelée à partir de la `Path.set` propriété et ainsi de suite.
+Le **pile des appels** fenêtre indique l’ordre dans lequel les méthodes et les fonctions sont mise en route appelées. La première ligne affiche la fonction en cours (la `Update` méthode dans l’application de la visite guidée). La deuxième ligne montre que `Update` a été appelée à partir de la `Path.set` propriété et ainsi de suite.
 
-    >  [!NOTE]
-    > Le **pile des appels** fenêtre est identique à la perspective de débogage dans certains environnements IDE comme Eclipse.
+>  [!NOTE]
+> Le **pile des appels** fenêtre est identique à la perspective de débogage dans certains environnements IDE comme Eclipse.
 
-    La pile des appels est un bon moyen d’examiner et de comprendre le flux d’exécution d’une application.
+La pile des appels est un bon moyen d’examiner et de comprendre le flux d’exécution d’une application.
 
-    Vous pouvez double-cliquer sur une ligne de code pour accéder à examiner le code source et qui change également l’étendue actuelle en cours d’inspection par le débogueur. Cette action n’avance pas le débogueur.
+Vous pouvez double-cliquer sur une ligne de code pour accéder à examiner le code source et qui change également l’étendue actuelle en cours d’inspection par le débogueur. Cette action n’avance pas le débogueur.
 
-    Vous pouvez également utiliser les menus contextuels à partir de la **pile des appels** fenêtre pour effectuer d’autres opérations. Par exemple, vous pouvez insérer des points d’arrêt dans les fonctions spécifiées, le débogueur à l’aide d’avance **exécuter jusqu’au curseur**et accédez à examiner le code source. Pour plus d’informations, consultez [Comment : examiner la pile des appels](../debugger/how-to-use-the-call-stack-window.md).
+Vous pouvez également utiliser les menus contextuels à partir de la **pile des appels** fenêtre pour effectuer d’autres opérations. Par exemple, vous pouvez insérer des points d’arrêt dans les fonctions spécifiées, le débogueur à l’aide d’avance **exécuter jusqu’au curseur**et accédez à examiner le code source. Pour plus d’informations, consultez [Comment : examiner la pile des appels](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="step-out"></a>Pas à pas sortant
 
@@ -283,7 +293,9 @@ Supposons que vous avez terminé examinant le `Update` méthode dans Data.cs et 
 
 Pour en savoir plus sur les fonctionnalités du débogueur, consultez [débogueur trucs et astuces](../debugger/debugger-tips-and-tricks.md).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="next-steps"></a>Étapes suivantes
 
-[Débogage dans Visual Studio](../debugger/index.md)  
-[Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
+Dans ce didacticiel, vous avez appris comment démarrer le débogueur, parcourir le code et d’inspecter des variables. Vous souhaiterez plus haut niveau sur les fonctionnalités du débogueur, ainsi que des liens vers plus d’informations.
+
+> [!div class="nextstepaction"]
+> [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)

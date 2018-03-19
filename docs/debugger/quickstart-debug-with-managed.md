@@ -1,7 +1,7 @@
 ---
 title: "Déboguer avec du code managé à l’aide du débogueur Visual Studio | Documents Microsoft"
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa992c0cdcf5c50208aacc8e16d954f4ee35da13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 212da1e214e6157f3e072df6466436883eced8f6
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>Déboguer avec du code managé à l’aide du débogueur Visual Studio
 
-Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes pour vous aider à déboguer vos applications. Cette rubrique fournit un moyen rapide pour apprendre quelques-unes des fonctionnalités de base.
+Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes pour vous aider à déboguer vos applications. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base.
 
 ## <a name="create-a-new-project"></a>Créer un projet 
 
-1. Dans Visual Studio, choisissez **fichier > Nouveau projet**.
+1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 
 2. Sous **Visual C#** ou **Visual Basic**, choisissez **.NET Core**, puis, dans le volet central, choisissez **l’application Console (.NET Core)**.
 
@@ -57,7 +57,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
     End Module
     ```
 
-    avec ce code :
+    par le code suivant :
 
     ```c#
     class Program
@@ -125,7 +125,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
     ```
 
     > [!NOTE]
-    > En Visual Basic, assurez-vous que l’objet de démarrage est défini `Sub Main` (**Propriétés > applications > objet de démarrage**).
+    > En Visual Basic, vérifiez que l’objet de démarrage est défini sur `Sub Main` (**Propriétés > Applications > Objet de démarrage**).
 
 ## <a name="set-a-breakpoint"></a>Définir un point d’arrêt
 
@@ -139,22 +139,22 @@ A *point d’arrêt* est un marqueur qui indique où Visual Studio interrompt vo
 
     ![Atteindre un point d’arrêt](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "atteint un point d’arrêt")
 
-    Les temps de pause débogueur où vous avez défini le point d’arrêt. L’instruction où l’exécution du débogueur et l’application est suspendue est indiquée par la flèche jaune. La ligne avec la `doWork` appel de fonction n’a pas encore exécutée.
+    Les temps de pause débogueur où vous avez défini le point d’arrêt. L’instruction où l’exécution du débogueur et l’application est suspendue est indiquée par la flèche jaune. La ligne avec la `doWork` appel de fonction n’a pas encore été exécutée.
 
     > [!TIP]
-    > Si vous disposez d’un point d’arrêt dans une boucle ou une récurrence ou si vous avez un grand nombre de points d’arrêt vous fréquemment parcourez, utilisez un [point d’arrêt conditionnel](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) pour vous assurer que votre code est interrompu uniquement lorsque certaines conditions sont remplies. Cela fait gagner du temps et peut également rendre plus facile à déboguer les problèmes difficiles à reproduire.
+    > Si vous disposez d’un point d’arrêt dans une boucle ou une récurrence ou si vous avez plusieurs points d’arrêt que vous fréquemment parcourez, utilisez un [point d’arrêt conditionnel](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) pour vous assurer que votre code est interrompu uniquement lorsque certaines conditions sont remplies. Un point d’arrêt conditionnel pouvez gagner du temps et elle peut également rendre plus facile à déboguer les problèmes difficiles à reproduire.
 
-## <a name="navigate-code"></a>Parcourir le code
+## <a name="navigate-code"></a>Naviguer dans le code
 
-Il existe plusieurs commandes pour instruire le débogueur pour continuer. Nous allons montrer une commande de navigation de code utiles est une nouveauté de Visual Studio 2017.
+Il existe plusieurs commandes pour instruire le débogueur pour continuer. Nous affichons une commande de navigation de code utiles est une nouveauté de Visual Studio 2017.
 
-- Pendant la suspension à un point d’arrêt, placez le curseur sur l’instruction `c1.AddLast(20)` jusqu'à ce que le vert **exécuter cliquer sur** bouton ![exécuter. Cliquez ensuite sur](../debugger/media/dbg-tour-run-to-click.png "RunToClick") s’affiche, puis appuyez sur la **Exécuter cliquer sur** bouton.
+Pendant la suspension à un point d’arrêt, placez le curseur sur l’instruction `c1.AddLast(20)` jusqu'à ce que le vert **exécuter cliquer sur** bouton ![exécuter. Cliquez ensuite sur](../debugger/media/dbg-tour-run-to-click.png "RunToClick") s’affiche, puis appuyez sur la **Exécuter cliquer sur** bouton.
 
-    ![Cliquez sur exécuter](../debugger/media/dbg-qs-run-to-click-csharp.png "exécuter cliquer sur")
+![Cliquez sur exécuter](../debugger/media/dbg-qs-run-to-click-csharp.png "exécuter cliquer sur")
 
-    L’application poursuit son exécution, l’appel `doWork`et s’arrête à la ligne de code où vous avez cliqué sur le bouton.
+L’application poursuit son exécution, l’appel `doWork`et s’arrête à la ligne de code où vous avez cliqué sur le bouton.
 
-    Les commandes clavier courantes utilisées pour parcourir le code inclure **F10** et **F11**. Pour obtenir des instructions plus détaillées, consultez le [Guide du débutant](../debugger/getting-started-with-the-debugger.md).
+Les commandes clavier courantes utilisées pour parcourir le code inclure **F10** et **F11**. Pour obtenir des instructions plus détaillées, consultez le [Guide du débutant](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspecter des variables dans un datatip
 
@@ -184,9 +184,7 @@ Pour plus d’informations sur l’utilisation de modifier & Continuer et sur le
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Pour en savoir plus sur le débogueur, consultez [démarrer le débogueur et de parcourir le code](../debugger/getting-started-with-the-debugger.md).
-- Pour plus d’informations sur les points d’arrêt, consultez [à l’aide de points d’arrêt](../debugger/using-breakpoints.md).
+Dans ce didacticiel, vous avez appris comment démarrer le débogueur, parcourir le code et d’inspecter des variables. Vous souhaiterez plus haut niveau sur les fonctionnalités du débogueur, ainsi que des liens vers plus d’informations.
 
-## <a name="see-also"></a>Voir aussi  
- [Débogage dans Visual Studio](../debugger/index.md)  
- [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)

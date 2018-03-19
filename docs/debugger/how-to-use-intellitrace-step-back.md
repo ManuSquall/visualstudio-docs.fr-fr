@@ -1,5 +1,6 @@
 ---
 title: "Afficher un instantané à l’aide d’IntelliTrace étape-back - Visual Studio | Documents Microsoft"
+ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
 ms.date: 12/06/2017
 ms.reviewer: 
@@ -15,11 +16,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e99b1bd44705a5a50c4138379a87a0ff8315ea29
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 9602aa5c75f9572f2ca0f5cd8ef3426cde8ed96a
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Étape différéent afficher des instantanés à l’aide d’IntelliTrace dans Visual Studio
 
