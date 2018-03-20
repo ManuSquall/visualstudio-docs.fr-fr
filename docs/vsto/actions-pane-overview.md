@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,7 +19,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 0e3fb356c00b3e9943ba8aff696283d4c5339e18
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -30,7 +32,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Vous pouvez créer un volet Actions uniquement dans une personnalisation au niveau du document pour Word ou Excel. Vous ne pouvez pas créer un volet Actions dans un complément VSTO. Pour plus d'informations, consultez [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ Vous pouvez créer un volet Actions uniquement dans une personnalisation au niveau du document pour Word ou Excel. Vous ne pouvez pas créer un volet Actions dans un complément VSTO. Pour plus d'informations, consultez [Fonctionnalités disponibles par type d'application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
 >  Le volet Actions diffère des volets de tâches personnalisés. Les volets de tâches personnalisés sont associés à l'application, pas à un document spécifique. Vous pouvez créer des volets de tâches personnalisés dans les compléments VSTO pour certaines applications Microsoft Office. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).  
