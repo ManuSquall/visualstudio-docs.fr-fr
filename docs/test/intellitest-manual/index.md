@@ -1,11 +1,7 @@
 ---
 title: "Manuel de référence IntelliTest | Outils de test Microsoft pour les développeurs | Microsoft Docs"
-ms.custom: 
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - IntelliTest Reference Manual, IntelliTest
@@ -14,18 +10,18 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 30c23fc51f136d7fc3dcfeca191f5c469fb1e331
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8216d8b4f27bb1211bc90d829233602edc915e43
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="intellitest-reference-manual"></a>Manuel de référence IntelliTest
 
 ## <a name="contents"></a>Sommaire
 
 * **[Vue d’ensemble d’IntelliTest](introduction.md)**
-  - [Hello World dans IntelliTest](introduction.md#hello-world)
+  - [Hello World dans IntelliTest](introduction.md#the-hello-world-of-intellitest)
   - [Limitations](introduction.md#limitations)
     * [Non-déterminisme](introduction.md#nondeterminism)
     * [Concurrence](introduction.md#concurrency)
@@ -33,13 +29,13 @@ ms.lasthandoff: 01/09/2018
     * [Plateforme](introduction.md#platform)
     * [Language](introduction.md#language)
     * [Raisonnement symbolique](introduction.md#symbolic-reasoning)
-    * [Traces de pile incorrectes](introduction.md#incorrect-stack)
+    * [Traces de pile incorrectes](introduction.md#incorrect-stack-traces)
   - [Compléments de lecture](introduction.md#further-reading)<p>&nbsp;</p>
 
 * **[Bien démarrer avec IntelliTest](getting-started.md)**
   - [Attributs importants](getting-started.md#important-attributes)
   - [Classes d’assistance statiques importantes](getting-started.md#helper-classes)<p>&nbsp;</p>
- 
+
 * **[Génération de tests](test-generation.md)**
   - [Générateurs de tests](test-generation.md#test-generators)
   - [Tests unitaires paramétrés](test-generation.md#parameterized-unit-testing)

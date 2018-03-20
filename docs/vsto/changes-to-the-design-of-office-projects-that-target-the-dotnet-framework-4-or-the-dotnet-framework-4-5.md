@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -45,7 +47,7 @@ ms.lasthandoff: 01/10/2018
  Les classes de base ne font pas partie du composant redistribuable [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Au lieu de cela, elles sont définies dans les assemblys d'utilitaires inclus dans Visual Studio. Ces assemblys, qui sont copiés dans le dossier de sortie quand vous générez des projets Office, doivent être déployés avec votre solution. Pour plus d’informations sur les assemblys d’utilitaires, consultez [Assemblies in the Visual Studio Tools for Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).  
   
 ## <a name="breaking-changes-in-office-projects-that-are-retargeted-to-the-net-framework-4"></a>Modifications avec rupture dans les projets Office reciblés vers le .NET Framework 4  
- Le tableau suivant répertorie les principales modifications avec rupture que vous pouvez rencontrer dans les projets Office reciblés vers le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure. Pour plus d’informations, consultez [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
+ Le tableau suivant répertorie les principales modifications avec rupture que vous pouvez rencontrer dans les projets Office reciblés vers le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure. Pour plus d'informations, consultez [Migration de solutions Office vers le .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
 |Modification avec rupture|Conséquence|  
 |---------------------|-----------------|  
@@ -60,7 +62,7 @@ ms.lasthandoff: 01/10/2018
 |Hôte de classes d’élément, tel que `ThisWorkbook`, `Sheet`  *n* , `ThisDocument`, et `ThisAddIn`, ne fournissent une méthode de suppression que vous pouvez substituer.|Vous devez déplacer tout code dans la substitution de la méthode Dispose pour le Gestionnaire d’événements de l’arrêt de la classe d’élément hôte, par exemple, `ThisAddIn_Shutdown`et supprimer la substitution de la méthode Dispose de votre classe d’élément hôte.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Migration de solutions Office vers .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Nouveautés du développement Office](http://msdn.microsoft.com/en-us/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Vue d’ensemble de Visual Studio Tools pour Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
   
