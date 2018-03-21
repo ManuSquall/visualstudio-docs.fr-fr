@@ -11,11 +11,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2a65f2237b3fb28569a872c2e3926a2b88e11473
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ab83ba64ff8b34c19e7f10aada74ca3eec1441f6
+ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Incorporation d'un schéma dans un Windows Form
 Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui apparaît dans la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fenêtre.  
@@ -42,7 +42,7 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui apparaît
       panel1.Controls.Add(content);  
       this.docView = docView;  
     }  
-    private MyDSLDSLDocView docView;  
+    private MyDSLDocView docView;  
   
     ```  
   
