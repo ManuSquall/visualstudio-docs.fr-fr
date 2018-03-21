@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e490ad25535cddf20a2693c2f3b9b7642f0c46e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c57923c75d1ae62b45b6ac288e75ef4e34a2f742
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="item-element-msbuild"></a>Item, élément (MSBuild)
 Contient un élément défini par l'utilisateur et ses métadonnées. Chaque élément utilisé dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être spécifié en tant qu'enfant d'un élément `ItemGroup`.  
@@ -75,7 +75,7 @@ Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez norma
 
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Include`|Attribut requis.<br /><br /> Fichier ou caractère générique à inclure dans la liste des éléments.|  
+|`Include`|Attribut facultatif.<br /><br /> Fichier ou caractère générique à inclure dans la liste des éléments.|  
 |`Exclude`|Attribut facultatif.<br /><br /> Fichier ou caractère générique à exclure de la liste des éléments.|  
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|  
 |`Remove`|Attribut facultatif.<br /><br /> Fichier ou caractère générique à supprimer de la liste des éléments.<br /><br />|  

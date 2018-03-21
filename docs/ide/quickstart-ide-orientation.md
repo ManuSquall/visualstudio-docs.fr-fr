@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ae67eb895292e909e01471b329df6de587c75f
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 66ff5933a1a3e2623df706f0f3e7446e750f173b
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : premier aperçu de l'IDE Visual Studio
 
@@ -103,6 +103,6 @@ Nous avons exploré quelques fonctionnalités de l’IDE de Visual Studio pour n
 
 ## <a name="see-also"></a>Voir aussi
 
-[Démarrage rapide : personnalisation de l’IDE](../ide/personalizing-the-visual-studio-ide.md)  
-[Démarrage rapide : codage dans l’éditeur](../ide/quickstart-editor.md)  
-[Démarrage rapide : projets et solutions](../ide/quickstart-projects-solutions.md)
+- [Démarrage rapide : personnalisation de l’IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Démarrage rapide : codage dans l’éditeur](../ide/quickstart-editor.md)
+- [Démarrage rapide : projets et solutions](../ide/quickstart-projects-solutions.md)

@@ -1,11 +1,7 @@
 ---
 title: "Création de stubs de méthodes de tests unitaires avec la commande Créer des tests unitaires | Microsoft Docs"
-ms.custom: 
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - IntelliTest, Get started
@@ -14,18 +10,18 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9016006f9774c4a9eff2937f32543b9f8d9f5fb8
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: e68235aef04328c637ca12d9dd77cf6176d27669
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Bien démarrer avec Microsoft IntelliTest
 
 * Si vous utilisez IntelliTest pour la première fois :
-  * Regardez la [vidéo de Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
-  * Lisez cette [présentation sur MSDN Magazine](https://msdn.microsoft.com/magazine/dn904672.aspx)
-  * Lisez notre [documentation](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
+  * visionnez la [vidéo de Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
+  * lisez cette [présentation sur MSDN Magazine](https://msdn.microsoft.com/magazine/dn904672.aspx)
+  * lisez notre [documentation](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
 * Posez vos questions sur [Stack Overflow](http://stackoverflow.com/questions/tagged/intellitest)
 * Lisez le reste de ce manuel de référence
 * Imprimez cette page pour vous y référer rapidement

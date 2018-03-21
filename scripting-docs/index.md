@@ -1,12 +1,12 @@
 ---
 layout: LandingPage
 ms.topic: landing-page
-title: Scripts | Documents Microsoft
-ms.openlocfilehash: fceb85cc33acd89214f39e57aae3858d119d24cf
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+title: Scripts | Microsoft Docs
+ms.openlocfilehash: 468b734d6381b9c40b1c9a4b6153d6ebafe38eb9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="scripting-technologies"></a>Technologies de script
 
@@ -14,7 +14,7 @@ Cette page fournit des liens vers la documentation de référence JavaScript, Ty
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/ide/quickstart-nodejs">
+        <a href="https://docs.microsoft.com/visualstudio/nodejs/tutorial-nodejs">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -32,7 +32,7 @@ Cette page fournit des liens vers la documentation de référence JavaScript, Ty
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-js-uwp">
+        <a href="https://docs.microsoft.com/windows/uwp/get-started/create-a-hello-world-app-js-uwp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -213,7 +213,7 @@ Cette page fournit des liens vers la documentation de référence JavaScript, Ty
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/scripting/chakra-hosting/javascript-runtime-hosting">
+        <a href="https://docs.microsoft.com/scripting/chakra-hosting/javascript-runtime-hosting">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

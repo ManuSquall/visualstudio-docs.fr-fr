@@ -1,7 +1,7 @@
 ---
 title: Utiliser un environnement lab pour DevOps dans Visual Studio | Microsoft Docs
 ms.date: 05/02/2017
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - lab environment, test lab
@@ -10,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b59de153b691cd67bfe70c52e62478f52795239f
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 2d42c1d97f1d1d84e55a5ca91a9bd104a4bc6004
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Utiliser un environnement lab pour votre DevOps
 
@@ -139,6 +139,6 @@ Pour plus d’informations sur la configuration des environnements, consultez :
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Installer et configurer des agents de test](install-configure-test-agents.md)
+* [Installer et configurer des agents de test](../../test/lab-management/install-configure-test-agents.md)
 * [Visual Studio Lab Management Guide](https://aka.ms/vsarsolutions)
 * [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/)

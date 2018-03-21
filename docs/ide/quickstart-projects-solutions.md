@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: f8845ab2de127b511b9180bebbe201b777c23455
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Démarrage rapide : projets et solutions
 
@@ -185,10 +185,10 @@ Félicitations ! Vous avez terminé ce guide de démarrage rapide. Vous pouvez s
 
 ## <a name="see-also"></a>Voir aussi
 
-[Démarrage rapide : premier aperçu de l'IDE Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Démarrage rapide : personnaliser l’éditeur et l’IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)  
-[Démarrage rapide : codage dans l’éditeur](../ide/quickstart-editor.md)  
-[Gestion des propriétés des projets et des solutions](../ide/managing-project-and-solution-properties.md)  
-[Gestion des références dans un projet](../ide/managing-references-in-a-project.md)  
-[Développer du code dans Visual Studio sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
-[Vue d’ensemble de l’IDE de Visual Studio](../ide/visual-studio-ide.md)
+- [Démarrage rapide : premier aperçu de l'IDE Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Démarrage rapide : personnaliser l’éditeur et l’IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)
+- [Démarrage rapide : codage dans l’éditeur](../ide/quickstart-editor.md)
+- [Gestion des propriétés des projets et des solutions](../ide/managing-project-and-solution-properties.md)
+- [Gestion des références dans un projet](../ide/managing-references-in-a-project.md)
+- [Développer du code dans Visual Studio sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Vue d’ensemble de l’IDE de Visual Studio](../ide/visual-studio-ide.md)

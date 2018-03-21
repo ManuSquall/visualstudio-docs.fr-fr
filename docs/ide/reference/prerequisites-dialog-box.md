@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d97e1f37c1e60c3ec5bb122a6b3f26c2fb086f9
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ea735e5e300d2b2cde301a4cf52424cabbba934
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 
@@ -49,7 +49,7 @@ Les composants requis qui apparaissent dans la boîte de dialogue **Composants r
 |**.NET Framework 3.5 SP1**|Ce package installe les éléments suivants :<br /><br /> - .NET Framework versions 2.0, 3.0 et 3.5.<br />- Prise en charge de toutes les versions de .NET Framework sur les systèmes d’exploitation 32 bits (x86) et 64 bits (x64).<br />- Modules linguistiques pour chaque version de .NET Framework installée avec le package.<br />- Service Packs pour .NET Framework 2.0 et 3.0.<br /><br /> .NET Framework 3.0 est inclus avec Windows Vista et .NET Framework 3.5 avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. .NET Framework 3.5 est requis pour tous les projets Visual Basic et C# qui sont compilés pour les systèmes d’exploitation 32 bits et dont la version cible de .NET Framework est **.NET Framework 3.5**, ainsi que pour les projets Visual Basic et C# compilés pour les systèmes d’exploitation 64 bits. (IA64 non pris en charge.) Notez que les projets Visual Basic et C# sont compilés par défaut pour toutes les architectures UC. Pour plus d’informations, consultez [Vue d’ensemble du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md) et [Composants requis pour le déploiement d’applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Cet élément est sélectionné par défaut.|
 |**Microsoft .NET Framework 4.x**|Ce package installe .NET Framework 4.x pour les plateformes x64 et x86.|
 |**Microsoft System CLR Types pour SQL Server 2014 (x64 et x86)**|Ce package installe Microsoft System CLR Types pour SQL Server 2014 pour les plateformes x64 ou x86.|
-|**SQL Server 2008 R2 Express**|Ce package installe Microsoft SQL Server 2008 R2 Express, une version gratuite de Microsoft SQL Server 2008 R2, une base de données idéale pour les petites applications de bureau, applications serveur ou applications Web. Il peut être utilisé gratuitement pour le développement et la production. Une [inscription](http://go.microsoft.com/fwlink/?LinkId=130380) gratuite est requise pour distribuer SQL Server 2008 R2 Express avec l’application.|
+|**SQL Server 2008 R2 Express**|Ce package installe Microsoft SQL Server 2008 R2 Express, une version gratuite de Microsoft SQL Server 2008 R2, une base de données idéale pour les petites applications de bureau, applications serveur ou applications Web. Il peut être utilisé gratuitement pour le développement et la production.|
 |**SQL Server 2012 Express**|Ce package installe Microsoft SQL Server 2012 Express.|
 |**SQL Server 2012 Express LocalDB**|Ce package installe SQL Server 2012 Express LocalDB.|
 |**Bibliothèques Runtime Visual C++ "14" (ARM)**|Ce package installe les bibliothèques Runtime Visual C++ pour l'architecture Intel Itanium, qui fournit des routines de programmation pour le système d'exploitation Microsoft Windows. Ces routines automatisent de nombreuses tâches de programmation courantes qui ne sont pas fournies par les langages C et C++.<br /><br /> Pour plus d’informations, consultez [Référence sur les bibliothèques Runtime C](/cpp/c-runtime-library/c-run-time-library-reference).|
@@ -58,7 +58,7 @@ Les composants requis qui apparaissent dans la boîte de dialogue **Composants r
 
 ## <a name="see-also"></a>Voir aussi
 
-[Page Publier, Concepteur de projets](../../ide/reference/publish-page-project-designer.md)  
-[Prérequis pour le déploiement d’applications](../../deployment/application-deployment-prerequisites.md)  
-[Déploiement des prérequis pour les applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md)  
-[Vue d’ensemble du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
+- [Page Publier, Concepteur de projets](../../ide/reference/publish-page-project-designer.md)
+- [Prérequis pour le déploiement d’applications](../../deployment/application-deployment-prerequisites.md)
+- [Déploiement des prérequis pour les applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
+- [Vue d’ensemble du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
