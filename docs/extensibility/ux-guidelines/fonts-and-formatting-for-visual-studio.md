@@ -1,26 +1,28 @@
 ---
 title: Mise en forme pour Visual Studio | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: fcd6b5edd5d0c6724ca7ed1e393e32d657a4a29b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 83c1d4e20dd372d3b76362b9f06ee894b045333c
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Mise en forme pour Visual Studio
-##  <a name="BKMK_TheEnvironmentFont"></a>La police d’environnement  
+##  <a name="BKMK_TheEnvironmentFont"></a> La police d’environnement
  Toutes les polices dans Visual Studio doivent être exposés à l’utilisateur pour la personnalisation. Cette opération s’effectue principalement via le **polices et couleurs** page dans le **Outils > Options** boîte de dialogue. Les trois principales catégories de paramètres de police sont :  
   
 -   **Police d’environnement** -la police principale pour l’IDE (environnement de développement intégré), utilisée pour tous les éléments d’interface, y compris les boîtes de dialogue, les menus, les fenêtres Outil et les fenêtres de document. Par défaut, la police d’environnement est liée à une police système qui s’affiche en tant que 9 pt Segoe UI dans les versions actuelles de Windows. À l’aide d’une police pour tous les éléments d’interface permet de garantir une apparence cohérente police tout au long de l’IDE.  
@@ -49,9 +51,9 @@ ms.lasthandoff: 12/22/2017
   
  Pour Windows Presentation Foundation (WPF), dérivez votre classe de fenêtre de boîte de dialogue de l’interpréteur de commandes `DialogWindow` classe au lieu de WPF `Window` classe.  
   
- En XAML, le code ressemble à ceci :  
+ En XAML, le code ressemble à ceci :
   
-```  
+```xaml
 <ui:DialogWindow  
     x:Class"MyNameSpace.MyWindow"  
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
@@ -61,35 +63,37 @@ ms.lasthandoff: 12/22/2017
     WindowStartupLocation="CenterOwner"  
     Title="My Dialog">  
 </ui:DialogWindow>  
-  
-code behind:  
-  
+```
+
+code-behind :
+
+```csharp
 internal partial class WebConfigModificationWindow : DialogWindow  
 {  
 }  
-```  
+```
   
  (Remplacez `Microsoft.VisualStudio.Shell.11.0` avec la version actuelle de la dll MPF.)  
   
- Pour afficher la boîte de dialogue, appelez «`ShowModal()`» sur la classe sur `ShowDialog()`. `ShowModal()`définit l’état modal approprié dans l’interpréteur de commandes, garantit que la boîte de dialogue est centrée dans la fenêtre parente et ainsi de suite.  
+ Pour afficher la boîte de dialogue, appelez «`ShowModal()`» sur la classe sur `ShowDialog()`. `ShowModal()` définit l’état modal approprié dans l’interpréteur de commandes, garantit que la boîte de dialogue est centrée dans la fenêtre parente et ainsi de suite.  
   
  Le code est comme suit :  
   
-```  
+```csharp
 MyWindow window = new MyWindow();  
 window.ShowModal()  
-```  
+```
   
- `ShowModal`Retourne une valeur booléenne ? (valeur booléenne nullable) avec le `DialogResult`, qui peut être utilisé si nécessaire. La valeur de retour est true si la boîte de dialogue a été fermé avec **OK**.  
+ `ShowModal` Retourne une valeur booléenne ? (valeur booléenne nullable) avec le `DialogResult`, qui peut être utilisé si nécessaire. La valeur de retour est true si la boîte de dialogue a été fermé avec **OK**.  
   
  Si vous avez besoin afficher certains UI WPF qui n’est pas une boîte de dialogue et qui est hébergé dans son propre `HwndSource`, comme une fenêtre contextuelle ou la fenêtre WPF enfant d’une fenêtre de fenêtre Win32/WinForms parent, vous devez définir le `FontFamily` et `FontSize` sur l’élément racine du e WPF élément. (L’interpréteur de commandes définit les propriétés de la fenêtre principale, mais ils ne seront pas héritées après un `HWND`). L’interpréteur de commandes fournit des ressources auxquels les propriétés peuvent être liées, comme suit :  
   
-```  
-<Setter property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
-<Setter property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />  
-```  
+```xaml
+<Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
+<Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />  
+```
   
-###  <a name="BKMK_Formatting"></a>Mise en forme (mise à l’échelle/mise en gras) référence  
+###  <a name="BKMK_Formatting"></a> Mise en forme (mise à l’échelle/mise en gras) référence  
  Certaines boîtes de dialogue requièrent un texte en gras particulier ou une taille de la police d’environnement. Auparavant, les polices supérieure à la police d’environnement ont été codés en tant que «`environment font +2`» ou similaires. À l’aide d’extraits de code fourni pour prendre en charge les écrans haute résolution et vous assurer que texte d’affichage apparaît toujours à la taille et le poids (comme la lumière ou Semilight).  
   
 > **Remarque : Avant d’appliquer la mise en forme, vérifiez que vous suivez les conseils figurant dans [style de texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**  
@@ -97,10 +101,10 @@ window.ShowModal()
  Pour mettre à l’échelle de la police d’environnement, définissez le style du TextBlock ou Label, comme indiqué. Chacune de ces extraits de code, correctement utilisés, génère la police correcte, y compris les variations de taille et épaisseur appropriées.  
   
  Où «`vsui`» est une référence à l’espace de noms `Microsoft.VisualStudio.Shell`:  
-  
-```  
+
+```xaml
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0" 
-```  
+```
   
 #### <a name="375-environment-font--light"></a>Police d’environnement 375 % + clair  
  **Apparaît sous la forme :** pt 34 Segoe UI Light.  
@@ -108,19 +112,19 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 
  **Procédures de code :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
-```  
+```
   
  **XAML :** définir le style de l’étiquette ou TextBlock comme indiqué.  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
-```  
+```
   
 #### <a name="310-environment-font--light"></a>Police d’environnement 310 % + clair  
  **Apparaît sous la forme :** pt 28 Segoe UI Light.   
@@ -128,19 +132,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **Procédures de code :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML :** définir le style de l’étiquette ou TextBlock comme indiqué.  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>     
-```  
+```
   
 #### <a name="200-environment-font--semilight"></a>Police d’environnement 200 % + Semilight  
  **Apparaît sous la forme :** 18 pt Segoe UI Semilight    
@@ -148,19 +152,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **Procédures de code :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment : 
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML :** définir le style de l’étiquette ou TextBlock comme indiqué :  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>    
-```  
+```
   
 #### <a name="155-environment-font"></a>Police d’environnement 155 %  
  **Apparaît sous la forme :** 14 pt Segoe UI    
@@ -168,19 +172,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **Procédures de code :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML :** définir le style de l’étiquette ou TextBlock comme indiqué :  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
-```  
+```
   
 #### <a name="133-environment-font"></a>Police d’environnement 133 %  
  **Apparaît sous la forme :** 12 pt Segoe UI    
@@ -188,19 +192,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **Procédures de code :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML :** définir le style de l’étiquette ou TextBlock comme indiqué :  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>    
-```  
+```
   
 #### <a name="122-environment-font"></a>Police d’environnement 122 %  
  **Apparaît sous la forme :** 11 pt Segoe UI    
@@ -208,19 +212,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **Procédures de code :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML :** définir le style de l’étiquette ou TextBlock comme indiqué :  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>    
-```  
+```
   
 #### <a name="environment-font--bold"></a>Police d’environnement + gras  
  **Apparaît sous la forme :** en gras 9 pt Segoe UI    
@@ -228,26 +232,26 @@ label.SetResourceReference(Label.StyleProperty,
   
  **Procédures de code :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironmentBoldStyleKey);    
-```  
+```
   
  **XAML :** définir le style de l’étiquette ou TextBlock comme indiqué :  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>    
-```  
+```
   
 ### <a name="localizable-styles"></a>Styles localisables  
- Dans certains cas, les localisateurs devez modifier les styles de police pour différents paramètres régionaux, telles que la suppression en gras du texte pour les langues d’Extrême-Orient. Pour permettre la localisation de styles de police, les styles doivent figurer dans le fichier .resx. La meilleure façon d’effectuer cette opération et toujours modifier les styles de police dans le Concepteur d’écran de Visual Studio est de définir explicitement les styles de police au moment du design. Bien que cela crée un objet police complète et peut sembler l’héritage des polices de parent, seule la propriété FontStyle est utilisée pour définir la police.  
+ Dans certains cas, les localisateurs devez modifier les styles de police pour différents paramètres régionaux, telles que la suppression en gras du texte pour les langues d’Asie de l'Est. Pour permettre la localisation de styles de police, les styles doivent figurer dans le fichier .resx. La meilleure façon d’effectuer cette opération et toujours modifier les styles de police dans le Concepteur d’écran de Visual Studio est de définir explicitement les styles de police au moment du design. Bien que cela crée un objet police complète et peut sembler l’héritage des polices de parent, seule la propriété FontStyle est utilisée pour définir la police.  
   
  La solution consiste à connecter le formulaire de boîte de dialogue `FontChanged` événement. Dans la `FontChanged` événement, parcourir tous les contrôles et vérifier si leur police est défini. Si elle est définie, la modifier et une nouvelle police en fonction de la police du formulaire et le style de police du contrôle précédent. Un exemple de ce code est :  
   
-```  
+```csharp
 private void Form1_FontChanged(object sender, System.EventArgs e)  
 {  
           SetFontStyles();  
@@ -279,7 +283,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
           }  
      }  
 }  
-```  
+```
   
  À l’aide de ce code garantit que lorsque la mise à jour de la police du formulaire, les polices des contrôles met à jour également. Cette méthode doit également être appelée à partir du constructeur du formulaire, car la boîte de dialogue risque d’échouer obtenir une instance de `IUIService` et `FontChanged` événement ne se déclenche jamais. Raccordement `FontChanged` autorise les boîtes de dialogue Sélectionner dynamiquement la nouvelle police même si la boîte de dialogue est déjà ouverte.  
   
@@ -296,7 +300,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
  Pour réinitialiser la police, cliquez sur « Par défaut » sous **Outils > Options > environnement > polices et couleurs**.  
   
-##  <a name="BKMK_TextStyle"></a>Style de texte  
+##  <a name="BKMK_TextStyle"></a> Style de texte  
  Style de texte fait référence à la casse, le poids et la taille de police. Pour obtenir des conseils d’implémentation, consultez [la police d’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).  
   
 ### <a name="text-casing"></a>Casse du texte  
@@ -417,7 +421,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Utilisation :**<br /><br /> -Titre supérieure dans les boîtes de dialogue signature<br />-Titre de rapport principal<br /><br /> **Procédez comme :**<br /><br /> -Utiliser la casse de la phrase<br />-Toujours utiliser légère<br /><br /> **Ne pas :**<br /><br /> -Utilisation de l’interface utilisateur autre que de la signature de l’interface utilisateur comme Page de démarrage<br />-En gras, italique ou gras italique<br />-Utilisez corps du texte<br />-Utilisez dans les fenêtres Outil|**Apparaît sous la forme :** pt 28 Segoe UI Light.<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement 310 % &#43; Titre clair](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|  
+|**Utilisation :**<br /><br /> -Titre supérieure dans les boîtes de dialogue signature<br />-Titre de rapport principal<br /><br /> **Procédez comme :**<br /><br /> -Utiliser la casse de la phrase<br />-Toujours utiliser légère<br /><br /> **Ne pas :**<br /><br /> -Utilisation de l’interface utilisateur autre que de la signature de l’interface utilisateur comme Page de démarrage<br />-En gras, italique ou gras italique<br />-Utilisez corps du texte<br />-Utilisez dans les fenêtres Outil|**Apparaît sous la forme :** pt 28 Segoe UI Light.<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement 310 % &#43; titre clair](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|  
   
 #### <a name="200-environment-font--semilight"></a>Police d’environnement 200 % + Semilight  
   
@@ -447,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Utilisation :**<br /><br /> -Les étiquettes et des sous-titres dans les boîtes de dialogue signature<br />-Les étiquettes et des sous-titres dans les rapports<br />-Les étiquettes et sous-titres dans le document et l’interface utilisateur<br /><br /> **Procédez comme :**<br /><br /> -Utiliser la casse de la phrase<br />-Utiliser le poids en gras<br /><br /> **Ne pas :**<br /><br /> -En italique ou gras italique<br />-Utilisez corps du texte<br />-Utilisez dans les contrôles standard de Visual Studio<br />-Utilisez dans les fenêtres Outil|**Apparaît sous la forme :** en gras 9 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement &#43; Titre gras](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|  
+|**Utilisation :**<br /><br /> -Les étiquettes et des sous-titres dans les boîtes de dialogue signature<br />-Les étiquettes et des sous-titres dans les rapports<br />-Les étiquettes et sous-titres dans le document et l’interface utilisateur<br /><br /> **Procédez comme :**<br /><br /> -Utiliser la casse de la phrase<br />-Utiliser le poids en gras<br /><br /> **Ne pas :**<br /><br /> -En italique ou gras italique<br />-Utilisez corps du texte<br />-Utilisez dans les contrôles standard de Visual Studio<br />-Utilisez dans les fenêtres Outil|**Apparaît sous la forme :** en gras 9 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement &#43; titre gras](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|  
   
 #### <a name="environment-font"></a>Police d’environnement  
   

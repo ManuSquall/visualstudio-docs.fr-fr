@@ -1,5 +1,5 @@
 ---
-title: "L’accès aux données dans Visual Studio | Documents Microsoft"
+title: L’accès aux données dans Visual Studio | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: article
 f1_keywords:
@@ -15,11 +15,11 @@ manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e7c4c9aada390259d4abd57484c20d25728ef91f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: f99c01ec5f10909e8236d6986836603553b4008d
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>L’accès aux données dans Visual Studio
 
@@ -33,7 +33,7 @@ Les listes suivantes présentent quelques exemples des nombreux systèmes de bas
 
 ||||
 |-|-|-|
-|Base de données SQL|DocumentDB|Stockage (objets BLOB, tables, files d’attente, les fichiers)|
+|Base de données SQL|Azure Cosmos DB|Stockage (objets BLOB, tables, files d’attente, les fichiers)|
 |SQL Data Warehouse|Base de données Stretch SQL Server|StorSimple|
 
 Et plus encore...
