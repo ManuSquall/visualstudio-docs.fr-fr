@@ -1,7 +1,7 @@
 ---
-title: "ID de composant et de charge de travail de Visual Studio 2017 | Microsoft Docs"
-description: "Utilisez les ID de composant et de charge de travail pour installer Visual Studio à l’aide d’une ligne de commande ou pour spécifier comme dépendance dans un manifeste VSIX"
-keywords: 
+title: ID de composant et de charge de travail de Visual Studio 2017 | Microsoft Docs
+description: Utilisez les ID de composant et de charge de travail pour installer Visual Studio à l’aide d’une ligne de commande ou pour spécifier comme dépendance dans un manifeste VSIX
+keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a8b2ca8900c0f292d7e4bcc035e1eb58fd12a94
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 967fdb78d603998ac992b3e3609bc607dc4ea0ff
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>ID de charge de travail et de composant Visual Studio 2017
 Cliquez sur les noms d’éditions dans le tableau suivant pour voir les ID de composant et de charge de travail disponibles dont vous avez besoin pour installer Visual Studio via une ligne de commandes ou à spécifier en tant que dépendance dans un manifeste VSIX.

@@ -1,24 +1,24 @@
 ---
-title: "Résolution des problèmes liés à l’émulateur Visual Studio pour Android | Microsoft Docs"
-ms.custom: 
+title: Résolution des problèmes liés à l’émulateur Visual Studio pour Android | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
-caps.latest.revision: 
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
+caps.latest.revision: ''
+author: mgmclemore
+ms.author: mamcle
+manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d99892d42190e64c54213c2b6b9e52fdd22dfd8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7d333295461617eb8a85f0970bc82e33f5a2ec68
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Résolution des problèmes liés à l’émulateur Visual Studio pour Android
 Cette rubrique contient des informations pour vous aider à résoudre les problèmes que vous pouvez rencontrer quand vous utilisez l’Émulateur Visual Studio pour Android.  

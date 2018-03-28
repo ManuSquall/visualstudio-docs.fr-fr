@@ -1,12 +1,12 @@
 ---
-title: "Exemples de paramètres de ligne de commande pour l’installation de Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Exemples de paramètres de ligne de commande pour l’installation de Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 05/06/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
 author: timsneath
@@ -14,11 +14,11 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: f91810f53a27cc988c44e6c283364bb2d29e39e0
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: d9d13daf406dc0c39d6a2f3571acf5f60c763126
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Exemples de paramètres de ligne de commande pour l’installation de Visual Studio 2017
 Voici plusieurs exemples montrant comment [utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md). Vous pouvez les personnaliser en fonction de vos besoins.
@@ -45,7 +45,7 @@ vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installP
 ```
 
 > [!NOTE]
-> Les deux commandes sont requises. La première commande met à jour le programme d’installation de Visual Studio. La seconde commande met à jour l’instance de Visual Studio. Pour éviter l’affichage d’une boîte de dialogue Contrôle de compte d’utilisateur, exécutez l’invite de commande en tant qu’administrateur. 
+> Les deux commandes sont requises. La première commande met à jour le programme d’installation de Visual Studio. La seconde commande met à jour l’instance de Visual Studio. Pour éviter l’affichage d’une boîte de dialogue Contrôle de compte d’utilisateur, exécutez l’invite de commande en tant qu’administrateur.
 
 * Installez une instance de bureau de Visual Studio en mode silencieux, avec le module linguistique français, avec un retour uniquement une fois le produit installé.
 ```
