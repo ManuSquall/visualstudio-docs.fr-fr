@@ -1,12 +1,13 @@
 ---
-title: "Vue d’ensemble du déploiement - Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Vue d’ensemble du déploiement - Visual Studio | Documents Microsoft
+ms.custom: mvc
 ms.date: 11/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
+ms.topic: quickstart
 dev_langs:
 - FSharp
 - VB
@@ -21,18 +22,19 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], about deploying applications
 - components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e05bf361515b45f3ebc7683fa0c83ec6116d9419
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: d07129bc373cf74c8ba373b3c51847016d585ade
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="deployment-overview-in-visual-studio"></a>Vue d’ensemble du déploiement dans Visual Studio
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Démarrage rapide : D’abord examiner déploiement dans Visual Studio
 
 En déployant une application, un service ou un composant, vous le distribuez pour l'installation sur d'autres ordinateurs, périphériques, serveurs ou dans le cloud. Vous choisissez la méthode appropriée dans Visual Studio pour le type de déploiement dont vous avez besoin. (Plusieurs types d’application prennent en charge les autres outils de déploiement telles que le déploiement de la ligne de commande ou de NuGet qui ne sont pas décrits ici).
 
@@ -40,7 +42,7 @@ Consultez les didacticiels pour obtenir des instructions pas à pas.
 
 ### <a name="deploy-to-local-folder"></a>Déployer vers un dossier local
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, et **.NET Core**: utiliser l’outil de publication pour déployer dans une variable locale dossier. Les options disponibles dépendent de votre type d’application. Dans l’Explorateur de solutions, avec le bouton droit de votre projet et choisissez **publier**, puis choisissez **dossier**. Pour plus d’informations, consultez [déployer vers un dossier local](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, et **.NET Core**: utiliser l’outil de publication pour déployer vers un dossier local. Les options disponibles dépendent de votre type d’application. Dans l’Explorateur de solutions, avec le bouton droit de votre projet et choisissez **publier**, puis choisissez **dossier**. Pour plus d’informations, consultez [déployer vers un dossier local](quickstart-deploy-to-local-folder.md).
 
     ![Choisissez publier](../deployment/media/quickstart-publish.png)
 

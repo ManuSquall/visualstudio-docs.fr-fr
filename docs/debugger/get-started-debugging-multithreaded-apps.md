@@ -1,13 +1,13 @@
 ---
-title: "Commencer le débogage d’applications multithread | Documents Microsoft"
+title: Commencer le débogage d’applications multithread | Documents Microsoft
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: 
+caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2766a394c88d2040a8f062c33add4e3f7af019
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 48e912fdd04e25f9ad8f7babcf565afb5b739f05
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Commencer à déboguer une application multithread dans Visual Studio
 Visual Studio fournit plusieurs outils et les éléments d’interface utilisateur pour vous aider à déboguer les applications multithread. Ce didacticiel montre comment utiliser des marqueurs de thread, le **piles parallèles** fenêtre, le **espion parallèle** fenêtre, les points d’arrêt conditionnels et les points d’arrêt de filtre. Ce didacticiel ne prend que quelques minutes, mais l’exécution de cette dernière vous familiarisera avec les fonctionnalités de débogage d’applications multithread.
@@ -319,7 +319,7 @@ Vous pouvez signaler des threads que vous souhaitez accorder une attention parti
 
 Pour supprimer l’indicateur de threads, vous pouvez cliquer sur un ou plusieurs threads avec indicateur dans le **espion parallèle** fenêtre et choisissez **supprimer l’indicateur**.
 
-## <a name="bkmk_freeze"></a>Gel et libération de l’exécution des threads 
+## <a name="bkmk_freeze"></a> Gel et libération de l’exécution des threads 
 
 > [!TIP]
 > Vous pouvez figer et libérer (suspendre et reprendre) les threads pour contrôler l’ordre dans lequel threads exécutent le travail. Cela peut vous aider à résoudre les problèmes d’accès concurrentiel comme les blocages et les conditions de concurrence critique.
@@ -340,7 +340,7 @@ Pour supprimer l’indicateur de threads, vous pouvez cliquer sur un ou plusieur
 
     L’application peut également instancier certains nouveaux threads. Notez que les nouveaux threads sont sans indicateur et ne sont pas gelés.
 
-## <a name="bkmk_follow_a_thread"></a>Suivre un seul Thread à l’aide de points d’arrêt conditionnels
+## <a name="bkmk_follow_a_thread"></a> Suivre un seul Thread à l’aide de points d’arrêt conditionnels
 
 Parfois, il peut être utile de suivre l’exécution d’un thread unique dans le débogueur. Un moyen pour ce faire consiste à bloquer les threads qui vous n'intéressent pas, mais dans certains scénarios vous pouvez suivre un seul thread sans bloquer les autres threads (pour reproduire des bogues un particulier, par exemple). Pour suivre un thread sans bloquer les autres threads, vous devez éviter d’arrêt dans le code, à l’exception sur le thread qui vous intéressez. Vous pouvez cela en définissant un [point d’arrêt conditionnel](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
