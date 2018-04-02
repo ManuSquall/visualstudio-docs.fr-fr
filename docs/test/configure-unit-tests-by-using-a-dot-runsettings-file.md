@@ -1,18 +1,18 @@
 ---
-title: "Configurer des tests unitaires à l’aide d’un fichier *.runsettings* | Microsoft Docs"
+title: Configurer des tests unitaires dans Visual Studio à l’aide d’un fichier .runsettings | Microsoft Docs
 ms.date: 02/28/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 94bcd0bc473a87246feb3b5e790ed060b615b4be
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l’aide d’un fichier *.runsettings*
 
@@ -57,7 +57,7 @@ Voici un fichier *.runsettings* classique. Chaque élément du fichier est facul
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
-  
+
      <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
      <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
      <TestSessionTimeout>10000</TestSessionTimeout>
@@ -147,7 +147,7 @@ Le collecteur de données de couverture du code crée un journal des parties du 
 
 Le collecteur de données vidéo capture un enregistrement de l’écran quand des tests sont exécutés. Cet enregistrement est utile pour résoudre les problèmes des tests d’interface utilisateur. Le collecteur de données vidéo est disponible dans **Visual Studio 2017 versions 15.5** et ultérieures.
 
-Pour personnaliser un autre type d’adaptateur de données de diagnostic, vous devez utiliser un fichier de paramètres de test. Pour plus d’informations, consultez [Spécification des paramètres de test pour les tests Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).
+Pour personnaliser un autre type d’adaptateur de données de diagnostic, vous devez utiliser un fichier de paramètres de test.
 
 ### <a name="testrunparameters"></a>TestRunParameters
 
@@ -181,4 +181,4 @@ Ces paramètres sont spécifiques à l’adaptateur de test qui exécute les mé
 
 ## <a name="see-also"></a>Voir aussi
 
-[Personnalisation de l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md)
+- [Personnalisation de l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md)

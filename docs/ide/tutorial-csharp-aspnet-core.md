@@ -1,12 +1,12 @@
 ---
-title: "Bien démarrer avec C# et ASP.NET Core dans Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Bien démarrer avec C# et ASP.NET Core dans Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 12/11/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c4d67a57063854f859a766068084d63902ba038e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a24ccbcecc2d5bd4d5799ada048fee0004514f7
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Bien démarrer avec C# et ASP.NET dans Visual Studio
 Dans ce didacticiel pour le développement C# avec ASP.NET Core à l’aide de Visual Studio, vous allez créer une application web C# ASP.NET Core, ajouter du code, explorer certaines fonctionnalités de l’IDE et exécuter l’application.
@@ -167,12 +167,9 @@ Le modèle MVC vous permet de créer des applications qui sont plus faciles à t
 
  ![Cliquez sur le bouton Arrêter le débogage dans la barre d’outils](../ide/media/csharp-aspnet-stop-debugging.png)
 
+## <a name="next-steps"></a>Étapes suivantes
 
-Félicitations ! Vous avez terminé ce didacticiel.
+Félicitations ! Vous avez terminé ce didacticiel. Nous espérons que vous en avez appris un peu plus sur C#, ASP.NET Core et l’IDE Visual Studio. Pour en apprendre davantage, passez au tutoriel suivant.
 
-## <a name="see-also"></a>Voir aussi
-* [Bien démarrer avec ASP.NET Core MVC et Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
-* [Bien démarrer avec des pages Razor dans ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
-* [Nouveautés de C#](/dotnet/csharp/whats-new)
-* [Informations de référence sur le langage C#](/dotnet/csharp/language-reference/index)
-* Cours vidéo [Concepts de base de C# pour les débutants](https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169)
+ > [!div class="nextstepaction"]
+ > [Bien démarrer avec ASP.NET Core MVC et Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)

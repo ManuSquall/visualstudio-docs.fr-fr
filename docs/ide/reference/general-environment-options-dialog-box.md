@@ -1,11 +1,12 @@
 ---
-title: "Général, Environnement, boîte de dialogue Options | Microsoft Docs"
-ms.custom: 
+title: Général, Environnement, boîte de dialogue Options | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.Message.0x800a002e
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - editors, autocompletion
 - Options dialog box, General Environment
 - General Environment Options dialog box
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de71795242cd5fbb1d41f3d071629e54cf5d04f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5c434b60efa054dbadcb8ef24470ed135d450e12
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>Général, Environnement, boîte de dialogue Options
 
@@ -49,7 +51,7 @@ Utilisez cette page pour modifier les thèmes de couleurs, les paramètres de la
 
 Choisissez le thème de couleur **Bleu**, **Clair** ou **Sombre** pour l’IDE.
 
-Vous pouvez installer d’autres thèmes prédéfinis et créer des thèmes personnalisés en téléchargeant et en installant **l’éditeur de thème de couleur de Visual Studio** à partir de la [Place de marché Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor). Une fois cet outil installé, d'autres thèmes de couleurs apparaissent dans la zone de liste des thèmes de couleurs.
+Vous pouvez installer d’autres thèmes prédéfinis et créer des thèmes personnalisés en téléchargeant et en installant **l’éditeur de thème de couleur de Visual Studio** à partir de la [Place de marché Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Une fois cet outil installé, d'autres thèmes de couleurs apparaissent dans la zone de liste des thèmes de couleurs.
 
 **Appliquer une 1ère lettre en majuscule à la barre de menus**
 
@@ -69,22 +71,17 @@ Utilise l'accélération graphique matérielle si elle est disponible, au lieu d
 
 ## <a name="other"></a>Autre
 
-**Éléments affichés dans le menu Fenêtre**  
-Personnalise le nombre de fenêtres qui s’affichent dans la liste Fenêtres du menu **Fenêtre**. Entrez un nombre compris entre 1 et 24. Par défaut, ce nombre est de 10.
+**Éléments affichés dans le menu Fenêtre** Personnalise le nombre de fenêtres qui s’affichent dans la liste Fenêtres du menu **Fenêtre**. Entrez un nombre compris entre 1 et 24. Par défaut, ce nombre est de 10.
 
-**Éléments affichés dans la liste des fichiers récents**  
-Personnalise le nombre des projets et des fichiers les plus récemment utilisés qui s’affichent dans le menu **Fichier**. Entrez un nombre compris entre 1 et 24. Par défaut, ce nombre est de 10. Il s'agit d'un moyen facile de récupérer les projets et les fichiers récemment utilisés.
+**Éléments affichés dans la liste des fichiers récents** Personnalise le nombre des projets et fichiers utilisés récemment, et qui s’affichent dans le menu **Fichier**. Entrez un nombre compris entre 1 et 24. Par défaut, ce nombre est de 10. Il s'agit d'un moyen facile de récupérer les projets et les fichiers récemment utilisés.
 
-**Afficher la barre d’état**  
-Affiche la barre d'état. La barre d'état se trouve en bas de la fenêtre de l'IDE et affiche des informations sur la progression des opérations en cours.
+**Afficher la barre d’état** Affiche la barre d’état. La barre d'état se trouve en bas de la fenêtre de l'IDE et affiche des informations sur la progression des opérations en cours.
 
-**Le bouton Fermer n’affecte que la fenêtre Outil active**  
-Spécifie que quand l’utilisateur clique sur le bouton **Fermer**, seule la fenêtre Outil qui a le focus est fermée et non pas toutes les fenêtres Outil de l’ensemble ancré. Cette option est activée par défaut.
+**Le bouton Fermer n’affecte que la fenêtre Outil active** Spécifie qu’au moment où l’utilisateur clique sur le bouton **Fermer**, seule la fenêtre Outil qui a le focus est fermée, et non la totalité des fenêtres Outil de l’ensemble ancré. Cette option est activée par défaut.
 
-**Le bouton Masquer automatiquement n’affecte que la fenêtre Outil active**  
-Spécifie que quand l’utilisateur clique sur le bouton **Masquer automatiquement**, seule la fenêtre Outil qui a le focus est masquée automatiquement et non pas toutes les fenêtres Outil de l’ensemble ancré. Cette option est désactivée par défaut.
+**Le bouton Masquer automatiquement n’affecte que la fenêtre Outil active** Spécifie qu’au moment où l’utilisateur clique sur le bouton **Masquer automatiquement**, seule la fenêtre Outil qui a le focus est masquée automatiquement, et non la totalité des fenêtres Outil de l’ensemble ancré. Cette option est désactivée par défaut.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)  
+[Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)
 [Personnalisation des dispositions de fenêtres](../../ide/customizing-window-layouts-in-visual-studio.md)

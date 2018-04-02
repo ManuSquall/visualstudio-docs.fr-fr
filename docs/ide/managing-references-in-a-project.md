@@ -1,12 +1,12 @@
 ---
-title: "Gestion des références dans un projet | Microsoft Docs"
-ms.custom: 
+title: Gestion des références dans un projet | Microsoft Docs
+ms.custom: ''
 ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fbb9ddfd53210f460b5035f1f83159e46b5aa1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="managing-references-in-a-project"></a>Gestion des références dans un projet
 
@@ -108,7 +108,7 @@ Par défaut, la propriété <xref:Microsoft.VisualStudio.VCProjectEngine.VCProje
 
 Vous pouvez créer des applications qui référencent des projets ou des assemblys ciblant une version différente du .NET Framework. Par exemple, vous pouvez créer une application ciblant [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] qui fait référence à un assembly ciblant le [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. Si vous créez un projet ciblant une version antérieure du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], vous ne pouvez pas définir dans ce projet une référence à un projet ou à un assembly qui cible une version plus récente.
 
-Pour plus d’informations, consultez [Ciblage d’une version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+Pour plus d’informations, consultez [Vue d’ensemble du multiciblage](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Références entre projets
 
@@ -125,5 +125,5 @@ Les références de fichiers sont des références directes à des assemblys qui
 
 ## <a name="see-also"></a>Voir aussi
 
-[Dépannage de références rompues](../ide/troubleshooting-broken-references.md)  
-[Guide pratique pour ajouter ou supprimer des références à l’aide du gestionnaire de références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+[Dépannage de références rompues](../ide/troubleshooting-broken-references.md)
+[Guide pratique pour ajouter ou supprimer des références à l’aide du Gestionnaire de références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

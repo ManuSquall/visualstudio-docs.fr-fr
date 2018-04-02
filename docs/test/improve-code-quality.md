@@ -1,7 +1,7 @@
 ---
 title: Outils de test Visual Studio | Microsoft Docs
-ms.date: 01/31/2018
-ms.technology: vs-devops-test
+ms.date: 03/16/2018
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - testing tools [Visual Studio]
@@ -11,30 +11,32 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cc57d6ea3ebba0cff901635d411d047bbafbfa94
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: a4f662761c58595ae40a2bf82913978bcfbb68db
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="testing-tools-in-visual-studio"></a>Outils de test dans Visual Studio
 
-Les outils de test de Visual Studio peuvent vous aider vous et votre équipe à développer et à maintenir des niveaux élevés d’excellence du code.
+Les outils de test de Visual Studio peuvent vous aider vous et votre équipe à développer et à maintenir du code avec des standards élevés d’excellence.
+
+- La fenêtre **Explorateur de tests** facilite l’intégration des [tests unitaires](../test/unit-test-your-code.md) dans votre pratique de développement. Vous pouvez utiliser le framework de tests unitaires Microsoft ou un des frameworks tiers et ouverts.
+
+- [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) génère automatiquement des tests unitaires et des données de test pour votre code managé.
+
+- La [couverture du code](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) détermine la proportion de code de votre projet qui sera réellement testée par les tests codés, comme des tests unitaires.
+
+- [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) vous permet d’isoler le code que vous testez en remplaçant d’autres parties de l’application par des stubs ou des shims.
+
+- [Live Unit Testing](../test/live-unit-testing.md) exécute automatiquement des tests unitaires en arrière-plan et affiche les résultats de test et de couverture du code sous forme graphique dans l’éditeur de code Visual Studio.
+
+- Les [tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) vous permettent de tester votre application via son interface utilisateur.
+
+- Les [tests de charge](../test/quickstart-create-a-load-test-project.md) simulent la charge sur une application serveur en exécutant des tests unitaires et des tests de performances web.
 
 > [!NOTE]
 > Les tests unitaires sont disponibles dans toutes les éditions de Visual Studio. D’autres outils de test, tels que Live Unit Testing, IntelliTest et les tests codés de l’interface utilisateur, sont disponibles uniquement dans l’édition Visual Studio Enterprise. Pour plus d’informations sur les éditions, consultez [Comparez les IDE Visual Studio 2017](https://www.visualstudio.com/vs/compare/).
-
-## <a name="in-this-section"></a>Dans cette section
-
-|||
-|-|-|
-|[Tests unitaires sur votre code](../test/unit-test-your-code.md)|L'Explorateur de tests facilite l'intégration des tests unitaires dans votre pratique de développement. Vous pouvez utiliser le framework de tests unitaires Microsoft ou un des frameworks tiers et ouverts.|
-|[IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md)|IntelliTest génère automatiquement des tests unitaires et des données de test pour votre code managé.|
-|[Couverture du code](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|La couverture du code détermine la proportion de code de votre projet qui sera réellement testée par les tests codés, tels que les tests unitaires.|
-|[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|Microsoft Fakes vous permet d’isoler le code que vous testez en remplaçant d’autres parties de l’application par des stubs ou des shims.|
-|[Tests unitaires en direct](../test/live-unit-testing.md)|Live Unit Testing exécute automatiquement des tests unitaires en arrière-plan et affiche graphiquement les résultats de test et de couverture du code dans l’éditeur de code Visual Studio.|
-|[Automation de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)|Utilisez des tests codés de l’interface utilisateur pour tester l’interface utilisateur de votre application.|
-|[Lab Management](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md)|Un environnement lab est une collection d'ordinateurs physiques et virtuels que vous pouvez utiliser pour développer et tester des applications.|
 
 ## <a name="related-scenarios"></a>Scénarios connexes
 

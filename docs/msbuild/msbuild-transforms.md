@@ -1,48 +1,45 @@
 ---
 title: Transformations MSBuild | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
-caps.latest.revision: 
+caps.latest.revision: 13
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 670465059f86e7dd5ccbe725bc0d86aed2fc97b1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b02c8b6c16bf0d1ffd75ee52d34d72446a06ed25
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="msbuild-transforms"></a>Transformations MSBuild
 Une transformation est une conversion de type un-à-un d’une liste d’éléments en une autre. En plus de permettre à un projet de convertir des listes d’éléments, une transformation permet à une cible d’identifier un mappage direct entre ses entrées et ses sorties. Cette rubrique explique les transformations et comment [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] les utilise pour générer des projets plus efficacement.  
   
 ## <a name="transform-modifiers"></a>Modificateurs de transformation  
- Les transformations ne sont pas arbitraires, mais elles sont limitées par une syntaxe spéciale dans laquelle tous les modificateurs de transformation doivent être au format %(*ItemMetaDataName*). Toutes les métadonnées d’élément peuvent être utilisées comme modificateurs de transformation, y compris les métadonnées d’élément connues affectées à chaque élément lors de sa création. Pour obtenir la liste complète des métadonnées d’élément connues, consultez [Métadonnées d’élément connues](../msbuild/msbuild-well-known-item-metadata.md).  
+Les transformations ne sont pas arbitraires, mais elles sont limitées par une syntaxe spéciale dans laquelle tous les modificateurs de transformation doivent être au format %(*ItemMetaDataName*). Toutes les métadonnées d’élément peuvent être utilisées comme modificateurs de transformation, y compris les métadonnées d’élément connues affectées à chaque élément lors de sa création. Pour obtenir la liste complète des métadonnées d’élément connues, consultez [Métadonnées d’élément connues](../msbuild/msbuild-well-known-item-metadata.md).  
   
- Dans l’exemple suivant, une liste de fichiers .resx est transformée en liste de fichiers .resources. Le modificateur de transformation %(filename) spécifie que chaque fichier .resources a le même nom de fichier que le fichier .resx correspondant.  
+Dans l’exemple suivant, une liste de fichiers *.resx* est transformée en liste de fichiers *.resources*. Le modificateur de transformation %(filename) spécifie que chaque fichier *.resources* a le même nom de fichier que le fichier *.resx* correspondant.  
   
 ```  
 @(RESXFile->'%(filename).resources')  
-```  
-  
+```
+
+Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form1.resx*, *Form2.resx* et *Form3.resx*, les sorties de la liste transformée sont *Form1.resources*, *Form2.resources* et *Form3.resources*.  
+
 > [!NOTE]
->  Vous pouvez spécifier un séparateur personnalisé pour une liste d’éléments transformée de la même façon que vous spécifiez un séparateur pour une liste d’éléments standard. Par exemple, pour séparer une liste d’éléments transformée avec une virgule (,) au lieu du point-virgule (;) par défaut, utilisez le code XML suivant.  
-  
-```  
-@(RESXFile->'Toolset\%(filename)%(extension)', ',')  
-```  
-  
- Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont `Form1.resx`, `Form2.resx` et `Form3.resx`, les sorties dans la liste transformée sont `Form1.resources`, `Form2.resources` et `Form3.resources`.  
+>  Vous pouvez spécifier un séparateur personnalisé pour une liste d’éléments transformée de la même façon que vous spécifiez un séparateur pour une liste d’éléments standard. Par exemple, pour séparer les éléments d’une liste transformée à l’aide de la virgule (,) au lieu du point-virgule (;) par défaut, utilisez le code XML suivant :  
+> `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
   
 ## <a name="using-multiple-modifiers"></a>Utilisation de plusieurs modificateurs  
  Une expression de transformation peut contenir plusieurs modificateurs, qui peuvent être combinés dans n’importe quel ordre et peuvent être répétés. Dans l’exemple suivant, le nom du répertoire qui contient les fichiers change alors que les fichiers conservent le nom et l’extension de nom de fichier d’origine.  
@@ -51,12 +48,12 @@ Une transformation est une conversion de type un-à-un d’une liste d’éléme
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   
- Par exemple, si les éléments qui sont contenus dans la liste d’éléments `RESXFile` sont `Project1\Form1.resx`, `Project1\Form2.resx` et `Project1\Form3.text`, les sorties dans la liste transformée sont `Toolset\Form1.resx`, `Toolset\Form2.resx` et `Toolset\Form3.text`.  
+ Par exemple, si les éléments contenus dans la liste d’éléments `RESXFile` sont *Project1\Form1.resx*, *Project1\Form2.resx* et *Project1\Form3.text*, les sorties de la liste transformée sont *Toolset\Form1.resx*, *Toolset\Form2.resx* et *Toolset\Form3.text*.  
   
 ## <a name="dependency-analysis"></a>Analyse des dépendances  
  Les transformations garantissent un mappage de type un-à-un entre la liste d’éléments transformée et la liste d’éléments d’origine. Par conséquent, si une cible crée des sorties qui sont des transformations des entrées, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut analyser les horodatages des entrées et des sorties, et décider s’il faut ignorer, générer ou partiellement regénérer une cible.  
   
- Dans la [tâche de copie](../msbuild/copy-task.md) de l’exemple suivant, chaque fichier de la liste d’éléments `BuiltAssemblies` est mappé à un fichier du dossier de destination de la tâche, spécifié en utilisant une transformation dans l’attribut `Outputs`. Si un fichier de la liste d’éléments `BuiltAssemblies` change, la tâche `Copy` est exécutée seulement pour le fichier modifié, et tous les autres fichiers sont ignorés. Pour plus d’informations sur l’analyse des dépendances et sur la façon d’utiliser des transformations, consultez [Guide pratique pour effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md).  
+ Dans la [tâche de copie](../msbuild/copy-task.md) de l’exemple suivant, chaque fichier de la liste d’éléments `BuiltAssemblies` est mappé à un fichier du dossier de destination de la tâche, spécifié en utilisant une transformation dans l’attribut `Outputs`. Si un fichier de la liste d’éléments `BuiltAssemblies` change, la tâche `Copy` s’exécute uniquement pour le fichier modifié. Tous les autres fichiers sont ignorés. Pour plus d’informations sur l’analyse des dépendances et sur la façon d’utiliser des transformations, consultez [Guide pratique pour effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md).  
   
 ```xml  
 <Target Name="CopyOutputs"  
@@ -97,7 +94,7 @@ Une transformation est une conversion de type un-à-un d’une liste d’éléme
 ```  
   
 ### <a name="comments"></a>Commentaires  
- Cet exemple produit la sortie suivante.  
+ Cet exemple génère la sortie suivante :  
   
 ```  
 rootdir: C:\  

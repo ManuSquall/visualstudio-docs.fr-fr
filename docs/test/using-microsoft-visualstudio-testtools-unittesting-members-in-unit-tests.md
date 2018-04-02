@@ -1,20 +1,20 @@
 ---
 title: Utilisation des membres Microsoft.VisualStudio.TestTools.UnitTesting dans les tests unitaires | Microsoft Docs
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7c841210c41e7b2b9870c80cc148006f3e63290d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 1ae1f1bd4deb81b92ffc7a38c82164e5824b4d76
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="using-the-mstest-framework-in-unit-tests"></a>Utilisation du framework MSTest dans les tests unitaires
+# <a name="use-the-mstest-framework-in-unit-tests"></a>Utiliser le framework MSTest dans les tests unitaires
 
 Le framework [MSTest](<xref:Microsoft.VisualStudio.TestTools.UnitTesting>) prend en charge les tests unitaires dans Visual Studio. Utilisez les classes et les membres dans l’espace de noms <xref:Microsoft.VisualStudio.TestTools.UnitTesting> lorsque vous codez des tests unitaires. Vous pouvez également les utiliser lorsque vous affinez un test unitaire qui a été généré à partir du code.
 

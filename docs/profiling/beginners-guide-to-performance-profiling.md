@@ -2,11 +2,11 @@
 title: Profiler les performances de votre application dans Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: 
+caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bacc4e9ebb0b0125b22089ec53a97248e9e1f4e9
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 83268e1c7e4c4672caf17b6852cbf3fd38ea31b1
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Profiler les performances de votre application dans Visual Studio
 Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cette procédure montre comment utiliser l’onglet **Utilisation de l’UC** des outils de diagnostics pour obtenir les données de performances de votre application. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
@@ -40,6 +40,9 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 |  ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) sur l’utilisation des outils de diagnostics qui montre comment analyser l’utilisation de l’UC et l’utilisation de la mémoire. |
 
 Dans cette rubrique, nous allons aborder l’analyse de l’utilisation du processeur dans un flux de travail de débogage normal. Vous pouvez également analyser l’utilisation et l’UC sans débogueur ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez la section [Recueillir des données de profilage sans débogage](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) sur la page [Exécuter des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+
+> [!NOTE]
+> Pour .NET Core et ASP.NET Core, l’outil Utilisation de l’UC ne fournit pas de résultats précis avec les fichiers PBD portables. Utilisez des fichiers PDB complets à la place.
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Étape 1 : Collecter les données de profilage 
   

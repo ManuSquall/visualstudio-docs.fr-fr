@@ -1,7 +1,7 @@
 ---
-title: Installer et configurer des agents de test dans Visual Studio | Microsoft Docs
+title: Installer des agents de test et des contrôleurs de test pour Visual Studio | Microsoft Docs
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - configure test agents, test lab
@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e29676ec67bc3fd22313debe70ba8dbcd7fd76
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4eaba4be128042776382d63d1b0198a48cecef94
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="install-and-configure-test-agents"></a>Installer et configurer des agents de test
+# <a name="install-test-agents-and-test-controllers"></a>Installer des agents de test et des contrôleurs de test
 
 Pour les scénarios de test qui utilisent Visual Studio et Visual Studio Team Services (VSTS) ou Team Foundation Server (TFS), vous n’avez pas besoin d’un contrôleur de test. Les Agents pour Visual Studio gèrent l’orchestration en communiquant avec VSTS ou TFS. Un scénario peut être que vous exécutez des tests en continu de flux de travail de build et de mise en production dans VSTS ou TFS.
 
@@ -32,7 +32,9 @@ Vous pouvez aussi vous demander s’il ne serait pas plus facile [d’utiliser l
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installer le contrôleur de test et les agents de test
 
-Vous pouvez télécharger des agents pour Visual Studio 2017 à partir de [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Recherchez *Agents pour Visual Studio 2017* et sélectionnez *Agent* ou *Contrôleur*. Vous pouvez télécharger des agents pour Visual Studio 2015 et Visual Studio 2013 à partir de la page [Téléchargements plus anciens](https://www.visualstudio.com/vs/older-downloads/).
+Vous pouvez télécharger des agents pour Visual Studio 2017 à partir de [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Faites défiler la page jusqu’en bas, puis recherchez *Agents pour Visual Studio 2017*. Sélectionnez *Agent* ou *Contrôleur*, puis choisissez *Télécharger*. Exécutez l’exécutable téléchargé pour installer l’agent de test ou le contrôleur de test.
+
+Vous pouvez télécharger des agents pour Visual Studio 2015 et Visual Studio 2013 à partir de la page [Téléchargements plus anciens](https://www.visualstudio.com/vs/older-downloads/).
 
 Ces programmes d’installation sont disponibles sous forme de fichiers ISO pour faciliter l’installation sur les machines virtuelles.
 
@@ -59,10 +61,6 @@ Le tableau suivant présente les scénarios pris en charge par les Agents pour V
 | Scénarios pris en charge par les Agents pour Visual Studio 2013 | Alternative dans TFS et VSTS |
 | --- | --- |
 | Flux de travail Générer-Déployer-Tester dans Visual Studio | Les utilisateurs peuvent employer une [définition de build](/vsts/build-release/) (pas une build XAML) pour générer, déployer et tester les scénarios dans TFS. |
-| Test de charge (test des performances) avec des ordinateurs distants locaux | Utilisez le contrôleur de test et les agents des test de la version 2013 Update 5 pour exécuter les tests de charge localement. Pour plus d’informations, consultez [Utilisation d’un contrôleur de test et d’agents de test dans un test de charge](https://msdn.microsoft.com/library/ff400223.aspx). |
+| Test de charge (test des performances) avec des ordinateurs distants locaux | Utilisez le contrôleur de test et les agents des test de la version 2013 Update 5 pour exécuter les tests de charge localement. |
 | Exécution à distance de tests automatisés à partir de Microsoft Test Manager à l’aide d’un environnement lab | Actuellement, il n’existe pas d’alternative à ce scénario. Nous vous recommandons d’utiliser la tâche Exécuter les tests fonctionnels dans les définitions de build et de mise en production (pas dans une build XAML) pour exécuter les tests à distance. |
 | Développeurs exécutant les tests à distance dans Visual Studio | N'est plus pris en charge. |
-
-## <a name="see-also"></a>Voir aussi
-
-* [Configurer des ordinateurs et collecter des informations de diagnostic](https://msdn.microsoft.com/library/dd286743%28v=vs.140%29.aspx)

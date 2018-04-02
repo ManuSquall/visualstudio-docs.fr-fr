@@ -1,12 +1,13 @@
 ---
-title: "Bien démarrer avec Node.js dans Visual Studio | Microsoft Docs"
-ms.custom: 
-ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
+title: Créer une application Node.js et Express - Visual Studio | Microsoft Docs
+description: Dans ce tutoriel, vous créez une application Node.js et Express dans Visual Studio
+ms.custom: ''
+ms.date: 03/13/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: 
+- vs-nodejs
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -16,35 +17,63 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 05e10e6016c4a6791b5bc80ba6a05616c1edb0f6
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
-# <a name="getting-started-with-nodejs-in-visual-studio"></a>Bien démarrer avec Node.js dans Visual Studio
-Dans ce didacticiel pour le développement Node.js avec Visual Studio, vous allez créer une application web Node.js simple, ajouter du code, explorer certaines fonctionnalités de l’IDE et exécuter l’application. Si vous n’avez pas encore installé Visual Studio, installez-le gratuitement [ici](http://www.visualstudio.com).  
+# <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et Express dans Visual Studio
+Dans ce tutoriel de développement Visual Studio en Node.js et Express, vous allez créer une application web Node.js simple, ajouter du code, explorer certaines fonctionnalités de l’IDE, puis exécuter l’application en question. Si vous n’avez pas encore installé Visual Studio, installez-le gratuitement [ici](http://www.visualstudio.com).  
+
+Dans ce tutoriel, vous apprendrez à :
+> [!div class="checklist"]
+> * Créer un projet Node.js
+> * Ajouter du code
+> * Utilisez IntelliSense
+> * Exécuter l'application
+> * Atteindre un point d’arrêt
+
+## <a name="prerequisites"></a>Prérequis
+
+* Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js.
+
+    Si vous n’avez pas encore installé Visual Studio, installez-le gratuitement [ici](http://www.visualstudio.com).
+
+    Si vous devez installer la charge de travail mais que vous avez déjà Visual Studio, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
+
+* Le runtime Node.js doit être installé.
+
+    Si vous ne l’avez pas installé, installez la version LTS à partir du site web [Node.js](https://nodejs.org/en/download/). En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte aucun runtime installé, vous pouvez configurer votre projet pour référencer le runtime installé dans la page de propriétés (après avoir créé un projet, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Propriétés**).
 
 ## <a name="create-a-project"></a>Créer un projet
 Vous allez d’abord créer un projet d’application web Node.js.
 
 1. Ouvrez Visual Studio 2017.  
 
-2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet...**.  
+1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet...**.  
 
-3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application Azure Node.js Express 4 de base**, puis **OK**.   
+1. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, sélectionnez **Application Azure Node.js Express 4 de base**, puis choisissez **OK**.   
 
-     Si vous ne voyez pas le modèle de projet **Application Azure Node.js Express 4 de base**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**. 
+     Si vous ne voyez pas le modèle de projet **Application Azure Node.js Express 4 de base**, vous devez d’abord installer la charge de travail **Développement Node.js**. 
 
-    Visual Studio crée la solution et ouvre votre projet. Le fichier projet **app.js** s’ouvre dans l’éditeur (volet gauche). Si vous souhaitez d’abord vous familiariser avec les projets et solutions Visual Studio, consultez [Démarrage rapide : utiliser Visual Studio pour créer votre première application Node.js](../ide/quickstart-nodejs.md).
+    Visual Studio crée la solution et ouvre votre projet. Le fichier projet *app.js* s’ouvre dans l’éditeur (volet gauche).
 
-4. Si le runtime Node.js n’est pas déjà installé, installez-le à partir du site Web [Node.js](https://nodejs.org/en/download/).
+    - Votre projet mis en gras, avec le nom que vous avez donné dans la boîte de dialogue **Nouveau projet**. Dans le système de fichiers, ce projet est représenté par un fichier *.njsproj* au sein de votre dossier de projet. Vous pouvez définir les propriétés et les variables d’environnement associées au projet en cliquant avec le bouton droit sur le projet et en choisissant **Propriétés**. Vous pouvez effectuer des allers-retours avec d’autres outils de développement, car le fichier projet n’apporte pas de changements personnalisés à la source de projet Node.js.
 
-    En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte aucun runtime installé, vous pouvez configurer votre projet pour faire référence au runtime installé.
+    - Au niveau le plus élevé figure une solution, qui a par défaut le même nom que votre projet. Une solution, représentée par un fichier *.sln* sur le disque, est un conteneur pour un ou plusieurs projets connexes.
+
+    - Le nœud npm montre tous les packages npm installés. Vous pouvez cliquer avec le bouton droit sur le nœud npm pour rechercher et installer des packages npm à l’aide d’une boîte de dialogue.
+
+    - Les fichiers projet tels que *app.js* s’affichent sous le nœud de projet. *app.js* est le fichier de démarrage du projet.
+
+1. Ouvrez le nœud **npm** et vérifiez que tous les packages npm nécessaires sont présents.
+
+    S’il en manque (icône de point d’exclamation), vous pouvez cliquer avec le bouton droit sur le nœud **npm** et choisir **Installer les packages npm manquants**.
 
 ## <a name="add-some-code"></a>Ajouter du code
 
-1. Dans l’Explorateur de solutions (volet droit), ouvrez le dossier de vues, puis ouvrez index.pug.
+1. Dans l’Explorateur de solutions (volet droit), ouvrez le dossier de vues, puis ouvrez *index.pug*.
 
 1. Remplacez le contenu par le balisage suivant.
 
@@ -68,7 +97,7 @@ Vous allez d’abord créer un projet d’application web Node.js.
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
-1. Dans le dossier d’itinéraires, ouvrez index.js.
+1. Dans le dossier d’itinéraires, ouvrez *index.js*.
 
 1. Ajoutez le code suivant avant l’appel à `router.get` :
 
@@ -91,7 +120,11 @@ Vous allez d’abord créer un projet d’application web Node.js.
     });
     ```
 
-1. Après `data`, tapez `: get`. IntelliSense affiche la fonction getData. Sélectionnez `getData`.
+## <a name="use-intellisense"></a>Utilisez IntelliSense
+
+1. Dans *index.js*, accédez à la ligne de code contenant `res.render`.
+
+1. Après la chaîne `data`, tapez `: get`, et IntelliSense vous affichera la fonction `getData`. Sélectionnez `getData`.
 
     ![Utilisez IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
 
@@ -111,7 +144,7 @@ Vous allez d’abord créer un projet d’application web Node.js.
 
 ## <a name="set-a-breakpoint"></a>Définir un point d’arrêt
 
-1. Dans index.js, cliquez dans la marge gauche avant la ligne suivante de code pour définir un point d’arrêt :
+1. Dans *index.js*, cliquez dans la marge gauche avant la ligne de code suivante pour définir un point d’arrêt :
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
@@ -143,14 +176,6 @@ Vous allez d’abord créer un projet d’application web Node.js.
 
     ![Exécution de l’application dans le navigateur](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
-1. Ouvrez la fenêtre interactive Node.js en sélectionnant **Afficher** > **Autres fenêtres** > **Fenêtre interactive Node.js**.
-
-   ![Ouvrir la fenêtre interactive de Node.js](../nodejs/media/tutorial-nodejs-interactive-window.png)  
-
-    La fenêtre interactive prend en charge tout ce que vous pouvez faire dans le code, notamment utiliser des instructions `require()`. Le code dans la capture d’écran suivante définit une variable et affiche l’emplacement de l’interpréteur Node.js.
-
-   ![Fenêtre interactive de Node.js](../nodejs/media/tutorial-nodejs-interactive-window-example.png)  
-
 1. Fermez le navigateur web.  
 
 ## <a name="optional-publish-to-azure-app-service"></a>Publier sur Azure App Service (facultatif)
@@ -171,9 +196,11 @@ Vous allez d’abord créer un projet d’application web Node.js.
 
    ![Application en cours d’exécution dans Azure App Service](../nodejs/media/tutorial-nodejs-running-in-azure.png)  
 
-Félicitations ! Vous avez terminé ce didacticiel.
+Félicitations ! Vous avez terminé ce tutoriel.
 
 ## <a name="next-steps"></a>Étapes suivantes 
 
-- En savoir plus sur les [Outils Node.js pour Visual Studio](https://github.com/Microsoft/nodejstools/wiki)  
-- En savoir plus sur [l’IDE Visual Studio](../ide/visual-studio-ide.md)  
+Dans ce tutoriel, vous avez appris à créer et exécuter une application Node.js à l’aide d’Express. Vous avez également appris à atteindre un point d’arrêt à l’aide du débogueur.
+
+> [!div class="nextstepaction"]
+> [Node.js Tools pour Visual Studio](https://github.com/Microsoft/nodejstools)

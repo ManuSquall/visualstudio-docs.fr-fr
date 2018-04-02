@@ -1,12 +1,12 @@
 ---
-title: "Démarrage rapide : Créer votre première application console dans Visual Studio avec Visual Basic | Microsoft Docs"
-ms.custom: 
+title: 'Démarrage rapide : Créer votre première application console dans Visual Studio avec Visual Basic | Microsoft Docs'
+ms.custom: ''
 ms.date: 12/10/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: a531582b2474305d7c286f936e29a7bc9804d7bf
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Démarrage rapide : Créer votre première application console dans Visual Studio avec Visual Basic
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer une application Visual Basic simple qui s’exécute dans la console.
@@ -81,9 +81,8 @@ Vous allez maintenant ajouter du code pour suspendre l’application et demander
 
    ![Fenêtre de console affichant « Hello World » et « Press any key to continue »](../ide/media/vb-console-hello-world-press-any-key.png)
 
-Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur Visual Basic et l’IDE de Visual Studio. Si vous souhaitez approfondir ce sujet, poursuivez avec un didacticiel que vous trouverez dans la section **Didacticiels** de la table des matières.
+## <a name="next-steps"></a>Étapes suivantes
+Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur Visual Basic et l’IDE de Visual Studio. Pour en apprendre davantage, passez au tutoriel suivant.
 
-## <a name="see-also"></a>Voir aussi
-* [Démarrage rapide : Créer une application Windows Forms « Hello World » en Visual Basic avec Visual Studio](quickstart-visual-basic-winforms.md)
-* [Didacticiel : Bien démarrer avec Visual Basic dans Visual Studio](tutorial-visual-basic-console.md)
-* [IntelliSense pour les fichiers de code Visual Basic](visual-basic-specific-intellisense.md)
+> [!div class="nextstepaction"]
+> [Bien démarrer avec Visual Basic dans Visual Studio](tutorial-visual-basic-console.md)

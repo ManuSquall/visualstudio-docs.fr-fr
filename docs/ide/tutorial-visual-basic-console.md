@@ -1,12 +1,12 @@
 ---
-title: "Bien démarrer avec Visual Basic dans Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Bien démarrer avec Visual Basic dans Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 12/08/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 3df1f9c2f7fc2af97bc5541d313df58da5907cea
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Bien démarrer avec Visual Basic dans Visual Studio
 Dans ce didacticiel pour Visual Basic (VB), vous allez utiliser Visual Studio pour créer et exécuter différentes applications console tout en explorant certaines fonctionnalités de [l’environnement de développement intégré (IDE)](visual-studio-ide.md) de Visual Studio.
@@ -125,9 +125,9 @@ Nous allons créer une application qui vous demande votre nom et l’affiche, ai
 
     ![Fenêtre de console montrant l’application CalculateThis, qui comprend des invites sur les actions à effectuer.](../ide/media/vb-console-calculate-this.png)
 
-Félicitations ! Vous avez terminé ce didacticiel.
+## <a name="next-steps"></a>Étapes suivantes
+Félicitations ! Vous avez terminé ce didacticiel. Pour en savoir plus sur Visual Basic et l’IDE Visual Studio, consultez les pages suivantes.
 
-## <a name="see-also"></a>Voir aussi
 * [Guide Visual Basic](/dotnet/visual-basic/index)
 * [Nouveautés de Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
 * [IntelliSense pour les fichiers de code Visual Basic](visual-basic-specific-intellisense.md)

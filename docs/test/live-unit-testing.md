@@ -1,21 +1,20 @@
 ---
 title: Live Unit Testing dans Visual Studio | Microsoft Docs
 ms.date: 2017-03-07
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.workload: dotnet
-ms.openlocfilehash: 725b9e31e725106dcd9e461a8f5d3749230fd5c9
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7ab19350529e4bd1c7edf914a8a8ca049ace6054
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing avec Visual Studio 2017
 
@@ -103,7 +102,7 @@ Pour activer Live Unit Testing, sélectionnez **Tester** , **Live Unit Testing**
  
 ##  <a name="viewing-coverage-visualization-in-the-editor-as-you-type"></a>Affichage de la visualisation de couverture dans l’éditeur à mesure que vous tapez
 
-Une fois activé, Live Unit Testing met à jour chaque ligne de code dans l’éditeur Visual Studio pour vous indiquer si le code que vous écrivez est couvert par les tests unitaires et si les tests qui le couvrent réussissent.  La figure suivante montre les lignes de code avec des résultats positifs et négatifs aux tests, ainsi que les lignes de code qui ne sont pas couvertes par les tests. Les lignes avec un symbole « ✓ » vert sont couvertes seulement par des tests ayant réussi, les lignes assorties d’un symbole « x » rouge sont couvertes par un ou plusieurs tests ayant échoué et les lignes avec un symbole «  » bleu ne sont couvertes par aucun test.
+Une fois activé, Live Unit Testing met à jour chaque ligne de code dans l’éditeur Visual Studio pour vous indiquer si le code que vous écrivez est couvert par les tests unitaires et si les tests qui le couvrent réussissent.  La figure suivante montre les lignes de code avec des résultats positifs et négatifs aux tests, ainsi que les lignes de code qui ne sont pas couvertes par les tests. Les lignes avec un symbole « ✓ » vert sont couvertes seulement par des tests ayant réussi, les lignes assorties d’un symbole « x » rouge sont couvertes par un ou plusieurs tests ayant échoué, et les lignes avec un symbole « ➖ » bleu ne sont couvertes par aucun test.
 
   ![Image](./media/lut-codewindow.png)
 
@@ -123,7 +122,7 @@ Lorsque vous passez la souris sur un test ayant échoué dans l’infobulle, cel
 
   ![Image](./media/lut-failedmsg.png) 
 
-Lorsque vous accédez au test ayant échoué, Live Unit Testing indique également visuellement dans la signature de la méthode les tests qui ont réussi (signalés par un bécher à moitié plein avec un symbole vert « ✓ »), qui ont échoué (un bécher à moitié plein avec un symbole rouge « 🞩 »), ou ceux qui ne sont pas couverts par Live Unit Testing (bécher à moitié plein avec un symbole bleu «  »). Les méthodes sans test n’affichent aucun un symbole. La figure suivante montre les quatre types de méthodes.
+Quand vous accédez au test ayant échoué, Live Unit Testing indique également visuellement dans la signature de la méthode les tests qui ont réussi (signalés par un bécher à moitié plein avec un symbole vert « ✓ »), qui ont échoué (un bécher à moitié plein avec un symbole rouge « 🞩 »), ou ceux qui ne sont pas couverts par Live Unit Testing (bécher à moitié plein avec un symbole bleu « ➖ »). Les méthodes sans test n’affichent aucun un symbole. La figure suivante montre les quatre types de méthodes.
  
   ![Image](media/lut-testsource.png)
  

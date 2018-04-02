@@ -1,31 +1,36 @@
 ---
-title: "Analyser les données d’utilisation de l’UC (ASP.NET) | Microsoft Docs"
-ms.custom: 
+title: Analyser les données d’utilisation de l’UC (ASP.NET) | Microsoft Docs
+ms.custom: ''
 ms.date: 12/05/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
-caps.latest.revision: "1"
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 2d92c4fcdbc3c4af3269876836602025a4403463
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- aspnet
+ms.openlocfilehash: 16bdbcbc66673f872215a7b3812c4c6f7f1724b3
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Analyser les données d’utilisation de l’UC dans Visual Studio (ASP.NET)
 
 Visual Studio fournit de nombreuses fonctionnalités puissantes qui vous permettent d’analyser les problèmes de performances dans votre application. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base. Ici, nous allons examiner un outil pour identifier les goulots d’étranglement de performances liés à une utilisation élevée de l’UC. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
 
-Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/Profiling-Tools.md) fournissent des types d’informations différents qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau.
+Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/Profiling-Tools.md) fournissent d’autres types d’informations qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau.
+
+> [!NOTE]
+> Pour .NET Core et ASP.NET Core, l’outil Utilisation de l’UC ne fournit pas de résultats précis avec les fichiers PBD portables. Utilisez des fichiers PDB complets à la place.
 
 ## <a name="create-a-project"></a>Créer un projet
 

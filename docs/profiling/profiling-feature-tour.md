@@ -1,27 +1,27 @@
 ---
-title: "Visite guidée des fonctionnalités de profilage | Microsoft Docs"
+title: Visite guidée des fonctionnalités de profilage | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: b4662b1e498303bd7a4e09acd78db43519c142b1
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="profiling-feature-tour"></a>Visite guidée des fonctionnalités de profilage
 
@@ -154,18 +154,21 @@ Si vous avez besoin de fonctionnalités qui ne sont pas présentes dans les outi
 
 Voici un tableau qui recense les différents outils proposés par Visual Studio, ainsi que les différents types de projet avec lesquels vous pouvez les utiliser :
   
-|Outil d’analyse des performances|Bureau Windows|UWP|ASP.NET/ASP.NET Core|  
-|----------------------|---------------------|------------------------------|-------------|  
-|[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui|  
-|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui (non pour .NET Core/ASP.NET Core)|  
-|[Utilisation du GPU](../debugger/gpu-usage.md)|oui|oui|non|  
-|[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|Non|  
-|[Conseils sur les performances](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|  
-|[Explorateur de performances](../profiling/performance-explorer.md)|oui|Non|oui (non pour ASP.NET Core)|  
-|[IntelliTrace](../debugger/intellitrace.md)|.NET et Visual Studio Enterprise uniquement|.NET et Visual Studio Enterprise uniquement|.NET et Visual Studio Enterprise uniquement|
-|[Utilisation du réseau](../profiling/network-usage.md)|Non|oui|Non| 
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Non|oui pour HTML, non pour XAML|Non|  
-|[Mémoire JavaScript](../profiling/javascript-memory.md)|Non|oui pour HTML, non pour XAML|Non|  
+|Outil d’analyse des performances|Bureau Windows|UWP|ASP.NET/ASP.NET Core| 
+|----------------------|---------------------|-------------|-------------|  
+|[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui| 
+|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui (voir la remarque)|oui|oui (voir la remarque)|
+|[Utilisation du GPU](../debugger/gpu-usage.md)|oui|oui|non| 
+|[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|Non|
+|[Conseils sur les performances](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|
+|[Explorateur de performances](../profiling/performance-explorer.md)|oui|Non|oui|
+|[IntelliTrace](../debugger/intellitrace.md)|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|
+|[Utilisation du réseau](../profiling/network-usage.md)|Non|oui|Non|
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Non|oui pour HTML, non pour XAML|Non| 
+|[Mémoire JavaScript](../profiling/javascript-memory.md)|Non|oui pour HTML, non pour XAML|Non|
+
+> [!NOTE]
+> Pour .NET Core et ASP.NET Core, l’outil Utilisation de l’UC ne fournit pas de résultats précis avec les fichiers PBD portables. Utilisez des fichiers PDB complets à la place.
 
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)

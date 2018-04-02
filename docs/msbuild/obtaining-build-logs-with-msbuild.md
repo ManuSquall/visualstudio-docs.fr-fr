@@ -1,27 +1,27 @@
 ---
-title: "Obtention de journaux de génération avec MSBuild | Microsoft Docs"
-ms.custom: 
+title: Obtention de journaux de génération avec MSBuild | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-caps.latest.revision: 
+caps.latest.revision: 27
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a9a2a7989e7b1cd98745d316ff01718653eda48f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ba20e37e9a984512e2d63de882d434b4f034120d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtention de journaux de génération avec MSBuild
 En utilisant des commutateurs avec MSBuild, vous pouvez indiquer le nombre de données de build que vous souhaitez vérifier, et spécifier si vous voulez enregistrer les données de build dans un ou plusieurs fichiers. Vous pouvez également spécifier un enregistreur d’événements personnalisé pour collecter les données de build. Pour plus d’informations sur les commutateurs de ligne de commande MSBuild que cette rubrique ne traite pas, consultez l’article [Command-Line Reference (Informations de référence sur la ligne de commande MSBuild)](../msbuild/msbuild-command-line-reference.md).  
@@ -45,7 +45,7 @@ En utilisant des commutateurs avec MSBuild, vous pouvez indiquer le nombre de do
 ```  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
-  
+
 ## <a name="saving-the-build-log-to-a-file"></a>Enregistrement du journal de la génération dans un fichier  
  Vous pouvez utiliser le commutateur **/fileLogger** (**fl**) pour enregistrer les données de build dans un fichier. Dans l’exemple suivant, les données de build sont enregistrées dans un fichier nommé `msbuild.log`.  
   
@@ -72,7 +72,19 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 ```  
   
  Pour plus d’informations, consultez [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md).  
-  
+
+## <a name="saving-a-binary-log"></a>Enregistrement d’un journal binaire
+
+Vous pouvez enregistrer le journal dans un format binaire compressé à l’aide du commutateur **/binaryLogger** (**bl**). Ce journal inclut une description détaillée du processus de génération et peut être lu par certains outils d’analyse de journaux.
+
+Dans l’exemple suivant, un fichier journal binaire est créé avec le nom `binarylogfilename`.
+
+```  
+/bl:binarylogfilename.binlog
+``` 
+ 
+Pour plus d’informations, consultez [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md).  
+
 ## <a name="using-a-custom-logger"></a>Utilisation d'un journal personnalisé  
  Vous pouvez écrire votre propre enregistreur d’événements en créant un type managé qui implémente l’interface <xref:Microsoft.Build.Framework.ILogger>. Vous pouvez utiliser un enregistreur d’événements personnalisé, par exemple, pour envoyer des erreurs de build par courrier électronique, et les enregistrer dans une base de données ou dans un fichier XML. Pour plus d’informations, consultez l’article [Enregistreurs d’événements de génération](../msbuild/build-loggers.md).  
   

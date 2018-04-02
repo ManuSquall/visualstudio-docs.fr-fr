@@ -1,24 +1,24 @@
 ---
 title: Framework cible et plateforme cible (MSBuild) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
-caps.latest.revision: 
+caps.latest.revision: 10
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e175a534cb35333b1f57c188c62a781f2fd68627
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: d8ee86a969279c3bdb8b09a0a0d2c9160d7691e0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Framework cible et plateforme cible (MSBuild)
 Un projet peut être généré pour s’exécuter sur un *framework cible*, qui est une version particulière du .NET Framework, et sur une *plateforme cible*, qui est une architecture logicielle particulière.  Par exemple, vous pouvez cibler une application pour qu’elle s’exécute sur le .NET Framework 2.0, sur une plateforme 32 bits compatible avec la famille de processeurs 802x86 (« x86 »). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible*.  
@@ -67,14 +67,16 @@ Un projet peut être généré pour s’exécuter sur un *framework cible*, qui 
  Une *plateforme* est une combinaison de matériel et de logiciel qui définit un environnement d’exécution spécifique. Par exemple :  
   
 -   `x86` désigne un système d'exploitation Windows 32 bits qui s'exécute sur un processeur Intel 80x86 ou son équivalent.  
+
+-   `x64` désigne un système d’exploitation Windows 64 bits qui s’exécute sur un processeur Intel x64 ou son équivalent.
   
 -   `Xbox` désigne la plateforme Microsoft Xbox 360.  
   
- Une *plateforme cible* est la plateforme particulière sur laquelle votre projet généré doit s’exécuter. La plateforme cible est spécifiée dans la propriété de build `Platform` d'un fichier projet. Vous pouvez changer la plateforme cible en utilisant les pages de propriétés du projet ou le **Gestionnaire de configurations** dans l’IDE.  
+ Une *plateforme cible* est la plateforme particulière sur laquelle votre projet généré doit s’exécuter. La plateforme cible est spécifiée dans la propriété de build `PlatformTarget` d'un fichier projet. Vous pouvez changer la plateforme cible en utilisant les pages de propriétés du projet ou le **Gestionnaire de configurations** dans l’IDE.  
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
 </PropertyGroup>  
   
 ```  
@@ -83,7 +85,7 @@ Un projet peut être généré pour s’exécuter sur un *framework cible*, qui 
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
    <Configuration>Debug</Configuration>  
 <PropertyGroup>  
   

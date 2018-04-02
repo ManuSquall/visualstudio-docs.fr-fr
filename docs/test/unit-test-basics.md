@@ -1,11 +1,7 @@
 ---
-title: Notions de base des tests unitaires | Documents Microsoft
-ms.custom: 
+title: Concepts de base des tests unitaires dans Visual Studio | Microsoft Docs
 ms.date: 2016-01-07
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -14,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac60dbd14b16491f9de841f168cd5bf725c340d
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 939cbaa6cd99cbcc5f011a873f46c4e873c22543
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -30,13 +26,13 @@ Vous pouvez générer rapidement des projets de test et méthodes de test à par
 
 L’explorateur de tests peut également exécuter des infrastructures de tests unitaires tierces et open source ayant implémenté les interfaces des composants additionnels de l’explorateur de tests. Vous pouvez ajouter la plupart de ces frameworks dans le gestionnaire d’extensions de Visual Studio et la galerie Visual Studio. Consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).
 
-## <a name="quick-starts"></a>Démarrages rapides
+## <a name="getting-started"></a>Bien démarrer
 
 Pour obtenir une introduction aux tests unitaires qui vous conduit directement dans le code, consultez l’une des rubriques suivantes :
 
 - [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Écrire des tests unitaires pour C/C++ dans Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -113,7 +109,7 @@ Il est souvent plus rapide de générer le projet de test unitaire et les stubs 
 3.  Pour utiliser l’une des infrastructures de tests unitaires Microsoft, choisissez **Projet de test unitaire** dans la liste des modèles de projet. Sinon, choisissez le modèle de projet de l’infrastructure de tests unitaires que vous souhaitez utiliser. Pour tester le projet `Accounts` de notre exemple, vous devez le nommer `AccountsTests`.
 
     > [!WARNING]
-    >  Certaines infrastructures de tests unitaires tierces et open source ne fournissent pas de modèle de projet Visual Studio. Pour plus d’informations sur la création d’un projet, consultez la documentation relative à l’infrastructure.
+    > Certaines infrastructures de tests unitaires tierces et open source ne fournissent pas de modèle de projet Visual Studio. Pour plus d’informations sur la création d’un projet, consultez la documentation relative à l’infrastructure.
 
 4.  Dans votre projet de test unitaire, ajoutez une référence au projet de code testé : le projet Accounts (Comptes) dans notre exemple.
 

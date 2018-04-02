@@ -1,9 +1,7 @@
 ---
-title: "FAQ sur Live Unit Testing | Microsoft Docs"
+title: FAQ sur Live Unit Testing | Microsoft Docs
 ms.date: 2017-10-03
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,11 +10,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2437a138e9e83d3b723971b53dac413ad0ea4151
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: c9a4628d6c2b0d842d57711f1204fbe15f88fac9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Questions fréquentes concernant Live Unit Testing
 
@@ -25,7 +23,6 @@ ms.lasthandoff: 02/21/2018
 **Réponse :**
 
 Pour en savoir plus sur les nouvelles fonctionnalités et les améliorations qui ont été apportées à Live Unit Testing à compter de Visual Studio 2017 version 15.3, consultez [Nouveautés de Live Unit Testing](live-unit-testing-whats-new.md).
-
 
 ## <a name="what-test-frameworks-does-live-unit-testing-support-and-what-are-the-minimum-supported-versions"></a>Quels sont les frameworks de tests pris en charge par Live Unit Testing et quelles sont les versions minimales prises en charge ?
 
@@ -58,14 +55,13 @@ Live Unit Testing fonctionne avec les trois frameworks de tests unitaires popula
 
 Si vous avez des projets de test basés sur MSTest plus anciens qui référencent `Microsoft.VisualStudio.QualityTools.UnitTestFramework` et que vous ne souhaitez pas passer aux packages NuGet de MSTest plus récents, faites une mise à niveau vers Visual Studio 2017 version 15.4.
 
-Dans certains cas, vous devez peut-être restaurer explicitement les packages NuGet référencés par les projets dans la solution pour que Live Unit Testing fonctionne. Pour ce faire, générez une version explicite de la solution (sélectionnez **Générer**, **Régénérer la solution** à partir du menu de Visual Studio de niveau supérieur) ou restaurez les packages dans la solution (cliquez avec le bouton droit sur la solution et sélectionnez **Restaurer des packages NuGet**) avant d’activer Live Unit Testing.
-
+Dans certains cas, vous devez peut-être restaurer explicitement les packages NuGet référencés par les projets dans la solution pour que Live Unit Testing fonctionne. Vous pouvez restaurer les packages en exécutant une build explicite de la solution (sélectionnez **Générer**, **Regénérer la solution** à partir du menu Visual Studio de niveau supérieur) ou en cliquant avec le bouton droit sur la solution, puis en sélectionnant **Restaurer des packages NuGet** avant d’activer Live Unit Testing.
 
 ## <a name="does-live-unit-testing-work-with-net-core"></a>Live Unit Testing fonctionne-il avec .NET Core ?
 
 **Réponse :**
 
-Oui. Live Unit Testing fonctionne avec.NET Core et .NET Framework. La prise en charge de .NET Core a été ajoutée récemment dans la version 15.3 de Visual Studio 2017. Effectuez une mise à niveau vers cette version de Visual Studio si vous souhaitez la prise en charge de .NET Core par Live Unit Testing.
+Oui. Live Unit Testing fonctionne avec.NET Core et .NET Framework. La prise en charge de .NET Core a été ajoutée récemment dans la version 15.3 de Visual Studio 2017. Effectuez une mise à niveau vers cette version de Visual Studio si vous souhaitez que .NET Core prenne en charge Live Unit Testing.
 
 ## <a name="why-doesnt-live-unit-testing-work-when-i-turn-it-on"></a>Pourquoi Live Unit Testing ne fonctionne-t-il pas quand je l’active ?
 
@@ -73,11 +69,11 @@ Oui. Live Unit Testing fonctionne avec.NET Core et .NET Framework. La prise en c
 
 La **Fenêtre Sortie** (lorsque vous sélectionnez la liste déroulante Live Unit Testing) doit indiquer les raisons de ce dysfonctionnement. Live Unit Testing Test peut ne pas fonctionner pour les raisons suivantes :
 
-- Si les packages NuGet référencés par les projets de la solution n’ont pas été restaurés, Live Unit Testing ne peut pas fonctionner. Pour résoudre ce problème, vous pouvez effectuer une génération explicite de la solution ou restaurer les packages NuGet dans la solution avant d’activer Live Unit Testing.
+- Si les packages NuGet référencés par les projets de la solution n’ont pas été restaurés, Live Unit Testing ne peut pas fonctionner. Pour résoudre ce problème, effectuez une build explicite de la solution ou restaurez les packages NuGet de la solution avant d’activer Live Unit Testing.
 
-- Si vous utilisez des tests basés sur MSTest dans vos projets, veillez à supprimer la référence à `Microsoft.VisualStudio.QualityTools.UnitTestFramework` et à ajouter des références aux derniers packages NuGet MSTest, `MSTest.TestAdapter` (version 1.1.11 au minimum requise) et `MSTest.TestFramework` (version 1.1.11 au minimum requise). Pour plus d’informations, reportez-vous à la section « Frameworks de test pris en charge » dans la rubrique [Utilisation de Live Unit Testing dans Visual Studio 2017 Enterprise Edition](live-unit-testing.md#supported-test-frameworks).
+- Si vous utilisez des tests basés sur MSTest dans vos projets, veillez à supprimer la référence à `Microsoft.VisualStudio.QualityTools.UnitTestFramework` et à ajouter des références aux derniers packages NuGet MSTest, `MSTest.TestAdapter` (version 1.1.11 au minimum requise) et `MSTest.TestFramework` (version 1.1.11 au minimum requise). Pour plus d’informations, consultez la section « Frameworks de tests pris en charge » de l’article [Utiliser Live Unit Testing dans Visual Studio 2017 Enterprise Edition](live-unit-testing.md#supported-test-frameworks).
 
-- Au moins un projet de votre solution doit contenir une référence NuGet ou une référence directe au framework de test xUnit, NUnit ou MSTest. Ce projet doit également faire référence au package NuGet des adaptateurs de test Visual Studio correspondants. L’adaptateur de test Visual Studio peut également être référencé via un fichier `.runsettings`. Le fichier `.runsettings` doit comporter une entrée similaire à celle-ci :
+- Au moins un projet de votre solution doit contenir une référence NuGet ou une référence directe au framework de tests xUnit, NUnit ou MSTest. Ce projet doit également faire référence au package NuGet des adaptateurs de test Visual Studio correspondants. L’adaptateur de test Visual Studio peut également être référencé via un fichier `.runsettings`. Le fichier `.runsettings` doit avoir une entrée semblable à ce qui est contenu dans l’exemple suivant :
 
    ```xml
     <RunSettings>
@@ -85,7 +81,7 @@ La **Fenêtre Sortie** (lorsque vous sélectionnez la liste déroulante Live Uni
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
        </RunConfiguration>
     </RunSettings>
-   ``` 
+   ```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>Pourquoi est-ce que Live Unit Testing indique une couverture incorrecte après la mise à niveau de l’adaptateur de test référencé dans vos projets Visual Studio vers la version prise en charge ?
 
@@ -174,7 +170,7 @@ Il existe plusieurs différences :
 
 **Réponse :**
 
-Consultez la section « Including and excluding test projects and test methods » (Inclusion et exclusion de projets de test et de méthodes de test) de la rubrique [Use Live Unit Testing in Visual Studio 2017 Enterprise Edition](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods) (Utilisation de Live Unit Testing dans Visual Studio 2017 Édition Entreprise) pour connaître les paramètres spécifiques à l’utilisateur. Cela est particulièrement utile lorsque vous souhaitez exécuter un ensemble spécifique de tests pour une session de modification particulière ou pour conserver vos préférences personnelles.
+Consultez la section « Inclusion et exclusion de projets de test et méthodes de test » de l’article [Utiliser Live Unit Testing dans Visual Studio 2017 Enterprise Edition](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods) pour connaître les paramètres spécifiques à l’utilisateur. Cela s’avère utile quand vous souhaitez exécuter un ensemble spécifique de tests pour une session de modification particulière ou pour conserver vos préférences personnelles.
  
 Pour les paramètres spécifiques à la solution, vous pouvez, à l’aide d’un programme, appliquer l’attribut <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> pour empêcher que des méthodes, des propriétés, des classes ou des structures soient instrumentées par Live Unit Testing. En outre, vous pouvez également définir la propriété `<ExcludeFromCodeCoverage>` sur `true` dans votre fichier projet pour exclure de l’instrumentation l’ensemble du projet. Live Unit Testing continue d’exécuter les tests qui n’ont pas été instrumentés, mais leur couverture n’est pas affichée.
 
@@ -227,7 +223,7 @@ Live Unit Testing démarre une build chaque fois qu’il détecte une modificati
 
 **Réponse :**
 
-Actuellement, Live Unit Testing ne fonctionne pas correctement avec la fonctionnalité de chargement de solution allégé. Son fonctionnement n’est normal qu’après le chargement d’au moins un des projets de test. Il ne peut pas en être autrement, car Live Unit Testing dépend au moins d’un des projets de test faisant référence à un adaptateur de test (MSTest, xUnit ou NUnit) en cours de chargement.
+Actuellement, Live Unit Testing ne fonctionne pas correctement avec la fonctionnalité de chargement de solution allégé. Son fonctionnement n’est normal qu’après le chargement d’au moins un des projets de test. Il ne peut pas en être autrement, car Live Unit Testing dépend au moins d’un des projets de test référençant un adaptateur de test (MSTest, xUnit ou NUnit) en cours de chargement.
 
 > [!NOTE]
 > Le chargement de solution allégé n’est plus disponible dans la version 15.5 et les versions ultérieures de Visual Studio 2017, dans lesquelles les solutions volumineuses qui contiennent du code managé se chargent beaucoup plus vite qu’avant, même sans utiliser le chargement de solution allégé.

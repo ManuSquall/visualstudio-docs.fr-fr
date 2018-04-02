@@ -1,11 +1,11 @@
 ---
-title: "Utiliser Visual Studio pour créer une application web ASP.NET Core dans C# | Microsoft Docs"
-ms.custom: 
+title: Utiliser Visual Studio pour créer une application web ASP.NET Core dans C# | Microsoft Docs
+ms.custom: ''
 ms.date: 10/10/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ba3c6655401501edf1f71e04f2aa249a6a001dda
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 654dd237dab7f0f320c399e3da1b4f1d24537750
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application web ASP.NET Core
 
@@ -86,7 +86,8 @@ Vous allez d’abord créer un projet d’application web ASP.NET Core. Le type 
 
 Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur l’IDE de Visual Studio. Si vous souhaitez en savoir plus sur ses fonctionnalités, poursuivez avec un didacticiel de la section **Didacticiels** dans la table des matières.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="next-steps"></a>Étapes suivantes
+Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur C#, ASP.NET Core et l’IDE Visual Studio. Pour en apprendre davantage, passez au tutoriel suivant.
 
-* [Bien démarrer avec C# et ASP.NET dans Visual Studio](tutorial-csharp-aspnet-core.md)
-* [Bien démarrer avec des pages Razor dans ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+> [!div class="nextstepaction"]
+> [Bien démarrer avec C# et ASP.NET dans Visual Studio](tutorial-csharp-aspnet-core.md)

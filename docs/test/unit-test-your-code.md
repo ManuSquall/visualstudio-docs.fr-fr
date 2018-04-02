@@ -1,11 +1,7 @@
 ---
-title: Tests unitaires sur votre code | Microsoft Docs
-ms.custom: 
+title: Tests unitaires dans Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio, unit tests
@@ -16,66 +12,51 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bafabb6755a5d3c8cf8f2b60b67a9dc0d7af9792
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: bb9ec1751c6c2c365528b678f7d209bb730495bb
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="unit-test-your-code"></a>Tests unitaires sur votre code
-Les tests unitaires offrent aux développeurs et aux testeurs une méthode rapide pour rechercher des erreurs de logique dans les méthodes des classes des projets [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] et [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)].  
-  
- Les outils de test unitaire incluent :  
-  
-1.  **Explorateur de tests.** L'Explorateur de tests vous permet d'exécuter des tests unitaires et d'afficher leurs résultats. L'Explorateur de tests peut utiliser tout framework de tests unitaires, notamment un framework tiers, qui a un adaptateur pour l'Explorateur de solutions.  
-  
-2.  **Framework de tests unitaires Microsoft pour le code managé.** Le framework de tests unitaires Microsoft pour le code managé est installée avec Visual Studio et fournit un framework pour tester le code .NET.  
-  
-3.  **Frameworks de tests unitaires Microsoft pour C++.** Le framework de tests unitaires Microsoft pour C++ est installée avec Visual Studio et fournit un framework pour tester le code natif.  Les frameworks Google Test, Boost.Test et CTest sont également fournis dans Visual Studio, et des adaptateurs tiers sont disponibles pour des frameworks de test supplémentaires. Pour plus d’informations, consultez [Écriture de tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md). 
-  
-4.  **Outils de couverture du code.** Vous pouvez déterminer la quantité de code du produit que vos tests unitaires passent en revue en utilisant une seule commande dans l'Explorateur de tests.  
-  
-5.  **Framework d’isolement Microsoft Fakes.** Le framework d'isolement Microsoft Fakes peut créer des classes et des méthodes de remplacement pour le code de production et le code du système qui créent des dépendances du code testé. En implémentant les délégués substituts d'une fonction, vous contrôlez le comportement et la sortie de l'objet de dépendance.  
-  
- Vous pouvez également utiliser [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) pour explorer votre code .NET et générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Une analyse de cas est effectuée pour chaque branche conditionnelle dans le code.  
-  
-## <a name="key-tasks"></a>Tâches clés  
- Utilisez les rubriques suivantes pour mieux comprendre et créer les tests unitaires :  
-  
-|Tâches|Rubriques associées|  
-|-----------|-----------------------|  
-|**Démarrages rapides et procédures pas-à-pas :** consultez les rubriques suivantes pour apprendre à effectuer des tests unitaires dans Visual Studio avec des exemples de code.|-   [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Ajout de tests unitaires à des applications C++ existantes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|  
-|**Tests unitaires avec l’Explorateur de tests :** découvrez comment l’Explorateur de tests vous permet de créer des tests unitaires plus productifs et plus efficaces.|-   [Concepts de base des tests unitaires](../test/unit-test-basics.md)<br />-   [Créer un projet de test unitaire](../test/create-a-unit-test-project.md)<br />-   [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)<br />-   [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)<br />-   [Mise à niveau de tests codés de l’interface utilisateur à partir de Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)|  
-|**Effectuer des tests unitaires sur du code managé :**|-   [Écriture de tests unitaires pour le .NET Framework à l’aide du framework de tests unitaires Microsoft pour le code managé](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)|  
-|**Effectuer des tests unitaires sur du code C++**|-   [Écriture de tests unitaires pour C/C++ à l’aide du framework de tests unitaires Microsoft pour C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|  
-|**Isolation des tests unitaires**|-   [Isolation du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|  
-|**Utiliser la couverture du code pour identifier la proportion du code de votre projet qui est testée à l’aide de tests unitaires :** découvrez la fonctionnalité de couverture du code des outils de test [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)].|-   [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|  
-|**Effectuer une analyse de contraintes et de performances à l’aide de tests de charge pour vos tests unitaires :** vous pouvez créer un test de charge et lui ajouter vos tests unitaires pour isoler les problèmes de contraintes et de performances de votre application.|-   [Tests de charge (VSTS et TFS)](/vsts/load-test/)|  
-|**Définir et appliquer des niveaux de qualité :** vous pouvez créer des niveaux de qualité pour que les tests soient exécutés avant que le code ne soit archivé pour vérifier la qualité du code.|-   [Définir et appliquer des niveaux de qualité](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
-|**Étendre le type de test unitaire :** vous pouvez ajouter des fonctionnalités à vos tests qui peuvent ne pas être dans le framework de tests unitaires. Par exemple, vous pouvez ajouter une propriété de test qui spécifie si un test doit s'exécuter comme utilisateur normal ou pas. Vous pouvez également étendre le framework pour ajouter des attributs de ligne à une méthode et utiliser les données de cette ligne dans le test.|Pour obtenir un exemple de code permettant d’étendre le framework de tests unitaires, consultez le [site web Microsoft](http://go.microsoft.com/fwlink/?LinkId=185591) suivant.|  
-|**Définir les options de test :** par exemple, vous pouvez spécifier l’emplacement de stockage des résultats des tests.|[Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
-  
-## <a name="reference"></a>Référence  
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
- Décrit l’espace de noms UnitTesting qui fournit des attributs, des exceptions, des assertions et d’autres classes qui prennent en charge le test unitaire.  
-  
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web>  
- Décrit l'espace de noms UnitTesting.Web qui étend l'espace de noms UnitTesting en fournissant la prise en charge pour les tests unitaires [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] et de service Web.  
-  
-## <a name="external-resources"></a>Ressources externes  
-  
-### <a name="videos"></a>Vidéos  
- [Channel 9 : Unit testing your UWP apps built using XAML](http://go.microsoft.com/fwlink/?LinkId=226285)  
-  
-### <a name="forums"></a>Forums  
- [Tests unitaires Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  
-  
-### <a name="guidance"></a>Conseils  
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)  
-  
-### <a name="reference"></a>Référence  
- [Index de contenu des tests unitaires](http://go.microsoft.com/fwlink/?LinkID=254719)  
-  
+# <a name="unit-test-your-code"></a>Tests unitaires de votre code
+
+Les tests unitaires offrent aux développeurs et aux testeurs un moyen rapide de rechercher des erreurs de logique dans les méthodes des classes des projets C#, Visual Basic et C++.
+
+Les outils de test unitaire incluent :
+
+* **Explorateur de tests**&mdash; vous pouvez exécuter des tests unitaires et voir leurs résultats dans **l’Explorateur de tests**. Vous pouvez utiliser n’importe quel framework de tests unitaires, y compris un framework tiers, qui a un adaptateur pour **l’Explorateur de tests**.
+
+* **Framework de tests unitaires Microsoft pour le code managé**&mdash; le framework de tests unitaires Microsoft pour le code managé est installé avec Visual Studio et fournit un framework pour tester le code .NET.
+
+* **Infrastructure de tests unitaires Microsoft pour C++**&mdash; le framework de tests unitaires Microsoft pour C++ est installé dans le cadre de la charge de travail **Développement Desktop en C++**. Il fournit un framework pour tester du code natif. Les frameworks Google Test, Boost.Test et CTest sont également inclus, et des adaptateurs tiers sont disponibles pour d’autres frameworks de test. Pour plus d’informations, consultez [Écriture de tests unitaires pour C/C++](../test/writing-unit-tests-for-c-cpp.md).
+
+* **Outils de couverture du code**&mdash; vous pouvez déterminer la quantité de code du produit que vos tests unitaires passent en revue en utilisant une seule commande dans l’Explorateur de tests.
+
+* **Framework d’isolement Microsoft Fakes**&mdash; le framework d’isolement Microsoft Fakes peut créer des classes et des méthodes de remplacement pour le code de production et le code système qui créent des dépendances dans le code testé. En implémentant les délégués substituts d'une fonction, vous contrôlez le comportement et la sortie de l'objet de dépendance.
+
+Vous pouvez également utiliser [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) pour explorer votre code .NET et générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Une analyse de cas est effectuée pour chaque branche conditionnelle dans le code.
+
+## <a name="key-tasks"></a>Tâches clés
+
+Utilisez les rubriques suivantes pour mieux comprendre et créer les tests unitaires :
+
+|Tâches|Rubriques associées|
+|-----------|-----------------------|
+|**Démarrages rapides et procédures pas-à-pas :** consultez les rubriques suivantes pour apprendre à effectuer des tests unitaires dans Visual Studio avec des exemples de code.|-   [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Ajout de tests unitaires à des applications C++ existantes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
+|**Tests unitaires avec l’Explorateur de tests :** découvrez comment l’Explorateur de tests vous permet de créer des tests unitaires plus productifs et plus efficaces.|-   [Concepts de base des tests unitaires](../test/unit-test-basics.md)<br />-   [Créer un projet de test unitaire](../test/create-a-unit-test-project.md)<br />-   [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)<br />-   [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)|
+|**Effectuer des tests unitaires sur du code managé :**|-   [Écriture de tests unitaires pour le .NET Framework à l’aide du framework de tests unitaires Microsoft pour le code managé](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)|
+|**Effectuer des tests unitaires sur du code C++**|-   [Écriture de tests unitaires pour C/C++ à l’aide du framework de tests unitaires Microsoft pour C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
+|**Isolation des tests unitaires**|-   [Isolation du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**Utiliser la couverture du code pour identifier la proportion du code de votre projet qui est testée :** découvrez plus d’informations sur la fonctionnalité de couverture du code des outils de test de Visual Studio.|-   [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Effectuer une analyse des contraintes et des performances avec des tests de charge :** vous pouvez créer un test de charge et lui ajouter vos tests unitaires pour isoler les problèmes de contraintes et de performances de votre application.|-   [Tests de charge (VSTS et TFS)](/vsts/load-test/)|
+|**Définir des niveaux de qualité :** vous pouvez créer des niveaux de qualité pour que les tests soient exécutés avant que le code ne soit archivé, de façon à garantir la qualité du code.|-   [Stratégies d’archivage (VSTS)](/vsts/tfvc/add-check-policies)|
+|**Définir les options de test :** par exemple, vous pouvez spécifier l’emplacement de stockage des résultats des tests.|[Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
+
+## <a name="api-reference-documentation"></a>Documentation de référence des API
+
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> décrit l’espace de noms UnitTesting, qui fournit des attributs, des exceptions, des assertions et d’autres classes qui prennent en charge les tests unitaires.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> décrit l’espace de noms UnitTesting.Web, qui étend l’espace de noms UnitTesting en fournissant la prise en charge des tests unitaires pour ASP.NET et les services web.
+
 ## <a name="see-also"></a>Voir aussi
 
-[Améliorer la qualité du code](/visualstudio/test/improve-code-quality)
+- [Améliorer la qualité du code](/visualstudio/test/improve-code-quality)

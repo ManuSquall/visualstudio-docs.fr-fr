@@ -1,13 +1,13 @@
 ---
-title: "Démarrage rapide : utiliser Visual Studio pour créer votre première application web Python | Microsoft Docs"
-description: "Une brève introduction à l’utilisation de Python dans Visual Studio, qui génère une application web simple à l’aide de l’infrastructure Falcon."
-ms.custom: 
-ms.date: 01/08/2018
-ms.reviewer: 
-ms.suite: 
+title: 'Démarrage rapide : utiliser Visual Studio pour créer votre première application web Python | Microsoft Docs'
+description: Une brève introduction à l’utilisation de Python dans Visual Studio, qui génère une application web simple à l’aide de l’infrastructure Falcon.
+ms.custom: ''
+ms.date: 03/14/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 2b1880d95fcb4aae04d98171c8ee7df7373aaceb
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application web Python
 
-Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer une application web Python simple. Si vous n’avez pas encore installé Visual Studio, installez-le gratuitement [ici](http://www.visualstudio.com).
+Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer une application web Python simple. Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) pour l’installer gratuitement. Dans le programme d’installation, veillez à sélectionner la charge de travail **Développement Python**.
 
 ## <a name="create-the-project"></a>Créer le projet
 

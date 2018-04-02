@@ -1,11 +1,11 @@
 ---
 title: Utilisation de Visual Studio Tools pour Unity | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 author: conceptdev
@@ -13,11 +13,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e99f3e626487381639d0c76f94ceb6eac99084af
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2e223132196d40c0418eb7869b36d20a3d15a235
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Utilisation de Visual Studio Tools pour Unity
 Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’intégration et de productivité de Visual Studio Tools pour Unity, ainsi qu’à utiliser le débogueur Visual Studio pour le développement Unity.
@@ -134,6 +134,12 @@ Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’in
 
 > [!IMPORTANT]
 >  Étant donné que Visual Studio Tools pour Unity et l'instance Unity communiquent via un socket réseau UDP, votre pare-feu peut l'interroger. Dans ce cas, vous devez autoriser la connexion de telle sorte que VSTU et Unity puissent communiquer.
+
+### <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>Résolution des problèmes de connexion entre Unity et Visual Studio
+
+#### <a name="confirm-editor-attaching-is-enabled"></a>Vérifier que l’attachement de l’éditeur est activé
+
+Dans le menu Unity, sélectionnez **Edit (Edition) > Preferences (Préférences)**, puis sélectionnez l’onglet **External Tools (Outils externes)**. Vérifiez que la case **Editor Attaching (Attachement de l’éditeur)** est cochée. Pour plus d’informations, consultez la [documentation sur les préférences d’Unity](https://docs.unity3d.com/Manual/Preferences.html).
 
 ###  <a name="debugging-your-project-in-a-unity-player"></a> Débogage de votre projet dans un lecteur Unity
  Vous pouvez connecter directement Visual Studio Tools pour Unity  à votre application Unity s'exécutant dans un lecteur autonome lorsque vous n'exécutez pas l'éditeur Unity ou pour déboguer des problèmes spécifiques à la plateforme.

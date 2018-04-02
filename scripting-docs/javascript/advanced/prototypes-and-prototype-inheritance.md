@@ -1,12 +1,13 @@
 ---
-title: "Prototypes et héritage de prototype | Microsoft Docs"
-ms.custom: 
+title: Prototypes et héritage de prototype | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - prototype [JavaScript]
 - prototype inheritance [JavaScript]
 ms.assetid: 1e1d0631-2a9f-4011-b9fe-fa338e1ef34c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ade60bcbbfad166bae18b650daa6906f9983d4cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 200ca757e72b2eec8f09fd48a841cc8eb816c85d
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>Prototypes et héritage de prototype
 En JavaScript, `prototype` est une propriété des fonctions, ainsi que des objets créés par les fonctions constructeurs. Le prototype d'une fonction est un objet. Il est principalement employé lorsqu'une fonction est utilisée en tant que constructeur.  
@@ -80,9 +81,12 @@ var bicycle = Object.create(Object.getPrototypeOf(Vehicle), {
  L'objet `bicycle` contient les propriétés `wheels`, `engine`, `color` et `pedals`, et son prototype est `Vehicle.prototype`. Le moteur JavaScript recherche la propriété `pedals` sur `bicycle`, puis effectue une recherche sur la chaîne de prototype pour trouver les propriétés `wheels`, `engine` et `color` de `Vehicle`.  
   
 ### <a name="changing-an-objects-prototype"></a>Modification du prototype d'un objet  
- Dans Internet Explorer 11, vous pouvez remplacer le prototype interne d’un objet ou d’une fonction par un nouveau prototype en utilisant la propriété [__proto\_\_](../../javascript/reference/proto-property-object-javascript.md). Lorsque vous utilisez cette propriété, vous héritez les propriétés et les méthodes du nouveau prototype, ainsi que les autres propriétés et méthodes de sa chaîne prototype.  
+Dans Internet Explorer 11, vous pouvez remplacer le prototype interne d’un objet ou d’une fonction par un nouveau prototype en utilisant la propriété [__proto__](../../javascript/reference/proto-property-object-javascript.md). Lorsque vous utilisez cette propriété, vous héritez les propriétés et les méthodes du nouveau prototype, ainsi que les autres propriétés et méthodes de sa chaîne prototype.  
+
+> [!WARNING]
+> La propriété `__proto__` est une fonctionnalité héritée. Utilisez la fonctionnalité [Object.getPrototypeOf](../reference/object-getprototypeof-function-javascript.md) à la place.
   
- L'exemple suivant montre comment modifier le prototype d'un objet. Cet exemple indique comment les propriétés héritées de l'objet changent lorsque vous modifiez son prototype.  
+L'exemple suivant montre comment modifier le prototype d'un objet. Cet exemple indique comment les propriétés héritées de l'objet changent lorsque vous modifiez son prototype.  
   
 ```JavaScript  
 function Friend() {  
