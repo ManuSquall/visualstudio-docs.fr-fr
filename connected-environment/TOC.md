@@ -30,6 +30,7 @@
 
 # Procédure
 ##[Partager un environnement de développement](how-to/share-dev-environment.md)
+##[Utiliser un flux NuGet personnalisé](how-to/use-a-custom-nuget-feed.md)
 ##[Utiliser kubectl avec l’environnement connecté Visual Studio](how-to/use-kubectl-with-vsce.md)
 
 # [Résoudre les problèmes](troubleshooting.md)
