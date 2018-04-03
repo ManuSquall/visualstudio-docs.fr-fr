@@ -1,7 +1,8 @@
 # [Documentation sur le déploiement](index.md)
 # Vue d'ensemble
-## [Vue d’ensemble du déploiement](deploying-applications-services-and-components.md)
-# Démarrages rapides
+## [Vue d’ensemble du déploiement](deploying-applications-services-and-components-resources.md)
+# Guides de démarrage rapide
+## [Présentation du déploiement](deploying-applications-services-and-components.md)
 ## [Déployer sur un dossier local](quickstart-deploy-to-local-folder.md)
 ## [Déployer sur un site web](quickstart-deploy-to-a-web-site.md)
 ## [Déployer sur Azure](quickstart-deploy-to-azure.md)
@@ -131,6 +132,4 @@
 #### [<Signature>, élément (Déploiement ClickOnce)](signature-element-clickonce-deployment.md)
 #### [<customErrorReporting>, élément (Déploiement ClickOnce)](customerrorreporting-element-clickonce-deployment.md)
 ### [Informations de référence sur les API non managées ClickOnce](clickonce-unmanaged-api-reference.md)
-# Ressources
-## [Déploiement d’applications, de services et de composants](deploying-applications-services-and-components-resources.md)
 

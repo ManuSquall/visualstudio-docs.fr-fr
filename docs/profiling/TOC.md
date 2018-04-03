@@ -1,8 +1,8 @@
 
 # [Documentation sur le profilage](index.md)
 # Vue d'ensemble
-## [Visite guidée des fonctionnalités de profilage](profiling-feature-tour.md)
-# Démarrages rapides
+# Guides de démarrage rapide
+## [Présentation du profilage](profiling-feature-tour.md)
 ## [Analyser l’utilisation de l’UC (managée)](quickstart-cpu-usage-managed.md)
 ## [Analyser l’utilisation de l’UC (native)](quickstart-cpu-usage-native.md)
 ## [Analyser l’utilisation de l’UC (ASP.NET)](quickstart-cpu-usage-aspnet.md)

@@ -1,7 +1,7 @@
 # [Documentation sur le débogueur](index.md)
-# Vue d'ensemble
-## [Visite guidée des fonctionnalités du débogueur](debugger-feature-tour.md)
-# Démarrages rapides
+# [Vue d’ensemble](debugger-overview.md)
+# Guides de démarrage rapide
+## [Présentation du débogueur](debugger-feature-tour.md)
 ## [Déboguer une application managée](quickstart-debug-with-managed.md)
 ## [Déboguer une application native](quickstart-debug-with-cplusplus.md)
 ## [Déboguer une application ASP.NET](quickstart-debug-aspnet.md)
@@ -26,9 +26,6 @@
 ### [Afficher les valeurs de chaîne dans un visualiseur](string-visualizer-dialog-box.md)
 ### [Afficher le code machine](how-to-use-the-disassembly-window.md)
 #### [Guide pratique pour se déplacer d'une page vers le haut ou vers le bas dans la mémoire](how-to-page-up-or-down-in-memory.md)
-### [Afficher la pile des appels](how-to-use-the-call-stack-window.md)
-#### [Code mixte et informations manquantes dans la fenêtre Pile des appels](mixed-code-and-missing-information-in-the-call-stack-window.md)
-#### [Guide pratique pour sortir du code managé lorsque des images natives manquent dans la fenêtre Pile des appels](how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)
 ### [Afficher les valeurs de registres](how-to-use-the-registers-window.md)
 #### [À propos de la fenêtre Registres](debugging-basics-registers-window.md)
 #### [Guide pratique pour afficher et masquer les groupes de registres](how-to-display-and-hide-register-groups.md)
