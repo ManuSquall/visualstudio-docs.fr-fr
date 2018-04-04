@@ -1,9 +1,6 @@
 ---
-title: "Supprimer les avertissements d’analyse du code dans Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Supprimer les avertissements d’analyse du code dans Visual Studio | Documents Microsoft
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 helpviewer_keywords:
@@ -18,13 +15,13 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef69462dc9b51fbd92da11bc5adb1bfa61e8a792
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="suppressing-code-analysis-warnings"></a>Suppression des avertissements de l'analyse du code
+# <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
 
 Il est souvent utile d’indiquer qu’un avertissement n’est pas applicable. Cela indique à des membres de l’équipe que le code a été révisé et que l’avertissement peut être supprimé. Dans source suppression (ISS) utilise le <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut pour supprimer un avertissement. L’attribut peut être placée à proximité du segment de code qui a généré l’avertissement. Vous pouvez ajouter la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> d’attribut dans le fichier source en le tapant dans, ou vous pouvez utiliser le menu contextuel sur un avertissement dans le **liste d’erreurs** ajoute automatiquement.
 
@@ -84,17 +81,17 @@ Les propriétés de l’attribut incluent :
 
 Avertissements d’analyse du code sont supprimés au niveau auquel le <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est appliqué. Par exemple, l’attribut peut être appliqué à l’assembly, un module, un type, un membre ou un au niveau du paramètre. L’objectif de ce est étroitement coupler les informations sur la suppression du code où la violation se produit.
 
-La forme générale de la suppression inclut la catégorie de règle et un identificateur de règle, qui contient une représentation explicite facultative du nom de la règle. Exemple :
+La forme générale de la suppression inclut la catégorie de règle et un identificateur de règle, qui contient une représentation explicite facultative du nom de la règle. Par exemple :
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-S’il existe des raisons de performances strict pour réduire les métadonnées de suppression à la source, le nom de la règle peut être omis. La catégorie de règle et son ID de règle constituent un identificateur de règle unique suffisant. Exemple :
+S’il existe des raisons de performances strict pour réduire les métadonnées de suppression à la source, le nom de la règle peut être omis. La catégorie de règle et son ID de règle constituent un identificateur de règle unique suffisant. Par exemple :
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
 Pour des raisons de facilité de maintenance, l’omission du nom de la règle n’est pas recommandée.
 
-## <a name="suppressing-selective-violations-within-a-method-body"></a>Suppression des violations sélectives dans un corps de méthode
+## <a name="suppress-selective-violations-within-a-method-body"></a>Supprimer des violations sélectives dans un corps de méthode
 
 Attributs de suppression peuvent être appliqués à une méthode, mais il ne peut pas être incorporés dans un corps de méthode. Cela signifie que toutes les violations d’une règle particulière sont supprimées si vous ajoutez le <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> d’attribut à la méthode.
 
@@ -160,7 +157,7 @@ Les suppressions au niveau global sont la seule façon de supprimer les messages
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target`contient toujours le nom qualifié complet.
+> `Target` contient toujours le nom qualifié complet.
 
 ## <a name="global-suppression-file"></a>Fichier de suppression globale
 
@@ -168,4 +165,5 @@ Le fichier de suppression globale conserve les suppressions qui sont soit au niv
 
 ## <a name="see-also"></a>Voir aussi
 
-<xref:System.Diagnostics.CodeAnalysis>
+- <xref:System.Diagnostics.CodeAnalysis>
+- [Utilisez les analyseurs de Roslyn](../code-quality/use-roslyn-analyzers.md)

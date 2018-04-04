@@ -13,17 +13,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: b16c0627fbebf13566726a7f4bfb56ecb2e6a64a
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 273f67b997da80b27c124d3119ec0871f0a061b8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/03/2018
 ---
 1.  Sur l’appareil ou serveur ordinateur que vous souhaitez déboguer (plutôt que l’ordinateur exécutant Visual Studio), obtenir la version des outils à distance.
 
     |Version|Lien|Notes|
     |-|-|-|
-    |Visual Studio 2017 (dernière version)|[Outils à distance](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Toujours télécharger la version correspondant à votre système d’exploitation de périphérique (x86 ou x64). Si le mode de sécurité renforcée est activé (Windows Server), vous devez ajouter des sites approuvés si vous y êtes invité.|
+    |Visual Studio 2017 (dernière version)|[Outils à distance](https://www.visualstudio.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Toujours télécharger la version correspondant à votre système d’exploitation de périphérique (x86 ou x64). Si le mode de sécurité renforcée est activé (Windows Server), vous devez ajouter des sites approuvés si vous y êtes invité.|
     |2017 de Visual Studio (plus ancienne)|[Outils à distance](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Les outils à distance pour les versions antérieures de Visual Studio 2017 sont disponibles à partir de My.VisualStudio.com. Si vous y êtes invité, jointure du groupe Visual Studio Dev Essentials libre, ou connectez-vous avec votre abonnement Visual Studio code. Si le mode de sécurité renforcée est activé (Windows Server), vous devez ajouter des sites approuvés si vous y êtes invité.|
     |Visual Studio 2015 Update 3|[Outils à distance](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Si vous y êtes invité, jointure du groupe Visual Studio Dev Essentials libre, ou connectez-vous avec votre abonnement Visual Studio code. Si le mode de sécurité renforcée est activé (Windows Server), vous devez ajouter des sites approuvés si vous y êtes invité.|
     |Visual Studio 2015 (plus ancienne)|[Outils à distance](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Si vous y êtes invité, jointure du groupe Visual Studio Dev Essentials libre, ou connectez-vous avec votre abonnement Visual Studio code. Si le mode de sécurité renforcée est activé (Windows Server), vous devez ajouter des sites approuvés si vous y êtes invité.|
