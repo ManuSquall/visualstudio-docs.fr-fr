@@ -1,15 +1,15 @@
 ---
-title: "Utilisation de Python dans Visual Studio, étape 1 - création d’un projet | Microsoft Docs"
-description: "Étape 1 d’un didacticiel de base pour utiliser Python dans Visual Studio, présentant le didacticiel dans sa globalité, décrivant les conditions préalables requises, ainsi que le processus de création d’un nouveau projet Python."
-ms.custom: 
+title: Utilisation de Python dans Visual Studio, étape 1 - création d’un projet | Microsoft Docs
+description: Étape 1 d’un didacticiel de base pour utiliser Python dans Visual Studio, présentant le didacticiel dans sa globalité, décrivant les conditions préalables requises, ainsi que le processus de création d’un nouveau projet Python.
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 469494b2c0c4704ac1eab42d36934657adc2313d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 22588c1e8221375f05b9fb62870662d9aa3d2f5e
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Utilisation de Python dans Visual Studio
 

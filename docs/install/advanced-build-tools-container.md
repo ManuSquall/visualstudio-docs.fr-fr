@@ -1,22 +1,24 @@
 ---
-title: "Exemple avancé pour les conteneurs | Microsoft Docs"
-ms.custom: 
+title: Exemple avancé pour les conteneurs | Microsoft Docs
+ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6009114d16871f4582aae298b25de9a3b9fe5888
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b5497a6957c457300f7741e1e0d4acc68240020a
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="advanced-example-for-containers"></a>Exemple avancé pour les conteneurs
 
@@ -27,7 +29,7 @@ L’exemple de fichier Dockerfile suivant utilise une balise de version spécifi
 > [!NOTE]
 > Vous ne pouvez pas installer Visual Studio dans l’image microsoft/windowsservercore:10.0.14393.1593, en raison de problèmes connus liés au lancement du programme d’installation dans un conteneur. Pour plus d’informations, consultez la section [Problèmes connus](build-tools-container-issues.md).
 
-L’exemple utilise également un programme d’amorçage Build Tools 2017 qui installe une version spécifique générée en même temps que lui. Le produit peut toujours être mis à jour via le canal de mise en production. Toutefois, cette méthode n’est pas pratique pour les conteneurs qui doivent généralement être regénérés. Si vous souhaitez obtenir les URL d’un canal spécifique, vous pouvez télécharger le canal sur https://aka.ms/vs/15/release/channel, ouvrir le fichier JSON et examiner les URL du programme d’amorçage. Pour plus d’informations, consultez [Créer une installation réseau de Visual Studio](create-a-network-installation-of-visual-studio.md).
+L’exemple utilise également un programme d’amorçage Build Tools 2017 qui installe une version spécifique générée en même temps que lui. Le produit peut toujours être mis à jour via le canal de mise en production. Toutefois, cette méthode n’est pas pratique pour les conteneurs qui doivent généralement être regénérés. Si vous souhaitez obtenir les URL d’un canal spécifique, vous pouvez télécharger le canal à partir de https://aka.ms/vs/15/release/channel, ouvrir le fichier JSON et examiner les URL du programme d’amorçage. Pour plus d’informations, consultez [Créer une installation réseau de Visual Studio](create-a-network-installation-of-visual-studio.md).
 
 ```dockerfile
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.

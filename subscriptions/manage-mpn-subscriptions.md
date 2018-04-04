@@ -1,39 +1,28 @@
 ---
-title: Abonnements Visual Studio Microsoft Partner Network (MPN) | Microsoft Docs
+title: Gérer les abonnements Visual Studio offerts par le réseau MPN (Microsoft Partner Network) | Microsoft Docs
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
 Ms.date: 12/11/2017
 Ms.topic: Get-Started-Article
-Description: Managing Visual Studio subscriptions included with Microsoft Partner Network (MPN) Memberships
+Description: How to assign Visual Studio subscriptions to your end users, for MPN partners.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 20c8e0593fa6049a270c8575608d57d59d0c4d2d
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 308b682215556c645eeaf0257292e40fba35a9c1
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="managing-visual-studio-subscriptions-included-with-microsoft-partner-network-mpn-memberships"></a>Gestion des abonnements Visual Studio inclus avec les appartenances à Microsoft Partner Network (MPN)
+# <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gestion des abonnements Visual Studio offerts par le réseau MPN (Microsoft Partner Network)
 
 ## <a name="overview"></a>Vue d'ensemble
+Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack MPN sont éligibles aux abonnements Visual Studio. Ces abonnements sont concédés sous licence par utilisateur et sont valides uniquement quand ils sont attribués à un utilisateur nommé spécifique qui travaille pour la société partenaire.
 
-Le nombre et le niveau des abonnements Visual Studio varient selon votre niveau d’appartenance à Microsoft Partner Networks (MPN), comme indiqué sur la page [Principaux avantages](https://partner.microsoft.com/membership/core-benefits) de MPN.  Pour utiliser un abonnement, collaborez avec votre administrateur de programme pour vous assurer qu’un abonnement Visual Studio vous est attribué.  
+Pour plus d’informations, consultez [Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)](program-mpn.md).
 
-## <a name="resources--references"></a>Ressources et références
-
-- Détails concernant les [abonnements Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions) Microsoft Partner Network
-
-- Microsoft Partner Network [Program Administrator Guide to Software and Online Services Benefits]((https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) ) (Guide de l’administrateur du programme concernant le logiciel et les avantages des services en ligne)
-    - Pg 6 - Attribution de rôles de contact et d’abonnements Visual Studio pour Action Pack
-
-> [!NOTE]
-> Le rôle Contact technique est requis pour les abonnements Visual Studio
-    - Pg 8 - Attribution d’abonnements Visual Studio pour les partenaires de compétence
-
-
-## <a name="high-level-assignment--access-flow"></a>Attribution de niveau élevé et flux d’accès
+## <a name="high-level-assignment-and-access-flow"></a>Attribution et flux d’accès globaux
 
 ### <a name="microsoft-action-pack-subscribers"></a>Abonnés Microsoft Action Pack
 Abonné Microsoft Action Pack et abonnements Visual Studio
@@ -48,7 +37,7 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
 8. Sélectionnez la **personne** souhaitée
 9. Cliquez sur **Envoyer**
 10. La personne reçoit un e-mail
-11. La personne désignée accède au site [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) pour se connecter
+11. La personne assignée accède à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) pour se connecter
 12. Une page de profil Visual Studio peut s’afficher, notamment :
     - Prénom
     - Nom
@@ -59,17 +48,27 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
 ### <a name="competency-partners"></a>Partenaires de compétence
 1. Sélectionnez **Configuration requise et ressources**
 2. Sélectionnez **Privilèges**
-3. Sélectionnez **Abonnements MSDN** (remarque : mise à jour de l’abonnement Visual Studio en attente)
+3. Sélectionnez **Abonnements MSDN** (Remarque : cette option sera prochainement renommée « Abonnements Visual Studio »)
 4. Recherchez la **personne** souhaitée
 5. Cliquez sur **Envoyer**
 6. La personne reçoit un e-mail
-7. La personne désignée accède au site [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) pour se connecter
-8. Une page de profil Visual Studio peut s’afficher 
+7. La personne assignée accède à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) pour se connecter
+8. Une page de profil Visual Studio peut s’afficher
     - Prénom
     - Nom
     - Adresse de messagerie du contact
 9. La connexion est à présent terminée et l’abonné doit avoir accès aux avantages
 
+## <a name="resources-and-references"></a>Ressources et références
+
+- Détails concernant les [abonnements Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions) Microsoft Partner Network
+
+- Microsoft Partner Network [Program Administrator Guide to Software and Online Services Benefits](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) (Guide de l’administrateur du programme concernant le logiciel et les avantages des services en ligne)
+    - Pg 6 - Attribution de rôles de contact et d’abonnements Visual Studio pour Action Pack
+
+> [!NOTE]
+> Le rôle Contact technique est requis pour les abonnements Visual Studio
+    - Pg 8 - Attribution d’abonnements Visual Studio pour les partenaires de compétence
 
 ## <a name="need-help"></a>Vous avez besoin d'aide ?
 Les abonnés et les administrateurs du programme doivent travailler directement avec l’équipe de support de Microsoft Partner Network pour résoudre les problèmes d’accès aux abonnements. Visitez la page [Support pour les partenaires](https://partner.microsoft.com/support) pour obtenir de l’aide. (Vous aurez besoin de vos informations de connexion à MPN.)

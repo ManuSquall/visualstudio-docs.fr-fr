@@ -1,15 +1,15 @@
 ---
-title: "Kit de développement logiciel (SDK) Azure pour Python | Microsoft Docs"
-description: "Le kit SDK Azure pour Python facilite l’utilisation des services Microsoft Azure à partir d’applications Python fonctionnant sur n’importe quelle plateforme."
-ms.custom: 
+title: Kit de développement logiciel (SDK) Azure pour Python | Microsoft Docs
+description: Le kit SDK Azure pour Python facilite l’utilisation des services Microsoft Azure à partir d’applications Python fonctionnant sur n’importe quelle plateforme.
+ms.custom: ''
 ms.date: 01/22/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: kraigb
 ms.author: kraigb
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: baa206dfbb9caf58ce872d0c9dee22e183403adb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 728fc1249671025ca99f36f62aab19a1282f15aa
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="azure-sdk-for-python"></a>Kit de développement logiciel (SDK) Azure pour Python
 
@@ -50,7 +50,7 @@ Le [kit SDK Azure pour le centre de développement Python](http://azure.microsof
 - [Stockage d’objets BLOB](/azure/storage/storage-python-how-to-use-blob-storage)
 - [Stockage de tables](/azure/storage/storage-python-how-to-use-table-storage)
 - [Stockage de file d’attente](/azure/storage/storage-python-how-to-use-queue-storage)
-- [DocumentDB](/azure/documentdb/documentdb-python-application)
+- [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
 - [Files d’attente Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
 - [Rubriques/abonnements Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
 - [Gestion des services](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
@@ -64,6 +64,6 @@ Pour les API publiques sans documentation, les tests d’unités du [dépôt Git
 
 ## <a name="support"></a>Assistance
 
-Le référentiel Git du Kit de développement logiciel (SDK) se trouve à l’adresse suivante : [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
+Le dépôt Git pour le SDK se trouve à l’adresse [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
 
 [Signalez les problèmes au niveau du référentiel](https://github.com/Azure/azure-sdk-for-python/issues) si vous rencontrez des problèmes ou avez des questions concernant l’utilisation du Kit SDK.

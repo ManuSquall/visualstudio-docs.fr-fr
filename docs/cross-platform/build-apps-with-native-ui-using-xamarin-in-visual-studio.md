@@ -1,24 +1,24 @@
 ---
-title: "Générer des applications Xamarin avec une interface utilisateur native dans Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Générer des applications Xamarin avec une interface utilisateur native dans Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: 
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+caps.latest.revision: 31
+author: conceptdev
+ms.author: crdun
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: d9d9ecfd180ce3d4bbd54eb091e6c0e3153bd7cd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 71004088d421bcc2e0809fc4004cd7af887b95af
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Générer des applications Xamarin avec une interface utilisateur native dans Visual Studio
 Une fois que vous avez effectué les étapes dans [Configurer et installer](../cross-platform/setup-and-install.md) et [Vérifier votre environnement Xamarin](../cross-platform/verify-your-xamarin-environment.md), cette procédure pas à pas vous montre comment générer une application Xamarin de base (ci-dessous) avec des couches d’IU (interface utilisateur) natives. Avec une IU native, le code partagé réside dans une bibliothèque de classes portable (PCL), et les projets de plateforme individuels contiennent les définitions d’IU.  
@@ -101,7 +101,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
   
  Les étapes suivantes permettent d’ajouter du code à la bibliothèque PCL pour accéder aux données de ce service météo et stocker ces données :  
   
-1.  Pour exécuter cet exemple, vous devez tout d’abord vous inscrire pour obtenir une clé API gratuite sur [http://openweathermap.org/appid](http://openweathermap.org/appid).  
+1.  Pour exécuter cet exemple, vous devez tout d’abord vous inscrire pour obtenir une clé API gratuite à l’adresse [http://openweathermap.org/appid](http://openweathermap.org/appid).  
   
 2.  Cliquez avec le bouton droit sur le projet **WeatherApp** et sélectionnez **Ajouter > Classe**. Dans la boîte de dialogue **Ajouter un nouvel élément** , nommez le fichier **Weather.cs**. Vous allez utiliser cette classe pour stocker les données du service de données météo.  
   
@@ -261,7 +261,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
     > [!TIP]
     >  Notez que de nombreuses propriétés ne contiennent pas de liste déroulante de valeurs sélectionnables.  Il peut être difficile d’évaluer la valeur de chaîne à utiliser pour une propriété donnée. Pour obtenir des suggestions, essayez de rechercher le nom d’une propriété dans la page de la classe [R.attr](http://developer.android.com/reference/android/R.attr.html) .  
     >   
-    >  De plus, une recherche rapide sur le web permet souvent d’accéder à une page sur [http://stackoverflow.com/](http://stackoverflow.com/) où d’autres personnes ont utilisé la même propriété.  
+    >  De plus, une recherche rapide sur le web permet souvent d’accéder à une page à l’adresse [http://stackoverflow.com/](http://stackoverflow.com/) où d’autres personnes ont utilisé la même propriété.  
   
      À titre de référence, si vous passez en mode **Source**, vous devez voir le code suivant pour cet élément :  
   

@@ -1,12 +1,8 @@
 ---
-title: "Utilisation d’expressions régulières dans Visual Studio | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Utilisation d’expressions régulières dans Visual Studio | Microsoft Docs
+ms.custom: 03/26/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -21,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: cd7da9b9993f2a3ae2d1eb94cad18e99f5281fde
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Utilisation d’expressions régulières dans Visual Studio
 
@@ -33,7 +29,9 @@ Visual Studio utilise les [expressions régulières du .NET Framework](/dotnet/s
 
 ## <a name="replacement-patterns"></a>Modèles de substitution
 
-Pour plus d’informations sur les expressions régulières utilisées dans les modèles de remplacement, consultez [Substitutions dans les expressions régulières (Guide .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions). Pour utiliser un groupe de capture numéroté, la syntaxe est `$1` pour spécifier le groupe numéroté et `(x)` pour spécifier le groupe en question. Par exemple, l’expression régulière groupée `(\d)([a-z])` trouve quatre correspondances dans la chaîne suivante : **1a 2b 3c 4d**. La chaîne de remplacement `z$1` convertit cette chaîne en **z1 z2 z3 z4**.
+Pour utiliser un groupe de capture numéroté, placez le groupe entre parenthèses dans le modèle d’expression régulière. Utilisez `$number`, où `number` est un entier commençant à 1, pour spécifier un groupe numéroté spécifique dans un modèle de remplacement. Par exemple, l’expression régulière groupée `(\d)([a-z])` définit deux groupes : le premier contient un chiffre décimal unique tandis que le deuxième contient un caractère unique compris entre **a** et **z**. L’expression recherche quatre correspondances dans la chaîne suivante : **1a 2b 3c 4d**. La chaîne de remplacement `z$1` référence le premier groupe uniquement et convertit la chaîne en **z1 z2 z3 z4**.
+
+Pour plus d’informations sur les expressions régulières utilisées dans les modèles de remplacement, consultez [Substitutions dans les expressions régulières (Guide .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
 ## <a name="regular-expression-examples"></a>Exemples d’expressions régulières
 
@@ -52,7 +50,7 @@ Voici quelques exemples :
 |Ancre la chaîne de correspondance à la fin d'une ligne|\r?$|`End\r?$` correspond au mot "end" uniquement quand il apparaît à la fin d’une ligne.|
 |Correspond à n'importe quel caractère unique d'un ensemble|[abc]|`b[abc]` correspond à "ba", "bb" et "bc".|
 |Correspond à n'importe quel caractère dans une plage de caractères|[a-f]|`be[n-t]` correspond à "bet" dans "between", à "ben" dans "beneath" et à "bes" dans "beside", mais pas à "below".|
-|Capture et numérote implicitement l'expression contenue dans les parenthèses|()|`([a-z])X\1` correspond à "aXa" et à "bXb", mais pas à "aXb". ". « \1 » fait référence au premier groupe d’expressions « [a-z] ».|
+|Capture et numérote implicitement l'expression contenue dans les parenthèses|()|`([a-z])X\1` correspond à "aXa" et à "bXb", mais pas à "aXb". « \1 » fait référence au premier groupe d’expressions « [a-z] ».|
 |Invalide une correspondance|(?!abc)|`real (?!ity)` correspond à "real" dans "realty" et dans "really", mais pas dans "reality". Trouve également le deuxième « real » (mais pas le premier « real ») dans « realityreal ».|
 |Correspond à n'importe quel caractère qui ne figure pas dans un ensemble donné de caractères|[^abc]|`be[^n-t]` correspond à "bef" dans "before », à "beh" dans "behind" et à "bel" dans "below", mais pas à "beneath".|
 |Correspond à l'expression placée avant ou après le symbole.|&#124;|`(sponge&#124;mud) bath` correspond à "sponge bath" et à "mud bath".|

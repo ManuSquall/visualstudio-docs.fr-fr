@@ -1,0 +1,2 @@
+## <a name="ensure-the-development-environment-was-successfully-created"></a>Vérifier que l’environnement de développement a bien été créé
+Dans la section précédente, nous avons lancé la commande `vsce env create` pour créer un environnement de développement dans Azure. Sachant que son exécution peut prendre environ 7 minutes, vérifiez qu’il a bien été créé. Vous pouvez toujours vérifier à quels environnements vous avez accès, ainsi que leur état, à l’aide de cette commande : `vsce env list`. 

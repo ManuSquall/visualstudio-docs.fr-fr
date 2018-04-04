@@ -1,5 +1,5 @@
 ---
-title: "Glossaire des attributs | Outil de test Microsoft IntelliTest pour les développeurs | Microsoft Docs"
+title: Glossaire des attributs | Outil de test Microsoft IntelliTest pour les développeurs | Microsoft Docs
 ms.date: 05/02/2017
 ms.technology: vs-ide-test
 ms.topic: article
@@ -10,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 474666d6243f8602c1da55ec113e459d5f2ec1d9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 7a0962b8efff6e6715936b8d954d5c8b447c0693
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="attribute-glossary"></a>Glossaire des attributs
 

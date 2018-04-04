@@ -1,11 +1,11 @@
 ---
-title: "Procédure pas à pas : ma première application de bureau WPF | Microsoft Docs"
-ms.custom: 
+title: 'Procédure pas à pas : ma première application de bureau WPF | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c239e811ea47158dd63660e761f943b8f22e8e23
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95c35eae16f50b6fa8c0a8c86fa0d93732512a88
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Procédure pas à pas : ma première application de bureau WPF
 
@@ -320,7 +320,7 @@ La catégorie Disposition vous permet de placer des éléments de manière ordon
 
     1. Recherchez la ligne `<Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"`. Remplacez `Grid.Column="0"` par `Grid.Column="1"` et `Grid.Row="2"` par `Grid.Row="3"`.
 
-1. Juste avant l’élément `<Border` , ajoutez le code XAML suivant pour afficher le titre :
+1. Juste avant l’élément `<Border`, ajoutez le code XAML suivant pour afficher le titre :
 
     ```xaml
     <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"
