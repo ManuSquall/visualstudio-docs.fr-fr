@@ -17,16 +17,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 05e10e6016c4a6791b5bc80ba6a05616c1edb0f6
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 1ababcbc0903d474c2992b68e3571a71c4e88d99
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et Express dans Visual Studio
 Dans ce tutoriel de développement Visual Studio en Node.js et Express, vous allez créer une application web Node.js simple, ajouter du code, explorer certaines fonctionnalités de l’IDE, puis exécuter l’application en question. Si vous n’avez pas encore installé Visual Studio, installez-le gratuitement [ici](http://www.visualstudio.com).  
 
-Dans ce tutoriel, vous apprendrez à :
+Dans ce didacticiel, vous apprendrez à :
 > [!div class="checklist"]
 > * Créer un projet Node.js
 > * Ajouter du code
@@ -44,7 +44,9 @@ Dans ce tutoriel, vous apprendrez à :
 
 * Le runtime Node.js doit être installé.
 
-    Si vous ne l’avez pas installé, installez la version LTS à partir du site web [Node.js](https://nodejs.org/en/download/). En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte aucun runtime installé, vous pouvez configurer votre projet pour référencer le runtime installé dans la page de propriétés (après avoir créé un projet, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Propriétés**).
+    Si vous ne l’avez pas déjà fait, installez la version LTS à partir du site web [Node.js](https://nodejs.org/en/download/). En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte aucun runtime installé, vous pouvez configurer votre projet pour référencer le runtime installé dans la page de propriétés (après avoir créé un projet, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Propriétés**).
+
+    Ce tutoriel a été testé avec Node.js 8.10.0.
 
 ## <a name="create-a-project"></a>Créer un projet
 Vous allez d’abord créer un projet d’application web Node.js.
@@ -120,6 +122,8 @@ Vous allez d’abord créer un projet d’application web Node.js.
     });
     ```
 
+    Il y a une erreur dans la ligne de code contenant `res.render`. Nous devons la corriger avant que l’application ne puisse s’exécuter. Nous corrigeons l’erreur dans la section suivante.
+
 ## <a name="use-intellisense"></a>Utilisez IntelliSense
 
 1. Dans *index.js*, accédez à la ligne de code contenant `res.render`.
@@ -148,7 +152,7 @@ Vous allez d’abord créer un projet d’application web Node.js.
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
-    Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code. 
+    Les points d’arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d’arrêt, Visual Studio interrompt l’exécution du code à l’emplacement du point d’arrêt pour vous permettre d’examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d’une branche de code. 
 
     ![Définir un point d’arrêt](../nodejs/media/tutorial-nodejs-set-breakpoint.png) 
 
@@ -196,7 +200,7 @@ Vous allez d’abord créer un projet d’application web Node.js.
 
    ![Application en cours d’exécution dans Azure App Service](../nodejs/media/tutorial-nodejs-running-in-azure.png)  
 
-Félicitations ! Vous avez terminé ce tutoriel.
+Félicitations ! Vous avez terminé ce didacticiel.
 
 ## <a name="next-steps"></a>Étapes suivantes 
 
