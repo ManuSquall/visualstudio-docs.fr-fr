@@ -1,26 +1,28 @@
 ---
-title: "Automatiser l’installation de Visual Studio avec un fichier réponse | Microsoft Docs"
-description: "Découvrez comment créer un fichier réponse JSON qui vous aide à automatiser l’installation de Visual Studio"
+title: Automatiser l’installation de Visual Studio avec un fichier réponse | Microsoft Docs
+description: Découvrez comment créer un fichier réponse JSON qui vous aide à automatiser l’installation de Visual Studio
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - response file
 - automate
 - installation
 - command-line
-author: timsneath
+author: tglee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8bb0cfca6efe913b38a94daf0ed846699f0266cd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bbfff39dce34bfa8595f4e34222e3e61ac67fb5
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Guide pratique pour définir des paramètres dans un fichier réponse
 Les administrateurs qui déploient Visual Studio peuvent spécifier un fichier réponse à l’aide du paramètre `--in`, comme dans l’exemple suivant :
