@@ -25,17 +25,17 @@ ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Déployer une application web ou .NET Core vers un dossier local à l’aide de l’outil de publication de Visual Studio
 
-Vous pouvez utiliser la **publier** outil à publier votre application vers un dossier local. 
+Vous pouvez utiliser l'outil de **publication** pour publier votre application vers un dossier local. 
 
-Ces étapes s’appliquent aux applications Python dans Visual Studio, .NET Core, ASP.NET et ASP.NET Core. Pour Node.js, les étapes sont pris en charge, mais l’interface utilisateur est différent.
+Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core, .NET Core, et Python dans Visual Studio. Pour Node.js, les étapes sont prises en charge, mais l’interface utilisateur est différente.
 
-## <a name="create-a-new-project"></a>Créer un projet 
+## <a name="create-a-new-project"></a>Créer un nouveau projet 
 
-1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
+1. Dans Visual Studio, sélectionnez **Fichier > Nouveau > Projet**.
 
-1. Sous **Visual C#** ou **Visual Basic**, choisissez **.NET Core**, puis, dans le volet central, choisissez **l’application Console (.NET Core)**.
+1. Sous **Visual C#** ou **Visual Basic**, choisissez **.NET Core**, puis, dans le volet central, choisissez **Application Console (.NET Core)**.
 
-1. Tapez un nom tel que **MyLocalApp** et cliquez sur **OK**.
+1. Tapez un nom tel que **MonApplicationLocale** et cliquez sur **OK**.
 
     Visual Studio crée le projet.
 
@@ -45,7 +45,7 @@ Ces étapes s’appliquent aux applications Python dans Visual Studio, .NET Core
 
     ![Choisissez publier](../deployment/media/quickstart-publish.png "choisissez Publier")
 
-1. Dans le **publier** volet, choisissez **dossier**.
+1. Dans le volet **publier**, choisissez **dossier**.
 
     ![Choisissez le dossier](../deployment/media/quickstart-publish-folder.png "dossier")
 
@@ -55,17 +55,17 @@ Ces étapes s’appliquent aux applications Python dans Visual Studio, .NET Core
 
     Visual Studio génère le projet et le publie dans le dossier spécifié.
 
-    Le volet publier affiche un profil de résumé.
+    Le volet publier affiche un résumé de profil.
 
-1. Pour configurer les paramètres de déploiement, cliquez sur **paramètres** dans le profil de résumé.
+1. Pour configurer les paramètres de déploiement, cliquez sur **paramètres** dans le résumé de profil.
 
     ![Paramètres de profil](../deployment/media/quickstart-profile-settings.png "paramètres de profil") 
 
-1. Configurer des options telles que s’il faut déployer une configuration Debug ou Release, puis cliquez sur **enregistrer**.
+1. Configurez des options telles que la configuration de déploiement en Debug ou en Release, puis cliquez sur **enregistrer**.
 
 1. Pour publier à nouveau, cliquez sur **publier**.
 
-Déployez les fichiers publiés de la façon qui vous convient. Par exemple, vous pouvez les empaqueter dans un fichier Zip, utilisez une commande de copie simple ou les déployer avec n’importe quel package d’installation de votre choix.
+Déployez les fichiers publiés de la façon qui vous convient. Par exemple, vous pouvez les empaqueter dans un fichier Zip, utilisez une simple commande `copy` ou les déployer avec n’importe quel package d’installation de votre choix.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
