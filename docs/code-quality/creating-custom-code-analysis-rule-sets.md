@@ -1,23 +1,25 @@
 ---
-title: "Création d’ensembles de règles analyse de Code personnalisé | Documents Microsoft"
-ms.custom: 
+title: Création d’ensembles de règles analyse de Code personnalisé | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 88db3a0a-1b92-496d-9fae-b2bb980f5933
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 18f527f30afe21678874f3555b539ce9d60bd816
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Création d'ensembles de règles d'analyse du code personnalisés
 Vous appliquez des règles d’analyse du code à un projet de code managé en spécifiant un ensemble de règles qui contient une ou plusieurs règles. Ensembles de règles standard Microsoft fournissent des groupes de règles qui sont organisées par fonction et profondeur. Par exemple, les règles Microsoft les instructions de conception de base et les règles de recommandations conception étendue Microsoft contiennent des règles d’utilisation et de poser des problèmes, avec des règles d’affectation de noms dans l’ensemble de règles d’étendue de.  
