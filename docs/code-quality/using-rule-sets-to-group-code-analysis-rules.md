@@ -2,7 +2,7 @@
 title: Définit des règles d’analyse du code dans Visual Studio | Documents Microsoft
 ms.date: 04/02/2018
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
 helpviewer_keywords:
@@ -12,19 +12,54 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 837ba95fc50ac32855889c4eca9010712906e646
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 3d6ac4a771efc34fcee8cdf46d21bf7a265da17b
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Utiliser la règle définit aux règles d’analyse de code de groupe
 
-Lorsque vous configurez l’analyse du code dans Visual Studio, vous pouvez choisir parmi une liste d’intégré *ensembles de règles*. Un ensemble de règles est un regroupement logique de règles d’analyse du code qui identifient les problèmes ciblés et des conditions spécifiques. Par exemple, vous pouvez appliquer un ensemble de règles est conçu pour analyser le code des API publiques disponibles, ou vous pouvez appliquer un ensemble de règles qui inclut uniquement les règles minimales recommandées. Vous pouvez également appliquer un ensemble de règles qui inclut toutes les règles.
+Lorsque vous configurez l’analyse du code dans Visual Studio, vous pouvez choisir parmi une liste d’intégré *ensembles de règles*. Un ensemble de règles s’applique à un projet et est un regroupement de code des règles d’analyse qui identifient les problèmes ciblés et des conditions spécifiques pour ce projet. Par exemple, vous pouvez appliquer un ensemble de règles est conçu pour analyser le code des API publiques disponibles, ou simplement la valeur minimale des règles recommandées. Vous pouvez également appliquer un ensemble de règles qui inclut toutes les règles.
 
-Vous pouvez personnaliser un ensemble de règles en ajoutant ou supprimant des règles, ou en modifiant les niveaux de gravité de règle apparaissent comme des avertissements ou erreurs dans le **liste d’erreurs**. Ensembles de règles personnalisés peuvent répondre à un besoin pour votre environnement de développement particulier. Lorsque vous personnalisez un ensemble de règles, la page de jeu de règles fournit des outils pour vous aider dans le processus de filtrage et de recherche.
+Vous pouvez personnaliser un ensemble de règles en ajoutant ou supprimant des règles, ou en modifiant les niveaux de gravité de règle apparaissent comme des avertissements ou erreurs dans le **liste d’erreurs**. Ensembles de règles personnalisés peuvent répondre à un besoin pour votre environnement de développement particulier. Lorsque vous personnalisez un ensemble de règles, l’éditeur d’ensemble de règles fournit des outils pour vous aider dans le processus de filtrage et de recherche.
+
+## <a name="rule-set-format"></a>Format d’ensemble de règles
+
+Un ensemble de règles est spécifié au format XML dans un *.ruleset* fichier. Règles, qui se composent d’un ID et un *action*, sont regroupés par ID de l’analyseur et l’espace de noms dans le fichier.
+
+Le contenu XML d’un *.ruleset* fichier ressemble à ceci :
+
+```xml
+<RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
+  <Localization ResourceAssembly="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.dll" ResourceBaseName="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.Localized">
+    <Name Resource="HelloWorldRules_Name" />
+    <Description Resource="HelloWorldRules_Description" />
+  </Localization>
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CA1001" Action="Warning" />
+    <Rule Id="CA1009" Action="Warning" />
+    <Rule Id="CA1016" Action="Warning" />
+    <Rule Id="CA1033" Action="Warning" />
+  </Rules>
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1802" Action="Error" />
+    <Rule Id="CA1814" Action="Info" />
+    <Rule Id="CA1823" Action="None" />
+    <Rule Id="CA2217" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+> [!TIP]
+> Il est plus facile de [modifier un ensemble de règles](../code-quality/working-in-the-code-analysis-rule-set-editor.md) dans l’affichage graphique **Éditeur d’ensemble de règles** que manuellement.
+
+La règle définie pour un projet est défini par le `CodeAnalysisRuleSet` propriété dans le fichier de projet Visual Studio. Par exemple :
+
+```xml
+<CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+```
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : Configurer un ensemble de règles personnalisé](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
-- [Informations de référence sur l’ensemble de règles d’analyse du code](../code-quality/managed-minimun-rules-rule-set-for-managed-code.md)
+- [Informations de référence sur l’ensemble de règles d’analyse du code](../code-quality/rule-set-reference.md)
