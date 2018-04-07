@@ -1,12 +1,7 @@
 ---
-title: "Comment : configurer l’analyse du Code pour une Application Web ASP.NET | Documents Microsoft"
-ms.custom: 
+title: 'Comment : configurer l’analyse du Code pour une Application Web ASP.NET dans Visual Studio | Documents Microsoft'
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-code-analysis
 ms.topic: article
 f1_keywords:
 - vs.codeanalysis.propertypages.asp
@@ -15,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0f2aaf85128bd34f4e80a7b29763506b17d77911
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 075382db550fae1198b0eca239be8efd1bfadff6
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Comment : configurer l'analyse du code pour une application Web ASP.NET
 
@@ -45,4 +40,4 @@ Dans Visual Studio, vous pouvez sélectionner dans une liste d’analyse du Code
 
     - Sélectionnez  **\<Parcourir >** pour spécifier une règle personnalisée existante du jeu qui n’est pas dans la liste.
 
-    - Définissez un ensemble de règles personnalisé. Pour plus d’informations, consultez [création d’ensembles de règles personnalisés](../code-quality/creating-custom-code-analysis-rule-sets.md).
+    - Définir un [ensemble de règles personnalisé](../code-quality/how-to-create-a-custom-rule-set.md).

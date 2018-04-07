@@ -1,10 +1,11 @@
 ---
-title: 'Comment : configurer l’analyse du Code pour un projet de Code managé | Documents Microsoft'
-ms.date: 11/04/2016
+title: Configurer l’analyse du Code dans Visual Studio | Documents Microsoft
+ms.date: 04/04/2018
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
+- vs.codeanalysis.propertypages.solution
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 46d41b09f0f6639195613c8a4d9a08f952c79525
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: daac3af3a6d5d5fba4d6e8dbb652821583769762
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procédure : configurer l’analyse du code pour un projet de code managé
 
@@ -49,9 +50,28 @@ Dans Visual Studio, vous pouvez choisir parmi une liste de l’analyse du code *
 
     - Sélectionnez  **\<Parcourir... >** pour rechercher une règle personnalisée existante définie qui ne figure pas dans la liste.
 
-    - Définissez un ensemble de règles personnalisé. Pour plus d’informations, consultez [création d’ensembles de règles personnalisés](../code-quality/creating-custom-code-analysis-rule-sets.md).
+    - Définir un [ensemble de règles personnalisé](../code-quality/how-to-create-a-custom-rule-set.md).
+
+## <a name="specify-rule-sets-for-multiple-projects-in-a-solution"></a>Spécifier des ensembles de règles pour plusieurs projets dans une solution
+
+Par défaut, tous les projets gérés d’une solution sont affectées la *règles minimales recommandées* ensemble de règles d’analyse du code. Vous pouvez modifier les ensembles de règles qui sont assignés aux projets d’une solution dans le **propriétés** boîte de dialogue pour la solution.
+
+1. Ouvrez la solution dans Visual Studio.
+
+2. Sur le **analyser** menu, sélectionnez **configurer l’analyse du Code pour la Solution**.
+
+3. Si nécessaire, développez **propriétés communes**, puis sélectionnez **paramètres d’analyse du Code**.
+
+4. Vous pouvez spécifier un ensemble de règles pour un ou plusieurs projets :
+
+    - Pour spécifier un ensemble de règles pour un projet individuel, sélectionnez le nom du projet.
+
+    - Pour spécifier un ensemble de règles pour plusieurs projets, maintenez enfoncée la touche **Ctrl** et sélectionnez les noms de projet.
+
+    - Pour spécifier tous les projets dans la solution, maintenez enfoncée la touche **MAJ** et cliquez sur dans la liste des projets.
+
+5. Sélectionnez le **l’ensemble de règles** champ d’un projet, puis sélectionnez le nom de la règle défini que vous souhaitez appliquer.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : configuration et utilisation d’un ensemble de règles personnalisé](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
 - [Guide pratique pour configurer l’analyse du code pour une application web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
