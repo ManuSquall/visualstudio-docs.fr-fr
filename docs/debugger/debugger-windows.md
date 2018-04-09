@@ -1,25 +1,25 @@
 ---
-title: "Débogueur Windows dans Visual Studio | Documents Microsoft"
+title: Débogueur Windows dans Visual Studio | Documents Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff4b731f703d8237b338dbce821fa7e00c39e3d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 64c792594920cff47dfeac8331a73938a2512dcf
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>En savoir plus sur les fenêtres du débogueur dans Visual Studio
 
@@ -43,7 +43,7 @@ Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage d
 |Modules|Ctrl+Alt+U|[Guide pratique pour utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md)|
 |Threads GPU|-|[Guide pratique pour utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Tâches|Ctrl+Maj+D, K|[Utilisation de la fenêtre Tâches](../debugger/using-the-tasks-window.md)|
-|Python Debug Interactive|Maj+Alt+I|[REPL interactif de Python](../python/interactive-repl.md)|
+|Python Debug Interactive|Maj+Alt+I|[REPL interactif de Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Console JavaScript|Ctrl+Alt+V, C|[Démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Explorateur DOM|Ctrl+Alt+V, D|[Déboguer la disposition avec l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Arborescence d’éléments visuels en direct|-|[Inspecter les propriétés XAML en phase de débogage](../debugger/inspect-xaml-properties-while-debugging.md)|
