@@ -1,19 +1,19 @@
 ---
 title: Fonction de SccBeginBatch | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - SccBeginBatch
 helpviewer_keywords:
 - SccBeginBatch function
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
-caps.latest.revision: 
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
