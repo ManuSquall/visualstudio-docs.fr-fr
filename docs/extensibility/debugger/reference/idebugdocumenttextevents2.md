@@ -1,29 +1,29 @@
 ---
-title: IDebugDocumentTextEvents2 | Documents Microsoft
-ms.custom: 
+title: IDebugDocumentTextEvents2 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - IDebugDocumentTextEvents2
 helpviewer_keywords:
 - IDebugDocumentTextEvents2 interface
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
-caps.latest.revision: 
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb9e284435cdf8a5905e068b0044cd118a1621c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Cette interface est utilisée pour notifier Visual Studio sur les modifications apportées à la source qui sont fournies par le moteur de débogage.  
@@ -38,7 +38,7 @@ IDebugDocumentTextEvents2 : IUnknown
  Le D’implémente cette interface pour prendre en charge d’apporter des modifications au code source. Cette interface est généralement implémentée sur le même objet qui implémente le [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interface.  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]Obtient cette interface via un appel à la <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> (méthode). Le <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interface est obtenue à partir d’un appel à la <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> (méthode). Le <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interface est obtenu en appelant le [QueryInterface](/cpp/atl/queryinterface) méthode sur une [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interface.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Obtient cette interface via un appel à la <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> (méthode). Le <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interface est obtenue à partir d’un appel à la <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> (méthode). Le <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interface est obtenu en appelant le [QueryInterface](/cpp/atl/queryinterface) méthode sur une [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente les méthodes de `IDebugDocumentTextEvents2`.  
@@ -55,7 +55,7 @@ IDebugDocumentTextEvents2 : IUnknown
 ## <a name="remarks"></a>Notes  
  Seuls les moteurs de débogage qui fournissent leurs propres documents bénéficie de le `IDebugDocumentTextEvent2` interface. Un exemple serait un moteur de débogage de script. En cours de l’interprétation des scripts, nouveau code source peut être générée qui n’est pas présent dans n’importe quel fichier de disque et est connue uniquement du DE.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

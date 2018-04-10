@@ -1,12 +1,12 @@
 ---
-title: "Comment : gérer les mises à jour pour une Application ClickOnce | Documents Microsoft"
-ms.custom: 
+title: 'Comment : gérer les mises à jour pour une Application ClickOnce | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -20,20 +20,20 @@ helpviewer_keywords:
 - updating data, ClickOnce
 - application updates
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: f239f13a7dcefe0ce6f2bf8c12c641e97a48ce26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Comment : gérer des mises à jour pour une application ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]les mises à jour les applications peuvent vérifier automatiquement ou par programme. En tant que développeur, vous avez une grande souplesse pour spécifier quand et comment les vérifications de la mise à jour sont effectuées, si les mises à jour sont obligatoires et où l’application doit vérifier les mises à jour.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] les mises à jour les applications peuvent vérifier automatiquement ou par programme. En tant que développeur, vous avez une grande souplesse pour spécifier quand et comment les vérifications de la mise à jour sont effectuées, si les mises à jour sont obligatoires et où l’application doit vérifier les mises à jour.  
   
  Vous pouvez configurer l’application pour rechercher les mises à jour automatiquement avant le démarrage de l’application ou à des intervalles définis après le démarrage de l’application. En outre, vous pouvez spécifier une version minimale requise ; Autrement dit, une mise à jour est installé si la version de l’utilisateur est inférieure à la version requise.  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  Dans le **mises à jour de l’Application** boîte de dialogue zone, assurez-vous que le **l’application doit vérifier les mises à jour** case à cocher est activée.  
   
-5.  Dans le **mettre à jour emplacement** , entrez l’emplacement de mise à jour avec une URL qualifiée complète, à l’aide du format http://Hostname/ApplicationName ou un chemin d’accès UNC au format \\\Server\ApplicationName, ou cliquez sur le **Parcourir** bouton pour rechercher l’emplacement de mise à jour.  
+5.  Dans le **mettre à jour emplacement** , entrez l’emplacement de mise à jour avec une URL qualifiée complète, en utilisant le format http://Hostname/ApplicationName, ou un chemin d’accès UNC au format \\\Server\ApplicationName, ou cliquez sur le **Parcourir** bouton pour rechercher l’emplacement de mise à jour.  
   
 ### <a name="to-check-for-updates-programmatically"></a>Pour vérifier les mises à jour par programme  
   
@@ -105,7 +105,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  Dans le **mises à jour de l’Application** boîte de dialogue zone, assurez-vous que le **l’application doit vérifier les mises à jour** case à cocher est désactivée. (Si vous le souhaitez, vous pouvez sélectionner cette case à cocher pour vérifier des mises à jour par programme et laisser également le runtime ClickOnce vérifie automatiquement les mises à jour).  
   
-5.  Dans le **mettre à jour emplacement** , entrez l’emplacement de mise à jour avec une URL qualifiée complète, à l’aide du format http://Hostname/ApplicationName ou un chemin d’accès UNC au format \\\Server\ApplicationName, ou cliquez sur le **Parcourir** bouton pour rechercher l’emplacement de mise à jour. L’emplacement de mise à jour est dans laquelle l’application recherche une version mise à jour de lui-même.  
+5.  Dans le **mettre à jour emplacement** , entrez l’emplacement de mise à jour avec une URL qualifiée complète, en utilisant le format http://Hostname/ApplicationName, ou un chemin d’accès UNC au format \\\Server\ApplicationName, ou cliquez sur le **Parcourir** bouton pour rechercher l’emplacement de mise à jour. L’emplacement de mise à jour est dans laquelle l’application recherche une version mise à jour de lui-même.  
   
 6.  Créer un bouton, élément de menu ou autre élément d’interface utilisateur sur un Windows Form qui sélectionnent les utilisateurs pour rechercher les mises à jour. À partir du Gestionnaire d’événements de cet élément, appelez une méthode pour rechercher et installer des mises à jour. Vous trouverez un exemple de code Visual Basic et Visual c# pour une telle méthode dans [Comment : vérifier pour l’Application des mises à jour par programmation à l’aide de l’API de déploiement ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   

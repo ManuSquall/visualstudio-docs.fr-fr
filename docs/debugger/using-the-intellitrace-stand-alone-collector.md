@@ -1,29 +1,29 @@
 ---
 title: Utilisation du collecteur autonome IntelliTrace | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
 helpviewer_keywords:
 - IntelliTrace, debugging applications in production
 ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
-caps.latest.revision: 
+caps.latest.revision: 105
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 04b627e1f3188a4e7e938f9446251b5be80b87e6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Utilisation du collecteur autonome IntelliTrace
 Le **collecteur autonome IntelliTrace** vous permet de collecter des données de diagnostic IntelliTrace pour vos applications exécutées sur des serveurs de production ou d’autres environnements, sans avoir à installer Visual Studio sur l’ordinateur cible ni à modifier l’environnement du système cible. Ce collecteur fonctionne avec les applications web, SharePoint, WPF et Windows Forms. Quand vous avez terminé la collecte des données, supprimez simplement le collecteur pour le désinstaller.  
@@ -100,7 +100,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
         1.  Copiez IntelliTraceCollection.cab dans le dossier suivant :  
   
-             **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
+             **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
   
         2.  Placez IntelliTraceCollection.cab dans le répertoire du collecteur, par exemple **C:\IntelliTraceCollector**  
   
@@ -121,21 +121,21 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 1.  Sur le serveur de votre application, ouvrez une fenêtre d’invite de commandes en tant qu’administrateur.  
   
-2.  Utilisez la commande Windows **icacls** pour accorder à l’administrateur du serveur toutes les autorisations d’accès au répertoire du collecteur. Exemple :  
+2.  Utilisez la commande Windows **icacls** pour accorder à l’administrateur du serveur toutes les autorisations d’accès au répertoire du collecteur. Par exemple :  
   
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >*`":F`  
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`  
   
 3.  Pour collecter les données d’une application web ou SharePoint :  
   
     1.  Accordez à l’utilisateur qui exécutera les applets de commande PowerShell IntelliTrace toutes les autorisations d’accès au répertoire du collecteur.  
   
-         Exemple :  
+         Par exemple :  
   
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<DOMAINE\IDutilisateur >*`":F`  
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`  
   
     2.  Accordez au pool d’applications hébergeant l’application web ou SharePoint les autorisations de lecture et d’exécution pour le répertoire du collecteur.  
   
-         Exemple :  
+         Par exemple :  
   
         -   Pour une application web du pool d’applications **DefaultAppPool** :  
   
@@ -165,7 +165,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
     2.  Dans la fenêtre Commande PowerShell, utilisez la commande **Import-Module** pour importer **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.  
   
-         Exemple :  
+         Par exemple :  
   
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`  
   
@@ -183,7 +183,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 2.  Pour une application web ou SharePoint, accordez au pool d’applications correspondant toutes les autorisations d’accès au répertoire de fichiers .iTrace. Pour cela, utilisez au choix la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers).  
   
-     Exemple :  
+     Par exemple :  
   
     -   Pour définir des autorisations avec la commande Windows **icacls** :  
   
@@ -217,7 +217,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 1.  Pour démarrer la collecte des données, ouvrez une fenêtre Commande PowerShell en tant qu’administrateur, puis exécutez la commande suivante :  
   
-     `Start-IntelliTraceCollection``"`  *\<ApplicationPool >* `"`  *\<PathToCollectionPlan >*  *\< FullPathToITraceFileDirectory >*  
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*  
   
     > [!IMPORTANT]
     >  Après avoir exécuté cette commande, tapez **Y** pour confirmer que vous souhaitez démarrer la collecte des données.  
@@ -229,7 +229,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
     |||  
     |-|-|  
     |*ApplicationPool*|Nom du pool d’applications dans lequel votre application s’exécute.|  
-    |*PathToCollectionPlan*|Chemin d’accès à un plan de collecte, un fichier .xml qui configure les paramètres du collecteur.<br /><br /> Vous pouvez spécifier un plan qui est fourni avec le collecteur. Les plans suivants fonctionnent avec les applications web et SharePoint :<br /><br /> -plan collection_plan.ASP.NET.default.xml<br />     Collecte uniquement les événements IntelliTrace et les événements SharePoint, y compris les exceptions, les appels de base de données et les demandes de serveur web.<br />-collection_plan.ASP.NET.trace.xml<br />     Collecte les appels de fonction et toutes les données du plan collection_plan.ASP.NET.default.xml. Ce plan est approprié pour une analyse détaillée, mais il risque de ralentir votre application davantage que le plan collection_plan.ASP.NET.default.xml.<br /><br /> Pour éviter de ralentir votre application, personnalisez ces plans ou créez votre propre plan. Pour des raisons de sécurité, placez tous les plans personnalisés dans le même emplacement sécurisé que les fichiers du collecteur. Consultez [Créer et personnaliser des plans de collecte IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) et [Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing) **Remarque :** par défaut, la taille maximale du fichier .iTrace est de 100 Mo. Lorsque le fichier .iTrace atteint cette limite, le collecteur supprime les entrées les plus anciennes pour libérer un espace pour les nouvelles entrées du fichier. Pour modifier cette limite, modifiez le plan de collecte `MaximumLogFileSize` attribut. <br /><br /> *Où puis-je trouver des versions localisées de ces plans de collecte ?*<br /><br /> Les plans de collecte localisés sont situés dans les sous-dossiers du collecteur.|  
+    |*PathToCollectionPlan*|Chemin d’accès à un plan de collecte, un fichier .xml qui configure les paramètres du collecteur.<br /><br /> Vous pouvez spécifier un plan qui est fourni avec le collecteur. Les plans suivants fonctionnent avec les applications web et SharePoint :<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Collecte uniquement les événements IntelliTrace et les événements SharePoint, y compris les exceptions, les appels de base de données et les demandes de serveur web.<br />-   collection_plan.ASP.NET.trace.xml<br />     Collecte les appels de fonction et toutes les données du plan collection_plan.ASP.NET.default.xml. Ce plan est approprié pour une analyse détaillée, mais il risque de ralentir votre application davantage que le plan collection_plan.ASP.NET.default.xml.<br /><br /> Pour éviter de ralentir votre application, personnalisez ces plans ou créez votre propre plan. Pour des raisons de sécurité, placez tous les plans personnalisés dans le même emplacement sécurisé que les fichiers du collecteur. Consultez [Créer et personnaliser des plans de collecte IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) et [Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing) **Remarque :** par défaut, la taille maximale du fichier .iTrace est de 100 Mo. Lorsque le fichier .iTrace atteint cette limite, le collecteur supprime les entrées les plus anciennes pour libérer un espace pour les nouvelles entrées du fichier. Pour modifier cette limite, modifiez le plan de collecte `MaximumLogFileSize` attribut. <br /><br /> *Où puis-je trouver des versions localisées de ces plans de collecte ?*<br /><br /> Les plans de collecte localisés sont situés dans les sous-dossiers du collecteur.|  
     |*FullPathToITraceFileDirectory*|Chemin d’accès complet au répertoire de fichiers .iTrace. **Note de sécurité :** fournir le chemin d’accès complet, pas un chemin d’accès relatif.|  
   
      Le collecteur se connecte au pool d’applications et commence la collecte de données.  
@@ -240,7 +240,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 3.  Pour prendre un instantané du fichier .iTrace, utilisez la syntaxe suivante :  
   
-     `Checkpoint-IntelliTraceCollection``"`  *\<ApplicationPool >*`"`  
+     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`  
   
 4.  Pour vérifier l’état de la collecte, utilisez la syntaxe suivante :  
   
@@ -248,7 +248,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 5.  Pour arrêter la collecte de données, utilisez la syntaxe suivante :  
   
-     `Stop-IntelliTraceCollection``"`  *\<ApplicationPool >*`"`  
+     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`  
   
     > [!IMPORTANT]
     >  Après avoir exécuté cette commande, tapez **Y** pour confirmer que vous souhaitez arrêter la collecte de données. Sinon, le collecteur risque de continuer la collecte des données, le fichier iTrace restera verrouillé ou le fichier ne contiendra peut-être aucunes données utiles.  
@@ -259,7 +259,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 1.  Pour démarrer votre application et collecter des données en même temps, utilisez la syntaxe suivante :  
   
-     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:`  *\<PathToCollectionPlan >* `/f:`  *\< FullPathToITraceFileDirectoryAndFileName >*  *\<PathToAppExecutableFileAndFileName >*  
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*  
   
      Par exemple, pour collecter des données d’une application nommée **MyApp**, exécutez :  
   
@@ -268,7 +268,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
     |||  
     |-|-|  
     |*FullPathToIntelliTraceCollectorExecutable*|Chemin d’accès complet à l’exécutable du collecteur (IntelliTraceSC.exe).|  
-    |*PathToCollectionPlan*|Chemin d’accès à un plan de collecte, un fichier .xml qui configure les paramètres du collecteur.<br /><br /> Vous pouvez spécifier un plan qui est fourni avec le collecteur. Les plans suivants fonctionnent avec les applications managées :<br /><br /> -plan collection_plan.ASP.NET.default.xml<br />     Collecte uniquement les événements IntelliTrace, y compris les exceptions, les appels de base de données et les demandes de serveur web.<br />-collection_plan.ASP.NET.trace.xml<br />     Collecte les appels de fonction et toutes les données du plan collection_plan.ASP.NET.default.xml. Ce plan est approprié pour une analyse détaillée, mais il risque de ralentir votre application davantage que le plan collection_plan.ASP.NET.default.xml.<br /><br /> Pour éviter de ralentir votre application, personnalisez ces plans ou créez votre propre plan. Pour des raisons de sécurité, placez tous les plans personnalisés dans le même emplacement sécurisé que les fichiers du collecteur. Consultez [Créer et personnaliser des plans de collecte IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) et [Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing) **Remarque :** par défaut, la taille maximale du fichier .iTrace est de 100 Mo. Lorsque le fichier .iTrace atteint cette limite, le collecteur supprime les entrées les plus anciennes pour libérer un espace pour les nouvelles entrées du fichier. Pour modifier cette limite, modifiez le plan de collecte `MaximumLogFileSize` attribut. <br /><br /> *Où puis-je trouver des versions localisées de ces plans de collecte ?*<br /><br /> Les plans de collecte localisés sont situés dans les sous-dossiers du collecteur.|  
+    |*PathToCollectionPlan*|Chemin d’accès à un plan de collecte, un fichier .xml qui configure les paramètres du collecteur.<br /><br /> Vous pouvez spécifier un plan qui est fourni avec le collecteur. Les plans suivants fonctionnent avec les applications managées :<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Collecte uniquement les événements IntelliTrace, y compris les exceptions, les appels de base de données et les demandes de serveur web.<br />-   collection_plan.ASP.NET.trace.xml<br />     Collecte les appels de fonction et toutes les données du plan collection_plan.ASP.NET.default.xml. Ce plan est approprié pour une analyse détaillée, mais il risque de ralentir votre application davantage que le plan collection_plan.ASP.NET.default.xml.<br /><br /> Pour éviter de ralentir votre application, personnalisez ces plans ou créez votre propre plan. Pour des raisons de sécurité, placez tous les plans personnalisés dans le même emplacement sécurisé que les fichiers du collecteur. Consultez [Créer et personnaliser des plans de collecte IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=227871) et [Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing) **Remarque :** par défaut, la taille maximale du fichier .iTrace est de 100 Mo. Lorsque le fichier .iTrace atteint cette limite, le collecteur supprime les entrées les plus anciennes pour libérer un espace pour les nouvelles entrées du fichier. Pour modifier cette limite, modifiez le plan de collecte `MaximumLogFileSize` attribut. <br /><br /> *Où puis-je trouver des versions localisées de ces plans de collecte ?*<br /><br /> Les plans de collecte localisés sont situés dans les sous-dossiers du collecteur.|  
     |*FullPathToITraceFileDirectoryAndFileName*|Chemin d’accès complet au répertoire du fichier .iTrace et nom du fichier .iTrace avec l’extension **.itrace** . **Note de sécurité :** fournir le chemin d’accès complet, pas un chemin d’accès relatif.|  
     |*PathToAppExecutableFileAndFileName*|Chemin d’accès et nom de fichier de votre application managée.|  
   

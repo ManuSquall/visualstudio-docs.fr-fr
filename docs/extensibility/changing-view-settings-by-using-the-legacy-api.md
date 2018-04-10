@@ -1,27 +1,27 @@
 ---
-title: "Modification des paramètres de la vue à l’aide de l’API héritée | Documents Microsoft"
-ms.custom: 
+title: Modification des paramètres de la vue à l’aide de l’API héritée | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - changing view settings
 ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
-caps.latest.revision: 
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc68bf5f8a0e61b80200cd5454b78bcdda78cdfe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Modification des paramètres de la vue à l’aide de l’API héritée
 Paramètres pour les fonctionnalités de l’éditeur de base, telles que le retour automatique à la marge de sélection et l’espace virtuel, peuvent être modifiés par l’utilisateur à l’aide de la **Options** boîte de dialogue. Toutefois, il est également possible de modifier ces paramètres par programmation.  

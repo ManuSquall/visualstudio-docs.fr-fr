@@ -1,11 +1,11 @@
 ---
-title: "UpdateManifest, tâche | Microsoft Docs"
-ms.custom: 
+title: UpdateManifest, tâche | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild, UpdateManifest task
 - UpdateManifest task [MSBuild]
 ms.assetid: 1291fd33-b89e-4e15-8fb1-69f9625cf2d2
-caps.latest.revision: 
+caps.latest.revision: 4
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 609f057cd5284ff88d6b73870850a678e500ee14
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest, tâche
 Met à jour les propriétés sélectionnées dans un manifeste et signe à nouveau.  

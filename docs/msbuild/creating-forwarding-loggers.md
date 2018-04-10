@@ -1,27 +1,27 @@
 ---
-title: "Création de journaux de transfert | Microsoft Docs"
-ms.custom: 
+title: Création de journaux de transfert | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, forwarding loggers
 - MSBuild, logging
 ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
-caps.latest.revision: 
+caps.latest.revision: 9
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6dd9afd2c2ac4e7dab63ec94392f83c8268ea6ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-forwarding-loggers"></a>Création de journaux de transfert
 Les journaux de transfert améliorent l’efficacité de la journalisation en vous permettant de choisir les événements que vous voulez suivre quand vous générez des projets sur un système multiprocesseur. En activant les journaux de transfert, vous pouvez empêcher des événements indésirables de submerger le journal central, de ralentir la génération et d’encombrer votre journal.  

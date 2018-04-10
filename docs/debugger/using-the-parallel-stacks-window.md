@@ -1,12 +1,12 @@
 ---
-title: "Afficher les Threads à l’aide de la fenêtre Piles parallèles | Documents Microsoft"
-ms.custom: 
+title: Afficher les Threads à l’aide de la fenêtre Piles parallèles | Documents Microsoft
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.debug.parallelstacks
@@ -18,17 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - debugger, parallel tasks window
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 72c7c38dece8924f48298c0b7b661f564f9b1afc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Afficher les Threads et les tâches à l’aide de la fenêtre Piles parallèles
 Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applications multithread. Son **vue Threads** affiche les informations de la pile d’appels pour tous les threads dans votre application. Elle vous permet de naviguer entre les threads et les frames de pile sur ces threads. Dans le code managé, le **vue tâches** affiche les piles des appels <xref:System.Threading.Tasks.Task?displayProperty=fullName> objets. En code natif, le **vue tâches** affiche les piles des appels [groupes de tâches](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algorithmes parallèles](/cpp/parallel/concrt/parallel-algorithms), [agents asynchrones](/cpp/parallel/concrt/asynchronous-agents)et [tâches légères](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
