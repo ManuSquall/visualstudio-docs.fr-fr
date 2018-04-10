@@ -1,12 +1,12 @@
 ---
 title: Ruban XML | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VSTO.Ribbon.RibbonXMLItem
@@ -67,7 +67,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Outlook requiert une étape supplémentaire. Pour plus d’informations, consultez [personnalisation d’un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
- Pour accéder à une procédure pas à pas qui montre comment automatiser une application à partir du ruban, consultez [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
+ Pour accéder à une procédure pas à pas qui montre comment automatiser une application à partir du ruban, consultez [Procédure pas à pas : création d'un onglet personnalisé à l'aide d'un élément XML Ribbon](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
   
 ### <a name="assigning-callback-methods-to-controls"></a>Affectation de méthodes de rappel à des contrôles  
  Pour affecter une méthode de rappel à un contrôle dans le fichier XML du ruban, ajoutez un attribut qui spécifie le type et le nom de cette méthode. Par exemple, l'élément suivant définit un bouton doté d'une méthode de rappel **onAction** nommée `OnToggleButton1`.  

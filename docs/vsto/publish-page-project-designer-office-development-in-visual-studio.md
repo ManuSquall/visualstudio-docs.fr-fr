@@ -1,12 +1,12 @@
 ---
-title: "Page Publier, Project Designer (développement Office dans Visual Studio) | Documents Microsoft"
-ms.custom: 
+title: Page Publier, Project Designer (développement Office dans Visual Studio) | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VST.ProjectProperties.Publish.2007System
@@ -102,7 +102,7 @@ ms.lasthandoff: 01/10/2018
  **Langue de publication**  
  Cette option définit la langue des termes du contrat de licence logiciel Microsoft, et inclut les modules linguistiques dans la liste des composants nécessaires. Elle n’affecte pas la langue de la personnalisation. La langue du programme d’installation est déterminée par les langues installées de Visual Studio.  
   
- Pour plus d’informations sur la façon de changer la **langue de publication**, consultez [How to: Change the Publish Language for a ClickOnce Application](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
+ Pour plus d’informations sur la façon de changer la **langue de publication**, consultez [Comment : modifier la langue de publication pour une application ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
   
  **Version de publication**  
  Définit le numéro de version de la personnalisation. Quand vous changez le numéro de version, l’application est publiée en tant que mise à jour. Un dossier est créé pour chaque version pendant le processus de génération pour éviter de remplacer la version précédemment publiée. Chaque partie de la version de publication (**Majeure**, **Mineure**, **Build**, **Révision**) peut contenir jusqu’à 5 chiffres.  

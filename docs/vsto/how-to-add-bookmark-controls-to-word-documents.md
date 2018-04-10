@@ -1,12 +1,12 @@
 ---
-title: "Comment : ajouter des contrôles Bookmark à des Documents Word | Documents Microsoft"
-ms.custom: 
+title: 'Comment : ajouter des contrôles Bookmark à des Documents Word | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VST.Bookmark.Dialog
@@ -82,14 +82,14 @@ ms.lasthandoff: 01/10/2018
   
 3.  Dans la boîte de dialogue **Signet** , entrez le nom du nouveau signet, puis cliquez sur **Ajouter**.  
   
-##  <a name="runtimedoclevel"></a> Adding Bookmark Controls at Run Time in a Document-Level Project  
+##  <a name="runtimedoclevel"></a> Ajout de contrôles Bookmark au moment de l'exécution dans un projet au niveau du document  
  Vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> par programmation à votre document au moment de l'exécution à l'aide des méthodes de la propriété <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> de la classe `ThisDocument` de votre projet. Il existe deux surcharges de méthode qui permettent d'ajouter un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> de la façon suivante :  
   
 -   Ajouter un <xref:Microsoft.Office.Tools.Word.Bookmark> à une plage spécifiée.  
   
 -   Ajouter un <xref:Microsoft.Office.Tools.Word.Bookmark> basé sur un signet natif dans le document (autrement dit, un <xref:Microsoft.Office.Interop.Word.Bookmark>).  
   
- Les contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> créés de façon dynamique ne sont pas conservés dans le document lorsque le document est fermé. Toutefois, un <xref:Microsoft.Office.Interop.Word.Bookmark> natif demeure dans le document. Vous pouvez recréer un <xref:Microsoft.Office.Tools.Word.Bookmark> basé sur un signet lors de la prochaine ouverture du document. Pour plus d'informations, consultez [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Les contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> créés de façon dynamique ne sont pas conservés dans le document lorsque le document est fermé. Toutefois, un <xref:Microsoft.Office.Interop.Word.Bookmark> natif demeure dans le document. Vous pouvez recréer un <xref:Microsoft.Office.Tools.Word.Bookmark> basé sur un signet lors de la prochaine ouverture du document. Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>Pour ajouter un contrôle Bookmark à un document par programmation  
   
@@ -101,7 +101,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Si vous souhaitez créer un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> à partir d'un <xref:Microsoft.Office.Interop.Word.Bookmark>existant, utilisez la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> et transmettez le <xref:Microsoft.Office.Interop.Word.Bookmark>existant.  
   
-##  <a name="runtimeaddin"></a> Adding Bookmark Controls at Run Time in an VSTO Add-in project  
+##  <a name="runtimeaddin"></a> Ajout de contrôles Bookmark au moment de l’exécution dans un projet de complément VSTO  
  Vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> par programmation à tout document ouvert au moment de l'exécution en utilisant un complément VSTO. Pour ce faire, vous devez générer un élément hôte <xref:Microsoft.Office.Tools.Word.Document> basé sur un document ouvert, puis utiliser les méthodes de la propriété <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> de cet élément hôte. Il existe deux surcharges de méthode qui permettent d'ajouter un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> de la façon suivante :  
   
 -   Ajouter un <xref:Microsoft.Office.Tools.Word.Bookmark> à une plage spécifiée.  

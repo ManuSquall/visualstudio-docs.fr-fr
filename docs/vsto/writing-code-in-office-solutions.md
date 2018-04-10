@@ -1,12 +1,12 @@
 ---
-title: "L’écriture de Code dans les Solutions Office | Documents Microsoft"
-ms.custom: 
+title: L’écriture de Code dans les Solutions Office | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VST.Project.RefactoringCancelled
@@ -56,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="understanding-primary-interop-assemblies"></a>Fonctionnement des assemblys PIA (Primary Interop Assembly)  
  Les applications Microsoft Office exposent une grande part de leurs fonctionnalités à Automation. Toutefois, vous ne pouvez pas utiliser du code managé (notamment Visual Basic ou C#) directement pour automatiser des applications Office. Pour automatiser des applications Office avec du code managé, vous devez utiliser les assemblys PIA (Primary Interop Assembly) d'Office. Ces assemblys permettent au code managé d'interagir avec le modèle objet COM des applications Office.  
   
- Chaque application Microsoft Office possède un assembly PIA. Quand vous créez un projet Office dans Visual Studio, une référence au PIA approprié est automatiquement ajoutée au projet. Pour automatiser les fonctionnalités d'autres applications Office à partir du projet, vous devez ajouter cette référence manuellement. Pour plus d'informations, consultez [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+ Chaque application Microsoft Office possède un assembly PIA. Quand vous créez un projet Office dans Visual Studio, une référence au PIA approprié est automatiquement ajoutée au projet. Pour automatiser les fonctionnalités d'autres applications Office à partir du projet, vous devez ajouter cette référence manuellement. Pour plus d'informations, consultez [Comment : cibler les applications Office via les assemblys PIA (Primary Interop Assembly)](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 ### <a name="using-primary-interop-assemblies-at-design-time-and-run-time"></a>Utilisation d'assemblys PIA au moment du design et au moment de l'exécution  
  Pour que vous puissiez effectuer la plupart des tâches de développement, les assemblys PIA d'Office doivent être installés et inscrits dans le Global Assembly Cache de votre ordinateur de développement. Pour plus d'informations, consultez [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -64,7 +64,7 @@ ms.lasthandoff: 01/10/2018
  Sur les ordinateurs des utilisateurs finaux, les assemblys PIA d'Office ne sont pas nécessaires pour exécuter les solutions Office ciblant [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure. Pour plus d'informations, consultez [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md).  
   
 ### <a name="using-types-in-primary-interop-assemblies"></a>Utilisation de types dans les assemblys PIA (Primary Interop Assembly)  
- Les assemblys PIA d'Office fournissent une combinaison de types qui exposent le modèle objet des applications Office et d'autres types d'infrastructure qui ne sont pas prévus pour être utilisés directement dans votre code. Pour obtenir une vue d’ensemble des types dans les assemblys PIA Office, consultez [Overview of Classes and Interfaces in the Office Primary Interop Assemblies](http://msdn.microsoft.com/en-us/da92dc3c-8209-44de-8095-a843659368d5).  
+ Les assemblys PIA d'Office fournissent une combinaison de types qui exposent le modèle objet des applications Office et d'autres types d'infrastructure qui ne sont pas prévus pour être utilisés directement dans votre code. Pour obtenir une vue d’ensemble des types dans les assemblys PIA Office, consultez [vue d'ensemble des classes et des interfaces dans les assemblys PIA (Primary Interop Assembly) d'Office](http://msdn.microsoft.com/en-us/da92dc3c-8209-44de-8095-a843659368d5).  
   
  Étant donné que les types des assemblys PIA d'Office correspondent aux types des modèles objet COM, la façon dont vous utilisez ces types diffère souvent des autres types managés. Par exemple, le mode d'appel des méthodes possédant des paramètres optionnels dans un assembly PIA d'Office dépend du langage de programmation utilisé dans le projet. Pour plus d’informations, consultez les rubriques suivantes :  
   
@@ -88,7 +88,7 @@ ms.lasthandoff: 01/10/2018
  Pour plus d’informations, consultez [accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ### <a name="namespace-considerations-in-office-solutions"></a>Considérations relatives à l'espace de noms dans les solutions Office  
- Vous ne pouvez pas modifier l' *espace de noms par défaut* (ou l' *espace de noms racine* dans Visual Basic) dans un projet Office existant. L'espace de noms par défaut correspondra toujours au nom du projet que vous avez spécifié lors de sa création. Si vous renommez votre projet, l'espace de noms par défaut ne change pas. Pour plus d’informations sur l’espace de noms par défaut dans les projets, consultez [Page Application, Concepteur de projets &#40; C &#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) et [Page Application, Concepteur de projets &#40; Visual Basic &#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ Vous ne pouvez pas modifier l' *espace de noms par défaut* (ou l' *espace de noms racine* dans Visual Basic) dans un projet Office existant. L'espace de noms par défaut correspondra toujours au nom du projet que vous avez spécifié lors de sa création. Si vous renommez votre projet, l'espace de noms par défaut ne change pas. Pour plus d’informations sur l’espace de noms par défaut dans les projets, consultez [Page Application, Concepteur de projets & #40 ; C & #35 ; & #41 ; ](/visualstudio/ide/reference/application-page-project-designer-csharp) et [Page Application, Concepteur de projets & #40 ; Visual Basic & #41 ; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="changing-the-namespace-of-host-item-classes-in-c-projects"></a>Modification de l'espace de noms des classes d'élément hôte dans les projets C#  
  Les classes d'élément hôte (par exemple, `ThisAddIn`, `ThisWorkbook`et `ThisDocument` ) ont leurs propres espaces de noms dans les projets Office Visual C#. Par défaut, l'espace de noms des éléments hôtes dans votre projet correspond au nom de projet que vous avez spécifié lors de la création de ce dernier.  
@@ -110,7 +110,7 @@ ms.lasthandoff: 01/10/2018
 |Fonctionnalité|Description|Prise en charge dans Visual Basic|Prise en charge dans Visual C#|  
 |-------------|-----------------|--------------------------|------------------------|  
 |Paramètres optionnels|De nombreuses méthodes Microsoft Office possèdent des paramètres qui ne sont pas obligatoires quand vous les appelez. Si aucune valeur n'est passée comme paramètre, une valeur par défaut est utilisée.|Visual Basic prend en charge les paramètres optionnels.|Visual C# prend en charge les paramètres optionnels dans la plupart des cas. Pour plus d’informations, consultez [paramètres optionnels dans les Solutions Office](../vsto/optional-parameters-in-office-solutions.md).|  
-|Passage de paramètres par référence|Dans la plupart des assemblys PIA (Primary Interop Assembly) de Microsoft Office, les paramètres optionnels peuvent être passés par valeur. Toutefois, dans certains assemblys PIA, les paramètres optionnels qui acceptent les types référence doivent être passés par référence.<br /><br /> Pour plus d’informations sur les paramètres de type valeur et référence, consultez [en passant les Arguments par valeur et par référence &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (pour Visual Basic) et [en passant les paramètres &#40; C &#35; Guide de programmation &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Le passage des paramètres par référence est possible sans codage supplémentaire. Le compilateur Visual Basic passe automatiquement les paramètres par référence nécessaires.|Le plus souvent, le compilateur Visual C# passe automatiquement les paramètres par référence nécessaires. Pour plus d’informations, consultez [paramètres optionnels dans les Solutions Office](../vsto/optional-parameters-in-office-solutions.md).|  
+|Passage de paramètres par référence|Dans la plupart des assemblys PIA (Primary Interop Assembly) de Microsoft Office, les paramètres optionnels peuvent être passés par valeur. Toutefois, dans certains assemblys PIA, les paramètres optionnels qui acceptent les types référence doivent être passés par référence.<br /><br /> Pour plus d’informations sur les paramètres de type valeur et référence, consultez [en passant les Arguments par valeur et par référence & #40 ; Visual Basic & #41 ; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (pour Visual Basic) et [en passant les paramètres & #40 ; C & #35 ; Guide de programmation & #41 ; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Le passage des paramètres par référence est possible sans codage supplémentaire. Le compilateur Visual Basic passe automatiquement les paramètres par référence nécessaires.|Le plus souvent, le compilateur Visual C# passe automatiquement les paramètres par référence nécessaires. Pour plus d’informations, consultez [paramètres optionnels dans les Solutions Office](../vsto/optional-parameters-in-office-solutions.md).|  
 |Propriétés paramétrables|Certaines propriétés acceptent des paramètres et agissent comme des fonctions en lecture seule.|Visual Basic prend en charge les propriétés qui acceptent des paramètres.|Visual C# prend en charge les propriétés qui acceptent des paramètres.|  
 |Liaison tardive|La liaison tardive implique de déterminer les propriétés d'objets au moment de l'exécution, au lieu d'effectuer un cast de variables en type d'objet au moment du design.|Visual Basic effectue la liaison tardive quand **Option Strict** est désactivé. Si **Option Strict** est activé, vous devez convertir explicitement les objets et utiliser les types figurant dans l'espace de noms <xref:System.Reflection> pour accéder aux membres à liaison tardive. Pour plus d'informations, consultez [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|Visual C# effectue la liaison tardive dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Pour plus d'informations, consultez [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|  
   
@@ -119,13 +119,13 @@ ms.lasthandoff: 01/10/2018
   
 |Fonctionnalité|Description|Prise en charge dans Visual Basic et Visual C#|  
 |-------------|-----------------|-----------------------------------------|  
-|Index de tableau|La limite de tableau inférieure de collections dans les applications Microsoft Office commencent par 1. Visual Basic et Visual C# utilisent des tableaux basés sur 0. Pour plus d’informations, consultez [tableaux &#40; C &#35; Guide de programmation &#41; ](/dotnet/csharp/programming-guide/arrays/index) et [tableaux en Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Pour accéder au premier élément d'une collection dans le modèle objet d'une application Microsoft Office, utilisez l'index 1 au lieu de 0.|  
+|Index de tableau|La limite de tableau inférieure de collections dans les applications Microsoft Office commencent par 1. Visual Basic et Visual C# utilisent des tableaux basés sur 0. Pour plus d’informations, consultez [tableaux & #40 ; C & #35 ; Guide de programmation & #41 ; ](/dotnet/csharp/programming-guide/arrays/index) et [tableaux en Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Pour accéder au premier élément d'une collection dans le modèle objet d'une application Microsoft Office, utilisez l'index 1 au lieu de 0.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Paramètres optionnels dans les Solutions Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Événements dans les projets Office](../vsto/events-in-office-projects.md)   
- [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Comment : cibler les applications Office via les assemblys PIA (Primary Interop Assembly)](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md)   
  [Liaison tardive dans les Solutions Office](../vsto/late-binding-in-office-solutions.md)   
  [Développement collaboratif de solutions Office](../vsto/collaborative-development-of-office-solutions.md)  

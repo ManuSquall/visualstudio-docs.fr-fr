@@ -1,12 +1,12 @@
 ---
-title: "Comment : ajouter une zone de formulaire à un projet de complément Outlook | Documents Microsoft"
-ms.custom: 
+title: 'Comment : ajouter une zone de formulaire à un projet de complément Outlook | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VSTO.NewFormRegionWizard.Page1
@@ -67,7 +67,7 @@ ms.lasthandoff: 01/10/2018
   
 10. Cliquez sur **Suivant**.  
   
-11. Dans la page **Identifiez les classes de message qui afficheront cette zone de formulaire** , sélectionnez les classes de message Outlook standard ou tapez le nom d’une ou plusieurs classes de message personnalisées, puis cliquez sur **Terminer**. Pour plus d'informations, consultez [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+11. Dans la page **Identifiez les classes de message qui afficheront cette zone de formulaire** , sélectionnez les classes de message Outlook standard ou tapez le nom d’une ou plusieurs classes de message personnalisées, puis cliquez sur **Terminer**. Pour plus d'informations, consultez [Association d'une zone de formulaire à une classe de message Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [L’accès à une zone de formulaire au moment de l’exécution](../vsto/accessing-a-form-region-at-run-time.md)   

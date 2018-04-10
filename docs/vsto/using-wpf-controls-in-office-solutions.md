@@ -1,12 +1,12 @@
 ---
-title: "Utilisation de contrôles WPF dans les Solutions Office | Documents Microsoft"
-ms.custom: 
+title: Utilisation de contrôles WPF dans les Solutions Office | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -86,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio crée automatiquement un objet <xref:System.Windows.Forms.Integration.ElementHost> qui héberge le contrôle utilisateur WPF dans le contrôle utilisateur Windows Forms.  
   
-8.  Écrivez le code qui ajoute par programmation le contrôle utilisateur Windows Forms au document ou au classeur. Pour plus d'informations, consultez [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+8.  Écrivez le code qui ajoute par programmation le contrôle utilisateur Windows Forms au document ou au classeur. Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
     > [!NOTE]  
     >  Vous ne pouvez pas faire glisser le contrôle utilisateur Windows Forms vers le document ou la feuille de calcul du concepteur .  
