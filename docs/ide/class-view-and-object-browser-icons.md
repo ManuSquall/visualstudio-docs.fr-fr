@@ -1,11 +1,12 @@
 ---
-title: "Affichage de classes et Explorateur d’objets, icônes | Microsoft Docs"
-ms.custom: 
+title: Affichage de classes et Explorateur d’objets, icônes | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - icons, in Object Browser
@@ -19,14 +20,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: caac984e7d281740c322d535bebe84032c15a38e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f0a4371ae086e158f3fd7025e9867ffb99c92090
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="class-view-and-object-browser-icons"></a>Affichage de classes et Explorateur d'objets, icônes
+# <a name="class-view-and-object-browser-icons"></a>Icônes Affichage de classes et Explorateur d’objets
 
 L’**affichage de classes** et l’**Explorateur d’objets** affichent des icônes qui représentent des entités de code, par exemple, des espaces de noms, des classes, des fonctions et des variables. Le tableau suivant illustre et décrit ces icônes.
 
@@ -46,7 +48,7 @@ L’**affichage de classes** et l’**Explorateur d’objets** affichent des ic�
 |![Symbole de carte](../ide/media/vxmap_icon.gif "vxMap_Icon")|Carte|![Symbole de point d’exclamation d’erreur](../ide/media/vxerror_icon.gif "vxError_Icon")|Inconnu|  
 |![Symbole de transfert de type](../ide/media/ob_type_forward.gif "ob_type_forward")|Transfert de type|||  
 
-## <a name="signal-icons"></a>icônes de signalisation
+## <a name="signal-icons"></a>Icônes de signalisation
 
 Les icônes de signalisation suivantes s’appliquent à toutes les icônes précédentes et indiquent leur accessibilité.
 
@@ -64,4 +66,4 @@ Les icônes de signalisation suivantes s’appliquent à toutes les icônes pré
 
 ## <a name="see-also"></a>Voir aussi
 
-[Affichage de la structure du code](../ide/viewing-the-structure-of-code.md)
+[Afficher la structure du code](../ide/viewing-the-structure-of-code.md)

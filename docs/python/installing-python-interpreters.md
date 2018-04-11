@@ -1,26 +1,26 @@
 ---
-title: "Sélectionner et installer des interpréteurs Python | Microsoft Docs"
-description: "La liste complète des interpréteurs Python pris en charge dans Visual Studio, accompagnée d’instructions brèves pour trouver les programmes d’installation associés."
-ms.custom: 
+title: Sélectionner et installer des interpréteurs Python | Microsoft Docs
+description: La liste complète des interpréteurs Python pris en charge dans Visual Studio, accompagnée d’instructions brèves pour trouver les programmes d’installation associés.
+ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bdec69c45cbd6ebb7943ce38853fd2207000a0f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 3b8d1bf4f0ac6c66222f86e73b7c18cfdceb3354
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-python-interpreters"></a>Installer des interpréteurs Python
 
@@ -28,7 +28,7 @@ Par défaut, l’installation de la charge de travail de développement Python d
 
 Vous pouvez également installer manuellement l’un des interpréteurs figurant dans le tableau suivant en dehors de Visual Studio installer. Par exemple, si vous avez installé Anaconda 3 avant Visual Studio, vous n’avez pas besoin de le réinstaller avec Visual Studio Installer.
 
-Pour Visual Studio 2015 et versions antérieures, vous devez installer manuellement un des interpréteurs.
+Avec **Visual Studio 2015 et les versions antérieures**, vous devez installer manuellement un des interpréteurs.
 
 Visual Studio (toutes versions) détecte automatiquement chacun des interpréteurs Python installés et l’environnement associé en consultant le Registre (d’après [PEP 514 – Inscription de Python dans le Registre Windows](https://www.python.org/dev/peps/pep-0514/)).
 

@@ -1,27 +1,27 @@
 ---
-title: "Débogage de code Python dans Visual Studio | Microsoft Docs"
-description: "Procédure pas à pas des fonctionnalités de débogage de code Python dans Visual Studio, y compris la définition des points d’arrêt, l’exécution pas à pas, l’inspection des valeurs, la gestion des exceptions et le débogage dans la fenêtre interactive."
-ms.custom: 
+title: Déboguer du code Python | Microsoft Docs
+description: Procédure pas à pas des fonctionnalités de débogage de code Python dans Visual Studio, y compris la définition des points d’arrêt, l’exécution pas à pas, l’inspection des valeurs, la gestion des exceptions et le débogage dans la fenêtre interactive.
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 850fb940b35e3fe988b8ecf8dc483ed489f985db
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="debugging-your-python-code"></a>Débogage de votre code Python
 
@@ -49,7 +49,7 @@ Consultez également les articles ci-après concernant le débogage propre à un
 
 ## <a name="basic-debugging"></a>Bases du débogage
 
-Le flux de travail de débogage de base implique la définition de points d’arrêt, l’exécution de code pas à pas, l’inspection de valeurs et la gestion des exceptions, comme décrit dans les sections suivantes. Pour plus d’informations sur le débogueur Visual Studio, consultez l’article [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md).
+Le flux de travail de débogage de base implique la définition de points d’arrêt, l’exécution de code pas à pas, l’inspection de valeurs et la gestion des exceptions, comme décrit dans les sections suivantes.
 
 Une session de débogage est initialisée par la commande **Débogage > Démarrer le débogage**, le bouton **Démarrer** de la barre d’outils ou la touche F5. Ces opérations lancent le fichier de démarrage de votre projet (indiqué en gras dans l’Explorateur de solutions) avec l’environnement actif du projet et tous les arguments de ligne de commande ou chemins de recherche qui ont été spécifiés dans Propriétés du projet (consultez la section [Options de débogage d’un projet](#project-debugging-options)). **Visual Studio 2017 versions 15.6** et ultérieures vous avertit si vous n’avez pas de fichier de démarrage défini ; les versions antérieures peuvent ouvrir une fenêtre de sortie avec l’interpréteur Python en cours d’exécution, ou la fenêtre de sortie s’affiche brièvement et disparaît. Dans tous les cas, cliquez avec le bouton droit sur le fichier approprié et sélectionnez **Définir comme fichier de démarrage**.
 
@@ -198,3 +198,7 @@ Notez que les fenêtres du débogueur standard telles que Processus, Threads et 
 La fenêtre interactive de débogage comporte son propre jeu d’options, accessibles par le biais des commandes **Outils > Options > Python Tools > Fenêtre interactive de débogage**. Contrairement à la fenêtre interactive Python standard, dont il existe une instance distincte pour chaque environnement Python, il n’existe qu’une seule fenêtre de débogage interactive, laquelle utilise systématiquement l’interpréteur Python pour le processus en cours de débogage. Consultez [Options - Options de débogage](python-support-options-and-settings-in-visual-studio.md#debugging-options).
 
 ![Options de la fenêtre de débogage interactive](media/debugging-interactive-options.png)
+
+## <a name="see-also"></a>Voir aussi
+
+Pour plus d’informations sur le débogueur Visual Studio, consultez l’article [Débogage dans Visual Studio](../debugger/debugger-feature-tour.md).

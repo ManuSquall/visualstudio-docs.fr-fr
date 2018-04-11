@@ -1,27 +1,27 @@
 ---
-title: "Guide pratique pour définir des commandes de menu personnalisées pour les projets Python dans Visual Studio | Microsoft Docs"
-description: "Montre comment modifier des fichiers projet et des fichiers de cibles pour ajouter des commandes personnalisées dans le menu contextuel du projet Python dans Visual Studio. Les commandes peuvent être appelées sur des programmes exécutables, des scripts, des modules, des extraits de code inline et des commandes pip."
-ms.custom: 
+title: Guide pratique pour définir des commandes de menu personnalisées pour les projets Python | Microsoft Docs
+description: Montre comment modifier des fichiers projet et des fichiers de cibles pour ajouter des commandes personnalisées dans le menu contextuel du projet Python dans Visual Studio. Les commandes peuvent être appelées sur des programmes exécutables, des scripts, des modules, des extraits de code inline et des commandes pip.
+ms.custom: ''
 ms.date: 02/02/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ec06764bb898888657a144f682827896f52ce223
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: a8e7f1f05ba6a93e696ee13e2f28305b8784d7c2
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Définition de commandes personnalisées pour les projets Python
 
@@ -50,7 +50,7 @@ Chaque commande personnalisée peut faire référence à un fichier Python, un m
 
 Pour vous familiariser avec les commandes personnalisées, cette section décrit un exemple simple qui exécute directement le fichier de démarrage d’un projet avec python.exe. (Cette commande revient à utiliser **Déboguer > Démarrer sans débogage**.)
 
-1. Créez un projet nommé « Python-CustomCommands » en utilisant le modèle « Application Python ». (Consultez [Démarrage rapide : créer un projet de Python à partir d’un modèle](quickstart-02-project-from-template.md) pour obtenir des instructions si vous ne connaissez pas encore le processus.)
+1. Créez un projet nommé « Python-CustomCommands » en utilisant le modèle « Application Python ». (Consultez [Démarrage rapide : créer un projet de Python à partir d’un modèle](quickstart-02-python-in-visual-studio-project-from-template.md) pour obtenir des instructions si vous ne connaissez pas encore le processus.)
 
 1. Dans `Python_CustomCommands.py`, ajoutez le code `print("Hello custom commands")`.
 
@@ -152,7 +152,7 @@ Toutes les valeurs d’attribut sont insensibles à la casse.
 | TargetType | Oui | Spécifie ce que contient l’attribut Target et comment il est utilisé avec l’attribut Arguments :<ul><li>**executable** : exécute l’exécutable nommé dans Target, en ajoutant la valeur dans Arguments, comme si vous l’entriez directement sur la ligne de commande. La valeur doit contenir uniquement un nom de programme sans arguments.</li><li>**script** : exécute `python.exe` avec le nom de fichier dans Target, suivi de la valeur dans Arguments.</li><li>**module** : exécute `python -m`, suivi du nom du module dans Target, suivi de la valeur dans Arguments.</li><li>**code** : exécute le code inline contenu dans Target. La valeur Arguments est ignorée.</li><li>**pip** : exécute `pip` avec la commande dans Target, suivi d’Arguments ; toutefois, si ExecuteIn a la valeur « output », pip suppose la commande `install` et utilise Target comme nom de package.</li></ul> |
 | une cible | Oui | Nom de fichier, nom du module, code ou commande pip à utiliser selon le TargetType. |
 | Arguments | Facultatif | Spécifie une chaîne d’arguments (le cas échéant) à donner à la cible. Quand le TargetType a la valeur `script`, notez que les arguments sont fournis au programme Python, et non à `python.exe`. Ignoré pour le TargetType `code`. |
-| ExecuteIn | Oui | Spécifie l’environnement dans lequel exécuter la commande :<ul><li>**console** : (par défaut) exécute Target et les arguments comme si vous les entriez directement sur la ligne de commande. Une fenêtre de commande s’affiche durant l’exécution de Target, puis se ferme automatiquement.</li><li>**consolepause** : identique à console, mais attend l’appui sur une touche avant de fermer la fenêtre.</li><li>**output** : exécute Target et affiche ses résultats dans la fenêtre Sortie de Visual Studio. Si TargetType a la valeur « pip », Visual Studio utilise Target comme nom du package et ajoute les arguments.</li><li>**repl** : exécute Target dans la [fenêtre interactive Python](interactive-repl.md) ; le nom d’affichage facultatif est utilisé pour le titre de la fenêtre.</li><li>**none** : se comporte comme console.</li></ul>|
+| ExecuteIn | Oui | Spécifie l’environnement dans lequel exécuter la commande :<ul><li>**console** : (par défaut) exécute Target et les arguments comme si vous les entriez directement sur la ligne de commande. Une fenêtre de commande s’affiche durant l’exécution de Target, puis se ferme automatiquement.</li><li>**consolepause** : identique à console, mais attend l’appui sur une touche avant de fermer la fenêtre.</li><li>**output** : exécute Target et affiche ses résultats dans la fenêtre Sortie de Visual Studio. Si TargetType a la valeur « pip », Visual Studio utilise Target comme nom du package et ajoute les arguments.</li><li>**repl** : exécute Target dans la [fenêtre interactive Python](python-interactive-repl-in-visual-studio.md) ; le nom d’affichage facultatif est utilisé pour le titre de la fenêtre.</li><li>**none** : se comporte comme console.</li></ul>|
 | WorkingDirectory | Facultatif | Dossier dans lequel exécuter la commande. |
 | ErrorRegex<br>WarningRegEx | Facultatif | Utilisé uniquement quand ExecuteIn a la valeur `output`. Les deux valeurs spécifient une expression régulière avec laquelle Visual Studio analyse le résultat de la commande pour afficher les erreurs et les avertissements dans sa fenêtre Liste d’erreurs. Si rien n’est spécifié, la commande n’affecte pas la fenêtre Liste d’erreurs. Pour plus d’informations sur ce que Visual Studio attend, consultez [Groupes de capture nommés](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Facultatif | Liste de spécifications de package pour la commande au même format que [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). Par exemple, la commande **Exécuter PyLint** spécifie `pylint>=1.0.0`. Avant d’exécuter la commande, Visual Studio vérifie que tous les packages répertoriés dans la liste sont installés. Visual Studio utilise pip pour installer les packages manquants. |

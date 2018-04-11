@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2dac5f48f69ce00ae914929638f08cf35f5a96ac
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: cc37a3185224a66fbe0533c615737de7e0124dcf
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Guide de productivité Visual Studio 2017 pour les développeurs .NET
 
@@ -31,12 +31,7 @@ Si vous avez un autre environnement de développement intégré ou environnement
 - [Touches d’accès rapide pour Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-![Galerie des extensions Visual Studio](../ide/media/VSIDE_Productivity_Extensibility.png)
-
-Le tableau suivant liste les principaux raccourcis Visual Studio. 
-
-> [!NOTE]
-> Dans la mesure où certaines extensions dissocient les combinaisons de touches Visual Studio par défaut, vous devez les restaurer pour pouvoir utiliser les commandes suivantes. Restaurez les valeurs par défaut de vos combinaisons de touches Visual Studio en accédant à : **Outils > Importation et exportation de paramètres > Réinitialiser tous les paramètres** ou **Outils > Options > Clavier > Réinitialiser**.
+Le tableau suivant liste les principaux raccourcis de Visual Studio : 
 
 | Raccourci (tous les profils) | Commande | Description |
 |-|-|-|
@@ -48,10 +43,13 @@ Le tableau suivant liste les principaux raccourcis Visual Studio.
 | **Ctrl**+**D** | Dupliquer la ligne | Duplique la ligne de code où se trouve le curseur (disponible dans **Visual Studio 2017 versions 15.6** et ultérieures) |
 | **Maj**+**Alt**+**+**/**-** | Développer/Réduire la sélection | Développe ou réduit la sélection actuelle dans l’éditeur (disponible dans **Visual Studio 2017 version 15.5** et les versions ultérieures) |
 | **Ctrl + Q** | Lancement rapide | Effectuez une recherche parmi tous les paramètres Visual Studio |
-| **F5** | Lancement du débogage | Démarrez le débogage de votre application |
+| **F5** | Démarrer le débogage | Démarrez le débogage de votre application |
 | **Ctrl + F5** | Exécutez sans déboguer | Exécutez votre application localement sans débogage |
 | **CTRL + K, D** (profil par défaut) ou **Ctrl + E, D** (profil C#) | Mettre le document en forme | Nettoie les violations de mise en forme de votre fichier selon les paramètres de saut de ligne, d’espacement et de mise en retrait définis |
 | **Ctrl+\\,E** (profil par défaut) ou **Ctrl+W,E** (profil C#) | Voir la liste des erreurs | Affichez toutes les erreurs de votre document, projet ou solution |
+
+> [!NOTE]
+> Certaines extensions dissocient les combinaisons de touches de Visual Studio par défaut. Pour utiliser les commandes suivantes, restaurez les valeurs par défaut de Visual Studio de vos combinaisons de touches en accédant à **Outils > Paramètres d’importation et d’exportation > Réinitialiser tous les paramètres** ou à **Outils > Options > Clavier > Réinitialiser**.
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>J’ai besoin d’accéder rapidement à des fichiers ou des types.
 Visual Studio 2017 a une fonctionnalité appelée _Atteindre tout_ (**Ctrl+T**). Atteindre tout vous permet de passer rapidement à n’importe quelle déclaration de fichier, type, membre ou symbole.
@@ -99,7 +97,7 @@ Visual Studio 2017 contient de nombreuses fonctionnalités qui vous permettent d
 | Rechercher toutes les références | **Maj + F12**| Les résultats sont en couleur et peuvent être regroupés par projet, définition, etc. Vous pouvez également « verrouiller » les résultats. |
 | Accéder à l’implémentation | **Ctrl + F12** | Vous pouvez utiliser Atteindre la définition sur le mot clé `override` pour accéder au membre substitué |
 | Atteindre la définition | **F12** ou **Ctrl + clic**| Vous pouvez maintenir la touche **Ctrl** enfoncée et cliquer pour accéder à la définition | 
-| Aperçu de la définition | **Alt + F12** | Vue inline d’une définition |
+| Aperçu de définition | **Alt + F12** | Vue inline d’une définition |
 | Visualiseur de structure | Lignes grises en pointillés entre accolades | Placez le curseur pour voir la structure de votre code |
 | Navigation vers les assemblys décompilés | **F12** ou **Ctrl + clic** | Accédez à une source externe (décompilée avec ILSpy) en activant la fonctionnalité : **Outils > Options > Éditeur de texte > C# > Avancé > Activer la navigation vers les sources décompilées**. |
 

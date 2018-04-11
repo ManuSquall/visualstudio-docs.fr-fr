@@ -1,12 +1,13 @@
 ---
 title: Variables (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - coercion
 - case sensitivity, JavaScript variable name
 ms.assetid: 12a450e5-4818-4a09-9878-cd7c6cd2a248
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f30946899ad35286dfb1e786cf903d58f5c98cb6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1d09f634bd4901e4015766bf55f272926a0a31c
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="variables-javascript"></a>Variables (JavaScript)
 Dans [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], une variable contient une valeur, par exemple « hello » ou 5. Quand vous utilisez la variable, vous faites référence aux données qu’elle représente, par exemple `NumberOfDaysLeft = EndDate - TodaysDate`.  
@@ -48,7 +49,7 @@ var count = 0, amount = 100;
 ## <a name="naming-variables"></a>Attribution de noms aux variables  
  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] est un langage qui respecte la casse. Cela signifie qu’un nom de variable comme **Moncompteur** est différent du nom de variable **MONCompteur**. La longueur des noms de variable n’est pas limitée. Pour créer des noms de variable autorisés, tenez compte des règles suivantes :  
   
--   Le premier caractère doit être une lettre ASCII (majuscule ou minuscule) ou un trait de soulignement (_). Notez que le premier caractère ne peut pas être un nombre.  
+-   Le premier caractère doit être une lettre ASCII (majuscule ou minuscule), une lettre conforme aux conventions d’affectation de noms de variables Unicode ou un trait de soulignement (_). Notez que le premier caractère ne peut pas être un nombre.  
   
 -   Les caractères suivants doivent être des lettres, des chiffres ou des traits de soulignement (_).  
   
