@@ -1,9 +1,9 @@
 ---
-title: "Personnalisation de la fenêtre Propriétés | Documents Microsoft"
-ms.custom: 
+title: Personnalisation de la fenêtre Propriétés | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 545c8181cdaa3f13d2de04f13101d2678f9fd0ab
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-the-properties-window"></a>Personnalisation de la fenêtre Propriétés
 Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propriétés dans votre langage spécifique à un domaine (DSL) dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dans votre définition DSL, vous définissez des propriétés de domaine sur chaque classe de domaine. Par défaut, lorsque vous sélectionnez une instance de la classe, sur un diagramme ou dans l’Explorateur de modèles, chaque propriété de domaine est répertoriée dans la fenêtre Propriétés. Cela vous permet afficher et modifier les valeurs des propriétés de domaine, même si vous n'avez pas mappé aux champs de forme sur le diagramme.  
@@ -183,7 +183,7 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 > [!NOTE]
 >  Ajoutez le code dans un fichier de code séparé dans le **Dsl** projet.  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor  
@@ -223,7 +223,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
   
 ```  
   
- Définissez une classe qui dérive de <xref:System.ComponentModel.TypeConverter>. Ajoutez le code dans un fichier distinct dans le **Dsl** projet. Exemple :  
+ Définissez une classe qui dérive de <xref:System.ComponentModel.TypeConverter>. Ajoutez le code dans un fichier distinct dans le **Dsl** projet. Par exemple :  
   
 ```csharp  
 /// <summary>  

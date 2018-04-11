@@ -1,9 +1,9 @@
 ---
-title: "La validation dans un langage spécifique à un domaine | Documents Microsoft"
-ms.custom: 
+title: La validation dans un langage spécifique à un domaine | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, constraints
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb2e734bd94608584ca700223fb75387eb484fb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validation dans un langage spécifique à un domaine
 En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez définir des contraintes de validation afin de vérifier que le modèle créé par l'utilisateur a un sens. Par exemple, si votre DSL permet aux utilisateurs de tracer l'arbre généalogique d'une famille et de ses ancêtres, vous pouvez écrire une contrainte qui garantit que les enfants ont des dates de naissance postérieures à celles de leurs parents.  
@@ -303,7 +303,7 @@ namespace Company.FamilyTree
   
  Les gestionnaires sont aussi appelés après les opérations Annuler ou Rétablir qui affectent les liens ou les éléments.  
   
-##  <a name="custom"></a>Catégories de Validation personnalisée  
+##  <a name="custom"></a> Catégories de Validation personnalisée  
  En plus des catégories de validation standard, telles que Menu ou Ouvrir, vous pouvez définir vos propres catégories. Vous pouvez invoquer ces catégories à partir du code de programme. L'utilisateur ne peut pas les appeler directement.  
   
  Une utilisation classique des catégories personnalisées consiste à définir une catégorie qui teste si le modèle satisfait aux conditions préalables d'un outil particulier.  
@@ -331,7 +331,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a>Alternatives à la Validation  
+##  <a name="alternatives"></a> Alternatives à la Validation  
  Les contraintes de validation signalent les erreurs, mais ne modifient pas le modèle. Si, à la place, vous voulez empêcher que le modèle ne devienne non valide, vous pouvez utiliser d'autres techniques.  
   
  Cependant, ces techniques ne sont pas recommandées. Il est généralement préférable de laisser l'utilisateur décider de la façon dont un modèle non valide doit être corrigé.  

@@ -25,10 +25,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 995f77fac8e62e963207408a1e127a557906d10e
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity, tâche
 Récupère les identités d’assembly des fichiers spécifiés et génère les informations d’identité.  

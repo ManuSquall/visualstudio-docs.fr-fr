@@ -1,11 +1,11 @@
 ---
-title: "Message, tâche | Microsoft Docs"
-ms.custom: 
+title: Message, tâche | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Message
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - MSBuild, Message task
 - Message task [MSBuild]
 ms.assetid: 2293309d-42b6-46dc-9684-8c146f66bc28
-caps.latest.revision: 
+caps.latest.revision: 23
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 442ce8ab8a137f6ca359a4ff8ebc6fcd7e2272cc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="message-task"></a>Message, tâche
 Enregistre un message pendant une génération.  

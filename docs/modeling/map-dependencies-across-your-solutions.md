@@ -32,10 +32,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: aea44beeb2a8e6380bd9a568acdece79873e3050
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
 
@@ -287,7 +287,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ##  <a name="SeeSourceHeader"></a> Visualiser les dépendances entre les fichiers sources et les fichiers d’en-tête C et C++  
  Si vous souhaitez créer des cartes plus complètes pour des projets C++, définissez l’option du compilateur d’informations de consultation (**/FR**) sur ces projets. Sinon, un message vous invite à définir cette option. Si vous sélectionnez **OK**, l’option est définie uniquement pour la carte active. Vous pouvez choisir de masquer le message pour toutes les cartes ultérieures. Si vous masquez ce message, vous pouvez le faire réapparaître. Affectez à la clé de Registre suivante la valeur `0` ou supprimez-la :  
 
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
 
  Lorsque vous ouvrez une solution qui contient des projets Visual C++, la mise à jour de la base de données IntelliSense peut prendre un certain temps. Pendant ce temps, il est impossible de créer des cartes de code pour les fichiers d’en-tête (.h ou `#include`) tant que la base de données IntelliSense n’a pas terminé la mise à jour. Vous pouvez surveiller la progression des mises à jour dans la barre d’état de Visual Studio. Pour résoudre les problèmes ou messages qui s’affichent en raison de la désactivation de certains paramètres IntelliSense, consultez [Résoudre les problèmes liés aux cartes dans le code C et C++](#Troubleshooting).  
 

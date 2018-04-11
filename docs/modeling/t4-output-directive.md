@@ -1,9 +1,9 @@
 ---
 title: T4 La Directive de sortie | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: dc226af7afb14d180dfdc823e293365df2a7a9ca
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="t4-output-directive"></a>Directive de sortie T4
 Dans les modèles de texte [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la directive `output` sert à définir l'extension du nom de fichier et l'encodage du fichier transformé.  

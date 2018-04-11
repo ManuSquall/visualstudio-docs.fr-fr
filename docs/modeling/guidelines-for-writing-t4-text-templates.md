@@ -1,9 +1,9 @@
 ---
-title: "Instructions pour l’écriture de modèles de texte T4 | Documents Microsoft"
-ms.custom: 
+title: Instructions pour l’écriture de modèles de texte T4 | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: accf32ad313cbbfe11c2e85fdfe3101ab428c4a4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instructions relatives à l'écriture de modèles de texte T4
 Ces instructions générales peuvent être utiles si vous générez du code de programme ou d’autres ressources de l’application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ils ne sont pas fixes règles.  
@@ -136,7 +136,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
  Écrivez un exemple de code ou du texte que vous souhaitez générer et assurez-vous qu’il est correct. Puis remplacez son extension .tt et insérez le code qui modifie le contenu en lisant le modèle de façon incrémentielle.  
   
  Envisagez d’utiliser des modèles typés.  
- Bien que vous pouvez créer un schéma XML ou de base de données pour vos modèles, il peut être utile de créer un langage spécifique à un domaine (DSL). Une DSL présente l’avantage qu’il génère une classe pour représenter chaque nœud dans le schéma et des propriétés pour représenter les attributs. Cela signifie que vous pouvez programmer le modèle d’entreprise. Exemple :  
+ Bien que vous pouvez créer un schéma XML ou de base de données pour vos modèles, il peut être utile de créer un langage spécifique à un domaine (DSL). Une DSL présente l’avantage qu’il génère une classe pour représenter chaque nœud dans le schéma et des propriétés pour représenter les attributs. Cela signifie que vous pouvez programmer le modèle d’entreprise. Par exemple :  
   
 ```  
 Team Members:  

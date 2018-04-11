@@ -1,9 +1,9 @@
 ---
-title: "Comment : étendre le Concepteur de langage spécifique à un domaine | Documents Microsoft"
-ms.custom: 
+title: 'Comment : étendre le Concepteur de langage spécifique à un domaine | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Comment : étendre le concepteur de langage spécifique à un domaine
 Vous pouvez apporter des extensions vers le concepteur qui vous permet de modifier des définitions DSL. Types d’extensions que vous pouvez apporter comprennent l’ajout de commandes de menu, ajout de gestionnaires pour faire glisser et double-cliquez sur les mouvements et les règles qui sont déclenchés lorsque des types particuliers de relations ou des valeurs changent. Les extensions peuvent empaquetées en tant qu’une Extension d’intégration Visual Studio (VSIX) et distribuées à d’autres utilisateurs.  
@@ -65,7 +65,7 @@ Vous pouvez apporter des extensions vers le concepteur qui vous permet de modifi
   
      System.Windows.Forms  
   
-## <a name="testing-and-deployment"></a>Test et déploiement  
+## <a name="testing-and-deployment"></a>Tests et déploiement  
  Pour tester les extensions dans cette rubrique, générer et exécuter la solution. Une instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] s’ouvre. Dans cette instance, ouvrez une solution DSL. Modifier le diagramme DslDefinition. Le comportement d’extension peut être consulté.  
   
  Pour déployer les extensions à la main [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]et à d’autres ordinateurs, procédez comme suit :  

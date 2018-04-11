@@ -1,11 +1,11 @@
 ---
-title: "CreateItem, tâche | Microsoft Docs"
-ms.custom: 
+title: CreateItem, tâche | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateItem
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - CreateItem task [MSBuild]
 - MSBuild, CreateItem task
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
-caps.latest.revision: 
+caps.latest.revision: 15
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 26f3851380e4cb7820a10b203a5e7a1b6c96287b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="createitem-task"></a>CreateItem, tâche
 Remplit des collections d’éléments avec les éléments d’entrée. Cela permet de copier des éléments d’une liste à une autre.  

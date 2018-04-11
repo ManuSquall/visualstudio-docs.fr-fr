@@ -1,9 +1,9 @@
 ---
-title: "Ajouter la validation d’architecture personnalisée aux diagrammes de dépendance | Documents Microsoft"
-ms.custom: 
+title: Ajouter la validation d’architecture personnalisée aux diagrammes de dépendance | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7679398e5acfc2f23d51ea7f943e35d0d82e500e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Ajouter la validation d’architecture personnalisée aux diagrammes de dépendance
 Dans Visual Studio, les utilisateurs peuvent valider le code source dans un projet sur un modèle de couche afin qu’ils peuvent également vérifier que le code source est conforme aux dépendances sur un diagramme de dépendances. Il existe un algorithme de validation standard, mais vous pouvez définir vos propres extensions de validation.  
@@ -32,7 +32,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
 > [!WARNING]
 >  Après avoir créé un projet de validation, copiez l’ [exemple de code](#example) à la fin de cette rubrique, puis adaptez-le à vos besoins.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  Consultez [Spécifications](../modeling/extend-layer-diagrams.md#prereqs).  
   
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>Définition d’un validateur de couche dans une nouvelle extension VSIX  

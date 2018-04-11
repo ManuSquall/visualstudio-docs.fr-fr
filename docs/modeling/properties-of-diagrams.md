@@ -1,9 +1,9 @@
 ---
-title: "Propriétés des diagrammes | Documents Microsoft"
-ms.custom: 
+title: Propriétés des diagrammes | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.dsldiagram
@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c00ec651510da84594c370e312112c50bc545606
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="properties-of-diagrams"></a>Propriétés des diagrammes
 Vous pouvez définir des propriétés qui spécifient comment les diagrammes seront affichera dans le concepteur généré. Par exemple, vous pouvez spécifier une couleur par défaut pour le texte dans le diagramme.  
@@ -36,7 +36,7 @@ Vous pouvez définir des propriétés qui spécifient comment les diagrammes ser
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe du code généré.|\<none>|  
 |Génère deux dérivées|Si `True`, une classe de base et une classe partielle (pour la personnalisation par des remplacements) seront générés. Pour plus d’informations, consultez [substituer et étendre les Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |A constructeur personnalisé|Si `True`, un constructeur personnalisé sera fourni dans le code source. Pour plus d’informations, consultez [substituer et étendre les Classes générées](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
-|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du diagramme (`none`, `abstract` ou `sealed`).|Aucun.|  
+|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du diagramme (`none`, `abstract` ou `sealed`).|Aucun|  
 |Diagramme de base|La classe de base de ce schéma.|(aucune)|  
 |Name|Le nom de ce schéma.|Nom actuel|  
 |Espace de noms|L’espace de noms n’est affilié à ce schéma.|Espace de noms actuel|  

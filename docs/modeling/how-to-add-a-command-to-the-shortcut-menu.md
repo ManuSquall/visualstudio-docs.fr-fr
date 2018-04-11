@@ -1,9 +1,9 @@
 ---
-title: "Comment : ajouter une commande au Menu contextuel | Documents Microsoft"
-ms.custom: 
+title: 'Comment : ajouter une commande au Menu contextuel | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 4f65964e1d7fd4221746d8ec17a498cf9ee3a354
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Comment : ajouter une commande au menu contextuel
 Vous pouvez ajouter des commandes de menu à votre langage spécifique à un domaine (DSL, Domain-Specific Language) pour que vos utilisateurs puissent effectuer des tâches spécifiques à votre solution DSL. Les commandes apparaissent dans le menu contextuel quand les utilisateurs cliquent avec le bouton droit sur le diagramme. Vous pouvez définir une commande pour qu'elle apparaisse dans le menu uniquement dans des circonstances spécifiques. Par exemple, vous pouvez rendre la commande visible uniquement quand l'utilisateur clique sur des types d'éléments spécifiques ou sur des éléments qui sont dans des états spécifiques.  
@@ -51,7 +51,7 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
   
  Autrement, vous pouvez utiliser la méthode MEF pour définir des commandes. Pour plus d’informations, consultez [étendre votre DSL à l’aide de MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
-##  <a name="VSCT"></a>Déclarez la commande dans Commands.Vsct  
+##  <a name="VSCT"></a> Déclarez la commande dans Commands.Vsct  
  La déclaration des commandes de menu s'effectue dans DslPackage\Commands.vsct. Ces définitions spécifient les étiquettes des éléments de menu et l'emplacement où est elles apparaissent dans les menus.  
   
  Le fichier que vous modifiez, Commands.vsct, importe les définitions à partir de plusieurs fichiers .h, qui sont trouvent dans le répertoire *chemin d’installation du Kit de développement logiciel Visual Studio*\VisualStudioIntegration\Common\Inc. Il comprend également GeneratedVsct.vsct, qui est généré à partir de votre définition DSL.  
@@ -131,7 +131,7 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
   
     -   `My Context Menu Command`  
   
-##  <a name="version"></a>Mettre à jour la Version du Package dans Package.tt  
+##  <a name="version"></a> Mettre à jour la Version du Package dans Package.tt  
  Chaque fois que vous ajoutez ou modifiez une commande, mettez à jour le paramètre `version` de l'objet <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> qui est appliqué à la classe de package avant de publier la nouvelle version de votre langage spécifique à un domaine.  
   
  La classe de package étant définie dans un fichier généré, vous devez mettre à jour l'attribut dans le fichier de modèle de texte qui génère le fichier Package.cs.  
@@ -142,11 +142,11 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
   
 2.  Recherchez l'attribut `ProvideMenuResource`.  
   
-3.  Incrémentez le paramètre `version` de l'attribut, qui est le second paramètre. Si vous le souhaitez, vous pouvez écrire le nom du paramètre de manière explicite, pour vous rappeler sa fonction Exemple :  
+3.  Incrémentez le paramètre `version` de l'attribut, qui est le second paramètre. Si vous le souhaitez, vous pouvez écrire le nom du paramètre de manière explicite, pour vous rappeler sa fonction Par exemple :  
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
-##  <a name="CommandSet"></a>Définir le comportement de la commande  
+##  <a name="CommandSet"></a> Définir le comportement de la commande  
  Votre solution DSL possède déjà certaines commandes qui sont implémentées dans une classe partielle déclarée dans DslPackage\GeneratedCode\CommandSet.cs. Pour ajouter de nouvelles commandes, vous devez étendre cette classe en créant un fichier qui contient une déclaration partielle de la même classe. Le nom de la classe est généralement  *\<YourDslName >*`CommandSet`. Il est utile de commencer par vérifier le nom de la classe et inspecter son contenu.  
   
  La classe de jeu de commandes est dérivée de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -161,7 +161,7 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
   
 2.  Dans **DslPackage**, créez un dossier nommé **Code personnalisé**. Dans ce dossier, créez un nouveau fichier de classe nommé `CommandSet.cs`.  
   
-3.  Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Exemple :  
+3.  Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Par exemple :  
   
      `namespace Company.Language1 /* Make sure this is correct */`  
   
@@ -224,7 +224,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
 -   `this.CurrentSelection`. La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.  
   
--   `this.IsDiagramSelected()` - `true`Si l’utilisateur a cliqué sur une partie vide du diagramme.  
+-   `this.IsDiagramSelected()` - `true` Si l’utilisateur a cliqué sur une partie vide du diagramme.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   

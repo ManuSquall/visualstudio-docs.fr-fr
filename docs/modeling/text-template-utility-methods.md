@@ -1,9 +1,9 @@
 ---
-title: "Méthodes utilitaires de modèle de texte | Documents Microsoft"
-ms.custom: 
+title: Méthodes utilitaires de modèle de texte | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, utility methods
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: a5b9b70eb8bbb756c399496acdd6866ff318427b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="text-template-utility-methods"></a>Méthodes utilitaires de modèle de texte
 
@@ -120,7 +120,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- Le type de `this.Host` dépend du type d’hôte dans lequel le modèle s’exécute. Dans un modèle qui s’exécute dans Visual Studio, vous pouvez effectuer un cast `this.Host` à `IServiceProvider` pour accéder aux services tels que l’IDE. Exemple :  
+ Le type de `this.Host` dépend du type d’hôte dans lequel le modèle s’exécute. Dans un modèle qui s’exécute dans Visual Studio, vous pouvez effectuer un cast `this.Host` à `IServiceProvider` pour accéder aux services tels que l’IDE. Par exemple :  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

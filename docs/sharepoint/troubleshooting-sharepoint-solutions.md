@@ -1,12 +1,12 @@
 ---
-title: "Dépannage des Solutions SharePoint | Documents Microsoft"
-ms.custom: 
+title: Dépannage des Solutions SharePoint | Documents Microsoft
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Dépannage des solutions SharePoint
   Les alertes ou les problèmes suivants peuvent se produire lorsque vous déboguez des solutions SharePoint à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Pour plus d’informations, consultez [débogage de Solutions de flux de travail SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/10/2018
  Ce problème se produit si vous renommez une instance de liste importée et exécutez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ### <a name="error-message"></a>Message d'erreur  
- Erreur de build : une erreur s’est produite à l’étape de déploiement « Activer les fonctionnalités » : le fichier Template\Features\\[*importer le projet**fonctionnalité**nom*] \Files\Lists \\[*ancien**nom de la liste*] \Schema.xml n’existe pas.  
+ Erreur de build : une erreur s’est produite à l’étape de déploiement « Activer les fonctionnalités » : le fichier Template\Features\\[*importer le projet**fonctionnalité**nom*] \Files\Lists\\[*ancien ** nom de la liste*] \Schema.xml n’existe pas.  
   
 ### <a name="resolution"></a>Résolution  
  Lorsque vous importez une instance de liste, un attribut nommé CustomSchema est ajouté au fichier Elements.xml de l’instance de liste. Le fichier Elements.XML inclut le chemin d’accès d’un fichier schema.xml personnalisé pour l’instance de liste. Lorsque vous renommez l’instance de liste dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], le chemin d’accès de déploiement pour le fichier schema.xml personnalisé change, mais la valeur de chemin d’accès de l’attribut CustomSchema n’est pas mis à jour. Par conséquent, l’instance de liste ne peut pas trouver le fichier schema.xml dans l’ancien chemin d’accès spécifié par l’attribut CustomSchema lorsque la fonctionnalité est activée.  

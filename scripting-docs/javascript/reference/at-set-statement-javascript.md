@@ -1,13 +1,13 @@
 ---
-title: '@setInstruction (JavaScript) | Documents Microsoft'
-ms.custom: 
+title: '@set Instruction (JavaScript) | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '@set_JavaScriptKeyword'
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - '@set statement'
 - conditional compilation, variables
 ms.assetid: 36f15926-3e69-422d-82a2-d186dc088203
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 10f74a1d57a61d78897b660812a6fd8078244b6b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/10/2018
 ---
-# <a name="set-statement-javascript"></a>@setInstruction (JavaScript)
+# <a name="set-statement-javascript"></a>@set Instruction (JavaScript)
 Crée des variables utilisées avec les instructions de compilation conditionnelle.  
   
 > [!WARNING]
@@ -49,7 +49,7 @@ Crée des variables utilisées avec les instructions de compilation conditionnel
  `term`  
  Obligatoire. Aucun ou plusieurs opérateurs unaires suivis d'une constante, d'une variable de compilation conditionnelle ou d'une expression entre parenthèses.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les variables numériques et booléennes sont prises en charge pour la compilation conditionnelle. Ce n'est pas le cas des chaînes. Les variables créées à l'aide de `@set` sont généralement utilisées dans des instructions de compilation conditionnelle, même si elles peuvent être employées partout ailleurs dans le code [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
  Voici des exemples de déclarations de variables :  
@@ -96,5 +96,5 @@ Crée des variables utilisées avec les instructions de compilation conditionnel
 ## <a name="see-also"></a>Voir aussi  
  [Compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variables de Compilation conditionnelle](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_onInstruction](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@cc_on Instruction](../../javascript/reference/at-cc-on-statement-javascript.md)   
  [@if Instruction](../../javascript/reference/at-if-statement-javascript.md)

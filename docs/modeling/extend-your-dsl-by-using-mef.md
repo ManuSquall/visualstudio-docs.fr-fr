@@ -1,9 +1,9 @@
 ---
-title: "Extension de votre DSL à l’aide de MEF | Documents Microsoft"
-ms.custom: 
+title: Extension de votre DSL à l’aide de MEF | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 735de60d18bc5cbca7dc2ba509372d81622038be
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Extension de votre DSL à l'aide de MEF
 Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide de Managed Extensibility Framework (MEF). Vous ou autres développeurs sera en mesure d’écrire des extensions pour le DSL sans modifier la définition DSL et le code de programme. Ces extensions incluent des commandes de menu, les gestionnaires de glisser-déplacer et la validation. Les utilisateurs pourront installer votre DSL, puis éventuellement installer les extensions nécessaires.  
@@ -28,7 +28,7 @@ Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide d
   
 1.  Créez un dossier nommé **MefExtension** à l’intérieur de la **DslPackage** projet. Ajouter les fichiers suivants à celui-ci :  
   
-     Nom du fichier :`CommandExtensionVSCT.tt`  
+     Nom du fichier : `CommandExtensionVSCT.tt`  
   
     > [!IMPORTANT]
     >  Définir le GUID de ce fichier pour être le même que le CommandSetId GUID qui est défini dans DslPackage\GeneratedCode\Constants.tt  
@@ -44,21 +44,21 @@ Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide d
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
     ```  
   
-     Nom du fichier :`CommandExtensionRegistrar.tt`  
+     Nom du fichier : `CommandExtensionRegistrar.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
     ```  
   
-     Nom du fichier :`ValidationExtensionEnablement.tt`  
+     Nom du fichier : `ValidationExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
     ```  
   
-     Nom du fichier :`ValidationExtensionRegistrar.tt`  
+     Nom du fichier : `ValidationExtensionRegistrar.tt`  
   
      Si vous ajoutez ce fichier, vous devez activer la validation de votre DSL à l’aide d’au moins un des commutateurs dans **EditorValidation** dans l’Explorateur de DSL.  
   
@@ -67,7 +67,7 @@ Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide d
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
     ```  
   
-     Nom du fichier :`PackageExtensionEnablement.tt`  
+     Nom du fichier : `PackageExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -76,21 +76,21 @@ Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide d
   
 2.  Créez un dossier nommé **MefExtension** à l’intérieur de la **Dsl** projet. Ajouter les fichiers suivants à celui-ci :  
   
-     Nom du fichier :`DesignerExtensionMetaDataAttribute.tt`  
+     Nom du fichier : `DesignerExtensionMetaDataAttribute.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
     ```  
   
-     Nom du fichier :`GestureExtensionEnablement.tt`  
+     Nom du fichier : `GestureExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
     ```  
   
-     Nom du fichier :`GestureExtensionController.tt`  
+     Nom du fichier : `GestureExtensionController.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -176,7 +176,7 @@ Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide d
 ### <a name="menu-commands"></a>Commandes de menu  
  Pour écrire une commande de menu, définissez une classe qui implémente <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> , le préfixe de la classe avec l’attribut qui est défini dans votre DSL, appelé *YourDsl*`CommandExtension`. Vous pouvez écrire plusieurs classes de commande de menu.  
   
- `QueryStatus()`est appelé chaque fois que l’utilisateur clique sur le diagramme. Il doit inspecter la sélection actuelle et `command.Enabled` pour indiquer quand la commande est applicable.  
+ `QueryStatus()` est appelé chaque fois que l’utilisateur clique sur le diagramme. Il doit inspecter la sélection actuelle et `command.Enabled` pour indiquer quand la commande est applicable.  
   
 ```  
 using System.ComponentModel.Composition;  

@@ -1,9 +1,9 @@
 ---
-title: "Création d’un langage spécifique à un domaine Windows Forms | Documents Microsoft"
-ms.custom: 
+title: Création d’un langage spécifique à un domaine Windows Forms | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Création d'un langage spécifique à un domaine basé sur Windows Forms
 Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de langage de spécifique à un domaine (DSL), au lieu d’utiliser un diagramme DSL. Cette rubrique vous guide dans la liaison d’un Windows Form à DSL, à l’aide de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK.  
@@ -53,9 +53,9 @@ Une instance DSL, affichant une interface utilisateur du formulaire Windows et l
   
  Dans l’instance principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], notez les points suivants concernant la solution DSL :  
   
--   `DslDefinition.dsl`ne contient aucun élément de diagramme. Il s’agit, car vous n’utiliserez pas les diagrammes DSL pour afficher les modèles d’instance de cette DSL. Au lieu de cela, vous allez lier un Windows Form au modèle et les éléments sur le formulaire affiche le modèle.  
+-   `DslDefinition.dsl` ne contient aucun élément de diagramme. Il s’agit, car vous n’utiliserez pas les diagrammes DSL pour afficher les modèles d’instance de cette DSL. Au lieu de cela, vous allez lier un Windows Form au modèle et les éléments sur le formulaire affiche le modèle.  
   
--   Outre la `Dsl` et `DslPackage` projets, la solution contient un troisième projet nommé `UI.` **UI** projet contient la définition d’un contrôle Windows Forms. `DslPackage`dépend de `UI`, et `UI` dépend `Dsl`.  
+-   Outre la `Dsl` et `DslPackage` projets, la solution contient un troisième projet nommé `UI.` **UI** projet contient la définition d’un contrôle Windows Forms. `DslPackage` dépend de `UI`, et `UI` dépend `Dsl`.  
   
 -   Dans le `DslPackage` projet, `UI\DocView.cs` contient le code qui affiche le contrôle Windows Forms qui est défini dans le `UI` projet.  
   
@@ -88,9 +88,9 @@ Une instance DSL, affichant une interface utilisateur du formulaire Windows et l
   
 4.  Utilisez le **classe de domaine nommé** outil pour créer les classes de domaine suivantes :  
   
-    -   `Field`-Définir une propriété de domaine supplémentaire nommée `Size`.  
+    -   `Field` -Définir une propriété de domaine supplémentaire nommée `Size`.  
   
-    -   `Animal`-Dans la fenêtre Propriétés, définissez **modificateur d’héritage** à **abstraite**.  
+    -   `Animal` -Dans la fenêtre Propriétés, définissez **modificateur d’héritage** à **abstraite**.  
   
 5.  Utilisez le **classe de domaine** outil pour créer les classes suivantes :  
   
@@ -223,7 +223,7 @@ Schéma des liens entre des sources de données et les vues.
   
 3.  Dans le **FarmApp Explorer**, ouvrez le menu contextuel sur le **batterie** nœud racine, puis choisissez **ajouter un nouveau chèvre**.  
   
-     `Goat1`s’affiche dans le **animaux** vue.  
+     `Goat1` s’affiche dans le **animaux** vue.  
   
     > [!WARNING]
     >  Vous devez utiliser le menu contextuel sur le **batterie** nœud, pas le **animaux** nœud.  
