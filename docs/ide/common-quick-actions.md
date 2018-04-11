@@ -1,11 +1,7 @@
 ---
 title: Actions rapides courantes | Microsoft Docs
-ms.custom: 
-ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
+ms.date: 03/28/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
@@ -15,15 +11,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7ecb89ed732af828fb4ca26d123d131f6d1918
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8d751e122d0c9eca23d0349761054d092a438ba8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="common-quick-actions"></a>Actions rapides courantes
 
-Les sections de cette rubrique répertorient quelques-unes des actions rapides courantes qui sont applicables à la fois au code C# et à Visual Basic.
+Les sections de cette rubrique répertorient quelques-unes des actions rapides courantes qui sont applicables à la fois au code C# et à Visual Basic. Ces actions sont des *correctifs du code* pour les [règles de l’analyseur](../code-quality/roslyn-analyzers-overview.md) intégrées dans Visual Studio.
 
 ## <a name="actions-that-fix-errors"></a>Actions permettant de résoudre des erreurs
 
@@ -176,7 +172,7 @@ End Function
 
 ## <a name="actions-that-remove-unnecessary-code"></a>Actions permettant de supprimer du code inutile
 
-### <a name="remove-unnecesary-usingsimports"></a>Supprimer des utilisations/importations inutiles
+### <a name="remove-unnecessary-usingsimports"></a>Supprimer les Usings inutiles/les importations superflues
 
 L’action rapide **Supprimer les Usings inutiles/les importations superflues** supprime toutes les instructions `using` et `Import` inutilisées pour le fichier actif.  Quand vous sélectionnez cet élément, les importations d’espaces de noms inutilisées sont immédiatement supprimées.
 
@@ -239,7 +235,7 @@ public MyMethod()
 | ------- | -------------------- | ----------------  |
 | CS0219, BC42024 | C# et Visual Basic | Visual Studio 2017 version 15.3 |
 
-### <a name="remove-type-from-default-value-expression"></a>Supprimer le type de l’expression de valeur **par défaut**
+### <a name="remove-type-from-default-value-expression"></a>Supprimer le type de l’expression de valeur par défaut
 
 Cette action rapide permet de supprimer le type de valeur d’une expression de valeur par défaut et utilise le [littéral par défaut](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) quand le compilateur peut déduire le type de l’expression.
 
@@ -260,7 +256,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 ## <a name="actions-that-add-missing-code"></a>Actions permettant d’ajouter du code manquant
 
-### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>Ajouter des instructions using/Import pour les types dans les assemblys de référence, les packages NuGet ou d’autres types de votre solution
+### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>Ajouter des instructions using/imports pour les types dans les assemblys de référence, les packages NuGet ou d’autres types de votre solution
 
 L’utilisation de types situés dans d’autres projets de votre solution permet d’afficher automatiquement l’action rapide, mais vous devez activer les autres à partir de l’onglet **Outils > Options > C#** ou **De base > Avancé** :
 
@@ -475,7 +471,7 @@ private static int thisFieldIsPublic;
 
 ## <a name="code-transformations"></a>Transformations de code
 
-### <a name="convert-if-construct-to-switch"></a>Convertir une construction **if** en **switch**
+### <a name="convert-if-construct-to-switch"></a>Convertir une construction « if » en « switch »
 
 Cette action rapide vous permet de convertir une construction **if-then-else** en construction **switch**.
 
@@ -741,7 +737,7 @@ int fibonacci(int n)
 }
 ```
 
-### <a name="convert-referenceequals-to-is-null"></a>Convertir `ReferenceEquals` en `is null`
+### <a name="convert-referenceequals-to-is-null"></a>Convertir « ReferenceEquals» en « is null »
 
 |  ID de diagnostic | Langages applicables |  Version prise en charge |
 | ------- | -------------------- | ----------------  |
@@ -959,4 +955,4 @@ Console.WriteLine($"{x} {y}");
 
 ## <a name="see-also"></a>Voir aussi
 
-[Actions rapides](../ide/quick-actions.md)  
+[Actions rapides](../ide/quick-actions.md)

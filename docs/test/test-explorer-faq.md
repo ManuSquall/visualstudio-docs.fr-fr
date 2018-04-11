@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 1ca63ce299cb95546100e7f7ce7f98eb1c1616c2
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 9e64528b6b0669a0403188b540a90e9b921bfb34
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>FAQ concernant l’Explorateur de tests Visual Studio
 
@@ -70,6 +70,10 @@ ms.lasthandoff: 03/19/2018
   Les icônes en regard des regroupements Projet, Espace de noms et Classe reflètent l’état des tests dans le regroupement. Consultez le tableau suivant.
 
   ![Icônes de la hiérarchie de l’Explorateur de tests](media/testex-hierarchyicons.png)
+  
+### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. Il n’y a plus de filtre « Chemin d’accès du fichier » dans la zone de recherche de l’explorateur de tests.
+
+Le filtre de chemin d’accès du fichier dans la zone de recherche de l’**explorateur de tests** a été supprimé dans Visual Studio 2017, version 15.7, préversion 3. Cette fonctionnalité était très peu utilisée, et l’explorateur de tests peut récupérer des méthodes de test plus rapidement en excluant cette fonctionnalité. Si cette modification interrompt votre flux de développement, faites-le nous savoir en envoyant vos commentaires à la [communauté des développeurs](https://developercommunity.visualstudio.com/).
 
 ## <a name="features"></a>Fonctionnalités
 

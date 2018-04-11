@@ -1,27 +1,27 @@
 ---
-title: Boucle REPL interactive Python dans Visual Studio | Microsoft Docs
-description: "Guide pratique pour utiliser la fenêtre interactive (REPL) pour le code Python dans Visual Studio pour un développement de code rapide."
-ms.custom: 
+title: Fenêtre interactive Python (REPL) | Microsoft Docs
+description: Guide pratique pour utiliser la fenêtre interactive (REPL) pour le code Python dans Visual Studio pour un développement de code rapide.
+ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0bd110b671806c37e59f5f0d52c62c1eed42e9cf
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 3492bdc10b94a58804ab31c71d2bdc7a66a77509
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Utilisation de la fenêtre interactive Python
 
