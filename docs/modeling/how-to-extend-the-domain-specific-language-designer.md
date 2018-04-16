@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/10/2018
 ---
@@ -70,7 +70,7 @@ Vous pouvez apporter des extensions vers le concepteur qui vous permet de modifi
   
  Pour déployer les extensions à la main [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]et à d’autres ordinateurs, procédez comme suit :  
   
-1.  Rechercher le fichier d’installation de VSIX dans votre projet VSIX dans emplacement\\*\\\*.vsix  
+1.  Rechercher le fichier d’installation de VSIX dans votre projet VSIX dans emplacement\\*\*\\\*.vsix  
   
 2.  Copiez ce fichier à l’ordinateur cible et dans l’Explorateur Windows (ou l’Explorateur de fichiers), double-cliquez dessus.  
   

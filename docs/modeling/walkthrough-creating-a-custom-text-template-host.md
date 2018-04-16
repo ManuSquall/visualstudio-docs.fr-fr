@@ -16,12 +16,12 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ad2bc2a049a0a96a8093289af4648f077f2d1478
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Procédure pas à pas : création d'un hôte de modèle de texte personnalisé
-A *modèle de texte ** hôte* fournit un environnement qui permet la *moteur de transformation de modèle de texte* à exécuter. L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou *processeur de directive* qui a besoin d’un fichier ou un assembly peut demander une ressource à partir de l’ordinateur hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).  
+A *modèle de texte**hôte* fournit un environnement qui permet la *moteur de transformation de modèle de texte* à exécuter. L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou *processeur de directive* qui a besoin d’un fichier ou un assembly peut demander une ressource à partir de l’ordinateur hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).  
   
  Vous pouvez écrire un hôte personnalisé si vous souhaitez utiliser le *transformation du modèle de texte* en dehors de la fonctionnalité de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou si vous souhaitez intégrer cette fonctionnalité à des outils personnalisés. Pour créer un hôte personnalisé, vous devez créer une classe qui hérite de <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Pour obtenir la documentation de méthodes individuelles, consultez <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   

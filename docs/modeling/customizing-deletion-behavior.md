@@ -17,7 +17,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/10/2018
 ---
@@ -79,7 +79,7 @@ La suppression d'un élément provoque généralement aussi la suppression des �
 >  Pour ajouter du code de programme à votre définition DSL, créez un fichier de code séparé dans le **Dsl** de projet et d’écrire des définitions partielles pour augmenter les classes dans le dossier de Code généré. Pour plus d’informations, consultez [écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a> Définition d’une fermeture de suppression  
- L’opération de suppression utilise la classe *YourModel *** DeleteClosure** pour déterminer les éléments à supprimer, une sélection initiale. Elle appelle `ShouldVisitRelationship()` et `ShouldVisitRolePlayer()` de manière répétée, en parcourant le graphique des relations. Vous pouvez substituer ces méthodes. L'identité d'un lien et l'élément à l'un des rôles du lien sont fournis à la méthode ShouldVisitRolePlayer. Elle doit retourner l'une des valeurs suivantes :  
+ L’opération de suppression utilise la classe *YourModel***DeleteClosure** pour déterminer les éléments à supprimer, une sélection initiale. Elle appelle `ShouldVisitRelationship()` et `ShouldVisitRolePlayer()` de manière répétée, en parcourant le graphique des relations. Vous pouvez substituer ces méthodes. L'identité d'un lien et l'élément à l'un des rôles du lien sont fournis à la méthode ShouldVisitRolePlayer. Elle doit retourner l'une des valeurs suivantes :  
   
 -   **VisitorFilterResult.Yes**: l’élément doit être supprimé et que l’analyseur doit continuer à essayer l’élément d’autres liens.  
   
