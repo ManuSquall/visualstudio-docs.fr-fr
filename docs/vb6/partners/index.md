@@ -4,8 +4,7 @@ description: Offres partenaires pour la migration de Visual Basic 6.0 vers .NET.
 ms.date: 09/01/2017
 ms.technology:
 - devlang-vb
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - visual-basic
 author: rpetrusha
@@ -13,11 +12,11 @@ ms.author: ronpet
 manager: wpickett
 ms.workload:
 - dotnet
-ms.openlocfilehash: 10db1f39ac362d64b0bf5b794695f6f2089f8aca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c2d5d7f7a9a306deb64ac0ecdf9f385fe569efff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-basic-60-offers-from-partners"></a>Offres Visual Basic 6.0 de partenaires
 
