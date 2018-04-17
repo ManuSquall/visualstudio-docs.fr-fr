@@ -1,33 +1,29 @@
 ---
-title: "Boutons de la fenêtre Propriétés | Documents Microsoft"
-ms.custom: 
+title: Boutons de la fenêtre Propriétés | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 950b9f0a7b0f38689042877a42499e23253e6486
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 361333fdfceda28ecd78dc54145fded716ee81eb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-buttons"></a>Boutons de la fenêtre Propriétés
 Selon le langage de développement et le type de produit, certains boutons sont affichés par défaut dans la barre d’outils pour le **propriétés** fenêtre. Dans tous les cas, le **par catégorie**, **Alphabetized**, **propriétés**, et **Pages de propriétés** boutons sont affichés. Dans Visual c# et Visual Basic, le **événements** bouton s’affiche également. Dans des projets Visual C++, le **Messages VC ++** et **VC substitue** boutons sont affichés. Des boutons supplémentaires peuvent s’afficher pour les autres types de projet. Pour plus d’informations sur les boutons dans les **propriétés** fenêtre, consultez [fenêtre Propriétés](../../ide/reference/properties-window.md).  
   
 ## <a name="implementation-of-properties-window-buttons"></a>Implémentation de boutons de la fenêtre Propriétés  
- Lorsque vous cliquez sur le **par catégorie** bouton, Visual Studio appelle le <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> interface sur l’objet qui a le focus pour trier ses propriétés par catégorie. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>est implémentée sur le `IDispatch` objet qui est présenté à la **propriétés** fenêtre.  
+ Lorsque vous cliquez sur le **par catégorie** bouton, Visual Studio appelle le <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> interface sur l’objet qui a le focus pour trier ses propriétés par catégorie. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> est implémentée sur le `IDispatch` objet qui est présenté à la **propriétés** fenêtre.  
   
  Il existe des catégories de propriété prédéfinie 11, qui ont des valeurs négatives. Vous pouvez définir des catégories personnalisées, mais nous recommandons d’attribuer les valeurs positives pour les différencier des catégories prédéfinies.  
   

@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Mise à jour les contrôles sur un ruban au moment de l’exécution | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Mise à jour les contrôles sur un ruban au moment de l’exécution | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], updating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 39952d1059833c92d3d5e8c277faac1b47c6e80b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 10577f1ca996913ed91f07a7609c59eb9805bced
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-updating-the-controls-on-a-ribbon-at-run-time"></a>Procédure pas à pas : mise à niveau des contrôles sur un ruban au moment de l'exécution
   Cette procédure pas à pas montre comment utiliser le modèle objet de ruban pour mettre à jour les contrôles se trouvant sur un ruban après le chargement du ruban dans l'application Office.  
@@ -287,7 +286,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Étendre un formulaire Microsoft Office standard ou personnalisé. Pour plus d’informations, consultez [procédure pas à pas : conception d’une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
--   Ajouter un volet de tâches personnalisé dans Outlook. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).  
+-   Ajouter un volet de tâches personnalisé dans Outlook. Pour plus d’informations, consultez [Vue d’ensemble des volets de tâches personnalisés](../vsto/custom-task-panes.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   

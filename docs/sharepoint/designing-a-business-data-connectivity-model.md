@@ -1,12 +1,10 @@
 ---
-title: "Conception d’un modèle de connectivité de données métiers | Documents Microsoft"
-ms.custom: 
+title: Conception d’un modèle de connectivité de données métiers | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe3de196219091478a30ff07d6c2f5916d423f15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6f34a754562674aacf989c294ff2662ca4f8f28f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>Conception d'un modèle de connectivité de données métiers
   Vous pouvez développer un modèle pour le service de connectivité de données métiers (BDC) en ajoutant des entités et des méthodes à un fichier de modèle. Une entité décrit une collection de champs de données. Par exemple, une entité peut représenter une table dans une base de données. Une méthode effectue une tâche telle que l’ajout, la suppression ou la mise à jour des données représentées par les entités. Pour plus d’informations, consultez [intégration de données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio vous permet de copier des descripteurs de type entre les paramètres dans le modèle. Par exemple, vous pouvez définir un descripteur de type nommé `CustomerTD` pour le paramètre de retour de la `GetCustomer` (méthode). Vous pouvez copier le `CustomerTD` tapez descripteur dans le **Explorateur BDC**, puis collez ce descripteur de type pour le paramètre d’entrée de la `CreateCustomer` (méthode). Cela vous évite d’avoir à définir le même descripteur de type plusieurs fois.  
   
-##  <a name="MethodInstances"></a>Instances (méthode)  
+##  <a name="MethodInstances"></a> Instances (méthode)  
  Lorsque vous créez une méthode, Visual Studio ajoute une instance de la méthode par défaut. Une instance de méthode est une référence à une méthode, ainsi que les valeurs par défaut pour les paramètres. Une méthode unique peut avoir plusieurs instances de méthode. Chaque instance est une combinaison de la signature de méthode et un ensemble de valeurs par défaut. Pour plus d’informations, consultez [Comment : définir le descripteur de Type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
  Lorsque vous exécutez le projet, les instances de méthode s’affichent dans une liste déroulante au-dessus de la liste SharePoint. Les utilisateurs peuvent choisir des instances de méthode pour afficher les données.  

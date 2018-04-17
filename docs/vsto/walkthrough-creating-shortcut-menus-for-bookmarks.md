@@ -1,13 +1,10 @@
 ---
-title: "Procédure pas à pas : Création de Menus contextuels pour les signets | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création de Menus contextuels pour les signets | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6d54d23330c6d5fab836f168a291b15b90379117
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>Procédure pas à pas : création de menus contextuels pour les signets
   Cette procédure pas à pas montre comment créer des menus contextuels pour <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles dans une personnalisation au niveau du document pour Word. Lorsqu’un utilisateur clique sur le texte d’un signet, un menu contextuel s’affiche et proposant des options de mise en forme le texte.  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
   
-##  <a name="BKMK_CreateProject"></a>Création du projet  
+##  <a name="BKMK_CreateProject"></a> Création du projet  
  La première étape consiste à créer un projet de document Word dans Visual Studio.  
   
 #### <a name="to-create-a-new-project"></a>Pour créer un projet  
@@ -60,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio ouvre le nouveau document Word dans le concepteur et ajoute le **My Bookmark Shortcut Menu** projet **l’Explorateur de solutions**.  
   
-##  <a name="BKMK_addtextandbookmarks"></a>Ajout de texte et signets au Document  
+##  <a name="BKMK_addtextandbookmarks"></a> Ajout de texte et signets au Document  
  Ajouter du texte à votre document, puis ajoutez deux signets qui se chevauchent.  
   
 #### <a name="to-add-text-to-your-document"></a>Pour ajouter du texte à votre document  
@@ -77,18 +74,18 @@ ms.lasthandoff: 01/10/2018
   
 2.  Sélectionnez les mots « création d’un menu contextuel lorsque vous cliquez sur le texte », puis cliquez sur **OK**.  
   
-     `bookmark1`est ajouté au document.  
+     `bookmark1` est ajouté au document.  
   
 3.  Ajoutez un autre <xref:Microsoft.Office.Tools.Word.Bookmark> avec les mots de contrôle « cliquez sur le texte d’un signet ».  
   
-     `bookmark2`est ajouté au document.  
+     `bookmark2` est ajouté au document.  
   
     > [!NOTE]  
     >  Les mots « cliquez sur le texte » est à la fois dans `bookmark1` et `bookmark2`.  
   
  Lorsque vous ajoutez un signet à un document au moment du design, un <xref:Microsoft.Office.Tools.Word.Bookmark> contrôle est créé. Vous pouvez programmer plusieurs événements du signet. Vous pouvez écrire du code le <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> événement du signet afin que lorsque l’utilisateur clique sur le texte du signet, un menu contextuel s’affiche.  
   
-##  <a name="BKMK_AddCmndsShortMenu"></a>Ajout de commandes à un Menu contextuel  
+##  <a name="BKMK_AddCmndsShortMenu"></a> Ajout de commandes à un Menu contextuel  
  Ajouter des boutons pour le menu contextuel qui s’affiche lorsque vous cliquez sur le document.  
   
 #### <a name="to-add-commands-to-a-shortcut-menu"></a>Pour ajouter des commandes à un menu contextuel  
@@ -148,7 +145,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]  
   
-##  <a name="BKMK_formattextbkmk"></a>Mettre en forme le texte dans le signet  
+##  <a name="BKMK_formattextbkmk"></a> Mettre en forme le texte dans le signet  
   
 #### <a name="to-format-the-text-in-the-bookmark"></a>Pour mettre en forme le texte dans le signet  
   

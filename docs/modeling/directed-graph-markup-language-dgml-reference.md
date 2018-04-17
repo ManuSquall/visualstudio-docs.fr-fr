@@ -1,21 +1,19 @@
 ---
-title: "Dirigées vers la référence du langage DGML (Graph Markup) | Documents Microsoft"
-ms.custom: 
+title: Dirigées vers la référence du langage DGML (Graph Markup) | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cfa143669f757a3a71ddb89ea731ffbfc5059d24
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 49ae2e854908afa6b7decb7ea94cca63b4203fbe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Informations de référence sur le langage DGML (Directed Graph Markup Language)
 Le langage DGML (Directed Graph Markup Language) décrit les informations utilisées pour la visualisation et l'analyse de complexité. Il s'agit du format utilisé pour faire persister des cartes de code dans Visual Studio. Il utilise le langage XML simple pour décrire des graphiques orientés à la fois cycliques et acycliques. Un graphique orienté est un ensemble de nœuds reliés par des liens (ou bords). Les nœuds et les liens peuvent être utilisés pour représenter des structures interconnectées, telles que les éléments d'un projet logiciel.  
@@ -25,7 +23,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
 > [!NOTE]
 >  Lorsque vous modifiez un fichier .dgml, IntelliSense vous aide à identifier les attributs qui sont disponibles pour chaque élément, ainsi que leurs valeurs. Pour spécifier la couleur dans un attribut, utilisez le nom des couleurs courantes (« Bleu », par exemple) ou des valeurs hexadécimales ARVB (« #ffa0b1c3 », par exemple). Le langage DGML utilise un sous-ensemble réduit de formats de définition de couleur WPF (Windows Presentation Foundation). Pour plus d’informations, consultez [couleurs classe](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a>Syntaxe de langage DGML  
+##  <a name="DGML"></a> Syntaxe de langage DGML  
  Le tableau suivant décrit les types d'éléments utilisés en langage DGML :  
   
 -   `<DirectedGraph></DirectedGraph>`  
@@ -95,7 +93,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
   
      La liste suivante décrit certains des attributs facultatifs que vous pouvez inclure :  
   
-     `Label`-Le nom complet du nœud.  
+     `Label` -Le nom complet du nœud.  
   
      Attributs Style. Consultez [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
@@ -301,7 +299,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
     </DirectedGraph>  
     ```  
   
-###  <a name="AddAlias"></a>Alias pour les chemins d’accès fréquemment utilisés  
+###  <a name="AddAlias"></a> Alias pour les chemins d’accès fréquemment utilisés  
  Lorsque vous remplacez des chemins d’accès fréquemment utilisés par des alias, vous réduisez la taille du fichier .dgml, ainsi que la durée nécessaire au téléchargement et à l’enregistrement du fichier. Pour créer un alias, ajoutez une section `<Paths></Paths>` à la fin du fichier .dgml. Dans cette section, ajoutez un élément `<Path/>` pour définir un alias pour le chemin d'accès :  
   
 ```xml  

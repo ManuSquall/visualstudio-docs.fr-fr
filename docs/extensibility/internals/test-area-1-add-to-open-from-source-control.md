@@ -1,26 +1,24 @@
 ---
-title: "Zone de test 1 : Ajouter à ouvrir à partir du contrôle de code Source | Documents Microsoft"
-ms.custom: 
+title: 'Zone de test 1 : Ajouter à ouvrir à partir du contrôle de code Source | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1891e0242463f3673d22d22e0f9a2d000b01ae60
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6e95ef13a3d8f7a61c53c9938564479adf362a2c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Zone de test 1 : Ajouter / ouvrir à partir du contrôle de code Source
 Ce contrôle de code source du plug-in de test couvre zone placement des solutions ou projets sous contrôle de code source et de les récupérer à partir du contrôle de code source.  

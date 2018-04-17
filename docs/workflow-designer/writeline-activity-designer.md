@@ -1,5 +1,5 @@
 ---
-title: "Concepteur d’activités WriteLine | Documents Microsoft"
+title: Concepteur d’activités WriteLine | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8596aa9f00e75ec31a29042473d728310027bc36
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: b52bf3401e609076043f42a8df3544313d6e8a74
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writeline-activity-designer"></a>Concepteur d'activités WriteLine
 Le **WriteLine** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.WriteLine> activité.
@@ -39,6 +39,6 @@ Le **WriteLine** ActivityDesigner est utilisé pour créer et configurer un <xre
 ## <a name="see-also"></a>Voir aussi
 
 - [Primitives](../workflow-designer/primitives-activity-designers.md)
-- [Assign](../workflow-designer/assign-activity-designer.md)
-- [Delay](../workflow-designer/delay-activity-designer.md)
+- [affecter](../workflow-designer/assign-activity-designer.md)
+- [délai](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)

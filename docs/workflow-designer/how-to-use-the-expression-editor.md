@@ -1,5 +1,5 @@
 ---
-title: "Comment : utiliser l’éditeur d’expressions | Documents Microsoft"
+title: 'Comment : utiliser l’éditeur d’expressions | Documents Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be43ad439c8868064fc7e0bab79e051abb991e0d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f9873d341238f3278779277d70da6df56f29f721
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procédure : utiliser l'éditeur d'expressions
 L’éditeur d’Expression est un contrôle du Concepteur de flux de travail Windows qui est utilisé dans de nombreuses activités de flux de travail comme un moyen d’entrer et évaluer ces expressions. Il fournit une expérience d’édition IDE complète, comprenant, entre autres fonctionnalités, IntelliSense, la colorisation, ParamInfo et les tildes d’erreur. Le compilateur valide l'expression après sa saisie. Si l'expression n'est pas valide, une icône d'erreur s'affiche. Vous pouvez également ouvrir l’éditeur comme un **l’éditeur d’Expression** boîte de dialogue.

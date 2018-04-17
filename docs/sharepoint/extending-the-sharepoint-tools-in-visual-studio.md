@@ -1,12 +1,10 @@
 ---
 title: Extension des outils SharePoint dans Visual Studio | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: db0afa41641cd9d5ae04cfe6d391dbf0fe814f0f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d5ad6f27574fcb7bd8a859bcd21ac65e159596e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-sharepoint-tools-in-visual-studio"></a>Extension des outils SharePoint dans Visual Studio
   Les outils SharePoint dans Visual Studio répond aux exigences de nombreux scénarios de développement d’application. Toutefois, vous pouvez découvrir les cas où elles ne fournissent pas de fonctionnalités qui nécessitent de vous ou autres développeurs. Dans ce cas, vous pouvez étendre les outils SharePoint pour créer les fonctionnalités dont vous avez besoin.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
 -   En étendant des nœuds existants. Par exemple, vous pouvez ajouter un nouveau nœud enfant à un nœud existant, ou vous pouvez ajouter un élément de menu contextuel à un nœud et effectuer des tâches lorsqu’un développeur clique sur l’élément de menu.  
   
- Pour plus d’informations, consultez [extension du nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
+ Pour plus d'informations, consultez [Extension du nœud Connexions SharePoint dans l'Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
 ## <a name="development-computer-requirements"></a>Spécifications d’ordinateur de développement  
  Pour créer des extensions pour les outils SharePoint, votre ordinateur de développement doit respecter les mêmes spécifications pour la création de solutions SharePoint dans Visual Studio. Pour plus d’informations, consultez [configuration requise pour le développement de Solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
  [Extension du système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Extension du nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Concepts de programmation et les fonctionnalités des Extensions des outils SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
- [Référence &#40; Extensibilité des outils SharePoint &#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
+ [Référence &#40;extensibilité des outils SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
  [Déboguer des Extensions pour les outils SharePoint dans Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
  [Déploiement d’extensions pour les outils SharePoint dans Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   

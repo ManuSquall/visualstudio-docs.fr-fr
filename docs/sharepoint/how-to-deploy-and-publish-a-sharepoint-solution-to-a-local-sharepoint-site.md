@@ -1,12 +1,10 @@
 ---
-title: "Comment : déployer et publier une Solution SharePoint à un Site SharePoint Local | Documents Microsoft"
-ms.custom: 
+title: 'Comment : déployer et publier une Solution SharePoint à un Site SharePoint Local | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b5b3ab297612ec48027af8d4eb74956d1d255443
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5c4f7e347f9cea3a73ab5326b42720a1b2c33529
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Comment : déployer et publier une solution SharePoint sur le site SharePoint local
   Vous pouvez déployer ou publier des solutions SharePoint sur un serveur SharePoint local sur votre ordinateur de développement. Le processus de déploiement copie le fichier .wsp sur le serveur SharePoint, installe la solution, puis active les fonctionnalités. Le processus de publication seulement copie le fichier .wsp sur le serveur SharePoint et l’installe. Vous devez activer manuellement pour l’activer dans SharePoint.  

@@ -1,27 +1,23 @@
 ---
 title: Conception de Table de commande XML (. Fichiers VSCT) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcb8533dda001d447fd10fcb69b3cccd6d2d91a1
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 865baa3f7b4b0fe4cbbaf2cdf34e9e8041d5c121
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Conception de Table de commande XML (. Fichiers VSCT)
 Un fichier de table (.vsct) de commande XML décrit la disposition et l’apparence des éléments de commande pour un VSPackage. Les éléments de commande incluent des boutons, des zones de liste déroulante, des menus, des barres d’outils et des groupes d’éléments de la commande. Cette rubrique décrit les fichiers de la table commandes XML, comment ils affectent les menus et éléments de commande et comment les créer.
@@ -123,7 +119,7 @@ Un fichier de table (.vsct) de commande XML décrit la disposition et l’appare
 
  Pendant le développement, il est possible pour plusieurs projets VSPackage doit être créé et enregistré dans la ruche du Registre expérimentale pouvant conduire à confusion l’encombrement dans l’IDE. Pour résoudre ce problème, vous pouvez réinitialiser la ruche expérimentale pour les paramètres par défaut pour supprimer tous des VSPackages et toutes les modifications qu’ils ont peuvent apportées à l’IDE. Pour réinitialiser la ruche expérimentale, utilisez l’outil de CreateExpInstance.exe qui est fourni avec le Kit de développement logiciel Visual Studio. Vous trouverez à l’adresse
 
- **%PROGRAMFILES(x86)%\Visual Studio \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**
+ **% PROGRAMFILES (x 86) %\Visual Studio \<version > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**
 
  Exécutez l’outil à l’aide de la ligne de commande **CreateExpInstance /Reset**. N’oubliez pas de cet outil supprime de la ruche expérimentale tous les packages enregistrés VS pas normalement installées avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 

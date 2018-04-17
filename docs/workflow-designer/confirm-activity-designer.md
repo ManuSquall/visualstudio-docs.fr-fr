@@ -1,5 +1,5 @@
 ---
-title: "Concepteur d’activités Confirm | Documents Microsoft"
+title: Concepteur d’activités Confirm | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1350bd57b2792140a6e54e7d4252899d2498bb93
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 0b0414c45b57a112528aad8488f4c1f69fdf641f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="confirm-activity-designer"></a>Concepteur d'activités Confirm
 Le **confirmer** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.Confirm> activité.
@@ -42,5 +42,5 @@ Le **confirmer** ActivityDesigner est utilisé pour créer et configurer un <xre
 - [Transaction](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
-- [Compensate](../workflow-designer/compensate-activity-designer.md)
+- [Compenser](../workflow-designer/compensate-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

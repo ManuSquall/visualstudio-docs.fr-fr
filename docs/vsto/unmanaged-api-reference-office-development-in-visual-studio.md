@@ -1,12 +1,10 @@
 ---
-title: "Référence (développement Office dans Visual Studio) des API non managées | Documents Microsoft"
-ms.custom: 
+title: Référence (développement Office dans Visual Studio) des API non managées | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, unmanaged API reference
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 640e292719f8d466ba21cc449ea624527b50bcf0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e06ec998dc4b9c23b38526563ce8b501866769b0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Référence des API non managées (Développement Office dans Visual Studio)
   À compter de Microsoft Office system 2007, les applications Office utilisent le [IManagedAddin Interface](../vsto/imanagedaddin-interface.md) interface pour appeler un composant de chargeur du complément VSTO qui est inclus dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Ce composant vise à faciliter le chargement des compléments VSTO managés. Vous pouvez créer votre propre composant de chargeur de complément VSTO en implémentant cette interface.  

@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Création d’un onglet personnalisé à l’aide du Concepteur de ruban | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création d’un onglet personnalisé à l’aide du Concepteur de ruban | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cdbbd7ee286c97a986e89ccdb5bdcfdde4ef7578
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7fdae2b6a867b6d87c6579fc1d24f9d0ebd07cf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Procédure pas à pas : création d'un onglet personnalisé à l'aide du Concepteur de ruban
   Le Concepteur de ruban vous permet de créer un onglet personnalisé puis d'ajouter et de positionner des contrôles dessus.  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio ouvre le nouveau classeur dans le concepteur et ajoute le **MyExcelRibbon** projet **l’Explorateur de solutions**.  
   
-##  <a name="BKMK_CreateActionsPanes"></a>Création de volets Actions  
+##  <a name="BKMK_CreateActionsPanes"></a> Création de volets Actions  
  Ajoutez deux volets Actions personnalisés au projet. Vous ajouterez ultérieurement à l'onglet personnalisé des boutons qui affichent et masquent ces volets Actions.  
   
 #### <a name="to-create-actions-panes"></a>Pour créer des volets Actions  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Répétez les étapes 1 à 5 pour créer un deuxième volet Actions et une deuxième étiquette. Définir le **texte** propriété du contrôle label deuxième **volet Actions 2**.  
   
-##  <a name="BKMK_CreateCustomTab"></a>Création d’un onglet personnalisé  
+##  <a name="BKMK_CreateCustomTab"></a> Création d’un onglet personnalisé  
  L'une des règles de conception d'une application Office stipule que les utilisateurs doivent toujours avoir le contrôle de l'interface utilisateur de l'application Office. Pour ajouter cette fonction pour les volets Actions, vous pouvez ajouter des boutons qui affichent et masquent chaque volet Actions à partir d'un onglet personnalisé sur le ruban. Pour créer un onglet personnalisé, ajoutez un **ruban (Concepteur visuel)** élément au projet. Le concepteur vous permet d'ajouter et de position des contrôles, de définir les propriétés des contrôles et de gérer les événements de contrôle.  
   
 #### <a name="to-create-a-custom-tab"></a>Pour créer un onglet personnalisé  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 14. Définir le **étiquette** propriété **masquer le volet Actions**.  
   
-##  <a name="BKMK_HideShowActionsPane"></a>Masquage et affichage de volets Actions à l’aide des boutons sur l’onglet personnalisé  
+##  <a name="BKMK_HideShowActionsPane"></a> Masquage et affichage de volets Actions à l’aide des boutons sur l’onglet personnalisé  
  La dernière étape consiste à ajouter le code qui répond à l'utilisateur. Ajoutez les gestionnaires d'événements pour les événements <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> des deux boutons et l'événement <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> du bouton bascule. Ajoutez le code aux gestionnaires d'événements pour permettre de masquer et d'afficher les volets Actions.  
   
 #### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Pour masquer et afficher des volets Actions à l'aide de boutons dans l'onglet personnalisé  

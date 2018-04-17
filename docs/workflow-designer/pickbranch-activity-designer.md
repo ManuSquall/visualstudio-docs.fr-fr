@@ -1,5 +1,5 @@
 ---
-title: "Concepteur d’activités PickBranch | Documents Microsoft"
+title: Concepteur d’activités PickBranch | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be1cb6fdef8eed2a0f6b02f987143220e9b99d91
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 1c7fbb7dcacbf8d790e161a2af864c7a5e7e2c35
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pickbranch-activity-designer"></a>Concepteur d'activités PickBranch
 L'objet <xref:System.Activities.Statements.PickBranch> fournit un chemin d'accès d'exécution basé sur les événements dans une activité <xref:System.Activities.Statements.Pick> qui peut être déclenchée par un événement entrant.

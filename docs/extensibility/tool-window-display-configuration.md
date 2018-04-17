@@ -1,26 +1,24 @@
 ---
-title: "Outil de Configuration de la fenêtre Affichage | Documents Microsoft"
-ms.custom: 
+title: Outil de Configuration de la fenêtre Affichage | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 585ea78e0591ad979d09a3e5b208635c3f75f903
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 175e2005047312f6815e90c21c60ab831c036064
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tool-window-display-configuration"></a>Configuration de l’affichage fenêtre outil
 Quand un VSPackage enregistre une fenêtre outil, la position par défaut, la taille, style d’ancrage et autres informations de visibilité est spécifié dans les valeurs facultatives. Pour plus d’informations sur l’inscription de fenêtre outil, consultez [fenêtres Outil dans le Registre](../extensibility/tool-windows-in-the-registry.md)  
@@ -44,7 +42,7 @@ HKEY_LOCAL_MACHINE\
 |Name|REG_SZ|« Nom court ici »|Un nom court qui décrit la fenêtre outil. Utilisé uniquement pour référence dans le Registre.|  
 |Float|REG_SZ|« X1, Y1, X2, Y2 »|Quatre valeurs séparées par des virgules. X1, Y1 est la coordonnée de l’angle supérieur gauche de la fenêtre outil. X2, Y2 est la coordonnée de l’angle inférieur droit. Toutes les valeurs sont en coordonnées d’écran.|  
 |Style|REG_SZ|« MDI »<br /><br /> « Flotter »<br /><br /> « Lié »<br /><br /> « Onglets »<br /><br /> « AlwaysFloat »|Un mot clé spécifiant initial afficher l’état de la fenêtre outil.<br /><br /> « MDI » = ancrée à la fenêtre MDI.<br /><br /> « Flotter » = flottante.<br /><br /> « Lié » = liée à une autre fenêtre (spécifiée dans l’entrée de fenêtre).<br /><br /> « Onglets » = combinées avec une autre fenêtre d’outil.<br /><br /> « AlwaysFloat » = ne peut pas être ancrée.<br /><br /> Pour plus d’informations, consultez la section commentaires ci-dessous.|  
-|Fenêtre|REG_SZ|*\<GUID >*|Le GUID d’une fenêtre dans lequel la fenêtre outil peut être liée ou avec onglets. Le GUID ne peut appartenir à un de vos propres fenêtres ou l’un des fenêtres dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
+|Fenêtre|REG_SZ|*\<GUID &GT;*|Le GUID d’une fenêtre dans lequel la fenêtre outil peut être liée ou avec onglets. Le GUID ne peut appartenir à un de vos propres fenêtres ou l’un des fenêtres dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
 |Orientation|REG_SZ|« Gauche »<br /><br /> « Right »<br /><br /> « Top »<br /><br /> « Bottom »|Consultez la section commentaires ci-dessous.|  
 |DontForceCreate|REG_DWORD|0 ou 1|Lorsque cette entrée est présente et sa valeur n’est pas zéro, la fenêtre est chargée, mais pas immédiatement affichée.|  
   
@@ -90,8 +88,8 @@ HKEY_LOCAL_MACHINE\
   
 |Name|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
-|(Default)|REG_SZ|Aucun.|Laissez vide.|  
-|*\<GUID >*|REG_DWORD ou REG_SZ|0 ou une chaîne descriptive.|Facultatif. Nom de l’entrée doit être le GUID d’une commande nécessitant une visibilité. La valeur contient simplement une chaîne informative. En règle générale, la valeur est un `reg_dword` définie sur 0.|  
+|(Default)|REG_SZ|Aucun|Laissez vide.|  
+|*\<GUID &GT;*|REG_DWORD ou REG_SZ|0 ou une chaîne descriptive.|Facultatif. Nom de l’entrée doit être le GUID d’une commande nécessitant une visibilité. La valeur contient simplement une chaîne informative. En règle générale, la valeur est un `reg_dword` définie sur 0.|  
   
 ### <a name="example"></a>Exemple  
   

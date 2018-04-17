@@ -2,24 +2,20 @@
 title: Couleurs et styles pour Visual Studio | Documents Microsoft
 ms.custom: ''
 ms.date: 07/31/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af9522d5773fd74eabcd3b7fce84b7bd56e0cd2a
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 5cee3ec1308ee103d279a0d77ded4092e4ccf9b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 ## <a name="using-color-in-visual-studio"></a>À l’aide de la couleur dans Visual Studio
@@ -312,7 +308,7 @@ Plusieurs éléments d’interface utilisateur communes ont déjà des couleurs 
 | MenuText | -Bordure du menu liste déroulante<br />-Coches<br />-Les glyphes menu<br />-Texte du menu liste déroulante<br />-Bordure d’icône sélectionné |
 | Scrollbar | -Faire défiler barre et arrière-plan de la flèche, tous les États de la barre de défilement |
 | Fenêtre | Masquage automatique en arrière-plan d’onglet<br />-Menu barre et d’arrière-plan de l’interface de commande<br />-Arrière-plan de la fenêtre du document inactif ou désélectionné onglet et la bordure de document, pour les onglets ouverts et provisoires<br />-Arrière-plan de barre de titre de fenêtre outil inactif<br />-Outil fenêtre onglet en arrière-plan, à la fois sélectionnés et |
-| WindowFrame | -Bordure de IDE |
+| Cadre de fenêtre | -Bordure de IDE |
 | WindowText | -Premier plan d’onglet masquage automatique<br />-Premier plan onglet de fenêtre outil sélectionné<br />-Onglet de fenêtre de document inactif et au premier plan inactif ou désélectionné onglet provisoire<br />-Arborescence de premier plan par défaut de vue et du curseur sur le glyphe non sélectionnée<br />-Fenêtre outil sélectionné onglet Bordure<br />-Barre de défilement en arrière-plan de curseur de défilement, de bordure et de glyphe |
 
 ##  <a name="BKMK_ExposingColorsForEndUsers"></a> Exposition de couleurs pour les utilisateurs finaux

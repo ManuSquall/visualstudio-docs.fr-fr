@@ -1,13 +1,10 @@
 ---
-title: "Résolution des problèmes de déploiement de solutions Office | Documents Microsoft"
-ms.custom: 
+title: Résolution des problèmes de déploiement de solutions Office | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8940cd30b4e573b7438b45b13fdd30735a504809
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 29c3cfdcf31609eb5b6aec0111fe2297ba8c01ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-office-solution-deployment"></a>Dépannage du déploiement de solutions Office
   Cette rubrique contient des informations sur la résolution des problèmes courants que vous pouvez rencontrer lorsque vous déployez des solutions Office.  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
  Vous pouvez ajouter le .NET Framework, la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]et les assemblys PIA (Primary Interop Assembly) Office à votre package d’installation comme composants requis déployés avec votre solution Office. Pour plus d’informations sur la façon d’installer les assemblys PIA, consultez [configuration d’un ordinateur pour développer des Solutions Office](../vsto/configuring-a-computer-to-develop-office-solutions.md) et [Comment : installer assemblys PIA Office](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publishing-using-localhost-can-cause-installation-problems"></a>La publication à l’aide de « localhost » peut provoquer des problèmes d’installation  
- Lorsque vous utilisez « http://localhost » comme emplacement de publication ou d’installation pour les solutions au niveau du document, l’ **Assistant Publication** ne convertit pas la chaîne en nom réel de l’ordinateur. Dans ce cas, la solution doit être installée sur l’ordinateur de développement. Pour que des solutions déployées utilisent IIS sur l’ordinateur de développement, utilisez le nom complet pour tous les emplacements HTTP/HTTPS/FTP au lieu de localhost.  
+ Lorsque vous utilisez «http://localhost» comme emplacement de publication ou d’installation pour les solutions au niveau du document, le **Assistant Publication** ne convertit pas la chaîne dans le nom réel de l’ordinateur. Dans ce cas, la solution doit être installée sur l’ordinateur de développement. Pour que des solutions déployées utilisent IIS sur l’ordinateur de développement, utilisez le nom complet pour tous les emplacements HTTP/HTTPS/FTP au lieu de localhost.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Les assemblys mis en cache sont chargés au lieu des assemblys mis à jour  
  Fusion, le chargeur d’assembly .Net Framework, charge la copie mise en cache des assemblys lorsque le chemin de sortie du projet est sur un partage de fichiers réseau, que l’assembly est signé avec un nom fort et que la version d’assembly de la personnalisation ne change pas. Si vous mettez à jour un assembly qui satisfait ces conditions, la mise à jour ne s’affiche pas lors de la prochaine exécution du projet, car la copie mise en cache est chargée.  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Pour télécharger des assemblys au lieu de charger des copies mises en cache  
   
-1.  Dans la barre de menus, choisissez **Projet**, *Propriétés de***NomProjet**.  
+1.  Dans la barre de menus, choisissez **projet**, * NomProjet ***propriétés**.  
   
 2.  Dans la page **Application** , choisissez **Informations de l’assembly**.  
   
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="reinstalling-office-solutions-causes-an-argument-out-of-range-exception"></a>La réinstallation de solutions Office provoque une exception d’argument hors limites  
  Lorsque vous réinstallez une solution Office, une exception <xref:System.ArgumentOutOfRangeException> peut s’afficher avec le message d’erreur suivant : « L’argument spécifié n’était pas dans les limites de la plage des valeurs valides. »  
   
- Cette situation se produit si la casse de l’URL de l’emplacement d’installation est différente. Par exemple, cette erreur s’affiche si vous avez installé une solution Office à partir de [http://fabrikam.com/ExcelSolution.vsto](http://fabrikam.com/ExcelSolution.vsto) la première fois, puis que vous avez utilisé [http://fabrikam.com/excelsolution.vsto](http://fabrikam.com/excelsolution.vsto) la deuxième fois.  
+ Cette situation se produit si la casse de l’URL de l’emplacement d’installation est différente. Par exemple, cette erreur apparaît si vous avez installé une solution Office à partir de [ http://fabrikam.com/ExcelSolution.vsto ](http://fabrikam.com/ExcelSolution.vsto) la première fois, puis utilisé [ http://fabrikam.com/excelsolution.vsto ](http://fabrikam.com/excelsolution.vsto) la deuxième fois.  
   
  Pour empêcher l’affichage de ce message, utilisez la même casse lorsque vous installez des solutions Office.  
   

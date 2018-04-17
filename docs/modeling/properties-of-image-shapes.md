@@ -1,10 +1,8 @@
 ---
-title: "Propriétés des formes d’Image | Documents Microsoft"
-ms.custom: 
+title: Propriétés des formes d’Image | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectimagedialog
 - vs.dsltools.dsldesigner.imageshape
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, image shape
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d4e2c06252659c126fc2e73b7a90973d3d624636
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6b1edd5ffadedd0af66b43902bc865b71243a92d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-image-shapes"></a>Propriétés des formes d'image
 Vous pouvez utiliser des formes d’image pour spécifier l’aspect des classes de domaine dans un concepteur généré. Définir une forme de l’image en définissant le `Image` propriété de la classe dans un fichier image prédéfinie. Les formats suivants sont pris en charge :  
@@ -29,9 +27,9 @@ Vous pouvez utiliser des formes d’image pour spécifier l’aspect des classes
   
 -   .jpg  
   
--   .jpeg  
+-   .JPEG  
   
--   .bmp  
+-   fichiers .bmp  
   
 -   .wmf  
   
@@ -55,7 +53,7 @@ Vous pouvez utiliser des formes d’image pour spécifier l’aspect des classes
 |Épaisseur du contour|L’épaisseur du contour de cette forme.|0.03125|  
 |Couleur du texte|La couleur qui est utilisée pour les éléments décoratifs de texte qui sont associés à cette forme.|Noir|  
 |Modificateur d'accès|Le modificateur d’accès de la forme de géométrie (public ou internal).|Public|  
-|Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source qui est générée à partir de cette forme.|\<none>|  
+|Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source qui est générée à partir de cette forme.|\<Aucun >|  
 |Génère deux dérivées|Si `True`, une classe de base et une classe partielle (pour la personnalisation par des remplacements) seront générés. Pour plus d’informations, consultez [substituer et étendre les Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |A constructeur personnalisé|Si `True`, un constructeur personnalisé sera fourni dans le code source. Pour plus d’informations, consultez [substituer et étendre les Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir de la forme d’image (`none`, `abstract` ou `sealed`).|aucun|  
@@ -63,15 +61,15 @@ Vous pouvez utiliser des formes d’image pour spécifier l’aspect des classes
 |Name|Le nom de cette forme.|Nom actuel|  
 |Espace de noms|L’espace de noms n’est affilié à cette forme.|Espace de noms actuel|  
 |Type de l’info-bulle|L’endroit où l’info-bulle est défini (fixé, variable, ou aucun). Si fixe, puis la valeur de la `Fixed Tooltip Text` propriété est utilisée en tant que l’info-bulle ; si la variable, l’info-bulle est défini dans le code personnalisé.|aucun|  
-|Notes|Notes informelles qui sont associés à cette forme.|\<none>|  
+|Notes|Notes informelles qui sont associés à cette forme.|\<Aucun >|  
 |Hauteur initiale|La hauteur initiale de cette forme, exprimée en pouces.|1|  
 |Largeur initiale|La largeur initiale de cette forme, exprimée en pouces.|1,5|  
 |Couleur de remplissage exposé en tant que propriété<br /><br /> Mode de remplissage exposé de dégradé<br /><br /> Exposée de couleur de contour comme propriété<br /><br /> Exposé un Style de ligne hiérarchique en tant que propriété<br /><br /> Épaisseur du contour en tant que propriété d’exposé<br /><br /> Expose la couleur du texte|Si `True`, l’utilisateur peut définir la propriété indiquée d’une forme. Pour configurer cela, cliquez sur la définition de la forme, puis cliquez sur **ajouter exposées**.|False|  
-|Description|Utilisé pour documenter le concepteur généré.|\<none>|  
-|Nom complet|Le nom qui sera affiché dans le concepteur généré pour cette forme.|\<none>|  
-|Texte info-bulle fixe|Le texte qui est utilisé pour une info-bulle fixe.|\<none>|  
-|Help Keyword|Le mot clé qui est utilisé pour l’index d’aide (F1) pour cet élément.|\<none>|  
-|Image|Le chemin d’accès au fichier image qui est utilisé pour cette forme.|\<none>|  
+|Description|Utilisé pour documenter le concepteur généré.|\<Aucun >|  
+|Nom complet|Le nom qui sera affiché dans le concepteur généré pour cette forme.|\<Aucun >|  
+|Texte info-bulle fixe|Le texte qui est utilisé pour une info-bulle fixe.|\<Aucun >|  
+|Help Keyword|Le mot clé qui est utilisé pour l’index d’aide (F1) pour cet élément.|\<Aucun >|  
+|Image|Le chemin d’accès au fichier image qui est utilisé pour cette forme.|\<Aucun >|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,13 +1,10 @@
 ---
-title: "&lt;EntryPoint&gt; élément (développement Office dans Visual Studio) | Documents Microsoft"
-ms.custom: 
+title: '&lt;EntryPoint&gt; élément (développement Office dans Visual Studio) | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: de60c2164bfbb0f7f8f483ab937fed23ecea9195
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a620dae22e6fd67e3d880cbd87e8883911f28845
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;EntryPoint&gt; élément (développement Office dans Visual Studio)
   L’élément `entryPoints` de l’espace de noms `vstav3` contient tous les éléments `entryPoint` associés à une solution Office.  
@@ -52,7 +49,7 @@ ms.lasthandoff: 01/10/2018
  `entryPoints` comporte les éléments suivants.  
   
 ### <a name="entrypoint"></a>entryPoint  
- Obligatoire. Le rôle de la `entryPoint` élément dans le `vstav3` espace de noms est défini dans [&#60; entryPoint &#62; Élément &#40; développement Office dans Visual Studio &#41; ](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
+ Obligatoire. Le rôle de la `entryPoint` élément dans le `vstav3` espace de noms est défini dans [ &#60;entryPoint&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Exemple de personnalisation au niveau du document  
   

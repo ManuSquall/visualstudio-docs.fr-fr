@@ -1,12 +1,10 @@
 ---
-title: "Comment : ajouter des contrôles Windows Forms à des Documents Office | Documents Microsoft"
-ms.custom: 
+title: 'Comment : ajouter des contrôles Windows Forms à des Documents Office | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 937c64f8fadf8763d4e5b3ad32489262cddafdfd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ebd26c78e30e522b3d961d42226fc42825eb2a2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Comment : ajouter des contrôles Windows Forms à des documents Office
   Vous pouvez ajouter des contrôles Windows Forms à des documents Microsoft Office Excel et Microsoft Office Word au moment du design dans les projets au niveau du document. Au moment de l'exécution, vous pouvez ajouter des contrôles dans les personnalisations au niveau du document et les compléments VSTO. Par exemple, vous pouvez ajouter un contrôle <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> à votre feuille de calcul pour que les utilisateurs puissent sélectionner une option dans une liste.  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vidéo") pour une démonstration vidéo connexe, consultez [comment faire : ajouter des contrôles à une Surface du Document lors de l’exécution ?](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
-##  <a name="designtime"></a>Ajout de contrôles au moment du Design  
+##  <a name="designtime"></a> Ajout de contrôles au moment du Design  
  Il existe plusieurs façons d'ajouter des contrôles Windows Forms au document dans un projet au niveau du document au moment du design.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -102,10 +101,10 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Quand vous sélectionnez un contrôle dans Excel, vous voyez **=EMBED("WinForms.Control.Host","")** dans la **Barre de formule**. Ce texte est nécessaire et ne doit pas être supprimé.  
   
-##  <a name="runtimedoclevel"></a>Ajout de contrôles au moment de l’exécution dans les projets au niveau du Document  
- Vous pouvez ajouter par programmation des contrôles Windows Forms à un document au moment de l'exécution. Dans Word, utilisez les méthodes de la propriété <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> de la classe `ThisDocument`. Dans Excel, utilisez les méthodes de la <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> propriété d’un `Sheet`  *n*  classe. Chaque méthode a plusieurs surcharges qui vous permettent de spécifier l'emplacement du contrôle de différentes façons.  
+##  <a name="runtimedoclevel"></a> Ajout de contrôles au moment de l’exécution dans les projets au niveau du Document  
+ Vous pouvez ajouter par programmation des contrôles Windows Forms à un document au moment de l'exécution. Dans Word, utilisez les méthodes de la propriété <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> de la classe `ThisDocument`. Dans Excel, utilisez les méthodes de la <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> propriété d’un `Sheet` *n* classe. Chaque méthode a plusieurs surcharges qui vous permettent de spécifier l'emplacement du contrôle de différentes façons.  
   
- Quand vous ajoutez un contrôle Windows Forms à un document au moment de l'exécution, le contrôle n'est pas conservé dans le document après la fermeture de ce dernier. Vous pouvez recréer le contrôle à la prochaine ouverture du document. Pour plus d'informations, consultez [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Quand vous ajoutez un contrôle Windows Forms à un document au moment de l'exécution, le contrôle n'est pas conservé dans le document après la fermeture de ce dernier. Vous pouvez recréer le contrôle à la prochaine ouverture du document. Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-windows-forms-control-at-run-time"></a>Pour ajouter un contrôle Windows Forms au moment de l'exécution  
   
@@ -116,10 +115,10 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#4)]  
   
-##  <a name="runtimeaddin"></a>Ajout de contrôles au moment de l’exécution dans des Compléments VSTO  
+##  <a name="runtimeaddin"></a> Ajout de contrôles au moment de l’exécution dans des Compléments VSTO  
  Vous pouvez ajouter des contrôles Windows Forms par programmation à un document ouvert au moment de l'exécution. Tout d'abord, générez un élément hôte basé sur un document ouvert ou une feuille de calcul ouverte. Dans Word, utilisez les méthodes de la propriété <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> du nouvel élément hôte. Dans Excel, utilisez les méthodes de la propriété <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> du nouvel élément hôte. Chaque méthode a plusieurs surcharges qui vous permettent de spécifier l'emplacement du contrôle de différentes façons.  
   
- Quand vous ajoutez un contrôle Windows Forms à un document au moment de l'exécution, le contrôle n'est pas conservé dans le document après la fermeture de ce dernier. Vous pouvez recréer le contrôle à la prochaine ouverture du document. Pour plus d'informations, consultez [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Quand vous ajoutez un contrôle Windows Forms à un document au moment de l'exécution, le contrôle n'est pas conservé dans le document après la fermeture de ce dernier. Vous pouvez recréer le contrôle à la prochaine ouverture du document. Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Pour plus d’informations sur la génération d’éléments hôtes dans les projets de complément VSTO, consultez [extension de Documents Word et classeurs Excel dans des Compléments VSTO au moment de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
@@ -139,6 +138,6 @@ ms.lasthandoff: 01/10/2018
  [Contrôles Windows Forms dans une vue d’ensemble des Documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Ajout de contrôles aux Documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Comment : redimensionner des contrôles dans les cellules de feuille de calcul](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Vue d'ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
   

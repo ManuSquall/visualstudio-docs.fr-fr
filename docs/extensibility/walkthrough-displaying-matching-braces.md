@@ -1,27 +1,23 @@
 ---
-title: "Procédure pas à pas : Affichage des accolades correspondantes | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Affichage des accolades correspondantes | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3dde61c10d0a8c9fc5578b02cc713f648409cbf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 370340246cd75e53580d1ac2b6c591f0854cb23e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Procédure pas à pas : Affichage des accolades correspondantes
 Vous pouvez implémenter basée sur le langage des fonctionnalités telles que les accolades correspondantes en définissant les accolades que vous souhaitez faire correspondre et en ajoutant une balise de marqueur de texte pour les accolades correspondantes lorsque le point d’insertion se trouve sur un des accolades. Vous pouvez définir des accolades dans le contexte d’une langue, ou vous pouvez définir votre propre type de contenu et d’extension de nom du fichier et appliquer les balises à uniquement ce type, ou vous pouvez appliquer les balises à un type de contenu existant (par exemple « text »). La procédure suivante montre comment appliquer des étiquettes pour le type de contenu « text » de la correspondance des accolades.  

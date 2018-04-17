@@ -1,12 +1,10 @@
 ---
-title: "Comment : insérer du texte dans des Documents Word par programmation | Documents Microsoft"
-ms.custom: 
+title: 'Comment : insérer du texte dans des Documents Word par programmation | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], replacing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3e54850bd4cdd66786474f3f823e5e73dc54d344
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: bbbcc0543ce6017ac83ed2d1fcc09fed201e466f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Comment : insérer du texte dans les documents Word par programmation
   Il existe trois principaux moyens pour insérer du texte dans des documents Microsoft Office Word :  

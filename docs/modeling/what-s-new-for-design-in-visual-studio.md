@@ -1,27 +1,25 @@
 ---
-title: Quel &#39; s de conception dans Visual Studio | Documents Microsoft
-ms.custom: 
+title: Ce que&#39;s nouveau pour la conception dans Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-modeling
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [VIsual Studio ALM], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
 - modeling software [Visual Studio ALM], What's New
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3fe70c36daf9d137e77acf75b9bd712ecf556c7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4e476e7f5107fb6ecfaced44342179d3365aec98
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-for-design-in-visual-studio"></a>Quel &#39; s de conception dans Visual Studio
+# <a name="what39s-new-for-design-in-visual-studio"></a>Ce que&#39;s nouveau pour la conception dans Visual Studio
 
 ## <a name="live-dependency-validation"></a>Validation de dépendance dynamique
 

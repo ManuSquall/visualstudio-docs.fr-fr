@@ -1,13 +1,10 @@
 ---
 title: Concepteur de manifeste VSIX | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d7af3ab109c922a8182a93db6852a331229ceca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b90f8acd95d913e563ff167e21b743cbffec2ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsix-manifest-designer"></a>Concepteur de manifeste VSIX
 Modifie un fichier de manifeste de package VSIX, qui définit le comportement d’installation d’une extension de Visual Studio.  
@@ -56,7 +52,7 @@ Modifie un fichier de manifeste de package VSIX, qui définit le comportement d�
  **ID de produit**  
  Spécifie les informations d’identification unique pour ce package.  
   
- **Auteur**  
+ **auteur**  
  Spécifie le nom de l’auteur de l’extension.  
   
  **Version**  

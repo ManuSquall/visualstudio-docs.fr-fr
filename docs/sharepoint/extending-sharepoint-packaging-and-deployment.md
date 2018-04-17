@@ -1,13 +1,10 @@
 ---
-title: "Extension SharePoint empaquetage et déploiement | Documents Microsoft"
-ms.custom: 
+title: Extension SharePoint empaquetage et déploiement | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fa807472a0787f0f1ae4c61f074fd8bb3ad5055
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c91c78e6ab78ac39eb5c53c32a70ead895129df0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-packaging-and-deployment"></a>Extension de la création de packages et du déploiement SharePoint
   Vous pouvez étendre le processus d'empaquetage et de déploiement pour les projets SharePoint.
@@ -33,7 +30,7 @@ ms.lasthandoff: 01/10/2018
  Pour une procédure pas à pas qui montre comment créer une étape de déploiement, consultez [procédure pas à pas : création d’une étape de déploiement personnalisée pour les projets SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
 ##  <a name="creating-deployment-configurations"></a>Création de configurations de déploiement  
- Une configuration de déploiement est un ensemble d'étapes de déploiement exécutées pour un projet donné, mais qui peuvent affecter tous les éléments de projet SharePoint. Chaque configuration de déploiement inclut un ensemble d'étapes exécutées quand le projet est déployé, et un autre ensemble exécuté quand le projet est retiré. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)]inclut deux configurations de déploiement intégrées, mais vous pouvez également créer vos propres. Quand vous créez une configuration de déploiement, vous pouvez y inclure les étapes de déploiement intégrées et vos propres étapes de déploiement.  
+ Une configuration de déploiement est un ensemble d'étapes de déploiement exécutées pour un projet donné, mais qui peuvent affecter tous les éléments de projet SharePoint. Chaque configuration de déploiement inclut un ensemble d'étapes exécutées quand le projet est déployé, et un autre ensemble exécuté quand le projet est retiré. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] inclut deux configurations de déploiement intégrées, mais vous pouvez également créer vos propres. Quand vous créez une configuration de déploiement, vous pouvez y inclure les étapes de déploiement intégrées et vos propres étapes de déploiement.  
   
  Pour une procédure pas à pas qui montre comment créer une configuration de déploiement, consultez [procédure pas à pas : création d’une étape de déploiement personnalisée pour les projets SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   

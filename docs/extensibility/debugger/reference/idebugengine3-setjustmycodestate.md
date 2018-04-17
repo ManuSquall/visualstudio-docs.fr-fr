@@ -1,29 +1,25 @@
 ---
 title: IDebugEngine3::SetJustMyCodeState | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugEngine3::SetJustMyCodeState
 helpviewer_keywords:
 - IDebugEngine3::SetJustMyCodeState
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08d396d378f168b9a54e3b640e69dfeb3f6c9ba1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fda672cc9d6861520b9da3a894b94d51f4100683
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 Cette méthode indique au moteur de débogage sur les informations d’état JustMyCode.  
@@ -51,7 +47,7 @@ int SetJustMyCodeState(
  [in] Différent de zéro (`TRUE`) pour mettre à jour les informations actuelles, zéro (`FALSE`) pour réinitialiser toutes les informations (en ignorant tout élément défini précédemment).  
   
  `dwModules`  
- [in] Nombre de structures d’informations dans`rgJMCSpec.`  
+ [in] Nombre de structures d’informations dans `rgJMCSpec.`  
   
  `rgJMCSpec`  
  [in] Tableau de [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) structures à utiliser.  

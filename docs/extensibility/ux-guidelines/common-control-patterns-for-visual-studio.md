@@ -1,26 +1,24 @@
 ---
-title: "Les modèles de contrôle courants pour Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Les modèles de contrôle courants pour Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ded7ed6dd843a7879100704276766bfcb528b6f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8383537a7e9d49f79e98da4dd95a3474803315d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modèles de contrôle courants pour Visual Studio
-##  <a name="BKMK_CommonControls"></a>Contrôles communs  
+##  <a name="BKMK_CommonControls"></a> Contrôles communs  
   
 ### <a name="overview"></a>Vue d'ensemble  
 Contrôles communs constituent la majeure partie de l’interface utilisateur dans Visual Studio. Contrôles les plus courants utilisés dans l’interface de Visual Studio doivent suivre le [directives d’interaction de bureau Windows](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx). Cette rubrique est spécifique à Visual Studio et traite des situations particulières ou des détails qui augmentent les instructions de Windows.  
@@ -52,10 +50,10 @@ La première chose à prendre en compte lorsque les styles de contrôles est que
   
 -   **Outil windows, les éditeurs de document, les aires de conception et les boîtes de dialogue à thème :** utiliser spécialisée apparence à thème à l’aide du service de couleur.  
   
-###  <a name="BKMK_Scrollbars"></a>Barres de défilement  
+###  <a name="BKMK_Scrollbars"></a> Barres de défilement  
  Barres de défilement doivent suivre [barres de défilement des modèles courants d’interaction pour Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/bb787527\(v=vs.85\).aspx) , sauf si elles sont augmentés avec les informations de contenu, comme dans l’éditeur de code.  
   
-###  <a name="BKMK_InputFields"></a>Champs d’entrée  
+###  <a name="BKMK_InputFields"></a> Champs d’entrée  
  Pour le comportement de l’interaction typique, suivez les [des recommandations de bureau Windows pour les zones de texte](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742442\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Style visuel  
@@ -78,7 +76,7 @@ La première chose à prendre en compte lorsque les styles de contrôles est que
   
      ![Corriger la longueur de champ d’entrée : le champ d’entrée est une largeur raisonnable pour le contenu attendu. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl")<br />Corriger la longueur de champ d’entrée : le champ d’entrée est une largeur raisonnable pour le contenu attendu.
   
-###  <a name="BKMK_ComboBoxesAndDropDowns"></a>Zones de liste déroulante et les listes déroulantes  
+###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Zones de liste déroulante et les listes déroulantes  
 Pour le comportement de l’interaction typique, suivez les [des recommandations de bureau Windows pour les listes déroulantes et les zones de liste déroulante](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742404\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Style visuel  
@@ -87,14 +85,14 @@ Pour le comportement de l’interaction typique, suivez les [des recommandations
   
 -   Dans l’interface utilisateur à thème, zones de liste déroulante et les zones déroulantes suivent les thèmes standard pour les contrôles.  
   
-#### <a name="layout"></a>Disposition  
+#### <a name="layout"></a>Mise en page  
 Zones de liste déroulante et les zones déroulantes doivent être dimensionnées en fonction du contenu, ne pas à la largeur de la fenêtre dans lequel elles sont affichées, ni à arbitrairement correspond à la longueur d’un champ long, comme un chemin d’accès.  
   
 ![Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui sera affiché. ] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui sera affiché.
   
 ![Correct : la liste déroulante est dimensionnée pour permettre la croissance de traduction, mais pas inutilement long. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />Correct : la liste déroulante est dimensionnée pour permettre la croissance de traduction, mais pas inutilement long. 
   
-###  <a name="BKMK_CheckBoxes"></a>Cases à cocher  
+###  <a name="BKMK_CheckBoxes"></a> Cases à cocher  
 Pour le comportement de l’interaction typique, suivez les [des recommandations de bureau Windows pour les cases à cocher](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742401\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Style visuel  
@@ -113,7 +111,7 @@ Pour le comportement de l’interaction typique, suivez les [des recommandations
   
      ![Correct : la case à cocher est aligné avec la première ligne du texte. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign")<br />Correct : la case à cocher est aligné avec la première ligne du texte.
   
-###  <a name="BKMK_RadioButtons"></a>Cases d’option  
+###  <a name="BKMK_RadioButtons"></a> Cases d’option  
 Pour le comportement de l’interaction typique, suivez les [des recommandations de bureau Windows pour les cases d’option](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742436\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Style visuel  
@@ -122,13 +120,13 @@ Dans les boîtes de dialogue utilitaire, n'effectuez pas les boutons de case d�
 #### <a name="specialized-interactions"></a>Interactions spécialisées  
 Il n’est pas nécessaire d’utiliser un cadre de groupe à placer les choix de cases d’option, sauf si vous avez besoin maintenir la distinction de groupe dans une disposition étroite.  
   
-###  <a name="BKMK_GroupFrames"></a>Images de groupe  
+###  <a name="BKMK_GroupFrames"></a> Images de groupe  
 Pour le comportement de l’interaction typique, suivez les [des recommandations de bureau Windows pour les images de groupe](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742405\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Style visuel  
 Dans l’utilitaire de boîtes de dialogue, ne style cadres de groupe. Utiliser le style de base intrinsèque au contrôle.  
   
-#### <a name="layout"></a>Disposition  
+#### <a name="layout"></a>Mise en page  
   
 -   Il n’est pas nécessaire d’utiliser un cadre de groupe à placer les choix de cases d’option, sauf si vous avez besoin maintenir la distinction de groupe dans une disposition étroite.  
   
@@ -136,7 +134,7 @@ Dans l’utilitaire de boîtes de dialogue, ne style cadres de groupe. Utiliser 
   
 -   Parfois, il est acceptable d’utiliser une règle horizontale au lieu d’un conteneur de frame de groupe.  
   
-##  <a name="BKMK_TextControls"></a>Contrôles de texte
+##  <a name="BKMK_TextControls"></a> Contrôles de texte
 
 ### <a name="static-text-fields"></a>Champs de texte statique
 
@@ -217,7 +215,7 @@ Texte dynamique peut être utilisé de deux façons dans une boîte de dialogue 
 
 Si vous souhaitez que les utilisateurs ont la possibilité de copier les informations, texte dynamique doit être dans un champ de texte en lecture seule.
   
-##  <a name="BKMK_ButtonsAndHyperlinks"></a>Boutons et des liens hypertexte  
+##  <a name="BKMK_ButtonsAndHyperlinks"></a> Boutons et des liens hypertexte  
   
 ### <a name="overview"></a>Vue d'ensemble  
 Contrôles de boutons et de liens (liens) doivent suivre [conseils de bureau Windows de base sur les liens hypertexte](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742406\(v=vs.85\).aspx) pour l’utilisation, formulation de dimensionnement et de l’espacement.  
@@ -331,11 +329,11 @@ Suivez les [des conseils de bureau Windows pour le texte de l’interface utilis
   
 -   Soulignement ne doit pas apparaître pointage. Au lieu de cela, les commentaires à l’utilisateur que le lien est actif sont une modification de couleur légère et le curseur de lien approprié.  
   
-##  <a name="BKMK_TreeViews"></a>Vues de l’arborescence  
+##  <a name="BKMK_TreeViews"></a> Vues de l’arborescence  
   
 Vues de l’arborescence fournissent un moyen d’organiser complexe répertorie dans des groupes parent-enfant. Un utilisateur peut développer ou réduire des groupes parents pour afficher ou masquer des éléments enfants sous-jacents. Chaque élément dans une vue d’arborescence peut être sélectionné pour fournir davantage d’action.  
   
-###  <a name="BKMK_TreeViewVisualStyle"></a>Style de vue visual  
+###  <a name="BKMK_TreeViewVisualStyle"></a> Style de vue visual  
   
 #### <a name="expanders"></a>EXPANSEURS  
 Contrôles d’arborescence doivent être conforme à la conception du contrôle expander utilisée par Windows et Visual Studio. Chaque nœud utilise un contrôle expander pour afficher ou masquer les éléments sous-jacents. À l’aide d’un contrôle expander cohérence pour les utilisateurs peuvent rencontrer des arborescences différentes au sein de Windows et Visual Studio.  
@@ -359,7 +357,7 @@ Barres de défilement doivent toujours être masquées si le contenu tient dans 
   
 ![Les barres de défilement verticale et horizontale sont affichent, car le contenu a dépassé les limites du contrôle arborescence. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705-4_Scrollbars")<br />Les barres de défilement verticale et horizontale sont affichent, car le contenu a dépassé les limites du contrôle arborescence.
   
-###  <a name="BKMK_TreeViewInteractions"></a>Interactions de vue d’arborescence  
+###  <a name="BKMK_TreeViewInteractions"></a> Interactions de vue d’arborescence  
   
 #### <a name="context-menus"></a>Menus contextuels  
 Un nœud d’arborescence peut révéler des options de sous-menu dans un menu contextuel. En règle générale, cela se produit lorsqu’un utilisateur a cliqué un élément ou enfoncée la touche de Menu sur un clavier Windows avec l’élément sélectionné. Il est important que le nœud Obtient le focus et est sélectionné. Cela aide l’utilisateur à identifier l’élément auquel appartient le sous-menu.  

@@ -1,26 +1,24 @@
 ---
-title: "Définition des formes et connecteurs | Documents Microsoft"
-ms.custom: 
+title: Définition des formes et connecteurs | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a1a1043515afb8d7567459e1adae23f1d4fcfde9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d915487a9cbddb9678a6b9aa37d990e7b70527e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="defining-shapes-and-connectors"></a>Définition de formes et de connecteurs
 Il existe plusieurs types élémentaires de formes que vous pouvez utiliser pour afficher les informations sur le diagramme d'un langage spécifique à un domaine (DSL).  
   
-##  <a name="shapeTypes"></a>Types de base de formes et connecteurs  
+##  <a name="shapeTypes"></a> Types de base de formes et connecteurs  
  Un diagramme DSL montre un ensemble de *formes* correspondante par lignes ou *connecteurs*.  En règle générale, sans que ce soit systématique :  
   
 -   Les formes sont la représentation visible d'éléments de modèle.  
@@ -44,5 +42,5 @@ Il existe plusieurs types élémentaires de formes que vous pouvez utiliser pour
 |Couloirs|Les couloirs partitionnent un diagramme en segments horizontaux ou verticaux. Le couloir demeure toujours sous les autres formes du diagramme.<br /><br /> Généralement, les éléments de modèle du couloir sont apparentés à la racine du modèle et les autres éléments leur sont apparentés à leur tour. À titre d'exemple, créez un DSL à partir du modèle de solution Flux de tâches.|  
 |Connecteurs|Les lignes tracées entre les formes représentent généralement les relations de référence. Vous pouvez définir des options pour rendre un connecteur droit ou rectiligne, ainsi que pour obtenir différents types de flèche.|  
   
-##  <a name="shapeInheritance"></a>Héritage de forme  
+##  <a name="shapeInheritance"></a> Héritage de forme  
  Une forme peut hériter d'une autre forme. Cependant, les formes doivent être du même type. Par exemple, seule une forme géométrique peut hériter d'une forme géométrique. Les formes héritées possèdent les compartiments et décorateurs de leur forme de base. Les connecteurs peuvent hériter de connecteurs.

@@ -1,12 +1,10 @@
 ---
-title: "Comment : obtenir des données pour un nœud SharePoint intégré dans l’Explorateur de serveurs | Documents Microsoft"
-ms.custom: 
+title: 'Comment : obtenir des données pour un nœud SharePoint intégré dans l’Explorateur de serveurs | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cf70fe2e24f88ba64ab648d18d93907de0ddbfaf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f448ec8d7cfe22495aa3f7b2ce9191f106205c33
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Comment : obtenir des données pour un nœud SharePoint intégré dans l'Explorateur de serveurs
-  Pour chaque nœud SharePoint intégré dans **l’Explorateur de serveurs**, vous pouvez obtenir des données pour le composant SharePoint sous-jacent que le nœud représente. Pour plus d’informations, consultez [extension du nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
+  Pour chaque nœud SharePoint intégré dans **l’Explorateur de serveurs**, vous pouvez obtenir des données pour le composant SharePoint sous-jacent que le nœud représente. Pour plus d'informations, consultez [Extension du nœud Connexions SharePoint dans l'Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant montre comment obtenir des données pour la liste SharePoint sous-jacente qui représente un nœud de liste **l’Explorateur de serveurs**. Par défaut, les nœuds de liste ont un **afficher dans le navigateur** élément de menu contextuel que vous pouvez cliquer pour ouvrir les listes dans un navigateur Web. Cet exemple étend les nœuds de la liste en ajoutant un **affichage dans Visual Studio** élément de menu contextuel qui s’ouvre les listes directement dans Visual Studio. Le code accède à des données de liste pour le nœud obtenir l’URL de la liste pour l’ouvrir dans Visual Studio.  

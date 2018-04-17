@@ -1,12 +1,10 @@
 ---
-title: "Comment : utiliser par programme des boîtes de dialogue intégrées dans Word | Documents Microsoft"
-ms.custom: 
+title: 'Comment : utiliser par programme des boîtes de dialogue intégrées dans Word | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - dialog boxes, Word
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 961f6ac2aa9852170ecce35aa18ce4c39d7a9983
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 80406a8048529f811cf9cbeadc8d185577a114f4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Comment : utiliser les boîtes de dialogue intégrées dans Word par programmation
   Lorsque vous travaillez avec Microsoft Office Word, voici les heures lorsque vous devez afficher des boîtes de dialogue pour l’entrée d’utilisateur. Vous pouvez créer votre propre, vous souhaiterez également adopter l’approche de l’utilisation des boîtes de dialogue intégrées dans Word, qui sont exposées dans le <xref:Microsoft.Office.Interop.Word.Dialogs> collection de la <xref:Microsoft.Office.Interop.Word.Application> objet. Cela vous donne accès au plus de 200 des boîtes de dialogue intégrées, représentées comme des énumérations.  

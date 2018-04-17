@@ -1,12 +1,10 @@
 ---
-title: "Gestion de Documents sur un serveur à l’aide de la classe ServerDocument | Documents Microsoft"
-ms.custom: 
+title: Gestion de Documents sur un serveur à l’aide de la classe ServerDocument | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - ServerDocument class, managing documents on server
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2120e7c70abaddd4f51c0214a2c5ae517cf955cc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ef676de4ff352a557019f68037203364a97834d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-documents-on-a-server-by-using-the-serverdocument-class"></a>Gestion de documents sur un serveur à l'aide de la classe ServerDocument
   Vous pouvez utiliser la classe ServerDocument dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pour gérer plusieurs aspects des personnalisations au niveau du document, même si Microsoft Office Word et Microsoft Office Excel ne sont pas installés. Vous pouvez effectuer les tâches suivantes :  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Si vous avez une application héritée qui utilise la classe ServerDocument dans Visual Studio Tools pour Office system (version 3.0 Runtime), Visual Studio Tools pour Office system (version 3.0 Runtime) doit être installé sur les ordinateurs qui exécutent l’application. Visual Studio 2010 Tools pour Office Runtime ne peut pas exécuter ces applications.  
   
-##  <a name="CachedData"></a>Utilisation des données mises en cache dans le Document  
+##  <a name="CachedData"></a> Utilisation des données mises en cache dans le Document  
  La classe ServerDocument fournit des membres que vous pouvez utiliser pour travailler avec le cache de données dans des documents personnalisés. Pour plus d’informations sur les données mises en cache, consultez [mise en cache des données](../vsto/caching-data.md) et [accès aux données des Documents sur le serveur](../vsto/accessing-data-in-documents-on-the-server.md).  
   
  Le tableau suivant répertorie les membres que vous pouvez utiliser pour travailler avec les données mises en cache.  
@@ -51,9 +50,9 @@ ms.lasthandoff: 01/10/2018
 |Tâche|Membre à utiliser|  
 |----------|-------------------|  
 |Pour déterminer si un document a un cache de données.|Méthode <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A>|  
-|Pour accéder aux données mises en cache dans un document.<br /><br /> Pour plus d'informations, consultez [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md).|La propriété <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>.|  
+|Pour accéder aux données mises en cache dans un document.<br /><br /> Pour plus d'informations, consultez [Accès aux données des documents sur le serveur](../vsto/accessing-data-in-documents-on-the-server.md).|La propriété <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>.|  
   
-##  <a name="CustomizationInfo"></a>Gestion de la personnalisation de Document  
+##  <a name="CustomizationInfo"></a> Gestion de la personnalisation de Document  
  Vous pouvez utiliser des membres de la classe ServerDocument pour gérer l’assembly de personnalisation qui est associé à un document. Par exemple, vous pouvez supprimer par programmation la personnalisation d’un document afin que le document ne fait plus partie d’une personnalisation.  
   
  Le tableau suivant répertorie les membres que vous pouvez utiliser pour gérer l’assembly de personnalisation.  
@@ -68,6 +67,6 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Voir aussi  
  [Comment : attacher des Extensions de Code managé à des Documents](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
  [Comment : supprimer des Extensions de Code managé de Documents](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
- [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
+ [Vue d’ensemble de Visual Studio Tools pour Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Mise en cache des données](../vsto/caching-data.md)  
   

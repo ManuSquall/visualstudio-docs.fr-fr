@@ -1,23 +1,21 @@
 ---
-title: "Procédure pas à pas : Création d’un kit de développement à l’aide de c# ou Visual Basic | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création d’un kit de développement à l’aide de c# ou Visual Basic | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a8b0b8452fb20b9b6da4e8ad58c221010f23c9ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2106c26e8320e64a641197528c6b91223ef20342
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : Création d’un kit de développement à l’aide de c# ou Visual Basic
 Dans cette procédure pas à pas, vous allez apprendre à créer un kit de développement de bibliothèque mathématique simple à l’aide de Visual c#, puis d’empaqueter le Kit de développement comme une Extension Visual Studio (VSIX). Vous devez effectuer les procédures suivantes :  
@@ -31,7 +29,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 ## <a name="prerequisites"></a>Prérequis  
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createClassLibrary"></a>Pour créer le composant SimpleMath Windows Runtime  
+##  <a name="createClassLibrary"></a> Pour créer le composant SimpleMath Windows Runtime  
   
 1.  Dans la barre de menus, choisissez **fichier**, **nouveau**, **nouveau projet**.  
   
@@ -59,7 +57,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
   
 9. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **SimpleMath** nœud de projet, puis choisissez **Build**.  
   
-##  <a name="createVSIX"></a>Pour créer le projet d’extension SimpleMathVSIX  
+##  <a name="createVSIX"></a> Pour créer le projet d’extension SimpleMathVSIX  
   
 1.  Dans le menu contextuel pour le **Solution 'SimpleMath'** nœud, choisissez **ajouter**, **nouveau projet**.  
   
@@ -154,7 +152,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
   
 30. Choisissez le **installer** bouton, attendez que l’installation se termine, puis redémarrez Visual Studio.  
   
-##  <a name="createSample"></a>Pour créer un exemple d’application qui utilise la bibliothèque de classes  
+##  <a name="createSample"></a> Pour créer un exemple d’application qui utilise la bibliothèque de classes  
   
 1.  Dans la barre de menus, choisissez **fichier**, **nouveau**, **nouveau projet**.  
   
@@ -237,7 +235,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
   
 12. Appuyez sur la touche F5 pour exécuter l’application.  
   
-13. Dans l’application, entrez tous les deux numéros, choisissez une opération, puis le  **=**  bouton.  
+13. Dans l’application, entrez tous les deux numéros, choisissez une opération, puis le **=** bouton.  
   
      Le résultat correct s’affiche.  
   

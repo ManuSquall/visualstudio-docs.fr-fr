@@ -1,29 +1,25 @@
 ---
 title: Fonction de SccGetProjPath | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGetProjPath
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ce41826a3a0d778c5a417496d47f290e97806fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7ef5041b483e85e0806827f7d1188d432b476c5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath (fonction)
 Cette fonction invite l’utilisateur à un chemin d’accès de projet, qui est une chaîne qui est uniquement explicite pour le plug-in de contrôle de code source. Elle est appelée lorsque l’utilisateur est :  
@@ -98,14 +94,14 @@ SCCRTN SccGetProjPath (
 ## <a name="remarks"></a>Notes  
  L’objectif de cette fonction est de l’IDE acquérir les paramètres `lpProjName` et `lpAuxProjPath`. Une fois que le plug-in de contrôle de code source invite l’utilisateur pour obtenir cette information, il transmet ces deux chaînes à l’IDE. L’IDE persiste ces chaînes dans son fichier de solution et les transmet à la [SccOpenProject](../extensibility/sccopenproject-function.md) chaque fois que l’utilisateur ouvre ce projet. Ces chaînes activer le plug-in effectuer le suivi des informations associées à un projet.  
   
- Lorsque la fonction est appelée tout d’abord, `lpAuxProjPath` est définie sur une chaîne vide. `lProjName`peut également être vide, ou il peut contenir le nom du projet IDE, ce qui le plug-in de contrôle de code source peut utiliser ou ignorer. Lorsque la fonction est retournée avec succès, le plug-in retourne les deux chaînes correspondantes. L’IDE fait aucune hypothèse sur ces chaînes n’utilise pas les et n’autorisera pas l’utilisateur de les modifier. Si l’utilisateur souhaite modifier les paramètres, l’IDE appellera `SccGetProjPath` à nouveau, en passant les mêmes valeurs qu’il a reçu la dernière fois. Cela donne le contrôle complet plug-in sur ces deux chaînes.  
+ Lorsque la fonction est appelée tout d’abord, `lpAuxProjPath` est définie sur une chaîne vide. `lProjName` peut également être vide, ou il peut contenir le nom du projet IDE, ce qui le plug-in de contrôle de code source peut utiliser ou ignorer. Lorsque la fonction est retournée avec succès, le plug-in retourne les deux chaînes correspondantes. L’IDE fait aucune hypothèse sur ces chaînes n’utilise pas les et n’autorisera pas l’utilisateur de les modifier. Si l’utilisateur souhaite modifier les paramètres, l’IDE appellera `SccGetProjPath` à nouveau, en passant les mêmes valeurs qu’il a reçu la dernière fois. Cela donne le contrôle complet plug-in sur ces deux chaînes.  
   
  Pour `lpUser`, l’IDE peut passer dans un nom d’utilisateur, ou elle peut simplement passer un pointeur à une chaîne vide. S’il existe un nom d’utilisateur, le plug-in de contrôle de code source doit-elle l’utiliser comme valeur par défaut. Toutefois, si aucun nom n’a été passée ou si la connexion a échoué avec le nom donné, le plug-in doit inviter l’utilisateur à une connexion et la passe de nouveau le nom `lpUser` lorsqu’elle reçoit une connexion valide. Étant donné que le plug-in peut modifier cette chaîne, l’IDE toujours alloue une mémoire tampon de taille (`SCC_USER_LEN`+ 1).  
   
 > [!NOTE]
 >  La première action que l’IDE exécute peut être un appel à la `SccOpenProject` (fonction) ou `SccGetProjPath` (fonction). Par conséquent, les deux d'entre eux ont un identiques `lpUser` paramètre, ce qui permet le plug-in pour connecter l’utilisateur au moment du contrôle de code source. Même si le retour de la fonction indique une défaillance, le plug-in doit remplir cette chaîne avec un nom de connexion valide.  
   
- `lpLocalPath`est le répertoire où l’utilisateur maintient le projet. Il peut être une chaîne vide. Si aucun répertoire actuellement défini (comme dans le cas d’un utilisateur tente de télécharger un projet à partir du système de contrôle de code source) et si `bAllowChangePath` est `TRUE`, le plug-in de contrôle de code source peut inviter l’utilisateur pour l’entrée ou utilisez une autre méthode pour placer son propriétaire de chaîne en `lpLocalPath`. Si `bAllowChangePath` est `FALSE`, le plug-in ne devez pas modifier la chaîne, car l’utilisateur est déjà utilisée dans le répertoire spécifié.  
+ `lpLocalPath` est le répertoire où l’utilisateur maintient le projet. Il peut être une chaîne vide. Si aucun répertoire actuellement défini (comme dans le cas d’un utilisateur tente de télécharger un projet à partir du système de contrôle de code source) et si `bAllowChangePath` est `TRUE`, le plug-in de contrôle de code source peut inviter l’utilisateur pour l’entrée ou utilisez une autre méthode pour placer son propriétaire de chaîne en `lpLocalPath`. Si `bAllowChangePath` est `FALSE`, le plug-in ne devez pas modifier la chaîne, car l’utilisateur est déjà utilisée dans le répertoire spécifié.  
   
  Si l’utilisateur crée un nouveau projet à placer sous contrôle de code source, le plug-in de contrôle de code source ne peut pas réellement créez-la dans le système de contrôle de code source au moment `SccGetProjPath` est appelée. Au lieu de cela, il passe à nouveau la chaîne avec une valeur différente de zéro pour `pbNew`, indiquant que le projet sera créé dans le système de contrôle de code source.  
   

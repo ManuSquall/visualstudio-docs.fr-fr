@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Modification de mise en forme de feuille de calcul à l’aide de contrôles de case à cocher | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Modification de mise en forme de feuille de calcul à l’aide de contrôles de case à cocher | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 196fb88af44d12338416bc2f00f5dc955d5046e8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 35394b5f45e3c1e456dfcfae8f4b6db50af12147
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>Procédure pas à pas : modification de la mise en forme d'une feuille de calcul à l'aide de contrôles CheckBox
   Cette procédure pas à pas présente les notions de base de l’utilisation de cases à cocher dans une feuille de calcul Microsoft Office Excel pour modifier la mise en forme. Vous utiliserez des outils de développement Office dans Visual Studio pour créer et ajouter du code à votre projet. Pour afficher le résultat sous la forme d’un exemple complet, consultez l’exemple des contrôles Excel [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -79,14 +78,14 @@ ms.lasthandoff: 01/10/2018
     |Propriété|Value|  
     |--------------|-----------|  
     |**Name**|**applyItalicFont**|  
-    |**Text**|**Italique**|  
+    |**Text**|**italique**|  
   
 6.  Faites glisser une troisième case à cocher sur ou à côté de la cellule **B6** et modifiez les propriétés suivantes :  
   
     |Propriété|Value|  
     |--------------|-----------|  
     |**Name**|**applyUnderlineFont**|  
-    |**Text**|**Soulignement**|  
+    |**Text**|**soulignement**|  
   
 7.  Sélectionnez tous les contrôles de case à cocher trois tout en maintenant la touche CTRL ENFONCÉE.  
   

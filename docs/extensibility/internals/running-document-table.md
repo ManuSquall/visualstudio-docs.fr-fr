@@ -1,12 +1,10 @@
 ---
-title: "Table de documents en cours d’exécution | Documents Microsoft"
-ms.custom: 
+title: Table de documents en cours d’exécution | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4a49a5267fcccbde60e194e3fc58b0f6b6ea7552
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="running-document-table"></a>Table de Document en cours d’exécution
 L’IDE gère la liste de tous les documents actuellement ouverts dans une structure interne appelée table de document en cours d’exécution (r & DT). Cette liste inclut tous les documents ouverts dans la mémoire, indépendamment de si ces documents sont actuellement en cours de modification. Un document est n’importe quel élément est rendu persistant, y compris les fichiers dans un projet ou le fichier projet principal (par exemple, un fichier .vcxproj).  
@@ -36,7 +34,7 @@ L’IDE gère la liste de tous les documents actuellement ouverts dans une struc
 |Moniker de document|Chaîne qui identifie de façon unique l’objet de données du document. Cela peut être le chemin d’accès absolu pour un système de projet qui gère les fichiers (par exemple, C:\MyProject\MyFile). Cette chaîne est également utilisée pour les projets enregistrés dans les magasins de systèmes de fichiers, tels que des procédures stockées dans une base de données. Dans ce cas, le système de projet d’inventer une chaîne unique qu’elle peut reconnaître et éventuellement analyser pour déterminer comment stocker le document.|  
 |Propriétaire de la hiérarchie|L’objet de hiérarchie qui possède le document, comme représenté par un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interface.|  
 |ID d’élément|Identificateur d’élément pour un élément spécifique dans la hiérarchie. Cette valeur est unique parmi tous les documents dans la hiérarchie auquel appartient ce document, mais cette valeur n’est pas garantie pour être unique au sein des hiérarchies différentes.|  
-|Objet de données de document|Au minimum, il s’agit d’un`IUnknown`<br /><br /> . L’IDE ne nécessite pas de n’importe quelle interface particulier au-delà de la `IUnknown` interface pour l’objet de données de document d’un éditeur personnalisé. Toutefois, pour un éditeur standard, mise en œuvre de l’éditeur de le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> interface est requise pour traiter des appels de persistance de fichier à partir du projet. Pour plus d’informations, consultez [enregistrer un Document Standard](../../extensibility/internals/saving-a-standard-document.md).|  
+|Objet de données de document|Au minimum, il s’agit d’un `IUnknown`<br /><br /> . L’IDE ne nécessite pas de n’importe quelle interface particulier au-delà de la `IUnknown` interface pour l’objet de données de document d’un éditeur personnalisé. Toutefois, pour un éditeur standard, mise en œuvre de l’éditeur de le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> interface est requise pour traiter des appels de persistance de fichier à partir du projet. Pour plus d’informations, consultez [enregistrer un Document Standard](../../extensibility/internals/saving-a-standard-document.md).|  
 |Indicateurs|Indicateurs qui contrôlent si le document est enregistré, si un verrou de lecture ou de modification est appliqué et ainsi de suite, peuvent être spécifiés lorsque les entrées sont ajoutées à la r & DT. Pour plus d’informations, consultez l’énumération <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>.|  
 |Modifier le nombre de verrous|Nombre de verrous de modification. Un verrou de modification indique que certains éditeur a le document ouvrent pour être modifiées. Lorsque le nombre de verrous de modification passe à zéro, l’utilisateur est invité à enregistrer le document, s’il a été modifié. Par exemple, chaque fois que vous ouvrez un document dans un éditeur à l’aide de la **nouvelle fenêtre** de commande, un verrou de modification est ajouté pour ce document dans la r & DT. Dans l’ordre pour un verrou de modification à définir, le document doit avoir une hiérarchie ou ID d’élément|  
 |Nombre de verrous de lecture|Nombre de verrous de lecture. Un verrou de lecture indique que le document en cours est en lecture via un mécanisme par exemple un Assistant. Un verrou de lecture conserve un document actif dans la r & DT en indiquant que le document ne peut pas être modifié. Vous pouvez définir un verrou de lecture même si le document ne pas avoir une hiérarchie ou ID d’élément Cette fonctionnalité vous permet d’ouvrir un document en mémoire et entrez dans la r & DT sans le document en cours appartenant à une hiérarchie. Cette fonctionnalité est rarement utilisée.|  

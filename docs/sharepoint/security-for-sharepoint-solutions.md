@@ -1,12 +1,10 @@
 ---
-title: "Sécurité pour les Solutions SharePoint | Documents Microsoft"
-ms.custom: 
+title: Sécurité pour les Solutions SharePoint | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, security
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6e9aff74a49f738f4a0ed0df68ffe2e9a5b33525
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 471de3ab69a969f5153723658c628d659038c3a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sécurité pour les solutions SharePoint
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]intègre les fonctionnalités suivantes pour vous aider à améliorer la sécurité des applications SharePoint.  
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] intègre les fonctionnalités suivantes pour vous aider à améliorer la sécurité des applications SharePoint.  
   
 ## <a name="safe-control-entries"></a>Entrées de contrôle sécurisé  
  Chaque élément de projet SharePoint est créé dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a un **entrées de contrôle sécurisé** collection de contrôles de propriété qui représente un coffre-fort. Son **Safe** sous-propriété vous permet de spécifier les contrôles que vous considérez comme sécurisés. Pour plus d’informations, consultez [fournissant l’empaquetage et du déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) et [spécifiant des composants WebPart sécurisés](http://go.microsoft.com/fwlink/?LinkId=177521).  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
  *Injection de script* est l’insertion de code potentiellement malveillant dans les contrôles ou les pages Web. Pour vous protéger contre l’injection de script, les sites SharePoint 2010, collaborateurs ne peuvent pas afficher ou modifier des composants WebPart ou leurs propriétés par défaut. Ce comportement est contrôlé par un attribut SafeControl appelé SafeAgainstScript. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], définissez cet attribut dans un élément de projet **entrées de contrôle sécurisé** sous-propriété **protégé contre les scripts**. Pour plus d’informations, consultez [fournissant l’empaquetage et du déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) et [Comment : marquer des contrôles comme des contrôles sécurisés](../sharepoint/how-to-mark-controls-as-safe-controls.md).  
   
 ## <a name="vista-and-windows-7-user-account-control"></a>Contrôle de compte d’utilisateur 7 Vista et Windows  
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)]et [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] incorporer une fonctionnalité de sécurité connue en tant que le contrôle de compte d’utilisateur (UAC). Pour développer des solutions SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sur [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] et [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] systèmes, l’UAC exige que vous exécutez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en tant qu’un administrateur système. À partir de la **Démarrer** menu, ouvrez le menu contextuel pour [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], puis choisissez **exécuter en tant qu’administrateur**.  
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] et [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] incorporer une fonctionnalité de sécurité connue en tant que le contrôle de compte d’utilisateur (UAC). Pour développer des solutions SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sur [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] et [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] systèmes, l’UAC exige que vous exécutez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en tant qu’un administrateur système. À partir de la **Démarrer** menu, ouvrez le menu contextuel pour [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], puis choisissez **exécuter en tant qu’administrateur**.  
   
  Pour configurer le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] raccourci à toujours exécuter en tant qu’administrateur, ouvrez le menu contextuel, choisissez **propriétés**, choisissez le **avancé** situé dans le **propriétés**boîte de dialogue, puis sélectionnez le **exécuter en tant qu’administrateur** case à cocher.  
   

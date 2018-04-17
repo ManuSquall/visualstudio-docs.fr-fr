@@ -1,33 +1,29 @@
 ---
-title: "Vue d’ensemble de l’intégration de contrôle de source | Documents Microsoft"
-ms.custom: 
+title: Vue d’ensemble de l’intégration de contrôle de source | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd7b6a48b00e8bef62ff801519fc35cdc163902d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 19d75936e21729729dfeafaa041d800acbe01caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-overview"></a>Vue d’ensemble de l’intégration de contrôle source
 Cette section compare les deux façons d’intégrer le contrôle de code source Visual Studio ; un contrôle de source de plug-in et un VSPackage qui fournit une solution de contrôle de code source et met en évidence les nouvelles fonctionnalités de contrôle de code source. Visual Studio permet un basculement manuel entre le contrôle de code source VSPackages et les plug-ins de contrôle de code source, ainsi que pour le basculement automatique sur les solutions.  
   
 ## <a name="source-control-integration"></a>Intégration du contrôle de code source  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]prend en charge deux types d’options d’intégration de contrôle de code source. Dans toutes les versions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous pouvez toujours intégrer un plug-in en fonction de la Source de plug-in API de contrôle (précédemment reflétant l’API MSSCCI), qui fournit des fonctionnalités de contrôle de source de base lors de l’utilisation de Visual Studio source contrôle utilisateur interface ( INTERFACE UTILISATEUR). Un contrôle de code source VSPackage, quant à eux, intègre un nouveau, deep- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] chemin d’accès approprié pour l’intégration de contrôle de code source qui exige un niveau élevé de sophistication et d’autonomie dans son modèle de contrôle de code source.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge deux types d’options d’intégration de contrôle de code source. Dans toutes les versions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous pouvez toujours intégrer un plug-in en fonction de la Source de plug-in API de contrôle (précédemment reflétant l’API MSSCCI), qui fournit des fonctionnalités de contrôle de source de base lors de l’utilisation de Visual Studio source contrôle utilisateur interface ( INTERFACE UTILISATEUR). Un contrôle de code source VSPackage, quant à eux, intègre un nouveau, deep- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] chemin d’accès approprié pour l’intégration de contrôle de code source qui exige un niveau élevé de sophistication et d’autonomie dans son modèle de contrôle de code source.  
   
  ![Vue d’ensemble du contrôle de source](../../extensibility/internals/media/sourcectnrloverview.gif "SourceCtnrlOverview")  
   
@@ -61,7 +57,7 @@ Cette section compare les deux façons d’intégrer le contrôle de code source
 -   Il est plus facile à implémenter un contrôle de source de plug-in à un contrôle de code source VSPackage.  
   
 ## <a name="source-control-vspackage"></a>VSPackage de contrôle de code source  
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]permet une intégration complète dans Visual Studio avec le contrôle total sur les fonctionnalités de contrôle de code source et un remplacement complet de l’interface utilisateur du contrôle source fournis par Visual Studio. Un contrôle de code source VSPackage est enregistrée avec Visual Studio et fournit des fonctionnalités de contrôle de code source. Bien que le contrôle de code source plusieurs VSPackages peut être inscrits avec Visual Studio, un seul d'entre eux peut être active à tout moment. Un VSPackage de contrôle de code source a un contrôle total sur la fonctionnalité de contrôle de code source et l’apparence dans Visual Studio lorsqu’elle est active. Tous les autres contrôle de code source VSPackages qui peut être enregistrés dans le système sont inactif et n’affichera pas d’interface utilisateur du tout.  
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] permet une intégration complète dans Visual Studio avec le contrôle total sur les fonctionnalités de contrôle de code source et un remplacement complet de l’interface utilisateur du contrôle source fournis par Visual Studio. Un contrôle de code source VSPackage est enregistrée avec Visual Studio et fournit des fonctionnalités de contrôle de code source. Bien que le contrôle de code source plusieurs VSPackages peut être inscrits avec Visual Studio, un seul d'entre eux peut être active à tout moment. Un VSPackage de contrôle de code source a un contrôle total sur la fonctionnalité de contrôle de code source et l’apparence dans Visual Studio lorsqu’elle est active. Tous les autres contrôle de code source VSPackages qui peut être enregistrés dans le système sont inactif et n’affichera pas d’interface utilisateur du tout.  
   
  Implémentation d’un contrôle de code source VSPackage nécessite une stratégie « tout ou rien ». Le créateur d’un contrôle de code source VSPackage doit investir une quantité importante de l’effort de mise en œuvre d’un nombre d’interfaces de contrôle de code source et de nouveaux éléments d’interface utilisateur (boîtes de dialogue, les menus et barres d’outils) pour couvrir la fonctionnalité de contrôle de source entière. Consultez [création d’un VSPackage de contrôle de Source](../../extensibility/internals/creating-a-source-control-vspackage.md) pour plus d’informations.  
   

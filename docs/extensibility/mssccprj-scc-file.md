@@ -1,26 +1,24 @@
 ---
-title: "MSSCCPRJ. Fichier de contrôle de code source | Documents Microsoft"
-ms.custom: 
+title: MSSCCPRJ. Fichier de contrôle de code source | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ef076a93d27cc2c133404d6fe6463d32cb449956
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Fichier de contrôle de code source
 Lorsqu’une solution Visual Studio ou un projet est placé sous contrôle de code source à l’aide de l’IDE, l’IDE reçoit deux éléments d’information clés à partir du contrôle de source de plug-in sous la forme de chaînes. Ces chaînes, « AuxPath » et « NomProj », sont opaques à l’IDE, mais ils sont utilisés par le plug-in pour rechercher la solution ou le projet de contrôle de version. L’IDE obtienne généralement ces chaînes de la première fois en appelant le [SccGetProjPath](../extensibility/sccgetprojpath-function.md), et il puis les enregistre dans le fichier solution ou un projet pour les appels ultérieurs à la [SccOpenProject](../extensibility/sccopenproject-function.md). Lorsqu’il est incorporé dans les fichiers solution et projet, les chaînes « AuxPath » et « NomProj » pas sont mises à jour automatiquement lorsqu’un utilisateur crée une branche, de branches, ou copie les fichiers solution et projet qui se trouvent dans le contrôle de version. Pour vous assurer que les fichiers solution et projet pointent vers leur emplacement approprié dans le contrôle de version, les utilisateurs doivent mettre à jour manuellement les chaînes. Étant donné que les chaînes sont destinés à être opaque, il ne peut pas toujours être clair comment ils doivent être mis à jour.  
@@ -46,23 +44,23 @@ Lorsqu’une solution Visual Studio ou un projet est placé sous contrôle de co
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Obtenir une Illustration de la MSSCCPRJ. Format de fichier de contrôle de code source  
  Voici un exemple de la MSSCCPRJ. Format de fichier de contrôle de code source (les numéros de ligne sont uniquement des indications et ne doivent pas être inclus dans le corps du fichier) :  
   
- [Ligne 1]`SCC = This is a Source Code Control file`  
+ [Ligne 1] `SCC = This is a Source Code Control file`  
   
  [Ligne 2]  
   
- [Ligne 3]`[TestApp.sln]`  
+ [Ligne 3] `[TestApp.sln]`  
   
- [Ligne 4]`SCC_Aux_Path = "\\server\vss\"`  
+ [Ligne 4] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Ligne 5]`SCC_Project_Name = "$/TestApp"`  
+ [Ligne 5] `SCC_Project_Name = "$/TestApp"`  
   
  [Ligne 6]  
   
- [Ligne 7]`[TestApp.csproj]`  
+ [Ligne 7] `[TestApp.csproj]`  
   
- [Ligne 8]`SCC_Aux_Path = "\\server\vss\"`  
+ [Ligne 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Ligne 9]`SCC_Project_Name = "$/TestApp"`  
+ [Ligne 9] `SCC_Project_Name = "$/TestApp"`  
   
  La première ligne indique la fin du fichier et sert à la signature pour tous les fichiers de ce type. Cette ligne doit apparaître exactement comme dans tous les MSSCCPRJ. Fichiers SCC :  
   

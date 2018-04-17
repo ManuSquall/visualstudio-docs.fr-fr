@@ -1,13 +1,10 @@
 ---
-title: "Limitations de Windows Forms contrôles sur des Documents Office | Documents Microsoft"
-ms.custom: 
+title: Limitations de Windows Forms contrôles sur des Documents Office | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], Toolbox
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c8795b643afff2cc02d507a1764871aa0e0e181
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c3180de49b1ede89e6eb5e66d786247ce2700888
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitations des contrôles Windows Forms dans les documents Office
   Il existe certaines différences entre les contrôles Windows Forms qui sont ajoutés aux documents Microsoft Office Word ou des feuilles de calcul Microsoft Office Excel et les contrôles Windows Forms qui sont ajoutés aux Windows Forms. Par exemple, lorsque vous ajoutez un <xref:Microsoft.Office.Tools.Word.Controls.Button> à un document, les propriétés de contrôle telles que <xref:Microsoft.Office.Tools.Word.Controls.Button.Dock%2A>, <xref:Microsoft.Office.Tools.Word.Controls.Button.Anchor%2A>, et <xref:Microsoft.Office.Tools.Word.Controls.Button.TabIndex%2A> ne se comportent pas comme prévu.  

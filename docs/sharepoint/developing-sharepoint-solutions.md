@@ -1,13 +1,10 @@
 ---
-title: "Développement de Solutions SharePoint | Documents Microsoft"
-ms.custom: 
+title: Développement de Solutions SharePoint | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
 - VS.SharePointTools.Project.ProjectItemProperties
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 848ddab54dd9e7617cce7758fa06d939700f2c3b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>Développement de solutions SharePoint
   Pour créer des sites et des éléments de sites SharePoint, vous disposez de plusieurs modèles de type de projet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour obtenir la liste des types de projet disponibles, consultez [projets et modèles d’élément de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md). Les éléments et propriétés d'un projet SharePoint sont décrits ci-après.  
@@ -56,7 +53,7 @@ ms.lasthandoff: 01/10/2018
  Quand une fonctionnalité est ajoutée à un projet SharePoint, elle apparaît dans l' **Explorateur de solutions** sous la forme d'un nœud ayant pour nom par défaut Feature*x*.feature, où *x* est un nombre unique. Une fois déployée sur le serveur SharePoint, un administrateur SharePoint peut l'activer et la mettre ainsi à la disposition des utilisateurs du site SharePoint.  
   
 #### <a name="package-node"></a>Nœud Package  
- Le nœud **Package** contient un fichier unique qui sert de mécanisme de distribution pour le projet SharePoint. Ce fichier, appelé *package**package*, est basé sur le format .CAB et porte l’extension .WSP. Un package de solution est un fichier réutilisable destiné à être déployé. Il contient un ensemble de fonctionnalités, définitions de site et assemblys (activables ou désactivables individuellement) s'appliquant aux sites SharePoint. Le **Package** nœud contient également un fichier nommé package.wspdef, c'est-à-dire un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichier de définition pour le package. Une fois le package déployé sur le serveur qui exécute SharePoint, l'administrateur SharePoint peut l'installer et activer ses fonctionnalités.  
+ Le nœud **Package** contient un fichier unique qui sert de mécanisme de distribution pour le projet SharePoint. Ce fichier, appelé un *solution ** package*, est. En fonction de CAB avec un. Extension WSP. Un package de solution est un fichier réutilisable destiné à être déployé. Il contient un ensemble de fonctionnalités, définitions de site et assemblys (activables ou désactivables individuellement) s'appliquant aux sites SharePoint. Le **Package** nœud contient également un fichier nommé package.wspdef, c'est-à-dire un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichier de définition pour le package. Une fois le package déployé sur le serveur qui exécute SharePoint, l'administrateur SharePoint peut l'installer et activer ses fonctionnalités.  
   
  Vous pouvez afficher ou modifier le contenu du package dans le Concepteur de packages en double-cliquant sur le nœud package ou en ouvrant le menu contextuel, puis en choisissant **ouvrir**. Pour plus d’informations, consultez [création de Packages de Solution SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).  
   
@@ -132,10 +129,10 @@ ms.lasthandoff: 01/10/2018
 |[Guide pratique pour ajouter et supprimer des dossiers mappés](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Explique comment ajouter des dossiers mappés à votre projet pour faciliter l'accès aux ressources SharePoint.|  
 |[Considérations sur les solutions bac à sable (sandbox)](../sharepoint/sandboxed-solution-considerations.md)|Décrit les problèmes ayant trait aux solutions bac à sable (sandbox).|  
 |[Sécurité pour les solutions SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Décrit des considérations au sujet de la sécurité pour le développement de solutions SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Boîte de dialogue Sélecteur URL &#40; Développement SharePoint dans Visual Studio &#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Décrit une boîte de dialogue que vous pouvez utiliser pour ajouter des références de chemin d'accès aux ressources dans votre projet ou sur le serveur SharePoint local.|  
+|[Boîte de dialogue Sélecteur d’URL &#40;développement SharePoint dans Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Décrit une boîte de dialogue que vous pouvez utiliser pour ajouter des références de chemin d'accès aux ressources dans votre projet ou sur le serveur SharePoint local.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mise en route &#40; Développement SharePoint dans Visual Studio &#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
+ [Mise en route &#40;développement SharePoint dans Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Parcours des connexions SharePoint à l’aide de l’Explorateur de serveurs](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Génération et débogage de solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Empaquetage et déploiement de solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

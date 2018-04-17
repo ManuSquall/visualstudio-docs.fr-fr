@@ -1,13 +1,10 @@
 ---
-title: "Comment : récupérer le Service de projet SharePoint | Documents Microsoft"
-ms.custom: 
+title: 'Comment : récupérer le Service de projet SharePoint | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint project service
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1abdf4a48d05285a7394469dd391caf48981f9f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f1e8cdcc863cfd363b1a73f11ed05ffb5a5ff12e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Comment : récupérer le service de projet SharePoint
   Vous pouvez accéder au service de projet SharePoint dans les types suivants de solutions :  

@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Modification de mise en forme d’un Document à l’aide de contrôles de case à cocher | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Modification de mise en forme d’un Document à l’aide de contrôles de case à cocher | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5b99f1a5d05d1eac173c40e7cc0c3b989f7c0cd3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ecbb0036fc74cf5d0d27ea61283ec5b733dca1a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Procédure pas à pas : modification de la mise en forme d'un document à l'aide de contrôles CheckBox
   Cette procédure pas à pas montre comment utiliser des contrôles Windows Forms dans une personnalisation au niveau du document pour Microsoft Office Word pour modifier la mise en forme de texte.  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
     |Propriété|Value|  
     |--------------|-----------|  
     |**Name**|**applyItalicFont**|  
-    |**Text**|**Italique**|  
+    |**Text**|**italique**|  
   
 6.  Appuyez sur **entrée** pour déplacer le point d’insertion sous la deuxième case à cocher.  
   
@@ -91,7 +90,7 @@ ms.lasthandoff: 01/10/2018
     |Propriété|Value|  
     |--------------|-----------|  
     |**Name**|**applyUnderlineFont**|  
-    |**Text**|**Soulignement**|  
+    |**Text**|**soulignement**|  
   
 #### <a name="to-add-text-and-a-bookmark-control"></a>Pour ajouter du texte et un contrôle Bookmark  
   

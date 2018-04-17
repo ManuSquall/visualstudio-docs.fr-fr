@@ -1,13 +1,10 @@
 ---
-title: "Procédure pas à pas : Création d’un modèle à l’aide de contrôles de contenu | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création d’un modèle à l’aide de contrôles de contenu | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - content controls [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d221b9374bf71df3d66400289c50310263c2e9e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 8c7f5026d4cbe8b7c38b8163ce00d893e1e406f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-template-by-using-content-controls"></a>Procédure pas à pas : création d'un modèle à l'aide de contrôles de contenu
   Cette procédure pas à pas montre comment créer une personnalisation au niveau du document qui utilise des contrôles de contenu pour créer un contenu structuré et réutilisable dans un modèle Microsoft Office Word.  
@@ -63,7 +60,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Créer un projet de modèle Word portant le nom **MonModèleDeBlocDeConstruction**. Dans l'Assistant, créez un nouveau document dans la solution. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ouvre le nouveau modèle Word dans le concepteur et ajoute le **MonModèleDeBlocDeConstruction** projet **l’Explorateur de solutions**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ouvre le nouveau modèle Word dans le concepteur et ajoute le **MonModèleDeBlocDeConstruction** projet **l’Explorateur de solutions**.  
   
 ## <a name="creating-the-employee-table"></a>Création du tableau Employé  
  Créez un tableau contenant quatre types différents de contrôles de contenu, dans lequel l'utilisateur peut entrer des informations sur un employé.  
@@ -244,8 +241,8 @@ ms.lasthandoff: 01/10/2018
  [Contrôles de contenu](../vsto/content-controls.md)   
  [Comment : ajouter des contrôles de contenu à des Documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Comment : protéger des parties de Documents à l’aide de contrôles de contenu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Vue d'ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
+ [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Ajout de contrôles à des documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)  
   
   

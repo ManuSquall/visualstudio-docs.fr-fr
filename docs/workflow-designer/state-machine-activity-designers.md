@@ -1,18 +1,18 @@
 ---
-title: "Concepteurs d’activités de Machine d’état | Documents Microsoft"
+title: Concepteurs d’activités de Machine d’état | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e93ba35830f3b0c08ea7957ab3fbcb6ea254a7a1
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: bde93d8ac1907accf4f7d14da186aa43ccb169a7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="state-machine-activity-designers"></a>Concepteurs d'activités d'ordinateur d'état
 Concepteur de flux de travail Windows inclut plusieurs concepteurs d’activités que vous pouvez utiliser lors de la construction de vos workflows. Cette section contient les concepteurs d'activités fournis par le système utilisés pour créer et gérer des workflows de machine à états. Les rubriques suivantes décrivent ces concepteurs et fournissent des conseils sur la façon de les utiliser.
@@ -44,7 +44,7 @@ Concepteur de flux de travail Windows inclut plusieurs concepteurs d’activité
 
  [Utilisation des concepteurs d’activités](../workflow-designer/using-the-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Messagerie](../workflow-designer/messaging-activity-designers.md)
 
  [Runtime](../workflow-designer/runtime-activity-designers.md)
 

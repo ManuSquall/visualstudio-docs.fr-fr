@@ -1,12 +1,10 @@
 ---
-title: "Options et les Pages d’Options | Documents Microsoft"
-ms.custom: 
+title: Options et les Pages d’Options | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
 - managed package framework, Tools Options pages support
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], layouts
 - Tools Options pages [Visual Studio SDK], attributes
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
-caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1177a9a4df1f07c93540fa039117c5fa81289e17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d85b900779a5df8af077b292b2e2f70b0592e35c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-and-options-pages"></a>Options et les Pages d’Options
 En cliquant sur **Options** sur la **outils** menu s’ouvre le **Options** boîte de dialogue. Les options de cette boîte de dialogue sont collectivement appelées pages d’options. Le contrôle d’arborescence dans le volet de navigation inclut les catégories d’options, et chaque catégorie comporte des pages d’options. Lorsque vous sélectionnez une page, ses options s’affichent dans le volet droit. Ces pages vous permettent de modifier les valeurs des options qui déterminent l’état d’un VSPackage.  
@@ -56,11 +54,11 @@ En cliquant sur **Options** sur la **outils** menu s’ouvre le **Options** boî
 ## <a name="option-attributes-and-layout"></a>Attributs d’option et la disposition  
  L’interface utilisateur (IU) qui fournit de la page détermine l’apparence des options dans une page d’options personnalisées. La mise en page, l’étiquetage et la description des options d’une page générique d’options sont déterminées par les attributs suivants :  
   
--   <xref:System.ComponentModel.CategoryAttribute>Détermine la catégorie de l’option.  
+-   <xref:System.ComponentModel.CategoryAttribute> Détermine la catégorie de l’option.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>Détermine le nom complet de l’option.  
+-   <xref:System.ComponentModel.DisplayNameAttribute> Détermine le nom complet de l’option.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>Détermine la description de l’option.  
+-   <xref:System.ComponentModel.DescriptionAttribute> Détermine la description de l’option.  
   
     > [!NOTE]
     >  Attributs équivalents, SRCategory, LocDisplayName et SRDescription, utilisez les ressources de chaîne pour la localisation et sont définies dans le [exemple de projet managé](http://go.microsoft.com/fwlink/?LinkId=122774).  

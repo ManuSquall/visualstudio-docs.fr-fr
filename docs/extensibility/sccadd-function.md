@@ -1,29 +1,25 @@
 ---
 title: Fonction de SccAdd | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccAdd
 helpviewer_keywords:
 - SccAdd function
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52137da9d14920a2fd5213f1110a74d895e51c7f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2933d00b7450f946a5fd5409bcaeecc2527a9f64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccadd-function"></a>SccAdd (fonction)
 Cette fonction ajoute de nouveaux fichiers au système de contrôle de code source.  
@@ -95,7 +91,7 @@ SCCRTN SccAdd(
 |SCC_FILETYPE_BINARY|0 x 02|Indique un type de fichier autre que du texte ASCII.|  
 |SCC_ADD_STORELATEST|0 x 04|Stocke uniquement la dernière copie du fichier, aucun deltas.|  
 |SCC_FILETYPE_TEXT_ANSI|0 x 08|Traite le fichier comme texte ANSI.|  
-|SCC_FILETYPE_UTF8|0 x 10|Traite le fichier en tant que texte Unicode au format UTF8.|  
+|SCC_FILETYPE_UTF8|0x10|Traite le fichier en tant que texte Unicode au format UTF8.|  
 |SCC_FILETYPE_UTF16LE|0 x 20|Traite le fichier en tant que texte Unicode dans UTF16 format Little Endian.|  
 |SCC_FILETYPE_UTF16BE|0 x 40|Mettre en forme traite le fichier en tant que texte Unicode Big Endian UTF16.|  
   

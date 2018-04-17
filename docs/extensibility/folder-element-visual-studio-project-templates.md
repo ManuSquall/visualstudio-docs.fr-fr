@@ -1,29 +1,25 @@
 ---
-title: "Folder, élément (modèles de projet Visual Studio) | Documents Microsoft"
-ms.custom: 
+title: Folder, élément (modèles de projet Visual Studio) | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
 helpviewer_keywords:
 - Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c561564f75d4e5557c64f94adfb9caed6abce83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder, élément (modèles de projet Visual Studio)
 Spécifie un dossier qui sera ajouté au projet.  
@@ -56,7 +52,7 @@ Spécifie un dossier qui sera ajouté au projet.
   
 |Élément|Description|  
 |-------------|-----------------|  
-|`Folder`|Spécifie un dossier à ajouter au projet. `Folder`les éléments peuvent contenir des enfants `Folder` éléments.|  
+|`Folder`|Spécifie un dossier à ajouter au projet. `Folder` les éléments peuvent contenir des enfants `Folder` éléments.|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Spécifie un fichier à ajouter au projet.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
@@ -66,11 +62,11 @@ Spécifie un dossier qui sera ajouté au projet.
 |[Projet](../extensibility/project-element-visual-studio-templates.md)|Élément enfant facultatif de [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
 ## <a name="remarks"></a>Notes  
- `Folder`est un enfant facultatif de `Project`.  
+ `Folder` est un enfant facultatif de `Project`.  
   
  Vous pouvez utiliser une des méthodes suivantes pour organiser les éléments de projet dans des dossiers dans un modèle :  
   
--   Inclure les dossiers dans le fichier .zip du modèle et les ajouter au projet dans le fichier .vstemplate en spécifiant le chemin d’accès au fichier dans le `ProjectItem` éléments, sans aucune `Folder` éléments. Il s’agit de la méthode recommandée. Exemple :  
+-   Inclure les dossiers dans le fichier .zip du modèle et les ajouter au projet dans le fichier .vstemplate en spécifiant le chemin d’accès au fichier dans le `ProjectItem` éléments, sans aucune `Folder` éléments. Il s’agit de la méthode recommandée. Par exemple :  
   
      `...`  
   
@@ -80,7 +76,7 @@ Spécifie un dossier qui sera ajouté au projet.
   
      `...`  
   
--   Inclure les dossiers dans le fichier .zip du modèle et les ajouter au projet dans le fichier .vstemplate avec `Folder` éléments. Exemple :  
+-   Inclure les dossiers dans le fichier .zip du modèle et les ajouter au projet dans le fichier .vstemplate avec `Folder` éléments. Par exemple :  
   
      `...`  
   
@@ -94,7 +90,7 @@ Spécifie un dossier qui sera ajouté au projet.
   
      `...`  
   
--   N’incluez pas de dossiers dans le fichier .zip du modèle, mais ajouter des dossiers à l’aide de la `TargetFileName` attribut de la `ProjectItem` élément. Exemple :  
+-   N’incluez pas de dossiers dans le fichier .zip du modèle, mais ajouter des dossiers à l’aide de la `TargetFileName` attribut de la `ProjectItem` élément. Par exemple :  
   
      `...`  
   

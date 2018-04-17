@@ -2,12 +2,9 @@
 title: Assemblys dans Visual Studio Tools pour Office Runtime | Documents Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,20 +12,20 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22750553e714c0aa02577ee95753e7d5b2bf13f4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 34ce422757ad7e7f7152920252eff6e0c2277261
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Assemblys dans Visual Studio Tools pour Office Runtime
   Lorsque vous créez un projet Office, Visual Studio ajoute automatiquement des références aux assemblys [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] utilisés pour le type de projet et la version .NET Framework cible du projet. Il existe différents assemblys dans les extensions Office pour .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]et [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Pour plus d’informations sur les extensions Office, consultez [Vue d'ensemble de Visual Studio Tools pour Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-4-and-the-includenetv45vstoincludesnet-v45-mdmd"></a>Assemblys des extensions Office pour .NET Framework 4 et [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
- Le tableau suivant répertorie les assemblys inclus dans les extensions Office pour [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] et [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Pour plus d’informations sur les espaces de noms et les types dans ces assemblys, consultez [référence managée & #40 ; développement Office dans Visual Studio & #41 ;](../vsto/managed-reference-office-development-in-visual-studio.md).  
+ Le tableau suivant répertorie les assemblys inclus dans les extensions Office pour [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] et [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Pour plus d’informations sur les espaces de noms et les types dans ces assemblys, consultez [référence managée &#40;développement Office dans Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md).  
   
 |Nom de l'assembly|Description|  
 |-------------------|-----------------|  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
 |Microsoft.Office.Tools.Word.v4.0.Utilities.dll|Fournit les types suivants :<br /><br /> -Classes de base pour le texte généré `ThisDocument` classe dans les projets au niveau du document pour Word.<br />-Contrôles Windows Forms que vous pouvez utiliser sur des documents dans les projets Word.|  
   
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-35"></a>Assemblys des extensions Office pour .NET Framework 3.5  
- Le tableau suivant répertorie les assemblys inclus dans les extensions Office pour .NET Framework 3.5. Pour obtenir de la documentation sur les espaces de noms et les classes de ces assemblys, consultez la section de référence suivante dans la documentation de Visual Studio 2008 : [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ Le tableau suivant répertorie les assemblys inclus dans les extensions Office pour .NET Framework 3.5. Pour plus d’informations sur les espaces de noms et les classes dans ces assemblys, consultez la section de référence suivante dans la documentation de Visual Studio 2008 : [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
 |Nom de l'assembly|Description|  
 |-------------------|-----------------|  

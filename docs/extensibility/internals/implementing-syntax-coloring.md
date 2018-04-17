@@ -1,32 +1,30 @@
 ---
-title: "Implémentation de la coloration de syntaxe | Documents Microsoft"
-ms.custom: 
+title: Implémentation de la coloration de syntaxe | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5502bd30378130e5977d427acb9df5b73226a05b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-syntax-coloring"></a>Implémentation de la coloration de syntaxe
-Lorsque le service de langage fournit la coloration de syntaxe, l’analyseur convertit une ligne de texte dans un tableau d’éléments coloriable et retourne les types de jetons correspondant à ces éléments coloriable. L’analyseur doit retourner les types de jetons qui appartiennent à une liste de propriétés. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]affiche chaque élément coloriable dans la fenêtre de code selon les attributs affectés par l’objet Coloriseur pour le type de jeton approprié.  
+Lorsque le service de langage fournit la coloration de syntaxe, l’analyseur convertit une ligne de texte dans un tableau d’éléments coloriable et retourne les types de jetons correspondant à ces éléments coloriable. L’analyseur doit retourner les types de jetons qui appartiennent à une liste de propriétés. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] affiche chaque élément coloriable dans la fenêtre de code selon les attributs affectés par l’objet Coloriseur pour le type de jeton approprié.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ne spécifie pas une interface de l’analyseur, et la mise en œuvre de l’analyseur est complètement vous appartient. Toutefois, une implémentation d’analyseur par défaut est fournie dans le projet de Package de langage de Visual Studio. Pour le code managé, managed package framework (MPF) prend complètement en charge la colorisation de texte.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ne spécifie pas une interface de l’analyseur, et la mise en œuvre de l’analyseur est complètement vous appartient. Toutefois, une implémentation d’analyseur par défaut est fournie dans le projet de Package de langage de Visual Studio. Pour le code managé, managed package framework (MPF) prend complètement en charge la colorisation de texte.  
   
  Les services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations sur la nouvelle façon d’implémenter une coloration de syntaxe, consultez [procédure pas à pas : mise en surbrillance de texte](../../extensibility/walkthrough-highlighting-text.md).  
   

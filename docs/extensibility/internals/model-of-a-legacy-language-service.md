@@ -1,27 +1,23 @@
 ---
-title: "Modèle d’un Service de langage hérité | Documents Microsoft"
-ms.custom: 
+title: Modèle d’un Service de langage hérité | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 943f0f013045e3082af3069ed4d45aaed1096869
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modèle d’un Service de langage hérité
 Un service de langage définit les éléments et les fonctionnalités pour une langue spécifique et est utilisé pour fournir l’éditeur avec les informations spécifiques à cette langue. Par exemple, l’éditeur doit connaître les éléments et les mots clés du langage pour prendre en charge la coloration de syntaxe.  
@@ -52,7 +48,7 @@ Modèle de service de base du langage
 |Fenêtre Code|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Une fenêtre de document qui contient une ou plusieurs vues de texte. Lorsque [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est en mode de l’interface multidocument (MDI), la fenêtre de code est un enfant MDI.|  
 |Affichage de texte|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>|Une fenêtre qui permet à l’utilisateur naviguer et afficher le texte à l’aide du clavier et la souris. Une vue de texte apparaît à l’utilisateur en tant qu’éditeur. Vous pouvez utiliser les affichages de texte dans les fenêtres de l’éditeur ordinaires, la fenêtre Sortie et la fenêtre exécution. En outre, vous pouvez configurer une ou plusieurs vues de texte dans une fenêtre de code.|  
 |Gestionnaire de texte|Géré par le <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> de service, à partir de laquelle vous obtenez un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> pointeur|Un composant qui gère les informations communes partagées par tous les composants décrits précédemment.|  
-|Service de langage|Implémentation dépendante ; implémente<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Objet qui fournit l’éditeur avec des informations spécifiques au langage telles que la mise en surbrillance de la syntaxe, la saisie semi-automatique des instructions et la correspondance des accolades.|  
+|Service de langage|Implémentation dépendante ; implémente <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Objet qui fournit l’éditeur avec des informations spécifiques au langage telles que la mise en surbrillance de la syntaxe, la saisie semi-automatique des instructions et la correspondance des accolades.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Données de documents et affichage de documents dans les éditeurs personnalisés](../../extensibility/document-data-and-document-view-in-custom-editors.md)

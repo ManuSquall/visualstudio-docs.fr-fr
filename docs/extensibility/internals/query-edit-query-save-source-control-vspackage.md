@@ -1,30 +1,28 @@
 ---
-title: "Modifier la requête d’enregistrement (VSPackage de contrôle de code Source) de la requête | Documents Microsoft"
-ms.custom: 
+title: Modifier la requête d’enregistrement (VSPackage de contrôle de code Source) de la requête | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - QEQS events
 - Query Edit Query Save events
 - source control packages, Query Edit Query Save events
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e3428e51dda2f8cc8410b6ac67f5779f7c2300ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf4fd74544e0646a84e4fdc37f35ba84b301f693
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Modifier la requête requête d’enregistrement (VSPackage de contrôle de code Source)
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]éditeurs peuvent diffuser des événements de requête modifier requête enregistrer (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Stub de contrôle de code source implémente le service QEQS, afin qu’il soit le destinataire des événements QEQS. Ces événements sont ensuite déléguées au contrôle de source actuellement actif VSPackage. Le contrôle de source active VSPackage implémente la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> et ses méthodes. Les méthodes de la `IVsQueryEditQuerySave2` interface sont généralement appelées immédiatement avant la modification d’un document pour la première fois, et juste avant un document est enregistré.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] éditeurs peuvent diffuser des événements de requête modifier requête enregistrer (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Stub de contrôle de code source implémente le service QEQS, afin qu’il soit le destinataire des événements QEQS. Ces événements sont ensuite déléguées au contrôle de source actuellement actif VSPackage. Le contrôle de source active VSPackage implémente la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> et ses méthodes. Les méthodes de la `IVsQueryEditQuerySave2` interface sont généralement appelées immédiatement avant la modification d’un document pour la première fois, et juste avant un document est enregistré.  
   
 ## <a name="queryeditquerysave-events"></a>Événements de QueryEditQuerySave  
  Le contrôle de code source VSPackage doit gérer les événements QEQS en implémentant le `IVsQueryEditQuerySave2` interface et les méthodes nécessaires. Voici une brève description des deux méthodes le VSPackage doit implémenter au minimum. L’implémentation réelle doit être conformément à la logique du modèle de contrôle de code source.  

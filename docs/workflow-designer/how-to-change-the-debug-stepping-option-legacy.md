@@ -1,5 +1,5 @@
 ---
-title: "Comment : modifier l’Option d’exécution pas à pas de débogage (hérité) | Documents Microsoft"
+title: 'Comment : modifier l’Option d’exécution pas à pas de débogage (hérité) | Documents Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: aedc06af-d58a-44d6-aee4-f397f1f923a0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea687b0a08aa4697ac9f7c7b0aca875af131a561
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: aedb8e738dc2e6ca2b066dd9a2cd42e332bbd8be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Procédure : modifier l'option de débogage pas à pas (héritée)
 Cette rubrique décrit comment modifier l’option de débogage pas à pas pour [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] applications dans le Concepteur de flux de travail Windows hérité qui comportent des actions simultanées. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

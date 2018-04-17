@@ -1,23 +1,21 @@
 ---
-title: "Création d’un ornement de vue, les commandes et paramètres | Documents Microsoft"
-ms.custom: 
+title: Création d’un ornement de vue, les commandes et paramètres | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 57a7696eae0da92d88babf64c580a4767775dffd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Procédure pas à pas : Création d’un ornement de vue, les commandes et les paramètres (repères de colonne)
 Vous pouvez étendre l’éditeur de texte/code de Visual Studio avec les commandes et les effets de la vue.  Cette rubrique montre comment démarrer avec une fonctionnalité d’extension populaires, repères de colonne.  Repères de colonne sont visuellement clair lignes dessinées sur la vue de l’éditeur de texte pour vous aider à gérer votre code pour les largeurs de colonne spécifique.  Code de mise en forme en particulier peut être important pour obtenir des exemples vous incluez dans les documents, des billets de blog, ou les rapports de bogues.  
@@ -54,13 +52,13 @@ Vous pouvez étendre l’éditeur de texte/code de Visual Studio avec les comman
   
 -   Il existe un `ColumnGuideCommands` objet qui implémente les commandes de l’utilisateur et le raccorde les gestionnaires de commandes pour les commandes déclaré dans le fichier .vsct.  
   
- **VSIX**.  Utilisez **fichier &#124; Nouveau...**  commande pour créer un projet.  Choisissez le nœud d’extensibilité sous c# dans le volet de navigation gauche, **projet VSIX** dans le volet droit.  Entrez le nom ColumnGuides et choisissez **OK** pour créer le projet.  
+ **VSIX**.  Utilisez **fichier &#124; nouveau...**  commande pour créer un projet.  Choisissez le nœud d’extensibilité sous c# dans le volet de navigation gauche, **projet VSIX** dans le volet droit.  Entrez le nom ColumnGuides et choisissez **OK** pour créer le projet.  
   
- **Afficher les ornements**.  Appuyez sur le bouton droit du pointeur sur le nœud de projet dans l’Explorateur de solutions.  Choisissez le **ajouter &#124; Nouvel élément...**  commande pour ajouter un nouvel élément d’ornement de vue.  Choisissez **extensibilité &#124; Éditeur de** dans le volet de navigation gauche, choisissez **ornement de la fenêtre d’affichage de l’éditeur** dans le volet droit.  Entrez le nom ColumnGuideAdornment comme nom d’élément et choisissez **ajouter** pour l’ajouter.  
+ **Afficher les ornements**.  Appuyez sur le bouton droit du pointeur sur le nœud de projet dans l’Explorateur de solutions.  Choisissez le **ajouter &#124; un nouvel élément...**  commande pour ajouter un nouvel élément d’ornement de vue.  Choisissez **extensibilité &#124; éditeur** dans le volet de navigation gauche, choisissez **ornement de la fenêtre d’affichage de l’éditeur** dans le volet droit.  Entrez le nom ColumnGuideAdornment comme nom d’élément et choisissez **ajouter** pour l’ajouter.  
   
  Vous pouvez voir ce modèle d’élément ajouté deux fichiers au projet (ainsi que les références et ainsi de suite) : ColumnGuideAdornment.cs et ColumnGuideAdornmentTextViewCreationListener.cs.  Les modèles de dessiner uniquement un rectangle violet sur la vue.  Ci-dessous vous modifier quelques lignes dans l’écouteur de la création de vue et remplacez le contenu de ColumnGuideAdornment.cs.  
   
- **Commandes**.  Appuyez sur le bouton droit du pointeur sur le nœud de projet dans l’Explorateur de solutions.  Choisissez le **ajouter &#124; Nouvel élément...**  commande pour ajouter un nouvel élément d’ornement de vue.  Choisissez **extensibilité &#124; VSPackage** dans le volet de navigation gauche, choisissez **commande personnalisée** dans le volet droit.  Entrez le nom ColumnGuideCommands comme nom d’élément et choisissez **ajouter** pour l’ajouter.  En plus de plusieurs références, ajouter les commandes et les package ajouté ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs et ColumnGuideCommandsPackage.vsct.  Ci-dessous, vous allez remplacer le contenu des premier et derniers fichiers pour définir et implémenter les commandes.  
+ **Commandes**.  Appuyez sur le bouton droit du pointeur sur le nœud de projet dans l’Explorateur de solutions.  Choisissez le **ajouter &#124; un nouvel élément...**  commande pour ajouter un nouvel élément d’ornement de vue.  Choisissez **extensibilité &#124; VSPackage** dans le volet de navigation gauche, choisissez **commande personnalisée** dans le volet droit.  Entrez le nom ColumnGuideCommands comme nom d’élément et choisissez **ajouter** pour l’ajouter.  En plus de plusieurs références, ajouter les commandes et les package ajouté ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs et ColumnGuideCommandsPackage.vsct.  Ci-dessous, vous allez remplacer le contenu des premier et derniers fichiers pour définir et implémenter les commandes.  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>Configuration de l’écouteur de la création de vue de texte  
  Ouvrez ColumnGuideAdornmentTextViewCreationListener.cs dans l’éditeur.  Ce code implémente un gestionnaire pour chaque fois que Visual Studio crée des affichages de texte.  Il existe des attributs qui contrôlent lorsque le gestionnaire est appelé en fonction des caractéristiques de la vue.  
@@ -1214,7 +1212,7 @@ private int GetApplicableColumn(EventArgs e)
   
 ```  
   
- `GetCurrentEditorColumn`a d’aller un peu plus pour obtenir un <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> affichage du code.  Si vous tracez `GetActiveTextView`, `GetActiveView`, et `GetTextViewFromVsTextView`, vous pouvez voir comment le faire.  Voici le code abstrait, en commençant par la sélection actuelle, mise en route du frame de la sélection, puis mise en route de DocView du frame comme un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, puis en une <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> à partir de la IVsTextView, puis l’obtention d’un hôte de la vue, et enfin le IWpfTextView :  
+ `GetCurrentEditorColumn` a d’aller un peu plus pour obtenir un <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> affichage du code.  Si vous tracez `GetActiveTextView`, `GetActiveView`, et `GetTextViewFromVsTextView`, vous pouvez voir comment le faire.  Voici le code abstrait, en commençant par la sélection actuelle, mise en route du frame de la sélection, puis mise en route de DocView du frame comme un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, puis en une <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> à partir de la IVsTextView, puis l’obtention d’un hôte de la vue, et enfin le IWpfTextView :  
   
 ```csharp  
    IVsMonitorSelection selection =  
@@ -1288,7 +1286,7 @@ private static int GetCaretColumn(IWpfTextView textView)
  Avec la colonne actuelle en cours lorsque l’utilisateur a cliqué, le code appelle simplement sur le Gestionnaire de paramètres pour ajouter ou supprimer la colonne.  Le Gestionnaire de paramètres déclenche l’événement pour lequel toutes les `ColumnGuideAdornment` écoutent des objets.  Lorsque l’événement se déclenche, ces objets de mettre à jour leur point de vue de texte associé avec les nouveaux paramètres de guide de colonne.  
   
 ## <a name="invoking-command-from-the-command-window"></a>Appel de commande à partir de la fenêtre de commande  
- L’exemple de repères de colonne permet aux utilisateurs d’appeler deux commandes à partir de la fenêtre de commande en tant que formulaire d’extensibilité.  Si vous utilisez la **View &#124; Autres fenêtres &#124; Fenêtre de commande** de commandes, vous pouvez voir la fenêtre de commande.  Vous pouvez interagir avec la fenêtre de commande en entrant « modifier », et avec la saisie semi-automatique de nom de commande et en fournissant l’argument 120, vous disposez des éléments suivants :  
+ L’exemple de repères de colonne permet aux utilisateurs d’appeler deux commandes à partir de la fenêtre de commande en tant que formulaire d’extensibilité.  Si vous utilisez la **vue &#124; autres fenêtres &#124; fenêtre commande** de commande, vous pouvez voir la fenêtre de commande.  Vous pouvez interagir avec la fenêtre de commande en entrant « modifier », et avec la saisie semi-automatique de nom de commande et en fournissant l’argument 120, vous disposez des éléments suivants :  
   
 ```  
 > Edit.AddColumnGuide 120  

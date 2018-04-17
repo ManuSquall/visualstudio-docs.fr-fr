@@ -1,12 +1,10 @@
 ---
-title: "Création de définitions de Site pour SharePoint | Documents Microsoft"
-ms.custom: 
+title: Création de définitions de Site pour SharePoint | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d29ab819dfc7efd04d27652ab3d711c89045847c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1a9e2a631ae80e878ee5293ec3790f8ac93912e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Création de définitions de site pour SharePoint
   Le projet de définition de Site SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vous permet de créer un *définition du site*, qui sert de base pour un site SharePoint. Ces définitions de déterminent non seulement l’apparence et le comportement du site SharePoint, mais également son contenu par défaut et les fonctionnalités. Dans la définition, vous pouvez placer des listes préconfigurées, des types de contenu, des récepteurs d’événements, des images et d’autres éléments. SharePoint inclut des définitions de site, tels que des blogs, par exemple. Lorsque vous créez un site basé sur la définition de site BLOG, le site contient les listes, les composants WebPart et les autres éléments nécessitant un site de création de blogs.  

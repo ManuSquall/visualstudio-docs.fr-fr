@@ -1,12 +1,10 @@
 ---
-title: "Conception et création de Solutions Office | Documents Microsoft"
-ms.custom: 
+title: Conception et création de Solutions Office | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Office project types in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7f5a0163d422e5bb04e3c43b5455cc94dde06f09
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e43824ed3fa34a7cd22b98fb25f946f36cb8eab6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-and-creating-office-solutions"></a>Conception et création de solutions Office
   Visual Studio fournit des modèles de projet que vous pouvez utiliser pour créer différents types de solutions Office. Cette section de la documentation décrit les modèles de projet et apporte des conseils sur la création de projets Office. Pour plus d’informations sur la façon d’implémenter les personnalisations d’interface utilisateur et le code après avoir créé votre projet, consultez [développement de Solutions Office](../vsto/developing-office-solutions.md).  
@@ -100,7 +99,7 @@ ms.lasthandoff: 01/10/2018
  [Projets Office dans l’environnement Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)   
  [Propriétés dans les projets Office](../vsto/properties-in-office-projects.md)   
  [Exécution de Solutions dans différentes Versions de Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)   
- [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Comment : cibler les applications Office via les assemblys PIA (Primary Interop Assembly)](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Manifestes d’application et déploiement dans les Solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)   
  [Comment : définir les informations de Configuration pour une Solution Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)   
  [À l’aide de fonctionnalités Office dans Visual Studio](../vsto/using-office-functionality-inside-of-visual-studio.md)   

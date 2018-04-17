@@ -1,27 +1,25 @@
 ---
-title: "Pages de propriétés | Documents Microsoft"
-ms.custom: 
+title: Pages de propriétés | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: cedf021321b66c47690450823a7da92cd19888eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1b08e210a57388d77859600c02c0e6a30a404884
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="property-pages"></a>Pages de propriétés
 Les utilisateurs peuvent afficher et modifier les propriétés de projet dépend de la configuration et - indépendante à l’aide des pages de propriétés. A **Pages de propriétés** bouton est activé dans le **propriétés** fenêtre ou sur la barre d’outils de l’Explorateur de solutions pour les objets qui fournissent un affichage de page de propriété de l’objet sélectionné. Pages de propriétés sont créés par l’environnement et sont disponibles pour les solutions et projets. Ils peuvent, toutefois, également être mises à disposition pour les éléments de projet qui utilisent les propriétés dépendantes de la configuration. Cette fonctionnalité peut être utilisée lorsque les fichiers dans un projet nécessitent des paramètres de commutateur de compilateur différente créer correctement.  
@@ -50,7 +48,7 @@ Boîte de dialogue Pages de propriétés de projet avec la structure d’arbores
   
  Chaque catégorie affichée sous la catégorie de niveau supérieur représente une page de propriétés séparées. Entrées de catégorie et sous-catégorie disponibles dans la boîte de dialogue sont déterminées par votre implémentation de `ISpecifyPropertyPages` et `IVsPropertyPage`.  
   
- `IDispatch`les objets des éléments dans le conteneur de sélection qui ont des propriétés à afficher sur l’implémentation des pages de propriété `ISpecifyPropertyPages` pour énumérer une liste d’ID de classe. Les ID de classe sont passés en tant que variables à `ISpecifyPropertyPages` et sont utilisés pour instancier les pages de propriétés. La liste des ID de classe est également passée à `IVsPropertyPage` pour créer la structure d’arborescence à gauche de la boîte de dialogue. Les pages de propriétés, puis passez les informations de sauvegarde à la `IDispatch` objet qui implémente `ISpecifyPropertyPages` et remplit les informations relatives à chaque page.  
+ `IDispatch` les objets des éléments dans le conteneur de sélection qui ont des propriétés à afficher sur l’implémentation des pages de propriété `ISpecifyPropertyPages` pour énumérer une liste d’ID de classe. Les ID de classe sont passés en tant que variables à `ISpecifyPropertyPages` et sont utilisés pour instancier les pages de propriétés. La liste des ID de classe est également passée à `IVsPropertyPage` pour créer la structure d’arborescence à gauche de la boîte de dialogue. Les pages de propriétés, puis passez les informations de sauvegarde à la `IDispatch` objet qui implémente `ISpecifyPropertyPages` et remplit les informations relatives à chaque page.  
   
  Les propriétés de l’objet sont récupérées à l’aide `IDispatch` pour chaque objet dans le conteneur de sélection.  
   
@@ -73,11 +71,11 @@ Boîte de dialogue Pages de propriétés avec la grille des propriétés
   
      Vous pouvez spécifier un ou plusieurs projets à partir de la page de propriétés de la solution qui démarrera lorsque l’utilisateur appuie sur F5 ou sélectionne exécuter dans le menu Générer. Cela fonctionne de manière similaire à l’ancien projet actif dans le sens que son nom est affiché dans l’Explorateur de solutions en gras.  
   
-     Vous pouvez récupérer le projet de démarrage en tant que propriété dans le modèle automation en appelant `DTE.Solution.SolutionBuild.StartupProjects`. Dans un VSPackage, vous appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> méthodes. `IVsSolutionBuildManager`est disponible en tant que service en `QueryService` sur SID_SVsSolutionBuildManager. Pour plus d’informations, consultez [objet de Configuration de projet](../../extensibility/internals/project-configuration-object.md) et [Configuration de la Solution](../../extensibility/internals/solution-configuration.md).  
+     Vous pouvez récupérer le projet de démarrage en tant que propriété dans le modèle automation en appelant `DTE.Solution.SolutionBuild.StartupProjects`. Dans un VSPackage, vous appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> méthodes. `IVsSolutionBuildManager` est disponible en tant que service en `QueryService` sur SID_SVsSolutionBuildManager. Pour plus d’informations, consultez [objet de Configuration de projet](../../extensibility/internals/project-configuration-object.md) et [Configuration de la Solution](../../extensibility/internals/solution-configuration.md).  
   
 -   Configuration de build de solution Active  
   
-     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]a une configuration de solution active, disponible dans le modèle automation en implémentant `DTE.Solution.SolutionBuild.ActiveConfiguration`. Une configuration de solution est une collection qui contient une seule configuration de projet pour chaque projet dans la solution (chaque projet peut avoir plusieurs configurations, sur plusieurs plateformes avec des noms différents). Pour plus d’informations relatives aux pages de propriétés de la solution, consultez [Configuration de la Solution](../../extensibility/internals/solution-configuration.md).  
+     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a une configuration de solution active, disponible dans le modèle automation en implémentant `DTE.Solution.SolutionBuild.ActiveConfiguration`. Une configuration de solution est une collection qui contient une seule configuration de projet pour chaque projet dans la solution (chaque projet peut avoir plusieurs configurations, sur plusieurs plateformes avec des noms différents). Pour plus d’informations relatives aux pages de propriétés de la solution, consultez [Configuration de la Solution](../../extensibility/internals/solution-configuration.md).  
   
 -   Projet actuellement sélectionné  
   

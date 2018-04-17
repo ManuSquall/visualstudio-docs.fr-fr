@@ -1,23 +1,21 @@
 ---
-title: "Développer des tests à partir d’un modèle | Documents Microsoft"
-ms.custom: 
+title: Développer des tests à partir d’un modèle | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2937edee2040d8e48938b9cbbf8e78e48780884
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0982bc72a98be6f015d580f3170a5790fe941867
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les impératifs importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les impératifs changent. Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.  
@@ -131,7 +129,7 @@ Assert (countAfter == countBefore = 1);
   
  Du point de vue des tests, un modèle d'impératifs peut être considéré comme un raccourci pour les tests. Ainsi, il est important de maintenir la relation entre les tests et le modèle tout au long du projet.  
   
-##  <a name="Attaching"></a>Attachement de cas de Test pour les éléments de modèle  
+##  <a name="Attaching"></a> Attachement de cas de Test pour les éléments de modèle  
  Si votre projet utilise [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], vous pouvez lier des tests aux éléments de votre modèle. Cela vous permet d'identifier rapidement les tests affectés par une modification des impératifs et de suivre dans quelle mesure un impératif a été satisfait.  
   
  Vous pouvez lier des tests à tous les types d'éléments. Voici quelques exemples :  

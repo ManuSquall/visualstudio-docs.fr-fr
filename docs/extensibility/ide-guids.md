@@ -3,22 +3,21 @@ title: GUID de l’IDE | Documents Microsoft
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9732fa16d3c51fc5b413f4e116d9182fe7ab540f
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 10acb5be1caacbbe496ad98f48516206bc14b1cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ide-guids"></a>GUID de l’IDE
 
@@ -46,7 +45,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe publie GUID de certaines par
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsUIHierarchyWindow>|7D960B07-7AF8-11D0-8E5E-00A0C911005A|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_DefaultEditor>|6AC5EF80-12BF-11D1-8E9B-00A0C911005A|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_ExternalEditor>|8137C9E8-35FE-4AF2-87B0-DE3C45F395FD|
-|<xref:Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher>|e69cd190-1276-11d1-9f64-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher>|e69cd190-1276-11D1-9f64-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane>|65482c72-defa-41b7-902c-11c091889c83|
 
 ## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Fichiers, dossiers virtuels et physiques et sous-projets
@@ -90,7 +89,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe publie GUID de certaines par
 |Constante|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>|5EFC7975-14BC-11CF-9B2B-00AA00573819|
-|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
+|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11D1-aaf8-00a0c9055a90|
 
 ## <a name="iunknown"></a>IUnknown
 
@@ -111,7 +110,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe publie GUID de certaines par
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewShortcutTasks>|18802030-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewUncheckedTasks>|18802037-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewUserTasks>|1880202f-fc20-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskList>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
+|<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskList>|BC5955D5-aa0d-11D0-A8C5-00A0C921A4D2|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskListPackage>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
 ## <a name="component-selector-page-guids"></a>GUID de Page de sélection de composant

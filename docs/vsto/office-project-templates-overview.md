@@ -1,12 +1,10 @@
 ---
-title: "Vue d’ensemble des modèles de projet Office | Documents Microsoft"
-ms.custom: 
+title: Vue d’ensemble des modèles de projet Office | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -32,13 +30,14 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], project templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 634ebd13d214f2d354e150b47f9dd50757bd2817
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: c8b82da48e04e9c38f16af3cdcc504f7c1fd070f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-project-templates-overview"></a>Vue d'ensemble des modèles de projet Office
   Les Outils de développement Microsoft Office dans Visual Studio incluent des modèles de projet pour la création des types suivants de solutions Office :  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Compléments VSTO](#AppLevel)  
   
- Pour une comparaison détaillée de ces types de solutions Office, consultez [présentation du développement de Solutions Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Pour une comparaison détaillée de ces types de solutions Office, consultez [présentation du développement de Solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Les modèles de projet Office sont disponibles dans la boîte de dialogue **Nouveau projet** , sous le nœud **Office** des nœuds de langage **Visual C#** et **Visual Basic** . Chaque modèle génère un projet avec la configuration appropriée pour l'application cible, y compris les références d'assembly et les paramètres de débogage.  
   

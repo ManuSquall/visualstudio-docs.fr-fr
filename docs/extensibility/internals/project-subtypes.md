@@ -1,32 +1,30 @@
 ---
 title: Les sous-types de projet | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 21d7f013989607f7f5416a57829bc9b2b29b61d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e91a16ad11f7089230138919519922d58f3cc472
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-subtypes"></a>Sous-types de projet
 Les sous-types de projet vous permettent de personnaliser ou version le comportement des systèmes de projet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Personnalisations incluent l’enregistrement de données supplémentaires dans le fichier projet, en ajoutant ou en filtrant les éléments dans le **ajouter un nouvel élément** boîte de dialogue contrôle de la façon dont les assemblys sont de débogage et déployés et l’extension du projet **propriété Pages** boîte de dialogue. Les VSPackages implémenter des sous-types de projet à l’aide de regroupements COM.  
   
 > [!NOTE]
->  Le système de projet Visual C++ ne prend pas en charge les sous-types de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]lui-même utilise des sous-types de projet pour implémenter les projets Smart Device et de SQL Server.  
+>  Le système de projet Visual C++ ne prend pas en charge les sous-types de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lui-même utilise des sous-types de projet pour implémenter les projets Smart Device et de SQL Server.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Conception de sous-types de projets](../../extensibility/internals/project-subtypes-design.md)  

@@ -1,12 +1,10 @@
 ---
 title: Extension des projets SharePoint | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 403ff3793dfd5ae4211444868af8c37dbd908672
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 622596249e92d73dd4f504a445d43405847e9629
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-projects"></a>Extension de projets SharePoint
   Créez une extension de projet lorsque vous souhaitez personnaliser des fonctionnalités au niveau du projet des projets SharePoint. Par exemple, vous pouvez ajouter des propriétés de projet personnalisées ou répondre à des événements au niveau du projet qui sont déclenchés lorsque l’utilisateur développe une solution SharePoint dans Visual Studio.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
  Pour une procédure pas à pas qui montre comment créer, déployer et tester une extension de projet, consultez [procédure pas à pas : création d’une Extension de projet SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md).  
   
 ## <a name="understanding-the-relationship-between-project-extensions-and-project-instances"></a>Présentation de la relation entre les Extensions et les Instances de projet  
- Lorsque vous créez une extension de projet, celle-ci est chargée lors de n’importe quel genre de projet SharePoint est ouvert dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]comprend plusieurs modèles de projet SharePoint, tels que les définitions de listes, les types de contenu et les récepteurs d’événements. Toutefois, il n'est qu’un seul type de projet SharePoint. Les types de projets qui s’affichent dans le **nouveau projet** boîte de dialogue sont uniquement des modèles qui regroupent un ou plusieurs éléments de projet SharePoint. Étant donné qu’un seul type de projet SharePoint, les extensions créées pour un projet s’appliquent à tous les projets SharePoint. Vous ne pouvez pas, par exemple, créer une extension qui s’applique uniquement à un **le Type de contenu** projet.  
+ Lorsque vous créez une extension de projet, celle-ci est chargée lors de n’importe quel genre de projet SharePoint est ouvert dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] comprend plusieurs modèles de projet SharePoint, tels que les définitions de listes, les types de contenu et les récepteurs d’événements. Toutefois, il n'est qu’un seul type de projet SharePoint. Les types de projets qui s’affichent dans le **nouveau projet** boîte de dialogue sont uniquement des modèles qui regroupent un ou plusieurs éléments de projet SharePoint. Étant donné qu’un seul type de projet SharePoint, les extensions créées pour un projet s’appliquent à tous les projets SharePoint. Vous ne pouvez pas, par exemple, créer une extension qui s’applique uniquement à un **le Type de contenu** projet.  
   
  Pour accéder à une instance de projet spécifique, gérez l’un de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> les événements de la *projectService* paramètre dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> (méthode). Par exemple, pour déterminer quand un projet SharePoint est ajouté à une solution, gérez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> événement. Pour plus d’informations, consultez [Comment : créer une Extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   

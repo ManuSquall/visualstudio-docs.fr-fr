@@ -1,23 +1,21 @@
 ---
-title: "À propos des langues spécifiques au domaine | Documents Microsoft"
-ms.custom: 
+title: À propos des langues spécifiques au domaine | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 89293e0b684881767b6357b88469dc69ddc71902
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="about-domain-specific-languages"></a>À propos des langages spécifiques à un domaine
 
@@ -81,7 +79,7 @@ Un langage spécifique à un domaine doit avoir un ensemble relativement peu vol
   
 ### <a name="domain-model"></a>Modèle de domaine
 
-Un langage spécifique à un domaine doit combiner l’ensemble des éléments et les relations entre eux dans une grammaire cohérente. Il doit également définir si les combinaisons d’éléments et les relations sont valides. Par exemple, les langages de programmation empêchent généralement l’héritage circulaire, dans laquelle une classe est dérivée d’une classe de seconde et la deuxième classe est dérivée de la première classe. Contraintes peuvent également être utilisées pour exprimer la logique métier, par exemple, une personne ne peut pas être un dépendant de lui-même. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]utilise les contraintes pour exprimer les types de restrictions nécessitant plus des langages spécifiques à un domaine.  
+Un langage spécifique à un domaine doit combiner l’ensemble des éléments et les relations entre eux dans une grammaire cohérente. Il doit également définir si les combinaisons d’éléments et les relations sont valides. Par exemple, les langages de programmation empêchent généralement l’héritage circulaire, dans laquelle une classe est dérivée d’une classe de seconde et la deuxième classe est dérivée de la première classe. Contraintes peuvent également être utilisées pour exprimer la logique métier, par exemple, une personne ne peut pas être un dépendant de lui-même. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] utilise les contraintes pour exprimer les types de restrictions nécessitant plus des langages spécifiques à un domaine.  
   
 ### <a name="artifact-generation"></a>Génération de l’artefact
 
@@ -89,7 +87,7 @@ Un des principaux objectifs d’un langage spécifique à un domaine consiste à
   
 ### <a name="serialization"></a>Sérialisation
 
-Un langage spécifique à un domaine doit être conservé dans une forme qui peut être modifiée, enregistrée, fermée et rechargée. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]utilise un format XML qui vous permet de définir et personnaliser la façon dont votre langage spécifique à un domaine est sérialisé ou rendues persistantes.  
+Un langage spécifique à un domaine doit être conservé dans une forme qui peut être modifiée, enregistrée, fermée et rechargée. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] utilise un format XML qui vous permet de définir et personnaliser la façon dont votre langage spécifique à un domaine est sérialisé ou rendues persistantes.  
   
 ### <a name="integration-with-visual-studio"></a>Intégration à Visual Studio
 

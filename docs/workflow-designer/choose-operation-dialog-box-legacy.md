@@ -1,5 +1,5 @@
 ---
-title: "Choisissez l’opération, boîte de dialogue (héritée) | Documents Microsoft"
+title: Choisissez l’opération, boîte de dialogue (héritée) | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: bc3ec902-7797-494e-af48-e70c97eb6779
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2d26d97fd147ea39e8d074ea65f4a4121f9be71
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 5b4bd8318c4b10dab878ffd96667ce7057e653ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>Choisir une opération, boîte de dialogue (héritée)
 
@@ -28,7 +28,7 @@ Cette rubrique décrit comment utiliser le **choisir une opération** boîte de 
 |----------------|-----------------|
 |**Ajouter un contrat**|Crée un contrat. Vous pouvez y définir de nouvelles opérations (Cette opération est utilisée uniquement avec <xref:System.Workflow.Activities.ReceiveActivity>.)|
 |**L’opération d’ajout**|Ajoute de nouvelles opérations à un contrat que vous avez créé dans le **choisir une opération** boîte de dialogue. **Remarque :** vous pouvez ajouter de nouvelles opérations uniquement aux contrats créés par le biais du **choisir une opération** boîte de dialogue. <br /><br /> (Cette opération est utilisée uniquement avec <xref:System.Workflow.Activities.ReceiveActivity>.)|
-|**Import...**|Importe un contrat défini précédemment et permet de sélectionner une opération faisant partie de ce contrat.|
+|**Importation en cours...**|Importe un contrat défini précédemment et permet de sélectionner une opération faisant partie de ce contrat.|
 |**Nom de l’opération**|Nom de l'opération actuellement sélectionnée. Cette zone de texte peut être modifiée uniquement si vous avez créé une opération via le **choisir une opération** boîte de dialogue.|
 |**Paramètres**|Onglet contenant les définitions des paramètres pour l'opération actuellement sélectionnée. **Remarque :** définitions de paramètres peuvent être modifiées uniquement si vous avez créé une opération via le **choisir une opération** boîte de dialogue.|
 |**Propriétés**|Onglet contenant les paramètres du <xref:System.Net.Security.ProtectionLevel> correspondant aux messages envoyés entre le client et service. **Remarque :** cet onglet est activé uniquement si vous avez créé une opération via le **choisir une opération** boîte de dialogue.|

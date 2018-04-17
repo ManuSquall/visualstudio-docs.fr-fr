@@ -1,23 +1,21 @@
 ---
-title: "Essentials expérience utilisateur pour Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Essentials expérience utilisateur pour Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f9d04da421b3b59609269b4f91a487d22adc80e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 52081c5a7f88a39ab25cf868164bd0258dd37885
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Essentials expérience utilisateur pour Visual Studio
 ## <a name="best-practices"></a>meilleures pratiques recommandées.  
@@ -108,7 +106,7 @@ ms.lasthandoff: 12/22/2017
 Forcer l’utilisateur à lire le texte explicatif avant de faire disparaître de l’interface utilisateur est un anti-modèle dans Visual Studio. Liens vidéos correctement conçus doivent afficher une info-bulle avec des informations supplémentaires sur pointage et en cliquant sur le «&times;» doit fermer le message sans avoir besoin de davantage d’interaction.
 
 
- ![Explicatif texte anti &#45; modèle &#45; incorrect](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Modèle de lien vidéo incorrect
+ ![Le texte explicatif anti&#45;modèle &#45; incorrect](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Modèle de lien vidéo incorrect
   
 #### <a name="result"></a>Résultat  
  Au lieu d’un bouton Fermer simple (un seul clic), l’utilisateur est obligé d’utiliser deux clics pour simplement fermer l’interface utilisateur en place pour tous les liens vidéos s’affichent.  
@@ -116,7 +114,7 @@ Forcer l’utilisateur à lire le texte explicatif avant de faire disparaître d
 #### <a name="alternatives"></a>Alternatives  
  La conception correcte pour cette situation serait suive le modèle commun pour Internet Explorer, Office et Visual Studio : pointage, l’utilisateur peut voir la description de l’info-bulle et d’un seul clic masque l’interface utilisateur.  
   
- ![Explicatif texte anti &#45; modèle &#45; correct](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-modèle corriger")<br />Modèle de lien vidéo correct
+ ![Le texte explicatif anti&#45;modèle &#45; correct](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-modèle corriger")<br />Modèle de lien vidéo correct
   
 ### <a name="using-command-bars-for-settings"></a>À l’aide des barres de commandes pour les paramètres  
  **Figure A** représente cette anti-modèle : placement d’un paramètre en dessous d’un bouton de commande qui s’applique au plus que la commande. Dans ce croquis, il existe des commandes autres que de démarrer le débogage, comme les afficher dans le navigateur, démarrer sans débogage et pas à pas détaillé, qui respecte le paramètre sélectionné.  

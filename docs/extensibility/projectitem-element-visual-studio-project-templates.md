@@ -1,30 +1,26 @@
 ---
-title: "ProjectItem, élément (modèles de projet Visual Studio) | Documents Microsoft"
-ms.custom: 
+title: ProjectItem, élément (modèles de projet Visual Studio) | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca5143a3e5eaff488fee89b643a40adb60473bd8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8a7dfbfd03df24c2968dc9dae141ffc7a300e8be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem, élément (modèles de projet Visual Studio)
 Spécifie un fichier qui est inclus dans le modèle de projet.  
@@ -80,7 +76,7 @@ Spécifie un fichier qui est inclus dans le modèle de projet.
  Un `string` qui représente le nom ou le chemin d’accès à un fichier dans le fichier .zip du modèle.  
   
 ## <a name="remarks"></a>Notes  
- `ProjectItem`est un enfant facultatif de `Project`.  
+ `ProjectItem` est un enfant facultatif de `Project`.  
   
  Le `TargetFileName` attribut peut être utilisé pour créer une structure de répertoires différente de la structure de répertoires dans le fichier .zip du modèle. Par exemple, si le fichier `MyFile.vb` existe à la racine du fichier .zip du modèle, mais vous souhaitez que le fichier doit être placé dans un répertoire nommé `CustomFiles` dans tous les projets créés à partir du modèle, vous utiliseriez le code XML suivant :  
   

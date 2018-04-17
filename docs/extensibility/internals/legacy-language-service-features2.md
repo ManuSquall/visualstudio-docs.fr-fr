@@ -1,27 +1,23 @@
 ---
-title: "Suivantes : 2 du Service de langage hérité | Documents Microsoft"
-ms.custom: 
+title: 'Suivantes : 2 du Service de langage hérité | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], code development aides
 ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92c33d46f7bc58de1bee0b6c782165a6c7cd8d5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b807f5f776690e86cb44334c1822a8facd6ec824
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="legacy-language-service-features"></a>Fonctionnalités de Service de langage hérité
 Les rubriques suivantes répertorient certaines des fonctionnalités du service de langage hérité que vous pouvez fournir.  

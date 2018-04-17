@@ -1,12 +1,10 @@
 ---
-title: "Exemples de développement Office et des procédures pas à pas | Documents Microsoft"
-ms.custom: 
+title: Exemples de développement Office et des procédures pas à pas | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - examples [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d13c91bebf92632e0c53f4eda9d2b771f37f1949
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f70b2f786453bf194a6287d7254363d45c41c49b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Exemples et procédures pas à pas relatifs au développement Office
   Cette section contient des exemples d’applications, des exemples de code et des procédures pas à pas qui illustrent la syntaxe, structure et les techniques utilisées pour générer des solutions Microsoft Office.  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 |Rubrique|Description|  
 |-----------|-----------------|  
-|[Mise en route &#40; développement Office dans Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Fournit des liens vers des informations sur le programme d’installation, les modèles de projet, les assemblys PIA Office et quelles sont les nouveautés du développement Office.|  
+|[Mise en route &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Fournit des liens vers des informations sur le programme d’installation, les modèles de projet, les assemblys PIA Office et quelles sont les nouveautés du développement Office.|  
 |[Architecture des solutions Office dans Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Explique comment le code managé fonctionnent les solutions Office à partir de la perspective du développeur et de l’utilisateur final et inclut des informations sur le fonctionnement du code gérés avec des documents Office et des applications.|  
 |[Tâches courantes en matière de programmation Office](../vsto/common-tasks-in-office-programming.md)|Répertorie les questions fréquemment posées sur la programmation avec le développement Office dans Visual Studio et fournit des liens vers des rubriques qui peuvent aider à résoudre les problèmes courants.|  
 |[Conception et création de solutions Office](../vsto/designing-and-creating-office-solutions.md)|Fournit des liens vers des informations sur la création de solutions Microsoft Office et le rôle des assemblys dans votre solution.|  

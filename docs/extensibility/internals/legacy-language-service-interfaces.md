@@ -1,31 +1,29 @@
 ---
-title: "Interfaces de Service de langage hérité | Documents Microsoft"
-ms.custom: 
+title: Interfaces de Service de langage hérité | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IVsLanguageInfo interface
 - language services, objects
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 82555c861a6bf250a818b185de57fc48f143e4f3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b2861c4d6307442e1650b44d2b15f2a084ac7715
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfaces de Service de langage hérité
 Pour n’importe quel langage de programmation particulier, il peut être qu’une seule instance d’un service de langage à la fois. Toutefois, un service de langage unique peut servir plusieurs éditeurs.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]n’associe pas d’un service de langage à n’importe quel éditeur particulier. Par conséquent, lorsque vous demandez une opération de service de langage, vous devez identifier l’éditeur approprié en tant que paramètre.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] n’associe pas d’un service de langage à n’importe quel éditeur particulier. Par conséquent, lorsque vous demandez une opération de service de langage, vous devez identifier l’éditeur approprié en tant que paramètre.  
   
 ## <a name="common-interfaces-associated-with-language-services"></a>Interfaces courantes associées aux Services de langage  
  L’éditeur obtient votre service de langage en appelant <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> sur le VSPackage approprié. L’ID (SID) passée dans cet appel de service identifie le service de langage demandé.  
@@ -43,12 +41,12 @@ Pour n’importe quel langage de programmation particulier, il peut être qu’u
  Le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface doit être implémentée sur tous les services de langage. Il fournit des informations sur votre service de langage, telles que le nom localisé de la langue, les extensions de nom de fichier associées avec le service de langage et comment récupérer un Coloriseur.  
   
 ## <a name="additional-language-service-interfaces"></a>Interfaces de Service de langage supplémentaires  
- Autres interfaces peuvent être fournies avec votre service de langage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]demande une instance distincte de ces interfaces pour chaque instance de la mémoire tampon de texte. Par conséquent, vous devez implémenter chacun de ces interfaces sur son propre objet. Le tableau suivant montre les interfaces qui nécessitent une instance par instance de mémoire tampon de texte.  
+ Autres interfaces peuvent être fournies avec votre service de langage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] demande une instance distincte de ces interfaces pour chaque instance de la mémoire tampon de texte. Par conséquent, vous devez implémenter chacun de ces interfaces sur son propre objet. Le tableau suivant montre les interfaces qui nécessitent une instance par instance de mémoire tampon de texte.  
   
 |Interface|Description|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Gère des ornements de fenêtre de code, tels que la barre de la liste déroulante. Vous pouvez obtenir cette interface en utilisant la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> (méthode). Il y a un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> par la fenêtre de code.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Colore les délimiteurs et les mots clés de langage. Vous pouvez obtenir cette interface en utilisant la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> (méthode). <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>est appelée au moment de la peinture. Éviter de travail à l’intérieur de calculs intensifs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> ou performances Impossible d’en pâtir.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Colore les délimiteurs et les mots clés de langage. Vous pouvez obtenir cette interface en utilisant la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> (méthode). <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> est appelée au moment de la peinture. Éviter de travail à l’intérieur de calculs intensifs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> ou performances Impossible d’en pâtir.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>|Fournit des info-bulles du paramètre IntelliSense. Lorsque le service de langage reconnaît un caractère qui indique que les données (méthode) doit être affiché, par exemple une parenthèse ouvrante, il appelle la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> méthode pour notifier le texte qui permet d’afficher le service de langage est prêt à afficher une info-bulle des informations de paramètre. L’affichage de texte rappelle ensuite le service de langage à l’aide des méthodes de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> interface à obtenir les informations requises pour afficher l’info-bulle.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>|Fournit la saisie semi-automatique des instructions IntelliSense. Lorsque le service de langage est prêt à afficher une liste de saisie semi-automatique, il appelle la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> méthode sur l’affichage de texte. L’affichage de texte rappelle ensuite le service de langage à l’aide des méthodes sur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> objet.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Autorise la modification de l’affichage de texte à l’aide du Gestionnaire de commandes. La classe dans laquelle vous implémentez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interface doit également implémenter le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface. L’affichage de texte récupère le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> objet en interrogeant le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> objet qui a été passée dans le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> (méthode). Il doit y avoir une <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> objet pour chaque vue.|  

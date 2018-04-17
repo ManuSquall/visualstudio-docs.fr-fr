@@ -1,26 +1,24 @@
 ---
-title: "Inscription et la désinscription des VSPackages | Documents Microsoft"
-ms.custom: 
+title: Inscription et la désinscription des VSPackages | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: e25e7a46-6a55-4726-8def-ca316f553d6b
-caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7e82b299398d83509883ff152c5f97bd43e800b3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 73dccc4aef061aaac5f5c33e098a591a7c51fcbb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-and-unregistering-vspackages"></a>Inscription et annulation de l’inscription de VSPackages
 Vous utilisez des attributs pour inscrire un VSPackage, mais  

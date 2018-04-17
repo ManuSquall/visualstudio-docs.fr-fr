@@ -1,26 +1,24 @@
 ---
-title: "Référence du Kit de développement logiciel Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Référence du Kit de développement logiciel Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, reference
 - reference, Visual Studio SDK
 ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6f84f92b4d940bc7141f8c53730a128651b27a8f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 656663c14b4c5b8b77645eb4fc0fd221e1786800
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-sdk-reference"></a>Référence du Kit de développement logiciel Visual Studio
 Cette section contient des informations sur les espaces de noms Visual Studio, les espaces de noms et d’autres zones d’intérêt pour les développeurs qui utilisent le Kit de développement logiciel Visual Studio.  

@@ -1,12 +1,10 @@
 ---
-title: "Considérations relatives à la Solution bac à sable | Documents Microsoft"
-ms.custom: 
+title: Considérations relatives à la Solution bac à sable | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b510097dc21c385f67a9358eaca3997cbdc2316
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff85f3407fb24d6d49856bb11ff1852c544cad35
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sandboxed-solution-considerations"></a>Sandboxed Solution Considerations
   *Solutions bac à sable* sont une fonctionnalité de Microsoft SharePoint 2010 qui permet aux utilisateurs de collection de sites de télécharger leurs propres solutions de code personnalisé. Une solution bac à sable commune est aux utilisateurs de télécharger leurs propres composants WebPart.  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  Une application SharePoint sandboxed s’exécute dans un processus sécurisé et surveillé qui a accès à une partie limitée de la batterie de serveurs Web. Microsoft SharePoint 2010 utilise une combinaison de fonctionnalités, des galeries de solutions, des solutions d’analyse et une infrastructure de validation pour activer les solutions bac à sable.  
   
 ## <a name="specifying-project-trust-level"></a>Spécification du niveau de confiance de projet  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]prend en charge les solutions bac à sable via une propriété de projet booléenne appelées *Solution bac à sable*. Cette propriété peut être définie à tout moment dans le projet, ou il peut être spécifié lorsque vous créez le projet dans le **Assistant Personnalisation de SharePoint**.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] prend en charge les solutions bac à sable via une propriété de projet booléenne appelées *Solution bac à sable*. Cette propriété peut être définie à tout moment dans le projet, ou il peut être spécifié lorsque vous créez le projet dans le **Assistant Personnalisation de SharePoint**.  
   
 > [!NOTE]  
 >  Modification de la *Solution bac à sable* propriété d’un projet après sa création peut provoquer des erreurs de validation.  
@@ -74,7 +73,7 @@ ms.lasthandoff: 01/10/2018
  Dans WSS 3.0, les solutions peut être déployées uniquement au niveau de la batterie de serveurs. Cela signifie que les solutions potentiellement dangereuses ou instabilitées peut être déployées affectées de la batterie de serveurs Web entière et tous les autres collections de sites et applications qui s’exécutent sous ce dernier. Toutefois, grâce aux solutions bac à sable, vous pouvez déployer vos solutions à une sous-zone de la batterie de serveurs, une collection de sites spécifiques. Pour fournir une protection supplémentaire, assembly de la solution n’est pas chargé dans le principal [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] processus (w3wp.exe). Au lieu de cela, il est chargé dans un processus distinct (SPUCWorkerProcess.exe). Ce processus est analysé et implémente des quotas et limitations pour protéger la batterie de serveurs à partir de solutions bac à sable qui effectuent des activités malveillantes, telles que l’exécution de boucles serrées qui consomment des cycles de processeur.  
   
 ## <a name="site-collection-solution-gallery"></a>Galerie de solutions de Collection de sites  
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]2010 offre une fonction qui est appelée « site collection solution bibliothèque ». Vous pouvez accéder à cette fonctionnalité à partir de la page Administration centrale de SharePoint 2010 ou en ouvrant le **Actions du Site** menu, en choisissant **paramètres du Site**, puis en choisissant le **Solutions** lien sous **galeries** dans le site SharePoint. Galeries de solutions constituent des référentiels de solutions qui permettent aux administrateurs de collection de site gérer les solutions dans leurs collections de sites.  
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 offre une fonction qui est appelée « site collection solution bibliothèque ». Vous pouvez accéder à cette fonctionnalité à partir de la page Administration centrale de SharePoint 2010 ou en ouvrant le **Actions du Site** menu, en choisissant **paramètres du Site**, puis en choisissant le **Solutions** lien sous **galeries** dans le site SharePoint. Galeries de solutions constituent des référentiels de solutions qui permettent aux administrateurs de collection de site gérer les solutions dans leurs collections de sites.  
   
  La galerie de solutions est une bibliothèque de documents stockée dans la racine Web du site SharePoint. La galerie de solutions remplace les modèles de site et prend en charge les packages de solution. Quand un fichier de package (.wsp) de solution SharePoint est chargé, il est traité comme une solution bac à sable.  
   
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
   
 -   SPWebEventReceiver  
   
--   Prise en charge pour tous les composants WebPart qui dérivent de`System.Web.UI.WebControls.WebParts.WebPart`  
+-   Prise en charge pour tous les composants WebPart qui dérivent de `System.Web.UI.WebControls.WebParts.WebPart`  
   
 -   WebParts  
   

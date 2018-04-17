@@ -1,5 +1,5 @@
 ---
-title: "Comment : créer une bibliothèque de flux de travail de Machine à états (hérité) | Documents Microsoft"
+title: 'Comment : créer une bibliothèque de flux de travail de Machine à états (hérité) | Documents Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 5bd68c6e-6a98-47d9-826d-9bb7a4fd72f8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c65eafa04b25a2ba3f449d26e9a93daab1699664
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: a8220c6e9dbd2d97e0bf1017498ca3b295424863
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Procédure : créer une bibliothèque de workflows d'ordinateur d'état (héritée)
 
@@ -26,7 +26,7 @@ Suivez ces étapes pour créer un projet de bibliothèque de flux de travail Mac
 
 1.  Démarrez Visual Studio.
 
-2.  Sur le **fichier** menu, pointez sur **nouveau**, puis sélectionnez **projet**.
+2.  Dans le menu **Fichier**, pointez sur **Nouveau**, puis sélectionnez **Projet**.
 
      La boîte de dialogue **Nouveau projet** s'affiche.
 

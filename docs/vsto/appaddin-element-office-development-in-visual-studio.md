@@ -1,13 +1,10 @@
 ---
-title: "&lt;appAddin&gt; élément (développement Office dans Visual Studio) | Documents Microsoft"
-ms.custom: 
+title: '&lt;appAddin&gt; élément (développement Office dans Visual Studio) | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27f286f9bde8db68a7190796f1d154a402fb208d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 9def97d044af74f02a2064703691333ec9f176aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; élément (développement Office dans Visual Studio)
   L’élément `appAddin` de l’espace de noms `vstov4` stocke les informations propres à la personnalisation des compléments VSTO.  
@@ -54,13 +51,13 @@ ms.lasthandoff: 01/10/2018
  L’élément `appAddin` possède les éléments enfants suivants.  
   
 ### <a name="friendlyname"></a>FriendlyName  
- Facultatif. Le `friendlyName` élément est expliqué dans [&#60; friendlyName &#62; Élément &#40; développement Office dans Visual Studio &#41; ](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ Facultatif. Le `friendlyName` élément est expliqué dans [ &#60;friendlyName&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
 ### <a name="description"></a>Description  
- Facultatif. Le `description` élément est expliqué dans [&#60; description &#62; Élément &#40; développement Office dans Visual Studio &#41; ](../vsto/description-element-office-development-in-visual-studio.md).  
+ Facultatif. Le `description` élément est expliqué dans [ &#60;description&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
   
 ### <a name="formregions"></a>formRegions  
- Obligatoire uniquement pour les compléments VSTO Outlook qui comprennent des zones de formulaire. Le `formRegions` élément est expliqué dans [&#60; formRegions &#62; Élément &#40; développement Office dans Visual Studio &#41; ](../vsto/formregions-element-office-development-in-visual-studio.md).  
+ Obligatoire uniquement pour les compléments VSTO Outlook qui comprennent des zones de formulaire. Le `formRegions` élément est expliqué dans [ &#60;formRegions&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
   
 ## <a name="vsto-add-in-example"></a>Exemple de complément VSTO  
   

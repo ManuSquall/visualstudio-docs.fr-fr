@@ -1,5 +1,5 @@
 ---
-title: "Boîte de dialogue de Configuration de thème (hérité) | Documents Microsoft"
+title: Boîte de dialogue de Configuration de thème (hérité) | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 9e6d182a-c4d9-4e71-b2b9-02f675fc2b29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d59ffe46ed9b85eb64eeda39275b6566b1ca497
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 46ec33bbce8ee8ac770607d77918547fdbd705ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>Configuration du thème, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser le **Configuration du thème** boîte de dialogue dans le Concepteur de flux de travail Windows hérité. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

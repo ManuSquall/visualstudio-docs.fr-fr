@@ -1,23 +1,21 @@
 ---
-title: "Procédure pas à pas : Création d’un kit de développement à l’aide de JavaScript | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création d’un kit de développement à l’aide de JavaScript | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2a53b10f3d9a69c0181a432dad491bebd177f5be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2132269329c8b6af3ac846596adea7b3462db5bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Procédure pas à pas : Création d’un kit de développement à l’aide de JavaScript
 Cette procédure pas à pas explique comment utiliser JavaScript pour créer un simple mathématiques SDK comme une Extension Visual Studio (VSIX).  La procédure pas à pas est divisé en parties suivantes :  
@@ -31,7 +29,7 @@ Cette procédure pas à pas explique comment utiliser JavaScript pour créer un 
 ## <a name="prerequisites"></a>Prérequis  
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createSimpleMathVSIX"></a>Pour créer le projet SDK d’extension SimpleMathVSIX  
+##  <a name="createSimpleMathVSIX"></a> Pour créer le projet SDK d’extension SimpleMathVSIX  
   
 1.  Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
@@ -142,7 +140,7 @@ Cette procédure pas à pas explique comment utiliser JavaScript pour créer un 
   
 21. Redémarrez Visual Studio.  
   
-##  <a name="createSampleApp"></a>Pour créer un exemple d’application qui utilise le Kit de développement  
+##  <a name="createSampleApp"></a> Pour créer un exemple d’application qui utilise le Kit de développement  
   
 1.  Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
@@ -315,7 +313,7 @@ Cette procédure pas à pas explique comment utiliser JavaScript pour créer un 
   
 11. Appuyez sur la touche F5 pour générer et exécuter l’application.  
   
-12. Dans l’interface utilisateur de l’application, entrez tous les deux numéros, sélectionnez une opération, puis choisissez le  **=**  bouton. Le résultat correct s’affiche.  
+12. Dans l’interface utilisateur de l’application, entrez tous les deux numéros, sélectionnez une opération, puis choisissez le **=** bouton. Le résultat correct s’affiche.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’un Kit de développement logiciel (SDK)](../extensibility/creating-a-software-development-kit.md)

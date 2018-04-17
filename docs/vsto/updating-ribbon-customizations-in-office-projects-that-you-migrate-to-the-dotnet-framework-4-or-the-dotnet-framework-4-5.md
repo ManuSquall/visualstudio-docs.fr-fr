@@ -1,13 +1,10 @@
 ---
-title: "Mise à jour des personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5 | Documents Microsoft"
-ms.custom: 
+title: Mise à jour des personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5 | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d3c2e834b3a618bf033ef7f37ca8bbac7d0efcf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 98c5dee34fd40506289cf4a9f31488c3acc710ba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mise à jour des personnalisations de ruban dans les projets Office qui font l'objet d'une migration vers .NET Framework 4 ou .NET Framework 4.5
   Si votre projet contient une personnalisation de ruban qui a été créée à l’aide de la **ruban (Concepteur visuel)** d’éléments de projet, vous devez vous les modifications suivantes à votre code de projet si le framework cible est remplacée par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou plus tard.  
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Dans les projets Visual Basic, localisez la classe `ThisRibbonCollection` à la fin du fichier. Modifiez la déclaration de cette classe afin qu’elle n’hérite plus de Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection.  
   
-##  <a name="ribboncontrols"></a>L’instanciation des contrôles de ruban  
+##  <a name="ribboncontrols"></a> L’instanciation des contrôles de ruban  
  Vous devez modifier tout code qui instancie dynamiquement des contrôles de ruban. Dans les projets qui ciblent .NET Framework 3.5, les contrôles de ruban sont des classes que vous pouvez instancier directement dans certains scénarios. Dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, ces contrôles sont des interfaces que vous ne pouvez pas instancier directement. Vous devez créer les contrôles à l'aide des méthodes fournies par l'objet <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.  
   
  Il existe deux façons d'accéder à l'objet <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> :  
@@ -151,7 +148,7 @@ ms.lasthandoff: 01/10/2018
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|  
   
-##  <a name="ribbonevents"></a>Gestion des événements de ruban  
+##  <a name="ribbonevents"></a> Gestion des événements de ruban  
  Vous devez modifier tout code qui gère les événements liés aux contrôles de ruban. Dans les projets qui ciblent .NET Framework 3.5, ces événements sont gérés par le délégué <xref:System.EventHandler%601> générique. Dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, ces événements sont désormais gérés par d'autres délégués.  
   
  Le tableau suivant répertorie les événements de ruban et les délégués qui leur sont associés dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure.  
@@ -192,7 +189,7 @@ this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Migration de solutions Office vers .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Concepteur de ruban](../vsto/ribbon-designer.md)  
   
   

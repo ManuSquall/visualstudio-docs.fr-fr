@@ -1,25 +1,23 @@
 ---
-title: "Écriture d’un modèle de texte T4 | Documents Microsoft"
-ms.custom: 
+title: Écriture d’un modèle de texte T4 | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e640583f42154497ffe5bd25d3c6860fb9d20ca8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 140e49af62b2ea1a9bb43b7cf3fb95ccc7b257e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
 Un modèle de texte contient le texte qui sera généré à partir du modèle. Par exemple, un modèle qui crée une page web contiendra «\<html > … » et tous les autres composants standard d’une page HTML. Inséré dans le modèle sont *blocs de contrôle*, qui sont des fragments de code de programme. Les blocs de contrôle fournissent des valeurs variables et permettent à certaines parties du texte d'être conditionnelles et répétées.  
@@ -190,7 +188,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>  
 ```  
   
- Vous devez utiliser des noms de chemins d'accès absolus ou des noms de macros standard dans le nom du chemin d'accès. Exemple :  
+ Vous devez utiliser des noms de chemins d'accès absolus ou des noms de macros standard dans le nom du chemin d'accès. Par exemple :  
   
 ```  
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
@@ -211,7 +209,7 @@ private void WriteSquareLine(int i)
   
  Pour plus d’informations, consultez [Directive d’importation T4](../modeling/t4-import-directive.md).  
   
-###  <a name="Include"></a>Y compris le code et le texte  
+###  <a name="Include"></a> Y compris le code et le texte  
  La directive `include` insère du texte à partir d'un autre fichier de modèle. Par exemple, cette directive insère le contenu de `test.txt`.  
   
  `<#@ include file="c:\test.txt" #>`  
@@ -241,7 +239,7 @@ private void WriteSquareLine(int i)
   
  **Charger un fichier en tant que modèle navigable**. Une méthode plus puissante consiste à lire les données en tant que modèle navigable par votre code de modèle de texte. Par exemple, vous pouvez charger un fichier XML et le parcourir avec des expressions XPath. Vous pouvez également utiliser [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) pour créer un ensemble de classes vous pouvez de lire les données XML.  
   
- **Modifiez le fichier de modèle dans un diagramme ou d’un formulaire.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]Fournit des outils qui vous permettent de modifier un modèle comme un diagramme ou un Windows form. Il est ainsi plus facile de discuter du modèle avec les utilisateurs de l'application générée. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] crée également un ensemble de classes fortement typées qui reflètent la structure du modèle. Pour plus d’informations, consultez [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).  
+ **Modifiez le fichier de modèle dans un diagramme ou d’un formulaire.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Fournit des outils qui vous permettent de modifier un modèle comme un diagramme ou un Windows form. Il est ainsi plus facile de discuter du modèle avec les utilisateurs de l'application générée. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] crée également un ensemble de classes fortement typées qui reflètent la structure du modèle. Pour plus d’informations, consultez [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ### <a name="relative-file-paths-in-design-time-templates"></a>Chemins d’accès de fichiers relatifs dans les modèles au moment de la conception  
  Dans un [modèle de texte au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), si vous souhaitez faire référence à un fichier dans un emplacement relatif au modèle de texte, utilisez `this.Host.ResolvePath()`. Vous devez aussi définir `hostspecific="true"` dans la directive `template` :  

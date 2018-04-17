@@ -1,13 +1,10 @@
 ---
-title: "Propriétés MSBuild prises en charge par SharePoint | Documents Microsoft"
-ms.custom: 
+title: Propriétés MSBuild prises en charge par SharePoint | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, MSBuild properties
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 115896965eb47eb6dc4a9cdbb0b9df8dd8972c5f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1e60843119ee72f1164288f50b27116cdda31e9b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Propriétés MSBuild prises en charge par SharePoint
   N’importe quel [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] propriété définie dans le fichier Microsoft.VisualStudio.SharePoint.targets, le fichier projet ou le fichier utilisateur de projet peut être utilisée dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projets SharePoint. En plus courantes [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] propriétés fournies par le projet, SharePoint définit des propriétés supplémentaires qui sont spécifiques aux projets SharePoint.  

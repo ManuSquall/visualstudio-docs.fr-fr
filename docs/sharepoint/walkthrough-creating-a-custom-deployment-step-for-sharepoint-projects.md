@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Création d’une étape de déploiement personnalisée pour les projets SharePoint | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création d’une étape de déploiement personnalisée pour les projets SharePoint | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 036f8d135e535547e9e5f790135186bf1f5728bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Procédure pas à pas : création d'une étape de déploiement personnalisée pour des projets SharePoint
   Lorsque vous déployez un projet SharePoint, Visual Studio exécute une série d’étapes de déploiement dans un ordre spécifique. Visual Studio comprend plusieurs étapes de déploiement intégrées, mais vous pouvez également créer vos propres.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Choisissez le **projet VSIX** modèle, nommez le projet **UpgradeDeploymentStep**, puis choisissez le **OK** bouton.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le **UpgradeDeploymentStep** projet **l’Explorateur de solutions**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **UpgradeDeploymentStep** projet **l’Explorateur de solutions**.  
   
 #### <a name="to-create-the-extension-project"></a>Pour créer le projet d’extension  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Choisissez le **bibliothèque de classes** modèle de projet, nommez le projet **DeploymentStepExtension**, puis choisissez le **OK** bouton.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le **DeploymentStepExtension** projet à la solution et ouvre le fichier de code Class1 par défaut.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **DeploymentStepExtension** projet à la solution et ouvre le fichier de code Class1 par défaut.  
   
 5.  Supprime le fichier de code Class1 du projet.  
   
@@ -271,7 +270,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Choisissez le **Terminer** bouton.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crée le projet DéfinitionListeEmployés.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée le projet DéfinitionListeEmployés.  
   
 8.  Ouvrez le menu contextuel pour le projet DéfinitionListeEmployés, choisissez **ajouter**, puis choisissez **un nouvel élément**.  
   
@@ -289,7 +288,7 @@ ms.lasthandoff: 01/10/2018
   
     3.  **La valeur par défaut (vide)** est choisi dans la **créer une liste personnalisable basée sur :** liste.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crée l’élément de liste d’employés avec une colonne de titre et une seule instance vide et ouvre le Concepteur de la liste.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée l’élément de liste d’employés avec une colonne de titre et une seule instance vide et ouvre le Concepteur de la liste.  
   
 12. Dans le Concepteur de la liste, sur le **colonnes** , choisir le **tapez un nom de colonne nouveau ou existant** de ligne, puis ajoutez les colonnes suivantes dans le **nom complet de la colonne** liste :  
   
@@ -433,7 +432,7 @@ ms.lasthandoff: 01/10/2018
   
      Le Concepteur/éditeur de propriétés s’ouvre.  
   
-4.  Sur le **vues** onglet, cliquez sur le **par courrier électronique** colonne, puis choisissez le  **<**  pour déplacer cette colonne de clé le **decolonnessélectionnées**list à le **colonnes disponibles** liste.  
+4.  Sur le **vues** onglet, cliquez sur le **par courrier électronique** colonne, puis choisissez le **<** pour déplacer cette colonne de clé le **decolonnessélectionnées**list à le **colonnes disponibles** liste.  
   
      Cette action supprime ces champs à partir de la vue par défaut de la **employés** liste sur le site SharePoint.  
   

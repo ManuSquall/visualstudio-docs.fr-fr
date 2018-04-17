@@ -1,29 +1,25 @@
 ---
 title: Fonction de SccOpenProject | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccOpenProject
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10afe84716153b67c419f4ddbd1a7b838b68cbf9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 15d9cf6d5fa4533b5ee0ff65f8aeae86df3d571a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject (fonction)
 Cette fonction ouvre un projet de contrôle de code source existant ou crée un nouveau.  
@@ -70,7 +66,7 @@ SCCRTN SccOpenProject (
  [in] Fonction de rappel facultative pour afficher le texte de sortie à partir du plug-in de contrôle de code source.  
   
  dwFlags  
- [in] Si un nouveau projet doit être créé si le projet est inconnu à la source de signaux contrôlent plug-in. Valeur peut être une combinaison de `SCC_OP_CREATEIFNEW` et`SCC_OP_SILENTOPEN.`  
+ [in] Si un nouveau projet doit être créé si le projet est inconnu à la source de signaux contrôlent plug-in. Valeur peut être une combinaison de `SCC_OP_CREATEIFNEW` et `SCC_OP_SILENTOPEN.`  
   
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
@@ -94,9 +90,9 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 >  La première action de l’IDE peut-être être nécessaires pour exécuter peut être un appel à la `SccOpenProject` fonction ou le [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Pour cette raison, les deux d'entre eux ont un identiques `lpUser` paramètre.  
   
- `lpAuxProjPath`et`lpProjName` sont lues à partir du fichier solution, ou elles sont retournées à partir d’un appel à la `SccGetProjPath` (fonction). Ces paramètres contiennent les chaînes qui associe les plug-in du contrôle de code source avec le projet et sont uniquement explicites pour le plug-in. Si aucune de ces chaînes ne sont dans le fichier solution et que l’utilisateur n’a pas été invité à naviguer (qui retourne une chaîne via la `SccGetProjPath` fonction), l’IDE passe des chaînes vides pour les deux `lpAuxProjPath` et `lpProjName`et attend que ces valeurs à mettre à jour par le plug-in quand cette fonction retourne.  
+ `lpAuxProjPath` et`lpProjName` sont lues à partir du fichier solution, ou elles sont retournées à partir d’un appel à la `SccGetProjPath` (fonction). Ces paramètres contiennent les chaînes qui associe les plug-in du contrôle de code source avec le projet et sont uniquement explicites pour le plug-in. Si aucune de ces chaînes ne sont dans le fichier solution et que l’utilisateur n’a pas été invité à naviguer (qui retourne une chaîne via la `SccGetProjPath` fonction), l’IDE passe des chaînes vides pour les deux `lpAuxProjPath` et `lpProjName`et attend que ces valeurs à mettre à jour par le plug-in quand cette fonction retourne.  
   
- `lpTextOutProc`est un pointeur vers une fonction de rappel fournie par l’IDE pour le plug-in en vue d’afficher la sortie du résultat de contrôle de code source. Cette fonction de rappel est décrite en détail dans [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
+ `lpTextOutProc` est un pointeur vers une fonction de rappel fournie par l’IDE pour le plug-in en vue d’afficher la sortie du résultat de contrôle de code source. Cette fonction de rappel est décrite en détail dans [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
   
 > [!NOTE]
 >  Si le plug-in de contrôle de code source a l’intention de tirer parti de cette, il doit avoir le `SCC_CAP_TEXTOUT` indicateur dans le [SccInitialize](../extensibility/sccinitialize-function.md). Si cet indicateur n’a pas été défini, ou si l’IDE ne prend pas en charge cette fonctionnalité, `lpTextOutProc` sera `NULL`.  

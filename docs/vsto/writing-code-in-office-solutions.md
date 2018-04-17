@@ -2,12 +2,9 @@
 title: L’écriture de Code dans les Solutions Office | Documents Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
 dev_langs:
@@ -36,14 +33,14 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9670bb35023b2a2cf4147d3d30008243203c9c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c6119db86fdd67079b63434a6bb494cb04cd31d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-in-office-solutions"></a>Écriture de code dans les solutions Office
   Certains aspects de l'écriture de code dans les projets Office diffèrent des autres types de projets dans Visual Studio. La plupart de ces différences sont liées à la façon dont les modèles objet Office sont exposés au code managé. Les autres différences portent sur la conception des projets Office.  
@@ -85,10 +82,10 @@ ms.lasthandoff: 01/10/2018
 ### <a name="accessing-the-generated-classes-at-run-time"></a>Accès aux classes générées au moment de l'exécution  
  Quand une solution Office est chargée, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] instancie chacune des classes générées dans votre projet. Vous pouvez accéder à ces objets directement du code de votre projet à l'aide de la classe `Globals` . Par exemple, utilisez la classe `Globals` pour appeler le code de la classe `ThisAddIn` à partir d’un gestionnaire d’événements d’un bouton de ruban dans un complément VSTO.  
   
- Pour plus d’informations, consultez [accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Pour plus d'informations sur, consultez [Accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ### <a name="namespace-considerations-in-office-solutions"></a>Considérations relatives à l'espace de noms dans les solutions Office  
- Vous ne pouvez pas modifier l' *espace de noms par défaut* (ou l' *espace de noms racine* dans Visual Basic) dans un projet Office existant. L'espace de noms par défaut correspondra toujours au nom du projet que vous avez spécifié lors de sa création. Si vous renommez votre projet, l'espace de noms par défaut ne change pas. Pour plus d’informations sur l’espace de noms par défaut dans les projets, consultez [Page Application, Concepteur de projets & #40 ; C & #35 ; & #41 ; ](/visualstudio/ide/reference/application-page-project-designer-csharp) et [Page Application, Concepteur de projets & #40 ; Visual Basic & #41 ; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ Vous ne pouvez pas modifier l' *espace de noms par défaut* (ou l' *espace de noms racine* dans Visual Basic) dans un projet Office existant. L'espace de noms par défaut correspondra toujours au nom du projet que vous avez spécifié lors de sa création. Si vous renommez votre projet, l'espace de noms par défaut ne change pas. Pour plus d’informations sur l’espace de noms par défaut dans les projets, consultez [Application Page, Project Designer &#40;C&#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) et [Application Page, Project Designer &#40;Visual Basic&#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="changing-the-namespace-of-host-item-classes-in-c-projects"></a>Modification de l'espace de noms des classes d'élément hôte dans les projets C#  
  Les classes d'élément hôte (par exemple, `ThisAddIn`, `ThisWorkbook`et `ThisDocument` ) ont leurs propres espaces de noms dans les projets Office Visual C#. Par défaut, l'espace de noms des éléments hôtes dans votre projet correspond au nom de projet que vous avez spécifié lors de la création de ce dernier.  
@@ -110,7 +107,7 @@ ms.lasthandoff: 01/10/2018
 |Fonctionnalité|Description|Prise en charge dans Visual Basic|Prise en charge dans Visual C#|  
 |-------------|-----------------|--------------------------|------------------------|  
 |Paramètres optionnels|De nombreuses méthodes Microsoft Office possèdent des paramètres qui ne sont pas obligatoires quand vous les appelez. Si aucune valeur n'est passée comme paramètre, une valeur par défaut est utilisée.|Visual Basic prend en charge les paramètres optionnels.|Visual C# prend en charge les paramètres optionnels dans la plupart des cas. Pour plus d’informations, consultez [paramètres optionnels dans les Solutions Office](../vsto/optional-parameters-in-office-solutions.md).|  
-|Passage de paramètres par référence|Dans la plupart des assemblys PIA (Primary Interop Assembly) de Microsoft Office, les paramètres optionnels peuvent être passés par valeur. Toutefois, dans certains assemblys PIA, les paramètres optionnels qui acceptent les types référence doivent être passés par référence.<br /><br /> Pour plus d’informations sur les paramètres de type valeur et référence, consultez [en passant les Arguments par valeur et par référence & #40 ; Visual Basic & #41 ; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (pour Visual Basic) et [en passant les paramètres & #40 ; C & #35 ; Guide de programmation & #41 ; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Le passage des paramètres par référence est possible sans codage supplémentaire. Le compilateur Visual Basic passe automatiquement les paramètres par référence nécessaires.|Le plus souvent, le compilateur Visual C# passe automatiquement les paramètres par référence nécessaires. Pour plus d’informations, consultez [paramètres optionnels dans les Solutions Office](../vsto/optional-parameters-in-office-solutions.md).|  
+|Passage de paramètres par référence|Dans la plupart des assemblys PIA (Primary Interop Assembly) de Microsoft Office, les paramètres optionnels peuvent être passés par valeur. Toutefois, dans certains assemblys PIA, les paramètres optionnels qui acceptent les types référence doivent être passés par référence.<br /><br /> Pour plus d’informations sur les paramètres de type valeur et référence, consultez [en passant les Arguments par valeur et par référence &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (pour Visual Basic) et [passage de paramètres &#40;C&#35; Guide de programmation&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Le passage des paramètres par référence est possible sans codage supplémentaire. Le compilateur Visual Basic passe automatiquement les paramètres par référence nécessaires.|Le plus souvent, le compilateur Visual C# passe automatiquement les paramètres par référence nécessaires. Pour plus d’informations, consultez [paramètres optionnels dans les Solutions Office](../vsto/optional-parameters-in-office-solutions.md).|  
 |Propriétés paramétrables|Certaines propriétés acceptent des paramètres et agissent comme des fonctions en lecture seule.|Visual Basic prend en charge les propriétés qui acceptent des paramètres.|Visual C# prend en charge les propriétés qui acceptent des paramètres.|  
 |Liaison tardive|La liaison tardive implique de déterminer les propriétés d'objets au moment de l'exécution, au lieu d'effectuer un cast de variables en type d'objet au moment du design.|Visual Basic effectue la liaison tardive quand **Option Strict** est désactivé. Si **Option Strict** est activé, vous devez convertir explicitement les objets et utiliser les types figurant dans l'espace de noms <xref:System.Reflection> pour accéder aux membres à liaison tardive. Pour plus d'informations, consultez [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|Visual C# effectue la liaison tardive dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Pour plus d'informations, consultez [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|  
   
@@ -119,7 +116,7 @@ ms.lasthandoff: 01/10/2018
   
 |Fonctionnalité|Description|Prise en charge dans Visual Basic et Visual C#|  
 |-------------|-----------------|-----------------------------------------|  
-|Index de tableau|La limite de tableau inférieure de collections dans les applications Microsoft Office commencent par 1. Visual Basic et Visual C# utilisent des tableaux basés sur 0. Pour plus d’informations, consultez [tableaux & #40 ; C & #35 ; Guide de programmation & #41 ; ](/dotnet/csharp/programming-guide/arrays/index) et [tableaux en Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Pour accéder au premier élément d'une collection dans le modèle objet d'une application Microsoft Office, utilisez l'index 1 au lieu de 0.|  
+|Index de tableau|La limite de tableau inférieure de collections dans les applications Microsoft Office commencent par 1. Visual Basic et Visual C# utilisent des tableaux basés sur 0. Pour plus d’informations, consultez [tableaux &#40;C&#35; Guide de programmation&#41; ](/dotnet/csharp/programming-guide/arrays/index) et [tableaux en Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Pour accéder au premier élément d'une collection dans le modèle objet d'une application Microsoft Office, utilisez l'index 1 au lieu de 0.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Paramètres optionnels dans les Solutions Office](../vsto/optional-parameters-in-office-solutions.md)   

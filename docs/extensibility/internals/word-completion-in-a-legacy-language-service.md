@@ -1,27 +1,25 @@
 ---
-title: "Fin de mot dans un Service de langage hérité | Documents Microsoft"
-ms.custom: 
+title: Fin de mot dans un Service de langage hérité | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], IntelliSense Complete Word
 - IntelliSense, Complete Word
 - Complete Word
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a4ab4bd29c753fc03787fbbadbe106d2d8862b10
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 72ddf4e7c755fdecf562f4c190abfb145e6f9819
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Mot, compléter dans un Service de langage hérité
 Mot, compléter renseigne les caractères manquants sur un mot partiel tapé. S’il n'existe qu’une seule exécution possible, le mot est terminé lorsque le caractère de fin est entré. Si le mot partiel correspond à plusieurs possibilités, une liste de réalisations possibles s’affiche. Un caractère de terminaison peut être n’importe quel caractère qui n’est pas utilisé pour les identificateurs.  

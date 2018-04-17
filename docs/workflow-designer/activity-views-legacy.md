@@ -1,5 +1,5 @@
 ---
-title: "Vues d’activité (héritées) | Documents Microsoft"
+title: Vues d’activité (héritées) | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 83dc68cd-2cb2-45c2-9a6e-10d82053171a
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10661aa3f12b83a383defaa204b5bba0b93e236a
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2cc053be2f9d11a9a1f3cd48c6c9d24e366410c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="activity-views-legacy"></a>Vues d'activité (héritées)
 Un grand nombre des activités fournies par [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], dans les workflows sont composés, a plusieurs vues de conception disponibles dans le Concepteur de flux de travail Windows hérité. Lorsque vous faites glisser un concepteur d’activités à partir de la **boîte à outils** sur l’aire de conception et par la suite chaque fois que vous sélectionnez l’activité, vous pouvez basculer entre les différents modes design à l’aide du **Workflow**menu ou en cliquant sur l’activité sélectionnée. De la même façon, lorsque vous déplacez le pointeur sur le nom d’une activité sélectionnée, un jeu déroulant d’onglets apparaît, que vous pouvez utiliser pour alterner entre les différentes vues.

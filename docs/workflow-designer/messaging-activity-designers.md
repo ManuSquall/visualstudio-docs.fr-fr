@@ -1,18 +1,18 @@
 ---
-title: "Concepteurs d’activités de messagerie | Documents Microsoft"
+title: Concepteurs d’activités de messagerie | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e805fed01aa3dcb90d11f7f48c0fc1056d573add
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 38c34dea2dd0265d156bb4b379323559be4825b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="messaging-activity-designers"></a>Concepteurs d'activités de messagerie
 Les concepteurs d'activités de messagerie permettent de créer et configurer des activités de messagerie qui envoient et reçoivent des messages [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] à partir d'une application [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]. Le [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] introduit cinq activités de messagerie et le Concepteur de flux de travail Windows fournit deux nouveaux concepteurs de modèles qui vous permettent de gérer la messagerie dans un flux de travail. Les rubriques contenues dans cette section et répertoriées dans le tableau suivant fournissent des conseils sur la façon d'utiliser les concepteurs d'activités et de modèles [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].

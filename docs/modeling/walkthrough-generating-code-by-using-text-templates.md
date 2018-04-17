@@ -1,24 +1,22 @@
 ---
-title: "Procédure pas à pas : Génération de Code à l’aide de modèles de texte | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Génération de Code à l’aide de modèles de texte | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 46cbf0c6a28b10434ed364dffd77c4c01620d6ea
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7099edb08216cd91858a20e65c7bb2fede786977
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Procédure pas à pas : génération de code à l'aide de modèles de texte
 La génération de code vous permet de générer du code de programme qui est fortement typé mais peut être facilement modifié quand le modèle source change. Comparez ceci avec l’autre technique consistant à écrire un programme complètement générique qui accepte un fichier de configuration, qui est plus flexible mais génère du code qui n’est pas aussi facile à lire et à modifier et n’offre pas d’aussi bonnes performances. Cette procédure pas à pas montre les avantages offerts par la génération de code.  
@@ -107,7 +105,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
  .  
   
 ### <a name="add-a-test-code-file"></a>Ajouter un fichier de code de test  
- Ajoutez un fichier C# à votre projet et placez-y un exemple du code que vous souhaitez pouvoir écrire. Exemple :  
+ Ajoutez un fichier C# à votre projet et placez-y un exemple du code que vous souhaitez pouvoir écrire. Par exemple :  
   
 ```  
 using System;  

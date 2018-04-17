@@ -1,26 +1,24 @@
 ---
-title: "Modèle de projet VSIX | Documents Microsoft"
-ms.custom: 
+title: Modèle de projet VSIX | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - deploy packages
 - publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: de8de116a9853391249a7a37a35bd54d0a6946d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bff05b0b1b05a6b00b7924f0fb5bfc957adba41c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsix-project-template"></a>Modèle de projet VSIX
 Vous pouvez utiliser le modèle de projet VSIX pour encapsuler une ou plusieurs extensions de Visual Studio dans un projet VSIX et puis publier le package sur le [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) site Web.  
@@ -82,7 +80,7 @@ Vous pouvez utiliser le modèle de projet VSIX pour encapsuler une ou plusieurs 
   
 8.  Générez la solution.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]génère un fichier .vsix contenant un fichier manifeste VSIX, un fichier [Content_Types] .xml et tous les actifs de l’extension que vous avez ajouté au projet.  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère un fichier .vsix contenant un fichier manifeste VSIX, un fichier [Content_Types] .xml et tous les actifs de l’extension que vous avez ajouté au projet.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma 2.0 Extension VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   

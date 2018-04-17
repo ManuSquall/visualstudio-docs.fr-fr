@@ -1,23 +1,21 @@
 ---
-title: "Prise en charge des éditions de Visual Studio pour visualisation &amp; Modeling SDK | Documents Microsoft"
-ms.custom: 
+title: Prise en charge des éditions de Visual Studio pour visualisation &amp; Modeling SDK | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 359bb9864532f2f3fbeb4fecca28c54ea0a96e17
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f62f4710a6991e9a551bfd6bf4569d87f1ba5fab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Prise en charge des éditions de Visual Studio pour visualisation &amp; Modeling SDK
 Les éléments suivants sont des listes des éditions de Visual Studio qui sont prises en charge avec [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] dans les environnements de création et le déploiement. Pour plus d’informations sur ces éditions, consultez Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [centre de développement](http://go.microsoft.com/fwlink/?LinkId=75628).  

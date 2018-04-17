@@ -1,13 +1,10 @@
 ---
-title: "Dépannage des erreurs dans les Solutions Office | Documents Microsoft"
-ms.custom: 
+title: Dépannage des erreurs dans les Solutions Office | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a077949de07d89adad76c6fc68754d2018fa461
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1166f183e49bfc01592a645916ce12c1148ec8de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Dépannage d'erreurs dans les solutions Office
   Vous pouvez rencontrer des problèmes quand vous effectuez les tâches suivantes en développant des solutions Office dans Visual Studio :  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Débogage de projets](#debugging)  
   
-##  <a name="creating"></a>Création, la mise à niveau et ouverture de projets  
+##  <a name="creating"></a> Création, la mise à niveau et ouverture de projets  
  Vous pouvez rencontrer les erreurs suivantes quand vous créez ou ouvrez des projets Office.  
   
 ### <a name="the-project-cannot-be-created"></a>Impossible de créer le projet.  
@@ -89,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  Une fois la mise à niveau du projet terminée, vous pourrez désinstaller Visual Studio 2005 Tools pour Office Second Edition Runtime de l'ordinateur de développement s'il n'est pas utilisé par d'autres solutions Office.  
   
-##  <a name="designers"></a>Utilisation des concepteurs  
+##  <a name="designers"></a> Utilisation des concepteurs  
  Vous pouvez rencontrer les erreurs suivantes en utilisant le document, le classeur ou le concepteur de feuille de calcul dans des projets de niveau document.  
   
 ### <a name="designer-failed-to-load-correctly"></a>Le chargement du concepteur n'a pas pu s'effectuer correctement  
@@ -175,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  Même si vous avez importé l’espace de noms Word ou Excel et que vous avez accès à toutes les classes qu’il contient, vous devez qualifier complètement tous les types avec Word ou Excel pour supprimer l’ambiguïté de l’espace de noms.  
   
-##  <a name="building"></a>Génération de projets  
+##  <a name="building"></a> Génération de projets  
  Vous pouvez rencontrer les erreurs suivantes quand vous générez des projets Office.  
   
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Impossible de créer un projet au niveau du document basé sur un document doté d'autorisations restreintes  
@@ -188,7 +185,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Des erreurs du compilateur se produisent après la suppression d'un contrôle NamedRange  
  Si vous supprimez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> d'une feuille de calcul qui n'est pas la feuille de calcul active dans le concepteur, il est possible que le code généré automatiquement ne soit pas supprimé de votre projet et que des erreurs du compilateur se produisent. Pour vous assurer que le code est supprimé, vous devez toujours sélectionner la feuille de calcul qui contient le contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> pour qu'elle devienne la feuille de calcul active avant la suppression du contrôle. Si le code généré automatiquement n'est pas supprimé quand vous supprimez le contrôle, vous pouvez entraîner la suppression du code par le concepteur en activant la feuille de calcul et en apportant une modification afin que la feuille de calcul soit marquée comme modifiée. Quand vous recréez le projet, le code est supprimé.  
   
-##  <a name="debugging"></a>Débogage de projets  
+##  <a name="debugging"></a> Débogage de projets  
  Vous pouvez rencontrer les erreurs suivantes quand vous déboguez des projets Office.  
   
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>L'invite de désinstallation s'affiche quand vous publiez et installez une solution sur l'ordinateur de développement  

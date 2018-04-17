@@ -1,25 +1,24 @@
 ---
-title: "Procédure pas à pas : Création d’un élément de projet d’Action personnalisé avec un modèle d’élément, partie 2 | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création d’un élément de projet d’Action personnalisé avec un modèle d’élément, partie 2 | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 55794f7976e90e34ba24654400f755de9244e13e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Procédure pas à pas : création d'un élément de projet d'action personnalisé avec un modèle d'élément, deuxième partie
   Une fois que vous définissez un type personnalisé d’élément de projet SharePoint et l’associez à un modèle d’élément dans Visual Studio, vous souhaiterez également fournir un Assistant pour le modèle. Vous pouvez utiliser l’Assistant pour collecter des informations à partir des utilisateurs lorsqu’ils utilisent votre modèle pour ajouter une nouvelle instance de l’élément de projet à un projet. Les informations que vous recueillez peuvent être utilisées pour initialiser l’élément de projet.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Choisissez le **bibliothèque de contrôles utilisateur WPF** modèle de projet, nommez le projet **ItemTemplateWizard**, puis choisissez le **OK** bouton.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le **ItemTemplateWizard** projet à la solution.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **ItemTemplateWizard** projet à la solution.  
   
 6.  Supprime l’élément UserControl1 du projet.  
   
@@ -209,7 +208,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Pour plus d’informations sur la `WizardExtension` élément, consultez [WizardExtension, élément &#40; Modèles Visual Studio &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Pour plus d’informations sur la `WizardExtension` élément, consultez [WizardExtension, élément &#40;modèles Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Enregistrez et fermez le fichier.  
   
@@ -327,7 +326,7 @@ ms.lasthandoff: 01/10/2018
   
      Le **paramètres de liste** page s’affiche.  
   
-4.  Sous le **Communications** titre en haut de la page, choisissez la **centre de développement SharePoint** lier, vérifiez que le navigateur s’ouvre le site Web http://msdn.microsoft.com/sharepoint/ default.aspx, puis fermez le navigateur.  
+4.  Sous le **Communications** titre en haut de la page, choisissez la **centre de développement SharePoint** lier, vérifiez que le navigateur s’ouvre le site Web http://msdn.microsoft.com/sharepoint/default.aspx, puis fermez le navigateur.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Nettoyage de l’ordinateur de développement  
  Une fois que vous avez terminé le test de l’élément de projet, supprimez le modèle d’élément de projet à partir de l’instance expérimentale de Visual Studio.  

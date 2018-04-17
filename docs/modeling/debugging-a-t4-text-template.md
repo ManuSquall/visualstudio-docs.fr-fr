@@ -1,24 +1,22 @@
 ---
-title: "Débogage d’un modèle de texte T4 | Documents Microsoft"
-ms.custom: 
+title: Débogage d’un modèle de texte T4 | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 86d8bb0fafefab8a0273012ed8e45b44c31eac47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Débogage d'un modèle de texte T4
 Vous pouvez définir des points d’arrêt dans les modèles de texte. Pour déboguer un modèle de texte au moment du design, enregistrez le fichier de modèle de texte, puis choisissez **déboguer le modèle T4** dans le menu contextuel du fichier dans l’Explorateur de solutions. Pour déboguer un modèle de texte au moment de l’exécution, il vous suffit de déboguer l’application à laquelle il appartient.  
@@ -72,7 +70,7 @@ Vous pouvez définir des points d’arrêt dans les modèles de texte. Pour déb
 |La directive include pour le fichier '{0}' provoque une boucle infinie.|Affiché si les directives include circulaires sont spécifiées (par exemple, le fichier A inclut le fichier B, qui inclut le fichier A).|Ne spécifiez pas circulaire directives #include.|  
 |Transformation en cours d’exécution :|Ajoute cette chaîne à toutes les erreurs ou avertissements générés pendant l’exécution de la transformation.|Non applicable.|  
 |Une balise de début ou de fin inattendue a été trouvée dans un bloc. Assurez-vous que vous n’avez pas incorrectement tapé une balise de début ou de fin, et que vous n’avez blocs imbriqués dans le modèle.|Affiche lorsque vous avez inattendus \<# ou #>. Autrement dit, si vous avez un \<# après une autre balise ouverte qui n’a pas été fermée, ou que vous avez un #> lorsqu’il n’existe aucune balise ouverte non fermée avant. Le message fournit le numéro de ligne de la balise ne correspondent pas.|Supprimez la balise de début ou de fin ne correspondent pas, ou utiliser un caractère d’échappement.|  
-|Une directive a été spécifiée dans un format incorrect. La directive sera ignorée. Spécifiez la directive au format`<#@ name [parametername="parametervalue"]*  #>`|Affiché par l’analyseur si une directive n’est pas spécifiée dans le format correct. Le message fournit le numéro de ligne de la directive incorrecte.|Assurez-vous que toutes les directives sont sous la forme `<#@ name [parametername="parametervalue"]*  #>`. Pour plus d’informations, consultez [Directives de modèle de texte T4](../modeling/t4-text-template-directives.md).|  
+|Une directive a été spécifiée dans un format incorrect. La directive sera ignorée. Spécifiez la directive au format `<#@ name [parametername="parametervalue"]*  #>`|Affiché par l’analyseur si une directive n’est pas spécifiée dans le format correct. Le message fournit le numéro de ligne de la directive incorrecte.|Assurez-vous que toutes les directives sont sous la forme `<#@ name [parametername="parametervalue"]*  #>`. Pour plus d’informations, consultez [Directives de modèle de texte T4](../modeling/t4-text-template-directives.md).|  
 |Impossible de charger l’Assembly '{0}' pour le processeur de directive inscrit '{1}'<br /><br /> {2}|Se produit lorsqu’un processeur de directive n’a pas pu être chargé par l’hôte. Le message identifie l’assembly fourni pour le processeur de directive et le nom du processeur de directive.|Assurez-vous que le processeur de directive est inscrit correctement et que l’assembly existe.|  
 |Impossible de trouver le type '{0}' dans l’Assembly « {{1} » pour le processeur de directive inscrit « {{2} »<br /><br /> {3}|Se produit lorsqu’un type de processeur de directive n’a pas pu être chargé à partir de son assembly. Le message fournit le nom du type, assembly et du processeur de directive.|Le vshost recherche les informations de processeur de directive (nom, assembly et type) dans le Registre. Assurez-vous que le processeur de directive est inscrit correctement, et que le type existe dans l’assembly.|  
 |Un problème de chargement de l’assembly '{0}'|Se produit lorsqu’il existe un problème de chargement d’un assembly. Le message fournit le nom de l’assembly.|Vous pouvez spécifier des assemblys à charger dans \<@# assembly #> directives et par les processeurs de directive. Le message d’erreur qui suit cette chaîne doit fournir davantage de données sur la raison de l’échec du chargement de l’assembly.|  

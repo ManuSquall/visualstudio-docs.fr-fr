@@ -1,25 +1,23 @@
 ---
-title: "Personnalisation de stockage de fichiers et la sérialisation XML | Documents Microsoft"
-ms.custom: 
+title: Personnalisation de stockage de fichiers et la sérialisation XML | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a15a331d465c2450f0f1e6230eac3415106e860b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2ca1b9f8e6261ae04217b0d74e13073a3683915c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personnalisation du stockage de fichiers et de la sérialisation XML
 Lorsque l’utilisateur enregistre une instance, ou *modèle*, d’un langage spécifique à un domaine (DSL) dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], un fichier XML est créé ou mis à jour. Le fichier peut être rechargé pour recréer le modèle dans le magasin.  
@@ -101,7 +99,7 @@ Lorsque l’utilisateur enregistre une instance, ou *modèle*, d’un langage sp
 ## <a name="understanding-monikers"></a>Présentation des Monikers  
  Monikers sont utilisés pour représenter des références croisées entre les différentes parties des fichiers de modèle et de diagramme. Ils sont également utilisées dans le `.diagram` fichier pour faire référence aux nœuds dans le fichier de modèle. Il existe deux formes de moniker :  
   
--   *Les monikers ID* devis le GUID de l’élément cible. Exemple :  
+-   *Les monikers ID* devis le GUID de l’élément cible. Par exemple :  
   
     ```  
     <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
@@ -275,7 +273,7 @@ Lorsque l’utilisateur enregistre une instance, ou *modèle*, d’un langage sp
 |Personnalisé|Affectez la valeur **True** si vous souhaitez écrire votre propre code de sérialisation et la désérialisation pour cette classe de domaine.<br /><br /> Générez la solution et examinez les erreurs pour découvrir des instructions détaillées.|  
 |Classe de domaine|Classe de domaine auquel le nœud de données de cette classe s’applique. Lecture seule.|  
 |Nom de l'élément|Nom du nœud XML pour les éléments de cette classe. La valeur par défaut est une version en minuscule du nom de classe de domaine.|  
-|Nom de l’attribut moniker|Nom de l’attribut utilisé dans les éléments du moniker pour contenir la référence. S’il est vierge, le nom de la propriété de clé ou l’id est utilisé.<br /><br /> Dans cet exemple, il est « name » :`<personMoniker name="/Mike Nash"/>`|  
+|Nom de l’attribut moniker|Nom de l’attribut utilisé dans les éléments du moniker pour contenir la référence. S’il est vierge, le nom de la propriété de clé ou l’id est utilisé.<br /><br /> Dans cet exemple, il est « name » :  `<personMoniker name="/Mike Nash"/>`|  
 |Nom de l’élément moniker|Nom de l’élément xml utilisé pour les monikers qui font référence aux éléments de cette classe.<br /><br /> La valeur par défaut est une version en minuscule du nom de classe, suivis du suffixe « Moniker ». Par exemple, `personMoniker`.|  
 |Nom du Type de moniker|Nom du type xsd généré pour les monikers à des éléments de cette classe. Le schéma XSD est **Dsl\Generated Code\\\*Schema.xsd**|  
 |Sérialiser du code|Si la valeur est True, le GUID de l’élément est inclus dans le fichier. Cela doit être true s’il n’y a aucune propriété marquée **est la clé de Moniker** et la DSL définit des relations de référence à cette classe.|  

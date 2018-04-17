@@ -1,12 +1,10 @@
 ---
-title: "L’inscription des modèles de projet et élément | Documents Microsoft"
-ms.custom: 
+title: L’inscription des modèles de projet et élément | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -14,19 +12,19 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c064a6632741eba69a553be87fb8f829063b266b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 85c22d0191d015979dff5a4845c4dda0af96ee60
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-project-and-item-templates"></a>L’inscription des modèles de projet et élément
-Types de projets doivent inscrire les répertoires où se trouvent leurs modèles de projet et d’élément de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]utilise les informations d’inscription associées à vos types de projet pour déterminer les éléments à afficher dans le **ajouter un nouveau projet** et **ajouter un nouvel élément** boîtes de dialogue.  
+Types de projets doivent inscrire les répertoires où se trouvent leurs modèles de projet et d’élément de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise les informations d’inscription associées à vos types de projet pour déterminer les éléments à afficher dans le **ajouter un nouveau projet** et **ajouter un nouvel élément** boîtes de dialogue.  
   
  Pour plus d’informations sur les modèles, consultez [Ajout d’un projet et modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
@@ -95,7 +93,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 |NotAddExistingItemFilter|REG_DWORD|Indique que le filtre n’est pas utilisé dans le **ajouter un élément existant** boîte de dialogue.|  
 |SortPriority|REG_DWORD|Définissez SortPriority pour indiquer l’ordre dans lequel les filtres sont affichés. De plus grandes valeurs SortPriority apparaissent plus tôt dans la liste de filtres.|  
   
-## <a name="directory-structure"></a>Structure de répertoires  
+## <a name="directory-structure"></a>Structure de l'arborescence  
  VSPackages peut placer les dossiers et fichiers de modèle de n’importe où sur un disque local ou distant, tant que l’emplacement inscrit via l’environnement de développement intégré (IDE). Toutefois, pour faciliter l’organisation, nous recommandons la structure des répertoires sous le chemin d’installation de votre produit.  
   
  \Templates  

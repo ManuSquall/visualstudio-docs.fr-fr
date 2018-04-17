@@ -1,29 +1,25 @@
 ---
 title: Fonction de SccGet | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGet
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73f5c55b39d855eb084206ef27e2254d50377b86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb793eb5c35c4ca9ee22a58496ebe175b83c68e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccget-function"></a>SccGet (fonction)
 Cette fonction récupère une copie d’un ou plusieurs fichiers pour l’affichage et la compilation, mais ne pas pour la modification. Dans la plupart des systèmes, les fichiers sont marqués comme étant en lecture seule.  
@@ -81,7 +77,7 @@ SCCRTN SccGet(
  Le `SCC_GET_ALL` indicateur peut être combiné avec le `SCC_GET_RECURSIVE` indicateur pour récupérer tous les fichiers dans les répertoires donnés et ainsi de tous les sous-répertoires.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE`ne doit jamais être passé sans `SCC_GET_ALL`. Notez également que si les répertoires C:\A et C:\A\B sont tous deux passé sur une récursive, C:\A\B et tous ses sous-répertoires seront effectivement récupérés à deux reprises. Il incombe de l’IDE, et pas la source de contrôle du plug-in : pour vous assurer que les doublons de telles restent hors du tableau.  
+>  `SCC_GET_RECURSIVE` ne doit jamais être passé sans `SCC_GET_ALL`. Notez également que si les répertoires C:\A et C:\A\B sont tous deux passé sur une récursive, C:\A\B et tous ses sous-répertoires seront effectivement récupérés à deux reprises. Il incombe de l’IDE, et pas la source de contrôle du plug-in : pour vous assurer que les doublons de telles restent hors du tableau.  
   
  Enfin, même si un contrôle de source du plug-in spécifié le `SCC_CAP_GET_NOUI` indicateur lors de l’initialisation, indiquant qu’il n’a pas une interface utilisateur pour une commande Get, cette fonction peut encore être appelée par l’IDE pour récupérer des fichiers. L’indicateur signifie simplement que l’IDE n’affiche pas un élément de menu Get et que le plug-in n’est pas prévu fournir l’interface utilisateur.  
   

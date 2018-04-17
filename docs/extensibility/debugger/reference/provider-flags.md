@@ -1,29 +1,25 @@
 ---
 title: PROVIDER_FLAGS | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - PROVIDER_FLAGS
 helpviewer_keywords:
 - PROVIDER_FLAGS enumeration
 ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6f2a1b57c627425ebf63c6068f358cb8be0d3c1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 340531f9c943052c1abd51203f3937ccd111e314
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 Spécifie les propriétés souhaitées doivent être obtenues à partir d’un fournisseur de programme.  
@@ -66,10 +62,10 @@ public enum enum_PROVIDER_FLAGS {
  Le processus est en cours de débogage par cette instance de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
   
  PFLAG_ATTACH_TODEBUGGEE  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]n’est attaché au programme en cours de débogage, mais le n’a pas lancé.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] n’est attaché au programme en cours de débogage, mais le n’a pas lancé.  
   
  PFLAG_REASON_WATCH  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]surveille les événements.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] surveille les événements.  
   
  PFLAG_GET_PROGRAM_NODES  
  L’appelant veut le `ProgramNodes` champ le [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) structure.  
@@ -88,7 +84,7 @@ public enum enum_PROVIDER_FLAGS {
   
  Ces valeurs peuvent être combinées avec une opération de bits `OR`.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

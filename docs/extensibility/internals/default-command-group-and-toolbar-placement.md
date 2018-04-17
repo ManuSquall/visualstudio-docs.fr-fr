@@ -1,12 +1,10 @@
 ---
-title: "Par défaut de la commande, le groupe et la sélection élective de la barre d’outils | Documents Microsoft"
-ms.custom: 
+title: Par défaut de la commande, le groupe et la sélection élective de la barre d’outils | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], default groups
 - toolbars [Visual Studio], default
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - commands [Visual Studio], default IDE
 - commands [Visual Studio], default product
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
-caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 84e850d44162a964ce6ef8b64be92ce4eeacb86e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0753a29e323f18ad40bcc62a70cf8e9b1123b728
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Commande par défaut, le groupe et la sélection élective de la barre d’outils
 Pour l’uniformité de produit et de stabilité, l’interface utilisateur affiche certains groupes de commandes par défaut, et [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit les définitions pour les commandes et les groupes de commandes. VSPackages peuvent également utiliser les commandes standards et les groupes de commandes.  

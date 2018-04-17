@@ -1,13 +1,10 @@
 ---
 title: Architecture des personnalisations au niveau du Document | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,14 +19,14 @@ helpviewer_keywords:
 - architecture [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09a8700086ec8a718e14764f807e57fcb1f882f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 659950fee0e292a0e0c37a82bb8a18fe2783824d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architecture des personnalisations au niveau du document
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] comprend des projets pour créer des personnalisations au niveau du document pour Microsoft Office Word et Microsoft Office Excel. Cette rubrique décrit les aspects suivants des personnalisations au niveau du document :  
@@ -42,14 +39,14 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Pour obtenir des informations générales sur la création de personnalisations au niveau du document, consultez [présentation du développement de Solutions Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md), [Prise en main de programmation des personnalisations au niveau du Document pour Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), et [prise en main de programmation des personnalisations au niveau du Document pour Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
+ Pour obtenir des informations générales sur la création de personnalisations au niveau du document, consultez [présentation du développement de Solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [mise en route démarré programmation de personnalisations de niveau Document pour Word ](../vsto/getting-started-programming-document-level-customizations-for-word.md), et [prise en main de programmation des personnalisations au niveau du Document pour Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
   
 ##  <a name="UnderstandingCustomizations"></a> Understanding Customizations  
  Quand vous utilisez les Outils de développement Office dans Visual Studio pour générer une personnalisation au niveau du document, vous créez un assembly de code managé associé à un document spécifique. On dit d’un document ou classeur lié à un assembly qu’il a des extensions de code managé. Pour plus d'informations, consultez [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md).  
   
  Quand un utilisateur ouvre le document, l’assembly est chargé par l’application Microsoft Office. Une fois l’assembly chargé, la personnalisation peut répondre à des événements pendant que le document est ouvert. La personnalisation peut également exécuter un appel dans le modèle objet pour automatiser et étendre l’application pendant que le document est ouvert, et elle peut utiliser toutes les classes du [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  
   
- L'assembly communique avec les composants COM de l'application à travers l'assembly PIA (Primary Interop Assembly) de celle-ci. Pour plus d’informations, consultez [assemblys PIA Office](../vsto/office-primary-interop-assemblies.md) et [présentation du développement de Solutions Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ L'assembly communique avec les composants COM de l'application à travers l'assembly PIA (Primary Interop Assembly) de celle-ci. Pour plus d’informations, consultez [assemblys PIA Office](../vsto/office-primary-interop-assemblies.md) et [présentation du développement de Solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Si un utilisateur ouvre plusieurs personnalisations au niveau du document en même temps, chaque assembly est chargé dans un domaine d’application différent. Cela signifie qu’une solution dont le comportement est incorrect ne peut pas entraîner l’échec d’autres solutions. Les personnalisations au niveau du document sont conçues pour fonctionner avec un seul document dans un seul domaine d’application. Elles ne sont pas conçues pour la communication entre documents. Pour plus d’informations sur les domaines d’application, consultez [domaines d’Application](/dotnet/framework/app-domains/application-domains).  
   
@@ -149,7 +146,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Voir aussi  
  [Architecture des Solutions Office dans Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [Architecture des Compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
+ [Vue d’ensemble de Visual Studio Tools pour Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Sécurisation des Solutions Office](../vsto/securing-office-solutions.md)   
  [Conception et création de Solutions Office](../vsto/designing-and-creating-office-solutions.md)   
  [Vue d’ensemble des propriétés de Document personnalisées](../vsto/custom-document-properties-overview.md)   

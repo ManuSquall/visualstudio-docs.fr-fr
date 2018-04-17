@@ -1,27 +1,25 @@
 ---
-title: "Informations sur les paramètres dans un Service2 de langage hérité | Documents Microsoft"
-ms.custom: 
+title: Informations sur les paramètres dans un Service2 de langage hérité | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Parameter Info tool tip
 - language services [managed package framework], IntelliSense Parameter Info
 - Parameter Info (IntelliSense), supporting in language services [managed package framework]
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 69c65fa2691f71b3bb7f115b771a0de83d543f03
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6aaf8ba9be9e16eeb979b0d64d3e80e8d70b564f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informations sur les paramètres dans un Service de langage hérité
 Informations sur les paramètres IntelliSense est une info-bulle qui affiche la signature d’une méthode lorsque l’utilisateur tape la liste de paramètres Démarrer caractère (en règle générale, une parenthèse ouvrante) pour la liste de paramètres de méthode. L’entrée de chaque paramètre et le type est le séparateur de paramètre (en général une virgule), l’info-bulle est mis à jour pour afficher le paramètre suivant en gras.  

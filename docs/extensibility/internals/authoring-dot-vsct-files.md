@@ -1,27 +1,23 @@
 ---
-title: "Création. Fichiers VSCT | Documents Microsoft"
-ms.custom: 
+title: Création. Fichiers VSCT | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa274c807aaa1ed212a7b283a35e510615561eb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65fc62d5685ca7c81b3ebb7f524db3cdbebe72c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-vsct-files"></a>Création. Fichiers VSCT
 Ce document montre comment créer un fichier .vsct pour ajouter des éléments de menu, les barres d’outils et autres éléments d’interface (interface utilisateur) à l’environnement de développement intégré (IDE) Visual Studio. Utilisez ces étapes lorsque vous ajoutez des éléments d’interface utilisateur à un Package Visual Studio (VSPackage) qui ne dispose pas déjà d’un fichier .vsct.  
@@ -234,7 +230,7 @@ Ce document montre comment créer un fichier .vsct pour ajouter des éléments d
  Certains types de menu et le bouton incluent des comportements spécifiques. Le tableau suivant décrit certaines menu spécialisé et les types de boutons. Pour les autres types, consultez le `types` attribut descriptions dans [élément de Menu](../../extensibility/menu-element.md), [élément Button](../../extensibility/button-element.md), et [élément de liste déroulante](../../extensibility/combo-element.md).  
   
  Zone de liste modifiable  
- Une zone de liste modifiable est une liste déroulante qui peut être utilisée dans une barre d’outils. Pour ajouter des zones de liste déroulante à l’interface utilisateur, créez un [combinés](../../extensibility/combos-element.md) élément dans le `Commands` élément. Puis ajoutez à la `Combos` élément un `Combo` , élément pour chaque zone de liste déroulante à ajouter. `Combo`les éléments ont les mêmes attributs et enfants comme `Button` éléments et ont aussi `DefaultWidth` et `idCommandList` attributs. Le `DefaultWidth` attribut définit la largeur en pixels et le `idCommandList` points d’attribut à un ID de commande qui est utilisé pour remplir la zone de liste déroulante. Pour plus d’informations, consultez le `Combo` documentation de l’élément.  
+ Une zone de liste modifiable est une liste déroulante qui peut être utilisée dans une barre d’outils. Pour ajouter des zones de liste déroulante à l’interface utilisateur, créez un [combinés](../../extensibility/combos-element.md) élément dans le `Commands` élément. Puis ajoutez à la `Combos` élément un `Combo` , élément pour chaque zone de liste déroulante à ajouter. `Combo` les éléments ont les mêmes attributs et enfants comme `Button` éléments et ont aussi `DefaultWidth` et `idCommandList` attributs. Le `DefaultWidth` attribut définit la largeur en pixels et le `idCommandList` points d’attribut à un ID de commande qui est utilisé pour remplir la zone de liste déroulante. Pour plus d’informations, consultez le `Combo` documentation de l’élément.  
   
  MenuController  
  Un contrôleur de menu est un bouton avec une flèche en regard de celui-ci. Ouvre la liste en cliquant sur la flèche. Pour ajouter un contrôleur de menu à l’interface utilisateur, créez un `Menu` et définissez son `type` attribut **MenuController** ou **MenuControllerLatched**, selon le comportement souhaité. Pour remplir un contrôleur de menu, définissez-le en tant que le parent d’un `Group` élément. Le contrôleur de menu affiche tous les enfants de ce groupe sur sa liste déroulante.  

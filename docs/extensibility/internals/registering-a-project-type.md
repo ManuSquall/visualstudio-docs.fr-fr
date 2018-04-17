@@ -1,27 +1,25 @@
 ---
-title: "L’inscription d’un Type de projet | Documents Microsoft"
-ms.custom: 
+title: L’inscription d’un Type de projet | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8e6c91f2c92dd121cd135aef4291c7f7983206ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-project-type"></a>L’inscription d’un Type de projet
 Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de Registre qui permet à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de reconnaître et de travailler avec votre type de projet. En règle générale, vous créez ces entrées de Registre à l’aide d’un fichier de script (.rgs) du Registre.  
@@ -85,7 +83,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
   
 |Name|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
-|`@`(Par défaut)|REG_SZ|`FigPrj Project VSPackage`|Nom localisé de cette inscrit le VSPackage (type de projet).|  
+|`@` (Par défaut)|REG_SZ|`FigPrj Project VSPackage`|Nom localisé de cette inscrit le VSPackage (type de projet).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Chemin d’accès du type de projet DLL. L’IDE charge cette DLL et transmet le CLSID VSPackage à `DllGetClassObject` pour obtenir <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> pour construire le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> objet.|  
 |`CompanyName`|REG_SZ|`Microsoft`|Nom de la société qui a développé le type de projet.|  
 |`ProductName`|REG_SZ|`Figure Project Sample`|Nom du type de projet.|  
@@ -197,7 +195,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
   
 |Name|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|Aucun.|Valeur par défaut qui indique que les entrées suivantes sont pour les entrées de projets fichiers divers.|  
+|`@`|REG_SZ|Aucun|Valeur par défaut qui indique que les entrées suivantes sont pour les entrées de projets fichiers divers.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valeur d’ID de ressource pour les fichiers de modèle d’ajouter de nouveaux éléments.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Chemin d’accès par défaut des éléments qui s’affichera dans le **ajouter un nouvel élément** boîte de dialogue.|  
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Établit l’ordre de tri pour l’affichage dans le nœud d’arborescence de la **ajouter un nouvel élément** boîte de dialogue.|  

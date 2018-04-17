@@ -1,26 +1,24 @@
 ---
-title: "Création de dossiers de conteneur Parent pour les Solutions | Documents Microsoft"
-ms.custom: 
+title: Création de dossiers de conteneur Parent pour les Solutions | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b2aa63a0c55ad196edf6c209475a816c0c3c027c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2104c0c109db0d410cbd08683ce227c62982fd65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Création de dossiers de conteneur Parent pour les Solutions
 Dans l’API de plug-in de contrôle de Source de version 1.2, un utilisateur peut spécifier une destination de contrôle de source de racine unique pour tous les projets Web dans la solution. Cette racine unique est appelée une racine d’unifiée Super (SUR).  
@@ -64,7 +62,7 @@ Dans l’API de plug-in de contrôle de Source de version 1.2, un utilisateur pe
   
  SUR dossiers et aux sous-dossiers sont créés indépendamment de si l’opération est annulée ou échoue en raison d’une erreur. Ils ne sont pas supprimés automatiquement dans les conditions d’annuler ou d’erreur.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]comportement de la Version 1.1 par défaut si le plug-in de contrôle de code source ne renvoie pas `SCC_CAP_CREATESUBPROJECT` et `SCC_CAP_GETPARENTPROJECT` indicateurs de capacité. En outre, les utilisateurs de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut choisir de restaurer le comportement de la Version 1.1 en définissant la valeur de la clé suivante à DWORD : 00000001 :  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comportement de la Version 1.1 par défaut si le plug-in de contrôle de code source ne renvoie pas `SCC_CAP_CREATESUBPROJECT` et `SCC_CAP_GETPARENTPROJECT` indicateurs de capacité. En outre, les utilisateurs de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut choisir de restaurer le comportement de la Version 1.1 en définissant la valeur de la clé suivante à DWORD : 00000001 :  
   
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] « DoNotCreateSolutionRootFolderInSourceControl » = DWORD : 00000001  
   

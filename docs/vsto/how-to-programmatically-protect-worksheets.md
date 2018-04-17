@@ -1,12 +1,10 @@
 ---
-title: "Comment : protéger des feuilles de calcul par programmation | Documents Microsoft"
-ms.custom: 
+title: 'Comment : protéger des feuilles de calcul par programmation | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - worksheets, protecting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 94293b90add3cbb4034278b8566ecfb1d138c09e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 23e0706f7436355e2308fbde8d945968da5348c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Comment : protéger des feuilles de calcul par programmation
   La fonctionnalité de protection de Microsoft Office Excel permet d’empêcher les utilisateurs et le code de modifier des objets dans une feuille de calcul. Par défaut, toutes les cellules sont verrouillées une fois que vous avez activé la protection.  
@@ -73,7 +72,7 @@ ms.lasthandoff: 01/10/2018
  [Comment : supprimer par programmation la Protection des feuilles de calcul](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)   
  [Comment : protéger des classeurs par programmation](../vsto/how-to-programmatically-protect-workbooks.md)   
  [Comment : masquer des feuilles de calcul par programmation](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Vue d'ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Élément hôte de feuille de calcul](../vsto/worksheet-host-item.md)   
  [Accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  

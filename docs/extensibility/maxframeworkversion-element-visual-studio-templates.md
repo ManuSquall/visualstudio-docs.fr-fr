@@ -2,27 +2,23 @@
 title: Élément MaxFrameworkVersion (modèles Visual Studio) | Documents Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - <MaxFrameworkVersion> Element (Visual Studio Templates)
 - MaxFrameworkVersion Element (Visual Studio Templates)
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edc3f443423a6c70815c4f32f1b2c91d5ead85b6
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 4bc28fcc35a4a59852ef6864886acff4dc87ef60
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>Élément MaxFrameworkVersion (modèles Visual Studio)
 
@@ -31,7 +27,7 @@ Spécifie la version maximale du .NET Framework requise par le modèle. Il déte
 > [!IMPORTANT]
 > À compter de Visual Studio 2017 version 15,6, le **Version du Framework cible** liste déroulante n’est plus un filtre pour les modèles affichés dans le **modèles** section de la **denouveauprojet** boîte de dialogue. Au lieu de cela, le **Version du Framework cible** déroulante fonctionne comme un sélecteur de framework pour le modèle sélectionné.
 
- \<VSTemplate> \<TemplateData> \<MaxFrameworkVersion>
+ \<VSTemplate > \<TemplateData > \<MaxFrameworkVersion >
 
 ## <a name="syntax"></a>Syntaxe
 

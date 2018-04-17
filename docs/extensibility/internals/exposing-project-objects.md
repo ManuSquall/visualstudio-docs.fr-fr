@@ -1,26 +1,24 @@
 ---
 title: Exposer des objets du projet | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project objects, exposing
 - extensibility, project objects
 ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 668287dc8b0b5ac9dd37cb450582e3a56fb7f25e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4eaa2a5e8c5c153698069084b9f0cfe406cad7db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-project-objects"></a>Exposer des objets du projet
 Les types de projet personnalisés peuvent fournir des objets automation afin d’autoriser l’accès au projet à l’aide des interfaces automation. Chaque type de projet est censé fournir la norme <xref:EnvDTE.Project> accessible à partir de l’objet automation <xref:EnvDTE.Solution>, qui contient une collection de tous les projets ouverts dans l’IDE. Chaque élément dans le projet est censé être exposé par un <xref:EnvDTE.ProjectItem> objet accédé avec `Project.ProjectItems`. En plus de ces objets automation standard, projets peuvent choisir d’offrir des objets spécifiques au projet automation.  

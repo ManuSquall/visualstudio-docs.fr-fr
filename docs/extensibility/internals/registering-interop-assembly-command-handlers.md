@@ -1,26 +1,24 @@
 ---
-title: "Enregistrement de gestionnaires de commandes d’Assembly PIA | Documents Microsoft"
-ms.custom: 
+title: Enregistrement de gestionnaires de commandes d’Assembly PIA | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a25f8adc91efe9d9e8b96079b4fe2e35145abf25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a4b2c0d40029cbc84d64a4ffe5ee50c59c893b95
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Enregistrement de gestionnaires de commandes d’Assembly d’interopérabilité
 Un VSPackage doit inscrire avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] afin que l’environnement de développement intégré (IDE) achemine ses commandes correctement.  
@@ -58,7 +56,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
 |-------------|-----------------|  
 |\<*Chemin d’accès à la DLL de ressource*>|Il s’agit du chemin d’accès complet à la DLL de ressource qui contient la ressource de menu ou il est vide, indiquant que le VSPackage DLL de ressource est utilisable (comme spécifié dans la sous-clé de Packages dans laquelle le VSPackage lui-même est inscrit).<br /><br /> Il est habituel de laisser ce champ vide.|  
 |\<*ID de ressource de menu*>|L’ID de ressource de la `CTMENU` ressource qui contient tous les éléments d’interface utilisateur pour le VSPackage comme compilé à partir d’un [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) fichier.|  
-|\<*Menu Version*>|Il s’agit d’un nombre utilisé en tant que version pour le `CTMENU` ressource. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]utilise cette valeur pour déterminer s’il faut remerge le contenu de la `CTMENU` ressource avec son cache de tous les `CTMENU` ressources. Une remerge est déclenchée par l’exécution de la commande devenv.<br /><br /> Cette valeur doit être initialement la valeur 1 et incrémentée après chaque modification dans le `CTMENU` ressource et avant le remerge se produit.|  
+|\<*Menu Version*>|Il s’agit d’un nombre utilisé en tant que version pour le `CTMENU` ressource. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise cette valeur pour déterminer s’il faut remerge le contenu de la `CTMENU` ressource avec son cache de tous les `CTMENU` ressources. Une remerge est déclenchée par l’exécution de la commande devenv.<br /><br /> Cette valeur doit être initialement la valeur 1 et incrémentée après chaque modification dans le `CTMENU` ressource et avant le remerge se produit.|  
   
 ### <a name="example"></a>Exemple  
  Voici un exemple de deux entrées de ressources :  

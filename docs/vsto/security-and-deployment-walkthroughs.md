@@ -1,12 +1,10 @@
 ---
-title: "Sécurité et procédures pas à pas de déploiement | Documents Microsoft"
-ms.custom: 
+title: Sécurité et procédures pas à pas de déploiement | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1a4b8fa57868e0631e528fd73e199b5c6a017c08
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0a0d68bceffaf26297ca8a1709978cf3447520c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Procédures pas à pas relatives à la sécurité et au déploiement
   Les rubriques suivantes montrent comment vous pouvez définir la stratégie de sécurité pour permettre l’exécution de votre solution, et comment vous pouvez déployer votre solution Office.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
  [Procédures pas à pas relatives aux données dans les solutions Office](../vsto/data-in-office-solutions-walkthroughs.md)  
  Répertorie les guides pas à pas qui illustrent l’utilisation des données dans vos solutions.  
   
- [Mise en route &#40; développement Office dans Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Mise en route &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Fournit des liens vers des informations sur le programme d’installation, les modèles de projet, les assemblys PIA Office et quelles sont les nouveautés du développement Office.  
   
  [Tâches courantes en matière de programmation Office](../vsto/common-tasks-in-office-programming.md)  

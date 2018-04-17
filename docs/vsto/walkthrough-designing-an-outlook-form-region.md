@@ -1,13 +1,10 @@
 ---
-title: "Procédure pas à pas : Conception d’une zone de formulaire Outlook | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Conception d’une zone de formulaire Outlook | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: afe17d19ebe87d34ae4857b1477be6cb3e894bb7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 22d67ffe14b261911d220dfeb64a0204a6a16032
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>Procédure pas à pas : conception d'une zone de formulaire Outlook
   Les zones de formulaire personnalisées étendent les formulaires Microsoft Office Outlook standard et personnalisés. Dans cette procédure pas à pas, vous allez concevoir une zone de formulaire personnalisée qui s'affiche comme une nouvelle page dans la fenêtre Inspecteur d'un élément de contact. Cette zone de formulaire affiche une carte de toutes les adresses répertoriées pour le contact, en envoyant les informations d’adresse au site web Windows Live Local Search. Pour plus d’informations sur les zones de formulaire, consultez [création de zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md).  
@@ -158,7 +155,7 @@ ms.lasthandoff: 01/10/2018
   
     |Type d'adresse|Adresse|  
     |------------------|-------------|  
-    |**Entreprise**|**4567 Main St. contiennent Nice, NY**|  
+    |**entreprise**|**4567 Main St. contiennent Nice, NY**|  
     |**Accueil**|**1234 Nord St. contiennent Nice, NY**|  
     |**Autre**|**3456 Main St. Seattle, WA**|  
   

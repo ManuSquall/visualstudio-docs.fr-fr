@@ -1,5 +1,5 @@
 ---
-title: "Concepteur d’activités de séquence | Documents Microsoft"
+title: Concepteur d’activités de séquence | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 51c8d3cb-4d43-458f-9631-b63755f9ac94
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ec037433ca4ff984628994ba2bf353ad8e365c
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 3d27a6f75205efc11fca49ee309f59fce6332a77
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sequence-activity-designer"></a>Concepteur d'activités Sequence
 L'activité <xref:System.Activities.Statements.Sequence> contient une collection ordonnée d'activités enfants qu'elle exécute dans l'ordre.

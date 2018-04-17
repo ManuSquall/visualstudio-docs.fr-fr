@@ -1,31 +1,29 @@
 ---
-title: "Énumérateur de message | Documents Microsoft"
-ms.custom: 
+title: Énumérateur de message | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6a24db9c50bd298f068c23af0b6bad5755ec252d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bc945908ac61a0eaa4df49c76725b2291686eac3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="message-enumerator"></a>Énumérateur de message
 Les indicateurs suivants sont utilisés pour le `TEXTOUTPROC` fonction, qui est une fonction de rappel que l’IDE fournit lorsqu’il appelle le [SccOpenProject](../extensibility/sccopenproject-function.md) (consultez [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) pour plus d’informations sur le rappel fonction).  
   
- Si l’IDE est invité à annuler le processus, il peut obtenir un des messages d’annulation. Dans ce cas, la contrôle de code source du plug-in utilise `SCC_MSG_STARTCANCEL` demander à l’IDE pour afficher le **Annuler** bouton. Après cela, n’importe quel jeu de messages normaux peut-être être envoyé. Si une des ces retourne `SCC_MSG_RTN_CANCEL`, puis se ferme l’opération du plug-in et le retourne. Le plug-in également interroge `SCC_MSG_DOCANCEL` périodiquement afin de déterminer si l’utilisateur a annulé l’opération. Lorsque toutes les opérations sont effectuées, ou si l’utilisateur a annulé, envoie le plug-in `SCC_MSG_STOPCANCEL`. Le `SCC_MSG_INFO`, SCC_MSG_WARNING, et les types SCC_MSG_ERROR sont utilisés pour les messages qui s’affichent dans la liste déroulante des messages. `SCC_MSG_STATUS`est un type spécial qui indique que le texte doit s’afficher dans une barre d’état ou de la zone d’affichage temporaire. Il ne reste pas définitivement dans la liste.  
+ Si l’IDE est invité à annuler le processus, il peut obtenir un des messages d’annulation. Dans ce cas, la contrôle de code source du plug-in utilise `SCC_MSG_STARTCANCEL` demander à l’IDE pour afficher le **Annuler** bouton. Après cela, n’importe quel jeu de messages normaux peut-être être envoyé. Si une des ces retourne `SCC_MSG_RTN_CANCEL`, puis se ferme l’opération du plug-in et le retourne. Le plug-in également interroge `SCC_MSG_DOCANCEL` périodiquement afin de déterminer si l’utilisateur a annulé l’opération. Lorsque toutes les opérations sont effectuées, ou si l’utilisateur a annulé, envoie le plug-in `SCC_MSG_STOPCANCEL`. Le `SCC_MSG_INFO`, SCC_MSG_WARNING, et les types SCC_MSG_ERROR sont utilisés pour les messages qui s’affichent dans la liste déroulante des messages. `SCC_MSG_STATUS` est un type spécial qui indique que le texte doit s’afficher dans une barre d’état ou de la zone d’affichage temporaire. Il ne reste pas définitivement dans la liste.  
   
 ## <a name="syntax"></a>Syntaxe  
   
