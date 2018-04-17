@@ -3,26 +3,22 @@ title: Apprenez à déboguer - Visual Studio | Documents Microsoft
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
 ms.custom: mvc
 ms.date: 03/16/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad1c3264f7f7b0c13d8df099ab14288141ef4e6e
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 92194e403e5a8fe6c7075ea7cd449442f281a7e8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>Apprenez à déboguer à l’aide de Visual Studio
 
@@ -36,7 +32,7 @@ Vous pouvez lire le long pour voir les fonctionnalités du débogueur, ou vous p
 
 Bien que l’application de démonstration est c#, les fonctionnalités sont applicables à C++, Visual Basic, JavaScript et autres langues prises en charge par Visual Studio (sauf mention contraire).
 
-Dans ce didacticiel, vous allez :
+Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 > [!div class="checklist"]
 > * Démarrer le débogueur et les points d’arrêt.

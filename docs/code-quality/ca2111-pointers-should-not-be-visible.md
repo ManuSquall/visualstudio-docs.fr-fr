@@ -1,12 +1,10 @@
 ---
-title: "CA2111 : Les pointeurs ne doivent pas être visibles | Documents Microsoft"
-ms.custom: 
+title: 'CA2111 : Les pointeurs ne doivent pas être visibles | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - PointersShouldNotBeVisible
 - CA2111
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2111
 - PointersShouldNotBeVisible
 ms.assetid: b3a8d466-895b-43bc-a2df-5d7058fe915f
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 31ae25892b6b5a153a0a4d1e52047eb5be2368d1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ce027b8e6bcf39623e07a862d4f9fb23c33b9967
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111 : Les pointeurs ne doivent pas être visibles
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Un public ou protégé <xref:System.IntPtr?displayProperty=fullName> ou <xref:System.UIntPtr?displayProperty=fullName> champ n’est pas en lecture seule.  
   
 ## <a name="rule-description"></a>Description de la règle  
- <xref:System.IntPtr>et <xref:System.UIntPtr> sont des types pointeur qui sont utilisés pour accéder à la mémoire non managée. Si un pointeur n’est pas privé, interne ou en lecture seule, un code malveillant peut modifier la valeur du pointeur, potentiellement autorisant l’accès aux emplacements arbitraires en mémoire ou provoquant des défaillances des applications ou du système.  
+ <xref:System.IntPtr> et <xref:System.UIntPtr> sont des types pointeur qui sont utilisés pour accéder à la mémoire non managée. Si un pointeur n’est pas privé, interne ou en lecture seule, un code malveillant peut modifier la valeur du pointeur, potentiellement autorisant l’accès aux emplacements arbitraires en mémoire ou provoquant des défaillances des applications ou du système.  
   
  Si vous projetez de sécuriser l’accès au type qui contient le champ de pointeur, consultez [CA2112 : les types sécurisés ne doivent pas exposer de champs](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
   

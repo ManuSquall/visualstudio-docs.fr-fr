@@ -1,12 +1,9 @@
 ---
-title: "Afficher les chaînes dans un visualiseur de chaîne | Documents Microsoft"
-ms.custom: 
+title: Afficher les chaînes dans un visualiseur de chaîne | Documents Microsoft
+ms.custom: ''
 ms.date: 07/11/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - string visualizer
 - visualizers, string
 ms.assetid: 080fd8f1-72b0-461f-8451-3c84d5dc51df
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 801618c900f11a562b42e610c56dfa7855dfaf39
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 637e046ff99bfaee01ec2484c784d69734ff5118
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Afficher les chaînes dans un visualiseur de chaîne dans Visual Studio
 Pendant le débogage, vous pouvez ouvrir un visualiseur de chaîne à afficher les chaînes qui sont trop longs à afficher dans une fenêtre d’info-bulle ou le débogueur de données. Dans de nombreux scénarios, le visualiseur peut vous aider à identifier des chaînes incorrect.

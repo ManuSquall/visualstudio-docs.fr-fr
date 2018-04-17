@@ -1,11 +1,8 @@
 ---
-title: "Enregistrer des données dans la base de données | Documents Microsoft"
-ms.custom: 
+title: Enregistrer des données dans la base de données | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - datasets [Visual Basic], validating data
 - data validation, datasets
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 733a495c7f6865e9973f5288c9c324baef7f1d8e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1e7d2b27f0d90677d99d3f0fbc434493fdc7da83
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer des données dans la base de données
 Le dataset est une copie en mémoire des données. Si vous modifiez ces données, il est recommandé d’enregistrer ces modifications dans la base de données. Vous faire de trois manières :  
@@ -158,7 +155,7 @@ Le tableau suivant détaille les valeurs possibles de la <xref:System.Data.DataR
   
  Vous pouvez créer des sous-ensembles d’enregistrements modifiés à l’aide de la `GetChanges` de la table de données (méthode) (<xref:System.Data.DataTable.GetChanges%2A>) ou du jeu de données (<xref:System.Data.DataSet.GetChanges%2A>) lui-même. Si vous appelez la méthode pour la table de données, il retourne une copie de la table contenant uniquement les enregistrements modifiés. De même, si vous appelez la méthode sur le jeu de données, vous obtenez un nouveau dataset avec uniquement les enregistrements modifiés.  
   
- `GetChanges`Retourne tous les enregistrements modifiés par lui-même. En revanche, en la passant souhaité <xref:System.Data.DataRowState> en tant que paramètre à la `GetChanges` (méthode), vous pouvez spécifier le sous-ensemble d’enregistrements modifiés souhaité : nouvellement ajouté des enregistrements, enregistrements marqués pour suppression, les enregistrements détachés et enregistrements modifiés.  
+ `GetChanges` Retourne tous les enregistrements modifiés par lui-même. En revanche, en la passant souhaité <xref:System.Data.DataRowState> en tant que paramètre à la `GetChanges` (méthode), vous pouvez spécifier le sous-ensemble d’enregistrements modifiés souhaité : nouvellement ajouté des enregistrements, enregistrements marqués pour suppression, les enregistrements détachés et enregistrements modifiés.  
   
  Obtention d’un sous-ensemble des enregistrements modifiés est utile lorsque vous souhaitez envoyer des enregistrements à un autre composant pour traitement. Au lieu d’envoyer l’ensemble du dataset, vous pouvez réduire la charge de la communication avec l’autre composant en récupérant uniquement les enregistrements dont il a besoin.   
   

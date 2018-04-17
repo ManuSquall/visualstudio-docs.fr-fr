@@ -1,30 +1,26 @@
 ---
 title: Conversion de code | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - thunk properties [DIA SDK]
 - thunk symbol
 ms.assetid: 01abb95f-d89a-465c-a4eb-8e8509598c95
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc847378510a6c7b0c07834a7658874f94b764e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb7177d89ef139ad25392df3bdab91031d59f10c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="thunk"></a>Thunk
 Chaque `thunk` est identifié par un `SymTagThunk` balise.  
@@ -58,11 +54,11 @@ Chaque `thunk` est identifié par un `SymTagThunk` balise.
 |[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)|`DWORD`|Conversion de code type, tel que défini par le [THUNK_ORDINAL (énumération)](../../debugger/debug-interface-access/thunk-ordinal.md).|  
 |[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Le type de conversion de ce code (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID de symbole du type (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
-|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE`Si la conversion de code n’est pas alignée (uniquement dans DIA SDK 8.0 ou version ultérieure),|  
-|[IDiaSymbol::get_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE`Si le thunk est virtuel (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` Si la conversion de code n’est pas alignée (uniquement dans DIA SDK 8.0 ou version ultérieure),|  
+|[IDiaSymbol::get_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE` Si le thunk est virtuel (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Position de cette conversion de code dans l’image exécutable.|  
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|Offset dans la table virtuelle pour ce thunk (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
-|[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`Si le thunk est marqué comme volatile (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Si le thunk est marqué comme volatile (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Hiérarchie lexicale des Types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   

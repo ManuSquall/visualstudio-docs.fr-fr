@@ -1,13 +1,10 @@
 ---
-title: "Afficher la pile des appels dans le débogueur Visual Studio | Documents Microsoft"
+title: Afficher la pile des appels dans le débogueur Visual Studio | Documents Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,17 +26,16 @@ helpviewer_keywords:
 - stack, switching stack frames
 - Call Stack window, viewing disassembly code for functions on the call stack
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e10b81ff07b77e2fd6202d2f5fb27392fe8134c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a55f940c6310300b458f4497f8659bfc0897d4b7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Afficher la pile des appels et utiliser la fenêtre Pile des appels dans le débogueur Visual Studio
 
@@ -71,7 +67,7 @@ Le code est un code qui n’est pas affiché quand [uniquement mon Code](../debu
   
 **[\<Le Code externe >]**  
   
-## <a name="bkmk_switch"></a>Basculer vers un autre frame de pile (modifier le contexte du débogueur)
+## <a name="bkmk_switch"></a> Basculer vers un autre frame de pile (modifier le contexte du débogueur)
   
 1.  Dans le **pile des appels** (fenêtre), avec le bouton de la pile de frame dont code et les données que vous souhaitez afficher.
 
@@ -113,9 +109,9 @@ Si vous utilisez Visual Studio Enterprise (uniquement), vous pouvez afficher des
 
 ## <a name="change-the-optional-information-displayed"></a>Modifier l’affichage des informations facultatives  
   
--   Avec le bouton droit le **pile des appels** fenêtre et de définir ou désactivez **afficher \<**  *les informations que vous souhaitez*  **>** .  
+-   Avec le bouton droit le **pile des appels** fenêtre et de définir ou désactivez **afficher \< ***les informations que vous souhaitez***>**.  
   
-## <a name="bkmk_symbols"></a>Charger les symboles pour un module
+## <a name="bkmk_symbols"></a> Charger les symboles pour un module
 Dans le **pile des appels** fenêtre, vous pouvez charger des symboles pour le code qui ne dispose pas actuellement chargé des symboles de débogage. Ces symboles peuvent être des symboles .NET Framework ou système téléchargés à partir des serveurs de symboles publics de Microsoft ou des symboles situés dans un chemin d’accès aux symboles sur l’ordinateur que vous déboguez.  
   
 Consultez [spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  

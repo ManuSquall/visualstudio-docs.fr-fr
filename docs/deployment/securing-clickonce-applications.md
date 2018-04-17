@@ -1,13 +1,10 @@
 ---
-title: "Sécurisation des Applications ClickOnce | Documents Microsoft"
-ms.custom: 
+title: Sécurisation des Applications ClickOnce | Documents Microsoft
+ms.custom: ''
 ms.date: 02/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - deploying applications, ClickOnce security
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a7825ef0b664007fc119d7ed08066e8585ee59ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8f41fb12c8ec9a5a3cec0a802f7fc5b4216a39d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="securing-clickonce-applications"></a>Sécurisation des applications ClickOnce
 Les applications[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont soumises aux contraintes de sécurité d'accès du code dans .NET Framework afin d'aider à limiter l'accès du code aux opérations et aux ressources protégées. Pour cette raison, il est important de comprendre les implications de la sécurité d'accès du code afin d'écrire vos applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en conséquence. Vos applications peuvent utiliser des zones de confiance totale ou de confiance partielle, telles que les zones intranet et Internet, pour limiter l'accès.  
@@ -51,7 +47,7 @@ Les applications[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
   
  L'inclusion d'une autorisation qui ne fait pas partie du jeu d'autorisations par défaut de la zone à partir de laquelle l'application est déployée amènerait l'utilisateur final à être invité à accorder l'autorisation au moment de l'installation ou de la mise à jour. Pour empêcher des utilisateurs d'être invités, un administrateur système peut spécifier une stratégie de déploiement ClickOnce qui définit un éditeur de l'application spécifique comme une source fiable. Sur les ordinateurs sur lesquels cette stratégie est déployée, les autorisations seront automatiquement accordées et l'invite ne sera pas présentée à l'utilisateur.  
   
- En tant que développeur, vous devez garantir que votre application s'exécutera avec les autorisations appropriées. Si l'application demande des autorisations en dehors d'une zone au moment de l'exécution, une exception de sécurité peut s'afficher. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vous permet de déboguer votre application dans la zone de sécurité cible. et vous aide à développer des applications sécurisées. Pour plus d'informations, consultez [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ En tant que développeur, vous devez garantir que votre application s'exécutera avec les autorisations appropriées. Si l'application demande des autorisations en dehors d'une zone au moment de l'exécution, une exception de sécurité peut s'afficher. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vous permet de déboguer votre application dans la zone de sécurité cible. et vous aide à développer des applications sécurisées. Pour plus d'informations, consultez [Comment : déboguer une application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
  Pour plus d’informations sur la sécurité d’accès du code et sur ClickOnce, consultez [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md).  
   

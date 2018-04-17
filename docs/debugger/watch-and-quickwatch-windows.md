@@ -1,13 +1,10 @@
 ---
-title: "Définissez un espion sur les Variables dans Visual Studio | Documents Microsoft"
+title: Définissez un espion sur les Variables dans Visual Studio | Documents Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 264ac3f21dd7799bc4aa1f36909801eac854b755
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Définissez un espion dans des Variables à l’aide de l’espion et Espion express, fenêtres dans Visual Studio
 Pendant le débogage, vous pouvez utiliser la **espion** et **Espion express** pour observer les variables et les expressions.  La fenêtre **Espion** permet d’afficher plusieurs variables, à la différence de la fenêtre **Espion express** , qui n’en affiche qu’une à la fois. 
@@ -217,7 +214,7 @@ public class Program
   
 2.  Démarrez le débogage et quand l’exécution s’interrompt au point d’arrêt, recherchez la variable dans la fenêtre **Variables locales** , cliquez dessus avec le bouton droit, puis sélectionnez **Générer ID de l’objet**.  
   
-3.  Vous devez voir un  **$**  et un nombre dans le **variables locales** fenêtre, qui représente l’ID d’objet.  
+3.  Vous devez voir un **$** et un nombre dans le **variables locales** fenêtre, qui représente l’ID d’objet.  
   
 4.  Ajoutez l’ID d’objet à la fenêtre Espion.  
   

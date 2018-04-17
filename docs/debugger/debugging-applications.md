@@ -1,28 +1,26 @@
 ---
-title: "Débogage d’Applications | Documents Microsoft"
-ms.custom: 
+title: Débogage d’Applications | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: f7f08402-610e-47f0-ba10-575dd395a0f0
-caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cb0ed99e341e89aaaa295d2fc4a4cf25f726e2f5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2239b51b721b74d25f7c361b0484afbdcd44fe5d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-applications"></a>Déboguer des applications
 Les sections suivantes traitent du débogage pour des types spécifiques d'applications. Des types d'applications différents et des langages différents requièrent des paramètres et des techniques différents, et présentent des problèmes différents qui doivent être débogués.  

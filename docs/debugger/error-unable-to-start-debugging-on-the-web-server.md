@@ -1,12 +1,9 @@
 ---
-title: "Erreur : Impossible de démarrer le débogage sur le serveur Web | Documents Microsoft"
-ms.custom: 
+title: 'Erreur : Impossible de démarrer le débogage sur le serveur Web | Documents Microsoft'
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
@@ -27,17 +24,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 459df1ca9ffed246116c71adac8a38039b6602ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erreur : impossible de démarrer le débogage sur le serveur web
 
@@ -59,32 +55,32 @@ Le `Unable to start debugging on the Web server` message est générique. En rè
 - [Le débogueur ne peut pas se connecter à l’ordinateur distant](#cannot_connect)
 - [Consultez l’aide pour les erreurs de configuration courantes. Exécution de la page Web en dehors du débogueur peut fournir davantage d’informations.](#see_help)
 
-## <a name="IISlist"></a>IIS ne répertorie pas un site Web qui correspond le lancement url
+## <a name="IISlist"></a> IIS ne répertorie pas un site Web qui correspond le lancement url
 
 - Redémarrez Visual Studio en tant qu’administrateur et recommencez le débogage. (Certains scénarios de débogage ASP.NET nécessitent des privilèges élevés.)
 
     Vous pouvez configurer Visual Studio exécute toujours en tant qu’administrateur en cliquant sur l’icône de raccourci de Visual Studio en choisissant **Propriétés > Avancé**, puis en choisissant soit toujours exécuté en tant qu’administrateur.
 
-## <a name="web_server_config"></a>Le serveur web n’est pas configuré correctement
+## <a name="web_server_config"></a> Le serveur web n’est pas configuré correctement
 
 - Consultez [erreur : le serveur web n’est pas configuré correctement](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
-## <a name="unabletoconnect"></a>Impossible de se connecter au serveur Web
+## <a name="unabletoconnect"></a> Impossible de se connecter au serveur Web
 
 - Vous êtes en cours d’exécution Visual Studio et le serveur Web sur le même ordinateur et le débogage à l’aide de **F5** (au lieu de **attacher au processus**) ? Ouvrez les propriétés de votre projet et assurez-vous que le projet est configuré pour se connecter au serveur Web approprié et l’URL de lancement. (Ouvrez **Propriétés > Web > serveurs** ou **Propriétés > déboguer** en fonction de votre type de projet. Ouvrez un projet Web Forms **Pages de propriétés > Options de démarrage > serveur**.)
 
 - Sinon, redémarrez votre Pool d’applications et réinitialisez IIS. Pour plus d’informations, consultez [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="webservertimeout"></a>Le serveur web n’a pas répondu en temps voulu
+## <a name="webservertimeout"></a> Le serveur web n’a pas répondu en temps voulu
 
 - Réinitialiser IIS et recommencez le débogage. Plusieurs instances du débogueur peuvent être attachés au processus IIS ; une réinitialisation y mette fin. Pour plus d’informations, consultez [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="msvsmon"></a>Microsoft visual studio monitor(msvsmon.exe) du débogage distant ne semble pas être en cours d’exécution sur l’ordinateur distant
+## <a name="msvsmon"></a> Microsoft visual studio monitor(msvsmon.exe) du débogage distant ne semble pas être en cours d’exécution sur l’ordinateur distant
 
 - Si vous effectuez un débogage sur un ordinateur distant, assurez-vous que vous disposez [installés et exécutent le débogueur distant](../debugger/remote-debugging.md). Si le message mentionne un pare-feu, vérifiez que le [corriger des ports dans le pare-feu](../debugger/remote-debugger-port-assignments.md) sont ouverts, surtout si vous utilisez un pare-feu tiers.
 - Si vous utilisez un fichier d’hôtes, assurez-vous qu’il est configuré correctement. Par exemple, si le débogage à l’aide **F5** (au lieu de **attacher au processus**), les ordinateurs hôtes doit inclure la même URL de projet, comme dans les propriétés de votre projet, de fichiers **Propriétés > Web > serveurs**  ou **Propriétés > débogage**, en fonction de votre type de projet.
 
-## <a name="server_error"></a>Le serveur distant a retourné une erreur
+## <a name="server_error"></a> Le serveur distant a retourné une erreur
 
 Vérifiez votre [fichier journal IIS](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) pour sous-codes d’erreur et des informations supplémentaires et cette IIS 7 [billet de blog](https://blogs.iis.net/tomkmvp/troubleshoot-a-403).
 
@@ -93,24 +89,24 @@ Voici en outre, certains des codes d’erreur courants et quelques suggestions.
 - Serveur (503) non disponible. Le Pool d’applications peut avoir arrêté en raison d’une modification de l’erreur ou la configuration. Redémarrez le Pool d’applications.
 - (404) introuvable. Assurez-vous que le Pool d’applications est configuré pour la version correcte d’ASP.NET.
 
-## <a name="aspnet"></a>Impossible de démarrer le débogage d’ASP.NET
+## <a name="aspnet"></a> Impossible de démarrer le débogage d’ASP.NET
 
 - Redémarrez le Pool d’applications et réinitialiser IIS. Pour plus d’informations, consultez [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck).
 - Si vous effectuez des URL réécrit, un fichier web.config de base avec aucune réécritures URL de test. Consultez le **Remarque** sur l’URL de réécrire le Module dans [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="cannot_connect"></a>Le débogueur ne peut pas se connecter à l’ordinateur distant
+## <a name="cannot_connect"></a> Le débogueur ne peut pas se connecter à l’ordinateur distant
 
 Si vous effectuez un débogage localement, cette erreur peut se produire, car Visual Studio est une application 32 bits, de sorte qu’elle utilise la version 64 bits du débogueur distant pour déboguer des applications 64 bits. Ouvrez les propriétés de votre projet et assurez-vous que le projet est configuré pour se connecter au serveur Web et URL correcte. (Ouvrez **Propriétés > Web > serveurs** ou **Propriétés > déboguer** en fonction de votre type de projet.)
 
 En outre, si vous utilisez un fichier d’hôtes, assurez-vous qu’il est configuré correctement. Par exemple, les ordinateurs hôtes du fichier doit inclure la même URL de projet, comme dans les propriétés de votre projet, **Propriétés > Web > serveurs** ou **Propriétés > débogage**, en fonction de votre type de projet.
 
-## <a name="see_help"></a>Consultez l’aide pour les erreurs de configuration courantes. Exécution de la page Web en dehors du débogueur peut fournir davantage d’informations.
+## <a name="see_help"></a> Consultez l’aide pour les erreurs de configuration courantes. Exécution de la page Web en dehors du débogueur peut fournir davantage d’informations.
 
 - Vous exécutez Visual Studio et le serveur Web sur le même ordinateur ? Ouvrez les propriétés de votre projet et assurez-vous que le projet est configuré pour se connecter au serveur Web approprié et l’URL de lancement. (Ouvrez **Propriétés > Web > serveurs** ou **Propriétés > déboguer** en fonction de votre type de projet.)
 
 - Si cela ne fonctionne pas ou si vous déboguez à distance, suivez les étapes de [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck).
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a>Vérifiez votre configuration d’IIS
+##  <a name="vxtbshttpservererrorsthingstocheck"></a> Vérifiez votre configuration d’IIS
 
 Après avoir suivi les étapes décrites ici pour résoudre le problème et avant de réessayer déboguer, vous devez également réinitialiser IIS. C’est également en ouvrant une invite de commandes avec élévation de privilèges et en tapant `iisreset`. 
 

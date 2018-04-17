@@ -1,27 +1,23 @@
 ---
-title: "Boîte de dialogue recherche de message | Documents Microsoft"
-ms.custom: 
+title: Boîte de dialogue recherche de message | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - message options, Search
 ms.assetid: 44fb43b7-b006-46cc-a70c-036aac3cceec
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec48c0a0c07fd7ab9ec2606c110667cc9bb12f69
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 65639b25cccc88d8159d1e91eddb0b99c06c19bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="message-search-dialog-box"></a>Boîte de dialogue Recherche d'un message
 Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un message spécifique dans [vue Messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, déplacez le focus vers une fenêtre d’affichage de Messages. Puis choisissez **rechercher le Message** à partir de la **recherche** menu.  

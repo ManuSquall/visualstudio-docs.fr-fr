@@ -1,27 +1,23 @@
 ---
-title: "Comment : supprimer les Notifications de modification de fichier | Documents Microsoft"
-ms.custom: 
+title: 'Comment : supprimer les Notifications de modification de fichier | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
 ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 209006129bcb2cfaaf88233768df1d9597cd09a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 95821baec7f2f46a65e2ab0f0b0b78b0e397f2ba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Comment : supprimer les Notifications de modification de fichier
 Lorsque le fichier physique qui représente la mémoire tampon de texte a été modifié, une boîte de dialogue s’affiche avec le message **vous souhaitez enregistrer les modifications apportées aux éléments suivants ?** Il s’agit en tant que notification de modification de fichier. Si de nombreuses modifications doivent se trouver dans le fichier, toutefois, cette boîte de dialogue Affichage indéfiniment peut rapidement devenir ennuyeux.  

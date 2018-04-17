@@ -1,27 +1,25 @@
 ---
-title: "Évaluateur d’expression | Documents Microsoft"
-ms.custom: 
+title: Évaluateur d’expression | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK]
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 55aaa595c49d0c50cff5f874d1b322c3adbb9729
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8dd2cc4409dbdb7650454715e133fd76dda5b780
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator"></a>Évaluateur d’expression
 Évaluateurs d’expression (EE) examiner la syntaxe d’une langue pour analyser et évaluer les variables et les expressions au moment de l’exécution, ce qui permet à être affiché par l’utilisateur lors de l’IDE est en mode arrêt.  
@@ -33,7 +31,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  Le package de débogage Obtient un `IDebugExpressionContext2` à partir de l’objet une [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interface, puis appelle la `IDebugStackFrame2::ParseText` méthode pour obtenir un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objet.  
   
-3.  Les appels de package de débogage la [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) méthode ou la [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) méthode pour obtenir la valeur de l’expression. `IDebugExpression2::EvaluateAsync`est appelé à partir de la fenêtre commande/exécution. Tous les autres composants de l’interface utilisateur appellent `IDebugExpression2::EvaluateSync`.  
+3.  Les appels de package de débogage la [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) méthode ou la [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) méthode pour obtenir la valeur de l’expression. `IDebugExpression2::EvaluateAsync` est appelé à partir de la fenêtre commande/exécution. Tous les autres composants de l’interface utilisateur appellent `IDebugExpression2::EvaluateSync`.  
   
 4.  Le résultat de l’évaluation de l’expression est une [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objet, qui contient le nom, le type et la valeur du résultat de l’évaluation d’expression.  
   

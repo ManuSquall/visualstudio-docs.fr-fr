@@ -1,13 +1,10 @@
 ---
-title: "À l’aide des données IntelliTrace enregistrées | Documents Microsoft"
-ms.custom: 
+title: À l’aide des données IntelliTrace enregistrées | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - IntelliTrace log files
 - .iTrace files
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 2a39531134d4c2f041c170d328c79d157fd74a0d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>Utilisation des données IntelliTrace enregistrées
 Accédez aux points spécifiques de l’exécution de votre application lorsque vous démarrez le débogage à partir d’un fichier journal IntelliTrace (.iTrace). Ce fichier contient des événements de performance, des exceptions, des threads, des étapes de test, des modules et d’autres informations système qu’IntelliTrace enregistre pendant que votre application s’exécute.  
@@ -165,13 +161,13 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 1.  Copiez l’ID de corrélation SharePoint à partir de sa source.  
   
-     Exemple :  
+     Par exemple :  
   
-     ![IntelliTrace &#45; Erreur SharePoint &#45; ID de corrélation](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
+     ![IntelliTrace &#45; erreur SharePoint &#45; ID de corrélation](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
   
 2.  Ouvrez le fichier .iTrace, puis pointez sur **Analyse** et entrez l’ID de corrélation SharePoint pour examiner la demande correspondante de site web et les événements inscrits.  
   
-     ![Journal IntelliTrace &#45; Entrez l’ID de corrélation SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+     ![Journal IntelliTrace &#45; ID de corrélation SharePoint d’entrez](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3.  Sous **Événements de requête**, examinez les événements. En commençant à partir du haut, les événements apparaissent dans l’ordre dans lequel ils se produisent.  
   
@@ -179,7 +175,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
     2.  Sélectionnez **Démarrer le débogage** pour démarrer le débogage au point où l’événement s’est produit.  
   
-     ![Fichier journal IntelliTrace &#45; Afficher une requête web &#43; événements](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+     ![Fichier journal IntelliTrace &#45; afficher une requête web &#43; événements](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
  Vous pouvez voir ces types d’événements SharePoint avec des événements IntelliTrace :  
   
@@ -209,7 +205,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 3.  Sélectionnez **Exception de débogage** pour démarrer le débogage à l’emplacement et au moment où l’exception s’est produite.  
   
-     ![Journal IntelliTrace &#45; Exceptions SharePoint non gérées](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+     ![Journal IntelliTrace &#45; exceptions SharePoint non gérées](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
  Pour une procédure pas à pas, consultez [procédure pas à pas : débogage d’une Application SharePoint à l’aide de IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Pour les types de données enregistrées par l’agent, consultez [des fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
   

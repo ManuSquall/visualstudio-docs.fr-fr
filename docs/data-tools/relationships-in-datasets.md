@@ -1,11 +1,8 @@
 ---
-title: "Permet de créer des relations entre les jeux de données DataRelation | Documents Microsoft"
-ms.custom: 
+title: Permet de créer des relations entre les jeux de données DataRelation | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], relationships
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 95bfef50e7ce5016b68df1442e625a88beb22181
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 94fb9217b779d00314b2a188ae2fe6f7d0ba4bb1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-relationships-between-datasets"></a>Créer des relations entre les jeux de données
 Jeux de données qui contiennent des données connexes tables utilisent <xref:System.Data.DataRelation> objets pour représenter une relation parent/enfant entre les tables et pour retourner les enregistrements associés à partir d’un autre. Ajout de tables associées aux groupes de données à l’aide de la **Assistant de Configuration de Source de données**, ou **Concepteur de Dataset**, crée et configure le <xref:System.Data.DataRelation> objet pour vous.  

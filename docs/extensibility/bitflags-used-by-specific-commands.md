@@ -1,27 +1,23 @@
 ---
-title: "Indicateurs de bits utilisés par des commandes spécifiques | Documents Microsoft"
-ms.custom: 
+title: Indicateurs de bits utilisés par des commandes spécifiques | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3bc59c79e0f047cc7880332c4c23643ab2136c86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Indicateurs de bits utilisés par des commandes spécifiques
 Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle de Source peut être modifié en définissant un ou plusieurs bits à une valeur unique. Ces valeurs sont des indicateurs de bits. Les différents indicateurs de bits utilisées par l’API de plug-in de contrôle de Source sont décrits ici, regroupés par la fonction qui les utilise.  
@@ -40,7 +36,7 @@ Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle 
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0 x 00|Le plug-in de contrôle de code source est censé détecter automatiquement si le fichier est binaire ou texte.|  
 |`SCC_FILETYPE_TEXT`|0 x 01|Est du type de fichier texte.|  
-|`SCC_FILETYPE_BINARY`|0 x 04|Type de fichier est binaire. **Remarque :** `SCC_FILETYPE_TEXT` et `SCC_FILETYPE_BINARY` les indicateurs sont mutuellement exclusifs. Définir un seul ou aucune des deux.|  
+|`SCC_FILETYPE_BINARY`|0 x 04|Type de fichier est binaire. **Remarque :** `SCC_FILETYPE_TEXT` et `SCC_FILETYPE_BINARY` les indicateurs sont mutuellement exclusifs.   Définir un seul ou aucune des deux.|  
 |`SCC_ADD_STORELATEST`|0 x 02|Conserver la dernière version uniquement (aucune deltas).|  
   
 ## <a name="diff-flags"></a>Indicateurs de comparaison  

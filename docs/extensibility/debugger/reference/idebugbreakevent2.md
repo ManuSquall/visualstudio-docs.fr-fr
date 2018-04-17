@@ -1,29 +1,25 @@
 ---
 title: IDebugBreakEvent2 | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugBreakEvent2
 helpviewer_keywords:
 - IDebugBreakEvent2 interface
 ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b58e0fb18b8f41f16a6cc92e682363ff531d5ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: adfe4bf801d419d2eb25ba2191a180ca261a6c3f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 Cette interface indique le Gestionnaire de session de débogage (SDM) qu’un saut de ligne asynchrone a été effectuée avec succès.  
@@ -43,7 +39,7 @@ IDebugBreakEvent2 : IUnknown
 ## <a name="remarks"></a>Notes  
  Par exemple, un utilisateur peut sélectionner la **interrompre tout** commande sur le **déboguer** menu pour sortir d’un programme qui exécute une boucle infinie. Le SDM indique au programme s’arrête en appelant [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). L’envoie DE `IDebugBreakEvent2` lorsque le programme s’arrête finalement.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

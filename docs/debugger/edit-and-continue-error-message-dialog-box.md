@@ -1,12 +1,9 @@
 ---
-title: "Modifier & Continuer, boîte de dialogue erreur Message | Documents Microsoft"
-ms.custom: 
+title: Modifier & Continuer, boîte de dialogue erreur Message | Documents Microsoft
+ms.custom: ''
 ms.date: 06/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
@@ -19,17 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - Edit and Continue Error Message dialog box
 ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01cd34aacb4abea5f2f3ce29fcb53ba34aaeaf21
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 148fea0484bbcdfe16339ccc1b5e876506a76838
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Message d'erreur de Modifier & Continuer, boîte de dialogue
 Cette boîte de dialogue s’affiche lorsque vous déboguez dans un langage qui prend en charge Modifier & Continuer, mais **Modifier & Continuer** n’est pas disponible pour le type de modifications de code que vous avez apportées. Le message d'erreur affiché dans la boîte de dialogue fournit une explication plus détaillée. Les raisons pouvant justifier l'affichage de cette boîte de dialogue sont les suivantes :  
@@ -61,7 +57,7 @@ Cette boîte de dialogue s’affiche lorsque vous déboguez dans un langage qui 
 -   Vous avez commencé à déboguer une version ancienne de votre application (étant donné que la nouvelle version comporte des erreurs de build).
   
 ## <a name="uielement-list"></a>Liste des éléments d’interface  
- **BIEN**  
+ **OK**  
  Fermez la boîte de dialogue et annulez la tentative de modification précédente.  
   
 ## <a name="see-also"></a>Voir aussi  

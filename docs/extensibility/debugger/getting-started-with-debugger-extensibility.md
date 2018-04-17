@@ -1,34 +1,32 @@
 ---
-title: "Prise en main d’extensibilité du débogueur | Documents Microsoft"
-ms.custom: 
+title: Prise en main d’extensibilité du débogueur | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Debugging SDK
 - debugging [Debugging SDK], getting started
 - Debugging SDK, getting started
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 964b6bcc18e74174aa59e7a1bb4441e24d3918d7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 98d6e0200c1a68ae3819d3276ce8a04aaada2e78
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Prise en main d’extensibilité du débogueur
 Le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fournit les informations dont vous devez disposer pour créer et personnaliser les composants du débogueur permet de déboguer des programmes depuis le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]le débogage a ajouté des améliorations dérivées de la facilité d’utilisation étendue tests effectués sur précédente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogueurs. Vous pouvez utiliser [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de débogage pour accéder à une application dans plusieurs langue, ou vous pouvez implémenter à la volée modifiant des variables pendant le débogage des applications et des solutions de plusieurs langues.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] le débogage a ajouté des améliorations dérivées de la facilité d’utilisation étendue tests effectués sur précédente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogueurs. Vous pouvez utiliser [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de débogage pour accéder à une application dans plusieurs langue, ou vous pouvez implémenter à la volée modifiant des variables pendant le débogage des applications et des solutions de plusieurs langues.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]le débogage est exécutée out-of-process avec le programme débogué et par conséquent moins gênante dans l’espace de processus de l’application. Par conséquent, il est plus facile d’écrire des composants qui interagissent avec le débogueur sans affecter votre programme de débogage.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] le débogage est exécutée out-of-process avec le programme débogué et par conséquent moins gênante dans l’espace de processus de l’application. Par conséquent, il est plus facile d’écrire des composants qui interagissent avec le débogueur sans affecter votre programme de débogage.  
   
  Pour utiliser au mieux le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], vous devez être familiarisé avec les éléments suivants :  
   

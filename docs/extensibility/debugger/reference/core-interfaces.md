@@ -1,27 +1,23 @@
 ---
 title: Interfaces de base | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], core interfaces
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54ecbe034f4fa7054be2725205a013e5899849e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 45521c0db16ac892d2e0e43e34c4b030075f7be2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="core-interfaces"></a>Interfaces de base
 Les interfaces suivantes sont les interfaces de base pour l’extension de débogueur à l’aide de la [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  
@@ -71,7 +67,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
   
 -   Visual Studio (Visual Studio)  
   
-##  <a name="Breakpoints"></a>Points d’arrêt  
+##  <a name="Breakpoints"></a> Points d’arrêt  
  Ces interfaces sont liées à l’implémentation et le suivi des points d’arrêt.  
   
 |Interface|Implémenté par|Description|  
@@ -92,7 +88,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 |[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|Représente une énumération sur un ensemble de points d’arrêt liés.|  
 |[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|Représente une énumération sur un ensemble de points d’arrêt qui n’a pas pu être lié à un emplacement de mémoire.|  
   
-##  <a name="Contexts"></a>Contextes  
+##  <a name="Contexts"></a> Contextes  
  Ces interfaces représentent les différents types de contextes dans le programme en cours de débogage.  
   
 |Interface|Implémenté par|Description|  
@@ -106,7 +102,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Représente un contexte de frame de pile à un point d’arrêt ou une exception.|  
 |[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|Représente une énumération sur un ensemble de contextes de code.|  
   
-##  <a name="CoreServer"></a>Installation minimale  
+##  <a name="CoreServer"></a> Installation minimale  
  Ces interfaces représentent l’ordinateur sur lequel un programme est en cours de débogage. Celles-ci sont implémentées par [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] mais peut être appelé par les moteurs de débogage.  
   
 |Interface|Implémenté par|Description|  
@@ -114,7 +110,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Fournit l’accès aux ports et fournisseurs de port ainsi que des informations sur l’ordinateur.|  
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Représente un [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) qui prend en charge le débogage distant.|  
   
-##  <a name="DebugEngines"></a>Moteurs de débogage  
+##  <a name="DebugEngines"></a> Moteurs de débogage  
  Ces interfaces représentent des moteurs de débogage et les événements associés.  
   
 |Interface|Implémenté par|Description|  
@@ -126,7 +122,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 |[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Représente un nœud de programme qui gère plusieurs moteurs de débogage.|  
 |[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|Fournit un moyen pour le SDM obtenir une interface pour le moteur de débogage à partir d’un thread, un programme ou un frame de pile.|  
   
-##  <a name="Documents"></a>Documents  
+##  <a name="Documents"></a> documents  
  Ces interfaces représentent des documents (fichiers sources) et leurs éléments associés.  
   
 |Interface|Implémenté par|Description|  
@@ -186,7 +182,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 |[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|Envoyé par le DE quand un thread a été détruit.|  
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Envoyé par le DE quand un thread a changé son nom.|  
   
-##  <a name="Expressions"></a>Expressions  
+##  <a name="Expressions"></a> Expressions  
  Ces interfaces représentent des expressions à évaluer dans un contexte particulier.  
   
 |Interface|Implémenté par|Description|  
@@ -195,7 +191,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Représente un contexte dans lequel l’expression est évaluée. Obtenu à partir de la [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) interface.|  
 |[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Envoyé par le DE quand une évaluation d’expression asynchrone est terminée.|  
   
-##  <a name="Memory"></a>Mémoire  
+##  <a name="Memory"></a> Mémoire  
  Ces interfaces représentent des séquences d’octets en mémoire.  
   
 |Interface|Implémenté par|Description|  
@@ -214,7 +210,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 |[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|Représente les informations du serveur source qui sont contenues dans un fichier PDB.|  
 |[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|Représente une énumération sur un ensemble de modules qui sont connues par un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md).|  
   
-##  <a name="Ports"></a>Ports  
+##  <a name="Ports"></a> Ports  
  Ces interfaces représentent les ports et les fournisseurs de port.  
   
 |Interface|Implémenté par|Description|  
@@ -234,7 +230,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 |[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)|VS, PS|Représente une énumération sur un ensemble de ports.|  
 |[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)|VS|Représente une énumération sur un ensemble de fournisseurs de port.|  
   
-##  <a name="Processes"></a>Processus  
+##  <a name="Processes"></a> Processus  
  Ces interfaces représentent des processus, un fichier exécutable contenant un ou plusieurs programmes.  
   
 |Interface|Implémenté par|Description|  
@@ -246,7 +242,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Représente un processus qui doit suivre la session lui est attachée.|  
 |[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Représente une énumération d’un ensemble de processus sur un port.|  
   
-##  <a name="Programs"></a>Programmes  
+##  <a name="Programs"></a> Programmes  
  Ces interfaces représentent des programmes, les unités logiques d’exécution qui ne correspondent pas nécessairement à un fichier exécutable physique ou un module.  
   
 |Interface|Implémenté par|Description|  
@@ -279,7 +275,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 |[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|Représente une énumération sur un ensemble de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structures qui décrivent les variables, les registres, les paramètres et les expressions.|  
 |[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|Représente une énumération sur un ensemble de [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structures.|  
   
-##  <a name="StackFrames"></a>Frames de pile  
+##  <a name="StackFrames"></a> Frames de pile  
  Ces interfaces représentent un frame de pile, un contexte dans lequel un point d’arrêt ou une exception s’est produite.  
   
 |Interface|Implémenté par|Description|  
@@ -300,7 +296,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Envoyé par le DE quand un thread a changé son nom.|  
 |[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|Représente une énumération sur un ensemble de threads.|  
   
-##  <a name="TypeVisualizers"></a>Visualiseurs de type  
+##  <a name="TypeVisualizers"></a> Visualiseurs de type  
  Ces interfaces prennent en charge les visualiseurs de type. Ces interfaces sont généralement implémentées par un évaluateur d’expression.  
   
 |Interface|Implémenté par|Description|  

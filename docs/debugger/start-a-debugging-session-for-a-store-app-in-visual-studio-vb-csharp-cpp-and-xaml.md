@@ -1,12 +1,10 @@
 ---
-title: "Démarrer une session de débogage pour une application UWP dans Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Démarrer une session de débogage pour une application UWP dans Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 01/04/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
 - VC.Project.IVCAppHostRemoteDebugPageObject.BreakpointBehavior
@@ -34,16 +32,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 718d24ab0f9fbb310d2482b63bc98dd139658330
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 667fa5294f813a59425516e7e6d97177ca681365
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>Démarrer une session de débogage pour une application UWP dans Visual Studio
   
@@ -76,10 +74,10 @@ Choisissez l'une des options suivantes :
 |**Ordinateur local**|Déboguez l'application dans la session active sur votre ordinateur local.|  
 |**Simulateur**|Déboguez l’application dans le simulateur de Visual Studio pour applications UWP. Le simulateur est une fenêtre du bureau qui vous permet de déboguer les fonctionnalités du périphérique, telles que les mouvements tactiles et la rotation du périphérique, qui n’est peut-être pas disponible sur l’ordinateur local. Cette option est disponible uniquement si votre application **minimale de la plateforme cible. Version** est inférieur ou égal au système d’exploitation sur votre ordinateur de développement. Consultez [UWP d’exécuter des applications dans le simulateur](../debugger/run-windows-store-apps-in-the-simulator.md).|  
 |**Ordinateur distant**|Déboguez l'application sur un périphérique qui est connecté à l'ordinateur local sur un intranet ou directement connecté via un câble Ethernet. Pour déboguer à distance, les outils à distance pour Visual Studio doivent être installés et en cours d’exécution sur le périphérique distant. Consultez [applications UWP de s’exécuter sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
-|**Device**|Déboguez l’application sur un périphérique USB connecté. L’appareil doit être déverrouillé de développeur et l’écran a été déverrouillée.|  
+|**Périphérique**|Déboguez l’application sur un périphérique USB connecté. L’appareil doit être déverrouillé de développeur et l’écran a été déverrouillée.|  
 |**Émulateur mobile**|Démarrer un émulateur avec la configuration spécifiée dans le nom de l’émulateur, déployez l’application et démarrer le débogage. Émulateurs sont uniquement disponibles sur les ordinateurs de Hyper-V est activé.|  
 
-##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>Choisissez les options de débogage supplémentaires  
+##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Choisissez les options de débogage supplémentaires  
 
 Si vous avez besoin configurer les options de débogage supplémentaires, ouvrez la page de propriétés pour le projet.
   
@@ -89,11 +87,11 @@ Si vous avez besoin configurer les options de débogage supplémentaires, ouvrez
   
     -   Pour les applications Visual C# et Visual Basic, choisissez **Déboguer**.  
   
-         ![C &#35; &#47; Page de propriétés de débogage de projet VB](../debugger/media/dbg_csvb_debugpropertypage.png)  
+         ![C&#35; &#47; page de propriétés de débogage de projet VB](../debugger/media/dbg_csvb_debugpropertypage.png)  
   
     -   Pour les applications Visual C++ et JavaScript, développez le **propriétés de Configuration** nœud, puis choisissez **débogage**.  
   
-         ![C &#43; &#43; Page des propriétés de débogage des applications UWP](../debugger/media/dbg_cpp_debugpropertypage.png)  
+         ![C&#43; &#43; page de propriétés de débogage de l’application UWP](../debugger/media/dbg_cpp_debugpropertypage.png)  
 
 ###  <a name="BKMK_Choose_the_debugger_to_use"></a> Choisir le débogueur à utiliser  
 Par défaut, Visual Studio débogue le code managé dans des applications C# et Visual Basic. Pour les applications C# et Visual Basic, vous pouvez choisir de déboguer le code managé et natif C/C++ dans votre application. Dans les applications C++, Visual Studio débogue le code natif par défaut. Dans les applications JavaScript, Visual Studio débogue le script par défaut. 
@@ -179,11 +177,11 @@ Vous pouvez installer l'application sur le périphérique local ou sur un périp
   
 Pour démarrer une application installée dans le débogueur, choisissez **déboguer**, puis **autres cibles de débogage**, puis **déboguer le Package d’application installé**. Pour obtenir des instructions supplémentaires, consultez [déboguer un package d’application installés](../debugger/debug-installed-app-package.md).
 
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Attacher le débogueur à une application UWP en cours d’exécution  
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Attacher le débogueur à une application UWP en cours d’exécution  
 
 Pour déboguer une application UWP en cours d’exécution, choisissez **déboguer**, puis **autres cibles de débogage**, puis **déboguer le Package d’application installé**. Pour obtenir des instructions supplémentaires, consultez [déboguer un package d’application installés](../debugger/debug-installed-app-package.md).
   
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Attacher le débogueur à une application de 8.x Windows en cours d’exécution
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Attacher le débogueur à une application de 8.x Windows en cours d’exécution
  Pour attacher le débogueur à une application [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] , vous devez utiliser Debuggable Package Manager pour configurer l'application à exécuter en mode débogage. Debuggable Package Manager est installé avec les outils à distance pour Visual Studio.  
   
  Attacher le débogueur à une application est utile lorsque vous devez déboguer une application déjà installée, telle qu'une application qui a été installée à partir de [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]. L'attachement est requis lorsque vous possédez les fichiers sources de l'application, mais que vous n'avez pas de projet Visual Studio pour l'application. Par exemple, vous pouvez avoir un système de génération personnalisée qui n'utilise pas les projets ou les solutions Visual Studio.  

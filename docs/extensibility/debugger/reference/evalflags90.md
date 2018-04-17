@@ -1,27 +1,23 @@
 ---
 title: EVALFLAGS90 | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - EVALFLAGS90 enumeration
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80f281e65d4dd7b2df24233552bdc46d4b29bebe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 120bf38afbf05f367757de3a5e453cab8b4311b1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 Énumère les valeurs valides pour les indicateurs qui contrôlent l’évaluation de l’expression. Cette énumération étend la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) énumération.  
@@ -98,7 +94,7 @@ public enum enum_EVALFLAGS90
  EVAL90_FORCE_EVALUATION_NOW  
  Évaluation de force à se produire immédiatement. Cela est utile lorsque le traitement d’une demande, telle qu’une demande de l’utilisateur.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : Msdbg90.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

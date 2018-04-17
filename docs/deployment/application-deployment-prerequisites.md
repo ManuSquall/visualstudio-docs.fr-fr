@@ -1,12 +1,10 @@
 ---
-title: "Conditions préalables au déploiement de application | Documents Microsoft"
-ms.custom: 
+title: Conditions préalables au déploiement de application | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-caps.latest.revision: "51"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5fdeb1d5e543216e0cbb9cab72ecd98001caff3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-deployment-prerequisites"></a>Composants requis pour le déploiement d'applications
 Pour vous assurer que votre application sera installée et exécutée correctement, vérifiez que tous les composants dont dépend votre application sont déjà installés sur l'ordinateur cible. Par exemple, la plupart des applications créées à l'aide de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ont une dépendance par rapport au [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ; la version appropriée du Common Language Runtime doit être présente sur l'ordinateur de destination avant que l'application ne soit installée.  
@@ -48,10 +46,10 @@ Pour vous assurer que votre application sera installée et exécutée correcteme
   
 -   La version minimale des assemblys qui doivent être préinstallés dans le Global Assembly Cache (GAC), conformément aux déclarations de dépendance d'assembly du manifeste de l'assembly.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]peut détecter les composants requis manquants, et vous pouvez installer les composants requis à l’aide d’un programme d’amorçage. Pour plus d’informations, consultez [Comment : installer les composants requis avec une Application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] peut détecter les composants requis manquants, et vous pouvez installer les composants requis à l’aide d’un programme d’amorçage. Pour plus d’informations, consultez [Comment : installer les composants requis avec une Application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Pour changer les valeurs dans les manifestes générés par des outils tels que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et MageUI.exe, vous devez changer le manifeste de l'application dans un éditeur de texte, puis signer à nouveau les manifestes de l'application et de déploiement. Pour plus d’informations, consultez [Comment : signer de nouveau l’Application et les manifestes de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Pour changer les valeurs dans les manifestes générés par des outils tels que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et MageUI.exe, vous devez changer le manifeste de l'application dans un éditeur de texte, puis signer à nouveau les manifestes de l'application et de déploiement. Pour plus d'informations, consultez [Comment : signer de nouveau des manifestes d'application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Si vous utilisez Visual Studio et ClickOnce pour déployer votre application, les packages de programme d'amorçage sélectionnés par défaut dépendent de la version du .NET Framework de la solution. Toutefois, si vous modifiez la version du .NET Framework cible, vous devez mettre à jour les options de la **boîte de dialogue composants requis** manuellement.  
   
@@ -78,9 +76,9 @@ Pour vous assurer que votre application sera installée et exécutée correcteme
 |---------------------------|-----------------|  
 |**- ?, -h, - aide**|Affiche une boîte de dialogue d'aide.|  
 |**-url, - componentsurl**|Affiche l'URL stockée et l'URL des composants pour cette installation.|  
-|**-url =**`location`|Définit l'URL où Setup.exe doit chercher l'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].|  
-|**-componentsurl =**`location`|Définit l'URL où Setup.exe doit chercher les dépendances, par exemple le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
-|**-homesite =** `true` **&#124;**`false`|Lorsque `true`, télécharge les dépendances à partir de l’emplacement par défaut sur le site du fournisseur. Cela remplace le **- componentsurl** paramètre. Lorsque `false`, télécharge les dépendances à partir de l’URL spécifiée par **- componentsurl**.|  
+|**-url =** `location`|Définit l'URL où Setup.exe doit chercher l'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].|  
+|**-componentsurl =** `location`|Définit l'URL où Setup.exe doit chercher les dépendances, par exemple le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
+|**-homesite =** `true`**&#124;** `false`|Lorsque `true`, télécharge les dépendances à partir de l’emplacement par défaut sur le site du fournisseur. Cela remplace le **- componentsurl** paramètre. Lorsque `false`, télécharge les dépendances à partir de l’URL spécifiée par **- componentsurl**.|  
   
 ## <a name="operating-system-support"></a>Système d'exploitation pris en charge  
  Le programme d'amorçage Visual Studio n'est pas pris en charge sur Windows Server 2008 Server Core ou Windows Server 2008 R2 Server Core, qui fournissent un environnement serveur à maintenance réduite avec des fonctionnalités limitées. Par exemple, comme l’option d’installation Server Core ne prend en charge que le profil .NET Framework 3.5 Server Core, les fonctionnalités Visual Studio qui dépendent du .NET Framework complet ne peuvent pas s’exécuter.  

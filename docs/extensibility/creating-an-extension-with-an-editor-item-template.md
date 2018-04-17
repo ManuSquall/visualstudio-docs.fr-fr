@@ -1,27 +1,23 @@
 ---
-title: "Création d’une Extension avec un éditeur de modèle d’élément | Documents Microsoft"
-ms.custom: 
+title: Création d’une Extension avec un éditeur de modèle d’élément | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb66dfffaf8fa8339ce9060c912dc358fb454a7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 60f10479e0ce6fa08e888d92556ff47b5d82af66
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Création d’une Extension avec un éditeur de modèle d’élément
 Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK Visual Studio pour créer des extensions d’éditeur de base qui ajoutent des classifieurs, motifs et les marges pour l’éditeur. Les modèles d’élément de l’éditeur sont disponibles pour les projets Visual c# ou Visual Basic VSIX.  

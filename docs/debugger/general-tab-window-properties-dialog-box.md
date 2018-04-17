@@ -1,27 +1,23 @@
 ---
-title: "Onglet Général, boîte de dialogue Propriétés de fenêtre | Documents Microsoft"
-ms.custom: 
+title: Onglet Général, boîte de dialogue Propriétés de fenêtre | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, General Tab
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aea8d5eb998280d6602f4ea28eb0b52d5f86da3
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 0186b03bd599a3644321b186dbd19c8d7338aca5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Onglet Général de la boîte de dialogue Propriétés de la fenêtre
 Utilisez le **général** onglet pour afficher plus d’informations sur la fenêtre sélectionnée. Pour afficher le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md), déplacer le focus vers le [affichage Windows](../debugger/windows-view.md) fenêtre. Sélectionnez n’importe quel nœud de fenêtre dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
@@ -33,7 +29,7 @@ Utilisez le **général** onglet pour afficher plus d’informations sur la fen�
 |**Légende de fenêtre**|Le texte dans la légende de fenêtre, ou le texte contenu dans une fenêtre s’il s’agit d’un contrôle.|  
 |**Handle de fenêtre**|ID unique de cette fenêtre. Les numéros de handle de fenêtre sont réutilisés ; ils identifient une fenêtre uniquement pour la durée de vie de cette fenêtre.|  
 |**Procédure de fenêtre**|L’adresse virtuelle de la fonction de procédure de fenêtre pour cette fenêtre. Ce champ indique également si cette fenêtre est une fenêtre Unicode et si elle est sous-classée.|  
-|**Rectangle**|Le rectangle englobant de la fenêtre. La taille du rectangle s’affiche également. Les unités sont les pixels en coordonnées d’écran.|  
+|**rectangle**|Le rectangle englobant de la fenêtre. La taille du rectangle s’affiche également. Les unités sont les pixels en coordonnées d’écran.|  
 |**Rectangle restauré**|Le rectangle englobant de la fenêtre restaurée. La taille du rectangle s’affiche également. Rectangle restauré diffère de Rectangle uniquement lorsque la fenêtre est agrandie ou réduite. Les unités sont les pixels en coordonnées d’écran.|  
 |**Rect du client**|Le rectangle englobant pour la zone cliente de fenêtre. La taille du rectangle s’affiche également. Les unités sont les pixels par rapport au coin supérieur gauche de la zone cliente de fenêtre.|  
 |**Handle d’instance**|Le handle d’instance de l’application. Handles d’instance ne sont pas uniques.|  

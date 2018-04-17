@@ -1,26 +1,24 @@
 ---
-title: "Interfaces d’évaluateur d’Expression de clé | Documents Microsoft"
-ms.custom: 
+title: Interfaces d’évaluateur d’Expression de clé | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, interfaces
 ms.assetid: 1cac9aa3-0867-4e12-a16e-1e90abbc0fb6
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1e0d655f18ec7ec50dffa52e3ac4ce363fb02fd3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: fe0c592c65e2c6ab7429cef44a830325a834ecdc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="key-expression-evaluator-interfaces"></a>Interfaces d’évaluateur d’Expression clé
 > [!IMPORTANT]
@@ -36,7 +34,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
-     A la [lier](../../extensibility/debugger/reference/idebugbinder-bind.md) méthode qui obtient la zone de mémoire qui contient la valeur actuelle d’un symbole. Étant donné à la fois la méthode conteneur, représentée par une [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objet et au symbole lui-même, représenté par une [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objet, `IDebugBinder::Bind` retourne la valeur du symbole. `IDebugBinder`est généralement implémentée par le DE.  
+     A la [lier](../../extensibility/debugger/reference/idebugbinder-bind.md) méthode qui obtient la zone de mémoire qui contient la valeur actuelle d’un symbole. Étant donné à la fois la méthode conteneur, représentée par une [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objet et au symbole lui-même, représenté par une [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objet, `IDebugBinder::Bind` retourne la valeur du symbole. `IDebugBinder` est généralement implémentée par le DE.  
   
 -   [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   

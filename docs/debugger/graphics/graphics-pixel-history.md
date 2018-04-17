@@ -1,27 +1,23 @@
 ---
 title: Historique des pixels Graphics | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pixelhistory
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966f15e0aac212207e0f6afe96dececc8950aab2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 73e51108c4280d6e3ebf69000c9863610e4a25da
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-pixel-history"></a>Historique des pixels Graphics
 La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer vous aide à comprendre comment un pixel spécifique est affecté par les événements Direct3D qui se produisent dans un frame de votre jeu ou application.  
@@ -41,7 +37,7 @@ La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer 
   
  Vous pouvez développer chaque primitive pour examiner la façon dont la sortie du nuanceur de pixels a été fusionnée avec la couleur de pixel existante pour produire la couleur résultante. À ce stade, vous pouvez également examiner ou déboguer le code du nuanceur de pixels associé à la primitive. En outre, vous pouvez développer davantage le nœud du nuanceur de sommets pour examiner l’entrée du nuanceur de sommets.  
   
-###  <a name="exclusion"></a>Exclusion de primitive  
+###  <a name="exclusion"></a> Exclusion de primitive  
  Si une primitive ne peut pas affecter la couleur d'un pixel, l'exclusion peut se produire pour diverses raisons. Chaque raison est représentée par une icône décrite dans ce tableau :  
   
 |Icône|Raison de l'exclusion|  

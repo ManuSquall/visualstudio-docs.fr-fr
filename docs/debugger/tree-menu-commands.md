@@ -1,27 +1,23 @@
 ---
 title: Arborescence de commandes de Menu | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Tree menu commands
 ms.assetid: ffc1b893-17b1-477f-92a1-e4a59261ca1a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5843f5145ab5577ecbf4ad11ec17a06b0f70ba59
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 961aa678d67848a1aa061506bc5c02ced66ef646
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tree-menu-commands"></a>commandes du menu Arborescence
 Le **arborescence** menu fournit des commandes pour développer ou réduire les vues.  
@@ -35,5 +31,5 @@ Le **arborescence** menu fournit des commandes pour développer ou réduire les 
  **Développer tout**  
  Se développe et affiche tous les niveaux dans une vue système.  
   
- **Réduire**  
+ **réduire**  
  Réduit tous les niveaux sous l’élément actuellement sélectionné.

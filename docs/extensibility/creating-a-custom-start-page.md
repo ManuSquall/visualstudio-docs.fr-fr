@@ -1,23 +1,21 @@
 ---
-title: "Création d’un fichier Page de démarrage | Documents Microsoft"
-ms.custom: 
+title: Création d’un fichier Page de démarrage | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f1ce8112adffabcee835d7adf598e73d327ca3b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 71892262d98b175b111218068a02d03ad3d04caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-custom-start-page"></a>Création d’une Page de démarrage personnalisée
 Vous pouvez créer une Page de démarrage personnalisée en suivant les étapes décrites dans ce document.  
@@ -73,7 +71,7 @@ Vous pouvez créer une Page de démarrage personnalisée en suivant les étapes 
   
 1.  Copie de votre fichier XAML et les fichiers texte ou balisage des fichiers, à la **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\**  dossier.  
   
-2.  Si votre page de démarrage fait référence à des contrôles ou les types dans les assemblys qui ne sont pas installés par Visual Studio, copiez les assemblys et les coller dans *dossier d’installation de Visual Studio***\Common7\IDE\ PrivateAssemblies\\**.  
+2.  Si votre page de démarrage fait référence à des contrôles ou les types dans les assemblys qui ne sont pas installés par Visual Studio, copiez les assemblys et les coller dans * dossier d’installation de Visual Studio ***\Common7\IDE\PrivateAssemblies\\** .  
   
 3.  À une invite de commandes Visual Studio, tapez **devenv/rootsuffix Exp** pour ouvrir une instance expérimentale de Visual Studio.  
   

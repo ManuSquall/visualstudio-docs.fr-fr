@@ -1,28 +1,26 @@
 ---
-title: "Sélection et la devise dans l’IDE | Documents Microsoft"
-ms.custom: 
+title: Sélection et la devise dans l’IDE | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - currency, Visual Studio IDE
 - IDE, selection
 - selection, Visual Studio IDE
 - IDE, currency
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e46c18f424130a29085aaccad19328c9f86682f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf8c58cb08f82b10970424600843b0fedcf477fc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Sélection et la devise dans l’IDE
 Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) gère plus d’informations sur les utilisateurs les objets actuellement sélectionnés à l’aide de sélection *contexte*. Avec le contexte de sélection, VSPackages peuvent prendre part dans la devise de suivi de deux manières :  
@@ -38,7 +36,7 @@ Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnemen
 |-------------|-----------------|  
 |Hiérarchie actuelle|En général, le projet actuel. une hiérarchie actuelle de valeur NULL indique que la solution dans son ensemble est en cours.|  
 |ItemID actuel|L’élément sélectionné dans la hiérarchie actuelle ; Lorsqu’il existe plusieurs sélections dans une fenêtre de projet, il peut y avoir plusieurs éléments en cours.|  
-|En cours`SelectionContainer`|Contient l’un ou plusieurs objets pour lesquels la fenêtre Propriétés doit afficher les propriétés.|  
+|En cours `SelectionContainer`|Contient l’un ou plusieurs objets pour lesquels la fenêtre Propriétés doit afficher les propriétés.|  
   
  En outre, l’environnement gère deux listes globales :  
   

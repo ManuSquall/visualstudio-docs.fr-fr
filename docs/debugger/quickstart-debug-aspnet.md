@@ -2,32 +2,28 @@
 title: Débogage ASP.NET - Visual Studio | Documents Microsoft
 ms.custom: mvc
 ms.date: 03/16/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 12b4feefed9b34ab97365818878b2116d0501abb
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 27072fda7535db5cd7307523c7e1732fef79c9e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>Débogage ASP.NET avec le débogueur Visual Studio
 
 Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes pour vous aider à déboguer vos applications. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base.
 
-## <a name="create-a-new-project"></a>Créer un projet 
+## <a name="create-a-new-project"></a>Créer un nouveau projet 
 
 1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 

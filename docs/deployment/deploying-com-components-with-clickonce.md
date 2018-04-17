@@ -1,12 +1,10 @@
 ---
-title: "Déploiement de composants COM avec ClickOnce | Documents Microsoft"
-ms.custom: 
+title: Déploiement de composants COM avec ClickOnce | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,23 +16,23 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], COM components
 - components, deploying
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
-caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c735eff8e33a8eb8a363e97a9621abc6f06c18e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Déploiement de composants COM avec ClickOnce
 Déploiement de composants COM hérités a toujours été une tâche difficile. Les composants doivent être inscrits globalement et peuvent donc entraîner des effets secondaires indésirables entre les applications qui se chevauche. Cette situation n’est généralement pas un problème dans les applications .NET Framework, car les composants sont complètement isolés de l’application ou sont compatibles avec le côte à côte. Visual Studio vous permet de déployer des composants COM isolés sur Windows XP ou système d’exploitation ultérieur.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]fournit un mécanisme simple et sécurisé pour le déploiement de vos applications .NET. Toutefois, si vos applications utilisent des composants COM hérités, vous devrez effectuer des étapes supplémentaires pour les déployer. Cette rubrique décrit comment déployer des composants COM isolés et référencer des composants natifs (par exemple, à partir de Visual Basic 6.0 ou Visual C++).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fournit un mécanisme simple et sécurisé pour le déploiement de vos applications .NET. Toutefois, si vos applications utilisent des composants COM hérités, vous devrez effectuer des étapes supplémentaires pour les déployer. Cette rubrique décrit comment déployer des composants COM isolés et référencer des composants natifs (par exemple, à partir de Visual Basic 6.0 ou Visual C++).  
   
- Pour plus d’informations sur le déploiement des composants COM isolés, consultez « Déploiement d’applications simplifié avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et COM sans inscription « à [http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Pour plus d’informations sur le déploiement des composants COM isolés, consultez « Déploiement d’applications simplifié avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et COM sans inscription « à [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
   
 ## <a name="registration-free-com"></a>COM sans inscription  
  COM sans inscription est une nouvelle technologie de déploiement et d’activation des composants COM isolés. Il fonctionne en plaçant bibliothèque de tous les composants de types et les informations d’inscription qui sont généralement installées dans le Registre du système dans un fichier XML appelé manifeste, stocké dans le même dossier que l’application.  
@@ -44,7 +42,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
  Lorsque le Générateur de manifeste rencontre une référence COM isolée, il énumère toutes les `CoClass` entrées dans la bibliothèque de types du composant, correspondant à chaque entrée aux données d’inscription correspondante et génération de définitions de manifeste pour tout le modèle COM classes dans le fichier de bibliothèque de types.  
   
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>Déploiement des composants COM sans inscription à l’aide de ClickOnce  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]technologie de déploiement convient bien pour le déploiement de composants COM isolés, étant donné que les deux [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et COM sans inscription requièrent qu’un composant ait un manifeste pour être déployé.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologie de déploiement convient bien pour le déploiement de composants COM isolés, étant donné que les deux [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et COM sans inscription requièrent qu’un composant ait un manifeste pour être déployé.  
   
  En règle générale, l’auteur du composant doit fournir un manifeste. Si ce n’est pas le cas, toutefois, Visual Studio est capable de générer automatiquement un manifeste pour un composant COM. La génération de manifeste s’effectue pendant la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] processus de publication ; pour plus d’informations, consultez [publication d’Applications ClickOnce](../deployment/publishing-clickonce-applications.md). Cette fonctionnalité vous permet également de tirer parti des composants hérités que vous avez créés dans des environnements de développement antérieurs tels que Visual Basic 6.0.  
   

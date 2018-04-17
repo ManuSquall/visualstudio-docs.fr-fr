@@ -1,13 +1,10 @@
 ---
-title: "Afficher la mémoire pour les Variables dans le débogueur | Documents Microsoft"
+title: Afficher la mémoire pour les Variables dans le débogueur | Documents Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
 dev_langs:
@@ -24,17 +21,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], Memory window
 - buffers, viewing
 ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96a4dc22f4f5c96d3dd9d40a565c2656ffe6e283
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e5e2c43f48a1a91c35c770f5f7150972bebb1a1a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Utiliser les fenêtres de mémoire dans le débogueur Visual Studio
 Le **mémoire** fenêtre fournit une vue de l’espace mémoire utilisé par votre application. Le **espion** fenêtre, **Espion express** boîte de dialogue, **automatique** fenêtre, et **variables locales** et consulter le contenu de variables qui sont dans une fenêtre stockées à des emplacements spécifiques dans la mémoire. Mais le **mémoire** fenêtre affiche l’image à grande échelle. Cette vue peut s'avérer pratique pour l'examen de grands fragments de données (mémoires tampons ou longues chaînes, par exemple) dont l'affichage n'est pas satisfaisant dans les autres fenêtres. Toutefois, le **mémoire** fenêtre n’est pas tenu d’afficher les données. Elle affiche tout ce qui se trouve dans l'espace mémoire, qu'il s'agisse de données, de code ou de bits aléatoires de garbage de la mémoire non assignée.  

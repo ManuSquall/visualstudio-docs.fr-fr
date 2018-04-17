@@ -1,27 +1,23 @@
 ---
 title: Publier sur Azure App Service - Visual Studio | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 52da1a2e618d9ececa1c8fd0d90a86e651cd7fde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: d6de76a3f3bd781ec8cd798eef87cce7acd01e69
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Publier une application ASP.NET ou ASP.NET Core pour le Service d’applications Azure à l’aide de Visual Studio
 
@@ -29,7 +25,7 @@ Vous pouvez utiliser la **publier** outil pour publier des applications ASP.NET,
 
 Si vous n’avez pas déjà un compte Azure, vous pouvez [Inscrivez-vous ici](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
-## <a name="create-a-new-project"></a>Créer un projet 
+## <a name="create-a-new-project"></a>Créer un nouveau projet 
 
 1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 

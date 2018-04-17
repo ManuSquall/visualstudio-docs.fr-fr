@@ -1,12 +1,9 @@
 ---
-title: "Général, débogage, boîte de dialogue des Options | Documents Microsoft"
-ms.custom: 
+title: Général, débogage, boîte de dialogue des Options | Documents Microsoft
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -22,17 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - Options dialog box, debugging
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01c87cfc2beb030b2fd10a4455def65ab139a5f0
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: ce77ce26e4eadfba97ca47c95fea502825fabc41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Général, Débogage, boîte de dialogue Options
 Le **Outils > Options > Débogage > Général** page vous permet de définir les options suivantes :  

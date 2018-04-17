@@ -1,12 +1,10 @@
 ---
-title: "Dépannage d’erreurs spécifiques dans les déploiements ClickOnce | Documents Microsoft"
-ms.custom: 
+title: Dépannage d’erreurs spécifiques dans les déploiements ClickOnce | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - troubleshooting ClickOnce deployments
 - ClickOnce deployment, troubleshooting
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
-caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ffa7449347fe5e898f2984237dfc8908e3bb2003
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b52caad3b6e4c98dd78e6c6be9835c11ac4d4175
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Dépannage d'erreurs spécifiques lors de déploiements de ClickOnce
 Cette rubrique répertorie les erreurs courantes qui peuvent se produire lorsque vous déployez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et fournit les étapes pour résoudre chaque problème.  
@@ -72,13 +70,13 @@ Cette rubrique répertorie les erreurs courantes qui peuvent se produire lorsque
   
 -   Vérifiez que l’intervalle de mise à jour dans le manifeste de déploiement. Si cet intervalle est défini à un intervalle périodique, par exemple une fois toutes les six heures, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] n’analyse pas une mise à jour jusqu'à ce que cet intervalle est écoulé. Vous pouvez modifier le manifeste pour rechercher une mise à jour chaque fois que l’application démarre. Modification de l’intervalle de mise à jour est une option pratique au moment du développement afin de vérifier les mises à jour sont en cours d’installation, mais cela ralentit l’activation de l’application.  
   
--   Essayez de redémarrer l’application dans le menu Démarrer. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]a pu détecter la mise à jour en arrière-plan, mais vous invite à installer les bits lors de la prochaine activation.  
+-   Essayez de redémarrer l’application dans le menu Démarrer. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a pu détecter la mise à jour en arrière-plan, mais vous invite à installer les bits lors de la prochaine activation.  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Au cours de la mise à jour, vous recevez une erreur qui a l’entrée de journal suivante : « la référence dans le déploiement ne correspond pas à l’identité définie dans le manifeste d’application »  
  Cette erreur peut se produire, car vous avez modifié manuellement les manifestes de déploiement et d’application et avez provoqué la description de l’identité d’un assembly dans un manifeste de devenir désynchronisés avec les autres. L’identité d’un assembly se compose de son nom, la version, culture et jeton de clé publique. Examinez les descriptions d’identité dans vos manifestes et corrigez les éventuelles différences.  
   
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Première activation de disque local ou CD-ROM réussit, mais l’activation suivante à partir du Menu Démarrer ne fonctionne pas  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]utilise l’URL du fournisseur de déploiement pour recevoir les mises à jour pour l’application. Vérifiez que l’emplacement vers lequel pointe l’URL est correcte.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] utilise l’URL du fournisseur de déploiement pour recevoir les mises à jour pour l’application. Vérifiez que l’emplacement vers lequel pointe l’URL est correcte.  
   
 #### <a name="error-cannot-start-the-application"></a>Erreur : « Impossible de démarrer l’application »  
  Ce message d’erreur indique généralement qu’il existe un problème d’installation de cette application dans le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] stocker. L’application comporte une erreur ou le magasin est endommagé. Le fichier journal peut vous dire où l’erreur s’est produite.  
@@ -132,11 +130,11 @@ Cette rubrique répertorie les erreurs courantes qui peuvent se produire lorsque
 |Impossible de continuer. L’application n’est pas formatée. Contactez l’éditeur de l’application.<br /><br /> Échec de la validation de l’application. Impossible de continuer.<br /><br /> Impossible de récupérer les fichiers d’application. Fichiers endommagés dans le déploiement.|Un des fichiers manifeste de déploiement de la syntaxe n’est pas valid ou contient un hachage qui ne peut pas être harmonisée avec le fichier correspondant. Cette erreur peut également indiquer que le manifeste incorporé à l’intérieur d’un assembly est endommagé. Recréez votre déploiement et recompiler votre application, ou recherchez et résolvez manuellement les erreurs dans vos manifestes.|  
 |Impossible de récupérer application. Erreur d’authentification.<br /><br /> Installation de l’application n’a pas réussi. Impossible de localiser les fichiers sur le serveur d’applications. Pour obtenir une assistance, contactez votre administrateur ou l’éditeur de l’application.|Un ou plusieurs fichiers dans le déploiement ne peut pas être téléchargés, car vous n’êtes pas autorisé à y accéder. Cela peut être dû à une erreur 403 Interdit retourné par un serveur Web, ce qui peut se produire si l’un des fichiers dans votre déploiement se termine par une extension qui rend le serveur Web à traiter comme un fichier protégé. En outre, un répertoire qui contient un ou plusieurs des fichiers de l’application peut nécessiter un nom d’utilisateur et un mot de passe pour accéder à.|  
 |Impossible de télécharger l’application. Il manque des fichiers requis dans l’application. Pour obtenir une assistance, contactez le fournisseur de l’application ou votre administrateur système.|Impossible de trouver un ou plusieurs des fichiers répertoriés dans le manifeste d’application sur le serveur. Vérifiez que vous avez téléchargé tous les fichiers de déploiement dépendants, puis réessayez.|  
-|Téléchargement de l’application n’a pas réussi. Vérifiez votre connexion réseau ou contactez votre administrateur système ou votre fournisseur de services réseau.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Impossible d’établir une connexion réseau au serveur. Examinez la disponibilité du serveur et l’état de votre réseau.|  
+|Téléchargement de l’application n’a pas réussi. Vérifiez votre connexion réseau ou contactez votre administrateur système ou votre fournisseur de services réseau.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Impossible d’établir une connexion réseau au serveur. Examinez la disponibilité du serveur et l’état de votre réseau.|  
 |URLDownloadToCacheFile a échoué avec HRESULT '\<nombre >'. Une erreur s’est produite lors de la tentative de téléchargement '\<fichier >'.|Si un utilisateur a la valeur option de fonctions avancées de sécurité Internet Explorer « Avertir en cas de modification entre sécurisé et le mode non sécurisé » sur l’ordinateur cible de déploiement, et si l’URL d’installation de l’application ClickOnce en cours d’installation est redirigée à partir d’une non sécurisé à un site sécurisé (ou inversement), l’installation échoue, car l’avertissement Internet Explorer l’interrompra.<br /><br /> Pour résoudre ce problème, vous pouvez effectuer une des opérations suivantes :<br /><br /> -Désactivez l’option de sécurité.<br />-Vérifiez que l’URL d’installation n’est pas redirigée de telle façon qui modifie les modes de sécurité.<br />-Supprimer complètement la redirection et pointer vers l’URL d’installation proprement dit.|  
 |Une erreur s’est produite à l’écriture sur le disque dur. Il peut être un manque d’espace disponible sur le disque. Pour obtenir une assistance, contactez le fournisseur de l’application ou votre administrateur système.|Cela peut indiquer un espace disque insuffisant pour le stockage de l’application, mais il peut également indiquer une erreur d’e/s plus générale lorsque vous essayez d’enregistrer les fichiers d’application sur le disque.|  
 |Impossible de démarrer l’application. Il y n'est pas suffisamment d’espace disponible sur le disque.|Le disque dur est plein. Libérez de l’espace et essayez d’exécuter à nouveau l’application.|  
-|Trop grand nombre d’activations déployées tentent de se charger en même temps.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]limite le nombre d’applications différentes qui peuvent démarrer en même temps. Il s’agit principalement pour vous protéger contre les tentatives malveillantes consistant à provoquer des attaques de déni de service local [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] service ; les utilisateurs qui essaie de démarrer la même application à plusieurs reprises, de suite, se retrouve uniquement avec une seule instance de la application.|  
+|Trop grand nombre d’activations déployées tentent de se charger en même temps.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] limite le nombre d’applications différentes qui peuvent démarrer en même temps. Il s’agit principalement pour vous protéger contre les tentatives malveillantes consistant à provoquer des attaques de déni de service local [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] service ; les utilisateurs qui essaie de démarrer la même application à plusieurs reprises, de suite, se retrouve uniquement avec une seule instance de la application.|  
 |Raccourcis ne peut pas être activés sur le réseau.|Raccourcis vers un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application peut être démarrée uniquement sur le disque dur local. Ils ne peuvent pas être activés en ouvrant une URL qui pointe vers un fichier de raccourci sur un serveur distant.|  
 |L’application est trop volumineuse pour être exécutée en ligne en confiance partielle. Pour obtenir une assistance, contactez le fournisseur de l’application ou votre administrateur système.|Une application qui s’exécute en confiance partielle ne peut pas être supérieure à la moitié de la taille du quota d’application en ligne, qui est de 250 Mo par défaut.|  
   

@@ -2,26 +2,22 @@
 title: Déployer vers un dossier local - Visual Studio | Documents Microsoft
 ms.custom: ''
 ms.date: 11/22/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e575a6d885b079c1c5afd0af6cbdadcd1d38d96
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 522ea90be402088757db7163936ca70da47ba123
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Déployer une application web ou .NET Core vers un dossier local à l’aide de l’outil de publication de Visual Studio
 

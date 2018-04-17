@@ -1,12 +1,9 @@
 ---
-title: "Erreur : Le serveur Web n’a pas trouvé la ressource demandée | Documents Microsoft"
-ms.custom: 
+title: 'Erreur : Le serveur Web n’a pas trouvé la ressource demandée | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -15,17 +12,16 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debugger, Web application errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5cc83d8d2d0b37d3bb7203e1a20c93478fb96b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fcac96e2ffaaca86534d65ee16d51e1ce2dfa721
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Erreur : le serveur web n’a pas trouvé la ressource demandée
 Pour des raisons de sécurité, IIS a retourné une erreur générique.  

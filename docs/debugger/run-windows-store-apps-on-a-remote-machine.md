@@ -1,28 +1,26 @@
 ---
-title: "Exécuter les applications UWP sur un ordinateur distant | Documents Microsoft"
-ms.custom: 
+title: Exécuter les applications UWP sur un ordinateur distant | Documents Microsoft
+ms.custom: ''
 ms.date: 01/05/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
-caps.latest.revision: "43"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: f9d538cbc650de2d704c885a8eff6a897c9ef68e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 6ba0edc3c94ae3586615086d668df2c3bf9eaddf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Exécuter les applications UWP sur un ordinateur distant dans Visual Studio
   
@@ -51,11 +49,11 @@ Par défaut, **universel (protocole non chiffré)** est utilisé sur Windows 10.
 > [!WARNING]
 >  Il n’existe aucune sécurité de réseau lorsque vous définissez le mode d’authentification **universel (protocole non chiffré)** ou **aucun**. Choisissez ces modes uniquement si vous êtes sûr que le réseau n’est pas exposé à des programmes malveillants ou dangereux.  
   
-##  <a name="BKMK_DirectConnect"></a>Comment se connecter directement à l’aide d’un câble USB 
+##  <a name="BKMK_DirectConnect"></a> Comment se connecter directement à l’aide d’un câble USB 
 
 Sur Windows 10, vous pouvez déployer sur un périphérique USB connecté en choisissant **périphérique** au lieu de **ordinateur distant** en tant que la cible de déploiement (vous pouvez le faire dans le **Standard** barre d’outils ou dans la page de propriétés de débogage).
 
-##  <a name="BKMK_ConnectVS"></a>Configurer le projet Visual Studio pour le débogage distant  
+##  <a name="BKMK_ConnectVS"></a> Configurer le projet Visual Studio pour le débogage distant  
  Vous spécifiez le périphérique distant auquel se connecter dans les propriétés du projet. La procédure varie en fonction du langage de programmation. Vous pouvez taper le nom de réseau de l’appareil distant ou vous pouvez le sélectionner à partir de la **connexion à distance** boîte de dialogue.  
   
  ![Boîte de dialogue de connexion du débogueur distant sélectionnez](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
@@ -65,7 +63,7 @@ Sur Windows 10, vous pouvez déployer sur un périphérique USB connecté en cho
 > [!TIP]
 >  Si vous avez des problèmes pour vous connecter à un périphérique distant, entrez son adresse IP. Pour connaître l'adresse IP d'un périphérique, ouvrez une fenêtre de commande, puis tapez **ipconfig**. L'adresse IP s'affiche comme **IPv4 Address**.  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a>Choisissez le périphérique distant pour les projets c# et Visual Basic  
+###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Choisissez le périphérique distant pour les projets c# et Visual Basic  
   
 1.  Sélectionnez le nom du projet dans l'Explorateur de solutions, puis choisissez **Propriétés** dans le menu contextuel.  
   
@@ -77,7 +75,7 @@ Sur Windows 10, vous pouvez déployer sur un périphérique USB connecté en cho
 
     ![Propriétés du projet pour le débogage distant managé](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a>Choisissez le périphérique distant pour les projets JavaScript et C++  
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Choisissez le périphérique distant pour les projets JavaScript et C++  
   
 1.  Sélectionnez le nom du projet dans l'Explorateur de solutions, puis choisissez **Propriétés** dans le menu contextuel.  
   
@@ -87,19 +85,19 @@ Sur Windows 10, vous pouvez déployer sur un périphérique USB connecté en cho
   
 4.  Entrez le nom réseau du périphérique distant dans la zone **Nom de l'ordinateur** ou choisissez la flèche Bas de la zone pour sélectionner le périphérique dans la boîte de dialogue **Sélectionner une connexion au débogueur distant** .  
 
-    ![C &#43; &#43; propriétés pour le débogage distant de projet](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+    ![C&#43; &#43; propriétés pour le débogage distant de projet](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
   
-## <a name="BKMK_download"></a>Téléchargez et installez les outils à distance (créateurs avant mise à jour)
+## <a name="BKMK_download"></a> Téléchargez et installez les outils à distance (créateurs avant mise à jour)
 
 Si vous utilisez des versions de mise à jour d’un créateur versions antérieures de Windows 10, suivez ces instructions. Sinon, vous pouvez ignorer cette section.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>Configurer le débogueur distant
+### <a name="BKMK_setup"></a> Configurer le débogueur distant
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]  
   
-##  <a name="BKMK_RunRemoteDebug"></a>Démarrer une session de débogage à distance  
+##  <a name="BKMK_RunRemoteDebug"></a> Démarrer une session de débogage à distance  
  Le démarrage, la désactivation et l'exploration d'une session de débogage distant s'effectuent de la même façon que pour une session locale. Dans les versions de mise à jour du pre-créateur de Windows 10, assurez-vous que Remote Debugging Monitor s’exécute sur le périphérique distant.  
   
  Choisissez ensuite **Démarrer le débogage** dans le menu **Déboguer** (clavier : F5). Le projet est recompilé, puis déployé et démarré sur le périphérique distant. Le débogueur interrompt l'exécution aux points d'arrêt et vous pouvez effectuer un pas à pas détaillé, principal et sortant de votre code. Choisissez **Arrêter le débogage** pour terminer la session de débogage et fermer l'application distante.

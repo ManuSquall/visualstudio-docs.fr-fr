@@ -1,29 +1,27 @@
 ---
-title: "Mise en œuvre et l’inscription d’un fournisseur de Port | Documents Microsoft"
-ms.custom: 
+title: Mise en œuvre et l’inscription d’un fournisseur de Port | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1c05dc0bd15dc5c1959024327396d848cd0b1112
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 54d6a4ab90b5ad169c5c940f52322dfd9b4974a4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Mise en œuvre et l’inscription d’un fournisseur de Port
-Le rôle d’un fournisseur de port est d’effectuer le suivi et de fournir des ports, ce qui à leur tour gèrent les processus. À l’heure de qu'un port doit être créé, le fournisseur de port est instancié à l’aide de CoCreate avec le GUID du fournisseur de port (le Gestionnaire de session de débogage [SDM] utilise le fournisseur de port sélectionnée par l’utilisateur ou le fournisseur de port spécifié par le système de projet). Appelle ensuite le SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) pour voir si tous les ports peuvent être ajoutés. Si un port peut être ajouté, un nouveau port est demandé en appelant [ajouter un port](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) et en lui passant un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) qui décrit le port. `AddPort`Retourne un nouveau port représenté par une [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface.  
+Le rôle d’un fournisseur de port est d’effectuer le suivi et de fournir des ports, ce qui à leur tour gèrent les processus. À l’heure de qu'un port doit être créé, le fournisseur de port est instancié à l’aide de CoCreate avec le GUID du fournisseur de port (le Gestionnaire de session de débogage [SDM] utilise le fournisseur de port sélectionnée par l’utilisateur ou le fournisseur de port spécifié par le système de projet). Appelle ensuite le SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) pour voir si tous les ports peuvent être ajoutés. Si un port peut être ajouté, un nouveau port est demandé en appelant [ajouter un port](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) et en lui passant un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) qui décrit le port. `AddPort` Retourne un nouveau port représenté par une [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface.  
   
 ## <a name="discussion"></a>Discussion  
  Un port est créé par un fournisseur de port, qui est à son tour associé à un serveur de l’ordinateur ou de débogage. Un serveur peut énumérer ses fournisseurs de port via le[EnumPortSuppliers](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) (méthode) et un fournisseur de port peuvent énumérer ses ports via la [EnumPorts](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) (méthode).  

@@ -1,28 +1,26 @@
 ---
-title: "Déboguer du code XAML dans Blend | Documents Microsoft"
-ms.custom: 
+title: Déboguer du code XAML dans Blend | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 8406f07b6f74211b4df873c7eae054e9ab67749c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: efcb38238bfc1d8001e99d6755da1f3e2f02edcd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] pour déboguer le code XAML dans votre application. Lorsque vous générez un projet, des erreurs s’affichent dans le **résultats** Panneau de configuration. Double-cliquez sur une erreur pour localiser le balisage associé à l'erreur. Si vous avez besoin de plus d’espace de travail, vous pouvez masquer la **résultats** Panneau de configuration en appuyant sur F12.  
@@ -109,13 +107,13 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../debugger/includes/b
   
 1.  Double-cliquez sur la première erreur de la liste. La description est : « La valeur '<' n'est pas valide dans un attribut ». Lorsque vous double-cliquez sur l'erreur, le pointeur trouve l'emplacement correspondant dans le code. Le `<` est valide, étant placé devant `Button` et non pas devant un attribut, comme indiqué dans le message d'erreur. Si vous examinez la ligne de code précédente, vous remarquez que le guillemet anglais fermant de l'attribut `Top` est manquant. Tapez le guillemet anglais fermant. Notez que la liste d’erreurs dans le **résultats** volet mises à jour pour refléter vos modifications.  
   
-2.  Double-cliquez sur la description « '0' n'est pas valide au début d’un nom. » `Margin="0,149,0,0"`semble être correctement formé. Toutefois, notez que le codage en couleur de `Margin` n'est pas le même que celui des autres instances de `Margin` dans le code. L'absence de guillemets anglais fermants dans la paire nom/valeur précédente (`VerticalAlignment="Top`) fait que `Margin="` est lu comme faisant partie de la valeur de l'attribut précédent, et 0 est lu comme le début de la paire nom/ valeur. Tapez le guillemet anglais fermant pour `Top`. La liste d’erreurs dans le **résultats** volet mises à jour pour refléter vos modifications.  
+2.  Double-cliquez sur la description « '0' n'est pas valide au début d’un nom. » `Margin="0,149,0,0"` semble être correctement formé. Toutefois, notez que le codage en couleur de `Margin` n'est pas le même que celui des autres instances de `Margin` dans le code. L'absence de guillemets anglais fermants dans la paire nom/valeur précédente (`VerticalAlignment="Top`) fait que `Margin="` est lu comme faisant partie de la valeur de l'attribut précédent, et 0 est lu comme le début de la paire nom/ valeur. Tapez le guillemet anglais fermant pour `Top`. La liste d’erreurs dans le **résultats** volet mises à jour pour refléter vos modifications.  
   
 3.  Double-cliquez sur l’erreur restante : « Le Bouton d’étiquette XML de fermeture ne correspond pas » Le pointeur se trouve à la fermeture **grille** balise (`</Grid>`), indiquant que l’erreur se trouve dans le `Grid` objet. Notez que la balise de fermeture est manquante dans le deuxième objet `Button`. Après avoir ajouté la clôture `/`, le **résultats** liste du volet est mis à jour. Ces erreurs initiales sont à présent résolues, mais deux erreurs supplémentaires ont été identifiées.  
   
 4.  Double-cliquez sur « Le membre "contenu" n'est pas reconnu ou n'est pas accessible. ». Le `c` dans `content` devrait être en majuscules. Remplacez le « c » minuscule par un « c » majuscule.  
   
-5.  Double-cliquez sur : « Il n'existe pas de propriété "Mame" dans l'espace de nom "http://schemas.microsoft.com/winfx/2006/xaml". ». Le « M » dans « Mame » devrait être un « N ». Remplacez le « M » par un « N ». Maintenant que le code XAML peut être analysé, l'application s'affiche sur l'aire de conception.  
+5.  Double-cliquez sur « la propriété « Mame » n’existe pas dans le 'http://schemas.microsoft.com/winfx/2006/xaml' espace de noms. » Le « M » dans « Mame » devrait être un « N ». Remplacez le « M » par un « N ». Maintenant que le code XAML peut être analysé, l'application s'affiche sur l'aire de conception.  
   
      ![Débogage de code XAML dans Blend pour Visual Studio](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")  
   

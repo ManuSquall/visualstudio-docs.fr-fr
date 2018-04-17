@@ -1,12 +1,10 @@
 ---
-title: "Comment : rechercher le nom du processus ASP.NET | Documents Microsoft"
-ms.custom: 
+title: 'Comment : rechercher le nom du processus ASP.NET | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - ASP.NET debugging, ASP.NET process
 - ASP.NET process
 ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: e542e58bab483a1f20029bb66a073ae07d45afba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 4bc42e01ec2db878647123fc9a7fbcfa36e395f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Comment : rechercher le nom du processus ASP.NET
 Pour créer un attachement à une application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] en cours d'exécution, vous devez connaître le nom du processus [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] :  

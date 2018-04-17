@@ -1,29 +1,25 @@
 ---
 title: IDebugEngine2::Attach | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::Attach
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb45d2196a9f84b8f956b8ede665df6e3ed249c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 264ef65472bf3d003852f2f7efc0fe21ee45d2a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Attache un moteur de débogage (DE) à un programme ou des programmes. Appelée par le Gestionnaire de session de débogage (SDM) lors de la D’est en cours d’exécution in-process pour le SDM.  
@@ -72,11 +68,11 @@ int Attach(
 ## <a name="remarks"></a>Notes  
  Il existe trois raisons pour l’attachement à un programme, comme suit :  
   
--   `ATTACH_REASON_LAUNCH`Indique que le D’attachement au programme, car l’utilisateur a lancé le processus qui le contient.  
+-   `ATTACH_REASON_LAUNCH` Indique que le D’attachement au programme, car l’utilisateur a lancé le processus qui le contient.  
   
--   `ATTACH_REASON_USER`Indique que l’utilisateur a demandé explicitement le DE joindre à un programme (ou le processus qui contient un programme).  
+-   `ATTACH_REASON_USER` Indique que l’utilisateur a demandé explicitement le DE joindre à un programme (ou le processus qui contient un programme).  
   
--   `ATTACH_REASON_AUTO`Indique le D’attachement à un programme particulier, car il est déjà déboguer des programmes dans un processus particulier. Également appelé attachement automatique.  
+-   `ATTACH_REASON_AUTO` Indique le D’attachement à un programme particulier, car il est déjà déboguer des programmes dans un processus particulier. Également appelé attachement automatique.  
   
  Lorsque cette méthode est appelée, le DE doit envoyer ces événements dans l’ordre :  
   
