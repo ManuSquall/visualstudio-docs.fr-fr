@@ -1,12 +1,10 @@
 ---
-title: "Création d’élément modèles et des modèles de projet pour les éléments de projet SharePoint | Documents Microsoft"
-ms.custom: 
+title: Création d’élément modèles et des modèles de projet pour les éléments de projet SharePoint | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating custom templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7f64abf2327d4e7702020a53c88d0d2c640e0756
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3f71352dad7b77b2ce92816e84a7c90ec16710ed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Création de modèles d'élément et de modèles de projet pour les éléments de projet SharePoint
   Lorsque vous définissez un type d’élément de projet SharePoint personnalisé, vous pouvez l’associer avec un modèle d’élément ou un modèle de projet afin que les autres développeurs peuvent utiliser l’élément de projet dans Visual Studio. Vous pouvez également créer un Assistant pour le modèle.  
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/10/2018
   
  Modèles d’élément et les modèles de projet sont des fichiers .zip qui contiennent les fichiers qui sont utilisés par Visual Studio pour créer un élément de projet ou le projet. Pour plus d’informations sur les notions de base des modèles d’élément et les modèles de projet, consultez [création de modèles de projet et élément](/visualstudio/ide/creating-project-and-item-templates).  
   
-##  <a name="creatingitemtemplates"></a>Création de modèles d’élément  
+##  <a name="creatingitemtemplates"></a> Création de modèles d’élément  
  Lorsque vous créez un modèle d’élément pour un élément de projet SharePoint, il existe certains fichiers sont toujours requis et les fichiers facultatifs qui peuvent être utilisées par certains types d’éléments de projet. Pour une procédure pas à pas qui montre comment définir un type d’élément de projet SharePoint et créer un modèle d’élément pour celle-ci, consultez [procédure pas à pas : création d’un élément de projet d’Action personnalisé avec un modèle d’élément, partie 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Le tableau suivant répertorie les fichiers requis pour créer un modèle d’élément pour un élément de projet SharePoint.  

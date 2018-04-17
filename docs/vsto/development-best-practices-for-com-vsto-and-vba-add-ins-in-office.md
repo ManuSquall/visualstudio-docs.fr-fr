@@ -1,23 +1,24 @@
 ---
-title: "Développement de meilleures pratiques pour COM, VSTO et VBA compléments dans Office | Documents Microsoft"
-ms.custom: 
+title: Développement de meilleures pratiques pour COM, VSTO et VBA compléments dans Office | Documents Microsoft
+ms.custom: ''
 ms.date: 07/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: 
-helpviewer_keywords: 
+ms.technology:
+- office-development
+ms.topic: conceptual
+dev_langs:
+- ''
+helpviewer_keywords:
+- ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2a1b6b9270207b3d0f8d415655231af4456e61b4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Meilleures pratiques de développement pour COM, VSTO et VBA compléments dans Office
   Si vous développez des Compléments VSTO COM ou de VBA pour Office, suivez les meilleures pratiques de développement décrits dans cet article.   Cela aide à vérifier :
@@ -62,7 +63,7 @@ Les clients demandent des éditeurs de logiciels pour fournir des instructions d
 
 Pour fournir des instructions de prise en charge pour les applications clientes Office (par exemple, Word ou Excel), commencez par vérifier que vos compléments s’exécutent dans la version actuelle d’Office, puis validez à fournir des mises à jour si votre complément s’arrête dans une version ultérieure. Il est inutile de tester vos compléments lorsque Microsoft publie une nouvelle build ou une mise à jour Office. Microsoft change rarement la plateforme d’extensibilité COM, VSTO et VBA dans Office, et ces modifications seront documentées.
 
->Important : Microsoft gère une liste des compléments pris en charge pour les rapports de compatibilité et les informations de contact d’éditeurs de logiciels. Pour obtenir votre complément répertorié, consultez [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
+>Important : Microsoft gère une liste des compléments pris en charge pour les rapports de compatibilité et les informations de contact d’éditeurs de logiciels. Pour obtenir votre complément répertorié, consultez [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Utiliser Process Monitor pour vous aider à déboguer l’installation ou le chargement des problèmes
 Si votre complément présente des problèmes de compatibilité pendant l’installation ou de la charge, il peuvent être liées à des problèmes avec un accès de fichier ou du Registre. Utilisez [Process Monitor](/sysinternals/downloads/procmon) ou un outil de débogage similaire pour vous connecter et de comparer le comportement par rapport à un environnement de travail pour aider à identifier le problème.

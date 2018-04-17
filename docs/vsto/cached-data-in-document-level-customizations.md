@@ -1,12 +1,10 @@
 ---
-title: "Mise en cache des données dans les personnalisations au niveau du Document | Documents Microsoft"
-ms.custom: 
+title: Mise en cache des données dans les personnalisations au niveau du Document | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1fe9465c3f238941ace0d5b6fc438c7d5d93ec64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0919e046f9e50578df46853c6db9f60cea2f71e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Données mises en cache dans des personnalisations au niveau du document
   Des objectifs principaux des personnalisations au niveau du document sont à séparer les données de la vue dans des documents Office. Les données font référence aux informations stockées dans le document, y compris des nombres et du texte. Vue fait référence à l’interface utilisateur et le modèle objet de Microsoft Office Word et Microsoft Office Excel.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Pour plus d’informations sur les personnalisations au niveau du document, consultez [présentation du développement de Solutions Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) et [Architecture des personnalisations au niveau du Document](../vsto/architecture-of-document-level-customizations.md).  
+ Pour plus d’informations sur les personnalisations au niveau du document, consultez [présentation du développement de Solutions Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) et [Architecture des personnalisations de niveau Document](../vsto/architecture-of-document-level-customizations.md).  
   
 ## <a name="understanding-the-cached-data-programming-model"></a>Présentation du modèle de programmation de données mises en cache  
  L’îlot de données peut contenir n’importe quel objet dans votre solution qui répond à certaines exigences. Ces objets incluent <xref:System.Data.DataSet> objets, <xref:System.Data.DataTable> objets et tout autre objet qui peut être sérialisé par la <xref:System.Xml.Serialization.XmlSerializer> classe. Pour plus d’informations, consultez [mise en cache des données](../vsto/caching-data.md).  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
  Contrôles hôtes sont étendus des versions des objets natifs dans les modèles objet Excel et Word. Contrairement aux objets natifs, les contrôles hôtes peuvent être liés directement aux objets de données managées. Pour plus d’informations, consultez [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md) et [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ## <a name="accessing-cached-data-on-the-server"></a>L’accès aux données mises en cache sur le serveur  
- Pour accéder aux données mises en cache dans un document, vous pouvez utiliser la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe. Cette classe fait partie de la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], et il peut être utilisé sur un serveur sans exécuter Excel ou Word. Lorsque l’utilisateur ouvre le document une fois que vous modifiez les données mises en cache, tous les contrôles qui sont liés aux données sont automatiquement synchronisés avec les modifications et l’utilisateur est présenté avec les données mises à jour. Pour plus d'informations, consultez [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md).  
+ Pour accéder aux données mises en cache dans un document, vous pouvez utiliser la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe. Cette classe fait partie de la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], et il peut être utilisé sur un serveur sans exécuter Excel ou Word. Lorsque l’utilisateur ouvre le document une fois que vous modifiez les données mises en cache, tous les contrôles qui sont liés aux données sont automatiquement synchronisés avec les modifications et l’utilisateur est présenté avec les données mises à jour. Pour plus d'informations, consultez [Accès aux données des documents sur le serveur](../vsto/accessing-data-in-documents-on-the-server.md).  
   
  Excel et Word ne sont pas nécessaires pour écrire dans les données sur le serveur, uniquement pour les afficher sur le client. Excel et Word est même inutile être installé sur le serveur. Cela fournit une plus grande évolutivité et la possibilité d’effectuer un traitement rapide de lots de documents qui contiennent des îlots de données.  
   
@@ -53,7 +52,7 @@ ms.lasthandoff: 01/10/2018
  Le stockage des données dans l’îlot de données permet des scénarios hors connexion. Lorsqu’un utilisateur ouvre un document tout d’abord ou demande le document à partir du serveur, l’îlot de données est remplie avec les données les plus récentes. L’îlot de données est mis en cache dans le document et est ensuite disponible en mode hors connexion. L’utilisateur (et votre code) peuvent manipuler les données, même si aucune connexion active n’est disponible. Lorsque l’utilisateur se reconnecte, les modifications apportées aux données peuvent être propagées à la source de données de serveur.  
   
 ## <a name="cached-data-and-custom-xml-parts-compared"></a>Données mises en cache et comparées des parties XML personnalisées  
- Parties XML personnalisées ont été introduites dans Microsoft Office system 2007 comme un moyen de stocker des fragments XML arbitraires dans un document. Bien que des parties XML personnalisées sont utiles dans de nombreux scénarios d’identiques en tant que le cache de données, il existe quelques différences entre l’îlot de données et les parties XML personnalisées. Pour plus d’informations sur les parties XML personnalisées, consultez [une vue d’ensemble des parties XML personnalisées](../vsto/custom-xml-parts-overview.md).  
+ Parties XML personnalisées ont été introduites dans Microsoft Office system 2007 comme un moyen de stocker des fragments XML arbitraires dans un document. Bien que des parties XML personnalisées sont utiles dans de nombreux scénarios d’identiques en tant que le cache de données, il existe quelques différences entre l’îlot de données et les parties XML personnalisées. Pour plus d'informations sur les parties XML personnalisées, consultez [Vue d'ensemble des parties XML personnalisées](../vsto/custom-xml-parts-overview.md).  
   
  Le tableau suivant répertorie certaines des différences et similitudes.  
   

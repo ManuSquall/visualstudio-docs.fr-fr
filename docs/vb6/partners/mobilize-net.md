@@ -1,11 +1,10 @@
 ---
-title: "Mobiliser d’accompagnement de mise à niveau de Visual Basic de .net (VBUC) | Documents Microsoft"
-description: "Mobiliser outil de .net pour la migration à partir de Visual Basic 6 vers Visual Basic .NET et c#"
+title: Mobiliser d’accompagnement de mise à niveau de Visual Basic de .net (VBUC) | Documents Microsoft
+description: Mobiliser outil de .net pour la migration à partir de Visual Basic 6 vers Visual Basic .NET et c#
 ms.date: 09/05/2017
 ms.technology:
 - devlang-vb
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - visual-basic
 author: rpetrusha
@@ -13,11 +12,11 @@ ms.author: ronpet
 manager: wpickett
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7fa2a16143368b829f29f43a4c8f60536b55c52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d80fa0e2f00ec9ea834483e8dd2c5c262a5eea0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobilizenets-visual-basic-upgrade-companion-vbuc"></a>Mobiliser d’accompagnement de mise à niveau de Visual Basic de .net (VBUC)
 
@@ -87,7 +86,7 @@ Voici quelques-unes des caractéristiques uniques de l’Assistant Mise à nivea
 Pour une liste de fonctionnalités mis à jour et plus détaillées, visitez le [site de techniques de VBUC](http://www.vbtonet.com/?msdn).
 
 ## <a name="learn-more-and-try-it-for-yourself"></a>En savoir plus et essayer par vous-même
-En savoir plus sur le VBUC, lire la preuve des clients, des livres blancs de l’accès, des vidéos et webcasts ou télécharger une version d’évaluation gratuite à http://www.mobilize.net/solution/msdn.
+En savoir plus sur le VBUC, lire la preuve du client, accéder à des livres blancs, des vidéos et des présentations techniques en ligne ou télécharger une version d’évaluation gratuite à http://www.mobilize.net/solution/msdn.
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

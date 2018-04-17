@@ -1,12 +1,10 @@
 ---
 title: Localisation de Solutions SharePoint | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.GlobalAndFeatureResource
 - VS.SharePoint.Project.AddResourceDialog
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7a1ca2b08bda0a3336b573da7df910872e13470b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>Localisation de solutions SharePoint
   Le processus de préparation de vos applications afin qu’ils peuvent être utilisés dans le monde entier est appelé à la localisation. Localisation est traduction de ressources pour une culture spécifique. Pour plus d’informations, consultez [globalisation et localisation d’Applications](/visualstudio/ide/globalizing-and-localizing-applications). Cette rubrique fournit une vue d’ensemble de la localisation d’une solution SharePoint.  
@@ -90,7 +89,7 @@ $Resources:String ID
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>  
@@ -102,7 +101,7 @@ $Resources:String ID
 <asp:literal ID="<ID>" runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
@@ -113,7 +112,7 @@ $Resources:String ID
 ### <a name="localizing-code"></a>Localisation du Code  
  En plus de la localisation des chaînes de fonctionnalité et [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] balisage, vous devez également localiser les chaînes de message et les chaînes d’erreur qui s’affichent dans le code de votre solution. Localisés d’information et messages d’erreur sont contenus dans des assemblys satellites. Les assemblys satellites contiennent des chaînes qui sont visibles par les utilisateurs, tels que [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] messages texte et de sortie comme les exceptions.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]utilise le modèle de hub et spoke .NET Framework standard. Le concentrateur ou un assembly de programme principal contient les ressources de langue par défaut. Les spokes, ou assemblys satellites, contiennent les ressources spécifiques à une langue. Pour plus d’informations, consultez [Empaquetage et déploiement de ressources](http://go.microsoft.com/fwlink/?LinkId=179280). Assemblys satellites sont compilés à partir de fichiers de ressources (.resx). Lorsque vous ajoutez des fichiers de ressources de langue spécifiques à votre projet et le package de solution, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compile les fichiers de ressources dans des assemblys satellites nommés *nom du projet*. resources.dll.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utilise le modèle de hub et spoke .NET Framework standard. Le concentrateur ou un assembly de programme principal contient les ressources de langue par défaut. Les spokes, ou assemblys satellites, contiennent les ressources spécifiques à une langue. Pour plus d’informations, consultez [Empaquetage et déploiement de ressources](http://go.microsoft.com/fwlink/?LinkId=179280). Assemblys satellites sont compilés à partir de fichiers de ressources (.resx). Lorsque vous ajoutez des fichiers de ressources de langue spécifiques à votre projet et le package de solution, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compile les fichiers de ressources dans des assemblys satellites nommés *nom du projet*. resources.dll.  
   
  Comme avec le balisage ASPX, localiser du code d’application SharePoint en ajoutant des éléments de projet de fichier de ressources distincts pour votre projet ; un pour la langue par défaut et un pour chaque langue est localisée. Toutefois, comme mentionné précédemment, si vous avez déjà des fichiers de ressources pour la localisation du balisage ASPX, vous pouvez les réutiliser pour localiser le code. Si vous avez besoin créer des fichiers de ressources, nommez le fichier de ressources de langue par défaut de votre choix, avec l’extension .resx. Affectez des fichiers de ressources localisés le même nom que celui ajouté avec la culture spécifique au langage [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Définir la propriété Action de génération de chaque fichier de ressources pour la ressource incorporée pour permettre la création d’assemblys de ressources satellites.  
   

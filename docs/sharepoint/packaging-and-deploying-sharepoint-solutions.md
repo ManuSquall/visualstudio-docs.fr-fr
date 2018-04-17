@@ -1,12 +1,10 @@
 ---
-title: "Empaquetage et déploiement de Solutions SharePoint | Documents Microsoft"
-ms.custom: 
+title: Empaquetage et déploiement de Solutions SharePoint | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging and deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e25d0829305f414712590296b6121d62583736a2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8faeb21b7c32f1af91a9149b1b9f6bcadafeed7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="packaging-and-deploying-sharepoint-solutions"></a>Empaquetage et déploiement de solutions SharePoint
   En règle générale, une solution SharePoint est déployée sur un serveur SharePoint à l’aide d’un fichier de package (.wsp) de solution. Vous pouvez utiliser Visual Studio pour organiser vos éléments de projet SharePoint en fonctionnalités et pour créer un package pour déployer vos fonctionnalités SharePoint.  
@@ -39,12 +38,12 @@ ms.lasthandoff: 01/10/2018
   
 -   [Déploiement de fichiers dans les Solutions SharePoint](#DeployingFiles)  
   
-##  <a name="Creating"></a>Création de fonctionnalités et Packages  
+##  <a name="Creating"></a> Création de fonctionnalités et Packages  
  Vous pouvez utiliser Visual Studio pour regrouper des éléments SharePoint connexes dans un *fonctionnalité*. Par exemple, une fonctionnalité pour une définition de liste de Contacts peut inclure l’instance de liste et la définition de liste. Vous pouvez combiner ces deux éléments dans une fonctionnalité unique pour le déploiement. Pour plus d’informations sur les fonctionnalités, consultez [bloc de construction : fonctionnalités](http://go.microsoft.com/fwlink/?LinkID=169183).  
   
  Ensuite, vous pouvez créer un package de solution SharePoint (.wsp) pour regrouper plusieurs fonctionnalités, définitions de site, assemblys et autres fichiers dans un package unique, qui stocke les fichiers dans un format requis par SharePoint pour déployer les fichiers sur le serveur. Pour plus d’informations, consultez [bloc de construction : Solutions](http://go.microsoft.com/fwlink/?LinkID=169186).  
   
-##  <a name="Tools"></a>Fonctionnalité et empaquetage de prise en charge de l’outil  
+##  <a name="Tools"></a> Fonctionnalité et empaquetage de prise en charge de l’outil  
  Vous pouvez utiliser les outils de développement SharePoint dans Visual Studio pour organiser rapidement vos fichiers SharePoint en fonctionnalités et packages de solution pour faciliter le déploiement. Vous pouvez utiliser les outils suivants pour configurer le package de solution et de fonctionnalité.  
   
 -   Concepteur de fonctionnalités et le Concepteur de packages.  
@@ -88,12 +87,12 @@ ms.lasthandoff: 01/10/2018
 ### <a name="solution-explorer"></a>Explorateur de solutions  
  Vous pouvez utiliser l’Explorateur de solutions pour parcourir et ouvrir les fichiers du projet SharePoint. Utilisez le menu contextuel dans l’Explorateur de solutions pour ajouter des fonctionnalités, des récepteurs d’événements et les ressources de fonctionnalité. En outre, vous pouvez ouvrir le Concepteur de fonctionnalités et les concepteurs de Package pour configurer les fonctionnalités et les packages de déploiement.  
   
-##  <a name="Deploying"></a>Déploiement de Solutions SharePoint  
+##  <a name="Deploying"></a> Déploiement de Solutions SharePoint  
  Une fois que vous personnalisez les fonctionnalités et les packages dans Visual Studio, vous pouvez créer un fichier .wsp à déployer sur les serveurs SharePoint. Vous pouvez utiliser Visual Studio pour déboguer et tester le fichier .wsp uniquement sur le serveur SharePoint sur l’ordinateur de développement. Pour plus d’informations sur la façon de déployer vos solutions SharePoint sur un serveur SharePoint distant, consultez [déploiement d’une Solution](http://go.microsoft.com/fwlink/?LinkID=169194).  
   
  Vous pouvez également personnaliser les étapes de déploiement sur l’ordinateur de développement. Pour plus d’informations, consultez [déploiement, la publication et la mise à niveau de Packages de Solution SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
   
-##  <a name="DeployingFiles"></a>Déploiement de fichiers dans les Solutions SharePoint  
+##  <a name="DeployingFiles"></a> Déploiement de fichiers dans les Solutions SharePoint  
  En règle générale, lorsque vous ajoutez un élément de projet SharePoint à votre solution SharePoint, tous les fichiers requis sont inclus. Les fichiers qui peuvent être compilés (fichiers de code) sont intégrées à l’assembly de sortie de la solution. Toutefois, vous devrez également ajouter des fichiers non compilables, par exemple, .xml, .txt ou les fichiers de ressources à un projet SharePoint. Ces fichiers ne sont pas créés automatiquement dans votre solution. Pour vous assurer qu’ils sont empaquetés, ajoutez les fichiers à un dossier mappé ou à un élément de projet SharePoint.  
   
  Fichiers ajoutés aux dossiers mappés sont automatiquement copiés dans la ruche SharePoint lors de la solution est déployée. Fichiers ajoutés à un élément de projet SharePoint sont déployés à l’emplacement spécifié dans le **emplacement de déploiement** propriété pour chaque fichier, défini partiellement selon la **Type de déploiement** propriété. Par défaut, le **Type de déploiement** valeur de propriété est **NoDeployment**, ce qui signifie que le fichier n’est pas déployé avec la solution. Vous devez définir une autre valeur pour la propriété à inclure le fichier dans le package.  
