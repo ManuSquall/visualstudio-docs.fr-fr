@@ -1,11 +1,8 @@
 ---
-title: "Procédure pas à pas : Création d’un Service WCF simple dans les Windows Forms | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création d’un Service WCF simple dans les Windows Forms | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - WCF services
 - WCF services, walkthrough
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
-caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: c45ea549f17d71fd524a96e7d019c2b0d86bc628
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: cacd1e15d2b20c4c24056416df4f9d25ea87474e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Procédure pas à pas : Création d’un Service WCF simple dans les Windows Forms
 Cette procédure pas à pas montre comment créer un simple service [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)], le tester et y accéder à partir d'une application Windows Forms.  
@@ -79,7 +76,7 @@ Cette procédure pas à pas montre comment créer un simple service [!INCLUDE[vs
   
 2.  Dans le **Client Test WCF** formulaire, double-cliquez sur le **GetData()** méthode sous **IService1**. Le **GetData** onglet s’affiche.  
   
-     ![La méthode GetData &#40; &#41; méthode](../data-tools/media/wcf4.png "wcf4")  
+     ![La méthode GetData&#40; &#41; méthode](../data-tools/media/wcf4.png "wcf4")  
   
 3.  Dans le **demande** boîte, sélectionnez le **valeur** champ et type `Hello`.  
   

@@ -1,11 +1,8 @@
 ---
-title: "L’enregistrement de données | Documents Microsoft"
-ms.custom: 
+title: L’enregistrement de données | Documents Microsoft
+ms.custom: ''
 ms.date: 10/19/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - DataRow.RowState
 - DataSet.GetChanges
@@ -20,18 +17,18 @@ helpviewer_keywords:
 - saving data
 - updating databases
 ms.assetid: 21d2b115-62e4-4ac9-a873-dcbb535b8af8
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 9f4e4cd3ebb12e59fc4b7fbcf16122b381d5f610
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 6df9761de31aa44b212b38e5c5b5598ef6a7605b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="saving-data"></a>Enregistrement de données
 L’enregistrement de données est le processus consistant à rendre persistantes les données dans le modèle de données d’une application dans le magasin de données d’origine, généralement une base de données relationnel telles que SQL Server.  

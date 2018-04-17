@@ -1,23 +1,21 @@
 ---
-title: "Présentation de SAL | Documents Microsoft"
-ms.custom: 
+title: Présentation de SAL | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: deb1825bb514afec4db3bf705ac787aadb88cc11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-sal"></a>Présentation de SAL
 Le langage d’annotation du code source Microsoft (SAL) fournit un ensemble d’annotations que vous pouvez utiliser pour décrire comment une fonction utilise ses paramètres, les hypothèses sur lesquelles elle émet à leur sujet et les garanties qu’elle quand elle s’achève. Les annotations sont définies dans le fichier d’en-tête `<sal.h>`. Analyse du code Visual Studio pour C++ utilise des annotations SAL pour modifier son analyse de fonctions. Pour plus d’informations sur SAL 2.0 pour le développement de pilote Windows, consultez [Annotations SAL 2.0 pour Windows pilotes](http://go.microsoft.com/fwlink/?LinkId=250979).  
@@ -47,7 +45,7 @@ void * memcpy(
   
  La documentation contient deux bits d’information qui suggère que votre code doit conserver certaines propriétés pour garantir l’exactitude du programme :  
   
--   `memcpy`copie le `count` d’octets à partir de la mémoire tampon source à la mémoire tampon de destination.  
+-   `memcpy` copie le `count` d’octets à partir de la mémoire tampon source à la mémoire tampon de destination.  
   
 -   La mémoire tampon de destination doit être au moins aussi grande que la mémoire tampon source.  
   
@@ -131,9 +129,9 @@ wchar_t * wmemcpy(
   
 -   L’appelant doit fournir la mémoire tampon et l’initialiser.  
   
--   `_In_`Spécifie « en lecture seule ». Une erreur courante consiste à appliquer `_In_` à un paramètre qui doit avoir le `_Inout_` annotation à la place.  
+-   `_In_` Spécifie « en lecture seule ». Une erreur courante consiste à appliquer `_In_` à un paramètre qui doit avoir le `_Inout_` annotation à la place.  
   
--   `_In_`est autorisé mais ignoré par l’Analyseur de pointeur non scalaires.  
+-   `_In_` est autorisé mais ignoré par l’Analyseur de pointeur non scalaires.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  
@@ -161,7 +159,7 @@ void BadInCaller()
  Si vous utilisez Visual Studio Code Analysis dans cet exemple, il vérifie que les appelants passer un pointeur non Null à un tampon initialisé pour `pInt`. Dans ce cas, `pInt` le pointeur ne peut pas être NULL.  
   
 ### <a name="example-the-inopt-annotation"></a>Exemple : Le _In_opt\_ Annotation  
- `_In_opt_`est le même que `_In_`, sauf que le paramètre d’entrée est autorisé à avoir la valeur NULL et, par conséquent, la fonction doit vérifier cela.  
+ `_In_opt_` est le même que `_In_`, sauf que le paramètre d’entrée est autorisé à avoir la valeur NULL et, par conséquent, la fonction doit vérifier cela.  
   
 ```cpp  
   
@@ -189,7 +187,7 @@ void InOptCaller()
  Analyse du Code Visual Studio valide que la fonction vérifie les valeurs NULL avant d’accéder à la mémoire tampon.  
   
 ### <a name="example-the-out-annotation"></a>Exemple : Le _Out\_ Annotation  
- `_Out_`prend en charge un scénario courant dans lequel un pointeur non NULL qui pointe vers une mémoire tampon d’élément est transmis et la fonction initialise l’élément. L’appelant ne possède pas d’initialisation de la mémoire tampon avant l’appel. la fonction appelée promet initialisez-le avant d’être retournée.  
+ `_Out_` prend en charge un scénario courant dans lequel un pointeur non NULL qui pointe vers une mémoire tampon d’élément est transmis et la fonction initialise l’élément. L’appelant ne possède pas d’initialisation de la mémoire tampon avant l’appel. la fonction appelée promet initialisez-le avant d’être retournée.  
   
 ```cpp  
   
@@ -216,7 +214,7 @@ void OutCaller()
  L’outil analyse de Code Visual Studio valide que l’appelant passe un pointeur non NULL dans une mémoire tampon pour `pInt` et que la mémoire tampon est initialisée par la fonction avant d’être retournée.  
   
 ### <a name="example-the-outopt-annotation"></a>Exemple : Le _Out_opt\_ Annotation  
- `_Out_opt_`est le même que `_Out_`, sauf que le paramètre peut être NULL et, par conséquent, la fonction doit vérifier cela.  
+ `_Out_opt_` est le même que `_Out_`, sauf que le paramètre peut être NULL et, par conséquent, la fonction doit vérifier cela.  
   
 ```cpp  
   
@@ -244,7 +242,7 @@ void OutOptCaller()
  Analyse du Code Visual Studio valide que cette fonction vérifie les valeurs NULL avant `pInt` est déréférencé et si `pInt` n’est pas NULL, que la mémoire tampon est initialisée par la fonction avant d’être retournée.  
   
 ### <a name="example-the-inout-annotation"></a>Exemple : Le _Inout\_ Annotation  
- `_Inout_`est utilisé pour annoter un paramètre de pointeur qui peut être modifié par la fonction. Le pointeur doit pointer vers les données initialisées valides avant l’appel, et même si elle est modifiée, elle doit toujours avoir une valeur valide en retour. L’annotation indique que la fonction peut librement lire et écrire dans le tampon d’un élément. L’appelant doit fournir la mémoire tampon et l’initialiser.  
+ `_Inout_` est utilisé pour annoter un paramètre de pointeur qui peut être modifié par la fonction. Le pointeur doit pointer vers les données initialisées valides avant l’appel, et même si elle est modifiée, elle doit toujours avoir une valeur valide en retour. L’annotation indique que la fonction peut librement lire et écrire dans le tampon d’un élément. L’appelant doit fournir la mémoire tampon et l’initialiser.  
   
 > [!NOTE]
 >  Comme `_Out_`, `_Inout_` doivent s’appliquer à une valeur modifiable.  
@@ -276,7 +274,7 @@ void BadInOutCaller()
  Analyse du Code Visual Studio vérifie que les appelants passer un pointeur non NULL à un tampon initialisé pour `pInt`et que, avant le retour, `pInt` est toujours non NULL et la mémoire tampon est initialisée.  
   
 ### <a name="example-the-inoutopt-annotation"></a>Exemple : Le _Inout_opt\_ Annotation  
- `_Inout_opt_`est le même que `_Inout_`, sauf que le paramètre d’entrée est autorisé à avoir la valeur NULL et, par conséquent, la fonction doit vérifier cela.  
+ `_Inout_opt_` est le même que `_Inout_`, sauf que le paramètre d’entrée est autorisé à avoir la valeur NULL et, par conséquent, la fonction doit vérifier cela.  
   
 ```cpp  
   
@@ -306,7 +304,7 @@ void InOutOptCaller()
  Analyse du Code Visual Studio valide que cette fonction vérifie les valeurs NULL avant d’accéder à la mémoire tampon et si `pInt` n’est pas NULL, que la mémoire tampon est initialisée par la fonction avant d’être retournée.  
   
 ### <a name="example-the-outptr-annotation"></a>Exemple : Le _Outptr\_ Annotation  
- `_Outptr_`est utilisé pour annoter un paramètre qui est conçue pour retourner un pointeur.  Le paramètre lui-même ne doit pas être NULL et la fonction appelée retourne un pointeur non NULL dedans, et ce pointeur pointe vers les données initialisées.  
+ `_Outptr_` est utilisé pour annoter un paramètre qui est conçue pour retourner un pointeur.  Le paramètre lui-même ne doit pas être NULL et la fonction appelée retourne un pointeur non NULL dedans, et ce pointeur pointe vers les données initialisées.  
   
 ```cpp  
   
@@ -337,7 +335,7 @@ void OutPtrCaller()
  Analyse du Code Visual Studio valide que l’appelant passe un pointeur non NULL `*pInt`, et que la mémoire tampon est initialisée par la fonction avant d’être retournée.  
   
 ### <a name="example-the-outptropt-annotation"></a>Exemple : Le _Outptr_opt\_ Annotation  
- `_Outptr_opt_`est le même que `_Outptr_`, sauf que le paramètre est facultatif, l’appelant peut passer un pointeur NULL pour le paramètre.  
+ `_Outptr_opt_` est le même que `_Outptr_`, sauf que le paramètre est facultatif, l’appelant peut passer un pointeur NULL pour le paramètre.  
   
 ```cpp  
   

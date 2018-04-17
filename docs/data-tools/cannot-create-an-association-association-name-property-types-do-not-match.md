@@ -1,23 +1,20 @@
 ---
-title: "Impossible de créer une association &lt;nom de l’association&gt; -types de propriété ne correspondent pas | Documents Microsoft"
-ms.custom: 
+title: Impossible de créer une association &lt;nom de l’association&gt; -types de propriété ne correspondent pas | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: be8bbbec67b70576aa3a059dd400d46c92137ab9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: e6075694b9c33f942cdcb40d6bda2dd4a4ce8139
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossible de créer une association &lt;nom de l’association&gt; -types de propriété ne correspondent pas
 Impossible de créer une association \<nom de l’association >-types de propriété ne correspondent pas. Propriétés n’ont pas de types correspondants : \<les noms de propriétés >.  

@@ -2,20 +2,20 @@
 title: FxCopCmd (erreurs) | Documents Microsoft
 ms.date: 10/19/2016
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 ms.author: gewarren
 author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b407167a772a82b56c39ba222dc3c1f563f5c012
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 7a53f8810331a678cb84958e1a1269767064b478
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd (erreurs) outil
 
@@ -25,19 +25,19 @@ Le tableau suivant décrit les codes d’erreur retournés par FxCopCmd :
 
 |Error|Valeur numérique|
 |-----------|-------------------|
-|Pas d’erreurs|0x0|
-|Erreur d’analyse|0x1|
-|Exceptions de règle|0x2|
-|Erreur de chargement du projet|0x4|
-|Erreur de chargement d’assembly|0x8|
+|Pas d’erreurs|0 x 0|
+|Erreur d’analyse|0 x 1|
+|Exceptions de règle|0 x 2|
+|Erreur de chargement du projet|0 x 4|
+|Erreur de chargement d’assembly|0 x 8|
 |Erreur de chargement de bibliothèque de règle|0x10|
-|Erreur de chargement du rapport importation|0x20|
-|Erreur de sortie|0x40|
-|Erreur de commutateur de ligne de commande|0x80|
-|Erreur d’initialisation|0x100|
-|Erreur des références d’assembly|0x200|
-|BuildBreakingMessage|0x400|
-|Erreur inconnue|0x1000000|
+|Erreur de chargement du rapport importation|0 x 20|
+|Erreur de sortie|0 x 40|
+|Erreur de commutateur de ligne de commande|0 x 80|
+|Erreur d’initialisation|0 x 100|
+|Erreur des références d’assembly|0 x 200|
+|BuildBreakingMessage|0 x 400|
+|Erreur inconnue|0 x 1000000|
 
 **Erreur d’analyse** est renvoyée pour les erreurs irrécupérables. Il indique que l’analyse a échoué. Le cas échéant, le code d’erreur contient également la cause sous-jacente de l’erreur irrécupérable. Les conditions suivantes génèrent des erreurs irrécupérables :
 

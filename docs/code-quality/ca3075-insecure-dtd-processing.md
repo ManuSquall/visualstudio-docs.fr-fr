@@ -1,23 +1,21 @@
 ---
-title: "CA3075 : Le traitement des DTD non sécurisé | Documents Microsoft"
-ms.custom: 
+title: 'CA3075 : Le traitement des DTD non sécurisé | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 34f3d518e282650f9369aa3af8fe1600b4f28662
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7b15c358c80a60b4ff91fd9c741fbddf2467ae8c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075 : traitement DTD non sécurisé
 |||  
@@ -37,13 +35,13 @@ ms.lasthandoff: 12/22/2017
   
 -   La propriété <xref:System.Xml.XmlNode.InnerXml%2A> dans le code XML est définie.  
   
--   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>propriété est définie pour l’analyse.  
+-   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> propriété est définie pour l’analyse.  
   
 -   L’entrée non fiable est traitée avec <xref:System.Xml.XmlResolver> au lieu de <xref:System.Xml.XmlSecureResolver> .  
   
--   La méthode XmlReader.<xref:System.Xml.XmlReader.Create%2A> est appelée avec une instance de <xref:System.Xml.XmlReaderSettings> non sécurisée ou sans instance.  
+-   XmlReader.<xref:System.Xml.XmlReader.Create%2A> méthode est appelée avec un non sécurisé <xref:System.Xml.XmlReaderSettings> instance ou pas du tout.  
   
--   <xref:System.Xml.XmlReader>est créé avec les valeurs ou les paramètres par défaut non sécurisés.  
+-   <xref:System.Xml.XmlReader> est créé avec les valeurs ou les paramètres par défaut non sécurisés.  
   
  Dans chacun de ces cas, le résultat est le même : le contenu du système de fichiers ou des partages réseau de l’ordinateur où le code XML est traité sera exposé à la personne malveillante et peut ensuite être utilisé comme un vecteur d’attaque par déni de service.  
   

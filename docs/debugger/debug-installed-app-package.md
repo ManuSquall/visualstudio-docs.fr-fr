@@ -1,13 +1,10 @@
 ---
-title: "Déboguer un package d’application installée (UWP) | Documents Microsoft"
+title: Déboguer un package d’application installée (UWP) | Documents Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.installedapppackagelauncher
 - vs.debug.remote.connection
@@ -20,17 +17,16 @@ dev_langs:
 helpviewer_keywords:
 - app package, debug
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 9c1406637b6d1dce312b0574cfba3c9a4f7356e8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Déboguer un package d’application installée dans Visual Studio (UWP)
 
@@ -62,7 +58,7 @@ Pour plus d’informations sur ces fonctionnalités, voir le blog sur les mises 
 > [!NOTE]
 > Visual Studio peut également joindre tout processus d’application UWP en cours d’exécution en sélectionnant **déboguer**, puis **attacher au processus**. Attachement à un processus en cours d’exécution ne nécessite pas le projet Visual Studio d’origine, mais le chargement de symboles du processus sera une aide précieuse lors du débogage d’un processus que vous n’avez pas le code d’origine.
   
-## <a name="remote"></a>Déboguer une application installée ou en cours d’exécution sur un ordinateur distant 
+## <a name="remote"></a> Déboguer une application installée ou en cours d’exécution sur un ordinateur distant 
 
 Lorsque vous déboguez un package d’application installée sur un ordinateur distant pour la première fois, Visual Studio installe la version appropriée des outils à distance pour votre périphérique cible. Votre périphérique cible doit être un ordinateur Windows 10, le périphérique XBox, HoloLens et IoT.
 

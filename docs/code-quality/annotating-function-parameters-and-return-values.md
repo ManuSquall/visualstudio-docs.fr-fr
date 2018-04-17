@@ -1,12 +1,10 @@
 ---
-title: "Annotation de paramètres de fonction et valeurs de retour | Documents Microsoft"
-ms.custom: 
+title: Annotation de paramètres de fonction et valeurs de retour | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
 - _Inout_updates_all_opt_
@@ -125,16 +123,16 @@ f1_keywords:
 - _Result_nullonfailure_
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ac25f8bbda4431850f613f2b41b1d9ed4908c118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: daeed5dd92116af4346cd8aa2086e6a3dd3af216
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
 Cet article décrit les utilisations courantes des annotations pour les paramètres de fonction simple, les scalaires et les pointeurs vers des structures et des classes et la plupart des types de mémoires tampons.  Cet article présente également des modèles d’utilisation courants pour les annotations. Pour les annotations supplémentaires qui sont liées à des fonctions, consultez [annotation du comportement de la fonction](../code-quality/annotating-function-behavior.md)  
@@ -188,7 +186,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     Dans cet exemple, l’appelant fournit une mémoire tampon de `size` éléments pour `p1`.  `MyStringCopy`certains de ces éléments, valide. Plus important encore, la `_Null_terminated_` annotation sur `PWSTR` signifie que `p1` est terminée par null dans l’état postérieur à.  De cette façon, le nombre d’éléments valides est toujours bien défini, mais un nombre d’éléments spécifique n’est pas requis.  
+     Dans cet exemple, l’appelant fournit une mémoire tampon de `size` éléments pour `p1`.  `MyStringCopy` certains de ces éléments, valide. Plus important encore, la `_Null_terminated_` annotation sur `PWSTR` signifie que `p1` est terminée par null dans l’état postérieur à.  De cette façon, le nombre d’éléments valides est toujours bien défini, mais un nombre d’éléments spécifique n’est pas requis.  
   
      Le `_bytes_` variante donne la taille en octets au lieu d’éléments. Utilisez cette option uniquement lorsque la taille ne peut pas être exprimée sous forme d’éléments.  Par exemple, `char` chaînes utiliserait la `_bytes_` variante uniquement si la fonctionnent similaires qui utilise `wchar_t` serait.  
   
@@ -220,7 +218,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     En d’autres termes, chaque élément qui existe dans la mémoire tampon jusqu'à `s` dans l’état préliminaire est valide dans l’état postérieur à.  Exemple :  
+     En d’autres termes, chaque élément qui existe dans la mémoire tampon jusqu'à `s` dans l’état préliminaire est valide dans l’état postérieur à.  Par exemple :  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -248,7 +246,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     En d’autres termes, chaque élément qui existe dans la mémoire tampon jusqu'à `s` dans l’état préliminaire est valide dans l’état postérieur à.  Exemple :  
+     En d’autres termes, chaque élément qui existe dans la mémoire tampon jusqu'à `s` dans l’état préliminaire est valide dans l’état postérieur à.  Par exemple :  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -485,7 +483,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
 -   `_Struct_size_bytes_(size)`  
   
-     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, le nombre d’octets qui est fourni par `size`.  Exemple :  
+     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, le nombre d’octets qui est fourni par `size`.  Par exemple :  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   

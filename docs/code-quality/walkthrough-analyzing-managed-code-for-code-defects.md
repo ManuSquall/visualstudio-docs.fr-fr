@@ -1,24 +1,22 @@
 ---
-title: "Analyse de la procédure pas à pas du Code managé pour les erreurs de Code | Documents Microsoft"
-ms.custom: 
+title: Analyse de la procédure pas à pas du Code managé pour les erreurs de Code | Documents Microsoft
+ms.custom: ''
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1c708f31d31dd811017015cd37c7e60d49beef9
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procédure pas à pas : Défauts analyse du code pour le code managé
 
@@ -30,7 +28,7 @@ Cette procédure pas à pas vous guide tout au long de l’utilisation de l’an
 
 ### <a name="to-create-a-class-library"></a>Pour créer une bibliothèque de classes
 
-1. Sur le **fichier** menu, choisissez **nouveau** > **projet...** .
+1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet...**.
 
 1. Dans le **nouveau projet** boîte de dialogue, développez **installé** > **Visual C#**, puis choisissez **de bureau Windows classique**.
 
@@ -112,7 +110,7 @@ Cette procédure pas à pas vous guide tout au long de l’utilisation de l’an
 
    1. Ajoutez le code `using System.Runtime.Serialization;` au début du fichier Class1.cs.
 
-   1. Ensuite, ajoutez le constructeur`protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   1. Ensuite, ajoutez le constructeur `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
    [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : ajoutez le constructeur suivant à cette classe : public demo()
 

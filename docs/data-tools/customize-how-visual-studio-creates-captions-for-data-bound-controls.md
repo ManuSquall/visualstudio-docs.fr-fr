@@ -1,28 +1,25 @@
 ---
-title: "Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données | Documents Microsoft"
-ms.custom: 
+title: Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données | Documents Microsoft
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 60d98d6b8cefc2f7fb7829d841001f92bd9063de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 031301edc2fbf0c9acc08f92d3324160dd5383cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
 Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](add-new-data-sources.md) sur un concepteur, une attention particulière entre en jeu : les noms de colonnes dans les légendes sont reformatés dans une chaîne plus lisible lorsque deux ou plusieurs mots sont identifiés comme étant concaténés. Vous pouvez personnaliser la façon dans lequel ces étiquettes sont créées en définissant le **SmartCaptionExpression**, **SmartCaptionReplacement**, et **SmartCaptionSuffix** valeurs dans le **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data concepteurs** clé de Registre.  
@@ -44,14 +41,14 @@ Le tableau suivant répertorie les paramètres internes par défaut pour ces val
   
 |Élément de Registre|Valeur par défaut|Explication|  
 |-------------------|-------------------|-----------------|  
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124; _ +|Correspond à un caractère minuscule suivi par un caractère majuscule ou un trait de soulignement.|  
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Correspond à un caractère minuscule suivi par un caractère majuscule ou un trait de soulignement.|  
 |**SmartCaptionReplacement**|$1 $2|$1 représente les caractères de correspondance dans la première parenthèse de l’expression et $2 représente tous les caractères de correspondance dans la deuxième parenthèse. Le remplacement est la première correspondance, un espace, puis la deuxième correspondance.|  
-|**SmartCaptionSuffix**|:|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name`, rend le suffixe`Company Name:`|  
+|**SmartCaptionSuffix**|:|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name`, rend le suffixe `Company Name:`|  
   
 > [!CAUTION]
 > Vous devez être très prudent lors de l’exécution de tout élément dans l’Éditeur du Registre. Sauvegarder le Registre avant de le modifier. Si vous utilisez l’Éditeur du Registre correctement, vous pouvez provoquer de graves problèmes qui peuvent vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes à l’aide de l’Éditeur du Registre correctement peuvent être résolus. Les opérations exécutées dans l'Éditeur du Registre le sont à vos propres risques.  
 >   
->  L’article suivant de la base de connaissances contient des instructions pour la sauvegarde, de modification et de restauration du Registre : [Description du Registre de Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb;en-us; 256986)  
+>  L’article suivant de la base de connaissances contient des instructions pour la sauvegarde, de modification et de restauration du Registre : [Description du Registre de Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us ; 256986)  
   
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Pour modifier le comportement de sous-titrage actif de la fenêtre Sources de données  
   

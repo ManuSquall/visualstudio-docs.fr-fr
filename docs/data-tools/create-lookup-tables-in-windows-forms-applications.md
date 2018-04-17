@@ -1,26 +1,23 @@
 ---
-title: "Créer des tables de recherche dans les applications Windows Forms | Documents Microsoft"
-ms.custom: 
+title: Créer des tables de recherche dans les applications Windows Forms | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: f27fdbe216b6ba2a738f6d9f45d746344d542b38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 75035b12972299c0c9d4b9b515cb4cbd51308739
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Créer des tables de recherche dans les applications Windows Forms
 Le terme *table de recherche* décrit les contrôles qui sont liés aux tables de données connexes deux. Ces contrôles de recherche affichent les données à partir de la première table selon une valeur sélectionnée dans la seconde table.  
@@ -55,7 +52,7 @@ Le terme *table de recherche* décrit les contrôles qui sont liés aux tables d
   
     |Propriété|Explication du paramètre|  
     |--------------|----------------------------|  
-    |**Source de données**|Visual Studio définit cette propriété sur le <xref:System.Windows.Forms.BindingSource> créé pour la table que vous avez fait glisser vers le contrôle (et non sur le <xref:System.Windows.Forms.BindingSource> créé en même temps que le contrôle).<br /><br /> Si vous avez besoin de faire des réglages, définissez la <xref:System.Windows.Forms.BindingSource> de la table contenant la colonne que vous souhaitez afficher.|  
+    |**DataSource**|Visual Studio définit cette propriété sur le <xref:System.Windows.Forms.BindingSource> créé pour la table que vous avez fait glisser vers le contrôle (et non sur le <xref:System.Windows.Forms.BindingSource> créé en même temps que le contrôle).<br /><br /> Si vous avez besoin de faire des réglages, définissez la <xref:System.Windows.Forms.BindingSource> de la table contenant la colonne que vous souhaitez afficher.|  
     |**DisplayMember**|Visual Studio définit cette propriété sur la première colonne après la clé principale contenant un type de données de chaîne pour la table que vous avez fait glisser vers le contrôle.<br /><br /> Si vous avez besoin de faire des réglages, puis affectez la valeur le nom de colonne que vous souhaitez afficher.|  
     |**ValueMember**|Visual Studio définit cette propriété sur la première colonne participant à la clé principale, ou la première colonne de la table si aucune clé n'est définie.<br /><br /> Si vous avez besoin de faire des réglages, définissez à la clé primaire dans la table avec la colonne que vous souhaitez afficher.|  
     |**SelectedValue**|Visual Studio définit cette propriété sur la colonne d’origine déplacée à partir de la **des Sources de données** fenêtre.<br /><br /> Si vous avez besoin de faire des réglages, définissez à la colonne de clé étrangère dans la table associée.|  
