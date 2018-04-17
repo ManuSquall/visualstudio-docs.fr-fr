@@ -1,32 +1,28 @@
 ---
-title: "Propriété de AsyncVoidMethodBuilder.ObjectIdForDebugger | Documents Microsoft"
-ms.custom: 
+title: Propriété de AsyncVoidMethodBuilder.ObjectIdForDebugger | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - ObjectIdForDbugger property, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: 97c48c49-3fb2-4778-accd-8585fa4feabf
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4382da42fa21c5a3ce10887ad856e29bba9ae088
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 868deef955ce90f49ce3ba2719903bdcbb38f2a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Propriété de AsyncVoidMethodBuilder.ObjectIdForDebugger
 Obtient un objet qui peut être utilisé pour identifier de façon unique ce générateur au débogueur.  
   
- **Namespace :**<xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Namespace :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **Assembly :** mscorlib (dans mscorlib.dll)  
   

@@ -1,13 +1,10 @@
 ---
-title: "Mise à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5 | Documents Microsoft"
-ms.custom: 
+title: Mise à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5 | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c2f3e3951ac46a2459545b51fafa45ecc6b86f9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 5195e9a268a38212f12d554eb5a86f4e923af421
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="updating-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mise à jour de zones de formulaire dans les projets Outlook qui font l'objet d'une migration vers .NET Framework 4 ou .NET Framework 4.5
   Si l’infrastructure cible d’un projet de complément VSTO Outlook avec une zone de formulaire passe à [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez apporter quelques changements au code de zone de formulaire généré, ainsi qu’au code qui instancie certaines classes de zone de formulaire au moment de l’exécution.  
@@ -202,6 +199,6 @@ ms.lasthandoff: 01/10/2018
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Migration de solutions Office vers .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Création de zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)  
   

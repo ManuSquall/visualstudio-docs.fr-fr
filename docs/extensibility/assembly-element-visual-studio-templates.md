@@ -1,30 +1,26 @@
 ---
-title: "Assembly, élément (modèles Visual Studio) | Documents Microsoft"
-ms.custom: 
+title: Assembly, élément (modèles Visual Studio) | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
 - Assembly element [Visual Studio templates]
 - <Assembly> element [Visual Studio templates]
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5202d7468ecefe9de1754f592eef826f0390b869
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 97e6209fdf446d88ed79ef741c3584b2bc4f5602
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly, élément (modèles Visual Studio)
 Spécifie des informations sur un assembly, le modèle utilise pour ajouter une référence de cet assembly aux projets.  
@@ -61,7 +57,7 @@ Spécifie des informations sur un assembly, le modèle utilise pour ajouter une 
   
  Ce texte spécifie l’assembly à ajouter à un projet lorsque le modèle d’élément est instancié. Nom de l’assembly doit être spécifié dans une des manières suivantes :  
   
--   En tant que nom complet de l’assembly. Exemple :  
+-   En tant que nom complet de l’assembly. Par exemple :  
   
     ```  
     <Assembly>  
@@ -69,7 +65,7 @@ Spécifie des informations sur un assembly, le modèle utilise pour ajouter une 
     </Assembly>  
     ```  
   
--   En tant que référence de texte simple. Exemple :  
+-   En tant que référence de texte simple. Par exemple :  
   
     ```  
     <Assembly> System </Assembly>  

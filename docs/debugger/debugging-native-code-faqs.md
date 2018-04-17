@@ -1,13 +1,10 @@
 ---
-title: "Débogage du Code natif FAQ | Documents Microsoft"
-ms.custom: 
+title: Débogage du Code natif FAQ | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.faq
 dev_langs:
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - debugging [MFC], FAQs
 - debugging [C++], FAQs
 ms.assetid: 9a497032-cf73-441e-923b-4bbd5d37a6da
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 943f2a142eb2267ada5c9b8570068c67684bdaed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bdc12ac20903e93e5338cdfdcb06ae4fc65a15c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-native-code-faqs"></a>Forum Aux Questions sur le débogage du code natif
 Les rubriques suivantes contiennent des réponses à quelques questions fréquemment posées :  

@@ -1,12 +1,10 @@
 ---
 title: Utilisation de Modules pour inclure des fichiers dans la Solution | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c7f0fff081215e1bf1a9e2c5320668f2c698b2e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9c11dd4ebd17b1ebef91c3d7752df7c15dd50da4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>Utilisation de modules pour inclure des fichiers dans la solution
   Il peut arriver lorsque vous souhaitez déployer les fichiers sur le serveur SharePoint quel que soit leur type de fichier, telles que de nouvelles pages maîtres. Pour ce faire, vous pouvez utiliser *Modules* (à ne pas confondre avec [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modules de code). Les modules sont des conteneurs pour les fichiers dans une solution SharePoint. Lorsque la solution est déployée, les fichiers dans le module sont copiés vers les dossiers spécifiés sur le serveur SharePoint.  

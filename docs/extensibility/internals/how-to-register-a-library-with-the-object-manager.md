@@ -1,12 +1,10 @@
 ---
-title: "Comment : inscrire une bibliothèque avec le Gestionnaire d’objets | Documents Microsoft"
-ms.custom: 
+title: 'Comment : inscrire une bibliothèque avec le Gestionnaire d’objets | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - libraries, registering with object manager
 - IVsLibrary2 interface, registering library with object manager
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IVsObjectManager2 interface, registering library with object manager
 - libraries, symbol-browsing tools
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4ecb20a39657fd9a1e668321654dd2a293807adf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 30bf2775c358b107fe299f0d60bc00a2030465e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Comment : inscrire une bibliothèque avec le Gestionnaire d’objets
 Exploration des symboles d’outils, tels que **affichage de classes**, **Explorateur d’objets**, **Explorateur d’appels** et **résultats**, vous permettent d’afficher symboles dans votre projet ou dans les composants externes. Les symboles incluent des espaces de noms, classes, interfaces, méthodes et autres éléments de langage. Les bibliothèques de suivre ces symboles et les exposer à le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets qui remplit les outils avec les données.  

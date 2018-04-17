@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Étendre un Type d’élément de projet SharePoint | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Étendre un Type d’élément de projet SharePoint | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e2f39fc15d73b2019e739d7695f40cf0e3fd0940
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ed2c425af4127af443254bfdc269d58c653bb3c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>Procédure pas à pas : extension d'un type d'élément de projet SharePoint
   Vous pouvez utiliser la **modèle de connectivité de données métiers** élément de projet pour créer un modèle pour le service de connectivité de données métiers (BDC) dans SharePoint. Par défaut, lorsque vous créez un modèle à l’aide de cet élément de projet, les données dans le modèle ne sont pas affichées aux utilisateurs. Vous devez également créer une liste externe dans SharePoint pour permettre aux utilisateurs d’afficher les données.  
@@ -80,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Dans le **nom** , entrez **GenerateExternalDataLists**, puis choisissez le **OK** bouton.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le **GenerateExternalDataLists** projet **l’Explorateur de solutions**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **GenerateExternalDataLists** projet **l’Explorateur de solutions**.  
   
 7.  Si le fichier source.extension.vsixmanifest ne s’ouvre pas automatiquement, ouvrez le menu contextuel dans le projet GenerateExternalDataLists, puis choisissez **ouvrir**  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Dans le **nom** , entrez **BdcProjectItemExtension**, puis choisissez le **OK** bouton.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le **BdcProjectItemExtension** projet à la solution et ouvre le fichier de code Class1 par défaut.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **BdcProjectItemExtension** projet à la solution et ouvre le fichier de code Class1 par défaut.  
   
 6.  Supprime le fichier de code Class1 du projet.  
   

@@ -1,23 +1,21 @@
 ---
-title: "Procédure pas à pas : Création d’un kit de développement à l’aide de C++ | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création d’un kit de développement à l’aide de C++ | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7a4091506bcd16222ff02600bd924d3526d57c38
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 33880dc3b9c359798c47c666debc3d5564524794
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Procédure pas à pas : Création d’un kit de développement à l’aide de C++
 Cette procédure pas à pas montre comment créer une bibliothèque C++ native mathématiques SDK, package le Kit de développement logiciel comme un Visual Studio Extension (VSIX) et l’utiliser pour créer une application. La procédure pas à pas est divisé en comme suit :  
@@ -31,7 +29,7 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
 ## <a name="prerequisites"></a>Prérequis  
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createClassLibrary"></a>Pour créer les natif et les bibliothèques Windows Runtime  
+##  <a name="createClassLibrary"></a> Pour créer les natif et les bibliothèques Windows Runtime  
   
 1.  Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
@@ -59,7 +57,7 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
   
 9. Dans la barre de menus, choisissez **Générer**, puis **Générer la solution**.  
   
-##  <a name="createVSIX"></a>Pour créer le projet d’extension NativeMathVSIX  
+##  <a name="createVSIX"></a> Pour créer le projet d’extension NativeMathVSIX  
   
 1.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour **Solution 'NativeMath'**, puis choisissez **ajouter**, **nouveau projet**.  
   
@@ -143,7 +141,7 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
   
 18. Choisissez le **installer** bouton, attendez que l’installation se termine, puis démarrez Visual Studio.  
   
-##  <a name="createSample"></a>Pour créer un exemple d’application qui utilise la bibliothèque de classes  
+##  <a name="createSample"></a> Pour créer un exemple d’application qui utilise la bibliothèque de classes  
   
 1.  Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
@@ -171,7 +169,7 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
   
 9. Appuyez sur la touche F5 pour exécuter l’application.  
   
-10. Dans l’application, entrez tous les deux numéros, sélectionnez une opération, puis choisissez le  **=**  bouton.  
+10. Dans l’application, entrez tous les deux numéros, sélectionnez une opération, puis choisissez le **=** bouton.  
   
      Le résultat correct s’affiche.  
   

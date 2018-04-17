@@ -1,12 +1,10 @@
 ---
-title: "Les projets Office dans l’environnement Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Les projets Office dans l’environnement Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.WordDocument
 - VST.ProjectItem.ExcelWorkbook
@@ -43,13 +41,14 @@ helpviewer_keywords:
 - VST.Designer.ExcelVST.Designer.Word
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a937f98a11ab9c8cb9723637be902808dce86563
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 80a8f866cb43eb6279cca45bebc94c54af898eab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Projets Office dans l'environnement Visual Studio
   En termes de développement, les projets Microsoft Office offrent une expérience similaire à d'autres types de projets dans Visual Studio, tels que les projets Windows Forms. Lorsque vous créez ou ouvrez un projet Office, les éléments de projet s'affichent dans l' **Explorateur de solutions**. Pour les projets au niveau du document, le document (le document Word ou le classeur Excel) s'ouvre dans Visual Studio et se comporte comme un concepteur visuel.  
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
  Lorsque vous ouvrez le classeur dans le concepteur, il n'y a aucune aire de conception. Le mode Design du classeur consiste en une grande barre d'état des composants qui remplit le concepteur.  
   
- Le classeur et chaque feuille qu'il contient ont un fichier de code associé. Chaque fichier de code contient une classe d' *élément hôte* générée qui représente le classeur ou la feuille. Pour plus d'informations, consultez [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md).  
+ Le classeur et chaque feuille qu'il contient ont un fichier de code associé. Chaque fichier de code contient une classe d' *élément hôte* générée qui représente le classeur ou la feuille. Pour plus d'informations, consultez [Automatisation d’Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md).  
   
 ### <a name="word-documents-in-the-designer"></a>Documents Word dans le concepteur  
  Lorsque vous ouvrez le document dans le concepteur, vous pouvez le modifier de la même façon que lorsque vous l'ouvrez directement dans Word. Si vous double-cliquez sur un mot dans le document, ce mot est sélectionné. Toutefois, si le mot se trouve à l'intérieur d'un contrôle hôte, l'éditeur de code s'ouvre et Visual Studio génère le gestionnaire d'événements par défaut pour le contrôle.  

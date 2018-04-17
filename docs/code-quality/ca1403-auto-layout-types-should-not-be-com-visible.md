@@ -1,12 +1,10 @@
 ---
-title: "CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM | Documents Microsoft"
-ms.custom: 
+title: 'CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AutoLayoutTypesShouldNotBeComVisible
 - CA1403
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1403
 - AutoLayoutTypesShouldNotBeComVisible
 ms.assetid: a7007714-f9b4-4730-94e0-67d3dc68991f
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7da04d7ecda3e47239bd865812c6fbd05428ac09
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a0b13ba365383b312b467940641b020d75478c46
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Un type de valeur visible du modèle COM (Component Object) est marqué avec la <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> attribut la valeur <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>.  
   
 ## <a name="rule-description"></a>Description de la règle  
- <xref:System.Runtime.InteropServices.LayoutKind>types de mise en page sont gérés par le common language runtime. La disposition de ces types peut varier entre les versions du .NET Framework, qui bloque les clients COM qui attendent une disposition spécifique. Notez que si le <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut n’est pas spécifié, le langage c#, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], et les compilateurs C++ spécifient la <xref:System.Runtime.InteropServices.LayoutKind> disposition pour les types valeur.  
+ <xref:System.Runtime.InteropServices.LayoutKind> types de mise en page sont gérés par le common language runtime. La disposition de ces types peut varier entre les versions du .NET Framework, qui bloque les clients COM qui attendent une disposition spécifique. Notez que si le <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut n’est pas spécifié, le langage c#, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], et les compilateurs C++ spécifient la <xref:System.Runtime.InteropServices.LayoutKind> disposition pour les types valeur.  
   
  Sauf mention contraire, tous les types non génériques publics sont visibles par COM ; tous les types génériques et non publics ne sont pas visibles par COM. Toutefois, pour réduire les faux positifs, cette règle requiert que la visibilité COM du type à être défini explicitement ; l’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> la valeur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> la valeur `true`.  
   

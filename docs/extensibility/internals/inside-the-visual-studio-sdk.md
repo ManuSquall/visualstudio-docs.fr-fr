@@ -1,27 +1,25 @@
 ---
-title: "Dans le Kit de développement logiciel de Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Dans le Kit de développement logiciel de Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e8b1374b6934e09bbf3ce1012d551dab2831292c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: fff6b720c11f3342a5894489186f57d397dd91b5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dans le kit SDK Visual Studio
 Cette section fournit des informations détaillées sur les extensions de Visual Studio, y compris l’architecture de Visual Studio, les composants, services, schémas, utilitaires et similaires.  
@@ -94,7 +92,7 @@ Vue généralisée de l’architecture de Visual Studio
   
  Pour plus d’informations, consultez [projets](../../extensibility/internals/projects.md) et [Solutions](../../extensibility/internals/solutions.md).  
   
-## <a name="project-and-item-templates"></a>Modèles de projet et élément  
+## <a name="project-and-item-templates"></a>Modèles de projet et d’élément  
  Visual Studio inclut des modèles de projet prédéfinis et des modèles d’élément de projet. Vous pouvez également rendre vos propres modèles ou obtenir des modèles à partir de la Communauté et puis de les intégrer à Visual Studio. Le [MSDN Code Gallery](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) est incontournable pour les modèles et les extensions.  
   
  Les modèles contiennent la structure de projet et les fichiers de base qui sont requises pour générer un type particulier d’application, de contrôle, de bibliothèque ou de classe. Lorsque vous souhaitez développer des logiciels qui ressemble à un des modèles, créez un projet qui est basé sur le modèle, puis modifiez les fichiers dans le projet.  

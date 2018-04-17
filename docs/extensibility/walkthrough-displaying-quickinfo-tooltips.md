@@ -1,27 +1,23 @@
 ---
-title: "Procédure pas à pas : Affichage des info-bulles Info express | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Affichage des info-bulles Info express | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cd3e9d5e10e6946b4cae8ce02a5a39511e4baaf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 81974967094d238f12141ad7cd31bcc8015b9633
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Procédure pas à pas : Affichage des info-bulles Info express
 Info Express est une fonctionnalité IntelliSense qui affiche les signatures de méthode et descriptions lorsqu’un utilisateur déplace le pointeur sur un nom de méthode. Vous pouvez implémenter des fonctionnalités reposant sur le langage comme info Express en définissant les identificateurs pour lequel vous souhaitez fournir des descriptions d’info Express et création d’une info-bulle dans lequel afficher le contenu. Vous pouvez définir des info Express dans le contexte d’un service de langage, ou vous pouvez définir votre propre type de contenu et d’extension de nom du fichier et afficher l’info Express pour uniquement ce type, ou vous pouvez afficher des info Express pour un type de contenu existant (par exemple « text »). Cette procédure pas à pas montre comment afficher des info Express pour le type de contenu « text ».  

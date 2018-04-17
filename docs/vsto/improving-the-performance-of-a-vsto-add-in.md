@@ -1,26 +1,23 @@
 ---
-title: "Amélioration des performances d’un complément VSTO | Documents Microsoft"
-ms.custom: 
+title: Amélioration des performances d’un complément VSTO | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 17fbb8d0d1bdb2c3924645f494d8bd5eccd457a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>Amélioration des performances d'un complément VSTO
   Vous pouvez offrir aux utilisateurs une meilleure expérience. En effet, en optimisant les compléments VSTO que vous créez pour les applications Office, vous pouvez leur permettre d’être plus rapides pour démarrer, arrêter, ouvrir des éléments et exécuter d’autres tâches. Si vous créez un complément VSTO pour Outlook, vous pouvez également réduire les risques de désactivation du complément VSTO en raison de performances insuffisantes. Pour améliorer les performances du complément VSTO, vous pouvez implémenter les stratégies suivantes :  
@@ -84,9 +81,9 @@ ms.lasthandoff: 01/10/2018
   
     ```  
   
-     Pour plus d’informations sur la façon de créer un événement post-build dans un projet c#, consultez [Comment : spécifier des événements de Build &#40; C &#35; &#41; ](/visualstudio/ide/how-to-specify-build-events-csharp).  
+     Pour plus d’informations sur la façon de créer un événement post-build dans un projet c#, consultez [Comment : spécifier des événements de Build &#40;C&#35;&#41;](/visualstudio/ide/how-to-specify-build-events-csharp).  
   
-     Pour plus d’informations sur la création d’un événement post-build dans un projet Visual Basic, consultez [Comment : spécifier des événements de Build &#40; Visual Basic &#41; ](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
+     Pour plus d’informations sur la création d’un événement post-build dans un projet Visual Basic, consultez [Comment : spécifier des événements de Build &#40;Visual Basic&#41;](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
   
 ##  <a name="Publish"></a> Publish Office Solutions by Using Windows Installer  
  Si vous publiez votre solution à l’aide de Windows Installer, Visual Studio 2010 Tools pour Office Runtime ignore les étapes suivantes pendant le chargement du complément VSTO.  

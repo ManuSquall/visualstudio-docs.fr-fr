@@ -1,13 +1,10 @@
 ---
-title: "Procédure pas à pas : Importation d’un flux de travail réutilisable de SharePoint Designer dans Visual Studio | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Importation d’un flux de travail réutilisable de SharePoint Designer dans Visual Studio | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.ImportWF
 dev_langs:
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05428f2e702643b88415663249e9f29a9f7d46bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 443502fdb6b018772e4dde833c5d53d27a68dbe8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Procédure pas à pas : importation d'un flux de travail réutilisable de SharePoint Designer dans Visual Studio
   Cette procédure pas à pas montre comment importer un flux de travail réutilisable créé dans SharePoint Designer 2010 dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet de flux de travail SharePoint.  

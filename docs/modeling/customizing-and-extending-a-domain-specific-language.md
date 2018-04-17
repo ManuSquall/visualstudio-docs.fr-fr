@@ -1,23 +1,21 @@
 ---
-title: "Personnalisation et l’extension d’un langage spécifique à un domaine | Documents Microsoft"
-ms.custom: 
+title: Personnalisation et l’extension d’un langage spécifique à un domaine | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7617deb73ecaec835b0100d243b75bc26fd54a17
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4c1c0301f48997e834e9a707f660db42580ae203
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personnalisation et extension d'un langage spécifique à un domaine
 Visual Studio de modélisation et de visualisation SDK (VMSDK) fournit plusieurs niveaux à laquelle vous pouvez définir des outils de modélisation :  
@@ -33,7 +31,7 @@ Visual Studio de modélisation et de visualisation SDK (VMSDK) fournit plusieurs
 > [!NOTE]
 >  Lorsque vous avez mis à jour le fichier de définitions de DSL, n’oubliez pas de cliquer sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, puis recommencez votre solution.  
   
-##  <a name="customShapes"></a>Dans cette Section  
+##  <a name="customShapes"></a> Dans cette Section  
   
 |Pour obtenir cet effet|Reportez-vous à cette rubrique|  
 |----------------------------|-------------------------|  
@@ -55,9 +53,9 @@ Visual Studio de modélisation et de visualisation SDK (VMSDK) fournit plusieurs
 |Activer le copier, couper et coller|Définir le **activer copier, coller** propriété de la **éditeur** nœud dans l’Explorateur DSL.|  
 |Copier les liens de référence et leurs cibles chaque fois qu’un élément est copié. Par exemple, copiez les commentaires joints à un élément.|Définir le **propage la copie** la propriété du rôle source (représenté par la ligne au côté « un » de la relation de domaine dans le schéma de définition DSL).<br /><br /> Écrire du code pour remplacer ProcessOnCopy pour obtenir des effets plus complexes.<br /><br /> Consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md).|  
 |Supprimer, redéfinir la parenté ou rétablir les liens éléments connexes lorsqu’un élément est supprimé.|Définir le **propage supprimer** valeur d’un rôle de relation. Pour obtenir des effets plus complexes, substituez `ShouldVisitRelationship` et `ShouldVisitRolePlayer` méthodes dans le `MyDslDeleteClosure` (classe), défini dans **DomainModel.cs**<br /><br /> Consultez [personnaliser le comportement de suppression](../modeling/customizing-deletion-behavior.md)|  
-|Conserver la disposition de forme et l’apparence de copie et de glisser-déplacer.|Ajouter les formes et connecteurs à copié `ElementGroupPrototype`. La méthode la plus commode de substitution est`ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md).|  
+|Conserver la disposition de forme et l’apparence de copie et de glisser-déplacer.|Ajouter les formes et connecteurs à copié `ElementGroupPrototype`. La méthode la plus commode de substitution est `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md).|  
 |Coller des formes à un emplacement choisi, par exemple la position actuelle du curseur.|Substituer `ClipboardCommandSet.ProcessOnCopy()` à utiliser la version spécifique à l’emplacement de `ElementOperations.Merge().` consultez [personnalisation de comportement de copie](../modeling/customizing-copy-behavior.md).|  
-|Créer des liens supplémentaires lors du collage|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
+|Créer des liens supplémentaires lors du collage|Substituer ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Activer faites glisser et déposez les éléments de ce diagramme et d’autres DSL et Windows|Consultez [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Autoriser une forme ou un outil pour les faire glisser vers une forme enfant, par exemple un port, comme s’il a été déplacé vers le parent.|Définir une Directive d’élément de fusion sur la classe d’objet cible, pour transférer l’objet déplacé vers le parent. Consultez [personnalisation de la création d’élément et le déplacement des](../modeling/customizing-element-creation-and-movement.md).|  
 |Autoriser une forme ou un outil permettant de faire glisser vers une forme et ont des liens supplémentaires ou des objets créés. Par exemple, pour autoriser un commentaire à être déposé sur un élément auquel il doit être lié.|Définir une Directive d’élément de fusion sur la classe de domaine cible et définir les liaisons à générer. Dans les cas complexes, vous pouvez ajouter le code personnalisé. Consultez [personnalisation de la création d’élément et le déplacement des](../modeling/customizing-element-creation-and-movement.md).|  

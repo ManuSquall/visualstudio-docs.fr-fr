@@ -1,27 +1,23 @@
 ---
-title: "L’accès à la mémoire tampon de texte à l’aide de l’API héritée | Documents Microsoft"
-ms.custom: 
+title: L’accès à la mémoire tampon de texte à l’aide de l’API héritée | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffers
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77002e095690da85e73f1a79d405cb5174b96851
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 84bf79ea19fc0867643ce3e8ee6db0a645d9a0dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>L’accès à la mémoire tampon de texte à l’aide de l’API héritée
 Le texte est chargé de gérer le flux de texte et la persistance du fichier. Bien que la mémoire tampon pour lire ou écrire d’autres formats, toutes les communications normales avec la mémoire tampon sont effectuée à l’aide d’Unicode. Dans les API héritées, la mémoire tampon de texte permettre utiliser - ou un système de coordonnées à deux dimensions pour identifier les emplacements de caractère dans la mémoire tampon.  

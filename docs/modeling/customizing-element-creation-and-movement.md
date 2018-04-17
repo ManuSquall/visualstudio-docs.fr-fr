@@ -1,25 +1,23 @@
 ---
-title: "Personnalisation de la création d’élément et le déplacement des | Documents Microsoft"
-ms.custom: 
+title: Personnalisation de la création d’élément et le déplacement des | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 900011925ff92e5994cd3a82ece621386d63c85b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personnalisation de la création et du mouvement des éléments
 Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de la boîte à outils ou dans un collage ou l’opération de déplacement. Vous pouvez avoir les éléments déplacés liés aux éléments de la cible, en utilisant les relations que vous spécifiez.  
@@ -50,7 +48,7 @@ Le rôle d’une Directive d’élément de fusion
 ## <a name="defining-an-element-merge-directive"></a>Définition d’une Directive de fusion d’élément  
  Vous pouvez ajouter des directives de fusion d’élément pour les classes de domaine, les relations de domaine, des formes, des connecteurs et des diagrammes. Vous pouvez ajouter ou les trouver dans l’Explorateur de DSL dans la classe de domaine de réception. La classe de récepteur est la classe de domaine de l’élément qui est déjà dans le modèle, et sur lequel l’élément nouveau ou copié est fusionnée.  
   
- ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
+ ![DSL&#45;EMD&#95;détails](../modeling/media/dsl-emd_details.png "EMD_Details de DSL")  
   
  Le **l’indexation de la classe** est la classe de domaine d’éléments qui peuvent être fusionnés dans les membres de la classe réceptrice. Instances des sous-classes de la classe de l’indexation seront également fusionnés par cette EMD, sauf si vous définissez **s’applique aux sous-classes** sur False.  
   
@@ -230,7 +228,7 @@ Le rôle d’une Directive d’élément de fusion
   
 5.  Inspecter le contenu de **Dsl\Generated Files\DomainClasses.cs**. Recherche de méthodes nommées `MergeRelate` et examiner leur contenu. Cela vous permet d’écrire vos propres versions.  
   
-6.  Dans un nouveau fichier de code, écrivez une classe partielle pour la classe de récepteur et remplacez le `MergeRelate` (méthode). N’oubliez pas d’appeler la méthode de base. Exemple :  
+6.  Dans un nouveau fichier de code, écrivez une classe partielle pour la classe de récepteur et remplacez le `MergeRelate` (méthode). N’oubliez pas d’appeler la méthode de base. Par exemple :  
   
     ```csharp  
     partial class ExampleModel  

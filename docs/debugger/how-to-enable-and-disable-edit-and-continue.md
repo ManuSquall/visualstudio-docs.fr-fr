@@ -1,12 +1,10 @@
 ---
-title: "Comment : activer et désactiver modifier et continuer (c#, VB, C++) | Documents Microsoft"
-ms.custom: 
+title: 'Comment : activer et désactiver modifier et continuer (c#, VB, C++) | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -24,18 +22,17 @@ helpviewer_keywords:
 - Step command
 - Go command
 ms.assetid: fd961a1c-76fa-420d-ad8f-c1a6c003b0db
-caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 1c00546b983c9bbb0fd6c01717bd0a09c993e11b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c63f629bd0ba67156395b7bf1f1e142355ae9981
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Comment : activer et désactiver modifier et continuer (c#, VB, C++)
 Vous pouvez désactiver ou Activer Modifier & Continuer dans la **Options** boîte de dialogue au moment du design. Vous ne pouvez pas modifier ce paramètre pendant le débogage.  

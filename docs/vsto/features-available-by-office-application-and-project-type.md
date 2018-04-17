@@ -1,12 +1,10 @@
 ---
-title: "Fonctionnalités disponibles par Type de projet d’Application Office et | Documents Microsoft"
-ms.custom: 
+title: Fonctionnalités disponibles par Type de projet d’Application Office et | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b79c7a913e8ce06b1d833f78aad9e8565d54aff2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff8128f9c142193d9fcde2f139e29a3fb4f3326e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Fonctionnalités disponibles par type d’application et de projet Office
   Visual Studio possède plusieurs types de modèles de projet qui prennent en charge différents scénarios professionnels pour les applications Microsoft Office, y compris les types suivants :  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Compléments VSTO  
   
- Toutes les applications ne peuvent pas utiliser chaque type de projet. Par exemple, les projets au niveau du document sont uniquement disponibles pour Microsoft Office Word et Microsoft Office Excel. De même, certaines fonctionnalités sont uniquement disponibles pour certains types de projets ou d'applications. Par exemple, le volet Actions est uniquement disponible dans les projets au niveau du document, et les extensions Ruban sont uniquement disponibles pour certaines applications. Pour plus d’informations sur les différents types de projets, consultez [présentation du développement de Solutions Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Toutes les applications ne peuvent pas utiliser chaque type de projet. Par exemple, les projets au niveau du document sont uniquement disponibles pour Microsoft Office Word et Microsoft Office Excel. De même, certaines fonctionnalités sont uniquement disponibles pour certains types de projets ou d'applications. Par exemple, le volet Actions est uniquement disponible dans les projets au niveau du document, et les extensions Ruban sont uniquement disponibles pour certaines applications. Pour plus d’informations sur les différents types de projets, consultez [présentation du développement de Solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 > [!NOTE]  
 >  Les modèles de projet Office sont uniquement disponibles dans certaines éditions de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d'informations, consultez [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -69,12 +68,12 @@ ms.lasthandoff: 01/10/2018
 |Concepteur visuel de documents|Projets au niveau du document.|[Projets Office dans l’environnement Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mise en route &#40; développement Office dans Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Présentation du développement de Solutions Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Mise en route &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Présentation du développement de Solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md)   
  [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   
  [Création de zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Vue d'ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Données mises en cache dans les personnalisations au niveau du Document](../vsto/cached-data-in-document-level-customizations.md)   
  [Déploiement d’une solution Office](../vsto/deploying-an-office-solution.md)  
   

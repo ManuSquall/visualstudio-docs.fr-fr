@@ -1,23 +1,21 @@
 ---
-title: "Comment : ajouter des nœuds à l’espace de travail à partir de la vue de départ | Documents Microsoft"
-ms.custom: 
+title: 'Comment : ajouter des nœuds à l’espace de travail à partir de la vue de départ | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2b4bec723bda86dae2e700da89139329c494c3dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e9a5c4f0cdeaa95d4b4935e6be46d1f1289b83e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Procédure : ajouter des nœuds à l'espace de travail à partir de la vue de départ
 Cette rubrique décrit comment ajouter des nœuds globaux à le [espace de travail Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md) à partir de la [vue de départ](../xml-tools/start-view.md).  

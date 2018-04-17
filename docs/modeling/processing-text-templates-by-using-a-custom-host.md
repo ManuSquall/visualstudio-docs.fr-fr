@@ -1,9 +1,9 @@
 ---
-title: "Traitement des modèles de texte à l’aide d’un hôte personnalisé | Documents Microsoft"
-ms.custom: 
+title: Traitement des modèles de texte à l’aide d’un hôte personnalisé | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, in application or VS extension
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: af3e5b50095b30a912f6de7b67ba8a40f99127f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Traitement des modèles de texte à l'aide d'un hôte personnalisé
 Le *transformation du modèle de texte* traiter prend un *modèle de texte* fichier comme entrée et produit un fichier texte comme sortie. Vous pouvez appeler le moteur de transformation de texte à partir d'une extension [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou d'une application autonome s'exécutant sur un ordinateur où [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est installé. Toutefois, vous devez fournir un *hôte de modèles de texte*. Cette classe connecte le modèle à l'environnement, recherchant des ressources telles que les assemblys et les fichiers Include, et traitant les messages d'erreur et de sortie.  
@@ -49,7 +49,7 @@ string output = engine.ProcessTemplate(templateString, host);
   
  L'hôte doit être en mesure de consigner les erreurs, de résoudre les références à l'assembly et aux fichiers Include, de fournir un domaine d'application dans lequel le modèle peut s'exécuter et d'appeler le processeur approprié pour chaque directive.  
   
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>est défini dans **Microsoft.VisualStudio.TextTemplating.\*. 0 dll de**, et <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> est défini dans **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0 dll de**.  
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> est défini dans **Microsoft.VisualStudio.TextTemplating.\*. 0 dll de**, et <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> est défini dans **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0 dll de**.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md)  

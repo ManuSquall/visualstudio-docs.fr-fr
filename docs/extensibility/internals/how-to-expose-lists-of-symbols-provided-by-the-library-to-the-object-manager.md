@@ -1,12 +1,10 @@
 ---
-title: "Exposer de listes de symboles fournis pour le Gestionnaire d’objets | Documents Microsoft"
-ms.custom: 
+title: Exposer de listes de symboles fournis pour le Gestionnaire d’objets | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IVsSimpleLibrary2 interface, lists of symbols
 - IVsLibrary2 interface, lists of symbols
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - lists, symbols for the object manager
 - symbols, exposing lists to the object manager
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1fc34c363fb62a8cf2a6d902a6e897886627e508
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cabecd989f0074335251b1880a3d479f9bac5a64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Comment : exposer de listes de symboles fournis par la bibliothèque pour le Gestionnaire d’objets
 Les outils de consultation du symbole, **affichage de classes**, **Explorateur d’objets**, **Explorateur d’appels** et **résultats**, transmettre des demandes pour les nouvelles données à le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets. Le Gestionnaire d’objets détecte les bibliothèques appropriées et demandes de nouvelles listes de symboles. Les bibliothèques de répondent en fournissant les données demandées à le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets via la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets appelle les méthodes dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> pour obtenir les données de l’interface et l’utilise pour remplir ou mettre à jour les vues des outils de consultation du symbole.  

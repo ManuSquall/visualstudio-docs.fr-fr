@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Création d’un programme d’installation personnalisé pour une Application ClickOnce | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création d’un programme d’installation personnalisé pour une Application ClickOnce | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - InPlaceHostingManager [ClickOnce], custom installer
 - custom installer [ClickOnce]
 ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
-caps.latest.revision: "34"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 06c048db48173913a2e1102d1e70f07369316439
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 585a33a8a3c49792be0cc986b36636e7107290ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Procédure pas à pas : création d'un programme d'installation personnalisé pour une application ClickOnce
 Toute application ClickOnce basée sur un fichier .exe peut être installée en mode silencieux et mis à jour par un programme d’installation personnalisé. Un programme d’installation personnalisé peut implémenter expérience utilisateur personnalisée pendant l’installation, y compris les boîtes de dialogue personnalisées pour les opérations de maintenance et de sécurité. Pour effectuer des opérations d’installation, le programme d’installation personnalisé utilise la <xref:System.Deployment.Application.InPlaceHostingManager> classe. Cette procédure pas à pas montre comment créer un programme d’installation personnalisé qui en mode silencieux installe une application ClickOnce.  

@@ -1,30 +1,28 @@
 ---
-title: "Essentials d’intégration du contrôle de source | Documents Microsoft"
-ms.custom: 
+title: Essentials d’intégration du contrôle de source | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0c3e93eb86fdc252f162331033207db5bdaa1569
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-essentials"></a>Essentials de l’intégration de contrôle de code source
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]prend en charge deux types d’intégration du contrôle de code source : un plug-in de contrôle de code source qui fournit les fonctionnalités de base et est construit à l’aide de l’API de plug-in de contrôle de Source (anciennement l’API MSSCCI) et une solution d’intégration de contrôle source basée sur le VSPackage qui Fournit des fonctionnalités plus robuste.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge deux types d’intégration du contrôle de code source : un plug-in de contrôle de code source qui fournit les fonctionnalités de base et est construit à l’aide de l’API de plug-in de contrôle de Source (anciennement l’API MSSCCI) et une solution d’intégration de contrôle source basée sur le VSPackage qui Fournit des fonctionnalités plus robuste.  
   
 ## <a name="source-control-plug-in"></a>Plug-in de contrôle de code source  
  Un plug-in de contrôle de code Source est écrit en tant que DLL qui implémente l’API de plug-in de contrôle de Source. Fonctionnalité d’intégration de contrôle d’enregistrement et de la source est fournie via l’API. Cette approche est plus facile à implémenter qu’un VSPackage de contrôle de code source, et il utilise le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface utilisateur (IU) de la plupart des opérations de contrôle de code source.  

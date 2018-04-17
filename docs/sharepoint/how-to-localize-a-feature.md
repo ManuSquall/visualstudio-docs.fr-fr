@@ -1,12 +1,10 @@
 ---
-title: "Comment : localiser une fonctionnalité | Documents Microsoft"
-ms.custom: 
+title: 'Comment : localiser une fonctionnalité | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1ddb5e705fd581ce2717539ac6daf3e9a2081f6d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 08756ce33d97e156d63fd873c63d4d6fc282285b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-localize-a-feature"></a>Comment : localiser une fonctionnalité
   Par défaut, les descriptions et titres de fonction utilisent des valeurs de chaîne codée en dur. Pour localiser le titre de la fonctionnalité et la description, remplacez les chaînes avec des expressions qui référencent des ressources localisées.  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Pour localiser le **titre** et **Description** champs dans la fonction, utilisez le format suivant pour entrer des valeurs dans les zones :  
   
-     `$Resources:`*ID de chaîne*  
+     `$Resources:` *ID de chaîne*  
   
      Par exemple, entrez $Resources :**titre** dans les **titre de la fonctionnalité** boîte et $Resources :**Description** dans le **Description de la fonctionnalité** boîte .  
   

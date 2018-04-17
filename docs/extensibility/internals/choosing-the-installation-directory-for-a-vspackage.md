@@ -1,39 +1,35 @@
 ---
-title: "En choisissant le répertoire d’Installation pour un VSPackage | Documents Microsoft"
-ms.custom: 
+title: En choisissant le répertoire d’Installation pour un VSPackage | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 085c3bea9b9edc726fa09dd5d7658aff4a55e568
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 564a184e8b3907f5a61bccc26cfbafa8d2cf8e67
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>En choisissant le répertoire d’Installation pour un VSPackage
 Un VSPackage et ses fichiers de prise en charge doivent être sur le système de fichiers d’un utilisateur. L’emplacement varie selon que le VSPackage est géré ou non managé, le schéma de contrôle de version côte à côte et de votre choix de l’utilisateur.  
   
 ## <a name="unmanaged-vspackages"></a>VSPackages non managés  
- Un VSPackage non managé est un serveur COM qui peut être installé dans n’importe quel emplacement. Informations d’enregistrement doit reflète précisément son emplacement. Votre interface utilisateur (IU) du installer doit fournir un emplacement par défaut comme un sous-répertoire de la propriété ProgramFilesFolder Windows Installer. Exemple :  
+ Un VSPackage non managé est un serveur COM qui peut être installé dans n’importe quel emplacement. Informations d’enregistrement doit reflète précisément son emplacement. Votre interface utilisateur (IU) du installer doit fournir un emplacement par défaut comme un sous-répertoire de la propriété ProgramFilesFolder Windows Installer. Par exemple :  
   
  [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\  
   
  L’utilisateur doit être autorisé à modifier le répertoire par défaut pour les utilisateurs qui conservent une partition de démarrage de petits et préférez installer les outils et applications sur un autre volume.  
   
- Si votre schéma côte-à-côte utilise un contrôle de version du VSPackage, vous pouvez utiliser dans les sous-répertoires pour stocker des versions différentes. Exemple :  
+ Si votre schéma côte-à-côte utilise un contrôle de version du VSPackage, vous pouvez utiliser dans les sous-répertoires pour stocker des versions différentes. Par exemple :  
   
  [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2002\  
   

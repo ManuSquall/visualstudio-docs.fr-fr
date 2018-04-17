@@ -1,12 +1,10 @@
 ---
-title: "Étendre des éléments de projet SharePoint | Documents Microsoft"
-ms.custom: 
+title: Étendre des éléments de projet SharePoint | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e990896720916048ab449c7ccb5a927577861256
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1cc202b2e3e303f8f6e92b82bbfbc6f5525966bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-project-items"></a>Extension d'éléments de projet SharePoint
   Créer une extension d’élément de projet lorsque vous souhaitez ajouter des fonctionnalités à un type d’élément de projet SharePoint est déjà installé dans Visual Studio. Par exemple, vous pouvez créer une extension pour la fonction intégrée **récepteur d’événements** ou **définition de liste** les éléments de projet dans Visual Studio, ou vous pouvez créer une extension pour un type d’élément de projet personnalisé. Vous pouvez également créer une extension pour tous les types d’éléments de projet SharePoint.  
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="identifiers-for-sharepoint-project-items"></a>Identificateurs pour les éléments de projet SharePoint  
  Chaque élément de projet SharePoint a un identificateur de chaîne correspondante. Vous devez connaître l’identificateur pour un élément de projet si vous souhaitez effectuer les tâches suivantes :  
   
--   Créer une extension pour l’élément de projet. Dans ce cas, vous devez passer l’identificateur de l’élément de projet que vous souhaitez étendre au constructeur de la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Pour créer une extension pour tous les types de projet élément, transmettez la  **\***  valeur de chaîne.  
+-   Créer une extension pour l’élément de projet. Dans ce cas, vous devez passer l’identificateur de l’élément de projet que vous souhaitez étendre au constructeur de la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Pour créer une extension pour tous les types de projet élément, transmettez la **\*** valeur de chaîne.  
   
 -   Ajouter l’élément de projet à un projet par programmation. Dans ce cas, vous devez passer l’identificateur de l’élément de projet pour le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> (méthode).  
   

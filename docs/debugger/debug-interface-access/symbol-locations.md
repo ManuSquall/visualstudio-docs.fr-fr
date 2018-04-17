@@ -1,30 +1,26 @@
 ---
 title: Emplacements de symboles | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - LocationType values
 - symbols [DIA SDK], locations
 ms.assetid: 7c8cd8fe-169e-4161-9cff-5e9015984add
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4cd226ebc3d2853ddfa35f42c5990db940c4424
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a8eef21d7b5b22bab161383ef99902ca0b0bd598
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="symbol-locations"></a>Emplacements des symboles
 La plupart des symboles ont un emplacement défini dans le fichier image. Emplacement d’un symbole est spécifié avec une valeur à partir de la [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md) énumération. Le symbole peut-être prendre en charge des propriétés supplémentaires en fonction de son emplacement.  

@@ -1,26 +1,24 @@
 ---
-title: "Comment : installer un plug-in de contrôle de code Source | Documents Microsoft"
-ms.custom: 
+title: 'Comment : installer un plug-in de contrôle de code Source | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: dab9270b55f5980d36256db78db89b5e4ac186f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4ffabd7adf35956163c8744eae6539e96990f38a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Comment : installer un plug-in de contrôle de code Source
 Création d’un contrôle de source de plug-in implique trois étapes :  
@@ -32,7 +30,7 @@ Création d’un contrôle de source de plug-in implique trois étapes :
 3.  Inscrire la DLL en créant des entrées de Registre appropriées.  
   
 ## <a name="integration-with-visual-studio"></a>Intégration à Visual Studio  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]prend en charge de la charge des plug-ins de contrôle de code source qui sont conformes à l’API de plug-in de contrôle de Source.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge de la charge des plug-ins de contrôle de code source qui sont conformes à l’API de plug-in de contrôle de Source.  
   
 ### <a name="registering-the-source-control-plug-in"></a>L’inscription du plug-in de contrôle de code Source  
  Avant qu’un environnement de développement intégré (IDE) en cours d’exécution puisse appeler dans le système de contrôle de code source, il doit d’abord localiser la source de plug-in DLL qui exporte l’API de contrôle.  
@@ -83,7 +81,7 @@ Création d’un contrôle de source de plug-in implique trois étapes :
   
      Le nom de cette entrée est le nom lisible par l’utilisateur du fournisseur (le même que la valeur spécifiée pour l’entrée SCCServerName) et la valeur est, une fois encore, la sous-clé créée à l’étape 1. Le modèle est HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\*[nom d’affichage]* = logiciel\\*[nom de société]* \\ *[nom du produit]*.  
   
-     Exemple :  
+     Par exemple :  
   
     |Exemple d’entrée de Registre|Exemple de valeur|  
     |---------------------------|------------------|  

@@ -1,13 +1,10 @@
 ---
 title: Assemblys PIA Office | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - Office primary interop assemblies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 906100a572170f218a23b1887ab7fddee37251b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2ab565dfbc4fec21c646aa72b54f3694d99e6a1f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-primary-interop-assemblies"></a>assemblys PIA (Primary Interop Assembly) Office
   Pour utiliser les fonctionnalités d'une application Microsoft Office dans un projet Office, vous devez utiliser l'assembly PIA (Primary Interop Assembly) de l'application. L'assembly PIA permet au code managé d'interagir avec le modèle d'objet COM d'une application Microsoft Office.  
@@ -120,6 +117,6 @@ ms.lasthandoff: 01/10/2018
  [Solutions Project](../vsto/project-solutions.md)   
  [Vue d’ensemble du modèle objet Visio](../vsto/visio-object-model-overview.md)   
  [Vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md)   
- [Référence générale &#40; développement Office dans Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Référence générale &#40;développement Office dans Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
   
   

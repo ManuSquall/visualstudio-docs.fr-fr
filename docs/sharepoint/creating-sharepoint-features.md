@@ -1,12 +1,10 @@
 ---
-title: "Création de fonctionnalités SharePoint | Documents Microsoft"
-ms.custom: 
+title: Création de fonctionnalités SharePoint | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9fa42efc654bd3835a4f1ec1a5002136813550a0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-features"></a>Création de fonctionnalités SharePoint
   Vous pouvez utiliser une fonctionnalité SharePoint pour regrouper des éléments de projet SharePoint connexes pour faciliter le déploiement. Vous pouvez créer des fonctionnalités, définir des étendues et marquer les autres fonctionnalités en tant que dépendances à l’aide du Concepteur de fonctionnalités SharePoint. Le concepteur génère également un manifeste, qui est un fichier XML qui décrit chaque fonctionnalité.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 |Propriété|Description|  
 |--------------|-----------------|  
-|Titre|Facultatif. Le titre par défaut de la fonctionnalité est défini sur *SolutionName**FeatureName*.|  
+|Titre|Facultatif. Le titre par défaut de la fonctionnalité est défini sur *SolutionName ** NomFonctionnalité*.|  
 |Description|Facultatif. La description de la fonctionnalité SharePoint.|  
 |Portée|Obligatoire. Si une fonction est créée à l’aide de **l’Explorateur de solutions**, l’étendue est définie sur le Web par défaut.<br /><br /> -Batterie : Activer une fonctionnalité pour une batterie de serveurs.<br /><br /> -Site : Activer une fonctionnalité pour tous les sites web dans une collection de sites.<br /><br /> -Web : Activer une fonctionnalité pour un site web spécifique.<br /><br /> -WebApplication : Activer une fonctionnalité pour tous les sites web dans une application web.|  
 |Éléments dans la Solution|Tous les éléments SharePoint peuvent être ajoutés à la fonctionnalité.|  

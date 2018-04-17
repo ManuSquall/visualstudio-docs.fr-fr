@@ -1,29 +1,25 @@
 ---
 title: IDiaSymbol | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol interface
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c35accc7ca75a987dae615c06df68b4f85bba4a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 112fe38d556b8d97f888a25039c49ca9473e1329
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Décrit les propriétés d’une instance de symbole.  
@@ -267,7 +263,7 @@ IDiaSymbol : IUnknown
  Cet exemple montre comment afficher les variables locales pour une fonction à une adresse virtuelle relative donnée. Il montre également comment les symboles de types différents sont liés entre eux.  
   
 > [!NOTE]
->  `CDiaBSTR`est une classe qui encapsule un `BSTR` et gère automatiquement la libération de la chaîne lors de l’instanciation est hors de portée.  
+>  `CDiaBSTR` est une classe qui encapsule un `BSTR` et gère automatiquement la libération de la chaîne lors de l’instanciation est hors de portée.  
   
 ```C++  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  
@@ -341,8 +337,8 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 }  
 ```  
   
-## <a name="requirements"></a>Configuration requise  
- `Header:`Dia2.h  
+## <a name="requirements"></a>Spécifications  
+ `Header:` dia2.h  
   
  Bibliothèque : diaguids.lib  
   

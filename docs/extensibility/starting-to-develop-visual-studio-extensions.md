@@ -1,26 +1,24 @@
 ---
-title: "Commencer à développer des Extensions Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Commencer à développer des Extensions Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 09/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Visual Studio integration
 - Visual Studio, integration
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 44403b5d60fc13666ffc6ec00558b80ef3a50ea9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Commencer à développer des Extensions Visual Studio
 Si vous n’avez jamais écrit une extension de Visual Studio avant, vous avez probablement certaines questions. Nous avons répertorié certaines des causes plus courantes ici. Si vous ne voyez pas les informations que vous recherchez, utilisez les boutons de commentaires (**cette page a-t-elle été utile ?** au bas de l’écran) pour demander à ce que vous souhaitez.  
@@ -60,7 +58,7 @@ Si vous n’avez jamais écrit une extension de Visual Studio avant, vous avez p
   
 -   [Shell isolé Visual Studio](../extensibility/visual-studio-isolated-shell.md)  
   
-##  <a name="BKMK_ProjectTemplate"></a>Les modèles de projet sont fournies par l’extensibilité Visual Studio ?  
+##  <a name="BKMK_ProjectTemplate"></a> Les modèles de projet sont fournies par l’extensibilité Visual Studio ?  
  Les deux principaux types d’extensions sont des VSPackages et des extensions MEF. En général, les extensions VSPackage sont utilisées pour les extensions qui utilisent ou étendent des commandes, les fenêtres Outil et les projets. Extensions MEF sont utilisées pour étendre ou personnaliser l’éditeur Visual Studio.  
   
  Pour les extensions de Visual c# et Visual Basic, l’extensibilité Visual Studio fournit un modèle de projet VSIX vide que vous pouvez utiliser avec les nouveaux modèles d’élément qui créent des commandes de menu, les fenêtres Outil et les extensions de l’éditeur. Vous pouvez également utiliser ce modèle pour les modèles de projet de package, les extraits de code et les autres artefacts pour la distribution à d’autres utilisateurs.  

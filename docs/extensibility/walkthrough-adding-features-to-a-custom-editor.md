@@ -1,27 +1,23 @@
 ---
-title: "Procédure pas à pas : Ajout de fonctionnalités à un éditeur personnalisé | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Ajout de fonctionnalités à un éditeur personnalisé | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c207b80686a66d9a06b8c50321b4dce2257ada
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 14642a13553f3c4a09b86daa2d7638183fe7d8d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Procédure pas à pas : Ajout de fonctionnalités à un éditeur personnalisé
 Après avoir créé un éditeur personnalisé, vous pouvez ajouter davantage de fonctionnalités à ce dernier.  
@@ -148,7 +144,7 @@ Après avoir créé un éditeur personnalisé, vous pouvez ajouter davantage de 
   
 -   Pour empêcher la commande de menu charger dans l’interface utilisateur, vous devez utiliser les commandes existantes dans l’IDE avant inventer de nouvelles commandes. Commandes partagées sont définies dans SharedCmdDef.vsct et ShellCmdDef.vsct. Ces fichiers sont installés par défaut dans le sous-répertoire VisualStudioIntegration\Common\Inc de votre [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] installation.  
   
--   `ISelectionContainer`peuvent exprimer des sélections uniques et multiples. Chaque objet sélectionné est implémenté comme un `IDispatch` objet.  
+-   `ISelectionContainer` peuvent exprimer des sélections uniques et multiples. Chaque objet sélectionné est implémenté comme un `IDispatch` objet.  
   
 -   L’IDE implémente `IOleUndoManager` en tant que service accessible à partir d’un <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> ou sous la forme d’un objet qui peut être instancié via <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Votre éditeur implémente la `IOleUndoUnit` interface pour chaque `Undo` action.  
   

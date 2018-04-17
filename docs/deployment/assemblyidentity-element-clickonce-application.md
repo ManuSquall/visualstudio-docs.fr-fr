@@ -1,13 +1,10 @@
 ---
-title: "&lt;assemblyIdentity&gt; élément (déploiement ClickOnce) | Documents Microsoft"
-ms.custom: 
+title: '&lt;assemblyIdentity&gt; élément (déploiement ClickOnce) | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assemblyIdentity
 dev_langs:
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - <assemblyIdentity> element [ClickOnce application manifest]
 ms.assetid: f48e9531-efac-4d11-8166-f63a5ece1ac5
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: b731522897512300459a32f8e01c4d54277eaa5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 86a9aedcd3f21d4dbc1cc4f09106421542b188f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; élément (déploiement ClickOnce)
 Identifie l’application déployée dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement.  
@@ -51,7 +47,7 @@ Identifie l’application déployée dans un [!INCLUDE[ndptecclick](../deploymen
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Name`|Obligatoire. Identifie le nom de l’application.<br /><br /> Si `Name` contient des caractères spéciaux, tels que des guillemets simples ou doubles, l’application peut échouer à activer.|  
-|`Version`|Obligatoire. Spécifie le numéro de version de l’application dans le format suivant :`major.minor.build.revision`|  
+|`Version`|Obligatoire. Spécifie le numéro de version de l’application dans le format suivant : `major.minor.build.revision`|  
 |`publicKeyToken`|Facultatif. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la `SHA-1` la valeur de la clé publique sous laquelle l’application ou l’assembly est signé de hachage. La clé publique qui est utilisée pour signer le catalogue doit être de 2 048 bits ou supérieur.<br /><br /> Bien que la signature d’un assembly est recommandée mais facultatif, cet attribut est obligatoire. Si un assembly n’est pas signé, vous devez copier une valeur à partir d’un assembly auto-signé ou utiliser une valeur « factice » de tous les zéros.|  
 |`processorArchitecture`|Obligatoire. Spécifie le processeur. Les valeurs valides sont `msil` pour tous les processeurs, `x86` pour Windows 32 bits, `IA64` pour Windows 64 bits, et `Itanium` pour les processeurs Intel 64 bits Itanium.|  
 |`language`|Obligatoire. Identifie les codes de langue de deux parties (par exemple, `en-US`) de l’assembly. Cet élément est dans le `asmv2` espace de noms. Si non spécifié, la valeur par défaut est `neutral`.|  

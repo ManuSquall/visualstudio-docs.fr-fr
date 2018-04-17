@@ -1,13 +1,10 @@
 ---
-title: "Créer des vues personnalisées d’objets gérés | Documents Microsoft"
-ms.custom: 
+title: Créer des vues personnalisées d’objets gérés | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.data.elements
 dev_langs:
@@ -24,17 +21,16 @@ helpviewer_keywords:
 - debugger, expanding data types
 - mcee_mc.dat file
 ms.assetid: 9969e9b2-9008-4729-8a14-0d6deaa61576
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 329e7fae6a2a8682c23417f88e59700b7caffd53
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 294fb43199e563d3ebc96c47d30c4bc63f368223
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Créer des vues personnalisées d’objets gérés
 Vous pouvez personnaliser la façon dont Visual Studio affiche les types de données dans les fenêtres de variables du débogueur.  

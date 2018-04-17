@@ -1,23 +1,21 @@
 ---
 title: UnInit | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 4cd4fc0b-974a-4e61-9ea8-0aaa1a0c52ea
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9440eeda69592fad2e7c8f4e3e936f4b3dff29b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 735eb1948acfb03a6aa1a70fb27f012c41bb097d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="uninit"></a>UnInit
 Finalise le fichier journal de graphisme, ferme et libère les ressources qui ont été utilisés lors de l’application a été enregistre activement les informations graphiques.  
@@ -29,7 +27,7 @@ void UnInit();
 ```  
   
 ## <a name="remarks"></a>Notes  
- `UnInit`est appelé automatiquement lorsqu’une instance de la `VsgDbg` la destruction de classe. Si le `VsgDbg` instance a été enregistre pas activement les informations graphiques, cela n’a aucun effet.  
+ `UnInit` est appelé automatiquement lorsqu’une instance de la `VsgDbg` la destruction de classe. Si le `VsgDbg` instance a été enregistre pas activement les informations graphiques, cela n’a aucun effet.  
   
  Après `UnInit` a été appelée sur une instance de la `VsgDbg` classe, un graphique de nouveau fichier journal peut être créé en appelant `Init` et finalisé en appelant `UnInit`. Vous pouvez répéter cette opération autant de fois que vous souhaitez utiliser le même `VsgDbg` instance pour créer des fichiers journaux de plusieurs graphiques indépendants.  
   

@@ -1,12 +1,10 @@
 ---
 title: Annotation du comportement de la fonction | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _On_failure_
 - _Return_type_success_
@@ -20,16 +18,16 @@ f1_keywords:
 - _Check_return_
 - _Use_decl_annotations_
 ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
-caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 60cebdd015263ac5d05045e168d3f1063e0527a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9c061c12e7c34a67692af41b72ea7b04b6f06e07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-function-behavior"></a>Annotation du comportement d’une fonction
 En plus d’annoter [paramètres de fonction et valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md), vous pouvez annoter les propriétés de la fonction entière.  
@@ -39,7 +37,7 @@ En plus d’annoter [paramètres de fonction et valeurs de retour](../code-quali
   
 |Annotation|Description|  
 |----------------|-----------------|  
-|`_Called_from_function_class_(name)`|Non destinée à une utilisation autonome ; il s'agit plutôt d'un prédicat à utiliser avec l'annotation `_When_`. Pour plus d’informations, consultez [spécifiant quand et où une Annotation est applicable](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> Le `name` paramètre est une chaîne arbitraire qui apparaît également dans un `_Function_class_` annotation dans la déclaration de certaines fonctions.  `_Called_from_function_class_`retourne zéro si la fonction qui est en cours d’analyse est annotée à l’aide de `_Function_class_` qui a la même valeur de `name`; sinon, elle retourne zéro.|  
+|`_Called_from_function_class_(name)`|Non destinée à une utilisation autonome ; il s'agit plutôt d'un prédicat à utiliser avec l'annotation `_When_`. Pour plus d’informations, consultez [spécifiant quand et où une Annotation est applicable](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> Le `name` paramètre est une chaîne arbitraire qui apparaît également dans un `_Function_class_` annotation dans la déclaration de certaines fonctions.  `_Called_from_function_class_` retourne zéro si la fonction qui est en cours d’analyse est annotée à l’aide de `_Function_class_` qui a la même valeur de `name`; sinon, elle retourne zéro.|  
 |`_Check_return_`|Annote une valeur de retour et indique que l’appelant doit l’inspecter. Le vérificateur signale une erreur si la fonction est appelée dans un contexte void.|  
 |`_Function_class_(name)`|Le paramètre `name` est une chaîne arbitraire indiquée par l'utilisateur.  Il existe dans un espace de noms distinct des autres espaces de noms. Une fonction, un pointeur de fonction ou, plus utilement, un type de pointeur de fonction peut être désigné comme appartenant à une ou plusieurs classes de fonction.|  
 |`_Raises_SEH_exception_`|Annote une fonction qui déclenche toujours une exception SEH, soumise aux conditions `_When_` et `_On_failure_`. Pour plus d’informations, consultez [spécifiant quand et où une Annotation est applicable](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  

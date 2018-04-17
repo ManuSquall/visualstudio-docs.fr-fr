@@ -1,13 +1,10 @@
 ---
-title: "Publication d’Applications ClickOnce | Documents Microsoft"
-ms.custom: 
+title: Publication d’Applications ClickOnce | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Options
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.PublishWizard.Help
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - applications [Visual Studio], ClickOnce deployment
 - deploying applications [ClickOnce], publishing ClickOnce applications
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 02b5f2477a18f3432bc255b9bd17a2ac11fbc030
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d0ea0aac20252c8be071f81ee9120dee9f220606
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publishing-clickonce-applications"></a>Publication d'applications ClickOnce
 Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour la première fois, les propriétés de publication peuvent être définies à l'aide de l'Assistant Publication. Seules quelques-unes des propriétés sont disponibles dans l'Assistant ; toutes les autres sont définies à leurs valeurs par défaut.  

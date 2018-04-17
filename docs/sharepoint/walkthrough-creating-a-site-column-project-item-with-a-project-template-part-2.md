@@ -1,25 +1,24 @@
 ---
-title: "Procédure pas à pas : Création d’un élément de projet de colonne de Site avec un modèle de projet, partie 2 | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création d’un élément de projet de colonne de Site avec un modèle de projet, partie 2 | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f0472688f9f36d2b14c89cc904bf6ce4badd6ca6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Procédure pas à pas : création d'un élément de projet Colonne de site avec un modèle de projet, deuxième partie
   Une fois que vous définissez un type personnalisé d’élément de projet SharePoint et l’associez à un modèle de projet dans Visual Studio, vous souhaiterez également fournir un Assistant pour le modèle. Vous pouvez utiliser l’Assistant pour collecter des informations à partir des utilisateurs lorsqu’ils utilisent votre modèle pour créer un projet qui contient l’élément de projet. Les informations que vous recueillez peuvent être utilisées pour initialiser l’élément de projet.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
 -   Débogage et test de l’Assistant.  
   
 > [!NOTE]  
->  Vous pouvez télécharger un exemple qui contient les projets remplis, de code et d’autres fichiers pour cette procédure pas à pas à l’emplacement suivant : [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Vous pouvez télécharger un exemple qui contient les projets remplis, de code et d’autres fichiers pour cette procédure pas à pas à l’emplacement suivant : [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour effectuer cette procédure pas à pas, vous devez d’abord créer la solution SiteColumnProjectItem en effectuant [procédure pas à pas : création d’un élément de projet colonne de Site avec un modèle de projet, partie 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Colonnes de site dans SharePoint. Pour plus d’informations, consultez [colonnes](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
-##  <a name="wizardcomponents"></a>Présentation des composants de l’Assistant  
+##  <a name="wizardcomponents"></a> Présentation des composants de l’Assistant  
  L’Assistant qui est illustré dans cette procédure pas à pas contient plusieurs composants. Le tableau suivant décrit ces composants.  
   
 |Composant|Description|  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Dans la liste des modèles de projet, choisissez **bibliothèque de contrôles utilisateur WPF**, nommez le projet **ProjectTemplateWizard**, puis choisissez le **OK** bouton.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le **ProjectTemplateWizard** projet à la solution et ouvre le fichier UserControl1.xaml par défaut.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **ProjectTemplateWizard** projet à la solution et ouvre le fichier UserControl1.xaml par défaut.  
   
 6.  Supprime le fichier UserControl1.xaml du projet.  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Choisissez le **bibliothèque de classes** modèle de projet, nommez le projet **SharePointCommands**, puis choisissez le **OK** bouton.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le **SharePointCommands** projet à la solution et ouvre le fichier de code Class1 par défaut.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **SharePointCommands** projet à la solution et ouvre le fichier de code Class1 par défaut.  
   
 5.  Supprime le fichier de code Class1 du projet.  
   
@@ -163,7 +162,7 @@ ms.lasthandoff: 01/10/2018
   
 13. Si vous développez un projet Visual Basic, importez l’espace de noms ProjectTemplateWizard dans votre projet à l’aide de la **Concepteur de projet**.  
   
-     Pour plus d’informations, consultez [Comment : ajouter ou supprimer des espaces de noms importés &#40; Visual Basic &#41; ](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Pour plus d’informations, consultez [Comment : ajouter ou supprimer des espaces de noms importés &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>Pour configurer le projet SharePointCommands  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Cliquez sur la flèche à côté du **ajouter** bouton, puis choisissez le **ajouter en tant que lien** option dans le menu qui s’affiche.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le fichier de code pour le **SharePointCommands** projet sous forme de lien. Le fichier de code se trouve dans le **ProjectTemplateWizard** le projet, mais le code dans le fichier est également compilé dans le **SharePointCommands** projet.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le fichier de code pour le **SharePointCommands** projet sous forme de lien. Le fichier de code se trouve dans le **ProjectTemplateWizard** le projet, mais le code dans le fichier est également compilé dans le **SharePointCommands** projet.  
   
 5.  Dans le **SharePointCommands** de projet, ajoutez un autre fichier de code nommé commandes.  
   
@@ -406,7 +405,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Pour plus d’informations sur la `WizardExtension` élément, consultez [WizardExtension, élément &#40; Modèles Visual Studio &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Pour plus d’informations sur la `WizardExtension` élément, consultez [WizardExtension, élément &#40;modèles Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Enregistrez et fermez le fichier.  
   

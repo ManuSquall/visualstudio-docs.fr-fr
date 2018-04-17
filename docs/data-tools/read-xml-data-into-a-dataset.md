@@ -1,11 +1,8 @@
 ---
-title: "Lire des données XML dans un jeu de données | Documents Microsoft"
-ms.custom: 
+title: Lire des données XML dans un jeu de données | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - XML documents, reading
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 093dbb5ee8f088a7f2e4ccd1dd063cfeecc2c5e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 4942d0c60d5219e563057b11e7b13b5ab43307e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Lire des données XML dans un dataset
 ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dans cette procédure pas à pas, vous créez une application Windows qui charge des données XML dans un jeu de données. Le jeu de données est ensuite affichée dans un <xref:System.Windows.Forms.DataGridView> contrôle. Enfin, un schéma XML basé sur le contenu du fichier XML s’affiche dans une zone de texte.  
@@ -49,7 +46,7 @@ ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dan
 > [!NOTE]
 >  Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition, vous utilisez. Pour modifier vos paramètres, dans le **outils** menu, sélectionnez **importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="create-a-new-project"></a>Créer un projet  
+## <a name="create-a-new-project"></a>Créer un nouveau projet  
  Dans cette étape, vous créez un projet Visual Basic ou Visual c# contenant cette procédure pas à pas.  
   
 #### <a name="to-create-the-new-windows-project"></a>Pour créer un projet Windows  

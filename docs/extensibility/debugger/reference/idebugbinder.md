@@ -1,29 +1,25 @@
 ---
 title: IDebugBinder | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugBinder
 helpviewer_keywords:
 - IDebugBinder interface
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3377ade8cc4301e1d8a5be19c5d828755934ce9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3514d280b6718fc670f3bdac35b6bbacbbf2b09c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
@@ -57,7 +53,7 @@ IDebugBinder : IUnknown
 ## <a name="remarks"></a>Notes  
  Cette interface retourne les objets qui sont utilisés par l’évaluateur d’expression dans les arborescences d’analyse. L’évaluateur d’expression analyse une expression à l’aide du fournisseur de symbole pour convertir les symboles dans l’expression à des instances de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md), qui décrivent chaque symbole en termes de son type et son emplacement dans le code source. Le [lier](../../../extensibility/debugger/reference/idebugbinder-bind.md) méthode convertit `IDebugField` objets [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) les objets qui se connectent ou lier un symbole de type à une valeur réelle de la mémoire. Ces `IDebugObject` sont ensuite stockés dans une arborescence d’analyse pour une évaluation ultérieure.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : ee.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

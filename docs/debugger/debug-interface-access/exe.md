@@ -1,13 +1,10 @@
 ---
 title: Exe | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - .exe files
 - executable files, Exe symbol
 ms.assetid: a781d2cf-55fe-4373-9cf1-b732864244e0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2675d821a29b53926b2145366ae98f3d8adceb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9f6201aa125dd54cbd4f61f22e93d798957170d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exe"></a>Exe
 Exe est le seul symbole sans qu’elle soit un lexicale ou de la classe parente, car il représente la portée globale du fichier .exe ou .dll. Il est uniquement un symbole avec la `SymTagExe` balise par fichier. Le [IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) méthode retourne le symbole.  
@@ -37,9 +33,9 @@ Exe est le seul symbole sans qu’elle soit un lexicale ou de la classe parente,
 |Propriété|Type de données|Description|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|Durée de vie de cet exécutable.|  
-|[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID`de cet exécutable.|  
-|[IDiaSymbol::get_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|`BOOL`|`TRUE`Si le fichier de symboles associé à ce fichier exécutable contient des types de C (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
-|[IDiaSymbol::get_isStripped](../../debugger/debug-interface-access/idiasymbol-get-isstripped.md)|`BOOL`|`TRUE`Si les symboles privés ont été supprimés à partir du fichier de symbole associé à cet exécutable (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID` de cet exécutable.|  
+|[IDiaSymbol::get_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|`BOOL`|`TRUE` Si le fichier de symboles associé à ce fichier exécutable contient des types de C (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_isStripped](../../debugger/debug-interface-access/idiasymbol-get-isstripped.md)|`BOOL`|`TRUE` Si les symboles privés ont été supprimés à partir du fichier de symbole associé à cet exécutable (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
 |[IDiaSymbol::get_machineType](../../debugger/debug-interface-access/idiasymbol-get-machinetype.md)|`DWORD`|Valeur indiquant l’unité centrale cible (un de le [cv_cpu_type_e, énumération](../../debugger/debug-interface-access/cv-cpu-type-e.md) valeurs).|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nom du fichier .exe.|  
 |[IDiaSymbol::get_signature](../../debugger/debug-interface-access/idiasymbol-get-signature.md)|`DWORD`|Signature de l’exécutable.|  

@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Liaison de données Simple dans un projet au niveau du Document | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Liaison de données Simple dans un projet au niveau du Document | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 95029c946939bf0918e15034625ad31c1e5897b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 939d45246ea36f4227a0b914210cb0470b325c20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procédure pas à pas : liaison de données simple dans un projet au niveau du document
   Cette procédure pas à pas illustre les principes fondamentaux de la liaison de données dans un projet au niveau du document. Un champ de données dans une base de données SQL Server est lié à une plage nommée dans Microsoft Office Excel. La procédure pas à pas montre également comment ajouter des contrôles qui vous permettent de faire défiler les enregistrements dans la table.  
@@ -181,7 +180,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  Vérifiez que le premier enregistrement apparaît dans les cellules **A1** et **B1**.  
   
-3.  Cliquez sur le  **>**  (`Button3`) bouton et vérifiez que l’enregistrement suivant apparaît dans la cellule **A1** et **B1**.  
+3.  Cliquez sur le **>** (`Button3`) bouton et vérifiez que l’enregistrement suivant apparaît dans la cellule **A1** et **B1**.  
   
 4.  Cliquez sur les autres boutons de défilement pour confirmer que l’enregistrement est modifié comme prévu.  
   

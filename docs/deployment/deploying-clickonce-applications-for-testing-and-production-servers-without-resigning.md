@@ -1,12 +1,10 @@
 ---
-title: "Déploiement d’Applications ClickOnce pour les tests et les serveurs de Production sans nouvelle signature | Documents Microsoft"
-ms.custom: 
+title: Déploiement d’Applications ClickOnce pour les tests et les serveurs de Production sans nouvelle signature | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - deploymentProvider tag
 - manifests [ClickOnce]
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
-caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ec7265f91d5c202d5885b7f1994aa6f037d6d2ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 54474f0388ecbdbc9b1b1cb207544fd7091c1e96
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Déploiement d'applications ClickOnce pour des serveurs de test et de production sans nouvelle signature
 Cette rubrique présente une nouvelle fonctionnalité de ClickOnce présentée dans le .NET Framework version 3.5 qui permet le déploiement d’applications ClickOnce à partir de plusieurs emplacements réseau sans nouvelle signature ni modification ClickOnce manifestes.  
@@ -54,13 +52,13 @@ Cette rubrique présente une nouvelle fonctionnalité de ClickOnce présentée d
   
  Le point clé à retenir est que les applications qui excluent un `deploymentProvider` Impossible de modifier leur emplacement d’installation pendant les mises à jour, jusqu'à ce qu’ils sont fournis à une mise à jour qui inclut le `deploymentProvider` à nouveau la balise.  
   
- Voici deux exemples pour préciser ce point. Dans le premier exemple, vous publiez une application ClickOnce qui n’a aucun `deploymentProvider` balise et vous demandez aux utilisateurs de l’installer à partir de http://www.adatum.com/MyApplication/. Si vous décidez que vous souhaitez publier la prochaine mise à jour de l’application à partir de http://subdomain.adatum.com/MyApplication/, vous n’avez aucun moyen de ce qui signifie cela dans le manifeste de déploiement qui réside dans http://www.adatum.com/MyApplication/. Vous pouvez effectuer une des deux choses :  
+ Voici deux exemples pour préciser ce point. Dans le premier exemple, vous publiez une application ClickOnce qui n’a aucun `deploymentProvider` balise et vous demandez aux utilisateurs de l’installer à partir de http://www.adatum.com/MyApplication/. Si vous décidez de publier la prochaine mise à jour de l’application à partir de http://subdomain.adatum.com/MyApplication/, vous n’avez aucun moyen de ce qui signifie cela dans le manifeste de déploiement qui réside dans http://www.adatum.com/MyApplication/. Vous pouvez effectuer une des deux choses :  
   
 -   Dites à vos utilisateurs à désinstaller la version précédente et installer la nouvelle version dans le nouvel emplacement.  
   
 -   Inclure une mise à jour sur http://www.adatum.com/MyApplication/ qui inclut un `deploymentProvider` pointant vers http://www.adatum.com/MyApplication/. Ensuite, diffuser une autre mise à jour ultérieurement avec `deploymentProvider` pointant vers http://subdomain.adatum.com/MyApplication/.  
   
- Dans le deuxième exemple, vous publiez une application ClickOnce qui spécifie `deploymentProvider`, et que vous décidez de le supprimer. Une fois la nouvelle version sans `deploymentProvider` a été téléchargé sur les clients, vous ne pourrez pas rediriger le chemin d’accès utilisé pour les mises à jour jusqu'à ce que vous publiez une version de votre application a `deploymentProvider` restaurée. Comme avec le premier exemple, `deploymentProvider` doit pointer initialement à l’emplacement actuel de la mise à jour, pas le nouvel emplacement. Dans ce cas, si vous tentez d’insérer un `deploymentProvider` qui fait référence à http://subdomain.adatum.com/MyApplication/, puis la prochaine mise à jour échoue.  
+ Dans le deuxième exemple, vous publiez une application ClickOnce qui spécifie `deploymentProvider`, et que vous décidez de le supprimer. Une fois la nouvelle version sans `deploymentProvider` a été téléchargé sur les clients, vous ne pourrez pas rediriger le chemin d’accès utilisé pour les mises à jour jusqu'à ce que vous publiez une version de votre application a `deploymentProvider` restaurée. Comme avec le premier exemple, `deploymentProvider` doit pointer initialement à l’emplacement actuel de la mise à jour, pas le nouvel emplacement. Dans ce cas, si vous tentez d’insérer un `deploymentProvider` qui fait référence à http://subdomain.adatum.com/MyApplication/, la prochaine mise à jour échouera.  
   
 ## <a name="creating-a-deployment"></a>Création d’un déploiement  
  Pour des instructions étape par étape sur la création de déploiements qui peuvent être déployés à partir de différents emplacements réseau, consultez [procédure pas à pas : déploiement manuel d’une Application ClickOnce qui est non nécessitent nouvelle signature et qui conserve les informations sur le logo](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  

@@ -1,29 +1,25 @@
 ---
 title: PROVIDER_PROCESS_DATA | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - PROVIDER_PROCESS_DATA
 helpviewer_keywords:
 - PROVIDER_PROCESS_DATA structure
 ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b4b23f9bc723ee1ce7a10d12eb9fee0355d8ef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 61b1b5d67faea0ce5c1c2a56b3f411cd4f947067
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 Cette structure fournit des informations sur les processus en cours d’exécution sur un ordinateur.  
@@ -59,7 +55,7 @@ public struct PROVIDER_PROCESS_DATA {
 ## <a name="remarks"></a>Notes  
  Cette structure est passée à la [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) méthode où il est renseigné.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

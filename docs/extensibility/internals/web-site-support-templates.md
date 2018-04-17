@@ -1,27 +1,23 @@
 ---
-title: "Modèles de prise en charge du Site Web | Documents Microsoft"
-ms.custom: 
+title: Modèles de prise en charge du Site Web | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8be16e2bf1532b99f0c9c594394c3f0cbf8b1f75
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: af8e0d845157b475e4a5527443f55286828023cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-site-support-templates"></a>Modèles de prise en charge des sites Web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Modèles de projet et d’élément de site Web fournissent un site Web réutilisables et personnalisables des stubs qui accélèrent le processus de développement en supprimant la nécessité de créer de nouveaux projets de site Web et des éléments à partir de zéro. Pour plus d’informations sur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modèles, consultez [création de modèles de projet et élément](../../ide/creating-project-and-item-templates.md).
@@ -63,7 +59,7 @@ ms.lasthandoff: 03/02/2018
 
      La page d’accueil par défaut pour le nouveau site Web. L’attribut de langage spécifie le langage de code-behind et l’attribut CodeFile Spécifie le fichier dépendant qui contient le code du code-behind associé à cette page.
 
--   Default.aspx.*extension*
+-   Default.aspx. *extension*
 
      Le fichier dépendant qui contient le code du code-behind pour la page d’accueil par défaut. Le langage de code-behind détermine le *extension* de ce fichier.
 
@@ -182,7 +178,7 @@ ms.lasthandoff: 03/02/2018
 
      Le contenu de départ de la page maître. Cette page maître est un fichier dépendant du code-behind associé.
 
--   Codebehind.*extension*
+-   Code-behind. *extension*
 
      Le fichier dépendant qui implémente la classe de page maître. Le langage de code-behind détermine le *extension* de ce fichier.
 

@@ -1,23 +1,21 @@
 ---
-title: "Règle de règles de vérification de base défini pour le code managé | Documents Microsoft"
-ms.custom: 
+title: Règle de règles de vérification de base défini pour le code managé | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 011773ab8a1f4436313b318a13bde637c91b055a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 3b40f8844b76f7c5fafcadff6c3c20ac9b607dd0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de vérification de base pour le code managé
 L’ensemble de règles de base des règles de vérification se concentre sur les erreurs de logique et les erreurs courantes lors de l’utilisation des API framework. Les règles de vérification de base incluent les règles dans l’ensemble de règles des règles minimales recommandées. Pour plus d’informations, consultez [gérés recommandé de règles défini pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) vous devez inclure cet ensemble de règles pour développer la liste d’avertissements que les règles minimales recommandées.  

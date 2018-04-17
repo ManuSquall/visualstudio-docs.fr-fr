@@ -1,13 +1,10 @@
 ---
-title: "Comment : afficher des Documents de Script | Documents Microsoft"
-ms.custom: 
+title: 'Comment : afficher des Documents de Script | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - Script Explorer
 ms.assetid: 8b621e53-4508-4b4a-9995-70995b0b9ac8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7daecd0974abd5be733e7cec3426045c1f859eb8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 62c62212e72561817b58cf1496fff20a05745277
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-view-script-documents"></a>Comment : afficher les documents de script
 Dans les versions antérieures de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], les fichiers de script côté client générés depuis un script côté serveur s'affichaient dans la fenêtre Explorateur de scripts. La fenêtre Explorateur de scripts était souvent masquée et la disponibilité du script côté client n'était pas toujours évidente.  
@@ -35,7 +31,7 @@ Dans les versions antérieures de [!INCLUDE[vsprvs](../code-quality/includes/vsp
   
  Les fichiers de script côté client sont visibles uniquement lorsque vous êtes en mode débogage ou en mode arrêt. Ils apparaissent dans le **Documents de Script** nœud.  
   
- Les fichiers de script côté serveur sont toujours visibles. Ils apparaissent dans le  **\<chemin du site Web >** nœud. Le nom du nœud ressemble à cet exemple :`c:\...\Website2\`  
+ Les fichiers de script côté serveur sont toujours visibles. Ils apparaissent dans le  **\<chemin du site Web >** nœud. Le nom du nœud ressemble à cet exemple : `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>Pour afficher un document de script côté serveur  
   

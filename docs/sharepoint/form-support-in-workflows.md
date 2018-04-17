@@ -1,12 +1,10 @@
 ---
-title: "Écran de prise en charge dans les Workflows | Documents Microsoft"
-ms.custom: 
+title: Écran de prise en charge dans les Workflows | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2544bbe60ea014ee873342f06ce285c809b42eb6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b06f956cec9f26aff59089be4e29affcd6d73ad8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="form-support-in-workflows"></a>Prise en charge des formulaires dans les flux de travail
   Quatre types de formulaires peuvent être utilisés dans un flux de travail : association, initiation, tâche et la modification. Ces types de formulaire peuvent être basés sur un formulaire ASPX ou un formulaire InfoPath. Le niveau de prise en charge que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fournit pour un formulaire particulier dépend de plusieurs facteurs, qui sont décrites dans les tableaux suivants. Pour plus d’informations sur les types de formulaire de flux de travail, consultez [vue d’ensemble des formulaires de flux de travail](http://go.microsoft.com/fwlink/?LinkId=185228) sur le site Web MSDN.  

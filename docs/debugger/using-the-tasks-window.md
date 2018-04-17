@@ -2,12 +2,9 @@
 title: À l’aide de la fenêtre tâches | Documents Microsoft
 ms.custom: ''
 ms.date: 03/18/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.paralleltasks
 dev_langs:
@@ -18,17 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - debugger, parallel tasks window
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
-caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 889c78e17898a8f5f3d84b81c9605761919d7a2e
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: b16a8ea9a9cfc11f3029c88099d7dde479c5f1c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-tasks-window"></a>Utilisation de la fenêtre Tâches
 Le **tâches** fenêtre ressemble à la **Threads** fenêtre, à ceci près qu’elle affiche des informations sur <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), ou [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) des objets au lieu de chaque thread. Comme les threads, les tâches représentent des opérations asynchrones qui peuvent s’exécuter simultanément. Toutefois, plusieurs tâches peuvent s’exécuter sur le même thread. 
@@ -51,7 +47,7 @@ Le **tâches** fenêtre ressemble à la **Threads** fenêtre, à ceci près qu�
   
 |Nom de la colonne|Description|  
 |-----------------|-----------------|  
-|**Flags**|Affiche les tâches avec indicateur et vous permet d’ajouter un indicateur à une tâche ou d’en supprimer un.|  
+|**Indicateurs**|Affiche les tâches avec indicateur et vous permet d’ajouter un indicateur à une tâche ou d’en supprimer un.|  
 |**Icônes**|La flèche jaune indique la tâche actuelle. La tâche actuelle est la tâche supérieure du thread actuel.<br /><br /> Une flèche blanche indique la tâche d'arrêt, autrement dit, celle qui était actuelle lorsque le débogueur a été appelé.<br /><br /> L'icône de pause indique une tâche gelée par l'utilisateur. Vous pouvez geler et libérer une tâche en cliquant dessus avec le bouton droit dans la liste.|  
 |**ID**|Numéro fourni par le système pour la tâche. En code natif, il s’agit de l’adresse de la tâche.|  
 |**État**|L’état actuel (planifié, actif, bloqué, bloqué, en attente ou terminé) de la tâche. Une tâche planifiée est une tâche qui n’a pas encore été exécutée et, par conséquent, qui de possède pas encore une pile d’appels, un thread assigné ou des informations connexes.<br /><br /> Une tâche active est une tâche qui était en train d’exécuter du code avant de s’arrêter dans le débogueur.<br /><br /> Une tâche en attente ou bloquée est celle qui est bloquée, car elle est en attente d’un événement soit signalé, un verrou soit libéré ou une autre tâche se termine.<br /><br /> Une tâche bloquée est une tâche en attente dont le thread est bloqué par un autre thread.<br /><br /> Placez le curseur sur le **état** cellule d’une tâche bloquée ou en attente pour plus d’informations sur le blocage. **Avertissement :** le **tâches** fenêtre signale les interblocages uniquement pour les tâches bloquées utilisant une primitive de synchronisation prise en charge par Wait Chain Traversal (WCT). Par exemple, pour un interblocage <xref:System.Threading.Tasks.Task> objet, qui utilise le WCT, le débogueur signale **bloquée en attente**. Pour une tâche bloquée gérée par le Runtime d’accès concurrentiel, qui n’utilise pas Wait Chain Traversal, le débogueur signale **attente**. Pour plus d’informations sur WCT, consultez [Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
@@ -63,7 +59,7 @@ Le **tâches** fenêtre ressemble à la **Threads** fenêtre, à ceci près qu�
 |**AsyncState**|En matière de code managé, état de la tâche. Par défaut, cette colonne est masquée. Pour afficher cette colonne, ouvrez le menu contextuel pour l'une des en-têtes de colonnes. Choisissez **colonnes**, **AsyncState**.|  
 |**Parent**|ID de la tâche qui a créé cette tâche. Si rien n’est indiqué, la tâche n’a aucun parent. Ceci s'applique uniquement aux programmes gérés.|  
 |**Affectation de thread**|ID et nom du thread sur lequel la tâche s’exécute.|  
-|**AppDomain**|Pour du code managé, domaine d’application dans lequel la tâche s’exécute.|  
+|**Domaine d’application**|Pour du code managé, domaine d’application dans lequel la tâche s’exécute.|  
 |**task_group**|Pour le code natif, l’adresse de la [task_group](/cpp/parallel/concrt/reference/task-group-class.mdd) objet qui a planifié la tâche. Pour les agents asynchrones et les tâches légères, cette colonne a la valeur 0.|  
 |**Process**|ID du processus que la tâche exécute.|  
   

@@ -1,26 +1,23 @@
 ---
-title: R Tools pour Visual Studio | Microsoft Docs
-description: "Les Outils R pour Visual Studio (RTVS) sont une extension gratuite open source qui fournit de nombreuses fonctionnalités de langage, notamment IntelliSense, le débogage et les espaces de travail à distance."
-ms.custom: 
+title: Outils R pour Visual Studio
+description: Les Outils R pour Visual Studio (RTVS) sont une extension gratuite open source qui fournit de nombreuses fonctionnalités de langage, notamment IntelliSense, le débogage et les espaces de travail à distance.
+ms.custom: ''
 ms.date: 11/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 7e5fd1c6f2e2d33fe3841923f1b25728ad002f6e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: ec4eb7c0b8eb00667283e9e7051ff03fcd5b2791
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Utilisation de R dans Visual Studio
 
@@ -50,7 +47,7 @@ Suivez ensuite les liens ci-dessous pour en savoir plus sur les fonctionnalités
 | [Explorateur de variables](variable-explorer.md) | Examinez les variables d’une étendue globale ou d’une étendue spécifique à un package, avec la possibilité d’afficher des tableaux que vous pouvez trier et exporter au format CSV. | N/A |
 | [Débogage complet](debugging-r-in-visual-studio.md) | Inclut l’intégration dans la fenêtre interactive. | [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md) |
 
-Consultez aussi les [questions fréquentes (FAQ)](faq.md).
+Voir aussi la [Foire aux questions](faq.md).
 
 |   |   |
 |---|---|

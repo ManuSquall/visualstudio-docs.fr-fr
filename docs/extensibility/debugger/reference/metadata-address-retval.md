@@ -1,29 +1,25 @@
 ---
 title: METADATA_ADDRESS_RETVAL | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - METADATA_ADDRESS_RETVAL
 helpviewer_keywords:
 - METADATA_ADDRESS_RETVAL structure
 ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4de62d86bcb8453c4bdd01fc697390d1c55d9dd5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7358669f3057bf26ab88f3a1ef3fc301904c6b0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Cette structure représente une valeur de retour à partir d’une méthode ou une fonction.  
@@ -64,7 +60,7 @@ public struct METADATA_ADDRESS_RETVAL {
 ## <a name="remarks"></a>Notes  
  Cette structure est la partie de l’union dans la [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) lors de la structure la `dwKind` champ le `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_RETVAL` (une valeur à partir de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : sh.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

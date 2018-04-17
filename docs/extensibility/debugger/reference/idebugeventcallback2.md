@@ -1,29 +1,25 @@
 ---
 title: IDebugEventCallback2 | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugEventCallback2
 helpviewer_keywords:
 - IDebugEventCallback2
 ms.assetid: 2c935ee0-2e22-4be0-a852-73736f33c8c9
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 165f973fa9139f281211e6b01167b3d7044166df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 68d29d928f310cb045ed712a151f9275446465a4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 Cette interface est utilisée par le moteur de débogage (DE) pour envoyer des événements de débogage pour le Gestionnaire de session de débogage (SDM).  
@@ -35,7 +31,7 @@ IDebugEventCallback2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]implémente cette interface pour recevoir les événements à partir d’un moteur de débogage.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] implémente cette interface pour recevoir les événements à partir d’un moteur de débogage.  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
  Un moteur de débogage reçoit généralement cette interface lorsque le SDM appelle [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md), ou [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md). Un moteur de débogage envoie les événements dans le SDM en appelant [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
@@ -52,7 +48,7 @@ IDebugEventCallback2 : IUnknown
   
  Si un package implémente [IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) en code managé, il est fortement recommandé que <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> appelée sur les diverses interfaces qui sont passées à [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

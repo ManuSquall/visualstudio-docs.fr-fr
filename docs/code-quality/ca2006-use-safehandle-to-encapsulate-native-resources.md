@@ -1,12 +1,10 @@
 ---
-title: "CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives | Documents Microsoft"
-ms.custom: 
+title: 'CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2006
 - UseSafeHandleToEncapsulateNativeResources
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - UseSafeHandleToEncapsulateNativeResources
 - CA2006
 ms.assetid: a71950bd-bcc1-463d-b1f2-5233bc451456
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d70c453e502dd0a7f4eda2e9247dbc3ec3229ebe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0fdef78fdad92eb08012a474afff5c4c8c4d7ab8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives
 |||  
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
  Dans de tels scénarios, des problèmes de sécurité ou de fiabilité existeront également si l’accès multithread est autorisé au `IntPtr` et un moyen de libérer la ressource représentée par le `IntPtr` est fournie. Ces problèmes impliquent le recyclage de le `IntPtr` valeur sur la version de la ressource lors de l’utilisation simultanée de la ressource est rendue sur un autre thread. Cela peut entraîner des conditions de concurrence où un thread peut lire ou écrire des données qui sont associées à la ressource incorrecte. Par exemple, si votre type stocke un handle de système d’exploitation comme un `IntPtr` et permet aux utilisateurs d’appeler à la fois **fermer** et toute autre méthode qui utilise ce handle sans une sorte de synchronisation et simultanément, votre code a une poignée de recyclage problème.  
   
- Ce problème de recyclage de handle peut provoquer une altération des données et, souvent, une faille de sécurité. `SafeHandle`et sa classe sœur <xref:System.Runtime.InteropServices.CriticalHandle> fournissent un mécanisme pour encapsuler un handle natif à une ressource afin que ces problèmes de thread peuvent être évitées. En outre, vous pouvez utiliser `SafeHandle` et sa classe sœur `CriticalHandle` pour d’autres problèmes de thread, par exemple, pour contrôler avec soin la durée de vie des objets managés contenant une copie du handle natif sur les appels aux méthodes natives. Dans ce cas, vous pouvez souvent supprimer des appels à `GC.KeepAlive`. Le performances charge subie lorsque vous utilisez `SafeHandle` et, à un moindre degré, `CriticalHandle`, peut souvent être réduite avec une conception rigoureuse.  
+ Ce problème de recyclage de handle peut provoquer une altération des données et, souvent, une faille de sécurité. `SafeHandle` et sa classe sœur <xref:System.Runtime.InteropServices.CriticalHandle> fournissent un mécanisme pour encapsuler un handle natif à une ressource afin que ces problèmes de thread peuvent être évitées. En outre, vous pouvez utiliser `SafeHandle` et sa classe sœur `CriticalHandle` pour d’autres problèmes de thread, par exemple, pour contrôler avec soin la durée de vie des objets managés contenant une copie du handle natif sur les appels aux méthodes natives. Dans ce cas, vous pouvez souvent supprimer des appels à `GC.KeepAlive`. Le performances charge subie lorsque vous utilisez `SafeHandle` et, à un moindre degré, `CriticalHandle`, peut souvent être réduite avec une conception rigoureuse.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Convertir `IntPtr` utilisation de `SafeHandle` pour gérer en toute sécurité l’accès aux ressources natives. Consultez le <xref:System.Runtime.InteropServices.SafeHandle> rubrique de référence pour obtenir des exemples.  

@@ -1,13 +1,10 @@
 ---
-title: "Vue d’ensemble du modèle objet de ruban | Documents Microsoft"
-ms.custom: 
+title: Vue d’ensemble du modèle objet de ruban | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bda61cd7ca0e169a4f62fbc0c33b24e3c4ec0048
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c0d6defc160d08d0c92dd21370144c1ef748e7e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-object-model-overview"></a>Vue d'ensemble du modèle objet de ruban
   Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expose un modèle objet fortement typé que vous pouvez utiliser pour obtenir et définir les propriétés des contrôles de ruban au moment de l’exécution. Par exemple, vous pouvez dynamiquement remplir des contrôles de menu, ou afficher et masquer les contrôles en fonction du contexte. Vous pouvez également ajouter des onglets, des groupes et des contrôles à un ruban, mais uniquement avant le chargement du ruban par l’application Office. Pour plus d’informations, consultez [définition de propriétés qui sont en lecture seule](#SettingReadOnlyProperties).  
@@ -31,12 +28,12 @@ ms.lasthandoff: 01/10/2018
   
  Ce modèle objet de ruban se compose principalement de la [classe Ribbon](#RibbonClass), [événements de ruban](#RibbonEvents), et [les Classes de contrôle de ruban](#RibbonControlClasses).  
   
-##  <a name="RibbonClass"></a>Classe du ruban  
+##  <a name="RibbonClass"></a> Classe du ruban  
  Lorsque vous ajoutez un nouveau **ruban (Concepteur visuel)** d’élément à un projet, Visual Studio ajoute un **ruban** classe à votre projet. Le **ruban** classe hérite de la <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> classe.  
   
  Cette classe s’affiche comme une classe partielle qui est partagée entre le fichier de code du ruban et le fichier de code du Concepteur de ruban.  
   
-##  <a name="RibbonEvents"></a>Événements de ruban  
+##  <a name="RibbonEvents"></a> Événements de ruban  
  Le **ruban** classe contient les trois événements suivants :  
   
 |événement|Description|  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Vous permet de cache des images dans la personnalisation du ruban lors du chargement du ruban. Vous pouvez obtenir un léger gain de performance si vous écrivez du code pour mettre en cache les images du ruban dans ce gestionnaire d’événements. Pour plus d'informations, consultez <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Déclenché lorsque l’instance du ruban se ferme.|  
   
-##  <a name="RibbonControlClasses"></a>Contrôles de ruban  
+##  <a name="RibbonControlClasses"></a> Contrôles de ruban  
  Le <xref:Microsoft.Office.Tools.Ribbon> espace de noms contient un type pour chaque contrôle que vous voyez dans le **contrôles de ruban Office** de la **boîte à outils**.  
   
  Le tableau suivant présente le type pour chaque `Ribbon` contrôle. Pour obtenir une description de chaque contrôle, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Separator**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**Onglet**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
+|**onglet**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**Bouton bascule**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
   
  Le <xref:Microsoft.Office.Tools.Ribbon> espace de noms utilise le préfixe « Ribbon » pour ces types afin d’éviter une collision de nom avec les noms de classes de contrôle de la <xref:System.Windows.Forms> espace de noms.  
@@ -87,14 +84,14 @@ ms.lasthandoff: 01/10/2018
 |Obtenir l’image qui apparaît sur un contrôle.|Utilisez la propriété d’Image.|  
 |Modifier l’étiquette d’un contrôle.|Utilisez la propriété Label.|  
 |Ajouter des données définies par l’utilisateur à un contrôle.|Utilisez la propriété Tag.|  
-|Obtenir les éléments dans un <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, ou<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>contrôle.|Utilisez la propriété Items.|  
+|Obtenir les éléments dans un <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, ou<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> contrôle.|Utilisez la propriété Items.|  
 |Ajouter des éléments à un <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, ou <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> contrôle.|Utilisez la propriété Items.|  
 |Ajouter des contrôles à un <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Utilisez la propriété Items.<br /><br /> Pour ajouter des contrôles à la <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> après le chargement du ruban dans l’application Office, vous devez définir le <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> propriété **true** avant le chargement du ruban dans l’application Office. Pour plus d’informations, consultez [définition de propriétés qui sont en lecture seule](#SettingReadOnlyProperties).|  
 |Obtenir l’élément sélectionné d’un <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, ou <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Utilisez la propriété SelectedItem. Pour un <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, utilisez le <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> propriété.|  
 |Obtenir les groupes un <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Utilisez la propriété <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|  
 |Spécifiez le nombre de lignes et de colonnes qui s’affichent dans un <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Utilisez le <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> et <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> propriétés.|  
   
-##  <a name="SettingReadOnlyProperties"></a>Définition des propriétés en lecture seule  
+##  <a name="SettingReadOnlyProperties"></a> Définition des propriétés en lecture seule  
  Certaines propriétés peuvent être définies uniquement avant le chargement du ruban. Il existe trois emplacements pour définir ces propriétés :  
   
 -   Dans Visual Studio **propriétés** fenêtre.  
@@ -131,7 +128,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
   
-###  <a name="ReadOnlyProperties"></a>Propriétés qui passent en lecture seule  
+###  <a name="ReadOnlyProperties"></a> Propriétés qui passent en lecture seule  
  Le tableau suivant présente les propriétés qui peuvent être définies uniquement avant le chargement du ruban.  
   
 > [!NOTE]  
@@ -142,14 +139,14 @@ ms.lasthandoff: 01/10/2018
 |**BoxStyle**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**ColumnCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
-|**ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
+|**controlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Dynamique**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Global**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Groupes**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
+|**maxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Name**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**Position**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
@@ -186,7 +183,7 @@ ms.lasthandoff: 01/10/2018
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|*expéditeur*|Un <xref:System.Object> qui représente le contrôle qui a déclenché l’événement.|  
+|*Expéditeur*|Un <xref:System.Object> qui représente le contrôle qui a déclenché l’événement.|  
 |*e*|A <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> qui contient un <xref:Microsoft.Office.Core.IRibbonControl>. Utilisez ce contrôle pour accéder à n’importe quelle propriété qui n’est pas disponible dans le modèle objet de ruban fourni par le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|  
   
 ## <a name="see-also"></a>Voir aussi  

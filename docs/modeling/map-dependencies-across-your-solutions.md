@@ -2,8 +2,6 @@
 title: Mapper les dépendances dans vos solutions | Documents Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -27,15 +25,15 @@ helpviewer_keywords:
 - code exploration, visualizing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: aea44beeb2a8e6380bd9a568acdece79873e3050
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 8ce84bfc59782a27e517ae1813f3ee43d6cb3718
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
 
@@ -287,7 +285,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ##  <a name="SeeSourceHeader"></a> Visualiser les dépendances entre les fichiers sources et les fichiers d’en-tête C et C++  
  Si vous souhaitez créer des cartes plus complètes pour des projets C++, définissez l’option du compilateur d’informations de consultation (**/FR**) sur ces projets. Sinon, un message vous invite à définir cette option. Si vous sélectionnez **OK**, l’option est définie uniquement pour la carte active. Vous pouvez choisir de masquer le message pour toutes les cartes ultérieures. Si vous masquez ce message, vous pouvez le faire réapparaître. Affectez à la clé de Registre suivante la valeur `0` ou supprimez-la :  
 
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
 
  Lorsque vous ouvrez une solution qui contient des projets Visual C++, la mise à jour de la base de données IntelliSense peut prendre un certain temps. Pendant ce temps, il est impossible de créer des cartes de code pour les fichiers d’en-tête (.h ou `#include`) tant que la base de données IntelliSense n’a pas terminé la mise à jour. Vous pouvez surveiller la progression des mises à jour dans la barre d’état de Visual Studio. Pour résoudre les problèmes ou messages qui s’affichent en raison de la désactivation de certains paramètres IntelliSense, consultez [Résoudre les problèmes liés aux cartes dans le code C et C++](#Troubleshooting).  
 

@@ -1,12 +1,10 @@
 ---
-title: "Comment : mettre en Cache par programmation une Source de données dans un Document Office | Documents Microsoft"
-ms.custom: 
+title: 'Comment : mettre en Cache par programmation une Source de données dans un Document Office | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 09d4b46aaa68a92ffb9ddfe70f329e97a1b7526d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 29451bab5caeeaf3f9de0b9344ae52430ec045a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Comment : mettre en cache par programmation une source de données dans un document Office
   Vous pouvez ajouter par programmation un objet de données dans le cache de données dans un document en appelant le `StartCaching` élément de la méthode d’un ordinateur hôte, tel qu’un <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, ou <xref:Microsoft.Office.Tools.Excel.Worksheet>. Supprimer un objet de données à partir du cache de données en appelant le `StopCaching` méthode d’un élément hôte.  

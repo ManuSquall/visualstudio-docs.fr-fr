@@ -1,29 +1,27 @@
 ---
-title: "Spécifiant l’emplacement du fichier de VSPackage à l’interpréteur de commandes de Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Spécifiant l’emplacement du fichier de VSPackage à l’interpréteur de commandes de Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, file location
 - VSPackages, managed package file location
 ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 35bd935683f8ace47536389ebc65f34311e9fcfd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7a4270fbd723e6c5aa6f16066066e0ca4ac74e5d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Spécifiant l’emplacement du fichier de VSPackage à l’interpréteur de commandes de Visual Studio
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]doit être en mesure de trouver la DLL à charger le VSPackage d’assembly. Vous pouvez le rechercher de différentes manières, comme décrit dans le tableau suivant.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit être en mesure de trouver la DLL à charger le VSPackage d’assembly. Vous pouvez le rechercher de différentes manières, comme décrit dans le tableau suivant.  
   
 |Méthode|Description|  
 |------------|-----------------|  

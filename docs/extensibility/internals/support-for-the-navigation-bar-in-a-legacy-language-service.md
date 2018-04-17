@@ -1,26 +1,24 @@
 ---
-title: "Prise en charge de la barre de Navigation dans un Service de langage hérité | Documents Microsoft"
-ms.custom: 
+title: Prise en charge de la barre de Navigation dans un Service de langage hérité | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5e2d7ddfd4904923cbdea415fa5a0d2086cc071f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5d4dd17f3bb1bd50a97b24b42cf40edc27bf51db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Prise en charge de la barre de Navigation dans un Service de langage hérité
 La barre de Navigation en haut de la vue de l’éditeur affiche les types et membres dans le fichier. Types sont affichés dans la liste déroulante gauche, et les membres sont affichés dans le droit de liste déroulante. Lorsque l’utilisateur sélectionne un type, le point d’insertion est placé sur la première ligne du type. Lorsque l’utilisateur sélectionne un membre, le point d’insertion est placé sur la définition du membre. Les zones de liste déroulante sont mis à jour pour refléter l’emplacement actuel du signe insertion.  

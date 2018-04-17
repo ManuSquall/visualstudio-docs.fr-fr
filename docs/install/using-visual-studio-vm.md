@@ -1,24 +1,24 @@
 ---
 title: Utilisation de Visual Studio sur une machine virtuelle Azure | Microsoft Docs
-description: "En savoir plus sur l’utilisation de Visual Studio sur une machine virtuelle Azure"
+description: En savoir plus sur l’utilisation de Visual Studio sur une machine virtuelle Azure
 ms.date: 03/03/2018
 ms.technology: vs-acquisition
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - azure services
 - virtual machine; VM
 - installation
 - visual studio
 author: PhilLee-MSFT
-ms.author: phillee
-manager: sacalla
+ms.author: tglee
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4492a35c7d58aa92c2c3e86de5bd6be8f8ad9eca
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 0a7e1a3646e2e30302548f2445b0ab657f8e3ec4
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a id="top"> </a> Images Visual Studio sur Azure
 L’utilisation de Visual Studio sur une machine virtuelle Azure préconfigurée est un moyen simple et rapide d’accéder à un environnement de développement opérationnel en partant de rien. Des images du système avec différentes configurations de Visual Studio sont disponibles sur la [Place de marché Microsoft Azure](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1).
@@ -28,12 +28,13 @@ Vous découvrez Azure ? [Créez un compte Azure gratuit](https://azure.microsoft
 ## <a name="what-configurations-and-versions-are-available"></a>Quelles sont les configurations et les versions disponibles ?
 Sur la Place de marché Microsoft Azure, vous trouverez des images des versions principales les plus récentes : Visual Studio 2017 et Visual Studio 2015. Pour chaque version principale, la version (RTW) publiée d’origine et les versions mises à jour les plus récentes s’affichent. Chacune de ces versions propose les éditions Visual Studio Enterprise et Visual Studio Community. Ces images sont mises à jour au moins une fois par mois afin d’inclure les dernières mises à jour de Visual Studio et Windows. Bien que les noms des images ne changent pas, la description de chaque image inclut la version du produit installée et la date de « référence » de l’image.
 
-| Version commerciale              | Éditions            | Version du produit     |
-|:-----------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017 : Dernière version (15.6) |    Enterprise, Community     |      Version 15.6.0     |
-|         Visual Studio 2017 : RTW           |    Enterprise, Community     |      Version 15.0.10    |
-|   Visual Studio 2015 : Dernière version (Update 3)   |    Enterprise, Community     |  Version 14.0.25431.01  |
-|         Visual Studio 2015 : RTW           |             Aucun.             | (Expirée pour la maintenance) |
+| Version commerciale                                              | Éditions                     |     Version du produit     |
+|:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
+| Visual Studio 2017 : Dernière version (15.6)                    |    Enterprise, Community     |      Version 15.6.4     |
+| Visual Studio 2017 : dernière préversion (version 15.7, préversion 3) |    Enterprise, Community     |      Version 15.7.0     |
+|         Visual Studio 2017 : RTW                              |    Enterprise, Community     |      Version 15.0.10    |
+|   Visual Studio 2015 : Dernière version (Update 3)                      |    Enterprise, Community     |  Version 14.0.25431.01  |
+|         Visual Studio 2015 : RTW                              |             Aucun.             | (Expirée pour la maintenance) |
 
 > [!NOTE]
 > Conformément à la politique de Microsoft en matière de maintenance, la version d’origine (RTW) de Visual Studio 2015 a expiré en ce qui concerne la maintenance. Visual Studio 2015 Update 3 est la seule version restante proposée pour la ligne de produits Visual Studio 2015.
@@ -54,7 +55,7 @@ Nous utilisons la ligne de commande suivante pour installer Visual Studio durant
 ```shell
     vs_enterprise.exe --allWorkloads --includeRecommended --passive ^
        add Microsoft.Net.Component.4.7.SDK ^
-       add Microsoft.Net.Component.4.7.TargetingPack ^ 
+       add Microsoft.Net.Component.4.7.TargetingPack ^
        add Microsoft.Net.Component.4.6.2.SDK ^
        add Microsoft.Net.Component.4.6.2.TargetingPack ^
        add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
@@ -75,14 +76,14 @@ Azure offre une gamme complète de tailles de machine virtuelle. Étant donné q
    * Standard_D2_v2
    * Standard_D2S_v2
    * Standard_D3_v2
-    
+
 Pour plus d’informations sur les dernières tailles de machine, consultez [Tailles des machines virtuelles Windows dans Azure](/azure/virtual-machines/windows/sizes).
 
 Avec Azure, vous pouvez adapter ce choix en redimensionnant la machine virtuelle. Vous pouvez provisionner une nouvelle machine virtuelle avec une taille plus appropriée ou redimensionner votre machine virtuelle existante sur un autre matériel sous-jacent. Pour plus d’informations, consultez [Redimensionner une machine virtuelle Windows](/azure/virtual-machines/windows/resize-vm).
 
 ## <a name="after-the-vm-is-running-whats-next"></a>Une fois que la machine virtuelle est en cours d’exécution, que se passe-t-il ensuite ?
 Visual Studio suit le modèle BYOL (apportez votre propre licence) dans Azure. À l’instar d’une installation sur un matériel propriétaire, vous devez dans un premier temps introduire la licence de votre installation Visual Studio. Pour déverrouiller Visual Studio, procédez de l’une des manières suivantes :
-- Connectez-vous avec un compte Microsoft qui est associé à un abonnement Visual Studio 
+- Connectez-vous avec un compte Microsoft qui est associé à un abonnement Visual Studio
 - Déverrouillez Visual Studio avec la clé de produit fournie avec votre achat initial
 
 Pour plus d’informations, consultez [Se connecter à Visual Studio](../ide/signing-in-to-visual-studio.md) et [Guide pratique pour déverrouiller Visual Studio](../ide/how-to-unlock-visual-studio.md).
@@ -93,7 +94,7 @@ Le spectre des environnements de développement est immense, et il existe des co
 
 Résumé rapide : utilisez l’outil Préparation du système (Sysprep) et arrêtez la machine virtuelle en cours d’exécution, puis capturez *(Figure 1)* la machine virtuelle en tant qu’image via l’interface utilisateur du portail Azure. Azure enregistre le fichier `.vhd` qui contient l’image dans le compte de stockage de votre choix. La nouvelle image apparaît ensuite comme une ressource image dans la liste des ressources de votre abonnement.
 
-<img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*(Figure 1) Capture d’une image via l’interface utilisateur du portail Azure*</center>
+<img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*(Figure 1) Capture d’une image par le biais de l’interface utilisateur du Portail Azure.*</center>
 
 Pour plus d’informations, consultez [Créer une image managée d’une machine virtuelle généralisée dans Azure](/azure/virtual-machines/windows/capture-image-resource).
 

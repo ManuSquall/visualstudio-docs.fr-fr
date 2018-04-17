@@ -1,27 +1,25 @@
 ---
-title: "La mise à niveau des projets | Documents Microsoft"
-ms.custom: 
+title: La mise à niveau des projets | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 060823a04127480ef8de387200425a34c6ef1178
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cb64d71a50cb59a3c981dd87695bbb685f793761
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-projects"></a>La mise à niveau des projets
 Modifie le modèle de projet d’une version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à l’autre peut nécessiter que les projets et solutions être mis à niveau afin qu’ils puissent exécuter sur une version plus récente. Le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fournit des interfaces qui peuvent être utilisés pour implémenter la mise à niveau de prise en charge dans vos propres projets.  
@@ -57,7 +55,7 @@ Modifie le modèle de projet d’une version de [!INCLUDE[vsprvs](../../code-qua
   
  Pour plus d’informations sur la sauvegarde et la mise à niveau des projets, consultez les commentaires pour IVsProjectUpgrade dans vsshell2.idl.  
   
-## <a name="upgrading-custom-projects"></a>La mise à niveau de projets personnalisés
+## <a name="upgrading-custom-projects"></a> La mise à niveau de projets personnalisés
 Si vous modifiez les informations persistantes dans le fichier projet entre des versions Visual Studio différentes de votre produit, vous devez prendre en charge la mise à niveau de votre fichier projet vers la version la plus récente. Pour prendre en charge la mise à niveau qui vous permet de participer à la **Assistant Conversion de Visual Studio**, implémenter la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface. Cette interface fournit le seul mécanisme disponible pour mettre à niveau une copie. La mise à niveau du projet est une étape du processus d’ouverture de la solution. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface est implémentée par la fabrique de projet, ou doit être au moins peut être obtenu à partir de la fabrique de projets.  
   
  L’ancien mécanisme qui utilise le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interface est toujours pris en charge, mais conceptuellement met à niveau le système de projet dans le cadre du projet ouvert. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interface est donc appelée par le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement même si le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface est appelée ou implémentée. Cette approche vous permet d’utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> pour implémenter la copie et uniquement les parties de la mise à niveau du projet et déléguer le reste du travail à effectuer sur place (éventuellement au nouvel emplacement) par le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interface.  
@@ -92,7 +90,7 @@ Si vous modifiez les informations persistantes dans le fichier projet entre des 
   
 5.  Utilisez les méthodes de <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> pour valider la mise à niveau des messages pour l’utilisateur à l’aide de l’Assistant Migration Visual Studio connexes.  
   
-6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade>interface est utilisée pour implémenter n’importe quel type de mise à niveau de fichier qui doit se produire dans le cadre de la mise à niveau du projet. Cette interface n’est pas appelée à partir de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, mais n’est fourni comme un mécanisme pour mettre à niveau des fichiers qui font partie du système de projet, mais le système de projet principal n’est peut-être pas directement connaissance. Par exemple, cette situation peut se produire si les fichiers et les propriétés liés au compilateur ne sont pas gérés par la même équipe de développement que celle qui gère le reste du système de projet.  
+6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> interface est utilisée pour implémenter n’importe quel type de mise à niveau de fichier qui doit se produire dans le cadre de la mise à niveau du projet. Cette interface n’est pas appelée à partir de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, mais n’est fourni comme un mécanisme pour mettre à niveau des fichiers qui font partie du système de projet, mais le système de projet principal n’est peut-être pas directement connaissance. Par exemple, cette situation peut se produire si les fichiers et les propriétés liés au compilateur ne sont pas gérés par la même équipe de développement que celle qui gère le reste du système de projet.  
   
 ### <a name="ivsprojectupgrade-implementation"></a>Implémentation d’IVsProjectUpgrade  
  Si votre système de projet implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> uniquement, elle ne peut pas participer à la **Assistant Conversion de Visual Studio**. Toutefois, même si vous implémentez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface, vous pouvez déléguer la mise à niveau fichier <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> implémentation.  

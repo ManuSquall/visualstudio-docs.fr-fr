@@ -1,10 +1,8 @@
 ---
-title: "Parcourir et réorganiser des cartes de code | Documents Microsoft"
-ms.custom: 
+title: Parcourir et réorganiser des cartes de code | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.dgmlgraph.layouthelp
 - vs.progression.graphdocument
@@ -22,15 +20,15 @@ helpviewer_keywords:
 - dependency graphs, browsing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0cf2bb7618be6c18b4702f8bed636cf91f2863db
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: fb231c5a13bcc4a82eec140d3f2f482ae6c20941
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Parcourir et réorganiser des cartes de code
 Réorganisez les éléments sur les cartes de code pour faciliter leur lecture et améliorer leurs performances.  
@@ -43,14 +41,14 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
   
 -   Vous pouvez afficher des cartes de code et apporter des modifications mineures aux cartes de code dans Visual Studio Professional.  
   
-##  <a name="ManageLargeGraphs"></a>Commencer à utiliser avec les cartes de code  
+##  <a name="ManageLargeGraphs"></a> Commencer à utiliser avec les cartes de code  
  Créer une carte de code (consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md) pour plus d’informations). Si vous ne souhaitez pas attendre que la carte terminer la création, cliquez sur le **Annuler** lien à tout moment pour arrêter le processus de génération. Toutefois, dans ce cas vous ne verrez pas les détails de toutes les dépendances et tous les liens.  
   
  Une fois la carte générée, suivez ces conseils pour procéder à l'examen de votre code :  
   
 -   Examinez les clusters de dépendances naturelles dans le code. Dans la barre d’outils de la carte, choisissez **disposition**, **Clusters rapides**![bouton Clusters rapides sur la barre d’outils du graphique](../modeling/media/quickclustersicon.gif "QuickClustersIcon"). Consultez [modifier la disposition de la carte](#Selecting).  
   
-     ![Graphique de dépendance &#45; Disposition Clusters rapide](../modeling/media/dependencygraph_quickclusters.png "DependencyGraph_QuickClusters")  
+     ![Graphique de dépendance &#45; disposition Clusters rapides](../modeling/media/dependencygraph_quickclusters.png "DependencyGraph_QuickClusters")  
   
 -   Organisez la carte en zones plus petites en regroupant les nœuds connexes. Réduisez ces groupes pour afficher uniquement les dépendances intergroupes, qui sont affichées automatiquement. Consultez [groupe de nœuds](#OrganizeGroups).  
   
@@ -58,7 +56,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
   
 -   Optimisez les performances des grandes cartes. Consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md) pour plus d’informations. Par exemple, activez **Skip Build** sur la barre d’outils de mappage afin que Visual Studio ne regénérez votre solution lorsque vous mettez à jour les éléments sur la carte.  
   
-##  <a name="Selecting"></a>Modifier la disposition de la carte  
+##  <a name="Selecting"></a> Modifier la disposition de la carte  
   
 |**To**|**Procédez comme suit**|  
 |------------|-----------------------------|  
@@ -69,7 +67,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
 |Modifier la disposition à l'intérieur d'un groupe, indépendamment des autres nœuds et groupes sur la carte.|Sélectionnez un nœud et ouvrez le menu contextuel. Choisissez **disposition** et sélectionnez un style de disposition.<br /><br /> ou<br /><br /> Sélectionnez un nœud et développez-le pour afficher les nœuds enfants. Cliquez sur le titre de nœud pour afficher la barre d’outils contextuelle de groupe, puis ouvrez le **modifier le style de disposition du groupe**![graphique de dépendance &#45; barre d’outils du groupe &#45; disposition](../modeling/media/dependencygraph_grouptoolbar.gif "DependencyGraph_ GroupToolbar") liste. Sélectionnez une des dispositions de l’arborescence, **Clusters rapides**, ou **mode liste** (qui réorganise le contenu du groupe dans une liste).<br /><br /> Consultez [groupe de nœuds](#OrganizeGroups) pour plus d’informations.|  
 |Annuler une action sur la carte.|Appuyez sur **CTRL** + **Z** ou utiliser Visual Studio **Annuler** commande.|  
   
-##  <a name="Explore"></a>Parcourir la carte  
+##  <a name="Explore"></a> Parcourir la carte  
   
 |**To**|**Procédez comme suit**|  
 |------------|-----------------------------|  
@@ -77,11 +75,11 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
 |Effectuer un zoom avant ou arrière sur la carte.|Faites tourner la roulette de la souris.<br /><br /> ou<br /><br /> Utilisez le **Zoom** liste déroulante, la barre d’outils de mappage de code.<br /><br /> ou<br /><br /> Utilisez les raccourcis clavier. Pour effectuer un zoom, appuyez sur **CTRL + MAJ +.** (point). Pour effectuer un zoom arrière, appuyez sur **CTRL + MAJ +,** (virgule).|  
 |Effectuer un zoom avant sur une zone spécifique à l'aide de la souris.|Maintenez le bouton droit de la souris enfoncé pendant que vous dessinez un rectangle autour de la zone qui vous intéresse.|  
 |Redimensionner et ajuster la carte dans sa fenêtre.|Choisissez **Zoom pour ajuster** à partir de la **Zoom** liste sur la barre d’outils de carte de code.<br /><br /> ou<br /><br /> Cliquez sur le **Zoom pour ajuster** icône ![icône Zoom sur la barre d’outils carte](../modeling/media/almcodemapzoomicon.png "ALMCodeMapZoomIcon") sur la barre d’outils de carte de code. Clavier : appuyez sur **CTRL + 0** (zéro).|  
-|Rechercher un nœud par nom sur la carte. **Conseil :** cela fonctionne uniquement pour les éléments sur la carte. Pour rechercher des éléments dans votre solution, mais pas sur la carte, elles sont disponibles sur **l’Explorateur de solutions**et faites-les glisser vers la carte. (Faites glisser votre sélection, ou dans la barre d’outils de l’Explorateur de solutions, cliquez sur **afficher sur la carte de Code**).|1.  Choisissez le **trouver** icône ![icône Rechercher dans la barre d’outils carte](../modeling/media/almcodemapfindicon.png "ALMCodeMapFindIcon") sur la barre d’outils de mappage de code (clavier : appuyez sur **CTRL + F**) à afficher la zone de recherche dans le coin supérieur droit de la carte.<br />2.  Tapez le nom de l’élément et appuyez sur **retourner** ou cliquez sur l’icône de loupe «. ». Le premier élément qui correspond à votre recherche apparaît sélectionné sur la carte.<br />3.  Pour personnaliser votre recherche, ouvrez la liste déroulante et choisissez une option de recherche. Les options sont **suivant**, **précédent**, et **sélectionner tout**. Cliquez ensuite sur le bouton correspondant en regard de la zone de texte Rechercher.<br />     ![Rechercher une liste d’options &#45; vers le bas de la liste](../modeling/media/almcodemapssearchdropdown.png "ALMCodeMapsSearchDropDown")<br />     Vous pouvez également utiliser le clavier : appuyez sur **F3** pour sélectionner le nœud correspondant suivant ou **MAJ + F3** pour sélectionner le nœud correspondant précédent.<br />4.  Sélectionnez l'une des options qui spécifient comment gérer les termes de recherche en cliquant sur les icônes sous la zone de texte de recherche.<br />     ![Options de correspondance de recherche](../modeling/media/almcodemapssearchmatchicons.png "ALMCodeMapsSearchMatchIcons")<br />     Les options disponibles sont, de gauche à droite, le respect de la casse pour la mise en correspondance, la recherche de mot entier uniquement, l'utilisation de la syntaxe d'expression régulière .NET et le développent automatique des groupes pour afficher les correspondances aux éléments entre parenthèses. **Important :** vous pouvez utiliser la zone de recherche pour rechercher des correspondances dans les groupes réduits uniquement si ces groupes ont été auparavant étendus. Pour rechercher ces correspondances et développer automatiquement leurs groupes parents, choisissez cette option sous la zone de recherche.|  
+|Rechercher un nœud par nom sur la carte. **Conseil :** cela fonctionne uniquement pour les éléments sur la carte. Pour rechercher des éléments dans votre solution, mais pas sur la carte, elles sont disponibles sur **l’Explorateur de solutions**et faites-les glisser vers la carte. (Faites glisser votre sélection, ou dans la barre d’outils de l’Explorateur de solutions, cliquez sur **afficher sur la carte de Code**).|1.  Choisissez le **trouver** icône ![icône Rechercher dans la barre d’outils carte](../modeling/media/almcodemapfindicon.png "ALMCodeMapFindIcon") sur la barre d’outils de mappage de code (clavier : appuyez sur **CTRL + F**) à afficher la zone de recherche dans le coin supérieur droit de la carte.<br />2.  Tapez le nom de l’élément et appuyez sur **retourner** ou cliquez sur l’icône de loupe «. ». Le premier élément qui correspond à votre recherche apparaît sélectionné sur la carte.<br />3.  Pour personnaliser votre recherche, ouvrez la liste déroulante et choisissez une option de recherche. Les options sont **suivant**, **précédent**, et **sélectionner tout**. Cliquez ensuite sur le bouton correspondant en regard de la zone de texte Rechercher.<br />     ![Liste des options de recherche&#45;liste déroulante](../modeling/media/almcodemapssearchdropdown.png "ALMCodeMapsSearchDropDown")<br />     Vous pouvez également utiliser le clavier : appuyez sur **F3** pour sélectionner le nœud correspondant suivant ou **MAJ + F3** pour sélectionner le nœud correspondant précédent.<br />4.  Sélectionnez l'une des options qui spécifient comment gérer les termes de recherche en cliquant sur les icônes sous la zone de texte de recherche.<br />     ![Options de correspondance de recherche](../modeling/media/almcodemapssearchmatchicons.png "ALMCodeMapsSearchMatchIcons")<br />     Les options disponibles sont, de gauche à droite, le respect de la casse pour la mise en correspondance, la recherche de mot entier uniquement, l'utilisation de la syntaxe d'expression régulière .NET et le développent automatique des groupes pour afficher les correspondances aux éléments entre parenthèses. **Important :** vous pouvez utiliser la zone de recherche pour rechercher des correspondances dans les groupes réduits uniquement si ces groupes ont été auparavant étendus. Pour rechercher ces correspondances et développer automatiquement leurs groupes parents, choisissez cette option sous la zone de recherche.|  
 |Sélectionner tous les nœuds non sélectionnés.|Ouvrez le menu contextuel pour les nœuds sélectionnés. Choisissez **sélectionnez**, **inverser la sélection**.|  
 |Sélectionner des nœuds supplémentaires qui pointent vers ceux sélectionnés.|Ouvrez le menu contextuel pour les nœuds sélectionnés. Choisissez **sélectionnez** et l’autre de ces :<br /><br /> -Pour sélectionner d’autres nœuds qui pointent directement vers le nœud sélectionné, choisissez **dépendances entrantes**.<br />-Pour sélectionner d’autres nœuds qui sont liés directement à partir du nœud sélectionné, choisissez **dépendances sortantes**.<br />-Pour sélectionner d’autres nœuds qui sont liés directement vers et à partir du nœud sélectionné, choisissez **les deux**.<br />-Pour sélectionner tous les nœuds qui renvoient vers et depuis le nœud sélectionné, choisissez **connecté le sous-graphe**.<br />-Pour sélectionner tous les enfants du nœud sélectionné, choisissez **enfants**.|  
   
-##  <a name="FilterNodes"></a>Filtrer les nœuds et les liens  
+##  <a name="FilterNodes"></a> Filtrer les nœuds et les liens  
   
 |**To**|**Procédez comme suit**|  
 |------------|-----------------------------|  
@@ -92,7 +90,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
   
  Les icônes affichées dans le volet Légende de la carte reflètent les paramètres spécifiés dans la liste. Pour afficher ou masquer le volet de légende, cliquez sur le **légende** bouton sur la barre d’outils de carte de code.  
   
-##  <a name="Inspect"></a>Examinez les nœuds et les liens  
+##  <a name="Inspect"></a> Examinez les nœuds et les liens  
  Les cartes de code affichent les types de liens suivants :  
   
 -   Un lien individuel représente une relation unique entre deux nœuds.  
@@ -107,13 +105,13 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
 |**To**|**Procédez comme suit**|  
 |------------|-----------------------------|  
 |Afficher plus d'informations sur un nœud ou un lien.|Déplacez le pointeur de la souris sur le nœud ou le lien jusqu'à ce qu'une info-bulle apparaisse.<br /><br /> L'info-bulle d'un lien global répertorie chaque dépendance qu'il représente.<br /><br /> ou<br /><br /> Ouvrez le menu contextuel du nœud ou du lien. Choisissez **modifier**, **propriétés**.|  
-|Afficher ou masquer le contenu d'un groupe.|-Pour développer un groupe, ouvrez le menu contextuel du nœud et choisissez **groupe**, **Expand**.<br />     ou<br />     Déplacez le pointeur de la souris sur le nœud jusqu'à ce que le bouton chevron (flèche Bas) apparaisse. Cliquez sur ce bouton pour développer le groupe. Clavier : pour développer ou réduire le groupe sélectionné, appuyez sur la **PLUS** clé (**+**) ou le **moins** clé ( **-** ).<br />-Pour réduire un groupe, ouvrez le menu contextuel du nœud et choisissez **groupe**, **réduire**.<br />     ou<br />     Déplacez le pointeur de la souris sur un groupe jusqu'à ce que le bouton chevron (flèche Haut) apparaisse. Cliquez sur ce bouton pour réduire le groupe.<br />-Pour développer tous les groupes, appuyez sur **CTRL** + **A** pour sélectionner tous les nœuds. Ouvrez le menu contextuel de la carte, sélectionnez **groupe**, **Expand**. **Remarque :** cette commande n’est pas disponible si le développement de tous les groupes génère une carte inutilisable ou des problèmes de mémoire. Nous vous recommandons de développer la carte uniquement au niveau de détail qui vous intéresse.<br />-Pour réduire tous les groupes, ouvrez le menu contextuel pour un nœud ou de la carte. Choisissez **groupe**, **réduire tout**.|  
-|Voir la définition de code pour un espace de noms, un type ou un membre.|Ouvrez le menu contextuel du nœud et choisissez **atteindre la définition**.<br /><br /> - ou -<br /><br /> Double-cliquez sur le nœud. Pour les groupes développés, double-cliquez sur l'en-tête de groupe.<br /><br /> - ou -<br /><br /> Sélectionnez le nœud, puis appuyez sur **F12**.<br /><br /> Exemple :<br /><br /> -Pour un espace de noms contenant une classe, le fichier de code pour la classe s’ouvre pour afficher la définition de cette classe. Dans d’autres cas, le **résultats** fenêtre affiche une liste des fichiers de code. **Remarque :** lorsque vous effectuez cette tâche sur un espace de noms Visual Basic, le fichier de code derrière l’espace de noms ne s’ouvre pas. Ce problème se produit également lorsque vous effectuez cette tâche sur un groupe de nœuds sélectionnés qui incluent un espace de noms Visual Basic. Pour contourner ce problème, accédez manuellement au fichier code-behind de l'espace de noms ou omettez le nœud de l'espace de noms de votre sélection.<br />-Pour une classe ou une classe partielle, le fichier de code pour cette classe s’ouvre pour afficher la définition de classe.<br />-Pour une méthode, le fichier de code pour la classe parente s’ouvre pour afficher la définition de méthode.|  
+|Afficher ou masquer le contenu d'un groupe.|-Pour développer un groupe, ouvrez le menu contextuel du nœud et choisissez **groupe**, **Expand**.<br />     ou<br />     Déplacez le pointeur de la souris sur le nœud jusqu'à ce que le bouton chevron (flèche Bas) apparaisse. Cliquez sur ce bouton pour développer le groupe. Clavier : pour développer ou réduire le groupe sélectionné, appuyez sur la **PLUS** clé (**+**) ou le **moins** clé (**-**).<br />-Pour réduire un groupe, ouvrez le menu contextuel du nœud et choisissez **groupe**, **réduire**.<br />     ou<br />     Déplacez le pointeur de la souris sur un groupe jusqu'à ce que le bouton chevron (flèche Haut) apparaisse. Cliquez sur ce bouton pour réduire le groupe.<br />-Pour développer tous les groupes, appuyez sur **CTRL** + **A** pour sélectionner tous les nœuds. Ouvrez le menu contextuel de la carte, sélectionnez **groupe**, **Expand**. **Remarque :** cette commande n’est pas disponible si le développement de tous les groupes génère une carte inutilisable ou des problèmes de mémoire. Nous vous recommandons de développer la carte uniquement au niveau de détail qui vous intéresse.<br />-Pour réduire tous les groupes, ouvrez le menu contextuel pour un nœud ou de la carte. Choisissez **groupe**, **réduire tout**.|  
+|Voir la définition de code pour un espace de noms, un type ou un membre.|Ouvrez le menu contextuel du nœud et choisissez **atteindre la définition**.<br /><br /> - ou -<br /><br /> Double-cliquez sur le nœud. Pour les groupes développés, double-cliquez sur l'en-tête de groupe.<br /><br /> - ou -<br /><br /> Sélectionnez le nœud, puis appuyez sur **F12**.<br /><br /> Par exemple :<br /><br /> -Pour un espace de noms contenant une classe, le fichier de code pour la classe s’ouvre pour afficher la définition de cette classe. Dans d’autres cas, le **résultats** fenêtre affiche une liste des fichiers de code. **Remarque :** lorsque vous effectuez cette tâche sur un espace de noms Visual Basic, le fichier de code derrière l’espace de noms ne s’ouvre pas. Ce problème se produit également lorsque vous effectuez cette tâche sur un groupe de nœuds sélectionnés qui incluent un espace de noms Visual Basic. Pour contourner ce problème, accédez manuellement au fichier code-behind de l'espace de noms ou omettez le nœud de l'espace de noms de votre sélection.<br />-Pour une classe ou une classe partielle, le fichier de code pour cette classe s’ouvre pour afficher la définition de classe.<br />-Pour une méthode, le fichier de code pour la classe parente s’ouvre pour afficher la définition de méthode.|  
 |Examiner les dépendances et les éléments qui participent à un lien global.|Sélectionnez les liens qui vous intéresse et ouvrez le menu contextuel pour votre sélection. Choisissez **afficher les liens de contribution** ou **afficher les liens de contribution sur la nouvelle carte de Code**.<br /><br /> Visual Studio développe les groupes aux deux extrémités du lien et affiche uniquement les éléments et les dépendances qui participent au lien. **Remarque :** lorsque vous examinez les dépendances entre les éléments dans les groupes partielles, vous pouvez observer ce comportement : <ul><li>Liens vers les éléments qui ne font pas partie de votre examen disparaissent de la carte, même si ces liens existent toujours.</li><li>Supposez que vous examinez un lien vers un élément dans un groupe partiel et que vous examinez ensuite un autre lien vers le même élément. Lors de votre second examen, le groupe partiel cible montre uniquement les éléments issus de votre premier examen. Les liens et éléments cible qui n’a pas participer à votre premier examen mais participer votre deuxième examen n’apparaissent pas.</li></ul> Pour voir manquant des éléments d’un groupe, sélectionnez **récupérer à nouveau les enfants**![icône récupérer à nouveau d’enfants](../modeling/media/dependencygraph_deletednodesicon.png "DependencyGraph_DeletedNodesIcon") (ce qui indique que tous les membres d’un groupe apparaissent sur la carte). Vous pouvez aussi essayer d’annuler vos actions (clavier : appuyez sur **CTRL + Z**) et examinez les dépendances sur une nouvelle carte.|  
 |Examiner les dépendances entre plusieurs nœuds de différents groupes.|Développez les groupes pour afficher tous leurs enfants. Sélectionnez tous les nœuds qui vous intéressent, y compris leurs enfants. La carte affiche les liens entre les groupes entre les nœuds sélectionnés.<br /><br /> Pour sélectionner tous les nœuds dans un groupe, maintenez la touche et **MAJ** et le bouton gauche de la souris pendant que vous dessinez un rectangle autour de ce groupe. Pour sélectionner tous les nœuds sur une carte, appuyez sur **CTRL**+**A**. **Conseil :** pour afficher les liens entre les groupes en permanence, choisissez **disposition** sur la barre d’outils de la carte, **avancé**, **afficher tous les liens entre les groupes**.|  
 |Afficher les éléments auxquels un nœud ou un lien fait référence.|Ouvrez le menu contextuel du nœud et choisissez **rechercher toutes les références**. **Remarque :** cela s’applique uniquement lorsque le `Reference` attribut est défini pour le nœud ou le lien dans le fichier .dgml de la carte. Pour ajouter des références à des éléments à partir de nœuds ou de liens, consultez [les cartes de code de personnalisation en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).|  
   
-##  <a name="HidingShowing"></a>Masquer ou afficher les nœuds et les liens  
+##  <a name="HidingShowing"></a> Masquer ou afficher les nœuds et les liens  
  Masquer des nœuds les empêche de participer aux algorithmes de disposition. Par défaut, les liens entre les groupes sont masqués. Les liens entre les groupes sont des liens individuels qui relient vos nœuds entre différents groupes. Quand les groupes sont réduits, la carte rassemble tous les liens entre les groupes sous forme de liens uniques. Lorsque vous développez un groupe et sélectionnez des nœuds dans le groupe, les liens entre les groupes apparaissent et mettent en exergue les dépendances dans ce groupe.  
   
 > [!CAUTION]
@@ -136,19 +134,19 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
 |Afficher uniquement les liens entre les groupes pour les nœuds sélectionnés.|**Afficher les liens entre les groupes sur les nœuds sélectionnés**|  
 |Masquer tous les liens.|**Masquer tous les liens**. Pour réafficher les liens, choisissez l'une des options mentionnées ci-dessus.|  
   
-##  <a name="OrganizeGroups"></a>Nœuds de groupe  
+##  <a name="OrganizeGroups"></a> Nœuds de groupe  
   
 |**To**|**Procédez comme suit**|  
 |------------|-----------------------------|  
 |Afficher les nœuds conteneurs comme nœuds de groupe ou nœuds feuille.|Pour afficher les nœuds de conteneur en tant que nœuds terminaux : sélectionnez les nœuds, ouvrez le menu contextuel pour votre sélection et choisissez **groupe**, **convertir la feuille**.<br /><br /> Pour afficher les nœuds de conteneur en tant que nœuds de groupe : sélectionnez les nœuds, ouvrez le menu contextuel pour votre sélection et choisissez **groupe**, **convertir au groupe**.|  
-|Modifier la disposition à l'intérieur d'un groupe.|Sélectionnez le groupe, ouvrez le menu contextuel, choisissez **disposition**, puis sélectionnez le style de disposition souhaité.<br /><br /> ou<br /><br /> 1.  Sélectionnez le groupe et assurez-vous qu'il est développé.<br />2.  Cliquez de nouveau sur l'en-tête de groupe. La barre d'outils du groupe apparaît.<br />     ![Graphique de dépendance &#45; barre d’outils du groupe](../modeling/media/dependencygraph_group.png "DependencyGraph_Group")<br />3.  Ouvrez le **modifier le style de disposition du groupe** liste ![graphique de dépendance &#45; barre d’outils du groupe &#45; disposition](../modeling/media/dependencygraph_grouptoolbar.gif "DependencyGraph_GroupToolbar") et choisir la disposition style de que votre choix.<br /><br /> **Mode liste** réorganise les membres du groupe dans la liste. **Graphique par défaut** réinitialise la disposition du groupe à la disposition par défaut de carte. Pour les autres options, consultez [modifier la disposition de la carte](#Selecting).|  
+|Modifier la disposition à l'intérieur d'un groupe.|Sélectionnez le groupe, ouvrez le menu contextuel, choisissez **disposition**, puis sélectionnez le style de disposition souhaité.<br /><br /> ou<br /><br /> 1.  Sélectionnez le groupe et assurez-vous qu'il est développé.<br />2.  Cliquez de nouveau sur l'en-tête de groupe. La barre d'outils du groupe apparaît.<br />     ![Graphique de dépendance &#45; barre d’outils du groupe](../modeling/media/dependencygraph_group.png "DependencyGraph_Group")<br />3.  Ouvrez le **modifier le style de disposition du groupe** liste ![graphique de dépendance &#45; barre d’outils du groupe &#45; disposition](../modeling/media/dependencygraph_grouptoolbar.gif "DependencyGraph_GroupToolbar") et choisissez le style de disposition.<br /><br /> **Mode liste** réorganise les membres du groupe dans la liste. **Graphique par défaut** réinitialise la disposition du groupe à la disposition par défaut de carte. Pour les autres options, consultez [modifier la disposition de la carte](#Selecting).|  
 |Ajouter un nœud à un groupe.|Faites glisser le nœud dans le groupe.<br /><br /> Pendant que vous faites glisser le nœud, Visual Studio affiche un indicateur qui montre que vous déplacez le nœud.<br /><br /> Vous pouvez également faire glisser des nœuds en dehors d'un groupe.|  
 |Ajouter un nœud à un nœud non-groupe.|Faites glisser le nœud dans le nœud cible. Vous pouvez convertir n'importe quel nœud cible en un groupe en y ajoutant des nœuds.|  
 |Regrouper les nœuds sélectionnés.|1.  Sélectionnez les nœuds que vous voulez regrouper. Une barre d'outils contextuelle s'affiche au-dessus du dernier nœud que vous sélectionnez.<br />     ![Barre d’outils du graphique de dépendance](../modeling/media/depedencygraph_toolbar.png "DepedencyGraph_Toolbar")<br />2.  Dans la barre d’outils, cliquez sur l’icône quatrième **regrouper les nœuds sélectionnés** (si le nœud est développé des cinq au lieu de quatre icônes). Tapez le nom pour le nouveau groupe et appuyez sur **retourner**.<br />     ou<br />     Sélectionnez les nœuds que vous souhaitez regrouper et ouvrez le menu contextuel de votre sélection. Choisissez **groupe**, **ajouter un groupe Parent**, tapez le nom pour le nouveau groupe, puis appuyez sur **retourner**.<br /><br /> Vous pouvez renommer un groupe. Ouvrez le menu contextuel pour le groupe et choisissez **modifier**, **propriétés** pour ouvrir la fenêtre Propriétés de Visual Studio. Dans le **étiquette** propriété, renommez le groupe en fonction des besoins.|  
 |Supprimer des groupes.|Sélectionnez le groupe ou les groupes que vous souhaitez supprimer. Ouvrez le menu contextuel pour votre sélection, puis choisissez **groupe**, **supprimer le groupe**.|  
 |Supprimer des nœuds de leur groupe parent.|Sélectionnez les nœuds que vous voulez déplacer. Ouvrez le menu contextuel pour votre sélection, puis choisissez **groupe**, **supprimer du Parent**. Cette opération supprime les nœuds jusqu'à leur grand-parent ou jusqu'en dehors du groupe s'ils n'ont aucun groupe grand-parent.<br /><br /> ou<br /><br /> Sélectionnez les nœuds et faites-les glisser hors du groupe.|  
   
-##  <a name="AddRemoveNodesLinks"></a>Ajouter, supprimer ou renommer des nœuds, des liens et des commentaires  
+##  <a name="AddRemoveNodesLinks"></a> Ajouter, supprimer ou renommer des nœuds, des liens et des commentaires  
  Vous pouvez afficher plus ou moins d'éléments sur une carte pour la détailler ou la simplifier. Vous pouvez aussi renommer des éléments et y ajouter des commentaires.  
   
 > [!CAUTION]
@@ -254,7 +252,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
   
 -   Modifier la couleur d’arrière-plan de l’élément ou effacer l’indicateur de suivi en choisissant **modifier**, **autres couleurs**.  
   
-##  <a name="ChangeStyleCodeOrLink"></a>Modifier le style d’un élément de code ou un lien  
+##  <a name="ChangeStyleCodeOrLink"></a> Modifier le style d’un élément de code ou un lien  
  Vous pouvez modifier les icônes sur les éléments de code et les couleurs des éléments de code et des liens à l'aide de couleurs et d'icônes prédéfinies. Par exemple, vous pouvez choisir une couleur pour mettre en évidence des éléments de code et des liens ayant une certaine catégorie ou propriété. Vous pouvez ainsi identifier et vous concentrer sur des zones spécifiques de la carte. Vous pouvez spécifier des couleurs et des icônes personnalisées en modifiant le fichier .dgml de la carte ; consultez [les cartes de code de personnalisation en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
 #### <a name="to-apply-a-predefined-color-or-icon-to-code-elements-or-links-with-a-certain-category-or-property"></a>Pour appliquer une icône ou couleur prédéfinie à des éléments de code ou des liens ayant une certaine catégorie ou propriété  
@@ -263,7 +261,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
   
 2.  Dans le **légende** boîte, consultez si la catégorie d’élément de code ou la propriété apparaît déjà dans la liste.  
   
-3.  Si la liste n’inclut pas la catégorie ou la propriété, choisissez  **+**  dans les **légende** zone, puis choisissez **propriété de nœud**, **catégorie de nœud** , **Lier la propriété**, ou **lier catégorie**. Choisissez ensuite la propriété ou la catégorie. La catégorie ou la propriété apparaît maintenant dans le **légende** boîte.  
+3.  Si la liste n’inclut pas la catégorie ou la propriété, choisissez **+** dans les **légende** zone, puis choisissez **propriété de nœud**, **catégorie de nœud** , **Lier la propriété**, ou **lier catégorie**. Choisissez ensuite la propriété ou la catégorie. La catégorie ou la propriété apparaît maintenant dans le **légende** boîte.  
   
     > [!NOTE]
     >  Pour créer et affecter une catégorie ou une propriété à un élément de code, vous pouvez modifier le fichier .dgml de la carte ; consultez [les cartes de code de personnalisation en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
@@ -275,9 +273,9 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
     |**Pour modifier le**|**Choose**|  
     |-----------------------|----------------|  
     |Couleur d'arrière-plan|**Arrière-plan**|  
-    |Couleur du contour|**Stroke**|  
-    |Couleur du texte (une lettre « f » s’affiche pour afficher le résultat)|**Foreground**|  
-    |Icône|**Icons**|  
+    |Couleur du contour|**Trait**|  
+    |Couleur du texte (une lettre « f » s’affiche pour afficher le résultat)|**Premier plan**|  
+    |Icône|**Icônes**|  
   
      Le **sélecteur de jeu de couleurs** ou **sélecteur de jeu icône** boîte de dialogue apparaît pour vous permettre de sélectionner une couleur ou une icône.  
   
@@ -291,7 +289,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
     > [!NOTE]
     >  Vous pouvez réorganiser, supprimer ou temporairement désactiver des styles dans les **légende** boîte. Consultez [modifier la zone de légende](#ModifyLegend).  
   
-##  <a name="ModifyLegend"></a>Modifiez la zone de légende  
+##  <a name="ModifyLegend"></a> Modifiez la zone de légende  
  Vous pouvez réorganiser, supprimer ou temporairement désactiver des styles dans les **légende** zone :  
   
 1.  Ouvrez le menu contextuel pour un style dans le **légende** boîte.  
@@ -305,7 +303,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
     |Déplacer le style vers le haut|**Déplacer vers le haut**|  
     |Déplacer l'élément de code vers le bas|**Déplacer vers le bas**|  
   
-##  <a name="CopyLegend"></a>Styles de copie à partir d’un mappage à un autre  
+##  <a name="CopyLegend"></a> Styles de copie à partir d’un mappage à un autre  
   
 1.  Assurez-vous que le **légende** boîte apparaît sur la carte de code source. Si elle n’est pas visible, dans la barre d’outils de la carte, cliquez sur **légende**.  
   
@@ -313,7 +311,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
   
 3.  Collez la légende sur la carte cible.  
   
-##  <a name="MergeMaps"></a>Fusion des cartes de code  
+##  <a name="MergeMaps"></a> Fusion des cartes de code  
  Vous pouvez fusionner des cartes en copiant et en collant des éléments de code entre les cartes. Si les identificateurs d'éléments de code correspondent, le collage d'éléments de code fonctionne comme une opération de fusion. Pour simplifier cette tâche, placez tous les assemblys ou binaires que vous souhaitez visualiser dans le même dossier pour que le chemin d'accès complet de chaque assembly ou binaire soit le même pour chaque carte que vous souhaitez fusionner.  
   
  Vous pouvez également faire glisser ces assemblys ou ces binaires vers la même carte à partir de ce dossier.  

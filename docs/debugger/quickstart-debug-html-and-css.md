@@ -1,13 +1,10 @@
 ---
-title: "Déboguer le code HTML et CSS dans les applications UWP | Documents Microsoft"
-ms.custom: 
+title: Déboguer le code HTML et CSS dans les applications UWP | Documents Microsoft
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 26cf420c56b49979d2fa2a7a5ea11c4752b3cf5e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Déboguer le code HTML et CSS dans les applications UWP dans Visual Studio
   
@@ -165,7 +161,7 @@ ms.lasthandoff: 01/19/2018
   
 11. Dans la fenêtre de l’explorateur DOM, sélectionnez l’élément DIV de la section associée à l’ID `"fView"`. Utilisez les touches de direction pour afficher et sélectionner l’élément DIV approprié. (La touche de direction droite permet d’afficher les enfants d’un élément.)  
   
-     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
+     ![L’Explorateur DOM](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  Vous pouvez également sélectionner l’élément DIV dans l’angle inférieur gauche de la fenêtre de JavaScript Console en tapant `select(fView)` à la >> d’entrée invite et appuyez sur ENTRÉE.  

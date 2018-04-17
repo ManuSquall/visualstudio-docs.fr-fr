@@ -1,5 +1,5 @@
 ---
-title: "Concepteur d’activités Persist | Documents Microsoft"
+title: Concepteur d’activités Persist | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: be8648dd-3eb9-4a50-8ec1-57a8be804692
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa4416213d4bc607331d16dde1fd141b0013c96
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f990bff4f38fc50e99ec67ec344f51df252c4c6d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="persist-activity-designer"></a>Concepteur d'activités Persist
 Le **Persist** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.Persist> activité.

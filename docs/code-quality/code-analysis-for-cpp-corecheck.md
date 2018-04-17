@@ -2,25 +2,22 @@
 title: Visual Studio C++ Core instructions vérificateur référence | Documents Microsoft
 ms.custom: ''
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0825ea42ca74b224574299846504dfde7dd6f809
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: f0b657781981b6204bda42fcbf18f8945fb59004
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Référence de l’outil d’analyse les instructions C++ Core
 
@@ -216,9 +213,9 @@ Consultez [C++ Core instructions GSL.view : vues](https://github.com/isocpp/Cpp
 
 Les avertissements suivants sont présents dans un ensemble de règles d’expérimentale anticipée de l’outil d’analyse des recommandations principales, mais sont désormais déconseillées et peuvent être ignorés en toute sécurité. Les avertissements sont remplacés par les avertissements dans la liste ci-dessus.
 
-- 26412 DEREF_INVALID_POINTER
+- DEREF_INVALID_POINTER 26412
 - DEREF_NULLPTR 26413
-- 26420 ASSIGN_NONOWNER_TO_EXPLICIT_OWNER
+- ASSIGN_NONOWNER_TO_EXPLICIT_OWNER 26420
 - ASSIGN_VALID_OWNER 26421
 - VALID_OWNER_LEAVING_SCOPE 26422
 - ALLOCATION_NOT_ASSIGNED_TO_OWNER 26423

@@ -1,29 +1,25 @@
 ---
 title: IDiaSymbol::get_arrayIndexTypeId | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_arrayIndexTypeId method
 ms.assetid: 124f86e2-6f66-4541-87c3-799f435b731e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e30c0a69a945680e91a96588c9c5bc67e4975a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 94c613c402f4e26a56e06e3ed72a5f231267ce3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
 Récupère l’identificateur de type tableau index du symbole.  
@@ -49,7 +45,7 @@ HRESULT get_arrayIndexTypeId (
 ## <a name="remarks"></a>Notes  
  L’identificateur est une valeur unique créée par le SDK DIA pour marquer tous les symboles de manière unique.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

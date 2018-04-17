@@ -1,12 +1,10 @@
 ---
-title: "Référence des API non managées ClickOnce | Documents Microsoft"
-ms.custom: 
+title: Référence des API non managées ClickOnce | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,19 +16,19 @@ helpviewer_keywords:
 - CleanOnlineAppCacheW interface [ClickOnce unmanaged]
 - GetDeploymentDataFromManifest [ClickOnce unmanaged]
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
-caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: cplusplus
-ms.openlocfilehash: 392ada2288adcc229834f617c2f6284bb2e7ed0f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8463976825d38c5ff5e8cb910df153737da9eeee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Référence des API non managées ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]API publiques non managées de dfshim.dll.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API publiques non managées de dfshim.dll.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
  Nettoie ou désinstalle toutes les applications en ligne à partir de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache de l’application.  
@@ -63,7 +61,7 @@ ms.lasthandoff: 12/22/2017
  En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Retourne HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) si une mémoire tampon est trop petite.  
   
 ### <a name="remarks"></a>Notes  
- Les pointeurs ne doivent pas être null. `pcwzActivationUrl`et `pcwzPathToDeploymentManifest` ne doit pas être vide.  
+ Les pointeurs ne doivent pas être null. `pcwzActivationUrl` et `pcwzPathToDeploymentManifest` ne doit pas être vide.  
   
  Il est responsable de l’appelant pour nettoyer l’URL d’activation. Par exemple, ajout d’échappement des caractères lorsqu’ils sont nécessaires ou la suppression de la chaîne de requête.  
   

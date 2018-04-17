@@ -1,5 +1,5 @@
 ---
-title: "Boîte de dialogue de l’éditeur de conditions de règle (héritée) | Documents Microsoft"
+title: Boîte de dialogue de l’éditeur de conditions de règle (héritée) | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: c7ca8be9-de31-4a64-939c-4d53a50d5e29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3e4c54dff4bded0bcc07fb5e8891162cc12ea8
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 62b74956dc12e19a5594585e8d356b77ae5549b0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Éditeur de conditions de règle, boîte de dialogue (héritée)
 
@@ -30,7 +30,7 @@ Vous créez et modifiez des conditions de règle déclarative à l’aide de la 
 
 -   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)
 
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
+-   [Activité WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
 
 -   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)
 
@@ -47,7 +47,7 @@ Le tableau suivant décrit les éléments d’interface utilisateur utilisateur 
 
 ## <a name="entering-condition-expressions"></a>Entrée d'expressions de condition
 
-Les expressions de condition sont entrées sous forme de texte. Vous pouvez taper **cela.** dans l’éditeur pour référencer des champs, propriétés et méthodes utilisées dans le flux de travail, à l’aide d’un-de menu IntelliSense. Vous pouvez également taper directement un nom de membre de workflow. Vous pouvez ajouter des opérateurs logiques à la condition, tels que les opérateurs AND, OR ou NOT. Vous pouvez également ajouter des prédicats. Un prédicat se compose d’un opérateur binaire et de deux opérandes. Les opérateurs binaires pris en charge sont  **==** ,  **>** ,  **\<** ,  **>=** , et  **<=** . Les opérandes pris en charge sont à valeur de constante, à fonction arithmétique et à portée publique.
+Les expressions de condition sont entrées sous forme de texte. Vous pouvez taper **cela.** dans l’éditeur pour référencer des champs, propriétés et méthodes utilisées dans le flux de travail, à l’aide d’un-de menu IntelliSense. Vous pouvez également taper directement un nom de membre de workflow. Vous pouvez ajouter des opérateurs logiques à la condition, tels que les opérateurs AND, OR ou NOT. Vous pouvez également ajouter des prédicats. Un prédicat se compose d’un opérateur binaire et de deux opérandes. Les opérateurs binaires pris en charge sont **==**, **>**, **\<**, **>=**, et **<=**. Les opérandes pris en charge sont à valeur de constante, à fonction arithmétique et à portée publique.
 
 Vous pouvez spécifier le type de comparaison, et vous pouvez comparer aux **null** ou une chaîne vide. Vous pouvez imbriquer des appels à des membres sur une variable qui contient un type complexe, par exemple `this.Address.State == "WA"`.
 
@@ -86,7 +86,7 @@ Pour plus d’informations sur les conditions, consultez [à l’aide de Conditi
 - [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)
 - [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 - [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)
-- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
+- [Activité WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
 - [Sélectionner la condition, boîte de dialogue (hérité)](../workflow-designer/select-condition-dialog-box-legacy.md)
 - [À l’aide de Conditions dans les Workflows](http://go.microsoft.com/fwlink?LinkID=65009)
 - [Aide de l’interface utilisateur du concepteur hérité pour Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

@@ -1,29 +1,25 @@
 ---
 title: IDebugProperty2 | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2
 helpviewer_keywords:
 - IDebugProperty2 interface
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dc1305fb8534dc8e14192268913290aef25f2cc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb0cd134d30da277ddc1f984e0cf9e57dd5e4963
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Cette interface représente une propriété de frame de pile, une propriété de document du programme ou une autre propriété. La propriété est généralement le résultat d’une évaluation d’expression.  
@@ -41,7 +37,7 @@ IDebugProperty2 : IUnknown
  Le D’implémente cette interface pour représenter une valeur particulière. Par exemple, la valeur peut être une valeur numérique à la suite d’une évaluation d’expression, un contexte de la mémoire utilisée pour l’affichage de mémoire ou une liste des registres et leurs valeurs.  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Appelez [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) pour obtenir cette interface, qui représente le résultat d’une évaluation. `IDebugExpression2::EvaluateAsync`Retourne cette interface en envoyant un [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) interface pour le SDM, qui à son tour appelle [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) pour récupérer la propriété.  
+ Appelez [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) pour obtenir cette interface, qui représente le résultat d’une évaluation. `IDebugExpression2::EvaluateAsync` Retourne cette interface en envoyant un [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) interface pour le SDM, qui à son tour appelle [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) pour récupérer la propriété.  
   
  [GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md) renvoie cette interface pour fournir le document de script associé.  
   
@@ -75,7 +71,7 @@ IDebugProperty2 : IUnknown
   
  L’IDE peut utiliser le `IDebugProperty2` interface pour permettre aux utilisateurs de parcourir et modifier les propriétés au moment de l’exécution.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

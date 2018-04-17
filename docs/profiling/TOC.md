@@ -1,7 +1,7 @@
 
 # [Documentation sur le profilage](index.md)
-# Vue d'ensemble
-# Guides de démarrage rapide
+# [Vue d’ensemble](profiling-overview.md)
+# Démarrages rapides
 ## [Présentation du profilage](profiling-feature-tour.md)
 ## [Analyser l’utilisation de l’UC (managée)](quickstart-cpu-usage-managed.md)
 ## [Analyser l’utilisation de l’UC (native)](quickstart-cpu-usage-native.md)
@@ -208,15 +208,15 @@
 ##### [Profilage de site web rapide avec VSPerfASPNETCmd](rapid-web-site-profiling-with-vsperfaspnetcmd.md)
 ##### [Collecte des statistiques d’application des applications web ASP.NET en utilisant la méthode d’échantillonnage du profileur à partir de la ligne de commande](collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)
 ###### [Guide pratique pour attacher le profileur à une application web ASP.NET pour collecter des statistiques d’application en utilisant la ligne de commande](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)
-##### [Collecte des données temporelles détaillées d’une application web ASP.NET en utilisant la méthode d’instrumentation du profileur à partir de la ligne de commande](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)
+##### [Collecte des données temporelles détaillées d’une application web ASP.NET en utilisant la méthode d’instrumentation du profileur à partir de la ligne de commande](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)
 ###### [Guide pratique pour instrumenter une application web ASP.NET compilée statiquement et collecter des données temporelles détaillées avec le profileur en utilisant la ligne de commande](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
-###### [Guide pratique pour instrumenter une application web ASP.NET compilée dynamiquement et collecter des données temporelles détaillées avec le profileur en utilisant la ligne de commande](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
+###### [Guide pratique pour instrumenter une application web ASP.NET compilée dynamiquement et collecter des données temporelles détaillées avec le profileur en utilisant la ligne de commande](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler.md)
 ##### [Collecte des données d’accès concurrentiel d’une application web ASP.NET en utilisant la ligne de commande du profileur](collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)
 ###### [Guide pratique pour attacher le profileur à une application web ASP.NET et collecter des données d’accès concurrentiel en utilisant la ligne de commande](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)
 ##### [Collecte des données de mémoire d’une application web ASP.NET en utilisant la ligne de commande du profileur](collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)
 ###### [Guide pratique pour attacher le profileur à une application web ASP.NET pour collecter des données de mémoire en utilisant la ligne de commande](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)
 ###### [Guide pratique pour instrumenter une application web ASP.NET compilée statiquement et collecter des données de mémoire en utilisant la ligne de commande du profileur](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
-###### [Guide pratique pour instrumenter une application web ASP.NET compilée dynamiquement et collecter des données de mémoire en utilisant la ligne de commande du profileur](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+###### [Guide pratique pour instrumenter une application web ASP.NET compilée dynamiquement et collecter des données de mémoire en utilisant la ligne de commande du profileur](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
 ##### [Guide pratique pour modifier des fichiers Web.Config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement](how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications.md)
 #### [Profilage de services à partir de la ligne de commande](command-line-profiling-of-services.md)
 ##### [Collecte des statistiques d’application des services en utilisant la méthode d’échantillonnage du profileur](collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)

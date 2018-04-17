@@ -1,23 +1,21 @@
 ---
-title: "Fonctionnement des modèles, des Classes et des relations | Documents Microsoft"
-ms.custom: 
+title: Fonctionnement des modèles, des Classes et des relations | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c0e2faf70c6d5857d967fc26e88242c54ea9906f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 95584a1fc0cb8652a060d19c8e76be476c10c1bc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
 Un langage spécifique à un domaine (DSL) est défini par son fichier de définition DSL, ainsi que tout code de programme personnalisé que vous pouvez écrire. La plupart du code de programme dans la solution DSL est généré à partir de ce fichier.  
@@ -27,7 +25,7 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
 ## <a name="the-dsl-definition"></a>La définition DSL  
  Lorsque vous ouvrez `Dsl\DslDefinition.dsl`, votre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fenêtre ressemble à l’image suivante.  
   
- ![dsl designer](../modeling/media/dsl_designer.png "dsl_designer")  
+ ![concepteur DSL](../modeling/media/dsl_designer.png "dsl_designer")  
   
  Les informations les plus importantes dans la définition DSL s’affiche dans le diagramme de définition DSL. Informations supplémentaires, qui fait également partie de DslDefinition.dsl, s’affiche dans l’Explorateur DSL, qui apparaît généralement situé sur le côté du diagramme. Vous travaillez avec le schéma pour les tâches les plus fréquentes et avec l’Explorateur de DSL pour les personnalisations plus avancées.  
   

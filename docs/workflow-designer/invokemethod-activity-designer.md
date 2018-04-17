@@ -1,5 +1,5 @@
 ---
-title: "Concepteur d’activités InvokeMethod | Documents Microsoft"
+title: Concepteur d’activités InvokeMethod | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e372136170d315e5be685c7a123d0702a1e54c2d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: fe2e1cbb097d86d0e13ba8581389d7356001ff92
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="invokemethod-activity-designer"></a>Concepteur d'activités InvokeMethod
 **InvokeMethod** concepteur est utilisé pour créer et configurer un <xref:System.Activities.Statements.InvokeMethod> activité.
@@ -59,6 +59,6 @@ ms.lasthandoff: 03/12/2018
 ## <a name="see-also"></a>Voir aussi
 
 - [Primitives](../workflow-designer/primitives-activity-designers.md)
-- [Assign](../workflow-designer/assign-activity-designer.md)
-- [Delay](../workflow-designer/delay-activity-designer.md)
+- [affecter](../workflow-designer/assign-activity-designer.md)
+- [délai](../workflow-designer/delay-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

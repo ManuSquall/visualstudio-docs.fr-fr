@@ -1,27 +1,27 @@
 ---
-title: Gestion de projets pour les applications Python dans Visual Studio | Microsoft Docs
-description: "Explique l’objectif des projets dans Visual Studio, montre comment créer et gérer des projets pour le code Python, et présente les différents modèles de projet disponibles pour Python."
-ms.custom: 
+title: Gestion de projets d’application Python | Microsoft Docs
+description: Explique l’objectif des projets dans Visual Studio, montre comment créer et gérer des projets pour le code Python, et présente les différents modèles de projet disponibles pour Python.
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d996c99104e0a5d6b2e1acdb44273679a3998658
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: dccac11e0ffedf90b72812806b1161f7c270571b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="python-projects"></a>Projets Python
 

@@ -1,12 +1,10 @@
 ---
-title: "Raccourcis clavier de la liaison aux éléments de Menu | Documents Microsoft"
-ms.custom: 
+title: Raccourcis clavier de la liaison aux éléments de Menu | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - keyboard command
 - keyboards
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - keyboard shortcuts
 - menu items
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ceae0f2ea69ce0340565abb85bb002713010407d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: db02cf763ee4bf171d862129c88687accab00cc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Raccourcis clavier de liaison aux éléments de Menu
 Pour lier un raccourci clavier à une commande de menu personnalisés, ajoutez simplement une entrée dans le fichier .vsct pour le package. Cette rubrique explique comment mapper un raccourci clavier pour un bouton personnalisé, un élément de menu ou une commande de barre d’outils et comment appliquer le mappage du clavier dans l’éditeur par défaut ou de limiter à un éditeur personnalisé.  

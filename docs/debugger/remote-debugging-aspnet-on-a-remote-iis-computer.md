@@ -1,25 +1,22 @@
 ---
-title: "ASP.NET Core sur un ordinateur distant IIS de débogage à distance | Documents Microsoft"
+title: ASP.NET Core sur un ordinateur distant IIS de débogage à distance | Documents Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f1938473a3a5e085e63b9b522bbc31678dedbbd4
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: b3d2bcbd89aef0a19fb78add954fd321445da83f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Débogage distant ASP.NET Core sur un ordinateur IIS distant dans Visual Studio 2017
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application puis attachez à votre application en cours d’exécution à partir de Visual Studio.
@@ -48,7 +45,7 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 
 4. Ouvrez le fichier About.cshtml.cs et définir un point d’arrêt dans le `OnGet` (méthode) (dans les modèles plus anciens, ouvrez plutôt HomeController.cs et définissez le point d’arrêt le `About()` méthode).
 
-## <a name="bkmk_configureIIS"></a>Installer et configurer IIS sur Windows Server
+## <a name="bkmk_configureIIS"></a> Installer et configurer IIS sur Windows Server
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -56,7 +53,7 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 
 En fonction de vos paramètres de sécurité, il peut gagner du temps d’ajouter les sites de confiance suivants à votre navigateur vous pouvez facilement télécharger le logiciel décrit dans ce didacticiel. Accès à ces sites peuvent être nécessaires :
 
-- microsoft.com
+- Microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
@@ -70,15 +67,15 @@ Lorsque vous téléchargez le logiciel, vous pouvez obtenir des demandes pour ac
 1. Installer le [hébergement sur serveur Windows .NET Core](https://aka.ms/dotnetcore-2-windowshosting) offre groupée sur le système hôte. L’application installe le .NET Core Runtime, bibliothèque principale de .NET et le Module de base ASP.NET. Pour obtenir des instructions plus détaillées, consultez [publication sur IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
-    > Si le système ne dispose d’une connexion Internet, obtenez et installez le  *[redistribuable Microsoft Visual C++ 2015](https://www.microsoft.com/download/details.aspx?id=53840)*  avant d’installer l’application d’hébergement sur serveur Windows .NET Core.
+    > Si le système ne dispose d’une connexion Internet, obtenez et installez le *[redistribuable Microsoft Visual C++ 2015](https://www.microsoft.com/download/details.aspx?id=53840)* avant d’installer l’application d’hébergement sur serveur Windows .NET Core.
 
 3. Redémarrer le système (ou exécutez **net stop a été /y** suivie **net démarrer w3svc** à partir d’une invite de commandes pour voir une modification dans le chemin d’accès du système).
 
-## <a name="BKMK_install_webdeploy"></a>(Facultatif) Installation Web déployer 3.6 sur Windows Server
+## <a name="BKMK_install_webdeploy"></a> (Facultatif) Installation Web déployer 3.6 sur Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-## <a name="BKMK_deploy_asp_net"></a>Configurer le site Web ASP.NET sur l’ordinateur Windows Server
+## <a name="BKMK_deploy_asp_net"></a> Configurer le site Web ASP.NET sur l’ordinateur Windows Server
 
 1. Ouvrez l’Explorateur Windows et créez un dossier, **C:\Publish**, où vous déploierez plus tard le projet ASP.NET.
 
@@ -98,7 +95,7 @@ Lorsque vous téléchargez le logiciel, vous pouvez obtenir des demandes pour ac
 
     Si vous ne voyez pas un de ces utilisateurs avec accès, suivez les étapes pour ajouter IUSR en tant qu’utilisateur avec des droits de lecture et exécution.
 
-## <a name="bkmk_webdeploy"></a>(Facultatif) Publier et déployer l’application à l’aide de Web Deploy à partir de Visual Studio
+## <a name="bkmk_webdeploy"></a> (Facultatif) Publier et déployer l’application à l’aide de Web Deploy à partir de Visual Studio
 
 [!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
 
@@ -108,14 +105,14 @@ Vous pouvez également publier et déployer l’application à l’aide du syst�
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="BKMK_msvsmon"></a>Téléchargez et installez les outils à distance sur Windows Server
+## <a name="BKMK_msvsmon"></a> Téléchargez et installez les outils à distance sur Windows Server
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
 > [!TIP]
 > Dans certains scénarios, il peut être plus efficace d’exécuter le débogueur distant à partir d’un partage de fichiers. Pour plus d’informations, consultez [exécuter le débogueur distant à partir d’un partage de fichiers](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Configurer le débogueur distant sur Windows Server
+## <a name="BKMK_setup"></a> Configurer le débogueur distant sur Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -155,7 +152,7 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 
     Le point d’arrêt doit être atteint dans Visual Studio.
 
-## <a name="bkmk_openports"></a>Résolution des problèmes : Ouvrir les ports requis sur Windows Server
+## <a name="bkmk_openports"></a> Résolution des problèmes : Ouvrir les ports requis sur Windows Server
 
 Dans la plupart des configurations, les ports requis sont ouverts par l’installation d’ASP.NET et le débogueur distant. Toutefois, vous devrez peut-être vérifier que les ports sont ouverts.
 

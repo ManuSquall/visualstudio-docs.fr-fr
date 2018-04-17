@@ -1,15 +1,15 @@
 ---
-title: "Utilisation de Python dans Visual Studio, étape 2 - écriture et exécution du code | Microsoft Docs"
-description: "Étape 2 d’un didacticiel de base sur l’utilisation de Python dans Visual Studio, décrivant comment modifier et exécuter un programme Hello World simple, suivie d’un code plus intéressant illustrant les fonctionnalités IntelliSense et d’édition de Visual Studio."
-ms.custom: 
+title: 'Utiliser Python, étape 2 : Écrire et exécuter du code | Microsoft Docs'
+description: Étape 2 d’un didacticiel de base sur l’utilisation de Python dans Visual Studio, décrivant comment modifier et exécuter un programme Hello World simple, suivie d’un code plus intéressant illustrant les fonctionnalités IntelliSense et d’édition de Visual Studio.
+ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a6efed0adae6a321595af2e58c4db79f0da2f679
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 6045b385754eebfe7b754b9d213f860a199b1824
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Étape 2 : Écriture et exécution du code
 

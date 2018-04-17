@@ -1,27 +1,25 @@
 ---
-title: "L’inscription d’un Service2 de langage hérité | Documents Microsoft"
-ms.custom: 
+title: L’inscription d’un Service2 de langage hérité | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 364b17e6759d0ca337b69c89c51dfba8d26f3e32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6cb7750f55bd9175c552aa765d21b1334f5f1dfe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-legacy-language-service"></a>L’inscription d’un Service de langage hérité
 Les sections suivantes fournissent des listes d’entrées de Registre pour la langue différentes options de service disponibles dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -33,9 +31,9 @@ Les sections suivantes fournissent des listes d’entrées de Registre pour la l
   
 |Name|Type|Range|Description|  
 |----------|----------|-----------|-----------------|  
-|(Default)|REG_SZ|*\<GUID >*|GUID du service de langage.|  
+|(Default)|REG_SZ|*\<GUID &GT;*|GUID du service de langage.|  
 |LangResID|REG_DWORD|0 x 0-0xffff|Identificateur de ressource (ResID) pour le nom localisé de la langue de la chaîne.|  
-|Package|REG_SZ|*\<GUID >*|GUID du VSPackage.|  
+|Package|REG_SZ|*\<GUID &GT;*|GUID du VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Spécifie si le **saisie semi-automatique des instructions** options dans le **Options** boîte de dialogue sont activés.|  
 |ShowSmartIndent|REG_DWORD|0-1|Spécifie si l’option pour sélectionner **Smart** mise en retrait dans les **Options** boîte de dialogue est activée.|  
 |RequestStockColors|REG_DWORD|0-1|Spécifie si personnalisés ou les couleurs par défaut sont utilisées pour la couleur des mots clés.|  
@@ -144,8 +142,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|Nom de l’onglet Boîte à outils à utiliser par défaut lors de l’éditeur est actif.|  
 |DisplayName|REG_SZ|ResID|Nom à afficher dans le **ouvrir avec** boîte de dialogue. Le nom est l’ID de ressource de chaîne ou un nom de format standard.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Utilisé pour le **ouvrir avec** commande de menu. Si vous ne souhaitez pas que l’éditeur de texte par défaut dans la liste des éditeurs disponibles pour un type de fichier de liste, définissez cette valeur sur 1.|  
-|LinkedEditorGUID|REG_SZ|*\<GUID >*|Utilisé pour n’importe quel service de langage que vous pouvez ouvrir un fichier avec prise en charge de la page de codes. Par exemple, lorsque vous ouvrez un fichier .txt à l’aide de la **ouvrir avec** commande, les options sont fournies pour l’utilisation de l’éditeur de code source avec et sans encodage.<br /><br /> Le GUID spécifié dans le nom de la sous-clé est pour la fabrique d’éditeur de page de codes ; le GUID lié spécifié dans cette entrée de Registre spécifique est pour la fabrique d’éditeur standard. L’objectif de cette entrée est que si l’IDE n’ouvre pas un fichier à l’aide de l’éditeur par défaut, l’IDE essaient d’utiliser l’éditeur suivant dans la liste. Cet éditeur suivant ne doit pas être la fabrique d’éditeur de page de codes, car cette fabrique d’éditeur est essentiellement le même que la fabrique d’éditeur qui a échoué.|  
-|Package|REG_SZ|*\<GUID >*|VSPackage GUID pour ResID du nom affichage.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|Utilisé pour n’importe quel service de langage que vous pouvez ouvrir un fichier avec prise en charge de la page de codes. Par exemple, lorsque vous ouvrez un fichier .txt à l’aide de la **ouvrir avec** commande, les options sont fournies pour l’utilisation de l’éditeur de code source avec et sans encodage.<br /><br /> Le GUID spécifié dans le nom de la sous-clé est pour la fabrique d’éditeur de page de codes ; le GUID lié spécifié dans cette entrée de Registre spécifique est pour la fabrique d’éditeur standard. L’objectif de cette entrée est que si l’IDE n’ouvre pas un fichier à l’aide de l’éditeur par défaut, l’IDE essaient d’utiliser l’éditeur suivant dans la liste. Cet éditeur suivant ne doit pas être la fabrique d’éditeur de page de codes, car cette fabrique d’éditeur est essentiellement le même que la fabrique d’éditeur qui a échoué.|  
+|Package|REG_SZ|*\<GUID &GT;*|VSPackage GUID pour ResID du nom affichage.|  
   
 ### <a name="example"></a>Exemple  
   
@@ -166,7 +164,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Name|Type|Range|Description|  
 |----------|----------|-----------|-----------------|  
 |(Default)|REG_SZ||Non utilisé.|  
-|*\<GUID >*|REG_SZ|""|Clé aux logiques vues prises en charge. Vous pouvez avoir autant que nécessaire. Le nom de l’entrée de Registre est ce qui est important, pas la valeur, qui est toujours une chaîne vide.|  
+|*\<GUID &GT;*|REG_SZ|""|Clé aux logiques vues prises en charge. Vous pouvez avoir autant que nécessaire. Le nom de l’entrée de Registre est ce qui est important, pas la valeur, qui est toujours une chaîne vide.|  
   
 ### <a name="example"></a>Exemple  
   

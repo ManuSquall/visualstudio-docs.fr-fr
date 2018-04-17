@@ -1,12 +1,10 @@
 ---
 title: Solutions InfoPath | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], InfoPath
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4e59b91ff6159af8f6e5736621c0443d3d96c8b5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9db28542e4141767be55241b98e0a6b762b0e236
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="infopath-solutions"></a>Solutions InfoPath
   Visual Studio fournit des modèles de projet à l’aide desquels vous pouvez créer des compléments VSTO pour Microsoft Office InfoPath 2013 et InfoPath 2010. InfoPath n’est pas disponible dans Office 2016.  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="automating-infopath-by-using-an-add-in"></a>Automatisation d'InfoPath à l'aide d'un complément  
  Pour accéder au modèle objet d’InfoPath à partir d’un complément VSTO Office créé à l’aide des outils de développement Office dans Visual Studio, utilisez le champ `Application` de la classe `ThisAddIn` dans votre projet. Le champ `Application` retourne un objet <xref:Microsoft.Office.Interop.InfoPath.Application> qui représente l'instance actuelle d'InfoPath. Pour plus d'informations, consultez [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
- Quand vous appelez le modèle objet d’InfoPath à partir d’un complément VSTO, vous utilisez des types fournis dans l’assembly PIA (Primary Interop Assembly) pour InfoPath. L’assembly PIA fait office de pont entre le code managé du complément VSTO et le modèle objet COM dans InfoPath. Tous les types dans l'assembly PIA d'InfoPath sont définis dans l'espace de noms <xref:Microsoft.Office.Interop.InfoPath> . Pour plus d'informations sur l'assembly PIA d'InfoPath, consultez [Présentation de l'assembly PIA de Microsoft Office InfoPath](http://msdn.microsoft.com/en-us/1b3ae03c-6951-49e4-a489-4712d3f7ba72). Pour plus d’informations sur les assemblys PIA en général, consultez [présentation du développement de Solutions Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) et [assemblys PIA Office](../vsto/office-primary-interop-assemblies.md).  
+ Quand vous appelez le modèle objet d’InfoPath à partir d’un complément VSTO, vous utilisez des types fournis dans l’assembly PIA (Primary Interop Assembly) pour InfoPath. L’assembly PIA fait office de pont entre le code managé du complément VSTO et le modèle objet COM dans InfoPath. Tous les types dans l'assembly PIA d'InfoPath sont définis dans l'espace de noms <xref:Microsoft.Office.Interop.InfoPath> . Pour plus d'informations sur l'assembly PIA d'InfoPath, consultez [Présentation de l'assembly PIA de Microsoft Office InfoPath](http://msdn.microsoft.com/en-us/1b3ae03c-6951-49e4-a489-4712d3f7ba72). Pour plus d’informations sur les assemblys PIA en général, consultez [présentation du développement de Solutions Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) et [assemblys PIA Office](../vsto/office-primary-interop-assemblies.md).  
   
 ## <a name="customizing-the-user-interface-of-infopath-by-using-an-add-in"></a>Personnalisation de l'interface utilisateur d'InfoPath à l'aide d'un complément  
  Quand vous créez un complément VSTO pour InfoPath, plusieurs options de personnalisation de l’interface utilisateur différentes s’offrent à vous. Le tableau suivant répertorie certaines de ces options.  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Voir aussi  
  [Présentation de l'assembly PIA de Microsoft Office InfoPath](http://msdn.microsoft.com/en-us/1b3ae03c-6951-49e4-a489-4712d3f7ba72)   
  [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Présentation du développement de Solutions Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Présentation du développement de Solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architecture des Compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   

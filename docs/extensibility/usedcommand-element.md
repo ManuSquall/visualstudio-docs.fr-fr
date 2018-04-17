@@ -1,26 +1,24 @@
 ---
-title: "Élément de UsedCommand | Documents Microsoft"
-ms.custom: 
+title: Élément de UsedCommand | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 06375b45e21e0b83c62f2509d666b786479ff2b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4888733abf142f6582706406decbea0bf84ce519
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="usedcommand-element"></a>Élément de UsedCommand
 Permet à un VSPackage pour accéder à une commande qui est définie dans un autre fichier .vsct. Par exemple, si votre VSPackage utilise la norme **copie** commande, qui est définie par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interpréteur de commandes, vous pouvez ajouter la commande à un menu ou une barre d’outils sans nouvelle mise en œuvre.  
@@ -46,7 +44,7 @@ Permet à un VSPackage pour accéder à une commande qui est définie dans un au
   
 |Élément|Description|  
 |-------------|-----------------|  
-|Aucun.||  
+|Aucun||  
   
 ### <a name="parent-elements"></a>Éléments parents  
   

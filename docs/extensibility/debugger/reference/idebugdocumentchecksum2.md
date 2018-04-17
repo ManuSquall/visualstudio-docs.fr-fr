@@ -1,27 +1,23 @@
 ---
 title: IDebugDocumentChecksum2 | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDocumentChecksum2 interface
 ms.assetid: 6d22fa94-21aa-46cb-b5b5-32a6399ebb20
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50fbee2dbdb30873c97f1ca465d99161add90a19
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 068447399a8cfd43cb5fe07ea82e7cf4400f460c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 Représente une somme de contrôle pour un document de débogage et permet le transfert de la somme de contrôle entre les composants.  
@@ -42,7 +38,7 @@ IDebugDocumentChecksum2 : IUnknown
 |------------|-----------------|  
 |[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Récupère l’identificateur de somme de contrôle et l’algorithme de document donné le nombre maximal d’octets à utiliser.|  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : Msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

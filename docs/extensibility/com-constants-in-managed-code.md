@@ -1,27 +1,23 @@
 ---
-title: "Constantes de COM dans le Code managé | Documents Microsoft"
-ms.custom: 
+title: Constantes de COM dans le Code managé | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, COM constants and macros
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca950fb5be94dc75ca038db4c109f5a46c6b2c0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 42a8c6cbe2b3a2b5fa559a74dd165b7a729b814d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="com-constants-in-managed-code"></a>Constantes de COM dans le Code managé
 Managed Package Framework (MPF) rend certaines constantes COM standards disponibles pour le code managé. Ces constantes sont répertoriées ci-dessous pour référence.  

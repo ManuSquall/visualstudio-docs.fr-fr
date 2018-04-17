@@ -1,8 +1,8 @@
 ---
-title: "Prend en charge d’instruction pour Visual Basic 6.0 | Documents Microsoft"
+title: Prend en charge d’instruction pour Visual Basic 6.0 | Documents Microsoft
 ms.date: 08/28/2017
 ms.technology: devlang-vb
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -13,11 +13,11 @@ author: paulyuk
 ms.author: paulyuk
 ms.workload:
 - paulyuk
-ms.openlocfilehash: cb25f85be6c77dfbef6969435d14f2cae61debf2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cc55dec5960717e3807602bc76031f7502ec90c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Prend en charge d’instruction pour Visual Basic 6.0 sur Windows
 
@@ -33,7 +33,7 @@ L’équipe Visual Basic est validée à la compatibilité de « It Just Works�
 - Windows Server 2012, y compris R2
 - Windows Server 2008, y compris R2
 
-Objectif de l’équipe Visual Basic est que les applications Visual Basic 6.0 continuent à s’exécuter sur les versions de Windows prises en charge. Comme indiqué dans ce document, le runtime Visual Basic 6.0 de core prendra en charge pour la durée de vie complète des versions de Windows prises en charge, ce qui est de cinq ans de support standard, suivie de cinq ans de support étendu (http://support.microsoft.com/gp/lifepolicy). La barre de prise en charge sera limitée aux régressions graves et problèmes de sécurité critiques pour les applications existantes.
+Objectif de l’équipe Visual Basic est que les applications Visual Basic 6.0 continuent à s’exécuter sur les versions de Windows prises en charge. Comme indiqué dans ce document, le runtime Visual Basic 6.0 de core sera pris en charge pour la durée de vie complète des versions de Windows prises en charge, ce qui est de cinq ans de support standard, suivie de cinq ans de support étendu (http://support.microsoft.com/gp/lifepolicy). La barre de prise en charge sera limitée aux régressions graves et problèmes de sécurité critiques pour les applications existantes.
 
 ## <a name="technical-summary"></a>Résumé technique
 
@@ -74,7 +74,7 @@ Pour obtenir des détails spécifiques sur les fichiers inclus dans chaque group
 Prise en charge et/ou la copie des fichiers binaires du runtime Visual Basic 6.0 sur les versions de Windows prises en charge ne modifie pas la stratégie de prise en charge pour l’IDE de Visual Basic 6.0 ou l’IDE de Visual Studio 6.0 dans sa globalité. Ces produits sorti du support étendu le 8 avril 2008.
 
 Vous trouverez plus d’informations sur la politique de support des produits Microsoft à http://support.microsoft.com/gp/lifepolicy. Dans le cadre de ce cycle de vie de prise en charge, Microsoft continue de prendre en charge le runtime Visual Basic 6.0 sur les versions de Windows prises en charge pour la durée de vie de prise en charge de ces systèmes d’exploitation. Par exemple, cela signifie que le runtime Visual Basic 6.0 sera être pris en charge sur Windows Server 2003 jusqu'à juin 2008 de Support standard et juin 2013 pour étendre la prise en charge.
-Pour plus d’informations sur la politique de prise en charge ou pour connaître les options de support supplémentaires, visitez notre page de prise en charge à http://www.microsoft.com/support.
+Pour plus d’informations sur la politique de prise en charge ou pour connaître les options de support supplémentaires, consultez notre page de prise en charge à http://www.microsoft.com/support.
 
 ## <a name="64-bit-windows"></a>Windows 64 bits
 
@@ -149,7 +149,7 @@ Cette section fournit des informations supplémentaires concernant les systèmes
 
 
 > [!NOTE]
-> &#42;  Prise en charge du runtime VB6 est limitée par le cycle de vie de prise en charge de Windows.  Par exemple, si la cible du système d’exploitation est en phase de support étendu, VB6 ne peut pas avoir un niveau de prise en charge supérieur de support étendu.  Le [feuille du cycle de vie de prise en charge de Windows](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) contient des informations de cycle de vie supplémentaires sur les versions de Windows précédentes et actuelle.
+> &#42;Prise en charge du runtime VB6 est limitée par le cycle de vie de prise en charge de Windows.  Par exemple, si la cible du système d’exploitation est en phase de support étendu, VB6 ne peut pas avoir un niveau de prise en charge supérieur de support étendu.  Le [feuille du cycle de vie de prise en charge de Windows](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) contient des informations de cycle de vie supplémentaires sur les versions de Windows précédentes et actuelle.
 
 ## <a name="visual-basic-60-runtime-usage-inside-vba-and-office"></a>Utilisation du runtime Visual Basic 6.0 à l’intérieur de VBA et Office
 
@@ -179,68 +179,68 @@ Si vous détectez un problème avec votre application Visual Basic 6.0 en cours 
 
 | | | | |
 |---|---|---|---|
-|atl.dll|         msadcor.dll|     msorcl32.dll|   ole2.dll|
-|asycfilt.dll|    msadcs.dll|      msvbvm60.dll|   ole32.dll|
-|comcat.dll|      msadds.dll|      msvcirt.dll|    oleaut32.dll|
-|Compobj.dll|     msaddsr.dll|     msvcrt.dll|     oleaut32.dll|
+|ATL.dll|         msadcor.dll|     msorcl32.dll|   OLE2.dll|
+|asycfilt.dll|    Msadcs.dll|      Msvbvm60.dll|   Ole32.dll|
+|Comcat.dll|      MSADDS.dll|      Msvcirt.dll|    Oleaut32.dll|
+|Compobj.dll|     msaddsr.dll|     msvcrt.dll|     Oleaut32.dll|
 |dbnmpntw.dll|    msader15.dll|    msvcrt40.dll|   Oledb32.dll|
-|dcomcnfg.exe|    msado15.dll|     mtxdm.dll|      oledb32r.dll|
-|dllhost.exe|     msador15.dll|    mtxoci.dll|     oledlg.dll|
-|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   olepro32.dll|
-|ds32gt.dll|      mscpxl32.dll|    odbc32.dll|     olethk32.dll|
-|expsrv.dll|      msdadc.dll|      odbc32gt.dll|   regsvr32.exe|
-|hh.exe|          msdaenum.dll|    odbcad32.exe|   rpcns4.dll|
-|hhctrl.ocx|      msdaer.dll|      odbccp32.cpl|   rpcrt4.dll|
-|imagehlp.dll|    MSDAORA.dll|     odbccp32.dll|   scrrun.dll|
-|iprop.dll|       msdaosp.dll|     odbccr32.dll|   Secur32.dll|
-|itircl.dll|      msdaprst.dll|    odbccu32.dll|   simpdata.tlb|
-|itss.dll|        msdaps.dll|      odbcint.dll|    sqloledb.dll|
-|mfc40.dll|       msdasc.dll|      odbcji32.dll|   sqlsrv32.dll|
-|mfc42.dll|       msdasql.dll|     odbcjt32.dll|   stdole2.tlb|
-|mfc42enu.dll|    msdasqlr.dll|    odbctrac.dll|   stdole32.tlb|
-|msadce.dll|      msdatsrc.tlb|    oddbse32.dll|   storage.dll|
-|msadcer.dll|     msdatt.dll|      odexl32.dll|    vbajet32.dll|
+|dcomcnfg.exe|    msado15.dll|     in Mtxdm.dll|      oledb32r.dll|
+|Dllhost.exe|     msador15.dll|    Mtxoci.dll|     oledlg.dll|
+|ds16gt.dll|      msadrh15.dll|    Odbc16gt.dll|   OLEPRO32.dll|
+|ds32gt.dll|      MSCPXL32.dll|    ODBC32.dll|     olethk32.dll|
+|Expsrv.dll|      msdadc.dll|      ODBC32GT.dll|   regsvr32.exe|
+|hh.exe|          Msdaenum.dll|    odbcad32.exe|   rpcns4.dll|
+|Hhctrl.ocx|      Msdaer.dll|      Odbccp32.cpl|   Rpcrt4.dll|
+|Imagehlp.dll|    MSDAORA.dll|     Odbccp32.dll|   Scrrun.dll|
+|iprop.dll|       msdaosp.dll|     ODBCCR32.dll|   Secur32.dll|
+|Itircl.dll|      Msdaprst.dll|    Odbccu32.dll|   simpdata.tlb|
+|Itss.dll|        MSDAPS.dll|      odbcint.dll|    SQLOLEDB.dll|
+|Mfc40.dll|       MSDASC.dll|      odbcji32.dll|   Sqlsrv32.dll|
+|Mfc42.dll|       MSDASQL.dll n'|     Odbcjt32.dll|   Stdole2.tlb|
+|mfc42enu.dll|    msdasqlr.dll|    odbctrac.dll|   Stdole32.tlb|
+|msadce.dll|      msdatsrc.tlb|    oddbse32.dll|   Storage.dll|
+|msadcer.dll|     msdatt.dll|      odexl32.dll|    VBAJET32.dll|
 |msadcf.dll|      msdfmap.dll|     odfox32.dll|    vfpodbc.dll|
 |msadcfr.dll|     msdfmap.ini|     odpdx32.dll|                |
-|msadco.dll|      msjtes40.dll|    odtext32.dll|               |
+|Msadco.dll|      module Msjtes40.dll|    Odtext32.dll|               |
 
 ## <a name="supported-runtime-files-to-distribute-with-your-application"></a>Fichiers de prise en charge runtime à distribuer avec votre application
 
 | | | | |
 |---|---|---|---|
 |comct232.ocx |msbind.dll   |msdbrptr.dll  |msstdfmt.dll| 
-|comct332.ocx |mscdrun.dll  |msflxgrd.ocx  |msstkprp.dll| 
-|Comctl32.ocx |mschrt20.ocx |mshflxgd.ocx  |mswcrun.dll|  
-|comdlg32.ocx |mscomct2.ocx |mshtmpgr.dll  |mswinsck.ocx| 
-|dbadapt.dll  |mscomctl.ocx |msinet.ocx    |picclp32.ocx| 
-|dbgrid32.ocx |mscomm32.ocx |msmapi32.ocx  |richtx32.ocx| 
-|dblist32.ocx |msdatgrd.ocx |msmask32.ocx  |sysinfo.ocx|  
-|mci32.ocx    |msdatlst.ocx |msrdc20.ocx   |tabctl32.ocx| 
-|msadodc.ocx  |msdatrep.ocx |msrdo20.dll
+|Comct332.ocx |mscdrun.dll  |msflxgrd.ocx  |msstkprp.dll| 
+|Comctl32.ocx |mschrt20.ocx |mshflxgd.ocx  |Mswcrun.dll|  
+|Comdlg32.ocx |Mscomct2.ocx |mshtmpgr.dll  |Mswinsck.ocx| 
+|dbadapt.dll  |Mscomctl.ocx |msinet.ocx    |picclp32.ocx| 
+|dbgrid32.ocx |Mscomm32.ocx |Msmapi32.ocx  |richtx32.ocx| 
+|dblist32.ocx |Msdatgrd.ocx |MSMask32.ocx  |sysinfo.ocx|  
+|mci32.ocx    |msdatlst.ocx |msrdc20.ocx   |TABCTL32.ocx| 
+|msadodc.ocx  |msdatrep.ocx |Msrdo20.dll
 
 ## <a name="unsupported-but-supported-and-compatible-updates-or-upgrades-are-available"></a>Non pris en charge, mais les mises à jour ou les mises à jour prises en charge et compatibles sont disponibles
 
 | | | | |
 |---|---|---|---|
-|dao350.dll|   msexch35.dll| msjter35.dll| msrepl35.dll|
-|mdac_typ.exe| msexcl35.dll| msjtor35.dll| mstext35.dll|
-|mschart.ocx|  msjet35.dll|  msltus35.dll| msxbse35.dll|
-|msdaerr.dll|  msjint35.dll| mspdox35.dll| odbctl32.dll|
-|msdatl2.dll|  msjt4jlt.dll| msrd2x35.dll| oledb32x.dll|
+|Dao350.dll|   msexch35.dll| msjter35.dll| msrepl35.dll|
+|mdac_typ.exe| msexcl35.dll| msjtor35.dll| Mstext35.dll|
+|MSChart.ocx|  Msjet35.dll|  msltus35.dll| Msxbse35.dll|
+|msdaerr.dll|  msjint35.dll| Mspdox35.dll| odbctl32.dll|
+|msdatl2.dll|  msjt4jlt.dll| MSRD2X35.dll| oledb32x.dll|
 
 ## <a name="unsupported-runtime-files"></a>Fichiers d’exécution non pris en charge
 
 | | | | |
 |---|---|---|---|
-|anibtn32.ocx| spin32.ocx|   rpcltscm.dll|  rdocurs.dll|
-|graph32.ocx|  gauge32.ocx|  rpcmqcl.dll|   vbar332.dll|
-|keysta32.ocx| gswdll32.dll| rpcmqsvr.dll|  visdata.exe|
-|autmgr32.exe| ciscnfg.exe|  rpcss.exe|     vsdbflex.srg|
-|autprx32.dll| olecnv32.dll| dbmsshrn.dll|  threed32.ocx|
-|racmgr32.exe| rpcltc1.dll|  dbmssocn.dll|  MSWLess.ocx|
-|racreg32.dll| rpcltc5.dll|  windbver.exe|  tlbinf32.dll|
-|grid32.ocx|   rpcltccm.dll| msderun.dll|   triedit.dll|
-|msoutl32.ocx| rpclts5.dll|  odkob32.dll|
+|ANIBTN32.ocx| SPIN32.ocx|   Rpcltscm.dll|  RDOCURS.dll|
+|GRAPH32.ocx|  GAUGE32.ocx|  rpcmqcl.dll|   vbar332.dll|
+|KEYSTA32.ocx| gswdll32.dll| rpcmqsvr.dll|  Visdata.exe|
+|AUTMGR32.exe| ciscnfg.exe|  Rpcss.exe|     vsdbflex.srg|
+|AUTPRX32.dll| olecnv32.dll| établir|  THREED32.ocx|
+|RACMGR32.exe| rpcltc1.dll|  dbmssocn.dll|  MSWLess.ocx|
+|RACREG32.dll| rpcltc5.dll|  WindbVer.exe|  partir de tlbinf32.dll|
+|GRID32.ocx|   rpcltccm.dll| msderun.dll|   TriEdit.dll|
+|MSOUTL32.ocx| rpclts5.dll|  odkob32.dll|
 
 ## <a name="localization-support-binaries"></a>Fichiers binaires de prise en charge de localisation
 

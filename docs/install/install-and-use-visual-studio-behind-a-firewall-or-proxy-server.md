@@ -1,35 +1,35 @@
 ---
-title: "Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy | Microsoft Docs"
-description: 
-ms.custom: 
+title: Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy | Microsoft Docs
+description: ''
+ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs
-ms.assetid: 
+ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320b2492d73e0c15d806dac9aac3802bf957f83c
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 13f9f83c89e09e07d6024b779a89b9a6c4374112
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 Si vous ou votre organisation utilisez des mesures de sécurité tel qu’un pare-feu ou un serveur proxy, il existe des URL de domaine que vous pouvez vouloir mettre sur « liste verte » et des ports et protocoles que vous pouvez vouloir ouvrir afin d’obtenir une meilleure expérience lorsque vous installez et utilisez Visual Studio et les services Azure.
 
-* **[Installer Visual Studio](#install-visual-studio)** : ces tables incluent les URL de domaine à la liste verte, afin que vous ayez accès à tous les composants et charges de travail que vous souhaitez.    
+* **[Installer Visual Studio](#install-visual-studio)** : ces tables incluent les URL de domaine à la liste verte, afin que vous ayez accès à tous les composants et charges de travail que vous souhaitez.
 
 * **[Utiliser Visual Studio et les services Azure](#use-visual-studio-and-azure-services)** : Cette table inclut les URL de domaine à la liste verte et les ports et protocoles à ouvrir pour avoir accès à toutes les fonctionnalités et tous les services désirés.
 
@@ -108,11 +108,12 @@ Pour vous assurer que vous avez accès à tout ce dont vous avez besoin lorsque 
 | Azure Functions <br>Mise à jour de l’interface CLI <br>Valider | functionscdn.azureedge.net | https | 443 | Utilisé pour la vérification des versions mises à jour de l’interface CLI Azure Functions. Si désactivé, une copie mise en cache (ou la copie effectuée par le composant Azure Functions) de l’interface CLI sera utilisée à la place |
 | Cordova | npmjs.org<br>gradle.org | http/s | 80/443 | Le protocole HTTP est utilisé pour les téléchargements de Gradle lors de la génération ; HTTPS est utilisé pour inclure les plug-ins Cordova aux projets|
 | Cloud Explorer | 1. &#60;clusterendpoint&#62; <br>Service Fabric <br>2. &#60;point de terminaison de gestion&#62;<br>Exp Cloud général <br>3. &#60;point de terminaison de graphique&#62;<br>Exp Cloud général<br>4. &#60;point de terminaison du compte de stockage&#62;<br>Nœuds de stockage <br>5. &#60;URL du portail Azure&#62;<br>Exp Cloud général <br>6. &#60;points de terminaison du coffre de clés&#62; <br>Nœuds de machine virtuelle Azure Resource Manager<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Débogage distant et traces ETW Service Fabric |   <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7 : tcp| 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. dynamique   | 1. Exemple : test12.eastus.cloudapp.com<br>2. Récupère les abonnements et récupère/gère les ressources Azure<br>3. Récupère les abonnements Azure Stack<br>4. Gère les ressources de stockage (exemple : mystorageaccount.blob.core.windows.net)<br>5. Option de menu contextuel « Ouvrir dans le portail » (ouvre une ressource dans le portail Azure)<br>6. Crée et utilise des coffres de clé pour le débogage de la machine virtuelle (exemple : myvault.vault.azure.net) <br><br>7. Alloue dynamiquement un bloc de ports en fonction du nombre de nœuds dans le cluster et des ports disponibles. <br><br>Un bloc de ports tentera d’obtenir trois fois le nombre de nœuds avec un minimum de 10 ports.<br><br>Pour les traces de diffusion en continu, une tentative est effectuée pour obtenir le bloc de ports à partir de 810. Si un de ces blocs de ports est déjà utilisé, une tentative est alors effectuée pour obtenir le bloc suivant et ainsi de suite. (Si l’équilibreur de charge est vide, les ports à partir de 810 sont très probablement utilisés) <br><br>De même pour le débogage, quatre jeux de ces blocs de ports sont réservés : <br>- connectorPort : 30398, <br>- forwarderPort : 31398, <br>- forwarderPortx86 : 31399,<br>- fileUploadPort : 32398<br>|
-| Services cloud | 1. Protocole RDP (Remote Desktop Protocol)<br><br>2. core.windows.net <br><br>3.  management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;service de cloud utilisateur &#62;.cloudapp.net <br> &#60;Machine virtuelle de l’utilisateur&#62;.&#60;région&#62;.azure.com | 1. rdp <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. tcp | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1.  Bureau à distance vers la machine virtuelle des services Cloud <br><br> 2.  Composant de compte de stockage de la configuration des diagnostics privés <br><br> 3.  portail Azure <br><br> 4. Explorateur de serveurs - stockage Azure &#42;  est le compte de stockage nommé par l’utilisateur  <br><br> 5.  Liens permettant d’ouvrir le portail &#47; Télécharger le certificat d’abonnement &#47; Publier le fichier de paramètres <br><br>6. a)  Port local du connecteur pour le débogage à distance pour le service de cloud et la machine virtuelle<br> 6. b)  Port public du connecteur pour le débogage à distance pour le service de cloud et la machine virtuelle <br> 6. c)  Port local redirecteur pour le débogage à distance pour le service de cloud et la machine virtuelle <br> 6. d) Port public redirecteur pour le débogage à distance pour le service de cloud et la machine virtuelle  <br> 6. e) Port local chargeur de fichiers pour le débogage à distance pour le service de cloud et la machine virtuelle <br> 6. f) Port public chargeur de fichiers pour le débogage à distance pour le service de cloud et la machine virtuelle |
+| Services cloud | 1. Protocole RDP (Remote Desktop Protocol)<br><br>2. core.windows.net <br><br>3.  management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;service de cloud utilisateur &#62;.cloudapp.net <br> &#60;Machine virtuelle de l’utilisateur&#62;.&#60;région&#62;.azure.com | 1. rdp <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. tcp | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1.  Bureau à distance vers la machine virtuelle des services Cloud <br><br> 2.  Composant de compte de stockage de la configuration des diagnostics privés <br><br> 3.  portail Azure <br><br> 4. Explorateur de serveurs - stockage Azure & #42 ;  est le compte de stockage nommé par l’utilisateur  <br><br> 5.  Liens permettant d’ouvrir le portail & #47 ; Télécharger le certificat d’abonnement & #47 ; Publier le fichier de paramètres <br><br>6. a)  Port local du connecteur pour le débogage à distance pour le service de cloud et la machine virtuelle<br> 6. b)  Port public du connecteur pour le débogage à distance pour le service de cloud et la machine virtuelle <br> 6. c)  Port local redirecteur pour le débogage à distance pour le service de cloud et la machine virtuelle <br> 6. d) Port public redirecteur pour le débogage à distance pour le service de cloud et la machine virtuelle  <br> 6. e) Port local chargeur de fichiers pour le débogage à distance pour le service de cloud et la machine virtuelle <br> 6. f) Port public chargeur de fichiers pour le débogage à distance pour le service de cloud et la machine virtuelle |
 | Service Fabric | 1. <br>ocs.Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | https | 443 | 1. Documentation <br><br> 2. Créer la fonctionnalité de cluster <br><br>3. Le &#42; est le nom du coffre de clés Azure (Exemple :- test11220180112110108.vault.azure.net  <br><br>  4. Le &#42 ; est dynamique (exemple : vsspsextprodch1su1.vsspsext.visualstudio.com) |
 | Instantané <br>Débogueur | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dépendant de la version Visual Studio) | 1. Fichier .json de requête sur la taille de la référence (SKU) du service d’applications <br>2. Différents appels du Gestionnaire de ressources Azure <br>3. Appel de préparation de site via  <br>4. Point de terminaison Kudu du service d’application ciblé du client <br>5. Version de l’Extension de site de requête publiée dans nuget.org <br>6. Canal de débogage à distance |
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |https|443 |Permet d’afficher, soumettre, exécuter et gérer des travaux ASA <br><br> Permet de parcourir des clusters HDI et soumettre, diagnostiquer et déboguer des travaux HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Permet de compiler, soumettre, afficher, diagnostiquer et déboguer des travaux ; utilisé pour parcourir des fichiers ADLS ; permet de charger et télécharger des fichiers |
+|Service d’empaquetage | [compte].visualstudio.com <br/> [compte].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | *.npmjs.org, *.nuget.org, et *.nodejs.org ne sont nécessaires que dans certains scénarios de tâches de build (par exemple, le programme d’installation d’outils de NuGet ou de Node), ou pour utiliser des flux ascendants publics.  Les trois autres domaines sont requis pour les fonctionnalités de base du service d’empaquetage. |
 |||||||
 
 

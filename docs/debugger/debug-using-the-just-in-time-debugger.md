@@ -1,26 +1,24 @@
 ---
-title: "Déboguer à l’aide du débogueur juste à temps | Documents Microsoft"
-ms.custom: 
+title: Déboguer à l’aide du débogueur juste à temps | Documents Microsoft
+ms.custom: ''
 ms.date: 07/06/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
-caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4bcdd28247b767321d3d5fed9681082538ba2b12
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1bfaed6a788d61f239fb8fb69095549fe5c20d6d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Déboguer à l’aide du débogueur juste à temps dans Visual Studio
 Le débogage juste-à-temps lance Visual Studio automatiquement lorsqu’une exception ou un incident se produit dans une application qui s’exécute en dehors de Visual Studio. Cela vous permet de tester votre application lorsque Visual Studio n’est pas en cours d’exécution et commencez le débogage avec Visual Studio lorsqu’un problème se produit.
@@ -30,7 +28,7 @@ Fonctionne avec le débogage juste-à-temps pour les applications de bureau Wind
 > [!TIP] 
 > Si vous souhaitez simplement savoir comment répondre aux juste-à-temps boîte de dialogue du débogueur, consultez [cette rubrique](../debugger/just-in-time-debugging-in-visual-studio.md).
 
-##  <a name="BKMK_Enabling"></a>Activer ou désactiver juste-à-temps pour le débogage  
+##  <a name="BKMK_Enabling"></a> Activer ou désactiver juste-à-temps pour le débogage  
 Vous pouvez activer ou désactiver le débogage à partir de Visual Studio juste-à-temps **Outils > Options** boîte de dialogue.
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Pour activer ou désactiver le débogage juste-à-temps  
@@ -55,7 +53,7 @@ Le débogage juste-à-temps peut toujours être activé même si Visual Studio n
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Pour désactiver le débogage juste-à-temps en modifiant le Registre  
   
-1.  Sur le **Démarrer** menu, recherchez et exécutez`regedit.exe`  
+1.  Sur le **Démarrer** menu, recherchez et exécutez `regedit.exe`  
   
 2.  Dans le **Éditeur du Registre** fenêtre, recherchez et supprimez les entrées de Registre suivantes :  
   

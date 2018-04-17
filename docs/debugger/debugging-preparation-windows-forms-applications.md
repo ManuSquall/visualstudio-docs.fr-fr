@@ -1,12 +1,10 @@
 ---
-title: "Préparation du débogage : Applications Windows Forms | Documents Microsoft"
-ms.custom: 
+title: 'Préparation du débogage : Applications Windows Forms | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - debugging [C#], Windows applications
 - debugging [Visual Basic], Windows applications
 ms.assetid: 7092ee7f-8378-4def-aef8-1695bd97cf14
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 01e9b9ced1db8f41c8ad1fb6386eec0d6080dd99
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 512ed8e8070d1b0c2e714dd440db56e861c50bee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Préparation du débogage : applications Windows Forms
 Le modèle de projet Windows Forms crée une application Windows Forms. Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est assez simple. Pour plus d’informations, consultez [création d’un projet d’Application Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  

@@ -1,12 +1,10 @@
 ---
 title: Prise en charge des outils de consultation du symbole | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - symbols, symbol-browsing tools
 - browsers, symbol browsers
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 78a4e910dbd2c6063f4bdf7b0dff3f27f79b218e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 08185f64310da610253dc35e69323b17ab0177fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Prise en charge des outils de consultation du symbole
 **Explorateur d’objets**, **affichage de classes**, **Explorateur d’appels** et **résultats** outils fournissent des fonctionnalités dans Visual Studio de navigation de symbole. Ces outils affichent des vues de l’arborescence hiérarchique des symboles et les relations entre les symboles dans l’arborescence de. Les symboles peuvent représenter des espaces de noms, des objets, des classes, des membres de classe et des autres éléments de langage contenus dans les différents composants. Les composants incluent les projets Visual Studio, externes [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] composants et bibliothèques de types (.tlb). Pour plus d’informations, consultez [Affichage de la structure du code](../../ide/viewing-the-structure-of-code.md).  

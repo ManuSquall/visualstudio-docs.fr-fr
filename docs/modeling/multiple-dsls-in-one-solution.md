@@ -1,21 +1,19 @@
 ---
 title: Plusieurs DSL en une seule Solution | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e7b1ef7fc26cb0e46ecaf1853d6c9490016e68a5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f7614189f73880bcf07f418e3bd72400f460f721
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Utilisation de plusieurs langages spécifiques à un domaine dans une solution
 Vous pouvez empaqueter plusieurs DSL comme partie intégrante d'une seule solution de telle sorte qu'ils soient installés ensemble.  
@@ -50,11 +48,11 @@ Vous pouvez empaqueter plusieurs DSL comme partie intégrante d'une seule soluti
   
     2.  Pour chaque DSL, choisissez **ajouter du contenu** et ajouter :  
   
-        -   `Dsl*`projet comme un **composant MEF**  
+        -   `Dsl*` projet comme un **composant MEF**  
   
-        -   `DslPackage*`projet comme un **composant MEF**  
+        -   `DslPackage*` projet comme un **composant MEF**  
   
-        -   `DslPackage*`projet comme un **Package VS**  
+        -   `DslPackage*` projet comme un **Package VS**  
   
 3.  Générez la solution.  
   

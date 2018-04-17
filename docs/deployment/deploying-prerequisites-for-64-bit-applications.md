@@ -1,12 +1,10 @@
 ---
-title: "Déploiement des composants requis pour les Applications 64 bits | Documents Microsoft"
-ms.custom: 
+title: Déploiement des composants requis pour les Applications 64 bits | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - 64-bit programming [Visual Studio]
 - 64-bit applications [Visual Studio]
 ms.assetid: 87399e20-5510-41e4-b5b7-4a87c5773f21
-caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 6e0134b0a0a6151b6ae6544f1ad8272a6d4cac47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5efadda5db025e6229fbebd252ff34bf3fa1fe17
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>Composants requis pour le déploiement d'applications 64 bits
 Le déploiement ClickOnce prend en charge l'installation des applications sur les plateformes 64 bits. Les plateformes cibles sont **x86** pour les plateformes 32 bits, **x64** pour ordinateurs prenant en charge les jeux d’instructions AMD64 et EM64T, et **Itanium** pour le processeur Itanium 64 bits.  

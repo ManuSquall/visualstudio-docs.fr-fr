@@ -1,21 +1,19 @@
 ---
-title: "Prise en main de langages spécifiques à un domaine | Documents Microsoft"
-ms.custom: 
+title: Prise en main de langages spécifiques à un domaine | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 68b750735c8f5d5f6bd7f1497565692c8836914c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 791686b948c5a0541cbe8f8cb420f38ef885c9d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Mise en route des langages spécifiques à un domaine
 Cette rubrique explique les concepts de base dans la définition et à l’aide d’un langage spécifique à un domaine (DSL) créé avec le Kit de développement de modélisation pour Visual Studio.
@@ -89,7 +87,7 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
   
  L'interface utilisateur ressemble maintenant à l'image suivante.  
   
- ![dsl designer](../modeling/media/dsl_designer.png "dsl_designer")  
+ ![concepteur DSL](../modeling/media/dsl_designer.png "dsl_designer")  
   
  Cette solution définit un langage spécifique à un domaine. Pour plus d’informations, consultez [vue d’ensemble de l’Interface utilisateur des outils langage spécifique à un domaine](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
   
@@ -102,7 +100,7 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
   
 -   **Projet de DslPackage** ce projet contient du code qui permet aux instances de la DSL pour pouvoir ouvrir et modifier dans Visual Studio.  
   
-##  <a name="Debugging"></a>En cours d’exécution du DSL  
+##  <a name="Debugging"></a> En cours d’exécution du DSL  
  Vous pouvez exécuter la solution DSL dès que vous l’avez créé. Une version ultérieure, vous pouvez modifier la définition DSL progressivement, exécution de la solution après chaque modification.  
   
 #### <a name="to-experiment-with-the-dsl"></a>Pour faire des essais avec la DSL  
@@ -391,7 +389,7 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
   
  Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
   
-##  <a name="Reset"></a>Suppression des anciens DSL expérimentale  
+##  <a name="Reset"></a> Suppression des anciens DSL expérimentale  
  Si vous avez créé DSL expérimentale que vous ne souhaitez plus, vous pouvez les supprimer à partir de votre ordinateur en réinitialisant l’instance expérimentale de Visual Studio.  
   
  Cela supprimera de votre ordinateur toutes les DSL expérimentale et autres extensions de Visual Studio expérimentales. Il s’agit d’extensions qui ont été exécutées en mode débogage.  

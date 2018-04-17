@@ -1,13 +1,13 @@
 ---
-title: "Commentaire d’instructions (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: Commentaire d’instructions (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Comment_JavaScript
@@ -19,15 +19,15 @@ helpviewer_keywords:
 - comments, ignoring
 - comment statements
 ms.assetid: b604824f-ac17-49d3-bcdb-2a893ab5fff8
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c270379725550e116928bbecd69e6be51c34992f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="comment-statements-javascript"></a>Comment, instructions (JavaScript)
 Empêche la prise en compte des commentaires par l'analyseur [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
@@ -55,7 +55,7 @@ condStatement
 @*/  
 ```  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  L'argument `comment` représente le texte des commentaires que vous souhaitez inclure dans votre script. L'argument `condStatement` est utilisé en cas d'activation de la compilation conditionnelle. Lors de l'utilisation de commentaires sur une seule ligne, les caractères « // » et « @ » peuvent ne pas être séparés par un espace.  
   
  Utilisez les commentaires pour éviter la lecture de certaines parties d'un script par l'analyseur [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Utilisez les commentaires pour inclure des notes explicatives dans un programme.  
@@ -79,7 +79,7 @@ function myfunction(arg1, arg2){
 ```  
   
 ## <a name="example"></a>Exemple  
- L'exemple suivant montre comment utiliser la compilation conditionnelle. Cet exemple utilise des délimiteurs de commentaires spéciaux qui sont utilisés uniquement si la compilation conditionnelle est activée par l'instruction `@cc_on`. Les moteurs de script qui ne prennent pas en charge la compilation conditionnelle traitent uniquement le message relatif à cette non prise en charge.  
+ L'exemple suivant montre comment utiliser la compilation conditionnelle. Cet exemple utilise des délimiteurs de commentaires spéciaux qui sont utilisés uniquement si la compilation conditionnelle est activée par l'instruction `@cc_on`. Les moteurs de script qui ne prennent pas en charge la compilation conditionnelle voient uniquement le message relatif à cette absence de prise en charge.  
   
 ```JavaScript  
 /*@cc_on @*/  

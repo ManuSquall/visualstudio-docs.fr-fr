@@ -1,12 +1,10 @@
 ---
-title: "Programmes d’assistance du Kit de développement logiciel pour le débogage | Documents Microsoft"
-ms.custom: 
+title: Programmes d’assistance du Kit de développement logiciel pour le débogage | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e80344b8cec1bc013e044be39638879b049c8d0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sdk-helpers-for-debugging"></a>Programmes d’assistance du Kit de développement logiciel pour le débogage
 Ces fonctions et les déclarations sont des fonctions d’assistance globales pour l’implémentation des moteurs de débogage, les évaluateurs d’expression et les fournisseurs de symbole en C++.  
@@ -276,7 +274,7 @@ HRESULT EnumMetricSections(
 >  Tous les GUID sont stockés au format `{GUID}`. Par exemple, `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Moteurs de débogage  
- Voici l’organisation des métriques de moteurs de débogage dans le Registre. `Engine`est le nom de type de mesure pour un moteur de débogage et correspond à *[type de mesure]* dans la sous-arborescence de Registre ci-dessus.  
+ Voici l’organisation des métriques de moteurs de débogage dans le Registre. `Engine` est le nom de type de mesure pour un moteur de débogage et correspond à *[type de mesure]* dans la sous-arborescence de Registre ci-dessus.  
   
  `Engine`\  
   
@@ -303,7 +301,7 @@ HRESULT EnumMetricSections(
 |*[guid du fournisseur de port]*|Le GUID du fournisseur de port, le cas échéant. Nombre de moteurs de débogage utilisent le fournisseur de port par défaut et par conséquent, ne spécifient pas leur propre fournisseur. Dans ce cas, la sous-clé `PortSupplier` apparaîtra.|  
   
 ### <a name="port-suppliers"></a>Fournisseurs de port  
- Voici l’organisation des métriques de fournisseur de port dans le Registre. `PortSupplier`est le nom de type de mesure pour un fournisseur de port et correspond à *[type de mesure]*.  
+ Voici l’organisation des métriques de fournisseur de port dans le Registre. `PortSupplier` est le nom de type de mesure pour un fournisseur de port et correspond à *[type de mesure]*.  
   
  `PortSupplier`\  
   
@@ -321,7 +319,7 @@ HRESULT EnumMetricSections(
 |*[classe guid]*|Le GUID de la classe qui implémente ce fournisseur de port|  
   
 ### <a name="symbol-providers"></a>Fournisseurs de symbole  
- Voici l’organisation des métriques de fournisseur de symbole dans le Registre. `SymbolProvider`est le nom de type de mesure pour le fournisseur de symbole et correspond à *[type de mesure]*.  
+ Voici l’organisation des métriques de fournisseur de symbole dans le Registre. `SymbolProvider` est le nom de type de mesure pour le fournisseur de symbole et correspond à *[type de mesure]*.  
   
  `SymbolProvider`\  
   
@@ -349,7 +347,7 @@ HRESULT EnumMetricSections(
 |*[classe guid]*|Le GUID de la classe qui implémente ce fournisseur de symbole|  
   
 ### <a name="expression-evaluators"></a>Évaluateurs d’expression  
- Voici l’organisation des métriques d’évaluateur d’expression dans le Registre. `ExpressionEvaluator`est le nom de type de mesure de l’évaluateur d’expression et correspond à *[type de mesure]*.  
+ Voici l’organisation des métriques d’évaluateur d’expression dans le Registre. `ExpressionEvaluator` est le nom de type de mesure de l’évaluateur d’expression et correspond à *[type de mesure]*.  
   
 > [!NOTE]
 >  Le type de mesure pour `ExpressionEvaluator` n’est pas défini dans dbgmetric.h, il est supposé que toutes les modifications de métriques pour les évaluateurs d’expression passera via les fonctions de métrique évaluateur expression appropriée (la disposition de la `ExpressionEvaluator` sous-clé est quelque peu compliqué, les détails sont masqués à l’intérieur de dbgmetric.lib).  
@@ -380,7 +378,7 @@ HRESULT EnumMetricSections(
 |*[guid du moteur de débogage]*|Le GUID de cette évaluateur d’expression fonctionne avec un moteur de débogage|  
   
 ### <a name="expression-evaluator-extensions"></a>Extensions d’évaluateur d’expression  
- Voici l’organisation des métriques expression évaluateur extension dans le Registre. `EEExtensions`est le nom de type de mesure pour l’expression extensions d’évaluateur et correspond à *[type de mesure]*.  
+ Voici l’organisation des métriques expression évaluateur extension dans le Registre. `EEExtensions` est le nom de type de mesure pour l’expression extensions d’évaluateur et correspond à *[type de mesure]*.  
   
  `EEExtensions`\  
   
@@ -395,7 +393,7 @@ HRESULT EnumMetricSections(
 |*[guid de l’extension]*|Le GUID d’une extension d’évaluateur d’expression|  
   
 ### <a name="exceptions"></a>Exceptions  
- Voici l’organisation des métriques d’exceptions dans le Registre. `Exception`est le nom de type de mesure pour les exceptions et correspond à *[type de mesure]*.  
+ Voici l’organisation des métriques d’exceptions dans le Registre. `Exception` est le nom de type de mesure pour les exceptions et correspond à *[type de mesure]*.  
   
  `Exception`\  
   
@@ -421,7 +419,7 @@ HRESULT EnumMetricSections(
 |*[types d’exceptions]*|Un titre général pour la sous-clé de la classe d’exceptions qui peuvent être gérés. Les noms par défaut sont **des Exceptions C++**, **les Exceptions Win32**, **Exceptions Common Language Runtime**, et **contrôles d’exécution natifs**. Ces noms sont également utilisés pour identifier une classe d’exception à l’utilisateur particulière.|  
 |*[exception]*|Un nom pour une exception : par exemple, **_com_error** ou **contrôle d’interruption**. Ces noms sont également utilisés pour identifier une exception particulière à l’utilisateur.|  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  Ces fichiers se trouvent dans le [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] répertoire d’installation de kit de développement logiciel (par défaut, *[lecteur]*\Program Files\Microsoft Visual Studio 2010 SDK\\).  
   
  En-tête : includes\dbgmetric.h  

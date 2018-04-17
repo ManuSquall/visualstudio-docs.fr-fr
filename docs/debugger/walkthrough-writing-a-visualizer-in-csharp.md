@@ -1,30 +1,26 @@
 ---
-title: "Procédure pas à pas : Écriture d’un visualiseur en c# | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Écriture d’un visualiseur en c# | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
 ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e161b3c914d0a87a720f1217b52a571b85f5ff9
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+ms.openlocfilehash: 7520072d719d7941acff57b871b8b1d1c69d0d7d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procédure pas à pas : écriture d'un visualiseur en C# #
 Cette procédure pas à pas montre comment écrire un visualiseur simple à l’aide de c#. Le visualiseur que vous allez créer dans cette procédure pas à pas affiche le contenu d’une chaîne à l’aide d’une boîte de message Windows forms. Ce visualiseur de chaîne simple n’est pas particulièrement utile en soi, mais il illustre les étapes de base que vous devez suivre pour créer des visualiseurs plus utiles pour d’autres types de données.  
@@ -59,7 +55,7 @@ Effectuez les tâches suivantes pour créer un visualiseur.
 2.  Modifiez le nom Class1.cs par un nom significatif, tel que DebuggerSide.cs.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]modifie automatiquement la déclaration de classe par DebuggerSide.cs, le nouveau nom de fichier.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modifie automatiquement la déclaration de classe par DebuggerSide.cs, le nouveau nom de fichier.  
   
 3.  Dans **l’Explorateur de solutions**, avec le bouton droit **références** et choisissez **ajouter une référence** dans le menu contextuel.  
   
@@ -89,7 +85,7 @@ Effectuez les tâches suivantes pour créer un visualiseur.
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
- `DialogDebuggerVisualizer`a une méthode abstraite (`Show`) que vous devez substituer.  
+ `DialogDebuggerVisualizer` a une méthode abstraite (`Show`) que vous devez substituer.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Pour substituer la méthode DialogDebuggerVisualizer.Show  
   

@@ -1,21 +1,19 @@
 ---
-title: "Mise à jour des formes et connecteurs pour refléter le modèle | Documents Microsoft"
-ms.custom: 
+title: Mise à jour des formes et connecteurs pour refléter le modèle | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6d50d0258a44553451deed68a8ccf17c60d88965
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4c1db67cfa07afeb5427e540163ae37312a2c625
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Mise à jour des formes et des connecteurs pour refléter le modèle
 Dans un langage spécifique à un domaine dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez apporter à l’apparence d’une forme de refléter l’état du modèle sous-jacent.  
@@ -85,7 +83,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```  
   
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Utilisez OnChildConfigured pour initialiser les propriétés d’une forme  
- Pour définir les propriétés d’une forme lors de sa création, le remplacement `OnChildConfigured()` dans une définition partielle de la classe de votre diagramme. La classe de schéma est spécifiée dans votre définition DSL, et le code généré est dans **Dsl\Generated Code\Diagram.cs**. Exemple :  
+ Pour définir les propriétés d’une forme lors de sa création, le remplacement `OnChildConfigured()` dans une définition partielle de la classe de votre diagramme. La classe de schéma est spécifiée dans votre définition DSL, et le code généré est dans **Dsl\Generated Code\Diagram.cs**. Par exemple :  
   
 ```csharp  
 partial class MyLanguageDiagram  
@@ -110,7 +108,7 @@ partial class MyLanguageDiagram
   
  Cette méthode peut être utilisée à la fois pour les propriétés du domaine et non-magasin de fonctionnalités, telles que la taille de la forme.  
   
-##  <a name="OnAssociatedProperty"></a>Permet de mettre à jour d’autres fonctionnalités de la forme AssociateValueWith()  
+##  <a name="OnAssociatedProperty"></a> Permet de mettre à jour d’autres fonctionnalités de la forme AssociateValueWith()  
  Pour certaines fonctionnalités d’une forme, telles que si elle a une ombre ou le style de flèche d’un connecteur, il n’existe aucune méthode intégrée d’exposer la fonctionnalité comme une propriété de domaine.  Modifications apportées à ces fonctionnalités ne sont pas contrôlés par le système de transactions. Par conséquent, il n’est pas approprié de les mettre à jour à l’aide de règles, étant donné que les règles ne sont pas appelés lorsque l’utilisateur exécute la commande Annuler.  
   
  Au lieu de cela, vous pouvez mettre à jour des fonctionnalités à l’aide de <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. Dans l’exemple suivant, le style de flèche d’un connecteur est contrôlé par une valeur d’une propriété de domaine dans la relation le connecteur affiche :  
@@ -154,6 +152,6 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()`doit être appelée une fois pour chaque propriété de domaine que vous souhaitez inscrire. Une fois qu’il a été appelée, toutes les modifications à la propriété spécifiée appellera `OnAssociatedPropertyChanged()` dans toutes les formes qui présentent l’élément de modèle de la propriété.  
+ `AssociateValueWith()` doit être appelée une fois pour chaque propriété de domaine que vous souhaitez inscrire. Une fois qu’il a été appelée, toutes les modifications à la propriété spécifiée appellera `OnAssociatedPropertyChanged()` dans toutes les formes qui présentent l’élément de modèle de la propriété.  
   
  Il n’est pas nécessaire d’appeler `AssociateValueWith()` pour chaque instance. Bien que InitializeResources est une méthode d’instance, elle est appelée qu’une seule fois pour chaque classe de forme.

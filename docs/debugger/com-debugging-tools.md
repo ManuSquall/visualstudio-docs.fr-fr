@@ -1,13 +1,10 @@
 ---
-title: "Outils de débogage de COM | Documents Microsoft"
-ms.custom: 
+title: Outils de débogage de COM | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - ActiveX controls, debugging
 - debugging [C++], COM
 ms.assetid: 4296ad30-6952-46cb-b002-6b34eee1993a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6ddf648f28139c4805c6d417e3f353d494c48bb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 73d6a3d8b5635a041a089eacc8e4abced71d020c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="com-debugging-tools"></a>Outils de débogage COM
 Cette rubrique répertorie les outils qui peuvent vous aider à tester et vérifier les programmes COM.  

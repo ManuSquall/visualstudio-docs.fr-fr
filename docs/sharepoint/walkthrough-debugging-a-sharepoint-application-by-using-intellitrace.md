@@ -1,13 +1,10 @@
 ---
-title: "Procédure pas à pas : Débogage d’une Application SharePoint à l’aide d’IntelliTrace | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Débogage d’une Application SharePoint à l’aide d’IntelliTrace | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - IntelliTrace
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9f3e5ae5997f7ae4f7c7f94bc61dc526404f144
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Procédure pas à pas : débogage d'une application SharePoint avec IntelliTrace
 
@@ -58,7 +55,7 @@ Pour exécuter cette procédure pas à pas, vous devez disposer des composants s
 
 - Visual Studio Enterprise.
 
-## <a name="BKMK_CreateReceiver">Créer un récepteur de fonctionnalité</a>
+## <a name="BKMK_CreateReceiver"></a> Créer un récepteur de fonctionnalité
 
 Tout d’abord, vous créez un projet SharePoint vide qui possède un récepteur de fonctionnalité.
 
@@ -76,7 +73,7 @@ Tout d’abord, vous créez un projet SharePoint vide qui possède un récepteur
 
 4. Ouvrez le menu contextuel pour Feature1.feature, puis choisissez **ajouter un récepteur d’événements** pour ajouter un module de code à la fonctionnalité.
 
-## <a name="BKMK_AddCode">Ajoutez le Code au récepteur de fonctionnalité</a>
+## <a name="BKMK_AddCode"></a> Ajoutez le Code au récepteur de fonctionnalité
 
 Ensuite, ajoutez le code à deux méthodes dans le récepteur de fonctionnalité : `FeatureActivated` et `FeatureDeactivating`. Ces méthodes déclenchent chaque fois qu’une fonctionnalité est activée ou désactivée dans SharePoint, respectivement.
 
@@ -250,7 +247,7 @@ Ensuite, ajoutez le code à deux méthodes dans le récepteur de fonctionnalité
     }
     ```
 
-## <a name="BKMK_Test1">Le projet de test</a>
+## <a name="BKMK_Test1"></a> Le projet de test
 
 Maintenant que le code est ajouté au récepteur de fonctionnalité et le collecteur de données est en cours d’exécution, déployer et exécuter la solution SharePoint pour vérifier si elle fonctionne correctement.
 
@@ -277,7 +274,7 @@ Maintenant que le code est ajouté au récepteur de fonctionnalité et le collec
 
      Le Gestionnaire d’événements FeatureDeactivating() génère une erreur.
 
-## <a name="BKMK_CollectDiagnosticData">Collecter des données IntelliTrace à l’aide de Microsoft Monitoring Agent</a>
+## <a name="BKMK_CollectDiagnosticData"></a> Collecter des données IntelliTrace à l’aide de Microsoft Monitoring Agent
 
 Si vous installez Microsoft Monitoring Agent sur le système qui exécute SharePoint, vous pouvez déboguer des solutions SharePoint à l’aide de données qui sont plus précies que les informations génériques qui retourne par IntelliTrace. L’agent fonctionne en dehors de Visual Studio à l’aide des applets de commande PowerShell pour capturer les informations de débogage lors de l’exécution de votre solution SharePoint.
 
@@ -302,7 +299,7 @@ Si vous installez Microsoft Monitoring Agent sur le système qui exécute ShareP
 
      **Stop-WebApplicationMonitoring**  *"\<SharePointSite>\\<SharePointAppName\>"*
 
-## <a name="BKMK_DebugSolution">Déboguer et corriger la Solution SharePoint</a>
+## <a name="BKMK_DebugSolution"></a> Déboguer et corriger la Solution SharePoint
 
 Maintenant, vous pouvez afficher le fichier journal IntelliTrace dans Visual Studio pour rechercher et corriger l’erreur dans la solution SharePoint.
 

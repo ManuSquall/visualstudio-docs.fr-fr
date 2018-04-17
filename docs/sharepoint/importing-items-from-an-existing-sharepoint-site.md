@@ -1,12 +1,10 @@
 ---
-title: "Importation d’éléments d’un Site SharePoint existant | Documents Microsoft"
-ms.custom: 
+title: Importation d’éléments d’un Site SharePoint existant | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a542a74bf162c4fc2bb2fe2c725b02742d568547
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b5a4f282923b073a87307d88f0c3e3b4365d1057
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="importing-items-from-an-existing-sharepoint-site"></a>Importation d'éléments d'un site SharePoint existant
   Le modèle de projet Importer le package de solution SharePoint vous permet de réutiliser des éléments tels que des types de contenu et des champs à partir de sites SharePoint existants dans une nouvelle solution SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Vous pouvez exécuter la plupart des solutions importées sans aucune modification, mais il existe certaines restrictions et complications à prendre en compte, en particulier si vous modifiez des éléments après les avoir importés.  
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="item-name-character-limit"></a>Limite quant au nombre de caractères du nom d’article  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a une limite de 260 caractères pour le nom de projet et les noms des éléments de projet, chemin d’accès compris. Pendant l’importation d’une solution, si un nom d’élément dépasse cette limite, l’erreur suivante s’affiche :  
   
- **Le chemin d’accès spécifié, le nom de fichier ou les deux sont trop longs. Le nom de fichier qualifié complet doit être inférieur à 260 caractères, et le nom du répertoire doit être inférieur à 248 caractères.**  
+ **Le chemin d’accès spécifié, le nom de fichier ou les deux sont trop longs. Le nom complet du fichier doit être inférieur à 260 caractères, et le nom du répertoire à 248 caractères.**  
   
  Quand cette erreur se produit, l’élément n’est pas créé. Ce problème se produit le plus souvent avec les modules importés. Pour l’éviter, procédez comme suit :  
   

@@ -1,13 +1,10 @@
 ---
-title: "En mode mixte débogage pour x64 processus est uniquement pris en charge à l’aide de Microsoft.NET Framework 4 ou supérieur | Documents Microsoft"
-ms.custom: 
+title: En mode mixte débogage pour x64 processus est uniquement pris en charge à l’aide de Microsoft.NET Framework 4 ou supérieur | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_x64
 dev_langs:
@@ -16,17 +13,16 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: b7495655-54c0-4315-8422-43bf63b8c22e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d5c52192c30ccc3b34bfa609c3f6a7ffb99566
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 224e4de9e3a00882cb065037005b7644343262d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Le débogage en mode mixte des processus x64 est pris en charge uniquement lorsque vous utilisez Microsoft .NET Framework 4 ou version ultérieure
 Les versions du .NET Framework antérieures à la version 4 ne prennent pas en charge le débogage en mode mixte des processus x64. Cela signifie que vous ne pouvez pas passer du code managé au code natif, ou inversement, lorsque vous procédez au débogage.  

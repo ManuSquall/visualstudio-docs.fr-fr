@@ -1,26 +1,24 @@
 ---
-title: "Configuration pour la génération de projet | Documents Microsoft"
-ms.custom: 
+title: Configuration pour la génération de projet | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2d8f37068d197d133ba8798703c8f82093261aca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4d78ac1cabc356db162639d3eb19d0bff71e295e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-configuration-for-building"></a>Configuration de projet pour la génération
 La liste des configurations de solution pour une solution donnée est gérée par la boîte de dialogue des Configurations de Solution.  
@@ -51,9 +49,9 @@ Dépendances du projet
 > [!NOTE]
 >  Dans la liste des projets qui ont leurs cases à cocher activées mais grisées ont été ajoutés par l’environnement en raison des dépendances explicites, spécifié par le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> des interfaces et ne peut pas être modifié. Par exemple, ajoutez une référence de projet dans un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projet vers un autre projet ajoute automatiquement une dépendance de génération qui ne peut être supprimée en supprimant la référence. Les projets dont les cases à cocher sont désactivées et apparaissent grisés ne peut pas être sélectionnés, car cela créerait une boucle de dépendance (par exemple, Projet1 serait dépend Projet2 et Projet2 serait dépend Projet1), ce qui serait bloquer la génération.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]processus de génération incluent la compilation classique et les opérations de liaison qui sont appelées avec une seule commande Build. Deux autres processus de génération peuvent également être pris en charge : une opération de nettoyage pour supprimer tous les éléments de sortie à une version antérieure et une vérification à jour pour déterminer si un élément de sortie dans une configuration a changé.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] processus de génération incluent la compilation classique et les opérations de liaison qui sont appelées avec une seule commande Build. Deux autres processus de génération peuvent également être pris en charge : une opération de nettoyage pour supprimer tous les éléments de sortie à une version antérieure et une vérification à jour pour déterminer si un élément de sortie dans une configuration a changé.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>objets de retournent un <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (retourné par <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) pour gérer leurs processus de génération. Pour signaler l’état d’une opération de génération lorsqu’elle se produit, les configurations effectuent des appels vers <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, une interface implémentée par l’environnement et tout autre objet intéressés par les événements de statut de build.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> objets de retournent un <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (retourné par <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) pour gérer leurs processus de génération. Pour signaler l’état d’une opération de génération lorsqu’elle se produit, les configurations effectuent des appels vers <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, une interface implémentée par l’environnement et tout autre objet intéressés par les événements de statut de build.  
   
  Une fois généré, les paramètres de configuration permet de déterminer si ils peuvent être exécutés sous le contrôle du débogueur. Implémentent des configurations <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> pour prendre en charge le débogage.  
   

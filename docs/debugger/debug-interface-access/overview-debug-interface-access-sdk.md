@@ -1,13 +1,10 @@
 ---
-title: "Vue d’ensemble (Debug Interface Access SDK) | Documents Microsoft"
-ms.custom: 
+title: Vue d’ensemble (Debug Interface Access SDK) | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - compilands
 - executable images
 ms.assetid: 720b4479-a8bc-4fec-860e-80c1a0780405
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb13b9a77bcd34b22a7a82182a63440cb02a4e76
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6494ebe261128ba700cbb92467db78a3d77a3600
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Vue d’ensemble (Kit de développement logiciel Debug Interface Access)
 Le SDK DIA permet d’accéder aux informations de débogage Microsoft. Le SDK DIA fournit une COM ensemble d’API qui élimine le besoin de réécrire votre code chaque fois que Microsoft modifie le format des informations de débogage. Le SDK DIA vous permet également de lire à partir d’un ensemble de versions précédentes des informations de débogage, situés dans des fichiers .pdb et .dbg générés par [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 5.0 et version ultérieure.  

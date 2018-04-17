@@ -1,23 +1,19 @@
 ---
-title: "Service et le catalogue de l’image | Documents Microsoft"
-ms.custom: 
+title: Service et le catalogue de l’image | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9b393d9dcf732d9042338dc0786d824351deca3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-service-and-catalog"></a>Catalogue et le Service d’images
 Ce guide contient des conseils et meilleures pratiques pour arrêter le Service d’images Visual Studio et le catalogue d’Image introduite dans Visual Studio 2015.  
@@ -661,7 +657,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ### <a name="samples"></a>Exemples  
  Plusieurs exemples Visual Studio sur GitHub ont été mis à jour pour montrer comment utiliser le service d’images dans le cadre de divers points d’extensibilité de Visual Studio.  
   
- Vérifiez [http://github.com/Microsoft/VSSDK-Extensibility-Samples](http://github.com/Microsoft/VSSDK-Extensibility-Samples) pour les exemples les plus récentes.  
+ Vérifiez [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) pour les exemples les plus récentes.  
   
 ### <a name="tooling"></a>Outillage  
  Un ensemble d’outils de prise en charge pour le Service d’images a été créé pour faciliter la création/mise à jour l’interface utilisateur qui fonctionne avec le Service d’images. Pour plus d’informations sur chaque outil, consultez la documentation fournie avec les outils. Les outils sont inclus dans le cadre de la [SDK Visual Studio 2015.](http://msdn.microsoft.com/library/bb166441.aspx)  

@@ -1,13 +1,10 @@
 ---
-title: "ProjectItemFolder, élément | Documents Microsoft"
-ms.custom: 
+title: ProjectItemFolder, élément | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - ProjectItemFolder element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: df3c5b91e5f95d6ec794bff08c2251c5bf5e5307
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 25d126ab05edccf44642271ed7e379988defe212
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder, élément
   Représente un dossier mappé.  
@@ -63,7 +60,7 @@ ms.lasthandoff: 01/10/2018
   
 |||  
 |-|-|  
-|**Espace de noms**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Espace de noms**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**Nom du schéma**|Schéma d’élément de projet SharePoint|  
 |**Fichier de validation**|ProjectItemModelSchema.xsd|  
 |**Peut être vide.**|Non|  

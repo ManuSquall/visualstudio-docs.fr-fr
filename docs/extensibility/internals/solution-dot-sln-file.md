@@ -1,27 +1,25 @@
 ---
 title: Solution (. Les fichiers sln) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - sln files, VSPackages
 - solutions, .sln files
 - .sln files, VSPackages
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ad918b72d38e61fb1670adda8ff1f730987c2aa3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 73d6f7fb83e9420f59122135761ce44ea641fe57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="solution-sln-file"></a>Solution (. Fichiers sln)
 Une solution est une structure pour organiser des projets dans Visual Studio. La solution gère les informations d’état pour les projets dans .sln (textuel, partagé) et les fichiers .suo (options de solution binaire, spécifiques à l’utilisateur). Pour plus d’informations sur les fichiers .suo, consultez [Options utilisateur de Solution (. Fichier suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
@@ -96,7 +94,7 @@ EndGlobal
   
  Si des informations à enregistrer, la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interface est appelée avec un pointeur vers le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> (méthode). Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> méthode est ensuite appelée par l’environnement pour récupérer les paires nom-valeur à partir de `IPropertyBag` de l’interface et écrire les informations dans le fichier .sln.  
   
- `SaveSolutionProps`et `WriteSolutionProps` objets sont appelées de manière récursive par l’environnement pour récupérer les informations à enregistrer à partir de la `IPropertyBag` interface jusqu'à ce que toutes les modifications ont été entrées dans le fichier .sln. De cette façon, vous pouvez de garantir que les informations sont rendues persistantes avec la solution et la prochaine disponible, que la solution est ouverte.  
+ `SaveSolutionProps` et `WriteSolutionProps` objets sont appelées de manière récursive par l’environnement pour récupérer les informations à enregistrer à partir de la `IPropertyBag` interface jusqu'à ce que toutes les modifications ont été entrées dans le fichier .sln. De cette façon, vous pouvez de garantir que les informations sont rendues persistantes avec la solution et la prochaine disponible, que la solution est ouverte.  
   
  Chaque VSPackage chargé est énumérée pour voir s’il n’a rien à enregistrer dans le fichier .sln. Il est uniquement au moment du chargement que les clés de Registre sont interrogées. L’environnement sait sur tous les modules chargés, car elles sont en mémoire au moment de que l’enregistrement de la solution.  
   

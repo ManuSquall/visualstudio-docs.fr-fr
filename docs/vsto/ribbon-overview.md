@@ -1,12 +1,10 @@
 ---
-title: "Vue d’ensemble du ruban | Documents Microsoft"
-ms.custom: 
+title: Vue d’ensemble du ruban | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - custom Ribbon, multiple Ribbons
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b7effa41d667a33d43159df4688403321f24eeea
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: dcd53d1b5d38ff144536f0dea62e441cb2b23072
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-overview"></a>Vue d'ensemble du ruban
   Le ruban est une façon d'organiser des commandes associées pour les retrouver plus facilement. Les commandes apparaissent sous forme de contrôles sur le ruban. Les contrôles sont organisés en *groupes* le long d’une bande horizontale sur le bord supérieur d’une fenêtre d’application. Les groupes connexes sont organisés sur les onglets.  
@@ -109,7 +108,7 @@ ms.lasthandoff: 01/10/2018
  Pour sélectionner un ruban à afficher au moment de l’exécution, substituez la méthode CreateRibbonExtensibilityObject dans le `ThisAddin`, `ThisWorkbook`, ou `ThisDocument` classe de votre projet et retournez le ruban que vous souhaitez afficher. L'exemple suivant vérifie la valeur d'un champ nommé `myCondition` et retourne le ruban approprié.  
   
 > [!NOTE]  
->  La syntaxe utilisée dans cet exemple retourne un ruban qui a été créé à l’aide de la **ruban (Concepteur visuel)** élément. La syntaxe de retour d’un ruban qui est créé en utilisant un **ruban (XML)** élément est légèrement différent. Pour plus d’informations sur le renvoi d’un **ruban (XML)** d’élément, consultez [ruban XML](../vsto/ribbon-xml.md).  
+>  La syntaxe utilisée dans cet exemple retourne un ruban qui a été créé à l’aide de la **ruban (Concepteur visuel)** élément. La syntaxe de retour d’un ruban qui est créé en utilisant un **ruban (XML)** élément est légèrement différent. Pour plus d'informations sur le retour d'un élément **Ruban (XML)**, consultez [Ruban XML](../vsto/ribbon-xml.md).  
   
  Ajoutez le code suivant :  
   

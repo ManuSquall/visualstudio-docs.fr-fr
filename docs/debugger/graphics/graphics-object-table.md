@@ -1,27 +1,25 @@
 ---
-title: "Graphique de l’objet Table | Documents Microsoft"
-ms.custom: 
+title: Graphique de l’objet Table | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.datavisualizer
 - vs.graphics.objecttable
 - vs.graphics.bufferviewer
 ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: eb03ab88ca3d1d50b559cef87bfdf045a0a81319
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fce78395efff7ec1344d0034c4d18001550798aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-object-table"></a>Table des objets Graphics
 La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'identifier les objets Direct3D qui prennent en charge un frame de votre jeu ou application.  
@@ -106,11 +104,11 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
 |**half4**|Vecteur qui contient quatre valeurs à virgule flottante 16 bits.|  
 |**double**|Valeur à virgule flottante 64 bits.|  
 |**int**|Valeur entière signée 32 bits. Identique à **4 octets**.|  
-|**Int64**|Valeur entière signée 64 bits. Identique à **8 octets**.|  
+|**int64**|Valeur entière signée 64 bits. Identique à **8 octets**.|  
 |**xint**|Valeur hexadécimale 32 bits. Identique à **x4byte**.|  
 |**xint64**|Valeur hexadécimale 64 bits. Identique à **x8byte**.|  
 |**uint**|Valeur entière non signée 32 bits. Identique à **u4byte**.|  
-|**UInt64**|Valeur entière non signée 64 bits. Identique à **u8byte**.|  
+|**uint64**|Valeur entière non signée 64 bits. Identique à **u8byte**.|  
 |**bool**|Valeur booléenne (`true` ou `false`). Chaque valeur booléenne est représentée par une valeur 32 bits.|  
   
 ## <a name="see-also"></a>Voir aussi  

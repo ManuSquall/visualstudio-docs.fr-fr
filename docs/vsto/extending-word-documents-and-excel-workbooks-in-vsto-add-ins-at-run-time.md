@@ -1,12 +1,10 @@
 ---
-title: "Extension de Documents Word et classeurs Excel dans des Compléments VSTO au moment de l’exécution | Documents Microsoft"
-ms.custom: 
+title: Extension de Documents Word et classeurs Excel dans des Compléments VSTO au moment de l’exécution | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - HasVstoObject method
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5cd29d7de596704087eb1326791e4fc9df9921a6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0f95c7cb0dfa5fb867807e32366157839725db85
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Extension de documents Word et de classeurs Excel dans des compléments VSTO au moment de l'exécution
   Vous pouvez utiliser un complément VSTO pour personnaliser des documents Word et des classeurs Excel comme suit :  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  Pour utiliser cette fonctionnalité, vous générez, au moment de l'exécution, un objet qui étend le document ou le classeur.  
   
- **S'applique à :** les informations contenues dans cette rubrique s'appliquent aux projets de complément VSTO pour les applications suivantes : Excel et Word. Pour plus d'informations, consultez [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ **S'applique à :** les informations contenues dans cette rubrique s'appliquent aux projets de complément VSTO pour les applications suivantes : Excel et Word. Pour plus d’informations, consultez [Fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="generating-extended-objects-in-vsto-add-ins"></a>Génération d'objets étendus dans les compléments VSTO  
  Les*objets étendus* sont des instances des types fournis par le runtime Visual Studio Tools pour Office qui ajoutent des fonctionnalités aux objets qui existent en mode natif dans les modèles objet Word ou Excel (appelés *objets Office natifs*). Pour générer un objet étendu pour un objet Word ou Excel, utilisez la méthode GetVstoObject. La première fois que vous appelez la méthode GetVstoObject pour un objet Word ou Excel spécifié, il retourne un nouvel objet qui étend l’objet spécifié. Chaque fois que vous appelez la méthode et que vous spécifiez le même objet Word ou Excel, elle retourne le même objet étendu.  
@@ -87,7 +86,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]  
   
 ##  <a name="AddControls"></a> Ajout de contrôles managés aux documents et feuilles de calcul  
- Après avoir généré un objet <xref:Microsoft.Office.Tools.Word.Document> ou un objet <xref:Microsoft.Office.Tools.Excel.Worksheet>, vous pouvez ajouter des contrôles au document ou à la feuille de calcul que ces objets étendus représentent. Pour ce faire, utilisez la propriété Controls de la <xref:Microsoft.Office.Tools.Word.Document> ou <xref:Microsoft.Office.Tools.Excel.Worksheet>. Pour plus d'informations, consultez [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Après avoir généré un objet <xref:Microsoft.Office.Tools.Word.Document> ou un objet <xref:Microsoft.Office.Tools.Excel.Worksheet>, vous pouvez ajouter des contrôles au document ou à la feuille de calcul que ces objets étendus représentent. Pour ce faire, utilisez la propriété Controls de la <xref:Microsoft.Office.Tools.Word.Document> ou <xref:Microsoft.Office.Tools.Excel.Worksheet>. Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Vous pouvez ajouter des contrôles Windows Forms ou des *contrôles hôtes*. Un contrôle hôte est un contrôle fourni par [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] qui encapsule un contrôle correspondant dans l'assembly PIA Word ou Excel. Un contrôle hôte expose l'ensemble du comportement de l'objet Office natif sous-jacent, mais il déclenche également des événements et peut être lié aux données à l'aide du modèle de liaison de données Windows Forms. Pour plus d'informations, consultez [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
@@ -126,7 +125,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Voir aussi  
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Ajout de contrôles aux Documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Vue d'ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Procédures pas à pas et des exemples de développement office](../vsto/office-development-samples-and-walkthroughs.md)  
   
   

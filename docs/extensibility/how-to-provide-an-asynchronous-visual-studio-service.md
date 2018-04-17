@@ -1,23 +1,19 @@
 ---
-title: "Comment : fournir un Service asynchrone Visual Studio | Documents Microsoft"
-ms.custom: 
+title: 'Comment : fournir un Service asynchrone Visual Studio | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea22a30d6f31099ca5d69d9cd8178188577febfe
-ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
+ms.openlocfilehash: b4754ccf4a7a66151ad8fb351996c1520dc9483c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Comment : fournir un Service asynchrone Visual Studio
 Si vous souhaitez obtenir un service sans bloquer le thread d’interface utilisateur, vous créez un service asynchrone et charger le package sur un thread d’arrière-plan. Pour cela, vous pouvez utiliser un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> plutôt qu’un <xref:Microsoft.VisualStudio.Shell.Package>, ajoutez le service avec des méthodes asynchrones du package asynchrone spéciales.

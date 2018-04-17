@@ -1,29 +1,25 @@
 ---
 title: Utilisation du collecteur autonome IntelliTrace | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
 helpviewer_keywords:
 - IntelliTrace, debugging applications in production
 ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b627e1f3188a4e7e938f9446251b5be80b87e6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9533c2a79a8fb692e970cf2f59d4be6feaaefc5f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Utilisation du collecteur autonome IntelliTrace
 Le **collecteur autonome IntelliTrace** vous permet de collecter des données de diagnostic IntelliTrace pour vos applications exécutées sur des serveurs de production ou d’autres environnements, sans avoir à installer Visual Studio sur l’ordinateur cible ni à modifier l’environnement du système cible. Ce collecteur fonctionne avec les applications web, SharePoint, WPF et Windows Forms. Quand vous avez terminé la collecte des données, supprimez simplement le collecteur pour le désinstaller.  
@@ -100,7 +96,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
         1.  Copiez IntelliTraceCollection.cab dans le dossier suivant :  
   
-             **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
+             **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
   
         2.  Placez IntelliTraceCollection.cab dans le répertoire du collecteur, par exemple **C:\IntelliTraceCollector**  
   
@@ -121,21 +117,21 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 1.  Sur le serveur de votre application, ouvrez une fenêtre d’invite de commandes en tant qu’administrateur.  
   
-2.  Utilisez la commande Windows **icacls** pour accorder à l’administrateur du serveur toutes les autorisations d’accès au répertoire du collecteur. Exemple :  
+2.  Utilisez la commande Windows **icacls** pour accorder à l’administrateur du serveur toutes les autorisations d’accès au répertoire du collecteur. Par exemple :  
   
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >*`":F`  
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >* `":F`  
   
 3.  Pour collecter les données d’une application web ou SharePoint :  
   
     1.  Accordez à l’utilisateur qui exécutera les applets de commande PowerShell IntelliTrace toutes les autorisations d’accès au répertoire du collecteur.  
   
-         Exemple :  
+         Par exemple :  
   
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<DOMAINE\IDutilisateur >*`":F`  
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<DOMAINE\IDutilisateur >* `":F`  
   
     2.  Accordez au pool d’applications hébergeant l’application web ou SharePoint les autorisations de lecture et d’exécution pour le répertoire du collecteur.  
   
-         Exemple :  
+         Par exemple :  
   
         -   Pour une application web du pool d’applications **DefaultAppPool** :  
   
@@ -165,7 +161,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
     2.  Dans la fenêtre Commande PowerShell, utilisez la commande **Import-Module** pour importer **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.  
   
-         Exemple :  
+         Par exemple :  
   
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`  
   
@@ -183,7 +179,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 2.  Pour une application web ou SharePoint, accordez au pool d’applications correspondant toutes les autorisations d’accès au répertoire de fichiers .iTrace. Pour cela, utilisez au choix la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers).  
   
-     Exemple :  
+     Par exemple :  
   
     -   Pour définir des autorisations avec la commande Windows **icacls** :  
   
@@ -217,7 +213,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 1.  Pour démarrer la collecte des données, ouvrez une fenêtre Commande PowerShell en tant qu’administrateur, puis exécutez la commande suivante :  
   
-     `Start-IntelliTraceCollection``"`  *\<ApplicationPool >* `"`  *\<PathToCollectionPlan >*  *\< FullPathToITraceFileDirectory >*  
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*  
   
     > [!IMPORTANT]
     >  Après avoir exécuté cette commande, tapez **Y** pour confirmer que vous souhaitez démarrer la collecte des données.  
@@ -240,7 +236,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 3.  Pour prendre un instantané du fichier .iTrace, utilisez la syntaxe suivante :  
   
-     `Checkpoint-IntelliTraceCollection``"`  *\<ApplicationPool >*`"`  
+     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`  
   
 4.  Pour vérifier l’état de la collecte, utilisez la syntaxe suivante :  
   
@@ -248,7 +244,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 5.  Pour arrêter la collecte de données, utilisez la syntaxe suivante :  
   
-     `Stop-IntelliTraceCollection``"`  *\<ApplicationPool >*`"`  
+     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`  
   
     > [!IMPORTANT]
     >  Après avoir exécuté cette commande, tapez **Y** pour confirmer que vous souhaitez arrêter la collecte de données. Sinon, le collecteur risque de continuer la collecte des données, le fichier iTrace restera verrouillé ou le fichier ne contiendra peut-être aucunes données utiles.  
@@ -259,7 +255,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 1.  Pour démarrer votre application et collecter des données en même temps, utilisez la syntaxe suivante :  
   
-     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:`  *\<PathToCollectionPlan >* `/f:`  *\< FullPathToITraceFileDirectoryAndFileName >*  *\<PathToAppExecutableFileAndFileName >*  
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*  
   
      Par exemple, pour collecter des données d’une application nommée **MyApp**, exécutez :  
   

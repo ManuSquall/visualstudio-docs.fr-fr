@@ -1,12 +1,10 @@
 ---
-title: "Activer le débogage pour les Applications ASP.NET | Documents Microsoft"
+title: Activer le débogage pour les Applications ASP.NET | Documents Microsoft
 ms.custom: H1HackMay2017
 ms.date: 09/21/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,22 +15,22 @@ helpviewer_keywords:
 - Web.config configuration file, debug mode
 - debugging [Visual Studio], ASP.NET
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
-caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 397dbe26aafd7ec385e6afeb11b3ca19155dfbcc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Débogage d’Applications ASP.NET dans Visual Studio
 
 Vous pouvez déboguer des applications ASP.NET à partir de Visual Studio.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 Pour suivre les instructions fournies dans cette rubrique, vous devez :
 
@@ -142,7 +140,7 @@ Si vous utilisez un serveur web IIS local, procédez comme suit.
     > [!NOTE]
     > Si vous utilisez Windows Server 2008 R2, installez ASP.NET 4 au lieu d’utiliser cette commande :
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Ouvrez le **Internet Information Services (IIS) Manager**. (Dans le volet gauche du Gestionnaire de serveur, sélectionnez **IIS**. Cliquez sur le serveur et sélectionnez **Gestionnaire des Services Internet (IIS)**.)
 
@@ -215,9 +213,9 @@ Si vous utilisez un serveur web IIS local, procédez comme suit. Il existe diff�
 
   
 ## <a name="robust-programming"></a>Programmation fiable  
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]détecte les modifications apportées aux fichiers Web.config et applique les nouveaux paramètres de configuration automatiquement. Vous n’avez pas à redémarrer l’ordinateur ni à redémarrer le serveur IIS pour que les modifications prennent effet.  
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] détecte les modifications apportées aux fichiers Web.config et applique les nouveaux paramètres de configuration automatiquement. Vous n’avez pas à redémarrer l’ordinateur ni à redémarrer le serveur IIS pour que les modifications prennent effet.  
   
-Un site web peut contenir plusieurs répertoires et sous-répertoires virtuels, et chacun d’eux peut contenir des fichiers web.config. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]applications héritent des paramètres des fichiers Web.config à des niveaux supérieurs dans le chemin d’accès d’URL. Fichiers de configuration hiérarchiques permettent de modifier les paramètres pour plusieurs [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications en même temps, par exemple, pour toutes les applications en dessous dans la hiérarchie. Toutefois, si `debug` est défini dans un fichier de niveau inférieur dans la hiérarchie, il substitue à la valeur la plus élevée.  
+Un site web peut contenir plusieurs répertoires et sous-répertoires virtuels, et chacun d’eux peut contenir des fichiers web.config. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications héritent des paramètres des fichiers Web.config à des niveaux supérieurs dans le chemin d’accès d’URL. Fichiers de configuration hiérarchiques permettent de modifier les paramètres pour plusieurs [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications en même temps, par exemple, pour toutes les applications en dessous dans la hiérarchie. Toutefois, si `debug` est défini dans un fichier de niveau inférieur dans la hiérarchie, il substitue à la valeur la plus élevée.  
   
 Par exemple, vous pouvez spécifier `debug="true"` dans www.microsoft.com/aaa/Web.config, ainsi que les applications dans le dossier aaa ou dans n’importe quel sous-dossier de aaa hérite de ce paramètre. Par conséquent, si votre [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application se trouve dans www.microsoft.com/aaa/bbb, il hérite de ce paramètre, tout comme les [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications dans www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd et ainsi de suite. La seule exception concerne le cas où l’une de ces applications remplace le paramètre à l’aide de son propre fichier Web.config de niveau inférieur.  
   

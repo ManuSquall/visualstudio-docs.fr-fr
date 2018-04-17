@@ -1,26 +1,24 @@
 ---
-title: "L’initialisation du concepteur et la Configuration des métadonnées | Documents Microsoft"
-ms.custom: 
+title: L’initialisation du concepteur et la Configuration des métadonnées | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
 - designers [Visual Studio SDK], configuring metadata
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 61624d9926f4d984386f1a8b3fe8a575ce465331
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a6334f65b942b2eab3543d866ae1b98a186569ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>L’initialisation du concepteur et la Configuration des métadonnées
 Manipulation des attributs de métadonnées et le filtre associé à un concepteur ou un composant de concepteur fournit un mécanisme permettant aux applications de définir quels outils sont utilisés par un concepteur particulier pour gérer différents <xref:System.Type> objets (tels que les structures de données, classes, ou les entités graphiques), lorsque le concepteur est disponible, et comment l’IDE de Visual Studio est configuré pour prendre en charge le concepteur (pour une instance qui **boîte à outils** catégorie ou l’onglet est disponible).  

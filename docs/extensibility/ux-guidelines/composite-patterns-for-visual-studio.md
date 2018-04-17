@@ -1,23 +1,21 @@
 ---
-title: "Modèles de composite pour Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Modèles de composite pour Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6515b5aefc0536ea92f09a92b1a17050b820008d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles de composite pour Visual Studio
 Modèles composites combinent des éléments de conception et d’interaction dans des configurations distinctes. Les modèles composites plus importantes dans Visual Studio en matière de cohérence sont les suivantes :  
@@ -32,7 +30,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
   
 -   [Entrée tactile](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)  
   
-##  <a name="BKMK_DataVisualization"></a>Visualisation des données  
+##  <a name="BKMK_DataVisualization"></a> Visualisation des données  
   
 ### <a name="overview"></a>Vue d'ensemble  
  Les graphiques sont un moyen visuel d’agrégation et de visualiser les données afin d’améliorer la prise de décision. Elles peuvent aider les utilisateurs confrontés à une grande quantité de données, mais ce qui signifie peu voir qu’ils méritent une attention et besoins une action.  
@@ -85,7 +83,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
 |![Échantillon 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
 |![Échantillon B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
   
-##  <a name="BKMK_OnObjectUI"></a>L’interface utilisateur sur l’objet et la lecture  
+##  <a name="BKMK_OnObjectUI"></a> L’interface utilisateur sur l’objet et la lecture  
  Cette section donne le contexte pour la lecture, également appelé mode de lecture de code, un type d’interface utilisateur sur les objets spécifique à Visual Studio.  
   
 ### <a name="overview"></a>Vue d'ensemble  
@@ -161,7 +159,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
   
 4.  Modèle de persistance et de validation  
   
-    -   Temporaire  
+    -   Transient  
   
     -   Durable  
   
@@ -251,7 +249,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
   
 -   **Jamais** afficher du contenu pointage qui semble être modifiables ou invite l’intervention de l’utilisateur. Ce comportement peut nuire aux utilisateurs fonctionnalité s’ils tentent déplacer le curseur sur le contenu de détail, le comportement standard d’une info-bulle doit immédiatement fermer le curseur n’est plus sur le contrôleur de contenu qui l’a produit.  
   
-##  <a name="BKMK_SelectionModels"></a>Modèles de sélection  
+##  <a name="BKMK_SelectionModels"></a> Modèles de sélection  
   
 ### <a name="overview"></a>Vue d'ensemble  
  Un modèle de sélection est le mécanisme utilisé pour indiquer et confirmer les opérations sur un ou plusieurs objets d’intérêt dans l’interface utilisateur. Cette rubrique décrit les modèles d’interaction de sélection dans les éditeurs de document de Visual Studio : éditeurs de texte, des surfaces de dessin et des surfaces de modélisation.  
@@ -309,7 +307,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
 #### <a name="region-selection-box-selection"></a>Sélection de région (sélection de la)  
  Visual Studio prend en charge les sélections de la région dans l’éditeur de texte, et il s’agit de la sélection. Sélection de zone permet à l’utilisateur à sélectionner une zone de texte qui ne respecte pas le flux de texte standard. Comme avec la sélection de texte standard, la sélection doit être contiguë. La sélection est initiée par la touche Alt enfoncée tout en faisant glisser la souris. La sélection peut également être lancée en appuyant sur les touches Alt et MAJ tout en utilisant les touches de direction pour indiquer la région de sélection. Sélection de zone utilise la mise en surbrillance de la sélection normale et affiche le curseur du point d’insertion clignote à la fin de la zone de sélection.  
   
- ![Régionales &#40; boîte de &#41; sélection dans Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713-04_BoxSelection")  
+ ![Régional &#40;zone&#41; sélection dans Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713-04_BoxSelection")  
   
  **Sélection de région (zone) dans Visual Studio**  
   
@@ -394,19 +392,19 @@ Modèles composites combinent des éléments de conception et d’interaction da
   
  **Sélection principale avec deux sélections secondaire**  
   
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a>Apparence de la sélection d’objet graphique  
+####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Apparence de la sélection d’objet graphique  
  Les poignées sont des carrés dans un rectangle autour de la zone englobante de l’objet. Le graphique ci-dessous montre des exemples des différents États qu’un objet graphique peut avoir avec poignée de dimensionnement et apparence de modification sur place. La taille des handles doit être liée à la bordure de fenêtre et les métriques de bord à l’aide du **GetSystemMetrics** API.  
   
 |État|Apparence|Détails de Visual|  
 |-----------|----------------|--------------------|  
 |**Non sélectionné**|Par défaut|![État du bouton par défaut](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState")||  
-|**Sélection principale**|Redimensionnable|![Sélection principale avec des poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize")|![Sélection principale avec redimensionner les poignées &#40; Zoom &#41; ] (../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713-12_PrimaryResizeZoom")|  
-|**Sélection principale**|Ne peut pas être redimensionnée|![Sélection principale sans poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713-13_PrimaryNoResize")|![Sélection principale sans redimensionner les poignées &#40; Zoom &#41; ] (../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713-14_PrimaryNoResizeZoom")|  
-|**Sélection principale**|Verrouillé|![Sélection principale verrouillée](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713-15_PrimaryLocked")|![Sélection principale verrouillée &#40; Zoom &#41; ] (../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713-16_PrimaryLockedZoom")|  
-|**Sélection secondaire**|Redimensionnable|![Sélection secondaire avec des poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713-17_SecondaryResize")|![Sélection secondaire avec redimensionner les poignées &#40; Zoom &#41; ] (../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713-18_SecondaryResizeZoom")|  
-|**Sélection secondaire**|Ne peut pas être redimensionnée|![Sélection secondaire sans poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713-19_SecondaryNoResize")|![Sélection secondaire sans redimensionnement &#40; Zoom &#41; ] (../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713-20_SecondaryNoResizeZoom")|  
-|**Sélection secondaire**|Verrouillé|![Sélection secondaire verrouillée](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713-21_SecondaryLocked")|![Sélection secondaire verrouillée &#40; Zoom &#41; ] (../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713-22_SecondaryLockedZoom")|  
-|**Interface utilisateur active**|Par défaut|![État actif de l’interface utilisateur](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713-23_UIActive")|![L’interface utilisateur état actif &#40; Zoom &#41; ] (../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713-24_UIActiveZoom")|  
+|**Sélection principale**|Redimensionnable|![Sélection principale avec des poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize")|![Sélection principale avec des poignées de redimensionnement &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713-12_PrimaryResizeZoom")|  
+|**Sélection principale**|Ne peut pas être redimensionnée|![Sélection principale sans poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713-13_PrimaryNoResize")|![Sélection principale sans poignées de redimensionnement &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713-14_PrimaryNoResizeZoom")|  
+|**Sélection principale**|Verrouillé|![Sélection principale verrouillée](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713-15_PrimaryLocked")|![Sélection principale verrouillée &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713-16_PrimaryLockedZoom")|  
+|**Sélection secondaire**|Redimensionnable|![Sélection secondaire avec des poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713-17_SecondaryResize")|![Sélection secondaire avec des poignées de redimensionnement &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713-18_SecondaryResizeZoom")|  
+|**Sélection secondaire**|Ne peut pas être redimensionnée|![Sélection secondaire sans poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713-19_SecondaryNoResize")|![Sélection secondaire sans poignées de redimensionnement &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713-20_SecondaryNoResizeZoom")|  
+|**Sélection secondaire**|Verrouillé|![Sélection secondaire verrouillée](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713-21_SecondaryLocked")|![Sélection secondaire verrouillée &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713-22_SecondaryLockedZoom")|  
+|**Interface utilisateur active**|Par défaut|![État actif de l’interface utilisateur](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713-23_UIActive")|![État actif de l’interface utilisateur &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713-24_UIActiveZoom")|  
   
 ### <a name="view-selection-models"></a>Afficher les modèles de sélection  
   
@@ -475,7 +473,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
   
 -   La touche F2 Active la modification sur place pour la cellule actuellement sélectionnée.  
   
-##  <a name="BKMK_PersistenceAndSavingSettings"></a>Persistance et l’enregistrement des paramètres  
+##  <a name="BKMK_PersistenceAndSavingSettings"></a> Persistance et l’enregistrement des paramètres  
   
 ### <a name="overview"></a>Vue d'ensemble  
  Bien que chaque composant de logiciel dans Visual Studio est généralement responsable de son propre état et de persistance, Visual Studio enregistre automatiquement les paramètres dans certains cas, comme avec les positions et les tailles de fenêtre. Le tableau ci-dessous est une combinaison de paramètres enregistrés automatiquement et qui nécessitent un utilisateur explicite ou programmé l’action à entreprendre.  
@@ -510,7 +508,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
 #### <a name="profile-specific-layouts"></a>Dispositions spécifiques au profil  
  Chaque profil comprend des dispositions des fenêtres Outil, organisées de manière familière aux personnes approuvées du développeur spécifique (les développeurs Visual C++ s’attendre à voir les **l’Explorateur de solutions** sur le côté gauche de l’IDE, tandis que les développeurs c# s’attendre à voir les  **L’Explorateur de solutions** à droite). Dispositions de fenêtres spécifiques au profil sont chargées après que l’utilisateur choisit un profil au démarrage. Un auteur du package doit déterminer la disposition de fenêtre plus appropriée pour une expérience de leurs clients, en sachant que les modifications apportées par l’utilisateur à la configuration de la fenêtre sont ensuite rendues persistantes.  
   
-##  <a name="BKMK_TouchInput"></a>Entrée tactile  
+##  <a name="BKMK_TouchInput"></a> Entrée tactile  
  Les utilisateurs ont recours à des produits de développement Microsoft sur les appareils tactiles. Toutefois, il existe des barrières qui rendent difficile à utiliser les outils de développement sur les appareils tactiles. Les utilisateurs seront attend à recevoir nos produits pour offrir une expérience tactile fiable et précise. Le but de ces instructions est à indiquer des décisions sur les fonctions tactiles à intégrer et à encourager une expérience tactile cohérent entre Visual Studio et les produits connexes.  
   
 ### <a name="levels-of-experience"></a>Niveau d’expérience  

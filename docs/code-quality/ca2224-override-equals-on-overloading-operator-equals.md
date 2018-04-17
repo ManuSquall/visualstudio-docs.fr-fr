@@ -1,12 +1,10 @@
 ---
-title: "CA2224 : Remplacez equals lors de la surcharge l’opérateur égal | Documents Microsoft"
-ms.custom: 
+title: 'CA2224 : Remplacez equals lors de la surcharge l’opérateur égal | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2224
 - OverrideEqualsOnOverloadingOperatorEquals
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - OverrideEqualsOnOverloadingOperatorEquals
 - CA2224
 ms.assetid: 7312afd9-84ba-417f-923e-7a159b53bf70
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4d34acafb4f014b91e4c0f707060ce0442a413e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9931e359b866573099723faa91b147d44f17e3bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224 : Remplacez Equals au moment de surcharger l'opérateur égal
 |||  
@@ -51,7 +49,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="examples-of-inconsistent-equality-definitions"></a>Exemples de définitions d’égalité incohérentes  
   
 ### <a name="description"></a>Description  
- L’exemple suivant montre un type avec des définitions d’égalité incohérentes. `BadPoint`Modifie la signification d’égalité en fournissant une implémentation personnalisée de l’opérateur d’égalité, mais ne remplace pas <xref:System.Object.Equals%2A> afin qu’il se comporte de façon identique.  
+ L’exemple suivant montre un type avec des définitions d’égalité incohérentes. `BadPoint` Modifie la signification d’égalité en fournissant une implémentation personnalisée de l’opérateur d’égalité, mais ne remplace pas <xref:System.Object.Equals%2A> afin qu’il se comporte de façon identique.  
   
 ### <a name="code"></a>Code  
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_1.cs)]  
@@ -63,11 +61,11 @@ ms.lasthandoff: 12/22/2017
   
  Cet exemple produit la sortie suivante.  
   
- **a = ([0] 1,1) et b = ([1] 2,2) sont égaux ? No**  
-**un == b ? No**  
+ **a = ([0] 1,1) et b = ([1] 2,2) sont égaux ? Aucun**  
+**un == b ? Aucun**  
 **a1 et a sont égaux ? Oui**  
 **a1 == un ? Oui**  
-**b et b copie sont égaux ? No**  
+**b et b copie sont égaux ? Aucun**  
 **b == bcopy ? Oui**   
 ## <a name="example"></a>Exemple  
  L’exemple suivant montre un type qui viole cette règle techniquement, mais ne se comporte pas de façon incohérente.  
@@ -81,8 +79,8 @@ ms.lasthandoff: 12/22/2017
   
  Cet exemple produit la sortie suivante.  
   
- **a = (1,1) et b = (2,2) sont égaux ? No**  
-**un == b ? No**  
+ **a = (1,1) et b = (2,2) sont égaux ? Aucun**  
+**un == b ? Aucun**  
 **a1 et a sont égaux ? Oui**  
 **a1 == un ? Oui**  
 **b et b copie sont égaux ? Oui**  

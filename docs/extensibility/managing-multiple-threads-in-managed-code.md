@@ -1,23 +1,21 @@
 ---
-title: "Comment : gérer plusieurs Threads dans le Code managé | Documents Microsoft"
-ms.custom: 
+title: 'Comment : gérer plusieurs Threads dans le Code managé | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 84d59a626fbe745532d0e2499d7ba9a4c3105f5e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: c0888a0f65f36d624deffac60ceee032d3f3d13a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-managing-multiple-threads-in-managed-code"></a>Comment : gérer plusieurs Threads dans le Code managé
 Si vous avez une extension VSPackage managée qui appelle des méthodes asynchrones ou a des opérations qui s’exécutent sur des threads autres que le thread d’interface utilisateur de Visual Studio, vous devez suivre les instructions ci-dessous. Vous pouvez conserver le thread d’interface utilisateur réactive, car il n’a pas besoin d’attendre pour le travail sur un autre thread pour terminer. Vous pouvez rendre votre code plus efficace, car vous n’avez pas les threads supplémentaires qui occupent de l’espace de pile, et vous pouvez le rendre plus fiable et plus facile à déboguer, car vous évitez les interblocages et les blocages.  

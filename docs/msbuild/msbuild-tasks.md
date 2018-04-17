@@ -1,27 +1,27 @@
 ---
-title: "Tâches MSBuild | Microsoft Docs"
-ms.custom: 
+title: Tâches MSBuild | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-caps.latest.revision: 
+caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: e1de29741f11413d8829902635c1284aa6e5bce6
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-tasks"></a>Tâches MSBuild
 Une plateforme de génération doit pouvoir exécuter plusieurs actions pendant le processus de génération. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utilise des *tâches* pour effectuer ces actions. Une tâche est une unité de code exécutable utilisée par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour exécuter des opérations de génération atomiques.  
@@ -40,7 +40,7 @@ Une plateforme de génération doit pouvoir exécuter plusieurs actions pendant 
   
  Pour exécuter une tâche dans un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], créez un élément pourvu du nom de la tâche comme enfant d’un élément `Target`. Si une tâche accepte des paramètres, ceux-ci sont transmis en tant qu’attributs de l’élément.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Les propriétés et les listes d’éléments peuvent être utilisées comme des paramètres. Par exemple, le code suivant appelle la tâche `MakeDir` et définit la valeur de la propriété `Directories` de l’objet `MakeDir` égale à la valeur de la propriété `BuildDir` déclarée dans l’exemple précédent.  
+ Les propriétés et les listes d’éléments [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peuvent être utilisées comme des paramètres. Par exemple, le code suivant appelle la tâche `MakeDir` et définit la valeur de la propriété `Directories` de l’objet `MakeDir` égale à la valeur de la propriété `BuildDir` déclarée dans l’exemple précédent.  
   
 ```xml  
 <Target Name="MakeBuildDirectory">  
@@ -64,7 +64,7 @@ Une plateforme de génération doit pouvoir exécuter plusieurs actions pendant 
 ```  
   
 ## <a name="included-tasks"></a>Tâches incluses  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est fourni avec de nombreuses tâches, par exemple [Copy](../msbuild/copy-task.md), qui copie des fichiers, [MakeDir](../msbuild/makedir-task.md), qui crée des répertoires et [Csc](../msbuild/csc-task.md), qui compile des fichiers de code source [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Pour obtenir la liste complète des tâches disponibles et les informations sur leur utilisation, consultez l’article [Informations de référence sur les tâches MSBuild](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est fourni avec de nombreuses tâches, par exemple [Copy](../msbuild/copy-task.md), qui copie des fichiers, [MakeDir](../msbuild/makedir-task.md), qui crée des répertoires et [Csc](../msbuild/csc-task.md), qui compile des fichiers de code source [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Pour obtenir la liste complète des tâches disponibles et les informations sur leur utilisation, consultez l’article [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="overridden-tasks"></a>Tâches substituées  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] recherche des tâches à plusieurs emplacements. Les fichiers portant l’extension .OverrideTasks, stockés dans les répertoires .NET Framework correspondent au premier emplacement. Les tâches contenues dans ces fichiers remplacent toutes les autres tâches du même nom, notamment les tâches du fichier projet. Les fichiers portant l’extension .Tasks, stockés dans les répertoires .NET Framework correspondent au second emplacement. Si la tâche est introuvable à l’un de ces emplacements, c’est celle contenue dans le fichier projet qui est utilisée.  

@@ -1,23 +1,21 @@
 ---
 title: Le fichier DslDefinition.dsl | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92bd27f1590aae455c0d5bba540720421338b63c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 361f723997f898091b05a80cfb55c9cc5680ceb3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Le fichier DslDefinition.dsl
 Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet Dsl d’un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solution, qui définit un *langage spécifique à un domaine*. Le fichier DslDefinition.dsl décrit les classes et les relations d’un langage spécifique à un domaine, ainsi que le diagramme, des formes, des connecteurs, du format de sérialisation, et **boîte à outils** du langage spécifique à un domaine et ses outils d’édition. Dans une solution de langage spécifique à un domaine, le code qui définit ces outils est généré en fonction des informations contenues dans le fichier DslDefinition.dsl.  
@@ -153,7 +151,7 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
   
  Chaque classe de domaine (y compris les relations, les formes, les connecteurs et les diagrammes) peut avoir les attributs et nœuds enfants suivants :  
   
--   **Id.** Cet attribut est un GUID. Si vous ne spécifiez pas de valeur dans le fichier, le concepteur de langage spécifique à un domaine crée une valeur. (Dans les illustrations de ce document, cet attribut est généralement omis pour des raisons d'espace.)  
+-   **ID.** Cet attribut est un GUID. Si vous ne spécifiez pas de valeur dans le fichier, le concepteur de langage spécifique à un domaine crée une valeur. (Dans les illustrations de ce document, cet attribut est généralement omis pour des raisons d'espace.)  
   
 -   **Nom et Namespace.** Ces attributs spécifient le nom et l’espace de noms de la classe dans le code généré. Ensemble, ils doivent être uniques dans le langage spécifique à un domaine.  
   
@@ -169,7 +167,7 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
   
 -   **BaseClass**. Si vous spécifiez une classe de base, elle doit être du même type. Par exemple, une classe de domaine doit avoir une autre classe de domaine comme base et une forme de compartiment doit avoir une forme de compartiment. Si vous ne spécifiez pas de classe de base, la classe dans le code généré dérive d'une classe d'infrastructure standard. Par exemple, une classe de domaine dérive de `ModelElement`.  
   
--   **Propriétés**. Cet attribut contient les propriétés qui sont tenues à jour sous le contrôle de transaction et conservées lors de l'enregistrement du modèle.  
+-   **propriétés**. Cet attribut contient les propriétés qui sont tenues à jour sous le contrôle de transaction et conservées lors de l'enregistrement du modèle.  
   
 -   **ElementMergeDirectives**. Chaque directive de fusion d'élément contrôle comment une instance différente d'une autre classe est ajoutée à une instance de la classe parente. Vous trouverez des détails supplémentaires sur les directives de fusion d'élément plus loin dans cette rubrique.  
   
@@ -194,7 +192,7 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
   
 -   **IsUIReadOnly**. Cet attribut détermine si l’utilisateur peut modifier la propriété dans le **propriétés** fenêtre ou via un élément décoratif dans lequel la propriété est présentée.  
   
--   **Kind**. Vous pouvez affecter à cet attribut la valeur Normal, Calculated ou CustomStorage. Si vous lui affectez la valeur Calculated, vous devez fournir du code personnalisé qui détermine la valeur et la propriété sera en lecture seule. Si vous lui affectez la valeur CustomStorage, vous devez fournir du code qui obtient et définit des valeurs.  
+-   **Type**. Vous pouvez affecter à cet attribut la valeur Normal, Calculated ou CustomStorage. Si vous lui affectez la valeur Calculated, vous devez fournir du code personnalisé qui détermine la valeur et la propriété sera en lecture seule. Si vous lui affectez la valeur CustomStorage, vous devez fournir du code qui obtient et définit des valeurs.  
   
 -   **IsElementName**. Si cet attribut à la valeur True, sa valeur est définie automatiquement sur une valeur unique quand une instance de la classe parente est créée. Cet attribut peut prendre la valeur True pour une seule propriété dans chaque classe, qui doit être de type String. Dans l'exemple Diagramme de composant, la propriété `Name` dans `NamedElement` a `IsElementName` définie sur True. Chaque fois qu'un utilisateur crée un élément `Component` (qui hérite de `NamedElement`), le nom est initialisé automatiquement avec une valeur telle que « Component6 ».  
   
@@ -441,7 +439,7 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
   
  (La relation Connection possède ses propres données de classe XML, qui fournissent ses noms d'éléments et d'attributs.)  
   
- Si le **OmitElement** attribut est défini sur true, la relation de nom de rôle est omis, qui abrège fichier sérialisé et n’est pas ambiguë si les deux classes ont pas plus d’une relation. Exemple :  
+ Si le **OmitElement** attribut est défini sur true, la relation de nom de rôle est omis, qui abrège fichier sérialisé et n’est pas ambiguë si les deux classes ont pas plus d’une relation. Par exemple :  
   
 ```  
 <component name="Component3">  

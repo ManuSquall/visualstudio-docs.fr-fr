@@ -1,12 +1,10 @@
 ---
-title: "Comment : créer des gestionnaires d’événements dans les projets Office | Documents Microsoft"
-ms.custom: 
+title: 'Comment : créer des gestionnaires d’événements dans les projets Office | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c392d365ca14daeb204f4ee2f331bb1fe86ad304
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 833e41979d1dac9def7e647b396161d0ac5e2b67
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Comment : créer des gestionnaires d'événements dans les projets Office
   Il existe plusieurs façons de créer des gestionnaires d’événements en Visual Basic et c#. En mode conception, vous pouvez créer des gestionnaires d’événements pour les contrôles de la valeur par défaut en double-cliquant sur le contrôle, ou utiliser le volet d’événements de la **propriétés** fenêtre pour créer des gestionnaires pour tout événement sur le contrôle. Toutefois, si vous êtes en mode Code, vous ne souhaitez ne peut-être pas basculer vers l’affichage de conception pour créer un gestionnaire d’événements.  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
   
 ### <a name="to-create-an-event-handler-in-c"></a>Pour créer un gestionnaire d’événements en c#  
   
-1.  Créer le délégué d’événement dans le **démarrage** événement de la classe en tapant le nom d’événement qualifié suivi d’un espace, puis en tapant  **+=**  par la suite sans espace. Exemple :  
+1.  Créer le délégué d’événement dans le **démarrage** événement de la classe en tapant le nom d’événement qualifié suivi d’un espace, puis en tapant **+=** par la suite sans espace. Par exemple :  
   
      `this.<object name>.<event name> +=`  
   

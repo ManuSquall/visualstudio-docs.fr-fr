@@ -1,5 +1,5 @@
 ---
-title: "Retarder le Concepteur d’activités | Documents Microsoft"
+title: Retarder le Concepteur d’activités | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cddf4be42d05ebfc3c2df3e64f011b93673eead6
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 7159330588151d4845184fcb6688b20f8d13afd0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="delay-activity-designer"></a>Concepteur d'activités Delay
 Le **délai** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.Delay> activité.
@@ -38,7 +38,7 @@ Le **délai** ActivityDesigner est utilisé pour créer et configurer un <xref:S
 ## <a name="see-also"></a>Voir aussi
 
 - [Primitives](../workflow-designer/primitives-activity-designers.md)
-- [Assign](../workflow-designer/assign-activity-designer.md)
+- [affecter](../workflow-designer/assign-activity-designer.md)
 - [Concepteur d’activités Delay](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

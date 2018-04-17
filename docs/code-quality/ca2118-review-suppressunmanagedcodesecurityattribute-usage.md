@@ -1,12 +1,10 @@
 ---
-title: "CA2118 : Utilisation de SuppressUnmanagedCodeSecurityAttribute de révision | Documents Microsoft"
-ms.custom: 
+title: 'CA2118 : Utilisation de SuppressUnmanagedCodeSecurityAttribute de révision | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2118
 - ReviewSuppressUnmanagedCodeSecurityUsage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ReviewSuppressUnmanagedCodeSecurityUsage
 - CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6a6c5e60ed84a79e6e81d4cd066d75b1270bdb71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8d862f285efa3487c428aed2e5aed3a67c3baef6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118 : Revue de l’utilisation de SuppressUnmanagedCodeSecurityAttribute
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Un type public ou protégé ou un membre a le <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> attribut.  
   
 ## <a name="rule-description"></a>Description de la règle  
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>modifie le comportement par défaut du système de sécurité pour les membres qui s’exécutent à l’aide de COM interop ou plateforme de l’appel de code non managé. En général, le système effectue un [données et modélisation](/dotnet/framework/data/index) pour l’autorisation de code non managé. Cette demande se produit au moment de l’exécution pour chaque appel du membre et vérifie chaque appelant dans la pile des appels pour autorisation. Lorsque l’attribut est présent, le système effectue un [les demandes de liaison](/dotnet/framework/misc/link-demands) pour l’autorisation : les autorisations de l’appelant immédiat sont vérifiées lorsque l’appelant est compilé par JIT.  
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> modifie le comportement par défaut du système de sécurité pour les membres qui s’exécutent à l’aide de COM interop ou plateforme de l’appel de code non managé. En général, le système effectue un [données et modélisation](/dotnet/framework/data/index) pour l’autorisation de code non managé. Cette demande se produit au moment de l’exécution pour chaque appel du membre et vérifie chaque appelant dans la pile des appels pour autorisation. Lorsque l’attribut est présent, le système effectue un [les demandes de liaison](/dotnet/framework/misc/link-demands) pour l’autorisation : les autorisations de l’appelant immédiat sont vérifiées lorsque l’appelant est compilé par JIT.  
   
  Cet attribut est essentiellement utilisé pour accroître les performances ; toutefois, les gains de performance s’accompagnent de risques substantiels pour la sécurité. Si vous placez l’attribut sur des membres publics qui appellent des méthodes natives, les appelants dans la pile des appels (autre que l’appelant immédiat) est inutile des autorisations de code non managé pour exécuter du code non managé. En fonction de gestion de l’entrée et actions du membre public, pourrait permettre à des appelants non fiables pour accéder aux fonctionnalités normalement restreintes à du code fiable.  
   

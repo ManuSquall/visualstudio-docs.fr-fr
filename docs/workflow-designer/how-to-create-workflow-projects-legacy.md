@@ -1,5 +1,5 @@
 ---
-title: "Comment : créer des projets de Workflow (hérité) | Documents Microsoft"
+title: 'Comment : créer des projets de Workflow (hérité) | Documents Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 32299555-662c-469d-a90d-89f4700dc78c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc38c6b323ee06ed9b312811eb892e7654134d05
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: ca6fdbbd8a744c472c06fdefbdafce77679ec2c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Procédure : créer des projets de workflow (héritée)
 Suivez ces étapes pour créer un projet [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] qui cible le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Cette procédure utilise le Concepteur de flux de travail Windows hérité fourni par [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
@@ -24,7 +24,7 @@ Suivez ces étapes pour créer un projet [!INCLUDE[wf](../workflow-designer/incl
 
 1.  Démarrez [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)].
 
-2.  Sur le **fichier** menu, pointez sur **nouveau**, puis sélectionnez **projet**.
+2.  Dans le menu **Fichier**, pointez sur **Nouveau**, puis sélectionnez **Projet**.
 
      La boîte de dialogue **Nouveau projet** s'affiche.
 

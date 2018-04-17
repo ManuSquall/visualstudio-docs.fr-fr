@@ -1,24 +1,22 @@
 ---
-title: "Kit de développement logiciel de modélisation pour Visual Studio - langages spécifiques à un domaine | Documents Microsoft"
-ms.custom: 
+title: Kit de développement logiciel de modélisation pour Visual Studio - langages spécifiques à un domaine | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-modeling
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1edb30221d85f8e634a9d618d50cd1e0b772b69a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7cb927128ae4284f665fef534aafa9bc27a73c28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Kit de développement logiciel de modélisation pour Visual Studio - Langages spécifiques à un domaine
 À l’aide du Kit de développement logiciel de modélisation pour [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez créer des outils de développement puissant basé sur le modèle que vous pouvez intégrer à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. De la même manière, vous pouvez créer une ou plusieurs définitions de modèle et la/les intégrer dans un ensemble d'outils.  

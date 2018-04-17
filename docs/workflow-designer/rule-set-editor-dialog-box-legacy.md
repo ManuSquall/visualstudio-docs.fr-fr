@@ -1,5 +1,5 @@
 ---
-title: "Boîte de dialogue Éditeur (hérité) l’ensemble de règles | Documents Microsoft"
+title: Boîte de dialogue Éditeur (hérité) l’ensemble de règles | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 989e0ed3f390513efeb849a71f94d5d61aecc57e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Éditeur d'ensemble de règles, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** boîte de dialogue dans le Concepteur de flux de travail Windows hérité. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -40,7 +40,7 @@ Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** 
 |**Chaînage des propriétés**|Spécifie le type de chaînage avant à utiliser avec l'ensemble de règles. Les options disponibles sont les suivantes :<br /><br /> -   **Chaînage complet**, qui spécifie l’utilisation des mécanismes de chaînage avant tout : implicite, attribution de méthode et explicite avec un **mise à jour** (fonction).<br />-   **Séquentiel**, qui spécifie de ne pas utiliser de chaînage avant.<br />-   **Mise à jour explicite uniquement**, qui spécifie d’exécuter uniquement le chaînage avant sur **mise à jour** actions.<br /><br /> Pour plus d’informations sur le chaînage avant, consultez [à l’aide de l’activité PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).|
 |**Name**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par nom.|
 |**Priorité**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par priorité.|
-|**Reevaluation**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par type de réévaluation.|
+|**Réévaluation**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par type de réévaluation.|
 |**Aperçu de la règle**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par l'aperçu de la condition d'une règle et actions.|
 |**Nom :**|Entrez le nom de la règle.|
 |**Priorité :**|Entrez une priorité pour la règle. La priorité par défaut est 0.|

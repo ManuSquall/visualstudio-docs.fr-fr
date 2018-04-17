@@ -1,12 +1,10 @@
 ---
-title: "CA1816 : Appeler GC. SuppressFinalize correctement | Documents Microsoft"
-ms.custom: 
+title: 'CA1816 : Appeler GC. SuppressFinalize correctement | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1816
 - DisposeMethodsShouldCallSuppressFinalize
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DisposeMethodsShouldCallSuppressFinalize
 - CA1816
 ms.assetid: 47915fbb-103f-4333-b157-1da16bf49660
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8d0287b570ed1ff5393ff0ff04b9e5d2252c29bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9d6d65561e9b902202d4fc69d15d200482880cf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816 : Appeler GC.SuppressFinalize correctement
 |||  
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 -   Une méthode appelle <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> et passe un élément autre que celui-ci (Me en Visual Basic).  
   
 ## <a name="rule-description"></a>Description de la règle  
- Le <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> méthode permet aux utilisateurs de libérer des ressources à tout moment avant l’objet devienne disponible pour le garbage collection. Si la <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> est appelée, elle libère les ressources de l’objet. Cela rend la finalisation inutile. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>doit appeler <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> pour le garbage collector n’appelle pas le finaliseur de l’objet.  
+ Le <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> méthode permet aux utilisateurs de libérer des ressources à tout moment avant l’objet devienne disponible pour le garbage collection. Si la <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> est appelée, elle libère les ressources de l’objet. Cela rend la finalisation inutile. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> doit appeler <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> pour le garbage collector n’appelle pas le finaliseur de l’objet.  
   
  Pour empêcher les types dérivés avec finaliseurs réimplémenter <xref:System.IDisposable> et pour l’appeler, des types unsealed sans les finaliseurs doivent toujours appeler <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.  
   

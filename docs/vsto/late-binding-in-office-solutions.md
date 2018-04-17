@@ -1,12 +1,10 @@
 ---
 title: Liaison tardive dans les Solutions Office | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - casting, object to specific type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 430c10ffa5f79be45282d637b48772943be638e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7e205874e1c5c4e5de639e28768d6369b43c1e1a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="late-binding-in-office-solutions"></a>Liaison tardive dans les solutions Office
   Certains types dans les modèles objet des applications Office fournissent des fonctionnalités qui sont disponibles via les fonctionnalités de liaison tardive. Par exemple, certaines méthodes et propriétés peuvent retourner différents types d’objets en fonction du contexte de l’application Office, et certains types peuvent exposer des méthodes ou propriétés dans des contextes différents.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  Dans la plupart des cas, la documentation de référence répertorie les types de la valeur de retour possibles pour un membre qui retourne un <xref:System.Object>. Conversion ou le cast de l’objet permet à IntelliSense pour l’objet dans l’éditeur de Code.  
   
- Pour plus d’informations sur la conversion en Visual Basic, consultez [implicite et les Conversions explicites &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) et [fonction CType &#40; Visual Basic &#41; ](/dotnet/visual-basic/language-reference/functions/ctype-function).  
+ Pour plus d’informations sur la conversion en Visual Basic, consultez [Conversions implicites et explicites &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) et [CType, fonction &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
   
 ### <a name="examples"></a>Exemples  
  L’exemple de code suivant montre comment effectuer un cast d’un objet à un type spécifique dans un projet Visual Basic où **Option Strict** sur. Dans ce type de projet, vous devez caster explicitement la <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> propriété à un <xref:Microsoft.Office.Interop.Excel.Range>. Cet exemple requiert un projet Excel de niveau document avec une classe de feuille de calcul nommée `Sheet1`.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Voir aussi  
  [Écriture de Code dans les Solutions Office](../vsto/writing-code-in-office-solutions.md)   
  [Paramètres optionnels dans les Solutions Office](../vsto/optional-parameters-in-office-solutions.md)   
- [À l’aide de Type dynamique &#40; C &#35; Guide de programmation &#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
+ [Utilisation du Type dynamic &#40;C&#35; Guide de programmation&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Option Strict, instruction](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Réflexion (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Réflexion (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  

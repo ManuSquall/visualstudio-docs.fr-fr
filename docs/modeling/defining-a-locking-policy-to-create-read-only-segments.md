@@ -1,21 +1,19 @@
 ---
-title: "Définition d’une stratégie de verrouillage pour créer des Segments en lecture seule | Documents Microsoft"
-ms.custom: 
+title: Définition d’une stratégie de verrouillage pour créer des Segments en lecture seule | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dc7e620c04e31a063bbe8fada68527d391f0a903
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 75fe3205f1b43cb21fa78976ac2547ef3bd2fdfc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 L’API immuabilité de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK permet à un programme à tout ou partie de verrouillage d’un modèle de langage de spécifique à un domaine (DSL) afin qu’elle peut être lue mais pas modifié. Cette option en lecture seule peut être utilisée, par exemple, afin qu’un utilisateur peut demander à vos collègues à annoter et passez en revue un modèle DSL, mais il peut ne pas autoriser les à partir de la modification de l’original.  
@@ -70,7 +68,7 @@ partition.SetLocks(Locks.Delete);
 -   Interdire l’ajout et suppression d’éléments et les relations des catégories spécifiques, mais autorise les modifications de propriété. Cela fournit aux utilisateurs un formulaire fixe dans lequel ils peuvent remplir les propriétés.  
   
 ## <a name="lock-values"></a>Valeurs de verrou  
- Verrous peuvent être définies sur un magasin, une Partition ou un ModelElement individuel. Verrous est un `Flags` énumération : vous pouvez combiner ses valeurs à l’aide de ' &#124;'.  
+ Verrous peuvent être définies sur un magasin, une Partition ou un ModelElement individuel. Verrous est un `Flags` énumération : vous pouvez combiner ses valeurs à l’aide de '&#124;'.  
   
 -   Les verrous d’un ModelElement toujours incluent les verrous de sa Partition.  
   
@@ -80,7 +78,7 @@ partition.SetLocks(Locks.Delete);
   
 |Value|Ce qui signifie que si `IsLocked(Value)` a la valeur true|  
 |-----------|------------------------------------------|  
-|Aucun.|Aucune restriction.|  
+|Aucun|Aucune restriction.|  
 |Propriété|Propriétés du domaine d’éléments ne peut pas être modifiées. Cela ne s’applique pas aux propriétés qui sont générées par le rôle d’une classe de domaine dans une relation.|  
 |Ajouter|Nouveaux éléments et les liens ne peut pas être créés dans une partition ou à stocker.<br /><br /> Non applicable à `ModelElement`.|  
 |Déplacement|Élément ne peut pas être déplacé entre des partitions si `element.IsLocked(Move)` a la valeur true, ou si `targetPartition.IsLocked(Move)` a la valeur true.|  
@@ -103,7 +101,7 @@ partition.SetLocks(Locks.Delete);
 -   Ajouter cette classe pour les services qui sont disponibles via le DocData de votre DSL.  
   
 ### <a name="to-define-a-locking-policy"></a>Pour définir une stratégie de verrouillage  
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>a la définition suivante :  
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> a la définition suivante :  
   
 ```  
 public interface ILockingPolicy  
@@ -116,7 +114,7 @@ public interface ILockingPolicy
   
  Ces méthodes sont appelées lorsqu’un appel est effectué à `SetLocks()` sur un magasin, une Partition ou un ModelElement. Dans chaque méthode, vous sont fournies avec un ensemble proposé de verrous. Vous pouvez retourner le jeu proposé, ou vous pouvez ajouter et soustraire des verrous.  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 using Microsoft.VisualStudio.Modeling;  
@@ -146,7 +144,7 @@ namespace Company.YourDsl.DslPackage // Change
   
 ```  
   
- Pour vous assurer que les utilisateurs peuvent toujours supprimer des éléments, même si d’autres appels de code`SetLocks(Lock.Delete):`  
+ Pour vous assurer que les utilisateurs peuvent toujours supprimer des éléments, même si d’autres appels de code `SetLocks(Lock.Delete):`  
   
  `return proposedLocks & (Locks.All ^ Locks.Delete);`  
   

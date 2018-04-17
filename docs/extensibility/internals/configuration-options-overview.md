@@ -1,26 +1,24 @@
 ---
-title: "Vue d’ensemble des Options de configuration | Documents Microsoft"
-ms.custom: 
+title: Vue d’ensemble des Options de configuration | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 85ee328b278ef9eb1d81acfc5a8299920a221e59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuration-options-overview"></a>Vue d’ensemble des Options de configuration
 Dans les projets [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut prendre en charge les configurations multiples qui peuvent être générées, débogué, exécution et/ou déployé. Une configuration est un type de build avec un jeu nommé de propriétés, en général, les commutateurs du compilateur et les emplacements de fichiers. Par défaut, les nouvelles solutions contiennent deux configurations Debug et Release. Ces configurations peuvent être appliquées à l’aide de leurs paramètres par défaut ou modifiés pour répondre à vos besoins spécifiques de solution ou projet. Certains packages peuvent être générées de deux manières : en tant qu’un éditeur ActiveX ou un composant en place. Pour prendre en charge les configurations à plusieurs, toutefois, les projets est inutile. S’il n'existe qu’une seule configuration disponible, cette configuration est mappée dans toutes les configurations de solution.  
@@ -57,15 +55,15 @@ Interfaces de configuration
   
  Quelques remarques concernant le diagramme précédent :  
   
--   `IDispatch`est marqué comme facultatif dans l’objet de Configuration. Plus précisément, elle est facultative pour que les interfaces de configuration sur l’objet.  
+-   `IDispatch` est marqué comme facultatif dans l’objet de Configuration. Plus précisément, elle est facultative pour que les interfaces de configuration sur l’objet.  
   
--   `IVsDebuggableProjectCfg`est marqué comme facultatif dans l’objet de Configuration, mais est requis pour la prise en charge le débogage.  
+-   `IVsDebuggableProjectCfg` est marqué comme facultatif dans l’objet de Configuration, mais est requis pour la prise en charge le débogage.  
   
--   `IVsProjectCfg2`est marqué comme facultatif dans l’objet de Configuration, mais est nécessaire pour la prise en charge de regroupement de sortie.  
+-   `IVsProjectCfg2` est marqué comme facultatif dans l’objet de Configuration, mais est nécessaire pour la prise en charge de regroupement de sortie.  
   
 -   Le `Config Provider` objet est marqué en tant qu’objet facultatif, mais l’option est l’emplacement de l’implémenter. Vous pouvez implémenter l’objet sur l’objet de projet ou sur un objet distinct.  
   
--   `IVsCfgProvider2`est nécessaire pour la prise en charge de la plateforme et la modification de configuration. `IVsCfgProvider`est suffisant si vous n’implémentez pas cette fonctionnalité.  
+-   `IVsCfgProvider2` est nécessaire pour la prise en charge de la plateforme et la modification de configuration. `IVsCfgProvider` est suffisant si vous n’implémentez pas cette fonctionnalité.  
   
 -   Certains de ces objets indiqués dans le schéma comme des objets distincts peuvent être combinés dans la même classe, si possible en fonction de vos besoins de conception spécifiques. Dans d’autres rubriques de cette section, toutefois, les objets et les interfaces associées à ces objets seront abordées selon le scénario présenté dans le diagramme.  
   

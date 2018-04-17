@@ -1,13 +1,10 @@
 ---
-title: "Parcourir le Code avec le débogueur dans Visual Studio | Documents Microsoft"
+title: Parcourir le Code avec le débogueur dans Visual Studio | Documents Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 4e39c343531b7ce81c202e979117d3d2c7196cd7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Parcourir le Code avec le débogueur Visual Studio
 Vous familiariser avec les commandes et des raccourcis pour parcourir le code dans le débogueur, et qui rend plus rapide et plus facile rechercher et résoudre les problèmes de votre application. Pendant que vous naviguez dans le code dans le débogueur, vous pouvez examiner l’état de votre application ou en savoir plus sur ses flux d’exécution.  
@@ -35,7 +31,7 @@ Vous familiariser avec les commandes et des raccourcis pour parcourir le code da
   
  La flèche verte démarre également le débogueur (identique à **F5**).  
   
- ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;notions de base&#95;Démarrer&#95;débogage](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
  Incluent d’autres manières que vous pouvez démarrer l’application avec le débogueur attaché **F11** ([pas à pas détaillé code](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([pas à pas principal code](#BKMK_Step_over_Step_out)), ou par à l’aide de **exécuter jusqu’au curseur**.  Consultez les autres sections de cette rubrique pour plus d’informations sur les opérations de ces options.  
   
@@ -47,7 +43,7 @@ Vous familiariser avec les commandes et des raccourcis pour parcourir le code da
   
  La plupart des fonctionnalités du débogueur, comme l’affichage des valeurs des variables dans la fenêtre variables locales ou l’évaluation des expressions dans la fenêtre Espion, sont disponibles uniquement lorsque le débogueur est suspendu (également appelé *en mode arrêt*). Lorsque le débogueur est en pause, état de votre application est interrompue lors de fonctions, variables, et les objets restent en mémoire. En mode arrêt, vous pouvez examiner les positions et états à la recherche de violations ou de bogues. Pour certains types de projet, vous pouvez également effectuer des ajustements à l’application en mode arrêt. Pour visionner une vidéo ces fonctionnalités, consultez [mise en route avec le débogueur](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a>L’étape dans du code, ligne par ligne  
+##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> L’étape dans du code, ligne par ligne  
  Pour arrêter de chaque ligne de code (chaque instruction) pendant le débogage, utilisez le **F11** raccourci clavier (ou **déboguer** > **pas à pas détaillé** dans le menu).  
   
 > [!TIP]
@@ -75,7 +71,7 @@ Vous familiariser avec les commandes et des raccourcis pour parcourir le code da
   
  Pour suivre visuellement la pile des appels lors de l’exécution pas à pas dans les fonctions, consultez [mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-##  <a name="BKMK_Step_over_Step_out"></a>Parcourir le code, ignorer des fonctions  
+##  <a name="BKMK_Step_over_Step_out"></a> Parcourir le code, ignorer des fonctions  
  Lors de l’exécution de code dans le débogueur, fréquence à laquelle vous bénéficiez des avantages que vous n’avez pas besoin de voir ce qui se passe dans une fonction particulière (vous ne vous souciez il ou qu’elle fonctionne, comme le code de bibliothèque bien testé). Utilisez ces commandes pour parcourir le code (les fonctions s’exécutent toujours, bien sûr, mais le débogueur ignore les).  
   
 |Commande de clavier|Commande de menu|Description|  
@@ -86,7 +82,7 @@ Vous familiariser avec les commandes et des raccourcis pour parcourir le code da
 > [!TIP]
 >  Si vous avez besoin rechercher le point d’entrée dans votre application, commencez par **F10** ou **F11**. Ces commandes sont souvent utiles lorsque vous recherchez plus d’informations sur son flux d’exécution ou inspecter l’état de votre application.  
   
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>Exécuter à un emplacement spécifique ou d’une fonction  
+##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Exécuter à un emplacement spécifique ou d’une fonction  
  Fréquence à laquelle la méthode recommandée de débogage de code, ces méthodes sont utiles lorsque vous savez exactement quel code que vous voulez inspecter, ou au moins vous savez où vous souhaitez démarrer le débogage.  
   
 -   **Définir des points d'arrêt dans le code**  
@@ -132,7 +128,7 @@ Vous familiariser avec les commandes et des raccourcis pour parcourir le code da
   
      ![Choisissez la boîte de dialogue points d’arrêt](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
   
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a>Déplacez le pointeur pour modifier le flux d’exécution  
+##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Déplacez le pointeur pour modifier le flux d’exécution  
  Lorsque le débogueur est suspendu, vous pouvez déplacer le pointeur d’instruction pour définir l’instruction suivante de code à exécuter. Dans la marge d'une fenêtre source ou Code Machine, une flèche jaune marque l'emplacement de la prochaine instruction à exécuter. Déplacer cette flèche permet d'ignorer une partie du code ou de revenir à une ligne déjà exécutée. Vous pouvez utiliser cette fonctionnalité, par exemple, pour ignorer une section de code qui contient un bogue connu.  
   
  ![Déplacer le pointeur](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")

@@ -1,11 +1,8 @@
 ---
-title: "Gérer une exception d’accès concurrentiel | Documents Microsoft"
-ms.custom: 
+title: Gérer une exception d’accès concurrentiel | Documents Microsoft
+ms.custom: ''
 ms.date: 09/11/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,17 @@ helpviewer_keywords:
 - updating datasets, errors
 - concurrency control, walkthroughs
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
-caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 71572ac38c7aed3154360d3bad9e4b84fe0107e3
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: 816d00c4d2c08ba5122b0d9a3f6091937243270a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="handle-a-concurrency-exception"></a>Gérer une exception d’accès concurrentiel
 Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) sont déclenchés lorsque deux utilisateurs tentent de modifier les mêmes données dans une base de données en même temps. Dans cette procédure pas à pas, vous créez une application Windows qui montre comment intercepter un <xref:System.Data.DBConcurrencyException>, recherchez la ligne qui a provoqué l’erreur et savoir comment la gérer une stratégie.  
@@ -68,7 +65,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 > [!NOTE]
 >  Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="create-a-new-project"></a>Créer un projet  
+## <a name="create-a-new-project"></a>Créer un nouveau projet  
  Commencez votre procédure pas à pas par la création d’une application Windows Forms.  
   
 #### <a name="to-create-a-new-windows-forms-application-project"></a>Pour créer un projet d’application Windows Forms  

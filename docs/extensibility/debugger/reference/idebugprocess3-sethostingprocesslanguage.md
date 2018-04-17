@@ -1,29 +1,25 @@
 ---
 title: IDebugProcess3::SetHostingProcessLanguage | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3::SetHostingProcessLanguage
 helpviewer_keywords:
 - IDebugProcess3::SetHostingProcessLanguage
 ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59f613543a0f80c1dfc7f43d0973d19fb1a4dd6e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4c6102761e69f8e6cc8bf0d94a81740c934d558f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 Cette méthode définit la langue qui sera hébergé sous le processus. Ce langage peut ensuite être utilisé par le moteur de débogage (DE) pour charger l’évaluateur d’expression appropriée.  

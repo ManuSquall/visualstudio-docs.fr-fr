@@ -1,24 +1,22 @@
 ---
-title: "Modéliser les besoins des utilisateurs | Documents Microsoft"
-ms.custom: 
+title: Modéliser les besoins des utilisateurs | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1401328b53f03d6ff1121e93ac7e56ebba0e585e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3837c6876c8eb1beecea13fb501a78c764555d9e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-user-requirements"></a>Modéliser les besoins des utilisateurs
 
@@ -63,7 +61,7 @@ Vous pouvez créer plusieurs vues différentes des impératifs des utilisateurs.
 
 Une règle métier est un impératif qui n’est associé à aucun cas d’usage particulier et doit être respecté à l’échelle du système.  
   
- De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *statique ** des règles d’entreprise* sous forme de commentaires associés aux classes pertinentes sur un diagramme de classes conceptuel. Exemple :  
+ De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *statique ** des règles d’entreprise* sous forme de commentaires associés aux classes pertinentes sur un diagramme de classes conceptuel. Par exemple :  
   
  ![Règle de commentaire est associé à la classe Order. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")  
   

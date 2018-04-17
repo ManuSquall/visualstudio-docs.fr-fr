@@ -1,23 +1,21 @@
 ---
-title: "Cache de schéma | Documents Microsoft"
-ms.custom: 
+title: Cache de schéma | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a7a089e799c2480f667eb000d39c3036220d02e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="schema-cache"></a>Cache de schéma
 L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml\Schemas. Le cache de schéma est global pour tous les utilisateurs employant votre ordinateur et comprend des schémas XML standard utilisés pour IntelliSense et la validation de documents XML.  
@@ -29,22 +27,22 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
 |Filename|Description|  
 |--------------|-----------------|  
 |catalog.xsd|Schéma pour des fichiers catalogue de schémas de l'éditeur XML. Pour des informations sur les catalogues de schémas, voir ci-dessous.|  
-|DotNetConfig.xsd|Schéma pour les fichiers Web.Config, « http://schemas.microsoft.com/.NETConfiguration/v2.0 ».|  
-|msbuild.xsd|Schéma pour les fichiers de construction MSBuild, « http://schemas.microsoft.com/developer/msbuild/2003 ».|  
+|DotNetConfig.xsd|Schéma pour les fichiers Web.Config, «http://schemas.microsoft.com/.NETConfiguration/v2.0».|  
+|msbuild.xsd|Schéma pour les fichiers MSBuild, «http://schemas.microsoft.com/developer/msbuild/2003».|  
 |msdata.xsd|Schéma pour les annotations XSD ajoutées par la classe <xref:System.Data.DataSet>, « urn:schemas-microsoft-com:xml-msdata ».|  
 |msxsl.xsd|Schéma pour les extensions de bloc de script Microsoft XSLT, urn:schemas-microsoft-com:xslt.|  
 |SnippetFormat.xsd|Schéma pour les fichiers XML d'extrait de code. Pour des exemples, consultez %InstallDir%\VC#\Expansions.|  
-|Soap1.1.xsd|Schéma pour Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.|  
+|Soap1.1.xsd|Schéma pour Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.|  
 |Soap1.2.xsd|Schéma pour Simple Object Access Protocol 1.2.|  
-|SiteMapSchema.xsd|Schéma pour le fichier XML de plan de site ASP.NET, « http://schemas.microsoft.com/AspNet/SiteMap-File-1.0 ».|  
-|wsdl.xsd|Schéma pour le langage WSDL (Web Service Description Language), http://schemas.xmlsoap.org/wsdl/.|  
+|SiteMapSchema.xsd|Schéma pour le fichier XML de plan de site ASP.NET, «http://schemas.microsoft.com/AspNet/SiteMap-File-1.0».|  
+|wsdl.xsd|Schéma de langage de Description de Service Web, http://schemas.xmlsoap.org/wsdl/.|  
 |xenc.xsd|Schéma pour le chiffrement XML, http://www.w3.org/2000/09/xmldsig#.|  
 |xhtml.xsd|Schéma pour XHTML http://www.w3.org/1999/xhtml.|  
 |xlink.xsd|Schéma pour XLink1.0, http://www.w3.org/1999/xlink.|  
-|xml.xsd|Schéma décrivant les attributs xml:space et xml:lang, http://www.w3.org/XML/1998/namespace.|  
+|xml.xsd|Schéma décrivant les attributs XML : space et XML : lang, http://www.w3.org/XML/1998/namespace.|  
 |xmlsig.xsd|Schéma pour XML Digital Signatures, http://www.w3.org/2000/09/xmldsig#.|  
 |xsdschema.xsd|Schéma décrivant XSD lui-même, http://www.w3.org/2001/XMLSchema.|  
-|xslt.xsd|Schéma pour les transformations XML, http://www.w3.org/1999/XSL/Transform.|  
+|xslt.xsd|Schéma pour XML les transformations, http://www.w3.org/1999/XSL/Transform.|  
   
 ## <a name="updating-schemas-in-the-cache"></a>Mise à jour des schémas dans le cache  
  L'éditeur charge le répertoire de cache de schéma lors du chargement du package de l'éditeur XML et contrôle si des modifications ont été apportées pendant l'exécution. Si un schéma a été ajouté, il est automatiquement chargé dans un index en mémoire des schémas connus. Si un schéma a été supprimé, il est automatiquement effacé de l'index en mémoire. Si un schéma a été mise à jour, il invalide automatiquement le cache en mémoire de ce schéma.  

@@ -1,18 +1,18 @@
 ---
-title: "Comment : créer une Application de Service de Workflow WCF | Documents Microsoft"
+title: 'Comment : créer une Application de Service de Workflow WCF | Documents Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 12d675ac-27d8-4d86-ba16-6f7688f8c841
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c7aed27c4dc092a1cf4d8ba51a10a4aac0741b
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: d901354b4a6a5f90ef75567131540405af7c9690
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Procédure : créer une application de service de workflow WCF
 
@@ -37,7 +37,7 @@ Les applications de service de workflow [!INCLUDE[indigo1](../workflow-designer/
 7.  Dans le **Solution** , sélectionnez soit créer une nouvelle solution, puis cliquez sur **OK**.
 
     > [!NOTE]
-    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter**, puis  **Nouveau projet...**  pour ouvrir le **nouveau projet** boîte de dialogue. Procédez comme décrit ci-dessus dans cette procédure.
+    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter**, puis **Nouveau projet...** pour ouvrir le **nouveau projet** boîte de dialogue. Procédez comme décrit ci-dessus dans cette procédure.
 
 8.  Le modèle de projet crée une définition de service au format XAML. Le Concepteur de flux de travail Windows s’ouvre en mode design avec un <xref:System.Activities.Statements.Sequence> activité qui contient un ensemble de <xref:System.ServiceModel.Activities.Receive> et <xref:System.ServiceModel.Activities.SendReply> activités.
 

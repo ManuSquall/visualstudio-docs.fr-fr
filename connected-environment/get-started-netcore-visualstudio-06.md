@@ -2,17 +2,17 @@
 title: Créer un environnement de développement .NET Core constitué de conteneurs en utilisant Kubernetes dans le cloud avec Visual Studio - Étape 6 - Découvrir le développement en équipe | Microsoft Docs
 author: johnsta
 ms.author: johnsta
-ms.date: 02/20/2018
+ms.date: 04/05/2018
 ms.topic: get-started-article
 ms.technology: vsce-kubernetes
 description: Développement rapide Kubernetes à l’aide de conteneurs et de microservices sur Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, conteneurs
 manager: ghogen
-ms.openlocfilehash: fb05df7782c23c6caa973e0c1ad3e9433e8b2470
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: d8d81afbe4fbf99c52107c8afc6f1eb9938de792
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core-and-visual-studio"></a>Bien démarrer avec Connected Environment et .NET Core et Visual Studio
 
@@ -100,4 +100,4 @@ Pour tester la nouvelle version de `mywebapi` avec `webfrontend`, ouvrez votre n
 Maintenant, ajoutez la partie « scott- » à l’URL sous la forme https://scott-webfrontend-teamenv.vsce.io, puis actualisez le navigateur. Le point d’arrêt que vous définissez dans votre projet `mywebapi` doit être atteint. Appuyer sur F5 pour continuer ; le message « Hello webfrontend and mywebapi now says something new » doit maintenant être affiché dans votre navigateur. Cela est dû au fait que le chemin de votre code mis à jour dans `mywebapi` s’exécute dans l’espace `scott`.
 
 > [!div class="nextstepaction"]
-> [Récapitulatif](get-started-netcore-visualstudio-07.md)
+> [Résumé](get-started-netcore-visualstudio-07.md)

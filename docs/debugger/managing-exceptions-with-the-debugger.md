@@ -1,13 +1,10 @@
 ---
-title: "Gérer des exceptions avec le débogueur Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Gérer des exceptions avec le débogueur Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 04/05/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -33,17 +30,16 @@ helpviewer_keywords:
 - native run-time checks
 - exceptions, debugging
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 978c78ba68460a2f038d85afb92246275acfb9ef
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 063f4581a741325ce34022b731322cf0a4e37e39
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gérer des exceptions avec le débogueur dans Visual Studio
 
@@ -145,7 +141,7 @@ Si vous sélectionnez une exception dans le **paramètres d’Exception** fenêt
   
  ![Restaurer les valeurs par défaut dans les paramètres d’Exception](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-##  <a name="BKMK_UserUnhandled"></a>Demander au débogueur de continuer en cas d’exceptions non gérées par l’utilisateur  
+##  <a name="BKMK_UserUnhandled"></a> Demander au débogueur de continuer en cas d’exceptions non gérées par l’utilisateur  
  Si vous déboguez du code .NET ou JavaScript avec [Just My Code](../debugger/just-my-code.md), vous pouvez demander au débogueur de ne pas s’arrêter sur les exceptions qui ne sont pas gérées dans le code utilisateur, mais qui sont gérées ailleurs.  
   
 1.  Dans la fenêtre **Paramètres d'exception** , ouvrez le menu contextuel en cliquant avec le bouton droit dans la fenêtre, puis en sélectionnant **Afficher les colonnes**. (Si vous avez désactivé **Uniquement mon code**, cette commande n'est pas visible.)  
@@ -156,7 +152,7 @@ Si vous sélectionnez une exception dans le **paramètres d’Exception** fenêt
   
  Par exemple, les applications web ASP.NET gèrent les exceptions en les convertissant en code d’état HTTP 500 ([Gestion des exceptions dans l’API ASP.NET](http://www.asp.net/web-api/overview/error-handling/exception-handling)), ce qui peut compliquer l’identification de la source de l’exception. Dans l'exemple ci-dessous, le code utilisateur appelle `String.Format()` qui lève une exception <xref:System.FormatException>. L'exécution s'interrompt de la façon suivante :  
   
- ![sauts de l’utilisateur &#45; arrêts exception](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+ ![marque un arrêt sur utilisateur&#45;arrêts exception](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ## <a name="add-and-delete-exceptions"></a>Ajouter et supprimer des exceptions  
  Vous pouvez ajouter et supprimer des exceptions. Vous pouvez supprimer n'importe quel type d'exception de n'importe quelle catégorie en sélectionnant l'exception et en cliquant sur le bouton **Supprimer** (signe moins) de la barre d'outils **Paramètres d'exception** , ou en cliquant avec le bouton droit sur l'exception et en sélectionnant **Supprimer** dans le menu contextuel. La suppression d'une exception a le même effet que si l'exception est désactivée, c'est-à-dire que le débogueur ne s'arrête pas lorsqu'elle est levée.  
@@ -190,7 +186,7 @@ public class GenericException<T> : Exception
 Vous pouvez définir des conditions sur les exceptions dans le **paramètres d’Exception** boîte de dialogue. Les conditions actuellement pris en charge incluent les noms de module à inclure ou exclure de l’exception. En définissant des noms de module en tant que conditions, vous pouvez choisir Arrêter l’exécution de l’exception uniquement sur les modules de code particulier, ou vous pouvez éviter avec rupture dans les modules particuliers.
 
 > [!NOTE]
-> Ajout de conditions à une exception est une nouveauté dans[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+> Ajout de conditions à une exception est une nouveauté dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Pour ajouter des exceptions conditionnelles, choisissez la **modifier la condition** icône dans la boîte de dialogue Paramètres d’Exception ou l’exception d’avec le bouton droit et sélectionnez **modifier les Conditions de**.
 

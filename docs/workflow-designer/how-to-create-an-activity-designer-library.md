@@ -1,18 +1,18 @@
 ---
-title: "Comment : créer une bibliothèque ActivityDesigner | Documents Microsoft"
+title: 'Comment : créer une bibliothèque ActivityDesigner | Documents Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 5b62e092-63b3-462d-9d77-fb112482f45d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f257aabb4b1c2c1b1dce05e34273dc303a8f7da
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: c0dc336db00f8a638cf20e6af79f2cf7ec030a5f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Procédure : créer une bibliothèque ActivityDesigner
 Les concepteurs d'activités personnalisées vous permettent de créer une interface utilisateur pour une activité standard ou personnalisée. Vous contrôlez la complexité de l'interface utilisateur et avez la possibilité de créer plusieurs concepteurs d'activités pour une activité. Ce scénario vous permet de créer des concepteurs adaptés pour plusieurs audiences.

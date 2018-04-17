@@ -1,21 +1,19 @@
 ---
-title: "T4 Directive d’inclusion | Documents Microsoft"
-ms.custom: 
+title: T4 Directive d’inclusion | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0de398b381cd1e45ff43b3eb1df79c9becd829c4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4cfa7742a75b24288ef3617d8195a75e13d8e817
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="t4-include-directive"></a>Directive d'inclusion T4
 Dans un modèle de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez inclure du texte d'un autre fichier à l'aide d'une directive `<#@include#>`. Vous pouvez placer les directives `include` n'importe où dans un modèle de texte avant le premier bloc de fonctionnalité de classe `<#+ ... #>`. Les fichiers inclus peuvent également contenir des directives `include` et d'autres directives. Cela vous permet de partager du code de modèle et du texte réutilisable entre les modèles.  
@@ -32,7 +30,7 @@ Dans un modèle de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_
   
      Ces dossiers d’inclusion supplémentaires peuvent dépendre de l’extension du fichier d’inclusion. Par exemple, le dossier d'inclusion des outils DSL est uniquement accessible aux fichiers d'inclusion ayant l'extension de fichier `.tt`  
   
--   `filePath` peut inclure des variables d'environnement délimitées par "%". Exemple :  
+-   `filePath` peut inclure des variables d'environnement délimitées par "%". Par exemple :  
   
     ```  
     <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
@@ -50,7 +48,7 @@ Dans un modèle de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_
   
      Cela rend fonctionnalité faciles à générer une bibliothèque d’extraits de code T4 réutilisables que vous pouvez inclure à sera qui ne certains autres extrait a déjà incluses.  Par exemple, supposons que vous avez une bibliothèque de très petits extraits de code qui traitent de traitement du modèle et de la génération de c#.  À son tour, ceux-ci sont utilisés par certains utilitaires plus spécifiques à une tâche, telles que la génération des exceptions que vous pouvez ensuite utiliser à partir de n’importe quel modèle plus spécifiques à l’application. Si vous dessinez le graphique de dépendance, vous constatez que certains extraits de code sont inclus plusieurs fois. Mais le paramètre `once` empêche les inclusions suivantes.  
   
- **MyTextTemplate.tt:**  
+ **MyTextTemplate.tt :**  
   
 ```  
 <#@ output extension=".txt" #>  
@@ -64,7 +62,7 @@ Output message 5 (from top template).
   
 ```  
   
- **TextFile1.t4:**  
+ **TextFile1.t4 :**  
   
 ```  
    Output Message 2 (from included file).  
@@ -81,7 +79,7 @@ void GenerateMessage(int n)
   
 ```  
   
- **TextFile2.t4:**  
+ **TextFile2.t4 :**  
   
 ```  
         Output Message 3 (from included file 2).  
@@ -111,7 +109,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a>À l’aide des propriétés de projet dans MSBuild et Visual Studio  
+##  <a name="msbuild"></a> À l’aide des propriétés de projet dans MSBuild et Visual Studio  
  Bien que vous pouvez utiliser des macros de Visual Studio telles que $ (SolutionDir) dans une directive include, ils ne fonctionnent pas dans MSBuild. Si vous souhaitez transformer les modèles de votre ordinateur de build, vous devez utiliser les propriétés de projet à la place.  
   
  Modifiez votre fichier projet .csproj ou .vbproj pour définir une propriété de projet. Cet exemple définit une propriété nommée `myIncludeFolder` :  

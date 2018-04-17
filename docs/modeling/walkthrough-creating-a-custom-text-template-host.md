@@ -1,27 +1,25 @@
 ---
-title: "Procédure pas à pas : Création d’un hôte de modèle de texte personnalisé | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création d’un hôte de modèle de texte personnalisé | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ad2bc2a049a0a96a8093289af4648f077f2d1478
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b5084734e06eb911aa53a6436ba9ee29cb85f702
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Procédure pas à pas : création d'un hôte de modèle de texte personnalisé
-A *modèle de texte ** hôte* fournit un environnement qui permet la *moteur de transformation de modèle de texte* à exécuter. L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou *processeur de directive* qui a besoin d’un fichier ou un assembly peut demander une ressource à partir de l’ordinateur hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).  
+A *modèle de texte**hôte* fournit un environnement qui permet la *moteur de transformation de modèle de texte* à exécuter. L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou *processeur de directive* qui a besoin d’un fichier ou un assembly peut demander une ressource à partir de l’ordinateur hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).  
   
  Vous pouvez écrire un hôte personnalisé si vous souhaitez utiliser le *transformation du modèle de texte* en dehors de la fonctionnalité de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou si vous souhaitez intégrer cette fonctionnalité à des outils personnalisés. Pour créer un hôte personnalisé, vous devez créer une classe qui hérite de <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Pour obtenir la documentation de méthodes individuelles, consultez <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   

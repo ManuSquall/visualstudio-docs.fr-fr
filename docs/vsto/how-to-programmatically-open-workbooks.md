@@ -1,12 +1,10 @@
 ---
-title: "Comment : ouvrir des classeurs par programmation | Documents Microsoft"
-ms.custom: 
+title: 'Comment : ouvrir des classeurs par programmation | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], opening workbooks
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 11fe801cf80c15953056f4f6fdd50c5c4fadd3c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a243e4972bcee77aa9d76957ab5cce289e30e120
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Comment : ouvrir des classeurs par programmation
   Le <xref:Microsoft.Office.Interop.Excel.Workbooks> collection dans Microsoft Office Excel permet de travailler avec tous les classeurs ouverts et d’ouvrir des classeurs.  
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/10/2018
  [Comment : créer des classeurs par programmation](../vsto/how-to-programmatically-create-new-workbooks.md)   
  [Comment : enregistrer des classeurs par programmation](../vsto/how-to-programmatically-save-workbooks.md)   
  [Comment : fermer des classeurs par programmation](../vsto/how-to-programmatically-close-workbooks.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Paramètres optionnels dans les Solutions Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)  
   

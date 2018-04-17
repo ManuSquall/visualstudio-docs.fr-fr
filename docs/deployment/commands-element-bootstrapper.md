@@ -1,13 +1,10 @@
 ---
-title: "&lt;Commandes&gt; élément (programme d’amorçage) | Documents Microsoft"
-ms.custom: 
+title: '&lt;Commandes&gt; élément (programme d’amorçage) | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <Commands> element [bootstrapper]
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9d886d7fa7ea2ab6cb8c04810ab404a29898cd02
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Commandes&gt; élément (programme d’amorçage)
 Le `Commands` élément implémente les tests décrits par les éléments figurant sous le `InstallChecks` élément et déclare le package que le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] programme d’amorçage doit installer si le test échoue.  
@@ -96,7 +92,7 @@ Le `Commands` élément implémente les tests décrits par les éléments figura
 ## <a name="bypassif"></a>BypassIf  
  Le `BypassIf` élément est un enfant de le `InstallConditions` élément et décrit une condition positive sous lequel la commande ne doit pas être exécutée. Chaque `InstallConditions` élément peut avoir zéro ou plusieurs `BypassIf` éléments.  
   
- `BypassIf`a les attributs suivants.  
+ `BypassIf` a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -108,7 +104,7 @@ Le `Commands` élément implémente les tests décrits par les éléments figura
 ## <a name="failif"></a>FailIf  
  Le `FailIf` élément est un enfant de le `InstallConditions` élément et décrit une condition positive sous laquelle l’installation doit s’arrêter. Chaque `InstallConditions` élément peut avoir zéro ou plusieurs `FailIf` éléments.  
   
- `FailIf`a les attributs suivants.  
+ `FailIf` a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -119,10 +115,10 @@ Le `Commands` élément implémente les tests décrits par les éléments figura
 |`Schedule`|Facultatif. Le nom d’un `Schedule` balise qui définit quand cette règle doit être évaluée.|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- Le `ExitCodes` élément est un enfant de le `Command` élément. Le `ExitCodes` élément contient un ou plusieurs `ExitCode` éléments qui déterminent ce que l’installation doit faire en réponse à un code de sortie à partir d’un package. Il peut y avoir une option `ExitCode` élément sous un `Command` élément. `ExitCodes`possède pas d’attributs.  
+ Le `ExitCodes` élément est un enfant de le `Command` élément. Le `ExitCodes` élément contient un ou plusieurs `ExitCode` éléments qui déterminent ce que l’installation doit faire en réponse à un code de sortie à partir d’un package. Il peut y avoir une option `ExitCode` élément sous un `Command` élément. `ExitCodes` Possède pas d’attributs.  
   
 ## <a name="exitcode"></a>Code de sortie  
- Le `ExitCode` élément est un enfant de le `ExitCodes` élément. Le `ExitCode` détermine ce que l’installation doit faire en réponse à un code de sortie à partir d’un package. `ExitCode`ne contient aucun élément enfant et possède les attributs suivants.  
+ Le `ExitCode` élément est un enfant de le `ExitCodes` élément. Le `ExitCode` détermine ce que l’installation doit faire en réponse à un code de sortie à partir d’un package. `ExitCode` ne contient aucun élément enfant et possède les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  

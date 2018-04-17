@@ -1,26 +1,24 @@
 ---
-title: "Évaluation de l’expression (Kit de développement logiciel de débogage de Visual Studio) | Documents Microsoft"
-ms.custom: 
+title: Évaluation de l’expression (Kit de développement logiciel de débogage de Visual Studio) | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ed0e494cc0efd48ea3c22d9fd881aafec42a984b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 022a0ee21b7a58fdd69249b240490fc3c1df8361
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Évaluation de l’expression (Kit de développement logiciel de débogage de Visual Studio)
 En mode arrêt, l’IDE doit être en mesure d’évaluer des expressions simples qui impliquent plusieurs variables de votre programme. Pour ce faire, le moteur de débogage (DE) doit être en mesure d’analyser et d’évaluer une expression qui est entrée dans une des fenêtres de l’IDE.  
@@ -29,7 +27,7 @@ En mode arrêt, l’IDE doit être en mesure d’évaluer des expressions simple
   
  Le **IDebugExpression2** interface est implémentée par les appels DE son **EvalAsync** méthode pour retourner un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interface à l’IDE, afin d’afficher le résultats de l’évaluation d’expression dans l’IDE. [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) retourne une structure qui peut être utilisée pour placer la valeur d’une expression dans une fenêtre Espion ou dans la fenêtre variables locales.  
   
- Le package ou la session de débogage Gestionnaire de débogage (SDM) appelle [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) ou [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) pour obtenir un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interface qui représente le résultat de l’évaluation. `IDebugProperty2`a des méthodes qui retournent le nom, le type et la valeur de l’expression. Ces informations s’affichent dans les différentes fenêtres du débogueur.  
+ Le package ou la session de débogage Gestionnaire de débogage (SDM) appelle [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) ou [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) pour obtenir un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interface qui représente le résultat de l’évaluation. `IDebugProperty2` a des méthodes qui retournent le nom, le type et la valeur de l’expression. Ces informations s’affichent dans les différentes fenêtres du débogueur.  
   
 ## <a name="using-expression-evaluation"></a>L’évaluation d’Expression  
  Pour utiliser l’évaluation d’expression, vous devez implémenter la [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) (méthode) et toutes les méthodes de la [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) de l’interface, comme indiqué dans le tableau suivant.  

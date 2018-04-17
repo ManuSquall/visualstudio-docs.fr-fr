@@ -1,30 +1,26 @@
 ---
-title: "NumberOfParentCategoriesToRollUp (modèles Visual Studio) | Documents Microsoft"
-ms.custom: 
+title: NumberOfParentCategoriesToRollUp (modèles Visual Studio) | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#NumberOfParentCategoriesToRollUp
 helpviewer_keywords:
 - NumberOfParentCategoriesToRollUp element [Visual Studio Templates]
 - <NumberOfParentCategoriesToRollUp> element [Visual Studio Templates]
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdf100745a9dd6a388a9a29d52100aacb6c1b76b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e94e4b67727308657becac829bcdd30e571a2be6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (modèles Visual Studio)
 Spécifie le nombre de catégories parentes qui afficheront le modèle dans le **nouveau projet** boîte de dialogue.  

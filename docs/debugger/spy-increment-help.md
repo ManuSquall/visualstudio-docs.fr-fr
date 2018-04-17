@@ -1,27 +1,23 @@
 ---
 title: Aide de Spy ++ | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++ Help contents
 ms.assetid: 82155004-8d9e-4875-b7db-237a3cffb530
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10e50e8afde8bd4d5669ee899a061b708377f28f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c86666812d714757650a6728f13698f6f9c11a6d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="spy-help"></a>Aide de Spy++
 La documentation de l’utilitaire Spy ++ comprend deux groupes de rubriques générales sur à l’aide de Spy ++ et sur les vues Spy ++. Elles sont suivies par la référence Spy ++, qui fournit des détails supplémentaires sur chaque zone de boîte de dialogue et les commandes de menu disponibles.  

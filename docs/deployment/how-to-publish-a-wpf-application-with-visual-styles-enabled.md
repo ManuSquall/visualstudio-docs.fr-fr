@@ -1,23 +1,21 @@
 ---
-title: "Comment : publier une Application WPF avec des styles visuels sont activés | Documents Microsoft"
-ms.custom: 
+title: 'Comment : publier une Application WPF avec des styles visuels sont activés | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
-caps.latest.revision: "3"
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: bab4660d0e76e467bc95c373002a9035a4ccd672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2fbf3c2573d02111f5d1309fb80ceb09aa09f2e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Comment : publier une application WPF avec les styles visuels activés
 Styles visuels activer l’apparence des contrôles communs à changer en fonction du thème choisi par l’utilisateur. Par défaut, les styles visuels ne sont pas activés pour les applications Windows Presentation Foundation (WPF), ainsi, vous devez les activer manuellement. Toutefois, l’activation des styles visuels pour une application WPF, puis publiez la solution génère une erreur. Cette rubrique décrit comment résoudre cette erreur et le processus de publication d’une application WPF avec des styles visuels sont activés. Pour plus d’informations sur les styles visuels, consultez [vue d’ensemble des Styles Visual](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Pour plus d’informations sur le message d’erreur, consultez [dépannage des erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -34,7 +32,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
   
  Ensuite, vous pouvez déplacer les fichiers publiés à l’emplacement à partir de laquelle vous souhaitez les utilisateurs finaux pour installer l’application.  
   
-##  <a name="BKMK_publishsolwovs"></a>Publiez la solution sans les styles visuels sont activés  
+##  <a name="BKMK_publishsolwovs"></a> Publiez la solution sans les styles visuels sont activés  
   
 1.  Assurez-vous que votre projet n’a pas de styles visuels sont activés. Vérifiez tout d’abord, le fichier manifeste du projet pour le code XML suivant. Ensuite, si le code XML est présent, placez le code XML avec une balise de commentaire.  
   
@@ -48,7 +46,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
   
     ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Pour ouvrir le fichier manifeste dans un projet Visual Basic  
   
-    1.  Dans la barre de menus, choisissez **projet**, *nom_projet***propriétés**, où *nom_projet* est le nom de votre projet WPF.  
+    1.  Dans la barre de menus, choisissez **projet**, * NomProjet ***propriétés**, où *nom_projet* est le nom de votre projet WPF.  
   
          Les pages de propriétés pour votre projet WPF s’affichent.  
   
@@ -58,7 +56,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Pour ouvrir le fichier manifeste dans un projet c#  
   
-    1.  Dans la barre de menus, choisissez **projet**, *nom_projet***propriétés**, où *nom_projet* est le nom de votre projet WPF.  
+    1.  Dans la barre de menus, choisissez **projet**, * NomProjet ***propriétés**, où *nom_projet* est le nom de votre projet WPF.  
   
          Les pages de propriétés pour votre projet WPF s’affichent.  
   
@@ -73,7 +71,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
   
 2.  Générez et publiez votre solution. Pour plus d’informations sur la publication de la solution, consultez [Comment : publier une Application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-##  <a name="BKMK_CreateManifest"></a>Créer un fichier manifeste  
+##  <a name="BKMK_CreateManifest"></a> Créer un fichier manifeste  
   
 1.  Collez le code XML suivant dans un fichier du bloc-notes.  
   
@@ -94,7 +92,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
     > [!NOTE]
     >  Les procédures restantes supposent que le nom de ce fichier est **themes.manifest** et que le fichier est enregistré dans le répertoire C:\temp sur votre ordinateur.  
   
-##  <a name="BKMK_embedmanifest"></a>Incorporer le fichier manifeste dans le fichier exécutable de la solution publiée  
+##  <a name="BKMK_embedmanifest"></a> Incorporer le fichier manifeste dans le fichier exécutable de la solution publiée  
   
 1.  Ouvrez le **invite de commandes Visual Studio**.  
   
@@ -107,7 +105,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
     > -   La solution se trouve dans le répertoire suivant : `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
     >   
     >      La solution est publiée dans le répertoire suivant : `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   La version la plus récente des fichiers de l’application publiée est située dans le répertoire suivant :`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+    > -   La version la plus récente des fichiers de l’application publiée est située dans le répertoire suivant : `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
     >   
     >  Il est inutile d’utiliser le nom ou les emplacements de répertoire décrites ci-dessus. Le nom et les emplacements décrits ci-dessus sont utilisés uniquement pour illustrer les étapes requises pour publier votre solution.  
   
@@ -123,7 +121,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
-##  <a name="BKMK_signappdeplyman"></a>Signer les manifestes d’application et de déploiement  
+##  <a name="BKMK_signappdeplyman"></a> Signer les manifestes d’application et de déploiement  
   
 1.  À l’invite de commandes, exécutez la commande suivante pour supprimer le `.deploy` extension à partir du fichier exécutable dans le répertoire actif.  
   

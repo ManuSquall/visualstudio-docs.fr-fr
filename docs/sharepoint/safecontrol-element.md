@@ -1,13 +1,10 @@
 ---
-title: "SafeControl (élément) | Documents Microsoft"
-ms.custom: 
+title: SafeControl (élément) | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SafeControl element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7458120d7a130de96a1a271c83e5376fe94481f3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 14e5d2cfd526d228d84ac6ff084e3873224c08c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="safecontrol-element"></a>SafeControl, élément
   Représente un contrôle ASPX ou un WebPart désigné comme sécurisé pour tout utilisateur d’accéder sur n’importe quelle page ASPX sur le site SharePoint.  
@@ -68,7 +65,7 @@ ms.lasthandoff: 01/10/2018
   
 |||  
 |-|-|  
-|**Espace de noms**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Espace de noms**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**Nom du schéma**|Schéma d’élément de projet SharePoint|  
 |**Fichier de validation**|ProjectItemModelSchema.xsd|  
 |**Peut être vide.**|Non|  

@@ -1,12 +1,10 @@
 ---
-title: "Comment : ajouter un fichier de ressources | Documents Microsoft"
-ms.custom: 
+title: 'Comment : ajouter un fichier de ressources | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, resource files
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 47cae5fac3ddbcbc34535176701d0293ae4f66ba
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 132a5b5933b1bc96244238570091e522f8af91d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-resource-file"></a>Comment : ajouter un fichier de ressources
   Les commandes permettant d’ajouter des fichiers de ressources est dans le menu contextuel du nœud de la solution et des nœuds de fonctionnalité dans l’Explorateur de solutions. Pour plus d’informations, consultez [localiser des Solutions SharePoint](../sharepoint/localizing-sharepoint-solutions.md).  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Dans le **ajouter une ressource** boîte de dialogue, choisissez une culture pour le fichier de ressources, tel que l’anglais (États-Unis).  
   
-     Cette étape ajoute un fichier de ressources globales à votre solution dans le format, Resource*x***.** *culture***.** resx, par exemple, Resource1-US.resx.  
+     Cette étape ajoute un fichier de ressources globales à votre solution dans le format, Resource * x***.*** culture ***.** resx, par exemple, Resource1-US.resx.  
   
 5.  Lorsque le **éditeur de ressources** s’ouvre dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ajouter des ressources au fichier de ressources.  
   
@@ -51,7 +50,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le nom d’une fonctionnalité sous le **fonctionnalités** nœud, puis choisissez **ajouter une ressource de fonctionnalité**.  
   
-     Cette étape ajoute un fichier de ressources à la fonctionnalité dans le format, *ResourceFileName***.** *culture***.** resx, tel que Feature1.en-us.resx.  
+     Cette étape ajoute un fichier de ressources à la fonctionnalité dans le format, * ResourceFileName***.*** culture ***.** resx, tel que Feature1.en-us.resx.  
   
 3.  Lorsque le **éditeur de ressources** s’ouvre dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ajouter des ressources au fichier de ressources.  
   

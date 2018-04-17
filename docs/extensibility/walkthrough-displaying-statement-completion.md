@@ -1,27 +1,23 @@
 ---
-title: "Procédure pas à pas : Affichage de saisie semi-automatique des instructions | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Affichage de saisie semi-automatique des instructions | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9c3b44bd46c34a864896cbf1002505085be5143
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bbdc79275dd99c502533c82665741b84620be928
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Procédure pas à pas : Affichage de saisie semi-automatique des instructions
 Vous pouvez implémenter basée sur le langage de saisie semi-automatique des instructions en définissant les identificateurs pour lequel vous souhaitez fournir la saisie semi-automatique et de déclenchement puis d’une session de saisie semi-automatique. Vous pouvez définir la saisie semi-automatique des instructions dans le contexte d’un service de langage, définissez votre propre extension de nom de fichier et le type de contenu et ensuite afficher la saisie semi-automatique pour uniquement ce type, ou vous pouvez déclencher la saisie semi-automatique pour un type de contenu existant, par exemple, « texte en clair ». Cette procédure pas à pas montre comment déclencher la saisie semi-automatique des instructions pour le type de contenu « texte en clair », qui est le type de contenu des fichiers texte. Le type de contenu « text » est l’ancêtre de tous les autres types de contenu, y compris le code et les fichiers XML.  

@@ -1,11 +1,8 @@
 ---
-title: "Ajouter des contrôles personnalisés à la fenêtre Sources de données | Documents Microsoft"
-ms.custom: 
+title: Ajouter des contrôles personnalisés à la fenêtre Sources de données | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
@@ -16,18 +13,17 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ffa55100e9bbec33fdbca19ab2757c4de63f5030
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d00e818c0cfaa2659f55e5eb8bb8e4e4a87e8abc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Ajouter des contrôles personnalisés à la fenêtre Sources de données
 Lorsque vous faites glisser un élément à partir de la **des Sources de données** fenêtre à une aire de conception pour créer un contrôle lié aux données, vous pouvez sélectionner le type de contrôle que vous créez. Chaque élément dans la fenêtre a une liste déroulante qui affiche les contrôles que vous pouvez sélectionner. L’ensemble des contrôles associés à chaque élément est déterminé par le type de données de l’élément. Si le contrôle que vous souhaitez créer n’apparaît pas dans la liste, vous pouvez suivre les instructions de cette rubrique pour ajouter le contrôle à la liste.  
@@ -37,7 +33,7 @@ Lorsque vous faites glisser un élément à partir de la **des Sources de donné
 > [!NOTE]
 >  Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier vos paramètres, dans le **outils** menu, sélectionnez **importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-##  <a name="customizinglist"></a>Personnaliser la liste des contrôles pouvant être liés pour un type de données  
+##  <a name="customizinglist"></a> Personnaliser la liste des contrôles pouvant être liés pour un type de données  
  Pour ajouter ou supprimer des contrôles dans la liste des contrôles disponibles pour les éléments dans le **des Sources de données** fenêtre qui ont un type de données spécifique, procédez comme suit.  
   
 #### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Pour sélectionner les contrôles à répertorier pour un type de données  
@@ -71,7 +67,7 @@ Lorsque vous faites glisser un élément à partir de la **des Sources de donné
   
      Les contrôles que vous avez sélectionné dans le **associés contrôles** boîte apparaissent désormais dans le menu déroulant pour l’élément.  
   
-##  <a name="addingcontrols"></a>Ajouter des contrôles à la liste des contrôles associés pour un type de données  
+##  <a name="addingcontrols"></a> Ajouter des contrôles à la liste des contrôles associés pour un type de données  
  Si vous souhaitez associer un contrôle à un type de données, mais le contrôle n’apparaît pas dans le **associés contrôles** zone, vous devez ajouter le contrôle à la liste. Le contrôle doit être situé dans la solution actuelle ou dans un assembly référencé. Il doit également être disponible dans le **boîte à outils**, et avoir un attribut qui spécifie le comportement de liaison de données du contrôle.  
   
 #### <a name="to-add-controls-to-the-list-of-associated-controls"></a>Pour ajouter des contrôles à la liste des contrôles associés  

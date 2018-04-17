@@ -1,26 +1,24 @@
 ---
-title: "Création d’un Package de programme d’installation Windows | Documents Microsoft"
-ms.custom: 
+title: Création d’un Package de programme d’installation Windows | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2055f57e78c348f3f8e53187126588f382f0b944
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 215e1496d35059448cf11457658b7d1270b5677d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-a-windows-installer-package"></a>Création d’un Package de programme d’installation de Windows
 Les lecteurs de données du modèle de programme d’installation de Windows. Au lieu d’écrire un script de procédure pour copier des fichiers et d’écrire des entrées de Registre, par exemple, vous créer des lignes et des colonnes dans les tables de base de données qui contiennent des données de fichiers et du Registre.  
@@ -49,9 +47,9 @@ Les lecteurs de données du modèle de programme d’installation de Windows. Au
   
 -   ensemble d'outils XML de Windows Installer  
   
-     L’ensemble d’outils génère des packages Windows Installer à partir des fichiers de source XML. L’ensemble d’outils est un projet open source de Microsoft. Vous pouvez télécharger le code source et les exécutables à partir de [http://sourceforge.net/projects/wix](http://sourceforge.net/projects/wix).  
+     L’ensemble d’outils génère des packages Windows Installer à partir des fichiers de source XML. L’ensemble d’outils est un projet open source de Microsoft. Vous pouvez télécharger le code source et les exécutables à partir de [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
   
- Pour les produits commerciaux qui s’intègre à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à l’aide de la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], consultez [http://visualstudiogallery.com](http://visualstudiogallery.com/).  
+ Pour les produits commerciaux qui s’intègre à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à l’aide de la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], consultez [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Installation de VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

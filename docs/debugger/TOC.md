@@ -1,13 +1,13 @@
 # [Documentation sur le débogueur](index.md)
 # [Vue d’ensemble](debugger-overview.md)
-# Guides de démarrage rapide
+# Démarrages rapides
 ## [Présentation du débogueur](debugger-feature-tour.md)
 ## [Déboguer une application managée](quickstart-debug-with-managed.md)
 ## [Déboguer une application native](quickstart-debug-with-cplusplus.md)
 ## [Déboguer une application ASP.NET](quickstart-debug-aspnet.md)
 # Didacticiels
 ## [Apprendre à déboguer avec Visual Studio](getting-started-with-the-debugger.md)
-## [Exécution de code Python dans le débogueur...](../python/vs-tutorial-01-04.md)
+## [Exécution de code Python dans le débogueur...](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Déboguer une application Azure en direct](debug-live-azure-applications.md)
 ## [Voir les instantanés avec le retour en arrière IntelliTrace](how-to-use-intellitrace-step-back.md)
 # Guides pratiques

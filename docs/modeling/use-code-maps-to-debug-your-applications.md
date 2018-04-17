@@ -2,8 +2,6 @@
 title: Utiliser des cartes de code pour déboguer vos applications | Documents Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, visualizing code
@@ -16,15 +14,15 @@ helpviewer_keywords:
 - mapping relationships in code
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab5d32c6a25eb9db21970ade0034aa1afd219a61
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 53a6fef73a67409a4120384e46c73bc176df16e7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Utiliser des cartes du code pour déboguer vos applications
 Les cartes de code peuvent vous éviter de vous perdre dans les bases de code volumineuses, dans du code inconnu ou dans du code hérité. Par exemple, lorsque vous effectuez un débogage, vous devez examiner du code sur de nombreux fichiers et projets. Utilisez des cartes de code pour naviguer parmi les éléments de code et comprendre les relations entre eux. Ainsi, vous n'avez pas à effectuer le suivi de ce code dans votre tête, ni à dessiner un diagramme distinct. Si vous devez interrompre votre travail de codage, les cartes de code vous aident à vous rafraîchir la mémoire concernant le code sur lequel vous travaillez.  
@@ -115,7 +113,7 @@ Les cartes de code peuvent vous éviter de vous perdre dans les bases de code vo
 
  Si vous avez installé Microsoft Outlook, vous pouvez envoyer la carte à d'autres personnes par courrier électronique. Vous pouvez également exporter la carte en tant qu'image ou dans un autre format.  
 
- ![Code map &#45; Share, export, mail](../modeling/media/codemapstoryboardpaint13.png "CodeMapStoryboardPaint13")  
+ ![Carte de code &#45; partager, exporter, messagerie](../modeling/media/codemapstoryboardpaint13.png "CodeMapStoryboardPaint13")  
 
 ## <a name="fix-the-problem-and-show-what-you-did"></a>Corriger le problème et afficher ce que vous avez fait  
  Pour corriger ce bogue, ajoutez l'appel de `Repaint` à `undo`.  

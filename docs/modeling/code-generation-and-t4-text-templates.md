@@ -1,11 +1,9 @@
 ---
-title: "Génération de code et modèles de texte T4 | Documents Microsoft"
-ms.custom: 
+title: Génération de code et modèles de texte T4 | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-modeling
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
@@ -16,14 +14,14 @@ helpviewer_keywords:
 - generating code
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 029b5264d5275458aee1893df0ba4dd4d83d1a91
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c3bc5338114f0b310afc584b2892061716a711b0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Génération de code et modèles de texte T4
 Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], un *modèle de texte T4* est un mélange de blocs de texte et de logique de contrôle qui peut générer un fichier texte. La logique de contrôle est écrite comme des fragments de code du programme en [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Dans Visual Studio 2015 Update 2 et versions ultérieures, vous pouvez utiliser les fonctionnalités C# version 6.0 dans les directives de modèles T4. Le fichier généré peut être du texte de tout type, tel qu’une page web ou un fichier de ressources, ou du code source de programme dans tout langage.  
@@ -43,7 +41,7 @@ Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], un *modèle de t
   
  De plus, le modèle contient des fragments de code du programme. Vous pouvez utiliser ces fragments pour répéter des sections de texte, organiser des sections conditionnelles et afficher des données de votre application.  
   
- Pour générer la sortie, votre application appelle une fonction générée par le modèle. Exemple :  
+ Pour générer la sortie, votre application appelle une fonction générée par le modèle. Par exemple :  
   
 ```csharp  
 string webResponseText = new MyTemplate().TransformText();  

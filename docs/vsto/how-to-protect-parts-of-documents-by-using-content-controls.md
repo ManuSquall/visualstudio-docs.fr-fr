@@ -1,13 +1,10 @@
 ---
-title: "Comment : protéger des parties de Documents à l’aide de contrôles de contenu | Documents Microsoft"
-ms.custom: 
+title: 'Comment : protéger des parties de Documents à l’aide de contrôles de contenu | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - GroupContentControl
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 444fd63ecfe1fc74161920b17a3c7caead5a434a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 0a72603f71395bbbf8e167b6a2361f7d8b2a30a6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Comment : protéger des parties de documents à l'aide de contrôles de contenu
   Quand vous protégez une partie d'un document, vous empêchez les utilisateurs de modifier ou de supprimer le contenu dans cette partie du document. Il existe plusieurs manières de protéger des parties d'un document Microsoft Office Word à l'aide de contrôles de contenu :  
@@ -39,7 +36,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-##  <a name="EditDeleteControl"></a>Protéger un contrôle de contenu  
+##  <a name="EditDeleteControl"></a> Protéger un contrôle de contenu  
  Vous pouvez empêcher les utilisateurs de modifier ou supprimer un contrôle de contenu en définissant les propriétés du contrôle dans un projet au niveau du document, au moment du design ou au moment de l'exécution.  
   
  Vous pouvez également protéger les contrôles de contenu que vous ajoutez à un document au moment de l’exécution à l’aide d’un projet de complément VSTO. Pour plus d’informations, consultez [Comment : ajouter des contrôles de contenu à des Documents Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
@@ -111,7 +108,7 @@ ms.lasthandoff: 01/10/2018
  [Automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)   
  [Contrôles de contenu](../vsto/content-controls.md)   
  [Comment : ajouter des contrôles de contenu à des Documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Vue d'ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
+ [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Ajout de contrôles à des documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)  
    

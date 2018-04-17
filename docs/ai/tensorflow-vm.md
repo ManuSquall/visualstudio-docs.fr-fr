@@ -1,6 +1,6 @@
 ---
-title: "Exécuter un modèle TensorFlow dans le cloud"
-description: "exécuter un modèle tensorflow dans une machine virtuelle azure deep learning"
+title: Exécuter un modèle TensorFlow dans le cloud
+description: exécuter un modèle tensorflow dans une machine virtuelle azure deep learning
 keywords: ia, visual studio, machine virtuelle deep learning
 author: lisawong19
 ms.author: liwong
@@ -12,15 +12,15 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f02a03ca314138715b46e098416c7eef49e6d72
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 7006802f38076283221b9351ba9660448e64a696
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Former un modèle TensorFlow dans le cloud
 
-Dans ce didacticiel, nous allons former un modèle TensorFlow avec le [jeu de données MNIST](http://yann.lecun.com/exdb/mnist/) dans une machine virtuelle Azure [Deep Learning](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview).
+Dans ce didacticiel, nous allons apprendre à former un modèle TensorFlow avec le [jeu de données MNIST](http://yann.lecun.com/exdb/mnist/) sur une machine virtuelle Azure [Deep Learning](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview).
 
 La base de données MNIST a un jeu d’apprentissage constitué de 60 000 exemples et un jeu de test de 10 000 exemples de chiffres manuscrits.
 
@@ -42,7 +42,7 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 ### <a name="download-sample-code"></a>Télécharger un exemple de code
 
-Téléchargez ce [dépôt GitHub](https://github.com/Microsoft/samples-for-ai) contenant des exemples pour démarrer le deep learning sur TensorFlow, CNTK, Theano et bien plus encore.
+Téléchargez ce [référentiel GitHub](https://github.com/Microsoft/samples-for-ai) contenant des exemples pour démarrer le deep learning sur TensorFlow, CNTK, Theano et bien plus encore.
 
 ## <a name="open-project"></a>Ouvrir un projet
 

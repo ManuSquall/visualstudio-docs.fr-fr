@@ -1,27 +1,27 @@
 ---
 title: Nous contacter | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/19/2018
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
 - Help [Visual Studio], product support
 ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.technology:
 - vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 32d77bfa2b7773f55d74692f098ec29b01829a13
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: addc6e929a1a72f385189f0a0408ea26e2a3d829
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="talk-to-us"></a>Nous contacter
 Vos idées d’améliorations concernant nos produits et notre documentation nous intéressent. Nous ne pouvons pas toujours vous répondre personnellement, mais nous veillerons à ce que vos commentaires parviennent à la bonne personne ou équipe.  

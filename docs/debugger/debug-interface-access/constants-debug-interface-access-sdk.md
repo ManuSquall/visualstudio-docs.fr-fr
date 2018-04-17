@@ -1,30 +1,26 @@
 ---
 title: Constantes (Debug Interface Access SDK) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - constants, DIA SDK
 - DIA SDK, constants
 ms.assetid: aca4ec77-bc08-4cdd-a6ce-8d4a28ea5ea3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8241190650bf395e1e4e2467b4862119cd2b10dc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d625146e1c7777955186100a805e7db8e22e63b6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Constantes (Kit de développement logiciel Debug Interface Access)
 Ces constantes de chaîne peuvent être utilisées pour identifier les différentes sections d’un fichier de base de données (PDB) de débogage programme via le SDK DIA.  
@@ -58,7 +54,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 }  
 ```  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : dia2.h  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,23 +1,21 @@
 ---
-title: "L’accès à des modèles à partir de modèles de texte | Documents Microsoft"
-ms.custom: 
+title: L’accès à des modèles à partir de modèles de texte | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: da230b9b5da994a123aff04b1f588d9761c9820e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>Accès aux modèles depuis des modèles de texte
 À l’aide de modèles de texte, vous pouvez créer des fichiers de rapports, les fichiers de code source et les autres fichiers de texte qui sont basées sur des modèles de langage spécifique à un domaine. Pour plus d’informations de base sur les modèles de texte, consultez [génération de Code et les modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Les modèles de texte fonctionnent en mode expérimental lorsque vous déboguez votre DSL et fonctionnent également sur un ordinateur sur lequel vous avez déployé la DSL.  
@@ -64,7 +62,7 @@ Here is a list of elements in the model:
   
 -   Bien que le langage dans lequel sont écrits les fragments de code c#, vous pouvez générer le texte de tout type. Vous pouvez également écrire du code [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] en ajoutant la propriété `language="VB"` à le `template` la directive.  
   
--   Pour déboguer le modèle, ajoutez `debug="true"` à le `template` la directive. Le modèle s’ouvre dans une autre instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] si une exception se produit. Si vous souhaitez arrêter dans le débogueur à un moment spécifique dans le code, insérez l’instruction`System.Diagnostics.Debugger.Break();`  
+-   Pour déboguer le modèle, ajoutez `debug="true"` à le `template` la directive. Le modèle s’ouvre dans une autre instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] si une exception se produit. Si vous souhaitez arrêter dans le débogueur à un moment spécifique dans le code, insérez l’instruction `System.Diagnostics.Debugger.Break();`  
   
      Pour plus d’informations, consultez [débogage d’un modèle de texte T4](../modeling/debugging-a-t4-text-template.md).  
   
@@ -95,11 +93,11 @@ Here is a list of elements in the model:
   
 1.  Le `filename` et `validation` paramètres sont séparés par « ; » et il ne doit y avoir aucun autre séparateurs ou des espaces.  
   
-2.  La liste des catégories de validation détermine les méthodes de validation sont exécutées. Plusieurs catégories doivent être séparés par « &#124; » et il ne doit y avoir aucun autre séparateurs ou des espaces.  
+2.  La liste des catégories de validation détermine les méthodes de validation sont exécutées. Plusieurs catégories doivent être séparés par «&#124;» et il ne doit y avoir aucun autre séparateurs ou des espaces.  
   
  Si une erreur est détectée, elle sera signalée dans la fenêtre d’erreurs, et le fichier de résultats contiendra un message d’erreur.  
   
-##  <a name="Multiple"></a>L’accès à plusieurs modèles à partir d’un modèle de texte  
+##  <a name="Multiple"></a> L’accès à plusieurs modèles à partir d’un modèle de texte  
   
 > [!NOTE]
 >  Cette méthode vous permet de lire plusieurs modèles dans le même modèle, mais ne prend pas en charge les références ModelBus. Pour lire des modèles qui sont reliées par leurs références de ModelBus, consultez [à l’aide de Visual Studio ModelBus dans un modèle de texte](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
@@ -177,7 +175,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
 ```  
   
- `LoopSplitter.tt`appelle `LoopTemplate.t4`et puis fractionne le fichier résultant en segments. Notez que ce modèle n’a pas à être un modèle de modélisation, car elle ne lit pas le modèle.  
+ `LoopSplitter.tt` appelle `LoopTemplate.t4`et puis fractionne le fichier résultant en segments. Notez que ce modèle n’a pas à être un modèle de modélisation, car elle ne lit pas le modèle.  
   
 ```  
 <#@ template hostspecific="true" language="C#" #>  

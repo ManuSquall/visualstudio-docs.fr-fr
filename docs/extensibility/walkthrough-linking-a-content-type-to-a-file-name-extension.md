@@ -1,27 +1,23 @@
 ---
-title: "Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5df3bab0a453f4f8edcff3be86e5a767065b59da
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cca12f7c04b51bcf2b695e00d9305a7feb72ebc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier
 Vous pouvez définir votre propre type de contenu et lier une extension de nom de fichier à l’aide des extensions d’éditeur de Managed Extensibility Framework (MEF). Dans certains cas, l’extension de nom de fichier a déjà été définie par un service de langage. Toutefois, pour l’utiliser avec MEF vous toujours devez lier à un type de contenu.  

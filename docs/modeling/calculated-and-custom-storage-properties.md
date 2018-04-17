@@ -1,23 +1,21 @@
 ---
-title: "Propriétés de stockage calculées et personnalisées | Documents Microsoft"
-ms.custom: 
+title: Propriétés de stockage calculées et personnalisées | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1b5d89a621c0f325fd20dbff47c30975f760a6f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 153ff58e5ace618fbf9e6f0e3bb25614d21fc98a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriétés de stockage calculées et personnalisées
 Toutes les propriétés de domaine dans un langage spécifique à un domaine (DSL) peuvent être affichées à l’utilisateur sur le diagramme et dans l’Explorateur de votre langue et est accessible par du code de programme. Toutefois, les propriétés diffèrent dans la manière dont leurs valeurs sont stockées.  
@@ -69,7 +67,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
     }  }  
     ```  
   
-8.  Si vous définissez **type** à **personnalisé stockage**, vous devez également fournir un `Set` (méthode). Exemple :  
+8.  Si vous définissez **type** à **personnalisé stockage**, vous devez également fournir un `Set` (méthode). Par exemple :  
   
     ```  
     void SetAgeValue(int value)  
@@ -84,7 +82,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
   
 10. La propriété de test. Assurez-vous que vous essayez de **Annuler** et **de restauration par progression**.  
   
-##  <a name="setters"></a>Les transactions et les méthodes setter personnalisées  
+##  <a name="setters"></a> Les transactions et les méthodes setter personnalisées  
  Dans la méthode Set de propriété de stockage personnalisé, il est inutile d’ouvrir une transaction, car la méthode est généralement appelée dans une transaction active.  
   
  Cependant, la méthode Set peut également être appelée si l’utilisateur appelle l’annulation ou restauration par progression, ou si une transaction est en cours de restauration. Lorsque <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> a la valeur true, votre méthode Set doit se comporter comme suit :  
@@ -93,7 +91,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
   
 -   Toutefois, il doit mettre à jour des ressources externes, telles que la base de données ou le contenu du fichier ou les objets en dehors de la banque. Cela permet de garantir qu’ils sont conservés dans synchronism avec les valeurs dans le magasin.  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 void SetAgeValue(int value)  

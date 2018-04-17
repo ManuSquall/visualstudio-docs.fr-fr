@@ -1,13 +1,10 @@
 ---
-title: "Fonctions de raccordement d’allocation | Documents Microsoft"
-ms.custom: 
+title: Fonctions de raccordement d’allocation | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
 dev_langs:
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - allocation hooks
 - hooks, allocation
 ms.assetid: 6bfbdb65-8cb1-4c21-8c45-7194a2b77c1e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe5ac5ec207bb52884c097d1562a85a3414ba7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b87c41a6a31a2c66663ed121204611b4964b9c4d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="allocation-hook-functions"></a>Fonctions de raccordement d'allocation
 Une fonction de raccordement d’allocation, installée à l’aide de [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), est appelée chaque fois en mémoire est allouée, réallouée ou libérée. Ce type de raccordement a de multiples applications. Utilisez-la, par exemple, pour tester la façon dont une application gère les situations de mémoire insuffisante, pour examiner les modèles d’allocation ou pour enregistrer les informations des allocations en vue d’une analyse ultérieure.  

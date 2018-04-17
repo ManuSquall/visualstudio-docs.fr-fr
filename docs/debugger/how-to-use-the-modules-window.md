@@ -1,13 +1,10 @@
 ---
-title: "Affichez les DLL et les exécutables dans le débogueur | Documents Microsoft"
+title: Affichez les DLL et les exécutables dans le débogueur | Documents Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
 dev_langs:
@@ -24,17 +21,16 @@ helpviewer_keywords:
 - DLLs, displaying while debugging
 - modules, displaying
 ms.assetid: d840fdca-b035-4452-b652-72580c831896
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 772c252265e15c3c928fbcc47c756ceafd9e1362
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 63fcb67cf248307bd9cdf5465ddb06ec8a18346b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-dlls-and-executables-using-the-modules-window-in-the-visual-studio-debugger"></a>Afficher les DLL et les exécutables à l’aide de la fenêtre Modules dans le débogueur Visual Studio
  

@@ -1,21 +1,19 @@
 ---
-title: "Comment : écrire avec des modèles de texte | Documents Microsoft"
-ms.custom: 
+title: 'Comment : écrire avec des modèles de texte | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 95ef3440e9b330860c8438b997c9c0e8b3c4fe0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to--with-text-templates"></a>Comment : écrire avec des modèles de texte
 Modèles de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offrent un moyen utile de générer du texte de n’importe quel type. Vous pouvez utiliser des modèles de texte pour générer du texte au moment de l’exécution en tant que partie de votre application et au moment du design pour générer une partie de votre code de projet. Cette rubrique résume les plus fréquemment posées « Comment... ? » questions.  
@@ -73,14 +71,14 @@ Modèles de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
   
 ### <a name="generate-files-from-a-complex-model"></a>Générer des fichiers à partir d’un modèle complexe  
   
--   Envisagez de créer un langage spécifique à un domaine (DSL) pour représenter le modèle. Cela rend beaucoup plus facile d’écrire les modèles, car vous utilisez des types et des propriétés qui reflètent les noms des éléments dans votre modèle. Vous n’avez pas à analyser le fichier ou de parcourir les nœuds XML. Exemple :  
+-   Envisagez de créer un langage spécifique à un domaine (DSL) pour représenter le modèle. Cela rend beaucoup plus facile d’écrire les modèles, car vous utilisez des types et des propriétés qui reflètent les noms des éléments dans votre modèle. Vous n’avez pas à analyser le fichier ou de parcourir les nœuds XML. Par exemple :  
   
      `foreach (Book book in this.Library) { ... }`  
   
      Pour plus d’informations, consultez [prise en main de langages spécifiques à un domaine](../modeling/getting-started-with-domain-specific-languages.md) et [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Obtenez des données[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
- Pour utiliser les services fournis dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], par jeu le `hostSpecific` attribut et charge le `EnvDTE` assembly. Exemple :  
+### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Obtenez des données [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+ Pour utiliser les services fournis dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], par jeu le `hostSpecific` attribut et charge le `EnvDTE` assembly. Par exemple :  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  
@@ -101,7 +99,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ## <a name="more-general-questions"></a>Questions plus générales  
   
-###  <a name="starting"></a>Qu’est la meilleure façon de commencer à écrire un modèle de texte ?  
+###  <a name="starting"></a> Qu’est la meilleure façon de commencer à écrire un modèle de texte ?  
   
 1.  Écrivez un exemple spécifique du fichier généré.  
   

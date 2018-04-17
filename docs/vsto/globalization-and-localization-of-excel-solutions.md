@@ -1,13 +1,10 @@
 ---
-title: "Globalisation et localisation de Solutions d’Excel | Documents Microsoft"
-ms.custom: 
+title: Globalisation et localisation de Solutions d’Excel | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 66c997dd8de6801d790b7653ca414cac0996ddc9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2baf3f9617b7401ac82bc7aff7f04bbc6bb6eb08
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalisation et localisation de solutions Excel
   Cette section contient des informations sur les considérations spéciales concernant les solutions Microsoft Office Excel appelées à être exécutées sur des ordinateurs dont les paramètres Windows sont autres qu’anglais. La plupart des aspects de la globalisation et de la localisation des solutions Microsoft Office sont les mêmes que ceux que vous rencontrez quand vous créez d’autres types de solutions à l’aide de Visual Studio. Pour obtenir des informations générales, consultez [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications).  
@@ -82,7 +79,7 @@ Application.ActiveCell.Value2 = "05/12/04"
   
  Ce même code, quand il est utilisé dans une solution créée à l’aide des outils de développement Office dans Visual Studio et passé à Excel via COM Interop, produit les mêmes résultats quand la date est mise en forme dans le style en-US.  
   
- Exemple :  
+ Par exemple :  
   
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]  

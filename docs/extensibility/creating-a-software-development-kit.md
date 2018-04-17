@@ -1,23 +1,21 @@
 ---
-title: "Création d’un Kit de développement logiciel | Documents Microsoft"
-ms.custom: 
+title: Création d’un Kit de développement logiciel | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4ea17b02cfa2e987c4a3c02acddf838001b4ae2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 55b62ac0ac448023793f511389146ebb1b07da0f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-software-development-kit"></a>Création d’un Kit de développement logiciel (SDK)
 Un kit de développement logiciel (SDK) est un ensemble d’API que vous pouvez référencer comme un seul élément dans Visual Studio. Le **Gestionnaire de références** boîte de dialogue répertorie tous les kits de développement logiciel qui sont pertinents pour le projet. Lorsque vous ajoutez un kit de développement à un projet, les API sont disponibles dans Visual Studio.  
@@ -34,13 +32,13 @@ Un kit de développement logiciel (SDK) est un ensemble d’API que vous pouvez 
   
 -   [SDK d’extension](#ExtensionSDKs)  
   
-##  <a name="PlatformSDKs"></a>Kits de développement Platform SDK  
+##  <a name="PlatformSDKs"></a> Kits de développement Platform SDK  
  Les kits de développement Platform SDK sont requis pour développer des applications pour une plateforme. Par exemple, le [!INCLUDE[win81](../debugger/includes/win81_md.md)] Kit de développement logiciel est requis pour développer des applications [!INCLUDE[win81](../debugger/includes/win81_md.md)].  
   
 ### <a name="installation"></a>Installation  
  Plateforme tous les kits de développement logiciel sera installé à des kits de développement logiciel HKLM\Software\Microsoft\Microsoft\\[TPI] \v [TPV]\\ @InstallationFolder = [racine du Kit de développement logiciel]. En conséquence, le [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK est installé dans HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1.  
   
-### <a name="layout"></a>Disposition  
+### <a name="layout"></a>Mise en page  
  Kits de développement logiciel Platform aura la disposition suivante :  
   
 ```  
@@ -62,7 +60,7 @@ Un kit de développement logiciel (SDK) est un ensemble d’API que vous pouvez 
 |Dossier de l’architecture|N’importe quel dossier de l’architecture prise en charge peut exister. Visual Studio prend en charge les architectures suivantes : x86, x64, ARM et neutre. Remarque : Win32 est mappé à x86 et AnyCPU mappe à neutre.<br /><br /> MSBuild recherche uniquement sous \CommonConfiguration\neutral de développement logiciel Platform SDK.|  
 |SDKManifest.xml|Ce fichier décrit comment Visual Studio doit utiliser le Kit de développement. Examinez le manifeste SDK pour [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **Nom d’affichage :** la valeur de l’Explorateur d’objets affiche dans la liste de navigation.<br /><br /> **PlatformIdentity :** l’existence de cet attribut indique à Visual Studio et MSBuild que le Kit de développement est une plateforme du Kit de développement logiciel et que les références ajoutées à partir de celui-ci ne doit pas être copiés localement.<br /><br /> **TargetFramework :** cet attribut est utilisé par Visual Studio pour vous assurer que seuls les projets qui ciblent les mêmes infrastructures comme spécifié dans la valeur de cet attribut peut utiliser le Kit de développement.<br /><br /> **MinVSVersion :** cet attribut est utilisé par Visual Studio pour utiliser uniquement les kits de développement qui s’y appliquent.<br /><br /> **Référence :** cet attribut doit être spécifié pour que les références qui contiennent des contrôles. Pour plus d’informations sur la façon de spécifier si une référence contient des contrôles, voir ci-dessous.|  
   
-##  <a name="ExtensionSDKs"></a>SDK d’extension  
+##  <a name="ExtensionSDKs"></a> SDK d’extension  
  Les sections suivantes décrivent ce que vous devez faire pour déployer un SDK d’extension.  
   
 ### <a name="installation"></a>Installation  
@@ -173,7 +171,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 6.  MaxPlatformVerson : La version de la plateforme cible maximale doit être utilisée pour spécifier les versions de la plateforme sur laquelle votre SDK d’Extension ne fonctionnera pas. Par exemple, de Microsoft Visual C++ Runtime Package v11.0 doit être référencée que par les projets Windows 8. Par conséquent, les MaxPlatformVersion du projet Windows 8 est 8.0. Cela signifie que le Gestionnaire de références exclut de Microsoft Visual C++ Runtime Package pour un projet Windows 8.1 et MSBuild génère une erreur lorsqu’un [!INCLUDE[win81](../debugger/includes/win81_md.md)] projet fait référence. Remarque : cet élément est pris en charge depuis [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)].  
   
-7.  AppliesTo : Spécifie les kits de développement logiciel qui sont disponibles dans le Gestionnaire de références en spécifiant les types de projet Visual Studio applicables. Neuf valeurs sont reconnus : WindowsAppContainer VisualC, VB, CSharp, WindowsXAML, JavaScript, managé et natif. L’auteur du Kit de développement logiciel permettre utiliser et (« + »), ou (« &#124; »), pas (« ! ») opérateurs pour spécifier exactement l’étendue des types de projets qui s’appliquent au SDK.  
+7.  AppliesTo : Spécifie les kits de développement logiciel qui sont disponibles dans le Gestionnaire de références en spécifiant les types de projet Visual Studio applicables. Neuf valeurs sont reconnus : WindowsAppContainer VisualC, VB, CSharp, WindowsXAML, JavaScript, managé et natif. L’auteur du Kit de développement logiciel permettre utiliser et (« + »), ou («&#124;»), et non (« ! ») opérateurs pour spécifier exactement l’étendue des types de projets qui s’appliquent au SDK.  
   
      WindowsAppContainer identifie les projets pour [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] applications.  
   
@@ -195,7 +193,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 16. Référence de fichier : spécifiée pour que les références qui contiennent des contrôles ou sont des fichiers Winmd natif. Pour plus d’informations sur la façon de spécifier si une référence contient des contrôles, consultez [en spécifiant l’emplacement des éléments de boîte à outils](#ToolboxItems) ci-dessous.  
   
-##  <a name="ToolboxItems"></a>En spécifiant l’emplacement des éléments de boîte à outils  
+##  <a name="ToolboxItems"></a> En spécifiant l’emplacement des éléments de boîte à outils  
  L’élément ToolBoxItems du schéma SDKManifest.xml spécifie la catégorie et l’emplacement des éléments de boîte à outils de plateforme et de kits SDK d’extension. Les exemples suivants montrent comment spécifier des emplacements différents. Cela s’applique aux références WinMD ou DLL.  
   
 1.  Placez des contrôles dans la catégorie par défaut de boîte à outils.  

@@ -1,24 +1,22 @@
 ---
-title: "Comment : modifier une commande de Menu Standard dans un langage spécifique à un domaine | Documents Microsoft"
-ms.custom: 
+title: 'Comment : modifier une commande de Menu Standard dans un langage spécifique à un domaine | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c11a559fb8ef3cc6eb951950d8779691ad20c3b5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 19d555f770802044b88e6a446932596176baa9fb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Comment : modifier une commande de menu standard dans un langage spécifique à un domaine
 Vous pouvez modifier le comportement de certaines des commandes standard qui sont définies automatiquement dans votre DSL. Par exemple, vous pourriez modifier **couper** afin qu’il exclut les informations sensibles. Pour cela, vous devez substituer des méthodes dans une classe de jeu de commandes. Ces classes sont définies dans le fichier CommandSet.cs, dans le projet DslPackage, et son dérivées de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -36,7 +34,7 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
 > [!NOTE]
 >  Si vous souhaitez créer vos propres commandes de menu, consultez [Comment : ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="what"></a>Les commandes peuvent modifier ?  
+##  <a name="what"></a> Les commandes peuvent modifier ?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Pour découvrir les commandes que vous pouvez modifier  
   
@@ -53,7 +51,7 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
     > [!NOTE]
     >  En temps normal, vous ne devez pas modifier les fichiers qui ont été générés. Toute modification sera perdue lors de la prochaine génération des fichiers.  
   
-##  <a name="extend"></a>Étendre la commande appropriée set (classe)  
+##  <a name="extend"></a> Étendre la commande appropriée set (classe)  
  Créez un fichier qui contient une déclaration partielle de la classe de jeu de commandes.  
   
 #### <a name="to-extend-the-command-set-class"></a>Pour développer la classe de jeu de commandes  
@@ -66,7 +64,7 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
   
 2.  Dans **DslPackage**, créez un dossier nommé **Code personnalisé**. Dans ce dossier, créez un nouveau fichier de classe nommé `CommandSet.cs`.  
   
-3.  Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Exemple :  
+3.  Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Par exemple :  
   
     ```  
     using System;  
@@ -78,7 +76,7 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
   
      **Remarque** si vous avez utilisé le modèle de fichier de classe pour créer le fichier, vous devez corriger l’espace de noms et le nom de classe.  
   
-##  <a name="override"></a>Substituer les méthodes de commande  
+##  <a name="override"></a> Substituer les méthodes de commande  
  La plupart des commandes ont deux méthodes associées : la méthode avec un nom comme `ProcessOnStatus`... détermine si la commande doit être visible et activé. Elle est appelée chaque fois que l'utilisateur clique avec le bouton droit sur le diagramme et doit être exécutée rapidement et n'apporter aucune modification. `ProcessOnMenu`... est appelée lorsque l’utilisateur clique sur la commande et il doit exécuter la fonction de la commande. Vous souhaiterez peut-être substituer l'une ou l'autre de ces méthodes, ou les deux.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Pour modifier quand la commande apparaît dans un menu  
@@ -137,7 +135,7 @@ protected override void ProcessOnMenuDeleteCommand()
   
 -   `this.CurrentSelection`. La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste de formes et de connecteurs. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.  
   
--   `this.IsDiagramSelected()` - `true`Si l’utilisateur a cliqué sur une partie vide du diagramme.  
+-   `this.IsDiagramSelected()` - `true` Si l’utilisateur a cliqué sur une partie vide du diagramme.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   

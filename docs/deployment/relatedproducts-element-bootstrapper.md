@@ -1,13 +1,10 @@
 ---
-title: "&lt;RelatedProducts&gt; élément (programme d’amorçage) | Documents Microsoft"
-ms.custom: 
+title: '&lt;RelatedProducts&gt; élément (programme d’amorçage) | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
 - MSBuild.GenerateBootstrapper.DuplicateItems
@@ -22,17 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - <RelatedProducts> element [bootstrapper]
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 548c1002eae581dc0e231f8dd2e28ee4a8376e27
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9fafc77df0bc557952bd5e197f3c950a3d028e3e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; élément (programme d’amorçage)
 Le `RelatedProducts` élément définit d’autres produits qui dépendent ou sont inclus dans le produit actuel.  
@@ -61,7 +57,7 @@ Le `RelatedProducts` élément définit d’autres produits qui dépendent ou so
 ## <a name="dependsonproduct"></a>DependsOnProduct  
  Le `DependsOnProduct` élément signifie que le produit actuel dépend du produit nommé et que le produit nommé doit être installé avant l’objet actuel. C’est un enfant de le `RelatedProducts` élément. A `RelatedProducts` élément peut avoir un ou plusieurs `DependsOnProduct` éléments.  
   
- `DependsOnProduct`a l’attribut suivant.  
+ `DependsOnProduct` a l’attribut suivant.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -73,7 +69,7 @@ Le `RelatedProducts` élément définit d’autres produits qui dépendent ou so
 ## <a name="includesproduct"></a>IncludesProduct  
  Le `IncludesProduct` élément signifie qu’un produit est inclus avec l’installation actuelle et ne nécessite pas d’une installation distincte. C’est un enfant de le `RelatedProducts` élément. A `RelatedProducts` élément peut avoir un ou plusieurs `IncludesProduct` éléments.  
   
- `IncludesProduct`a l’attribut suivant.  
+ `IncludesProduct` a l’attribut suivant.  
   
 |Attribut|Description|  
 |---------------|-----------------|  

@@ -1,21 +1,19 @@
 ---
-title: "À l’aide de Visual Studio ModelBus dans un modèle de texte | Documents Microsoft"
-ms.custom: 
+title: À l’aide de Visual Studio ModelBus dans un modèle de texte | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0184e3b543e509d0e523504c0ea07f6fcc36775f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9a3cca1ed96cc2190ace1c8e1ece0423221f59f0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Utilisation de Visual Studio ModelBus dans un modèle de texte
 Si vous écrivez des modèles de texte qui lisent un modèle qui contient [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus fait référence, vous pouvez résoudre les références pour accéder aux modèles de cible. Dans ce cas, vous devez adapter les modèles de texte et les langues de spécifique à un domaine (DSL) référencés :  
@@ -263,7 +261,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
 1.  Créer une nouveau DSL en utilisant le modèle de solution de langage minimale. Nommez le langage MBConsumer et l’extension de nom de fichier « .consume ».  
   
-2.  Dans le projet DSL, ajoutez une référence à l’assembly MBProvider DSL. Avec le bouton droit `MBConsumer\Dsl\References` puis cliquez sur **ajouter une référence**. Dans le **Parcourir** onglet, recherchez`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
+2.  Dans le projet DSL, ajoutez une référence à l’assembly MBProvider DSL. Avec le bouton droit `MBConsumer\Dsl\References` puis cliquez sur **ajouter une référence**. Dans le **Parcourir** onglet, recherchez `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
   
      Cela vous permet de vous permet de créer le code qui utilise l’autres DSL. Si vous souhaitez créer des références à plusieurs DSL, ajoutez-les également.  
   
@@ -277,7 +275,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
      `Provider File|*.provide`  
   
-     La sous-chaîne après « &#124; » est un filtre pour la boîte de dialogue de sélection de fichier. Vous pouvez définir pour permettre à tous les fichiers à l’aide de *.\*  
+     La sous-chaîne après «&#124;» est un filtre pour la boîte de dialogue de sélection de fichier. Vous pouvez définir pour permettre à tous les fichiers à l’aide de *.\*  
   
      Dans le **le type d’élément de modèle** liste, entrez les noms d’un ou plusieurs domaine classes dans le fournisseur DSL (par exemple, Company.MBProvider.Task). Ils peuvent être des classes abstraites. Si vous ne renseignez pas la liste, l’utilisateur peut définir la référence à un élément.  
   

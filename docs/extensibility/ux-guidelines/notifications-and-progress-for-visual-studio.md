@@ -1,28 +1,24 @@
 ---
 title: Les notifications et progression pour Visual Studio | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 237ed5c382a6ac880b0be59165a33ad338370976
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Les notifications et progression pour Visual Studio
-##  <a name="BKMK_NotificationSystems"></a>Systèmes de notification  
+##  <a name="BKMK_NotificationSystems"></a> Systèmes de notification  
   
 ### <a name="overview"></a>Vue d'ensemble  
  Il existe plusieurs façons pour informer l’utilisateur que se passe-t-il dans Visual Studio en ce qui concerne leurs tâches de développement logiciel.  
@@ -61,14 +57,14 @@ ms.lasthandoff: 02/01/2018
   
 ### <a name="notification-methods"></a>Méthodes de notification  
   
-####  <a name="BKMK_ModalErrorMessageDialogs"></a>Boîtes de dialogue de message erreur modal  
+####  <a name="BKMK_ModalErrorMessageDialogs"></a> Boîtes de dialogue de message erreur modal  
  Une boîte de dialogue de message d’erreur modal est utilisé pour afficher un message d’erreur qui requiert une confirmation ou action de l’utilisateur.  
   
  ![Message d’erreur modal](../../extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "0901-01_ModalErrorMessage")  
   
  **Une boîte de dialogue modale erreur message d’alerte de l’utilisateur d’une chaîne de connexion non valide à une base de données**  
   
-####  <a name="BKMK_IDEStatusBar"></a>Barre d’état IDE  
+####  <a name="BKMK_IDEStatusBar"></a> Barre d’état IDE  
  La probabilité que les utilisateurs Notez le texte de barre d’état correspond à leur expérience informatique propose et à l’expérience de la plateforme Windows. La base de clients Visual Studio a tendance à être expérimentés dans les deux domaines, bien que les utilisateurs Windows même confirmés risquez de manquer des modifications dans la barre d’état. Par conséquent, la barre d’état est utilisée à titre d’information ou comme une file d’attente redondant pour les informations présentées ailleurs. Tout type d’informations critiques qui doit être résolue immédiatement l’utilisateur doit être fournie dans une boîte de dialogue ou dans la fenêtre d’outil de Notifications.  
   
  La barre d’état de Visual Studio est conçue pour permettre plusieurs types d’informations à afficher. Il est divisé en régions pour vos commentaires, le concepteur, barre de progression, animation et client.  
@@ -81,24 +77,24 @@ ms.lasthandoff: 02/01/2018
   
  **Couleurs de barre d’état IDE**  
   
-####  <a name="BKMK_EmbeddedInfobar"></a>Barre d’informations incorporée  
+####  <a name="BKMK_EmbeddedInfobar"></a> Barre d’informations incorporée  
  Peut servir une barre d’informations en haut d’une fenêtre de document ou de la fenêtre outil pour informer l’utilisateur d’un état ou d’une condition. Il peut également proposer des commandes afin que l’utilisateur peut avoir un moyen facilement une action. La barre d’informations est un contrôle de l’interpréteur de commandes standard. Évitez de créer vos propres, qui agissent et apparaissent incohérent avec d’autres utilisateurs dans l’IDE. Consultez [barres d’informations](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) pour des instructions d’utilisation et les détails d’implémentation.  
   
  ![Incorporé barre d’informations](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901-03_EmbeddedInfobar")  
   
  **Une barre d’informations incorporée dans une fenêtre de document, l’utilisateur que l’IDE est en mode de débogage historique et l’éditeur ne répond pas, de la même façon, comme il le fait en mode de débogage standard de génération d’alertes.**  
   
-####  <a name="BKMK_MouseCursorChanges"></a>Modifications de curseur de souris  
+####  <a name="BKMK_MouseCursorChanges"></a> Modifications de curseur de souris  
  Lorsque vous modifiez le curseur de souris, utiliser des couleurs qui sont liés au service VSColor et sont déjà associés avec le curseur. Modifications de curseur peuvent être utilisées pour indiquer une opération en cours, ainsi que les zones où l’utilisateur pointe sur une cible qui peut être déplacée, déposée ou permet de sélectionner un objet d’accès.  
   
  Utilisez le curseur de souris occupé/attente uniquement lorsque tout le temps processeur disponible doit être réservé pour une opération, ce qui empêche l’utilisateur d’exprimer toute entrée supplémentaire. Dans la plupart des cas avec des applications bien écrites à l’aide du multithreading, lorsque les utilisateurs ne peuvent pas effectuer d’autres opérations de temps doivent être rares.  
   
  Gardez à l’esprit que le curseur se transforme est utiles comme une file d’attente redondant pour plus d’informations présentées ailleurs. Ne comptez pas sur une modification de curseur comme seul moyen de communiquer avec l’utilisateur, en particulier lorsque vous essayez de passer un élément qui est essentiel que l’utilisateur doit résoudre.  
   
-####  <a name="BKMK_NotSysProgressIndicators"></a>Indicateurs de progression  
+####  <a name="BKMK_NotSysProgressIndicators"></a> Indicateurs de progression  
  Indicateurs de progression sont importants pour les commentaires de l’utilisateur pendant les processus qui prennent plus de quelques secondes. Indicateurs de progression peuvent être affichées sur place (à côté du point de lancement de l’action en cours d’exécution), dans la barre d’état incorporée, dans une boîte de dialogue modale ou dans la barre d’état de Visual Studio. Suivez les instructions de [indicateurs de progression](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) concernant leur utilisation et leur implémentation.  
   
-####  <a name="BKMK_VSNotificationsToolWindow"></a>Fenêtre de Visual Studio Notifications  
+####  <a name="BKMK_VSNotificationsToolWindow"></a> Fenêtre de Visual Studio Notifications  
  La fenêtre de Notifications de Visual Studio notifie les développeurs à propos des licences, à l’environnement (Visual Studio), extensions et mises à jour. Les utilisateurs peuvent rejeter des notifications ou peuvent choisir d’ignorer certains types de notifications. La liste des notifications ignorées est gérée dans un **Outils > Options** page.  
   
  La fenêtre Notifications n’est pas actuellement extensible.  
@@ -107,33 +103,33 @@ ms.lasthandoff: 02/01/2018
   
  **Fenêtre de Visual Studio Notifications outil**  
   
-####  <a name="BKMK_ErrorList"></a>Liste d’erreurs  
+####  <a name="BKMK_ErrorList"></a> Liste d’erreurs  
  Une notification dans la liste d’erreurs indiquent des erreurs et avertissements qui s’est produite lors de la compilation et ou processus de génération et permettant à l’utilisateur de naviguer dans le code de cette erreur de code spécifique.  
   
  ![Liste d’erreurs](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901-08_ErrorList")  
   
  **Liste d’erreurs dans Visual Studio**  
   
-####  <a name="BKMK_EmbeddedStatusBars"></a>Barres d’état incorporée  
+####  <a name="BKMK_EmbeddedStatusBars"></a> Barres d’état incorporée  
  Étant donné que la barre d’état IDE est dynamique, avec son contexte de région client définie sur la fenêtre du document actif et les informations de mise à jour sur le contexte de l’utilisateur et/ou les réponses du système, il est difficile de mettre à jour d’un affichage en continu d’informations ou donner un état sur à long terme processus asynchrones. Par exemple, la barre d’état IDE n’est pas appropriée pour les notifications de résultats de la série de tests pour plusieurs séries et/ou les sélections d’éléments actionnables immédiatement. Il est important de conserver ces informations d’état dans le contexte de la fenêtre de document ou l’outil où l’utilisateur effectue une sélection ou démarre un processus.  
   
  ![Barre d’état incorporée](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901-09_EmbeddedStatusBar")  
   
  **Barre d’état incorporée dans Visual Studio**  
   
-####  <a name="BKMK_WindowsTray"></a>Notifications de barre d’état Windows  
+####  <a name="BKMK_WindowsTray"></a> Notifications de barre d’état Windows  
  La zone de notification se trouve à côté du système de Windows de l’horloge sur la barre des tâches Windows. De nombreux utilitaires et les composants logiciels fournissent des icônes dans cette zone afin que l’utilisateur peut obtenir un menu contextuel pour les tâches à l’échelle du système, telles que la modification de la résolution d’écran ou d’obtenir les mises à jour logicielles.  
   
  Notifications de niveau de l’environnement doivent être exposées dans le hub de Notifications de Visual Studio, pas la zone de notification Windows.  
   
-####  <a name="BKMK_NotificationBubbles"></a>Bulles de notification  
+####  <a name="BKMK_NotificationBubbles"></a> Bulles de notification  
  Les bulles de notification peuvent apparaître à titre informatif au sein d’un éditeur/concepteur ou dans le cadre de la zone de Notification de Windows. L’utilisateur ne détecte ces bulles en tant que les problèmes qu’ils peuvent résoudre plus tard, qui est un avantage pour les notifications non critiques. Les bulles sont inappropriés pour que l’utilisateur doit résoudre immédiatement les informations critiques. Si vous utilisez des bulles de notification dans Visual Studio, suivez les [des conseils de bureau Windows pour les bulles de notification](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742472\(v=vs.85\).aspx).  
   
  ![Bulle de notification](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901-07_NotificationBubbles")  
   
  **Bulle de notification dans la zone de Notification de Windows utilisée pour Visual Studio**  
   
-##  <a name="BKMK_ProgressIndicators"></a>Indicateurs de progression  
+##  <a name="BKMK_ProgressIndicators"></a> Indicateurs de progression  
   
 ### <a name="overview"></a>Vue d'ensemble  
  Indicateurs de progression constituent une partie importante d’un système de notification pour les commentaires de l’utilisateur. Ils indiquent l’utilisateur lorsque le processus et des opérations seront achève. Types d’indicateurs familiers incluent les barres de progression, les curseurs de rotation et icônes animées. Le type et l’emplacement d’un indicateur de progression varie selon le contexte, y compris ce qui est signalé et la durée pendant laquelle le processus ou une opération prendra.  
@@ -287,12 +283,12 @@ ms.lasthandoff: 02/01/2018
   
  **Fenêtre de sortie avec l’état du processus en cours et attendez la messagerie**  
   
-##  <a name="BKMK_Infobars"></a> Infobars  
+##  <a name="BKMK_Infobars"></a> Barres d’informations  
   
 ### <a name="overview"></a>Vue d'ensemble  
  Barres d’informations accordez à l’utilisateur un indicateur proche de leur point d’attention et l’utilisation du contrôle de barre d’informations partagées garantit la cohérence de l’apparence visuelle et d’interaction.  
   
- ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
+ ![Barre d’informations](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
   
  **Barres d’informations dans Visual Studio**  
   
@@ -476,13 +472,13 @@ public interface IVsInfoBarUIEvents
   
 ```  
   
-##  <a name="BKMK_ErrorValidation"></a>Validation des erreurs  
+##  <a name="BKMK_ErrorValidation"></a> Validation des erreurs  
  Lorsqu’un utilisateur entre des informations qui ne sont pas acceptables, par exemple quand un champ obligatoire est ignoré ou lorsque les données entrées dans un format incorrect, il est préférable de validation de contrôle d’utilisation ou des commentaires près du contrôle au lieu d’utiliser une boîte de dialogue Erreur blocage du menu contextuel.  
   
 ### <a name="field-validation"></a>Validation de champ  
  Validation de formulaire et le champ se compose de trois composants : un contrôle, une icône et une info-bulle. Alors que plusieurs types de contrôles peuvent utiliser cela, une zone de texte est utilisée comme un exemple.  
   
- ![Validation de champ &#40; vide &#41; ] (../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905-01_FieldValidation")  
+ ![Validation de champ &#40;vide&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905-01_FieldValidation")  
   
  Si le champ est obligatoire, il doit y avoir indiquant que le texte de filigrane  **\<requis >** et l’arrière-plan du champ doit être claire jaune (VSColor : `Environment.ControlEditRequiredBackground`) et de premier plan doit être gris (VSColor : `Environment.ControlEditRequiredHintText`) :  
   
@@ -515,13 +511,13 @@ public interface IVsInfoBarUIEvents
 #### <a name="in-place-warning-text"></a>Texte d’avertissement sur place  
  Lorsque l’espace disponible pour placer le message d’erreur proche du contrôle dans un état d’erreur est, cette méthode est préférable à l’utilisation de l’info-bulle uniquement.  
   
- ![Dans &#45; avertissement sur place](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905-06_InPlaceWarning")  
+ ![Dans&#45;placer avertissement](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905-06_InPlaceWarning")  
   
  **Texte d’avertissement sur place**  
   
 #### <a name="watermarks"></a>Filigranes  
  Parfois, un ensemble du contrôle ou la fenêtre est dans un état d’erreur. Dans ce cas, utilisez un filigrane pour indiquer l’erreur.  
   
- ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
+ ![Filigrane](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
   
  **Validation de champ de filigrane**

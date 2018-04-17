@@ -1,12 +1,10 @@
 ---
-title: "Guide de test de Plug-ins de contrôle de code Source | Documents Microsoft"
-ms.custom: 
+title: Guide de test de Plug-ins de contrôle de code Source | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
 - source control [Visual Studio SDK], testing plug-ins
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - testing, source control plug-ins
 - source control plug-ins, test guide
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0fdab6cb0b259fe169a9ebd43c92158a5ce20d4b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 37af6a289b59b6066a71836e4d44e380b584ec70
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guide de test de Plug-ins de contrôle de code Source
 Cette section fournit des conseils pour le test de votre contrôle de source de plug-in avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Une vue d’ensemble complète de test les plus courants, ainsi que certaines zones plus complexes qui peuvent être problématiques est fournie. Cette vue d’ensemble n’est pas censée être une liste exhaustive des cas de test.  

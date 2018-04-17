@@ -1,12 +1,10 @@
 ---
-title: "Personnalisation de l’interface utilisateur Office | Documents Microsoft"
-ms.custom: 
+title: Personnalisation de l’interface utilisateur Office | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], UI customization
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c0556bdee18ac7dd207f1664b0aeb9de2532c90d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9a35ca6a868aa1fff2a4bd4bfbd3ec466d5a2107
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-ui-customization"></a>Personnalisation de l'interface utilisateur Office
   Vous pouvez personnaliser l'interface utilisateur des applications Microsoft Office à l'aide des outils de développement Office dans Visual Studio. Cette rubrique répertorie les fonctionnalités de l’interface utilisateur que vous pouvez personnaliser, comme décrit dans les sections suivantes :  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Menus contextuels](#Shortcut)  
   
-##  <a name="Comparison"></a>Comparaison des fonctionnalités de l’interface utilisateur  
+##  <a name="Comparison"></a> Comparaison des fonctionnalités de l’interface utilisateur  
  Le tableau suivant compare les principales fonctionnalités de l’interface utilisateur que vous pouvez personnaliser dans les projets Microsoft Office.  
   
 |Fonctionnalité|Types de projet pris en charge|Applications Microsoft Office prises en charge|  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
 |Contrôles dans des documents|Personnalisations au niveau du document<br /><br /> Compléments VSTO|Excel<br /><br /> Word|  
 |Menus contextuels|Personnalisations au niveau du document<br /><br /> Compléments VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projet<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|  
   
-##  <a name="Actions"></a>Volets Actions et volets de tâches personnalisés  
+##  <a name="Actions"></a> Volets Actions et volets de tâches personnalisés  
  Les volets de tâches sont des panneaux d’interface utilisateur généralement ancrés à l’un des côtés d’une fenêtre dans une application Microsoft Office. Presque toutes les applications Microsoft Office intègrent des volets de tâches, tels que le volet Aide dans Word.  
   
  Les outils de développement Office dans Visual Studio offrent deux façons de personnaliser des volets de tâches :  
@@ -69,33 +68,33 @@ ms.lasthandoff: 01/10/2018
   
  Pour plus d’informations sur les volets actions, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md). Pour plus d’informations sur les volets de tâches personnalisés, consultez [les volets de tâches personnalisés](../vsto/custom-task-panes.md).  
   
-##  <a name="Ribbon"></a>Interface utilisateur du ruban personnalisé  
+##  <a name="Ribbon"></a> Interface utilisateur du ruban personnalisé  
  Vous pouvez personnaliser l'interface utilisateur du ruban pour exposer les fonctionnalités que vous ajoutez aux applications Office. Le ruban est une façon d'organiser les commandes associées (sous forme de contrôles) pour les retrouver plus facilement. Vous pouvez créer vos propres groupes et onglets de ruban pour permettre aux utilisateurs d'accéder aux fonctionnalités fournies dans votre solution. La plupart des fonctionnalités accessibles via les menus et les barres d’outils dans les versions antérieures de Microsoft Office System sont maintenant accessibles à partir du ruban.  
   
  Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
   
-##  <a name="Backstage"></a>Mode Backstage  
+##  <a name="Backstage"></a> Mode Backstage  
  Dans les applications Office, en cliquant sur le **fichier** onglet mode Backstage. Le mode Backstage fournit une interface utilisateur qui combine des actions et des tâches de niveau fichier, et remplace les fonctionnalités similaires disponibles via le bouton Microsoft Office dans Microsoft Office System version 2007. Ce mode est intégralement extensible à l'aide de XML.  
   
  Visual Studio ne fournit pas de concepteur ni d'API pour personnaliser le mode Backstage. Toutefois, si vous ajoutez un **ruban (XML)** élément à votre projet Office, vous pouvez ajouter le XML dans le fichier XML du ruban pour personnaliser le mode Backstage. Pour plus d’informations sur **ruban (XML)** éléments, consultez [ruban XML](../vsto/ribbon-xml.md).  
   
  Pour plus d’informations sur la personnalisation du mode Backstage, consultez [présentation du mode Backstage Office 2010 pour les développeurs](http://go.microsoft.com/fwlink/?LinkId=182189) et [personnalisation du mode Backstage Office 2010 pour les développeurs](http://go.microsoft.com/fwlink/?LinkId=182188).  
   
-##  <a name="FormRegion"></a>Zones de formulaire Outlook  
+##  <a name="FormRegion"></a> Zones de formulaire Outlook  
  Utilisez des zones de formulaire pour ajouter des fonctionnalités personnalisées aux formulaires Microsoft Office Outlook standard. Vous pouvez créer des zones de formulaire qui étendent tout formulaire existant avec des champs ou contrôles supplémentaires. Si vous créez une zone de formulaire à l'aide des outils de développement Office dans Visual Studio, vous pouvez utiliser uniquement des contrôles Windows Forms dans cette zone de formulaire. Si vous importez une zone de formulaire conçue dans Outlook, vous pouvez alors utiliser des contrôles Outlook natifs uniquement.  
   
  Vous pouvez créer des zones de formulaire qui occupent différents endroits de l'interface utilisateur d'Outlook. Par exemple, ces zones de formulaire adjacentes s'affichent en bas de la première page d'un formulaire et sont toutes réductibles. Vous pouvez aussi ajouter une zone de formulaire distincte qui s'affiche comme page de formulaire supplémentaire complète et peut apparaître sur tout formulaire standard ou personnalisé existant.  
   
  Pour plus d'informations, consultez [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md).  
   
-##  <a name="Controls"></a>Contrôles sur des Documents  
+##  <a name="Controls"></a> Contrôles sur des Documents  
  Vous pouvez ajouter divers contrôles aux documents Word et aux feuilles de calcul Excel. Par exemple, ajoutez un contrôle sélecteur de dates à un document pour permettre à l'utilisateur d'entrer des dates dans un format standard, ou placez un bouton dans une feuille de calcul pour envoyer des données vers une base de données.  
   
  Quand vous développez un projet de niveau document pour Excel ou Word, vous pouvez utiliser le concepteur Visual Studio pour ajouter des contrôles au document ou au classeur dans votre projet au moment du design, ou les ajouter par programmation au moment de l'exécution. Quand vous développez des projets de complément VSTO pour Excel ou Word, vous pouvez ajouter des contrôles par programmation à n’importe quel document ou classeur ouvert au moment de l’exécution.  
   
  Pour plus d’informations, consultez [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md) et [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
-##  <a name="Shortcut"></a>Menus contextuels  
+##  <a name="Shortcut"></a> Menus contextuels  
  Un menu contextuel s'affiche lorsque vous cliquez avec le bouton droit dans un document ou une fenêtre d'application. Vous pouvez définir un menu contextuel pour qu'il apparaisse quand un événement se produit (par exemple, quand un utilisateur clique avec le bouton droit sur un document, un classeur ou un contrôle hôte). Vous avez la possibilité d'ajouter divers contrôles ou commandes de menu à un menu contextuel, et créer des menus contextuels à l'aide de XML. Si vous ajoutez un **ruban (XML)** élément à votre projet Office, vous pouvez ajouter le XML dans le fichier XML du ruban pour créer des menus contextuels. Pour plus d’informations sur l’utilisation de XML pour créer des menus contextuels, consultez [Comment : ajouter des commandes aux Menus contextuels](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
 ## <a name="see-also"></a>Voir aussi  

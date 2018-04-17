@@ -1,13 +1,10 @@
 ---
-title: "Page Publier, Project Designer (développement Office dans Visual Studio) | Documents Microsoft"
-ms.custom: 
+title: Page Publier, Project Designer (développement Office dans Visual Studio) | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.Publish.2007System
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - Property Pages dialog box, Publish [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9cc3fa102c0552893c6f7859a256b7df26e3af5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Page Publier, Concepteur de projets (Développement Office dans Visual Studio)
   La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement.  
@@ -44,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
  Les options incluent l’ordinateur local, un partage de fichiers UNC ou un site web HTTP/HTTPS. Le chemin d’accès peut être local (*c:\foldername\publishfolder*), relatif (*publier\\*), ou un emplacement qualifié complet (*\\\servername\foldername* ou http://*nomserveur/nomdossier*).  
   
- Par défaut, l’emplacement de publication est *http://localhost/nom_projet/* si IIS est installé, ou le répertoire publish\ si IIS n’est pas installé.  
+ Par défaut, l’emplacement de publication est *http://localhost/projectname/* si vous avez installé IIS, ou le répertoire Publish si vous le faites pas IIS installé.  
   
  **URL du dossier d'installation**  
  Facultatif.  
@@ -102,7 +99,7 @@ ms.lasthandoff: 01/10/2018
  **Langue de publication**  
  Cette option définit la langue des termes du contrat de licence logiciel Microsoft, et inclut les modules linguistiques dans la liste des composants nécessaires. Elle n’affecte pas la langue de la personnalisation. La langue du programme d’installation est déterminée par les langues installées de Visual Studio.  
   
- Pour plus d’informations sur la façon de changer la **langue de publication**, consultez [How to: Change the Publish Language for a ClickOnce Application](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
+ Pour plus d’informations sur la façon de changer la **langue de publication**, consultez [Comment : modifier la langue de publication pour une application ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
   
  **Version de publication**  
  Définit le numéro de version de la personnalisation. Quand vous changez le numéro de version, l’application est publiée en tant que mise à jour. Un dossier est créé pour chaque version pendant le processus de génération pour éviter de remplacer la version précédemment publiée. Chaque partie de la version de publication (**Majeure**, **Mineure**, **Build**, **Révision**) peut contenir jusqu’à 5 chiffres.  

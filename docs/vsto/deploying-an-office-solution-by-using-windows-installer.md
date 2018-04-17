@@ -1,13 +1,10 @@
 ---
-title: "Déploiement d’une Solution Office à l’aide de Windows Installer | Documents Microsoft"
-ms.custom: 
+title: Déploiement d’une Solution Office à l’aide de Windows Installer | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f2c51b101b890a2aaf2ea63edfd1f55d05abe18e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>Déploiement d'une solution Office à l'aide de Windows Installer
 Découvrez comment créer un fichier Windows Installer pour votre solution Office à l'aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -239,7 +236,7 @@ La page **Composants redistribuables** contient un élément nommé **Runtime Mi
   
 6. Dans la boîte de dialogue **Enregistrer sous** , recherchez votre dossier **Bureau** .  
   
-7. Dans le **enregistrer en tant que type** , sélectionnez **tous les fichiers (&#42;. &#42;)**.  
+7. Dans le **enregistrer en tant que type** , choisissez **tous les fichiers (&#42;.&#42;)** .  
   
 8. Dans la zone **Nom de fichier** , entrez **Visual Studio 2010 Tools for Office Runtime.prq**, puis choisissez le bouton **Enregistrer** .  
   
@@ -493,7 +490,7 @@ Pour modifier des propriétés personnalisées, créez un programme qui supprime
   
 13. Ouvrez le fichier projet de votre solution dans le Bloc-notes. Pour les projets Visual Basic, le nom du fichier est ExcelWorkbook.vbproj. Pour les projets C#, le nom du fichier est ExcelWorkbook.csproj.  
   
-14. Dans le fichier projet, recherchez le  **&lt;SolutionID&gt;**  élément, copiez sa valeur dans le Presse-papiers, puis fermez le bloc-notes.  
+14. Dans le fichier projet, recherchez le **&lt;SolutionID&gt;** élément, copiez sa valeur dans le Presse-papiers, puis fermez le bloc-notes.  
   
    Vous passez cette valeur à l'application console comme paramètre.  
   
@@ -533,7 +530,7 @@ Pour modifier des propriétés personnalisées, créez un programme qui supprime
   
 9. Dans la barre de menus, choisissez **Générer**, puis **Générer OfficeAddInSetup**.  
   
-   Une fois la build terminée, vous pouvez localiser le fichier setup.exe de la **OfficeAddInSetup** projet à l’emplacement suivant : *OfficeAddInSetupProjectRoot***\ OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
+   Une fois la build terminée, vous pouvez localiser le fichier setup.exe de la **OfficeAddInSetup** projet à l’emplacement suivant : *OfficeAddInSetupProjectRoot *** \OfficeAddInSetup\Express\SingleImage\DiskImages\ DISQUE 1\**  
   
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,21 +1,19 @@
 ---
-title: "Comment : ouvrir un modèle à partir du fichier de Code de programme | Documents Microsoft"
-ms.custom: 
+title: 'Comment : ouvrir un modèle à partir du fichier de Code de programme | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 974eb3d5fd0517d130fcd847e4e8c3d93ea65d60
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: def58efd27dc87b35b50969630e3129b999fc98a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Comment : ouvrir un modèle depuis un fichier dans le code de programme
 Vous pouvez ouvrir les modèles DSL dans n’importe quelle application.  

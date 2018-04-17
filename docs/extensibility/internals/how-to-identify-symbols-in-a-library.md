@@ -1,26 +1,24 @@
 ---
-title: "Comment : identifier les symboles dans une bibliothèque | Documents Microsoft"
-ms.custom: 
+title: 'Comment : identifier les symboles dans une bibliothèque | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
 - Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 60365f3722ae4e2c1f8b52dacc3df03840fb3304
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 310ba421120101ce545888bcf4c069ca454cf086
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Comment : identifier les symboles dans une bibliothèque
 Outils de consultation du symbole affichent hiérarchique des symboles. Les symboles représentent des espaces de noms, des objets, des classes, des membres de classe et d’autres éléments de langage.  

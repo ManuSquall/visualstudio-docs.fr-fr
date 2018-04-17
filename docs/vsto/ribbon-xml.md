@@ -1,13 +1,10 @@
 ---
 title: Ruban XML | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.Ribbon.RibbonXMLItem
 dev_langs:
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - customizing the Ribbon, displaying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e12489431a7496b1d64d5aef93a24fcc239be81a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 76527949bcfc5b3023ebd75fe15726b02938d39e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-xml"></a>Élément XML Ribbon
   L'élément Ruban (XML) vous permet de personnaliser un ruban en utilisant XML. Utilisez l'élément Ruban (XML) si vous souhaitez personnaliser le ruban d'une façon qui n'est pas prise en charge par l'élément Ruban (Concepteur visuel). Pour obtenir une comparaison de ce que vous pouvez faire avec chaque élément, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
@@ -67,7 +64,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Outlook requiert une étape supplémentaire. Pour plus d’informations, consultez [personnalisation d’un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
- Pour accéder à une procédure pas à pas qui montre comment automatiser une application à partir du ruban, consultez [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
+ Pour accéder à une procédure pas à pas qui montre comment automatiser une application à partir du ruban, consultez [Procédure pas à pas : création d'un onglet personnalisé à l'aide d'un élément XML Ribbon](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
   
 ### <a name="assigning-callback-methods-to-controls"></a>Affectation de méthodes de rappel à des contrôles  
  Pour affecter une méthode de rappel à un contrôle dans le fichier XML du ruban, ajoutez un attribut qui spécifie le type et le nom de cette méthode. Par exemple, l'élément suivant définit un bouton doté d'une méthode de rappel **onAction** nommée `OnToggleButton1`.  
@@ -122,7 +119,7 @@ ms.lasthandoff: 01/10/2018
 |-------------|-----------------|  
 |**customUI**|Représente le ruban personnalisé dans le projet de complément VSTO.|  
 |**ribbon**|Représente le ruban.|  
-|**onglets**|Représente un ensemble d'onglets du ruban.|  
+|**Onglets**|Représente un ensemble d'onglets du ruban.|  
 |**onglet**|Représente un onglet individuel du ruban.|  
 |**group**|Représente un groupe de contrôles sous l'onglet du ruban.|  
   
@@ -133,7 +130,7 @@ ms.lasthandoff: 01/10/2018
 |**onLoad**|**customUI**|Identifie une méthode qui est appelée quand l'application charge le ruban.|  
 |**idMso**|**onglet**|Identifie un onglet intégré à afficher dans le ruban.|  
 |**ID**|**group**|Identifie le groupe.|  
-|**étiquette**|**group**|Spécifie le texte qui apparaît sur le groupe.|  
+|**Étiquette**|**group**|Spécifie le texte qui apparaît sur le groupe.|  
   
  Les éléments et les attributs par défaut figurant dans le fichier XML du ruban sont un petit sous-ensemble des éléments et attributs disponibles. Pour obtenir la liste complète des éléments et des attributs disponibles, consultez l'article technique [Personnalisation de l'interface utilisateur du ruban Office (2007) pour les développeurs (partie 2 sur 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
   
@@ -144,7 +141,7 @@ ms.lasthandoff: 01/10/2018
   
 |Méthode|Description|  
 |------------|-----------------|  
-|`GetCustomUI`|Retourne le contenu du fichier XML du ruban. Les applications Microsoft Office appellent cette méthode pour obtenir une chaîne XML définissant l'interface utilisateur de votre ruban personnalisé. Cette méthode implémente la méthode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Remarque :** `GetCustomUI` doit être implémentée uniquement pour retourner le contenu du fichier XML du ruban ; il ne doit pas être utilisé pour initialiser votre complément, VSTO. En particulier, vous ne devez pas essayer d'afficher des boîtes de dialogue ni d'autres fenêtres dans votre implémentation de `GetCustomUI` . Sinon, le ruban personnalisé risque de ne pas fonctionner correctement. Si vous devez exécuter du code qui initialise votre complément VSTO, ajoutez ce code au gestionnaire d’événements `ThisAddIn_Startup` .|  
+|`GetCustomUI`|Retourne le contenu du fichier XML du ruban. Les applications Microsoft Office appellent cette méthode pour obtenir une chaîne XML définissant l'interface utilisateur de votre ruban personnalisé. Cette méthode implémente la méthode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Remarque :** `GetCustomUI` doit être implémentée uniquement pour retourner le contenu du fichier XML du ruban ; il ne doit pas être utilisé pour initialiser votre complément, VSTO.   En particulier, vous ne devez pas essayer d'afficher des boîtes de dialogue ni d'autres fenêtres dans votre implémentation de `GetCustomUI` . Sinon, le ruban personnalisé risque de ne pas fonctionner correctement. Si vous devez exécuter du code qui initialise votre complément VSTO, ajoutez ce code au gestionnaire d’événements `ThisAddIn_Startup` .|  
 |`OnLoad`|Affecte le paramètre <xref:Microsoft.Office.Core.IRibbonControl> au champ `ribbon` . Les applications Microsoft Office appellent cette méthode quand elles chargent le ruban personnalisé. Vous pouvez utiliser ce champ pour mettre à jour dynamiquement le ruban personnalisé. Pour plus d'informations, consultez l'article technique [Personnalisation de l'interface utilisateur du ruban Office (2007) pour les développeurs (partie 1 sur 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Appelée par la méthode `GetCustomUI` pour obtenir le contenu du fichier XML du ruban.|  
   

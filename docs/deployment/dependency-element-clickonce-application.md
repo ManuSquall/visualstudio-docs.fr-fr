@@ -1,12 +1,10 @@
 ---
-title: "&lt;dépendance&gt; élément (déploiement ClickOnce) | Documents Microsoft"
-ms.custom: 
+title: '&lt;dépendance&gt; élément (déploiement ClickOnce) | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - manifests [ClickOnce], dependency element
 - <dependency> element [ClickOnce application manifest]
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
-caps.latest.revision: "34"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 7c3319661a4c0df298cd844c4d71c6855cad818c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: be31fafb64b44d6d98917edb11f82a69fbc41c76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dépendance&gt; élément (déploiement ClickOnce)
 Identifie une dépendance de plateforme ou d’assembly qui est requise pour l’application.  
@@ -98,7 +96,7 @@ Identifie une dépendance de plateforme ou d’assembly qui est requise pour l�
 ### <a name="dependentos"></a>dependentOS  
  Facultatif. Contient le `osVersionInfo` élément. Le `dependentOS` et `dependentAssembly` éléments s’excluent mutuellement : un ou l’autre doit exister pour un `dependency` élément, mais pas les deux.  
   
- `dependentOS`prend en charge les attributs suivants.  
+ `dependentOS` prend en charge les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -124,7 +122,7 @@ Identifie une dépendance de plateforme ou d’assembly qui est requise pour l�
 ### <a name="dependentassembly"></a>dependentAssembly  
  Facultatif. Contient le `assemblyIdentity` élément. Le `dependentOS` et `dependentAssembly` éléments s’excluent mutuellement : un ou l’autre doit exister pour un `dependency` élément, mais pas les deux.  
   
- `dependentAssembly`a les attributs suivants.  
+ `dependentAssembly` a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -140,7 +138,7 @@ Identifie une dépendance de plateforme ou d’assembly qui est requise pour l�
 |Attribut|Description|  
 |---------------|-----------------|  
 |`name`|Obligatoire. Identifie le nom de l’application.|  
-|`version`|Obligatoire. Spécifie le numéro de version de l’application dans le format suivant :`major.minor.build.revision`|  
+|`version`|Obligatoire. Spécifie le numéro de version de l’application dans le format suivant : `major.minor.build.revision`|  
 |`publicKeyToken`|Facultatif. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la `SHA-1` la valeur de la clé publique sous laquelle l’application ou l’assembly est signé de hachage. La clé publique utilisée pour signer le catalogue doit être au moins 2 048 bits.|  
 |`processorArchitecture`|Facultatif. Spécifie le processeur. Les valeurs valides sont `x86` pour Windows 32 bits et `I64` pour Windows 64 bits.|  
 |`language`|Facultatif. Identifie les codes de langue de deux parties, telles que EN-US, de l’assembly.|  
@@ -148,7 +146,7 @@ Identifie une dépendance de plateforme ou d’assembly qui est requise pour l�
 ### <a name="hash"></a>hash  
  Le `hash` élément est un enfant facultatif de la `assemblyIdentity` élément. Le `hash` élément ne possède pas d’attributs.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]utilise un hachage algorithmique de tous les fichiers dans une application en tant qu’une vérification de sécurité pour vous assurer qu’aucun des fichiers ont été modifiées après le déploiement. Si le `hash` élément n’est pas inclus, cette vérification ne sera pas effectuée. Par conséquent, l’omission de la `hash` élément n’est pas recommandé.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] utilise un hachage algorithmique de tous les fichiers dans une application en tant qu’une vérification de sécurité pour vous assurer qu’aucun des fichiers ont été modifiées après le déploiement. Si le `hash` élément n’est pas inclus, cette vérification ne sera pas effectuée. Par conséquent, l’omission de la `hash` élément n’est pas recommandé.  
   
 ### <a name="dsigtransforms"></a>dsig : TRANSFORMS  
  Le `dsig:Transforms` élément est un enfant requis de le `hash` élément. Le `dsig:Transforms` élément ne possède pas d’attributs.  

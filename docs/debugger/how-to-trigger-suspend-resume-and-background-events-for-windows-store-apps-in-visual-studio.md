@@ -1,13 +1,10 @@
 ---
-title: "Comment déclencher suspendre, reprendre et événements en arrière-plan pendant le débogage d’applications UWP | Documents Microsoft"
-ms.custom: 
+title: Comment déclencher suspendre, reprendre et événements en arrière-plan pendant le débogage d’applications UWP | Documents Microsoft
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
 dev_langs:
@@ -15,17 +12,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 33958dd97c4ca8958c4f96ebe84697f2953afa9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Comment déclencher suspendre, reprendre et événements en arrière-plan pendant le débogage d’applications UWP dans Visual Studio
 Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management** (PLM) contrôle l'état d'exécution de votre application, soit son démarrage, sa suspension, sa reprise et sa fin en réponse aux actions utilisateur et à l'état du périphérique. Lorsque vous effectuez un débogage, Windows désactive ces événements d'activation. Cette rubrique décrit comment déclencher ces événements dans le débogueur.  
@@ -83,11 +79,11 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
   
     -   Pour les projets Visual C# et Visual Basic, choisissez **Ne pas lancer, mais déboguer mon code au démarrage**  
   
-         ![C &#35; &#47; Propriété d’application VB débogage lancement](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
+         ![C&#35;&#47;propriété d’application VB débogage lancement](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
   
     -   Pour les projets JavaScript et Visual C++, choisissez **Non** dans la liste **Lancer l'application** .  
   
-         ![C &#43; &#43; &#47; Propriété de débogage d’application VB lancer](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
+         ![C&#43;&#43;&#47;propriété de débogage d’application VB lancer](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
   
 4.  Appuyez sur **F5** pour exécuter l'application en mode débogage. Notez que la liste **Processus** dans la barre d'outils **Emplacement de débogage** affiche le nom du package d'application pour indiquer que vous êtes en mode débogage.  
   

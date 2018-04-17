@@ -1,21 +1,19 @@
 ---
-title: "Utilisation de Solutions de langage spécifique à un domaine | Documents Microsoft"
-ms.custom: 
+title: Utilisation de Solutions de langage spécifique à un domaine | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2a003a7497efb437ef84104d1b757f5650607fe8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e5b7335fb7f57f05dcccd6eeeed84050a42ac57c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Utilisation de solutions de langage spécifique à un domaine
 Un langage spécifique à un domaine (DSL) est créé en utilisant un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution. Cette section est sur la façon de configurer et personnaliser la solution.  

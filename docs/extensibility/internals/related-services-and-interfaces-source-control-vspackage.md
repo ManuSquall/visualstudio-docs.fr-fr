@@ -1,26 +1,24 @@
 ---
-title: "Les Services associés et les Interfaces (VSPackage de contrôle de code Source) | Documents Microsoft"
-ms.custom: 
+title: Les Services associés et les Interfaces (VSPackage de contrôle de code Source) | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7d19c7e2560fafbf54257bf4c46303874bfc717b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1f9e8e90fdda61524a9af107df452bc2b13cd90c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Les Services associés et les Interfaces (VSPackage de contrôle de code Source)
 Cette section répertorie toutes les interfaces liées au VSPackage dans contrôle de la source de la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Le contrôle de code source VSPackage implémente certaines de ces interfaces et d’autres utilise pour accomplir les tâches de contrôle de code source.  

@@ -1,26 +1,24 @@
 ---
-title: "Problèmes de sécurité | Documents Microsoft"
-ms.custom: 
+title: Problèmes de sécurité | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - security [Debugging SDK]
 - debugging [Debugging SDK], security
 ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 753f916d148675afd7313afc8673232f22280b7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d45ebd8c4d80b84749838c2034d72159c9e39627
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-issues"></a>Problèmes de sécurité
 Pour déboguer un programme à l’aide de Visual Studio, les seules autorisations nécessitées sont les mêmes que ceux un développeur a besoin pour exécuter le programme. Cela inclut le débogage distant pour la plupart des cas (certaines situations impliquant d’autres services, comme Internet Information Services, peuvent nécessiter un niveau supérieur d’autorisations).  

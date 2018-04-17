@@ -1,12 +1,10 @@
 ---
-title: "Comment : importer une Page maître ou un thème | Documents Microsoft"
-ms.custom: 
+title: 'Comment : importer une Page maître ou un thème | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,17 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 07c3e9fb88ea562a85e1c7555d2c57cb04d769ff
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e60977a44593953b4858ea0262befc61c3189cec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Comment : importer une page maître ou un thème
-  Vous pouvez attribuer aux pages sur votre site SharePoint une apparence cohérente en créant et en utilisant les thèmes et les pages maîtres. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ne fournit pas les modèles pour ces éléments, mais vous pouvez les créer dans SharePoint Designer et importez-les dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d’informations, consultez [bloc de construction : Pages et Interface utilisateur](http://go.microsoft.com/fwlink/?LinkID=182095) sur le site Web Microsoft.  
+  Vous pouvez attribuer aux pages sur votre site SharePoint une apparence cohérente en créant et en utilisant les thèmes et les pages maîtres. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne fournit pas les modèles pour ces éléments, mais vous pouvez les créer dans SharePoint Designer et importez-les dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d’informations, consultez [bloc de construction : Pages et Interface utilisateur](http://go.microsoft.com/fwlink/?LinkID=182095) sur le site Web Microsoft.  
   
 ### <a name="to-import-a-master-page-or-theme"></a>Pour importer une page maître ou un thème  
   

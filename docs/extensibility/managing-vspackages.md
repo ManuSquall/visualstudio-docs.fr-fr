@@ -1,28 +1,26 @@
 ---
 title: Gestion des VSPackages | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, delayed loading
 - delay loading
 - VSPackages, loading
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
-caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3c3201c032d0cae645460e614b6d4138297e4a93
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 9e3241bae84b89b53e30c3d0949e4f8551110e7d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-vspackages"></a>Gestion des VSPackages
 Dans la plupart des cas vous n’avez pas à vous soucier de la gestion des VSPackages, étant donné que les modèles de projet et d’élément enregistrement et chargent le package automatiquement. Toutefois, dans certains cas, vous devrez peut-être en savoir un peu plus pour gérer votre package.  

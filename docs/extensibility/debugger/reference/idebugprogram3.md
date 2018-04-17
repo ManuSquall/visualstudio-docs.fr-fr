@@ -1,27 +1,23 @@
 ---
 title: IDebugProgram3 | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgram3 interface
 ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb827c875731134b9d8f9ea2833f3629ca0d3c36
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 328fe3c863c4233c984db6de8bc992ea91b6a4d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 Cette interface représente un programme qui s’exécute dans un processus et qui étend [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) en fournissant des informations sur le thread.  
@@ -45,7 +41,7 @@ IDebugProgram3 : IDebugProgram3
 |------------|-----------------|  
 |[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Exécute le programme. Le thread est retourné afin de donner les informations du débogueur threads sur lesquels l’utilisateur consulte lors de l’exécution.|  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

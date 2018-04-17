@@ -1,11 +1,11 @@
 ---
-title: "Tâche Link | Microsoft Docs"
-ms.custom: 
+title: Tâche Link | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceFileOutput
@@ -30,19 +30,19 @@ helpviewer_keywords:
 - MSBuild (Visual C++), Link task
 - Link task (MSBuild (Visual C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-caps.latest.revision: 
+caps.latest.revision: 12
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: a5c92a6faa558445bf85637f2e51ab7fb0e7a856
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
-# <a name="link-task"></a>Tâche Link
+# <a name="link-task"></a>Lier la tâche
 Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable (.exe) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez l’article [Options de l’Éditeur de liens](/cpp/build/reference/linker-options).  
   
 ## <a name="parameters"></a>Paramètres  

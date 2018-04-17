@@ -1,27 +1,25 @@
 ---
-title: "Ajout et suppression de Pages de propriétés | Documents Microsoft"
-ms.custom: 
+title: Ajout et suppression de Pages de propriétés | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
 - property pages, project subtypes
 - property pages, removing
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 98d6edf4da8b7f0275a7b361f5492f4f49a1f747
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8a8130056437bf35a1617544ae7d1ecfb9068946
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-and-removing-property-pages"></a>Ajout et suppression de Pages de propriétés
 Le Concepteur de projet fournit un emplacement centralisé pour la gestion des propriétés du projet, les paramètres et les ressources dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il apparaît sous la forme d’une fenêtre unique dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] développement environnement intégré (IDE) et contient un nombre de volets qui sont accessibles via les onglets sur la gauche à droite. Les volets (souvent appelés pages de propriétés) dans le Concepteur de projet varient selon le langage et le type de projet. Le Concepteur de projet est accessible avec la **propriétés** commande sur le **projet** menu.  

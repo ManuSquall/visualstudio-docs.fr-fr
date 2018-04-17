@@ -1,13 +1,10 @@
 ---
-title: "Mise en route (développement Office dans Visual Studio) | Documents Microsoft"
-ms.custom: 
+title: Mise en route (développement Office dans Visual Studio) | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, getting started
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 04be00558cd3dd22cb9aa7546d6797778b1bae2c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2e0c945667f99fdd6df431413e3f1f96d06eca4b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-office-development-in-visual-studio"></a>Mise en route (Développement Office dans Visual Studio)
   Cette section contient des rubriques qui vous préparent à l'utilisation des outils de développement Microsoft Office dans Visual Studio.  
@@ -31,7 +28,7 @@ ms.lasthandoff: 01/10/2018
 >  Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle des compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office ont un faible encombrement mémoire par rapport aux compléments VSTO et les solutions, et vous pouvez les créer à l’aide de presque n’importe quel web technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Présentation du développement de Solutions Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Présentation du développement de Solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  Fournit des informations générales sur le développement de solutions Office dans Visual Studio.  
   
  [Modifications du design de projets Office qui ciblent .NET Framework 4 ou .NET Framework 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  

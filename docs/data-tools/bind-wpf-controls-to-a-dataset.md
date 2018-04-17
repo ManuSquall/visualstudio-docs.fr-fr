@@ -1,11 +1,8 @@
 ---
-title: "Lier des contrôles WPF à un dataset | Documents Microsoft"
-ms.custom: 
+title: Lier des contrôles WPF à un dataset | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 072adcf912e5921164647cf77ee561617f844786
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: f4034651b68194906285c6d1911f7f650287074d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Lier des contrôles WPF à un dataset
 Dans cette procédure pas à pas, vous allez créer une application WPF qui contient des contrôles liés aux données. Les contrôles sont liés aux enregistrements produit encapsulés dans un dataset. Vous allez également ajouter des boutons pour parcourir les produits et enregistrer les modifications apportées aux enregistrements produit.  
@@ -183,11 +180,11 @@ La connaissance préalable des concepts suivants s'avère également utile, mais
 7.  Dans le **propriétés** fenêtre, sélectionnez la case à cocher à côté du **IsReadOnly** propriété.  
   
 ## <a name="navigating-product-records"></a>Parcourir les enregistrements de produit  
- Ajoutez le code qui permet aux utilisateurs de faire défiler les enregistrements produit à l’aide de la  **\<**  et  **>**  boutons.  
+ Ajoutez le code qui permet aux utilisateurs de faire défiler les enregistrements produit à l’aide de la **\<** et **>** boutons.  
   
 #### <a name="to-enable-users-to-navigate-product-records"></a>Pour permettre aux utilisateurs de parcourir les enregistrements produit  
   
-1.  Dans le concepteur, double-cliquez sur le  **<**  bouton sur la surface de la fenêtre.  
+1.  Dans le concepteur, double-cliquez sur le **<** bouton sur la surface de la fenêtre.  
   
      Visual Studio ouvre le fichier code-behind et crée un nouveau `backButton_Click` Gestionnaire d’événements pour le <xref:System.Windows.Controls.Primitives.ButtonBase.Click> événement.  
   
@@ -201,7 +198,7 @@ La connaissance préalable des concepts suivants s'avère également utile, mais
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]  
   
-4.  Retourner au concepteur et double-cliquez sur le  **>**  bouton.  
+4.  Retourner au concepteur et double-cliquez sur le **>** bouton.  
   
 5.  Ajoutez le code suivant au gestionnaire d'événements `nextButton_Click` :  
   
@@ -236,7 +233,7 @@ Ajoutez le code qui permet aux utilisateurs d’enregistrer les modifications ap
   
     -   Les zones de texte affichent les données du premier enregistrement produit qui dispose d'une photo. Ce produit a l’ID de produit 713 et le nom **Long-Sleeve Logo Jersey, S**.  
   
-    -   Vous pouvez cliquer sur le  **>**  ou  **<**  boutons pour parcourir les autres enregistrements produit.  
+    -   Vous pouvez cliquer sur le **>** ou **<** boutons pour parcourir les autres enregistrements produit.  
   
 2.  Dans un des enregistrements de produit, modifiez le **taille** valeur, puis cliquez sur **enregistrer les modifications**.  
   

@@ -1,13 +1,10 @@
 ---
-title: "Résolution des problèmes d’empaquetage de SharePoint et de déploiement | Documents Microsoft"
-ms.custom: 
+title: Résolution des problèmes d’empaquetage de SharePoint et de déploiement | Documents Microsoft
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.WorkflowDeployment.Troubleshooting
 - VS.SharePointTools.Project.PackageRetraction
@@ -26,23 +23,23 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b30c17b9b20c59085fc8a684e3b9735daa0e019c
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95dfd93433fc70895baa9056ce1b1522845bf497
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>Dépannage de la création de packages et du déploiement SharePoint
   Cette rubrique couvre différents problèmes que vous pouvez rencontrer lorsque vous empaquetez et déployez des solutions SharePoint.
 
 ## <a name="enabling-enhanced-debugging"></a>Activation du débogage avancé
- Pour effectuer un diagnostic entre Visual Studio, SharePoint et d'autres couches, vous pouvez utiliser la clé de Registre EnableDiagnostics afin de consulter la trace de la pile. Pour plus d’informations, consultez [débogage de Solutions SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
+ Pour effectuer un diagnostic entre Visual Studio, SharePoint et d'autres couches, vous pouvez utiliser la clé de Registre EnableDiagnostics afin de consulter la trace de la pile. Pour plus d'informations, consultez [Déploiement de solutions SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="adding-project-output-to-the-solution-package"></a>Ajout de la sortie de projet au package de solution
- Vous pouvez ajouter la sortie de projet à un package via le Concepteur de packages. Toutefois, lorsque vous ajoutez la sortie de projet, assurez-vous que la plateforme du projet correspond à la plateforme de la solution SharePoint. Nous vous recommandons d’utiliser le **Any CPU** plateforme cible pour les assemblys que vous souhaitez déployer sur un serveur SharePoint. Pour plus d’informations, consultez [Page Compiler, Concepteur de projets &#40; Visual Basic &#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) et [avancé de boîte de dialogue Paramètres du compilateur &#40; Visual Basic &#41; ](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ Vous pouvez ajouter la sortie de projet à un package via le Concepteur de packages. Toutefois, lorsque vous ajoutez la sortie de projet, assurez-vous que la plateforme du projet correspond à la plateforme de la solution SharePoint. Nous vous recommandons d’utiliser le **Any CPU** plateforme cible pour les assemblys que vous souhaitez déployer sur un serveur SharePoint. Pour plus d’informations, consultez [Page Compiler, Concepteur de projets &#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) et [boîte de dialogue Paramètres du compilateur avancés &#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
 
 ## <a name="validation-warnings-and-errors"></a>Erreurs et avertissements de validation
  Les outils de développement SharePoint dans Visual Studio exécutent des étapes de validation pour vérifier que le package de solution est correctement formé. Vous pouvez également créer des étapes de validation personnalisées pour vos fonctionnalités et vos packages. Pour plus d’informations, consultez [Comment : créer des fonctionnalités personnalisées et les règles de Validation de Package pour les Solutions SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
@@ -56,7 +53,7 @@ ms.lasthandoff: 03/02/2018
 |-----------|-----------------|
 |Automatique|Détecte les collisions et résout automatiquement les conflits.|
 |Invite|Détecte les collisions et les signale au développeur avant de résoudre les conflits.|
-|Aucun.|Ne détecte pas les collisions.|
+|Aucun|Ne détecte pas les collisions.|
 
 ## <a name="differences-between-f5-deployment"></a>Différences entre le déploiement F5
  Lorsque vous utilisez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pour déployer votre projet SharePoint sur le serveur SharePoint local à des fins de test et de débogage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] exécute des opérations supplémentaires.

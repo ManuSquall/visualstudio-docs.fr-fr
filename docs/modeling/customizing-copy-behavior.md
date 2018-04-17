@@ -1,21 +1,19 @@
 ---
 title: Personnalisation du comportement de copie | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f8eba726c35b402e93bd1fd1b50048b8dce4bf2b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c46291a2827a673eaf597a8bb9fa738c3ab79b0b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-copy-behavior"></a>Personnalisation du comportement de la commande copier
 Dans un langage spécifique à un domaine (DSL, Domain-Specific Language) créé avec le Kit de développement logiciel (SDK) de visualisation et de modélisation de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez modifier ce qui se produit quand l'utilisateur copie et colle des éléments.  
@@ -216,7 +214,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Faites glisser et déposez les éléments permettent à l’utilisateur.**  
  Consultez [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a>Personnalisation du comportement de copie de lien  
+##  <a name="customizeLinks"></a> Personnalisation du comportement de copie de lien  
  Quand l'utilisateur copie un élément, le comportement standard est que tout élément incorporé est également copié. Vous pouvez modifier le comportement de copie standard. Dans la définition DSL, sélectionnez un rôle à un côté d’une relation et dans l’ensemble de la fenêtre Propriétés du **propage la copie** valeur.  
   
  ![Propage la propriété de copie du rôle de domaine](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  

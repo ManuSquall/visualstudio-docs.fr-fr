@@ -1,21 +1,19 @@
 ---
-title: "T4 Directive d’Assembly | Documents Microsoft"
-ms.custom: 
+title: T4 Directive d’Assembly | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9f586931bd14089beca787c24d92bc2605c4d5de
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2d0588688a6545471cfaa480d0efac868fe708de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="t4-assembly-directive"></a>Directive d'assembly T4
 Dans un modèle de texte au moment du design [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la directive `assembly` charge un assembly afin que votre code de modèle puisse utiliser ses types. L'effet est semblable à l'ajout d'une référence d'assembly dans un projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -38,7 +36,7 @@ Dans un modèle de texte au moment du design [!INCLUDE[vsprvs](../code-quality/i
   
 -   Chemin d’accès absolu de l’assembly  
   
- Vous pouvez utiliser la syntaxe `$(variableName)` pour référencer des variables [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] telles que `$(SolutionDir)`, et `%VariableName%` pour référencer des variables d'environnement. Exemple :  
+ Vous pouvez utiliser la syntaxe `$(variableName)` pour référencer des variables [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] telles que `$(SolutionDir)`, et `%VariableName%` pour référencer des variables d'environnement. Par exemple :  
   
 ```  
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>  
@@ -65,7 +63,7 @@ Dans un modèle de texte au moment du design [!INCLUDE[vsprvs](../code-quality/i
   
 -   Assembly contenant votre DSL.  
   
-##  <a name="msbuild"></a>À l’aide des propriétés de projet dans MSBuild et Visual Studio  
+##  <a name="msbuild"></a> À l’aide des propriétés de projet dans MSBuild et Visual Studio  
  Les macros Visual Studio telles que $ (SolutionDir) ne fonctionnent pas dans MSBuild. Si vous souhaitez transformer les modèles de votre ordinateur de build, vous devez utiliser les propriétés de projet à la place.  
   
  Modifiez votre fichier projet .csproj ou .vbproj pour définir une propriété de projet. Cet exemple définit une propriété nommée `myLibFolder` :  

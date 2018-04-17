@@ -1,23 +1,21 @@
 ---
 title: Variante de Format cible de rendu 16 BPP | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 896ca20589e987f5a516e85c47d3f06a44a2550c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 620bc415349a46ba8ab2315d6d41b93dc9194ca1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="16bpp-render-target-format-variant"></a>Variante de format cible de rendu 16 bpp
 Affecte aux pixels le format DXGI_FORMAT_B5G6R5_UNORM pour toutes les cibles de rendu et toutes les mémoires tampons d'arrière-plan.  

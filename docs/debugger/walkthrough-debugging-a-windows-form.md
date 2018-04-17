@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Débogage d’un Windows Form | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Débogage d’un Windows Form | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - Windows Forms, debugging
 - debugging Windows Forms, walkthroughs
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1d0ab1ccdf6f5365c04c4a7ee0cac8ce75ab5f17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 20013d5af0cd06f37c5e502618253354e9410374
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d'un Windows Form
 Un Windows Form est une des applications managées plus courantes. Il permet de créer une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, c# ou C++.  
@@ -67,7 +65,7 @@ Un Windows Form est une des applications managées plus courantes. Il permet de 
   
 6.  Sur le **vue** menu, sélectionnez **boîte à outils**.  
   
-     La boîte à outils s'ouvre. Pour plus d’informations, consultez [boîte à outils](../ide/reference/toolbox.md).  
+     La boîte à outils s'ouvre. Pour plus d'informations, consultez [Boîte à outils](../ide/reference/toolbox.md).  
   
 7.  Dans la boîte à outils, cliquez sur le **bouton** contrôler et faites glisser le contrôle sur l’aire de conception du formulaire. Relâchez le bouton sur le formulaire.  
   
@@ -90,7 +88,7 @@ Un Windows Form est une des applications managées plus courantes. Il permet de 
     textBox1->Text = "Button was clicked!";  
     ```  
   
-11. Sur le **générer** menu, sélectionnez **générer la Solution**.  
+11. Dans le menu **Générer**, sélectionnez **Générer la solution**.  
   
      Le projet doit être généré sans erreur.  
   

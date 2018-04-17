@@ -1,13 +1,10 @@
 ---
-title: "Comment : appliquer des modifications en Mode arrêt avec Modifier & Continuer | Documents Microsoft"
-ms.custom: 
+title: 'Comment : appliquer des modifications en Mode arrêt avec Modifier & Continuer | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
 dev_langs:
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - coding, editing in break mode
 - code, editing in break mode
 ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54fb069f5328dd9bc7cabab16c0688109312dfd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37c172c49132f8080dc29040fa7325c19f1871f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Comment : appliquer des modifications en mode arrêt à l'aide de la fonctionnalité Modifier & Continuer
 Vous pouvez utiliser Modifier & Continuer pour modifier votre code en mode Arrêt, puis continuer sans arrêter et redémarrer l'exécution.  

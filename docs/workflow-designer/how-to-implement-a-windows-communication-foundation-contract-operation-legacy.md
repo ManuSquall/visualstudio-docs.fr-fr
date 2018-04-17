@@ -1,18 +1,18 @@
 ---
-title: "Comment : implémenter une opération de contrat Windows Communication Foundation (hérité) | Documents Microsoft"
+title: 'Comment : implémenter une opération de contrat Windows Communication Foundation (hérité) | Documents Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8ea31cf143c572e42f1250f3a16cf73148a53fd
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 71bf4e4e6f5abc1d2984362396f21f3c613de795
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Procédure : implémenter une opération de contrat Windows Communication Foundation (héritée)
 Cette rubrique décrit comment implémenter un [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] contrat d’opération à l’aide du Concepteur de flux de travail Windows hérité qui cible le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

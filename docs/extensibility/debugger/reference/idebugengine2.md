@@ -1,29 +1,25 @@
 ---
 title: IDebugEngine2 | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2
 helpviewer_keywords:
 - IDebugEngine2 interface
 ms.assetid: 1f0e9ac0-6dfb-461a-976c-888d82144cdb
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95a1a8c48bd6eab0f21ccc85a125b5d10f42ef4e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e2cfe7e2f54b45ecfe8fdb34943b87818a13feab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 Cette interface représente un moteur de débogage (DE). Il est utilisé pour gérer différents aspects d’une session de débogage à partir de la création de points d’arrêt pour sélectionner et désélectionner des exceptions.  
@@ -59,7 +55,7 @@ IDebugEngine2 : IUnknown
 |[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|Définit une mesure.|  
 |[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|Demande que tous les programmes en cours de débogage par cette DE s’arrêter l’exécution de la prochaine fois qu’un de leurs threads tente de s’exécuter.|  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : Msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

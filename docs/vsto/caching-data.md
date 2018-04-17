@@ -1,12 +1,10 @@
 ---
-title: "Mise en cache de données | Documents Microsoft"
-ms.custom: 
+title: Mise en cache de données | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0d036f11d60a8da1362464a875fdc0f2771cac0e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 094a4e6c639007fcf09ce28f0be2e398b8245858
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="caching-data"></a>Mise en cache des données
   Vous pouvez mettre en cache les objets de données dans une personnalisation au niveau du document afin que les données soient accessibles en mode hors connexion ou sans ouvrir Microsoft Office Word ou Microsoft Office Excel. Pour mettre en cache un objet, l’objet doit avoir un type de données qui répond à certaines exigences. Nombreux types de données courants dans le .NET Framework répondent à ces exigences, y compris <xref:System.String>, <xref:System.Data.DataSet>, et <xref:System.Data.DataTable>.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Pour ajouter par programmation un objet au cache de données en cours d’exécution, utilisez la `StartCaching` (méthode) d’un ordinateur hôte de l’élément, telles que la `ThisDocument` ou `ThisWorkbook` classes. Pour plus d’informations, consultez [Comment : mettre en Cache par programmation une Source de données dans un Document Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
- Après avoir ajouté un objet au cache de données, vous pouvez accéder et modifier les données mises en cache sans démarrer Word ou Excel. Pour plus d'informations, consultez [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md).  
+ Après avoir ajouté un objet au cache de données, vous pouvez accéder et modifier les données mises en cache sans démarrer Word ou Excel. Pour plus d'informations, consultez [Accès aux données des documents sur le serveur](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="requirements-for-data-objects-to-be-cached"></a>Configuration requise pour les objets de données doit être mis en cache  
  Pour mettre en cache un objet de données dans votre solution, l’objet doit respecter ces conditions :  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="preventing-data-loss-when-adding-null-values-to-the-data-cache"></a>Prévention des pertes de données lors de l’ajout de valeurs Null dans le Cache de données  
  Lorsque vous ajoutez des objets au cache de données, tous les objets mis en cache doivent être initialisés à une non -**null** valeur avant que le document est enregistré puis fermé. Si un objet mis en cache a un **null** valeur lorsque le document est enregistré puis fermé, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] supprimera automatiquement tous les objets mis en cache à partir du cache de données.  
   
- Si vous ajoutez un objet avec un **null** valeur au cache de données à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attribut au moment du design, vous pouvez utiliser la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe pour initialiser les données mises en cache des objets avant l’ouverture du document. Cela est utile si vous souhaitez initialiser les données mises en cache sur un serveur sans Word ou Excel, avant que le document est ouvert par un utilisateur final. Pour plus d'informations, consultez [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md).  
+ Si vous ajoutez un objet avec un **null** valeur au cache de données à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attribut au moment du design, vous pouvez utiliser la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe pour initialiser les données mises en cache des objets avant l’ouverture du document. Cela est utile si vous souhaitez initialiser les données mises en cache sur un serveur sans Word ou Excel, avant que le document est ouvert par un utilisateur final. Pour plus d'informations, consultez [Accès aux données des documents sur le serveur](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment : mettre en Cache des données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   

@@ -1,36 +1,32 @@
 ---
 title: La vue messages | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
 helpviewer_keywords:
 - Messages view
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 206c0197d73e3bb95975309bdce84887dee283e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="messages-view"></a>Affichage Messages
 Chaque fenêtre a un flux de message associé. Une fenêtre d’affichage de Messages affiche ce flux de message. Le handle de fenêtre, le code de message et le message sont affichés. Vous pouvez créer une vue Messages pour un thread ou un processus. Cela vous permet d’afficher les messages envoyés à toutes les fenêtres appartenant à un processus spécifique ou d’un thread, ce qui est particulièrement utile pour capturer les messages de l’initialisation de fenêtre.  
   
  Une fenêtre d’affichage de Messages par défaut s’affiche ci-dessous. Notez que la première colonne contient le handle de fenêtre et la deuxième colonne contient un code de message (expliqué dans [Codes des messages](../debugger/message-codes.md)). Paramètres de message décodés et les valeurs de retour sont à droite.  
   
- ![Spy &#43; &#43; La vue messages](../debugger/media/spy--_messagesview.png "Spy ++ _MessagesView")  
+ ![Spy&#43; &#43; la vue Messages](../debugger/media/spy--_messagesview.png "Spy ++ _MessagesView")  
 Messages Spy++, vue  
   
 ## <a name="procedures"></a>Procédures  

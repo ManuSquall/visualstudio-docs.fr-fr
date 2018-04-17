@@ -1,29 +1,25 @@
 ---
 title: IDebugDefaultPort2 | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugDefaultPort2
 helpviewer_keywords:
 - IDebugDefaultPort2 interface
 ms.assetid: 7b3452af-9a96-4c4c-9946-4339b72d3d7b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2a388d25ec828eeedb5c86860ad697848a5cb77
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c6d131ab24cc57af1846f89b61afa2d89ae2cacb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 Cette interface fournit plusieurs méthodes pour accéder à serveur d’un port et des fonctionnalités de notification.  
@@ -52,7 +48,7 @@ IDebugDefaultPort2 : IDebugPort2
 ## <a name="remarks"></a>Notes  
  Le nom «`IDebugDefaultPort2`» est un peu trompeur, car il ne représente pas un port par défaut. Il peut être appelée « IDebugPort3 ».  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

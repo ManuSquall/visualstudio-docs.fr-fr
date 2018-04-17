@@ -1,27 +1,27 @@
 ---
-title: Extension CookieCutter pour Python dans Visual Studio | Microsoft Docs
-description: "Visual Studio prend en charge l’extension Cookiecutter graphique pour la découverte de modèles pour le code Python et la création de projets à partir de ces modèles."
-ms.custom: 
+title: Extension Cookiecutter pour Python | Microsoft Docs
+description: Visual Studio prend en charge l’extension Cookiecutter graphique pour la découverte de modèles pour le code Python et la création de projets à partir de ces modèles.
+ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96590d2856d14b8c74a9c30f73e3a933cf572164
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d70a6a4041892166b383574730ac1814a19ad39a
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-the-cookiecutter-extension"></a>Utilisation de l’extension Cookiecutter
 
@@ -35,7 +35,7 @@ Une fois l’installation terminée, sélectionnez **Affichage > Explorateur Coo
 
 ## <a name="cookiecutter-workflow"></a>Flux de travail Cookiecutter
 
-L’utilisation de Cookiecutter consiste à naviguer et sélectionner un modèle, le cloner sur votre ordinateur local, définir des options, puis créer du code à partir de ce modèle, comme décrit dans les sections suivantes.
+L’utilisation de Cookiecutter consiste à naviguer et à sélectionner un modèle, à le cloner sur l’ordinateur local, à définir des options, puis à créer du code à partir de ce modèle, comme le décrivent les sections suivantes.
 
 ### <a name="browsing-templates"></a>Modèles de navigation
 
@@ -52,7 +52,7 @@ La page d’accueil Cookiecutter affiche une liste des modèles que vous pouvez 
 
 Lorsque vous sélectionnez un modèle suivi par **Suivant**, Cookiecutter fait une copie locale à partir de laquelle travailler.
 
-Si vous sélectionnez un modèle à partir des groupes **Recommandé** ou **GitHub**, ou si vous saisissez une URL personnalisée dans la zone de recherche et sélectionnez ce modèle, il est cloné et installé sur votre ordinateur local. Si ce modèle a été installé dans une session précédente de Visual Studio, il est automatiquement supprimé et la version la plus récente est clonée.
+Si vous sélectionnez un modèle à partir des groupes **Recommandé** ou **GitHub**, ou que vous entrez une URL personnalisée dans la zone de recherche et que vous sélectionnez ce modèle, il est cloné et installé sur votre ordinateur local. Si ce modèle a été installé dans une session précédente de Visual Studio, il est automatiquement supprimé et la version la plus récente est clonée.
 
 Si vous sélectionnez un modèle à partir du groupe **Installé** ou si vous saisissez un chemin d’accès au dossier personnalisé dans la zone de recherche et sélectionnez ce modèle, Visual Studio charge ce modèle sans effectuer de clonage.
 

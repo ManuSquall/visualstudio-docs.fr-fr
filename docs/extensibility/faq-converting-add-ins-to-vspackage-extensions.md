@@ -1,23 +1,21 @@
 ---
-title: "Forum aux questions : Convertir des compléments Extensions VSPackage | Documents Microsoft"
-ms.custom: 
+title: 'Forum aux questions : Convertir des compléments Extensions VSPackage | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 43376b304637ffe59d443ee82350d5492133db2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: daec495ee71bf27bc40174b74cd95a6df47c247f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ : conversion de compléments en extensions VSPackage
 Les compléments sont désormais déconseillés. Pour effectuer une nouvelle extension de Visual Studio, vous devez créer une extension VSIX. Voici les réponses aux questions fréquemment posées sur la façon de convertir un complément Visual Studio pour une extension VSIX.  
@@ -41,7 +39,7 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Puis-je convertir mon projet de complément à un projet VSIX ?  
  Impossible de convertir un projet de complément directement à un projet VSIX, car les mécanismes utilisés dans des projets VSIX ne sont pas le même que celles dans les projets de complément. Le modèle de projet VSIX, ainsi que les modèles d’élément de projet ont beaucoup de code qui rend relativement facile être opérationnel et en cours d’exécution comme une extension VSIX.  
   
-##  <a name="BKMK_StartDeveloping"></a>Comment commencer à développer des extensions VSIX ?  
+##  <a name="BKMK_StartDeveloping"></a> Comment commencer à développer des extensions VSIX ?  
  Voici comment procéder à une extension VSIX qui dispose d’une commande de menu :  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Pour rendre une extension VSIX qui dispose d’une commande de menu  
@@ -56,7 +54,7 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
   
      Sur le **outils** menu (dans l’instance expérimentale), vous devez voir un bouton nommé **nom de la commande Mes**. Lorsque vous cliquez sur ce bouton, un message doit apparaître : **TestVSPackagePackage.MenuItemCallback() dans**.  
   
-##  <a name="BKMK_RunAddin"></a>Comment puis-je exécuter mon code de complément dans un VSPackage ?  
+##  <a name="BKMK_RunAddin"></a> Comment puis-je exécuter mon code de complément dans un VSPackage ?  
  Un code de complément s'exécute généralement de l'une des deux façons suivantes :  
   
 -   déclenché par une commande de menu (le code se trouve dans la méthode `IDTCommandTarget.Exec`) ;  

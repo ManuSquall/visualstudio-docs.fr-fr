@@ -1,12 +1,10 @@
 ---
-title: "Comment : rechercher une adresse de messagerie dans les Contacts par programmation | Documents Microsoft"
-ms.custom: 
+title: 'Comment : rechercher une adresse de messagerie dans les Contacts par programmation | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - searching contacts
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d9ab451d433536c7ebf5931aa2c971b08ed5c09b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 16b79f5f14f1e0d8c5c82a00f5f2ccf2412b991b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-search-for-an-e-mail-address-in-contacts"></a>Comment : rechercher une adresse de messagerie dans les contacts par programmation
   Cet exemple recherche dans un dossier de contacts les contacts dont l’adresse de messagerie contient le nom de domaine **example.com** .  

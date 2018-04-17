@@ -1,12 +1,10 @@
 ---
-title: "&lt;entryPointsCollection&gt; élément (développement Office dans Visual Studio) | Documents Microsoft"
-ms.custom: 
+title: '&lt;entryPointsCollection&gt; élément (développement Office dans Visual Studio) | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - entryPointsCollection element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 478731cde6c1ac08ca0d197f918e2fee4a8673ee
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 357e2b4d7aedb82b63676055f1ad1215171a25cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt; élément (développement Office dans Visual Studio)
   L’élément `entryPointsCollection` de l’espace de noms `vstav3` contient tous les éléments `entryPoints` associés aux solutions Office.  
@@ -50,7 +49,7 @@ ms.lasthandoff: 01/10/2018
  `entryPointsCollection` comporte les éléments suivants.  
   
 ### <a name="entrypoints"></a>entryPoints  
- Obligatoire. Le rôle de la `entryPoints` élément dans le `vstav3` espace de noms est défini dans [&#60; entryPoints &#62; Élément &#40; développement Office dans Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Obligatoire. Le rôle de la `entryPoints` élément dans le `vstav3` espace de noms est défini dans [ &#60;entryPoints&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Exemple de personnalisation au niveau du document  
   

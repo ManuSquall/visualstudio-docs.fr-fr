@@ -1,27 +1,25 @@
 ---
-title: "À l’aide d’assemblys PIA Visual Studio | Documents Microsoft"
-ms.custom: 
+title: À l’aide d’assemblys PIA Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, interop assemblies
 - interop assemblies, Visual Studio
 - managed VSPackages, interop assemblies
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
-caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 98d579755190eaf51448ef2b1b855c087bcad358
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ca0ff9a75d72bc723b767a43f12123094a520644
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>À l’aide d’assemblys PIA Visual Studio
 Les assemblys PIA Visual Studio autorisent les applications managées accéder aux interfaces COM qui fournissent une extensibilité de Visual Studio. Il existe certaines différences entre les interfaces COM droites et à leurs versions interop. Par exemple, les valeurs HRESULT sont généralement représentées sous forme de valeurs de type int et doivent être traités de la même façon en tant qu’exceptions, et paramètres (en particulier les paramètres de sortie) sont traités différemment.  
@@ -32,7 +30,7 @@ Les assemblys PIA Visual Studio autorisent les applications managées accéder a
  Par défaut, <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> lève une exception lorsqu’il est passé à une valeur HRESULT qui a une valeur inférieure à zéro. Dans le cas où ces valeurs HRESULT est des valeurs acceptables et aucune exception ne doit être levée, les valeurs des HRESULT supplémentaires doivent être passées à <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> une fois que les valeurs sont testées. Si la valeur HRESULT testée correspond à une valeur HRESULT explicitement passée à <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, aucune exception n’est levée.  
   
 > [!NOTE]
->  Le <xref:Microsoft.VisualStudio.VSConstants> classe contient des constantes pour les valeurs HRESULT courantes, par exemple, <xref:Microsoft.VisualStudio.VSConstants.S_OK> et <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, et [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULT, par exemple, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> et <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants>fournit également la <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> et <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> méthodes qui correspondent aux macros SUCCEEDED et FAILED dans COM.  
+>  Le <xref:Microsoft.VisualStudio.VSConstants> classe contient des constantes pour les valeurs HRESULT courantes, par exemple, <xref:Microsoft.VisualStudio.VSConstants.S_OK> et <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, et [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULT, par exemple, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> et <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> fournit également la <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> et <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> méthodes qui correspondent aux macros SUCCEEDED et FAILED dans COM.  
   
  Par exemple, considérez l’appel de fonction suivant, dans lequel <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> est une valeur de retournée acceptable, mais les autres valeurs HRESULT inférieures à zéro représente une erreur.  
   
@@ -47,7 +45,7 @@ Les assemblys PIA Visual Studio autorisent les applications managées accéder a
 ## <a name="returning-hresults-to-com-from-managed-code"></a>Retour de valeurs HRESULT à COM à partir de code managé  
  Si aucune exception ne se produit, le code managé retourne <xref:Microsoft.VisualStudio.VSConstants.S_OK> à la fonction COM qui l’a appelée. COM interop prend en charge les exceptions courantes qui sont fortement typées dans du code managé. Par exemple, une méthode qui reçoit un inacceptable `null` argument lève une <xref:System.ArgumentNullException>.  
   
- Si vous ne savez pas quelle exception lever, mais que vous connaissez la valeur HRESULT que vous souhaitez retourner à COM, vous pouvez utiliser la <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> méthode pour lever une exception appropriée. Cela fonctionne même avec une erreur non standard, par exemple, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>essaie de mapper des HRESULT lui sont transmises à une exception fortement typée. Si ce n’est pas possible, une exception COM générique est levée. Le résultat final est que la valeur HRESULT que vous passez à <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> à partir du code managé est retournée à la fonction COM qui l’a appelée.  
+ Si vous ne savez pas quelle exception lever, mais que vous connaissez la valeur HRESULT que vous souhaitez retourner à COM, vous pouvez utiliser la <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> méthode pour lever une exception appropriée. Cela fonctionne même avec une erreur non standard, par exemple, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> essaie de mapper des HRESULT lui sont transmises à une exception fortement typée. Si ce n’est pas possible, une exception COM générique est levée. Le résultat final est que la valeur HRESULT que vous passez à <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> à partir du code managé est retournée à la fonction COM qui l’a appelée.  
   
 > [!NOTE]
 >  Les exceptions nuisent aux performances et ont vocation à indiquer des conditions anormales pour le programme. Les conditions qui se produisent souvent doivent être gérées instantanément, au lieu de lever une exception.  

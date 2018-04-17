@@ -1,13 +1,10 @@
 ---
-title: "ListObject (contrôle) | Documents Microsoft"
-ms.custom: 
+title: ListObject (contrôle) | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.List
 dev_langs:
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - ListObject control, improving performance when bound to data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2100a1c30fda5981d3d7e58f2f5077e0cdf87a2d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ed8a11a62487e47cd86ae86b9f4126cb99b37159
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="listobject-control"></a>ListObject (contrôle)
   Le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> est une liste qui expose des événements et qui peut être liée à des données. Quand vous ajoutez une liste à une feuille de calcul, Visual Studio crée un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> que vous pouvez programmer directement, sans devoir parcourir le modèle objet Microsoft Office Excel.  
@@ -39,7 +36,7 @@ ms.lasthandoff: 01/10/2018
  Dans les projets au niveau du document, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.ListObject> à une feuille de calcul au moment du design ou au moment de l’exécution. Dans les projets de complément VSTO, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.ListObject> uniquement au moment de l’exécution. Pour plus d'informations, consultez [How to: Add ListObject Controls to Worksheets](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 > [!NOTE]  
->  Par défaut, les objets de liste créées dynamiquement ne sont pas persistants dans la feuille de calcul en tant que contrôles hôtes lorsque la feuille de calcul est fermée. Pour plus d'informations, consultez [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+>  Par défaut, les objets de liste créées dynamiquement ne sont pas persistants dans la feuille de calcul en tant que contrôles hôtes lorsque la feuille de calcul est fermée. Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ## <a name="binding-data-to-the-control"></a>Liaison de données au contrôle  
  Un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> prend en charge la liaison de données simple et complexe. Le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> peut être lié à une source de données à l’aide des propriétés <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> et <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> au moment du design ou à la méthode <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> au moment de l’exécution.  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
  Au moment de l’exécution, vous ne pouvez pas ajouter ou supprimer manuellement des colonnes dans un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lié aux données. Si un utilisateur final essaie de supprimer une colonne, elle est immédiatement restaurée et toutes les colonnes ajoutées sont supprimées. Par conséquent, il est important d’écrire du code pour expliquer aux utilisateurs pourquoi ils ne peuvent pas exécuter ces actions sur un <xref:Microsoft.Office.Tools.Excel.ListObject> lié aux données. Visual Studio fournit plusieurs événements sur un <xref:Microsoft.Office.Tools.Excel.ListObject> relatif à la liaison de données. Par exemple, vous pouvez utiliser l’événement <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored> pour avertir les utilisateurs que les données qu’ils ont tenté de supprimer ne peuvent pas l’être et qu’elles ont été restaurées.  
   
 ## <a name="adding-and-removing-rows-at-run-time"></a>Ajout et suppression de lignes au moment de l’exécution  
- Vous pouvez ajouter et supprimer manuellement des lignes dans un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lié aux données, à condition que la source de données autorise l’ajout de nouvelles lignes et qu’elle ne soit pas en lecture seule. Vous pouvez écrire du code par rapport à des événements tels que le <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> pour valider les données. Pour plus d'informations, consultez [How to: Validate Data When a New Row is Added to a ListObject Control](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
+ Vous pouvez ajouter et supprimer manuellement des lignes dans un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lié aux données, à condition que la source de données autorise l’ajout de nouvelles lignes et qu’elle ne soit pas en lecture seule. Vous pouvez écrire du code par rapport à des événements tels que le <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> pour valider les données. Pour plus d'informations, consultez [Comment : valider des données lorsqu'une nouvelle ligne est ajoutée à un contrôle ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
   
  Il arrive que la relation de l’objet de liste à la source de données provoque des erreurs habituelles. Par exemple, vous pouvez mapper les colonnes que vous souhaitez voir apparaître dans le <xref:Microsoft.Office.Tools.Excel.ListObject>; par conséquent, si vous omettez des colonnes qui comportent des restrictions, comme un champ qui n’accepte pas les valeurs Null, des erreurs sont retournées chaque fois qu’une ligne est créée. Vous pouvez écrire du code pour ajouter les valeurs manquantes dans un gestionnaire d’événements pour l’événement <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow> .  
   

@@ -1,13 +1,10 @@
 ---
-title: "Procédure pas à pas : Affichage de volets de tâches personnalisés avec des Messages électroniques dans Outlook | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Affichage de volets de tâches personnalisés avec des Messages électroniques dans Outlook | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ad77a685f3100533f790ec6ae82cd11201128902
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e1fd5acf3ea2c4c6d12931b04f6360ada697378f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook"></a>Procédure pas à pas : affichage de volets des tâches personnalisés avec des messages électroniques dans Outlook
   Cette procédure pas à pas montre comment afficher une instance unique d’un volet des tâches personnalisé avec chaque message électronique créé ou ouvert. Les utilisateurs peuvent afficher ou masquer le volet des tâches personnalisé à l’aide d’un bouton situé sur le ruban de chaque message électronique.  

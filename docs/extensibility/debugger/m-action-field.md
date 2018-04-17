@@ -1,32 +1,28 @@
 ---
 title: m_action champ | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - m_action field, Task class [.NET Framework debug engines]
 ms.assetid: 201838c2-260d-4071-b6c3-f526874e19c9
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9d5a55f7e91b22a5b9a867991acbfe404a660fe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5bd045c19b08ec5b3ba5db71e72e6380e65093a7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="maction-field"></a>m_action champ
 Délégué qui représente le code à exécuter dans le <xref:System.Threading.Tasks.Task> objet.  
   
- **Namespace :**<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Assembly :** mscorlib (dans mscorlib.dll)  
   

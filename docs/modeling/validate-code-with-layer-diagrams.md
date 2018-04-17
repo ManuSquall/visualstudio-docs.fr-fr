@@ -1,10 +1,8 @@
 ---
-title: "Valider le code avec des diagrammes de dépendance | Documents Microsoft"
-ms.custom: 
+title: Valider le code avec des diagrammes de dépendance | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, validating
 - validation, dependency diagrams
@@ -19,15 +17,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 484afcd70717162719e9eaf8ace294cb1f71cbcd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cd799e5114c64b075592ddbe35670907fc81fa9c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Valider le code avec des diagrammes de dépendance
 
@@ -57,7 +55,7 @@ Pour vous assurer que le code ne sont en conflit avec sa conception, validez vot
   
 -   Une solution qui contient un projet de modélisation avec un diagramme de dépendances. Ce diagramme de dépendance doit être lié aux artefacts dans les projets c# ou Visual Basic que vous souhaitez valider. Consultez [créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md).  
   
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Vous pouvez valider le code manuellement à partir d’un diagramme de dépendances ouvert dans Visual Studio ou à partir d’une invite de commandes. Vous pouvez également valider le code automatiquement en exécutant des builds locales ou Team Foundation Build. Consultez [vidéo Channel 9 : création et valider votre architecture à l’aide de diagrammes de dépendance](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
@@ -92,21 +90,21 @@ Dans cette version de Visual Studio, validation de dépendance se produit en tem
 
 * Ajout d’un nouveau déclencheur de projet de validation dépendance une mise à jour du projet. 
   
-##  <a name="SupportsValidation"></a>Si un élément prend en charge la validation  
+##  <a name="SupportsValidation"></a> Si un élément prend en charge la validation  
  Vous pouvez lier des couches à des sites web, des documents Office, des fichiers texte brut et des fichiers de projets partagés entre plusieurs applications, mais le processus de validation ne les inclura pas. Aucune erreur de validation n'apparaîtra pour des références à des projets ou à des assemblys qui sont liés à des couches distinctes, lorsqu'aucune dépendance n'apparaît entre ces couches. De telles références ne sont pas considérées comme des dépendances à moins que le code utilise ces références.  
   
 1.  Dans le diagramme de dépendances, sélectionnez une ou plusieurs couches, cliquez sur votre sélection, puis cliquez sur **afficher les liens**.  
   
 2.  Dans **Explorateur de couches**, examinez le **prend en charge la Validation** colonne. Si la valeur faux lui est affectée, l’élément ne peut pas être validé.  
   
-##  <a name="IncludeReferences"></a>Inclure d’autres assemblys .NET et les projets pour la validation  
+##  <a name="IncludeReferences"></a> Inclure d’autres assemblys .NET et les projets pour la validation  
  Lorsque vous faites glisser des éléments vers le diagramme de dépendances, les références aux assemblys .NET correspondants ou les projets sont ajoutés automatiquement à la **références de couche** dossier dans le projet de modélisation. Ce dossier contient des références aux assemblys et aux projets analysés pendant la validation. Vous pouvez inclure des autres assemblys .NET et des projets pour la validation sans manuellement les faire glisser vers le diagramme de dépendance.  
   
 1.  Dans **l’Explorateur de solutions**, cliquez sur le projet de modélisation ou **références de couche** dossier, puis cliquez sur **ajouter une référence**.  
   
 2.  Dans le **ajouter une référence** boîte de dialogue, sélectionnez les assemblys ou projets, puis cliquez sur **OK**.  
   
-##  <a name="ValidateManually"></a>Valider manuellement le code  
+##  <a name="ValidateManually"></a> Valider manuellement le code  
  Si vous avez un diagramme de dépendances ouvert qui est lié à des éléments de solution, vous pouvez exécuter la **Validate** commande de raccourci à partir du diagramme. Vous pouvez également utiliser l’invite de commandes pour exécuter le **msbuild** avec la **/p: ValidateArchitecture** la valeur de propriété personnalisée **True**. Par exemple, lorsque vous apportez des modifications dans le code, exécutez la validation de couche régulièrement afin de pouvoir intercepter tôt les conflits de dépendance.  
   
 #### <a name="to-validate-code-from-an-open-dependency-diagram"></a>Pour valider le code à partir d’un diagramme ouvert de dépendance   
@@ -121,7 +119,7 @@ Dans cette version de Visual Studio, validation de dépendance se produit en tem
 2.  Pour afficher la source de chaque erreur, double-cliquez sur l’erreur dans le **liste d’erreurs** fenêtre.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peut d’afficher une carte de code au lieu de la source de l’erreur. Cela se produit lorsque le code a une dépendance sur un assembly qui n’est pas spécifié par le diagramme de dépendance ou le code il manque une dépendance spécifiée par le diagramme de dépendances. Examinez la carte de code ou le code pour déterminer si la dépendance doit exister. Pour plus d’informations sur les cartes de code, consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md).  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peut afficher une carte de code à la place de la source de l'erreur. Cela se produit lorsque le code a une dépendance sur un assembly qui n’est pas spécifié par le diagramme de dépendance ou le code il manque une dépendance spécifiée par le diagramme de dépendances. Examinez la carte de code ou le code pour déterminer si la dépendance doit exister. Pour plus d’informations sur les cartes de code, consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
 3.  Pour gérer les erreurs, consultez [gérer les erreurs de validation](#ManageErrors).  
   
@@ -163,7 +161,7 @@ Dans cette version de Visual Studio, validation de dépendance se produit en tem
   
  Pour plus d’informations sur les erreurs de validation, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors).  
   
-###  <a name="ManageErrors"></a>Gérer les erreurs de validation  
+###  <a name="ManageErrors"></a> Gérer les erreurs de validation  
  Pendant le processus de développement, vous pouvez supprimer certains conflits signalés pendant la validation. Par exemple, vous pouvez supprimer des erreurs que vous êtes déjà en train de traiter qui ne sont pas pertinentes dans le cadre de votre scénario spécifique. Lorsque vous supprimez une erreur, il est conseillé d'entrer un élément de travail dans [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].  
   
 > [!WARNING]
@@ -182,7 +180,7 @@ Dans cette version de Visual Studio, validation de dépendance se produit en tem
 |Restaurer toutes les erreurs supprimées dans le **liste d’erreurs** fenêtre|Avec le bouton droit n’importe où dans le **liste d’erreurs** fenêtre, pointez sur **gérer les erreurs de Validation**, puis cliquez sur **afficher les erreurs supprimées**.|  
 |Masquer toutes les erreurs supprimées à partir de la **liste d’erreurs** fenêtre|Avec le bouton droit n’importe où dans le **liste d’erreurs** fenêtre, pointez sur **gérer les erreurs de Validation**, puis cliquez sur **masquer les erreurs supprimées**.|  
   
-##  <a name="ValidateAuto"></a>Valider automatiquement le code  
+##  <a name="ValidateAuto"></a> Valider automatiquement le code  
  Exécutez la validation de couche chaque fois que vous exécutez une build locale. Si votre équipe utilise Team Foundation Build, vous pouvez exécuter la validation de couche avec les archivages contrôlés que vous spécifiez en créant une tâche personnalisée MSBuild, puis utilisez les rapports de build pour collecter les erreurs de validation. Pour créer des builds d’archivage contrôlé, consultez [utiliser un processus de build d’archivage contrôlé pour valider les modifications](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Pour valider automatiquement le code au cours d'une build locale  
@@ -229,14 +227,14 @@ Dans cette version de Visual Studio, validation de dépendance se produit en tem
   
 -   [Surveiller la progression d’une Build en cours d’exécution](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
-##  <a name="TroubleshootingValidation"></a>Résoudre les problèmes de validation de couche  
+##  <a name="TroubleshootingValidation"></a> Résoudre les problèmes de validation de couche  
  Le tableau suivant décrit les problèmes liés à la validation de couche et propose une résolution. Ces problèmes ne sont pas liés aux erreurs qui résultent de conflits entre le code et la conception. Pour plus d’informations sur ces erreurs, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors).  
   
 |**Problème**|**Cause possible**|**Résolution**|  
 |---------------|------------------------|--------------------|  
 |Les erreurs de validation ne se produisent pas comme prévu.|La validation ne fonctionne pas sur les diagrammes de dépendance qui sont copiés à partir d’autres diagrammes de dépendance dans l’Explorateur de solutions et qui se trouvent dans le même projet de modélisation. les diagrammes de dépendance qui sont copiés de cette façon contiennent les mêmes références que le diagramme d’origine de la dépendance.|Ajoutez un nouveau diagramme de dépendance pour le projet de modélisation.<br /><br /> Copier les éléments du diagramme de dépendance source vers le nouveau diagramme.|  
   
-##  <a name="UnderstandingValidationErrors"></a>Compréhension et résolution des erreurs de Validation de couche  
+##  <a name="UnderstandingValidationErrors"></a> Compréhension et résolution des erreurs de Validation de couche  
  Lorsque vous validez du code par rapport à un diagramme de dépendances, les erreurs de validation se produisent lorsque le code est en conflit avec la conception. Par exemple, les conditions suivantes peuvent provoquer des erreurs de validation :  
   
 -   Un artefact est assigné à une couche inappropriée. Dans ce cas, déplacez l'artefact.  

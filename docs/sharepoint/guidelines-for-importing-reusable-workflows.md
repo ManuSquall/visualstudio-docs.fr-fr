@@ -1,12 +1,10 @@
 ---
-title: "Directives pour l’importation de flux de travail réutilisables | Documents Microsoft"
-ms.custom: 
+title: Directives pour l’importation de flux de travail réutilisables | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a79f277c5cecead23def256e16b8fd69c64b2d36
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 57ca59e7e31cabde62128d2e56df45c4819cfb65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Directives pour l'importation de flux de travail réutilisables
-  Pour importer des flux de travail réutilisables créés dans SharePoint Designer, utilisez le modèle de projet importer SharePoint 2010 flux de travail réutilisable dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Ce modèle importe un *déclarative* *workflow* ([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-uniquement) et le convertit en un *du flux de travail de code*, qui est un flux de travail pouvant être amélioré avec [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] code. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Procédure pas à pas : importation d’un flux de travail réutilisable de SharePoint Designer dans Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).  
+  Pour importer des flux de travail réutilisables créés dans SharePoint Designer, utilisez le modèle de projet importer SharePoint 2010 flux de travail réutilisable dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Ce modèle importe un *déclarative* *workflow* ([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-uniquement) et le convertit en un *du flux de travail de code*, qui est un flux de travail pouvant être amélioré avec [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] code. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Procédure pas à pas : Importation d’un flux de travail réutilisable de SharePoint Designer dans Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).  
   
  Toutefois, le modèle Importer SharePoint 2010 réutilisable peut importer uniquement des solutions de batterie de serveurs. Si vous souhaitez déployer votre flux de travail comme une solution bac à sable, importez-le avec le modèle Importer le Package de Solution SharePoint 2010. Toutefois, ce faisant, vous ne peut pas convertir pour coder des flux de travail et ne sera pas en mesure de le modifier en tant que tel.  
   

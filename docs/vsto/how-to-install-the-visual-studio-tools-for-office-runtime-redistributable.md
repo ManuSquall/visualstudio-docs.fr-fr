@@ -1,12 +1,10 @@
 ---
-title: "Comment : installer Visual Studio Tools pour Office Runtime Redistributable | Documents Microsoft"
-ms.custom: 
+title: 'Comment : installer Visual Studio Tools pour Office Runtime Redistributable | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - installing Office development tools in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5f76191ca8b41f252e5009c0d3e7e09415f6f081
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 552ef84dc5b4bba8b9f63173d41a43a4efd82a14
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Comment : installer Visual Studio Tools pour Office Runtime Redistributable
   Visual Studio 2010 Tools pour Office Runtime doit être installé sur chaque ordinateur qui exécute les solutions sont créées en utilisant les outils de développement Microsoft Office dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Le runtime est installé automatiquement quand vous installez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et Microsoft Office. Pour plus d'informations, consultez [Visual Studio Tools for Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
      La [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]inclut des modules linguistiques. Si votre installation de Windows est définie avec une autre langue que l'anglais, vous pouvez afficher les messages du runtime dans la même langue que celle de Windows. De même, si les utilisateurs finaux installent [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] et qu'ils exécutent ensuite vos solutions sur des installations Windows définies avec une autre langue que l'anglais, les messages du runtime apparaîtront dans la même langue que celle de Windows. Dans certains cas, vous pouvez avoir besoin de modules linguistiques supplémentaires. Par exemple, vous devrez peut-être les modules linguistiques supplémentaires si votre copie de Windows utilise plusieurs paramètres de langue, ou que vous basculez vers une autre langue, une fois que vous avez déjà installé le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Vous pouvez trouver des modules linguistiques sur [Microsoft Visual Studio 2010 Tools pour le module linguistique de Microsoft Office System (Runtime Version 4.0)](http://go.microsoft.com/fwlink/?LinkId=140386).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mise en route &#40; développement Office dans Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Mise en route &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
  [Comment : configurer un ordinateur pour développer des Solutions Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
  [Comment : installer les assemblys PIA Office](../vsto/how-to-install-office-primary-interop-assemblies.md)   

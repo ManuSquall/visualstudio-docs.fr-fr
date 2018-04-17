@@ -1,12 +1,10 @@
 ---
-title: "Création de composants WebPart pour SharePoint | Documents Microsoft"
-ms.custom: 
+title: Création de composants WebPart pour SharePoint | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
 - Microsoft.SharePoint.WebControls.CssLink
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d0c5acfac06702894f67a8bfc1547462a0069e15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 52f35f095c91422f8882724074c54ad48edd88f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>Création de composants WebPart pour SharePoint
   À l’aide de composants WebPart, vous pouvez modifier le contenu, l’apparence et comportement des pages d’un site SharePoint à l’aide d’un navigateur. Composants WebPart sont des contrôles côté serveur qui s’exécutent à l’intérieur d’une page WebPart : ils sont les blocs de construction des pages qui s’affichent sur un site SharePoint. Consultez [bloc de construction : composants WebPart](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -105,7 +104,7 @@ ms.lasthandoff: 01/10/2018
  Pour plus d’informations sur les solutions bac à sable, consultez [les différences entre bac à sable et les Solutions de batterie de serveurs](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
 ## <a name="creating-older-style-sharepoint-based-web-parts"></a>Création de composants de site Web SharePoint de Style plus anciens  
- Vous pouvez utiliser les modèles dans Visual Studio pour créer des [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] des composants WebPart pour SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]composants WebPart reposent sur la [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastructure de composant WebPart et sont le type recommandé pour les nouveaux projets.  
+ Vous pouvez utiliser les modèles dans Visual Studio pour créer des [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] des composants WebPart pour SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] composants WebPart reposent sur la [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastructure de composant WebPart et sont le type recommandé pour les nouveaux projets.  
   
  Dans rares cas, vous devrez créer un composant WebPart à l’aide de l’ancien style WebPart basé sur SharePoint. Vous pouvez utiliser Visual Studio pour créer ces types de composants WebPart, mais Visual Studio ne fournit pas tous les modèles qui sont spécifiquement conçues pour vous aider à les créer.  
   

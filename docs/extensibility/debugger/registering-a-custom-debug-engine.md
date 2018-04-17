@@ -1,27 +1,23 @@
 ---
-title: "Moteur de débogage de l’enregistrement personnalisé | Documents Microsoft"
-ms.custom: 
+title: Moteur de débogage de l’enregistrement personnalisé | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, registering
 ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50903d9b45828725da03c0fcb0db0f08d7f884eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 99ff41f116e569baaae312acd17408928a6c79f4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-custom-debug-engine"></a>L’inscription d’un moteur de débogage personnalisé
 Le moteur de débogage doit s’inscrire en tant qu’une fabrique de classe suit les conventions COM ainsi enregistrer avec Visual Studio via la sous-clé de Registre de Visual Studio.  

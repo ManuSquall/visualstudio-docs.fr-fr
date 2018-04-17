@@ -1,29 +1,25 @@
 ---
 title: IDiaSymbol::get_undecoratedNameEx | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_undecoratedNameEx method
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d0b25b2306cc957015ec4c205a22cd44660357
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d737ccfe9dbbcdf7a205fb847bb81344cd18ff0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Récupère ou partie d’un nom non décoré pour C++ décorés nom de (liaison).  
@@ -68,7 +64,7 @@ HRESULT get_undecoratedNameEx(
 |UNDNAME_RESERVED2|0 x 0040|RÉSERVÉ.|  
 |UNDNAME_NO_THISTYPE|0x0060|Désactive tous les modificateurs sur la `this` type.|  
 |UNDNAME_NO_ACCESS_SPECIFIERS|0 x 0080|Désactive l’expansion des spécificateurs d’accès pour les membres.|  
-|UNDNAME_NO_THROW_SIGNATURES|0 x 0100|Désactive l’expansion de « throw signatures » pour les fonctions et les pointeurs vers des fonctions.|  
+|UNDNAME_NO_THROW_SIGNATURES|0x0100|Désactive l’expansion de « throw signatures » pour les fonctions et les pointeurs vers des fonctions.|  
 |UNDNAME_NO_MEMBER_TYPE|0 x 0200|Désactive l’expansion de `static` ou `virtual` membres.|  
 |UNDNAME_NO_RETURN_UDT_MODEL|0 x 0400|Désactive l’expansion du modèle Microsoft pour UDT retourne.|  
 |UNDNAME_32_BIT_DECODE|0 x 0800|Undecorates les noms décorés 32 bits.|  

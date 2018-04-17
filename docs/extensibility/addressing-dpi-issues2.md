@@ -1,22 +1,19 @@
 ---
-title: "Adressage « Incidents2 » PPP | Documents Microsoft"
-ms.custom: 
+title: Adressage « Incidents2 » PPP | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6218e01d061bbf65e0cae051050076e4b8267a2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc0801d3fb43188ac3371ed7e5e7394b0e3aad72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="addressing-dpi-issues"></a>Résoudre les problèmes de PPP
 Un nombre croissant d’appareils fournies dans les écrans « haute résolution ». Ces écrans ont en général plus de 200 pixels par pouce (PPP). Travailler avec une application sur ces ordinateurs nécessitera un contenu à être mis à l’échelle en fonction des besoins de l’affichage du contenu à une distance de l’affichage normal pour le périphérique. À compter de 2014, la cible principale pour les écrans à densité élevée et est (ordinateurs portables de coque, tablettes et téléphones) des appareils mobile.  
@@ -31,13 +28,13 @@ Un nombre croissant d’appareils fournies dans les écrans « haute résolutio
   
 -   Windows peut adapter automatiquement le contenu à 250 % sur de nouveaux périphériques qui dépassent 280 PPP (à compter de Windows 8.1 s.14).  
   
- Windows offre un moyen de traitement de mise à l’échelle l’interface utilisateur pour tirer parti des nombres de pixel accrue. Une application a donné son consentement pour ce système en déclarant proprement dit « système reconnaissant les résolutions. » Les applications qui ne le faites pas sont mis à l’échelle par le système. Cela peut entraîner une expérience utilisateur « floue » où l’application entière est uniformément étiré en pixels. Exemple :  
+ Windows offre un moyen de traitement de mise à l’échelle l’interface utilisateur pour tirer parti des nombres de pixel accrue. Une application a donné son consentement pour ce système en déclarant proprement dit « système reconnaissant les résolutions. » Les applications qui ne le faites pas sont mis à l’échelle par le système. Cela peut entraîner une expérience utilisateur « floue » où l’application entière est uniformément étiré en pixels. Par exemple :  
   
  ![Problèmes de PPP floue](../extensibility/media/dpi-issues-fuzzy.png "PPP émet floue")  
   
  Visual Studio a donné son consentement à en cours de mise à l’échelle reconnaissant les résolutions et par conséquent n’est pas « virtualisée. »  
   
- Tirer parti de plusieurs technologies de l’interface utilisateur, qui présentent les différentes méthodes pour traiter avec mise à l’échelle des facteurs définis par le système Windows (et Visual Studio). Exemple :  
+ Tirer parti de plusieurs technologies de l’interface utilisateur, qui présentent les différentes méthodes pour traiter avec mise à l’échelle des facteurs définis par le système Windows (et Visual Studio). Par exemple :  
   
 -   WPF mesure les contrôles d’une manière indépendante du périphérique (unités, et non en pixels). WPF UI s’ajuste automatiquement pour la résolution en cours.  
   
@@ -54,7 +51,7 @@ Un nombre croissant d’appareils fournies dans les écrans « haute résolutio
  Cette section s’adresse principalement aux développeurs de l’extension Visual Studio 2013. Pour Visual Studio 2015, utilisez le service d’images qui est intégré à Visual Studio. Vous souhaiterez peut-être également que vous devez cible/prise en charge de plusieurs versions de Visual Studio et par conséquent, l’utilisation du service d’images dans 2015 n’est pas une option dans la mesure où il n’existe pas dans les versions précédentes. Cette section concerne également vous puis.  
   
 ## <a name="scaling-up-images-that-are-too-small"></a>Mise à l’échelle des images qui sont trop petits.  
- Les images qui sont trop petits peuvent « puissance » et rendus sur GDI et WPF à l’aide de certaines méthodes courantes. Les classes d’assistance PPP managées sont disponibles pour les intégrateurs de Visual Studio internes et externes à l’adresse mise à l’échelle des icônes, les bitmaps, imagestrips et imagelists. Basée sur Win32 de natif C / C ++ programmes d’assistance sont disponibles pour la mise à l’échelle HICON, HBITMAP, HIMAGELIST et VsUI::GdiplusImage. Mise à l’échelle d’une image bitmap généralement nécessite uniquement une modification d’une ligne après l’inclusion d’une référence à la bibliothèque d’assistance. Exemple :  
+ Les images qui sont trop petits peuvent « puissance » et rendus sur GDI et WPF à l’aide de certaines méthodes courantes. Les classes d’assistance PPP managées sont disponibles pour les intégrateurs de Visual Studio internes et externes à l’adresse mise à l’échelle des icônes, les bitmaps, imagestrips et imagelists. Basée sur Win32 de natif C / C ++ programmes d’assistance sont disponibles pour la mise à l’échelle HICON, HBITMAP, HIMAGELIST et VsUI::GdiplusImage. Mise à l’échelle d’une image bitmap généralement nécessite uniquement une modification d’une ligne après l’inclusion d’une référence à la bibliothèque d’assistance. Par exemple :  
   
 ```cpp  
 (Unmanaged)  VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);  
@@ -85,7 +82,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
  ![Problèmes de PPP mise à l’échelle](../extensibility/media/dpi-issues-scaling.png "mise à l’échelle des problèmes de PPP")  
   
 ## <a name="layout-issues"></a>Problèmes de mise en page  
- Problèmes courants de mise en page peuvent être évitées principalement en conservant les points dans l’interface utilisateur à l’échelle et par rapport à un autre, plutôt qu’à l’aide d’accès est absolu (en particulier, exprimées en pixels). Exemple :  
+ Problèmes courants de mise en page peuvent être évitées principalement en conservant les points dans l’interface utilisateur à l’échelle et par rapport à un autre, plutôt qu’à l’aide d’accès est absolu (en particulier, exprimées en pixels). Par exemple :  
   
 -   Les positions de mise en page/texte nécessaire d’ajuster au compte pour la mise à l’échelle des images.  
   
@@ -123,7 +120,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Pour accéder aux fonctions d’assistance PPP du code managé qui s’exécute à l’intérieur de l’environnement Visual Studio :  
   
--   Le projet de consommation doit faire référence à la dernière version de l’interpréteur de commandes MPF. Exemple :  
+-   Le projet de consommation doit faire référence à la dernière version de l’interpréteur de commandes MPF. Par exemple :  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
@@ -131,7 +128,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 -   Vérifiez le projet comporte des références à **System.Windows.Forms**, **PresentationCore**, et **PresentationUI**.  
   
--   Dans le code, utilisez la **Microsoft.VisualStudio.PlatformUI** espace de noms et l’appel de fonctions statiques de classe de DpiHelper. Pour les types pris en charge (points, des tailles, rectangles et ainsi de suite), sont fournies à l’échelle de fonctions d’extension qui retournent des nouveaux objets. Exemple :  
+-   Dans le code, utilisez la **Microsoft.VisualStudio.PlatformUI** espace de noms et l’appel de fonctions statiques de classe de DpiHelper. Pour les types pris en charge (points, des tailles, rectangles et ainsi de suite), sont fournies à l’échelle de fonctions d’extension qui retournent des nouveaux objets. Par exemple :  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -178,7 +175,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Étape 1 : Prescale l’image à 200 %, 300 % et ainsi de suite à l’aide du mode NearestNeighbor présente.  
   
- Prescale l’image à l’aide d’un convertisseur de soit appliqué sur une liaison, ou avec une extension de balisage XAML. Exemple :  
+ Prescale l’image à l’aide d’un convertisseur de soit appliqué sur une liaison, ou avec une extension de balisage XAML. Par exemple :  
   
 ```xaml  
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />  
@@ -216,7 +213,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
--   Si la taille de l’image d’origine n’est pas connue, un LayoutTransform peut servir à l’échelle de l’objet Image finale. Exemple :  
+-   Si la taille de l’image d’origine n’est pas connue, un LayoutTransform peut servir à l’échelle de l’objet Image finale. Par exemple :  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  

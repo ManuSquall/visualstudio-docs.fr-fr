@@ -1,29 +1,25 @@
 ---
 title: IDiaSymbol::get_hasSEH | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_hasSEH method
 ms.assetid: 1a709ded-22c8-464c-97be-eba5e464210c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24512abd862c07079af662da0a7188a709291067
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fbb4d1b7267957cdaf7db6c4981e77bdc5ecb869
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 Récupère un indicateur qui spécifie si la fonction contient un [gestion structurée des exceptions (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (par exemple, __try /\__except blocs).  
@@ -46,7 +42,7 @@ HRESULT get_hasSEH(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

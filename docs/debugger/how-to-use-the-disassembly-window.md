@@ -1,13 +1,10 @@
 ---
-title: "Afficher le Code machine dans le débogueur dans Visual Studio | Documents Microsoft"
+title: Afficher le Code machine dans le débogueur dans Visual Studio | Documents Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - Disassembly window
 - machine code
 ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c53f5404eb127f2f5eb9ec844024beafaad22e86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 974a3a82ffdb9ed8041d5b7d067c4440d2524c23
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Afficher le Code machine dans le débogueur Visual Studio
 Cette fonctionnalité est disponible uniquement si le débogage au niveau des adresses est activé le **Options** boîte de dialogue, **débogage** nœud. Elle n'est pas disponible pour le débogage de script ni le débogage SQL.  

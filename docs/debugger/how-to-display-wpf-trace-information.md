@@ -1,12 +1,10 @@
 ---
-title: "Comment : afficher des informations de Trace WPF | Documents Microsoft"
-ms.custom: 
+title: 'Comment : afficher des informations de Trace WPF | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,19 +14,19 @@ helpviewer_keywords:
 - WPF, debugging
 - debugging, WPF
 ms.assetid: be3c6859-06e1-459e-9fd0-46375b5f55ef
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e210d575b17552d7b5e4d6dc126335ff3711ee5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3584ae0d1dcd0e33bfa08954a2ad376485b6b71e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Comment : afficher les informations de trace WPF
-[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]peut recevoir des informations de trace de débogage à partir d’applications WPF et afficher ces informations dans le **sortie** fenêtre. Pour afficher les informations de trace de débogage, le traçage WPF doit être activé.  
+[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] peut recevoir des informations de trace de débogage à partir d’applications WPF et afficher ces informations dans le **sortie** fenêtre. Pour afficher les informations de trace de débogage, le traçage WPF doit être activé.  
   
  Vous pouvez activer le traçage WPF dans votre fichier App.Config ou par programmation en utilisant la classe <xref:System.Diagnostics.PresentationTraceSources>. Un moyen plus simple pour activer le traçage WPF est à l’aide de la **Options** fenêtre. Le traçage WPF pour les applications Web n'est pas pris en charge.  
   

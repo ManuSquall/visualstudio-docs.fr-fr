@@ -1,26 +1,24 @@
 ---
-title: "MSI et le déploiement VSIX de DSL | Documents Microsoft"
-ms.custom: 
+title: MSI et le déploiement VSIX de DSL | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b66c2e2a61ebe046ab04006e1f7ce345151224c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Déploiement MSI et VSIX d'un langage spécifique à un domaine
-Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur ou sur d’autres ordinateurs. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]doit déjà être installé sur l’ordinateur cible.  
+Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur ou sur d’autres ordinateurs. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] doit déjà être installé sur l’ordinateur cible.  
   
-##  <a name="which"></a>Choix entre VSIX et de déploiement MSI  
+##  <a name="which"></a> Choix entre VSIX et de déploiement MSI  
  Il existe deux méthodes de déploiement d’un langage spécifique à un domaine :  
   
 |Méthode|Avantages|  
@@ -28,7 +26,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 |VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Extension)|Très facile à déployer : copie et d’exécuter le **.vsix** fichier à partir du projet DslPackage.<br /><br /> Pour plus d’informations, consultez [installation et désinstallation d’une DSL à l’aide de la VSX](#Installing).|  
 |MSI (fichier de programme d’installation)|: Permet d’ouvrir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en double-cliquant sur un fichier DSL.<br />-Associe une icône avec le type de fichier DSL sur l’ordinateur cible.<br />-Associe un schéma XSD (schéma XML) avec le type de fichier DSL. Cela évite des avertissements lorsque le fichier est chargé dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> Vous devez ajouter un projet d’installation à votre solution pour créer un fichier MSI.<br /><br /> Pour plus d’informations, consultez [déploiement DSL à l’aide d’un fichier MSI](#msi).|  
   
-##  <a name="Installing"></a>Installation et désinstallation d’une DSL à l’aide de la VSX  
+##  <a name="Installing"></a> Installation et désinstallation d’une DSL à l’aide de la VSX  
  Lorsque votre DSL est installé par cette méthode, l’utilisateur peut ouvrir un fichier DSL depuis [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mais le fichier ne peut pas être ouverte à partir de l’Explorateur Windows.  
   
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>Pour installer une DSL à l’aide de la VSX  
@@ -65,7 +63,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
   
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
   
-##  <a name="msi"></a>Déploiement DSL dans un fichier MSI  
+##  <a name="msi"></a> Déploiement DSL dans un fichier MSI  
  En définissant un fichier MSI (Windows Installer) de votre DSL, vous pouvez autoriser les utilisateurs à ouvrir des fichiers DSL à partir de l’Explorateur Windows. Vous pouvez également associer une icône et une brève description votre extension de nom de fichier. En outre, le fichier MSI peut installer un schéma XSD qui peut être utilisé pour valider les fichiers DSL. Si vous le souhaitez, vous pouvez ajouter d’autres composants dans le fichier MSI qui vont être installé en même temps.  
   
  Pour plus d’informations sur les fichiers MSI et d’autres options de déploiement, consultez [déploiement d’Applications, Services et composants](../deployment/deploying-applications-services-and-components.md).  
@@ -76,7 +74,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
   
 1.  Définissez `InstalledByMsi` dans le manifeste d’extension. Cela empêche le VSX installé et désinstallé à l’exception par le fichier MSI. Ceci est important si vous inclurez les autres composants dans le fichier MSI.  
   
-    1.  Open DslPackage\source.extension.tt  
+    1.  Ouvrez DslPackage\source.extension.tt  
   
     2.  Insérez la ligne suivante avant de `<SupportedProducts>`:  
   
@@ -104,7 +102,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
   
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Crée un fichier nommé **CreateMsiSetupProject.vdproj**.  
   
-6.  Dans l’Explorateur Windows, copiez Dsl\\*.vdproj vers un nouveau dossier nommé le programme d’installation.  
+6.  Dans l’Explorateur Windows, copiez Dsl\\\*.vdproj vers un nouveau dossier nommé le programme d’installation.  
   
      (Si vous le souhaitez, vous pouvez désormais exclure CreateMsiSetupProject.tt à partir de votre projet Dsl.)  
   

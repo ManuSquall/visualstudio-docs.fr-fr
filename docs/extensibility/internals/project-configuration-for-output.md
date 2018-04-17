@@ -1,27 +1,23 @@
 ---
 title: Configuration pour la sortie de projet | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f3927ac9aa9e85be026d2b9a2af1c0c4d956c9f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9bb68812ed9988c9ed18174231ead24f91fcf9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-configuration-for-output"></a>Configuration de projet pour la sortie
 Chaque configuration peut prendre en charge un ensemble de processus de génération qui produisent des éléments de sortie tels que les fichiers exécutables ou des ressources. Ces éléments de sortie sont privés à l’utilisateur et peuvent être placées dans des groupes qui lient les types de sortie, tels que des fichiers exécutables (.exe, .dll, .lib) et les fichiers sources (.idl, les fichiers .h).  

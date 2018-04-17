@@ -1,12 +1,9 @@
 ---
-title: "Erreur : Impossible de se connecter à l’ordinateur &lt;nom&gt;. Impossible de trouver l’ordinateur sur le réseau. | Microsoft Docs"
-ms.custom: 
+title: 'Erreur : Impossible de se connecter à l’ordinateur &lt;nom&gt;. Impossible de trouver l’ordinateur sur le réseau. | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.remote.dcom_disabled
@@ -17,17 +14,16 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - DCOM, unable to connect error
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8b7ef99717f0a68fbd17245958840c89cdf8544
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cf8716602469eccb40dabda15e91d6198fa9b489
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Erreur : Impossible de se connecter à l’ordinateur &lt;nom&gt;. Impossible de trouver l’ordinateur sur le réseau.
 Ce problème se produit si l'une des conditions suivantes est remplie :  

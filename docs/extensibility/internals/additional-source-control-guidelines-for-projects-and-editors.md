@@ -1,27 +1,23 @@
 ---
-title: "Instructions de contrôle sources supplémentaires pour les projets et les éditeurs | Documents Microsoft"
-ms.custom: 
+title: Instructions de contrôle sources supplémentaires pour les projets et les éditeurs | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], guidelines for projects and editors
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 308de182e604f06fff9ad25cb65428b2d48ff257
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e39c8fcc78712f0f8d9b799789751c16f343ada6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Instructions de contrôle sources supplémentaires pour les projets et les éditeurs
 Il existe un certain nombre d’instructions qui les éditeurs et les projets doivent respecter pour prendre en charge le contrôle de code source.  

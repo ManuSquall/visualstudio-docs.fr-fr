@@ -1,27 +1,23 @@
 ---
-title: "Moteur de débogage | Documents Microsoft"
-ms.custom: 
+title: Moteur de débogage | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1816d19425897a2f63fa7e5cbe30771bd5eac3d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-engine"></a>Moteur de débogage
 Un moteur de débogage (DE) fonctionne avec l’interpréteur ou à un système d’exploitation pour fournir des services de débogage telles que de l’évaluation d’expression, points d’arrêt et contrôle l’exécution. Le D’est responsable de l’analyse de l’état d’un programme en cours de débogage. Pour cela, le D’utilise toutes les méthodes sont disponibles dans le runtime pris en charge, si de l’unité centrale ou à partir de l’API fournie par le runtime.  
@@ -37,7 +33,7 @@ Un moteur de débogage (DE) fonctionne avec l’interpréteur ou à un système 
 > [!NOTE]
 >  Bien qu’il existe des implémentations DE distinctes pour Transact-SQL et [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)], VBScript et [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] partagent un seul DE.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]débogage permet de déboguer moteurs pour exécuter une des deux manières : soit dans le même processus que le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] du shell, ou dans le même processus que le programme cible en cours de débogage. Cette dernière forme se produit généralement lorsque le processus en cours de débogage est en fait un script qui s’exécute sous un interpréteur et le moteur de débogage doit avoir une connaissance approfondie de l’interpréteur afin de surveiller le script. Notez que dans ce cas, l’interpréteur n’est en fait un runtime ; moteurs de débogage sont pour les implémentations de runtime spécifique. En outre, l’implémentation d’un seul DE peut être répartie entre les limites de processus et de l’ordinateurs (par exemple, le débogage à distance).  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogage permet de déboguer moteurs pour exécuter une des deux manières : soit dans le même processus que le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] du shell, ou dans le même processus que le programme cible en cours de débogage. Cette dernière forme se produit généralement lorsque le processus en cours de débogage est en fait un script qui s’exécute sous un interpréteur et le moteur de débogage doit avoir une connaissance approfondie de l’interpréteur afin de surveiller le script. Notez que dans ce cas, l’interpréteur n’est en fait un runtime ; moteurs de débogage sont pour les implémentations de runtime spécifique. En outre, l’implémentation d’un seul DE peut être répartie entre les limites de processus et de l’ordinateurs (par exemple, le débogage à distance).  
   
  L’expose DE la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaces de débogage. Sont de toutes les communications via COM. Si le D’est chargé dans le processus, out-of-process ou sur un autre ordinateur, il n’affecte pas les communications des composants.  
   

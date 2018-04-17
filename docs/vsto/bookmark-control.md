@@ -1,13 +1,10 @@
 ---
-title: "Bookmark (contrôle) | Documents Microsoft"
-ms.custom: 
+title: Bookmark (contrôle) | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Bookmark
 dev_langs:
@@ -20,28 +17,28 @@ helpviewer_keywords:
 - Bookmark control
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38e3286d24f0591ca4ced3339118b6d0d4bfe1d7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f70fa1016762e0811da0e4850eda0428278c463e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bookmark-control"></a>Bookmark (contrôle)
   Le contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> est un signet qui possède un nom unique, qui expose des événements et qui peut être lié à des données. Vous pouvez utiliser le signet comme espace réservé pour marquer un élément ou un emplacement dans un document Microsoft Office Word. Le contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> est une combinaison d’un objet <xref:Microsoft.Office.Interop.Word.Bookmark> et d’un objet <xref:Microsoft.Office.Interop.Word.Range> .  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- Dans les projets au niveau du document, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> à votre document au moment du design ou au moment de l’exécution. Dans les projets de complément VSTO, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> aux documents ouverts au moment de l’exécution. Pour plus d'informations, consultez [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+ Dans les projets au niveau du document, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> à votre document au moment du design ou au moment de l’exécution. Dans les projets de complément VSTO, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> aux documents ouverts au moment de l’exécution. Pour plus d'informations, consultez [Comment : ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
 ## <a name="binding-data-to-the-control"></a>Liaison de données au contrôle  
  Un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> prend en charge la liaison de données simple. Le signet doit être lié à une source de données à l’aide de la propriété <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> . La propriété de liaison de données par défaut du signet est la propriété <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> .  
   
  Si les données du jeu de données lié sont mises à jour, le contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> reflète les changements apportés.  
   
- Dans les projets au niveau du document, vous pouvez également lier des données à des signets via la fenêtre **Sources de données** . Pour plus d'informations, consultez [How to: Populate Documents with Data from Objects](../vsto/how-to-populate-documents-with-data-from-objects.md).  
+ Dans les projets au niveau du document, vous pouvez également lier des données à des signets via la fenêtre **Sources de données** . Pour plus d'informations, consultez [Comment : remplir des documents avec les données d'objets](../vsto/how-to-populate-documents-with-data-from-objects.md).  
   
 ## <a name="formatting"></a>Mise en forme  
  Une mise en forme qui peut être appliquée à <xref:Microsoft.Office.Interop.Word.Bookmark> peut également être appliquée à un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> . Cela inclut les polices, les retraits, l’espacement, la numérotation et les styles.  
@@ -113,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)   
- [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Comment : ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Procédure pas à pas : Création de Menus contextuels pour les signets](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Liaison de données aux contrôles dans les Solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  

@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 5ecc5af3c37889bc79dc5978c33caf8249433978
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Générer des fichiers avec l’utilitaire TextTransform
 
@@ -36,7 +36,7 @@ pour l’édition Professional, ou
 
 Dans les versions précédentes de Visual Studio, le fichier se trouve à l’emplacement suivant :
 
-**\Program fichiers (x86) \Common Files\Microsoft Shared\TextTemplating\{version}**
+**\Program Files (x86)\Common Files\Microsoft Shared\TextTemplating\{version}**
 
 où {version} dépend de la version précédente est installée.
 
@@ -58,9 +58,9 @@ TextTransform [<options>] <templateName>
 |**-r** \<assembly>|Un assembly utilisé pour la compilation et l’exécution du modèle de texte.|
 |**-u** \<namespace>|Un espace de noms qui est utilisée pour compiler le modèle.|
 |**-I** \<includedirectory>|Un répertoire qui contient les modèles de texte inclus dans le modèle de texte spécifié.|
-|**-P** \<referencepath>|Un répertoire pour rechercher des assemblys spécifié dans le modèle de texte ou à l’aide de la **- r** option.<br /><br /> Par exemple, pour inclure les assemblys utilisés pour l’API Visual Studio, utilisez :<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
+|**P -** \<referencepath >|Un répertoire pour rechercher des assemblys spécifié dans le modèle de texte ou à l’aide de la **- r** option.<br /><br /> Par exemple, pour inclure les assemblys utilisés pour l’API Visual Studio, utilisez :<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|Nom, nom de type complet et assembly d’un processeur de directive peut être utilisé pour traiter des directives personnalisées dans le modèle de texte.|
-|**-a** [processorName]![directiveName]!\<parameterName>!\<parameterValue>|Spécifiez une valeur de paramètre pour un processeur de directive. Si vous spécifiez simplement le nom de paramètre et la valeur, le paramètre sera disponible pour tous les processeurs de directive. Si vous spécifiez un processeur de directive, le paramètre est disponible uniquement pour le processeur est spécifié. Si vous spécifiez un nom de directive, le paramètre est disponible uniquement lorsque la directive spécifiée est en cours de traitement.<br /><br /> Pour accéder aux valeurs de paramètre à partir d’un processeur de directive ou d’un modèle de texte, utilisez [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). Dans un modèle de texte, incluez `hostspecific` dans la directive de modèle et d’appeler le message sur `this.Host`. Par exemple :<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Entrez toujours le ' !' marque, même si vous omettez le processeur et les noms de directive. Par exemple :<br /><br /> `-a !!param!value`|
+|**-un** [processorName] ! [directiveName] ! \<nom_paramètre > ! \<parameterValue >|Spécifiez une valeur de paramètre pour un processeur de directive. Si vous spécifiez simplement le nom de paramètre et la valeur, le paramètre sera disponible pour tous les processeurs de directive. Si vous spécifiez un processeur de directive, le paramètre est disponible uniquement pour le processeur est spécifié. Si vous spécifiez un nom de directive, le paramètre est disponible uniquement lorsque la directive spécifiée est en cours de traitement.<br /><br /> Pour accéder aux valeurs de paramètre à partir d’un processeur de directive ou d’un modèle de texte, utilisez [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). Dans un modèle de texte, incluez `hostspecific` dans la directive de modèle et d’appeler le message sur `this.Host`. Par exemple :<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Entrez toujours le ' !' marque, même si vous omettez le processeur et les noms de directive. Par exemple :<br /><br /> `-a !!param!value`|
 |**-h**|Fournit une aide.|
 
 ## <a name="related-topics"></a>Rubriques connexes

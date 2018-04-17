@@ -1,12 +1,10 @@
 ---
-title: "Débogage LINQ | Documents Microsoft"
-ms.custom: 
+title: Débogage LINQ | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,21 +17,21 @@ helpviewer_keywords:
 - LINQ, stepping
 - LINQ, edit and continue
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b2e159e89fe1854f2d26267793e196aa91b570ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b08f98e7073ad1c0a42d596424d544d5624f272
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-linq"></a>Débogage LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prend en charge le débogage du code LINQ (Language Integrated Query), avec certaines restrictions. La plupart des fonctionnalités de débogage sont compatibles avec les instructions LINQ, notamment l’exécution pas à pas, la définition de points d’arrêt et la consultation des résultats dans les fenêtres du débogueur. Cette rubrique décrit les principales restrictions liées au débogage de LINQ.  
   
-##  <a name="BKMK_ViewingLINQResults"></a>Affichage des résultats LINQ  
+##  <a name="BKMK_ViewingLINQResults"></a> Affichage des résultats LINQ  
  Vous pouvez consulter le résultat d'une instruction LINQ à l'aide des DataTips, de la fenêtre Espion et de la boîte de dialogue Espion express. Lorsque vous utilisez une fenêtre source, vous pouvez suspendre le pointeur sur une requête dans la fenêtre source pour afficher un DataTip. Vous pouvez copier une variable LINQ et la coller dans la fenêtre Espion ou dans la boîte de dialogue Espion express.  
   
  Dans LINQ, une requête n'est pas évaluée lorsqu'elle est créée ou déclarée, mais uniquement lors de son utilisation. Par conséquent, la requête ne possède de valeur que lorsqu'elle est évaluée. Pour obtenir une description complète de la création de la requête et d’évaluation, consultez [Introduction aux requêtes LINQ (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) ou [écrire votre première requête LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
@@ -44,7 +42,7 @@ ms.lasthandoff: 12/22/2017
   
 -   L'évaluation d'une requête peut provoquer des effets secondaires, à savoir des modifications de la valeur des données ou de l'état du programme. Toutefois, les requêtes ne présentent pas toutes des effets secondaires. Pour savoir si une requête peut être évaluée sans risque et sans effets secondaires, vous devez comprendre le code qui implémente la requête.  
   
-##  <a name="BKMK_SteppingAndLinq"></a>Exécution pas à pas et LINQ  
+##  <a name="BKMK_SteppingAndLinq"></a> Exécution pas à pas et LINQ  
  Lorsque vous déboguez du code LINQ, l'exécution pas à pas présente des différences de comportement que vous devez connaître.  
   
 ### <a name="linq-to-sql"></a>LINQ to SQL  
@@ -108,7 +106,7 @@ End Function
   
  La requête modifiée appelle la fonction `IsEven` à chaque passe dans `items`. Vous pouvez utiliser les fenêtres du débogueur pour vérifier si chaque élément répond à la condition spécifiée. Vous pouvez également exécuter le code pas à pas dans `IsEven`. Dans cet exemple, le prédicat est assez simple. Toutefois, si vous devez déboguer un prédicat plus complexe, cette technique peut s’avérer très utile.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>Modifier & Continuer non prise en charge pour LINQ  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Modifier & Continuer non prise en charge pour LINQ  
  Modifier & Continuer prend en charge les modifications apportées aux requêtes LINQ avec les limitations. Pour plus d’informations, consultez [modifications prises en charge de EnC](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,12 +1,10 @@
 ---
-title: "GUID et ID de barres d’outils Visual Studio | Documents Microsoft"
-ms.custom: 
+title: GUID et ID de barres d’outils Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - visual studio groups
 - toolbars
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - tool window toolbar
 - guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: bbb14818cebb35f703ec6f5ade084d96ac383d6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 394e0991d734279879df89422ac23fdd26899eeb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID et ID de barres d’outils de Visual Studio
 Cette rubrique énumère les valeurs GUID et l’ID de barres d’outils qui sont inclus dans l’environnement de développement intégré (IDE) Visual Studio, et des groupes qu’ils contiennent. Ces valeurs sont définies dans les fichiers .vsct qui sont installés dans le cadre du SDK Visual Studio. Pour plus d’informations, consultez [IDE-Defined commandes, Menus et des groupes](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  

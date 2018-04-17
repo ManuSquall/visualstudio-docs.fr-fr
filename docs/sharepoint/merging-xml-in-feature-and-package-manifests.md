@@ -1,13 +1,10 @@
 ---
-title: "Manifestes de fusionner du code XML dans les fonctionnalités et de packages | Documents Microsoft"
-ms.custom: 
+title: Manifestes de fusionner du code XML dans les fonctionnalités et de packages | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 81e6f83dd4fc825e885843a47d45485918f7dabe
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ae4eef0cc0e596f6ecd0848363f51c55b606d4a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="merging-xml-in-feature-and-package-manifests"></a>Fusionner du code XML dans des manifestes de fonctionnalités et de packages
   Fonctionnalités et les packages sont définis par [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichiers manifeste. Ces manifestes ajoutés au package sont une combinaison des données générées par les concepteurs et personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] les utilisateurs entrent dans le modèle de manifeste. Au moment de l’empaquetage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fusionne personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instructions avec fournie par le concepteur [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pour former le package [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichier manifeste. Les éléments semblables, avec les exceptions notées ultérieurement dans Exceptions de fusion, sont fusionnés pour éviter [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] erreurs de validation une fois que vous déployez les fichiers sur SharePoint, et pour rendre le manifeste des fichiers plus petits et plus efficace.  
@@ -31,12 +28,12 @@ ms.lasthandoff: 01/10/2018
  Vous ne peut pas modifier directement les fichiers manifestes du package jusqu'à ce que vous désactiviez les concepteurs de fonctionnalité ou un package. Toutefois, vous pouvez ajouter manuellement personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éléments pour le modèle de manifeste via les concepteurs de fonctionnalité et de package ou le [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éditeur. Pour plus d’informations, consultez [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) et [Comment : personnaliser un Package de Solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 ## <a name="feature-and-package-manifest-merge-process"></a>Processus de fusion de manifeste de fonctionnalité et Package  
- Lors de la combinaison d’éléments personnalisés avec des éléments fournis par le concepteur, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utilise le processus suivant. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]vérifie si chaque élément a une valeur de clé unique. Si un élément n’a aucune valeur de clé unique, il est ajouté au fichier de manifeste du package. De même, les éléments qui ont plusieurs clés ne peuvent pas être fusionnés. Par conséquent, ils sont ajoutés au fichier manifeste.  
+ Lors de la combinaison d’éléments personnalisés avec des éléments fournis par le concepteur, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utilise le processus suivant. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vérifie si chaque élément a une valeur de clé unique. Si un élément n’a aucune valeur de clé unique, il est ajouté au fichier de manifeste du package. De même, les éléments qui ont plusieurs clés ne peuvent pas être fusionnés. Par conséquent, ils sont ajoutés au fichier manifeste.  
   
  Si un élément a une clé unique, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compare les valeurs du concepteur et de clés personnalisés. Si les valeurs correspondent, elles fusionnent en une seule valeur. Si les valeurs diffèrent, la valeur de clé de concepteur est ignorée et la valeur de clé personnalisée est utilisée. Collections sont également fusionnées. Par exemple, si l’objet généré par le concepteur [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] et personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] les deux contenir une collection d’assemblys, le manifeste du package contient uniquement une collection d’assemblys.  
   
 ## <a name="merge-exceptions"></a>Exceptions de fusion  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]fusionne la plupart des concepteur [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éléments personnalisés semblables [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éléments tant qu’ils ont un attribut d’identification unique et unique. Toutefois, certains éléments n’ont pas l’identificateur unique requis pour [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] la fusion. Ces éléments sont appelés *exceptions de fusion*. Dans ce cas, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne fusionne pas personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éléments fournis par le concepteur [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éléments, mais les ajoute au fichier de manifeste du package.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fusionne la plupart des concepteur [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éléments personnalisés semblables [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éléments tant qu’ils ont un attribut d’identification unique et unique. Toutefois, certains éléments n’ont pas l’identificateur unique requis pour [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] la fusion. Ces éléments sont appelés *exceptions de fusion*. Dans ce cas, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne fusionne pas personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éléments fournis par le concepteur [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éléments, mais les ajoute au fichier de manifeste du package.  
   
  Voici une liste d’exceptions de fusion pour la fonctionnalité et de package [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichiers manifeste.  
   

@@ -1,12 +1,10 @@
 ---
-title: "Comment : mettre en Cache les données dans un Document protégé par mot de passe | Documents Microsoft"
-ms.custom: 
+title: 'Comment : mettre en Cache les données dans un Document protégé par mot de passe | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 240debad9945c397290375f1931f4bce9ffa1f34
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 71ce65cd253ea6473a07a98542449a1e47ae9d7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Comment : mettre en cache des données dans un document protégé par un mot de passe
   Si vous ajoutez des données dans le cache de données dans un document ou le classeur est protégé par un mot de passe, les modifications apportées aux données mises en cache ne sont pas enregistrées automatiquement. Vous pouvez enregistrer les modifications aux données mises en cache en substituant deux méthodes dans votre projet.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Pour le cache des données dans un classeur Excel qui est protégé par un mot de passe  
   
-1.  Dans le `ThisWorkbook` classe ou une de le `Sheet`  *n*  classes, marquez un champ public ou une propriété doit être mis en cache. Pour plus d'informations, consultez [Caching Data](../vsto/caching-data.md).  
+1.  Dans le `ThisWorkbook` classe ou une de le `Sheet` *n* classes, marquez un champ public ou une propriété doit être mis en cache. Pour plus d'informations, consultez [Caching Data](../vsto/caching-data.md).  
   
 2.  Remplacer la <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> méthode dans le `ThisWorkbook` de classe et de supprimer la protection du classeur.  
   

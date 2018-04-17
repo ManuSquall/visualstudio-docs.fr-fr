@@ -1,27 +1,25 @@
 ---
-title: "Ajouter des icônes aux commandes de Menu | Documents Microsoft"
-ms.custom: 
+title: Ajouter des icônes aux commandes de Menu | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], adding to toolbars
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 06d90b5174cc9ff2d09d7ccba8b2f39bc1d2a077
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8591c55a176493ace23df2de61ba26d58a3155e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-icons-to-menu-commands"></a>Ajouter des icônes aux commandes de Menu
 Les commandes peuvent apparaître dans les menus et barres d’outils. Des barres d’outils, il est courant pour une commande à afficher avec simplement sur une icône (pour économiser de l’espace) lors de menus, qu'une commande apparaît généralement avec une icône et le texte.  

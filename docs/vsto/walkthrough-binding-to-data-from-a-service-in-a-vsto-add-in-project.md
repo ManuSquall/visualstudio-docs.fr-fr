@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Liaison de données à partir d’un Service dans un VSTO complément projet | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Liaison de données à partir d’un Service dans un VSTO complément projet | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,18 +14,19 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], scrolling database records
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 386a8c14ebb831a47c6d08d6fd45f9c3d614263d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a89b9455051031b3faa0a44102f2fe97dca97d89
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>Procédure pas à pas : Liaison à des données de service dans un projet de complément VSTO
   Vous pouvez lier des données à des contrôles hôtes dans les projets de complément VSTO. Cette procédure pas à pas montre comment ajouter des contrôles à un document Microsoft Office Word, comment lier les contrôles aux données extraites du service de contenu MSDN et comment répondre aux événements au moment de l’exécution.  
   
- **S’applique à :** les informations contenues dans cette rubrique s’appliquent aux projets au niveau de l’application pour Word 2010. Pour plus d'informations, consultez [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ **S’applique à :** les informations contenues dans cette rubrique s’appliquent aux projets au niveau de l’application pour Word 2010. Pour plus d’informations, consultez [Fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   

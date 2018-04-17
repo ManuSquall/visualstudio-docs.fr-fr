@@ -1,12 +1,10 @@
 ---
-title: "Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur | Documents Microsoft"
-ms.custom: 
+title: 'Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 63a75ad6ccfbe28cd5f719749e187ec1c2229b66
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: afbc3bc7b50b30ed651921d09d0fe766810992d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Comment : créer un composant WebPart SharePoint à l'aide d'un concepteur
   Vous pouvez créer un composant WebPart en ajoutant un **composant Visual Web Part** élément à un projet SharePoint. Cela ouvre le concepteur Visual Web Developer dans Visual Studio où vous pouvez ajouter des contrôles et du code pour le composant WebPart. Visual WebPart fonctionne de la même façon comme composants WebPart. La seule différence est que vous concevez visual WebPart dans le concepteur Visual Web Developer.  

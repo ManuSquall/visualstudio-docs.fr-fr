@@ -1,12 +1,10 @@
 ---
-title: "Comment : spécifier un autre emplacement pour le déploiement des mises à jour | Documents Microsoft"
-ms.custom: 
+title: 'Comment : spécifier un autre emplacement pour le déploiement des mises à jour | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - deployment update, alternative locations
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
-caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 637f4517734d3a0bbf86c3894c4f0fc7dd5b5e8d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 107fb4680b2ee5600c2cee847ebb3d2b5efd7da4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Comment : spécifier un autre emplacement pour les mises à jour du déploiement
 Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application initialement à partir d’un CD ou un partage de fichiers, mais l’application doit rechercher des mises à jour périodiques sur le Web. Vous pouvez spécifier un autre emplacement pour les mises à jour dans votre manifeste de déploiement afin que votre application peut mettre à jour automatiquement à partir du Web après son installation initiale.  
@@ -50,7 +48,7 @@ Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptec
   
 1.  Ouvrez une invite de commandes du .NET Framework.  
   
-2.  Définissez l’emplacement de mise à jour à l’aide de la commande suivante. Dans cet exemple, **HelloWorld.exe.application** est le chemin d’accès à votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application qui a toujours l’extension .application, et **http://adatum.com/Update/Path** est l’URL qui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] rechercheront des mises à jour de l’application.  
+2.  Définissez l’emplacement de mise à jour à l’aide de la commande suivante. Dans cet exemple, **HelloWorld.exe.application** est le chemin d’accès à votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application qui a toujours l’extension .application, et **http://adatum.com/Update/Path** est l’URL que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] rechercheront des mises à jour de l’application.  
   
      **Mage-mettre à jour HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
   

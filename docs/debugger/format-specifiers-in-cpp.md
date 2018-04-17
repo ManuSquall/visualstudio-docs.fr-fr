@@ -1,13 +1,10 @@
 ---
-title: "Mettre en forme les spécificateurs dans le débogueur (C++) | Documents Microsoft"
-ms.custom: 
+title: Mettre en forme les spécificateurs dans le débogueur (C++) | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -28,17 +25,16 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: f1b6151350faa55b3e2918a45908111ab96edf6a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Spécificateurs de format en C++ dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans la fenêtre **Espion** à l’aide de spécificateurs de format.  
@@ -83,12 +79,12 @@ int main() {
 |su|Chaîne Unicode (encodage UTF-16)|\<emplacement > L « hello world »|L"hello world"<br /><br /> u"hello world"|  
 |sub|Unicode (encodage UTF-16), chaîne (sans guillemets)|\<emplacement > L « hello world »|hello world|  
 |bstr|chaîne BSTR|\<emplacement > L « hello world »|L"hello world"|  
-|env|Bloc d’environnement (chaîne terminée par double-null)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|env|Bloc d’environnement (chaîne terminée par double-null)|\<emplacement > L » = :: = ::\\\\»|L "= :: = ::\\\\\\0 = C : = C :\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
 |**s32**|chaîne UTF-32|\<emplacement > U « hello world »|u"hello world"|  
 |**s32b**|chaîne UTF-32 (sans guillemets)|\<emplacement > U « hello world »|hello world|  
 |**en**|enum|Saturday(6)|Saturday|  
 |**hv**|Type de pointeur : indique que la valeur de pointeur inspectée est le résultat de l’allocation de tas d’un tableau, par exemple, `new int[3]`.|\<emplacement > {\<premier membre >}|\<emplacement > {\<premier membre >, \<deuxième membre >,...}|  
-|**na**|Supprime l’adresse mémoire d’un pointeur vers un objet.|\<location>, {member=value...}|{member=value...}|  
+|**na**|Supprime l’adresse mémoire d’un pointeur vers un objet.|\<emplacement >, {membre = valeur...}|{membre = valeur...}|  
 |**nd**|Affiche uniquement les informations de classe de base, en ignorant les classes dérivées|`(Shape*) square` inclut les informations de classe de base et de classe dérivée|Affiche uniquement les informations de classe de base|  
 |hr|HRESULT ou code d’erreur Win32. (Le débogueur décodant automatiquement HRESULTs, le spécificateur n’est pas nécessaire dans ces cas-là.|S_OK|S_OK|  
 |wc|Indicateur de classe de fenêtre|0x0010|WC_DEFAULTCHAR|  
@@ -120,11 +116,11 @@ int main() {
 |**f**|virgule flottante signée|(3./2.), f|1,500000|  
 |**e**|notation scientifique signée|(3.0/2.0)|1.500000e+000|  
 |**g**|virgule flottante signée ou notation scientifique signée, selon ce qui est le plus court|(3.0/2.0)|1,5|  
-|c|caractère unique|\<location>|101 ’e’|  
-|s|const char*|\<location>|"hello world"|  
-|su|const wchar_t*<br /><br /> char16_t const\*|\<location>|L"hello world"|  
-|sub|const wchar_t*<br /><br /> char16_t const\*|\<location>|hello world|  
-|s8|const char*|\<location>|"hello world"|  
+|c|caractère unique|\<emplacement >|101 ’e’|  
+|s|const char*|\<emplacement >|"hello world"|  
+|su|const wchar_t*<br /><br /> char16_t const\*|\<emplacement >|L"hello world"|  
+|sub|const wchar_t*<br /><br /> char16_t const\*|\<emplacement >|hello world|  
+|s8|const char*|\<emplacement >|"hello world"|  
 |hr|HRESULT ou code d’erreur Win32. (Le débogueur décodant automatiquement HRESULTs, le spécificateur n’est pas nécessaire dans ces cas-là.|S_OK|S_OK|  
 |wc|Indicateur de classe de fenêtre.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Numéros de messages Windows|0x0010|WM_CLOSE|  

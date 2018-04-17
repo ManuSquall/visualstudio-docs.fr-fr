@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Créer une colonne de Site, le Type de contenu et la liste pour SharePoint | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Créer une colonne de Site, le Type de contenu et la liste pour SharePoint | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4db9ed078131e7152f3987c80f4e6181f888e540
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procédure pas à pas : création d'une colonne de site, d'un type de contenu et d'une liste pour SharePoint
   Les procédures suivantes montrent comment créer des colonnes de site SharePoint personnalisées, ou *champs*, ainsi que d’un type de contenu qui utilise les colonnes de site. Il montre également comment créer une liste qui utilise le type de contenu.  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Visual Studio.  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a>Création de colonnes de Site personnalisé  
+##  <a name="BKMK_CreatingCustSiteCols"></a> Création de colonnes de Site personnalisé  
  Cet exemple crée une liste de gestion des patients dans un hôpital. Tout d’abord, vous devez créer un projet SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et ajouter des colonnes de site, comme suit.  
   
 #### <a name="to-create-the-project"></a>Pour créer le projet  
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  À l’aide de la même procédure, ajoutez deux colonnes de site supplémentaires au projet : **ID du Patient** (Type = « Integer ») et **nom médecin** (Type = « Text »). Valeur leur groupe **cours pratique des colonnes de Site**.  
   
-##  <a name="BKMK_CreateCustContType"></a>Création d’un Type de contenu personnalisé  
+##  <a name="BKMK_CreateCustContType"></a> Création d’un Type de contenu personnalisé  
  Ensuite, créez un type de contenu, en fonction du type de contenu de Contacts, qui inclut les colonnes de site que vous avez créé dans la procédure précédente. À partir d’un type de contenu sur un type de contenu existant, vous pouvez gagner du temps, car le type de contenu de base fournit plusieurs colonnes de site à utiliser dans le nouveau type de contenu.  
   
 #### <a name="to-create-a-custom-content-type"></a>Pour créer un type de contenu personnalisé  
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 11. Dans la barre de menus, choisissez **fichier**, **Enregistrer tout**, puis fermez le Concepteur de Type de contenu.  
   
-##  <a name="BKMK_CreateList"></a>Création d’une liste  
+##  <a name="BKMK_CreateList"></a> Création d’une liste  
  À présent, créez une liste qui utilise les nouvelles colonnes type de contenu de site.  
   
 #### <a name="to-create-a-list"></a>Pour créer une liste  
@@ -205,7 +204,7 @@ ms.lasthandoff: 01/10/2018
   
 15. Dans le **nom de la colonne** , choisissez **nom du Patient**, vous assurer que le **tri** colonne a la valeur **croissant**, puis choisissez le  **OK** bouton.  
   
-##  <a name="BKMK_TestApp"></a>Test de l’Application  
+##  <a name="BKMK_TestApp"></a> Test de l’Application  
  Maintenant que les colonnes de site personnalisées, le type de contenu et la liste prêts, les déployer sur SharePoint et exécuter l’application à tester.  
   
 #### <a name="to-test-the-application"></a>Pour tester l'application  

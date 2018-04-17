@@ -1,27 +1,25 @@
 ---
-title: "Comment : personnaliser le dictionnaire d’analyse du Code | Documents Microsoft"
-ms.custom: 
+title: 'Comment : personnaliser le dictionnaire d’analyse du Code | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7fa5f88a3578998fca325500a3815b909b6ce4a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b2d60b2a187b7fccf4d5f564d9554badd5da9dec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Comment : personnaliser le dictionnaire d’analyse du code
 Analyse du code utilise un dictionnaire intégré pour vérifier les identificateurs dans votre code pour les erreurs dans l’orthographe et grammaire cas autres conventions d’affectation de noms de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] des recommandations. Vous pouvez créer un fichier Xml de dictionnaire personnalisé pour ajouter, supprimer ou modifier les termes et abréviations acronymes au dictionnaire intégré.  
@@ -75,7 +73,7 @@ Analyse du code utilise un dictionnaire intégré pour vérifier les identificat
   
 -   [Dictionnaire/acronymes/CasingExceptions/acronyme](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
-###  <a name="BKMK_DictionaryWordsRecognizedWord"></a>Dictionnaire/mots/reconnu/Word  
+###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> Dictionnaire/mots/reconnu/Word  
  Pour inclure un terme dans la liste des termes que l’analyse du code identifie comme correctement orthographié, ajoutez ce terme comme texte interne d’un élément Dictionary/Words/reconnaît/Word. Termes du contrat dans les éléments du dictionnaire/mots/reconnaît/Word ne respectent pas la casse.  
   
  **Exemple**  
@@ -110,7 +108,7 @@ Analyse du code utilise un dictionnaire intégré pour vérifier les identificat
   
 -   [CA2204 : Les littéraux doivent être correctement orthographiés](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Dictionnaire/mots/non reconnue/Word  
+###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> Dictionnaire/mots/non reconnue/Word  
  Pour exclure un terme de la liste des termes que l’analyse du code identifie comme correctement orthographié, ajoutez ce terme à exclure en tant que le texte interne d’un élément Dictionary/Words/non reconnu/Word. Termes du contrat dans les éléments du dictionnaire/mots/non reconnu/Word ne respectent pas la casse.  
   
  **Exemple**  
@@ -145,7 +143,7 @@ Analyse du code utilise un dictionnaire intégré pour vérifier les identificat
   
 -   [CA2204 : Les littéraux doivent être correctement orthographiés](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Dictionnaire/mots/déconseillée/Term [@PreferredAlternate]  
+###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dictionnaire/mots/déconseillée/Term [@PreferredAlternate]  
  Pour inclure un terme dans la liste des termes que l’analyse du code identifie comme déconseillés, ajoutez ce terme comme texte interne d’un élément Dictionary/Words/Deprecated/Term. Un terme déconseillé est un mot qui est correctement orthographié, mais ne doit pas être utilisé.  
   
  Pour inclure un autre terme suggéré dans l’avertissement, spécifiez l’autre dans l’attribut PreferredAlternate de l’élément du terme. Vous pouvez laisser la valeur d’attribut vide si vous ne souhaitez pas proposer une solution de remplacement.  
@@ -182,7 +180,7 @@ Analyse du code utilise un dictionnaire intégré pour vérifier les identificat
   
 -   [CA1726 : Utilisez les termes préférés](../code-quality/ca1726-use-preferred-terms.md)  
   
-###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Dictionary/Words/Compound/Term [@CompoundAlternate]  
+###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Dictionary/Words/Compound/Term [@CompoundAlternate]  
  Le dictionnaire intégré identifie certains termes en tant que termes uniques, discrets, plutôt qu’un terme composé. Pour inclure un terme dans la liste des termes que l’analyse du code identifie comme mot composé et spécifier la casse correcte du terme, ajoutez ce terme comme texte interne d’un élément Dictionary/Words/Compound/Term. Dans l’attribut CompoundAlternate de l’élément Term, spécifiez les mots individuels qui composent le terme composé en majuscules la première lettre des mots individuels (casse Pascal). Notez que le terme spécifié dans le texte interne est automatiquement ajouté à la liste de mots/dictionnaire/DiscreteExceptions.  
   
 -   Le terme déconseillé dictionnaire/mots/élément Deprecated/Term ne respecte pas la casse.  
@@ -215,7 +213,7 @@ Analyse du code utilise un dictionnaire intégré pour vérifier les identificat
   
 -   [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/DiscreteExceptions/Term  
+###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Dictionary/Words/DiscreteExceptions/Term  
  Pour exclure un terme dans la liste des termes que l’analyse du code identifie comme une seule, word discret lorsque le terme est vérifié par les règles de casse pour les mots composés, ajoutez ce terme comme texte interne d’un élément Dictionary/Words/DiscreteExceptions/Term. Le terme dans l’élément Dictionary/Words/DiscreteExceptions/Term ne respecte pas la casse.  
   
  **Exemple**  
@@ -240,7 +238,7 @@ Analyse du code utilise un dictionnaire intégré pour vérifier les identificat
   
 -   [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
-###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionnaire/acronymes/CasingExceptions/acronyme  
+###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Dictionnaire/acronymes/CasingExceptions/acronyme  
  Pour inclure un acronyme dans la liste des termes que l’analyse du code identifie comme correctement orthographié et pour indiquer le fonctionnement des règles de l’acronyme lorsque le terme est vérifié par la casse des mots composés, ajoutez ce terme comme texte interne d’un dictionnaire/acronymes/CasingExceptions / Élément Acronym. L’acronyme dans l’élément du dictionnaire/acronymes/CasingExceptions/Acronym respecte la casse.  
   
  **Exemple**  
@@ -263,7 +261,7 @@ Analyse du code utilise un dictionnaire intégré pour vérifier les identificat
   
 -   [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
-##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Pour appliquer un dictionnaire personnalisé à un projet  
+##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Pour appliquer un dictionnaire personnalisé à un projet  
   
 1.  Dans **l’Explorateur de solutions**, utilisez une des procédures suivantes :  
   

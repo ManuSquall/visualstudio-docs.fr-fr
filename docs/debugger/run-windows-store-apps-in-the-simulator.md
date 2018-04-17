@@ -1,28 +1,26 @@
 ---
-title: "Exécuter les applications UWP dans le simulateur | Documents Microsoft"
-ms.custom: 
+title: Exécuter les applications UWP dans le simulateur | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
-caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: b3ec07f7bf36ba606e9f1ddb45bdcde75d570a32
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Exécuter les applications UWP dans le simulateur
 Le simulateur de Visual Studio pour applications UWP est une application de bureau qui simule une application UWP. En règle générale, vous devez déboguer sur l’ordinateur local, un appareil connecté ou sur un ordinateur distant. Toutefois, dans certains scénarios, il pouvez que vous souhaitez utiliser le simulateur Visual Studio pour émuler une taille de l’écran physique différent et la résolution. Vous pouvez également simuler la rotation des événements tactiles et courantes et simuler les propriétés de connexion réseau.
@@ -98,7 +96,7 @@ Le simulateur de Visual Studio pour applications UWP est une application de bure
 > [!NOTE]
 >  Enregistrez les versions mises à l'échelle d'images bitmap dans votre application et Windows chargera l'image appropriée à l'échelle actuelle. Pour plus d’informations, consultez [introduction de conception et de l’interface utilisateur](/windows/uwp/layout/design-and-ui-intro). Toutefois, si vous modifiez la résolution du simulateur pour que Windows sélectionne une image différente en fonction de la résolution, vous devez arrêter et redémarrer la session de débogage pour afficher la nouvelle image.  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Effectuer une capture d’écran de votre application à envoyer au Microsoft Store  
+##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Effectuer une capture d’écran de votre application à envoyer au Microsoft Store  
  Quand vous envoyez une application dans Microsoft Store, vous devez inclure des captures d’écran de l’application.  
   
 > [!NOTE]

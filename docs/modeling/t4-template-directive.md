@@ -1,21 +1,19 @@
 ---
-title: "T4 Directive du modèle | Documents Microsoft"
-ms.custom: 
+title: T4 Directive du modèle | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3c4e53c4d123a5a5de493059c68ef09685c903a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c39783b9ca8be2f9e406782258befecce416f551
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 En général, un modèle de texte T4 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] commence par une directive `template`, qui spécifie comment le modèle doit être traité. Il ne doit y avoir qu'une seule directive de modèle dans un modèle de texte et les fichiers qu'il contient.  
@@ -80,7 +78,7 @@ hostspecific="true"
   
  Étant donné que le type de cette propriété dépend du type d'hôte, elle n'est utile que si vous écrivez un modèle de texte qui fonctionne uniquement avec un hôte spécifique. Cela s’applique aux [les modèles au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mais pas [modèles au moment de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
- Lorsque `hostspecific` a la valeur `true` et que vous utilisez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez effectuer un cast de `this.Host` en IServiceProvider pour accéder aux fonctionnalités de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d'accès absolu d'un fichier dans le projet. Exemple :  
+ Lorsque `hostspecific` a la valeur `true` et que vous utilisez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez effectuer un cast de `this.Host` en IServiceProvider pour accéder aux fonctionnalités de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d'accès absolu d'un fichier dans le projet. Par exemple :  
   
 ```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
@@ -115,7 +113,7 @@ Content of myFile is:
   
  L’attribut de langage spécifie le langage ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) à utiliser pour le code source dans les blocs d’instruction et d’expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.  
   
- Exemple :  
+ Par exemple :  
   
 ```vb  
 <#@ template language="VB" #>  

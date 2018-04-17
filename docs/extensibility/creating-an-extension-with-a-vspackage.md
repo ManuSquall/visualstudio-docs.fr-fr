@@ -1,25 +1,21 @@
 ---
-title: "Création d’une Extension avec un VSPackage | Documents Microsoft"
-ms.custom: 
+title: Création d’une Extension avec un VSPackage | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: df971bdf72ff52cfa6343b6237de072238087ac4
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 706cdcd26df18af9ccd79b5bf83890c47b1faf57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Création d’une Extension avec un VSPackage
 Cette procédure pas à pas montre comment créer un projet VSIX et ajouter un élément de projet VSPackage. Nous allons utiliser le VSPackage pour obtenir le service de Shell d’interface utilisateur pour afficher une boîte de message.  

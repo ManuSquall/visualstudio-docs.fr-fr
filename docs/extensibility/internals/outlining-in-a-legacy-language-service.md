@@ -1,27 +1,25 @@
 ---
-title: "Mode plan dans un Service de langage hérité | Documents Microsoft"
-ms.custom: 
+title: Mode plan dans un Service de langage hérité | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - outlining
 - language services [managed package framework], outlining
 - outlining, supporting in language services [managed package framework]
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 76f47edd31892a98ec3235bfc4a00f5f2e647408
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b899f53ba6b2a0b58997cc51a83a0d9ca8480e63
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Mode plan dans un Service de langage hérité
 Mode plan permet de réduire un programme complexe dans une vue d’ensemble ou un plan. Par exemple, en c#, toutes les méthodes peuvent être réduites à une seule ligne, n'indiquant que la signature de méthode. En outre, les structures et les classes peuvent être réduites pour afficher uniquement les noms des classes et structures. À l’intérieur d’une méthode unique, une logique complexe peut être réduite pour afficher le flux global en affichant uniquement la première ligne des instructions telles que `foreach`, `if`, et `while`.  

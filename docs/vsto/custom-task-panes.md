@@ -1,12 +1,10 @@
 ---
-title: "Volets de tâches personnalisés | Documents Microsoft"
-ms.custom: 
+title: Volets de tâches personnalisés | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6a99fd7cc89190a8360341684dee91a7cf93f0e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: acbe91b0a7150ac3a04f9a0b33c8b95d371caf53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-task-panes"></a>Volets de tâches personnalisés
   Les volets de tâches sont des panneaux d’interface utilisateur généralement ancrés à l’un des côtés d’une fenêtre dans une application Microsoft Office. Les volets de tâches personnalisés vous permettent de créer votre propre volet de tâches et de fournir aux utilisateurs une interface familière pour accéder aux fonctionnalités de votre solution. Par exemple, l'interface peut comporter des contrôles exécutant du code pour modifier des documents ou afficher des données à partir d'une source de données.  
@@ -129,7 +128,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nettoie automatiquement les ressources utilisées par le volet de tâches personnalisé quand le complément VSTO est déchargé. N’appelez pas la <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> ou <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> méthodes dans le `ThisAddIn_Shutdown` Gestionnaire d’événements dans votre projet. Ces méthodes lèvent une exception <xref:System.ObjectDisposedException> car [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nettoie les ressources utilisées par l'objet <xref:Microsoft.Office.Tools.CustomTaskPane> avant l'appel de `ThisAddIn_Shutdown`. Pour plus d’informations sur `ThisAddIn_Shutdown`, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md)  
   
-##  <a name="Managing"></a>Gestion des volets de tâches personnalisés dans plusieurs fenêtres d’Application  
+##  <a name="Managing"></a> Gestion des volets de tâches personnalisés dans plusieurs fenêtres d’Application  
  Quand vous créez un volet de tâches personnalisé dans une application qui utilise plusieurs fenêtres pour afficher des documents et d’autres éléments, vous devez prendre des mesures supplémentaires pour garantir l’affichage du volet de tâches quand l’utilisateur s’attend à le voir.  
   
  Dans toutes les applications, les volets de tâches personnalisés sont associés à une fenêtre frame de document, qui présente une vue d'un document ou d'un élément à l'utilisateur. Le volet de tâches est visible uniquement quand la fenêtre associée est visible. Toutefois, toutes les applications n'utilisent pas les fenêtres frame de document de la même façon.  
@@ -142,7 +141,7 @@ ms.lasthandoff: 01/10/2018
   
  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vidéo") pour une démonstration vidéo connexe, consultez [comment faire : gérer les volets de tâches dans les Compléments VSTO Word ?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
-##  <a name="Outlook"></a>Outlook  
+##  <a name="Outlook"></a> Outlook  
  Quand vous créez un volet de tâches personnalisé pour Outlook, le volet est associé à une fenêtre d’explorateur ou d’inspecteur spécifique. Les explorateurs sont des fenêtres qui affichent le contenu d'un dossier, et les inspecteurs sont des fenêtres qui affichent un élément tel qu'un message électronique ou une tâche.  
   
  Pour afficher un volet de tâches personnalisé avec plusieurs fenêtres d'explorateur ou d'inspecteur, vous devez créer une nouvelle instance du volet de tâches personnalisé quand une fenêtre d'explorateur ou d'inspecteur s'ouvre. Pour cela, gérez un événement qui se déclenche quand une fenêtre d'explorateur ou d'inspecteur est créée, puis créez le volet de tâches dans le gestionnaire d'événements. Vous pouvez également gérer les événements d’explorateur et d’inspecteur pour masquer ou afficher les volets de tâches en fonction de la fenêtre visible.  
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
  Si vous ne supprimez pas explicitement le volet de tâches personnalisé, les fenêtres Outlook peuvent afficher plusieurs instances du volet de tâches personnalisé. Outlook recycle parfois des fenêtres. Ces fenêtres recyclées conservent les références aux éventuels volets de tâches personnalisés qui leur ont été attachés.  
   
-##  <a name="WordAndInfoPath"></a>Word, InfoPath et PowerPoint  
+##  <a name="WordAndInfoPath"></a> Word, InfoPath et PowerPoint  
  Word, InfoPath et PowerPoint affichent chaque document dans une fenêtre frame de document différente. Quand vous créez un volet de tâches personnalisé pour ces applications, le volet est associé uniquement à un document spécifique. Si l'utilisateur ouvre un autre document, le volet de tâches personnalisé est masqué jusqu'à ce que le document précédent soit de nouveau visible.  
   
  Pour afficher un volet de tâches personnalisé avec plusieurs documents, créez une nouvelle instance du volet de tâches personnalisé quand l'utilisateur crée un nouveau document ou ouvre un document existant. Pour cela, gérez les événements qui se déclenchent quand un document est créé ou ouvert, puis créez le volet de tâches dans les gestionnaires d'événements. Vous pouvez également gérer les événements de document pour masquer ou afficher les volets de tâches en fonction du document visible.  

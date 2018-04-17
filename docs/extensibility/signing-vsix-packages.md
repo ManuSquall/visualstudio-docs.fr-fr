@@ -1,12 +1,10 @@
 ---
 title: Signature de Packages VSIX | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - signature
 - signing
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - vsix
 - packages
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ec875e6877b1c3ff1edf38b29c5e72b757021085
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 84166ed96fb49567f4ede3e8e0c4b7e8ba3cc814
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="signing-vsix-packages"></a>Signature de Packages VSIX
 Assemblys d’extension n’avez pas besoin d’être connectés avant qu’ils peuvent s’exécuter dans Visual Studio, mais il est conseillé de le faire.  
@@ -40,7 +38,7 @@ Assemblys d’extension n’avez pas besoin d’être connectés avant qu’ils 
   
 1.  Ajouter votre VSIX à un projet.  
   
-2.  Cliquez avec le bouton droit sur le nœud de projet dans l’Explorateur de solutions, en sélectionnant **ajouter &#124; Gérer les Packages NuGet**.  Pour plus d’informations sur NuGet et l’ajout de voir des packages NuGet, consultez le [documentation de NuGet](/NuGet) et [Package Manager UI](/NuGet/Tools/Package-Manager-UI) rubriques.  
+2.  Cliquez avec le bouton droit sur le nœud de projet dans l’Explorateur de solutions, en sélectionnant **ajouter &#124; gérer les Packages NuGet**.  Pour plus d’informations sur NuGet et l’ajout de voir des packages NuGet, consultez le [documentation de NuGet](/NuGet) et [Package Manager UI](/NuGet/Tools/Package-Manager-UI) rubriques.  
   
 3.  Recherchez VSIXSignTool de VisualStudioExtensibility et installez le package NuGet.  
   

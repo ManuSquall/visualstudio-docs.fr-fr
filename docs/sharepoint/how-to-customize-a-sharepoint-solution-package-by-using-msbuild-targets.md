@@ -1,13 +1,10 @@
 ---
-title: "Comment : personnaliser un Package de Solution SharePoint à l’aide de cibles de MSBuild | Documents Microsoft"
-ms.custom: 
+title: 'Comment : personnaliser un Package de Solution SharePoint à l’aide de cibles de MSBuild | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9aa26efe3002c28ec031457d2732c828eca445
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: fea1719eb80515a97a1b18336f1653cb535359e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Comment : personnaliser un package de solution SharePoint à l'aide de cibles de MSBuild
   À l’aide de cibles de MSBuild à une invite de commandes, vous pouvez personnaliser la façon dont Visual Studio crée les fichiers de package SharePoint (.wsp). Par exemple, vous pouvez personnaliser les propriétés MSBuild pour modifier le répertoire intermédiaire d’empaquetage et les groupes d’éléments MSBuild qui spécifient les fichiers énumérés.  
@@ -50,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Ouvrez le projet, ouvrez le menu contextuel, puis choisissez **décharger le projet**.  
   
-4.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du projet, puis choisissez **modifier***nom_projet***.vbproj** ou **Modifier***nom_projet***.csproj**.  
+4.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du projet, puis choisissez **modifier***nom_projet***.vbproj** ou **modifier***nom_projet*** .csproj**.  
   
 5.  Après le `Import` ligne vers la fin du fichier projet, ajoutez la ligne suivante.  
   

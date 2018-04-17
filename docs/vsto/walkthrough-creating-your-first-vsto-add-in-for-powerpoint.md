@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Création de votre complément VSTO pour PowerPoint | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création de votre complément VSTO pour PowerPoint | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: eec0f2eaf7cc415e026a8427f7a881cd7ed15160
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5814262d68d9bf32ee3a0f72e3e0a15811a75a9c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>Procédure pas à pas : création de votre premier complément VSTO pour PowerPoint
-  Cette procédure pas à pas montre comment créer un complément VSTO pour Microsoft Office PowerPoint. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l’application, quelles que soient les présentations ouvertes. Pour plus d’informations, consultez [présentation du développement de Solutions Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  Cette procédure pas à pas montre comment créer un complément VSTO pour Microsoft Office PowerPoint. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l’application, quelles que soient les présentations ouvertes. Pour plus d’informations, consultez [présentation du développement de Solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
   
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Cliquez sur **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crée le **FirstPowerPointAddIn** projet et ouvre le **ThisAddIn** fichier de code dans l’éditeur.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée le **FirstPowerPointAddIn** projet et ouvre le **ThisAddIn** fichier de code dans l’éditeur.  
   
 ## <a name="writing-code-that-adds-text-to-each-new-slide"></a>Écriture du code qui ajoute du texte à chaque nouvelle diapositive  
  L'étape suivante consiste à ajouter du code au fichier de code ThisAddIn. Le nouveau code utilise le modèle objet de PowerPoint pour ajouter une zone de texte à chaque nouvelle diapositive. Par défaut, le fichier de code ThisAddIn contient le code généré suivant :  

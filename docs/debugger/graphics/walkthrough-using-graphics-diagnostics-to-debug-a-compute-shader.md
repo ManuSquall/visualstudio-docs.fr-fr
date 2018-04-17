@@ -1,23 +1,21 @@
 ---
-title: "Procédure pas à pas : Utilisation de Graphics Diagnostics pour déboguer un Shader de calcul | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Utilisation de Graphics Diagnostics pour déboguer un Shader de calcul | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ef73c45b39c638b2dfc1f88be3323d083efa8493
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4498f819dae42c1f010fa97891511253624d7b97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un Shader de calcul
 Cette procédure pas à pas montre comment utiliser les outils Visual Studio Graphics Diagnostics pour examiner un nuanceur de calcul qui génère des résultats incorrects.  
@@ -56,7 +54,7 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
 2.  Inspecter le **liste des événements Graphics** pour l’événement de dessin qui restitue le jeu de données. Pour ce faire, entrez `Draw` dans les **recherche** zone dans le coin supérieur droit de la **liste des événements Graphics** fenêtre. Cela permet de filtrer la liste pour retenir uniquement les événements qui contiennent « Draw » dans leur titre. Dans ce scénario, vous découvrez que les événements de dessin suivants se sont produits :  
   
-     ![La liste des événements &#40; EL &#41; Affiche les événements de dessin. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
+     ![La liste des événements &#40;EL&#41; affiche les événements de dessin. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
 3.  Parcourez chaque événement de dessin pendant que vous regardez la cible de rendu sous l'onglet du document journal de graphisme.  
   
@@ -102,11 +100,11 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
 6.  Examinez le code source du nuanceur de calcul pour l'étape de calcul des forces. Dans ce scénario, vous déterminez que la source de l'erreur se trouve ici.  
   
-     ![Débogage du ForceCS &#95; Nuanceur de calcul simple. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
+     ![Débogage de la ForceCS&#95;nuanceur de calcul Simple. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
   
  Après avoir déterminé l'emplacement de l'erreur, vous pouvez arrêter le débogage et modifier le code source du nuanceur de calcul pour calculer correctement la distance entre les particules en interaction. Dans ce scénario, vous remplacez simplement la ligne `float2 diff = N_position + P_position;` par `float2 diff = N_position - P_position;` :  
   
- ![Le calcul corrigé &#45; code de nuanceur. ] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
+ ![Le calcul corrigé&#45;code du nuanceur. ] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
   
  Dans ce scénario, les nuanceurs de calcul étant compilés au moment de l'exécution, redémarrez simplement l'application après avoir apporté les changements nécessaires pour voir comment ils affectent la simulation. Vous n'êtes pas obligé de régénérer l'application. Quand vous exécutez l'application, vous découvrez que la simulation se comporte correctement désormais.  
   

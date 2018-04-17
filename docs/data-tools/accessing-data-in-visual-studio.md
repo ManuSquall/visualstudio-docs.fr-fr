@@ -1,7 +1,7 @@
 ---
 title: L’accès aux données dans Visual Studio | Documents Microsoft
 ms.date: 11/04/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - "80025080"
 helpviewer_keywords:
@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f99c01ec5f10909e8236d6986836603553b4008d
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: ef1c833cb44d05a910cb3c042c295c372c9b4b06
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>L’accès aux données dans Visual Studio
 
@@ -33,8 +33,8 @@ Les listes suivantes présentent quelques exemples des nombreux systèmes de bas
 
 ||||
 |-|-|-|
-|Base de données SQL|Azure Cosmos DB|Stockage (objets BLOB, tables, files d’attente, les fichiers)|
-|SQL Data Warehouse|Base de données Stretch SQL Server|StorSimple|
+|Base de données SQL|Base de données Azure Cosmos|Stockage (objets BLOB, tables, files d’attente, les fichiers)|
+|Entrepôt de données SQL|Base de données Stretch SQL Server|StorSimple|
 
 Et plus encore...
 
@@ -53,7 +53,7 @@ Et plus encore...
 ||||
 |-|-|-|
 |Apache Cassandra|CouchDB|MongoDB|
-|NDatabase|OrientDB|RavenDB|
+|Données|OrientDB|RavenDB|
 |VelocityDB|||
 
 Et plus encore...
@@ -109,7 +109,7 @@ Pour en savoir plus sur la connexion aux bases de données à partir d’applica
 
 ## <a name="python"></a>Python
 
-Installer [Python prend en charge dans Visual Studio](../python/python-in-visual-studio.md) pour créer des applications de Python. La documentation sur Azure a plusieurs didacticiels sur la connexion aux données, notamment les suivantes :
+Installer [Python prend en charge dans Visual Studio](../python/overview-of-python-tools-for-visual-studio.md) pour créer des applications de Python. La documentation sur Azure a plusieurs didacticiels sur la connexion aux données, notamment les suivantes :
 
 - [Django et base de données SQL Azure](/azure/app-service/app-service-web-get-started-python)
 - [Django et MySQL sur Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)

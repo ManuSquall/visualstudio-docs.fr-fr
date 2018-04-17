@@ -1,12 +1,10 @@
 ---
-title: "Comment : afficher l’onglet Développeur sur le ruban | Documents Microsoft"
-ms.custom: 
+title: 'Comment : afficher l’onglet Développeur sur le ruban | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Developer tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b0a4793de32956e3aa3de2965eef15623785716d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9921c10d8a886eb4051b3d5f3d8392ddc77c2da7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Comment : afficher l'onglet Développeur sur le ruban
   Pour accéder à la **développeur** onglet sur le ruban d’une application Office, vous devez le configurer pour afficher l’onglet, car il ne s’affiche pas par défaut. Par exemple, vous devez afficher cet onglet pour ajouter un <xref:Microsoft.Office.Tools.Word.GroupContentControl> à une personnalisation au niveau du document pour Word.  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
   
      ![Le bouton Options dans Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "bouton Options dans Outlook 2013 Preview")  
   
-3.  Dans le *ApplicationName***Options** boîte de dialogue, choisissez le **personnaliser le ruban** bouton.  
+3.  Dans le *ApplicationName *** Options** boîte de dialogue, choisissez le **personnaliser le ruban** bouton.  
   
      L’illustration suivante montre le **Options** boîte de dialogue et les **personnaliser le ruban** bouton dans Excel 2010. L'emplacement de ce bouton est similaire dans toutes les autres applications répertoriées dans la section « S'applique à » au début de cette rubrique.  
   

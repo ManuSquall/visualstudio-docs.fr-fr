@@ -1,12 +1,10 @@
 ---
-title: "CA2231 : Surchargez l’opérateur equals en remplaçant ValueType.Equals | Documents Microsoft"
-ms.custom: 
+title: 'CA2231 : Surchargez l’opérateur equals en remplaçant ValueType.Equals | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - OverloadOperatorEqualsOnOverridingValueTypeEquals
 - CA2231
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - OverloadOperatorEqualsOnOverridingValueTypeEquals
 - CA2231
 ms.assetid: 114c0161-261a-40ad-8b2c-0932d6909d2a
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9ee207eb3e5c4babb5bcb9f7d88f9afd3908a3c7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 881b3d9761f19b4e8364f585480d8b055d076a38
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231 : Surchargez l'opérateur égal (equals) en remplaçant ValueType.Equals
 |||  
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Description de la règle  
  Dans la plupart des langages de programmation il n’existe aucune implémentation par défaut de l’opérateur d’égalité (==) pour les types valeur. Si votre langage de programmation prend en charge les surcharges d’opérateur, vous devez envisager d’implémenter l’opérateur d’égalité. Son comportement doit être identique à celui de <xref:System.Object.Equals%2A>.  
   
- Vous ne pouvez pas utiliser l’opérateur d’égalité par défaut dans une implémentation surchargée de l’opérateur d’égalité. Cela provoque un dépassement de capacité de pile. Pour implémenter l’opérateur d’égalité, utilisez la méthode Object.Equals dans votre implémentation. Exemple :  
+ Vous ne pouvez pas utiliser l’opérateur d’égalité par défaut dans une implémentation surchargée de l’opérateur d’égalité. Cela provoque un dépassement de capacité de pile. Pour implémenter l’opérateur d’égalité, utilisez la méthode Object.Equals dans votre implémentation. Par exemple :  
   
 ```vb  
 If (Object.ReferenceEquals(left, Nothing)) Then  

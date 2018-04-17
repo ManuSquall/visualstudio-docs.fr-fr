@@ -1,29 +1,25 @@
 ---
 title: Fonction de SccBeginBatch | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccBeginBatch
 helpviewer_keywords:
 - SccBeginBatch function
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6415953a350321cb13f2705fa2bb182c278faa3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5350484294d02356301839e38b97bea1d40ec27c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch (fonction)
 Cette fonction démarre une séquence d’opérations de contrôle de code source. Le [SccEndBatch](../extensibility/sccendbatch-function.md) sera appelée pour terminer le lot. Ces lots ne peuvent pas être imbriqués.  
@@ -46,7 +42,7 @@ SCCRTN SccBeginBatch(void);
 |SCC_E_UNKNOWNERROR|Erreur non spécifique.|  
   
 ## <a name="remarks"></a>Notes  
- Lots de contrôle de code source sont utilisées pour exécuter les mêmes opérations sur plusieurs projets ou de plusieurs contextes. Lots peuvent être utilisés pour éliminer les boîtes de dialogue projet redondante à partir de l’expérience utilisateur lors d’une opération par lot. Le `SccBeginBatch` (fonction) et le [SccEndBatch](../extensibility/sccendbatch-function.md) sont utilisés comme une paire de fonctions pour indiquer le début et la fin d’une opération. Ils ne peuvent pas être imbriquées. `SccBeginBatch`définit un indicateur qui indique qu’une opération de traitement par lots est en cours d’exécution.  
+ Lots de contrôle de code source sont utilisées pour exécuter les mêmes opérations sur plusieurs projets ou de plusieurs contextes. Lots peuvent être utilisés pour éliminer les boîtes de dialogue projet redondante à partir de l’expérience utilisateur lors d’une opération par lot. Le `SccBeginBatch` (fonction) et le [SccEndBatch](../extensibility/sccendbatch-function.md) sont utilisés comme une paire de fonctions pour indiquer le début et la fin d’une opération. Ils ne peuvent pas être imbriquées. `SccBeginBatch` définit un indicateur qui indique qu’une opération de traitement par lots est en cours d’exécution.  
   
  Pendant une opération de traitement est en vigueur, le plug-in de contrôle de code source doit présenter au maximum d’une boîte de dialogue pour toute question à l’utilisateur et s’appliquent de la réponse à partir de cette boîte de dialogue sur toutes les opérations suivantes.  
   

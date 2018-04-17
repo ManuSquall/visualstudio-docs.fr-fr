@@ -1,12 +1,10 @@
 ---
-title: "Comment : enregistrer des Documents par programmation | Documents Microsoft"
-ms.custom: 
+title: 'Comment : enregistrer des Documents par programmation | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], saving documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 68bf8450906dae3faf5f62acd2d057718938b520
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 89e2a236d8755b764971b7823056edda3e944e65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-save-documents"></a>Comment : enregistrer des documents par programmation
   Il existe plusieurs façons d’enregistrer des documents Microsoft Office Word. Vous pouvez enregistrer un document sans modifier le nom du document, ou vous pouvez enregistrer un document avec un nouveau nom.  

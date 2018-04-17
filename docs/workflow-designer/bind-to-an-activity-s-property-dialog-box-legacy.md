@@ -1,5 +1,5 @@
 ---
-title: "Lier à une activité&#39;boîte de dialogue propriété (hérité) | Documents Microsoft"
+title: Lier à une activité&#39;boîte de dialogue propriété (hérité) | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 19ebb207-e0a9-4642-8f5f-a5e31395c683
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee80d096cc0df6092811fa7fba17125c5af380f
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2a799b57169116343f5d83e54ce5bd87dedfd801
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Lier à une activité&#39;boîte de dialogue propriété (hérité)
 Cette rubrique décrit comment utiliser le **lier à la propriété d’une activité** boîte de dialogue dans le Concepteur de flux de travail Windows hérité. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

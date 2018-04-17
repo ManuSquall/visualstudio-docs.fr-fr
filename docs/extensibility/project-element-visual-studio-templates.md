@@ -1,30 +1,26 @@
 ---
-title: "Project, élément (modèles Visual Studio) | Documents Microsoft"
-ms.custom: 
+title: Project, élément (modèles Visual Studio) | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Project
 helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fd8881d484f35a0183d83d1b540fc2249e9c4f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3ef09516237ad30a18f9790ddae40260d834af21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-element-visual-studio-templates"></a>Project, élément (modèles Visual Studio)
 Spécifie les fichiers ou répertoires à ajouter au projet.  
@@ -75,9 +71,9 @@ Spécifie les fichiers ou répertoires à ajouter au projet.
   
  Le `Project` élément est utilisé pour spécifier un projet et par conséquent, est uniquement valide dans les modèles de projet.  
   
- `Project`les éléments peuvent avoir [dossier](../extensibility/folder-element-visual-studio-project-templates.md) éléments enfants ou [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) éléments enfants, mais pas une combinaison des deux `Folder` et `ProjectItem` les éléments enfants.  
+ `Project` les éléments peuvent avoir [dossier](../extensibility/folder-element-visual-studio-project-templates.md) éléments enfants ou [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) éléments enfants, mais pas une combinaison des deux `Folder` et `ProjectItem` les éléments enfants.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]renomme automatiquement le nom du fichier projet en fonction du nom entré par l’utilisateur dans le **nouveau projet** boîte de dialogue. Utilisez le `TargetFileName` si vous souhaitez fournir un autre nom de fichier pour les fichiers projet créés avec le modèle d’attribut.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] renomme automatiquement le nom du fichier projet en fonction du nom entré par l’utilisateur dans le **nouveau projet** boîte de dialogue. Utilisez le `TargetFileName` si vous souhaitez fournir un autre nom de fichier pour les fichiers projet créés avec le modèle d’attribut.  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant affiche les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.  

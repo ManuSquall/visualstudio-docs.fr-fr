@@ -1,28 +1,26 @@
 ---
 title: Mise en page pour Visual Studio | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ef3c590a82fc3a7b89d21684ffe2e4b0f216ca98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e26caa6e47f0f2ee2a20611cf12e166832e007b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="layout-for-visual-studio"></a>Mise en page pour Visual Studio
 La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boîte de dialogue utilitaire](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), qui sont l’unthemed boîtes de dialogue standard suivez [principes de mise en page de boîte de dialogue Windows Desktop](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx). Lorsque Visual Studio s’à actualiser son interface utilisateur, certaines des boîtes de dialogue plus apparents ont une nouvelle conception qui établit les expériences de comme définition de produit. Ces [mise en page de boîte de dialogue à thème](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) ont une apparence à thème.  
   
-##  <a name="BKMK_UtilityDialogLayout"></a>Mise en page de boîte de dialogue utilitaire  
+##  <a name="BKMK_UtilityDialogLayout"></a> Mise en page de boîte de dialogue utilitaire  
   
 -   Tous les contrôles dans une boîte de dialogue Utilitaire doivent démarrer à l’angle supérieur gauche et vers le bas de flux.  
   
@@ -104,7 +102,7 @@ La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boî
   
 -   La longueur de ligne doit être une largeur à l’aise pour un utilisateur à analyser et à lire. Une boîte de dialogue moyenne doit être pas plus de 550 pixels de largeur.  
   
-####  <a name="BKMK_InteriorCommandButtons"></a>Boutons de commande intérieurs  
+####  <a name="BKMK_InteriorCommandButtons"></a> Boutons de commande intérieurs  
  Les boîtes de dialogue plus complexes, un contrôle interne peut contenir ses propres boutons associés, qui peut affecter l’emplacement où se trouvent les boutons de la validation de la boîte de dialogue.  
   
 -   Utilisez un alignement vertical (colonne) de l’intérieur des boutons lorsque **OK**/**Annuler** est orienté horizontalement dans le coin inférieur droit.  
@@ -124,7 +122,7 @@ La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boî
 #### <a name="browse-button"></a>[Parcourir...] bouton  
  **[Parcourir...]**  boutons qui suivent une zone de texte doit spécifier « Parcourir... » dans leur intégralité, y compris les points de suspension. Si l’espace est limité ou il existe plusieurs **[Parcourir...]**  boutons à l’écran, le bouton peut être réduit à simplement les points de suspension.  
   
-##  <a name="BKMK_ThemedDialogLayout"></a>Mise en page de boîte de dialogue à thème  
+##  <a name="BKMK_ThemedDialogLayout"></a> Mise en page de boîte de dialogue à thème  
  Les boîtes de dialogue à thème dans Visual Studio ont une apparence plus claire et offrent davantage d’espace blanc. Typographie fournit plus d’importance et présentant un intérêt, interligne plus ouvrir et une variante de tailles de police et le poids de l’offre. Lorsque cela est possible, les barres de titre et chrome ont été réduits ou supprimés. La disposition de ces boîtes de dialogue doit suivre ce modèle de base :  
   
 1.  L’arrière-plan de la boîte de dialogue est blanc.  

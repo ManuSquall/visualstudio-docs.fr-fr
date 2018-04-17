@@ -1,28 +1,25 @@
 ---
-title: "Base de données des projets, des projets serveur et des projets DAC dans Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Base de données des projets, des projets serveur et des projets DAC dans Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - managing change, databases
 - database features of Visual Studio, managing change
 - databases, managing change
 - managing change, database servers
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
-caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 8e599e1d309ab254c2b2d5a3a490c0cd912b8823
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: baca17712d6cf39753dab51c60fee901c0ea08ca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Projets de base de données et les applications de couche données dans Visual Studio  
 Vous pouvez utiliser des projets de base de données pour créer de nouvelles bases de données, des applications de couche données (DAC) et mettre à jour les bases de données et les applications de couche données. Les projets de base de données et les projets DAC permettent d’appliquer des techniques de gestion de projet et le contrôle de version à vos efforts de développement de base de données de la même façon que vous appliquez ces techniques au code managé ou natif. Vous pouvez aider votre équipe de développement gérer les modifications apportées aux bases de données et les serveurs de base de données en créant un *projet DAC*, *projet de base de données*, ou un *projet server* et leur placement sous contrôle de version. Membres de votre équipe peuvent ensuite consulter les fichiers à apporter, générer et tester des modifications dans un *environnement de développement isolé*, ou bac à sable, avant de les partager avec l’équipe. Pour garantir la qualité du code, votre équipe peut terminer et toutes les modifications pour une version particulière de la base de données de test dans un environnement intermédiaire avant de déployer les modifications en production.  

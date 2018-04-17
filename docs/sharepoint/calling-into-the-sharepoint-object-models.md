@@ -1,12 +1,10 @@
 ---
-title: "Appel des modèles d’objet SharePoint | Documents Microsoft"
-ms.custom: 
+title: Appel des modèles d’objet SharePoint | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,18 +15,19 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cbb1b8f573c6dd28280e30fd5602dff2dc30ae02
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3795b7c920415ee733e08132234de381cf610aba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calling-into-the-sharepoint-object-models"></a>Appel des modèles d'objet SharePoint
   Lorsque vous créez des extensions pour les outils SharePoint dans Visual Studio, vous devrez appeler APIs SharePoint pour effectuer certaines tâches. Par exemple, si vous créez une étape de déploiement personnalisée pour les projets SharePoint, vous devez appeler APIs SharePoint pour effectuer certaines tâches pour déployer des solutions.  
   
- [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]et [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] fournissent deux modèles objet différents que vous pouvez utiliser dans les extensions d’outils SharePoint : un modèle d’objet serveur et un modèle d’objet client. Chaque modèle objet présente les avantages et inconvénients dans le contexte d’extensions d’outils SharePoint.  
+ [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] et [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] fournissent deux modèles objet différents que vous pouvez utiliser dans les extensions d’outils SharePoint : un modèle d’objet serveur et un modèle d’objet client. Chaque modèle objet présente les avantages et inconvénients dans le contexte d’extensions d’outils SharePoint.  
   
  Pour une vue d’ensemble des modèles d’objet SharePoint, consultez [vue d’ensemble de la programmation de modèle d’Extensions d’outils SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
   

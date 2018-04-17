@@ -1,13 +1,10 @@
 ---
-title: "Procédure pas à pas : Liaison de contrôles de contenu à des parties XML personnalisées | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Liaison de contrôles de contenu à des parties XML personnalisées | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - DatePickerContentControl, binding to a custom XML part
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a8c8eff138e2c736750040dc896e610975c25ab
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7ca9c3e049d29874419327ec4ac7d71e0537466c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>Procédure pas à pas : liaison de contrôles de contenu à des parties XML personnalisées
   Cette procédure pas à pas montre comment lier les contrôles de contenu d'une personnalisation au niveau du document pour Word aux données XML stockées dans le document.  
@@ -66,7 +63,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Créer un projet de document Word portant le nom **EmployeeControls**. Créez un document pour la solution. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ouvre le nouveau document Word dans le concepteur et ajoute le **EmployeeControls** projet **l’Explorateur de solutions**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ouvre le nouveau document Word dans le concepteur et ajoute le **EmployeeControls** projet **l’Explorateur de solutions**.  
   
 ## <a name="adding-content-controls-to-the-document"></a>Ajout de contrôles de contenu au document  
  Créez une table qui contient trois types différents de contrôles de contenu, où l'utilisateur peut afficher ou modifier les informations sur un employé.  
@@ -319,15 +316,15 @@ ms.lasthandoff: 01/10/2018
   
 -   Modifiez les données des parties XML personnalisées lorsque le document est fermé. La prochaine fois que l'utilisateur ouvre le document, les contrôles de contenu liés aux éléments XML affichent les nouvelles données.  
   
--   Utilisez les contrôles de contenu pour protéger les parties d'un document. Pour plus d'informations, consultez [Comment : protéger des parties de documents à l'aide de contrôles de contenu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+-   Utilisez les contrôles de contenu pour protéger les parties d'un document. Pour plus d'informations, consultez [How to: Protect Parts of Documents by Using Content Controls](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)   
  [Contrôles de contenu](../vsto/content-controls.md)   
  [Comment : ajouter des contrôles de contenu à des Documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Comment : protéger des parties de Documents à l’aide de contrôles de contenu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Vue d'ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
+ [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Ajout de contrôles à des documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)  
   
   

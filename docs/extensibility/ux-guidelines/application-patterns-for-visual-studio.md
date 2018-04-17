@@ -1,26 +1,24 @@
 ---
-title: "Modèles d’application pour Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Modèles d’application pour Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a793651660c456213c0e91c0d6c6474cccf3f7d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modèles d’application pour Visual Studio
-##  <a name="BKMK_WindowInteractions"></a>Interactions de la fenêtre  
+##  <a name="BKMK_WindowInteractions"></a> Interactions de la fenêtre  
   
 ### <a name="overview"></a>Vue d'ensemble  
 Les deux types de fenêtre principale utilisées dans Visual Studio sont des fenêtres Outil et les éditeurs de document. Rare mais possible, est des boîtes de dialogue non modales volumineux. Bien que ce sont toutes non modales dans l’interpréteur de commandes, leurs schémas sont fondamentalement différentes. Cette section aborde la différence entre les fenêtres de document, les fenêtres Outil et boîtes de dialogue non modales. Modèles de boîte de dialogue modale sont traités dans [boîtes de dialogue](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).  
@@ -42,7 +40,7 @@ Envisagez avec précaution sur le type conteneur. Common considérations sur le 
 | **Instances** | *Instances multiples*<br /><br /> Plusieurs éditeurs peuvent être ouvertes en même temps et modification de fichiers différent, alors que certains éditeurs permettent également le même fichier ouvert dans plusieurs éditeurs (à l’aide de la **fenêtre &gt; nouvelle fenêtre** commande).<br /><br /> Un éditeur unique peut modifier un ou plusieurs fichiers en même temps (Concepteur de projet). | *Instance unique ou multiniveau*<br /><br /> Contenu change pour refléter le contexte (comme dans l’Explorateur de propriétés) ou de type push de focus/contexte d’autres fenêtres (liste des tâches, l’Explorateur de solutions).<br /><br /> Les fenêtres Outil à instance unique et plusieurs instances doivent être associés à la fenêtre de document actif sauf s’il existe une bonne raison de pas à. | *Instance unique* |  
 | **Exemples** | **Éditeurs de texte**, telles que l’éditeur de code<br /><br /> **Les aires de conception**, comme un concepteur de formulaires ou une surface de modélisation<br /><br /> **Contrôler les mises en page semblables aux boîtes de dialogue**, telles que le Concepteur de manifeste | Le **l’Explorateur de solutions** fournit une solution et les projets contenus dans la solution<br /><br /> Le **l’Explorateur de serveurs** fournit une vue hiérarchique des connexions de serveurs et des données que l’utilisateur choisit d’ouvrir dans la fenêtre. Ouverture d’un objet de la hiérarchie de la base de données, comme une requête, ouvre une fenêtre de document et permet à l’utilisateur de modifier la requête.<br /><br /> Le **Explorateur de propriétés** affiche les propriétés de l’objet sélectionné dans une fenêtre de document ou une autre fenêtre outil. Les propriétés sont présentées dans une vue hiérarchique de grille ou dans les contrôles de boîtes de dialogue complexes et autoriser l’utilisateur à définir les valeurs de ces propriétés. | |  
   
-##  <a name="BKMK_ToolWindows"></a>Fenêtres Outil  
+##  <a name="BKMK_ToolWindows"></a> Fenêtres Outil  
   
 ### <a name="overview"></a>Vue d'ensemble  
 Fenêtres Outil prennent en charge de travail de l’utilisateur qui se produit dans les fenêtres de document. Ils peuvent être utilisés pour présenter une hiérarchie qui représente un objet racine fondamentaux que Visual Studio fournit et peut manipuler.  
@@ -149,7 +147,7 @@ Fenêtres d’outils de liste sont l’Explorateur de solutions et de la fenêtr
 | Registres ||  
 | Threads ||  
   
-##  <a name="BKMK_DocumentEditorConventions"></a>Conventions de l’éditeur de document  
+##  <a name="BKMK_DocumentEditorConventions"></a> Conventions de l’éditeur de document  
   
 ### <a name="document-interactions"></a>Interactions de document  
 « Barre d’outils document » est le plus grand espace dans l’IDE et où l’utilisateur généralement se sont concentrées leur attention afin de terminer leurs tâches, assistés par les fenêtres Outil supplémentaires. Les éditeurs de document représentent les unités fondamentales de travail que l’utilisateur s’ouvre et l’enregistre dans Visual Studio. Ils conservent une forte de sélection liée l’Explorateur de solutions ou d’autres fenêtres de la hiérarchie active. L’utilisateur doit être en mesure de pointer vers l’un de ces fenêtres de hiérarchie et de savoir où le document est contenu et sa relation à la solution, le projet ou un autre objet racine fourni par un package Visual Studio.  
@@ -257,7 +255,7 @@ Il existe également plusieurs types non éditeur qui utilisent le document corr
   
 -   Les utilisateurs doivent être en mesure d’interagir avec les contrôles à l’aide du clavier uniquement, en activant l’éditeur et de tabulation des contrôles ou à l’aide de mnémoniques standards.  
   
-##  <a name="BKMK_Dialogs"></a>Boîtes de dialogue  
+##  <a name="BKMK_Dialogs"></a> Boîtes de dialogue  
   
 ### <a name="introduction"></a>Introduction  
 Les boîtes de dialogue dans Visual Studio doivent généralement prendre en charge d’une petite unité de travail de l’utilisateur et puis être sera ignorés.  
@@ -313,12 +311,12 @@ Prendre en compte les différences entre ces types de base de boîtes de dialogu
   
 -   [Assistants](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) sont utiles pour diriger l’utilisateur via une séquence logique d’étapes vers la fin d’une tâche. Une série de choix sont proposées dans les panneaux séquentiel, parfois présentation différents flux de travail (« branches ») dépend d’un choix dans le panneau de configuration précédente.  
   
-####  <a name="BKMK_SimpleDialogs"></a>Boîtes de dialogue simples  
+####  <a name="BKMK_SimpleDialogs"></a> Boîtes de dialogue simples  
 Une boîte de dialogue simple est une présentation des contrôles dans une seule fenêtre modale. Cette présentation peut inclure les variantes des modèles de contrôle complexe, par exemple un sélecteur de champ. Pour les boîtes de dialogue simples, suivez la disposition générale standard, ainsi que toute mise en page spécifique requises pour les regroupements de contrôle complexe.
   
 ![> créer une clé de nom fort est un exemple de boîte de dialogue simple dans Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704-01_CreateStrongNameKey")<br />Créer une clé de nom fort est un exemple de boîte de dialogue simple dans Visual Studio.
   
-####  <a name="BKMK_LayeredDialogs"></a>Boîtes de dialogue en couche  
+####  <a name="BKMK_LayeredDialogs"></a> Boîtes de dialogue en couche  
 Les boîtes de dialogue superposées incluent les onglets, les tableaux de bord et les arbres incorporés. Ils sont utilisés pour optimiser immobilier lorsqu’il existe plusieurs groupes de contrôles proposés dans un seul élément de l’interface utilisateur. Les regroupements sont superposées afin que l’utilisateur peut choisir le regroupement pour afficher à tout moment.  
   
 Dans le cas le plus simple, le mécanisme de basculer entre les regroupements est un contrôle onglet. Il existe plusieurs alternatives. Consultez la définition de la priorité et la superposition pour savoir comment choisir le style plus approprié.  
@@ -327,7 +325,7 @@ Le **outils &gt; Options** boîte de dialogue est un exemple de boîte de dialog
   
 ![Outils > Options est un exemple d’une boîte de dialogue superposée dans Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Outils > Options est un exemple d’une boîte de dialogue superposée dans Visual Studio.
   
-####  <a name="BKMK_Wizards"></a>Assistants  
+####  <a name="BKMK_Wizards"></a> Assistants  
 Assistants sont utiles pour diriger l’utilisateur via une séquence logique d’étapes dans la réalisation d’une tâche. Une série de choix sont proposés dans les panneaux séquentielles, et l’utilisateur doit continuer à chaque étape avant de passer à la suivante. Une fois que les valeurs par défaut suffisantes sont disponibles, le **Terminer** bouton est activé.  
   
  Assistants modales sont utilisés pour les tâches qui :  
@@ -408,7 +406,7 @@ N’utilisez pas de clés d’accès de **OK**, **Annuler**, ou **aide** boutons
 #### <a name="imagery"></a>IMAGERIE  
 Utiliser des images avec parcimonie dans les boîtes de dialogue. N’utilisez pas de grandes icônes dans les boîtes de dialogue simplement à utiliser un espace. Utiliser des images uniquement si elles sont une partie importante de faire passer le message à l’utilisateur, telles que des icônes d’avertissement ou d’animations d’état.  
   
-###  <a name="BKMK_PrioritizingAndLayering"></a>Définition des priorités et la superposition  
+###  <a name="BKMK_PrioritizingAndLayering"></a> Définition des priorités et la superposition  
   
 #### <a name="prioritizing-your-ui"></a>Priorité de votre interface utilisateur  
 Il peut être nécessaire de mettre certains éléments d’interface utilisateur au premier plan et placer le comportement plus avancée et les options (y compris les commandes obscurs) dans les boîtes de dialogue. Mettre les fonctionnalités couramment utilisées au premier plan en place pour celui-ci et en le rendant visible par défaut dans l’interface utilisateur avec une étiquette de texte lorsque la boîte de dialogue est affichée.  
@@ -423,7 +421,7 @@ Présente des avantages et inconvénients des différentes méthodes de superpos
 | Mécanisme de commutation | Avantages et utilisation appropriée | Utilisation inappropriée et inconvénients |  
 | --- | --- | --- |  
 | Contrôle Tab | Regrouper logiquement les pages de boîte de dialogue connexes<br /><br />Utile pour moins de cinq (ou le nombre d’onglets qui tiennent dans une ligne dans la boîte de dialogue) pages de contrôles connexes dans la boîte de dialogue<br /><br />Onglet étiquettes doivent être courtes : un ou deux mots qui peuvent d’identifier facilement le contenu<br /><br />Un style de boîte de dialogue système commun<br /><br />Exemple : **Explorateur de fichiers &gt; propriétés d’un élément** | Des étiquettes descriptives courts peut être difficile<br /><br />En règle générale n’évolue pas au-delà de cinq onglets dans une boîte de dialogue<br /><br />Inapproprié si vous avez trop d’onglets pour une ligne (utilisez une technique de remplacement de superposition)<br /><br />Non extensible |  
-| Navigation avec barre latérale | Dispositif de commutation simple qui peut contenir plusieurs catégories à onglets<br /><br />Liste plate de catégories (sans hiérarchie)<br /><br />Extensible<br /><br />Exemple : **personnaliser... &gt;Ajouter des commandes** | Pas d’une utilisation optimale de l’espace horizontal s’il existe moins de trois groupes<br /><br />Tâche peut-être être mieux adapté à une liste déroulante. |  
+| Navigation avec barre latérale | Dispositif de commutation simple qui peut contenir plusieurs catégories à onglets<br /><br />Liste plate de catégories (sans hiérarchie)<br /><br />Extensible<br /><br />Exemple : **personnaliser... &gt; Ajouter des commandes** | Pas d’une utilisation optimale de l’espace horizontal s’il existe moins de trois groupes<br /><br />Tâche peut-être être mieux adapté à une liste déroulante. |  
 | Contrôle Tree | Permet de catégories illimités<br /><br />Permet de regroupement et/ou de la hiérarchie de catégories<br /><br />Extensible<br /><br />Exemple : **outils &gt; Options** | Hiérarchies fortement imbriquées peuvent entraîner un défilement horizontal excessive<br /><br />Visual Studio propose une overabundance de vues d’arborescence |  
 | Assistant | Grâce à la fin de la tâche guider l’utilisateur à travers les étapes séquentielles, tâche : l’Assistant représente une tâche de niveau supérieur et les panneaux individuels représentent des sous-tâches nécessaires pour accomplir la tâche globale<br /><br />Utile lors de la tâche dépasse les limites de l’interface utilisateur, comme lorsque l’utilisateur aurait autrement utiliser plusieurs éditeurs et fenêtres pour terminer la tâche<br /><br />Utile lors de la tâche nécessite la création de branche<br /><br />Utile lors de la tâche contient des dépendances entre les étapes<br /><br />Utile quand plusieurs tâches similaires avec la branche d’un arbre de décision peuvent être présentées dans une boîte de dialogue pour réduire le nombre de différentes boîtes de dialogue similaire | Inapproprié pour toute tâche qui ne nécessite pas un workflow séquentiel<br /><br />Les utilisateurs peuvent devenir submergé et par un Assistant avec trop d’étapes<br /><br />Assistants sont limitée, par nature, l’espace d’écran |  
   
@@ -437,7 +435,7 @@ Vous pouvez également une interface utilisateur qui offre toutes les fonctionna
 ##### <a name="adaptive-ui"></a>Interface utilisateur adaptative  
 Affichage ou masquage de l’interface utilisateur basée sur l’utilisation ou non signalé expérience d’un utilisateur est une autre façon de présenter l’interface utilisateur tout en masquant les autres parties. Cela n’est pas recommandée dans Visual Studio, comme les algorithmes pour le choix du moment afficher ou masquer l’interface utilisateur peuvent être difficile, et les règles ne sera toujours incorrect pour un jeu de cas.  
   
-##  <a name="BKMK_Projects"></a>Projets  
+##  <a name="BKMK_Projects"></a> Projets  
   
 ### <a name="projects-in-the-solution-explorer"></a>Projets dans l’Explorateur de solutions  
 La plupart des projets sont classées en fonction de référence, basée sur Active ou mixte. Les trois types de projets sont pris en charge simultanément dans l’Explorateur de solutions. La racine de l’expérience utilisateur à l’utilisation des projets s’effectue à l’intérieur de cette fenêtre. Bien que les nœuds de projets différentes soient référence, répertoire ou des projets de type de mode mixte, il est un modèle d’interaction commun qui doit être appliqué comme point de départ avant divergent en modèles d’utilisateur spécifiques à un projet.  
@@ -508,19 +506,19 @@ L’utilisateur doit toujours être en mesure de déterminer l’effet d’une o
 | Aucun modificateur | Action | Déplacement | Lien |  
 | Aucun modificateur | une cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément d’origine |  
 | Aucun modificateur | Source | Référence de suppressions à l’élément d’origine | Conserve l’élément d’origine |  
-| Aucun modificateur | Résultat | `DROPEFFECT_MOVE`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_LINK`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |  
+| Aucun modificateur | Résultat | `DROPEFFECT_MOVE` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_LINK` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |  
 | Maj + glisser | Action | Déplacement | Aucune suppression |  
 | Maj + glisser | une cible | Ajoute la référence à l’élément d’origine | Aucune suppression |  
 | Maj + glisser | Source | Référence de suppressions à l’élément d’origine | Aucune suppression |  
-| Maj + glisser | Résultat | `DROPEFFECT_MOVE`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | Aucune suppression |  
+| Maj + glisser | Résultat | `DROPEFFECT_MOVE` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | Aucune suppression |  
 | CTRL + glisser | Action | Copier | Aucune suppression |  
 | CTRL + glisser | une cible | Ajoute la référence à l’élément d’origine | Aucune suppression |  
 | CTRL + glisser | Source | Conserve la référence à l’élément d’origine | Aucune suppression |  
-| CTRL + glisser | Résultat | `DROPEFFECT_COPY`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | Aucune suppression |  
+| CTRL + glisser | Résultat | `DROPEFFECT_COPY` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | Aucune suppression |  
 | Ctrl + Maj + glisser | Action | Lien | Lien |  
 | Ctrl + Maj + glisser | une cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément d’origine |  
 | Ctrl + Maj + glisser | Source | Conserve la référence à l’élément d’origine | Conserve l’élément d’origine |  
-| Ctrl + Maj + glisser | Résultat | `DROPEFFECT_LINK`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_LINK`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |  
+| Ctrl + Maj + glisser | Résultat | `DROPEFFECT_LINK` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_LINK` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |  
 | Ctrl + Maj + glisser | Remarque | Identique au comportement de glisser-déplacer pour les raccourcis dans l’Explorateur Windows. ||  
 | Couper/coller | Action | Déplacement | Lien |  
 | Couper/coller | une cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément d’origine |  
@@ -538,15 +536,15 @@ Le tableau suivant récapitule les opérations de glisser-déplacer (ainsi que d
 | --- | --- | --- | --- |  
 | Aucun modificateur | Action | Déplacement | Déplacement |  
 | Aucun modificateur | une cible | Élément de copies à l’emplacement cible | Élément de copies à l’emplacement cible |  
-| Aucun modificateur | Source | Référence de suppressions à l’élément d’origine | Référence de suppressions à l’élément d’origine | | Aucun modificateur | Résultat | `DROPEFFECT_MOVE`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_MOVE`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |  
+| Aucun modificateur | Source | Référence de suppressions à l’élément d’origine | Référence de suppressions à l’élément d’origine | | Aucun modificateur | Résultat | `DROPEFFECT_MOVE` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_MOVE` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |  
 | Maj + glisser | Action | Déplacement | Déplacement |  
 | Maj + glisser | une cible | Élément de copies à l’emplacement cible | Élément de copies à l’emplacement cible |  
 | Maj + glisser | Source | Référence de suppressions à l’élément d’origine | Supprime l’élément à partir de l’emplacement d’origine |
-| Maj + glisser | Résultat | `DROPEFFECT_MOVE`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_MOVE`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |  
+| Maj + glisser | Résultat | `DROPEFFECT_MOVE` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_MOVE` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |  
 | CTRL + glisser | Action | Copier | Copier |  
 | CTRL + glisser | une cible | Élément de copies à l’emplacement cible | Élément de copies à l’emplacement cible |  
 | CTRL + glisser | Source | Conserve la référence à l’élément d’origine | Conserve la référence à l’élément d’origine |  
-| CTRL + glisser | Résultat | `DROPEFFECT_COPY`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_COPY`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |  
+| CTRL + glisser | Résultat | `DROPEFFECT_COPY` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_COPY` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |  
 | Ctrl + Maj + glisser | | Aucune suppression | Aucune suppression |  
 | Couper/coller | Action | Déplacement | Déplacement |  
 | Couper/coller | une cible | Élément de copies à l’emplacement cible | Élément de copies à l’emplacement cible |  
@@ -565,19 +563,19 @@ Le tableau suivant récapitule les opérations de glisser-déplacer (ainsi que d
 | Aucun modificateur | Action | Déplacement | Déplacement |
 | Aucun modificateur | une cible | Ajoute la référence à l’élément d’origine | Élément de copies à l’emplacement cible |
 | Aucun modificateur | Source | Référence de suppressions à l’élément d’origine | Référence de suppressions à l’élément d’origine |
-| Aucun modificateur | Résultat | `DROPEFFECT_ MOVE`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ MOVE`est retourné en tant qu’action de `::Drop` et de l’élément est supprimé de l’emplacement d’origine dans le stockage |
+| Aucun modificateur | Résultat | `DROPEFFECT_ MOVE` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ MOVE` est retourné en tant qu’action de `::Drop` et de l’élément est supprimé de l’emplacement d’origine dans le stockage |
 | Maj + glisser | Action | Déplacement | Déplacement |
 | Maj + glisser | une cible | Ajoute la référence à l’élément d’origine | Élément de copies à l’emplacement cible |
 | Maj + glisser | Source | Référence de suppressions à l’élément d’origine | Supprime l’élément à partir de l’emplacement d’origine | 
-| Maj + glisser | Résultat | `DROPEFFECT_ MOVE`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ MOVE`est retourné en tant qu’action de `::Drop` et de l’élément est supprimé de l’emplacement d’origine dans le stockage |
+| Maj + glisser | Résultat | `DROPEFFECT_ MOVE` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ MOVE` est retourné en tant qu’action de `::Drop` et de l’élément est supprimé de l’emplacement d’origine dans le stockage |
 | CTRL + glisser | Action | Copier | Copier |
 | CTRL + glisser | une cible | Ajoute la référence à l’élément d’origine | Élément de copies à l’emplacement cible |
 | CTRL + glisser | Source | Conserve la référence à l’élément d’origine | Conserve l’élément d’origine |
-| CTRL + glisser | Résultat | `DROPEFFECT_ COPY`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ COPY`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
+| CTRL + glisser | Résultat | `DROPEFFECT_ COPY` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ COPY` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
 | Ctrl + Maj + glisser | Action | Lien | Lien |
 | Ctrl + Maj + glisser | une cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à un élément de la source d’origine |
 | Ctrl + Maj + glisser | Source | Conserve la référence à l’élément d’origine | Conserve l’élément d’origine |
-| Ctrl + Maj + glisser | Résultat | `DROPEFFECT_ LINK`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ LINK`est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
+| Ctrl + Maj + glisser | Résultat | `DROPEFFECT_ LINK` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ LINK` est retourné en tant qu’action de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
 | Couper/coller | Action | Déplacement | Déplacement |
 | Couper/coller | une cible | Élément de copies à l’emplacement cible | Élément de copies à l’emplacement cible |
 | Couper/coller | Source | Référence de suppressions à l’élément d’origine | Supprime l’élément à partir de l’emplacement d’origine |

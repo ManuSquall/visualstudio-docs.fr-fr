@@ -1,13 +1,10 @@
 ---
-title: "Comment : ajouter une zone de formulaire à un projet de complément Outlook | Documents Microsoft"
-ms.custom: 
+title: 'Comment : ajouter une zone de formulaire à un projet de complément Outlook | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.NewFormRegionWizard.Page1
 - VSTO.NewFormRegionWizard.Page3
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], adding
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2029b154ca97f2e856a9e6af8ef58b82f4438df6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: b8a02070bf76a1c4220c56afc397abb3b7fd3e1b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Comment : ajouter une zone de formulaire à un projet de complément Outlook
   Créez une zone de formulaire pour étendre un formulaire Microsoft Office Outlook standard ou personnalisé à l’aide de l’Assistant **Nouvelle zone de formulaire Outlook** . Vous pouvez créer une zone de formulaire et concevoir l’interface utilisateur dans Visual Studio, ou vous pouvez importer une zone de formulaire conçue dans Outlook et ajouter du code Visual Basic ou C#.  
@@ -67,7 +64,7 @@ ms.lasthandoff: 01/10/2018
   
 10. Cliquez sur **Suivant**.  
   
-11. Dans la page **Identifiez les classes de message qui afficheront cette zone de formulaire** , sélectionnez les classes de message Outlook standard ou tapez le nom d’une ou plusieurs classes de message personnalisées, puis cliquez sur **Terminer**. Pour plus d'informations, consultez [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+11. Dans la page **Identifiez les classes de message qui afficheront cette zone de formulaire** , sélectionnez les classes de message Outlook standard ou tapez le nom d’une ou plusieurs classes de message personnalisées, puis cliquez sur **Terminer**. Pour plus d'informations, consultez [Association d'une zone de formulaire à une classe de message Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [L’accès à une zone de formulaire au moment de l’exécution](../vsto/accessing-a-form-region-at-run-time.md)   

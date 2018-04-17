@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Création de votre première personnalisation au niveau du Document pour Excel | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création de votre première personnalisation au niveau du Document pour Excel | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 656486b691c030839fbb2f0d0ebb568d72ca36e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f1a8335c301d8eba2ec170c9b1b462d09364904f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>Procédure pas à pas : création de votre première personnalisation au niveau du document pour Excel
   Cette procédure pas à pas d'introduction vous indique comment créer une personnalisation au niveau du document pour Microsoft Office Excel. Les fonctionnalités que vous créez dans ce genre de solution sont disponibles uniquement quand un classeur spécifique est ouvert. Vous ne pouvez pas utiliser une personnalisation au niveau du document pour apporter des changements à l'échelle de l'application, par exemple afficher un nouvel onglet de ruban quand un classeur est ouvert.  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Sélectionnez **créer un nouveau document**, puis cliquez sur **OK**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crée le **FirstWorkbookCustomization** le projet, puis ajoute les fichiers suivants au projet.  
+    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée le **FirstWorkbookCustomization** le projet, puis ajoute les fichiers suivants au projet.  
   
     -   *FirstWorkbookCustomization*.xlsx - représente le classeur Excel dans le projet. Contient l'ensemble des feuilles de calcul et des graphiques.  
   
@@ -170,7 +169,7 @@ ms.lasthandoff: 01/10/2018
 -   Déploiement de personnalisations au niveau du document pour Excel : [déploiement d’une Solution Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Présentation du développement de Solutions Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Présentation du développement de Solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Solutions Excel](../vsto/excel-solutions.md)   
  [Programmation des personnalisations au niveau du Document](../vsto/programming-document-level-customizations.md)   
  [Vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md)   

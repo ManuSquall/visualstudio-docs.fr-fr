@@ -1,12 +1,10 @@
 ---
-title: "Comment : utiliser un fichier de ressources pour spécifier des noms localisés, propriétés et autorisations | Documents Microsoft"
-ms.custom: 
+title: 'Comment : utiliser un fichier de ressources pour spécifier des noms localisés, propriétés et autorisations | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], resource strings
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 144d81b2835479ee8cfdff0657814070cff813db
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 58c8d74e29144a525eb33031fb98e25051d0305f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Comment : utiliser un fichier de ressources pour spécifier des noms localisés, propriétés et autorisations
   En utilisant un fichier de ressources, vous pouvez fournir des noms localisés, définir des propriétés et appliquer des autorisations tor objets qui sont définis dans un modèle de connectivité de données métiers (BDC). Pour spécifier ces informations, vous ajoutez un **ressource de connectivité de données métiers** élément à un projet qui contient un **modèle de connectivité de données métiers** élément. Puis vous spécifiez des noms, les propriétés et les autorisations en modifiant le code XML du fichier de ressources.  

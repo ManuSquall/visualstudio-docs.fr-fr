@@ -1,27 +1,23 @@
 ---
-title: "Les commandes doivent être exécutés après l’Installation | Documents Microsoft"
-ms.custom: 
+title: Les commandes doivent être exécutés après l’Installation | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ff4b1e572fd1e0c5c500fbd756d01063665bd1f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 84f1651f311fbad7aefe40a2744c61dc7d81725c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Commandes doivent être exécutés après l’Installation
 Si vous déployez votre extension via un fichier .msi, vous devez exécuter `devenv /setup` dans le cadre de votre installation afin que Visual Studio de découvrir vos extensions.  
@@ -73,7 +69,7 @@ Si vous déployez votre extension via un fichier .msi, vous devez exécuter `dev
  Actions personnalisées doivent être créées dans la table InstallExecuteSequence à planifier leur exécution lors de l’installation. La propriété correspondante dans chaque ligne de la colonne de la Condition permet d’éviter que l’action personnalisée en cours d’exécution si cette version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] n’est pas installé sur le système.  
   
 > [!NOTE]
->  `Null`pour évaluent les propriétés `False` lorsqu’il est utilisé dans les conditions.  
+>  `Null` pour évaluent les propriétés `False` lorsqu’il est utilisé dans les conditions.  
   
  La valeur de la colonne de séquence pour chaque action personnalisée dépend d’autres valeurs de séquence dans votre package de programme d’installation de Windows. Valeurs de séquence doivent être telles que les actions personnalisées devenv.exe exécuter en tant que près possible immédiatement avant l’action standard InstallFinalize.  
   

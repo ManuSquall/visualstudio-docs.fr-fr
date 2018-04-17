@@ -1,12 +1,10 @@
 ---
-title: "Commutateurs de ligne de commande devenv pour le développement VSPackage | Documents Microsoft"
-ms.custom: 
+title: Commutateurs de ligne de commande devenv pour le développement VSPackage | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - /setup command line switch
 - /resetskippkgs command line switch
@@ -17,19 +15,19 @@ helpviewer_keywords:
 - command line, switches
 - Visual Studio SDK, command-line switches
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 18c531bb849793de184f3797067dceff4bd10199
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b6ad615048255452fc5642f8680b586d69587db5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Commutateurs de ligne de commande devenv pour le développement VSPackage
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]permet aux développeurs d’automatiser les tâches à partir de la ligne de commande lors de l’exécution de devenv.exe, le fichier qui démarre l’environnement de développement intégré (IDE) Visual Studio.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permet aux développeurs d’automatiser les tâches à partir de la ligne de commande lors de l’exécution de devenv.exe, le fichier qui démarre l’environnement de développement intégré (IDE) Visual Studio.  
   
  Voici quelques tâches :  
   
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 -   Lors du chargement de l’IDE dans des configurations spécifiques, à partir d’en dehors de l’IDE. En outre, vous pouvez personnaliser l’IDE lors du lancement.  
   
 ## <a name="guidelines-for-switches"></a>Recommandations pour les commutateurs  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]documentation décrit les commutateurs de ligne de commande devenv de niveau utilisateur. Pour plus d’informations, consultez [commutateurs de ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md). Devenv prend également en charge les commutateurs de ligne de commande supplémentaires qui sont utiles au développement VSPackage, déploiement et débogage.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] documentation décrit les commutateurs de ligne de commande devenv de niveau utilisateur. Pour plus d’informations, consultez [commutateurs de ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md). Devenv prend également en charge les commutateurs de ligne de commande supplémentaires qui sont utiles au développement VSPackage, déploiement et débogage.  
   
 |Commutateur de ligne de commande|Description|  
 |--------------------------|-----------------|  

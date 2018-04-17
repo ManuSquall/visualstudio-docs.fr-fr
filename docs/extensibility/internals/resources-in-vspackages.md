@@ -1,27 +1,25 @@
 ---
 title: Ressources dans les VSPackages | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, resources in
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ee9d108e7a7a6a5bd971b20c12858edf28ac0cf3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d252f61a9f634f4bb8435626c41c586bbe5cb839
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resources-in-vspackages"></a>Ressources dans les VSPackages
 Vous pouvez incorporer des ressources localisées dans native UI les DLL satellites, les DLL satellites managées, ou dans un VSPackage managé lui-même.  
@@ -85,7 +83,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```  
   
 ## <a name="implementation-notes"></a>Remarques d’implémentation  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]chargement des retards de VSPackages autant que possible. Une conséquence de l’incorporation d’un fichier CTO dans un VSPackage est que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit charger tous les VSPackages telle dans la mémoire pendant l’installation, c'est-à-dire lorsqu’il génère une table de commandes fusionnée. Ressources peuvent être extraites d’un VSPackage en examinant les métadonnées sans exécuter du code dans le VSPackage. Le package Visual Studio n’est pas initialisé à ce stade, par conséquent, la perte de performances est minime.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] chargement des retards de VSPackages autant que possible. Une conséquence de l’incorporation d’un fichier CTO dans un VSPackage est que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit charger tous les VSPackages telle dans la mémoire pendant l’installation, c'est-à-dire lorsqu’il génère une table de commandes fusionnée. Ressources peuvent être extraites d’un VSPackage en examinant les métadonnées sans exécuter du code dans le VSPackage. Le package Visual Studio n’est pas initialisé à ce stade, par conséquent, la perte de performances est minime.  
   
  Lorsque [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] demande une ressource à partir d’un VSPackage après l’installation, ce package étant susceptible d’être déjà chargé et initialisé, la perte de performances est minime.  
   

@@ -1,29 +1,25 @@
 ---
 title: THREADPROPERTY_FIELDS | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - THREADPROPERTY_FIELDS
 helpviewer_keywords:
 - THREADPROPERTY_FIELDS enumeration
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ff443fc655c18600ff90536d6e7ee5b8aa1ab7f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6c5733bfa889a38c1d143fdd3bfbd8f208fed13a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 Spécifie les informations sur un thread doit être récupéré.  
@@ -84,7 +80,7 @@ public enum enum_THREADPROPERTY_FIELDS {
   
  Ces indicateurs peuvent être combinées avec une opération de bits `OR`.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

@@ -1,22 +1,18 @@
 ---
 title: Activation en Place | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
-caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: d1fe2c1dfe71923897836f803e3a9712b4dec0f1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d20c88dbb93712c7ef2e6342cbb3d9cd0d38a086
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="in-place-activation"></a>Activation sur Place
 Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous devez l’implémenter en tant que contrôle ActiveX ou en tant qu’objet de données de document actif à l’aide du modèle d’activation en place.  
@@ -34,7 +30,7 @@ Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous de
 ## <a name="objects-and-interfaces-used"></a>Objets et interfaces utilisés  
  Les objets qui sont utilisés pour créer l’activation sur place sont affichés dans l’illustration suivante.  
   
- ![Dans &#45; Éditeur d’Activation sur place](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
+ ![Dans&#45;placer l’éditeur d’Activation](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
 Éditeur d’activation sur place  
   
 > [!NOTE]

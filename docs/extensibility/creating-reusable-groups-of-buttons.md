@@ -1,27 +1,25 @@
 ---
-title: "Création de groupes réutilisables de boutons | Documents Microsoft"
-ms.custom: 
+title: Création de groupes réutilisables de boutons | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - button groups, creating in VSPackages
 - VSPackages, creating reusable button groups
 - buttons, creating reusable groups
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
-caps.latest.revision: "44"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c2ac175d2fd267500f19e9f22cd46d88dcc9f314
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 97ee7cc2ec63a94036472ccce07b1dc9fa736504
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Création de groupes réutilisables des boutons
 Un groupe de commandes est une collection de commandes qui apparaissent toujours ensemble dans un menu ou une barre d’outils. N’importe quel groupe de commandes peut être réutilisée en l’assignant à menus parent différent dans la section CommandPlacements du fichier .vsct.  
@@ -46,7 +44,7 @@ Un groupe de commandes est une collection de commandes qui apparaissent toujours
     </GuidSymbol>  
     ```  
   
-     Par défaut, le modèle d’élément de commande crée un groupe nommé **MyGroup** et un bouton qui porte le nom que vous avez fourni avec une entrée IDSymbol pour chacun.  
+     Par défaut, le modèle d’élément de commande crée un groupe nommé **MyMenuGroup** et un bouton qui porte le nom que vous avez fourni avec une entrée IDSymbol pour chacun.  
   
 5.  Dans la section groupes, créez un élément de groupe qui a les mêmes attributs GUID et l’ID que ceux indiqués dans la section de symboles. Vous pouvez également utiliser un groupe existant, ou utiliser l’entrée qui est fournie par le modèle de commande, comme dans l’exemple suivant. Ce groupe s’affiche sur le **outils** menu  
   

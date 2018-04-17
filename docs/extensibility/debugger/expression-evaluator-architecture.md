@@ -1,27 +1,25 @@
 ---
-title: "Architecture d’évaluateur d’expression | Documents Microsoft"
-ms.custom: 
+title: Architecture d’évaluateur d’expression | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, expression evaluators
 - expression evaluators, architecture
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3ccfca52bb4fe2190837202342915e248dbd6167
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7fdcdfef67531af40027a2dfe8c731fe9ba5128f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator-architecture"></a>Architecture d’évaluateur d’expression
 > [!IMPORTANT]
@@ -39,7 +37,7 @@ ms.lasthandoff: 12/22/2017
  Le DE crée un objet qui implémente le [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interface, met la `IDebugParsedExpression` de l’objet dans le `IDebugExpression2` objet et retourne le `IDebugExpression2` à partir de l’objet `IDebugExpressionContext2::ParseText`.  
   
 ### <a name="evaluating-the-expression"></a>Évaluation de l’Expression  
- Visual Studio appelle [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) pour évaluer l’expression analysée. Ces deux méthodes appellent [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync` appelle la méthode immédiatement, tandis que `IDebugExpression2::EvaluateAsync` appelle la méthode via un thread d’arrière-plan) pour évaluer l’expression analysée et renvoyer un [ IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interface qui représente la valeur et le type de l’expression analysée. `IDebugParsedExpression::EvaluateSync`utilise SH, l’adresse et le classeur fourni pour convertir l’expression analysée une valeur réelle, représentée par le `IDebugProperty2` interface.  
+ Visual Studio appelle [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) pour évaluer l’expression analysée. Ces deux méthodes appellent [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync` appelle la méthode immédiatement, tandis que `IDebugExpression2::EvaluateAsync` appelle la méthode via un thread d’arrière-plan) pour évaluer l’expression analysée et renvoyer un [ IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interface qui représente la valeur et le type de l’expression analysée. `IDebugParsedExpression::EvaluateSync` utilise SH, l’adresse et le classeur fourni pour convertir l’expression analysée une valeur réelle, représentée par le `IDebugProperty2` interface.  
   
 ### <a name="for-example"></a>Par exemple  
  Après qu’un point d’arrêt est atteint dans un programme en cours d’exécution, l’utilisateur choisit afficher une variable dans le **Espion express** boîte de dialogue. Cette boîte de dialogue affiche le nom de la variable, sa valeur et son type. L’utilisateur peut modifier généralement la valeur.  

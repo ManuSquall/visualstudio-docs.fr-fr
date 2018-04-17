@@ -1,12 +1,10 @@
 ---
-title: "Procédures pas à pas personnalisation de l’interface utilisateur Office | Documents Microsoft"
-ms.custom: 
+title: Procédures pas à pas personnalisation de l’interface utilisateur Office | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], action panes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2ae30b9b157cfcd26e709d39c05af4cc0605a5a1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8ab6fe6ee93eb775846bfd84c5269f3451db9b2a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Procédures pas à pas relatives à la personnalisation de l'interface utilisateur Office
   Les procédures pas à pas suivantes montrent comment personnaliser l’interface utilisateur des applications Microsoft Office à l’aide des personnalisations au niveau du document et des compléments VSTO.  
@@ -89,7 +88,7 @@ ms.lasthandoff: 01/10/2018
  [Procédures pas à pas utilisant Excel](../vsto/walkthroughs-using-excel.md)   
  [Données dans les procédures de Solutions Office](../vsto/data-in-office-solutions-walkthroughs.md)   
  [Sécurité et procédures pas à pas de déploiement](../vsto/security-and-deployment-walkthroughs.md)   
- [Mise en route &#40; développement Office dans Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Mise en route &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Tâches courantes en matière de programmation Office](../vsto/common-tasks-in-office-programming.md)   
  [Conception et création de solutions Office](../vsto/designing-and-creating-office-solutions.md)  
   

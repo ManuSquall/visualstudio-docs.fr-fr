@@ -1,23 +1,21 @@
 ---
-title: "Intégration des littéraux XML avec l’Explorateur de schémas XML | Documents Microsoft"
-ms.custom: 
+title: Intégration des littéraux XML avec l’Explorateur de schémas XML | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 57a29998-c6e8-48ac-bdb0-5788e73f9164
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dad11fa10e7c61845ac0d4ea5663e6f2c7bc88ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: da088320639cbf9b663d4bc4eef8037d4321fc12
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Intégration de littéraux XML à l'Explorateur de schémas XML
 Visual Basic prend en charge les littéraux XML, ce qui signifie que vous pouvez incorporer des fragments XML directement dans votre code Visual Basic. Pour plus d’informations, consultez [vue d’ensemble des littéraux XML](http://go.microsoft.com/fwlink/?LinkId=140325).  

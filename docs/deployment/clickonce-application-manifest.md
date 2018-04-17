@@ -1,12 +1,10 @@
 ---
-title: "Manifeste d’Application ClickOnce | Documents Microsoft"
-ms.custom: 
+title: Manifeste d’Application ClickOnce | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,29 +13,29 @@ helpviewer_keywords:
 - application manifests [ClickOnce]
 - ClickOnce, application manifests
 ms.assetid: 29570cec-4e53-4660-a850-abc4fa150243
-caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a7df31b2d76639ec0eedc353e857fc1c0c8df39b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 7241995190c9384c1ed19cd4f9ae4cbf36f72f05
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Application Manifest
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application est un fichier XML qui décrit une application est déployée à l’aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]manifestes d’application possèdent les éléments et attributs suivants.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestes d’application possèdent les éléments et attributs suivants.  
   
 |Élément|Description|Attributs|  
 |-------------|-----------------|----------------|  
 |[\<assembly > élément](../deployment/assembly-element-clickonce-application.md)|Obligatoire. Élément de niveau supérieur.|`manifestVersion`|  
 |[\<assemblyIdentity > élément](../deployment/assemblyidentity-element-clickonce-application.md)|Obligatoire. Identifie l’assembly principal de le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[\<trustInfo > élément](../deployment/trustinfo-element-clickonce-application.md)|Identifie les exigences de sécurité de l’application.|Aucun.|  
+|[\<trustInfo > élément](../deployment/trustinfo-element-clickonce-application.md)|Identifie les exigences de sécurité de l’application.|Aucun|  
 |[\<entryPoint > élément](../deployment/entrypoint-element-clickonce-application.md)|Obligatoire. Identifie le point d’entrée de code application.|`name`|  
-|[\<dépendance > élément](../deployment/dependency-element-clickonce-application.md)|Obligatoire. Identifie chaque dépendance requise pour l’exécution de l’application. Identifie éventuellement les assemblys qui doivent être préinstallés.|Aucun.|  
+|[\<dépendance > élément](../deployment/dependency-element-clickonce-application.md)|Obligatoire. Identifie chaque dépendance requise pour l’exécution de l’application. Identifie éventuellement les assemblys qui doivent être préinstallés.|Aucun|  
 |[\<fichier > élément](../deployment/file-element-clickonce-application.md)|Facultatif. Identifie chaque fichier autre qui est utilisé par l’application. Peut inclure les données d’isolation COM (Component Object Model) associées au fichier.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
 |[\<fileAssociation > élément](../deployment/fileassociation-element-clickonce-application.md)|Facultatif. Identifie une extension de fichier à associer à l’application.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   

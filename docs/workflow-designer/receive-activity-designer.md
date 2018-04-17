@@ -1,5 +1,5 @@
 ---
-title: "Concepteur d’activités Receive | Documents Microsoft"
+title: Concepteur d’activités Receive | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8058b13dd488ddca2237056048673529c379256
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 900cf704dd29c78a1ddc8de7dce4940d8ba09fae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="receive-activity-designer"></a>Concepteur d'activités Receive
 Le **réception** ActivityDesigner est utilisé pour créer et configurer un <xref:System.ServiceModel.Activities.Receive> activité. Une activité <xref:System.ServiceModel.Activities.Receive> est une activité qui reçoit un message qui peut être un type intégré, tel que <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> ou <xref:System.Xml.Linq.XElement>, ou un contrat de données défini par l'application, un contrat de message ou une classe XML sérialisable.
@@ -47,13 +47,13 @@ Le **réception** ActivityDesigner est utilisé pour créer et configurer un <xr
 |<xref:System.ServiceModel.Activities.Receive.KnownTypes%2A>|False|Spécifie une collection de types connus pour l'opération de service implémentée par cette activité <xref:System.ServiceModel.Activities.Receive>. Cette propriété doit être utilisée conjointement à la propriété <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> affectée de la valeur <xref:System.Runtime.Serialization.DataContractSerializer>. Elle est ignorée si <xref:System.Xml.Serialization.XmlSerializer> est utilisé.<br /><br /> Cliquez sur le bouton de sélection en regard de la **KnownTypes** champ dans la grille des propriétés pour afficher la **éditeur de collections Type** boîte de dialogue avec laquelle vous pouvez ajouter des types pertinents. Pour plus d’informations sur l’utilisation de cette zone, consultez la [boîte de dialogue Éditeur de Collection de Type](../workflow-designer/type-collection-editor-dialog-box.md) rubrique.|
 |<xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A>|False|Spécifie l'objet <xref:System.Net.Security.ProtectionLevel> du message.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> signifie que l’authentification uniquement.<br />2. <xref:System.Net.Security.ProtectionLevel> signifie la signature des données pour garantir l’intégrité des données transmises.<br />3. <xref:System.Net.Security.ProtectionLevel> signifie chiffrer et signer des données pour garantir la confidentialité et l’intégrité des données transmises.|
 |<xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>|False|Spécifie le type de sérialiseur à utiliser pour l'opération de service implémentée par l'activité <xref:System.ServiceModel.Activities.Receive>. La valeur par défaut est <xref:System.Runtime.Serialization.DataContractSerializer>, qui sérialise et désérialise une instance d'un type dans un flux ou document XML utilisant un contrat de données fourni. <xref:System.Xml.Serialization.XmlSerializer> peut également être utilisé s'il est nécessaire de mieux contrôler les données XML.|
-|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|Spécifie l'en-tête Action header du message. Si elle n’est pas définie explicitement, sa valeur par défaut : https://tempuri.org/ {espace de noms de contrat de service} / {nom de contrat de service} / {nom de l’opération}.|
+|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|Spécifie l'en-tête Action header du message. Si elle n’est pas définie explicitement, sa valeur par défaut : https://tempuri.org/{service espace de noms de contrat} / {nom de contrat de service} / {nom de l’opération}.|
 
 ## <a name="see-also"></a>Voir aussi
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Send](../workflow-designer/send-activity-designer.md)
+- [Envoyer](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

@@ -1,12 +1,10 @@
 ---
-title: "CA1018 : Marquer les attributs avec AttributeUsageAttribute | Documents Microsoft"
-ms.custom: 
+title: 'CA1018 : Marquer les attributs avec AttributeUsageAttribute | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1018
 - MarkAttributesWithAttributeUsage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1018
 - MarkAttributesWithAttributeUsage
 ms.assetid: 6ab70ec0-220f-4880-af31-45067703133c
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2b94cb7c11c803e713609036db12c47e2027cb61
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3d40b97ee7637b5f742caee71b23cd9d384a1ecc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018 : Marquer les attributs avec AttributeUsageAttribute
 |||  
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
  Vous devez corriger une violation de cette règle au lieu d’exclure le message. Même si l’attribut hérite <xref:System.AttributeUsageAttribute>, l’attribut doit être présent pour simplifier la maintenance du code.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant définit deux attributs. `BadCodeMaintainerAttribute`omet le <xref:System.AttributeUsageAttribute> instruction, et `GoodCodeMaintainerAttribute` implémente correctement l’attribut qui est décrite plus haut dans cette section. Notez que la propriété `DeveloperName` est requis par la règle de conception [CA1019 : définir des accesseurs pour les arguments d’attribut](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) et est incluse par souci d’exhaustivité.  
+ L’exemple suivant définit deux attributs. `BadCodeMaintainerAttribute` omet le <xref:System.AttributeUsageAttribute> instruction, et `GoodCodeMaintainerAttribute` implémente correctement l’attribut qui est décrite plus haut dans cette section. Notez que la propriété `DeveloperName` est requis par la règle de conception [CA1019 : définir des accesseurs pour les arguments d’attribut](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) et est incluse par souci d’exhaustivité.  
   
  [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]  

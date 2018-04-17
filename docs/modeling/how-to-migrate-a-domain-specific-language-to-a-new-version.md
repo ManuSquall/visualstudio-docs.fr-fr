@@ -1,21 +1,19 @@
 ---
-title: "Comment : migrer un langage spécifique à un domaine vers une nouvelle Version | Documents Microsoft"
-ms.custom: 
+title: 'Comment : migrer un langage spécifique à un domaine vers une nouvelle Version | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7f6aa84a55e629f003a1d9b896a5c095dc2d19ac
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d65739aa02f5e5a36f317bd113dd4dc349bde957
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Comment : migrer un langage spécifique à un domaine vers une nouvelle version
 Vous pouvez migrer les projets qui définissent et utilisent le langage spécifique à un domaine à [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] à partir de la version de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] qui a été distribuée avec [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].  
@@ -24,7 +22,7 @@ Vous pouvez migrer les projets qui définissent et utilisent le langage spécifi
   
  Vous devez exécuter l’outil de migration explicitement : il n’est pas lancé automatiquement lorsque vous ouvrez une solution dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous trouverez l’outil et le document des instructions détaillées sur ce chemin d’accès :  
   
- **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **% Programme Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>Avant de la migration de vos projets de DSL  
  L’outil de migration modifie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fichiers projet (**.csproj**) et les fichiers solution (**.sln**).  
@@ -43,7 +41,7 @@ Vous pouvez migrer les projets qui définissent et utilisent le langage spécifi
   
     -   Double-cliquez sur l’outil dans l’Explorateur Windows (ou l’Explorateur de fichiers) ou de démarrer l’outil à partir d’une invite de commandes. L’outil est à cet emplacement :  
   
-         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+         **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2.  Choisissez un dossier qui contient les solutions et les projets que vous voulez convertir.  
   

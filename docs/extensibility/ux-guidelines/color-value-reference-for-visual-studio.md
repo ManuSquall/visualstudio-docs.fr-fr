@@ -1,24 +1,24 @@
 ---
-title: "Référence de la valeur de couleur pour Visual Studio | Documents Microsoft"
-description: "Référence : Hex codes pour la création de nouveaux jetons de couleur Visual Studio"
-keywords: "code hexadécimal, de couleurs, de teinte, interface utilisateur à thème, thèmes"
+title: Référence de la valeur de couleur pour Visual Studio | Documents Microsoft
+description: 'Référence : Hex codes pour la création de nouveaux jetons de couleur Visual Studio'
+keywords: code hexadécimal, de couleurs, de teinte, interface utilisateur à thème, thèmes
 author: brickgeorge
 ms.author: v-brickg
 ms.date: 08/04/2017
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
-ms.custom: 
+ms.custom: ''
 ms.reviewer: Jamie.Young
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-manager: ghogen
-ms.workload: v-brickg
-ms.openlocfilehash: 001e9db65209f8ae60cd070d5d68b9f72ef62672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-sdk
+manager: douge
+ms.workload:
+- v-brickg
+ms.openlocfilehash: 421fca16db2ed2792a539ead2ab46d325cee3a11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Référence de valeur de couleur pour Visual Studio
 Cette rubrique est une référence pour la création de nouveaux jetons de couleur. Lorsque vous créez une nouvelle interface utilisateur, vous pouvez utiliser des couleurs similaires à partir de l’interface utilisateur existante pour choisir les couleurs pour chaque thème principal et le nom de la couleur système pour cet élément de thèmes de contraste élevé. 
@@ -99,7 +99,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 | Premier plan : pointage | ![Échantillon de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Échantillon de #FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 échantillon")<br />`#FFF1F1F1` | ![Échantillon de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Échantillon de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
 | Présentation | ![Échantillon de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![Échantillon de #FF292929](../../extensibility/ux-guidelines/media/292929.png "#FF292929 échantillon")<br />`#FF292929` | ![Échantillon de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![Échantillon de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "des échantillons de contrôle")<br />`Control` |
 | Arrière-plan : pointage | ![Échantillon de #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 échantillon")<br />`#FFC9DEF5` | ![Échantillon de #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 échantillon")<br />`#FF3E3E40` | ![Échantillon de #FFFFFCF4](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 échantillon")<br />`#FFFFFCF4` | ![Mettez en surbrillance les échantillons](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
-| Bordure | Aucun. | Aucun | Aucun | Aucun. |
+| Bordure | Aucun | Aucun | Aucun | Aucun |
 | Bordure : pointage | ![Échantillon de #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 échantillon")<br />`#FFC9DEF5` | ![Échantillon de #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 échantillon")<br />`#FF3E3E40` | ![Échantillon de #FFE5C365](../../extensibility/ux-guidelines/media/E5C365.png "## FFE5C365 échantillon")<br />`#FFE5C365` | ![Cadre de fenêtre échantillon](../../extensibility/ux-guidelines/media/HCWindowFrame.png "nuance de cadre de fenêtre")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Groupe de catégories
@@ -162,9 +162,9 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 | Arrière-plan : enfoncé | ![Échantillon de #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC échantillon")<br />`#FF007ACC` | ![Échantillon de #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC échantillon")<br />`#FF007ACC` | ![Échantillon de #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC échantillon")<br />`#FF007ACC` | ![Mettez en surbrillance les échantillons](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
 | Premier plan : désactivé | ![Échantillon de #FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 échantillon")<br />`#FFA2A4A5` | ![Échantillon de #FF656565](../../extensibility/ux-guidelines/media/656565.png "#FF656565 échantillon")<br />`#FF656565` | ![Échantillon de #FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 échantillon")<br />`#FFA2A4A5` | ![Échantillon de GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText échantillon")<br />`GrayText` |
 | Arrière-plan : désactivé | ![Échantillon de #FFF5F5F5](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 échantillon")<br />`#FFF5F5F5` | ![Échantillon de #FF252526](../../extensibility/ux-guidelines/media/252526.png "#FF252526 échantillon")<br />`#FF252526` | ![Échantillon de #FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 échantillon")<br />`#FFF6F6F6` | ![Échantillon de fenêtre](../../extensibility/ux-guidelines/media/HCWindow.png "nuance de fenêtre")<br />`Window` |
-| Bordure : pointage | ![Échantillon de #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 échantillon")<br />`#FFC9DEF5` | ![Échantillon de #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 échantillon")<br />`#FF3E3E40` |![Échantillon #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "nuance #FFFEFEFE")<br /> `#FFFEFEFE` | ![Échantillon de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
-| Bordure : enfoncé | ![Échantillon de #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC échantillon")<br />`#FF007ACC` | ![Échantillon de #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC échantillon")<br />`#FF007ACC` |![Échantillon de #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC échantillon")<br /> `#FF007ACC` | ![Échantillon de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
-| Bordure : désactivé | ![Échantillon #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "nuance #FFCCCEDB")<br />`#FFCCCEDB` | ![Échantillon de #FF434346](../../extensibility/ux-guidelines/media/434346.png "#FF434346 échantillon")<br />`#FF434346` | ![Échantillon de #FFC6C6C6](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 échantillon")<br />`#FFC6C6C6` | ![Cadre de fenêtre échantillon](../../extensibility/ux-guidelines/media/HCWindowFrame.png "nuance de cadre de fenêtre")<br />`WindowFrame` |
+| Bordure : pointage | ![Échantillon de #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 échantillon")<br />`#FFC9DEF5` | ![ Échantillon de #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 échantillon")<br />`#FF3E3E40` |![Échantillon #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "nuance #FFFEFEFE")<br /> `#FFFEFEFE` | ![Échantillon de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
+| Bordure : enfoncé | ![Échantillon de #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC échantillon")<br />`#FF007ACC` | ![ Échantillon de #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC échantillon")<br />`#FF007ACC` |![Échantillon de #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC échantillon")<br /> `#FF007ACC` | ![Échantillon de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
+| Bordure : désactivé | ![Échantillon #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "nuance #FFCCCEDB")<br />`#FFCCCEDB` | ![ Échantillon de #FF434346](../../extensibility/ux-guidelines/media/434346.png "#FF434346 échantillon")<br />`#FF434346` | ![Échantillon de #FFC6C6C6](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 échantillon")<br />`#FFC6C6C6` | ![Cadre de fenêtre échantillon](../../extensibility/ux-guidelines/media/HCWindowFrame.png "nuance de cadre de fenêtre")<br />`WindowFrame` |
 
 ## <a name="properties-grid-control-elements"></a>Éléments de contrôle de grille de propriétés
 
@@ -309,7 +309,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 | Premier plan (texte) : pointage | ![Échantillon de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Échantillon #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Échantillon de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Échantillon de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
 | Arrière-plan : pointage | ![Échantillon de #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 échantillon")<br />`#FFC9DEF5` | ![Échantillon de #FF606060](../../extensibility/ux-guidelines/media/606060.png "#FF606060 échantillon")<br />`#FF606060` | ![Échantillon de #FFFDF4BF](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF échantillon")<br />`#FFFDF4BF` | ![Mettez en surbrillance les échantillons](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
 | Premier plan (texte) : enfoncé | ![Échantillon #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Échantillon #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Échantillon #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Échantillon de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
-| Arrière-plan : enfoncé | ![Échantillon de #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF échantillon")<br />`#FF3399FF` | ![Échantillon de #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF échantillon")<br />`#FF3399FF` | ![Échantillon de #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF échantillon")<br />`#FF3399FF` | ![Mettez en surbrillance les échantillons](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
+| Arrière-plan : enfoncé | ![Échantillon de #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF échantillon")<br />`#FF3399FF` | ![ Échantillon de #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF échantillon")<br />`#FF3399FF` | ![Échantillon de #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF échantillon")<br />`#FF3399FF` | ![Mettez en surbrillance les échantillons](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
 | Premier plan (texte) : sélectionné | ![Échantillon #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Échantillon #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Échantillon #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "nuance #FFFFFFFF")<br />`#FFFFFFFF` | ![Échantillon de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
 | Arrière-plan : sélectionné | ![Échantillon de #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF échantillon")<br />`#FF3399FF` | ![Échantillon de #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF échantillon")<br />`#FF3399FF` | ![Échantillon de #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF échantillon")<br />`#FF3399FF` | ![Mettez en surbrillance les échantillons](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
 
@@ -398,7 +398,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 | Présentation | ![Échantillon #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "nuance #FEFEFE")<br />`#FEFEFE` | ![échantillon de #252526](../../extensibility/ux-guidelines/media/252526.png "#252526 échantillon")<br />`#252526` | ![Échantillon #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "nuance #FEFEFE")<br />`#FEFEFE` | ![Échantillon de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "des échantillons de contrôle")<br />`Control` |
 | Bordure | ![échantillon de #717171](../../extensibility/ux-guidelines/media/717171.png "#717171 échantillon")<br />`#717171` | ![#999999 échantillon](../../extensibility/ux-guidelines/media/999999.png "#999999 échantillon")<br />`#999999` | ![échantillon de #717171](../../extensibility/ux-guidelines/media/717171.png "#717171 échantillon")<br />`#717171` | ![Échantillon de ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark échantillon")<br />`ControlDark` |
 | Texte | ![Échantillon de #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E échantillon")<br />`#1E1E1E` | ![Échantillon de #F1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 échantillon")<br />`#F1F1F1` | ![Échantillon de #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E échantillon")<br />`#1E1E1E` | ![Échantillon de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
-| Glyphe | ![échantillon](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E échantillon")<br />`#1E1E1E` | ![Échantillon de #F1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 échantillon")<br />`#F1F1F1` | ![Échantillon de #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E échantillon")<br />`#1E1E1E` | ![Échantillon de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
+| Glyphe | ![ échantillon](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E échantillon")<br />`#1E1E1E` | ![Échantillon de #F1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 échantillon")<br />`#F1F1F1` | ![Échantillon de #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E échantillon")<br />`#1E1E1E` | ![Échantillon de ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText échantillon")<br />`ControlText` |
 
 ### <a name="disabled"></a>Désactivé
 

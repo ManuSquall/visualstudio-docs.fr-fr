@@ -1,12 +1,10 @@
 ---
-title: "Extension de propriétés, de liste des tâches, de sortie et d’Options Windows | Documents Microsoft"
-ms.custom: 
+title: Extension de propriétés, de liste des tâches, de sortie et d’Options Windows | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
 - task list
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 631c336d0350fdf8a43d747eb6bda7b01e9d1eba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4db9bb9101bd06921814132856fab0335a4a2530
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Extension de propriétés, de liste des tâches, de sortie et d’Options Windows
 Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Cette procédure pas à pas montre comment intégrer des informations sur la fenêtre outil dans une nouvelle **Options** page et un nouveau paramètre sur le **propriétés** page et également comment écrire dans le **listedestâches** et **sortie** windows.  
@@ -150,7 +148,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
   
      Lorsque la fenêtre outil est disponible pour les utilisateurs, les éléments dans la zone de liste seront représentés par TodoItems. Lorsque l’utilisateur sélectionne un de ces éléments dans la zone de liste, le **propriétés** fenêtre affiche des informations sur l’élément.  
   
-     Pour rendre les données disponibles dans le **propriétés** fenêtre, convertir les données dans les propriétés publiques qui ont deux attributs spéciaux, `Description` et `Category`. `Description`est le texte qui apparaît au bas de la **propriétés** fenêtre. `Category`détermine où la propriété doit apparaître lorsque le **propriétés** fenêtre s’affiche dans le **par catégorie** vue. Dans l’image suivante, le **propriétés** fenêtre est en **par catégorie** mode, la **nom** propriété dans le **ToDo Fields** catégorie est sélectionné et la description de la **nom** propriété est affichée en bas de la fenêtre.  
+     Pour rendre les données disponibles dans le **propriétés** fenêtre, convertir les données dans les propriétés publiques qui ont deux attributs spéciaux, `Description` et `Category`. `Description` est le texte qui apparaît au bas de la **propriétés** fenêtre. `Category` détermine où la propriété doit apparaître lorsque le **propriétés** fenêtre s’affiche dans le **par catégorie** vue. Dans l’image suivante, le **propriétés** fenêtre est en **par catégorie** mode, la **nom** propriété dans le **ToDo Fields** catégorie est sélectionné et la description de la **nom** propriété est affichée en bas de la fenêtre.  
   
      ![Fenêtre Propriétés](../extensibility/media/t5properties.png "T5Properties")  
   

@@ -1,23 +1,21 @@
 ---
-title: "AppliesTo, élément (modèles Visual Studio) | Documents Microsoft"
-ms.custom: 
+title: AppliesTo, élément (modèles Visual Studio) | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 35e11a53b2b9b63a71aab2858151721cfdfd7f9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e27ee1ab0ba42a82d61e2adbe9fb4c6c81cbb48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo, élément (modèles Visual Studio)
 Spécifie une expression facultative afin de la faire correspondre à une ou plusieurs fonctions. (consultez <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Les fonctions sont exposées par types de projet via la hiérarchie en tant que propriété <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. De cette manière, le modèle peut être partagé par plusieurs types de projets ayant des capacités applicables communes.  
@@ -56,9 +54,9 @@ Spécifie une expression facultative afin de la faire correspondre à une ou plu
   
  La syntaxe d'expression valide est définie comme suit :  
   
--   L’expression de fonction, tels que « (VisualC &#124; CSharp) + (MSTest &#124; NUnit) ».  
+-   L’expression de fonctionnalité, tel que « (VisualC &#124; CSharp) + (MSTest &#124; NUnit) ».  
   
--   Le « &#124; » est l’opérateur OR.  
+-   Le «&#124;» est l’opérateur OR.  
   
 -   Les caractères « & » et « + » sont tous les deux des opérateurs AND.  
   
@@ -68,7 +66,7 @@ Spécifie une expression facultative afin de la faire correspondre à une ou plu
   
 -   Une expression null ou vide est évaluée comme une correspondance.  
   
--   Les fonctionnalités de projet peuvent être n’importe quel caractère excepté les caractères réservés : « ''  :;,+-*/\\! ~ &#124; & %$@^()={} [] <> ? \t\b\n\r  
+-   Les fonctionnalités de projet peuvent être n’importe quel caractère excepté les caractères réservés : « ''  :;,+-*/\\! ~&#124;& %$@^()={} [] <> ? \t\b\n\r  
   
 ## <a name="example"></a>Exemple  
  L'exemple suivant indique trois modèles différents. `Template1` s'applique à tous les types de projet C# ou à n'importe quel autre type de projet qui prend en charge la fonctionnalité `WindowsAppContainer`. `Template2` s'applique à tous les projets C# de n'importe quel type. `Template3` s'applique aux projets C# qui ne sont pas des projets `WindowsAppContainer`.  

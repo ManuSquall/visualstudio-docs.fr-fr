@@ -1,11 +1,9 @@
 ---
-title: "Options de la fenêtre Sortie, débogage, boîte de dialogue | Documents Microsoft"
-ms.custom: 
+title: Options de la fenêtre Sortie, débogage, boîte de dialogue | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.OutputWindow
@@ -17,16 +15,16 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: d67387c2-39e9-4790-93bc-e41bff12fb9c
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 949dd44787684cea9c725ab7fe88462c1613faf4
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bf3924811338c7dae1a10af541fa2f8ca49e5e83
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Fenêtre Sortie, Débogage, boîte de dialogue Options
 Vous pouvez spécifier les types d’informations de débogage s’affichent dans le **sortie** fenêtre. Pour afficher ces options, ouvrez le **outils** menu, cliquez sur **Options**, développez le **débogage** nœud, puis cliquez sur **fenêtre sortie**.  

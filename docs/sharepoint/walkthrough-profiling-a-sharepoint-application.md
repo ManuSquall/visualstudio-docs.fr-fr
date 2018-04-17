@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Profilage d’une Application SharePoint | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Profilage d’une Application SharePoint | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 91952e2f10f025568d356149f63bff63e0c0b1fc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f6eb4e9f78a9defaafb774551e301d6101cc40d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>Procédure pas à pas : profilage d'une application SharePoint
   Cette procédure pas à pas montre comment utiliser les outils de profilage dans Visual Studio pour optimiser les performances d'une application SharePoint. L’application d’exemple est un récepteur d’événements de fonctionnalité SharePoint qui contient une boucle inactive qui dégrade les performances du récepteur d’événements de fonctionnalité. Le profileur Visual Studio permet de rechercher et d’éliminer la partie la plus coûteuse (exécution la plus lente) du projet, également connu sous le *chemin réactif*.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
--   Éditions prises en charge de Microsoft Windows et SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Configuration requise pour développer des Solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Éditions prises en charge de Microsoft Windows et SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Configuration requise pour développer des Solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Choisissez le **Terminer** bouton. Le projet s’affiche dans **l’Explorateur de solutions**.  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a>Ajout d’une fonctionnalité et un récepteur d’événements de fonctionnalité  
+##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> Ajout d’une fonctionnalité et un récepteur d’événements de fonctionnalité  
  Ensuite, ajoutez une fonctionnalité au projet avec un récepteur d’événements pour la fonctionnalité. Ce récepteur d'événements contiendra le code à profiler.  
   
 #### <a name="to-add-a-feature-and-feature-event-receiver"></a>Pour ajouter une fonctionnalité et un récepteur d’événements de fonctionnalité  
@@ -191,7 +190,7 @@ ms.lasthandoff: 01/10/2018
   
 9. Enregistrez le projet.  
   
-##  <a name="BKMK_ConfigSharePointApp"></a>Configuration et déploiement de l’Application SharePoint  
+##  <a name="BKMK_ConfigSharePointApp"></a> Configuration et déploiement de l’Application SharePoint  
  Maintenant que le projet SharePoint est prêt, configurez-le et déployez-le sur le serveur SharePoint.  
   
 #### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Pour configurer et déployer l'application SharePoint  
@@ -214,7 +213,7 @@ ms.lasthandoff: 01/10/2018
   
      L’Assistant Active le profilage d’application sur le serveur, affiche le **Explorateur de performances** fenêtre, puis génère, déploie et exécute l’application SharePoint.  
   
-##  <a name="BKMK_RunSPApp"></a>L’Application SharePoint en cours d’exécution  
+##  <a name="BKMK_RunSPApp"></a> L’Application SharePoint en cours d’exécution  
  Activez la fonctionnalité dans SharePoint, déclenchant le code d'événement `FeatureActivation` à exécuter.  
   
 #### <a name="to-run-the-sharepoint-application"></a>Pour exécuter l'application SharePoint  
@@ -235,7 +234,7 @@ ms.lasthandoff: 01/10/2018
   
      Après avoir fermé SharePoint, le profileur crée et affiche un rapport de profilage d’échantillon et l’enregistre dans un fichier .vsp dans le **ProfileTest** dossier du projet.  
   
-##  <a name="BKMK_ViewResults"></a>Affichage et interprétation des résultats de profilage  
+##  <a name="BKMK_ViewResults"></a> Affichage et interprétation des résultats de profilage  
  Maintenant que vous avez exécuté et profilé l'application SharePoint, affichez les résultats des tests.  
   
 #### <a name="to-view-and-interpret-the-profiling-results"></a>Pour afficher et interpréter les résultats de profilage  

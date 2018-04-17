@@ -1,29 +1,25 @@
 ---
 title: IDiaSymbol::get_unmodifiedType | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_unmodifiedType method
 ms.assetid: bf914dc0-ff84-4f5d-9f75-1733b17f3be0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 552a1588b4ea1b4e5bc1cbc4d7ce87233dc74ea8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ce18023d1e4e07c19b5687de77bbdfe7887c0793
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 Récupère le type d’origine de ce symbole. Quand utiliser le [symtagenum, énumération](../../debugger/debug-interface-access/symtagenum.md) est définie sur le type.  
@@ -49,7 +45,7 @@ HRESULT get_unmodifiedType(
 ## <a name="remarks"></a>Notes  
  Le type actuel est une modification du type d’origine retourné. Le type d’origine pour un symbole peut être déterminé en tout d’abord obtenir le type du symbole, puis en interrogeant qui a retourné le type pour le type d’origine. Notez que certains symboles n’aient pas un type de modification du type d’origine.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  

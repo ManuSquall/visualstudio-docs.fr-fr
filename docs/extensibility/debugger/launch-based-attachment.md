@@ -1,26 +1,24 @@
 ---
-title: "Pièce jointe de lancement | Documents Microsoft"
-ms.custom: 
+title: Pièce jointe de lancement | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
 - debug engines, attaching to programs
 ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d05f0b8d8fd0190391da831351b65d873eac4efc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 892518cc92286f9415e39c96b6ed2afa8eb0d792
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="launch-based-attachment"></a>Pièce jointe de lancement
 Basé sur le lancement de pièce jointe à un programme est automatique. Lorsque le processus qui héberge le programme est lancé par le SDM, pièce jointe de lancement suit un chemin d’accès semblable à celle de la méthode d’attachement manuel. Pour plus d’informations, consultez [au programme](../../extensibility/debugger/attaching-to-the-program.md).  

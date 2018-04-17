@@ -1,11 +1,8 @@
 ---
-title: "Procédure pas à pas : Création d’une Application de données multicouche | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création d’une Application de données multicouche | Documents Microsoft'
+ms.custom: ''
 ms.date: 09/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
-caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 9e513fc346991912dcc91e9a56062e49760d9779
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: a22ba174310aa9fc3f7e2676c140d164911d5bf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procédure pas à pas : création d'une application de données multicouche
 *Multicouches* des applications de données sont des applications qui accèdent aux données et sont divisées en plusieurs couches logiques, ou *niveaux*. La séparation des composants de l'application en couches distinctes favorise la possibilité de tenir à jour et de monter en charge l'application. Cela est possible grâce à une application plus facile des nouvelles technologies sur chaque couche sans avoir à reconcevoir toute la solution. L'architecture multicouche inclut une couche Présentation, une couche intermédiaire et une couche Données. La couche intermédiaire inclut généralement une couche d'accès aux données, une couche logique métier et des composants partagés tels que l'authentification et la validation. La couche Données inclut une base de données relationnelle. Les applications multicouches stockent généralement les informations sensibles dans la couche d'accès aux données de la couche intermédiaire, pour la tenir hors de portée des utilisateurs finaux qui accèdent à la couche Présentation. Pour plus d’informations, consultez [vue d’ensemble des Applications de données multicouches](../data-tools/n-tier-data-applications-overview.md).  
@@ -154,7 +151,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
   
 4.  Dans le **projet DataSet** liste, sélectionnez **DataEntityTier**.  
   
-5.  Sur le **générer** menu, sélectionnez **générer la Solution**.  
+5.  Dans le menu **Générer**, sélectionnez **Générer la solution**.  
   
  Le dataset et les TableAdapters sont divisés entre les deux projets de bibliothèque de classes. Le projet qui contenait initialement l'intégralité du dataset (DataAccessTier) ne contient désormais que les TableAdapters. Le projet désigné dans la **projet DataSet** propriété (DataEntityTier) contient le dataset typé : NorthwindDataSet.Dataset.Designer.vb (ou NorthwindDataSet.Dataset.Designer.cs).  
   

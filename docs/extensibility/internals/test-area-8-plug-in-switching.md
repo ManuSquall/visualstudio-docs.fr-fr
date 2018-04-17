@@ -1,26 +1,24 @@
 ---
-title: "Test zone 8 : Basculement du plug-in | Documents Microsoft"
-ms.custom: 
+title: 'Test zone 8 : Basculement du plug-in | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
 - source control plug-ins, switching
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9f6a518d618b3a98ec85cbbe015d3b2c5fc7a710
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 534bd9338181c5b682779b62a9c118a5ccaf8cda
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-8-plug-in-switching"></a>Test zone 8 : Basculement du plug-in
 Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) est l’interface utilisateur (IU) pour modifier le plug-in du contrôle de source actuel. Cette zone de test fournit des cas de test pour le processus de sélection du plug-in à utiliser pour le contrôle de source de solution qui.  

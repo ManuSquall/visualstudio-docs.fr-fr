@@ -1,21 +1,19 @@
 ---
-title: "Instructions pour l’écriture de modèles de texte T4 | Documents Microsoft"
-ms.custom: 
+title: Instructions pour l’écriture de modèles de texte T4 | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: accf32ad313cbbfe11c2e85fdfe3101ab428c4a4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4438bacd59eb0552521024de712b6d6989af8b19
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instructions relatives à l'écriture de modèles de texte T4
 Ces instructions générales peuvent être utiles si vous générez du code de programme ou d’autres ressources de l’application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ils ne sont pas fixes règles.  
@@ -136,7 +134,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
  Écrivez un exemple de code ou du texte que vous souhaitez générer et assurez-vous qu’il est correct. Puis remplacez son extension .tt et insérez le code qui modifie le contenu en lisant le modèle de façon incrémentielle.  
   
  Envisagez d’utiliser des modèles typés.  
- Bien que vous pouvez créer un schéma XML ou de base de données pour vos modèles, il peut être utile de créer un langage spécifique à un domaine (DSL). Une DSL présente l’avantage qu’il génère une classe pour représenter chaque nœud dans le schéma et des propriétés pour représenter les attributs. Cela signifie que vous pouvez programmer le modèle d’entreprise. Exemple :  
+ Bien que vous pouvez créer un schéma XML ou de base de données pour vos modèles, il peut être utile de créer un langage spécifique à un domaine (DSL). Une DSL présente l’avantage qu’il génère une classe pour représenter chaque nœud dans le schéma et des propriétés pour représenter les attributs. Cela signifie que vous pouvez programmer le modèle d’entreprise. Par exemple :  
   
 ```  
 Team Members:  

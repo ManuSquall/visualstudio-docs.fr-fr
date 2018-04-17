@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Insertion de texte dans un Document à partir d’un volet Actions | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Insertion de texte dans un Document à partir d’un volet Actions | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 26d79087a4dbf7fc176ab3deb2c98cd5fdb5ba8a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9e562f66dd43b4adc45727c8de1457a24ddf97b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>Procédure pas à pas : Insertion de texte dans un document à partir d'un volet Actions
   Cette procédure pas à pas montre comment créer un volet actions dans un document Microsoft Office Word. Le volet actions contient deux contrôles qui collecter les entrées, puis envoient le texte au document.  
@@ -114,7 +113,7 @@ ms.lasthandoff: 01/10/2018
   
     |Propriété|Value|  
     |--------------|-----------|  
-    |**Name**|**getName**|  
+    |**Name**|**GetName**|  
     |**Taille**|**130, 20**|  
   
 5.  Ajoutez un deuxième **étiquette** le contrôle à un contrôle de volet actions et modifiez le **texte** propriété **adresse**.  
@@ -123,7 +122,7 @@ ms.lasthandoff: 01/10/2018
   
     |Propriété|Value|  
     |--------------|-----------|  
-    |**Name**|**getAddress**|  
+    |**Name**|**GetAddress**|  
     |**Accepte le retour**|**True**|  
     |**Multiline**|**True**|  
     |**Taille**|**130, 40**|  
@@ -136,7 +135,7 @@ ms.lasthandoff: 01/10/2018
     |**Text**|**Insert**|  
   
 ## <a name="adding-code-to-insert-text-into-the-document"></a>Ajout de Code pour insérer du texte dans le Document  
- Dans le volet actions, écrire du code qui insère le texte dans les zones de texte appropriées <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles dans le document. Vous pouvez utiliser la `Globals` classe pour accéder aux contrôles dans le document à partir des contrôles dans le volet actions. Pour plus d’informations, consultez [accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Dans le volet actions, écrire du code qui insère le texte dans les zones de texte appropriées <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles dans le document. Vous pouvez utiliser la `Globals` classe pour accéder aux contrôles dans le document à partir des contrôles dans le volet actions. Pour plus d'informations sur, consultez [Accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 #### <a name="to-insert-text-from-the-actions-pane-in-a-bookmark-in-the-document"></a>Pour insérer du texte dans le volet actions dans un signet dans le document  
   

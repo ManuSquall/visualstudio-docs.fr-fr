@@ -1,25 +1,23 @@
 ---
 title: Personnalisation du comportement de suppression | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords:
 - Domain-Specific Language, deletion
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a4aa237fc7021e49dc8756cbafbb5b61b62d128c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Personnalisation du comportement de la commande de suppression
 La suppression d'un élément provoque généralement aussi la suppression des éléments associés. Toutes les relations qui y sont connectées et tous les éléments enfants sont supprimés. Ce comportement est nommé *suppression de la propagation*. Vous pouvez personnaliser la propagation de la suppression, par exemple pour que des éléments associés supplémentaires soient supprimés. En écrivant du code de programme, vous pouvez faire en sorte que la propagation de la suppression dépende de l'état du modèle. Vous pouvez aussi provoquer d'autres modifications en réponse à une suppression.  
@@ -40,7 +38,7 @@ La suppression d'un élément provoque généralement aussi la suppression des �
   
 -   [Dissocier](#unmerge) -utilisez l’opération Annuler la fusion pour annuler l’opération de fusion qui joint un élément enfant à son parent.  
   
-##  <a name="default"></a>Comportement de suppression par défaut  
+##  <a name="default"></a> Comportement de suppression par défaut  
  Par défaut, les règles suivantes régissent la propagation de la suppression :  
   
 -   Si un élément est supprimé, tous les éléments incorporés sont également supprimés. Les éléments incorporés sont ceux qui sont les cibles de relations d'incorporation pour lesquelles cet élément est la source. Par exemple, s’il existe une relation d’incorporation de **Album** à **chanson**, puis lorsqu’un Album spécifique est supprimé, tous les morceaux seront également supprimés.  
@@ -53,7 +51,7 @@ La suppression d'un élément provoque généralement aussi la suppression des �
   
 -   Chaque relation qui est connectée à l'élément, au rôle source ou cible, est supprimée. La propriété de rôle de l'élément au niveau du rôle opposé ne contient plus l'élément supprimé.  
   
-##  <a name="property"></a>Définition de l’option de propager la suppression d’un rôle  
+##  <a name="property"></a> Définition de l’option de propager la suppression d’un rôle  
  Vous pouvez faire en sorte que la suppression soit propagée le long d'une relation de référence ou d'un enfant incorporé vers son parent.  
   
 #### <a name="to-set-delete-propagation"></a>Pour définir la propagation de suppression  
@@ -78,8 +76,8 @@ La suppression d'un élément provoque généralement aussi la suppression des �
 > [!NOTE]
 >  Pour ajouter du code de programme à votre définition DSL, créez un fichier de code séparé dans le **Dsl** de projet et d’écrire des définitions partielles pour augmenter les classes dans le dossier de Code généré. Pour plus d’informations, consultez [écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
-##  <a name="closure"></a>Définition d’une fermeture de suppression  
- L’opération de suppression utilise la classe *YourModel *** DeleteClosure** pour déterminer les éléments à supprimer, une sélection initiale. Elle appelle `ShouldVisitRelationship()` et `ShouldVisitRolePlayer()` de manière répétée, en parcourant le graphique des relations. Vous pouvez substituer ces méthodes. L'identité d'un lien et l'élément à l'un des rôles du lien sont fournis à la méthode ShouldVisitRolePlayer. Elle doit retourner l'une des valeurs suivantes :  
+##  <a name="closure"></a> Définition d’une fermeture de suppression  
+ L’opération de suppression utilise la classe *YourModel***DeleteClosure** pour déterminer les éléments à supprimer, une sélection initiale. Elle appelle `ShouldVisitRelationship()` et `ShouldVisitRolePlayer()` de manière répétée, en parcourant le graphique des relations. Vous pouvez substituer ces méthodes. L'identité d'un lien et l'élément à l'un des rôles du lien sont fournis à la méthode ShouldVisitRolePlayer. Elle doit retourner l'une des valeurs suivantes :  
   
 -   **VisitorFilterResult.Yes**: l’élément doit être supprimé et que l’analyseur doit continuer à essayer l’élément d’autres liens.  
   
@@ -131,7 +129,7 @@ partial class MusicLibDeleteClosure
   
  Toutefois, cette technique part du principe que la suppression affecte uniquement ses voisins dans le graphique des relations : vous ne pouvez pas appliquer cette méthode pour supprimer un élément dans une autre partie du modèle. Vous ne pouvez pas l'appliquer si vous souhaitez ajouter des éléments ou apporter d'autres modifications en réponse à une suppression.  
   
-##  <a name="ondeleting"></a>À l’aide de OnDeleting et OnDeleted  
+##  <a name="ondeleting"></a> À l’aide de OnDeleting et OnDeleted  
  Vous pouvez substituer `OnDeleting()` ou `OnDeleted()` dans une classe de domaine ou dans une relation de domaine.  
   
 1.  La méthode <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> est appelée quand un élément est sur le point d'être supprimé, mais avant que ses relations aient été déconnectées. Il est encore accessible à partir d'autres éléments et se trouve toujours dans `store.ElementDirectory`.  
@@ -198,7 +196,7 @@ partial class Artist
   
  Quand vous exécutez <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> sur un élément, OnDeleting et OnDeleted sont appelées. Ces méthodes sont toujours effectuée inline - autrement dit, immédiatement avant et après la suppression réelle. Si votre code supprime plusieurs éléments, OnDeleting et OnDeleted sont appelées en alternance sur tous ces éléments les uns après les autres.  
   
-##  <a name="rules"></a>Événements et règles de suppression  
+##  <a name="rules"></a> Événements et règles de suppression  
  En guise d'alternative aux gestionnaires OnDelete, vous pouvez définir des règles de suppression des événements de suppression.  
   
 1.  **Suppression de** et **supprimer** règles sont déclenchées uniquement dans une transaction et pas d’annulation ou de restauration par progression. Vous pouvez les configurer pour être mises en file d'attente pour s'exécuter à la fin de la transaction dans laquelle la suppression est effectuée. Les règles Deleting sont toujours exécutées avant toute règle Deleted qui se trouve dans la file d'attente.  
@@ -288,7 +286,7 @@ partial class NestedShapesSampleDocData
   
 ```  
   
-##  <a name="unmerge"></a>Annuler la fusion  
+##  <a name="unmerge"></a> Annuler la fusion  
  L’opération qui associe un élément enfant à son parent est appelée *fusion*. Elle a lieu quand un nouvel élément ou groupe d'éléments est créé à partir de la boîte à outils, déplacé à partir d'une autre partie du modèle ou copié à partir du Presse-papiers. En plus de créer une relation d'incorporation entre le parent et son nouvel enfant, l'opération de fusion peut aussi configurer des relations supplémentaires, créer des éléments auxiliaires et définir des valeurs de propriétés dans les éléments. L'opération de fusion est encapsulée dans une directive EMD (Element Merge Directive).  
   
  Un EMD encapsule les informations complémentaires *annuler la fusion* ou `MergeDisconnect` opération. Si vous avez un cluster d'éléments qui a été construit à l'aide d'une fusion, nous vous recommandons d'utiliser l'opération unmerge associée pour supprimer un élément de ce cluster si vous souhaitez conserver les éléments restants dans un état cohérent. L'opération unmerge applique en général les techniques décrites dans les sections précédentes.  

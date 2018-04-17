@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Ajout de récepteurs d’événements de fonctionnalité | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Ajout de récepteurs d’événements de fonctionnalité | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, feature event receivers
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e028eb4d95495e92718769979f43012319596960
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: cda3967d0fc95fdd8f28503f209a5f2208d07031
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Procédure pas à pas : ajout de récepteurs d’événements de fonctionnalité
   Récepteurs d’événements sont des méthodes qui s’exécutent lorsque les événements de fonctionnalité suivants se produisent dans SharePoint :  
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  La valeur du projet **Configuration de déploiement Active** propriété **aucune Activation**.  
   
-     Cette propriété empêche la fonctionnalité d’activation dans SharePoint et vous permet de déboguer les récepteurs d’événements de fonctionnalité. Pour plus d’informations, consultez [débogage de Solutions SharePoint](../sharepoint/debugging-sharepoint-solutions.md).  
+     Cette propriété empêche la fonctionnalité d’activation dans SharePoint et vous permet de déboguer les récepteurs d’événements de fonctionnalité. Pour plus d'informations, consultez [Déploiement de solutions SharePoint](../sharepoint/debugging-sharepoint-solutions.md).  
   
 2.  Choisissez le **F5** clé pour exécuter le projet et le déployer sur SharePoint.  
   

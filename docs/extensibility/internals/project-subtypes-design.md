@@ -1,27 +1,23 @@
 ---
 title: Projet sous-types conception | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a931d6509b5a8a90f371986f4ddb8955c64387d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-subtypes-design"></a>Conception des sous-types de projet
 Les sous-types de projet permettent VSPackages d’étendre des projets basés sur Microsoft Build Engine (MSBuild). L’utilisation d’agrégation vous permet de réutiliser la majeure partie du système de projet de base managées implémentée dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] toujours personnaliser le comportement pour un scénario particulier.  
@@ -63,7 +59,7 @@ Sous-type de projet à plusieurs niveaux
  Une agrégation de sous-type de projet à plusieurs niveaux se compose de trois niveaux, un projet de base, qui est agrégée par un sous-type de projet, puis davantage agrégées par un sous-type avancées du projet. La figure met l’accent sur certaines interfaces de prise en charge qui sont fournis dans le cadre de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] architecture du sous-type de projet.  
   
 ##### <a name="deployment-mechanisms"></a>Mécanismes de déploiement  
- Parmi d’autres du système de projet de base de fonctionnalités améliorées grâce à un sous-type de projet sont des mécanismes de déploiement. Un sous-type de projet détermine les mécanismes de déploiement en implémentant des interfaces de configuration (tel que <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) qui sont récupérées par l’appel QueryInterface sur <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. Dans un scénario où le sous-type de projet et le sous-type de projet avancé ajouter des implémentations de configuration différente, le projet de base appelle `QueryInterface` sur le sous-type de projet avancé `IUnknown`. Si le sous-type de projet interne contient l’implémentation de configuration demandant le projet de base, le sous-type de projet avancé délègue à l’implémentation fournie par le sous-type de projet interne. Comme un mécanisme pour rendre persistant l’état de niveau d’une agrégation vers un autre, tous les niveaux de sous-types de projet implémentent <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> pour conserver la build non lié les données XML dans les fichiers de projet. Pour plus d’informations, consultez [persistance des données dans le fichier projet MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider>est implémenté comme un mécanisme permettant de récupérer les sous-types de projet des extendeurs automation.  
+ Parmi d’autres du système de projet de base de fonctionnalités améliorées grâce à un sous-type de projet sont des mécanismes de déploiement. Un sous-type de projet détermine les mécanismes de déploiement en implémentant des interfaces de configuration (tel que <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) qui sont récupérées par l’appel QueryInterface sur <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. Dans un scénario où le sous-type de projet et le sous-type de projet avancé ajouter des implémentations de configuration différente, le projet de base appelle `QueryInterface` sur le sous-type de projet avancé `IUnknown`. Si le sous-type de projet interne contient l’implémentation de configuration demandant le projet de base, le sous-type de projet avancé délègue à l’implémentation fournie par le sous-type de projet interne. Comme un mécanisme pour rendre persistant l’état de niveau d’une agrégation vers un autre, tous les niveaux de sous-types de projet implémentent <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> pour conserver la build non lié les données XML dans les fichiers de projet. Pour plus d’informations, consultez [persistance des données dans le fichier projet MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> est implémenté comme un mécanisme permettant de récupérer les sous-types de projet des extendeurs automation.  
   
  L’illustration suivante met l’accent sur l’implémentation d’extendeur automation, l’objet configuration projet en particulier, utilisé par les sous-types de projet pour étendre le système de projet de base.  
   

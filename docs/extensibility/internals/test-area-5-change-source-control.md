@@ -1,26 +1,24 @@
 ---
-title: "Zone de test 5 : Modifier le contrôle de code Source | Documents Microsoft"
-ms.custom: 
+title: 'Zone de test 5 : Modifier le contrôle de code Source | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
 - source control plug-ins, changing source control
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ffe029ecf5839f03732a1e5162dd22da4fe0a18e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e7fd014bf520ee2f0515e284f2fb5430961cd407
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-5-change-source-control"></a>Zone de test 5 : Modifier le contrôle de Source
 Cette zone de plug-in de test de contrôle de code source couvre la modification du contrôle de code source via le **modifier le contrôle de code Source** commande.  

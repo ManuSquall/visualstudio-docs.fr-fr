@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: b02c8b6c16bf0d1ffd75ee52d34d72446a06ed25
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-transforms"></a>Transformations MSBuild
 Une transformation est une conversion de type un-à-un d’une liste d’éléments en une autre. En plus de permettre à un projet de convertir des listes d’éléments, une transformation permet à une cible d’identifier un mappage direct entre ses entrées et ses sorties. Cette rubrique explique les transformations et comment [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] les utilise pour générer des projets plus efficacement.  

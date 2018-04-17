@@ -1,12 +1,10 @@
 ---
-title: "&lt;fichier&gt; élément (déploiement ClickOnce) | Documents Microsoft"
-ms.custom: 
+title: '&lt;fichier&gt; élément (déploiement ClickOnce) | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - <file> element [ClickOnce application manifest]
 - manifests [ClickOnce], file element
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
-caps.latest.revision: "24"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9575fd84a5bd17777aaf540c72bfff62c27adf15
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;fichier&gt; élément (déploiement ClickOnce)
 Identifie tous les autres fichiers, téléchargé et utilisé par l’application.  
@@ -95,7 +93,7 @@ Identifie tous les autres fichiers, téléchargé et utilisé par l’applicatio
 |`name`|Obligatoire. Identifie le nom du fichier.|  
 |`size`|Obligatoire. Spécifie la taille, en octets, du fichier.|  
 |`group`|Facultatif si le `optional` attribut n’est pas spécifié ou la valeur `false`; obligatoire si `optional` est `true`. Le nom du groupe auquel appartient ce fichier. Le nom peut être toute valeur de chaîne Unicode choisi par le développeur et est utilisé pour télécharger les fichiers à la demande avec la <xref:System.Deployment.Application.ApplicationDeployment> classe.|  
-|`optional`|Facultatif. Spécifie si ce fichier doit télécharger lorsque l’application est d’abord exécuter, ou si le fichier doit résider uniquement sur le serveur jusqu'à ce que l’application le demande à la demande. Si `false` ou non définie, le fichier est téléchargé lors de l’application est tout d’abord exécuter ou installée. Si `true`, un `group` doit être spécifié pour le manifeste d’application valide. `optional`ne peut pas avoir la valeur true si `writeableType` est spécifié avec la valeur `applicationData`.|  
+|`optional`|Facultatif. Spécifie si ce fichier doit télécharger lorsque l’application est d’abord exécuter, ou si le fichier doit résider uniquement sur le serveur jusqu'à ce que l’application le demande à la demande. Si `false` ou non définie, le fichier est téléchargé lors de l’application est tout d’abord exécuter ou installée. Si `true`, un `group` doit être spécifié pour le manifeste d’application valide. `optional` ne peut pas avoir la valeur true si `writeableType` est spécifié avec la valeur `applicationData`.|  
 |`writeableType`|Facultatif. Spécifie que ce fichier est un fichier de données. Actuellement la seule valeur valide est `applicationData`.|  
   
 ## <a name="typelib"></a>bibliothèque de types  
@@ -160,7 +158,7 @@ Identifie tous les autres fichiers, téléchargé et utilisé par l’applicatio
 ## <a name="hash"></a>hash  
  Le `hash` élément est un enfant facultatif de la `file` élément. Le `hash` élément ne possède pas d’attributs.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]utilise un hachage algorithmique de tous les fichiers dans une application en tant qu’une vérification de sécurité pour vous assurer qu’aucun des fichiers ont été modifiées après le déploiement. Si le `hash` élément n’est pas inclus, cette vérification ne sera pas effectuée. Par conséquent, l’omission de la `hash` élément n’est pas recommandé.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] utilise un hachage algorithmique de tous les fichiers dans une application en tant qu’une vérification de sécurité pour vous assurer qu’aucun des fichiers ont été modifiées après le déploiement. Si le `hash` élément n’est pas inclus, cette vérification ne sera pas effectuée. Par conséquent, l’omission de la `hash` élément n’est pas recommandé.  
   
  Si un manifeste contienne un fichier qui n’est pas haché, ce manifeste ne peut pas être numériquement signé, car les utilisateurs ne peuvent pas vérifier le contenu d’un fichier non hachée.  
   

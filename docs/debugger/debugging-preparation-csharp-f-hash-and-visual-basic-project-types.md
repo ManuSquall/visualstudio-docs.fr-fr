@@ -1,12 +1,10 @@
 ---
-title: "Préparation du débogage : C#, F # et Visual Basic Types de projet | Documents Microsoft"
-ms.custom: 
+title: 'Préparation du débogage : C#, F # et Visual Basic Types de projet | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - debugging [C#]
 - debugger, settings by project type
 ms.assetid: 7a0535f6-1cd4-4b51-ad34-f4a45b9f1ce3
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 5ca8bb777369054d7d83e75bcdcf8055aa083660
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: aeab807a3ac4630960cb57ffc56be724e5e7a1b0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Préparation du débogage : types de projets C#, F# et Visual Basic
 Les rubriques de cette section décrivent le débogage de types de projets C#, F# et [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] créés par les modèles de projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

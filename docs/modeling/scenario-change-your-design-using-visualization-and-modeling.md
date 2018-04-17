@@ -2,8 +2,6 @@
 title: 'Scénario : Modifier votre conception à l’aide de la visualisation et de modélisation | Documents Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,20 +14,20 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 225383c3958b6af604463fe68d80481d49bd6e04
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 3d6c8de23b35531d46fd46ed04167a9c8608561d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à l’aide des outils de visualisation et de modélisation dans Visual Studio.
 Utilisez des outils tels que des cartes de code, des diagrammes de dépendance et des diagrammes de classes pour :  
 
- Pour connaître les versions de Visual Studio qui prennent en charge chaque outil, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Pour connaître les versions de Visual Studio qui prennent en charge chaque outil, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
 
 -   Clarifier les besoins des utilisateurs et les processus d’entreprise.  
 
@@ -112,7 +110,7 @@ Pour dessiner des diagrammes de dépendance, vous devez créer un projet de mod�
 -   [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)  
 
     > [!NOTE]
-    >  Certaines versions de Visual Studio prend en charge la validation de dépendance et des versions en lecture seule des cartes de code pour la visualisation et de modélisation. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+    >  Certaines versions de Visual Studio prend en charge la validation de dépendance et des versions en lecture seule des cartes de code pour la visualisation et de modélisation. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
 
 ##  <a name="UnderstandingCommunicating"></a> Présentation et communication des informations sur le système  
  Il n’y a pas d’ordre impératif pour l’utilisation des diagrammes de modélisation Visual Studio. Vous pouvez donc les utiliser comme vous le voulez, en fonction de vos besoins ou de votre approche. En règle générale, les équipes revoient leurs modèles de façon répétée et fréquente au cours d’un projet. Chaque diagramme possède ses propres atouts pour vous aider à comprendre, décrire et communiquer différents aspects du système en cours de développement.  
@@ -161,7 +159,7 @@ Pour dessiner des diagrammes de dépendance, vous devez créer un projet de mod�
 
  Par exemple, le développeur crée une carte de code. Il ajuste la portée pour se concentrer sur les zones concernées par le nouveau scénario. Ces zones sont sélectionnées et mises en surbrillance sur la carte :  
 
- ![Namespace Dependency Graph](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")  
+ ![Graphique de dépendance Namespace](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")  
 
  **Carte de code des espaces de noms**  
 

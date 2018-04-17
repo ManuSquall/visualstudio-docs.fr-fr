@@ -1,18 +1,18 @@
 ---
-title: "Comment : appeler une opération de contrat Windows Communication Foundation (hérité) | Documents Microsoft"
+title: 'Comment : appeler une opération de contrat Windows Communication Foundation (hérité) | Documents Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: a9058345-708f-4fcf-8739-2a43e5285b7a
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 522db4f46486470333393ca99f384f258898e09a
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: c97b62f7ddfbe46ac5ede4aefba53e50020f3b65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Procédure : appeler une opération de contrat Windows Communication Foundation (héritée)
 Cette rubrique décrit comment appeler un [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] contrat d’opération à l’aide du Concepteur de flux de travail Windows hérité qui cible le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

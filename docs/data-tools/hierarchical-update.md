@@ -1,11 +1,8 @@
 ---
-title: "Mise à jour hiérarchique | Documents Microsoft"
-ms.custom: 
+title: Mise à jour hiérarchique | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,17 +17,17 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b02ef945136297287d18c2b29ea2d3afab1b3683
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1b374ac0b062069e11a5fa9b15822a4146cbaebf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 *Mise à jour hiérarchique* fait référence au processus d’enregistrement des données mises à jour (à partir d’un jeu de données de deux ou plusieurs tables connexes) dans une base de données tout en conservant les règles d’intégrité référentielle. *L’intégrité référentielle* fait référence aux règles de cohérence fournies par les contraintes dans une base de données qui contrôlent le comportement d’insertion, de mise à jour et de suppression des enregistrements connexes. Par exemple, il est de l’intégrité référentielle impose la création d’un enregistrement de client avant d’autoriser les commandes doit être créé pour ce client.  Pour plus d’informations sur les relations dans les jeux de données, consultez [des relations dans les jeux de données](../data-tools/relationships-in-datasets.md)  

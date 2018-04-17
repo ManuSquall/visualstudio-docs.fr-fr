@@ -1,11 +1,9 @@
 ---
-title: "CA2002 : Ne verrouillent pas sur des objets à identité faible | Documents Microsoft"
-ms.custom: 
+title: 'CA2002 : Ne verrouillent pas sur des objets à identité faible | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/31/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
 - CA2002
@@ -14,17 +12,17 @@ helpviewer_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e27af6104b06b1f6a01ae6a98bfe88e8a0e967b1
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: d509de487bd81b4401195a8e3564c165a2d50f0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002 : Ne définissez pas un verrou sur des objets à identité faible
 

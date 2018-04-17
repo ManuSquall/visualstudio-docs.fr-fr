@@ -1,11 +1,11 @@
 ---
-title: "Bonnes pratiques pour l’utilisation des extraits de code | Microsoft Docs"
-ms.custom: 
+title: Bonnes pratiques pour l’utilisation des extraits de code | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - code snippets, best practices
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 31951001512578446c4a3ab05efe3ade99223068
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.openlocfilehash: 6d5ac19f3caa795fc309b77d0845db0d412e1ccb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Bonnes pratiques pour l’utilisation des extraits de code
 
@@ -27,13 +27,13 @@ Le code d’un extrait de code montre uniquement le moyen le plus simple de fair
 
 ## <a name="handling-exceptions"></a>Gestion des exceptions
 
-Habituellement, l’extrait de code Try...Catch empêche les interceptions et réinitialise toutes les exceptions. ce qui peut ne pas être le bon choix pour votre projet. Pour chaque exception, il existe plusieurs façons de répondre. Pour obtenir des exemples, consultez [Guide pratique pour gérer une exception à l’aide de try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) et [Try...Catch...Finally, instruction](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+Habituellement, l’extrait de code Try...Catch empêche les interceptions et réinitialise toutes les exceptions. ce qui peut ne pas être le bon choix pour votre projet. Pour chaque exception, il existe plusieurs façons de répondre. Vous trouverez des exemples sur les pages [Guide pratique pour gérer une exception à l’aide de try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) et [Instruction Try... Catch... Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Emplacements des fichiers
 
 Lorsque vous adaptez des emplacements de fichiers à votre application, vous devez réfléchir à ce qui suit :
 
-- Trouver un emplacement accessible. Les utilisateurs ne peuvent pas avoir accès au dossier Program Files de l'ordinateur, donc stocker des fichiers avec les fichiers d'application peut ne pas fonctionner.
+- Trouver un emplacement accessible. Les utilisateurs n’ayant pas forcément accès au dossier *Program Files* de l’ordinateur, il est possible que le stockage de fichiers avec les fichiers d’application ne fonctionne pas.
 
 - Trouver un emplacement sécurisé. Le stockage des fichiers dans le dossier racine (*C:\\*) n’est pas sécurisé. Pour les données d’application, nous vous recommandons le dossier *Application Data*. Pour les données utilisateur, l’application peut créer un fichier pour chaque utilisateur dans le dossier *Documents*.
 
@@ -55,7 +55,7 @@ Le niveau de sécurisation d’un extrait de code dépend de l’endroit où il 
 
 - Transmission des données aux outils de script
 
-Pour plus d’informations, consultez [Sécurisation des applications](../ide/securing-applications.md).
+Pour plus d’informations, consultez la page [Sécuriser des applications](../ide/securing-applications.md).
 
 ## <a name="downloaded-code-snippets"></a>Extraits de code téléchargés
 
@@ -74,5 +74,5 @@ Les extraits de code IntelliSense installés par Visual Studio ne constituent pa
 ## <a name="see-also"></a>Voir aussi
 
 [Extraits de code IntelliSense Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[Sécurisation des applications](../ide/securing-applications.md)  
+[Sécuriser des applications](../ide/securing-applications.md)  
 [Extraits de code](../ide/code-snippets.md)

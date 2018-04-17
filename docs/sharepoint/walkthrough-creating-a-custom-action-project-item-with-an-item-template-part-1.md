@@ -1,12 +1,10 @@
 ---
-title: "Procédure pas à pas : Création d’un élément de projet d’Action personnalisé avec un modèle d’élément, partie 1 | Documents Microsoft"
-ms.custom: 
+title: 'Procédure pas à pas : Création d’un élément de projet d’Action personnalisé avec un modèle d’élément, partie 1 | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: dae92a4c20130425fa93a413856f3d2cb5a37387
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e690d18bae72b59234f2f90cbcf903b9941df7d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Procédure pas à pas : création d'un élément de projet d'action personnalisé avec un modèle d'élément, première partie
   Vous pouvez étendre le système de projet SharePoint dans Visual Studio en créant des types d’éléments de votre propre projet. Dans cette procédure pas à pas, vous allez créer un élément de projet qui peut être ajouté à un projet SharePoint pour créer une action personnalisée sur un site SharePoint. L’action personnalisée ajoute un élément de menu pour le **Actions du Site** menu du site SharePoint.  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
  Il s’agit d’une procédure pas à pas autonome. Après avoir terminé cette procédure pas à pas, vous pouvez améliorer l’élément de projet en ajoutant un Assistant pour le modèle d’élément. Pour plus d’informations, consultez [procédure pas à pas : création d’un élément de projet d’Action personnalisé avec un modèle d’élément, partie 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
->  Vous pouvez télécharger un exemple qui contient les projets remplis, de code et d’autres fichiers pour cette procédure pas à pas à l’emplacement suivant : [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Vous pouvez télécharger un exemple qui contient les projets remplis, de code et d’autres fichiers pour cette procédure pas à pas à l’emplacement suivant : [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Prérequis  
  Vous devez disposer des composants suivants sur l’ordinateur de développement pour terminer cette procédure pas à pas :  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Dans le **nom** , entrez **ÉlémentProjetActionPersonnalisée**, puis choisissez le **OK** bouton.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le **ÉlémentProjetActionPersonnalisée** projet **l’Explorateur de solutions**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **ÉlémentProjetActionPersonnalisée** projet **l’Explorateur de solutions**.  
   
 #### <a name="to-create-the-item-template-project"></a>Pour créer le projet de modèle d’élément  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Dans le **nom** , entrez **ItemTemplate**, puis choisissez le **OK** bouton.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le **ItemTemplate** projet à la solution.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **ItemTemplate** projet à la solution.  
   
 #### <a name="to-create-the-extension-project"></a>Pour créer le projet d’extension  
   
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Dans le **nom** , entrez **ProjectItemDefinition**, puis choisissez le **OK** bouton.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le **ProjectItemDefinition** projet à la solution et ouvre le fichier de code Class1 par défaut.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **ProjectItemDefinition** projet à la solution et ouvre le fichier de code Class1 par défaut.  
   
 5.  Supprime le fichier de code Class1 du projet.  
   
@@ -459,6 +458,6 @@ ms.lasthandoff: 01/10/2018
  [L’utilisation du Service de projet SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
  [Référence du schéma de modèle Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [Éditeur d’images pour les icônes](/cpp/windows/image-editor-for-icons)   
- [Création d’une icône ou autre Image &#40; Éditeur d’images pour les icônes &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Création d’une icône ou une autre Image &#40;Éditeur d’images pour les icônes&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

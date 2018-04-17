@@ -1,12 +1,10 @@
 ---
-title: "CA2201 : Ne déclenchent pas de types d’exceptions réservés | Documents Microsoft"
-ms.custom: 
+title: 'CA2201 : Ne déclenchent pas de types d’exceptions réservés | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
 - CA2201
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2201
 - DoNotRaiseReservedExceptionTypes
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 11e00594c1cf279fb6b07791bb48f2222cc9c79b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cd95bedc273a14d9b3d455db5fd25eac1cf74aa4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201 : Ne levez pas des types d'exceptions réservés
 |||  
@@ -67,19 +65,19 @@ ms.lasthandoff: 12/22/2017
   
 |Description du paramètre|Exception|  
 |---------------------------|---------------|  
-|`null`référence|<xref:System.ArgumentNullException?displayProperty=fullName>|  
+|`null` Référence|<xref:System.ArgumentNullException?displayProperty=fullName>|  
 |En dehors de la plage autorisée des valeurs (par exemple, un index pour une collection ou liste)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|  
 |Non valide `enum` valeur|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|  
 |Contient un format qui ne répond pas aux spécifications de paramètres d’une méthode (telles que la chaîne de format `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|  
 |Non valide|<xref:System.ArgumentException?displayProperty=fullName>|  
   
- Lorsqu’une opération n’est pas valide pour l’état actuel d’un objet levez<xref:System.InvalidOperationException?displayProperty=fullName>  
+ Lorsqu’une opération n’est pas valide pour l’état actuel d’un objet levez <xref:System.InvalidOperationException?displayProperty=fullName>  
   
- Lorsqu’une opération est effectuée sur un objet qui a été supprimé levez<xref:System.ObjectDisposedException?displayProperty=fullName>  
+ Lorsqu’une opération est effectuée sur un objet qui a été supprimé levez <xref:System.ObjectDisposedException?displayProperty=fullName>  
   
- Lorsqu’une opération n’est pas pris en charge (par exemple, dans un substituée **Stream.Write** dans un flux de données ouvert en lecture) lever<xref:System.NotSupportedException?displayProperty=fullName>  
+ Lorsqu’une opération n’est pas pris en charge (par exemple, dans un substituée **Stream.Write** dans un flux de données ouvert en lecture) lever <xref:System.NotSupportedException?displayProperty=fullName>  
   
- Lorsqu’une conversion provoquerait un dépassement de capacité (comme une surcharge d’opérateur de cast explicite) levez<xref:System.OverflowException?displayProperty=fullName>  
+ Lorsqu’une conversion provoquerait un dépassement de capacité (comme une surcharge d’opérateur de cast explicite) levez <xref:System.OverflowException?displayProperty=fullName>  
   
  Pour toutes les autres situations, envisagez de créer votre propre type qui dérive de <xref:System.Exception> et levez cette exception.  
   

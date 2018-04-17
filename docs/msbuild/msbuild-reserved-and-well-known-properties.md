@@ -22,10 +22,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 9eafd9de132e2fa71ddfb4016115d84ef222db26
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild, propriétés réservées et connues
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit un jeu de propriétés prédéfinies qui stockent les informations relatives au fichier projet et aux binaires [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ces propriétés sont évaluées de la même manière que les autres propriétés [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Par exemple, pour utiliser la propriété `MSBuildProjectFile`, vous devez taper `$(MSBuildProjectFile)`.  
@@ -67,15 +67,15 @@ ms.lasthandoff: 03/28/2018
 En plus des éléments ci-dessus, les noms correspondant à des éléments de langage MSBuild ne peuvent pas être utilisés pour des propriétés, des éléments ou des métadonnées d’élément définis par l’utilisateur :
 
 * VisualStudioProject
-* Target
+* une cible
 * PropertyGroup
-* Output
+* Sortie
 * ItemGroup
 * UsingTask
 * ProjectExtensions
 * OnError
 * ImportGroup
-* Choose
+* Choisir
 * When
 * Otherwise
 

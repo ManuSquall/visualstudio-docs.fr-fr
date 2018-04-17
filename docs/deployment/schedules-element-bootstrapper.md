@@ -1,13 +1,10 @@
 ---
-title: "&lt;Planifications&gt; élément (programme d’amorçage) | Documents Microsoft"
-ms.custom: 
+title: '&lt;Planifications&gt; élément (programme d’amorçage) | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <Schedules> element [bootstrapper]
 ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: b7924515dbb661a4281397817be4b1b68487a6ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2b3cba1fcb5ac2d38b08383c8906adb2037e9651
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Planifications&gt; élément (programme d’amorçage)
 Le `Schedules` élément contient `Schedule` éléments qui définissent des heures spécifiques commandes définies par le `Command` élément doit être exécuté.  
@@ -51,7 +47,7 @@ Le `Schedules` élément contient `Schedule` éléments qui définissent des heu
 ## <a name="schedule"></a>Planification  
  Le `Schedule` élément est un enfant de le `Schedules` élément. A `Schedules` l’élément doit avoir au moins un `Schedule` élément.  
   
- `Schedule`a l’attribut suivant.  
+ `Schedule` a l’attribut suivant.  
   
 |Attribut|Description|  
 |---------------|-----------------|  

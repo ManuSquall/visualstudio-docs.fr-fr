@@ -1,12 +1,10 @@
 ---
-title: "Comment : appliquer des Styles à des plages dans les classeurs par programmation | Documents Microsoft"
-ms.custom: 
+title: 'Comment : appliquer des Styles à des plages dans les classeurs par programmation | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - workbooks, styles
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 171803f7b1e513fabfe6d053e035beacca69be09
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 14fd6ddc049214439a69fa3fabf0140256755da3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Comment : appliquer des styles à des plages dans les classeurs par programmation
   Vous pouvez appliquer des styles nommés à des zones dans les classeurs. Excel fournit différents styles prédéfinis.  

@@ -1,13 +1,10 @@
 ---
-title: "&lt;Description&gt; élément (déploiement ClickOnce) | Documents Microsoft"
-ms.custom: 
+title: '&lt;Description&gt; élément (déploiement ClickOnce) | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#description
 dev_langs:
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - <description> element [ClickOnce deployment manifest]
 ms.assetid: 18f6919e-a3ab-4942-a57d-167fabfac44e
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: f5045f9203d5413efdd6d192d2667e94d0119220
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4701bc77350d080ef9ad9c1eb56b80c344b0ff0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Description&gt; élément (déploiement ClickOnce)
 Identifie les informations de l’application utilisées pour créer la présence d’un shell et un **Ajout / Suppression de programmes** élément dans le panneau de configuration.  

@@ -1,12 +1,10 @@
 ---
-title: "Les structures et Classes d’annotation | Documents Microsoft"
-ms.custom: 
+title: Les structures et Classes d’annotation | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
 - _Field_size_bytes_full_opt_
@@ -23,16 +21,16 @@ f1_keywords:
 - _Field_size_full_
 - _Field_size_full_opt_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
-caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8aafad0da7581f1fa07f1e0134df0032655d679a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2735ae7ba6763a3006edce146df1b19cbaed2f2c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-structs-and-classes"></a>Structs et classes d’annotation
 Vous pouvez annoter les membres de struct et class à l’aide des annotations qui agissent comme des invariants, elles sont supposées avoir la valeur true à n’importe quel appel de fonction ou d’une entrée/sortie de la fonction qui implique la structure englobante comme paramètre ou une valeur de résultat.  
@@ -59,7 +57,7 @@ Vous pouvez annoter les membres de struct et class à l’aide des annotations q
   
      Un champ qui a une taille accessible en lecture et en écriture dans les éléments (ou octets) comme spécifié par `size`.  
   
-     S’applique à la déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, le nombre d’octets qui est spécifié par `size`.  Exemple :  
+     S’applique à la déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, le nombre d’octets qui est spécifié par `size`.  Par exemple :  
   
     ```cpp  
   

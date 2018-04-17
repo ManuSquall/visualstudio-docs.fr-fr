@@ -1,5 +1,5 @@
 ---
-title: "Onglet System.Activities de la boîte à outils éléments choisir | Documents Microsoft"
+title: Onglet System.Activities de la boîte à outils éléments choisir | Documents Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07da20e7d412fc9904b6af1f36406afc9c35a9e8
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2da5aafcc684c9af71aebc094d817c64f579d0ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Onglet System.Activities de la boîte de dialogue Choisir des éléments de boîte à outils
 Cet onglet de la **choisir des éléments de boîte à outils** boîte de dialogue affiche une liste de [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] activités, des modèles et des éléments à votre disposition. Pour afficher la liste, sélectionnez **choisir des éléments de boîte à outils** à partir de la **outils** menu ou en cliquant sur le **boîte à outils** et en sélectionnant **choisir des éléments de**pour afficher les **choisir des éléments de boîte à outils** boîte de dialogue, puis sélectionnez ses **System.Activities** onglet. L’emploi, la liste contient les activités de flux de travail à partir des assemblys System.Activities, System.ServiceModel.Activities et System.Activities.Core.Presentation ; Toutefois, seuls fournie par le système indiquées les activités et les activités ajoutées via d’autres assemblys affichés dans le **boîte à outils** sont cochées par défaut. Récemment ajouté les activités sont sélectionnées automatiquement et s’affichent dans le **boîte à outils** lorsque vous cliquez sur **OK** sur la boîte de dialogue. En outre, ces éléments s’affichent dans le **boîte à outils** sous une nouvelle catégorie qui correspond à l’espace de noms où se trouve l’activité / / modèle d’élément.

@@ -1,90 +1,77 @@
 ---
-title: "Démarrage rapide : Créer un projet Python dans Visual Studio à l’aide d’un modèle | Microsoft Docs"
-description: "Commencez rapidement à utiliser Python en créant un projet Visual Studio à l’aide de l’un des modèles intégrés."
-ms.custom: 
-ms.date: 03/08/2018
-ms.reviewer: 
-ms.suite: 
+title: 'Démarrage rapide : Créer un projet Python à l’aide d’un modèle | Microsoft Docs'
+description: Ce guide de démarrage rapide aide à créer un projet Visual Studio pour Python à l’aide du modèle prédéfini pour une application Flask de base.
+ms.custom: mvc
+ms.date: 03/22/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4ab0f91022240d1fcf60bd6889ea9b2ec39f2db3
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2d4d81676d9f63751455f4f51ae5993c46dd0f04
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Démarrage rapide : Créer un projet Python à partir d’un modèle dans Visual Studio
 
-Une fois que vous avez [installé la prise en charge de Python dans Visual Studio 2017](installing-python-support-in-visual-studio.md), il est facile de créer un projet Python avec une large gamme de modèles.
+Une fois que vous avez [installé la prise en charge de Python dans Visual Studio 2017](installing-python-support-in-visual-studio.md), il est facile de créer un projet Python avec une large gamme de modèles. Dans ce guide de démarrage rapide, vous allez créer une application Flask simple à l’aide d’un modèle. Le projet ainsi produit sera similaire au projet créé manuellement avec le [Guide de démarrage rapide : Créer une application web avec Flask](../ide/quickstart-python.md).
 
-1. Lancez Visual Studio.
+1. Lancez Visual Studio 2017.
 
-1. Sélectionnez **Fichier > Nouveau > Projet** (Ctrl+Maj+N). Dans la boîte de dialogue **Nouveau projet**, recherchez « Python » et sélectionnez le modèle souhaité. Notez que la sélection d’un modèle affiche une brève description de ce que le modèle fournit. (Consultez aussi [Projets Python](managing-python-projects-in-visual-studio.md#project-templates).)
+1. Dans la barre de menus supérieure, choisissez **Fichier > Nouveau > Projet...**  ; dans la boîte de dialogue **Nouveau projet**, recherchez « flask vide », sélectionnez le modèle « Projet Web Flask vide » dans la liste du milieu, donnez un nom au projet et sélectionnez **OK** :
 
-    ![Boîte de dialogue Nouveau projet de Visual Studio 2017 avec un modèle Python](media/projects-new-project-dialog2.png)
+    ![Créer un projet avec le modèle Projet Web Flask vide](media/quickstart-python-06-blank-flask-template.png)
 
-1. Pour ce démarrage rapide, sélectionnez le modèle « Application Python », donnez un nom (par exemple « MakePI ») et un emplacement au projet, puis sélectionnez **OK**.
+1. Visual Studio affiche une boîte de dialogue indiquant « Des packages externes sont nécessaires pour ce projet ». En effet, le modèle comprend un fichier `requirements.txt` qui spécifie une dépendance vis-à-vis de Flask. Visual Studio peut installer les packages automatiquement, et offre la possibilité de les installer dans un *environnement virtuel*. Sachant qu’il est recommandé d’utiliser un environnement virtuel plutôt qu’un environnement global, sélectionnez **Installer dans un environnement virtuel** pour continuer.
 
-1. Visual Studio crée le fichier projet (un fichier `.pyproj` sur le disque), ainsi que tous les autres fichiers décrits par le modèle. Avec le modèle « Application Python », le projet contient seulement un fichier vide qui a le même nom que votre projet. Le fichier est ouvert dans l’éditeur Visual Studio par défaut.
+    ![Installer Flask dans un environnement virtuel](media/quickstart-python-07-install-into-virtual-environment.png)
 
-    ![Projet résultant lors de l’utilisation du modèle Application Python](media/projects-new-structure.png)
+1. Visual Studio affiche la boîte de dialogue **Ajouter un environnement virtuel**. Acceptez la valeur par défaut et sélectionnez **Créer**, puis donnez votre consentement à toutes les demandes d’élévation.
 
-1. Ajoutez du code dans le fichier ouvert, par exemple le code ci-dessous, qui calcule et affiche 1000 décimales du nombre Pi :
+    > [!Tip]
+    > Au début d’un projet, il est vivement recommandé de créer un environnement virtuel immédiatement ; la plupart des modèles Visual Studio invitent à le faire. Les environnements virtuels préservent les exigences précises du projet au fil du temps et des ajouts et suppressions de bibliothèques. Il est alors facile de générer un fichier `requirements.txt`, qui permet de réinstaller ces dépendances sur d’autres ordinateurs de développement (comme avec le contrôle de code source) et se révèle utile pour déployer le projet sur un serveur de production. Pour plus d’informations sur les environnements virtuels et leurs avantages, consultez la section [Utiliser des environnements virtuels](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) et la page [Gérer les packages requis avec requirements.txt](../python/managing-required-packages-with-requirements-txt.md).
+
+1. Une fois que Visual Studio a créé cet environnement, parcourez **l’Explorateur de solutions** pour voir s’il existe un fichier `app.py` avec `requirements.txt`. Ouvrez `app.py` : le modèle a fourni un code similaire dans le [ Guide de démarrage rapide : Créer une application web avec Flask](../ide/quickstart-python.md), avec deux sections supplémentaires.
+
+    Au début se trouve la ligne `wsgi_app = app.wsgi_app`, qui peut être utile pour déployer une application sur un hôte web.
+
+    Ensuite vient le code de démarrage permettant de définir l’hôte et le port par le biais de variables d’environnement plutôt qu’en les codant en dur. Il est donc facile de contrôler la configuration sur les ordinateurs de développement et de production sans modifier le code :
 
     ```python
-    """ Print digits of PI; code adapted from the second, shorter solution
-    at http://www.codecodex.com/wiki/Calculate_digits_of_pi#Python
-    """
-
-    from time import perf_counter
-
-    def pi_digits_Python(digits):
-        scale = 10000
-        maxarr = int((digits / 4) * 14)
-        arrinit = 2000
-        carry = 0
-        arr = [arrinit] * (maxarr + 1)
-        output = ""
-
-        for i in range(maxarr, 1, -14):
-            total = 0
-            for j in range(i, 0, -1):
-                total = (total * j) + (scale * arr[j])
-                arr[j] = total % ((j * 2) - 1)
-                total = total / ((j * 2) - 1)
-
-            output += "%04d" % (carry + (total / scale))
-            carry = total % scale
-
-        return output
-
-    def test_py():
-        digits = 1000
-
-        start = perf_counter()
-        output = pi_digits_Python(digits)
-        elapsed = perf_counter() - start
-
-        print("PI to " + str(digits) + " digits in " + str(int(elapsed * 10000)/10000) + " seconds:")
-
-        ## replace inserts the decimal point
-        print(output.replace("3", "3.", 1))
-
-    if __name__ == "__main__":
-        test_py()
+    if __name__ == '__main__':
+        import os
+        HOST = os.environ.get('SERVER_HOST', 'localhost')
+        try:
+            PORT = int(os.environ.get('SERVER_PORT', '5555'))
+        except ValueError:
+            PORT = 5555
+        app.run(HOST, PORT)
     ```
 
-1. Exécutez le programme en appuyant sur Ctrl+F5 ou en sélectionnant **Déboguer > Démarrer sans débogage** dans le menu. Les résultats s’affichent dans une fenêtre de console.
+1. Sélectionnez **Déboguer > Démarrer sans débogage** pour exécuter l’application et ouvrir un navigateur sur `localhost:5555`.
+
+**Question : Quels sont les autres modèles Python offerts par Visual Studio ?**
+
+**Réponse** : Lorsque la charge de travail Python est installée, Visual Studio offre de nombreux modèles de projet, notamment pour les [infrastructures web Flask, Bottle et Django](../python/python-web-application-project-templates.md), Azure Cloud Services et différents scénarios de Machine Learning. Il existe même un modèle pour créer un projet à partir d’une structure de dossiers existante contenant une application Python. Vous pouvez y accéder par la boîte de dialogue **Fichier > Nouveau > Projet...**  en sélectionnant le nœud de langage **Python** et ses nœuds enfants.
+
+Visual Studio propose également un ensemble de *modèles d’élément* ou de fichier pour créer rapidement une classe Python, un package Python, un test unitaire Python, des fichiers web.config, etc. Lorsqu’un projet Python est ouvert, vous pouvez accéder aux modèles d’élément par le biais de la commande de menu **Projet > Ajouter un élément...** .
+
+Les modèles peuvent faire gagner beaucoup de temps au démarrage d’un projet ou lors de la création d’un fichier. Ils permettent également de se renseigner sur les différents types d’applications et les différentes structures de code. Prenez quelques minutes pour créer des projets et des éléments à partir des modèles pour vous familiariser avec leur contenu.
+
+**Question : Peut-on également utiliser des modèles Cookiecutter ?**
+
+**Réponse** : Oui ! En fait, Visual Studio assure une intégration directe avec Cookiecutter. Pour plus d’informations, consultez le [Guide de démarrage rapide : Créer un projet à partir d’un modèle Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

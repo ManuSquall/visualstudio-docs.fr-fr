@@ -1,12 +1,10 @@
 ---
-title: "Comment : déployer, publier et mettre à niveau des Solutions SharePoint sur un serveur distant | Documents Microsoft"
-ms.custom: 
+title: 'Comment : déployer, publier et mettre à niveau des Solutions SharePoint sur un serveur distant | Documents Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 154af4ba9ac4a83c40c5d53a6b292c212aa71503
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 108474e725c95f495bf6eec0f9a2224ca971b3d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Comment : déployer, publier et mettre à niveau des solutions SharePoint sur un serveur distant
   En plus de déployer des solutions SharePoint sur le système local, vous pouvez publier les solutions bac à sable SharePoint pour les sites distants ou des sites SharePoint locaux. Le processus de publication distant copie le fichier .wsp sur le serveur SharePoint, installe la solution, puis vous permet d’activer la solution. Vous pouvez également mettre à niveau une installation à distance d’une solution SharePoint une fois que les modifications sont apportées à ce dernier.  
@@ -32,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le bac à sable projet SharePoint que vous souhaitez publier, puis choisissez **publier**.  
   
-2.  Dans le **publier** boîte de dialogue, choisissez le **publier sur le SharePoint Site** case d’option, puis entrez une URL pour un site de publication en ligne, comme l’exemple suivant : **https:// mytestsite.SharePoint.microsoftonline.com**.  
+2.  Dans le **publier** boîte de dialogue, choisissez le **publier sur le SharePoint Site** case d’option, puis entrez une URL pour un site de publication en ligne, comme l’exemple suivant : **https://mytestsite.sharepoint.microsoftonline.com** .  
   
 3.  Choisissez le **ouvrir la page Galerie de solutions dans le navigateur après la publication** case d’option pour afficher la liste des solutions dans le **galerie de solutions** page après la publication.  
   

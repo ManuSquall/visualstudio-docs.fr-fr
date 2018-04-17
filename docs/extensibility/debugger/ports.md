@@ -1,26 +1,24 @@
 ---
 title: Ports | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - ports
 - debugging [Debugging SDK], ports
 ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6378ddc2663e4ecf239c78ede96f0c1bc12d77a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a350e0579f7e60d8a7ffc3e879d79364cfdf0317
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ports"></a>Ports
 En termes de l’architecture du débogueur, une **port**:  
@@ -33,7 +31,7 @@ En termes de l’architecture du débogueur, une **port**:
   
 -   Est représenté par un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, qui est créé en passant un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) argument [ajouter un port](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fournit un port par défaut qui gère tous les processus basé sur Windows, natifs et managés. Un port personnalisé doit être implémenté pour les connexions avec des périphériques externes qui ne sont pas basés sur Windows. Pour fournir ces ports personnalisés, un fournisseur de port personnalisé doit également être implémentée.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit un port par défaut qui gère tous les processus basé sur Windows, natifs et managés. Un port personnalisé doit être implémenté pour les connexions avec des périphériques externes qui ne sont pas basés sur Windows. Pour fournir ces ports personnalisés, un fournisseur de port personnalisé doit également être implémentée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Serveurs](../../extensibility/debugger/servers-visual-studio-sdk.md)   

@@ -1,27 +1,23 @@
 ---
-title: "Liste des événements Graphics | Documents Microsoft"
-ms.custom: 
+title: Liste des événements Graphics | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 244f7dd8c89eb1dcb15b81bcb20c0db9cb6cf617
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-event-list"></a>Liste des événements Graphics
 La liste des événements Graphics dans Visual Studio Graphics Analyzer vous permet d'explorer les événements Direct3D enregistrés durant le rendu d'un frame de votre jeu ou application.  
@@ -75,8 +71,8 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 |----------|-----------------------|  
 |(pas d'icône)|Événement général<br /> Tout événement autre qu'un événement non défini par l'utilisateur, un groupe d'événements défini par l'utilisateur ou un événement de dessin.|  
 |![L’icône d’événement de dessin](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Événement de dessin<br /> Marque un événement de dessin qui s'est produit pendant le frame capturé.|  
-|![L’utilisateur &#45; icône de marqueur d’événement défini](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Groupe d'événements définis par l'utilisateur<br /> Événements liés au groupe, tels que définis par l'application.|  
-|![L’utilisateur &#45; icône de marqueur d’événement défini](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marqueur d'événement défini par l'utilisateur<br /> Marque un emplacement spécifique, tel que défini par l'application.|  
+|![L’utilisateur&#45;défini l’icône du marqueur d’événements](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Groupe d'événements définis par l'utilisateur<br /> Événements liés au groupe, tels que définis par l'application.|  
+|![L’utilisateur&#45;défini l’icône du marqueur d’événements](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marqueur d'événement défini par l'utilisateur<br /> Marque un emplacement spécifique, tel que défini par l'application.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Marquage des événements définis par l'utilisateur dans votre application  
  Les événements définis par l'utilisateur sont propres à votre application. Vous pouvez vous en servir pour établir une corrélation entre les événements importants qui se produisent dans votre application et les événements figurant dans la liste des événements Graphics. Par exemple, vous pouvez créer des groupes d'événements définis par l'utilisateur pour organiser les événements associés (par exemple, ceux qui affichent votre interface utilisateur) sous forme de groupes ou de hiérarchies afin de faciliter la navigation dans la liste des événements. De même, vous pouvez créer des marqueurs quand certains types d'objets sont dessinés afin de trouver facilement les événements graphiques correspondants dans la liste des événements.  
@@ -106,7 +102,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
-##Ressource historique Visual Studio 2017 et supérieur contiennent le **l’historique des ressources** fenêtre.  En sélectionnant l’icône espion ![icône espion](media/gfx_watch.png) en regard d’une entrée dans le **liste des événements** fenêtre s’affiche la **l’historique des ressources** fenêtre indiqué ci-dessous :
+## Ressource historique Visual Studio 2017 et supérieur contiennent le **l’historique des ressources** fenêtre.  En sélectionnant l’icône espion ![icône espion](media/gfx_watch.png) en regard d’une entrée dans le **liste des événements** fenêtre s’affiche la **l’historique des ressources** fenêtre indiqué ci-dessous :
 
 ![Historique des ressources](media/gfx_diag_resource_history.png)
 

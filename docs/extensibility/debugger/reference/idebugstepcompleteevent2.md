@@ -1,29 +1,25 @@
 ---
 title: IDebugStepCompleteEvent2 | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugStepCompleteEvent2
 helpviewer_keywords:
 - IDebugStepCompleteEvent2 interface
 ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b077f4bcfd0f4344c29659791accee36da60c5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2e5eb11b2eb47e48ba1160bca6d1040e5865c582
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 Cette interface est envoyée par le moteur de débogage (DE) pour le Gestionnaire de session de débogage (SDM) lorsque le programme en cours de débogage termine un pas à pas détaillé, pas à pas principal ou une étape d’une ligne de code source ou d’une instruction ou d’instruction.  
@@ -43,7 +39,7 @@ IDebugStepCompleteEvent2 : IUnknown
 ## <a name="remarks"></a>Notes  
  Une fois l’étape terminée, le programme débogué est suspendu une fois de plus, et met à jour de l’IDE toutes ses fenêtres.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

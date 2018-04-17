@@ -1,12 +1,10 @@
 ---
-title: "Comment : écrire une erreur d’exécution Reporting fonction | Documents Microsoft"
-ms.custom: 
+title: 'Comment : écrire une erreur d’exécution Reporting fonction | Documents Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - run-time errors, reporting functions
 - reporting function
 ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
-caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3a123885ef43a94cbb0d0e03319b88415d9e5c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e46233eaaeae91cf5c61d9e118fef397faf63abf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Comment : écrire une fonction de création de rapports d'erreurs d'exécution
 Si vous créez une fonction personnalisée destinée à rapporter les erreurs d'exécution, elle doit avoir la même déclaration que `_CrtDbgReportW`. Elle doit retourner au débogueur une valeur égale à 1.  

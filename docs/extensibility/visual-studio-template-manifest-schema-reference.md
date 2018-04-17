@@ -1,22 +1,19 @@
 ---
-title: "Référence du schéma de manifeste de modèle Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Référence du schéma de manifeste de modèle Visual Studio | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 87f676ef30da7c667c4ce2b688520a49ed1931c3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 26f346329e4c0fa2defe6bc4ff6373226be72beb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Référence de schéma de manifeste de modèle Visual Studio
 Ce schéma décrit le format des fichiers de manifeste (.vstman) de modèle Visual Studio générés pour les modèles de projet ou un élément de Visual Studio et décrit l’emplacement et autres informations pertinentes relatives au modèle.  

@@ -1,27 +1,25 @@
 ---
-title: "Ajout d’un contrôleur de Menu à une barre d’outils | Documents Microsoft"
-ms.custom: 
+title: Ajout d’un contrôleur de Menu à une barre d’outils | Documents Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding menu controllers
 - menus, adding menu controllers to toolbars
 - menu controllers, adding to toolbars
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
-caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 720aeb5670127d64e7b3fc9b016a032c0526c083
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 63db98df400333216f5e753f8b6f82a61e785cd5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Ajout d’un contrôleur de Menu à une barre d’outils
 Cette procédure pas à pas repose sur le [Ajout d’une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md) procédure pas à pas et montre comment ajouter un contrôleur de menu à la barre d’outils de la fenêtre outil. Les étapes indiquées ici peuvent également être appliqués à la barre d’outils qui est créé dans le [Ajout d’une barre d’outils](../extensibility/adding-a-toolbar.md) procédure pas à pas.  
