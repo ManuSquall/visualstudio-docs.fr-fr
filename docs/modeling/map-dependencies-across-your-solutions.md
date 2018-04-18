@@ -184,7 +184,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
 -   [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md)  
 
--   [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
+-   [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
 
 -   Pour identifier les problèmes éventuels dans votre code, [exécutez un analyseur](../modeling/find-potential-problems-using-code-map-analyzers.md).  
 
@@ -328,7 +328,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
 -   Désactivez l’ajout automatique d’éléments parents à l’aide du bouton **Inclure les parents** situé dans la barre d’outils de la carte de code.  
 
--   Modifiez directement le fichier de la carte de code pour supprimer les nœuds et les liens dont vous n’avez pas besoin. La modification de la carte n’affecte pas le code sous-jacent. Consultez [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+-   Modifiez directement le fichier de la carte de code pour supprimer les nœuds et les liens dont vous n’avez pas besoin. La modification de la carte n’affecte pas le code sous-jacent. Consultez [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
 
  ![Boutons Skip Build et inclure les Parents](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
 
@@ -384,4 +384,4 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
 -   [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md)  
 
--   [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+-   [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
