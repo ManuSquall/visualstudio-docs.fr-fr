@@ -4,11 +4,11 @@ hide_bc: true
 title: Documentation Visual Studio | Documents Microsoft
 description: Apprenez à utiliser Visual Studio 2017 pour développer des applications, des services et des outils dans le langage de votre choix pour vos plateformes et vos appareils.
 ms.topic: hub-page
-ms.openlocfilehash: dfd72526fc24ae3b0a33014b8b8ac23e350fb6cf
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4dcf3ff02db54d1a0d6b2e45d3418caf1d908783
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -265,6 +265,25 @@ ms.lasthandoff: 03/08/2018
                                                 <div class="cardText">
                                                     <h3>Données</h3>
                                                     <p>Créez des applications de données qui se connectent à n’importe quel service ou base de données, localement ou dans le cloud. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=872032">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="./images/live-share.svg" src="./images/live-share.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Collaborer</h3>
+                                                    <p>Partagez, modifiez et déboguez votre code dans un environnement de collaboration en temps réel. </p>
                                                 </div>
                                             </div>
                                         </div>
