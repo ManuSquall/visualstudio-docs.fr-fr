@@ -1,28 +1,28 @@
 ---
-title: "Abonnements Visual Studio - avantages de l’abonné"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 2/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the benefits included in your Visual Studio subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b42d4f826d6bc589ecf16db2d1d4eddb98d81ff9
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Abonnements Visual Studio - avantages de l’abonné
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 02/12/2018
+ms.topic: Get-Started-Article
+description: En savoir plus sur les avantages inclus dans votre abonnement Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="benefits-included-in-your-visual-studio-subscription"></a>Avantages inclus à votre abonnement Visual Studio
+# <a name="benefits-included-in-your-visual-studio-subscription"></a>Avantages inclus dans votre abonnement Visual Studio
 
 Les abonnements Visual Studio offrent l’ensemble le plus complet de ressources vous permettant de créer, déployer et gérer de formidables applications sur vos plateformes et appareils préférés, notamment Windows, iOS, Android et Linux.  Les avantages spécifiques varient selon le type d’abonnement que vous avez.  Pour fournir une valeur maximale aux abonnés, les avantages proposés sont modifiés régulièrement lors des ajustements pour se concentrer sur les technologies les plus récents et les plus utiles, les supports de formation et les avantages de partenaire disponibles. 
 
 Les avantages sont répartis en trois catégories :
 
 ## <a name="tools"></a>Outils
-La catégorie Outils permet d’accéder à un large éventail d’avantages, y compris les avantages phares tels que [IDE Visual Studio](/vs-ide-benefit), [Visual Studio Team Services](/vs-vsts) et [Azure](/vs-azure).  Selon votre niveau d’abonnement, vous pourrez également consulter des comptes de développeur Windows et Office 365, Visual Studio App Center et les avantages de partenaires, tels que WhiteSource Bolt et ModernRequirements.
+La catégorie Outils permet d’accéder à un large éventail d’avantages, y compris les avantages phares tels que [IDE Visual Studio](/vs-ide-benefit/), [Visual Studio Team Services](/vs-vsts/) et [Azure](/vs-azure/).  Selon votre niveau d’abonnement, vous pourrez également consulter des comptes de développeur Windows et Office 365, Visual Studio App Center et les avantages de partenaires, tels que WhiteSource Bolt et ModernRequirements.
 
 ## <a name="professional-development"></a>Développement professionnel
 Pour améliorer vos compétences et vous tenir informé des dernières technologies en permanence, nous fournissons l’accès à certaines des meilleures formations en ligne disponibles des sociétés majeures du secteur. Voici quelques exemples de contenu excellent disponible :

@@ -1,44 +1,49 @@
 ---
-Title: Assign licenses to Visual Studio Subscriptions | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can assign licenses to subscribers
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b82f02b968398d0a8d1ce4872ce00e8447a2ae4d
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Attribuer des licences à des abonnements Visual Studio | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Découvrez comment les administrateurs peuvent attribuer des licences aux abonnés
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: b035f748f6d99595bc2570b54a4d6413cab72af5
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Attribution de licences dans le portail d’administration des abonnements Visual Studio
 
+En tant qu’administrateur des abonnements Visual Studio, vous pouvez utiliser le portail d’administration des abonnements Visual Studio pour attribuer individuellement des abonnements à des utilisateurs.  
+Vous pouvez les attribuer individuellement un à la fois ou utiliser la fonctionnalité « Ajouter en bloc » pour charger rapidement et facilement des listes d’abonnés avec leurs informations d’abonnement. 
+
 ## <a name="assigning-a-single-user"></a>Attribution à un utilisateur unique
 Si vous avez des licences disponibles pour les abonnements Visual Studio, vous pouvez les attribuer à de nouveaux utilisateurs pour leur donner accès aux avantages inclus dans leur abonnement. 
-1.  Pour attribuer une licence à un seul abonné Visual Studio, cliquez sur **Ajouter** en haut du tableau.
+1.  Connectez-vous au [portail d’administration](https://manage.visualstudio.com)
+
+2.  Pour attribuer une licence à un seul abonné Visual Studio, cliquez sur **Ajouter** en haut du tableau.
 
     ![Ajouter un abonné](_img\assign-license-add\assign-license-add.png)
 
-2.  Dans les champs de formulaire, entrez les informations relatives au nouvel abonné. Si votre organisation utilise Azure Active Directory, vous pouvez utiliser ce champ pour rechercher des utilisateurs dans votre annuaire actuel et sélectionner l’utilisateur approprié dans les résultats de la recherche. Une fois que vous avez sélectionné cet utilisateur, son nom, son adresse e-mail de connexion et son adresse e-mail de notification sont automatiquement renseignés, comme dans l’illustration ci-dessous. 
+3.  Dans les champs de formulaire, entrez les informations relatives au nouvel abonné. Si votre organisation utilise Azure Active Directory, vous pouvez utiliser ce champ pour rechercher des utilisateurs dans votre annuaire actuel et sélectionner l’utilisateur approprié dans les résultats de la recherche. Une fois que vous avez sélectionné cet utilisateur, son nom, son adresse e-mail de connexion et son adresse e-mail de notification sont automatiquement renseignés, comme dans l’illustration ci-dessous. 
 
-Si votre organisation utilise une adresse e-mail pour la réception des e-mails différente de l’adresse e-mail de connexion, vous pouvez l’entrer ici. Sélectionnez le lien hypertexte vous demandant si vos e-mails de notification et de connexion sont différents. 
+    Si votre organisation utilise une adresse e-mail pour la réception des e-mails différente de l’adresse e-mail de connexion, vous pouvez l’entrer ici. Sélectionnez le lien hypertexte vous demandant si vos e-mails de notification et de connexion sont différents. 
 
-Si vous souhaitez autoriser cet abonné à accéder aux téléchargements de logiciels quand il se connecte au [portail des abonnements Visual Studio](https:/my.visualstudio.com?wt.mc_id=o~msft~docs), laissez la case Téléchargements cochée. Si vous décochez cette case, l’utilisateur n’a pas accès aux téléchargements de logiciels, mais il garde l’accès à tous les autres avantages inclus dans son abonnement. Quand vous avez terminé, cliquez sur **Ajouter**.
+    Si vous souhaitez autoriser cet abonné à accéder aux téléchargements de logiciels quand il se connecte au [portail des abonnements Visual Studio](https:/my.visualstudio.com?wt.mc_id=o~msft~docs), laissez la case Téléchargements cochée. Si vous décochez cette case, l’utilisateur n’a pas accès aux téléchargements de logiciels, mais il garde l’accès à tous les autres avantages inclus dans son abonnement. Quand vous avez terminé, cliquez sur **Ajouter**.
 
-   ![Entrez les informations de l’abonné](_img\assign-license-add\add-subscriber-1.png)
+    ![Entrez les informations de l’abonné](_img\assign-license-add\add-subscriber-1.png)
 
-   ![Entrez les informations de l’abonné](_img\assign-license-add\add-subscriber-2.png)
+    ![Entrez les informations de l’abonné](_img\assign-license-add\add-subscriber-2.png)
 
-3.  Après l’ajout de l’abonné, un e-mail d’attribution, contenant des instructions supplémentaires, est automatiquement envoyé au nouvel abonné. Vous pouvez renvoyer l’e-mail d’attribution à tout moment en sélectionnant l’abonné et en cliquant sur le bouton **Renvoyer** dans le menu supérieur.
+4.  Après l’ajout de l’abonné, un e-mail d’attribution, contenant des instructions supplémentaires, est automatiquement envoyé au nouvel abonné. Vous pouvez renvoyer l’e-mail d’attribution à tout moment en sélectionnant l’abonné et en cliquant sur le bouton **Renvoyer** dans le menu supérieur.
 
     ![Abonné ajouté](_img\assign-license-add\add-subscriber-complete.png)
 
 ## <a name="bulk-assignments"></a>Attributions en bloc
-1.  Pour ajouter plusieurs abonnés à la fois, accédez à l’onglet Abonnés. Dans le ruban du haut, cliquez sur **Ajouter en bloc**. 
+1.  Pour ajouter plusieurs abonnés à la fois, accédez à l’onglet **Abonnés**. Dans le ruban du haut, cliquez sur **Ajouter en bloc**. 
 
     ![Ajouter en bloc](_img\assign-license-add\bulk-assign-add.png)
 
@@ -52,7 +57,7 @@ Si vous souhaitez autoriser cet abonné à accéder aux téléchargements de log
     - Supprimez les espaces avant et après dans les champs de formulaire tels que les noms d’utilisateur.
     - Assurez-vous que les prénoms ou noms d’utilisateur en deux parties ne contiennent pas d’espace supplémentaire (par exemple, le prénom « Maggie May » ne doit pas être entré sous la forme « Maggie  May », car le système ne supprime pas l’espace supplémentaire).
 
-   ![Modèle d’ajout en bloc](_img\assign-license-add\bulk-template.png)
+    ![Modèle d’ajout en bloc](_img\assign-license-add\bulk-template.png)
 
 4.  Revenez au portail d’administration des abonnements Visual Studio et, dans la boîte de dialogue permettant de charger plusieurs abonnés, cliquez sur **Parcourir**. Accédez au fichier Excel que vous avez enregistré, puis cliquez sur **OK**. Vous pouvez observer la progression du chargement à l’écran. 
 

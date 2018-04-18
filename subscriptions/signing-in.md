@@ -1,19 +1,19 @@
 ---
 title: Connexion aux abonnements Visual Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/11/2017
-Ms.topic: Get-Started-Article
-Description: How to Sign In to Your Visual Studio Subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: bb6313e06525967f7ac8dd0aa6dd74bb4417ffef
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/11/2017
+ms.topic: Get-Started-Article
+description: Comment se connecter à votre abonnement Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: a6a29a67882e36a23f5c61757b80cf9558b93be1
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="signing-in-to-your-visual-studio-subscription"></a>Connexion à votre abonnement Visual Studio
 
@@ -25,7 +25,7 @@ Trois différentes méthodes de connexion sont traitées dans cet article :
 3. [Utilisation d’un compte Microsoft pour la connexion à un compte professionnel ou scolaire](#using-your-microsoft-account-to-sign-in-to-a-work-or-school-account)
 
 ## <a name="signing-in-with-your-microsoft-account-msa"></a>Connexion avec votre compte Microsoft (MSA)
-1. Consultez le site [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Consultez [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Entrez l’adresse e-mail que vous avez fournie lorsque vous avez configuré ou acheté votre abonnement Visual Studio.
     
    > [!NOTE] 
@@ -39,7 +39,7 @@ Trois différentes méthodes de connexion sont traitées dans cet article :
 Lorsque vous accédez à votre abonnement Visual Studio Dev Essentials pour la première fois, une boîte de dialogue de bienvenue s’affiche.  Cliquez sur **Confirmer** pour accepter les conditions générales du programme.
 
 ## <a name="signing-in-with-your-work-or-school-account"></a>Connexion avec votre compte professionnel ou scolaire 
-1. Consultez le site [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Consultez [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Entrez l’adresse e-mail qui est associée au nouvel abonnement Visual Studio.
     
    > [!NOTE]
@@ -57,7 +57,7 @@ Vous pouvez également voir votre abonnement actuellement sélectionné dans le 
 
 ## <a name="using-your-microsoft-account-to-sign-in-to-a-work-or-school-account"></a>Utilisation de votre compte Microsoft pour la connexion à un compte professionnel ou scolaire
 
-1. Accédez au site [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Accédez à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Entrez l’adresse e-mail qui est associée au nouvel abonnement Visual Studio attribué 
 
    > [!NOTE]

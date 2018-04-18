@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4a6a16f2e67c2e50b46109142d95db4ba07fcfaf
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f99b1bef93fcbe968f23f0bb63653d825235385e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 Visual Studio vous permet de créer facilement un projet Node.js et de tirer parti d’IntelliSense et d’autres fonctionnalités intégrées prenant en charge Node.js. Dans ce tutoriel pour Visual Studio, vous créez un projet d’application web Node.js à partir d’un modèle Visual Studio. Vous créez ensuite une application simple avec React. 
@@ -349,11 +349,20 @@ Dans la section précédente, vous avez attaché le débogueur au code Node.js c
 
     Vous savez que le débogueur est correctement attaché quand l’Explorateur DOM et la console JavaScript s’ouvrent dans Visual Studio. Ces outils de débogage sont similaires aux outils de développement Chrome et aux outils F12 pour Edge.
 
+    > [!NOTE]
+    > Si le débogueur ne s’attache pas et que vous voyez le message « Impossible de s’attacher au processus. Une opération n’est pas légale dans l’état actuel. », utilisez le Gestionnaire des tâches pour fermer toutes les instances de Chrome avant de démarrer Chrome en mode débogage. Les extensions Chrome peuvent être en cours d’exécution et empêcher le mode débogage complet.
+
 1. Dans la mesure où le code avec le point d’arrêt s’est déjà exécuté, actualisez la page de votre navigateur pour atteindre le point d’arrêt.
 
     Pendant que l’exécution du débogueur est en pause, vous pouvez examiner l’état de votre application en pointant sur les variables et en utilisant les fenêtres du débogueur. Vous pouvez faire avancer le débogueur en exécutant pas à pas le code (**F5**, **F10** et **F11**).
 
-    Vous pouvez éventuellement atteindre le point d’arrêt dans app-bundle.js ou son emplacement mappé dans app.tsx, en fonction de votre environnement et de l’état du navigateur. De toute façon, vous pouvez exécuter pas à pas le code et examiner les variables. (Si vous devez arrêter l’exécution du code dans un fichier *.tsx* et si vous n’y parvenez pas, essayez d’utiliser l’instruction `debugger;`, ou définissez des points d’arrêt dans les outils de développement Chrome.)
+    Vous pouvez éventuellement atteindre le point d’arrêt dans *app-bundle.js* ou son emplacement mappé dans *app.tsx*, en fonction de votre environnement et de l’état du navigateur. De toute façon, vous pouvez exécuter pas à pas le code et examiner les variables.
+
+    * Si vous devez arrêter l’exécution du code dans *app.tsx* et que vous n’y parvenez pas, utilisez **Attacher au processus** comme décrit dans la procédure précédente pour attacher le débogueur. Ouvrez ensuite le fichier *app.tsx* généré dynamiquement à partir de l’Explorateur de solutions en ouvrant **Documents de script** > **app.tsx**, définissez un point d’arrêt et actualisez la page dans votre navigateur.
+
+        Sinon, si vous devez arrêter l’exécution du code dans *app.tsx* et que vous n’y parvenez pas, essayez d’utiliser l’instruction `debugger;` dans *app.tsx*, ou définissez des points d’arrêt dans les outils de développement Chrome à la place.
+
+    * Si vous devez arrêter l’exécution du code dans *app-bundle.js* et que vous n’y parvenez pas, supprimez le fichier de mappage de source, *app-bundle.js.map*.
 
     > [!TIP]
     > Une fois que vous avez effectué l’attachement au processus la première fois en suivant ces étapes, vous pouvez rapidement effectuer un rattachement au même processus dans Visual Studio 2017 en choisissant **Déboguer** > **Rattacher au processus**.
