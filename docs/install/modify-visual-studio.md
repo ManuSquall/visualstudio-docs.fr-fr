@@ -2,7 +2,7 @@
 title: Modifier Visual Studio 2017 │ Microsoft Docs
 description: Découvrez comment modifier Visual Studio, étape par étape.
 ms.custom: H1Hack27Feb2017
-ms.date: 11/08/2017
+ms.date: 04/06/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 597da9be2ce4c6d22beaa6fc5fc419ef785ece94
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 3145b1fef86b6d9540e105557bdf40d291049a52
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modifier Visual Studio 2017 en ajoutant ou supprimant des charges de travail et des composants
-Non seulement nous avons simplifié la personnalisation de Visual Studio en fonction des tâches que vous avez à accomplir, mais nous en avons aussi simplifié la personnalisation. Vous n’avez plus besoin d’utiliser le Panneau de configuration ; à la place, démarrez le nouveau Visual Studio Installer et apportez les modifications souhaitées.
+Non seulement nous avons simplifié la personnalisation de Visual Studio en fonction des tâches que vous avez à accomplir, mais nous en avons aussi simplifié la personnalisation. Pour ce faire, démarrez le nouveau programme d’installation de Visual Studio et apportez les modifications souhaitées.
 
 Voici comment procéder.  
 
@@ -39,36 +39,40 @@ Voici comment procéder.
 
 1.  Recherchez le programme d’installation de Visual Studio sur votre ordinateur.  
 
-     Par exemple, sur un ordinateur exécutant la Mise à jour anniversaire Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** pour l’afficher comme **Visual Studio Installer**.  
+     Par exemple, sur un ordinateur exécutant Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** où il est répertorié comme **Visual Studio Installer**.  
 
      ![Programme d’installation de Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Localiser le programme d’installation de Microsoft Visual Studio")
 
      >[!NOTE]
      Sur certains ordinateurs, le programme d’installation de Visual Studio peut être répertorié sous la lettre **« M »** comme **Microsoft, programme d’installation de Visual Studio**.<br/><br/> Ou bien, vous pouvez trouver Visual Studio Installer à l’emplacement suivant :`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2.  Cliquez ou appuyez pour démarrer le programme d’installation, puis cliquez sur **Modifier**.  
+2.  Cliquez ou appuyez pour démarrer le programme d’installation, puis choisissez **Modifier**.  
 
-     ![Lancer ou modifier Visual Studio](media/vs2017-modify.PNG "Modifier Visual Studio 2017")  
+     ![Lancer ou modifier Visual Studio](media/modify-visual-studio.png "Modifier Visual Studio 2017")
+
+     Si vous disposez d’une mise à jour en attente, le bouton Modifier est à un emplacement différent. Cliquez sur **Plus**, puis choisissez **Modifier**.   
+
+     ![Mettre à jour ou modifier Visual Studio](media/modify-or-update-visual-studio.png "Mettre à jour ou modifier Visual Studio 2017")
 
 3.  Dans l’écran **Charges de travail**, sélectionnez ou désélectionnez les charges de travail que vous voulez installer ou désinstaller.  
 
     ![Boîte de dialogue d’installation de Visual Studio 2017](media/vs2017-modify-workloads.PNG "Choisir une charge de travail dans Visual Studio 2017")
 
-4. Cliquez ou appuyez à nouveau sur **Modifier**.  
+4. Choisissez à nouveau **Modifier**.  
 
-5. Une fois les nouveaux composants et charges de travail installés, cliquez sur **Lancer**.
+5. Une fois les nouveaux composants et charges de travail installés, choisissez **Lancer**.
 
 ## <a name="modify-individual-components"></a>Modifier des composants individuels
 
 Si vous ne voulez pas utiliser la fonctionnalité pratique Charges de travail pour personnaliser votre installation de Visual Studio, choisissez l’option **Composants individuels** dans le programme d’installation de Visual Studio, sélectionnez les composants que vous voulez, puis suivez les invites.  
 
 ## <a name="get-support"></a>Obtenir de l’aide
-Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md) pour obtenir de l’aide. Vous pouvez également nous contacter pour obtenir de l’aide sur l’installation par [conversation en direct](https://www.visualstudio.com/vs/support/#talktous) (en anglais uniquement) ; pour plus d’informations, consultez la [page Visual Studio « Contactez-nous »](https://www.visualstudio.com/vs/support/#talktous).
 
 Voici d’autres options de support :
 * Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
 * Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Vous pouvez suivre les problèmes au niveau d’un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) et y poser des questions et obtenir des réponses.
+* Vous pouvez suivre les problèmes au niveau d’un produit et obtenir des réponses dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
 * Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio)  (Cette option nécessite un compte [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Voir aussi

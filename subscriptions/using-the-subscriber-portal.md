@@ -1,23 +1,23 @@
 ---
-title: Utilisation du portail des abonnements - http://my.visualstudio.com | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/4/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the full range of benefits available to you on the Visual Studio subscriptions portal
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2c2939ff8b4d20f2db7dd736c6a0dee28785645c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Utilisation du portail des abonnés - http://my.visualstudio.com | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/04/2018
+ms.topic: Get-Started-Article
+description: Découvrez plus d’informations sur la gamme complète des avantages disponibles sur le portail des abonnements Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cb6e33e442a5b4d63f4c1950df382da9a439643f
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Utilisation du portail des abonnements - my.<span></span>visualstudio<span></span>.com
+# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Utilisation du portail des abonnés- my.<span></span>visualstudio<span></span>.com
 
-Le portail des abonnements Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), est une ressource tout-en-un permettant de tirer le meilleur parti de tous les avantages offerts par votre abonnement Visual Studio. 
+Le portail Abonnements Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), est une ressource tout-en-un qui vous permet de bénéficier de la gamme complète des avantages offerts par votre abonnement Visual Studio. 
 
 Pour utiliser le portail, vous devez vous connecter avec l'identité associée à votre abonnement.  Cela peut être votre compte Microsoft (MSA) ou une adresse e-mail qui vous a été fournie par une organisation, par exemple votre employeur ou votre école.  Découvrez-en plus sur la [connexion](/visualstudio/subscriptions/signing-in).
 

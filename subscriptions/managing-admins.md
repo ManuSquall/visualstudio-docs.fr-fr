@@ -1,5 +1,5 @@
 ---
-title: "Gestion des droits d’administrateur dans le portail d’administration des abonnements Visual Studio"
+title: Gestion des droits d’administrateur dans le portail d’administration des abonnements Visual Studio
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,17 +10,17 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 83bf27d5aaa99c2095ad8a1fafd7541df90f316b
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="managing-administrator-rights-in-the-visual-studio-subscriptions-administrator-portal"></a>Gestion des droits d’administrateur dans le portail d’administration des abonnements Visual Studio
 
 ## <a name="overview"></a>Vue d'ensemble 
-Dans le portail d’administration des abonnements Visual Studio (https://manage.visualstudio.com), il existe deux rôles de gestion :
+Dans le portail d’administration Abonnements Visual Studio (https://manage.visualstudio.com)), il existe deux rôles de gestion :
 
-**Super administrateurs :** à la création d’une organisation, le contact principal ou le destinataire des avis devient super administrateur par défaut. Le contact principal ou destinataire des avis peut choisir d’assigner des super administrateurs ou administrateurs supplémentaires. En plus de gérer les abonnements d’abonnés individuels, les super administrateurs peuvent ajouter et supprimer d’autres administrateurs et super administrateurs. S’il y a plus de deux super administrateurs définis dans le système, un super administrateur peut en supprimer, mais il doit en conserver au minimum deux pour des raisons de sécurité. 
+**Super administrateurs :** à la création d’une organisation, le contact principal ou le contact pour les notifications devient super administrateur par défaut. Le contact principal ou contact pour les notifications peut choisir d’assigner des super administrateurs ou administrateurs supplémentaires. En plus de gérer les abonnements d’abonnés individuels, les super administrateurs peuvent ajouter et supprimer d’autres administrateurs et super administrateurs. S’il y a plus de deux super administrateurs définis dans le système, un super administrateur peut en supprimer, mais il doit en conserver au minimum deux pour des raisons de sécurité. 
 
 **Administrateurs :** un administrateur peut gérer les abonnés dans les contrats que le super administrateur lui attribue.  Il peut affecter des abonnements à des personnes, modifier des abonnements, et les réaffecter ou les supprimer.   (Les administrateurs sont désignés par les super administrateurs.)  
 

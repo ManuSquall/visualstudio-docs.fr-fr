@@ -1,25 +1,28 @@
 ---
-title: "Modifier les abonnements dans le portail d’administration | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can edit subscription assignments.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Modifier les abonnements dans le portail d’administration | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Découvrez comment les administrateurs peuvent modifier des attributions d’abonnement.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="editing-visual-studio-subscription-assignments"></a>Modification des attributions d’abonnement Visual Studio
+# <a name="editing-visual-studio-subscription-assignments"></a>Modification des attributions d’abonnements Visual Studio
+
+En tant qu’administrateur des abonnements, vous avez la possibilité d’apporter des modifications aux abonnements attribués à des personnes au sein de votre organisation.  Cet article décrit les types de modifications que vous pouvez apporter et indique les étapes nécessaires. 
 
 ## <a name="making-changes-to-subscriber-information"></a>Modifier les informations d’un abonné
 Vous pouvez modifier les informations d’un abonné pour corriger des erreurs ou mettre à jour les informations le concernant. 
-**Notez que le changement de l’adresse e-mail d’un abonné entraîne la réinitialisation de tous les avantages existants.**
+> [!NOTE]
+> Le changement de l’adresse e-mail d’un abonné entraîne la réinitialisation de tous les avantages existants.
 
 Pour modifier les informations d’un abonné, sélectionnez les points de suspension (...) à côté de l’adresse e-mail de l’abonné en pointant dessus. Une liste déroulante s’affiche.  Sélectionnez **Modifier** pour modifier les informations de l’abonné. Vous pouvez également double-cliquer sur la ligne de l’abonné dans la grille pour ouvrir la fenêtre d’édition.
 
@@ -53,7 +56,7 @@ Vous pouvez modifier plusieurs abonnés à la fois en effectuant une modificatio
 
     ![Modification d’une licence - Chargement du fichier des modifications en bloc](_img\edit-license\edit-license-bulk-file-upload1.png)
 
-5.  Une fois que vous avez chargé le fichier, vous voyez s’afficher une notification confirmant le chargement. 
+5.  Une fois que vous avez chargé le fichier, vous voyez s’afficher une notification confirmant le chargement. À ce stade, vos modifications apparaissent dans les informations de l’abonné. 
 
     ![Modification d’une licence - Chargement des modifications en bloc terminé](_img\edit-license\edit-license-bulk-upload-complete.png)
 

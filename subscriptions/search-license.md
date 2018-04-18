@@ -1,19 +1,19 @@
 ---
 title: Recherche et filtrage | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can locate individual subscribers or groups in the Administrator Portal.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: fddd8f950969d77ac879d8570bba21468f657123
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Découvrez comment les administrateurs peuvent rechercher des abonnés ou des groupes d’abonnés dans le portail d’administration.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 45786b846cb62f5c02d6cc1e0e1c9fcb7dbb1993
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Recherche et filtrage des abonnés dans les abonnements Visual Studio
 Le portail d’administration des abonnements Visual Studio vous permet de rechercher un groupe spécifique d’abonnés selon différents critères. Vous pouvez filtrer la liste des abonnés par nom, adresse e-mail, niveau d’abonnement et différents autres critères. 
@@ -22,7 +22,7 @@ Le portail d’administration des abonnements Visual Studio vous permet de reche
 
     ![Filtrer les abonnés](_img\edit-license\filter-list.png)
 
-2.  Vous voyez s’afficher de nombreux champs qui peuvent être filtrés. Sélectionnez les critères à utiliser comme base de votre recherche, puis cliquez sur **Filtrer**. Une liste d’abonnés correspondant aux critères choisis s’affiche.
+2.  Vous voyez apparaître de nombreux champs, que vous pouvez utiliser comme critères de filtre. Sélectionnez les critères souhaités que vous voulez utiliser comme base de votre recherche, puis cliquez sur **Filtrer**. Une liste d’abonnés correspondant aux critères choisis s’affiche.
 
     ![Rechercher des abonnés](_img\search-filter\search-filter-find.png)
 

@@ -1,5 +1,5 @@
 ---
-title: "Accès au portail d’administration | Visual Studio Marketplace"
+title: Accès au portail d’administration | Visual Studio Marketplace
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 41bee30e54411a3b9bcaed6c72be3909f2d1cfab
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Accès au portail d’administration des abonnements Visual Studio
 ## <a name="for-mpsa"></a>Pour MPSA
@@ -37,20 +37,20 @@ Si vous avez déjà été configuré comme administrateur, vous pouvez accéder 
 ## <a name="for-cloud-subscriptions"></a>Pour les abonnements cloud
 Quand vous achetez des abonnements cloud Visual Studio, vous êtes automatiquement configuré comme administrateur de ces abonnements.  Si vous les avez déjà achetés, vous pouvez les gérer sur [https://manage.visualstudio.com](https://manage.visualstudio.com).
 
-Pour acheter des abonnements cloud Visual Studio, accédez à Visual Studio Marketplace sur [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscriptions).
+Pour acheter des abonnements cloud Visual Studio, accédez à Visual Studio Marketplace à l’adresse [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscriptions).
 
 
 ## <a name="for-programs-subscriptions"></a>Pour les abonnements à des programmes
 
 ### <a name="microsoft-bizspark"></a>Microsoft BizSpark
-Si vous êtes administrateur Microsoft BizSpark, vous pouvez gérer les abonnements Visual Studio de votre organisation dans **My BizSpark** en vous connectant à : [https://bizspark.microsoft.com/my/index](https://bizspark.microsoft.com/my/index).
+Si vous êtes administrateur Microsoft BizSpark, vous pouvez gérer les abonnements Visual Studio de votre organisation dans **My BizSpark** en vous connectant à [https://bizspark.microsoft.com/my/index](https://bizspark.microsoft.com/my/index).
 
-Vous trouverez plus d’informations sur le programme Microsoft BizSpark sur [https://bizspark.microsoft.com](https://bizspark.microsoft.com).
+Découvrez plus d’informations sur le programme Microsoft BizSpark à l’adresse [https://bizspark.microsoft.com](https://bizspark.microsoft.com).
 
 
 ### <a name="imagine"></a>Imagine
-Si vous êtes administrateur Microsoft Imagine, consultez [https://imagine.microsoft.com/institutions/index](https://imagine.microsoft.com/institutions/index).
+Si vous êtes administrateur Microsoft Imagine, visitez [https://imagine.microsoft.com/institutions/index](https://imagine.microsoft.com/institutions/index).
 
 
 ### <a name="partner"></a>Partner
-Pour plus d’informations sur les abonnements Visual Studio Microsoft Partner Network (MPN), consultez cet article pour découvrir les ressources qui vous permettent de les acheter et de les gérer : [https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions](https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions).
+Pour plus d’informations sur les abonnements Visual Studio du réseau Microsoft Partner Network (MPN), consultez cet article pour découvrir les ressources qui vous permettent de les acheter et de les gérer : [https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions](https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions).

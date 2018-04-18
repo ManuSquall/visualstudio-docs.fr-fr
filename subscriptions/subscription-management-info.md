@@ -1,25 +1,30 @@
 ---
-title: "Où puis-je obtenir plus d’informations sur la gestion des abonnements ? | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/29/2017
-Ms.topic: Get-Started-Article
-Description: Find More Information About Subscription Management?
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: eca3bbc4c906639e1946776b17537480b816c32f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: En savoir plus sur la gestion des abonnements | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/13/2018
+ms.topic: Get-Started-Article
+description: Découvrez plus d’informations sur la gestion des abonnements
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: f3294d37202dd8a9454fdeb056f35b298fdba554
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="where-can-i-find-more-information-about-subscription-management"></a>Où puis-je obtenir plus d’informations sur la gestion des abonnements ?
+# <a name="learn-about-subscription-management"></a>En savoir plus sur la gestion des abonnements
 
-Les fonctionnalités de gestion des abonnements sont disponibles aux clients ayant acheté des abonnements à travers le Centre de gestion des licences en volume (VLSC), un contrat Microsoft Product and Services Agreement (MPSA) ou un abonnement cloud Visual Studio.  
+Les fonctionnalités de gestion des abonnements sont disponibles pour les clients qui ont acquis des abonnements via un contrat de licence en volume, un contrat MPSA (Microsoft Product and Services) ou un abonnement cloud Visual Studio.  
 
-En raison des différents canaux d’achat utilisés, il est important que les administrateurs d’abonnements sachent comment leurs abonnements ont été achetés, de façon à recourir aux autorisations et aux guides de l’utilisateur appropriés. 
+En raison des différents canaux d’achat utilisés, il est important que les administrateurs d’abonnements sachent comment leurs abonnements ont été achetés, de façon à pouvoir utiliser les autorisations et les configurations utilisateur appropriées. Pour plus d’informations sur la configuration des administrateurs pour chaque type de contrat, consultez la section Accès du portail. 
 
 L’équipe des abonnements Visual Studio a créé « Le [portail d’administration des abonnements](https://www.visualstudio.com/subscriptions-administration/) Visual Studio ».  L’objectif de ce portail est d’aider les administrateurs d’abonnements à rapidement maîtriser les outils et les fonctionnalités à leur disposition pour assigner et gérer les abonnements au sein de leur organisation. 
 
+Sur le portail d’administration des abonnements, vous pouvez découvrir des informations notamment ces questions :
+- Gestion des abonnements dans le [portail de gestion des abonnements](https://manage.visualstudio.com).
+- Gestion des abonnements via le Centre VLSC pour les organisations qui n’ont pas encore migré vers le portail de gestion des abonnements. 
+- Migration vers le nouveau portail.
+- Autres conseils et astuces destinés aux administrateurs d’abonnements.
