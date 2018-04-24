@@ -1,10 +1,8 @@
 ---
-title: 'CA1712 : N’ajoutez pas de préfixe avec le nom de type, les valeurs enum | Documents Microsoft'
-ms.custom: ''
+title: "CA1712 : N'ajoutez pas le nom de type en guise de préfixe à des valeurs enum"
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1712
 - DoNotPrefixEnumValuesWithTypeName
@@ -17,47 +15,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5858e29e680d33f3603ccc5a44bdf07d797b625
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b6d8a5ebba4f746c7418fcfb28a61d98949441e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712 : N'ajoutez pas le nom de type en guise de préfixe à des valeurs enum
-|||  
-|-|-|  
-|TypeName|DoNotPrefixEnumValuesWithTypeName|  
-|CheckId|CA1712|  
-|Category|Microsoft.Naming|  
-|Modification avec rupture|Rupture|  
-  
-## <a name="cause"></a>Cause  
- Une énumération contient un membre dont le nom commence par le nom de type de l’énumération.  
-  
-## <a name="rule-description"></a>Description de la règle  
- Noms des membres de l’énumération sont sans le préfixe le nom de type, car les informations de type doit être fournie par les outils de développement.  
-  
- Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit le temps nécessaire pour apprendre une nouvelle bibliothèque de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.  
-  
-## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Pour corriger une violation de cette règle, supprimez le préfixe de nom de type du membre d’énumération.  
-  
-## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
- Ne supprimez aucun avertissement de cette règle.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant montre une énumération incorrectement nommée suivie de la version corrigée.  
-  
+|||
+|-|-|
+|TypeName|DoNotPrefixEnumValuesWithTypeName|
+|CheckId|CA1712|
+|Category|Microsoft.Naming|
+|Modification avec rupture|Rupture|
+
+## <a name="cause"></a>Cause
+ Une énumération contient un membre dont le nom commence par le nom de type de l’énumération.
+
+## <a name="rule-description"></a>Description de la règle
+ Noms des membres de l’énumération sont sans le préfixe le nom de type, car les informations de type doit être fournie par les outils de développement.
+
+ Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit le temps nécessaire pour apprendre une nouvelle bibliothèque de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+
+## <a name="how-to-fix-violations"></a>Comment corriger les violations
+ Pour corriger une violation de cette règle, supprimez le préfixe de nom de type du membre d’énumération.
+
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
+ Ne supprimez aucun avertissement de cette règle.
+
+## <a name="example"></a>Exemple
+ L’exemple suivant montre une énumération incorrectement nommée suivie de la version corrigée.
+
  [!code-csharp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CSharp/ca1712-do-not-prefix-enum-values-with-type-name_1.cs)]
  [!code-cpp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CPP/ca1712-do-not-prefix-enum-values-with-type-name_1.cpp)]
- [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]  
-  
-## <a name="related-rules"></a>Règles associées  
- [CA1711 : Les identificateurs ne doivent pas avoir un suffixe incorrect](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
-  
- [CA1027 : Marquez les énumérations avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
-  
- [CA2217 : Ne marquez pas les énumérations avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
-  
-## <a name="see-also"></a>Voir aussi  
+ [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]
+
+## <a name="related-rules"></a>Règles associées
+ [CA1711 : Les identificateurs ne doivent pas avoir un suffixe incorrect](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+
+ [CA1027 : Marquez les énumérations avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+
+ [CA2217 : Ne marquez pas les énumérations avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+
+## <a name="see-also"></a>Voir aussi
  <xref:System.Enum?displayProperty=fullName>

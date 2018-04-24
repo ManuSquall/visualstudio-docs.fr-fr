@@ -2,8 +2,7 @@
 title: La vue messages | Documents Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 206c0197d73e3bb95975309bdce84887dee283e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31baccc88b25979dfc92fed6217bec3b0ef16a55
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="messages-view"></a>Affichage Messages
 Chaque fenêtre a un flux de message associé. Une fenêtre d’affichage de Messages affiche ce flux de message. Le handle de fenêtre, le code de message et le message sont affichés. Vous pouvez créer une vue Messages pour un thread ou un processus. Cela vous permet d’afficher les messages envoyés à toutes les fenêtres appartenant à un processus spécifique ou d’un thread, ce qui est particulièrement utile pour capturer les messages de l’initialisation de fenêtre.  

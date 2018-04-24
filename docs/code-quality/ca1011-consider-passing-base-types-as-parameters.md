@@ -1,10 +1,8 @@
 ---
-title: 'CA1011 : Si possible, transmettez les types de base en tant que paramètres | Documents Microsoft'
-ms.custom: ''
+title: 'CA1011 : Si possible, transmettez les types de base en tant que paramètres'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ConsiderPassingBaseTypesAsParameters
 - CA1011
@@ -17,46 +15,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51271f3d6b2ced6fdf0229c18ac2a19ee06de36c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ac73d2be980791d41b172ba0669387fd68a331fb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011 : Si possible, transmettez les types de base en tant que paramètres
-|||  
-|-|-|  
-|TypeName|ConsiderPassingBaseTypesAsParameters|  
-|CheckId|CA1011|  
-|Category|Microsoft.Design|  
-|Modification avec rupture|Rupture|  
-  
-## <a name="cause"></a>Cause  
- Une déclaration de méthode inclut un paramètre formel est un type dérivé, et la méthode appelle uniquement des membres du type de base du paramètre.  
-  
-## <a name="rule-description"></a>Description de la règle  
- Lorsqu'un type de base est spécifié en tant que paramètre dans une déclaration de méthode, tout type dérivé du type de base peut être passé en tant qu'argument correspondant à la méthode. Lorsque l’argument est utilisé dans le corps de méthode, la méthode spécifique qui est exécutée dépend du type de l’argument. Si les fonctionnalités supplémentaires fournies par le type dérivé ne sont pas requises, le type de base permet une utilisation plus large de la méthode.  
-  
-## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Pour corriger une violation de cette règle, modifiez le type du paramètre à son type de base.  
-  
-## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
- Il est possible de supprimer un avertissement de cette règle  
-  
--   Si la méthode requiert la fonctionnalité spécifique fournie par le type dérivé  
-  
-     \- ou -  
-  
--   Pour mettre en œuvre que seul le type dérivé, ou un type plus dérivé, est passé à la méthode.  
-  
- Dans ce cas, le code est plus fiable en raison de la vérification de type fort fourni par le compilateur et le runtime.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant montre une méthode, `ManipulateFileStream`, qui peut être utilisé uniquement avec un <xref:System.IO.FileStream> objet, ce qui enfreint cette règle. Une deuxième méthode, `ManipulateAnyStream`, satisfait la règle en remplaçant le <xref:System.IO.FileStream> paramètre en utilisant un <xref:System.IO.Stream>.  
-  
+|||
+|-|-|
+|TypeName|ConsiderPassingBaseTypesAsParameters|
+|CheckId|CA1011|
+|Category|Microsoft.Design|
+|Modification avec rupture|Rupture|
+
+## <a name="cause"></a>Cause
+ Une déclaration de méthode inclut un paramètre formel est un type dérivé, et la méthode appelle uniquement des membres du type de base du paramètre.
+
+## <a name="rule-description"></a>Description de la règle
+ Lorsqu'un type de base est spécifié en tant que paramètre dans une déclaration de méthode, tout type dérivé du type de base peut être passé en tant qu'argument correspondant à la méthode. Lorsque l’argument est utilisé dans le corps de méthode, la méthode spécifique qui est exécutée dépend du type de l’argument. Si les fonctionnalités supplémentaires fournies par le type dérivé ne sont pas requises, le type de base permet une utilisation plus large de la méthode.
+
+## <a name="how-to-fix-violations"></a>Comment corriger les violations
+ Pour corriger une violation de cette règle, modifiez le type du paramètre à son type de base.
+
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
+ Il est possible de supprimer un avertissement de cette règle
+
+-   Si la méthode requiert la fonctionnalité spécifique fournie par le type dérivé
+
+     \- ou -
+
+-   Pour mettre en œuvre que seul le type dérivé, ou un type plus dérivé, est passé à la méthode.
+
+ Dans ce cas, le code est plus fiable en raison de la vérification de type fort fourni par le compilateur et le runtime.
+
+## <a name="example"></a>Exemple
+ L’exemple suivant montre une méthode, `ManipulateFileStream`, qui peut être utilisé uniquement avec un <xref:System.IO.FileStream> objet, ce qui enfreint cette règle. Une deuxième méthode, `ManipulateAnyStream`, satisfait la règle en remplaçant le <xref:System.IO.FileStream> paramètre en utilisant un <xref:System.IO.Stream>.
+
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
- [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]  
-  
-## <a name="related-rules"></a>Règles associées  
+ [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]
+
+## <a name="related-rules"></a>Règles associées
  [CA1059 : Les membres ne doivent pas exposer certains types concrets](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

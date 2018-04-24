@@ -1,10 +1,8 @@
 ---
-title: 'CA2119 : Scellez les méthodes qui satisfont les interfaces privées | Documents Microsoft'
-ms.custom: ''
+title: 'CA2119 : Scellez les méthodes qui satisfont les interfaces privées'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
 - CA2119
@@ -17,56 +15,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f54b6c58e30145759881a8a612ad6f7edfd044d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e80462b53e68d2feff540b3fd2ae4cfbcabc6da8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119 : Scellez les méthodes qui satisfont les interfaces privées
-|||  
-|-|-|  
-|TypeName|SealMethodsThatSatisfyPrivateInterfaces|  
-|CheckId|CA2119|  
-|Category|Microsoft.Security|  
-|Modification avec rupture|Rupture|  
-  
-## <a name="cause"></a>Cause  
- Un type public pouvant être hérité fournit une implémentation de méthode substituable d’une `internal` (`Friend` en Visual Basic) interface.  
-  
-## <a name="rule-description"></a>Description de la règle  
- Méthodes d’interface ont une accessibilité publique, qui ne peut pas être modifiée par le type d’implémentation. Une interface interne crée un contrat qui n’est pas destiné à être implémentée à l’extérieur de l’assembly qui définit l’interface. Un type public qui implémente une méthode d’une interface interne à l’aide de la `virtual` (`Overridable` en Visual Basic) modificateur permet à la méthode être substituée par un type dérivé qui est en dehors de l’assembly. Si un deuxième type dans l’assembly de définition appelle la méthode et attend un contrat interne uniquement, le comportement peut être compromis lorsque, à la place, la méthode substituée dans l’assembly externe est exécutée. Cela crée une faille de sécurité.  
-  
-## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Pour corriger une violation de cette règle, empêchez la méthode d’être substituée en dehors de l’assembly en utilisant l’une des opérations suivantes :  
-  
--   Créez le type déclarant `sealed` (`NotInheritable` en Visual Basic).  
-  
--   Modifiez l’accessibilité du type déclarant à `internal` (`Friend` en Visual Basic).  
-  
--   Supprimez tous les constructeurs publics du type déclarant.  
-  
--   Implémentez la méthode sans utiliser le `virtual` modificateur.  
-  
--   Implémentez la méthode de manière explicite.  
-  
-## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
- Il est possible de supprimer un avertissement de cette règle si, après un examen minutieux, aucun problème de sécurité qui peut être exploitable si la méthode est substituée à l’extérieur de l’assembly.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant présente un type, `BaseImplementation`, qui enfreint cette règle.  
-  
+|||
+|-|-|
+|TypeName|SealMethodsThatSatisfyPrivateInterfaces|
+|CheckId|CA2119|
+|Category|Microsoft.Security|
+|Modification avec rupture|Rupture|
+
+## <a name="cause"></a>Cause
+ Un type public pouvant être hérité fournit une implémentation de méthode substituable d’une `internal` (`Friend` en Visual Basic) interface.
+
+## <a name="rule-description"></a>Description de la règle
+ Méthodes d’interface ont une accessibilité publique, qui ne peut pas être modifiée par le type d’implémentation. Une interface interne crée un contrat qui n’est pas destiné à être implémentée à l’extérieur de l’assembly qui définit l’interface. Un type public qui implémente une méthode d’une interface interne à l’aide de la `virtual` (`Overridable` en Visual Basic) modificateur permet à la méthode être substituée par un type dérivé qui est en dehors de l’assembly. Si un deuxième type dans l’assembly de définition appelle la méthode et attend un contrat interne uniquement, le comportement peut être compromis lorsque, à la place, la méthode substituée dans l’assembly externe est exécutée. Cela crée une faille de sécurité.
+
+## <a name="how-to-fix-violations"></a>Comment corriger les violations
+ Pour corriger une violation de cette règle, empêchez la méthode d’être substituée en dehors de l’assembly en utilisant l’une des opérations suivantes :
+
+-   Créez le type déclarant `sealed` (`NotInheritable` en Visual Basic).
+
+-   Modifiez l’accessibilité du type déclarant à `internal` (`Friend` en Visual Basic).
+
+-   Supprimez tous les constructeurs publics du type déclarant.
+
+-   Implémentez la méthode sans utiliser le `virtual` modificateur.
+
+-   Implémentez la méthode de manière explicite.
+
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
+ Il est possible de supprimer un avertissement de cette règle si, après un examen minutieux, aucun problème de sécurité qui peut être exploitable si la méthode est substituée à l’extérieur de l’assembly.
+
+## <a name="example"></a>Exemple
+ L’exemple suivant présente un type, `BaseImplementation`, qui enfreint cette règle.
+
  [!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
  [!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
- [!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant exploite l’implémentation de méthode virtuelle de l’exemple précédent.  
-  
+ [!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
+
+## <a name="example"></a>Exemple
+ L’exemple suivant exploite l’implémentation de méthode virtuelle de l’exemple précédent.
+
  [!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
  [!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
- [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]  
-  
-## <a name="see-also"></a>Voir aussi  
- [Interfaces](/dotnet/csharp/programming-guide/interfaces/index)   
- [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)
+ [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
+
+## <a name="see-also"></a>Voir aussi
+ [Interfaces](/dotnet/csharp/programming-guide/interfaces/index) [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)

@@ -1,10 +1,8 @@
 ---
-title: 'CA1046 : Ne pas surcharger l’opérateur égal sur les types référence | Documents Microsoft'
-ms.custom: ''
+title: "CA1046 : Ne pas surcharger l'opérateur égal à sur les types référence"
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotOverloadOperatorEqualsOnReferenceTypes
 - CA1046
@@ -17,51 +15,50 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78217e2ce8613ca312a96058b4477d1da82a5e7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90564decd351969ed78f1cca18016454b87c6953
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046 : Ne pas surcharger l'opérateur égal à sur les types référence
-|||  
-|-|-|  
-|TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|  
-|CheckId|CA1046|  
-|Category|Microsoft.Design|  
-|Modification avec rupture|Rupture|  
-  
-## <a name="cause"></a>Cause  
- Un type public ou imbriqué référence publique surcharge l’opérateur d’égalité.  
-  
-## <a name="rule-description"></a>Description de la règle  
- Pour les types référence, l’implémentation par défaut de l’opérateur d’égalité est presque toujours correcte. Par défaut, deux références sont égales uniquement si elles pointent sur le même objet.  
-  
-## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Pour corriger une violation de cette règle, supprimez l’implémentation de l’opérateur d’égalité.  
-  
-## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
- Il est possible de supprimer un avertissement de cette règle quand le type de référence se comporte comme un type valeur intégré. S’il est significatif pour effectuer une addition ou soustraction sur des instances du type, il est probablement correct implémenter l’opérateur d’égalité et de supprimer la violation.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant montre le comportement par défaut lors de la comparaison de deux références.  
-  
- [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]  
-  
-## <a name="example"></a>Exemple  
- L’application suivante compare des références.  
-  
- [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]  
-  
- Cet exemple produit la sortie suivante.  
-  
- **un = nouveau (2,2) et b = nouveau (2,2) sont égaux ? Aucun**  
-**c et a sont égaux ? Oui**  
-**b et a sont == ? Aucun**  
-**c et a sont == ? Oui**   
-## <a name="related-rules"></a>Règles associées  
- [CA1013 : Surchargez l’opérateur égal lors de la surcharge de l’opérateur d’addition et de soustraction](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)  
-  
-## <a name="see-also"></a>Voir aussi  
- <xref:System.Object.Equals%2A?displayProperty=fullName>   
- [Opérateurs d’égalité](/dotnet/standard/design-guidelines/equality-operators)
+|||
+|-|-|
+|TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
+|CheckId|CA1046|
+|Category|Microsoft.Design|
+|Modification avec rupture|Rupture|
+
+## <a name="cause"></a>Cause
+ Un type public ou imbriqué référence publique surcharge l’opérateur d’égalité.
+
+## <a name="rule-description"></a>Description de la règle
+ Pour les types référence, l’implémentation par défaut de l’opérateur d’égalité est presque toujours correcte. Par défaut, deux références sont égales uniquement si elles pointent sur le même objet.
+
+## <a name="how-to-fix-violations"></a>Comment corriger les violations
+ Pour corriger une violation de cette règle, supprimez l’implémentation de l’opérateur d’égalité.
+
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
+ Il est possible de supprimer un avertissement de cette règle quand le type de référence se comporte comme un type valeur intégré. S’il est significatif pour effectuer une addition ou soustraction sur des instances du type, il est probablement correct implémenter l’opérateur d’égalité et de supprimer la violation.
+
+## <a name="example"></a>Exemple
+ L’exemple suivant montre le comportement par défaut lors de la comparaison de deux références.
+
+ [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
+
+## <a name="example"></a>Exemple
+ L’application suivante compare des références.
+
+ [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
+
+ Cet exemple produit la sortie suivante.
+
+ **un = nouveau (2,2) et b = nouveau (2,2) sont égaux ? Ne**
+**c et a sont égaux ? Oui**
+**b et a sont == ? Ne**
+**c et a sont == ? Oui**
+## <a name="related-rules"></a>Règles associées
+ [CA1013 : Surchargez l’opérateur égal lors de la surcharge de l’opérateur d’addition et de soustraction](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+
+## <a name="see-also"></a>Voir aussi
+ <xref:System.Object.Equals%2A?displayProperty=fullName> [Opérateurs d’égalité](/dotnet/standard/design-guidelines/equality-operators)
