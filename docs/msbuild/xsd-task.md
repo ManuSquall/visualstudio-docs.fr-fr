@@ -1,12 +1,9 @@
 ---
-title: "Tâche XSD | Microsoft Docs"
-ms.custom: 
+title: Tâche XSD | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vc.task.xsd
 - VC.Project.VCXMLDataGeneratorTool.Namespace
@@ -20,17 +17,16 @@ helpviewer_keywords:
 - XSD task (MSBuild (Visual C++))
 - MSBuild (Visual C++), XSD task
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0324b3e72cfffb73e22b3995cfc9458631e7d5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7505f3d18e0b32ebdbc8b82d447e49b26fe4182e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="xsd-task"></a>Tâche XSD
 Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichiers de schéma ou de classe à partir d’une source.  
@@ -42,7 +38,7 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
      Paramètre **String** facultatif.  
   
-     Liste des options comme indiqué sur la ligne de commande. Par exemple, « */option1 /option2 /option#* ». Utilisez ce paramètre pour spécifier des options qui ne sont pas représentées par un autre paramètre de tâche **XSD**.  
+     Liste des options comme indiqué sur la ligne de commande. Par exemple, «  */option1 /option2 /option#*  ». Utilisez ce paramètre pour spécifier des options qui ne sont pas représentées par un autre paramètre de tâche **XSD**.  
   
 -   **GenerateFromSchema**  
   

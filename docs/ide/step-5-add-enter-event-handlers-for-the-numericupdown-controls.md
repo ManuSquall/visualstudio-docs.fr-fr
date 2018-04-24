@@ -1,23 +1,21 @@
 ---
-title: "Étape 5 : ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown | Microsoft Docs"
-ms.custom: 
+title: 'Étape 5 : ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
-caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3d205dae6dd00ec5d763b9fb36f9c48041438ce
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 888b63dd4b98d13489c090165cacdac291055b70
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Étape 5 : ajouter des gestionnaires d'événements Enter pour les contrôles NumericUpDown
 Dans la cinquième partie de ce didacticiel, vous allez ajouter des gestionnaires d'événements Enter pour simplifier légèrement la saisie des réponses aux problèmes du questionnaire. Ce code sélectionne et efface la valeur actuelle de chaque contrôle NumericUpDown dès que la personne répondant au questionnaire le choisit et commence à entrer une autre valeur.  

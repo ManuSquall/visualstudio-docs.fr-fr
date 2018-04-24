@@ -1,27 +1,22 @@
 ---
-title: "Vue Fonctions - Données d’instrumentation de la mémoire .NET | Microsoft Docs"
-ms.custom: 
+title: Vue Fonctions - Données d’instrumentation de la mémoire .NET | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: cd45b379-394b-4b71-828c-92cd89e46ae0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 457652b39ce788e5960e5531002628a3dea27cf6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71ea82ea9588315748a9c79eb9abd7b06eace680
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Vue Fonctions - Données d’instrumentation de la mémoire .NET
 La vue Fonctions des données de profilage de l’allocation mémoire de .NET qui ont été collectées avec la méthode d’instrumentation liste les fonctions qui ont alloué de la mémoire lors de l’exécution du profilage. Une ligne de fonction indique la taille et le nombre d’allocations, ainsi que les données chronologiques de la fonction.  

@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour supprimer les résultats d’un test de charge d’un référentiel dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - results, load test
 - load tests, deleting results
@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0bdcc566b17d642ba4de2f476c2e8a96994da6f9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 7c76f18e55e079539d8348ee68c95f32431bff49
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Comment : supprimer les résultats d'un test de charge d'un référentiel
 
-Lorsque vous exécutez un test de charge, les informations recueillies au cours de l'exécution sont stockées dans le référentiel des résultats des tests de charge. Ce référentiel contient des données de compteurs de performance et des informations relatives aux erreurs. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le référentiel des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+Lorsque vous exécutez un test de charge, les informations recueillies au cours de l'exécution sont stockées dans le référentiel des résultats des tests de charge. Ce référentiel contient des données de compteurs de performance et des informations relatives aux erreurs. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
- Vous pouvez gérer les résultats des tests de charge à partir de l’Éditeur de test de charge à l’aide de la boîte de dialogue **Ouvrir et gérer des résultats des tests de charge**. Vous pouvez ouvrir, importer, exporter et supprimer les résultats des tests de charge.
+ Vous pouvez gérer les résultats des tests de charge à partir de l’éditeur de test de charge via la boîte de dialogue **Ouvrir et gérer des résultats des tests de charge**. Vous pouvez ouvrir, importer, exporter et supprimer les résultats des tests de charge.
 
 ## <a name="to-delete-results-from-a-repository"></a>Pour supprimer les résultats à partir d'un référentiel
 

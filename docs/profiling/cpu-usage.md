@@ -2,24 +2,19 @@
 title: Analyser l’utilisation de l’UC dans Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2324c857807f2f15762ce36539df3d7c2ad01b4b
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 267d0a55ae648c68ed4228b3ad4a206bad1f5148
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="analyze-cpu-usage"></a>Analyser l'utilisation de l'UC
 Lorsque vous devez étudier les problèmes de performances de votre application, un bon point de départ consiste à comprendre son utilisation du processeur. L’outil **Utilisation du processeur** vous montre où le processeur exécute du code Visual C++, Visual C#/Visual Basic et JavaScript. À compter de Visual Studio 2015 Update 1, vous pouvez afficher une répartition par fonction de l’utilisation du processeur sans quitter le débogueur. Vous pouvez activer et désactiver le profilage du processeur pendant le débogage, et afficher les résultats quand l’exécution est arrêtée, par exemple à un point d’arrêt.  
@@ -83,7 +78,7 @@ Nous vous montrons ici comment collecter et analyser l’utilisation de l’UC a
   
  ![Choisir Filtrer l’affichage, puis Afficher le code externe](../profiling/media/cpu_use_wt_filterview.png "CPU_USE_WT_FilterView")  
   
- N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Si tel est le cas, les noms de fonction sont affichés sous forme de **[…]** :  
+ N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Si tel est le cas, les noms de fonction sont affichés sous forme de **[…]**  :  
   
  ![Code externe imbriqué dans l’arborescence des appels](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
   

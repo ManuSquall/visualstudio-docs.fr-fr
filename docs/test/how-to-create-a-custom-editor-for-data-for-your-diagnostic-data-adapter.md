@@ -1,19 +1,19 @@
 ---
 title: Créer un éditeur de données personnalisé pour un adaptateur de données de diagnostic dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter, creating custom editor
 ms.assetid: 24970227-d1ea-4f6d-9839-e911478848ba
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: d1426d6e51ac132ee766913e69827df1d9558fba
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 58c0a4e764edd27e2059175e170a9e542c285a89
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Comment : créer un éditeur personnalisé pour les données de votre adaptateur de données de diagnostic
 
@@ -174,7 +174,7 @@ Pour obtenir un exemple complet de projet d’adaptateur de données de diagnost
 
 12. Apportez les modifications requises aux champs de votre éditeur personnalisé, puis choisissez **Enregistrer**.
 
-13. Si vous exécutez vos tests à partir de Microsoft Test Manager, vous pouvez affecter ces paramètres de test à votre plan de test avant d’exécuter vos tests, ou utiliser la commande **Exécuter avec des options** pour affecter et remplacer des paramètres de test. Pour plus d’informations sur les paramètres de test, consultez [Collecter des informations de diagnostic avec des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
+13. Si vous exécutez vos tests à partir de Microsoft Test Manager, vous pouvez affecter ces paramètres de test à votre plan de test avant d’exécuter vos tests, ou utiliser la commande **Exécuter avec des options** pour affecter et remplacer des paramètres de test. Pour plus d’informations sur les paramètres de test, consultez [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
 
 14. Avant de pouvoir utiliser votre nouvel éditeur de configuration avec un adaptateur de données de diagnostic, vous devez appliquer <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> à chaque classe d'adaptateur de données de diagnostic à employer dans l'éditeur, puis les recompiler et les réinstaller sur l'ordinateur client. Pour plus d’informations sur l’installation d’adaptateurs de données de diagnostic et d’éditeurs de configuration, consultez [Guide pratique pour installer un adaptateur de données de diagnostic personnalisé](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
 
@@ -190,5 +190,5 @@ Pour obtenir un exemple complet de projet d’adaptateur de données de diagnost
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
 - [Création d’un adaptateur de données de diagnostic pour collecter des données personnalisées ou affecter un ordinateur de test](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
-- [Collecter des informations de diagnostic avec des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
+- [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Exemple de projet pour la création d’un adaptateur de données de diagnostic](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)

@@ -1,12 +1,9 @@
 ---
-title: "Analyse des données des outils d’analyse des performances | Microsoft Docs"
-ms.custom: 
+title: Analyse des données des outils d’analyse des performances | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - performance, viewing data
 - performance reports, performance data
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - Profiling Tools,data views
 - Profiling Tools,reports
 ms.assetid: ae3e198a-b994-4ecb-a633-dec98bd4fd45
-caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 33ae54490ab9dbb7015df1ce6bafc4794d8254ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fe9ddcc2a374661525744e064929ca20daa83c97
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="analyzing-performance-tools-data"></a>Analyse des données des outils d’analyse des performances
 Les rapports de performances des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permettent d’afficher et d’analyser les problèmes de performances des applications. Cette section fournit une présentation des rapports et des vues de performances qui peuvent être utilisés pour examiner les données de performances.  

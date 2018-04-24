@@ -1,23 +1,20 @@
 ---
-title: "Création de rapports de profilage de base à partir de la ligne de commande | Microsoft Docs"
-ms.custom: 
+title: Création de rapports de profilage de base à partir de la ligne de commande | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8915f71d4dcb84a481c0223a64afbddf9b0c722a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 502fe56f04fe933e51e9afa5376a35a53445c099
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Création de rapports de profilage de base à partir de la ligne de commande
 Cette rubrique décrit les commandes VSPerfReport de base qui génèrent des rapports de valeurs séparées par des virgules (.csv) à partir d’un fichier de données de profilage .vsp ou .vsps. Pour une description de toutes les options de rapport, consultez [VSPerfReport](../profiling/vsperfreport.md).  

@@ -1,7 +1,7 @@
 ---
 title: Temps de réflexion des tests de charge dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, think times
 - load tests, adding delays
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: cccf2961ceb5abecb33396433e344015143503bf
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: e67e514b3b977e50be553704ec1997ce7476f045
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Modifier les temps de réflexion pour simuler les retards d’interaction humaine avec un site web dans les scénarios de tests de charge
 
@@ -40,7 +40,7 @@ Les temps de réflexion sont utilisés exactement tels qu'ils ont été enregist
 Les temps de réflexion sont utilisés, mais varient sur une courbe normale. Fournit une simulation d'utilisateurs virtuels plus réaliste en variant légèrement le temps de réflexion entre les demandes.
 
 > [!NOTE]
-> Pour obtenir une liste complète des propriétés des scénarios de test de charge et leurs descriptions, consultez [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md).
+> Pour obtenir une liste complète des propriétés des scénarios de test de charge et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).
 
 ## <a name="changing-the-think-profile"></a>Modification du profil de réflexion
 
@@ -52,7 +52,7 @@ Les temps de réflexion sont utilisés, mais varient sur une courbe normale. Fou
 
 3.  Changez la propriété **Profil de réflexion** dans la fenêtre Propriétés.
 
-4.  Après avoir fini de changer les propriétés, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez ensuite exécuter votre test de charge avec le nouveau profil de réflexion.
+4.  Quand vous avez fini de changer les propriétés, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez ensuite exécuter votre test de charge avec le nouveau profil de réflexion.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,23 +1,20 @@
 ---
-title: "Collecte des données chronologiques détaillées des services en utilisant la méthode d’instrumentation à partir de la ligne de commande du profileur | Microsoft Docs"
-ms.custom: 
+title: Collecte des données chronologiques détaillées des services en utilisant la méthode d’instrumentation à partir de la ligne de commande du profileur | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1c32a2008fa18f7edf8d50b95104c35c6b1b2058
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3864702edf15a60a7b3cbf161a2313a65dcf40fb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Collecte de données de temporisation détaillées pour des services en utilisant la méthode d'instrumentation à partir de la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données de performances détaillées pour les services Windows avec la méthode d’instrumentation à partir de la ligne de commande.  
@@ -45,7 +42,7 @@ Cette section décrit les procédures et les options de collecte des données de
 |Tâche|Contenu associé|  
 |----------|---------------------|  
 |**Profiler des applications autonomes (clientes)**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
-|**Profiler des applications web ASP.NET**|-   [Collecte de données de temporisation détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**Profiler des applications web ASP.NET**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Analyse des vues et des rapports de données d’instrumentation  
  [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)

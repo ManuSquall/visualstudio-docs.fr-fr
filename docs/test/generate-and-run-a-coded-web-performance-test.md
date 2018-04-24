@@ -1,7 +1,7 @@
 ---
 title: Tests de performances web codés dans Visual Studio | Microsoft Docs
 ms.date: 10/03/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, walkthroughs
 - Web performance tests, creating
@@ -13,19 +13,19 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7eb493667719b41d8014c1d9106328600a4aff0a
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: aa6f1e07bffc59030865018610c4367489d4ba9a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="generate-and-run-a-coded-web-performance-test"></a>Générer et exécuter un test de performances de site web codé
+# <a name="generate-and-run-a-coded-web-performance-test"></a>Générer et exécuter un test de performances de site Web codé
 
 Les tests de performances web sont enregistrés lors de la navigation au sein de votre application web. Les tests sont inclus dans les tests de charge afin de mesurer les performances de votre application web soumise à l’activité de plusieurs utilisateurs. Un test de performances de site web peut être converti en un script basé sur le code que vous pouvez modifier et personnaliser comme tout autre code source. Par exemple, vous pouvez ajouter des boucles et des branchements.
 
-## <a name="generate-a-coded-web-performance-test"></a>Générer un test de performances web codé
+## <a name="generate-a-coded-web-performance-test"></a>Générer un test de performances Web codé
 
 1.  Si vous n’avez pas créé un test de performances web, consultez [Enregistrer un test de performances web](/vsts/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 

@@ -1,20 +1,20 @@
 ---
-title: "Exemple de complément Excel pour le test codé de l’interface utilisateur | Microsoft Docs"
+title: Exemple de complément Excel pour le test codé de l’interface utilisateur | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, Excel Add-in sample
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a81fd5d3d10c15d58671e7e65fae2259824afbe4
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: aee4f7bcf827fc7d42b9c885d78b83df1ea54fd3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Exemple de complément Excel pour le test codé de l'interface utilisateur
 Cet exemple de complément pour [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] est particulièrement conçu pour prendre en charge des tests codés de l'interface utilisateur de feuilles de calcul Excel qui sont enregistrés et exécutés dans Visual Studio Enterprise. Le complément est créé à l’aide de Visual Studio Tools pour Office.

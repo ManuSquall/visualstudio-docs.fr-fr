@@ -1,13 +1,10 @@
 ---
-title: "Options, Éditeur de texte, Extension de fichier | Microsoft Docs"
-ms.custom: 
+title: Options, Éditeur de texte, Extension de fichier | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.toolsoptionspages.text_editor.file_extension
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - Options dialog box
 - Editing Experience, selecting
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f3f21c13c30abafdb59e5e997210cd0d7b4fcfb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 24a87480bfe7a2d60df9ccd94ac0711c71de9223
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-text-editor-file-extension"></a>Options, Éditeur de texte, Extension de fichier
 Cette boîte de dialogue Options permet de spécifier comment tous les fichiers avec une extension donnée seront gérés par l’environnement de développement intégré (IDE) Visual Studio. Pour chaque **Extension** que vous entrez, vous pouvez sélectionner un éditeur. Cela vous permet de choisir l’éditeur IDE ou le concepteur dans lequel les documents d’un certain type s’ouvriront. Pour afficher ces options, choisissez **Options** dans le menu **Outils**, développez le nœud **Éditeur de texte**, puis sélectionnez **Extension de fichier**.  

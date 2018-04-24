@@ -1,23 +1,20 @@
 ---
-title: "Guide pratique pour attacher le profileur à une application web ASP.NET pour collecter des statistiques d’application en utilisant la ligne de commande | Microsoft Docs"
-ms.custom: 
+title: Guide pratique pour attacher le profileur à une application web ASP.NET pour collecter des statistiques d’application en utilisant la ligne de commande | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3725ddbe-ce91-4469-991e-8c5ed048c618
-caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 173ddaec8bffe0dde43eee1d96c708e4e5203912
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: a916e1d3410957a3f03c82436dee6f84bd57726b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Comment : attacher le profileur à une application Web ASP.NET pour collecter des statistiques d'applications en utilisant la ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à un service web ASP.NET et pour collecter des statistiques de performances avec la méthode d’échantillonnage.  
@@ -86,7 +83,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
     |[/counter](../profiling/counter.md) **:** `Config`|Remplace l’événement et l’intervalle d’échantillonnage par le compteur de performances du processeur et l’intervalle spécifié dans `Config`.|  
     |[/targetclr](../profiling/targetclr.md) **:** `Version`|Spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application.|  
   
-    -   **/targetclr:** `Version` spécifie la version du CLR à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Facultatif.  
+    -   **/targetclr:** `Version` spécifie la version du CLR à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Facultative.  
   
 ## <a name="controlling-data-collection"></a>Contrôle de la collection de données  
  Pendant l’exécution de l’application, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier avec les options de **VSPerfCmd.exe**. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  

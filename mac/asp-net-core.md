@@ -1,15 +1,14 @@
 ---
-title: "Bien démarrer avec ASP.NET Core"
+title: Bien démarrer avec ASP.NET Core
 author: asb3993
 ms.author: amburns
 ms.date: 07/13/2017
-ms.topic: article
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: b494128a26691f9916a0fe2380a5f403e61d21d4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 998bd304f287fffdf53dd9c53cb3be1d83a407f3
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="getting-started-with-aspnet-core"></a>Bien démarrer avec ASP.NET Core
 
@@ -228,7 +227,7 @@ Si vous avez besoin d’installer .NET Core manuellement sur Mac OS 10.11 (El C
 
 Veillez à effectuer correctement les quatre étapes pour garantir que .NET Core est bien installé.
 
-## <a name="summary"></a>Résumé
+## <a name="summary"></a>Récapitulatif
 
 Ce guide était une introduction à ASP.NET Core. Il explique ce que c’est et quand l’utiliser, et fournit des informations sur son utilisation dans Visual Studio pour Mac.
 Pour plus d’informations sur les étapes à suivre à partir d’ici, consultez les guides suivants :

@@ -1,28 +1,24 @@
 ---
-title: "Guide pratique pour créer un type Nullable (Concepteur de classes) | Microsoft Docs"
-ms.custom: 
+title: Guide pratique pour créer un type Nullable (Concepteur de classes) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcef9fc80bbc55b07cd9dad68e217c9982a3b1f7
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: cd01d0fd62e37ddca915caf367777b62a0aa6246
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Guide pratique pour créer un type Nullable (Concepteur de classes)
 Certains types valeur n’ont pas, ou n’ont pas besoin d’avoir, systématiquement une valeur définie. Il s’agit d’une pratique courante dans les bases de données, où certains champs peuvent ne se voir assigner aucune valeur. Par exemple, vous pouvez assigner une valeur null à un champ de base de données, qu’il conservera jusqu’à ce qu’une valeur lui soit affectée.  

@@ -1,7 +1,7 @@
 ---
 title: Présentation du récapitulatif des résultats de test de charge dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.monitor.summary.view
 helpviewer_keywords:
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6222e5288526dd5806997b8b65f326e841b692af
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 001f7f866437807565bc83a8ad3a4dd809dd4100
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="load-test-results-summary-overview"></a>Vue d'ensemble du résumé des résultats des tests de charge
 
-Après avoir exécuté un test de charge, vous pouvez consulter le résumé du test de charge pour comprendre rapidement les résultats. Ce résumé fournit les résultats clés dans un format compact et facile à lire. Vous pouvez également l'imprimer. Cela rend son utilisation pratique lorsque vous communiquez des résultats aux parties prenantes. Le résumé du test de charge est également la vue par défaut lorsque vous ouvrez un résultat de test de charge d'un précédemment test de charge exécuté. Pour plus d’informations, consultez [Guide pratique pour accéder aux résultats de test de charge pour analyse](../test/how-to-access-load-test-results-for-analysis.md).
+Après avoir exécuté un test de charge, vous pouvez consulter le résumé du test de charge pour comprendre rapidement les résultats. Ce résumé fournit les résultats clés dans un format compact et facile à lire. Vous pouvez également l'imprimer. Cela rend son utilisation pratique lorsque vous communiquez des résultats aux parties prenantes. Le résumé du test de charge est également la vue par défaut lorsque vous ouvrez un résultat de test de charge d'un précédemment test de charge exécuté. Pour plus d’informations, consultez [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md).
 
  ![Vue Récapitulatif](../test/media/ltest_summaryview.png "LTest_SummaryView")
 
@@ -84,7 +84,7 @@ Si le traçage SQL est activé dans le test de charge, la section relative aux 
 
 ## <a name="test-results"></a>Résultats des tests
 
-La section relative aux résultats des tests contient une liste de tous les tests et scénarios du test de charge. Le nom du test, le scénario, le nombre de fois où il a été exécuté, le nombre de fois où il a échoué et la durée moyenne du test sont affichés. Vous pouvez choisir le nom d’un test pour ouvrir la table **Tests** et obtenir plus de détails sur ce test. Pour plus d’informations, consultez [Analyse des résultats et des erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+La section relative aux résultats des tests contient une liste de tous les tests et scénarios du test de charge. Le nom du test, le scénario, le nombre de fois où il a été exécuté, le nombre de fois où il a échoué et la durée moyenne du test sont affichés. Vous pouvez choisir le nom d’un test pour ouvrir la table **Tests** et obtenir plus de détails sur ce test. Pour plus d’informations, consultez [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Vous pouvez réduire et développer cette section en cliquant sur la flèche située à gauche du titre de la section.
@@ -98,7 +98,7 @@ La section relative aux résultats de la page contient une liste de toutes les p
 
 ## <a name="transaction-results"></a>Résultats de la transaction
 
-La section relative aux résultats de la transaction contient une liste de toutes les transactions du test de charge. Le nom de la transaction, le scénario, le test, le temps de réponse, la durée calendaire et le compte sont affichés. Vous pouvez choisir le nom d’une transaction pour ouvrir la table **Transactions** et obtenir plus de détails sur cette transaction. Pour plus d’informations, consultez [Analyse des résultats et des erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+La section relative aux résultats de la transaction contient une liste de toutes les transactions du test de charge. Le nom de la transaction, le scénario, le test, le temps de réponse, la durée calendaire et le compte sont affichés. Vous pouvez choisir le nom d’une transaction pour ouvrir la table **Transactions** et obtenir plus de détails sur cette transaction. Pour plus d’informations, consultez [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Vous pouvez réduire et développer cette section en cliquant sur la flèche située à gauche du titre de la section.
@@ -111,14 +111,14 @@ Les valeurs de centile signalent les informations de transaction suivantes :
 
 ## <a name="system-under-test-resources"></a>Systèmes sous ressources de test
 
-La section relative aux ressources du système sous test contient une liste d'ordinateurs qui constituent l'ensemble des ordinateurs cibles pour lesquels la charge est générée. Cela inclut tout ordinateur à partir desquels vous rassemblez des ensembles de compteurs autres que les agents ou les contrôleurs. Le nom des ordinateurs, le temps processeur en % et la mémoire disponible sont affichées. Vous pouvez choisir un nom d’ordinateur pour ouvrir le graphique **Système testé** et voir l’utilisation des ressources au fil du temps. Pour plus d’informations, consultez [Analyse des résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md).
+La section relative aux ressources du système sous test contient une liste d'ordinateurs qui constituent l'ensemble des ordinateurs cibles pour lesquels la charge est générée. Cela inclut tout ordinateur à partir desquels vous rassemblez des ensembles de compteurs autres que les agents ou les contrôleurs. Le nom des ordinateurs, le temps processeur en % et la mémoire disponible sont affichées. Vous pouvez choisir un nom d’ordinateur pour ouvrir le graphique **Système testé** et voir l’utilisation des ressources au fil du temps. Pour plus d’informations, consultez [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 > [!NOTE]
 > Vous pouvez réduire et développer cette section en cliquant sur la flèche située à gauche du titre de la section.
 
 ## <a name="controller-and-agent-resources"></a>Ressources du contrôleur et de l'agent
 
-La section relative aux ressources du contrôleur et de l'agent contient une liste des ordinateurs utilisés pour exécuter le test. Le nom des ordinateurs, le temps processeur en % et la mémoire disponible sont affichées. Vous pouvez choisir un nom d’ordinateur pour ouvrir le graphique **Contrôleur et agents** et voir l’utilisation des ressources au fil du temps. Pour plus d’informations, consultez [Analyse des résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md).
+La section relative aux ressources du contrôleur et de l'agent contient une liste des ordinateurs utilisés pour exécuter le test. Le nom des ordinateurs, le temps processeur en % et la mémoire disponible sont affichées. Vous pouvez choisir un nom d’ordinateur pour ouvrir le graphique **Contrôleur et agents** et voir l’utilisation des ressources au fil du temps. Pour plus d’informations, consultez [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 > [!NOTE]
 > Vous pouvez réduire et développer cette section en cliquant sur la flèche située à gauche du titre de la section.

@@ -2,10 +2,7 @@
 title: Configuration, installation et vérifications pour les utilisateurs Mac | Microsoft Docs
 ms.custom: ''
 ms.date: 04/13/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 ms.technology: vs-ide-mobile
 author: asb3993
@@ -13,11 +10,11 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 5590e2a66fe2b6bdec192343f22338f257a8e5ba
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 3d392a24aa4a901e26a3e6cee3909aae581d3505
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Configuration, installation et vérifications pour les utilisateurs Mac
 Cette rubrique est destinée aux développeurs qui travaillent principalement sur Mac et qui utilisent éventuellement Visual Studio sur une machine virtuelle Windows sur le Mac. Si vous êtes un développeur qui travaille principalement sur un ordinateur Windows et que vous devez configurer un Mac secondaire pour cibler iOS, consultez la rubrique principale [Configurer et installer](../cross-platform/setup-and-install.md).

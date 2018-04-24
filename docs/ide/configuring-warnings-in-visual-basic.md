@@ -2,28 +2,24 @@
 title: Configuration d’avertissements en Visual Basic | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 265d86365c9084dac9d75a04df1e1ea243b3b585
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurer les avertissements en Visual Basic
 Le compilateur [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] inclut un ensemble d’avertissements concernant le code qui peut provoquer des erreurs d’exécution. Vous pouvez utiliser ces informations pour écrire du code plus clair, plus rapide, de meilleure qualité et avec moins de bogues. Par exemple, le compilateur génère un avertissement si l’utilisateur tente d’appeler un membre d’une variable objet non assignée, de retourner une valeur à partir d’une fonction sans définir la valeur de retour, ou d’exécuter un bloc `Try` contenant des erreurs dans la logique d’interception des exceptions.  

@@ -1,29 +1,24 @@
 ---
 title: Concurrency, espace de noms (visualiseur concurrentiel) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency
 helpviewer_keywords:
 - Concurrency namespace
 ms.assetid: 001fbfce-a278-4502-aa27-26d65dd61453
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 621f4167184d22445a3d083fe2a1c36db529f6f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef7a262317cde29540d109a78f49f4bfd8192de5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency, espace de noms (visualiseur concurrentiel)
 L'espace de noms `Concurrency` fournit des classes et des fonctions qui vous donnent accès au runtime d'accès concurrentiel, infrastructure de programmation simultanée pour C++. Pour plus d’informations, consultez [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime).  

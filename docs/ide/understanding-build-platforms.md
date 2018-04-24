@@ -1,13 +1,10 @@
 ---
-title: "Présentation des plateformes de générations | Microsoft Docs"
-ms.custom: 
+title: Présentation des plateformes de générations | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.build.newsolutionplatform
 - vs.build.editprojectplatforms
@@ -17,17 +14,16 @@ f1_keywords:
 helpviewer_keywords:
 - build platforms [Visual Studio]
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7469677a9d6eb01514b9117ed4c303ae5346de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 47d4efb409c2779327c4914422b7e37becd6e3c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-build-platforms"></a>Présentation des plateformes de générations
 Vous pouvez stocker différentes versions de propriétés de solution et de projet qui s’appliquent à diverses plateformes cibles. Par exemple, vous pouvez créer une configuration de débogage qui cible une plateforme x86 et une autre qui cible une plateforme x64. Vous pouvez rapidement changer la plateforme active et ainsi générer facilement plusieurs configurations.  

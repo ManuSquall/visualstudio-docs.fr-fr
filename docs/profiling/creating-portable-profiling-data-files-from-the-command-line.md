@@ -1,23 +1,20 @@
 ---
-title: "Création de fichiers de données de profilage portables à partir de la ligne de commande | Microsoft Docs"
-ms.custom: 
+title: Création de fichiers de données de profilage portables à partir de la ligne de commande | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 95302666d8bd5c5738f93a2fb0a8ec698c5bb7d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dd329df74c88f5edadef27444bf3b3c89ee1b30d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>Création de fichiers de données de profilage portables à partir de la ligne de commande
 Pour faciliter le partage des données de profilage, vous pouvez utiliser l’outil en ligne de commande [VSPerfReport](../profiling/vsperfreport.md) visant à incorporer les symboles pour une exécution de profilage dans le fichier .vsp.  
@@ -35,7 +32,7 @@ Pour faciliter le partage des données de profilage, vous pouvez utiliser l’ou
   
 -   Dans une fenêtre d’invite de commandes, tapez la commande suivante :  
   
-     \<Chemin>**VSPerfReport \<**Fichier VSP> **/PackSymbols**  
+     \<Chemin>**VSPerfReport \<** Fichier VSP> **/PackSymbols**  
   
      Par défaut, le fichier .vsps est nommé d’après le nom de base du fichier .vsp. Vous pouvez spécifier un autre nom avec l’option **Output**.  
   
@@ -43,6 +40,6 @@ Pour faciliter le partage des données de profilage, vous pouvez utiliser l’ou
   
 -   Dans une fenêtre d’invite de commandes, tapez la commande suivante :  
   
-     \<Chemin>**VSPerfReport \<**Fichier VSP> **/SummaryFile** [**/Output:**\<Nom de fichier>]  
+     \<Chemin>**VSPerfReport \<** Fichier VSP> **/SummaryFile** [**/Output:**\<Nom de fichier>]  
   
      Par défaut, le fichier .vsps est nommé d’après le nom de base du fichier .vsp. Vous pouvez spécifier un autre nom avec l’option **Output**.

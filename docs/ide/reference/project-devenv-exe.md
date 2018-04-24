@@ -1,12 +1,10 @@
 ---
 title: -Project (devenv.exe) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - /project Devenv switch
 - projects [Visual Studio], rebuilding
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - Devenv, /project switch
 - projects [Visual Studio], cleaning
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 16cd05607bfd6a3bec2bee143b8f735220a5b643
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 56dc2cdb28e05c884fbf1e29c282a3e43f7390ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 Identifie un projet unique dans la configuration de solution spécifiée à générer, nettoyer, regénérer ou déployer.  
@@ -57,10 +55,10 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
  Obligatoire. Chemin complet et nom du fichier solution.  
   
  /project `ProjName`  
- Facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
+ Facultative. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
   
  /projectconfig `ProjConfigName`  
- Facultatif. Nom d’une configuration de build de projet à appliquer au `/project` nommé.  
+ Facultative. Nom d’une configuration de build de projet à appliquer au `/project` nommé.  
   
 ## <a name="remarks"></a>Notes  
   

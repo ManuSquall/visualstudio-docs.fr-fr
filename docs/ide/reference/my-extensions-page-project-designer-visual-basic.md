@@ -1,30 +1,26 @@
 ---
 title: Extensions My, page du Concepteur de projets (Visual Basic) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vb.ProjectPropertiesMyExtensions
 helpviewer_keywords:
 - Project Designer, My Extensions page
 - My Extensions page in Project Designer
 ms.assetid: 2f08494e-84c1-444b-872b-900fbbcf0364
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18817d7fd6af26c5e1ce9d021afc37d1e9da8f34
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4a9c877f0a387fb0a0552f1e7c47e81155eb72ab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Extensions My, page du Concepteur de projets (Visual Basic)
 Utilisez la page **Extensions My** du **Concepteur de projets** pour gérer les extensions d’espace de noms `My` dans votre projet. Grâce aux extensions de l’espace de noms `My`, vous pouvez personnaliser l’espace de noms `My` pour ajouter vos propres membres personnalisés. Pour plus d’informations sur la création d’extensions d’espace de noms `My` personnalisées, consultez [Extension de l’espace de noms My dans Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).  

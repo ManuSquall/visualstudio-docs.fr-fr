@@ -2,11 +2,8 @@
 title: ResolveNonMSBuildProjectOutput, tâche | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - MSBuild, ResolveNonMSBuildProjectOutput task
 - ResolveNonMSBuildProjectOutput task [MSBuild]
 ms.assetid: a0b8fcec-8c8d-4867-85ac-5304c5108e5e
-caps.latest.revision: 4
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e451f301aa7a5bb4ac8f176d9ebe59fa66b0f662
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 9f26798c4fd76cdb7ec06c843f50e177f94a68bb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>Tâche ResolveNonMSBuildProjectOutput
 Détermine les fichiers de sortie des références de projet non-MSBuild.  

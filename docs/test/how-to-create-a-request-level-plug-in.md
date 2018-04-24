@@ -1,20 +1,20 @@
 ---
 title: Créer un plug-in de niveau de requête pour les tests de performances web dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
 ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 59ca0964b72631b8ad5620f351cd57c85099a4ff
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: ea574f2f0c9b4d3f0f6da029433b5b600a400702
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Comment : créer un plug-in de niveau demande
 
@@ -32,7 +32,7 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
 
      La boîte de dialogue **Ajouter un nouveau projet** s’affiche.
 
-2.  Sous **Modèles installés**, sélectionnez **Visual C#**.
+2.  Sous **Modèles installés**, sélectionnez **Visual C#**.
 
 3.  Dans la liste des modèles, sélectionnez **Bibliothèque de classes**.
 
@@ -40,7 +40,7 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
 
      Le nouveau projet de bibliothèque de classes est ajouté à l'Explorateur de solutions et la nouvelle classe s'affiche dans l'éditeur de code.
 
-5.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le dossier **Références** dans la nouvelle bibliothèque de classes et sélectionnez **Ajouter une référence**.
+5.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
 
      La boîte de dialogue **Ajouter une référence** s’affiche.
 
@@ -80,9 +80,9 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
     > [!WARNING]
     > Vous pouvez obtenir une erreur semblable au cas suivant lorsque vous exécutez un test de performances de site web ou un test de charge qui utilise votre plug-in :
     >
-    > **Échec de la requête : Exception dans l’événement de \<plug-in> : Impossible de charger le fichier ou fichier d’assembly ’\<fichier "nom plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null’ ou une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
+    > **Échec de la requête : exception dans le \<plug-in> événement : Impossible de charger le fichier ou l’assembly '\<"Nom du plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou l’une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
     >
-    > Ceci se produit si vous avez changé le code de vos plug-ins et créé une version **(Version=0.0.0.0)** de la DLL, mais que le plug-in référence encore la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
+    > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
     > 1.  Dans votre projet de test de performances de site web et de charge, un message d'avertissement s'affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
     > 2.  Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.

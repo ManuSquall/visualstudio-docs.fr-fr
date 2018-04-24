@@ -2,11 +2,8 @@
 title: Nouveautés de Visual Studio 2017 │ Microsoft Docs
 ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,14 +13,14 @@ helpviewer_keywords:
 ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bddaec413e1a0b0a9e2096a614d7b5a574e0e7e
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: c7c2ce39143bbc4be2e7dc2e077d93ee7a1fff52
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Nouveautés dans Visual Studio 2017 RC
 #### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Mis à jour pour la [version 15.6](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -142,13 +139,13 @@ Nous avons actualisé l’expérience de navigation pour permettre le déplaceme
 
 * **Nouveautés de la version 15.4** : **Atteindre la définition (Ctrl+clic ou F12)** &ndash; Si vous utilisez la souris, vous pouvez maintenant accéder plus rapidement à la définition d’un membre en appuyant sur **Ctrl** puis en cliquant sur le membre. Vous pouvez également appuyer sur **Ctrl** et pointer sur un symbole de code pour le souligner et le transformer en lien. Pour plus d’informations, consultez [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md).  
 
-* **Accéder à l’implémentation (Ctrl+F12)** &ndash; Accédez aux différentes implémentations d’un membre ou type à partir du membre ou type de base.
+* **Accéder à l’implémentation (Ctrl+F12)**  &ndash; Accédez aux différentes implémentations d’un membre ou type à partir du membre ou type de base.
 
-* **Atteindre tout (Ctrl+T ou Ctrl+,)** &ndash; Accédez directement aux déclarations de fichier/type/membre/symbole. Vous pouvez filtrer votre liste de résultats ou utiliser la syntaxe de requête (par exemple, « f searchTerm » pour les fichiers, « t searchTerm » pour les types, etc.).
+* **Atteindre tout (Ctrl+T ou Ctrl+,)**  &ndash; Accédez directement aux déclarations de fichier/type/membre/symbole. Vous pouvez filtrer votre liste de résultats ou utiliser la syntaxe de requête (par exemple, « f searchTerm » pour les fichiers, « t searchTerm » pour les types, etc.).
 
  ![Amélioration de Atteindre tout](../ide/media/vs2017ide-navigation-go-to.png "Exemple de la fonctionnalité Atteindre tout améliorée")
 
-* **Rechercher toutes les références (Maj+F12)** &ndash; Grâce à la colorisation de syntaxe, vous pouvez regrouper les résultats de la fonctionnalité Rechercher toutes les références par projet, définition et chemin, selon la combinaison choisie. Vous pouvez également « verrouiller » les résultats afin de pouvoir continuer à rechercher d’autres références sans perdre les résultats d’origine.
+* **Rechercher toutes les références (Maj+F12)**  &ndash; Grâce à la colorisation de syntaxe, vous pouvez regrouper les résultats de la fonctionnalité Rechercher toutes les références par projet, définition et chemin, selon la combinaison choisie. Vous pouvez également « verrouiller » les résultats afin de pouvoir continuer à rechercher d’autres références sans perdre les résultats d’origine.
 
  ![Nouvel outil Rechercher toutes les références](../ide/media/vs2017ide-find-all-references.png "Exemple du nouvel outil Rechercher toutes les références")
 

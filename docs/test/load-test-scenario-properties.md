@@ -1,20 +1,20 @@
 ---
 title: Propriétés du scénario de test de charge Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, properties
 - load tests, scenarios
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7bbda0aeeab1182d2f94300bee557d3973944c6f
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 144a875822034ef3ae10a4f0cb5f1771ebf61fb7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="load-test-scenario-properties"></a>Propriétés du scénario de test de charge
 
@@ -39,7 +39,7 @@ Changez les paramètres des propriétés de votre scénario de test de charge da
 
 |Propriété|Définition|
 |--------------|----------------|
-|**Agents à utiliser**|Spécifie les agents que votre scénario doit utiliser si vous exécutez le test de charge à distance. Par exemple, vous pouvez définir un ensemble spécifique d'agents afin de maintenir une cohérence lorsque vous analysez des tendances de performance. En outre, les agents peuvent être distribués géographiquement, afin qu'il y ait une affinité entre les scripts qu'ils exécutent et l'emplacement des agents.<br /><br />Les agents doivent être séparés par des virgules, par exemple « **Agent1, Agent2, Agent3** ». Si vous laissez la propriété vide, le scénario doit utiliser tous les agents disponibles.<br /><br />Pour plus d’informations, consultez [Guide pratique pour spécifier les agents de test à utiliser](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
+|**Agents à utiliser**|Spécifie les agents que votre scénario doit utiliser si vous exécutez le test de charge à distance. Par exemple, vous pouvez définir un ensemble spécifique d'agents afin de maintenir une cohérence lorsque vous analysez des tendances de performance. En outre, les agents peuvent être distribués géographiquement, afin qu'il y ait une affinité entre les scripts qu'ils exécutent et l'emplacement des agents.<br /><br />Les agents doivent être séparés par des virgules, par exemple « **Agent1, Agent2, Agent3** ». Si vous laissez la propriété vide, le scénario doit utiliser tous les agents disponibles.<br /><br />Pour plus d’informations, consultez [Guide pratique pour spécifier les agents de test à utiliser](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
 |**Appliquer une distribution au rythme**|Valeur booléenne utilisée pour indiquer si vous souhaitez appliquer les délais de distribution classiques au modèle de combinaison de tests sur la base du rythme de l’utilisateur. Cette propriété s’applique uniquement si la propriété **Type de combinaison de tests** a la valeur **Sur la base du rythme de l’utilisateur**.<br /><br />Pour plus d’informations, consultez [Guide pratique pour appliquer une distribution au rythme](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).|
 |**Commutation IP**|Valeur booléenne utilisée pour indiquer si la commutation IP est utilisée.<br /><br />La commutation IP permet à un agent de test d’envoyer des demandes à un serveur à l’aide d’une plage d’adresses IP. Cela simule des appels provenant de différents ordinateurs clients. La commutation IP est importante pendant les tests de batteries de serveurs web à charge équilibrée. La plupart des équilibrages de charge établissent une affinité entre un client et un serveur web à l'aide de l'adresse IP du client. Si toutes les demandes semblent provenir d’un seul client, l’équilibrage de charge n’équilibre pas la charge. Pour obtenir le bon équilibre de charge dans la batterie de serveurs web, assurez-vous que les demandes proviennent d’une plage d’adresses IP.<br /><br />La commutation IP est uniquement disponible avec l’agent de test.|
 |**Nombre maximal d’itérations de test**|Valeur numérique utilisée pour spécifier le nombre maximal de tests à exécuter dans le scénario. Une valeur de 0 indique aucune limite maximum.<br /><br />Pour plus d’informations, consultez [Configuration des itérations de test pour des scénarios](../test/configure-test-iterations-in-a-load-test-scenario.md).|

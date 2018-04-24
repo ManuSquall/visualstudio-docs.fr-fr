@@ -1,23 +1,21 @@
 ---
-title: "Étape 9 : Examiner, commenter et tester votre code | Microsoft Docs"
-ms.custom: 
+title: 'Étape 9 : Examiner, commenter et tester votre code | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
-caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: af541817ec73cf81aa339f9a57a584286e843e46
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b46e51ac48ffab06bf17508f6c99ccc2fd7fa7c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Étape 9 : examiner, commenter et tester votre code
 Ensuite, ajoutez un commentaire à votre code. Un commentaire est une annotation qui ne modifie pas le comportement du programme. Il permet à une autre personne qui lit votre code de mieux le comprendre. L'ajout de commentaires à votre code est une bonne habitude à prendre. Une ligne de commentaire est indiquée par deux barres obliques (//) en Visual C# et par un guillemet simple (') en Visual Basic. Après avoir ajouté un commentaire, testez votre programme. Quand vous travaillez sur vos projets, il est recommandé d'exécuter et de tester souvent le code afin que vous puissiez détecter et résoudre les problèmes au plus tôt, avant que le code devienne plus complexe. Cette opération est un *test itératif*.  

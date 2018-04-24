@@ -2,7 +2,7 @@
 title: Utiliser UI Automation pour tester votre code dans Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUITest
 - vs.codedUITest.recorder
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - coded UI test
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4424db170240714ad3a74c84107e7a794a9dad54
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 9235cf218ab5eed64140f4ae1dc6e4d54ea73e1b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="use-ui-automation-to-test-your-code"></a>Utiliser l'automatisation de l'interface utilisateur pour tester votre code
+# <a name="use-ui-automation-to-test-your-code"></a>Utiliser UI Automation pour tester votre code
 
 Vous pouvez créer des tests automatisés qui vérifient l’interface utilisateur (IU) de votre application. Ces tests sont appelés *tests codés de l’interface utilisateur*. Ils permettent d’effectuer des tests fonctionnels des contrôles d’interface utilisateur et de vérifier que l'application entière, y compris son interface utilisateur, fonctionne correctement. Les tests codés de l'interface utilisateur sont particulièrement utiles quand il y a une validation ou autre logique dans l'interface utilisateur, par exemple dans une page web. On les utilise aussi fréquemment pour automatiser un test manuel existant.
 
@@ -418,11 +418,11 @@ Avec les contrôles qui dérivent de <xref:Microsoft.VisualStudio.TestTools.UITe
 
 - Pour spécifier la propriété du contrôle à définir, utilisez la chaîne appropriée de la classe `PropertyNames` comme premier paramètre de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, avec la valeur de propriété comme second paramètre.
 
-     Exemple :
+     Exemple :
 
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`
 
-### <a name="debug"></a>Déboguer
+### <a name="debug"></a>Débogage
 
 Vous pouvez analyser les tests codés de l'interface utilisateur à l'aide de journaux de tests codés de l'interface utilisateur. Les journaux de tests codés de l'interface utilisateur filtrent et enregistrent des informations importantes sur l'exécution de vos tests codés de l'interface utilisateur. Le format des journaux vous permet de déboguer les problèmes rapidement. Pour plus d’informations, consultez [Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
@@ -436,7 +436,7 @@ Vous pouvez analyser les tests codés de l'interface utilisateur à l'aide de jo
 
 - [Guide pratique pour configurer votre agent de test pour exécuter des tests qui interagissent avec le Bureau](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
-**Ajout de la prise en charge des contrôles personnalisés :** le framework des tests codés de l’interface utilisateur ne prend pas en charge chaque IU possible et ne prend pas nécessairement en charge l’IU que vous souhaitez tester. Par exemple, vous ne pouvez pas créer immédiatement de test codé de l'interface utilisateur de l'IU de Microsoft Excel. Toutefois, vous pouvez créer une extension à l’infrastructure de tests codés de l’interface utilisateur qui prendra en charge un contrôle personnalisé.
+**Ajout de la prise en charge des contrôles personnalisés :** le framework des tests codés de l’interface utilisateur ne prend pas en charge chaque IU possible et ne prend pas nécessairement en charge l’IU que vous souhaitez tester. Par exemple, vous ne pouvez pas créer immédiatement de test codé de l'interface utilisateur de l'IU de Microsoft Excel. Toutefois, vous pouvez créer une extension au framework de tests codés de l’interface utilisateur qui prendra en charge un contrôle personnalisé.
 
 - [Activer le test codé de l’interface utilisateur de vos contrôles](../test/enable-coded-ui-testing-of-your-controls.md)
 

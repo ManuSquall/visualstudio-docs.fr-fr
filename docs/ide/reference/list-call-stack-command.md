@@ -1,30 +1,26 @@
 ---
-title: "Afficher la pile des appels, commande | Microsoft Docs"
-ms.custom: 
+title: Afficher la pile des appels, commande | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - debug.listcallstack
 helpviewer_keywords:
 - list call stack command
 - Debug.ListCallStack command
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71095bd7ec4b856c5fbee73e13be27dcd9abdaf4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f3b9a0f9c466325d476c01d4acf9b825193fb175
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-call-stack-command"></a>Afficher la pile des appels, commande
 Affiche la pile des appels actuelle.  
@@ -41,43 +37,43 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
   
 ## <a name="arguments"></a>Arguments  
  `index`  
- Facultatif. Définit le frame de pile actuel et n’affiche aucune sortie.  
+ Facultative. Définit le frame de pile actuel et n’affiche aucune sortie.  
   
 ## <a name="switches"></a>Commutateurs  
  Chaque commutateur peut être appelé à l’aide de sa forme complète ou abrégée.  
   
  /Count:`number` [ou] /C:`number`  
- Facultatif. Nombre maximal des piles d’appels à afficher. Par défaut, ce nombre est illimité.  
+ Facultative. Nombre maximal des piles d’appels à afficher. Par défaut, ce nombre est illimité.  
   
  /ShowTypes:`yes`&#124;`no` [ou] /T:`yes`&#124;`no`  
- Facultatif. Spécifie si les types de paramètre doivent être affichés. La valeur par défaut est `yes`.  
+ Facultative. Spécifie si les types de paramètre doivent être affichés. La valeur par défaut est `yes`.  
   
  /ShowNames:`yes`&#124;`no` [ou] /N:`yes`&#124;`no`  
- Facultatif. Spécifie si les noms de paramètres doivent être affichés. La valeur par défaut est `yes`.  
+ Facultative. Spécifie si les noms de paramètres doivent être affichés. La valeur par défaut est `yes`.  
   
  /ShowValues:`yes`&#124;`no` [ou] /V:`yes`&#124;`no`  
- Facultatif. Spécifie si les valeurs de paramètre doivent être affichées. La valeur par défaut est `yes`.  
+ Facultative. Spécifie si les valeurs de paramètre doivent être affichées. La valeur par défaut est `yes`.  
   
  /ShowModule:`yes`&#124;`no` [ou] /M:`yes`&#124;`no`  
- Facultatif. Spécifie si le nom du module doit être affiché. La valeur par défaut est `yes`.  
+ Facultative. Spécifie si le nom du module doit être affiché. La valeur par défaut est `yes`.  
   
  /ShowLineOffset:`yes`&#124;`no` [ou] /#:`yes`&#124;`no`  
- Facultatif. Spécifie si l’offset de ligne doit être affiché. La valeur par défaut est `no`.  
+ Facultative. Spécifie si l’offset de ligne doit être affiché. La valeur par défaut est `no`.  
   
  /ShowByteOffset:`yes`&#124;`no` [ou] /B:`yes`&#124;`no`  
- Facultatif. Spécifie si l’offset d’octet doit être affiché. La valeur par défaut est `no`.  
+ Facultative. Spécifie si l’offset d’octet doit être affiché. La valeur par défaut est `no`.  
   
  /ShowLanguage:`yes`&#124;`no` [ou] /L:`yes`&#124;`no`  
- Facultatif. Spécifie si le langage doit être affiché. La valeur par défaut est `no`.  
+ Facultative. Spécifie si le langage doit être affiché. La valeur par défaut est `no`.  
   
  /IncludeCallsAcrossThreads:`yes`&#124;`no` [ou] /I:`yes`&#124;`no`  
- Facultatif. Spécifie si les appels à destination ou en provenance d’autres threads doivent être inclus. La valeur par défaut est `no`.  
+ Facultative. Spécifie si les appels à destination ou en provenance d’autres threads doivent être inclus. La valeur par défaut est `no`.  
   
  /ShowExternalCode:`yes`&#124;`no`  
- Facultatif. Spécifie s’il faut afficher Uniquement mon code pour la pile des appels. Quand Uniquement mon code est désactivé, tout le code non-utilisateur est affiché. Quand Uniquement mon code est activé, le code non-utilisateur est affiché comme `[external]` dans la sortie de la pile des appels.  
+ Facultative. Spécifie s’il faut afficher Uniquement mon code pour la pile des appels. Quand Uniquement mon code est désactivé, tout le code non-utilisateur est affiché. Quand Uniquement mon code est activé, le code non-utilisateur est affiché comme `[external]` dans la sortie de la pile des appels.  
   
  Thread:`n`  
- Facultatif. Affiche la pile des appels pour le thread `n`. Si aucun thread n’est spécifié, affiche la pile des appels pour le thread actuel.  
+ Facultative. Affiche la pile des appels pour le thread `n`. Si aucun thread n’est spécifié, affiche la pile des appels pour le thread actuel.  
   
 ## <a name="remarks"></a>Notes  
  Les modifications apportées aux arguments ou aux commutateurs s’appliquent aux futurs appels de cette commande. Exécutée seule, la commande Debug.ListCallStackby affiche toute la pile des appels. Si vous spécifiez un index, par exemple,  

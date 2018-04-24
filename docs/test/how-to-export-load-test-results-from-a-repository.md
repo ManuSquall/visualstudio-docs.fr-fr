@@ -1,7 +1,7 @@
 ---
 title: Exporter les résultats des tests de charge dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - results, load test
 - load tests, exporting results
@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7ebb49ebe4d47ad24c8c9504b69db829128f3c2
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: ce17cba842faf56205d5769bbcccfcdce8db6fec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Comment : exporter les résultats des tests de charge à partir d'un référentiel
 
-Lorsque vous exécutez un test de charge, les informations recueillies au cours de l'exécution sont stockées dans le référentiel des résultats des tests de charge. Ce référentiel contient des données de compteurs de performance et des informations relatives aux erreurs. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le référentiel des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+Lorsque vous exécutez un test de charge, les informations recueillies au cours de l'exécution sont stockées dans le référentiel des résultats des tests de charge. Ce référentiel contient des données de compteurs de performance et des informations relatives aux erreurs. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
-Vous pouvez gérer les résultats des tests de charge à partir de l’Éditeur de test de charge à l’aide de la boîte de dialogue **Ouvrir et gérer des résultats des tests de charge**. Vous pouvez ouvrir, importer, exporter et supprimer les résultats des tests de charge.
+Vous pouvez gérer les résultats des tests de charge à partir de l’éditeur de test de charge via la boîte de dialogue **Ouvrir et gérer des résultats des tests de charge**. Vous pouvez ouvrir, importer, exporter et supprimer les résultats des tests de charge.
 
 ## <a name="to-export-results-from-a-repository"></a>Pour exporter les résultats à partir d'un référentiel
 

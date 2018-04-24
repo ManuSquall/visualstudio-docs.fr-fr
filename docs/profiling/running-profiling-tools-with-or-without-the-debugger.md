@@ -1,25 +1,20 @@
 ---
-title: "Exécution des outils de profilage avec ou sans le débogueur | Microsoft Docs"
-ms.custom: 
+title: Exécution des outils de profilage avec ou sans le débogueur | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 462b164d0a6d3e9cba0f9698b7dba3b01aa5fee5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: d7208f687ea38475603b8bfcae7e9ee55ab3ae58
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Exécution des outils de profilage avec ou sans le débogueur
 Visual Studio offre désormais une sélection d’outils d’analyse des performances. Certains d’entre eux, comme **Utilisation de l’UC** et **Utilisation de la mémoire**, peuvent être exécutés avec ou sans le débogueur. Les outils d’analyse des performances non intégrés au débogueur sont destinés à s’exécuter sur les configurations Release, tandis que ceux intégrés au débogueur sont destinés à s’exécuter sur les configurations Debug.  

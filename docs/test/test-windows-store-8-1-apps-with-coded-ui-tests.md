@@ -2,20 +2,20 @@
 title: Tester des applications Windows UWP avec des tests codés de l’interface utilisateur dans Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 889e29926d638e4e160c323e8d2673d858ab5c22
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 8167834fdfb4cf0251aad4a5d31c4dea00e37731
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>Test des applications Windows UWP avec des tests codés de l’interface utilisateur
 

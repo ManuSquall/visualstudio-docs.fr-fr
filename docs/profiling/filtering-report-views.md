@@ -1,27 +1,22 @@
 ---
 title: Filtrage des vues des rapports | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e82450286d5da47a11217401ebbc17133530b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c613e4b200df0153827fb10013416211a2eb2062
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="filtering-report-views"></a>Filtrage des vues des rapports
 Vous pouvez appliquer des filtres aux fichiers de données de profilage pour limiter les données qui sont affichées dans les vues des rapports de performances et exportées dans les fichiers de rapport. Vous pouvez limiter un rapport aux données entre des valeurs d’horodatage, et limiter les données à des processus et des threads spécifiques. Vous pouvez enregistrer les filtres dans un fichier, puis créer un filtre sur un autre fichier de données de profilage en important le filtre enregistré.  

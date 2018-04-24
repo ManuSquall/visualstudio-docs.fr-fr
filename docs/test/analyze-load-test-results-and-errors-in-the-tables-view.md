@@ -1,7 +1,7 @@
 ---
 title: Analyse des résultats et des erreurs des tests de charge dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.monitor.pageresult
 - vs.test.load.dialog.column
@@ -20,13 +20,13 @@ helpviewer_keywords:
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: f2757f5a09e3abbcc924f94ccdcb008f671a3a8d
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 1ef22fcdfeb1b3ccf0005940ca2f7201545482f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analyser les résultats et les erreurs des tests de charge dans la vue Tables de l’analyseur de test de charge
 
@@ -62,7 +62,7 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
 
 ## <a name="collect-percentile-data"></a>Collecter les données de centile
 
- Certaines tables de tests de charge peuvent contenir des colonnes supplémentaires, incluant des données de centile et des temps de réponse répartis dans des groupes selon l'émulation du réseau. Par défaut, ces données ne sont pas collectées. Les données de centile ne seront disponibles que si vous avez enregistré les résultats dans une base de données, et non localement. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le référentiel des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md). En outre, pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud Paramètre d’exécution à modifier. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **StatisticsOnly** ou **AllIndividualDetails**. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+ Certaines tables de tests de charge peuvent contenir des colonnes supplémentaires, incluant des données de centile et des temps de réponse répartis dans des groupes selon l'émulation du réseau. Par défaut, ces données ne sont pas collectées. Les données de centile ne seront disponibles que si vous avez enregistré les résultats dans une base de données, et non localement. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md). En outre, pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud Paramètre d’exécution à modifier. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **StatisticsOnly** ou **AllIndividualDetails**. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## <a name="the-requests-table"></a>Table Demandes
 
@@ -124,7 +124,7 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
 |**Total**|Nombre total de transactions émises pendant la série de tests de charge.|Oui|
 |**Temps de transaction**|Durée d’exécution de la transaction pendant une série de tests de charge. Pour les tests de performances de site web, le temps de réflexion est compris dans le calcul. Les unités sont les secondes.|Non|
 |**Temps de réponse**|Temps de réponse de la transaction de test de performances de site web dans une série de tests de charge. Le temps de réponse diffère du temps de transaction dans le fait qu'il ne comprend pas le temps de réflexion écoulé durant la transaction. Les unités sont les secondes.|Non|
-|**Temps de transaction moyen**|Temps de transaction moyen. Ce temps inclut des temps de réflexion. Par exemple, si vous avez trois requêtes et que chacune présente un temps de réflexion, ce temps comprendra ces temps de réflexion et le temps effectif d'exécution des requêtes.|Non|
+|**Temps de réponse moyen**|Temps de transaction moyen. Ce temps inclut des temps de réflexion. Par exemple, si vous avez trois requêtes et que chacune présente un temps de réflexion, ce temps comprendra ces temps de réflexion et le temps effectif d'exécution des requêtes.|Non|
 |**Temps de réponse moyen**|Temps de réponse moyen d’une transaction de test de performances de site web dans une série de tests de charge. Le temps de réponse diffère du temps de transaction dans le fait qu’il ne comprend pas le temps de réflexion écoulé durant la transaction. Les unités sont les secondes.|Non|
 |**Temps de réponse min**|Cela n'inclut pas les temps de réflexion.|Non|
 |**Temps de réponse max**|Cela n'inclut pas les temps de réflexion.|Non|

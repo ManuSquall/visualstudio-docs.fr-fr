@@ -1,12 +1,10 @@
 ---
-title: "Numéros de version de l’assembly principal et des assemblys satellites localisés | Microsoft Docs"
-ms.custom: 
+title: Numéros de version de l’assembly principal et des assemblys satellites localisés | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - satellite assemblies, version numbers
 - SatelliteContractVersionAttribute
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - assemblies [Visual Studio], version numbers
 - versioning, assemblies
 ms.assetid: 5489aea1-57b4-4561-9bb4-24d490269602
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 35dfc24f22d223fcd6f1db225342bb406e73c3ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 361a2ff0d35c71250acca59788c199fbe69f57ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Numéros de version de l'assembly principal et des assemblys satellites localisés
 La classe <xref:System.Resources.SatelliteContractVersionAttribute> fournit la prise en charge de la gestion de version pour un assembly principal qui utilise des ressources localisées via le Gestionnaire des ressources. L’application d’un <xref:System.Resources.SatelliteContractVersionAttribute> à l’assembly principal d’une application permet de mettre à jour et de redéployer cet assembly, sans mettre à jour ses assemblys satellites. Par exemple, vous pouvez utiliser la classe <xref:System.Resources.SatelliteContractVersionAttribute> avec un Service Pack qui n’introduit pas de nouvelles ressources sans régénérer et redéployer vos assemblys satellites. Pour que vos ressources localisées soient disponibles, la version de contrat satellite de votre assembly principal doit correspondre à la classe <xref:System.Reflection.AssemblyVersionAttribute> de vos assemblys satellites. Vous devez spécifier un numéro de version exact dans la classe <xref:System.Resources.SatelliteContractVersionAttribute> ; les caractères génériques tels que « * » ne sont pas autorisés. Pour plus d’informations, consultez [Récupération de ressources](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).  

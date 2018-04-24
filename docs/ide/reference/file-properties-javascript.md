@@ -1,12 +1,10 @@
 ---
-title: "Propriétés de fichier, JavaScript | Microsoft Docs"
-ms.custom: 
+title: Propriétés de fichier, JavaScript | Microsoft Docs
+ms.custom: ''
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
 - javascript.project.property.expandedsdknode.uri
@@ -25,16 +23,16 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bd95d18cfbf1ce04c1178a0befbc8cbf7613862e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 06fd31fc8d87dc40df023cbf494fde16c944ae03
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="file-properties-javascript"></a>Propriétés des fichiers, JavaScript
 Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que le système de projet doit effectuer sur les fichiers. Par exemple, vous pouvez définir des propriétés de fichier pour indiquer si un fichier doit être ajouté au package en tant que fichier de ressources.  
@@ -78,7 +76,7 @@ La valeur par défaut d’**Action de package** dépend de l’extension du fich
 ### <a name="file-version"></a>Version du fichier  
  Affiche la version de fichier de la référence.  
 
-### <a name="identity"></a>identité  
+### <a name="identity"></a>Identité  
  Affiche l’identité de la référence utilisée dans le projet, qui est stockée dans le fichier projet.  
 
 ### <a name="package"></a>Package  

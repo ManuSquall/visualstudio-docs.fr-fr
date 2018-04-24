@@ -2,26 +2,22 @@
 title: 'Procédure pas à pas : création d’une application simple avec C# ou Visual Basic | Microsoft Docs'
 ms.custom: ''
 ms.date: 10/03/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-caps.latest.revision: 19
 author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05397e8dc965b23f0a60b9d7cbfcbb40621821a9
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 369b94cb19344bc3a58545f26643ec7d5d78a246
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Procédure pas à pas : création d'une application simple avec C# ou Visual Basic
 Avec cette procédure pas à pas, vous allez vous familiariser avec la plupart des outils, boîtes de dialogue et concepteurs que vous pouvez utiliser quand vous développez des applications avec Visual Studio. Vous allez créer une application simple « Hello, World », concevoir l’interface utilisateur, ajouter du code et déboguer des erreurs, tout en découvrant l’utilisation de l’environnement de développement intégré (IDE).

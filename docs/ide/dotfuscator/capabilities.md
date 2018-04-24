@@ -1,9 +1,10 @@
 ---
-title: "Fonctionnalités de Dotfuscator | Microsoft Docs"
+title: Fonctionnalités de Dotfuscator | Microsoft Docs
 ms.date: 2017-10-10
 ms.devlang: dotnet
-ms.technology: vs-ide-general
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, community edition, obfuscation, .NET, free, Visual Studio 2017
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
@@ -12,15 +13,15 @@ helpviewer_keywords:
 - Dotfuscator
 - obfuscation
 - protection
-description: "Découvrez les fonctionnalités de la version gratuite de Dotfuscator Community Edition qui est fournie avec Visual Studio 2017."
+description: Découvrez les fonctionnalités de la version gratuite de Dotfuscator Community Edition qui est fournie avec Visual Studio 2017.
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
-manager: ghogen
-ms.openlocfilehash: 2c2c7decf192f11c12b52b64374719c8ef5edece
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+manager: douge
+ms.openlocfilehash: 91d2e379c37567a88e29eb504ad7bc09723d3fc6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="capabilities-of-dotfuscator"></a>Fonctionnalités de Dotfuscator
 

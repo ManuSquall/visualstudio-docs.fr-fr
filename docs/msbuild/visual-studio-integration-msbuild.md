@@ -1,12 +1,9 @@
 ---
-title: "Intégration de Visual Studio (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: Intégration de Visual Studio (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1495fa1ae7408874f2c1cfcede2ed495fea3f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dd9dd101508fc55ff6287af534ee57e53e95d4e8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Intégration de Visual Studio (MSBuild)
 Visual Studio héberge [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour charger et générer des projets managés. Dans la mesure où [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est responsable du projet, la plupart des projets au format [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut être utilisé sans problème dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], même si le projet a été créé par un outil différent et possède un processus de génération personnalisé.  
@@ -54,10 +50,10 @@ Condition=" '$(Configuration)' == 'Release' "
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] examine les conditions définies sur les éléments `PropertyGroup`, `ItemGroup`, `Import`, de propriétés et item.  
+ À cette fin,[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] examine les conditions définies sur les éléments `PropertyGroup`, `ItemGroup`, `Import`, de propriétés et item.  
   
 ## <a name="additional-build-actions"></a>Actions de génération supplémentaires  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vous permet de modifier le nom du type d’élément d’un fichier dans un projet avec la propriété **Action de génération** de la fenêtre [Propriétés du fichier](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959). Les noms des types d'éléments`Compile`, `EmbeddedResource`, `Content`et `None` sont toujours répertoriés dans ce menu ainsi que tous les autres noms de types d'éléments figurant déjà dans votre projet. Pour garantir la disponibilité permanente de tous les noms de types d'éléments personnalisés dans ce menu, vous pouvez ajouter les noms à un type d'élément nommé `AvailableItemName`. Par exemple, en ajoutant ce qui suit à votre fichier projet, le type personnalisé `JScript` est ajouté à ce menu pour tous les projets qui l'importent :  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vous permet de modifier le nom du type d'élément d'un fichier dans un projet avec la propriété **Action de génération** de la fenêtre [Propriétés du fichier](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) . Les noms des types d'éléments`Compile`, `EmbeddedResource`, `Content`et `None` sont toujours répertoriés dans ce menu ainsi que tous les autres noms de types d'éléments figurant déjà dans votre projet. Pour garantir la disponibilité permanente de tous les noms de types d'éléments personnalisés dans ce menu, vous pouvez ajouter les noms à un type d'élément nommé `AvailableItemName`. Par exemple, en ajoutant ce qui suit à votre fichier projet, le type personnalisé `JScript` est ajouté à ce menu pour tous les projets qui l'importent :  
   
 ```xml  
 <ItemGroup>  
@@ -147,7 +143,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4.  Dans l' **Explorateur de solutions**, ouvrez le menu contextuel du projet indisponible et choisissez **Recharger le projet**.  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense et validation  
- Lors de l'utilisation de l'Éditeur XML pour modifier des fichiers projet, IntelliSense et la validation sont pilotés par les fichiers de schéma [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ceux-ci sont installés dans le cache des schémas, qui se trouve dans *\<Répertoire d’installation de Visual Studio>*\Xml\Schemas\1033\MSBuild.  
+ Lors de l'utilisation de l'Éditeur XML pour modifier des fichiers projet, IntelliSense et la validation sont pilotés par les fichiers de schéma [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ceux-ci sont installés dans le cache des schémas, qui se trouve dans *\<Répertoire d’installation de Visual Studio>* \Xml\Schemas\1033\MSBuild.  
   
  Les types [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] principaux sont définis dans Microsoft.Build.Core.xsd et les types communs utilisés par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sont définis dans Microsoft.Build.CommonTypes.xsd. Pour personnaliser les schémas afin de disposer d'IntelliSense et de la validation pour les noms, les propriétés et les tâches des types d'éléments personnalisés, vous pouvez modifier Microsoft.Build.xsd ou créer votre propre schéma incluant les schémas CommonTypes ou Core. Si vous créez votre propre schéma, vous devez indiquer à l'Éditeur XML de l'utiliser à l'aide de la fenêtre **Propriétés** .  
   
