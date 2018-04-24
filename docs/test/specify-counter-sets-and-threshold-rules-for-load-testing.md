@@ -1,7 +1,7 @@
 ---
 title: Ensembles de compteurs et règles de seuil pour les tests de charge dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - counters, counter sets
 - load tests, thresholds
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: a573e883a4d5557a4812e6f38ae63fc1b1d71425
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: d2b80ab1aaed9f5f59399a02026c9334f38701c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Spécifier des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge
 
-Les tests de charge fournissent des ensembles de compteurs nommés, qui sont utiles lorsque vous analysez des données de compteur de performance. Les ensembles de compteurs sont organisés par technologie et incluent Application, ASP.NET, .NET Application, IIS et SQL. Quand vous créez un test de charge avec **l’Assistant Nouveau test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis et importants pour votre test de charge. Vous gérez vos compteurs dans **l’éditeur de test de charge**.
+Les tests de charge fournissent des ensembles de compteurs nommés, qui sont utiles lorsque vous analysez des données de compteur de performance. Les ensembles de compteurs sont organisés par technologie et incluent Application, ASP.NET, .NET Application, IIS et SQL. Quand vous créez un test de charge avec **l’Assistant Nouveau test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis et importants pour votre test de charge. Vous gérez vos compteurs dans l’**éditeur de test de charge**.
 
 > [!NOTE]
-> Si vos tests de charge sont répartis entre des ordinateurs distants, les compteurs de contrôleur et d'agent sont automatiquement mappés au contrôleur et aux ensembles de compteurs de l'agent. Pour plus d’informations sur l’utilisation d’ordinateurs distants dans votre test de charge, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
+> Si vos tests de charge sont répartis entre des ordinateurs distants, les compteurs de contrôleur et d'agent sont automatiquement mappés au contrôleur et aux ensembles de compteurs de l'agent. Pour plus d’informations sur l’utilisation de machines distantes dans votre test de charge, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
 
 Les ensembles de compteurs sont recueillis sur les ordinateurs que vous spécifiez. L’association entre un ensemble de compteurs et un ordinateur qui est utilisé pendant un test de charge porte le nom de *mappage d’ensemble de compteurs*. Par exemple, le serveur web que vous testez peut avoir des mappages d’ensembles de compteurs ASP.NET, IIS et .NET.
 
@@ -66,14 +66,14 @@ Voici certaines indications pour les taux d'échantillonnage.
 
 |Durée du test de charge|Taux d'échantillonnage recommandé|
 |------------------------|-----------------------------|
-|\< 1 heure|5 secondes|
+|\< 1 heure|5 secondes|
 |1 à 8 heures|15 secondes|
 |8 à 24 heures|30 secondes|
 |> 24 heures|60 secondes|
 
 ## <a name="store-performance-data"></a>Stocker les données de performances
 
-Durant une série de tests de charge, les données des compteurs de performances sont collectées et stockées dans le *référentiel des résultats de test de charge*. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le référentiel des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+Durant une série de tests de charge, les données des compteurs de performances sont collectées et stockées dans le *référentiel des résultats de test de charge*. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
 ## <a name="about-threshold-rules"></a>À propos des règles de seuil
 

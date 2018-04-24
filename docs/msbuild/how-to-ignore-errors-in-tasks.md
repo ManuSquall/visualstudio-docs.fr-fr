@@ -1,25 +1,21 @@
 ---
-title: "Comment : ignorer des erreurs dans des tâches | Microsoft Docs"
-ms.custom: 
+title: 'Comment : ignorer des erreurs dans des tâches | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: msbuild - "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, ignoring errors
 - ContinueOnError attribute [MSBuild]
 ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
-caps.latest.revision: "18"
-author: kempb
-ms.author: kempb
-manager: ghogen
-ms.openlocfilehash: 6fbdf661b49fb60ec6b1e18c6886b9bdcc946437
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.openlocfilehash: 348a026815d0d48390fed5741e6dba741fda9937
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Comment : ignorer des erreurs dans des tâches
 Vous souhaiterez parfois qu’une génération soit à tolérance de panne dans certaines tâches. En cas d’échec de ces tâches non critiques, vous souhaiterez continuer la génération, car elle peut toujours produire la sortie requise. Par exemple, si un projet utilise une tâche `SendMail` pour envoyer un message électronique après la génération de chaque composant, vous pouvez juger acceptable de poursuivre la génération jusqu’à son achèvement, même si les serveurs de messagerie ne sont pas disponibles et que les messages d’état ne peuvent pas être envoyés. Si des fichiers intermédiaires sont habituellement supprimés pendant la génération, vous pouvez également estimer que la génération peut se poursuivre jusqu’à son achèvement, même si ces fichiers ne peuvent pas être supprimés.  
@@ -66,5 +62,5 @@ Vous souhaiterez parfois qu’une génération soit à tolérance de panne dans 
   
 ## <a name="see-also"></a>Voir aussi
 [MSBuild](../msbuild/msbuild.md)  
- [Référence des tâches](../msbuild/msbuild-task-reference.md)   
+ [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
  [Tâches](../msbuild/msbuild-tasks.md)

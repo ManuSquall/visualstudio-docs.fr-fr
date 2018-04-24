@@ -1,27 +1,22 @@
 ---
-title: "Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET | Microsoft Docs"
-ms.custom: 
+title: Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: da624c06-8741-4afb-aad1-f8c0002f3de2
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ee600d74da21c328e0cb374bad1ffdf55083254
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: baf4edeb67d9c1c66ce6e6542b9684b29a8c358b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET
 La vue Appelant/Appelé des données de profilage de la mémoire .NET, collectées à l’aide de la méthode d’instrumentation, affiche les données d’allocation et de durée de la fonction sélectionnée et de ses fonctions parents et enfants. La vue Appelant/Appelé comprend trois grilles.  

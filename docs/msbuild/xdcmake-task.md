@@ -1,12 +1,9 @@
 ---
-title: "XDCMake, tâche | Microsoft Docs"
-ms.custom: 
+title: XDCMake, tâche | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vc.task.xdcmake
 dev_langs:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - XDCMake task (MSBuild (Visual C++))
 - MSBuild (Visual C++), XDCMake task
 ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab068fde2d0d30d0043fabad116e08dbc182d52d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dab82b3ddf2bc39d1253321a335e1fe838235819
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="xdcmake-task"></a>XDCMake, tâche
 Encapsule l’outil Documentation XML (xdcmake.exe), qui fusionne des fichiers de commentaire de document XML (.xdc) dans un fichier .xml.  
@@ -45,7 +41,7 @@ Encapsule l’outil Documentation XML (xdcmake.exe), qui fusionne des fichiers d
 |Paramètre|Description|  
 |---------------|-----------------|  
 |**AdditionalDocumentFile**|Paramètre **String[]** facultatif.<br /><br /> Spécifie un ou plusieurs fichiers .xdc supplémentaires à fusionner.<br /><br /> Pour plus d’informations, consultez la description **Fichiers de document supplémentaires** dans [Outil Générateur de documents, page de propriétés](/cpp/ide/xml-document-generator-tool-property-pages). Consultez également les options de ligne de commande **/old** et **/Fs** pour xdcmake.exe.|  
-|**AdditionalOptions**|Paramètre **String** facultatif.<br /><br /> Liste des options comme indiqué sur la ligne de commande. Par exemple, « */option1 /option2 /option#* ». Utilisez ce paramètre pour spécifier des options qui ne sont pas représentées par un autre paramètre de tâche **XDCMake**.<br /><br /> Pour plus d’informations, consultez [Référence XDCMake](/cpp/ide/xdcmake-reference), [Outil Générateur de documents XML, page de propriétés](/cpp/ide/xml-document-generator-tool-property-pages) et l’aide en ligne de commande (**/ ?**) pour xdcmake.exe.|  
+|**AdditionalOptions**|Paramètre **String** facultatif.<br /><br /> Liste des options comme indiqué sur la ligne de commande. Par exemple, «  */option1 /option2 /option#*  ». Utilisez ce paramètre pour spécifier des options qui ne sont pas représentées par un autre paramètre de tâche **XDCMake**.<br /><br /> Pour plus d’informations, consultez [Référence XDCMake](/cpp/ide/xdcmake-reference), [Outil Générateur de documents XML, page de propriétés](/cpp/ide/xml-document-generator-tool-property-pages) et l’aide en ligne de commande (**/ ?**) pour xdcmake.exe.|  
 |**DocumentLibraryDependencies**|Paramètre **booléen** facultatif.<br /><br /> Si `true` et si le projet actuel a une dépendance sur un projet de bibliothèque statique (.lib) dans la solution, les fichiers .xdc pour ce projet de bibliothèque sont inclus dans la sortie de fichier .xml pour le projet actuel.<br /><br /> Pour plus d’informations, consultez la description **Dépendances de bibliothèque de documents** dans [Outil Générateur de documents, page de propriétés](/cpp/ide/xml-document-generator-tool-property-pages).|  
 |**OutputFile**|Paramètre **String** facultatif.<br /><br /> Substitue le nom de fichier de sortie par défaut. Le nom par défaut est dérivé du nom du premier fichier .xdc traité.<br /><br /> Pour plus d’informations, consultez l’option **/out:**`filename` dans [Référence XDCMake](/cpp/ide/xdcmake-reference). Consultez également les options de ligne de commande **/old** et **/Fo** pour xdcmake.exe.|  
 |**ProjectName**|Paramètre **String** facultatif.<br /><br /> Nom du projet actif.|  

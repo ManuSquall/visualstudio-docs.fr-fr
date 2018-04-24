@@ -1,27 +1,24 @@
 ---
-title: "Guide pratique pour référencer un kit SDK de projet MSBuild | Microsoft Docs"
-ms.custom: 
+title: Guide pratique pour référencer un kit SDK de projet MSBuild | Microsoft Docs
+ms.custom: ''
 ms.date: 01/25/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, SDKs, SDK
-author: jeffkl
-ms.author: jeffkl
-manager: angerlic
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28027b21d3f562e3eda94dc91de16ddb38362d3c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b595f08883023d1150612415fcdb6c50411db7e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Guide pratique pour utiliser les kits SDK de projet MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 a introduit le concept de « kit SDK de projet », qui simplifie l’utilisation de kits SDK nécessitant l’importation des propriétés et des cibles.
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 a introduit le concept de « kit SDK de projet », qui simplifie l’utilisation de kits de développement logiciel qui nécessitent l’importation des propriétés et des cibles.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

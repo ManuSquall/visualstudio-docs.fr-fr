@@ -1,19 +1,19 @@
 ---
 title: Créer un plug-in d’enregistreur pour les tests de performances web dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b61da58ca621f04628697382e83c209187016f5d
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 145fc290360b8f8cac55a952b5c24a367ef847ad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Comment : créer un plug-in d'enregistreur
 
@@ -37,7 +37,7 @@ Les procédures suivantes décrivent le mode de création du code rudimentaire p
 
      La boîte de dialogue **Ajouter un nouveau projet** s’affiche.
 
-3.  Sous **Modèles installés**, sélectionnez **Visual C#**.
+3.  Sous **Modèles installés**, sélectionnez **Visual C#**.
 
 4.  Dans la liste des modèles, sélectionnez **Bibliothèque de classes**.
 
@@ -107,9 +107,9 @@ Après avoir compilé le plug-in d'enregistreur, vous devrez placer la DLL cré�
     > [!WARNING]
     > Vous pouvez obtenir une erreur semblable au cas suivant lorsque vous exécutez un test de performances de site web ou un test de charge qui utilise votre plug-in :
     >
-    > **Échec de la demande : exception dans l’événement de \<plug-in> : Impossible de charger le fichier ou l’assembly « \<fichier "nom plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null » ou une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
+    > **Échec de la requête : exception dans le \<plug-in> événement : Impossible de charger le fichier ou l’assembly '\<"Nom du plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou l’une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
     >
-    > Ceci se produit si vous avez modifié le code de vos plug-ins et créé une nouvelle version **(Version=0.0.0.0)** de la DLL , mais que le plug-in référence encore la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
+    > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
     > 1.  Dans votre projet de test de performances de site web et de charge, un message d'avertissement s'affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
     > 2.  Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.

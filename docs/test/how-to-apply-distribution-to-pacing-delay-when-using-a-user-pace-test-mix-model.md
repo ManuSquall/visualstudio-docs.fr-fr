@@ -1,19 +1,19 @@
 ---
 title: Appliquer une distribution au rythme pour les tests de charges dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test mix model
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 047a8fd8dea60ca86c39922f8cd0aed6e65ec6d3
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 5140a3ca9cb8274a9b6d9f74260adadfed6201ad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model"></a>Comment : appliquer la distribution au retard rythmé lorsque vous utilisez un modèle de combinaison de tests basée sur le rythme de l'utilisateur
 
@@ -38,7 +38,7 @@ La valeur de la propriété **Appliquer une distribution au rythme** peut avoir 
 
 1.  Ouvrez un test de charge.
 
-     **L’éditeur de test de charge** s’affiche. L’arborescence du test de charge s’affiche.
+     L’**éditeur de test de charge** s’affiche. L’arborescence du test de charge s’affiche.
 
 2.  Dans le dossier **Scénarios** de l’arborescence du test de charge, sélectionnez le nœud du scénario pour lequel vous voulez spécifier les agents à utiliser.
 

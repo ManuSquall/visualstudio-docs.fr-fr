@@ -1,32 +1,28 @@
 ---
-title: "Guide pratique pour créer un héritage entre des types (Concepteur de classes) | Microsoft Docs"
-ms.custom: 
+title: Guide pratique pour créer un héritage entre des types (Concepteur de classes) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
 helpviewer_keywords:
 - inheritance, relationship defining
 - relationships, defining inheritance
 ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b939da3ae4020cc6412f9b1767d5bef8bce05472
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: af87e62f231c13a1aabbb667a189a82e7cbfa3f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-create-inheritance-between-types-class-designer"></a>Guide pratique pour créer un héritage entre des types (Concepteur de classes)
+# <a name="how-to-create-inheritance-between-types-class-designer"></a>Guide pratique pour créer un héritage entre les types (Concepteur de classes)
 Pour créer une relation d'héritage entre deux types sur un diagramme de classes à l'aide du Concepteur de classes, connectez le type de base à son ou ses types dérivés. Vous pouvez avoir une relation d'héritage entre deux classes, entre une classe et une interface ou entre deux interfaces.  
   
 ### <a name="to-create-an-inheritance-between-types"></a>Pour créer un héritage entre des types  

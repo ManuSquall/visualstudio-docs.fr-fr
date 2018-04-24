@@ -1,23 +1,20 @@
 ---
-title: "Règles d’utilisation des outils de profilage | Microsoft Docs"
-ms.custom: 
+title: Règles d’utilisation des outils de profilage | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5585f6828677387d07f00039634fdfe904216ef2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cdd5733d950a0b7f2bdd2c433fa7bb91e9e02ec1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profiling-tools-usage-rules"></a>Règles d’utilisation des outils de profilage
 Les règles de performance de la catégorie d’utilisation des outils de profilage fournissent des conseils sur l’utilisation du profileur pour collecter des données de manière plus efficace.  

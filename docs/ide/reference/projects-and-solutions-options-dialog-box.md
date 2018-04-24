@@ -1,12 +1,10 @@
 ---
-title: "Projets et solutions, boîte de dialogue Options | Microsoft Docs"
-ms.custom: 
+title: Projets et solutions, boîte de dialogue Options | Microsoft Docs
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
 - VS.ToolsOptionsPages.Projects.Locations
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d7b122c66c4fd49cbc8939e5770c56fe8bc48b78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bd72380cbc17d0ff161a296e1ef08e238159da43
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projets et solutions, boîte de dialogue Options
 Définit le comportement [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] des projets et des solutions. Pour accéder à ces options, sélectionnez **Outils > Options**, développez **Projets et solutions** et cliquez sur **Général**.

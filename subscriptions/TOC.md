@@ -33,7 +33,6 @@
 #### [Opsgility](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Formation pour Xamarin University](vs-xamarin.md)
-#### [Microsoft E-Learning](vs-elearn.md)
 #### [Abonnement au magazine MSDN](vs-msdn.md)
 ### Avantages du support
 #### [Conversation Azure Advisory](vs-azure-advisory-chat.md)
@@ -56,7 +55,7 @@
 #### [Vidéo sur l’intégration](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)
 ### [Utilisation du portail d’administration](using-admin-portal.md)
 #### [Attribution d’abonnements](assign-license.md)
-#### [Renvoyer des e-mails d’attribution](resend-assignment-email.md)
+#### [Renvoyer des messages électroniques d’assignation](resend-assignment-email.md)
 #### [Modification d’abonnements](edit-license.md)
 #### [Suppression d’abonnements](delete-license.md)
 #### [Rechercher un abonnement](search-license.md)

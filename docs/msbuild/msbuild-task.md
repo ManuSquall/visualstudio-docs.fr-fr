@@ -2,11 +2,8 @@
 title: Tâche MSBuild | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild task [MSBuild]
 - MSBuild, MSBuild task
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
-caps.latest.revision: 32
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5ecaef8f384a9597243fbe2026290e65295da8d
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 04b76df9a174bcbc03269e42ce37b1103c3bfd2f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild-task"></a>MSBuild, tâche
 Génère des projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] à partir d’un autre projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -40,7 +36,7 @@ Génère des projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes
 |---------------|-----------------|  
 |`BuildInParallel`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, les projets spécifiés dans le paramètre `Projects` sont générés en parallèle dans la mesure du possible. La valeur par défaut est `false`.|  
 |`Projects`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les fichiers projet à générer.|  
-|`Properties`|Paramètre `String` facultatif.<br /><br /> Liste délimitée par des points-virgules de paires nom/valeur de propriété à appliquer en tant que propriétés globales au projet enfant. Si vous spécifiez ce paramètre, son fonctionnement revient à définir des propriétés pourvues du commutateur **/property** lorsque vous procédez à une génération avec [MSBuild.exe](../msbuild/msbuild-command-line-reference.md). Par exemple :<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Si vous transmettez des propriétés au projet via le paramètre `Properties`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] crée une instance du projet même si le fichier projet a déjà été chargé. Si une instance du projet a été créée, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] la considère comme un autre projet pourvu de propriétés globales différentes qui peut être généré en parallèle avec d’autres instances du projet. Par exemple, une configuration Release peut être générée en même temps qu’une configuration Debug.|  
+|`Properties`|Paramètre `String` facultatif.<br /><br /> Liste délimitée par des points-virgules de paires nom/valeur de propriété à appliquer en tant que propriétés globales au projet enfant. Si vous spécifiez ce paramètre, son fonctionnement revient à définir des propriétés pourvues du commutateur **/property** lorsque vous procédez à une génération avec [MSBuild.exe](../msbuild/msbuild-command-line-reference.md). Exemple :<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Si vous transmettez des propriétés au projet via le paramètre `Properties`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] crée une instance du projet même si le fichier projet a déjà été chargé. Si une instance du projet a été créée, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] la considère comme un autre projet pourvu de propriétés globales différentes qui peut être généré en parallèle avec d’autres instances du projet. Par exemple, une configuration Release peut être générée en même temps qu’une configuration Debug.|  
 |`RebaseOutputs`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, les chemins d’accès relatifs des éléments de sortie cibles des projets générés sont modifiés par rapport au projet appelant. La valeur par défaut est `false`.|  
 |`RemoveProperties`|Paramètre `String` facultatif.<br /><br /> Spécifie l’ensemble des propriétés globales à supprimer.|  
 |`RunEachTargetSeparately`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, la tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] appelle une à une chaque cible de la liste transmise à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], au lieu de les appeler toutes en même temps. Définir ce paramètre sur `true` garantit que les cibles ultérieures seront appelées même en cas d’échec des cibles précédemment appelées. Dans le cas contraire, une erreur de génération arrêterait l’appel de toutes les cibles suivantes. La valeur par défaut est `false`.|  

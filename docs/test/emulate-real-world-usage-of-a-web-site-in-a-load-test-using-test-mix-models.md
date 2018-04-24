@@ -1,20 +1,20 @@
 ---
 title: Émulation de l’utilisation réelle d’un site web pour les tests de charge dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load model, specifying
 - load test load model, specifying
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b5df4fe7db024ea7d958494faf4f332fc1a30db5
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0458135040209f79648ca299bc56ba3acae21908
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-models"></a>Émuler l’utilisation réelle attendue d’un site web ou d’une application dans un test de charge à l’aide de modèles de combinaison de tests
 
@@ -26,16 +26,16 @@ Vous utilisez les options de modélisation de charge pour prédire l’utilisati
 
 Vous pouvez spécifier l'une des options de modèle de combinaison de tests suivantes pour votre scénario de test de charge :
 
--   **Sur la base du nombre total de tests :** Détermine les tests de performances web ou tests unitaires qui sont exécutés quand un utilisateur virtuel démarre une itération de test. À la fin du test de charge, le nombre de fois où un test particulier exécuté correspond à la distribution de test assignée. Utilisez ce modèle de combinaison de tests lorsque vous basez la combinaison de tests sur les pourcentages de transaction dans un journal IIS ou dans les données de production. Pour plus d’informations, consultez [Pourcentage basé sur les tests démarrés](#BasedOnTestsStarted).
+-   **Sur la base du nombre total de tests :** détermine les tests de performances web ou tests unitaires qui sont exécutés quand un utilisateur virtuel démarre une itération de test. À la fin du test de charge, le nombre de fois où un test particulier exécuté correspond à la distribution de test assignée. Utilisez ce modèle de combinaison de tests lorsque vous basez la combinaison de tests sur les pourcentages de transaction dans un journal IIS ou dans les données de production. Pour plus d’informations, consultez [Pourcentage basé sur les tests démarrés](#BasedOnTestsStarted).
 
--   **Sur la base du nombre d’utilisateurs virtuels :** Détermine le pourcentage des utilisateurs virtuels qui exécuteront un test de performances web ou un test unitaire particulier. À tout point pendant le test de charge, le nombre d'utilisateurs qui exécutent un test particulier correspond d'aussi près que possible à la distribution assignée de la manière la plus fidèle possible. Utilisez ce modèle de combinaison de tests lorsque vous basez la combinaison de tests sur le pourcentage d'utilisateurs qui exécutent un test particulier. Pour plus d’informations, consultez [Pourcentage basé sur les utilisateurs virtuels](#PercentageBasedonVirtualUsers).
+-   **Sur la base du nombre d’utilisateurs virtuels :** détermine le pourcentage des utilisateurs virtuels qui vont exécuter un test de performances web ou un test unitaire particulier. À tout point pendant le test de charge, le nombre d'utilisateurs qui exécutent un test particulier correspond d'aussi près que possible à la distribution assignée de la manière la plus fidèle possible. Utilisez ce modèle de combinaison de tests lorsque vous basez la combinaison de tests sur le pourcentage d'utilisateurs qui exécutent un test particulier. Pour plus d’informations, consultez [Pourcentage basé sur les utilisateurs virtuels](#PercentageBasedonVirtualUsers).
 
--   **Sur la base du rythme de l’utilisateur :** Au cours du test de charge, chaque test de performances web ou test unitaire est exécuté un nombre de fois spécifié par utilisateur et par heure. Utilisez ce modèle de combinaison de tests lorsque vous souhaitez que les utilisateurs virtuels exécutent des tests à un certain rythme dans le test de charge. Pour plus d’informations, consultez [Combinaison de tests rythmée](#PacingTestMix).
+-   **Sur la base du rythme de l’utilisateur :** au cours du test de charge, chaque test de performances web ou test unitaire est exécuté un nombre spécifique de fois, par utilisateur et par heure. Utilisez ce modèle de combinaison de tests lorsque vous souhaitez que les utilisateurs virtuels exécutent des tests à un certain rythme dans le test de charge. Pour plus d’informations, consultez [Combinaison de tests rythmée](#PacingTestMix).
 
     > [!TIP]
     > Quand choisir **un pourcentage de combinaison de tests** et quand choisir **un pourcentage basé sur les utilisateurs virtuels** ? La différence entre ces deux choix est importante lorsque certains tests dans la combinaison de tests ont une durée beaucoup plus longue que d'autres. Dans cette situation, vous devrez probablement choisir **un pourcentage basé sur les utilisateurs virtuels**. Ce choix aide à éviter une série de tests au cours de laquelle trop d'utilisateurs risquent d'effectuer des tests de longue durée. Toutefois, si les tests ont tous une durée comparable, vous pouvez sans risque choisir **le pourcentage de combinaison de tests**.
 
--   **Sur la base de l’ordre de tests séquentiel :** Chaque utilisateur virtuel exécute les tests de performances web ou les tests unitaires dans l’ordre dans lequel les tests sont définis dans le scénario. L'utilisateur virtuel continue à parcourir les tests dans cet ordre jusqu'à ce que le test de charge soit terminé. Pour plus d’informations, consultez [Ordre Séquentiel](#SequentialOrder).
+-   **Sur la base de l’ordre de tests séquentiel :** chaque utilisateur virtuel exécute les tests de performances web ou les tests unitaires dans l’ordre dans lequel les tests sont définis dans le scénario. L'utilisateur virtuel continue à parcourir les tests dans cet ordre jusqu'à ce que le test de charge soit terminé. Pour plus d’informations, consultez [Ordre Séquentiel](#SequentialOrder).
 
 ###  <a name="BasedOnTestsStarted"></a> Pourcentage basé sur les tests démarrés
  Pour chaque test de la combinaison, vous pouvez spécifier un pourcentage qui détermine sa fréquence de sélection comme prochain test à exécuter. Par exemple, vous pouvez assigner les pourcentages suivants à trois tests :

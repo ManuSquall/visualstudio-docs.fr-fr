@@ -1,23 +1,20 @@
 ---
-title: "Profilage des tests de charge ASP.NET | Microsoft Docs"
-ms.custom: 
+title: Profilage des tests de charge ASP.NET | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: a742732817f926b9ea1b74b31ab97acfb9e8f4ec
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 58e4e43e66401323772dbb14a43c47f63004130d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profiling-aspnet-load-tests"></a>Profilage des tests de charge ASP.NET
 Vous pouvez collecter les données de profilage à partir de tests web [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] automatisés que vous exécutez sur les projets de sites web ASP.NET. Vous pouvez collecter des données d’échantillonnage et d’interaction de couche. Pour plus d’informations, consultez les rubriques suivantes :  

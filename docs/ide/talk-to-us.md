@@ -2,9 +2,6 @@
 title: Nous contacter | Microsoft Docs
 ms.custom: ''
 ms.date: 02/19/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -17,11 +14,11 @@ ms.technology:
 - vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: addc6e929a1a72f385189f0a0408ea26e2a3d829
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 12f6e61a967d7d551013926dbd580c706192bf3a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="talk-to-us"></a>Nous contacter
 Vos idées d’améliorations concernant nos produits et notre documentation nous intéressent. Nous ne pouvons pas toujours vous répondre personnellement, mais nous veillerons à ce que vos commentaires parviennent à la bonne personne ou équipe.  

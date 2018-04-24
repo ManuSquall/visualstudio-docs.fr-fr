@@ -1,7 +1,7 @@
 ---
 title: Faire un zoom sur les graphiques des résultats des tests de charge dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.monitor.graphzoom
 helpviewer_keywords:
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: d5b65107655d27da5ace994ac56fc989fc83004c
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 9e2379161051c821af07b6da5b102177178a0d7f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Comment : faire un zoom sur une région du graphique des résultats d'un test de charge
 
@@ -55,7 +55,7 @@ Une fois un test de charge terminé, vous pouvez utiliser les barres de zoom pou
 
      \- ou -
 
-     Voir les détails d'un test de charge exécuté par le passé. Pour plus d’informations, consultez [Guide pratique pour accéder aux résultats des tests de charge pour l’analyse](../test/how-to-access-load-test-results-for-analysis.md).
+     Voir les détails d'un test de charge exécuté par le passé. Pour plus d’informations, consultez [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md).
 
 3.  Choisissez **Graphiques** si vos graphiques ne sont pas affichés.
 

@@ -1,30 +1,26 @@
 ---
 title: Personnaliser Help Viewer | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - hv_options
 helpviewer_keywords:
 - Help Viewer, Viewer Options
 - Viewer Options [Help Viewer]
 ms.assetid: 9c0bc950-7323-4f0f-8de2-0b0af9a42b85
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0aa2503e7e729a632c677a317493b85a6822741
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 44dfbc4f4a1fe93635e827527684abe2048b36aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-the-help-viewer"></a>Personnaliser Help Viewer
 Vous pouvez personnaliser la disposition des fenêtres Help Viewer, ainsi que d’autres options telles que la taille de la police, le nombre maximal de résultats et l’affichage ou non du contenu en anglais.

@@ -1,7 +1,7 @@
 ---
 title: Dépannage des contrôleurs de test et des agents de test dans Visual Studio | Microsoft Docs
 ms.date: 10/20/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 37ff6e82c61e55dc162287ce944008cc09e37204
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Stratégies de dépannage des contrôleurs de test et des agents de test lors de tests de charge
 
@@ -82,7 +82,7 @@ Cet article décrit certains problèmes courants que vous pouvez rencontrer quan
 ## <a name="binding-a-test-controller-to-a-network-adapter"></a>Liaison entre un contrôleur de test et une carte réseau
  Lors de la configuration d’un agent de test, vous pouvez recevoir l’erreur suivante :
 
- **Erreur 8110. Impossible de se connecter à l’ordinateur contrôleur spécifié ou à accéder à l’objet contrôleur.**
+ **Erreur 8110. Impossible de se connecter à l’ordinateur contrôleur spécifié ou à accéder à l’objet contrôleur.**
 
  Cette erreur peut être provoquée par l'installation du contrôleur de test sur un ordinateur doté de plusieurs cartes réseau.
 

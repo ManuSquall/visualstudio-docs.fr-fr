@@ -1,10 +1,7 @@
 ---
-title: "Options, Éditeur de texte, C#, Avancé │ Microsoft Docs"
+title: Options, Éditeur de texte, C#, Avancé │ Microsoft Docs
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - XML documentation, creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d6cf8b655151e9b07111b6ac6fd64b6ad3c845f
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: 0df7b6b38f8982e92d3b7cdee3165ae19e5567a4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 
@@ -58,7 +55,7 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
 
 - Mettre en surbrillance les mots clés associés sous le curseur
 
-## <a name="outlining"></a>Mode Plan
+## <a name="outlining"></a>mode Plan
 
 - Passer en mode Plan à l'ouverture des fichiers
 

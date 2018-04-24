@@ -1,13 +1,10 @@
 ---
-title: "Options, boîte de dialogue (Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Options, boîte de dialogue (Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.toolsoptionspages
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - Options dialog box, development environment
 - tools [Visual Studio], customizing
 ms.assetid: 02b09877-1df1-4531-a0d1-a4ca17c7f857
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc5a5013b402d01db8aa84134c9a2740d0ff6304
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: df56cdef77c8f189a27d52ea624359bb8dfe3bca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-dialog-box-visual-studio"></a>Options, boîte de dialogue (Visual Studio)
 La boîte de dialogue **Options** vous permet de configurer l’environnement de développement intégré (IDE) selon vos besoins. Par exemple, vous pouvez établir un emplacement d’enregistrement par défaut pour vos projets, modifier l’apparence et le comportement par défaut des fenêtres et créer des raccourcis pour les commandes fréquemment utilisées. Il existe également des options spécifiques à vos plateforme et langage de développement. Vous pouvez accéder aux **Options** à partir du menu **Outils**.  

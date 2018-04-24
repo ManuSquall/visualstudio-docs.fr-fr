@@ -1,19 +1,19 @@
 ---
 title: Créer un paramètre de test pour un test de charge distribué dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - test settings, for distributed load tests
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 38bcbe49850929105199cef360956f29f22a8d0c
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 30b9cf45b60b108e51cc1cbe5defd5e8d8cac0e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Comment : créer un paramètre de test pour un test de charge distribué
 
@@ -192,4 +192,4 @@ Le fichier de paramètres de test est supprimé de votre solution. Cette modific
 ## <a name="see-also"></a>Voir aussi
 
 - [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md)
-- [Collecter des informations de diagnostic avec des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
+- [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)

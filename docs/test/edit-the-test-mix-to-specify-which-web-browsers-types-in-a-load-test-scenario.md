@@ -1,7 +1,7 @@
 ---
 title: Combinaison de tests de navigateur pour les tests de charge dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, web browser types
 - load tests, scenarios
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: bae150fcd528166121f49a7018be0a71d7cbf37f
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: be0bd036c907f852028f6a9cccc798742e624184
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modifier la combinaison de tests pour spécifier les types de navigateur web dans un scénario de test de charge
 
@@ -70,12 +70,12 @@ La *combinaison de navigateurs* vous permet de simuler une charge avec plus de r
  Le bouton **Distribuer** permet d’allouer les valeurs en pourcentage de manière égale entre tous les éléments. Par exemple, si trois éléments sont disponibles et que vous choisissez **Distribuer**, les pourcentages sont 34, 33 et 33.
 
 > [!WARNING]
-> Le bouton **Distribuer** a priorité sur les éléments qui sont verrouillés.
+> Le bouton **Distribuer** permet de remplacer les éléments verrouillés.
 
  Il est également possible de taper les valeurs en pourcentage directement dans la colonne **%** au lieu d’utiliser les curseurs. Si vous entrez directement une valeur en pourcentage, les autres éléments ne s'ajustent pas automatiquement.
 
 > [!NOTE]
-> Les curseurs sont désactivés quand le total n’atteint pas 100 % ou quand les valeurs en pourcentage entrées dans la colonne **%** sont des nombres décimaux.
+> Les curseurs sont désactivés quand le total n’atteint pas 100 % ou quand les valeurs en pourcentage entrées dans la colonne **%** sont des nombres décimaux.
 
  Lorsque vous entrez des valeurs en pourcentage manuellement, vous devez vous assurer que la somme de tous les éléments est 100 %. Lorsque vous enregistrez une combinaison, si la somme n'est pas égale à 100 %, vous serez invité à accepter les valeurs en pourcentage telles qu'elles sont ou à revenir en arrière pour les ajuster. Si vous choisissez de les accepter tels qu'ils sont, ils seront recalculés au prorata de 100 %.  Par exemple, si deux éléments sont disponibles et que vous les définissez manuellement à 80 % et 40 %, le premier élément aura pour valeur 66,67 % (80 divisé par 120) et le deuxième élément sera défini à 33,33 % (40 divisé par 120).
 

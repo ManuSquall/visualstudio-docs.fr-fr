@@ -1,16 +1,15 @@
 ---
-title: "Éditeur de code source | Microsoft Docs"
-description: "Utilisation de l’éditeur de code source dans Visual Studio pour Mac"
+title: Éditeur de code source
+description: Utilisation de l’éditeur de code source dans Visual Studio pour Mac
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: af5c66d8bd2b9fd16f7a0e7d5d9796ada1ede022
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 8d2874b731bf0ad54b4a596034a23af8815fa502
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="source-editor"></a>Éditeur de code source
 

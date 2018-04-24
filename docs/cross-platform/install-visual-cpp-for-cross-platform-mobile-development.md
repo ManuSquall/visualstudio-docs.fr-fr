@@ -1,26 +1,22 @@
 ---
-title: "Installer Visual C++ pour le développement mobile multiplateforme | Microsoft Docs"
-ms.custom: 
+title: Installer Visual C++ pour le développement mobile multiplateforme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
+manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b9f87e95a2d4088bb72890ef3f9508d9c5e02abc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 64bdc654bc1bcd6721cc29052a9409e00f6afd07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installer Visual C++ pour le développement mobile multiplateforme
 [Visual C++ pour le développement mobile multiplateforme](http://go.microsoft.com/fwlink/p/?LinkId=536383) est un composant installable de Visual Studio 2015. Il inclut des modèles Visual Studio multiplateformes et installe les outils multiplateformes ainsi que les Kits de développement logiciel pour une prise en main rapide, sans que vous n’ayez à effectuer les recherches, le téléchargement ni la configuration. Vous pouvez utiliser ces outils dans Visual Studio pour créer, modifier, déboguer et tester facilement des projets multiplateformes. Cette rubrique décrit comment installer les outils et les logiciels tiers requis pour développer des applications multiplateformes à l’aide de Visual Studio. Pour obtenir une vue d’ensemble du composant, consultez [Développement multiplateforme en Visual C++ pour appareils mobiles](http://go.microsoft.com/fwlink/p/?LinkId=536387)  

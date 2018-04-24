@@ -1,7 +1,7 @@
 ---
 title: Créer un plug-in de test de charge dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.loadtestplugin
 helpviewer_keywords:
@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2de6da0a38bd8ff7568dc102514ac24d4217bbb7
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 6e585fe66bde573f8bb133b0c8cda0900b0d6d16
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Comment : créer un plug-in de test de charge
 
@@ -38,7 +38,7 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
 
      La boîte de dialogue **Ajouter un nouveau projet** s’affiche.
 
-4.  Sous **Modèles installés**, sélectionnez **Visual C#**.
+4.  Sous **Modèles installés**, sélectionnez **Visual C#**.
 
 5.  Dans la liste des modèles, sélectionnez **Bibliothèque de classes**.
 
@@ -48,7 +48,7 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
 
 8.  Le nouveau projet de bibliothèque de classes est ajouté à l'Explorateur de solutions et la nouvelle classe s'affiche dans l'éditeur de code.
 
-9. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le dossier **Références** dans la nouvelle bibliothèque de classes et sélectionnez **Ajouter une référence**.
+9. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
 
 10. La boîte de dialogue **Ajouter une référence** s’affiche.
 
@@ -62,7 +62,7 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
 
 14. La boîte de dialogue **Ajouter une référence** s’affiche.
 
-15. Choisissez l’onglet **Projets** et sélectionnez le projet de bibliothèque de classes.
+15. Choisissez l’onglet **Projets**, puis sélectionnez le projet de bibliothèque de classes.
 
 16. Cliquez sur **OK**.
 
@@ -90,9 +90,9 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
     > [!WARNING]
     > Vous pouvez obtenir une erreur semblable au cas suivant lorsque vous exécutez un test de performances de site web ou un test de charge qui utilise votre plug-in :
     >
-    > **Échec de la requête : Exception dans l’événement de \<plug-in> : Impossible de charger le fichier ou fichier d’assembly ’\<fichier "nom plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null’ ou une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
+    > **Échec de la requête : exception dans le \<plug-in> événement : Impossible de charger le fichier ou l’assembly '\<"Nom du plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou l’une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
     >
-    > Ceci se produit si vous avez changé le code de vos plug-ins et créé une version **(Version=0.0.0.0)** de la DLL, mais que le plug-in référence encore la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
+    > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
     > 1.  Dans votre projet de test de performances de site web et de charge, un message d'avertissement s'affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
     > 2.  Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.

@@ -1,26 +1,23 @@
 ---
-title: "Collecte de données concurrentielles pour une application web ASP.NET en utilisant la ligne de commande du profileur | Microsoft Docs"
-ms.custom: 
+title: Collecte de données concurrentielles pour une application web ASP.NET en utilisant la ligne de commande du profileur | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
 - profiling tools,concurrency method
 ms.assetid: 0ba431c1-9eaf-4af9-8ce0-669c0835cdc2
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 6f20e045eb6f0b801cffafb3224971bec2354cc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 78e98abaf0d33b4b7836812bc6ae35d1d34f3eb5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Collecte de données concurrentielles pour une application web ASP.NET en utilisant la ligne de commande du profileur
 La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vous permet de collecter des données de conflit de ressources.  
@@ -41,7 +38,7 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 |Tâche|Contenu associé|  
 |----------|---------------------|  
 |**Profiler à l’aide de la méthode d’échantillonnage**|-   [Collecte de statistiques d'applications en utilisant l'échantillonnage](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecte de données de temporisation détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)|  
 |**Profiler l’allocation de mémoire et le garbage collection**|-   [Collecte des données de mémoire](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
   
 ### <a name="profiling-concurrency-issues"></a>Profilage des problèmes de concurrence  

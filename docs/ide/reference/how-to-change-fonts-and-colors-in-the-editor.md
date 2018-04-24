@@ -1,12 +1,10 @@
 ---
-title: "Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur | Microsoft Docs"
-ms.custom: 
+title: Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
 - text, color
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - text, fonts
 - editors, text color
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 58053640dabb74a8044eeca70f03673656c0bc26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0510cbc9d6f98f9c36347c6be93d768e483aa24a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur
 Vous pouvez modifier le type de police par défaut, ajuster la taille de police et modifier les couleurs de premier plan et d’arrière-plan pour divers **éléments affichés** sous forme de texte dans l’éditeur de code. Lors de la modification des paramètres de police, gardez à l’esprit les informations suivantes :  

@@ -1,14 +1,12 @@
 ---
-title: "Refactoriser un champ en propriété dans Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Refactoriser un champ en propriété dans Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/26/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 f1_keywords:
 - vs.csharp.refactoring.encapsulatefield
 dev_langs:
@@ -16,11 +14,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 006f161df8128e1d505947a3e2907a01c4d3915e
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: b3bb30e262374324952e38cf8b783a96ff6b3f9a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Encapsuler un champ (refactorisation)
 

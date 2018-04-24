@@ -1,28 +1,26 @@
 ---
 title: -Clean (devenv.exe) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - builds [Team System], cleaning files
 - clean Devenv switch
 - /clean Devenv switch
 - Devenv, /clean switch
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5982cfd7b9201008f4ecc5930041200fd4980dca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8ec88191374e06adfce0652ffd777ad971c930c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 Nettoie tous les fichiers et répertoires de sortie intermédiaires.  
@@ -38,10 +36,10 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
  Obligatoire. Chemin complet et nom du fichier solution ou fichier projet.  
   
  /project `ProjName`  
- Facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
+ Facultative. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
   
  /projectconfig `ProjConfigName`  
- Facultatif. Nom d’une configuration de build de projet à utiliser lors du nettoyage du `/project` nommé.  
+ Facultative. Nom d’une configuration de build de projet à utiliser lors du nettoyage du `/project` nommé.  
   
 ## <a name="remarks"></a>Notes  
  Ce commutateur exécute la même fonction que la commande de menu **Nettoyer la solution** dans l’environnement de développement intégré (IDE).  

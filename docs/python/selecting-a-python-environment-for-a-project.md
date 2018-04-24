@@ -1,26 +1,21 @@
 ---
-title: Sélectionner un environnement pour un projet | Microsoft Docs
+title: Sélection d’un environnement pour un projet
 description: L’Explorateur de solutions de Visual Studio permet de choisir l’interpréteur (environnement) Python à utiliser systématiquement pour un projet donné, en ignorant l’environnement par défaut. Vous pouvez également créer et gérer des environnements virtuels.
-ms.custom: ''
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 28070c9864162c7af5c68644dedb296107af81d0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Sélectionner un environnement et un interpréteur Python à utiliser dans un projet
 
@@ -111,7 +106,7 @@ Dans l’Explorateur de solutions, développez le nœud d’un environnement don
 
 Pour installer de nouveaux packages, cliquez avec le bouton droit sur l’environnement, puis sélectionnez **Installer un package Python...**  pour basculer vers l’onglet **Packages** sur la fenêtre **Environnements Python**. Entrez un critère recherche (en général, le nom de package) : Visual Studio affichera les packages correspondants.
 
-Dans Visual Studio, les packages (et les dépendances) sont téléchargés à partir de [Python Package Index (PyPI)](https://pypi.python.org/pypi), où vous pouvez également rechercher les packages disponibles. La barre d’état et la fenêtre Sortie de Visual Studio affichent des informations sur l’installation. Pour désinstaller un package, cliquez avec le bouton sur celui-ci et sélectionnez **Supprimer**.
+Dans Visual Studio, les packages (et les dépendances) sont téléchargés à partir de [Python Package Index (PyPI)](https://pypi.org), où vous pouvez également rechercher les packages disponibles. La barre d’état et la fenêtre Sortie de Visual Studio affichent des informations sur l’installation. Pour désinstaller un package, cliquez avec le bouton sur celui-ci et sélectionnez **Supprimer**.
 
 Sachez que les entrées affichées ne sont pas toujours exactes, et que l’installation et la désinstallation ne sont pas forcément fiables ou disponibles. Visual Studio utilise le gestionnaire de packages pip s’il est disponible, et le télécharge et l’installe si besoin. Visual Studio peut également utiliser le gestionnaire de packages easy_install. Les packages installés en ligne de commande avec `pip` ou `easy_install` s’affichent également.
 

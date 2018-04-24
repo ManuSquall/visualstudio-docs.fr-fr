@@ -1,29 +1,25 @@
 ---
-title: "Classes Visual C++ dans le Concepteur de classes | Microsoft Docs"
-ms.custom: 
+title: Classes Visual C++ dans le Concepteur de classes | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
 helpviewer_keywords:
 - Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 813e52dec03975c6573ed5eb75c7b5c3ed9bb9fd
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 3a71c74569ee17728c5d1423d8aeb19d1d9af554
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classes Visual C++ dans le Concepteur de classes
 Le Concepteur de classes prend en charge les classes C++ et visualise les classes C++ natives de la même façon que les formes de classe Visual Basic et C#, à la différence près que les classes C++ peuvent avoir plusieurs relations d’héritage. Vous pouvez développer la forme de classe pour afficher plus de champs et de méthodes dans la classe, ou la réduire pour économiser l’espace.  

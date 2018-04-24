@@ -1,16 +1,13 @@
 ---
-title: "Propriétés du projet Clang (Android C++) | Microsoft Docs"
-ms.custom: 
+title: Propriétés du projet Clang (Android C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 10/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 663140ea-a568-472b-a79a-dfea8818e06a
 author: corob
 ms.author: mblome
-manager: ghogen
+manager: douge
 f1_keywords:
 - VC.Project.VCClangCompilerTool.AdditionalIncludeDirectories
 - VC.Project.VCClangCompilerTool.DebugInformationFormat
@@ -46,11 +43,11 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 26e212b10f426bd3a5af0845cc5212ceaa747eb8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8a1fd92a41f145e097615bea4434ea80fd592416
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clang-project-properties-android-c"></a>Propriétés du projet Clang (Android C++)
 
@@ -74,8 +71,8 @@ Vérification de la sécurité | La vérification de la sécurité permet de dé
 PIC (Position Independent Code) | Générez du code PIC (Position Independent Code) à utiliser dans une bibliothèque partagée.
 Utiliser des enums courts | Un type enum utilise uniquement le nombre d’octets requis par l’ensemble des valeurs possibles d’entrée.
 Activer les informations de type au moment de l’exécution | Ajoute le code permettant de vérifier les types d’objet C++ à l’exécution (informations de type au moment de l’exécution).     (frtti, fno-rtti)
-Norme du langage C | Détermine la norme du langage C. | **Default**<br>**C89** : norme du langage C89.<br>**C99** : norme du langage C99.<br>**C11** : norme du langage C11.<br>**C99 (Dialecte GNU)** : norme du langage C99 (Dialecte GNU).<br>**C11 (Dialecte GNU)** : norme du langage C11 (Dialecte GNU).<br>
-Norme du langage C++ | Détermine la norme du langage C++. | **Default**<br>**C++03** : norme du langage C++03.<br>**C++11** : norme du langage C++11.<br>**C++14** : norme du langage C++14.<br>**C++03 (Dialecte GNU)** : norme du langage C++03 (Dialecte GNU).<br>**C++11 (Dialecte GNU)** : norme du langage C++11 (Dialecte GNU).<br>**C++14 (Dialecte GNU)** : norme du langage C++14 (Dialecte GNU).<br>
+Norme du langage C | Détermine la norme du langage C. | **Default**<br>**C89** : norme du langage C89.<br>**C99** : norme du langage C99.<br>**C11** : norme du langage C11.<br>**C99 (Dialecte GNU)**  : norme du langage C99 (Dialecte GNU).<br>**C11 (Dialecte GNU)**  : norme du langage C11 (Dialecte GNU).<br>
+Norme du langage C++ | Détermine la norme du langage C++. | **Default**<br>**C++03** : norme du langage C++03.<br>**C++11** : norme du langage C++11.<br>**C++14** : norme du langage C++14.<br>**C++03 (Dialecte GNU)**  : norme du langage C++03 (Dialecte GNU).<br>**C++11 (Dialecte GNU)**  : norme du langage C++11 (Dialecte GNU).<br>**C++14 (Dialecte GNU)**  : norme du langage C++14 (Dialecte GNU).<br>
 Définitions de préprocesseur | Définit des symboles de prétraitement pour votre fichier source. (-D)
 Annuler la définition de définitions de préprocesseur | Spécifie l’annulation de la définition d’une ou de plusieurs définitions du préprocesseur.  (-U [macro])
 Annulation de la définition de toutes les définitions du préprocesseur | Annule la définition de toutes les valeurs de préprocesseur précédemment définies.  (-undef)
@@ -84,7 +81,7 @@ En-tête précompilé | Créer/utiliser un en-tête précompilé : active la cr�
 Fichier d’en-tête précompilé | Spécifie le nom du fichier d’en-tête à utiliser pour le fichier d’en-tête précompilé. Ce fichier est également ajouté aux Fichiers Include forcés durant la génération
 Répertoire du fichier d’en-tête précompilé de sortie | Spécifie le répertoire de l’en-tête précompilé généré. Ce répertoire est également ajouté aux Autres répertoires Include durant la génération
 Compiler l’en-tête précompilé comme | Sélectionnez l’option de langage de compilation pour le fichier d’en-tête précompilé (-x c-header, -x c++-header). | **Compiler en code C** : compilez en code C.<br>**Compiler en code C++** : compilez en code C++.<br>
-Compiler en | Permet de sélectionner l’option de langage de compilation pour les fichiers .c et .cpp.  'Default' effectue la détection d’après l’extension (.c ou .cpp). (-x c, -x c++) | **Par défaut** : option par défaut.<br>**Compiler en code C** : compile en code C.<br>**Compiler en code C++** : compile en code C++.<br>
+Compiler en | Permet de sélectionner l’option de langage de compilation pour les fichiers .c et .cpp.  'Default' effectue la détection d’après l’extension (.c ou .cpp). (-x c, -x c++) | **Par défaut** : option par défaut.<br>**Compiler en code C** : compile en code C.<br>**Compiler en code C++**  : compile en code C++.<br>
 Fichiers Include forcés | un ou plusieurs fichiers Include forcés.     (-include [name])
 Compilation multiprocesseur | Compilation multiprocesseur.
 Options supplémentaires | Options supplémentaires.

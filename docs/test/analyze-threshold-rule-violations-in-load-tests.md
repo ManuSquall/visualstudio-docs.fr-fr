@@ -1,7 +1,7 @@
 ---
 title: Analyse des violations de règles de seuil dans les tests de charge dans l’analyseur de test de charge dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.monitor.threshholdresult
 helpviewer_keywords:
@@ -14,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 761d277612242cc4b14b0a24d1a2ac7663b2b152
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 42463515a8c3da9661f22d1a39c8dd8346c63aea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analyse des violations de règles de seuil dans les tests de charge dans l'Analyseur de test de charge
 
@@ -44,7 +44,7 @@ Si des violations se produisent, un lien hypertexte **Violations de seuil** appa
 > [!NOTE]
 > Vous pouvez trier la table en choisissant les en-têtes de colonne.
 
- Pour plus d’informations, consultez [Analyse des résultats et des erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+ Pour plus d’informations, consultez [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>Affichage des violations de seuil dans le volet Compteurs
 
@@ -72,10 +72,10 @@ Si des violations se produisent, un lien hypertexte **Violations de seuil** appa
 
  Vous pouvez afficher les violations de seuils sur le graphique. Comme sur le volet **Compteurs**, des icônes indiquent les violations de seuil sur le graphique. Les icônes apparaissent sur le graphique à côté du point de données où la violation de seuil s'est produite. Si une violation de seuil se produit sur un compteur qui n’apparaît pas sur le graphique, vous pouvez l’ajouter au graphique en le faisant glisser depuis le volet **Compteurs** vers le graphique.
 
- Pour plus d’informations, consultez [Analyse des résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md).
+ Pour plus d’informations, consultez [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Spécification des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Analyse les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+- [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

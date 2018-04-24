@@ -1,13 +1,10 @@
 ---
 title: Guide pratique pour ajouter des commentaires aux diagrammes de classes (Concepteur de classes) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - class diagrams, adding comment shapes
 - comment shapes
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc92b589cb956eaa31c22a84dce075d6599297d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a8e2b17e0d05faf17e7d6c4e2ed65841229f2b15
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Comment : ajouter des commentaires aux diagrammes de classes (Concepteur de classes)
 Vous pouvez utiliser des zones de commentaire pour annoter les diagrammes de classes. Une zone de commentaire comprend la propriété **Text** dans laquelle vous pouvez taper du texte. Les zones de commentaire sont présentes uniquement sur la surface du diagramme et pas dans le code.  

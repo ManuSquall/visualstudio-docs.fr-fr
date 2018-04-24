@@ -1,23 +1,19 @@
 ---
-title: "Guide pratique pour attacher le profileur à une application .NET Framework autonome pour collecter des données de mémoire en utilisant la ligne de commande │ Microsoft Docs"
-ms.custom: 
+title: Guide pratique pour attacher le profileur à une application .NET Framework autonome pour collecter des données de mémoire en utilisant la ligne de commande │ Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ebe5012ea623e82064dda2b1408d3aaf66de2c38
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 6c81443332a05fbd60a295613c5f34c579482199
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Comment : attacher le profileur à une application .NET Framework autonome pour collecter des données de mémoire en utilisant la ligne de commande
 

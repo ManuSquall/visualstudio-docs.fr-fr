@@ -2,17 +2,17 @@
 layout: LandingPage
 author: gewarren
 ms.author: gewarren
-title: "Utiliser les outils de données dans Visual Studio pour développer des solutions de données | Documents Microsoft"
-description: "En savoir plus sur les outils pour solutions de données dans Visual Studio."
+title: Utiliser les outils de données dans Visual Studio pour développer des solutions de données
+description: En savoir plus sur les outils pour solutions de données dans Visual Studio.
 ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: a3b0473237595dee29de024c7cbc04b6db82c93a
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: f8dbea90a21da05b67fdc730a6965d3f295807ca
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Utiliser les outils de données dans Visual Studio pour développer des solutions de données
 
@@ -113,7 +113,7 @@ Découvrez comment utiliser les outils de données dans Visual Studio pour déve
 
 ---
 
-<hr>    
+<hr>
 <h2>Référence</h2>
 
 <ul class="panelContent cardsW">

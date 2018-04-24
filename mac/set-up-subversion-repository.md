@@ -1,16 +1,15 @@
 ---
-title: "Configuration d’un dépôt Subversion dans Visual Studio pour Mac | Microsoft Docs"
+title: Configuration d’un dépôt Subversion dans Visual Studio pour Mac
 description: Utilisation de Git et de Subversion dans Visual Studio pour Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: 0757ad29b8614a86f059f525f6ffe3100595d09b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e6b6fd600d3f32c77651b9a4fbb0dff2cd754bcb
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="setting-up-a-subversion-repository"></a>Configuration d’un dépôt Subversion
 
@@ -26,7 +25,7 @@ Avant de commencer à utiliser Subversion, les outils en ligne de commande Xcode
 
 2. Ouvrez ou créez un projet Visual Studio pour Mac.
 
-3. Cliquez avec le bouton droit sur le projet et sélectionnez **Gestion de version > Publier dans la gestion de version...** : 
+3. Cliquez avec le bouton droit sur le projet et sélectionnez **Gestion de version > Publier dans la gestion de version...**  : 
 
     ![Démarrer la publication d’un projet](media/version-control-subversion2.png)
 

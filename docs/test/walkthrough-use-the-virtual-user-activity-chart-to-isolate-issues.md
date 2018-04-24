@@ -1,20 +1,20 @@
 ---
 title: Utilisation du graphique d’activités des utilisateurs virtuels pour les tests de charge dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual user activity chart
 - virtual user activity chart, isolating performance issues
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: f7063775f093b08b859343fbc314399d0cc9fdd4
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 7cf4d2d31bb037aba8af95caf5ffab1d7be2c132
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procédure pas à pas : utilisation du graphique d'activités des utilisateurs virtuels pour isoler les problèmes de performances
 
@@ -92,7 +92,7 @@ Une fois que vous avez exécuté le test de charge et que vous avez collecté le
 
 7.  Une info-bulle s'affiche avec les informations suivantes :
 
-    -   **ID utilisateur**
+    -   **Identifiant utilisateur**
 
     -   **Scénario**
 
@@ -122,4 +122,4 @@ Une fois que vous avez exécuté le test de charge et que vous avez collecté le
 - [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Guide pratique pour créer un paramètre de test pour un test de charge distribué](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md)
-- [Collecter des informations de diagnostic avec des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
+- [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)

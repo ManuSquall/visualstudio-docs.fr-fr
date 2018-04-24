@@ -1,7 +1,7 @@
 ---
 title: Données IntelliTrace dans Visual Studio | Microsoft Docs
 ms.date: 10/13/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, configuring test settings
 - Diagnostic Data Adapter, InteliTrace
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04c4c1cd4429228ffa90e06ac9675901602c3cd0
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: e1f36aefaad2e43d8875c9c0164ac938b004999d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Comment : collecter des données IntelliTrace pour aider au débogage des problèmes difficiles
 
@@ -71,7 +71,7 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
 
 5.  Choisissez l’onglet **Général**. Sélectionnez **Événements IntelliTrace uniquement** pour enregistrer des événements de diagnostic significatifs qu ont un impact minimal sur les performances lors de vos tests.
 
-     **-**ou-
+     **-** ou-
 
      Sélectionnez **Événements IntelliTrace et informations d’appels** pour enregistrer des événements de diagnostic et le traçage au niveau de la méthode affichant des informations sur les appels. Ce niveau de traçage peut avoir un impact sur les performances lorsque vous exécutez vos tests.
 
@@ -110,5 +110,5 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
 
 - [Collecter les données de diagnostic pendant les tests (VSTS)](/vsts/manual-test/collect-diagnostic-data)
 - [Collecter des données de diagnostic dans des tests manuels (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
-- [Collecter des informations de diagnostic avec des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
+- [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Collecter les données IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)

@@ -1,7 +1,7 @@
 ---
 title: Ajouter et supprimer des compteurs sur des graphiques dans les résultats des tests de charge dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load test results graphs, adding counters
 - load test results graph
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 81d220e4c67b4fae530529ad410a9deb34692285
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 1ec02769cc3960b4b1b7f4dd7a04d3d78193c1e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Comment : ajouter et supprimer des compteurs sur des graphiques dans les résultats des tests de charge
 
@@ -32,7 +32,7 @@ Vous pouvez utiliser le volet des compteurs pour ajouter des compteurs de perfor
 
 |Durée du test de charge|Taux d'échantillonnage recommandé|
 |------------------------|-----------------------------|
-|\< 1 heure|5 secondes|
+|\< 1 heure|5 secondes|
 |1 à 8 heures|15 secondes|
 |8 à 24 heures|30 secondes|
 |> 24 heures|60 secondes|
@@ -45,7 +45,7 @@ Vous pouvez utiliser le volet des compteurs pour ajouter des compteurs de perfor
 
 La capacité d'espace requise dans le référentiel des résultats du test de charge pour stocker les détails de minuterie pouvait être très élevée, en particulier pour les longs tests de charge. En outre, le temps nécessaire pour stocker ces données dans le référentiel des résultats du test de charge à la fin du test de charge est plus long, étant donné que ces données sont stockées sur les agents de test de charge jusqu'à la fin de l'exécution du test de charge. Lorsque le test de charge est terminé, les données sont stockées dans le référentiel. Par défaut, la propriété **Stockage des détails de minuterie** est activée. Si cela pose un problème pour votre environnement de test, vous pouvez affecter la valeur **Aucun** à la propriété **Stockage des détails de minuterie**.
 
-Pour plus d’informations, consultez [Comment : spécifier la propriété Stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Pour plus d’informations, consultez [Guide pratique pour spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Pour afficher un compteur de performance particulier sur un graphique de test de charge
 
@@ -54,7 +54,7 @@ Pour plus d’informations, consultez [Comment : spécifier la propriété Stock
      Le volet **Compteurs** s’affiche dans la vue Graphiques.
 
     > [!NOTE]
-    > Si le volet Compteurs n’est pas visible, choisissez **Afficher le volet Compteurs** dans la barre d’outils.
+    > Si le volet des compteurs n’est pas visible, choisissez **Afficher le volet des compteurs** dans la barre d’outils.
 
 2.  Dans le volet des compteurs, développez les nœuds de la hiérarchie jusqu’à ce que vous trouviez le compteur de performance que vous souhaitez afficher dans le graphique.
 

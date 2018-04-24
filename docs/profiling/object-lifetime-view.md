@@ -1,13 +1,9 @@
 ---
-title: "Vue Durée de vie des objets | Microsoft Docs"
-ms.custom: 
+title: Vue Durée de vie des objets | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
 helpviewer_keywords:
@@ -17,17 +13,16 @@ helpviewer_keywords:
 - performance reports, objects lifetime view
 - profiling tools, Lifetime view
 ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8fa19da70b55e4a519153898a800bb259983c39
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a160e3298d14d406b756493a97b31f0f12cdad1d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="object-lifetime-view"></a>Mode Durée de vie de l'objet
 La vue Durée de vie des objets est disponible quand l’option **Collecter aussi les informations de durée de vie des objets .NET** est activée dans les pages de propriétés de la session de performance.  

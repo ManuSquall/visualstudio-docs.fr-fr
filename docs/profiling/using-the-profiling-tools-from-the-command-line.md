@@ -1,12 +1,9 @@
 ---
-title: "Utilisation des outils de profilage à partir de la ligne de commande | Microsoft Docs"
-ms.custom: 
+title: Utilisation des outils de profilage à partir de la ligne de commande | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - command line, performance tools
 - command-line tools, performance tools
@@ -14,16 +11,16 @@ helpviewer_keywords:
 - tools, command-line
 - command line, tools
 ms.assetid: 6593fa82-181e-4009-a0ed-02aa24c2c063
-caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3cf3751eeb7a1e0a41c26bab24425312675921b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b26df4fd2c96d7a18fd553abffc8bb33714d5cfc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-the-profiling-tools-from-the-command-line"></a>Utilisation des outils de profilage à partir de la ligne de commande
 Vous pouvez utiliser les outils en ligne de commande des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour profiler des applications à l’invite de commandes et pour automatiser le profilage à l’aide de fichiers de commandes et de scripts. Vous pouvez également générer des fichiers de rapports à une invite de commandes. Vous pouvez utiliser le profileur autonome léger pour collecter des données sur les ordinateurs où [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n’est pas installé.  

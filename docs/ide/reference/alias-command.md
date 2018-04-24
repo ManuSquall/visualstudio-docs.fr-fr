@@ -1,13 +1,10 @@
 ---
 title: Alias, commande | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - tools.alias
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - command aliases
 - alias command
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8abd8c38bcff23b43365253af25547f854cb581
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 02378b6e980dc4590bdc8901f67ca160bbffe157
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="alias-command"></a>Alias, commande
 Crée un alias pour une commande complète, pour une commande complète et des arguments ou pour un autre alias.  
@@ -43,17 +39,17 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
   
 ## <a name="arguments"></a>Arguments  
  `aliasname`  
- Facultatif. Nom du nouvel alias. Si aucune valeur n’est fournie pour `aliasname`, la liste des alias en cours accompagnés de leur définition s’affiche.  
+ Facultative. Nom du nouvel alias. Si aucune valeur n’est fournie pour `aliasname`, la liste des alias en cours accompagnés de leur définition s’affiche.  
   
  `aliasstring`  
- Facultatif. Nom complet de la commande ou alias existant suivi des paramètres souhaités pour créer un alias. Si aucune valeur n’est fournie pour `aliasstring`, le nom et la chaîne associés à l’alias spécifié s’affichent.  
+ Facultative. Nom complet de la commande ou alias existant suivi des paramètres souhaités pour créer un alias. Si aucune valeur n’est fournie pour `aliasstring`, le nom et la chaîne associés à l’alias spécifié s’affichent.  
   
 ## <a name="switches"></a>Commutateurs  
  /delete ou /del ou /d  
- Facultatif. Supprime l’alias spécifié, qui n’apparaît plus dans la liste de saisie semi-automatique.  
+ Facultative. Supprime l’alias spécifié, qui n’apparaît plus dans la liste de saisie semi-automatique.  
   
  /reset  
- Facultatif. Rétablit les paramètres d’origine de la liste d’alias prédéfinis. En d’autres termes, ce commutateur restaure tous les alias prédéfinis et supprime tous les alias définis par l’utilisateur.  
+ Facultative. Rétablit les paramètres d’origine de la liste d’alias prédéfinis. En d’autres termes, ce commutateur restaure tous les alias prédéfinis et supprime tous les alias définis par l’utilisateur.  
   
 ## <a name="remarks"></a>Notes  
  Dans la mesure où un alias représente des commandes, il doit être placé au début de la ligne de commande.  

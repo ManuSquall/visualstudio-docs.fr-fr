@@ -2,17 +2,17 @@
 title: Configurer des tests unitaires dans Visual Studio à l’aide d’un fichier .runsettings | Microsoft Docs
 ms.date: 02/28/2018
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 813a2c003923159b6805280ab3a7f5c3c0559f13
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 3a446c3223197058401e07a5aef2cb13bde46f3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l’aide d’un fichier *.runsettings*
 
@@ -130,9 +130,9 @@ Les sections qui suivent détaillent les éléments d’un fichier *.runsettings
 |`ResultsDirectory`||Répertoire où les résultats des tests sont placés.|
 |`TargetFrameworkVersion`|Framework40|Framework35, Framework40, Framework45<br /><br /> Ce paramètre spécifie la version du framework de tests unitaires qui est utilisée pour découvrir et exécuter les tests. Elle peut être différente de la version de la plateforme .NET. que vous spécifiez dans les propriétés de génération du projet de test unitaire.|
 |`TargetPlatform`|x86|x86, x64|
-|`TreatTestAdapterErrorsAsWarnings`|false|false, true|
+|`TreatTestAdapterErrorsAsWarnings`|False|false, true|
 |`TestAdaptersPaths`||Un ou plusieurs chemins au répertoire où se trouvent les TestAdapters|
-|`MaxCpuCount`|1|Ce paramètre permet de contrôler le degré d’exécution de tests parallèles lors des tests unitaires, en utilisant les cœurs disponibles sur la machine. Le moteur d’exécution des tests démarre en tant que processus distinct sur chaque cœur disponible et donne à chaque cœur un conteneur de tests à exécuter. Un conteneur peut être un assembly, une DLL ou un artefact approprié. Le conteneur de test est l’unité de planification. Dans chaque conteneur, les tests sont exécutés en fonction de l’infrastructure de tests configurée. S’il y a beaucoup de conteneurs, chaque processus reçoit le conteneur disponible suivant dès qu’il a terminé l’exécution des tests d’un conteneur.<br /><br /> Valeur possible pour MaxCpuCount :<br /><br /> n, où 1 < = n < = nombre de cœurs : jusqu’à n processus peuvent être lancés.<br /><br /> n, où n = toute autre valeur : le nombre de processus lancés dépend du nombre de cœurs disponibles sur la machine.|
+|`MaxCpuCount`|1|Ce paramètre permet de contrôler le degré d’exécution de tests parallèles lors des tests unitaires, en utilisant les cœurs disponibles sur la machine. Le moteur d’exécution des tests démarre en tant que processus distinct sur chaque cœur disponible et donne à chaque cœur un conteneur de tests à exécuter. Un conteneur peut être un assembly, une DLL ou un artefact approprié. Le conteneur de test est l’unité de planification. Dans chaque conteneur, les tests sont exécutés en fonction du framework de test configuré. S’il y a beaucoup de conteneurs, chaque processus reçoit le conteneur disponible suivant dès qu’il a terminé l’exécution des tests d’un conteneur.<br /><br /> Valeur possible pour MaxCpuCount :<br /><br /> n, où 1 < = n < = nombre de cœurs : jusqu’à n processus peuvent être lancés.<br /><br /> n, où n = toute autre valeur : le nombre de processus lancés dépend du nombre de cœurs disponibles sur la machine.|
 |`TestSessionTimeout`||Permet aux utilisateurs de mettre fin à une session de test lorsque celle-ci dépasse le délai spécifié. La définition d’un délai d’expiration garantit que les ressources sont consommées et que les sessions de test sont limitées à une durée spécifique. Le paramètre est disponible dans **Visual Studio 2017 versions 15.5** et ultérieures.
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Diagnostic des adaptateurs de données (collecteurs de données)
@@ -164,20 +164,20 @@ Pour utiliser TestContext, ajoutez un champ [TestContext](https://msdn.microsoft
 
 ### <a name="mstest-run-settings"></a>Paramètres d’exécution MSTest
 
-Ces paramètres sont spécifiques à l’adaptateur de test qui exécute les méthodes de test disposant de l’attribut `[TestMethod]`.
+Ces paramètres sont spécifiques à l’adaptateur de test qui exécute les méthodes de test disposant de l’attribut `[TestMethod]` .
 
-|Configuration|Default|Valeurs|
+|Configuration|Par défaut|Valeurs|
 |-------------------|-------------|------------|
-|ForcedLegacyMode|false|Dans Visual Studio 2012, l’adaptateur MSTest a été optimisé afin d’être plus rapide et plus scalable. Un comportement, tel que l’ordre dans lequel les tests sont exécutés, peut ne pas être exactement identique à celui d’éditions précédentes de Visual Studio. Attribuez la valeur `true` pour utiliser l’adaptateur de test le plus ancien.<br /><br /> Par exemple, vous pouvez utiliser ce paramètre si un fichier *app.config* est spécifié pour un test unitaire.<br /><br /> Il est recommandé d’envisager de refactoriser vos tests pour vous permettre d’utiliser le nouvel adaptateur.|
-|IgnoreTestImpact|false|La fonctionnalité d’impact de test classe par priorité les tests affectés par des modifications récentes, lorsqu’ils sont exécutés dans MSTest ou à partir de Microsoft Test Manager. Ce paramètre désactive la fonctionnalité. Pour plus d’informations, consultez [Guide pratique pour collecter des données et vérifier les tests à exécuter après des modifications du code](http://msdn.microsoft.com/Library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|
+|ForcedLegacyMode|False|Dans Visual Studio 2012, l’adaptateur MSTest a été optimisé afin d’être plus rapide et plus scalable. Un comportement, tel que l’ordre dans lequel les tests sont exécutés, peut ne pas être exactement identique à celui d’éditions précédentes de Visual Studio. Attribuez la valeur `true` pour utiliser l’adaptateur de test le plus ancien.<br /><br /> Par exemple, vous pouvez utiliser ce paramètre si un fichier *app.config* est spécifié pour un test unitaire.<br /><br /> Il est recommandé d’envisager de refactoriser vos tests pour vous permettre d’utiliser le nouvel adaptateur.|
+|IgnoreTestImpact|False|La fonctionnalité d’impact de test classe par priorité les tests affectés par des modifications récentes, lorsqu’ils sont exécutés dans MSTest ou à partir de Microsoft Test Manager. Ce paramètre désactive la fonctionnalité. Pour plus d’informations, consultez [Guide pratique pour collecter des données et vérifier les tests à exécuter après des modifications du code](http://msdn.microsoft.com/Library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|
 |SettingsFile||Vous pouvez spécifier un fichier de paramètres de test à utiliser avec l’adaptateur MSTest ici. Vous pouvez également spécifier un fichier de paramètres de test via le menu **Test**, **Paramètres de test**, **Sélectionner le fichier de paramètres des tests**.<br /><br /> Si vous spécifiez cette valeur, vous devez également affecter à **ForcedlegacyMode** la valeur **true**.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|
-|KeepExecutorAliveAfterLegacyRun|false|Une fois qu’une série de tests est terminée, MSTest est arrêté. Tout processus qui est lancé dans le cadre du test est également terminé. Si vous souhaitez conserver l’exécuteur de test actif, définissez cette configuration sur true.<br /><br /> Par exemple, vous pouvez utiliser ce paramètre pour que le navigateur continue à s’exécuter entre des tests codés de l’interface utilisateur.|
+|KeepExecutorAliveAfterLegacyRun|False|Une fois qu’une série de tests est terminée, MSTest est arrêté. Tout processus qui est lancé dans le cadre du test est également terminé. Si vous souhaitez conserver l’exécuteur de test actif, définissez cette configuration sur true.<br /><br /> Par exemple, vous pouvez utiliser ce paramètre pour que le navigateur continue à s’exécuter entre des tests codés de l’interface utilisateur.|
 |DeploymentEnabled|true|Si vous définissez cette valeur sur false, les éléments de déploiement que vous avez spécifiés dans votre méthode de test ne sont pas copiés dans le répertoire de déploiement.|
 |CaptureTraceOutput|true|Vous pouvez écrire dans la trace du débogage à partir de votre méthode de test en utilisant Trace.WriteLine. Cette configuration vous permet de désactiver ces traces de débogage.|
 |DeleteDeploymentDirectoryAfterTestRunIsComplete|true|Vous pouvez conserver le répertoire de déploiement après une série de tests en définissant cette valeur sur false.|
-|MapInconclusiveToFailed|false|Si un test retourne un état Non concluant, il est généralement mappé à l’état Ignoré dans l’Explorateur de tests. Si vous voulez que les tests non concluants s’affichent comme ayant échoué, utilisez cette configuration.|
-|InProcMode|false|Si vous souhaitez que vos tests soient exécutés dans le même processus que l’adaptateur de test Microsoft, définissez cette valeur sur True. Ce paramètre offre un gain de performances mineur. Mais si un test s’arrête à cause d’une exception, les autres tests s’arrêteront également.|
-|AssemblyResolution|false|Vous pouvez spécifier des chemins d’assemblys supplémentaires pour la recherche et l’exécution des tests unitaires. Par exemple, utilisez ces chemins pour les assemblys de dépendance qui ne se trouvent pas dans le même répertoire que l’assembly de test. Pour spécifier un chemin, utilisez un élément « Directory Path ». Les chemins peuvent contenir des variables d’environnement.<br /><br /> `<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+|MapInconclusiveToFailed|False|Si un test retourne un état Non concluant, il est généralement mappé à l’état Ignoré dans l’Explorateur de tests. Si vous voulez que les tests non concluants s’affichent comme ayant échoué, utilisez cette configuration.|
+|InProcMode|False|Si vous souhaitez que vos tests soient exécutés dans le même processus que l’adaptateur de test Microsoft, définissez cette valeur sur True. Ce paramètre offre un gain de performances mineur. Mais si un test s’arrête à cause d’une exception, les autres tests s’arrêteront également.|
+|AssemblyResolution|False|Vous pouvez spécifier des chemins d’assemblys supplémentaires pour la recherche et l’exécution des tests unitaires. Par exemple, utilisez ces chemins pour les assemblys de dépendance qui ne se trouvent pas dans le même répertoire que l’assembly de test. Pour spécifier un chemin, utilisez un élément « Directory Path ». Les chemins peuvent contenir des variables d’environnement.<br /><br /> `<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="see-also"></a>Voir aussi
 

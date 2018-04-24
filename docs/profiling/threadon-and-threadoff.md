@@ -1,23 +1,20 @@
 ---
 title: ThreadOn et ThreadOff | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2170eb467a7adbb8fd70a3063d8c772559b54350
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 11038ebe930789967b2d0092805787a8d4f24f6c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn et ThreadOff
 Les sous-commandes **ThreadOff** et **ThreadOn** de VSPerfCmd.exe sont disponibles seulement dans les sessions de profilage en ligne de commande qui utilisent la méthode d’instrumentation. **ThreadOff** et **ThreadOn** suspendent et reprennent le profilage du thread spécifié. **ThreadOff** arrête le profilage du thread et **ThreadOn** démarre le profilage du thread.  
@@ -54,7 +51,7 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
  **GlobalOff**&#124;**GlobalOn**  
  Arrête ou démarre le profilage de tous les processus d’une session de profilage en ligne de commande.  
   
- {**ProcessOff**&#124;**ProcessOn**} **:**`TID`  
+ {**ProcessOff**&#124;**ProcessOn**}  **:**`TID`  
  Arrête ou démarre le profilage du processus spécifié.  
   
 ## <a name="example"></a>Exemple  

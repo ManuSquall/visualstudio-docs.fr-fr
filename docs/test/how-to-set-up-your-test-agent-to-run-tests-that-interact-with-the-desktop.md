@@ -1,19 +1,19 @@
 ---
 title: Configurer un agent de test Visual Studio pour exécuter des tests qui interagissent avec le poste de travail | Microsoft Docs
 ms.date: 10/20/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - agents, configuring for interaction with desktop
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6953466776872098315cf1b48036bf96d9e570ab
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 27b1024c1384e70f7b49765b5d079a72a3726818
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Comment : configurer votre agent de test pour exécuter des tests qui interagissent avec le bureau
 
@@ -66,7 +66,7 @@ Si vous exécutez un test codé de l'interface utilisateur qui lance un navigate
     > [!NOTE]
     > Lorsque vous êtes connecté à l'environnement lab à l'aide d'une connexion Bureau à distance ou d'une connexion basée sur invité, des déconnexions fréquentes et inattendues peuvent se produire. Cela peut être dû au fait que l'ordinateur est configuré pour se connecter automatiquement au réseau.
 
-7.  Pour garantir que l’écran de veille est désactivé, car cela peut interférer avec les tests automatisés qui doivent interagir avec le poste de travail, sélectionnez **S’assurer que l’écran de veille est désactivé**.
+7.  Pour vérifier que l’écran de veille est désactivé étant donné que cela peut interférer avec tout test automatisé qui doit interagir avec le poste de travail, sélectionnez **S’assurer que l’écran de veille est désactivé**.
 
     > [!WARNING]
     > Se connecter automatiquement ou désactiver l'écran de veille présente des risques. En activant la connexion automatique, vous permettez à d'autres utilisateurs de démarrer cet ordinateur et d'utiliser le compte sur lequel il se connecte automatiquement. Si vous désactivez l'écran de veille, l'ordinateur peut ne pas inviter l'utilisateur à ouvrir une session pour déverrouiller l'ordinateur. Cela permet à n'importe quelle personne d'accéder à l'ordinateur dès lors qu'elle peut y accéder physiquement. Si vous activez ces fonctionnalités sur un ordinateur, vous devez vous assurer que ces ordinateurs sont physiquement sécurisés. S'ils se trouvent, par exemple, dans un lab physiquement sécurisé. Si vous désactivez **S’assurer que l’écran de veille est désactivé**, ceci n’active pas votre écran de veille.
