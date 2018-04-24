@@ -1,9 +1,8 @@
 ---
-title: 'CA2002 : Ne verrouillent pas sur des objets à identité faible | Documents Microsoft'
-ms.custom: ''
+title: 'CA2002 : Ne définissez pas un verrou sur des objets à identité faible'
 ms.date: 01/31/2018
 ms.technology: vs-ide-code-analysis
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
 - CA2002
@@ -18,11 +17,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d509de487bd81b4401195a8e3564c165a2d50f0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 868ed0e1b4b5581473f7c7bde98f6f40e29f0664
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002 : Ne définissez pas un verrou sur des objets à identité faible
 
@@ -82,7 +81,7 @@ L’exemple suivant montre des verrous d’objet qui enfreint la règle.
 
 ## <a name="see-also"></a>Voir aussi
 
-<xref:System.Threading.Monitor>  
-<xref:System.AppDomain>  
-[Lock, instruction (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)  
+<xref:System.Threading.Monitor>
+<xref:System.AppDomain>
+[Lock, instruction (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
 [SyncLock, instruction (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

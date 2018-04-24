@@ -1,6 +1,5 @@
 ---
-title: 'Comment : activer et désactiver (Concepteur O-R) pluralisation | Documents Microsoft'
-ms.custom: ''
+title: 'Comment : activer et désactiver (Concepteur O-R) pluralisation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
@@ -10,36 +9,37 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6340946491ebaa8fa6bec395632e7d7943b4935e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 34e0c0f57b7da90a78166057762cb0a5c0e015e1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Comment : activer et désactiver (Concepteur O/R) pluralisation
-Par défaut, lorsque vous faites glisser des objets de base de données qui ont des noms se terminant par s ou ies de **l’Explorateur de serveurs**/**l’Explorateur de base de données** sur la [LINQ to SQL Tools dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), les noms des classes d’entité générés sont modifiés au pluriel au singulier. C'est pour insister sur le fait que la classe d'entité instanciée mappe à un enregistrement unique de données. Par exemple, l'ajout d'une table Customers au [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] génère une classe d'entité nommée Customer parce que la classe gérera les données d'un seul client.  
-  
+Par défaut, lorsque vous faites glisser des objets de base de données qui ont des noms se terminant par s ou ies de **l’Explorateur de serveurs**/**l’Explorateur de base de données** sur la [LINQ to SQL Tools dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), les noms des classes d’entité générés sont modifiés au pluriel au singulier. C'est pour insister sur le fait que la classe d'entité instanciée mappe à un enregistrement unique de données. Par exemple, l'ajout d'une table Customers au [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] génère une classe d'entité nommée Customer parce que la classe gérera les données d'un seul client.
+
 > [!NOTE]
->  Par défaut, la pluralisation est activée uniquement dans la version de langue anglaise de Visual Studio.  
-  
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
-  
-### <a name="to-turn-pluralization-on-and-off"></a>Pour activer et désactiver la pluralisation  
-  
-1.  Dans le menu **Outils** , cliquez sur **Options**.  
-  
-2.  Dans le **Options** boîte de dialogue, développez **outils de base de données**.  
-  
+>  Par défaut, la pluralisation est activée uniquement dans la version de langue anglaise de Visual Studio.
+
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+
+### <a name="to-turn-pluralization-on-and-off"></a>Pour activer et désactiver la pluralisation
+
+1.  Dans le menu **Outils** , cliquez sur **Options**.
+
+2.  Dans le **Options** boîte de dialogue, développez **outils de base de données**.
+
     > [!NOTE]
-    >  Sélectionnez **afficher tous les paramètres** si le **outils de base de données** nœud n’est pas visible.  
-  
-3.  Cliquez sur **Concepteur O/R**.  
-  
-4.  Définissez **Pluralisation des noms** à **activé** = **False** pour définir le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] afin qu’il ne modifie pas les noms de classe.  
-  
-5.  Définissez **Pluralisation des noms** à **activé** = **True** pour appliquer des règles de pluralisation aux noms de classes d’objets ajoutés à la [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
-  
-## <a name="see-also"></a>Voir aussi  
-[LINQ to SQL des outils dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
-[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
-[Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+    >  Sélectionnez **afficher tous les paramètres** si le **outils de base de données** nœud n’est pas visible.
+
+3.  Cliquez sur **Concepteur O/R**.
+
+4.  Définissez **Pluralisation des noms** à **activé** = **False** pour définir le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] afin qu’il ne modifie pas les noms de classe.
+
+5.  Définissez **Pluralisation des noms** à **activé** = **True** pour appliquer des règles de pluralisation aux noms de classes d’objets ajoutés à la [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+
+## <a name="see-also"></a>Voir aussi
+
+- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
+- [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

@@ -2,8 +2,7 @@
 title: 'Comment : contrôler la vue Messages | Documents Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, Messages View
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02b88a7aa23a286bed4aa851b7272bdd57b6c270
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e06757307a71d34e2d38aa24695915b7e64bc8d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-control-messages-view"></a>Comment : contrôler la vue Messages
 Avec Spy ++, vous avez un contrôle important sur le contenu d’un [vue Messages](../debugger/messages-view.md) fenêtre. Vous pouvez [démarrer et arrêter](../debugger/how-to-start-and-stop-the-message-log-display.md) affichage des messages à tout moment et vous pouvez spécifier :  

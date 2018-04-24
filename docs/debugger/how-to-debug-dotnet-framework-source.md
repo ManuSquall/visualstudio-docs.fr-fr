@@ -2,8 +2,7 @@
 title: 'Comment : déboguer une Source .NET Framework | Documents Microsoft'
 ms.custom: ''
 ms.date: 02/23/2018
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging, .NET Framework source
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c5de7fe62a03ae50323af2497bb6f85b48e51e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8377ed73479441272b2f1910767fa7e2a4ff0196
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-net-framework-source"></a>Comment : déboguer une source .NET Framework
 Pour déboguer la source du .NET Framework, vous devez avoir accès aux symboles pour le code de débogage. Vous devez également activer le pas à pas détaillé dans la source .NET Framework.  

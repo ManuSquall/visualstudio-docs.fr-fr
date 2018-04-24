@@ -2,8 +2,7 @@
 title: Boîte de dialogue de fenêtre Rechercher | Documents Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, finding windows
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 738c91b169817f8b5b6078b6886f55edce59ef1d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0220a35aa5b18ad8c4395e68c0848ea04edd0a8d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="find-window-dialog-box"></a>Boîte de dialogue Rechercher une fenêtre
 Utilisez cette boîte de dialogue pour sélectionner une fenêtre et afficher ses propriétés ou les messages. Pour afficher cette boîte de dialogue, choisissez **rechercher une fenêtre** à partir de la **Spy** menu.  
