@@ -1,10 +1,8 @@
 ---
-title: 'CA1709 : La casse des identificateurs doivent être correctement | Documents Microsoft'
-ms.custom: ''
+title: 'CA1709 : La casse des identificateurs doit être correcte'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
 - CA1709
@@ -17,49 +15,49 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c010019c2ae5d1044d11c02c22428dda4197fcd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 71a8f96d55c151ef1d6ec42969dd4c08765ec206
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709 : La casse des identificateurs doit être correcte
-|||  
-|-|-|  
-|TypeName|IdentifiersShouldBeCasedCorrectly|  
-|CheckId|CA1709|  
-|Category|Microsoft.Naming|  
-|Modification avec rupture|Avec rupture - lorsque déclenchée sur les assemblys, espaces de noms, types, membres et paramètres.<br /><br /> Sans rupture - lorsque déclenchée sur les paramètres de type générique.|  
-  
-## <a name="cause"></a>Cause  
- Le nom d’un identificateur n’est pas correcte.  
-  
- \- ou -  
-  
- Le nom d’un identificateur contient un acronyme de deux lettres, et la deuxième lettre est en minuscule.  
-  
- \- ou -  
-  
- Le nom d’un identificateur contient un acronyme de trois lettres majuscules.  
-  
-## <a name="rule-description"></a>Description de la règle  
- Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.  
-  
- Par convention, les noms de paramètres utilisent la casse mixte ; Pascal les noms d’espace de noms, type et membre utilisent la casse. Dans un nom en casse Pascal, la première lettre est en minuscule et la première lettre des mots restants dans le nom est en majuscules. Exemples de noms de casse mixte sont « packetSniffer », « ioFile » et « fatalErrorCode ». Dans un nom de la casse Pascal, la première lettre est en majuscule, et la première lettre des mots restants dans le nom est en majuscules. Exemples de noms de la casse Pascal sont « PacketSniffer », « IOFile » et « FatalErrorCode ».  
-  
- Cette règle fractionne le nom en mots en fonction de la casse et vérifie tous les mots à deux lettres à une liste de mots de deux lettres communs, tels que « In » ou « My ». Si une correspondance est introuvable, le mot est considéré comme un acronyme. En outre, cette règle suppose qu’il a détecté un acronyme lorsque le nom contient quatre lettres majuscules dans une ligne ou trois lettres majuscules dans une ligne à la fin du nom.  
-  
- Par convention, les acronymes de deux lettres utilisent toutes les lettres majuscules et les acronymes de trois caractères ou plus Pascal casse. Les exemples suivants utilisent cette convention d’affectation de noms : 'DB', 'CR', 'ACP' et 'Ecma'. Les exemples suivants enfreignent la convention : 'Io', 'XML' et 'DoD' et les noms nonparameter, 'xp' et 'du Panneau de configuration'.  
-  
- 'ID' est d’une casse particulière pour provoquer une violation de cette règle. 'Id' n’est pas un acronyme mais une abréviation pour « identification ».  
-  
-## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Modifiez le nom afin qu’elle est correcte.  
-  
-## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
- Il est possible de supprimer cet avertissement si vous avez vos propres conventions d’affectation de noms, ou si l’identificateur représente un nom approprié, par exemple, le nom d’une société ou une technologie.  
-  
- Vous pouvez également ajouter des termes spécifiques, les acronymes et les abréviations que pour un dictionnaire d’analyse du code personnalisé. Termes spécifiés dans le dictionnaire personnalisé n’entraînent pas de violations de cette règle. Pour plus d’informations, consultez [Comment : personnaliser le dictionnaire d’analyse du Code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
-  
-## <a name="related-rules"></a>Règles associées  
+|||
+|-|-|
+|TypeName|IdentifiersShouldBeCasedCorrectly|
+|CheckId|CA1709|
+|Category|Microsoft.Naming|
+|Modification avec rupture|Avec rupture - lorsque déclenchée sur les assemblys, espaces de noms, types, membres et paramètres.<br /><br /> Sans rupture - lorsque déclenchée sur les paramètres de type générique.|
+
+## <a name="cause"></a>Cause
+ Le nom d’un identificateur n’est pas correcte.
+
+ \- ou -
+
+ Le nom d’un identificateur contient un acronyme de deux lettres, et la deuxième lettre est en minuscule.
+
+ \- ou -
+
+ Le nom d’un identificateur contient un acronyme de trois lettres majuscules.
+
+## <a name="rule-description"></a>Description de la règle
+ Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+
+ Par convention, les noms de paramètres utilisent la casse mixte ; Pascal les noms d’espace de noms, type et membre utilisent la casse. Dans un nom en casse Pascal, la première lettre est en minuscule et la première lettre des mots restants dans le nom est en majuscules. Exemples de noms de casse mixte sont « packetSniffer », « ioFile » et « fatalErrorCode ». Dans un nom de la casse Pascal, la première lettre est en majuscule, et la première lettre des mots restants dans le nom est en majuscules. Exemples de noms de la casse Pascal sont « PacketSniffer », « IOFile » et « FatalErrorCode ».
+
+ Cette règle fractionne le nom en mots en fonction de la casse et vérifie tous les mots à deux lettres à une liste de mots de deux lettres communs, tels que « In » ou « My ». Si une correspondance est introuvable, le mot est considéré comme un acronyme. En outre, cette règle suppose qu’il a détecté un acronyme lorsque le nom contient quatre lettres majuscules dans une ligne ou trois lettres majuscules dans une ligne à la fin du nom.
+
+ Par convention, les acronymes de deux lettres utilisent toutes les lettres majuscules et les acronymes de trois caractères ou plus Pascal casse. Les exemples suivants utilisent cette convention d’affectation de noms : 'DB', 'CR', 'ACP' et 'Ecma'. Les exemples suivants enfreignent la convention : 'Io', 'XML' et 'DoD' et les noms nonparameter, 'xp' et 'du Panneau de configuration'.
+
+ 'ID' est d’une casse particulière pour provoquer une violation de cette règle. 'Id' n’est pas un acronyme mais une abréviation pour « identification ».
+
+## <a name="how-to-fix-violations"></a>Comment corriger les violations
+ Modifiez le nom afin qu’elle est correcte.
+
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
+ Il est possible de supprimer cet avertissement si vous avez vos propres conventions d’affectation de noms, ou si l’identificateur représente un nom approprié, par exemple, le nom d’une société ou une technologie.
+
+ Vous pouvez également ajouter des termes spécifiques, les acronymes et les abréviations que pour un dictionnaire d’analyse du code personnalisé. Termes spécifiés dans le dictionnaire personnalisé n’entraînent pas de violations de cette règle. Pour plus d’informations, consultez [Comment : personnaliser le dictionnaire d’analyse du Code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+
+## <a name="related-rules"></a>Règles associées
  [CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

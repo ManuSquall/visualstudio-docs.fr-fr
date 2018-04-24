@@ -1,5 +1,5 @@
 ---
-title: 'Comment : activer et désactiver l’analyse de la Solution complète pour le Code managé | Documents Microsoft'
+title: 'Comment : activer et désactiver l’analyse de la Solution complète pour le Code managé'
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,11 @@ manager: douge
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5221f2a97f892f272cce33b4f464a9ff223e8824
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52b181fe58297bb10e1a2abd0f9ff7bf9c78069e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Comment : activer et désactiver l’analyse de solution complète pour le code managé
 

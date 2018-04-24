@@ -1,6 +1,5 @@
 ---
-title: Créer un contrôle utilisateur Windows Forms avec liaison de données | Documents Microsoft
-ms.custom: ''
+title: Créer un contrôle utilisateur Windows Forms avec liaison de données
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7dac1b763e444349f741f72dae8c41fa8087a26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b7431ca6f0d4ac73a07a51893fd0c17c4fada57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Créer un contrôle utilisateur Windows Forms qui prend en charge la liaison de données complexe
 
@@ -111,7 +110,7 @@ Cette étape ajoute un <xref:System.Windows.Forms.DataGridView> au contrôle uti
 ## <a name="add-the-required-data-binding-attribute"></a>Ajoutez l’attribut DataBinding requis
 
 Pour des contrôles complexes prenant en charge la liaison de données, vous pouvez implémenter l'attribut<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.
-  
+
 ### <a name="to-implement-the-complexbindingproperties-attribute"></a>Pour implémenter l'attribut ComplexBindingProperties
 
 1. Commutateur le **ComplexDataGridView** contrôle en mode code. (Sur le **vue** menu, sélectionnez **Code**.)
@@ -173,7 +172,7 @@ Vous pouvez créer les contrôles liés aux données en faisant glisser des él�
 
 ### <a name="to-create-data-bound-controls-on-the-form"></a>Pour créer des contrôlés liés aux données dans le formulaire
 
-Faites glisser le **clients** nœud à partir de la **des Sources de données** fenêtre sur le formulaire. Vérifiez que le **ComplexDataGridView** contrôle est utilisé pour afficher les données de la table.  
+Faites glisser le **clients** nœud à partir de la **des Sources de données** fenêtre sur le formulaire. Vérifiez que le **ComplexDataGridView** contrôle est utilisé pour afficher les données de la table.
 
 ## <a name="running-the-application"></a>Exécution de l’application
 
@@ -191,6 +190,6 @@ Selon les exigences de votre application, vous pouvez exécuter différentes ét
 
 ## <a name="see-also"></a>Voir aussi
 
-[Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)  
-[Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)  
-[Contrôles Windows Forms](/dotnet/framework/winforms/controls/index)
+- [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
+- [Contrôles Windows Forms](/dotnet/framework/winforms/controls/index)

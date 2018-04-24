@@ -1,6 +1,5 @@
 ---
-title: L’accès à Visual Studio ou autres hôtes à partir d’un modèle de texte | Documents Microsoft
-ms.custom: ''
+title: Accès à Visual Studio ou à d'autres hôtes à partir d'un modèle de texte
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,73 +8,77 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e5478ffd578aa63a528d3c3e463872a169354555
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 171b3d3060ea00cc5adc9ca1220cb86148f8d883
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Accès à Visual Studio ou à d'autres hôtes à partir d'un modèle de texte
-Dans un modèle de texte, vous pouvez utiliser les méthodes et propriétés exposées par l’hôte qui exécute le modèle, telles que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
- Cela s’applique aux modèles de texte standard, les modèles de texte prétraités pas.  
-  
-## <a name="obtaining-access-to-the-host"></a>Obtention de l’accès à l’hôte  
- Définissez `hostspecific="true"` dans la `template` directive. Cela vous permet d’utiliser `this.Host`, qui a le type <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Ce type possède des membres que vous pouvez utiliser, par exemple, pour résoudre les noms de fichiers et de consigner les erreurs.  
-  
-### <a name="resolving-file-names"></a>Résolution des noms de fichiers  
- Pour rechercher le chemin d’accès complet d’un fichier relatif au modèle de texte, utilisez-le. Host.ResolvePath().  
-  
-```csharp  
-<#@ template hostspecific="true" language="C#" #>  
-<#@ output extension=".txt" #>  
-<#@ import namespace="System.IO" #>  
-<#  
- // Find a path within the same project as the text template:  
- string myFile = File.ReadAllText(this.Host.ResolvePath("MyFile.txt"));  
-#>  
-Content of myFile is:  
-<#= myFile #>  
-  
-```  
-  
-### <a name="displaying-error-messages"></a>Affichage des Messages d’erreur  
- Cet exemple enregistre des messages lorsque vous transformez le modèle. Si l’hôte est [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ils sont ajoutés à la fenêtre d’erreur.  
-  
-```csharp  
-<#@ template hostspecific="true" language="C#" #>  
-<#@ output extension=".txt" #>  
-<#@ import namespace="System.CodeDom.Compiler" #>  
-<#  
-  string message = "test message";  
-  this.Host.LogErrors(new CompilerErrorCollection()   
-    { new CompilerError(  
-       this.Host.TemplateFile, // Identify the source of the error.  
-       0, 0, "0",   // Line, column, error ID.  
-       message) }); // Message displayed in error window.  
-#>  
-  
-```  
-  
-## <a name="using-the-visual-studio-api"></a>À l’aide de l’API Visual Studio  
- Si vous exécutez un modèle de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez utiliser `this.Host` pour accéder aux services fournis par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et des packages ou les extensions qui sont chargées.  
-  
- Définissez hostspecific = « true » et effectuez un cast `this.Host` à <xref:System.IServiceProvider>.  
-  
- Cet exemple obtient le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API, <xref:EnvDTE.DTE>, en tant que service :  
-  
-```csharp  
-<#@ template hostspecific="true" language="C#" #>  
-<#@ output extension=".txt" #>  
-<#@ assembly name="EnvDTE" #>  
-<#@ import namespace="EnvDTE" #>  
-<#   
- IServiceProvider serviceProvider = (IServiceProvider)this.Host;  
- DTE dte = serviceProvider.GetService(typeof(DTE)) as DTE;    
-#>  
-Number of projects in this solution: <#=  dte.Solution.Projects.Count #>  
-  
-```  
-  
-## <a name="using-hostspecific-with-template-inheritance"></a>À l’aide de hostSpecific avec héritage de modèle  
- Spécifiez `hostspecific="trueFromBase"` si vous utilisez également le `inherits` attribut, et si vous héritez d’un modèle qui spécifie `hostspecific="true"`. Cela permet d’éviter un avertissement du compilateur de l’effet que la propriété `Host` a été déclarée deux fois.
+# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Accéder à Visual Studio ou autres hôtes à partir d’un modèle de texte
+
+Dans un modèle de texte, vous pouvez utiliser les méthodes et propriétés qui sont exposées par l’hôte qui exécute le modèle. Visual Studio est un exemple d’un ordinateur hôte.
+
+> [!NOTE]
+> Vous pouvez utiliser les propriétés et méthodes de l’hôte dans les modèles de texte standard, mais pas dans *prétraité* modèles de texte.
+
+## <a name="obtain-access-to-the-host"></a>Obtenir l’accès à l’hôte
+
+Pour accéder à l’ordinateur hôte, définissez `hostspecific="true"` dans la `template` directive. Vous pouvez désormais utiliser `this.Host`, qui a le type <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Le <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> type possède des membres que vous pouvez utiliser, par exemple, pour résoudre les noms de fichiers et de consigner les erreurs.
+
+### <a name="resolve-file-names"></a>Résoudre les noms de fichiers
+
+Pour rechercher le chemin d’accès complet d’un fichier relatif au modèle de texte, utilisez `this.Host.ResolvePath()`.
+
+```csharp
+<#@ template hostspecific="true" language="C#" #>
+<#@ output extension=".txt" #>
+<#@ import namespace="System.IO" #>
+<#
+ // Find a path within the same project as the text template:
+ string myFile = File.ReadAllText(this.Host.ResolvePath("MyFile.txt"));
+#>
+Content of myFile is:
+<#= myFile #>
+```
+
+### <a name="display-error-messages"></a>Afficher les Messages d’erreur
+
+Cet exemple enregistre des messages lorsque vous transformez le modèle. Si l’hôte est Visual Studio, les erreurs sont ajoutés à la **liste d’erreurs**.
+
+```csharp
+<#@ template hostspecific="true" language="C#" #>
+<#@ output extension=".txt" #>
+<#@ import namespace="System.CodeDom.Compiler" #>
+<#
+  string message = "test message";
+  this.Host.LogErrors(new CompilerErrorCollection()
+    { new CompilerError(
+       this.Host.TemplateFile, // Identify the source of the error.
+       0, 0, "0",   // Line, column, error ID.
+       message) }); // Message displayed in error window.
+#>
+```
+
+## <a name="use-the-visual-studio-api"></a>Utilisez l’API Visual Studio
+
+Si l’exécution d’un modèle de texte dans Visual Studio, vous pouvez utiliser `this.Host` pour accéder aux services fournis par Visual Studio et des packages ou les extensions qui sont chargées.
+
+Définissez hostspecific = « true » et effectuez un cast `this.Host` à <xref:System.IServiceProvider>.
+
+Cet exemple obtient l’API Visual Studio, <xref:EnvDTE.DTE>, en tant que service :
+
+```csharp
+<#@ template hostspecific="true" language="C#" #>
+<#@ output extension=".txt" #>
+<#@ assembly name="EnvDTE" #>
+<#@ import namespace="EnvDTE" #>
+<#
+ IServiceProvider serviceProvider = (IServiceProvider)this.Host;
+ DTE dte = serviceProvider.GetService(typeof(DTE)) as DTE;
+#>
+Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
+```
+
+## <a name="use-hostspecific-with-template-inheritance"></a>Utilisez hostSpecific avec héritage de modèle
+
+Spécifiez `hostspecific="trueFromBase"` si vous utilisez également le `inherits` attribut, et si vous héritez d’un modèle qui spécifie `hostspecific="true"`. Si vous ne le faites pas, vous pouvez obtenir un avertissement qui du compilateur de la propriété `Host` a été déclarée deux fois.

@@ -1,5 +1,5 @@
 ---
-title: Gestionnaires de modification de valeur de propriété de domaine dans Visual Studio | Documents Microsoft
+title: Gestionnaires de modification de valeur de propriété de domaine dans Visual Studio
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 627855fdcad1528d5a80290a5fa0866abf328041
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 53a5640ea48ab19e599d69a8096d1a73fe1d8fde
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="domain-property-value-change-handlers"></a>Gestionnaires de modification de valeur de propriété de domaine
 

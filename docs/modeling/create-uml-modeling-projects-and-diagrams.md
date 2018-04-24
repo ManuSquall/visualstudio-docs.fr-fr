@@ -1,6 +1,5 @@
 ---
-title: Créer des projets de modélisation UML et des diagrammes | Documents Microsoft
-ms.custom: ''
+title: Créer des projets et des diagrammes de modélisation UML
 ms.date: 01/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6f79baa9c71aed7c6176bd6c68b0c2d8c3e5def9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7575f08f3b84e69f0d23557e3a1843efa4bc5bf3
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Créer des projets et des diagrammes de modélisation UML
 
