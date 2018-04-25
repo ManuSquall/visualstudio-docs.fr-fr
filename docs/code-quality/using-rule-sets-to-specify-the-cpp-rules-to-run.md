@@ -1,20 +1,18 @@
 ---
-title: À l’aide de la règle définit pour spécifier les règles C++ pour exécuter | Documents Microsoft
-ms.custom: ''
+title: Utilisation des ensembles de règles pour spécifier les règles C++ à exécuter
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9caf8b1d31ed41684e21388cc9b03594d688c40e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ad464b11538dd8a3faf2bdf26cd7e3b2bc9650dd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Utiliser des ensembles de règles pour spécifier les règles C++ à exécuter
 

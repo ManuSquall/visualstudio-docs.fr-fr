@@ -2,9 +2,8 @@
 title: Référence des API non managées ClickOnce | Documents Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +15,16 @@ helpviewer_keywords:
 - CleanOnlineAppCacheW interface [ClickOnce unmanaged]
 - GetDeploymentDataFromManifest [ClickOnce unmanaged]
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8463976825d38c5ff5e8cb910df153737da9eeee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0651c42abb410b55af956744da7a5e37952770b4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Référence des API non managées ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API publiques non managées de dfshim.dll.  

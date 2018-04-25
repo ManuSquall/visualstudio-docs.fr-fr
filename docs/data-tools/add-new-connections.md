@@ -1,6 +1,5 @@
 ---
-title: Ajouter de nouvelles connexions | Documents Microsoft
-ms.custom: ''
+title: Ajouter de nouvelles connexions
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +8,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0355b4fe3c05fb089e6feaac5bb52ff7f3f56da0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28633fcc4c744269a2a90cc72c8136afbda6f561
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="add-new-connections"></a>Ajouter de nouvelles connexions
 
@@ -37,9 +36,9 @@ Pour créer une connexion à la base de données, cliquez sur le **ajouter une c
 
 ![Icône d’Explorer la nouvelle connexion serveur](../data-tools/media/raddata-server-explorer-new-connection-icon.png "icône de nouvelle connexion de serveur Explorer raddata")
 
-Ceci fait apparaître la **ajouter une connexion** boîte de dialogue. Ici, nous avons entré le nom de l’instance de base de données SQL Server locale.  
+Ceci fait apparaître la **ajouter une connexion** boîte de dialogue. Ici, nous avons entré le nom de l’instance de base de données SQL Server locale.
 
-![Ajouter une nouvelle connexion](../data-tools/media/raddata-add-new-connection-dialog.png "raddata boîte de dialogue Ajouter nouvelle connexion")  
+![Ajouter une nouvelle connexion](../data-tools/media/raddata-add-new-connection-dialog.png "raddata boîte de dialogue Ajouter nouvelle connexion")
 
 ## <a name="change-the-provider"></a>Modifier le fournisseur
 
@@ -57,4 +56,4 @@ Si le test réussit, vous êtes prêt à créer un *source de données*, qui est
 
 ## <a name="see-also"></a>Voir aussi
 
-[Outils de données Visual Studio pour .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [Outils de données Visual Studio pour .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

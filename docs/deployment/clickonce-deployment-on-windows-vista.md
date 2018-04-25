@@ -2,8 +2,7 @@
 title: Déploiement ClickOnce sur Windows Vista | Documents Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - manifest generation
 - Windows, ClickOnce deployment
 ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbe7e05162977daf1e19df6bf1de7402a6163785
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c546d7e4287fc47a3770baa306a43a1631be2f06
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Déploiement ClickOnce sur Windows Vista
 Génération d’applications dans Visual Studio pour le contrôle de compte d’utilisateur (UAC) sur Windows Vista génère normalement un manifeste incorporé, encodé sous forme binaire de données XML dans le fichier exécutable de l’application. Étant donné que les applications ClickOnce et COM sans inscription requièrent un manifeste externe, Visual Studio génère un fichier pour ces types de projets contenant les données de compte d’utilisateur au lieu d’un manifeste incorporé. Par défaut, Visual Studio utilise les informations à partir du fichier App .manifest pour générer les informations de manifeste de compte d’utilisateur externe (pour le déploiement ClickOnce et COM sans inscription), ou les incorporer dans le fichier exécutable de l’application (pour tous les autres cas). Visual Studio fournit les options suivantes pour la génération de manifeste :  

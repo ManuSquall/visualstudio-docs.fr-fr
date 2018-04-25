@@ -1,19 +1,18 @@
 ---
-title: Propriétés des rôles de domaine | Documents Microsoft
-ms.custom: ''
+title: Propriétés des rôles de domaine
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 00ed4a86f2a00f9317f198d925fddbbc7f115481
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ead7128c998b8c4ed97acac0f6da0f08113e7bef
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="properties-of-domain-roles"></a>Propriétés des rôles de domaine
 Les propriétés dans le tableau suivant sont associées à un rôle de domaine. Pour plus d’informations sur les rôles de domaine, consultez [fonctionnement des modèles, des Classes et des relations](../modeling/understanding-models-classes-and-relationships.md). Pour plus d’informations sur la façon d’utiliser ces propriétés, consultez [personnalisation et l’extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -40,7 +39,8 @@ Les propriétés dans le tableau suivant sont associées à un rôle de domaine.
 |Nom complet de propriété|Le nom qui s’affiche dans le concepteur généré pour la propriété role généré.|La valeur de la propriété de nom de la propriété ajustée.|
 
 > [!NOTE]
->  La valeur par défaut d’un nom d’affichage est basée sur la valeur de propriété associée en insérant des espaces avant chaque caractère majuscule, qui est précédé d’un caractère en minuscule, et qui n’est pas suivi d’un autre caractère majuscule.
+> La valeur par défaut d’un nom d’affichage est basée sur la valeur de propriété associée en insérant des espaces avant chaque caractère majuscule, qui est précédé d’un caractère en minuscule, et qui n’est pas suivi d’un autre caractère majuscule.
 
 ## <a name="see-also"></a>Voir aussi
- [Propriétés des relations de domaine](../modeling/properties-of-domain-relationships.md)
+
+- [Propriétés des relations de domaine](../modeling/properties-of-domain-relationships.md)

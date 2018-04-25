@@ -1,10 +1,8 @@
 ---
-title: 'CA2111 : Les pointeurs ne doivent pas être visibles | Documents Microsoft'
-ms.custom: ''
+title: 'CA2111 : Les pointeurs ne doivent pas être visibles'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - PointersShouldNotBeVisible
 - CA2111
@@ -17,44 +15,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce027b8e6bcf39623e07a862d4f9fb23c33b9967
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bc47d1ff109cf4e90191a436b95f2236b86d3333
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111 : Les pointeurs ne doivent pas être visibles
-|||  
-|-|-|  
-|TypeName|PointersShouldNotBeVisible|  
-|CheckId|CA2111|  
-|Category|Microsoft.Security|  
-|Modification avec rupture|Rupture|  
-  
-## <a name="cause"></a>Cause  
- Un public ou protégé <xref:System.IntPtr?displayProperty=fullName> ou <xref:System.UIntPtr?displayProperty=fullName> champ n’est pas en lecture seule.  
-  
-## <a name="rule-description"></a>Description de la règle  
- <xref:System.IntPtr> et <xref:System.UIntPtr> sont des types pointeur qui sont utilisés pour accéder à la mémoire non managée. Si un pointeur n’est pas privé, interne ou en lecture seule, un code malveillant peut modifier la valeur du pointeur, potentiellement autorisant l’accès aux emplacements arbitraires en mémoire ou provoquant des défaillances des applications ou du système.  
-  
- Si vous projetez de sécuriser l’accès au type qui contient le champ de pointeur, consultez [CA2112 : les types sécurisés ne doivent pas exposer de champs](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
-  
-## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Sécurisez le pointeur en le rendant en lecture seule, interne ou privé.  
-  
-## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
- Supprimer un avertissement de cette règle si vous ne comptez pas sur la valeur du pointeur.  
-  
-## <a name="example"></a>Exemple  
- Le code suivant montre des pointeurs qui violent et satisfont la règle. Notez que les pointeurs non privés violent également la règle [CA1051 : ne pas déclarer de champs d’instances visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).  
-  
- [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]  
-  
-## <a name="related-rules"></a>Règles associées  
- [CA2112 : Les types sécurisés ne doivent pas exposer de champs](../code-quality/ca2112-secured-types-should-not-expose-fields.md)  
-  
- [CA1051 : Ne déclarez pas de champs d’instances visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)  
-  
-## <a name="see-also"></a>Voir aussi  
- <xref:System.IntPtr?displayProperty=fullName>   
- <xref:System.UIntPtr?displayProperty=fullName>
+|||
+|-|-|
+|TypeName|PointersShouldNotBeVisible|
+|CheckId|CA2111|
+|Category|Microsoft.Security|
+|Modification avec rupture|Rupture|
+
+## <a name="cause"></a>Cause
+ Un public ou protégé <xref:System.IntPtr?displayProperty=fullName> ou <xref:System.UIntPtr?displayProperty=fullName> champ n’est pas en lecture seule.
+
+## <a name="rule-description"></a>Description de la règle
+ <xref:System.IntPtr> et <xref:System.UIntPtr> sont des types pointeur qui sont utilisés pour accéder à la mémoire non managée. Si un pointeur n’est pas privé, interne ou en lecture seule, un code malveillant peut modifier la valeur du pointeur, potentiellement autorisant l’accès aux emplacements arbitraires en mémoire ou provoquant des défaillances des applications ou du système.
+
+ Si vous projetez de sécuriser l’accès au type qui contient le champ de pointeur, consultez [CA2112 : les types sécurisés ne doivent pas exposer de champs](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+
+## <a name="how-to-fix-violations"></a>Comment corriger les violations
+ Sécurisez le pointeur en le rendant en lecture seule, interne ou privé.
+
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
+ Supprimer un avertissement de cette règle si vous ne comptez pas sur la valeur du pointeur.
+
+## <a name="example"></a>Exemple
+ Le code suivant montre des pointeurs qui violent et satisfont la règle. Notez que les pointeurs non privés violent également la règle [CA1051 : ne pas déclarer de champs d’instances visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+
+ [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
+
+## <a name="related-rules"></a>Règles associées
+ [CA2112 : Les types sécurisés ne doivent pas exposer de champs](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+
+ [CA1051 : Ne déclarez pas de champs d’instances visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+
+## <a name="see-also"></a>Voir aussi
+ <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName>

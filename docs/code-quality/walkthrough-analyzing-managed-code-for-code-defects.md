@@ -1,6 +1,5 @@
 ---
 title: Analyse de la procédure pas à pas du Code managé pour les erreurs de Code | Documents Microsoft
-ms.custom: ''
 ms.date: 01/29/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 98d1bbd347870bd704a0d17d7ae559da00e9adb5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procédure pas à pas : Défauts analyse du code pour le code managé
 
@@ -61,21 +60,21 @@ Cette procédure pas à pas vous guide tout au long de l’utilisation de l’an
 ### <a name="to-analyze-a-managed-project-for-code-defects"></a>Pour analyser un projet managé pour les erreurs de code
 
 1. Sélectionnez le projet CodeAnalysisManagedDemo dans **l’Explorateur de solutions**.
-  
+
 1. Dans le menu **Projet**, cliquez sur **Propriétés**.
-  
+
      La page de propriétés CodeAnalysisManagedDemo s’affiche.
-  
+
 1. Choisissez le **l’analyse du Code** onglet.
-  
+
 1. Assurez-vous que **activer l’analyse du Code sur la Build** est activée.
-  
+
 1. À partir de la **exécuter cet ensemble de règles** la liste déroulante, sélectionnez **toutes les règles Microsoft**.
-  
+
 1. Sur le **fichier** menu, cliquez sur **enregistrer les éléments sélectionnés**, puis fermez les pages de propriétés.
-  
+
 1. Sur le **générer** menu, cliquez sur **CodeAnalysisManagedDemo de Build**.
-  
+
     Les avertissements de build du projet CodeAnalysisManagedDemo sont affichés dans le **liste d’erreurs** et **sortie** windows.
 
 ## <a name="correct-the-code-analysis-issues"></a>Corrigez les problèmes d’analyse de code

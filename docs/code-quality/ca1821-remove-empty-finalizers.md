@@ -1,10 +1,8 @@
 ---
-title: 'CA1821 : Supprimez les finaliseurs vides | Documents Microsoft'
-ms.custom: ''
+title: 'CA1821 : Supprimer les finaliseurs vides'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - RemoveEmptyFinalizers
 - CA1821
@@ -16,33 +14,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c77a35fc09ea4b45bdbef756341b330bdd11df
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ccd6ca16dc8a4ca2ce2f2883958ed82fa1c4b3ba
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821 : Supprimer les finaliseurs vides
-|||  
-|-|-|  
-|TypeName|RemoveEmptyFinalizers|  
-|CheckId|CA1821|  
-|Category|Microsoft.Performance|  
-|Modification avec rupture|Sans rupture|  
-  
-## <a name="cause"></a>Cause  
- Un type implémente un finaliseur qui est vide, appelle uniquement le finaliseur du type de base ou appelle uniquement émises sous certaines conditions de méthodes.  
-  
-## <a name="rule-description"></a>Description de la règle  
- Évitez autant que possible d'utiliser des finaliseurs en raison de la surcharge supplémentaire des performances impliquée dans le suivi de la durée de vie de l'objet. Le garbage collector exécutera le finaliseur avant de collecter l’objet. Cela signifie que les deux collections sont requises pour collecter l’objet. Un finaliseur vide entraîne cette charge mémoire supplémentaire sans aucun avantage.  
-  
-## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Supprimez le finaliseur vide. Si un finaliseur est requis pour le débogage, insérez-le entièrement dans `#if DEBUG / #endif` directives.  
-  
-## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
- Ne supprimez pas un message de cette règle. Échec de supprimer la finalisation diminue les performances et n’apporte aucun avantage.  
-  
-## <a name="example"></a>Exemple  
- L’exemple suivant montre un finaliseur vide qui doit être supprimé, un finaliseur qui doit être placé dans `#if DEBUG / #endif` directives et un finaliseur qui utilise le `#if DEBUG / #endif` directives correctement.  
-  
+|||
+|-|-|
+|TypeName|RemoveEmptyFinalizers|
+|CheckId|CA1821|
+|Category|Microsoft.Performance|
+|Modification avec rupture|Sans rupture|
+
+## <a name="cause"></a>Cause
+ Un type implémente un finaliseur qui est vide, appelle uniquement le finaliseur du type de base ou appelle uniquement émises sous certaines conditions de méthodes.
+
+## <a name="rule-description"></a>Description de la règle
+ Évitez autant que possible d'utiliser des finaliseurs en raison de la surcharge supplémentaire des performances impliquée dans le suivi de la durée de vie de l'objet. Le garbage collector exécutera le finaliseur avant de collecter l’objet. Cela signifie que les deux collections sont requises pour collecter l’objet. Un finaliseur vide entraîne cette charge mémoire supplémentaire sans aucun avantage.
+
+## <a name="how-to-fix-violations"></a>Comment corriger les violations
+ Supprimez le finaliseur vide. Si un finaliseur est requis pour le débogage, insérez-le entièrement dans `#if DEBUG / #endif` directives.
+
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
+ Ne supprimez pas un message de cette règle. Échec de supprimer la finalisation diminue les performances et n’apporte aucun avantage.
+
+## <a name="example"></a>Exemple
+ L’exemple suivant montre un finaliseur vide qui doit être supprimé, un finaliseur qui doit être placé dans `#if DEBUG / #endif` directives et un finaliseur qui utilise le `#if DEBUG / #endif` directives correctement.
+
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../code-quality/codesnippet/CSharp/ca1821-remove-empty-finalizers_1.cs)]

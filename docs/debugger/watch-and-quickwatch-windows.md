@@ -2,8 +2,7 @@
 title: Définissez un espion sur les Variables dans Visual Studio | Documents Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 264ac3f21dd7799bc4aa1f36909801eac854b755
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 187c9e682877a0f0633e7d3210454d40cae9de0f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Définissez un espion dans des Variables à l’aide de l’espion et Espion express, fenêtres dans Visual Studio
 Pendant le débogage, vous pouvez utiliser la **espion** et **Espion express** pour observer les variables et les expressions.  La fenêtre **Espion** permet d’afficher plusieurs variables, à la différence de la fenêtre **Espion express** , qui n’en affiche qu’une à la fois. 

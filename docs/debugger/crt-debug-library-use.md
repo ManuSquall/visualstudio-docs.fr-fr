@@ -2,8 +2,7 @@
 title: Utilisation de la bibliothèque CRT Debug | Documents Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.debug.runtime
@@ -31,11 +30,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3dba4e434384900affb5474c5dd9741bf8b71c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5e550a5fa705f3c85b3464046cd3c92d96bc47ca
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="crt-debug-library-use"></a>Utilisation de la bibliothèque de débogage CRT
 La bibliothèque Runtime C assure une prise en charge complète du débogage. Pour utiliser une des bibliothèques de débogage CRT, vous devez lier avec [/DEBUG](/cpp/build/reference/debug-generate-debug-info) et compilez avec **/MDd**, **/MTd**, ou **/LDd**.  

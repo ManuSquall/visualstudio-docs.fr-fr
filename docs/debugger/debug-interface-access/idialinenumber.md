@@ -2,8 +2,7 @@
 title: IDiaLineNumber | Documents Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2520f52b83558909f1901bd280c7d924dab86e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 735b15f76d9cb679e6fda2327e4af0dc3d84c8a0
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 Accéder à des informations qui décrit le processus de mappage à partir d’un bloc d’octets de texte de l’image à un numéro de ligne du fichier source.  
