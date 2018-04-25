@@ -2,8 +2,7 @@
 title: IDiaSymbol::get_InlSpec | Documents Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5afff5c93067afcd887da0815e8cdfd2ff5fe606
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b1b408007b5b9b9eb1046b4c7d82af4063376f82
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
 Cette fonction extrait un indicateur qui indique si la fonction a été marquée comme inline (à l’aide d’un de le [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) attributs).  

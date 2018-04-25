@@ -1,9 +1,7 @@
 ---
-title: 'Procédure pas à pas : Analyse du Code C/C++ pour les erreurs de | Documents Microsoft'
-ms.custom: ''
+title: 'Procédure pas à pas : analyse du code C/C++ pour rechercher les erreurs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
@@ -12,18 +10,18 @@ helpviewer_keywords:
 - code analysis tool, walkthroughs
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c4c0a053a103ec719792acd7b5d234aa99154ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 60cdc07b35480509152fd09fefb484557358fba0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procédure pas à pas : analyse du code C/C++ pour rechercher les erreurs
 
-Cette procédure pas à pas montre comment analyser du code C/C++ pour les erreurs potentielles de code à l’aide de l’outil d’analyse du code pour le code C/C++. 
+Cette procédure pas à pas montre comment analyser du code C/C++ pour les erreurs potentielles de code à l’aide de l’outil d’analyse du code pour le code C/C++.
 
 - Exécuter l’analyse du code sur le code natif.
 - Analyser les avertissements d’erreur de code.
@@ -166,7 +164,7 @@ Cette procédure pas à pas montre comment analyser du code C/C++ pour les erreu
 
    ```cpp
    . . .
-   LinkedList *newNode = NULL; 
+   LinkedList *newNode = NULL;
    if (NULL == node)
    {
         return NULL;

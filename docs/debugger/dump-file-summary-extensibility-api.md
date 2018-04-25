@@ -2,8 +2,7 @@
 title: API d’extensibilité du résumé de fichier de vidage | Documents Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d6a35ec003bec3d66edf82a14bdf1d442fac2ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c4bd5b5102219af530d7159b5481447b9c4e7ea
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API d'extensibilité du résumé de fichier dump
 À l’aide de l’API d’extensibilité de cette section, vous pouvez étendre le. Système de projet EXE et **résumé du Dump** page pour une utilisation avec votre propre moteur de débogage personnalisé.  

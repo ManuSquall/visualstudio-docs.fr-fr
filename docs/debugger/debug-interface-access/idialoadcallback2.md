@@ -2,8 +2,7 @@
 title: IDiaLoadCallback2 | Documents Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 096002a1364288f412e97da13da4ec4344982d4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 09e835d8a7bfe0bc5d7ae06f0bac457126d21956
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 Reçoit les rappels de symbole DIA procédure de localisation, pour permettre à des restrictions à être imposées sur le processus de localisation.  

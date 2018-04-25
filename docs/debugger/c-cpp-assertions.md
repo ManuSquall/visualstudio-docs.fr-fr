@@ -2,8 +2,7 @@
 title: Assertions C/C++ | Documents Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -31,11 +30,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c5180e1ef5a75a31ff6ceb6c225480e1abba5fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fcef94e9333b9c1050b76744351723924baaf0ab
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="cc-assertions"></a>Assertions C/C++
 Une instruction d’assertion spécifie une condition supposée être vraie en un point dans votre programme. Si cette condition n’est pas remplie, l’assertion échoue, l’exécution de votre programme est interrompue et le [boîte de dialogue Échec de l’Assertion](../debugger/assertion-failed-dialog-box.md) s’affiche.  

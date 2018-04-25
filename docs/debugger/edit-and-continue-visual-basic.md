@@ -2,8 +2,7 @@
 title: Modifier & Continuer (Visual Basic) | Documents Microsoft
 ms.custom: ''
 ms.date: 10/11/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,11 +21,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91524f16f8c78afcb2f99da4b434a046bdf7e67f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa3b8c287129c164d8c6984ac52375d6012fbd68
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="edit-and-continue-visual-basic"></a>Modifier & Continuer (Visual Basic)
 La fonctionnalité Modifier & Continuer destinée au débogage de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] vous permet d'apporter des modifications à votre code pendant qu'il s'exécute en mode Arrêt. Après avoir modifié le code, vous pouvez continuer son exécution avec les nouvelles modifications en place et observer leurs effets.  

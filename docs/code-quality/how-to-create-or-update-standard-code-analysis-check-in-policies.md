@@ -1,6 +1,5 @@
 ---
-title: 'Comment : créer ou mettre à jour les stratégies d’archivage de l’analyse du Code Standard | Documents Microsoft'
-ms.custom: ''
+title: 'Comment : créer ou mettre à jour des stratégies d’archivage d’analyse du code standard'
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d6a28c5dd0ae8d72f11c76d33ff15268d4dda4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb0642828daa96d7904d4e4bb967afc5f1c563d9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Comment : créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 
@@ -50,10 +49,10 @@ Après avoir spécifié une stratégie d’archivage pour le code managé, membr
 
 Activez ou désactivez les options suivantes :
 
-    |Option|Description|  
-    |------------|-----------------|  
-    |**Appliquer l’archivage pour qu’il contienne uniquement les fichiers qui font partie de la solution actuelle.**|Analyse du code peut s’exécuter uniquement sur les fichiers spécifiés dans les fichiers de configuration de solution et projet. Cette stratégie garantit que tout le code qui fait partie d’une solution est analysé.|  
-    |**Appliquer l’analyse du Code C/C++ (/analyze)**|Requiert que tous les projets C ou C++ générés avec le / analyze exécuter l’analyse du code avant de pouvoir être archivées l’option du compilateur.|  
+    |Option|Description|
+    |------------|-----------------|
+    |**Appliquer l’archivage pour qu’il contienne uniquement les fichiers qui font partie de la solution actuelle.**|Analyse du code peut s’exécuter uniquement sur les fichiers spécifiés dans les fichiers de configuration de solution et projet. Cette stratégie garantit que tout le code qui fait partie d’une solution est analysé.|
+    |**Appliquer l’analyse du Code C/C++ (/analyze)**|Requiert que tous les projets C ou C++ générés avec le / analyze exécuter l’analyse du code avant de pouvoir être archivées l’option du compilateur.|
     |**Appliquer l’analyse du Code pour le Code managé**|Requiert que tous les projets managés exécuter l’analyse du code et générer avant de pouvoir être archivées.|
 
 ### <a name="to-specify-a-managed-rule-set"></a>Pour spécifier un ensemble de règles managé

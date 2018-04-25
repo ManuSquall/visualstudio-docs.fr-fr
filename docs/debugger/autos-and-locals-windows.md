@@ -2,8 +2,7 @@
 title: Inspecter des Variables dans les fenêtres variables locales et automatique | Documents Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3bad753a18352ebbf68bef5f398a8039a9c4dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspecter les Variables dans l’automatique et les fenêtres de variables locales dans Visual Studio
 Le **automatique** fenêtre (pendant le débogage, **CTRL + ALT + V, A**, ou **Déboguer > Windows > automatique**) et le **variables locales** fenêtre (pendant le débogage **CTRL + ALT + V, L**, ou **Déboguer > Windows > variables locales**) sont très utiles lorsque vous souhaitez voir les valeurs des variables pendant que vous déboguez. La fenêtre **Variables locales** affiche les variables définies dans la portée locale, qui est généralement la fonction ou méthode en cours d’exécution. La fenêtre **Automatique** affiche les variables utilisées autour de la ligne actuelle (l’emplacement où le débogueur est arrêté). Exactement les variables s’affichent dans cette fenêtre est différente dans différentes langues. Consultez [What variables appear in the Autos Window?](#bkmk_whatvariables) ci-dessous.  
