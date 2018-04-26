@@ -1,28 +1,30 @@
 ---
-title: 'Comment : créer une Application de Service de Workflow WCF | Documents Microsoft'
+title: 'Le Concepteur de flux de travail - Comment : créer une Application de Service de Workflow WCF'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 12d675ac-27d8-4d86-ba16-6f7688f8c841
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d901354b4a6a5f90ef75567131540405af7c9690
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 93fb69862c228a3b6e61467facba188dd20c67c7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Procédure : créer une application de service de workflow WCF
 
-Les applications de service de workflow [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] sont des services de communications distribués qui passent des messages entre des clients et eux-mêmes au-delà des limites du processus. L'implémentation du contrat de service du côté service s'effectue de façon déclarative via des activités de workflow dans [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] d'une manière analogue à celle des services de workflow hérités dans le .NET Framework 3.5.
+Applications de service de flux de travail de Windows Communication Foundation (WCF) sont des services de communications distribués qui passent des messages entre les clients et eux-mêmes au-delà des limites de processus. L’implémentation du contrat de service du côté service s’effectue de façon déclarative via des activités de flux de travail dans le .NET Framework 4 d’une manière analogue à des services de workflow hérité dans .NET Framework 3.5.
 
-### <a name="to-create-a-wcf-workflow-service-application"></a>Pour créer une application de service de workflow WCF
+## <a name="to-create-a-wcf-workflow-service-application"></a>Pour créer une application de service de workflow WCF
 
-1.  Démarrez [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+1.  Démarrez Visual Studio 2010.
 
-2.  Sur le **fichier** menu, pointez sur **nouveau**, puis sélectionnez **projet...** .
+2.  Dans le menu **Fichier**, pointez sur **Nouveau**, puis sélectionnez **Projet**.
 
      La boîte de dialogue **Nouveau projet** s'affiche.
 
@@ -37,7 +39,7 @@ Les applications de service de workflow [!INCLUDE[indigo1](../workflow-designer/
 7.  Dans le **Solution** , sélectionnez soit créer une nouvelle solution, puis cliquez sur **OK**.
 
     > [!NOTE]
-    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter**, puis **Nouveau projet...** pour ouvrir le **nouveau projet** boîte de dialogue. Procédez comme décrit ci-dessus dans cette procédure.
+    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans Visual Studio 2010, cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter**, puis  **Nouveau projet** pour ouvrir le **nouveau projet** boîte de dialogue. Procédez comme décrit ci-dessus dans cette procédure.
 
 8.  Le modèle de projet crée une définition de service au format XAML. Le Concepteur de flux de travail Windows s’ouvre en mode design avec un <xref:System.Activities.Statements.Sequence> activité qui contient un ensemble de <xref:System.ServiceModel.Activities.Receive> et <xref:System.ServiceModel.Activities.SendReply> activités.
 

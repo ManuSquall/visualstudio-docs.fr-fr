@@ -1,7 +1,9 @@
 ---
-title: Lier à une activité&#39;boîte de dialogue propriété (hérité) | Documents Microsoft
+title: Le Concepteur de flux de travail - créer une liaison à une activité&#39;boîte de dialogue propriété (hérité)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ActivityBindForm.UI
 helpviewer_keywords:
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a799b57169116343f5d83e54ce5bd87dedfd801
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8922864a32c08d8feaed11e530314176557a785f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Lier à une activité&#39;boîte de dialogue propriété (hérité)
-Cette rubrique décrit comment utiliser le **lier à la propriété d’une activité** boîte de dialogue dans le Concepteur de flux de travail Windows hérité. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+# <a name="bind-to-an-activitys-property-dialog-box-legacy"></a>Lier à la propriété d'une activité, boîte de dialogue (héritée)
+
+Cette rubrique décrit comment utiliser le **lier à la propriété d’une activité** boîte de dialogue dans le Concepteur de flux de travail Windows hérité. Utilisez le Concepteur de flux de travail hérité lorsque vous avez besoin cibler le .NET Framework version 3.5 ou du WinFX.
 
  Vous pouvez lier un type d'instance de propriété de dépendance à la propriété publique ou à un événement d'une autre activité. Pour plus d’informations sur la liaison d’activité, consultez [à l’aide des propriétés de dépendance](http://go.microsoft.com/fwlink?LinkID=65007).
 

@@ -11,14 +11,15 @@ ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e456d436145d859a24a224511dc69c1383bbcaeb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 84b275f2238774aacff143af17161f09006e8506
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Projets de base de données et les applications de couche données dans Visual Studio
 Vous pouvez utiliser des projets de base de données pour créer de nouvelles bases de données, des applications de couche données (DAC) et mettre à jour les bases de données et les applications de couche données. Les projets de base de données et les projets DAC permettent d’appliquer des techniques de gestion de projet et le contrôle de version à vos efforts de développement de base de données de la même façon que vous appliquez ces techniques au code managé ou natif. Vous pouvez aider votre équipe de développement gérer les modifications apportées aux bases de données et les serveurs de base de données en créant un *projet DAC*, *projet de base de données*, ou un *projet server* et leur placement sous contrôle de version. Membres de votre équipe peuvent ensuite consulter les fichiers à apporter, générer et tester des modifications dans un *environnement de développement isolé*, ou bac à sable, avant de les partager avec l’équipe. Pour garantir la qualité du code, votre équipe peut terminer et toutes les modifications pour une version particulière de la base de données de test dans un environnement intermédiaire avant de déployer les modifications en production.

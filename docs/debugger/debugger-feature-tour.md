@@ -1,6 +1,6 @@
 ---
-title: Visite guidée des fonctionnalités - du débogueur Visual Studio | Documents Microsoft
-description: Visite guidée du débogueur Visual Studio
+title: Tout d’abord consulter le débogueur
+description: Prendre un coup de œil les différentes fonctionnalités du débogueur Visual Studio.
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb84fbfa4b8916b963f3f3cc35e044593c5a47e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>Démarrage rapide : D’abord examiner le débogueur Visual Studio
+# <a name="first-look-at-the-visual-studio-debugger"></a>Tout d’abord consulter le débogueur Visual Studio
 
 Cette rubrique présente les fonctionnalités du débogueur Visual Studio. Si vous souhaitez suivre la procédure en ouvrant votre propre application dans Visual Studio, vous pouvez le faire, ou vous pouvez le suivre une application d’exemple à l’aide du [Guide du débutant](../debugger/getting-started-with-the-debugger.md).
 
@@ -157,7 +157,7 @@ Pendant le débogage, cliquez sur un objet et choisissez **ajouter un espion**.
 
 ![Fenêtre Espion](../debugger/media/dbg-tour-watch-window.png "fenêtre Espion")
 
-Dans cet exemple, vous avez un espion à définir sur le `File` objet et vous pouvez voir sa valeur changent à mesure que vous parcourez le débogueur. Contrairement à d’autres fenêtres de variables, le **espion** windows toujours affichent les variables que vous surveillez (elles sont grisées lorsque hors de portée).
+Dans cet exemple, vous avez un espion à définir sur le `f` objet et vous pouvez voir sa valeur changent à mesure que vous parcourez le débogueur. Contrairement à d’autres fenêtres de variables, le **espion** windows toujours affichent les variables que vous surveillez (elles sont grisées lorsque hors de portée).
 
 Pour plus d’informations, consultez [définissez un espion à l’aide de l’espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)
 
@@ -213,21 +213,9 @@ Vous pouvez parcourir et afficher les captures instantanées à l’aide des bou
 
 Pour plus d’informations, consultez la page [Afficher des captures instantanées avec le retour en arrière IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 
-## <a name="more-features-to-look-at"></a>Plusieurs fonctions à examiner
+## <a name="next-steps"></a>Étapes suivantes
 
--   [Conseils et astuces de débogueur](../debugger/debugger-tips-and-tricks.md) apprendre à accroître votre productivité avec le débogueur.
+Dans ce didacticiel, vous avez eu un coup de œil rapide à nombreuses fonctionnalités du débogueur. Vous souhaiterez peut-être plus approfondie sur ces fonctionnalités à l’aide d’un exemple d’application
 
--   [Modifier & Continuer](../debugger/edit-and-continue.md) pour un sous-ensemble de langues (c#, C++, Visual Basic), la fonctionnalité Modifier & Continuer vous permet de modifier le code au milieu d’une session de débogage.
-
--   [Déboguer les Applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md) décrit comment déboguer des applications multithread. 
-
--   [Débogage distant](../debugger/remote-debugging.md) décrit comment déboguer des applications qui s’exécutent sur d’autres ordinateurs ou les périphériques. 
-  
--   [IntelliTrace](../debugger/intellitrace.md) décrit la fonctionnalité d’IntelliTrace dans Visual Studio Enterprise. Vous pouvez utiliser il à l’enregistrement et la trace de l’historique d’exécution de votre code.
-
--   [Utilisation du réseau](../profiling/network-usage.md) décrit un outil de profilage que vous pouvez utiliser pour déboguer des services web et autres ressources réseau dans les applications Windows universelle (UWP). Utilisez l’outil pour examiner les charges utiles.
-
--   [Debug Interface Access SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md) décrit le Kit de développement des logiciels Microsoft Debug Interface Access (DIA SDK). Ce kit fournit l’accès aux informations de débogage stockées dans les fichiers de base de données du programme (.pdb) qui sont générés par les outils de post-compilation Microsoft.  
-
-## <a name="see-also"></a>Voir aussi  
- [Débogage dans Visual Studio](../debugger/index.md)
+> [!div class="nextstepaction"]
+> [Apprendre à déboguer avec Visual Studio](../debugger/getting-started-with-the-debugger.md)

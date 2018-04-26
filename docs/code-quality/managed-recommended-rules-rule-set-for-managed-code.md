@@ -1,6 +1,7 @@
 ---
 title: Ensemble de règles des règles recommandées managées pour le code managé
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f15fc1859e0b7b8f3e3d7dc4bcf7fb315690734
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 489d7fba60b3c7d72b7d0d5f1e94436ae5123c52
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Ensemble de règles des règles recommandées managées pour le code managé
 Vous pouvez utiliser la règle le règles recommandées gérées Microsoft à vous concentrer sur les problèmes les plus critiques dans votre code managé, y compris les failles de sécurité potentielles, application tombe en panne et d’autres erreurs de logique et de conception importantes. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets.

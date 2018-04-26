@@ -1,9 +1,9 @@
 ---
-title: Services, page du Concepteur de projets | Microsoft Docs
-ms.custom: ''
+title: Services, page du Concepteur de projets
 ms.date: 01/18/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f37d6b448ea7ce3a8662d0372cf61b35363f4648
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 320c1d89713aaa17fd883c90d86cdf4874d75e60
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="services-page-project-designer"></a>Services, page du Concepteur de projets
 
@@ -30,44 +30,54 @@ Pour accéder à la page **Services**, sélectionnez un nœud de projet dans l�
 
 ## <a name="task-list"></a>Liste des tâches
 
-[Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
-  
+[Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+
 ## <a name="uielement-list"></a>Liste des éléments d’interface
 
- **Configuration**  
- Ce contrôle n’est pas modifiable dans cette page. Pour obtenir une description de ce contrôle, consultez [Compiler, page du Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) ou [Générer, page du Concepteur de projets (C#)](../../ide/reference/build-page-project-designer-csharp.md).  
-  
- **Plateforme**  
- Ce contrôle n’est pas modifiable dans cette page. Pour obtenir une description de ce contrôle, consultez [Compiler, page du Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) ou [Générer, page du Concepteur de projets (C#)](../../ide/reference/build-page-project-designer-csharp.md).  
-  
- **Activer les services d’application cliente**  
- Sélectionnez cette option pour activer les services d’application cliente. Vous devez spécifier des emplacements de service dans la page **Services** pour utiliser les services d’application cliente.  
-  
- **Utiliser l’authentification Windows**  
- Indique que le fournisseur d’authentification utilise l’authentification Windows, c’est-à-dire l’identité fournie par le système d’exploitation Windows.  
-  
- **Utiliser l’authentification par formulaire**  
- Indique que le fournisseur d’authentification utilise l’authentification par formulaire. Cela signifie que votre application doit fournir une interface utilisateur pour la connexion. Pour plus d’informations, consultez [Comment : implémenter la connexion utilisateur avec les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).  
-  
- **Emplacement du service d’authentification**  
- Utilisé uniquement avec l’authentification par formulaire. Spécifie l’emplacement du service d’authentification.  
-  
- **Facultatif : Fournisseur d’infos d’identification**  
- Utilisé uniquement avec l’authentification par formulaire. Indique l’implémentation <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> que le service d’authentification utilise pour afficher une boîte de dialogue de connexion quand votre application appelle la méthode `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> et passe des chaînes vides ou la valeur `null` pour les paramètres. Si vous ne renseignez pas cette zone, vous devez passer un nom d’utilisateur et un mot de passe valides à la méthode <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Vous devez spécifier le fournisseur d’informations d’identification sous la forme d’un nom de type qualifié d’assembly. Pour plus d’informations, consultez <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> et [Noms d’assemblys](/dotnet/framework/app-domains/assembly-names). Dans sa forme la plus simple, un nom de type qualifié d’assembly ressemble à l’exemple suivant : `MyNamespace.MyLoginClass, MyAssembly`  
-  
- **Emplacement des services de rôles**  
- Spécifie l’emplacement du service de rôles.  
-  
- **Emplacement des services de paramètres web**  
- Spécifie l’emplacement du service de profil (paramètres web).  
-  
- **Avancé**  
- Ouvre la [boîte de dialogue Paramètres avancés pour les services](../../ide/reference/advanced-settings-for-services-dialog-box.md), qui vous permet de substituer le comportement par défaut. Par exemple, vous pouvez utiliser cette boîte de dialogue afin de spécifier une base de données pour le stockage hors connexion au lieu d’utiliser le système de fichiers local. Pour plus d’informations, consultez [Paramètres avancés pour les services, boîte de dialogue](../../ide/reference/advanced-settings-for-services-dialog-box.md).  
-  
+ **Configuration**
+
+ Ce contrôle n’est pas modifiable dans cette page. Pour obtenir une description de ce contrôle, consultez [Compiler, page du Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) ou [Générer, page du Concepteur de projets (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+
+ **Plateforme**
+
+ Ce contrôle n’est pas modifiable dans cette page. Pour obtenir une description de ce contrôle, consultez [Compiler, page du Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) ou [Générer, page du Concepteur de projets (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+
+ **Activer les services d’application cliente**
+
+ Sélectionnez cette option pour activer les services d’application cliente. Vous devez spécifier des emplacements de service dans la page **Services** pour utiliser les services d’application cliente.
+
+ **Utiliser l’authentification Windows**
+
+ Indique que le fournisseur d’authentification utilise l’authentification Windows, c’est-à-dire l’identité fournie par le système d’exploitation Windows.
+
+ **Utiliser l’authentification par formulaire**
+
+ Indique que le fournisseur d’authentification utilise l’authentification par formulaire. Cela signifie que votre application doit fournir une interface utilisateur pour la connexion. Pour plus d’informations, consultez [Comment : implémenter la connexion utilisateur avec les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
+
+ **Emplacement du service d’authentification**
+
+ Utilisé uniquement avec l’authentification par formulaire. Spécifie l’emplacement du service d’authentification.
+
+ **Facultatif : Fournisseur d’infos d’identification**
+
+ Utilisé uniquement avec l’authentification par formulaire. Indique l’implémentation <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> que le service d’authentification utilise pour afficher une boîte de dialogue de connexion quand votre application appelle la méthode `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> et passe des chaînes vides ou la valeur `null` pour les paramètres. Si vous ne renseignez pas cette zone, vous devez passer un nom d’utilisateur et un mot de passe valides à la méthode <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Vous devez spécifier le fournisseur d’informations d’identification sous la forme d’un nom de type qualifié d’assembly. Pour plus d’informations, consultez <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> et [Noms d’assemblys](/dotnet/framework/app-domains/assembly-names). Dans sa forme la plus simple, un nom de type qualifié d’assembly ressemble à l’exemple suivant : `MyNamespace.MyLoginClass, MyAssembly`
+
+ **Emplacement des services de rôles**
+
+ Spécifie l’emplacement du service de rôles.
+
+ **Emplacement des services de paramètres web**
+
+ Spécifie l’emplacement du service de profil (paramètres web).
+
+ **Avancé**
+
+ Ouvre la [boîte de dialogue Paramètres avancés pour les services](../../ide/reference/advanced-settings-for-services-dialog-box.md), qui vous permet de substituer le comportement par défaut. Par exemple, vous pouvez utiliser cette boîte de dialogue afin de spécifier une base de données pour le stockage hors connexion au lieu d’utiliser le système de fichiers local. Pour plus d’informations, consultez [Paramètres avancés pour les services, boîte de dialogue](../../ide/reference/advanced-settings-for-services-dialog-box.md).
+
 ## <a name="see-also"></a>Voir aussi
 
-[Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services)   
-[Paramètres avancés pour les services, boîte de dialogue](../../ide/reference/advanced-settings-for-services-dialog-box.md)   
-[Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)   
-[Page Compiler, Concepteur de projet (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
-[Page Générer, Concepteur de projet (C#)](../../ide/reference/build-page-project-designer-csharp.md)   
+- [Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services)
+- [Paramètres avancés pour les services, boîte de dialogue](../../ide/reference/advanced-settings-for-services-dialog-box.md)
+- [Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Page Compiler, Concepteur de projet (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Page Générer, Concepteur de projet (C#)](../../ide/reference/build-page-project-designer-csharp.md)

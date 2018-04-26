@@ -19,14 +19,15 @@ ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71d651d2e2d6c84b5858bb4687bf74aa503d014c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c8986ce9e2ee1ff171a524b0a402a1e44b70ca06
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="validate-data-in-datasets"></a>Valider des données dans les jeux de données
 Validation des données est le processus consistant à confirmer que les valeurs entrées dans des objets de données sont conformes aux contraintes de schéma d’un jeu de données. Le processus de validation vérifie également que ces valeurs sont les suivantes : les règles qui ont été établies pour votre application. Il est conseillé de valider les données avant d’envoyer des mises à jour à la base de données sous-jacente. Cela réduit les erreurs, ainsi que le nombre potentiel d’allers-retours entre une application et la base de données.

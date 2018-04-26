@@ -15,14 +15,15 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5961498518d8f2a1137134f88f7961f1c9395937
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5db34de3244f7ee38ba4ef33c71b251f2bdbb6b0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Ajouter des contrôles personnalisés à la fenêtre Sources de données
 Lorsque vous faites glisser un élément à partir de la **des Sources de données** fenêtre à une aire de conception pour créer un contrôle lié aux données, vous pouvez sélectionner le type de contrôle que vous créez. Chaque élément dans la fenêtre a une liste déroulante qui affiche les contrôles que vous pouvez sélectionner. L’ensemble des contrôles associés à chaque élément est déterminé par le type de données de l’élément. Si le contrôle que vous souhaitez créer n’apparaît pas dans la liste, vous pouvez suivre les instructions de cette rubrique pour ajouter le contrôle à la liste.

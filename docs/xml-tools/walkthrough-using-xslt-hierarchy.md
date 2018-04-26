@@ -1,18 +1,17 @@
 ---
-title: 'Procédure pas à pas : Utilisation de XSLT Hierarchy | Documents Microsoft'
-ms.custom: ''
+title: 'Procédure pas à pas : utilisation de XSLT Hierarchy'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a4259a06d79588983e3591510c40e119bc4fcb3b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3155eeaafdd419687b9111ef3e353f7a517aa10e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Procédure pas à pas : utilisation de XSLT Hierarchy
 
@@ -24,93 +23,93 @@ L'exemple dans cette rubrique illustre le débogage dans une feuille de style r�
 
 ## <a name="to-debug-in-a-referenced-style-sheet"></a>Pour déboguer dans une feuille de style référencée
 
-1. Ouvrez un document XML dans Visual Studio. Cet exemple utilise le document `collection.xml` suivant.  
-  
+1. Ouvrez un document XML dans Visual Studio. Cet exemple utilise le document suivant :
+
     ```xml
-    <?xml version="1.0" encoding="utf-8"?>  
-    <?xml-stylesheet type="text/xsl" href="xslinclude.xsl"?>  
-    <COLLECTION>  
-      <BOOK>  
-        <TITLE>Lover Birds</TITLE>  
-        <AUTHOR>Cynthia Randall</AUTHOR>  
-        <PUBLISHER>Lucerne Publishing</PUBLISHER>  
-      </BOOK>  
-      <BOOK>  
-        <TITLE>The Sundered Grail</TITLE>  
-        <AUTHOR>Eva Corets</AUTHOR>  
-        <PUBLISHER>Lucerne Publishing</PUBLISHER>  
-      </BOOK>  
-      <BOOK>  
-        <TITLE>Splish Splash</TITLE>  
-        <AUTHOR>Paula Thurman</AUTHOR>  
-        <PUBLISHER>Scootney</PUBLISHER>  
-      </BOOK>  
-    </COLLECTION>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <?xml-stylesheet type="text/xsl" href="xslinclude.xsl"?>
+    <COLLECTION>
+      <BOOK>
+        <TITLE>Lover Birds</TITLE>
+        <AUTHOR>Cynthia Randall</AUTHOR>
+        <PUBLISHER>Lucerne Publishing</PUBLISHER>
+      </BOOK>
+      <BOOK>
+        <TITLE>The Sundered Grail</TITLE>
+        <AUTHOR>Eva Corets</AUTHOR>
+        <PUBLISHER>Lucerne Publishing</PUBLISHER>
+      </BOOK>
+      <BOOK>
+        <TITLE>Splish Splash</TITLE>
+        <AUTHOR>Paula Thurman</AUTHOR>
+        <PUBLISHER>Scootney</PUBLISHER>
+      </BOOK>
+    </COLLECTION>
     ```
 
 1. Ajoutez le `xslincludefile.xsl` suivant :
 
     ```xml
-    <?xml version='1.0'?>  
-    <xsl:stylesheet version="1.0"  
-          xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
-          xml:space="preserve">  
-  
-    <xsl:template match="TITLE">  
-       Title - <xsl:value-of select="."/><BR/>  
-    </xsl:template>  
-  
-    <xsl:template match="AUTHOR">  
-       Author - <xsl:value-of select="."/><BR/>  
-    </xsl:template>  
-  
-    <xsl:template match="PUBLISHER">  
-       Publisher - <xsl:value-of select="."/><BR/><!-- removed second <BR/> -->  
-    </xsl:template>  
-  
-    </xsl:stylesheet>  
+    <?xml version='1.0'?>
+    <xsl:stylesheet version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+          xml:space="preserve">
+
+    <xsl:template match="TITLE">
+       Title - <xsl:value-of select="."/><BR/>
+    </xsl:template>
+
+    <xsl:template match="AUTHOR">
+       Author - <xsl:value-of select="."/><BR/>
+    </xsl:template>
+
+    <xsl:template match="PUBLISHER">
+       Publisher - <xsl:value-of select="."/><BR/><!-- removed second <BR/> -->
+    </xsl:template>
+
+    </xsl:stylesheet>
     ```
-  
-3.  Ajoutez le fichier `xslinclude.xsl` suivant :  
-  
+
+3.  Ajoutez le fichier `xslinclude.xsl` suivant :
+
     ```xml
-    <?xml version='1.0'?>  
-    <xsl:stylesheet version="1.0"  
-          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
-  
-      <xsl:output method="xml" omit-xml-declaration="yes"/>  
-  
-      <xsl:template match="/">  
-        <xsl:for-each select="COLLECTION/BOOK">  
-          <xsl:apply-templates select="TITLE"/>  
-          <xsl:apply-templates select="AUTHOR"/>  
-          <xsl:apply-templates select="PUBLISHER"/>  
-          <BR/>  
-          <!-- add this -->  
-        </xsl:for-each>  
-      </xsl:template>  
-  
-      <!-- The following template rule will not be called,  
-      because the related template in the including stylesheet  
-      is called. If we move this template so that  
-      it follows the xsl:include instruction, this one  
-      will be called instead.-->  
-      <xsl:template match="TITLE">  
-        <DIV STYLE="color:blue">  
-          Title: <xsl:value-of select="."/>  
-        </DIV>  
-      </xsl:template>  
-  
-      <xsl:include href="xslincludefile.xsl" />  
-    </xsl:stylesheet>  
+    <?xml version='1.0'?>
+    <xsl:stylesheet version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+      <xsl:output method="xml" omit-xml-declaration="yes"/>
+
+      <xsl:template match="/">
+        <xsl:for-each select="COLLECTION/BOOK">
+          <xsl:apply-templates select="TITLE"/>
+          <xsl:apply-templates select="AUTHOR"/>
+          <xsl:apply-templates select="PUBLISHER"/>
+          <BR/>
+          <!-- add this -->
+        </xsl:for-each>
+      </xsl:template>
+
+      <!-- The following template rule will not be called,
+      because the related template in the including stylesheet
+      is called. If we move this template so that
+      it follows the xsl:include instruction, this one
+      will be called instead.-->
+      <xsl:template match="TITLE">
+        <DIV STYLE="color:blue">
+          Title: <xsl:value-of select="."/>
+        </DIV>
+      </xsl:template>
+
+      <xsl:include href="xslincludefile.xsl" />
+    </xsl:stylesheet>
     ```
-  
+
 4.  Ajouter un point d’arrêt au niveau de l’instruction `<xsl:include href="xslincludefile.xsl" />`.
-  
-5.  Démarrez le débogage.  
-  
-6.  Lorsque le débogueur s’arrête à l’instruction `<xsl:include href="xslincludefile.xsl" />`, appuyez sur la **pas à pas détaillé** bouton. Notez que le débogage peut continuer dans la feuille de style référencée. La hiérarchie est visible et le concepteur affiche le chemin d’accès correct.  
-  
+
+5.  Démarrez le débogage.
+
+6.  Lorsque le débogueur s’arrête à l’instruction `<xsl:include href="xslincludefile.xsl" />`, appuyez sur la **pas à pas détaillé** bouton. Le débogage peut être poursuivie dans la feuille de style référencée. La hiérarchie est visible et le concepteur affiche le chemin d’accès correct.
+
 ## <a name="see-also"></a>Voir aussi
 
-[Procédure pas à pas : Générateur de profils XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+- [Procédure pas à pas : Générateur de profils XSLT](../xml-tools/walkthrough-xslt-profiler.md)

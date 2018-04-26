@@ -1,7 +1,9 @@
 ---
-title: Boîte de dialogue Éditeur (hérité) l’ensemble de règles | Documents Microsoft
+title: Le Concepteur de flux de travail - boîte de dialogue Éditeur (hérité) l’ensemble de règles
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
 helpviewer_keywords:
@@ -12,26 +14,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77bb10e5237b33c60b0cd309c2d3c6c634182bc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Éditeur d'ensemble de règles, boîte de dialogue (héritée)
-Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** boîte de dialogue dans le Concepteur de flux de travail Windows hérité. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Le **Éditeur d’ensemble de règles** boîte de dialogue est utilisée pour créer et modifier [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) qui sont sérialisés dans un fichier .rules ensembles de règles.
+Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** boîte de dialogue dans le Concepteur de flux de travail Windows hérité. Utilisez le Concepteur de flux de travail hérité lorsque vous avez besoin cibler le .NET Framework version 3.5 ou du WinFX.
+
+Le **Éditeur d’ensemble de règles** boîte de dialogue est utilisée pour créer et modifier [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) qui sont sérialisés dans un fichier .rules ensembles de règles.
 
 > [!NOTE]
 > Si vous souhaitez ouvrir le fichier .rules avec le **XML-éditeur avec encodage**, vous devez d’abord fermer la fenêtre du concepteur associée pour l’activité ou le flux de travail.
 
- Pour plus d’informations sur l’accès à la **Éditeur d’ensemble de règles** boîte de dialogue, consultez [Comment : créer un ensemble de PolicyActivity règle (hérité)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+Pour plus d’informations sur l’accès à la **Éditeur d’ensemble de règles** boîte de dialogue, consultez [Comment : créer un ensemble de PolicyActivity règle (hérité)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
 > [!WARNING]
-> L'éditeur de règles du [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité utilisé pour cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] ne prend pas en charge le multi-ciblage.
+> L’éditeur de règles du Concepteur de Workflow hérité qui est utilisé pour cibler le .NET Framework version 3.5 ou du WinFX ne prend pas en charge le multi-ciblage.
 
- Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **Éditeur d’ensemble de règles** boîte de dialogue.
+Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **Éditeur d’ensemble de règles** boîte de dialogue.
 
 |Élément d'interface utilisateur|Description|
 |----------------|-----------------|

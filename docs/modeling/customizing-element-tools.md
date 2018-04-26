@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 566558390e29f9198b2328463dfce26327f76565
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: cf990ea206a299c72ec55150bf2e4935b80fb473
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-element-tools"></a>Personnalisation des outils d'élément
 Dans certaines définitions DSL, vous représenter un concept unique en tant que groupe d’éléments. Par exemple, si vous créez un modèle dans lequel un composant possède un ensemble fixe de ports, vous souhaitez toujours les ports à créer en même temps en tant que son composant parent. Par conséquent, vous devez personnaliser l’outil de création de l’élément pour qu’il crée un groupe d’éléments au lieu d’un seul. Pour ce faire, vous pouvez personnaliser la façon dont l’outil de création de l’élément est initialisé.

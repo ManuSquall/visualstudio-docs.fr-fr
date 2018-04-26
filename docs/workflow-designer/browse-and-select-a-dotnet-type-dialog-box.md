@@ -1,7 +1,9 @@
 ---
-title: Rechercher et sélectionner une Type .NET, boîte de dialogue | Documents Microsoft
+title: Le Concepteur de flux de travail - Parcourir et sélectionner une Type .NET, boîte de dialogue
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
@@ -11,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04aba24d3dffc96fb8e5288d74322258fa77ce19
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4d136c98acd2719abd07f8feb2f9def48ec6b2ec
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Rechercher et sélectionner un type .NET, boîte de dialogue
 
@@ -34,7 +36,7 @@ Dans le **propriétés** concepteurs, tels que le Concepteur de variables, lorsq
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Sélection d'un type valeur ou référence dans l'Explorateur de types
 
-#### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Pour sélectionner un type valeur ou référence dans l'Explorateur de types
+### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Pour sélectionner un type valeur ou référence dans l'Explorateur de types
 
 1.  Dans le **nom de Type** , entrez le nom du type que vous souhaitez utiliser.
 
@@ -44,7 +46,7 @@ Dans le **propriétés** concepteurs, tels que le Concepteur de variables, lorsq
 
     -   Tapez de caractères suffisant dans le **nom de Type** boîte pour identifier de façon unique le type que vous souhaitez utiliser et appuyez sur ENTRÉE pour sélectionner le type
 
-#### <a name="to-select-a-generic-type-from-the-type-browser"></a>Pour sélectionner un type générique dans l'Explorateur de types
+### <a name="to-select-a-generic-type-from-the-type-browser"></a>Pour sélectionner un type générique dans l'Explorateur de types
 
 1.  Dans le **nom de Type** zone, tapez le nom du type que vous souhaitez utiliser.
 

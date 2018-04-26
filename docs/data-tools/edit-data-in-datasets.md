@@ -12,14 +12,15 @@ ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f9acc81270ecf9c0dfc60d3e1cfed524e0ce97f5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 256b22281f64a1a04f8d691f2f48cc7b0295b1a1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-data-in-datasets"></a>Modifier des données dans les jeux de données
 Pour modifier les données dans les tables de données de la même manière que vous modifiez les données dans une table dans une base de données. Le processus peut inclure insertion, mise à jour et suppression d’enregistrements dans la table. Dans un formulaire lié aux données, vous pouvez spécifier quels champs sont modifiables par l’utilisateur. Dans ce cas, l’infrastructure de liaison de données gère tout le suivi des modifications afin que les modifications puissent être envoyées à la base de données ultérieurement. Si les modifications apportées par programme aux données et que vous avez l’intention de renvoyer ces modifications à la base de données, vous devez utiliser les objets et les méthodes qui effectuent le suivi des modifications pour vous.

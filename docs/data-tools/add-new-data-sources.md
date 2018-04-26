@@ -11,14 +11,15 @@ ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: efcc167ba42469aa8e32198161612db7521d22ba
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1c7df62a0801534f8a23f7b5cde984c75742406a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-new-data-sources"></a>Ajouter de nouvelles sources de données
 Dans le cadre des outils de données .NET dans Visual Studio, le terme *source de données* fait référence à des objets .NET qui se connectent à un magasin de données et exposent les données à une application .NET. Les concepteurs Visual Studio peuvent consommer la sortie de la source de données pour générer le code réutilisable qui lie les données aux formulaires lorsque vous glissez -déplacez des objets de base de données à partir de la **des Sources de données** fenêtre. Ce type de source de données peut être :

@@ -14,14 +14,15 @@ ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b293656a0eeffeba304ef4692f9c021ae9639d22
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 57a617524f4f9bc03818d30ec434b2d4604b0f3e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Afficher les données associées dans les applications WPF
 Dans certaines applications, vous souhaiterez éventuellement utiliser des données provenant de plusieurs tables ou entités qui sont liés entre eux dans une relation parent-enfant. Par exemple, vous souhaiterez peut-être afficher une grille qui montre les clients d’un `Customers` table. Lorsque l’utilisateur sélectionne un client spécifique, une autre grille affiche les commandes de ce client à partir d’un `Orders` table.

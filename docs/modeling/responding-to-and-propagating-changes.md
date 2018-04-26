@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a706f8cafcdc140752775909be7222d6720c1c92
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: d87a93016f2004a45a572374d68a20d2e59073da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="responding-to-and-propagating-changes"></a>Propagation et réponse aux modifications en attente
 Lorsqu’un élément est créé, supprimé ou mis à jour, vous pouvez écrire du code qui propage la modification à d’autres parties du modèle, ou à des ressources externes telles que des fichiers, de bases de données ou d’autres composants.

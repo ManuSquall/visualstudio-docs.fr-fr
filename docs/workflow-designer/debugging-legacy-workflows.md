@@ -1,7 +1,9 @@
 ---
-title: Débogage de Workflows hérités | Documents Microsoft
+title: Concepteur de flux de travail - débogage de Workflows hérités
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, debugging
 - debugging, workflows
@@ -12,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2710266446e285d9107f4450c09ffe2e8e87e090
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33a8358c5d62b938fc64d608c9b4546ab1745aaa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-legacy-workflows"></a>Débogage de workflows hérités
 
-Si vous utilisez le Concepteur de flux de travail Windows hérité dans [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] pour générer [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] les applications qui ciblent Framework 3.0 ou 3.5, vous pouvez déboguer vos workflows comme tout autre programme en définissant des points d’arrêt, attacher au processus et en examinant les threads et la pile des appels. Vous avez également la possibilité d'effectuer un débogage à distance.
+Si vous utilisez le Concepteur de flux de travail Windows hérité dans Visual Studio pour créer des applications de Windows Workflow Foundation (WF) qui ciblent Framework 3.0 ou 3.5, vous pouvez déboguer vos workflows comme tout autre programme en définissant des points d’arrêt, attacher au processus, et en examinant les threads et la pile des appels. Vous avez également la possibilité d'effectuer un débogage à distance.
 
 > [!NOTE]
 > Si plusieurs versions de Visual Studio ont été installées et désinstallées sur votre ordinateur, le débogage WF3 peut échouer pour l'une des raisons suivantes :
@@ -32,7 +34,7 @@ Si vous utilisez le Concepteur de flux de travail Windows hérité dans [!INCLUD
 >
 > Si l'un de ces scénarios se produit lors du débogage de workflows .NET Framework 3.0 ou 3.5, réparez l'installation de Visual Studio.
 
- [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] intègre les fenêtres de débogage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] standard suivantes :
+ Windows Workflow Foundation s'intègre avec les fenêtres de débogage Visual Studio standard suivantes :
 
 -   **Point d’arrêt**: fonctionne comme prévu, mais que vous spécifiez une activité pour le nom de fonction.
 

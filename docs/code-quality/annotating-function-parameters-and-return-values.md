@@ -1,6 +1,7 @@
 ---
 title: Annotation de paramètres de fonction et valeurs de retour
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
@@ -126,11 +127,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a06a987dc94ac4f3eb71d047ba33d410d7391a91
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8c6c5147bdb1720c6da20dd93dd3bda81c2e6464
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
 Cet article décrit les utilisations courantes des annotations pour les paramètres de fonction simple, les scalaires et les pointeurs vers des structures et des classes et la plupart des types de mémoires tampons.  Cet article présente également des modèles d’utilisation courants pour les annotations. Pour les annotations supplémentaires qui sont liées à des fonctions, consultez [annotation du comportement de la fonction](../code-quality/annotating-function-behavior.md)

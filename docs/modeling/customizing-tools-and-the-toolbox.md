@@ -13,12 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b82495d3a79139490713bb0bff4804f6e9fc5452
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 357101a9430eb8d22aeab39179a0a4f70f0dc1bf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personnalisation des outils et de la boîte à outils
 Vous devez définir les éléments de boîte à outils pour les éléments que les utilisateurs sont autorisés à ajouter à leurs modèles. Il existe deux types d'outils : les outils d'élément et les outils de connexion. Dans le concepteur généré, un utilisateur peut sélectionner un outil d'élément pour déplacer des formes vers le diagramme et sélectionner un outil de connexion pour tracer des liens entre les formes. En général, les outils d'élément permettent aux utilisateurs d'ajouter des instances de classes de domaine à leurs modèles et les outils de connexion d'ajouter des instances de relations de domaine.

@@ -1,7 +1,9 @@
 ---
-title: Débogage de Workflows à partir d’un ordinateur distant (hérité) | Documents Microsoft
+title: Concepteur de flux de travail - débogage de Workflows à partir d’un ordinateur distant (hérité)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, debugging remotely
 - debugging workflows, remotely
@@ -13,20 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a3058d61d2aff0369fd52e1f03726a91a2267c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 391180cd76fe5e0cccca802ba1cbfb78277dabc1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-workflows-from-a-remote-computer-legacy"></a>Débogage de workflows d'un ordinateur distant (hérité)
-Cette rubrique décrit comment déboguer à distance héritée [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] les applications générées avec le Concepteur de flux de travail Windows hérité. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque votre application doit cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Lorsque vous installez [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)], une des options d’installation de composant consiste à installer le [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] du débogueur pour [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]. Cela installe les composants de débogage distant. Ces composants de débogage distant doivent être installés sur l'ordinateur que vous utiliserez pour le débogage distant de workflows.
+Cette rubrique décrit comment déboguer des applications de Windows Workflow Foundation (WF) héritées distantes générées avec le Concepteur de flux de travail Windows hérité. Utilisez le Concepteur de flux de travail hérité lorsque votre application doit cibler le .NET Framework version 3.5 ou du WinFX.
+
+ Lorsque vous installez Visual Studio, une des options d’installation de composant doit installer le Visual Studio débogueur pour Windows Workflow Foundation (WF). Cela installe les composants de débogage distant. Ces composants de débogage distant doivent être installés sur l'ordinateur que vous utiliserez pour le débogage distant de workflows.
 
  En outre, l'assembly qui contient la définition du workflow hérité que vous déboguez sur un ordinateur distant doit être installé dans le Global Assembly Cache (GAC) de l'ordinateur local utilisé pour le débogage. Par exemple, si un workflow hérité est exécuté sur un ordinateur distant A et que vous le déboguez à partir de l'ordinateur local B, la définition de workflow doit être présente dans le GAC de l'ordinateur B. Cela permet au concepteur de désérialiser et d'afficher sur l'ordinateur B le balisage du workflow exécuté à distance sur l'ordinateur A. Pour plus d'informations sur le Global Assembly Cache, consultez MSDN Library.
 
- Le débogage distant [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] fonctionne sur le même principe que débogage distant d'autres composants [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Pour plus d’informations, consultez [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] le débogage distant dans la bibliothèque MSDN.
+ Le débogage distant Windows Workflow Foundation fonctionne de la même façon que le débogage distant pour d'autres composants Visual Studio. Pour plus d’informations, consultez Débogage à distance Visual Studio dans MSDN Library.
 
 ## <a name="see-also"></a>Voir aussi
 

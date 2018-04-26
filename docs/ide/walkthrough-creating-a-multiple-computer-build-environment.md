@@ -1,9 +1,8 @@
 ---
-title: 'Procédure pas à pas : création d’un environnement de build sur plusieurs ordinateurs | Microsoft Docs'
-ms.custom: ''
+title: "Procédure pas à pas : création d'un environnement de build sur plusieurs ordinateurs"
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4c2efa01078cb089055cb48fbb80e9c1ffcde0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52c7623aff3c2aec4753f628eb9a24ecf6937275
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procédure pas à pas : création d'un environnement de build sur plusieurs ordinateurs
 
@@ -415,5 +414,5 @@ Vous pouvez créer un environnement de build qui peut être déployé sur plusie
 
 ## <a name="see-also"></a>Voir aussi
 
-[Préparation d’un ordinateur de test pour lancer un exécutable de débogage](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)  
-[Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md)
+- [Préparation d’un ordinateur de test pour lancer un exécutable de débogage](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md)

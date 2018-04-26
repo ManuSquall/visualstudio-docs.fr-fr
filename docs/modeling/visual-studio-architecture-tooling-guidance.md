@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b70b229d128143a4c61dc9789e3a4797a0317643
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ce0cdb65125dd1a8b17d1c1de9e6f49eb3084b92
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Guide des outils d'architecture Visual Studio
 Ce guide des outils d’Architecture est un package téléchargeable de conseils pratiques sur l’utilisation des outils de modélisation dans Visual Studio 2010. Il présente une vue d’ensemble de l’utilisation de tous les outils de modélisation d’une manière intégrée et décrit les scénarios les plus courants dans lesquels les outils sont utilisés.

@@ -1,6 +1,7 @@
 ---
 title: 'CA1063 : Implémenter IDisposable correctement'
 ms.date: 02/12/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9205c20730681969550c3a2368e6ec889056648b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac3827dd8ed34a118bb3e4eaaed47bf7400cef90
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063 : Implémenter IDisposable correctement
 
@@ -60,21 +61,21 @@ Tous les types IDisposable doivent implémenter le modèle Dispose correctement.
 
 Examinez votre code et déterminer lequel des solutions suivantes corrigera cette violation.
 
-- Supprimez IDisposable de la liste des interfaces qui sont implémentées par {0} et substituer l’implémentation de Dispose de la classe de base à la place.
+- Supprimez IDisposable de la liste des interfaces qui est implémentée par {0} et substituer l’implémentation de Dispose de la classe de base à la place.
 
 - Supprimez le finaliseur du type {0}, substituez Dispose (bool disposing) et placez la logique de finalisation dans le chemin d’accès du code où 'disposing' a la valeur false.
 
-- Suppression de {0}, substituez Dispose (bool disposing) et placez la logique dispose dans le chemin d’accès du code où 'disposing' a la valeur true.
+- Supprimez {0}, substituez Dispose (bool disposing) et placez la logique dispose dans le chemin d’accès du code où 'disposing' a la valeur true.
 
 - Vérifiez que {0} est déclaré comme public et sealed.
 
-- Renommez les {0} en 'Dispose' et vérifiez qu’il est déclaré comme public et sealed.
+- Renommer {0} en 'Dispose' et vérifiez qu’il est déclaré comme public et sealed.
 
-- Assurez-vous que ce {0} est déclaré comme protected, virtual et unsealed.
+- Assurez-vous que {0} est déclaré comme protected, virtual et unsealed.
 
-- Modifiez le {0} afin qu’il appelle Dispose (true), puis appelle GC. SuppressFinalize sur l’instance d’objet actuelle ('this' ou 'Me' dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), puis retourne.
+- Modifiez {0} afin qu’il appelle Dispose (true), puis appelle GC. SuppressFinalize sur l’instance d’objet actuelle ('this' ou 'Me' dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), puis retourne.
 
-- Modifier afin qu’il appelle Dispose (false), puis retourne les {0}.
+- Modifiez {0} afin qu’il appelle Dispose (false), puis retourne.
 
 - Si vous créez un type unsealed qui déclare et implémente l’interface IDisposable, assurez-vous que l’implémentation de IDisposable suit le modèle qui est décrite plus haut dans cette section.
 

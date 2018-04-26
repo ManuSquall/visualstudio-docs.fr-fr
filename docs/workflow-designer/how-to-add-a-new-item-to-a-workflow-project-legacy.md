@@ -1,7 +1,9 @@
 ---
-title: 'Comment : ajouter un nouvel élément à un projet de Workflow (hérité) | Documents Microsoft'
+title: 'Le Concepteur de flux de travail - Comment : ajouter un nouvel élément à un projet de Workflow (héritée)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflows, adding to workflow projects
 - workflows, adding new items
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1699b3f2d16bb481a7efb744eed58d395dbc8773
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d6e9607f4924057568849fd7eabd4567130dc2f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Procédure : ajouter un nouvel élément à un projet de workflow (héritée)
-Après avoir créé un projet de flux de travail utilisant le Concepteur de flux de travail Windows hérité fourni par [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] qui cible le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], vous pouvez ajouter [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] éléments et autres familière [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] d’éléments à votre projet.
 
- Le tableau suivant répertorie les éléments [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] que vous pouvez ajouter à un projet de workflow.
+Après avoir créé un projet de flux de travail à l’aide du Concepteur de flux de travail Windows fournies par Visual Studio 2010 qui cible le .NET Framework version 3.5 ou du WinFX hérité, vous pouvez ajouter des éléments de Windows Workflow Foundation (WF) et autres Visual Studio familier éléments à votre projet.
+
+Le tableau suivant répertorie les éléments Windows Workflow Foundation que vous pouvez ajouter à un projet de workflow.
 
 |Élément|Description|
 |----------|-----------------|
@@ -33,7 +36,7 @@ Après avoir créé un projet de flux de travail utilisant le Concepteur de flux
 |Workflow de l'ordinateur d'état (code)|Workflow d'ordinateur d'état avec définition de workflow contenue dans un fichier de code concepteur et un code utilisateur contenu dans un fichier de code séparé.|
 |Workflow de l'ordinateur d'état (avec séparation de code)|Workflow de l'ordinateur d'état avec définition de workflow exprimée sous forme de balisage du workflow et code utilisateur contenu dans un fichier de code séparé.|
 
-### <a name="to-add-a-new-item-to-a-workflow-project"></a>Pour ajouter un nouvel élément à un projet de workflow
+## <a name="to-add-a-new-item-to-a-workflow-project"></a>Pour ajouter un nouvel élément à un projet de workflow
 
 1.  Sur le **projet** menu, cliquez sur **ajouter un nouvel élément**.
 

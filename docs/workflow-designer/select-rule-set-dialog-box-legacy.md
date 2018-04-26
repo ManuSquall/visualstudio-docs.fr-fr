@@ -1,7 +1,9 @@
 ---
-title: Sélectionnez la boîte de dialogue Définir règle (hérité) | Documents Microsoft
+title: Concepteur de flux de travail - sélectionner l’ensemble de règles boîte de dialogue (héritée)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetBrowserDialog.UI
 helpviewer_keywords:
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 376b76e93849e58ac2d26f5c9360dc7673f2a3f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b199f5cd0ee71d9b4a5ce0991e84660ee031fa59
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Sélectionner l'ensemble de règles, boîte de dialogue (héritée)
-Cette rubrique décrit comment utiliser le **sélectionner un ensemble de règles** boîte de dialogue dans le Concepteur de flux de travail Windows hérité. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Le **sélectionner un ensemble de règles** boîte de dialogue permet de sélectionner un ensemble de règles que vous pouvez utiliser avec un [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) activité. Pour plus d’informations sur l’accès à la **sélectionner un ensemble de règles** boîte de dialogue, consultez [Comment : créer un ensemble de PolicyActivity règle (hérité)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+Cette rubrique décrit comment utiliser le **sélectionner un ensemble de règles** boîte de dialogue dans le Concepteur de flux de travail Windows hérité. Utilisez le Concepteur de flux de travail hérité lorsque vous avez besoin cibler le .NET Framework version 3.5 ou du WinFX.
 
- Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **sélectionner un ensemble de règles** boîte de dialogue.
+Le **sélectionner un ensemble de règles** boîte de dialogue permet de sélectionner un ensemble de règles que vous pouvez utiliser avec un [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) activité. Pour plus d’informations sur l’accès à la **sélectionner un ensemble de règles** boîte de dialogue, consultez [Comment : créer un ensemble de PolicyActivity règle (hérité)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+
+Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **sélectionner un ensemble de règles** boîte de dialogue.
 
 |Élément d'interface utilisateur|Description|
 |----------------|-----------------|
@@ -37,7 +40,7 @@ Cette rubrique décrit comment utiliser le **sélectionner un ensemble de règle
  Pour plus d’informations sur la façon de créer et modifier des ensembles de règles, consultez [boîte règle définie éditeur de boîte de dialogue (héritée)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!WARNING]
-> L'éditeur de règles du [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité utilisé pour cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] ne prend pas en charge le multi-ciblage.
+> L’éditeur de règles du Concepteur de Workflow hérité qui est utilisé pour cibler le .NET Framework version 3.5 ou du WinFX ne prend pas en charge le multi-ciblage.
 
  Pour plus d’informations sur les conditions, consultez [à l’aide de Conditions dans les Workflows](http://go.microsoft.com/fwlink?LinkID=65009).
 

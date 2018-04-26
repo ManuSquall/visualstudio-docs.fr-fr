@@ -6,14 +6,15 @@ ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20e21d801172469d0afe28d0b2aebc42a1eec401
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2d9f2c60a51d5e8a17b1fecf249e7a24a4ac25f0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Comment : assigner des procédures stockées pour effectuer des mises à jour, insertions et suppressions (Concepteur O/R)
 Les procédures stockées peuvent être ajoutées au Concepteur O/R et être exécutées comme méthodes <xref:System.Data.Linq.DataContext> typiques. Ils peuvent également être utilisés pour remplacer la valeur par défaut [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] comportement d’exécution qui effectue des insertions, mises à jour et des suppressions lorsque les modifications sont enregistrées des classes d’entité à une base de données (par exemple, lors de l’appel du <xref:System.Data.Linq.DataContext.SubmitChanges%2A> méthode).

@@ -1,5 +1,5 @@
 ---
-title: Analyse des résultats des tests de charge dans la vue Graphiques de l’analyseur de test de charge | Microsoft Docs
+title: Analyse des résultats des tests de charge dans la vue Graphiques de l'analyseur de test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,13 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3f2319fbfab37bb994c598416a379d4c2fdac3b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5540eb31d764e82cb0c6cd46eb63cb893559a70f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analyser les résultats des tests de charge dans la vue Graphiques de l’analyseur de test de charge
 

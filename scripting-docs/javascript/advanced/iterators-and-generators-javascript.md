@@ -1,27 +1,28 @@
 ---
-title: "Itérateurs et générateurs (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Itérateurs et générateurs (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 68ef5b2f-0349-492b-b557-73ff2a2f90cf
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85c27969609a38b87b15c727e9c8aef89ee77032
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8a566e870c6e9589daed86d42e3fb933374cbb17
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="iterators-and-generators-javascript"></a>Itérateurs et générateurs (JavaScript)
 Un itérateur est un objet qui sert à parcourir un objet conteneur telle qu'une liste. En JavaScript, un objet itérateur n'est pas un objet intégré distinct, mais un objet qui implémente une méthode `next` pour accéder à l'élément suivant dans l'objet conteneur.  
@@ -31,7 +32,7 @@ Un itérateur est un objet qui sert à parcourir un objet conteneur telle qu'une
 > [!CAUTION]
 >  Les générateurs sont pris en charge dans [!INCLUDE[jsv12textExp](../../javascript/includes/jsv12textexp-md.md)].  
   
-## <a name="iterators"></a>Itérateurs  
+## <a name="iterators"></a>Iterators  
  L'implémentation d'un itérateur JavaScript implique deux ou trois objets conformes à des interfaces spécifiques :  
   
 -   Interface Iterable  
@@ -140,7 +141,7 @@ console.log(si2.next().value);
 function* strIter() {  
     var str = "jobob";  
     var idx = 0;  
-    while(idx , str.length) {  
+    while(idx < str.length) {  
         var modify = yield str[idx++];  
         if(modify == 100) {  
             idx = 0;  

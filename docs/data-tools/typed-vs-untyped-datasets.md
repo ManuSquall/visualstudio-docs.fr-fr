@@ -9,14 +9,15 @@ ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e5819a208a54a5a4235330216e46b5e17f1260fa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 32bbbe0aef325ee3866ec441404e30ec9f182b38
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typées et les datasets non typés
 Un dataset typé est un jeu de données qui est tout d’abord dérivé de la base de <xref:System.Data.DataSet> de classe, puis utilise les informations à partir de la **Concepteur de Dataset**, qui est stockée dans un fichier .xsd, pour générer un nouveau fortement typée dataset (classe). Pour plus d’informations à partir du schéma (tables, colonnes et ainsi de suite) sont générés et compilés dans ce nouveau type de jeu de données comme un ensemble de propriétés et des objets de première classe. Car un dataset typé hérite de la base de <xref:System.Data.DataSet> (classe), la classe typée reprend toutes les fonctionnalités de la <xref:System.Data.DataSet> classe et peut être utilisé avec des méthodes qui prennent une instance d’un <xref:System.Data.DataSet> classe en tant que paramètre.

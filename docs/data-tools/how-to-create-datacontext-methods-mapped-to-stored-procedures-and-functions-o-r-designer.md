@@ -6,14 +6,15 @@ ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d086157761bbade92e7b79973876d18bc52f2fd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ffec139089f77a1d5c3ffd855e16f12b31e35c17
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Comment : créer des méthodes DataContext mappées aux procédures stockées et fonctions (Concepteur O/R)
 Procédures stockées et fonctions peuvent être ajoutées à la [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] comme <xref:System.Data.Linq.DataContext> méthodes. Appel de la méthode et en passant les paramètres requis s’exécute la procédure stockée ou fonction dans la base de données et renvoie les données dans le type de retour de la <xref:System.Data.Linq.DataContext> (méthode). Pour plus d’informations sur les <xref:System.Data.Linq.DataContext> méthodes, consultez [des méthodes DataContext (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md).

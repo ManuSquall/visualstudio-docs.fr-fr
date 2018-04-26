@@ -1,19 +1,19 @@
 ---
-title: Utilisation des données XML | Documents Microsoft
-ms.custom: ''
+title: Utilisation de données XML
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e92bd40eba56c486c95be4d85e376f80beffccf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="working-with-xml-data"></a>Utilisation des données XML
 
@@ -45,28 +45,16 @@ Le Concepteur de schémas XML est intégré à Visual Studio et l’éditeur XML
 
 Visual Studio permet le débogage de feuilles de style XSLT. Le débogueur permet de définir des points d'arrêt dans une feuille de style XSLT, d'exécuter pas à pas la feuille de style XSLT à partir du code, etc.
 
-## <a name="in-this-section"></a>Dans cette section
-
-[Éditeur XML](../xml-tools/xml-editor.md)  
-Présente l'éditeur XML.
-
-[Concepteur de schémas XML](../xml-tools/xml-schema-designer.md)  
-Décrit le Concepteur de schémas XML et l'utilisation des schémas XSD (XML Schema Definition Language).
-
 ## <a name="related-sections"></a>Rubriques connexes
 
-[Débogage XSLT](../xml-tools/debugging-xslt.md)  
-Explique comment déboguer des feuilles de style à l'aide du débogueur Visual Studio.
+[Débogage XSLT](../xml-tools/debugging-xslt.md) explique comment déboguer des feuilles de style à l’aide du débogueur Visual Studio.
 
-[Référence du standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
-Fournit des informations sur les technologies XML, y compris le langage XML, la définition de type de document (DTD), le langage XSD (XML Schema Definition) et XSLT.
+[Référence du standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fournit des informations sur les technologies XML, notamment XML, définition de Type de Document (DTD), langage de définition de schéma XML (XSD) et XSLT.
 
-[Créer et configurer des datasets dans Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
-Explique les outils disponibles pour créer des jeux de données au moment du design.
+[Créer et configurer des groupes de données dans Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) fournit une explication des outils au moment du design pour la création de jeux de données.
 
-[Services Web XML en Code managé](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
-Explique comment créer et déployer des services web XML et y accéder.
+[Les Services Web XML dans du Code managé](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) explique comment créer et déployer des services Web XML et comment accéder aux services Web XML.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Outils XML dans Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
+- [Outils XML dans Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

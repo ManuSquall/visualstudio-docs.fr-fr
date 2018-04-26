@@ -1,7 +1,7 @@
 ---
-title: C# IntelliSense | Microsoft Docs
-ms.custom: ''
+title: C# IntelliSense
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a443258d7f3b71c8f14cb967fc37090f80b5ad5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 353a5100337d295f7265fb376e363e2520e6c9e6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -159,5 +159,5 @@ Si vous appuyez sur la touche **Tab**, IntelliSense choisit une méthode avec la
 
 ## <a name="see-also"></a>Voir aussi
 
-[Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)  
-[IDE Visual Studio](../ide/visual-studio-ide.md)
+- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
+- [IDE Visual Studio](../ide/visual-studio-ide.md)

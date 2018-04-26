@@ -1,7 +1,9 @@
 ---
-title: Sélectionnez la Condition, boîte de dialogue (héritée) | Documents Microsoft
+title: Concepteur de flux de travail - Sélectionnez la Condition, boîte de dialogue (héritée)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
 helpviewer_keywords:
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5a48e423a012d9b69bc4d8f5ef990f3e937498
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 836cd63ecaa19be46617422d3cede2f04291992e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Sélectionner la condition, boîte de dialogue (héritée)
-Cette rubrique décrit comment utiliser le **sélectionner la Condition** boîte de dialogue dans le Concepteur de flux de travail Windows hérité. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Le **sélectionner la Condition** boîte de dialogue permet de sélectionner une condition de règle déclarative à affecter à la propriété de condition d’une activité. Ces conditions de règle sont exposées comme propriétés pour les activités prédéfinies Windows Workflow Foundation suivantes :
+Cette rubrique décrit comment utiliser le **sélectionner la Condition** boîte de dialogue dans le Concepteur de flux de travail Windows hérité. Utilisez le Concepteur de flux de travail hérité lorsque vous avez besoin cibler le .NET Framework version 3.5 ou du WinFX.
+
+Le **sélectionner la Condition** boîte de dialogue permet de sélectionner une condition de règle déclarative à affecter à la propriété de condition d’une activité. Ces conditions de règle sont exposées comme propriétés pour les activités prédéfinies Windows Workflow Foundation suivantes :
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -31,9 +34,9 @@ Cette rubrique décrit comment utiliser le **sélectionner la Condition** boîte
 
 -   [Activité WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
 
- Pour plus d’informations sur l’accès à la **sélectionner la Condition** boîte de dialogue, consultez [Comment : créer une Condition de règle déclarative (héritée)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
+Pour plus d’informations sur l’accès à la **sélectionner la Condition** boîte de dialogue, consultez [Comment : créer une Condition de règle déclarative (héritée)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
 
- Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **sélectionner la Condition** boîte de dialogue.
+Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **sélectionner la Condition** boîte de dialogue.
 
 |Élément d'interface utilisateur|Description|
 |----------------|-----------------|

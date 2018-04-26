@@ -1,10 +1,9 @@
 ---
-title: Atteindre, commande | Microsoft Docs
-ms.custom: ''
+title: Atteindre, commande
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.goto
 helpviewer_keywords:
@@ -16,40 +15,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b817fd11d2a731ad2c6347949f03906328c741f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b55e399dab41065fb96f9f3ac8e80484860f5187
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="go-to-command"></a>Atteindre, commande
-Déplace le curseur à la ligne spécifiée.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-Edit.GoTo [linenumber]  
-```  
-  
-## <a name="arguments"></a>Arguments  
- `linenumber`  
- Facultative. Nombre entier représentant le numéro de la ligne à atteindre.  
-  
-## <a name="remarks"></a>Notes  
- La numérotation des lignes débute à 1. Si la valeur de `linenumber` est inférieure à 1, la première ligne est affichée. Si la valeur de `linenumber` est supérieure au numéro de la dernière ligne, la dernière ligne est affichée.  
-  
- Si aucune valeur n’est spécifiée pour `linenumber`, la boîte de dialogue **Atteindre la ligne** s’affiche.  
-  
- L’alias de cette commande est GoToLn.  
-  
-## <a name="example"></a>Exemple  
-  
-```  
->Edit.GoTo 125  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Fenêtre Commande](../../ide/reference/command-window.md)   
- [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+Déplace le curseur à la ligne spécifiée.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+Edit.GoTo [linenumber]
+```
+
+## <a name="arguments"></a>Arguments
+ `linenumber`
+
+ Facultative. Nombre entier représentant le numéro de la ligne à atteindre.
+
+## <a name="remarks"></a>Notes
+ La numérotation des lignes débute à 1. Si la valeur de `linenumber` est inférieure à 1, la première ligne est affichée. Si la valeur de `linenumber` est supérieure au numéro de la dernière ligne, la dernière ligne est affichée.
+
+ Si aucune valeur n’est spécifiée pour `linenumber`, la boîte de dialogue **Atteindre la ligne** s’affiche.
+
+ L’alias de cette commande est GoToLn.
+
+## <a name="example"></a>Exemple
+
+```
+>Edit.GoTo 125
+```
+
+## <a name="see-also"></a>Voir aussi
+
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Rechercher/Commande, zone](../../ide/find-command-box.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

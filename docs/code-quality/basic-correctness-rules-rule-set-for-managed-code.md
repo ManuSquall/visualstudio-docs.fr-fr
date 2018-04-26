@@ -1,6 +1,7 @@
 ---
 title: Ensemble de règles de règles de vérification de base pour le code managé
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6523c532d46329f3453744caab9bc9f0935702f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5bbd43b47e104dc775629e0e517ba8c47c2a49ea
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de vérification de base pour le code managé
 L’ensemble de règles de base des règles de vérification se concentre sur les erreurs de logique et les erreurs courantes lors de l’utilisation des API framework. Les règles de vérification de base incluent les règles dans l’ensemble de règles des règles minimales recommandées. Pour plus d’informations, consultez [gérés recommandé de règles défini pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) vous devez inclure cet ensemble de règles pour développer la liste d’avertissements que les règles minimales recommandées.

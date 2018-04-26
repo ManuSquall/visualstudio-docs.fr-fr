@@ -1,25 +1,25 @@
 ---
-title: 'Erreur : Le processus cible s’est arrêté lors de l’évaluation de la fonction &#39;fonction&#39; | Documents Microsoft'
+title: 'Erreur : Le processus cible s’est arrêté avec le code &#39;code&#39; lors de l’évaluation de la fonction &#39;fonction&#39; | Documents Microsoft'
 ms.custom: ''
 ms.date: 4/06/2018
 ms.topic: troubleshooting
 f1_keywords:
-- vs.debug.error.process_exit_func_eval_abort
+- vs.debug.error.process_exit_during_func_eval
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ff03ef364c21e20151547effe8bfbf5935fe7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d5e9221ccf162180a89cc88b1ceebcf55be39eef
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="error-the-target-process-exited-while-evaluating-the-function-39function39"></a>Erreur : Le processus cible s’est arrêté lors de l’évaluation de la fonction &#39;(fonction)&#39;
+# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Erreur : Le processus cible s’est arrêté avec le code &#39;code&#39; lors de l’évaluation de la fonction &#39;(fonction)&#39;
 
-Texte du message complet : le processus cible s’est arrêté lors de l’évaluation de la fonction 'fonction'. Consultez la fenêtre Sortie pour le code de sortie du processus cible.
+Texte du message complet : le processus cible s’est arrêté avec le code 'code' lors de l’évaluation de la fonction 'fonction'.
 
 Pour faciliter l’inspecter l’état des objets .NET, le débogueur force automatiquement le processus débogué à exécuter du code supplémentaire (en général, les méthodes d’accesseur Get de propriété et `ToString` fonctions). Dans la plupart des scénarios, ces fonctions terminent correctement ou lever des exceptions qui peuvent être interceptées par le débogueur. Toutefois, il existe certains cas dans lequel les exceptions ne peuvent pas être interceptées, car elles franchissent les limites de noyau, nécessitent le pompage de messages utilisateur ou sont irrécupérables. Un résultat, un accesseur Get de propriété ou la méthode ToString qui exécute le code qui soit explicitement met fin au processus (par exemple, appelle `ExitProcess()`) ou lève une exception non gérée ne peut pas être interceptée (par exemple, `StackOverflowException`) mettra fin à la processus débogué et fin de la session de débogage. Si vous rencontrez ce message d’erreur, cela s’est produite.
  

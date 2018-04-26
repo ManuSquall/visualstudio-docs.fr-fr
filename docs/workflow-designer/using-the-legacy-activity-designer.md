@@ -1,7 +1,9 @@
 ---
-title: À l’aide du Concepteur d’activités hérité | Documents Microsoft
+title: Concepteur de flux de travail - à l’aide du Concepteur d’activités hérité
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - activities, configuring
 - custom activities
@@ -15,19 +17,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c69c2dfdd6fb81bcb6a544f27da0874a7dc99331
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fdf7ae585697db19293362a31c5751d44c7421c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-legacy-activity-designer"></a>Utilisation du concepteur d'activités hérité
-Cette rubrique décrit comment utiliser le Concepteur d’activités dans le Concepteur de flux de travail Windows hérité. Utilisez le concepteur hérité lorsque vous ciblez le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Le concepteur d'activités vous permet de créer vos propres activités personnalisées.
+Cette rubrique décrit comment utiliser le Concepteur d’activités dans le Concepteur de flux de travail Windows hérité. Utilisez le concepteur hérité lorsque vous ciblez le .NET Framework version 3.5 ou le WinFX.
+
+Le concepteur d'activités vous permet de créer vos propres activités personnalisées.
 
 ## <a name="creating-a-custom-activity"></a>Création d'une activité personnalisée
- Procédez comme suit pour créer une activité personnalisée à l'aide du concepteur d'activités :
+
+Procédez comme suit pour créer une activité personnalisée à l'aide du concepteur d'activités :
 
 1.  Sur le **projet** menu, cliquez sur **ajouter une activité**.
 
@@ -39,10 +43,11 @@ Cette rubrique décrit comment utiliser le Concepteur d’activités dans le Con
 
 3.  Tapez un nom d’activité ou conservez le nom par défaut, puis cliquez sur **ajouter**.
 
- Vous pouvez également créer un ensemble d’activités personnalisées en créant un nouveau projet de type **bibliothèque d’activités de flux de travail**. Pour plus d’informations sur ce type de projet, consultez [Comment : créer une bibliothèque d’activités de Workflow (héritée)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
+Vous pouvez également créer un ensemble d’activités personnalisées en créant un nouveau projet de type **bibliothèque d’activités de flux de travail**. Pour plus d’informations sur ce type de projet, consultez [Comment : créer une bibliothèque d’activités de Workflow (héritée)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
 
 ## <a name="configuring-an-activity"></a>Configuration d'une activité
- Lorsque le concepteur d'activités est actif, vous pouvez utiliser l'explorateur de propriétés pour configurer les propriétés répertoriées dans le tableau suivant.
+
+Lorsque le concepteur d'activités est actif, vous pouvez utiliser l'explorateur de propriétés pour configurer les propriétés répertoriées dans le tableau suivant.
 
 |Propriété|Commentaires|
 |--------------|--------------|
@@ -52,7 +57,8 @@ Cette rubrique décrit comment utiliser le Concepteur d’activités dans le Con
 |**Activé**|La valeur **True** par défaut pour permettre l’exécution de l’activité et la validation. La valeur **False** pour désactiver l’exécution de l’activité et la validation. Pour plus d’informations sur l’exécution des activités et la validation, consultez [développement d’activités de flux de travail](http://go.microsoft.com/fwlink?LinkID=65024).|
 
 ## <a name="adding-child-activities"></a>Ajout d'activités enfants
- Vous pouvez faire glisser des activités enfants de la boîte à outils vers l'activité que vous concevez. Vous pouvez ensuite configurer chaque activité enfant à l'aide de l'explorateur de propriétés.
+
+Vous pouvez faire glisser des activités enfants de la boîte à outils vers l'activité que vous concevez. Vous pouvez ensuite configurer chaque activité enfant à l'aide de l'explorateur de propriétés.
 
 ## <a name="see-also"></a>Voir aussi
 

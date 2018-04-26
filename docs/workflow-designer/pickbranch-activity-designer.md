@@ -1,7 +1,9 @@
 ---
-title: Concepteur d’activités PickBranch | Documents Microsoft
+title: Concepteur de flux de travail - Concepteur d’activités PickBranch
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.PickBranch.UI
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
@@ -10,26 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c7fbb7dcacbf8d790e161a2af864c7a5e7e2c35
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ea106a96a5d6b81ee0b0b898c881eb752582f8d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pickbranch-activity-designer"></a>Concepteur d'activités PickBranch
+
 L'objet <xref:System.Activities.Statements.PickBranch> fournit un chemin d'accès d'exécution basé sur les événements dans une activité <xref:System.Activities.Statements.Pick> qui peut être déclenchée par un événement entrant.
 
 ## <a name="pickbranch"></a>PickBranch
- Les objets <xref:System.Activities.Statements.PickBranch> sont contenus dans la collection <xref:System.Activities.Statements.Pick.Branches%2A> d'une activité <xref:System.Activities.Statements.Pick>. Chaque <xref:System.Activities.Statements.PickBranch> est contenue dans une branche de l'activité <xref:System.Activities.Statements.Pick> et peut être exécutée en raison d'un événement entrant qui sert de déclencheur. De cette façon le Concepteur de flux de travail Windows fournit la modélisation de flux de contrôle basé sur les événements. Chaque <xref:System.Activities.Statements.PickBranch> contient une propriété <xref:System.Activities.Statements.PickBranch.Trigger%2A> et une propriété <xref:System.Activities.Statements.PickBranch.Action%2A>.
+
+Les objets <xref:System.Activities.Statements.PickBranch> sont contenus dans la collection <xref:System.Activities.Statements.Pick.Branches%2A> d'une activité <xref:System.Activities.Statements.Pick>. Chaque <xref:System.Activities.Statements.PickBranch> est contenue dans une branche de l'activité <xref:System.Activities.Statements.Pick> et peut être exécutée en raison d'un événement entrant qui sert de déclencheur. De cette façon le Concepteur de flux de travail Windows fournit la modélisation de flux de contrôle basé sur les événements. Chaque <xref:System.Activities.Statements.PickBranch> contient une propriété <xref:System.Activities.Statements.PickBranch.Trigger%2A> et une propriété <xref:System.Activities.Statements.PickBranch.Action%2A>.
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Comment utiliser le concepteur d'activités Pick
- Le **PickBranch** concepteur n’est trouvé dans le **flux de contrôle** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **boîte à outils** onglet [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X).
 
- Vide deux <xref:System.Activities.Statements.PickBranch> affichent les noms des objets avec **Branch1** et **Branch2** sont créés par défaut comme éléments d’un <xref:System.Activities.Statements.Pick> activité lorsque le **choisir** Concepteur d’activités est initialement déposé sur le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Ces respectifs <xref:System.Activities.Statements.PickBranch.DisplayName%2A> les valeurs de propriété peuvent être modifiées dans le **PickBranch** en-tête du concepteur ou dans le **propriétés** fenêtre pour chaque branche.
+Le **PickBranch** concepteur n’est trouvé dans le **flux de contrôle** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **boîte à outils** onglet sur le Concepteur de flux de travail (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X).
 
- Il existe deux façons d’ajouter <xref:System.Activities.Statements.PickBranch> objets à la collection d’un <xref:System.Activities.Statements.Pick> objet : glisser- déposer le **PickBranch** concepteur à partir de la **boîte à outils** ou à l’aide du menu contextuel dans dans le **choisir** aire de conception :
+Vide deux <xref:System.Activities.Statements.PickBranch> affichent les noms des objets avec **Branch1** et **Branch2** sont créés par défaut comme éléments d’un <xref:System.Activities.Statements.Pick> activité lorsque le **choisir** Concepteur d’activités est initialement déposé sur le Concepteur de Workflow. Ces respectifs <xref:System.Activities.Statements.PickBranch.DisplayName%2A> les valeurs de propriété peuvent être modifiées dans le **PickBranch** en-tête du concepteur ou dans le **propriétés** fenêtre pour chaque branche.
 
-1.  Le **PickBranch** concepteur crée un <xref:System.Activities.Statements.PickBranch> lorsqu’il est déplacé depuis la **boîte à outils** et déposé dans une des branches d’un **choisir** Concepteur d’activités sur le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] surface. Les nouveaux objets <xref:System.Activities.Statements.PickBranch> peuvent être placés dans le concepteur <xref:System.Activities.Statements.Pick> à gauche ou à droite des éléments <xref:System.Activities.Statements.PickBranch> existants déjà contenus dans la collection. Lorsque vous faites glisser un **PickBranch** concepteur sur le **choisir** concepteur avec une souris, le **choisir** concepteur utilise une bande bleu gris verticale pour indiquer l’endroit où le <xref:System.Activities.Statements.PickBranch> est ajouté pour un positionnement de souris donné.
+Il existe deux façons d’ajouter <xref:System.Activities.Statements.PickBranch> objets à la collection d’un <xref:System.Activities.Statements.Pick> objet : glisser- déposer le **PickBranch** concepteur à partir de la **boîte à outils** ou à l’aide du menu contextuel dans dans le **choisir** aire de conception :
+
+1.  Le **PickBranch** concepteur crée un <xref:System.Activities.Statements.PickBranch> lorsqu’il est déplacé depuis la **boîte à outils** et déposé dans une des branches d’un **choisir** Concepteur d’activités sur le Aire du Concepteur de flux de travail. Les nouveaux objets <xref:System.Activities.Statements.PickBranch> peuvent être placés dans le concepteur <xref:System.Activities.Statements.Pick> à gauche ou à droite des éléments <xref:System.Activities.Statements.PickBranch> existants déjà contenus dans la collection. Lorsque vous faites glisser un **PickBranch** concepteur sur le **choisir** concepteur avec une souris, le **choisir** concepteur utilise une bande bleu gris verticale pour indiquer l’endroit où le <xref:System.Activities.Statements.PickBranch> est ajouté pour un positionnement de souris donné.
 
 2.  Bouton droit sur **choisir** Concepteur d’activités (mais pas à l’intérieur **PickBranch** concepteur) pour afficher un menu contextuel et sélectionnez **créer une branche** pour ajouter un nouveau <xref:System.Activities.Statements.PickBranch>. Notez que la nouvelle <xref:System.Activities.Statements.PickBranch> est ajouté à droite existants <xref:System.Activities.Statements.PickBranch> des objets dans le **choisir** concepteur.
 
@@ -46,7 +51,7 @@ L'objet <xref:System.Activities.Statements.PickBranch> fournit un chemin d'accè
  Veillez à sélectionner le **PickBranch** concepteur, comme en sélectionnant une activités à l’intérieur de son **déclencheur** ou **Action** zones supprime l’une de ces activités et non le <xref:System.Activities.Statements.PickBranch> objet.
 
 ### <a name="pickbranch-properties-in-the-workflow-designer"></a>Propriétés de PickBranch dans le concepteur de workflow
- Le tableau suivant affiche les propriétés les plus utiles de <xref:System.Activities.Statements.PickBranch> et décrit comment les utiliser dans le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+ Le tableau suivant présente les plus utiles <xref:System.Activities.Statements.PickBranch> propriétés et décrit comment les utiliser dans le Concepteur de flux de travail.
 
 |Nom de la propriété|Obligatoire|Utilisation|
 |-------------------|--------------|-----------|

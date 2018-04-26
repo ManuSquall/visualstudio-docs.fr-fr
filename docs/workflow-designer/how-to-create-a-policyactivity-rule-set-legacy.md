@@ -1,7 +1,9 @@
 ---
-title: 'Comment : créer un ensemble de règles PolicyActivity (héritée) | Documents Microsoft'
+title: 'Le Concepteur de flux de travail - Comment : créer un ensemble de règles PolicyActivity (héritée)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - PolicyActivity activity, creating rule sets
 - Rule Set Editor dialog box
@@ -14,22 +16,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4911912aa46f5dc8a6aea9b9b20e87c1f83e576f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 57142fc21bc9db03a338f20a27e20b8af51b48cd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Procédure : créer un ensemble de règles PolicyActivity (héritée)
 
-Cette rubrique décrit comment créer une règle d’activité de stratégie définie à l’aide de Windows Workflow Designer hérité qui cible le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+Cette rubrique décrit comment créer une règle d’activité de stratégie définie à l’aide de Windows Workflow Designer hérité qui cible le .NET Framework version 3.5 ou le WinFX.
 
  Une fois que vous avez fait glisser un **stratégie** élément d’activité à partir de la **boîte à outils** vers l’aire de conception du flux de travail, vous devez sélectionner une règle existante ou créer une règle définie pour le [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) activité. Vous sélectionnez une règle existante, définie à l’aide de la [sélectionnez règle définie boîte de dialogue (héritée)](../workflow-designer/select-rule-set-dialog-box-legacy.md) et créer des ensembles de règles à l’aide de la [boîte règle définie éditeur de boîte de dialogue (héritée)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!NOTE]
 > Vous pouvez ouvrir le [boîte règle définie éditeur de boîte de dialogue (héritée)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) boîte de dialogue directement en double-cliquant sur un [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) activité qui se trouve sur l’aire de conception de flux de travail.
 
-### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Pour sélectionner ou créer un ensemble de règles pour une activité PolicyActivity
+## <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Pour sélectionner ou créer un ensemble de règles pour une activité PolicyActivity
 
 1.  Avec le bouton droit le [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019), puis cliquez sur **propriétés** pour ouvrir le **propriétés** fenêtre.
 

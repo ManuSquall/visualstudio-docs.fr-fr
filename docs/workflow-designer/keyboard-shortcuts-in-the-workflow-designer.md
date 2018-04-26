@@ -1,7 +1,9 @@
 ---
-title: Raccourcis clavier dans le Concepteur de flux de travail | Documents Microsoft
+title: Concepteur de flux de travail - raccourcis clavier dans le Concepteur de flux de travail
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29d96eb6d738fbf23749bec601743002a451ad06
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Raccourcis clavier dans Workflow Designer
 
@@ -22,11 +24,11 @@ Toutes les fonctionnalités de base du Concepteur de flux de travail Windows est
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Navigation dans Workflow Designer à l'aide du clavier
 
-Dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], les raccourcis globaux et les raccourcis de débogage s'appliquent à [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Par ailleurs, plusieurs raccourcis clavier spécifiques à [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ont été créés. Dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], tous les raccourcis clavier peuvent être remappés. Toutefois, dans une application réhébergée, ces raccourcis clavier sont encodés de manière irréversible.
+À l’intérieur de Visual Studio 2010, les raccourcis globaux et les raccourcis de débogage s’appliquent au Concepteur de flux de travail. En outre, un nombre de raccourcis de clavier spécifiques au Concepteur de flux de travail a été créé. Dans Visual Studio 2010, tous les raccourcis clavier peuvent être remappés. Toutefois, dans une application réhébergée, ces raccourcis clavier sont encodés de manière irréversible.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Raccourcis clavier de Workflow Designer
 
-Le tableau suivant récapitule les raccourcis clavier par défaut affectés aux commandes de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+Le tableau suivant récapitule les raccourcis clavier par défaut affectés aux commandes du Concepteur de Workflow.
 
 |Raccourci|Objectif|
 |--------------|-------------|
@@ -46,7 +48,7 @@ Le tableau suivant récapitule les raccourcis clavier par défaut affectés aux 
 
 ### <a name="flowchart"></a>Organigramme
 
-La liste suivante affiche les mouvements utilisés pour construire un organigramme à l'aide du clavier. Comme dans le reste de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], les activités sont ajoutées à l'aire du concepteur à l'aide des raccourcis de boîte à outils globaux fournis avec [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+La liste suivante affiche les mouvements utilisés pour construire un organigramme à l'aide du clavier. Comme dans le reste du Concepteur de flux de travail, les activités sont ajoutées à l’aire du concepteur en utilisant les raccourcis de boîte à outils globaux fournis avec Visual Studio 2010.
 
 - Pour déplacer une activité, sélectionnez-la et utilisez les touches de direction pour la repositionner.
 
@@ -74,7 +76,7 @@ Remarques à propos de la connexion des activités à l'aide du clavier :
 
 ### <a name="expression-editing"></a>Édition d'expressions
 
-Par défaut, les raccourcis clavier par défaut pour l'édition de texte [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] s'appliquent dans l'éditeur d'expressions dans [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], avec les limitations suivantes :
+Par défaut, les raccourcis clavier par défaut pour l’édition de texte Visual Basic s’appliquent à l’intérieur de l’éditeur d’expressions dans le Concepteur de flux de travail, avec les limitations suivantes :
 
 - Le remappage des raccourcis clavier correspondant aux commandes suivantes n'a aucun effet. Vous pouvez utiliser uniquement les raccourcis clavier par défaut pour accéder aux commandes suivantes lors de la modification d'une expression.
 
@@ -85,4 +87,4 @@ Par défaut, les raccourcis clavier par défaut pour l'édition de texte [!INCLU
    - Annuler
    - Rétablir
 
-- Pour remapper les raccourcis clavier des commandes d'édition d'expressions de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], modifiez les raccourcis au niveau de l'interface de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Les modifications effectuées au niveau de l'interface de l'éditeur de texte ne s'appliquent pas automatiquement à [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Si vous souhaitez remapper des raccourcis dans ces deux éléments, vous devez appliquer les modifications deux fois (une fois pour chaque interface).
+- Pour remapper les raccourcis clavier pour les commandes d’édition expression à l’intérieur du Concepteur de flux de travail dans Visual Studio 2010, modifier les raccourcis figurant dans l’étendue du Concepteur de Workflow. Modifications apportées dans la portée de l’éditeur de texte ne s’appliquent pas automatiquement au Concepteur de flux de travail. Si vous souhaitez remapper des raccourcis dans ces deux éléments, vous devez appliquer les modifications deux fois (une fois pour chaque interface).
