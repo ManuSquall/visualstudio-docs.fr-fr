@@ -1,17 +1,17 @@
 ---
 title: Guide pratique pour utiliser un flux NuGet personnalisé dans un environnement connecté | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 03/27/2018
-ms.topic: article
+ms.topic: conceptual
 description: Utilisez un flux NuGet personnalisé pour consulter et utiliser les packages NuGet dans un environnement connecté.
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, conteneurs
-manager: ghogen
-ms.openlocfilehash: 94956e061302281ef232205081346c0aa90eab90
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+manager: douge
+ms.openlocfilehash: 1c4c0c53b81f29436bb7110395981071411fd6b2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/26/2018
 ---
 #  <a name="use-a-custom-nuget-feed-in-a-connected-environment"></a>Utiliser un flux NuGet personnalisé dans un environnement connecté
 

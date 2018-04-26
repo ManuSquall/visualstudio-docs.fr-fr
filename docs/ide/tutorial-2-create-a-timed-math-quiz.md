@@ -1,9 +1,9 @@
 ---
-title: 'Didacticiel 2 : créer un questionnaire mathématique chronométré| Microsoft Docs'
+title: 'Didacticiel 2 : créer un questionnaire mathématique chronométré'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 author: TerryGLee
@@ -11,35 +11,35 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56466d91f336be679f2f82919c537a95e352a60d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 55142712972ce5d5fd44e76dbad042daca18edc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="tutorial-2-create-a-timed-math-quiz"></a>Didacticiel 2 : créer un questionnaire mathématique chronométré
+# <a name="tutorial-2-create-a-timed-math-quiz"></a>Didacticiel 2 : créer un questionnaire mathématique chronométré
 Dans ce didacticiel, vous générez un questionnaire dans lequel la personne interrogée doit résoudre quatre problèmes arithmétiques aléatoires dans un délai imparti. Vous apprenez à :  
-  
+
 -   Générer des nombres aléatoires à l'aide de la classe `Random`.  
-  
+
 -   Déclencher des événements à une heure spécifique à l’aide d’un contrôle **Timer**.  
-  
+
 -   Contrôler le flux d'un programme à l'aide d'instructions `if else`.  
-  
+
 -   Effectuer des opérations arithmétiques de base dans le code.  
-  
+
  Lorsque vous aurez terminé, votre questionnaire ressemblera à celui illustré ci-dessous, avec des valeurs différentes.  
-  
+
  ![Questionnaire mathématique avec quatre problèmes](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
 Questionnaire créé dans ce didacticiel  
-  
+
  Pour télécharger la version finale du questionnaire, consultez [Exemple complet de questionnaire de mathématiques du didacticiel](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
-  
+
 > [!NOTE]
 >  Ce didacticiel couvre à la fois Visual C# et Visual Basic : ne tenez compte que des informations spécifiques au langage de programmation que vous utilisez.  
-  
+
 ## <a name="related-topics"></a>Rubriques connexes  
-  
+
 |Titre|Description|  
 |-----------|-----------------|  
 |[Étape 1 : créer un projet et ajouter des étiquettes à votre formulaire](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Commencez par créer le projet, modifier ses propriétés et ajouter des contrôles `Label`.|  

@@ -1,26 +1,23 @@
 ---
-title: "Profilage et sécurité Windows Vista | Microsoft Docs"
-ms.custom: 
+title: Profilage et sécurité Windows Vista | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,security
 - performance tools, security
 ms.assetid: 842112fc-b886-4801-8cd7-a25b314b0393
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0dad9e27eff76c36cadf132cb3a1b0aaec1e44da
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6f03c5d6a7afec1010653c6e4a66a3770573ea5e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilage et sécurité Windows Vista
 Selon les paramètres d’autorisation d’accès utilisateur de [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] mis à disposition par l’administrateur d’un ordinateur, un utilisateur individuel peut disposer de l’autorisation de sécurité pour profiler un processus sur cet ordinateur. Les exemples suivants montrent les différences possibles entre les utilisateurs :  

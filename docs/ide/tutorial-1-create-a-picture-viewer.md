@@ -1,9 +1,9 @@
 ---
-title: 'Didacticiel 1 : Créer une visionneuse d’images | Microsoft Docs'
+title: "Didacticiel 1 : créer une visionneuse d'images"
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -11,47 +11,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0061ca517fd75fbfe76fbb4c47431e3438a7f614
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5be14bf68f88bc058adf3685cc30e3ab545a6354
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Didacticiel 1 : créer une visionneuse d'images
 Dans ce didacticiel, vous générez un programme qui charge une image à partir d'un fichier et l'affiche dans une fenêtre. Vous apprenez à faire glisser des contrôles (par exemple, des boutons et des zones d'image) sur votre formulaire, définir leurs propriétés et utiliser des conteneurs pour redimensionner facilement le formulaire. Vous commencez également à écrire du code. Vous apprenez à :  
-  
+
 -   Créer un nouveau projet.  
-  
+
 -   Tester (déboguer) une application.  
-  
+
 -   Ajouter des contrôles de base, comme des cases à cocher et des boutons, à un formulaire.  
-  
+
 -   Positionner des contrôles sur un formulaire à l'aide de dispositions.  
-  
+
 -   Ajouter des boîtes de dialogue **Ouvrir un fichier** et **Couleur** à un formulaire.  
-  
+
 -   Écrire du code à l'aide d'IntelliSense et d'extraits de code.  
-  
+
 -   Écrire des méthodes de gestionnaire d'événements.  
-  
+
  Lorsque vous aurez terminé, votre programme ressemblera à l'image suivante.  
-  
+
  ![Image créée dans ce didacticiel](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 Image créée dans ce didacticiel  
-  
+
  Pour télécharger une version complète de l’exemple, consultez la rubrique [Exemple complet de visionneuse d’images du didacticiel](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
-  
+
  ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Comment créer une visionneuse d’images en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Comment créer une visionneuse d’images en C#](http://go.microsoft.com/fwlink/?LinkId=205198).  
-  
+
 > [!NOTE]
 >  Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio. Visual C# et Visual Basic sont tous deux traités dans ce didacticiel. Ne tenez compte que des informations spécifiques au langage de programmation que vous utilisez.  
 >   
 >  Pour consulter le code pour Visual Basic, choisissez l’onglet **VB** en haut des blocs de code. Pour visualiser le code pour Visual C#, choisissez l’onglet **C#**. Si vous êtes intéressé par Visual C++, consultez [Bien démarrer](../ide/getting-started-with-cpp-in-visual-studio.md) et [Didacticiel du langage C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
 >  Si vous souhaitez apprendre à développer des applications UWP Visual C# ou Visual Basic, consultez [Créer des applications UWP](https://developer.microsoft.com/windows/apps).
-  
+
 ## <a name="related-topics"></a>Rubriques connexes  
-  
+
 |Titre|Description|  
 |-----------|-----------------|  
 |[Étape 1 : créer un projet d’application Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Commencez par créer un projet d’application Windows Forms.|  

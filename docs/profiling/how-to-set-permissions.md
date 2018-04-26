@@ -1,13 +1,9 @@
 ---
-title: "Guide pratique pour définir les autorisations | Microsoft Docs"
-ms.custom: 
+title: Guide pratique pour définir les autorisations | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling, setting permissions
 - security [Visual Studio ALM], setting permissions
@@ -16,14 +12,14 @@ helpviewer_keywords:
 - performance tools, setting profiling permissions
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9058ecf8f69a757eea33a57c028b488731628c
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: b1f3cf4ca3cb79a6b58d4f3549d05d355764148f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-set-permissions"></a>Guide pratique pour définir les autorisations
 
@@ -108,7 +104,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
-     Cette commande accorde au compte \<nom_utilisateur> ou \<nom_groupe> l’accès aux outils de profilage. L’option \<right> détermine les fonctionnalités de profilage accessibles à l’utilisateur. Cette option peut avoir une ou plusieurs des valeurs suivantes :
+     Cette commande accorde au compte \<nom_utilisateur> ou \<nom_groupe> l’accès aux outils de profilage. L’option \<right> détermine les fonctionnalités de profilage accessibles à l’utilisateur. \<Cette> option peut avoir une ou plusieurs des valeurs suivantes :
 
     - FullAccess : autorise l’accès à toutes les méthodes de profilage, notamment la collecte des données de performance à partir des services, l’échantillonnage et le profilage intersession.
 
