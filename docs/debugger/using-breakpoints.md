@@ -36,11 +36,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f1ad8f7b3bc4ac1a93718943803d445aa6ca9a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 04834f335fd4c9a49a2ef4de6b55adf6443d6e7c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utiliser des points d’arrêt dans le débogueur Visual Studio
 Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’exécution du débogueur, éventuellement pour voir l’état des variables de code ou examiner la pile des appels. Ils constituent l’une des techniques de débogage les plus importantes de la boîte à outils d’un développeur.  
@@ -247,8 +247,7 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
 |**$PNAME**|Nom du processus|  
 |**$TID**|ID du thread|  
 |**$TNAME**|Nom du thread|  
-|**$TICK**||  
-|**$TNAME**||  
+|**$TICK**|Nombre de cycles (à partir de Windows `GetTickCount`)|  
   
 ##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Étiquettes de point d’arrêt  
  Les étiquettes de point d’arrêt sont utilisées uniquement dans la fenêtre **Points d’arrêt** pour trier et filtrer la liste des points d’arrêt. Pour ajouter une étiquette à un point d’arrêt, choisissez la ligne de point d’arrêt, puis choisissez **Étiquette** dans le menu contextuel.  

@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: de87d6245057d6fd24b57d64ae09127cf1b282f8
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: fda89444e0451b5d562aff37beffc2d7a97c0123
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="writing-user-commands-and-actions"></a>Écriture de commandes et d'actions utilisateur
 Vous pouvez personnaliser un langage spécifique à un domaine en ajoutant des commandes au diagramme et en répondant à des mouvements tels que des événements de clic, de double clic et glisser-déplacer.

@@ -1,74 +1,63 @@
 ---
-title: Éditeur XML | Documents Microsoft
-ms.custom: ''
+title: Éditeur XML
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c3729086a9e2038c2cfd15643f8d076947645cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba02c3ff7d87daeda71c872e67df25ad345c6989
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="xml-editor"></a>Éditeur XML
 
 L’éditeur XML est basé sur l’éditeur de texte Visual Studio et inclut la prise en charge des langages XML. L’éditeur XML comprend les fonctionnalités suivantes :
-  
--   Vérification de la syntaxe XML 1.0
-  
--   Validation de schéma en cours de frappe
-  
--   Prise en charge des extraits XML, notamment des extraits générés par schéma
-  
--   Prise en charge des DTD (définition de type de document)
-  
--   Prise en charge des schémas de langage XSD (XML Schema definition)
-  
--   Création d'un schéma XML à partir d'un document d'instance XML
-  
--   Conversion d'une DTD ou d'un schéma XDR (XML-Data Reduced) en un schéma XML
-  
--   Vérification de la syntaxe XSLT 1.0
-  
--   Mise en plan des documents permettant de développer et réduire les éléments
-  
--   Intégration avec le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md). Cela fournit une vue hiérarchique des schémas XML.
+
+- Vérification de la syntaxe XML 1.0
+
+- Validation de schéma en cours de frappe
+
+- Prise en charge des extraits XML, notamment des extraits générés par schéma
+
+- Prise en charge des DTD (définition de type de document)
+
+- Prise en charge des schémas de langage XSD (XML Schema definition)
+
+- Création d'un schéma XML à partir d'un document d'instance XML
+
+- Conversion d'une DTD ou d'un schéma XDR (XML-Data Reduced) en un schéma XML
+
+- Vérification de la syntaxe XSLT 1.0
+
+- Mise en plan des documents permettant de développer et réduire les éléments
+
+- Intégration avec le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md). Cela fournit une vue hiérarchique des schémas XML.
 
 L’éditeur XML est invoqué pour les extensions de fichier connues, telles que .xml, .xsd, .xsl et .config. Il est également appelé à l’ouverture d’un fichier dont l’extension est inconnue mais qui contient du XML. Vous pouvez également ouvrir un fichier avec l’éditeur XML à l’aide de la **ouvrir avec** option et en sélectionnant l’éditeur XML dans la liste.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="xslt-intellisense"></a>IntelliSense XSLT
 
-[Validation de documents XML](../xml-tools/xml-document-validation.md)  
-Décrit les fonctionnalités de vérification de la syntaxe et de validation.
+[IntelliSense XSLT](../xml-tools/xml-editor-intellisense-features.md) vous permet de compléter automatiquement l’attribut jeu de noms, les modes de modèle et les noms et les noms de paramètre pour un mode spécifié ou un modèle nommé.
 
-[Éditeur XML des fonctionnalités IntelliSense](../xml-tools/xml-editor-intellisense-features.md)  
-Décrit la fonctionnalité IntelliSense de l'éditeur.
+## <a name="xslt-profiler"></a>Générateur de profils XSLT
 
-[Extraits XML](../xml-tools/xml-snippets.md)  
-Explique l’utilisation de la fonctionnalité d’extrait XML.
+Le [Générateur de profils XSLT](../xml-tools/walkthrough-xslt-profiler.md) crée des performances XSLT détaillés des rapports qui vous aident à mesurent, évaluent et ciblent les problèmes de performances dans le code XSLT. Le Générateur de profils XSLT inclut également des conseils utiles pour les optimisations de feuille de style XSL et XSLT.
 
-[Modification de feuilles de style XSLT](../xml-tools/editing-xslt-style-sheets.md)  
-Explique comment modifier les feuilles de style XSLT.
+## <a name="xslt-hierarchy"></a>Hiérarchie XSLT
 
-[Cache de schéma](../xml-tools/schema-cache.md)  
-Répertorie les schémas installés par l’éditeur XML.
-
-[Composants de l’éditeur XML](../xml-tools/xml-editor-components.md)  
-Décrit les composants d’interface utilisateur éditeur XML.
+Le [outil de la hiérarchie XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) vous permet d’ajouter des points d’arrêt dans les feuilles de style incluses et/ou les règles de modèle intégrées.
 
 ## <a name="related-sections"></a>Rubriques connexes
 
-[Écrire du code dans l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)  
-Fournit des informations sur l'éditeur de texte.
-
-[Référence du standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
-Fournit des informations sur les technologies XML, y compris le langage XML, la définition de type de document (DTD), le langage XSD (XML Schema Definition) et XSLT.
+- [L’écriture de code dans l’éditeur](../ide/writing-code-in-the-code-and-text-editor.md) fournit des informations sur l’éditeur de texte.
+- [Référence du standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fournit des informations sur les technologies XML, notamment XML, définition de Type de Document (DTD), le langage de définition de schéma XML (XSD) et XSLT.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Outils XML dans Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
+- [Outils XML dans Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

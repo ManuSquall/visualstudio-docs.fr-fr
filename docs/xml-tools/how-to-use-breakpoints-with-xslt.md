@@ -1,19 +1,19 @@
 ---
-title: 'Comment : utiliser des points d’arrêt avec XSLT | Documents Microsoft'
-ms.custom: ''
+title: "Procédure : utiliser des points d'arrêt avec XSLT"
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f262fa2b1822f74dc15b6f8599b88161c0a1cf8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba1c3a5e2001726c0f082bf17d279eb22a03fc86
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Comment : utiliser des points d’arrêt avec XSLT
 
@@ -23,40 +23,40 @@ Pour plus d’informations, consultez [Debugging Basics : points d’arrêt](..
 
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Définir un point d’arrêt dans une feuille de style
 
-Des points d’arrêt peuvent être définis pour les étiquettes de début, les étiquettes de fin et les nœuds de texte d’une feuille de style XSLT. Les points d'arrêt peuvent également être définis sur du code dans un bloc de script.  
-  
+Des points d’arrêt peuvent être définis pour les étiquettes de début, les étiquettes de fin et les nœuds de texte d’une feuille de style XSLT. Les points d'arrêt peuvent également être définis sur du code dans un bloc de script.
+
 ### <a name="to-set-a-breakpoint-in-a-style-sheet"></a>Pour définir un point d'arrêt dans une feuille de style
-  
-1.  Ouvrez une feuille de style dans l'éditeur XML.  
-  
-2.  Placez le curseur à l’emplacement du point d’arrêt, avec le bouton droit, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt**.  
-  
-3.  Cliquez sur le bouton Parcourir (**...** ) sur le **entrée** champ de la fenêtre de propriétés de document.  
-  
-4.  Recherchez le document source XML et cliquez sur **ouvrir**.  
-  
-     Vous définissez ainsi le document source à utiliser pour la transformation XSLT.  
-  
-5.  Cliquez sur le **débogage XSLT** dans la barre d’outils de l’éditeur XML.  
+
+1.  Ouvrez une feuille de style dans l'éditeur XML.
+
+2.  Placez le curseur à l’emplacement du point d’arrêt, avec le bouton droit, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt**.
+
+3.  Cliquez sur le bouton Parcourir (**...** ) sur le **entrée** champ de la fenêtre de propriétés de document.
+
+4.  Recherchez le document source XML et cliquez sur **ouvrir**.
+
+     Vous définissez ainsi le document source à utiliser pour la transformation XSLT.
+
+5.  Cliquez sur le **débogage XSLT** dans la barre d’outils de l’éditeur XML.
 
 ## <a name="set-a-breakpoint-in-an-xml-source-document"></a>Définir un point d’arrêt dans un document source XML
 
-Les points d'arrêt peuvent être définis sur des éléments, des attributs, un nœud d'espace de noms, des commentaires, une instruction de traitement et des nœuds de texte d'un document source XML. Il est impossible de définir un point d'arrêt sur le nœud de document ou sur un nœud d'espace de noms hérité de l'élément parent.  
+Les points d'arrêt peuvent être définis sur des éléments, des attributs, un nœud d'espace de noms, des commentaires, une instruction de traitement et des nœuds de texte d'un document source XML. Il est impossible de définir un point d'arrêt sur le nœud de document ou sur un nœud d'espace de noms hérité de l'élément parent.
 
 ### <a name="to-set-a-breakpoint-in-an-xml-source-document"></a>Pour définir un point d'arrêt dans un document source XML
 
-1.  Ouvrez le document XML dans l'éditeur XML.  
-  
-2.  Placez le curseur à l’emplacement du point d’arrêt, avec le bouton droit, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt**.  
-  
-3.  Cliquez sur le bouton Parcourir (**...** ) sur le **Stylesheet** champ de la fenêtre de propriétés de document.  
-  
-4.  Recherchez le document source XML et cliquez sur **ouvrir**.  
-  
-     Vous définissez ainsi le document source à utiliser pour la transformation XSLT.  
-  
-5.  Cliquez sur le **débogage XSLT** dans la barre d’outils de l’éditeur XML.  
- 
+1.  Ouvrez le document XML dans l'éditeur XML.
+
+2.  Placez le curseur à l’emplacement du point d’arrêt, avec le bouton droit, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt**.
+
+3.  Cliquez sur le bouton Parcourir (**...** ) sur le **Stylesheet** champ de la fenêtre de propriétés de document.
+
+4.  Recherchez le document source XML et cliquez sur **ouvrir**.
+
+     Vous définissez ainsi le document source à utiliser pour la transformation XSLT.
+
+5.  Cliquez sur le **débogage XSLT** dans la barre d’outils de l’éditeur XML.
+
 ## <a name="see-also"></a>Voir aussi
 
-[Procédure pas à pas : déboguer une feuille de style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Procédure pas à pas : déboguer une feuille de style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

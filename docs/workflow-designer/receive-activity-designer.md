@@ -1,7 +1,9 @@
 ---
-title: Concepteur d’activités Receive | Documents Microsoft
+title: Le Concepteur de flux de travail - de concepteur d’activités Receive
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
@@ -10,29 +12,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 900cf704dd29c78a1ddc8de7dce4940d8ba09fae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7573c126ce8e11143d3b39a637c44649d15acf95
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="receive-activity-designer"></a>Concepteur d'activités Receive
+
 Le **réception** ActivityDesigner est utilisé pour créer et configurer un <xref:System.ServiceModel.Activities.Receive> activité. Une activité <xref:System.ServiceModel.Activities.Receive> est une activité qui reçoit un message qui peut être un type intégré, tel que <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> ou <xref:System.Xml.Linq.XElement>, ou un contrat de données défini par l'application, un contrat de message ou une classe XML sérialisable.
 
 ## <a name="the-receive-activity"></a>Activité Receive
- L'activité <xref:System.ServiceModel.Activities.Receive> peut recevoir un élément unique ou plusieurs éléments selon le type de contenu de réception utilisé. Une activité <xref:System.ServiceModel.Activities.SendReply> peut être liée à une activité <xref:System.ServiceModel.Activities.Receive> qui reçoit un message dans le cadre d'un modèle d'échange de messages de demande/réponse sur le service.
+
+L'activité <xref:System.ServiceModel.Activities.Receive> peut recevoir un élément unique ou plusieurs éléments selon le type de contenu de réception utilisé. Une activité <xref:System.ServiceModel.Activities.SendReply> peut être liée à une activité <xref:System.ServiceModel.Activities.Receive> qui reçoit un message dans le cadre d'un modèle d'échange de messages de demande/réponse sur le service.
 
 ### <a name="using-the-receive-activity-designer"></a>Utilisation du concepteur d'activités Receive
- Le **réception** Concepteur d’activités peut être trouvé dans le **messagerie** catégorie de la **boîte à outils**, qui est accessible en cliquant sur les **boîte à outils**onglet sur le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)
+ Le **réception** Concepteur d’activités peut être trouvé dans le **messagerie** catégorie de la **boîte à outils**, qui est accessible en cliquant sur les **boîte à outils**onglet sur le Concepteur de flux de travail (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)
 
- Le **réception** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposé dans le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] surface, là où les activités sont généralement placées. Cette opération crée une activité <xref:System.ServiceModel.Activities.Receive> avec une propriété <xref:System.Activities.Activity.DisplayName%2A> affectée de la valeur par défaut Receive. Le <xref:System.Activities.Activity.DisplayName%2A> peuvent être modifiées dans l’en-tête de la **réception** Concepteur d’activités ou dans le **DisplayName** zone de la grille des propriétés.
+ Le **réception** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail où les activités sont généralement placées. Cette opération crée une activité <xref:System.ServiceModel.Activities.Receive> avec une propriété <xref:System.Activities.Activity.DisplayName%2A> affectée de la valeur par défaut Receive. Le <xref:System.Activities.Activity.DisplayName%2A> peuvent être modifiées dans l’en-tête de la **réception** Concepteur d’activités ou dans le **DisplayName** zone de la grille des propriétés.
 
  Pour créer un <xref:System.ServiceModel.Activities.SendReply> activité et le lier au <xref:System.ServiceModel.Activities.Receive> activité, avec le bouton droit le **réception** cliquez sur Générateur d’activité le **Create SendReply** élément dans le menu contextuel et le **SendReplyToReceive** concepteur apparaît sous le **réception** concepteur. L'activité <xref:System.ServiceModel.Activities.SendReply> est une activité qui envoie le message de réponse dans le cadre d'un modèle d'échange de messages de demande/réponse sur le service. Il peut être configuré avec le **SendReplyToReceive** concepteur.
 
  Vous pouvez également le **ReceiveAndSendReply** Concepteur de modèles dans le **messagerie** catégorie de la **boîte à outils** peut être utilisé pour créer une paire de préconfiguré<xref:System.ServiceModel.Activities.Receive>et <xref:System.ServiceModel.Activities.SendReply> activité. Pour plus d’informations sur l’utilisation de la **ReceiveAndSendReply** et **SendReplyToReceive** modèle, consultez la [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md) rubrique.
 
 ### <a name="the-receive-activity-properties"></a>Propriétés de l'activité Receive
- Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.Receive> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés ou dans l'aire de conception [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Seule la propriété <xref:System.ServiceModel.Activities.Receive.OperationName%2A> est obligatoire.
+ Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.Receive> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés ou sur l’aire du Concepteur de flux de travail. Seule la propriété <xref:System.ServiceModel.Activities.Receive.OperationName%2A> est obligatoire.
 
 |Nom de la propriété|Obligatoire|Utilisation|
 |-------------------|--------------|-----------|

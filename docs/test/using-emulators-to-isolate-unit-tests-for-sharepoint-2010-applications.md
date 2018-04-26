@@ -1,6 +1,7 @@
 ---
-title: Utilisation d’émulateurs pour isoler des tests unitaires pour des applications Sharepoint 2010 | Microsoft Docs
+title: Utilisation d'émulateurs pour isoler des tests unitaires pour des applications Sharepoint 2010
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 994e13d7155dd5490d3f3f02865b14845bae498b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13f06279857897ba1562c157a7ffa1c76dd3c6c8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Utilisation d'émulateurs pour isoler des tests unitaires pour des applications Sharepoint 2010
 Le package Microsoft.SharePoint.Emulators fournit un jeu de bibliothèques qui vous aide à créer des tests unitaires isolés pour les applications Microsoft SharePoint 2010. Les émulateurs utilisent des [shims](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) du framework d’isolation [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) pour créer des objets en mémoire légers qui imitent les objets et les méthodes les plus courants de l’API SharePoint. Quand une méthode SharePoint n'est pas émulée, ou que vous voulez modifier le comportement par défaut d'un émulateur, vous pouvez créer des shims Fakes pour fournir les résultats souhaités.
@@ -302,7 +303,8 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
  Voici une modification d'une méthode de test existante, `GetAppointmentsForTodayReturnsOnlyTodaysAppointments`, qui implémente un délégué Fakes. Les modifications obligatoires sont appelées dans des commentaires :
 
 > [!IMPORTANT]
->  Les méthodes de test qui créent explicitement des shims Fakes lèvent une exception `ShimNotSupported` quand le test est exécuté dans le contexte `EmulationMode.Passthrough`. Pour éviter ce problème, utilisez une variable pour définir la valeur `EmulationMode` et encapsuler tout code Fakes dans une instruction `if` qui teste la valeur.
+> Les méthodes de test qui créent explicitement des shims Fakes lèvent une exception `ShimNotSupported` quand le test est exécuté dans le contexte `EmulationMode.Passthrough`. Pour éviter ce problème, utilisez une variable pour définir la valeur `EmulationMode` et encapsuler tout code Fakes dans une instruction `if` qui teste la valeur.
+
 
 ```csharp
 // class level field to set emulation mode

@@ -19,14 +19,15 @@ ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bed7096fc35f9dd1439a0b15afb9761ab56fbe3c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 31bee5d824b612ddaeb264fe2f944746cdda68fa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 *Mise à jour hiérarchique* fait référence au processus d’enregistrement des données mises à jour (à partir d’un jeu de données de deux ou plusieurs tables connexes) dans une base de données tout en conservant les règles d’intégrité référentielle. *L’intégrité référentielle* fait référence aux règles de cohérence fournies par les contraintes dans une base de données qui contrôlent le comportement d’insertion, de mise à jour et de suppression des enregistrements connexes. Par exemple, il est de l’intégrité référentielle impose la création d’un enregistrement de client avant d’autoriser les commandes doit être créé pour ce client.  Pour plus d’informations sur les relations dans les jeux de données, consultez [des relations dans les jeux de données](../data-tools/relationships-in-datasets.md)

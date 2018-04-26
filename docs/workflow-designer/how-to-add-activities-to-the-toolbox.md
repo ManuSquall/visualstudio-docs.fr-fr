@@ -1,18 +1,20 @@
 ---
-title: 'Comment : ajouter des activités à la boîte à outils | Documents Microsoft'
+title: 'Le Concepteur de flux de travail - Comment : ajouter des activités à la boîte à outils'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb101f5dff84f7e8d586ce33c63adbe30fa0dbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4edb752ca64afd899ac9b3e463b9d29e4b3b68a1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Comment : ajouter des activités à la boîte à outils
 
@@ -27,7 +29,7 @@ Les activités peuvent être ajoutées à la **boîte à outils** dans votre sol
 3.  Générez le projet. Si la génération a réussi, une nouvelle catégorie dans le **boîte à outils** nommé «\<*nom du projet*> » avec l’activité personnalisée incluse dans cette catégorie s’affiche.
 
     > [!NOTE]
-    > Si la boîte à outils est réinitialisée, des activités personnalisées sont supprimées, même si la solution est générée à nouveau. Pour remplir de nouveau la boîte à outils avec des activités personnalisées, redémarrez [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] après que la boîte à outils a été réinitialisée.
+    > Si la boîte à outils est réinitialisée, des activités personnalisées sont supprimées, même si la solution est générée à nouveau. Pour remplir de nouveau la boîte à outils avec des activités personnalisées après que qu’il a été réinitialisé, redémarrez Visual Studio 2010.
 
     > [!NOTE]
     > La boîte à outils ne peut afficher qu'une activité d'un nom donné. Si deux activités de différents assemblys ont le même nom de classe, une seule s'affiche.

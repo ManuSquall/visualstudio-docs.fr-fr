@@ -1,7 +1,9 @@
 ---
-title: La désactivation du débogueur de Visual Studio pour Windows Workflow Foundation (hérité) | Documents Microsoft
+title: Concepteur de flux de travail - désactiver le débogueur de Visual Studio pour Windows Workflow Foundation (hérité)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, disabling debugger
 - debugging workflows, disabling debugger
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a609062f3f84538f7c1655cd5ca82971fc608f62
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 473ee507e35f5ec5df902df64ee34326dcf90a2b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Désactivation du débogueur Visual Studio pour Windows Workflow Foundation (hérité)
 
-Cette rubrique décrit comment désactiver le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à l’aide du fichier de configuration lors de la génération du débogueur [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] applications dans le Concepteur de flux de travail Windows hérité. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+Cette rubrique décrit comment désactiver le débogueur Visual Studio à l’aide du fichier de configuration lors de la création d’applications de Windows Workflow Foundation (WF) dans le Concepteur de flux de travail Windows hérité. Utilisez le Concepteur de flux de travail hérité lorsque vous avez besoin cibler le .NET Framework version 3.5 ou du WinFX.
 
- Par défaut, le débogueur [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] pour [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] est activé pour un processus hôte. Pour désactiver le débogage de flux de travail, vous devez explicitement désactiver en ajoutant une entrée disableworkflowdebugging » à « le  **\<commutateurs >** élément dans le  **\<system.diagnostics >**section du fichier de configuration hôte.
+ Par défaut, le Visual Studio débogueur pour Windows Workflow Foundation (WF) est activée pour un processus hôte. Pour désactiver le débogage de flux de travail, vous devez explicitement désactiver en ajoutant une entrée disableworkflowdebugging » à « le  **\<commutateurs >** élément dans le  **\<system.diagnostics >** section du fichier de configuration hôte.
 
  L 'exemple suivant indique comment modifier le fichier de configuration hôte pour désactiver le débogage de workflow.
 

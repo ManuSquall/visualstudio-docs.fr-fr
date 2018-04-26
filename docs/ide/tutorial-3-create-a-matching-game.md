@@ -1,9 +1,9 @@
 ---
-title: 'Didacticiel 3 : créer un jeu de combinaisons | Microsoft Docs'
+title: 'Didacticiel 3 : créer un jeu de combinaisons'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 author: TerryGLee
@@ -11,39 +11,39 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d0e538304e2d9c3fb5ca71747fd1ed2ab2a5fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd560c6a3675617741f35f40d1fe23a70b482349
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Didacticiel 3 : créer un jeu de combinaisons
 Dans ce didacticiel, vous générez un jeu de combinaisons dans lequel le joueur doit associer des paires d'icônes masquées. Vous apprenez à :  
-  
+
 -   stocker des objets, tels que des icônes, dans un objet `List` ;  
-  
+
 -   utiliser une boucle `foreach` en Visual C# ou une boucle `For Each` en Visual Basic pour effectuer des itérations sur les éléments d'une liste ;  
-  
+
 -   effectuer le suivi de l'état d'un formulaire à l'aide de variables de référence ;  
-  
+
 -   générer un gestionnaire d'événements pour réagir aux événements, que vous pouvez utiliser avec plusieurs objets ;  
-  
+
 -   créer un minuteur qui effectue un calcul à rebours, puis déclenche un événement une seule fois après avoir été démarré.  
-  
+
  Lorsque vous aurez terminé ce didacticiel, votre programme aura l'aspect illustré ci-dessous.  
-  
+
  ![Jeu créé dans ce didacticiel](../ide/media/express_finishedgame.png "Express_FinishedGame")  
 Jeu créé dans ce didacticiel  
-  
+
  Pour télécharger une version complète de l’exemple, consultez [Exemple complet de didacticiel de création d’un jeu de combinaisons](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
-  
+
 > [!NOTE]
 >  Ce didacticiel aborde Visual C# et Visual Basic : ne tenez compte que des informations spécifiques au langage de programmation que vous utilisez.  
-  
+
  Si vous êtes bloqué ou avez des questions liées à la programmation, essayez de publier votre question sur l'un des forums MSDN. Consultez le [Forum Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) et [Forum Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral). Des ressources vidéo d'apprentissage efficaces et gratuites sont également à votre disposition. Pour en savoir plus sur la programmation en Visual Basic, consultez [Notions de base de Visual Basic : développement pour les débutants](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Pour en savoir plus sur la programmation en C#, consultez [Notions de base de C# : développement pour les débutants](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).  
-  
+
 ## <a name="related-topics"></a>Rubriques connexes  
-  
+
 |Titre|Description|  
 |-----------|-----------------|  
 |[Étape 1 : créer un projet et ajouter une table à votre formulaire](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Commencez par créer le projet et ajouter un contrôle `TableLayoutPanel` pour maintenir un bon alignement des contrôles.|  

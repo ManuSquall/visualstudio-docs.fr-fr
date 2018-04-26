@@ -1,7 +1,9 @@
 ---
-title: 'Comment : configurer les propriétés de projet de Workflow (hérité) | Documents Microsoft'
+title: 'Le Concepteur de flux de travail - Comment : configurer les propriétés de projet de Workflow (héritée)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - workflow
 helpviewer_keywords:
@@ -14,17 +16,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43f7ca9271b8f7585e232ca636dcb5e13de3a6eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 66589ab34a969290263afba80acaa7aa7273a3fd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Procédure : configurer des propriétés de projet de workflow (héritée)
 
 Procédez comme suit pour afficher ou modifier des propriétés associées aux projets de workflow.
 
-### <a name="to-view-or-modify-workflow-project-properties"></a>Pour afficher ou modifier des propriétés de projet de workflow
+## <a name="to-view-or-modify-workflow-project-properties"></a>Pour afficher ou modifier des propriétés de projet de workflow
 
 1.  Si **l’Explorateur de solutions** fenêtre n’est pas visible, sélectionnez **l’Explorateur de solutions** sur la **vue** menu.
 

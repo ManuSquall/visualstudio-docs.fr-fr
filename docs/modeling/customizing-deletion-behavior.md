@@ -11,12 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0461ff028925081285dafdc4f782b7c58c28a32c
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 9942d9903188785af1658a37515092c3ce1ad2dd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Personnalisation du comportement de la commande de suppression
 La suppression d'un élément provoque généralement aussi la suppression des éléments associés. Toutes les relations qui y sont connectées et tous les éléments enfants sont supprimés. Ce comportement est nommé *suppression de la propagation*. Vous pouvez personnaliser la propagation de la suppression, par exemple pour que des éléments associés supplémentaires soient supprimés. En écrivant du code de programme, vous pouvez faire en sorte que la propagation de la suppression dépende de l'état du modèle. Vous pouvez aussi provoquer d'autres modifications en réponse à une suppression.

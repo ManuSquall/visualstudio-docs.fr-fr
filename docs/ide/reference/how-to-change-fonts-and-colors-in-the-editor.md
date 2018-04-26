@@ -1,9 +1,8 @@
 ---
-title: Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur | Microsoft Docs
-ms.custom: ''
+title: Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
@@ -17,43 +16,45 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0510cbc9d6f98f9c36347c6be93d768e483aa24a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 201dd1a6562f7f5ed38d6a3cd8c462056b82475a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur
-Vous pouvez modifier le type de police par défaut, ajuster la taille de police et modifier les couleurs de premier plan et d’arrière-plan pour divers **éléments affichés** sous forme de texte dans l’éditeur de code. Lors de la modification des paramètres de police, gardez à l’esprit les informations suivantes :  
-  
--   Les paramètres **Police** et **Taille** s’appliquent à l’ensemble des éléments de texte dans tous les éditeurs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
--   Les noms de polices à largeur fixe sont répertoriés en gras.  
-  
--   Les options **Premier plan de l’élément**, **Arrière-plan de l’élément** et **Gras** peuvent être définies pour chaque type d’élément de texte. Par exemple, si vous modifiez des couleurs et que vous sélectionnez **Gras** pour les éléments **Commentaire** et **Signets**, les autres types d’éléments de texte ne sont pas affectés.  
-  
+Vous pouvez modifier le type de police par défaut, ajuster la taille de police et modifier les couleurs de premier plan et d’arrière-plan pour divers **éléments affichés** sous forme de texte dans l’éditeur de code. Lors de la modification des paramètres de police, gardez à l’esprit les informations suivantes :
+
+-   Les paramètres **Police** et **Taille** s’appliquent à l’ensemble des éléments de texte dans tous les éditeurs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+-   Les noms de polices à largeur fixe sont répertoriés en gras.
+
+-   Les options **Premier plan de l’élément**, **Arrière-plan de l’élément** et **Gras** peuvent être définies pour chaque type d’élément de texte. Par exemple, si vous modifiez des couleurs et que vous sélectionnez **Gras** pour les éléments **Commentaire** et **Signets**, les autres types d’éléments de texte ne sont pas affectés.
+
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles décrites dans l’**aide**, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-change-the-default-font-face-size-and-colors"></a>Pour modifier le type, la taille et les couleurs de police par défaut  
-  
-1.  Sélectionnez **Options** dans le menu **Outils**, puis, dans le dossier **Environnement**, sélectionnez **Polices et couleurs**.  
-  
-     La [boîte de dialogue Polices et couleurs, Environnement, Options](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) s’ouvre.  
-  
-2.  Dans **Afficher les paramètres de**, sélectionnez **Éditeur de texte**.  
-  
-3.  Modifiez les options **Police** et **Taille** pour changer le type et la taille de la police pour tous les éléments de texte dans tous les éditeurs.  
-  
-4.  Sélectionnez l’élément approprié dans **Éléments affichés**, puis modifiez les options **Premier plan de l’élément** et **Arrière-plan de l’élément**.  
-  
+> Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles décrites dans l’**aide**, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+
+
+### <a name="to-change-the-default-font-face-size-and-colors"></a>Pour modifier le type, la taille et les couleurs de police par défaut
+
+1.  Sélectionnez **Options** dans le menu **Outils**, puis, dans le dossier **Environnement**, sélectionnez **Polices et couleurs**.
+
+     La [boîte de dialogue Polices et couleurs, Environnement, Options](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) s’ouvre.
+
+2.  Dans **Afficher les paramètres de**, sélectionnez **Éditeur de texte**.
+
+3.  Modifiez les options **Police** et **Taille** pour changer le type et la taille de la police pour tous les éléments de texte dans tous les éditeurs.
+
+4.  Sélectionnez l’élément approprié dans **Éléments affichés**, puis modifiez les options **Premier plan de l’élément** et **Arrière-plan de l’élément**.
+
     > [!TIP]
-    >  Cliquez sur **Utiliser les valeurs par défaut** pour réinitialiser les paramètres par défaut.  
-  
-5.  Cliquez sur **OK**.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Personnalisation de l’éditeur](../../ide/customizing-the-editor.md)   
- [Boîte de dialogue Options de l’éditeur de texte](../../ide/reference/text-editor-options-dialog-box.md)   
- [Écriture de code](../../ide/writing-code-in-the-code-and-text-editor.md)   
- [Guide pratique pour modifier les polices et les couleurs dans Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+    >  Cliquez sur **Utiliser les valeurs par défaut** pour réinitialiser les paramètres par défaut.
+
+5.  Cliquez sur **OK**.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Personnalisation de l’éditeur](../../ide/customizing-the-editor.md)
+- [Éditeur de texte, boîte de dialogue Options](../../ide/reference/text-editor-options-dialog-box.md)
+- [Écriture de code](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Guide pratique pour modifier les polices et les couleurs dans Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

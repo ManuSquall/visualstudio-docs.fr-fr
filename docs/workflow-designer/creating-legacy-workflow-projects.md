@@ -1,7 +1,9 @@
 ---
-title: Création de projets de Workflow hérité | Documents Microsoft
+title: Concepteur de flux de travail - créer des projets de Workflow hérité
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d78712ff91d92ef0f710dfbbef926f2a7b55e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9988e85fe791e543b2b191b256e64099d5a3b658
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-legacy-workflow-projects"></a>Création de projets de workflows hérités
-Cette section décrit comment créer des projets de flux de travail à l’aide du Concepteur de flux de travail Windows fourni par vs2010 hérité. Le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité cible le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Elle contient des informations sur l'utilisation des modèles de projet de workflow répertoriés dans le tableau suivant.
+
+Cette section décrit comment créer des projets de flux de travail utilisant le Concepteur de flux de travail Windows hérité fournis par Visual Studio 2010. Le Concepteur de flux de travail hérité cible le .NET Framework version 3.5 ou le WinFX. Elle contient des informations sur l'utilisation des modèles de projet de workflow répertoriés dans le tableau suivant.
 
 |Modèle de projet|Description|
 |----------------------|-----------------|
@@ -29,25 +32,6 @@ Cette section décrit comment créer des projets de flux de travail à l’aide 
 |Application console de workflow d'ordinateur d'état|Projet permettant de créer une application console de workflow d'ordinateur d'état|
 |Bibliothèque de workflows d'ordinateur d'état|Projet permettant de créer une bibliothèque de workflows d'ordinateur d'état.|
 |Projet de workflow vide|Projet vide permettant de créer une application de workflow.|
-
-## <a name="in-this-section"></a>Dans cette section
- [Guide pratique pour créer des projets de flux de travail (hérité)](../workflow-designer/how-to-create-workflow-projects-legacy.md)
-
- [Guide pratique pour créer des applications console de flux de travail séquentiels (hérité)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
-
- [Guide pratique pour créer une bibliothèque de flux de travail séquentiels (hérité)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
-
- [Guide pratique pour créer une bibliothèque d’activité de flux de travail (hérité)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
-
- [Guide pratique pour créer des applications console de flux de travail de machine à états (hérité)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
-
- [Guide pratique pour créer une bibliothèque de flux de travail de machine à états (hérité)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
-
- [Guide pratique pour créer un projet de flux de travail vide (hérité)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)
-
- [Guide pratique pour configurer des propriétés de projet de flux de travail (hérité)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
-
- [Guide pratique pour ajouter un nouvel élément à un projet de flux de travail (hérité)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
 ## <a name="see-also"></a>Voir aussi
 

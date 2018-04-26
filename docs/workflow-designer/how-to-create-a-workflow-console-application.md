@@ -1,29 +1,32 @@
 ---
-title: 'Comment : créer une Application Console de Workflow | Documents Microsoft'
+title: 'Le Concepteur de flux de travail - Comment : créer une Application Console de Workflow'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 51a2eea7-921c-49f1-b358-68afc27f1ee9
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e97afc8dab747c308b3d4ff884810303b79ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6461a644bdedd3d391059cd8a3a17f887e77c6b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Procédure : créer une application console de workflow
-[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] vous permet de créer des workflows pour l'exécution de processus système ou humains. Le Concepteur de flux de travail Windows fournit l’aire de conception pour la création de ces flux de travail. Le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] peut être utilisé pour créer des workflows depuis [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou il peut être intégré dans d'autres applications pour réhéberger le concepteur.
 
- Cette rubrique décrit comment utiliser le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] pour créer un workflow dans une application console.
+Windows Workflow Foundation (WF) vous permet de créer des workflows pour l’exécution des processus système ou humains. Le Concepteur de flux de travail Windows fournit l’aire de conception pour la création de ces flux de travail. Le Concepteur de Workflow peut être utilisé pour créer des flux de travail à partir de Visual Studio, ou il peut être intégré dans d’autres applications pour réhéberger le concepteur.
 
-### <a name="to-create-a-workflow-console-application"></a>Pour créer une application console de workflow
+Cette rubrique décrit comment utiliser le Concepteur de flux de travail dans Visual Studio 2010 pour créer un flux de travail dans une application console.
 
-1.  Démarrez [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+## <a name="to-create-a-workflow-console-application"></a>Pour créer une application console de workflow
 
-2.  Sur le **fichier** menu, pointez sur **nouveau**, puis sélectionnez **projet...** .
+1.  Démarrez Visual Studio 2010.
+
+2.  Dans le menu **Fichier**, pointez sur **Nouveau**, puis sélectionnez **Projet**.
 
      La boîte de dialogue **Nouveau projet** s'affiche.
 
@@ -38,9 +41,9 @@ ms.lasthandoff: 04/16/2018
 7.  Dans le **Solution** , entrez le nom de la nouvelle solution. Cliquez sur **OK** pour créer l’application.
 
     > [!NOTE]
-    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter**, puis **Nouveau projet...** pour ouvrir le **nouveau projet** boîte de dialogue. Procédez comme décrit ci-dessus dans cette procédure.
+    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans Visual Studio 2010, cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter**, puis  **Nouveau projet** pour ouvrir le **nouveau projet** boîte de dialogue. Procédez comme décrit ci-dessus dans cette procédure.
 
-8.  Le modèle de projet crée une définition de workflow en XAML et la définition d'application console se trouve dans le code source. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] s'ouvre et affiche la zone de dessin du workflow que vous avez créé.
+8.  Le modèle de projet crée une définition de workflow en XAML et la définition d'application console se trouve dans le code source. Le Concepteur de flux de travail s’ouvre et affiche la zone de dessin du flux de travail que vous avez créé.
 
 9. Pour composer un workflow, faites glisser les activités ou autres éléments de flux de travail à partir de la **boîte à outils** vers l’aire de conception de votre flux de travail.
 

@@ -1,7 +1,9 @@
 ---
-title: Vues d’activité (héritées) | Documents Microsoft
+title: Concepteur de flux de travail - vues d’activité (héritées)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - activities, activity views
 - views, activity
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cc053be2f9d11a9a1f3cd48c6c9d24e366410c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d3453ecefece93f593c3d4ebbc261e4332815da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="activity-views-legacy"></a>Vues d'activité (héritées)
-Un grand nombre des activités fournies par [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], dans les workflows sont composés, a plusieurs vues de conception disponibles dans le Concepteur de flux de travail Windows hérité. Lorsque vous faites glisser un concepteur d’activités à partir de la **boîte à outils** sur l’aire de conception et par la suite chaque fois que vous sélectionnez l’activité, vous pouvez basculer entre les différents modes design à l’aide du **Workflow**menu ou en cliquant sur l’activité sélectionnée. De la même façon, lorsque vous déplacez le pointeur sur le nom d’une activité sélectionnée, un jeu déroulant d’onglets apparaît, que vous pouvez utiliser pour alterner entre les différentes vues.
 
- Chaque activité possède au moins une vue ; Il s’agit d’affichage par défaut lorsque vous faites glisser un concepteur d’activités à partir de la **boîte à outils** sur l’aire de conception. Cette vue par défaut d’activité est disponible en tant que le **afficher [type d’activité]** option sous l’onglet, par exemple et les menus **vue parallèle**. La plupart des activités possède des vues supplémentaires et des activités différentes peuvent posséder des vues différentes. Par exemple, le [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093) activité possède la vue de compensation et la [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030) activité comporte des événements d’une vue. La plupart des activités qui sont fournis avec Windows Workflow Foundation ont **afficher le Gestionnaire d’annulation** et **vue erreurs** concevoir des vues pour afficher le [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) et un [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) qui s’y rapportent.
+Plusieurs activités fournies par Windows Workflow Foundation (WF), à partir de laquelle sont composés les workflows, ont plusieurs vues de conception disponibles dans le Concepteur de flux de travail Windows hérité. Lorsque vous faites glisser un concepteur d’activités à partir de la **boîte à outils** sur l’aire de conception et par la suite chaque fois que vous sélectionnez l’activité, vous pouvez basculer entre les différents modes design à l’aide du **Workflow**menu ou en cliquant sur l’activité sélectionnée. De la même façon, lorsque vous déplacez le pointeur sur le nom d’une activité sélectionnée, un jeu déroulant d’onglets apparaît, que vous pouvez utiliser pour alterner entre les différentes vues.
 
- Le tableau suivant contient le nom et la description de chaque vue.
+Chaque activité possède au moins une vue ; Il s’agit d’affichage par défaut lorsque vous faites glisser un concepteur d’activités à partir de la **boîte à outils** sur l’aire de conception. Cette vue par défaut d’activité est disponible en tant que le **afficher [type d’activité]** option sous l’onglet, par exemple et les menus **vue parallèle**. La plupart des activités possède des vues supplémentaires et des activités différentes peuvent posséder des vues différentes. Par exemple, le [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093) activité possède la vue de compensation et la [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030) activité comporte des événements d’une vue. La plupart des activités qui sont fournis avec Windows Workflow Foundation ont **afficher le Gestionnaire d’annulation** et **vue erreurs** concevoir des vues pour afficher le [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) et un [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) qui s’y rapportent.
+
+Le tableau suivant contient le nom et la description de chaque vue.
 
 |Option de menu/d'onglet|Description|
 |----------------------|-----------------|
@@ -33,7 +36,7 @@ Un grand nombre des activités fournies par [!INCLUDE[wf](../workflow-designer/i
 |**Afficher le Gestionnaire de Compensation**|Sélectionnez cette option de menu ou d’onglet pour consulter les [CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65053) associée [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093).|
 |**Afficher le Gestionnaire d’événements**|Sélectionnez cette option de menu ou d’onglet pour consulter les [EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018) associée le [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030).|
 
- Pour plus d’informations sur des vues similaires, consultez [vues de Workflow séquentiel (héritées)](../workflow-designer/sequential-workflow-views-legacy.md).
+Pour plus d’informations sur des vues similaires, consultez [vues de Workflow séquentiel (héritées)](../workflow-designer/sequential-workflow-views-legacy.md).
 
 ## <a name="see-also"></a>Voir aussi
 

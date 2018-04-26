@@ -1,7 +1,9 @@
 ---
-title: Concepteur d’activités de transition | Documents Microsoft
+title: Concepteur de flux de travail - Concepteur d’activités Transition
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
@@ -10,20 +12,23 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25b00c38110e8a97d5e5465f3e170bef9c28bb88
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f63369c67470378856133b912e6da48f924bb45
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="transition-activity-designer"></a>Concepteur d'activités de transition
+
 <xref:System.Activities.Statements.Transition> représente la transition entre deux états.
 
 ## <a name="using-the-transition-activity-designer"></a>Utilisation du concepteur d'activités Transition
- Le concepteur d'activités de transition vous permet de configurer une transition entre deux états.
+
+Le concepteur d'activités de transition vous permet de configurer une transition entre deux états.
 
 ### <a name="transition-properties-in-the-workflow-designer"></a>Propriétés de transition dans le concepteur de workflow
- Le tableau suivant indique les propriétés  <xref:System.Activities.Statements.Transition> qui peuvent être définies à l'aide du concepteur de workflow et explique comment elles sont utilisées dans le concepteur.
+
+Le tableau suivant indique les propriétés  <xref:System.Activities.Statements.Transition> qui peuvent être définies à l'aide du concepteur de workflow et explique comment elles sont utilisées dans le concepteur.
 
 |Nom de la propriété|Obligatoire|Utilisation|
 |-------------------|--------------|-----------|
@@ -35,12 +40,13 @@ ms.lasthandoff: 04/16/2018
 |**Destination**|True|Indique l'état auquel la machine à états passe une fois la transition terminée. Cela correspond à la propriété <xref:System.Activities.Statements.Transition.To%2A> de la transition du modèle objet. Cliquez sur le nom de l'état de destination pour faire basculer l'affichage du concepteur vers une vue développée de cet état. Cette valeur est définie lorsque la transition est créée et peut être modifiée en faisant glisser la flèche qui connecte la transition à l'état de destination dans le concepteur.|
 
 ### <a name="creating-transitions"></a>Créer des transitions
- Les transitions sont créées en faisant glisser une ligne d'un état à un autre, ou en déposant un état sur les triangles qui s'affichent lorsqu'un état est déplacé sur un autre état. Pour créer une transition en faisant glisser, pointez la souris sur le bord de l'état source, et faites glisser une ligne de l'état source vers l'état de destination. Pour créer une transition par dépôt, faites glisser l’état de destination et pointez sur l’état source, puis déposez-le sur l’un des quatre triangles qui apparaissent autour de l’état source. L’état de destination peut être un nouvel état déplacé de la **boîte à outils**, ou un état existant déplacé depuis le Concepteur de workflow.
+
+Les transitions sont créées en faisant glisser une ligne d'un état à un autre, ou en déposant un état sur les triangles qui s'affichent lorsqu'un état est déplacé sur un autre état. Pour créer une transition en faisant glisser, pointez la souris sur le bord de l'état source, et faites glisser une ligne de l'état source vers l'état de destination. Pour créer une transition par dépôt, faites glisser l’état de destination et pointez sur l’état source, puis déposez-le sur l’un des quatre triangles qui apparaissent autour de l’état source. L’état de destination peut être un nouvel état déplacé de la **boîte à outils**, ou un état existant déplacé depuis le Concepteur de workflow.
 
 > [!NOTE]
 > Un seul état dans une machine à états peut contenir jusqu'à 76 transitions créées à l'aide du concepteur de workflow. Le nombre maximal de transitions d'un état pour les workflows créés en dehors du concepteur est limité uniquement par les ressources système.
 
- Les transitions partagées de déclencheur sont le jeu de transitions qui partagent le même événement déclencheur. Un déclencheur partagé permet la progression conditionnelle à un état de destination en fonction de l'évaluation de l'expressions configurée pour plusieurs transitions qui partagent un événement déclencheur commun. Pour ajouter des actions supplémentaires à une transition et créer une transition partagée, cliquez sur le cercle qui indique le début de la transition souhaitée et faites-le glisser vers l'état souhaité. La nouvelle transition partagera le même déclencheur que la transition d'origine, mais elle aura une condition et une action uniques. Des transitions partagées peuvent également être créées à partir du Concepteur de transition en cliquant sur **ajouter une transition de déclencheur partagée** au bas du Concepteur de transition, puis en sélectionnant l’état cible souhaité dans le  **Les états disponibles pour la connexion** liste déroulante.
+Les transitions partagées de déclencheur sont le jeu de transitions qui partagent le même événement déclencheur. Un déclencheur partagé permet la progression conditionnelle à un état de destination en fonction de l'évaluation de l'expressions configurée pour plusieurs transitions qui partagent un événement déclencheur commun. Pour ajouter des actions supplémentaires à une transition et créer une transition partagée, cliquez sur le cercle qui indique le début de la transition souhaitée et faites-le glisser vers l'état souhaité. La nouvelle transition partagera le même déclencheur que la transition d'origine, mais elle aura une condition et une action uniques. Des transitions partagées peuvent également être créées à partir du Concepteur de transition en cliquant sur **ajouter une transition de déclencheur partagée** au bas du Concepteur de transition, puis en sélectionnant l’état cible souhaité dans le  **Les états disponibles pour la connexion** liste déroulante.
 
 ## <a name="see-also"></a>Voir aussi
 

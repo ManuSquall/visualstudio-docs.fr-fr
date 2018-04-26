@@ -1,7 +1,9 @@
 ---
-title: Vues de Workflow séquentiel (héritées) | Documents Microsoft
+title: Concepteur de flux de travail - vues de Workflow séquentiel (héritées)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflow views
 - sequential workflows, views
@@ -11,20 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b42ba9c1c9f7dbe2beb4a741501967e4968508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce1217ea629ae0301b72b444161d61db4fe448b1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sequential-workflow-views-legacy"></a>Vues de workflow séquentiel (héritées)
-[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] fournit un concepteur de flux de travail Windows hérité qui peut être utilisé pour cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] permet de créer graphiquement des applications [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] grâce à l'interface utilisateur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que vous connaissez bien. Les applications [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] sont composées d'étapes du processus de workflow appelées activités. Pour créer un workflow, composez des activités sur l’aire de conception en faisant glisser leurs concepteurs d’activités respectifs de **boîte à outils** sur l’aire de conception.
+Visual Studio 2010 fournit un concepteur de flux de travail Windows hérité qui peut être utilisé pour cibler le .NET Framework version 3.5 ou le WinFX.
 
- Lorsque vous créez un flux de travail séquentiel, qui est un [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), trois vues du flux de travail sont disponibles. Ces vues sont accessibles à partir de la **Workflow** menu et dans le menu contextuel sur l’aire de conception.
+Le Concepteur de flux de travail vous permet de créer graphiquement des applications de Windows Workflow Foundation (WF) à l’aide de l’interface utilisateur de Visual Studio familière. Les applications Windows Workflow Foundation (WF) sont composées d’étapes du processus de workflow appelées activités. Pour créer un workflow, composez des activités sur l’aire de conception en faisant glisser leurs concepteurs d’activités respectifs de **boîte à outils** sur l’aire de conception.
 
- Le tableau suivant contient le nom et la description de chaque vue.
+Lorsque vous créez un flux de travail séquentiel, qui est un [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), trois vues du flux de travail sont disponibles. Ces vues sont accessibles à partir de la **Workflow** menu et dans le menu contextuel sur l’aire de conception.
+
+Le tableau suivant contient le nom et la description de chaque vue.
 
 |Option de menu/d'onglet|Description|
 |----------------------|-----------------|

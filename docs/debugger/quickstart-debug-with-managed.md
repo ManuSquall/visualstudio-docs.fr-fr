@@ -1,5 +1,6 @@
 ---
-title: Déboguer avec du code managé à l’aide du débogueur Visual Studio | Documents Microsoft
+title: Déboguer du code managé | Documents Microsoft
+description: Débogage c# ou Visual Basic en utilisant le débogueur Visual Studio
 ms.custom: mvc
 ms.date: 03/18/2018
 ms.technology: vs-ide-debug
@@ -12,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e209ef4385466be1009b19dde850751695344afe
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e895fe9844740fbb3fdd670ff53dfe0b72dbdfb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>Déboguer avec du code managé à l’aide du débogueur Visual Studio
+# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer avec du code managé à l’aide du débogueur Visual Studio
 
 Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes pour vous aider à déboguer vos applications. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base.
 

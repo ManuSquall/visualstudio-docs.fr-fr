@@ -16,12 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b9c245559622f4bfc461d592bd632a8d1b4c560d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 45436775c2e7cd2d8ba057b9bdb2e3a3f80d7493
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Utilisation du schéma de définition DSL
 Le diagramme d’un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] définition est un outil important pour la définition de la langue spécifique à un domaine. Vous pouvez ajouter des éléments à votre modèle de domaine et définir des relations sur le diagramme ; vous pouvez également modifier la disposition du diagramme pour accroître sa lisibilité.

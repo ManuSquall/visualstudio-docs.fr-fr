@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7a196bd384a047328680a140232267b04bcb8f54
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 63d3153bfcc38b28ace3db5ad976a2c2a6a650fd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validation dans un langage spécifique à un domaine
 En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez définir des contraintes de validation afin de vérifier que le modèle créé par l'utilisateur a un sens. Par exemple, si votre DSL permet aux utilisateurs de tracer l'arbre généalogique d'une famille et de ses ancêtres, vous pouvez écrire une contrainte qui garantit que les enfants ont des dates de naissance postérieures à celles de leurs parents.

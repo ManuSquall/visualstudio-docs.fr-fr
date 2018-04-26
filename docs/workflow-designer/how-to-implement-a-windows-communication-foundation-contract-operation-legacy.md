@@ -1,25 +1,28 @@
 ---
-title: 'Comment : implémenter une opération de contrat Windows Communication Foundation (hérité) | Documents Microsoft'
+title: 'Le Concepteur de flux de travail - Comment : implémenter une opération de contrat Windows Communication Foundation (hérité)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71bf4e4e6f5abc1d2984362396f21f3c613de795
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b069d8ca8c1adb72e2869eb59644e8abeff14ae
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Procédure : implémenter une opération de contrat Windows Communication Foundation (héritée)
-Cette rubrique décrit comment implémenter un [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] contrat d’opération à l’aide du Concepteur de flux de travail Windows hérité qui cible le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Après avoir fait glisser un **ReceiveActivity** activité à partir de la boîte à outils vers l’aire de conception de workflow, vous allez soit créer un nouveau [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] de contrat ou importer un contrat existant et implémenter les opérations. Vous sélectionnez ou créez votre contrat et ses opérations par le biais du [opération boîte de dialogue Choisir (hérité)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+Cette rubrique décrit comment implémenter une opération de contrat de Windows Communication Foundation (WCF) en utilisant le Concepteur de flux de travail Windows hérité qui cible le .NET Framework version 3.5 ou le WinFX.
 
-### <a name="to-implement-a-wcf-contract-operation"></a>Implémentation d'une opération de contrat WCF
+Après avoir fait glisser un **ReceiveActivity** activité à partir de la boîte à outils vers l’aire de conception de workflow, vous allez soit créer un nouveau [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] de contrat ou importer un contrat existant et implémenter les opérations. Vous sélectionnez ou créez votre contrat et ses opérations par le biais du [opération boîte de dialogue Choisir (hérité)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+
+## <a name="to-implement-a-wcf-contract-operation"></a>Implémentation d'une opération de contrat WCF
 
 1.  Double-cliquez sur le **ReceiveActivity** activité dans le concepteur ou cliquez sur le bouton de sélection en regard du **ServiceOperationInfo** propriété dans le **propriétés** volet.
 

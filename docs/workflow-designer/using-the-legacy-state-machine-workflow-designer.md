@@ -1,7 +1,9 @@
 ---
-title: L’aide du Concepteur de flux de travail de Machine état hérité | Documents Microsoft
+title: Concepteur de flux de travail - l’aide du Concepteur de flux de travail de Machine état hérité
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - StateFinalizationActivity activity
 - StateActivity activity
@@ -17,16 +19,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16178d2f83ef9cc45ef7007350e30d2b36d6993a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6ad09c2e999d9432b3c4e1062cb3031eb20ff56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Utilisation du Concepteur de Workflow d'ordinateur d'état hérité
-Quand vous créez un nouveau projet de flux de travail de machine état dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] qui cible le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], vous pouvez choisir d’utiliser le **Application Console de Workflow d’ordinateur état** ou le  **Bibliothèque de flux de travail de Machine d’état** modèle de projet hérité. Si vous choisissez l'un de ces modèles de projet d'ordinateur d'état, le concepteur d'ordinateurs d'état est présenté comme interface utilisateur de concepteur de workflow hérité. Pour plus d’informations sur les modèles de projet d’ordinateur état hérité, consultez [Comment : créer état Machine Applications Console de Workflow (héritée)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) et [Comment : créer une bibliothèque de flux de travail de Machine état (héritée)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
- Un workflow d'ordinateur d'état se compose d'un ensemble d'états. Un état représente un état initial. Chaque état peut recevoir certains événements spécifiques. En fonction d'un événement, une transition peut s'effectuer vers un autre état. Le workflow d'ordinateur d'état peut porter un état final. Lorsqu'une transition est effectuée vers l'état final, l'exécution de workflow prend fin.
+Lorsque vous créez un nouveau projet de flux de travail de machine état dans Visual Studio 2010 qui cible le .NET Framework version 3.5 ou du WinFX, vous pouvez choisir d’utiliser soit le **Application Console de Workflow d’ordinateur état** ou le  **Bibliothèque de flux de travail de Machine d’état** modèle de projet hérité. Si vous choisissez l'un de ces modèles de projet d'ordinateur d'état, le concepteur d'ordinateurs d'état est présenté comme interface utilisateur de concepteur de workflow hérité. Pour plus d’informations sur les modèles de projet d’ordinateur état hérité, consultez [Comment : créer état Machine Applications Console de Workflow (héritée)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) et [Comment : créer une bibliothèque de flux de travail de Machine état (héritée)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+
+Un workflow d'ordinateur d'état se compose d'un ensemble d'états. Un état représente un état initial. Chaque état peut recevoir certains événements spécifiques. En fonction d'un événement, une transition peut s'effectuer vers un autre état. Le workflow d'ordinateur d'état peut porter un état final. Lorsqu'une transition est effectuée vers l'état final, l'exécution de workflow prend fin.
 
 ## <a name="state-machine-designer-views"></a>Vues du concepteur de workflow de l'ordinateur d'état
  Le concepteur de l'ordinateur d'état est un concepteur de formes libres, ce qui signifie que les activités peuvent être déplacées librement sur l'aire de conception. Le Concepteur de machine d’état dispose de deux vues : *état* vue et *pilotée par événements* vue.

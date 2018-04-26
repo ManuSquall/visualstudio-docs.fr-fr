@@ -1,7 +1,9 @@
 ---
-title: Concepteur d’activités Send | Documents Microsoft
+title: Concepteur de flux de travail - Concepteur d’activités Send
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
@@ -10,30 +12,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13cc79a498ca25e6aada15e4efd20c1928b4379a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 099a512bcbca7136541c9896e32f43b9e518ed8b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="send-activity-designer"></a>Concepteur d'activités Send
 
 Le **envoyer** ActivityDesigner est utilisé pour créer et configurer un <xref:System.ServiceModel.Activities.Send> activité.
 
 ## <a name="the-send-activity"></a>Activité Send
+
  Une activité <xref:System.ServiceModel.Activities.Send> permet d'envoyer un message à un service. Une activité <xref:System.ServiceModel.Activities.ReceiveReply> peut être liée à une activité <xref:System.ServiceModel.Activities.Send> qui reçoit un message dans le cadre d'un modèle d'échange de messages de demande/réponse sur le client.
 
 ### <a name="using-the-send-activity-designer"></a>Utilisation du concepteur d'activités Send
- Le **envoyer** Concepteur d’activités peut être trouvé dans le **messagerie** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **boîte à outils** onglet [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)
+ Le **envoyer** Concepteur d’activités peut être trouvé dans le **messagerie** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **boîte à outils** onglet dans le Concepteur de flux de travail (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)
 
- Le **envoyer** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposé dans le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] surface, là où les activités sont généralement placées. Cette opération crée une activité <xref:System.ServiceModel.Activities.Send> avec une propriété <xref:System.Activities.Activity.DisplayName%2A> affectée de la valeur par défaut Send. Le <xref:System.Activities.Activity.DisplayName%2A> peuvent être modifiées dans l’en-tête de la **envoyer** Concepteur d’activités ou dans le **DisplayName** zone de la grille des propriétés.
+ Le **envoyer** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail où les activités sont généralement placées. Cette opération crée une activité <xref:System.ServiceModel.Activities.Send> avec une propriété <xref:System.Activities.Activity.DisplayName%2A> affectée de la valeur par défaut Send. Le <xref:System.Activities.Activity.DisplayName%2A> peuvent être modifiées dans l’en-tête de la **envoyer** Concepteur d’activités ou dans le **DisplayName** zone de la grille des propriétés.
 
  Pour créer un <xref:System.ServiceModel.Activities.ReceiveReply> activité et le lier au <xref:System.ServiceModel.Activities.Send> activité, avec le bouton droit le **envoyer** cliquez sur Générateur d’activité le **Create ReceiveReply** élément dans le menu contextuel et le **ReceiveReplyForSend** concepteur apparaît sous le **envoyer** concepteur. L'activité <xref:System.ServiceModel.Activities.ReceiveReply> est une activité qui reçoit un message dans le cadre d'un modèle d'échange de messages de demande/réponse sur le client. Il peut être configuré avec le **ReceiveReplyForSend** concepteur.
 
  Vous pouvez également le **SendAndReceiveReply** Concepteur de modèles dans le **messagerie** catégorie de la **boîte à outils** peut être utilisé pour créer une paire de préconfiguré<xref:System.ServiceModel.Activities.Send>et <xref:System.ServiceModel.Activities.ReceiveReply> activités. Pour plus d’informations sur l’utilisation de la **SendAndReceiveReply** et **ReceiveReplyForSend** modèles, consultez la [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) rubrique.
 
 ### <a name="the-send-activity-properties"></a>Propriétés de l'activité Send
- Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.Send> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés ou dans l'aire de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+ Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.Send> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés ou sur l’aire du Concepteur de flux de travail.
 
 |Nom de la propriété|Obligatoire|Utilisation|
 |-------------------|--------------|-----------|

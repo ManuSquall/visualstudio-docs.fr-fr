@@ -1,7 +1,9 @@
 ---
-title: Concepteur d’activités TryCatch | Documents Microsoft
+title: Concepteur de flux de travail - Concepteur d’activités TryCatch
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.TryCatch.UI
 - System.Activities.Statements.Catch`1.UI
@@ -11,22 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae4cd4340bc30249ea649a2806afe3e027fc439
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2983dd9aa53443c616504672ef76f76ac9bd9add
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="trycatch-activity-designer"></a>Concepteur d'activités TryCatch
+
 Le **TryCatch** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.TryCatch> activité.
 
 ## <a name="the-trycatch-activity"></a>Activité TryCatch
  Le <xref:System.Activities.Statements.TryCatch> activité contient un <xref:System.Activities.Statements.TryCatch.Try%2A> activité, une collection de **Catch\<TException >** et un <xref:System.Activities.Statements.TryCatch.Finally%2A> activité. A <xref:System.Activities.Statements.Catch%601> de type **TException** contient un <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> et un <xref:System.Activities.Statements.Catch%601.Action%2A>. Ensemble, ils permettent d'implémenter un mécanisme classique de gestion des erreurs basé sur les exceptions. Une activité <xref:System.Activities.Statements.TryCatch> essaie d'exécuter son activité <xref:System.Activities.Statements.TryCatch.Try%2A>. Si le <xref:System.Activities.Statements.TryCatch.Try%2A> activité lève une exception, le <xref:System.Activities.Statements.TryCatch> activité utilise son **Catch < TException\>**  collection pour correspondre à l’exception. S’il existe une correspondance, le <xref:System.Activities.Statements.Catch%601.Action%2A> correspondantes **Catch\<TException >** est exécutée, servant à la gestion de la logique de l’exception d’erreur. Si les activités de la section <xref:System.Activities.Statements.TryCatch.Try%2A> s'achèvent correctement ou les activités de <xref:System.Activities.Statements.TryCatch.Catches%2A> s'achèvent correctement, l'activité <xref:System.Activities.Statements.TryCatch> exécute son activité <xref:System.Activities.Statements.TryCatch.Finally%2A>. Pour plus d’informations, consultez [exceptions du flux de travail Windows](/dotnet/framework/windows-workflow-foundation/exceptions).
 
 ### <a name="using-the-trycatch-activity-designer"></a>Utilisation du concepteur d'activités TryCatch
- Le **TryCatch** Concepteur d’activités peut être trouvé dans le **gestion des erreurs** catégorie de la **boîte à outils**, qui est accessible en cliquant sur les **boîte à outils** onglet sur le côté gauche de la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTLR + ALT + X.)
+ Le **TryCatch** Concepteur d’activités peut être trouvé dans le **gestion des erreurs** catégorie de la **boîte à outils**, qui est accessible en cliquant sur les **boîte à outils** onglet sur le côté gauche du Concepteur de flux de travail (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTLR + ALT + X.)
 
- Le **TryCatch** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposé dans le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] surface, là où les activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence>. Cette opération crée une activité <xref:System.Activities.Statements.TryCatch> avec une propriété <xref:System.Activities.Activity.DisplayName%2A> affectée de la valeur par défaut TryCatch. Le <xref:System.Activities.Activity.DisplayName%2A> valeur peut être modifiée dans l’en-tête de la **TryCatch** Concepteur d’activités ou dans le **DisplayName** zone de la grille des propriétés. Les autres propriétés doivent être modifiées sur la surface de la **TryCatch** Concepteur d’activités.
+ Le **TryCatch** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail où les activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence>. Cette opération crée une activité <xref:System.Activities.Statements.TryCatch> avec une propriété <xref:System.Activities.Activity.DisplayName%2A> affectée de la valeur par défaut TryCatch. Le <xref:System.Activities.Activity.DisplayName%2A> valeur peut être modifiée dans l’en-tête de la **TryCatch** Concepteur d’activités ou dans le **DisplayName** zone de la grille des propriétés. Les autres propriétés doivent être modifiées sur la surface de la **TryCatch** Concepteur d’activités.
 
  Cliquez sur le bouton développer dans le coin supérieur droit de **TryCatch** concepteur pour voir le **essayez**, **intercepte**, et **enfin** zones dans le vue développée. Pour ajouter un bloc catch, cliquez sur le **ajouter un nouveau catch** bouton **TryCatch** concepteur. Le bouton se transforme en zone de liste déroulante Type. Sélectionnez un type d'exception et appuyez sur ENTRÉE pour ajouter le catch. Après avoir ajouté un **Catch**, la zone de catch se développe et une activité peut être déposée dans le bloc catch pour définir la logique d’exécution pour la capture. Notez la présence d’une zone de texte à droite de la zone de catch développée. Vous pouvez nommer la variable d'exception à l'aide de cette zone de texte. La variable d’exception peut uniquement être utilisée pour les activités au sein du même **Catch**.
 

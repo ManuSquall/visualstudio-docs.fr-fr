@@ -1,27 +1,29 @@
 ---
-title: 'Comment : créer une bibliothèque d’activités | Documents Microsoft'
+title: 'Le Concepteur de flux de travail - Comment : créer une bibliothèque d’activités'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faa7c593d27474c0980e7c7df7bf932bd2d5431d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef62a5098581042a4995d6c522e0757c361e9d4f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-an-activity-library"></a>Procédure : créer une bibliothèque d'activités
-Les activités personnalisées permettent de modeler vos processus d'entreprise particuliers dans un workflow. Le modèle de bibliothèque d’activités dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] a été fourni pour vous permettre de créer visuellement à l’aide du Concepteur de flux de travail Windows de telles activités personnalisées.
+Les activités personnalisées permettent de modeler vos processus d'entreprise particuliers dans un workflow. Le modèle de bibliothèque d’activités dans Visual Studio 2010 a été fourni pour vous permettre de créer visuellement à l’aide du Concepteur de flux de travail Windows de telles activités personnalisées.
 
 ### <a name="to-create-a-workflow-activity-library"></a>Pour créer une bibliothèque d'activités de workflow
 
-1.  Démarrez [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+1.  Démarrez Visual Studio 2010.
 
-2.  Sur le **fichier** menu, pointez sur **nouveau**, puis sélectionnez **projet...** .
+2.  Dans le menu **Fichier**, pointez sur **Nouveau**, puis sélectionnez **Projet**.
 
      La boîte de dialogue **Nouveau projet** s'affiche.
 
@@ -36,7 +38,7 @@ Les activités personnalisées permettent de modeler vos processus d'entreprise 
 7.  Dans le **Solution** zone, tapez un nom descriptif pour votre solution, puis cliquez sur **OK**.
 
     > [!NOTE]
-    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter**, puis **Nouveau projet...** pour ouvrir le **nouveau projet** boîte de dialogue. Procédez comme décrit ci-dessus dans cette procédure.
+    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans Visual Studio 2010, cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter**, puis  **Nouveau projet** pour ouvrir le **nouveau projet** boîte de dialogue. Procédez comme décrit ci-dessus dans cette procédure.
 
 8.  Le modèle de projet crée une définition d'activité au format XAML. Concepteur de flux de travail Windows s’ouvre et affiche la zone de dessin pour votre activité personnalisée.
 

@@ -1,7 +1,9 @@
 ---
-title: Activités de Workflow hérité | Documents Microsoft
+title: Concepteur de flux de travail - activités de Workflow hérité
 ms.date: 01/18/2017
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, activities
 - activities
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ff7ac208d4b06ce454ef309d35400cb79f97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45c24c0be518e58ce87af11a38486818ca4a3ac7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="legacy-workflow-activities"></a>Activités de workflow héritées
 
-[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] inclut un ensemble d'activités par défaut qui fournit les fonctionnalités utilisées pour le flux de contrôle, les conditions, la gestion des événements, la gestion des états et pour communiquer avec les applications et les services. Lors de la conception de flux de travail, vous pouvez utiliser les activités fournies par le système qui sont fournies par le Concepteur de flux de travail Windows, ou vous pouvez créer vos propres activités personnalisées.
+Windows Workflow Foundation (WF) inclut un ensemble par défaut des activités qui fournissent des fonctionnalités de flux de contrôle, conditions, la gestion des événements, la gestion d’état et communiquer avec les applications et services. Lors de la conception de flux de travail, vous pouvez utiliser les activités fournies par le système qui sont fournies par le Concepteur de flux de travail Windows, ou vous pouvez créer vos propres activités personnalisées.
 
- Le tableau suivant répertorie les activités prédéfinies de l'infrastructure [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)]. Nombre, mais pas tous, de ces activités sont représentées par les concepteurs d’activités qui sont accessibles à partir de la **boîte à outils** de la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Pour créer une activité, faites glisser son concepteur à partir de la **boîte à outils** et déposez-la sur l’aire de conception.
+Le tableau suivant répertorie les activités prédéfinies de l'infrastructure Windows Workflow Foundation. Nombre, mais pas tous, de ces activités sont représentées par les concepteurs d’activités qui sont accessibles à partir de la **boîte à outils** du Concepteur de Workflow. Pour créer une activité, faites glisser son concepteur à partir de la **boîte à outils** et déposez-la sur l’aire de conception.
 
 |Activité|Description|
 |--------------|-----------------|
@@ -64,7 +66,7 @@ ms.lasthandoff: 04/16/2018
 |<xref:System.Workflow.Activities.WebServiceOutputActivity>|Répond à une demande de service Web faite à un workflow. Pour plus d’informations, consultez [à l’aide de l’activité WebServiceOutputActivity](http://go.microsoft.com/fwlink?LinkID=65092).|
 |<xref:System.Workflow.Activities.WhileActivity>|Permet à votre workflow d'exécuter une boucle jusqu'à ce qu'une condition donnée soit remplie. Pour plus d’informations, consultez [à l’aide de l’activité WhileActivity](http://go.microsoft.com/fwlink?LinkID=65091).|
 
- Pour plus d’informations sur la création d’activités personnalisées, consultez [développement d’activités personnalisées](http://go.microsoft.com/fwlink?LinkID=65023) et [à l’aide du Concepteur d’activités hérité](../workflow-designer/using-the-legacy-activity-designer.md).
+Pour plus d’informations sur la création d’activités personnalisées, consultez [développement d’activités personnalisées](http://go.microsoft.com/fwlink?LinkID=65023) et [à l’aide du Concepteur d’activités hérité](../workflow-designer/using-the-legacy-activity-designer.md).
 
 ## <a name="see-also"></a>Voir aussi
 

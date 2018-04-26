@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 50753da026f091d541bffd664f0aa964b4cba3f0
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7020d3f49d5a693d2b64891c089138be4c073115
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-the-properties-window"></a>Personnalisation de la fenêtre Propriétés
 Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propriétés dans votre langage spécifique à un domaine (DSL) dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dans votre définition DSL, vous définissez des propriétés de domaine sur chaque classe de domaine. Par défaut, lorsque vous sélectionnez une instance de la classe, sur un diagramme ou dans l’Explorateur de modèles, chaque propriété de domaine est répertoriée dans la fenêtre Propriétés. Cela vous permet afficher et modifier les valeurs des propriétés de domaine, même si vous n'avez pas mappé aux champs de forme sur le diagramme.

@@ -19,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dd9ae424ffbfab08ec7e8a405528188bb756f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e1a674e854aaf587aca28f096883839ebd82e1e8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo-variables dans le débogueur Visual Studio
 Les pseudo-variables sont des termes utilisés pour afficher certaines informations dans une fenêtre de variable ou la **Espion express** boîte de dialogue. Vous pouvez entrer une pseudo-variable de la même façon qu'une variable normale. Toutefois, les pseudo-variables ne sont pas des variables et ne correspondent pas à des noms de variable de votre programme.  
@@ -49,7 +49,7 @@ $handles
 |`$` *RegisterName*<br /><br /> ou<br /><br /> `@` *RegisterName*|Affiche le contenu du Registre *registername*.<br /><br /> En règle générale, vous pouvez afficher le contenu du registre en entrant simplement son nom. Vous n'avez besoin d'utiliser cette syntaxe que lorsque le nom de registre surcharge le nom d'une variable. Si le nom de registre est le même que celui d'une variable dans la portée actuelle, le débogueur interprète le nom comme étant celui de la variable. C'est-à-dire quand `$` *registername* ou `@` *registername* s’avère pratique.|  
 |`$clk`|Affiche le temps en cycles d'horloge.|  
 |`$user`|Affiche une structure avec les informations du compte qui exécute l'application. Pour des raisons de sécurité, les informations de mot de passe ne sont pas affichées.|  
-|`$exceptionstack`|Affiche l'arborescence des appels de procédure de l'exception Windows Runtime actuelle. `$ exceptionstack` fonctionne uniquement dans les applications UWP. `$ exceptionstack` n'est pas pris en charge pour les exceptions C++ et SHE|  
+|`$exceptionstack`|Affiche l'arborescence des appels de procédure de l'exception Windows Runtime actuelle. `$ exceptionstack` fonctionne uniquement dans les applications UWP. `$ exceptionstack` n’est pas prise en charge pour les exceptions C++ et SEH|  
 |`$ReturnValue`|Affiche la valeur de retour d'une méthode .NET Framework.|  
   
  En C# et Visual Basic, vous pouvez utiliser les pseudo-variables indiquées dans le tableau suivant :  

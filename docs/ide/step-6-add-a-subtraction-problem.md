@@ -1,9 +1,9 @@
 ---
-title: 'Étape 6 : ajouter un problème de soustraction | Microsoft Docs'
+title: 'Étape 6 : ajouter un problème de soustraction'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: TerryGLee
@@ -11,13 +11,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4660d4b1ad5f4aa5200fb8c64cfa24f6a02d49a2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e73d32a3917003fe4c425406faadbc6e303f1eac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="step-6-add-a-subtraction-problem"></a>Étape 6 : ajouter un problème de soustraction
+# <a name="step-6-add-a-subtraction-problem"></a>Étape 6 : ajouter un problème de soustraction
 Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de soustraction et apprendre à effectuer les tâches suivantes :
 
 -   Stocker les valeurs de soustraction.

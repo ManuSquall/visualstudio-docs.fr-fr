@@ -1,7 +1,9 @@
 ---
-title: 'Comment : définir des points d’arrêt dans les Workflows (héritée) | Documents Microsoft'
+title: 'Le Concepteur de flux de travail - Comment : définir des points d’arrêt dans les Workflows (héritée)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - breakpoints, setting in workflows
 - debugging, setting breakpoints in workflows
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d62395a4b719827cf33eacad46a650bd057c43
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c0c70b630404830fa8c733a7310e4700da8f08b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Procédure : définir des points d'arrêt dans les workflows (héritée)
-Cette rubrique décrit comment définir des points d’arrêt dans [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] applications générer à l’aide du Concepteur de flux de travail Windows hérité. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque votre application [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] doit cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Lorsque vous utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] pour générer une application [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)], vous pouvez définir des points d'arrêt en code C# et Visual Basic, tout comme vous le faites dans Visual Studio. Comme prévu, l'exécution de workflow s'arrête à chaque point d'arrêt que vous définissez.
+Cette rubrique décrit comment définir des points d’arrêt dans Windows Workflow Foundation (WF) applications générer à l’aide du Concepteur de flux de travail Windows hérité. Utilisez le Concepteur de flux de travail hérité lorsque votre application Windows Workflow Foundation doit cibler le .NET Framework version 3.5 ou du WinFX.
+
+ Lorsque vous utilisez le Concepteur de Workflow hérités dans Visual Studio 2010 pour créer une application Windows Workflow Foundation, vous pouvez définir des points d’arrêt dans le code c# et Visual Basic comme vous le feriez dans Visual Studio. Comme prévu, l'exécution de workflow s'arrête à chaque point d'arrêt que vous définissez.
 
  Un point d’arrêt a trois états : *en attente*, *liés*, et *erreur*. Lorsque vous définissez un point d'arrêt, il porte l'état En attente et il est représenté par une icône rouge creuse. Lorsque l'exécution a chargé le type de workflow, il adopte l'état Dépendant et est représenté par une icône rouge unie. Si vous spécifiez un format incorrect pour le point d'arrêt (en indiquant un nom d'activité incorrect, par exemple), un message d'erreur apparaît. Le point d'arrêt est ajouté à la fenêtre de points d'arrêt, mais il est marqué d'un petit « x ».
 

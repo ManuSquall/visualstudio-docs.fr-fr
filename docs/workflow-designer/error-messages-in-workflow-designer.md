@@ -1,7 +1,9 @@
 ---
-title: Messages d’erreur dans le Concepteur de flux de travail | Documents Microsoft
+title: Messages d'erreur dans Workflow Designer
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDErrorMessages.UI
 - System.Activities.Presentation.ErrorActivity.UI
@@ -12,17 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4deecb6617e85263abc5eaad11dd829abecb05d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c644922f240cd07c47e68e65432289c68bbe318
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="error-messages-in-workflow-designer"></a>Messages d'erreur dans Workflow Designer
+
 Cette rubrique décrit les types de messages d’erreur qui peuvent être rencontrés lorsque vous travaillez avec le Concepteur de flux de travail Windows.
 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Situations dans lesquelles des erreurs se produisent dans Workflow Designer
- Des erreurs se produisent dans [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] dans les cas suivants :
+
+Erreurs dans le Concepteur de flux de travail se produisent dans les situations suivantes :
 
 1.  Il existe une erreur dans une expression.
 
@@ -32,12 +36,12 @@ Cette rubrique décrit les types de messages d’erreur qui peuvent être rencon
 
 4.  Le fichier XAML contient des erreurs qui provoquent l'échec du chargement du workflow.
 
- Des expressions non valides et des contraintes de validation non satisfaites n'entraînent pas l'échec de la génération du workflow. La génération de votre workflow réussit, mais une exception <xref:System.Activities.InvalidWorkflowException> est levée pendant l'exécution. Si le fichier XAML contient des erreurs, la génération échoue.
+Des expressions non valides et des contraintes de validation non satisfaites n'entraînent pas l'échec de la génération du workflow. La génération de votre workflow réussit, mais une exception <xref:System.Activities.InvalidWorkflowException> est levée pendant l'exécution. Si le fichier XAML contient des erreurs, la génération échoue.
 
- À l’intérieur de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], lors du chargée d’un flux de travail, ses erreurs sont affichées dans le **liste d’erreurs**. Pour accéder à l’activité qui est la source de l’erreur, double-cliquez sur l’erreur dans le **liste d’erreurs**.
+À l’intérieur de Visual Studio, lors du chargée d’un flux de travail, ses erreurs sont affichées dans le **liste d’erreurs**. Pour accéder à l’activité qui est la source de l’erreur, double-cliquez sur l’erreur dans le **liste d’erreurs**.
 
 ### <a name="expression-errors"></a>Erreurs d'expression
- Une expression non valide est signalée par un point d'exclamation blanc dans un cercle rouge en regard de l'expression. Le déplacement de la souris au-dessus de cette icône affiche une info-bulle qui décrit la source de l'erreur. Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], cliquez sur l'expression pour afficher la ligne qui souligne la source de l'erreur. Le déplacement de la souris au-dessus du texte souligné affiche une info-bulle qui décrit la source de l'erreur.
+ Une expression non valide est signalée par un point d'exclamation blanc dans un cercle rouge en regard de l'expression. Le déplacement de la souris au-dessus de cette icône affiche une info-bulle qui décrit la source de l'erreur. À l’intérieur de Visual Studio, cliquez sur l’expression pour afficher la ligne qui souligne la source de l’erreur. Le déplacement de la souris au-dessus du texte souligné affiche une info-bulle qui décrit la source de l'erreur.
 
 ### <a name="activity-validation-errors"></a>Erreurs de validation d'activité
  Lorsque les contraintes de validation d'une activité n'ont pas été satisfaites, un point d'exclamation blanc dans un cercle rouge s'affiche dans l'angle supérieur droit de l'activité. Le déplacement de la souris au-dessus de cette icône affiche une info-bulle qui décrit la source de l'erreur.

@@ -1,7 +1,9 @@
 ---
-title: 'Comment : ajouter des commentaires à un flux de travail dans le Concepteur de flux de travail | Documents Microsoft'
+title: 'Le Concepteur de flux de travail - Comment : ajouter des commentaires à un flux de travail'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
@@ -11,15 +13,15 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fb7505d773f26a26df0b31477d99f7f5636d8c40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba21ba5b2ce6126d29d34f5df662e9e332359ed3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procédure : ajouter des commentaires à un workflow dans le Concepteur de flux de travail
 
-Pour faciliter la création de workflows de plus grande taille et plus complexes, [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] permet au développeur d'ajouter des annotations aux types suivants d'élément dans le concepteur :
+Pour faciliter la création de flux de travail plus volumineux et plus complexes, .NET Framework 4.5 permet au développeur d’ajouter des annotations aux types suivants de l’élément dans le concepteur :
 
 -   <xref:System.Activities.Activity>
 
@@ -36,7 +38,7 @@ Pour faciliter la création de workflows de plus grande taille et plus complexes
 > [!IMPORTANT]
 > Le contenu d'une annotation est stocké sous forme de texte brut dans le fichier XAML associé au workflow, et peut être par d'autres utilisateurs. Évitez d'entrer des informations sensibles dans une annotation.
 
-### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Ajout d'une annotation à une activité dans le concepteur
+## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Ajout d'une annotation à une activité dans le concepteur
 
 1. Dans le Concepteur de flux de travail, cliquez sur un élément dans le Concepteur de workflow et sélectionnez **Annotations**, **ajouter une Annotation**.
 
@@ -44,7 +46,7 @@ Pour faciliter la création de workflows de plus grande taille et plus complexes
 
    L’élément affiche une icône d’annotation. Vous pointez sur l’icône d’annotation affiche le texte de l’annotation.
 
-### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Afficher une annotation dans le concepteur d'une activité
+## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Afficher une annotation dans le concepteur d'une activité
 
 1.  Un concepteur d’activités qui a une annotation affichée en dehors de l’activité, puis cliquez sur le **code confidentiel** icône dans l’ornement d’annotation.
 
@@ -56,7 +58,7 @@ Pour faciliter la création de workflows de plus grande taille et plus complexes
 
    ![Annotation affichée en dehors d’un concepteur d’activités](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
 
-### <a name="showing-or-hiding-all-annotations"></a>Affichage ou masquage de toutes les annotations
+## <a name="showing-or-hiding-all-annotations"></a>Affichage ou masquage de toutes les annotations
 
 1. Cliquez avec le bouton droit sur une activité qui a une annotation. Sélectionnez **Annotations**, **afficher toutes les Annotations**.
 
@@ -64,7 +66,7 @@ Pour faciliter la création de workflows de plus grande taille et plus complexes
 
 1. Pour afficher toutes les annotations en dehors des concepteurs de l’activité, cliquez sur l’activité et sélectionnez **Annotations**, **masquer toutes les Annotations**.
 
-### <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Modification ou suppression d'une annotation pour une activité
+## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Modification ou suppression d'une annotation pour une activité
 
 1. Cliquez avec le bouton droit sur une activité qui a une annotation.
 
@@ -74,7 +76,7 @@ Pour faciliter la création de workflows de plus grande taille et plus complexes
 
 1. Pour supprimer toutes les annotations à la fois, cliquez sur le Concepteur de workflow et sélectionnez **Annotation**, **supprimer toutes les Annotations**.
 
-### <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Ajout, modification et suppression d’une annotation pour une variable ou un argument
+## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Ajout, modification et suppression d’une annotation pour une variable ou un argument
 
 1. Cliquez avec le bouton droit sur une variable ou un argument et sélectionnez Ajouter une annotation.
 

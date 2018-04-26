@@ -1,6 +1,7 @@
 ---
 title: Ensemble de règles de règles de vérification étendue pour le code managé
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccee4f6e139ef502a90a13a231c65f7e87141c78
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5bb373879bf4dd9c31ed7d8a7d832a270a158279
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de vérification étendue pour le code managé
 L’ensemble de règles de règles de vérification étendue Microsoft optimise les erreurs d’utilisation logique et de l’infrastructure qui sont signalés par l’analyse du code. L’accent sur les scénarios spécifiques tels que l’interopérabilité COM et des applications mobiles. Pensez à inclure cet ensemble de règles si un de ces scénarios s’applique à votre projet ou pour trouver d’autres problèmes dans votre projet.

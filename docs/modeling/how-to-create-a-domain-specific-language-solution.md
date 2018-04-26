@@ -13,12 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 955c8f7a6dbc55d61b1cba77f38b2d394742e49c
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: c4851577a62db08e2c759f7140895e15b230ec60
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Comment : créer une solution de langage spécifique à un domaine
 Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialisé [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution.

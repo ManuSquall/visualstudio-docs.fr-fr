@@ -18,14 +18,15 @@ ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c6c2ea2b46fcd05360e079dc84da9bfe807ff489
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d54811f2fe46733d256a473c5fcb1c523a15a71e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Lire des données XML dans un dataset
 ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dans cette procédure pas à pas, vous créez une application Windows qui charge des données XML dans un jeu de données. Le jeu de données est ensuite affichée dans un <xref:System.Windows.Forms.DataGridView> contrôle. Enfin, un schéma XML basé sur le contenu du fichier XML s’affiche dans une zone de texte.

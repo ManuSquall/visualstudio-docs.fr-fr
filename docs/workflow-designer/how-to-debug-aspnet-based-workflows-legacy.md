@@ -1,7 +1,9 @@
 ---
-title: 'Comment : déboguer des Workflows basés sur ASP.NET (héritée) | Documents Microsoft'
+title: 'Le Concepteur de flux de travail - Comment : déboguer des Workflows basés sur ASP.NET (héritée)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - ASP.NET, debugging workflows
 - debugging workflows, ASP.NET workflows
@@ -13,18 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ed3f4f23ff02291df33b2676bdb980de191b281b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bf16a6a88c5d4cd063f1c32ca846031d8b2588d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Procédure : déboguer des workflows basés sur ASP.NET (héritée)
-Cette rubrique décrit comment déboguer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-basé [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] les applications qui ciblent le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] dans le Concepteur de flux de travail Windows hérité.
 
- Vous pouvez déboguer des workflows hérités démarrés dans les ASP.NET ou des workflows hérités publiés en tant que services Web en les attachant au processus dans lequel le workflow est hébergé.
+Cette rubrique décrit comment déboguer les applications basés sur ASP.NET Windows Workflow Foundation (WF) qui ciblent soit la version .NET Framework 3.5 ou le WinFX dans le Concepteur de flux de travail Windows hérité.
 
-### <a name="to-debug-an-aspnet-based-workflow"></a>Pour déboguer des workflows basés sur ASP.NET
+Vous pouvez déboguer des workflows hérités démarrés dans les ASP.NET ou des workflows hérités publiés en tant que services Web en les attachant au processus dans lequel le workflow est hébergé.
+
+## <a name="to-debug-an-aspnet-based-workflow"></a>Pour déboguer des workflows basés sur ASP.NET
 
 1.  Activer le débogage de l’application ASP.NET en affectant **debug = true** dans le fichier web.config.
 

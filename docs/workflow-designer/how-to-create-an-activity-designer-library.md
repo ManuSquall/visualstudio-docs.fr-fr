@@ -1,27 +1,29 @@
 ---
-title: 'Comment : créer une bibliothèque ActivityDesigner | Documents Microsoft'
+title: 'Le Concepteur de flux de travail - Comment : créer une bibliothèque ActivityDesigner'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 5b62e092-63b3-462d-9d77-fb112482f45d
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0dc336db00f8a638cf20e6af79f2cf7ec030a5f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d05ddb48e88627f4b7ab4112c164b5129ddba910
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Procédure : créer une bibliothèque ActivityDesigner
 Les concepteurs d'activités personnalisées vous permettent de créer une interface utilisateur pour une activité standard ou personnalisée. Vous contrôlez la complexité de l'interface utilisateur et avez la possibilité de créer plusieurs concepteurs d'activités pour une activité. Ce scénario vous permet de créer des concepteurs adaptés pour plusieurs audiences.
 
-### <a name="to-create-an-activity-designer-library"></a>Pour créer une bibliothèque ActivityDesigner
+## <a name="to-create-an-activity-designer-library"></a>Pour créer une bibliothèque ActivityDesigner
 
-1.  Démarrez [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+1.  Démarrez Visual Studio 2010.
 
-2.  Sur le **fichier** menu, pointez sur **nouveau**, puis sélectionnez **projet...**  pour ouvrir le **nouveau projet** boîte de dialogue.
+2.  Sur le **fichier** menu, pointez sur **nouveau**, puis sélectionnez **projet** pour ouvrir le **nouveau projet** boîte de dialogue.
 
 3.  Dans le **Types de projets** volet, sélectionnez **Workflow** à partir de le le **Visual C#** ou **Visual Basic** regroupements en fonction de votre choix langage.
 
@@ -34,14 +36,14 @@ Les concepteurs d'activités personnalisées vous permettent de créer une inter
 7.  Dans le **Solution** zone, tapez un nom descriptif pour votre solution, puis cliquez sur **OK**.
 
     > [!NOTE]
-    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter**, puis **Nouveau projet...**  pour ouvrir le **nouveau projet** boîte de dialogue. Procédez comme décrit ci-dessus dans cette procédure.
+    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans Visual Studio 2010, cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter**, puis **Nouveau projet** pour ouvrir le **nouveau projet** boîte de dialogue. Procédez comme décrit ci-dessus dans cette procédure.
 
 8.  Le modèle de projet crée une définition de concepteur d'activités en XAML et le fichier d'implémentation code-behind dans le code source. Le Concepteur de flux de travail Windows s’ouvre et affiche la zone de dessin pour votre concepteur d’activités.
 
-9. Faites glisser [!INCLUDE[avalon1](../workflow-designer/includes/avalon1_md.md)] des contrôles de la **boîte à outils** vers l’aire de conception pour les utiliser dans votre concepteur d’activités personnalisées.  Pour obtenir un exemple montrant comment implémenter un concepteur d’activités personnalisées, consultez [Comment : créer un concepteur d’activités personnalisé](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
+9. Windows Presentation Foundation (WPF) de faire glisser des contrôles de la **boîte à outils** vers l’aire de conception pour les utiliser dans votre concepteur d’activités personnalisées.  Pour obtenir un exemple montrant comment implémenter un concepteur d’activités personnalisées, consultez [Comment : créer un concepteur d’activités personnalisé](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
 
     > [!WARNING]
-    > Concepteurs d’activités personnalisées peuvent être utilisés pour les activités personnalisées ainsi par défaut [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)]activités.
+    > Concepteurs d’activités personnalisées peuvent être utilisés pour les activités personnalisées ainsi 4activities de .NET Framework par défaut.
 
 ## <a name="see-also"></a>Voir aussi
 

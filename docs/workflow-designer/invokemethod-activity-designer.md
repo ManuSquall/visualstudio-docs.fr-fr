@@ -1,7 +1,9 @@
 ---
-title: Concepteur d’activités InvokeMethod | Documents Microsoft
+title: Concepteur de flux de travail - Concepteur d’activités InvokeMethod
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
@@ -10,25 +12,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2e1cbb097d86d0e13ba8581389d7356001ff92
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b612966da1244c745edbe8a5c92b1b300554a388
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invokemethod-activity-designer"></a>Concepteur d'activités InvokeMethod
+
 **InvokeMethod** concepteur est utilisé pour créer et configurer un <xref:System.Activities.Statements.InvokeMethod> activité.
 
 ## <a name="the-invokemethod-activity"></a>Activité InvokeMethod
- <xref:System.Activities.Statements.InvokeMethod> appelle une méthode publique d'un objet ou d'un type spécifié.
+
+<xref:System.Activities.Statements.InvokeMethod> appelle une méthode publique d'un objet ou d'un type spécifié.
 
 ### <a name="using-the-invokemethod-activity-designer"></a>Utilisation du concepteur d'activités InvokeMethod
- Le **InvokeMethod** Concepteur d’activités peut être trouvé dans le **Primitives** catégorie de la **boîte à outils**, qui est accessible en cliquant sur les **boîte à outils** onglet [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)
+ Le **InvokeMethod** Concepteur d’activités peut être trouvé dans le **Primitives** catégorie de la **boîte à outils**, qui est accessible en cliquant sur les **boîte à outils** onglet Concepteur de flux de travail (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)
 
- Le **InvokeMethod** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposé dans le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] surface là activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence>. Cette opération crée une activité <xref:System.Activities.Statements.InvokeMethod> avec une propriété <xref:System.Activities.Activity.DisplayName%2A> affectée de la valeur par défaut InvokeMethod. Le <xref:System.Activities.Activity.DisplayName%2A> peuvent être modifiées dans l’en-tête de la **InvokeMethod** Concepteur d’activités ou dans le **DisplayName** zone de la grille des propriétés.
+ Le **InvokeMethod** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail, quel que soit les activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence>. Cette opération crée une activité <xref:System.Activities.Statements.InvokeMethod> avec une propriété <xref:System.Activities.Activity.DisplayName%2A> affectée de la valeur par défaut InvokeMethod. Le <xref:System.Activities.Activity.DisplayName%2A> peuvent être modifiées dans l’en-tête de la **InvokeMethod** Concepteur d’activités ou dans le **DisplayName** zone de la grille des propriétés.
 
 ### <a name="the-invokemethod-properties"></a>Propriétés d'InvokeMethod
- Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.InvokeMethod> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines peuvent être modifiés dans l'aire de conception [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+ Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.InvokeMethod> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines peuvent être modifiées sur l’aire de flux de travail Designerdesigner.
 
 |Nom de la propriété|Obligatoire|Utilisation|
 |-------------------|--------------|-----------|

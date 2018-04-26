@@ -1,9 +1,8 @@
 ---
-title: Débogage XSLT | Documents Microsoft
-ms.custom: ''
+title: Débogage XSLT
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 344940bd-c41e-4ed9-8458-3e3aa8e6bb37
 author: gewarren
@@ -11,49 +10,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab34eead94f6d70fb18a8c6a6a2194abba460c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b2ff66c51e749dedb7887388feeed12ef7c7223
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-xslt"></a>Débogage XSLT
-Vous pouvez utiliser le débogueur Visual Studio pour déboguer XSLT. Le débogueur prend en charge la définition de points d'arrêt, l'affichage des états d'exécution de XSLT, etc. Le débogage XSLT est disponible dans Visual Studio Team System et Visual Studio Professional Edition.  
-  
-## <a name="in-this-section"></a>Dans cette section  
- [Nouveautés du débogueur XSLT](../xml-tools/what-s-new-in-the-xslt-debugger.md)  
- Décrit les nouvelles fonctionnalités de cette mise en production du débogueur XSLT.  
-  
- [Guide pratique pour démarrer le débogage XSLT](../xml-tools/how-to-start-debugging-xslt.md)  
- Explique comment démarrer le débogueur XSLT.  
-  
- [Guide pratique pour utiliser des points d’arrêt avec XSLT](../xml-tools/how-to-use-breakpoints-with-xslt.md)  
- Explique comment utiliser les points d'arrêt dans une feuille de style.  
-  
- [Guide pratique pour évaluer une expression XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md)  
- Explique comment évaluer une expression XPath en utilisant la **Espion express** boîte de dialogue.  
-  
- [Procédure pas à pas : déboguer une feuille de style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
- Montre comment déboguer une feuille de style XSLT.  
-  
- [Modèles par défaut XSLT](../xml-tools/xslt-default-templates.md)  
- Décrit comment le débogueur XSLT gère les modèles par défaut.  
-  
- [Interface utilisateur du débogueur (XSLT)](../xml-tools/debugger-user-interface-xslt.md)  
- Décrit les fenêtres et boîtes de dialogue du débogueur XSLT.  
-  
- [Profileur XSLT](../xml-tools/xslt-profiler.md)  
- Décrit comment accéder au Générateur de profils XSLT.  
-  
-## <a name="related-sections"></a>Rubriques connexes  
- [Modification de feuilles de style XSLT](../xml-tools/editing-xslt-style-sheets.md)  
- Explique comment utiliser l'éditeur XML pour modifier des feuilles de style.  
-  
- [Considérations de sécurité lors de l’utilisation de données XML](../xml-tools/security-considerations-when-working-with-xml-data.md)  
- Présente les problèmes de sécurité à prendre en compte lors de l'utilisation de l'éditeur XML ou du débogueur XSLT.  
-  
- [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)  
- Présente le débogueur Visual Studio.  
-  
- [Référence XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
- Fournit du matériel de référence pour les fonctions et les éléments XSLT.
+
+Vous pouvez utiliser le débogueur Visual Studio pour déboguer XSLT. Le débogueur prend en charge la définition de points d'arrêt, l'affichage des états d'exécution de XSLT, etc.
+
+> [!NOTE]
+> Le débogueur XSLT est uniquement disponible dans l’édition Enterprise de Visual Studio 2017.
+
+## <a name="xslt-profiler"></a>Générateur de profils XSLT
+
+Le [Générateur de profils XSLT](../xml-tools/xslt-profiler.md) est un outil qui permet aux développeurs de mesurer, évaluer et cibler les problèmes de performances dans le code XSLT en créant des rapports de performances XSLT détaillés.
+
+## <a name="related-sections"></a>Rubriques connexes
+
+- [Modification des feuilles de Style XSLT](../xml-tools/editing-xslt-style-sheets.md) décrit l’utilisation de l’éditeur XML pour modifier les feuilles de style.
+- [Considérations sur la sécurité lorsque vous travaillez avec des données XML](../xml-tools/security-considerations-when-working-with-xml-data.md) traite des problèmes de sécurité que vous devez savoir sur lors de l’utilisation de l’éditeur XML ou du débogueur XSLT.
+- [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md) présente le débogueur Visual Studio.
+- [Référence XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) fournit une documentation de référence pour les fonctions et les éléments XSLT.

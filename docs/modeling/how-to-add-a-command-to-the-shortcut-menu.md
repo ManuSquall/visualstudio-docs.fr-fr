@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2412e50279c646190d1112a42c00da06c75bf794
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 6f3c17a388aa974b78fdecc108891cf3be17c0da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Comment : ajouter une commande au menu contextuel
 Vous pouvez ajouter des commandes de menu à votre langage spécifique à un domaine (DSL, Domain-Specific Language) pour que vos utilisateurs puissent effectuer des tâches spécifiques à votre solution DSL. Les commandes apparaissent dans le menu contextuel quand les utilisateurs cliquent avec le bouton droit sur le diagramme. Vous pouvez définir une commande pour qu'elle apparaisse dans le menu uniquement dans des circonstances spécifiques. Par exemple, vous pouvez rendre la commande visible uniquement quand l'utilisateur clique sur des types d'éléments spécifiques ou sur des éléments qui sont dans des états spécifiques.

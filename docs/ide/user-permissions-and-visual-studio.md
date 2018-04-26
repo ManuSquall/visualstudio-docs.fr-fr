@@ -1,7 +1,7 @@
 ---
-title: Autorisations utilisateur et Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Autorisations utilisateur et Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ba45cd360059d0ac6efbcdddbe3f1e550f3b3d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 96835e0f884494f4a6b94aa1a311b40e8a9d8ad9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorisations utilisateur et Visual Studio
 
@@ -29,22 +29,22 @@ Pour des raisons de sécurité, vous devez exécuter Visual Studio en tant qu'ut
 
 Vous pouvez faire quasiment tout dans l'IDE de Visual Studio comme un utilisateur normal, mais, vous devez avoir des autorisations d'administrateur pour effectuer les tâches suivantes :
 
-|Domaine|Tâche|Pour plus d'informations|  
-|----------|----------|--------------------------|  
-|Installation|Installez Visual Studio.|[Installer Visual Studio](../install/install-visual-studio.md)|  
-||Installation, mise à jour ou suppression du contenu d'Aide locale.|[Installer et gérer un contenu local](../ide/install-and-manage-local-content.md)|  
-|Types d'applications|Développement de solutions pour SharePoint.|[Configuration requise pour développer des solutions SharePoint](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
-||Acquisition d'une licence de développeur pour [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Obtenir une licence de développeur](http://go.microsoft.com/fwlink/?LinkID=241313)|  
-|Boîte à outils|Ajout de contrôles COM classiques à la **Boîte à outils**.|[Boîte à outils](../ide/reference/toolbox.md)|  
-|Compléments|Installation et utilisation des compléments qui ont été écrits à l'aide de COM classique dans l'IDE.|[Création de compléments et d’Assistants](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|  
-|Génération en cours|Utilisation des événements post-build qui inscrivent un composant.|[Présentation des étapes de génération personnalisée et des événements de build](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
-||Inclusion d'une étape d'inscription lors de la gestion de projets C++.|[Présentation des étapes de génération personnalisée et des événements de build](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
-|Débogage|Débogage d'applications exécutées avec des autorisations élevées.|[Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)|  
-||Débogage d’applications exécutées sous un compte utilisateur différent, comme les sites web ASP.NET.|[Débogage d’applications ASP.NET et AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|  
-||Débogage dans la zone pour les applications du navigateur XAML (XBAP).|[Hôte WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|  
-||Utilisation de l'émulateur pour déboguer des projets de service cloud pour Microsoft Azure.|[Débogage d’un service cloud dans Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|  
-||Configuration d'un pare-feu pour un débogage distant.|[Débogage à distance](../debugger/remote-debugging.md)|  
-|Outils d'analyse des performances|Profilage d'une application.|[Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)|  
+|Domaine|Tâche|Pour plus d'informations|
+|----------|----------|--------------------------|
+|Installation|Installez Visual Studio.|[Installer Visual Studio](../install/install-visual-studio.md)|
+||Installation, mise à jour ou suppression du contenu d'Aide locale.|[Installer et gérer un contenu local](../ide/install-and-manage-local-content.md)|
+|Types d'applications|Développement de solutions pour SharePoint.|[Configuration requise pour développer des solutions SharePoint](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|
+||Acquisition d'une licence de développeur pour [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Obtenir une licence de développeur](http://go.microsoft.com/fwlink/?LinkID=241313)|
+|Boîte à outils|Ajout de contrôles COM classiques à la **Boîte à outils**.|[Boîte à outils](../ide/reference/toolbox.md)|
+|Compléments|Installation et utilisation des compléments qui ont été écrits à l'aide de COM classique dans l'IDE.|[Création de compléments et d’Assistants](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|
+|Génération en cours|Utilisation des événements post-build qui inscrivent un composant.|[Présentation des étapes de génération personnalisée et des événements de build](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+||Inclusion d'une étape d'inscription lors de la gestion de projets C++.|[Présentation des étapes de génération personnalisée et des événements de build](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+|Débogage|Débogage d'applications exécutées avec des autorisations élevées.|[Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)|
+||Débogage d’applications exécutées sous un compte utilisateur différent, comme les sites web ASP.NET.|[Débogage d’applications ASP.NET et AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
+||Débogage dans la zone pour les applications du navigateur XAML (XBAP).|[Hôte WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
+||Utilisation de l'émulateur pour déboguer des projets de service cloud pour Microsoft Azure.|[Débogage d’un service cloud dans Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
+||Configuration d'un pare-feu pour un débogage distant.|[Débogage à distance](../debugger/remote-debugging.md)|
+|Outils d'analyse des performances|Profilage d'une application.|[Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)|
 |Déploiement|Déploiement d'une application web vers les Services IIS (Internet Information Services) sur un ordinateur local.|[Déploiement d’une application Web ASP.NET vers un fournisseur d’hébergement à l’aide de Visual Studio ou Visual Web Developer : déploiement vers IIS comme environnement de test](http://go.microsoft.com/fwlink/?LinkId=266478)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Exécution de Visual Studio comme administrateur
@@ -63,5 +63,5 @@ Ces instructions concernent Windows 10. Elles sont similaires pour les autres ve
 
 ## <a name="see-also"></a>Voir aussi
 
-[Portage, migration et mise à niveau des projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
-[Installer Visual Studio](../install/install-visual-studio.md)
+- [Portage, migration et mise à niveau des projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+- [Installer Visual Studio](../install/install-visual-studio.md)

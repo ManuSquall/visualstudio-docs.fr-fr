@@ -1,7 +1,9 @@
 ---
-title: Concepteur de modèles ReceiveAndSendReply | Documents Microsoft
+title: Concepteur de flux de travail - Concepteur de modèles ReceiveAndSendReply
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.ReceiveAndSendReply.UI
 - System.ServiceModel.Activities.SendReply.UI
@@ -11,18 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81edeb04abacedb81ad52da17369759ba9f1f222
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 525b7deb0b40ee6952c803c9c98b212c6ed0d224
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="receiveandsendreply-template-designer"></a>Concepteur de modèles ReceiveAndSendReply
 
 Le **ReceiveAndSendReply** modèle est utilisé pour créer une paire de préconfiguré <xref:System.ServiceModel.Activities.Receive> et <xref:System.ServiceModel.Activities.SendReply> activités au sein d’un <xref:System.Activities.Statements.Sequence> activité qui sont corrélées dans le cadre d’un échange de messages de demande/réponse modèle sur le serveur.
 
 ## <a name="the-receiveandsendreply-template"></a>Modèle ReceiveAndSendReply
- Ajout de **ReceiveAndSendReply** modèle effectue trois opérations en plus de créer la <xref:System.ServiceModel.Activities.Receive> et <xref:System.ServiceModel.Activities.SendReply> activités avec un <xref:System.Activities.Statements.Sequence> activité :
+
+Ajout de **ReceiveAndSendReply** modèle effectue trois opérations en plus de créer la <xref:System.ServiceModel.Activities.Receive> et <xref:System.ServiceModel.Activities.SendReply> activités avec un <xref:System.Activities.Statements.Sequence> activité :
 
 1.  Il configure les propriétés <xref:System.ServiceModel.Activities.Receive.OperationName%2A> et <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> de l'activité <xref:System.ServiceModel.Activities.Receive>.
 
@@ -31,16 +34,16 @@ Le **ReceiveAndSendReply** modèle est utilisé pour créer une paire de précon
 3.  Il crée un objet <xref:System.ServiceModel.Activities.CorrelationHandle> comme variable dans l'activité parente.
 
 ### <a name="using-the-receiveandsendreply-template-designer"></a>Utilisation du concepteur de modèles ReceiveAndSendReply
- Le **ReceiveAndSendReply** Concepteur d’activités peut être trouvé dans le **messagerie** catégorie de la **boîte à outils**, qui est accessible en cliquant sur les **boîte à outils**  onglet [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)
+ Le **ReceiveAndSendReply** Concepteur d’activités peut être trouvé dans le **messagerie** catégorie de la **boîte à outils**, qui est accessible en cliquant sur les **boîte à outils**  onglet dans le Concepteur de flux de travail (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)
 
- Le **ReceiveAndSendReply** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposé dans le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] surface, là où les activités sont généralement placées. Cette opération crée un <xref:System.ServiceModel.Activities.Receive> activité qui peut être configurée avec le **envoyer** Concepteur d’activités et une corrélation <xref:System.ServiceModel.Activities.SendReply> qui peut être configuré avec le concepteur SendReplyToReceive.
+ Le **ReceiveAndSendReply** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail où les activités sont généralement placées. Cette opération crée un <xref:System.ServiceModel.Activities.Receive> activité qui peut être configurée avec le **envoyer** Concepteur d’activités et une corrélation <xref:System.ServiceModel.Activities.SendReply> qui peut être configuré avec le concepteur SendReplyToReceive.
 
  Pour plus d’informations sur l’utilisation de la **réception** designer pour configurer le <xref:System.ServiceModel.Activities.Receive> activité, consultez le [réception](../workflow-designer/receive-activity-designer.md) rubrique.
 
  Pour plus d’informations sur l’utilisation de la **SendReplyToReceive** designer pour configurer le <xref:System.ServiceModel.Activities.SendReply> activité, consultez la section suivante.
 
 ### <a name="properties-of-sendreply"></a>Propriétés de SendReply
- Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.SendReply> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines peuvent être modifiés dans l'aire de conception [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+ Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.SendReply> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines peuvent être modifiées sur l’aire de conception de Workflow Designer.
 
 |Nom de la propriété|Obligatoire|Utilisation|
 |-------------------|--------------|-----------|

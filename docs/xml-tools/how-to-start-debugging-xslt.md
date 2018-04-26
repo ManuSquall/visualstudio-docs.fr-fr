@@ -1,8 +1,8 @@
 ---
-title: 'Comment : démarrer le débogage XSLT | Documents Microsoft'
-ms.custom: ''
+title: 'Procédure : démarrer le débogage XSLT'
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -11,11 +11,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f76412ce4dd0f5d443564755c460dfb82c186847
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b348cd1dc4327954d67c3a3f77a88da3c43c7935
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-start-debugging-xslt"></a>Procédure : démarrer le débogage XSLT
 
@@ -61,36 +61,36 @@ Vous pouvez également exécuter un pas à pas détaillé de XSLT pendant le dé
 Voici un exemple de programme XSLT C#. Il indique comment activer le débogage XSLT.
 
 ```csharp
-using System;  
-using System.IO;  
-using System.Xml;  
-using System.Xml.Xsl;  
-  
-namespace ConsoleApplication   
-{  
-  class Program   
-  {  
-    private const string sourceFile = @"c:\data\xsl_files\books.xml";  
-    private const string stylesheet = @"c:\data\xsl_files\belowAvg.xsl";  
-    private const string outputFile = @"c:\data\xsl_files\output.xml";  
-  
-    static void Main(string[] args)  
-    {  
+using System;
+using System.IO;
+using System.Xml;
+using System.Xml.Xsl;
+
+namespace ConsoleApplication
+{
+  class Program
+  {
+    private const string sourceFile = @"c:\data\xsl_files\books.xml";
+    private const string stylesheet = @"c:\data\xsl_files\belowAvg.xsl";
+    private const string outputFile = @"c:\data\xsl_files\output.xml";
+
+    static void Main(string[] args)
+    {
       // Enable XSLT debugging.
-      XslCompiledTransform xslt = new XslCompiledTransform(true);  
-  
+      XslCompiledTransform xslt = new XslCompiledTransform(true);
+
       // Compile the style sheet.
-      xslt.Load(stylesheet)  
-  
+      xslt.Load(stylesheet)
+
       // Execute the XSLT transform.
-      FileStream outputStream = new FileStream(outputFile, FileMode.Append);  
-      xslt.Transform(sourceFile, null, outputStream);  
-    }  
-  }  
-}  
+      FileStream outputStream = new FileStream(outputFile, FileMode.Append);
+      xslt.Transform(sourceFile, null, outputStream);
+    }
+  }
+}
 ```
 
 ## <a name="see-also"></a>Voir aussi
 
-[Procédure pas à pas : déboguer une feuille de style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
-[Principes de base du débogueur](../debugger/debugger-basics.md)
+- [Procédure pas à pas : déboguer une feuille de style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Principes de base du débogueur](../debugger/debugger-basics.md)

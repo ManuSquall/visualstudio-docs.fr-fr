@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b68345961e2209506b0c759d7197c1115083446
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: fc41a768b54ba3253b7dad6648b77aa8c03b0f49
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Comment : étendre le concepteur de langage spécifique à un domaine
 Vous pouvez apporter des extensions vers le concepteur qui vous permet de modifier des définitions DSL. Types d’extensions que vous pouvez apporter comprennent l’ajout de commandes de menu, ajout de gestionnaires pour faire glisser et double-cliquez sur les mouvements et les règles qui sont déclenchés lorsque des types particuliers de relations ou des valeurs changent. Les extensions peuvent empaquetées en tant qu’une Extension d’intégration Visual Studio (VSIX) et distribuées à d’autres utilisateurs.

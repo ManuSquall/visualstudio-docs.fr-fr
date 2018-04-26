@@ -1,7 +1,9 @@
 ---
-title: Fonctionnalités de Shell du Concepteur de flux de travail | Documents Microsoft
+title: Fonctionnalités du shell Workflow Designer
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf7d88b6436ba117b85c2ea6cc423520f9fd873
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4644d9bfa336b85b9ad124751db4f3fb0417475c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="workflow-designer-shell-features"></a>Fonctionnalités du shell Workflow Designer
 
@@ -27,7 +29,7 @@ Concepteur de flux de travail Windows se compose de trois principales zones de l
  La vue d'ensemble affiche une version réduite de l'activité entière à la racine de la barre de navigation actuelle, notamment tous ses enfants et tous leurs enfants développés. Une fenêtre d'affichage, un rectangle avec une bordure orange, met en surbrillance la partie de l'activité actuellement affichée dans l'éditeur. Faire glisser le rectangle dans la vue d'ensemble fait défiler Workflow Designer et modifie l'affichage de l'éditeur.
 
 > [!NOTE]
-> L'interface utilisateur de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] est virtualisée. Les concepteurs d'activités ne sont affichés que s'ils sont nécessaires. Si une partie du flux de travail n'a jamais été dessinée dans l'aire du concepteur, elle apparaît en blanc dans la vue d'ensemble. Le défilement de la vue d'ensemble permet de dessiner l'intégralité du flux de travail.
+> L’interface utilisateur de Concepteur de flux de travail est virtualisé. Les concepteurs d'activités ne sont affichés que s'ils sont nécessaires. Si une partie du flux de travail n'a jamais été dessinée dans l'aire du concepteur, elle apparaît en blanc dans la vue d'ensemble. Le défilement de la vue d'ensemble permet de dessiner l'intégralité du flux de travail.
 
 ## <a name="copying-or-saving-workflows-as-images"></a>Copie ou enregistrement de flux de travail en tant qu'images
  Les flux de travail peuvent être copiés au format bitmap ou enregistrés aux formats bitmap ou vectoriel. La copie ou l’enregistrement d’une image permettent d’exporter vers un autre programme une vue d’activité entière à la racine de la barre de navigation actuelle, notamment tous ses enfants et tous leurs enfants développés.
@@ -36,4 +38,4 @@ Concepteur de flux de travail Windows se compose de trois principales zones de l
 
 ## <a name="fonts-and-colors"></a>Polices et couleurs
 
-Les polices utilisées dans [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] sous [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] sont contrôlées par la police d'environnement. Les couleurs affichées dans [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] changent si vous utilisez un modèle de couleurs à contraste élevé pour le thème de votre système d'exploitation. Vous devez redémarrer [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] après avoir modifié les paramètres de police ou de couleur pour que vos modifications prennent effet dans [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+Les polices utilisées dans le Concepteur de flux de travail à l’intérieur de Visual Studio 2010 sont contrôlées par la police d’environnement. Les couleurs affichées dans le Concepteur de flux de travail modifier si vous utilisez un modèle de couleurs de contraste élevé pour le thème du système d’exploitation. Vous devez redémarrer Visual Studio 2010 après avoir modifié les paramètres de police ou couleur avant que les modifications prennent effet dans le Concepteur de flux de travail.
