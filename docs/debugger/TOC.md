@@ -295,6 +295,7 @@
 #### [Impossible de s’attacher au processus](unable-to-attach-to-the-process.md)
 #### [Message d’erreur Modifier et Continuer, boîte de dialogue](edit-and-continue-error-message-dialog-box.md)
 #### [Erreur : L’évaluation de la fonction 'fonction' a dépassé le délai d’attente et a dû être abandonnée d’une façon non sécurisée](error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way.md)
+#### [Erreur : Le processus cible s’est arrêté avec le code 'code' lors de l’évaluation de la fonction 'function'](error-evaluating-the-function-process-exited.md)
 #### [Erreur : Connexion impossible à SQL Server à partir de l’ordinateur distant](error-unable-to-connect-to-sql-server-on-remote-machine.md)
 #### [Erreur : Impossible d’accéder à l’interface de débogage de SQL Server](error-unable-to-access-the-sql-server-debugging-interface.md)
 #### [Erreur : SQL ne trouve pas SSDEBUGPS](error-sql-can-t-find-ssdebugps.md)
