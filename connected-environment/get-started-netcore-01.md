@@ -1,18 +1,19 @@
 ---
 title: Créer un environnement de développement .NET Core constitué de conteneurs en utilisant Kubernetes dans le cloud - Étape 1 - Installer les outils | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 04/05/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Développement rapide Kubernetes à l’aide de conteneurs et de microservices sur Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, conteneurs
-manager: ghogen
-ms.openlocfilehash: d3a646f7cb226d33379730c8711fcccafcc73bdc
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+manager: douge
+ms.openlocfilehash: 81c031a74611f69f063d51693c7c57ec811ca8ec
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core"></a>Bien démarrer avec Connected Environment et .NET Core
 

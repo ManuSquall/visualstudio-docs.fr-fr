@@ -1,6 +1,7 @@
 ---
-title: Prise en charge de l’IDE de Visual Studio 64 bits | Microsoft Docs
+title: Prise en charge de l'IDE de Visual Studio 64 bits
 ms.date: 02/21/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e6067e3280a998f4b2296f880471080bd7bb6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b911a6529e3e32075ca8599c921ae8369afb691
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Prise en charge de l'IDE de Visual Studio 64 bits
 
@@ -32,5 +33,5 @@ Visual Studio vous permet de configurer vos applications pour cibler différente
 
 ## <a name="debugging-a-64-bit-application"></a>Débogage d’une application 64 bits
 
-[Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)
-[en utilisant des fichiers dump](../debugger/using-dump-files.md)
+- [Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)
+- [Utilisation des fichiers de vidage](../debugger/using-dump-files.md)

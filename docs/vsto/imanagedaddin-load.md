@@ -43,7 +43,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 ## <a name="remarks"></a>Notes  
  Un manifeste est un fichier (en général un fichier XML) qui fournit des informations utilisées pour aider à charger le complément VSTO. Par exemple, un manifeste peut spécifier l’emplacement de l’assembly du complément VSTO et la classe de point d’entrée à instancier lors du chargement du complément VSTO.  
   
- Le *bstrManifestURL* paramètre contient la valeur de la `Manifest` entrée sous le HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nom de l’application >*\Addins\\*\<id_complément >* clé de Registre pour le composant logiciel complément VSTO. Pour plus d'informations, consultez [IManagedAddin Interface](../vsto/imanagedaddin-interface.md).  
+ Le *bstrManifestURL* paramètre contient la valeur de la `Manifest` entrée sous le HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nom de l’application >* \Addins\\*\<id_complément >* clé de Registre pour le composant logiciel complément VSTO. Pour plus d'informations, consultez [IManagedAddin Interface](../vsto/imanagedaddin-interface.md).  
   
  Implémentez la méthode [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) pour effectuer des tâches telles que la configuration de la stratégie de sécurité et du domaine d’application pour le complément VSTO chargé.  
   

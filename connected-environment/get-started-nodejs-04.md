@@ -1,18 +1,19 @@
 ---
 title: Créer un environnement de développement Node.js constitué de conteneurs en utilisant Kubernetes dans le cloud - Étape 4 - Déboguer un conteneur dans Kubernetes | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Développement rapide Kubernetes à l’aide de conteneurs et de microservices sur Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, conteneurs
-manager: ghogen
-ms.openlocfilehash: 8dca016f3a3feb2d1fb10a80695b82e531e48a74
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: 2d1ec5fe0436b394083a247faa4519505aa21ceb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-nodejs"></a>Bien démarrer avec Connected Environment et Node.js
 
@@ -66,7 +67,7 @@ Actualisez l’application web dans le navigateur ou appuyez sur le bouton *Say 
 
 L’objectif de Connected Environment est de vous permettre d’utiliser les mêmes flux de travail de développement productifs que ceux que vous employez quand vous développez localement. Pour illustrer cela, l’exemple de projet `webfrontend` a été configuré pour utiliser *nodemon* (il est configuré comme dépendance de développement dans `package.json`).
 
-Essayez la procédure suivante :
+Essayez l’opération suivante :
 1. Arrêtez le débogueur VS Code.
 1. Cliquez sur l’icône Déboguer dans la **barre d’activités** latérale de VS Code. 
 1. Sélectionnez **Attach (VSCE)** comme configuration de débogage active.

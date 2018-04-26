@@ -3,8 +3,7 @@ title: Vue d’ensemble du déploiement - Visual Studio | Documents Microsoft
 description: En savoir plus sur vos options de déploiement d’applications à partir de Visual Studio.
 ms.custom: mvc
 ms.date: 11/26/2017
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -25,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d4367c5daad9c8514f472fe759d1dba9fb7e357
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: MT
+ms.openlocfilehash: c0b21e8bf8abae2e5543d68751fd53b07778c8b3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Démarrage rapide : D’abord examiner déploiement dans Visual Studio
 

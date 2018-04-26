@@ -1,10 +1,9 @@
 ---
-title: Analyse du code, page du Concepteur de projets | Microsoft Docs
-ms.custom: ''
+title: Analyse du code, page du Concepteur de projets
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs29106
 helpviewer_keywords:
@@ -16,53 +15,66 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e28b53e9237f3c368b1d25238f4fb271630f5e44
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 09b711ecd6d12e424afed00296d8d95bd93cbb10
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-analysis-project-designer"></a>Analyse du code, page du Concepteur de projets
-Contient l’outil d’analyse de code que vous pouvez choisir d’exécuter sur votre code. L’outil rapporte des informations relatives à vos assemblys, notamment les éventuelles violations des règles de programmation et de conception présentées plus avant dans le cadre des règles de conception de Microsoft .NET Framework.  
-  
-## <a name="uielement-list"></a>Liste des éléments d’interface  
- Activer l'analyse du code  
- Active ou désactive l’analyse du code pour votre projet.  
-  
- Règles de conception  
- Active ou désactive les règles de conception. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.  
-  
- Règles de globalisation  
- Active ou désactive les règles de globalisation. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.  
-  
- Règles d’interopérabilité  
- Active ou désactive les règles d’interopérabilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.  
-  
- Règles de maintenance  
- Active ou désactive les règles de maintenance. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.  
-  
- Règles de mobilité  
- Active ou désactive les règles de mobilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.  
-  
- Règles de nommage  
- Active ou désactive les règles de nommage. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.  
-  
- Règles de performance  
- Active ou désactive les règles de performance. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.  
-  
- Règles de portabilité  
- Active ou désactive les règles de portabilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.  
-  
- Règles de fiabilité  
- Active ou désactive les règles de fiabilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.  
-  
- Règles de sécurité  
- Active ou désactive les règles de sécurité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.  
-  
- Règles d’utilisation  
- Active ou désactive les règles d’utilisation. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Analyse du code pour les avertissements liés au code managé](../../code-quality/code-analysis-for-managed-code-warnings.md)   
- [Vue d’ensemble de l’analyse du code managé](../../code-quality/code-analysis-for-managed-code-overview.md)   
- [Procédure pas à pas : analyse du code managé pour les erreurs de code](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+Contient l’outil d’analyse de code que vous pouvez choisir d’exécuter sur votre code. L’outil rapporte des informations relatives à vos assemblys, notamment les éventuelles violations des règles de programmation et de conception présentées plus avant dans le cadre des règles de conception de Microsoft .NET Framework.
+
+## <a name="uielement-list"></a>Liste des éléments d’interface
+ Activer l'analyse du code
+
+ Active ou désactive l’analyse du code pour votre projet.
+
+ Règles de conception
+
+ Active ou désactive les règles de conception. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+
+ Règles de globalisation
+
+ Active ou désactive les règles de globalisation. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+
+ Règles d’interopérabilité
+
+ Active ou désactive les règles d’interopérabilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+
+ Règles de maintenance
+
+ Active ou désactive les règles de maintenance. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+
+ Règles de mobilité
+
+ Active ou désactive les règles de mobilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+
+ Règles de nommage
+
+ Active ou désactive les règles de nommage. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+
+ Règles de performance
+
+ Active ou désactive les règles de performance. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+
+ Règles de portabilité
+
+ Active ou désactive les règles de portabilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+
+ Règles de fiabilité
+
+ Active ou désactive les règles de fiabilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+
+ Règles de sécurité
+
+ Active ou désactive les règles de sécurité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+
+ Règles d’utilisation
+
+ Active ou désactive les règles d’utilisation. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Analyse du code pour les avertissements liés au code managé](../../code-quality/code-analysis-for-managed-code-warnings.md)
+- [Vue d’ensemble de l’analyse du code managé](../../code-quality/code-analysis-for-managed-code-overview.md)
+- [Procédure pas à pas : analyse du code managé pour les erreurs de code](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

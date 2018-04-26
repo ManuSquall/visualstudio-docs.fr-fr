@@ -1,10 +1,9 @@
 ---
-title: Général, Environnement, boîte de dialogue Options | Microsoft Docs
-ms.custom: ''
+title: Général, Environnement, boîte de dialogue Options
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -28,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c427752fa1b89acb2fa55afc7acd8c4535686c37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f12249cc8d0e8bd8396e1e1ebbbfefeddbb22b60
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>Général, Environnement, boîte de dialogue Options
 
@@ -67,17 +66,27 @@ Utilise l'accélération graphique matérielle si elle est disponible, au lieu d
 
 ## <a name="other"></a>Autre
 
-**Éléments affichés dans le menu Fenêtre** Personnalise le nombre de fenêtres qui s’affichent dans la liste Fenêtres du menu **Fenêtre**. Entrez un nombre compris entre 1 et 24. Par défaut, ce nombre est de 10.
+**Éléments affichés dans le menu Fenêtre**
 
-**Éléments affichés dans la liste des fichiers récents** Personnalise le nombre des projets et fichiers utilisés récemment, et qui s’affichent dans le menu **Fichier**. Entrez un nombre compris entre 1 et 24. Par défaut, ce nombre est de 10. Il s'agit d'un moyen facile de récupérer les projets et les fichiers récemment utilisés.
+Personnalise le nombre de fenêtres qui s’affichent dans la liste Fenêtres du menu **Fenêtre**. Entrez un nombre compris entre 1 et 24. Par défaut, ce nombre est de 10.
 
-**Afficher la barre d’état** Affiche la barre d’état. La barre d'état se trouve en bas de la fenêtre de l'IDE et affiche des informations sur la progression des opérations en cours.
+**Éléments affichés dans la liste des fichiers récents**
 
-**Le bouton Fermer n’affecte que la fenêtre Outil active** Spécifie qu’au moment où l’utilisateur clique sur le bouton **Fermer**, seule la fenêtre Outil qui a le focus est fermée, et non la totalité des fenêtres Outil de l’ensemble ancré. Cette option est activée par défaut.
+Personnalise le nombre des projets et des fichiers les plus récemment utilisés qui s’affichent dans le menu **Fichier**. Entrez un nombre compris entre 1 et 24. Par défaut, ce nombre est de 10. Il s'agit d'un moyen facile de récupérer les projets et les fichiers récemment utilisés.
 
-**Le bouton Masquer automatiquement n’affecte que la fenêtre Outil active** Spécifie qu’au moment où l’utilisateur clique sur le bouton **Masquer automatiquement**, seule la fenêtre Outil qui a le focus est masquée automatiquement, et non la totalité des fenêtres Outil de l’ensemble ancré. Cette option est désactivée par défaut.
+**Afficher la barre d’état**
+
+Affiche la barre d'état. La barre d'état se trouve en bas de la fenêtre de l'IDE et affiche des informations sur la progression des opérations en cours.
+
+**Le bouton Fermer n’affecte que la fenêtre Outil active**
+
+Spécifie que quand l’utilisateur clique sur le bouton **Fermer**, seule la fenêtre Outil qui a le focus est fermée et non pas toutes les fenêtres Outil de l’ensemble ancré. Cette option est activée par défaut.
+
+**Le bouton Masquer automatiquement n’affecte que la fenêtre Outil active**
+
+Spécifie que quand l’utilisateur clique sur le bouton **Masquer automatiquement**, seule la fenêtre Outil qui a le focus est masquée automatiquement et non pas toutes les fenêtres Outil de l’ensemble ancré. Cette option est désactivée par défaut.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)
-[Personnalisation des dispositions de fenêtres](../../ide/customizing-window-layouts-in-visual-studio.md)
+- [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)
+- [Personnalisation des dispositions de fenêtres](../../ide/customizing-window-layouts-in-visual-studio.md)

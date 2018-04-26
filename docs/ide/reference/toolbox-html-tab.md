@@ -1,9 +1,9 @@
 ---
-title: Boîte à outils, onglet HTML | Microsoft Docs
-ms.custom: ''
+title: Boîte à outils, onglet HTML
 ms.date: 06/21/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.toolbox.html
 helpviewer_keywords:
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff609631cec69e0d32cb74e5857cd3bb8df5ab94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4c47ca792c25efe6ef77f3ee3a9baad61e801624
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="toolbox-html-tab"></a>Boîte à outils, onglet HTML
 
@@ -163,7 +163,7 @@ Insère un élément `textarea`. Vous pouvez redimensionner la zone de texte ou 
 Quand vous faites glisser **Textarea** sur la surface en mode Design, une balise HTML similaire à ce qui suit est insérée dans votre document :
 
 ```html
-<textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea> 
+<textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>
 ```
 
 > [!IMPORTANT]
@@ -178,7 +178,7 @@ Insère un élément `table`.
 Quand vous faites glisser **Table** sur la surface en mode Design, une balise HTML similaire à ce qui suit est insérée dans votre document :
 
 ```html
-<table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table> 
+<table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>
 ```
 
 **Image**
@@ -233,4 +233,4 @@ Quand vous faites glisser **Div** sur la surface en mode Design, une balise HTML
 
 ## <a name="see-also"></a>Voir aussi
 
-[Boîte à outils](../../ide/reference/toolbox.md)
+- [Boîte à outils](../../ide/reference/toolbox.md)
