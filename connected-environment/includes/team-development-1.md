@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 30d3f9da291feb52674937d4b2f1b86f3efd0386
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/27/2018
+---
 Jusqu’à présent, nous avons exécuté le code de notre application comme si nous étions le seul développeur à travailler sur l’application. Dans cette section, nous allons découvrir en quoi Connected Environment simplifie le développement en équipe :
 * Permettre à une équipe de développeurs de travailler dans le même environnement de développement.
 * Permettre à chaque développeur d’itérer au sein de son code de manière isolée sans craindre de perturber les autres.
