@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecda4cc1ab237bed9e377f977295e19c74893673
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Comment : créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 
@@ -30,7 +30,7 @@ Stratégies d’archivage de l’analyse du code sont définies dans les paramè
 
 - Pour le code managé, vous définissez la stratégie d’archivage en spécifiant un *ensemble de règles* qui contient un sous-ensemble de règles d’analyse du code.
 
-- Pour le code C/C++, la stratégie d’archivage requiert que toutes les règles d’analyse du code sont exécutés. Vous pouvez ajouter les directives du préprocesseur pour désactiver des règles spécifiques pour les projets de code individuels de votre projet d’équipe.
+- Pour le code C/C++, dans Visual Studio 2017 version 15,6 et versions antérieure, la stratégie d’archivage requiert que toutes les règles d’analyse du code sont exécutés. Vous pouvez ajouter les directives du préprocesseur pour désactiver des règles spécifiques pour les projets de code individuels de votre projet d’équipe. 15.7 et versions ultérieures, vous pouvez utiliser **/ analyze : ruleset** pour spécifier les règles à exécuter. Pour plus d’informations, consultez [à l’aide des ensembles de règles pour spécifier les règles C++ pour exécuter](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
 Après avoir spécifié une stratégie d’archivage pour le code managé, membres de l’équipe peuvent synchroniser leurs paramètres d’analyse de code pour les projets de code pour les paramètres de stratégie du projet équipe.
 
