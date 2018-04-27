@@ -2,8 +2,8 @@
 title: Vue d’ensemble du volet Actions | Documents Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 902301021a698dfd0f6e9f09b000c1e4e403e029
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fa20f8be093ae064daba731833709fd8f54f551
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="actions-pane-overview"></a>Vue d'ensemble du volet Actions
   Un volet actions est un **Actions de Document** volet qui est attaché à un document spécifique de Microsoft Office Word ou un classeur Microsoft Office Excel. Il est hébergé dans le volet de tâches, ainsi que d’autres volets de tâches intégrés, tels que les **Source XML** volet dans Excel ou le **Styles et mise en forme** volet de tâches dans Word. Vous pouvez utiliser des contrôles Windows Forms ou WPF pour concevoir l'interface utilisateur du volet Actions.  

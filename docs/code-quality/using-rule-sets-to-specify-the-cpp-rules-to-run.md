@@ -1,6 +1,6 @@
 ---
 title: Utilisation des ensembles de règles pour spécifier les règles C++ à exécuter
-ms.date: 11/04/2016
+ms.date: 04/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,15 +9,19 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 571d54bb6bdf3673da8e40d6075c5b961d248fe5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ccb64fba6a646de0974c9de6e35beb98738b7300
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Utiliser des ensembles de règles pour spécifier les règles C++ à exécuter
 
-Dans Visual Studio, vous pouvez créer et modifier une personnalisée *ensemble de règles* pour répondre aux besoins de projet spécifique associés à l’analyse du code. Pour créer une règle C++ personnalisée configuré, un projet C/C++ doit être ouvert dans l’IDE de Visual Studio. Vous puis ouvrez un ensemble de règles standard dans l’éditeur d’ensemble de règles et puis ajoutez ou supprimez des règles spécifiques et éventuellement modifiez l’action qui se produit lorsque l’analyse du code détermine qu’une règle a été violée.
+Dans Visual Studio, vous pouvez créer et modifier une personnalisée *ensemble de règles* pour répondre aux besoins de projet spécifique associés à l’analyse du code. Les ensembles de règles par défaut sont stockés dans `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
+
+**Visual Studio 2017 version 15.7** vous pouvez créer des ensembles de règles personnalisés à l’aide de n’importe quel texte de l’éditeur et les appliquer dans les versions de ligne de commande, quel que soit ce que vous utilisez de système de génération. Pour plus d’informations, consultez [/ analyze : ruleset](/cpp/build/reference/analyze-code-quality).
+
+Pour créer une règle C++ personnalisée définie dans Visual Studio, un projet C/C++ doit être ouvert dans l’IDE de Visual Studio. Vous puis ouvrez un ensemble de règles standard dans l’éditeur d’ensemble de règles et puis ajoutez ou supprimez des règles spécifiques et éventuellement modifiez l’action qui se produit lorsque l’analyse du code détermine qu’une règle a été violée.
 
 Pour créer une nouvelle règle personnalisée définie, vous l’enregistrez à l’aide d’un nouveau nom de fichier. L’ensemble de règles personnalisé est automatiquement attribué au projet.
 
@@ -72,3 +76,20 @@ Pour créer une nouvelle règle personnalisée définie, vous l’enregistrez à
 - Pour basculer entre l’affichage et masquage des règles qui sont affectés les **aucun** action, choisissez **afficher les règles qui ne sont pas activées**.
 
 - Pour ajouter ou supprimer des ensembles de règle par défaut pour l’ensemble de règles actuel Microsoft, choisissez **des ensembles de règles enfants Add ou remove**.
+
+## <a name="to-create-a-rule-set-in-a-text-editor"></a>Pour créer un ensemble de règles dans un éditeur de texte
+
+Vous pouvez créer un ensemble de règles personnalisé dans un texte de l’éditeur, stockez-le dans n’importe quel emplacement avec un `.ruleset` extension et s’appliquent à l’aide du [/ analyze : ruleset](/cpp/build/reference/analyze-code-quality) option du compilateur.
+
+L’exemple suivant montre qu'une règle de base défini le fichier que vous pouvez utiliser comme point de départ :
+
+```xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C6001" Action="Warning" />
+    <Rule Id="C26494" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
