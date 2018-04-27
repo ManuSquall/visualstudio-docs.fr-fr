@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 394e31bf0660557c1eba571006cacf213263c07e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="initialize-code-for-docker-and-kubernetes-development"></a>Initialiser le code pour le développement Docker et Kubernetes
 Pour le moment, nous disposons d’une application web de base qui peut s’exécuter localement. Nous allons maintenant la mettre en conteneur en créant des ressources qui définissent le conteneur de l’application et la façon dont il sera déployé dans Kubernetes. Cette opération est facile à réaliser avec Connected Environment : 
 

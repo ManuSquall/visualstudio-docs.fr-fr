@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 5b1249cc083e2a7ccbfceae27da4aaf0b772bbd9
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="well-done"></a>Félicitations !
 Vous avez terminé le guide de démarrage. Vous avez appris à :
 
