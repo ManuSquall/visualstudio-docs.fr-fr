@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0fa20f8be093ae064daba731833709fd8f54f551
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 50f39b6fc292bba2081d8eb5c3bc87d6f9041b49
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="actions-pane-overview"></a>Vue d'ensemble du volet Actions
-  Un volet actions est un **Actions de Document** volet qui est attaché à un document spécifique de Microsoft Office Word ou un classeur Microsoft Office Excel. Il est hébergé dans le volet de tâches, ainsi que d’autres volets de tâches intégrés, tels que les **Source XML** volet dans Excel ou le **Styles et mise en forme** volet de tâches dans Word. Vous pouvez utiliser des contrôles Windows Forms ou WPF pour concevoir l'interface utilisateur du volet Actions.  
+  Un volet actions est un **Actions de Document** volet qui est attaché à un document spécifique de Microsoft Office Word ou un classeur Microsoft Office Excel. Le volet actions est hébergé dans le volet de tâches, ainsi que d’autres volets de tâches intégrés, tels que les **Source XML** volet dans Excel ou le **Styles et mise en forme** volet de tâches dans Word. Vous pouvez utiliser des contrôles Windows Forms ou WPF pour concevoir l'interface utilisateur du volet Actions.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/27/2018
 > [!NOTE]  
 >  Le volet Actions diffère des volets de tâches personnalisés. Les volets de tâches personnalisés sont associés à l'application, pas à un document spécifique. Vous pouvez créer des volets de tâches personnalisés dans les compléments VSTO pour certaines applications Microsoft Office. Pour plus d’informations, consultez [Vue d’ensemble des volets de tâches personnalisés](../vsto/custom-task-panes.md).  
 
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vidéo") pour une démonstration vidéo connexe, consultez [comment faire faire : utiliser WPF contrôles à l’intérieur d’un volet Actions Excel ?](http://go.microsoft.com/fwlink/?LinkId=132763).  
+ ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vidéo") pour une démonstration vidéo connexe, consultez [comment faire faire : utiliser WPF contrôles à l’intérieur d’un volet Actions Excel ?](http://go.microsoft.com/fwlink/?LinkId=132763).
 
 ## <a name="displaying-the-actions-pane"></a>Affichage du volet Actions  
  Le volet Actions est représenté par la classe <xref:Microsoft.Office.Tools.ActionsPane>. Lorsque vous créez un projet au niveau du document, une instance de cette classe est disponible pour votre code à l'aide du champ `ActionsPane` de la classe `ThisWorkbook` (pour Excel) ou `ThisDocument` (pour Word) de votre projet. Pour afficher le volet Actions, ajoutez un contrôle Windows Forms à la propriété <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> du champ `ActionsPane`. L'exemple de code suivant ajoute un contrôle nommé `actions` au volet Actions.  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/27/2018
  Le volet Actions devient visible au moment de l'exécution, dès que vous lui ajoutez explicitement un contrôle. Une fois que le volet Actions est affiché, vous pouvez dynamiquement ajouter ou supprimer des contrôles en réponse aux actions de l'utilisateur. En général, vous ajoutez le code pour afficher le volet Actions du gestionnaire d'événements `Startup` de `ThisDocument` ou `ThisWorkbook` afin que le volet Actions soit visible lorsque l'utilisateur ouvre le document pour la première fois. Toutefois, vous souhaiterez peut-être afficher le volet Actions uniquement en réponse à l'action d'un utilisateur dans le document. Par exemple, vous pouvez ajouter le code à l'événement `Click` d'un contrôle sur le document.  
 
 ### <a name="adding-multiple-controls-to-the-actions-pane"></a>Ajout de plusieurs contrôles au volet Actions  
- Si vous ajoutez plusieurs contrôles au volet Actions, dans la plupart des cas vous devez regrouper les contrôles dans un contrôle utilisateur, puis ajouter le contrôle utilisateur à la propriété <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>. Ce processus comprend les étapes suivantes :  
+ Lorsque vous ajoutez plusieurs contrôles au volet actions, vous devez regrouper les contrôles dans un contrôle utilisateur et puis ajoutez le contrôle utilisateur à la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriété. Ce processus comprend les étapes suivantes :  
 
 1.  Créer l’interface utilisateur (IU) du volet actions en ajoutant un **contrôle de volet Actions** ou **contrôle utilisateur** élément à votre projet. Ces deux éléments incluent une classe <xref:System.Windows.Forms.UserControl> Windows Forms personnalisée. Le **contrôle de volet Actions** et **contrôle utilisateur** éléments sont équivalents ; la seule différence est leur nom.  
 
@@ -79,12 +79,12 @@ ms.lasthandoff: 04/27/2018
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]  
 
 ### <a name="clearing-the-actions-pane-when-the-document-is-opened"></a>Effacement du volet Actions lorsque le document est ouvert  
- Si l'utilisateur enregistre le document alors que le volet Actions est visible, celui-ci apparaît chaque fois que le document est ouvert, que le volet Actions contienne des contrôles ou non. Si vous souhaitez contrôler à quel moment il apparaît, appelez la méthode <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> du champ `ActionsPane` du gestionnaire d'événements `Startup` `ThisDocument` ou `ThisWorkbook` pour vous assurer que le volet Actions n'est pas visible lorsque le document est ouvert.  
+ Lorsqu’un utilisateur enregistre le document alors que le volet actions est visible, le volet actions est visible chaque fois que le document est ouvert, le volet actions contienne des contrôles ou non. Si vous souhaitez contrôler à quel moment il apparaît, appelez la méthode <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> du champ `ActionsPane` du gestionnaire d'événements `Startup` `ThisDocument` ou `ThisWorkbook` pour vous assurer que le volet Actions n'est pas visible lorsque le document est ouvert.  
 
 ### <a name="determining-when-the-actions-pane-is-closed"></a>Détermination du moment où le volet Actions est fermé  
  Il n'y a aucun événement déclenché lorsque le volet Actions est fermé. Bien que la <xref:Microsoft.Office.Tools.ActionsPane> classe ait un événement <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>, celui-ci n'est pas déclenché lorsque l'utilisateur final ferme le volet Actions. Au lieu de cela, cet événement est déclenché lorsque les contrôles du volet actions sont masqués par l’appel le <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> méthode ou en définissant le <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> propriété **false**.  
 
- Si l'utilisateur final ferme le volet Actions, il peut l'afficher à nouveau en exécutant l'une des procédures suivantes dans l'interface utilisateur de l'application.  
+ Lorsque l’utilisateur ferme le volet actions, l’utilisateur puisse l’afficher à nouveau en effectuant l’une des procédures suivantes dans l’interface utilisateur (IU) de l’application.  
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Pour afficher le volet Actions à l'aide de l'interface utilisateur de Word ou Excel  
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 04/27/2018
 ## <a name="programming-actions-pane-events"></a>Programmation des événements du volet Actions  
  Vous pouvez ajouter plusieurs contrôles utilisateur au volet Actions, puis écrire le code pour répondre aux événements sur le document en affichant et en masquant les contrôles utilisateur. Si vous mappez des éléments du schéma XML à votre document, vous pouvez afficher certains contrôles utilisateur dans le volet Actions chaque fois que le point d'insertion se trouve dans l'un des éléments XML. Pour plus d’informations, consultez [Comment : schémas de mappage à des Documents Word dans Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) et [Comment : schémas de mappage à des feuilles de calcul à l’intérieur de Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).  
 
- Vous pouvez également écrire le code pour répondre aux événements de n'importe quel objet, y compris les événements de contrôle hôte, d'application ou de document. Pour plus d’informations, consultez [procédure pas à pas : programmation d’événements d’un contrôle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+ Vous pouvez également écrire le code pour répondre aux événements de n'importe quel objet, y compris les événements de contrôle hôte, d'application ou de document. Pour plus d'informations, consultez [Procédure pas à pas : programmation d'événements d'un contrôle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
 
 ## <a name="binding-data-to-controls-on-the-actions-pane"></a>Liaison de données aux contrôles dans le volet Actions  
  Les contrôles du volet Actions ont les mêmes fonctionnalités de liaison de données que les contrôles Windows Forms. Vous pouvez lier les contrôles aux sources de données telles que les jeux de données, les groupes de données typées et XML. Pour plus d'informations, consultez [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
@@ -127,9 +127,9 @@ ms.lasthandoff: 04/27/2018
  Si l'utilisateur redimensionne le volet Actions au moment de l'exécution, les contrôles peuvent être redimensionnés avec le volet Actions. Vous pouvez utiliser la propriété <xref:System.Windows.Forms.Control.Anchor%2A> d'un contrôle Windows Forms pour ancrer des contrôles au volet Actions. Vous pouvez également ancrer les contrôles Windows Forms au contrôle utilisateur de la même manière. Pour plus d’informations, consultez [Comment : ancrer des contrôles dans les Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
 
 ## <a name="resizing-the-actions-pane"></a>Redimensionnement du volet Actions  
- Vous ne pouvez pas modifier directement la taille d'un <xref:Microsoft.Office.Tools.ActionsPane>, car le <xref:Microsoft.Office.Tools.ActionsPane> est incorporé au volet des tâches. Toutefois, vous pouvez modifier par programmation la largeur du volet des tâches en définissant la propriété <xref:Microsoft.Office.Core.CommandBar.Width%2A> du <xref:Microsoft.Office.Core.CommandBar> qui représente le volet des tâches. Vous pouvez modifier la hauteur du volet des tâches s'il est ancré horizontalement ou est flottant.  
+ Vous ne pouvez pas modifier directement la taille d'un <xref:Microsoft.Office.Tools.ActionsPane>, car le <xref:Microsoft.Office.Tools.ActionsPane> est incorporé au volet des tâches. Toutefois, vous pouvez modifier par programmation la largeur du volet des tâches en définissant la propriété <xref:Microsoft.Office.Core.CommandBar.Width%2A> du <xref:Microsoft.Office.Core.CommandBar> qui représente le volet des tâches. Vous pouvez modifier la hauteur du volet des tâches s’il est ancré horizontalement ou est flottant.  
 
- Le redimensionnement par programmation du volet des tâches n'est généralement pas recommandé, car l'utilisateur doit pouvoir choisir la taille du volet des tâches qui correspond le mieux à ses besoins. Toutefois, si vous devez redimensionner la largeur du volet Office, vous pouvez utiliser le code suivant pour effectuer cette tâche.  
+ Le redimensionnement par programmation le volet de tâches n’est pas recommandé, car l’utilisateur doit être en mesure de choisir la taille du volet de tâches qui convient le mieux à leurs besoins. Toutefois, si vous devez redimensionner la largeur du volet Office, vous pouvez utiliser le code suivant pour effectuer cette tâche.  
 
  [!code-csharp[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#102)]
  [!code-vb[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#102)]  
@@ -145,7 +145,7 @@ ms.lasthandoff: 04/27/2018
 > [!NOTE]  
 >  Les utilisateurs finaux peuvent repositionner manuellement le volet de tâches à tout moment. Il n'existe aucun moyen de garantir que le volet des tâches demeure ancré à la position indiquée par programmation. Toutefois, vous pouvez vérifier les modifications de l'orientation et vous assurer que les contrôles du volet Actions sont empilés dans le bon sens. Pour plus d’informations, consultez [Comment : gérer la disposition des contrôles dans les volets Actions](../vsto/how-to-manage-control-layout-on-actions-panes.md).  
 
- La définition des propriétés <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> et <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> de l'objet <xref:Microsoft.Office.Tools.ActionsPane> ne modifie pas sa position, car l'objet <xref:Microsoft.Office.Tools.ActionsPane> est incorporé au volet des tâches.  
+ Définition de la <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> et <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> propriétés de la <xref:Microsoft.Office.Tools.ActionsPane> ne change pas sa position, car le <xref:Microsoft.Office.Tools.ActionsPane> objet est incorporé dans le volet des tâches.  
 
  Si le volet des tâches n'est pas ancré, vous pouvez définir les propriétés <xref:Microsoft.Office.Core.CommandBar.Top%2A> et <xref:Microsoft.Office.Core.CommandBar.Left%2A> de l'objet <xref:Microsoft.Office.Core.CommandBar> qui représente le volet des tâches. Le code suivant déplace un volet des tâches non ancré vers l’angle supérieur gauche du document.  
 
