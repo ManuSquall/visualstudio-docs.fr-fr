@@ -2,8 +2,8 @@
 title: Association d’une zone de formulaire à une classe de Message Outlook | Documents Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VSTO.NewFormRegionWizard.InvalidMessageClassName
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27797a6b7ec2a415daa525d8eb90c5bbfbe1f859
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3e3deeb55fb93b1a393d0489213f1d0e7acd85b
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="associating-a-form-region-with-an-outlook-message-class"></a>Association d'une zone de formulaire à une classe de message Outlook
   Vous pouvez spécifier les éléments Microsoft Office Outlook qui affichent une zone de formulaire en associant la zone de formulaire de la classe de message de chaque élément. Par exemple, si vous souhaitez ajouter une zone de formulaire au bas d’un élément de messagerie, vous pouvez associer la zone de formulaire avec la gestion intégrée. Notez la classe de message.  
