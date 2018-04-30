@@ -1,12 +1,10 @@
 ---
-title: "Guide pratique pour gérer des configurations de build en appliquant les paramètres du développeur Visual Basic | Microsoft Docs"
-ms.custom: 
+title: Guide pratique pour gérer des configurations de build en appliquant les paramètres du développeur Visual Basic | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, building with Visual Basic settings
 - MSBuild, debug build
@@ -16,21 +14,21 @@ helpviewer_keywords:
 - MSBuild, release build
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 094f87ca4a56f71cbecfa9b6b1dc9189244c0c57
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 954a968de9840e6f23c3e8ff5ab0ff4d0fa761cb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Guide pratique pour gérer des configurations de build en appliquant les paramètres du développeur Visual Basic
 Par défaut, toutes les options de configuration de build avancées sont masquées si les paramètres du développeur [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] sont appliqués. Cette rubrique explique comment activer manuellement ces paramètres.  
   
-## <a name="enabling-advanced-build-configurations"></a>Activation des configurations de build avancées  
+## <a name="enable-advanced-build-configurations"></a>Activer les configurations de build avancées  
  Par défaut, les paramètres du développeur [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] masquent l’option pour ouvrir la boîte de dialogue **Gestionnaire de configurations** et les listes **Configuration** et **Plateforme** dans le [Concepteur de projets](..//ide/reference/application-page-project-designer-visual-basic.md).  
   
 #### <a name="to-enable-advanced-build-configurations"></a>Pour activer les configurations de build avancées  
@@ -46,8 +44,8 @@ Par défaut, toutes les options de configuration de build avancées sont masqué
   
 4.  Cliquez sur **OK**.  
   
-     Dans le menu **Générer**, le **Gestionnaire de configurations** est maintenant disponible, et les listes **Configuration** et **Plateforme** sont visibles dans le Concepteur de projets.  
+     Dans le menu **Build**, le **Gestionnaire de configurations** est désormais disponible. De plus, les listes **Configuration** et **Plateforme** sont visibles dans le **Concepteur de projet**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
+ [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)

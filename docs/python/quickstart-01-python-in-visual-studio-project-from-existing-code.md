@@ -1,15 +1,9 @@
 ---
-title: 'Démarrage rapide : création d’un projet Python à partir de code existant | Microsoft Docs'
+title: Démarrage rapide - Création d’un projet Python à partir du code existant
 description: Avec ce guide de démarrage rapide, vous créez un projet Visual Studio pour Python à partir d’un dossier existant, à l’aide d’un modèle pratique.
-ms.custom: mvc
 ms.date: 01/08/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b31cda03c2ca233e90e1ba0194d83845805e28f3
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 497e32e2be5babe16b82e9b06ab12f4f5c2c0ba7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Démarrage rapide : Créer un projet Python à partir de code existant
 

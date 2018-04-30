@@ -1,37 +1,30 @@
 ---
-title: "Conseils et astuces pour améliorer les performances de Visual Studio | Microsoft Docs"
+title: Conseils et astuces pour améliorer les performances de Visual Studio | Microsoft Docs
 ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- debugger
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9182abea676958891afb789217a056f16ff1c11e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces pour améliorer les performances de Visual Studio
+# <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces sur les performances dans Visual Studio
 
 Les recommandations pour améliorer les performances de Visual Studio concernent les cas où la mémoire est insuffisante, ce qui se produit rarement. Dans ces situations, vous pouvez optimiser certaines fonctionnalités de Visual Studio que vous n’utilisez peut-être pas. Les conseils suivants ne sont pas à interpréter comme des recommandations générales.
 
 > [!NOTE]
-> Si vous rencontrez des difficultés à utiliser le produit en raison de problèmes de mémoire, faites-le nous savoir à travers l’outil de commentaires.
+> Si vous rencontrez des difficultés à utiliser le produit en raison de problèmes de mémoire, faites-le nous savoir via [l’outil de commentaires](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="optimize-your-environment"></a>Optimiser votre environnement
 
-- **Utiliser un système d’exploitation 64 bits**
+- **Utiliser un système d’exploitation 64 bits**
 
     Si vous mettez à niveau votre système d’une version 32 bits de Windows vers une version 64 bits, vous passez de 2 Go à 4 Go la quantité de mémoire virtuelle disponible pour Visual Studio. Cela permet à Visual Studio de gérer des charges de travail beaucoup plus importantes, même avec un processus 32 bits.
 
@@ -86,7 +79,7 @@ Certains outils ou extensions peuvent être désactivés pour améliorer les per
 
 ### <a name="managed-language-services-roslyn"></a>Services de langage gérés (Roslyn)
 
-Pour plus d’informations sur les performances de « Roslyn » (.NET Compiler Platform), consultez [Performance considerations for large solutions] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Pour plus d’informations sur les performances de .NET Compiler Platform (« Roslyn »), consultez [Performance considerations for large solutions](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Désactiver l’analyse complète de la solution**
 
@@ -108,7 +101,7 @@ Pour plus d’informations sur les performances de « Roslyn » (.NET Compiler P
 
     Les extensions sont des composants logiciels supplémentaires ajoutés à Visual Studio qui fournissent de nouvelles fonctionnalités ou étendent les fonctionnalités existantes. Les extensions peuvent souvent être une source de problèmes de ressources mémoire. Si vous rencontrez des problèmes de ressources mémoire, essayez de désactiver les extensions une par une pour connaître leur impact sur le scénario ou le flux de travail.
 
-    Pour désactiver des extensions, accédez à **Outils | Extensions et mises à jour** et désactiver une extension en particulier.
+    Pour désactiver des extensions, accédez à **Outils** > **Extensions et mises à jour** et désactivez une extension particulière.
 
 - **Désactiver le concepteur XAML**
 
@@ -128,8 +121,9 @@ Pour forcer une opération de garbage collection, utilisez la touche de raccourc
 
 Si le forçage de l’opération de garbage collection permet à votre scénario de fonctionner de manière fiable, envoyez un rapport à travers l’outil de commentaires de Visual Studio, car ce comportement est susceptible d’être un bogue.
 
-Pour obtenir une description détaillée du récupérateur de mémoire CLR, consultez [Fundamental of Garbage Collection](/dotnet/standard/garbage-collection/fundamentals) (Concepts fondamentaux de l’opération de garbage collection).
+Pour obtenir une description détaillée du récupérateur de mémoire CLR, consultez [Concepts fondamentaux de l’opération de garbage collection](/dotnet/standard/garbage-collection/fundamentals).
 
 ## <a name="see-also"></a>Voir aussi
 
-[IDE Visual Studio](../ide/visual-studio-ide.md)
+- [Optimiser les performances de Visual Studio](../ide/optimize-visual-studio-performance.md)
+- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

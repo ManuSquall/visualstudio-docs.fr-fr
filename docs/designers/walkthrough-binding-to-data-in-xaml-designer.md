@@ -1,12 +1,9 @@
 ---
-title: "Procédure pas à pas : liaison aux données dans le concepteur XAML | Microsoft Docs"
-ms.custom: 
+title: Effectuer une liaison de données dans le concepteur XAML
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
 dev_langs:
@@ -14,16 +11,16 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ef8826fd01c0eec45f2daea5900c5e440a5cebb0
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: 364e5db22342a0a870a38db71506b39a6f0080b6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Procédure pas à pas : liaison aux données dans le concepteur XAML
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procédure pas à pas : effectuer une liaison de données dans le concepteur XAML
 
 Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de données à l’aide de la planche graphique et de la fenêtre Propriétés. L'exemple dans cette procédure pas à pas montre comment lier des données à un contrôle. Plus précisément, la procédure pas à pas montre comment créer une classe de panier d’achat simple dotée d’une propriété [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) nommée `ItemCount`, puis lier la propriété `ItemCount` à la propriété **Text** d’un contrôle [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
 
@@ -103,5 +100,5 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
 
 ## <a name="see-also"></a>Voir aussi
 
-[Création d’une interface utilisateur à l’aide du concepteur XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)  
-[Boîte de dialogue Ajouter un convertisseur de valeurs](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [Créer une IU à l’aide du concepteur XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Boîte de dialogue Ajouter un convertisseur de valeurs](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

@@ -1,52 +1,27 @@
 ---
 title: Avantage MSDN Magazine dans les abonnements Visual Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/13/2018
-Ms.topic: Get-Started-Article
-Description: Sign up to receive the MSDN Magazine subscription included in your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: a54f23a6f9264a626660ee23eac7dc95c94acf9e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/13/2018
+ms.topic: Get-Started-Article
+description: Inscrivez-vous pour recevoir l’abonnement MSDN Magazine inclus dans votre abonnement Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 590cd180c8bdf5e2fcef4d16c84350bdc1d00273
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Avantage MSDN Magazine dans les abonnements Visual Studio
 
-## <a name="overview"></a>Vue d'ensemble 
 MSDN Magazine est un magazine complet sur les technologies Microsoft qui fournit des solutions pratiques à des problèmes concrets.  Selon le niveau de votre abonnement, vous pouvez recevoir la version imprimée du magazine ou bénéficier d’un accès en avant-première à la version numérique.  
 
-## <a name="eligibility"></a>Éligibilité
-| Niveau d'abonnement / Programme                                                  | Avantage               | Renouvelable ?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise standard                                             | Édition imprimée       |  Non                                                                  |
-| Visual Studio Enterprise annuel                                               | Édition imprimée       |  Non                                                                  |
-| Visual Studio Enterprise mensuel                                              | Non disponible         |                                                                    |
-| Visual Studio Professional standard                                           | Édition imprimée       |  Non                                                                  |
-| Visual Studio Professional annuel                                             | Édition imprimée       |  Non                                                                  | 
-| Visual Studio Professional mensuel                                            | Non disponible         |                                                                    |
-| Visual Studio Test Pro                                                        | Édition imprimée       |  Non                                                                  |
-| Plateformes MSDN                                                                | Édition imprimée       |  Non                                                                  |
-| Visual Studio Dev Essentials                                                  | Édition numérique       |  Oui                                                               |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | Édition imprimée       |  Non                                                                  |
-| Visual Studio Enterprise - FTE                                                | Édition imprimée       |  Non                                                                  |
-| Visual Studio Enterprise - Microsoft Partner Network                          | Édition imprimée       |  Non                                                                  |
-| Visual Studio Professional - Microsoft Partner Network                        | Édition numérique       |  Oui                                                               |
-| Visual Studio Enterprise – Imagine (Standard)                                 | Non disponible         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | Édition imprimée       |  Non                                                                  |
-| Visual Studio Enterprise – BizSpark                                           | Non disponible         |                                                                    |
-| Microsoft Certified Trainer - Software & Services                             | Édition numérique       |  Oui                                                               |
-| Microsoft Certified Trainer - Software & Services Developer                   | Non disponible         |                                                                    |
 
-<sup>1</sup>  *Inclut NFR (Revente interdite), Microsoft Valued Partner (MVP), Region Director (RD) et Visual Studio Industry Partner (VSIP)*  
-
-Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour consulter la liste de tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
-
-## <a name="activation-steps"></a>Étapes d'activation
+## <a name="activation-steps"></a>Étapes d’activation
+Les étapes qui permettent d’activer votre avantage dépendent de l’édition que vous choisissez.  
 
 ### <a name="digital-edition"></a>Édition numérique
 L’édition numérique est à la disposition des membres Visual Studio Dev Essentials.  
@@ -55,7 +30,7 @@ L’édition numérique est à la disposition des membres Visual Studio Dev Esse
 2.  Recherchez la vignette MSDN Magazine dans la section Développement professionnel et cliquez sur **Accéder**.
 
 ### <a name="printed-edition"></a>Édition imprimée
-1.  Pour commencer à recevoir votre abonnement MSDN Magazine, connectez-vous à[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Pour commencer à recevoir votre abonnement MSDN Magazine, connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 2.  Recherchez la vignette MSDN Magazine dans la section Développement professionnel et cliquez sur le lien **S’abonner** de la vignette de l’abonnement MSDN Magazine. (Cliquez sur le symbole « ! » dans l’angle inférieur droit de la vignette pour accéder à l’édition numérique.)
 
     ![Vignette de l’avantage MSDN Magazine](_img\vs-msdn\vs-msdn-tile.png)
@@ -71,8 +46,24 @@ L’édition numérique est à la disposition des membres Visual Studio Dev Esse
 
 5.  C’est aussi simple que cela.  Selon la version du magazine choisie, vous allez commencer à recevoir vos magazines imprimés, ou des e-mails contenant des liens vers les dernières versions en ligne avec la prochaine édition.  Bonne lecture !
 
-## <a name="faq"></a>FAQ
-*Consultez les mises à jour disponibles ici.*
+## <a name="eligibility"></a>Éligibilité
+| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> |Édition imprimée       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Professional (Standard, cloud annuel) | Licences en volume, Azure, Détail                                       | Édition imprimée                                                            |Non.  Disponible pour les nouveaux abonnés uniquement         |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Édition imprimée                                             |  Non.  Disponible pour les nouveaux abonnés uniquement         |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Édition imprimée                                              | Non.  Disponible pour les nouveaux abonnés uniquement         |
+|Visual Studio Enterprise, Visual Studio Professional (cloud mensuel)   | Azure |Non disponible      |  NA         |
+|Visual Studio Dev Essentials| NA |Édition numérique       |  Oui|
+
+<sup>1</sup> *Édition imprimée : NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*  
+
+*Édition numérique : MCT Software & Services, Microsoft Valued Partner (Professional), RD (Region Director).*
+
+*Exclut : Imagine (Standard), BizSpark, MCT Software & Services Developer*
+
+
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
 
 ## <a name="support-resources"></a>Ressources de support technique
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio.

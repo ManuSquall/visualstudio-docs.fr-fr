@@ -1,32 +1,30 @@
 ---
-title: Guide pratique pour configurer des projets pour plusieurs plateformes cibles | Microsoft Docs
-ms.custom: 
+title: Guide pratique pour configurer des projets et cibler plusieurs plateformes | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7686e792d804af85bb8f9588f3ae78fd6b6ec3e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9f56928210eb251ea54205c435c721b62503857f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Comment : configurer des projets pour plusieurs plateformes cibles
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Guide pratique pour configurer des projets et cibler plusieurs plateformes
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permet à une solution de cibler en même temps plusieurs architectures, ou plateformes, de processeur différentes. Les propriétés permettant de les définir sont accessibles à l’aide de la boîte de dialogue **Gestionnaire de configurations**.  
   
-## <a name="targeting-a-platform"></a>Ciblage d’une plateforme  
- La boîte de dialogue **Gestionnaire de configurations** vous permet de créer et de définir des plateformes et des configurations au niveau de la solution et au niveau du projet. Un ensemble unique de propriétés peut être associé à chaque combinaison de configurations au niveau de la solution et de cibles, ce qui vous permet de basculer facilement entre, par exemple, une configuration Release qui cible une plateforme [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)], une configuration Release qui cible une plateforme x86 et une configuration Debug qui cible une plateforme x86.  
+## <a name="target-a-platform"></a>Cibler une plateforme  
+ La boîte de dialogue **Gestionnaire de configurations** vous permet de créer et de définir des plateformes et des configurations au niveau de la solution et au niveau du projet. Vous pouvez associer chaque combinaison de configurations au niveau de la solution et de cibles à un ensemble unique de propriétés, ce qui vous permet de basculer facilement entre, par exemple, une configuration Release qui cible une plateforme [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)], une configuration Release qui cible une plateforme x86 et une configuration Debug qui cible une plateforme x86.  
   
 #### <a name="to-set-your-configuration-to-target-a-different-platform"></a>Pour définir votre configuration afin de cibler une plateforme différente  
   
@@ -34,8 +32,8 @@ ms.lasthandoff: 12/22/2017
   
 2.  Dans la **zone Plateforme de la solution active**, sélectionnez la plateforme que votre solution doit cibler, ou sélectionnez **\<Nouveau>** pour créer une nouvelle plateforme. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] compile votre application de façon à cibler la plateforme qui est définie comme plateforme active dans la boîte de dialogue **Gestionnaire de configurations**.  
   
-## <a name="removing-a-platform"></a>Suppression d’une plateforme  
- Si vous constatez que vous n’avez pas besoin d’une plateforme, vous pouvez la supprimer à l’aide de la boîte de dialogue Gestionnaire de configurations. Cela supprime tous les paramètres de solution et de projet que vous avez configurés pour cette combinaison de configuration et de cible.  
+## <a name="remove-a-platform"></a>Supprimer une plateforme  
+ Si vous constatez que vous n’avez pas besoin d’une plateforme, vous pouvez la supprimer à l’aide de la boîte de dialogue **Gestionnaire de configurations**. Cela supprime tous les paramètres de solution et de projet que vous avez configurés pour cette combinaison de configuration et de cible.  
   
 #### <a name="to-remove-a-platform"></a>Pour supprimer une plateforme  
   
@@ -45,7 +43,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  Cliquez sur la plateforme à supprimer, puis sur **Supprimer**.  
   
-## <a name="targeting-multiple-platforms-with-one-solution"></a>Ciblage de plusieurs plateformes avec une seule solution  
+## <a name="target-multiple-platforms-with-one-solution"></a>Cibler plusieurs plateformes avec une seule solution  
  Étant donné que vous pouvez changer les paramètres en fonction de la combinaison de paramètres de configuration et de plateforme, vous pouvez configurer une solution capable de cibler plusieurs plateformes.  
   
 #### <a name="to-target-multiple-platforms"></a>Pour cibler plusieurs plateformes  
@@ -67,4 +65,4 @@ ms.lasthandoff: 12/22/2017
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)   
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
- [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+ [Générer et nettoyer des solutions et des projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

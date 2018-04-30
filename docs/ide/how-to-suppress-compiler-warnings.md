@@ -1,27 +1,25 @@
 ---
 title: Supprimer des avertissements du compilateur dans Visual Studio pour les projets et les packages NuGet | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af162101eb20e018be44480c862192c0c59276a
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 25fc8d4412410c2687593661760dcf94512c972b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Guide pratique pour supprimer des avertissements du compilateur
 
-Vous pouvez nettoyer un journal de génération en filtrant un ou plusieurs types d’avertissements du compilateur. Par exemple, vous souhaitez peut-être consulter uniquement la section de la sortie générée quand vous définissez le niveau de détail du journal de génération sur Normal, Détaillé ou Diagnostic. Pour plus d’informations sur le niveau de détail, consultez [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
+Vous pouvez nettoyer un journal de génération en filtrant un ou plusieurs types d’avertissements du compilateur. Par exemple, vous souhaitez peut-être passer en revue uniquement une partie de la sortie générée quand vous définissez le niveau de détail **Normal**, **Détaillé** ou **Diagnostic** pour le journal de génération. Pour plus d’informations sur le niveau de détail, consultez [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="suppressing-specific-warnings-for-visual-c-or-f"></a>Suppression d’avertissements spécifiques pour Visual C# ou F# #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Supprimer des avertissements spécifiques pour Visual C# ou F# #
 
 Utilisez la page de propriétés **Générer** pour supprimer des avertissements spécifiques pour les projets C# et F#.
 
@@ -35,7 +33,7 @@ Utilisez la page de propriétés **Générer** pour supprimer des avertissements
 
 1. Régénérez la solution.
 
-## <a name="suppressing-specific-warnings-for-visual-c"></a>Suppression d’avertissements spécifiques pour Visual C++
+## <a name="suppress-specific-warnings-for-visual-c"></a>Supprimer des avertissements spécifiques pour Visual C++
 
 Utilisez la page de propriétés **Propriétés de configuration** pour supprimer des avertissements spécifiques pour les projets C++.
 
@@ -53,9 +51,9 @@ Utilisez la page de propriétés **Propriétés de configuration** pour supprime
 
 1. Choisissez le bouton **OK**, puis régénérez la solution.
 
-## <a name="suppressing-warnings-for-visual-basic"></a>Suppression d’avertissements pour Visual Basic
+## <a name="suppress-warnings-for-visual-basic"></a>Supprimer des avertissements pour Visual Basic
 
-Vous pouvez masquer des avertissements spécifiques du compilateur pour Visual Basic en modifiant le fichier *.vbproj* du projet. Pour supprimer des avertissements par *catégorie*, vous pouvez utiliser la [page de propriétés Compiler](../ide/reference/compile-page-project-designer-visual-basic.md). Pour plus d’informations, consultez [Configuration d’avertissements en Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
+Vous pouvez masquer des avertissements spécifiques du compilateur pour Visual Basic en modifiant le fichier *.vbproj* du projet. Pour supprimer des avertissements par *catégorie*, vous pouvez utiliser la [page de propriétés Compiler](../ide/reference/compile-page-project-designer-visual-basic.md). Pour plus d’informations, consultez [Configurer des avertissements dans Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
 ### <a name="to-suppress-specific-warnings-for-visual-basic"></a>Pour supprimer des avertissements spécifiques pour Visual Basic
 
@@ -65,7 +63,7 @@ Cet exemple montre comment modifier le fichier *.vbproj* pour supprimer des aver
 
 1. Dans la barre de menus, sélectionnez **Projet** > **Décharger le projet**.
 
-1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel (clic droit) du projet et sélectionnez **Modifier** *NomProjet* **.vbproj**.
+1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel (clic droit) du projet, puis choisissez **Modifier <ProjectName>.vbproj**.
 
     Le fichier de projet XML s’ouvre dans l’éditeur de code.
 
@@ -114,7 +112,7 @@ Cet exemple montre comment modifier le fichier *.vbproj* pour supprimer des aver
 
 Pour plus d’informations, consultez l’[option du compilateur /nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) pour le compilateur de ligne de commande Visual Basic.
 
-## <a name="suppressing-warnings-for-nuget-packages"></a>Suppression d’avertissements pour les packages NuGet
+## <a name="suppress-warnings-for-nuget-packages"></a>Supprimer des avertissements pour les packages NuGet
 
 Dans certains cas, il se peut que vous souhaitiez supprimer des avertissements du compilateur NuGet pour un seul package NuGet, et non pour un projet entier. L’avertissement a un objectif précis. Vous ne souhaitez donc pas le supprimer au niveau du projet. Par exemple, l’un des avertissements NuGet vous informe que le package peut ne pas être entièrement compatible avec votre projet. Si vous le supprimez au niveau du projet, puis ajoutez par la suite un autre package NuGet, vous ne saurez jamais si c’est ce dernier qui a généré l’avertissement de compatibilité.
 
@@ -134,6 +132,6 @@ Dans certains cas, il se peut que vous souhaitiez supprimer des avertissements d
 
 ## <a name="see-also"></a>Voir aussi
 
-[Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md)  
+[Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)  
 [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)  
-[Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
+[Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)

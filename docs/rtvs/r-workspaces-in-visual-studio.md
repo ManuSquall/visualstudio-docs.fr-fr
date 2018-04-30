@@ -1,26 +1,20 @@
 ---
-title: "Espaces de travail dans les Outils R pour Visual Studio | Microsoft Docs"
-description: "Guide pratique pour contrôler l’emplacement d’exécution du code R avec des espaces de travail dans Visual Studio."
-ms.custom: 
+title: Espaces de travail R
+description: Guide pratique pour contrôler l’emplacement d’exécution du code R avec des espaces de travail dans Visual Studio.
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: bb520f317eb285bcc278ff9f37bb2dc25c91e950
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 8a562b26dbe48df33928409b518dc6a9ceed6eb0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Décider où s’exécute le code R avec des espaces de travail
 

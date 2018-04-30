@@ -1,25 +1,23 @@
 ---
-title: "Guide pratique pour exclure des projets d’une build | Microsoft Docs"
-ms.custom: 
+title: Guide pratique pour exclure des projets d’une build | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8392a17a1d1f0648176c6b68463102e31c61cf20
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a09f18ccb491474c5db20724ccea501fc94c14a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Guide pratique pour exclure des projets d'une build
+# <a name="how-to-exclude-projects-from-a-build"></a>Guide pratique pour exclure des projets d’une build
 Vous pouvez générer une solution sans générer tous les projets qu'elle contient. Par exemple, vous pouvez exclure un projet qui interrompt la génération. Vous pouvez ensuite générer le projet, une fois les problèmes identifiés et résolus.  
   
  Vous pouvez exclure un projet en adoptant les approches suivantes :  
@@ -32,7 +30,7 @@ Vous pouvez générer une solution sans générer tous les projets qu'elle conti
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Pour supprimer temporairement un projet de la configuration de solution active  
   
-1.  Dans la barre de menus, choisissez **Générer**, puis **Gestionnaire de configurations**.  
+1.  Dans la barre de menus, choisissez **Build** > **Gestionnaire de configurations**.  
   
 2.  Dans le tableau **Contextes des projets**, localisez le projet que vous souhaitez exclure de la génération.  
   
@@ -42,7 +40,7 @@ Vous pouvez générer une solution sans générer tous les projets qu'elle conti
   
 ### <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Pour créer une configuration de solution qui exclut un projet  
   
-1.  Dans la barre de menus, choisissez **Générer**, puis **Gestionnaire de configurations**.  
+1.  Dans la barre de menus, choisissez **Build** > **Gestionnaire de configurations**.  
   
 2.  Dans la liste **Configuration de la solution active**, choisissez **\<Nouveau>**.  
   
@@ -54,9 +52,9 @@ Vous pouvez générer une solution sans générer tous les projets qu'elle conti
   
 6.  Dans la barre d’outils **Standard**, vérifiez que la nouvelle configuration de solution est la configuration active dans la zone **Configurations de solutions**.  
   
-7.  Dans la barre de menus, choisissez **Générer**, **Régénérer la solution**.  
+7.  Dans la barre de menus, sélectionnez **Générer** > **Régénérer la solution**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
  [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)   
- [Guide pratique pour créer plusieurs configurations simultanément](../ide/how-to-build-multiple-configurations-simultaneously.md)
+ [Guide pratique pour générer plusieurs configurations simultanément](../ide/how-to-build-multiple-configurations-simultaneously.md)

@@ -1,25 +1,21 @@
 ---
-title: "Bien démarrer avec le débogage dans Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Bien démarrer avec le débogage dans Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 12/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 085ea00f95124eb6ae2ed7ccc96eed692be0d649
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Bien démarrer avec le débogage dans Visual Studio
 Visual Studio intègre un ensemble puissant d’outils de génération et de débogage de projets. Dans cette rubrique, vous allez apprendre à utiliser l’ensemble des fonctionnalités de base de l’interface utilisateur de débogage.  
@@ -49,7 +45,7 @@ Le moyen le plus simple de générer votre projet consiste à appuyer sur **F7**
 
  ![Liste d’erreurs et sortie de Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
 
- Cliquez sur la ligne d’erreur dans la fenêtre **Liste d’erreurs** pour accéder directement à la ligne à l’origine de l’erreur. (Vous pouvez aussi activer les numéros de ligne en cliquant dans la barre **Lancement rapide** située dans l’angle supérieur droit, en tapant « numéros de ligne » dans celle-ci, puis en appuyant sur Entrée. C’est le moyen le plus rapide d’arriver à l’entrée de la fenêtre **Options** qui vous permet d’activer les numéros de ligne. En vous familiarisant avec la barre **Lancement rapide**, vous économiserez un grand nombre de clics dans l’interface utilisateur !)  
+ Cliquez sur la ligne d’erreur dans la fenêtre **Liste d’erreurs** pour accéder directement à la ligne à l’origine de l’erreur. (Vous pouvez aussi activer les numéros de ligne en cliquant dans la barre **Lancement rapide** située dans le coin supérieur droit, en y tapant « numéros de ligne », puis en appuyant sur **Entrée**. C’est le moyen le plus rapide d’arriver à l’entrée de la fenêtre **Options** qui vous permet d’activer les numéros de ligne. En vous familiarisant avec la barre **Lancement rapide**, vous économiserez un grand nombre de clics dans l’interface utilisateur !)  
 
  ![Éditeur Visual Studio avec des numéros de ligne](../ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
 
@@ -75,19 +71,19 @@ Le moyen le plus simple de générer votre projet consiste à appuyer sur **F7**
  Vous pouvez également cliquer sur la valeur du code d’erreur, qui se présente sous la forme d’un lien hypertexte, dans la colonne **Code** de la **Liste d’erreurs**. Cette action lance une recherche dans Bing portant uniquement sur le code d'erreur.  
 
 ### <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Utiliser des ampoules pour corriger ou refactoriser du code  
- Les ampoules sont une nouvelle fonctionnalité de Visual Studio qui vous permettent de refactoriser le code en mode inline. Grâce aux ampoules, vous pouvez facilement et rapidement résoudre les avertissements courants. Pour y accéder, cliquez sur le trait de soulignement ondulé d’un avertissement (ou appuyez sur **Ctrl+**. tout en pointant sur le trait de soulignement ondulé), puis sélectionnez **Actions rapide**.  
+ Les ampoules sont une nouvelle fonctionnalité de Visual Studio qui vous permet de refactoriser le code en mode inline. Grâce aux ampoules, vous pouvez facilement et rapidement résoudre les avertissements courants. Pour y accéder, cliquez sur le trait de soulignement ondulé d’un avertissement (ou appuyez sur **Ctrl+**. tout en pointant sur le trait de soulignement ondulé), puis sélectionnez **Actions rapide**.  
 
- ![Options rapides d’ampoule dans Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
+ ![Options rapides des ampoules dans Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
 
  La liste des corrections ou des refactorisations que vous pouvez appliquer à cette ligne de code s'affiche.  
 
- ![Aperçu d’ampoule dans Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb_preview_changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")  
+ ![Aperçu d’une ampoule dans Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb_preview_changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")  
 
- Vous pouvez utiliser les ampoules chaque fois que les analyseurs de code déterminent que votre code peut être corrigé, refactorisé ou amélioré. Cliquez sur n’importe quelle ligne de code, cliquez avec le bouton droit pour ouvrir le menu contextuel , puis sélectionnez **Options rapide** (ou, pour aller plus vite, appuyez sur **Ctrl+**.). Si des options de refactorisation ou d’amélioration sont disponibles, elles sont affichées ; dans le cas contraire, le message `No quick options available here` apparaît dans le cadre de l’angle inférieur gauche de l’IDE.  
+ Vous pouvez utiliser des ampoules chaque fois que les analyseurs de code déterminent que votre code peut être corrigé, refactorisé ou amélioré. Cliquez sur n’importe quelle ligne de code, cliquez avec le bouton droit pour ouvrir le menu contextuel , puis sélectionnez **Options rapide** (ou, pour aller plus vite, appuyez sur **Ctrl+**.). Si des options de refactorisation ou d’amélioration sont disponibles, elles sont affichées ; dans le cas contraire, le message `No quick options available here` apparaît dans le cadre de l’angle inférieur gauche de l’IDE.  
 
- ![Texte « aucune option » d’ampoule Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
+ ![Texte « aucune option » d’une ampoule Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
 
- Si vous êtes plus expérimenté, vous pouvez utiliser les touches de direction et **Ctrl+**. pour vérifier rapidement les opportunités de refactorisation des options rapides et nettoyer votre code.  
+ Si vous êtes plus expérimenté, vous pouvez utiliser les touches de direction et **Ctrl+**. pour vérifier les opportunités de refactorisation des options rapides et nettoyer votre code.  
 
  Pour plus d’informations sur les ampoules, consultez [Effectuer des actions rapides avec des ampoules](../ide/perform-quick-actions-with-light-bulbs.md).  
 
@@ -132,14 +128,14 @@ Le moyen le plus simple de générer votre projet consiste à appuyer sur **F7**
 
  Pointez sur une variable pour afficher la ou les valeurs et références qu'elle contient actuellement. Si vous remarquez une valeur à laquelle vous ne vous attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel.  Pour en savoir plus sur l’utilisation du débogueur, consultez [cet article](../debugger/getting-started-with-the-debugger.md).
 
- Par ailleurs, Visual Studio affiche la fenêtre Outils de diagnostic. Celle-ci vous permet d’observer l’utilisation de l’UC et de la mémoire de votre application au fil du temps. Ultérieurement lors du développement de vos applications, vous pourrez utiliser ces outils pour rechercher les utilisations du processeur ou les allocations de mémoire importantes et imprévues. Utilisez-les conjointement avec la fenêtre **Espion** et les points d’arrêt pour déterminer le problème à l’origine d’une utilisation élevée inattendue ou de la non-libération de ressources.  Pour plus d’informations, consultez [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md).
+ Par ailleurs, Visual Studio affiche la fenêtre **Outils de diagnostic**. Celle-ci vous permet d’observer l’utilisation au fil du temps de l’UC et de la mémoire par votre application. Ultérieurement lors du développement de vos applications, vous pourrez utiliser ces outils pour rechercher les utilisations du processeur ou les allocations de mémoire importantes et imprévues. Utilisez-les conjointement avec la fenêtre **Espion** et les points d’arrêt pour déterminer le problème à l’origine d’une utilisation élevée inattendue ou de la non-libération de ressources.  Pour plus d’informations, consultez [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md).
 
 ### <a name="run-unit-tests"></a>Exécuter des tests unitaires  
  Les tests unitaires sont votre première ligne de défense contre les bogues de code car, exécutés correctement, ils testent une seule « unité » de code, généralement une seule fonction, et leur débogage est généralement beaucoup plus simple que le débogage du programme complet. Visual Studio installe les infrastructures de tests unitaires Microsoft pour le code managé et le code natif. Utilisez une infrastructure de test unitaire pour créer des tests unitaires, les exécuter et signaler les résultats de ces tests. Réexécutez des tests unitaires quand vous apportez des modifications pour vérifier que votre code fonctionne toujours correctement. Quand vous utilisez Visual Studio Enterprise Edition, vous pouvez exécuter automatiquement des tests après chaque génération.  
 
  Pour commencer, consultez [Générer des tests unitaires pour votre code avec IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).  
 
- Pour en savoir plus sur les tests unitaires dans Visual Studio et sur la façon dont ils peuvent vous aider à créer du code de meilleure qualité, consultez [Concepts de base des tests unitaires](../test/unit-test-basics.md).  
+ Pour plus d’informations sur les tests unitaires dans Visual Studio et comment ils peuvent vous aider à créer du code de meilleure qualité, consultez [Concepts de base des tests unitaires](../test/unit-test-basics.md).  
 
 ### <a name="perform-static-code-analysis"></a>Effectuer une analyse statique du code  
  L’analyse statique du code désigne simplement la procédure de vérification automatique du code en vue d’identifier des problèmes courants susceptibles d’entraîner des erreurs d’exécution ou des problèmes de gestion du code. Après avoir résolu les erreurs évidentes qui font obstacle à la génération, prenez la bonne habitude d’exécuter cette analyse et consacrez du temps au traitement des avertissements qu’elle peut produire. Cela vous épargnera quelques maux de tête à l’avenir, et vous apprendrez par la même occasion quelques techniques en matière de style de code.  

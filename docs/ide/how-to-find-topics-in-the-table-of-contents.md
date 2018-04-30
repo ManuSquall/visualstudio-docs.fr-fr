@@ -1,13 +1,10 @@
 ---
-title: "Utiliser la table des matières de Help Viewer dans Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Utiliser la table des matières de Help Viewer dans Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - hv_contents
 helpviewer_keywords:
@@ -16,26 +13,25 @@ helpviewer_keywords:
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb49d915871bd9ac955ed61cdc7850bf35d6f41
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: db53125c30a2136500b6c99818b7143511bd2788
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Guide pratique pour rechercher des rubriques dans la table des matières
-Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour rechercher des informations. La table des matières est une liste pouvant être développée qui contient toutes les rubriques des livres installés. Pour des informations d’accessibilité relatives à la navigation dans la table des matières, consultez [Touches de raccourci (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
+Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour rechercher des informations. La table des matières est une liste pouvant être développée qui contient toutes les rubriques des livres installés. Pour obtenir des informations d’accessibilité sur la navigation dans la table des matières, consultez [Touches de raccourci (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
   
 > [!IMPORTANT]
 >  Le nombre de rubriques disponibles dans la table des matières dépend du filtre que vous avez sélectionné.  
   
 ## <a name="filter-the-toc"></a>Filtrer la table des matières  
-Vous pouvez filtrer la table des matières pour réduire le nombre de rubriques qui s’affichent sous l’onglet **Sommaire**. Les titres apparaissent dans la liste que s'ils contiennent la racine du terme que vous spécifiez. Par exemple, si vous spécifiez le filtre « configurer », seuls les titres qui contiennent « configure » ou « configurer » s'affichent. Les nœuds dont les titres ne contiennent pas le terme sont réduits à un seul nœud avec des points de suspension (...).  
+Vous pouvez filtrer la table des matières pour réduire le nombre de rubriques qui s’affichent sous l’onglet **Sommaire**. Les titres apparaissent dans la liste que s'ils contiennent la racine du terme que vous spécifiez. Par exemple, si vous spécifiez le filtre « configurer », seuls les titres qui contiennent « configure » ou « configurer » s'affichent. Les nœuds dont les titres ne contiennent pas le terme sont réduits à un seul nœud avec des points de suspension (**...**).  
   
 #### <a name="to-filter-the-toc"></a>Pour filtrer la table des matières  
   
@@ -53,7 +49,7 @@ Si vous avez ouvert une rubrique à l'aide des fonctionnalités d'index ou de re
   
 1.  Affichez une rubrique.  
   
-2.  Cliquez sur le bouton **Afficher une rubrique dans le sommaire** dans la barre d’outils ou appuyez sur **Ctrl + S**.  
+2.  Cliquez dans la barre d’outils sur le bouton **Afficher la rubrique dans le sommaire**, ou appuyez sur **Ctrl**+**S**.  
   
      L’onglet **Sommaire** s’ouvre et affiche l’emplacement de la rubrique dans la table des matières.  
   

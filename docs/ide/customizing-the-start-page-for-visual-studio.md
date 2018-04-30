@@ -1,12 +1,9 @@
 ---
-title: "Installer une page de démarrage personnalisée ou modifier l’élément de démarrage dans Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Installer une page de démarrage personnalisée ou modifier l’élément de démarrage dans Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/01/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ToolsOptionsPages.Startup
 helpviewer_keywords:
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Visual Studio Start Page
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc22bd23b5b245173321ed3a12379c6fe5622af
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9863fdfbfb73e49d0539ba1060f1e1c56888599c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Personnaliser la page de démarrage de Visual Studio
 
@@ -30,7 +27,7 @@ Vous pouvez personnaliser l’expérience de démarrage de Visual Studio de plus
 
 ## <a name="to-change-the-startup-item"></a>Pour modifier l’élément de démarrage
 
-1. Dans la barre de menus, sélectionnez **Outils**, **Options**.
+1. Dans la barre de menus, choisissez **Outils** > **Options**.
 
 1. Développez **Environnement**, puis choisissez **Démarrage**.
 
@@ -40,11 +37,11 @@ Vous pouvez personnaliser l’expérience de démarrage de Visual Studio de plus
 
 Vous pouvez [créer votre propre page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md) à l’aide du Kit SDK Visual Studio ou vous pouvez en utiliser une déjà créée par un autre utilisateur. Vous pouvez, par exemples, trouver des pages de démarrage personnalisées dans la [Place de marché Visual Studio](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Start%20Pages&sortBy=Downloads).
 
-Pour installer une page de démarrage personnalisée, ouvrez le fichier .vsix ou effectuez un copier-coller des fichiers de la page de démarrage dans le dossier **%USERPROFILE% \Documents\Visual Studio 2017\StartPages** sur votre ordinateur.
+Pour installer une page de démarrage personnalisée, ouvrez le fichier *.vsix*, ou effectuez un copier-coller des fichiers de la page de démarrage dans le dossier *%USERPROFILE%\Documents\Visual Studio 2017\StartPages* sur votre ordinateur.
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>Pour sélectionner la page de démarrage personnalisée à afficher
 
-1. Dans la barre de menus, sélectionnez **Outils**, **Options**.
+1. Dans la barre de menus, choisissez **Outils** > **Options**.
 
 1. Développez **Environnement**, puis choisissez **Démarrage**.
 

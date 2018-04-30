@@ -1,52 +1,25 @@
 ---
 title: Avantage Opsgility dans les abonnements Visual Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn the Opsgility training benefit included with sekected Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: cdaab75e85f1a628a5db29feec780f7c1d2a8db9
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Découvrez l’avantage Opsgility inclus dans l’abonnement Visual Studio sélectionné.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 3e481dbf88c377d1d54cb404200872ae062a2e02
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Avantage Opsgility dans les abonnements Visual Studio
 
-## <a name="overview"></a>Vue d'ensemble
 Les abonnements Visual Studio sélectionnés incluent un an d’accès à la formation à la demande et une remise de 15 % sur la formation dispensée par des instructeurs, en plus de l’accès à des ateliers pratiques, à des chemins d’accès de certification et bien plus encore.  
 
-## <a name="eligibility"></a>Éligibilité
-| Niveau d'abonnement / Programme                                                  | Avantage               | Renouvelable ?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise standard                                             | 12 mois             |  Non                                                                |
-| Visual Studio Enterprise annuel                                               | 12 mois             |  Non                                                                |
-| Visual Studio Enterprise mensuel                                              | Non disponible         |                                                                    |
-| Visual Studio Professional standard                                           | 6 mois              |  Non                                                                |
-| Visual Studio Professional annuel                                             | 6 mois              |  Non                                                                | 
-| Visual Studio Professional mensuel                                            | Non disponible         |                                                                    |
-| Visual Studio Test Pro                                                        | 6 mois              |  Non                                                                |
-| Plateformes MSDN                                                                | 6 mois              |  Non                                                                |
-| Visual Studio Dev Essentials                                                  | 3 mois              |  Non                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | Non disponible         |                                                                    |
-| Visual Studio Enterprise - FTE                                                | Non disponible         |                                                                    |
-| Visual Studio Enterprise - Microsoft Partner Network                          | Non disponible         |                                                                    |
-| Visual Studio Professional - Microsoft Partner Network                        | Non disponible         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                                 | Non disponible         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | Non disponible         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Non disponible         |                                                                    |
-| Microsoft Certified Trainer - Software & Services                             | Non disponible         |                                                                    |
-| Microsoft Certified Trainer - Software & Services Developer                   | Non disponible         |                                                                    |
-
-<sup>1</sup>  *Inclut NFR (Revente interdite), Microsoft Valued Partner (MVP), Region Director (RD) et Visual Studio Industry Partner (VSIP)*  
-
-Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour consulter la liste de tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
-
-## <a name="activation-steps"></a>Étapes d'activation
+## <a name="activation-steps"></a>Étapes d’activation
 1.  Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Recherchez la vignette Opsgility dans la section Outils de la page Avantages, puis cliquez sur le lien **Activer** en bas de la vignette de l’avantage.  
@@ -64,8 +37,19 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
     ![Avantage Opsgility, Page d’accueil](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
-## <a name="faq"></a>FAQ
-*Consultez les mises à jour disponibles ici.*
+## <a name="eligibility"></a>Éligibilité
+| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail | 12 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Professional (Standard, cloud annuel) | Licences en volume, Azure, Détail                                       | 6 mois                                                            |Non.  Disponible pour les nouveaux abonnés uniquement         |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 6 mois                                             |  Non.  Disponible pour les nouveaux abonnés uniquement         |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 6 mois                                              | Non.  Disponible pour les nouveaux abonnés uniquement         |
+| Visual Studio Dev Essentials | NA  | 3 mois |Non.  Disponible pour les nouveaux abonnés uniquement |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+
+*Exclut : MPN (Microsoft Partner Network), MVP (Microsoft Valued Partner), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
+
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
 
 ## <a name="support-resources"></a>Ressources de support technique
 -  Besoin d’aide avec Opsgility ?  Consultez les ressources suivantes :

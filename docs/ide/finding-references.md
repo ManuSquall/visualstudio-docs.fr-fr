@@ -1,29 +1,28 @@
 ---
-title: "Recherche de références dans votre code | Microsoft Docs"
-ms.custom: 
+title: Recherche de références dans votre code | Microsoft Docs
+ms.custom: ''
 ms.date: 09/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code editor, find all references
 - find all references
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 92c12e4d51255849843f938c032ca17b611eeeab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c59a73fd0ffa23dd35d989a0fd0a0ae38b2419a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="finding-references-in-your-code"></a>Recherche de références dans votre code  
 Vous pouvez utiliser la commande **Rechercher toutes les références** pour savoir où des éléments de code particuliers sont référencés dans tout votre code base. La commande **Rechercher toutes les références** est disponible dans le menu contextuel (clic droit) de l’élément dont vous souhaitez trouver les références. Si vous préférez utiliser le clavier, appuyez sur **Maj+F12**.  
 
-Les résultats s’affichent dans une fenêtre Outil nommée **Références '*élément*'**, où *élément* est le nom de l’élément qui fait l’objet de la recherche. À partir de la barre d’outils de la fenêtre **Références**, vous pouvez effectuer les opérations suivantes :  
+Les résultats s’affichent dans une fenêtre Outil nommée **Références <element>**, où *element* est le nom de l’élément qui fait l’objet de la recherche. À partir de la barre d’outils de la fenêtre **Références**, vous pouvez effectuer les opérations suivantes :  
 - Changer l’étendue de recherche dans une zone de liste déroulante. Vous pouvez choisir d’effectuer la recherche uniquement dans les documents modifiés dans l’ensemble de la solution.  
 - Copier l’élément référencé sélectionné en choisissant le bouton **Copier**.  
 - Pour accéder à l’emplacement suivant ou précédent dans la liste, choisissez les boutons appropriés appuyez sur les touches **F8** et **Maj+F8**.  
@@ -36,15 +35,15 @@ Vous pouvez également placer le pointeur de la souris sur n’importe quel rés
 
 ![Fenêtre Outil Rechercher toutes les références](../ide/media/vside_findallreferences.png)  
 
-### <a name="navigate-to-references"></a>Accéder à des références
+## <a name="navigate-to-references"></a>Accéder à des références
 Vous pouvez utiliser les méthodes suivantes pour accéder à des références dans la fenêtre **Références** :  
 
 - Appuyez sur **F8** pour accéder à la référence suivante, ou sur **Maj+F8** pour accéder à la référence précédente.  
 - Appuyez sur la touche **Entrée** sur une référence ou double-cliquez sur la référence pour y accéder dans le code.  
 - Dans le menu contextuel d’une référence, choisissez les commandes **Aller à l’emplacement précédent** ou**Aller à l’emplacement suivant**.  
-- Choisissez les flèches **Haut** et **Bas** (si elles sont activées dans la boîte de dialogue Options). Pour activer cette fonctionnalité, dans la barre de menus, choisissez **Outils**, **Options**, **Environnement**, **Onglets et fenêtres**, **Onglet d’aperçu**, puis cochez les cases **Autoriser l’ouverture des nouveaux fichiers dans l’onglet d’aperçu** et **Afficher les fichiers sélectionnés dans Rechercher les résultats**.  
+- Choisissez les flèches **Haut** et **Bas** (si elles sont activées dans la boîte de dialogue **Options**). Pour activer cette fonctionnalité, dans la barre de menus, choisissez **Outils** > **Options** > **Environnement** > **Onglets et fenêtres** > **Onglet d’aperçu**, puis cochez les cases **Autoriser l’ouverture des nouveaux fichiers dans l’onglet d’aperçu** et **Afficher les fichiers sélectionnés dans Rechercher les résultats**.  
 
-### <a name="change-reference-groupings"></a>Changer les regroupements de références  
+## <a name="change-reference-groupings"></a>Changer les regroupements de références  
 Par défaut, les références sont regroupées par projet, puis par définition. Toutefois, vous pouvez changer cet ordre de regroupement en changeant le paramètre défini dans la zone de liste déroulante **Grouper par :** de la barre d’outils. Par exemple, vous pouvez changer l’ordre du paramètre par défaut **Projet, puis définition** en **Définition, puis projet**, ainsi que par d’autres paramètres.  
 
 **Définition** et **Projet** sont les deux regroupements par défaut utilisés, mais vous pouvez en ajouter d’autres en choisissant la commande **Regroupement** dans le menu contextuel de l’élément sélectionné. Il peut être utile d’ajouter plusieurs regroupements si votre solution contient un grand nombre de fichiers et de chemins.  

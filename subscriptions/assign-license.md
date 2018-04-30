@@ -9,11 +9,11 @@ description: Découvrez comment les administrateurs peuvent attribuer des licenc
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b035f748f6d99595bc2570b54a4d6413cab72af5
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 62336656e551a085c6c8753e6baea06730f49510
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Attribution de licences dans le portail d’administration des abonnements Visual Studio
 
@@ -32,11 +32,13 @@ Si vous avez des licences disponibles pour les abonnements Visual Studio, vous p
 
     Si votre organisation utilise une adresse e-mail pour la réception des e-mails différente de l’adresse e-mail de connexion, vous pouvez l’entrer ici. Sélectionnez le lien hypertexte vous demandant si vos e-mails de notification et de connexion sont différents. 
 
-    Si vous souhaitez autoriser cet abonné à accéder aux téléchargements de logiciels quand il se connecte au [portail des abonnements Visual Studio](https:/my.visualstudio.com?wt.mc_id=o~msft~docs), laissez la case Téléchargements cochée. Si vous décochez cette case, l’utilisateur n’a pas accès aux téléchargements de logiciels, mais il garde l’accès à tous les autres avantages inclus dans son abonnement. Quand vous avez terminé, cliquez sur **Ajouter**.
+    **Accéder aux téléchargements :**  
+    Si vous souhaitez autoriser cet abonné à accéder aux téléchargements de logiciels quand il se connecte au [portail des abonnements Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), laissez la case Téléchargements cochée. Si vous décochez cette case, l’utilisateur n’a pas accès aux téléchargements de logiciels, mais il garde l’accès à tous les autres avantages inclus dans son abonnement. 
+    
+    Une fois que vous avez fini de choisir les options pour cet abonné, cliquez sur **Ajouter**.
 
-    ![Entrez les informations de l’abonné](_img\assign-license-add\add-subscriber-1.png)
-
-    ![Entrez les informations de l’abonné](_img\assign-license-add\add-subscriber-2.png)
+    ![Entrer les informations de l’abonné](_img\assign-license-add\add-subscriber-1.png)
+    ![Entrer les informations de l’abonné](_img\assign-license-add\add-subscriber-2.png)
 
 4.  Après l’ajout de l’abonné, un e-mail d’attribution, contenant des instructions supplémentaires, est automatiquement envoyé au nouvel abonné. Vous pouvez renvoyer l’e-mail d’attribution à tout moment en sélectionnant l’abonné et en cliquant sur le bouton **Renvoyer** dans le menu supérieur.
 
@@ -55,9 +57,7 @@ Si vous avez des licences disponibles pour les abonnements Visual Studio, vous p
 **Pour faciliter le chargement, respectez les bonnes pratiques suivantes :**
     - Vérifiez que les champs de formulaire ne contiennent pas de virgules.
     - Supprimez les espaces avant et après dans les champs de formulaire tels que les noms d’utilisateur.
-    - Assurez-vous que les prénoms ou noms d’utilisateur en deux parties ne contiennent pas d’espace supplémentaire (par exemple, le prénom « Maggie May » ne doit pas être entré sous la forme « Maggie  May », car le système ne supprime pas l’espace supplémentaire).
-
-    ![Modèle d’ajout en bloc](_img\assign-license-add\bulk-template.png)
+    - Vérifiez que les noms des utilisateurs ne contiennent pas d’espaces supplémentaires entre le prénom et le nom de famille (par exemple, vous ne devez pas entrer « Marie Dubois » sous la forme « Marie  Dubois », car le système ne supprime pas l’espace en trop). ![Modèle d’ajout en bloc](_img\assign-license-add\bulk-template.png)
 
 4.  Revenez au portail d’administration des abonnements Visual Studio et, dans la boîte de dialogue permettant de charger plusieurs abonnés, cliquez sur **Parcourir**. Accédez au fichier Excel que vous avez enregistré, puis cliquez sur **OK**. Vous pouvez observer la progression du chargement à l’écran. 
 

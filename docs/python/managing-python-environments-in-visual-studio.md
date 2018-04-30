@@ -1,26 +1,21 @@
 ---
-title: Guide pratique pour gérer des interpréteurs et des environnements Python | Microsoft Docs
+title: Guide pratique pour gérer des interpréteurs et des environnements Python
 description: Guide pratique pour utiliser la fenêtre Environnements Python dans Visual Studio afin de gérer des environnements globaux et virtuels, configurer des environnements personnalisés, installer des interpréteurs Python, installer des packages, définir des chemins de recherche et gérer des environnements pour des projets Visual Studio.
-ms.custom: ''
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1bf9c9c016a71c816ed8cc40b675c520e9c9397
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 422503cf1e9332ce2b42674f7a6293e844401772
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Gestion des environnements Python dans Visual Studio
 

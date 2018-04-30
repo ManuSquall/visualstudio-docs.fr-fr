@@ -1,52 +1,25 @@
 ---
 title: Avantage Power BI Pro dans les abonnements Visual Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Power BI Pro subscription included with selected Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: d7470903db579dff7a4bc0fd17a26e6b5494d675
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Découvrez l’abonnement Power BI Pro inclus dans certains abonnements Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 4f50af635744e9633e09765dd2c1b08876e0b598
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
+# <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
 
-## <a name="overview"></a>Vue d'ensemble
 Transformez vos données en visuels enrichis que vous pouvez collecter et organiser. 
 
-## <a name="eligibility"></a>Éligibilité
-| Niveau d'abonnement / Programme                                                  | Avantage               | Renouvelable ?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise standard                                             | Included              |  Oui                                                               |
-| Visual Studio Enterprise annuel                                               | Included              |  Oui                                                               |
-| Visual Studio Enterprise mensuel                                              | Non disponible         |                                                                    |
-| Visual Studio Professional standard                                           | Non disponible         |                                                                    |
-| Visual Studio Professional annuel                                             | Non disponible         |                                                                    | 
-| Visual Studio Professional mensuel                                            | Non disponible         |                                                                    |
-| Visual Studio Test Pro                                                        | Non disponible         |                                                                    |
-| Plateformes MSDN                                                                | Included              |  Oui                                                               |
-| Visual Studio Dev Essentials                                                  | Non disponible         |                                                                    |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | Included              |  Oui                                                               |
-| Visual Studio Enterprise - FTE                                                | Non disponible         |                                                                    |
-| Visual Studio Enterprise - Microsoft Partner Network                          | Non disponible         |                                                                    |
-| Visual Studio Professional - Microsoft Partner Network                        | Non disponible         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                                 | Non disponible         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | Non disponible         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Included              |  Oui                                                               |
-| Microsoft Certified Trainer - Software & Services                             | Included              |  Oui                                                               |
-| Microsoft Certified Trainer - Software & Services Developer                   | Included              |  Oui                                                               |
-
-<sup>1</sup>  *Inclut NFR (Revente interdite), Microsoft Valued Partner (MVP), Region Director (RD) et Visual Studio Industry Partner (VSIP)*  
-
-Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour consulter la liste de tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
-
-## <a name="activation-steps"></a>Étapes d'activation
+## <a name="activation-steps"></a>Étapes d’activation
 Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l’aide d’un compte existant. 
 1.  Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
@@ -84,7 +57,8 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
 
 8.  La page suivante confirme que votre abonnement Power BI Pro Developer (MSDN) coûte 0,00 €.  Cliquez sur **Suivant**.
 
-9.   Pour finir, vous devez entrer certaines informations de paiement.  Ne vous inquiétez pas. Aucun montant ne sera prélevé sur votre compte.  Notez que le prix est toujours de 0,00 €.  Vous pouvez choisir une carte de paiement, un compte bancaire ou une facture comme mode de paiement.  Si vous choisissez **Facture**, vous pouvez être invité à indiquer les raisons pour lesquelles vous préférez ce mode de paiement.  Entrez les informations demandées pour le mode de paiement choisi, puis cliquez sur **Passer commande**.   
+9.  Pour finir, vous devez entrer certaines informations de paiement.  Ne vous inquiétez pas. Aucun montant ne sera prélevé sur votre compte.  Notez que le prix est toujours de 0,00 €.  Vous pouvez choisir une carte de paiement, un compte bancaire ou une facture comme mode de paiement.  Si vous choisissez **Facture**, vous pouvez être invité à indiquer les raisons pour lesquelles vous préférez ce mode de paiement.  Entrez les informations demandées pour le mode de paiement choisi, puis cliquez sur **Passer commande**.  
+
     ![Avantage Power BI Pro, Coordonnées](_img\vs-pbi\vs-pbi-payment-blurred-cropped.png)
 
 10. La page suivante confirme que vous êtes prêt à commencer à utiliser Power BI Pro.  Cette page contient un lien pour accéder à la page de connexion.  Nous vous recommandons d’enregistrer le lien vers la page de connexion, ainsi que votre identifiant utilisateur.  (Vous recevez aussi un e-mail de bienvenue à l’adresse que vous avez fournie au moment de la création de votre compte.)  Vous pouvez également voir s’afficher une fenêtre Assistant Office 365 automatisée, qui vous permet de poser des questions au besoin.  Cliquez sur **Démarrer** pour continuer.
@@ -94,8 +68,20 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
 
 11. Votre compte Power BI Pro est créé. Vous avez maintenant accès au Centre d’administration Office 365, où vous pouvez gérer les utilisateurs et les domaines, installer des logiciels Office et obtenir plus d’informations sur Office 365.  C'est tout !  Vous êtes prêt à commencer. 
 
-## <a name="faq"></a>FAQ
-*Consultez les mises à jour disponibles ici.*
+## <a name="eligibility"></a>Éligibilité
+| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Disponible       |  Oui|
+| Visual Studio Professional (Standard, cloud annuel et cloud mensuel) | Licences en volume, Azure, Détail                                       | Non disponible                                                            |NA         |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                            |NA         |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible       |  Oui|
+| Visual Studio Dev Essentials | NA  | Non disponible |NA|
+| Visual Studio Enterprise (cloud mensuel) | Azure                                       | Non disponible                                  |NA|
+
+<sup>1</sup> *Inclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Service, MVP (Microsoft Valued Partner), RD (Region Director).  Exclut : MPN (Microsoft Partner Network), FTE, Imagine.*
+
+
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
 
 ## <a name="support-resources"></a>Ressources de support technique
 -  Besoin d’aide avec Power BI Pro ?  

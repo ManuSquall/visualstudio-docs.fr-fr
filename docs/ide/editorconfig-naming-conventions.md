@@ -1,30 +1,28 @@
 ---
 title: Conventions de nommage .NET pour les fichiers EditorConfig | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ca33a9dfa2eb4d0eb8250df2d99337ab4d550938
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 14b284c797add9545efdd291b06ce62b0b75cf03
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
-Les conventions de nommage concernent le nommage d’éléments de code tels que les classes, les propriétés et les méthodes. Par exemple, vous pouvez spécifier que les membres publics doivent être en majuscules ou que les méthodes asynchrones doivent se terminer par "Async". Vous pouvez appliquer ces règles en les spécifiant dans un [fichier .editorconfig](../ide/create-portable-custom-editor-options.md). Les violations des règles de nommage s’affichent soit dans la liste d’erreurs, soit sous forme de suggestion sous le nom, selon la gravité choisie pour vos règles. Il n’est pas nécessaire de générer le projet pour afficher les violations.
+Les conventions de nommage concernent le nommage d’éléments de code tels que les classes, les propriétés et les méthodes. Par exemple, vous pouvez spécifier que les membres publics doivent être en majuscules ou que les méthodes asynchrones doivent se terminer par "Async". Vous pouvez appliquer ces règles en les spécifiant dans un [fichier .editorconfig](../ide/create-portable-custom-editor-options.md). Les violations des règles de nommage apparaissent dans la **Liste d’erreurs** ou sous forme de suggestion sous le nom, selon la gravité choisie pour vos règles. Il n’est pas nécessaire de générer le projet pour afficher les violations.
 
-Les conventions de nommage doivent être classées de la plus spécifique à la moins spécifique dans le fichier .editorconfig. La première règle applicable rencontrée est la seule règle appliquée.
+Les conventions de nommage doivent être classées de la plus spécifique à la moins spécifique dans le fichier *.editorconfig*. La première règle applicable rencontrée est la seule règle appliquée.
 
 Pour chaque convention de nommage, vous devez spécifier les symboles auxquels elle s’applique, un style de nommage et un niveau de gravité pour l’application de la convention, en utilisant les propriétés décrites ci-dessous. L’ordre des propriétés n’est pas important.
 
@@ -147,15 +145,15 @@ Gravité | Effet
 ------------ | -------------
 none ou silent | Quand ce style n’est pas suivi, ne rien afficher à l’utilisateur ; toutefois, le code généré automatiquement suit ce style.
 suggestion | Quand ce style n’est pas suivi, l’afficher à l’utilisateur comme suggestion, sous la forme de points de soulignement sur les deux premiers caractères. Il n’a aucun effet au moment de la compilation.
-avertissement | Quand ce style n’est pas suivi, afficher un avertissement du compilateur dans la liste d’erreurs.
-erreur | Quand ce style n’est pas suivi, afficher une erreur du compilateur dans la liste d’erreurs.
+avertissement | Quand ce style n’est pas suivi, afficher un avertissement du compilateur dans la **Liste d’erreurs**.
+erreur | Quand ce style n’est pas suivi, afficher une erreur du compilateur dans la **Liste d’erreurs**.
 
 > [!NOTE]
-> Vous n’avez pas à générer votre projet pour afficher les violations de règle de nommage. Elles apparaissent au fur et à mesure que le code est modifié, soit dans la liste d’erreurs, soit comme suggestion.
+> Vous n’avez pas à générer votre projet pour afficher les violations de règle de nommage. Elles apparaissent au fur et à mesure que le code est modifié, dans la **Liste d’erreurs** ou comme suggestion.
 
 ## <a name="example"></a>Exemple
 
-Le fichier .editorconfig suivant contient une convention de nommage qui spécifie que les propriétés publiques, les méthodes, les champs, les événements et les délégués doivent être mis en majuscules. Notez que cette convention de nommage spécifie plusieurs types de symboles auxquels appliquer la règle, en utilisant une virgule pour séparer les valeurs.
+Le fichier *.editorconfig* suivant contient une convention de nommage qui spécifie que les propriétés publiques, les méthodes, les champs, les événements et les délégués doivent être mis en majuscules. Notez que cette convention de nommage spécifie plusieurs types de symboles auxquels appliquer la règle, en utilisant une virgule pour séparer les valeurs.
 
 ```EditorConfig
 # Public members must be capitalized (public_members_must_be_capitalized)
@@ -171,7 +169,7 @@ dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-La capture d’écran suivante montre l’effet de cette convention de nommage dans l’éditeur. Deux variables publiques ont été nommées sans mettre en majuscules la première lettre. L’une est `const` et l’autre est `readonly`. Étant donné que la règle de nommage s’applique uniquement aux symboles *readonly*, seule la variable `readonly` propose une suggestion de règle de nommage.
+La capture d’écran suivante montre l’effet de cette convention de nommage dans l’éditeur. Deux variables publiques ont été nommées sans mettre en majuscules la première lettre. L’une est `const` et l’autre est `readonly`. Étant donné que la règle de nommage s’applique uniquement aux symboles `readonly`, seule la variable `readonly` montre une suggestion de règle de nommage.
 
 ![Suggestion de règle de nommage](media/editorconfig-naming-rule-suggestion.png)
 
@@ -181,7 +179,7 @@ Remplaçons maintenant la gravité de la violation par `warning` :
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Si vous fermez et rouvrez votre fichier de code, au lieu de voir la suggestion sous la violation de nom, vous voyez une ligne ondulée verte et un avertissement dans la liste d’erreurs :
+Si vous fermez et que vous rouvrez votre fichier de code, au lieu de voir la suggestion sous la violation de nom, vous voyez une ligne ondulée verte et un avertissement dans la **Liste d’erreurs** :
 
 ![Avertissement de règle de nommage](media/editorconfig-naming-rule-warning.png)
 

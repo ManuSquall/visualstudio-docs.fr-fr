@@ -1,13 +1,8 @@
 ---
-title: Gestion des références dans un projet | Microsoft Docs
-ms.custom: ''
-ms.date: 10/26/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+title: Gestion des références dans un projet
+ms.date: 04/11/2018
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
 - cs.ProjectPropertiesReferencePaths
@@ -24,24 +19,24 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: ef62d3ab0436ff8b20766f2ffe88506d73c8f03b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="managing-references-in-a-project"></a>Gestion des références dans un projet
+# <a name="manage-references-in-a-project"></a>Gérer les références dans un projet
 
 Avant d’écrire du code pour un composant externe ou un service connecté, vous devez d’abord inclure une référence à celui-ci dans votre projet. Une référence est essentiellement une entrée dans un fichier projet qui contient les informations dont Visual Studio a besoin pour localiser le composant ou le service.
 
-Pour ajouter une référence, cliquez avec le bouton droit sur le nœud Références dans l’Explorateur de solutions et choisissez **Ajouter une référence**. Pour plus d’informations, consultez [Guide pratique pour ajouter ou supprimer des références à l’aide du gestionnaire de références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Pour ajouter une référence, cliquez avec le bouton droit sur le nœud **Références** ou **Dépendances** dans l’**Explorateur de solutions**, puis choisissez **Ajouter une référence**. Vous pouvez également cliquer avec le bouton droit sur le nœud de projet, et sélectionner **Ajouter** > **Référence**. Pour plus d’informations, consultez [Guide pratique pour ajouter ou supprimer des références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
-![Ajouter une référence dans Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
+![Ajouter une référence en Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 
-Vous pouvez faire référence aux types de composants et service suivants :
+Vous pouvez ajouter une référence aux types de composant et service suivants :
 
 - Bibliothèques de classes ou assemblys du .NET Framework
 
@@ -81,11 +76,11 @@ Si vous constatez que le SDK d’extension référencé par votre application n�
 
 1. Redémarrez Visual Studio et ouvrez votre application.
 
-1. Cliquez avec le bouton droit sur le nœud **Références** dans le projet qui a provoqué l’erreur, puis choisissez **Ajouter une référence**.
+1. Cliquez avec le bouton droit sur le nœud **Références** ou **Dépendances** dans le projet ayant déclenché l’erreur, puis choisissez **Ajouter une référence**.
 
 1. Cliquez sur l’onglet **Windows**, sur le sous-onglet **Extensions**, décochez les cases des anciens SDK d’extension, puis cochez les cases des nouveaux. Cliquez sur **OK**.
 
-## <a name="adding-a-reference-at-design-time"></a>Ajout d’une référence au moment de la conception
+## <a name="add-a-reference-at-design-time"></a>Ajouter une référence au moment du design
 
 Quand vous référencez un assembly dans votre projet, Visual Studio recherche cet assembly aux emplacements suivants :
 
@@ -94,7 +89,9 @@ Quand vous référencez un assembly dans votre projet, Visual Studio recherche c
 - Autres répertoires de projet de la même solution (vous pouvez rechercher ces assemblys sous l’onglet **Projets** ).
 
 > [!NOTE]
-> Tous les projets contiennent une référence implicite à mscorlib. Les projets Visual Basic contiennent une référence implicite à `Microsoft.VisualBasic`. Tous les projets contiennent une référence implicite à `System.Core`, même si `System.Core` est supprimé de la liste de références.
+> - Tous les projets contiennent une référence implicite à mscorlib.
+> - Tous les projets contiennent une référence implicite à `System.Core`, même si `System.Core` est supprimé de la liste de références.
+> - Les projets Visual Basic contiennent une référence implicite à `Microsoft.VisualBasic`.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Références à des composants partagés au moment de l’exécution
 
@@ -104,9 +101,9 @@ Si vous déployez une application qui contient une référence à un composant p
 
 Par défaut, la propriété <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> a la valeur **False** si l’assembly ou le composant se trouve dans le Global Assembly Cache ou s’il correspond à un composant d’infrastructure. Sinon, la valeur est **True**. Les références entre projets ont toujours la valeur **True**.
 
-## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Référence à un projet ou un assembly qui cible une autre version du .NET Framework
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Référencer un projet ou un assembly qui cible une autre version du .NET Framework
 
-Vous pouvez créer des applications qui référencent des projets ou des assemblys ciblant une version différente du .NET Framework. Par exemple, vous pouvez créer une application ciblant [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] qui fait référence à un assembly ciblant le [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. Si vous créez un projet ciblant une version antérieure du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], vous ne pouvez pas définir dans ce projet une référence à un projet ou à un assembly qui cible une version plus récente.
+Vous pouvez créer des applications qui référencent des projets ou des assemblys ciblant une version différente du .NET Framework. Par exemple, vous pouvez créer une application qui cible .NET Framework 4.6, qui référence un assembly ciblant .NET Framework 4.5. Si vous créez un projet qui cible une version antérieure du .NET Framework, vous ne pouvez pas définir dans ce projet une référence à un projet ou un assembly ciblant une version plus récente.
 
 Pour plus d’informations, consultez [Vue d’ensemble du multiciblage](../ide/visual-studio-multi-targeting-overview.md).
 
@@ -125,5 +122,5 @@ Les références de fichiers sont des références directes à des assemblys qui
 
 ## <a name="see-also"></a>Voir aussi
 
-[Dépannage de références rompues](../ide/troubleshooting-broken-references.md)
-[Guide pratique pour ajouter ou supprimer des références à l’aide du Gestionnaire de références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+- [Résolution des problèmes de références rompues](../ide/troubleshooting-broken-references.md)
+- [Guide pratique pour ajouter ou supprimer des références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

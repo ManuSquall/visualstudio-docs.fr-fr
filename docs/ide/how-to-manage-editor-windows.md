@@ -1,36 +1,34 @@
 ---
-title: "Guide pratique pour gérer les fenêtres de l’éditeur | Microsoft Docs"
-ms.custom: 
+title: Guide pratique pour gérer les fenêtres de l’éditeur | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - editor windows
 - windows, managing editor windows
 - editors, windows management
 - Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 877f1e556498a31ec7ddfac12b1907d159c713cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bd9d2d458c671fc590326989026aa776795243a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-manage-editor-windows"></a>Comment : gérer les fenêtres de l'Éditeur
-Vous avez la possibilité de travailler sur le code à plusieurs emplacements à la fois. Pour cela, vous pouvez fractionner une fenêtre de l’éditeur ou ouvrir plusieurs instances de fenêtres de l’éditeur.  
+# <a name="how-to-manage-editor-windows"></a>Guide pratique pour gérer les fenêtres de l’éditeur
+Vous avez la possibilité de travailler sur le code à plusieurs emplacements à la fois. Pour ce faire, fractionnez une fenêtre de l’éditeur ou ouvrez plusieurs instances de fenêtres de l’éditeur.  
   
 > [!NOTE]
 >  Les fenêtres de l’éditeur ne prennent pas toutes en charge les instances multiples.  
   
-## <a name="splitting-an-editor-window"></a>Fractionnement d’une fenêtre de l’éditeur  
+## <a name="split-an-editor-window"></a>Fractionner une fenêtre de l’éditeur  
  Une instance d’une fenêtre de l’éditeur peut être fractionnée en deux affichages distincts pour faciliter les modifications.  
   
 #### <a name="to-split-a-pane"></a>Pour fractionner un volet  
@@ -48,7 +46,7 @@ Vous avez la possibilité de travailler sur le code à plusieurs emplacements à
   
 -   Dans le menu **Fenêtre**, sélectionnez **Supprimer le fractionnement**.  
   
-## <a name="creating-new-windows"></a>Création de fenêtres  
+## <a name="create-new-windows"></a>Créer des fenêtres  
  Vous pouvez également créer plusieurs instances d’une fenêtre de l’éditeur. Avec cette fonctionnalité, vous pouvez ouvrir un long document dans plusieurs instances de l’éditeur pour afficher et modifier les différentes parties du document simultanément dans des fenêtres de l’éditeur distinctes et en plein écran.  
   
 #### <a name="to-create-a-new-window"></a>Pour créer une fenêtre  
@@ -58,6 +56,6 @@ Vous avez la possibilité de travailler sur le code à plusieurs emplacements à
      Une nouvelle instance avec onglet de l’éditeur est ajoutée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Personnalisation de l’éditeur](../ide/customizing-the-editor.md)   
- [Écriture de code](../ide/writing-code-in-the-code-and-text-editor.md)   
- [Personnalisation des dispositions de fenêtres](../ide/customizing-window-layouts-in-visual-studio.md)
+ [Personnaliser l’éditeur](../ide/customizing-the-editor.md)   
+ [Écrire du code](../ide/writing-code-in-the-code-and-text-editor.md)   
+ [Personnaliser les dispositions de fenêtres](../ide/customizing-window-layouts-in-visual-studio.md)

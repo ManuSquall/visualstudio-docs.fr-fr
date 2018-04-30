@@ -1,33 +1,31 @@
 ---
-title: "Guide pratique pour rechercher des rubriques | Microsoft Docs"
-ms.custom: 
+title: Guide pratique pour rechercher des rubriques | Microsoft Docs
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e93a3ca0c6cf7446b4b943c2e6a19018f1a16c7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 71b1de500398f9023bf63c5320fa4d92260a05ec
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-search-for-topics"></a>Guide pratique pour rechercher des rubriques
 Vous pouvez utiliser la fonctionnalité de recherche en texte intégral pour trouver toutes les rubriques qui contiennent un mot particulier. Si vous le souhaitez, affinez et personnalisez également votre recherche à l’aide d’expressions génériques, d’opérateurs logiques et d’opérateurs de recherche avancée.  
   
-Pour ouvrir l’onglet Rechercher, choisissez l’onglet **Rechercher** dans la fenêtre de la visionneuse d’aide ou, si vous préférez utiliser le clavier, choisissez **Ctrl+E**.  
+Pour ouvrir l’onglet **Rechercher**, choisissez l’onglet **Rechercher** dans la fenêtre de **Help Viewer** ou, si vous préférez utiliser le clavier, choisissez **Ctrl**+**E**.  
   
 ## <a name="to-perform-a-full-text-search"></a>Pour effectuer une recherche en texte intégral 
 1.  Dans la zone de recherche, tapez le mot à rechercher.  
   
-2.  Dans la requête de recherche, spécifiez les opérateurs logiques ou de recherche avancée à appliquer à la recherche, le cas échéant. Pour effectuer la recherche dans toute l’aide disponible, n’utilisez pas d’opérateurs.  
+2.  Dans la requête de recherche, spécifiez les opérateurs logiques ou de recherche avancée à appliquer à la recherche, le cas échéant. Pour effectuer une recherche dans toute l’aide disponible, n’utilisez pas d’opérateurs.  
   
     > [!NOTE]
     >  Dans la boîte de dialogue **Options de la visionneuse**, vous pouvez définir des préférences supplémentaires, par exemple, pour spécifier le nombre maximal de résultats de la recherche à afficher et si le contenu en anglais doit être affiché quand votre langue principale n’est pas l’anglais.  
@@ -42,7 +40,7 @@ Pour ouvrir l’onglet Rechercher, choisissez l’onglet **Rechercher** dans la 
 Pour créer des recherches ciblées qui retournent uniquement les rubriques qui vous intéressent, vous devez comprendre comment la syntaxe affecte votre requête. La syntaxe inclut les caractères spéciaux, les mots réservés et les filtres. Cette rubrique fournit des conseils, des procédures et des informations détaillées sur la syntaxe pour vous aider à mieux écrire vos requêtes.
   
 ### <a name="general-guidelines"></a>Indications générales  
-Le tableau suivant présente quelques règles de base et des instructions pour le développement de requêtes de recherche dans l’Aide.  
+Le tableau suivant présente des règles de base et des recommandations pour le développement de requêtes de recherche dans l’Aide.  
   
 |Syntaxe|Description|  
 |------------|-----------------|  

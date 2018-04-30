@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 065d9e23a8ae8b5e328786bb195d191df1388abb
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
-ms.translationtype: HT
+ms.openlocfilehash: 152f8d656bf83a6ad46770e695cd64c508dcc3bb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Générer des fichiers avec l’utilitaire TextTransform
 
@@ -60,7 +61,7 @@ TextTransform [<options>] <templateName>
 |**-I** \<includedirectory >|Un répertoire qui contient les modèles de texte inclus dans le modèle de texte spécifié.|
 |**P -** \<referencepath >|Un répertoire pour rechercher des assemblys spécifié dans le modèle de texte ou à l’aide de la **- r** option.<br /><br /> Par exemple, pour inclure les assemblys utilisés pour l’API Visual Studio, utilisez :<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|Nom, nom de type complet et assembly d’un processeur de directive peut être utilisé pour traiter des directives personnalisées dans le modèle de texte.|
-|**-un** [processorName]![directiveName] ! \<nom_paramètre > ! \<parameterValue >|Spécifiez une valeur de paramètre pour un processeur de directive. Si vous spécifiez simplement le nom de paramètre et la valeur, le paramètre sera disponible pour tous les processeurs de directive. Si vous spécifiez un processeur de directive, le paramètre est disponible uniquement pour le processeur est spécifié. Si vous spécifiez un nom de directive, le paramètre est disponible uniquement lorsque la directive spécifiée est en cours de traitement.<br /><br /> Pour accéder aux valeurs de paramètre à partir d’un processeur de directive ou d’un modèle de texte, utilisez [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). Dans un modèle de texte, incluez `hostspecific` dans la directive de modèle et d’appeler le message sur `this.Host`. Par exemple :<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Entrez toujours le ' !' marque, même si vous omettez le processeur et les noms de directive. Par exemple :<br /><br /> `-a !!param!value`|
+|**-un** [processorName] ! [directiveName] ! \<nom_paramètre > ! \<parameterValue >|Spécifiez une valeur de paramètre pour un processeur de directive. Si vous spécifiez simplement le nom de paramètre et la valeur, le paramètre sera disponible pour tous les processeurs de directive. Si vous spécifiez un processeur de directive, le paramètre est disponible uniquement pour le processeur est spécifié. Si vous spécifiez un nom de directive, le paramètre est disponible uniquement lorsque la directive spécifiée est en cours de traitement.<br /><br /> Pour accéder aux valeurs de paramètre à partir d’un processeur de directive ou d’un modèle de texte, utilisez [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). Dans un modèle de texte, incluez `hostspecific` dans la directive de modèle et d’appeler le message sur `this.Host`. Par exemple :<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Entrez toujours le ' !' marque, même si vous omettez le processeur et les noms de directive. Par exemple :<br /><br /> `-a !!param!value`|
 |**-h**|Fournit une aide.|
 
 ## <a name="related-topics"></a>Rubriques connexes

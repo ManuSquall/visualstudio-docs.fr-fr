@@ -1,12 +1,9 @@
 ---
-title: "Créer des solutions et des projets dans Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Créer des solutions et des projets dans Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4bb984c1a6947438df663e228bb21bda4eea763c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-solutions-and-projects"></a>Créer des solutions et des projets
 
@@ -32,7 +29,7 @@ Les *projets* sont des conteneurs logiques dans Visual Studio qui regroupent tou
 
 ![Hiérarchie de projet/solution](./media/vside-proj-soln.png)
 
-Vous pouvez afficher vos solutions et projets dans une fenêtre Outil appelée **Explorateur de solutions**. La capture d’écran suivante montre un exemple de solution dans l’Explorateur de solutions (BikeSharing.Xamarin UWP) qui contient deux projets : BikeSharing.Clients.Core et BikeSharing.Clients.Windows. Chaque projet contient plusieurs fichiers, dossiers et références. Le nom du projet en gras est le *projet de démarrage*, c’est-à-dire le projet qui démarre quand vous exécutez l’application. Vous pouvez spécifier le projet à utiliser comme projet de démarrage.
+Vous pouvez afficher vos solutions et projets dans une fenêtre Outil appelée **Explorateur de solutions**. La capture d’écran suivante montre un exemple de solution dans l’**Explorateur de solutions** (**BikeSharing.Xamarin-UWP**), qui contient deux projets : **BikeSharing.Clients.Core** et **BikeSharing.Clients.Windows**. Chaque projet contient plusieurs fichiers, dossiers et références. Le nom du projet en gras est le *projet de démarrage*, c’est-à-dire le projet qui démarre quand vous exécutez l’application. Vous pouvez spécifier le projet à utiliser comme projet de démarrage.
 
 ![Explorateur de solutions avec des projets](./media/vside-solution-explorer-projects.png)
 
@@ -45,7 +42,7 @@ Cela étant dit, le développement d’applications dans Visual Studio peut se f
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Pour créer un projet à partir d’un modèle de projet
 
-1. Il existe plusieurs façons de créer un projet dans Visual Studio. Dans la page de démarrage, entrez le nom d’un modèle de projet dans la zone **Rechercher dans les modèles de projet**, ou choisissez le lien **Créer un projet** pour ouvrir la boîte de dialogue **Nouveau projet**. Vous pouvez également choisir **Fichier** > **Nouveau** > **Projet...**  dans la barre de menus ou le bouton **Nouveau projet** dans la barre d’outils.
+1. Il existe plusieurs façons de créer un projet dans Visual Studio. Dans la **Page de démarrage**, entrez le nom d’un modèle de projet dans la zone **Rechercher dans les modèles de projet**, ou choisissez le lien **Créer un projet** pour ouvrir la boîte de dialogue **Nouveau projet**. Vous pouvez également choisir **Fichier** > **Nouveau** > **Projet...**  dans la barre de menus ou le bouton **Nouveau projet** dans la barre d’outils.
 
   ![Page de démarrage](./media/vside-newproject1.png)
 
@@ -68,7 +65,7 @@ Cela étant dit, le développement d’applications dans Visual Studio peut se f
 
 1. Choisissez le bouton **OK** pour créer la solution et le projet.
 
-1. Si vous souhaitez ajouter un projet supplémentaire à la solution, choisissez le nœud de la solution dans l’Explorateur de solutions et, dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
+1. Si vous souhaitez ajouter un projet supplémentaire à la solution, choisissez le nœud de la solution dans l’**Explorateur de solutions** puis, dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Créer un projet à partir de fichiers de code existants
 
@@ -122,10 +119,10 @@ Pour créer un projet temporaire, accédez d’abord à **Outils** > **Options**
 
 ## <a name="delete-a-solution-project-or-item"></a>Supprimer une solution, un projet ou un élément
 
-Vous pouvez supprimer des solutions et tout leur contenu définitivement, mais cela n’est pas possible par le biais de l’IDE de Visual Studio. En effet, quand vous supprimez des éléments dans Visual Studio, les éléments sont supprimés uniquement dans la solution ou le projet actifs. Pour supprimer définitivement une solution ou un autre composant de votre système, vous devez supprimer le dossier contenant les fichiers solution .sln et .suo directement dans l’Explorateur de fichiers. Toutefois, avant de supprimer définitivement une solution, nous vous recommandons de sauvegarder les projets ou fichiers dont vous pourriez avoir besoin ultérieurement.
+Vous pouvez supprimer des solutions et tout leur contenu définitivement, mais cela n’est pas possible par le biais de l’IDE de Visual Studio. En effet, quand vous supprimez des éléments dans Visual Studio, les éléments sont supprimés uniquement dans la solution ou le projet actifs. Pour supprimer définitivement une solution ou un autre composant de votre système, vous devez supprimer le dossier contenant les fichiers solution *.sln* et *.suo* dans l’Explorateur de fichiers. Toutefois, avant de supprimer définitivement une solution, nous vous recommandons de sauvegarder les projets ou fichiers dont vous pourriez avoir besoin ultérieurement.
 
 > [!NOTE]
-> Le fichier .suo est un fichier masqué qui n’apparaît pas dans les paramètres par défaut de l’Explorateur de fichiers. Pour afficher les fichiers masqués, dans le menu **Affichage** de l’Explorateur de fichiers, cochez la case **Éléments masqués**.
+> Le fichier *.suo* est un fichier masqué qui n’apparaît pas dans les paramètres par défaut de l’Explorateur de fichiers. Pour afficher les fichiers masqués, dans le menu **Affichage** de l’Explorateur de fichiers, cochez la case **Éléments masqués**.
 
 ### <a name="to-permanently-delete-a-solution"></a>Pour supprimer définitivement une solution
 

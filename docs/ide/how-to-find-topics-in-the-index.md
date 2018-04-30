@@ -1,12 +1,10 @@
 ---
-title: "Utiliser l’index de la visionneuse d’aide de Visual Studio | Documents Microsoft"
-ms.custom: 
+title: Utiliser l’index de l’application Help Viewer de Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,18 +13,18 @@ helpviewer_keywords:
 - index filtering [Help Viewer]
 - Help Viewer, index filtering
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e6c9df2254108b778eb1478311ddaa386f70d74
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ee913682452e94bb0e973dff9e98e496b8cb3c70
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="finding-topics-by-using-the-help-viewer-index"></a>Recherche de rubriques avec l’index de la visionneuse d’aide
+# <a name="find-topics-by-using-the-help-viewer-index"></a>Rechercher des rubriques à l’aide de l’index de l’application Help Viewer
 L’index contient une liste de mots clés qui sont associés à des rubriques dans le contenu installé. Chaque rubrique peut être associée à plusieurs mots clés et chaque mot clé peut être associé à plusieurs rubriques. Utilisez cet index comme celui d’un livre.  
   
 ## <a name="to-find-a-topic-by-using-the-index"></a>Pour rechercher une rubrique à l’aide de l’index  

@@ -1,13 +1,9 @@
 ---
 title: VSPerfCmd | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, VSPerfCmd tool
 - command-line tools, VSPerfCmd tool
@@ -15,17 +11,16 @@ helpviewer_keywords:
 - profiling tools,VSPerfCmd
 - VSPerfCmd tool
 ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af5636866e2d91cc5aac5c8054a92961aeb3d042
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 869aa12259775a87030fcff6956c644d8296f3a8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 L’outil **VSPerfCmd.exe** est utilisé pour démarrer et arrêter la collecte de données de performances. Il utilise la syntaxe suivante :  
@@ -47,7 +42,7 @@ VSPerfCmd [/U] [/options]
 |[Counter](../profiling/counter.md) **:** `cfg`|Quand l’exemple de méthode de profilage par échantillonnage est utilisée, spécifie un compteur d’UC et le nombre d’événements à utiliser comme intervalle d’échantillonnage. Vous ne pouvez échantillonner qu’une seule valeur de compteur.<br /><br /> Quand la méthode de profilage par instrumentation est utilisée, spécifie un compteur d’UC à collecter à chaque point d’instrumentation. À utiliser seulement avec **Start:**`Trace`, **Attach** ou **Launch**.|  
 |[QueryCounters](../profiling/querycounters.md)|Affiche une liste des compteurs d’UC valides pour la machine active.|  
 |[WinCounter](../profiling/wincounter.md) **:** *path*|Spécifie un événement de compteur de performance Windows à inclure avec les données de marque du profil. À utiliser uniquement avec **Start**.|  
-|[AutoMark](../profiling/automark.md) **:** *n*|Spécifie l’intervalle de temps (en millisecondes) entre les événements de collecte des données du compteur de performances Windows. À utiliser avec **WinCounter**.|  
+|[AutoMark](../profiling/automark.md)  **:** *n*|Spécifie l’intervalle de temps (en millisecondes) entre les événements de collecte des données du compteur de performances Windows. À utiliser avec **WinCounter**.|  
 |[Events](../profiling/events-vsperfcmd.md) **:** `option`|Contrôle la collecte des événements de suivi d’événements pour Windows (ETW) spécifiés. Les données ETW sont collectées dans un fichier .itl qui n’est pas le fichier de profilage de données de profilage (.vsp).|  
 |[État](../profiling/status.md)|Affiche l’état du profileur, des informations sur les processus qui sont en cours de profilage et les comptes qui sont autorisés à contrôler le profileur.|  
 |[Shutdown](../profiling/shutdown.md)[**:**`n`]|Ferme le fichier de données de profilage et désactive le profileur.|  
@@ -57,7 +52,7 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|Arrête la collecte de données pour le processus spécifié.|  
 |[ThreadOn et ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Reprend le profilage pour le processus spécifié après la mise en suspens du profilage par un appel à **VSPerfCmdThreadOff**. Utilisez **ThreadOn** seulement en cas de profilage avec la méthode d’instrumentation.|  
 |[ThreadOn et ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Suspend le profilage pour le thread spécifié. Utilisez **ThreadOff** seulement en cas de profilage avec la méthode d’instrumentation.|  
-|[Mark](../profiling/mark.md) **:** *MarkNum*[**,***MarkText***]**|Insère une marque dans le fichier de données de profilage, avec un texte facultatif.|  
+|[Mark](../profiling/mark.md)  **:** *MarkNum*[**,***MarkText***]**|Insère une marque dans le fichier de données de profilage, avec un texte facultatif.|  
   
 ## <a name="sampling-method-options"></a>Options de méthode d’échantillonnage  
  Les options suivantes sont disponibles seulement quand vous utilisez la méthode de profilage par échantillonnage.  
@@ -67,7 +62,7 @@ VSPerfCmd [/U] [/options]
 |[Launch](../profiling/launch.md) **:** *Exécutable*|Démarre l’application spécifiée et démarre le profileur.|  
 |[Args](../profiling/args.md) **:** *Arguments*|Spécifie les arguments de ligne de commande à passer à l’application lancée.|  
 |[Console](../profiling/console.md)|Démarre la commande spécifiée dans une nouvelle fenêtre d’invite de commandes.|  
-|[Attach](../profiling/attach.md) **:** *PID*[**,***PID*]|Démarre le profilage des processus spécifiés. Les processus peuvent être identifiés par l’ID de processus ou par le nom du processus.|  
+|[Attach](../profiling/attach.md)  **:** *PID*[**,***PID*]|Démarre le profilage des processus spécifiés. Les processus peuvent être identifiés par l’ID de processus ou par le nom du processus.|  
 |[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Arrête le profilage des processus spécifiés. Les processus peuvent être identifiés par l’ID de processus ou par le nom du processus. Si aucun processus n’est spécifié, le profilage est arrêté pour tous les processus.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Collecte les données d’allocation de mémoire et les données de durée de vie des objets de .NET. À utiliser seulement avec l’option **VSPerfCmdLaunch**.|  
   
