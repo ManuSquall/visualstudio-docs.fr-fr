@@ -1,27 +1,21 @@
 ---
-title: Guide pratique pour définir des commandes de menu personnalisées pour les projets Python | Microsoft Docs
+title: Guide pratique pour définir des commandes de menu personnalisées pour les projets Python
 description: Montre comment modifier des fichiers projet et des fichiers de cibles pour ajouter des commandes personnalisées dans le menu contextuel du projet Python dans Visual Studio. Les commandes peuvent être appelées sur des programmes exécutables, des scripts, des modules, des extraits de code inline et des commandes pip.
-ms.custom: ''
 ms.date: 02/02/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a8e7f1f05ba6a93e696ee13e2f28305b8784d7c2
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 93d7e01037712d633ed4c23534163924647183f4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Définition de commandes personnalisées pour les projets Python
 

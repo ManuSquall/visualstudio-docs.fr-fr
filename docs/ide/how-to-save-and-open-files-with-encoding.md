@@ -1,30 +1,28 @@
 ---
 title: Guide pratique pour enregistrer et ouvrir des fichiers avec encodage | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Unicode, bi-directional language support
 - files, encoding
 - bi-directional language support, encoded files
 - file encoding, bi-directional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
-caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 25ec36e6b124f47c4bb13be8f7affd9b7ee54553
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 117f82cca454a4d82e6789c17486e808912387be
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>Comment : enregistrer et ouvrir des fichiers avec encodage
+# <a name="how-to-save-and-open-files-with-encoding"></a>Guide pratique pour enregistrer et ouvrir des fichiers avec encodage
 Vous pouvez enregistrer des fichiers avec encodage de caractères spécifiques pour prendre en charge des langues bidirectionnelles. Vous pouvez également spécifier un codage à l’ouverture d’un fichier, afin que Visual Studio affiche le fichier correctement.  
   
 ### <a name="to-save-a-file-with-encoding"></a>Pour enregistrer un fichier avec encodage  
@@ -62,4 +60,4 @@ Vous pouvez enregistrer des fichiers avec encodage de caractères spécifiques p
 ## <a name="see-also"></a>Voir aussi
 [Encodages et sauts de ligne](encodings-and-line-breaks.md)  
 [Encodage et globalisation des applications Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
-[Globalisation et localisation d’applications](../ide/globalizing-and-localizing-applications.md)
+[Globaliser et localiser des applications](../ide/globalizing-and-localizing-applications.md)

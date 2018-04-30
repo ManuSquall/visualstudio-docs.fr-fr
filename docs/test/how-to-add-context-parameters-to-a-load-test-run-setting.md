@@ -1,20 +1,20 @@
 ---
 title: Ajouter des paramètres de contexte dans un paramètre d’exécution des tests de charge dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 03db08b701574a4e910b96c843d0f2638e71a4f7
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0d563adc5e6b43aa5371fe08f410880a6aba0a09
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Comment : ajouter des paramètres de contexte dans un paramètre d'exécution des tests de charge
 
@@ -34,9 +34,9 @@ Si vous assignez la valeur du paramètre de contexte Webserver1 à `http://Corpo
 
 En outre, en assignant des valeurs différentes à un paramètre de contexte en reprenant le même nom dans des paramètres d'exécution du test de charge différents, vous pouvez exécuter le test de charge dans différents environnements :
 
--   Paramètre d’exécution du serveur web intermédiaire d’entreprise : paramètre de contexte nommé WebServer1=http://CorporateStagingWebServer
+-   Paramètre d’exécution du serveur web de préproduction d’entreprise : paramètre de contexte nommé WebServer1=http://CorporateStagingWebServer
 
--   Paramètre d’exécution de serveur web de production d’entreprise : paramètre de contexte nommé WebServer1=http://CorporateProductionWebServer
+-   Paramètre d’exécution du serveur web de production d’entreprise : paramètre de contexte nommé WebServer1=http://CorporateProductionWebServer
 
  **Changement du paramètre d’exécution depuis la ligne de commande**
 

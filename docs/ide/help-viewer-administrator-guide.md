@@ -1,32 +1,30 @@
 ---
-title: "Guide de l’administrateur Help Viewer │ Microsoft Docs"
-ms.custom: 
+title: Guide de l’administrateur Help Viewer | Microsoft Docs
+ms.custom: ''
 ms.date: 11/01/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5f509b0ace14c4e0becd714e25ee9ec26770c6e9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dfd290d4395daa6576f4e86d55cdf358a0cf3b5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-viewer-administrator-guide"></a>Guide de l’administrateur Help Viewer
 La visionneuse d’aide vous permet de gérer les installations locales d’aide pour les environnements réseau avec ou sans accès à Internet. Le contenu d’aide locale est configuré sur la base de l’ordinateur. Par défaut, les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour leur installation d’aide locale.  
   
-Si votre environnement réseau permet aux clients d’accéder à Internet, vous pouvez déployer le contenu de l’aide locale depuis Internet à l’aide de l’exécutable Help Content Manager. Pour plus d’informations sur la syntaxe de ligne de commande HlpCtntMgr.exe, consultez [Arguments de ligne de commande pour Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md).
+Si votre environnement réseau permet aux clients d’accéder à Internet, vous pouvez déployer le contenu de l’aide locale depuis Internet à l’aide de l’exécutable **Help Content Manager**. Pour plus d’informations sur la syntaxe de ligne de commande de *HlpCtntMgr.exe*, consultez les [Arguments de ligne de commande pour Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md).
 
 Pour obtenir des informations sur la création de contenu, la création d’un point de terminaison de service intranet et les types d’activités similaires, consultez [Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md).  
   
-Si votre environnement réseau n’offre pas de connectivité Internet, Help Viewer peut déployer le contenu de l’aide locale depuis le réseau intranet ou un partage réseau. Vous pouvez également désactiver des options de l’aide de l’IDE de Visual Studio en utilisant des [substitutions de clé de Registre](../ide/help-content-manager-overrides.md) pour les fonctionnalités suivantes :
+Si votre environnement réseau n’offre pas de connectivité Internet, Help Viewer peut déployer le contenu de l’aide locale à partir de l’intranet ou d’un partage réseau. Vous pouvez également désactiver des options de l’aide de l’IDE de Visual Studio en utilisant des [substitutions de clé de Registre](../ide/help-content-manager-overrides.md) pour les fonctionnalités suivantes :
 
 - Aide en ligne et aide hors connexion
 
@@ -37,21 +35,22 @@ Si votre environnement réseau n’offre pas de connectivité Internet, Help Vie
 - Gestion du contenu 
   
 ## <a name="deploying-local-help-content-from-the-internet"></a>Déploiement du contenu de l’aide locale à partir d’Internet  
-Vous pouvez utiliser Content Manager (HlpCtntMgr.exe) pour déployer le contenu de l’aide locale depuis Internet sur des ordinateurs clients. Utilisez la syntaxe suivante :  
+Vous pouvez utiliser **Help Content Manager** (*HlpCtntMgr.exe*) pour déployer le contenu de l’aide locale depuis Internet sur des ordinateurs clients. Utilisez la syntaxe suivante :  
   
 ```
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
   
-Pour plus d’informations sur la syntaxe de ligne de commande HlpCtntMgr.exe, consultez [Arguments de ligne de commande pour Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md).  
+Pour plus d’informations sur la syntaxe de ligne de commande de *HlpCtntMgr.exe*, consultez les [Arguments de ligne de commande pour Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md).  
   
 Configuration requise :  
   
 -   Les ordinateurs clients doivent avoir accès à Internet.  
   
 -   Les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour, ajouter ou supprimer le contenu d’aide locale une fois celui-ci installé.  
-  
- Avertissements :  
+
+
+Avertissements :  
   
 -   La source par défaut de l’aide sera toujours en ligne.
   
@@ -64,7 +63,7 @@ L’exemple suivant installe le contenu en anglais pour Visual Studio sur un ord
   
 2.  Tapez la commande suivante :  
   
-     C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us  
+     `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`  
   
 3.  Appuyez sur **Entrée**.  
   
@@ -78,7 +77,7 @@ Configuration requise :
 -   Les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour, ajouter ou supprimer le contenu d’aide locale une fois celui-ci installé.  
   
     > [!TIP]
-    >  Si les utilisateurs ne disposent pas des droits d’administrateur, nous vous recommandons de désactiver l’onglet Gérer le contenu de la visionneuse d’aide. Pour plus d’informations, consultez [Substitutions dans Help Content Manager](../ide/help-content-manager-overrides.md).  
+    >  Si les utilisateurs ne disposent pas de droits d’administrateur, nous vous recommandons de désactiver l’onglet **Gérer le contenu** dans Help Viewer. Pour plus d’informations, consultez [Substitutions dans Help Content Manager](../ide/help-content-manager-overrides.md).  
   
 Avertissements :
   
@@ -97,7 +96,7 @@ Avant de pouvoir créer l’ensemble de contenu de base, vous devez d’abord d�
   
 4.  Choisissez **Mettre à jour** pour désinstaller l’aide locale.
   
-5.  Accédez à %ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15 et vérifiez que le dossier contient uniquement le fichier catalogType.xml.  
+5.  Accédez à *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* et vérifiez que le dossier contient uniquement le fichier *catalogType.xml*.  
   
  Une fois que vous avez supprimé tout le contenu local installé précédemment à l’aide de Visual Studio, vous êtes prêt à télécharger l’ensemble de contenu de base.  
   
@@ -108,20 +107,21 @@ Avant de pouvoir créer l’ensemble de contenu de base, vous devez d’abord d�
 2.  Sous **Documentation recommandée** ou **Documentation disponible**, accédez aux ensembles de documents à télécharger, puis choisissez **Ajouter**.  
   
 3.  Choisissez **Mettre à jour**.  
-  
- Vous devez ensuite créer un package du contenu pour qu’il puisse être déployé sur les ordinateurs clients.  
+
+
+Vous devez ensuite créer un package du contenu pour qu’il puisse être déployé sur les ordinateurs clients.  
   
 #### <a name="to-package-the-content"></a>Pour créer un package du contenu  
   
-1.  Créez un dossier pour copier le contenu en vue d’un déploiement ultérieur. Par exemple : C:\VSHelp.  
+1.  Créez un dossier pour copier le contenu en vue d’un déploiement ultérieur. Par exemple : *C:\VSHelp*.  
   
-2.  Ouvrez cmd.exe avec des autorisations d’administrateur.  
+2.  Ouvrez *cmd.exe* avec des autorisations d’administrateur.  
   
 3.  Accédez au dossier créé à l’étape 1.  
   
 4.  Tapez la commande suivante :  
   
-     Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*nom_dossier*>\ /y /e /k /o  
+     `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o ` 
   
      Par exemple :`Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`  
   
@@ -131,9 +131,9 @@ Avant de pouvoir créer l’ensemble de contenu de base, vous devez d’abord d�
   
 1.  Créez un partage réseau et copiez le contenu d’aide à cet emplacement.  
   
-     Par exemple, copiez le contenu du dossier C:\VSHelp dans \\\myserver\VSHelp.  
+     Par exemple, copiez le contenu du dossier *C:\VSHelp* dans *\\\myserver\VSHelp*.  
   
-2.  Créez un fichier .bat pour contenir le script de déploiement du contenu d’aide. Comme le client est susceptible de ne pas pouvoir lire les fichiers en cours de suppression dans le cadre de l’émission, vous devez désactiver le client avant d’émettre des mises à jour. Exemple :  
+2.  Créez un fichier *.bat* qui va contenir le script de déploiement du contenu d’aide. Comme le client est susceptible de ne pas pouvoir lire les fichiers en cours de suppression dans le cadre de l’émission, vous devez désactiver le client avant d’émettre des mises à jour. Exemple :  
   
     ```  
     REM - copy pre-ripped content to ProgramData  
@@ -141,10 +141,10 @@ Avant de pouvoir créer l’ensemble de contenu de base, vous devez d’abord d�
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```  
   
-3.  Exécutez le fichier .bat sur les machines locales sur lesquelles installer le contenu d’aide.  
+3.  Exécutez le fichier *.bat* sur les machines locales où le contenu d’aide doit être installé.  
   
 ## <a name="see-also"></a>Voir aussi
 [Arguments de ligne de commande pour Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md)  
-[Substitutions Help Content Manager](../ide/help-content-manager-overrides.md)  
+[Substitutions dans Help Content Manager](../ide/help-content-manager-overrides.md)  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
 [Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)

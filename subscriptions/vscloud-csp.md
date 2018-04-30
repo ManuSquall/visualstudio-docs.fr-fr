@@ -1,19 +1,19 @@
 ---
 title: Achat d’abonnements cloud Visual Studio pour les fournisseurs de solutions Cloud
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Information for Cloud Solution Providers on how to buy and manage Visual Studio cloud subscriptions for your customers.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: e6bbaa7e84da44b53bc7cea0d0b0746e4680caf2
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Informations destinées aux fournisseurs de solutions cloud concernant l’achat et la gestion d’abonnements cloud Visual Studio pour vos clients.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acheter et gérer des abonnements cloud Visual Studio pour vos clients
 
@@ -68,17 +68,17 @@ Si un abonné n’a pas activé son abonnement Visual Studio, c’est peut-être
 Pour voir les tarifs de Visual Studio pour les partenaires CSP, connectez-vous à l’[Espace partenaires](https://partnercenter.microsoft.com).  Choisissez **Tarification et offres** dans la navigation de gauche.  Choisissez le fichier de tarifs du mois en cours sous **Services basés sur l’utilisation** en haut à droite. Une fois la feuille de calcul Excel téléchargée, accédez à la feuille **Azure Price List** et filtrez la colonne **Meter Category** sur **Visual Studio**.
 
 Voici comment interpréter les différents éléments de cette feuille de calcul :
-| Catégorie de compteur    |   Nom                 |  Unités                                |           De quoi s’agit-il ?                          |
+| Catégorie de compteur    |   Name                 |  Unités                                |           De quoi s’agit-il ?                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Entreprise             |  Abonnement                         | Abonnement mensuel à Visual Studio Enterprise   |
 | Visual Studio     | Enterprise (annuel)    |  Abonnements annuels                 | Abonnement annuel à Visual Studio Enterprise    |
-| Visual Studio     | Professional           |  Abonnement                         | Abonnement mensuel à Visual Studio Professional |
+| Visual Studio     | Professionnel           |  Abonnement                         | Abonnement mensuel à Visual Studio Professional |
 | Visual Studio     | Professional (annuel)  |  Abonnements annuels                 | Abonnement annuel à Visual Studio Professional  |
 
 Nous offrons une remise de 5 % sur la sixième unité que vous achetez (pour un client donné) chaque mois pour chaque abonnement Visual Studio. C’est pourquoi il y a deux lignes pour chaque option d’abonnement. Une ligne affiche une « Valeur minimale » de 0, ce que vous devez interpréter comme prix de base pour les unités de 1 à 5. L’autre ligne affiche une « Valeur minimale » de 5. Il s’agit de la remise de 5 % qui s’applique aux unités 6 et plus.
 
 
-## <a name="faq"></a>FAQ
+## <a name="frequently-asked-questions"></a>FAQ
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Q : Comment les frais d’abonnement cloud **mensuels** sont-ils traités ?
 R : Lors du premier achat, nous facturons une quantité au prorata pour couvrir les jours restants du mois en cours. Par exemple, si un achat de 10 abonnements cloud mensuels Visual Studio Professional a été effectué le 15 avril, nous facturons cinq unités, car il reste 15 jours sur les 30 du mois d’avril (soit 50 %), et nous facturons donc les unités au prorata de 50 %. Le premier mai et chaque mois suivant jusqu’à ce que vous annuliez, les dix unités seront facturées.
 

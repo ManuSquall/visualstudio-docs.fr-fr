@@ -1,43 +1,45 @@
 ---
-title: Résolution des problèmes d’installation | Microsoft Docs
+title: Résolution des problèmes d’installation
 description: Parfois, des problèmes peuvent se produire. Cette page peut vous aider en cas d’échec de l’installation ou de la mise à niveau de Visual Studio.
 ms.date: 11/21/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
-ms.topic: conceptual
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
+ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8c86d4e3b28f32678c745ca7fd479881c43b18
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f0009aa15919cf04c3ff8e56edf4f10adcb7e0ea
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017
 
 ## <a name="symptoms"></a>Symptômes
+
 Quand vous essayez d’installer ou de mettre à jour Visual Studio 2017, l’opération échoue.
 
 ## <a name="workaround"></a>Solution de contournement
+
 Pour contourner ce problème, effectuez les étapes suivantes.
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Étape 1 : Vérifier si ce problème est un problème connu
+
 Il existe certains problèmes connus avec le programme d’installation de Visual Studio que Microsoft s’emploie à résoudre. Pour savoir s’il existe une solution de contournement à votre problème, consultez la [section Problèmes connus des notes de publication](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes#known-issues).
 
 ### <a name="step-2---check-with-the-developer-community"></a>Étape 2 : Vérifier auprès de la communauté de développeurs
+
 Effectuez une recherche à partir de votre message d’erreur auprès de la [Communauté de développeurs Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). D’autres membres de la communauté ont peut-être documenté une solution à votre problème.
 
 ### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Étape 3 : Supprimer le répertoire du programme d’installation de Visual Studio pour résoudre les problèmes de mise à niveau
+
 Le programme d’amorçage du programme d’installation de Visual Studio est un exécutable léger minimal qui installe le reste du programme d’installation de Visual Studio. La suppression des fichiers du programme d’installation de Visual Studio, puis la réexécution du programme d’amorçage peuvent résoudre certains échecs de mise à jour.
 
 >[!NOTE]
@@ -49,6 +51,7 @@ Effectuer les actions suivantes réinstalle les fichiers de Visual Studio Instal
 4. Essayez à nouveau d’installer ou de mettre à jour Visual Studio. Si le programme d’installation échoue à nouveau, passez à l’étape suivante.
 
 ### <a name="step-4---report-a-problem"></a>Étape 4 : Signaler un problème
+
 Dans certains cas (fichiers endommagés, par exemple), il peut se révéler nécessaire de résoudre les problèmes de manière individuelle :
 
 1. Collecter vos journaux d’installation. Pour plus d’informations, consultez [Guide pratique pour obtenir les journaux d’installation Visual Studio](#how-to-get-the-visual-studio-installation-logs).
@@ -58,6 +61,7 @@ Dans certains cas (fichiers endommagés, par exemple), il peut se révéler néc
 4. Cliquez sur **Suivant** pour vérifier le problème signalé, puis sur **Envoyer**.
 
 ### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>Étape 5 : Exécuter InstallCleanup.exe pour nettoyer les fichiers d’installation
+
 En dernier recours, vous pouvez [désinstaller Visual Studio](remove-visual-studio.md) pour supprimer tous les fichiers d’installation et les informations produit.
 
 1. Suivez les instructions de la rubrique [Supprimer Visual Studio](remove-visual-studio.md).
@@ -65,9 +69,11 @@ En dernier recours, vous pouvez [désinstaller Visual Studio](remove-visual-stud
 3. Essayez à nouveau d’installer ou de mettre à jour Visual Studio.
 
 ### <a name="step-6---contact-us-optional"></a>Étape 6 : Nous contacter (facultatif)
+
 Si aucune étape ne vous a permis de procéder à l’installation, vous pouvez nous contacter pour une conversation en direct pour une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>Comment résoudre les problèmes d’un programme d’installation hors connexion
+
 Voici un tableau susceptible de vous aider qui présente des problèmes connus et certaines solutions de contournement lors de l’installation à partir d’une disposition locale.
 
 | Problème       | Élément                   | Solution |
@@ -76,6 +82,7 @@ Voici un tableau susceptible de vous aider qui présente des problèmes connus e
 | L’installation des nouvelles charges de travail, langues et des nouveaux composants a échoué.  | `--layout`  | Assurez-vous d’avoir un accès Internet si vous installez depuis une disposition partielle et sélectionnez des charges de travail, composants ou langues non téléchargés préalablement dans cette disposition partielle. |
 
 ## <a name="how-to-get-the-visual-studio-installation-logs"></a>Guide pratique pour obtenir les journaux d’installation Visual Studio
+
 Les journaux d’installation sont nécessaires pour résoudre la plupart des problèmes d’installation. Lorsque vous envoyez un problème à l’aide de [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) dans Visual Studio Installer, ces journaux sont automatiquement inclus dans votre rapport.
 
 Si vous contactez le Support Microsoft, vous devrez peut-être fournir ces fichiers journaux d’installation à l’aide de [l’outil de collecte des journaux Microsoft Visual Studio et .NET Framework](https://aka.ms/vscollect). L’outil de collecte des journaux permet de collecter des journaux d’installation à partir de tous les composants installés par Visual 2017 Studio, y compris .NET Framework, Kit SDK Windows et SQL Server. Il permet également de collecter des informations sur l’ordinateur, un inventaire de Windows Installer et des informations du journal des événements Windows pour Visual Studio Installer, le programme d’installation de Windows et la restauration du système.
@@ -95,12 +102,14 @@ Pour collecter les journaux :
 Si aucune étape ne vous a permis de procéder à l’installation, vous pouvez nous contacter pour une conversation en direct pour une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Voici d’autres options :
+
 * Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans Visual Studio Installer et dans l’IDE de Visual Studio.
 * Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Vous pouvez suivre les problèmes au niveau d’un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) et y poser des questions et obtenir des réponses.
-* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio)  (Vous aurez besoin d’un compte [GitHub](https://github.com/).)
+* Vous pouvez suivre les problèmes au niveau d’un produit et obtenir des réponses dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
+* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter](https://gitter.im/Microsoft/VisualStudio). (Vous aurez besoin d’un compte [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Outils de détection et de gestion des instances de Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Supprimer Visual Studio 2017](remove-visual-studio.md)

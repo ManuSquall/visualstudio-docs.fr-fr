@@ -1,28 +1,21 @@
 ---
-title: Débogage en mode mixte pour Python | Microsoft Docs
-description: Guide pratique pour déboguer simultanément C++ et Python dans Visual Studio, y compris l’exécution pas à pas entre les environnements, les valeurs d’affichage et l’évaluation des expressions.
-ms.custom: ''
+title: Débogage en mode mixte pour Python
+description: Guide pratique pour déboguer simultanément C++ et Python dans Visual Studio, notamment pour passer d’un environnement à l’autre, afficher les valeurs et évaluer les expressions.
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-- C++
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4f555e24c1328a4d784e3f8c5b2d0f1a7c590f8b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 52aca112b802789f45f0a1d667d75b53a7535919
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Débogage conjoint de Python et de C++
 
@@ -118,7 +111,7 @@ Lorsqu’un frame natif (C ou C++) est actif, ses variables locales s’affichen
 
 ![Vue Python](media/mixed-mode-debugging-python-view.png)
 
-Pour désactiver cette fonctionnalité, cliquez avec le bouton droit sur un emplacement quelconque de la fenêtre Variables locales, puis désélectionnez l’option de menu **Python > Show Python View Nodes (Afficher les nœuds de vue Python)** :
+Pour désactiver cette fonctionnalité, cliquez avec le bouton droit sur un emplacement quelconque de la fenêtre Variables locales, puis désélectionnez l’option de menu **Python > Show Python View Nodes (Afficher les nœuds de vue Python)**  :
 
 ![Activation de la vue Python](media/mixed-mode-debugging-enable-python-view.png)
 

@@ -1,21 +1,19 @@
 ---
-title: "Utilisation de l’aperçu de définition dans Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Utilisation de l’aperçu de définition dans Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a7465b8432d00df83638dbfa98a36cf8dee469a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (ALT+F12)
 
@@ -75,18 +73,18 @@ Vous pouvez utiliser les raccourcis clavier suivants avec la fenêtre **Aperçu 
 
 |Fonctionnalité|Raccourci clavier|
 |-------------------|:-----------------------:|
-|Ouvrir la fenêtre de définition|Alt+F12|
-|Fermer la fenêtre de définition|Échap|
-|Promouvoir la fenêtre de définition en onglet de document standard|Maj+Alt+Début|
-|Naviguer entre les fenêtres de définition|Ctrl+Alt+- et Ctrl+Alt+=|
-|Naviguer entre plusieurs résultats|F8 et Maj+F8|
-|Permuter entre la fenêtre de l'éditeur de code et la fenêtre de définition|Maj+Échap|
+|Ouvrir la fenêtre de définition|**Alt**+**F12**|
+|Fermer la fenêtre de définition|**Échap**|
+|Promouvoir la fenêtre de définition en onglet de document standard|**Maj**+**Alt**+**Origine**|
+|Naviguer entre les fenêtres de définition|**Ctrl**+**Alt**+**-** et **Ctrl**+**Alt**+**=**|
+|Naviguer entre plusieurs résultats|**F8** et **Maj**+**F8**|
+|Permuter entre la fenêtre de l'éditeur de code et la fenêtre de définition|**Maj**+**Échap**|
 
 > [!NOTE]
 > Pour modifier le code dans une fenêtre **Aperçu de définition**, vous pouvez utiliser les mêmes raccourcis clavier que vous utilisez ailleurs dans Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Navigation dans le code](../ide/navigating-code.md)  
+[Naviguer dans le code](../ide/navigating-code.md)  
 [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)  
 [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md)

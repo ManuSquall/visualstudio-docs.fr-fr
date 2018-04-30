@@ -1,23 +1,21 @@
 ---
-title: "Guide pratique pour suivre votre code en personnalisant la barre de défilement | Microsoft Docs"
-ms.custom: 
+title: Guide pratique pour suivre votre code en personnalisant la barre de défilement
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f56e834e6c2b80706e4ed1d1a91583e1015791b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0262dd7573eb990fb56f03bfa668a4b8e9d95878
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Comment : suivre votre code en personnalisant la barre de défilement
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Guide pratique pour suivre votre code en personnalisant la barre de défilement
 
 Quand vous travaillez sur de longs fichiers de code, il peut être difficile de tout garder en tête. Vous pouvez personnaliser la barre de défilement de la fenêtre de code pour avoir une vue générale de ce qui se produit dans votre code.
 
@@ -25,7 +23,7 @@ Quand vous travaillez sur de longs fichiers de code, il peut être difficile de 
 
 1. Vous pouvez configurer la barre de défilement pour y afficher les modifications du code, les points d'arrêt, les erreurs et les signets.
 
-    Ouvrez la page d’options **Barre de défilement** en choisissant **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** ou un langage spécifique, ou en entrant **barre de défilement** dans la fenêtre Lancement rapide.
+    Ouvrez la page d’options **Barre de défilement** en choisissant **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** ou un langage spécifique, ou en entrant **barre de défilement** dans la fenêtre **Lancement rapide**.
 
 2. Sélectionnez **Afficher les annotations au-dessus de la barre de défilement verticale**, puis sélectionnez les annotations à afficher.
 
@@ -47,7 +45,7 @@ Quand vous travaillez sur de longs fichiers de code, il peut être difficile de 
 
     Dans la page d’options **Barre de défilement**, sélectionnez **Utiliser le mode barre pour la barre de défilement verticale** ou **Utiliser le mode mappage pour la barre de défilement verticale**. Vous pouvez choisir la largeur de l’affichage dans la liste déroulante **Vue d’ensemble du code source**.
 
-    Voici comment se présente l'exemple de recherche avec le mode mappage et une largeur moyenne :
+    Voici comment se présente l’exemple de recherche avec le mode mappage et une largeur **moyenne** :
 
     ![Barre de défilement en mode mappage](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
 
@@ -59,4 +57,4 @@ Quand vous travaillez sur de longs fichiers de code, il peut être difficile de 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Écrire du code dans l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Écrire du code dans l’éditeur](../ide/writing-code-in-the-code-and-text-editor.md)

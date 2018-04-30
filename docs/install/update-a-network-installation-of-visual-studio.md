@@ -1,33 +1,31 @@
 ---
-title: Mettre à jour une installation réseau de Visual Studio | Microsoft Docs
+title: Mettre à jour une installation réseau de Visual Studio
 description: Découvrez comment mettre à jour une installation réseau de Visual Studio à l’aide de la commande --layout
 ms.date: 08/14/2017
-ms.reviewer: tims
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f30a3290387da6b963115c07585dac0f8441502
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: ad8cfdb54b690dd9f5639bea71d790ef0d79a19a
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Mettre à jour une installation réseau de Visual Studio
 
 Il est possible de mettre à jour une disposition d’installation réseau de Visual Studio avec les dernières mises à jour de produit, afin de pouvoir l’utiliser comme point d’installation de la dernière mise à jour de Visual Studio, et pour gérer aussi les installations déjà déployées sur les stations de travail clientes.
 
 ## <a name="how-to-update-a-network-layout"></a>Comment mettre à jour une disposition réseau
+
 Si vous voulez actualiser le partage d’installation réseau afin qu’il englobe les dernières mises à jour, exécutez la commande --layout pour télécharger progressivement les packages mis à jour.
 
 Si vous avez sélectionné une disposition partielle lors de la création de la disposition réseau, ces paramètres sont enregistrés.  Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez.  (C’est une nouveauté de la version 15.3.)  Si vous utilisez une disposition de version antérieure, vous devez utiliser les mêmes paramètres de ligne de commande que ceux que vous avez utilisés lors de la création de la disposition d’installation réseau (autrement dit, les mêmes charges de travail et langues) pour mettre à jour son contenu.
@@ -38,35 +36,36 @@ Intéressons-nous de plus près à la création et à la mise à jour d’une di
 
 * Tout d’abord, voyons un exemple montrant comment créer une disposition avec une charge de travail pour l’anglais uniquement :
 
-  ```
+  ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
 * Voici comment mettre à jour cette même disposition vers une version plus récente. Vous n’êtes pas obligé de spécifier les paramètres de ligne de commande supplémentaires. Les paramètres précédents étaient enregistrés et ils vont être utilisés par toutes les commandes de disposition suivantes dans ce dossier de disposition.  
 
-  ```
+  ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout  
   ```
 
 * Voici comment mettre à jour votre disposition avec une version plus récente en mode sans assistance. L’opération de disposition exécute le processus d’installation dans une nouvelle fenêtre de console. La fenêtre reste ouverte pour que les utilisateurs puissent voir le résultat final, ainsi qu’un récapitulatif des erreurs qui se sont produites. Si vous effectuez une opération de disposition en mode sans assistance (par exemple, si vous avez un script qui est exécuté régulièrement pour mettre à jour votre disposition vers la version la plus récente), utilisez le paramètre `--passive` pour que le processus ferme automatiquement la fenêtre.
 
-  ```
+  ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --passive
   ```
 
 * Voici comment ajouter une charge de travail supplémentaire et une langue localisée.  (Cette commande ajoute la charge de travail Azure.)  À présent, Managed Desktop et Azure sont inclus dans cette disposition.  Les ressources de langue pour l’anglais et l’allemand sont également englobées pour toutes ces charges de travail.  De plus, la disposition est mise à jour avec la dernière version disponible.
 
-  ```
+  ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
 * Et pour finir, voici comment ajouter une charge de travail et une langue localisée supplémentaires sans mettre à jour la version. (Cette commande ajoute la charge de travail ASP.NET & Web.)  Désormais, les charges de travail Managed Desktop, Azure et ASP.NET & Web sont incluses dans cette disposition.  Les ressources de langue pour l’anglais, l’allemand et le français sont également englobées pour toutes ces charges de travail.  Toutefois, la disposition n’a été pas mise à jour vers la toute dernière version disponible lors de l’exécution de cette commande.  Elle reste à la version existante.
 
-  ```
+  ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
 ## <a name="how-to-deploy-an-update-to-client-machines"></a>Comment déployer une mise à jour sur les ordinateurs clients
+
 Selon la configuration de votre environnement réseau, une mise à jour peut être déployée par un administrateur d’entreprise ou lancée à partir d’un ordinateur client.
 
 * Les utilisateurs peuvent mettre à jour une instance de Visual Studio qui a été installée à partir d’un dossier d’installation hors connexion :
@@ -79,19 +78,19 @@ Selon la configuration de votre environnement réseau, une mise à jour peut êt
 
 > [!NOTE]
 > Utilisez la [commande vswhere.exe](tools-for-managing-visual-studio-instances.md) pour identifier le chemin d’installation d’une instance existante de Visual Studio sur un ordinateur client.
-
+>
 > [!TIP]
 > Pour plus d’informations sur le contrôle du moment de la présentation des notifications de mise à jour aux utilisateurs, consultez [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md).
 
 ## <a name="how-to-verify-a-layout"></a>Comment vérifier une disposition
+
 Utilisez l’option `--verify` pour effectuer la vérification dans le cache hors connexion fourni. Elle contrôle si des fichiers de package sont manquants ou non valides. À la fin de la vérification, la liste des fichiers manquants et non valides est imprimée.
 
-```
+```cmd
 vs_enterprise.exe --layout <layoutDir> --verify
 ```
 
 Le fichier vs_enterprise.exe peut être appelé à l’intérieur du répertoire layoutDir.
-
 
 > [!NOTE]
 > Certains fichiers de métadonnées importantes, qui sont nécessaires à l’option `--verify`, doivent se trouver dans le cache hors connexion de la disposition. Si ces fichiers de métadonnées sont manquants, "--verify" ne peut pas s’exécuter et le programme d’installation signale une erreur. Si vous rencontrez cette erreur, recréez une nouvelle disposition en mode hors connexion dans un dossier différent (ou dans le même dossier de cache hors connexion). Pour cela, exécutez la même commande de disposition que celle que vous avez utilisée pour créer la disposition hors connexion initiale. Par exemple, `Vs_enterprise.exe --layout <layoutDir>`.
@@ -99,15 +98,17 @@ Le fichier vs_enterprise.exe peut être appelé à l’intérieur du répertoire
 Comme Microsoft fournit régulièrement des mises à jour de Visual Studio, la version de la nouvelle disposition que vous créez peut donc être différente de celle de la disposition initiale.  
 
 ## <a name="how-to-fix-a-layout"></a>Comment corriger une disposition
+
 Utilisez `--fix` pour effectuer la même vérification que `--verify` et pour tenter également de résoudre les problèmes identifiés. Le processus `--fix` nécessite une connexion Internet, ainsi vous devez vous assurer que votre ordinateur est connecté à Internet avant d’appeler `--fix`.
 
-```
+```cmd
 vs_enterprise.exe --layout <layoutDir> --fix
 ```
 
 Le fichier vs_enterprise.exe peut être appelé à l’intérieur du répertoire layoutDir.
 
 ## <a name="how-to-remove-older-versions-from-a-layout"></a>Comment supprimer les versions antérieures d’une disposition
+
 Suite aux mises à jour de disposition que vous avez effectuées vers un cache hors connexion, le dossier du cache de disposition peut contenir quelques packages obsolètes qui ne sont plus utiles à la dernière installation en date de Visual Studio. Vous pouvez utiliser l’option `--clean` pour supprimer les packages obsolètes à partir d’un dossier de cache hors connexion.
 
 Pour ce faire, vous avez besoin du chemin de fichier du ou des manifestes de catalogue qui contiennent les packages obsolètes. Vous pouvez trouver les manifestes de catalogue dans un dossier Archive situé dans le cache de disposition en mode hors connexion. Ils sont enregistrés à cet endroit lorsque vous mettez à jour une disposition. Dans le dossier Archive, il existe un ou plusieurs dossiers nommés GUID qui contiennent chacun un manifeste de catalogue obsolète. Le nombre de dossiers GUID doit être le même que le nombre de mises à jour apportées à votre cache hors connexion.
@@ -116,32 +117,35 @@ Quelques fichiers sont enregistrés à l’intérieur de chaque dossier GUID. Le
 
 Voici quelques exemples montrant comment utiliser l’option--clean :   
 
-```
+```cmd
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
 ```
 
-```
+```cmd
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <file-path-of-catalog2> …
 ```
 
 Vous pouvez aussi appeler le fichier vs_enterprise.exe à l’intérieur du répertoire &lt;layoutDir&gt;. Voici un exemple :
 
-```  
+```cmd   
 c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
-```  
+```
 
 Lorsque vous exécutez cette commande, le programme d’installation analyse votre dossier de cache hors connexion pour trouver la liste des fichiers à supprimer. Vous avez ensuite la possibilité de revoir les fichiers qui vont être supprimés pour confirmer les suppressions.
 
 ## <a name="get-support"></a>Obtenir de l’aide
+
 Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Voici d’autres options de support :
+
 * Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
 * Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Vous pouvez suivre les problèmes au niveau d’un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) et y poser des questions et obtenir des réponses.
-* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio)  (Cette option nécessite un compte [GitHub](https://github.com/).)
+* Vous pouvez suivre les problèmes au niveau d’un produit et obtenir des réponses dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
+* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter](https://gitter.im/Microsoft/VisualStudio). (Cette option nécessite un compte [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Installer Visual Studio](install-visual-studio.md)
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

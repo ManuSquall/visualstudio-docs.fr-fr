@@ -1,12 +1,9 @@
 ---
-title: "Affichage des définitions de type dans Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Affichage des définitions de type dans Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code editor, view definition
 - go to definition
@@ -15,36 +12,36 @@ helpviewer_keywords:
 - member definition [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 61428294fc9c4afa32a50b4776f03ce1e98b83b9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-type-and-member-definitions"></a>Afficher les définitions de type et de membre
 
-Les développeurs doivent souvent afficher les définitions du code source pour les types ou membres de classe qu’ils utilisent dans leur code. Dans Visual Studio, les fonctionnalités Atteindre la définition et Aperçu de la définition vous permettent d’afficher rapidement la définition d’un type ou d’un membre. Si le code source n’est pas disponible, les métadonnées sont affichées à la place.
+Les développeurs doivent souvent afficher les définitions du code source pour les types ou membres de classe qu’ils utilisent dans leur code. Dans Visual Studio, les fonctionnalités **Atteindre la définition** et **Aperçu de la définition** vous permettent d’afficher rapidement la définition d’un type ou d’un membre. Si le code source n’est pas disponible, les métadonnées sont affichées à la place.
 
 ## <a name="go-to-definition"></a>Atteindre la définition
 
-La fonctionnalité Atteindre la définition accède à la source d’un type ou d’un membre et affiche le résultat dans un nouvel onglet. Si vous utilisez le clavier, placez le curseur texte dans le nom du symbole, puis appuyez sur **F12**. Si vous utilisez la souris, sélectionnez **Atteindre la définition** dans le menu contextuel, ou utilisez la fonctionnalité **Ctrl+clic** décrite dans la section suivante.
+La fonctionnalité **Atteindre la définition** accède à la source d’un type ou d’un membre, et ouvre le résultat dans un nouvel onglet. Si vous utilisez le clavier, placez le curseur texte dans le nom du symbole, puis appuyez sur **F12**. Si vous utilisez la souris, sélectionnez **Atteindre la définition** dans le menu contextuel, ou utilisez la fonctionnalité **Ctrl+clic** décrite dans la section suivante.
 
 ### <a name="ctrl-click-go-to-definition"></a>Atteindre la définition avec Ctrl+clic
 
-Visual Studio 2017 version 15.4 offre aux utilisateurs de souris un moyen plus simple d’accéder rapidement à la fonctionnalité Atteindre la définition. Vous pouvez cliquer sur les symboles quand vous appuyez sur **Ctrl** et que vous pointez sur le type ou le membre. Pour accéder rapidement à la définition d’un symbole, appuyez sur la touche **Ctrl**, puis cliquez sur le symbole. C’est aussi simple que cela !
+Visual Studio 2017 version 15.4 offre aux utilisateurs de la souris un moyen plus simple d’accéder rapidement à la fonctionnalité **Atteindre la définition**. Vous pouvez cliquer sur les symboles quand vous appuyez sur **Ctrl** et que vous pointez sur le type ou le membre. Pour accéder rapidement à la définition d’un symbole, appuyez sur la touche **Ctrl**, puis cliquez sur le symbole. C’est aussi simple que cela !
 
 ![Animation de l’accès à la définition avec un clic de souris](../ide/media/click_gotodef.gif)
 
-Vous pouvez changer la touche de modification pour activer **Atteindre la définition** avec un clic de souris. Pour cela, accédez à **Outils**, **Options**, **Éditeur de texte**, **Général**, puis sélectionnez **Alt** ou **Ctrl+Alt** dans la liste déroulante **Utiliser la touche de modification**. Vous pouvez également désactiver **Atteindre la définition** avec un clic de souris en décochant la case **Activer le clic de souris pour exécuter Atteindre la définition**.
+Vous pouvez changer la touche de modification pour activer **Atteindre la définition** avec un clic de souris. Pour cela, accédez à **Outils** > **Options** > **Éditeur de texte** > **Général**, puis sélectionnez **Alt** ou **Ctrl+Alt** dans la liste déroulante **Utiliser la touche de modification**. Vous pouvez également désactiver **Atteindre la définition** avec un clic de souris en décochant la case **Activer le clic de souris pour exécuter Atteindre la définition**.
 
 ![Activation du clic de souris pour la fonctionnalité Atteindre la définition](../ide/media/editor_options_mouse_click_gotodef.png)
 
 ## <a name="peek-definition"></a>Aperçu de définition
 
-La fonctionnalité Aperçu de la définition vous permet d’afficher un aperçu de la définition d’un type sans avoir à quitter votre emplacement actuel dans l’éditeur. Si vous utilisez le clavier, placez le curseur texte dans le nom du type ou du membre, puis appuyez sur **Alt+F12**. Si vous utilisez la souris, sélectionnez **Aperçu de la définition** dans le menu contextuel. Visual Studio 2017 version 15.4 ou ultérieure offre aux utilisateurs de souris un nouveau moyen d’accéder à l’aperçu d’une définition. Tout d’abord, accédez à **Outils**, **Options**, **Éditeur de texte**, **Général**. Sélectionnez l’option **Ouvrir la définition dans l’aperçu** et cliquez sur **OK** pour fermer la boîte de dialogue **Options**.
+La fonctionnalité **Aperçu de la définition** vous permet d’afficher un aperçu de la définition d’un type sans avoir à quitter votre emplacement actuel dans l’éditeur. Si vous utilisez le clavier, placez le curseur texte dans le nom du type ou du membre, puis appuyez sur **Alt+F12**. Si vous utilisez la souris, sélectionnez **Aperçu de la définition** dans le menu contextuel. Visual Studio 2017 version 15.4 ou ultérieure offre aux utilisateurs de souris un nouveau moyen d’accéder à l’aperçu d’une définition. Accédez d’abord à **Outils** > **Options** > **Éditeur de texte** > **Général**. Sélectionnez l’option **Ouvrir la définition dans l’aperçu** et cliquez sur **OK** pour fermer la boîte de dialogue **Options**.
 
 ![Activation de l’option Aperçu de la définition avec un clic de souris](../ide/media/editor_options_peek_view.png)
 
@@ -54,15 +51,15 @@ Ensuite, appuyez sur **Ctrl** (ou sur la touche de modification sélectionnée d
 
 Si vous affichez un aperçu d’une autre définition à partir de la fenêtre contextuelle, vous commencerez un chemin de fil d’Ariane que vous pourrez parcourir à l’aide des cercles et des flèches qui apparaîtront au-dessus de la fenêtre contextuelle.
 
-Pour plus d’informations, consultez [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
+Pour plus d’informations, consultez [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
 ## <a name="view-metadata-as-source-code-c"></a>Afficher les métadonnées en tant que code source (C#)
 
-Lorsque vous affichez la définition de types C# ou de membres dont le code source n’est pas disponible, leurs métadonnées sont affichées à la place. Vous pouvez afficher les déclarations des types et des membres, mais pas leurs implémentations.
+Quand vous visualisez la définition de types C# ou de membres dont le code source n’est pas disponible, leurs métadonnées sont affichées à la place. Vous pouvez afficher les déclarations des types et des membres, mais pas leurs implémentations.
 
 Quand vous exécutez la commande **Atteindre la définition** ou **Aperçu de définition** pour un élément dont le code source n’est pas disponible, un document à onglets qui contient une vue des métadonnées de cet élément affichées en tant que code source apparaissent dans l’éditeur de code. Le nom du type, suivi de **[à partir des métadonnées]**, apparaît sur l’onglet du document.
 
-Par exemple, si vous exécutez la commande **Atteindre la définition** pour <xref:System.Console>, les métadonnées de <xref:System.Console> apparaissent dans l’éditeur de code en tant que code source C#. Le code ressemble à sa déclaration, mais n’affiche aucune implémentation.
+Par exemple, si vous exécutez la commande **Atteindre la définition** pour <xref:System.Console>, les métadonnées de <xref:System.Console> apparaissent dans l’éditeur de code en tant que code source C#. Le code ressemble à sa déclaration, mais ne montre pas d’implémentation.
 
 ![Métadonnées en tant que Source](../ide/media/metadatasource.png "MetadataSource")
 
@@ -71,7 +68,7 @@ Par exemple, si vous exécutez la commande **Atteindre la définition** pour <xr
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Afficher les définitions de source décompilées au lieu de métadonnées (C#)
 
-Nouveauté de **Visual Studio 2017 version 15.6**, vous pouvez définir une option pour afficher le code source décompilé lorsque vous affichez la définition d’un type C# ou d’un membre dont le code source n’est pas disponible. Pour activer cette fonctionnalité, choisissez **Outils** > **Options** dans la barre de menus. Puis, développez **Éditeur de texte** > **C#** > **Avancé**, puis sélectionnez **Activer la navigation vers les sources décompilées**.
+Nouveauté de Visual Studio 2017 version 15.6 : vous pouvez définir une option pour afficher le code source décompilé quand vous visualisez la définition d’un type C# ou d’un membre dont le code source n’est pas disponible. Pour activer cette fonctionnalité, choisissez **Outils** > **Options** dans la barre de menus. Puis, développez **Éditeur de texte** > **C#** > **Avancé**, puis sélectionnez **Activer la navigation vers les sources décompilées**.
 
 ![Affichage d’une définition décompilée](media/go-to-definition-decompiled-sources.png)
 
@@ -81,4 +78,5 @@ Nouveauté de **Visual Studio 2017 version 15.6**, vous pouvez définir une opti
 ## <a name="see-also"></a>Voir aussi
 
 [Navigation dans le code](../ide/navigating-code.md)
-[Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+
+[Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

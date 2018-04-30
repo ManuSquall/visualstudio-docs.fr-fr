@@ -1,11 +1,9 @@
 ---
-title: Extraits de code | Microsoft Docs
-ms.custom: 
+title: Extraits de code
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
@@ -14,18 +12,18 @@ helpviewer_keywords:
 - code snippets
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 514408ff2dbbde12d243a1458c380a2e17b516cc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-snippets"></a>Extraits de code
 
@@ -97,10 +95,10 @@ Si vous remplacez `newPropertyValue` par `m_property`, chaque instance de `newPr
 
 ## <a name="see-also"></a>Voir aussi
 
-[Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)  
-[Guide pratique pour distribuer des extraits de code](../ide/how-to-distribute-code-snippets.md)  
-[Bonnes pratiques pour l’utilisation des extraits de code](../ide/best-practices-for-using-code-snippets.md)  
-[Dépannage des extraits](../ide/troubleshooting-snippets.md)  
-[Extraits de code C#](../ide/visual-csharp-code-snippets.md)  
-[Extraits de code Visual C++](../ide/visual-cpp-code-snippets.md)  
-[Référence de schéma des extraits de code](../ide/code-snippets-schema-reference.md)
+- [Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)
+- [Guide pratique pour distribuer des extraits de code](../ide/how-to-distribute-code-snippets.md)
+- [Bonnes pratiques pour l’utilisation des extraits de code](../ide/best-practices-for-using-code-snippets.md)
+- [Dépannage des extraits](../ide/troubleshooting-snippets.md)
+- [Extraits de code C#](../ide/visual-csharp-code-snippets.md)
+- [Extraits de code Visual C++](../ide/visual-cpp-code-snippets.md)
+- [Référence de schéma des extraits de code](../ide/code-snippets-schema-reference.md)

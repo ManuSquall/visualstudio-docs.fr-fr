@@ -1,13 +1,10 @@
 ---
 title: Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy | Microsoft Docs
-description: ''
+description: Passez en revue les URL de domaine à ajouter à la liste verte, ainsi que les ports et protocoles à ouvrir, si votre organisation utilise un pare-feu ou un serveur proxy
 ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -20,24 +17,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f9f83c89e09e07d6024b779a89b9a6c4374112
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
+
 Si vous ou votre organisation utilisez des mesures de sécurité tel qu’un pare-feu ou un serveur proxy, il existe des URL de domaine que vous pouvez vouloir mettre sur « liste verte » et des ports et protocoles que vous pouvez vouloir ouvrir afin d’obtenir une meilleure expérience lorsque vous installez et utilisez Visual Studio et les services Azure.
 
-* **[Installer Visual Studio](#install-visual-studio)** : ces tables incluent les URL de domaine à la liste verte, afin que vous ayez accès à tous les composants et charges de travail que vous souhaitez.
+* **[Installer Visual Studio](#install-visual-studio)**  : ces tables incluent les URL de domaine à la liste verte, afin que vous ayez accès à tous les composants et charges de travail que vous souhaitez.
 
-* **[Utiliser Visual Studio et les services Azure](#use-visual-studio-and-azure-services)** : Cette table inclut les URL de domaine à la liste verte et les ports et protocoles à ouvrir pour avoir accès à toutes les fonctionnalités et tous les services désirés.
+* **[Utiliser Visual Studio et les services Azure](#use-visual-studio-and-azure-services)**  : Cette table inclut les URL de domaine à la liste verte et les ports et protocoles à ouvrir pour avoir accès à toutes les fonctionnalités et tous les services désirés.
 
 ## <a name="install-visual-studio"></a>Installer Visual Studio
+
 ### <a name="urls-to-whitelist"></a>URL à la liste verte
+
 Étant donné que le programme d’installation Visual Studio télécharge des fichiers à partir de différents domaines et leurs serveurs de téléchargement, vous trouverez ici les URL de domaine nécessaires à la mise sur liste verte tel qu’approuvé dans l’interface utilisateur ou dans vos scripts de déploiement.
 
 #### <a name="microsoft-domains"></a>Domaines Microsoft
+
 | Domaine | Objectif |
 | ------ | ------- |
 | go.microsoft.com | Résolution de l’URL d’installation |
@@ -57,6 +58,7 @@ Si vous ou votre organisation utilisez des mesures de sécurité tel qu’un par
 |  |  | |
 
 #### <a name="non-microsoft-domains"></a>Domaines non-Microsoft
+
 | Domaine | Installe ces charges de travail |
 | ------ | ------- |
 | archive.apache.org |  Développement mobile avec JavaScript (Cordova) |
@@ -72,7 +74,9 @@ Si vous ou votre organisation utilisez des mesures de sécurité tel qu’un par
 |  |  | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Utiliser Visual Studio et les services Azure
+
 ### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>URL à la liste verte et ports et protocoles à ouvrir
+
 Pour vous assurer que vous avez accès à tout ce dont vous avez besoin lorsque vous utilisez Visual Studio ou les services Azure derrière un pare-feu ou un serveur proxy, vous trouverez ici les URL que vous devez mettre sur liste verte et les ports et protocoles que vous souhaitez ouvrir.
 
 | Scénario ou service | Point de terminaison DNS | Protocole | Port | Description |
@@ -116,18 +120,21 @@ Pour vous assurer que vous avez accès à tout ce dont vous avez besoin lorsque 
 |Service d’empaquetage | [compte].visualstudio.com <br/> [compte].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | *.npmjs.org, *.nuget.org, et *.nodejs.org ne sont nécessaires que dans certains scénarios de tâches de build (par exemple, le programme d’installation d’outils de NuGet ou de Node), ou pour utiliser des flux ascendants publics.  Les trois autres domaines sont requis pour les fonctionnalités de base du service d’empaquetage. |
 |||||||
 
-
 ## <a name="troubleshoot-network-related-errors"></a>Résoudre les erreurs liées au réseau
+
 Parfois, exécuté pour des erreurs liées au réseau ou au proxy lorsque vous installez ou utilisez Visual Studio derrière un pare-feu ou un serveur proxy. Pour plus d’informations sur les solutions à ces messages d’erreur, consultez la page [Dépannage des erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
 
 ## <a name="get-support"></a>Obtenir de l’aide
+
 Vous trouverez ici quelques autres options de support :
+
 * Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans Visual Studio Installer et dans l’IDE de Visual Studio.
 * Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Vous pouvez suivre les problèmes au niveau d’un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) et y poser des questions et obtenir des réponses.
-* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio)  (Cette option nécessite un compte [GitHub](https://github.com/).)
+* Vous pouvez suivre les problèmes au niveau d’un produit et obtenir des réponses dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
+* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter](https://gitter.im/Microsoft/VisualStudio). (Cette option nécessite un compte [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Dépannage des erreurs liées au réseau dans Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Installer Visual Studio 2017](install-visual-studio.md)

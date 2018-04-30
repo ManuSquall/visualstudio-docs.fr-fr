@@ -1,26 +1,20 @@
 ---
-title: FAQ des Outils R pour Visual Studio | Microsoft Docs
+title: Questions fréquentes (FAQ) des Outils R pour Visual Studio
 description: Forum Aux Questions (FAQ) sur R dans Visual Studio.
-ms.custom: 
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: reference
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 5d6ede092549a3f055c15b1f7deafe0421797c44
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a8b9dd119aba9a5c28b450db11b2eb380b1872a0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="frequently-asked-questions"></a>FAQ
 

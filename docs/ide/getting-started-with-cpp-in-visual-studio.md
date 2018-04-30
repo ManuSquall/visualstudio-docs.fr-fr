@@ -3,20 +3,19 @@ title: Bien démarrer avec C++ dans Visual Studio | Microsoft Docs
 ms.custom: mvc
 ms.date: 12/04/2017
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: ec0ab12b1df5a36c81a394406610c16fe184f0d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
 
@@ -52,7 +51,7 @@ Visual Studio organise le code des applications dans des *projets*, et vos proje
 
 1. Choisissez le bouton **OK** pour créer le projet et la solution de votre application.
 
-   La solution et le projet HelloApp, avec les fichiers de base d’une application console Windows, sont créés, puis automatiquement chargés dans **l’Explorateur de solutions**. Le fichier HelloApp.cpp s’ouvre dans l’éditeur de code. Ces éléments s’affichent dans **l’Explorateur de solutions** :
+   La solution et le projet HelloApp, avec les fichiers de base d’une application console Windows, sont créés, puis automatiquement chargés dans **l’Explorateur de solutions**. Le fichier *HelloApp.cpp* s’ouvre dans l’éditeur de code. Ces éléments s’affichent dans **l’Explorateur de solutions** :
 
    ![Fichiers de la solution dans l’Explorateur de solutions](../ide/media/get-started-cpp-solution-explorer.png "Fichiers de la solution dans l’Explorateur de solutions")
 
@@ -62,7 +61,7 @@ Ensuite, vous devez ajouter le code nécessaire pour afficher le mot « Hello »
 
 ### <a name="to-edit-code-in-the-editor"></a>Pour modifier le code dans l’éditeur
 
-1. Dans le fichier HelloApp.cpp, insérez une ligne vide avant la ligne `return 0;`, puis entrez ce code :
+1. Dans le fichier *HelloApp.cpp*, insérez une ligne vide avant la ligne `return 0;`, puis entrez ce code :
 
    ```cpp
    cout << "Hello\n";
@@ -76,16 +75,16 @@ Ensuite, vous devez ajouter le code nécessaire pour afficher le mot « Hello »
 
    ![Erreur dans la fenêtre Liste d’erreurs](../ide/media/get-started-cpp-error-list.png "Erreur dans la fenêtre Liste d’erreurs")
 
-   Dans votre code, il manque une déclaration pour [std::cout](/cpp/standard-library/iostream), qui se trouve dans le fichier d’en-tête \<iostream>.
+   Dans votre code, il manque une déclaration pour [std::cout](/cpp/standard-library/iostream), qui se trouve dans le fichier d’en-tête *\<iostream>*.
 
-1. Pour ajouter l’en-tête iostream, entrez ce code après `#include "stdafx.h"` :
+1. Pour ajouter l’en-tête *iostream*, entrez ce code après `#include "stdafx.h"` :
 
    ```cpp
    #include <iostream>
    using namespace std;
    ```
 
-   Vous avez sans doute remarqué qu’une zone est apparue quand vous avez commencé à entrer le code. Cette zone contient des suggestions de saisie semi-automatique pour les caractères que vous venez d’entrer. Il s’agit d’une option de la fonctionnalité IntelliSense C++, qui fournit des invites de codage, notamment des membres de classe ou d’interface et des informations sur les paramètres. Vous pouvez aussi utiliser des extraits de code, qui sont des blocs de code prédéfinis. Pour plus d’informations, consultez [Using IntelliSense](../ide/using-intellisense.md) et [Code Snippets](../ide/code-snippets.md).
+   Vous avez sans doute remarqué qu’une zone est apparue quand vous avez commencé à entrer le code. Cette zone contient des suggestions de saisie semi-automatique pour les caractères que vous venez d’entrer. Il s’agit d’une option de la fonctionnalité IntelliSense C++, qui fournit des invites de codage, notamment des membres de classe ou d’interface et des informations sur les paramètres. Vous pouvez aussi utiliser des extraits de code, qui sont des blocs de code prédéfinis. Pour plus d’informations, consultez [Utilisation d’IntelliSense](../ide/using-intellisense.md) et [Extraits de code](../ide/code-snippets.md).
 
    ![Code fixe dans l’éditeur](../ide/media/get-started-cpp-cout-fix.png "Code fixe dans l’éditeur")
 
@@ -105,11 +104,11 @@ Vous pouvez déboguer HelloApp pour vérifier si le mot « Hello » s’affiche 
 
 ### <a name="to-debug-the-app"></a>Pour déboguer l'application
 
-1. Pour démarrer le débogueur, choisissez **Déboguer > Démarrer le débogage** dans la barre de menus.
+Pour démarrer le débogueur, choisissez **Déboguer > Démarrer le débogage** dans la barre de menus.
 
-   ![Commande Démarrer le débogage dans le menu Déboguer](../ide/media/get-started-cpp-start-debugging-menu.png "Commande Démarrer le débogage dans le menu Déboguer")
+![Commande Démarrer le débogage dans le menu Déboguer](../ide/media/get-started-cpp-start-debugging-menu.png "Commande Démarrer le débogage dans le menu Déboguer")
 
-   Le débogueur démarre et exécute le code. La fenêtre de console (une fenêtre distincte qui ressemble à une invite de commandes) s’affiche pendant quelques secondes, mais se clôt rapidement lorsque le débogueur s’arrête en cours d’exécution. Pour afficher le texte, vous devez définir un point d’arrêt afin d’interrompre l’exécution du programme.
+Le débogueur démarre et exécute le code. La fenêtre de console (une fenêtre distincte qui ressemble à une invite de commandes) s’affiche pendant quelques secondes, mais se clôt rapidement lorsque le débogueur s’arrête en cours d’exécution. Pour afficher le texte, vous devez définir un point d’arrêt afin d’interrompre l’exécution du programme.
 
 ### <a name="to-add-a-breakpoint"></a>Pour ajouter un point d’arrêt
 
@@ -129,7 +128,7 @@ Vous pouvez déboguer HelloApp pour vérifier si le mot « Hello » s’affiche 
 
 1. Pour arrêter le débogage, appuyez sur **Maj+F5**.
 
-Pour plus d’informations sur le débogage des projets console, consultez [Projets console](../debugger/debugging-preparation-console-projects.md).
+Pour plus d’informations sur le débogage d’un projet de console, consultez [Projets de console](../debugger/debugging-preparation-console-projects.md).
 
 ## <a name="build-a-release-version-of-the-app"></a>Générer une version release de l’application
 
@@ -149,12 +148,12 @@ Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer un
 
 Quand cette génération est terminée, vous avez une nouvelle application prête à être copiée et exécutée dans une fenêtre d’invite de commandes. Cette application est très simple, mais il ne tient qu’à vous de créer des applications plus complexes.
 
-Félicitations ! Vous avez terminé ce guide de démarrage rapide. Pour explorer d’autres exemples, consultez [Visual Studio Samples](../ide/visual-studio-samples.md).
+Félicitations ! Vous avez terminé ce guide de démarrage rapide. Pour explorer d’autres exemples, consultez [Exemples Visual Studio](../ide/visual-studio-samples.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Utilisation de l’IDE de Visual Studio pour le développement de bureau C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[Procédure pas à pas : création d'une application simple avec C# ou Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+[Utilisation de l’IDE de Visual Studio pour le développement C++ pour poste de travail](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
+[Procédure pas à pas : création d’une application simple avec C# ou Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
 [Conseils de productivité pour Visual Studio](../ide/productivity-tips-for-visual-studio.md)  
 [Exemples Visual Studio](../ide/visual-studio-samples.md)  
 [Bien démarrer avec le développement dans Visual Studio](../ide/get-started-developing-with-visual-studio.md)

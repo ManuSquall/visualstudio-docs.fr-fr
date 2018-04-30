@@ -1,26 +1,20 @@
 ---
-title: Installation d’Outils R pour Visual Studio | Microsoft Docs
+title: Installation des outils R
 description: Guide pratique pour installer les Outils R pour Visual Studio dans Visual Studio 2017 et Visual Studio 2015, y compris les installations en mode hors connexion.
-ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-r
-ms.tgt_pltfrm: ''
-dev_langs:
-- R
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: bb8f380ce17242f7ac9953226db7ad683c17a2de
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 894fc583e402f5fe5ceb5af2803239bd29ffa00d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Comment installer Outils R pour Visual Studio
 

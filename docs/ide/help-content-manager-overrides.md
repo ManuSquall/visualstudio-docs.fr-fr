@@ -1,34 +1,32 @@
 ---
-title: Changements dans Help Content Manager | Microsoft Docs
-ms.custom: 
+title: Remplacements dans Help Content Manager | Microsoft Docs
+ms.custom: ''
 ms.date: 11/01/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 35bc6ae23fdbc89f6bdeaa57bd37d5d961d87286
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7a943724d10241b5f0d7abb236964be51c38b79c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="help-content-manager-overrides"></a>Changements dans Help Content Manager
+# <a name="help-content-manager-overrides"></a>Remplacements dans Help Content Manager
 Vous pouvez modifier le comportement par défaut de Help Viewer et des fonctionnalités d’aide dans l’IDE Visual Studio. Certaines options peuvent être spécifiées en créant un fichier [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) pour définir différentes valeurs de clé de Registre. D’autres sont définies directement dans le Registre.
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Comment contrôler le comportement de Help Viewer à l’aide d’un fichier .pkgdef
 
-1. Créez un fichier .pkgdef avec la première ligne suivante : `[$RootKey$\Help]`.
+1. Créez un fichier *.pkgdef* avec `[$RootKey$\Help]` comme première ligne.
 
 2. Ajoutez l’une des valeurs de clé de Registre ou la totalité des valeurs décrites dans le tableau ci-dessous sur des lignes distinctes, par exemple `“UseOnlineHelp”=dword:00000001`.
 
-3. Copiez le fichier dans %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<édition\>\Common7\IDE\CommonExtensions.
+3. Copiez le fichier dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<édition\>\Common7\IDE\CommonExtensions*.
 
 4. Exécutez `devenv /updateconfiguration` dans une invite de commandes développeur.
 
@@ -39,7 +37,7 @@ Vous pouvez modifier le comportement par défaut de Help Viewer et des fonctionn
 |UseOnlineHelp|dword|`0` pour spécifier l’aide locale, `1` pour spécifier l’aide en ligne|Définir l’aide en ligne ou l’aide locale comme option par défaut|
 |OnlineBaseUrl|chaîne|\<URL HTTP du point de terminaison de service\>|Définir un point de terminaison unique F1|
 |OnlineHelpPreferenceDisabled|dword|`0` pour activer ou `1` pour désactiver l’option de préférence d’aide en ligne|Désactiver l’option de préférence d’aide en ligne|
-|DisableManageContent|dword|`0` pour activer ou `1` pour désactiver l’onglet **Gérer le contenu** dans Help Viewer|Désactiver l’onglet Gérer le contenu|
+|DisableManageContent|dword|`0` pour activer ou `1` pour désactiver l’onglet **Gérer le contenu** dans Help Viewer|Désactiver l’onglet **Gérer le contenu**|
 |DisableFirstRunHelpSelection|dword|`0` pour activer ou `1` pour désactiver les fonctionnalités d’aide configurées au premier démarrage de Visual Studio.|Désactiver l’installation du contenu au premier démarrage de Visual Studio|
 
 ### <a name="example-pkgdef-file-contents"></a>Exemple de contenu de fichier .pkgdef

@@ -1,36 +1,30 @@
 ---
-title: Modèle de projet de service cloud Azure pour Python | Microsoft Docs
+title: Modèle de projet de service cloud Azure pour Python
 description: Vue d’ensemble du modèle Visual Studio pour les services cloud Azure écrits dans Python, y compris le déploiement des rôles, les dépendances et la résolution des problèmes.
-ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b8e12d8823d3246da7c607ca63c056d1927b97d0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projets de service cloud Azure pour Python
 
 Visual Studio fournit des modèles conçus pour vous aider à vous familiariser avec la création de services cloud Azure à l’aide de Python.
 
-Un [service cloud](http://go.microsoft.com/fwlink/?LinkId=306052) se compose d’un nombre quelconque de *rôles de travail* et de *rôles web*, qui exécutent une tâche distincte sur le plan conceptuel, mais qui peuvent être répliqués séparément sur autant de machines virtuelles que nécessaire pour la mise à l’échelle. Les rôles web assurent l’hébergement des applications web frontales. Il est possible d’utiliser n’importe quel framework web prenant en charge WSGI pour écrire une application Python (prise en charge par le [modèle de projet web](python-web-application-project-templates.md)). Les rôles de travail sont destinés aux longs processus qui n’interagissent pas directement avec les utilisateurs. Ils utilisent généralement les bibliothèques de [données](http://go.microsoft.com/fwlink/?LinkId=401571) et de [services d’application](http://go.microsoft.com/fwlink/?LinkId=401572), lesquelles peuvent être installées avec [`pip install azure`](http://pypi.org/project/azure).
+Un [service cloud](https://docs.microsoft.com/azure/cloud-services/) se compose d’un nombre quelconque de *rôles de travail* et de *rôles web*, qui exécutent une tâche distincte sur le plan conceptuel, mais qui peuvent être répliqués séparément sur autant de machines virtuelles que nécessaire pour la mise à l’échelle. Les rôles web assurent l’hébergement des applications web frontales. Il est possible d’utiliser n’importe quel framework web prenant en charge WSGI pour écrire une application Python (prise en charge par le [modèle de projet web](python-web-application-project-templates.md)). Les rôles de travail sont destinés aux longs processus qui n’interagissent pas directement avec les utilisateurs. En règle générale, ils utilisent les packages inclus dans le package « azure », lequel est installé avec [`pip install azure`](http://pypi.org/project/azure).
 
-Cet article contient des détails sur le modèle de projet et les autres prises en charge dans Visual Studio 2017 (les versions antérieures sont similaires, mais présentent quelques différences). Pour plus d’informations sur l’utilisation d’Azure à partir de Python, visitez le [centre de développement Azure Python](http://go.microsoft.com/fwlink/?linkid=254360).
+Cet article contient des détails sur le modèle de projet et les autres prises en charge dans Visual Studio 2017 (les versions antérieures sont similaires, mais présentent quelques différences). Pour plus d’informations sur l’utilisation d’Azure à partir de Python, visitez le [centre de développement Azure Python](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
 
 ## <a name="create-a-project"></a>Créer un projet
 

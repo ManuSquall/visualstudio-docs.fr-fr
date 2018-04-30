@@ -1,12 +1,8 @@
 ---
-title: Guide pratique pour déverrouiller Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Guide pratique pour déverrouiller Visual Studio
 ms.date: 07/20/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -14,11 +10,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e08831347c09d80427d1fba38c926f7d1b227f4
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 9a85e2d8f057a84b56553e8592b3f6a5e390690a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-unlock-visual-studio"></a>Guide pratique pour déverrouiller Visual Studio
 
@@ -32,16 +28,16 @@ Vous pouvez évaluer Visual Studio gratuitement pendant 30 jours. La connexion �
 
 Pour déverrouiller Visual Studio à l’aide d’un abonnement MSDN ou Visual Studio Team Services associé à un compte Microsoft ou à un compte professionnel ou scolaire :
 
-1. Cliquez sur le bouton "Connexion" situé en haut à droite de l’IDE (ou sélectionnez Fichier > Paramètres de compte pour ouvrir la boîte de dialogue Paramètres de compte, puis cliquez sur le bouton "Connexion").
+1. Cliquez sur le bouton **Connexion** en haut à droite de l’IDE (ou accédez à **Fichier** > **Paramètres du compte** pour ouvrir la boîte de dialogue **Paramètres du compte**, puis cliquez sur le bouton **Connexion**).
 
 1. Entrez les informations d'identification d'un compte Microsoft ou d'un compte professionnel ou scolaire. Visual Studio recherche un abonnement Visual Studio ou un abonnement Visual Studio Team Services associé à votre compte.
 
 > [!IMPORTANT]
-> Visual Studio recherche automatiquement les abonnements en ligne associés quand vous vous connectez à un compte Visual Studio Team Services à partir de la fenêtre d’outils Team Explorer. Quand vous vous connectez à un compte Visual Studio Team Services, vous pouvez utiliser un compte Microsoft ou un compte professionnel ou scolaire. Si un abonnement en ligne existe pour ce compte d'utilisateur, Visual Studio déverrouille automatiquement l'IDE.
+> Visual Studio recherche automatiquement les abonnements en ligne associés quand vous vous connectez à un compte Visual Studio Team Services à partir de la fenêtre Outil **Team Explorer**. Quand vous vous connectez à un compte Visual Studio Team Services, vous pouvez utiliser un compte Microsoft ou un compte professionnel ou scolaire. Si un abonnement en ligne existe pour ce compte d'utilisateur, Visual Studio déverrouille automatiquement l'IDE.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Pour déverrouiller Visual Studio avec une clé de produit
 
-1. Sélectionnez **Fichier**, **Paramètres de compte** pour ouvrir la boîte de dialogue Paramètres de compte, puis cliquez sur le lien **Licence avec une clé de produit**.
+1. Sélectionnez **Fichier** > **Paramètres du compte** pour ouvrir la boîte de dialogue **Paramètres du compte**, puis cliquez sur le lien **Licence avec une clé de produit**.
 
 Entrez la clé de produit dans la zone fournie.
 
@@ -63,15 +59,15 @@ Entrez la clé de produit dans la zone fournie.
 
 Avant que le jeton de licence ne soit périmé, Visual Studio affiche un message d’avertissement vous invitant à entrer à nouveau vos informations d’identification.
 
-Si vous n’entrez pas à nouveau vos informations d’identification, le jeton est sur le point d’expirer et la boîte de dialogue Paramètres du compte indique le nombre de jours restants avant que votre jeton n’expire entièrement. Une fois votre jeton arrivé à expiration, vous devez entrer à nouveau les informations d'identification de ce compte ou obtenir une licence avec une autre méthode mentionnée ci-dessus pour pouvoir continuer à utiliser Visual Studio.
+Si vous n’entrez pas à nouveau vos informations d’identification, l’expiration du jeton commence. De plus, la boîte de dialogue **Paramètres du compte** indique le nombre de jours restants avant l’expiration complète de votre jeton. Une fois votre jeton arrivé à expiration, vous devez entrer à nouveau les informations d'identification de ce compte ou obtenir une licence avec une autre méthode mentionnée ci-dessus pour pouvoir continuer à utiliser Visual Studio.
 
 > [!Important]
 > Si vous utilisez Visual Studio pendant de longues périodes dans des environnements ayant un accès limité ou nul à Internet, vous devez utiliser une clé de produit pour déverrouiller Visual Studio afin d'éviter toute interruption.
 
 ### <a name="update-expired-licenses"></a>Mettre à jour des licences ayant expiré
 
- Si votre abonnement a expiré et que vous n’avez plus de droits d’accès à Visual Studio, vous devez renouveler votre abonnement ou ajouter un autre compte disposant d’un abonnement. Pour plus d’informations sur la licence que vous utilisez, accédez à **Fichier**, **Paramètres du compte**, puis examinez les informations de licence se trouvant sur le côté droit de la boîte de dialogue. Si vous avez un autre abonnement associé à un autre compte, ajoutez ce compte à la liste **Tous les comptes** à gauche de la boîte de dialogue en sélectionnant le lien **Ajouter un compte...**
+ Si votre abonnement a expiré et que vous n’avez plus de droits d’accès à Visual Studio, vous devez renouveler votre abonnement ou ajouter un autre compte disposant d’un abonnement. Pour plus d’informations sur la licence utilisée, accédez à **Fichier** > **Paramètres du compte**, puis examinez les informations de licence situées sur le côté droit de la boîte de dialogue. Si vous avez un autre abonnement associé à un compte secondaire, ajoutez ce compte à la liste **Tous les comptes** à gauche de la boîte de dialogue en sélectionnant le lien **Ajouter un compte**.
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Connexion à Visual Studio](../ide/signing-in-to-visual-studio.md)
+* [Se connecter à Visual Studio](../ide/signing-in-to-visual-studio.md)

@@ -1,12 +1,10 @@
 ---
-title: Exemple avancé pour les conteneurs | Microsoft Docs
+title: Exemple avancé pour les conteneurs
+description: ''
 ms.custom: ''
-ms.date: 10/18/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.date: 04/18/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
@@ -14,54 +12,77 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 469b8933d5bd7f60a611161e5a871e8cfa4536f7
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: c941928495dc39dc6b6ecbe9600f39dad969fec2
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="advanced-example-for-containers"></a>Exemple avancé pour les conteneurs
 
-L’exemple de fichier Dockerfile de la rubrique [Installer Build Tools dans un conteneur](build-tools-container.md) utilise toujours l’image microsoft/windowsservercore et le programme d’installation de Visual Studio Build Tools 2017 les plus récents. Si vous publiez cette image dans un [registre Docker](https://azure.microsoft.com/services/container-registry) pour que les utilisateurs puissent la tirer (pull), elle conviendra dans de nombreux scénarios. Dans la pratique, cependant, il est plus courant de préciser l’image de base que vous utilisez, les fichiers binaires que vous téléchargez et la version des outils que vous installez.
+L’exemple de fichier Dockerfile décrit dans [Installer Build Tools dans un conteneur](build-tools-container.md) utilise toujours l’image [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) en fonction de la dernière image microsoft/windowsservercore et de la dernière version du programme d’installation de Visual Studio Build Tools 2017. Si vous publiez cette image dans un [registre Docker](https://azure.microsoft.com/services/container-registry) pour que les utilisateurs puissent la tirer (pull), elle conviendra dans de nombreux scénarios. Toutefois, en pratique, il est plus courant de préciser l’image de base que vous utilisez, les binaires que vous téléchargez et les versions des outils que vous installez.
 
-L’exemple de fichier Dockerfile suivant utilise une balise de version spécifique de l’image microsoft/windowsservercore. L’utilisation d’une balise spécifique pour une image de base est très répandue et permet de garder à l’esprit que la génération et la regénération des images ont toujours la même base.
+L’exemple de fichier Dockerfile suivant utilise une étiquette de version spécifique de l’image microsoft/dotnet-framework. L’utilisation d’une balise spécifique pour une image de base est très répandue et permet de garder à l’esprit que la génération et la regénération des images ont toujours la même base.
 
 > [!NOTE]
-> Vous ne pouvez pas installer Visual Studio dans l’image microsoft/windowsservercore:10.0.14393.1593, en raison de problèmes connus liés au lancement du programme d’installation dans un conteneur. Pour plus d’informations, consultez la section [Problèmes connus](build-tools-container-issues.md).
+> Vous ne pouvez pas installer Visual Studio dans l’image microsoft/windowsservercore:10.0.14393.1593 ou toute autre image basée sur celle-ci, en raison de problèmes connus liés au lancement du programme d’installation dans un conteneur. Pour plus d’informations, consultez la section [Problèmes connus](build-tools-container-issues.md).
 
-L’exemple utilise également un programme d’amorçage Build Tools 2017 qui installe une version spécifique générée en même temps que lui. Le produit peut toujours être mis à jour via le canal de mise en production. Toutefois, cette méthode n’est pas pratique pour les conteneurs qui doivent généralement être regénérés. Si vous souhaitez obtenir les URL d’un canal spécifique, vous pouvez télécharger le canal à partir de https://aka.ms/vs/15/release/channel, ouvrir le fichier JSON et examiner les URL du programme d’amorçage. Pour plus d’informations, consultez [Créer une installation réseau de Visual Studio](create-a-network-installation-of-visual-studio.md).
+L’exemple ci-dessous télécharge la dernière version de Build Tools 2017. Si vous souhaitez utiliser une ancienne version de Build Tools que vous pourrez installer plus tard dans un conteneur, vous devez d’abord [créer](create-an-offline-installation-of-visual-studio.md) et [gérer](update-a-network-installation-of-visual-studio.md) une disposition.
+
+## <a name="install-script"></a>Script d’installation
+
+Pour collecter des journaux quand une erreur d’installation se produit, dans le répertoire de travail, créez un script de commandes par lot nommé « Install.cmd » et ayant le contenu suivant :
+
+```shell
+@if not defined _echo echo off
+setlocal enabledelayedexpansion
+
+call %*
+if "%ERRORLEVEL%"=="3010" (
+    exit /b 0
+) else (
+    if not "%ERRORLEVEL%"=="0" (
+        set ERR=%ERRORLEVEL%
+        call C:\TEMP\collect.exe -zip:C:\vslogs.zip
+
+        exit /b !ERR!
+    )
+)
+```
+
+## <a name="dockerfile"></a>Dockerfile
+
+Dans le répertoire de travail, créez un fichier « Dockerfile » ayant le contenu suivant :
 
 ```dockerfile
+# escape=`
+
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
-# You could also use the immutable tag @sha256:d841bd78721c74f9b88e2700f5f3c2d66b54cb855b8acb4ab2c627a76a46301d
-FROM microsoft/windowsservercore:10.0.14393.1770
+# You could also use the immutable tag @sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b
+ARG FROM_IMAGE=microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
+FROM ${FROM_IMAGE}
 
-# Use PowerShell commands to download, validate hashes, etc.
-SHELL ["powershell.exe", "-ExecutionPolicy", "Bypass", "-Command", "$ErrorActionPreference='Stop'; $ProgressPreference='SilentlyContinue'; $VerbosePreference = 'Continue';"]
+# Copy our Install script.
+COPY Install.cmd C:\TEMP\
 
-# Download Build Tools 15.4.27004.2005 and other useful tools.
-ENV VS_BUILDTOOLS_URI=https://aka.ms/vs/15/release/6e8971476/vs_buildtools.exe \
-    VS_BUILDTOOLS_SHA256=D482171C7F2872B6B9D29B116257C6102DBE6ABA481FAE4983659E7BF67C0F88 \
-    NUGET_URI=https://dist.nuget.org/win-x86-commandline/v4.1.0/nuget.exe \
-    NUGET_SHA256=4C1DE9B026E0C4AB087302FF75240885742C0FAA62BD2554F913BBE1F6CB63A0
+# Download collect.exe in case of an install failure.
+ADD https://aka.ms/vscollect.exe C:\TEMP\collect.exe
 
-# Download tools to C:\Bin and install Build Tools excluding workloads and components with known issues.
-RUN New-Item -Path C:\Bin, C:\TEMP -Type Directory | Out-Null; \
-    [System.Environment]::SetEnvironmentVariable('PATH', "\"${env:PATH};C:\Bin\"", 'Machine'); \
-    function Fetch ([string] $Uri, [string] $Path, [string] $Hash) { \
-      Invoke-RestMethod -Uri $Uri -OutFile $Path; \
-      if ($Hash -and ((Get-FileHash -Path $Path -Algorithm SHA256).Hash -ne $Hash)) { \
-        throw "\"Download hash for '$Path' incorrect\""; \
-      } \
-    }; \
-    Fetch -Uri $env:NUGET_URI -Path C:\Bin\nuget.exe -Hash $env:NUGET_SHA256; \
-    Fetch -Uri $env:VS_BUILDTOOLS_URI -Path C:\TEMP\vs_buildtools.exe -Hash $env:VS_BUILDTOOLS_SHA256; \
-    Fetch -Uri 'https://aka.ms/vscollect.exe' -Path C:\TEMP\collect.exe; \
-    $p = Start-Process -Wait -PassThru -FilePath C:\TEMP\vs_buildtools.exe -ArgumentList '--quiet --wait --norestart --nocache --installPath C:\BuildTools --all --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 --remove Microsoft.VisualStudio.Component.Windows81SDK'; \
-    if (($ret = $p.ExitCode) -and ($ret -ne 3010)) { C:\TEMP\collect.exe; throw ('Install failed with exit code 0x{0:x}' -f $ret) }
+# Use the latest release channel. For more control, specify the location of an internal layout.
+ARG CHANNEL_URL=https://aka.ms/vs/15/release/channel
+ADD ${CHANNEL_URL} C:\TEMP\VisualStudio.chman
 
-# Restore default shell for Windows containers.
-SHELL ["cmd.exe", "/s", "/c"]
+# Download and install Build Tools excluding workloads and components with known issues.
+ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
+RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+    --installPath C:\BuildTools `
+    --channelUri C:\TEMP\VisualStudio.chman `
+    --installChannelUri C:\TEMP\VisualStudio.chman `
+    --all `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+    --remove Microsoft.VisualStudio.Component.Windows81SDK
 
 # Start developer command prompt with any other commands specified.
 ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
@@ -70,36 +91,44 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
 
-Cet exemple télécharge certains outils et vérifie que les hachages correspondent. Il télécharge également le dernier utilitaire de collecte de journaux Visual Studio et .NET pour qu’en cas d’échec de l’installation, vous puissiez copier les journaux sur votre ordinateur hôte pour comprendre les causes de l’échec.
+Exécutez la commande suivante pour générer l’image dans le répertoire de travail actuel :
 
 ```shell
-> docker build -t buildtools:15.4.27004.2005 -t buildtools:latest -m 2GB .
-Sending build context to Docker daemon
-...
-Step 4/7 : RUN New-Item -Path C:\Bin, C:\TEMP -Type Directory | Out-Null; ...
- ---> Running in 4b62b4ce3a3c
-Install failed with exit code 0x643
-At line:1 char:1
-+ throw ('Install failed with exit code 0x{0:x}' -f 1603)
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OperationStopped: (Install failed with exit code 0x643:String) [], RuntimeException
-    + FullyQualifiedErrorId : Install failed with exit code 0x643
-
-> docker cp 4b62b4ce3a3c:C:\Users\ContainerAdministrator\AppData\Local\TEMP\vslogs.zip "%TEMP%\vslogs.zip"
+docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
 ```
 
-Après l’exécution de la dernière ligne, ouvrez « %TEMP%\vslogs.zip » sur votre ordinateur ou signalez un problème sur le site web de la [Communauté des développeurs](https://developercommunity.visualstudio.com).
+Vous pouvez éventuellement passer l’argument `FROM_IMAGE`, l’argument `CHANNEL_URL` ou les deux à la fois, à l’aide du commutateur de ligne de commande `--build-arg` pour spécifier une autre image de base ou l’emplacement d’une disposition interne pour gérer une image fixe.
+
+## <a name="diagnosing-install-failures"></a>Diagnostiquer les échecs d’installation
+
+Cet exemple télécharge certains outils et vérifie que les hachages correspondent. Il télécharge également le dernier utilitaire de collecte de journaux Visual Studio et .NET. Ainsi, en cas d’échec de l’installation, vous pouvez copier les journaux sur votre machine hôte pour analyser le problème.
+
+```shell
+> docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
+Sending build context to Docker daemon
+...
+Step 8/10 : RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache ...
+ ---> Running in 4b62b4ce3a3c
+The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' returned a non-zero code: 1603
+
+> docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
+```
+
+Une fois la dernière ligne exécutée, ouvrez « %TEMP%\vslogs.zip » sur votre machine, ou soumettez le problème sur le site web de la [Communauté des développeurs](https://developercommunity.visualstudio.com).
 
 ## <a name="get-support"></a>Obtenir de l’aide
-Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Parfois, des problèmes peuvent se produire. En cas d’échec de l’installation de Visual Studio, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Voici d’autres options de support :
+
 * Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
 * Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Vous pouvez suivre les problèmes au niveau d’un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) et y poser des questions et obtenir des réponses.
-* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio)  (Cette option nécessite un compte [GitHub](https://github.com/).)
+* Vous pouvez suivre les problèmes au niveau d’un produit et obtenir des réponses dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
+* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter](https://gitter.im/Microsoft/VisualStudio). (Cette option nécessite un compte [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Voir aussi
+
 * [Installer les outils de génération dans un conteneur](build-tools-container.md)
 * [Problèmes de conteneurs connus](build-tools-container-issues.md)
 * [ID de composant et de charge de travail de Visual Studio Build Tools 2017](workload-component-id-vs-build-tools.md)

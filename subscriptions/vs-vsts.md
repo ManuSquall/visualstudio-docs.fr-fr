@@ -1,19 +1,19 @@
 ---
 title: Avantages VSTS pour les abonnés Visual Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7fbfdd5a23196afeeb24b2ce380fce44d457fb99
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Découvrez comment vous pouvez utiliser VSTS (Visual Studio Team Services) en tant qu’abonné Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Avantages Visual Studio Team Services (VSTS) pour les abonnés Visual Studio
 
@@ -26,17 +26,19 @@ Quand vous vous connectez à VSTS à l’aide de l’identité que vous avez uti
 ## <a name="eligibility"></a>Éligibilité
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuel et cloud mensuel)   | Licences en volume, Azure, Détail, MPN, BizSpark, NFR<sup>1</sup>, FTE  | De base, Test Manager, Package Management, CI/CD auto-hébergé       |  Oui          |
-| Visual Studio Professional (Standard, cloud annuel et cloud mensuel) | Licences en volume, Azure, Détail                                       | De base                                                            |  Oui          |
+| Visual Studio Enterprise (Standard, cloud annuel et cloud mensuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup>, FTE  | De base, Test Manager, Package Management, CI/CD auto-hébergé       |  Oui          |
+| Visual Studio Professional (Standard, cloud annuel et cloud mensuel) | Licences en volume, Azure, Détail,                                        | Basic                                                            |  Oui          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | De base, Test Manager                                              |  Oui          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | De base, Test Manager                                              |  Oui          |
 
-<sup>1</sup>  *Inclut NFR (Revente interdite), Microsoft Valued Partner (MVP), Region Director (RD) et Visual Studio Industry Partner (VSIP)*
+<sup>1</sup> *Inclut : NFR (revente interdite), MVP (Microsoft Valued Partner), RD (Region Director), VSIP (Visual Studio Industry Partner), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer. Exclut : MCT Software & Services, Imagine.*
+
+
 
 En savoir plus sur les fonctionnalités VSTS :
-- [De base](https://www.visualstudio.com/team-services/compare-features/)
+- [Basic](https://www.visualstudio.com/team-services/compare-features/)
 - [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-- [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+- [Gestion des packages](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour afficher tous les abonnements qui vous sont affectés.
 Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.

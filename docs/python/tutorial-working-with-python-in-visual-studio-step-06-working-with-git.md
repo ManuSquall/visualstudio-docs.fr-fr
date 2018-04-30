@@ -1,27 +1,21 @@
 ---
-title: Utilisation de Python, étape 6 – utilisation de Git | Microsoft Docs
+title: 'Utilisation de Python - Étape 6 : Utilisation de git'
 description: Étape 6 d’un didacticiel de base sur l’utilisation de Python dans Visual Studio, décrivant les fonctionnalités Git de Visual Studio.
-ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ec8534e7fd3121510a05e201e8bdea2e9a7fce1c
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 93c8ba2ecaaacdd8dd2b0bbf9972df5d5f514c10
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="step-6-working-with-git"></a>Étape 6 : Utilisation de Git
 

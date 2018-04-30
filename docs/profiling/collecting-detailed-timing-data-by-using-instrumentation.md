@@ -1,26 +1,23 @@
 ---
-title: "Collecte de données de minutage détaillées à l’aide de l’instrumentation | Microsoft Docs"
-ms.custom: 
+title: Collecte de données de minutage détaillées à l’aide de l’instrumentation | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation method
 - instrumentation profiling method
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
-caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7bc5b81349c64c3b3422fb16b9cf578d0b8496ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d4ae0813b2405fe81b5c6c92fbd2cfed0a6faee2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Collecte de données de minutage détaillées à l’aide de l’instrumentation
 La méthode d’instrumentation des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] injecte le code de profilage dans une copie d’un module. Le code enregistre chaque entrée, sortie et appel des fonctions dans le module pendant une exécution du profilage. La méthode d’instrumentation est utile pour rassembler des informations de temporisation détaillées sur une section de votre code et comprendre l’impact des opérations d’entrée et de sortie sur les performances de l’application.  
@@ -34,11 +31,11 @@ La méthode d’instrumentation des outils de profilage [!INCLUDE[vsprvs](../cod
 -   Dans la page **Général** de la boîte de dialogue Propriétés de la session de performance, sélectionnez **Instrumentation**.  
   
 ## <a name="common-tasks"></a>Tâches courantes  
- Vous pouvez spécifier des options supplémentaires dans la boîte de dialogue des *pages de propriétés***session de performance** . Pour ouvrir la boîte de dialogue :  
+ Vous pouvez spécifier des options supplémentaires dans la boîte de dialogue *Session de performance***Pages de propriétés*. Pour ouvrir la boîte de dialogue :  
   
 -   Dans l’ **Explorateur de performances**, cliquez avec le bouton droit sur le nom de la session de performance, puis cliquez sur **Propriétés**.  
   
- Les tâches du tableau suivant décrivent les options que vous pouvez spécifier dans la boîte de dialogue *pages de propriétés***session de performance** quand vous effectuez un profilage à l’aide de la méthode d’instrumentation.  
+ Les tâches du tableau suivant décrivent les options que vous pouvez spécifier dans la boîte de dialogue *Session de performance***Pages de propriétés** quand vous effectuez un profilage à l’aide de la méthode d’instrumentation.  
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  

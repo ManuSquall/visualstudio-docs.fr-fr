@@ -1,22 +1,18 @@
 ---
-title: Modifier le style des objets dans Blend | Microsoft Docs
-ms.custom: 
+title: Modifier le style des objets dans Blend
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3073255564f81273fb6c6001538abf98d78766f7
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: dd96bde626f70211e1698227a8f94df75e3bcb3c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modifier le style des objets dans Blend
 
@@ -27,8 +23,6 @@ Si vous voulez réutiliser des paramètres ou des groupes de paramètres, créez
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinceaux : modifier l'apparence d'un objet
 
 Appliquez un pinceau à un objet si vous voulez modifier son apparence.
-
-**Regarder une courte vidéo :** ![Bouton Lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Éditeur de pinceaux](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Peindre une image ou un motif qui se répète sur un objet
 
@@ -48,8 +42,6 @@ Vous pouvez créer un pinceau visuel à partir d'un contrôle, tel qu'un bouton.
 
 ![Pinceau visuel](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![Pinceau visuel en mosaïque](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
 
-**Regarder une courte vidéo :** ![Bouton Lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Pinceaux en mosaïque](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).
-
 ## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Styles et modèles : créer une apparence cohérente pour les contrôles
 
 Vous pouvez concevoir l’apparence et le comportement d’un même contrôle et appliquer cette conception à d’autres contrôles pour vous éviter d’avoir à les gérer un à un.
@@ -60,7 +52,7 @@ Vous pouvez concevoir l’apparence et le comportement d’un même contrôle et
 
 ### <a name="create-a-template-or-style"></a>Créer un modèle ou un style
 
-Il existe deux façons de créer un modèle. Vous pouvez soit convertir un objet de la planche graphique en contrôle, soit baser votre modèle sur un contrôle existant.
+Vous pouvez créer un modèle de deux façons. Vous pouvez soit convertir un objet de la planche graphique en contrôle, soit baser votre modèle sur un contrôle existant.
 
 Pour convertir un objet en modèle de contrôle, sélectionnez l’objet puis, dans le menu **Outils**, choisissez **Créer un contrôle**.
 
@@ -82,7 +74,7 @@ Dans la boîte de dialogue **Créer une ressource de style**, vous pouvez soit n
 
 > [!NOTE]
 > Vous ne pouvez pas créer de styles ou de modèles pour chaque type de contrôle. Si un contrôle ne les prend pas en charge, le bouton de la barre de navigation ne s’affiche pas au-dessus de la planche graphique.
-> Pour revenir à la portée d’édition de votre document principal, cliquez sur **Rétablir l’étendue à** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Pour revenir à l’étendue d’édition de votre document principal, cliquez sur **Rétablir l’étendue à** ![Icône Rétablir l’étendue à](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Appliquer un style ou un modèle à un contrôle
 
@@ -92,7 +84,7 @@ Cliquez avec le bouton droit sur un objet dans le panneau [Objets et chronologie
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurer le style ou le modèle par défaut d'un contrôle
 
-Sélectionnez le contrôle puis, dans le panneau [Propriétés](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel), recherchez la propriété **Style** ou **Modèle**. Sélectionnez **Options avancées** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png), puis cliquez sur **Réinitialiser** dans le menu contextuel.
+Sélectionnez le contrôle puis, dans le panneau [Propriétés](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel), recherchez la propriété **Style** ou **Modèle**. Sélectionnez **Options avancées**, puis cliquez sur **Réinitialiser** dans le menu contextuel.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>États visuels : modifier l’apparence d’un contrôle en fonction de son état
 
@@ -102,14 +94,12 @@ Les contrôles peuvent avoir des apparences visuelles différentes en fonction d
 
 **Regarder une courte vidéo :** ![Bouton Lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Gérer l’état de vos contrôles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-##  <a name="Resources"></a> Ressources : créer des couleurs, des styles et des modèles et les réutiliser ultérieurement
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Ressources : créer des couleurs, des styles et des modèles et les réutiliser ultérieurement
 
 Vous pouvez convertir pratiquement tous les éléments de votre projet en ressource. Une ressource consiste simplement en un objet que vous pouvez réutiliser à différents endroits dans votre application. Par exemple, vous pouvez créer une couleur, en faire une ressource, puis appliquer cette couleur à plusieurs objets. Pour modifier la couleur de tous ces objets, il vous suffit de modifier la ressource de couleur.
 
 ![Bouton Convertir la couleur en ressource](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Boîte de dialogue Créer une ressource de couleur](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-**Regarder une courte vidéo :** ![Bouton Lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Présentation brève des ressources](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).
-
 ## <a name="see-also"></a>Voir aussi
 
-[Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

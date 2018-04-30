@@ -1,13 +1,10 @@
 ---
-title: 'Démarrage rapide : utiliser Visual Studio pour créer votre première application web Python | Microsoft Docs'
+title: 'Démarrage rapide : utiliser Visual Studio pour créer votre première application web Python'
 description: Ce guide de démarrage rapide utilise Visual Studio pour générer une application web simple en Python à l’aide de l’infrastructure Flask.
 ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71501e113bc744f430c6935dbf20bfd2ec533758
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: b3a455dc04693b70c0ae3932503aea33085b2a80
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application web Python
 
@@ -82,7 +79,7 @@ Suivez les étapes ci-dessous pour installer la bibliothèque Flask dans l’« 
 
 **Question : Où peut-on se renseigner sur les autres packages Python disponibles ?**
 
-**Réponse** : Accédez à [Python Package Index](https://pypi.python.org/pypi) (pypi.python.org).
+**Réponse** : Accédez à [Python Package Index](https://pypi.org/) (pypi.org).
 
 ## <a name="add-a-code-file"></a>Ajouter un fichier de code
 
@@ -121,7 +118,7 @@ Vous êtes maintenant prêt à ajouter un peu de code Python pour implémenter u
 
 **Question : Où peut-on se renseigner sur Flask ?**
 
-**Réponse** : Reportez-vous à la documentation de Flask, en commençant par le [Guide de démarrage rapide Flask](https://flask.pocoo.org/docs/0.12/quickstart/) (flask.pocoo.org).
+**Réponse** : Reportez-vous à la documentation de Flask, en commençant par le [Guide de démarrage rapide Flask](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) (flask.pocoo.org).
 
 ## <a name="run-the-application"></a>Exécuter l'application
 

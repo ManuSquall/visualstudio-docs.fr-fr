@@ -1,30 +1,28 @@
 ---
-title: "Développer du code dans Visual Studio sans projets ni solutions | Microsoft Docs"
+title: Développer du code dans Visual Studio sans projets ni solutions | Microsoft Docs
 ms.date: 02/21/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c50a07992a1856ad0d5f45c0200e0b8a232cb7
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: 082e64d80080eec48c311254461b85812a969841
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Développer du code dans Visual Studio sans projets ni solutions
 
 Visual Studio 2017 permet d’ouvrir du code à partir de presque n’importe quel type de projet basé sur un répertoire dans Visual Studio sans avoir recours à un fichier solution ou de projet. Cela signifie que vous pouvez, par exemple, cloner un référentiel sur GitHub, l’ouvrir directement dans Visual Studio et commencer à développer sans avoir à créer de solution ou de projet. Si nécessaire, vous pouvez spécifier des tâches de génération et des paramètres de lancement personnalisés à l’aide de simples fichiers JSON.
 
-Une fois que vous avez ouvert vos fichiers de code dans Visual Studio, l’Explorateur de solutions les affiche dans le dossier. Vous pouvez cliquer sur n’importe quel fichier pour le modifier. En arrière-plan, Visual Studio démarre l’indexation des fichiers pour activer les fonctionnalités IntelliSense, de navigation et de refactorisation. Au fil des modifications, créations, déplacements et suppressions de fichiers, Visual Studio effectue automatiquement le suivi des modifications et met à jour en permanence son index IntelliSense. Le code apparaît avec coloration syntaxique ; dans de nombreux cas, il comprend la saisie semi-automatique des instructions IntelliSense de base.
+Une fois que vous avez ouvert vos fichiers de code dans Visual Studio, l’**Explorateur de solutions** les affiche dans le dossier. Vous pouvez cliquer sur n’importe quel fichier pour le modifier. En arrière-plan, Visual Studio démarre l’indexation des fichiers pour activer les fonctionnalités IntelliSense, de navigation et de refactorisation. Au fil des modifications, créations, déplacements et suppressions de fichiers, Visual Studio effectue automatiquement le suivi des modifications et met à jour en permanence son index IntelliSense. Le code apparaît avec coloration syntaxique ; dans de nombreux cas, il comprend la saisie semi-automatique des instructions IntelliSense de base.
 
 ## <a name="open-any-code"></a>Ouvrir du code
 
@@ -32,7 +30,7 @@ Vous pouvez ouvrir du code dans Visual Studio de différentes façons :
 
 - Dans la barre de menus de Visual Studio, choisissez **Fichier** > **Ouvrir** > **Dossier**, puis accédez à l’emplacement du code.
 - Dans le menu contextuel (clic droit) d’un dossier contenant le code, choisissez la commande **Ouvrir dans Visual Studio**.
-- Choisissez le lien **Ouvrir le dossier** lien sur la page de démarrage de Visual Studio.
+- Choisissez le lien **Ouvrir le dossier** dans la **Page de démarrage** de Visual Studio.
 - Si vous préférez utiliser le clavier, appuyez sur **Ctrl**+**Maj**+**Alt**+**O** dans Visual Studio.
 - Ouvrez le code d’un référentiel GitHub cloné.
 
@@ -46,7 +44,7 @@ L’exemple suivant montre comment cloner un référentiel GitHub, puis ouvrir s
 
    ![Bouton de clonage GitHub](./media/VSIDE_Code_Clone.png)
 
-1. Dans Visual Studio, cliquez sur l’onglet **Team Explorer** onglet pour ouvrir Team Explorer. Si l’onglet n’apparaît pas, ouvrez-le dans **Affichage** > **Team Explorer**.
+1. Dans Visual Studio, choisissez l’onglet **Team Explorer** pour ouvrir **Team Explorer**. Si l’onglet n’apparaît pas, ouvrez-le dans **Affichage** > **Team Explorer**.
 
 1. Dans Team Explorer, sous la section relative aux **référentiels Git locaux** , choisissez la commande **Cloner**, puis collez l’URL de la page GitHub dans la zone de texte.
 
@@ -54,11 +52,11 @@ L’exemple suivant montre comment cloner un référentiel GitHub, puis ouvrir s
 
 1. Cliquez sur le bouton **Cloner** pour cloner les fichiers du projet dans un référentiel Git local. Ceci peut prendre plusieurs minutes, selon la taille du référentiel.
 
-1. Une fois le dépôt cloné sur votre système, dans Team Explorer, choisissez la commande **Ouvrir** dans le menu contextuel (clic droit) du dépôt qui vient d’être cloné.
+1. Une fois le dépôt cloné sur votre système, dans **Team Explorer**, choisissez la commande **Ouvrir** dans le menu contextuel (clic droit) du dépôt qui vient d’être cloné.
 
    ![Dépôt cloné](./media/VSIDE_Code_Clone3.png)
 
-1. Choisissez la commande **Présenter l’affichage des dossiers** pour afficher les fichiers dans l’Explorateur de solutions
+1. Choisissez la commande **Présenter l’affichage des dossiers** pour afficher les fichiers dans l’**Explorateur de solutions**.
 
    ![Présenter l’affichage des dossiers](./media/VSIDE_Code_Clone3_show.png)
 
@@ -115,5 +113,5 @@ Le texte du bouton **Démarrer** évolue pour refléter le fait que le projet es
 
 - [Personnaliser des tâches de génération et de débogage](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
 - [Ouvrir des projets de dossier pour C++](/cpp/ide/non-msbuild-projects)
-- [Projets CMake en C++](/cpp/ide/cmake-tools-for-visual-cpp)
+- [Projets CMake dans C++](/cpp/ide/cmake-tools-for-visual-cpp)
 - [Écriture de code dans l’éditeur de code et de texte](../ide/writing-code-in-the-code-and-text-editor.md)

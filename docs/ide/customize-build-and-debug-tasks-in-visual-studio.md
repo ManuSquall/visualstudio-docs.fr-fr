@@ -1,8 +1,8 @@
 ---
-title: "Personnaliser des tâches de génération et de débogage dans Visual Studio à l’aide de tasks.vs.json et launch.vs.json | Microsoft Docs"
+title: Personnaliser des tâches de génération et de débogage dans Visual Studio à l’aide de tasks.vs.json et launch.vs.json | Microsoft Docs
 ms.date: 02/21/2018
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
 - makefiles [Visual Studio]
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d40bd35d893afeb8e76e18d46185b3d63add1c5
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: bc193c8c54c09a7d2950cd80994d62512d9232d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personnaliser des tâches de génération et de débogage pour le développement « Ouvrir le dossier »
 
@@ -38,7 +38,7 @@ Personnalisez votre code base sans projet en utilisant les fichiers *.json* suiv
 Ces fichiers *.json* se trouvent dans un dossier masqué appelé *.vs* dans le dossier racine de votre code base. Les fichiers *tasks.vs.json* et *launch.vs.json* sont créés par Visual Studio selon les besoins lorsque vous choisissez l’option **Configurer les tâches** ou **Paramètres de débogage et de lancement** pour un fichier ou dossier dans **l’Explorateur de solutions**. Les fichiers *.json* sont masqués car les utilisateurs ne souhaitent généralement pas les vérifier dans le contrôle de code source. Toutefois, si vous souhaitez être en mesure de les vérifier dans le contrôle de code source, faites glisser les fichiers à la racine de votre code base, où ils sont visibles.
 
 > [!TIP]
-> Pour afficher les fichiers masqués dans Visual Studio, cliquez sur le bouton **Afficher tous les fichiers** de la barre d’outils de l’Explorateur de solutions.
+> Pour voir les fichiers masqués dans Visual Studio, cliquez sur le bouton **Afficher tous les fichiers** de la barre d’outils de **l’Explorateur de solutions**.
 
 ## <a name="define-tasks-with-tasksvsjson"></a>Définir de tâches avec tasks.vs.json
 
@@ -54,7 +54,7 @@ Des tâches personnalisée peuvent être ajoutées à chaque fichier ou à l’e
 
 Si votre code base utilise des outils de génération personnalisés que Visual Studio ne reconnaît pas, vous ne pourrez pas exécuter et déboguer le code dans Visual Studio tant que vous n’aurez pas effectué certaines étapes de configuration. Visual Studio fournit des *tâches de génération* dans lesquelles vous pouvez indiquer à Visual Studio comment générer, regénérer et nettoyer votre code. Le fichier de la tâche de génération *tasks.vs.json* associe la boucle de développement interne de Visual Studio aux outils de génération personnalisée utilisés par le code de base.
 
-Prenons un code base composé d’un seul fichier cC# appelé *hello.cs*. Le Makefile d’un tel code base pourrait ressembler à ceci :
+Prenons un code base composé d’un seul fichier cC# appelé *hello.cs*. Le fichier *makefile* d’un tel code base pourrait se présenter comme ceci :
 
 ```makefile
 build: directory hello.exe
@@ -73,7 +73,7 @@ bin:
     md bin
 ```
 
-Pour ce Makefile contenant des cibles de génération, nettoyage et régénération, vous pouvez définir le fichier *tasks.vs.json* suivant. Il contient trois tâches pour la génération, la régénération et le nettoyage du code base, en utilisant NMAKE comme outil de génération.
+Pour ce fichier *makefile* contenant des cibles de génération, de nettoyage et de regénération, vous pouvez définir le fichier *tasks.vs.json* suivant. Il contient trois tâches pour la génération, la régénération et le nettoyage du code base, en utilisant NMAKE comme outil de génération.
 
 ```json
 {
@@ -117,7 +117,7 @@ Pour ce Makefile contenant des cibles de génération, nettoyage et régénérat
 }
 ```
 
-Après avoir défini les tâches de génération dans *tasks.vs.json*, d’autres éléments de menu contextuel sont ajoutés aux fichiers correspondants dans **l’Explorateur de solutions**. Pour cet exemple, les options **Générer**, **Régénérer** et **Nettoyer** sont ajoutées au menu contextuel de n’importe quel fichier *makefile*.
+Après avoir défini les tâches de génération dans *tasks.vs.json*, d’autres éléments de menu contextuel sont ajoutés aux fichiers correspondants dans **l’Explorateur de solutions**. Pour cet exemple, les options « Générer », « Regénérer » et « Nettoyer » sont ajoutées au menu contextuel des fichiers *makefile*.
 
 ![menu contextuel makefile avec générer, régénerer et nettoyer](media/customize-build-rebuild-clean.png)
 
@@ -205,23 +205,23 @@ Vous pouvez créer des tâches pour tout fichier ou dossier en spécifiant son n
 |-|-|
 |`"*"`| la tâche est disponible pour tous les fichiers et dossiers dans l’espace de travail|
 |`"*/"`| la tâche est disponible pour tous les dossiers dans l’espace de travail|
-|`"*.js"`| la tâche est disponible pour tous les fichiers portant l’extension .js dans l’espace de travail|
-|`"/*.js"`| la tâche est disponible pour tous les fichiers portant l’extension .js à la racine de l’espace de travail|
-|`"src/*/"`| la tâche est disponible pour tous les sous-dossiers du dossier « src »|
-|`"makefile"`| la tâche est disponible pour tous les fichiers makefile dans l’espace de travail|
-|`"/makefile"`| la tâche est disponible uniquement dans le fichier makefile à la racine de l’espace de travail|
+|`"*.js"`| la tâche est disponible pour tous les fichiers avec l’extension *.js* dans l’espace de travail|
+|`"/*.js"`| la tâche est disponible pour tous les fichiers avec l’extension *.js* à la racine de l’espace de travail|
+|`"src/*/"`| la tâche est disponible pour tous les sous-dossiers du dossier *src*|
+|`"makefile"`| la tâche est disponible pour tous les fichiers *makefile* dans l’espace de travail|
+|`"/makefile"`| la tâche est disponible seulement dans le fichier *makefile* à la racine de l’espace de travail|
 
 #### <a name="macros-for-tasksvsjson"></a>Macros pour tasks.vs.json
 
 |||
 |-|-|
 |`${env.<VARIABLE>}`| Spécifie toute variable d’environnement (par exemple, ${env.PATH}, ${env.COMSPEC}, etc.) définie pour l’invite de commandes développeur. Pour plus d’informations, consultez [Invite de commandes développeur pour Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
-|`${workspaceRoot}`| Le chemin complet vers le dossier de l’espace de travail (par exemple, « C:\sources\hello »)|
-|`${file}`| Le chemin d’accès complet du fichier ou du dossier sur lequel exécuter cette tâche (par exemple, « C:\sources\hello\src\hello.js »)|
-|`${relativeFile}`| Le chemin d’accès relatif au fichier ou dossier (par exemple, « src\hello.js »)|
-|`${fileBasename}`| Le nom de fichier sans chemin d’accès ou l’extension (par exemple, « hello »)|
-|`${fileDirname}`| Le chemin d’accès complet au fichier, sans l’extension (par exemple, « C:\sources\hello\src »)|
-|`${fileExtname}`| L’extension du fichier sélectionné (par exemple, « .js »)|
+|`${workspaceRoot}`| Le chemin complet vers le dossier de l’espace de travail (par exemple *C:\sources\hello*)|
+|`${file}`| Le chemin complet du fichier ou du dossier sur lequel exécuter cette tâche (par exemple *C:\sources\hello\src\hello.js*)|
+|`${relativeFile}`| Le chemin relatif du fichier ou du dossier (par exemple *src\hello.js*)|
+|`${fileBasename}`| Le nom du fichier sans chemin ni extension (par exemple *hello*)|
+|`${fileDirname}`| Le chemin complet du fichier, sans le nom de fichier (par exemple *C:\sources\hello\src*)|
+|`${fileExtname}`| L’extension du fichier sélectionné (par exemple *.js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Configurer le débogage avec launch.vs.json
 

@@ -1,12 +1,10 @@
 ---
-title: "Services et produits d’accessibilité de Microsoft | Microsoft Docs"
-ms.custom: 
+title: Services et produits d’accessibilité de Microsoft | Microsoft Docs
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - TT/TDD services
 - recorded documentation
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
-caps.latest.revision: "14"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e6d59464050c3233e09e9d0d0844916ae3517408
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e058a4e501f49d58239c86e74157570fb854713
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Services et produits d’accessibilité de Microsoft
 > [!TIP]
@@ -66,7 +64,7 @@ Microsoft s’engage à faciliter l’utilisation de ses produits et services. L
 
 |Recording for the Blind & Dyslexic Inc.|  
 |----------------------------------------------|  
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Téléphone depuis les États-Unis : (800) 221-4792<br /><br /> Téléphone hors des États-Unis et du Canada : (609) 452-0606<br /><br /> Télécopie : (609) 987-8116<br /><br /> Site web Recording for the Blind & Dyslexic : [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|  
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Téléphone depuis les États-Unis : (800) 221-4792<br /><br /> Téléphone hors des États-Unis et du Canada : (609) 452-0606<br /><br /> Télécopie : (609) 987-8116<br /><br /> Site web Recording for the Blind & Dyslexic Inc. : [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|  
 
  Comme les adresses web peuvent changer, peut-être ne pourrez-vous pas vous connecter aux sites web ou sites mentionnés ici.  
 

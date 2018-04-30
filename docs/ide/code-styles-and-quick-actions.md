@@ -1,24 +1,22 @@
 ---
-title: "Préférences de style de code Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Préférences de style de code Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 03/10/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
-ms.workload: multiple
-ms.openlocfilehash: 741df95afdd7c7e8b6f0ba2de75c1465cd35cc97
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 4898a2e4a55f5c11179ae5a00e46c87a44519a7b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-style-preferences"></a>Préférences de style de code
 
@@ -30,7 +28,7 @@ Pour chaque élément, vous pouvez définir les valeurs **Préférence** et **Gr
 
 Les paramètres de style de code pour .NET peuvent également être gérés avec un fichier [EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Dans ce cas, les paramètres du fichier EditorConfig sont prioritaires sur les options sélectionnées dans la boîte de dialogue **Options**. Vous pouvez utiliser le fichier EditorConfig pour appliquer et configurer le style de codage pour l’intégralité de votre référentiel ou projet.
 
-## <a name="see-also"></a>Voir aussi
+### <a name="see-also"></a>Voir aussi
 
 [Actions rapides](../ide/quick-actions.md)  
 [Paramètres des conventions de codage .NET pour EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

@@ -1,26 +1,27 @@
 ---
 title: Avantage Support prioritaire dans les abonnements Visual Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/16/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Priority Support benefit included in Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b62a60207f306c623d53f67fbe7e473c5ee8164d
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/16/2018
+ms.topic: Get-Started-Article
+description: Découvrez l’avantage Support prioritaire inclus dans les abonnements Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: e2cad13b3904779bfaca86f7d3e66ac5dbbcfbb8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Support prioritaire dans les abonnements Visual Studio
 
-## <a name="overview"></a>Vue d'ensemble 
 L’avantage Support prioritaire vous permet d’accéder à une variété de forums communautaires de support où vous pouvez effectuer une recherche dans les publications existantes ou poser de nouvelles questions.  Si votre question n’obtient pas de réponse de la communauté dans un délai de deux jours, l’équipe de support technique de Microsoft vous fournira une réponse.  
 
 Les abonnés avec certains abonnements Visual Studio sont éligibles à un support prioritaire via un grand nombre de forums couvrant diverses rubriques.
+
+## <a name="included-forums"></a>Forums inclus
 
 ### <a name="net-framework"></a>.NET Framework
    - Configuration et maintenance de .NET Framework 
@@ -194,34 +195,6 @@ Les abonnés avec certains abonnements Visual Studio sont éligibles à un suppo
    - XML SQL Server 
 
 
-
-### <a name="eligibility"></a>Éligibilité
-| Niveau d’abonnement / Programme                                 | Avantage               | Renouvelable ?                                                         |
-|--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | Included              | Oui                                                                |
-| Visual Studio Enterprise, annuel                              | Included              | Oui                                                                |
-| Visual Studio Enterprise, mensuel                             | Non disponible         |                                                                    |
-| Visual Studio Professional Standard                          | Included              | Oui                                                                |
-| Visual Studio Professional, annuel                            | Included              | Oui                                                                | 
-| Visual Studio Professional, mensuel                           | Non disponible         |                                                                    |
-| Visual Studio Test Pro                                       | Included              | Oui                                                                |
-| Plateformes MSDN                                               | Included              | Oui                                                                |
-| Visual Studio Dev Essentials                                 | Included              | Oui                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                               | Included              | Oui                                                                |
-| Visual Studio Enterprise - FTE                               | Included              | Oui                                                                |
-| Visual Studio Enterprise - MPN                               | Non disponible         |                                                                    |
-| Visual Studio Professional - MPN                             | Non disponible         |                                                                    |
-| Visual Studio Enterprise - MVP/RD                            | Non disponible         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                | Included              | Oui                                                                |
-| Visual Studio Enterprise – Imagine (Premium)                 | Included              | Oui                                                                |
-| Visual Studio Enterprise – BizSpark                          | Non disponible         |                                                                    |
-| Visual Studio Enterprise – MCT Software & Services           | Non disponible         |                                                                    |
-| Visual Studio Enterprise – MCT Software & Services Developer | Non disponible         |                                                                    |
-<sup>1</sup>  *Inclut Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD) et Visual Studio Industry Partner (VSIP)*  
-
-Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour consulter la liste de tous les abonnements assignés à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été assignés à une autre adresse e-mail.  Vous devez alors vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
-
-
 ## <a name="activation-steps"></a>Étapes d’activation
 L’accès au Support prioritaire est très simple. 
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -238,8 +211,20 @@ L’accès au Support prioritaire est très simple.
 
     ![Exemple Support prioritaire](_img/vs-priority-support/vs-priority-support-example.png)
 
-## <a name="faq"></a>FAQ
-*Consultez les mises à jour disponibles ici*
+## <a name="eligibility"></a>Éligibilité
+| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Included       |  Oui          |
+| Visual Studio Professional (Standard, cloud annuel) | Licences en volume, Azure, Détail                                       | Included                                                            |Oui |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Included                                                            |Oui |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Included                                                            |Oui |
+| Visual Studio Dev Essentials | NA  | Included                                                            |Oui |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+
+<sup>1</sup> *Inclut : NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), Imagine.  Exclut : MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Microsoft Valued Partner), RD (Region Director).*
+
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
+
 
 ## <a name="support-resources"></a>Ressources de support technique
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio.

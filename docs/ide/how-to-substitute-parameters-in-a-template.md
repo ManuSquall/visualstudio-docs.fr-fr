@@ -1,24 +1,22 @@
 ---
-title: "Ajouter des paramètres de nom à des modèles de projet et d’élément dans Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Ajouter des paramètres de nom à des modèles de projet et d’élément dans Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
 - template parameters, substituting
 - Visual Studio templates, using parameters
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ecdd277a36cb1c074653edb2af7f1882e6d25ede
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: 0439ffd8e7994995dd3eaafed8e0b0fb2a57d282
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Guide pratique pour substituer des paramètres dans un modèle
 
@@ -36,7 +34,7 @@ La section suivante vous montre comment modifier un modèle pour remplacer le no
     namespace $safeprojectname$
     ```
 
-1. Dans le fichier .vstemplate du modèle, localisez l'élément `ProjectItem` qui inclut ce fichier.
+1. Dans le fichier *.vstemplate* du modèle, localisez l’élément `ProjectItem` qui inclut ce fichier.
 
 1. Affectez à l’attribut `ReplaceParameters` la valeur `true` pour l’élément `ProjectItem` :
 
@@ -46,7 +44,7 @@ La section suivante vous montre comment modifier un modèle pour remplacer le no
 
 ## <a name="see-also"></a>Voir aussi
 
-[Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)  
+[Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)  
 [Paramètres de modèle](../ide/template-parameters.md)  
-[Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
-[Élément ProjectItem (modèles d'élément Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+[Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
+[ProjectItem, élément (modèles d’élément Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

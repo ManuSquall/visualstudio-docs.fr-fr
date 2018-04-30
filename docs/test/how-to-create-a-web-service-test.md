@@ -1,7 +1,7 @@
 ---
 title: Créer un test de service web dans Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, creating Web service tests
 - Web services [Visual Studio ALM], creating
@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d7a864b7fc62527bdd2593523ccdc91bf913aa
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 64530780a3e599df7e623ea5232c6890bf7b97a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-web-service-test"></a>Comment : créer un test de service Web
 
-Vous pouvez utiliser un test de performances de site web pour tester des services web. À l’aide des options **Insérer une requête** et **Insérer une requête de service web**, vous pouvez personnaliser les requêtes individuelles dans **l’éditeur de test de performances web** pour localiser des pages de service web. En général, vous n'affichez pas ces pages dans l'application web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
+Vous pouvez utiliser un test de performances de site web pour tester des services web. À l’aide des options **Insérer une requête** et **Insérer une requête de service web**, vous pouvez personnaliser les requêtes individuelles dans **l’éditeur de test de performances web** pour localiser des pages de service web. En général, vous n'affichez pas ces pages dans l'applications web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
 
 Les procédures suivantes utilisent un service web contenu dans le Starter Kit Commerce. Vous pouvez le télécharger à partir du lien [Starter Kit ASP.NET Commerce](http://go.microsoft.com/fwlink/?LinkId=181469).
 
@@ -33,7 +33,7 @@ Les procédures suivantes utilisent un service web contenu dans le Starter Kit C
 
 2.  Dans **l’éditeur de test de performances web**, cliquez avec le bouton droit sur le test de performances web et sélectionnez **Ajouter une requête de service web**.
 
-3.  Dans la propriété **Url** de la nouvelle requête, tapez le nom du service web (par exemple, **http://localhost/storecsvs/InstantOrder.asmx**).
+3.  Dans la propriété **Url** de la nouvelle requête, tapez le nom du service web, par exemple **http://localhost/storecsvs/InstantOrder.asmx**.
 
 4.  Ouvrez une session distincte du navigateur et tapez l’URL de la page .asmx dans la barre d’outils **Adresse**. Sélectionnez la méthode à tester et examinez le message SOAP. Il contient un `SOAPAction`.
 

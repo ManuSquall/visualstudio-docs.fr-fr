@@ -1,24 +1,22 @@
 ---
-title: "Création de modèles d’élément multifichiers pour Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Création de modèles d’élément multifichiers pour Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f1d5b11c97b7f214a13225b5605f47e3d3a45966
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: fc494f7fa3134984ccb2330e835332fb3e711c19
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Guide pratique pour créer des modèles d’élément multifichiers
 
@@ -40,7 +38,7 @@ Vous pouvez créer un modèle d’élément multifichier de la même manière qu
 
 1. Créez le modèle d’élément comme vous le feriez manuellement pour un modèle d’élément à un seul fichier, mais incluez chaque fichier qui constitue l’élément multifichier.
 
-1. Dans le fichier XML .vstemplate, ajoutez un élément `ProjectItem` pour chaque fichier, puis ajoutez un attribut `TargetFileName` à cet élément. Affectez à l’attribut `TargetFileName` la valeur $fileinputname$.*FileExtension*, où *FileExtension* est l’extension du fichier en cours d’inclusion dans le modèle. Exemple :
+1. Dans le fichier XML *.vstemplate*, ajoutez un élément `ProjectItem` pour chaque fichier, puis ajoutez un attribut `TargetFileName` à cet élément. Affectez à l’attribut `TargetFileName` la valeur *$fileinputname$.FileExtension*, où *FileExtension* représente l’extension du fichier inclus dans le modèle. Exemple :
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -59,13 +57,13 @@ Vous pouvez créer un modèle d’élément multifichier de la même manière qu
 
 1. Sélectionnez les fichiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** > **Dossier compressé**.
 
-   Les fichiers que vous avez sélectionnés sont compressés dans un fichier .zip.
+   Les fichiers que vous avez sélectionnés sont compressés dans un fichier *.zip*.
 
-1. Copiez le fichier .zip à l’emplacement du modèle d’élément utilisateur. Par défaut, ce répertoire est %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates. Pour plus d’informations, consultez [Guide pratique pour localiser et organiser les modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Copiez le fichier *.zip* à l’emplacement des modèles d’élément utilisateur. Par défaut, le répertoire est : *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates*. Pour plus d’informations, consultez [Guide pratique pour localiser et organiser les modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Fermez Visual Studio, puis rouvrez-le.
 
-1. Créez un projet, ou ouvrez un projet existant, puis choisissez **Projet** > **Ajouter un nouvel élément...** ou appuyez sur **Ctrl** + **Maj** + **A**.
+1. Créez un projet ou ouvrez un projet existant, puis choisissez **Projet** > **Ajouter un nouvel élément**, ou appuyez sur **Ctrl**+**Maj**+**A**.
 
    Le modèle d’élément multifichier apparaît dans la boîte de dialogue **Ajouter un nouvel élément**.
 
@@ -98,7 +96,7 @@ L’exemple suivant présente un modèle Windows Forms. Quand vous créez un él
 
 ## <a name="see-also"></a>Voir aussi
 
-[Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)  
+[Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)  
 [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)  
 [Paramètres de modèle](../ide/template-parameters.md)  
 [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md)

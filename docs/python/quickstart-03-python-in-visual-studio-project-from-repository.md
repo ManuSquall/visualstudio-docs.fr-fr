@@ -1,15 +1,9 @@
 ---
-title: 'Démarrage rapide : Clonage d’un dépôt de code Python | Microsoft Docs'
+title: Démarrage rapide - Clonage d’un dépôt de code Python
 description: Ce guide de démarrage rapide vous permet de créer un projet Python dans Visual Studio par clonage du référentiel koans de Python à l’aide de Visual Studio Team Explorer.
-ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9acad900f31d3579156cd266ebc10c244a1de39c
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: d66c3b5b62edc6963d92e27bcf6a94889741b27f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Démarrage rapide : Clonage d’un dépôt de code Python dans Visual Studio
 
@@ -31,7 +25,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 2. Lancez Visual Studio.
 
-3. Sélectionnez **Affichage > Team Explorer...** pour ouvrir la fenêtre **Team Explorer**, dans laquelle vous pouvez vous connecter à GitHub ou à Visual Studio Team Services, ou cloner un dépôt. (Si la page **Connecter** ne s’affiche pas ci-dessous, sélectionnez l’icône de connexion sur la barre d’outils supérieure pour ouvrir cette page.)
+3. Sélectionnez **Affichage > Team Explorer** pour ouvrir la fenêtre **Team Explorer** dans laquelle vous pouvez vous connecter à GitHub ou Visual Studio Team Services, ou bien cloner un dépôt. (Si la page **Connecter** ne s’affiche pas ci-dessous, sélectionnez l’icône de connexion sur la barre d’outils supérieure pour ouvrir cette page.)
 
     ![Fenêtre Team Explorer montrant Visual Studio Team Services, GitHub et le clonage d’un dépôt](media/team-explorer.png)
 
@@ -42,7 +36,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 5. Lorsque le clonage est terminé, le nom du référentiel s’affiche dans la liste **référentiels Git locaux**. Double-cliquez sur ce nom pour accéder au tableau de bord du référentiel dans **Team Explorer**.
 
-6. Sous **Solutions**, sélectionnez **Nouveau...**.
+6. Sous **Solutions**, sélectionnez **Nouveau**.
 
     ![Fenêtre Team Explorer, création d’un projet à partir d’un clone](media/team-explorer-new-project.png)
 
@@ -52,7 +46,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 9. Dans l’**Explorateur de solutions**, développez le nœud `python3`, cliquez avec le bouton droit sur`contemplate_koans.py`, puis sélectionnez **Définir comme fichier de démarrage**. Cette étape indique à Visual Studio quel fichier utiliser quand vous exécutez le projet.
 
-10. Sélectionnez **Projet > Propriétés Koans...** dans le menu, sélectionnez l’onglet **Général** et définissez **Répertoire de travail** sur « python3 ». Cette étape est nécessaire; car par défaut, Visual Studio définit le répertoire de travail sur la racine du projet et non pas sur l’emplacement du fichier de démarrage (`python3\contemplate_koans.py`, que vous pouvez également voir dans les propriétés du projet). Le code du programme recherche un fichier `koans.txt` dans le dossier de travail. Par conséquent, si vous ne changez pas cette valeur, vous recevrez une erreur à l’exécution.
+10. Sélectionnez **Projet > Propriétés Koans** dans le menu, sélectionnez l’onglet **Général**, puis affectez la valeur « python3 » à **Répertoire de travail**. Cette étape est nécessaire; car par défaut, Visual Studio définit le répertoire de travail sur la racine du projet et non pas sur l’emplacement du fichier de démarrage (`python3\contemplate_koans.py`, que vous pouvez également voir dans les propriétés du projet). Le code du programme recherche un fichier `koans.txt` dans le dossier de travail. Par conséquent, si vous ne changez pas cette valeur, vous recevrez une erreur à l’exécution.
 
     ![Définition du répertoire de travail pour un projet Python](media/projects-set-working-directory.png)
 

@@ -1,26 +1,20 @@
 ---
-title: Espaces de travail distants avec les Outils R pour Visual Studio | Microsoft Docs
-description: "Guide pratique pour configurer les espaces de travail R distants et s’y connecter à partir de Visual Studio."
-ms.custom: 
+title: Espaces de travail distants pour R
+description: Guide pratique pour configurer les espaces de travail R distants et s’y connecter à partir de Visual Studio.
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 52122b3b3a92ff7df292764e75175070e0b6b1db
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 84a9c2bddb74402711217427b3471713562cce0a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="setting-up-remote-workspaces"></a>Configuration des espaces de travail distants
 

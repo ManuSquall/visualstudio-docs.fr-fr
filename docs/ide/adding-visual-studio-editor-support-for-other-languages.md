@@ -2,10 +2,7 @@
 title: Ajout de la prise en charge de l’éditeur Visual Studio dans d’autres langages | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax colorization
 - IntelliSense
@@ -15,19 +12,18 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology:
 - vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 885563b456ca27c319e8b1eafb1963e77d9d1cfa
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 8082a2d52929b8ec03d904bd365f15f143448037
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Ajout de la prise en charge de l’éditeur Visual Studio dans d’autres langages
 Découvrez comment l’éditeur Visual Studio prend en charge la lecture et la navigation parmi différents langages de programmation, et comment ajouter la prise en charge de l’éditeur Visual Studio dans d’autres langages.  
@@ -83,7 +79,7 @@ Tous ces types de fichier offrent les fonctionnalités décrites précédemment 
 |*\Syntaxes*|Dossier de la grammaire. Contient les fichiers *.json* de grammaire du langage, tels que *Matlab.json*.|  
 |*\Extraits de code*|Dossier des extraits de code. Contient les extraits de code du langage.|  
   
- Dans Windows, *%userprofile%* est résolu au chemin suivant : *c:\Users\\*\<nom d’utilisateur>*.* Si le dossier d’extensions n’existe pas sur votre système, vous devez le créer. Si le dossier existe déjà, il est masqué.  
+ Dans Windows, la résolution de *%userprofile%* donne le chemin suivant : *c:\Users\\\<nom_utilisateur>*. Si le dossier d’extensions n’existe pas sur votre système, vous devez le créer. Si le dossier existe déjà, il est masqué.  
   
  Pour plus d’informations sur la création de grammaires TextMate, consultez [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate – Présentation des grammaires de langage : comment ajouter la coloration syntaxique du code source incorporée en HTML) et [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Remarques sur la création d’une grammaire de langage et d’un thème personnalisé pour un lot Textmate).  
   

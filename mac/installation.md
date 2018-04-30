@@ -1,17 +1,16 @@
 ---
-title: Installer Visual Studio pour Mac | Microsoft Docs
-description: "Instructions sur l’installation de Visual Studio pour Mac et des composants supplémentaires nécessaires pour le développement multiplateforme."
+title: Installer Visual Studio pour Mac
+description: Instructions sur l’installation de Visual Studio pour Mac et des composants supplémentaires nécessaires pour le développement multiplateforme.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 5de4760b001e82a0c95c593c1308746946b2c630
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: 9069e85f5d0bf0d6b8031065619b48f7302b7411
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Configurer et installer Visual Studio pour Mac
 
@@ -23,11 +22,11 @@ Pour travailler avec iOS dans Visual Studio, vous avez besoin des éléments sui
 
 * un Mac avec macOS Sierra 10.12 ou ultérieur
 * Xcode 8.3 ou ultérieur. La dernière version stable est généralement recommandée.
-* un ID Apple. Si vous n’avez pas déjà un ID Apple, vous pouvez en créer un sur https://appleid.apple.com. Un ID Apple est nécessaire pour installer et se connecter à Xcode.
+* un ID Apple. Si vous n’avez pas encore d’identifiant Apple, vous pouvez en créer un sur https://appleid.apple.com. Un ID Apple est nécessaire pour installer et se connecter à Xcode.
 
 ## <a name="install"></a>Installez
 
-1. Téléchargez Visual Studio pour Mac à partir de [https://www.visualstudio.com/](https://www.visualstudio.com/)
+1. Télécharger Visual Studio pour Mac à partir de [https://www.visualstudio.com/](https://www.visualstudio.com/)
 
 2. Une fois le package d’installation téléchargé, cliquez sur le fichier **VisualStudioInstaller.dmg** pour monter le programme d’installation puis exécutez-le en double-cliquant sur le logo, comme illustré dans l’image suivante :
 
