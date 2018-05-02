@@ -1,8 +1,9 @@
 ---
-title: Utilisation des classes Assert pour les tests unitaires dans Visual Studio | Microsoft Docs
+title: Utilisation des classes Assert pour les tests unitaires dans Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Assert classes
 - Assert statements
@@ -13,17 +14,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ff40f25e9beffa848185fe2c1f95df96928543d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d56477822fa2d965902d9442d47e2c3ab24d656
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-the-assert-classes"></a>Utiliser les classes Assert
 
 Utilisez les classes Assert de l’espace de noms UnitTestingFramework pour vérifier des fonctionnalités spécifiques. Une méthode de test unitaire teste le code d’une méthode dans votre code de développement. Toutefois, elle ne signale l’exactitude du comportement du code que si vous incluez des instructions Assert.
 
 ## <a name="kinds-of-asserts"></a>Genres d’assertion
+
  L’espace de noms <xref:Microsoft.VisualStudio.TestTools.UnitTesting> fournit plusieurs genres de classes Assert :
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
@@ -47,7 +49,7 @@ Utilisez les classes Assert de l’espace de noms UnitTestingFramework pour vér
  L’exception AssertInconclusiveException est levée chaque fois qu’un test produit un résultat Inconclusive. En général, vous ajoutez une instruction Assert.Inconclusive à un test sur lequel vous travaillez pour indiquer qu’il n’est pas encore prêt à être exécuté.
 
 > [!NOTE]
->  Une autre stratégie consiste à marquer un test qui n’est pas prêt à être exécuté avec l’attribut Ignore. Toutefois, cela présente un inconvénient : vous ne pouvez pas générer facilement un rapport sur le nombre de tests qu’il vous reste à implémenter.
+> Une autre stratégie consiste à marquer un test qui n’est pas prêt à être exécuté avec l’attribut Ignore. Toutefois, cela présente un inconvénient : vous ne pouvez pas générer facilement un rapport sur le nombre de tests qu’il vous reste à implémenter.
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>
 

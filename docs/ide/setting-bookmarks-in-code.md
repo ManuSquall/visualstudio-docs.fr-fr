@@ -1,7 +1,7 @@
 ---
-title: Définir des signets de code dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Définir des signets de code dans Visual Studio
 ms.date: 02/23/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c51b360a8df39abfd38e3da175de65c38d59bf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: edeb4a012d0059f54df29fd74b093cc51ed5e6f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-bookmarks-in-code"></a>Définir des signets dans le code
 
@@ -43,4 +43,4 @@ Vous pouvez désactiver les signets (sans les supprimer) en choisissant le bouto
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Écrire du code dans l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Écrire du code dans l’éditeur](../ide/writing-code-in-the-code-and-text-editor.md)

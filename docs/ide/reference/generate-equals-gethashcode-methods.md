@@ -1,19 +1,19 @@
 ---
-title: Générer des substitutions des méthodes C# Equals et GetHashCode dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Générer des substitutions des méthodes C# Equals et GetHashCode dans Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3768659ce6c4e52c9e4f6473207fc74513797f17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cdbb5273d046be8f11cc2fbc4a03ed6767a31e00
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Générer des substitutions des méthodes Equals et GetHashCode dans Visual Studio
 

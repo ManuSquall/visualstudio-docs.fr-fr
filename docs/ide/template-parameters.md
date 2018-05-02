@@ -1,9 +1,9 @@
 ---
-title: Paramètres de projet et de modèle d’élément Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Paramètres de modèle de projet et d’élément Visual Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -12,15 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c49514aeb164040ea374371cae6a61d1f7eb8948
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 
-L’utilisation de paramètres dans vos modèles vous permet de remplacer les valeurs des parties principales du modèle, telles que les noms de classes et les espaces de noms, quand le modèle est instancié. Ces paramètres sont remplacés par l’Assistant Modèle qui s’exécute en arrière-plan quand un utilisateur choisit **OK** ou **Ajouter** dans les boîtes de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**.
+Vous pouvez remplacer des valeurs dans votre modèle quand ce dernier est instancié. Pour configurer cette fonctionnalité, utilisez des *paramètres de modèle*. Les paramètres de modèle peuvent être utilisés pour remplacer des valeurs, comme les noms de classes et les espaces de noms, dans le modèle. L’Assistant Modèle, qui s’exécute en arrière-plan quand un utilisateur ajoute un nouvel élément ou un nouveau projet, remplace ces paramètres.
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Déclaration et activation des paramètres de modèle
 
@@ -38,7 +38,7 @@ Les paramètres de modèle sont déclarés au format $*paramètre*$. Exemple :
 
 1. Affectez à l'attribut `ReplaceParameters` de l'élément `ProjectItem` la valeur `true`.
 
-1. Dans le fichier de code de l’élément de projet, ajoutez les paramètres quand cela est approprié. Par exemple, le paramètre suivant spécifie que le nom du projet sécurisé doit être utilisé pour désigner l’espace de noms dans un fichier :
+1. Dans le fichier de code de l’élément de projet, ajoutez les paramètres quand cela est approprié. Par exemple, le paramètre suivant spécifie que le nom du projet sécurisé est utilisé pour désigner l’espace de noms dans un fichier :
 
     ```csharp
     namespace $safeprojectname$
@@ -118,5 +118,5 @@ Dans le fichier .vstemplate du modèle de projet, ajoutez l’attribut `ReplaceP
 
 ## <a name="see-also"></a>Voir aussi
 
-[Personnalisation des modèles](../ide/customizing-project-and-item-templates.md)  
-[Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)
+- [Personnalisation des modèles](../ide/customizing-project-and-item-templates.md)
+- [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)

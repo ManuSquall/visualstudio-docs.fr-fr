@@ -1,5 +1,5 @@
 ---
-title: Créer un plug-in de test de charge dans Visual Studio | Microsoft Docs
+title: Créer un plug-in de test de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,13 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6e585fe66bde573f8bb133b0c8cda0900b0d6d16
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 482336bca7c177b3c4fdcb0f16faf7ea96d6c34b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Comment : créer un plug-in de test de charge
 
@@ -102,7 +103,8 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
 Le code suivant illustre un plug-in de test de charge qui exécute du code personnalisé suite à un événement LoadTestFinished. Si ce code est exécuté sur un agent de test sur un ordinateur distant et si l'agent et le contrôleur de test n'ont pas de service SMTP localhost, le test de charge reste à l'état "En cours" car une boîte de message est ouverte.
 
 > [!NOTE]
->  Le code suivant requiert l'ajout d'une référence à System.Windows.Forms.
+> Le code suivant requiert l'ajout d'une référence à System.Windows.Forms.
+
 
 ```csharp
 using System;

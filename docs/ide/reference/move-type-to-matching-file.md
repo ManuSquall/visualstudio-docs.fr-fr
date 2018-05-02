@@ -1,7 +1,7 @@
 ---
-title: Déplacer un type vers un fichier correspondant dans Visual Studio (refactorisation) | Microsoft Docs
-ms.custom: ''
+title: Déplacer un type vers un fichier correspondant dans Visual Studio (refactorisation)
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cabe20e6cf84b69bf711831d1a402f67fd908c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 00fab87a8fed4d1dcd9b4899551d68eaab28d46a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Déplacer un type vers un fichier correspondant (refactorisation)
 
@@ -63,4 +63,4 @@ Cette refactorisation s’applique à :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Refactorisation](../refactoring-in-visual-studio.md)
+- [Refactorisation](../refactoring-in-visual-studio.md)
