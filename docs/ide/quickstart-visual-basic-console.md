@@ -1,9 +1,10 @@
 ---
-title: 'Démarrage rapide : Créer votre première application console dans Visual Studio avec Visual Basic | Microsoft Docs'
+title: 'Démarrage rapide : Créer votre première application console dans Visual Studio avec Visual Basic'
+description: Découvrez comment créer une application console simple dans Visual Studio avec Visual Basic, étape par étape.
 ms.custom: ''
 ms.date: 12/10/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -13,23 +14,25 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 39e7b9f03a5ef0a37594dad015084648eaa2bade
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44c996e0e896a125a0d0ab9342e63b81ad2b9b24
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Démarrage rapide : Créer votre première application console dans Visual Studio avec Visual Basic
+
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer une application Visual Basic simple qui s’exécute dans la console.
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) pour l’installer gratuitement.
 
 ## <a name="create-a-project"></a>Créer un projet
+
 Tout d’abord, vous allez créer un projet d’application Visual Basic. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
 1. Ouvrez Visual Studio 2017.
 
-2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet...**.
+2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
 3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Ensuite, nommez le projet *HelloWorld*.
 
@@ -44,6 +47,7 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
      ![Charge de travail Développement multiplateforme .Net Core dans Visual Studio Installer](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ## <a name="create-the-application"></a>Créer l’application
+
 Une fois que vous avez sélectionné votre modèle de projet Visual Basic et nommé votre projet, Visual Studio crée une application « Hello World » simple. Il appelle la méthode <xref:System.Console.WriteLine%2A> pour afficher la chaîne littérale « Hello World ! » dans la fenêtre de console.
 
 ![Afficher le code Hello World par défaut à partir du modèle](../ide/media/vb-console-helloworld-template.png)
@@ -55,6 +59,7 @@ Si vous cliquez sur le bouton **HelloWorld** dans l’IDE, vous exécutez le pro
 Dans ce cas, la fenêtre de console reste visible seulement un instant avant sa fermeture. Cela s’explique par le fait que la méthode `Main` se termine après l’exécution de son instruction unique, entraînant la fin de l’application.
 
 ### <a name="add-some-code"></a>Ajouter du code
+
 Vous allez maintenant ajouter du code pour suspendre l’application et demander une entrée utilisateur.
 
 1. Ajoutez le code suivant immédiatement après l’appel à la méthode <xref:System.Console.WriteLine%2A> :
@@ -70,6 +75,7 @@ Vous allez maintenant ajouter du code pour suspendre l’application et demander
    Ceci compile votre programme en un langage intermédiaire, qui est ensuite converti en code binaire par un compilateur juste-à-temps (JIT).
 
 ## <a name="run-the-application"></a>Exécuter l'application
+
 1. Cliquez sur le bouton **HelloWorld** dans la barre d’outils.
 
    ![Cliquer sur le bouton Hello World pour exécuter le programme à partir de la barre d’outils](../ide/media/vb-console-hello-world-button.png)
@@ -79,6 +85,7 @@ Vous allez maintenant ajouter du code pour suspendre l’application et demander
    ![Fenêtre de console affichant « Hello World » et « Press any key to continue »](../ide/media/vb-console-hello-world-press-any-key.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur Visual Basic et l’IDE de Visual Studio. Pour en apprendre davantage, passez au tutoriel suivant.
 
 > [!div class="nextstepaction"]

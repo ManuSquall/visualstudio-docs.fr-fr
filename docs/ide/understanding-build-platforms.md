@@ -1,9 +1,8 @@
 ---
-title: Présentation des plateformes de générations | Microsoft Docs
-ms.custom: ''
+title: Présentation des plateformes de générations
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
 - vs.build.newsolutionplatform
@@ -19,23 +18,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47d4efb409c2779327c4914422b7e37becd6e3c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3bc8bb2eddf756b238b88e79050552caef945d0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="understanding-build-platforms"></a>Présentation des plateformes de générations
-Vous pouvez stocker différentes versions de propriétés de solution et de projet qui s’appliquent à diverses plateformes cibles. Par exemple, vous pouvez créer une configuration de débogage qui cible une plateforme x86 et une autre qui cible une plateforme x64. Vous pouvez rapidement changer la plateforme active et ainsi générer facilement plusieurs configurations.  
-  
-## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour configurer des projets pour des plateformes cibles](../ide/how-to-configure-projects-to-target-platforms.md)  
- Explique comment configurer un projet pour cibler une plateforme spécifique.  
-  
- [Guide pratique pour configurer des projets pour plusieurs plateformes cibles](../ide/how-to-configure-projects-to-target-multiple-platforms.md)  
- Explique comment configurer un projet pour cibler plusieurs plateformes.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md)   
- [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
+# <a name="understand-build-platforms"></a>Présentation des plateformes de génération
+
+Vous pouvez stocker différentes versions de propriétés de solution et de projet qui s’appliquent à diverses plateformes cibles. Par exemple, vous pouvez créer une configuration de débogage qui cible une plateforme x86 et une autre qui cible une plateforme x64. Vous pouvez rapidement changer la plateforme active et ainsi générer facilement plusieurs configurations.
+
+## <a name="in-this-section"></a>Dans cette section
+
+ [Guide pratique pour configurer des projets pour des plateformes cibles](../ide/how-to-configure-projects-to-target-platforms.md) Explique comment configurer un projet pour cibler une plateforme spécifique.
+
+ [Guide pratique pour configurer des projets pour plusieurs plateformes cibles](../ide/how-to-configure-projects-to-target-multiple-platforms.md) explique comment configurer un projet pour cibler plusieurs plateformes.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md)
+- [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)

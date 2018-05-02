@@ -1,9 +1,8 @@
 ---
-title: Guide pratique pour ajouter des commentaires aux diagrammes de classes (Concepteur de classes) | Microsoft Docs
-ms.custom: ''
+title: 'Comment : ajouter des commentaires aux diagrammes de classes (Concepteur de classes)'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
@@ -17,26 +16,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e2b17e0d05faf17e7d6c4e2ed65841229f2b15
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 372e92c2edb9110d6fdde45cb5381c7b420b4b03
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Comment : ajouter des commentaires aux diagrammes de classes (Concepteur de classes)
-Vous pouvez utiliser des zones de commentaire pour annoter les diagrammes de classes. Une zone de commentaire comprend la propriété **Text** dans laquelle vous pouvez taper du texte. Les zones de commentaire sont présentes uniquement sur la surface du diagramme et pas dans le code.  
-  
-Les commentaires résident dans la vue du diagramme de classes du **Concepteur de classes**. Si vous ouvrez un deuxième diagramme dans le même projet, les commentaires que vous avez créés dans la première vue ne seront pas visibles. Si vous supprimez un diagramme, tous les commentaires qu’il contient seront également supprimés.  
-  
-Vous pouvez redimensionner une zone de commentaire. Toutefois, vous ne pouvez pas modifier d’autres aspects de son apparence, tels que la police, la taille de la police ou la couleur d’arrière-plan.  
-  
-### <a name="to-add-a-comment"></a>Pour ajouter un commentaire  
-  
-1.  Faites glisser un commentaire de la **Boîte à outils du Concepteur de classes** vers le diagramme de classes.  
-  
-2.  Cliquez dans la nouvelle zone de commentaire du diagramme et tapez votre texte.  
-  
+# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Guide pratique pour ajouter des commentaires aux diagrammes de classes (Concepteur de classes)
+
+Vous pouvez utiliser des zones de commentaire pour annoter les diagrammes de classes. Une zone de commentaire comprend la propriété **Text** dans laquelle vous pouvez taper du texte. Les zones de commentaire sont présentes uniquement sur la surface du diagramme et pas dans le code.
+
+Les commentaires résident dans la vue du diagramme de classes du **Concepteur de classes**. Si vous ouvrez un deuxième diagramme dans le même projet, les commentaires que vous avez créés dans la première vue ne sont pas visibles. Si vous supprimez un diagramme, tous les commentaires qu’il contient seront également supprimés.
+
+Vous pouvez redimensionner une zone de commentaire. Toutefois, vous ne pouvez pas modifier d’autres aspects de son apparence, tels que la police, la taille de la police ou la couleur d’arrière-plan.
+
+## <a name="to-add-a-comment"></a>Pour ajouter un commentaire
+
+1.  Faites glisser un commentaire de la **Boîte à outils du Concepteur de classes** vers le diagramme de classes.
+
+2.  Cliquez dans la nouvelle zone de commentaire du diagramme et tapez votre texte.
+
 ## <a name="see-also"></a>Voir aussi
-[Utilisation des diagrammes de classes](working-with-class-diagrams.md)   
-[Utilisation des diagrammes de classes](working-with-class-diagrams.md)   
-[Guide pratique pour personnaliser des diagrammes de classes](how-to-customize-class-diagrams.md)
+
+- [Utiliser des diagrammes de classes](working-with-class-diagrams.md)
+- [Guide pratique pour personnaliser des diagrammes de classes](how-to-customize-class-diagrams.md)

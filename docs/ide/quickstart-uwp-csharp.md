@@ -2,6 +2,7 @@
 title: 'Démarrage rapide : Créer votre première application de plateforme Windows universelle dans Visual Studio avec XAML et C# | Microsoft Docs'
 ms.custom: ''
 ms.date: 04/04/2018
+ms.prod: visual-studio-dev15
 ms.technology:
 - vs-acquisition
 ms.topic: quickstart
@@ -13,11 +14,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Démarrage rapide : Créer votre première application de plateforme Windows universelle dans Visual Studio avec XAML et C&#35;
 
@@ -31,7 +32,7 @@ Créez tout d’abord un projet de plateforme Windows universelle. Le type de pr
 
 1. Ouvrez Visual Studio 2017.
 
-2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet...**.
+2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
 3. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **Visual C#**, puis choisissez **Windows universel**. Dans le volet central, choisissez **Application vide (Windows universel)**. Ensuite, nommez le projet *HelloWorld* et choisissez **OK**.
 
@@ -54,7 +55,7 @@ Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton
 
 ### <a name="add-a-button-to-the-design-canvas"></a>Ajouter un bouton à la zone de conception
 
-1. Dans **l’Explorateur de solutions**, double-cliquez sur **MainPage.xaml** pour ouvrir un mode fractionné.
+1. Dans **l’Explorateur de solutions**, double-cliquez sur *MainPage.xaml* pour ouvrir un mode fractionné.
 
   ![Ouvrir MainPage.xaml à partir de l’Explorateur de solutions ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
@@ -66,7 +67,7 @@ Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton
 
   ![Cliquer sur Boîte à outils pour ouvrir la fenêtre volante Boîte à outils](../ide/media/uwp-toolbox.png)
 
-  (Si vous ne voyez pas l’option Boîte à outils, ouvrez-la à partir de la barre de menus. Pour ce faire, choisissez **Affichage** > **Barre d’outils**. Vous pouvez aussi appuyer sur **Ctrl**+**Alt**+**X**.)
+  (Si vous ne voyez pas l’option **Boîte à outils**, ouvrez-la à partir de la barre de menus. Pour ce faire, choisissez **Affichage** > **Barre d’outils**. Vous pouvez aussi appuyer sur **Ctrl**+**Alt**+**X**.)
 
 3. Cliquez sur l’icône **Épingler** pour ancrer la fenêtre Boîte à outils.
 
@@ -76,17 +77,17 @@ Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton
 
    ![Cliquer sur le contrôle Button, puis le faire glisser dans la zone de conception](../ide/media/uwp-toolbox-add-button-control.png)
 
-  Si vous examinez le code dans l’éditeur XAML, vous verrez que le contrôle Button y a aussi été ajouté :
+  Si vous examinez le code dans **l’éditeur XAML**, vous verrez que le contrôle Button y a aussi été ajouté :
 
   ![Cliquer sur le contrôle Button, puis le faire glisser dans la zone de conception](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Ajouter une étiquette au bouton
 
-1. Dans l’éditeur XAML, remplacez la valeur de Button Content « Button » par « Hello World! ».
+1. Dans **l’éditeur XAML**, remplacez la valeur de Button Content « Button » par « Hello World! ».
 
    ![Remplacer la valeur de Button Content par Hello World](../ide/media/uwp-change-button-text-in-xaml-code-window.png)
 
-2. Notez que le bouton dans le concepteur XAML change également.
+2. Notez que le bouton dans le **Concepteur XAML** change également.
 
    ![Le bouton devient Hello World dans la zone de conception](../ide/media/uwp-button-text-change-in-design-canvas.png)
 
@@ -96,7 +97,7 @@ Un « gestionnaire d’événements » semble compliqué, mais il s’agit simpl
 
 1. Double-cliquez sur le contrôle bouton dans la zone de conception.
 
-2.  Modifiez le code de gestionnaire d’événements dans *MainPage.xaml.cs*, la page code-behind.
+2. Modifiez le code de gestionnaire d’événements dans *MainPage.xaml.cs*, la page code-behind.
 
  C’est ici que les choses deviennent intéressantes. Voici à quoi ressemble le gestionnaire d’événements par défaut :
 
@@ -121,7 +122,7 @@ Un « gestionnaire d’événements » semble compliqué, mais il s’agit simpl
 
 #### <a name="what-did-we-just-do"></a>Que venons-nous de faire ?
 
-Le code utilise des API Windows pour créer un objet de synthèse vocale, puis lui donne du texte à dire. (Pour plus d’informations sur l’utilisation de SpeechSynthesis, consultez <xref:System.Speech.Synthesis>.)
+Le code utilise des API Windows pour créer un objet de synthèse vocale, puis lui donne du texte à dire. (Pour plus d’informations sur l’utilisation de `SpeechSynthesis`, consultez <xref:System.Speech.Synthesis>.)
 
 ## <a name="run-the-application"></a>Exécuter l'application
 

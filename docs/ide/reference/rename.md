@@ -1,7 +1,7 @@
 ---
-title: Refactoriser un changement de nom dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Refactoriser un changement de nom dans Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
@@ -14,11 +14,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5735203131811b9423cd34f430665fb16a51ad34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 696ec34bb0009b9b09b5902a102c71cf1331f320
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Renommer un symbole de code (refactorisation)
 
@@ -76,5 +76,5 @@ Cette refactorisation s’applique à :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Refactorisation](../refactoring-in-visual-studio.md)  
-[Aperçu des modifications](../../ide/preview-changes.md)
+- [Refactorisation](../refactoring-in-visual-studio.md)
+- [Aperçu des modifications](../../ide/preview-changes.md)
