@@ -21,36 +21,36 @@ ms.lasthandoff: 04/26/2018
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Tout d’abord consulter le débogueur Visual Studio
 
-Cette rubrique présente les fonctionnalités du débogueur Visual Studio. Si vous souhaitez suivre la procédure en ouvrant votre propre application dans Visual Studio, vous pouvez le faire, ou vous pouvez le suivre une application d’exemple à l’aide du [Guide du débutant](../debugger/getting-started-with-the-debugger.md).
+Cette rubrique présente les fonctionnalités du débogueur Visual Studio. Si vous souhaitez suivre la procédure en ouvrant votre propre application dans Visual Studio, vous pouvez le faire, ou vous pouvez suivre une application d’exemple à l’aide du [Guide du débutant](../debugger/getting-started-with-the-debugger.md).
 
-Les fonctionnalités décrites ici sont applicables pour c#, C++, Visual Basic, JavaScript et autres langues prises en charge par Visual Studio (sauf mention contraire).
+Les fonctionnalités décrites ici sont applicables pour C#, C++, Visual Basic, JavaScript et autres langues prises en charge par Visual Studio (sauf mention contraire).
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Définir un point d’arrêt et démarrage du débogueur
 
-Pour déboguer, vous devez démarrer votre application avec le débogueur attaché au processus de l’application. F5 (**Déboguer > Démarrer le débogage**) est la méthode la plus courante pour ce faire. Toutefois, l’instant, vous n’avez ne peut-être pas défini les points d’arrêt pour examiner votre application code, donc nous allons effectuer d’abord et démarrer le débogage.
+Pour déboguer, vous devez démarrer votre application avec le débogueur attaché au processus de l’application. F5 (**Déboguer > Démarrer le débogage**) est la méthode la plus courante pour ce faire. Toutefois, vous n’avez peut-être pas encore défini les points d’arrêt pour examiner votre application code, nous allons donc d'abord le faire en ensuite démarrer le débogage.
 
 Si un fichier est ouvert dans l’éditeur de code, vous pouvez définir un point d’arrêt en cliquant dans la marge à gauche d’une ligne de code.
 
 ![Définir un point d’arrêt](../debugger/media/dbg-tour-set-a-breakpoint.gif "définir un point d’arrêt")
 
-Appuyez sur F5 (**Déboguer > Démarrer le débogage**) et le débogueur s’exécute pour le premier point d’arrêt qu’il détecte. Si l’application n’est pas encore en cours d’exécution, appuyez sur F5 démarre le débogueur et s’arrête au premier point d’arrêt.
+Appuyez sur F5 (**Déboguer > Démarrer le débogage**) et le débogueur s’exécute pour le premier point d’arrêt qu’il détecte. Si l’application n’est pas encore en cours d’exécution, appuyez sur F5 pour démarrer le débogueur et qu'il s’arrête au premier point d’arrêt.
 
-Points d’arrêt sont une fonctionnalité utile lorsque vous savez que la ligne de code ou de la section de code que vous souhaitez examiner en détail.
+Les points d’arrêt sont une fonctionnalité utile lorsque vous savez qu'elle ligne ou section de code vous souhaitez examiner en détail.
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Parcourir le code dans le débogueur à l’aide des commandes d’étape
 
-Nous fournissons des raccourcis clavier pour la plupart des commandes car elles rendent la navigation dans le code de votre application plus rapide. (Équivalent des commandes telles que les commandes de menu sont indiqués entre parenthèses.)
+Nous fournissons des raccourcis clavier pour la plupart des commandes car elles rendent la navigation dans le code de votre application plus rapide. (Les équivalents des commandes telles que les commandes de menu sont indiqués entre parenthèses.)
 
-Pour démarrer votre application avec le débogueur attaché, appuyez sur F11 (**Déboguer > pas à pas détaillé**). F11 est la **pas à pas détaillé** commande et avance l’instruction de l’exécution une application à la fois. Lorsque vous démarrez l’application en appuyant sur F11, le débogueur s’arrête à la première instruction est exécutée.
+Pour démarrer votre application avec le débogueur attaché, appuyez sur F11 (**Déboguer > pas à pas détaillé**). F11 est la commande **pas à pas détaillé** et elle exécute l'application une instruction à la fois. Lorsque vous démarrez l’application en appuyant sur F11, le débogueur s’arrête à la première instruction exécutée.
 
 ![F11 Pas à pas détaillé](../debugger/media/dbg-tour-f11.png "F11 pas à pas détaillé")
 
-La flèche jaune représente l’instruction sur laquelle le débogueur a suspendu, également suspend l’exécution d’application sur le même point (cette instruction n’a pas encore exécuté).
+La flèche jaune représente l’instruction sur laquelle le débogueur s'est arrêté, et également l'endroit où l’exécution de l'application s'est arrêté (cette instruction n’a pas encore exécuté).
 
-F11 est une bonne solution pour examiner le flux d’exécution dans le détail la plupart des. (Pour déplacer plus rapidement dans le code, nous vous indiquons d’autres options.) Par défaut, le débogueur ignore code non-utilisateur (si vous souhaitez plus d’informations, consultez [uniquement mon Code](../debugger/just-my-code.md)).
+F11 est une bonne solution pour examiner le flux d’exécution en détails. (Pour se déplacer plus rapidement dans le code, nous vous montrerons d’autres options.) Par défaut, le débogueur ignore le code non-utilisateur (si vous souhaitez plus d’informations, consultez [uniquement mon Code](../debugger/just-my-code.md)).
 
 >[!NOTE]
-> Dans le code managé, vous verrez une boîte de dialogue vous demandant si vous souhaitez être averti lorsque vous effectuez pas automatiquement dans les propriétés et les opérateurs (comportement par défaut). Si vous souhaitez modifier le paramètre de désactiver une version ultérieure, **étape dans les propriétés et les opérateurs** définition dans le **Outils > Options** menu sous **débogage**.
+> Dans le code managé, vous verrez une boîte de dialogue vous demandant si vous souhaitez être averti lorsque vous effectuez pas à pas automatiquement les propriétés et les opérateurs (comportement par défaut). Si vous souhaitez modifier cette option plus tard, désactiver **Pas à pas principal dans les propriétés et les opérateurs** dans le menu **Outils > Options** sous **débogage**.
 
 ## <a name="step-over-code-to-skip-functions"></a>Ignorer le code pour ignorer les fonctions
 
@@ -60,28 +60,28 @@ F10 avance le débogueur sans entrer dans les fonctions ou méthodes dans votre 
 
 ## <a name="step-into-a-property"></a>Pas à pas détaillé d’une propriété
 
-Comme mentionné précédemment, par défaut, le débogueur ignore les propriétés gérées et des champs, mais la **détaillé spécifique** commande vous permet de substituer ce comportement.
+Comme mentionné précédemment, par défaut, le débogueur ignore les propriétés gérées et des champs, mais la commande **détaillé spécifique** vous permet de substituer ce comportement.
 
-Avec le bouton droit sur une propriété ou un champ et choisissez **détaillé spécifique**, puis choisissez une des options disponibles.
+Faite un clic droit sur une propriété ou un champ et choisissez **détaillé spécifique**, puis choisissez une des options disponibles.
 
 ![Pas à pas détaillé spécifique](../debugger/media/dbg-tour-step-into-specific.png "pas à pas détaillé spécifique")
 
-Dans cet exemple, **détaillé spécifique** nous Obtient le code de `Path.set`.
+Dans cet exemple, **détaillé spécifique** nous renseigne le code de `Path.set`.
 
 ![Pas à pas détaillé spécifique](../debugger/media/dbg-tour-step-into-specific-2.png "pas à pas détaillé spécifique")
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Exécuter à un point dans votre code rapidement à l’aide de la souris
 
-Dans le débogueur, pointez sur une ligne de code jusqu'à ce que le **exécuter. Cliquez ensuite sur** bouton de (exécution ici) ![exécuter. Cliquez ensuite sur](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaît à gauche.
+Lorsque vous êtes dans le débogueur, pointez sur une ligne de code jusqu'à ce que le bouton **Exécuter jusqu'au clic** (lancer l'exécution ici) ![Exécuter jusqu'au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaît à gauche.
 
 ![Cliquez sur exécuter](../debugger/media/dbg-tour-run-to-click-2.png "exécuter à, cliquez sur")
 
 >  [!NOTE] 
-> Le **exécuter. Cliquez ensuite sur** bouton de (exécution ici) est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Le bouton **Exécuter jusqu'au clic** (lancer l'exécution ici) est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
-Cliquez sur le **exécuter. Cliquez ensuite sur** bouton de (exécution ici). Le débogueur passe à la ligne de code où vous avez cliqué.
+Cliquez sur le bouton **Exécuter jusqu'au clic** (lancer l'exécution ici). Le débogueur passe à la ligne de code où vous avez cliqué.
 
-L’utilisation de ce bouton est similaire à la définition d’un point d’arrêt temporaire. Cette commande est également pratique pour se déplacer rapidement au sein de la région visible du code d’application. Vous pouvez utiliser **exécuter. Cliquez ensuite sur** dans un fichier ouvert.
+L’utilisation de ce bouton est similaire à la définition d’un point d’arrêt temporaire. Cette commande est également pratique pour se déplacer rapidement au sein de la région visible du code d’application. Vous pouvez utiliser le bouton **Exécuter jusqu'au clic** dans un fichier ouvert.
 
 ## <a name="advance-the-debugger-out-of-the-current-function"></a>Avancer le débogueur sort de la fonction en cours
 
@@ -215,7 +215,7 @@ Pour plus d’informations, consultez la page [Afficher des captures instantané
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce didacticiel, vous avez eu un coup de œil rapide à nombreuses fonctionnalités du débogueur. Vous souhaiterez peut-être plus approfondie sur ces fonctionnalités à l’aide d’un exemple d’application
+Dans ce didacticiel, vous avez eu un rapide coup de œil sur de nombreuses fonctionnalités du débogueur. Vous souhaiterez peut-être plus approfondie sur ces fonctionnalités à l’aide d’un exemple d’application
 
 > [!div class="nextstepaction"]
 > [Apprendre à déboguer avec Visual Studio](../debugger/getting-started-with-the-debugger.md)
