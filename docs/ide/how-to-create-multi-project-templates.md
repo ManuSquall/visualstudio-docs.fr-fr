@@ -1,9 +1,8 @@
 ---
-title: Créer des modèles à plusieurs projets pour Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Créer des modèles à plusieurs projets pour Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -12,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b3902dd2b6f4dfac72d61d2c4d81937dcbbfdd07
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f28e451da90d9709eda1886a549819b4d46415f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-multi-project-templates"></a>Guide pratique pour créer des modèles à plusieurs projets
 
@@ -26,15 +25,15 @@ Un modèle à plusieurs projets contient deux modèles de projet ou plus, ainsi 
 
 Les modèles à plusieurs projets se comportent différemment des modèles à projet unique. Leurs caractéristiques particulières sont les suivantes :
 
-- Vous ne pouvez pas assigner les noms de manière individuelle aux projets d’un modèle à plusieurs projets dans la boîte de dialogue **Nouveau projet**. Pour spécifier un nom pour chaque projet, utilisez plutôt l’attribut `ProjectName` sur l’élément `ProjectTemplateLink` dans le fichier *.vstemplate*.
+- Vous ne pouvez pas assigner les noms de manière individuelle aux projets d’un modèle à plusieurs projets dans la boîte de dialogue **Nouveau projet**. Pour spécifier un nom pour chaque projet, utilisez plutôt l’attribut `ProjectName` sur l’élément `ProjectTemplateLink` dans le fichier *vstemplate*.
 
-- Les modèles à plusieurs projets peuvent contenir des projets pour des langages différents, mais l’ensemble du modèle lui-même doit être placé dans une seule catégorie. Spécifiez la catégorie du modèle dans l’élément `ProjectType` du fichier *.vstemplate*.
+- Les modèles à plusieurs projets peuvent contenir des projets pour des langages différents, mais l’ensemble du modèle lui-même doit être placé dans une seule catégorie. Spécifiez la catégorie du modèle dans l’élément `ProjectType` du fichier *vstemplate*.
 
 Un modèle à plusieurs projets doit inclure les éléments suivants, compressés dans un fichier *.zip* :
 
-- Un fichier *.vstemplate* racine pour l’ensemble du modèle à plusieurs projets. Ce fichier *.vstemplate* racine contient les métadonnées affichées dans la boîte de dialogue **Nouveau projet** et indique l’emplacement des fichiers *.vstemplate* pour les projets du modèle. Ce fichier doit se trouver à la racine du fichier *.zip*.
+- Un fichier *vstemplate* racine pour l’ensemble du modèle à plusieurs projets. Ce fichier *vstemplate* racine contient les métadonnées affichées dans la boîte de dialogue **Nouveau projet** et indique l’emplacement des fichiers *vstemplate* pour les projets du modèle. Ce fichier doit se trouver à la racine du fichier *.zip*.
 
-- Deux dossiers ou plus contenant les fichiers exigés pour un modèle de projet complet sont nécessaires. Les dossiers incluent tous les fichiers de code du projet, ainsi qu’un fichier *.vstemplate* pour le projet.
+- Deux dossiers ou plus contenant les fichiers exigés pour un modèle de projet complet sont nécessaires. Les dossiers incluent tous les fichiers de code du projet, ainsi qu’un fichier *vstemplate* pour le projet.
 
 Par exemple, le fichier *.zip* d’un modèle à plusieurs projets contenant deux projets peut comporter les fichiers et répertoires suivants :
 
@@ -46,7 +45,7 @@ Par exemple, le fichier *.zip* d’un modèle à plusieurs projets contenant deu
 - *\Project2\Project2.vbproj*
 - *\Project2\Class.vb*
 
-Le fichier *.vstemplate* racine d’un modèle à plusieurs projets présente les différences suivantes par rapport à un modèle à projet unique :
+Le fichier *vstemplate* racine d’un modèle à plusieurs projets présente les différences suivantes par rapport à un modèle à projet unique :
 
 - L’attribut `Type` de l’élément `VSTemplate` a la valeur `ProjectGroup` plutôt que `Project`. Exemple :
 
@@ -55,7 +54,7 @@ Le fichier *.vstemplate* racine d’un modèle à plusieurs projets présente le
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- L’élément `TemplateContent` contient un élément `ProjectCollection` ayant un ou plusieurs éléments `ProjectTemplateLink` qui définissent les chemins des fichiers *.vstemplate* des projets inclus. Exemple :
+- L’élément `TemplateContent` contient un élément `ProjectCollection` ayant un ou plusieurs éléments `ProjectTemplateLink` qui définissent les chemins des fichiers *vstemplate* des projets inclus. Exemple :
 
     ```xml
     <TemplateContent>
@@ -93,7 +92,7 @@ Le fichier *.vstemplate* racine d’un modèle à plusieurs projets présente le
 
 1. Extrayez le contenu du fichier *.zip* de chaque projet dans le sous-répertoire correspondant que vous avez créé.
 
-1. Dans le répertoire de base, créez un fichier XML portant une extension *.vstemplate*. Ce fichier contient les métadonnées du modèle à plusieurs projets. Consultez l’exemple qui suit pour la structure du fichier. Veillez à spécifier le chemin relatif du fichier *.vstemplate* de chaque projet.
+1. Dans le répertoire de base, créez un fichier XML portant une extension *.vstemplate*. Ce fichier contient les métadonnées du modèle à plusieurs projets. Consultez l’exemple qui suit pour la structure du fichier. Veillez à spécifier le chemin relatif du fichier *vstemplate* de chaque projet.
 
 1. Sélectionnez le répertoire de base, puis cliquez avec le bouton droit pour faire apparaître un menu contextuel et choisissez **Envoyer vers** > **Dossier compressé**.
 
@@ -105,10 +104,10 @@ Le fichier *.vstemplate* racine d’un modèle à plusieurs projets présente le
 
 ## <a name="two-project-example"></a>Exemple avec deux projets
 
-Cet exemple montre un fichier *.vstemplate* racine de base pour un modèle à plusieurs projets. Dans cet exemple, le modèle a deux projets, `My Windows Application` et `My Class Library`. L’attribut `ProjectName` de l’élément `ProjectTemplateLink` spécifie le nom donné au projet.
+Cet exemple montre un fichier *vstemplate* racine de base pour un modèle à plusieurs projets. Dans cet exemple, le modèle a deux projets, `My Windows Application` et `My Class Library`. L’attribut `ProjectName` de l’élément `ProjectTemplateLink` spécifie le nom donné au projet.
 
 > [!TIP]
-> Si l’attribut `ProjectName` n’est pas spécifié, le nom du fichier *.vstemplate* est utilisé comme nom de projet.
+> Si l’attribut `ProjectName` n’est pas spécifié, le nom du fichier *vstemplate* est utilisé comme nom de projet.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -170,8 +169,8 @@ Cet exemple utilise l’élément `SolutionFolder` pour scinder les projets en d
 
 ## <a name="see-also"></a>Voir aussi
 
-[Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)  
-[Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)  
-[Informations de référence sur les schémas de modèles Visual Studio (extensibilité)](../extensibility/visual-studio-template-schema-reference.md)  
-[Élément SolutionFolder (modèles Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)  
-[Élément ProjectTemplateLink (modèles Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+- [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)
+- [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)
+- [Informations de référence sur les schémas de modèles Visual Studio (extensibilité)](../extensibility/visual-studio-template-schema-reference.md)
+- [Élément SolutionFolder (modèles Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
+- [Élément ProjectTemplateLink (modèles Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

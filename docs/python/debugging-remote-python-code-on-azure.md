@@ -11,15 +11,15 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5fc6004c17614620f4ba75fb13258a685536c28b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 11a624ec6582e5e07e51de6d4ab29b84dc53d4a1
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Débogage à distance de code Python sur Azure
 
-[Prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md) permet de déboguer à distance le code Python qui s’exécute sur Azure App Service. Contrairement à un débogage à distance simple, l’ordinateur cible dans ce scénario n’est pas directement accessible par le biais de TCP. Visual Studio fournit donc un proxy qui expose le protocole de débogueur sur HTTP. Les projets créés à l’aide du modèle Web configurent automatiquement ce proxy dans le fichier `web.debug.config` généré. Le débogage à distance est également activé lorsque vous publiez une configuration de débogage de votre projet, comme décrit à la section [Publication sur Azure App Service](python-web-application-project-templates.md#publishing-to-azure-app-service).
+[Prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md) permet de déboguer à distance le code Python qui s’exécute sur Azure App Service. Contrairement à un débogage à distance simple, l’ordinateur cible dans ce scénario n’est pas directement accessible par le biais de TCP. Visual Studio fournit donc un proxy qui expose le protocole de débogueur sur HTTP. Les projets créés à l’aide du modèle Web configurent automatiquement ce proxy dans le fichier `web.debug.config` généré. Le débogage à distance est également activé lorsque vous publiez une configuration de débogage de votre projet, comme décrit dans [Publication dans Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md.
 
 Étant donné que le débogage à distance Azure utilise des sockets web, vous devez activer les sockets pour votre App Service par le biais du [Portail Azure](https://portal.azure.com) en accédant à **Paramètres > Paramètres de l’application**, en définissant l’option **Paramètres généraux > Web sockets** sur **Activer**, puis en sélectionnant **Enregistrer** pour appliquer la modification. (Notez que les paramètres **Débogage** ne s’appliquent pas au débogage de Python.)
 

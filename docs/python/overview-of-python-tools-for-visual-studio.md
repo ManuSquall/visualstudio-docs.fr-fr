@@ -1,6 +1,6 @@
 ---
 title: Vue d’ensemble de la prise en charge de Python dans Visual Studio sur Windows
-description: Résumé des fonctionnalités disponibles dans Visual Studio, qui en font le meilleur IDE Python sur Windows (également appelé Python Tools pour Visual Studio, ou PTVS)
+description: Résumé des fonctionnalités Python disponibles dans Visual Studio, qui en font le meilleur IDE Python sur Windows (également appelé Python Tools pour Visual Studio, ou PTVS).
 ms.date: 04/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31ffd868eeab4638344cfafc2723b6a60608f232
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="working-with-python-in-visual-studio-windows"></a>Utilisation de Python dans Visual Studio (Windows)
+# <a name="working-with-python-in-visual-studio-on-windows"></a>Utilisation de Python dans Visual Studio sur Windows
 
 Python est un langage de programmation très apprécié, car il est fiable, souple, simple d’emploi et utilisable sur tous les systèmes d’exploitation. Il est soutenu à la fois par une solide communauté de développeurs et par de nombreuses bibliothèques gratuites. Python prend en charge toutes les méthodes de développement, notamment les applications web, les services web, les applications de bureau, les scripts et le calcul scientifique, et il est utilisé par une multitude d’universités, de scientifiques et de développeurs aussi bien occasionnels que professionnels. Pour plus d’informations sur ce langage, consultez le site [python.org](https://www.python.org) et la page [Python for Beginners](https://www.python.org/about/gettingstarted/) (Débuter avec Python).
 
@@ -88,6 +88,7 @@ Les modèles de projet et d’élément automatisent le processus de configurati
 Pour plus d'informations :
 
 - Documentation : [Gestion de projets Python](managing-python-projects-in-visual-studio.md)
+- Documentation : [Référence de modèles d’élément](python-item-templates.md)
 - Documentation : [Modèles de projet Python](managing-python-projects-in-visual-studio.md#project-templates)
 - Documentation : [Utilisation de C++ et Python](working-with-c-cpp-python-in-visual-studio.md)
 - Documentation générale sur les fonctionnalités Visual Studio : [Modèles de projet et d’élément](../ide/creating-project-and-item-templates.md#visual-studio-templates)

@@ -1,9 +1,9 @@
 ---
-title: Bien démarrer avec C# et ASP.NET Core dans Visual Studio | Microsoft Docs
+title: Prise en main de C# et d’ASP.NET Core dans Visual Studio
 ms.custom: ''
 ms.date: 12/11/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,13 +14,13 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b3760c922e540837d0e9452efc8d44762eeeb3af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a896047ad8141bc7edf797066df9d309bf7eb72c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Bien démarrer avec C# et ASP.NET dans Visual Studio
+# <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Bien démarrer avec C# et ASP.NET dans Visual Studio
 Dans ce didacticiel pour le développement C# avec ASP.NET Core à l’aide de Visual Studio, vous allez créer une application web C# ASP.NET Core, ajouter du code, explorer certaines fonctionnalités de l’IDE et exécuter l’application.
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) pour l’installer gratuitement.
@@ -42,7 +42,7 @@ Tout d’abord, nous allons créer un projet ASP.NET Core. Le type de projet inc
 
 1. Ouvrez Visual Studio 2017.
 
-2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet...**.
+2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
 3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual C#**, **Web**, puis choisissez **.NET Core**. Dans le volet central, sélectionnez **Application web ASP.NET Core**, nommez le fichier *MyCoreApp*, puis choisissez **OK**.   
 
@@ -86,15 +86,15 @@ Le modèle MVC vous permet de créer des applications qui sont plus faciles à t
 
     ![Explorateur de solutions ASP.NET dans Visual Studio](../ide/media/csharp-aspnet-solution-explorer-mycoreapp.png)
 
-1. Ouvrez le fichier **HomeController.cs** dans le dossier **Controllers**.
+1. Ouvrez le fichier *HomeController.cs* dans le dossier **Controllers**.
 
       ![Fichier HomeController.cs dans l’Explorateur de solutions dans Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
-2. Affichez le fichier **HomeController.cs**.
+2. Affichez le fichier *HomeController.cs*.
 
   ![HomeController.cs dans la fenêtre de code de Visual Studio](../ide/media/csharp-aspnet-home-controller-code.png)
 
-4. Le projet a également un dossier **Views** qui contient d’autres dossiers correspondant à chaque contrôleur (et un pour les vues partagées (**Shared**)). Par exemple, le fichier CSHTML de vue (une extension du langage HTML) pour le chemin **/Home/About** se trouverait à l’emplacement **Views/Home/About.cshtml**. Ouvrez ce fichier.
+4. Le projet a également un dossier **Views** qui contient d’autres dossiers correspondant à chaque contrôleur (et un pour les vues partagées (**Shared**)). Par exemple, le fichier CSHTML de vue (une extension du langage HTML) pour le chemin */Home/About* se trouverait à l’emplacement *Views/Home/About.cshtml*. Ouvrez ce fichier.
 
   ![Fichier About.cshtml dans l’Explorateur de solutions dans Visual Studio](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
@@ -103,13 +103,13 @@ Le modèle MVC vous permet de créer des applications qui sont plus faciles à t
   ![About.cshtml dans la fenêtre de code de Visual Studio](../ide/media/csharp-aspnet-about-cshtml-code.png)
 
  >[!NOTE]
- > Pour plus d’informations, consultez la page [Bien démarrer avec C# et ASP.NET à l’aide de la syntaxe Razor](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
+ > Pour plus d’informations, consultez la page [Prise en main de C# et d’ASP.NET à l’aide de la syntaxe Razor](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
 
-6. La solution contient également un dossier **wwwroot** qui est la racine de votre site web. Vous pouvez placer le contenu de site statique, tel que les bibliothèques JavaScript, les feuilles CSS et les images, directement aux emplacements où vous souhaiteriez qu’il soit lors du déploiement du site.
+6. La solution contient également un dossier *wwwroot* qui est la racine de votre site web. Vous pouvez placer le contenu de site statique, tel que les bibliothèques JavaScript, les feuilles CSS et les images, directement aux emplacements où vous souhaiteriez qu’il soit lors du déploiement du site.
 
  ![Dossier wwwroot dans l’Explorateur de solutions dans Visual Studio](../ide/media/csharp-aspnet-solution-wwwroot.png)
 
-7. Il existe également plusieurs fichiers de configuration qui servent à gérer le projet, ses packages et l’application au moment de l’exécution. Par exemple, la [configuration](/aspnet/core/fundamentals/configuration) d’application par défaut est stockée dans **appsettings.json**. Toutefois, vous pouvez remplacer certains ou même tous ces paramètres en fonction de l’environnement, par exemple en fournissant un fichier **appsettings.Development.json** pour l’environnement de **Développement**.
+7. Il existe également plusieurs fichiers de configuration qui servent à gérer le projet, ses packages et l’application au moment de l’exécution. Par exemple, la [configuration](/aspnet/core/fundamentals/configuration) d’application par défaut est stockée dans *appsettings.json*. Toutefois, vous pouvez remplacer certains ou même tous ces paramètres en fonction de l’environnement, par exemple en fournissant un fichier *appsettings.Development.json* pour l’environnement de **Développement**.
 
  ![Fichiers de configuration dans l’Explorateur de solutions dans Visual Studio](../ide/media/csharp-aspnet-solution-explorer-config-files.png)
 
@@ -126,21 +126,21 @@ Le modèle MVC vous permet de créer des applications qui sont plus faciles à t
 
  ![Sélectionnez About dans la fenêtre du navigateur pour votre application](../ide/media/csharp-aspnet-browser-page.png)
 
- Entre autres choses, la page About dans le navigateur affiche le texte qui est défini dans le fichier HomeController.cs.
+ Entre autres choses, la page **About** dans le navigateur affiche le texte qui est défini dans le fichier *HomeController.cs*.
 
    ![Afficher le texte dans la page About](../ide/media/csharp-aspnet-browser-page-about.png)
 
-1. Laissez la fenêtre du navigateur ouverte et revenez dans Visual Studio. Ouvrez **Controllers/HomeController.cs** s’il n’est pas déjà ouvert.
+1. Laissez la fenêtre du navigateur ouverte et revenez dans Visual Studio. Ouvrez *Controllers/HomeController.cs* s’il n’est pas déjà ouvert.
 
  ![Ouvrez le fichier HomeController.cs à partir de l’Explorateur de solutions dans Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
 1. Définissez un point d’arrêt sur la première ligne de la méthode **About**. Pour ce faire, cliquez dans la marge ou placez le curseur sur la ligne et appuyez sur **F9**.
 
-  Cette ligne définit certaines données dans la collection **ViewData** qui sont affichées dans la page CSHTML **Views/Home/About.cshtml**.
+  Cette ligne définit certaines données dans la collection **ViewData** qui sont affichées dans la page CSHTML *Views/Home/About.cshtml*.
 
  ![Définissez un point d’arrêt sur la première ligne de la méthode About dans About.cshtml.  ](../ide/media/csharp-aspnet-home-controller-code-set-breakpoint.png)
 
-1. Revenez dans le navigateur et actualisez la page About. Cette opération déclenche le point d’arrêt dans Visual Studio.
+1. Revenez dans le navigateur et actualisez la page **About**. Cette opération déclenche le point d’arrêt dans Visual Studio.
 
 1. Dans Visual Studio, placez la souris sur le membre **ViewData** pour afficher ses données.
 
@@ -148,7 +148,7 @@ Le modèle MVC vous permet de créer des applications qui sont plus faciles à t
 
 1. Supprimez le point d’arrêt de l’application en appliquant la même méthode que celle utilisée pour l’ajouter.
 
-1. Ouvrez **Views/Home/About.cshtml**.
+1. Ouvrez *Views/Home/About.cshtml*.
 
  ![Sélectionnez About.cshtml dans l’Explorateur de solutions](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
@@ -169,4 +169,4 @@ Le modèle MVC vous permet de créer des applications qui sont plus faciles à t
 Félicitations ! Vous avez terminé ce didacticiel. Nous espérons que vous en avez appris un peu plus sur C#, ASP.NET Core et l’IDE Visual Studio. Pour en apprendre davantage, passez au tutoriel suivant.
 
  > [!div class="nextstepaction"]
- > [Bien démarrer avec ASP.NET Core MVC et Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+ > [Prise en main d’ASP.NET Core MVC et de Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)

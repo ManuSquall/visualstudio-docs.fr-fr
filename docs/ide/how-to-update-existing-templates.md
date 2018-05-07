@@ -1,9 +1,8 @@
 ---
-title: Mettre à jour des modèles de projet et d’élément existants dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Mettre à jour des modèles de projet et d’élément existants dans Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating
@@ -13,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9465c098144f14db496bc1dbc382d6a30c8882cb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5cf764f76d72b17128c46f2b7ec16ffcf4153cf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-update-existing-templates"></a>Guide pratique pour mettre à jour des modèles existants
 
@@ -69,8 +68,8 @@ Vous pouvez mettre à jour un modèle existant sans utiliser l’**Assistant Exp
 
 ## <a name="see-also"></a>Voir aussi
 
-[Personnaliser les modèles](../ide/customizing-project-and-item-templates.md)  
-[Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)  
-[Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
-[Paramètres de modèle](../ide/template-parameters.md)  
-[Guide pratique pour créer des Starter Kits](../ide/how-to-create-starter-kits.md)
+- [Personnaliser les modèles](../ide/customizing-project-and-item-templates.md)
+- [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+- [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Paramètres de modèle](../ide/template-parameters.md)
+- [Guide pratique pour créer des Starter Kits](../ide/how-to-create-starter-kits.md)

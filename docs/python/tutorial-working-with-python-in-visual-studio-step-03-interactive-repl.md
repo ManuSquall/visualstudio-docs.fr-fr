@@ -1,6 +1,6 @@
 ---
-title: 'Utilisation de Python - Étape 3 : Fenêtre REPL interactive'
-description: Étape 3 d’un didacticiel de base sur l’utilisation de Python dans Visual Studio, présentant la fenêtre REPL interactive de Python.
+title: 'Utilisation du didacticiel Python - Étape 3 : Fenêtre REPL interactive'
+description: Étape 3 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui présente la fenêtre REPL interactive de Python.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0a0cbe766f1b31166185275989bfa0678ed50690
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Étape 3 : Utilisation de la fenêtre REPL interactive
 
@@ -89,7 +89,7 @@ La *fenêtre interactive* Visual Studio pour Python offre une expérience REPL (
 
 1. Vous venez d’utiliser l’environnement REPL rapide de la fenêtre interactive pour travailler sur les détails d’un petit morceau de code, puis vous avez ajouté ce code au fichier source de votre projet. Maintenant, quand vous réexécutez le code avec Ctrl+F5 (ou **Déboguer > Démarrer sans débogage**), vous voyez exactement les résultats souhaités.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-step"></a>Étape suivante
 
 > [!div class="nextstepaction"]
 > [Exécution de code dans le débogueur](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

@@ -1,7 +1,7 @@
 ---
-title: Rechercher/Commande, zone | Microsoft Docs
-ms.custom: ''
+title: Zone Rechercher/Commande
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 215ab2501f3221a9235c75d5a9b28f631692b1de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50c93c2d77f62fe22c682240b879b85af8040974
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="findcommand-box"></a>zone Rechercher/Commande
 
@@ -55,5 +55,5 @@ Un accent circonflexe fonctionne de la même façon, qu’il soit à l’intéri
 
 ## <a name="see-also"></a>Voir aussi
 
-[Commande, fenêtre](../ide/reference/command-window.md)  
-[Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)
+- [Commande, fenêtre](../ide/reference/command-window.md)
+- [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)

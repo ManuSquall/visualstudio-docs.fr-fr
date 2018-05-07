@@ -1,6 +1,6 @@
 ---
-title: 'Utilisation de Python - Étape 1 : Création d’un projet'
-description: Étape 1 d’un didacticiel de base pour utiliser Python dans Visual Studio, présentant le didacticiel dans sa globalité, décrivant les conditions préalables requises, ainsi que le processus de création d’un nouveau projet Python.
+title: 'Utilisation du didacticiel Python - Étape 1 : Création d’un projet'
+description: Vue d’ensemble et étape 1 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui présente les conditions préalables et explique comment créer un projet Python.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5857f06deea3bc4e7c8af481330e6c66162e2f2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Utilisation de Python dans Visual Studio
 
@@ -31,9 +31,7 @@ Visual Studio fournit une prise en charge du langage de premier ordre pour Pytho
 - [Étape 5 : Installation de packages et gestion des environnements Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Étape 6 : Utilisation de Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-## <a name="prerequisites"></a>Prérequis
-
-- Visual Studio 2017 avec la charge de travail Python installée. Pour obtenir des instructions, consultez [Étape 0](tutorial-working-with-python-in-visual-studio-step-00-installation.md).
+[!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
 ## <a name="step-1-create-a-new-python-project"></a>Étape 1 : Créer un projet Python
 
@@ -69,7 +67,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant un seul fich
 
     Cliquez avec le bouton droit sur n’importe quel nœud ou élément dans l’Explorateur de solutions pour accéder à un menu des commandes applicables. Par exemple, la commande **Renommer** vous permet de changer le nom d’un nœud ou d’un élément, y compris le projet et la solution.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-step"></a>Étape suivante
 
 > [!div class="nextstepaction"]
 > [Écriture et exécution de code](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)

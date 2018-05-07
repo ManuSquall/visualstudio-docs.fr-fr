@@ -1,19 +1,19 @@
 ---
-title: Supprimer des avertissements du compilateur dans Visual Studio pour les projets et les packages NuGet | Microsoft Docs
-ms.custom: ''
+title: Supprimer des avertissements du compilateur dans Visual Studio pour les projets et les packages NuGet
 ms.date: 01/24/2018
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fc8d4412410c2687593661760dcf94512c972b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1e3a84dff28b174676ff6fe74bf5420863afcc83
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Guide pratique pour supprimer des avertissements du compilateur
 
@@ -132,6 +132,6 @@ Dans certains cas, il se peut que vous souhaitiez supprimer des avertissements d
 
 ## <a name="see-also"></a>Voir aussi
 
-[Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)  
-[Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)  
-[Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
+- [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)
+- [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)

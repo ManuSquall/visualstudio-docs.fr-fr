@@ -1,7 +1,7 @@
 ---
-title: Créer des modèles de projet pour Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Créer des modèles de projet pour Visual Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -11,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a18b756b38a810915ea49e9f3208e9349afda7ef
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8e35833f9f8facf0639a87243d46794408167914
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-project-templates"></a>Guide pratique pour créer des modèles de projet
 
@@ -51,6 +51,6 @@ Si le SDK Visual Studio est installé, vous pouvez inclure dans un wrapper le mo
 
 ## <a name="see-also"></a>Voir aussi
 
-[Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)  
-[Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)  
-[Bien démarrer avec le modèle de projet VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+- [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+- [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)
+- [Bien démarrer avec le modèle de projet VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)

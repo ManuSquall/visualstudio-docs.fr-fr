@@ -1,6 +1,6 @@
 ---
-title: 'Utilisation de Python - Étape 4 : Débogage'
-description: Étape 4 d’un didacticiel de base sur l’utilisation de Python dans Visual Studio, expliquant comment exécuter le code Python dans le débogueur.
+title: 'Utilisation du didacticiel Python - Étape 4 : Débogage'
+description: Étape 4 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui explique comment exécuter le code Python dans le débogueur.
 ms.date: 03/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c3241adb4afdc18a8ca9a6d4c75f0ee8c80be7b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Étape 4 : Exécution du code dans le débogueur
 
@@ -100,7 +100,7 @@ En plus de ses fonctions de gestion de projets, de son expérience d’édition 
 > [!Tip]
 > Dans certaines situations, par exemple en cas d’échec du lancement de l’interpréteur Python lui-même, la fenêtre Sortie peut apparaître seulement brièvement, puis se fermer automatiquement sans vous donner la possibilité de visualiser les messages d’erreurs. Si cela se produit, cliquez avec le bouton dans l’Explorateur de solutions, sélectionnez **Propriétés**, sélectionnez l’onglet **Déboguer**, puis ajoutez `-i` au champ **Arguments de l’interpréteur**. Avec cet argument, l’interpréteur passe en mode interactif à la fin d’un programme, maintenant ainsi la fenêtre ouverte jusqu’à ce que vous entriez Ctrl+Z, Entrée pour quitter.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-step"></a>Étape suivante
 
 > [!div class="nextstepaction"]
 > [Installation de packages dans votre environnement Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)

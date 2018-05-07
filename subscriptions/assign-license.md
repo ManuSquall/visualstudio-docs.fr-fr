@@ -9,11 +9,11 @@ description: Découvrez comment les administrateurs peuvent attribuer des licenc
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 62336656e551a085c6c8753e6baea06730f49510
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4cce35d361e3a1f8af2c2268e2ef6cbd061710ea
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Attribution de licences dans le portail d’administration des abonnements Visual Studio
 
@@ -30,10 +30,10 @@ Si vous avez des licences disponibles pour les abonnements Visual Studio, vous p
 
 3.  Dans les champs de formulaire, entrez les informations relatives au nouvel abonné. Si votre organisation utilise Azure Active Directory, vous pouvez utiliser ce champ pour rechercher des utilisateurs dans votre annuaire actuel et sélectionner l’utilisateur approprié dans les résultats de la recherche. Une fois que vous avez sélectionné cet utilisateur, son nom, son adresse e-mail de connexion et son adresse e-mail de notification sont automatiquement renseignés, comme dans l’illustration ci-dessous. 
 
-    Si votre organisation utilise une adresse e-mail pour la réception des e-mails différente de l’adresse e-mail de connexion, vous pouvez l’entrer ici. Sélectionnez le lien hypertexte vous demandant si vos e-mails de notification et de connexion sont différents. 
+    Si votre organisation n’utilise pas Azure Active Directory (Azure AD) mais utilise une adresse e-mail pour la réception des e-mails différente de l’adresse e-mail de connexion, vous pouvez l’entrer ici. Sélectionnez le lien hypertexte nommé « Ajouter un autre e-mail pour la réception des communications ». 
 
     **Accéder aux téléchargements :**  
-    Si vous souhaitez autoriser cet abonné à accéder aux téléchargements de logiciels quand il se connecte au [portail des abonnements Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), laissez la case Téléchargements cochée. Si vous décochez cette case, l’utilisateur n’a pas accès aux téléchargements de logiciels, mais il garde l’accès à tous les autres avantages inclus dans son abonnement. 
+    Si vous souhaitez autoriser cet abonné à accéder aux téléchargements de logiciels quand il se connecte au [portail des abonnements Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), laissez la case Téléchargements activée. Si vous choisissez de désactiver les téléchargements, l’utilisateur n’a pas accès aux téléchargements de logiciels, mais il garde l’accès à tous les autres avantages inclus dans son abonnement. 
     
     Une fois que vous avez fini de choisir les options pour cet abonné, cliquez sur **Ajouter**.
 
@@ -45,7 +45,7 @@ Si vous avez des licences disponibles pour les abonnements Visual Studio, vous p
     ![Abonné ajouté](_img\assign-license-add\add-subscriber-complete.png)
 
 ## <a name="bulk-assignments"></a>Attributions en bloc
-1.  Pour ajouter plusieurs abonnés à la fois, accédez à l’onglet **Abonnés**. Dans le ruban du haut, cliquez sur **Ajouter en bloc**. 
+1.  Pour ajouter plusieurs abonnés à la fois, accédez à l’onglet **Gérer les abonnés**. Dans le ruban du haut, cliquez sur **Ajouter en bloc**. 
 
     ![Ajouter en bloc](_img\assign-license-add\bulk-assign-add.png)
 
@@ -53,7 +53,7 @@ Si vous avez des licences disponibles pour les abonnements Visual Studio, vous p
 
     ![Charger plusieurs abonnés](_img\assign-license-add\bulk-assign-upload.png)
 
-3.  Dans la feuille de calcul Excel, renseignez les champs avec les informations relatives aux utilisateurs auxquels vous souhaitez attribuer des abonnements. Le champ Référence est facultatif. Si vous avez mal renseigné un champ du modèle, un message d’erreur s’affiche pour signaler le problème. Enregistrez le fichier sur votre disque dur quand vous avez terminé.
+3.  Dans la feuille de calcul Excel, renseignez les champs avec les informations relatives aux utilisateurs auxquels vous souhaitez attribuer des abonnements. Le champ Référence est facultatif. Si vous avez mal renseigné un champ du modèle, un message d’erreur s’affiche pour signaler le problème. Enregistrez le fichier localement une fois terminé.
 **Pour faciliter le chargement, respectez les bonnes pratiques suivantes :**
     - Vérifiez que les champs de formulaire ne contiennent pas de virgules.
     - Supprimez les espaces avant et après dans les champs de formulaire tels que les noms d’utilisateur.

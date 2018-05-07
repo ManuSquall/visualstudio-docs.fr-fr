@@ -1,7 +1,7 @@
 ---
-title: Utilisation de l’aperçu de définition dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Utilisation de l’Aperçu de définition dans Visual Studio
 ms.date: 01/10/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (ALT+F12)
 
@@ -65,7 +65,7 @@ Quand vous commencez à apporter des modifications dans une fenêtre **Aperçu d
 
 1. Cliquez sur **OK** pour fermer la boîte de dialogue **Options**.
 
-   ![Activation de l’option Aperçu de la définition avec un clic de souris](../ide/media/editor_options_peek_view.png)  
+   ![Activation de l’option Aperçu de la définition avec un clic de souris](../ide/media/editor_options_peek_view.png)
 
 ### <a name="keyboard-shortcuts-for-peek-definition"></a>Raccourcis clavier pour l’option Aperçu de définition
 
@@ -85,6 +85,6 @@ Vous pouvez utiliser les raccourcis clavier suivants avec la fenêtre **Aperçu 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Naviguer dans le code](../ide/navigating-code.md)  
-[Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)  
-[Conseils de productivité](../ide/productivity-tips-for-visual-studio.md)
+- [Naviguer dans le code](../ide/navigating-code.md)
+- [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)
+- [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md)

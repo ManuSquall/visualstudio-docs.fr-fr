@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 
@@ -34,7 +34,7 @@ Les paramètres de modèle sont déclarés au format $*paramètre*$. Exemple :
 
 ### <a name="to-enable-parameter-substitution-in-templates"></a>Pour activer la substitution des paramètres dans les modèles
 
-1. Dans le fichier .vstemplate du modèle, localisez l’élément `ProjectItem` qui correspond à l’élément pour lequel vous souhaitez activer le remplacement des paramètres.
+1. Dans le fichier *.vstemplate* du modèle, localisez l’élément `ProjectItem` qui correspond à l’élément pour lequel vous souhaitez activer le remplacement des paramètres.
 
 1. Affectez à l'attribut `ReplaceParameters` de l'élément `ProjectItem` la valeur `true`.
 
@@ -63,7 +63,7 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 |SpecificSolutionName|Nom du fichier solution. Quand l’option "créer le répertoire de la solution" est cochée, `SpecificSolutionName` porte le nom de la solution. Quand l’option "créer le répertoire de solution" n’est pas cochée, `SpecificSolutionName` est vide.|
 |userdomain|Domaine de l’utilisateur actuel.|
 |Nom d’utilisateur|Nom de l’utilisateur actuel.|
-|webnamespace|Nom du site web actuel. Ce paramètre est utilisé dans le modèle de formulaire web pour garantir des noms de classes uniques. Si le site web se trouve est dans le répertoire racine du serveur web, ce paramètre de modèle correspond au répertoire racine du serveur web.|
+|webnamespace|Nom du site web actuel. Ce paramètre est utilisé dans le modèle de formulaire web pour garantir des noms de classes uniques. Si le site web se trouve dans le répertoire racine du serveur web, ce paramètre de modèle correspond au répertoire racine du serveur web.|
 |année|Année actuelle au format AAAA.|
 
 > [!NOTE]
@@ -73,7 +73,7 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 
 Vous pouvez spécifier vos propres paramètres et valeurs de modèle, en plus des paramètres de modèle réservés par défaut utilisés lors du remplacement de paramètres. Pour plus d’informations, consultez [CustomParameters, élément (modèles Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-using-the-project-name-for-a-file-name"></a>Exemple : Utilisation du nom du projet comme nom de fichier
+## <a name="example-use-the-project-name-for-a-file-name"></a>Exemple : utilisation du nom du projet comme nom de fichier
 
 Vous pouvez spécifier des noms de fichiers de variables pour les éléments de projet à l’aide d’un paramètre dans l’attribut `TargetFileName`.
 
@@ -90,7 +90,7 @@ L’exemple suivant spécifie que le nom d’un fichier exécutable utilise le n
 </TemplateContent>
 ```
 
-## <a name="example-using-the-safe-project-name-for-the-namespace-name"></a>Exemple : Utilisation du nom du projet sécurisé comme nom de l’espace de noms
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemple : utilisation du nom du projet sécurisé comme nom de l’espace de noms
 
 Pour utiliser le nom du projet sécurisé pour l’espace de noms dans un fichier de classe C#, utilisez la syntaxe suivante :
 
@@ -105,7 +105,7 @@ namespace $safeprojectname$
 }
 ```
 
-Dans le fichier .vstemplate du modèle de projet, ajoutez l’attribut `ReplaceParameters="true"` quand vous référencez le fichier :
+Dans le fichier *.vstemplate* du modèle de projet, ajoutez l’attribut `ReplaceParameters="true"` quand vous référencez le fichier :
 
 ```xml
 <TemplateContent>
@@ -118,5 +118,5 @@ Dans le fichier .vstemplate du modèle de projet, ajoutez l’attribut `ReplaceP
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Personnalisation des modèles](../ide/customizing-project-and-item-templates.md)
+- [Personnaliser les modèles](../ide/customizing-project-and-item-templates.md)
 - [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)

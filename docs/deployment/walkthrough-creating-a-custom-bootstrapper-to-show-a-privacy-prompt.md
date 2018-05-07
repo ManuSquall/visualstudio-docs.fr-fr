@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création d’un programme d’amorçage personnalisé pour afficher l’invite de confidentialité | Documents Microsoft'
+title: 'Procédure pas à pas : Création d’un programme d’amorçage personnalisé avec une invite de confidentialité | Documents Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -21,13 +21,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procédure pas à pas : création d'un programme d'amorçage personnalisé pour afficher une invite de confidentialité
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Procédure pas à pas : Création d’un programme d’amorçage personnalisé avec une invite de confidentialité
 Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquement lorsque les assemblys avec des versions plus récentes des fichiers et des versions d’assembly sont disponibles. Pour vous assurer que vos clients acceptent ce comportement, vous pouvez afficher une invite de confidentialité pour les. Ensuite, ils peuvent choisir s’il faut accorder l’autorisation à l’application pour mettre à jour automatiquement. Si l’application n’est pas autorisée à mettre à jour automatiquement, il n’installe pas.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -37,7 +37,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 -   Visual Studio 2010.  
   
-## <a name="creating-an-update-consent-dialog-box"></a>Création d’une boîte de dialogue de consentement de mise à jour  
+## <a name="create-an-update-consent-dialog-box"></a>Créer une boîte de dialogue de consentement de mise à jour  
  Pour afficher une invite de confidentialité, créez une application qui demande le lecteur à donner son consentement pour les mises à jour automatiques de l’application.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>Pour créer une boîte de dialogue de consentement  
@@ -136,7 +136,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 26. Sur le **générer** menu, cliquez sur **générer la solution**.  
   
-## <a name="creating-the-custom-bootstrapper-package"></a>Création du Package de programme d’amorçage personnalisé  
+## <a name="create-the-custom-bootstrapper-package"></a>Créer le package de programme d’amorçage personnalisé  
  Pour afficher l’invite de confidentialité pour les utilisateurs finaux, vous pouvez créer un package de programme d’amorçage personnalisé pour l’application de la boîte de dialogue de consentement de mise à jour et les inclure comme condition préalable dans toutes vos applications ClickOnce.  
   
  Cette procédure montre comment créer un package de programme d’amorçage personnalisé en créant les documents suivants :  
@@ -228,7 +228,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 6.  Si nécessaire, créez un nouveau fichier manifeste package.xml et un nouveau document eula.rtf pour les termes du contrat de licence logiciel pour chacun des paramètres régionaux. Par exemple, si vous avez créé des sous-répertoires pour les paramètres régionaux fr et de, créer des fichiers manifeste package.xml distinct et les termes du contrat de licence de logiciel et les enregistrer dans les sous-répertoires fr et de.  
   
-## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Définition de l’Application de consentement de mise à jour comme condition préalable  
+## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Définir l’Application de consentement de mise à jour comme condition préalable  
  Dans Visual Studio, vous pouvez définir l’application de consentement de mise à jour comme condition préalable.  
   
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Pour définir l’Application de consentement de mise à jour comme condition préalable  
@@ -246,7 +246,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 5.  Cliquez sur **OK**.  
   
-## <a name="creating-and-testing-the-setup-program"></a>Créer et tester le programme d’installation  
+## <a name="create-and-test-the-setup-program"></a>Créer et tester le programme d’installation  
  Après avoir défini l’application de consentement de mise à jour comme condition préalable, vous pouvez générer le programme d’installation et le programme d’amorçage pour votre application.  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Pour créer et tester le programme d’installation par ne pas en cliquant sur J’accepte  

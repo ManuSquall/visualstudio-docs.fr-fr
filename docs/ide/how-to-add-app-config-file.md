@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour ajouter un fichier app.config à un projet dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Guide pratique pour ajouter un fichier app.config à un projet dans Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22b9ed31621074e27cfa2d51502e44d508d6b424
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b2182b0175d57d7283e63bdf408249fa7566da00
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Guide pratique pour ajouter un fichier de configuration d’application à un projet C#
 
@@ -42,6 +42,6 @@ Quand vous générez votre projet, l’environnement de développement copie aut
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer les paramètres d’application (.NET)](../ide/managing-application-settings-dotnet.md)  
-[Schéma des fichiers de configuration (.NET Framework)](/dotnet/framework/configure-apps/file-schema/index)  
-[Configurer les applications (.NET Framework)](/dotnet/framework/configure-apps/index)
+- [Gérer les paramètres d’application (.NET)](../ide/managing-application-settings-dotnet.md)
+- [Schéma des fichiers de configuration (.NET Framework)](/dotnet/framework/configure-apps/file-schema/index)
+- [Configurer les applications (.NET Framework)](/dotnet/framework/configure-apps/index)

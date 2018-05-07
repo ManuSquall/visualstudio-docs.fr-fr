@@ -5,8 +5,6 @@ ms.date: 01/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
-dev_langs:
-- R
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
@@ -14,15 +12,15 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d8b88e327af895d39335695b16b44bf17efdb18b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e5494283fdf759ddc664207d62d40f7f83993632
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Linting de code R dans Visual Studio
 
-Le linting (ou vérification lint) est un processus qui analyse le code pour révéler des erreurs potentielles, des problèmes de mise en forme et d’autres parasites dans le code, par exemple un faux espace blanc. Le linting contribue aussi à encourager certaines conventions de codage, comme la manière dont les identificateurs sont nommés, ce qui s’avère très utile au sein des équipes et dans d’autres situations de collaboration.
+Le linting (ou vérification lint) analyse le code pour révéler des erreurs potentielles, des problèmes de mise en forme et d’autres parasites dans le code, par exemple un faux espace blanc. Le linting contribue également à encourager certaines conventions de codage, telles que la manière de nommer les identificateurs. Ces conventions sont utiles au sein d’équipes et dans d’autres situations de collaboration.
 
 Outils R pour Visual Studio (RTVS) fournit un linting intégré pour R, dont le comportement est contrôlé par le biais de diverses options décrites dans cet article. Ces options sont trouvent dans **Outils > Options > Éditeur de texte > R > Lint**.
 
@@ -32,7 +30,7 @@ Quand il est activé, le linting s’applique dans l’éditeur pendant la frapp
 
 ![Exemples de linting pour du code R](media/linting-01.png)
 
-Souvent, vous modifiez les options de linting selon les besoins d’un projet ou d’un fichier. Par exemple, un code provenant d’un cours en ligne peut utiliser `=` au lieu de `<-` , ainsi que des identificateurs à casse Pascal. Un tel code affiche de fréquents avertissements de linting car les options de linting par défaut signalent ces cas. Lorsque vous utilisez ce code, vous pouvez alors simplement désactiver les options au lieu de perdre du temps à corriger chaque instance.
+Souvent, vous modifiez les options de linting selon les besoins d’un projet ou d’un fichier. Par exemple, un code provenant d’un cours en ligne peut utiliser `=` au lieu de `<-` , ainsi que des identificateurs à casse Pascal. Un tel code affiche de fréquents avertissements de linting car les options de linting par défaut signalent ces cas. Lorsque vous utilisez ce code, vous pouvez désactiver les options au lieu de perdre du temps à corriger chaque instance.
 
 ## <a name="assignment-group"></a>Groupe d’assignation
 

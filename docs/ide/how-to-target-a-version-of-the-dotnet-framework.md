@@ -1,7 +1,7 @@
 ---
-title: Cibler une version .NET Framework dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Cibler une version du .NET Framework dans Visual Studio
 ms.date: 02/06/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c00c36bd9273423b4625ea67aa9875f9c49446c2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6d0eef8a9563fdb6d74737f90cf184186142a672
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Guide pratique pour cibler une version du .NET Framework
 
@@ -69,8 +69,8 @@ Pour plus d’informations sur le changement de la version cible des projets C+
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vue d’ensemble du multiciblage Visual Studio](../ide/visual-studio-multi-targeting-overview.md)  
-[Résoudre les problèmes liés aux erreurs de ciblage du .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)  
-[Application, page du Concepteur de projet (C#)](../ide/reference/application-page-project-designer-csharp.md)  
-[Application, page du Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
-[Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Vue d’ensemble du multiciblage Visual Studio](../ide/visual-studio-multi-targeting-overview.md)
+- [Résoudre les problèmes liés aux erreurs de ciblage du .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
+- [Application, page du Concepteur de projet (C#)](../ide/reference/application-page-project-designer-csharp.md)
+- [Application, page du Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+- [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

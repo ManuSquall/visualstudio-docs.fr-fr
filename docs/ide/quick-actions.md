@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 90ec61924a9a08fc01c54f04bd8a7cc82fcc9525
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 43198f5722de1bd983991df8ff19b17fcaea9e83
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="quick-actions"></a>Actions rapides
 
@@ -24,9 +24,9 @@ Les actions rapides vous permettent de refactoriser, générer ou modifier facil
 
 Les actions rapides peuvent servir à :
 
-- appliquer un correctif de code en cas de violation de règle de [l’analyseur de code](../code-quality/roslyn-analyzers-overview.md) ;
-- [supprimer](../code-quality/use-roslyn-analyzers.md) une violation de règle de l’analyseur de code ;
-- appliquer une refactorisation (par exemple, [rendre inline une variable temporaire](../ide/reference/inline-temporary-variable.md)) ;
+- appliquer un correctif de code en cas de violation de règle de [l’analyseur de code](../code-quality/roslyn-analyzers-overview.md) ;
+- [supprimer](../code-quality/use-roslyn-analyzers.md) une violation de règle de l’analyseur de code ;
+- appliquer une refactorisation (par exemple, [rendre inline une variable temporaire](../ide/reference/inline-temporary-variable.md)) ;
 - générer du code (par exemple, [introduire une variable locale](../ide/reference/introduce-local-variable.md)).
 
 Les actions rapides peuvent être appliquées en utilisant l’icône d’ampoule ![Petite icône en forme d’ampoule](media/vs2015_lightbulbsmall.png) ou en appuyant sur **Ctrl**+**.** lorsque le curseur se trouve sur une ligne de code pour laquelle une action est disponible. Une ampoule apparaît si votre code est souligné d’une ligne ondulée rouge et qu’une suggestion pour résoudre le problème est disponible dans Visual Studio. Par exemple, si une erreur est signalée par un soulignement rouge ondulé, une ampoule apparaît lorsque des corrections sont disponibles pour cette erreur.

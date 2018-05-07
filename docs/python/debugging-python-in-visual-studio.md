@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 576a8ffdd025667e811e96a712368de98bbe4cb4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="debugging-your-python-code"></a>Débogage de votre code Python
 
@@ -125,7 +125,7 @@ La commande de menu **Débogage > Fenêtres > Paramètres d’exception** affich
 
 La case à cocher de chaque exception détermine si le débogueur s’arrête *systématiquement* lorsque l’exception est déclenchée. Cochez cette case si vous souhaitez que le débogueur s’arrête plus souvent pour une exception spécifique.
 
-Par défaut, le débogueur s’arrête pour la plupart des exceptions quand aucun gestionnaire d’exceptions ne figure dans le code source. Pour modifier ce comportement, cliquez avec le bouton droit sur une exception et sélectionnez ou désélectionnez l’option **Continuer en cas d’exception non gérée dans le code utilisateur**. Si vous préférez que le débogueur s’arrête moins souvent pour une exception donnée, décochez cette case.
+Par défaut, le débogueur s’arrête pour la plupart des exceptions quand aucun gestionnaire d’exceptions ne figure dans le code source. Pour modifier ce comportement, cliquez avec le bouton droit sur une exception et modifiez l’option **Continuer en cas d’exception non gérée dans le code utilisateur**. Si vous préférez que le débogueur s’arrête moins souvent pour une exception donnée, décochez cette case.
 
 Pour configurer une exception absente de cette liste, ajoutez-la en cliquant sur le bouton **Ajouter**. Indiquez un nom correspondant au nom complet de l’exception.
 
