@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 39e4b718ab7563e086f6ca2e85c31bd53b3c371c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e352f8a0fffb3972f326edc767b799295b2c802e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Démarrage rapide : Créer un projet Python à partir d’un modèle dans Visual Studio
 
@@ -59,7 +59,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 **Réponse** : Lorsque la charge de travail Python est installée, Visual Studio offre de nombreux modèles de projet, notamment pour les [infrastructures web Flask, Bottle et Django](../python/python-web-application-project-templates.md), Azure Cloud Services et différents scénarios de Machine Learning. Il existe même un modèle pour créer un projet à partir d’une structure de dossiers existante contenant une application Python. Vous pouvez y accéder par la boîte de dialogue **Fichier > Nouveau > Projet...**  en sélectionnant le nœud de langage **Python** et ses nœuds enfants.
 
-Visual Studio propose également un ensemble de *modèles d’élément* ou de fichier pour créer rapidement une classe Python, un package Python, un test unitaire Python, des fichiers web.config, etc. Lorsqu’un projet Python est ouvert, vous pouvez accéder aux modèles d’élément par le biais de la commande de menu **Projet > Ajouter un élément...** .
+Visual Studio propose également un ensemble de *modèles d’élément* ou de fichier pour créer rapidement une classe Python, un package Python, un test unitaire Python, des fichiers `web.config`, etc. Lorsqu’un projet Python est ouvert, vous pouvez accéder aux modèles d’élément par le biais de la commande de menu **Projet > Ajouter un élément**. Consultez [Référence de modèles d’élément](python-item-templates.md).
 
 Les modèles peuvent faire gagner beaucoup de temps au démarrage d’un projet ou lors de la création d’un fichier. Ils permettent également de se renseigner sur les différents types d’applications et les différentes structures de code. Prenez quelques minutes pour créer des projets et des éléments à partir des modèles pour vous familiariser avec leur contenu.
 

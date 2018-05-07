@@ -9,6 +9,7 @@
 ## [Apprendre à déboguer avec Visual Studio](getting-started-with-the-debugger.md)
 ## [Exécution de code Python dans le débogueur...](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Déboguer une application Azure en direct](debug-live-azure-applications.md)
+## [Déboguer un code natif et managé](how-to-debug-managed-and-native-code.md)
 ## [Voir les instantanés avec le retour en arrière IntelliTrace](how-to-use-intellitrace-step-back.md)
 # Guides pratiques
 ## [Naviguer dans le code avec le débogueur](navigating-through-code-with-the-debugger.md)

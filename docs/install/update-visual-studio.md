@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour Visual Studio 2017
 description: Découvrez comment mettre à jour Visual Studio vers la version la plus récente, étape par étape.
-ms.date: 03/06/2018
+ms.date: 04/23/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a524fa630fbe9ea8e1cf4474cab2b7180fe582a8
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Mettre à jour Visual Studio 2017 vers la version la plus récente
 
@@ -53,6 +53,9 @@ Lorsqu’il existe une mise à jour, un indicateur de notification correspondant
 
      La mise à jour se poursuit. Ensuite, lorsqu’elle est terminée, Visual Studio redémarre.
 
+     > [!NOTE]
+     > Si vous exécutez Visual Studio en mode administrateur, vous devez redémarrer manuellement Visual Studio après la mise à jour.    
+
 ### <a name="use-the-ide"></a>Utiliser l’IDE
 
 Vous pouvez rechercher une mise à jour et ensuite installer la mise à jour à partir de la barre de menus dans Visual Studio.
@@ -66,6 +69,9 @@ Vous pouvez rechercher une mise à jour et ensuite installer la mise à jour à 
 3. Lorsque la boîte de dialogue **Mettre à jour**, choisissez **Mettre à jour maintenant**.
 
    La mise à niveau s’exécute comme décrit dans la section précédente, puis Visual Studio redémarre une fois la mise à jour terminée.
+
+   > [!NOTE]
+   > Si vous exécutez Visual Studio en mode administrateur, vous devez redémarrer manuellement Visual Studio après la mise à jour.  
 
 ### <a name="use-the-visual-studio-installer"></a>Utiliser le programme d’installation de Visual Studio
 

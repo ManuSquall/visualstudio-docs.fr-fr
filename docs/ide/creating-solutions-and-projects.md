@@ -1,7 +1,7 @@
 ---
-title: Créer des solutions et des projets dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Créer des solutions et des projets dans Visual Studio
 ms.date: 02/06/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb984c1a6947438df663e228bb21bda4eea763c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d92cc8bcbc160dbc5cab10bffe30b08ba1cca7be
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-solutions-and-projects"></a>Créer des solutions et des projets
 
@@ -134,7 +134,7 @@ Vous pouvez supprimer des solutions et tout leur contenu définitivement, mais c
 
 ## <a name="see-also"></a>Voir aussi
 
-[Solutions et projets](../ide/solutions-and-projects-in-visual-studio.md)  
-[Référentiels open source de Microsoft sur GitHub](https://github.com/Microsoft)  
-[Exemples Visual Studio](../ide/visual-studio-samples.md)  
-[Exemples de code pour développeurs](https://code.msdn.microsoft.com/)
+- [Solutions et projets](../ide/solutions-and-projects-in-visual-studio.md)
+- [Référentiels open source de Microsoft sur GitHub](https://github.com/Microsoft)
+- [Exemples Visual Studio](../ide/visual-studio-samples.md)
+- [Exemples de code pour développeurs](https://code.msdn.microsoft.com/)

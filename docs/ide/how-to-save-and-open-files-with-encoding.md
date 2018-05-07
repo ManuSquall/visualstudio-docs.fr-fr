@@ -1,9 +1,8 @@
 ---
-title: Guide pratique pour enregistrer et ouvrir des fichiers avec encodage | Microsoft Docs
-ms.custom: ''
+title: Guide pratique pour enregistrer et ouvrir des fichiers avec encodage
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Unicode, bi-directional language support
@@ -16,48 +15,50 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 117f82cca454a4d82e6789c17486e808912387be
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6298e603589d41a6a082b6fe2c1916b3cf8a2a84
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Guide pratique pour enregistrer et ouvrir des fichiers avec encodage
-Vous pouvez enregistrer des fichiers avec encodage de caractères spécifiques pour prendre en charge des langues bidirectionnelles. Vous pouvez également spécifier un codage à l’ouverture d’un fichier, afin que Visual Studio affiche le fichier correctement.  
-  
-### <a name="to-save-a-file-with-encoding"></a>Pour enregistrer un fichier avec encodage  
-  
-1.  Dans le menu **Fichier**, choisissez **Enregistrer le fichier sous**, puis cliquez sur le bouton déroulant à côté du bouton **Enregistrer**.  
-  
-     La boîte de dialogue **Options d’enregistrement avancées** s’affiche.  
-  
-2.  Sous **Encodage**, sélectionnez l’encodage à utiliser pour le fichier.  
-  
-3.  Éventuellement, sous **Fins de ligne**, sélectionnez le format des caractères de fin de ligne.  
-  
-     Cette option est utile si vous souhaitez échanger le fichier avec des utilisateurs d’un système d’exploitation différent.  
-  
-     Si vous souhaitez utiliser un fichier qui est codé de manière spécifique, vous pouvez indiquer à Visual Studio d’utiliser cet encodage à l’ouverture du fichier. La méthode que vous utilisez varie selon que le fichier fait ou non partie de votre projet.  
-  
-### <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Pour ouvrir un fichier encodé qui fait partie d’un projet  
-  
-1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le fichier et choisissez **Ouvrir avec**.  
-  
-2.  Dans la boîte de dialogue **Ouvrir avec**, choisissez l’éditeur avec lequel vous voulez ouvrir le fichier.  
-  
-     De nombreux éditeurs Visual Studio, tels que l’éditeur de formulaires, détectent automatiquement l’encodage et ouvrent le fichier de façon appropriée. Si vous optez pour un éditeur qui vous permet de choisir l’encodage, la boîte de dialogue **Encodage** s’affiche.  
-  
-3.  Dans la boîte de dialogue **Encodage**, sélectionnez le codage que l’éditeur doit utiliser.  
-  
-### <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Pour ouvrir un fichier encodé qui ne fait pas partie d’un projet  
-  
-1.  Dans le menu **Fichier**, pointez sur **Ouvrir**, choisissez **Fichier** ou **Fichier à partir du web**, puis sélectionnez le fichier à ouvrir.  
-  
-2.  Cliquez sur le bouton déroulant en regard du bouton **Ouvrir**, puis choisissez **Ouvrir avec**.  
-  
-3.  Suivez les étapes 2 et 3 de la procédure précédente.  
-  
+
+Vous pouvez enregistrer des fichiers avec encodage de caractères spécifiques pour prendre en charge des langues bidirectionnelles. Vous pouvez également spécifier un codage à l’ouverture d’un fichier, afin que Visual Studio affiche le fichier correctement.
+
+## <a name="to-save-a-file-with-encoding"></a>Pour enregistrer un fichier avec encodage
+
+1.  Dans le menu **Fichier**, choisissez **Enregistrer le fichier sous**, puis cliquez sur le bouton déroulant à côté du bouton **Enregistrer**.
+
+     La boîte de dialogue **Options d’enregistrement avancées** s’affiche.
+
+2.  Sous **Encodage**, sélectionnez l’encodage à utiliser pour le fichier.
+
+3.  Éventuellement, sous **Fins de ligne**, sélectionnez le format des caractères de fin de ligne.
+
+     Cette option est utile si vous souhaitez échanger le fichier avec des utilisateurs d’un système d’exploitation différent.
+
+     Si vous souhaitez utiliser un fichier qui est codé de manière spécifique, vous pouvez indiquer à Visual Studio d’utiliser cet encodage à l’ouverture du fichier. La méthode que vous utilisez varie selon que le fichier fait ou non partie de votre projet.
+
+## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Pour ouvrir un fichier encodé qui fait partie d’un projet
+
+1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le fichier et choisissez **Ouvrir avec**.
+
+2.  Dans la boîte de dialogue **Ouvrir avec**, choisissez l’éditeur avec lequel vous voulez ouvrir le fichier.
+
+     De nombreux éditeurs Visual Studio, tels que l’éditeur de formulaires, détectent automatiquement l’encodage et ouvrent le fichier de façon appropriée. Si vous optez pour un éditeur qui vous permet de choisir l’encodage, la boîte de dialogue **Encodage** s’affiche.
+
+3.  Dans la boîte de dialogue **Encodage**, sélectionnez le codage que l’éditeur doit utiliser.
+
+## <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Pour ouvrir un fichier encodé qui ne fait pas partie d’un projet
+
+1.  Dans le menu **Fichier**, pointez sur **Ouvrir**, choisissez **Fichier** ou **Fichier à partir du web**, puis sélectionnez le fichier à ouvrir.
+
+2.  Cliquez sur le bouton déroulant en regard du bouton **Ouvrir**, puis choisissez **Ouvrir avec**.
+
+3.  Suivez les étapes 2 et 3 de la procédure précédente.
+
 ## <a name="see-also"></a>Voir aussi
-[Encodages et sauts de ligne](encodings-and-line-breaks.md)  
-[Encodage et globalisation des applications Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
-[Globaliser et localiser des applications](../ide/globalizing-and-localizing-applications.md)
+
+- [Encodages et sauts de ligne](encodings-and-line-breaks.md)
+- [Encodage et globalisation des applications Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)
+- [Globaliser et localiser des applications](../ide/globalizing-and-localizing-applications.md)

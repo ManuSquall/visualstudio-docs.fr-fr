@@ -1,6 +1,6 @@
 ---
 title: Installation de la prise en charge de Python
-description: Instructions détaillées sur l’installation de Python Tools pour Visual Studio (PTVS) dans Visual Studio 2017, 2015, 2013, 2012 et 2010, y compris les options et les emplacements d’installation.
+description: Guide pratique pour installer Python Tools pour Visual Studio (PTVS) dans Visual Studio 2017, 2015, 2013, 2012 et 2010, y compris les options et les emplacements d’installation.
 ms.date: 02/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a998a2a62915d1ce998e30202f4b4fd0838975a3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c93a0c4d8fd312c9b7b6367043fc35b183d022bb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="installing-python-support-in-visual-studio-on-windows"></a>Installation de la prise en charge de Python dans Visual Studio sur Windows
+# <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Guide pratique pour installer la prise en charge de Python dans Visual Studio sur Windows
 
 Pour installer la prise en charge de Python pour Visual Studio (également appelé Python Tools pour Visual Studio ou PTVS), suivez les instructions de la section qui correspond à votre version de Visual Studio :
 

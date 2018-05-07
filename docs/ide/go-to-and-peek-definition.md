@@ -1,7 +1,7 @@
 ---
-title: Affichage des définitions de type dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Affichage des définitions de type dans Visual Studio
 ms.date: 01/10/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61428294fc9c4afa32a50b4776f03ce1e98b83b9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: afe72522d235579147b645c27cf4f560827f555d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="view-type-and-member-definitions"></a>Afficher les définitions de type et de membre
 
@@ -77,6 +77,5 @@ Nouveauté de Visual Studio 2017 version 15.6 : vous pouvez définir une option 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Navigation dans le code](../ide/navigating-code.md)
-
-[Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Naviguer dans le code](../ide/navigating-code.md)
+- [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

@@ -1,5 +1,5 @@
 ---
-title: Améliorer la vitesse de démarrage de Visual Studio | Microsoft Docs
+title: Améliorer la vitesse de démarrage de Visual Studio
 ms.date: 11/15/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,15 @@ ms.author: gewarren
 manager: douge
 f1_keywords:
 - vs.performancecenter
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8098e52f0045c913495dce81d5005772eac836
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7ba4e3d3a32aa7921d23b8719ec63733b9e239e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Améliorer la vitesse de démarrage de Visual Studio
 
@@ -45,7 +46,7 @@ La boîte de dialogue répertorie les fenêtres des extensions et outils qui aff
 
 2. Choisissez l’extension que vous voulez désactiver, puis le bouton **Désactiver**.
 
-Vous pouvez toujours réactiver l’extension pour les sessions ultérieures à l’aide du Gestionnaire d’extensions ou de la boîte de dialogue Gérer le niveau de performance de Visual Studio.
+Vous pouvez toujours réactiver l’extension pour les sessions ultérieures à l’aide du **Gestionnaire d’extensions** ou de la boîte de dialogue **Gérer le niveau de performance de Visual Studio**.
 
 ## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Pour changer les paramètres de la fenêtre Outil afin d’améliorer les temps de démarrage
 

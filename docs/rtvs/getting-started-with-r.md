@@ -1,5 +1,5 @@
 ---
-title: Bien démarrer avec R
+title: Didacticiel Bien démarrer avec R
 description: Procédure pas à pas d’utilisation de R dans Visual Studio, y compris la création du projet, la fenêtre interactive, la modification du code et le débogage.
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
@@ -10,13 +10,13 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: c4ec2ce9a399c363427ef80087c1db1e8ef68d2c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af2074770a97dbef1f9c8598ec8b6560bdd7f344
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="getting-started-with-r-tools-for-visual-studio"></a>Bien démarrer avec Outils R pour Visual Studio
+# <a name="get-started-with-r-tools-for-visual-studio"></a>Bien démarrer avec Outils R pour Visual Studio
 
 Après avoir installé Outils R pour Visual Studio (RTVS) (voir [Installation](installing-r-tools-for-visual-studio.md)), vous pouvez rapidement vous faire une idée de ce que ces outils ont à offrir. 
 

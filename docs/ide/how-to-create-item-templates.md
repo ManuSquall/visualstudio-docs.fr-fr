@@ -1,7 +1,7 @@
 ---
-title: Créer des modèles de projet pour Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Créer des modèles d’élément pour Visual Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,11 +9,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c5c29dde308c4e3720195924bd40db4e880e4b2e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 342b7ebd17280c47296fae43c6541a5e969ad5f3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-item-templates"></a>Guide pratique pour créer des modèles d’élément
 
@@ -126,6 +126,6 @@ Dans certains cas, vous pouvez avoir envie de créer un modèle d’élément ma
 
 ## <a name="see-also"></a>Voir aussi
 
-[Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)  
-[Guide pratique pour créer des modèles d’élément multifichiers](../ide/how-to-create-multi-file-item-templates.md)  
-[Informations de référence sur les schémas de modèles Visual Studio (extensibilité)](../extensibility/visual-studio-template-schema-reference.md)
+- [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+- [Guide pratique pour créer des modèles d’élément multifichiers](../ide/how-to-create-multi-file-item-templates.md)
+- [Informations de référence sur les schémas de modèles Visual Studio (extensibilité)](../extensibility/visual-studio-template-schema-reference.md)

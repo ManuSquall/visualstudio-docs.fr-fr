@@ -1,6 +1,6 @@
 ---
-title: 'Utilisation de Python - Étape 5 : Installation de packages'
-description: L’étape 5 propose un didacticiel de base pour utiliser Python dans Visual Studio, présentant les fonctionnalités de Visual Studio permettant de gérer les packages dans un environnement Python.
+title: 'Utilisation du didacticiel Python - Étape 5 : Installation de packages'
+description: Étape 5 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui présente les fonctionnalités de Visual Studio permettant de gérer les packages dans un environnement Python.
 ms.date: 03/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 73de2a4c58a24a603f1d5d54138d5762e3ae9971
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Étape 5 : Installation de packages dans votre environnement Python
 
@@ -66,7 +66,7 @@ La communauté des développeurs Python a produit des milliers de packages utile
 
   ![Sortie de l’exemple matplotlib](media/environments-add-matplotlib3.png)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-step"></a>Étape suivante
 
 > [!div class="nextstepaction"]
 > [Utilisation de Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)

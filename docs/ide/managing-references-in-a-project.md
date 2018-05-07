@@ -1,6 +1,7 @@
 ---
-title: Gestion des références dans un projet
+title: Gérer les références dans un projet
 ms.date: 04/11/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -22,11 +23,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef62d3ab0436ff8b20766f2ffe88506d73c8f03b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e772f4d861e4b16499ad9be9d7c814320e1a14f9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-references-in-a-project"></a>Gérer les références dans un projet
 
@@ -89,9 +90,9 @@ Quand vous référencez un assembly dans votre projet, Visual Studio recherche c
 - Autres répertoires de projet de la même solution (vous pouvez rechercher ces assemblys sous l’onglet **Projets** ).
 
 > [!NOTE]
-> - Tous les projets contiennent une référence implicite à mscorlib.
+> - Tous les projets contiennent une référence implicite à **mscorlib**.
 > - Tous les projets contiennent une référence implicite à `System.Core`, même si `System.Core` est supprimé de la liste de références.
-> - Les projets Visual Basic contiennent une référence implicite à `Microsoft.VisualBasic`.
+> - Les projets Visual Basic contiennent une référence implicite à <xref:Microsoft.VisualBasic>.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Références à des composants partagés au moment de l’exécution
 
@@ -111,7 +112,7 @@ Pour plus d’informations, consultez [Vue d’ensemble du multiciblage](../ide/
 
 Les références entre projets sont des références à des projets qui contiennent des assemblys. Vous les créez en utilisant l’onglet **Projet** . Visual Studio peut trouver un assembly si vous indiquez un chemin d’accès au projet.
 
-Quand vous avez un projet qui produit un assembly, vous devez référencer le projet et non pas utiliser une référence de fichier (voir ci-dessous). Une référence entre projets présente l’avantage de créer une dépendance entre les projets dans le système de build. Le projet dépendant est généré s’il a été modifié depuis la dernière build du projet qui référence. Une référence de fichier ne crée pas de dépendance de build, il est donc possible de générer le projet de référence sans générer le projet dépendant, et la référence peut devenir obsolète. Autrement dit, le projet peut référencer une version précédemment générée du projet. Cela peut entraîner la présence de plusieurs versions d’une même DLL nécessaire dans le répertoire bin, ce qui n’est pas admis. Quand ce conflit intervient, vous obtenez un message de ce type : « Avertissement : impossible de copier la dépendance ’fichier’ du projet ’projet’ dans le répertoire d’exécution, car elle remplacerait la référence ’fichier’. ». Pour plus d’informations, consultez [Dépannage de références rompues](../ide/troubleshooting-broken-references.md) et [Guide pratique pour créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md).
+Quand vous avez un projet qui produit un assembly, vous devez référencer le projet et non pas utiliser une référence de fichier (voir ci-dessous). Une référence entre projets présente l’avantage de créer une dépendance entre les projets dans le système de build. Le projet dépendant est généré s’il a été modifié depuis la dernière build du projet qui référence. Une référence de fichier ne crée pas de dépendance de build, il est donc possible de générer le projet de référence sans générer le projet dépendant, et la référence peut devenir obsolète. Autrement dit, le projet peut référencer une version précédemment générée du projet. Cela peut entraîner la présence de plusieurs versions d’une même DLL nécessaire dans le répertoire *bin*, ce qui n’est pas admis. Quand ce conflit intervient, vous obtenez un message de ce type : « Avertissement : impossible de copier la dépendance ’fichier’ du projet ’projet’ dans le répertoire d’exécution, car elle remplacerait la référence ’fichier’. ». Pour plus d’informations, consultez [Dépanner des références rompues](../ide/troubleshooting-broken-references.md) et [Guide pratique pour créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Une référence de fichier est créée à la place d’une référence entre projets si la version cible du .NET Framework d’un projet est la version 4.5, et si la version cible du .NET Framework de l’autre projet est la version 2, 3, 3.5 ou 4.0.
@@ -122,5 +123,5 @@ Les références de fichiers sont des références directes à des assemblys qui
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Résolution des problèmes de références rompues](../ide/troubleshooting-broken-references.md)
+- [Dépanner des références rompues](../ide/troubleshooting-broken-references.md)
 - [Guide pratique pour ajouter ou supprimer des références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

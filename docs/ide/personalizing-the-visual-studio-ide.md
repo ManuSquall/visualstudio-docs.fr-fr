@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 609c1656fbea78bf23480f35e9f70802d5cb1098
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd4f00313cbbb7f082934bddff338f77f117fd5c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personnaliser l’IDE Visual Studio
 
@@ -40,7 +40,7 @@ Pour changer les options de colorisation dans l’éditeur, tapez `environment` 
 
 Vous pouvez changer la casse du menu principal à l’aide des options **1re lettre des mots en majuscule** (« Fichier ») et **Tout en majuscules** (« FICHIER »). Tapez `environment` dans la zone **Lancement rapide**, sélectionnez **Environnement --> Général**, puis changez l’option **Mettre la 1ère lettre des mots en maj. dans la barre de menus**.
 
-### <a name="customze-menus-and-toolbars"></a>Personnaliser des menus et des barres d’outils
+### <a name="customize-menus-and-toolbars"></a>Personnaliser des menus et des barres d’outils
 
 Pour ajouter ou supprimer des éléments de menu ou de barre d’outils, consultez [Guide pratique pour personnaliser des menus et des barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 

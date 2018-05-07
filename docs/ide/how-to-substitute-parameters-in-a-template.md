@@ -1,9 +1,8 @@
 ---
-title: Ajouter des paramètres de nom à des modèles de projet et d’élément dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Ajouter des paramètres de nom à des modèles de projet et d’élément dans Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
@@ -12,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0439ffd8e7994995dd3eaafed8e0b0fb2a57d282
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 26802b7b5293fd43eb1546290560c5300c360003
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Guide pratique pour substituer des paramètres dans un modèle
 
@@ -44,7 +43,7 @@ La section suivante vous montre comment modifier un modèle pour remplacer le no
 
 ## <a name="see-also"></a>Voir aussi
 
-[Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)  
-[Paramètres de modèle](../ide/template-parameters.md)  
-[Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
-[ProjectItem, élément (modèles d’élément Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+- [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+- [Paramètres de modèle](../ide/template-parameters.md)
+- [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [ProjectItem, élément (modèles d’élément Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

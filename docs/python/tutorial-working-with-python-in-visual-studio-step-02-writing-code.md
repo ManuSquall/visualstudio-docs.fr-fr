@@ -1,6 +1,6 @@
 ---
-title: 'Utilisation de Python - Étape 2 : Écriture et exécution du code'
-description: Étape 2 d’un didacticiel de base sur l’utilisation de Python dans Visual Studio, décrivant comment modifier et exécuter un programme Hello World simple, suivie d’un code plus intéressant illustrant les fonctionnalités IntelliSense et d’édition de Visual Studio.
+title: 'Utilisation du didacticiel Python - Étape 2 : Écriture et exécution du code'
+description: Étape 2 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui explique comment modifier du code et exécuter un projet.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 607903093735c1ab49886afcf292121e0b7bafb8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Étape 2 : Écriture et exécution du code
 
@@ -85,7 +85,7 @@ Si l’Explorateur de solutions soit l’endroit où vous gérez les fichiers de
 
 1. Relancez le programme avec Ctrl+F5 ou **Déboguer > Démarrer sans débogage**. Fermez la fenêtre de sortie quand vous avez terminé.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-step"></a>Étape suivante
 
 > [!div class="nextstepaction"]
 > [Utilisation de la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
