@@ -18,11 +18,11 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 22243a8d837e584df64c9fabc28405951f481b26
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a81d640e2ecebe46a20f7a3661584cb5c7423691
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 Utilisez cet outil pour renforcer, protéger et nettoyer vos applications bureau, mobiles, serveur et intégrées afin de sécuriser les secrets industriels et autres droits de propriété intellectuelle (IP), réduire le piratage et la contrefaçon et vous protéger contre la falsification et le débogage non autorisé.
 Dotfuscator fonctionne avec des assemblys compilés sans nécessiter de programmation supplémentaire ni même d’accès au code source.
 
-![](media/header.svg)
+![PreEmptive Protection - Dotfuscator](media/header.svg)
 
 ## <a name="why-protection-matters"></a>Importance de la protection
 
@@ -67,7 +67,7 @@ Dotfuscator CE offre une protection de base prête à l’emploi.
 D’autres mesures de protection d’application sont disponibles pour les utilisateurs de Dotfuscator CE enregistrés et les utilisateurs de *PreEmptive Protection - Dotfuscator* Professional Edition, le [logiciel de masquage .NET][net-obfuscator] leader dans le monde.
 Pour plus d’informations sur l’amélioration de Dotfuscator, reportez-vous à la [page des mises à niveau][upgrades].
 
-## <a name="getting-started"></a>Prise en main
+## <a name="getting-started"></a>Bien démarrer
 
 Pour commencer à utiliser Dotfuscator CE depuis Visual Studio, tapez `dotfuscator` dans la barre de recherche **Lancement rapide** (Ctrl+Q).
 
