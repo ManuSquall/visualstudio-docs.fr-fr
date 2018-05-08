@@ -1,7 +1,7 @@
 # [Documentation sur le déploiement](index.md)
 # Vue d'ensemble
 ## [Vue d’ensemble du déploiement](deploying-applications-services-and-components-resources.md)
-# Guides de démarrage rapide
+# Démarrages rapides
 ## [Présentation du déploiement](deploying-applications-services-and-components.md)
 ## [Déployer sur un dossier local](quickstart-deploy-to-local-folder.md)
 ## [Déployer sur un site web](quickstart-deploy-to-a-web-site.md)
@@ -97,11 +97,11 @@
 #### [Débogage des applications ClickOnce qui utilisent System.Deployment.Application](debugging-clickonce-applications-that-use-system-deployment-application.md)
 ## [Prérequis pour le déploiement d’applications](application-deployment-prerequisites.md)
 ### [Déploiement des prérequis pour les applications 64 bits](deploying-prerequisites-for-64-bit-applications.md)
-### [Création de packages de programme d’amorçage](creating-bootstrapper-packages.md)
+### [Créer des packages du programme d’amorçage](creating-bootstrapper-packages.md)
 ### [Guide pratique pour créer un manifeste de produit](how-to-create-a-product-manifest.md)
 ### [Guide pratique pour créer un manifeste de package](how-to-create-a-package-manifest.md)
 ### [Guide pratique pour créer un package du programme d’amorçage localisé](how-to-create-a-localized-bootstrapper-package.md)
-### [Procédure pas à pas : création d’un programme d’amorçage personnalisé pour afficher une invite de confidentialité](walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)
+### [Procédure pas à pas : Créer un programme d’amorçage personnalisé avec une invite de confidentialité](walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)
 ### [Informations de référence sur le schéma de produit et de package](product-and-package-schema-reference.md)
 #### [<Product>, élément (programme d’amorçage)](product-element-bootstrapper.md)
 #### [<Package>, élément (programme d’amorçage)](package-element-bootstrapper.md)
