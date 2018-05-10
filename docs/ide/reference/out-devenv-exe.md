@@ -20,18 +20,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa180f4cec8fb072ca6d69dc096b714f30e06c0c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 623f4e8a8a2f6e275c42507aa3839106f3a1dd2f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 Spécifie un fichier pour stocker et afficher les erreurs qui se produisent quand vous exécutez, générez, regénérez ou déployez une solution.
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```cmd
 devenv /out FileName
 ```
 
@@ -48,7 +48,7 @@ devenv /out FileName
 ## <a name="example"></a>Exemple
  Cet exemple exécute `MySolution` et écrit les erreurs dans le fichier `MyErrorLog.txt`.
 
-```
+```cmd
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 

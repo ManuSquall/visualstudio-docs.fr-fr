@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e72c848ff9a0234040e60391be8baa05e23791a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41bddec00866f7c10140abc40c5ff12c623310d3
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="alias-command"></a>Alias, commande
 Crée un alias pour une commande complète, pour une commande complète et des arguments ou pour un autre alias.
@@ -33,14 +33,14 @@ Crée un alias pour une commande complète, pour une commande complète et des a
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```cmd
 Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
 ## <a name="arguments"></a>Arguments
- `aliasname` (facultatif). Nom du nouvel alias. Si aucune valeur n’est fournie pour `aliasname`, la liste des alias en cours accompagnés de leur définition s’affiche.
+ `aliasname` Facultatif. Nom du nouvel alias. Si aucune valeur n’est fournie pour `aliasname`, la liste des alias en cours accompagnés de leur définition s’affiche.
 
- `aliasstring` (facultatif). Nom complet de la commande ou alias existant suivi des paramètres souhaités pour créer un alias. Si aucune valeur n’est fournie pour `aliasstring`, le nom et la chaîne associés à l’alias spécifié s’affichent.
+ `aliasstring` Facultatif. Nom complet de la commande ou alias existant suivi des paramètres souhaités pour créer un alias. Si aucune valeur n’est fournie pour `aliasstring`, le nom et la chaîne associés à l’alias spécifié s’affichent.
 
 ## <a name="switches"></a>Commutateurs
  /delete ou /del ou /d (facultatif). Supprime l’alias spécifié, qui n’apparaît plus dans la liste de saisie semi-automatique.
@@ -57,19 +57,19 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ## <a name="examples"></a>Exemples
  Cet exemple crée un alias, `upper`, pour la commande Edit.MakeUpperCase complète.
 
-```
+```cmd
 >Tools.Alias upper Edit.MakeUpperCase
 ```
 
  Cet exemple supprime l’alias `upper`.
 
-```
+```cmd
 >Tools.alias /delete upper
 ```
 
  Cet exemple affiche la liste de tous les alias en cours accompagnés de leur définition.
 
-```
+```cmd
 >Tools.Alias
 ```
 

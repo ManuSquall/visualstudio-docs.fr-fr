@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a50f61debeb312f0da14e4d8aa848e50abc9cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0762287c47494b0dd0d3f4d444d7143c8688ec2b
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe(Concepteur de classes)
 
@@ -32,8 +32,8 @@ Les actions de la souris suivantes sont prises en charge dans les diagrammes de 
 |Combinaison avec la souris|Contexte|Description|
 |-----------------------|-------------|-----------------|
 |Double-clic|éléments Shape|Ouvre l'éditeur de code.|
-||Connecteur d'interface lollipop|Développe/réduit l'interface lollipop.|
-||Étiquette du connecteur d'interface lollipop|Appelle la commande **Afficher l’interface**.|
+|Double-clic|Connecteur d'interface lollipop|Développe/réduit l'interface lollipop.|
+|Double-clic|Étiquette du connecteur d'interface lollipop|Appelle la commande **Afficher l’interface**.|
 |Roulette de la souris|Diagramme de classes|Fait défiler verticalement.|
 |Maj+roulette de la souris|Diagramme de classes|Fait défiler horizontalement.|
 |Ctrl+roulette de la souris|Diagramme de classes|Effectue un zoom.|
@@ -60,12 +60,12 @@ Les actions du clavier suivantes sont prises en charge dans les diagrammes de cl
 |Touche|Contexte|Description|
 |---------|-------------|-----------------|
 |Touches de direction|À l'intérieur des formes de type|Navigation en arborescence dans le contenu de la forme (habillage de la forme pris en charge). Les touches droite et gauche permettent de développer et réduire l'élément actuel s'il peut être développé ou, sinon, de naviguer vers l'élément parent (voir la section sur la navigation en arborescence pour plus de détails sur le comportement).|
-||Formes de niveau supérieur|Permettent de déplacer les formes dans le diagramme.|
+|Touches de direction|Formes de niveau supérieur|Permettent de déplacer les formes dans le diagramme.|
 |Maj+touches de direction|À l'intérieur des formes de type|Combinaison de touches permettant la sélection continue d'éléments de forme, tels que des membres, des types imbriqués ou des compartiments. Ces raccourcis ne prennent pas en charge l'habillage.|
 |ORIGINE|À l'intérieur des formes de type|Permet d'atteindre le titre de la forme de niveau supérieur.|
-||Formes de niveau supérieur|Permet d'atteindre la première forme dans le diagramme.|
+|ORIGINE|Formes de niveau supérieur|Permet d'atteindre la première forme dans le diagramme.|
 |FIN|À l'intérieur des formes de type|Permet d'atteindre le dernier élément visible à l'intérieur de la forme.|
-||Formes de niveau supérieur|Permet d'atteindre la dernière forme dans le diagramme.|
+|FIN|Formes de niveau supérieur|Permet d'atteindre la dernière forme dans le diagramme.|
 |MAJ+ORIGINE|À l'intérieur d'une forme de type|Sélectionne des éléments dans la forme, en commençant par l'élément actuel et en terminant par l'élément supérieur de cette forme.|
 |MAJ+FIN|À l'intérieur d'une forme de type|Identique à Maj+Origine, mais du haut vers le bas.|
 |ENTRÉE|Tous les contextes|Appelle l'action par défaut sur la forme qui est également réalisable avec un double-clic. Dans la plupart des cas, il s'agit de la commande Afficher le code, mais certains éléments définissent l'action par défaut différemment (lollipops, en-têtes de compartiment, étiquettes lollipop).|
@@ -75,7 +75,7 @@ Les actions du clavier suivantes sont prises en charge dans les diagrammes de cl
 |Alt+Maj+L|À l'intérieur des formes de type + sur les formes de type|Navigue vers l'interface lollipop de la forme actuellement sélectionnée si elle est présente.|
 |Alt+Maj+B|À l'intérieur des formes de type + sur les formes de type|Si la liste des types de base est indiquée sur la forme de type et possède plusieurs éléments, elle est développée si elle était réduite, et inversement.|
 |SUPPR|Sur les formes de type et zones de commentaire|Appelle la commande **Supprimer du diagramme**.|
-||Sur tout le reste|Appelle la commande **Supprimer du code** (membres, paramètres, associations, héritage, étiquettes lollipop).|
+|SUPPR|Sur tout le reste|Appelle la commande **Supprimer du code** (membres, paramètres, associations, héritage, étiquettes lollipop).|
 |CTRL+SUPPR|Tous les contextes|Appelle la commande **Supprimer du code** sur la sélection.|
 |TAB|Tous les contextes|Fait naviguer jusqu'à l'enfant suivant dans le même parent (prend en charge l'habillage).|
 |MAJ+TAB|Tous les contextes|Fait naviguer jusqu'à l'enfant précédent dans le même parent (prend en charge l'habillage).|

@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdec487781928c22a34e5e7586700ed0e91a31a7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c3d3a6ef558b510cfde716716daf97a549fbba4
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -28,7 +28,7 @@ Les paramètres par défaut sont déterminés par le profil sélectionné quand 
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```cmd
 Devenv /ResetSettings SettingsFile
 ```
 
@@ -48,7 +48,7 @@ Si aucun `SettingsFile` n’est spécifié, vous êtes invité à sélectionner 
 
 La ligne de commande suivante applique les paramètres stockés dans le fichier `MySettings.vssettings`.
 
-```
+```cmd
 Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 ```
 

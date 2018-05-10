@@ -1,5 +1,5 @@
 ---
-title: 'Comment : créer ou mettre à jour des stratégies d’archivage d’analyse du code standard'
+title: Créer ou mettre à jour les stratégies d’archivage de l’analyse du Code Standard
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 96fa2dd75c590e0841d7479e4e071154add04857
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Comment : créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 
@@ -34,7 +34,7 @@ Stratégies d’archivage de l’analyse du code sont définies dans les paramè
 
 Après avoir spécifié une stratégie d’archivage pour le code managé, membres de l’équipe peuvent synchroniser leurs paramètres d’analyse de code pour les projets de code pour les paramètres de stratégie du projet équipe.
 
-### <a name="to-open-the-check-in-policy-editor"></a>Pour ouvrir l’éditeur de stratégie d’archivage
+## <a name="to-open-the-check-in-policy-editor"></a>Pour ouvrir l’éditeur de stratégie d’archivage
 
 1. Dans Team Explorer, cliquez sur le nom de projet d’équipe, pointez sur **paramètres du projet d’équipe**, puis cliquez sur **contrôle de code Source**.
 
@@ -46,28 +46,28 @@ Après avoir spécifié une stratégie d’archivage pour le code managé, membr
 
     - Double-cliquez sur existants **l’analyse du Code** d’élément dans le **Type de stratégie** liste pour modifier la stratégie.
 
-### <a name="to-set-policy-options"></a>Pour définir les options de stratégie
+## <a name="to-set-policy-options"></a>Pour définir les options de stratégie
 
 Activez ou désactivez les options suivantes :
 
-    |Option|Description|
-    |------------|-----------------|
-    |**Appliquer l’archivage pour qu’il contienne uniquement les fichiers qui font partie de la solution actuelle.**|Analyse du code peut s’exécuter uniquement sur les fichiers spécifiés dans les fichiers de configuration de solution et projet. Cette stratégie garantit que tout le code qui fait partie d’une solution est analysé.|
-    |**Appliquer l’analyse du Code C/C++ (/analyze)**|Requiert que tous les projets C ou C++ générés avec le / analyze exécuter l’analyse du code avant de pouvoir être archivées l’option du compilateur.|
-    |**Appliquer l’analyse du Code pour le Code managé**|Requiert que tous les projets managés exécuter l’analyse du code et générer avant de pouvoir être archivées.|
+|Option|Description|
+|------------|-----------------|
+|**Appliquer l’archivage pour qu’il contienne uniquement les fichiers qui font partie de la solution actuelle.**|Analyse du code peut s’exécuter uniquement sur les fichiers spécifiés dans les fichiers de configuration de solution et projet. Cette stratégie garantit que tout le code qui fait partie d’une solution est analysé.|
+|**Appliquer l’analyse du Code C/C++ (/analyze)**|Requiert que tous les projets C ou C++ générés avec le / analyze exécuter l’analyse du code avant de pouvoir être archivées l’option du compilateur.|
+|**Appliquer l’analyse du Code pour le Code managé**|Requiert que tous les projets managés exécuter l’analyse du code et générer avant de pouvoir être archivées.|
 
-### <a name="to-specify-a-managed-rule-set"></a>Pour spécifier un ensemble de règles managé
+## <a name="to-specify-a-managed-rule-set"></a>Pour spécifier un ensemble de règles managé
 
-- À partir de la **exécuter cet ensemble de règles** liste, utilisez une des méthodes suivantes :
+À partir de la **exécuter cet ensemble de règles** liste, utilisez une des méthodes suivantes :
 
-    - Sélectionnez un ensemble de règles standard Microsoft.
+- Sélectionnez un ensemble de règles standard Microsoft.
 
-    - Pour sélectionner un ensemble de règles personnalisé, cliquez sur  **\<sélectionner l’ensemble de règles de contrôle de code Source... >**, puis tapez le chemin d’accès du contrôle de version de l’ensemble de règles dans l’Explorateur de contrôle de source. La syntaxe d’un chemin d’accès du contrôle de version est la suivante :
+- Sélectionnez une règle personnalisée définie en cliquant sur  **\<sélectionner l’ensemble de règles de contrôle de code Source... >**. Ensuite, tapez le chemin d’accès du contrôle de version de l’ensemble de règles dans l’Explorateur de contrôle de source. La syntaxe d’un chemin d’accès du contrôle de version est la suivante :
 
-    - **$/** `TeamProjectName` **/** `VersionControlPath`
+   **$/** `TeamProjectName` **/** `VersionControlPath`
 
-    - Pour plus d’informations sur la façon de créer et implémenter une règle de stratégie d’archivage personnalisée définie, consultez [implémentation personnalisée stratégies d’archivage pour le Code managé](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
+Pour plus d’informations sur la façon de créer et implémenter une règle de stratégie d’archivage personnalisée définie, consultez [implémenter vérification des stratégies personnalisées pour le Code managé](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Création et utilisation de stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Créer et utiliser des stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

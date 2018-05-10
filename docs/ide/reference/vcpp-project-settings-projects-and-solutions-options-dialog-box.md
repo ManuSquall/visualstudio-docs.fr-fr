@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17618aa39a5487ed90fc39f414b0f08233f48b2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 966b51c0522a65641edc2f602bb27849bfabfe77
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Paramètres du projet VC++, Projets et solutions, boîte de dialogue Options
 Cette boîte de dialogue vous permet de définir les paramètres du projet et de la build [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] relatifs à la journalisation, aux performances et à la prise en charge des types de fichiers.
@@ -71,10 +71,10 @@ Cette boîte de dialogue vous permet de définir les paramètres du projet et de
 ## <a name="extensions-to-hide"></a>Extensions à masquer
   Spécifie les extensions de noms des fichiers qui ne s’affichent pas dans l’**Explorateur de solutions** quand l’option **Afficher tous les fichiers** est activée.
 
- ## <a name="build-customization-search-path"></a>Chemin de recherche des personnalisations de la build
+## <a name="build-customization-search-path"></a>Chemin de recherche des personnalisations de la build
   Spécifie la liste des répertoires contenant les fichiers .rules, qui vous permettent de définir des règles de génération pour vos projets.
 
-# <a name="solution-explorer-mode"></a>Mode Explorateur de solutions
+## <a name="solution-explorer-mode"></a>Mode Explorateur de solutions
  **Afficher uniquement les fichiers du projet**
 
   Configure l’**Explorateur de solutions** de sorte qu’il n’affiche que les fichiers du projet.

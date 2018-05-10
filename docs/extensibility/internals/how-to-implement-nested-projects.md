@@ -14,21 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90434fd8deae2f5f71c150759fc836b9ed43077
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dffef39d735b95cff01ead7087aa8b6286e39004
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-implement-nested-projects"></a>Comment : implémenter des projets imbriqués
+
 Lorsque vous créez un type de projet imbriqué il un plusieurs étapes supplémentaires sont qui doit être implémenté. Un projet parent prend en charge certaines responsabilités de mêmes que la solution dispose de ses projets imbriqués (enfants). Le projet parent est un conteneur de projets similaires à une solution. En particulier, il existe de plusieurs événements qui doivent être déclenchés par la solution et les projets parent pour générer la hiérarchie de projets imbriqués. Ces événements sont décrits dans le processus suivant pour la création de projets imbriqués.
 
-### <a name="to-create-nested-projects"></a>Pour créer des projets imbriqués
+## <a name="create-nested-projects"></a>Créer des projets imbriqués
 
 1.  L’environnement de développement intégré (IDE) charge les informations de démarrage et le fichier de projet du projet parent en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface. Le projet parent est créé et ajouté à la solution.
 
     > [!NOTE]
-    >  À ce stade, il est trop tôt dans le processus pour le projet parent créer le projet imbriqué car le projet parent doit être créé avant de pouvoir créer les projets enfants. Après cette séquence, le projet parent peut appliquer les paramètres pour les projets enfants et les projets enfants peuvent acquérir des informations à partir des projets parent si nécessaire. Cette séquence est si elle est nécessaire par les clients tels que le contrôle de code source (SCC) et l’Explorateur de solutions.
+    > À ce stade, il est trop tôt dans le processus pour le projet parent créer le projet imbriqué car le projet parent doit être créé avant de pouvoir créer les projets enfants. Après cette séquence, le projet parent peut appliquer les paramètres pour les projets enfants et les projets enfants peuvent acquérir des informations à partir des projets parent si nécessaire. Cette séquence est si elle est nécessaire par les clients tels que le contrôle de code source (SCC) et l’Explorateur de solutions.
 
      Le projet parent doit attendre le <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> méthode à être appelée par l’IDE avant de pouvoir créer son imbriqués (enfants) ou plusieurs projets.
 
@@ -57,7 +58,7 @@ Lorsque vous créez un type de projet imbriqué il un plusieurs étapes supplém
      Si elle n’existe pas déjà, le projet parent crée un GUID pour chaque projet imbriqué en appelant `CoCreateGuid`.
 
     > [!NOTE]
-    >  `CoCreateGuid` est une API COM appelée quand un GUID doit être créé. Pour plus d’informations, consultez `CoCreateGuid` et les GUID dans la bibliothèque MSDN.
+    > `CoCreateGuid` est une API COM appelée quand un GUID doit être créé. Pour plus d’informations, consultez `CoCreateGuid` et les GUID dans la bibliothèque MSDN.
 
      Le projet parent stocke ce GUID dans son fichier de projet doit être récupéré à la prochaine fois qu’il est ouvert dans l’IDE. Consultez l’étape 4 pour plus d’informations relatives à l’appel des `AddVirtualProjectEX` pour récupérer le `guidProjectID` pour le projet enfant.
 
@@ -66,7 +67,7 @@ Lorsque vous créez un type de projet imbriqué il un plusieurs étapes supplém
      Étant donné que les projets parent et enfant sont instanciés par programme, vous pouvez définir des propriétés pour les projets imbriqués à ce stade.
 
     > [!NOTE]
-    >  Non seulement vous recevez les informations de contexte à partir du projet imbriqué, mais vous pouvez également demander si le projet parent est n’importe quel contexte de cet élément en vérifiant <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. De cette façon, vous pouvez ajouter des attributs supplémentaires aide dynamique et les options de menu spécifiques à des projets individuels imbriqués.
+    > Non seulement vous recevez les informations de contexte à partir du projet imbriqué, mais vous pouvez également demander si le projet parent est n’importe quel contexte de cet élément en vérifiant <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. De cette façon, vous pouvez ajouter des attributs supplémentaires aide dynamique et les options de menu spécifiques à des projets individuels imbriqués.
 
 10. La hiérarchie est générée pour l’affichage dans l’Explorateur de solutions avec un appel à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> (méthode).
 
@@ -78,15 +79,12 @@ Lorsque vous créez un type de projet imbriqué il un plusieurs étapes supplém
 
      Quand un projet imbriqué est fermé, car l’utilisateur a fermé la solution ou spécifique du projet lui-même, l’autre méthode sur `IVsParentProject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>, est appelée. Le projet parent encapsule les appels à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> méthode avec la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> méthodes pour notifier les écouteurs d’événements de la solution que les projets imbriqués sont fermées.
 
- Les rubriques suivantes traitent avec plusieurs autres concepts à prendre en compte lorsque vous implémentez les projets imbriqués :
+Les rubriques suivantes traitent avec plusieurs autres concepts à prendre en compte lorsque vous implémentez les projets imbriqués :
 
- [Considérations pour décharger et recharger des projets imbriqués](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
-
- [Prise en charge de l’Assistant pour les projets imbriqués](../../extensibility/internals/wizard-support-for-nested-projects.md)
-
- [Implémentation de la gestion des commandes pour les projets imbriqués](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
-
- [Filtrage de la boîte de dialogue AddItem pour les projets imbriqués](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
+- [Considérations pour décharger et recharger des projets imbriqués](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [Prise en charge de l’Assistant pour les projets imbriqués](../../extensibility/internals/wizard-support-for-nested-projects.md)
+- [Implémentation de la gestion des commandes pour les projets imbriqués](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
+- [Filtrage de la boîte de dialogue AddItem pour les projets imbriqués](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
 ## <a name="see-also"></a>Voir aussi
 
