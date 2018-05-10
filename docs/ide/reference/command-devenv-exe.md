@@ -13,23 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 058c03b439e1bdf32570332d9d5913f47e8f542b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c21402c3b2b71372aaf170c68c65777eba4e95bf
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 Exécute la commande spécifiée après le lancement de l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```cmd
 devenv /command CommandName
 ```
 
 ## <a name="arguments"></a>Arguments
- `CommandName` (obligatoire). Nom complet d’une commande [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ou de son alias, entouré de guillemets doubles. Pour plus d’informations sur la syntaxe des commandes et des alias, consultez [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md).
+ `CommandName` Obligatoire. Nom complet d’une commande [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ou de son alias, entouré de guillemets doubles. Pour plus d’informations sur la syntaxe des commandes et des alias, consultez [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Notes
  Une fois le démarrage terminé, l’IDE exécute la commande nommée. Si vous utilisez ce commutateur, l’IDE n’affiche pas la page de démarrage de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lors du démarrage.
@@ -39,7 +39,7 @@ devenv /command CommandName
 ## <a name="example"></a>Exemple
  Cet exemple lance [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et exécute automatiquement la macro Open Favorite Files.
 
-```
+```cmd
 devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
 ```
 

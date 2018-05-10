@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 314aedd06755fba89c1e7e427613b0cad4e81b12
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: bc3f85e776fa7ec45bd157a9cffe99f6ac0b1aac
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installer la prise en charge de Python dans Visual Studio
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/27/2018
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Identifier manuellement un interpréteur Python existant](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+- [Identifier manuellement un interpréteur Python existant](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 - [Installer la prise en charge de Python dans Visual Studio 2015 et antérieur](installing-python-support-in-visual-studio.md).
 - [Emplacements d’installation](installing-python-support-in-visual-studio.md#install-locations).
 

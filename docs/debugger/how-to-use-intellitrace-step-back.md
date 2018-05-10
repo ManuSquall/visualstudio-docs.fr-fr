@@ -1,8 +1,8 @@
 ---
-title: Afficher un instantané à l’aide d’IntelliTrace étape-back - Visual Studio | Documents Microsoft
+title: Afficher un instantané à l’aide d’IntelliTrace étape différée
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
-ms.date: 12/06/2017
+ms.date: 05/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf930fce97b880703416481dabd4ee4eec1d0f7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68fec4e10d172f79908e57828c542a444d081b50
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Étape différéent afficher des instantanés à l’aide d’IntelliTrace dans Visual Studio
 
@@ -38,9 +38,20 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
     ![Activer le mode d’événements IntelliTrace et les instantanés](../debugger/media/intellitrace-enable-snapshots.png "mode activer les événements IntelliTrace et les instantanés")
 
+1. Si vous souhaitez configurer des options pour les instantanés de l’affichage sur les exceptions, choisissez **IntelliTrace** > **avancé** à partir de la **Options** boîte de dialogue.
+
+    Ces options sont disponibles à partir de Visual Studio 2017 Enterprise version 15.7.
+
+    ![Configurer le comportement pour les instantanés sur les exceptions](../debugger/media/intellitrace-enable-snapshots-on-exceptions.png)
+
+    Lorsque vous activez les événements et les instantanés, prise d’instantanés sur les exceptions est également activée par défaut. Vous pouvez désactiver les captures instantanées sur les exceptions en désélectionnant **collecter des instantanés sur les événements d’exception**. Lorsque cette fonctionnalité est activée, les instantanés sont créés pour les exceptions non gérées. Pour les exceptions, les instantanés sont créés uniquement si l’exception est levée et si elle n’est pas un lever à nouveau d’une exception précédemment levée. Vous pouvez définir un nombre maximal d’instantanés sur les exceptions en sélectionnant une valeur dans la liste déroulante. La valeur maximale s’applique à chaque fois que votre application passe en mode d’arrêt (par exemple, lorsque votre application accède à un point d’arrêt).
+
+    > [!NOTE]
+    > Instantanés uniquement pour les événements d’exception par IntelliTrace. Vous pouvez spécifier quels événements IntelliTrace enregistre en sélectionnant **outils** > **Options** > **événements IntelliTrace**.
+
 1. Dans votre projet, définissez un ou plusieurs points d’arrêt et démarrer le débogage (appuyez sur **F5**), ou démarrer le débogage en parcourant votre code (**F10** ou **F11**).
 
-    IntelliTrace prend un instantané du processus de l’application de débogueur de chaque événement d’étape et le point d’arrêt. Ces événements sont enregistrés dans le **événements** onglet dans le **outils de Diagnostic** fenêtre, ainsi que d’autres événements IntelliTrace. Pour ouvrir cette fenêtre, choisissez **déboguer** > **Windows** > **afficher les outils de Diagnostic**.
+    IntelliTrace prend un instantané du processus de l’application sur chaque étape du débogueur, un événement de point d’arrêt et un événement d’exception non gérée. Ces événements sont enregistrés dans le **événements** onglet dans le **outils de Diagnostic** fenêtre, ainsi que d’autres événements IntelliTrace. Pour ouvrir cette fenêtre, choisissez **déboguer** > **Windows** > **afficher les outils de Diagnostic**.
 
     Une icône de caméra s’affiche en regard des événements pour lesquels les instantanés sont disponibles. 
 

@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f10479e0ce6fa08e888d92556ff47b5d82af66
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fd58c1ada38f8d79402bb08564bf91de23fb086
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Création d’une Extension avec un éditeur de modèle d’élément
 Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK Visual Studio pour créer des extensions d’éditeur de base qui ajoutent des classifieurs, motifs et les marges pour l’éditeur. Les modèles d’élément de l’éditeur sont disponibles pour les projets Visual c# ou Visual Basic VSIX.  
@@ -36,7 +36,7 @@ Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK Vis
   
     -   EditorClassifier1.cs contient la `EditorClassifier1` classe.  
   
-    -   EditorClassifier1ClassificationDefinition.cs contient la `OEditorClassifier1ClassificationDefinition` classe.  
+    -   EditorClassifier1ClassificationDefinition.cs contient la `EditorClassifier1ClassificationDefinition` classe.  
   
     -   EditorClassifier1Format.cs contient la `EditorClassifier1Format` classe.  
   
@@ -57,7 +57,7 @@ Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK Vis
   
     -   TextAdornment1.cs contient la `TextAdornment1` classe.  
   
-    -   extAdornment1TextViewCreationListener.cs contient la `TextAdornment1TextViewCreationListener` classe.  
+    -   TextAdornment1TextViewCreationListener.cs contient la `TextAdornment1TextViewCreationListener` classe.  
   
 4.  Générez le projet et commencez le débogage. L’instance expérimentale s’affiche. Si vous ouvrez un fichier texte, « a » caractères dans le texte sont indiqués en rouge sur un arrière-plan bleu.  
   
@@ -88,7 +88,7 @@ Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK Vis
   
 1.  Dans le **nouveau projet** boîte de dialogue, développez **Visual C#** ou **Visual Basic** puis cliquez sur **extensibilité**. Dans le **modèles** volet, sélectionnez **projet VSIX**. Dans la zone **Nom**, tapez `MarginExtension`. Cliquez sur **OK**.  
   
-2.  Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Accédez à Visual c# **extensibilité** nœud et sélectionnez **ornement de la fenêtre d’affichage de l’éditeur**. Laissez le nom de fichier par défaut (EditorMargin1.cs/vb).  
+2.  Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Accédez à Visual c# **extensibilité** nœud et sélectionnez **marge de l’éditeur**. Laissez le nom de fichier par défaut (EditorMargin1.cs/vb).  
   
 3.  Il existe deux fichiers de code, comme suit :  
   

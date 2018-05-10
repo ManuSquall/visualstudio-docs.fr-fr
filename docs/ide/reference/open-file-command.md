@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd75d32021f2dd3f6ac1ef76772ea30376ea1b8a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d238370586a9256d91f89f06fddbe3c58abc27e8
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="open-file-command"></a>Ouvrir un fichier, commande
 Ouvre un fichier existant et vous permet de spécifier un éditeur.
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```cmd
 File.OpenFile filename [/e:editorname]
 ```
 
@@ -45,7 +45,7 @@ File.OpenFile filename [/e:editorname]
 
  Par exemple, pour ouvrir un fichier dans l’éditeur de code source, entrez les informations suivantes pour l’argument /e:`editorname`.
 
-```
+```cmd
 /e:"Source Code (text) Editor"
 ```
 
@@ -55,7 +55,7 @@ File.OpenFile filename [/e:editorname]
 ## <a name="example"></a>Exemple
  Cet exemple ouvre la feuille de style « Test1.css » dans l’éditeur de code source.
 
-```
+```cmd
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 

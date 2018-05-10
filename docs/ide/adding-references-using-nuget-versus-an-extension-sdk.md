@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49854e401bdefa4da776f888fff8cff6fdb0d136
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6956ebbd1220be17037b3c9a3d7bd3174872134d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Ajout de références avec NuGet ou un kit SDK d’extension
 
@@ -50,7 +50,7 @@ Le tableau suivant vous permet de comparer les fonctionnalités de référenceme
 |Le mécanisme s’intègre aux manifestes d’application.|Y|Le kit SDK doit passer les concepts propres au [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] pour que l’empaquetage et F5 fonctionnent correctement avec les kits SDK disponibles dans le [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)].|Y|Le contenu NuGet devient partie intégrante du projet. Aucune attention particulière n’est nécessaire pour F5.|
 |Le mécanisme déploie les fichiers autres que les fichiers de référence (par exemple, il déploie le framework de test sur lequel exécuter des tests d’applications [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]).|Y|Si vous déposez les fichiers dans le dossier *\redist*, ceux-ci sont automatiquement déployés.|Y||
 |Le mécanisme ajoute automatiquement les kits SDK de plateforme dans l’IDE Visual Studio.|Y|Si vous déposez le kit SDK [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou le kit SDK Windows Phone dans un emplacement spécifique avec une disposition spécifique, celui-ci est automatiquement intégré à toutes les fonctionnalités de Visual Studio.|N||
-|Le mécanisme prend en charge un ordinateur de développeur propre. (Autrement dit, aucune installation n’est nécessaire, et la récupération simple à partir du contrôle de code source fonctionnera.)|N|Étant donné que vous référencez un kit SDK, vous devez l’archiver séparément de votre solution. Vous pouvez archiver le kit SDK à partir des deux emplacements par défaut hors du Registre à partir desquels MSBuild itère les kits SDK (pour plus d’informations, consultez [Création d’un kit de développement logiciel](../extensibility/creating-a-software-development-kit.md)). Autre solution : si un emplacement personnalisé se compose de kits SDK, vous pouvez spécifier le code suivant dans le fichier projet :<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> Ensuite, archivez les kits SDK à cet emplacement.|Y|Vous pouvez extraire la solution, et Visual Studio reconnaît immédiatement les fichiers et agit en conséquence.|
+|Le mécanisme prend en charge un ordinateur de développeur propre. (Autrement dit, aucune installation n’est nécessaire, et la récupération simple à partir du contrôle de code source fonctionnera.)|N|Étant donné que vous référencez un kit SDK, vous devez l’archiver séparément de votre solution. Vous pouvez archiver le kit SDK à partir des deux emplacements par défaut hors du Registre à partir desquels MSBuild itère les kits SDK (pour plus d’informations, consultez [Création d’un kit de développement logiciel](../extensibility/creating-a-software-development-kit.md)). Autre solution : si un emplacement personnalisé se compose de kits SDK, vous pouvez spécifier le code suivant dans le fichier projet :<br /><br />`<PropertyGroup>`<br />&nbsp;&nbsp;`<SDKReferenceDirectoryRoot>`<br />&nbsp;&nbsp;`C:\MySDKs`<br />&nbsp;&nbsp;`</SDKReferenceDirectoryRoot>`<br />`</PropertyGroup>`<br /><br /> Ensuite, archivez les kits SDK à cet emplacement.|Y|Vous pouvez extraire la solution, et Visual Studio reconnaît immédiatement les fichiers et agit en conséquence.|
 |Vous pouvez rejoindre une grande communauté d’auteurs de packages.|N/A|La communauté est nouvelle.|Y||
 |Vous pouvez rejoindre une grande communauté de consommateurs de packages.|N/A|La communauté est nouvelle.|Y||
 |Vous pouvez rejoindre un écosystème de partenaires (galeries personnalisées, dépôts, etc.).|N/A|Parmi les dépôts disponibles, citons la Place de marché Visual Studio, le Centre de téléchargement Microsoft et [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|Y||

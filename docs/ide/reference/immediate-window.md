@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f27b11142880f71ed653371bd23ae01e51f50b3b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="immediate-window"></a>Exécution (fenêtre)
 La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressions, exécuter des instructions, imprimer les valeurs des variables, etc. Elle vous permet d’entrer des expressions qui doivent être évaluées ou exécutées par le langage de développement lors du processus de débogage. Pour afficher la fenêtre **Exécution**, ouvrez un projet à modifier, puis choisissez **Fenêtres** dans le menu **Déboguer** et sélectionnez **Exécution**, ou appuyez sur Ctrl+Alt+I.
@@ -32,13 +32,13 @@ La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressi
 ## <a name="displaying-the-values-of-variables"></a>Affichage des valeurs de variables
  Cette fenêtre peut être particulièrement utile lors du débogage d’une application. Par exemple, pour vérifier la valeur d’une variable `varA`, vous pouvez utiliser la [commande Imprimer](../../ide/reference/print-command.md) :
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  Le point d’interrogation (?) est un alias pour `Debug.Print` et cette commande peut donc également s’écrire comme suit :
 
-```
+```cmd
 >? varA
 ```
 
@@ -100,7 +100,7 @@ Vous ne pouvez pas utiliser l’évaluation des expressions au moment du design 
 
  Dans la fenêtre **Exécution**, un signe égal (=) est interprété comme un opérateur d’assignation. Ainsi, la commande
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 
@@ -108,7 +108,7 @@ Vous ne pouvez pas utiliser l’évaluation des expressions au moment du design 
 
  En revanche, dans la fenêtre **Commande**, un signe égal (=) est interprété comme un opérateur de comparaison. Vous ne pouvez pas utiliser d’opérations d’assignation dans la fenêtre **Commande**. Ainsi, si les valeurs des variables `varA` et `varB` sont différentes, la commande
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 

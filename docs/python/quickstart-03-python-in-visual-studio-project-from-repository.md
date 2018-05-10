@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d66c3b5b62edc6963d92e27bcf6a94889741b27f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8cad15dcb5bb7c9c8a774f645789d26e0e0ffd7e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Démarrage rapide : Clonage d’un dépôt de code Python dans Visual Studio
 
@@ -78,6 +78,6 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Identifier manuellement un interpréteur Python existant](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+- [Identifier manuellement un interpréteur Python existant](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 - [Installer la prise en charge de Python dans Visual Studio 2015 et antérieur](installing-python-support-in-visual-studio.md).
 - [Emplacements d’installation](installing-python-support-in-visual-studio.md#install-locations).

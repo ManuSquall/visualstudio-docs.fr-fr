@@ -5,7 +5,7 @@
   items:
     - name: Installer les interpréteurs Python
       href: installing-python-interpreters.md
-- name: Guides de démarrage rapide
+- name: Démarrages rapides
   items:
     - name: Créer une application web avec Flask
       href: ../ide/quickstart-python.md?context=visualstudio/python/default
@@ -19,20 +19,36 @@
       href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
 - name: Didacticiels
   items:
-    - name: 0 - Installer la prise en charge de Python
-      href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-    - name: 1 - Créer un projet Python
-      href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-    - name: 2 - Écriture et exécution de code
-      href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
-    - name: 3 - Utilisation de la fenêtre REPL interactive
-      href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
-    - name: 4 - Exécution de code dans le débogueur
-      href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
-    - name: 5 - Installation des packages et gestion des environnements Python
-      href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
-    - name: 6 - Utilisation de Git
-      href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Python dans Visual Studio
+      items:
+        - name: 0 - Installer la prise en charge de Python
+          href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+        - name: 1 - Créer un projet Python
+          href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
+        - name: 2 - Écriture et exécution de code
+          href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
+        - name: 3 - Utilisation de la fenêtre REPL interactive
+          href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
+        - name: 4 - Exécution de code dans le débogueur
+          href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: 5 - Installation des packages et gestion des environnements Python
+          href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
+        - name: 6 - Utilisation de Git
+          href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: En savoir plus sur Django dans Visual Studio
+      items:
+        - name: 1 - créer un projet et une solution
+          href: learn-django-in-visual-studio-step-01-project-and-solution.md
+        - name: 2 - créer une application Django
+          href: learn-django-in-visual-studio-step-02-create-an-app.md
+        - name: 3 - servir des fichiers statiques et ajouter des pages
+          href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
+        - name: 4 - utiliser le modèle de projet Web Django
+          href: learn-django-in-visual-studio-step-04-full-django-project-template.md
+        - name: 5 - authentifier les utilisateurs
+          href: learn-django-in-visual-studio-step-05-django-authentication.md
+        - name: 6 - utiliser le modèle de projet Web de sondages Django
+          href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
 - name: Concepts
   items:
     - name: Projets Python
@@ -44,7 +60,7 @@
           href: python-django-web-application-project-template.md
         - name: Modèle de service cloud Azure
           href: python-azure-cloud-service-project-template.md
-    - name: Kit SDK Azure pour Python
+    - name: Kit de développement logiciel (SDK) Azure pour Python
       href: azure-sdk-for-python.md
 - name: Guides pratiques
   items:
@@ -106,5 +122,7 @@
       href: using-python-cookiecutter-templates.md
 - name: Référence
   items:
+    - name: Modèles d'élément
+      href: python-item-templates.md
     - name: Options
       href: python-support-options-and-settings-in-visual-studio.md

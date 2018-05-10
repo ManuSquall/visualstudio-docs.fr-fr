@@ -15,13 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f6c2dffe793928532d36b539ba73914ecf0c24dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
+
 Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](add-new-data-sources.md) sur un concepteur, une attention particulière entre en jeu : les noms de colonnes dans les légendes sont reformatés dans une chaîne plus lisible lorsque deux ou plusieurs mots sont identifiés comme étant concaténés. Vous pouvez personnaliser la façon dans lequel ces étiquettes sont créées en définissant le **SmartCaptionExpression**, **SmartCaptionReplacement**, et **SmartCaptionSuffix** valeurs dans le **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data concepteurs** clé de Registre.
 
 > [!NOTE]
@@ -48,15 +49,15 @@ Le tableau suivant répertorie les paramètres internes par défaut pour ces val
 > [!CAUTION]
 > Vous devez être très prudent lors de l’exécution de tout élément dans l’Éditeur du Registre. Sauvegarder le Registre avant de le modifier. Si vous utilisez l’Éditeur du Registre correctement, vous pouvez provoquer de graves problèmes qui peuvent vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes à l’aide de l’Éditeur du Registre correctement peuvent être résolus. Les opérations exécutées dans l'Éditeur du Registre le sont à vos propres risques.
 >
->  L’article suivant de la base de connaissances contient des instructions pour la sauvegarde, de modification et de restauration du Registre : [Description du Registre de Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us ; 256986)
+> L’article suivant de la base de connaissances contient des instructions pour la sauvegarde, de modification et de restauration du Registre : [Description du Registre de Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us ; 256986)
 
-### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Pour modifier le comportement de sous-titrage actif de la fenêtre Sources de données
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modifier le comportement de sous-titrage actif de la fenêtre Sources de données
 
 1.  Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis **exécuter**.
 
 2.  Type `regedit` dans les **exécuter** boîte de dialogue, puis cliquez sur **OK**.
 
-3.  Développez le **HKEY_CURRENT_USER**, **logiciel*, **Microsoft**, **VisualStudio** nœud.
+3.  Développez le **HKEY_CURRENT_USER**, **logiciel**, **Microsoft**, **VisualStudio** nœud.
 
 7.  Avec le bouton droit le **15.0** nœud et créer un nouveau **clé** nommé `Data Designers`.
 
@@ -80,7 +81,7 @@ Le tableau suivant répertorie les paramètres internes par défaut pour ces val
 
     La prochaine fois que vous faites glisser des éléments à partir de la **des Sources de données** fenêtre, les légendes sont créés à l’aide des nouvelles valeurs de Registre fournies.
 
-### <a name="to-turn-off-the-smart-captioning-feature"></a>Pour désactiver la fonctionnalité de sous-titrage Active
+## <a name="turn-off-the-smart-captioning-feature"></a>Désactiver la fonctionnalité de sous-titrage Active
 
 1.  Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis **exécuter**.
 

@@ -3,13 +3,13 @@ title: Activer l’abonnement pour Visual Studio pour Mac
 description: Cet article décrit comment utiliser votre compte Microsoft pour activer votre abonnement et déverrouiller les fonctionnalités de Visual Studio pour Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 4d4e2485b1fe536cae92a419b3d0f1a9e20556c8
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: dcfaee4d086fd5cd9d8ce85f365e63fbb21f8a9e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="enable-subscription"></a>Activer l’abonnement
 

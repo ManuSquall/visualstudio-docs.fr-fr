@@ -15,30 +15,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ec281b508842424fbfb74bbe0726bb2ec47abe2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b4647fd5ca2cc5199c1f9b85e5237dd57d95dbbd
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-existing-item-command"></a>Ajouter un élément existant, commande
 Ajoute un fichier existant à la solution actuelle et l’ouvre.
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```cmd
 File.AddExistingItem filename [/e:editorname]
 ```
 
 ## <a name="arguments"></a>Arguments
- `filename` (obligatoire). Chemin complet et nom de fichier, avec l’extension, de l’élément à ajouter à la solution actuelle. Si le chemin ou le nom de fichier contient des espaces, placez le chemin complet entre guillemets.
+ `filename` Obligatoire. Chemin complet et nom de fichier, avec l’extension, de l’élément à ajouter à la solution actuelle. Si le chemin ou le nom de fichier contient des espaces, placez le chemin complet entre guillemets.
 
 ## <a name="switches"></a>Commutateurs
  /e: `editorname` (facultatif). Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.
 
  La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu’ils apparaissent dans la **boîte de dialogue Ouvrir avec**, entre guillemets. Par exemple, pour ouvrir une feuille de style dans l’éditeur de code source, entrez les informations suivantes pour l’argument /e:`editorname`.
 
-```
+```cmd
 /e:"Source Code (text) Editor"
 ```
 
@@ -48,7 +48,7 @@ File.AddExistingItem filename [/e:editorname]
 ## <a name="example"></a>Exemple
  Cet exemple ajoute le fichier Form1.frm à la solution actuelle.
 
-```
+```cmd
 >File.AddExistingItem "C:\public\solution files\Form1.frm"
 ```
 
