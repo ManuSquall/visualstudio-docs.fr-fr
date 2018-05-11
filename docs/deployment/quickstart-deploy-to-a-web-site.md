@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 176bb028d176ce789977149f9e0380bf1ca284fc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Publier une application web ou une application .NET Core sur un site web à l’aide de l’outil de publication de Visual Studio
 
@@ -24,13 +24,19 @@ Vous pouvez utiliser la **publier** outil pour publier des applications ASP.NET 
 
 Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core, .NET Core et Python dans Visual Studio. Pour Node.js, les étapes sont prises en charge, mais l’interface utilisateur est différente. Pour Node.js, les étapes sont pris en charge, mais l’interface utilisateur est différent.
 
+## <a name="prerequisites"></a>Prérequis
+
+* Vous devez disposer de Visual Studio 2017 installé et le **ASP.NET** et **.NET Framework** charge de travail de développement. Pour une application .NET Core, vous devez également le **.NET Core** la charge de travail.
+
+    Si vous n’avez pas encore installé Visual Studio, installez-le gratuitement [ici](http://www.visualstudio.com).
+
 ## <a name="create-a-new-project"></a>Créer un nouveau projet 
 
 1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 
 1. Sous **Visual C#** ou **Visual Basic**, choisissez **Web**, puis dans le volet central, choisissez soit **ASP.NET Web Applications (.NET Framework)** ou (c# uniquement) **Application ASP.NET Core Web**, puis cliquez sur **OK**.
 
-1. Choisissez **MVC**, assurez-vous que **aucune authentification** est sélectionné, puis cliquez sur **OK**.
+1. Choisissez **MVC** (ou choisissez **l’Application Web (Model-View-Controller)** pour .NET Core), assurez-vous que **aucune authentification** est sélectionné, puis cliquez sur **OK** .
 
 1. Tapez un nom tel que **MyWebApp** et cliquez sur **OK**.
 
@@ -44,9 +50,11 @@ Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core, .NET Core et 
 
     ![Choisissez publier](../deployment/media/quickstart-publish-aspnet.png "choisissez Publier")
 
-1. Dans le **publier** volet, choisissez **IIS, FTP, etc.**.
+1. Si vous avez déjà configuré des profils de publication, le **publier** volet s’affiche. Cliquez sur **créer nouveau profil**.
 
-    ![Choisissez IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png "IIS de choisir, FTP, etc.")
+1. Dans le **choisir une cible de publication** boîte de dialogue, choisissez **IIS, FTP, etc**.
+
+    ![Choisissez IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png "IIS de choisir, FTP, etc..")
 
 1. Cliquez sur **Publier**.
 
@@ -56,7 +64,7 @@ Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core, .NET Core et 
 
 1. Dans le **méthode de publication** champ, choisissez une méthode comme **Web Deploy** ou **FTP**.
 
-    Ensuite, les paramètres que vous voyez correspondent à votre méthode de publication.
+    Ensuite, les paramètres que vous voyez correspondent à votre méthode de publication. Web Deploy simplifie le déploiement d’applications Web et sites Web aux serveurs IIS et doit être installé en tant qu’application sur le serveur. Utilisez le [Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx) pour l’installer.
 
 1. Configurez les paramètres requis pour la méthode de publication, cliquez sur **valider la connexion**.
 
@@ -74,4 +82,7 @@ Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core, .NET Core et 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Déployer ASP.NET sur IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+Dans ce démarrage rapide, vous avez appris à utiliser Visual Studio pour créer un profil de publication. Vous pouvez également configurer une publication de profil en important les paramètres de publication.
+
+> [!div class="nextstepaction"]
+> [Importation des paramètres de publication et déployer sur IIS](tutorial-import-publish-settings-iis.md)

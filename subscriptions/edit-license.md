@@ -9,20 +9,18 @@ description: Découvrez comment les administrateurs peuvent modifier des attribu
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9ea5f6bc562ce520be08728facfb6099df95ca4c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Modification des attributions d’abonnements Visual Studio
 
-En tant qu’administrateur des abonnements, vous avez la possibilité d’apporter des modifications aux abonnements attribués à des personnes au sein de votre organisation.  Cet article décrit les types de modifications que vous pouvez apporter et indique les étapes nécessaires. 
+En tant qu’administrateur des abonnements, vous pouvez apporter des modifications aux abonnements attribués à des personnes au sein de votre organisation.  Cet article décrit les types de modifications que vous pouvez apporter et indique les étapes à suivre. 
 
 ## <a name="making-changes-to-subscriber-information"></a>Modifier les informations d’un abonné
 Vous pouvez modifier les informations d’un abonné pour corriger des erreurs ou mettre à jour les informations le concernant. 
-> [!NOTE]
-> Le changement de l’adresse e-mail d’un abonné entraîne la réinitialisation de tous les avantages existants.
 
 Pour modifier les informations d’un abonné, sélectionnez les points de suspension (...) à côté de l’adresse e-mail de l’abonné en pointant dessus. Une liste déroulante s’affiche.  Sélectionnez **Modifier** pour modifier les informations de l’abonné. Vous pouvez également double-cliquer sur la ligne de l’abonné dans la grille pour ouvrir la fenêtre d’édition.
 

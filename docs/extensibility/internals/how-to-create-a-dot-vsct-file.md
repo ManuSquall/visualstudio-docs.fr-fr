@@ -63,7 +63,7 @@ Vous pouvez créer un fichier .vsct XML à partir d’un fichier source .ctc de 
   
 1.  Obtenez une copie du langage Perl.  
   
-2.  Obtenez une copie du script Perl ConvertCTCToVSCT.pl, généralement situé dans le  *\<chemin d’installation de Visual Studio SDK >*\VisualStudioIntegration\Tools\bin dossier.  
+2.  Obtenez une copie du script Perl ConvertCTCToVSCT.pl, généralement situé dans le  *\<chemin d’installation de Visual Studio SDK >* \VisualStudioIntegration\Tools\bin dossier.  
   
 3.  Obtenez une copie du fichier source .ctc à convertir.  
   
@@ -98,7 +98,7 @@ Vous pouvez créer un fichier .vsct XML à partir d’un fichier .cto binaire ex
   
 3.  À l’invite de commandes Visual Studio, accédez au répertoire qui contient les fichiers .cto et .ctsym.  
   
-4.  Type **vsct.exe** *ctofilename *** .cto** * vsctfilename***.vsct -S***symfilename ***.ctsym**.  
+4.  Type **vsct.exe** *ctofilename *** .cto** * vsctfilename ***.vsct -S***symfilename ***.ctsym**.  
   
      `ctofilename` est le nom du fichier .cto, `vsctfilename` est le nom du fichier vsct que vous souhaitez créer, et `symfilename` est le nom du fichier .ctsym.  
   

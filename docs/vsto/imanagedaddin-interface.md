@@ -58,13 +58,13 @@ interface IManagedAddin : IUnknown
   
 1.  L’application découvre les compléments VSTO en recherchant des entrées sous la clé de Registre suivante :  
   
-     HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nom de l’application >*\Addins\  
+     HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nom de l’application >* \Addins\  
   
      Chaque entrée sous cette clé de Registre est un ID unique du complément VSTO. En règle générale, il s’agit du nom de l’assembly du complément VSTO.  
   
 2.  L’application cherche une entrée `Manifest` sous l’entrée de chaque complément VSTO.  
   
-     Compléments VSTO gérés peuvent stocker le chemin d’accès complet d’un manifeste dans le `Manifest` entrée sous HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nom de l’application >*\Addins\\  *\<id_complément >*. Un manifeste est un fichier (en général un fichier XML) qui fournit des informations utilisées pour aider à charger le complément VSTO.  
+     Compléments VSTO gérés peuvent stocker le chemin d’accès complet d’un manifeste dans le `Manifest` entrée sous HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nom de l’application >* \Addins\\  *\<id_complément >*. Un manifeste est un fichier (en général un fichier XML) qui fournit des informations utilisées pour aider à charger le complément VSTO.  
   
 3.  Si l’application trouve une entrée `Manifest` , elle essaie de charger un composant de chargeur de complément VSTO géré. Pour cela, l’application essaie de créer un objet COM qui implémente l’interface IManagedAddin.  
   
