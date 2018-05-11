@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: fc8e657f6fb67884bd12de3f8e65c78077fa9b2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Débogage distant ASP.NET Core sur IIS dans Azure dans Visual Studio 2017
 
@@ -83,18 +83,19 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 
 Vous pouvez créer une machine virtuelle Azure pour Windows Server et puis installer et configurer IIS et les autres composants logiciels requis. Cela prend plus de temps que le déploiement à un Service d’application Azure et requiert que vous suivez les étapes restantes dans ce didacticiel.
 
-Tout d’abord, suivez toutes les étapes décrites dans [installer et exécuter IIS](/azure/virtual-machines/virtual-machines-windows-hero-role).
+Tout d’abord, suivez toutes les étapes décrites dans [installer et exécuter IIS](/azure/virtual-machines/windows/quick-create-portal).
 
 Lorsque vous ouvrez le port 80 dans le groupe de sécurité réseau, vous devez également ouvrir le port 4022 pour le débogueur distant. De cette façon, vous ne devez ouvrir ultérieurement.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Mettre à jour les paramètres de sécurité de navigateur sur Windows Server
 
-En fonction des paramètres de sécurité de votre navigateur, il peut gagner du temps d’ajouter les sites de confiance suivants à votre navigateur vous pouvez facilement télécharger le logiciel décrit dans ce didacticiel. Accès à ces sites peuvent être nécessaires :
+En fonction des paramètres de sécurité de votre navigateur, il peut gagner du temps à ajouter les sites de confiance suivants à votre navigateur, vous pouvez télécharger plus rapidement le logiciel décrit dans ce didacticiel. Accès à ces sites peuvent être nécessaires :
 
 - Microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- IIS.NET
 
 Si vous utilisez Internet Explorer, vous pouvez ajouter les sites de confiance en accédant à **Options Internet > sécurité > Sites de confiance > Sites**. Ces étapes sont différents pour d’autres navigateurs. (Si vous avez besoin télécharger une version antérieure du débogueur distant à partir de my.visualstudio.com, certains sites de confiance supplémentaires sont requis pour se connecter).
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Tout d’abord consulter le débogueur
 description: Prendre un coup de œil les différentes fonctionnalités du débogueur Visual Studio.
 ms.custom: mvc

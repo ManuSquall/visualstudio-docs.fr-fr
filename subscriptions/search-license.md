@@ -9,11 +9,11 @@ description: Découvrez comment les administrateurs peuvent rechercher des abonn
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 45786b846cb62f5c02d6cc1e0e1c9fcb7dbb1993
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9e6d91ae6b7a2c77ab7a19dc9d689000fa866f17
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Recherche et filtrage des abonnés dans les abonnements Visual Studio
 Le portail d’administration des abonnements Visual Studio vous permet de rechercher un groupe spécifique d’abonnés selon différents critères. Vous pouvez filtrer la liste des abonnés par nom, adresse e-mail, niveau d’abonnement et différents autres critères. 
@@ -23,6 +23,5 @@ Le portail d’administration des abonnements Visual Studio vous permet de reche
     ![Filtrer les abonnés](_img\edit-license\filter-list.png)
 
 2.  Vous voyez apparaître de nombreux champs, que vous pouvez utiliser comme critères de filtre. Sélectionnez les critères souhaités que vous voulez utiliser comme base de votre recherche, puis cliquez sur **Filtrer**. Une liste d’abonnés correspondant aux critères choisis s’affiche.
-
-    ![Rechercher des abonnés](_img\search-filter\search-filter-find.png)
+![Rechercher des abonnés](_img\search-filter\search-filter-find.png)
 
