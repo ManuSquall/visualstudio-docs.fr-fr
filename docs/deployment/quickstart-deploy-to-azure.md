@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: dd3fa975070656f54a48452a50e51c172d51c785
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5c172ff3ec3033b50815efdb0b4ee293853ab1e
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Publier une application ASP.NET ou ASP.NET Core pour le Service d’applications Azure à l’aide de Visual Studio
 
@@ -24,13 +24,19 @@ Vous pouvez utiliser la **publier** outil pour publier des applications ASP.NET,
 
 Si vous n’avez pas déjà un compte Azure, vous pouvez [Inscrivez-vous ici](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
+## <a name="prerequisites"></a>Prérequis
+
+* Vous devez disposer de Visual Studio 2017 installé et le **ASP.NET** et **.NET Framework** charge de travail de développement. Pour une application .NET Core, vous devez également le **.NET Core** la charge de travail.
+
+    Si vous n’avez pas encore installé Visual Studio, installez-le gratuitement [ici](http://www.visualstudio.com).
+
 ## <a name="create-a-new-project"></a>Créer un nouveau projet 
 
 1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 
 1. Sous **Visual C#** ou **Visual Basic**, choisissez **Web**, puis dans le volet central, choisissez soit **ASP.NET Web Applications (.NET Framework)** ou (c# uniquement) **Application ASP.NET Core Web**, puis cliquez sur **OK**.
 
-1. Choisissez **MVC**, assurez-vous que **aucune authentification** est sélectionné, puis cliquez sur **OK**.
+1. Choisissez **MVC** (ou choisissez **l’Application Web (Model-View-Controller)** pour .NET Core), assurez-vous que **aucune authentification** est sélectionné, puis cliquez sur **OK** .
 
 1. Tapez un nom tel que **MyWebApp** et cliquez sur **OK**.
 
@@ -44,7 +50,9 @@ Si vous n’avez pas déjà un compte Azure, vous pouvez [Inscrivez-vous ici](ht
 
     ![Choisissez publier](../deployment/media/quickstart-publish-aspnet.png "choisissez Publier")
 
-1. Dans le **publier** volet, choisissez **Microsoft Azure App Service**.
+1. Si vous avez déjà configuré des profils de publication, le **publier** volet s’affiche. Cliquez sur **créer nouveau profil**.
+
+1. Dans le **choisir une cible de publication** boîte de dialogue, choisissez **du Service d’applications**.
 
     ![Choisissez le Service d’applications Azure](../deployment/media/quickstart-publish-azure.png "choisissez Azure App Service")
 
@@ -70,5 +78,7 @@ Si vous n’avez pas déjà un compte Azure, vous pouvez [Inscrivez-vous ici](ht
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Déployer une application ASP.NET Core dans Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
-- [Déploiement continu d’ASP.NET Core sur Azure avec Git](/aspnet/core/publishing/azure-continuous-deployment)
+Dans ce démarrage rapide, vous avez appris à utiliser Visual Studio pour créer un profil de publication pour un déploiement vers Azure. Vous pouvez également configurer une publication de profil en important les paramètres à partir d’Azure App Service de publication.
+
+> [!div class="nextstepaction"]
+> [Importation des paramètres de publication et le déployer vers Azure](tutorial-import-publish-settings-azure.md)

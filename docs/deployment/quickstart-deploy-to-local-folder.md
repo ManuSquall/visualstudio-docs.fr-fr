@@ -1,7 +1,7 @@
 ---
 title: Déployer vers un dossier local - Visual Studio | Documents Microsoft
 ms.custom: ''
-ms.date: 11/22/2017
+ms.date: 05/08/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 024d191628e413f07cd510595eac5c7d9fca085b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3b54a8fa30ef5eafcc5ebce5c81cc7b80be6fb6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Déployer une application web ou .NET Core vers un dossier local à l’aide de l’outil de publication de Visual Studio
 
@@ -24,11 +24,17 @@ Vous pouvez utiliser l'outil de **publication** pour publier votre application v
 
 Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core, .NET Core et Python dans Visual Studio. Pour Node.js, les étapes sont prises en charge, mais l’interface utilisateur est différente. Pour Node.js, les étapes sont pris en charge, mais l’interface utilisateur est différent.
 
+## <a name="prerequisites"></a>Prérequis
+
+* Vous devez disposer de Visual Studio 2017 installé et le **.NET Framework** et **.NET Core** la charge de travail de développement installé.
+
+    Si vous n’avez pas encore installé Visual Studio, installez-le gratuitement [ici](http://www.visualstudio.com).
+
 ## <a name="create-a-new-project"></a>Créer un nouveau projet 
 
 1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 
-1. Sous **Visual C#** ou **Visual Basic**, choisissez **.NET Core**, puis, dans le volet central, choisissez **Application console (.NET Core)**.
+1. Sous **Visual C#** ou **Visual Basic**, choisissez **.NET Core**, puis, dans le volet central **l’application Console (.NET Core)**.
 
 1. Tapez un nom tel que **MonApplicationLocale** et cliquez sur **OK**.
 
@@ -40,7 +46,9 @@ Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core, .NET Core et 
 
     ![Choisissez publier](../deployment/media/quickstart-publish.png "choisissez Publier")
 
-1. Dans le volet **Publier**, choisissez **Dossier**.
+1. Si vous avez déjà configuré des profils de publication, le **publier** volet s’affiche. Cliquez sur **créer nouveau profil**.
+
+1. Dans le **choisir une cible de publication** boîte de dialogue, choisissez **dossier**.
 
     ![Choisissez le dossier](../deployment/media/quickstart-publish-folder.png "dossier")
 
