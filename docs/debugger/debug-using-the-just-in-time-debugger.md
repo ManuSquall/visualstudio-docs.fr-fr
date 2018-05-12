@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6abdd96f740d36b4f6806b16e6cdd9ba946cb95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 17dc34cd030bf2eab430872a191424fb657d6cd0
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Déboguer à l’aide du débogueur juste à temps dans Visual Studio
 Le débogage juste-à-temps lance Visual Studio automatiquement lorsqu’une exception ou un incident se produit dans une application qui s’exécute en dehors de Visual Studio. Cela vous permet de tester votre application lorsque Visual Studio n’est pas en cours d’exécution et commencez le débogage avec Visual Studio lorsqu’un problème se produit.
@@ -178,4 +178,4 @@ static void Main(string[] args)
  [Sécurité du débogueur](../debugger/debugger-security.md)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)   
  [Juste-à-temps, débogage, Options, boîte de dialogue](../debugger/just-in-time-debugging-options-dialog-box.md)   
- [Avertissement de sécurité : L’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+ [Avertissement de sécurité : L’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

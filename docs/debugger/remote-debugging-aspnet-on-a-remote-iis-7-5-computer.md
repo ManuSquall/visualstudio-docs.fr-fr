@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ade15b950e5fc6ab0dd277a26640a7ecb7825e62
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: fec5b041a6fb0f16c35d0f9f16a8171c5e95224b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Débogage distant ASP.NET sur un ordinateur distant IIS
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application puis attachez à votre application en cours d’exécution à partir de Visual Studio.
@@ -74,11 +74,17 @@ Si vous souhaitez des informations plus détaillées pour installer ASP.NET sur 
 
 2. Redémarrer le système (ou exécutez **net stop a été /y** suivie **net démarrer w3svc** à partir d’une invite de commandes pour voir une modification dans le chemin d’accès du système).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Facultatif) Installation Web déployer 3.6 pour l’hébergement des serveurs sur Windows Server
+
+Dans certains scénarios, il peut être plus rapide pour importer les paramètres de publication dans Visual Studio au lieu de configurer manuellement les options de déploiement. Si vous souhaitez importer les paramètres au lieu de configurer le profil de publication dans Visual Studio de publication, consultez [importation des paramètres de publication et le déployer vers IIS](../deployment/tutorial-import-publish-settings-iis.md). Dans le cas contraire, restent dans cette rubrique et poursuivez la lecture. Si vous terminez l’article sur l’importation de paramètres de publication et déployer l’application avec succès, puis revenir à cette rubrique et démarrer dans la section sur [télécharger les outils à distance](#BKMK_msvsmon).
+
 ## <a name="BKMK_install_webdeploy"></a> (Facultatif) Installation Web déployer 3.6 sur Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ## <a name="BKMK_deploy_asp_net"></a> Configurer le site Web ASP.NET sur l’ordinateur Windows Server
+
+Si vous importez des paramètres de publication, vous pouvez ignorer cette section.
 
 1. Ouvrez l’Explorateur Windows et créez un dossier, **C:\Publish**, où vous déploierez plus tard le projet ASP.NET.
 

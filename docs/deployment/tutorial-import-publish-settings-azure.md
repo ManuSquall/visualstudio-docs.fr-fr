@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fcc9f6ec4143a757139a9e013f1a1f4dbe666e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publier une application de Service d’applications Azure en important des paramètres de publication dans Visual Studio
 
 Vous pouvez utiliser la **publier** outil pour importer des paramètres de publication, puis déployer votre application. Dans cet article, nous utilisons les paramètres pour Azure App Service de publication, mais vous pouvez utiliser des étapes similaires pour importer les paramètres à partir de publication [IIS](../deployment/tutorial-import-publish-settings-iis.md). Dans certains scénarios, l’utilisation de publier une version de profil de paramètres peut être plus rapide que la configuration manuelle de déploiement pour le service pour chaque installation de Visual Studio.
 
-Ces étapes s’appliquent aux applications ASP.NET et ASP.NET Core .NET Core dans Visual Studio. Les étapes correspondent à Visual Studio 2017 version 15,6.
+Ces étapes s’appliquent aux applications ASP.NET et ASP.NET Core .NET Core dans Visual Studio. Vous pouvez également importer des paramètres de publication pour [Python](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio) applications. Les étapes correspondent à Visual Studio 2017 version 15,6.
 
 Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
@@ -30,10 +30,10 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 > * Importer le fichier de paramètres de publication dans Visual Studio
 > * Déployer l’application dans Azure App Service
 
-Un fichier de paramètres de publication (*.publishsettings) est différente de celle d’un profil de publication (*.pubxml) créé dans Visual Studio. Un fichier de paramètres de publication est créé par le Service d’applications Azure, et il peut ensuite être importé dans Visual Studio.
+Un fichier de paramètres de publication (*\*.publishsettings*) est différente de celle d’un profil de publication (*\*.pubxml*) créés dans Visual Studio. Un fichier de paramètres de publication est créé par le Service d’applications Azure, et il peut ensuite être importé dans Visual Studio.
 
 > [!NOTE]
-> Si vous avez besoin copier un profil de publication de Visual Studio (\*.pubxml fichier) à partir d’une installation de Visual Studio à l’autre, vous pouvez trouver le profil de publication,  *\<profilename\>.pubxml*, dans le  *\\< projectname\>\Properties\PublishProfiles* dossier pour les types de projet managés. Pour les sites Web, regardez sous la *\App_Data* dossier. Les profils de publication sont des fichiers XML de MSBuild.
+> Si vous avez besoin copier un profil de publication de Visual Studio (*\*.pubxml* fichier) à partir d’une installation de Visual Studio à l’autre, vous pouvez trouver le profil de publication,  *\<profilename\>.pubxml*, dans le  *\\< projectname\>\Properties\PublishProfiles* dossier pour les types de projet managés. Pour les sites Web, regardez sous la *\App_Data* dossier. Les profils de publication sont des fichiers XML de MSBuild.
 
 ## <a name="prerequisites"></a>Prérequis
 
