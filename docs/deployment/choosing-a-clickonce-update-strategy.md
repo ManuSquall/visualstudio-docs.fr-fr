@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0013b9f7ae004b709a1651af0e32e36dd45f909c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 08025ed5d5e3806e04501c46a96e1df5f85b31fb
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Choix d'une stratégie de mise à jour ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] peut fournir des mises à jour d'application automatiques. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application lit périodiquement son fichier manifeste de déploiement pour voir si des mises à jour de l’application sont disponibles. Si disponible, la nouvelle version de l'application est téléchargée et exécutée. Pour des raisons d'efficacité, seuls les fichiers modifiés sont téléchargés.  
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/19/2018
 >  Les mises à jour d'application exigent une connexion au réseau. En l'absence d'une connexion réseau, l'application s'exécute sans vérifier les mises à jour, quelle que soit la stratégie de mise à jour choisie.  
   
 > [!NOTE]
->  Dans le .NET Framework 2.0 et le .NET Framework 3.0, à chaque fois que votre application vérifie les mises à jour, avant ou après le démarrage, ou à l'aide des API <xref:System.Deployment.Application>, vous devez définir `deploymentProvider` dans le manifeste de déploiement. Le `deploymentProvider` élément correspondant dans Visual Studio pour le **mettre à jour d’emplacement** champ sur la **mises à jour** boîte de dialogue de la **publier** onglet. Cette règle est assouplie dans .NET Framework 3.5. Pour plus d’informations, consultez [déploiement ClickOnce Applications pour tester les et les serveurs de Production sans Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+>  Dans le .NET Framework 2.0 et le .NET Framework 3.0, à chaque fois que votre application vérifie les mises à jour, avant ou après le démarrage, ou à l'aide des API <xref:System.Deployment.Application>, vous devez définir `deploymentProvider` dans le manifeste de déploiement. Le `deploymentProvider` élément correspondant dans Visual Studio pour le **mettre à jour d’emplacement** champ sur la **mises à jour** boîte de dialogue de la **publier** onglet. Cette règle est assouplie dans .NET Framework 3.5. Pour plus d’informations, consultez [déploiement ClickOnce Applications pour tester les et les serveurs de Production sans Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Vérification des mises à jour après le démarrage de l'application  
  Si vous utilisez cette stratégie, l'application tente de localiser et de lire le fichier manifeste de déploiement en arrière-plan pendant l'exécution de l'application. Si une mise à jour est disponible, lors de la prochaine exécution de l'application, l'utilisateur sera invité à télécharger et à installer la mise à jour.  
