@@ -2,16 +2,22 @@
 layout: LandingPage
 title: Déploiement de vos applications dans Visual Studio | Microsoft Docs
 description: Découvrez comment utiliser Visual Studio 2017 pour déployer des applications, des services et des composants.
+ms.topic: landing-page
 ms.technology: vs-ide-deployment
-ms.openlocfilehash: 269cf84fcb1a1928983c9a9c12f97dd616eae7b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.author: mikejo
+author: mikejo5000
+manager: douge
+ms.openlocfilehash: 141348fc5521eb0ffe3989ba5a0d76a251308515
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="deployment-in-visual-studio"></a>Déploiement dans Visual Studio
 
 Visual Studio fournit plusieurs outils différents qui vous permettent de déployer vos applications.
+
+<h2>Faire l’expérience du déploiement Visual Studio avec les « Démarrages rapides » de 5 minutes</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -21,11 +27,11 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Vue d’ensemble des fonctionnalités de déploiement</h3>
+                        <h3>Aperçu des options de déploiement</h3>
                     </div>
                 </div>
             </div>
@@ -39,7 +45,7 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -57,7 +63,7 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -75,11 +81,88 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Déployer sur Azure App Service</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+<h2>Approfondir en suivant des didacticiels</h2>
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="/dotnet/core/deploying/deploy-with-vs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Déployer une application .NET Core</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/windows/uwp/packaging/packaging-uwp-apps">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Empaqueter une application UWP pour Microsoft Store</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/aspnet/core/tutorials/publish-to-azure-webapp-using-vs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Déployer ASP.NET sur Azure</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/windows/uwp/porting/desktop-to-uwp-packaging-dot-net">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Empaqueter une application de bureau pour Microsoft Store (C#, C++)</h3>
                     </div>
                 </div>
             </div>
@@ -93,7 +176,7 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Python.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -105,17 +188,35 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
         </a>
     </li>
     <li>
-        <a href="/cpp/ide/deployment-in-visual-cpp">
+        <a href="tutorial-import-publish-settings-azure.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Déploiement dans Visual C++</h3>
+                        <h3>Importer des paramètres de publication et déployer sur Azure App Service</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="tutorial-import-publish-settings-iis.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Importer des paramètres de publication et déployer sur IIS</h3>
                     </div>
                 </div>
             </div>
@@ -129,11 +230,29 @@ Visual Studio fournit plusieurs outils différents qui vous permettent de déplo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Déployer une application de bureau avec ClickOnce</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cpp/ide/deployment-in-visual-cpp">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_learn-about.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>En savoir plus sur le déploiement dans Visual C++</h3>
                     </div>
                 </div>
             </div>
