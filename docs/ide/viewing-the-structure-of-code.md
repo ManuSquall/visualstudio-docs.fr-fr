@@ -1,9 +1,8 @@
 ---
-title: Affichage de la structure du code dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Afficher la structure du code dans Visual Studio
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
@@ -28,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c924b56a1f33c0e1cbfef567442dd521db79e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-the-structure-of-code"></a>Afficher la structure du code
 
@@ -57,11 +56,11 @@ Si votre projet est archivé dans le contrôle de code source, chaque élément 
 
 ### <a name="class-view-toolbar"></a>Barre d’outils Affichage de classes
 
-La barre d'outils Affichage de classes contient les commandes ci-dessous.
+La barre d’outils **Affichage de classes** contient les commandes suivantes.
 
 |||
 |-|-|
-|**Nouveau dossier**|Crée un dossier ou sous-dossier virtuel dans lequel vous pouvez organiser les éléments fréquemment utilisés. Ils sont enregistrés dans le fichier solution (.suo) actif. Une fois que vous avez renommé ou supprimé un élément dans votre code, il peut apparaître dans un dossier virtuel en tant que nœud d'erreur. Pour corriger ce problème, supprimez le nœud d'erreur. Si vous avez renommé un élément, vous pouvez le déplacer de nouveau de la hiérarchie de projet vers le dossier.|
+|**Nouveau dossier**|Crée un dossier ou sous-dossier virtuel dans lequel vous pouvez organiser les éléments fréquemment utilisés. *Ils sont enregistrés dans le fichier solution (*.suo) actif. Une fois que vous avez renommé ou supprimé un élément dans votre code, il peut apparaître dans un dossier virtuel en tant que nœud d'erreur. Pour corriger ce problème, supprimez le nœud d'erreur. Si vous avez renommé un élément, vous pouvez le déplacer de nouveau de la hiérarchie de projet vers le dossier.|
 |**Précédent**|Permet d'accéder à l'élément précédemment sélectionné.|
 |**Suivant**|Permet d'accéder à l'élément sélectionné suivant.|
 |**Afficher le diagramme de classes** (projets de code managé uniquement)|Devient disponible quand vous sélectionnez un espace de noms ou un type dans **Affichage de classes**. Quand un espace de noms est sélectionné, le diagramme de classes affiche tous les types qu'il contient. Quand un type est sélectionné, le diagramme de classes affiche uniquement ce type.|
@@ -91,7 +90,7 @@ Le menu contextuel dans la fenêtre **Affichage de classes** peut contenir les c
 |**Atteindre la définition**|Recherche la définition de l’élément dans le code source ou dans l’**Explorateur d’objets** si l’élément n’est pas défini dans le projet ouvert.|
 |**Parcourir les définitions**|Affiche l’élément sélectionné dans l’**Explorateur d’objets**.|
 |**Rechercher toutes les références**|Recherche l’élément de l’objet actuellement sélectionné et affiche les résultats dans une fenêtre **Résultats de la recherche**.|
-|**Appliquer le filtre au type** (code managé uniquement)|Affiche uniquement le type ou l'espace de noms sélectionné. Vous pouvez supprimer le filtre en choisissant le bouton **Effacer Résultats de la recherche** (X) situé à côté de la zone **Rechercher**.|
+|**Appliquer le filtre au type** (code managé uniquement)|Affiche uniquement le type ou l'espace de noms sélectionné. Vous pouvez supprimer le filtre en choisissant le bouton **Effacer Résultats de la recherche** (**X**) situé à côté de la zone **Rechercher**.|
 |**Copier**|Copie le nom qualifié complet de l'élément.|
 |**Trier par ordre alphabétique**|Répertorie les types et les membres dans l'ordre alphabétique par nom.|
 |**Trier les membres par type**|Répertorie les types et les membres dans l'ordre par type (de sorte que les classes précèdent les interfaces, les interfaces précèdent les délégués et les méthodes précèdent les propriétés).|
@@ -131,11 +130,11 @@ Le menu contextuel de la fenêtre **Hiérarchie d’appels** contient les comman
 
 La fenêtre **Explorateur d’objets** affiche les descriptions du code dans vos projets.
 
-Vous pouvez filtrer les composants que vous souhaitez afficher à l’aide de la liste déroulante en haut de la fenêtre. Les composants personnalisés peuvent inclure des fichiers exécutables de code managé, des assemblys de bibliothèque, des bibliothèques de types et des fichiers .ocx. Il n'est pas possible d'ajouter des composants personnalisés C++. Les paramètres personnalisés sont enregistrés dans le répertoire d’application utilisateur Visual Studio : %APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat.
+Vous pouvez filtrer les composants que vous souhaitez afficher à l’aide de la liste déroulante en haut de la fenêtre. Les composants personnalisés peuvent inclure des fichiers exécutables de code managé, des assemblys de bibliothèque, des bibliothèques de types et des fichiers *.ocx*. Il n'est pas possible d'ajouter des composants personnalisés C++. Les paramètres personnalisés sont enregistrés dans le répertoire d’application utilisateur Visual Studio : *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
 
 Le volet gauche de l’**Explorateur d’objets** montre les assemblys. Vous pouvez développer les assemblys pour afficher les espaces de noms qu’ils contiennent, puis développer les espaces de noms pour afficher les types qu’ils contiennent. Quand vous sélectionnez un type, ses membres (tels que les propriétés et les méthodes) sont répertoriés dans le volet droit. Le volet inférieur droit affiche des informations détaillées sur l'élément sélectionné.
 
-Vous pouvez rechercher un élément spécifique à l’aide de la zone **Rechercher** en haut de la fenêtre. Les recherches ne respectent pas la casse. Les résultats de recherche sont affichés dans le volet gauche. Pour effacer une recherche, choisissez le bouton **Effacer la recherche** (X) situé à côté de la zone **Rechercher**.
+Vous pouvez rechercher un élément spécifique à l’aide de la zone **Rechercher** en haut de la fenêtre. Les recherches ne respectent pas la casse. Les résultats de recherche sont affichés dans le volet gauche. Pour effacer une recherche, choisissez le bouton **Effacer la recherche** (**X**) situé à côté de la zone **Rechercher**.
 
 L’**Explorateur d’objets** assure le suivi des sélections effectuées et vous pouvez naviguer entre vos sélections à l’aide des boutons **Suivant** et **Précédent** de la barre d’outils.
 
@@ -186,7 +185,7 @@ La fenêtre **Définition de code** affiche la définition d’un type C++ ou me
 Cette fenêtre est en lecture seule mais vous pouvez y définir des points d'arrêt ou des signets. Pour modifier la définition affichée, choisissez **Modifier la définition** dans le menu contextuel. Cela ouvre le fichier source dans l'éditeur de code et place le point d'insertion sur la ligne où la définition commence.
 
 > [!NOTE]
-> À partir de Visual Studio 2015, la fenêtre Définition de code peut uniquement être utilisée avec le code C++.
+> À compter de Visual Studio 2015, la fenêtre **Définition de code** peut être utilisée seulement avec du code C++.
 
 ### <a name="code-definition-shortcut-menu"></a>Menu contextuel de la fenêtre Définition de code
 
@@ -194,8 +193,8 @@ Le menu contextuel dans la fenêtre **Définition de code** peut contenir les co
 
 |||
 |-|-|
-|**Actions rapides et refactorisations...**||
-|**Renommer...**||
+|**Actions rapides et refactorisations**||
+|**Renommer**||
 |**Générer le graphique des fichiers Include**||
 |**Aperçu de définition**||
 |**Atteindre la définition**|Recherche la définition (ou les définitions, pour des classes partielles) et l’affiche dans une fenêtre **Résultats de la recherche**.|
@@ -221,4 +220,4 @@ Vous pouvez utiliser la fenêtre **Structure du document** conjointement aux vue
 
 ## <a name="see-also"></a>Voir aussi
 
-[Affichage de classes et Explorateur d'objets, icônes](../ide/class-view-and-object-browser-icons.md)
+- [Affichage de classes et Explorateur d'objets, icônes](../ide/class-view-and-object-browser-icons.md)

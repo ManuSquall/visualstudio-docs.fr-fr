@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01a27861287bcc5fe419a9be1784177742cda815
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3104266e92bc05f82a4d97fb62fc20bc9e79c0eb
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactorisation des classes et des types (Concepteur de classes)
 
@@ -40,8 +40,9 @@ Quand vous refactorisez du code, vous le rendez plus facile à comprendre et à 
 |----------|------------------------|
 |**Refactorisation des classes** : vous pouvez utiliser les opérations de refactorisation pour fractionner une classe en classes partielles ou pour implémenter une classe de base abstraite.|-   [Guide pratique pour diviser une classe en classes partielles](how-to-split-a-class-into-partial-classes.md)|
 |**Utilisation des interfaces** : dans le Concepteur de classes, vous pouvez implémenter une interface pour le diagramme de classes en la connectant à une classe qui fournit du code pour les méthodes d’interface.|-   [Guide pratique pour implémenter une interface](how-to-implement-an-interface.md)|
-|**Refactorisation des types, des membres de type et des paramètres** : à l’aide du Concepteur de classes, vous pouvez renommer des types, substituer des membres de type ou les déplacer d’un type à un autre. Vous pouvez également créer des types Nullable.|-   [Attribution d'un nouveau nom aux types et membres de type](refactoring-classes-and-types.md#RenamingTypesAndMembers)<br />-   [Déplacement des membres de type d’un type à un autre](refactoring-classes-and-types.md#MovingTypeMembers)<br />-   [Guide pratique pour créer un type Nullable](how-to-create-a-nullable-type.md)|
+|**Refactorisation des types, des membres de type et des paramètres** : à l’aide du Concepteur de classes, vous pouvez renommer des types, substituer des membres de type ou les déplacer d’un type à un autre. Vous pouvez également créer des types Nullable.|-   [Renommer des types et des membres de type](refactoring-classes-and-types.md#rename)<br />-   [Déplacer des membres de type d’un type à un autre](refactoring-classes-and-types.md#move)<br />-   [Guide pratique pour créer un type Nullable](how-to-create-a-nullable-type.md)|
 
+<a name="rename"></a>
 ### <a name="rename-types-and-type-members"></a>Renommer des types et des membres de type
 
 Au sein du Concepteur de classes, vous pouvez renommer un type ou un membre de type dans le diagramme de classes ou dans la fenêtre Propriétés. Dans la fenêtre Détails de classe, vous pouvez changer le nom d'un membre mais pas d'un type. Le changement de nom d'un type ou d'un membre de type se propage à toutes les fenêtres et tous les emplacements de code où apparaissait l'ancien nom.
@@ -77,6 +78,7 @@ Au sein du Concepteur de classes, vous pouvez renommer un type ou un membre de t
 
      Le nouveau nom se propage à l'ensemble des fenêtres et des emplacements de code du projet actif, où apparaissait l'ancien nom.
 
+<a name="move"></a>
 ### <a name="move-type-members-from-one-type-to-another"></a>Déplacer des membres de type d’un type à un autre
 
 À l'aide du **Concepteur de classes**, vous pouvez déplacer un membre de type d'un type à un autre, si les deux types sont visibles dans le diagramme de classes actif.

@@ -1,10 +1,10 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: 053ea5ad7579a040cdefbf7e519c852dc4fb7fe9
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: b86097cc1e0e531fe6f95a01cfa1cae5e4ac42d7
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Créer un projet AI à partir d’un code existant
 
@@ -35,4 +35,4 @@ Une fois que vous avez [installé Visual Studio Tools pour AI](installation.md),
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Identification manuelle d’un environnement Python existant](../python/managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)
+- [Identifier manuellement un environnement Python existant](../python/managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

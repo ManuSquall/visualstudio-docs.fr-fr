@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 941597abd21d62501546860cf9cc8adc8fc6de2d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : profilage de la ligne de commande à l’aide de l’échantillonnage
 
@@ -54,13 +54,13 @@ L’échantillonnage est une méthode de profilage par laquelle un processus sp�
 
 4. Tapez la commande suivante pour définir les variables d’environnement appropriées :
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleon
     ```
 
 5. Démarrez le profilage en exécutant VSPerfCmd.exe, outil en ligne de commande qui contrôle le profileur. La commande suivante démarre l’application et le profileur en mode d’échantillonnage :
 
-    ```
+    ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
@@ -76,13 +76,13 @@ L’échantillonnage est une méthode de profilage par laquelle un processus sp�
 
 9. Fermez le profileur. Tapez la commande suivante :
 
-    ```
+    ```cmd
     VSPerfCmd /shutdown
     ```
 
 10. Utilisez la commande suivante pour redéfinir les variables d’environnement :
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleoff
     ```
 
@@ -94,7 +94,7 @@ L’échantillonnage est une méthode de profilage par laquelle un processus sp�
 
     - Générez un fichier de valeurs séparées par des virgules (.csv) à l’aide de l’outil en ligne de commande VSPerfReport.exe. Pour générer des rapports pour une utilisation en dehors de l’IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], utilisez la commande suivante :
 
-        ```
+        ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 

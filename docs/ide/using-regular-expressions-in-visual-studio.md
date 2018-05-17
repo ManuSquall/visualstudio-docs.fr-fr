@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’expressions régulières dans Visual Studio
+title: Utiliser des expressions régulières dans Visual Studio
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dae1c3d62fce5ba8b3991e41bade1d612b74647
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16a5647461c37502f2d7a91cfb71c8f96164f2b1
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="using-regular-expressions-in-visual-studio"></a>Utilisation d’expressions régulières dans Visual Studio
+# <a name="use-regular-expressions-in-visual-studio"></a>Utiliser des expressions régulières dans Visual Studio
 
 Visual Studio utilise les [expressions régulières du .NET Framework](/dotnet/standard/base-types/regular-expressions) pour rechercher et remplacer du texte.
 
@@ -74,4 +74,4 @@ Voici quelques exemples :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)
+- [Rechercher et remplacer du texte](../ide/finding-and-replacing-text.md)

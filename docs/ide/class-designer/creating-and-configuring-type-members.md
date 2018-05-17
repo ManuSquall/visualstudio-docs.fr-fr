@@ -31,11 +31,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d62cc3aff0eb714f142502d30712c8cc289087cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce62e2d2723c38d933c9efc4c8d910ac418dcb4f
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Création et configuration de membres de type (Concepteur de classes)
 Vous pouvez ajouter ces membres aux types dans un diagramme de classes et configurer ces membres dans la fenêtre **Détails de classe** :
@@ -57,8 +57,8 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 
 |Tâche|Contenu de support|
 |----------|------------------------|
-|**Bien démarrer** : avant de créer et de configurer des membres de type, vous devez ouvrir la fenêtre **Détails de classe**.|-   [Ouverture de la fenêtre Détails de classe](creating-and-configuring-type-members.md#OpenClassDetails)<br />-   [Notes d’utilisation de la fenêtre Détails de classe](creating-and-configuring-type-members.md#ClassDetailsUsageNotes)<br />-   [Affichage d’informations en lecture seule](creating-and-configuring-type-members.md#ReadOnlyInfo)<br />-   [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Créer et modifier les membres de type** : vous pouvez créer d’autres membres, modifier des membres existants et ajouter des paramètres à une méthode à l’aide de la fenêtre **Détails de classe**.|-   [Création de membres](creating-and-configuring-type-members.md#CreateMembers)<br />-   [Modification des membres de type](creating-and-configuring-type-members.md#ModifyTypeMembers)<br />-   [Ajout de paramètres aux méthodes](creating-and-configuring-type-members.md#AddMethodParams)|
+|**Bien démarrer** : avant de créer et de configurer des membres de type, vous devez ouvrir la fenêtre **Détails de classe**.|-   [Ouvrir la fenêtre Détails de classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />-   [Notes d’utilisation de la fenêtre Détails de classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />-   [Affichage d’informations en lecture seule](creating-and-configuring-type-members.md#display-of-read-only-information)<br />-   [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Créer et modifier les membres de type** : vous pouvez créer d’autres membres, modifier des membres existants et ajouter des paramètres à une méthode à l’aide de la fenêtre **Détails de classe**.|-   [Créer des membres](creating-and-configuring-type-members.md#create-members)<br />-   [Modifier des membres de type](creating-and-configuring-type-members.md#modify-type-members)<br />-   [Ajouter des paramètres aux méthodes](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Ouvrir la fenêtre Détails de classe
 Par défaut, la fenêtre **Détails de classe** s’affiche automatiquement quand vous ouvrez un nouveau diagramme de classes (consultez [Guide pratique pour ajouter des diagrammes de classes aux projets](how-to-add-class-diagrams-to-projects.md)). Vous pouvez aussi ouvrir explicitement la fenêtre **Détails de classe**, comme indiqué ci-après.
@@ -157,7 +157,7 @@ Chaque ligne membre affiche les éléments suivants :
 
 -   **\<ajouter un membre>**
 
-     La dernière ligne de la fenêtre **Détails de classe** contient le texte **\<ajouter un membre>** dans la cellule **Nom**. Si vous cliquez sur cette cellule, vous pouvez créer un membre. Pour plus d’informations, consultez [Création de membres](creating-and-configuring-type-members.md#CreateMembers).
+     La dernière ligne de la fenêtre **Détails de classe** contient le texte **\<ajouter un membre>** dans la cellule **Nom**. Si vous cliquez sur cette cellule, vous pouvez créer un membre. Pour plus d’informations, consultez [Créer des membres](creating-and-configuring-type-members.md#create-members).
 
 -   **Propriétés du membre dans la fenêtre Propriétés**
 
@@ -207,14 +207,14 @@ Les lignes de paramètres contiennent les éléments suivants :
 
 -   **\<ajouter un paramètre>**
 
-     La dernière ligne de paramètre d’un membre contient le texte **<add parameter>** dans la cellule**Nom**. Cliquez sur cette cellule pour créer un nouveau paramètre. Pour plus d’informations, consultez [Pour ajouter un paramètre à une méthode](creating-and-configuring-type-members.md#HowToAddParameterToMethod).
+     La dernière ligne de paramètre d’un membre contient le texte **<add parameter>** dans la cellule**Nom**. Cliquez sur cette cellule pour créer un nouveau paramètre. Pour plus d’informations, consultez [Pour ajouter un paramètre à une méthode](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 **Propriétés des paramètres dans la fenêtre Propriétés**
 
 La fenêtre Propriétés affiche les mêmes propriétés de paramètre que celles affichées dans la fenêtre **Détails de classe** : **Nom**, **Type**, **Modificateur**, **Résumé**, ainsi que la propriété **Valeur par défaut facultative**. La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de manière globale, y compris l'affichage de sa valeur dans l'autre emplacement.
 
 > [!NOTE]
-> Pour ajouter un paramètre à un délégué, consultez [Création de membres](creating-and-configuring-type-members.md#CreateMembers).
+> Pour ajouter un paramètre à un délégué, consultez [Créer des membres](creating-and-configuring-type-members.md#create-members).
 
 
 > [!NOTE]

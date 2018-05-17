@@ -1,5 +1,5 @@
 ---
-title: Modification des modèles de combinaison de tests dans Visual Studio | Microsoft Docs
+title: Modification des modèles de combinaison de tests dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,19 +9,21 @@ ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ebcb58ea848bbb04dd4fdb132a87c66707bc4af8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 591bdaa84d143dc3b639990530a68246dc00385a
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="edit-text-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Modifier les modèles de combinaison de tests pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel
+# <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Modifier les modèles de combinaison de tests pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel
 
 Le *modèle de combinaison de tests* spécifie la probabilité selon laquelle un utilisateur virtuel exécute un test donné dans un scénario de test de charge. Cela vous permet de simuler la charge de façon plus réaliste. Au lieu d'avoir un seul flux de travail dans vos applications, vous pouvez en avoir plusieurs, ce qui représente une meilleure approximation de la façon dont les utilisateurs finaux interagissent avec vos applications.
 
 ## <a name="test-mix-model-options"></a>Options du modèle de combinaison de tests
- Vous pouvez spécifier l'une des options de modèle de combinaison de tests suivantes pour votre scénario de test de charge :
+
+Vous pouvez spécifier l'une des options de modèle de combinaison de tests suivantes pour votre scénario de test de charge :
 
 -   **Sur la base du nombre total de tests :** détermine les tests de performances web ou tests unitaires qui sont exécutés quand un utilisateur virtuel démarre une itération de test. À la fin du test de charge, le nombre de fois où un test particulier exécuté correspond à la distribution de test assignée. Utilisez ce modèle de combinaison de tests lorsque vous basez la combinaison de tests sur les pourcentages de transaction dans un journal IIS ou dans les données de production.
 
@@ -78,5 +80,5 @@ Après avoir créé votre test de charge à l’aide de l’**Assistant Nouveau 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Modification des scénarios de test de charge](../test/edit-load-test-scenarios.md)
+- [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md)
 - [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md)

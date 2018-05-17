@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0610178a6249d262169abbe32f3f6a93cdd0e935
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8baf096a0ead512cddf9f33801c4504c2a5a4502
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="help-content-manager-overrides"></a>Remplacements dans Help Content Manager
 
@@ -24,7 +24,7 @@ Vous pouvez modifier le comportement par défaut de Help Viewer et des fonctionn
 
 1. Créez un fichier *.pkgdef* avec `[$RootKey$\Help]` comme première ligne.
 
-2. Ajoutez l’une des valeurs de clé de Registre ou la totalité des valeurs décrites dans le tableau ci-dessous sur des lignes distinctes, par exemple `“UseOnlineHelp”=dword:00000001`.
+2. Ajoutez l’une des valeurs de clé de Registre ou la totalité des valeurs décrites dans le tableau ci-dessous sur des lignes distinctes, par exemple `"UseOnlineHelp"=dword:00000001`.
 
 3. Copiez le fichier dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<édition\>\Common7\IDE\CommonExtensions*.
 
@@ -45,12 +45,12 @@ Vous pouvez modifier le comportement par défaut de Help Viewer et des fonctionn
 
 ```
 [$RootKey$\Help]
-“NewContentAndUpdateService”=”https://some.service.endpoint”
-“UseOnlineHelp”=dword:00000001
-“OnlineBaseUrl”=”https://some.service.endpoint”
-“OnlineHelpPreferenceDisabled”=dword:00000000
-“DisableManageContent”=dword:00000000
-“DisableFirstRunHelpSelection”=dword:00000001
+"NewContentAndUpdateService"="https://some.service.endpoint"
+"UseOnlineHelp"=dword:00000001
+"OnlineBaseUrl"="https://some.service.endpoint"
+"OnlineHelpPreferenceDisabled"=dword:00000000
+"DisableManageContent"=dword:00000000
+"DisableFirstRunHelpSelection"=dword:00000001
 ```
 
 ## <a name="use-registry-editor-to-change-help-viewer-behavior"></a>Utiliser l’Éditeur du Registre pour modifier le comportement de l’application Help Viewer
@@ -60,7 +60,7 @@ Les deux comportements suivants peuvent être contrôlés en définissant des va
 |Tâche|Clé de Registre|Value|Données|
 |----------|-----|------|----|
 |Substituer la priorité des travaux BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (sur un ordinateur 64 bits)\Microsoft\Help\v2.3|BITSPriority|**premier plan**, **haute**, **normale** ou **faible**|
-|Pointer vers le magasin de contenu local sur un partage réseau|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
+|Pointer vers le magasin de contenu local sur un partage réseau|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
 ## <a name="see-also"></a>Voir aussi
 

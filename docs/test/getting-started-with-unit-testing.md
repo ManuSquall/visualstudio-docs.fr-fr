@@ -1,6 +1,7 @@
 ---
-title: Bien démarrer avec les tests unitaires dans Visual Studio | Microsoft Docs
+title: Bien démarrer avec les tests unitaires dans Visual Studio
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fa3c92a2b42da7946d9f5b4b9cc0bf208704f079
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="get-started-with-unit-testing"></a>Bien démarrer avec les tests unitaires
 
@@ -69,6 +70,9 @@ Vous pouvez également créer des stubs de méthodes de tests unitaires avec la 
 ## <a name="view-live-unit-test-results"></a>Afficher les résultats des tests unitaires en direct
 
 Si vous utilisez le framework de tests MSTest, xUnit ou NUnit dans Visual Studio 2017 ou une version ultérieure, vous pouvez afficher les résultats temps réel de vos tests unitaires.
+
+> [!NOTE]
+> Les tests unitaires en direct ne sont disponibles que dans Visual Studio 2017 Enterprise.
 
 1. Activez les tests unitaires en direct à partir du menu **Test**.
 

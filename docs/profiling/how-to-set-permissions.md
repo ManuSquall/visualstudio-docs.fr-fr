@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f3cf4ca3cb79a6b58d4f3549d05d355764148f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8c5b6e7878e4000b8263cc772d59ee197f0b62e
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="how-to-set-permissions"></a>Guide pratique pour définir les autorisations
 
@@ -58,7 +58,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
      Le chemin de ce dossier peut se présenter comme suit :
 
-    ```
+    ```cmd
     D:\ourProject
     ```
 
@@ -82,13 +82,13 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 2. Remplacez le répertoire par :
 
-    ```
+    ```cmd
     <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools
     ```
 
 3. Exécutez la commande suivante :
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,start /admin:service,start
     ```
 
@@ -100,11 +100,11 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 4. Exécutez la commande pour autoriser l’accès aux fonctionnalités du pilote de profilage par un utilisateur ou un groupe ne disposant pas de l’accès administrateur à l’ordinateur :
 
-    ```
+    ```cmd
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
-     Cette commande accorde au compte \<nom_utilisateur> ou \<nom_groupe> l’accès aux outils de profilage. L’option \<right> détermine les fonctionnalités de profilage accessibles à l’utilisateur. \<Cette> option peut avoir une ou plusieurs des valeurs suivantes :
+     Cette commande accorde au compte \<nom_utilisateur> ou \<nom_groupe> l’accès aux outils de profilage. L’option \<right> détermine les fonctionnalités de profilage accessibles à l’utilisateur. Cette option peut avoir une ou plusieurs des valeurs suivantes :
 
     - FullAccess : autorise l’accès à toutes les méthodes de profilage, notamment la collecte des données de performance à partir des services, l’échantillonnage et le profilage intersession.
 
@@ -114,7 +114,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 5. (Facultatif) Pour conserver les résultats de l’une des étapes précédentes après le redémarrage de l’ordinateur, exécutez la commande suivante :
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,autostart,on
     ```
 

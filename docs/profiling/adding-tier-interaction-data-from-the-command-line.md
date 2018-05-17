@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35c99b9e75be50d00e560e9c8899420685f7f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Ajout des données d’interaction de couche à partir de la ligne de commande
 
@@ -54,20 +54,20 @@ Dans l’exemple suivant, une application de bureau Windows est profilée à l�
 
 2. Initialisez les variables d’environnement TiP et celles du profilage .NET. Tapez les commandes suivantes :
 
-    ```
+    ```cmd
     vsperfclrenv /traceon
     vsperfclrenv /interactionon
     ```
 
 3. Démarrez le profileur. Tapez la commande suivante :
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp 
     ```
 
 4. Démarrez l’application avec VSPerfCmd. Tapez la commande suivante :
 
-    ```
+    ```cmd
     vsperfcmd /launch:DesktopApp.exe
     ```
 
@@ -75,7 +75,7 @@ Dans l’exemple suivant, une application de bureau Windows est profilée à l�
 
 6. Supprimez les variables d’environnement TiP. Tapez la commande suivante :
 
-    ```
+    ```cmd
     vsperfclrenv /off
     ```
 
@@ -97,13 +97,13 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 3. Initialisez les variables d’environnement du profilage .NET. Tapez la commande suivante :
 
-    ```
+    ```cmd
     vsperfclrenv /globaltraceon
     ```
 
 4. Initialisez les variables d’environnement TiP. Tapez la commande suivante :
 
-    ```
+    ```cmd
     vsperfclrenv /globalinteractionon
     ```
 
@@ -113,7 +113,7 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 7. Démarrez le profileur. Tapez la commande suivante :
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -121,7 +121,7 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 9. Attachez le profileur au service. Tapez la commande suivante :
 
-    ```
+    ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -133,7 +133,7 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 12. Supprimez les variables d’environnement TiP et celles du profilage .NET. Tapez la commande suivante :
 
-    ```
+    ```cmd
     vsperfclrenv /globaloff
     ```
 
@@ -151,7 +151,7 @@ L’outil en ligne de commande VSPerfASPNETCmd vous permet de profiler facilemen
 
 Pour ajouter les données d’interaction de couche aux données de profilage collectées à l’aide de VSPerfASPNETCmd, ajoutez l’option **/TIP** sur la ligne de commande. Par exemple, utilisez la ligne de commande suivante pour collecter les données d’interaction de couche d’une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] à l’aide de la méthode d’instrumentation :
 
-```
+```cmd
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 

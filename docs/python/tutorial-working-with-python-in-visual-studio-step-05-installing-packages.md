@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Étape 5 : Installation de packages dans votre environnement Python
 
@@ -43,9 +43,9 @@ La communauté des développeurs Python a produit des milliers de packages utile
 
   ![Fin de l’installation de matplotlib dans l’environnement](media/environments-add-matplotlib2.png)
 
-  La petite barre de progression sous l’environnement indique que Visual Studio crée sa base de données IntelliSense pour le package nouvellement installé. L’onglet **IntelliSense** affiche également des informations plus détaillées. Notez que tant que cette base de données n’est pas terminée, les fonctionnalités IntelliSense, comme la saisie semi-automatique et la vérification de la syntaxe, ne sont pas actives dans l’éditeur pour ce package.
+  Une petite barre de progression peut apparaître sous l’environnement pour indiquer que Visual Studio crée sa base de données IntelliSense pour le package nouvellement installé. L’onglet **IntelliSense** affiche également des informations plus détaillées. Notez que tant que cette base de données n’est pas terminée, les fonctionnalités IntelliSense, comme la saisie semi-automatique et la vérification de la syntaxe, ne sont pas actives dans l’éditeur pour ce package.
 
-  Notez que **Visual Studio 2017 versions 15.6** et ultérieures utilise une méthode différente et plus rapide pour travailler avec IntelliSense, et affiche un message à cet effet dans l’onglet **IntelliSense**.
+  Notez que **Visual Studio 2017 versions 15.6** et ultérieures utilise une méthode différente et plus rapide pour travailler avec IntelliSense, et affiche un message à cet effet sous l’onglet **IntelliSense**.
 
 1. Créez un projet avec **Fichier > Nouveau > Projet** en sélectionnant le modèle « Application Python ». Dans le fichier de code qui s’affiche, collez le code suivant, qui crée une courbe de la fonction cosinus comme dans les étapes du didacticiel précédent, mais cette fois avec seulement une représentation graphique :
 

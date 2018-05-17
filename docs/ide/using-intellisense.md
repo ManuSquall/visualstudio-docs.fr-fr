@@ -1,7 +1,7 @@
 ---
-title: Visual Studio IntelliSense | Microsoft Docs
-ms.custom: ''
+title: Visual Studio IntelliSense
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6e87113f8c8a703a6eb4d893c0ca54a90bfb8d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0afa66a9085c16700306330acdbfba3b9667fc03
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-intellisense-in-visual-studio"></a>Utilisation d’IntelliSense dans Visual Studio
 
@@ -39,23 +39,23 @@ Dans la liste des membres, l'icône de gauche représente le type de membre, tel
 
 ![Liste des membres Visual Studio](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
 
-Vous pouvez appeler la fonctionnalité **Liste des membres** manuellement en appuyant sur **Ctrl** + **J**, en choisissant **Edition** > **IntelliSense** > **Liste des membres** ou en choisissant le bouton **Liste des membres** dans la barre d’outils de l’éditeur. Lorsque la liste des membres est appelée sur une ligne vide ou en dehors d'une portée reconnue, elle affiche des symboles dans l'espace de noms global.
+Vous pouvez appeler la fonctionnalité **Liste des membres** manuellement en appuyant sur **Ctrl**+**J**, en choisissant **Edition** > **IntelliSense** > **Liste des membres** ou en choisissant le bouton **Liste des membres** dans la barre d’outils de l’éditeur. Lorsque la liste des membres est appelée sur une ligne vide ou en dehors d'une portée reconnue, elle affiche des symboles dans l'espace de noms global.
 
 Pour désactiver par défaut la liste des membres (afin qu’elle n’apparaisse pas sauf si elle est explicitement appelée), accédez à **Outils** > **Options** > **Tous les langages** et désélectionnez **Répertorier automatiquement les membres**. Si vous souhaitez désactiver la liste des membres uniquement pour un langage spécifique, accédez à la page de paramètres **Général** pour ce langage.
 
-Vous pouvez également passer en mode suggestion, où seul le texte que vous tapez est inséré dans le code. Par exemple, si vous entrez un identificateur qui ne figure pas dans la liste et que vous appuyez sur **Tab**, en mode de saisie semi-automatique, l’entrée remplace l’identificateur tapé. Pour basculer entre le mode saisie semi-automatique et le mode suggestion, appuyez sur **Ctrl** + **Alt** + **Espace** ou choisissez **Edition** > **IntelliSense** > **Activer/Désactiver le mode de saisie semi-automatique**.
+Vous pouvez également passer en mode suggestion, où seul le texte que vous tapez est inséré dans le code. Par exemple, si vous entrez un identificateur qui ne figure pas dans la liste et que vous appuyez sur **Tab**, en mode de saisie semi-automatique, l’entrée remplace l’identificateur tapé. Pour basculer entre le mode Saisie semi-automatique et le mode Suggestion, appuyez sur **Ctrl**+**Alt**+**Barre d’espace** ou choisissez **Edition** > **IntelliSense** > **Activer/Désactiver le mode de saisie semi-automatique**.
 
 ## <a name="parameter-info"></a>Informations sur les paramètres
 
 Informations sur les paramètres fournit des informations sur le nombre, les noms et les types des paramètres requis par une méthode, un paramètre de type générique d’attribut (en C#) ou un modèle (en C++).
 
-Le paramètre suivant à taper pour la fonction vous est indiqué en gras. Pour les fonctions surchargées, vous pouvez utiliser les touches de direction Haut et Bas pour consulter les différentes informations de paramètres concernant les surcharges de fonction.
+Le paramètre suivant à taper pour la fonction vous est indiqué en gras. Pour les fonctions surchargées, vous pouvez utiliser les touches **Haut** et **Bas** pour consulter les différentes informations de paramètres concernant les surcharges de fonction.
 
 ![Informations sur les paramètres](../ide/media/vs2015_param_info.png "VS2015_param_Info")
 
-Lorsque vous annotez des fonctions et des paramètres avec les commentaires de documentation XML, les commentaires apparaissent comme Informations sur les paramètres. Pour plus d’informations, consultez [Insertion de commentaires dans le code XML](../ide/supplying-xml-code-comments.md).
+Lorsque vous annotez des fonctions et des paramètres avec les commentaires de documentation XML, les commentaires apparaissent comme Informations sur les paramètres. Pour plus d’informations, consultez [Insérer des commentaires dans le code XML](../ide/supplying-xml-code-comments.md).
 
-Vous pouvez appeler manuellement la fonctionnalité Informations sur les paramètres en choisissant **Edition** > **IntelliSense** > **Informations sur les paramètres**, en appuyant sur **Ctrl** + **Maj** + **Espace** ou en choisissant le bouton **Informations sur les paramètres** dans la barre d’outils de l’éditeur.
+Vous pouvez appeler manuellement la fonctionnalité Informations sur les paramètres en choisissant **Edition** > **IntelliSense** > **Informations sur les paramètres**, en appuyant sur **Ctrl**+**Maj**+**Barre d’espace** ou en choisissant le bouton **Informations sur les paramètres** dans la barre d’outils de l’éditeur.
 
 ## <a name="quick-info"></a>Info express
 
@@ -67,7 +67,7 @@ Quand vous sélectionnez un membre dans la zone **Liste des membres**, l’info-
 
 ![Informations sur les paramètres dans un fichier de code C&#35;](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
 
-Vous pouvez appeler manuellement la fonctionnalité Info express en choisissant **Edition** > **IntelliSense** > **Info express**, en appuyant sur **Ctrl** + **I** ou en choisissant le bouton **Info express** dans la barre d’outils de l’éditeur.
+Vous pouvez appeler manuellement la fonctionnalité Info express en choisissant **Edition** > **IntelliSense** > **Info express**, en appuyant sur **Ctrl**+**I** ou en choisissant le bouton **Info express** dans la barre d’outils de l’éditeur.
 
 Si une fonction est surchargée, il est possible que la fonctionnalité IntelliSense n'affiche pas les informations de toutes les formes de la surcharge.
 
@@ -81,7 +81,7 @@ La fonctionnalité Compléter le mot entre automatiquement la fin du nom de vari
 
 Les options IntelliSense sont activées par défaut. Pour les désactiver, choisissez **Outils** > **Options** > **Éditeur de texte** et désélectionnez **Informations sur les paramètres** ou **Répertorier automatiquement les membres** si vous n’avez pas besoin de la fonctionnalité Liste des membres.
 
-## <a name="troubleshooting-intellisense"></a>Résolution des problèmes liés à IntelliSense
+## <a name="troubleshoot-intellisense"></a>Résoudre les problèmes d’IntelliSense
 
 Dans certains cas, les options IntelliSense ne fonctionneront peut-être pas comme vous l'attendez.
 
@@ -99,8 +99,8 @@ MessageBox( hWnd, "String literal|")
 
 ## <a name="see-also"></a>Voir aussi
 
-[Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)  
-[C# IntelliSense](../ide/visual-csharp-intellisense.md)  
-[JavaScript IntelliSense](../ide/javascript-intellisense.md)  
-[Écriture et refactorisation du code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
-[Insertion de commentaires dans le code XML](../ide/supplying-xml-code-comments.md)
+- [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)
+- [C# IntelliSense](../ide/visual-csharp-intellisense.md)
+- [JavaScript IntelliSense](../ide/javascript-intellisense.md)
+- [Écrire et refactoriser du code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Insérer des commentaires dans le code XML](../ide/supplying-xml-code-comments.md)

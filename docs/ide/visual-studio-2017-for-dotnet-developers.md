@@ -12,15 +12,15 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4b7625a074732949e9fb876627dbff1abf005982
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bd517cd859f47f9b4cb41884bd116005aa31fa29
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Guide de productivité Visual Studio 2017 pour les développeurs .NET
+# <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Guide de productivité Visual Studio 2017 pour les développeurs .NET
 
-Avec [Visual Studio 2017](https://www.visualstudio.com/downloads/), les développeurs sont plus productifs que jamais ! Nous avons amélioré les performances et la fiabilité du démarrage et du chargement des solutions, de la découverte de tests et de la latence de la saisie. Nous avons également ajouté et amélioré des fonctionnalités pour vous aider à écrire du code plus rapidement. Ces fonctionnalités incluent notamment la navigation vers les assemblys décompilés, les suggestions de noms de variables au cours de la saisie, un affichage hiérarchique dans l’Explorateur de tests, l’option Atteindre tout (**Ctrl+T**) pour accéder aux déclarations de fichiers/types/membres/symboles, un programme intelligent d’assistance pour les exceptions, la configuration et la mise en conformité du style du code, ainsi qu’un grand nombre de refactorisations et de corrections de code.
+Avec [Visual Studio 2017](https://www.visualstudio.com/downloads/), les développeurs sont plus productifs que jamais ! Nous avons amélioré les performances et la fiabilité du démarrage et du chargement des solutions, de la découverte de tests et de la latence de la saisie. Nous avons également ajouté et amélioré des fonctionnalités pour vous aider à écrire du code plus rapidement. Ces fonctionnalités incluent notamment la navigation vers les assemblys décompilés, les suggestions de noms de variables au fil de la saisie, une vue hiérarchique dans **l’Explorateur de tests**, l’option Atteindre tout (**Ctrl**+**T**) pour accéder aux déclarations de fichiers/types/membres/symboles, un **Helper d’exceptions** intelligent, la configuration et la mise en conformité du style du code, ainsi qu’un grand nombre de refactorisations et de corrections de code.
 
 Suivez ce guide pour optimiser votre productivité.
 
@@ -36,24 +36,24 @@ Le tableau suivant liste les principaux raccourcis de Visual Studio :
 
 | Raccourci (tous les profils) | Commande | Description |
 |-|-|-|
-| **Ctrl + T** | Atteindre tout | Accédez à n’importe quel fichier, type, membre ou toute déclaration de symbole |
-| **F12** (également **Ctrl + clic**) | Atteindre la définition | Accédez à l’emplacement de définition d’un symbole |
-| **Ctrl + F12** | Accéder à l’implémentation | Accédez à partir d’un type ou membre de base à ses diverses implémentations |
-| **Maj + F12** | Rechercher toutes les références | Affichez toutes les références de symboles et de littéraux |
-| **Ctrl**+**.** (également **Alt + Entrée** dans le profil C#) | Actions rapides et refactorisations | Affichez les correctifs de code, les actions de génération de code, les refactorisations et les autres actions rapides qui sont disponibles au niveau de votre curseur ou de votre sélection de code |
+| **Ctrl**+**T** | Atteindre tout | Accédez à n’importe quel fichier, type, membre ou toute déclaration de symbole |
+| **F12** (également **Ctrl**+**Clic**) | Atteindre la définition | Accédez à l’emplacement de définition d’un symbole |
+| **Ctrl**+**F12** | Accéder à l’implémentation | Accédez à partir d’un type ou membre de base à ses diverses implémentations |
+| **Maj**+**F12** | Rechercher toutes les références | Affichez toutes les références de symboles et de littéraux |
+| **Ctrl**+**.** (également **Alt**+**Entrée** dans le profil C#) | Actions rapides et refactorisations | Affichez les correctifs de code, les actions de génération de code, les refactorisations et les autres actions rapides qui sont disponibles au niveau de votre curseur ou de votre sélection de code |
 | **Ctrl**+**D** | Dupliquer la ligne | Duplique la ligne de code où se trouve le curseur (disponible dans **Visual Studio 2017 versions 15.6** et ultérieures) |
 | **Maj**+**Alt**+**+**/**-** | Développer/Réduire la sélection | Développe ou réduit la sélection actuelle dans l’éditeur (disponible dans **Visual Studio 2017 version 15.5** et les versions ultérieures) |
-| **Ctrl + Q** | Lancement rapide | Effectuez une recherche parmi tous les paramètres Visual Studio |
+| **Ctrl**+**Q** | Lancement rapide | Effectuez une recherche parmi tous les paramètres Visual Studio |
 | **F5** | Démarrer le débogage | Démarrez le débogage de votre application |
-| **Ctrl + F5** | Exécutez sans déboguer | Exécutez votre application localement sans débogage |
-| **CTRL + K, D** (profil par défaut) ou **Ctrl + E, D** (profil C#) | Mettre le document en forme | Nettoie les violations de mise en forme de votre fichier selon les paramètres de saut de ligne, d’espacement et de mise en retrait définis |
-| **Ctrl+\\,E** (profil par défaut) ou **Ctrl+W,E** (profil C#) | Voir la liste des erreurs | Affichez toutes les erreurs de votre document, projet ou solution |
+| **Ctrl**+**F5** | Exécutez sans déboguer | Exécutez votre application localement sans débogage |
+| **Ctrl**+**K**,**D** (Profil par défaut) ou **Ctrl**+**E**,**D** (Profil C#) | Mettre le document en forme | Nettoie les violations de mise en forme de votre fichier selon les paramètres de saut de ligne, d’espacement et de mise en retrait définis |
+| **Ctrl**+**\\**,**E** (Profil par défaut) ou **Ctrl**+**W**,**E** (Profil C#) | Voir la liste des erreurs | Affichez toutes les erreurs de votre document, projet ou solution |
 
 > [!NOTE]
-> Certaines extensions dissocient les combinaisons de touches de Visual Studio par défaut. Pour utiliser les commandes suivantes, restaurez les valeurs par défaut de Visual Studio de vos combinaisons de touches en accédant à **Outils > Paramètres d’importation et d’exportation > Réinitialiser tous les paramètres** ou à **Outils > Options > Clavier > Réinitialiser**.
+> Certaines extensions dissocient les combinaisons de touches de Visual Studio par défaut. Pour utiliser les commandes suivantes, restaurez les valeurs par défaut de Visual Studio de vos combinaisons de touches en accédant à **Outils** > **Paramètres d’importation et d’exportation** > **Réinitialiser tous les paramètres** ou à **Outils** > **Options** > **Clavier** > **Réinitialiser**.
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>J’ai besoin d’accéder rapidement à des fichiers ou des types.
-Visual Studio 2017 a une fonctionnalité appelée _Atteindre tout_ (**Ctrl+T**). Atteindre tout vous permet de passer rapidement à n’importe quelle déclaration de fichier, type, membre ou symbole.
+Visual Studio 2017 a une fonctionnalité appelée **Atteindre tout** (**Ctrl**+**T**). Atteindre tout vous permet de passer rapidement à n’importe quelle déclaration de fichier, type, membre ou symbole.
 - Changez l’emplacement de cette barre de recherche, ou désactivez l’aperçu de navigation dynamique à l’aide de l’icône d’**engrenage**
 - Filtrez les résultats à l’aide de notre syntaxe de requête (par exemple « t mytype »). Vous pouvez également limiter la portée de votre recherche au document actif.
 - Le respect de la casse est pris en charge !
@@ -61,15 +61,15 @@ Visual Studio 2017 a une fonctionnalité appelée _Atteindre tout_ (**Ctrl+T**)
 ![Accéder à tout dans Visual Studio](../ide/media/VS2017Guide-go-to-all.png)
 
 ## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>Mon équipe applique des règles de style de code à notre base de code.
-Vous pouvez utiliser un fichier .editorconfig pour codifier les conventions de codage et les faire suivre avec votre source.
-- Nous vous recommandons d’installer l’[extension des services de langage EditorConfig](https://aka.ms/editorconfig) pour ajouter et modifier un fichier .editorconfig dans Visual Studio.
+Vous pouvez utiliser un fichier *.editorconfig* pour codifier les conventions de codage et les faire suivre avec votre source.
+- Nous vous recommandons d’installer [l’extension des services de langage EditorConfig](https://aka.ms/editorconfig) pour ajouter et modifier un fichier *.editorconfig* dans Visual Studio.
 - Consultez la [documentation](https://aka.ms/editorconfigDocs) de toutes les options de convention de codage .NET.
-- Consultez cet [extrait gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) pour obtenir un exemple de fichier .editorconfig.
+- Consultez cet [extrait gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) pour obtenir un exemple de fichier *.editorconfig*.
 
 ![Application du style de code dans Visual Studio](../ide/media/VSGuide_CodeStyle.png)
 
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>J’ai besoin de refactorisations et de corrections de code supplémentaires.
-Visual Studio 2017 est fourni avec un grand nombre de refactorisations, d’actions de génération de code et de corrections de code. Les tildes rouges représentent les erreurs, les tildes verts représentent les avertissements et trois points gris représentent les suggestions de code. Vous pouvez accéder aux corrections de code en cliquant sur l’icône d’ampoule/de tournevis, ou en appuyant sur **Ctrl+.** ou sur **Alt+Entrée**. Chaque correction est accompagnée d’une fenêtre de prévisualisation qui affiche une comparaison dynamique du code pour illustrer la correction.
+Visual Studio 2017 est fourni avec un grand nombre de refactorisations, d’actions de génération de code et de corrections de code. Les tildes rouges représentent les erreurs, les tildes verts représentent les avertissements et trois points gris représentent les suggestions de code. Vous pouvez accéder aux corrections de code en cliquant sur l’icône d’ampoule/tournevis, ou en appuyant sur **Ctrl**+**.** ou sur **Alt**+**Entrée**. Chaque correction est accompagnée d’une fenêtre de prévisualisation qui affiche une comparaison dynamique du code pour illustrer la correction.
 
 - Les correctifs rapides et refactorisations répandus sont les suivants :
   - *Renommer*
@@ -83,7 +83,7 @@ Visual Studio 2017 est fourni avec un grand nombre de refactorisations, d’act
   - *Supprimer les instructions using inutiles*
   - Découvrez-en d’autres dans notre [documentation](https://aka.ms/refactorings)
 - Écrivez votre propre correctif de code ou refactorisation avec des [analyseurs Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
-- Plusieurs membres de la communauté ont écrit des extensions *gratuites* qui ajoutent des inspections de code supplémentaires :
+- Plusieurs membres de la communauté ont écrit des extensions gratuites qui ajoutent des inspections de code supplémentaires :
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
   - [SonarLint pour Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
@@ -91,39 +91,39 @@ Visual Studio 2017 est fourni avec un grand nombre de refactorisations, d’act
 ![Refactorisations dans Visual Studio](../ide/media/VSGuide_CodeAnalysis.png "VSGuide_CodeAnalysis")
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>J’ai besoin de rechercher des utilisations, d’accéder à l’implémentation, de naviguer vers des assemblys décompilés
-Visual Studio 2017 contient de nombreuses fonctionnalités qui vous permettent de rechercher et de parcourir votre code base. En savoir plus sur les [fonctionnalités de navigation de code](../ide/navigating-code.md)
+Visual Studio 2017 contient de nombreuses fonctionnalités qui vous permettent de rechercher et de parcourir votre code base. Découvrez plus d’informations sur les [fonctionnalités de navigation dans le code](../ide/navigating-code.md)
 
 | Fonctionnalité | Raccourci | Détails/améliorations |
 |- | - | -|
-| Rechercher toutes les références | **Maj + F12**| Les résultats sont en couleur et peuvent être regroupés par projet, définition, etc. Vous pouvez également « verrouiller » les résultats. |
-| Accéder à l’implémentation | **Ctrl + F12** | Vous pouvez utiliser Atteindre la définition sur le mot clé `override` pour accéder au membre substitué |
-| Atteindre la définition | **F12** ou **Ctrl + clic**| Vous pouvez maintenir la touche **Ctrl** enfoncée et cliquer pour accéder à la définition |
-| Aperçu de définition | **Alt + F12** | Vue inline d’une définition |
+| Rechercher toutes les références | **Maj**+**F12**| Les résultats sont en couleur et peuvent être regroupés par projet, définition, etc. Vous pouvez également « verrouiller » les résultats. |
+| Accéder à l’implémentation | **Ctrl**+**F12** | Vous pouvez utiliser Atteindre la définition sur le mot clé `override` pour accéder au membre substitué |
+| Atteindre la définition | **F12** ou **Ctrl**+**Clic**| Vous pouvez maintenir la touche **Ctrl** enfoncée et cliquer pour accéder à la définition |
+| Aperçu de définition | **Alt**+**F12** | Vue inline d’une définition |
 | Visualiseur de structure | Lignes grises en pointillés entre accolades | Placez le curseur pour voir la structure de votre code |
-| Navigation vers les assemblys décompilés | **F12** ou **Ctrl + clic** | Accédez à une source externe (décompilée avec ILSpy) en activant la fonctionnalité : **Outils > Options > Éditeur de texte > C# > Avancé > Activer la navigation vers les sources décompilées**. |
+| Navigation vers les assemblys décompilés | **F12** ou **Ctrl**+**Clic** | Accédez à une source externe (décompilée avec ILSpy) en activant la fonctionnalité : **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé** > **Activer la navigation vers les sources décompilées**. |
 
 ![Accéder à tout et Rechercher toutes les références](../ide/media/VSIDE_Productivity_Navigation.png)
 
 ## <a name="i-want-to-run-and-see-my-unit-tests"></a>Je souhaite exécuter et afficher mes tests unitaires.
 Nous avons apporté de nombreuses améliorations à l’expérience de test dans Visual Studio 2017. Utilisez l’une de nos expériences de test unitaire avec les frameworks de test MSTest v1, MSTest v2, NUnit ou XUnit.
-- La découverte de tests de l’*Explorateur de tests* est rapide dans la version 15.6 (pour de meilleurs résultats, passez à la dernière version de votre adaptateur de test).
+- La découverte de tests de l’**Explorateur de tests** est rapide dans la version 15.6 (pour de meilleurs résultats, passez à la dernière version de votre adaptateur de test).
 - Organisez vos tests dans l’Explorateur de tests avec notre nouveau *tri hiérarchique* dans la version 15.6.
-- [Live Unit Testing](../test/live-unit-testing.md) exécute en continu les tests impactés par vos changements de code et met à jour les icônes de l’éditeur inline pour vous informer de l’état de vos tests. Incluez ou excluez des tests spécifiques ou des projets de test de votre *jeu de tests dynamique*.
+- [Live Unit Testing](../test/live-unit-testing.md) exécute en continu les tests impactés par vos modifications du code et met à jour les icônes de l’éditeur inline pour vous informer de l’état de vos tests. Incluez ou excluez des tests spécifiques ou des projets de test de votre *jeu de tests dynamique*.
 
 ![Vue de la hiérarchie de l’Explorateur de tests dans Visual Studio](../ide/media/VSGuide_Testing.png)
 
 ## <a name="i-want-to-debug-my-code"></a>Je souhaite déboguer mon code.
 Nous avons ajouté une multitude de nouvelles fonctionnalités de débogage dans Visual Studio 2017.
 - *Cliquer pour exécuter* vous permet de placer le curseur à côté d’une ligne de code, de cliquer sur l’icône verte de « lecture » qui s’affiche et d’exécuter votre programme jusqu’à ce qu’il atteigne cette ligne.
-- La nouvelle *Assistance sur l’exception* place les informations les plus importantes, comme la variable 'null' d’une NullReferenceException, en haut de la boîte de dialogue.
+- La nouvelle **Assistance sur l’exception** place les informations les plus importantes, comme la variable 'null' d’une NullReferenceException, en haut de la boîte de dialogue.
 - Le débogage [Revenir en arrière](../debugger/how-to-use-intellitrace-step-back.md) vous permet de revenir aux étapes ou aux points d’arrêt précédents et de voir l’état de l’application comme elle était avant.
-- Le [débogage d’instantané](/azure/application-insights/app-insights-snapshot-debugger) vous permet d’investiguer l’état d’une application web dynamique au moment où une exception a été levée (sur Azure uniquement).
+- Le [débogage d’instantané](/azure/application-insights/app-insights-snapshot-debugger) vous permet d’examiner l’état d’une application web dynamique au moment où une exception a été levée (sur Azure uniquement).
 
 ![Nouvelle assistance sur l’exception dans VS2017](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Je veux utiliser la gestion de versions avec mes projets.
 Vous pouvez utiliser git ou TFVC pour stocker et mettre à jour votre code dans Visual Studio.
-- Organisez vos changements locaux avec *Team Explorer* et utilisez la barre d’état pour suivre les validations et les changements en attente.
+- Organisez vos changements locaux avec **Team Explorer** et utilisez la barre d’état pour suivre les validations et les changements en attente.
 - Configurez l’intégration et la livraison continues pour vos projets dans Visual Studio avec l’extension [Outils de livraison continue pour Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) et adoptez le flux de travail de développement agile.
 
 ![Contrôle de code source dans Visual Studio](../ide/media/VSIDE_Productivity_SourceControl.png)
@@ -133,13 +133,13 @@ Voici une liste de fonctionnalités de l’éditeur liées à la productivité p
 
 | Fonctionnalité | Détails | Comment activer |
 |-|-|-|
-| Rechercher un fichier dans l’Explorateur de solutions | Met en évidence le fichier actif dans l’Explorateur de solutions | **Outils > Options > Projets et solutions > Suivre un élément actif dans l’Explorateur de solutions** |
-| Ajouter des instructions using pour les types dans les assemblys de référence et les packages NuGet | Affiche une ampoule avec un correctif de code pour installer un package NuGet pour un type non référencé | **Outils > Options > Éditeur de texte > C# > Avancé > Suggérer des usings pour les types dans les assemblys de référence** et **Suggérer des usings pour les types dans les packages NuGet** |
-| Activer l’analyse complète de la solution | Voir toutes les erreurs dans votre solution dans la liste d’erreurs | **Outils > Options > Éditeur de texte > C# > Avancé > Activer l’analyse complète de la solution** |
-| Activer la navigation vers les sources décompilées | Permet d’activer la fonctionnalité Atteindre la définition sur les types/membres de sources externes et d’utiliser le décompilateur ILSpy pour afficher les corps de méthodes | **Outils > Options > Éditeur de texte > C# > Avancé > Activer la navigation vers les sources décompilées** |
-| Mode de saisie semi-automatique/suggestion | Change le comportement de saisie semi-automatique dans IntelliSense - Les développeurs qui connaissent IntelliJ ont tendance à changer le paramètre par défaut | **Menu > Edition > IntelliSense > Activer/Désactiver le mode de saisie semi-automatique** |
-| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Affiche les informations de référence du code et l’historique des modifications dans l’éditeur | **Outils > Options > Éditeur de texte > Tous les langages > CodeLens** |
-| [Extraits de code](../ide/visual-csharp-code-snippets.md) | Permet de vous épargner le texte réutilisable courant |  Tapez un nom d’extrait et appuyez deux fois sur « Tab ». |
+| Rechercher un fichier dans l’Explorateur de solutions | Met en évidence le fichier actif dans l’Explorateur de solutions | **Outils** > **Options** > **Projets et solutions** > **Suivre un élément actif dans l’Explorateur de solutions** |
+| Ajouter des instructions using pour les types dans les assemblys de référence et les packages NuGet | Affiche une ampoule avec un correctif de code pour installer un package NuGet pour un type non référencé | **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé** > **Suggérer des usings pour les types dans les assemblys de référence** et **Suggérer des usings pour les types dans les packages NuGet** |
+| Activer l’analyse complète de la solution | Visualisez toutes les erreurs de votre solution dans la **Liste d’erreurs** | **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé**   > **Activer l’analyse complète de la solution** |
+| Activer la navigation vers les sources décompilées | Permet d’activer la fonctionnalité Atteindre la définition sur les types/membres de sources externes et d’utiliser le décompilateur ILSpy pour afficher les corps de méthodes | **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé** > **Activer la navigation vers les sources décompilées** |
+| Mode de saisie semi-automatique/suggestion | Change le comportement de saisie semi-automatique dans IntelliSense - Les développeurs qui connaissent IntelliJ ont tendance à changer le paramètre par défaut | **Menu** > **Modifier** > **IntelliSense** > **Activer/Désactiver le mode de saisie semi-automatique** |
+| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Affiche les informations de référence du code et l’historique des modifications dans l’éditeur | **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **CodeLens** |
+| [Extraits de code](../ide/visual-csharp-code-snippets.md) | Permet de vous épargner le texte réutilisable courant |  Tapez un nom d’extrait et appuyez deux fois sur **Tab**. |
 
 ![Extraits de code dans Visual Studio](../ide/media/VSGuide_SmartEditor.png)
 
