@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7dd31d94552895d42c803df81e1e66cd9a3947f0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analyser la réactivité de l’interface utilisateur HTML dans les applications Windows universelles
 Cette rubrique explique comment isoler les problèmes de performances dans vos applications à l’aide du profileur de réactivité de l’interface utilisateur, outil d’analyse des performances disponible pour les applications Windows universelles.  
@@ -100,7 +100,7 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
     -   Utilisez la [Visualiser la chronologie de la session de diagnostic](#Ruler) pour afficher les [Marquer du code pour l'analyser](#ProfileMark), les événements du cycle de vie de l'application et la chronologie associée pour ces événements, ainsi que la chronologie des données dans les autres graphiques.  
   
-    -   Utilisez le [CPU utilization graph](#CPUutilization) pour afficher les informations générales sur l'activité du processeur et le type de travail géré au cours d'une période spécifique. Les périodes d'activité excessive du processeur sont plus susceptibles d'entraîner des problèmes de réactivité et la suppression d'images.  
+    -   Utilisez le [CPU utilization graph](#CPUUtilization) pour afficher les informations générales sur l'activité du processeur et le type de travail géré au cours d'une période spécifique. Les périodes d'activité excessive du processeur sont plus susceptibles d'entraîner des problèmes de réactivité et la suppression d'images.  
   
     -   Si vous développez un jeu ou une application multimédia élaborée, utilisez le [Visualiser le débit visuel (i/s)](#VisualThroughput) pour identifier les périodes durant lesquelles la fréquence d'images a été supprimée.  
   

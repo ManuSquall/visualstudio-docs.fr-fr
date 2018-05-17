@@ -1,7 +1,9 @@
 ---
-title: Utiliser Visual Studio pour créer une application web ASP.NET Core dans C# | Microsoft Docs
-ms.custom: ''
+title: Utiliser Visual Studio pour créer une application web ASP.NET Core dans C#
+description: Découvrez comment créer une application web ASP.NET Core dans Visual Studio avec C#, pas à pas.
+ms.custom: mvc
 ms.date: 10/10/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
 author: TerryGLee
@@ -12,11 +14,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 0f1a1397de407a4497961920762b0084069b3764
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b74f47201c706cbb4fe4a4f0eca647b350d9a72
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application web ASP.NET Core
 
@@ -30,7 +32,7 @@ Vous allez d’abord créer un projet d’application web ASP.NET Core. Le type 
 
 1. Ouvrez Visual Studio 2017.
 
-1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet...**.
+1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
 1. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual C#**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application web ASP.NET Core**, puis **OK**.
 
@@ -81,7 +83,7 @@ Vous allez d’abord créer un projet d’application web ASP.NET Core. Le type 
 > [!NOTE]
 > Si vous obtenez le message d’erreur **Impossible de se connecter au serveur web 'IIS Express'**, fermez Visual Studio et rouvrez-le en utilisant l’option **Exécuter en tant qu’administrateur** dans le menu contextuel. Ensuite, réexécutez l’application.
 
-Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur l’IDE de Visual Studio. Si vous souhaitez en savoir plus sur ses fonctionnalités, poursuivez avec un didacticiel de la section **Didacticiels** dans la table des matières.
+Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur l’IDE de Visual Studio. Si vous souhaitez en savoir plus sur ses fonctionnalités, poursuivez avec un didacticiel de la section **Didacticiels** dans la table des matières.
 
 ## <a name="next-steps"></a>Étapes suivantes
 Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur C#, ASP.NET Core et l’IDE Visual Studio. Pour en apprendre davantage, passez au tutoriel suivant.

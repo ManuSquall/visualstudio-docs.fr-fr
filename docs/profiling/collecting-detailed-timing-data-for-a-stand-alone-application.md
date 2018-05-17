@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4edc21357e9ffac539a21416a815868702ceabd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fcf99a6e701e775653cf1524e0e7850761909621
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Collecte de données de minutage détaillées pour une application autonome en utilisant la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données de performances détaillées d’un composant client (autonome) utilisant la méthode d’instrumentation à partir de la ligne de commande.  
@@ -36,16 +36,16 @@ Cette section décrit les procédures et les options de collecte des données de
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  
-|**Profilage d’applications à l’aide de l’échantillonnage**|-   [Collecte de statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
-|**Profilage de l’allocation de mémoire .NET et du garbage collection**|-   [Collecte de données de mémoire .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
-|**Profilage du conflit des ressources et de l’activité des threads**|-   [Collecte de données de concurrence](../profiling/collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
+|**Profilage d’applications à l’aide de l’échantillonnage**|-   [Collecte de statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
+|**Profilage de l’allocation de mémoire .NET et du garbage collection**|-   [Collecte de données de mémoire .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
+|**Profilage du conflit des ressources et de l’activité des threads**|-   [Collecte de données concurrentielles](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
   
 ### <a name="profiling-by-using-the-instrumentation-method"></a>Profilage à l’aide de la méthode d’instrumentation  
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  
-|**Profiler des applications ASP.NET**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)|  
-|**Profilage de services**|-   [Collecte de données de temporisation détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
+|**Profiler des applications ASP.NET**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
+|**Profilage de services**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Analyse des vues et des rapports de données d’instrumentation  
  [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)  

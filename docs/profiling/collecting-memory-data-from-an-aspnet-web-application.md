@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7b9484af3519f03dffa00ce0be4b6ba66a4328ac
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 161f96c38a12de1f29a0f4ebd5d3779f31cf8f23
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Collecte des données de mémoire d'une application Web ASP.NET en utilisant la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données d’allocation mémoire et de durée de vie des objets pour une application web ASP.NET avec l’outil en ligne de commande **VSPerfCmd**.  
@@ -39,15 +39,15 @@ Cette section décrit les procédures et les options de collecte des données d�
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  
-|**Profiler à l’aide de la méthode d’échantillonnage**|-   [Collecte de statistiques d'applications en utilisant l'échantillonnage](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)|  
-|**Profiler le conflit des ressources et l’activité des threads**|-   [Collecte de données de concurrence](../profiling/collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)|  
+|**Profiler à l’aide de la méthode d’échantillonnage**|-   [Collecte de statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|  
+|**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
+|**Profiler le conflit des ressources et l’activité des threads**|-   [Collecte de données concurrentielles](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
   
 ### <a name="profiling-net-framework-memory-data"></a>Profilage de données de mémoire .NET Framework  
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  
-|**Profiler des applications autonomes (clientes)**|-   [Collecte de données de mémoire .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
+|**Profiler des applications autonomes (clientes)**|-   [Collecte de données de mémoire .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
 |**Profiler des services**|-   [Collecte de données de mémoire .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
   
 ### <a name="analyzing-net-memory-data-views-and-reports"></a>Analyse des vues et des rapports de données de mémoire .NET  

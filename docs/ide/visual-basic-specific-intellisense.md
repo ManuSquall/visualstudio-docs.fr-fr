@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1334cb7f890f3924ca0720b4704e573a67058356
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 903bfe0a0effe87ca3f56fcfca5044afdf17e347
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense pour les fichiers de code Visual Basic
 
@@ -38,7 +38,7 @@ Les conseils syntaxiques affichent la syntaxe de l’instruction que vous tapez.
 
 Pour désactiver par défaut la saisie semi-automatique, désélectionnez l’option **Répertorier automatiquement les membres** dans la page de propriétés **Général** du dossier **Visual Basic**.
 
-Vous pouvez appeler manuellement la saisie semi-automatique en appelant les fonctionnalités Liste des membres, Compléter le mot ou ALT+FLÈCHE DROITE. Pour plus d’informations, consultez [Utilisation d’IntelliSense](../ide/using-intellisense.md).
+Vous pouvez appeler manuellement la complétion en appelant Liste des membres, Compléter le mot ou **Alt**+**Droite**. Pour plus d’informations, consultez [Utiliser IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>IntelliSense par zone
 
@@ -56,4 +56,4 @@ En Visual Basic, les listes de saisie semi-automatique IntelliSense ont deux con
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
+- [Utiliser IntelliSense](../ide/using-intellisense.md)

@@ -1,5 +1,5 @@
 ---
-title: Ciblage du .NET Framework dans Visual Studio
+title: Cibler le .NET Framework dans Visual Studio
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e44ed988c15a77511d880f1877c1038579a360b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cba93b86d6ecebf249e11d18bd6e4b6b86e59fda
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Vue d’ensemble du multiciblage Visual Studio
 
@@ -50,7 +50,7 @@ Quand vous travaillez sur un projet qui cible une version antérieure du [!INCLU
 
 - Il filtre les contrôles personnalisés de la **boîte à outils** pour supprimer ceux qui ne sont pas disponibles dans la version ciblée et pour afficher la version la plus récente quand plusieurs contrôles sont disponibles.
 
-- Il filtre IntelliSense de façon à omettre les fonctionnalités de langage qui ne sont pas disponibles dans la version ciblée.
+- Il filtre **IntelliSense** de façon à omettre les fonctionnalités du langage qui ne sont pas disponibles dans la version ciblée.
 
 - Il filtre les propriétés de la fenêtre **Propriétés** de façon à omettre celles qui ne sont pas disponibles dans la version ciblée.
 
@@ -61,25 +61,25 @@ Quand vous travaillez sur un projet qui cible une version antérieure du [!INCLU
 > [!NOTE]
 > Le ciblage du Framework ne garantit pas que votre application s’exécutera correctement. Vous devez tester votre application pour vous assurer qu’elle s’exécute sur la version ciblée. Vous ne pouvez pas cibler des versions du Framework antérieures à .NET Framework 2.0.
 
-## <a name="selecting-a-target-framework-version"></a>Sélection d’une version du Framework cible
+## <a name="select-a-target-framework-version"></a>Sélectionner une version du framework cible
 
 Quand vous créez un projet, sélectionnez la version du .NET Framework cible dans la boîte de dialogue **Nouveau projet**. La liste des frameworks disponibles inclut les versions de framework installées applicables au type de modèle sélectionné. Pour les types de modèles qui n’ont pas besoin de .NET Framework, par exemple des modèles .NET Core, la liste déroulante **Framework** est masquée.
 
 ![Liste déroulante Framework dans la boîte de dialogue Nouveau projet](media/vside-newproject-framework.png)
 
-Dans un projet existant, vous pouvez modifier la version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cible dans la boîte de dialogue Propriétés du projet. Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Dans un projet existant, vous pouvez modifier la version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cible dans la boîte de dialogue Propriétés du projet. Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-## <a name="resolving-system-and-user-assembly-references"></a>Résolution des références système et d’assembly utilisateur
+## <a name="resolve-system-and-user-assembly-references"></a>Résoudre des références d’assembly système et utilisateur
 
 Pour cibler une version du .Net Framework, vous devez d’abord installer les références d’assembly appropriées. Vous pouvez télécharger des packs du développeur pour différentes versions du .NET Framework à partir de la page de [Téléchargements .NET](https://www.microsoft.com/net/download/windows).
 
-La boîte de dialogue **Ajouter une référence** désactive les assemblys système qui ne se rapportent pas à la version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cible afin qu’ils ne puissent pas être ajoutés à un projet par inadvertance. (Les assemblys système sont des fichiers .dll inclus dans une version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].) Les références qui appartiennent à une version du Framework ultérieure à la version ciblée ne seront pas résolues, et les contrôles qui dépendent d’une telle référence ne peuvent pas être ajoutés. Si vous voulez activer une telle référence, réinitialisez la cible du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] du projet sur une cible qui inclut la référence.  Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+La boîte de dialogue **Ajouter une référence** désactive les assemblys système qui ne se rapportent pas à la version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cible afin qu’ils ne puissent pas être ajoutés à un projet par inadvertance. (Les assemblys système sont des fichiers *.dll* inclus dans une version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].) Les références qui appartiennent à une version du Framework ultérieure à la version ciblée ne seront pas résolues, et les contrôles qui dépendent d’une telle référence ne peuvent pas être ajoutés. Si vous voulez activer une telle référence, réinitialisez la cible du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] du projet sur une cible qui inclut la référence.  Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-Pour plus d’informations sur les références d’assembly, consultez [Résolution d’assemblys au moment du design](../msbuild/resolving-assemblies-at-design-time.md).
+Pour plus d’informations sur les références d’assembly, consultez [Résoudre les assemblys au moment du design](../msbuild/resolving-assemblies-at-design-time.md).
 
-## <a name="enabling-linq"></a>Activation de LINQ
+## <a name="enable-linq"></a>Activer LINQ
 
-Quand vous ciblez .NET Framework 3.5 ou une version ultérieure, une référence à System.Core et une importation au niveau du projet pour System.Linq (en Visual Basic uniquement) sont automatiquement ajoutées. Si vous voulez utiliser les fonctionnalités LINQ, vous devez également activer Option Infer (en Visual Basic uniquement). La référence et l’importation sont automatiquement supprimées si vous faites passer la version du .NET Framework à une version antérieure. Pour plus d’informations, consultez [Utilisation de LINQ](/dotnet/csharp/tutorials/working-with-linq).
+Quand vous ciblez .NET Framework 3.5 ou ultérieur, une référence à **System.Core** et une importation au niveau du projet pour <xref:System.Linq> (en Visual Basic uniquement) sont automatiquement ajoutées. Si vous voulez utiliser des fonctionnalités LINQ, vous devez également activer `Option Infer` (en Visual Basic uniquement). La référence et l’importation sont automatiquement supprimées si vous faites passer la version du .NET Framework à une version antérieure. Pour plus d’informations, consultez [Utiliser LINQ](/dotnet/csharp/tutorials/working-with-linq).
 
 ## <a name="see-also"></a>Voir aussi
 

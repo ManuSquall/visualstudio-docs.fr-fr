@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d96d547c3558c9c1e5ce4d11904a0c8cce048e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-code-snippets"></a>Extraits de code C#
 
@@ -26,7 +26,7 @@ Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapi
 
  Vous pouvez insérer un extrait de code à l’emplacement du curseur, ou insérer un extrait de code « Entourer de » autour du code actuellement sélectionné. L’outil d’insertion d’extraits de code est appelé par le biais de la commande **Insérer un extrait de code** ou **Entourer de** du menu **IntelliSense**, ou à l’aide des raccourcis clavier **Ctrl**+**K**,**X** ou **Ctrl**+**K**,**S** (respectivement).
 
- L’outil d’insertion d’extraits de code affiche le nom de l’extrait de code pour tous les extraits de code disponibles. Il inclut également une boîte de dialogue d’entrée où vous pouvez taper le nom de l’extrait de code, ou une partie du nom. Il met en évidence la correspondance la plus proche avec un nom d’extrait de code. Une pression sur la touche **Tab** fait disparaître l’outil d’insertion d’extraits de code et insère l’extrait de code sélectionné. Une pression sur la touche **Échap** ou un clic sur le bouton de la souris dans l’Éditeur de code fait disparaître l’outil d’insertion d’extraits de code sans insérer d’extrait de code.
+ **L’outil d’insertion d’extraits de code** montre le nom de l’extrait de code pour tous les extraits de code disponibles. Il inclut également une boîte de dialogue d’entrée où vous pouvez taper le nom de l’extrait de code, ou une partie du nom. Il met en évidence la correspondance la plus proche avec un nom d’extrait de code. Une pression sur la touche **Tab** fait disparaître l’outil d’insertion d’extraits de code et insère l’extrait de code sélectionné. Le fait d’appuyer sur la touche **Échap** ou de cliquer dans l’Éditeur de code fait disparaître l’outil d’insertion d’extraits de code sans insérer d’extrait de code.
 
 ## <a name="default-code-snippets"></a>Extraits de code par défaut
 
@@ -57,7 +57,7 @@ Par défaut, les extraits de code suivants sont inclus dans Visual Studio pour C
 |iterator|Crée un itérateur.|Dans une classe ou un struct.|
 |iterindex|Crée une paire itérateur/indexeur « named » à l’aide d’une classe imbriquée.|Dans une classe ou un struct.|
 |lock|Crée un bloc [lock](/dotnet/csharp/language-reference/keywords/lock-statement).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
-|mbox|Crée un appel à <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Vous devrez peut-être ajouter une référence à System.Windows.Forms.dll.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
+|mbox|Crée un appel à <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Il peut être nécessaire d’ajouter une référence à *System.Windows.Forms.dll*.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |namespace|Crée une déclaration [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Dans un espace de noms (notamment l’espace de noms global).|
 |prop|Crée une déclaration de [propriété implémentée automatiquement](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Dans une classe ou un struct.|
 |propfull|Crée une déclaration de propriété avec des accesseurs `get` et `set`.|Dans une classe ou un struct.|

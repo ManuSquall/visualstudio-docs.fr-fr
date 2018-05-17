@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2904e329e26fe588553745f3a9d6ca8a572b5c83
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 4050694685302eb527b33d8810bc7f92974bc305
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 du tutoriel : créer une application Django avec les affichages et modèles de page
 
@@ -278,4 +278,4 @@ Réponse : lorsque Django recherche un modèle référencé dans la fonction `r
 - [Écrire votre première application Django, partie 1 - affichages](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
 - Pour davantage de fonctionnalités avec les modèles Django, tels que fichiers inclus et héritage, consultez [Le langage de gabarit Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - [Formation d’expression régulière sur inLearning](https://www.linkedin.com/learning/topics/regular-expressions) (LinkedIn)
-- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

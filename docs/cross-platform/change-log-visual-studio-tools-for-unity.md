@@ -5,16 +5,16 @@ ms.date: 03/23/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: dantogno
-ms.author: v-davian
+author: TerryGLee
+ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4d7f965cd2a0cd34ea3cb889f25809d32bee2270
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Journal des modifications (Outils Visual Studio pour Unity, Windows)
 Journal des modifications Visual Studio Tools pour Unity
@@ -84,7 +84,7 @@ Journal des modifications Visual Studio Tools pour Unity
 -   **Intégration :**
 
     -   Recharger uniquement les projets avec une modification externe (avec limitation).
- 
+
 ## <a name="3601"></a>3.6.0.1
  Publication 24-01-2018
 
@@ -93,9 +93,9 @@ Journal des modifications Visual Studio Tools pour Unity
 -   **Intégration :**
 
     -   Correction du problème de conversion automatique des symboles de débogage pdb-mdb.
-    
+
     -   Correction de l’appel indirect à EditorPrefs.GetBool affectant l’inspecteur lors de la tentative de modifier la taille du tableau.
- 
+
 ## <a name="3600"></a>3.6.0.0
  Publication 10-01-2018
 
@@ -112,7 +112,7 @@ Journal des modifications Visual Studio Tools pour Unity
 -   **Débogueur :**
 
     -   Prise en charge ajoutée des attributs DebuggerHidden/DebuggerStepThrough avec le nouveau runtime Unity.
-    
+
 -   **Assistants :**
 
     -   Présentation de la version « la plus récente » pour les Assistants.
@@ -126,7 +126,7 @@ Journal des modifications Visual Studio Tools pour Unity
 -   **Débogueur :**
 
     -   Correction d’une concurrence dans la gestion des événements d’arrêt.
-    
+
 -   **Assistants :**
 
     -   Actualiser le contexte roslyn avant d’insérer la méthode.

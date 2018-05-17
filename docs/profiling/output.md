@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acaf2271357cb33cfaadbe9da653a8f57bd5627d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e5b588100666f54d4345c15bc3278cf4bf2b3054
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="output"></a>Sortie
 L’option **Output** spécifie le nom du fichier de données de profilage pour la session de performances. **Output** doit être utilisé avec l’option **Start**.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Method /Output:FileName [Options]  
 ```  
   
@@ -38,7 +38,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="example"></a>Exemple  
  Dans l’exemple suivant, le fichier de données de profilage est créé dans le répertoire actif.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 ```  
   

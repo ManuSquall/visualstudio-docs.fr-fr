@@ -1,20 +1,21 @@
 ---
 title: Actions de génération
+description: Cet article décrit les différentes actions de génération que vous pouvez utiliser dans le cadre de projets C#
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 3e876bbc20f2f2e86ba7ec4806f67f4a2573a089
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 889414d391a4a894879399317d782df58a8bacb3
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="build-actions"></a>Actions de génération
 
 Tous les fichiers d’un projet Visual Studio pour Mac ont une action de génération qui détermine comment ils sont traités pendant une génération. Vous pouvez définir ces actions en cliquant avec le bouton droit sur n’importe quel fichier et en accédant à **Action de génération**, comme illustré ci-dessous :
 
-![](media/projects-and-solutions-image1.png)
+![Sélection de l’action de génération Compiler dans l’Explorateur de solutions](media/projects-and-solutions-image1.png)
 
 Voici quelques-unes des actions de génération courantes pour les projets C# :
 

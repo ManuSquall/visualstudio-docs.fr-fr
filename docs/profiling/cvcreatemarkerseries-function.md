@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d6148adfdca2b432eae15157a13e10051ca710
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3aa1acd52eeffe454dda3f081c97865290245644
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries, fonction
 Crée des séries de marqueurs pour un fournisseur donné.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```C  
 _Check_return_ HRESULT CvCreateMarkerSeriesW(  
     _In_ PCV_PROVIDER  pProvider,  
     _In_ LPCWSTR pSeriesName,  

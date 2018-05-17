@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c93a0c4d8fd312c9b7b6367043fc35b183d022bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f4af615091751f1076a5fe8659a8749fc41ca37
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Guide pratique pour installer la prise en charge de Python dans Visual Studio sur Windows
 
@@ -95,7 +95,7 @@ Si vous rencontrez des problèmes lors de l’installation ou de l’exécution 
 
     ![Option PTVS du programme d’installation de Visual Studio 2015](media/installation-vs2015.png)
 
-1. Une fois l’installation de Visual Studio terminée, [installez un interpréteur Python de votre choix](installing-python-interpreters.md). Si vous disposez déjà d’un interpréteur et que Visual Studio ne le détecte pas automatiquement, consultez la page [Identifier manuellement un environnement existant](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+1. Une fois l’installation de Visual Studio terminée, [installez un interpréteur Python de votre choix](installing-python-interpreters.md). Si vous disposez déjà d’un interpréteur et que Visual Studio ne le détecte pas automatiquement, consultez [Identifier manuellement un environnement existant](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 et versions antérieures
 
@@ -105,7 +105,7 @@ Si vous rencontrez des problèmes lors de l’installation ou de l’exécution 
     - Visual Studio 2012 : [PTVS 2.1 pour Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478).
     - Visual Studio 2010 : [PTVS 2.1 pour Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479).
 
-1. [Installez un interpréteur Python de votre choix](installing-python-interpreters.md). Si vous disposez déjà d’un interpréteur et que Visual Studio ne le détecte pas automatiquement, consultez la page [Identifier manuellement un environnement existant](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+1. [Installez un interpréteur Python de votre choix](installing-python-interpreters.md). Si vous disposez déjà d’un interpréteur et que Visual Studio ne le détecte pas automatiquement, consultez [Identifier manuellement un environnement existant](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 ## <a name="install-locations"></a>Emplacements d’installation
 

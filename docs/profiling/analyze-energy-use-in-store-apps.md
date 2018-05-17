@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 05b5b87afda20990f122597520b0e2cf7e9b7ac1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0efe4fe685a0a75438cb68590722ea6748a15f23
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analyser la consommation d’énergie dans les applications UWP
 Le profileur **Consommation d’énergie** de Visual Studio vous permet d’analyser la consommation d’électricité et de batterie des applications UWP sur les tablettes de faible puissance qui fonctionnent tout ou partie du temps sur batterie. Sur un périphérique alimenté par batterie, une application trop gourmande en énergie peut entraîner le mécontentement du client, voire, éventuellement, sa désinstallation. L’optimisation de l’utilisation d’énergie peut augmenter la popularité et l’utilisation de votre application par les clients.  
@@ -67,7 +67,7 @@ Le profileur **Consommation d’énergie** de Visual Studio vous permet d’anal
   
  Pour ajouter des marques utilisateur, ajoutez le code suivant aux points de votre code que vous souhaitez marquer :  
   
-```  
+```JavaScript  
 if (performance && performance.mark) {  
     performance.mark(markDescription);  
 }  

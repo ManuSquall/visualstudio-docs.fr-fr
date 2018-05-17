@@ -1,7 +1,7 @@
 ---
 title: 'Tutoriel : Découvrez Django dans Visual Studio, étape 1'
 description: Une procédure pas à pas des notions fondamentales de Django dans le cadre de projets Visual Studio, qui montre la prise en charge du développement de Django par Visual Studio.
-ms.date: 04/25/2018
+ms.date: 05/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97f801d111f7fcb2aaeb207c3f3fcf1784a04f30
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 389bd7a3dedfcc400e9cf3d56d26723a5fc9aa7e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutoriel, étape 1 : Prise en main de l’infrastructure web de Django dans Visual Studio
 
@@ -33,7 +33,9 @@ Dans ce didacticiel, vous apprendrez à :
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Visual Studio 2017 avec la charge de travail Python installée. Pour obtenir des instructions, consultez [Installation de la prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md).
+- Visual Studio 2017 avec les options suivantes :
+  - La charge de travail **Développement Python** (onglet **Charge de travail** dans le programme d’installation). Pour obtenir des instructions, consultez [Installation de la prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md).
+  - **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
 
 Les modèles de projets Django sont également inclus dans toutes les versions précédentes de Python Tools pour Visual Studio, même si certains détails peuvent être différents de ceux traités dans ce tutoriel (en particulier dans les versions antérieures de l’infrastructure Django).
 
@@ -89,7 +91,7 @@ Lorsque vous travaillez avec Django à partir de la ligne de commande, vous comm
 
     ![La fenêtre Team Explorer affiche les options de référentiels disponibles pour le contrôle de code source.](media/django/step01-team-explorer.png)
 
-    Vous pouvez choisir le service souhaité pour vos propres projets. Ce tutoriel montre comment utiliser GitHub, où le code d’exemple terminé pour le tutoriel est conservé dans le référentiel [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django).
+    Vous pouvez choisir le service souhaité pour vos propres projets. Ce tutoriel montre comment utiliser GitHub. L’exemple de code terminé est conservé dans le dépôt [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 1. Lors de la sélection d’un des contrôles **Publication**, **Team Explorer** vous invite à obtenir plus d’informations. Par exemple, lors de la publication de l’exemple de ce tutoriel, le référentiel proprement dit a dû être créé en premier, auquel cas l’option **Push sur référentiel distant** a été utilisée avec l’URL du référentiel.
 
@@ -206,4 +208,4 @@ Réponse : en plus des commandes de menu **Déboguer** et des boutons de barre 
 
 - Code de projet Django : [Écrire votre première application Django, 1ère partie](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - Utilitaire d’administration : [django-admin et manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
-- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

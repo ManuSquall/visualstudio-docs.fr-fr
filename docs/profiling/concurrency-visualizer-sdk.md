@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7268e786c7d68d642778f0c0dca31de170b424b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aee8da6d1faaa68bfc7b72d54760745f1566d219
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="concurrency-visualizer-sdk"></a>Kit SDK du visualiseur concurrentiel
 Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur concurrentiel pour afficher des informations supplémentaires dans le visualiseur concurrentiel. Vous pouvez associer les données supplémentaires à des phases et à des événements de votre code. Ces visualisations supplémentaires sont appelées *marqueurs*.  Pour obtenir une introduction pas à pas, consultez [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405).  
@@ -59,7 +59,7 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
   
 4.  Ajoutez une instruction using à votre code.  
   
-    ```  
+    ```cpp  
     using namespace Concurrency::diagnostic;  
     ```  
   

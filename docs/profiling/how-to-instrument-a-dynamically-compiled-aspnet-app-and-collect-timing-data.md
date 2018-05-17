@@ -9,11 +9,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7c1f3073b1b3ebeb142805e5d34097c82e038e67
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6be68c781b0117bca9ff895f0ecf62d97858a0a3
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Comment : instrumenter une application Web ASP.NET compilée dynamiquement et collecter des données de temporisation détaillées avec le profileur en utilisant la ligne de commande
 
@@ -28,7 +28,7 @@ Démarrez le profileur, puis exécutez l’application cible. Lorsque le profile
 
 ## <a name="configuring-the-aspnet-web-application-and-the-web-server"></a>Configuration de l’application web ASP.NET et du serveur web
 
-1. Modifiez le fichier web.config de l’application cible. Consultez [Guide pratique pour modifier des fichiers web.config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement](../profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications.md).
+1. Modifiez le fichier web.config de l’application cible. Consultez [Guide pratique pour modifier des fichiers web.config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
 2. Ouvrez une fenêtre Invite de commandes.
 

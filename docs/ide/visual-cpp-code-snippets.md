@@ -1,5 +1,5 @@
 ---
-title: Extraits de code Visual C++
+title: Extraits de code Visual C++
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,11 +11,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eca50a938312f6c463ff661c83fd90c9218b5ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb091701384d36ca5aa8154701d94cda5fb34a5b
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C++
 
@@ -23,9 +23,9 @@ Dans Visual Studio, vous pouvez utiliser des extraits de code pour ajouter du co
 
 Vous pouvez ajouter un extrait de code à un emplacement particulier dans votre code (insertion) ou sélectionner du code pour l'entourer d'un extrait de code.
 
-## <a name="inserting-a-code-snippet"></a>Insertion d’un extrait de code
+## <a name="insert-a-code-snippet"></a>Insérer un extrait de code
 
-Pour insérer un extrait de code, ouvrez un fichier de code C++ (.cpp ou .h), cliquez n'importe où dans le fichier et effectuez l'une des opérations suivantes :
+Pour insérer un extrait de code, ouvrez un fichier de code C++ (*.cpp* ou *.h*), cliquez n’importe où dans le fichier et effectuez une des opérations suivantes :
 
 - Effectuez un clic droit pour afficher le menu contextuel et sélectionnez **Insérer un extrait**
 
@@ -41,9 +41,9 @@ Vous devez voir une liste de choix commençant par **#if**. Quand vous sélectio
 #endif // 0
 ```
 
-Vous pouvez alors remplacer le 0 par la condition correcte.
+Vous pouvez alors remplacer le **0** par la condition correcte.
 
-## <a name="using-a-code-snippet-to-surround-selected-code"></a>Utilisation d’un extrait de code pour entourer du code sélectionné
+## <a name="use-a-code-snippet-to-surround-selected-code"></a>Utiliser un extrait de code pour entourer du code sélectionné
 
 Pour utiliser un extrait de code pour entourer du code sélectionné, sélectionnez une ligne (ou plusieurs lignes) et effectuez l'une des opérations suivantes :
 
@@ -71,7 +71,7 @@ Les noms de la plupart des extraits de code sont explicites, mais certains noms 
 
 ## <a name="class-vs-classi"></a>Comparaison de class et classi
 
-L’extrait de code **class** fournit la définition d’une classe nommée MyClass, avec le constructeur et le destructeur par défaut appropriés, et pour laquelle les définitions du constructeur et du destructeur sont situées en dehors de la classe :
+L’extrait de code **class** fournit la définition d’une classe nommée `MyClass`, avec le constructeur et le destructeur par défaut appropriés, et pour laquelle les définitions du constructeur et du destructeur se trouvent en dehors de la classe :
 
 ```cpp
 class MyClass
@@ -93,7 +93,7 @@ MyClass::~MyClass()
 }
 ```
 
-L’extrait de code **classi** fournit également la définition d’une classe nommée MyClass, mais le constructeur et le destructeur par défaut sont définis à l’intérieur de la définition de la classe :
+L’extrait de code **classi** fournit également la définition d’une classe nommée `MyClass`, mais le constructeur et le destructeur par défaut sont définis à l’intérieur de la définition de la classe :
 
 ```cpp
 class MyClass
@@ -153,7 +153,7 @@ class SomeClass {
 };
 ```
 
-Si vous insérez l'extrait de code destructeur, il fournit un destructeur pour SomeClass :
+Si vous insérez l’extrait de code du destructeur, il fournit un destructeur pour `SomeClass` :
 
 ```cpp
 class SomeClass {

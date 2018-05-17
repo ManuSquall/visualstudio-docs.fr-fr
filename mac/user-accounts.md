@@ -1,15 +1,15 @@
 ---
 title: Comptes d'utilisateurs
-description: ''
+description: Informations sur la connexion à Visual Studio pour Mac et sur l’activation d’abonnements dans Visual Studio pour Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.openlocfilehash: 8326362b9a6aed4bdab3478534bea9aea414b499
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: c5f829a9b2f828e4f7b2ef0cf1a410a607bf86b9
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="user-accounts"></a>Comptes d'utilisateurs
 
@@ -19,5 +19,5 @@ En vous connectant, vous activez l'accès à tous les services associés à votr
 
 ## <a name="in-this-section"></a>Dans cette section
 
-* [Connexion à Visual Studio](signing-in.md)
+* [Connexion à Visual Studio pour Mac](signing-in.md)
 * [Activer un abonnement](activation.md)

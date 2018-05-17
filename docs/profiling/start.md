@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf374c03f7918e48c57f221ada22e43b435c0a78
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0b9c699056a3ef4ee493397e99e37f41cbd2cf3e
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="start"></a>Start
 L’option **Start** est une option de VSPerfCmd.exe qui initialise le profileur avec la méthode de profilage spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Method /Output:FileName [Options]  
 ```  
   
@@ -67,7 +67,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="example"></a>Exemple  
  L’exemple suivant montre l’utilisation de l’option **Start** de VSPerfCmd.exe pour initialiser le profileur.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  

@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bebc312858e16688598ba289e4c53d93010122b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procédure pas à pas : utilisation des API du profileur
 La procédure pas à pas utilise une application C# pour montrer comment utiliser les API des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous utilisez les API du profileur pour limiter la quantité de données collectées pendant le profilage par instrumentation.  
@@ -43,7 +43,7 @@ La procédure pas à pas utilise une application C# pour montrer comment utilise
   
  Par défaut, quand le profileur est démarré, il collecte des données au niveau global. Le code suivant au début du programme désactive le profilage global.  
   
-```  
+```csharp  
 DataCollection.StopProfile(  
 ProfileLevel.Global,  
 DataCollection.CurrentId);  
@@ -62,7 +62,7 @@ DataCollection.CurrentId);
   
 2.  Copiez et collez le code suivant dans votre projet :  
   
-    ```  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.Text;  
@@ -131,7 +131,7 @@ DataCollection.CurrentId);
   
  Par défaut, quand le profileur est démarré, il collecte des données au niveau global. Le code suivant au début du programme désactive le profilage global.  
   
-```  
+```csharp  
 DataCollection.StopProfile(  
 ProfileLevel.Global,  
 DataCollection.CurrentId);  

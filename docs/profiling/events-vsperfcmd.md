@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4aa07333385951ba2ffd2f1bcf86aa5e8442982
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 352feacc59a129d24575408776e9ec075b1294ac
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 L’option **Events** de VSPerfCmd.exe contrôle la journalisation du suivi d’événements pour Windows (ETW). Les données ETW sont enregistrées dans un fichier .etl, qui est distinct du fichier de données du profileur. Les données peuvent être affichées dans un rapport avec la commande [VSPerfReport](../profiling/vsperfreport.md) /summary:etw.  
@@ -23,7 +23,7 @@ L’option **Events** de VSPerfCmd.exe contrôle la journalisation du suivi d’
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cmd  
 VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]  
 ```  
   
@@ -79,7 +79,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 > [!NOTE]
 >  Quand des événements ETW du CLR sont activés, des données de démarrage supplémentaires sont également collectées dans le rapport Vue Trace. Pour exclure les événements de démarrage du rapport, utilisez la commande suivante :  
   
-```  
+```cmd  
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5  
 ```  
   

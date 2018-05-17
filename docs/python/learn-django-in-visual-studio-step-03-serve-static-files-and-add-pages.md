@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8dba33c4ff90f3066c8333870c5d18c371b5fb2a
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 du tutoriel : prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
 
@@ -283,4 +283,4 @@ Les étapes suivantes démontrent l’héritage :
 - [Écrire votre première application Django, partie 3 (affichages)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Pour davantage de fonctionnalités des modèles Django, tel que le flux de contrôle, consultez [Le langage de gabarit Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - Pour plus d’informations sur l’utilisation de la balise `{% url %}`, consultez [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) au sein de [balises du modèle et filtres intégrés pour la référence aux modèles Django](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (docs.djangoproject.com)
-- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

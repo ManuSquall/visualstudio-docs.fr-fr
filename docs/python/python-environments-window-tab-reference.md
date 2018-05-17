@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7017ba7e91acc36b72c229cdf77ee7b604f6a920
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 96c177b48e594c7cec9f5dd026782f0d9541eb2b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Référence sur les onglets de la fenêtre Environnements Python
 
@@ -36,7 +36,7 @@ Fournit des commandes et des informations de base pour l’environnement :
 
 | Commande | Description |
 | --- | --- |
-| Make this environment the default for new projects (Définir cet environnement par défaut pour les nouveaux projets) | Définit l’environnement actif, ce qui risque d’interrompre brièvement le fonctionnement de Visual Studio lors du chargement de la base de données IntelliSense. Les environnements avec de nombreux packages peuvent être interrompus pendant plus longtemps. |
+| Make this environment the default for new projects (Définir cet environnement par défaut pour les nouveaux projets) | Définit l’environnement actif, ce qui risque d’interrompre brièvement le fonctionnement de Visual Studio (2017 version 15.5 et antérieure) pendant le chargement de la base de données IntelliSense. Les environnements avec de nombreux packages peuvent être interrompus pendant plus longtemps. |
 | Visit the distributor’s website (Visiter le site web du serveur de distribution) | Dans un navigateur, ouvre l’URL fournie par la distribution Python. Python 3.x, par exemple, accède à python.org. |
 | Ouvrir une fenêtre interactive | Ouvre la [fenêtre (REPL) interactive](python-interactive-repl-in-visual-studio.md) pour cet environnement au sein de Visual Studio, en appliquant tous les [scripts de démarrage (voir ci-dessous)](#startup-scripts). |
 | Explorer les scripts interactifs | Consultez [Scripts de démarrage](#startup-scripts). |
@@ -75,7 +75,7 @@ S’il est disponible, il contient les informations décrites dans le tableau ci
 
 *Également appelé « pip » dans les versions antérieures.*
 
-Gère les packages installés dans l’environnement, ce qui vous permet également de rechercher des packages et d’en installer de nouveaux (y compris toutes les dépendances).
+Gère les packages installés dans l’environnement à l’aide de pip, ce qui vous permet également de rechercher des packages et d’en installer de nouveaux (y compris toutes les dépendances). Dans Visual Studio 2017 versions 15.7 et ultérieures, une option **Packages (Conda)** s’affiche qui utilise le gestionnaire de package conda à la place. (Si vous ne voyez pas ce choix, définissez l’option **Outils** > **Options** > **Python** > **Expérimental** > **Utiliser le Gestionnaire de package Conda si disponible (au lieu de Pip)** et redémarrez Visual Studio.)
 
 Les packages qui sont déjà installés apparaissent avec des contrôles pour mettre à jour (flèche vers le haut) et désinstaller (X dans un cercle) le package :
 
@@ -105,7 +105,8 @@ Affiche l’état actuel de la base de données de saisie semi-automatique Intel
 
 ![Onglet IntelliSense, Environnements Python](media/environments-intellisense-tab.png)
 
-Dans **Visual Studio 2017 version 15.5** et versions précédentes, les saisies semi-automatiques IntelliSense dépendent d’une base de données qui a été compilée pour cette bibliothèque. La génération de la base de données est effectuée en arrière-plan quand une bibliothèque est installée, mais peut prendre du temps et ne pas être terminée lorsque vous démarrez l’écriture de code. **Visual Studio 2017 versions 15.6** et ultérieures utilise une méthode plus rapide pour fournir des saisies semi-automatiques qui ne dépendent pas de la base de données, sauf si vous choisissez spécifiquement de l’activer.
+- Dans **Visual Studio 2017 version 15.5** et versions précédentes, les saisies semi-automatiques IntelliSense dépendent d’une base de données qui a été compilée pour cette bibliothèque. La génération de la base de données est effectuée en arrière-plan quand une bibliothèque est installée, mais peut prendre du temps et ne pas être terminée lorsque vous démarrez l’écriture de code.
+- **Visual Studio 2017 versions 15.6** et ultérieures utilise une méthode plus rapide pour fournir des complétions qui ne dépendent pas de la base de données par défaut. Pour cette raison, l’onglet est étiqueté **IntelliSense [base de données désactivée]**. Vous pouvez activer la base de données en désactivant l’option **Outils** > **Options** > **Python** > **Expérimental** > **Utiliser le nouveau style IntelliSense pour les environnements**.
 
 Lorsque Visual Studio détecte un nouvel environnement (ou que vous en ajoutez un), il commence automatiquement à compiler la base de données en analysant les fichiers source de la bibliothèque. Ce processus peut prendre entre une minute et plus d’une heure, selon ce qui est installé. (Anaconda, par exemple, est fourni avec de nombreuses bibliothèques et la compilation de la base de données prend un certain temps). Une fois ce processus terminé, vous obtenez la base de données IntelliSense détaillée et n’avez pas à actualiser une nouvelle fois la base de données (avec le bouton **Refresh DB** (Actualiser base de données)) jusqu’à ce que vous installiez d’autres bibliothèques.
 

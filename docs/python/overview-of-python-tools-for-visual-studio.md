@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 44d2e6c20173c075f1a3e5aac4881f12f5b46e1f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Utilisation de Python dans Visual Studio sur Windows
 
@@ -46,7 +46,7 @@ Pour plus d'informations :
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Large éventail de fonctionnalités de modification, IntelliSense et d’inclusion de code
 
-Visual Studio fournit un éditeur Python de première classe, notamment la coloration syntaxique, la saisie semi-automatique dans l’ensemble du code et des bibliothèques, la mise en forme du code, l’aide sur les signatures, la refactorisation, les affinages de type et la validation lint (la validation lint est illustrée ci-dessous). Visual Studio fournit également des fonctionnalités uniques, comme l’affichage de classes, Atteindre la définition, Rechercher toutes les références et les extraits de code. L’intégration directe à la [fenêtre interactive](#interactive-window) vous permet de développer rapidement du code Python qui est déjà enregistré dans un fichier.
+Visual Studio fournit un éditeur Python de première classe, notamment la coloration syntaxique, la saisie semi-automatique dans l’ensemble du code et des bibliothèques, la mise en forme du code, l’aide sur les signatures, la refactorisation, la validation lint (illustrée ci-dessous) et les affinages de type. Visual Studio fournit également des fonctionnalités uniques, comme l’affichage de classes, Atteindre la définition, Rechercher toutes les références et les extraits de code. L’intégration directe à la [fenêtre interactive](#interactive-window) vous permet de développer rapidement du code Python qui est déjà enregistré dans un fichier.
 
 ![Complétions de code pour le code Python dans Visual Studio](media/code-editing-completions-simple.png)
 

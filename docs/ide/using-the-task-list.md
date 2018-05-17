@@ -1,5 +1,5 @@
 ---
-title: Utilisation de la liste des tâches
+title: Utiliser la liste des tâches
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a0fb071186d816e852c695ffe1cceed29d23ff8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4a82663fe397488ee78a82d4fab5d38bfec4ae37
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="using-the-task-list"></a>Utilisation de la liste des tâches
+# <a name="use-the-task-list"></a>Utiliser la liste des tâches
 
 Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui utilisent des jetons tels que `TODO` et `HACK`, ou des jetons personnalisés, et gérez les raccourcis qui permettent d’accéder directement à un emplacement prédéfini dans le code. Cliquez sur l’élément dans la liste pour accéder à son emplacement dans le code source.
 
@@ -30,29 +30,29 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
 
 Quand la **Liste des tâches** est ouverte, elle apparaît en bas de la fenêtre d’application.
 
-### <a name="to-open-the-task-list"></a>Pour ouvrir la fenêtre Liste des tâches
+### <a name="open-the-task-list"></a>Ouvrir la Liste des tâches
 
-- Dans le menu **Affichage**, choisissez **Liste des tâches** (clavier : Ctrl+\\,T).
+- Dans le menu **Affichage**, choisissez **Liste des tâches** (clavier : **Ctrl**+**\\**,**T**).
 
     ![Fenêtre Liste des tâches](../ide/media/vs2015_task_list.png "vs2015_task_list")
 
-### <a name="to-change-the-sort-order-of-the-list"></a>Pour modifier l'ordre de tri de la liste
+### <a name="change-the-sort-order-of-the-list"></a>Changer l’ordre de tri de la liste
 
 - Cliquez sur l'en-tête d'une colonne quelconque. Pour affiner vos résultats de recherche, appuyez sur Maj et cliquez sur un deuxième en-tête de colonne.
 
-     Comme alternative, dans le menu contextuel, vous pouvez choisir **Trier par**, puis choisir un en-tête. Pour affiner vos résultats de recherche, appuyez sur Maj et choisissez un deuxième en-tête de colonne.
+     Comme alternative, dans le menu contextuel, vous pouvez choisir **Trier par**, puis choisir un en-tête. Pour affiner vos résultats de recherche, appuyez sur **Maj** et choisissez un deuxième en-tête.
 
-### <a name="to-show-or-hide-columns"></a>Pour afficher ou masquer des colonnes
+### <a name="show-or-hide-columns"></a>Afficher ou masquer des colonnes
 
 - Dans le menu contextuel, choisissez **Afficher les colonnes**. Choisissez les colonnes que vous souhaitez afficher ou masquer.
 
-### <a name="to-change-the-order-of-the-columns"></a>Pour modifier l'ordre des colonnes
+### <a name="change-the-order-of-the-columns"></a>Changer l’ordre des colonnes
 
 - Faites glisser n'importe quel en-tête de colonne à l'emplacement de votre choix.
 
 ## <a name="user-tasks"></a>Tâches utilisateur
 
-La fonctionnalité des tâches utilisateur n’est plus disponible depuis Visual Studio 2015. Quand vous ouvrez une solution qui contient des données de tâches utilisateur ayant été créées dans Visual Studio 2013 ou une version antérieure, ces données sont conservées dans votre fichier .suo, mais les tâches utilisateur ne s’affichent pas dans la liste des tâches.
+La fonctionnalité des tâches utilisateur n’est plus disponible depuis Visual Studio 2015. Quand vous ouvrez une solution qui contient des données de tâches utilisateur ayant été créées dans Visual Studio 2013 ou une version antérieure, ces données sont conservées dans votre fichier *.suo*, mais les tâches utilisateur ne s’affichent pas dans la liste des tâches.
 
 Si vous voulez continuer à accéder aux données de tâches utilisateur et les mettre à jour, vous devez ouvrir le projet dans Visual Studio 2013 et copier le contenu de toutes les tâches utilisateur dans votre outil de gestion de projet par défaut (tel que Team Foundation Server).
 
@@ -74,11 +74,11 @@ Un commentaire dans votre code, précédé d'un marqueur de commentaire et d'un 
 
 ###  <a name="customTokens"></a> Jetons personnalisés
 
-Par défaut, Visual Studio inclut les jetons suivants : HACK, TODO, UNDONE, NOTE. Ces jetons ne respectent pas la casse.
+Par défaut, Visual Studio inclut les jetons suivants : `HACK`, `TODO`, `UNDONE`, `NOTE`. Ces jetons ne respectent pas la casse.
 
 Vous pouvez également créer vos propres jetons personnalisés.
 
-#### <a name="to-create-a-custom-token"></a>Pour créer un jeton personnalisé
+#### <a name="create-a-custom-token"></a>Créer un jeton personnalisé
 
 1. Dans le menu **Outils** , choisissez **Options**.
 
@@ -96,7 +96,7 @@ Vous pouvez également créer vos propres jetons personnalisés.
 
 Par défaut, les commentaires TODO C++ sont affichés dans la fenêtre **Liste des tâches** . Vous pouvez modifier ce comportement.
 
-#### <a name="to-turn-off-c-todo-comments"></a>Pour désactiver les commentaires TODO C++
+#### <a name="turn-off-c-todo-comments"></a>Désactiver les commentaires TODO C++
 
 Dans le menu **Outils**, choisissez **Options** > **Éditeur de texte** > **C/C++** > **Affichage** > **Énumérer les tâches de commentaire** et définissez la valeur sur false.
 
@@ -106,9 +106,9 @@ Un *raccourci* est un signet dans le code qui est suivi dans la **Liste des tâc
 
 ![Icône de raccourci de la liste des tâches Visual Studio](../ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")
 
-### <a name="to-create-a-shortcut"></a>Pour créer un raccourci
+### <a name="create-a-shortcut"></a>Créer un raccourci
 
-Pour créer un raccourci, insérez le pointeur dans le code à l’emplacement souhaité du nouveau raccourci. Choisissez **Edition** > **Signets** > **Ajouter un raccourci vers la liste des tâches** ou appuyez sur **Ctrl**  +  **K**, **Ctrl** + **H**.
+Pour créer un raccourci, insérez le pointeur dans le code à l’emplacement souhaité du nouveau raccourci. Choisissez **Edition** > **Signets** > **Ajouter un raccourci vers la liste des tâches** ou appuyez sur **Ctrl** + **K**, **Ctrl**+**H**.
 
 Pour parcourir les raccourcis figurant dans le code, choisissez un raccourci dans la liste, puis **Tâche suivante** ou **Tâche précédente** dans le menu contextuel.
 
