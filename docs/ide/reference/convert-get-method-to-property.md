@@ -1,7 +1,7 @@
 ---
-title: Convertir la méthode Get en propriété et convertir une propriété en méthode Get dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Convertir la méthode Get en propriété et convertir une propriété en méthode Get dans Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.devlang: csharp
@@ -14,11 +14,11 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc1ef42761ad0816772dc68e00e2fdab693fac27
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8195817c50679fd5b297b35eaf29aca0145a330b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Convertir la méthode Get en propriété/convertir une propriété en méthode Get (refactorisations)
 
@@ -28,7 +28,7 @@ Ces refactorisations s’appliquent à :
 
 ## <a name="convert-get-method-to-property"></a>Convertir la méthode Get en propriété
 
-**Quoi :** vous permet de convertir une méthode Get en une propriété (et éventuellement votre méthode Set) et vice versa.
+**Quoi :** vous permet de convertir une méthode Get en une propriété (et éventuellement votre méthode Set).
 
 **Quand :** vous avez une méthode Get qui ne contient aucune logique.
 

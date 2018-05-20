@@ -10,11 +10,11 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a8602915827c442fa2fc4cbddf4db2a25ef21749
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d813226dfa79a65da85a2b17e54306d12a4ed09
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Créer des applications Xamarin avec une interface utilisateur native dans Visual Studio
 
@@ -95,7 +95,7 @@ Visual Studio n’a pas de modèle de solution pour la création d’application
   
     -   Cliquez sur **Installer**.  
   
-7.  Répétez l’étape 7 pour rechercher et installer le package **Microsoft.CSharp** dans le projet .NET Standard. Cette bibliothèque est nécessaire pour utiliser le type de données `dynamic` C# dans une bibliothèque .NET Standard.
+7.  Répétez l’étape 6 pour rechercher et installer le package **Microsoft.CSharp** dans le projet .NET Standard. Cette bibliothèque est nécessaire pour utiliser le type de données `dynamic` C# dans une bibliothèque .NET Standard.
   
 8.  Générez votre solution et vérifiez l’absence d’erreur de génération.  
   

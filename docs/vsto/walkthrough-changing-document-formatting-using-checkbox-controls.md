@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Modification de mise en forme d’un Document à l’aide de contrôles de case à cocher | Documents Microsoft'
+title: 'Procédure pas à pas : Modifier la mise en forme d’un document à l’aide de contrôles CheckBox'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecbb0036fc74cf5d0d27ea61283ec5b733dca1a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 459253c6a84add4fcca68565d5bf082dc0931f22
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Procédure pas à pas : modification de la mise en forme d'un document à l'aide de contrôles CheckBox
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Procédure pas à pas : Modifier la mise en forme d’un document à l’aide de contrôles CheckBox
   Cette procédure pas à pas montre comment utiliser des contrôles Windows Forms dans une personnalisation au niveau du document pour Microsoft Office Word pour modifier la mise en forme de texte.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -47,21 +47,21 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Création du projet  
+## <a name="create-the-project"></a>Créer le projet  
  La première étape consiste à créer un projet de document Word.  
   
-#### <a name="to-create-a-new-project"></a>Pour créer un projet  
+### <a name="create-a-new-project"></a>Créer un nouveau projet  
   
 1.  Créer un projet de Document Word portant le nom **My Word Formatting**. Dans l’Assistant, sélectionnez **créer un nouveau document**.  
   
-     Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Pour plus d’informations, consultez [Comment : les projets Office de créer dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio ouvre le nouveau document Word dans le concepteur et ajoute le **My Word Formatting** projet **l’Explorateur de solutions**.  
   
-## <a name="adding-text-and-controls-to-the-word-document"></a>Ajout de texte et des contrôles au Document Word  
+## <a name="add-text-and-controls-to-the-word-document"></a>Ajouter du texte et des contrôles au document Word  
  Pour cette procédure pas à pas, ajoutez trois cases à cocher et du texte dans un <xref:Microsoft.Office.Tools.Word.Bookmark> contrôle au document Word. Les cases à cocher présente les options à l’utilisateur pour mettre en forme le texte.  
   
-#### <a name="to-add-three-check-boxes"></a>Pour ajouter trois cases à cocher  
+### <a name="add-three-check-boxes"></a>Ajoutez les trois cases à cocher  
   
 1.  Vérifiez que le document est ouvert dans le concepteur Visual Studio.  
   
@@ -92,7 +92,7 @@ ms.lasthandoff: 04/16/2018
     |**Name**|**applyUnderlineFont**|  
     |**Text**|**soulignement**|  
   
-#### <a name="to-add-text-and-a-bookmark-control"></a>Pour ajouter du texte et un contrôle Bookmark  
+### <a name="add-text-and-a-bookmark-control"></a>Ajouter du texte et un contrôle Bookmark  
   
 1.  Déplacer le point d’insertion sous les contrôles de case à cocher et tapez le texte suivant :  
   
@@ -110,10 +110,10 @@ ms.lasthandoff: 04/16/2018
   
  Ensuite, écrivez le code pour mettre en forme le texte lorsqu’une case à cocher est activée ou désactivée.  
   
-## <a name="formatting-the-text-when-a-check-box-is-checked-or-cleared"></a>Mise en forme la texte lorsqu’une case à cocher est activée ou désactivée  
+## <a name="format-the-text-when-a-check-box-is-checked-or-cleared"></a>Mettre en forme le texte lorsqu’une case à cocher est activée ou désactivée  
  Lorsque l’utilisateur sélectionne une option de mise en forme, modifier le format du texte dans le document.  
   
-#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>Pour modifier la mise en forme lors d’une case à cocher est activée.  
+### <a name="change-formatting-when-a-check-box-is-selected"></a>Modifier la mise en forme lors d’une case à cocher est activée  
   
 1.  Avec le bouton droit `ThisDocument` dans **l’Explorateur de solutions**, puis cliquez sur **afficher le Code** dans le menu contextuel.  
   
@@ -140,12 +140,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
-## <a name="testing-the-application"></a>Test de l'application  
+## <a name="test-the-application"></a>Tester l’application  
  Vous pouvez maintenant tester votre document pour vérifier que le texte est mis en forme correctement lorsque vous activez ou désactivez une case à cocher.  
   
-#### <a name="to-test-your-document"></a>Pour tester votre document  
+### <a name="test-your-document"></a>Tester votre document  
   
-1.  Appuyez sur F5 pour exécuter votre projet.  
+1.  Appuyez sur **F5** pour exécuter votre projet.  
   
 2.  Activez ou désactivez une case à cocher.  
   
@@ -154,16 +154,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Étapes suivantes  
  Cette procédure pas à pas illustre les principes fondamentaux de l’utilisation de cases à cocher et la modification par programme de mise en forme dans les documents Word. Voici quelques tâches susceptibles de venir après :  
   
--   Utilisez un bouton pour renseigner une zone de texte. Pour plus d’informations, consultez [procédure pas à pas : affichage de texte dans une zone de texte dans un Document à l’aide d’un bouton](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Utilisez un bouton pour renseigner une zone de texte. Pour plus d’informations, consultez [procédure pas à pas : afficher du texte dans une zone de texte dans un document à l’aide d’un bouton](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Utilisation de cases d'option pour sélectionner des styles de graphique. Pour plus d’informations, consultez [procédure pas à pas : mise à jour d’un graphique dans un Document à l’aide de cases d’option](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Utilisation de cases d'option pour sélectionner des styles de graphique. Pour plus d’informations, consultez [procédure pas à pas : mise à jour d’un graphique dans un document à l’aide de cases d’option](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
--  
-  
+
 ## <a name="see-also"></a>Voir aussi  
  [Procédures pas à pas utilisant Word](../vsto/walkthroughs-using-word.md)   
  [Procédures pas à pas et des exemples de développement office](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange (contrôle)](../vsto/namedrange-control.md)   
- [Limitations des contrôles Windows Forms dans les documents Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Limitations des contrôles Windows Forms sur des documents Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

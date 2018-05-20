@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017
 
@@ -60,7 +60,7 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | `--installPath <dir>` | Répertoire d’installation de l’instance à installer. Pour la commande d’installation, cette option est **facultative** et il s’agit de l’emplacement où l’instance doit être installée. Pour les autres commandes, cette option est **requise** et il s’agit de l’emplacement où l’instance précédente a été installée. |
 | `--addProductLang <language-locale>` | **Facultatif** : lors d’une installation ou d’une modification, cette option détermine les modules linguistiques de l’interface utilisateur qui sont installés sur le produit. Elle peut apparaître plusieurs fois sur la ligne de commande pour ajouter plusieurs modules linguistiques. Si elle est absente, l’installation utilise les paramètres régionaux de l’ordinateur. Pour plus d’informations, consultez la section [Liste des paramètres régionaux de langue](#list-of-language-locales) de cette page.|
 | `--removeProductLang <language-locale>` | **Facultatif** : lors d’une installation ou d’une modification, cette option détermine les modules linguistiques de l’interface utilisateur qui doivent être supprimés du produit. Elle peut apparaître plusieurs fois sur la ligne de commande pour ajouter plusieurs modules linguistiques. Pour plus d’informations, consultez la section [Liste des paramètres régionaux de langue](#list-of-language-locales) de cette page.|
-| `--add <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à ajouter. Les composants obligatoires de l’artefact sont installés, mais pas les composants recommandés ni facultatifs. Vous pouvez contrôler globalement les autres composants à l’aide des options `--includeRecommended` et/ou `--includeOptional`. Pour un contrôle plus précis, vous pouvez ajouter `;includeRecommended` ou `;includeOptional` à l’ID (par exemple, `--add Workload1;includeRecommended` ou `--add Workload2;includeRecommended;includeOptional`). Pour plus d’informations, consultez notre page [ID de charge de travail et de composant](workload-and-component-ids.md). Vous pouvez répéter cette option si nécessaire.|
+| `--add <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à ajouter. Les composants obligatoires de l’artefact sont installés, mais pas les composants recommandés ni facultatifs. Vous pouvez contrôler globalement les autres composants à l’aide des options `--includeRecommended` et/ou `--includeOptional`. Pour un contrôle plus précis, vous pouvez ajouter `;includeRecommended` ou `;includeOptional` à l’ID (par exemple, `--add Workload1;includeRecommended` ou `--add Workload2;includeRecommended;includeOptional`). Pour plus d’informations, consultez la page [ID de charge de travail et de composant](workload-and-component-ids.md). Vous pouvez répéter cette option si nécessaire.|
 | `--remove <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à supprimer. Pour plus d’informations, consultez notre page [ID de charge de travail et de composant](workload-and-component-ids.md). Vous pouvez répéter cette option si nécessaire.|
 | `--in <path>` | **Facultatif** : URI ou chemin d’un fichier réponse.  |
 | `--all` | **Facultatif** : indique s’il faut installer tous les composants et charges de travail d’un produit. |
@@ -80,12 +80,12 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | ----------------------- | --------------- |
 | `--layout <dir>` | Spécifie un répertoire pour créer un cache d’installation hors connexion. Pour plus d’informations, consultez [Créer une installation réseau de Visual Studio](create-a-network-installation-of-visual-studio.md).|
 | `--lang <one or more language-locales>` | **Facultatif** : utilisé avec `--layout` pour préparer un cache d’installation hors connexion avec des packages de ressources correspondant à la langue ou aux langues spécifiées. Pour plus d’informations, consultez la section [Liste des paramètres régionaux de langue](#list-of-language-locales) de cette page.|
-| `--add <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à ajouter. Les composants obligatoires de l’artefact sont installés, mais pas les composants recommandés ni facultatifs. Vous pouvez contrôler globalement les autres composants à l’aide des options `--includeRecommended` et/ou `--includeOptional`. Pour un contrôle plus précis, vous pouvez ajouter `;includeRecommended` ou `;includeOptional` à l’ID (par exemple, `--add Workload1;includeRecommended` ou `--add Workload2;includeOptional`). Pour plus d’informations, consultez notre page [ID de charge de travail et de composant](workload-and-component-ids.md). <br/>**Remarque** : Si `--add` est utilisé, seuls les composants et les charges de travail spécifiés ainsi que leurs dépendances sont téléchargés. Si `--add` n’est pas spécifié, l’ensemble des charges de travail et des composants est téléchargé sur la disposition.|
+| `--add <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à ajouter. Les composants obligatoires de l’artefact sont installés, mais pas les composants recommandés ni facultatifs. Vous pouvez contrôler globalement les autres composants à l’aide des options `--includeRecommended` et/ou `--includeOptional`. Pour un contrôle plus précis, vous pouvez ajouter `;includeRecommended` ou `;includeOptional` à l’ID (par exemple, `--add Workload1;includeRecommended` ou `--add Workload2;includeOptional`). Pour plus d’informations, consultez la page [ID de charge de travail et de composant](workload-and-component-ids.md). <br/>**Remarque** : Si `--add` est utilisé, seuls les composants et les charges de travail spécifiés ainsi que leurs dépendances sont téléchargés. Si `--add` n’est pas spécifié, l’ensemble des charges de travail et des composants est téléchargé sur la disposition.|
 | `--includeRecommended` | **Facultatif** : inclut les composants recommandés pour toutes les charges de travail installées, mais pas les composants facultatifs. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`. |
 | `--includeOptional` | **Facultatif** : inclut les composants recommandés *et* facultatifs pour toutes les charges de travail contenues dans la disposition. Les charges de travail sont spécifiées avec `--add`.  |
 | `--keepLayoutVersion` | **Nouveautés de la version 15.3, facultatif** : application des modifications à la disposition sans mettre à jour la version de la disposition. |
-| `--verify` | **Nouveautés de la version 15.3, facultatif** : vérification du contenu d’une disposition.  Tous les fichiers endommagés ou manquants sont listés. |
-| `--fix` | **Nouveautés de la version 15.3, facultatif** : vérification du contenu d’une disposition.  Si des fichiers sont endommagés ou manquants, ils sont retéléchargés.  Un accès à Internet est obligatoire pour corriger une disposition. |
+| `--verify` | **Nouveautés de la version 15.3, facultatif** : vérification du contenu d’une disposition. Tous les fichiers endommagés ou manquants sont listés. |
+| `--fix` | **Nouveautés de la version 15.3, facultatif** : vérification du contenu d’une disposition.  Si des fichiers sont endommagés ou manquants, ils sont retéléchargés. Un accès à Internet est obligatoire pour corriger une disposition. |
 | `--clean <one or more paths to catalogs>` | **Nouveautés de la version 15.3, facultatif** : suppression des anciennes versions des composants d’une disposition qui a été mise à jour vers une version plus récente. |
 
 | **Options d’installation avancées** | **Description** |
@@ -102,8 +102,8 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | `--noUpdateInstaller` | **Nouveautés de la version 15.2, facultatif** : Le cas échéant, empêche le programme d’installation de se mettre à jour quand le mode silencieux est spécifié. Le programme d’installation ne parvient pas à exécuter la commande et retourne un code de sortie différent de zéro si noUpdateInstaller est spécifié avec le mode silencieux quand une mise à jour du programme d’installation est obligatoire. |
 | `--noWeb` | **Nouveautés de la version 15.3, facultatif** : le programme d’installation télécharge désormais le contenu qu’il installe à partir d’Internet.  Tout le contenu en cours d’installation doit être disponible dans une disposition hors connexion.  Si la disposition n’a pas de contenu, le programme d’installation échoue.  Pour plus d’informations, consultez [Déploiement à partir d’une installation réseau](create-a-network-installation-of-visual-studio.md). |
 | `--path <name>=<path>` | **Nouveautés de la version 15.7, facultatif** : permet de spécifier des chemins d’installation personnalisés pour l’installation. Les noms de chemin pris en charge sont shared, cache et install. |
-| `--path cache=<path>` | **Nouveautés de la version 15.7, facultatif** : utilise l’emplacement que vous spécifiez pour télécharger les fichiers d’installation. Cet emplacement peut uniquement être défini pendant la première installation de Visual Studio. Exemple : `--path cache="C:\VS\cache"` |
-| `--path shared=<path>` | **Nouveautés de la version 15.7, facultatif** : contient des fichiers partagés pour les installations de Visual Studio côte à côte. Certains outils et kits SDK effectuent l’installation à un emplacement sur ce lecteur, tandis que d’autres peuvent l’effectuer sur un autre lecteur en passant outre ce paramétrage. Exemple : `--path shared="C:\VS\shared"` |
+| `--path cache=<path>` | **Nouveautés de la version 15.7, facultatif** : utilise l’emplacement que vous spécifiez pour télécharger les fichiers d’installation. Cet emplacement peut être défini uniquement pendant la première installation de Visual Studio. Exemple : `--path cache="C:\VS\cache"` |
+| `--path shared=<path>` | **Nouveautés de la version 15.7, facultatif** : contient des fichiers partagés pour les installations de Visual Studio côte à côte. Certains outils et kits SDK effectuent l’installation à un emplacement sur ce lecteur, tandis que d’autres peuvent l’effectuer sur un autre lecteur en passant outre ce paramétrage. Exemple : `--path shared="C:\VS\shared"` <br><br>Important : Ceci ne peut être défini qu’une seule fois, lors de la première installation de Visual Studio. |
 | `--path install=<path>` | **Nouveautés de la version 15.7, facultatif** : équivaut à `–-installPath`. En particulier, les options `--installPath "C:\VS"` et `--path install="C:\VS"` sont équivalentes. Seule une des deux options peut être utilisée à la fois. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Liste des ID de charge de travail et de composant
@@ -114,20 +114,20 @@ Pour obtenir la liste des ID de charge de travail et de composant triés par pro
 
 | **Paramètres régionaux de langue** | **Language** |
 | ----------------------- | --------------- |
-| cs-CZ | Tchèque |
-| de-DE | Allemand |
-| en-US | Anglais |
-| es-ES | Espagnol |
-| fr-FR | Français |
-| it-IT | Italien |
-| ja-JP | Japonais |
-| ko-KR | Coréen |
-| pl-PL | Polonais |
-| pt-BR | Portugais - Brésil |
-| ru-RU | Russe |
-| tr-TR | Turc |
-| zh-CN | Chinois (simplifié) |
-| zh-TW | Chinois (traditionnel) |
+| Cs-cz | Tchèque |
+| De-de | Allemand |
+| En-us | Anglais |
+| Es-es | Espagnol |
+| Fr-fr | Français |
+| It-it | Italien |
+| Ja-jp | Japonais |
+| Ko-kr | Coréen |
+| Pl-pl | Polonais |
+| Pt-br | Portugais - Brésil |
+| Ru-ru | Russe |
+| Tr-tr | Turc |
+| Zh-cn | Chinois (simplifié) |
+| Zh-tw | Chinois (traditionnel) |
 
 ## <a name="error-codes"></a>Codes d’erreur
 

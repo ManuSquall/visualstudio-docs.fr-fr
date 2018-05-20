@@ -1,5 +1,5 @@
 ---
-title: '&lt;appAddin&gt; élément (développement Office dans Visual Studio) | Documents Microsoft'
+title: '&lt;appAddin&gt; élément (développement Office dans Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85fda0db34bf104032e82d5725ff4d3d7aa772cb
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 0defe437e0778ee9d3c134148a3ca7e4b4cd2ef9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; élément (développement Office dans Visual Studio)
-  L’élément `appAddin` de l’espace de noms `vstov4` stocke les informations propres à la personnalisation des compléments VSTO.  
+  Le **appAddin** élément de la `vstov4` espace de noms stocke des informations spécifiques à la personnalisation des Compléments VSTO.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml 
 <appAddin  
   application  
   loadBehavior  
@@ -38,35 +38,35 @@ ms.lasthandoff: 04/27/2018
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- L’élément `appAddin` est obligatoire et se trouve dans l’espace de noms `vstov4` . Il existe un seul élément `appAddin` défini dans un manifeste de l’application.  
+ Le **appAddin** élément est obligatoire et est dans le `vstov4` espace de noms. Il existe un seul **appAddin** élément défini dans un manifeste d’application.  
   
- L’élément `appAddin` a les attributs suivants.  
+ Le **appAddin** élément a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`application`|Obligatoire. Identifie l’application Microsoft Office. La valeur peut être l’une des suivantes : Excel, InfoPath, Outlook, PowerPoint, Project, Visio ou Word.|  
-|`loadBehavior`|Facultatif. Par défaut, `loadBehavior` est activé en définissant cette valeur sur . Pour le débogage, vous pouvez désactiver le complément VSTO en définissant la valeur sur deux. Pour plus d’informations, consultez le tableau intitulé Valeurs LoadBehavior dans [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|  
-|`keyName`|Obligatoire. Cette valeur est le nom de la clé de Registre que l’application utilise pour charger le complément VSTO. Pour plus d'informations, consultez [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**Application**|Obligatoire. Identifie l’application Microsoft Office. La valeur peut être l’une des suivantes : Excel, InfoPath, Outlook, PowerPoint, Project, Visio ou Word.|  
+|**loadBehavior**|Facultatif. Par défaut, le **loadBehavior** est activé en définissant cette valeur. Pour le débogage, vous pouvez désactiver le complément VSTO en définissant la valeur sur deux. Pour plus d’informations, consultez le tableau intitulé valeurs LoadBehavior dans [les entrées de Registre pour les Compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**nom de clé**|Obligatoire. Cette valeur est le nom de la clé de Registre que l’application utilise pour charger le complément VSTO. Pour plus d’informations, consultez [les entrées de Registre pour les Compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
   
- L’élément `appAddin` possède les éléments enfants suivants.  
+ Le **appAddin** élément possède les éléments enfants suivants.  
   
 ### <a name="friendlyname"></a>FriendlyName  
- Facultatif. Le `friendlyName` élément est expliqué dans [ &#60;friendlyName&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ Facultatif. Le **friendlyName** élément est expliqué dans [ &#60;friendlyName&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
 ### <a name="description"></a>Description  
- Facultatif. Le `description` élément est expliqué dans [ &#60;description&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
+ Facultatif. Le **description** élément est expliqué dans [ &#60;description&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
   
 ### <a name="formregions"></a>formRegions  
- Obligatoire uniquement pour les compléments VSTO Outlook qui comprennent des zones de formulaire. Le `formRegions` élément est expliqué dans [ &#60;formRegions&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
+ Obligatoire uniquement pour les compléments VSTO Outlook qui comprennent des zones de formulaire. Le **formRegions** élément est expliqué dans [ &#60;formRegions&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
   
 ## <a name="vsto-add-in-example"></a>Exemple de complément VSTO  
   
 ### <a name="description"></a>Description  
- L’exemple de code suivant illustre les éléments `appAddin` dans une solution Outlook déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ L’exemple de code suivant illustre **appAddin** éléments dans une solution Outlook déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Code  
   
-```  
+```xml  
 <vstov4:appAddIn   
   application="Outlook"   
   loadBehavior="3"   
@@ -90,8 +90,8 @@ ms.lasthandoff: 04/27/2018
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
- [Manifestes de déploiement pour les Solutions Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifeste d’application ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

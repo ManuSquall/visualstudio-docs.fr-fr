@@ -13,11 +13,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0460e61fea7e617e497a46c55f8af811ba2e24fe
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: eef4f8b66da517e471a25bb36e777f6cc343b0a3
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>Changer les emplacements d’installation dans Visual Studio 2017
 
@@ -32,14 +32,14 @@ Voici comment procéder.
   > [!IMPORTANT]
   > Si vous interrompez l’installation pour la reprendre plus tard, Visual Studio reprend là où il s’était arrêté. En d’autres termes, la progression de son installation s’applique à ce qu’il reste à télécharger et à installer et ne démarre pas à partir du nombre précédent.
 
-2. Dans la section **Visual Studio**, acceptez la valeur par défaut. Elle permet d’installer le noyau du produit et inclut les fichiers propres à cette version de Visual Studio.
+2. Dans la section **IDE Visual Studio**, acceptez la valeur par défaut. Elle permet d’installer le noyau du produit et inclut les fichiers propres à cette version de Visual Studio.
 
  > [!IMPORTANT]
  > Si votre lecteur système est un disque SSD (Solid-State Drive), voici pourquoi nous vous recommandons d’accepter l’emplacement par défaut sur celui-ci : quand vous développez avec Visual Studio, vos opérations de lecture et d’écriture portent sur un grand nombre de fichiers, ce qui augmente l’activité d’E/S sur disque.  Il est conseillé de choisir votre lecteur le plus rapide pour gérer la charge.
 
 2. Dans la section **Cache de téléchargement**, indiquez si vous souhaitez conserver le cache de téléchargement, puis cochez ou décochez la case **Conserver le cache de téléchargement après l’installation** en conséquence. <br><br>Si vous décidez de ne pas conserver le cache de téléchargement, l’emplacement n’est utilisé que temporairement. De plus, cette action n’affecte pas ou ne supprime pas les fichiers des installations précédentes. (Pour nettoyer tous les packages d’installation, vous devez modifier vos installations précédentes séparément.)
 
-3. Dans la section **Cache de téléchargement**, spécifiez le lecteur où vous souhaitez stocker les fichiers d’installation et les manifestes. <br><br>Par exemple, si vous sélectionnez la charge de travail **Développement Desktop en C++**, la taille requise temporairement est de 1,58 Go sur votre lecteur système, qui est libérée dès que l’installation est terminée.
+3. Dans la section **Cache de téléchargement**, spécifiez le lecteur où vous souhaitez stocker les fichiers d’installation et les manifestes. <br><br>Par exemple, si vous sélectionnez la charge de travail « Développement Desktop en C++ », la taille requise temporairement est de 1,58 Go sur votre lecteur système, qui est libérée dès que l’installation est terminée.
 
  > [!NOTE]
  > Les fichiers sont téléchargés dans un dossier temporaire sur votre lecteur système, puis supprimés une fois que Visual Studio les a vérifiés, puis déplacés vers le dossier du cache de téléchargement. Si vous décidez de conserver votre cache de téléchargement sur un autre lecteur, Visual Studio a toujours besoin d’un espace disque équivalent à la taille du cache de téléchargement sur votre lecteur système.

@@ -1,5 +1,5 @@
 ---
-title: 'Comment : créer des associations entre les types (Concepteur de classes)'
+title: Guide pratique pour créer des associations entre les types (Concepteur de classes)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c8d1b484570f39c95bad9d07a94ef6d6b3027b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0b27530abeec1c01b5537fd91bfbe3e0e10448af
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-create-associations-between-types-class-designer"></a>Guide pratique pour créer des associations entre les types (Concepteur de classes)
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>Guide pratique pour créer des associations entre les types dans le Concepteur de classes
 
 Les lignes d’association du **Concepteur de classes** affichent la façon dont les classes d’un diagramme sont liées. Une ligne d'association représente une classe qui est le type d'une propriété ou d'un champ d'une autre classe de votre projet. Les lignes d'association sont en général utilisées pour illustrer les relations les plus importantes entre les classes de votre projet.
 
@@ -35,25 +35,25 @@ Même si vous pouvez afficher tous les champs et propriétés comme associations
 
 ## <a name="to-define-an-association-line-in-the-class-diagram"></a>Pour définir une ligne d'association dans le Diagramme de classes
 
-1.  Dans la boîte à outils, sous **Concepteur de classes**, sélectionnez **Association**.
+1. Dans la boîte à outils, sous **Concepteur de classes**, sélectionnez **Association**.
 
-2.  Tracez une ligne entre les deux formes que vous souhaitez relier par une association.
+2. Tracez une ligne entre les deux formes que vous souhaitez relier par une association.
 
      Une nouvelle propriété est créée dans la première classe. Cette propriété s'affiche comme ligne d'association (et non comme propriété d'un compartiment de la forme) avec un nom par défaut. Son type est la forme vers laquelle pointe la ligne d'association.
 
 ## <a name="to-change-the-name-of-an-association"></a>Pour modifier le nom d'une association
 
--   Sur la surface du diagramme, cliquez sur l'étiquette de la ligne d'association et modifiez-la.
+Sur la surface du diagramme, cliquez sur l'étiquette de la ligne d'association et modifiez-la.
 
- \- ou -
+Vous pouvez également effectuer les étapes suivantes :
 
-1.  Cliquez sur la forme qui contient la propriété indiquée comme association.
+1. Sélectionnez la forme qui contient la propriété indiquée comme association.
 
-     La forme obtient le focus et ses membres s'affichent dans la fenêtre Détails de classe et dans la fenêtre Propriétés.
+   La forme obtient le focus et ses membres s’affichent dans les fenêtres **Détails de classe** et **Propriétés**.
 
-2.  Dans la fenêtre Détails de classe ou dans la fenêtre Propriétés, modifiez le nom du champ de cette propriété et appuyez sur Entrée.
+2. Dans la fenêtre **Détails de classe** ou **Propriétés**, modifiez le champ de nom de cette propriété et appuyez sur **Entrée**.
 
-     Le nom est mis à jour dans la fenêtre **Détails de classe**, sur la ligne d’association, dans la fenêtre Propriétés et dans le code.
+   Le nom est mis à jour dans la fenêtre **Détails de classe**, sur la ligne d’association, dans la fenêtre **Propriétés** et dans le code.
 
 ## <a name="see-also"></a>Voir aussi
 

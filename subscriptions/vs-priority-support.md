@@ -3,21 +3,21 @@ title: Avantage Support prioritaire dans les abonnements Visual Studio | Microso
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/16/2018
+ms.date: 05/07/2018
 ms.topic: Get-Started-Article
 description: Découvrez l’avantage Support prioritaire inclus dans les abonnements Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e2cad13b3904779bfaca86f7d3e66ac5dbbcfbb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5353bb4dda9da754db7b00d96450df162c5a6d38
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Support prioritaire dans les abonnements Visual Studio
 
-L’avantage Support prioritaire vous permet d’accéder à une variété de forums communautaires de support où vous pouvez effectuer une recherche dans les publications existantes ou poser de nouvelles questions.  Si votre question n’obtient pas de réponse de la communauté dans un délai de deux jours, l’équipe de support technique de Microsoft vous fournira une réponse.  
+L’avantage Support prioritaire vous permet d’accéder à une variété de forums communautaires de support où vous pouvez effectuer une recherche dans les publications existantes ou poser de nouvelles questions.  Si la communauté ne répond pas à votre question dans les deux jours, l’équipe de support technique de Microsoft vous fournira une réponse.  
 
 Les abonnés avec certains abonnements Visual Studio sont éligibles à un support prioritaire via un grand nombre de forums couvrant diverses rubriques.
 
