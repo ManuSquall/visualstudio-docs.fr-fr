@@ -1,5 +1,5 @@
 ---
-title: Actions rapides
+title: Actions rapides, ampoules et tournevis
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 43198f5722de1bd983991df8ff19b17fcaea9e83
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quick-actions"></a>Actions rapides
 
@@ -29,21 +29,27 @@ Les actions rapides peuvent servir à :
 - appliquer une refactorisation (par exemple, [rendre inline une variable temporaire](../ide/reference/inline-temporary-variable.md)) ;
 - générer du code (par exemple, [introduire une variable locale](../ide/reference/introduce-local-variable.md)).
 
-Les actions rapides peuvent être appliquées en utilisant l’icône d’ampoule ![Petite icône en forme d’ampoule](media/vs2015_lightbulbsmall.png) ou en appuyant sur **Ctrl**+**.** lorsque le curseur se trouve sur une ligne de code pour laquelle une action est disponible. Une ampoule apparaît si votre code est souligné d’une ligne ondulée rouge et qu’une suggestion pour résoudre le problème est disponible dans Visual Studio. Par exemple, si une erreur est signalée par un soulignement rouge ondulé, une ampoule apparaît lorsque des corrections sont disponibles pour cette erreur.
+Les actions rapides peuvent être appliquées en utilisant l’icône en forme d’ampoule ![icône en forme d’ampoule](media/light-bulb-icon.png) ou de tournevis ![icône en forme de tournevis](media/screwdriver-icon.png), ou en appuyant sur **Ctrl**+**.** lorsque le curseur se trouve sur une ligne de code pour laquelle une action est disponible. Vous voyez une ampoule d’erreur ![icône en forme d’ampoule d’erreur](media/error-light-bulb-icon.png) s’il existe une ligne ondulée rouge indiquant une erreur, pour laquelle Visual Studio met à disposition un correctif.
 
 Des éditeurs tiers peuvent fournir des diagnostics et des suggestions personnalisés pour n’importe quel langage, par exemple dans le cadre d’un Kit de développement logiciel (SDK). Dans ce cas, les ampoules Visual Studio s’allument en fonction des règles établies.
 
-## <a name="to-see-a-light-bulb"></a>Pour afficher une ampoule
+## <a name="icons"></a>Icônes
 
-1. Dans de nombreux cas, les ampoules apparaissent spontanément au passage de la souris au niveau de l’erreur ou dans la marge gauche de l’éditeur lorsque le point d’insertion est déplacé dans une ligne comportant une erreur. Si vous remarquez une ligne ondulée rouge, vous pouvez pointer dessus avec la souris pour afficher l'ampoule. Vous pouvez aussi déclencher l'apparition d'une ampoule quand vous utilisez la souris ou le clavier pour vous rendre quelque part sur la ligne où le problème se produit.
+L’icône qui s’affiche quand une action rapide est disponible donne une indication du type de correctif ou de refactorisation disponible. L’icône en forme de *tournevis* ![icône en forme de tournevis](media/screwdriver-icon.png) indique simplement que des actions sont disponibles pour modifier le code, mais vous ne devez pas nécessairement les utiliser. L’icône en forme *d’ampoule jaune* ![icône en forme d’ampoule](media/light-bulb-icon.png) indique qu’il existe des actions disponibles que vous *devez* effectuer pour améliorer votre code. L’icône en forme *d’ampoule d’erreur* ![icône en forme d’ampoule d’erreur](media/error-light-bulb-icon.png) indique qu’une action est disponible pour résoudre une erreur dans votre code.
 
-1. Appuyez sur **Ctrl**+**.** sur une ligne pour appeler l’ampoule et accéder directement à la liste des corrections éventuelles.
+## <a name="to-see-a-light-bulb-or-screwdriver"></a>Pour afficher une ampoule ou un tournevis
+
+- Si un correctif est disponible, les ampoules apparaissent spontanément quand vous placez le pointeur de la souris à l’emplacement d’une erreur.
 
    ![Ampoule avec pointage de la souris](../ide/media/vs2015_lightbulb_hover.png)
 
+- Les ampoules et tournevis apparaissent dans la marge de gauche de l’éditeur quand vous déplacez le signe insertion dans une ligne de code pour lequel une action rapide est disponible.
+
+- Appuyez sur **Ctrl**+**.** n’importe où sur une ligne pour afficher la liste des actions rapides et refactorisations disponibles.
+
 ## <a name="to-see-potential-fixes"></a>Pour afficher les corrections éventuelles
 
-Cliquez sur la flèche bas ou sur le lien **Afficher les corrections éventuelles** pour afficher une liste d’actions rapides que l’ampoule peut effectuer pour vous.
+Sélectionnez la flèche vers le bas en regard de l’ampoule ou le lien **Afficher les corrections éventuelles** pour afficher une liste des actions rapides disponibles.
 
 ![Ampoule développée](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

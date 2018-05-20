@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble des propriétés de Document personnalisées | Documents Microsoft
+title: Vue d’ensemble des propriétés de document personnalisées
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5ca93d7a761ca8757f0e43ab88cb6586c203160
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b85dfe077f73a26eadf173197de2ca514ff44679
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="custom-document-properties-overview"></a>Custom Document Properties Overview
+# <a name="custom-document-properties-overview"></a>Vue d’ensemble des propriétés de document personnalisées
 
-Lorsque vous générez un projet au niveau du document, Visual Studio ajoute deux propriétés personnalisées au document dans le projet : \_AssemblyLocation et \_AssemblyName. Lorsqu’un utilisateur ouvre un document, l’application Microsoft Office vérifie les propriétés de document personnalisées. S’ils existent dans le document, l’application charge le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], qui démarre la personnalisation. Pour plus d’informations, consultez [Architecture des Solutions Office dans Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+Lorsque vous générez un projet au niveau du document, Visual Studio ajoute deux propriétés personnalisées au document dans le projet : \_AssemblyLocation et \_AssemblyName. Lorsqu’un utilisateur ouvre un document, l’application Microsoft Office vérifie les propriétés de document personnalisées. S’ils existent dans le document, l’application charge le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], qui démarre la personnalisation. Pour plus d’informations, consultez [solutions d’Architecture de Office dans Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -38,7 +38,7 @@ Cette propriété contient le CLSID d’une interface dans le composant de charg
 
 ## <a name="assemblylocation"></a>\_AssemblyLocation
 
-Cette propriété contient une chaîne qui fournit des détails sur le manifeste de déploiement pour la personnalisation. Pour plus d’informations sur les manifestes, consultez [manifestes d’Application et déploiement dans les Solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+Cette propriété contient une chaîne qui fournit des détails sur le manifeste de déploiement pour la personnalisation. Pour plus d’informations sur les manifestes, consultez [manifestes d’Application et déploiement dans les solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
  Valeur de la propriété The_AssemblyLocation peut avoir des formats différents, selon la façon dont la solution est déployée :
 
@@ -54,8 +54,8 @@ Cette propriété contient une chaîne qui fournit des détails sur le manifeste
 
 ## <a name="see-also"></a>Voir aussi
 
-[Architecture des Solutions Office dans Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-[Architecture des personnalisations au niveau du Document](../vsto/architecture-of-document-level-customizations.md)
-[manifestes d’Application et déploiement dans les Solutions Office ](../vsto/application-and-deployment-manifests-in-office-solutions.md) 
- [Comment : publier une Solution Office à l’aide de ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-[Comment : créer et modifier les propriétés de Document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Architecture des solutions Office dans Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md)
+- [Manifestes d’application et de déploiement dans les solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Comment : publier une solution Office à l’aide de ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Comment : créer et modifier les propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)

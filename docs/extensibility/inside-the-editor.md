@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ace9e405b52873d08c578c2af8e7005249e7d58c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="inside-the-editor"></a>Dans l’éditeur
 L’éditeur est composé d’un nombre de différents sous-systèmes, qui sont conçues pour conserver l’éditeur de texte modèle distinct à partir de l’affichage de texte et de l’interface utilisateur.  
@@ -59,7 +59,7 @@ L’éditeur est composé d’un nombre de différents sous-systèmes, qui sont 
   
  Le sous-système de modèle de texte est libre de concepts d’interface (interface utilisateur) utilisateur. Par exemple, il n’est pas responsable de la mise en forme du texte ou à la disposition du texte, et il n’a aucune connaissance des ornements visuels qui peut être associé avec le texte.  
   
- Les types publics du sous-système de modèle de texte sont contenus dans Microsoft.VisualStudio.Text.Data.dll et Microsoft.VisualStudio.CoreUtilitiy.dll, qui dépendent uniquement de la bibliothèque de classes de base du .NET Framework et Managed Extensibility Framework (MEF).  
+ Les types publics du sous-système de modèle de texte sont contenus dans Microsoft.VisualStudio.Text.Data.dll et Microsoft.VisualStudio.CoreUtility.dll, qui dépendent uniquement de la bibliothèque de classes de base du .NET Framework et Managed Extensibility Framework (MEF).  
   
 ### <a name="text-view-subsystem"></a>Sous-système de vue de texte  
  Le sous-système d’affichage de texte est responsable de la mise en forme et afficher du texte. Les types dans ce sous-système sont divisées en deux couches, selon que les types s’appuient sur Windows Presentation Foundation (WPF). Les types les plus importants sont <xref:Microsoft.VisualStudio.Text.Editor.ITextView> et <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, qui contrôle l’ensemble de lignes de texte qui doivent être affichées et également le point d’insertion, la sélection et les fonctionnalités pour ornementer le texte à l’aide des éléments de WPF UI. Ce sous-système fournit également des marges autour du texte de zone d’affichage. Ces marges peuvent être étendues et peuvent contenir différents types d’effets de contenu et de visual. Ligne numéros affiche et barres de défilement sont des exemples des marges.  

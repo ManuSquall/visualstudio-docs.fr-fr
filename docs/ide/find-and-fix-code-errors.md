@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa3d2412bfeabcaa3a66be7470367fcaaf0bfbc
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="make-code-work-in-visual-studio"></a>Faire fonctionner le code dans Visual Studio
 
@@ -91,17 +91,15 @@ Les avertissements nouveaux ou mis à jour apparaissent sous l’onglet **Liste 
 
 ## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Utiliser des ampoules pour corriger ou refactoriser du code
 
-Les [ampoules](../ide/quick-actions.md) sont une fonctionnalité relativement nouvelle de Visual Studio, qui vous permet de refactoriser le code en mode inline. Elles vous permettent de résoudre facilement et rapidement des avertissements courants dans du code C#, C++ et Visual Basic. Pour y accéder, cliquez avec le bouton droit sur le trait de soulignement ondulé d’un avertissement et sélectionnez **Actions rapides** ou appuyez sur **Ctrl**+**.** quand votre curseur est sur la ligne avec la ligne ondulée colorée. Vous voyez alors une liste des corrections ou des refactorisations possibles que vous pouvez appliquer à cette ligne de code.
+Les [actions rapides](../ide/quick-actions.md), disponibles à partir de l’icône d’ampoule ou de tournevis, permettent de refactoriser le code inline. Elles vous permettent de résoudre facilement et rapidement des avertissements courants dans du code C#, C++ et Visual Basic. Pour y accéder, cliquez avec le bouton droit sur le trait de soulignement ondulé d’un avertissement et sélectionnez **Actions rapides et refactorisations**. Ou bien, quand votre curseur est sur la ligne marquée d’une ligne ondulée en couleur, appuyez sur **Ctrl**+**.** Ou bien sélectionnez l’icône d’ampoule ou de tournevis dans la marge. Vous voyez alors une liste des corrections ou des refactorisations possibles que vous pouvez appliquer à cette ligne de code.
 
 ![Aperçu d’une ampoule dans Visual Studio](../ide/media/quick-actions-options.png)
 
-Des ampoules peuvent être utilisées là où les analyseurs de code déterminent que votre code peut être corrigé, refactorisé ou amélioré. Cliquez sur n’importe quelle ligne de code, cliquez avec le bouton droit pour ouvrir le menu contextuel, puis sélectionnez **Actions rapide** (ou, pour aller plus vite, appuyez sur **Ctrl**+**.**). Si des options de refactorisation ou d’amélioration sont disponibles, elles sont affichées. Sinon, le message **Aucune action rapide disponible ici** apparaît dans le coin inférieur gauche de l’IDE.
+Vous pouvez utiliser des actions rapides là où les analyseurs de code déterminent que votre code peut être corrigé, refactorisé ou amélioré. Cliquez sur n’importe quelle ligne de code, cliquez avec le bouton droit pour ouvrir le menu contextuel, puis sélectionnez **Actions rapides et refactorisations**. Si des options de refactorisation ou d’amélioration sont disponibles, elles sont affichées. Sinon, le message **Aucune action rapide disponible ici** apparaît en bas à gauche de l’IDE.
 
-![Texte « aucune action » de l’ampoule dans Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
+![Texte « Aucune action rapide disponible »](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Avec plus d’expérience, vous pouvez aller plus vite et utiliser les touches de direction et **Ctrl**+**.** pour vérifier les opportunités de refactorisation des options rapides et nettoyer votre code.
-
-Pour plus d’informations sur les ampoules, consultez [Actions rapides](../ide/quick-actions.md).
+Avec plus d’expérience, vous pouvez aller plus vite et utiliser les touches de direction et **Ctrl**+**.** pour vérifier les opportunités de refactorisation simples et nettoyer votre code.
 
 ## <a name="debug-your-running-code"></a>Déboguer votre code en cours d’exécution
 

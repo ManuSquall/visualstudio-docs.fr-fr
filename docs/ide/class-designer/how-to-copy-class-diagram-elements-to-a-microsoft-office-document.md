@@ -1,5 +1,5 @@
 ---
-title: "Comment : copier des éléments d'un diagramme de classes vers un document Microsoft Office (Concepteur de classes)"
+title: Guide pratique pour copier des éléments d'un diagramme de classes vers un document Microsoft Office (Concepteur de classes)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,29 +13,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c03af9c65b6263164c1e8b697fcf2d5708505a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b34328a4bff4abdd2db29e9a41e9d04ba43d4f9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Guide pratique pour copier des éléments d’un diagramme de classes vers un document Microsoft Office (Concepteur de classes)
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Guide pratique pour copier les éléments d’un diagramme de classes vers un document Microsoft Office
 
-Vous pouvez copier des formes depuis un diagramme de classes .NET (fichier .cd) vers d'autres documents. Vous obtenez une copie de la forme ou son code sous-jacent en fonction du type de document où vous la collez. Pour copier des formes depuis des diagrammes de classes UML dans un projet de modélisation, consultez [Exporter des diagrammes en tant qu’images](../../modeling/export-diagrams-as-images.md).
+Vous pouvez copier des formes depuis un diagramme de classes .NET (fichier *.cd*) vers d’autres documents. Vous obtenez une copie de la forme ou son code sous-jacent en fonction du type de document où vous la collez. Pour copier des formes depuis des diagrammes de classes UML dans un projet de modélisation, consultez [Exporter des diagrammes en tant qu’images](../../modeling/export-diagrams-as-images.md).
 
-## <a name="to-copy-a-single-element"></a>Pour copier un seul élément
+## <a name="copy-a-single-element"></a>Copier un seul élément
 
--   Cliquez avec le bouton droit sur la forme et choisissez **Copier l’image**.
+Cliquez avec le bouton droit sur la forme et choisissez **Copier l’image**.
 
-## <a name="to-copy-several-elements"></a>Pour copier plusieurs éléments
+## <a name="copy-several-elements"></a>Copier plusieurs éléments
 
 1.  Sélectionnez les formes sur le diagramme que vous souhaitez copier.
 
 2.  Cliquez avec le bouton droit sur votre sélection, puis choisissez **Copier l’image**.
 
-## <a name="to-copy-all-the-elements-in-a-class-diagram"></a>Pour copier tous les éléments dans un diagramme de classes
+## <a name="copy-all-the-elements-in-a-class-diagram"></a>Copier tous les éléments dans un diagramme de classes
 
-1.  Cliquez avec le bouton droit sur la surface du diagramme, puis choisissez **Sélectionner tout**. (raccourci : **Ctrl+A**)
+1.  Cliquez avec le bouton droit sur la surface du diagramme, puis choisissez **Sélectionner tout**, ou appuyez sur **Ctrl+A**.
 
 2.  Dans le menu **Edition**, sélectionnez **Copier l’image**.
 

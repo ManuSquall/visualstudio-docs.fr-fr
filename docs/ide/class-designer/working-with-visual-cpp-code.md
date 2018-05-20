@@ -20,31 +20,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0850fed22caf4b34fcb74aa11eb63f9338b0d5e5
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="work-with-visual-c-code-class-designer"></a>Utiliser du code Visual C++ (Concepteur de classes)
+# <a name="work-with-visual-c-code-in-class-designer"></a>Utiliser le code Visual C++ dans le Concepteur de classes
 
 Le **Concepteur de classes** affiche une aire de conception visuelle appelée *diagramme de classes*, qui fournit une représentation visuelle des éléments de code dans votre projet. Vous pouvez utiliser des diagrammes de classes pour concevoir et visualiser des classes et d'autres types dans un projet.
 
 Le **Concepteur de classes** prend en charge les éléments de code C++ suivants :
 
--   Classe (ressemble à une forme de classe managée, mais peut avoir plusieurs relations d'héritage)
+- Classe (ressemble à une forme de classe managée, mais peut avoir plusieurs relations d'héritage)
 
--   Classe anonyme (affiche le nom généré de l'Affichage de classes pour le type anonyme)
+- Classe anonyme (affiche le nom généré de l'Affichage de classes pour le type anonyme)
 
--   Classe de modèle
+- Classe de modèle
 
--   Struct
+- Struct
 
--   Enum
+- Enum
 
--   Macro (montre l'affichage post-traité de la macro)
+- Macro (montre l'affichage post-traité de la macro)
 
--   TypeDef
+- TypeDef
 
 > [!NOTE]
 > Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d’informations, consultez [Diagrammes de classes UML : indications](../../modeling/uml-class-diagrams-reference.md).
@@ -65,23 +65,23 @@ En cas d'échec de la mise à jour d'un diagramme de classes suite à la modific
 
 Le **Concepteur de classes** peut ne pas être en mesure de résoudre des types pour les raisons suivantes :
 
--   Le type se trouve dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [Gestion des références dans un projet](../managing-references-in-a-project.md).
+- Le type se trouve dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [Gestion des références dans un projet](../managing-references-in-a-project.md).
 
--   Le type ne se trouvant pas dans la portée correcte, le **Concepteur de classes** ne peut pas le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.
+- Le type ne se trouvant pas dans la portée correcte, le **Concepteur de classes** ne peut pas le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.
 
--   Le type n'existe pas (ou a été commenté). Pour corriger cette erreur, assurez-vous que vous n'avez pas commenté ni supprimé le type.
+- Le type n'existe pas (ou a été commenté). Pour corriger cette erreur, assurez-vous que vous n'avez pas commenté ni supprimé le type.
 
--   Le type se trouve dans une bibliothèque référencée par une directive #import. Une solution de contournement possible consiste à ajouter manuellement le code généré (le fichier .tlh) à une directive #include dans le fichier d'en-tête.
+- Le type se trouve dans une bibliothèque référencée par une directive #import. Une solution de contournement possible consiste à ajouter manuellement le code généré (le fichier .tlh) à une directive #include dans le fichier d'en-tête.
 
--   Vérifiez que le **Concepteur de classes** prend en charge le type que vous avez entré. Consultez [Limitations pour les éléments de code C++](#limitations-for-c-code-elements).
+- Vérifiez que le **Concepteur de classes** prend en charge le type que vous avez entré. Consultez [Limitations pour les éléments de code C++](#limitations-for-c-code-elements).
 
 L’erreur que vous allez probablement voir en cas de problème de résolution de type est la suivante : **Code introuvable pour une ou plusieurs formes dans le diagramme de classes ’\<élément>’**. Ce message d'erreur n'indique pas nécessairement que votre code est erroné. Il indique seulement que le Concepteur de classes n'a pas pu afficher votre code. Essayez les actions suivantes :
 
--   Assurez-vous que le type existe. Vérifiez que vous n'avez pas involontairement commenté ni supprimé le code source.
+- Assurez-vous que le type existe. Vérifiez que vous n'avez pas involontairement commenté ni supprimé le code source.
 
--   Essayez de résoudre le type. Le type se trouve peut-être dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [Gestion des références dans un projet](../managing-references-in-a-project.md).
+- Essayez de résoudre le type. Le type se trouve peut-être dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [Gestion des références dans un projet](../managing-references-in-a-project.md).
 
--   Assurez-vous que le type se trouve dans la portée correcte afin que le Concepteur de classes puisse le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.
+- Assurez-vous que le type se trouve dans la portée correcte afin que le Concepteur de classes puisse le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.
 
 ### <a name="troubleshoot-other-error-messages"></a>Résoudre d’autres messages d’erreur
 
@@ -89,25 +89,25 @@ Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissemen
 
 ## <a name="limitations-for-c-code-elements"></a>Limitations pour les éléments de code C++
 
--   Quand un projet Visual C++ est chargé, le **Concepteur de classes** fonctionne en lecture seule. Vous pouvez modifier le diagramme de classes, mais vous ne pouvez pas réenregistrer les modifications du diagramme de classes dans le code source.
+- Quand un projet Visual C++ est chargé, le **Concepteur de classes** fonctionne en lecture seule. Vous pouvez modifier le diagramme de classes, mais vous ne pouvez pas réenregistrer les modifications du diagramme de classes dans le code source.
 
--   Le **Concepteur de classes** prend en charge uniquement la sémantique C++ native. Pour les projets Visual C++ compilés dans le code managé, le **Concepteur de classes** visualise uniquement les éléments de code qui sont des types natifs. Vous pouvez donc ajouter un diagramme de classes à un projet, mais le **Concepteur de classes** ne vous autorise pas à visualiser les éléments dans lesquels la propriété `IsManaged` a la valeur `true` (autrement dit, les types valeur et types référence).
+- Le **Concepteur de classes** prend en charge uniquement la sémantique C++ native. Pour les projets Visual C++ compilés dans le code managé, le **Concepteur de classes** visualise uniquement les éléments de code qui sont des types natifs. Vous pouvez donc ajouter un diagramme de classes à un projet, mais le **Concepteur de classes** ne vous autorise pas à visualiser les éléments dans lesquels la propriété `IsManaged` a la valeur `true` (autrement dit, les types valeur et types référence).
 
--   Pour les projets Visual C++, le **Concepteur de classes** lit uniquement la définition du type. Par exemple, supposons que vous définissez un type dans un fichier d'en-tête (.h) et que vous définissez ses membres dans un fichier d'implémentation (.cpp). Si vous appelez « Afficher le diagramme de classes » sur le fichier d’implémentation (.cpp), le **Concepteur de classes** n’affiche rien. Autre exemple, si vous appelez « Afficher le diagramme de classes » sur un fichier .cpp qui utilise une instruction `#include` pour inclure d’autres fichiers, mais qui ne contient pas de définitions de classe réelles, le **Concepteur de classes** n’affiche toujours rien.
+- Pour les projets Visual C++, le **Concepteur de classes** lit uniquement la définition du type. Par exemple, supposons que vous définissez un type dans un fichier d'en-tête (.h) et que vous définissez ses membres dans un fichier d'implémentation (.cpp). Si vous appelez « Afficher le diagramme de classes » sur le fichier d’implémentation (.cpp), le **Concepteur de classes** n’affiche rien. Autre exemple, si vous appelez « Afficher le diagramme de classes » sur un fichier .cpp qui utilise une instruction `#include` pour inclure d’autres fichiers, mais qui ne contient pas de définitions de classe réelles, le **Concepteur de classes** n’affiche toujours rien.
 
--   Les fichiers IDL (.idl) qui définissent des interfaces COM et des bibliothèques de types ne s'affichent pas dans les diagrammes, sauf s'ils sont compilés en code C++ natif.
+- Les fichiers IDL (.idl) qui définissent des interfaces COM et des bibliothèques de types ne s'affichent pas dans les diagrammes, sauf s'ils sont compilés en code C++ natif.
 
--   Le **Concepteur de classes** ne prend pas en charge les fonctions et variables globales.
+- Le **Concepteur de classes** ne prend pas en charge les fonctions et variables globales.
 
--   Le **Concepteur de classes** ne prend pas en charge les unions. Il s'agit d'un type spécial de classe dans laquelle la mémoire allouée est uniquement suffisante pour la plus grande donnée membre de l'union.
+- Le **Concepteur de classes** ne prend pas en charge les unions. Il s'agit d'un type spécial de classe dans laquelle la mémoire allouée est uniquement suffisante pour la plus grande donnée membre de l'union.
 
--   Le **Concepteur de classes** n’affiche pas les types de données de base comme `int` et `char`.
+- Le **Concepteur de classes** n’affiche pas les types de données de base comme `int` et `char`.
 
--   Le **Concepteur de classes** n’affiche pas les types qui sont définis en dehors du projet actuel si le projet n’a pas de références correctes à ces types.
+- Le **Concepteur de classes** n’affiche pas les types qui sont définis en dehors du projet actuel si le projet n’a pas de références correctes à ces types.
 
--   Le **Concepteur de classes** peut afficher les types imbriqués, mais pas les relations entre un type imbriqué et d’autres types.
+- Le **Concepteur de classes** peut afficher les types imbriqués, mais pas les relations entre un type imbriqué et d’autres types.
 
--   Le **Concepteur de classes** ne peut pas afficher les types void ou dérivés d’un type void.
+- Le **Concepteur de classes** ne peut pas afficher les types void ou dérivés d’un type void.
 
 ## <a name="see-also"></a>Voir aussi
 

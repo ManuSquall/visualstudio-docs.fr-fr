@@ -1,12 +1,13 @@
 ---
-title: "Reduce, méthode (Array) (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: Reduce, méthode (Array) (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - arrays [JavaScript], reduce method
 - reduce method [JavaScript]
 ms.assetid: 48d069e0-e083-494f-86d5-d459d2377dc5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76279f66f8e3180fdebd73b83eb31c7368cefc75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d99f92d90885f26b19392b476ee64ae17bd40aed
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="reduce-method-array-javascript"></a>reduce, méthode (Array) (JavaScript)
 Appelle la fonction de rappel spécifiée pour tous les éléments dans un tableau. La valeur de retour de la fonction de rappel est le résultat accumulé, et est fournie en tant qu’argument dans le prochain appel à la fonction de rappel.  
@@ -55,10 +56,10 @@ array1.reduce(callbackfn[, initialValue])
   
 -   Le tableau ne contient aucun élément et `initialValue` n’est pas fourni.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si un `initialValue` est fourni, le `reduce` les appels de méthode du `callbackfn` fonction une fois pour chaque élément présent dans le tableau, dans l’ordre d’index croissant. Si un `initialValue` n’est pas fourni, le `reduce` les appels de méthode du `callbackfn` fonction sur chaque élément, en commençant par le deuxième élément.  
   
- La valeur de retour de la fonction de rappel est fournie en tant que le `previousValue` argument sur le prochain appel à la fonction de rappel. La valeur de retour du dernier appel à la fonction de rappel est la valeur de retour de la `reduce` (méthode).  
+ La valeur de retour de la fonction de rappel est fournie en tant que le `accumulator` argument sur le prochain appel à la fonction de rappel. La valeur de retour du dernier appel à la fonction de rappel est la valeur de retour de la `reduce` (méthode).  
   
  La fonction de rappel n'est pas appelée pour les éléments manquants du tableau.  
   
@@ -68,7 +69,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="callback-function-syntax"></a>Syntaxe de la fonction de rappel  
  La syntaxe de la fonction de rappel est la suivante :  
   
- `function callbackfn(previousValue, currentValue, currentIndex, array1)`  
+ `function callbackfn(accumulator, currentValue, currentIndex, array1)`  
   
  Vous pouvez déclarer la fonction de rappel à l’aide de quatre paramètres.  
   
@@ -76,7 +77,7 @@ array1.reduce(callbackfn[, initialValue])
   
 |Argument de rappel|Définition|  
 |-----------------------|----------------|  
-|`previousValue`|La valeur de l’appel précédent à la fonction de rappel. Si un `initialValue` est fournie pour le `reduce` (méthode), la `previousValue` est `initialValue` la première fois que la fonction est appelée.|  
+|`accumulator`|La valeur de l’appel précédent à la fonction de rappel. Si un `initialValue` est fournie pour le `reduce` (méthode), la `accumulator` est `initialValue` la première fois que la fonction est appelée.|  
 |`currentValue`|La valeur de l’élément de tableau en cours.|  
 |`currentIndex`|Index numérique de l’élément de tableau en cours.|  
 |`array1`|Objet de tableau qui contient l'élément.|  
@@ -86,13 +87,13 @@ array1.reduce(callbackfn[, initialValue])
   
  Si un `initialValue` est fournie à la méthode de réduction :  
   
--   L'argument `previousValue` a la valeur `initialValue`.  
+-   L'argument `accumulator` a la valeur `initialValue`.  
   
 -   Le `currentValue` argument est la valeur du premier élément présent dans le tableau.  
   
  Si un `initialValue` n’est pas fourni :  
   
--   Le `previousValue` argument est la valeur du premier élément présent dans le tableau.  
+-   Le `accumulator` argument est la valeur du premier élément présent dans le tableau.  
   
 -   Le `currentValue` argument est la valeur du deuxième élément présent dans le tableau.  
   
@@ -109,12 +110,12 @@ array1.reduce(callbackfn[, initialValue])
 |L'élément est supprimé du tableau.|Non, sauf si cet élément a déjà été passé à la fonction de rappel.|  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant concatène les valeurs de tableau dans une chaîne en séparant les valeurs avec « :: ». Car aucune valeur initiale n’est fournie pour le `reduce` (méthode), le premier appel à la fonction de rappel a « abc » en tant que le `previousValue` argument et « def » comme le `currentValue` argument.  
+ L’exemple suivant concatène les valeurs de tableau dans une chaîne en séparant les valeurs avec « :: ». Car aucune valeur initiale n’est fournie pour le `reduce` (méthode), le premier appel à la fonction de rappel a « abc » en tant que le `accumulator` argument et « def » comme le `currentValue` argument.  
   
 ```JavaScript  
 // Define the callback function.  
-function appendCurrent (previousValue, currentValue) {  
-    return previousValue + "::" + currentValue;  
+function appendCurrent (accumulator, currentValue) {  
+    return accumulator + "::" + currentValue;  
     }  
   
 // Create an array.  
@@ -136,8 +137,8 @@ document.write(result);
   
 ```JavaScript  
 // Define the callback function.  
-function addRounded (previousValue, currentValue) {  
-    return previousValue + Math.round(currentValue);  
+function addRounded (accumulator, currentValue) {  
+    return accumulator + Math.round(currentValue);  
     }  
   
 // Create an array.  
@@ -154,10 +155,10 @@ document.write (result);
  L’exemple suivant ajoute les valeurs dans un tableau. Le `currentIndex` et `array1` paramètres sont utilisés dans la fonction de rappel.  
   
 ```JavaScript  
-function addDigitValue(previousValue, currentDigit, currentIndex, array) {  
+function addDigitValue(accumulator, currentDigit, currentIndex, array) {  
     var exponent = (array.length - 1) - currentIndex;  
     var digitValue = currentDigit * Math.pow(10, exponent);  
-    return previousValue + digitValue;  
+    return accumulator + digitValue;  
     }  
   
 var digits = [4, 1, 2, 5];  
@@ -173,17 +174,17 @@ document.write (result);
  L’exemple suivant obtient un tableau qui contient des valeurs qui sont comprises entre 1 et 10 dans un autre tableau. La valeur initiale de la `reduce` méthode est un tableau vide.  
   
 ```JavaScript  
-function Process(previousArray, currentValue) {  
+function Process(accumulatedArray, currentValue) {  
     // If currentValue is between 1 and 10,   
     // append currentValue to the array.  
     var nextArray;  
     if (currentValue >= 1 && currentValue <= 10)  
-        nextArray = previousArray.concat(currentValue);  
+        nextArray = accumulatedArray.concat(currentValue);  
     else  
-        nextArray = previousArray;  
+        nextArray = accumulatedArray;  
   
     // If this is not the last call by the reduce method,  
-    // the returned array is previousArray on the next call.  
+    // the returned array is accumulatedArray on the next call.  
     // If this is the last call by the reduce method, the  
     // returned array is the return value of the reduce method.  
     return nextArray;  

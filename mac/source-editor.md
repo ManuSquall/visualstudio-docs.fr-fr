@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: c617ed1bae10569291b88d038e8d875ca966ad43
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 8660ee0de90813e95a221c3b4ea3a50528b4307a
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="source-editor"></a>Éditeur de code source
 
@@ -24,7 +24,6 @@ Cet article présente quelques-unes des principales fonctionnalités de l’édi
 Afficher et se déplacer efficacement dans le code fait partie intégrante du flux de travail de développement. La façon exacte dont vous voulez afficher et gérer le code est une décision personnelle, qui varie selon les développeurs, et souvent selon les projets.
 
 Visual Studio pour Mac offre de nombreuses fonctionnalités puissantes pour rendre le développement multiplateforme aussi accessible et pratique que possible. Les sections ci-dessous décrivent certaines de ces fonctionnalités.
-
 
 ## <a name="code-folding"></a>Pliage de code
 
@@ -62,25 +61,20 @@ Une option pour afficher les tabulations, les espaces et les fins de ligne est �
 
  ![espace affiché](media/source-editor-image22.png)
 
-
 ## <a name="ruler"></a>Règle
 
 La règle de colonnes est pratique pour déterminer la longueur des lignes, en particulier quand vous travaillez dans une équipe qui suit des directives sur les longueurs des lignes. La règle de colonnes peut être activée ou désactivée en accédant à **Visual Studio > Préférences... > Éditeur de texte > Marqueurs et règles** et sélectionnez (ou désélectionnez) **Afficher la règle de colonnes**, comme illustré dans l’image suivante :
 
- ![](media/source-editor-image5.png)
+ ![Boîte de dialogue Préférences avec « Afficher la règle de colonnes » en surbrillance](media/source-editor-image5.png)
 
  Celle-ci s’affiche sous la forme d’une ligne verticale gris clair dans l’éditeur de code source.
-
 
 ## <a name="highlight-identifier-references"></a>Mettre en évidence les références d’identificateur
 
 Quand l’option «Mettre en évidence les références d’identificateur » est activée, vous pouvez sélectionner n’importe quel symbole dans le code source et l’éditeur de code source fournit un guide visuel vers toutes les autres références dans ce fichier. Pour désactiver cette option, accédez à **Visual Studio > Préférences... > Éditeur de texte > Marqueurs et règles** et sélectionnez _Mettre en évidence les références d’identificateur_, comme illustré dans l’image suivante :
 
-![](media/source-editor-image6.png)
+![Boîte de dialogue Préférences avec « Mettre en évidence les références d’identificateur » en surbrillance](media/source-editor-image6.png)
 
 La couleur de la mise en évidence est également pratique pour indiquer que quelque chose fait l’objet d’une affectation ou qu’il est référencé. Si quelque chose fait l’objet d’une affectation, il est mis en évidence en rouge ; s’il est référencé, il est mis en évidence en bleu :
 
-![](media/source-editor-image7.png)
-
-
-
+![Exemple illustrant la couleur de la mise en évidence](media/source-editor-image7.png)

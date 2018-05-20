@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 50739bfde7578a49226e5396c8eeb78e56c4b0ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29e84c08241bba09ab7923fa5997333f2371270d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Comment : créer des projets Office dans Visual Studio
   Vous pouvez utiliser [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pour créer le complément VSTO et au niveau du document personnalisations pour les applications Microsoft Office. Pour plus d’informations sur ces types de projets, consultez [présentation du développement de Solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -61,29 +61,29 @@ ms.lasthandoff: 04/16/2018
   
      Les emplacements ont les formats suivants :  
   
-    -   [*lecteur*\]: \  
+      * [*lecteur*\]\:  
   
-    -   \\\\*Serveur*\\*partage*  
+      * \\\\*Serveur*\\*partage*  
   
      N'utilisez pas les caractères suivants dans l'emplacement :  
   
-    -   astérisque (*)  
+      * astérisque (*)  
   
-    -   barre verticale (|)  
+      * barre verticale (|)  
   
-    -   deux-points (:) (sauf après la lettre de lecteur)  
+      * deux-points (:) (sauf après la lettre de lecteur)  
   
-    -   guillemet double (") (les chemins d’accès qui contiennent des espaces n’ont pas besoin de guillemets.)  
+      * guillemet double (") (les chemins d’accès qui contiennent des espaces n’ont pas besoin de guillemets.)  
   
-    -   Inférieur à (\<)  
+      * Inférieur à (\<)  
   
-    -   Supérieur à (>)  
+      * Supérieur à (>)  
   
-    -   point d'interrogation (?)  
+      * point d'interrogation (?)  
   
-    -   pourcentage (%)  
+      * pourcentage (%)  
   
-7.  Sélectionnez le bouton **OK** .  
+7. Sélectionnez le bouton **OK** .
   
     > [!NOTE]  
     >  Les projets de complément sont toujours enregistrés quand ils sont créés. Ils ne peuvent pas être créés en tant que projets temporaires. Pour plus d’informations sur les projets temporaires, consultez [projets temporaires](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
@@ -123,7 +123,7 @@ ms.lasthandoff: 04/16/2018
   
      Les emplacements ont les formats suivants :  
   
-    -   [*lecteur*\]: \  
+    -   [*lecteur*\]\:  
   
     -   \\\\*Serveur*\\*partage*  
   
