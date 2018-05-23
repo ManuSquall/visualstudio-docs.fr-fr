@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d75041c1b0202eecd5769773efbcfce9c53ec4ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 15d771a53c0fb364aa363db8b6709257f41b9188
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="files-element"></a>Files, élément
   Spécifie les fichiers à déployer avec l’élément de projet SharePoint, tels que les fichiers d’élément de fonctionnalité et de la sortie des projets non-SharePoint dépendants.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <Files>  
   <ProjectItemFile.../>  
   <ProjectOutputFile.../>  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Représente un élément de projet SharePoint. Il s’agit de l’élément racine obligatoire du fichier .spdata.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Représente un élément de projet SharePoint. Cet élément de l’élément racine requis de le `.spdata` fichier.|  
   
 ## <a name="element-information"></a>Informations sur les éléments  
   

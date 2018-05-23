@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97c720ded65e46e85f8d9f20f9f509b31f2cebbb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ed3278a237633cbf7f15806fa0efa9b3bc33bb6
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procédure pas à pas : ajout d'une page d'application à un flux de travail
   Cette procédure pas à pas montre comment ajouter une page d’application qui affiche des données dérivées d’un flux de travail dans un projet de flux de travail. Il repose sur le projet décrit dans la rubrique [procédure pas à pas : création d’un flux de travail avec l’Association et des formulaires d’Initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
@@ -78,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Dans le [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] de ApplicationPage1.aspx, remplacez la `PlaceHolderMain` section avec les éléments suivants :  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
         <asp:Label ID="Label1" runat="server" Font-Bold="True"   
             Text="Expenses that exceeded allotted amount" Font-Size="Medium"></asp:Label>  
@@ -92,7 +92,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Ajouter un titre à la page d’application en remplaçant la `PlaceHolderPageTitleInTitleArea` section avec les éléments suivants :  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >  
         Expense Report Summary  
     </asp:Content>  

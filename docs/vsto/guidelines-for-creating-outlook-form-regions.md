@@ -1,5 +1,5 @@
 ---
-title: Zones de formulaire de recommandations pour la création d’Outlook | Documents Microsoft
+title: Recommandations pour la création de zones de formulaire Outlook
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dae7f03c49223c9919dc67b1c6a13768c597698d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d00c0aac83714e3a0906c38d13a705158cdfea9c
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="guidelines-for-creating-outlook-form-regions"></a>Directives pour la création de zones de formulaire Outlook
+# <a name="guidelines-for-creating-outlook-form-regions"></a>Recommandations pour la création de zones de formulaire Outlook
   Les informations suivantes peuvent vous aider à optimiser vos zones de formulaire et à éviter d’éventuels problèmes :  
   
--   [Utilisation de noms de zones de formulaire](#UsingFormRegions).  
+-   [Utilisez des noms de région de formulaire](#UsingFormRegions).  
   
--   [Désactivation de l’héritage de zone de formulaire](#DisablingInheritance).  
+-   [Désactiver l’héritage de zone de formulaire](#DisablingInheritance).  
   
--   [Présentation des types et des noms de classes de messages](#ClassNames).  
+-   [Comprendre les types et les noms de classe de message](#ClassNames).  
   
 -   [Conception de zones de formulaire adjacentes pour le volet de lecture](#ReadingPane).  
   

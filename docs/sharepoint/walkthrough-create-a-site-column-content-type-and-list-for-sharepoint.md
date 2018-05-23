@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dfcf3166e3fe4aa5ce17f51d696187cc060639b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procédure pas à pas : création d'une colonne de site, d'un type de contenu et d'une liste pour SharePoint
   Les procédures suivantes montrent comment créer des colonnes de site SharePoint personnalisées, ou *champs*, ainsi que d’un type de contenu qui utilise les colonnes de site. Il montre également comment créer une liste qui utilise le type de contenu.  
@@ -83,7 +83,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Dans le fichier Elements.xml de la colonne de site, laissez le **Type** définition en tant que **texte**et modifier le **groupe** à **cours pratique des colonnes de Site**. Lorsque vous avez terminé, le fichier Elements.xml de la colonne de site doit ressembler à l’exemple suivant.  
   
-    ```  
+    ```xml  
     <Field  
          ID="{f9ba60d1-5631-41fb-b016-a38cf48eef63}"  
          Name="Clinic - Patient Name"  

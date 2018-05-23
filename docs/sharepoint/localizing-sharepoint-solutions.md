@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89cc146a64e1e74c2682163ba3bebc16ed5a84e7
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>Localisation de solutions SharePoint
   Le processus de préparation de vos applications afin qu’ils peuvent être utilisés dans le monde entier est appelé à la localisation. Localisation est traduction de ressources pour une culture spécifique. Pour plus d’informations, consultez [globalisation et localisation d’Applications](/visualstudio/ide/globalizing-and-localizing-applications). Cette rubrique fournit une vue d’ensemble de la localisation d’une solution SharePoint.  
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
   
  Après avoir créé la fonctionnalité fichiers de ressources, ajouter des chaînes traduites. Accédez aux chaînes localisées avec une expression au format suivant :  
   
-```  
+```aspx-csharp  
 $Resources:String ID  
 ```  
   
@@ -85,25 +85,25 @@ $Resources:String ID
   
  Remplacez toutes les chaînes de propriété codées en dur dans votre balisage de contrôles et les pages ASPX par une expression au format suivant :  
   
-```  
+```aspx-csharp  
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
  Par exemple :  
   
-```  
+```aspx-csharp  
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>  
 ```  
   
  Pour ASPX sous forme de texte, utilisez une expression au format suivant :  
   
-```  
+```aspx-csharp  
 <asp:literal ID="<ID>" runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
  Par exemple :  
   
-```  
+```aspx-csharp  
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
 ```  
   
@@ -120,7 +120,7 @@ $Resources:String ID
   
  Dans votre code, remplacez les chaînes codées en dur avec des appels à la <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> méthode à l’aide de la syntaxe suivante :  
   
-```  
+```aspx-csharp  
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")  
 ```  
   

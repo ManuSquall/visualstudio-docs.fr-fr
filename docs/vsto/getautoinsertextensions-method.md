@@ -1,5 +1,5 @@
 ---
-title: Getautoinsertextensions, méthode | Documents Microsoft
+title: Getautoinsertextensions, méthode
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,26 +13,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67f6bfcb0ee38acf9abb604f28fa95eeaa605fde
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8573576b40afabb5ec568a0c471e7b1d79560ba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions, méthode
+# <a name="getautoinsertextensions-method"></a>Getautoinsertextensions, méthode
   Obtient des informations sur les applications pour Office qui doivent être insérés automatiquement pendant le débogage.  
   
  Cette méthode est réservée à une utilisation ultérieure.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```c  
 HRESULT GetAutoInsertExtensions(  
     [out, retval] SAFEARRAY(BSTR)* psaExtensionNames  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+### <a name="parameters"></a>Paramètres  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
@@ -42,6 +42,6 @@ HRESULT GetAutoInsertExtensions(
  Valeur HRESULT qui indique si la méthode a réussi.  
   
 ## <a name="remarks"></a>Notes  
- Chaque application pour Office à insérer est retournée comme un nom d’extension application Office, ce qui correspond à une valeur sous HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer. L’ordinateur hôte doit rechercher ces valeurs dans le Registre et insérez ensuite automatiquement les extensions.  
+ Chaque application pour Office à insérer est retournée comme un nom d’extension application Office, ce qui correspond à une valeur sous **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. L’ordinateur hôte doit rechercher ces valeurs dans le Registre et insérez ensuite automatiquement les extensions.  
   
   
