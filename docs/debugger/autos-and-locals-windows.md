@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspecter les Variables dans l’automatique et les fenêtres de variables locales dans Visual Studio
 Le **automatique** fenêtre (pendant le débogage, **CTRL + ALT + V, A**, ou **Déboguer > Windows > automatique**) et le **variables locales** fenêtre (pendant le débogage **CTRL + ALT + V, L**, ou **Déboguer > Windows > variables locales**) sont très utiles lorsque vous souhaitez voir les valeurs des variables pendant que vous déboguez. La fenêtre **Variables locales** affiche les variables définies dans la portée locale, qui est généralement la fonction ou méthode en cours d’exécution. La fenêtre **Automatique** affiche les variables utilisées autour de la ligne actuelle (l’emplacement où le débogueur est arrêté). Exactement les variables s’affichent dans cette fenêtre est différente dans différentes langues. Consultez [What variables appear in the Autos Window?](#bkmk_whatvariables) ci-dessous.  
@@ -28,7 +28,7 @@ Le **automatique** fenêtre (pendant le débogage, **CTRL + ALT + V, A**, ou **D
 Si vous avez besoin de plus d’informations sur le débogage de base, consultez [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Examen des objets dans les fenêtres Automatique et Variables locales  
-Les tableaux et les objets sont affichés dans les fenêtres Automatique et Variables locales en tant que contrôles d’arborescence. Cliquez sur la flèche située à gauche du nom de variable pour développer la vue et afficher les champs et propriétés. Voici un exemple d’un objet [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) dans la fenêtre **Variables locales** :  
+Les tableaux et les objets sont affichés dans les fenêtres Automatique et Variables locales en tant que contrôles d’arborescence. Cliquez sur la flèche située à gauche du nom de variable pour développer la vue et afficher les champs et propriétés. Voici un exemple d’un [FileStream](/dotnet/api/system.io.filestream) de l’objet dans le **variables locales** fenêtre :  
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
