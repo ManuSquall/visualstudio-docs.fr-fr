@@ -15,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ce99a4e4c4899502bf1f63edf2dbc1ad0c93cd0
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 6eb831422df42a246a5d5c23ccdd480bce47a0e6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Typedefs de Visual C++ dans le Concepteur de classes
 
-Les instructions typedef créent une ou plusieurs couches d’indirection entre un nom et son type sous-jacent. Le **Concepteur de classes** prend en charge les types typedef C++ qui sont déclarés avec le mot clé `typedef`, par exemple :
+Les instructions [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) créent une ou plusieurs couches d’indirection entre un nom et son type sous-jacent. Le **Concepteur de classes** prend en charge les types typedef C++ qui sont déclarés avec le mot clé `typedef`, par exemple :
 
 ```cpp
 typedef class coord
@@ -38,7 +38,38 @@ Vous pouvez ensuite utiliser ce type pour déclarer une instance :
 
 `COORD OriginPoint;`
 
-Bien que vous puissiez déclarer un typedef sans nom, le **Concepteur de classes** n’utilise pas le nom de la balise que vous spécifiez. Il utilise le nom généré par l’affichage de classes. Par exemple, la déclaration suivante est valide, mais elle apparaît dans **Affichage de classes** et le **Concepteur de classes** comme objet nommé **__unnamed** :
+## <a name="class-and-struct-shapes"></a>Formes de classe et de struct
+
+Dans le **Concepteur de classes**, un typedef C++ a la forme du type spécifié dans le typedef. Si la source déclare `typedef class`, la forme a des angles arrondis et l’étiquette **Class**. Pour `typedef struct`, la forme a des angles carrés et l’étiquette **Struct**.
+
+Les classes et les structures peuvent avoir des typedefs imbriqués déclarés à l’intérieur. Dans le **Concepteur de classes**, les formes de classe et de structure peuvent afficher des déclarations typedef imbriquées comme formes imbriquées.
+
+Les formes typedef prennent en charge les commandes **Afficher en tant qu’association** et **Afficher en tant qu’association de collection** dans le menu contextuel.
+
+### <a name="class-typedef-example"></a>Exemple de typedef de classe
+
+```cpp
+class B {};
+typedef B MyB;
+```
+
+![Typedef de classe C++ dans le Concepteur de classes](media/cpp-class-typedef.png)
+
+### <a name="struct-typedef-example"></a>Exemple de typedef de struct
+
+```cpp
+typedef struct mystructtag
+{
+    int   i;
+    double f;
+} mystruct;
+```
+
+![Typedef de struct C++ dans le Concepteur de classes](media/cpp-struct-typedef.png)
+
+## <a name="unnamed-typedefs"></a>Typedefs sans nom
+
+Bien que vous puissiez déclarer un typedef sans nom, le **Concepteur de classes** n’utilise pas le nom de la balise que vous spécifiez. Le **Concepteur de classes** utilise le nom généré par **l’affichage de classes**. Par exemple, la déclaration suivante est valide, mais elle apparaît dans **Affichage de classes** et le **Concepteur de classes** comme objet nommé **__unnamed** :
 
 ```cpp
 typedef class coord
@@ -49,158 +80,10 @@ typedef class coord
 };
 ```
 
-Pour plus d’informations sur l’utilisation du type `typedef`, consultez [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs).
+> [!NOTE]
+> Le **Concepteur de classes** n’affiche pas les typedefs dont le type source est un pointeur de fonction.
 
-Une forme typedef C++ a la forme du type spécifié dans le typedef. Par exemple, si la source déclare `typedef class`, la forme a des angles arrondis et l’étiquette **Class**. Pour `typedef struct`, la forme a des angles carrés et l’étiquette **Struct**.
+## <a name="see-also"></a>Voir aussi
 
-Les classes et les structures peuvent avoir des typedefs imbriqués déclarés à l’intérieur. Ainsi, les formes de classe et de structure peuvent afficher des déclarations typedef imbriquées comme formes imbriquées.
-
-Les formes typedef prennent en charge les commandes **Afficher en tant qu’association** et **Afficher en tant qu’association de collection** dans le menu contextuel.
-
-Voici quelques exemples de types typedef pris en charge par le **Concepteur de classes** :
-
-`typedef type name`
-
-*nom* : *type*
-
-typedef
-
-Dessine une ligne d’association établissant une connexion au type *nom*, si possible.
-
-`typedef void (*func)(int)`
-
-`func: void (*)(int)`
-
-typedef
-
-Typedef pour les pointeurs de fonction. Aucune ligne d’association n’est dessinée.
-
-Le **Concepteur de classes** n’affiche pas de typedef si son type source est un pointeur de fonction.
-
-```cpp
-typedef int MyInt;
-class A {
-   MyInt I;
-};
-```
-
-`MyInt: int`
-
-typedef
-
-`A`
-
-Classe
-
-Dessine une ligne d’association qui pointe de la forme du type source vers la forme du type cible.
-
-`Class B {};`
-
-`typedef B MyB;`
-
-`B`
-
-Classe
-
-`MyB : B`
-
-typedef
-
-Un clic droit sur une forme typedef et un clic sur **Afficher en tant qu’association** affiche le typedef ou la classe et une ligne **Alias** reliant les deux formes (semblable à une ligne d’association).
-
-`typedef B MyB;`
-
-`typedef MyB A;`
-
-`MyBar : Bar`
-
-typedef
-
-Identique à ce qui précède.
-
-```cpp
-Class B {};
-typedef B MyB;
-
-class A {
-   MyB B;
-};
-```
-
-`B`
-
-Classe
-
-`MyB : B`
-
-typedef
-
-`A`
-
-Classe
-
-`MyB` est une forme typedef imbriquée.
-
-`#include <vector>`
-
-`...`
-
-`using namespace std;`
-
-`...`
-
-`typedef vector<int> MyIntVect;`
-
-`vector<T>`Class
-
-`MyIntVect : vector<int>`
-
-typedef
-
-`class B {};`
-
-`typedef B MyB;`
-
-`class A : MyB {};`
-
-`MyB : B`
-
-typedef
-
--> B
-
-`B`
-
-`A`
-
-Class
-
--> MyB
-
-Le **Concepteur de classes** ne prend pas en charge l’affichage de ce type de relation à l’aide d’une commande de menu contextuel.
-
-`#include <vector>`
-
-`Typedef MyIntVect std::vector<int>;`
-
-`Class MyVect : MyIntVect {};`
-
-`std::vector<T>`
-
-Classe
-
-`MyIntVect : std::vector<int>`
-
-typedef
-
-`MyVect`
-
-Classe
-
--> MyIntVect
-
-### <a name="see-also"></a>Voir aussi
-
-- [Utilisation du code Visual C++](working-with-visual-cpp-code.md)  
+- [Utiliser le code Visual C++](working-with-visual-cpp-code.md)
 - [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
-

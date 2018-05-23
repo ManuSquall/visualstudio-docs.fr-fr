@@ -1,15 +1,15 @@
 ---
-title: Génération et nettoyage des projets et des solutions
-description: ''
+title: Génération et nettoyage de projets et de solutions dans Visual Studio pour Mac
+description: Cet article décrit comment générer un projet dans Visual Studio pour Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 746aefbee359313e6e8a5f0e3b8387cb5eff9a16
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 686735df963f2cdb3f85e4328299b609d5fbe08d
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Génération et nettoyage des projets et des solutions
 
@@ -21,11 +21,11 @@ Pour générer, regénérer ou nettoyer une solution entière :
 
 1. Sélectionnez le nœud Solution dans le panneau Solution :
 
-    ![](media/compiling-and-building-image1.png)
+    ![Sélection du nœud de solution](media/compiling-and-building-image1.png)
 
 2. Sélectionnez le Menu Générer dans la barre de menus et sélectionnez une des options suivantes :
 
-    ![](media/compiling-and-building-image2.png)
+    ![Sélection de l’élément de menu Générer tout](media/compiling-and-building-image2.png)
 
     * **Générer tout** : tente de générer tous les fichiers du projet qui ont été modifiés dans le projet depuis la build la plus récente.
     * **Régénérer tout** : nettoie la solution, puis la génère.

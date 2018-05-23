@@ -9,11 +9,11 @@ description: En savoir plus sur les avantages inclus dans votre abonnement Visua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Avantages inclus dans votre abonnement Visual Studio
 
@@ -40,5 +40,8 @@ En tant qu’abonné Visual Studio, vous avez également accès aux différents 
 - Obtenez de l’aide des membres de la communauté dans les forums de support prioritaire.  Si les membres de la communauté ne peuvent pas répondre à votre question, les experts Microsoft fournissent une réponse. 
 - Vous avez des questions sur Azure ?  Découvrez les services de conversation de la communauté Azure et d’Azure Advisory.  
 
-Pour plus d’informations sur les avantages inclus dans votre abonnement, consultez la page sur la tarification de Visual Studio.  Des informations sur les avantages spécifiques, y compris les abonnements qui les proposent, sont disponibles dans la rubrique **Utilisation des avantages pour les abonnés** ci-dessous. 
+> [!NOTE] 
+> Votre abonnement peut également comprendre un accès aux téléchargements de logiciels.  Pour plus d’informations sur les téléchargements, dont ceux qui sont inclus dans votre abonnement, visitez [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
+
+Pour plus d’informations sur les avantages inclus dans votre abonnement, consultez la [page sur les tarifs de Visual Studio](https://www.visualstudio.com/vs/pricing/).  Des informations sur les avantages spécifiques, y compris les abonnements qui les proposent, sont disponibles dans la rubrique **Utilisation des avantages pour les abonnés** ci-dessous. 
 

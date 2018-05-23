@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9669596eb49330235eca2c35dffe0f2cb1afb9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c1879b67558cb57fba7bc462e4c7df03fb5efc8
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="troubleshoot-broken-references"></a>Dépanner des références rompues
 
@@ -42,11 +42,11 @@ Les solutions suivantes permettent de résoudre ces problèmes.
 
 ## <a name="reference-path-is-incorrect"></a>Le chemin de la référence est incorrect
 
-Si les projets sont partagés sur différents ordinateurs, certaines références peuvent être introuvables quand un composant se trouve dans un répertoire différent sur chaque ordinateur. Les références sont stockées sous le nom du fichier du composant (par exemple, MyComponent). Lors de l’ajout d’une référence à un projet, l’emplacement de dossier du fichier de composant (par exemple, C:\MyComponents\\) est ajouté à la propriété de projet **ReferencePath**.
+Si les projets sont partagés sur différents ordinateurs, certaines références peuvent être introuvables quand un composant se trouve dans un répertoire différent sur chaque ordinateur. Les références sont stockées sous le nom du fichier du composant (par exemple, *MyComponent*). Lors de l’ajout d’une référence à un projet, l’emplacement de dossier du fichier de composant (par exemple, *C:\MyComponents*) est ajouté à la propriété de projet **ReferencePath**.
 
-À son ouverture, le projet tente de localiser ces fichiers de composant référencés en effectuant une recherche dans les répertoires situés dans le chemin de la référence. S’il est ouvert sur un ordinateur qui stocke le composant dans un autre répertoire, par exemple D:\MyComponents\\, la référence est introuvable et une erreur s’affiche dans la liste des tâches.
+À son ouverture, le projet tente de localiser ces fichiers de composant référencés en effectuant une recherche dans les répertoires situés dans le chemin de la référence. S’il est ouvert sur un ordinateur qui stocke le composant dans un autre répertoire, par exemple *D:\MyComponents*, la référence est introuvable et une erreur s’affiche dans la **Liste des tâches**.
 
-Pour résoudre ce problème, vous pouvez supprimer la référence rompue, puis la remplacer à l’aide de la boîte de dialogue Ajouter une référence. Une autre solution consiste à utiliser l’élément **Chemins d’accès de références** dans les pages de propriétés du projet et à modifier les dossiers de la liste afin qu’ils pointent vers les emplacements corrects. La propriété **Chemin d’accès de référence** est rendue persistante pour chaque utilisateur de chaque ordinateur. Par conséquent, la modification du chemin de votre référence n’affecte pas les autres utilisateurs du projet.
+Pour résoudre ce problème, vous pouvez supprimer la référence rompue, puis la remplacer à l’aide de la boîte de dialogue **Ajouter une référence**. Une autre solution consiste à utiliser l’élément **Chemins d’accès de références** dans les pages de propriétés du projet et à modifier les dossiers de la liste afin qu’ils pointent vers les emplacements corrects. La propriété **Chemin d’accès de référence** est rendue persistante pour chaque utilisateur de chaque ordinateur. Par conséquent, la modification du chemin de votre référence n’affecte pas les autres utilisateurs du projet.
 
 > [!TIP]
 > Ces problèmes ne se posent pas pour les références entre projets. Par conséquent, utilisez-les plutôt que les références de fichier, si vous le pouvez.

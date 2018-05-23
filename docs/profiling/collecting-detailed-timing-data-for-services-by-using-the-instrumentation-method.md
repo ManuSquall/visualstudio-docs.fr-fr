@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3864702edf15a60a7b3cbf161a2313a65dcf40fb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9dbf3bcb9e96e3963099a12d12e6d95c1faf1d70
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Collecte de données de temporisation détaillées pour des services en utilisant la méthode d'instrumentation à partir de la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données de performances détaillées pour les services Windows avec la méthode d’instrumentation à partir de la ligne de commande.  
@@ -41,8 +41,8 @@ Cette section décrit les procédures et les options de collecte des données de
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  
-|**Profiler des applications autonomes (clientes)**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
-|**Profiler des applications web ASP.NET**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)|  
+|**Profiler des applications autonomes (clientes)**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
+|**Profiler des applications web ASP.NET**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Analyse des vues et des rapports de données d’instrumentation  
  [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)

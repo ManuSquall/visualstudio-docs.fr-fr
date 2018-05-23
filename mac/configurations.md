@@ -1,15 +1,15 @@
 ---
 title: Présentation des configurations de build
-description: ''
+description: Cet article décrit les différentes configurations de build dans Visual Studio pour Mac
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 1ca2d7dc7b450367e5f87d62cf2a3c43a6331e13
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: fb1db4325aef6c5328646a5ad1123c88aa751481
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="understanding-build-configurations"></a>Présentation des configurations de build
 

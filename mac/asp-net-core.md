@@ -1,14 +1,15 @@
 ---
 title: Bien démarrer avec ASP.NET Core
+description: Cet article décrit comment démarrer avec ASP.NET dans Visual Studio pour Mac. Il couvre notamment l’installation et la création d’un projet.
 author: asb3993
 ms.author: amburns
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 998bd304f287fffdf53dd9c53cb3be1d83a407f3
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 23a76b4d101acb0c917168515a27f2835c322415
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="getting-started-with-aspnet-core"></a>Bien démarrer avec ASP.NET Core
 
@@ -142,7 +143,7 @@ Pour ajouter un contrôleur, procédez comme suit :
 
 2. Ajoutez le code suivant au nouveau contrôleur :
 
-    ```
+    ```csharp
     using System;
     using Microsoft.AspNetCore.Mvc;
     using System.Text.Encodings.Web;
@@ -231,6 +232,6 @@ Veillez à effectuer correctement les quatre étapes pour garantir que .NET Core
 
 Ce guide était une introduction à ASP.NET Core. Il explique ce que c’est et quand l’utiliser, et fournit des informations sur son utilisation dans Visual Studio pour Mac.
 Pour plus d’informations sur les étapes à suivre à partir d’ici, consultez les guides suivants :
-- Documentation [ASP.NET Core](https://docs.microsoft.com/aspnet/core/#build-web-ui-and-web-apis-using-aspnet-core-mvc).
+- Documentation [ASP.NET Core](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
 - [Création de services backend pour les applications mobiles natives](https://docs.microsoft.com/aspnet/core/mobile/native-mobile-backend), qui montre comment créer un service REST en utilisant ASP.NET Core pour une application Xamarin.Forms.
 - [Ateliers pratiques ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).

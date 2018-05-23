@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e60977a44593953b4858ea0262befc61c3189cec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d28d178e5592d9cdf6d4aba6f642a869c12cc78f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Comment : importer une page maître ou un thème
   Vous pouvez attribuer aux pages sur votre site SharePoint une apparence cohérente en créant et en utilisant les thèmes et les pages maîtres. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne fournit pas les modèles pour ces éléments, mais vous pouvez les créer dans SharePoint Designer et importez-les dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d’informations, consultez [bloc de construction : Pages et Interface utilisateur](http://go.microsoft.com/fwlink/?LinkID=182095) sur le site Web Microsoft.  
@@ -58,7 +58,7 @@ ms.lasthandoff: 04/16/2018
   
 10. Pour une page maître, remplacez la balise de module existante par la balise suivante.  
   
-    ```  
+    ```xml  
     <Module Name="[Module Name]" Url="_catalogs/masterpage">  
         <File Path="[Module Name]\[Master Page Name].master"   
           Url="[Master Page Name].master" Type="GhostableInLibrary" />  
@@ -67,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
      Pour un thème, remplacez la balise de module existante par la balise suivante.  
   
-    ```  
+    ```xml  
     <Module Name="[Module Name]" Url="_catalogs/theme"   
         <File Path="[Module Name]\[Theme Name].thmx" Url="[Theme     
           Name].thmx" Type="GhostableInLibrary" />  

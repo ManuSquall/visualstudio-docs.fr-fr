@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c95a91ecd057bfec7af5e9b932d4326cdcab9270
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Débogage distant ASP.NET Core sur IIS dans Azure dans Visual Studio 2017
 
@@ -110,11 +110,17 @@ Lorsque vous téléchargez le logiciel, vous pouvez obtenir des demandes pour ac
 
 3. Redémarrer le système (ou exécutez **net stop a été /y** suivie **net démarrer w3svc** à partir d’une invite de commandes pour voir une modification dans le chemin d’accès du système).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Facultatif) Installation Web déployer 3.6 pour l’hébergement des serveurs sur Windows Server
+
+Dans certains scénarios, il peut être plus rapide pour importer les paramètres de publication dans Visual Studio au lieu de configurer manuellement les options de déploiement. Si vous souhaitez importer les paramètres au lieu de configurer le profil de publication dans Visual Studio de publication, consultez [importation des paramètres de publication et le déployer vers IIS](../deployment/tutorial-import-publish-settings-iis.md). Dans le cas contraire, restent dans cette rubrique et poursuivez la lecture. Si vous terminez l’article sur l’importation de paramètres de publication et déployer l’application avec succès, puis revenir à cette rubrique et démarrer dans la section sur [télécharger les outils à distance](#BKMK_msvsmon).
+
 ### <a name="BKMK_install_webdeploy"></a> (Facultatif) Installation Web déployer 3.6 sur Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ### <a name="BKMK_deploy_asp_net"></a> Configurer le site Web ASP.NET sur l’ordinateur Windows Server
+
+Si vous importez des paramètres de publication, vous pouvez ignorer cette section.
 
 1. Ouvrez le **Gestionnaire des services Internet (IIS)** .et accédez à **Sites**.
 

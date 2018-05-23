@@ -1,7 +1,7 @@
 ---
 title: Modification de code Python
 description: La modification de Python dans Visual Studio fournit des fonctionnalités diverses telles que la navigation, des extraits de code et IntelliSense, ainsi que la mise en forme, le linting et la refactorisation.
-ms.date: 03/05/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97890a84b7b44af818c91f28b486be2d54567213
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cd2de34baf390371c51c5d67ad4f060d2e5b06a6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="editing-python-code"></a>Modification de code Python
 
@@ -33,7 +33,7 @@ Vous pouvez également utiliser l’Explorateur d’objets de Visual Studio (**A
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense fournit [les saisies semi-automatiques](#completions), [l’assistance pour la signature](#signature-help), [Info express](#quick-info) et [la coloration du code](#code-coloring).
+IntelliSense fournit [les saisies semi-automatiques](#completions), [l’assistance pour la signature](#signature-help), [Info express](#quick-info) et [la coloration du code](#code-coloring). Visual Studio 2017 versions 15.7 et ultérieures prend également en charge les [affinages de type](#type-hints).
 
 Pour améliorer le niveau de performance, IntelliSense dans **Visual Studio 2017 version 15.5** et versions antérieures dépend d’une base de données de saisie semi-automatique qui est générée pour chaque environnement Python dans votre projet. Il est possible que les bases de données doivent être actualisées si vous ajoutez, supprimez ou mettez à jour des packages. Leur état s’affiche sur l’onglet **IntelliSense** de la fenêtre **Environnements Python** (de la même famille que l’Explorateur de solutions) (consultez [Référence sur la fenêtre Environnements](python-environments-window-tab-reference.md#intellisense-tab)).
 
@@ -77,6 +77,46 @@ Taper @ lance un décorateur et affiche les décorateurs potentiels. La plupart 
 
 > [!Tip]
 > Vous pouvez configurer le comportement des saisies semi-automatiques via **Outils > Options > Éditeur de texte > Python > Avancé**. Parmi les options proposées, **Filter list based on search string** (Filtrer la liste en fonction de la chaîne de recherche) applique un filtre aux propositions de saisie semi-automatique à mesure que vous tapez (option sélectionnée par défaut) et **Member completion displays intersection of members** (La saisie semi-automatique de membres affiche l’intersection des membres) affiche uniquement les saisies semi-automatiques prises en charge par tous les types possibles (option non sélectionnée par défaut). Consultez [Options - Résultats de la saisie semi-automatique](python-support-options-and-settings-in-visual-studio.md#completion-results).
+
+### <a name="type-hints"></a>Affinages de type
+
+*Visual Studio 2017 versions 15.7 et ultérieures.*
+
+Les « affinages de type » dans Python 3.5+ ([PEP 484](https://www.python.org/dev/peps/pep-0484/), python.org) font référence à une syntaxe d’annotation pour les fonctions et classes qui indiquent les types des arguments, des valeurs de retour et des attributs de classe. IntelliSense affiche des affinages de type quand vous pointez sur des appels de fonctions, des arguments et des variables dotés de ces annotations.
+
+Dans l’exemple ci-dessous, la classe `Vector` est déclarée en tant que `List[float]` et la fonction `scale` contient les affinages de type de ses arguments et de sa valeur de retour. Quand vous pointez sur un appel à cette fonction, les affinages de type apparaissent :
+
+![Pointage sur un appel de fonction pour afficher les affinages de type](media/code-editing-type-hints1.png)
+
+Dans l’exemple suivant, vous pouvez voir comment les attributs annotés de la classe `Employee` apparaissent dans la fenêtre contextuelle de complétion IntelliSense associée à un attribut :
+
+![Complétion IntelliSense illustrant les affinages de type](media/code-editing-type-hints2.png)
+
+De plus, il s’avère utile de valider les affinages de type tout au long de votre projet, car ce n’est normalement qu’au moment de l’exécution que les erreurs apparaissent. Pour cela, Visual Studio intègre l’outil standard MyPy par le biais de la commande de menu contextuel **Python > Exécuter Mypy** dans **l’Explorateur de solutions** :
+
+![Exécuter la commande de menu contextuel MyPy dans l’Explorateur de solutions](media/code-editing-type-hints-run-mypy.png)
+
+Quand vous exécutez la commande, vous êtes invité à installer le package mypy, si nécessaire. Visual Studio exécute ensuite mypy pour valider les affinages de type dans chaque fichier Python du projet. Les erreurs apparaissent dans la fenêtre Visual Studio **Liste d’erreurs**. Quand vous sélectionnez un élément dans la fenêtre, vous accédez à la ligne appropriée dans votre code.
+
+À titre de simple exemple, la définition de fonction suivante contient un affinage de type pour signaler que l’argument `input` est de type `str`, alors que l’appel à cette fonction tente de passer un entier :
+
+```python
+def commas_to_colons(input: str):
+    items = input.split(',')
+    items = [x.strip() for x in items]
+    return ':'.join(items)
+
+commas_to_colons(1)
+```
+
+L’utilisation de la commande **Exécuter Mypy** sur ce code génère l’erreur suivante :
+
+![Exemple de résultat de la validation des affinages de type par mypy](media/code-editing-type-hints-validation-error.png)
+
+> [!Tip]
+> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* (`.pyi`). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, consultez [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Créer des stubs pour des modules Python) dans le wiki de du projet mypy.
+>
+> Visual Studio ne prend pas en charge les affinages de type dans les commentaires.
 
 ### <a name="signature-help"></a>Assistance pour la signature
 

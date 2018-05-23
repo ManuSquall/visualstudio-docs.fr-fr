@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d84688198ff9d21a03923bf510676c7f620e4d12
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8271d28c21bc26c96c1481a114b2f5a322b148b4
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="waitstart"></a>WaitStart
 Quand l’option WaitStart est utilisée, la sous-commande VSPerfCmd.exe Start est retournée uniquement après l’initialisation du profileur ou après le nombre spécifié de secondes. Par défaut, la commande Start est retournée immédiatement. Si la sous-commande Start est retournée sans initialiser le profileur, une erreur est retournée. Si le nombre de secondes n’est pas spécifié, la commande Start attend indéfiniment.  
@@ -23,7 +23,7 @@ Quand l’option WaitStart est utilisée, la sous-commande VSPerfCmd.exe Start e
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]  
 ```  
   
@@ -42,7 +42,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]
 ## <a name="example"></a>Exemple  
  Dans cet exemple de fichier de commandes, la commande Start attend 5 secondes que le profileur s’initialise.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WaitStart:5  
 if not %errorlevel% 0 goto :error_tag  
 VSPerfCmd.exe /Launch:TestApp.exe  

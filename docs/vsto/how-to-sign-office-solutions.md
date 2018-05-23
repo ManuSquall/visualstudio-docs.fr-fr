@@ -1,5 +1,5 @@
 ---
-title: 'Comment : signer des Solutions Office | Documents Microsoft'
+title: 'Comment : signer des solutions Office'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,25 +17,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 31b5e1fc3c78aecf518af0941a4a2dd0ab7e57c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d5fa4a837de66a39502e2c9e2d8466f3998acc4d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-sign-office-solutions"></a>Comment : signer des solutions Office
   Si vous vous connectez à une solution, vous pouvez accorder une confiance à la solution en utilisant le certificat en tant que preuve. Vous pouvez utiliser le même certificat pour plusieurs solutions, et toutes les solutions seront approuvées avec aucune mise à jour de stratégie de sécurité supplémentaire.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Si vous modifiez manuellement l’application et les manifestes de déploiement à l’aide de la Manifest Generation and Editing Tool (mage.exe et mageui.exe), vous devez signer à nouveau les manifestes avant de pouvoir les utiliser. Pour plus d'informations, consultez [Comment : signer de nouveau des manifestes d'application et de déploiement](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
+ Si vous modifiez manuellement l’application et les manifestes de déploiement à l’aide de la Manifest Generation and Editing Tool (*mage.exe* et *mageui.exe*), vous devez signer à nouveau les manifestes avant de pouvoir les utiliser. Pour plus d’informations, consultez [Comment : signer de nouveau les manifestes de déploiement et d’application](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
   
-## <a name="signing-by-using-a-certificate"></a>À l’aide d’un certificat de signature  
+## <a name="sign-by-using-a-certificate"></a>Se connecter à l’aide d’un certificat  
  Un certificat est un fichier qui contient une clé unique et l’identité de l’éditeur de solutions. Vous pouvez acheter des certificats à partir d’une autorité de certification, ou créer votre propre certificat et une autorité de certification signez-le.  
   
  Visual Studio signe des solutions Office avec un certificat temporaire pour activer le débogage. Vous ne devez pas utiliser le certificat temporaire dans des solutions déployées en tant que preuve.  
   
-#### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Pour signer une solution Office à l’aide d’un certificat  
+### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Pour signer une solution Office à l’aide d’un certificat  
   
 1.  Sur le **projet** menu, cliquez sur * SolutionName ***propriétés**.  
   
@@ -48,8 +48,8 @@ ms.lasthandoff: 04/16/2018
 5.  Pour vérifier que le certificat approprié est utilisé, cliquez sur **plus de détails** pour afficher les informations de certificat.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sécurisation des Solutions Office](../vsto/securing-office-solutions.md)   
- [Accorder la confiance à des Solutions Office](../vsto/granting-trust-to-office-solutions.md)   
+ [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)   
+ [Accorder votre confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md)   
  [Page Signature, Concepteur de projet](/visualstudio/ide/reference/signing-page-project-designer)  
   
   

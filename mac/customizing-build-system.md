@@ -1,15 +1,15 @@
 ---
 title: Personnalisation du système de génération
-description: ''
+description: Cet article est une brève introduction au système de génération MSBuild utilisé par Visual Studio pour Mac
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 649289700aa984235f432528a59b970762d26be0
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 16f14d1acb31612d2997937b9aa34f918b6376d6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="customizing-the-build-system"></a>Personnalisation du système de génération
 
@@ -28,17 +28,17 @@ MSBuild utilise un fichier XML, appelé fichier projet, qui définit les *élém
 
 Recherchez le fichier MSBuild en cliquant sur le nom de votre projet et en sélectionnant **Afficher dans le Finder**. La fenêtre du Finder affiche tous les fichiers et dossiers associés à votre projet, notamment le fichier `.csproj`, comme illustré dans l’image suivante :
 
-![](media/customizing-build-system-image1.png)
+![Emplacement de csproj dans le Finder](media/customizing-build-system-image1.png)
 
 Pour afficher le fichier `.csproj` dans un nouvel onglet de Visual Studio pour Mac, cliquez sur le nom de votre projet et accédez à **Outils > Modifier le fichier** :
 
-![](media/customizing-build-system-image2.png)
+![ouverture de csproj dans l’éditeur de code source](media/customizing-build-system-image2.png)
 
 ### <a name="composition-of-the-msbuild-file"></a>Composition du fichier MSBuild
 
 Tous les fichiers MSBuild contiennent un élément racine `Project` obligatoire, comme indiqué ci-dessous :
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 </Project>
@@ -46,7 +46,7 @@ Tous les fichiers MSBuild contiennent un élément racine `Project` obligatoire,
 
 En règle générale, le projet importe également un fichier `.targets`. Ce fichier contient la plupart des règles qui décrivent comment traiter et générer les différents fichiers. L’importation figure généralement dans le bas de votre fichier `proj` et ressemble à ceci pour les projets C# :
 
-```
+```xml
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 ```
 
@@ -64,7 +64,7 @@ Elles sont définies à l’aide d’un PropertyGroup et peuvent contenir un nom
 
 Par exemple, le PropertyGroup pour une pour une application de console simple peut se présenter comme le XML suivant :
 
-```
+```xml
 <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -86,7 +86,7 @@ Les éléments sont créés en déclarant un `ItemGroup`. Il peut y avoir un nom
 
 Par exemple, l’extrait de code ci-dessous crée les écrans de lancement d’iOS. Les écrans de lancement ont le type de build `BundleResource`, avec les spécifications en tant que chemin d’accès à l’image :
 
-```
+```xml
  <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
     <BundleResource Include="Resources\Default%402x.png" />
@@ -96,7 +96,7 @@ Par exemple, l’extrait de code ci-dessous crée les écrans de lancement d’i
     <BundleResource Include="Resources\Default-Landscape%402x.png" />
   </ItemGroup>
  ```
- 
+
  Les ensembles d’éléments peuvent être référencés dans des expressions avec la syntaxe `@()`. Par exemple, `@(BundleResource)` sera évalué comme étant l’ensemble d’éléments BundleResource, ce qui signifie tous les éléments BundleResource. S’il n’existe aucun élément de ce type, il sera vide, sans provoquer d’erreur.
 
 ## <a name="resources-for-learning-msbuild"></a>Ressources pour l’apprentissage de MSBuild
@@ -105,5 +105,3 @@ Les ressources suivantes peuvent être utilisées pour obtenir plus d’informat
 
 * [MSDN - Vue d’ensemble](https://msdn.microsoft.com/library/dd393574.aspx)
 * [MSDN - Concepts](https://msdn.microsoft.com/library/dd637714.aspx)
-
-

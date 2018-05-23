@@ -29,11 +29,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 078715380bb5ddc570d745d76fabe4d8a264eef0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0c12c01566011ed93d83cd9ecc0dd417edd0b1b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="providing-packaging-and-deployment-information-in-project-items"></a>Fourniture d'informations de création de packages et de déploiement dans des éléments de projet
   Tous les éléments de projet SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ont des propriétés que vous pouvez utiliser pour fournir des données supplémentaires lorsque le projet est déployé sur SharePoint. Ces propriétés sont les suivantes :  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
   
  Lorsque vous ajoutez une valeur de propriété de fonctionnalité à un élément de projet, la valeur est ajoutée en tant qu’élément dans le manifeste de fonctionnalité de l’élément. Dans un projet de modèle de connectivité de données métiers (BDC), par exemple, la propriété de fonctionnalité ModelFileName apparaît en tant que :  
   
-```  
+```xml  
 <Property Key="ModelFileName" Value="BdcModel1\BdcModel1.bdcm" />   
 ```  
   

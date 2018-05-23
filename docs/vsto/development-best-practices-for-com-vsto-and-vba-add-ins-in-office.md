@@ -1,5 +1,5 @@
 ---
-title: Développement de meilleures pratiques pour COM, VSTO et VBA compléments dans Office | Documents Microsoft
+title: Meilleures pratiques de développement pour COM, VSTO et VBA compléments dans Office
 ms.custom: ''
 ms.date: 07/25/2017
 ms.technology:
@@ -14,13 +14,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 020faeb330348049dcf12431fadfa6ab099d1584
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Meilleures pratiques de développement pour COM, VSTO et VBA compléments dans Office
+# <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Meilleures pratiques de développement pour COM, VSTO et VBA compléments dans Office
   Si vous développez des Compléments VSTO COM ou de VBA pour Office, suivez les meilleures pratiques de développement décrits dans cet article.   Cela aide à vérifier :
 
 -  Compatibilité de vos compléments entre différentes versions et les déploiements de Microsoft Office.
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
  Nous ne recommandons pas avoir votre complément détecter si Office est installé pendant l’installation du complément. Si Office n’est pas installé, vous pouvez installer le complément et l’utilisateur sera en mesure d’y accéder après l’installation d’Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Utilisez des Types Interop incorporés (NoPIA)  
-Si votre solution utilise .NET 4.0 ou version ultérieure, utilisez des types interop incorporés (NoPIA) au lieu de selon l’Office assemblys PIA (Primary Interop) redistribuable. À l’aide de l’incorporation de type réduit la taille de l’installation de votre solution et garantit la compatibilité future. Office 2010 était la dernière version d’Office fourni l’assembly PIA redistribuable. Pour plus d’informations, consultez [procédure pas à pas : incorporation d’informations sur le Type à partir d’assemblys Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) et [équivalence des types et Types Interop incorporés](/windows/uwp/porting/desktop-to-uwp-root).
+Si votre solution utilise .NET 4.0 ou version ultérieure, utilisez des types interop incorporés (NoPIA) au lieu de selon l’Office assemblys PIA (Primary Interop) redistribuable. À l’aide de l’incorporation de type réduit la taille de l’installation de votre solution et garantit la compatibilité future. Office 2010 était la dernière version d’Office fourni l’assembly PIA redistribuable. Pour plus d’informations, consultez [procédure pas à pas : incorporation des informations de type provenant d’assemblys Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) et [équivalence de Type et types interop incorporés](/windows/uwp/porting/desktop-to-uwp-root).
 
 Si votre solution utilise une version antérieure de .NET, nous recommandons que vous mettez à jour votre solution pour utiliser .NET 4.0 ou version ultérieure. À l’aide de .NET 4.0 ou version ultérieure réduit les conditions préalables d’exécution sur des versions plus récentes de Windows.
   
@@ -43,7 +43,7 @@ Si votre solution utilise une fonctionnalité qui est disponible uniquement dans
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Activer l’utilisation de Office 32 bits et 64 bits   
 Votre cible de build par défaut doit prendre en charge les (x86) 32 bits et 64 bits (x64), sauf si votre solution dépend des bibliothèques qui sont uniquement disponibles pour un nombre de bits spécifique. L’augmentation de la version 64 bits d’Office à l’adoption, notamment dans les environnements de données volumineuses. Prise en charge 32 bits et 64 bits rend plus facile pour vos utilisateurs pour effectuer la transition entre les versions 32 bits et 64 bits d’Office.
 
-Lorsque vous écrivez du code VBA, utilisez 64 bits safe instructions declare et convertir des variables comme il convient. En outre, assurez-vous que les documents peuvent être partagées entre les utilisateurs qui exécutent des versions 32 bits ou 64 bits d’Office en fournissant le code pour chaque nombre de bits. Pour plus d’informations, consultez [64-Bit Visual Basic pour Applications Overview](https://msdn.microsoft.com/en-us/library/office/gg264421.aspx).
+Lorsque vous écrivez du code VBA, utilisez 64 bits safe instructions declare et convertir des variables comme il convient. En outre, assurez-vous que les documents peuvent être partagées entre les utilisateurs qui exécutent des versions 32 bits ou 64 bits d’Office en fournissant le code pour chaque nombre de bits. Pour plus d’informations, consultez [64 bits de Visual Basic pour une vue d’ensemble des applications](https://msdn.microsoft.com/en-us/library/office/gg264421.aspx).
 
 ## <a name="support-restricted-environments"></a>Prend en charge des environnements restreints   
 Votre solution ne doit pas nécessiter de privilèges d’élévation du compte d’utilisateur ou administrateur. En outre, la solution ne doit pas s’appuyer sur la définition ou la modification :

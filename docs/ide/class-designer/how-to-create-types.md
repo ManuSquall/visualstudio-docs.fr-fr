@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d59c158bf8f532fa73a4eb2c22309218f80718e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c7c41f7c5a9fb9540661440a19462ee12b1aadd9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Guide pratique pour créer des types à l’aide du Concepteur de classes
 
@@ -76,7 +76,7 @@ Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les
 
 3.  Ajoutez un ou plusieurs attributs personnalisés, un par ligne. Ne les placez pas entre crochets.
 
-     Une fois que vous avez terminé, les attributs personnalisés sont appliqués au type.
+   Les attributs personnalisés sont appliqués au type.
 
 ##  <a name="CustAttributeMember"></a> Appliquer un attribut personnalisé à un membre de type
 
@@ -86,7 +86,7 @@ Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les
 
 3.  Ajoutez un ou plusieurs attributs personnalisés, un par ligne. Ne les placez pas entre crochets.
 
-     Une fois que vous avez terminé, les attributs personnalisés sont appliqués au type.
+   Les attributs personnalisés sont appliqués au type.
 
 ## <a name="see-also"></a>Voir aussi
 

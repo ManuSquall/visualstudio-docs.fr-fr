@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>Développement de solutions SharePoint
   Pour créer des sites et des éléments de sites SharePoint, vous disposez de plusieurs modèles de type de projet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour obtenir la liste des types de projet disponibles, consultez [projets et modèles d’élément de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md). Les éléments et propriétés d'un projet SharePoint sont décrits ci-après.  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
  Quand une fonctionnalité est ajoutée à un projet SharePoint, elle apparaît dans l' **Explorateur de solutions** sous la forme d'un nœud ayant pour nom par défaut Feature*x*.feature, où *x* est un nombre unique. Une fois déployée sur le serveur SharePoint, un administrateur SharePoint peut l'activer et la mettre ainsi à la disposition des utilisateurs du site SharePoint.  
   
 #### <a name="package-node"></a>Nœud Package  
- Le nœud **Package** contient un fichier unique qui sert de mécanisme de distribution pour le projet SharePoint. Ce fichier, appelé un *solution ** package*, est. En fonction de CAB avec un. Extension WSP. Un package de solution est un fichier réutilisable destiné à être déployé. Il contient un ensemble de fonctionnalités, définitions de site et assemblys (activables ou désactivables individuellement) s'appliquant aux sites SharePoint. Le **Package** nœud contient également un fichier nommé package.wspdef, c'est-à-dire un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichier de définition pour le package. Une fois le package déployé sur le serveur qui exécute SharePoint, l'administrateur SharePoint peut l'installer et activer ses fonctionnalités.  
+ Le nœud **Package** contient un fichier unique qui sert de mécanisme de distribution pour le projet SharePoint. Ce fichier, appelé un *package de solution*, est. En fonction de CAB avec un. Extension WSP. Un package de solution est un fichier réutilisable destiné à être déployé. Il contient un ensemble de fonctionnalités, définitions de site et assemblys (activables ou désactivables individuellement) s'appliquant aux sites SharePoint. Le **Package** nœud contient également un fichier nommé package.wspdef, c'est-à-dire un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichier de définition pour le package. Une fois le package déployé sur le serveur qui exécute SharePoint, l'administrateur SharePoint peut l'installer et activer ses fonctionnalités.  
   
  Vous pouvez afficher ou modifier le contenu du package dans le Concepteur de packages en double-cliquant sur le nœud package ou en ouvrant le menu contextuel, puis en choisissant **ouvrir**. Pour plus d’informations, consultez [création de Packages de Solution SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).  
   

@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d54b3ea7c32230a683359ee466b03e8954fec2ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77c8d2151380c48b80b53ec3f0ef671daa92dbaa
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Procédure pas à pas : création d'un projet de définition de site de base
   Cette procédure pas à pas montre comment créer une définition de site de base qui contient un composant visual Web part avec certains contrôles sur celui-ci. Par souci de clarté, le composant visual WebPart que vous créez possède uniquement des contrôles. Toutefois, vous pouvez créer des définitions de site SharePoint plus sophistiquées qui incluent des fonctionnalités.  
@@ -98,7 +98,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Au bas de VisualWebPart1.ascx, ajoutez le balisage suivant pour ajouter trois contrôles au formulaire : une zone de texte, un bouton et une étiquette :  
   
-    ```  
+    ```aspx-csharp  
     <table>  
       <tr>  
         <td>  
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Ouvrez la page default.aspx, puis ajoutez la ligne suivante sous la `WebPartPages` balise :  
   
-    ```  
+    ```aspx-csharp  
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>  
     ```  
   
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Après le `</asp:Content>` élément, remplacez l’intégralité de `ContentPlaceHolderId="PlaceHolderMain"` section et son contenu par le code suivant :  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">  
         <MyWebPartControls:VisualWebPart1 runat="server" />      
     </asp:Content>  

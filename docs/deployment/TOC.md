@@ -14,6 +14,8 @@
 ### [Génération d’applications ClickOnce à partir de la ligne de commande](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
 ### [Publier une application ASP.NET Core sur Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [Importer des paramètres de publication et déployer sur Azure](tutorial-import-publish-settings-azure.md)
+### [Importer des paramètres de publication et déployer sur IIS](tutorial-import-publish-settings-iis.md)
 ### [Déploiement continu d’ASP.NET Core sur Azure avec Git](/aspnet/core/publishing/azure-continuous-deployment)
 ### [Déployer ASP.NET sur IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
 ## Natif
@@ -48,7 +50,7 @@
 #### [Guide pratique pour signer des fichiers d’installation avec SignTool.exe (ClickOnce)](how-to-sign-setup-files-with-signtool-exe-clickonce.md)
 ### [Publication d’applications ClickOnce](publishing-clickonce-applications.md)
 #### [Création d’applications ClickOnce destinées à être déployées par des tiers](creating-clickonce-applications-for-others-to-deploy.md)
-#### [Déploiement d’applications ClickOnce pour des serveurs de test et de production sans nouvelle signature](deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)
+#### [Déploiement d’applications ClickOnce pour des serveurs de test et de production sans nouvelle signature](deploying-clickonce-applications-for-testing-and-production-without-resigning.md)
 #### [Accès aux données locales et distantes dans les applications ClickOnce](accessing-local-and-remote-data-in-clickonce-applications.md)
 #### [Déploiement de composants COM avec ClickOnce](deploying-com-components-with-clickonce.md)
 #### [Génération d’applications ClickOnce à partir de la ligne de commande](building-clickonce-applications-from-the-command-line.md)
@@ -80,7 +82,7 @@
 ##### [Procédure pas à pas : téléchargement d’assemblys à la demande avec l’API de déploiement ClickOnce](walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 #### [Procédure pas à pas : téléchargement d’assemblys satellites à la demande avec l’API de déploiement ClickOnce à l’aide du concepteur](walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)
 #### [Procédure pas à pas : déploiement manuel d’une application ClickOnce](walkthrough-manually-deploying-a-clickonce-application.md)
-##### [Procédure pas à pas : déploiement manuel d’une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations relatives à la personnalisation](walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+##### [Procédure pas à pas : déploiement manuel d’une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations relatives à la personnalisation](walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)
 #### [Procédure pas à pas : téléchargement d’assemblys satellites à la demande avec l’API de déploiement ClickOnce](walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 #### [Procédure pas à pas : création d’un programme d’installation personnalisé pour une application ClickOnce](walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)
 ### [Choix d’une stratégie de mise à jour ClickOnce](choosing-a-clickonce-update-strategy.md)

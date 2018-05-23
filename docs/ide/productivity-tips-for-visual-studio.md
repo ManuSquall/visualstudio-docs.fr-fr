@@ -1,7 +1,7 @@
 ---
-title: Conseils de productivité pour Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Conseils de productivité pour Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b79f7d36358a875b45b7a705674060b05969cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Conseils de productivité pour Visual Studio
 
 Cette rubrique propose différents conseils pour vous aider à écrire, parcourir et déboguer votre code plus rapidement et facilement.
 
-Pour plus d'informations sur les raccourcis clavier courants, consultez [Conseils d’utilisation du clavier](../ide/tips-and-tricks-for-visual-studio.md). Ou pour obtenir une liste plus complète des raccourcis clavier, consultez [Identification et personnalisation des raccourcis clavier](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) et [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Pour plus d'informations sur les raccourcis clavier courants, consultez [Conseils d’utilisation du clavier](../ide/tips-and-tricks-for-visual-studio.md). Ou pour obtenir une liste plus complète des raccourcis clavier, consultez [Identifier et personnaliser les raccourcis clavier](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) et [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="writing-code"></a>Écriture de code
+## <a name="write-code"></a>Écrire du code
 
 Écrivez le code plus rapidement à l’aide des fonctionnalités suivantes.
 
 - **Utilisez des commandes pratiques**. Visual Studio propose différentes commandes pour vous aider à accomplir plus rapidement des tâches d’édition. Par exemple, dans **Visual Studio 2017 versions 15.6** et ultérieures, vous pouvez choisir une commande afin de facilement dupliquer une ligne de code sans avoir à la copier, à repositionner le curseur, puis à coller la ligne. Choisissez **Edition** > **Dupliquer** ou appuyez sur **Ctrl**+**E**,**V**. Vous pouvez également développer ou diminuer rapidement une sélection de texte en choisissant **Modifier** > **Avancé** > **Développer la sélection** ou **Modifier** > **Avancé** > **Diminuer la sélection** ou en appuyant sur **Maj**+**Alt**+**=** ou sur **Maj**+**Alt**+**-**  (disponible dans **Visual Studio 2017 version 15.5** et version ultérieure).
 
-- **Utiliser IntelliSense**. Lorsque vous écrivez du code dans l'éditeur, les informations IntelliSense, telles que Liste des membres, Informations sur les paramètres, Info express, l'assistance de signature et Compléter le mot, s'affichent. Ces fonctionnalités prennent en charge la correspondance approximative de texte. Par exemple, les listes de résultats pour la liste des membres comprennent non seulement les entrées qui commencent par les caractères saisis, mais également celles qui contiennent la combinaison de caractères n’importe où dans leurs noms. Pour plus d’informations, consultez [Utilisation d’IntelliSense](../ide/using-intellisense.md).
+- **Utiliser IntelliSense**. Lorsque vous écrivez du code dans l'éditeur, les informations IntelliSense, telles que Liste des membres, Informations sur les paramètres, Info express, l'assistance de signature et Compléter le mot, s'affichent. Ces fonctionnalités prennent en charge la correspondance approximative de texte. Par exemple, les listes de résultats pour la liste des membres comprennent non seulement les entrées qui commencent par les caractères saisis, mais également celles qui contiennent la combinaison de caractères n’importe où dans leurs noms. Pour plus d’informations, consultez [Utiliser IntelliSense](../ide/using-intellisense.md).
 
 - **Modifier l’insertion automatique des options IntelliSense quand vous entrez du code**. En basculant IntelliSense en mode suggestion, vous pouvez spécifier que les options IntelliSense ne sont insérées que si vous les choisissez explicitement.
 
@@ -37,7 +37,7 @@ Pour plus d'informations sur les raccourcis clavier courants, consultez [Conseil
 
      Pour insérer un extrait de code, choisissez **Edition** > **IntelliSense** > **Insérer l’extrait** ou **Entourer de** dans la barre de menus, ou ouvrez le menu contextuel dans un fichier et choisissez **Extrait** > **Insérer l’extrait** ou **Entourer de**. Pour plus d’informations, consultez [Extraits de code](../ide/code-snippets.md).
 
-- **Corriger les erreurs de code inline**. Les actions rapides vous permettent de refactoriser, générer ou modifier facilement le code en une seule action. Ces actions peuvent être appliquées en utilisant l’icône en forme d’ampoule ![Petite icône en forme d’ampoule](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall"), ou en appuyant sur **Alt**+**Entrée** ou **Ctrl**+**.** quand votre curseur se trouve sur la ligne de code appropriée. Pour plus d’informations, consultez [Actions rapides](quick-actions.md).
+- **Corriger les erreurs de code inline**. Les actions rapides vous permettent de refactoriser, générer ou modifier facilement le code en une seule action. Ces actions peuvent être appliquées en utilisant l’icône en forme de tournevis ![Icône en forme de tournevis](media/screwdriver-icon.png) ou d’ampoule ![Icône en forme d’ampoule](media/light-bulb-icon.png), ou en appuyant sur **Alt**+**Entrée** ou **Ctrl**+**.** quand votre curseur se trouve sur la ligne de code appropriée. Pour plus d’informations, consultez [Actions rapides](quick-actions.md).
 
 - **Afficher et modifier la définition d’un élément de code**. Vous pouvez afficher et modifier rapidement le module dans lequel un élément de code, tel qu'un membre, une variable ou une variable locale, est défini.
 
@@ -45,35 +45,35 @@ Pour plus d'informations sur les raccourcis clavier courants, consultez [Conseil
 
 - **Utiliser des exemples d’applications**. Vous pouvez accélérer le développement d'applications en téléchargeant et en installant des exemples d'applications à partir de [Microsoft Developer Network](https://code.msdn.microsoft.com/). Vous pouvez également apprendre une technologie ou un concept de programmation spécifiques en téléchargeant et en explorant un exemple de pack pour cette zone.
 
-## <a name="navigating-within-your-code"></a>Navigation dans le code
+## <a name="navigate-within-your-code"></a>Naviguer dans le code
 
  Vous pouvez utiliser différentes techniques pour rechercher et vous déplacer plus rapidement vers des emplacements spécifiques de votre code.
 
 - **Insérer un signet sur les lignes de code**. Vous pouvez utiliser des signets pour naviguer rapidement vers les lignes de code spécifiques d'un fichier.
 
-    Pour définir un signet, sélectionnez **Edition** > **Signets** > **Activer/Désactiver le signet** dans la barre de menus. Vous pouvez afficher tous les signets d’une solution dans la fenêtre **Signets**. Pour plus d’informations, consultez [Définition de signets dans le code](../ide/setting-bookmarks-in-code.md).
+    Pour définir un signet, sélectionnez **Edition** > **Signets** > **Activer/Désactiver le signet** dans la barre de menus. Vous pouvez afficher tous les signets d’une solution dans la fenêtre **Signets**. Pour plus d’informations, consultez [Définir des signets dans le code](../ide/setting-bookmarks-in-code.md).
 
 - **Rechercher des définitions de symbole dans un fichier**. Vous pouvez faire une recherche dans une solution pour trouver des définitions de symbole et des noms de fichiers, mais les résultats de la recherche ne comportent pas d’espaces de noms ni de variables locales.
 
    Pour accéder à cette fonctionnalité, sélectionnez **Edition** > **Naviguer vers** dans la barre de menus.
 
-- **Parcourir la structure globale de votre code**. Dans l’**Explorateur de solutions**, vous pouvez rechercher et parcourir des classes, ainsi que leurs types et membres dans vos projets. Vous pouvez également rechercher des symboles, afficher la hiérarchie d’appels d’une méthode, rechercher des références de symboles et effectuer d’autres tâches. Si vous sélectionnez un élément de code dans l’**Explorateur de solutions**, le fichier associé s’ouvre dans un onglet **Aperçu** et le curseur se déplace vers l’élément dans le fichier. Pour plus d’informations, consultez [Affichage de la structure du code](../ide/viewing-the-structure-of-code.md).
+- **Parcourir la structure globale de votre code**. Dans l’**Explorateur de solutions**, vous pouvez rechercher et parcourir des classes, ainsi que leurs types et membres dans vos projets. Vous pouvez également rechercher des symboles, afficher la hiérarchie d’appels d’une méthode, rechercher des références de symboles et effectuer d’autres tâches. Si vous sélectionnez un élément de code dans l’**Explorateur de solutions**, le fichier associé s’ouvre dans un onglet **Aperçu** et le curseur se déplace vers l’élément dans le fichier. Pour plus d’informations, consultez [Afficher la structure du code](../ide/viewing-the-structure-of-code.md).
 
-## <a name="finding-items-faster"></a>Recherche d’éléments plus rapide
+## <a name="find-items-faster"></a>Rechercher des éléments plus rapidement
 
 Vous pouvez rechercher des commandes, des fichiers et des options dans l’IDE en plus de filtrer le contenu des fenêtres Outil pour afficher uniquement les informations importantes pour votre tâche actuelle.
 
 - **Filtrer le contenu des fenêtres d’outils**. Vous pouvez faire une recherche dans le contenu de nombreuses fenêtres d’outils, telles que la **Boîte à outils**, la fenêtre **Propriétés** et l’**Explorateur de solutions**, mais afficher uniquement les éléments dont les noms contiennent les caractères que vous spécifiez.
 
-- **Afficher uniquement les erreurs que vous souhaitez traiter**. Si vous sélectionnez le bouton **Filtre** dans la barre d’outils **Liste d’erreurs**, vous pouvez réduire le nombre d’erreurs qui s’affichent dans la fenêtre **Liste d’erreurs**. Vous pouvez afficher uniquement les erreurs des fichiers ouverts dans l'éditeur, uniquement les erreurs du fichier actif ou uniquement les erreurs du projet actif. Vous pouvez également rechercher des erreurs spécifiques dans la fenêtre Liste d'erreurs.
+- **Afficher uniquement les erreurs que vous souhaitez traiter**. Si vous sélectionnez le bouton **Filtre** dans la barre d’outils **Liste d’erreurs**, vous pouvez réduire le nombre d’erreurs qui s’affichent dans la fenêtre **Liste d’erreurs**. Vous pouvez afficher uniquement les erreurs des fichiers ouverts dans l'éditeur, uniquement les erreurs du fichier actif ou uniquement les erreurs du projet actif. Vous pouvez également rechercher des erreurs spécifiques dans la fenêtre **Liste d’erreurs**.
 
 - **Rechercher des boîtes de dialogue, commandes de menu et options**. Dans la zone [Lancement rapide](../ide/reference/quick-launch-environment-options-dialog-box.md), entrez les mots clés ou expressions pour les éléments recherchés. Par exemple, les options suivantes apparaissent si vous entrez `new project` :
 
     ![Résultats du lancement rapide pour « nouveau projet »](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
 
-    **Lancement rapide** affiche notamment des liens vers les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**, ainsi que vers la page Projets et solutions dans la boîte de dialogue **Options**. Les résultats de lancement rapide peuvent également inclure des fichiers de projet et des fenêtres Outil.
+    **Lancement rapide** affiche notamment des liens vers les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**, ainsi que vers la page **Projets et solutions** dans la boîte de dialogue **Options**. Les résultats de lancement rapide peuvent également inclure des fichiers de projet et des fenêtres Outil.
 
-## <a name="debugging-code"></a>Débogage du code
+## <a name="debug-code"></a>Déboguer du code
 
 Le débogage peut prendre beaucoup de temps, mais les conseils suivants peuvent vous aider à accélérer le processus.
 
@@ -97,7 +97,7 @@ Le débogage peut prendre beaucoup de temps, mais les conseils suivants peuvent 
 
      Pour plus d’informations sur d’autres commandes, consultez [Alias de commandes Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
-## <a name="accessing-visual-studio-tools"></a>Accès à Visual Studio Tools
+## <a name="access-visual-studio-tools"></a>Accéder à Visual Studio Tools
 
 Vous pouvez rapidement accéder à une invite de commandes développeur ou à un autre outil Visual Studio si vous l’épinglez au menu Démarrer ou à la barre des tâches.
 
@@ -105,7 +105,7 @@ Vous pouvez rapidement accéder à une invite de commandes développeur ou à un
 
 1. Cliquez avec le bouton droit ou ouvrez le menu contextuel pour **Invite de commandes développeur**, puis choisissez **Épingler au menu Démarrer** ou **Épingler à la barre des tâches**.
 
-## <a name="managing-files-toolbars-and-windows"></a>Gestion de fichiers, de barres d’outils et de fenêtres
+## <a name="manage-files-toolbars-and-windows"></a>Gérer des fichiers, des barres d’outils et des fenêtres
 
 À tout moment, vous pouvez travailler dans plusieurs fichiers de code et vous déplacer sur plusieurs fenêtres Outil à mesure que vous développez une application. Vous pouvez préserver une bonne organisation en utilisant les conseils suivants.
 
@@ -123,5 +123,5 @@ Vous pouvez rapidement accéder à une invite de commandes développeur ou à un
 
 - [Raccourcis clavier par défaut pour les commandes fréquemment utilisées](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Guide pratique pour personnaliser des menus et des barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Procédure pas à pas : création d’une application simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Procédure pas à pas : création d’une application simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 - [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Récupération des données mises en cache à partir d’un classeur sur un serveur | Documents Microsoft'
+title: 'Procédure pas à pas : Récupérer des données mises en cache à partir d’un classeur sur un serveur'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,20 +19,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e259142ce37115196c7bc0dd0390d162020c476d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b9b9296bd57e7f3057dfbca86c16b1ac41418ba0
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="walkthrough-retrieving-cached-data-from-a-workbook-on-a-server"></a>Procédure pas à pas : récupération des données mises en cache d'un classeur sur un serveur
+# <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Procédure pas à pas : Récupérer des données mises en cache à partir d’un classeur sur un serveur
   Cette procédure pas à pas montre comment récupérer des données à partir d’un jeu de données est mise en cache dans un classeur Microsoft Office Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Définition d’un dataset qui contient les données à partir de la base de données AdventureWorksLT.  
+-   Définition d’un dataset qui contient les données à partir de la *AdventureWorksLT* base de données.  
   
 -   Création d’instances du jeu de données dans un projet de classeur Excel et un projet d’application console.  
   
@@ -54,16 +54,16 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
--   Accès à une instance en cours d’exécution de Microsoft SQL Server ou Microsoft SQL Server Express à laquelle la base de données AdventureWorksLT exemple lui. Vous pouvez télécharger la base de données AdventureWorksLT à partir de la [site CodePlex Web](http://go.microsoft.com/fwlink/?linkid=87843). Pour plus d’informations sur l’attachement d’une base de données, consultez les rubriques suivantes :  
+-   Accès à une instance en cours d’exécution de Microsoft SQL Server ou Microsoft SQL Server Express à laquelle la base de données AdventureWorksLT exemple lui. Vous pouvez télécharger la base de données AdventureWorksLT à partir de la [site Web de CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Pour plus d’informations sur l’attachement d’une base de données, consultez les rubriques suivantes :  
   
-    -   Pour attacher une base de données à l’aide de SQL Server Management Studio ou de SQL Server Management Studio Express, consultez [Comment : attacher une base de données (SQL Server Management Studio)](http://msdn.microsoft.com/en-us/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).  
+    -   Pour attacher une base de données à l’aide de SQL Server Management Studio ou SQL Server Management Studio Express, consultez [Comment : attacher une base de données (SQL Server Management Studio)](http://msdn.microsoft.com/en-us/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).  
   
-    -   Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : attacher un fichier de base de données à SQL Server Express](http://msdn.microsoft.com/en-us/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).  
+    -   Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : attacher un fichier de base de données à SQL Server Express](http://msdn.microsoft.com/en-us/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).  
   
-## <a name="creating-a-class-library-project-that-defines-a-dataset"></a>Création d’un projet de bibliothèque de classes qui définit un jeu de données  
+## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Créez un projet de bibliothèque de classes qui définit un jeu de données  
  Pour utiliser le même jeu de données dans un projet de classeur Excel et une application console, vous devez définir le jeu de données dans un assembly distinct qui est référencé par ces deux projets. Pour cette procédure pas à pas, définissez le jeu de données dans un projet de bibliothèque de classes.  
   
-#### <a name="to-create-the-class-library-project"></a>Pour créer le projet de bibliothèque de classes  
+#### <a name="create-the-class-library-project"></a>Créer le projet de bibliothèque de classes  
   
 1.  Démarrez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -75,26 +75,26 @@ ms.lasthandoff: 04/16/2018
   
 5.  Dans le **nom** , tapez **AdventureWorksDataSet**.  
   
-6.  Cliquez sur **Parcourir**, accédez à votre %UserProfile%\My Documents (Windows XP ou version antérieure) ou le dossier %UserProfile%\Documents (pour Windows Vista), puis cliquez sur **sélectionner le dossier**.  
+6.  Cliquez sur **Parcourir**, accédez à votre *%UserProfile%\My Documents* (pour Windows XP ou version antérieure) ou *%UserProfile%\Documents* (pour Windows Vista) dossier, puis cliquez sur **Sélectionnez dossier**.  
   
 7.  Dans le **nouveau projet** boîte de dialogue zone, vérifiez que le **créer le répertoire pour la solution** case à cocher n’est pas activée.  
   
 8.  Cliquez sur **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **AdventureWorksDataSet** projet **l’Explorateur de solutions** et ouvre le **Class1.cs** ou **Class1.vb** fichier de code.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **AdventureWorksDataSet** projet **l’Explorateur de solutions** et ouvre le *Class1.cs* ou *Class1.vb* fichier de code.  
   
-9. Dans **l’Explorateur de solutions**, avec le bouton droit **Class1.cs** ou **Class1.vb**, puis cliquez sur **supprimer**. Il est inutile ce fichier pour cette procédure pas à pas.  
+9. Dans **l’Explorateur de solutions**, avec le bouton droit *Class1.cs* ou *Class1.vb*, puis cliquez sur **supprimer**. Il est inutile ce fichier pour cette procédure pas à pas.  
   
-## <a name="defining-a-dataset-in-the-class-library-project"></a>Définition d’un Dataset dans le projet de bibliothèque de classes  
+## <a name="define-a-dataset-in-the-class-library-project"></a>Définir un jeu de données dans le projet de bibliothèque de classes  
  Définissez un dataset typé qui contient les données à partir de la base de données AdventureWorksLT pour SQL Server 2005. Plus loin dans cette procédure pas à pas, vous ferez référence ce jeu de données à partir d’un projet de classeur Excel et un projet d’application console.  
   
  Le jeu de données est un *dataset typé* qui représente les données dans la table Product de la base de données AdventureWorksLT. Pour plus d’informations sur les datasets typés, consultez [outils Dataset dans Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).  
   
-#### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Pour définir un dataset typé dans le projet de bibliothèque de classes  
+#### <a name="define-a-typed-dataset-in-the-class-library-project"></a>Définissez un dataset typé dans le projet de bibliothèque de classes  
   
 1.  Dans **l’Explorateur de solutions**, cliquez sur le **AdventureWorksDataSet** projet.  
   
-2.  Si la fenêtre **Sources de données** n'est pas visible, affichez-la en choisissant, dans la barre de menus, **Affichage**, **Autres fenêtres**, **Sources de données**.  
+2.  Si le **des Sources de données** fenêtre n’est pas visible, affichez-la en, sur la barre de menus, en choisissant **vue** > **autres fenêtres**  >   **Sources de données**.  
   
 3.  Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.  
   
@@ -110,11 +110,11 @@ ms.lasthandoff: 04/16/2018
   
 8.  Cliquez sur **Terminer**.  
   
-     Le fichier AdventureWorksLTDataSet.xsd est ajouté à la **AdventureWorksDataSet** projet. Ce fichier définit les éléments suivants :  
+     Le *AdventureWorksLTDataSet.xsd* fichier est ajouté à la **AdventureWorksDataSet** projet. Ce fichier définit les éléments suivants :  
   
     -   Un dataset typé nommé `AdventureWorksLTDataSet`. Ce jeu de données représente le contenu de la table Product dans la base de données AdventureWorksLT.  
   
-    -   Un TableAdapter nommé `ProductTableAdapter`. Ce TableAdapter peut être utilisé pour lire et écrire des données le `AdventureWorksLTDataSet`. Pour plus d'informations, consultez [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
+    -   Un TableAdapter nommé `ProductTableAdapter`. Ce TableAdapter peut être utilisé pour lire et écrire des données le `AdventureWorksLTDataSet`. Pour plus d’informations, consultez [vue d’ensemble de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
   
      Vous utiliserez ces deux objets ultérieurement dans cette procédure pas à pas.  
   
@@ -122,10 +122,10 @@ ms.lasthandoff: 04/16/2018
   
      Vérifiez que le projet se génère sans erreur.  
   
-## <a name="creating-an-excel-workbook-project"></a>Création d'un projet de classeur Excel  
+## <a name="create-an-excel-workbook-project"></a>Créez un projet de classeur Excel  
  Créer un projet de classeur Excel pour l’interface aux données. Plus loin dans cette procédure pas à pas, vous allez créer un <xref:Microsoft.Office.Tools.Excel.ListObject> qui affiche les données, et vous allez ajouter une instance du jeu de données dans le cache de données dans le classeur.  
   
-#### <a name="to-create-the-excel-workbook-project"></a>Pour créer le projet de classeur Excel  
+#### <a name="create-the-excel-workbook-project"></a>Créer le projet de classeur Excel  
   
 1.  Dans **l’Explorateur de solutions**, avec le bouton droit le **AdventureWorksDataSet** solution, pointez sur **ajouter**, puis cliquez sur **nouveau projet**.  
   
@@ -145,12 +145,10 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ouvre le **AdventureWorksReport** classeur dans le concepteur et ajoute le **AdventureWorksReport** projet **l’Explorateur de solutions**.  
   
-## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Ajout du jeu de données à des Sources de données dans le projet de classeur Excel  
+## <a name="add-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Ajouter le jeu de données à des sources de données dans le projet de classeur Excel  
  Avant de pouvoir afficher le jeu de données dans le classeur Excel, vous devez d’abord ajouter le jeu de données à des sources de données dans le projet de classeur Excel.  
   
-#### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Pour ajouter le jeu de données aux sources de données dans le projet de classeur Excel  
-  
-1.  Dans **l’Explorateur de solutions**, double-cliquez sur **Sheet1.cs** ou **Sheet1.vb** sous le **AdventureWorksReport** projet.  
+1.  Dans **l’Explorateur de solutions**, double-cliquez sur *Sheet1.cs* ou *Sheet1.vb* sous le **AdventureWorksReport** projet.  
   
      Le classeur s’ouvre dans le concepteur.  
   
@@ -168,10 +166,8 @@ ms.lasthandoff: 04/16/2018
   
      Le **des Sources de données** fenêtre s’ouvre, et **AdventureWorksLTDataSet** est ajouté à la liste des sources de données.  
   
-## <a name="creating-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Création d’un contrôle ListObject lié à une Instance du jeu de données  
- Pour afficher le jeu de données dans le classeur, créez un <xref:Microsoft.Office.Tools.Excel.ListObject> qui est lié à une instance du jeu de données. Pour plus d’informations sur la liaison des contrôles aux données, consultez [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md).  
-  
-#### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Pour créer un ListObject lié à une instance du jeu de données  
+## <a name="create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Créer un ListObject lié à une instance du jeu de données  
+ Pour afficher le jeu de données dans le classeur, créez un <xref:Microsoft.Office.Tools.Excel.ListObject> qui est lié à une instance du jeu de données. Pour plus d’informations sur la liaison des contrôles aux données, consultez [lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
 1.  Dans le **des Sources de données** fenêtre, développez le **AdventureWorksLTDataSet** nœud sous **AdventureWorksDataSet**.  
   
@@ -183,10 +179,8 @@ ms.lasthandoff: 04/16/2018
   
      A <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle nommé `productListObject` est créé sur la feuille de calcul, en commençant par la cellule A1. En même temps, un objet dataset nommé `adventureWorksLTDataSet` et un <xref:System.Windows.Forms.BindingSource> nommé `productBindingSource` sont ajoutés au projet. <xref:Microsoft.Office.Tools.Excel.ListObject> est lié à <xref:System.Windows.Forms.BindingSource>, qui est lui-même lié à l’objet dataset.  
   
-## <a name="adding-the-dataset-to-the-data-cache"></a>Ajout du jeu de données dans le Cache de données  
- Pour permettre au code en dehors du projet de classeur Excel pour accéder au dataset dans le classeur, vous devez ajouter le jeu de données dans le cache de données. Pour plus d’informations sur le cache de données, consultez [mis en cache les données dans les personnalisations au niveau du Document](../vsto/cached-data-in-document-level-customizations.md) et [mise en cache des données](../vsto/caching-data.md).  
-  
-#### <a name="to-add-the-dataset-to-the-data-cache"></a>Pour ajouter le jeu de données dans le cache de données  
+## <a name="add-the-dataset-to-the-data-cache"></a>Ajouter le jeu de données dans le Cache de données  
+ Pour permettre au code en dehors du projet de classeur Excel pour accéder au dataset dans le classeur, vous devez ajouter le jeu de données dans le cache de données. Pour plus d’informations sur le cache de données, consultez [mis en cache des données dans les personnalisations au niveau du document](../vsto/cached-data-in-document-level-customizations.md) et [mettre en Cache des données](../vsto/caching-data.md).  
   
 1.  Dans le concepteur, cliquez sur **adventureWorksLTDataSet**.  
   
@@ -194,12 +188,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  Définir le **CacheInDocument** propriété **True**.  
   
-## <a name="initializing-the-dataset-in-the-workbook"></a>L’initialisation du jeu de données dans le classeur  
+## <a name="initialize-the-dataset-in-the-workbook"></a>Initialiser le dataset dans le classeur  
  Avant de pouvoir récupérer les données du DataSet mis en cache à l’aide de l’application console, vous devez remplir le dataset mis en cache avec les données.  
   
-#### <a name="to-initialize-the-dataset-in-the-workbook"></a>Pour initialiser le dataset dans le classeur  
-  
-1.  Dans **l’Explorateur de solutions**, avec le bouton droit le **Sheet1.cs** ou **Sheet1.vb** de fichier et cliquez sur **afficher le Code**.  
+1.  Dans **l’Explorateur de solutions**, avec le bouton droit le *Sheet1.cs* ou *Sheet1.vb* de fichier et cliquez sur **afficher le Code**.  
   
 2.  Remplacez le gestionnaire d'événements `Sheet1_Startup` par le code suivant. Ce code utilise une instance de la `ProductTableAdapter` classe qui est définie dans le **AdventureWorksDataSet** projet pour remplir le dataset mis en cache de données, s’il est actuellement vide.  
   
@@ -209,7 +201,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="checkpoint"></a>Point de contrôle  
  Générez et exécutez le projet de classeur Excel pour vous assurer qu’il se compile et s’exécute sans erreur. Cette opération remplit le dataset mis en cache également et enregistre les données dans le classeur.  
   
-#### <a name="to-build-and-run-the-project"></a>Pour générer et exécuter le projet  
+#### <a name="build-and-run-the-project"></a>Générez et exécutez le projet  
   
 1.  Dans **l’Explorateur de solutions**, avec le bouton droit le **AdventureWorksReport** de projet, choisissez **déboguer**, puis cliquez sur **démarrer une nouvelle instance**.  
   
@@ -223,10 +215,8 @@ ms.lasthandoff: 04/16/2018
   
 3.  Fermez Excel.  
   
-## <a name="creating-a-console-application-project"></a>Création d’un projet d’Application Console  
+## <a name="create-a-console-application-project"></a>Créer un projet d’application console  
  Créez un projet d’application console à utiliser pour modifier des données dans le dataset mis en cache dans le classeur.  
-  
-#### <a name="to-create-the-console-application-project"></a>Pour créer le projet d’application console  
   
 1.  Dans **l’Explorateur de solutions**, avec le bouton droit le **AdventureWorksDataSet** solution, pointez sur **ajouter**, puis cliquez sur **nouveau projet**.  
   
@@ -238,12 +228,12 @@ ms.lasthandoff: 04/16/2018
   
 5.  Cliquez sur **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **DataReader** projet **l’Explorateur de solutions** et ouvre le **Program.cs** ou **Module1.vb** fichier de code.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **DataReader** projet **l’Explorateur de solutions** et ouvre le *Program.cs* ou *Module1.vb* fichier de code.  
   
-## <a name="retrieving-data-from-the-cached-dataset-by-using-the-console-application"></a>La récupération des données à partir du Dataset mis en cache à l’aide de l’Application Console  
+## <a name="retrieve-data-from-the-cached-dataset-by-using-the-console-application"></a>Récupérer des données à partir du dataset mis en cache à l’aide de l’application console  
  Utilisez le <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe dans l’application console pour lire les données dans un fichier local `AdventureWorksLTDataSet` objet. Pour confirmer que le jeu de données local a été initialisé avec les données du dataset mis en cache, l’application affiche le nombre de lignes dans le jeu de données local.  
   
-#### <a name="to-retrieve-data-from-the-cached-dataset"></a>Pour récupérer des données à partir du dataset mis en cache  
+#### <a name="retrieve-data-from-the-cached-dataset"></a>Récupérer des données à partir du dataset mis en cache  
   
 1.  Dans **l’Explorateur de solutions**, avec le bouton droit le **DataReader** projet puis cliquez sur **ajouter une référence**.  
   
@@ -255,7 +245,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Sur le **projets** onglet, sélectionnez **AdventureWorksDataSet**, puis cliquez sur **OK**.  
   
-6.  Ouvrez le fichier Program.cs ou Module1.vb dans l’éditeur de Code.  
+6.  Ouvrez le *Program.cs* ou *Module1.vb* fichier dans l’éditeur de code.  
   
 7.  Ajoutez le code suivant **à l’aide de** (pour c#) ou **importations** (pour Visual Basic) en haut du fichier de code.  
   
@@ -271,7 +261,7 @@ ms.lasthandoff: 04/16/2018
     -   A <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> objet à utiliser pour accéder au cache de données dans le classeur.  
   
         > [!NOTE]  
-        >  Le code suivant suppose que le classeur est enregistré à l’aide de l’extension .xlsx. Si le classeur dans votre projet a une extension différente, modifiez le chemin d’accès si nécessaire.  
+        >  Le code suivant suppose que le classeur est enregistré à l’aide de la *.xlsx* extension. Si le classeur dans votre projet a une extension différente, modifiez le chemin d’accès si nécessaire.  
   
      [!code-csharp[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#10)]
      [!code-vb[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#10)]  
@@ -289,25 +279,24 @@ ms.lasthandoff: 04/16/2018
   
 10. Sur le **générer** menu, cliquez sur **Générer DataReader**.  
   
-## <a name="testing-the-project"></a>Test du projet  
+## <a name="test-the-project"></a>Le projet de test  
  Lorsque vous exécutez l’application console, il affiche le nombre de lignes dans le jeu de données local.  
   
-#### <a name="to-test-the-workbook"></a>Pour tester le classeur  
+#### <a name="test-the-workbook"></a>Tester le classeur  
   
 1.  Dans **l’Explorateur de solutions**, avec le bouton droit le **DataReader** de projet, pointez sur **déboguer**, puis cliquez sur **démarrer une nouvelle instance**.  
   
      Vérifiez que l’application indique que le jeu de données local comporte 295 lignes.  
   
-2.  Appuyez sur ENTRÉE pour fermer l’application.  
+2.  Appuyez sur **entrée** pour fermer l’application.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
  Pour plus d’informations sur l’utilisation des données mises en cache à partir de ces rubriques :  
   
--   Modifiez les données dans un dataset mis en cache sans démarrer Excel. Pour plus d’informations, consultez [procédure pas à pas : modification des données mises en cache dans un classeur sur un serveur](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).  
+-   Modifiez les données dans un dataset mis en cache sans démarrer Excel. Pour plus d’informations, consultez [procédure pas à pas : modification mis en cache les données dans un classeur sur un serveur](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Insertion de données dans un classeur sur un serveur](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)   
+ [Procédure : Insérer des données dans un classeur sur un serveur](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)   
  [Procédure pas à pas : Modification des données mises en cache dans un classeur sur un serveur](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)   
- [Connexion à des données dans des applications Windows Forms](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)  
   
   

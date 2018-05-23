@@ -1,5 +1,5 @@
 ---
-title: Accès au ruban au moment de l’exécution | Documents Microsoft
+title: Accéder au ruban au moment de l’exécution
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,30 +17,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c44e98a917b0df8f8a2760540333118cf8134d9c
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: abeffdbc61861aae3c0c9c53cb07d597abaa31c9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="accessing-the-ribbon-at-run-time"></a>Accès au ruban au moment de l'exécution
+# <a name="access-the-ribbon-at-runtime"></a>Accéder au ruban au moment de l’exécution
   Vous pouvez écrire du code pour afficher, masquer et modifier le ruban, et permettre aux utilisateurs d’exécuter ce code à partir de contrôles dans un volet de tâches personnalisé, un volet Actions ou une zone de formulaire Outlook.  
 
  Vous pouvez accéder au ruban à l'aide de la classe `Globals`. Pour les projets Outlook, vous pouvez accéder au ruban qui s'affiche dans une fenêtre de l'explorateur ou de l'inspecteur Outlook spécifique.  
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
 
-## <a name="accessing-the-ribbon-by-using-the-globals-class"></a>Accès au ruban à l'aide de la classe Globals  
+## <a name="access-the-ribbon-by-using-the-globals-class"></a>Accéder au ruban à l’aide de la classe Globals  
  Vous pouvez utiliser la classe `Globals` pour accéder au ruban dans un projet au niveau du document ou un projet de complément VSTO, où que vous soyez dans le projet.  
 
- Pour plus d’informations sur la `Globals` de classe, consultez [accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Pour plus d’informations sur la `Globals` de classe, consultez [d’accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
 
  L'exemple suivant utilise la classe `Globals` pour accéder à un ruban personnalisé nommé `Ribbon1` et définir le texte qui apparaît dans une zone de liste modifiable du ruban sur `Hello World`.  
 
  [!code-vb[Trin_Outlook_FR_Access#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#4)]
  [!code-csharp[Trin_Outlook_FR_Access#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#4)]  
 
-## <a name="accessing-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Accès à une collection de rubans qui s’affichent dans une fenêtre d’inspecteur Outlook spécifique  
+## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Accéder à une collection de rubans qui s’affichent dans une fenêtre d’inspecteur Outlook spécifique  
  Vous pouvez accéder à une collection de rubans qui s’affichent dans Outlook *inspecteurs*. Un inspecteur est une fenêtre qui s’ouvre dans Outlook quand les utilisateurs effectuent certaines tâches, telles que la création d’un message électronique. Pour accéder au ruban d'une fenêtre d'inspecteur, appelez la propriété `Ribbons` de la classe `Globals` et passez-lui un objet <xref:Microsoft.Office.Interop.Outlook.Inspector> qui représente l'inspecteur.  
 
  L'exemple suivant obtient la collection de rubans de l'inspecteur actif. Cet exemple accède ensuite à un ruban nommé `Ribbon1` et définit le texte qui s'affiche dans une zone de liste modifiable du ruban sur `Hello World`.  
@@ -48,7 +48,7 @@ ms.lasthandoff: 04/27/2018
  [!code-vb[Trin_Outlook_FR_Access#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#5)]
  [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]  
 
-## <a name="accessing-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Accès à une collection de rubans qui s’affichent pour un explorateur Outlook spécifique  
+## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Accéder à une collection de rubans qui s’affichent pour un Explorateur Outlook spécifique  
  Vous pouvez accéder à une collection de rubans qui s’affichent dans Outlook *Explorer*. Un explorateur est l'interface utilisateur principale de l'application pour une instance d'Outlook. Pour accéder au ruban d'une fenêtre d'explorateur, appelez la propriété `Ribbons` de la classe `Globals` et passez-lui un objet <xref:Microsoft.Office.Interop.Outlook.Explorer> qui représente l'explorateur.  
 
  L'exemple suivant obtient la collection de rubans de l'explorateur actif. Cet exemple accède ensuite à un ruban nommé `Ribbon1` et définit le texte qui s'affiche dans une zone de liste modifiable du ruban sur `Hello World`.  
@@ -63,5 +63,5 @@ ms.lasthandoff: 04/27/2018
  [Présentation du modèle objet de ruban](../vsto/ribbon-object-model-overview.md)   
  [Procédure pas à pas : Création d’un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Procédure pas à pas : Mise à jour les contrôles sur un ruban au moment de l’exécution](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
- [Personnalisation d’un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Accès à une zone de formulaire au moment de l’exécution](../vsto/accessing-a-form-region-at-run-time.md)  
+ [Personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
+ [Accéder à une zone de formulaire lors de l’exécution](../vsto/accessing-a-form-region-at-run-time.md)  

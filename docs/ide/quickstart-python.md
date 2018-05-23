@@ -1,7 +1,7 @@
 ---
-title: 'Démarrage rapide : utiliser Visual Studio pour créer une application web Python'
+title: 'Démarrage rapide : utiliser Visual Studio pour créer une application web Python'
 description: Ce guide de démarrage rapide utilise Visual Studio et le framework Flask pour générer une application web simple en Python.
-ms.date: 03/21/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c57dab3ac6ca4ee28b568a6fb8004f5559dfed2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a62dfc6cfe5cef21cc2198dd90867a7960312f9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Démarrage rapide : créer votre première application web Python à l’aide de Visual Studio
 
@@ -76,7 +76,7 @@ Suivez les étapes ci-dessous pour installer la bibliothèque Flask dans l’« 
 
 **Question : Où peut-on se renseigner sur les autres packages Python disponibles ?**
 
-**Réponse** : Accédez à [Python Package Index](https://pypi.python.org/pypi).
+**Réponse** : Accédez à [Python Package Index](https://pypi.org/).
 
 ## <a name="add-a-code-file"></a>Ajouter un fichier de code
 

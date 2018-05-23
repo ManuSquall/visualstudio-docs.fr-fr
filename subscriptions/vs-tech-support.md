@@ -9,11 +9,11 @@ description: Découvrez comment activer l’avantage Support technique inclus da
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ef77e784ccaad30413ad81716b55df8e2de45fea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c04132540477bcd94880cdb55b71493cbb1a347
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activation de l’avantage Support technique dans les abonnements Visual Studio
 
@@ -75,6 +75,20 @@ Pour pouvoir utiliser votre avantage Support technique fourni dans l’abonnemen
 3.  Sous « Support », cliquez sur « Lier un contrat de support technique »
 4.  Entrez vos « ID d’accès » et « ID de contrat » fournis à l’étape 1 ci-dessus.
 Une fois que vous avez effectué ces étapes, vous pouvez choisir le plan de support qui est associé à votre avantage inclus dans l’abonnement Visual Studio.  (Le nom du plan peut contenir « MSDN ».)
+
+## <a name="eligibility"></a>Éligibilité
+| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 4 incidents       |  Oui|
+| Visual Studio Professional (Standard, cloud annuel) | Licences en volume, Azure, Détail, NFR sélectif<sup>2</sup>                                        | 2 incidents                                                          |Oui         |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 2 incidents                                             |  Oui         |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 2 incidents                                               | Oui         |
+| Visual Studio Dev Essentials | NA  | Non disponible |NA|
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+
+<sup>1</sup>  *Inclut :  Imagine Premium. Exclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, MVP (Microsoft Valued Partner), RD (Region Director), MCT Software & Services.*
+
+<sup>2</sup>  *Inclut :  Imagine Standard.*
 
  
 

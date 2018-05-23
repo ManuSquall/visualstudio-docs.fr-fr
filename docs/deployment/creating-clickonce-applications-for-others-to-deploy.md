@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f7cf3b6069c80337213283eddd12bdd54e4b7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cd6808ac38a67146e53438e5b8f6dc0e07fd0bc5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Création d'applications ClickOnce destinées à être déployées par des tiers
 Envisagez de pas tous les développeurs qui créent des déploiements ClickOnce déployer les applications elles-mêmes. Bon nombre d'entre elles simplement empaqueter leur application à l’aide de ClickOnce et ensuite remettre les fichiers à un client, par exemple une grande entreprise. Le client est alors chargé d’héberger l’application sur son réseau. Cette rubrique décrit certains des problèmes inhérents à ces déploiements dans les versions du .NET Framework antérieures à la version 3.5. Elle décrit ensuite une nouvelle solution fournie dans le .NET Framework 3.5 à l’aide de la nouvelle fonctionnalité « utiliser le manifeste pour approbation ». Enfin, elle présente les stratégies recommandées pour la création de déploiements de ClickOnce pour les clients qui utilisent encore des versions antérieures du .NET Framework.  
@@ -57,7 +57,7 @@ Envisagez de pas tous les développeurs qui créent des déploiements ClickOnce 
   
  À l’aide d’un certificat auto-signé pour le manifeste de déploiement présente plusieurs avantages. En éliminant la nécessité pour le client obtenir ou créer son propre certificat Authenticode, `<useManifestForTrust>` simplifie le déploiement pour le client, tout en permettant au développeur de conserver son identité de personnalisation sur l’application. Le résultat est un ensemble de déploiements signés qui sont plus sécurisées et a une identité d’application unique. Cela élimine le conflit potentiel qui peut se produire du déploiement de la même application à plusieurs clients.  
   
- Pour obtenir des informations détaillées sur la création d’un déploiement de ClickOnce avec `<useManifestForTrust>` , consultez [procédure pas à pas : déploiement manuel d’une Application ClickOnce qui est non nécessitent nouvelle signature et qui conserve les informations sur le logo](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Pour obtenir des informations détaillées sur la création d’un déploiement de ClickOnce avec `<useManifestForTrust>` , consultez [procédure pas à pas : déploiement manuel d’une Application ClickOnce qui est non nécessitent nouvelle signature et qui conserve les informations sur le logo](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Manifeste d’Application de comment pour les travaux d’approbation lors de l’exécution  
  Pour obtenir une meilleure compréhension du fonctionne d’à l’aide du manifeste d’application de confiance lors de l’exécution, prenons l’exemple suivant. Une application ClickOnce qui cible le .NET Framework 3.5 est créée par Microsoft. Le manifeste d’application utilise le `<useManifestForTrust>` élément et est signé par Microsoft. Adventure Works signe le manifeste de déploiement à l’aide d’un certificat auto-signé. Adventure Works, les clients sont configurés pour approuver toute application signée par Microsoft.  
@@ -99,6 +99,6 @@ Envisagez de pas tous les développeurs qui créent des déploiements ClickOnce 
  L’inconvénient de cette méthode est qu’elle requiert le client pour installer les outils de développement .NET Framework SDK et qu’un développeur ou un administrateur système qui est en utilisant les. Certains clients peuvent rechercher une solution nécessitant peu ou aucune connaissance technique de leur part.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déploiement d’Applications ClickOnce pour les tests et les serveurs de Production sans nouvelle signature](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
+ [Déploiement d’Applications ClickOnce pour les tests et les serveurs de Production sans nouvelle signature](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)   
  [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Procédure pas à pas : déploiement manuel d’une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations relatives à la personnalisation](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+ [Procédure pas à pas : déploiement manuel d’une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations relatives à la personnalisation](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

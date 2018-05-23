@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a257a69abbe760709a197ab97e87bb6ab76b085b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6d194ddfb83570b4e2a5461dc70a0368215aaca5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Comment : lancer une application .NET Framework autonome avec le profileur pour collecter des données de concurrence en utilisant la ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour démarrer une application .NET Framework autonome (cliente) et pour collecter des données de concurrence de processus et de threads  
@@ -98,4 +98,4 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Collecte de données de concurrence](../profiling/collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)
+ [Collecte de données de concurrence](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)

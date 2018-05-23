@@ -1,18 +1,19 @@
 ---
-title: Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework | Microsoft Docs
+title: Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 ms.date: 11/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 ms.author: mblome
 manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: f9025cc9490484cdd6894e2472fd160cbc689deb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ab231191be638b529ffe5f4bbc3f5d4801f4bf4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 

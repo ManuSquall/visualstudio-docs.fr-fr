@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 16c7405cfe889808f27dbb274f7f685e949889dd
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="creating-sharepoint-features"></a>Création de fonctionnalités SharePoint
   Vous pouvez utiliser une fonctionnalité SharePoint pour regrouper des éléments de projet SharePoint connexes pour faciliter le déploiement. Vous pouvez créer des fonctionnalités, définir des étendues et marquer les autres fonctionnalités en tant que dépendances à l’aide du Concepteur de fonctionnalités SharePoint. Le concepteur génère également un manifeste, qui est un fichier XML qui décrit chaque fonctionnalité.  
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
 |Propriété|Description|  
 |--------------|-----------------|  
-|Titre|Facultatif. Le titre par défaut de la fonctionnalité est défini sur *SolutionName ** NomFonctionnalité*.|  
+|Titre|Facultatif. Le titre par défaut de la fonctionnalité est défini sur *SolutionName* *FeatureName*.|  
 |Description|Facultatif. La description de la fonctionnalité SharePoint.|  
 |Portée|Obligatoire. Si une fonction est créée à l’aide de **l’Explorateur de solutions**, l’étendue est définie sur le Web par défaut.<br /><br /> -Batterie : Activer une fonctionnalité pour une batterie de serveurs.<br /><br /> -Site : Activer une fonctionnalité pour tous les sites web dans une collection de sites.<br /><br /> -Web : Activer une fonctionnalité pour un site web spécifique.<br /><br /> -WebApplication : Activer une fonctionnalité pour tous les sites web dans une application web.|  
 |Éléments dans la Solution|Tous les éléments SharePoint peuvent être ajoutés à la fonctionnalité.|  

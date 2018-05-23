@@ -12,21 +12,25 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b638d7c2faf792da208cb1dbea153f24db25066
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="common-quick-actions"></a>Actions rapides courantes
 
-Les sections de cette rubrique répertorient quelques-unes des actions rapides courantes qui sont applicables à la fois au code C# et à Visual Basic. Ces actions sont des *correctifs du code* pour les [règles de l’analyseur](../code-quality/roslyn-analyzers-overview.md) intégrées dans Visual Studio.
+Les sections de cette rubrique répertorient quelques-unes des **Actions rapides** courantes qui sont applicables à la fois au code C# et au code Visual Basic. Ces actions sont des *corrections du code* pour les diagnostics du compilateur ou pour les [analyseurs .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) intégrés dans Visual Studio.
 
 ## <a name="actions-that-fix-errors"></a>Actions permettant de résoudre des erreurs
 
+Les actions rapides de cette section corrigent les erreurs dans le code qui provoquent un échec de génération. Quand des actions rapides sont disponibles pour corriger une erreur sur une ligne de code, l’icône qui s’affiche dans la marge ou en dessous de la ligne ondulée rouge est une ampoule avec un « x » rouge dessus.
+
+![Menu et icône d’erreur Actions rapide](media/error-light-bulb-with-code.png)
+
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Symbole ou mot clé mal orthographié correct
 
-Si vous orthographiez involontairement de façon incorrecte un type ou un mot clé dans Visual Studio, cette action rapide le corrige automatiquement pour vous. Ces éléments s’affichent dans le menu Ampoule comme ***Change '* misspelled word *' to '* correct word**' (Remplacer mot mal orthographié par mot correct).  Exemple :
+Si par erreur vous orthographiez mal un type ou un mot clé dans Visual Studio, cette action rapide le corrige automatiquement pour vous. Ces éléments s’affichent dans le menu Ampoule comme ***Change '* misspelled word *' to '* correct word**' (Remplacer mot mal orthographié par mot correct).  Exemple :
 
 ```csharp
 // Before
@@ -94,44 +98,6 @@ private void MyMethod()
 |  ID d'erreur | Langages applicables |  Version prise en charge |
 | ------- | -------------------- | ----------------  |
 | CS8300, BC37284  | C# et Visual Basic | Visual Studio 2017 version 15.3 |
-
-### <a name="make-method-synchronous"></a>Rendre la méthode synchrone
-
-Lors de l’utilisation du mot clé `async` ou `Async` sur une méthode, il est prévu que le mot clé `await` ou `Await` sera également utilisé quelque part dans cette méthode.  Toutefois, si ce n’est pas le cas, une action rapide s’affiche pour vous permettre de rendre la méthode synchrone en supprimant le mot clé `async` ou `Async` et en modifiant le type de retour. Utilisez l’option **Rendre la méthode synchrone** dans le menu Actions rapides.
-
-```csharp
-// Before
-async Task<int> MyAsyncMethod()
-{
-    return 3;
-}
-
-// Make method synchronous
-
-// After
-int MyAsyncMethod()
-{
-    return 3;
-}
-```
-
-```vb
-' Before
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return 3
-End Function
-
-' Make method synchronous
-
-' After
-Function MyAsyncMethod() As Integer
-    Return 3
-End Function
-```
-
-|  ID d'erreur | Langages applicables |  Version prise en charge |
-| ------- | -------------------- | ----------------  |
-| CS1998, BC42356 | C# et Visual Basic | Visual Studio 2015 Update 2 |
 
 ### <a name="make-method-asynchronous"></a>Rendre la méthode asynchrone
 
@@ -953,6 +919,44 @@ Console.WriteLine($"{x} {y}");
 | ID de diagnostic | Langages applicables | Version prise en charge |
 | ------- | -------------------- | ----------------  |
 | IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15.5 |
+
+### <a name="make-method-synchronous"></a>Rendre la méthode synchrone
+
+Lors de l’utilisation du mot clé `async` ou `Async` sur une méthode, il est prévu que le mot clé `await` ou `Await` sera également utilisé quelque part dans cette méthode.  Toutefois, si ce n’est pas le cas, une action rapide s’affiche pour vous permettre de rendre la méthode synchrone en supprimant le mot clé `async` ou `Async` et en modifiant le type de retour. Utilisez l’option **Rendre la méthode synchrone** dans le menu Actions rapides.
+
+```csharp
+// Before
+async Task<int> MyAsyncMethod()
+{
+    return 3;
+}
+
+// Make method synchronous
+
+// After
+int MyAsyncMethod()
+{
+    return 3;
+}
+```
+
+```vb
+' Before
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return 3
+End Function
+
+' Make method synchronous
+
+' After
+Function MyAsyncMethod() As Integer
+    Return 3
+End Function
+```
+
+|  ID d'erreur | Langages applicables |  Version prise en charge |
+| ------- | -------------------- | ----------------  |
+| CS1998, BC42356 | C# et Visual Basic | Visual Studio 2015 Update 2 |
 
 ## <a name="see-also"></a>Voir aussi
 

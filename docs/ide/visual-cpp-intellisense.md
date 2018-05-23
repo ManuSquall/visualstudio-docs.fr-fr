@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dd4284e242f91525e14630375d5ea624968f60c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
-IntelliSense pour C++ peut être utilisé avec des fichiers autonomes, mais aussi avec des fichiers qui font partie d’un projet C++. Dans les projets multiplateformes, certaines fonctionnalités IntelliSense sont disponibles avec les fichiers .cpp et .c du projet de code partagé, y compris dans un contexte Android ou iOS.
+IntelliSense pour C++ peut être utilisé avec des fichiers autonomes, mais aussi avec des fichiers qui font partie d’un projet C++. Dans les projets multiplateformes, certaines fonctionnalités IntelliSense sont disponibles avec les fichiers *.cpp* et *.c* du projet de code partagé, même quand vous êtes dans un contexte Android ou iOS.
 
 ## <a name="intellisense-features-in-c"></a>Fonctionnalités IntelliSense en C++
 
@@ -73,34 +73,34 @@ Voici une application OpenGLES configurée pour la génération Android et iOS. 
 
 Notez les points suivants :
 
-- La branche #else sur la ligne 8 est grisée pour indiquer une région inactive, car __ANDROID\_\_ est défini pour le projet Android.
+- La branche `#else` sur la ligne 8 est grisée pour indiquer une région inactive, car `__ANDROID__` est défini pour un projet Android.
 
-- La variable de salutations à la ligne 11 est initialisée avec l'identificateur HELLO, qui comporte un tilde violet. En effet, aucun identificateur HELLO n'est défini dans le projet iOS inactif. Dans un projet Android, la ligne 11 est compilée, alors que ce n’est pas le cas dans un projet iOS. Comme il s'agit de code partagé, vous devez changer cela même si la compilation aboutit dans la configuration active.
+- La variable greeting à la ligne 11 est initialisée avec l’identificateur `HELLO`, qui comporte un tilde violet. En effet, aucun identificateur `HELLO` n’est défini dans le projet iOS actuellement inactif. Dans un projet Android, la ligne 11 est compilée, alors que ce n’est pas le cas dans un projet iOS. Comme il s'agit de code partagé, vous devez changer cela même si la compilation aboutit dans la configuration active.
 
-- La ligne 12 a un tilde rouge sous l'identificateur BYE. Cet identificateur n'est pas défini dans le projet actif sélectionné.
+- La ligne 12 a un tilde rouge sous l’identificateur `BYE`. Cet identificateur n’est pas défini dans le projet actif actuellement sélectionné.
 
-À présent, remplacez le projet actif en iOS.StaticLibrary, et notez la façon dont les tildes changent.
+À présent, changez le projet actif en **iOS.StaticLibrary**, et notez la façon dont les tildes changent.
 
 ![iOS est sélectionné comme projet actif](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
 
 Notez les points suivants :
 
-- La branche #ifdef sur la ligne 6 est grisée pour indiquer une région inactive, car __ANDROID\_\_ n’est pas défini pour le projet iOS.
+- La branche `#ifdef` sur la ligne 6 est grisée pour indiquer une région inactive, car `__ANDROID__` n’est pas défini pour un projet iOS.
 
-- La variable de salutations à la ligne 11 est initialisée avec l'identificateur HELLO, qui comporte à présent un tilde rouge. En effet, aucun identificateur HELLO n'est défini dans le projet iOS actif.
+- La variable greeting à la ligne 11 est initialisée avec l’identificateur `HELLO`, qui comporte à présent un tilde rouge. En effet, aucun identificateur `HELLO` n’est défini dans le projet iOS actuellement actif.
 
-- La ligne 12 a un tilde violet sous l'identificateur BYE. Cet identificateur n'est pas défini dans le projet inactif Android.NativeActivity.
+- La ligne 12 a un tilde violet sous l’identificateur `BYE`. Cet identificateur n’est pas défini dans le projet actuellement inactif **Android.NativeActivity**.
 
 ### <a name="intellisense-for-stand-alone-files"></a>IntelliSense pour les fichiers autonomes
 
-IntelliSense est également disponible quand vous ouvrez un seul fichier en dehors de tout projet. Vous pouvez activer ou désactiver les fonctionnalités IntelliSense dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé**. Si vous souhaitez configurer IntelliSense pour des fichiers uniques qui ne font pas partie d’un projet, recherchez la section **IntelliSense et accès aux fichiers hors projet**.
+IntelliSense est également disponible quand vous ouvrez un seul fichier en dehors de tout projet. Vous pouvez activer ou désactiver les fonctionnalités IntelliSense dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé**. Si vous souhaitez configurer IntelliSense pour des fichiers individuels qui ne font pas partie d’un projet, recherchez la section **IntelliSense et accès aux fichiers hors projet**.
 
 ![IntelliSense avec un fichier unique](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 
-Par défaut, IntelliSense pour fichier unique utilise uniquement les répertoires Include standard pour rechercher les fichiers d'en-tête. Pour ajouter d’autres répertoires, ouvrez le menu contextuel du nœud Solution, puis ajoutez votre répertoire à la liste **Déboguer le code source**, comme le montre l’illustration suivante :
+Par défaut, IntelliSense pour fichier unique utilise uniquement les répertoires Include standard pour rechercher les fichiers d'en-tête. Pour ajouter d’autres répertoires, ouvrez le menu contextuel du nœud **Solution**, puis ajoutez votre répertoire à la liste **Déboguer le code source**, comme le montre l’illustration suivante :
 
 ![Ajout d’un chemin à un fichier d’en-tête](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
+- [Utiliser IntelliSense](../ide/using-intellisense.md)

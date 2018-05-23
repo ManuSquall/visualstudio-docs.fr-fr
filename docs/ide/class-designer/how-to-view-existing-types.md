@@ -1,5 +1,5 @@
 ---
-title: 'Comment : afficher des types existants (Concepteur de classes)'
+title: Guide pratique pour afficher des types existants (Concepteur de classes)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc5180d770575ae92c65b4124d928da5a518799
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>Guide pratique pour afficher des types existants (Concepteur de classes)
+# <a name="how-to-view-existing-types-in-class-designer"></a>Guide pratique pour afficher des types existants dans le Concepteur de classes
 
 Pour voir un type existant et ses membres, ajoutez sa forme à un diagramme de classes.
 
@@ -36,13 +36,13 @@ Pour concevoir de nouveaux types sur les diagrammes de classes, consultez [Guide
 
 2.  À partir du projet dans **l’Explorateur de solutions**, faites glisser un fichier de code source vers le diagramme de classes.
 
-    > [!WARNING]
+    > [!NOTE]
     > Si votre solution contient un projet qui partage du code dans plusieurs applications, vous pouvez faire glisser des fichiers ou du code vers un diagramme de classes uniquement à partir des sources suivantes :
     >
-    > -   le projet d'application qui contient le schéma ;
-    > -   un projet partagé importé par le projet d'application ;
-    > -   un projet référencé ;
-    > -   un assembly.
+    > - le projet d'application qui contient le schéma ;
+    > - un projet partagé importé par le projet d'application ;
+    > - un projet référencé ;
+    > - un assembly.
 
     Les formes représentant les types définis dans le fichier de code source apparaissent sur le diagramme à l'emplacement où vous avez fait glisser le fichier.
 
@@ -60,9 +60,7 @@ Lorsque vous affichez un type sur le diagramme pour la première fois, sa forme 
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Pour afficher le contenu d'un projet dans un diagramme de classes
 
-- Dans **l’Explorateur de solutions** ou dans **Affichage de classes**, cliquez avec le bouton droit sur le projet et choisissez **Afficher**, puis **Afficher le diagramme de classes**.
-
-     Un diagramme de classes est alors créé et rempli automatiquement.
+Dans **l’Explorateur de solutions** ou dans **Affichage de classes**, cliquez avec le bouton droit sur le projet et choisissez **Afficher**, puis **Afficher le diagramme de classes**. Un diagramme de classes est alors créé et rempli automatiquement.
 
 ## <a name="see-also"></a>Voir aussi
 

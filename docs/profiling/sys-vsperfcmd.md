@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e054cc07748e7503cb7410206c5ebff1408725b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6c202dbaec3ad1bf894d3892f4f89be75c3a7ad7
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 L’option **Sys** de VSPerfCmd.exe définit l’événement de profilage qui est échantillonné comme étant des événements d’appel système (les appels de fonction de l’application profilée au système d’exploitation), et permet éventuellement de définir le nombre d’appels système dans un intervalle d’échantillonnage sur une valeur autre que la valeur par défaut, qui est 10.  
@@ -27,7 +27,7 @@ L’option **Sys** de VSPerfCmd.exe définit l’événement de profilage qui es
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cmd  
 VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]  
 ```  
   
@@ -62,7 +62,7 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 ## <a name="example"></a>Exemple  
  Cet exemple montre comment définir le l’événement d’échantillonnage du profileur comme étant les appels système, et comment définir l’intervalle d’échantillonnage sur 20 appels par échantillon.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /Sys:20  
 ```  

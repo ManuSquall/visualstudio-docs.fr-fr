@@ -1,5 +1,5 @@
 ---
-title: Messages d’erreur (développement Office dans Visual Studio) | Documents Microsoft
+title: Messages d’erreur (développement Office dans Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,20 +15,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d8cb7bfe06eb90a8a551ce0db1be048ec7cc0ba8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6f87f2bbdda39dd00cf2771d3764aea6ad89d0a
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="error-messages-office-development-in-visual-studio"></a>Messages d'erreur (Développement Office dans Visual Studio)
+# <a name="error-messages-office-development-in-visual-studio"></a>Messages d’erreur (développement Office dans Visual Studio)
   Chaque rubrique de message d’erreur fournit des informations sur les causes possibles d’une erreur et les solutions potentielles.  
   
  Pour obtenir des informations sur un message d’erreur, vous disposez de plusieurs possibilités.  
   
-|||  
+|Méthode|Description|  
 |-|-|  
-|F1|Si vous recevez une erreur, appuyez sur F1. La rubrique de message d’erreur correspondante s’ouvre dans la documentation en ligne.|  
+|F1|Si vous recevez une erreur, vous pouvez appuyer sur **F1**. La rubrique de message d’erreur correspondante s’ouvre dans la documentation en ligne.|  
 |Recherche en texte intégral|Vous pouvez utiliser la recherche en texte intégral à l’aide des mots de la première phrase du texte du message d’erreur. Dans le menu **?** (Aide), cliquez sur **Rechercher**.|  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,5 +1,5 @@
 ---
-title: '&lt;formRegion&gt; élément (développement Office dans Visual Studio) | Documents Microsoft'
+title: '&lt;formRegion&gt; élément (développement Office dans Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: af7dd4f3472692def9f05a937297d54d13c6f0d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2fd8036ea2a437ffc9fb68a523d8f25db964b5f6
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt; élément (développement Office dans Visual Studio)
   L’élément `formRegion` de l’espace de noms `vstov4` identifie une zone de formulaire Microsoft Office Outlook associée à un complément VSTO.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <formRegion  
   name>  
   <messageClass  
@@ -57,9 +57,9 @@ ms.lasthandoff: 04/16/2018
 |`name`|Obligatoire. Identifie le formulaire associé à la zone de formulaire.|  
   
 ## <a name="example"></a>Exemple  
- L’exemple de code suivant illustre un élément `formRegion` dans le manifeste d’application d’un complément VSTO Outlook déployé à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cette zone de formulaire est associée à trois classes de message. Cet exemple de code fait partie d’un exemple plus complet fourni dans [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ L’exemple de code suivant illustre un élément `formRegion` dans le manifeste d’application d’un complément VSTO Outlook déployé à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cette zone de formulaire est associée à trois classes de message. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
   
-```  
+```xml  
 <vstov4:formRegion  
     name="OutlookAddIn1.FormRegion1">  
   <vstov4:messageClass name="IPM.Note" />  
@@ -69,9 +69,9 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création de zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)   
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
- [Manifestes de déploiement pour les Solutions Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)   
+ [Manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifeste d’application ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

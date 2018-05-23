@@ -24,21 +24,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb4838e44549f762e609913c92d677832d897edb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0584aac376345bc508e5f2088decd45b8c64783b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procédure pas à pas : déploiement manuel d'une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations relatives à la personnalisation
-Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et puis de lui donner à un client à la publication et le déploiement, le client a généralement mis à jour le manifeste de déploiement et de signer de nouveau. Alors que qui est toujours la méthode recommandée dans la plupart des cas, le .NET Framework 3.5 vous permet de créer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiements peuvent être déployés par les clients sans avoir à régénérer un nouveau manifeste de déploiement. Pour plus d’informations, consultez [déploiement ClickOnce Applications pour tester les et les serveurs de Production sans Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et puis de lui donner à un client à la publication et le déploiement, le client a généralement mis à jour le manifeste de déploiement et de signer de nouveau. Alors que qui est toujours la méthode recommandée dans la plupart des cas, le .NET Framework 3.5 vous permet de créer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiements peuvent être déployés par les clients sans avoir à régénérer un nouveau manifeste de déploiement. Pour plus d’informations, consultez [déploiement ClickOnce Applications pour tester les et les serveurs de Production sans Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
  Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et puis de lui donner à un client à la publication et le déploiement, l’application peut utiliser la personnalisation du client ou conserve la vôtre. Par exemple, si l’application est une application propriétaire unique, vous souhaiterez conserver votre personnalisation. Si l’application est hautement personnalisée pour chaque client, vous souhaiterez probablement utiliser la personnalisation du client. Le .NET Framework 3.5 permet de vous permet de conserver votre personnalisation, les informations de serveur de publication et de signature de sécurité lorsque vous accordez une application à une organisation à déployer. Pour plus d’informations, consultez [création d’Applications ClickOnce pour d’autres utilisateurs au déploiement](../deployment/creating-clickonce-applications-for-others-to-deploy.md).  
   
 > [!NOTE]
 >  Dans cette procédure pas à pas vous créez des déploiements manuellement à l’aide de l’outil de ligne de commande Mage.exe ou l’outil graphique MageUI.exe. Pour plus d’informations sur les déploiements manuels, consultez [procédure pas à pas : déploiement manuel d’une Application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-## <a name="prerequisites"></a>Composants requis  
+## <a name="prerequisites"></a>Prérequis  
  Pour effectuer les étapes de cette procédure pas à pas, vous devez les éléments suivants :  
   
 -   Une application Windows Forms que vous êtes prêt à déployer. Cette application sera appelée WindowsFormsApp1.  
@@ -130,7 +130,7 @@ Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
   
 14. Si vous possédez un certificat stocké en tant que fichier sur votre système de fichiers, utilisez le **signe que le fichier de certificat** option et sélectionnez le certificat dans le système de fichiers à l’aide de points de suspension (**...** ) bouton.  
   
-     ou  
+     - ou -  
   
      Si votre certificat est conservé dans un magasin de certificats qui sont accessibles à partir de votre ordinateur, sélectionnez le **connexion avec l’option de certificat stockées**, puis sélectionnez le certificat dans la liste fournie.  
   

@@ -21,8 +21,8 @@ helpviewer_keywords:
 - errors, class diagrams
 - errors, Class Designer
 - error messages, Class Designer
-- Class Designer [Visual Studio], errors
 - error messages, class diagrams
+- Class Designer [Visual Studio], errors
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 author: gewarren
@@ -30,23 +30,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0af8686af556ca24cdbc9e0a51206f4f0728206
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 014497d0b32df61412820468a8f3f7e0b177c14f
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="additional-information-about-class-designer-errors"></a>Informations supplémentaires sur les erreurs du Concepteur de classes
+# <a name="class-designer-errors"></a>Erreurs du Concepteur de classes
 
-Le **Concepteur de classes** n’effectue pas le suivi de l’emplacement de vos fichiers sources. Si vous modifiez votre structure de projet ou déplacez des fichiers sources dans votre projet, le **Concepteur de classes** peut donc perdre la trace du type (surtout le type de source d’un typedef, de classes de base ou de types d’associations). Vous pouvez recevoir une erreur telle que **Le Concepteur de classes n’est pas en mesure d’afficher ce type**. Dans ce cas, refaites glisser le code source modifié ou déplacé vers le diagramme de classes pour le réafficher.
+Le **Concepteur de classes** n’effectue pas le suivi de l’emplacement de vos fichiers sources. Si vous modifiez votre structure de projet ou déplacez des fichiers sources dans le projet, le **Concepteur de classes** peut perdre la trace du type. Par exemple, il est fréquent de modifier le type source d’un typedef, de classes de base et de types d’associations. Vous pouvez recevoir une erreur telle que **Le Concepteur de classes n’est pas en mesure d’afficher ce type**. Pour résoudre cette erreur, refaites glisser le code source modifié ou déplacé vers le diagramme de classes pour l’afficher.
 
 ## <a name="resources"></a>Ressources
 
 Vous pouvez obtenir de l'aide sur d'autres erreurs et avertissements dans les ressources suivantes :
 
-- [Utilisation du code Visual C++](working-with-visual-cpp-code.md) inclut des informations de dépannage sur l’affichage de C++ dans un diagramme de classes.
+- [Utiliser le code Visual C++](working-with-visual-cpp-code.md) inclut des informations de dépannage sur l’affichage de C++ dans un diagramme de classes.
 - Le [Forum du Concepteur de classes Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754) propose un forum de questions relatives au **Concepteur de classes**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Conception et affichage des classes et des types](designing-and-viewing-classes-and-types.md)
+- [Concevoir et afficher des classes et des types](designing-and-viewing-classes-and-types.md)

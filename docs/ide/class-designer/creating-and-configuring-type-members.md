@@ -31,13 +31,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d62cc3aff0eb714f142502d30712c8cc289087cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0b5e60da7ea3058f192ad59dcc57a493115a751b
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="creating-and-configuring-type-members-class-designer"></a>Création et configuration de membres de type (Concepteur de classes)
+# <a name="create-and-configure-type-members-in-class-designer"></a>Créer et configurer des membres de type dans le Concepteur de classes
+
 Vous pouvez ajouter ces membres aux types dans un diagramme de classes et configurer ces membres dans la fenêtre **Détails de classe** :
 
 |**Type**|**Membres qu’il peut contenir**|
@@ -57,30 +58,26 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 
 |Tâche|Contenu de support|
 |----------|------------------------|
-|**Bien démarrer** : avant de créer et de configurer des membres de type, vous devez ouvrir la fenêtre **Détails de classe**.|-   [Ouverture de la fenêtre Détails de classe](creating-and-configuring-type-members.md#OpenClassDetails)<br />-   [Notes d’utilisation de la fenêtre Détails de classe](creating-and-configuring-type-members.md#ClassDetailsUsageNotes)<br />-   [Affichage d’informations en lecture seule](creating-and-configuring-type-members.md#ReadOnlyInfo)<br />-   [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Créer et modifier les membres de type** : vous pouvez créer d’autres membres, modifier des membres existants et ajouter des paramètres à une méthode à l’aide de la fenêtre **Détails de classe**.|-   [Création de membres](creating-and-configuring-type-members.md#CreateMembers)<br />-   [Modification des membres de type](creating-and-configuring-type-members.md#ModifyTypeMembers)<br />-   [Ajout de paramètres aux méthodes](creating-and-configuring-type-members.md#AddMethodParams)|
+|**Bien démarrer** : avant de créer et de configurer des membres de type, vous devez ouvrir la fenêtre **Détails de classe**.|- [Ouvrir la fenêtre Détails de classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Notes d’utilisation de la fenêtre Détails de classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Affichage d’informations en lecture seule](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Créer et modifier les membres de type** : vous pouvez créer d’autres membres, modifier des membres existants et ajouter des paramètres à une méthode à l’aide de la fenêtre **Détails de classe**.|- [Créer des membres](creating-and-configuring-type-members.md#create-members)<br />- [Modifier des membres de type](creating-and-configuring-type-members.md#modify-type-members)<br />- [Ajouter des paramètres aux méthodes](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Ouvrir la fenêtre Détails de classe
-Par défaut, la fenêtre **Détails de classe** s’affiche automatiquement quand vous ouvrez un nouveau diagramme de classes (consultez [Guide pratique pour ajouter des diagrammes de classes aux projets](how-to-add-class-diagrams-to-projects.md)). Vous pouvez aussi ouvrir explicitement la fenêtre **Détails de classe**, comme indiqué ci-après.
 
-#### <a name="to-open-the-class-details-window"></a>Pour ouvrir la fenêtre Détails de classe
+Par défaut, la fenêtre **Détails de classe** s’affiche automatiquement quand vous ouvrez un nouveau diagramme de classes. Consultez [Guide pratique pour ajouter des diagrammes de classes aux projets](how-to-add-class-diagrams-to-projects.md). Vous pouvez aussi ouvrir la fenêtre **Détails de classe** des manières suivantes :
 
-1.  Cliquez avec le bouton droit sur une classe du diagramme pour afficher un menu contextuel.
+- Cliquez avec le bouton droit sur une classe du diagramme pour afficher un menu contextuel, puis sélectionnez **Détails de classe**.
 
-2.  Dans le menu contextuel, cliquez sur **Détails de classe**.
-
- - ou
-
--   Pointez sur **Autres fenêtres** dans le menu Affichage, puis cliquez sur **Détails de classe**.
+- Sélectionnez **Affichage** > **Autres fenêtres** > **Détails de classe** dans la barre de menus.
 
 ## <a name="create-members"></a>Créer des membres
+
 Vous pouvez créer un membre à l'aide de l'un des outils suivants :
 
--   **Concepteur de classes**
+- **Concepteur de classes**
 
--   Barre d’outils de la fenêtre **Détails de classe**
+- Barre d’outils de la fenêtre **Détails de classe**
 
--   Fenêtre **Détails de classe**
+- Fenêtre **Détails de classe**
 
 > [!NOTE]
 > Vous pouvez aussi créer des constructeurs et des destructeurs à l'aide des procédures de cette section. N’oubliez pas que les constructeurs et les destructeurs constituent des genres particuliers de méthodes et que, comme tels, ils apparaissent dans le compartiment **Méthodes** des formes du diagramme de classes et dans la section **Méthodes** de la grille de fenêtre **Détails de classe**.
@@ -88,7 +85,7 @@ Vous pouvez créer un membre à l'aide de l'un des outils suivants :
 > [!NOTE]
 > La seule entité que vous pouvez ajouter à un délégué est un paramètre. Notez que la procédure intitulée « Pour créer un membre à l’aide de la barre d’outils de la fenêtre **Détails de classe** » n’est pas valide pour cette action.
 
-#### <a name="to-create-a-member-using-class-designer"></a>Pour créer un membre à l'aide du Concepteur de classes
+### <a name="create-a-member-using-class-designer"></a>Créer un membre à l’aide du Concepteur de classes
 
 1.  Cliquez avec le bouton droit sur le type auquel vous souhaitez ajouter un membre, pointez sur **Ajouter**, puis choisissez le type de membre à ajouter.
 
@@ -96,7 +93,7 @@ Vous pouvez créer un membre à l'aide de l'un des outils suivants :
 
 2.  Vous pouvez, à titre facultatif, spécifier d'autres détails sur le membre, comme son type.
 
-#### <a name="to-create-a-member-using-the-class-details-window-toolbar"></a>Pour créer un membre à l’aide de la barre d’outils de la fenêtre Détails de classe
+### <a name="create-a-member-using-the-class-details-window-toolbar"></a>Créer un membre à l’aide de la barre d’outils de la fenêtre Détails de classe
 
 1.  Sur la surface du diagramme, sélectionnez le type auquel vous souhaitez ajouter un membre.
 
@@ -112,7 +109,7 @@ Vous pouvez créer un membre à l'aide de l'un des outils suivants :
 
 4.  Vous pouvez, à titre facultatif, spécifier d'autres détails sur le membre, comme son type.
 
-#### <a name="to-create-a-member-using-the-class-details-window"></a>Pour créer un membre à l’aide de la fenêtre Détails de classe
+### <a name="create-a-member-using-the-class-details-window"></a>Créer un membre à l’aide de la fenêtre Détails de classe
 
 1.  Sur la surface du diagramme, sélectionnez le type auquel vous souhaitez ajouter un membre.
 
@@ -129,6 +126,7 @@ Vous pouvez créer un membre à l'aide de l'un des outils suivants :
      **Remarque :** Vous pouvez aussi utiliser des raccourcis clavier pour créer les membres. Pour plus d’informations, consultez [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Modifier des membres de type
+
 Le Concepteur de classes permet de modifier les membres de types affichés sur le diagramme. Vous pouvez modifier les membres de n'importe quel type affiché sur un diagramme de classes, à condition que ce type ne soit pas en lecture seule. Pour modifier des membres de type, utilisez la modification sur place sur l’aire de conception, la fenêtre Propriétés et la fenêtre **Détails de classe**.
 
 Tous les membres affichés dans la fenêtre **Détails de classe** représentent les membres des types figurant dans le diagramme de classes. Il existe quatre types de membres : les méthodes, les propriétés, les champs et les événements.
@@ -137,41 +135,41 @@ Toutes les lignes membres apparaissent sous les en-têtes qui regroupent les mem
 
 Chaque ligne membre affiche les éléments suivants :
 
--   **Icône Membre**
+- **Icône Membre**
 
      Chaque genre de membre est représenté par sa propre icône. Pointez la souris sur l’icône de membre pour afficher la signature du membre. Cliquez sur l'icône de membre ou sur l'espace blanc à gauche de l'icône de membre pour sélectionner la ligne.
 
--   **Nom du membre**
+- **Nom du membre**
 
      La colonne **Nom** d’une ligne membre affiche le nom du membre. Ce nom est également affiché dans la propriété **Nom** de la fenêtre Propriétés. Utilisez cette cellule pour modifier le nom d'un membre qui dispose d'autorisations en lecture-écriture.
 
      Si la colonne **Nom** est trop étroite pour afficher le nom entier, le fait de pointer la souris sur le nom de membre permet d’afficher l’intégralité du nom.
 
--   **Type de membre**
+- **Type de membre**
 
      La cellule **Type de membre** utilise la technologie IntelliSense, qui vous permet de faire une sélection au sein de la liste de tous les types disponibles du projet en cours ou des projets référencés.
 
--   **Modificateur de membre**
+- **Modificateur de membre**
 
      Modifiez le modificateur de visibilité d’un membre en `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected``Friend` (`protected``internal`) ou `Default`.
 
--   **\<ajouter un membre>**
+- **\<ajouter un membre>**
 
-     La dernière ligne de la fenêtre **Détails de classe** contient le texte **\<ajouter un membre>** dans la cellule **Nom**. Si vous cliquez sur cette cellule, vous pouvez créer un membre. Pour plus d’informations, consultez [Création de membres](creating-and-configuring-type-members.md#CreateMembers).
+     La dernière ligne de la fenêtre **Détails de classe** contient le texte **\<ajouter un membre>** dans la cellule **Nom**. Si vous cliquez sur cette cellule, vous pouvez créer un membre. Pour plus d’informations, consultez [Créer des membres](creating-and-configuring-type-members.md#create-members).
 
--   **Propriétés du membre dans la fenêtre Propriétés**
+- **Propriétés du membre dans la fenêtre Propriétés**
 
      La fenêtre **Détails de classe** affiche un sous-ensemble des propriétés du membre affichées dans la fenêtre Propriétés. La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de façon globale. Cela inclut l'affichage de sa valeur dans l'autre emplacement.
 
--   **Résumé**
+- **Résumé**
 
      La cellule **Résumé** contient un résumé des informations sur le membre. Cliquez sur les points de suspension dans la cellule **Résumé** pour afficher ou modifier les informations sur le **Résumé**, le **Type de retour** et les **Notes** du membre.
 
--   **Masquer**
+- **Masquer**
 
      Quand la case **Masquer** est cochée, le membre n’est pas affiché dans le type.
 
-#### <a name="to-modify-a-type-member"></a>Pour modifier un membre de type
+### <a name="to-modify-a-type-member"></a>Pour modifier un membre de type
 
 1.  À l'aide du Concepteur de classes, sélectionnez un type.
 
@@ -180,46 +178,43 @@ Chaque ligne membre affiche les éléments suivants :
 3.  Modifiez les valeurs des champs de la grille de la fenêtre **Détails de classe**. Après chaque modification, appuyez sur ENTRÉE ou éloignez le focus du champ modifié, par exemple en appuyant sur la touche TAB. Les modifications sont immédiatement répercutées dans le code.
 
     > [!NOTE]
-    >  Si vous souhaitez modifier uniquement le nom d'un membre, vous pouvez le faire à l'aide de la modification sur place.
+    > Si vous souhaitez modifier uniquement le nom d'un membre, vous pouvez le faire à l'aide de la modification sur place.
 
 ## <a name="add-parameters-to-methods"></a>Ajouter des paramètres aux méthodes
+
 Ajoutez des paramètres aux méthodes à l’aide de la fenêtre **Détails de classe**. Les paramètres peuvent être configurés pour être obligatoires ou optionnels. La valeur de la propriété **Valeur par défaut facultative** d’un paramètre demande au concepteur de générer le code en tant que paramètre optionnel.
 
 Les lignes de paramètres contiennent les éléments suivants :
 
--   **Name**
+- **Name**
 
      La colonne **Nom** d’une ligne de paramètre affiche le nom du paramètre. Ce nom est également affiché dans la propriété **Nom** de la fenêtre Propriétés. Vous pouvez utiliser cette cellule pour modifier le nom d'un paramètre ayant les autorisations en lecture-écriture.
 
      Le fait de pointer sur le nom du paramètre affiche celui-ci si la colonne **Nom** est trop étroite pour afficher la totalité du nom.
 
--   **Type**
+- **Type**
 
      La cellule **Type de paramètre** utilise la technologie IntelliSense, qui permet de choisir dans la liste de tous les types disponibles du projet en cours ou des projets référencés.
 
--   **Modificateur**
+- **Modificateur**
 
      La cellule **Modificateur** d’une ligne de paramètre accepte le nouveau modificateur du paramètre et l’affiche. Pour entrer un nouveau modificateur de paramètre, utilisez la zone de liste déroulante pour faire votre choix : **Aucun**, **ref**, **out** ou **params** dans C#, et **ByVal**, **ByRef** ou **ParamArray** dans Visual Basic.
 
--   **Résumé**
+- **Résumé**
 
      La cellule **Résumé** d’une ligne de paramètre permet d’entrer des commentaires de code qui s’affichent dans IntelliSense lors de la saisie du paramètre dans l’éditeur de code.
 
--   **\<ajouter un paramètre>**
+- **\<ajouter un paramètre>**
 
-     La dernière ligne de paramètre d’un membre contient le texte **<add parameter>** dans la cellule**Nom**. Cliquez sur cette cellule pour créer un nouveau paramètre. Pour plus d’informations, consultez [Pour ajouter un paramètre à une méthode](creating-and-configuring-type-members.md#HowToAddParameterToMethod).
+     La dernière ligne de paramètre d’un membre contient le texte **<add parameter>** dans la cellule**Nom**. Cliquez sur cette cellule pour créer un nouveau paramètre. Pour plus d’informations, consultez [Pour ajouter un paramètre à une méthode](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-**Propriétés des paramètres dans la fenêtre Propriétés**
-
-La fenêtre Propriétés affiche les mêmes propriétés de paramètre que celles affichées dans la fenêtre **Détails de classe** : **Nom**, **Type**, **Modificateur**, **Résumé**, ainsi que la propriété **Valeur par défaut facultative**. La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de manière globale, y compris l'affichage de sa valeur dans l'autre emplacement.
+La fenêtre **Propriétés** affiche les mêmes propriétés de paramètre que celles affichées dans la fenêtre **Détails de classe** : **Nom**, **Type**, **Modificateur**, **Résumé**, ainsi que la propriété **Valeur par défaut facultative**. La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de manière globale, y compris l'affichage de sa valeur dans l'autre emplacement.
 
 > [!NOTE]
-> Pour ajouter un paramètre à un délégué, consultez [Création de membres](creating-and-configuring-type-members.md#CreateMembers).
-
+> Pour ajouter un paramètre à un délégué, consultez [Créer des membres](creating-and-configuring-type-members.md#create-members).
 
 > [!NOTE]
 > Bien qu'un destructeur soit une méthode, il ne peut pas avoir de paramètres.
-
 
 ### <a name="to-add-a-parameter-to-a-method"></a>Pour ajouter un paramètre à une méthode
 
@@ -254,45 +249,47 @@ La fenêtre Propriétés affiche les mêmes propriétés de paramètre que celle
 4.  Dans la fenêtre Propriétés, tapez une valeur pour la propriété **Valeur par défaut facultative**. La définition de la propriété Valeur par défaut facultative d'un paramètre rend ce paramètre optionnel.
 
     > [!NOTE]
-    >  Les paramètres optionnels doivent être les derniers paramètres dans la liste de paramètres.
+    > Les paramètres optionnels doivent être les derniers paramètres dans la liste de paramètres.
 
 ## <a name="class-details-usage-notes"></a>Notes d’utilisation de la fenêtre Détails de classe
+
 Notez les conseils suivants pour utiliser la fenêtre **Détails de classe**.
 
-**Cellules modifiables et cellules non modifiables**
+### <a name="editable-and-non-editable-cells"></a>Cellules modifiables et cellules non modifiables
 
 Toutes les cellules de la fenêtre **Détails de classe** sont modifiables, à quelques exceptions près :
 
--   Le type est en lecture seule, quand, par exemple, il réside dans un assembly référencé. Quand vous sélectionnez la forme dans le Concepteur de classes, la fenêtre **Détails de classe** affiche ses détails en lecture seule.
+- Le type est en lecture seule, quand, par exemple, il réside dans un assembly référencé. Quand vous sélectionnez la forme dans le Concepteur de classes, la fenêtre **Détails de classe** affiche ses détails en lecture seule.
 
--   Pour les indexeurs, le nom est en lecture seule et le reste (type, modificateur, résumé) est modifiable.
+- Pour les indexeurs, le nom est en lecture seule et le reste (type, modificateur, résumé) est modifiable.
 
--   Tous les génériques ont des paramètres en lecture seule dans la fenêtre **Détails de classe**. Pour modifier un paramètre générique, modifiez son code source.
+- Tous les génériques ont des paramètres en lecture seule dans la fenêtre **Détails de classe**. Pour modifier un paramètre générique, modifiez son code source.
 
--   Le nom du paramètre de type qui est défini sur un type générique est en lecture seule.
+- Le nom du paramètre de type qui est défini sur un type générique est en lecture seule.
 
--   Quand le code d’un type est rompu (non analysable), la fenêtre **Détails de classe** affiche le contenu du type en lecture seule.
+- Quand le code d’un type est rompu (non analysable), la fenêtre **Détails de classe** affiche le contenu du type en lecture seule.
 
-**Fenêtre Détails de classe et code source**
+### <a name="the-class-details-window-and-source-code"></a>Fenêtre Détails de classe et code source
 
--   Vous pouvez consulter le code source en cliquant avec le bouton droit sur une forme de la fenêtre **Détails de classe** (ou du Concepteur de classes), puis en cliquant sur Afficher le code. Le fichier correspondant s'ouvre et le code source défile jusqu'à l'élément sélectionné.
+- Vous pouvez consulter le code source en cliquant avec le bouton droit sur une forme de la fenêtre **Détails de classe** (ou du Concepteur de classes), puis en cliquant sur Afficher le code. Le fichier correspondant s'ouvre et le code source défile jusqu'à l'élément sélectionné.
 
--   Le changement du code source est immédiatement répercuté dans l’affichage des informations de signature dans le Concepteur de classes ou dans la fenêtre **Détails de classe**. Si la fenêtre **Détails de classe** est fermée à ce moment-là, les nouvelles informations ne seront visibles qu’à la prochaine ouverture.
+- Le changement du code source est immédiatement répercuté dans l’affichage des informations de signature dans le Concepteur de classes ou dans la fenêtre **Détails de classe**. Si la fenêtre **Détails de classe** est fermée à ce moment-là, les nouvelles informations ne seront visibles qu’à la prochaine ouverture.
 
--   Quand le code d’un type est rompu (non analysable), la fenêtre **Détails de classe** affiche le contenu du type en lecture seule.
+- Quand le code d’un type est rompu (non analysable), la fenêtre **Détails de classe** affiche le contenu du type en lecture seule.
 
-**Utilisation du Presse-papiers dans la fenêtre Détails de classe**
+### <a name="clipboard-functionality-in-the-class-details-window"></a>Utilisation du Presse-papiers dans la fenêtre Détails de classe
 
- Vous pouvez copier ou couper des champs ou des lignes dans la fenêtre **Détails de classe** et les coller dans un autre type. Vous ne pouvez couper une ligne que si elle n'est pas en lecture seule. Quand vous collez la ligne, la fenêtre **Détails de classe** assigne un nouveau nom (dérivé du nom de la ligne copiée) pour éviter tout conflit.
+Vous pouvez copier ou couper des champs ou des lignes dans la fenêtre **Détails de classe** et les coller dans un autre type. Vous ne pouvez couper une ligne que si elle n'est pas en lecture seule. Quand vous collez la ligne, la fenêtre **Détails de classe** assigne un nouveau nom (dérivé du nom de la ligne copiée) pour éviter tout conflit.
 
 ## <a name="display-of-read-only-information"></a>Affichage d’informations en lecture seule
+
 Le Concepteur de classes et la fenêtre **Détails de classe peuvent** afficher les types (et les membres de types) des éléments suivants :
 
--   projet contenant un diagramme de classes
+- projet contenant un diagramme de classes
 
--   projet référencé d'un projet contenant un diagramme de classes
+- projet référencé d'un projet contenant un diagramme de classes
 
--   assembly référencé d'un projet contenant un diagramme de classes
+- assembly référencé d'un projet contenant un diagramme de classes
 
 Dans les deux derniers cas, l'entité référencée (un type ou un membre) est en lecture seule dans le diagramme de classes qui la représente.
 

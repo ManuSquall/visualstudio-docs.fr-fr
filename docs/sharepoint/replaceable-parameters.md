@@ -20,17 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 696388ca89102d588bd1a291b6f5689dc08e26a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86d6b08d209703f73901d7a839c731e1a9a63fdd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="replaceable-parameters"></a>Paramètres remplaçables
   Paramètres remplaçables, ou *jetons*, peut être utilisée dans les fichiers de projet pour fournir des valeurs pour les éléments de solution SharePoint dont les valeurs réelles ne sont pas connues au moment du design. Ils sont semblables à la norme [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] jetons de modèle. Pour plus d’informations, consultez [les paramètres de modèle](/visualstudio/ide/template-parameters).  
   
 ## <a name="token-format"></a>Format de jeton  
- Les jetons commenceront et se terminent par un signe dollar ($). Les jetons employés sont remplacés par des valeurs réelles lorsqu’un projet est empaqueté dans un fichier de package (.wsp) de solution SharePoint au moment du déploiement. Par exemple, le jeton **$SharePoint.Package.Name$** peut correspondre à la chaîne « Test du SharePoint Package ».  
+ Les jetons commenceront et se terminent par un signe dollar ($). Sur le déploiement, les jetons employés sont remplacés par des valeurs réelles lorsqu’un projet est empaqueté dans un package de solution SharePoint (fichier .wsp). Par exemple, le jeton **$SharePoint.Package.Name$** peut correspondre à la chaîne « Test du SharePoint Package ».  
   
 ## <a name="token-rules"></a>Règles d’émission de jeton  
  Les règles suivantes s’appliquent aux jetons :  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
  Les jetons qui ne suivent pas ces règles sont ignorés sans fournir un avertissement ou une erreur.  
   
- Le remplacement des jetons par des valeurs de chaîne s’effectue immédiatement après la transformation du manifeste, ce qui permet de modèles de manifeste modifiés par un utilisateur pour utiliser les jetons.  
+ Le remplacement des jetons par des valeurs de chaîne s’effectue immédiatement après la transformation du manifeste. Ce remplacement permet à l’utilisateur de modifier les modèles de manifeste avec des jetons.  
   
 ### <a name="token-name-resolution"></a>Résolution de noms de jeton  
  Dans la plupart des cas, un jeton prend une valeur spécifique, quelle que soit l’emplacement. Toutefois, si le jeton est lié à un package ou une fonctionnalité, sa valeur dépend où il est contenu. Par exemple, si une fonctionnalité est dans un Package un, le jeton `$SharePoint.Package.Name$` correspond à la valeur « Package A. » Si la même fonctionnalité figure dans le Package B, `$SharePoint.Package.Name$` correspond à « Package B. »  
@@ -88,14 +88,14 @@ ms.lasthandoff: 04/16/2018
   
  Ces extensions sont définies par le `<TokenReplacementFileExtensions>` élément dans le fichier Microsoft.VisualStudio.SharePoint.targets, situé dans le... \\< fichiers programme\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools dossier.  
   
- Vous pouvez, toutefois, ajouter des extensions de fichiers supplémentaires à la liste. Pour ce faire, ajoutez un `<TokenReplacementFileExtensions>` élément à n’importe quel élément PropertyGroup dans le fichier de projet SharePoint qui n’est défini avant le \<importation > du fichier de cibles SharePoint.  
+ Vous pouvez, toutefois, ajouter des extensions de fichiers supplémentaires à la liste. Ajouter un `<TokenReplacementFileExtensions>` élément à n’importe quel élément PropertyGroup dans le fichier de projet SharePoint qui n’est défini avant le \<importation > du fichier de cibles SharePoint.  
   
 > [!NOTE]  
 >  Étant donné que le remplacement des jetons se produit après la compilation d’un projet, vous ne devez pas ajouter des extensions de fichier pour les types de fichiers qui sont compilés, tel que .cs, .vb ou .resx. Les jetons sont remplacés uniquement dans les fichiers qui ne sont pas compilées.  
   
- Par exemple, pour ajouter les extensions de nom de fichier « .myextension » et « .yourextension » à la liste des extensions de nom de fichier de remplacement de jeton, vous devez ajouter les éléments suivants dans un fichier .csproj :  
+ Par exemple, pour ajouter les extensions de nom de fichier « .myextension » et « .yourextension » à la liste des extensions de nom de fichier de remplacement de jeton, ajoutez le code suivant à un `.csproj` fichier :  
   
-```  
+```xml  
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <PropertyGroup>  
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -108,7 +108,7 @@ ms.lasthandoff: 04/16/2018
 </PropertyGroup>  
 ```  
   
- Vous pouvez également ajouter l’extension directement au fichier .targets. Toutefois, cela modifie la liste des extensions pour tous les projets SharePoint empaquetés sur le système local, pas simplement votre propre. Cela peut être pratique lorsque vous êtes le seul développeur sur le système ou si la plupart de vos projets le requièrent. Toutefois, car il est propre au système, cette approche n’est pas très mobile et par conséquent, il est recommandé que vous ajouter toutes les extensions pour le fichier projet à la place.  
+ Vous pouvez ajouter l’extension directement au fichier .targets. Toutefois, cela modifie la liste des extensions pour tous les projets SharePoint empaquetés sur le système local, pas simplement votre propre. Cela peut être pratique lorsque vous êtes le seul développeur sur le système ou si la plupart de vos projets le requièrent. Toutefois, car il est propre au système, cette approche n’est pas très mobile et par conséquent, il est recommandé que vous ajouter toutes les extensions pour le fichier projet à la place.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Développement de solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  

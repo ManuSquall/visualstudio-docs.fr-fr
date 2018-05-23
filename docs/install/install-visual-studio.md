@@ -2,7 +2,7 @@
 title: Installer Visual Studio 2017 │ Microsoft Docs
 description: Découvrez comment installer Visual Studio, étape par étape.
 ms.custom: ''
-ms.date: 12/04/2017
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c39496b09c72c6c5eb72fb1c5bedb59285d01347
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 27bcbb12ac8111ad76b5b71c486081d9e075365e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="install-visual-studio-2017"></a>Installer Visual Studio 2017
 
@@ -119,7 +119,15 @@ Par défaut, le programme d’installation essaie d’installer la langue du sys
 
 Une autre façon de changer la langue par défaut consiste à exécuter le programme d’installation à partir de la ligne de commande. Par exemple, vous pouvez forcer le programme d’installation à s’exécuter en anglais en utilisant la commande suivante : `vs_installer.exe --locale en-US`. Le programme d’installation enregistre ce paramètre pour une prochaine exécution. Le programme d’installation prend en charge les jetons de langue suivants : zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru et tr-tr.
 
-## <a name="step-7---start-developing"></a>Étape 7 : Démarrer le développement
+## <a name="step-7---change-the-installation-location-optional"></a>Étape 7 : Changer l’emplacement d’installation (facultatif)
+
+**Nouveauté de la version 15.7** : vous pouvez désormais réduire l’encombrement de l’installation de Visual Studio sur votre lecteur système. Vous pouvez choisir de déplacer le cache de téléchargement, les composants partagés, les SDK et les outils vers d’autres lecteurs et de conserver Visual Studio sur le lecteur qui l’exécute le plus rapidement.
+
+  ![Visual Studio 2017 : changer l’emplacement d’installation](media/installation-options-by-location.png "Changer l’emplacement d’installation")
+
+Pour plus d’informations, consultez la page [Changer les emplacements d’installation de Visual Studio](change-installation-locations.md).
+
+## <a name="step-8---start-developing"></a>Étape 8 : Démarrer le développement
 
 1. Lorsque l’installation de Visual Studio est terminée, cliquez sur le bouton **Lancer** pour [bien démarrer avec le développement Visual Studio](../ide/get-started-developing-with-visual-studio.md).
 

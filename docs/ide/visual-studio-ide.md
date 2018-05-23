@@ -1,7 +1,7 @@
 ---
-title: Vue d’ensemble de Visual Studio 2017 | Microsoft Docs
-ms.custom: ''
+title: Vue d’ensemble de Visual Studio 2017
 ms.date: 02/05/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6525b9d0bd0d5b394f09f0acd01b40a73bfc3bf2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86522beb978dee5722a919c4fa0e3a9030d5f3ad
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Vue d’ensemble de l’IDE de Visual Studio
 
@@ -93,7 +93,7 @@ Quand vous démarrez Visual Studio pour la première fois, vous pouvez vous conn
 
 Un bon moyen d’en savoir plus sur quelque chose est de l’utiliser ! Nous allons aller plus loin en créant un nouveau programme simple.
 
-1. Ouvrez Visual Studio. Dans le menu, choisissez **Fichier** > **Nouveau** > **Projet...**.
+1. Ouvrez Visual Studio. Dans le menu, choisissez **Fichier** > **Nouveau** > **Projet**.
 
   ![Fichier > Nouveau projet sur la barre de menus](../ide/media/VSIDE_Tour_NewProject1.png)
 
@@ -161,7 +161,7 @@ Des erreurs peuvent survenir lors de l’exécution. Lorsque vous écrivez du co
 
 ## <a name="deploy-your-finished-application"></a>Déployer votre application terminée
 
-Quand vous êtes prêt à déployer votre application terminée auprès d’utilisateurs ou de clients, Visual Studio vous fournit les outils nécessaires pour effectuer son déploiement dans le Microsoft Store, sur un site SharePoint ou à l’aide des technologies InstallShield ou Windows Installer. Ils sont tous accessibles via l’IDE. Pour plus d’informations, consultez [Déploiement d’applications, de services et de composants](../deployment/deploying-applications-services-and-components.md).
+Quand vous êtes prêt à déployer votre application terminée auprès d’utilisateurs ou de clients, Visual Studio vous fournit les outils nécessaires pour effectuer son déploiement dans le Microsoft Store, sur un site SharePoint ou à l’aide des technologies InstallShield ou Windows Installer. Ils sont tous accessibles via l’IDE. Pour plus d’informations, consultez [Déployer des applications, des services et des composants](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="quick-tour-of-the-ide"></a>Visite guidée de l’IDE
 
@@ -181,7 +181,7 @@ Pour vous donner une représentation générale de Visual Studio, l’image suiv
 
 Voici d’autres fonctionnalités de productivité courantes de Visual Studio :
 
-- La zone de recherche [Lancement rapide](../ide/reference/quick-launch-environment-options-dialog-box.md) est un excellent moyen de trouver rapidement ce dont vous avez besoin dans Visual Studio. Entrez simplement le nom de l’élément que vous recherchez, et Visual Studio affiche les résultats de la recherche à partir desquels vous pouvez accéder à l’élément précis recherché. Le lancement rapide affiche également des liens permettant de démarrer Visual Studio Installer pour une charge de travail ou un composant.
+- La zone de recherche [Lancement rapide](../ide/reference/quick-launch-environment-options-dialog-box.md) est un excellent moyen de trouver rapidement ce dont vous avez besoin dans Visual Studio. Entrez simplement le nom de l’élément que vous recherchez, et Visual Studio affiche les résultats de la recherche à partir desquels vous pouvez accéder à l’élément précis recherché. Le **lancement rapide** affiche également des liens permettant de démarrer Visual Studio Installer pour une charge de travail ou un composant individuel.
 
   ![Zone de recherche de lancement rapide](../ide/media/VSIDE_Tour_QuickLaunch.png)
 
@@ -215,15 +215,15 @@ Voici d’autres fonctionnalités de productivité courantes de Visual Studio :
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gérer votre code source et collaborer avec d’autres utilisateurs
 
-Vous pouvez gérer votre code source dans des dépôts Git hébergés par tous types de fournisseurs, notamment GitHub. Ou utilisez [Visual Studio Team Services (VSTS)](/vsts/index) pour gérer le code en même temps que les bogues et les éléments de travail de votre projet entier. Pour en savoir plus sur la gestion des dépôts Git dans Visual Studio à l’aide de Team Explorer, consultez [Bien démarrer avec Git et Team Services (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio). Visual Studio dispose également d’autres fonctionnalités de contrôle de code source intégrées. Pour en savoir plus à ce sujet, consultez le blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
+Vous pouvez gérer votre code source dans des dépôts Git hébergés par tous types de fournisseurs, notamment GitHub. Ou utilisez [Visual Studio Team Services (VSTS)](/vsts/index) pour gérer le code en même temps que les bogues et les éléments de travail de votre projet entier. Pour plus d’informations sur la gestion des dépôts Git dans Visual Studio avec Team Explorer, consultez [Bien démarrer avec Git et Team Services (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio). Visual Studio dispose également d’autres fonctionnalités de contrôle de code source intégrées. Pour plus d’informations sur ces fonctionnalités, consultez le billet de blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
 
 Visual Studio Team Services est un service basé sur le cloud destiné à héberger des projets de logiciels et à permettre la collaboration dans des équipes. VSTS prend en charge les systèmes de contrôle de code source Git et Team Foundation, ainsi que les méthodologies de développement Scrum, CMMI et Agile. La gestion de version Team Foundation (TFVC) utilise un dépôt de serveur unique et centralisé pour effectuer le suivi et la gestion des versions des fichiers. Les modifications locales sont toujours archivées sur le serveur central, où les autres développeurs peuvent obtenir les dernières modifications.
 
 Team Foundation Server (TFS) est le hub de gestion du cycle de vie des applications pour Visual Studio. Il permet à toutes personnes impliquées dans le processus de développement de participer à une même solution. TFS est également utile pour la gestion des équipes et des projets hétérogènes.
 
-Si vous avez un compte Visual Studio Team Services ou Team Foundation Server sur votre réseau, vous vous y connectez via la fenêtre Team Explorer. Depuis cette fenêtre, vous pouvez vérifier le code dans ou en dehors du contrôle de code source, gérer des éléments de travail, démarrer des builds et accéder aux salles d'équipe et aux espaces de travail. Vous pouvez ouvrir Team Explorer à partir de la zone **Lancement rapide** ou du menu principal, à partir d’**Affichage, Team Explorer** ou d’**Équipe, Gérer les connexions**.
+Si vous avez un compte Visual Studio Team Services ou Team Foundation Server sur votre réseau, vous vous y connectez via la fenêtre **Team Explorer** dans Visual Studio. Depuis cette fenêtre, vous pouvez vérifier le code dans ou en dehors du contrôle de code source, gérer des éléments de travail, démarrer des builds et accéder aux salles d'équipe et aux espaces de travail. Vous pouvez ouvrir **Team Explorer** à partir de la zone **Lancement rapide** ou, dans le menu principal, à partir de **Affichage** > **Team Explorer** ou de **Équipe** > **Gérer les connexions**.
 
-L’illustration suivante montre la fenêtre Team Explorer pour une solution qui est hébergée dans VSTS.
+L’illustration suivante montre la fenêtre **Team Explorer** pour une solution qui est hébergée dans VSTS.
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
@@ -235,13 +235,13 @@ Le Cloud est essentiel dans le monde connecté actuel, et Visual Studio vous per
 
 ![Services connectés](../ide/media/VSIDE_Tour_Connected_Services.png)
 
-Sélectionnez un service sur la page **Services connectés** pour appeler l’Assistant Services connectés, qui configure votre projet et télécharge les packages NuGet nécessaires pour vous permettre de démarrer le codage par rapport au service.
+Sélectionnez un service sur la page **Services connectés** pour appeler l’Assistant **Services connectés**, qui configure votre projet et télécharge les packages NuGet nécessaires pour vous permettre de démarrer le codage sur le service.
 
-Vous pouvez afficher et gérer vos ressources de Cloud basées sur Azure dans Visual Studio à l’aide de [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Cloud Explorer montre les ressources Azure dans tous les comptes gérés sous l’abonnement Azure auquel vous êtes connecté. Vous pouvez obtenir Cloud Explorer en sélectionnant la charge de travail **Développement Azure** dans Visual Studio Installer.
+Vous pouvez afficher et gérer vos ressources de Cloud basées sur Azure dans Visual Studio à l’aide de [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Cloud Explorer montre les ressources Azure dans tous les comptes gérés sous l’abonnement Azure auquel vous êtes connecté. Vous pouvez obtenir **Cloud Explorer** en sélectionnant la charge de travail **Développement Azure** dans Visual Studio Installer.
 
 ![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-L’**Explorateur de serveurs** vous aide à parcourir et à gérer les instances et ressources SQL Server en local et à distance, et sur Azure, Salesforce.com, Office 365 et les sites web. Pour ouvrir l’Explorateur de serveurs, dans le menu principal, choisissez **Affichage** > **Explorateur de serveurs**. Consultez la page [Ajouter de nouvelles connexions](../data-tools/add-new-connections.md) pour plus d’informations sur l’Explorateur de serveurs.
+L’**Explorateur de serveurs** vous aide à parcourir et à gérer les instances et ressources SQL Server en local et à distance, et sur Azure, Salesforce.com, Office 365 et les sites web. Pour ouvrir **l’Explorateur de serveurs**, dans le menu principal, choisissez **Affichage** > **Explorateur de serveurs**. Consultez la page [Ajouter de nouvelles connexions](../data-tools/add-new-connections.md) pour plus d’informations sur l’Explorateur de serveurs.
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) est un environnement de développement puissant pour SQL Server, Azure SQL Database et Azure SQL Data Warehouse. Il vous permet de générer, déboguer, gérer et refactoriser des bases de données. Vous pouvez travailler avec un projet de base de données, ou directement avec une instance de base de données connectée, locale ou hors site.
 
@@ -261,7 +261,7 @@ Pour en savoir plus sur l’extension de Visual Studio, consultez [Étendre l’
 
 ## <a name="learn-more-and-find-out-whats-new"></a>En savoir plus et découvrir les nouveautés
 
-Si vous n’avez encore jamais utilisé Visual Studio, consultez [Bien démarrer avec le développement dans Visual Studio](../ide/get-started-developing-with-visual-studio.md) ou recherchez les cours Visual Studio gratuits disponibles sur [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Si vous voulez découvrir les nouvelles fonctionnalités de Visual Studio 2017, consultez [Nouveautés dans Visual Studio 2017](../ide/whats-new-in-visual-studio.md).
+Si vous n’avez encore jamais utilisé Visual Studio, consultez [Bien démarrer avec le développement dans Visual Studio](../ide/get-started-developing-with-visual-studio.md) ou recherchez les cours Visual Studio gratuits disponibles sur [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Si vous voulez découvrir les nouvelles fonctionnalités de Visual Studio 2017, consultez [Nouveautés de Visual Studio 2017](../ide/whats-new-in-visual-studio.md).
 
 Félicitations, vous avez terminé la visite guidée de l’IDE de Visual Studio ! Nous espérons qu’elle vous aura permis de découvrir ses fonctionnalités principales.
 

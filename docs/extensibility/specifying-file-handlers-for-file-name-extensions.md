@@ -49,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |.extension|ProductName. extension.versionMajor.versionMinor|  
   
- Vous pouvez enregistrer différentes applications qui sont en mesure d’ouvrir une extension de fichier particulière en ajoutant des ProgID avec version sous forme de valeurs à la HKEY_CLASSES_ROOT\\*\<extension >*\OpenWithProgids clé. Cette clé de Registre contient une liste de ProgID autre associés à l’extension de fichier. Les applications associées avec les ProgID répertoriées apparaissent dans le **ouvrir avec *** Product Name* sous-menu. Si la même application est spécifiée à la fois dans le `OpenWithList` et `OpenWithProgids` clés, le système d’exploitation fusionne les doublons.  
+ Vous pouvez enregistrer différentes applications qui sont en mesure d’ouvrir une extension de fichier particulière en ajoutant des ProgID avec version sous forme de valeurs à la HKEY_CLASSES_ROOT\\*\<extension >* \OpenWithProgids clé. Cette clé de Registre contient une liste de ProgID autre associés à l’extension de fichier. Les applications associées avec les ProgID répertoriées apparaissent dans le **ouvrir avec *** Product Name* sous-menu. Si la même application est spécifiée à la fois dans le `OpenWithList` et `OpenWithProgids` clés, le système d’exploitation fusionne les doublons.  
   
 > [!NOTE]
 >  Le `OpenWithProgids` clé est uniquement pris en charge dans Windows XP. Étant donné que les autres systèmes d’exploitation ignorer cette clé, ne l’utilisez pas que l’enregistrement uniquement pour les gestionnaires de fichiers. Cette clé permet de fournir une meilleure expérience utilisateur dans Windows XP.  

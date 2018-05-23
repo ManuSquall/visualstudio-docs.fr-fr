@@ -1,15 +1,15 @@
 ---
-title: 'Procédure pas à pas : inclusion d’un package NuGet dans votre projet'
+title: Inclusion d’un package NuGet dans votre projet
 description: Ce document explique comment inclure un package NuGet dans un projet Xamarin. Il décrit la recherche et le téléchargement d’un package, et il présente les fonctionnalités d’intégration de l’IDE.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 05762df8b06a69647c6c7a628db54ac499248374
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: f251080351f1e448d250798c4f9a758114a6e5ab
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>Inclusion d’un package NuGet dans votre projet
 
@@ -26,8 +26,6 @@ Pour illustrer les fonctionnalités des packages NuGet, nous allons d’abord cr
 Pour commencer, créez un projet nommé `HelloNuget`, comme illustré ci-dessous. Cet exemple montre le modèle Application avec affichage unique pour iOS, mais tous les types de projet pris en charge fonctionnent également :
 
 ![Créer un projet iOS](media/nuget-walkthrough-NewProject.png)
-
-<a name="Adding_a_Package" class="injected"></a>
 
 ## <a name="adding-a-package"></a>Ajout d’un package
 
@@ -50,9 +48,9 @@ Utilisez la zone de recherche dans le coin supérieur droit pour rechercher un p
 
 Une fois que le package a été téléchargé, il est ajouté à votre projet. La solution est changée comme suit :
 
-*   Le nœud **Références** contient une liste de tous les assemblys qui font partie d’un package NuGet.
-*   Le nœud **Packages** montre chaque package NuGet que vous avez téléchargé. Vous pouvez mettre à jour ou supprimer un package dans cette liste.
-*   Un fichier **packages.config** sera ajouté au projet. Ce fichier XML est utilisé par l’IDE pour effectuer le suivi des versions du package qui sont référencées dans ce projet. Ce fichier ne doit pas être modifié manuellement, mais vous devez le conserver dans la gestion de versions. Notez qu’un fichier project.json peut être utilisé à la place d’un fichier packages.config. Le fichier project.json est un nouveau format de fichier de package introduit avec NuGet 3, qui prend en charge la restauration transitive. Pour plus d’informations sur project.json, consultez la [documentation de NuGet](http://docs.microsoft.com/NuGet/Schema/Project-Json). Le fichier project.json doit être ajouté manuellement, et le projet doit être fermé puis rouvert avant que ce fichier soit utilisé dans Visual Studio pour Mac.
+* Le nœud **Références** contient une liste de tous les assemblys qui font partie d’un package NuGet.
+* Le nœud **Packages** montre chaque package NuGet que vous avez téléchargé. Vous pouvez mettre à jour ou supprimer un package dans cette liste.
+* Un fichier **packages.config** sera ajouté au projet. Ce fichier XML est utilisé par l’IDE pour effectuer le suivi des versions du package qui sont référencées dans ce projet. Ce fichier ne doit pas être modifié manuellement, mais vous devez le conserver dans la gestion de versions. Notez qu’un fichier project.json peut être utilisé à la place d’un fichier packages.config. Le fichier project.json est un nouveau format de fichier de package introduit avec NuGet 3, qui prend en charge la restauration transitive. Pour plus d’informations sur project.json, consultez la [documentation de NuGet](http://docs.microsoft.com/NuGet/Schema/Project-Json). Le fichier project.json doit être ajouté manuellement, et le projet doit être fermé puis rouvert avant que ce fichier soit utilisé dans Visual Studio pour Mac.
 
 ## <a name="using-nuget-packages"></a>Utilisation de packages NuGet
 
@@ -60,8 +58,9 @@ Une fois que le package NuGet a été ajouté et que les références du projet 
 
 Veillez à ajouter les directives `using` nécessaires en haut de votre fichier :
 
-
-    using Newtownsoft.json;
+```csharp
+using Newtownsoft.json;
+```
 
 La plupart des packages NuGet fournissent des informations supplémentaires, comme un lien vers une page README ou Projet vers la source NuGet. Vous pouvez normalement trouver ce lien dans le texte de présentation du package sur la page Ajouter des packages :
 

@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db8ca68453cff105f2bbefcd384b8afa9efea9d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b023349454f71835e13e7cc891b8be92b90c153f
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publier une application à IIS à l’importation de paramètres de publication dans Visual Studio
 
@@ -31,7 +31,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 > * Importer le fichier de paramètres de publication dans Visual Studio
 > * Déployer l’application sur IIS
 
-Un fichier de paramètres de publication (\*.publishsettings) est différente de celle d’un profil de publication (\*.pubxml) créé dans Visual Studio. Un fichier de paramètres de publication est créé par IIS ou du Service d’applications Azure, ou peuvent être créée manuellement, et il peut ensuite être importé dans Visual Studio.
+Un fichier de paramètres de publication (*\*.publishsettings*) est différente de celle d’un profil de publication (*\*.pubxml*) créés dans Visual Studio. Un fichier de paramètres de publication est créé par IIS ou du Service d’applications Azure, ou peuvent être créée manuellement, et il peut ensuite être importé dans Visual Studio.
 
 > [!NOTE]
 > Si vous avez besoin copier un profil de publication de Visual Studio (\*.pubxml fichier) à partir d’une installation de Visual Studio à l’autre, vous pouvez trouver le profil de publication,  *\<profilename\>.pubxml*, dans le  *\\< projectname\>\Properties\PublishProfiles* dossier pour les types de projet managés. Pour les sites Web, regardez sous la *\App_Data* dossier. Les profils de publication sont des fichiers XML de MSBuild.
@@ -44,7 +44,7 @@ Un fichier de paramètres de publication (\*.publishsettings) est différente de
 
     Les étapes décrites dans cet article sont basés sur Visual Studio 2017
 
-* Pour générer le fichier de paramètres de publication à partir de IIS, vous devez disposer d’un autre ordinateur exécutant Windows Server 2012 avec le rôle de serveur Web de IIS 8.0 correctement configuré et soit ASP.NET 4.5 ou ASP.NET Core installé. Pour ASP.NET Core, consultez [publication sur IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Pour ASP.NET 4.5, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* Pour générer le fichier de paramètres de publication à partir de IIS, vous devez disposer d’un ordinateur exécutant Windows Server 2012 avec le rôle de serveur Web de IIS 8.0 correctement configuré et que ASP.NET 4.5 ou ASP.NET Core installé. Pour ASP.NET Core, consultez [publication sur IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Pour ASP.NET 4.5, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Créer un nouveau projet ASP.NET dans Visual Studio
 

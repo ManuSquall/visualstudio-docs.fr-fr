@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de la prise en charge de Python dans Visual Studio sur Windows
 description: Résumé des fonctionnalités Python disponibles dans Visual Studio, qui en font le meilleur IDE Python sur Windows (également appelé Python Tools pour Visual Studio, ou PTVS).
-ms.date: 04/06/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: overview
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: e86f8f856963a979b8e64ba0e613cdb73685a9a0
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Utilisation de Python dans Visual Studio sur Windows
 
@@ -46,7 +46,7 @@ Pour plus d'informations :
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Large éventail de fonctionnalités de modification, IntelliSense et d’inclusion de code
 
-Visual Studio fournit un éditeur Python de première classe, notamment la coloration syntaxique, la saisie semi-automatique dans l’ensemble du code et des bibliothèques, la mise en forme du code, l’aide sur les signatures, la refactorisation, les affinages de type et la validation lint (la validation lint est illustrée ci-dessous). Visual Studio fournit également des fonctionnalités uniques, comme l’affichage de classes, Atteindre la définition, Rechercher toutes les références et les extraits de code. L’intégration directe à la [fenêtre interactive](#interactive-window) vous permet de développer rapidement du code Python qui est déjà enregistré dans un fichier.
+Visual Studio fournit un éditeur Python de première classe, notamment la coloration syntaxique, la saisie semi-automatique dans l’ensemble du code et des bibliothèques, la mise en forme du code, l’aide sur les signatures, la refactorisation, la validation lint (illustrée ci-dessous) et les affinages de type. Visual Studio fournit également des fonctionnalités uniques, comme l’affichage de classes, Atteindre la définition, Rechercher toutes les références et les extraits de code. L’intégration directe à la [fenêtre interactive](#interactive-window) vous permet de développer rapidement du code Python qui est déjà enregistré dans un fichier.
 
 ![Complétions de code pour le code Python dans Visual Studio](media/code-editing-completions-simple.png)
 
