@@ -1,5 +1,5 @@
 ---
-title: Ensurevstocomponent, fonction | Documents Microsoft
+title: Ensurevstocomponent, fonction
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,18 +13,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5561d3c046c083c1495b858d36f6c867050ed842
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 20c4e363b11647609b67a898878dd4b4e59ba180
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="ensurevstocomponent-function"></a>EnsureVSTOComponent, fonction
+# <a name="ensurevstocomponent-function"></a>Ensurevstocomponent, fonction
   Cette API prend en charge l’infrastructure Office et n’est pas destinée à être utilisée directement depuis votre code.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```c  
 HRESULT EnsureVSTOComponent(  
     IVSTProject *pProject  
 );  

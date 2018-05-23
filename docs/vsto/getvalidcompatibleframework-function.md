@@ -1,5 +1,5 @@
 ---
-title: Getvalidcompatibleframework, fonction | Documents Microsoft
+title: Getvalidcompatibleframework, fonction
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,26 +13,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b28587b44dd98630538bc8d6d04c5bc6049e3ca9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7df1e2d197147399fd6492222978dcf748a4bb2
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework, fonction
+# <a name="getvalidcompatibleframework-function"></a>Getvalidcompatibleframework, fonction
   Cette API prend en charge l’infrastructure Office et n’est pas destinée à être utilisée directement depuis votre code.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```c  
 HRESULT WINAPI GetValidCompatibleFramework(  
     LPCWSTR lpwszCompatibleFrameworksXML,  
     BSTR* pbstrValidFrameworkTag  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
-  
+### <a name="parameters"></a>Paramètres  
 |Paramètre|Description|  
 |---------------|-----------------|  
 |*lpwszCompatibleFrameworksXML*|N’utilisez pas.|  

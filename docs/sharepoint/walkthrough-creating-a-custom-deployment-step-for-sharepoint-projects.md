@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9052136a58b0c6cd3246b7c7b61c89bf637a8cf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Procédure pas à pas : création d'une étape de déploiement personnalisée pour des projets SharePoint
   Lorsque vous déployez un projet SharePoint, Visual Studio exécute une série d’étapes de déploiement dans un ordre spécifique. Visual Studio comprend plusieurs étapes de déploiement intégrées, mais vous pouvez également créer vos propres.  
@@ -161,9 +161,7 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-create-the-deployment-configuration"></a>Pour créer la configuration de déploiement  
   
-1.  
-  
-2.  Dans le **DeploymentStepExtension** de projet, ouvrez le fichier de code DeploymentConfigurationExtension, puis collez le code suivant dans celui-ci.  
+1.  Dans le **DeploymentStepExtension** de projet, ouvrez le fichier de code DeploymentConfigurationExtension, puis collez le code suivant dans celui-ci.  
   
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]  
@@ -306,7 +304,7 @@ ms.lasthandoff: 04/16/2018
   
 15. Dans le fichier Elements.xml, remplacez le XML dans ce fichier par défaut avec le code XML suivant. Ce code XML remplace le nom de la liste à **employés** et ajoute des informations pour un employé qui a appelé Jim Hance.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <ListInstance Title="Employees"  
@@ -357,7 +355,7 @@ ms.lasthandoff: 04/16/2018
   
      Lorsque vous avez terminé, le fichier doit contenir le code XML suivant.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <ListInstance Title="Employees"  

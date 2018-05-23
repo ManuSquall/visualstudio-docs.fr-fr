@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c11dd4ebd17b1ebef91c3d7752df7c15dd50da4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9389e5928c74e5ee60bee90b375671777f1b807
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>Utilisation de modules pour inclure des fichiers dans la solution
   Il peut arriver lorsque vous souhaitez déployer les fichiers sur le serveur SharePoint quel que soit leur type de fichier, telles que de nouvelles pages maîtres. Pour ce faire, vous pouvez utiliser *Modules* (à ne pas confondre avec [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modules de code). Les modules sont des conteneurs pour les fichiers dans une solution SharePoint. Lorsque la solution est déployée, les fichiers dans le module sont copiés vers les dossiers spécifiés sur le serveur SharePoint.  
@@ -31,7 +31,7 @@ ms.lasthandoff: 04/16/2018
   
  Voici un exemple de fichier Elements.xml pour un module :  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
     <Module Name="Module1">  

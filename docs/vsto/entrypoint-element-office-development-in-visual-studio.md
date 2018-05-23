@@ -1,5 +1,5 @@
 ---
-title: '&lt;point d’entrée&gt; élément (développement Office dans Visual Studio) | Documents Microsoft'
+title: '&lt;point d’entrée&gt; élément (développement Office dans Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f4bd7a9a119a5e604461f44bb166f19e063ab4af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6eb617b44eb5360ea8c313431c7d8609505efa16
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;point d’entrée&gt; élément (développement Office dans Visual Studio)
   Chaque élément `entryPoint` de l’espace de noms `vstav3` identifie un assembly de personnalisation qui doit être exécuté lorsque cette application [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] est installée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <entryPoint class>  
     <assemblyIdentity />  
 </entryPoint>  
@@ -50,16 +50,16 @@ ms.lasthandoff: 04/16/2018
 ### <a name="assemblyidentity"></a>assemblyIdentity  
  Obligatoire. L’élément `assemblyIdentity` de l’espace de noms `vstav3` fait référence à un élément `assemblyIdentity` du manifeste d’application [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .  
   
- Le rôle de `assemblyIdentity` et ses attributs est défini dans [ &#60;assemblyIdentity&#62; élément &#40;Application ClickOnce&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-application).  
+ Le rôle de `assemblyIdentity` et ses attributs est défini dans [ &#60;assemblyIdentity&#62; élément &#40;application ClickOnce&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-application).  
   
 ## <a name="document-level-customization-example"></a>Exemple de personnalisation au niveau du document  
   
 ### <a name="description"></a>Description  
- L’exemple de code suivant illustre les éléments `entryPoint` d’un manifeste d’application pour une solution Office au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ L’exemple de code suivant illustre les éléments `entryPoint` d’un manifeste d’application pour une solution Office au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Code  
   
-```  
+```xml  
 <vstav3:entryPoint   
   class="ContosoExcelWorkbook.ThisWorkbook">  
   <assemblyIdentity   
@@ -97,11 +97,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="vsto-add-in-example"></a>Exemple de complément VSTO  
   
 ### <a name="description"></a>Description  
- L’exemple de code suivant illustre un élément `entryPoint` d’un manifeste d’application pour une solution Office au niveau de l’application déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ L’exemple de code suivant illustre un élément `entryPoint` d’un manifeste d’application pour une solution Office au niveau de l’application déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Code  
   
-```  
+```xml
 <vstav3:entryPoint   
   class="ContosoOutlookAddIn.ThisAddIn">  
   <assemblyIdentity   
@@ -113,8 +113,8 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
- [Manifestes de déploiement pour les Solutions Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifeste d’application ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

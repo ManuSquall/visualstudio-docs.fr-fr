@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 688c4d8d9193ec33f0dcb63923673826a453c9be
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Procédure pas à pas : extension de l'Explorateur de serveurs pour afficher des WebParts
   Dans Visual Studio, vous pouvez utiliser la **connexions SharePoint** nœud de **l’Explorateur de serveurs** pour afficher les composants sur les sites SharePoint. Toutefois, **l’Explorateur de serveurs** n’affiche pas certains composants par défaut. Dans cette procédure pas à pas, vous allez étendre **l’Explorateur de serveurs** afin qu’il affiche la galerie de composants WebPart sur chacun connecté à un site SharePoint.  
@@ -107,13 +107,11 @@ ms.lasthandoff: 04/16/2018
   
 3.  En haut de la boîte de dialogue, choisissez **.NET Framework 3.5** dans la liste des versions du .NET Framework.  
   
-4.  
-  
-5.  Dans la liste des modèles de projet, choisissez **bibliothèque de classes**, nommez le projet **WebPartCommands**, puis choisissez le **OK** bouton.  
+4.  Dans la liste des modèles de projet, choisissez **bibliothèque de classes**, nommez le projet **WebPartCommands**, puis choisissez le **OK** bouton.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **WebPartCommands** projet à la solution et ouvre le fichier de code Class1 par défaut.  
   
-6.  Supprime le fichier de code Class1 du projet.  
+5.  Supprime le fichier de code Class1 du projet.  
   
 ## <a name="configuring-the-projects"></a>Configuration des projets  
  Avant d’écrire de code pour créer l’extension, vous devez ajouter des fichiers de code et des références d’assembly et configurer les paramètres du projet.  

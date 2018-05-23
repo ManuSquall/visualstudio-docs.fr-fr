@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b54a8fa30ef5eafcc5ebce5c81cc7b80be6fb6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a68e7d039fe0b60faf42ea319bb3a3bd4f888d3b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Déployer une application web ou .NET Core vers un dossier local à l’aide de l’outil de publication de Visual Studio
 
@@ -72,6 +72,6 @@ Déployez les fichiers publiés de la façon qui vous convient. Par exemple, vou
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Déployer une application .NET Core avec l’outil de publication](/dotnet/core/deploying/deploy-with-vs)
-- [Empaqueter une application de bureau pour Microsoft Store (pont de bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
-- (.NET) [Déployer des applications et du .NET Framework](/dotnet/framework/deployment/)
+- [Déployer une application .NET Core avec l’outil de publication](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Empaqueter une application de bureau pour Microsoft Store (pont de bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- (.NET) [Déployer le .NET Framework et les applications en cours...](/dotnet/framework/deployment/)
