@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f494ef7160d38365643f72cfd1dabfa6cb66d4c3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 04889d508903a80717f7055599a8b63b354e32ce
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Procédure pas à pas : création d'un élément de projet Colonne de site avec un modèle de projet, première partie
   Les projets SharePoint sont des conteneurs pour un ou plusieurs éléments de projet SharePoint. Vous pouvez étendre le système de projet SharePoint dans Visual Studio en créant vos propres types d’éléments de projet SharePoint et associez-les avec un modèle de projet. Dans cette procédure pas à pas, vous allez définir un type d’élément de projet pour la création d’une colonne de site, puis vous allez créer un modèle de projet qui peut être utilisé pour créer un projet qui contient un élément de projet de colonne de site.  
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/22/2018
  Il s’agit d’une procédure pas à pas autonome. Après avoir terminé cette procédure pas à pas, vous pouvez améliorer l’élément de projet en ajoutant un Assistant pour le modèle de projet. Pour plus d’informations, consultez [procédure pas à pas : création d’un élément de projet colonne de Site avec un modèle de projet, partie 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
 > [!NOTE]  
->  Vous pouvez télécharger un exemple qui contient les projets remplis, de code et d’autres fichiers pour cette procédure pas à pas à l’emplacement suivant : [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
+> Pour une série d’exemples de workflows, consultez [exemples de flux de travail SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
 ## <a name="prerequisites"></a>Prérequis  
  Vous devez disposer des composants suivants sur l’ordinateur de développement pour terminer cette procédure pas à pas :  

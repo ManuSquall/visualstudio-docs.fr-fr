@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0027b49cd371aaec00d2bcfb609a694f14dc4869
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 0aa938d41540229d6cd91598968f104b3fa3a7be
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Procédure pas à pas : création d'un élément de projet Colonne de site avec un modèle de projet, deuxième partie
   Une fois que vous définissez un type personnalisé d’élément de projet SharePoint et l’associez à un modèle de projet dans Visual Studio, vous souhaiterez également fournir un Assistant pour le modèle. Vous pouvez utiliser l’Assistant pour collecter des informations à partir des utilisateurs lorsqu’ils utilisent votre modèle pour créer un projet qui contient l’élément de projet. Les informations que vous recueillez peuvent être utilisées pour initialiser l’élément de projet.  
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/22/2018
 -   Débogage et test de l’Assistant.  
   
 > [!NOTE]  
->  Vous pouvez télécharger un exemple qui contient les projets remplis, de code et d’autres fichiers pour cette procédure pas à pas à l’emplacement suivant : [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
+> Pour une série d’exemples de workflows, consultez [exemples de flux de travail SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour effectuer cette procédure pas à pas, vous devez d’abord créer la solution SiteColumnProjectItem en effectuant [procédure pas à pas : création d’un élément de projet colonne de Site avec un modèle de projet, partie 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  

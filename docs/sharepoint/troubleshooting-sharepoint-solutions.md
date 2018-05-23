@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba8f84db31cbe41e8bd3f62a7806de0a6d2ea58e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12de0ea2e9638c7ab523bbda0e623c84d0182aad
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Dépannage des solutions SharePoint
   Les alertes ou les problèmes suivants peuvent se produire lorsque vous déboguez des solutions SharePoint à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Pour plus d’informations, consultez [débogage de Solutions de flux de travail SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -135,7 +135,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Installez [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
--   Assurez-vous d’avoir un accès administrateur sur le site SharePoint Web. Pour plus d’informations, consultez la [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] l’article en ligne [accorder l’accès au site du portail](http://go.microsoft.com/fwlink/?LinkId=98310).  
+-   Assurez-vous d’avoir un accès administrateur sur le site SharePoint Web. Pour plus d’informations, consultez la [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] l’article en ligne [attribuer ou supprimer des administrateurs d’applications de service dans SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Événement de Web site suppression ne se produit pas dans le projet de récepteur d’événements  
  Lorsque vous créez un projet de récepteur d’événements et que vous sélectionnez certains événements Web tels que « un site est en cours de suppression », l’événement se produit jamais.  

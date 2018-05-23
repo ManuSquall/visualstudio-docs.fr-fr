@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>Débogage de solutions SharePoint
   Vous pouvez déboguer des solutions SharePoint à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Lorsque vous démarrez le débogage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] déploie les fichiers de projet sur le serveur SharePoint et ouvre une instance du site SharePoint dans le navigateur Web. Les sections suivantes expliquent comment déboguer des applications SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -128,11 +128,11 @@ ms.lasthandoff: 04/16/2018
  Lorsque vous déboguez des projets de flux de travail, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ajoute le modèle de flux de travail (selon son type) à une bibliothèque ou à une liste. Vous pouvez ensuite démarrer le modèle de flux de travail manuellement ou en ajoutant ou en mettant à jour un élément. Vous pouvez ensuite utiliser [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pour déboguer le flux de travail.  
   
 > [!NOTE]  
->  Si vous ajoutez des références à d’autres assemblys, assurez-vous que ces assemblys sont installés dans le global assembly cache ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Sinon, la solution de flux de travail échoue. Pour plus d’informations sur la façon d’installer des assemblys, consultez [démarrer manuellement un flux de travail sur un document ou un élément](http://go.microsoft.com/fwlink/?LinkID=79938).  
+>  Si vous ajoutez des références à d’autres assemblys, assurez-vous que ces assemblys sont installés dans le global assembly cache ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Sinon, la solution de flux de travail échoue. Pour plus d’informations sur la façon d’installer des assemblys, consultez [démarrer manuellement un flux de travail sur un document ou un élément](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  Toutefois, le processus de déploiement ne démarre pas le flux de travail. Vous devez démarrer le flux de travail à partir du site SharePoint Web. Vous pouvez également démarrer le flux de travail à l’aide d’une application cliente comme Microsoft Office Word 2010, ou à l’aide du code côté serveur distinct. Utilisez une des approches spécifiés dans le **Assistant Personnalisation de SharePoint**.  
   
- Par exemple, si vous avez spécifié que le flux de travail peut être démarré manuellement, démarrez le flux de travail directement à partir de l’élément dans la liste ou bibliothèque. Pour plus d’informations sur la façon de démarrer un flux de travail manuellement, consultez [démarrer manuellement un flux de travail sur un élément de document](http://go.microsoft.com/fwlink/?LinkID=79938).  
+ Par exemple, si vous avez spécifié que le flux de travail peut être démarré manuellement, démarrez le flux de travail directement à partir de l’élément dans la liste ou bibliothèque. Pour plus d’informations sur la façon de démarrer un flux de travail manuellement, consultez [démarrer manuellement un flux de travail sur un élément de document](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
 ##  <a name="FeatureEvents"></a> Débogage des récepteurs d’événements de fonctionnalité  
  Par défaut, lorsque vous exécutez un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] application SharePoint, ses fonctionnalités sont automatiquement activées sur le serveur SharePoint. Toutefois, cela pose des problèmes lorsque vous déboguez des récepteurs d’événements de fonctionnalité, car lorsque la fonctionnalité est activée par [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], il s’exécute dans un processus autre que le débogueur. Cela signifie que certaines fonctionnalités de débogage, telles que des points d’arrêt, ne fonctionnent pas correctement.  
