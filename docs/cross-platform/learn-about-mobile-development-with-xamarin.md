@@ -11,11 +11,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: abeac53d6907603d6158c483095152d0f4ab2c5e
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 921faa49690b641fda0e864d27705040a1b97f1e
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>En savoir plus sur le développement pour appareils mobiles avec Xamarin
 
@@ -101,7 +101,7 @@ Pour déboguer vos applications multiplateformes sans avoir à utiliser d’appa
   
 ### <a name="microsofts-android-emulator"></a>Émulateur Android de Microsoft 
 
-Il est recommandé d’utiliser [l’émulateur Visual Studio pour Android](~/cross-platform/visual-studio-emulator-for-android.md) de Microsoft, qui est installé avec Visual Studio.  La vidéo sur l’ [émulateur Visual Studio pour Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 minutes et 55 secondes) donne une vue d’ensemble de l’émulateur et montre comment l’utiliser.  
+Il est recommandé d’utiliser [l’émulateur Visual Studio pour Android](visual-studio-emulator-for-android.md) de Microsoft, qui est installé avec Visual Studio.  La vidéo sur l’ [émulateur Visual Studio pour Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 minutes et 55 secondes) donne une vue d’ensemble de l’émulateur et montre comment l’utiliser.  
   
 ### <a name="apples-ios-simulator"></a>Simulateur iOS d’Apple
 

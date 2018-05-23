@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: dcfaee4d086fd5cd9d8ce85f365e63fbb21f8a9e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d1bb23d03ac613c12df54f1a11e19ee5a8c2edb0
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="enable-subscription"></a>Activer l’abonnement
 
@@ -19,7 +19,7 @@ Visual Studio pour Mac offre trois niveaux d’abonnement différents, tous acce
 * Visual Studio Professional pour Mac
 * Visual Studio Community pour Mac
 
-Pour commencer à utiliser un abonnement, connectez-vous à Visual Studio pour Mac en suivant les étapes décrites dans le guide [Connexion à Visual Studio pour Mac](~/signing-in.md). La connexion active votre abonnement, qui s’affiche dans la boîte de dialogue des comptes :
+Pour commencer à utiliser un abonnement, connectez-vous à Visual Studio pour Mac en suivant les étapes décrites dans le guide [Connexion à Visual Studio pour Mac](signing-in.md). La connexion active votre abonnement, qui s’affiche dans la boîte de dialogue des comptes :
 
 ![Boîte de dialogue Afficher la licence utilisateur](media/user-accounts-login.png)
 
@@ -29,11 +29,11 @@ Si votre abonnement a expiré, vous avez deux options :
 
 1. Renouveler votre abonnement. Vous pouvez renouveler votre abonnement en accédant à [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/).
 
-2. Si vous avez un autre compte avec un abonnement actif, vous pouvez l’ajouter à Visual Studio pour Mac comme indiqué dans l’article [Ajout de plusieurs comptes d’utilisateur](~/signing-in.md). Visual Studio pour Mac détecte la meilleure licence disponible dans tous les comptes que vous avez ajoutés. 
+2. Si vous avez un autre compte avec un abonnement actif, vous pouvez l’ajouter à Visual Studio pour Mac comme indiqué dans l’article [Ajout de plusieurs comptes d’utilisateur](signing-in.md). Visual Studio pour Mac détecte la meilleure licence disponible dans tous les comptes que vous avez ajoutés. 
 
 ## <a name="product-key-usage"></a>Utilisation de la clé de produit
 
-Il n’existe actuellement aucun moyen d’utiliser une clé de produit pour activer des droits Professional ou Enterprise pour Visual Studio pour Mac. Pour utiliser Visual Studio Enterprise pour Mac ou Visual Studio Professional pour Mac, vous devez avoir un [abonnement](https://www.visualstudio.com/subscriptions/) adéquat et être [connecté](~/signing-in.md) à l’IDE.
+Il n’existe actuellement aucun moyen d’utiliser une clé de produit pour activer des droits Professional ou Enterprise pour Visual Studio pour Mac. Pour utiliser Visual Studio Enterprise pour Mac ou Visual Studio Professional pour Mac, vous devez avoir un [abonnement](https://www.visualstudio.com/subscriptions/) adéquat et être [connecté](signing-in.md) à l’IDE.
 
 ## <a name="offline-activation"></a>Activation hors connexion
 

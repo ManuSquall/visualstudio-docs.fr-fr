@@ -5,11 +5,11 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 4044169508b177ff5524ee024479244595661eab
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: ab605b3a8505ac189bc0f628b717c6863f9fd902
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Utilisation des outils Visual Studio pour Mac pour Unity
 
@@ -17,7 +17,7 @@ Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’in
 
 ## <a name="opening-unity-scripts-in-visual-studio-for-mac"></a>Ouverture de scripts Unity dans Visual Studio pour Mac
 
-Une fois que Visual Studio pour Mac est [défini comme éditeur de scripts externe pour Unity](/visualstudio/mac/setup-vsmac-tools-unity#configure-unity-for-use-with-visual-studio-for-mac), l’ouverture d’un script à partir de l’éditeur Unity lance automatiquement Visual Studio pour Mac (ou bascule sur la fenêtre ouverte) avec le script choisi ouvert.
+Une fois que Visual Studio pour Mac est [défini comme éditeur de scripts externe pour Unity](setup-vsmac-tools-unity.md#configure-unity-for-use-with-visual-studio-for-mac), l’ouverture d’un script à partir de l’éditeur Unity lance automatiquement Visual Studio pour Mac (ou bascule sur la fenêtre ouverte) avec le script choisi ouvert.
 
 Visual Studio pour Mac peut aussi être ouvert sans ouvrir de script dans l’éditeur de code source, en sélectionnant **Ouvrir un projet C#** dans le menu **Ressources** dans Unity.
 

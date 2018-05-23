@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: db49b08f5a56a1a60e8f9c44d0e5b7630143b472
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Configurer et installer Visual Studio pour Mac
 
@@ -58,7 +58,7 @@ Pour travailler avec iOS dans Visual Studio, vous avez besoin des éléments sui
       - Applications Xamarin entièrement multiplateformes – Sélectionnez les plateformes **Android**, **iOS** et **macOS**.
   * **Applications .NET Core** – Sélectionnez la plateforme **.NET Core**.
   * **Applications web ASP.NET Core** – Sélectionnez la plateforme **.NET Core**.
-  * **Développement de jeux Unity multiplateformes** – aucune plateforme supplémentaire ne doit être installée en plus de Visual Studio pour Mac. Reportez-vous au [guide d’installation Unity](~/setup-vsmac-tools-unity.md) pour plus d’informations sur l’installation de l’extension Unity.
+  * **Développement de jeux Unity multiplateformes** – aucune plateforme supplémentaire ne doit être installée en plus de Visual Studio pour Mac. Reportez-vous au [guide d’installation Unity](setup-vsmac-tools-unity.md) pour plus d’informations sur l’installation de l’extension Unity.
 
   Cet écran d’installation affiche la version et la taille de chaque composant. Vous pouvez cliquer sur chaque composant pour afficher une liste des dépendances pour ce composant (pour Android), voir les packages supplémentaires qu’il télécharge (pour .NET Core), ou afficher les applications supplémentaires nécessaires (pour iOS et macOS) :
 
@@ -112,4 +112,4 @@ L’installation de Visual Studio pour Mac vous permet de commencer à écrire d
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Applications web .NET Core et ASP.NET Core, développement de jeux Unity
 
-Pour les autres charges de travail, reportez-vous à la page [charges de travail](~/workloads.md).
+Pour les autres charges de travail, reportez-vous à la page [charges de travail](workloads.md).
