@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 918c0532140369bfc6790be2306830b5f160ebdf
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 54f178a35d95819b13b1d477c3415fd02b8298f5
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Présentation de Visual Studio pour Mac
 
@@ -27,7 +27,7 @@ Cet article traite de différents aspects de Visual Studio pour Mac et présente
 
 ## <a name="installation"></a>Installation
 
-Suivez les étapes du guide [Installation](~/installation.md) pour télécharger et installer Visual Studio pour Mac.
+Suivez les étapes du guide [Installation](installation.md) pour télécharger et installer Visual Studio pour Mac.
 
 ## <a name="language-support"></a>Langages pris en charge
 
@@ -117,8 +117,8 @@ Pour plus d’informations, consultez le guide [Xamarin Inspector](https://devel
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* **Vue d’ensemble** : pour obtenir une vue d’ensemble d’un grand nombre des fonctionnalités principales de Visual Studio pour Mac, consultez la [visite guidée de l’IDE](~/ide-tour.md) de Visual Studio pour Mac.
-* **Installation** : pour découvrir comment télécharger et installer Visual Studio, consultez le guide [Installation](~/installation.md).
+* **Vue d’ensemble** : pour obtenir une vue d’ensemble d’un grand nombre des fonctionnalités principales de Visual Studio pour Mac, consultez la [visite guidée de l’IDE](ide-tour.md) de Visual Studio pour Mac.
+* **Installation** : pour découvrir comment télécharger et installer Visual Studio, consultez le guide [Installation](installation.md).
 * **Didacticiels Xamarin** - Pour en savoir plus sur la façon de développer du code avec Xamarin, accédez au [Developer Center](https://developer.xamarin.com) de Xamarin.
 * **Vidéos** - Pour en savoir plus sur les autres fonctionnalités et aspects de Visual Studio pour Mac, regardez des vidéos sur le site web [Xamarin University](https://university.xamarin.com).
 * **Ateliers pratiques** - Pour commencer à utiliser les différentes charges de travail incluses dans Visual Studio pour Mac, consultez les [ateliers pratiques](https://github.com/Microsoft/vs4mac-labs).

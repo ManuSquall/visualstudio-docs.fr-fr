@@ -81,7 +81,6 @@
 ##### [Guide pratique pour déboguer en mode mixte](how-to-debug-in-mixed-mode.md)
 #### [Préparation du débogage : projets console](debugging-preparation-console-projects.md)
 #### [Guide pratique pour déboguer un fichier exécutable ne faisant pas partie d’une solution Visual Studio](how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)
-#### [Guide pratique pour déboguer avec une source Code Center Premium](how-to-debug-with-code-center-premium-source.md)
 #### [Débogage et processus d’hébergement](debugging-and-the-hosting-process.md)
 #### [Guide pratique pour spécifier une version .NET Framework pour le débogage](how-to-specify-a-dotnet-framework-version-for-debugging.md)
 ### [Créer des affichages personnalisés de données](viewing-data-in-the-debugger.md)
