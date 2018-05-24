@@ -1,5 +1,5 @@
 # Vue d'ensemble
-## [Accès aux données dans Visual Studio](accessing-data-in-visual-studio.md)
+## [Accéder aux données dans Visual Studio](accessing-data-in-visual-studio.md)
 # Didacticiels
 ## [Créer une application de données simple avec ADO.NET](create-a-simple-data-application-by-using-adonet.md)
 ## [Créer une application de données simple avec WPF et Entity Framework](create-a-simple-data-application-with-wpf-and-entity-framework-6.md)

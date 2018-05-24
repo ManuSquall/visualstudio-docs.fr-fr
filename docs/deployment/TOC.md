@@ -8,26 +8,26 @@
 ## [Déployer sur Azure](quickstart-deploy-to-azure.md)
 # Didacticiels
 ## .NET
-### [Déployer une application .NET Core avec l’outil de publication](/dotnet/core/deploying/deploy-with-vs)
-### [Empaqueter une application de bureau pour Microsoft Store (pont de bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
+### [Déployer une application .NET Core avec l’outil de publication](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Empaqueter une application de bureau pour Microsoft Store (pont de bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [Déployer une application de bureau avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 ### [Génération d’applications ClickOnce à partir de la ligne de commande](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
-### [Publier une application ASP.NET Core sur Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [Publier une application ASP.NET Core sur Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [Importer des paramètres de publication et déployer sur Azure](tutorial-import-publish-settings-azure.md)
 ### [Importer des paramètres de publication et déployer sur IIS](tutorial-import-publish-settings-iis.md)
-### [Déploiement continu d’ASP.NET Core sur Azure avec Git](/aspnet/core/publishing/azure-continuous-deployment)
-### [Déployer ASP.NET sur IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+### [Déploiement continu d’ASP.NET Core sur Azure avec Git](/aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Déployer ASP.NET sur IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Natif
-### [Déploiement dans Visual C++](/cpp/ide/deployment-in-visual-cpp)
-### [Empaqueter une application de bureau pour Microsoft Store (pont de bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
-### [Déployer une application native avec ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
+### [Déploiement dans Visual C++...](/cpp/ide/deployment-in-visual-cpp)
+### [Empaqueter une application de bureau pour Microsoft Store (pont de bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Déployer une application native avec ClickOnce...](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
 ## UWP
-### [Empaqueter une application UWP en utilisant Visual Studio](/windows/uwp/packaging/packaging-uwp-apps)
+### [Empaqueter une application UWP en utilisant Visual Studio](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Node.js
-### [Publier sur un site web Azure avec Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
+### [Publier sur un site web Azure avec Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Python
-### [Publier sur Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
+### [Publier sur Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 # Guides pratiques
 ## [Sécurité et déploiement ClickOnce](clickonce-security-and-deployment.md)
 ### [Choix d’une stratégie de déploiement ClickOnce](choosing-a-clickonce-deployment-strategy.md)
