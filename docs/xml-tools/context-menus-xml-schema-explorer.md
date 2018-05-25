@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f128968d810120c40b797715bd0df325116414
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faf28fc44acd530cbc379c4a400c3488f98405ea
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menus contextuels (Explorateur de schémas XML)
 
@@ -31,7 +31,7 @@ Le tableau suivant décrit les options disponibles pour un nœud de type jeu de 
 |**Afficher les éléments globaux**|Recherche et met en surbrillance tous les éléments globaux dans le jeu de schémas.|
 |**Propriétés (fenêtre)**|Ouvre le **propriétés** fenêtre (s’il n’est pas déjà). Cette fenêtre affiche des informations sur le nœud.|
 
-## <a name="node-type-namespace"></a>Type de nœud : espace de noms
+## <a name="node-type-namespace"></a>Type de nœud : Namespace
  Le tableau suivant décrit les options disponibles pour un nœud de type espace de noms.
 
 |Option|Description|
@@ -95,7 +95,7 @@ Le tableau suivant décrit les options disponibles pour un nœud de type jeu de 
 |**Accédez à l’attribut d’origine**|Pour les références d'attribut, navigue vers la définition réelle de l'attribut.|
 |**Afficher toutes les références**|Pour les attributs globaux, recherche et met en surbrillance toutes les références (autres attributs qui ont `ref="selectedAttribute"`) à l'attribut sélectionné.|
 
-## <a name="node-type-attribute-group"></a>Type de nœud : groupe d'attributs
+## <a name="node-type-attribute-group"></a>Type de nœud : groupe d’attributs
  En plus des options relatives aux nœuds globaux décrites ci-dessus, le menu contextuel pour les nœuds d'attribut comprend les options suivantes :
 
 |Option|Description|
@@ -116,4 +116,4 @@ Le tableau suivant décrit les options disponibles pour un nœud de type jeu de 
 ## <a name="see-also"></a>Voir aussi
 
 - [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md)
-- [Recherche dans le jeu de schémas](../xml-tools/searching-the-schema-set.md)
+- [Recherche le jeu de schémas](../xml-tools/searching-the-schema-set.md)

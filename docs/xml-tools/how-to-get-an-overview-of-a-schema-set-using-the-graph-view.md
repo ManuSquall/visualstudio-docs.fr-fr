@@ -10,29 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4feb40ba843da5c3f2e5f7de9b8d554debf6fcc6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8be2666316bdc4d64d4f3dd4ec52c5104a1af5cc
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Procédure : obtenir une vue d'ensemble d'un jeu de schémas à l'aide de la vue du graphique
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Comment : obtenir une vue d’ensemble d’un schéma à l’aide de la vue du graphique
 
 Cette rubrique explique comment utiliser le [vue du graphique](../xml-tools/graph-view.md) pour afficher une vue d’ensemble des nœuds dans un jeu de schémas et les relations entre les nœuds.
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Pour créer un fichier XSD et afficher l'élément racine dans la vue de modèle de contenu
 
-1.  Créez un fichier de schéma XML et enregistrez le fichier sous Relationships.xsd.
+1.  Créer un nouveau fichier de schéma XML et enregistrez le fichier sous *Relationships.xsd*.
 
 2.  Cliquez sur le **utiliser l’éditeur XML pour afficher et modifier le fichier de schéma XML sous-jacent** lien sur la vue de départ.
 
-3.  Copiez le code d’exemple de schéma XML à partir de [exemple de schéma XML : relations](../xml-tools/sample-xsd-file-relationships.md) et collez-le pour remplacer le code qui a été ajouté au nouveau fichier XSD par défaut.
+3.  Copiez le code d’exemple de schéma XML à partir de [schéma de l’exemple de code XML : relations](../xml-tools/sample-xsd-file-relationships.md) et collez-le pour remplacer le code qui a été ajouté au nouveau fichier XSD par défaut.
 
 4.  Cliquez n’importe où dans l’éditeur XML et sélectionnez **Concepteur de vue**.
 
-5.  Sélectionnez la vue du graphique dans la barre d'outils XSD.
+5.  Sélectionnez la vue du graphique à partir de la **barre d’outils XSD**.
 
-6.  Sélectionnez **jeu de schémas** nœud dans l’Explorateur de schémas XML et faites glisser le nœud de la vue du graphique sur l’aire de conception. Tous les nœuds globaux doivent apparaître, ainsi que les flèches connectant les nœuds qui ont des relations.
+6.  Sélectionnez **jeu de schémas** nœud dans le **Explorateur de schémas XML** et faites glisser le nœud pour de la vue du graphique sur l’aire de conception. Tous les nœuds globaux doivent apparaître, ainsi que les flèches connectant les nœuds qui ont des relations.
 
      ![Vue graphique](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")
 

@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1638e888f1185df63b1c536a0c63b374587d7b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="start-view"></a>vue de départ
 
@@ -26,7 +26,7 @@ La vue de départ contient deux sections principales, le *filigrane* et **détai
 
 ## <a name="watermark"></a>Filigrane
 
-Le volet de filigrane contient une liste de liens vers toutes les vues du Concepteur XSD, de l'Éditeur XML et de lExplorateur de schémas XML. Si le jeu de schémas comporte des erreurs, le texte suivant est affiché à la fin de la liste : « Utilisez la liste d'erreurs pour afficher et résoudre les erreurs dans le jeu ».
+Le volet de filigrane contient une liste de liens vers toutes les vues du concepteur XSD, l’éditeur XML, et **Explorateur de schémas XML**. Si le jeu de schémas comporte des erreurs, le texte suivant est affiché à la fin de la liste : « Utilisez la liste d'erreurs pour afficher et résoudre les erreurs dans le jeu ».
 
 ## <a name="schema-set-details"></a>Détails du jeu de schémas
 
@@ -42,9 +42,9 @@ Les boutons suivants sont activés dans la barre d'outils du Concepteur XSD lors
 
 |Option|Description|
 |------------|-----------------|
-|**Afficher le mode de démarrage**|Bascule vers la vue de départ. Cette vue est accessible à l’aide du raccourci clavier : **CTRL + 1**.|
-|**Afficher la vue du modèle de contenu**|Bascule vers la vue de modèle de contenu. Cette vue est accessible à l’aide du raccourci clavier : **CTRL + 2**.|
-|**Afficher la vue du graphique**|Bascule vers la vue du graphique. Cette vue est accessible à l’aide du raccourci clavier : **CTRL + 3**.|
+|**Afficher le mode de démarrage**|Bascule vers la vue de départ. Cette vue est accessible à l’aide du raccourci clavier : **Ctrl**+**1**.|
+|**Afficher la vue du modèle de contenu**|Bascule vers la vue de modèle de contenu. Cette vue est accessible à l’aide du raccourci clavier : **Ctrl**+**2**.|
+|**Afficher la vue du graphique**|Bascule vers la vue du graphique. Cette vue est accessible à l’aide du raccourci clavier : **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Voir aussi
 

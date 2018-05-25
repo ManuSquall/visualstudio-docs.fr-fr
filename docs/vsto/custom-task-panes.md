@@ -28,11 +28,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c74fe2b6f145dd88acbc3bc11d66201acbffd5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4dff9c5f8602f1e11ef020400a11d7d165b23b04
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="custom-task-panes"></a>Volets de tâches personnalisés
   Les volets de tâches sont des panneaux d’interface utilisateur généralement ancrés à l’un des côtés d’une fenêtre dans une application Microsoft Office. Les volets de tâches personnalisés vous permettent de créer votre propre volet de tâches et de fournir aux utilisateurs une interface familière pour accéder aux fonctionnalités de votre solution. Par exemple, l'interface peut comporter des contrôles exécutant du code pour modifier des documents ou afficher des données à partir d'une source de données.  
@@ -48,7 +48,7 @@ ms.lasthandoff: 05/17/2018
 ### <a name="familiar-user-interface"></a>Interface utilisateur familière  
  Les utilisateurs d’applications dans Microsoft Office system sont déjà habitués à utiliser les volets de tâches telles que la **Styles et mise en forme** volet de tâches dans Word. Les volets de tâches personnalisés se comportent comme les autres volets de tâches de Microsoft Office System. Les utilisateurs peuvent ancrer les volets de tâches personnalisés aux différents côtés de la fenêtre d'application ou les faire glisser n'importe où dans la fenêtre. Vous pouvez créer un complément VSTO qui affiche plusieurs volets de tâches personnalisés simultanément, et les utilisateurs peuvent contrôler individuellement chaque volet de tâches.  
   
-### <a name="windows-forms-support"></a>prise en charge Windows Forms  
+### <a name="windows-forms-support"></a>Prise en charge de Windows forms  
  L’interface utilisateur d’un volet de tâches personnalisé que vous créez à l’aide des outils de développement Office dans Visual Studio est basée sur les contrôles Windows Forms. Le concepteur Windows Forms familier vous permet de concevoir l'interface utilisateur pour un volet de tâches personnalisé. Vous pouvez également utiliser la prise en charge des liaisons de données dans Windows Forms pour lier une source de données à des contrôles dans le volet de tâches.  
   
 ## <a name="create-a-custom-task-pane"></a>Créer un volet Office personnalisé  
@@ -85,7 +85,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="access-the-application-from-the-task-pane"></a>Accéder à l’application à partir du volet de tâches  
  Pour automatiser l'application à partir du contrôle utilisateur, vous pouvez directement accéder au modèle objet en utilisant `Globals.ThisAddIn.Application` dans votre code. La classe `Globals` statique permet d'accéder à l'objet `ThisAddIn`. Le champ `Application` de cet objet est le point d'entrée dans le modèle objet de l'application.  
   
- Pour plus d’informations sur la `Application` champ le `ThisAddIn` d’objets, consultez [des Compléments VSTO de programme](../vsto/programming-vsto-add-ins.md). Pour une procédure pas à pas qui montre comment automatiser une application à partir d’un volet Office personnalisé, consultez [procédure pas à pas : automatisation d’une application à partir d’un volet Office personnalisé](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Pour plus d’informations sur la `Globals` de classe, consultez [d’accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Pour plus d’informations sur la `Application` champ le `ThisAddIn` d’objets, consultez [des Compléments VSTO de programme](../vsto/programming-vsto-add-ins.md). Pour une procédure pas à pas qui montre comment automatiser une application à partir d’un volet Office personnalisé, consultez [procédure pas à pas : automatique, une application à partir d’un volet Office personnalisé](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Pour plus d’informations sur la `Globals` de classe, consultez [d’accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>Gérer l’interface utilisateur du volet de tâches  
  Après avoir créé le volet de tâches, vous pouvez utiliser les propriétés et événements de l'objet <xref:Microsoft.Office.Tools.CustomTaskPane> pour contrôler l'interface utilisateur du volet de tâches et répondre quand l'utilisateur modifie ce volet.  
@@ -142,16 +142,11 @@ ms.lasthandoff: 05/17/2018
  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vidéo") pour une démonstration vidéo connexe, consultez [comment faire : gérer les volets de tâches dans les Compléments VSTO Word ?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
- Quand vous créez un volet de tâches personnalisé pour Outlook, le volet est associé à une fenêtre d’explorateur ou d’inspecteur spécifique. Les explorateurs sont des fenêtres qui affichent le contenu d'un dossier, et les inspecteurs sont des fenêtres qui affichent un élément tel qu'un message électronique ou une tâche.  
+ Quand vous créez un volet de tâches personnalisé pour Outlook, le volet est associé à une fenêtre d’explorateur ou d’inspecteur spécifique. Les explorateurs sont des fenêtres qui affichent le contenu d’un dossier, et les inspecteurs sont des fenêtres qui affichent un élément tel qu’un message électronique ou une tâche.  
   
- Pour afficher un volet de tâches personnalisé avec plusieurs fenêtres d'explorateur ou d'inspecteur, vous devez créer une nouvelle instance du volet de tâches personnalisé quand une fenêtre d'explorateur ou d'inspecteur s'ouvre. Pour cela, gérez un événement qui se déclenche quand une fenêtre d'explorateur ou d'inspecteur est créée, puis créez le volet de tâches dans le gestionnaire d'événements. Vous pouvez également gérer les événements d’explorateur et d’inspecteur pour masquer ou afficher les volets de tâches en fonction de la fenêtre visible.  
+ Pour afficher un volet de tâches personnalisé avec plusieurs fenêtres d’explorateur ou d’inspecteur, vous devez créer une nouvelle instance du volet de tâches personnalisé quand une fenêtre d’explorateur ou d’inspecteur s’ouvre. Pour cela, gérez un événement qui se déclenche quand une fenêtre d'explorateur ou d'inspecteur est créée, puis créez le volet de tâches dans le gestionnaire d'événements. Vous pouvez également gérer les événements d’explorateur et d’inspecteur pour masquer ou afficher les volets de tâches en fonction de la fenêtre visible.  
   
  Pour associer le volet de tâches à un Explorateur ou Inspecteur spécifique, utilisez la <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> méthode pour créer le volet des tâches, puis passez la <xref:Microsoft.Office.Interop.Outlook.Explorer> ou <xref:Microsoft.Office.Interop.Outlook.Inspector> de l’objet à la *fenêtre* paramètre. Pour plus d’informations sur la création de volets de tâches personnalisés, consultez [vue d’ensemble des volets de tâches personnalisés](../vsto/custom-task-panes.md).  
-  
- Pour une procédure pas à pas qui montre comment créer un volet de tâches pour chaque message électronique ouvert, consultez [procédure pas à pas : affichage des volets de tâches personnalisés avec des messages électroniques dans Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
-  
-### <a name="outlook-events"></a>Événements Outlook  
- Pour surveiller l'état des fenêtres d'explorateur, vous pouvez gérer les événements d'explorateur suivants :  
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   

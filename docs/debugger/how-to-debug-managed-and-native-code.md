@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: aeb74bac5196450ec98426727a1456a009adb5c1
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 548b86406ba36a6f46a2dfb3d4d894b5621c298c
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Didacticiel : Déboguer du code managé et natif dans Visual Studio
 
@@ -116,7 +116,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 1. Dans *Program.cs*, remplacez le code par défaut par le code suivant :
 
-    ```c#
+    ```csharp
     using System;
     using System.Runtime.InteropServices;
     
@@ -183,7 +183,7 @@ Dans la plupart des versions de Visual Studio 2017, vous devez activer le débog
 
 1. Dans le projet c#, ouvrez *Program.cs* et définissez un point d’arrêt dans la ligne de code suivante en cliquant dans la marge de gauche :
 
-    ```c#
+    ```csharp
     int result = Multiply(7, 7);
     ```
 

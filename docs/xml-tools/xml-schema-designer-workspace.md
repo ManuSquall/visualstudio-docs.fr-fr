@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c787431cbdf9f6a9bcb70a87b99b0a566fd0e5ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 317588e4d6c81a13a18c036a040508a1adebafcb
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="xml-schema-designer-workspace"></a>Espace de travail du Concepteur de schémas XML
 
@@ -22,19 +22,19 @@ Le Concepteur de schémas XML (Concepteur XSD) est un outil graphique qui vous a
 
 Pour commencer à explorer les nœuds qui vous intéressent, vous devez les ajouter à l'espace de travail. L'espace de travail est partagé entre toutes les vues.
 
-## <a name="adding-nodes-to-the-workspace"></a>Ajout de nœuds à l'espace de travail
+## <a name="add-nodes-to-the-workspace"></a>Ajouter des nœuds à l’espace de travail
 
 Vous pouvez ajouter des nœuds à l'espace de travail des manières suivantes :
 
 -   Dans la section « Détails du document de schéma » de la [vue de départ](../xml-tools/start-view.md), cliquez sur le **ajouter** lien en regard du type de nœud global.
 
--   Faites glisser-déposer les nœuds globaux, nœuds de fichier et nœuds d’espace de noms de l’Explorateur de schémas XML sur l’une des trois vues. Pour plus d’informations, consultez la section « En faisant glisser et déplacer des nœuds » dans [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md).
+-   Faites glisser et déposez les nœuds globaux, nœuds de fichier et nœuds d’espace de noms à partir de la **Explorateur de schémas XML** sur une des trois vues. Pour plus d’informations, consultez la section « En faisant glisser et déplacer des nœuds » dans [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md).
 
--   Utilisez le menu contextuel dans l'Explorateur de schémas XML. Pour plus d’informations, consultez [contextuels](../xml-tools/context-menus-xml-schema-explorer.md).
+-   Utilisez le menu contextuel dans le **Explorateur de schémas XML**. Pour plus d’informations, consultez [contextuels](../xml-tools/context-menus-xml-schema-explorer.md).
 
 -   Effectuer une recherche dans l’Explorateur XSD, puis cliquez sur le **ajouter des nœuds en surbrillance à l’espace de travail** bouton dans le volet de synthèse des résultats. Pour plus d’informations, consultez [recherche le jeu de schémas](../xml-tools/searching-the-schema-set.md).
 
-## <a name="view-switching"></a>Basculement entre les vues
+## <a name="switch-views"></a>Basculer les vues
 
 Pour basculer d'une vue à l'autre, utilisez l'un des éléments suivants :
 
@@ -44,4 +44,4 @@ Pour basculer d'une vue à l'autre, utilisez l'un des éléments suivants :
 
 -   Filigranes sur la page Vue de départ ou filigrane sur la vue de modèle de contenu ou la vue du graphique vide.
 
--   Touches rapides : Ctrl+1 pour la vue de départ, Ctrl+2 pour la vue du graphique, et Ctrl+3 pour la vue de modèle de contenu.
+-   Touches d’accès rapide : **Ctrl**+**1** pour la vue de départ, **Ctrl**+**2** pour la vue du graphique, et  **CTRL**+**3** pour la vue de modèle de contenu.
