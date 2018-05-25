@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2956e0c19e7cf50fdde39765bc5b26112986b84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 02492f2e1760df3ce5cd6751808303bae75577e2
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>Procédure : évaluer une expression XPath
 
@@ -29,7 +29,7 @@ Vous pouvez évaluer des expressions XPath avec le **Espion express** boîte de 
 -   Les fonctions définies par l'utilisateur ne sont pas prises en charge.
 
 > [!NOTE]
-> La procédure suivante utilise les fichiers belowAvg.xsl et books.xml de la [procédure pas à pas : déboguer une feuille de Style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) rubrique.
+> La procédure suivante utilise le *belowAvg.xsl* et *books.xml* fichiers à partir de la [procédure pas à pas : déboguer une feuille de style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) rubrique.
 
 ## <a name="to-evaluate-an-xpath-expression"></a>Pour évaluer une expression XPath
 

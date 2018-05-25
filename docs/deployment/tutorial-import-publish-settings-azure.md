@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2cf6c17f3017bb1021423b19b32b36749fe0744d
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publier une application de Service d’applications Azure en important des paramètres de publication dans Visual Studio
 
@@ -37,7 +37,7 @@ Un fichier de paramètres de publication (*\*.publishsettings*) est différente 
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Vous devez disposer de Visual Studio est installé et le **ASP.NET** et **.NET Framework** charge de travail de développement. Pour une application .NET Core, vous devez également le **.NET Core** la charge de travail.
+* Vous devez disposer de Visual Studio 2017 installé et le **ASP.NET** et **.NET Framework** charge de travail de développement. Pour une application .NET Core, vous devez également le **.NET Core** la charge de travail.
 
     Si vous n’avez pas encore installé Visual Studio, installez-le gratuitement [ici](http://www.visualstudio.com).
 
@@ -92,21 +92,7 @@ Un fichier de paramètres de publication (*\*.publishsettings*) est différente 
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importer les paramètres de publication dans Visual Studio et déployer
 
-1. Sur l’ordinateur où vous ouvrir le projet ASP.NET dans Visual Studio, cliquez sur le projet dans l’Explorateur de solutions, puis choisissez **publier**.
-
-1. Si vous avez déjà configuré des profils de publication, le **publier** volet s’affiche. Cliquez sur **créer nouveau profil**.
-
-1. Dans le **choisir une cible de publication** boîte de dialogue, cliquez sur **importer un profil**.
-
-    ![Choisissez publier](../deployment/media/tutorial-publish-tool-import-profile.png)
-
-1. Accédez à l’emplacement du fichier de paramètres de publication que vous avez créé dans la section précédente.
-
-1. Dans le **importation publier un fichier de paramètres** boîte de dialogue, sélectionnez le profil que vous avez créé dans la section précédente, puis cliquez sur **ouvrir**.
-
-1. Sélectionnez une des deux profils importés, puis cliquez sur **publier**.
-
-    Visual Studio lance le processus de déploiement, et la fenêtre Sortie affiche la progression et les résultats.
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
 ## <a name="next-steps"></a>Étapes suivantes
 

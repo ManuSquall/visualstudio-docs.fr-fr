@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b820820a42814eb7169287408200bedd73435ff7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae09c578eac5a4acbfa9c169ba175fe557872da5
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-create-xml-snippets"></a>Procédure : créer des extraits XML
+# <a name="how-to-create-xml-snippets"></a>Comment : créer des extraits XML
 
 Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet éditeur comporte un extrait XML appelé « Snippet », qui est souvent utilisé pour la création de nouveaux extraits XML.
 
@@ -30,7 +30,7 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
 
 3.  Avec le bouton droit dans le volet de l’éditeur et sélectionnez **insérer un extrait**.
 
-4.  Sélectionnez **extrait** à partir de la liste et appuyez sur ENTRÉE.
+4.  Sélectionnez **extrait** à partir de la liste et appuyez sur **entrée**.
 
 5.  Apportez les modifications voulues au nouvel extrait.
 
@@ -40,13 +40,13 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
 
 7.  Entrez le nom du nouvel extrait et sélectionnez **extrait les fichiers** à partir de la **enregistrer en tant que type** fenêtre déroulante.
 
-8.  Utilisez le **enregistrer dans** liste déroulante pour modifier l’emplacement du fichier au dossier par Mes Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets, puis appuyez sur **enregistrer**.
+8.  Utilisez le **enregistrer dans** liste déroulante pour modifier l’emplacement de fichier pour le *par Mes Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets* dossier, puis appuyez sur **enregistrer**.
 
-## <a name="snippet-description"></a>Description des extraits
+## <a name="snippet-description"></a>Description de l’extrait de code
 
  Cette section décrit certains éléments clés de l'extrait souvent utilisé. Pour plus d’informations sur les éléments de schéma utilisés par les extraits XML, consultez [référence du schéma des extraits de Code](../ide/code-snippets-schema-reference.md).
 
-### <a name="snippettype-element"></a>Élément SnippetType
+### <a name="snippettype-element"></a>SnippetType, élément
 
  L'éditeur prend en charge deux types d'extraits :
 
@@ -59,7 +59,7 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
 
  Le `Expansion` type détermine si l’extrait apparaît lorsque vous appelez le **insérer un extrait** commande. Le `SurroundsWith` type détermine si l’extrait apparaît lorsque vous appelez le **entourer** commande.
 
-### <a name="code-element"></a>Élément Code
+### <a name="code-element"></a>Élément de code
 
  L'élément `Code` définit le texte XML qui sera inséré lorsque l'extrait sera appelé.
 
@@ -83,7 +83,7 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
 
 -   $selected$ est une variable prédéfinie. Elle représente le texte sélectionné dans l'éditeur XML avant l'appel de l'extrait. La position de cette variable détermine l'emplacement du texte sélectionné dans l'extrait de code qui entoure cette sélection.
 
--   $end$ est une variable prédéfinie. Lorsque l'utilisateur appuie sur ENTRÉE pour terminer l'édition des champs de l'extrait de code, cette variable détermine l'endroit où le signe ^ est placé.
+-   $end$ est une variable prédéfinie. Lorsque l’utilisateur appuie sur **entrée** pour terminer la modification des champs d’extrait de code, cette variable détermine où le signe insertion (^) est déplacé.
 
  L'élément `Code` ci-dessus insère le texte XML suivant :
 
@@ -95,7 +95,7 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
 
  La valeur de l'élément name est marquée comme une zone modifiable.
 
-### <a name="literal-element"></a>Élément Literal
+### <a name="literal-element"></a>Literal, élément
 
  L'élément `Literal` permet d'identifier le texte de remplacement qui peut être personnalisé après son insertion dans le fichier. Par exemple, des chaînes littérales, des valeurs numériques et certains noms de variables peuvent être déclarés comme littéraux. Vous pouvez définir un nombre quelconque de littéraux dans votre extrait XML et y faire référence plusieurs fois dans l'extrait. L'exemple d'élément `Literal` suivant définit une variable $name$ dont la valeur par défaut est « name ».
 
@@ -120,5 +120,5 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
 ## <a name="see-also"></a>Voir aussi
 
 - [Extraits XML](../xml-tools/xml-snippets.md)
-- [Guide pratique pour utiliser des extraits XML](../xml-tools/how-to-use-xml-snippets.md)
-- [Guide pratique pour générer un extrait XML à partir d’un schéma XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Comment : utiliser XML des extraits de code](../xml-tools/how-to-use-xml-snippets.md)
+- [Comment : générer un extrait XML à partir d’un schéma XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

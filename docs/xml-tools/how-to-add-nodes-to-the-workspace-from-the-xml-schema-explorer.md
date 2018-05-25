@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 010cdbbb23b1e376ec12e7a6a6a903664a069d17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 487cb4fe5ea15c2186f9284c557a1e9377ac801f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procédure : ajouter des nœuds à l'espace de travail à partir de l'Explorateur de schémas XML
+# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Comment : ajouter des nœuds à l’espace de travail à partir de l’Explorateur de schémas XML
 
-Cette rubrique explique comment ajouter des nœuds à la [espace de travail du Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md) à partir de l’Explorateur de schémas XML. Pour cela, vous pouvez faire glisser-déposer des nœuds à partir de l’Explorateur de schémas XML dans une vue du concepteur XSD, ou utiliser le menu contextuel de l’Explorateur de schémas XML. Vous pouvez également ajouter les nœuds mis en surbrillance suite à une recherche effectuée par l'Explorateur de schémas XML. Pour plus d’informations, consultez [Comment : ajouter définir recherche résultat nœuds de schéma pour l’espace de travail](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
+Cette rubrique explique comment ajouter des nœuds à la [espace de travail du Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md) à partir de la **Explorateur de schémas XML**. Cela peut être obtenue en faisant glisser les nœuds à partir de la **Explorateur de schémas XML** dans une vue du concepteur XSD, ou à l’aide de la **l’Explorateur de schémas XML** menu contextuel. Vous pouvez également ajouter des nœuds qui sont mises en surbrillance suite à une recherche effectuée par le **Explorateur de schémas XML**. Pour plus d’informations, consultez [Comment : ajouter des nœuds de résultat de recherche de jeu de schéma pour l’espace de travail](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
 
 > [!NOTE]
-> Seuls des nœuds globaux peuvent être ajoutés à la [espace de travail Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md).
+> Seuls des nœuds globaux peuvent être ajoutés à la [espace de travail du Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md).
 
-## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Pour ajouter des nœuds via le menu contextuel de l'Explorateur de schémas XML
+## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Pour ajouter des nœuds via le menu contextuel de l’Explorateur XML
 
 1.  Suivez les étapes de [Comment : créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
@@ -31,13 +31,13 @@ Cette rubrique explique comment ajouter des nœuds à la [espace de travail du C
 
      Le nœud `purchaseOrderType` apparaît sur l'aire de conception de la vue du graphique.
 
-## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Pour faire glisser-déplacer un nœud sur une vue
+## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Pour faire glisser-déposer un nœud sur une vue
 
-1.  Cliquez avec le bouton droit sur le nœud `PurchaseOrderType` dans la vue du graphique. Sélectionnez **afficher dans l’Explorateur de schémas XML**.
+1.  Avec le bouton droit sur le `PurchaseOrderType` nœud dans la vue du graphique. Sélectionnez **afficher dans l’Explorateur de schémas XML**.
 
-     Le nœud est mis en surbrillance dans l'Explorateur de schémas XML.
+     Le nœud est mis en surbrillance dans le **Explorateur de schémas XML**.
 
-2.  Cliquez avec le bouton droit sur le `PurchaseOrderType` nœud dans l’Explorateur de schémas XML et sélectionnez **afficher toutes les références**.
+2.  Cliquez avec le bouton droit sur le `PurchaseOrderType` nœud dans le **Explorateur de schémas XML** et sélectionnez **afficher toutes les références**.
 
      Le nœud `purchaseOrder` est mis en surbrillance.
 
@@ -51,7 +51,7 @@ Cette rubrique explique comment ajouter des nœuds à la [espace de travail du C
 
      ![Recherche de mot clé de l’Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     Les résultats de la recherche sont mis en surbrillance dans l'Explorateur de schémas XML et sont marqués par des graduations dans la barre de défilement verticale.
+     Les résultats de recherche sont mis en surbrillance dans le **Explorateur de schémas XML** et marqués par des graduations sur la barre de défilement verticale.
 
 2.  Ajouter les résultats de recherche à l’espace de travail en cliquant sur le **ajouter des nœuds en surbrillance à l’espace de travail** bouton dans le volet de synthèse des résultats.
 

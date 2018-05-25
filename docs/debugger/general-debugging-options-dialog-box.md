@@ -23,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b153f5e411cabc8975ad1a2dca1ed212372b63ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d49d2b2b4f69cb20a87c50a0a7e0dc9791eb42ec
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Général, Débogage, boîte de dialogue Options
 Le **Outils > Options > Débogage > Général** page vous permet de définir les options suivantes :  
@@ -94,11 +94,11 @@ Indique au débogueur Visual Studio qu'il faut obtenir les fichiers sources à p
 - **Autoriser le serveur source pour les assemblys de confiance partielle (managé uniquement)**  
     Lorsque la prise en charge du serveur source est activée, ce paramètre remplace le comportement par défaut qui consiste à ne pas récupérer les sources des assemblys de confiance partielle.  
 
-- **Activer la prise en charge de la liaison source**  
+**Activer la prise en charge de la liaison de la Source**  
     Indique au débogueur Visual Studio pour télécharger les fichiers sources pour les fichiers .pdb qui contiennent des informations sur le lien de la Source. Pour plus d’informations sur la Source de liaison, consultez la [spécification de liaison Source](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
     > [!IMPORTANT]
-    >  Étant donné que la Source de liaison va télécharger les fichiers à l’aide de http ou https, assurez-vous que le fichier .pdb.  
+    >  Because Source Link will download files using http or https, make sure you trust the .pdb file.  
   
 **Mettez en surbrillance la ligne entière pour les points d’arrêt et l’instruction actuelle (C++ uniquement)**  
 Lorsque le débogueur met en surbrillance un point d'arrêt ou l'instruction actuelle, il met en surbrillance la ligne entière.  

@@ -1,7 +1,7 @@
 ---
 title: Débogage distant dans Visual Studio | Documents Microsoft
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422714c1180ef94d32d8d323c796ed2c84258bf3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: db20b62c5ef409f523253c5ba19e2c68213743be
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Vous pouvez déboguer une application Visual Studio qui a été déployée sur un autre ordinateur. Pour ce faire, utilisez le débogueur distant Visual Studio.
@@ -47,22 +47,63 @@ Si vous simplement télécharger et installer le débogueur distant et que vous 
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
+## <a name="unblock_msvsmon"></a> Débloquer le téléchargement des outils à distance sur Windows Server
+
+Les paramètres de sécurité par défaut dans Internet Explorer sur Windows Server peuvent rendre du temps télécharger les composants, tels que les outils à distance.
+
+* Configuration de sécurité renforcée est activée dans Internet Explorer, ce qui vous empêche d’ouvrir des sites Web et accéder aux ressources web, sauf si le domaine contenant la ressource est explicitement autorisé (autrement dit, approuvé).
+
+* Sur Windows Server 2016, un paramètre par défaut dans **Options Internet** > **sécurité** > **Internet**  >   **Personnaliser le niveau** > **télécharge** également désactiver les téléchargements de fichiers. Si vous choisissez de télécharger les outils à distance directement sur Windows Server, vous devez activer le téléchargement du fichier.
+
+Pour télécharger les outils de Windows Server, nous vous recommandons une des opérations suivantes :
+
+* Télécharger les outils à distance sur un autre ordinateur, telles que l’un de Visual Studio en cours d’exécution, puis copiez le *.exe* fichier vers Windows Server.
+
+* Exécuter le débogueur distant [à partir d’un partage de fichiers](#fileshare_msvsmon) sur votre ordinateur Visual Studio.
+
+* Télécharger les outils à distance directement sur Windows Server et acceptez les invites pour ajouter des sites de confiance. Sites Web modernes incluent souvent de nombreuses ressources de tiers, afin que cela peut entraîner un grand nombre d’invites. En outre, tous les liens redirigés peuvent doivent être ajoutés manuellement. Vous pouvez choisir d’ajouter certains des sites de confiance avant de commencer le téléchargement. Accédez à **Options Internet > sécurité > Sites de confiance > Sites** et ajoutez les sites suivants.
+
+  * visualstudio.com
+  * download.visualstudio.microsoft.com
+  * à propos : vide
+
+  Pour les versions antérieures du débogueur sur my.visualstudio.com, ajoutez ces sites supplémentaires pour vous assurer que la connexion a réussi :
+
+  * Microsoft.com
+  * go.microsoft.com
+  * download.microsoft.com
+  * My.VisualStudio.com
+  * Login.microsoftonline.com
+  * Login.Live.com
+  * Secure.aadcdn.microsoftonline-p.com
+  * msft.STS.Microsoft.com
+  * AUTH.GFX.MS
+  * app.vssps.visualstudio.com
+  * vlscppe.Microsoft.com
+  * Query.prod.cms.RT.Microsoft.com
+
+    Si vous choisissez d’ajouter ces domaines lors du téléchargement des outils à distance, puis choisissez **ajouter** lorsque vous y êtes invité.
+
+    ![Boîte de dialogue de contenu bloqué](../debugger/media/remotedbg-blocked-content.png)
+
+    Lorsque vous téléchargez le logiciel, vous obtenez certaines demandes supplémentaires pour accorder des autorisations requises pour charger les différents scripts de site web et des ressources. Sur my.visualstudio.com, nous recommandons que vous ajoutez les domaines supplémentaires pour vous assurer que la connexion a réussi.
+
 ### <a name="fileshare_msvsmon"></a> (Facultatif) Pour exécuter le débogueur distant à partir d’un partage de fichiers
 
-Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur avec Visual Studio Community, Professional ou Enterprise déjà installé. Pour certains scénarios, le moyen le plus simple pour configurer le débogage à distance doit exécuter le débogueur distant (msvsmon.exe) à partir d’un partage de fichiers. Pour connaître les limitations d’utilisation, consultez la page d’aide du débogueur distant (**aide > utilisation** dans le débogueur distant).
+Vous pouvez trouver le débogueur distant (*msvsmon.exe*) sur un ordinateur avec Visual Studio Community, Professional ou Enterprise déjà installé. Pour certains scénarios, le moyen le plus simple pour configurer le débogage à distance doit exécuter le débogueur distant (msvsmon.exe) à partir d’un partage de fichiers. Pour connaître les limitations d’utilisation, consultez la page d’aide du débogueur distant (**aide > utilisation** dans le débogueur distant).
 
-1. Rechercher **msvsmon.exe** dans le répertoire correspondant à votre version de Visual Studio. Pour Visual Studio Enterprise 2017 :
+1. Rechercher *msvsmon.exe* dans le répertoire correspondant à votre version de Visual Studio. Pour Visual Studio Enterprise 2017 :
 
-      **Programme fichiers (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      *Programme fichiers (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
       
-      **Programme fichiers (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
+      *Programme fichiers (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
 
 2. Partage les **débogueur distant** dossier sur l’ordinateur Visual Studio.
 
-3. Sur l’ordinateur distant, exécutez **msvsmon.exe**. Suivez les [instructions d’installation](#bkmk_setup).
+3. Sur l’ordinateur distant, exécutez *msvsmon.exe*. Suivez les [instructions d’installation](#bkmk_setup).
 
 > [!TIP] 
-> Pour l’installation de la ligne de commande et référence de ligne de commande, consultez la page d’aide **msvsmon.exe** en tapant ``msvsmon.exe /?`` dans la ligne de commande sur l’ordinateur avec Visual Studio est installé (ou accédez à **aide > utilisation**dans le débogueur distant).
+> Pour l’installation de la ligne de commande et référence de ligne de commande, consultez la page d’aide *msvsmon.exe* en tapant ``msvsmon.exe /?`` dans la ligne de commande sur l’ordinateur avec Visual Studio est installé (ou accédez à **aide > utilisation**dans le débogueur distant).
   
 ## <a name="requirements_msvsmon"></a> Spécifications
 

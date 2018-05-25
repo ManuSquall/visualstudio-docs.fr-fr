@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e895fe9844740fbb3fdd670ff53dfe0b72dbdfb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4dc9c9acfed229e4215c32e2e924ba1601ce88b6
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer avec du code managé à l’aide du débogueur Visual Studio
 
@@ -37,7 +37,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
 
 4. Dans Program.cs ou Module1.vb, remplacez le code suivant
 
-    ```c#
+    ```csharp
     class Program
     {
         static void Main(string[] args)
@@ -55,7 +55,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
 
     par le code suivant :
 
-    ```c#
+    ```csharp
     class Program
     {
         private static void doWork()

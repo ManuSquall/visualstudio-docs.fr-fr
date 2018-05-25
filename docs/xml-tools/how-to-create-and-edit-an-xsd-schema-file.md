@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 298cb342b83dd512f591e03a6922a099c127cb3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db635a9bc18a00bcb723a7bf8b66a557434e3e9a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Comment : créer et modifier un fichier de schéma XSD
 
@@ -22,11 +22,11 @@ Cette rubrique décrit comment créer un fichier XSD (XML Schema Definition) et 
 
 ## <a name="to-create-a-new-xml-schema-file"></a>Pour créer un fichier de schéma XML
 
-1. Dans Visual Studio, ouvrez le **fichier** menu et sélectionnez **nouveau** > **fichier**. Sinon, utilisez le raccourci clavier Ctrl+N.
+1. Dans Visual Studio, ouvrez le **fichier** menu et sélectionnez **nouveau** > **fichier**. Sinon, utilisez le **Ctrl**+**N** raccourci clavier.
 
 2. Dans le **nouveau fichier** boîte de dialogue, sélectionnez **schéma XML** , puis sélectionnez **ouvrir**.
 
-   Un fichier est créé. La vue de départ et une fenêtre Explorateur de schémas XML vide s'affichent dans Visual Studio.
+   Un fichier est créé. La vue de départ et vide **Explorateur de schémas XML** fenêtre s’affichent dans Visual Studio.
 
 ## <a name="to-edit-a-file"></a>Pour modifier un fichier
 
@@ -36,8 +36,8 @@ Cette rubrique décrit comment créer un fichier XSD (XML Schema Definition) et 
 
 2. Copiez le code d’exemple de schéma XML à partir de [schéma de bon de commande](../xml-tools/sample-xsd-file-simple-schema.md) et collez-le pour remplacer le code qui a été ajouté au nouveau fichier XSD par défaut.
 
-   L'Explorateur de schémas XML est mis à jour avec le nouveau jeu de schémas.
+   Le **Explorateur de schémas XML** est mis à jour avec le nouveau jeu de schémas.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation de données XML](../xml-tools/working-with-xml-data.md)
+- [Utilisation des données XML](../xml-tools/working-with-xml-data.md)

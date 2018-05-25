@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c1626b7f363c5b6d71e26d7b42d9a57d7b775ee
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f7f15cc3ce8396e4cd10a49a1427f1ba1be76b50
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="excel-object-model-overview"></a>Vue d’ensemble du modèle d’objet Excel
   Pour développer des solutions qui utilisent Microsoft Office Excel, vous pouvez interagir avec les objets fournis par le modèle objet Excel. Cette rubrique présente les objets les plus importants :  
@@ -107,7 +107,7 @@ ms.lasthandoff: 05/22/2018
 ### <a name="primary-interop-assembly-reference"></a>Référence d’assembly PIA  
  La documentation de référence de l'assembly PIA Excel décrit les types de l'assembly PIA pour Excel. Cette documentation est disponible à partir de l’emplacement suivant : [référence d’assembly PIA Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
- Pour plus d’informations sur la conception de l’assembly PIA Excel, telles que les différences entre les classes et interfaces dans l’assembly PIA, et comment les événements de l’assembly PIA, consultez [vue d’ensemble des Classes et Interfaces dans les assemblys PIA Office](http://go.microsoft.com/fwlink/?LinkId=189592).  
+ Pour plus d’informations sur la conception de l’assembly PIA Excel, telles que les différences entre les classes et interfaces dans l’assembly PIA, et comment les événements de l’assembly PIA, consultez [vue d’ensemble des classes et interfaces dans les assemblys PIA Office](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
 ### <a name="vba-object-model-reference"></a>Référence du modèle objet VBA  
  La documentation de référence du modèle objet VBA présente le modèle objet Excel tel qu'il est exposé au code VBA (Visual Basic pour Applications). Pour plus d’informations, consultez [de référence du modèle objet Excel 2010](http://go.microsoft.com/fwlink/?LinkId=199768).  

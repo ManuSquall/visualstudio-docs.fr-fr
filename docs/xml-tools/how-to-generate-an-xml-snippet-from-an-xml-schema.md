@@ -10,17 +10,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f598f01116d7ce2aec5759c411e456083f6932b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac437bbbe876d81acc917f011a3051c9c264b6a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procédure : générer un extrait XML à partir d'un schéma XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Comment : générer un extrait XML à partir d’un schéma XML
 
-L'éditeur XML permet de générer des extraits XML à partir d'un schéma de langage XSD (XML Schema definition). Par exemple, lorsque vous créez un fichier XML alors que le curseur est placé à côté du nom d'un élément, vous pouvez appuyer sur TAB pour remplir l'élément avec des données XML générées à partir des informations de schéma de cet élément.
+L'éditeur XML permet de générer des extraits XML à partir d'un schéma de langage XSD (XML Schema definition). Par exemple, lorsque vous créez un fichier XML, tout en étant positionné en regard du nom de l’élément, vous pouvez appuyer sur **onglet** pour remplir l’élément avec des données XML générées à partir des informations de schéma pour cet élément.
 
-Cette fonction n'est disponible que pour les éléments. Les règles suivantes s'appliquent également :
+Cette fonctionnalité n’est disponible que pour les éléments. Les règles suivantes s'appliquent également :
 
 -   L'élément doit avoir un type de schéma associé ; autrement dit, l'élément doit être valide par rapport à un schéma associé. Le type de schéma ne peut pas être abstract et doit contenir les attributs et/ou éléments enfants obligatoires.
 
@@ -44,12 +44,12 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 
 ## <a name="example"></a>Exemple
 
- Les étapes de cette section expliquent l'utilisation de la fonction d'extrait XML généré par schéma dans l'éditeur XML.
+ Les étapes décrites dans cette section vous montrent comment utiliser la fonctionnalité générés par schéma d’extrait de code XML de l’éditeur XML.
 
 > [!NOTE]
 > Avant d'entamer ces procédures, enregistrez le fichier de schéma sur votre ordinateur local.
 
-### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l'associer à un schéma XML
+### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l’associer à un schéma XML
 
 1.  Sur le **fichier** menu, pointez sur **nouveau**, puis cliquez sur **fichier**.
 
@@ -85,11 +85,11 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 
      **Contact** pour ajouter l’élément racine.
 
-3.  Sélectionnez **Contact** à partir de la liste des membres et appuyez sur ENTRÉE.
+3.  Sélectionnez **Contact** dans la liste des membres et appuyez sur **entrée**.
 
      L'éditeur ajoute la balise de début `<Contact` et place le curseur après le nom de l'élément.
 
-4.  Appuyez sur TAB pour générer des données XML pour l'élément `Contact` d'après ses informations de schéma.
+4.  Appuyez sur **onglet** pour générer des données XML pour le `Contact` élément basé sur ses informations de schéma.
 
 ## <a name="input"></a>Entrée
 
@@ -158,4 +158,4 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 ## <a name="see-also"></a>Voir aussi
 
 - [Extraits XML](../xml-tools/xml-snippets.md)
-- [Guide pratique pour utiliser des extraits XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Comment : utiliser XML des extraits de code](../xml-tools/how-to-use-xml-snippets.md)
