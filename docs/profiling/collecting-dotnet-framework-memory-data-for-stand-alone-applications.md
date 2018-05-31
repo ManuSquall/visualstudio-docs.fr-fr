@@ -10,17 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a12cdea552c1008f3e26c868c206ccabaebced91
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ab274f76463c8a58203c9e004a3727b7ed2ed59e
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335903"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Collecter les données mémoire du .NET Framework avec la ligne de commande du profileur
 
 Cette section décrit les procédures et les options de collecte des données d’allocation de mémoire et de durée de vie des objets d’une application cliente (autonome) utilisant la méthode d’échantillonnage à partir de la ligne de commande.  
   
-## <a name="common-tasks"></a>Tâches courantes  
+## <a name="common-tasks"></a>Tâches courantes
   
 |Tâche|Contenu connexe|  
 |----------|---------------------|  
@@ -28,26 +29,27 @@ Cette section décrit les procédures et les options de collecte des données d�
 |**Attacher le profileur à une application .NET**|-   [Guide pratique pour attacher le profileur à une application .NET Framework pour collecter des données de mémoire](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Instrumenter une application pour collecter des données de mémoire .NET**|-   [Guide pratique pour instrumenter un composant .NET Framework autonome et collecter des données de mémoire avec le profileur](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|  
   
-## <a name="related-tasks"></a>Tâches connexes  
+## <a name="related-tasks"></a>Tâches connexes
   
-### <a name="profiling-stand-alone-applications"></a>Profilage d'applications autonomes  
-  
-|Tâche|Contenu connexe|  
-|----------|---------------------|  
-|**Profiler à l’aide de la méthode d’échantillonnage**|-   [Collecte de statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
-|**Profiler le conflit des ressources et l’activité des threads**|-   [Collecte de données concurrentielles](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
-|**Ajout d’interactions de couche**|-   [Collecte de données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-  
-### <a name="profiling-net-memory-data"></a>Profilage de données de mémoire .NET  
+### <a name="profile-stand-alone-applications"></a>Profiler des applications autonomes  
   
 |Tâche|Contenu connexe|  
 |----------|---------------------|  
-|**Profiler des applications ASP.NET**|-   [Collecte des données de mémoire](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
-|**Profilage de services**|-   [Collecte de données de mémoire .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
+|**Profiler à l’aide de la méthode d’échantillonnage**|-   [Collecter des statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
+|**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
+|**Profiler le conflit des ressources et l’activité des threads**|-   [Collecter des données concurrentielles](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
+|**Ajout d’interactions de couche**|-   [Collecter les données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+
   
-### <a name="analyzing-net-memory-data-views-and-reports"></a>Analyse des vues et des rapports de données de mémoire .NET  
- [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)  
+### <a name="profile-net-memory-data"></a>Profiler des données de mémoire .NET  
+  
+|Tâche|Contenu connexe|  
+|----------|---------------------|  
+|**Profiler des applications ASP.NET**|-   [Collecter des données de mémoire](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
+|**Profilage de services**|-   [Collecter des données de mémoire .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
+  
+### <a name="analyze-net-memory-data-views-and-reports"></a>Analyser des vues et des rapports de données de mémoire .NET  
+ [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)  
   
 ## <a name="reference"></a>Référence  
  [Informations de référence sur les outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)

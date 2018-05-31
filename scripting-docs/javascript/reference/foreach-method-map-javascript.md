@@ -1,27 +1,29 @@
 ---
-title: "forEach, méthode (Map) (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: forEach, méthode (Map) (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9cdf0adc-77c7-4407-8ba7-ada0fb09e507
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d0ffa12b9a1995df14f4868872238cdc45b674a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 549d7d625fb4dfe88b2db69e6aa0ff66c7e90f66
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335799"
 ---
 # <a name="foreach-method-map-javascript"></a>forEach, méthode (Map) (JavaScript)
 Exécute l’action spécifiée pour chaque élément dans un mappage.  
@@ -37,7 +39,7 @@ mapObj.forEach(callbackfn[, thisArg])
  Obligatoire. Objet `Map`.  
   
  `callbackfn`  
- Obligatoire. La fonction qui `forEach` appelle une fois pour chaque élément dans le mappage. `callbackfn`accepte jusqu'à trois arguments. `forEach`appelle le `callbackfn` une fois pour chaque élément dans le mappage de fonction.  
+ Obligatoire. La fonction qui `forEach` appelle une fois pour chaque élément dans le mappage. `callbackfn` accepte jusqu'à trois arguments. `forEach` appelle le `callbackfn` une fois pour chaque élément dans le mappage de fonction.  
   
  `thisArg`  
  Facultatif. Un objet qui le `this` mot clé peut faire référence au `callbackfn` (fonction). Si `thisArg` est omis, `undefined` est utilisé en tant que valeur `this`.  
@@ -45,7 +47,7 @@ mapObj.forEach(callbackfn[, thisArg])
 ## <a name="exceptions"></a>Exceptions  
  Si l'argument `callbackfn` n'est pas un objet de fonction, une exception `TypeError` est levée.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La syntaxe de la fonction de rappel est la suivante :  
   
  `function callbackfn(value, key, mapObj)`  
@@ -68,8 +70,8 @@ m.set(2, "red");
 m.set("colors", 2);  
 m.set({x:1}, 3);  
   
-m.forEach(function (item, key, mapObj) {  
-    document.write(item.toString() + "<br />");  
+m.forEach(function (value, key, mapObj) {  
+    document.write(value.toString() + "<br />");  
 });  
   
 document.write("<br />");  

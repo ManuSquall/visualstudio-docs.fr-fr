@@ -9,17 +9,18 @@ description: Découvrez plus d’informations sur la gamme complète des avantag
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cb6e33e442a5b4d63f4c1950df382da9a439643f
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 1fc8c77e71f32e2bb559426b3447d0bbc293e785
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335929"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Utilisation du portail des abonnés- my.<span></span>visualstudio<span></span>.com
 
 Le portail Abonnements Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), est une ressource tout-en-un qui vous permet de bénéficier de la gamme complète des avantages offerts par votre abonnement Visual Studio. 
 
-Pour utiliser le portail, vous devez vous connecter avec l'identité associée à votre abonnement.  Cela peut être votre compte Microsoft (MSA) ou une adresse e-mail qui vous a été fournie par une organisation, par exemple votre employeur ou votre école.  Découvrez-en plus sur la [connexion](/visualstudio/subscriptions/signing-in).
+Pour utiliser le portail, vous devez vous connecter avec l'identité associée à votre abonnement.  Cela peut être votre compte Microsoft (MSA) ou une adresse e-mail qui vous a été fournie par une organisation, par exemple votre employeur ou votre école.  Découvrez-en plus sur la [connexion](signing-in.md).
 
 Le portail comporte six pages.  Chaque page vous permet d’accéder à différents produits ou services inclus avec votre abonnement.  Les six pages disponibles sont les suivantes : Avantages, Téléchargements, Clés de produit, Abonnements, Support et Marketplace.  
 

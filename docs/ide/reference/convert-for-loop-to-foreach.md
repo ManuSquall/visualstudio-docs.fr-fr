@@ -11,33 +11,39 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34758473bcbee8ccad7d9dff9df2f1478ca1202c
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6a200874cec92fada17c13eb45e226ce26119a60
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267671"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactorisation pour effectuer une conversion entre une boucle for et une instruction foreach
 
-Ces refactorisations s’appliquent à :
-
-- C#
+Cet article décrit les refactorisations Actions rapides qui effectuent une conversion entre deux structures de boucles. Il précise les raisons pour lesquelles vous pouvez passer d’une boucle [for](/dotnet/csharp/language-reference/keywords/for) à une instruction [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) dans votre code.
 
 ## <a name="convert-a-for-loop-to-a-foreach-statement"></a>Convertir une boucle for en instruction foreach
 
 Si vous avez une boucle [for](/dotnet/csharp/language-reference/keywords/for) dans votre code, vous pouvez utiliser cette refactorisation pour la convertir en instruction [foreach](/dotnet/csharp/language-reference/keywords/foreach-in).
 
+Cette refactorisation s’applique à :
+
+- C#
+
+> [!NOTE]
+> La refactorisation Action Rapide **Convertir en foreach** est disponible uniquement pour les boucles [for](/dotnet/csharp/language-reference/keywords/for) qui contiennent les trois composants : un initialiseur, une condition et un itérateur.
+
 ### <a name="why-convert"></a>Pourquoi convertir
 
 Les raisons pour lesquelles vous voulez convertir une boucle [for](/dotnet/csharp/language-reference/keywords/for) en instruction [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) sont notamment les suivantes :
 
-- Vous n’utilisez pas la variable du nombre d’itérations à l’intérieur de la boucle, sauf en tant qu’index pour accéder à l’élément.
+- Vous n’utilisez pas la variable de boucle locale à l’intérieur de la boucle, sauf en tant qu’index pour accéder aux éléments.
 
-- Vous souhaitez simplifier votre code et réduire la probabilité d’erreurs de logique dans l’initialiseur, la condition et les instructions d’itération.
+- Vous souhaitez simplifier votre code et réduire la probabilité d’erreurs de logique dans l’initialiseur, la condition et l’itérateur.
 
 ### <a name="how-to-use-it"></a>Utilisation
 
-1. Placez votre curseur sur la première ligne de la boucle `for`.
+1. Placez le point insertion dans le mot clé `for`.
 
 1. Appuyez sur **Ctrl**+**.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
 
@@ -47,19 +53,25 @@ Les raisons pour lesquelles vous voulez convertir une boucle [for](/dotnet/cshar
 
 ## <a name="convert-a-foreach-statement-to-a-for-loop"></a>Convertir une instruction foreach en boucle for
 
-Si vous avez une instruction [foreach](/dotnet/csharp/language-reference/keywords/for) dans votre code, vous pouvez utiliser cette refactorisation pour la convertir en boucle [for](/dotnet/csharp/language-reference/keywords/foreach-in).
+Si vous avez une instruction [foreach (C#)](/dotnet/csharp/language-reference/keywords/foreach-in) ou [For Each...Next (Visual Basic)](/dotnet/visual-basic/language-reference/statements/for-each-next-statement) dans votre code, vous pouvez utiliser cette refactorisation pour la convertir en boucle [for](/dotnet/csharp/language-reference/keywords/for).
+
+Cette refactorisation s’applique à :
+
+- C#
+
+- Visual Basic
 
 ### <a name="why-convert"></a>Pourquoi convertir
 
 Les raisons pour lesquelles vous voulez convertir une instruction [foreach](/dotnet/csharp/language-reference/keywords/for) en boucle [for](/dotnet/csharp/language-reference/keywords/foreach-in) sont notamment les suivantes :
 
-- Vous souhaitez utiliser la variable du nombre d’itérations à l’intérieur de la boucle, et pas uniquement pour accéder à l’élément.
+- Vous souhaitez utiliser la variable de boucle locale à l’intérieur de la boucle, et pas uniquement pour accéder à l’élément.
 
 - Vous [itérez au sein d’un tableau multidimensionnel ](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays) et souhaitez davantage de contrôle sur les éléments du tableau.
 
 ### <a name="how-to-use-it"></a>Utilisation
 
-1. Placez votre curseur sur la première ligne de l’instruction `foreach`.
+1. Placez le point insertion dans le mot clé `foreach` ou `For Each`.
 
 1. Appuyez sur **Ctrl**+**.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
 
@@ -68,6 +80,9 @@ Les raisons pour lesquelles vous voulez convertir une instruction [foreach](/dot
 1. Sélectionnez **Convertir en 'for'**. Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer**.
 
 1. Étant donné que la refactorisation introduit une nouvelle variable du nombre d’itérations, la zone **Renommer** s’affiche dans l’angle supérieur droit de l’éditeur. Si vous souhaitez choisir un autre nom pour la variable, tapez-le et appuyez sur **Entrée** ou sélectionnez **Appliquer** dans la zone **Renommer**. Si vous ne souhaitez pas choisir un nouveau nom, appuyez sur **Échap** ou sélectionnez **Appliquer** pour faire disparaître la zone **Renommer**.
+
+> [!NOTE]
+> Pour C#, le code généré par ces refactorisations utilise un type explicite ou [var](/dotnet/csharp/language-reference/keywords/var) pour le type des éléments dans la collection. Le type du code généré, explicite ou implicite, dépend des paramètres de style de code qui se trouvent dans la portée. Ces paramètres de style de code particuliers sont configurés au niveau de la machine sous **Outils** > **Options** > **Éditeur de texte** > **C#** > **Style de code** > **Général** > **\'Préférences var**, ou au niveau de la solution dans un fichier [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types). Si vous modifiez un paramètre de style de code dans **Options**, rouvrez le fichier de code pour appliquer les modifications.
 
 ## <a name="see-also"></a>Voir aussi
 

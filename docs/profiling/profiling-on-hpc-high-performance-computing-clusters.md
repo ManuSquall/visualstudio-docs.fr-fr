@@ -21,15 +21,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4542289e0d9dceeeadf972db714148d4e1bec4d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267843"
 ---
-# <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilage sur des clusters HPC (High Performance Computing)
+# <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profiler sur des clusters HPC (High Performance Computing)
 
-Vous pouvez effectuer un profilage sur des nœuds de calcul de clusters HPC Microsoft Windows suivant la méthode par échantillonnage des Outils de profilage de Visual Studio. Pour plus d’informations sur HPC, consultez [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) sur le site web de Microsoft.
+Vous pouvez effectuer un profilage sur des nœuds de calcul de clusters HPC Microsoft Windows suivant la méthode par échantillonnage des Outils de profilage de Visual Studio. Pour plus d’informations sur HPC, consultez [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) sur le site web de Microsoft.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -57,7 +58,7 @@ Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les
 |*%FxPath%*|Chemin du programme d’installation de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. Sur le support d’installation de Visual Studio, le chemin d’accès est le suivant : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe.|
 |*%ProfilerPath%*|Chemin de la version autonome du programme d’installation des outils de profilage. Sur le support d’installation de Visual Studio, le chemin d’accès est le suivant : Standalone Profiler\x64\vs_profiler.exe.|
 
-## <a name="profiling-on-an-hpc-compute-node"></a>Profilage sur un nœud de calcul HPC
+## <a name="profile-on-an-hpc-compute-node"></a>Profiler sur un nœud de calcul HPC
 
 Pour configurer une session de profilage, spécifiez le cluster HPC et les informations cibles à l’aide de l’Assistant Performance HPC. Vous pouvez définir des options supplémentaires dans les pages de propriétés de session de performance. Les outils de profilage déploient automatiquement les fichiers binaires cibles nécessaires. Ils démarrent également le profileur et l’application HPC.
 
@@ -105,7 +106,7 @@ Pour configurer une session de profilage, spécifiez le cluster HPC et les infor
 
 10. Cliquez sur **Terminer**.
 
-## <a name="setting-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Définition des propriétés de profilage HPC à l’aide des pages de propriétés d’une session de performance
+## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Définir des propriétés de profilage HPC à l’aide des pages de propriétés d’une session de performance
 
 Pour modifier les propriétés de session de performance définies dans l’Assistant de profilage HPC, utilisez la page Propriétés de lancement HPC de la page de propriétés de session de performance. Vous définissez des options supplémentaires dans la page Propriétés avancées HPC.
 

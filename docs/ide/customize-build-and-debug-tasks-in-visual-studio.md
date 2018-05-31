@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859a3687e2dde0d5bedb9f4084bb83b844ca28e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c4b915f632179ff118247e8c046ce980a824ea2
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448085"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personnaliser des tâches de génération et de débogage pour le développement « Ouvrir le dossier »
 
@@ -315,4 +316,4 @@ Les paramètres lus à partir du fichier *.gitignore* sont appliqués à son ré
 - [Projets Ouvrir un dossier pour C++](/cpp/ide/non-msbuild-projects)
 - [Projets CMake dans C++](/cpp/ide/cmake-tools-for-visual-cpp)
 - [Référence NMAKE](/cpp/build/nmake-reference)
-- [Écriture de code dans l’éditeur de code et de texte](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)

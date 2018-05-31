@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446541"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : profilage de la ligne de commande à l’aide de l’échantillonnage
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : profilage de la ligne de commande à l’aide de l’échantillonnage
 
 Cette procédure pas à pas montre comment profiler une application à l’aide d’outils en ligne de commande et de l’échantillonnage pour identifier les problèmes de performances.
 
@@ -100,8 +101,8 @@ L’échantillonnage est une méthode de profilage par laquelle un processus sp�
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vue d’ensemble des sessions de performances](../profiling/performance-session-overview.md)  
-[Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)  
+[Vue d’ensemble de la session de performance](../profiling/performance-session-overview.md)  
+[Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)  
 [VSPerfCmd](../profiling/vsperfcmd.md)  
-[Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)  
+[Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)  
 [Vues du rapport des performances](../profiling/performance-report-views.md)

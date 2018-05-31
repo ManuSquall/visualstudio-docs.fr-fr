@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e82ceb7879fcfca709ff6e94de81ae76ef908e07
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9c4ef7fa41cd9d4cdd0bfeda7d7745ad16d47536
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265966"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analyser l’utilisation de mémoire JavaScript dans les applications UWP
 L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous aider à comprendre l’utilisation de la mémoire et à rechercher les fuites de mémoire dans vos applications UWP générées pour Windows en JavaScript. Les applications dédiées aux applications Windows universelles sont prises en charge.
@@ -50,7 +51,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
   
 2.  Si vous exécutez l’application à partir de Visual Studio, dans la barre d’outils **Standard**, dans la liste **Démarrer le débogage**, choisissez la cible de débogage de votre projet : **Ordinateur local** ou **Appareil**.  
   
-3.  Dans la barre de menus, choisissez **Déboguer****Profileur de performances...**  
+3.  Dans la barre de menus, choisissez **Déboguer** > **Profileur de performances**.  
   
      Par défaut, le projet de démarrage actif est analysé. Si vous souhaitez modifier la cible d'analyse, sélectionnez **Modifier la cible**.  
   

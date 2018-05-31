@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448920"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procédure pas à pas : utilisation des API du profileur
 La procédure pas à pas utilise une application C# pour montrer comment utiliser les API des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous utilisez les API du profileur pour limiter la quantité de données collectées pendant le profilage par instrumentation.  
@@ -26,7 +27,7 @@ La procédure pas à pas utilise une application C# pour montrer comment utilise
   
  En règle générale, vous commencez par analyser les performances d’une application avec un profilage par échantillonnage. Si le profilage par échantillonnage ne fournit pas d’informations permettant de localiser un goulot d’étranglement, le profilage par instrumentation peut fournir un niveau de détail plus élevé. Le profilage par instrumentation est très pratique pour examiner l’interaction des threads.  
   
- Cependant, un niveau de détail plus élevé signifie que plus de données sont collectées. Vous constaterez peut-être que le profilage par instrumentation crée des fichiers de données volumineux. En outre, l’instrumentation est plus susceptible d’avoir un impact sur les performances de l’application. Pour plus d’informations, consultez [Présentation des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md) et [Présentation des valeurs des données d’échantillonnage](../profiling/understanding-sampling-data-values.md)  
+ Cependant, un niveau de détail plus élevé signifie que plus de données sont collectées. Vous constaterez peut-être que le profilage par instrumentation crée des fichiers de données volumineux. En outre, l’instrumentation est plus susceptible d’avoir un impact sur les performances de l’application. Pour plus d’informations, consultez [Présenter les valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md) et [Présenter les valeurs des données d’échantillonnage](../profiling/understanding-sampling-data-values.md)  
   
  Le profileur Visual Studio vous permet de limiter la collecte des données. Cette procédure pas à pas illustre la façon de limiter la collecte de données en utilisant les API du profileur. Le profileur Visual Studio fournit une API pour contrôler la collecte de données depuis une application.  
   
@@ -51,7 +52,7 @@ DataCollection.CurrentId);
   
  Vous pouvez désactiver la collecte de données sur la ligne de commande sans utiliser un appel d’API. Les étapes suivantes supposent que votre environnement de génération de ligne de commande est configuré pour exécuter les outils de profilage et vos outils de développement. Ceci inclut les paramètres nécessaires pour VSInstr et VSPerfCmd. Consultez Outils de profilage en ligne de commande.  
   
-## <a name="limiting-data-collection-using-profiler-apis"></a>Limitation de la collecte de données avec les API du profileur  
+## <a name="limit-data-collection-using-profiler-apis"></a>Limiter la collecte de données avec les API du profileur  
   
 #### <a name="to-create-the-code-to-profile"></a>Pour créer le code à profiler  
   

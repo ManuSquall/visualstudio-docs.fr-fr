@@ -9,11 +9,12 @@ description: Configuration des administrateurs pour les abonnements cloud
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3c48c89a729f7eeb26680163c997669f3976e417
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 0ff2f63bbc253d459afea504790efee90c7e7e9f
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335682"
 ---
 # <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>Configuration des administrateurs pour les abonnements cloud Visual Studio
 
@@ -46,5 +47,5 @@ L’abonné que vous avez désigné s’affiche maintenant au centre de la page 
 Le nouvel administrateur peut maintenant se connecter au [portail de gestion](https://manage.visualstudio.com), sélectionner le même abonnement Azure qui a été utilisé pour acheter les abonnements cloud à partir de la liste dans l’angle supérieur gauche de la page et commencer à gérer ces abonnements. 
 
 
-Pour plus d’informations sur les abonnements cloud Visual Studio, consultez la [vue d’ensemble](/vscloud-overview/) sous Achat d’abonnements cloud. Pour acheter des abonnements cloud Visual Studio, accédez à Visual Studio Marketplace à l’adresse [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription). 
+Pour plus d’informations sur les abonnements cloud Visual Studio, consultez la [vue d’ensemble](vscloud-overview.md) sous Achat d’abonnements cloud. Pour acheter des abonnements cloud Visual Studio, accédez à Visual Studio Marketplace à l’adresse [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription). 
 
