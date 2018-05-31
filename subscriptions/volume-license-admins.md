@@ -9,11 +9,12 @@ description: Découvrez comment les administrateurs des abonnements peuvent acc�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 mearchscope: VS Subscription
-ms.openlocfilehash: 33ed7f26e146efffb66b7fabde65dc45276d085d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e403e1d8282b3f0a18058105bca0150938a956cf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335890"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Accès au portail et gestion des administrateurs - pour les abonnements acquis via une licence en volume
 
@@ -30,13 +31,13 @@ Si vous avez déjà été configuré comme administrateur, vous pouvez accéder 
 
 **Intégration de votre organisation**
 
-Quand votre organisation est prête à être intégrée au portail d’administration des abonnements Visual Studio, un e-mail est envoyé au contact principal et au contact pour les notifications pour les inviter à effectuer le processus d’intégration. Les étapes de l’intégration au nouveau portail sont décrites ci-dessous. Si vous voulez voir tout le processus, regardez cette vidéo d’intégration de l’administrateur ou consultez les sections suivantes de cette documentation. 
+Quand votre organisation est prête à être intégrée au portail d’administration des abonnements Visual Studio, un e-mail est envoyé au contact principal et au destinataire des avis pour les inviter à effectuer le processus d’intégration. Les étapes de l’intégration au nouveau portail sont décrites ci-dessous. Si vous voulez voir tout le processus, regardez cette vidéo d’intégration de l’administrateur ou consultez les sections suivantes de cette documentation. 
 
 1.  Recherche de votre PCN et connexion
 
-     a. Dans l’e-mail, le contact principal et le contact pour les notifications sont indiqués avec un lien unique et avec les trois derniers chiffres de leur numéro de client public (PCN).  (Si les contacts principaux ou les contacts pour les notifications reçoivent plusieurs e-mails, cela signifie qu’ils ont plusieurs numéros PCN. Ils doivent alors effectuer le processus en utilisant le lien unique correspondant au numéro PCN référencé dans chaque e-mail.)
+     a. Dans l’e-mail, le contact principal et le destinataire des avis sont indiqués avec un lien unique et avec les trois derniers chiffres de leur numéro de client public (PCN).  (Si les contacts principaux ou les contacts pour les notifications reçoivent plusieurs e-mails, cela signifie qu’ils ont plusieurs numéros PCN. Ils doivent alors effectuer le processus en utilisant le lien unique correspondant au numéro PCN référencé dans chaque e-mail.)
 
-     b. Pour obtenir le numéro PCN complet, le contact principal devra se connecter au Centre VLSC. [Instructions pour la localisation du PCN](/find-pcn/) 
+     b. Pour obtenir le numéro PCN complet, le contact principal devra se connecter au Centre VLSC. [Instructions pour la localisation du PCN](find-pcn.md) 
 
      c. Une fois qu’ils ont trouvé leur PCN, les contacts doivent sélectionner leur lien unique qui les invite à se connecter. Ils peuvent se connecter à l’aide d’un compte professionnel ou scolaire si votre organisation est sur AAD ou avec un compte Microsoft (MSA) si votre organisation n’est pas sur AAD. 
 
@@ -46,6 +47,6 @@ Quand votre organisation est prête à être intégrée au portail d’administr
 
 3.  Accès au nouveau portail de gestion des abonnements. Après la migration de votre organisation, des e-mails sont envoyés aux nouveaux super administrateurs et administrateurs pour les inviter à accéder au nouveau portail et à commencer la gestion des abonnements.  
 
-Si vous devez être ajouté au nouveau portail d’administration des abonnements Visual Studio, mais que vous ne savez pas qui est votre contact principal ou contact pour les notifications, connectez-vous à [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) pour rechercher cette information. Consultez la rubrique [Rechercher votre contact principal](/find-primary-contact/) pour savoir comment localiser votre contact principal ou votre contact pour les notifications dans le Centre VLSC.
+Si vous devez être ajouté au nouveau portail d’administration des abonnements Visual Studio, mais que vous ne savez pas qui est votre contact principal ou destinataire des avis, connectez-vous à [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) pour rechercher cette information. Consultez la rubrique [Rechercher votre contact principal](find-primary-contact.md) pour savoir comment localiser votre contact principal ou votre contact pour les notifications dans le Centre VLSC.
 
 Si vous avez déjà été configuré comme administrateur, vous pouvez accéder directement au portail d’administration des abonnements Visual Studio à l’adresse [https://manage.visualstudio.com](https://manage.visualstudio.com). 

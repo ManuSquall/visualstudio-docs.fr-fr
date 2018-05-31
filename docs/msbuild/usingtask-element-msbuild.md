@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95e09639e9236b64f9c18c9bd90e6850ee13d86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 486ca90ac2a8a4b3b289b0896e2cd81239502558
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269139"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask, élément (MSBuild)
 Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-msbuild.md) sur l’assembly qui contient l’implémentation de la tâche.  
@@ -68,10 +69,10 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 |[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 
 ## <a name="remarks"></a>Notes  
- Les variables d'environnement, les propriétés de ligne de commande et les propriétés au niveau du projet peuvent être référencées n'importe où dans l'élément `UsingTask` s'il apparaît dans le fichier projet, explicitement ou via un fichier projet importé. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
+ Les variables d'environnement, propriétés de ligne de commande, propriétés au niveau du projet et éléments au niveau du projet peuvent être référencés n'importe où dans les éléments `UsingTask` inclus dans le fichier projet, directement ou via un fichier projet importé. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
 
 > [!NOTE]
->  Les propriétés au niveau du projet n'ont aucune signification si l'élément `UsingTask` provient de l'un des fichiers .tasks inscrits globalement auprès du moteur MSBuild. Les propriétés au niveau du projet ne sont pas globales pour MSBuild.  
+>  Les propriétés et éléments au niveau du projet n'ont aucune signification si l'élément `UsingTask` provient de l'un des fichiers .tasks inscrits globalement auprès du moteur MSBuild. Les valeurs au niveau du projet ne sont pas globales pour MSBuild.  
 
  Dans MSBuild 4.0, l’utilisation de tâches peut être chargée à partir de fichiers .overridetask.  
 

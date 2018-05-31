@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d1b8a01671ed37d8e83ca97218a3666cad40c60b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264454"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analyser la consommation des ressources et l’activité des threads de l’interface utilisateur (XAML)
 Utilisez le profileur **Chronologie de l'application** pour rechercher et corriger les problèmes de performances liés à l'interaction d'application dans les applications XAML. Cet outil vous aide à améliorer les performances des applications XAML en fournissant une vue détaillée de la consommation des ressources des applications. Vous pouvez analyser le temps passé par votre application à préparer les trames de l'interface utilisateur (mise en page et rendu), à traiter les demandes du réseau et des disques, et dans les scénarios comme le démarrage de l'application, le chargement des pages et le redimensionnement des fenêtres.  
   
- La **Chronologie de l’application** fait partie des outils que vous pouvez démarrer avec la commande **Déboguer -> Profileur de performances...**.  
+ La **Chronologie de l’application** fait partie des outils que vous pouvez démarrer avec la commande **Déboguer** > **Profileur de performances**.  
   
  Cet outil remplace l'outil **Réactivité de l'interface utilisateur XAML** , qui faisait partie de l'ensemble d'outils de diagnostic pour Visual Studio 2013.  
   
@@ -46,7 +47,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
   
 1.  Ouvrez votre application XAML.  
   
-2.  Cliquez sur **Déboguer -> Profileur de performances...**. Vous devez voir une liste des outils de profilage dans la fenêtre .diagsession.  
+2.  Cliquez sur **Déboguer -> Profileur de performances**. Vous devez voir une liste des outils de profilage dans la fenêtre .diagsession.  
   
 3.  Sélectionnez **Chronologie de l'application** , puis cliquez sur **Démarrer** dans le bas de la fenêtre.  
   

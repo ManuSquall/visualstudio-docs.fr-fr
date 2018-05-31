@@ -9,11 +9,12 @@ description: Trouver une liste de téléchargements de logiciels inclus dans vot
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c59565e903947df54ec0ae593421ee0cc447e8c5
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 7958ccedb28a14763264cd590e83d5e8e7fbbcdf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335838"
 ---
 # <a name="how-do-i-know-what-software-is-available-for-download"></a>Comment obtenir la liste des logiciels disponibles en téléchargement ?
 
@@ -21,7 +22,7 @@ La [liste des téléchargements de logiciels](http://download.microsoft.com/down
 
 Si vous disposez déjà d’un abonnement Visual Studio : 
 1. Accédez à [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
-2. Connectez-vous à votre abonnement.  (Pour obtenir de l’aide, [connectez-vous](/visualstudio/subscriptions/signing-in).)
+2. Connectez-vous à votre abonnement.  (Pour obtenir de l’aide, [connectez-vous](signing-in.md).)
 3. Une fois correctement connecté, vous pouvez rechercher les téléchargements souhaités.  Vous pouvez également voir une liste des téléchargements les plus populaires, qui peuvent être triés selon plusieurs critères. 
 
 Pour rechercher rapidement des produits, utilisez les fonctions de recherche en haut de la page ou cliquez sur les différents types de produits à gauche.

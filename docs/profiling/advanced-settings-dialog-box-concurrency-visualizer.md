@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0cde5d1ddd5dabfd42a6a7d31284736e24fa302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262774"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Paramètres avancés, boîte de dialogue (visualiseur concurrentiel)
 La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous permet de contrôler la façon dont les traces sont collectées.  La boîte de dialogue comprend des onglets pour les symboles, « Uniquement mon code », la mise en mémoire tampon, le filtrage, les événements du CLR, les marqueurs, les fournisseurs et les fichiers.  
@@ -65,7 +66,7 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
   
  Vous pouvez utiliser la liste de niveaux d’importance pour filtrer les événements qui ont une importance ou un niveau ETW inférieur à la valeur spécifiée.  
   
-### <a name="configuring-an-existing-provider"></a>Configuration d’un fournisseur existant  
+### <a name="configure-an-existing-provider"></a>Configurer un fournisseur existant  
  Pour modifier les paramètres associés à un fournisseur existant, sélectionnez-le dans la liste, puis choisissez le bouton **Modifier le fournisseur**.  Vous pouvez modifier le nom, le GUID et les paramètres de filtrage.  
   
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Exclure les données de marqueur des rapports du visualiseur concurrentiel  

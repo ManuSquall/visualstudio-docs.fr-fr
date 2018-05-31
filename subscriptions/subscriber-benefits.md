@@ -9,11 +9,12 @@ description: En savoir plus sur les avantages inclus dans votre abonnement Visua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 482bd02657687152fbda6d2aea927008ab4b3e49
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335591"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Avantages inclus dans votre abonnement Visual Studio
 
@@ -22,7 +23,7 @@ Les abonnements Visual Studio offrent l’ensemble le plus complet de ressources
 Les avantages sont répartis en trois catégories :
 
 ## <a name="tools"></a>Outils
-La catégorie Outils permet d’accéder à un large éventail d’avantages, y compris les avantages phares tels que [IDE Visual Studio](/vs-ide-benefit/), [Visual Studio Team Services](/vs-vsts/) et [Azure](/vs-azure/).  Selon votre niveau d’abonnement, vous pourrez également consulter des comptes de développeur Windows et Office 365, Visual Studio App Center et les avantages de partenaires, tels que WhiteSource Bolt et ModernRequirements.
+La catégorie Outils permet d’accéder à un large éventail d’avantages, y compris les avantages phares tels que [IDE Visual Studio](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md) et [Azure](vs-azure.md).  Selon votre niveau d’abonnement, vous pourrez également consulter des comptes de développeur Windows et Office 365, Visual Studio App Center et les avantages de partenaires, tels que WhiteSource Bolt et ModernRequirements.
 
 ## <a name="professional-development"></a>Développement professionnel
 Pour améliorer vos compétences et vous tenir informé des dernières technologies en permanence, nous fournissons l’accès à certaines des meilleures formations en ligne disponibles des sociétés majeures du secteur. Voici quelques exemples de contenu excellent disponible :

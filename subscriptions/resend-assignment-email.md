@@ -9,11 +9,12 @@ description: Découvrez comment renvoyer l’attribution des abonnements à des 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ee41426aa845f8a6c7ae2b414bec7bc3a814bcfe
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2edabf44637672f45241299703cb3d3f88348b6c
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335955"
 ---
 # <a name="how-to-resend-subscription-assignment-emails-in-the-visual-studio-subscription-management-portal"></a>Comment renvoyer des e-mails d’attribution des abonnements dans le portail de gestion des abonnements Visual Studio
 
@@ -21,7 +22,7 @@ ms.lasthandoff: 04/27/2018
 Le processus de renvoi des e-mails d’affectation à partir du portail manage.visualstudio.com est très simple :
 
 1. Visitez le portail [manage.visualstudio.com](https://manage.visualstudio.com) et connectez-vous. 
-2. Utilisez l’onglet **Filtre** pour rechercher l’abonné à qui vous voulez renvoyer l’e-mail d’affectation. (Pour plus d’informations sur le filtrage, consultez [Rechercher un abonnement](/visualstudio/subscriptions/search-license).)
+2. Utilisez l’onglet **Filtre** pour rechercher l’abonné à qui vous voulez renvoyer l’e-mail d’affectation. (Pour plus d’informations sur le filtrage, consultez [Rechercher un abonnement](search-license.md).)
 3. Cliquez sur le ou les abonnés.  Vous pouvez utiliser Ctrl + clic ou MAJ + clic pour sélectionner plusieurs abonnés.
 4. Cliquez sur **Renvoyer** en haut des résultats de recherche.  
 
