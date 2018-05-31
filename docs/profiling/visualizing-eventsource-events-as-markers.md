@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb8959aa18741c61e4a6719641645eb9be9ea70
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449024"
 ---
-# <a name="visualizing-eventsource-events-as-markers"></a>Visualisation des événements EventSource comme marqueurs
+# <a name="visualize-eventsource-events-as-markers"></a>Visualiser des événements EventSource en tant que marqueurs
 Le visualiseur concurrentiel peut afficher des événements EventSource comme marqueurs, dont vous pouvez contrôler le mode d’affichage. Pour afficher les marqueurs EventSource, inscrivez le GUID du fournisseur ETW à l’aide de la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Le visualiseur concurrentiel a des conventions par défaut pour représenter les événements EventSource comme [marqueurs d’indicateurs](../profiling/flag-markers.md), [marqueurs d’intervalles](../profiling/span-markers.md) et [marqueurs de messages](../profiling/message-markers.md). Vous pouvez personnaliser l’affichage des événements EventSource en ajoutant des champs personnalisés aux événements. Pour plus d’informations sur les marqueurs, consultez [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md). Pour plus d’informations sur les événements EventSource, consultez <xref:System.Diagnostics.Tracing>.  
   
 ## <a name="default-visualization-of-eventsource-events"></a>Visualisation par défaut des événements EventSource  
@@ -52,7 +53,7 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
 ### <a name="text"></a>Texte  
  Si un message de texte de format de type printf a été défini pour l’événement, il est affiché en tant que description du marqueur. Sinon, la description est le nom de l’événement et la valeur de chaque champ de charge utile.  
   
-## <a name="customizing-visualization-of-eventsource-events"></a>Personnalisation de la visualisation des événements EventSource  
+## <a name="customize-visualization-of-eventsource-events"></a>Personnaliser la visualisation des événements EventSource  
  Vous pouvez personnaliser l’affichage des événements EventSource en ajoutant les champs appropriés à l’événement, comme décrit dans les sections suivantes.  
   
 ### <a name="marker-type"></a>Type de marqueur  

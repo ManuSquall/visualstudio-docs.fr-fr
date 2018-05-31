@@ -1,0 +1,284 @@
+- name: Extensibilité du débogueur de Visual Studio
+  href: visual-studio-debugger-extensibility.md
+- name: Choix d’une stratégie de mise en œuvre du moteur de débogage
+  href: choosing-a-debug-engine-implementation-strategy.md
+- name: Exemples de débogage Visual Studio
+  href: visual-studio-debugging-samples.md
+- name: Création d’un moteur de débogage personnalisé
+  href: creating-a-custom-debug-engine.md
+  items:
+    - name: Inscription d’un moteur de débogage personnalisé
+      href: registering-a-custom-debug-engine.md
+    - name: Activation d’un programme à déboguer
+      href: enabling-a-program-to-be-debugged.md
+      items:
+        - name: Obtention d’un port
+          href: getting-a-port.md
+        - name: Inscription du programme
+          href: registering-the-program.md
+        - name: Attachement au programme
+          href: attaching-to-the-program.md
+        - name: Pièce jointe basée sur le lancement
+          href: launch-based-attachment.md
+        - name: Envoi des événements nécessaires
+          href: sending-the-required-events.md
+    - name: Contrôle de l’exécution et évaluation de l’état
+      href: execution-control-and-state-evaluation.md
+      items:
+        - name: Contrôle du programme
+          href: program-control.md
+        - name: Méthodes liées au point d’arrêt
+          href: breakpoint-related-methods.md
+        - name: Évaluation de la pile des appels
+          href: call-stack-evaluation.md
+        - name: Évaluation d’expression (SDK de débogage Visual Studio)
+          href: expression-evaluation-visual-studio-debugging-sdk.md
+        - name: Événements de contrôle
+          href: control-events.md
+    - name: Envoi d’événements
+      href: sending-events.md
+      items:
+        - name: Sources d’événements (SDK Visual Studio)
+          href: event-sources-visual-studio-sdk.md
+        - name: Types d’événements pris en charge
+          href: supported-event-types.md
+        - name: Descriptions des événements
+          href: event-descriptions.md
+    - name: Arrêt et détachement
+      href: termination-and-detaching.md
+    - name: Événements d’appel du débogueur
+      href: calling-debugger-events.md
+      items:
+        - name: Attachement et détachement d’un programme
+          href: attaching-and-detaching-to-a-program.md
+        - name: Lancement du débogueur
+          href: launching-the-debugger.md
+        - name: Arrêt d’un programme
+          href: terminating-a-program.md
+        - name: Création d’un point d’arrêt
+          href: creating-a-breakpoint.md
+        - name: Quand un point d’arrêt est lié ou devient indépendant
+          href: when-a-breakpoint-binds-or-becomes-unbound.md
+        - name: Erreurs de point d’arrêt
+          href: breakpoint-errors.md
+        - name: Atteinte d’un point d’arrêt
+          href: hitting-a-breakpoint.md
+        - name: Suppression d’un point d’arrêt
+          href: deleting-a-breakpoint.md
+        - name: Entrée dans le mode arrêt
+          href: entering-break-mode.md
+        - name: Exécution pas à pas du mode arrêt
+          href: stepping-in-break-mode.md
+        - name: Évaluation d’expression dans le mode arrêt
+          href: expression-evaluation-in-break-mode.md
+        - name: Gestion des exceptions (SDK Visual Studio)
+          href: exception-handling-visual-studio-sdk.md
+    - name: Guide pratique pour déboguer un moteur de débogage personnalisé
+      href: how-to-debug-a-custom-debug-engine.md
+- name: Bien démarrer avec l’extensibilité du débogueur
+  href: getting-started-with-debugger-extensibility.md
+  items:
+    - name: Feuille de route pour l’extension du débogueur
+      href: roadmap-for-extending-the-debugger.md
+    - name: Composants du débogueur
+      href: debugger-components.md
+      items:
+        - name: Déboguer le package
+          href: debug-package.md
+        - name: Gestionnaire de débogage de processus
+          href: process-debug-manager.md
+        - name: Gestionnaire du débogage de session
+          href: session-debug-manager.md
+        - name: Moteur de débogage
+          href: debug-engine.md
+        - name: Modes de fonctionnement
+          href: operational-modes.md
+        - name: Évaluateur d’expression
+          href: expression-evaluator.md
+        - name: Fournisseur de symboles
+          href: symbol-provider.md
+        - name: Visualiseur de type et visionneuse personnalisée
+          href: type-visualizer-and-custom-viewer.md
+    - name: Concepts du débogueur
+      href: debugger-concepts.md
+      items:
+        - name: Session de débogage
+          href: debug-session.md
+        - name: Serveurs (SDK Visual Studio)
+          href: servers-visual-studio-sdk.md
+        - name: Fournisseurs de ports
+          href: port-suppliers.md
+        - name: Ports
+          href: ports.md
+        - name: Processus
+          href: processes.md
+        - name: Nœuds de programme
+          href: program-nodes.md
+        - name: Programs
+          href: programs.md
+        - name: Threads
+          href: threads.md
+        - name: Frames de pile
+          href: stack-frames.md
+        - name: Modules
+          href: modules.md
+        - name: Points d’arrêt (SDK Visual Studio)
+          href: breakpoints-visual-studio-sdk.md
+    - name: Contextes du débogueur
+      href: debugger-contexts.md
+      items:
+        - name: Contexte de code
+          href: code-context.md
+        - name: Position du document
+          href: document-position.md
+        - name: Contexte de document
+          href: document-context.md
+        - name: Contexte d’évaluation d’expression
+          href: expression-evaluation-context.md
+    - name: Tâches de débogage
+      href: debugging-tasks.md
+      items:
+        - name: Problèmes de sécurité
+          href: security-issues.md
+        - name: Lancement d’un programme
+          href: launching-a-program.md
+          items:
+            - name: Notification du port
+              href: notifying-the-port.md
+            - name: Attachement après un lancement
+              href: attaching-after-a-launch.md
+        - name: Attachement direct à un programme
+          href: attaching-directly-to-a-program.md
+        - name: Envoi d’événements de démarrage après un lancement
+          href: sending-startup-events-after-a-launch.md
+        - name: Contrôle de l’exécution
+          href: control-of-execution.md
+        - name: Liaison de points d’arrêt
+          href: binding-breakpoints.md
+        - name: Évaluation des expressions
+          href: evaluating-expressions.md
+        - name: Visualisation et affichage des données
+          href: visualizing-and-viewing-data.md
+- name: Écriture d’un évaluateur d’expression Common Language Runtime
+  href: writing-a-common-language-runtime-expression-evaluator.md
+  items:
+    - name: Common Language Runtime et évaluateur d’expression
+      href: common-language-runtime-and-expression-evaluation.md
+    - name: Architecture de l’évaluateur d’expression
+      href: expression-evaluator-architecture.md
+      items:
+        - name: Contexte d’évaluation
+          href: evaluation-context.md
+        - name: Interfaces d’évaluateur d’expression clé
+          href: key-expression-evaluator-interfaces.md
+    - name: Inscription d’un évaluateur d’expression
+      href: registering-an-expression-evaluator.md
+    - name: Implémentation d’un évaluateur d’expression
+      href: implementing-an-expression-evaluator.md
+      items:
+        - name: Stratégie d’implémentation d’un évaluateur d’expression
+          href: expression-evaluator-implementation-strategy.md
+    - name: Affichage des variables locales
+      href: displaying-locals.md
+      items:
+        - name: Exemple d’implémentation de variables locales
+          href: sample-implementation-of-locals.md
+          items:
+            - name: Implémentation de GetMethodProperty
+              href: implementing-getmethodproperty.md
+            - name: Énumération de variables locales
+              href: enumerating-locals.md
+            - name: Obtention des propriétés locales
+              href: getting-local-properties.md
+            - name: Obtention des valeurs locales
+              href: getting-local-values.md
+            - name: Évaluation des variables locales
+              href: evaluating-locals.md
+    - name: Évaluation d’une expression de fenêtre Espion
+      href: evaluating-a-watch-window-expression.md
+      items:
+        - name: Exemple d’implémentation de l’évaluation d’expression
+          href: sample-implementation-of-expression-evaluation.md
+        - name: Évaluation d’une expression espionne
+          href: evaluating-a-watch-expression.md
+    - name: Modification de la valeur d’une variable locale
+      href: changing-the-value-of-a-local.md
+      items:
+        - name: Exemple d’implémentation de la modification de valeurs
+          href: sample-implementation-of-changing-values.md
+    - name: Implémentation de visualiseurs de type et de visionneuses personnalisées
+      href: implementing-type-visualizers-and-custom-viewers.md
+- name: Implémentation d’un fournisseur de ports
+  href: implementing-a-port-supplier.md
+  items:
+    - name: Implémentation et inscription d’un fournisseur de ports
+      href: implementing-and-registering-a-port-supplier.md
+    - name: Interfaces de fournisseur de ports nécessaires
+      href: required-port-supplier-interfaces.md
+- name: Valeurs internes d’extension parallèle pour .NET Framework
+  href: parallel-extension-internals-for-the-dotnet-framework.md
+  items:
+    - name: Classe de tâche - Membres internes
+      href: task-class-internal-members.md
+      items:
+        - name: Champ m_action
+          href: m-action-field.md
+        - name: Champ m_contingentProperties
+          href: m-contingentproperties-field.md
+        - name: Champ m_parent
+          href: m-parent-field.md
+        - name: Champ m_stateFlags
+          href: m-stateflags-field.md
+        - name: Champ m_stateObject
+          href: m-stateobject-field.md
+        - name: Champ m_taskId
+          href: m-taskid-field.md
+        - name: Champ s_taskIdCounter
+          href: s-taskidcounter-field.md
+        - name: Champ TASK_STATE_CANCELED
+          href: task-state-canceled-field.md
+        - name: Champ TASK_STATE_EXECUTED
+          href: task-state-executed-field.md
+        - name: Champ TASK_STATE_FAULTED
+          href: task-state-faulted-field.md
+        - name: Champ TASK_STATE_RAN_TO_COMPLETION
+          href: task-state-ran-to-completion-field.md
+        - name: Champ TASK_STATE_WAITING_ON_CHILDREN
+          href: task-state-waiting-on-children-field.md
+        - name: Méthode SetNotificationForWaitCompletion
+          href: setnotificationforwaitcompletion-method.md
+        - name: Méthode NotifyDebuggerOfWaitCompletion
+          href: notifydebuggerofwaitcompletion-method.md
+    - name: Classe TaskScheduler - Membres internes
+      href: taskscheduler-class-internal-members.md
+      items:
+        - name: Méthode GetScheduledTasksForDebugger
+          href: getscheduledtasksfordebugger-method.md
+        - name: Méthode GetTaskSchedulersForDebugger
+          href: gettaskschedulersfordebugger-method.md
+    - name: Classe ContingentProperties - Membres internes
+      href: contingentproperties-class-internal-members.md
+      items:
+        - name: Champ m_children
+          href: m-children-field.md
+    - name: Structure AsyncTaskMethodBuilder - Membres internes
+      href: asynctaskmethodbuilder-structure-internal-members.md
+      items:
+        - name: Propriété AsyncTaskMethodBuilder.ObjectIdForDebugger
+          href: asynctaskmethodbuilder-objectidfordebugger-property.md
+        - name: Champ AsyncTaskMethodBuilder.m_builder
+          href: asynctaskmethodbuilder-m-builder-field.md
+    - name: Structure AsyncTaskMethodBuilder<TResult> - Membres internes
+      href: asynctaskmethodbuilder-tresult-structure-internal-members.md
+      items:
+        - name: Propriété AsyncTaskMethodBuilder<TResult>.ObjectIdForDebugger
+          href: asynctaskmethodbuilder-tresult-objectidfordebugger-property.md
+        - name: Champ AsyncTaskMethodBuilder<TResult>.m_task
+          href: asynctaskmethodbuilder-tresult-m-task-field.md
+    - name: Structure AsyncVoidMethodBuilder - Membres internes
+      href: asyncvoidmethodbuilder-structure-internal-members.md
+      items:
+        - name: Propriété AsyncVoidMethodBuilder.ObjectIdForDebugger
+          href: asyncvoidmethodbuilder-objectidfordebugger-property.md
+        - name: Champ AsyncVoidMethodBuilder.m_objectIdForDebugger
+          href: asyncvoidmethodbuilder-m-objectidfordebugger-field.md

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de4d9fb3d0d90c5832620e8ab8642b491c0b68f1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1d1582560611a5c47e3b5e24767d9a2b9c03f5a9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263911"
 ---
 # <a name="instrumentation-method-data-views"></a>Vues de données de la méthode d'instrumentation
 Cette section contient des informations de référence pour les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode d’instrumentation.  
@@ -49,7 +50,7 @@ Cette section contient des informations de référence pour les vues et rapports
  [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)  
  Informations de référence pour les vues et rapports des fichiers de données du profileur générés à l’aide de la méthode d’échantillonnage.  
   
- [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)  
+ [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)  
  Informations de référence pour les vues et rapports des fichiers de données du profileur qui incluent les données de mémoire .NET.  
   
  [Vues de données de conflit de ressources](../profiling/resource-contention-data-views.md)  

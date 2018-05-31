@@ -9,11 +9,12 @@ description: Questions fréquentes (FAQ) sur la migration de l’administration 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 014564880dcc7587a1f94e3815d6f36edb36cee3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e4dda4264ae48903e98166346f9e2569ab1e4da0
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336124"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migration de l’administration des abonnements Visual Studio
 
@@ -78,7 +79,7 @@ Vous pouvez continuer à gérer les abonnements via le Centre VLSC jusqu’à r�
 Connectez-vous au [Centre VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) et accédez à : **Abonnements** > **Abonnements Visual Studio**. le numéro PCN se trouve sous les **Résultats pour le contrat/numéro de client public**. Vous trouverez des instructions pas à pas pour localiser votre PCN dans cet [article d’aide](/find-pcn/). 
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>Comment trouver qui est mon contact principal ou mon contact pour les notifications ?
-Connectez-vous au [Centre VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) et accédez à :**Licences > Liste des contrats**. Sélectionnez votre **Identifiant de contrat > Contacts**. Suivez les instructions pas à pas pour trouver votre contact principal ou votre contact pour les notifications dans cet [article d’aide](/find-primary-contact/). 
+Connectez-vous au [Centre VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) et accédez à :**Licences > Liste des contrats**. Sélectionnez votre **Identifiant de contrat > Contacts**. Suivez les instructions pas à pas pour trouver votre contact principal ou votre contact pour les notifications dans cet [article d’aide](find-primary-contact.md). 
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>Que se passe-t-il si mon contact principal ou mon contact pour les notifications est parti, ne fait plus partie de l’entreprise ou n’est pas disponible pour l’intégration ?
 Vous devez [contacter le support technique](https://www.visualstudio.com/subscriptions/support/#talktous) et fournir l’e-mail que vous avez utilisé dans le Centre VLSC pour la gestion des abonnements. Après vérification, le support technique peut vous aider pour le processus d’intégration. 
@@ -106,8 +107,8 @@ Pour obtenir les informations les plus récentes concernant cette migration, vis
 
 - [Support](https://www.visualstudio.com/subscriptions/support/) pour les abonnements et la gestion Visual Studio 
 
-- [Guide pratique pour trouver mon PCN](/find-pcn/)
+- [Guide pratique pour trouver mon PCN](find-pcn.md)
 
-- [Guide pratique pour trouver votre contact principal ou votre contact pour les notifications](/find-primary-contact/) 
+- [Guide pratique pour trouver votre contact principal ou votre contact pour les notifications](find-primary-contact.md) 
 
 - [Vidéo](https://www.youtube.com/watch?v=ZmnywYGSFMg&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=1&t=0s) sur l’intégration de votre organisation et la gestion des administrateurs 

@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86522beb978dee5722a919c4fa0e3a9030d5f3ad
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 0fdc6acd2c14331d34ccb3f3435b1ee5fcc44a14
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449206"
 ---
 # <a name="visual-studio-ide-overview"></a>Vue d’ensemble de l’IDE de Visual Studio
 
@@ -169,7 +170,7 @@ Pour vous donner une représentation générale de Visual Studio, l’image suiv
 
 - L’[Explorateur de solutions](../ide/solutions-and-projects-in-visual-studio.md) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. L’Explorateur de solutions peut vous aider à organiser votre code en regroupant les fichiers dans des projets et des solutions.
 
-- La fenêtre [Éditeur](../ide/writing-code-in-the-code-and-text-editor.md) est la fenêtre où vous passerez sans doute le plus de temps. Utilisez cette fenêtre pour afficher votre code, modifier le code source et concevoir une interface utilisateur.
+- La fenêtre de l’[éditeur](../ide/writing-code-in-the-code-and-text-editor.md) est la fenêtre où vous passerez sans doute le plus de temps. Utilisez cette fenêtre pour afficher votre code, modifier le code source et concevoir une interface utilisateur.
 
 - La fenêtre [Sortie](../ide/reference/output-window.md) est l’emplacement où Visual Studio envoie ses notifications, telles que les messages d’erreur et de débogage, les avertissements du compilateur, les messages d’état de publication, et ainsi de suite. Chaque source de message a son propre onglet.
 

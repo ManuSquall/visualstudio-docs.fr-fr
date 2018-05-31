@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3e7a300570cb16757c70b42db932d8af061be1a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f071a99c7a5c854fdada3aef2a379056fa17b339
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448050"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Guide pratique pour afficher des URL en tant que liens dans l'Éditeur
 Vous pouvez choisir de configurer l’éditeur de code pour qu’il traite les URL figurant dans votre code en tant que liens actifs. Lorsque vous utilisez cette fonctionnalité, les URL :
@@ -53,4 +54,4 @@ Vous pouvez choisir de configurer l’éditeur de code pour qu’il traite les U
 
 - [Personnalisation de l’éditeur](../../ide/customizing-the-editor.md)
 - [Éditeur de texte, boîte de dialogue Options](../../ide/reference/text-editor-options-dialog-box.md)
-- [Écriture de code](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Fonctionnalités de l’éditeur de code](../../ide/writing-code-in-the-code-and-text-editor.md)

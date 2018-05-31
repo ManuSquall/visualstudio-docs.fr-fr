@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3a3b45d8714c72e588f64cd5c1830cc97b9f136e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269188"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre application en XAML, dans le code ou à l'aide du concepteur XAML. Cette rubrique décrit comment utiliser des éléments dans le concepteur XAML dans Visual Studio ou Blend pour Visual Studio.
@@ -53,7 +54,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 
         -   **Mettre en arrière-plan** pour placer l’élément tout à la fin dans l’ordre.
 
-     Modifiez la propriété **ZIndex** dans la section **Disposition** de la fenêtre Propriétés. Dans le cas des éléments qui se chevauchent, la propriété **ZIndex** est prioritaire sur l’ordre des éléments affiché dans la fenêtre Structure du document. Quand des éléments se chevauchent, l’élément qui possède une valeur **ZIndex** inférieure apparaît devant.
+     Modifiez la propriété **ZIndex** dans la section **Disposition** de la fenêtre Propriétés. Dans le cas des éléments qui se chevauchent, la propriété **ZIndex** est prioritaire sur l’ordre des éléments affiché dans la fenêtre Structure du document. Quand des éléments se chevauchent, l’élément qui possède une valeur **ZIndex** supérieure apparaît devant.
 
 ## <a name="changing-the-alignment-of-an-element"></a>Modification de l'alignement d'un élément
  Vous pouvez aligner des éléments dans la planche graphique à l'aide de commandes de menu ou en faisant glisser les éléments vers des lignes d'alignement.
@@ -74,7 +75,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 
      Quand les bords sont alignés, une *limite d’alignement* s’affiche pour indiquer l’alignement. La limite d'alignement est une ligne en pointillés rouge. Les limites d'alignement n'apparaissent que si l' **alignement sur les lignes d'alignement** est activé. Pour une illustration de la planche graphique montrant une limite d’alignement, consultez [Création d’une interface utilisateur à l’aide du concepteur XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="changing-the-an-elements-margins"></a>Modification des marges d'un élément
+## <a name="changing-an-elements-margins"></a>Modification des marges d'un élément
  Les marges dans le concepteur XAML déterminent la quantité d'espace vide autour d'un élément sur la planche graphique. Par exemple, les marges spécifient la quantité d'espace entre les bords extérieurs d'un élément et les limites d'un panneau `Grid` qui contient cet élément. Les marges spécifient également la quantité d'espace entre les éléments contenus dans un `StackPanel`.
 
 #### <a name="to-change-an-elements-margins-in-the-properties-window"></a>Pour modifier les marges d'un élément dans la fenêtre Propriétés

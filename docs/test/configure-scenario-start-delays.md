@@ -1,5 +1,5 @@
 ---
-title: Configurer les retards de début de scénario pour un test de charge dans Visual Studio | Microsoft Docs
+title: Configurer les retards de début de scénario pour les tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,14 @@ ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f39f19e0c09da69ff82718f9c0f6efd8d05a77de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448478"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurer les retards de début de scénario dans les tests de charge
 
@@ -71,11 +73,11 @@ La propriété **Désactiver pendant le préchauffage** est définie dans la fen
 
      L’**éditeur de test de charge** s’affiche. L’arborescence du test de charge s’affiche.
 
-2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario dont vous souhaitez spécifier les agents à utiliser.
+2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario dont vous souhaitez modifier le comportement de préchauffage.
 
 3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
-     Les catégories et les propriétés du scénario sont affichées dans la fenêtre Propriétés.
+     Les catégories et les propriétés du scénario sont affichées dans la fenêtre **Propriétés**.
 
      Dans la propriété **Désactiver pendant le préchauffage**, sélectionnez **True** ou **False**.
 

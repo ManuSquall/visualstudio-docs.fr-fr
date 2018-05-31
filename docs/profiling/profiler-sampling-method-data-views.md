@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a091ce71312778353a7f09869d6de45bc394c665
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8b9b85d5bf1bab61fbc59c0f90411c3e70545745
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265042"
 ---
-# <a name="profiler-sampling-method-data-views"></a>Vues de données de la méthode d'échantillonnage du profileur
+# <a name="profiler-sampling-method-data-views"></a>Vues des données de la méthode d’échantillonnage du profileur
 Cette section contient des informations de référence pour les vues et rapports des fichiers de données de profilage générés avec la méthode d’instrumentation.  
   
 > [!NOTE]
@@ -29,7 +30,7 @@ Cette section contient des informations de référence pour les vues et rapports
  [Vue Résumé](../profiling/summary-view-sampling-data.md)  
  Répertorie les fonctions qui ont été exécutées le plus fréquemment lors de la collecte des échantillons, et les fonctions qui ont effectué le plus de travail individuel.  
   
- [Vue Arborescence des appels](../profiling/call-tree-view-sampling-data.md)  
+ [Mode Arborescence des appels](../profiling/call-tree-view-sampling-data.md)  
  Affiche les chemins d’exécution des fonctions dans une arborescence hiérarchique.  
   
  [Vue Modules](../profiling/modules-view-sampling-data.md)  
@@ -41,14 +42,14 @@ Cette section contient des informations de référence pour les vues et rapports
  [Vue Fonctions](../profiling/functions-view-sampling-data.md)  
  Organise le profilage par fonction et répertorie les fonctions qui s’exécutaient pendant la collecte des échantillons.  
   
- [Lignes, vue](../profiling/lines-view-sampling-data.md)  
+ [Vue Lignes](../profiling/lines-view-sampling-data.md)  
  Répertorie les lignes de code source qui s’exécutaient pendant la collecte des échantillons.  
   
  [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)  
  Répertorie les lignes de code source qui s’exécutaient pendant la collecte des échantillons.  
   
 ## <a name="reference"></a>Référence  
- [Processus, vue](../profiling/process-view.md)  
+ [Vue Processus](../profiling/process-view.md)  
  Répertorie les heures de début et de fin des processus et des threads.  
   
  [Vue Marques](../profiling/marks-view.md)  
@@ -58,11 +59,11 @@ Cette section contient des informations de référence pour les vues et rapports
  Affiche un graphique de la relation qui existe entre une fonction sélectionnée et les fonctions qui l’ont appelée et qui ont été appelées par celle-ci.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)  
+ [Vues de données de la méthode d'instrumentation](../profiling/instrumentation-method-data-views.md)  
  Informations de référence sur les vues et les rapports des fichiers de données du profileur générés à l’aide de la méthode d’instrumentation.  
   
- [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)  
+ [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)  
  Informations de référence pour les vues et rapports des fichiers de données du profileur qui incluent les données de mémoire .NET.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+ [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)

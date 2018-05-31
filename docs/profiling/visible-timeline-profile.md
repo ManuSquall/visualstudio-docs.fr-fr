@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9917aa941dc867819f1e83bd24ced884614a8db
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f96c5fa1b54a34fa2d67233bbf17164b0dbfeb7
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447698"
 ---
 # <a name="visible-timeline-profile"></a>Profil de chronologie visible
 Le profil de chronologie visible pour la vue du blocage des threads fournit des informations statistiques et des liens vers des rapports. Quand vous effectuez un zoom avant ou arrière, que vous faites défiler horizontalement ou bien que vous affichez ou masquez les canaux, les nombres dans la légende active changent pour refléter le contenu actuel de la vue. Pour afficher un rapport sur un élément dans la légende, cliquez sur cet élément.  

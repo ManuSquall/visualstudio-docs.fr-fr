@@ -1,6 +1,6 @@
 ---
-title: Affichage de la hiérarchie d’appels dans Visual Studio
-ms.date: 01/10/2018
+title: Rechercher les appels à une méthode
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,33 +13,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f5cfc65f23924f9ee1e9203e115feae13f454b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52fdaf277d8c20801c5d48d90de472d24ab88bda
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448348"
 ---
 # <a name="view-call-hierarchy"></a>Afficher la hiérarchie d'appels
 
-En affichant la hiérarchie d’appels pour votre code, vous pouvez parcourir tous les appels à destination et en provenance d’une méthode, d’une propriété ou d’un constructeur sélectionné. Cela vous permet de mieux comprendre le flux du code et d’évaluer les effets des modifications apportées au code. Vous pouvez examiner plusieurs niveaux de code pour afficher les chaînes complexes d’appels de méthodes et les points d’entrée supplémentaires dans le code, ce qui vous permet d’explorer tous les chemins d’exécution possibles.
+En affichant la hiérarchie d’appels pour votre code, vous pouvez parcourir tous les appels à destination et parfois en provenance d’une méthode, d’une propriété ou d’un constructeur sélectionné. Cela vous permet de mieux comprendre le flux du code et d’évaluer les effets des modifications apportées au code. Vous pouvez examiner plusieurs niveaux de code pour afficher les chaînes complexes d’appels de méthodes et les points d’entrée supplémentaires dans le code, ce qui vous permet d’explorer tous les chemins d’exécution possibles.
 
 Dans Visual Studio, vous pouvez afficher une hiérarchie d’appels au moment de la conception. Cela signifie que vous n’êtes pas obligé de définir un point d’arrêt et de démarrer le débogueur pour afficher la pile des appels à l’exécution.
 
 ## <a name="use-the-call-hierarchy-window"></a>Utiliser la fenêtre Hiérarchie d'appels
 
-Pour afficher la fenêtre **Hiérarchie d’appels**, cliquez avec le bouton droit sur le nom d’un appel de méthode, de propriété ou de constructeur, puis cliquez sur **Afficher la hiérarchie d’appels**.
+Pour afficher la fenêtre **Hiérarchie d’appels**, cliquez avec le bouton droit dans l’éditeur de code sur le nom d’un appel de méthode, de propriété ou de constructeur, puis sélectionnez **Afficher la hiérarchie d’appels**.
 
-Le nom du membre s’affiche dans un volet d’arborescence dans la fenêtre **Hiérarchie d’appels**. Si vous développez le nœud correspondant au membre, les sous-nœuds **Appels à** *nom de membre* et **Appels de** *nom de membre* apparaissent. L’illustration suivante montre ces nœuds dans la fenêtre **Hiérarchie d’appels**.
+Le nom du membre s’affiche dans un volet d’arborescence dans la fenêtre **Hiérarchie d’appels**. Si vous développez le nœud correspondant au membre, les sous-nœuds **Appels à** *nom de membre* et, pour C++, **Appels de** *nom de membre* apparaissent.
 
-![Hiérarchie d’appels avec un nœud ouvert](../../ide/reference/media/onenode.png "OneNode")
+Pour le code C++, vous pouvez afficher les appels émis et reçus par un membre :
+
+![Hiérarchie d’appels pour le code C++ dans Visual Studio](media/call-hierarchy-cpp.png)
+
+Pour le code C# et Visual Basic, vous pouvez afficher les appels envoyés à un membre, mais pas les appels provenant de :
+
+![Hiérarchie d’appels pour le code C# dans Visual Studio](media/call-hierarchy-csharp.png)
 
 - Si vous développez le nœud **Appels à**, tous les membres qui appellent le membre sélectionné sont affichés.
 
-- Si vous développez le nœud **Appels de**, tous les membres qui sont appelés par le membre sélectionné sont affichés.
+- Pour C++, si vous développez le nœud **Appels de**, tous les membres qui sont appelés par le membre sélectionné sont affichés.
 
-Vous pouvez ensuite développer chacun des membres de ces sous-nœuds dans les nœuds **Appels à** et **Appels de**. Cela vous permet de naviguer dans la pile des appelants, comme indiqué dans l’illustration suivante.
+Vous pouvez développer chaque membre appelant pour voir ses nœuds **Appels à** et, pour C++, ses nœuds **Appels de**. Cela vous permet de naviguer dans la pile des appelants, comme indiqué dans l’image suivante :
 
-![Hiérarchie d’appels avec plusieurs nœuds ouverts](../../ide/media/multiplenodes.png "MultipleNodes")
+![Fenêtre Hiérarchie d’appels avec plusieurs niveaux développés](media/call-hierarchy-csharp-expanded.png)
 
 Pour les membres définis en tant que membres virtuels ou abstraits, un nœud **Remplace nom de méthode** apparaît. Pour les membres d’interface, un nœud **Implémente nom de méthode** apparaît. Ces nœuds pouvant être développés apparaissent au même niveau que les nœuds **Appels à** et **Appels de**.
 
@@ -49,12 +56,12 @@ Quand vous sélectionnez un membre enfant dans le volet d’arborescence **Hiér
 
 - Le volet d’informations **Hiérarchie d’appels** affiche toutes les lignes de code dans lesquelles ce membre enfant est appelé à partir du membre parent.
 
-- La **fenêtre Définition de code**, si elle est ouverte, affiche le code du membre sélectionné (C++ uniquement). Pour plus d’informations sur cette fenêtre, consultez [Affichage de la structure du code](../../ide/viewing-the-structure-of-code.md).
+- La fenêtre **Définition de code**, si elle est ouverte, affiche le code du membre sélectionné (C++ uniquement). Pour plus d’informations sur cette fenêtre, consultez [Afficher la structure du code](../../ide/viewing-the-structure-of-code.md).
 
 > [!NOTE]
-> La fonctionnalité Hiérarchie d’appels ne recherche pas les références au groupe de méthodes, ce qui inclut les emplacements auxquels une méthode est ajoutée en tant que gestionnaire d’événements ou est assignée à un délégué. Pour rechercher toutes les références à une méthode, vous pouvez utiliser la commande **Rechercher toutes les références**.
+> La fonctionnalité **Hiérarchie d’appels** ne recherche pas les références au groupe de méthodes, ce qui inclut les emplacements auxquels une méthode est ajoutée en tant que gestionnaire d’événements ou est assignée à un délégué. Pour rechercher toutes les références à une méthode, vous pouvez utiliser la commande **Rechercher toutes les références**.
 
-### <a name="shortcut-menu-items"></a>Éléments de menu contextuel
+## <a name="shortcut-menu-items"></a>Éléments de menu contextuel
 
 Le tableau suivant décrit plusieurs options de menu contextuel qui sont disponibles quand vous cliquez avec le bouton droit sur un nœud dans le volet d’arborescence.
 

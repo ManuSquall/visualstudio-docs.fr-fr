@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1982f0f5f1739d514dcedd32291bd765a5680b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448413"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 L’outil **VSPerfCmd.exe** est utilisé pour démarrer et arrêter la collecte de données de performances. Il utilise la syntaxe suivante :  
@@ -39,7 +40,7 @@ VSPerfCmd [/U] [/options]
 |[CrossSession&#124;CS](../profiling/crosssession.md)|Active le profilage entre des sessions Windows. À utiliser seulement avec **Start**, **Attach** ou **Launch**.|  
 |[User](../profiling/user-vsperfcmd.md) **:**[`domain\`]`username`|Permet au compte spécifié d’accéder au service du profileur. À utiliser uniquement avec **Start**.|  
 |[WaitStart](../profiling/waitstart.md)[**:**`n`]|Attend que le journal de collecte de données soit initialisé. Si `n` est spécifié, **VSPerfCmd** attend au plus `n` secondes. Si `n` n’est pas spécifié, **VSPerfCmd** attend indéfiniment. Ceci facilite l’utilisation de **VSPerfCmd** dans le cadre d’un traitement par lots.|  
-|[Counter](../profiling/counter.md) **:** `cfg`|Quand l’exemple de méthode de profilage par échantillonnage est utilisée, spécifie un compteur d’UC et le nombre d’événements à utiliser comme intervalle d’échantillonnage. Vous ne pouvez échantillonner qu’une seule valeur de compteur.<br /><br /> Quand la méthode de profilage par instrumentation est utilisée, spécifie un compteur d’UC à collecter à chaque point d’instrumentation. À utiliser seulement avec **Start:**`Trace`, **Attach** ou **Launch**.|  
+|[Counter](../profiling/counter.md) **:** `cfg`|Quand l’exemple de méthode de profilage par échantillonnage est utilisée, spécifie un compteur d’UC et le nombre d’événements à utiliser comme intervalle d’échantillonnage. Vous ne pouvez échantillonner qu’une seule valeur de compteur.<br /><br /> Quand la méthode de profilage par instrumentation est utilisée, spécifie un compteur d’UC à collecter à chaque point d’instrumentation. À utiliser seulement avec **Start**`Trace`, **Attach** ou **Launch**.|  
 |[QueryCounters](../profiling/querycounters.md)|Affiche une liste des compteurs d’UC valides pour la machine active.|  
 |[WinCounter](../profiling/wincounter.md) **:** *path*|Spécifie un événement de compteur de performance Windows à inclure avec les données de marque du profil. À utiliser uniquement avec **Start**.|  
 |[AutoMark](../profiling/automark.md)  **:** *n*|Spécifie l’intervalle de temps (en millisecondes) entre les événements de collecte des données du compteur de performances Windows. À utiliser avec **WinCounter**.|  
@@ -54,7 +55,7 @@ VSPerfCmd [/U] [/options]
 |[ThreadOn et ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Suspend le profilage pour le thread spécifié. Utilisez **ThreadOff** seulement en cas de profilage avec la méthode d’instrumentation.|  
 |[Mark](../profiling/mark.md)  **:** *MarkNum*[**,***MarkText***]**|Insère une marque dans le fichier de données de profilage, avec un texte facultatif.|  
   
-## <a name="sampling-method-options"></a>Options de méthode d’échantillonnage  
+## <a name="sample-method-options"></a>Options de méthode d’échantillonnage  
  Les options suivantes sont disponibles seulement quand vous utilisez la méthode de profilage par échantillonnage.  
   
 |Option|Description|  
@@ -66,7 +67,7 @@ VSPerfCmd [/U] [/options]
 |[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Arrête le profilage des processus spécifiés. Les processus peuvent être identifiés par l’ID de processus ou par le nom du processus. Si aucun processus n’est spécifié, le profilage est arrêté pour tous les processus.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Collecte les données d’allocation de mémoire et les données de durée de vie des objets de .NET. À utiliser seulement avec l’option **VSPerfCmdLaunch**.|  
   
-### <a name="sampling-interval-options"></a>Options d’intervalle d’échantillonnage  
+### <a name="sample-interval-options"></a>Options d'intervalle d’échantillonnage  
  Les options suivantes spécifient le type et la durée des intervalles d’échantillonnage. La valeur par défaut est **Timer**. Vous pouvez également spécifier un compteur d’UC comme intervalle avec l’option **Counter**. Ces options peuvent être spécifiées seulement avec **Launch** ou avec la première option **Attach** d’une session de profilage.  
   
 |Option|Description|  
