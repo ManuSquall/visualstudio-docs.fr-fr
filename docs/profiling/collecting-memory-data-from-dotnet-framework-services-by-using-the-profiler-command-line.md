@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b03973767088951d62620cfb5846dda6fa7a5f82
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 4e94932749523cea906cd60442971b93160b6c13
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268150"
 ---
-# <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Collecte de données de mémoire de services .NET Framework en utilisant la ligne de commande du profileur
+# <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Collecter des données de mémoire de services .NET Framework en utilisant la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données d’allocation de mémoire et de durée de vie des objets pour un service [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] utilisant la méthode d’échantillonnage à partir de la ligne de commande.  
   
-## <a name="common-tasks"></a>Tâches courantes  
+## <a name="common-tasks"></a>Tâches courantes
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  
@@ -27,25 +28,25 @@ Cette section décrit les procédures et les options de collecte des données d�
 |**Instrumenter un service .NET et collecter des données de mémoire .NET**|-   [Guide pratique pour instrumenter un service .NET Framework et collecter des données de mémoire](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
 |**Ajouter des interactions de couche**|-   [Collecte de données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
-## <a name="related-tasks"></a>Tâches connexes  
+## <a name="related-tasks"></a>Tâches connexes
   
-### <a name="profiling-services"></a>Profilage de services  
-  
-|Tâche|Contenu associé|  
-|----------|---------------------|  
-|**Profiler à l’aide de la méthode d’échantillonnage**|-   [Collecte de statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
-|**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|  
-|**Profiler le conflit des ressources et l’activité des threads**|-   [Collecte de données concurrentielles](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
-  
-### <a name="profiling-net-framework-memory-data"></a>Profilage de données de mémoire .NET Framework  
+### <a name="profile-services"></a>Profiler des services  
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  
-|**Profiler des applications autonomes (clientes)**|-   [Collecte de données de mémoire .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
-|**Profiler des applications web ASP.NET**|-   [Collecte des données de mémoire](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
+|**Profiler à l’aide de la méthode d’échantillonnage**|-   [Collecter des statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
+|**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|  
+|**Profiler le conflit des ressources et l’activité des threads**|-   [Collecter des données concurrentielles](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
-### <a name="analyzing-net-memory-data-views-and-reports"></a>Analyse des vues et des rapports de données de mémoire .NET  
- [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)  
+### <a name="profile-net-framework-memory-data"></a>Profiler des données de mémoire .NET Framework  
+  
+|Tâche|Contenu associé|  
+|----------|---------------------|  
+|**Profiler des applications autonomes (clientes)**|-   [Collecter des données de mémoire .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
+|**Profiler des applications web ASP.NET**|-   [Collecter des données de mémoire](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
+  
+### <a name="analyze-net-memory-data-views-and-reports"></a>Analyser des vues et des rapports de données de mémoire .NET  
+ [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)  
   
 ## <a name="reference"></a>Référence  
  [Informations de référence sur les outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)

@@ -9,11 +9,12 @@ description: Termes du contrat de licence des abonnements Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6bb1e074b395d37547f33cd523f973fe9e79dba
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454712"
 ---
 **TERMES DU CONTRAT DE LICENCE LOGICIEL MICROSOFT POUR LES ABONNEMENTS VISUAL STUDIO SUIVANTS :**
 
@@ -128,7 +129,7 @@ SI VOUS VOUS CONFORMEZ AUX PRÉSENTS TERMES DU CONTRAT DE LICENCE, VOUS DISPOSEZ
     (parfois appelé matériel ou logiciel de « multiplexage » ou de « mise en pool »), ne réduit pas le nombre de licences de tout type dont vous avez besoin.
 
 
-8. **ACTIVATION OBLIGATOIRE.** L’activation associe l’utilisation du logiciel à un appareil spécifique. Pendant l’activation, le logiciel envoie des informations concernant le logiciel et l’appareil à Microsoft. Ces informations incluent la version, la langue et la clé de produit du logiciel, l’adresse IP de l’appareil, ainsi que des informations dérivées de la configuration matérielle de l’appareil. Pour plus d’informations, consultez [microsoft.com/piracy/activation.mspx.[(http://microsoft.com/piracy/activation.mspx)] En utilisant le logiciel, vous consentez à la transmission de ces informations. Avant d’effectuer l’activation, vous êtes autorisé à utiliser la version du logiciel installée pendant le processus d’installation. **Votre droit d’utilisation du logiciel au-delà de la durée spécifiée dans le processus d’installation est limité, à moins que le logiciel ne soit activé.** Cela est destiné à empêcher son utilisation sans licence. Vous ne pourrez pas continuer à utiliser le logiciel au-delà de cette durée si vous ne l’activez pas. Si l’appareil est connecté à Internet, le logiciel peut se connecter automatiquement à Microsoft en vue de son activation. Vous pouvez également activer le logiciel manuellement via Internet ou par téléphone. Si vous le faites, des frais Internet ou de service téléphonique peuvent s’appliquer. Il est possible que vous deviez réactiver le logiciel si vous modifiez vos composants informatiques ou le logiciel. **Le logiciel affichera un rappel d’activation tant que vous ne l’aurez pas activé.**
+8. **ACTIVATION OBLIGATOIRE.** L’activation associe l’utilisation du logiciel à un appareil spécifique. Pendant l’activation, le logiciel envoie des informations concernant le logiciel et l’appareil à Microsoft. Ces informations incluent la version, la langue et la clé de produit du logiciel, l’adresse IP de l’appareil, ainsi que des informations dérivées de la configuration matérielle de l’appareil. Pour plus d'informations, consultez [Activation de produit Microsoft](https://www.microsoft.com/en-us/piracy/mpa.aspx). En utilisant le logiciel, vous consentez à la transmission de ces informations. Avant d’effectuer l’activation, vous êtes autorisé à utiliser la version du logiciel installée pendant le processus d’installation. **Votre droit d’utilisation du logiciel au-delà de la durée spécifiée dans le processus d’installation est limité, à moins que le logiciel ne soit activé.** Cela est destiné à empêcher son utilisation sans licence. Vous ne pourrez pas continuer à utiliser le logiciel au-delà de cette durée si vous ne l’activez pas. Si l’appareil est connecté à Internet, le logiciel peut se connecter automatiquement à Microsoft en vue de son activation. Vous pouvez également activer le logiciel manuellement via Internet ou par téléphone. Si vous le faites, des frais Internet ou de service téléphonique peuvent s’appliquer. Il est possible que vous deviez réactiver le logiciel si vous modifiez vos composants informatiques ou le logiciel. **Le logiciel affichera un rappel d’activation tant que vous ne l’aurez pas activé.**
 
 9. **VALIDATION.**
 

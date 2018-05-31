@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 227b12f2da07d3d610f3d043348dc59680fc17ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449180"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -74,7 +75,7 @@ Le fichier .cpp de votre projet de test a une classe et une méthode stub défin
 
 ![Ajouter des directives include](media/cpp-write-test-methods.png "Test C++ : ajouter des directives include pour les fichiers d’en-tête")
 
-TEST_CLASS et TEST_METHOD font partie du [framework de tests unitaires Microsoft]((microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **L’Explorateur de tests** découvre de la même façon les méthodes de test dans les autres frameworks pris en charge.
+TEST_CLASS et TEST_METHOD font partie du [framework de test natif Microsoft](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **L’Explorateur de tests** découvre de la même façon les méthodes de test dans les autres frameworks pris en charge.
 
 TEST_METHOD retourne void. Pour produire un résultat de test, utilisez les méthodes statiques de la classe `Assert` pour tester les résultats réels par rapport à ce qui est attendu. Dans l’exemple suivant, supposons que `MyClass` a un constructeur qui accepte une `std::string`. Nous pouvons tester que le constructeur initialise la classe comme attendu :
 
