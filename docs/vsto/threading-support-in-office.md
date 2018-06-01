@@ -1,5 +1,5 @@
 ---
-title: Prise en charge dans Office de thread | Documents Microsoft
+title: Prise en charge dans Office de thread
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,18 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 473287ed42fb2e4978a0f92717a01fdf31e28ad4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 966f012b2ff4860205186410951b759c2e214668
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693082"
 ---
-# <a name="threading-support-in-office"></a>Prise en charge des threads dans Office
-  Cette rubrique fournit des informations sur la prise en charge des threads dans le modèle objet Microsoft Office. Le modèle objet Office n’est pas thread-safe, mais il est possible de travailler avec plusieurs threads dans une solution Office. Les applications Office sont des serveurs de modèle COM (Component Object). COM permet aux clients d’appeler des serveurs COM sur des threads arbitraires. Pour les serveurs COM qui ne sont pas thread-safe, COM fournit un mécanisme permettant de sérialiser les appels simultanés pour qu’un seul thread logique s’exécute sur le serveur à tout moment. Ce mécanisme est appelé le modèle de thread unique cloisonné (STA). Étant donné que les appels sont sérialisés, les appelants peuvent être bloqués de périodes de temps pendant que le serveur est occupé ou gère d’autres appels sur un thread d’arrière-plan.  
+# <a name="threading-support-in-office"></a>Prise en charge dans Office de thread
+  Cet article fournit des informations sur la prise en charge des threads dans le modèle objet Microsoft Office. Le modèle objet Office n’est pas thread-safe, mais il est possible de travailler avec plusieurs threads dans une solution Office. Les applications Office sont des serveurs de modèle COM (Component Object). COM permet aux clients d’appeler des serveurs COM sur des threads arbitraires. Pour les serveurs COM qui ne sont pas thread-safe, COM fournit un mécanisme permettant de sérialiser les appels simultanés pour qu’un seul thread logique s’exécute sur le serveur à tout moment. Ce mécanisme est appelé le modèle de thread unique cloisonné (STA). Étant donné que les appels sont sérialisés, les appelants peuvent être bloqués de périodes de temps pendant que le serveur est occupé ou gère d’autres appels sur un thread d’arrière-plan.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="knowledge-required-when-using-multiple-threads"></a>Base de connaissances requis lors de l’utilisation de plusieurs Threads  
+## <a name="knowledge-required-when-using-multiple-threads"></a>Base de connaissances requis lors de l’utilisation de plusieurs threads  
  Pour travailler avec plusieurs threads, vous devez disposer des connaissances de base au moins des aspects suivants du multithreading :  
   
 -   API Windows  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
 -   marshaling  
   
- Pour obtenir des informations générales sur le multithreading, consultez [Managed Threading](/dotnet/standard/threading/).  
+ Pour obtenir des informations générales sur le multithreading, consultez [de thread managé](/dotnet/standard/threading/).  
   
  Office s’exécute sur le STA principal. Comprendre les implications de cette permet de comprendre l’utilisation de plusieurs threads avec Office.  
   
@@ -62,13 +63,13 @@ ms.lasthandoff: 04/16/2018
   
  Toutefois, dans le cas des solutions créées à l’aide des outils de développement Office dans Visual Studio, COM interop convertit tous les appels rejetés pour un <xref:System.Runtime.InteropServices.COMException> (« le filtre de message indique que l’application est occupée »). Chaque fois que vous effectuez un modèle d’objet appel sur un thread d’arrière-plan, vous devez pour être prêt à gérer cette exception. En règle générale, qui implique une nouvelle tentative pour une certaine quantité de temps, puis en affichant une boîte de dialogue. Toutefois, vous pouvez également créer le thread d’arrière-plan en tant que STA, puis enregistrez un filtre de messages pour ce thread gérer ce cas.  
   
-## <a name="starting-the-thread-correctly"></a>Démarrage correct du Thread  
+## <a name="start-the-thread-correctly"></a>Démarrer le thread correctement  
  Lorsque vous créez un nouveau thread STA, définissez l’état de cloisonnement sur STA avant de démarrer le thread. L'exemple de code suivant montre comment procéder.  
   
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]  
   
- Pour plus d’informations, consultez [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices).  
+ Pour plus d’informations, consultez [meilleures pratiques pour le threading managé](/dotnet/standard/threading/managed-threading-best-practices).  
   
 ## <a name="modeless-forms"></a>Formulaires non modales  
  Un formulaire non modal permet certain type d’interaction avec l’application pendant que le formulaire est affiché. L’utilisateur interagit avec le formulaire, et le formulaire interagit avec l’application sans fermer. Le modèle objet Office prend en charge les formulaires non modaux managés ; Toutefois, ils ne doivent pas être utilisés sur un thread d’arrière-plan.  
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Voir aussi  
  [Threading managé](/dotnet/standard/threading/)  
  [Threads (c#)](/dotnet/csharp/programming-guide/concepts/threading/index) [threads (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
- [Utilisation des threads et du threading](/dotnet/standard/threading/using-threads-and-threading)   
- [Conception et création de solutions Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Utilisez threads et du threading](/dotnet/standard/threading/using-threads-and-threading)   
+ [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20488e1e6da6b6bcc0bf3cdab875d6c19631521c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693719"
 ---
 # <a name="working-with-xml-data"></a>Utilisation des données XML
 
@@ -35,7 +36,7 @@ Autres fonctions de l'éditeur :
 
 - Prise en charge des modifications des feuilles de style XSLT, notamment avec IntelliSense
 
-- Explorateur de schémas XML.
+- **Explorateur de schémas XML**.
 
 ## <a name="xml-schema-designer"></a>Concepteur de schémas XML
 
@@ -53,7 +54,7 @@ Visual Studio permet le débogage de feuilles de style XSLT. Le débogueur perme
 
 [Créer et configurer des groupes de données dans Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) fournit une explication des outils au moment du design pour la création de jeux de données.
 
-[Les Services Web XML dans du Code managé](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) explique comment créer et déployer des services Web XML et comment accéder aux services Web XML.
+[Les services Web XML en code managé](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) explique comment créer et déployer des services Web XML et comment accéder aux services Web XML.
 
 ## <a name="see-also"></a>Voir aussi
 
