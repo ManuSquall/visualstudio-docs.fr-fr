@@ -7,13 +7,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3155eeaafdd419687b9111ef3e353f7a517aa10e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693443"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>Procédure pas à pas : utilisation de XSLT Hierarchy
+# <a name="walkthrough-use-xslt-hierarchy"></a>Procédure pas à pas : Utiliser XSLT hierarchy
 
 L’outil XSLT Hierarchy simplifie de nombreuses tâches de développement XML. Une feuille de style XSLT utilise souvent des instructions `includes` et `imports`. La compilation démarre à partir de la feuille de style principale, mais lorsque vous constatez une erreur en compilant une feuille de style XSLT, l'erreur peut provenir d'une autre source que la feuille de style principale. La résolution de l'erreur ou la modification de la feuille de style peut nécessiter l'accès à des feuilles de style incluses ou importées. L'exécution pas à pas de la feuille de style dans le débogueur peut ouvrir des feuilles de style incluses et importées, et vous pouvez ajouter un point d'arrêt à un point dans une ou plusieurs des feuilles de style incluses.
 
@@ -47,7 +48,7 @@ L'exemple dans cette rubrique illustre le débogage dans une feuille de style r�
     </COLLECTION>
     ```
 
-1. Ajoutez le `xslincludefile.xsl` suivant :
+1. Ajoutez le code suivant *xslincludefile.xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -70,7 +71,7 @@ L'exemple dans cette rubrique illustre le débogage dans une feuille de style r�
     </xsl:stylesheet>
     ```
 
-3.  Ajoutez le fichier `xslinclude.xsl` suivant :
+3.  Ajoutez le code suivant *xslinclude.xsl* fichier :
 
     ```xml
     <?xml version='1.0'?>

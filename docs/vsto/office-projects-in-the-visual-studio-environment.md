@@ -1,5 +1,5 @@
 ---
-title: Les projets Office dans l’environnement Visual Studio | Documents Microsoft
+title: Projets Office dans l’environnement Visual Studio
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -44,36 +44,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80a8f866cb43eb6279cca45bebc94c54af898eab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b85bbf5ac3507d9a65c8c2b3f0b71dbe61c1752
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693284"
 ---
-# <a name="office-projects-in-the-visual-studio-environment"></a>Projets Office dans l'environnement Visual Studio
+# <a name="office-projects-in-the-visual-studio-environment"></a>Projets Office dans l’environnement Visual Studio
   En termes de développement, les projets Microsoft Office offrent une expérience similaire à d'autres types de projets dans Visual Studio, tels que les projets Windows Forms. Lorsque vous créez ou ouvrez un projet Office, les éléments de projet s'affichent dans l' **Explorateur de solutions**. Pour les projets au niveau du document, le document (le document Word ou le classeur Excel) s'ouvre dans Visual Studio et se comporte comme un concepteur visuel.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="project-items-in-solution-explorer"></a>Éléments de projet dans l'Explorateur de solutions  
+## <a name="project-items-in-solution-explorer"></a>Éléments de projet dans l’Explorateur de solutions  
  Dans un projet au niveau du document, l' **Explorateur de solutions** affiche les éléments par défaut suivants :  
   
 -   Nœuds du document, du classeur et des feuilles de calcul qui sont personnalisés par le projet. Ces nœuds servent de conteneurs aux fichiers de code associés au document, au classeur et aux feuilles.  
   
 -   Fichiers de code associés au document, classeur et feuilles de calcul personnalisés par le projet. Dans les projets Word, les fichiers de code sont associés au modèle ou au document Word. Dans les projets Excel, les fichiers de code sont associés au modèle ou au classeur Excel, et à chaque feuille de calcul et feuille de graphique dans le classeur ou le modèle.  
   
--   Des fichiers projet masqués que vous ne pouvez pas modifier directement. Pour plus d'informations, consultez [Fichiers projet masqués](#hiddenfiles).  
+-   Des fichiers projet masqués que vous ne pouvez pas modifier directement. Pour plus d’informations, consultez [masqué des fichiers projet](#hiddenfiles).  
   
  Dans un projet de complément VSTO, l’ **Explorateur de solutions** affiche les éléments par défaut suivants :  
   
--   Le nœud d'application. Ce nœud a le même nom que l'application hôte, par exemple **Word**, **Excel**ou **Outlook**. Le nœud d'application contient le fichier de code ThisAddIn. Il fournit également la propriété **Espace de noms de l'élément hôte** . Pour plus d’informations sur cette propriété, consultez [Properties in Office Projects](../vsto/properties-in-office-projects.md).  
+-   Le nœud d'application. Ce nœud a le même nom que l'application hôte, par exemple **Word**, **Excel**ou **Outlook**. Le nœud d'application contient le fichier de code ThisAddIn. Il fournit également la propriété **Espace de noms de l'élément hôte** . Pour plus d’informations sur cette propriété, consultez [propriétés dans les projets Office](../vsto/properties-in-office-projects.md).  
   
--   Le fichier de code ThisAddIn. Ce fichier contient la classe `ThisAddIn` générée pour votre complément VSTO. Pour plus d’informations sur cette classe, consultez [de programmation des Compléments VSTO](../vsto/programming-vsto-add-ins.md).  
+-   Le fichier de code ThisAddIn. Ce fichier contient la classe `ThisAddIn` générée pour votre complément VSTO. Pour plus d’informations sur cette classe, consultez [Compléments VSTO de programme](../vsto/programming-vsto-add-ins.md).  
   
--   Des fichiers projet masqués que vous ne pouvez pas modifier directement. Pour plus d'informations, consultez [Fichiers projet masqués](#hiddenfiles).  
+-   Des fichiers projet masqués que vous ne pouvez pas modifier directement. Pour plus d’informations, consultez [masqué des fichiers projet](#hiddenfiles).  
   
 ### <a name="temporary-certificates"></a>Certificats temporaires  
- Les projets Office incluent également un certificat temporaire nommé *nom_projet*_TemporaryKey.pfx. Ce certificat est utilisé pour signer les manifestes de déploiement et d'application du projet pendant le développement. Pour plus d’informations, consultez [l’octroi de confiance à des Solutions Office](../vsto/granting-trust-to-office-solutions.md) et [sécurisation des Solutions Office](../vsto/securing-office-solutions.md).  
+ Les projets Office incluent également un certificat temporaire nommé *nom_projet*_TemporaryKey.pfx. Ce certificat est utilisé pour signer les manifestes de déploiement et d'application du projet pendant le développement. Pour plus d’informations, consultez [accorder la confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md) et [les solutions Office de sécuriser](../vsto/securing-office-solutions.md).  
   
 ###  <a name="hiddenfiles"></a> Fichiers projet masqués  
  Plusieurs fichiers projet sont masqués par défaut. Ces fichiers sont générés par Visual Studio et ils diffèrent par type de projet. Pour afficher les fichiers masqués, cliquez sur **Afficher tous les fichiers** dans l' **Explorateur de solutions**.  
@@ -90,38 +91,38 @@ ms.lasthandoff: 04/16/2018
 ### <a name="controls-on-documents"></a>Contrôles dans des documents  
  Vous pouvez faire glisser des *contrôles hôtes* et des contrôles Windows Forms de la **Boîte à outils** Visual Studio sur l'aide de conception du document. Les contrôles hôtes sont des versions spécialisées d'objets Office, tels que les contrôles de contenu Word et les plages Excel, qui peuvent être utilisés dans les projets Office créés à l'aide de Visual Studio. Les contrôles hôtes ont des fonctionnalités supplémentaires qui ne sont pas disponibles dans les objets Office correspondants, comme la liaison de données et les événements supplémentaires.  
   
- Pour plus d’informations, consultez [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md) et [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+ Pour plus d’informations, consultez [éléments hôtes et héberger la vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md) et [contrôles Windows forms dans une vue d’ensemble des documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
-### <a name="excel-worksheets-and-workbooks-in-the-designer"></a>Feuilles de calcul et classeurs Excel dans le concepteur  
- Lorsque vous ouvrez une feuille de calcul dans le concepteur, vous pouvez la modifier de la même façon que lorsque vous l'ouvrez directement dans Excel. Si vous double-cliquez sur une cellule de la feuille de calcul, la cellule passe en mode édition. Si vous double-cliquez sur une cellule qui contient un contrôle hôte, l'éditeur de code s'ouvre et Visual Studio génère le gestionnaire d'événements par défaut pour le contrôle. Pour naviguer jusqu'à d'autres feuilles de calcul, vous pouvez cliquer sur les onglets de feuille de calcul en bas de concepteur.  
+### <a name="excel-worksheets-and-workbooks-in-the-designer"></a>Feuilles de calcul et de classeurs Excel dans le Concepteur  
+ Lorsque vous ouvrez une feuille de calcul dans le concepteur, vous pouvez la modifier de la même façon que lorsque vous l'ouvrez directement dans Excel. Si vous double-cliquez sur une cellule de la feuille de calcul, la cellule passe en mode édition. Si vous double-cliquez sur une cellule qui contient un contrôle hôte, l’éditeur de Code s’ouvre et Visual Studio génère le Gestionnaire d’événements par défaut pour le contrôle. Pour naviguer jusqu'à d'autres feuilles de calcul, vous pouvez cliquer sur les onglets de feuille de calcul en bas de concepteur.  
   
  Lorsque vous ouvrez le classeur dans le concepteur, il n'y a aucune aire de conception. Le mode Design du classeur consiste en une grande barre d'état des composants qui remplit le concepteur.  
   
- Le classeur et chaque feuille qu'il contient ont un fichier de code associé. Chaque fichier de code contient une classe d' *élément hôte* générée qui représente le classeur ou la feuille. Pour plus d'informations, consultez [Automatisation d’Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md).  
+ Le classeur et chaque feuille qu'il contient ont un fichier de code associé. Chaque fichier de code contient une classe d' *élément hôte* générée qui représente le classeur ou la feuille. Pour plus d’informations, consultez [automatisation d’Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md).  
   
-### <a name="word-documents-in-the-designer"></a>Documents Word dans le concepteur  
+### <a name="word-documents-in-the-designer"></a>Documents Word dans le Concepteur  
  Lorsque vous ouvrez le document dans le concepteur, vous pouvez le modifier de la même façon que lorsque vous l'ouvrez directement dans Word. Si vous double-cliquez sur un mot dans le document, ce mot est sélectionné. Toutefois, si le mot se trouve à l'intérieur d'un contrôle hôte, l'éditeur de code s'ouvre et Visual Studio génère le gestionnaire d'événements par défaut pour le contrôle.  
   
- Le document comporte un fichier de code associé. Le fichier de code contient une classe d' *élément hôte* générée qui représente le document. Pour plus d'informations, consultez [Document Host Item](../vsto/document-host-item.md).  
+ Le document comporte un fichier de code associé. Le fichier de code contient une classe d' *élément hôte* générée qui représente le document. Pour plus d’informations, consultez [élément hôte de Document](../vsto/document-host-item.md).  
   
-### <a name="design-mode-vs-run-time-mode"></a>Mode Création et mode Exécution  
+### <a name="design-mode-vs-runtime-mode"></a>En mode Design et mode d’exécution  
  Lorsqu'un document est ouvert dans l'environnement Visual Studio, il l'est toujours en *mode Design*. Certaines tâches, telles que le glissement d'un contrôle hôte vers l'aire du document, ne peuvent être exécutées qu'en mode Design.  
   
- Pour afficher le document en *mode Exécution*, vous devez ouvrir l'application et le document en dehors de Visual Studio. Vous pouvez également générer et exécuter le projet afin d'ouvrir automatiquement le document et l'application en dehors de Visual Studio.  
+ Pour afficher le document en *mode d’exécution*, vous devez ouvrir l’application et le document en dehors de Visual Studio. Vous pouvez également générer et exécuter le projet afin d'ouvrir automatiquement le document et l'application en dehors de Visual Studio.  
   
 ## <a name="code-editor"></a>Éditeur de code  
  L'éditeur de code vous permet d'afficher et de modifier les fichiers de code visibles dans votre solution. Ces fichiers contiennent le code qui définit le comportement de votre solution.  
   
- Pour plus d’informations sur l’éditeur de Code, consultez [l’écriture de Code dans l’éditeur de texte et le Code](/visualstudio/ide/writing-code-in-the-code-and-text-editor). Pour plus d’informations sur l’écriture de code dans les projets Office, consultez [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
+ Pour plus d’informations sur l’éditeur de Code, consultez [écrire du code dans l’éditeur de code et le texte](/visualstudio/ide/writing-code-in-the-code-and-text-editor). Pour plus d’informations sur la façon d’écrire du code dans les projets Office, consultez [écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md).  
   
-## <a name="properties-window"></a>Propriétés (fenêtre)  
+## <a name="properties-window"></a>Fenêtre Propriétés  
  La fenêtre **Propriétés** affiche les propriétés des éléments de projet sélectionnés dans l' **Explorateur de solutions**et des éléments d'interface sélectionnés dans le concepteur, tels que les contrôles ou le document dans un projet au niveau du document. Certaines propriétés sont spécifiques à l'application et au document, alors que d'autres sont les mêmes pour tous les projets.  
   
 ## <a name="data-sources-window"></a>Fenêtre Sources de données  
  Vous pouvez utiliser la fenêtre **Sources de données** dans les projets Office au niveau du document pour faire glisser une source de données sur votre document et créer un contrôle lié à la source de données. Pour plus d’informations, consultez [lier des contrôles aux données dans Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Conception et création de Solutions Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)   
  [Vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md)   
  [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Propriétés dans les projets Office](../vsto/properties-in-office-projects.md)  

@@ -1,5 +1,5 @@
 ---
-title: Enregistrer des données dans la base de données
+title: Enregistrer les données dans la base de données
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee004af6cb130167789cac022ae1c04beef8dbe6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691132"
 ---
-# <a name="save-data-back-to-the-database"></a>Enregistrer des données dans la base de données
+# <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
 Le dataset est une copie en mémoire des données. Si vous modifiez ces données, il est recommandé d’enregistrer ces modifications dans la base de données. Vous faire de trois manières :
 
 -   En appelant une des méthodes de mise à jour d’un TableAdapter
@@ -221,7 +222,7 @@ Une fois que les modifications ont été apportées dans un jeu de données, vou
 
  En guise d’illustration de la façon dont les mises à jour sont effectuées, supposons que votre application utilise un jeu de données qui contient une table de données unique. L’application extrait deux lignes de la base de données. Après la récupération, la table de données en mémoire ressemble à ceci :
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Unchanged)    c400         Nancy Buchanan    Pending
@@ -229,7 +230,7 @@ Une fois que les modifications ont été apportées dans un jeu de données, vou
 
  Votre application change le statut de Nancy Buchanan « Préféré ». Suite à cette modification, la valeur de la <xref:System.Data.DataRow.RowState%2A> propriété pour cette ligne passe de <xref:System.Data.DataRowState.Unchanged> à <xref:System.Data.DataRowState.Modified>. La valeur de la <xref:System.Data.DataRow.RowState%2A> propriété pour la première ligne reste <xref:System.Data.DataRowState.Unchanged>. La table de données ressemble maintenant à ceci :
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Modified)     c400         Nancy Buchanan    Preferred
