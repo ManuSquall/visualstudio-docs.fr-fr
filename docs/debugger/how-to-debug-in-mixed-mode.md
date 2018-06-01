@@ -35,7 +35,7 @@ Les procédures suivantes décrivent comment déboguer le code managé et le cod
 > [!NOTE]
 >  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-Si vous n’avez pas accès au projet pour l’application appelante, vous pouvez déboguer une DLL à partir du projet DLL. Pour plus d'informations, consultez [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md). Vous n’avez pas besoin d’utiliser combiné pour déboguer uniquement le projet DLL.
+Si vous n’avez pas accès au projet pour l’application appelante, vous pouvez déboguer une DLL à partir du projet DLL. Pour plus d'informations, consultez [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md). Vous n’avez pas besoin d’utiliser le mode mixte pour déboguer uniquement le projet DLL.
   
 ### <a name="to-enable-mixed-mode-debugging-c-calling-app"></a>Pour activer le débogage en mode mixte (application appelante C++)  
   
@@ -49,13 +49,13 @@ Si vous n’avez pas accès au projet pour l’application appelante, vous pouve
 
     ![Activer le débogage en mode mixte](../debugger/media/dbg-mixed-mode-from-native.png "activer le débogage en mode mixte")
 
-### <a name="to-enable-mixed-mode-debugging-c-or-vb-calling-app"></a>Pour activer le débogage en mode mixte (application appelante de c# ou Visual Basic)  
+### <a name="to-enable-mixed-mode-debugging-c-or-vb-calling-app"></a>Pour activer le débogage en mode mixte (application appelante en c# ou Visual Basic)  
   
 1.  Dans **l’Explorateur de solutions**, sélectionnez le projet managé.  
   
-2.  Sur le **vue** menu, cliquez sur **Pages de propriétés**.  
+2.  Dans le menu **vue**, cliquez sur **Pages de propriétés**.  
   
-3.  Dans le  **\<projet > Pages de propriétés** boîte de dialogue, sélectionnez le **déboguer** onglet, puis sélectionnez **activer le débogage de code natif**
+3.  Sélectionnez l’onglet **déboguer**, puis sélectionnez **activer le débogage de code natif**
 
     ![Activer le débogage de code natif](../debugger/media/dbg-mixed-mode-from-csharp.png "activer le débogage de code natif")
   
