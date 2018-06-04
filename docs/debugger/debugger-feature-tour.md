@@ -1,4 +1,4 @@
----
+﻿---
 title: Présentation du débogueur
 description: Prendre un coup de œil les différentes fonctionnalités du débogueur Visual Studio.
 ms.custom: mvc
@@ -46,7 +46,7 @@ Pour démarrer votre application avec le débogueur attaché, appuyez sur F11 (*
 
 ![F11 Pas à pas détaillé](../debugger/media/dbg-tour-f11.png "F11 pas à pas détaillé")
 
-La flèche jaune représente l’instruction sur laquelle le débogueur a suspendu, également suspend l’exécution d’application sur le même point (cette instruction n’a pas encore exécuté).
+La flèche jaune représente l’instruction sur laquelle le débogueur s'est arrêté, et également l'endroit où l’exécution de l'application s'est arrêté (cette instruction n’a pas encore exécuté).
 
 F11 est une bonne solution pour examiner le flux d’exécution en détails. (Pour se déplacer plus rapidement dans le code, nous vous montrerons d’autres options.) Par défaut, le débogueur ignore le code non-utilisateur (si vous souhaitez plus d’informations, consultez [uniquement mon Code](../debugger/just-my-code.md)).
 

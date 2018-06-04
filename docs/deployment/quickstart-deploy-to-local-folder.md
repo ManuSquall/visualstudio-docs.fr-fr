@@ -1,4 +1,4 @@
----
+﻿---
 title: Déployer vers un dossier local - Visual Studio | Documents Microsoft
 ms.custom: ''
 ms.date: 05/08/2018
