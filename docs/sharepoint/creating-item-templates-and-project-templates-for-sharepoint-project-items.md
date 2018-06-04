@@ -20,20 +20,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f71352dad7b77b2ce92816e84a7c90ec16710ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94f93d58933ad0aba6cde985dc260fe3341aa5d2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691961"
 ---
-# <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Création de modèles d'élément et de modèles de projet pour les éléments de projet SharePoint
+# <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Création de modèles d’élément et de modèles de projet pour les éléments de projet SharePoint
   Lorsque vous définissez un type d’élément de projet SharePoint personnalisé, vous pouvez l’associer avec un modèle d’élément ou un modèle de projet afin que les autres développeurs peuvent utiliser l’élément de projet dans Visual Studio. Vous pouvez également créer un Assistant pour le modèle.  
   
  Par exemple, Visual Studio n’inclut pas un modèle de projet ou un modèle d’élément pour l’ajout d’un champ à un site SharePoint. Vous pouvez définir un type d’élément de projet SharePoint qui représente un champ et puis construire un modèle d’élément autres développeurs peuvent utiliser pour ajouter l’élément de champ à un projet SharePoint. Ou bien, vous pouvez construire un modèle de projet afin que les développeurs peuvent créer un nouveau projet SharePoint qui contient l’élément de champ. Dans les deux cas, vous pouvez également fournir un Assistant qui s’affiche lorsque les développeurs utilisent votre modèle. Cet Assistant peut collecter des informations à partir d’aux développeurs de configurer le nouvel élément ou le projet.  
   
  Modèles d’élément et les modèles de projet sont des fichiers .zip qui contiennent les fichiers qui sont utilisés par Visual Studio pour créer un élément de projet ou le projet. Pour plus d’informations sur les notions de base des modèles d’élément et les modèles de projet, consultez [création de modèles de projet et élément](/visualstudio/ide/creating-project-and-item-templates).  
   
-##  <a name="creatingitemtemplates"></a> Création de modèles d’élément  
+## <a name="create-item-templates"></a>Créer des modèles d’élément
  Lorsque vous créez un modèle d’élément pour un élément de projet SharePoint, il existe certains fichiers sont toujours requis et les fichiers facultatifs qui peuvent être utilisées par certains types d’éléments de projet. Pour une procédure pas à pas qui montre comment définir un type d’élément de projet SharePoint et créer un modèle d’élément pour celle-ci, consultez [procédure pas à pas : création d’un élément de projet d’Action personnalisé avec un modèle d’élément, partie 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Le tableau suivant répertorie les fichiers requis pour créer un modèle d’élément pour un élément de projet SharePoint.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
 |.aspx|Un fichier de page ASP.NET. Ce fichier contient le balisage XML qui définit une page d’application.|  
 |fichiers .cs ou .vb|Ces fichiers de code définissent le comportement des personnalisations de SharePoint qui ont un modèle de programmation qui est accessible à partir de Visual c# ou de code Visual Basic, telles que les pages d’application, les composants WebPart et les workflows.|  
   
-## <a name="creating-project-templates"></a>Création de modèles de projet  
+## <a name="create-project-templates"></a>Créer des modèles de projet
  Lorsque vous créez un modèle de projet SharePoint, il existe certains fichiers sont toujours les fichiers requis et facultatifs qui peuvent être utilisées par certains types de projets. En règle générale, les projets SharePoint incluent au moins un élément de projet SharePoint. Toutefois, cela n’est pas nécessaire. Par exemple, vous pouvez définir un modèle de projet SharePoint qui est destiné à être utilisée que pour déployer des solutions SharePoint créées dans d’autres projets.  
   
  Pour une procédure pas à pas qui montre comment définir un type d’élément de projet SharePoint et créer un modèle de projet pour celle-ci, consultez [procédure pas à pas : création d’un élément de projet colonne de Site avec un modèle de projet, partie 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -77,12 +78,12 @@ ms.lasthandoff: 04/16/2018
 |*featureName*.feature|Ce fichier définit une fonctionnalité SharePoint qui permet de regrouper plusieurs éléments de projet pour le déploiement. Lorsque vous utilisez le Concepteur de fonctionnalités pour personnaliser une fonctionnalité dans votre projet, Visual Studio stocke les données relatives à la fonctionnalité de ce fichier. Si vous souhaitez regrouper les éléments de projet différentes fonctionnalités, vous pouvez inclure plusieurs fichiers .feature.<br /><br /> Lorsque vous créez un modèle de projet SharePoint personnalisé, nous vous recommandons d’inclure uniquement le contenu obligatoire minimum dans chaque fichier .feature, et configurer les fonctionnalités à l’aide de l’API dans le <xref:Microsoft.VisualStudio.SharePoint.Features> espace de noms dans une extension qui est associée à la modèle de projet. Dans ce cas, votre modèle de projet est protégé contre les futures modifications de la structure du fichier .feature. Pour obtenir un exemple qui montre comment créer un fichier .feature avec uniquement le minimum requis, le contenu, consultez [procédure pas à pas : création d’un élément de projet colonne de Site avec un modèle de projet, partie 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Si vous souhaitez modifier un fichier .feature directement, vous pouvez vérifier le contenu en utilisant le schéma dans %Program Files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd.|  
 |*featureName*. Template.Xml|Ce fichier fournit la base pour le fichier de manifeste de fonctionnalité (Feature.xml) pour chaque fonctionnalité qui est générée à partir du projet. Vous pouvez ajouter du contenu à ce fichier si vous souhaitez spécifier un comportement qui n’est pas destiné à être modifié par les utilisateurs de votre type de projet. Pour plus d’informations, consultez [bloc de construction : fonctionnalités](http://go.microsoft.com/fwlink/?LinkId=169183) et [Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795) fichiers.<br /><br /> Lorsque vous générez un package de solution du projet, Visual Studio fusionne le contenu de chaque paire de *featureName*fichier .feature et *featureName*. Template.XML dans un fichier de manifeste de fonctionnalité. Pour plus d’informations sur la création de packages de solution, consultez [Comment : créer un Package de Solution SharePoint (wsp)](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b).|  
   
-## <a name="creating-wizards-for-item-templates-and-project-templates"></a>Création d’Assistants pour les modèles d’élément et les modèles de projet  
+## <a name="create-wizards-for-item-templates-and-project-templates"></a>Créer des Assistants pour les modèles d’élément et les modèles de projet
  Une fois que vous définissez un type d’élément de projet SharePoint et l’associez à un modèle d’élément ou un projet, vous pouvez également créer un Assistant. L’Assistant affiche lorsqu’un développeur utilise le modèle d’élément pour ajouter l’élément de projet SharePoint à un projet, ou lorsqu’un développeur utilise le modèle de projet pour créer un projet qui contient l’élément de projet SharePoint. L’Assistant peut être utilisé pour collecter des informations à partir de développeurs et à initialiser le nouvel élément de projet SharePoint.  
   
  Pour les procédures pas à pas qui montrent comment créer des Assistants pour les modèles d’élément et les modèles de projet, consultez [procédure pas à pas : création d’un élément de projet d’Action personnalisé avec un modèle d’élément, partie 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) et [procédure pas à pas : création d’un Site Élément de projet colonne avec un modèle de projet, partie 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
  [Définition des Types d’éléments de projet SharePoint personnalisé](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Procédure pas à pas : Création d’un élément de projet d’Action personnalisé avec un modèle d’élément, partie 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Procédure pas à pas : Création d’un élément de projet d’Action personnalisé avec un modèle d’élément, partie 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
@@ -90,4 +91,4 @@ ms.lasthandoff: 04/16/2018
  [Procédure pas à pas : Création d’un élément de projet de colonne de Site avec un modèle de projet, partie 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
  [Création de modèles de projet et d’élément](/visualstudio/ide/creating-project-and-item-templates)  
   
-  
+ 
