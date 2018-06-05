@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Comment : déboguer en Mode mixte | Documents Microsoft'
 ms.custom: ''
 ms.date: 06/19/2017
@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474246"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Comment : déboguer en mode mixte
 Les procédures suivantes décrivent comment déboguer le code managé et le code natif, également connu sous le nom de débogage en mode mixte. Pour ce faire, il existe deux scénarios, selon si la DLL ou l'application est écrite en code natif :  
@@ -41,7 +42,7 @@ Si vous n’avez pas accès au projet pour l’application appelante, vous pouve
   
 1.  Dans **l’Explorateur de solutions**, sélectionnez le projet natif.
   
-2.  Sur le **vue** menu, cliquez sur **Pages de propriétés**.
+2.  Dans le menu **vue**, cliquez sur **Pages de propriétés**.
   
 3.  Dans le  **\<projet > Pages de propriétés** boîte de dialogue, développez le **propriétés de Configuration** nœud et sélectionnez **débogage**.  
   
