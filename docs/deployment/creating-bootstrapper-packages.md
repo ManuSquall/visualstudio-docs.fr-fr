@@ -22,11 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 234f89f2d0a28c0836ee06df4c49c3ab60f102ce
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d3cc80a6ca29583fdc445b507aeb8f87267459d8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572723"
 ---
 # <a name="create-bootstrapper-packages"></a>Créer des packages de programme d’amorçage
 Le programme d'installation est un programme d'installation générique qui peut être configuré pour détecter et installer les composants redistribuables tels que les fichiers Windows Installer (msi) et les programmes exécutables. Le programme d'installation est également appelé programme d'amorçage. Il est programmé via un ensemble de manifestes XML qui spécifient les métadonnées permettant de gérer l'installation du composant.  Chaque composant redistribuable, ou un composant requis, qui apparaît dans le **conditions préalables** boîte de dialogue ClickOnce est un package de programme d’amorçage. Un package de programme d'amorçage est un groupe de répertoires et de fichiers qui contiennent des fichiers manifeste qui décrivent la façon dont le composant requis doit être installé. 
@@ -77,7 +78,7 @@ Sur les systèmes 64 bits, utilisez la clé de Registre suivante :
   
 Chaque composant redistribuable apparaît dans son propre sous-dossier du répertoire packages. Le produit de manifeste et redistribuable de fichiers doivent être placés dans ce sous-dossier. Les versions localisées des manifestes de composant et de package doivent être placées dans les sous-dossiers nommés en fonction du nom de Culture.  
   
-Une fois ces fichiers sont copiés dans le dossier du programme d’amorçage, le package du programme d’amorçage apparaît automatiquement dans Visual Studio **conditions préalables** boîte de dialogue. Si votre package de programme d’amorçage personnalisé n’apparaît pas, fermez et réouvrez la **conditions préalables** boîte de dialogue. Pour plus d'informations, consultez [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md).  
+Une fois ces fichiers sont copiés dans le dossier du programme d’amorçage, le package du programme d’amorçage apparaît automatiquement dans Visual Studio **conditions préalables** boîte de dialogue. Si votre package de programme d’amorçage personnalisé n’apparaît pas, fermez et réouvrez la **conditions préalables** boîte de dialogue. Pour plus d'informations, consultez [Composants requis, boîte de dialogue](../ide/reference/prerequisites-dialog-box.md).  
   
 Le tableau suivant présente les propriétés qui sont automatiquement remplies par le programme d'amorçage.  
   
@@ -86,7 +87,7 @@ Le tableau suivant présente les propriétés qui sont automatiquement remplies 
 |ApplicationName|Nom de l'application.|  
 |ProcessorArchitecture|Processeur et bits par mot de la plateforme ciblée par un exécutable. Les valeurs sont notamment les suivantes :<br /><br /> -Intel<br />-IA64<br />-AMD64|  
 |[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Numéro de version des systèmes d'exploitation Microsoft Windows 95, Windows 98 ou Windows ME. La syntaxe de la version est Major.Minor.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).xaspx)|Numéro de version des systèmes d'exploitation Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. La syntaxe de la version est Major.Minor.ServicePack.|  
+|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Numéro de version des systèmes d'exploitation Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. La syntaxe de la version est Major.Minor.ServicePack.|  
 |[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Version de l'assembly Windows Installer (msi.dll) exécuté durant l'installation.|  
 |[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Cette propriété est définie si l'utilisateur dispose de privilèges d'administrateur. Les valeurs sont true ou false.|  
 |InstallMode|Le mode d'installation indique l'emplacement d'installation du composant. Les valeurs sont notamment les suivantes :<br /><br /> Conditions préalables requises - HomeSite - sont installés à partir du site du fournisseur Web.<br />Conditions préalables de - SpecificSite - sont installés à partir de l’emplacement que vous sélectionnez.<br />Conditions préalables de - SameSite - sont installés dans le même emplacement que l’application.|  

@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0e2115c0d7839439f74b8c99be3ce5eecdef15
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 11a74d5214e434c7d7330bc7ea4e3bcd8a3e5905
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572697"
 ---
-# <a name="sample-xsd-file-simple-schema"></a>Exemple de fichier XSD : schéma simple
+# <a name="sample-xsd-file-simple-schema"></a>Exemple de fichier XSD : schéma Simple
 
 Le fichier XSD suivant est utilisé dans différents exemples de la documentation du Concepteur de schémas XSD. Ce fichier est un schéma de bon de commande simple.
 

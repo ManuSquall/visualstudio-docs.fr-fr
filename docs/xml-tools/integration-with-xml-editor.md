@@ -10,21 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2e2b7a9e6511faaa1941d65f6b328a07b10f79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ae7595121fcefa36998a88b53aae466d3a726cb
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573321"
 ---
-# <a name="integration-with-xml-editor"></a>Intégration à l'Éditeur XML
+# <a name="integration-with-xml-editor"></a>Intégration avec l’éditeur XML
 
 Le Concepteur de schémas XML est intégré à l'Éditeur XML. Si vous modifiez un fichier XSD dans l’éditeur XML, la modification apparaîtra dans le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md). Si vous avez le [vue du graphique](../xml-tools/graph-view.md) ou [affichage du modèle de contenu](../xml-tools/content-model-view.md) ouvert, la modification est également répercutée il. Vous pouvez naviguer entre le Concepteur de schémas XML et l'Éditeur XML des façons suivantes :
 
 -   Dans l’éditeur XML, cliquez sur un nœud et sélectionnez **afficher dans l’Explorateur de schémas XML**.
 
--   Dans la vue du graphique et l’Explorateur de schémas XML, double-cliquez sur un nœud, ou cliquez sur un nœud et sélectionnez **afficher le Code**. Dans l’affichage du modèle de contenu, cliquez sur un nœud et sélectionnez **afficher le Code**.
+-   Dans la vue du graphique et la **Explorateur de schémas XML**, double-cliquez sur un nœud, ou cliquez sur un nœud et sélectionnez **afficher le Code**. Dans l’affichage du modèle de contenu, cliquez sur un nœud et sélectionnez **afficher le Code**.
 
-La capture d'écran suivante montre un schéma XML ouvert dans l'Explorateur de schémas XML. L'Explorateur de schémas XML affiche le jeu de schémas dans une arborescence. L'éditeur XML affiche la vue de texte du nœud actif dans l'Explorateur de schémas XML.
+La capture d’écran suivante montre un schéma XML ouvert dans le **Explorateur de schémas XML**. Le **Explorateur de schémas XML** affiche le schéma défini dans une arborescence. L’éditeur XML affiche la vue de texte du nœud qui est actuellement active dans le **Explorateur de schémas XML**.
 
 ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
 

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a41f0843b33e1f73d9a2449fe954d8673350fc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573243"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Utilisation de l’attribut DebuggerDisplay
 Le [DebuggerDisplayAttribute (classe)](/dotnet/api/system.diagnostics.debuggerdisplayattribute) contrôle la façon dont un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys.  
@@ -87,6 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
+Le «, nq » indique le suffixe de l’évaluateur d’expression pour supprimer les guillemets lors de l’affichage de la valeur finale (nq = sans guillemets). 
   
 ## <a name="example"></a>Exemple  
  L'exemple de code suivant explique l'utilisation de `DebuggerDisplay`, ainsi que de `DebuggerBrowseable` et `DebuggerTypeProxy`. Lorsqu'il s'affiche dans une fenêtre de variables du débogueur, comme la fenêtre **Espion** , il produit une expansion de ce genre :  
