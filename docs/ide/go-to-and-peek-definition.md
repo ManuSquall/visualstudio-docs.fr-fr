@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe72522d235579147b645c27cf4f560827f555d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745761"
 ---
 # <a name="view-type-and-member-definitions"></a>Afficher les définitions de type et de membre
 
@@ -61,7 +62,7 @@ Quand vous exécutez la commande **Atteindre la définition** ou **Aperçu de d�
 
 Par exemple, si vous exécutez la commande **Atteindre la définition** pour <xref:System.Console>, les métadonnées de <xref:System.Console> apparaissent dans l’éditeur de code en tant que code source C#. Le code ressemble à sa déclaration, mais ne montre pas d’implémentation.
 
-![Métadonnées en tant que Source](../ide/media/metadatasource.png "MetadataSource")
+![Métadonnées en tant que source](../ide/media/metadatasource.png)
 
 > [!NOTE]
 > Quand vous essayez d’exécuter la commande **Atteindre la définition** ou **Aperçu de définition** pour des types ou des membres marqués comme internes, Visual Studio n’affiche pas leurs métadonnées en tant que code source, que l’assembly de référence soit ou non un assembly Friend.

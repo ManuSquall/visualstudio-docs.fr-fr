@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c9fe7ac91b8e4015204ee157f30c65583dc1df
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 951c65672f3b5aa6bb9555ace4622cfb60b04fc6
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263689"
 ---
-# <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Collecte de statistiques d’applications pour des applications autonomes en utilisant la ligne de commande du profileur
+# <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Collecter des statistiques d’applications pour des applications autonomes en utilisant la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des statistiques de performances d’une application cliente (autonome) utilisant la méthode d’échantillonnage à partir de la ligne de commande.  
   
 > [!NOTE]
@@ -36,20 +37,21 @@ Cette section décrit les procédures et les options de collecte des statistique
   
 ## <a name="related-tasks"></a>Tâches connexes  
   
-### <a name="profiling-stand-alone-applications"></a>Profilage d'applications autonomes  
+### <a name="profile-stand-alone-applications"></a>Profiler des applications autonomes  
   
 |Tâche|Contenu connexe|  
 |----------|---------------------|  
-|**Instrumenter une application**|-   [Collecte de données de minutage détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
-|**Collecter des données relatives à l’allocation de mémoire .NET et au garbage collection**|-   [Collecte de données de mémoire .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
-|**Collecter les données relatives aux conflits de ressources et à l’exécution des threads**|-   [Collecte de données concurrentielles](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
+|**Instrumenter une application**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
+|**Collecter des données relatives à l’allocation de mémoire .NET et au garbage collection**|-   [Collecter des données de mémoire .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
+|**Collecter les données relatives aux conflits de ressources et à l’exécution des threads**|-   [Collecter des données concurrentielles](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
   
-### <a name="profiling-by-using-the-sampling-method"></a>Profilage à l’aide de la méthode d’échantillonnage  
+### <a name="profile-by-using-the-sampling-method"></a>Profiler à l’aide de la méthode d’échantillonnage  
   
 |Tâche|Contenu connexe|  
 |----------|---------------------|  
-|**Profiler des applications web ASP.NET**|-   [Collecte de statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|  
-|**Profiler des services**|-   [Collecte de statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md). Explique comment collecter les statistiques de performances à partir des services de Windows à l’aide de la méthode d’échantillonnage.|  
+|**Profiler des applications web ASP.NET**|-   [Collecter des statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|  
+|**Profiler des services**|-   [Collecter des statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md). Explique comment collecter les statistiques de performances à partir des services de Windows à l’aide de la méthode d’échantillonnage.|  
   
-### <a name="analyzing-sampling-data-views-and-reports"></a>Analyse des vues et des rapports de données d’échantillonnage  
+### <a name="analyze-sampling-data-views-and-reports"></a>Analyser des vues et des rapports de données d’échantillonnage  
  [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)
+

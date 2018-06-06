@@ -1,6 +1,7 @@
 ---
-title: Guide pratique pour tester une DLL Visual C++ conçue pour des applications UWP dans Visual Studio | Microsoft Docs
+title: Guide pratique pour tester une DLL Visual C++ conçue pour des applications UWP dans Visual Studio
 ms.date: 02/15/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
@@ -8,11 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 56bd0acf242f0fac4ccb2d73063e8ee73d234a0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751869"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Guide pratique pour tester une DLL Visual C++
 
@@ -30,11 +32,11 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 3.  Nommez le projet `RooterLibTests`, spécifiez l’emplacement, nommez la solution `RooterLib`, puis vérifiez que la case **Créer le répertoire pour la solution** est cochée.
 
-     ![Spécifier la solution, le nom du projet et l’emplacement](../test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![Spécifier la solution, le nom du projet et l’emplacement](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
 4.  Dans le nouveau projet, ouvrez **unittest1.cpp**.
 
-     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
      Prenez note de ce qui suit :
 
@@ -63,13 +65,13 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
      Le projet de test est généré et exécuté. La fenêtre de l’Explorateur de tests s’affiche, et le test est listé sous **Tests réussis**. Le volet de résumé situé au bas de la fenêtre fournit des informations supplémentaires sur le test sélectionné.
 
-     ![Explorateur de tests](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
+     ![Explorateur de tests](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> Ajouter le projet DLL à la solution
 
 1.  Dans l'Explorateur de solutions, choisissez le nom de la solution. Dans le menu contextuel, choisissez **Ajouter**, puis **Ajouter un nouveau projet**.
 
-     ![Créer le projet RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")
+     ![Créer le projet RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  Dans la boîte de dialogue **Ajouter un nouveau projet**, choisissez **DLL (applications UWP)**.
 
@@ -103,7 +105,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
     1.  Dans l’Explorateur de solutions, choisissez le projet **RooterLib**, puis **Propriétés** dans le menu contextuel.
 
-         ![Ajouter la définition d’un symbole de préprocesseur](../test/media/ute_cpp_windows_addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
+         ![Ajouter la définition d’un symbole de préprocesseur](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
     2.  Dans la boîte de dialogue Page de propriétés de RooterLib, développez **Propriétés de configuration**, **C++**, puis choisissez **Préprocesseur**.
 
@@ -174,7 +176,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 5.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.
 
-     ![Test de base réussi](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+     ![Test de base réussi](../test/media/ute_cpp_testexplorer_basictest.png)
 
  Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.
 
@@ -205,7 +207,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 3.  Le test échoue.
 
-     ![Échec de RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest a échoué](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Vérifiez que chaque test échoue immédiatement après que vous l'avez écrit. Vous évitez ainsi de commettre l'erreur d'écrire un test qui n'échoue jamais.
@@ -236,7 +238,8 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
      Les deux tests réussissent.
 
 > [!TIP]
->  Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.
+> Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.
+
 
 ##  <a name="Debug_a_failing_test"></a> Déboguer un test ayant échoué
 
@@ -276,7 +279,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
      Le test échoue. Sélectionnez le nom du test dans l'explorateur de tests. L'échec d'assertion est mis en surbrillance. Le message d'échec est visible dans le volet de détails de l'Explorateur de tests.
 
-     ![Échec de NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests, échec](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 3.  Pour voir pourquoi le test échoue, parcourez la fonction :
 
@@ -306,7 +309,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
  Toutes les tests réussissent maintenant.
 
- ![Tous les tests sont concluants](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+ ![Tous les tests sont concluants](../test/media/ute_ult_alltestspass.png)
 
 ##  <a name="Refactor_the_code_without_changing_tests"></a> Refactoriser le code sans modifier les tests
 

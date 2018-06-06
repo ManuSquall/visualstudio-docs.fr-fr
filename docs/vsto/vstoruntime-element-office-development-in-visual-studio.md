@@ -1,5 +1,5 @@
 ---
-title: '&lt;vstoRuntime&gt; élément (développement Office dans Visual Studio) | Documents Microsoft'
+title: '&lt;vstoRuntime&gt; élément (développement Office dans Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee2d50d69c363d5073a09b953c00d22a11ef5315
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d21e097c0a05dfba2aa15bc41e37441ae02a63e4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768064"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime&gt; élément (développement Office dans Visual Studio)
   L’élément `vstoRuntime` de l’espace de noms `vstav3` contient une version prise en charge du runtime Visual Studio Tools pour Office pour une solution Office spécifique.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <vstoRuntime  
     release  
     version  
@@ -49,9 +50,9 @@ ms.lasthandoff: 04/16/2018
  `vstoRuntime` ne comporte aucun élément.  
   
 ## <a name="example"></a>Exemple  
- L’exemple de code suivant illustre l’élément `vstoRuntime` d’un manifeste de l’application pour une solution Office déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ L’exemple de code suivant illustre l’élément `vstoRuntime` d’un manifeste de l’application pour une solution Office déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
   
-```  
+```xml  
 <vstav3:vstoRuntime  
     release="VSTOR40Beta1"  
     version="10.0.20303"  
@@ -59,8 +60,8 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
- [Manifestes de déploiement pour les Solutions Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifeste d’application ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

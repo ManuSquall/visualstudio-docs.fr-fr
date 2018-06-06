@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91c8f8003f610e9cf4aa440fa0175bb13267896e
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f32dedf1b0f431f3385c14f7c0d4d5ddd27982a9
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Référence générale (développement Office dans Visual Studio)
   Cette section contient des détails techniques sur les projets Microsoft Office dans Visual Studio.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 05/22/2018
  [Manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md)  
  Décrit la façon dont les manifestes de déploiement sont utilisées les solutions Office.  
   
- [Référence de l’Interface utilisateur &#40;développement Office dans Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
+ [Référence de l’interface utilisateur &#40;développement Office dans Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
  Répertorie les rubriques qui décrivent les options qui apparaissent dans les différentes boîtes de dialogue, de windows et d’autres interfaces utilisateur.  
   
  [Messages d’erreur &#40;développement Office dans Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)  

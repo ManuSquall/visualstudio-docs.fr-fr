@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf66eb2bc780d0e67bc51658eda062f620980c47
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 75945e1a3e66951021866370d043a645c8918541
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447685"
 ---
 # <a name="refactor-code"></a>Refactoriser du code
 
@@ -29,5 +30,5 @@ Diverses opérations de refactorisation sont disponibles pour les différents la
 
 - [Actions rapides](../ide/quick-actions.md)
 - [IDE Visual Studio](../ide/visual-studio-ide.md)
-- [Écrire du code dans l’éditeur de code et de texte](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Aperçu des changements](../ide/preview-changes.md)

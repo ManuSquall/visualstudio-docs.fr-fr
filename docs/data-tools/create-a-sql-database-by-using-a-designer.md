@@ -14,11 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c0cefc826c26e1f981866a3ceb16fc16d2d522b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 53f34fbed4a2067836c5f2c7a8d4bf8aa6c09d29
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747038"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Créer une base de données et ajouter des tables dans Visual Studio
 Vous pouvez utiliser Visual Studio pour créer et mettre à jour un fichier de base de données locale dans SQL Server Express LocalDB. Vous pouvez également créer une base de données en exécutant les instructions Transact-SQL dans le **l’Explorateur d’objets SQL Server** fenêtre outil dans Visual Studio. Dans cette rubrique, nous allons créer un fichier .mdf et ajouter des tables et des clés à l’aide du Concepteur de tables.
@@ -35,7 +36,7 @@ Pour effectuer cette procédure pas à pas, vous devez disposer facultatif **sto
 
 3.  Dans la liste des modèles d’élément, faites défiler vers le bas et sélectionnez **base de données basée sur le Service**.
 
-     ![Boîte de dialogue Modèles élément](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")
+     ![Boîte de dialogue Modèles d'élément](../data-tools/media/raddata-vsitemtemplates.png)
 
 4.  Nom de la base de données **SampleDatabase**, puis sélectionnez le **ajouter** bouton.
 
@@ -88,13 +89,13 @@ Dans cette section, vous allez créer deux tables, une clé primaire dans chaque
 
 6.  Nommez la table Customers en mettant à jour la première ligne du volet de script afin qu'elle corresponde à l'exemple suivant :
 
-    ```
+    ```sql
     CREATE TABLE [dbo].[Customers]
     ```
 
     Vous devez voir quelque chose de similaire à :
 
-    ![Concepteur de tables](../data-tools/media/raddata-table-designer.png "raddata Concepteur de tables")
+    ![Concepteur de tables](../data-tools/media/raddata-table-designer.png)
 
 7.  Dans le coin supérieur gauche de la **Concepteur de tables**, sélectionnez le **mise à jour** bouton.
 
@@ -129,7 +130,7 @@ Dans cette section, vous allez créer deux tables, une clé primaire dans chaque
 ### <a name="to-create-a-foreign-key"></a>Pour créer une clé étrangère
 1.  Dans le volet contextuel sur le côté droit de la grille, ouvrez le menu contextuel de **clés étrangères**, puis sélectionnez **ajouter une nouvelle clé étrangère**, comme le montre l’illustration suivante.
 
-     ![Ajout d’une clé étrangère dans le Concepteur de tables](../data-tools/media/foreignkey.png "ForeignKey")
+     ![Ajout d'une clé étrangère dans le concepteur de tables](../data-tools/media/foreignkey.png)
 
 2.  Dans la zone de texte qui apparaît, remplacez **ToTable** avec `Customers`.
 

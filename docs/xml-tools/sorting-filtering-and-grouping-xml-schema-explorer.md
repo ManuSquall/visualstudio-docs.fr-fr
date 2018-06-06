@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4354e58e8de2d877e726b4615bac3832bfc37d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34693667"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Tri, filtrage et regroupement (Explorateur de schémas XML)
 
-Cette rubrique décrit les options qui sont disponibles via le **tri, filtrage et regroupement Options** menu dans la barre d’outils de l’Explorateur de schémas XML.
+Cette rubrique décrit les options qui sont disponibles via le **tri, filtrage et regroupement Options** menu sur le **Explorateur de schémas XML** barre d’outils.
 
-## <a name="filter-options"></a>Options du filtre
+## <a name="filter-options"></a>Options de filtre
 
  Les options de filtrage suivantes sont disponibles. Par défaut, le **afficher les espaces de noms** et **afficher les fichiers de schéma** sont sélectionnées.
 
@@ -32,7 +33,7 @@ Cette rubrique décrit les options qui sont disponibles via le **tri, filtrage e
 
 ## <a name="sorting-options"></a>Options de tri
 
- Les options de tri suivantes sont disponibles. La valeur par défaut est **trier par Type**. Les options Trier par ne s'appliquent pas aux fichiers et aux espaces de noms.
+ Les options de tri suivantes sont disponibles. La valeur par défaut est **trier par Type**. **Trier par** options ne s’appliquent pas aux fichiers et aux espaces de noms.
 
 -   **Trier par Type**.
 
@@ -78,6 +79,6 @@ Cette rubrique décrit les options qui sont disponibles via le **tri, filtrage e
 
  Le **l’ordre du Document** option est disponible lorsque le **afficher les fichiers de schéma** option est sélectionnée. Lorsque **l’ordre du Document** est sélectionnée, les nœuds globaux sont affichés dans l’ordre dans lequel ils apparaissent dans le fichier de schéma.
 
-## <a name="persisting-sortfilter-options"></a>Persistance des options de tri/filtrage
+## <a name="persisting-sortfilter-options"></a>Options de tri/filtre persistantes
 
  Les options de tri, de filtrage et de regroupement sont enregistrées dans le Registre pour chaque utilisateur, indépendamment de la solution ou des fichiers ouverts lors de la modification des paramètres.

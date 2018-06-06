@@ -21,11 +21,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dccd4af0c14787ef34c1c558f83ecb2d6f0c1cea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 063fe4f61e6e3d8e8ed9e54b990029f2cf408e24
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressions dans le débogueur Visual Studio
 Le débogueur Visual Studio inclut des évaluateurs d’expression qui fonctionnent lorsque vous entrez une expression dans la boîte de dialogue **Espion express** , la fenêtre **Espion** ou la fenêtre **Exécution** . Les évaluateurs d’expression travaillent également dans la fenêtre **Points d’arrêt** et à beaucoup d’autres emplacements du débogueur.
@@ -122,7 +122,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>Expressions non prises en charge en C#  
   
 ### <a name="dynamic-objects"></a>Objets dynamiques  
- Vous pouvez utiliser des variables dans les expressions du débogueur qui sont typées statiquement comme dynamiques. Quand des objets qui implémentent l’interface [IDynamicMetaObjectProvider Interface](http://msdn.microsoft.com/Library/e887a72d-ebe2-4253-a7e8-3d8d05154647) sont évalués dans la fenêtre Espion, un nœud Affichage dynamique est ajouté. Le nœud Affichage dynamique affiche les membres de l’objet, mais n’autorise pas la modification des valeurs des membres.  
+ Vous pouvez utiliser des variables dans les expressions du débogueur qui sont typées statiquement comme dynamiques. Lorsque des objets qui implémentent <xref:System.Dynamic.IDynamicMetaObjectProvider> sont évalués dans la fenêtre Espion, un nœud Affichage dynamique est ajouté. Le nœud Affichage dynamique affiche les membres de l’objet, mais n’autorise pas la modification des valeurs des membres.  
   
  Les fonctionnalités suivantes des objets dynamiques ne sont pas prises en charge :  
   

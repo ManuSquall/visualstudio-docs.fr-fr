@@ -1,7 +1,7 @@
 ---
-title: Présentation de l’éditeur de Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Présentation de l’éditeur de Visual Studio
 ms.date: 11/30/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
@@ -11,11 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f627d7157972e277589d2edf07309190c6430d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8231b36f2fe44a04e16b420eb13bfcc4eb30c696
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573282"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Démarrage rapide : utiliser l’éditeur de code
 
@@ -23,25 +24,25 @@ Dans cette présentation de 10 minutes de l’éditeur, vous allez ajouter du co
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) pour l’installer gratuitement.
 
-Ce guide de démarrage rapide suppose que vous connaissez déjà un langage de programmation. Si ce n’est pas le cas, nous vous suggérons de commencer par consulter l’un des guides de démarrage rapide de programmation, par exemple, créer une application web en [Python](../ide/quickstart-python.md) ou en [C#](../ide/tutorial-csharp-aspnet-core.md), ou créer une application de console en [Visual Basic](../ide/quickstart-visual-basic-console.md) ou en [C++](../ide/quickstart-cpp.md).
+Ce guide de démarrage rapide suppose que vous connaissez déjà un langage de programmation. Si ce n’est pas le cas, nous vous suggérons de commencer par consulter l’un des guides de démarrage rapide de programmation, par exemple, créer une application web en [Python](../ide/quickstart-python.md) ou en [C#](../ide/tutorial-csharp-aspnet-core.md), ou créer une application de console en [Visual Basic](../ide/quickstart-visual-basic-console.md) ou en [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Créer un fichier de code
 
 Vous allez commencer par créer un fichier et y ajouter du code. Notez que vous n’avez pas besoin de créer un projet pour avoir accès à certaines fonctionnalités de l’éditeur.
 
-1. Ouvrez Visual Studio et, dans le menu **Fichier** de la barre de menus, choisissez **Nouveau** > **Fichier...**.
+1. Ouvrez Visual Studio et, dans le menu **Fichier** de la barre de menus, choisissez **Nouveau** > **Fichier**.
 
 1. Dans la boîte de dialogue **Nouveau fichier**, sous la catégorie **Général**, choisissez **Classe Visual C#**, puis choisissez **Ouvrir**.
 
    Le nouveau fichier qui s’ouvre dans l’éditeur présente le squelette d’une classe C#.
 
-## <a name="using-code-snippets"></a>Utilisation d’extraits de code
+## <a name="use-code-snippets"></a>Utiliser des extraits de code
 
 Visual Studio fournit des extraits de code qui vous aident à créer rapidement et facilement les blocs de code couramment utilisés. Ces [extraits de code](../ide/code-snippets.md) sont disponibles pour plusieurs langages de programmation, y compris C#, Visual Basic et C++. Vous allez maintenant ajouter l’extrait de code `void Main` C# dans votre fichier.
 
 1. Placez votre curseur sous l’accolade fermante du constructeur `Class1` et entrez les caractères `svm`.
 
-   Une boîte de dialogue IntelliSense s’affiche, avec des informations sur l’extrait de code `svm`.
+   Une boîte de dialogue **IntelliSense** s’affiche, avec des informations sur l’extrait de code `svm`.
 
    ![Extrait de code IntelliSense](media/quickstart-intellisense-snippet.png)
 
@@ -49,13 +50,13 @@ Visual Studio fournit des extraits de code qui vous aident à créer rapidement 
 
    La signature de la méthode `static void Main()` est ajoutée au fichier. La méthode `Main()` est le point d’entrée pour les applications C#.
 
-Les extraits de code disponibles diffèrent selon les langages. Pour voir quels extraits de code sont disponibles pour votre langage de programmation, choisissez **Edition**, **IntelliSense**, **Insérer un extrait de code...**, puis choisissez le dossier de votre langage. Pour C#, la liste ressemble à ceci :
+Les extraits de code disponibles diffèrent selon les langages. Pour voir quels extraits de code sont disponibles pour votre langage de programmation, choisissez **Edition** > **IntelliSense** > **Insérer un extrait de code**, puis choisissez le dossier de votre langage. Pour C#, la liste ressemble à ceci :
 
 ![Liste d’extraits de code C#](media/quickstart-code-snippet-list.png)
 
 La liste contient des extraits de code permettant de créer une classe, un constructeur, `Console.WriteLine()`, des boucles `for`, des instructions `if` et `switch`, et bien d’autres éléments.
 
-## <a name="commenting-out-code"></a>Commenter du code
+## <a name="comment-out-code"></a>Commenter du code
 
 La barre d’outils a plusieurs boutons conçus pour vous aider à écrire du code plus rapidement. Par exemple, utilisez ces boutons pour activer ou désactiver le mode de saisie semi-automatique IntelliSense, augmenter ou réduire un retrait, définir un signet ou commenter du code. Dans cette section, nous allons commenter du code que nous ne souhaitons pas compiler.
 
@@ -91,15 +92,15 @@ La barre d’outils a plusieurs boutons conçus pour vous aider à écrire du co
 
    Les caractères de commentaire C# `//` sont ajoutés au début de chaque ligne sélectionnée pour commenter le code.
 
-## <a name="collapsing-code-blocks"></a>Réduction des blocs de code
+## <a name="collapse-code-blocks"></a>Réduire les blocs de code
 
 Nous n’avons pas besoin de voir le constructeur vide de `Class1` qui a été généré. Pour plus de lisibilité, nous allons donc réduire ce bloc de code. Choisissez la petite case grise avec le signe moins qui se trouve dans la marge de la première ligne du constructeur. Si vous préférez utiliser le clavier, placez le curseur n’importe où dans le code du constructeur et appuyez sur **Ctrl**+**M**, **Ctrl**+**M**.
 
 ![Bouton de réduction du mode Plan](media/quickstart-collapse.png)
 
-Le bloc de code est réduit de façon à afficher uniquement la première ligne, suivie de points de suspension (`...`). Pour redévelopper le bloc de code, cliquez sur la même case grise, qui affiche maintenant un signe plus, ou appuyez sur **Ctrl**+**M**, **Ctrl**+**M**  à nouveau. Cette fonctionnalité, appelée [mode Plan](../ide/outlining.md), est très utile pour réduire des méthodes longues ou des classes entières.
+Le bloc de code est réduit de façon à afficher uniquement la première ligne, suivie de points de suspension (`...`). Pour redévelopper le bloc de code, cliquez sur la même case grise, qui affiche maintenant un signe plus, ou appuyez sur **Ctrl**+**M**, **Ctrl**+**M**  à nouveau. Cette fonctionnalité, appelée [Mode Plan](../ide/outlining.md), est très utile pour réduire des méthodes longues ou des classes entières.
 
-## <a name="viewing-symbol-definitions"></a>Affichage des définitions de symbole
+## <a name="view-symbol-definitions"></a>Afficher les définitions de symbole
 
 L’éditeur de Visual Studio facilite l’inspection de la définition d’un type, d’une méthode, etc. Une façon de faire est d’accéder au fichier qui contient la définition, par exemple en choisissant **Atteindre la définition** à partir de n’importe quel endroit où le symbole est référencé. Une autre façon encore plus rapide, sans avoir à déplacer le focus en dehors du fichier dans lequel vous travaillez, consiste à utiliser la fonctionnalité [Aperçu de la définition](../ide/go-to-and-peek-definition.md#peek-definition). Vous allez afficher un aperçu de la définition de `string`.
 
@@ -111,7 +112,7 @@ L’éditeur de Visual Studio facilite l’inspection de la définition d’un t
 
 1. Fermez la fenêtre Aperçu de la définition en choisissant la petite case avec un « x » dans le coin supérieur droit de la fenêtre indépendante.
 
-## <a name="using-intellisense-to-complete-words"></a>Utilisation d’IntelliSense pour compléter des mots
+## <a name="use-intellisense-to-complete-words"></a>Utiliser IntelliSense pour compléter des mots
 
 [IntelliSense](../ide/using-intellisense.md) est une aide précieuse quand vous écrivez du code. Cette fonctionnalité peut afficher des informations sur les membres d’un type disponibles, ou les détails des paramètres des différentes surcharges d’une méthode. Vous pouvez également utiliser IntelliSense pour compléter un mot automatiquement quand vous avez tapé suffisamment de caractères pour lever toute ambiguïté sur le mot. Vous allez maintenant ajouter une ligne de code pour afficher les chaînes ordonnées dans la fenêtre de console.
 
@@ -136,11 +137,11 @@ L’éditeur de Visual Studio facilite l’inspection de la définition d’un t
    }
    ```
 
-## <a name="refactoring-a-name"></a>Refactorisation d’un nom
+## <a name="refactor-a-name"></a>Refactoriser un nom
 
-Aucun développeur ne réussit à créer un code parfait dès le départ. L’une de vos premières modifications sera probablement de changer le nom d’une variable ou d’une méthode. Nous allons donc essayer la fonctionnalité de [refactorisation](../ide/refactoring-in-visual-studio.md) de Visual Studio pour renommer la variable `_words` en `words`.
+Aucun développeur ne réussit à créer un code parfait dès le départ. L’une de vos premières modifications sera probablement de changer le nom d’une variable ou d’une méthode. Nous allons donc essayer la fonctionnalité [Refactoriser](../ide/refactoring-in-visual-studio.md) de Visual Studio pour renommer la variable `_words` en `words`.
 
-1. Placez votre curseur sur la définition de la variable `words`, puis choisissez **Renommer...** dans le menu contextuel (clic droit), ou appuyez sur **Ctrl**+**R**, **Ctrl**+**R**.
+1. Placez votre curseur sur la définition de la variable `words`, puis choisissez **Renommer** dans le menu contextuel (clic droit), ou appuyez sur **Ctrl**+**R**, **Ctrl**+**R**.
 
    Une boîte de dialogue contextuelle **Renommer** s’affiche en haut à droite de l’éditeur.
 
@@ -154,7 +155,7 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous avez terminé ce guide de démarrage rapide pour l’éditeur de Visual Studio. Vous pouvez ensuite effectuer d’autres démarrages rapides pour l’IDE de Visual Studio, découvrir d’autres méthodes de [navigation dans le code](../ide/navigating-code.md) ou consultez les liens fournis pour en savoir plus sur les fonctionnalités que nous avons vues. Bon développement !
+Vous avez terminé ce guide de démarrage rapide pour l’éditeur de Visual Studio. Vous pouvez ensuite suivre d’autres guides de démarrage rapide pour l’IDE de Visual Studio, découvrir d’autres méthodes pour [naviguer dans le code](../ide/navigating-code.md) ou consulter les liens fournis pour en savoir plus sur les fonctionnalités que nous avons vues. Bon développement !
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -165,4 +166,4 @@ Vous avez terminé ce guide de démarrage rapide pour l’éditeur de Visual Stu
 - [Mode Plan](../ide/outlining.md)
 - [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../ide/refactoring-in-visual-studio.md)
-- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
+- [Utiliser IntelliSense](../ide/using-intellisense.md)

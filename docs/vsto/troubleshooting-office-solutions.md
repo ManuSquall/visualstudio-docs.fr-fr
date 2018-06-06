@@ -1,5 +1,5 @@
 ---
-title: Dépannage des Solutions Office | Documents Microsoft
+title: Dépannage des solutions Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,36 +17,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c08f2a55e6ff8e04a2bdb691c882104caf0c3063
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1f3fa22f6f6c0b6bb980be28faa46912bacbe341
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34693183"
 ---
-# <a name="troubleshooting-office-solutions"></a>Dépannage des solutions Office
+# <a name="troubleshoot-office-solutions"></a>Dépannage des solutions Office
   Cette section contient des conseils pour la résolution des problèmes courants que vous pouvez rencontrer lors de la création de solutions à l’aide des outils de développement Office dans Visual Studio.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Dépannage d’erreurs dans les solutions Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
+ [Résoudre les erreurs dans les solutions Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
  Décrit les problèmes courants qui peuvent survenir pendant que vous créez, exécutez et testez vos solutions Office dans Visual Studio.  
   
- [Guide pratique pour réactiver un complément VSTO qui a été désactivé](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
+ [Comment : réactiver un complément qui a été désactivé.](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
  Décrit comment réactiver un complément VSTO qui a été désactivé de manière forcée ou en douceur.  
   
- [Ressources supplémentaires de résolution des erreurs dans les solutions Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
+ [Prise en charge supplémentaire pour les erreurs dans les solutions Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
  Décrit d’autres ressources pour le dépannage des erreurs et des avertissements dans les solutions Office.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Dépannage de la sécurité des solutions Office](../vsto/troubleshooting-office-solution-security.md)  
+ [Résoudre les problèmes de sécurité des solutions Office](../vsto/troubleshooting-office-solution-security.md)  
  Décrit les problèmes courants que vous pouvez rencontrer lorsque vous travaillez à la sécurisation des solutions Office.  
   
- [Dépannage du déploiement de solutions Office](../vsto/troubleshooting-office-solution-deployment.md)  
+ [Résoudre les problèmes de déploiement de solutions Office](../vsto/troubleshooting-office-solution-deployment.md)  
  Décrit les problèmes courants que vous pouvez rencontrer lorsque vous déployez des solutions Office.  
   
- [Déploiement d’une solution Office](../vsto/deploying-an-office-solution.md)  
+ [Déployer une solution Office](../vsto/deploying-an-office-solution.md)  
  Fournit des liens vers des informations sur le déploiement de vos solutions, notamment en matière de sécurité, ainsi que sur les problèmes à prendre en considération lors du choix d’un modèle de déploiement.  
   
- [Sécurisation de solutions Office](../vsto/securing-office-solutions.md)  
+ [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)  
  Contient des rubriques qui expliquent comment les solutions Office incorporent les fonctionnalités de sécurité disponibles avec le .NET Framework.  
   
  [Tâches courantes en matière de programmation Office](../vsto/common-tasks-in-office-programming.md)  

@@ -9,16 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ce2fa2f067b72d051aa21eba0db2b8f0eda8b43f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4cfe9549880646fe9ba0a487045b005366c075
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749474"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Création d'un langage spécifique à un domaine basé sur Windows Forms
 Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de langage de spécifique à un domaine (DSL), au lieu d’utiliser un diagramme DSL. Cette rubrique vous guide dans la liaison d’un Windows Form à DSL, à l’aide de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2") instance A DSL, affichant une interface utilisateur du formulaire Windows et l’Explorateur de modèles.
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) instance A DSL, affichant une interface utilisateur du formulaire Windows et l’Explorateur de modèles.
 
 ## <a name="creating-a-windows-forms-dsl"></a>Création d’un Windows Forms DSL
  Le **minimale WinForm concepteur** les modèle DSL crée une DSL minimale que vous pouvez modifier pour l’adapter à vos propres exigences.
@@ -68,7 +69,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 ## <a name="updating-the-dsl-definition"></a>Mise à jour la définition DSL
  Suit que la définition DSL est utilisée dans cette procédure pas à pas.
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 #### <a name="to-update-the-dsl-definition"></a>Pour mettre à jour la définition DSL
 
@@ -127,7 +128,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
      Les propriétés et les relations de votre classe de modèle s’affichent dans la fenêtre Sources de données.
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
 #### <a name="to-connect-your-model-to-a-form"></a>Pour se connecter de votre modèle à un formulaire
 
@@ -172,7 +173,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
 -   Elle garantit que, lorsque l’utilisateur sélectionne une ligne, la fenêtre Propriétés affiche les propriétés de l’élément de modèle correspondant, au lieu de la ligne de grille de données.
 
- ![DslWpf4](../modeling/media/dslwpf4.png "DslWpf4") schéma des liens entre des sources de données et les vues.
+ ![DslWpf4](../modeling/media/dslwpf4.png) schéma des liens entre des sources de données et les vues.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Pour terminer les liaisons du DSL
 
@@ -301,7 +302,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
      Vous devez être en mesure de modifier le nom de l’élément dans la vue de grille de données. Vous pouvez également le supprimer à partir de là.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>À propos du code pour ajouter un élément
  Pour les nouveaux boutons de l’élément, le code suivant de remplacement est légèrement plus simple.

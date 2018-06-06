@@ -1,5 +1,5 @@
 ---
-title: Analyse de l’activité des utilisateurs virtuels d’un test de charge dans Visual Studio | Microsoft Docs
+title: Analyse de l’activité des utilisateurs virtuels d’un test de charge dans Visual Studio
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,18 +11,20 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5f874b070e726374a20e821508115b5798f40b80
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c91cd1a2ea721743c289b6664ddd0a76ceedbc4f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750836"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analyse de l'activité des utilisateurs virtuels d'un test de charge dans la vue Détails de l'analyseur de test de charge
 
 **Graphique d’activités des utilisateurs virtuels**
 
- ![Graphique d’activités des utilisateurs virtuels](../test/media/virtual_actchart.png "Virtual_ActChart")
+ ![Graphique d'activités des utilisateurs virtuels](../test/media/virtual_actchart.png)
 
  La vue Détails affiche le graphique d'activités des utilisateurs virtuels, utilisé pour analyser visuellement les actions des utilisateurs virtuels individuels exécutées au cours du test de charge. Ce graphique permet de visualiser les modèles d’activités des utilisateurs et les modèles de charge, de mettre en corrélation des tests lents ou ayant échoué et de consulter des requêtes basées sur d’autres activités des utilisateurs virtuels. Le graphique d’activités des utilisateurs virtuels peut également vous aider à identifier les pics d’utilisation d’une UC ou les chutes d’activité des requêtes par seconde, ainsi que les tests ou pages en cours d’exécution pendant ces pics ou ces chutes.
 
@@ -31,7 +33,7 @@ ms.lasthandoff: 04/16/2018
 
  **Panneau Légende du détail**
 
- ![Panneau Légende du détail](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+ ![Panneau Légende du détail](../test/media/ltest_detailslegend.png)
 
  Le panneau Légende du détail est visible dans le graphique d'activités des utilisateurs virtuels. Il vous permet de filtrer les tests, les pages et les transactions en fonction de plusieurs critères différents. Par exemple, vous pouvez supprimer certains tests de la vue, supprimer tous les tests réussis ou supprimer les tests qui ont abouti à certains échecs. Vous pouvez également supprimer tous les tests qui n'ont pas de journaux.
 
@@ -39,7 +41,7 @@ ms.lasthandoff: 04/16/2018
 
  **Panneau Filtrer les résultats**
 
- ![Panneau Filtrer les résultats](../test/media/ltest_filterresults.png "LTest_FilterResults")
+ ![Panneau de filtrage des résultats](../test/media/ltest_filterresults.png)
 
  Le panneau Résultats du filtre est visible dans le graphique d'activités des utilisateurs virtuels. Le panneau Résultats du filtre peut filtrer en fonction des éléments suivants :
 

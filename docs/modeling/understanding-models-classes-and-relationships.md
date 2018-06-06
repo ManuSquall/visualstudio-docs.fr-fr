@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 408c74dbbf23abee5d548484014e0f2ddc66963e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 394b21d396bf92b794060ff27ed940e25a77aa26
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748486"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
 Un langage spécifique à un domaine (DSL) est défini par son fichier de définition DSL, ainsi que tout code de programme personnalisé que vous pouvez écrire. La plupart du code de programme dans la solution DSL est généré à partir de ce fichier.
@@ -25,13 +26,13 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
 ## <a name="the-dsl-definition"></a>La définition DSL
  Lorsque vous ouvrez `Dsl\DslDefinition.dsl`, votre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fenêtre ressemble à l’image suivante.
 
- ![concepteur DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![concepteur dsl](../modeling/media/dsl_designer.png)
 
  Les informations les plus importantes dans la définition DSL s’affiche dans le diagramme de définition DSL. Informations supplémentaires, qui fait également partie de DslDefinition.dsl, s’affiche dans l’Explorateur DSL, qui apparaît généralement situé sur le côté du diagramme. Vous travaillez avec le schéma pour les tâches les plus fréquentes et avec l’Explorateur de DSL pour les personnalisations plus avancées.
 
  Le diagramme de définition DSL montre les classes de domaine qui définissent des éléments de modèle et les relations qui définissent des liens entre éléments de modèle. Il montre également les formes et connecteurs qui sont utilisées pour afficher les éléments de modèle à l’utilisateur.
 
- ![concepteur DSL avec couloir](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![concepteur dsl avec couloir](../modeling/media/dsl_desinger.png)
 
  Lorsque vous sélectionnez un élément dans la définition DSL, sur le diagramme ou dans l’Explorateur DSL, les informations le concernant s’affiche dans la fenêtre Propriétés. Informations supplémentaires peuvent être affichées dans la fenêtre Détails DSL.
 
@@ -45,13 +46,13 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
 
  Cette illustration montre un modèle qui a été créé par l’utilisateur d’une bibliothèque de musique DSL. Albums de musique sont représentées par des zones qui contiennent des listes de chansons. Artistes sont représentées par des zones d’aux angles arrondis et sont connectés à des albums à laquelle ils ont contribué.
 
- ![Modèle d’instance du DSL généré](../modeling/media/music_instance.png "Music_Instance")
+ ![Modèle d’instance du DSL généré](../modeling/media/music_instance.png)
 
  La définition DSL sépare deux aspects. L’apparence des éléments de modèle sur le diagramme de modèle est défini à l’aide des classes de formes et des classes de connecteur. Les informations contenues dans le modèle sont définies à l’aide des classes de domaine et les relations de domaine.
 
  L’illustration suivante montre les classes de domaine et les relations dans la définition DSL de la bibliothèque de musique.
 
- ![Relations d’incorporation et de référence](../modeling/media/music_classes.png "Music_Classes")
+ ![Relations d'incorporation et de référence](../modeling/media/music_classes.png)
 
  L’illustration montre quatre classes de domaine : musique, albums, artistes et chanson. Les classes de domaine définissent les propriétés du domaine comme nom, titre et ainsi de suite. Dans le modèle d’instance, les valeurs de certaines de ces propriétés sont affichées dans le diagramme.
 
@@ -104,7 +105,7 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
 ### <a name="the-explorer-displays-the-embedding-tree"></a>L’Explorateur affiche l’arborescence de l’incorporation
  Définition de votre DSL crée également un Explorateur, les utilisateurs voient en même temps que leur schéma de modèle.
 
- ![Explorateur généré de DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![Explorateur généré de DSL](../modeling/media/music_explorer.png)
 
  L’Explorateur affiche tous les éléments dans le modèle, y compris ceux pour lesquels vous n’avez pas défini les formes. Il montre les relations d’incorporation et des éléments, mais pas les relations de référence.
 
@@ -122,7 +123,7 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
 
  Dans l’image suivante, la ligne entre les **Publisher** classe de domaine et le **PublisherCatalog** relation de domaine est le rôle de la source. La ligne de la relation de domaine et le **Album** classe de domaine est le rôle cible.
 
- ![Les rôles et les propriétés. ] (../modeling/media/propertycode.png "PropertyCode")
+ ![Rôles et propriétés.](../modeling/media/propertycode.png)
 
  Les noms associés à une relation sont particulièrement importants lorsque vous écrivez du code de programme qui traverse le modèle. Par exemple, lorsque vous générez la solution DSL, la classe générée Publisher a une propriété de catalogue qui est une collection d’Albums. La classe Album a une propriété de serveur de publication qui est une instance unique de la classe de serveur de publication.
 

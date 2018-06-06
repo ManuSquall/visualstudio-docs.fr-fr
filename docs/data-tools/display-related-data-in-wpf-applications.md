@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57a617524f4f9bc03818d30ec434b2d4604b0f3e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38c25cc1631529895a11af566298ce22930a2e6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746544"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Afficher les données associées dans les applications WPF
 Dans certaines applications, vous souhaiterez éventuellement utiliser des données provenant de plusieurs tables ou entités qui sont liés entre eux dans une relation parent-enfant. Par exemple, vous souhaiterez peut-être afficher une grille qui montre les clients d’un `Customers` table. Lorsque l’utilisateur sélectionne un client spécifique, une autre grille affiche les commandes de ce client à partir d’un `Orders` table.
@@ -53,7 +54,7 @@ Vous pouvez créer des contrôles liés aux données qui affichent les données 
 
      La figure suivante illustre le **commandes** table de la **clients** table dans un jeu de données dans le **des Sources de données** fenêtre.
 
-     ![Fenêtre Sources de données montrant la relation](../data-tools/media/datasources2.gif "DataSources2")
+     ![Fenêtre Sources de données montrant des relations](../data-tools/media/datasources2.gif)
 
 ## <a name="see-also"></a>Voir aussi
 

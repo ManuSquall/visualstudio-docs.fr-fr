@@ -1,5 +1,5 @@
 ---
-title: Ajouter une source de données à un test de performances web dans Visual Studio | Microsoft Docs
+title: Ajouter une source de données à un test de performances web dans Visual Studio
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,14 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a2a079723d44bd7cee7ae418b5852a99d62cac25
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750823"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Ajouter une source de données à un test de performances de site Web
 
@@ -142,11 +144,11 @@ Liez les données pour fournir différentes valeurs au même test, par exemple, 
 
 1. Créez un dossier pour organiser vos artefacts de base de données de projets et ajouter un élément.
 
-     ![Ajouter un nouvel élément au dossier des données](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Ajouter un nouvel élément au dossier de données](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Créer un fichier texte.
 
-     ![Nommer le nouveau fichier texte ColorData.csv](../test/media/web_test_databinding_foldernewitemtextfile.png "Web_Test_DataBinding_FolderNewItemTextFile")
+     ![Nommer le nouveau fichier texte ColorData.csv](../test/media/web_test_databinding_foldernewitemtextfile.png)
 
 3. Modifiez le fichier texte et ajoutez ce qui suit :
 
@@ -158,7 +160,7 @@ Liez les données pour fournir différentes valeurs au même test, par exemple, 
 
 4. Utilisez les étapes décrites dans [Liaison des données SQL](#AddingDataBindingWebTest_BindSQLData), mais choisissez le fichier CSV comme source de données.
 
-     ![Entrer un nom et choisir Fichier CSV](../test/media/web_test_databinding_adddatasourcedialog.png "Web_Test_DataBinding_AddDataSourceDialog")
+     ![Entrer un nom et choisir Fichier CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
 ### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Q : Que se passe-t-il si le fichier CSV existant ne contient pas d'en-têtes de colonne ?
 
@@ -166,7 +168,7 @@ Liez les données pour fournir différentes valeurs au même test, par exemple, 
 
 1. Ajoutez un nouveau fichier texte nommé schema.ini.
 
-     ![Ajouter un fichier schema.ini](../test/media/web_test_databinding_schemafile.png "Web_Test_DataBinding_SchemaFile")
+     ![Ajouter un fichier schema.ini](../test/media/web_test_databinding_schemafile.png)
 
 2. Modifiez le fichier schema.ini pour ajouter les informations qui décrivent la structure de vos données. Par exemple, un fichier de schéma qui décrit le fichier CSV peut se présenter de la manière suivante :
 
@@ -177,39 +179,39 @@ Liez les données pour fournir différentes valeurs au même test, par exemple, 
 
 3. Ajoutez une source de données au test.
 
-     ![Ajouter une source de données à un test de performances web](../test/media/web_test_databinding_sql_adddatasource.png "Web_Test_DataBinding_SQL_AddDataSource")
+     ![Ajouter la source de données au test des performances de site web](../test/media/web_test_databinding_sql_adddatasource.png)
 
 4. Si vous utilisez un fichier schema.ini, choisissez Base de données (pas Fichier CSV) comme source de données et nommez-la.
 
-     ![Ajouter une source de données de base de données](../test/media/web_test_databinding_adddatasourcecolortext.png "Web_Test_DataBinding_AddDataSourceColorText")
+     ![Ajouter une source de données pour la base de données](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
 5. Créez une connexion.
 
-     ![Choisir une nouvelle connexion](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png "Web_Test_DataBinding_SQL_AddDataSourceDialogConnectionNew")
+     ![Choisir un nouvelle connexion](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png)
 
 6. Sélectionnez le fournisseur de données .NET Framework pour OLE DB.
 
-     ![Sélectionner le fournisseur de données .NET Framework OLE DB](../test/media/web_test_databinding_adddatasourcecolortext2.png "Web_Test_DataBinding_AddDataSourceColorText2")
+     ![Sélectionner le fournisseur de données .NET Framework pour OLE DB](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
 7. Choisissez Avancé.
 
-     ![Choisir Avancé](../test/media/web_test_databinding_advanced.png "Web_Test_DataBinding_Advanced")
+     ![Choisir Avancé](../test/media/web_test_databinding_advanced.png)
 
 8. Pour la propriété Provider, sélectionnez Microsoft.Jet.OLEDB.4.0, puis définissez les propriétés étendues sur Text;HDR=NO.
 
-     ![Appliquer des propriétés avancées](../test/media/web_test_databinding_advancedproperties.png "Web_Test_DataBinding_AdvancedProperties")
+     ![Appliquer les propriétés avancées](../test/media/web_test_databinding_advancedproperties.png)
 
 9. Tapez le nom du dossier qui contient le fichier de schéma et testez votre connexion.
 
-     ![Entrer le chemin du dossier des données](../test/media/web_test_databinding_adddatasourcecolortext5.png "Web_Test_DataBinding_AddDataSourceColorText5")
+     ![Entrer le chemin d’accès au dossier de données](../test/media/web_test_databinding_adddatasourcecolortext5.png)
 
 10. Sélectionnez le fichier CSV que vous voulez utiliser.
 
-     ![Sélectionner le fichier texte](../test/media/web_test_databinding_adddatasourcecolortext6.png "Web_Test_DataBinding_AddDataSourceColorText6")
+     ![Sélectionner le fichier texte](../test/media/web_test_databinding_adddatasourcecolortext6.png)
 
      Lorsque vous avez terminé, le fichier CSV apparaît sous forme de table.
 
-     ![Source de données ajoutée au test](../test/media/web_test_databinding_adddatasourcecolortext7.png "Web_Test_DataBinding_AddDataSourceColorText7")
+     ![Source de données ajoutée au test](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
 ### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q : Comment utiliser un fichier XML comme source de données ?
 
@@ -217,11 +219,11 @@ Liez les données pour fournir différentes valeurs au même test, par exemple, 
 
 1. Créez un dossier pour organiser vos artefacts de base de données de projets et ajouter un élément.
 
-     ![Ajouter un nouvel élément au dossier des données](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Ajouter un nouvel élément au dossier de données](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Créez un fichier XML.
 
-     ![Ajouter le fichier ColorData.xml](../test/media/web_test_databinding_additemxmlfile.png "Web_Test_DataBinding_AddItemXMLFile")
+     ![Ajouter le fichier ColorData.xml](../test/media/web_test_databinding_additemxmlfile.png)
 
 3. Modifiez le fichier XML et ajoutez vos données :
 
@@ -241,7 +243,7 @@ Liez les données pour fournir différentes valeurs au même test, par exemple, 
 
 4. Utilisez les étapes décrites dans [Liaison des données SQL](#AddingDataBindingWebTest_BindSQLData), mais choisissez le fichier XML comme source de données.
 
-     ![Entrer un nom et choisir Fichier XML](../test/media/web_test_databinding_adddatasourcedialogxml.png "Web_Test_DataBinding_AddDataSourceDialogXML")
+     ![Entrer un nom et choisir Fichier XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
 ### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Q : Puis-je ajouter la liaison de données à une requête de service Web qui utilise SOAP ?
 
@@ -249,7 +251,7 @@ Liez les données pour fournir différentes valeurs au même test, par exemple, 
 
 1. Choisissez la requête de service Web dans l’arborescence des requêtes et dans la fenêtre Propriétés, choisissez le bouton de sélection (...) dans la propriété Corps chaîne.
 
-     ![Modifier le corps chaîne du service web](../test/media/web_test_databinding_webservicerequest.png "Web_Test_DataBinding_WebServiceRequest")
+     ![Modifier le corps chaîne du service web](../test/media/web_test_databinding_webservicerequest.png)
 
 2. Remplacez les valeurs du corps SOAP par les valeurs liées aux données en utilisant la syntaxe suivante :
 

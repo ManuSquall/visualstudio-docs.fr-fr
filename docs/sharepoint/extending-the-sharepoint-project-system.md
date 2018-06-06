@@ -16,23 +16,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a76a56eccb1d65e8b64b691d0da29e8b9d30637
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cabb70ba998594d99242696d0f87d60d5eb01226
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766087"
 ---
-# <a name="extending-the-sharepoint-project-system"></a>Extension du système de projet SharePoint
+# <a name="extend-the-sharepoint-project-system"></a>Étendre le système de projet SharePoint
   Vous pouvez créer des solutions SharePoint à l’aide d’un ensemble de modèles de projet et modèles d’élément dans Visual Studio. Ces modèles répondent aux exigences de nombreux scénarios de développement, mais vous pouvez découvrir certains cas où elles ne fournissent pas les fonctionnalités dont vous avez besoin. Dans ce cas, vous pouvez étendre le système de projet SharePoint.  
   
-## <a name="overview-of-the-sharepoint-project-system"></a>Vue d’ensemble du système de projet SharePoint  
+## <a name="overview-of-the-sharepoint-project-system"></a>Vue d’ensemble du système de projet SharePoint
  Le système de projet SharePoint repose sur un composant fondamental de *éléments de projet SharePoint*. Un élément de projet SharePoint représente une personnalisation SharePoint unique, comme une définition de liste, un composant WebPart ou un type de contenu.  
   
  Un projet SharePoint est un projet Visual Studio qui inclut un ou plusieurs éléments de projet SharePoint. Les projets SharePoint contiennent également des composants supplémentaires qui définissent comment les éléments de projet sont regroupés dans des fonctionnalités et des packages de déploiement.  
   
  Pour plus d’informations sur le contenu des éléments de projet SharePoint et des projets SharePoint, consultez [création de modèles d’élément et les modèles de projet pour les éléments de projet SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
-## <a name="how-to-extend-the-sharepoint-project-system"></a>Comment étendre le système de projet SharePoint  
+## <a name="how-to-extend-the-sharepoint-project-system"></a>Comment étendre le système de projet SharePoint
  Vous pouvez étendre le système de projet SharePoint comme suit :  
   
 -   Définir vos propres types d’éléments de projet SharePoint et les associer à des modèles de projet dans Visual Studio ou de nouveaux modèles d’élément. Par exemple, vous pouvez définir un type d’élément de projet SharePoint pour la création d’une action personnalisée ou un champ. Pour plus d’informations, consultez [Types d’éléments de projet de définition personnalisé SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).  
@@ -43,14 +44,14 @@ ms.lasthandoff: 04/16/2018
   
 -   Étendre le comportement d’empaquetage et de déploiement des éléments de projet SharePoint et des projets SharePoint. Par exemple, vous pouvez créer vos propres étapes de déploiement à exécuter lorsque vous déployez ou retirez un projet, ou vous pouvez effectuer des tâches personnalisées supplémentaires lorsque Visual Studio exécute certaines étapes de déploiement. Pour plus d’informations, consultez [étendre un empaquetage SharePoint et déploiement](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
-## <a name="common-development-tasks"></a>Tâches de développement courantes  
+## <a name="common-development-tasks"></a>Tâches de développement courantes
  Vous pouvez effectuer les tâches courantes suivantes dans les extensions du système de projet SharePoint :  
   
 -   Enregistrer les données de chaîne personnalisée avec les éléments de projet et dans plusieurs types de fichiers de projet. Pour plus d’informations, consultez [l’enregistrement des données dans les Extensions du système de projet SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 -   Convertir un objet dans le système de projet SharePoint à un objet correspondant dans le modèle objet automation Visual Studio ou le modèle objet d’intégration, ou vice versa. Pour plus d’informations, consultez [conversion entre système de Types de projet SharePoint et d’autres Types de projet Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
  [Définition des Types d’éléments de projet SharePoint personnalisé](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Étendre des éléments de projet SharePoint](../sharepoint/extending-sharepoint-project-items.md)   
  [Extension des projets SharePoint](../sharepoint/extending-sharepoint-projects.md)   

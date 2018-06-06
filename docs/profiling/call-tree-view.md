@@ -17,13 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f098b18100bd54e8078ea0c855a1b3e51926b93
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f8973f1536ded24d2fd327aa3eac1ceee795cb54
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262445"
 ---
-# <a name="call-tree-view"></a>Vue Arborescence des appels
+# <a name="call-tree-view"></a>Mode Arborescence des appels
 La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud de fonction liste toutes les fonctions appelées par la fonction et les données de performances liées à ces appels de fonction.  
   
  La vue Arborescence des appels peut également être développée et mettre en surbrillance le chemin d’exécution d’une fonction qui a exigé le plus de temps ou qui a fait l’objet du plus grand nombre d’échantillonnages. Pour faire apparaître le chemin le plus coûteux en matière de performances, cliquez avec le bouton droit sur la fonction, puis cliquez sur **Développer le chemin réactif**.  
@@ -41,15 +42,15 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
   
  Pour plus d’informations sur les définitions des colonnes dans la vue Arborescence des appels, consultez les rubriques suivantes :  
   
- [Vue Arborescence des appels](../profiling/call-tree-view-sampling-data.md)  
+ [Mode Arborescence des appels](../profiling/call-tree-view-sampling-data.md)  
   
- [Vue Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)  
+ [Mode Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)  
   
  [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
   
- [Vue Arborescence des appels](../profiling/call-tree-view-contention-data.md)  
+ [Mode Arborescence des appels](../profiling/call-tree-view-contention-data.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues du rapport des performances](../profiling/performance-report-views.md)   
- [Présentation des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)   
+ [Fonctionnement des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)   
  [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)

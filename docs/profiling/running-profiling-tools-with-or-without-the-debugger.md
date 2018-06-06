@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7208f687ea38475603b8bfcae7e9ee55ab3ae58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268267"
 ---
-# <a name="running-profiling-tools-with-or-without-the-debugger"></a>Exécution des outils de profilage avec ou sans le débogueur
+# <a name="run-profiling-tools-with-or-without-the-debugger"></a>Exécuter des outils de profilage avec ou sans le débogueur
 Visual Studio offre désormais une sélection d’outils d’analyse des performances. Certains d’entre eux, comme **Utilisation de l’UC** et **Utilisation de la mémoire**, peuvent être exécutés avec ou sans le débogueur. Les outils d’analyse des performances non intégrés au débogueur sont destinés à s’exécuter sur les configurations Release, tandis que ceux intégrés au débogueur sont destinés à s’exécuter sur les configurations Debug.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Faut-il exécuter l’outil avec ou sans le débogueur ?  
@@ -39,9 +40,9 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Collecter les données de profilage pendant le débogage  
  La section suivante porte sur le débogage local. Vous pouvez trouver des informations à propos du débogage sur un appareil, ou débogage à distance, dans les sections suivantes.  
   
-1.  Ouvrez le projet que vous voulez déboguer, puis cliquez sur **Déboguer/Démarrer le débogage** (ou **Démarrer** dans la barre d’outils ou **F5**).  
+1.  Ouvrez le projet que vous voulez déboguer, puis cliquez sur **Déboguer** > **Démarrer le débogage** (ou **Démarrer** dans la barre d’outils ou **F5**).  
   
-2.  La fenêtre **Outils de diagnostic** apparaît automatiquement, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**.  
+2.  La fenêtre **Outils de diagnostic** apparaît automatiquement, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.  
   
 3.  Exécutez les scénarios pour lesquels vous voulez collecter des données.  
   
@@ -51,11 +52,11 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
   
      ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  Vous pouvez choisir d’afficher **Utilisation de la mémoire** ou **Utilisation de l’UC** (ou les deux) avec le paramètre **Sélectionner les outils** sur la barre d’outils. Si vous exécutez Visual Studio Enterprise, vous pouvez activer ou désactiver IntelliTrace dans **Outils / Options / IntelliTrace**.  
+4.  Vous pouvez choisir d’afficher **Utilisation de la mémoire** ou **Utilisation de l’UC** (ou les deux) avec le paramètre **Sélectionner les outils** sur la barre d’outils. Si vous exécutez Visual Studio Enterprise, vous pouvez activer ou désactiver IntelliTrace dans **Outils** > **Options** > **IntelliTrace**.  
   
 5.  La session de diagnostic se termine quand vous arrêtez le débogage.  
   
- Dans Visual Studio 2015 Update 1, la fenêtre **Outils de diagnostic** vous permet de vous concentrer sur les événements qui vous intéressent.   Les noms des événements sont désormais affichés avec les préfixes des catégories (**Mouvement**, **Sortie du programme**, **Point d’arrêt**, **Fichier,** etc.), ce qui vous permet de rechercher rapidement dans la liste une catégorie donnée ou d’ignorer les catégories qui ne vous intéressent pas.  
+ Dans Visual Studio 2015 Update 1, la fenêtre **Outils de diagnostic** vous permet de vous concentrer sur les événements qui vous intéressent.   Les noms des événements sont désormais affichés avec les préfixes des catégories (**Mouvement**, **Sortie du programme**, **Point d’arrêt**, **Fichier**, etc.), ce qui vous permet de rechercher rapidement dans la liste une catégorie donnée ou d’ignorer les catégories qui ne vous intéressent pas.  
   
  La fenêtre a maintenant une zone de recherche permettant de rechercher une chaîne spécifique dans la liste des événements. Par exemple, l’illustration suivante montre les résultats de recherche de la chaîne « installer » pour laquelle quatre événements ont été trouvés :  
   
@@ -72,7 +73,7 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
   
 1.  Ouvrez le projet dans Visual Studio.  
   
-2.  Dans le menu **Déboguer**, choisissez **Profileur de performances...** (Touche de raccourci : Alt+F2).  
+2.  Dans le menu **Déboguer**, choisissez **Profileur de performances...** (touche de raccourci : **Alt**+**F2**).  
   
 3.  Dans la page de lancement des outils de diagnostic, choisissez un ou plusieurs outils à exécuter dans la session. Seuls les outils applicables au type de projet, au système d'exploitation et au langage de programmation sont affichés. Lorsque vous choisissez un outil de diagnostic, les sélections d'outils qui ne peuvent pas être exécutées dans la même session de diagnostic sont désactivées. Vous pourriez effectuer les choix suivants pour une application C# UWP :  
   
@@ -106,7 +107,7 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
 |![Étape 5](../profiling/media/procguid_6.png "ProcGuid_6")|Lorsque vos données incluent les informations de plusieurs outils, les détails de l'outil sont collectés sous les onglets.|  
 |![Étape 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Un outil peut avoir une ou plusieurs vues de détail. La vue est filtrée par la zone sélectionnée de la chronologie.|  
   
-## <a name="setting-the-analysis-target-to-another-device"></a>Définition de la cible de l’analyse sur un autre appareil  
+## <a name="set-the-analysis-target-to-another-device"></a>Définir la cible de l’analyse sur un autre appareil  
  Outre le démarrage de votre application à partir du projet Visual Studio, vous pouvez également exécuter les sessions de diagnostic sur d'autres cibles. Par exemple, vous pouvez souhaiter diagnostiquer les problèmes de performances sur une version de votre application installée à partir du Windows Store.  
   
  ![Choisir la cible d’analyse des outils de diagnostic](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  

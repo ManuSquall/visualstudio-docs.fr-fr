@@ -18,21 +18,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aae6789d9961fa3cbf63ce073a33251465ee308a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 357730c8095e9449e9556fd4926afa0bbd53fb30
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767294"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Comment : créer un modèle BDC
   Vous pouvez créer un modèle de connectivité de données métiers (BDC) en utilisant le modèle pour ce type d’élément, puis ajouter le modèle à un projet SharePoint. Pour plus d’informations, consultez [création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md). Pour plus d’informations sur la façon de concevoir le modèle, consultez [vous concevez un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-bdc-project"></a>Pour créer un projet BDC  
   
-1.  Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
+1.  Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.  
   
     > [!NOTE]  
-    >  Si votre interface IDE est définie pour utiliser les paramètres de développement Visual Basic, choisissez **fichier**, **nouveau projet**.  
+    >  Si votre interface IDE est définie pour utiliser les paramètres de développement Visual Basic, choisissez **fichier** > **nouveau projet**.  
   
      La boîte de dialogue **Nouveau projet** s'affiche.  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
      Un projet SharePoint vide est créé.  
   
-5.  Dans la barre de menus, choisissez **projet**, **ajouter un nouvel élément**.  
+5.  Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.  
   
 6.  Dans le **ajouter un nouvel élément** boîte de dialogue, choisissez le **Office/SharePoint** nœud.  
   
@@ -61,11 +62,10 @@ ms.lasthandoff: 04/16/2018
   
      A **modèle de connectivité de données métiers** élément est ajouté au projet. Par défaut, le modèle apparaît dans le concepteur BDC. Pour plus d’informations, consultez [création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
  [Création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Comment : ajouter un fichier de modèle BDC existant à un projet SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
  [Comment : utiliser un fichier de ressources pour spécifier des noms localisés, propriétés et autorisations](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [Comment : inclure un Assembly personnalisé dans une fonctionnalité BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Intégration de données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
   

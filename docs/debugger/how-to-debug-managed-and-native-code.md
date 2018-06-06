@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: aeb74bac5196450ec98426727a1456a009adb5c1
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: d8987d24a6302c9d9ffd7ffdb127e52c57e22ff9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764551"
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Didacticiel : Déboguer du code managé et natif dans Visual Studio
 
@@ -39,7 +40,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 * Vous devez disposer de Visual Studio est installé et le **bureau développement avec C++** la charge de travail.
 
-    Si vous n’avez pas encore installé Visual Studio, installez-le gratuitement [ici](http://www.visualstudio.com).
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
 
     Si vous devez installer la charge de travail mais que vous avez déjà Visual Studio, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
 
@@ -73,7 +74,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
     #define MIXED_MODE_MULTIPLY_HPP
-    
+
     extern "C"
     {
         __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
@@ -106,7 +107,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 1. Choisissez un modèle pour votre code d’application.
 
-    Pour .NET Framework, dans le **nouveau projet** boîte de dialogue, choisissez **Visual C#**, **de bureau Windows classique** à partir de la section Modèles installés, puis dans le volet central Sélectionnez **l’application Console (.NET Framework)**.
+    Pour .NET Framework, dans le **nouveau projet** boîte de dialogue, choisissez **Visual C#**, **Windows Desktop** à partir de la section Modèles installés, puis dans le panneau central, sélectionnez  **Application (.NET Framework) de la console**.
 
     Pour .NET Core, dans le **nouveau projet** boîte de dialogue, choisissez **Visual C#**, **.NET Core** à partir de la section Modèles installés, ensuite dans le volet central, sélectionnez  **Application (.NET Core) de la console**.
 
@@ -116,10 +117,10 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 1. Dans *Program.cs*, remplacez le code par défaut par le code suivant :
 
-    ```c#
+    ```csharp
     using System;
     using System.Runtime.InteropServices;
-    
+
     namespace Mixed_Mode_Calling_App
     {
         public class Program
@@ -133,7 +134,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
             "mixed_mode_multiply", CallingConvention = CallingConvention.StdCall)]
             public static extern int Multiply(int x, int y);
             public static void Main(string[] args)
-            { 
+            {
                 int result = Multiply(7, 7);
                 Console.WriteLine("The answer is {0}", result);
                 Console.ReadKey();
@@ -165,9 +166,9 @@ Dans la plupart des versions de Visual Studio 2017, vous devez activer le débog
     ```
     "nativeDebugging": true
     ```
-    
+
     Ainsi, par exemple, votre fichier peut se présenter comme suit :
-    
+
     ```
     {
       "profiles": {
@@ -183,7 +184,7 @@ Dans la plupart des versions de Visual Studio 2017, vous devez activer le débog
 
 1. Dans le projet c#, ouvrez *Program.cs* et définissez un point d’arrêt dans la ligne de code suivante en cliquant dans la marge de gauche :
 
-    ```c#
+    ```csharp
     int result = Multiply(7, 7);
     ```
 

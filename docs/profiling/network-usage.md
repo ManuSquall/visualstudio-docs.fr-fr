@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a41e41b4448bcec34a24464f4f62e85d0765436d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267800"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analyser l’utilisation du réseau dans les applications UWP
 L’outil de diagnostic **Réseau** de Visual Studio collecte les données relatives aux opérations réseau effectuées à l’aide de l’[API Windows.Web.Http](/uwp/api/windows.web.http). L'analyse des données peut vous aider à résoudre les problèmes tels que les problèmes d'accès et d'authentification, l'utilisation incorrecte du cache et les médiocres performances d'affichage et de téléchargement.  
@@ -24,12 +25,12 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
 > [!NOTE]
 >  Pour obtenir une description plus complète de l’outil Réseau, consultez [Introducing Visual Studio's network tool](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx).  
   
-## <a name="collecting-network-tool-data"></a>Collecte des données de l'outil Réseau  
+## <a name="collect-network-tool-data"></a>Collecter des données de l'outil Réseau  
  Vous devez exécuter l’outil **Réseau** avec un projet Visual Studio ouvert sur l’ordinateur Visual Studio.  
   
 1.  Ouvrez le projet dans Visual Studio.  
   
-2.  Cliquez sur **Déboguer/Profileur de performances...** Choisissez **Réseau**, puis **Démarrer**.  
+2.  Cliquez sur **Déboguer/Profileur de performances**. Choisissez **Réseau**, puis **Démarrer**.  
   
 3.  L’outil Réseau commence à collecter le trafic HTTP de votre application.  
   
@@ -37,11 +38,11 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
   
 4.  Choisissez **Arrêter** pour fermer l’application.  
   
- La fenêtre de rapport doit se présenter comme ceci :  
+ La fenêtre de rapport doit ressembler à ce qui suit :  
   
  ![La fenêtre Réseau](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
-## <a name="analyzing-data"></a>Analyse des données  
+## <a name="analyze-data"></a>Analyser des données  
  Vous pouvez analyser le trafic HTTP capturé pendant l'exécution de votre application, ou même après la fermeture de l'application, en sélectionnant l'une des opérations réseau affichées sur la vue récapitulative.  
   
  La vue de résumé **Réseau** affiche les données de chaque opération réseau de l’exécution de votre application. Choisissez un en-tête de colonne pour trier la liste ou choisissez les types de contenu à afficher dans la vue de filtre **Type de contenu**.  

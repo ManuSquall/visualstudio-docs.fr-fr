@@ -1,6 +1,6 @@
 ---
-title: Afficher la structure du code dans Visual Studio
-ms.date: 11/04/2016
+title: Afficher la structure du code en utilisant l’affichage de classes, la hiérarchie d’appels, l’Explorateur d’objets et la fenêtre Définition de code
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,7 +13,7 @@ f1_keywords:
 - vs.componentpicker
 - vs.callbrowser
 helpviewer_keywords:
-- document outline window.
+- document outline window
 - Visual Studio, object browser
 - call hierarchy
 - Visual Studio, document outline window
@@ -27,26 +27,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9a271dfaba8fe533fee84799a0585a29d97e9c70
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336137"
 ---
-# <a name="view-the-structure-of-code"></a>Afficher la structure du code
+# <a name="view-the-structure-of-code-using-different-tool-windows"></a>Afficher la structure du code à l’aide de différentes fenêtres d’outils
 
-Vous pouvez examiner les objets et les membres dans des projets Visual Studio, des composants .NET Framework, des composants COM, des bibliothèques de liens dynamiques (DLL) et des bibliothèques de types (TLB).
+Vous pouvez examiner les classes et leurs membres dans Visual Studio à l’aide de différentes fenêtres d’outils, y compris **Affichage des classes**, **Hiérarchie d’appels**, **Explorateur d’objets**et **Définition de code** (C++ uniquement). Ces fenêtres d’outils peuvent examiner du code dans Visual Studio, des composants .NET Framework, des composants COM, des bibliothèques de liens dynamiques (DLL) et des bibliothèques de types (TLB).
 
-Vous pouvez également utiliser l’**Explorateur de solutions** pour parcourir les types et les membres dans vos projets, rechercher des symboles, afficher la hiérarchie d’appels d’une méthode, rechercher les références des symboles, etc., sans avoir à basculer entre les différentes fenêtres d’outils répertoriées précédemment.
+Vous pouvez également utiliser l’**Explorateur de solutions** pour parcourir les types et les membres dans vos projets, rechercher des symboles, afficher la hiérarchie d’appels d’une méthode, rechercher les références des symboles, etc., sans avoir à basculer entre plusieurs fenêtres d’outils.
 
-Si vous avez Visual Studio Enterprise, vous pouvez utiliser les cartes de code pour visualiser la structure de votre code et ses dépendances sur l’ensemble de la solution, et explorer les parties du code qui vous intéressent. Pour plus d’informations, consultez [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md).
-
-> [!NOTE]
-> L’édition de Visual Studio et les paramètres que vous utilisez peuvent affecter les fonctionnalités de l’environnement IDE. Elles peuvent différer de celles décrites dans cette rubrique.
+Si vous avez l’édition Visual Studio Enterprise, vous pouvez utiliser les *cartes de code* pour visualiser la structure de votre code et ses dépendances sur l’ensemble de la solution. Pour plus d’informations, consultez [Mapper les dépendances avec des cartes de code](../modeling/map-dependencies-across-your-solutions.md).
 
 ## <a name="class-view-visual-basic-c-c"></a>Affichage de classes (Visual Basic, C#, C++)
 
-L’**affichage de classes** est illustré dans le cadre de l’**Explorateur de solutions** ainsi que dans une fenêtre distincte. La fenêtre **Affichage de classes** affiche les éléments d’une application. Le volet supérieur affiche les espaces de noms, les types, les interfaces, les énumérations et les classes, alors que le volet inférieur affiche les membres qui appartiennent au type sélectionné dans le volet supérieur. Cette fenêtre vous permet d’accéder aux définitions des membres dans le code source (ou dans l’**Explorateur d’objets** si l’élément est défini en dehors de votre solution).
+L’**affichage de classes** est illustré dans le cadre de l’**Explorateur de solutions** et dans une fenêtre distincte. **Affichage de classes** présente les éléments d’une application. Le volet supérieur affiche les espaces de noms, les types, les interfaces, les énumérations et les classes, alors que le volet inférieur affiche les membres qui appartiennent au type sélectionné dans le volet supérieur. Cette fenêtre vous permet d’accéder aux définitions des membres dans le code source (ou dans l’**Explorateur d’objets** si l’élément est défini en dehors de votre solution).
 
 Il est inutile de compiler un projet pour afficher ses éléments dans la fenêtre **Affichage de classes**. La fenêtre est actualisée quand vous modifiez le code dans votre projet.
 
@@ -56,7 +54,7 @@ Si votre projet est archivé dans le contrôle de code source, chaque élément 
 
 ### <a name="class-view-toolbar"></a>Barre d’outils Affichage de classes
 
-La barre d’outils **Affichage de classes** contient les commandes suivantes.
+La barre d’outils **Affichage de classes** contient les commandes suivantes :
 
 |||
 |-|-|
@@ -67,7 +65,7 @@ La barre d’outils **Affichage de classes** contient les commandes suivantes.
 
 ### <a name="class-view-settings"></a>Paramètres de l’affichage de classes
 
-Le bouton **Paramètres de l’affichage de classes** dans la barre d’outils contient les paramètres ci-dessous.
+Le bouton **Paramètres de l’affichage de classes** dans la barre d’outils contient les paramètres ci-dessous :
 
 |||
 |-|-|
@@ -83,7 +81,7 @@ Le bouton **Paramètres de l’affichage de classes** dans la barre d’outils c
 
 ### <a name="class-view-shortcut-menu"></a>Menu contextuel de la fenêtre Affichage de classes
 
-Le menu contextuel dans la fenêtre **Affichage de classes** peut contenir les commandes ci-dessous, selon le type de projet sélectionné.
+Le menu contextuel dans la fenêtre **Affichage de classes** peut contenir les commandes ci-dessous, selon le type de projet sélectionné :
 
 |||
 |-|-|
@@ -103,11 +101,11 @@ Le menu contextuel dans la fenêtre **Affichage de classes** peut contenir les c
 
 ## <a name="call-hierarchy-window-visual-basic-c-c"></a>Fenêtre Hiérarchie d’appels (Visual Basic, C#, C++)
 
-La fenêtre **Hiérarchie d’appels** indique où une méthode donnée (ou une propriété ou un constructeur) est appelée, et répertorie les méthodes qui sont appelées à partir de cette méthode. Vous pouvez afficher plusieurs niveaux du graphique des appels, qui montre les relations appelant/appelé parmi les méthodes dans une portée spécifiée.
+La fenêtre **Hiérarchie d’appels** indique où une méthode ou une propriété est appelée. Elle répertorie également les méthodes appelées à partir de cette méthode. Vous pouvez afficher plusieurs niveaux du graphique des appels, qui montre les relations appelant/appelé parmi les méthodes dans une portée spécifiée.
 
-Vous pouvez afficher la fenêtre **Hiérarchie d’appels** en sélectionnant une méthode (ou une propriété ou un constructeur), puis en choisissant **Afficher la hiérarchie d’appels** dans le menu contextuel. L'affichage doit ressembler à l'illustration suivante.
+Vous pouvez afficher la fenêtre **Hiérarchie d’appels** en sélectionnant une méthode (ou une propriété ou un constructeur) dans l’éditeur, puis en choisissant **Afficher la hiérarchie d’appels** dans le menu contextuel. L'affichage doit ressembler à l’image suivante :
 
-![Hiérarchie d’appels avec plusieurs nœuds ouverts](../ide/media/multiplenodes.png "MultipleNodes")
+![Fenêtre Hiérarchie d’appels dans Visual Studio](../ide/media/multiplenodes.png)
 
 La liste déroulante de la barre d’outils vous permet de spécifier la portée de la hiérarchie : la solution, le projet actuel ou le document actif.
 
@@ -115,7 +113,7 @@ Le volet principal affiche les appels en direction et en provenance de la métho
 
 La fenêtre **Hiérarchie d’appels** ne recherche pas les références au groupe de méthodes qui incluent des emplacements où une méthode est ajoutée en tant que gestionnaire d’événements ou est assignée à un délégué. Pour trouver ces références, utilisez la commande **Rechercher toutes les références**.
 
-Le menu contextuel de la fenêtre **Hiérarchie d’appels** contient les commandes ci-dessous.
+Le menu contextuel de la fenêtre **Hiérarchie d’appels** contient les commandes ci-dessous :
 
 |||
 |-|-|
@@ -142,7 +140,7 @@ Vous pouvez utiliser l’**Explorateur d’objets** pour ajouter une référence
 
 ### <a name="object-browser-settings"></a>Paramètres de l’Explorateur d’objets
 
-Choisissez le bouton **Paramètres de l’Explorateur d’objets** dans la barre d’outils pour spécifier l’un des affichages suivants.
+Choisissez le bouton **Paramètres de l’Explorateur d’objets** dans la barre d’outils pour spécifier l’un des affichages suivants :
 
 |||
 |-|-|
@@ -160,7 +158,7 @@ Choisissez le bouton **Paramètres de l’Explorateur d’objets** dans la barre
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Commandes du menu contextuel de l’Explorateur d’objets
 
-Le menu contextuel dans l’**Explorateur d’objets** peut contenir les commandes ci-dessous, selon le type d’élément sélectionné.
+Le menu contextuel dans l’**Explorateur d’objets** peut contenir les commandes ci-dessous, selon le type d’élément sélectionné :
 
 |||
 |-|-|
@@ -214,7 +212,7 @@ Le menu contextuel dans la fenêtre **Définition de code** peut contenir les co
 |**Modifier la définition**|Déplace le point d'insertion vers la définition dans la fenêtre de code.|
 |**Choisir l’encodage**|Ouvre la fenêtre **Encodage** afin que vous puissiez définir un encodage pour le fichier.|
 
-### <a name="document-outline-window"></a>Fenêtre Structure du document
+## <a name="document-outline-window"></a>Fenêtre Structure du document
 
 Vous pouvez utiliser la fenêtre **Structure du document** conjointement aux vues de concepteurs comme le concepteur pour une page XAML ou un concepteur Windows Form, ou avec des pages HTML. Cette fenêtre affiche les éléments dans une arborescence, afin que vous puissiez consulter la structure logique du formulaire ou de la page et rechercher des contrôles incorporés en profondeur ou masqués.
 

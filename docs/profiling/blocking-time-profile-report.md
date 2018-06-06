@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 860449ea4bd4d8aa3ea6c36ab7ff3572c2679488
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d2b1c83a2954ca06385904f3a5e046f1c9ca50b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264429"
 ---
-# <a name="blocking-time-profile-report"></a>Profil de temps de blocage, rapport
+# <a name="blocking-time-profile-report"></a>Rapport du profil de temps de blocage
 Les rapports de profil rassemblent des données relatives au temps de blocage pour les piles d’appels qui sont spécifiques à chaque catégorie de blocage (par exemple « E/S » ou « Synchronisation »). Le rapport Anticipation répertorie les processus qui ont anticipé le processus en cours, ainsi que le nombre d’instances d’anticipations. Pour générer le rapport de profil de blocage, l’outil collecte des appels d’API bloquants et les rassemble au sein d’une arborescence de piles d’appels. Les données figurant dans ces rapports varient selon la plage horaire, les threads masqués et les deux filtres suivants qui peuvent être appliqués :  
   
 -   Si l’option Uniquement mon code est activée, seuls les frames de pile contenant du code utilisateur sont présentés, ainsi que le premier niveau situé sous le code utilisateur.  
@@ -34,15 +35,15 @@ Les rapports de profil rassemblent des données relatives au temps de blocage po
   
 |Nom de la colonne|Description|  
 |-----------------|-----------------|  
-|Name|Nom de la fonction pour chaque niveau de la pile des appels.|  
-|Instances|Nombre d’instances de l’appel bloquant pendant la période visible.|  
-|Durée de blocage inclusif|Durée totale de blocage pour toutes les piles qui atteignent ce niveau de l’arborescence de la pile des appels. Le nombre inclusif correspond à la somme du temps de blocage exclusif de cette fonction et de celui de tous ses nœuds enfants.|  
-|Durée de blocage exclusif|Durée totale de blocage au cours de laquelle cette fonction se trouve au niveau le plus bas de la pile des appels. Une entrée de pile d’appels unique dont le temps de blocage exclusif est élevé peut être une fonction intéressante.|  
-|API /Catégorie d’attente|S’affiche uniquement pour les fonctions situées au niveau le plus bas de la pile des appels. Lorsque la signature de l’appel bloquant est reconnue, le nom de l’API bloquante est fourni. Si la signature n’est pas reconnue, les informations indiquées par le noyau sont fournies.|  
-|Détails|Nom complet de la fonction. Peut contenir le nombre de lignes lorsque celui-ci est disponible.|  
+|**Name**|Nom de la fonction pour chaque niveau de la pile des appels.|  
+|**Instances**|Nombre d’instances de l’appel bloquant pendant la période visible.|  
+|**Durée de blocage inclusif**|Durée totale de blocage pour toutes les piles qui atteignent ce niveau de l’arborescence de la pile des appels. Le nombre inclusif correspond à la somme du temps de blocage exclusif de cette fonction et de celui de tous ses nœuds enfants.|  
+|**Durée de blocage exclusif**|Durée totale de blocage au cours de laquelle cette fonction se trouve au niveau le plus bas de la pile des appels. Une entrée de pile d’appels unique dont le temps de blocage exclusif est élevé peut être une fonction intéressante.|  
+|**API/Catégorie d’attente**|S’affiche uniquement pour les fonctions situées au niveau le plus bas de la pile des appels. Lorsque la signature de l’appel bloquant est reconnue, le nom de l’API bloquante est fourni. Si la signature n’est pas reconnue, les informations indiquées par le noyau sont fournies.|  
+|**Détails**|Nom complet de la fonction. Peut contenir le nombre de lignes lorsque celui-ci est disponible.|  
   
 ### <a name="synchronization"></a>Synchronisation  
- Le rapport Synchronisation affiche les appels responsables des segments qui se bloquent lors de la synchronisation, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Durée de synchronisation](../profiling/synchronization-time.md).  
+ Le rapport Synchronisation affiche les appels responsables des segments qui se bloquent lors de la synchronisation, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Durée de synchronisation](../profiling/synchronization-time.md)  
   
 ### <a name="sleep"></a>Sleep  
  Le rapport Veille affiche les appels responsables du temps de blocage attribué à du temps passé en veille, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Durée de veille](../profiling/sleep-time.md).  

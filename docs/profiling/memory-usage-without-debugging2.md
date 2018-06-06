@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b51d2be6e2ec45b55b04c906a9db71843c98f427
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265722"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analyser l’utilisation de la mémoire sans le débogueur de Visual Studio
 Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pour effectuer les opérations suivantes :  
@@ -35,7 +36,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
 1.  Ouvrez un projet Windows universel C# dans Visual Studio.  
   
-2.  Dans la barre de menus, choisissez **Déboguer/Profileur de performances...**  
+2.  Dans la barre de menus, choisissez **Déboguer** > **Profileur de performances**.  
   
 3.  Sélectionnez **Utilisation de la mémoire**, puis choisissez le bouton **Démarrer** situé en bas de la page.  
   

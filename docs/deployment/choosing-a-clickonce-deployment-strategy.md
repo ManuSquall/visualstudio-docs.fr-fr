@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0bc8d7f2f6fb1515b8946d0fad9338733c5138
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b811f194e0496030e1f46d1448736fb21f9579b3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Choix d'une stratégie de déploiement ClickOnce
 Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], trois stratégies sont possibles. Celle que vous choisissez dépend principalement du type d'application que vous déployez. Les trois stratégies de déploiement sont les suivantes :  
@@ -46,15 +46,6 @@ Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndp
   
  Il s'agit de la stratégie de déploiement par défaut.  
   
-## <a name="install-from-a-cd"></a>Installation à partir d'un CD-ROM  
- Cette stratégie permet de déployer votre application sur un média amovible tel qu'un CD-ROM ou un DVD. Comme avec l’option précédente, lorsque l’utilisateur choisit d’installer l’application, il est installé et démarré, et les éléments sont ajoutés à la **Démarrer** menu et **Ajout / Suppression de programmes** dans **contrôle Panneau de configuration**.  
-  
- Cette stratégie fonctionne mieux dans le cas d'applications déployées sur les ordinateurs d'utilisateurs qui ne possèdent pas une connectivité réseau persistante ou qui ont des connexions à faible bande passante. L'application étant installée à partir d'un média amovible, aucune connexion réseau n'est nécessaire pour l'installation ; la connectivité réseau est néanmoins requise pour les mises à jour de l'application.  
-  
- Pour activer cette stratégie de déploiement dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], cliquez sur **à partir d’un CD-ROM ou DVD-ROM** sur la **mode d’installation** page de l’Assistant Publication.  
-  
- Pour activer cette stratégie de déploiement manuellement, modifiez la **deploymentProvider** balise dans le manifeste de déploiement. (Dans Visual Studio, cette propriété est exposée en tant que **URL d’Installation** sur la **publier** page du Concepteur de projets. Il s’agit de Mage.exe **Start Location**.)  
-  
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>Démarrage de l'application à partir du Web ou d'un partage réseau  
  Cette stratégie est similaire à la première, sauf que l'application se comporte comme une application Web. Lorsque l’utilisateur clique sur un lien d’une page web (ou double-clique sur une icône du partage de fichiers), l’application est lancée. Lorsque les utilisateurs ferment l’application, il n’est plus disponible sur leur ordinateur local. rien n’est ajouté à la **Démarrer** menu ou **Ajout / Suppression de programmes** dans **le panneau de configuration**.  
   
@@ -66,6 +57,15 @@ Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndp
  Pour activer cette stratégie de déploiement dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], cliquez sur **ne pas installer l’application** sur la **installer ou exécuter à partir d’un site Web** page de l’Assistant Publication.  
   
  Pour activer cette stratégie de déploiement manuellement, modifiez la **installer** balise dans le manifeste de déploiement. (Sa valeur peut être **true** ou **false**. Dans Mage.exe, utilisez le **en ligne uniquement** option dans le **Type d’Application** liste.)  
+
+## <a name="install-from-a-cd"></a>Installation à partir d'un CD-ROM  
+ Cette stratégie permet de déployer votre application sur un média amovible tel qu'un CD-ROM ou un DVD. Comme avec l’option précédente, lorsque l’utilisateur choisit d’installer l’application, il est installé et démarré, et les éléments sont ajoutés à la **Démarrer** menu et **Ajout / Suppression de programmes** dans **contrôle Panneau de configuration**.  
+  
+ Cette stratégie fonctionne mieux dans le cas d'applications déployées sur les ordinateurs d'utilisateurs qui ne possèdent pas une connectivité réseau persistante ou qui ont des connexions à faible bande passante. L'application étant installée à partir d'un média amovible, aucune connexion réseau n'est nécessaire pour l'installation ; la connectivité réseau est néanmoins requise pour les mises à jour de l'application.  
+  
+ Pour activer cette stratégie de déploiement dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], cliquez sur **à partir d’un CD-ROM ou DVD-ROM** sur la **mode d’installation** page de l’Assistant Publication.  
+  
+ Pour activer cette stratégie de déploiement manuellement, modifiez la **deploymentProvider** balise dans le manifeste de déploiement. (Dans Visual Studio, cette propriété est exposée en tant que **URL d’Installation** sur la **publier** page du Concepteur de projets. Il s’agit de Mage.exe **Start Location**.)  
   
 ## <a name="web-browser-support"></a>Prise en charge du navigateur Web  
  Les applications destinées à .NET Framework 3.5 peuvent être installées à l'aide de n'importe quel navigateur.  

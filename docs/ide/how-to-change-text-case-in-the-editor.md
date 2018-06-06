@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a43c4c89153a53c31906b59ca948e1c195422f6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de9c9c790be2624c8faa3fad706929baadeddc01
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446060"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Guide pratique pour changer la casse du texte dans l’éditeur
 
@@ -45,4 +46,4 @@ Vous pouvez utiliser des commandes de menu ou des raccourcis clavier pour mettre
 
 - [Personnaliser l’éditeur](../ide/customizing-the-editor.md)
 - [Éditeur de texte, boîte de dialogue Options](../ide/reference/text-editor-options-dialog-box.md)
-- [Écrire du code](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -9,11 +9,12 @@ description: Découvrez l’abonnement DataCamp Training inclus dans certains ab
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 552e82651937be61e333f9fc07e9e47b9723b360
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448686"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 
@@ -83,6 +84,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 ## <a name="support-resources"></a>Ressources de support technique
 -  Besoin d’aide pour utiliser DataCamp ?  Consultez les ressources suivantes :
     - [Communauté DataCamp](https://www.datacamp.com/community/tutorials), avec des forums et des didacticiels.
-    - [FAQ](https://datacamp.groovehq.com/help_center).  La page FAQ vous permet également d’envoyer une demande de support par e-mail.
+    - [Centre d’aide DataCamp](https://support.datacamp.com/hc), qui vous permet de rechercher des rubriques d’aide et de consulter les questions des utilisateurs.  
+    - [Soumettre une demande de support](https://support.datacamp.com/hc/requests/new)
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
 -  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://www.visualstudio.com/support/). 

@@ -33,11 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2eb30d50be7348802518b7cc1b945aa88a26bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ae43c5cab67d79450cea1dc024da98fe25c5375
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690664"
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Comment : définir debug et release de configurations dans Visual Studio
 Les projets Visual Studio ont des configurations Release et Debug distinctes pour votre programme. Comme le nom l'indique, vous générez la version Debug pour le débogage et la version Release pour la distribution de la version finale.  
@@ -60,7 +61,7 @@ Vous pouvez modifier la configuration de build à partir de la **générer** men
   
      Cette barre d'outils n'est pas disponible dans les éditions Express. Vous pouvez utiliser la **Générer Solution (F6)** et **démarrer le débogage F5** des éléments de menu pour choisir la configuration.
 
-## <a name="BKMK_symbols_release"></a>Générer des fichiers de symboles (.pbd) pour une build
+## <a name="BKMK_symbols_release"></a>Générer des fichiers de symboles (.pdb) pour une build
 
 Pour la plupart des types de projet, les fichiers .pdb sont générés par défaut pour les versions debug et versions release, mais les paramètres par défaut sont différents en fonction de votre type de projet spécifique et la version de Visual Studio. Vous pouvez configurer si le compilateur génère les fichiers .pdb et quel type d’informations de débogage à inclure.
 

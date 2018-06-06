@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d097562ecf1abe021d78440bc6c96019d2eb97d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6155aa13c8b05036dbb5fb2d9f895ed38719741
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767372"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Comment : ajouter et supprimer des éléments dans des fonctionnalités SharePoint
   Lorsque vous créez une solution SharePoint, Visual Studio ajoute les éléments de projet SharePoint par défaut à votre fonctionnalité. Avant le déploiement, vous pouvez ajouter et supprimer des éléments de projet SharePoint pour modifier la fonctionnalité SharePoint.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="removing-sharepoint-project-items-from-a-feature"></a>Suppression d’éléments de projet SharePoint à partir d’une fonctionnalité  
   
-#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Pour supprimer des éléments de SharePoint avec le Concepteur de fonctionnalités  
+#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Pour supprimer des éléments de SharePoint avec le Concepteur de fonctionnalités
   
 1.  Choisissez un ou plusieurs éléments dans le **éléments dans la fonctionnalité** liste.  
   
@@ -56,8 +57,7 @@ ms.lasthandoff: 04/16/2018
   
      Les éléments de projet SharePoint s’affichent dans le **éléments dans la Solution** liste.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
  [Création de fonctionnalités SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Empaquetage et déploiement de solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
   

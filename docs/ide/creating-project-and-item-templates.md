@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e595392f92c99f6f73d2a9d999356641c14b096d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 62e51a5a03011874acc723eaf159e3f7130d1340
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573256"
 ---
 # <a name="project-and-item-templates"></a>Modèles de projet et d’élément
 
@@ -46,14 +47,10 @@ Quand ces fichiers sont compressés dans un fichier *.zip* et placés dans le do
 
 Pour plus d’informations sur les dossiers de modèles, consultez [Guide pratique pour localiser et organiser les modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="starter-kits"></a>Starter Kits
-
-Les Starter Kits sont des modèles améliorés qui peuvent être partagés avec d'autres membres de la communauté. Les Starter Kits comprennent des exemples de code compilables, de la documentation et d’autres ressources permettant aux utilisateurs de découvrir de nouveaux outils et de nouvelles techniques de programmation tout en générant des applications utiles et réelles. Le contenu et les procédures de base des Starter Kits sont les mêmes que pour les modèles. Pour plus d’informations, consultez [Guide pratique pour créer des Starter Kits](../ide/how-to-create-starter-kits.md).
-
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)
 - [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)
 - [Paramètres de modèle](../ide/template-parameters.md)
-- [Personnalisation des modèles](../ide/customizing-project-and-item-templates.md)
+- [Personnaliser les modèles](../ide/customizing-project-and-item-templates.md)
 - [Packages NuGet dans les modèles Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

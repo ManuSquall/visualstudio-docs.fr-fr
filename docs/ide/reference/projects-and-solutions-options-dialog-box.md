@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606af4d08ffaec87c46c394f55ffe4e37b2a940d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 631b9fc17345d5d0c00d36e42a9d3b1db633c114
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266339"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projets et solutions, boîte de dialogue Options
 Définit le comportement [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] des projets et des solutions. Pour accéder à ces options, sélectionnez **Outils > Options**, développez **Projets et solutions** et cliquez sur **Général**.
@@ -70,6 +71,12 @@ Lorsque cette option est sélectionnée, [!INCLUDE[vsprvs](../../code-quality/in
 **Demander avant de déplacer les fichiers vers un nouvel emplacement**
 
 Lorsque cette option est sélectionnée, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] affiche un message de confirmation avant que les emplacements des fichiers ne soient changés dans l’Explorateur de solutions.
+
+**Rouvrir les documents au chargement de la solution (Visual Studio 2017 15.8 préversion 2 et ultérieure)**
+ 
+Lors du chargement de la solution, rouvrez automatiquement les documents qui étaient ouverts dans la session précédente. Lorsque cette option est sélectionnée, les documents qui étaient ouverts à la fermeture de cette solution s’ouvrent automatiquement lors du chargement de la solution.
+
+La réouverture de certains types de fichiers ou concepteurs peut ralentir le chargement de la solution. Désactivez cette option pour améliorer les performances de chargement de la solution si vous ne souhaitez pas restaurer le contexte précédent de la solution.
 
 ## <a name="locations-tab-options"></a>Options de l’onglet Emplacements
 

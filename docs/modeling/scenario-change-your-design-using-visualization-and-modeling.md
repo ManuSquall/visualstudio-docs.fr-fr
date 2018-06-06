@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 829fd8ed601eae28d367e4b2f3de0a5c7b709985
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 7784bcfc8db3c8f2709bde045622c747a326ddcc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750166"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 
@@ -150,13 +151,13 @@ Dinner Now doit estimer le coût de réalisation pour remplir le nouveau besoin.
 
  Par exemple, le développeur crée une carte de code. Il ajuste la portée pour se concentrer sur les zones concernées par le nouveau scénario. Ces zones sont sélectionnées et mises en surbrillance sur la carte :
 
- ![Graphique de dépendance Namespace](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")
+ ![Graphique de dépendance d'espace de noms](../modeling/media/namespace_reviewsystem.png)
 
  **Carte de code des espaces de noms**
 
  Le développeur développe les espaces de noms sélectionnés pour en voir les classes, les méthodes et les relations :
 
- ![Graphique de dépendance d’espace de noms développé](../modeling/media/dep_reviewsystem.png "Dep_ReviewSystem")
+ ![Graphique de dépendance d’espace de noms développé](../modeling/media/dep_reviewsystem.png)
 
  **Carte de code des espaces de noms développée avec les liens entre les groupes**
 
@@ -177,7 +178,7 @@ Dinner Now doit estimer le coût de réalisation pour remplir le nouveau besoin.
 
  Par exemple, le diagramme de dépendance suivant décrit les dépendances entre les couches et le nombre d’artefacts associés à chaque couche :
 
- ![Diagramme de dépendances de système de paiement intégré](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Diagramme de dépendances de système de paiement intégré](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagramme de dépendances**
 
@@ -277,19 +278,19 @@ Par exemple, Dinner Now doit estimer le coût de la mise à jour du composant Pa
 
 La carte suivante montre les dépendances entre la classe PaymentProcessing et d’autres parties du système Dinner Now, qui sont mises en surbrillance :
 
-![Graphique de dépendance pour le système de paiement de Dinner Now](../modeling/media/dep_dnpayment.png "Dep_DNPayment")
+![Graphique de dépendance pour le système de paiement Dinner Now](../modeling/media/dep_dnpayment.png)
 
 **Carte de code du système de paiement de Dinner Now**
 
 Le développeur explore la carte en développant la classe PaymentProcessing et en sélectionnant ses membres pour voir les zones éventuellement affectées :
 
-![Méthodes dans PaymentProcessing et dépendances](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")
+![Méthodes dans PaymentProcessing et dépendances](../modeling/media/depgraph_expandeddn.png)
 
 **Méthodes dans la classe PaymentProcessing et leurs dépendances**
 
 L’équipe génère la carte suivante pour le système de paiement de Lucerne pour inspecter ses classes, méthodes et dépendances. Elle constate que le système Lucerne risque aussi de devoir être modifié pour interagir avec les autres parties de Dinner Now :
 
-![Graphique de dépendance pour le système de paiement de Lucerne](../modeling/media/depgraph_lucernepay.png "DepGraph_LucernePay")
+![Graphique de dépendance pour le système de paiement Lucerne](../modeling/media/depgraph_lucernepay.png)
 
 **Carte de code pour le système de paiement de Lucerne**
 
@@ -297,7 +298,7 @@ Les deux équipes travaillent ensemble pour déterminer les modifications requis
 
 Après avoir réorganisé le code, les équipes génèrent une nouvelle carte de code pour voir la structure et les relations mises à jour :
 
-![Graphique de dépendance avec code réorganisé](../modeling/media/depgraph_integrated.png "DepGraph_Integrated")
+![Graphique de dépendance avec code réorganisé](../modeling/media/depgraph_integrated.png)
 
 **Carte de code après la réorganisation du code**
 
@@ -338,7 +339,7 @@ Cette carte montre que la classe PaymentApprover se trouve maintenant dans l’e
 
  Pour permettre à Lucerne de décrire et d’étudier les entités qui participent au cas d’usage Traiter le paiement, le diagramme suivant est dessiné :
 
- ![Entités traiter le paiement sur le diagramme de classes](../modeling/media/uml_payentities.png "UML_PayEntities")
+ ![Entités Traiter le paiement sur le diagramme de classes](../modeling/media/uml_payentities.png)
 
  **Entités Traiter le paiement dans un diagramme de classes**
 
@@ -346,7 +347,7 @@ Cette carte montre que la classe PaymentApprover se trouve maintenant dans l’e
 
  Pendant le développement, Lucerne utilise le diagramme de classes suivant pour décrire et étudier les détails de chaque classe :
 
- ![Traiter les détails des entités de paiement sur un diagramme de classes](../modeling/media/uml_payment.png "UML_Payment")
+ ![Détails des entités Traiter le paiement sur un diagramme de classes](../modeling/media/uml_payment.png)
 
  **Détails de l’entité Traiter le paiement dans le diagramme de classes**
 
@@ -407,7 +408,7 @@ Pour commencer l’exploration et l’examen des classes existantes, vous pouvez
 
  Pour que le code reste cohérent avec la conception, Dinner Now et Lucerne utilisent le diagramme de dépendances suivantes pour valider le code à mesure qu’il évolue :
 
- ![Diagramme de dépendances de système de paiement intégré](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Diagramme de dépendances de système de paiement intégré](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagramme de dépendances de Dinner Now intégré à Lucerne**
 
@@ -417,13 +418,13 @@ Pour commencer l’exploration et l’examen des classes existantes, vous pouvez
 
  La carte de code suivante montre les nouveaux appels entre Dinner Now et PaymentApprover :
 
- ![Graphique de dépendance mis à jour avec système intégré](../modeling/media/depgraph_intsystem.png "DepGraph_IntSystem")
+ ![Graphique de dépendance mis à jour avec système intégré](../modeling/media/depgraph_intsystem.png)
 
  **Carte de code avec les appels de méthode mis à jour**
 
  Après avoir vérifié que le système fonctionne comme prévu, Dinner Now commente le code PaymentProcessing. Les rapports de validation de couche sont satisfaisants et la carte de code obtenue indique qu’il n’existe plus aucune dépendance PaymentProcessing :
 
- ![Graphique de dépendance sans PaymentProcessing](../modeling/media/depgraph_nomore.png "DepGraph_NoMore")
+ ![Graphique de dépendance sans PaymentProcessing](../modeling/media/depgraph_nomore.png)
 
  **Carte de code sans PaymentProcessing**
 

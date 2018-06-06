@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ec095bd3228eb2291f77bf9fadceb0b74d8a37
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procédure : créer un document XML basé sur un schéma XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Comment : créer un document XML basé sur un schéma XSD
 
 Le **générer un exemple XML** fonctionnalité génère un exemple de fichier XML en fonction de votre fichier de schéma XML (XSD).
 
@@ -46,7 +46,7 @@ Notez également que le contenu `xs:base64Binary` n'est généré que si des én
 
 2.  Dans le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md), cliquez sur le `PurchaseOrder` élément global. Sélectionnez **générer l’exemple de code XML**.
 
-     Lorsque vous sélectionnez cette option, le fichier PurchaseOrder.xml avec l'exemple de contenu XML suivant est généré et ouvert dans l'Éditeur XML :
+     Lorsque vous sélectionnez cette option, PurchaseOrder. *xml* fichier avec l’exemple de contenu XML suivant est généré et ouvert dans l’éditeur XML :
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -77,4 +77,4 @@ Notez également que le contenu `xs:base64Binary` n'est généré que si des én
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation de données XML](../xml-tools/working-with-xml-data.md)
+- [Utilisation des données XML](../xml-tools/working-with-xml-data.md)

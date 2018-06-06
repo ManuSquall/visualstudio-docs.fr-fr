@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56ad565dfffd454eeca465aa4097c077fdc0a65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName, élément (modèles Visual Studio)
 Spécifie si le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] système de projet génère un nom par défaut pour le modèle dans le **ajouter un nouvel élément** ou **nouveau projet** boîte de dialogue.  
@@ -59,7 +59,7 @@ Spécifie si le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] systè
   
  Si le `ProvideDefaultName` élément est `false`, le **nom** zones de la **ajouter un nouvel élément** et **nouveau projet** boîtes de dialogue contiennent la valeur `<Enter_name>`.  
   
- Utilisez le [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) élément pour spécifier le nom par défaut du projet ou d’élément dans le **ajouter un nouvel élément** et **nouveau projet** boîtes de dialogue.  
+ Utilisez le [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) élément pour spécifier le nom par défaut du projet ou d’élément dans le **ajouter un nouvel élément** et **nouveau projet** boîtes de dialogue. Lorsque la valeur de la `ProvideDefaultName` élément est `true`, l’omission de la `DefaultName` , élément pour les projets remplit la boîte de dialogue avec le nom du modèle, autrement dit, la valeur de la [nom](../extensibility/name-element-visual-studio-templates.md) élément.
   
 ## <a name="example"></a>Exemple  
  Le code suivant exemple définit le `ProvideDefaultName` élément `false`.  

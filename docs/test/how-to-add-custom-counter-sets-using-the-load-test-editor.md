@@ -1,5 +1,5 @@
 ---
-title: Ajouter des ensembles de compteurs personnalisés pour un test de charge dans Visual Studio | Microsoft Docs
+title: Ajouter des ensembles de compteurs personnalisés pour un test de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,14 @@ ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f811ee784a0cb40fb1e5daf00f0ccf3c2ca16bfe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 862afc0755e8d478d5e8bca76019abd899d842f8
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752012"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Comment : ajouter des ensembles de compteurs personnalisés à l'aide de l'éditeur de test de charge
 
@@ -26,7 +28,7 @@ Quand vous créez un test de charge avec l’**Assistant Nouveau test de charge*
 
 Vous gérez vos compteurs dans l’**éditeur de test de charge**. Les ensembles de compteurs qui sont déjà ajoutés au test sont visibles dans le nœud **Ensembles de compteurs** du test de charge. Après avoir créé un test de charge, vous pouvez lui ajouter de nouveaux ensembles de compteurs personnalisés.
 
-![Ensemble de compteurs personnalisés](../test/media/loadtestcustomcounter.png "LoadTestCustomCounter")
+![Ensemble de compteurs personnalisé](../test/media/loadtestcustomcounter.png)
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>Pour ajouter un ensemble de compteurs personnalisé à un test de charge
 

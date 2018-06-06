@@ -1,5 +1,5 @@
 ﻿---
-title: Tout d’abord consulter le débogueur
+title: Présentation du débogueur
 description: Prendre un coup de œil les différentes fonctionnalités du débogueur Visual Studio.
 ms.custom: mvc
 ms.date: 03/27/2018
@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691090"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Tout d’abord consulter le débogueur Visual Studio
 
@@ -76,7 +77,7 @@ Lorsque vous êtes dans le débogueur, pointez sur une ligne de code jusqu'à ce
 
 ![Cliquez sur exécuter](../debugger/media/dbg-tour-run-to-click-2.png "exécuter à, cliquez sur")
 
->  [!NOTE] 
+> [!NOTE]
 > Le bouton **Exécuter jusqu'au clic** (Exécuter l'exécution jusqu’ici) est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Cliquez sur le bouton **Exécuter jusqu'au clic** (Exécuter l'exécution jusqu’ici). Le débogueur passe à la ligne de code où vous avez cliqué.
@@ -104,7 +105,6 @@ Si vous avez défini les points d’arrêt, le débogueur s’arrête sur le pre
 Appuyez sur F5, jusqu'à ce que vous atteigniez la ligne de code où vous avez sélectionné **exécuter jusqu’au curseur**.
 
 Cette commande est utile lorsque vous modifiez du code et que vous souhaitez définir un point d’arrêt temporaire rapidement et de démarrer le débogueur.
-
 
 > [!NOTE]
 > Vous pouvez utiliser **exécuter jusqu’au curseur** dans les **pile des appels** fenêtre pendant que vous déboguez.
@@ -179,7 +179,7 @@ Vous pouvez également utiliser les menus contextuels à partir de la **pile des
 ## <a name="examine-an-exception"></a>Examiner une exception
 
 Lorsque votre application lève une exception, le débogueur vous amène à la ligne de code qui a levé l’exception.
-     
+
 ![Assistance d’exception](../debugger/media/dbg-tour-exception-helper.png "assistance d’Exception")
 
 Dans cet exemple, le **assistance d’Exception** vous montre une `System.Argument` exception et un message d’erreur indiquant que le chemin d’accès n’est pas une forme conforme. Par conséquent, nous savons que l’erreur s’est produite sur un argument de méthode ou fonction.
@@ -188,7 +188,7 @@ Dans cet exemple, le `DirectoryInfo` appel a renvoyé l’erreur sur la chaîne 
 
 L’application d’assistance de l’Exception est une fonctionnalité intéressante qui peut vous aider à déboguer les erreurs. Vous pouvez également effectuer les opérations vue Détails de l’erreur et ajouter un espion à partir de l’application d’assistance de l’Exception. Ou, si nécessaire, vous pouvez modifier les conditions pour lever l’exception particulière.
 
->  [!NOTE] 
+>  [!NOTE]
 > L’application d’assistance de l’Exception remplace l’Assistant Exception dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Développez le **paramètres d’Exception** nœud pour afficher davantage d’options sur la façon de gérer ce type d’exception, mais vous n’avez pas besoin de modifications dans cette visite guidée !
@@ -209,7 +209,7 @@ Pour plus d’informations, consultez [déboguer des applications ASP.NET en dir
 
 Vous pouvez parcourir et afficher les captures instantanées à l’aide des boutons **Étape précédente** et **Étape suivante** situés dans la barre d’outils de débogage. Utilisez ces boutons pour accéder aux événements figurant sous l’onglet **Événements** de la fenêtre **Outils de diagnostic**.
 
-![Étape vers l’arrière et des boutons](../debugger/media/intellitrace-step-back-icons-description.png  "boutons arrière et transférer")  
+![Étape vers l’arrière et des boutons](../debugger/media/intellitrace-step-back-icons-description.png  "boutons arrière et transférer")
 
 Pour plus d’informations, consultez la page [Afficher des captures instantanées avec le retour en arrière IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 

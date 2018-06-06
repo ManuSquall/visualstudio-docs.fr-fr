@@ -11,13 +11,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e98be1dd16705be00f388419013686f861f3753
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 18f4153db019dd6ded97337d4599f02a6b02ef49
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748932"
 ---
-# <a name="navigate-and-update-a-model-in-program-code"></a>Accéder et mettre à jour un modèle de Code de programme
+# <a name="navigate-and-update-a-model-in-program-code"></a>Accéder à un modèle et le mettre à jour dans le code du programme
 
 Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, définir leurs propriétés, créer et supprimer les liens entre des éléments. Toutes les modifications doivent être effectuées dans une transaction. Si les éléments peuvent être affichés sur un diagramme, le diagramme doit être « corrigé « automatiquement à la fin de la transaction.
 
@@ -55,11 +56,11 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
 ##  <a name="example"></a> Un exemple de définition DSL
  Il s’agit de la partie principale de DslDefinition.dsl pour les exemples de cette rubrique :
 
- ![Diagramme de définition DSL &#45; modèle d’arbre généalogique](../modeling/media/familyt_person.png "FamilyT_Person")
+ ![Diagramme de définition DSL &#45; modèle d’arbre généalogique](../modeling/media/familyt_person.png)
 
  Ce modèle est une instance de cette DSL :
 
- ![Modèle d’arbre généalogique Tudor](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")
+ ![Modèle d’arbre généalogique de la famille Tudor](../modeling/media/tudor_familytreemodel.png)
 
 ### <a name="references-and-namespaces"></a>Références et les espaces de noms
  Pour exécuter le code dans cette rubrique, vous devez référencer :
@@ -116,7 +117,7 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- Il existe également d’autres méthodes pour accéder à des liens. Par exemple :
+ Il existe également d’autres méthodes pour accéder à des liens. Exemple :
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -140,7 +141,7 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
  `store.ElementDirectory.GetElement(elementId);`
 
 ##  <a name="metadata"></a> L’accès aux informations de classe
- Vous pouvez obtenir plus d’informations sur les classes, les relations et les autres aspects de la définition DSL. Par exemple :
+ Vous pouvez obtenir plus d’informations sur les classes, les relations et les autres aspects de la définition DSL. Exemple :
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -231,13 +232,13 @@ using (Transaction t =
 
  Il existe trois façons dans laquelle vous pouvez créer une instance d’une relation. Chacune de ces trois méthodes a le même effet :
 
--   Définissez la propriété de l’acteur de rôle source. Par exemple :
+-   Définissez la propriété de l’acteur de rôle source. Exemple :
 
     -   `familyTree.People.Add(edward);`
 
     -   `edward.Parents.Add(henry);`
 
--   Définissez la propriété de l’acteur de rôle cible. Par exemple :
+-   Définissez la propriété de l’acteur de rôle cible. Exemple :
 
     -   `edward.familyTreeModel = familyTree;`
 
@@ -247,7 +248,7 @@ using (Transaction t =
 
          La multiplicité de ce rôle est `0..*`, donc nous ajouter à la collection.
 
--   Construire une instance de la relation de façon explicite. Par exemple :
+-   Construire une instance de la relation de façon explicite. Exemple :
 
     -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -350,7 +351,7 @@ using (Transaction t = targetDiagram.Store.
  Dans une DSL, l’élément de modèle de domaine, qui représente un concept telles que la personne ou une chanson, est distincte de l’élément de forme, qui représente ce que vous voyez sur le diagramme. L’élément de modèle de domaine stocke les propriétés importantes et les relations des concepts. L’élément forme stocke la taille, la position et la couleur de la vue de l’objet sur le diagramme et la disposition de ses composants.
 
 ### <a name="presentation-elements"></a>Éléments de présentation
- ![Diagramme de classes des types de forme et élément de base](../modeling/media/dslshapesandelements.png "DSLshapesAndElements")
+ ![Diagramme de classes de la forme de base et des types d'éléments](../modeling/media/dslshapesandelements.png)
 
  Dans votre définition DSL, chaque élément que vous spécifiez crée une classe qui est dérivée d’une des classes standards suivantes.
 
@@ -509,7 +510,7 @@ partial class MyDiagram
  Formes, les connecteurs et les diagrammes sont des sous-types de <xref:Microsoft.VisualStudio.Modeling.ModelElement> et actives dans le magasin. Vous devez donc modifier leur uniquement à l’intérieur d’une transaction. Pour plus d’informations, consultez [Comment : utiliser les Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 ##  <a name="docdata"></a> Affichage du document et les données du Document
- ![Diagramme de classes des types de diagramme standard](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")
+ ![Diagramme de classes des types de diagramme standard](../modeling/media/dsldiagramsanddocs.png)
 
 ## <a name="store-partitions"></a>Stocker les Partitions
  Lorsqu’un modèle est chargé, le diagramme qui l’accompagne est chargé en même temps. En règle générale, le modèle est chargé dans Store.DefaultPartition, et le contenu de schéma est chargé dans une autre Partition. En règle générale, le contenu de chaque partition est chargé et enregistré dans un fichier séparé.

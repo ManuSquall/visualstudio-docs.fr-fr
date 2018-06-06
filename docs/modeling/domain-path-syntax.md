@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: de364760b5d7446b050cd8931ea2e95867b88e81
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 984b27b65b251a1e87c72962e488fd0d4036a4d0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749542"
 ---
 # <a name="domain-path-syntax"></a>Syntaxe du chemin de domaine
 Les définitions DSL utilisent une syntaxe semblable à XPath pour rechercher des éléments spécifiques dans un modèle.
@@ -26,7 +27,7 @@ Les définitions DSL utilisent une syntaxe semblable à XPath pour rechercher de
 
  *RelationshipName.PropertyName/!Role*
 
- ![Relation de référence CommentReferencesSubjects](../modeling/media/dsl_reference.png "dsl_reference")
+ ![Relation de référence CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 
  La syntaxe traverse l'arborescence du modèle. Par exemple, la relation de domaine **CommentReferencesSubjects** dans l’illustration ci-dessus a un **sujets** rôle. Le segment de chemin d’accès **/ ! Subjectt** Spécifie que le chemin d’accès se termine sur les éléments accédées par le biais du **sujets** rôle.
 

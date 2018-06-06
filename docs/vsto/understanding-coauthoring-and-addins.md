@@ -1,5 +1,5 @@
 ---
-title: Co-création de présentation et les compléments | Documents Microsoft
+title: Comprendre la co-création et compléments
 ms.custom: ''
 ms.date: 07/20/2017
 ms.technology:
@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 911db43b820a05928f97e727568582f939560e9d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea525a97b38a043137b372f7c224f15c39478a97
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768168"
 ---
-# <a name="understanding-coauthoring-and-add-ins"></a>Présentation des co-création et des compléments
+# <a name="understand-coauthoring-and-add-ins"></a>Comprendre la co-création et compléments
 
 Co-création est une fonctionnalité de bureau d’Excel pour Windows qui permet de modifier un classeur hébergé dans le cloud (c'est-à-dire, OneDrive, OneDrive entreprise ou SharePoint Online) simultanément avec d’autres utilisateurs. Avec l’ajout de cette fonctionnalité, vous devrez peut-être apporter des modifications dans votre Solution Excel afin de garantir qu’elle fonctionne correctement même si les utilisateurs sont co-création. Consultez [sur co-création dans Excel](https://msdn.microsoft.com/vba/excel-vba/articles/about-coauthoring-in-excel).
 

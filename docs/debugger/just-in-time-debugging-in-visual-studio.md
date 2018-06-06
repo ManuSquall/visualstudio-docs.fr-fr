@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c506e12fc8e6637e2b53852587e6a37c57cbf5ce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b97e2d6b9ca269a86c3b66ffbcc4bb441051f29
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Comment : répondre au débogueur juste-à-temps
 
@@ -25,7 +25,7 @@ Les actions à entreprendre lorsque vous consultez juste-à-temps débogueur bo�
 
 #### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Si vous souhaitez corriger ou déboguer l’erreur (utilisateurs de Visual Studio)
 
-- Vous devez avoir [installé Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48146) pour afficher des informations détaillées sur l’erreur et essayez de déboguer. Pour plus d’informations, consultez [déboguer à l’aide du débogueur juste à temps](../debugger/debug-using-the-just-in-time-debugger.md). Si vous ne pouvez pas résoudre l’erreur et corriger l’application, contactez le propriétaire de l’application pour résoudre l’erreur.
+- Vous devez avoir [installé Visual Studio](http://www.visualstudio.com) pour afficher des informations détaillées sur l’erreur et essayez de déboguer. Pour plus d’informations, consultez [déboguer à l’aide du débogueur juste à temps](../debugger/debug-using-the-just-in-time-debugger.md). Si vous ne pouvez pas résoudre l’erreur et corriger l’application, contactez le propriétaire de l’application pour résoudre l’erreur.
 
 #### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Si vous souhaitez empêcher l’affichage de la boîte de dialogue
 

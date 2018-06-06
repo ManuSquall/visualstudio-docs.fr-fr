@@ -34,19 +34,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 279a0a73f24b2916e21293c854692ab40f444b4c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 446378df2d73f4d0c2bb8eac45075fa51365cd6d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34693732"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Outils XML dans Visual Studio
 
-*Langage XML (Extensible Markup)* est un langage de balisage qui fournit un format pour décrire des données. Il permet d'effectuer des déclarations de contenu plus précises et d'obtenir des résultats de recherche plus pertinents entre plusieurs plateformes. De plus, le langage XML permet de séparer la présentation des données. Par exemple, en HTML, vous utilisez des balises pour indiquer au navigateur d'afficher des données en caractères gras ou italiques, tandis qu'en langage XML, vous utilisez des balises uniquement pour décrire les données, telles qu'un nom de ville, une température ou une pression barométrique. En XML, vous utilisez des feuilles de style, telles que des feuilles de style en cascade (CSS) ou de type XSL (eXtensible Stylesheet Language) pour présenter les données dans un navigateur. Le langage XML sépare les données de la présentation et du processus. Cela vous permet d'afficher et de traiter les données comme vous le souhaitez, en appliquant différentes feuilles de style et applications.
+*Langage XML (Extensible Markup)* est un langage de balisage qui fournit un format pour décrire des données. Il permet d'effectuer des déclarations de contenu plus précises et d'obtenir des résultats de recherche plus pertinents entre plusieurs plateformes. De plus, le langage XML permet de séparer la présentation des données. Par exemple, en HTML, vous utilisez des étiquettes pour indiquer au navigateur d’afficher des données en caractères gras ou italiques, tandis qu’en langage XML, vous utilisez des étiquettes uniquement pour décrire les données, telles qu’un nom de ville, une température ou une pression barométrique. En XML, vous utilisez des feuilles de style comme feuille de style XSL (Extensible Language) et des feuilles de style en cascade (CSS) pour présenter les données dans un navigateur. Le langage XML sépare les données de la présentation et du processus. Cela vous permet d'afficher et de traiter les données comme vous le souhaitez, en appliquant différentes feuilles de style et applications.
 
-Le langage XML est un sous-ensemble du langage SGML qui est optimisé pour une distribution via Internet. Il a été défini par le World Wide Web Consortium (W3C). Cette normalisation garantit que les données structurées seront uniformes et indépendantes des applications et des fournisseurs.
+Le langage XML est un sous-ensemble du langage SGML qui est optimisé pour une distribution via Internet. Il a été défini par le World Wide Web Consortium (W3C). Cette normalisation garantit que les données structurées sont uniformes et indépendantes des applications ou des fournisseurs.
 
-XML est au cœur de nombreuses fonctionnalités de Visual Studio et le .NET Framework. Les rubriques répertoriées ci-dessous désigne les outils et fonctionnalités associées au langage XML qui sont proposées dans Visual Studio et le .NET Framework.
+XML est au cœur de nombreuses fonctionnalités de Visual Studio et le .NET Framework. La liste suivante de l’article noms des outils et fonctionnalités associées au langage XML qui sont proposées dans Visual Studio et le .NET Framework.
 
 Pour plus d’informations, consultez le <xref:System.Xml?displayProperty=fullName> documentation.
 
@@ -68,6 +69,6 @@ Pour plus d’informations, consultez le <xref:System.Xml?displayProperty=fullNa
 
 [Transformations XSLT](/dotnet/standard/data/xml/xslt-transformations) décrit comment la <xref:System.Xml.Xsl.XslCompiledTransform> classe implémente la recommandation XSLT 1.0.
 
-[Traitement XML à l’aide de données du modèle de données XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) décrit comment la <xref:System.Xml.XPath.XPathNavigator> classe peut traiter les données XML stockées dans un <xref:System.Xml.XPath.XPathDocument> ou un <xref:System.Xml.XmlDocument> objet. La classe <xref:System.Xml.XPath.XPathNavigator> est basée sur le modèle de données XQuery 1.0 et XPath 2.0, et peut être utilisée pour parcourir et modifier des données XML.
+[Traiter des données XML à l’aide du modèle de données XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) décrit comment la <xref:System.Xml.XPath.XPathNavigator> classe peut traiter les données XML stockées dans un <xref:System.Xml.XPath.XPathDocument> ou un <xref:System.Xml.XmlDocument> objet. La classe <xref:System.Xml.XPath.XPathNavigator> est basée sur le modèle de données XQuery 1.0 et XPath 2.0, et peut être utilisée pour parcourir et modifier des données XML.
 
 [Modèle SOM (Schema Object Model) XML](/dotnet/standard/data/xml/xml-schema-object-model-som) décrit les classes utilisées pour créer et manipuler des schémas XML, en fournissant une <xref:System.Xml.Schema.XmlSchema> classe pour charger et modifier un schéma.

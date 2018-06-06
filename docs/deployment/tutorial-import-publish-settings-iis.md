@@ -11,11 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b023349454f71835e13e7cc891b8be92b90c153f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 02e6ae6e06daf43a6aec08097df2b37a21d2aaa3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766671"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publier une application à IIS à l’importation de paramètres de publication dans Visual Studio
 
@@ -38,13 +39,11 @@ Un fichier de paramètres de publication (*\*.publishsettings*) est différente 
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Vous devez disposer de Visual Studio est installé et le **ASP.NET** et **.NET Framework** charge de travail de développement. Pour une application .NET Core, vous devez également le **.NET Core** la charge de travail.
+* Vous devez disposer de Visual Studio 2017 installé et le **ASP.NET** et **.NET Framework** charge de travail de développement. Pour une application .NET Core, vous devez également le **.NET Core** la charge de travail.
 
-    Si vous n’avez pas encore installé Visual Studio, installez-le gratuitement [ici](http://www.visualstudio.com).
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
 
-    Les étapes décrites dans cet article sont basés sur Visual Studio 2017
-
-* Pour générer le fichier de paramètres de publication à partir de IIS, vous devez disposer d’un ordinateur exécutant Windows Server 2012 avec le rôle de serveur Web de IIS 8.0 correctement configuré et que ASP.NET 4.5 ou ASP.NET Core installé. Pour ASP.NET Core, consultez [publication sur IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Pour ASP.NET 4.5, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* Pour générer le fichier de paramètres de publication à partir de IIS, vous devez disposer d’un ordinateur exécutant Windows Server 2012 ou Windows Server 2016, et vous devez disposer du rôle serveur Web IIS correctement configuré. ASP.NET 4.5 ou ASP.NET Core doit également être installé. Pour ASP.NET Core, consultez [publication sur IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Pour ASP.NET 4.5, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Créer un nouveau projet ASP.NET dans Visual Studio
 
@@ -68,66 +67,17 @@ Un fichier de paramètres de publication (*\*.publishsettings*) est différente 
 
 ## <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Créer le fichier de paramètres de publication dans IIS sur Windows Server
 
-1. Dans IIS, cliquez sur le **Site Web par défaut**, choisissez **déployer** > **configuration Web déployer de la publication**.
-
-    ![Configurer la configuration de déploiement Web](../deployment/media/tutorial-configure-web-deploy-publishing.png)
-
-1. Dans le **configuration Web déployer de la publication** boîte de dialogue zone, examinez les paramètres.
-
-1. Cliquez sur **le programme d’installation**.
-
-    Dans le **résultats** Panneau de configuration, la sortie montre que les droits d’accès ont été accordée à l’utilisateur spécifié et qu’un fichier avec un *.publishsettings* extension de fichier a été générée à l’emplacement indiqué dans le boîte de dialogue.
-
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <publishData>
-      <publishProfile
-        publishUrl="https://myhostname:8172/msdeploy.axd"
-        msdeploySite="Default Web Site"
-        destinationAppUrl="http://myhostname:80/"
-        mySQLDBConnectionString=""
-        SQLServerDBConnectionString=""
-        profileName="Default Settings"
-        publishMethod="MSDeploy"
-        userName="myhostname\myusername" />
-    </publishData>
-    ```
-
-    Selon votre configuration de Windows Server et les services IIS, vous verrez des valeurs différentes. Voici quelques détails sur les valeurs que vous voyez :
-
-    * Le *msdeploy.axd* fichier référencé dans le `publishUrl` attribut est un fichier de gestionnaire HTTP générées dynamiquement pour Web Deploy. (Pour des tests, `http://myhostname:8172` fonctionne généralement ainsi.)
-    * Le `publishUrl` port est généralement défini sur le port 8172, qui est la valeur par défaut pour Web Deploy.
-    * Le `destinationAppUrl` port est généralement défini sur le port 80, qui est la valeur par défaut pour IIS.
-    * Si vous ne parvenez pas à se connecter à l’hôte distant dans Visual Studio en utilisant le nom d’hôte (dans les étapes suivantes), testez l’adresse IP à la place du nom d’hôte.
-
-    > [!NOTE]
-    > Si vous publiez sur IIS qui s’exécute sur une machine virtuelle Azure, les ports IIS et Web Deploy doivent être ouvert dans le groupe de sécurité réseau. Pour plus d’informations, consultez [installer et exécuter IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
-
-1. Copiez ce fichier sur l’ordinateur sur lequel vous exécutez Visual Studio.
+[!INCLUDE [create-publish-settings-iis](../deployment/includes/create-publish-settings-iis.md)]
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importer les paramètres de publication dans Visual Studio et déployer
 
-1. Sur l’ordinateur où vous ouvrir le projet ASP.NET dans Visual Studio, cliquez sur le projet dans l’Explorateur de solutions, puis choisissez **publier**.
+[!INCLUDE [import-publish-settings](../deployment/includes/import-publish-settings-vs.md)]
 
-1. Si vous avez déjà configuré des profils de publication, le **publier** volet s’affiche. Cliquez sur **créer nouveau profil**.
-
-1. Dans le **choisir une cible de publication** boîte de dialogue, cliquez sur **importer un profil**.
-
-    ![Choisissez publier](../deployment/media/tutorial-publish-tool-import-profile.png)
-
-1. Accédez à l’emplacement du fichier de paramètres de publication que vous avez créé dans la section précédente.
-
-1. Dans le **importation publier un fichier de paramètres** boîte de dialogue, accédez à et sélectionnez le profil que vous avez créé dans la section précédente, puis cliquez sur **ouvrir**.
-
-    Visual Studio lance le processus de déploiement, et la fenêtre Sortie affiche la progression et les résultats.
-
-    Si vous obtenez un déploiement de toutes les erreurs, cliquez sur **paramètres** pour modifier les paramètres. Modifier les paramètres et cliquez sur **Validate** pour tester les nouveaux paramètres.
-
-    ![Modifier les paramètres dans l’outil de publication](../deployment/media/tutorial-configure-publish-settings-in-tool.png)
+Après que l’application a été déployé avec succès, il doit démarrer automatiquement. S’il ne démarre pas à partir de Visual Studio, démarrez l’application dans IIS. Pour ASP.NET Core, vous devez vous assurer que le pool d’applications de champ pour le **DefaultAppPool** a la valeur **aucun Code managé**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce didacticiel, vous a créé un fichier de paramètres de publication, importé dans Visual Studio et déployé une application ASP.NET sur IIS.
+Dans ce didacticiel, vous a créé un fichier de paramètres de publication, importé dans Visual Studio et déployé une application ASP.NET sur IIS. Vous pouvez choisir une vue d’ensemble des autres options de publication dans Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Présentation du déploiement](../deployment/deploying-applications-services-and-components.md)

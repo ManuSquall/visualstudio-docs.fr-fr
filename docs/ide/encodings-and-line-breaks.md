@@ -19,25 +19,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c32fc1a7fbd82d1ac9604396dc2ea118efbad2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446691"
 ---
-# <a name="encodings-and-line-breaks"></a>Encodages et sauts de ligne
+# <a name="encodings-and-line-endings"></a>Encodages et fins de ligne
 
 Les caractères suivants sont interprétés comme des sauts de ligne dans Visual Studio :
 
--   CR LF : retour chariot + saut de ligne, caractères Unicode 000D + 000A
+- CR LF : retour chariot + saut de ligne, caractères Unicode 000D + 000A
 
--   LF : saut de ligne, caractère Unicode 000A
+- LF : saut de ligne, caractère Unicode 000A
 
--   NEL : ligne suivante, caractère Unicode 0085
+- NEL : ligne suivante, caractère Unicode 0085
 
--   LS : séparateur de ligne, caractère Unicode 2028
+- LS : séparateur de ligne, caractère Unicode 2028
 
--   PS : séparateur de paragraphe, caractère Unicode 2029
+- PS : séparateur de paragraphe, caractère Unicode 2029
 
 Du texte copié à partir d’autres applications conserve les caractères d’encodage et de saut de ligne d’origine. Par exemple, lorsque vous copiez du texte à partir du Bloc-notes pour le coller dans un fichier texte dans Visual Studio, le texte a les mêmes paramètres que dans le Bloc-notes.
 
@@ -56,4 +57,4 @@ Vous pouvez utiliser la boîte de dialogue **Fichier** > **Options d’enregistr
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Écrire du code dans l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -1,5 +1,5 @@
 ---
-title: Page Publier, Project Designer (développement Office dans Visual Studio) | Documents Microsoft
+title: Page Publier, Concepteur de projets (développement Office dans Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,21 +19,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d63044dbe191a2143b4800b57ee5344bf030107d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692842"
 ---
-# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Page Publier, Concepteur de projets (Développement Office dans Visual Studio)
+# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Page Publier, Concepteur de projets (développement Office dans Visual Studio)
   La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement.  
   
  Pour accéder à cette page, sélectionnez le projet dans **l’Explorateur de solutions**, puis, dans le **projet** menu, choisissez *nom_projet* **propriétés** . Si la page **Publier** n’apparaît pas, choisissez l’onglet **Publier** .  
   
 > [!NOTE]  
->  Vous pouvez également définir l’emplacement de publication dans l’ **Assistant Publication**. Pour plus d’informations, consultez [Comment : publier une solution Office à l’aide de ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+>  Vous pouvez également définir l’emplacement de publication dans l’ **Assistant Publication**. Pour plus d’informations, consultez [Comment : publier une solution Office à l’aide de ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
-## <a name="uielement-list"></a>Liste des éléments d’interface  
+## <a name="uielement-list"></a>Liste UIElement  
  **Emplacement du dossier de publication (site web, serveur ftp ou chemin du fichier)**  
  Obligatoire.  
   
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
  Les options incluent l’ordinateur local, un partage de fichiers UNC ou un site web HTTP/HTTPS. Le chemin d’accès peut être local (*c:\foldername\publishfolder*), relatif (*publier\\*), ou un emplacement qualifié complet (*\\\servername\foldername* ou http://*nomserveur/nomdossier*).  
   
- Par défaut, l’emplacement de publication est *http://localhost/projectname/* si vous avez installé IIS, ou le répertoire Publish si vous le faites pas IIS installé.  
+ Par défaut, l’emplacement de publication est *http://localhost/projectname/* si vous avez installé IIS, ou le *publier\\*  répertoire si vous n’avez pas installé IIS.  
   
  **URL du dossier d'installation**  
  Facultatif.  
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/16/2018
   
  Si les fichiers d’installation se trouvent dans un emplacement relatif au document ou au programme d’installation, comme c’est le cas avec l’option CD, laissez cette zone vide.  
   
- Cette valeur peut être assignée plus tard par un administrateur. Pour plus d’informations, consultez [Comment : changer le chemin d’installation d’une solution Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Cette valeur peut être assignée plus tard par un administrateur. Pour plus d’informations, consultez [Comment : modifier le chemin d’accès de l’installation d’une solution Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  **Composants requis**  
  Les composants nécessaires peuvent être inclus dans le programme d’installation ou téléchargés à la demande durant l’installation.  
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/16/2018
   
 -   URL du support technique : adresse qui permet à l’utilisateur final de contacter le support technique de la solution Office.  
   
- **Options (Paramètres Office)**  
+ **Options (paramètres Office)**  
  Vous pouvez définir les options de publication des propriétés suivantes :  
   
 -   Nom de solution : nom de la solution Office, tel qu’il apparaît dans l’application Office.  
@@ -99,9 +100,9 @@ ms.lasthandoff: 04/16/2018
  **Langue de publication**  
  Cette option définit la langue des termes du contrat de licence logiciel Microsoft, et inclut les modules linguistiques dans la liste des composants nécessaires. Elle n’affecte pas la langue de la personnalisation. La langue du programme d’installation est déterminée par les langues installées de Visual Studio.  
   
- Pour plus d’informations sur la façon de changer la **langue de publication**, consultez [Comment : modifier la langue de publication pour une application ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
+ Pour plus d’informations sur la façon de modifier le **langue de publication**, consultez [Comment : modifier la langue de publication pour une application ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
   
- **Version de publication**  
+ **La version de publication**  
  Définit le numéro de version de la personnalisation. Quand vous changez le numéro de version, l’application est publiée en tant que mise à jour. Un dossier est créé pour chaque version pendant le processus de génération pour éviter de remplacer la version précédemment publiée. Chaque partie de la version de publication (**Majeure**, **Mineure**, **Build**, **Révision**) peut contenir jusqu’à 5 chiffres.  
   
  **Incrémenter automatiquement la révision avec chaque mise en production**  
@@ -111,8 +112,8 @@ ms.lasthandoff: 04/16/2018
  Publie l’application à l’aide des paramètres actuels. Équivaut au bouton **Terminer** situé dans l’ **Assistant Publication**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déploiement d’une Solution Office](../vsto/deploying-an-office-solution.md)   
- [Déploiement d’une Solution Office à l’aide de ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
+ [Déployer une solution Office](../vsto/deploying-an-office-solution.md)   
+ [Déployer une solution Office à l’aide de ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Composants requis de solutions Office pour le déploiement](http://msdn.microsoft.com/en-us/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   

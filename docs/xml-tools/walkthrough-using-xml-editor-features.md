@@ -10,20 +10,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6884f5b97d52e8d0671f1ccb73a1dabd739afee1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: afda2968ece2a18b7abdc2c4c35e4353206cbe42
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34693823"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>Procédure pas à pas : utilisation des fonctionnalités de l’Éditeur XML
+# <a name="walkthrough-use-xml-editor-features"></a>Procédure : Utiliser les fonctionnalités de l’éditeur XML
 
-Les étapes de cette procédure pas à pas expliquent la création d'un document XML. Cette procédure utilise également certaines fonctions de l'éditeur XML qui en font un outil précieux pour l'édition XML.
+Les étapes de cette procédure pas à pas expliquent la création d'un document XML. Cette procédure utilise également certaines fonctionnalités de l’éditeur XML qui en font un outil précieux pour l’édition XML.
 
 > [!NOTE]
-> Avant d'entamer cette procédure, enregistrez le fichier hireDate.xsd (plus bas dans cette rubrique) sur votre ordinateur local.
+> Avant de commencer la procédure pas à pas, vous devez enregistrer le *hireDate.xsd* fichier (inclus ci-dessous dans cette rubrique) sur votre ordinateur local.
 
-## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l'associer à un schéma XML
+## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l’associer à un schéma XML
 
 1.  Sur le **fichier** menu, pointez sur **nouveau**, puis cliquez sur **fichier**.
 
@@ -39,7 +40,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
      Le **ouvrir le schéma XSD** boîte de dialogue s’affiche.
 
-5.  Sélectionnez le fichier hireDate.xsd et cliquez sur **ouvrir**.
+5.  Sélectionnez le *hireDate.xsd* de fichier et cliquez sur **ouvrir**.
 
 6.  Cliquez sur **OK**.
 
@@ -59,7 +60,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
     -   **employé** pour ajouter l’élément racine.
 
-2.  Sélectionnez **< !--** pour ajouter un nœud de commentaire et appuyez sur ENTRÉE.
+2.  Sélectionnez **< !--** pour ajouter le nœud de commentaire et appuyez sur **entrée**.
 
      L’éditeur insère une étiquette de fin de commentaire et place le curseur entre les étiquettes de début et de fin du commentaire.
 
@@ -71,7 +72,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 5.  Entrez `>` pour fermer la balise.
 
-6.  L’éditeur ajoute l’étiquette de fin. La balise de fin est ajoutée et signalée par un soulignement ondulé indiquant une erreur de validation L'info-bulle affiche le message : Le contenu de l'élément 'employee' est incomplet. 'ID' attendu.
+6.  L’éditeur ajoute l’étiquette de fin. L’étiquette de fin est ajoutée et signalée par un soulignement ondulé indiquant une erreur de validation Le **info-bulle** affiche le message : **l’élément 'employee' a un contenu incomplet. Attendu 'ID'**.
 
 7.  Type `<` et sélectionnez **ID** à partir de la liste des membres. Entrez ensuite `>`.
 
@@ -79,17 +80,17 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 8.  Type **abc**.
 
-     Le **abc** texte a un trait ondulé. L'info-bulle affiche le message : L'élément 'ID' a une valeur non valide selon son type de données.
+     Le **abc** texte a un trait ondulé. Le **info-bulle** affiche le message : **l’élément 'ID' a une valeur non valide selon son type de données**.
 
-9. Cliquez avec le bouton droit sur l’élément ID et sélectionnez **atteindre la définition**.
+9. Avec le bouton droit sur l’élément ID et sélectionnez **atteindre la définition**.
 
-     L'éditeur ouvre le fichier hireDate.xsd dans une nouvelle fenêtre de document et place le curseur sur la définition d'élément de schéma ID.
+     L’éditeur ouvre le *hireDate.xsd* fichier dans une nouvelle fenêtre de document et place le curseur sur la définition d’élément de schéma ID.
 
 10. Revenez au fichier XML, puis remplacez le **abc** texte avec **123**.
 
-     La ligne ondulée et l'info-bulle disparaissent sous la valeur de l'élément ID. L'info-bulle de la balise de fin employee affiche à présent le message : Le contenu de l'élément 'employee' est incomplet. 'hire-date' attendu.
+     La ligne ondulée et **info-bulle** disparaissent sous la valeur d’élément de code. Le **info-bulle** pour la fin de l’employé balise affiche à présent le message : **l’élément 'employee' a un contenu incomplet. Attendu 'hire-date'**.
 
-11. Placez le curseur après la balise de fin ID, entrez `<`, sélectionnez hire-date dans la liste des membres, puis entrez `>`.
+11. Placez le curseur après la balise de fin ID, entrez `<`, sélectionnez **hire-date** dans la liste des membres, puis saisissez `>`.
 
      L'éditeur ajoute l'élément XML `<hire-date></hire-date>` et place le curseur après la balise de début hire-date.
 
@@ -105,11 +106,11 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 1.  À partir de la **fichier** menu, sélectionnez **Enregistrer sous**.
 
-     Le **enregistrer le fichier sous** boîte de dialogue s’affiche. Le nom de fichier par défaut est « XMLFile1 ».
+     Le **enregistrer le fichier sous** boîte de dialogue s’affiche. Le nom de fichier par défaut est *« XMLFile1 »*.
 
 2.  Entrez le nom de fichier et l’emplacement du document XML et cliquez sur **enregistrer**.
 
-## <a name="hiredatexsd-file"></a>Fichier hireDate.xsd
+## <a name="hiredatexsd-file"></a>fichier hireDate.xsd
  La procédure pas à pas utilise le fichier de schéma suivant.
 
 ```xml

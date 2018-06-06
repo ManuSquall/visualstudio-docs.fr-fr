@@ -1,5 +1,5 @@
 ---
-title: Analyser l’activité des utilisateurs virtuels pour les tests de charge dans Visual Studio | Microsoft Docs
+title: Analyser l’activité des utilisateurs virtuels pour les tests de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,14 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3688b49a5e16d52ee569afe94569a705ead7f99c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f7da7f881cf70ebfdafb3dbaaf2821471327fa81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751232"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Comment : analyser l'activité des utilisateurs virtuels lors d'un test de charge à l'aide du graphique d'activités des utilisateurs virtuels
 
@@ -74,7 +76,7 @@ Les procédures suivantes montrent comment consulter le graphique d'activités d
 
      **Panneau Légende du détail**
 
-     ![Panneau Légende du détail](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+     ![Panneau Légende du détail](../test/media/ltest_detailslegend.png)
 
 2.  Activez ou désactivez les cases à cocher pour les erreurs, les journaux, les tests, la recherche et les pages aspx associés au test de charge.
 
@@ -86,7 +88,7 @@ Les procédures suivantes montrent comment consulter le graphique d'activités d
 
      **Panneau Filtrer les résultats**
 
-     ![Panneau Filtrer les résultats](../test/media/ltest_filterresults.png "LTest_FilterResults")
+     ![Panneau de filtrage des résultats](../test/media/ltest_filterresults.png)
 
 3.  Dans les résultats de filtrage, activez ou désactivez les cases à cocher des options de filtrage suivantes :
 

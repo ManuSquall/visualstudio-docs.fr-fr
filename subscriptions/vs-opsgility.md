@@ -9,11 +9,12 @@ description: Découvrez l’avantage Opsgility inclus dans l’abonnement Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3e481dbf88c377d1d54cb404200872ae062a2e02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6cd992eb5eb7dcafbf99eb99207a8f823a97a54
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477628"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Avantage Opsgility dans les abonnements Visual Studio
 
@@ -52,8 +53,6 @@ Les abonnements Visual Studio sélectionnés incluent un an d’accès à la for
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
 
 ## <a name="support-resources"></a>Ressources de support technique
--  Besoin d’aide avec Opsgility ?  Consultez les ressources suivantes :
-    - [FAQ](https://www.opsgility.com/Home/FAQ)
-    - Envoyez un ticket de support via la page [Nous contacter](https://www.opsgility.com/SupportTicket). 
+-  Besoin d’aide avec Opsgility ?  Envoyez un ticket de support via la page [Nous contacter](https://www.opsgility.com/SupportTicket). 
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
 -  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://www.visualstudio.com/support/). 

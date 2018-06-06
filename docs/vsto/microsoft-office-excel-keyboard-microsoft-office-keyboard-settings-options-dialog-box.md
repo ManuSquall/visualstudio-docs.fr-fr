@@ -1,5 +1,5 @@
 ---
-title: Boîte de dialogue Options de clavier Microsoft Office Excel, paramètres du clavier Microsoft Office, | Documents Microsoft
+title: Boîte de dialogue Options de clavier Microsoft Office Excel, paramètres du clavier Microsoft Office,
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,27 +19,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1f052ef4774fe4d5cd4c119eaaf09ed715a2fdbe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fc71c699dfea11b8654791efdd52e4c0751a9762
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692445"
 ---
-# <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Clavier Microsoft Office Excel, Paramètres du clavier Microsoft Office, boîte de dialogue Options
+# <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Boîte de dialogue Options de clavier Microsoft Office Excel, paramètres du clavier Microsoft Office,
   Microsoft Office Excel et Visual Studio prennent en charge les touches de raccourci. La même combinaison de touches de raccourci peut correspondre à des commandes différentes dans Excel et dans Visual Studio. Quand Excel est ouvert dans un projet au niveau du document dans Visual Studio, une seule application à la fois reçoit les commandes de touches de raccourci. Par défaut, Visual Studio reçoit toutes les commandes de touches de raccourci, mais si vous souhaitez qu’Excel les reçoive lorsque le document a le focus en sélectionnant **schéma de clavier dynamique**.  
   
  Si vous utilisez la touche de raccourci qui n’est pas affectée à une commande dans l’application qui gère les touches de raccourci actuellement, la touche de raccourci est passée à l’autre application.  
   
  L’option que vous sélectionnez reste en vigueur pour les projets Excel tant que vous le modifiez. La sélection n’affecte pas les projets Microsoft Office Word ; Vous devez modifiez pour Word en utilisant les options du clavier Microsoft Office Word.  
   
-## <a name="uielement-list"></a>Liste des éléments d’interface  
+## <a name="uielement-list"></a>Liste UIElement  
  **Schéma de clavier Visual Studio**  
- Visual Studio reçoit toutes les commandes de touches de raccourci, même si Excel a le focus. Par exemple, si vous appuyez sur la touche de fonction F5 pendant qu’Excel a le focus, Visual Studio commence à déboguer votre solution.  
+ Visual Studio reçoit toutes les commandes de touches de raccourci, même si Excel a le focus. Par exemple, si vous appuyez sur la touche de fonction **F5** pendant qu’Excel a le focus, Visual Studio démarre le débogage de votre solution.  
   
  **Schéma de clavier dynamique**  
- Visual Studio reçoit les commandes de touches de raccourci uniquement lorsqu’il a le focus. Lorsqu’Excel a le focus, Excel reçoit toutes les commandes de touches de raccourci. Par exemple, si vous appuyez sur la touche de fonction F5 pendant qu’Excel a le focus, Excel ouvre le **atteindre** boîte de dialogue. Si vous appuyez sur F5 pendant que Visual Studio a le focus, Visual Studio démarre le débogage de votre solution.  
+ Visual Studio reçoit les commandes de touches de raccourci uniquement lorsqu’il a le focus. Lorsqu’Excel a le focus, Excel reçoit toutes les commandes de touches de raccourci. Par exemple, si vous appuyez sur la touche de fonction **F5** pendant qu’Excel a le focus, Excel ouvre le **atteindre** boîte de dialogue. Si vous appuyez sur **F5** pendant que Visual Studio a le focus, Visual Studio démarre le débogage de votre solution.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Clavier Microsoft Office Word, Paramètres du clavier Microsoft Office, boîte de dialogue Options](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
+ [Boîte de dialogue Options de clavier Microsoft Office Word, paramètres du clavier Microsoft Office,](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
   
   

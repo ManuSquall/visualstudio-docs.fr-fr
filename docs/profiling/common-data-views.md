@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32039843f3aef60f6e7087b0d26f8b5e1efd1df8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 21ccf237bec0b3ab7bf3ad96f6f4d24df240db0e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263927"
 ---
 # <a name="common-data-views"></a>Vues de données communes
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui sont communs à toutes les méthodes de profilage.  
@@ -44,7 +45,7 @@ Cette section contient des informations de référence sur les vues et les rappo
  [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view.md)  
  Décrit la vue et le rapport Vue Pointeurs d’instruction. Les colonnes de données qui s’affichent dépendent de la méthode de profilage.  
   
- [Processus, vue](../profiling/process-view.md)  
+ [Vue Processus](../profiling/process-view.md)  
  Répertorie les heures de début et de fin des processus et des threads.  
   
  [Vue Marques](../profiling/marks-view.md)  
@@ -54,8 +55,8 @@ Cette section contient des informations de référence sur les vues et les rappo
  [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)  
  Informations de référence sur les vues et les rapports des fichiers de données du profileur générés à l’aide de la méthode d’échantillonnage.  
   
- [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)  
+ [Vues de données de la méthode d'instrumentation](../profiling/instrumentation-method-data-views.md)  
  Informations de référence sur les vues et les rapports des fichiers de données du profileur générés à l’aide de la méthode d’instrumentation.  
   
- [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)  
+ [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)  
  Informations de référence sur les vues et les rapports des fichiers de données du profileur générés à l’aide de la collecte de mémoire .NET.

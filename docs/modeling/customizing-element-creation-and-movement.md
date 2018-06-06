@@ -13,11 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7d86dd961a5192d63cee9501eb16aaf51b3fd629
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4563756e42b5c0bdc1a56e938ca6326e04b104
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748657"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personnalisation de la création et du mouvement des éléments
 Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de la boîte à outils ou dans un collage ou l’opération de déplacement. Vous pouvez avoir les éléments déplacés liés aux éléments de la cible, en utilisant les relations que vous spécifiez.
@@ -38,7 +39,7 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
 
  La responsabilité d’un EMD est de décider comment un objet ou un groupe d’objets doit être fusionné dans un emplacement particulier dans le modèle. En particulier, il détermine quelles sont les relations doivent être instanciées pour lier le groupe fusionné dans le modèle. Vous pouvez également le personnaliser pour définir les propriétés et à créer des objets supplémentaires.
 
- ![DSL&#45;EMD&#95;fusion](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge") le rôle d’une Directive d’élément de fusion
+ ![DSL&#45;EMD&#95;fusion](../modeling/media/dsl-emd_merge.png) le rôle d’une Directive d’élément de fusion
 
  Un EMD est généré automatiquement lorsque vous définissez une relation d’incorporation. Cette valeur par défaut EMD crée une instance de la relation lorsque les utilisateurs ajoutent de nouvelles instances de l’enfant au parent. Vous pouvez modifier ces EMDs par défaut, par exemple en ajoutant du code personnalisé.
 
@@ -47,7 +48,7 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
 ## <a name="defining-an-element-merge-directive"></a>Définition d’une Directive de fusion d’élément
  Vous pouvez ajouter des directives de fusion d’élément pour les classes de domaine, les relations de domaine, des formes, des connecteurs et des diagrammes. Vous pouvez ajouter ou les trouver dans l’Explorateur de DSL dans la classe de domaine de réception. La classe de récepteur est la classe de domaine de l’élément qui est déjà dans le modèle, et sur lequel l’élément nouveau ou copié est fusionnée.
 
- ![DSL&#45;EMD&#95;détails](../modeling/media/dsl-emd_details.png "EMD_Details de DSL")
+ ![DSL&#45;EMD&#95;détails](../modeling/media/dsl-emd_details.png)
 
  Le **l’indexation de la classe** est la classe de domaine d’éléments qui peuvent être fusionnés dans les membres de la classe réceptrice. Instances des sous-classes de la classe de l’indexation seront également fusionnés par cette EMD, sauf si vous définissez **s’applique aux sous-classes** sur False.
 
@@ -227,7 +228,7 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
 
 5.  Inspecter le contenu de **Dsl\Generated Files\DomainClasses.cs**. Recherche de méthodes nommées `MergeRelate` et examiner leur contenu. Cela vous permet d’écrire vos propres versions.
 
-6.  Dans un nouveau fichier de code, écrivez une classe partielle pour la classe de récepteur et remplacez le `MergeRelate` (méthode). N’oubliez pas d’appeler la méthode de base. Par exemple :
+6.  Dans un nouveau fichier de code, écrivez une classe partielle pour la classe de récepteur et remplacez le `MergeRelate` (méthode). N’oubliez pas d’appeler la méthode de base. Exemple :
 
     ```csharp
     partial class ExampleModel

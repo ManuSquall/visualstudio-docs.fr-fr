@@ -10,30 +10,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edda7ab4875381b6213e893169fc8bc837427757
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d835a8592108b549a109f7bb7e128a8ae5b01611
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Procédure : sélectionner les schémas XML à utiliser
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Comment : sélectionner les schémas XML à utiliser
 
-L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\Schemas. Le cache de schéma contient des schémas XML connus utilisés pour IntelliSense et la validation de documents XML.
+L’éditeur XML fournit un cache de schéma dans le *%InstallDir%\Xml\Schemas* active. Le cache de schéma contient des schémas XML connus utilisés pour IntelliSense et la validation de documents XML.
 
 Le **schémas** propriété de document est utilisée pour sélectionner un ou plusieurs XML schema definition language (XSD) à utiliser. Elle permet de choisir des schémas dans le cache de schéma ou de spécifier un schéma situé ailleurs dans le cache.
 
-Les schémas spécifiés sont enregistrés dans le fichier masqué d'options utilisateur de la solution (.suo), avec toutes les autres propriétés de document XML. Vous ne devez donc pas réentrer ces valeurs la prochaine fois que vous ouvrez la solution.
+Les schémas spécifiés sont enregistrés dans le fichier masqué d’options utilisateur Solution (. *suo*), ainsi que tous les autres XML des propriétés de document. Vous ne devez donc pas réentrer ces valeurs la prochaine fois que vous ouvrez la solution.
 
 > [!NOTE]
-> L'éditeur peut effectuer la validation à l'aide d'un schéma inline ou d'un schéma dont la référence est fournie par l'attribut `xsd:schemaLocation`. Pour plus d’informations, consultez [Validation de documents XML](../xml-tools/xml-document-validation.md).
+> L'éditeur peut effectuer la validation à l'aide d'un schéma inline ou d'un schéma dont la référence est fournie par l'attribut `xsd:schemaLocation`. Pour plus d’informations, consultez [validation de documents XML](../xml-tools/xml-document-validation.md).
 
-## <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Pour sélectionner un schéma XML dans le cache de schéma
+## <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Pour sélectionner un schéma XML à partir du cache de schéma
 
 1.  Ouvrez un fichier dans l'éditeur XML.
 
 2.  Dans la fenêtre de propriétés de document, cliquez sur le bouton dans le **schémas** champ.
 
-     Le **schémas XML** boîte de dialogue s’affiche. La boîte de dialogue répertorie tous les schémas portant une extension .xsd dans le cache de schéma (y compris les schémas référencés dans le fichier catalog.xml), et également tout schéma qui se trouve dans la solution actuelle, ouvrir dans Visual Studio, désigné par une `xsd:schemaLocation` d’attribut ou référencés dans le **schémas** propriété.
+     Le **schémas XML** boîte de dialogue s’affiche. La boîte de dialogue répertorie tous les schémas portant une. *xsd* extension dans le cache de schéma (notamment les schémas désignés dans le *catalog.xml* fichier) et également tout schéma qui est référencé dans la solution actuelle, ouverte dans Visual Studio, dans un `xsd:schemaLocation` attribut ou référencés dans les **schémas** propriété.
 
 3.  Sélectionnez les schémas à utiliser pour la validation en effectuant l’une des opérations suivantes :
 
@@ -61,7 +61,7 @@ Les schémas spécifiés sont enregistrés dans le fichier masqué d'options uti
 
      Les schémas sont ajoutés au schéma de mettre en cache et est la **utilisez** colonne a la valeur **utiliser ce schéma**.
 
-## <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>Pour supprimer un schéma XML du cache de schéma
+## <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>Pour supprimer un schéma XML à partir du cache de schéma
 
 1.  Dans la fenêtre de propriétés de document, cliquez sur le bouton dans le **schémas** champ.
 
@@ -75,5 +75,5 @@ Les schémas spécifiés sont enregistrés dans le fichier masqué d'options uti
 ## <a name="see-also"></a>Voir aussi
 
 - [Cache de schéma](../xml-tools/schema-cache.md)
-- [Schémas XML, boîte de dialogue](../xml-tools/xml-schemas-dialog-box.md)
+- [Boîte de dialogue schémas XML](../xml-tools/xml-schemas-dialog-box.md)
 - [Éditeur XML](../xml-tools/xml-editor.md)

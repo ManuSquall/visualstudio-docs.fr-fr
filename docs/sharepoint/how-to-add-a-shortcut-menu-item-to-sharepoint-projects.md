@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0aea2dd600548d76d57d58c8cfc0313c92ccb9f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f29465ca696617982a700a04b72c42b478933620
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766784"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Comment : ajouter un élément de menu contextuel à des projets SharePoint
   Vous pouvez ajouter un élément de menu contextuel à un projet SharePoint. L’élément de menu s’affiche lorsqu’un utilisateur clique sur un nœud de projet dans **l’Explorateur de solutions**.  
@@ -45,16 +46,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="compiling-the-code"></a>Compilation du code  
  Cet exemple requiert un projet de bibliothèque de classes avec des références aux assemblys suivants :  
   
--   Microsoft.VisualStudio.SharePoint  
-  
+-   Microsoft.VisualStudio.SharePoint
+-     
 -   System.ComponentModel.Composition  
   
-## <a name="deploying-the-extension"></a>Déploiement de l’Extension  
+## <a name="deploying-the-extension"></a>Déploiement de l’extension  
  Pour déployer l’extension, créez un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] package d’extension (VSIX) pour l’assembly et tous les autres fichiers que vous souhaitez distribuer avec l’extension. Pour plus d’informations, consultez [déploiement d’Extensions pour les outils SharePoint dans Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
  [Extension des projets SharePoint](../sharepoint/extending-sharepoint-projects.md)   
  [Comment : créer une Extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [Guide pratique pour ajouter une propriété à des projets SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  
-  
   

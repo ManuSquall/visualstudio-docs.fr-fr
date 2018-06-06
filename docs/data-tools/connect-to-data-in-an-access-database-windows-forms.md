@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746814"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Se connecter à des données dans une base de données Access (Windows Forms)
 Vous pouvez vous connecter à une base de données Access (un fichier .mdf ou un fichier .accdb) à l’aide de Visual Studio. Après avoir défini la connexion, les données apparaissent dans le **des Sources de données** fenêtre. De là, vous pouvez faire glisser des tables ou des vues sur vos formulaires.
@@ -37,7 +38,7 @@ Vous pouvez vous connecter à une base de données Access (un fichier .mdf ou un
 
 2.  Sur le **vue** menu, sélectionnez **autres fenêtres** > **des Sources de données**.
 
-     ![Afficher d’autres Sources de données Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Afficher d'autres sources de données Windows](../data-tools/media/viewdatasources.png)
 
 3.  Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.
 
@@ -59,7 +60,7 @@ Vous pouvez vous connecter à une base de données Access (un fichier .mdf ou un
 
 9. Dans le **ajouter une connexion** boîte de dialogue, sélectionnez **Microsoft Office 12.0 accès de base de données du moteur fournisseur OLE DB** à partir de la **fournisseur OLE DB** liste déroulante.
 
-     ![L’accès à Microsoft Office 12.0 fournisseur OLE DB](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
+     ![Fournisseur OLE DB - Microsoft Office Access 12.0](../data-tools/media/dataoledbprovideroffice12access.png)
 
      > [!NOTE]
      >  Si vous ne voyez pas **Microsoft Office 12.0 accès de base de données du moteur fournisseur OLE DB** dans la liste déroulante du fournisseur OLE DB, vous devez installer le [pilote Office System 2007 : composants de connectivité de données](https://www.microsoft.com/download/confirmation.aspx?id=23734).
@@ -87,7 +88,7 @@ Vous pouvez vous connecter à une base de données Access (un fichier .mdf ou un
 
 2.  Sur le **vue** menu, sélectionnez **autres fenêtres** > **des Sources de données**.
 
-     ![Afficher d’autres Sources de données Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Afficher d'autres sources de données Windows](../data-tools/media/viewdatasources.png)
 
 3.  Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.
 
@@ -103,7 +104,7 @@ Vous pouvez vous connecter à une base de données Access (un fichier .mdf ou un
 
 8.  Dans le **nom de fichier de base de données**, spécifiez le chemin d’accès et le nom du fichier .mdb que vous souhaitez vous connecter à, puis sélectionnez **OK**.
 
-     ![Ajouter le fichier de connexion de base de données Access](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")
+     ![Ajouter une connexion à un fichier de base de données Access](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. Sélectionnez **suivant** sur la **choisir votre connexion de données** page.
 

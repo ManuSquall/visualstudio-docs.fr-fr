@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a26af4557d7422126aea805404674bf12630ca
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448072"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 L’outil en ligne de commande VSPerfReport permet de créer des rapports à l’aide des fichiers de données des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le format de rapport par défaut est un fichier .csv.  
@@ -65,7 +66,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**NoLogo**|Masque les informations de version durant l’exécution du rapport.|  
 |**UserRulesDirectory**|Spécifie le répertoire qui contient les règles de performance définies par l’utilisateur [pas encore implémenté].|  
   
-## <a name="filter-options"></a>Options du filtre  
+## <a name="filter-options"></a>Options de filtre  
  Le tableau suivant décrit les options permettant de filtrer les données disponibles.  
   
 |Options|Description|  
@@ -91,4 +92,4 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**QueryDiffTables**|Affiche les tables et colonnes valides pour les deux fichiers de rapports fournis.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vues Rapport de performances](../profiling/performance-report-views.md)
+ [Vues du rapport des performances](../profiling/performance-report-views.md)

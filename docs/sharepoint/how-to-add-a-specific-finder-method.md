@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d00159a8c944944348e4eec5fb98aaa4d6e9bae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 451784c052ee656686bf40315b809dcce58c6aaf
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767648"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Comment : ajouter une méthode de recherche spécifique
   Vous pouvez retourner une seule instance d’entité en créant un *recherche spécifique* (méthode). Le service de connectivité de données métiers (BDC) exécute la méthode de recherche spécifique lorsqu’un utilisateur choisit une entité dans une liste externe ou un composant WebPart données métier. Pour plus d’informations, consultez [vous concevez un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### <a name="to-create-a-specific-finder-method"></a>Pour créer une méthode de recherche spécifique  
+### <a name="to-create-a-specific-finder-method"></a>Pour créer une méthode de recherche spécifique
   
-1.  Dans le concepteur BDC, choisissez une entité.  
+1.  Sur le **concepteur BDC**, sélectionnez une entité.  
   
-     Pour plus d’informations sur l’ajout d’une entité au concepteur BDC dans Visual Studio, consultez [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+     Pour plus d’informations sur l’ajout d’une entité pour laquelle le **concepteur BDC** dans Visual Studio, consultez [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
-2.  Dans la barre de menus, choisissez **vue**, **autres fenêtres**, **détails de méthode BDC**.  
+2.  Dans la barre de menus, choisissez **vue** > **autres fenêtres**, **détails de méthode BDC**.  
   
      Le **détails de méthode BDC** fenêtre s’ouvre. Pour plus d’informations sur cette fenêtre, consultez [vue d’ensemble des outils de conception modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
  [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Comment : ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)   
  [Comment : ajouter une méthode de création](../sharepoint/how-to-add-a-creator-method.md)   
@@ -98,5 +99,4 @@ ms.lasthandoff: 04/16/2018
  [Présentation des outils de conception modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Comment : ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Guide pratique pour définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)  
-  
   

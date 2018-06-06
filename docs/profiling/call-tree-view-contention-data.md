@@ -12,23 +12,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e21b91ceda5b51a26633b7595aed4e0ee12059
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 40e28eb246b2c4611a15dc4ce2cf6b1b02dd0100
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263179"
 ---
 # <a name="call-tree-view---contention-data"></a>Vue Arborescence des appels - Données de conflit
 La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud de fonction répertorie toutes les fonctions appelées, le nombre de fois où la fonction a été bloquée, et la durée pendant laquelle la fonction a été bloquée car elle était en conflit pour une ressource avec d’autres threads ou processus.  
   
  Les valeurs qui s’affichent dans la vue Arborescence des appels sont celles des instances de fonction qui ont été appelées par la fonction parent dans l’arborescence des appels. Les valeurs en pourcentage sont calculées en comparant la valeur des instances de fonctions au nombre total de conflits de l’exécution du profilage.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Mise en surbrillance du chemin réactif d’exécution  
+## <a name="highlight-the-execution-hot-path"></a>Mettre en surbrillance le chemin réactif d’exécution  
  La vue Arborescence des appels peut être développée pour mettre en surbrillance le chemin d’exécution du processus ou de la fonction ayant créé le plus de conflits.  
   
 -   Pour afficher le chemin le plus actif, cliquez avec le bouton droit sur le processus ou la fonction, puis cliquez sur **Développer le chemin réactif**.  
   
-## <a name="setting-the-call-tree-root-node"></a>Définition du nœud racine de l’arborescence des appels  
+## <a name="set-the-call-tree-root-node"></a>Définir le nœud racine de l’arborescence des appels  
  Chaque processus de l’exécution du profilage s’affiche sous forme de nœud racine. Pour définir le nœud de départ de la vue Arborescence des appels, cliquez avec le bouton droit sur le nœud que vous souhaitez définir comme nœud de départ, puis cliquez sur **Définir la racine**.  
   
  En définissant le nœud racine, vous supprimez toutes les autres entrées de l’affichage, à l’exception de la sous-arborescence du nœud sélectionné. Pour réinitialiser le nœud racine au nœud d’origine, cliquez avec le bouton droit dans la Vue Arborescence des appels, puis cliquez sur **Réinitialiser la racine**.  
@@ -55,8 +56,8 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Vue Arborescence des appels](../profiling/call-tree-view.md)   
+ [Mode Arborescence des appels](../profiling/call-tree-view.md)   
  [Vue Arborescence des appels - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
- [Arborescence des appels, vue](../profiling/call-tree-view-instrumentation-data.md)   
- [Vue Arborescence des appels](../profiling/call-tree-view-sampling-data.md)
+ [Mode Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)   
+ [Mode Arborescence des appels](../profiling/call-tree-view-sampling-data.md)

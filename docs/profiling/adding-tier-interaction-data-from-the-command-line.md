@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262905"
 ---
-# <a name="adding-tier-interaction-data-from-the-command-line"></a>Ajout des données d’interaction de couche à partir de la ligne de commande
+# <a name="add-tier-interaction-data-from-the-command-line"></a>Ajouter des données d’interaction de couche à partir de la ligne de commande
 
 Le profilage d’interaction de couche fournit des informations supplémentaires sur les temps d’exécution des appels [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] synchrones, contenus dans les fonctions d’applications multicouches qui communiquent avec une ou plusieurs bases de données.
 
@@ -30,7 +31,7 @@ Pour collecter des données d’interaction de couche à partir d’applications
 
 Pour collecter des données de profilage d’interaction de couche, vous pouvez utiliser n’importe quelle édition de Visual Studio. Cependant, ces données ne sont consultables que dans Visual Studio Enterprise.
 
-**Collecte de données TIP sur un ordinateur distant**
+**Collecter des données TIP sur un ordinateur distant**
 
 Pour collecter des données d’interaction de couche sur un ordinateur distant, vous devez copier le fichier **vs_profiler_***\<Plateforme>***_***\<Langue>***.exe** dans le dossier *%VSInstallDir%***\Team Tools\Performance Tools\Setups** d’un ordinateur Visual Studio vers l’ordinateur distant, puis lancer l’installation. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Débogage à distance](../debugger/remote-debugging.md).
 
@@ -38,17 +39,17 @@ Pour collecter des données d’interaction de couche sur un ordinateur distant,
 
 Les données d’interaction de couche ne sont consultables que dans Visual Studio Enterprise. Les rapports d’interaction de couche basés sur des fichiers générés à l’aide de [VSPerfReport](../profiling/vsperfreport.md) ne sont pas disponibles.
 
-## <a name="adding-tier-interaction-data-with-vsperfcmd"></a>Ajout de données d’interaction de couche avec VSPerfCmd
+## <a name="add-tier-interaction-data-with-vsperfcmd"></a>Ajouter des données d’interaction de couche avec VSPerfCmd
 
 L’outil en ligne de commande VSPerfASPNETCmd permet d’accéder à l’intégralité des fonctionnalités des outils de profilage. Pour ajouter des données d’interaction de couche aux données de profilage collectées à l’aide de VSPerfCmd, utilisez l’utilitaire **VSPerfCLREnv** afin de définir et de supprimer les variables d’environnement qui activent les données d’interaction de couche. Les options que vous spécifiez et les procédures nécessaires pour collecter des données dépendent du type d’application que vous profilez.
 
-## <a name="profiling-stand-alone-applications"></a>Profilage d’applications autonomes
+## <a name="profile-stand-alone-applications"></a>Profiler des applications autonomes
 
 Pour ajouter des données d’interaction de couche à une application qui n’est pas exécutée par un autre processus, tel qu’une application de bureau Windows qui émet des appels [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] synchrones vers une base de données SQL Server, utilisez l’option **VSPerfClrEnv /InteractionOn** pour définir les variables d’environnement, et **VSPerfClrEnv /InteractionOff** pour les supprimer.
 
 Dans l’exemple suivant, une application de bureau Windows est profilée à l’aide de la méthode d’instrumentation, et les données d’interaction de couche sont collectées.
 
-### <a name="profiling-a-windows-desktop-application-example"></a>Exemple de profilage d’une application de bureau Windows
+### <a name="profile-a-windows-desktop-application-example"></a>Exemple de profilage d’une application de bureau Windows
 
 1. Ouvrez une fenêtre d’invite de commande en tant qu’administrateur. Cliquez sur **Démarrer**, pointez sur **Tous les programmes**, puis sur **Accessoires**. Cliquez avec le bouton droit de la souris sur **Invite de commande**, puis cliquez sur **Exécuter en tant qu’administrateur**.
 
@@ -81,7 +82,7 @@ Dans l’exemple suivant, une application de bureau Windows est profilée à l�
 
 Pour plus d’informations, consultez [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md).
 
-## <a name="profiling-services"></a>Profilage de services
+## <a name="profile-services"></a>Profiler des services
 
 Pour profiler des services, y compris les applications [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], utilisez l’option **VSPerfClrEnv /GlobalInteractionOn** pour définir les variables d’environnement, et **VSPerfClrEnv /GlobalInteractionOff** pour les supprimer.
 
@@ -89,7 +90,7 @@ Lorsque vous profilez des services, y compris les applications web [!INCLUDE[vst
 
 Dans l’exemple suivant, un service Windows est profilé suivant la méthode par instrumentation, et les données d’interaction de couche sont collectées.
 
-### <a name="profiling-a-windows-service-example"></a>Exemple de profilage d’un service Windows
+### <a name="profile-a-windows-service-example"></a>Exemple de profilage d’un service Windows
 
 1. Si nécessaire, installez le service.
 
@@ -145,7 +146,7 @@ Pour plus d'informations, consultez l'une des rubriques suivantes :
 
 [Profilage de services](../profiling/command-line-profiling-of-services.md)
 
-## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Ajout de données d’interaction de couche avec VSPerfASPNETCmd
+## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>Ajouter des données d’interaction de couche avec VSPerfASPNETCmd
 
 L’outil en ligne de commande VSPerfASPNETCmd vous permet de profiler facilement des applications web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Par rapport à l’outil en ligne de commande **VSPerfCmd**, cet outil comporte moins d’options et ne nécessite ni configuration de variables d’environnement, ni redémarrage de l’ordinateur. Ces fonctionnalités de VSPerfASPNETCmd facilitent grandement la collecte de données d’interaction de couche.
 

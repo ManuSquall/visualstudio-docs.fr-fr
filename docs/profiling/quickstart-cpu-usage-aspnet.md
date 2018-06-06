@@ -1,6 +1,7 @@
 ---
-title: Analyser les données d’utilisation de l’UC (ASP.NET) | Microsoft Docs
-ms.custom: ''
+title: Analyser les données d’utilisation de l’UC (ASP.NET)
+description: Mesurer les performances des applications en ASP.NET à l’aide de l’outil de diagnostic de l’utilisation de l’UC
+ms.custom: mvc
 ms.date: 12/05/2017
 ms.technology: vs-ide-debug
 ms.topic: quickstart
@@ -12,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: e93f7ae71b8d95b8d444856c34dc6181818e0a58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477286"
 ---
-# <a name="analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Analyser les données d’utilisation de l’UC dans Visual Studio (ASP.NET)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (ASP.NET)
 
 Visual Studio fournit de nombreuses fonctionnalités puissantes qui vous permettent d’analyser les problèmes de performances dans votre application. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base. Ici, nous allons examiner un outil pour identifier les goulots d’étranglement de performances liés à une utilisation élevée de l’UC. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
 
@@ -48,13 +50,13 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
 1. Dans l’Explorateur de solutions, ouvrez `Models/Data.cs` et ajoutez l’instruction `using` suivante en haut du fichier :
 
-    ```cs
+    ```csharp
     using System.Threading;
     ```
 
 1. Dans Data.cs, remplacez le code suivant :
 
-    ```cs
+    ```csharp
     public class Data
     {
     }
@@ -62,7 +64,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
     par le code suivant :
 
-    ```cs
+    ```csharp
     public class ServerClass
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
@@ -132,7 +134,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
 1. Dans l’Explorateur de solutions, ouvrez Controller/HomeControllers.cs et remplacez le code suivant :
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         ViewBag.Message = "Your application description page.";
@@ -143,7 +145,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
     par le code suivant :
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         Models.Simple s = new Models.Simple();

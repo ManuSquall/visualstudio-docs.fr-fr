@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7edb1826816ea4f20d66b91a7f9819ef394ce98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 547ba6d1e58376c50d0e01ab8fd3d55f62d5a935
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34693316"
 ---
 # <a name="troubleshooting-office-solution-security"></a>Dépannage de la sécurité des solutions Office
   Cette rubrique contient des conseils pour résoudre les problèmes courants que vous pouvez rencontrer lorsque vous travaillez avec la sécurisation des solutions Office.  
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/16/2018
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>Approuvé Solutions ne peut pas être installées à partir de Sites sensibles  
- Les utilisateurs ne peuvent pas installer une solution à partir d’un emplacement web si le site web est répertorié dans la zone sites sensibles d’Internet Explorer. Cela est vrai même si la solution est signée avec un certificat approuvé.  
+ Les utilisateurs ne peuvent pas installer une solution à partir d’un emplacement web si le site Web est répertorié dans la zone sites sensibles d’Internet Explorer. Cela est vrai même si la solution est signée avec un certificat approuvé.  
   
  L’URL du manifeste de déploiement peut être classé dans une des cinq zones :  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/16/2018
   
  Avec IEESC et Internet Explorer 7 et versions ultérieur, si l’URL du manifeste de déploiement est classé dans la zone Internet, le manifeste doit avoir un certificat à partir d’un éditeur approuvé ou la solution ne peut pas être installée. Sans IEESC, le comportement par défaut est pour inviter l’utilisateur final à prendre une décision d’approbation.  
   
- Pour gérer l’effet d’IEESC et Internet Explorer 7 et versions supérieures, identifier les sites web et des chemins d’accès de convention (UNC) qui vous faites confiance et les ajoutez à une des zones de sécurité (intranet Local ou sites de confiance). Pour plus d’informations sur la gestion des zones, consultez [configuration d’éditeurs approuvés ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Pour gérer l’effet d’IEESC et Internet Explorer 7 et versions supérieures, identifier des sites Web et des chemins d’accès de convention (UNC) qui vous faites confiance et les ajoutez à une des zones de sécurité (intranet Local ou sites de confiance). Pour plus d’informations sur la gestion des zones, consultez [configuration d’éditeurs approuvés ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurisation de solutions Office](../vsto/securing-office-solutions.md)  

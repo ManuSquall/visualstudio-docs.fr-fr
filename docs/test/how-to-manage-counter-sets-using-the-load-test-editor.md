@@ -1,5 +1,5 @@
 ---
-title: Ensembles de compteurs de test de charge dans Visual Studio | Microsoft Docs
+title: Ensembles de compteurs de test de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,14 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b2ff43592819e5834f1e5f7b5088c00f61d8b1c4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 27a1cdd3390d6f068947bfcb0daef76eb93fd026
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751986"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Comment : gérer des ensembles de compteurs à l'aide de l'éditeur de test de charge
 
@@ -29,7 +31,7 @@ Quand vous créez un test de charge avec l’**Assistant Nouveau test de charge*
 
 La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à partir duquel vous souhaitez collecter des données de performance et l'assignation d'un jeu d'ensembles de compteurs à collecter à partir de chaque ordinateur individuel. Vous gérez vos compteurs dans l’**éditeur de test de charge**.
 
-![Gestion des ensembles de compteurs](../test/media/loadtestmanagecountersets.png "LoadTestManageCounterSets")
+![Gestion des ensembles de compteurs](../test/media/loadtestmanagecountersets.png)
 
 ## <a name="to-manage-counter-sets"></a>Pour gérer des ensembles de compteurs
 

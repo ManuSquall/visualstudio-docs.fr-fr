@@ -1,5 +1,5 @@
 ---
-title: Référence de l’Interface utilisateur (développement Office dans Visual Studio) | Documents Microsoft
+title: Référence de l’interface utilisateur (développement Office dans Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21ce46027f9c19afd1ec9c80bacf064b133e6658
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b307759252b54f2510d8af90320b9595f3eeb87
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767558"
 ---
-# <a name="user-interface-reference-office-development-in-visual-studio"></a>Référence de l'interface utilisateur (Développement Office dans Visual Studio)
+# <a name="user-interface-reference-office-development-in-visual-studio"></a>Référence de l’interface utilisateur (développement Office dans Visual Studio)
   Les éléments d’interface utilisateur suivants font partie des projets Office dans Visual Studio.  
   
 ## <a name="in-this-section"></a>Dans cette section  
@@ -31,13 +32,13 @@ ms.lasthandoff: 04/16/2018
  [Assistant Publication de &#40;développement Office dans Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md)  
  Décrit l’Assistant utilisé pour copier les fichiers solution vers un emplacement spécifié, créer les fichiers manifeste et créer un programme d’installation pour une solution Office.  
   
- [Clavier Microsoft Office Word, Paramètres du clavier Microsoft Office, boîte de dialogue Options](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
+ [Boîte de dialogue Options de clavier Microsoft Office Word, paramètres du clavier Microsoft Office,](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
  Décrit les options permettant de déterminer si Word ou Visual Studio répond à des combinaisons de touches de raccourci.  
   
- [Clavier Microsoft Office Excel, Paramètres du clavier Microsoft Office, boîte de dialogue Options](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
+ [Boîte de dialogue Options de clavier Microsoft Office Excel, paramètres du clavier Microsoft Office,](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
  Décrit les options permettant de déterminer si Excel ou Visual Studio répond à des combinaisons de touches de raccourci.  
   
- [Mise à niveau du projet, boîte de dialogue Options](../vsto/project-upgrade-options-dialog-box.md)  
+ [La mise à niveau, boîte de dialogue Options projet](../vsto/project-upgrade-options-dialog-box.md)  
  Décrit les options de mise à niveau des solutions Office.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
