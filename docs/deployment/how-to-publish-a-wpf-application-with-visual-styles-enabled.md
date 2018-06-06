@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b265806a15d5a2b3f08862432c7c8e2a94d119c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0111226fdd3de300265f69930b7e9e56f90876c8
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816014"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Comment : publier une application WPF avec les styles visuels activés
 Styles visuels activer l’apparence des contrôles communs à changer en fonction du thème choisi par l’utilisateur. Par défaut, les styles visuels ne sont pas activés pour les applications Windows Presentation Foundation (WPF), ainsi, vous devez les activer manuellement. Toutefois, l’activation des styles visuels pour une application WPF, puis publiez la solution génère une erreur. Cette rubrique décrit comment résoudre cette erreur et le processus de publication d’une application WPF avec des styles visuels sont activés. Pour plus d’informations sur les styles visuels, consultez [vue d’ensemble des Styles Visual](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Pour plus d’informations sur le message d’erreur, consultez [dépannage des erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -37,7 +38,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
   
      Par défaut, les styles visuels ne sont pas activés.  
   
-    ```  
+    ```xml  
     <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
     ```  
   
@@ -76,7 +77,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
   
      Ce code XML décrit l’assembly qui contient des contrôles qui prennent en charge les styles visuels.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
     ```  
   
@@ -111,12 +112,12 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
 2.  À l’invite de commandes, modifiez le chemin d’accès au répertoire qui contient la version la plus récente des fichiers d’application publiée. L’exemple suivant illustre cette étape.  
   
     ```  
-    cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
     ```  
   
 3.  À l’invite de commandes, exécutez la commande suivante pour incorporer le fichier manifeste dans le fichier exécutable de l’application.  
   
-    ```  
+    ```
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   

@@ -21,13 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816040"
 ---
-# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Procédure pas à pas : Création d’un programme d’amorçage personnalisé avec une invite de confidentialité
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Procédure pas à pas : créer un programme d’amorçage personnalisé avec une invite de confidentialité
 Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquement lorsque les assemblys avec des versions plus récentes des fichiers et des versions d’assembly sont disponibles. Pour vous assurer que vos clients acceptent ce comportement, vous pouvez afficher une invite de confidentialité pour les. Ensuite, ils peuvent choisir s’il faut accorder l’autorisation à l’application pour mettre à jour automatiquement. Si l’application n’est pas autorisée à mettre à jour automatiquement, il n’installe pas.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -165,7 +166,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 2.  Dans le fichier product.xml, ajoutez le code XML suivant. Assurez-vous que vous ne remplacez pas le code XML existant.  
   
-    ```  
+    ```xml  
     <Product  
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       ProductCode="Microsoft.Sample.EULA">  
@@ -197,7 +198,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 2.  Dans le fichier package.xml, ajoutez le code XML suivant pour définir les paramètres régionaux et inclure les termes du contrat de licence de logiciel. Assurez-vous que vous ne remplacez pas le code XML existant.  
   
-    ```  
+    ```xml  
     <Package   
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       Name="DisplayName"  

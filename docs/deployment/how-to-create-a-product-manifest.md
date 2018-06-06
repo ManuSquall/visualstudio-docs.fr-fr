@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cac17f0b4ca7a2dd4e5c4cf6f1f2da9e4dc5f54
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bdb95f417cadac04a04e30b1e965392f2492d864
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815767"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Comment : créer un manifeste de produit
 Pour déployer les composants requis pour votre application, vous pouvez créer un package de programme d’amorçage. Un package de programme d’amorçage contient un fichier de manifeste de produit unique, mais un manifeste de package pour chacun des paramètres régionaux. Le manifeste du package contient des aspects spécifiques à la localisation de votre package. Cela inclut des chaînes, des contrats de licence utilisateur final et les modules linguistiques.  
@@ -41,7 +42,7 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
   
 3.  Ajoutez le code XML suivant pour décrire le code XML de l’espace de noms et de produit pour le package. Remplacez le code de produit par un identificateur unique pour le package.  
   
-    ```  
+    ```xml  
     <Product  
     xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"   
     ProductCode="Custom.Bootstrapper.Package">  
@@ -49,7 +50,7 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
   
 4.  Ajoutez du code XML pour spécifier que le package a une dépendance. Cet exemple utilise une dépendance sur Microsoft Windows Installer 3.1.  
   
-    ```  
+    ```xml  
     <RelatedProducts>  
         <DependsOnProduct Code="Microsoft.Windows.Installer.3.1" />  
       </RelatedProducts>  
@@ -57,7 +58,7 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
   
 5.  Ajoutez le code XML pour répertorier tous les fichiers qui se trouvent dans le package du programme d’amorçage. Cet exemple utilise le nom de fichier de package CorePackage.msi.  
   
-    ```  
+    ```xml  
     <PackageFiles>  
         <PackageFile Name="CorePackage.msi"/>  
     </PackageFiles>  
@@ -67,14 +68,14 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
   
 7.  Ajoutez le code XML pour installer le package à l’aide des commandes du programme d’amorçage. Le programme d’amorçage ajoute automatiquement le **/qn** indicateur dans le fichier .msi, qui va installer en mode silencieux. Si le fichier est .exe, le programme d’amorçage exécute le fichier .exe à l’aide de l’interpréteur de commandes. Le code XML suivant montre aucun argument pour CorePackage.msi, mais vous pouvez placer l’argument de ligne de commande dans l’attribut Arguments.  
   
-    ```  
+    ```xml  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
 8.  Ajoutez le code XML suivant pour vérifier si ce package du programme d’amorçage est installé. Remplacez le code de produit avec le GUID pour le composant redistribuable.  
   
-    ```  
+    ```xml  
     <InstallChecks>  
         <MsiProductCheck   
             Property="IsMsiInstalled"   
@@ -84,7 +85,7 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
   
 9. Ajoutez du code XML pour modifier le comportement du programme d’amorçage selon si le composant du programme d’amorçage est déjà installé. Si le composant est installé, le package du programme d’amorçage ne s’exécute pas. Le code XML suivant vérifie si l’utilisateur actuel est un administrateur, car ce composant requiert des privilèges d’administrateur.  
   
-    ```  
+    ```xml  
     <InstallConditions>  
         <BypassIf   
            Property="IsMsiInstalled"   
@@ -97,7 +98,7 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
   
 10. Ajoutez du code XML pour définir les codes de sortie si l’installation est réussie et si un redémarrage est nécessaire. Le code XML suivant montre que la échouent et FailReboot exit codes, qui indiquent que le programme d’amorçage ne continuera pas l’installation des packages.  
   
-    ```  
+    ```xml  
     <ExitCodes>  
         <ExitCode Value="0" Result="Success"/>  
         <ExitCode Value="1641" Result="SuccessReboot"/>  
@@ -108,7 +109,7 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
   
 11. Ajoutez le code XML suivant pour mettre fin à la section pour les commandes du programme d’amorçage.  
   
-    ```  
+    ```xml  
         </Command>  
     </Commands>  
     ```  
@@ -118,7 +119,7 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
 ## <a name="example"></a>Exemple  
  Le manifeste de produit contient des instructions d’installation de composants requis personnalisés.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Product  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  

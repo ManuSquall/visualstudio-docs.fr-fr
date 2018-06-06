@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c05d1317c2b8040baf23c98cff8a032f14f47798
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ea5606913a4afb082fda09644dad7af8031a7e2
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815072"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Comment : utiliser ClickOnce pour déployer des applications pouvant s'exécuter sur plusieurs versions du .NET Framework
 Vous pouvez déployer une application qui cible plusieurs versions du .NET Framework à l’aide de la technologie de déploiement ClickOnce. Cela nécessite que vous générez et mettre à jour les manifestes d’application et de déploiement.  
@@ -85,13 +86,13 @@ Vous pouvez déployer une application qui cible plusieurs versions du .NET Frame
   
 2.  Ajouter `group="framework"` à la dépendance XML pour les assemblys sentinel (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, et `System.Data.Entity`). Par exemple, le code XML doit ressembler à ce qui suit :  
   
-    ```  
+    ```xml  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
 3.  Mettre à jour le numéro de version de la `<assemblyIdentity>` élément pour Microsoft.Windows.CommonLanguageRuntime avec le numéro de version pour le .NET Framework qui est le plus petit dénominateur commun. Par exemple, si l’application cible .NET Framework 3.5 et [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], utilisez le 2.0.50727.0 numéro de version et le XML doivent ressembler à ce qui suit :  
   
-    ```  
+    ```xml  
     <dependency>  
       <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
         <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />  
