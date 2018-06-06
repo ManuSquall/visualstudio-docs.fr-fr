@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 740d72f0ec339ded8ec8b721bbc2b94d706f8da7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ab25276596358f7c0a8c1f90bd38e89686e3196c
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815871"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Déploiement de composants COM avec ClickOnce
 Déploiement de composants COM hérités a toujours été une tâche difficile. Les composants doivent être inscrits globalement et peuvent donc entraîner des effets secondaires indésirables entre les applications qui se chevauche. Cette situation n’est généralement pas un problème dans les applications .NET Framework, car les composants sont complètement isolés de l’application ou sont compatibles avec le côte à côte. Visual Studio vous permet de déployer des composants COM isolés sur Windows XP ou système d’exploitation ultérieur.  
@@ -69,7 +70,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
   
 4.  Dans Class1.vb, ajoutez le code suivant après le code généré pour le `New` méthode :  
   
-    ```  
+    ```vb  
     Public Sub SayHello()  
        MsgBox "Message from the VB6Hello COM component"  
     End Sub  
@@ -102,7 +103,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
   
 8.  Double-cliquez sur le bouton pour ajouter le code du gestionnaire et dans le fichier de code, ajoutez le code afin que le gestionnaire se présente comme suit :  
   
-    ```  
+    ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
         Dim VbObj As New VB6Hello.Class1  
         VbObj.SayHello()  

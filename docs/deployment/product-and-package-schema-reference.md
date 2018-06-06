@@ -27,11 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eed411e51b9e1b9e69d80a0c6187d7325d45ef7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: dc613a95f6c0051690e9371cd3c5c8e401df6b86
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815572"
 ---
 # <a name="product-and-package-schema-reference"></a>Référence du schéma de produit et de package
 A *fichier produit* est un manifeste XML qui décrit toutes les dépendances externes requises par une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Exemples de dépendances externes le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et Microsoft Data Access Components (MDAC). Un fichier de package est similaire à un fichier de produit, mais est utilisé pour installer les composants spécifiques à une culture d’une dépendance, tels que les assemblys localisés, contrats de licence et la documentation.  
@@ -40,13 +41,13 @@ A *fichier produit* est un manifeste XML qui décrit toutes les dépendances ext
   
 |Élément|Description|Attributs|  
 |-------------|-----------------|----------------|  
-|[\<Produit > élément](../deployment/product-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers du produit.|Aucun|  
+|[\<Produit > élément](../deployment/product-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers du produit.|Aucun.|  
 |[\<Package > élément](../deployment/package-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers de package.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > élément](../deployment/relatedproducts-element-bootstrapper.md)|Élément facultatif pour les fichiers du produit. Les autres produits qui installe ou qui dépend de ce produit.|Aucun|  
-|[\<InstallChecks > élément](../deployment/installchecks-element-bootstrapper.md)|Élément requis. Répertorie les vérifications de dépendance pour effectuer sur l’ordinateur local lors de l’installation.|Aucun|  
-|[\<Commandes > élément](../deployment/commands-element-bootstrapper.md)|Élément requis.  Exécute un ou plusieurs contrôles de l’installation, comme décrit par `InstallChecks`et désigne le package à installer, si la vérification échoue.|Aucun|  
-|[\<PackageFiles > élément](../deployment/packagefiles-element-bootstrapper.md)|Élément requis. Répertorie les packages qui peuvent être installés par ce processus d’installation.|Aucun|  
-|[\<Chaînes > élément](../deployment/strings-element-bootstrapper.md)|Élément requis. Stocke les versions localisées des chaînes d’erreurs et du nom de produit.|Aucun|  
+|[\<RelatedProducts > élément](../deployment/relatedproducts-element-bootstrapper.md)|Élément facultatif pour les fichiers du produit. Les autres produits qui installe ou qui dépend de ce produit.|Aucun.|  
+|[\<InstallChecks > élément](../deployment/installchecks-element-bootstrapper.md)|Élément requis. Répertorie les vérifications de dépendance pour effectuer sur l’ordinateur local lors de l’installation.|Aucun.|  
+|[\<Commandes > élément](../deployment/commands-element-bootstrapper.md)|Élément requis.  Exécute un ou plusieurs contrôles de l’installation, comme décrit par `InstallChecks`et désigne le package à installer, si la vérification échoue.|Aucun.|  
+|[\<PackageFiles > élément](../deployment/packagefiles-element-bootstrapper.md)|Élément requis. Répertorie les packages qui peuvent être installés par ce processus d’installation.|Aucun.|  
+|[\<Chaînes > élément](../deployment/strings-element-bootstrapper.md)|Élément requis. Stocke les versions localisées des chaînes d’erreurs et du nom de produit.|Aucun.|  
   
 ## <a name="remarks"></a>Notes  
  Le schéma du package est utilisé par Setup.exe, un programme stub généré par la tâche d’amorçage MS Build contenant peu codé en dur sa propre logique. Le schéma pilote chaque aspect du processus d’installation.  
@@ -56,7 +57,7 @@ A *fichier produit* est un manifeste XML qui décrit toutes les dépendances ext
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant illustre un fichier de produit complet pour l’installation de le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  
