@@ -1,5 +1,5 @@
 ---
-title: Limitations de Windows Forms contrôles sur des Documents Office | Documents Microsoft
+title: Limitations des contrôles Windows Forms sur des documents Office
 ms.date: 02/02/2017
 ms.technology: office-development
 ms.topic: conceptual
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1136d799bb6bee56f0589c798a7c61fe0879d556
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 104b8b3449b2ffb689caf66d5c180817b633f83e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572957"
 ---
-# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitations des contrôles Windows Forms dans les documents Office
+# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitations des contrôles Windows Forms sur des documents Office
 
 Il existe certaines différences entre les contrôles Windows Forms qui sont ajoutés aux documents Microsoft Office Word ou des feuilles de calcul Microsoft Office Excel et les contrôles Windows Forms qui sont ajoutés aux Windows Forms. Par exemple, lorsque vous ajoutez un <xref:Microsoft.Office.Tools.Word.Controls.Button> à un document, les propriétés de contrôle telles que <xref:System.Windows.Forms.Control.Dock>, <xref:System.Windows.Forms.Control.Anchor>, et <xref:System.Windows.Forms.Control.TabIndex> ne se comportent pas comme prévu.
 
@@ -66,7 +67,7 @@ Vous ne pouvez pas définir le <xref:System.Windows.Forms.Control.Left> ou <xref
 
 - Vous ajoutez un contrôle Windows Forms à un document Word au moment du design. Vous pouvez le modifier en modifiant le contrôle dans le concepteur.
 
-## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Différences dans les contrôles Windows Forms sur des Documents Office
+## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Différences dans les contrôles Windows Forms sur des documents Office
 
 Contrôles Windows Forms ont généralement le même comportement sur un document Office sur un Windows Form, mais il existe certaines différences. Le tableau suivant décrit les différences qui existent pour les contrôles Windows Forms sur des documents Office.
 
@@ -83,19 +84,19 @@ Contrôles Windows Forms ont généralement le même comportement sur un documen
 |Redimensionnement du contrôle|Si vous redimensionnez un contrôle sur le document à l’aide d’une des huit poignées de redimensionnement, les nouvelles dimensions du contrôle ne sont pas répercutées dans le **propriétés** fenêtre jusqu'à ce que le contrôle est de nouveau activé.|
 |Contrôler le comportement|Contrôles sur une feuille de calcul Excel peuvent se comporter de façon imprévisible lorsque la fenêtre de feuille de calcul est fractionnée. Par exemple, l’accès à un <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> sur la feuille de calcul peut être disponible uniquement dans une des fenêtres.|
 |Contrôle d’affectation de noms|Vous ne pouvez pas utiliser les mots réservés pour nommer des contrôles. Par exemple, si vous ajoutez un <xref:Microsoft.Office.Tools.Excel.Controls.Button> à une feuille de calcul et remplacez le nom par **système**, erreurs se produisent lorsque vous générez le projet.|
-|Ajouter des contrôles par programmation|N’utilisez pas le constructeur du contrôle pour ajouter un contrôle à votre document au moment de l’exécution. Au lieu de cela, utilisez les méthodes d’assistance fournies par le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Par exemple, utiliser le <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> méthode pour ajouter un bouton à une feuille de calcul. Si vous souhaitez ajouter un contrôle qui n’est pas pris en charge par ces méthodes d’assistance, vous pouvez utiliser la méthode AddControl. Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).|
+|Ajouter des contrôles par programmation|N’utilisez pas le constructeur du contrôle pour ajouter un contrôle à votre document au moment de l’exécution. Au lieu de cela, utilisez les méthodes d’assistance fournies par le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Par exemple, utiliser le <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> méthode pour ajouter un bouton à une feuille de calcul. Si vous souhaitez ajouter un contrôle qui n’est pas pris en charge par ces méthodes d’assistance, vous pouvez utiliser la `AddControl` (méthode). Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).|
 |Copie des contrôles|Si vous copiez un contrôle Windows Forms et collez dans un document au moment de l’exécution, un contrôle ActiveX conteneur vide est collé dans le document. Le contrôle Windows Forms n’apparaît pas dans le nouvel emplacement et code-behind du contrôle d’origine n’est pas copié dans le conteneur de contrôle ActiveX.|
 
-## <a name="limitations-in-document-level-projects"></a>Limitations dans les projets au niveau du Document
+## <a name="limitations-in-document-level-projects"></a>Limitations dans les projets au niveau du document
 
 Certaines limitations de l’utilisation de contrôles Windows Forms sur les documents sont uniques aux projets au niveau du document.
 
-### <a name="control-support-at-design-time"></a>Prise en charge du contrôle au moment du Design
+### <a name="control-support-at-design-time"></a>Prise en charge du contrôle au moment du design
 
 Certains contrôles Windows Forms sont supprimés de la **boîte à outils** quand une feuille de calcul Excel ou un document Word est ouvert dans le concepteur Visual Studio. Cela est dû à des limitations techniques ou parce que les fonctionnalités sont déjà disponibles dans Word ou Excel. Les projets Excel et Word prennent en charge tous les contrôles Windows Forms et d’autres composants qui s’affichent dans le **boîte à outils** lorsque le document a le focus et que vous pouvez également ajouter des contrôles tiers à un document ou une feuille de calcul.
 
 > [!NOTE]
-> Tous les contrôles sont supprimés de la **boîte à outils** quand un document est protégé. Pour plus d’informations sur la protection de document, consultez [Protection des documents dans les Solutions au niveau du Document](../vsto/document-protection-in-document-level-solutions.md).
+> Tous les contrôles sont supprimés de la **boîte à outils** quand un document est protégé. Pour plus d’informations sur la protection de document, consultez [protection dans les solutions au niveau du document des documents](../vsto/document-protection-in-document-level-solutions.md).
 
 > [!NOTE]
 > Les contrôles tiers doivent avoir le <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribut la valeur **true** pour pouvoir être utilisé dans une solution Office.
@@ -178,13 +179,13 @@ Les contrôles et les composants suivants ne sont pas disponibles dans le **boî
 
 - <xref:System.Windows.Forms.ToolStripPanel>
 
-### <a name="support-for-legacy-activex-controls"></a>Prise en charge pour les contrôles ActiveX hérité
+### <a name="support-for-legacy-activex-controls"></a>Prise en charge pour les contrôles ActiveX hérités
 
 Si vous créez un projet Office au niveau du document qui utilise un document Word existant ou un classeur Excel qui contient des contrôles ActiveX, les fonctionnalités des contrôles ActiveX ne sont pas perdues ; Toutefois, il n’existe aucune prise en charge pour l’ajout de nouveaux contrôles ActiveX à vos documents à partir de Visual Studio. Par exemple, si votre document Word inclut un bouton de la **contrôle** boîte à outils qui exécute une macro Visual Basic pour Applications (VBA), il continue de s’exécuter la macro une fois que le document a été utilisé dans un projet Office. Toutefois, il est recommandé de supprimer les contrôles ActiveX et les macros VBA et de les remplacer par des contrôles Windows Forms et de code managé.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Contrôles sur des documents Office](../vsto/controls-on-office-documents.md)
-- [Vue d’ensemble des contrôles Windows Forms dans les documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [Ajout de contrôles à des documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Guide pratique pour ajouter des contrôles Windows Forms à des documents Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Contrôles Windows Forms sur une vue d’ensemble des documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Comment : ajouter des contrôles Windows Forms à des documents Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

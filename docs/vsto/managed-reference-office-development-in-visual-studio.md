@@ -1,5 +1,5 @@
 ---
-title: Référence (développement Office dans Visual Studio) | Documents Microsoft
+title: Référence managée (développement Office dans Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b0b6d7b6fdbb55030088f33fc235429d0b6142e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3c991b6507ded441dd37ec92cb5efd0e2167285
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572190"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Référence managée (développement Office dans Visual Studio)
   Cette section contient la documentation de référence des API pour les espaces de noms et types utilisés dans les projets Office qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Pour obtenir la documentation de référence des API sur les espaces de noms et les types qui sont utilisés dans les projets Office qui ciblent le .NET Framework 3.5, consultez la section de référence suivante dans la documentation de Visual Studio : [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).  
@@ -63,9 +64,9 @@ ms.lasthandoff: 04/16/2018
  Contient des classes de tâche MSBuild utilisées pour générer des projets Office.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue d’ensemble de Visual Studio Tools pour Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Mise en route &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Visual Studio tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
+ [Prise en main &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Procédures pas à pas et des exemples de développement office](../vsto/office-development-samples-and-walkthroughs.md)   
- [Conception et création de solutions Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6b2143c7a2fd39cd7a8d2df797f68a706a2ec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b4758fbebea12b014f92bed59e851210509cdbb9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573126"
 ---
 # <a name="how-to-use-xml-snippets"></a>Comment : utiliser XML des extraits de code
 
@@ -22,7 +23,7 @@ Vous pouvez invoquer des extraits XML en utilisant les deux commandes suivantes 
 
 Une fois l'extrait XML ajouté à l'éditeur, tous ses champs modifiables sont surlignés en jaune et le curseur est placé dans le premier d'entre eux.
 
-## <a name="insert-snippet"></a>Insérer l’extrait de code
+## <a name="insert-snippet"></a>Insérer un extrait
 
 Les procédures suivantes décrivent comment accéder à la **insérer un extrait** commande.
 
@@ -79,7 +80,7 @@ Les procédures suivantes décrivent comment accéder à la **entourer** command
 > [!NOTE]
 > Le **entourer** commande est également disponible via un raccourci clavier (**Ctrl**+**K**, puis **Ctrl** + **S**).
 
-### <a name="to-use-surround-with-from-the-context-menu"></a>Pour utiliser la commande Entourer de du menu contextuel
+### <a name="to-use-surround-with-from-the-context-menu"></a>Utiliser entourer dans le menu contextuel
 
 1. Sélectionnez le texte à entourer dans l'éditeur XML.
 
@@ -89,7 +90,7 @@ Les procédures suivantes décrivent comment accéder à la **entourer** command
 
 3. Sélectionnez un extrait de code dans la liste à l’aide de la souris, ou en tapant le nom de l’extrait de code et en appuyant sur **onglet** ou **entrée**.
 
-### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Pour utiliser un encadrement à partir du menu IntelliSense
+### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Utiliser entourer du menu IntelliSense
 
 1. Sélectionnez le texte à entourer dans l'éditeur XML.
 
@@ -99,7 +100,7 @@ Les procédures suivantes décrivent comment accéder à la **entourer** command
 
 3. Sélectionnez un extrait de code dans la liste à l’aide de la souris, ou en tapant le nom de l’extrait de code et en appuyant sur **onglet** ou **entrée**.
 
-## <a name="using-xml-snippets"></a>Utilisation d’extraits XML
+## <a name="use-xml-snippets"></a>Utilisation d’extraits XML
 
 Une fois que vous avez choisi un extrait XML, le texte de cet extrait de code est automatiquement inséré à l'emplacement du curseur. Tous les champs modifiables contenus dans l'extrait sont surlignés et le premier de ces champs est automatiquement sélectionné. Le champ actuellement sélectionné est encadré.
 
@@ -109,10 +110,10 @@ Seule la première instance d'un champ donné est modifiable. Lorsque ce champ e
 
 En appuyant sur **entrée** ou **ÉCHAP** annule la modification du champ et retourne l’éditeur à la normale.
 
-Les couleurs par défaut pour les champs d’extrait de code modifiable peuvent être modifiées en modifiant le paramètre du champ extrait de Code dans le **polices et couleurs** volet de la **Options** boîte de dialogue. Pour plus d’informations, consultez [Comment : modifier les polices et couleurs dans l’éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+Les couleurs par défaut pour les champs d’extrait de code modifiable peuvent être changées en modifiant le **champ extrait de Code** définition dans le **polices et couleurs** volet de la **Options** boîte de dialogue. Pour plus d’informations, consultez [Comment : modifier les polices et couleurs dans l’éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Extraits XML](../xml-tools/xml-snippets.md)
-- [Guide pratique pour générer un extrait XML à partir d’un schéma XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-- [Guide pratique pour créer des extraits XML](../xml-tools/how-to-create-xml-snippets.md)
+- [Comment : générer un extrait XML à partir d’un schéma XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Comment : créer des extraits XML](../xml-tools/how-to-create-xml-snippets.md)

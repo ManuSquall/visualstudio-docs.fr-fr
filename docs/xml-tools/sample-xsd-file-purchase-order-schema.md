@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eed6f06414eccd33fcb85d89a64f61e6c85e6782
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c26272b2e30fa505a196828ecddc9fc8385fe4c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571811"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>Exemple de fichier XSD : schéma de bon de commande
 

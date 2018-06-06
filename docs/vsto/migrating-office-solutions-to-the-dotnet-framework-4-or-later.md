@@ -17,31 +17,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 830dcdb9e42472aa712c86ddb117b3b8003ac4d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ac244bebb1a625c7858a62399ee79126e309cf2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571797"
 ---
 # <a name="migrating-office-solutions-to-the-net-framework-4-or-later"></a>Migration de solutions Office vers .NET Framework 4 ou version ultérieure
-  Si la version cible de .NET Framework d'un projet Office est remplacée par la version [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou ultérieure d'une version antérieure de .NET Framework, certaines étapes supplémentaires peuvent être requises pour continuer à exécuter la solution sur les ordinateurs de développement et des utilisateurs finaux. Pour plus d’informations, consultez [les modifications requises pour exécuter les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).  
+  Si la version cible de .NET Framework d'un projet Office est remplacée par la version [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou ultérieure d'une version antérieure de .NET Framework, certaines étapes supplémentaires peuvent être requises pour continuer à exécuter la solution sur les ordinateurs de développement et des utilisateurs finaux. Pour plus d’informations, consultez [ont imposé des changements à exécuter des projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).  
   
  En outre, la compilation du projet peut ne plus s'effectuer. Certaines fonctionnalités des projets Office possèdent des modèles de programmation différents selon les versions de .NET Framework. Lorsque l'infrastructure cible d'un projet Office est modifiée  en version [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou ultérieure d'une version antérieure de .NET Framework, vous devez apporter les modifications de code suivantes au projet :  
   
--   [Mise à jour des projets Excel et Word que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [Mettre à jour des projets Excel et Word que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
--   [Mise à jour des personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [Mettre à jour des personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
--   [Mise à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [Mettre à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
- La version cible de .Net Framework d'un projet Office change lorsque vous mettez à niveau ce projet à partir d'une version antérieure de Visual Studio. Pour plus d'informations, consultez [Upgrading and Migrating Office Solutions](../vsto/upgrading-and-migrating-office-solutions.md).  
+ La version cible de .Net Framework d'un projet Office change lorsque vous mettez à niveau ce projet à partir d'une version antérieure de Visual Studio. Pour plus d’informations, consultez [mise à niveau et migrer des solutions Office](../vsto/upgrading-and-migrating-office-solutions.md).  
   
- Pour plus d’informations sur la raison pour laquelle certaines fonctionnalités dans les projets Office ont un modèle de programmation différent lorsque vous ciblez le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure, consultez [modifications apportées à la conception des projets Office qui ciblent le .NET Framework 4 ou .NET Framework 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md) et [Visual Studio Tools pour Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
+ Pour plus d’informations sur la raison pour laquelle certaines fonctionnalités dans les projets Office ont un modèle de programmation différent lorsque vous ciblez le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure, consultez [modifications apportées à la conception des projets Office qui ciblent le .NET Framework 4 ou .NET Framework 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md) et [Visual Studio Tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Conception et création de Solutions Office](../vsto/designing-and-creating-office-solutions.md)   
- [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
- [Dépannage des erreurs dans les Solutions Office](../vsto/troubleshooting-errors-in-office-solutions.md)   
- [Ressources supplémentaires de résolution des erreurs dans les solutions Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
+ [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Comment : cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [Résoudre les erreurs dans les solutions Office](../vsto/troubleshooting-errors-in-office-solutions.md)   
+ [Prise en charge supplémentaire pour les erreurs dans les solutions Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
   
   
