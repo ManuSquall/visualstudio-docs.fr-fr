@@ -1,5 +1,5 @@
 ---
-title: Créer un rapport de performances de test de charge à l’aide de Microsoft Word | Microsoft Docs
+title: Créer un rapport de performances de test de charge à l’aide de Microsoft Word
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,14 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6b7c48d46cfb795c4eb5f61cc970676816d568a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750881"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Comment : créer manuellement un rapport de performances de test de charge à l'aide de Microsoft Word
 
@@ -44,7 +46,7 @@ Vous pouvez créer manuellement des rapports de test de charge en copiant et en 
 
 2.  (Facultatif) Faites un zoom avant sur le graphique spécifique à copier dans votre document Microsoft Word, comme l’indique l’illustration suivante. Pour plus d’informations, consultez [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
-     ![Contrôle de zoom de la vue Graphiques](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl")
+     ![Contrôle de zoom de l'affichage de graphiques](../test/media/ltest_zoomcontrol.png)
 
 3.  Sur le graphique à copier dans votre document Microsoft Word, cliquez avec le bouton droit, puis sélectionnez **Copier**.
 

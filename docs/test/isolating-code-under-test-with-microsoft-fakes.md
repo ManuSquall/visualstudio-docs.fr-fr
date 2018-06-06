@@ -1,6 +1,7 @@
 ---
-title: Isolation du code sous test avec Microsoft Fakes dans Visual Studio | Microsoft Docs
+title: Isolation du code sous test avec Microsoft Fakes dans Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -11,11 +12,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: ed5e8844234f6dfde52408ecd4c814b725816eb7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ac6bd2e9b2c15f64e0232e46267a87c210b5b69
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751453"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolation du code sous test avec Microsoft Fakes
 
@@ -27,11 +29,15 @@ Microsoft Fakes est disponible en deux versions :
 
 -   Un [shim](#shims) modifie le code compilé de votre application au moment de l’exécution pour qu’elle exécute le code shim que votre test fournit au lieu de faire un appel de méthode spécifié. Les shims peuvent être utilisés pour remplacer les appels aux assemblys que vous ne pouvez pas modifier, par exemple les assemblys .NET.
 
-![Fakes remplace les autres composants](../test/media/fakes-2.png "Fakes-2")
+![Fakes remplace les autres composants](../test/media/fakes-2.png)
 
 **Spécifications**
 
 -   Visual Studio Enterprise
+-   Un projet .NET Framework
+
+> [!NOTE]
+> Les projets .NET Standard ne sont pas pris en charge.
 
 ## <a name="choosing-between-stub-and-shim-types"></a>Choix entre types stub et shim
 En général, vous considérez un projet Visual Studio comme un composant, car vous développez et mettez à jour ces classes simultanément. Vous pouvez envisager d'utiliser des stubs et des shims pour les appels que le projet effectue en direction d'autres projets de votre solution ou d'autres assemblys que le projet référence.

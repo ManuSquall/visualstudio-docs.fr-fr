@@ -1,5 +1,5 @@
 ---
-title: Présentation du récapitulatif des résultats de test de charge dans Visual Studio | Microsoft Docs
+title: Présentation du récapitulatif des résultats de test de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,18 +14,20 @@ ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 001f7f866437807565bc83a8ad3a4dd809dd4100
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41849b5ac9b55ff97735dbbda4df909d54f8a346
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751856"
 ---
 # <a name="load-test-results-summary-overview"></a>Vue d'ensemble du résumé des résultats des tests de charge
 
 Après avoir exécuté un test de charge, vous pouvez consulter le résumé du test de charge pour comprendre rapidement les résultats. Ce résumé fournit les résultats clés dans un format compact et facile à lire. Vous pouvez également l'imprimer. Cela rend son utilisation pratique lorsque vous communiquez des résultats aux parties prenantes. Le résumé du test de charge est également la vue par défaut lorsque vous ouvrez un résultat de test de charge d'un précédemment test de charge exécuté. Pour plus d’informations, consultez [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Vue Récapitulatif](../test/media/ltest_summaryview.png "LTest_SummaryView")
+ ![Mode Résumé](../test/media/ltest_summaryview.png)
 
 ## <a name="the-load-test-summary"></a>Résumé du test de charge
 

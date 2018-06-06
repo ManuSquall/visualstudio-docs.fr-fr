@@ -1,5 +1,5 @@
 ---
-title: Violations de seuil pour les tests de charge dans Visual Studio | Microsoft Docs
+title: Violations de seuil pour les tests de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,14 @@ ms.assetid: 0126d7b7-0538-4ea9-9046-6556654b3b9d
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6acb9eec16107134dc03765da82008a01b599e4b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751804"
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Comment : analyser les violations de seuils dans le volet Compteurs de l'Analyseur de test de charge
 
@@ -21,21 +23,21 @@ Le volet des compteurs est visible dans la vue Graphiques et la vue Tables de l'
 
  Les violations de seuils sont associées à des compteurs de performance spécifiques, et indiquent que le compteur de performance a dépassé ou est descendu en dessous d'une valeur seuil définie. Les icônes du volet des compteurs communiquent les violations de seuils.
 
- ![Nœud d’ordinateur du panneau Compteur](../test/media/ltest_compnode.png "LTest_CompNode")
+ ![Nœud d'ordinateur du panneau Compteur](../test/media/ltest_compnode.png)
 
  L’icône d’une violation de seuil est propagée du nœud d’arborescence dans lequel réside le compteur qui a échoué jusqu’au nœud racine. L’icône signale à l’utilisateur une violation sur un compteur qui n’est pas forcément visible dans l’arborescence, car cette dernière n’a pas été développée. Un exemple de l’icône est visible dans le **Nœud des ordinateurs** dans le volet des compteurs dans l’illustration précédente.
 
  L'icône sera l'un des suivants :
 
- ![Aucune violation de seuil](../test/media/icon_ltest_1.gif "Icon_LTest_1") Aucune violation de seuil.
+ ![Aucune violation de seuil](../test/media/icon_ltest_1.gif) Aucune violation de seuil.
 
- ![Une violation de seuil critique sur le dernier intervalle](../test/media/icon_ltest_2.gif "Icon_LTest_2") Une violation de seuil critique s’est produite sur le dernier intervalle.
+ ![Une violation de seuil critique dans le dernier intervalle](../test/media/icon_ltest_2.gif) Une violation de seuil critique s'est produite au cours du dernier intervalle.
 
- ![Une violation de seuil critique sur un dernier précédent](../test/media/icon_ltest_3.gif "Icon_LTest_3") Une violation de seuil critique s’est produite sur un intervalle précédent.
+ ![Une violation de seuil critique dans un intervalle précédant](../test/media/icon_ltest_3.gif) Une violation de seuil critique s'est produite au cours d'un intervalle précédent.
 
- ![Une violation de seuil d’avertissement sur le dernier intervalle](../test/media/icon_ltest_4.gif "Icon_LTest_4") Une violation de seuil d’avertissement s’est produite sur le dernier intervalle.
+ ![Une violation de seuil d'avertissement dans le dernier intervalle](../test/media/icon_ltest_4.gif) Une violation de seuil d'avertissement s'est produite au cours du dernier intervalle.
 
- ![Une violation de seuil d’avertissement sur un dernier précédent](../test/media/icon_ltest_5.gif "Icon_LTest_5") Une violation de seuil d’avertissement s’est produite sur un intervalle précédent.
+ ![Une violation de seuil d'avertissement dans un intervalle précédant](../test/media/icon_ltest_5.gif) Une violation de seuil d'avertissement s'est produite au cours d'un intervalle précédent.
 
 ## <a name="to-analyze-threshold-violations-in-the-counters-panel"></a>Pour analyser les violations de seuils dans le volet des compteurs
 

@@ -1,5 +1,5 @@
 ---
-title: Afficher les pièces jointes de données et diagnostic des tests de charge dans Visual Studio | Microsoft Docs
+title: Afficher les pièces jointes de données et diagnostic des tests de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,22 +8,24 @@ ms.assetid: 73309bdd-437a-4eb0-88c8-702c3e24b9b0
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 08e4ce09103cd5f06926147ae38b916ae666648b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 525f4a1d11cd4026410baf696b4593daf2595e12
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751363"
 ---
 # <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>Comment : afficher les pièces jointes des données et des diagnostics à l'aide de l'analyseur de test de charge
 
 Avant d'exécuter un test de charge, vous pouvez sélectionner un paramètre de test qui spécifie les adaptateurs de diagnostic et de données que vous souhaitez utiliser. Une fois que le test de charge est terminé, utilisez l'analyseur de test de charge pour afficher les détails des adaptateurs de diagnostic et de données pendant l'analyse des résultats. Pour afficher les détails des adaptateurs de diagnostic et de données, choisissez le bouton **Afficher les pièces jointes de données et diagnostic** dans la barre d’outils de l’analyseur de test de charge. Par exemple, si l'adaptateur des informations système est configuré pour le test de charge dans le paramètre de test, vous pouvez afficher les informations système de l'ordinateur qui a été utilisé lors de l'exécution du test de charge.
 
-![Boîte de dialogue de choix de la pièce jointe de l’adaptateur de données de diagnostic](../test/media/load_adapterdialog.png "Load_AdapterDialog")
+![Boîte de dialogue Sélection de la pièce jointe d'adaptateur de données de diagnostic](../test/media/load_adapterdialog.png)
 
 L'autre exemple est un test de charge qui inclut l'adaptateur IntelliTrace dans le paramètre de test. L'adaptateur IntelliTrace permet d'ouvrir la page Résumé IntelliTrace.
 
-![Résumé IntelliTrace](../test/media/load_intellitrace.png "Load_IntelliTrace")
+![Résumé IntelliTrace](../test/media/load_intellitrace.png)
 
 Pour plus d’informations, consultez [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md) et [Collecter les données IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
 

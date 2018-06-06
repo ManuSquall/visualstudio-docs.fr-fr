@@ -1,6 +1,7 @@
 ---
-title: Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur dans Visual Studio | Microsoft Docs
+title: Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur dans Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 21bee57859f067afee884693fe8a808771374f04
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750725"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analyse des tests codés de l'interface utilisateur à l'aide des journaux de test codé de l'interface utilisateur
 
@@ -71,17 +73,17 @@ Quand vous exécutez un test codé de l’interface utilisateur avec les modific
 
 4.  Choisissez le lien **Sortie** dans les résultats de l’Explorateur de tests.
 
-     ![Lien de sortie dans l’Explorateur de tests](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")
+     ![Lien de sortie dans l'explorateur de tests](../test/media/cuit_htmlactionlog1.png)
 
      Cela permet d’afficher la sortie du test, qui inclut un lien vers le journal des actions.
 
-     ![Résultats et liens de sortie du test codé de l’interface utilisateur](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")
+     ![Résultats et liens de sortie à partir de test codé de l'interface utilisateur](../test/media/cuit_htmlactionlog2.png)
 
 5.  Choisissez le lien *UITestActionLog.html*.
 
      Le journal s'affiche dans votre navigateur web.
 
-     ![Fichier journal du test codé de l’interface utilisateur](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")
+     ![Fichier journal du test codé de l’interface utilisateur](../test/media/cuit_htmlactionlog3.png)
 
 ## <a name="see-also"></a>Voir aussi
 

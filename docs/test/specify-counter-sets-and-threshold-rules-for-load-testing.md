@@ -1,5 +1,5 @@
 ---
-title: Ensembles de compteurs et règles de seuil pour les tests de charge dans Visual Studio | Microsoft Docs
+title: Ensembles de compteurs et règles de seuil pour les tests de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,14 @@ ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d2b80ab1aaed9f5f59399a02026c9334f38701c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751340"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Spécifier des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge
 
@@ -50,7 +52,7 @@ Les données de compteurs sont rassemblées sur le serveur et sur tout ordinateu
 
 Il existe trois catégories de compteurs : pourcentages, comptes et moyennes. Le pourcentage d'utilisation du processeur, le nombre de verrous SQL Server et le nombre de demandes IIS par seconde sont des exemples de compteurs.
 
-![Ensembles de compteurs du test de charge](../test/media/loadtestcountersets.png "LoadTestCounterSets")
+![Ensembles de compteurs du test de charge](../test/media/loadtestcountersets.png)
 
 Les données de performances pour chaque requête HTTP sont envoyées par l'ordinateur qui exécute un test, comme un ordinateur agent. Pour les demandes, vous pouvez surveiller des données telles que le Temps moyen jusqu'au premier octet, le Temps de réponse et le Nombre moyen de demandes par seconde.
 

@@ -21,11 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a887d31eded0f7f37e9ec5390a934c192836697
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749227"
 ---
 # <a name="options-text-editor-all-languages"></a>Options, Éditeur de texte, Tous les langages
 Cette boîte de dialogue vous permet de modifier le comportement par défaut de l’éditeur de code. Ces paramètres s’appliquent également à d’autres éditeurs basés sur l’éditeur de code, tels que le mode Source du concepteur HTML. Pour ouvrir cette boîte de dialogue, sélectionnez **Options** dans le menu **Outils**. Dans le dossier **Éditeur de texte**, développez le sous-dossier **Tous les langages**, puis choisissez **Général**.
@@ -70,7 +71,7 @@ Cette boîte de dialogue vous permet de modifier le comportement par défaut de 
 
  Lorsque cette option est sélectionnée, un indicateur fléché de retour s’affiche à l’endroit où une ligne longue est automatiquement renvoyée à une deuxième ligne.
 
- ![Capture d’écran LineBreakSymbol](../../ide/reference/media/linebreak.gif "linebreak")
+ ![Capture d'écran LineBreakSymbol](../../ide/reference/media/linebreak.gif)
 
  Désactivez cette option si vous préférez ne pas afficher ces indicateurs.
 

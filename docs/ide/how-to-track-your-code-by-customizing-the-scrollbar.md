@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7094aba90a8844480536e6f44951fb7dc15ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34445969"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745735"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Guide pratique pour suivre votre code en personnalisant la barre de défilement
 
@@ -34,11 +34,11 @@ Quand vous travaillez sur de longs fichiers de code, il peut être difficile de 
 
     Voici à quoi ressemble la barre de défilement après la recherche d'une chaîne. Notez que toutes les instances de la chaîne sont affichées.
 
-    ![Barre de défilement après recherche d’une chaîne.](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
+    ![Barre de défilement après recherche d’une chaîne.](../ide/media/enhancedscrollbarsearch.png)
 
     Voici la barre de défilement après le remplacement de toutes les instances de la chaîne. Vous voyez immédiatement que l'opération a causé quelques problèmes.
 
-    ![Barre de défilement après remplacement d’une chaîne erronée](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
+    ![Barre de défilement après remplacement d’une chaîne sans erreurs](../ide/media/enhancedscrollbarreplace.png)
 
 ## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Pour définir le mode d'affichage de la barre de défilement
 
@@ -48,11 +48,11 @@ Quand vous travaillez sur de longs fichiers de code, il peut être difficile de 
 
     Voici comment se présente l’exemple de recherche avec le mode mappage et une largeur **moyenne** :
 
-    ![Barre de défilement en mode mappage](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
+    ![Barre de défilement en mode mappage](../ide/media/enhancedscrollbar.png)
 
 2. En mode mappage, pour activer les aperçus du code quand vous déplacez le curseur vers le haut et le bas dans la barre de défilement, sélectionnez l’option **Afficher l’info-bulle d’aperçu**. Voici le résultat :
 
-    ![Barre de défilement avec une info-bulle](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
+    ![Barre de défilement avec une info-bulle](../ide/media/enhancedscrollbarsearchtooltip.png)
 
     Pour conserver le mode mappage et l’info-bulle d’aperçu de la barre de défilement, mais pas la vue d’ensemble du code source, définissez **Vue d’ensemble du code source** sur **Désactivé**.
 
