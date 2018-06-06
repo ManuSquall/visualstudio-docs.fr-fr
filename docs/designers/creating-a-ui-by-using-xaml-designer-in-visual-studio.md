@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 514bbd4b4b65a2f32b42a1f260368f219972e22c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 707fdd9c1ea0712d743bb62276599783507f0739
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745748"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
 Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous aider à concevoir des applications web et Windows basées sur XAML. Vous pouvez créer des interfaces utilisateur pour vos applications en faisant glisser des contrôles à partir de la **boîte à outils** et en définissant des propriétés dans la fenêtre **Propriétés** . Vous pouvez également modifier le XAML directement en mode XAML.
@@ -34,7 +35,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  En mode Création, la fenêtre contenant la *planche graphique* est la fenêtre active et vous pouvez l'utiliser comme surface de travail principale. Vous pouvez l'utiliser pour concevoir visuellement une page dans votre application en ajoutant ou en dessinant des éléments, puis en les modifiant. Pour plus d'informations, consultez [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Cette illustration montre la planche graphique en mode Création.
 
- ![Mode Création du concepteur XAML](../designers/media/xaml_editor_design_view.png "xaml_editor_design_view")
+ ![Mode Design du concepteur XAML](../designers/media/xaml_editor_design_view.png)
 
  Les fonctionnalités suivantes sont disponibles dans la planche graphique :
 
@@ -56,7 +57,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  En mode Création, des commandes supplémentaires de la planche graphique sont disponibles dans la partie inférieure gauche de la zone de l'écran, comme indiqué ci-après :
 
- ![Commandes du mode Création](../designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")
+ ![Commandes du mode Design](../designers/media/xaml_editor_design_controls.png)
 
  Les commandes suivantes sont disponibles dans cette barre d'outils :
 
@@ -70,7 +71,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  En mode XAML, la fenêtre de l'éditeur XAML est la fenêtre active, et l'éditeur XAML est votre principal outil de création. Le langage XAML (Extensible Application Markup Language) fournit un vocabulaire XML déclaratif permettant de spécifier l'interface utilisateur d'une application. Le mode XAML inclut IntelliSense, la mise en forme automatique, la mise en surbrillance de la syntaxe et la navigation de balises. Cette illustration montre le mode XAML :
 
- ![Vue XAML](../designers/media/xaml_editor.png "xaml_editor")
+ ![Mode XAML](../designers/media/xaml_editor.png)
 
  **Barre Mode fractionné** : la barre Mode fractionné apparaît en haut de la vue XAML quand l’éditeur XAML se trouve dans la fenêtre du bas. La barre Mode fractionné vous permet de contrôler les tailles relatives du mode Création et du mode XAML. Vous pouvez également échanger les emplacements des vues (à l'aide du bouton **Permuter les volets** ), spécifier si les vues sont réorganisées horizontalement ou verticalement et réduire l'une ou l'autre des vues.
 
@@ -79,7 +80,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 ## <a name="device-window"></a>Fenêtre Périphérique
  La fenêtre Appareil du concepteur XAML vous permet de faire des simulations à l’aide de plusieurs vues, écrans et options d’affichage pour votre projet au moment du design. La fenêtre Périphérique est disponible dans le menu **Design** quand vous travaillez dans le concepteur XAML. Voici à quoi elle ressemble :
 
- ![Fenêtre Appareil](../designers/media/xaml_editor_device_panel.png "xaml_editor_device_panel")
+ ![Fenêtre Périphérique](../designers/media/xaml_editor_device_panel.png)
 
  Les options disponibles dans la fenêtre Périphérique sont les suivantes :
 
@@ -114,7 +115,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  Pour afficher la fenêtre Structure du document, dans la barre de menus, choisissez **Affichage**, **Autres fenêtres**, **Structure du document**.
 
- ![Fenêtre Structure du document](../designers/media/xaml_editor_doc_outline.png "xaml_editor_doc_outline")
+ ![Fenêtre Structure du document](../designers/media/xaml_editor_doc_outline.png)
 
  Les options disponibles dans la fenêtre Structure du document sont les suivantes :
 
@@ -129,7 +130,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 ## <a name="properties-window"></a>Fenêtre Propriétés
  La fenêtre Propriétés vous permet de définir des valeurs de propriété sur les contrôles. Voici à quoi elle ressemble :
 
- ![Fenêtre Propriétés](../designers/media/xaml_editor_prop_window.png "xaml_editor_prop_window")
+ ![Propriétés (fenêtre)](../designers/media/xaml_editor_prop_window.png)
 
  Plusieurs options apparaissent en haut de la fenêtre Propriétés. Vous pouvez modifier le nom de l'élément actuellement sélectionné à l'aide de la zone **Nom** . Dans le coin supérieur gauche, il existe une icône qui représente l'élément actuellement sélectionné. Pour réorganiser les propriétés par catégorie ou par ordre alphabétique, cliquez sur **Catégorie**, **Nom**ou **Source** dans la liste **Réorganiser par** . Pour afficher la liste des événements pour un contrôle, cliquez sur le bouton **Événements** , symbolisé par un éclair. Pour rechercher une propriété, commencez à taper son nom dans la zone **Propriétés de recherche** . La fenêtre Propriétés affiche les propriétés correspondant aux termes de recherche en cours de frappe. Certaines propriétés vous permettent de définir des propriétés avancées en sélectionnant un bouton de flèche vers le bas. Pour plus d’informations sur l’utilisation des propriétés et la gestion des événements, consultez [Démarrage rapide : ajout de contrôles et gestion des événements](http://go.microsoft.com/fwlink/?LinkID=247983)
 

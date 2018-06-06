@@ -30,7 +30,7 @@ ms.openlocfilehash: c93553535ca85f63db64be773afa76711a38359b
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693128"
 ---
 # <a name="ribbon-xml"></a>Élément XML Ribbon

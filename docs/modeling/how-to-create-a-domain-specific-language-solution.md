@@ -15,11 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c4851577a62db08e2c759f7140895e15b230ec60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49d33858970eebd9231eac35d4e4e58999771ae1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748896"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Comment : créer une solution de langage spécifique à un domaine
 Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialisé [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution.
@@ -58,7 +59,7 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialis�
         > [!NOTE]
         >  De préférence, le nom que vous tapez doit être un identificateur c# valide, car il peut être utilisé pour générer le code.
 
-     ![Boîte de dialogue DSL créer](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Boîte de dialogue Créer DSL](../modeling/media/create_dsldialog.png)
 
 2.  Choisissez un modèle DSL.
 

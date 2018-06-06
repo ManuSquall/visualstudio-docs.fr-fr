@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d58cbb439eb370af16ee68ca03a4d1db467861f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745628"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Comment : créer une texture de base
 Ce document montre comment utiliser l’éditeur d’images pour créer une texture de base.
@@ -36,7 +37,7 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
 
  Les étapes suivantes montrent comment créer une texture représentant une cible. Lorsque vous avez terminé, la texture doit ressembler à l’image suivante. Pour mettre en évidence la transparence de la texture, l’éditeur d’images a été configuré pour utiliser un modèle à damiers verts pour l’afficher.
 
- ![Cible avec transparence affichée en vert](../designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")
+ ![Cible « Bullseye » avec la transparence illustrée en vert](../designers/media/digit-bullseye-texture-in-editor.png)
 
  Avant de commencer, assurez-vous que la fenêtre **Propriétés** est affichée. Vous allez l’utiliser pour définir la taille de l’image, modifier les propriétés des outils et spécifier des couleurs pendant que vous travaillez.
 
@@ -84,7 +85,7 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
 
  La texture de cible est complète. Voici l’image finale, affichée avec la transparence.
 
- ![Texture de cible complète](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")
+ ![Texture cible « Bullseye » complète](../designers/media/gfx_image_demo_bullseye.png)
 
  Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, consultez l’article [Comment : créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).
 

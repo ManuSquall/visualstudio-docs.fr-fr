@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 210dc624bbdaac7aaa0297167416d684629eb07f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f1ed732e33706defed975a3a05986f53081b4337
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548178"
 ---
-# <a name="command-line-profiling-tools-reference"></a>Informations de référence sur les outils de profilage en ligne de commande
+# <a name="command-line-profiling-tools-reference"></a>Informations de référence sur les outils de profilage de la ligne de commande
 Les outils de performances en ligne de commande permettent aux programmeurs de profiler leurs applications à l’invite de commandes. Les outils de profilage en ligne de commande suivants vous permettent de profiler du code à l’invite de commandes.  
   
 ## <a name="in-this-section"></a>Dans cette section  

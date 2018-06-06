@@ -10,11 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a56c8bd9ac0c3745e8096dc12fbfee730ba9558a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef0b06be65322dc6a15f92b1d808d585960f0331
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746064"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Les outils d’analyse de recommandations de base C++ à l’aide de
 Les instructions de base C++ sont un ensemble portable des instructions, les règles et les meilleures pratiques sur le codage dans C++ créés par les concepteurs et les experts de C++. Visual Studio prend actuellement en charge un sous-ensemble de ces règles dans le cadre de ses outils d’analyse de code C++. Outils d’analyse de l’indication core sont installés par défaut dans Visual Studio 2017 et sont [disponible comme package NuGet pour Visual Studio 2015](#vs2015_corecheck).
@@ -25,11 +26,11 @@ Les instructions de base C++ sont un ensemble portable des instructions, les rè
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Activer les règles C++ Core vérifie dans l’analyse du Code
  Vous pouvez activer l’analyse du code sur votre projet en sélectionnant le **activer l’analyse du Code sur la Build** case à cocher dans la **l’analyse du Code** section de la **Pages de propriétés** boîte de dialogue votre projet.
 
- ![Page de propriétés de paramètres généraux d’analyse de Code](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")
+ ![Page de propriétés de paramètres généraux d’analyse de Code](../code-quality/media/cppcorecheck_codeanalysis_general.png)
 
  Les règles C++ Core vérifie sont des extensions pour les ensembles de règles par défaut qui s’exécutent lors de l’analyse du code est activée. Étant donné que les règles C++ Core vérifie sont en cours de développement, certaines règles sont bien établies et certaines ne sont peut-être pas prêt pour une utilisation sur tout le code, mais peuvent toujours être informatif. Les règles sont divisées en deux groupes : débloqué et expérimentale. Vous pouvez choisir d’exécuter les règles publiées ou expérimentales dans les propriétés de votre projet.
 
- ![Page de propriétés de paramètres d’analyse des Extensions de Code](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")
+ ![Page de propriétés de paramètres d’analyse des Extensions de Code](../code-quality/media/cppcorecheck_codeanalysis_extensions.png)
 
  Pour activer ou désactiver les ensembles de règles C++ Core vérifie, ouvrez le **Pages de propriétés** boîte de dialogue pour votre projet. Sous **propriétés de Configuration**, développez **l’analyse du Code**, **Extensions**. Dans la liste déroulante contrôle ensuite **activer C++ Core vérifie (lancé)** ou **activer C++ Core vérifie (expérimental)**, choisissez **Oui** ou **non**. Choisissez **OK** ou **appliquer** pour enregistrer vos modifications.
 
@@ -228,7 +229,7 @@ Vous devrez définir quelques variables d’environnement et utilisez les option
 
 2.  Dans le **Gestionnaire de Package NuGet** fenêtre, recherchez Microsoft.CppCoreCheck.
 
-     ![Fenêtre du Gestionnaire de Package NuGet montre CppCoreCheck package](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")
+     ![Fenêtre du Gestionnaire de Package NuGet montre CppCoreCheck package](../code-quality/media/cppcorecheck_nuget_window.png)
 
 3.  Sélectionnez le package Microsoft.CppCoreCheck, puis choisissez le **installer** pour ajouter les règles à votre projet.
 

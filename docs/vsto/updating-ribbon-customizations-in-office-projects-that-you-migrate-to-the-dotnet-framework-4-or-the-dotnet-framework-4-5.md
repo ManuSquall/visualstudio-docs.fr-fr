@@ -1,5 +1,5 @@
 ---
-title: Mise à jour des personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5 | Documents Microsoft
+title: Mettre à jour des personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,29 +15,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 98c5dee34fd40506289cf4a9f31488c3acc710ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8da42ad20a42e24ee826a559c6d1d38efb172100
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767635"
 ---
-# <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mise à jour des personnalisations de ruban dans les projets Office qui font l'objet d'une migration vers .NET Framework 4 ou .NET Framework 4.5
+# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mettre à jour des personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
   Si votre projet contient une personnalisation de ruban qui a été créée à l’aide de la **ruban (Concepteur visuel)** d’éléments de projet, vous devez vous les modifications suivantes à votre code de projet si le framework cible est remplacée par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou plus tard.  
   
 -   Modifiez le code de ruban généré.  
   
 -   Modifiez tout code qui instancie des contrôles de ruban au moment de l'exécution, qui gère des événements de ruban, ou qui définit la position d'un composant de ruban par programmation.  
   
-## <a name="updating-the-generated-ribbon-code"></a>Mise à jour du code de ruban généré  
+## <a name="update-the-generated-ribbon-code"></a>Mettre à jour le code de ruban généré  
  Si la version cible de .NET Framework du projet est remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez changer le code généré pour l'élément Ruban en procédant comme suit. Vous devez mettre à jour les fichiers de code en fonction du langage de programmation utilisé et de la façon dont vous avez créé le projet :  
   
 -   Dans les projets Visual Basic, ou dans les projets Visual c# que vous avez créé dans le [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] ou [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] effectuer toutes les étapes dans le fichier de code-behind du ruban (*Votreélémentruban*. Designer.cs ou *Votreélémentruban*. Designer.vb). Pour afficher le fichier code-behind dans les projets Visual Basic, cliquez sur le **afficher tous les fichiers** situé dans **l’Explorateur de solutions**.  
   
 -   Dans les projets Visual c# que vous avez créé dans Visual Studio 2008 puis mis à niveau vers [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], effectuez les deux premières étapes dans le fichier de code du ruban (*Votreélémentruban*.cs ou *Votreélémentruban*.vb), et effectuez les étapes restantes dans le fichier de code-behind du ruban.  
   
-#### <a name="to-change-the-generated-ribbon-code"></a>Pour changer le code de ruban généré  
+### <a name="to-change-the-generated-ribbon-code"></a>Pour changer le code de ruban généré  
   
-1.  Modifiez la déclaration de la classe du ruban afin qu’elle dérive <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> au lieu de Microsoft.Office.Tools.Ribbon.OfficeRibbon.  
+1.  Modifiez la déclaration de la classe Ribbon pour qu'elle dérive de <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> au lieu de `Microsoft.Office.Tools.Ribbon.OfficeRibbon`.  
   
 2.  Modifiez le constructeur de la classe Ribbon, comme indiqué ci-dessous. Si vous avez ajouté votre propre code au constructeur, ne modifiez pas votre code. Dans les projets Visual Basic, modifiez uniquement le constructeur sans paramètre. Ignorez l'autre constructeur.  
   
@@ -99,28 +100,28 @@ ms.lasthandoff: 04/16/2018
     this.button1 = this.Factory.CreateRibbonButton();  
     ```  
   
-     Pour obtenir une liste complète des méthodes d’assistance pour les contrôles de ruban, consultez [instanciation des contrôles de ruban](#ribboncontrols).  
+     Pour obtenir une liste complète des méthodes d’assistance pour les contrôles de ruban, consultez [contrôles de ruban d’instancier](#ribboncontrols).  
   
 4.  Dans les projets Visual C#, modifiez les lignes de code de la méthode `InitializeComponent` qui utilisent un délégué <xref:System.EventHandler%601> pour utiliser un délégué de ruban spécifique à la place.  
   
      Par exemple, supposons que votre fichier contienne la ligne de code suivante qui gère l'événement <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> dans un projet qui cible .NET Framework 3.5.  
   
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
+    <CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
      Dans un projet qui cible [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez utiliser le code suivant à la place.  
   
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
-     Pour obtenir une liste complète des délégués du ruban, consultez [gestion des événements de ruban](#ribbonevents).  
+    <CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
+     Pour obtenir une liste complète des délégués du ruban, consultez [événements de ruban de gérer](#ribbonevents).  
   
-5.  Dans les projets Visual Basic, localisez la classe `ThisRibbonCollection` à la fin du fichier. Modifiez la déclaration de cette classe afin qu’elle n’hérite plus de Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection.  
+5.  Dans les projets Visual Basic, localisez la classe `ThisRibbonCollection` à la fin du fichier. Modifiez la déclaration de cette classe pour qu'elle n'hérite plus de `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.  
   
-##  <a name="ribboncontrols"></a> L’instanciation des contrôles de ruban  
+##  <a name="ribboncontrols"></a> Instancier des contrôles de ruban  
  Vous devez modifier tout code qui instancie dynamiquement des contrôles de ruban. Dans les projets qui ciblent .NET Framework 3.5, les contrôles de ruban sont des classes que vous pouvez instancier directement dans certains scénarios. Dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, ces contrôles sont des interfaces que vous ne pouvez pas instancier directement. Vous devez créer les contrôles à l'aide des méthodes fournies par l'objet <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.  
   
  Il existe deux façons d'accéder à l'objet <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> :  
   
 -   À l’aide de la propriété Factory de la classe du ruban. Utilisez cette approche basée sur le code dans votre classe Ribbon.  
   
--   À l’aide de la méthode Globals.Factory.GetRibbonFactory. Utilisez cette approche basée sur le code hors de votre classe Ribbon. Pour plus d’informations sur la classe Globals, consultez [accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
+-   À l'aide de la méthode `Globals.Factory.GetRibbonFactory`. Utilisez cette approche basée sur le code hors de votre classe Ribbon. Pour plus d’informations sur la classe Globals, consultez [d’accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
  L'exemple de code suivant montre comment créer <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> dans une classe Ribbon, au sein d'un projet qui cible [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure.  
   
@@ -148,7 +149,7 @@ ms.lasthandoff: 04/16/2018
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|  
   
-##  <a name="ribbonevents"></a> Gestion des événements de ruban  
+##  <a name="ribbonevents"></a> Gérer les événements de ruban  
  Vous devez modifier tout code qui gère les événements liés aux contrôles de ruban. Dans les projets qui ciblent .NET Framework 3.5, ces événements sont gérés par le délégué <xref:System.EventHandler%601> générique. Dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, ces événements sont désormais gérés par d'autres délégués.  
   
  Le tableau suivant répertorie les événements de ruban et les délégués qui leur sont associés dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure.  
@@ -159,16 +160,16 @@ ms.lasthandoff: 04/16/2018
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
   
-## <a name="setting-the-position-of-a-ribbon-component-programmatically"></a>Définition de la position d'un composant de ruban par programmation  
- Vous devez modifier tout code qui définit la position des groupes, onglets ou contrôles de ruban. Dans les projets qui ciblent le .NET Framework 3.5, vous pouvez utiliser les méthodes AfterOfficeId et BeforeOfficeId de la classe Microsoft.Office.Tools.Ribbon.RibbonPosition statique pour assigner la propriété Position d’un groupe, un onglet ou un contrôle. Dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez accéder à ces méthodes à l'aide de la propriété <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.RibbonPosition%2A> fournie par l'objet <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.  
+## <a name="set-the-position-of-a-ribbon-component-programmatically"></a>Définir la position d’un composant de ruban par programmation  
+ Vous devez modifier tout code qui définit la position des groupes, onglets ou contrôles de ruban. Dans les projets qui ciblent .NET Framework 3.5, vous pouvez utiliser les méthodes `AfterOfficeId` et `BeforeOfficeId` de la classe `Microsoft.Office.Tools.Ribbon.RibbonPosition` statique pour assigner la propriété `Position` d'un groupe, d'un onglet ou d'un contrôle. Dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez accéder à ces méthodes à l'aide de la propriété <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.RibbonPosition%2A> fournie par l'objet <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.  
   
  Il existe deux façons d'accéder à l'objet <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> :  
   
--   À l’aide de la propriété Factory de la classe du ruban. Utilisez cette approche basée sur le code dans votre classe Ribbon.  
+-   À l'aide de la propriété `Factory` de la classe Ribbon. Utilisez cette approche basée sur le code dans votre classe Ribbon.  
   
--   À l’aide de la méthode Globals.Factory.GetRibbonFactory. Utilisez cette approche basée sur le code hors de votre classe Ribbon. Pour plus d’informations sur la classe Globals, consultez [accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
+-   À l'aide de la méthode `Globals.Factory.GetRibbonFactory`. Utilisez cette approche basée sur le code hors de votre classe Ribbon. Pour plus d’informations sur la classe Globals, consultez [d’accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
- L’exemple de code suivant montre comment définir la propriété Position d’un onglet dans une classe de ruban dans un projet qui cible le .NET Framework 3.5.  
+ L'exemple de code suivant montre comment définir la propriété `Position` d'un onglet dans une classe Ribbon, au sein d'un projet qui cible .NET Framework 3.5.  
   
 ```vb  
 Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")  
@@ -189,7 +190,7 @@ this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Migration de solutions Office vers .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Migrer des solutions Office vers .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Concepteur de ruban](../vsto/ribbon-designer.md)  
   
   

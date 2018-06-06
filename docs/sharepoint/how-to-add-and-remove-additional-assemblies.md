@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cadfffb2dbf977e23a0edb082065125aea4f5940
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddfdc09f27d5c94445064c064772e812779dcf08
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767775"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Comment : ajouter et supprimer des assemblys supplémentaires
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Comment : ajouter et supprimer des assemblys supplémentaires
   Si un package SharePoint dépend des autres assemblys pour des fonctionnalités ou de données, vous pouvez ajouter les assemblys à votre package de solution (.wsp). De cette manière, le serveur SharePoint permet de s’assurer que les assemblys personnalisés sont installés avec un package.  
   
  Vous pouvez également ajouter et modifier les contrôles sécurisés et les fichiers de ressources de classe associés aux assemblys.  
@@ -112,9 +113,8 @@ ms.lasthandoff: 04/16/2018
   
 3.  Choisissez la touche SUPPR.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
  [Création de fonctionnalités SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Guide pratique pour ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
   

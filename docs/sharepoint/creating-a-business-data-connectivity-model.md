@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c6fc0b1169ff906d7cda36eeeb5a74410cf46a9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c80d6f3e76d20e4b5a15af162ea4581b03999e61
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691494"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765188"
 ---
-# <a name="creating-a-business-data-connectivity-model"></a>Création d’un modèle de connectivité de données métiers
+# <a name="create-a-business-data-connectivity-model"></a>Créer un modèle de connectivité de données métiers
   Vous pouvez créer un modèle de connectivité de données métiers (BDC) ou personnaliser un modèle BDC existant à l’aide de Visual Studio. Chaque projet SharePoint peut contenir qu’un seul modèle. Pour plus d’informations, consultez [intégration de données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
 ## <a name="create-a-new-model"></a>Créer un nouveau modèle

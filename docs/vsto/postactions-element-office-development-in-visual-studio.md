@@ -21,7 +21,7 @@ ms.openlocfilehash: 6542344d5e0967504eccbedd4986cd80ef04f40a
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692572"
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions&gt; élément (développement Office dans Visual Studio)

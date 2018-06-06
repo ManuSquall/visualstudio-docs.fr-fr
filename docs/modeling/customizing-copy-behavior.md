@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d9b900e47febb9e75b825fdb662c942fce7188b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6a12bdbb45c5cdfdf0abb8fb738ae87bf67c45c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748372"
 ---
 # <a name="customizing-copy-behavior"></a>Personnalisation du comportement de la commande copier
 Dans un langage spécifique à un domaine (DSL, Domain-Specific Language) créé avec le Kit de développement logiciel (SDK) de visualisation et de modélisation de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez modifier ce qui se produit quand l'utilisateur copie et colle des éléments.
@@ -29,7 +30,7 @@ Dans un langage spécifique à un domaine (DSL, Domain-Specific Language) créé
 
  Cette règle s'applique de manière récursive aux liens et aux éléments copiés.
 
- ![Copiées et collées éléments](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
+ ![Éléments copiés et collés](../modeling/media/dslcopypastedefault.png)
 
  Les liens et les éléments copiés sont sérialisés et stockés dans un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), qui est placé dans le Presse-papiers.
 
@@ -217,7 +218,7 @@ Consultez [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/
 ##  <a name="customizeLinks"></a> Personnalisation du comportement de copie de lien
  Quand l'utilisateur copie un élément, le comportement standard est que tout élément incorporé est également copié. Vous pouvez modifier le comportement de copie standard. Dans la définition DSL, sélectionnez un rôle à un côté d’une relation et dans l’ensemble de la fenêtre Propriétés du **propage la copie** valeur.
 
- ![Propage la propriété de copie du rôle de domaine](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![Propage la propriété de copie du rôle de domaine](../modeling/media/dslpropagatescopy.png)
 
  Il existe trois valeurs :
 
@@ -227,7 +228,7 @@ Consultez [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/
 
 -   Propager la copie au lien et à l'acteur de rôle opposé : le groupe copié inclut une copie de l'élément à l'autre extrémité du lien.
 
- ![Effet de la copie avec PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
+ ![Effet de la copie avec PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
 
  Les modifications que vous apportez affectent à la fois les éléments et l'image copiée.
 
@@ -237,9 +238,9 @@ Consultez [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/
 > [!TIP]
 >  Pour plus d’informations sur la personnalisation du modèle à l’aide du code de programme, consultez [navigation et la mise à jour d’un modèle de Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- ![Diagramme de séquence pour l’opération de copie](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
+ ![Diagramme de séquence de l'opération de copie](../modeling/media/dslcopyseqdiagram.png)
 
- ![Diagramme de séquence de l’opération de collage](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
+ ![Diagramme de séquence de l'opération de collage](../modeling/media/dslpasteseqdiagram.png)
 
 #### <a name="to-define-your-own-elementoperations"></a>Pour définir vos propres ElementOperations
 

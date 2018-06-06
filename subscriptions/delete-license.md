@@ -9,11 +9,12 @@ description: Découvrez comment les administrateurs peuvent supprimer des attrib
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1d96cc46a43e945f4ff59ba02ea6c132385f5908
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: e759733738d35ea71cd8133179ccca1ee1037d22
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34476454"
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>Suppression des attributions dans les abonnements Visual Studio
 
@@ -22,4 +23,4 @@ Quand un abonné n’a plus besoin d’un abonnement Visual Studio, par exemple 
 2.  Pour supprimer le ou les abonnés sélectionnés, cliquez sur **Supprimer**. 
 3.  Quand le message de confirmation de la suppression s’affiche, cliquez sur **OK**. 
 
-![Supprimer des abonnés](_img\delete-license\delete-subscribers.png)
+    <img alt="Delete subscribers" src="_img\delete-license\delete-subscribers.png" style="border: 1px solid #CCCCCC" />

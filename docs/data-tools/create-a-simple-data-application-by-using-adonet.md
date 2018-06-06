@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d0b60bb4e7048e2dc49774ec69d3eea4fc0ce6c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c4e985231f8e74095add3e8a3a3e412814bed0d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745800"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 
@@ -83,7 +84,7 @@ Créer la base de données en suivant ces étapes :
 
  **Écran de navigation**
 
- ![Boîte de dialogue de navigation](../data-tools/media/simpleappnav.png "SimpleAppNav")
+ ![Boîte de dialogue Navigation](../data-tools/media/simpleappnav.png)
 
 |Contrôles du formulaire Navigation|Propriétés|
 |--------------------------------------|----------------|
@@ -93,7 +94,7 @@ Créer la base de données en suivant ces étapes :
 
  **Formulaire NewCustomer**
 
- ![Ajouter un nouveau client et passer une commande](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")
+ ![Ajouter un nouveau client et passer une commande](../data-tools/media/simpleappnewcust.png)
 
 |Contrôles du formulaire NewCustomer|Propriétés|
 |---------------------------------------|----------------|
@@ -108,7 +109,7 @@ Créer la base de données en suivant ces étapes :
 
  **Formulaire FillOrCancel**
 
- ![remplir ou annuler les commandes](../data-tools/media/simpleappcancelfill.png "SimpleAppCancelFill")
+ ![remplir ou annuler les commandes](../data-tools/media/simpleappcancelfill.png)
 
 |Contrôles du formulaire FillOrCancel|Propriétés|
 |----------------------------------------|----------------|

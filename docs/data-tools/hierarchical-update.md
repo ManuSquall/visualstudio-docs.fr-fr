@@ -23,11 +23,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31bee5d824b612ddaeb264fe2f944746cdda68fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 442d6cd60597219c25b41f26ad8c2dc2151248ee
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747467"
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 *Mise à jour hiérarchique* fait référence au processus d’enregistrement des données mises à jour (à partir d’un jeu de données de deux ou plusieurs tables connexes) dans une base de données tout en conservant les règles d’intégrité référentielle. *L’intégrité référentielle* fait référence aux règles de cohérence fournies par les contraintes dans une base de données qui contrôlent le comportement d’insertion, de mise à jour et de suppression des enregistrements connexes. Par exemple, il est de l’intégrité référentielle impose la création d’un enregistrement de client avant d’autoriser les commandes doit être créé pour ce client.  Pour plus d’informations sur les relations dans les jeux de données, consultez [des relations dans les jeux de données](../data-tools/relationships-in-datasets.md)
@@ -39,12 +40,12 @@ ms.lasthandoff: 04/26/2018
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Activer la mise à jour hiérarchique dans un jeu de données
  Par défaut, la mise à jour hiérarchique est activée pour tous les nouveaux jeux de données qui est ajoutés ou créés dans un projet. Activer ou désactiver les mises à jour hiérarchique en définissant le **mise à jour hiérarchique** propriété d’un dataset typé dans le jeu de données **True** ou **False**:
 
- ![Paramètre de mise à jour hiérarchique](../data-tools/media/hierarchical-update-setting.png "paramètre de mise à jour hiérarchique")
+ ![Paramètre de mise à jour hiérarchique](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>Créez une relation entre les tables
  Pour créer une nouvelle relation entre deux tables, dans le Concepteur de Dataset, sélectionnez la barre de titre de chaque table, avec le bouton droit et sélectionnez **ajouter une relation**.
 
- ![Mise à jour hiérarchique Ajouter menu de relation](../data-tools/media/hierarchical-update-add-relation-menu.png "mise à jour hiérarchique Ajouter menu de relation")
+ ![Mise à jour hiérarchique Ajouter menu de relation](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
 ## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Comprendre les contraintes de clé étrangère, les mises à jour en cascade et les suppressions
  Il est important de comprendre comment contraintes de clé étrangère et le comportement en cascade dans la base de données sont créés dans le code du dataset générée.

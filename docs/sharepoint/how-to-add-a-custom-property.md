@@ -22,11 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecc7bba2cd33f0c7f4d78ef8607d078eb7f752a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 85b37d275f2e8c63afff6f301c21794ba2742eaf
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767947"
 ---
 # <a name="how-to-add-a-custom-property"></a>Comment : ajouter une propriété personnalisée
   Vous pouvez ajouter des propriétés personnalisées au modèle à l’aide de la **éditeur de la propriété**. Vous pouvez accéder à ces propriétés dans le code pour récupérer des informations telles que les chaînes de connexion et autres données en cours d’exécution.  
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Dans le **Explorateur BDC**, choisissez le nœud qui représente l’élément de modèle auquel vous souhaitez appliquer une propriété personnalisée.  
   
-2.  Dans la barre de menus, choisissez **vue**, **fenêtre Propriétés**.  
+2.  Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.  
   
 3.  Dans le **propriétés** fenêtre, choisissez le **propriétés personnalisées** propriété, puis choisissez le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Points de suspension NET Mobile concepteur")).  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  Pour le **valeur** champ de la propriété personnalisée, spécifiez une valeur, puis choisissez le **OK** bouton.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
  [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)   

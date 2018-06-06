@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4100066d6c6b86bf319cad3bc123098835807acb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27975cf387c92e5afcc61bd267f383a6bed414a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747389"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Lier des contrôles aux données dans Visual Studio
 Vous pouvez afficher des données pour les utilisateurs de votre application en liant des données à des contrôles. Vous pouvez créer ces contrôles liés aux données en faisant glisser des éléments depuis la **des Sources de données** fenêtre sur une aire de conception ou les contrôles sur une aire dans Visual Studio.
@@ -33,7 +34,7 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
 |Groupe de données|Oui|Oui|Non|
 |Entity Data Model|Oui<sup>1</sup>|Oui|Oui|
-|Classes LINQ to SQL|Ne<sup>2</sup>|Ne<sup>2</sup>|Ne<sup>2</sup>|
+|Classes LINQ to SQL|Non<sup>2</sup>|Non<sup>2</sup>|Non<sup>2</sup>|
 |Services (y compris [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services et les services web)|Oui|Oui|Oui|
 |Object|Oui|Oui|Oui|
 |SharePoint|Oui|Oui|Oui|
@@ -45,7 +46,7 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 ## <a name="data-sources-window"></a>Fenêtre Sources de données
  Sources de données sont disponibles pour votre projet en tant qu’éléments dans le **des Sources de données** fenêtre. Cette fenêtre est visible, ou qu’il est accessible à partir de la **vue** menu, quand une aire de conception du formulaire est la fenêtre active de votre projet. Vous pouvez faire glisser des éléments depuis cette fenêtre pour créer des contrôles liés aux données sous-jacentes, et vous pouvez également configurer les sources de données en cliquant sur.
 
- ![Fenêtre Sources de données](../data-tools/media/raddata-data-sources-window.png "fenêtre Sources de données de raddata")
+ ![Fenêtre Sources de données](../data-tools/media/raddata-data-sources-window.png)
 
  Pour chaque type de données qui s’affiche dans le **des Sources de données** fenêtre, un contrôle par défaut est créé lorsque vous faites glisser l’élément vers le concepteur. Avant de faire glisser un élément à partir de la **des Sources de données** fenêtre, vous pouvez modifier le contrôle qui sera créé. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 

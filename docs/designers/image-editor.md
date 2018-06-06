@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a3fe4cf9591d64465fa7ec44d1653bbfc65ec8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 92d82cfaf2f06018ce93e6c1fce1abd0b63809f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747308"
 ---
 # <a name="image-editor"></a>Éditeur d’images
 
@@ -92,7 +93,7 @@ Les barres d’outils de l’éditeur d’images contiennent des commandes qui v
 
  Voici la barre d’outils **Mode de l’éditeur d’images** :
 
- ![Barre d’outils modale de l’éditeur d’images.](../designers/media/digit-tre-modal-toolbar.png "Digit-TRE-Modal-Toolbar")
+ ![Barre d'outils modale de l'éditeur d'images.](../designers/media/digit-tre-modal-toolbar.png)
 
  Ce tableau décrit les éléments de la barre d’outils **Mode de l’éditeur d’images**, répertoriés dans l’ordre où ils figurent, de gauche à droite.
 
@@ -116,7 +117,7 @@ Les barres d’outils de l’éditeur d’images contiennent des commandes qui v
 
  Voici la barre d’outils **Éditeur d’images**.
 
- ![Barre d’outils Éditeur d’images](../designers/media/digit-tre-toolbar.png "Digit-TRE-Toolbar")
+ ![Barre d'outils Éditeur d'images](../designers/media/digit-tre-toolbar.png)
 
  Le tableau suivant décrit les éléments de la barre d’outils **Éditeur d’images**, répertoriés dans l’ordre où ils figurent, de haut en bas.
 

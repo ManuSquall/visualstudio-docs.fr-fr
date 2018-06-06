@@ -1,18 +1,20 @@
 ---
-title: Résolution des problèmes liés à la couverture du code dans Visual Studio | Microsoft Docs
+title: Résolution des problèmes liés à la couverture du code dans Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 10fc5afdd342f1d1677a92498f27e6a13179aabf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1169d4e482f097ca923cc017964724e5886658d1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751564"
 ---
 # <a name="troubleshoot-code-coverage"></a>Résoudre les problèmes liés à la couverture du code
 
@@ -22,7 +24,7 @@ L'outil d'analyse de couverture du code dans Visual Studio collecte des données
 
 Si vous choisissez une commande **Analyser la couverture du code** dans le menu Test, et que la génération et les tests s’exécutent correctement, une liste de résultats doit s’afficher dans la fenêtre Couverture du code. Vous devrez peut-être développer les éléments pour afficher les détails.
 
-![Résultats de la couverture du code avec coloration](../test/media/codecoverage1.png "CodeCoverage1")
+![Résultats de la couverture du code avec coloration](../test/media/codecoverage1.png)
 
 Pour plus d’informations, consultez [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 

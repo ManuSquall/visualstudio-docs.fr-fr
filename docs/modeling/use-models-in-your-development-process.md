@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 211a2dbed77074139821cd77018169cb4e785a94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 08345fc043de8c01540fb0933cc4296c790ae17c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749893"
 ---
 # <a name="use-models-in-your-development-process"></a>Utiliser des modèles dans votre processus de développement
 
@@ -132,7 +133,7 @@ Différents genres de diagrammes sont utiles pour décrire la conception à diff
 
 |**Catégorie**|**Liens**|
 |------------------|---------------|
-|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN vidéos de procédure : comment créer et utiliser les modèles UML et des schémas (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : UML avec Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [série MSDN Comment faire : outils UML et extensibilité (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
+|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif) [MSDN vidéos de procédure : comment créer et utiliser les modèles UML et des schémas (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif) [Channel 9 : UML avec Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif) [série MSDN Comment faire : outils UML et extensibilité (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Forums**|- [Visual Studio Visualization and Modeling outils](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|[Blog Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Articles et journaux techniques**|[Centre d’architecture MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Guide des outils d’architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|

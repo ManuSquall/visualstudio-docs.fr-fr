@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95d8396cd96741187ae0146d2f727c3433b3ef
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751700"
 ---
 # <a name="graph-view"></a>Vue du graphique
 
@@ -22,7 +23,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
  L'image suivante montre la vue du graphique avec six nœuds globaux sur son aire de conception.
 
- ![Vue graphique du Concepteur de schémas XML](../xml-tools/media/xsddesigner_graphview.gif "XSDDesigner_GraphView")
+ ![Vue Graphique du concepteur de schémas XML](../xml-tools/media/xsddesigner_graphview.gif)
 
 ## <a name="design-surface"></a>Aire de conception
 
@@ -34,7 +35,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
  Si l’aire de conception est vide, l’éditeur XML, le **Explorateur de schémas XML**, et le filigrane sont affichés. Le *filigrane* est une liste de liens vers toutes les vues du concepteur XSD.
 
- ![Concepteur XSD ; Vue graphique](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
+ ![Concepteur XSD ; vue Graphique](../xml-tools/media/xsdgraphviewwatermark.gif)
 
  Si le jeu de schémas comporte des erreurs, le texte suivant est affiché à la fin de la liste : « Utilisez la liste d'erreurs pour afficher et résoudre les erreurs dans le jeu ».
 
@@ -98,7 +99,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
  Les boutons suivants de la barre d'outils XSD sont activés lorsque la vue du graphique est active.
 
- ![Barre d’outils de Concepteur de schémas XML](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
+ ![Barre d'outils du concepteur de schémas XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Option|Description|
 |------------|-----------------|

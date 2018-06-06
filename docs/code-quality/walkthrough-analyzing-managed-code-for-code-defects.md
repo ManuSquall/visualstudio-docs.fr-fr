@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb13e88e07741327088e8d138dfcf8b92a9075a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a353d7a61f9bc1dbb83d37ad419c3d2fbdf656ba
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746557"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procédure pas à pas : Défauts analyse du code pour le code managé
 
@@ -30,7 +31,7 @@ Cette procédure pas à pas vous guide tout au long de l’utilisation de l’an
 
 1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet...**.
 
-1. Dans le **nouveau projet** boîte de dialogue, développez **installé** > **Visual C#**, puis choisissez **de bureau Windows classique**.
+1. Dans le **nouveau projet** boîte de dialogue, développez **installé** > **Visual C#**, puis choisissez **Windows Desktop**.
 
 1. Choisissez le **bibliothèque de classes (.NET Framework)** modèle.
 

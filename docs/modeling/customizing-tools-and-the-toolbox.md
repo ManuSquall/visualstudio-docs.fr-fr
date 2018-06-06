@@ -15,11 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 357101a9430eb8d22aeab39179a0a4f70f0dc1bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f39ddf910f120c30cf8ef55e77d4fe09f645e148
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748525"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personnalisation des outils et de la boîte à outils
 Vous devez définir les éléments de boîte à outils pour les éléments que les utilisateurs sont autorisés à ajouter à leurs modèles. Il existe deux types d'outils : les outils d'élément et les outils de connexion. Dans le concepteur généré, un utilisateur peut sélectionner un outil d'élément pour déplacer des formes vers le diagramme et sélectionner un outil de connexion pour tracer des liens entre les formes. En général, les outils d'élément permettent aux utilisateurs d'ajouter des instances de classes de domaine à leurs modèles et les outils de connexion d'ajouter des instances de relations de domaine.
@@ -199,17 +200,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **Connexion arrivant à un OutPort à partir d’un composant imbriqué**
 
- ![Générateur de connexion](../modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")
+ ![Générateur de connexions](../modeling/media/connectionbuilder_3.png)
 
  Par conséquent, il se peut que vous vouliez spécifier qu'une connexion puisse aller d'un composant imbriqué vers un OutPort. Pour spécifier une telle connexion, vous définissez **accepter de personnalisé utilise** sur la **InPort** type en tant que rôle source et le **OutPort** type en tant que rôle de cible dans le **détails DSL**  fenêtre, comme indiqué dans les illustrations suivantes :
 
  **Lien de se connecter à la Directive dans l’Explorateur de DSL**
 
- ![Image du Générateur de connexion](../modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")
+ ![Image du générateur de connexions](../modeling/media/connectionbuilder_4a.png)
 
  **Lien de se connecter à la Directive dans la fenêtre des détails DSL**
 
- ![](../modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")
+ ![](../modeling/media/connectionbuilder_4b.png)
 
  Vous devez ensuite fournir les méthodes de la classe ConnectionBuilder :
 

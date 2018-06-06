@@ -26,11 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc94838423cea7eeab8cef6357267609394352b
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: fe7db915f2953bf99b9805700e1236d3d79a194a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747624"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
@@ -64,7 +65,7 @@ Vous pouvez aussi créer des modèles de projets et d'éléments personnalisés.
 
 Après avoir créé un nouveau projet, vous pouvez utiliser **l’Explorateur de solutions** pour afficher et gérer le projet et la solution, ainsi que leurs éléments associés. L’illustration suivante montre **l’Explorateur de solutions** avec une solution C# qui contient deux projets.
 
-![Explorateur de solutions](../ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")
+![Explorateur de solutions](../ide/media/vs2015_solution_explorer.png)
 
 ## <a name="see-also"></a>Voir aussi
 

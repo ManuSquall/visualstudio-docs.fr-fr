@@ -22,7 +22,7 @@ ms.openlocfilehash: 47cecda571a6826c2d7e845945c05d0264971134
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693329"
 ---
 # <a name="secure-deployment"></a>Déploiement sécurisé

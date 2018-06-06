@@ -1,5 +1,5 @@
 ---
-title: Créer des rapports de performances de test de charge Visual Studio à l’aide de Microsoft Excel | Microsoft Docs
+title: Créer des rapports de performances de test de charge Visual Studio à l’aide de Microsoft Excel
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,14 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 95be1cd0e6e5ab4d5fd3b487465ba09711f97714
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751531"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Comment : créer des rapports de performances de test de charge à l'aide de Microsoft Excel
 
@@ -38,7 +40,7 @@ Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au 
 
  L’illustration suivante est un exemple de rapport qui affiche une corrélation entre une baisse de vitesse de la transaction (Mettre à jour le panier) et la dégénération du compteur (% processeur). Cela indique un problème potentiel dans le code de l'application, au lieu de la base de données ou du réseau, et présente un bon exemple à diagnostiquer à l'aide du profileur ASP.NET.
 
- ![Problème potentiel dans le code de l’application](../test/media/lt_excel.png "LT_Excel")
+ ![Problème potentiel dans le code de l'application](../test/media/lt_excel.png)
 
  Vous pouvez générer des rapports Excel dans l’analyseur de test de charge, à l’aide du bouton **Créer un rapport Excel** de la barre d’outils, ou à partir d’Excel par le biais de l’option **Rapport de test de charge** sous l’onglet **Test de charge** du ruban Office.
 

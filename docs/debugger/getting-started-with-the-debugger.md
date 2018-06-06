@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c62137422a4cbd7b85b4f7415e9b3fa85c2c0248
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f3d4c27f0aedf879137b3ef7a154fb7dd6f9164
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766257"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Didacticiel : Apprenez à déboguer à l’aide de Visual Studio
 
@@ -39,6 +40,14 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 > * Inspecter des variables dans les info-bulles et des fenêtres de débogage
 > * Examiner la pile des appels
 > * Utilisez l’Assistant Exception
+
+## <a name="prerequisites"></a>Prérequis
+
+* Vous devez disposer de Visual Studio 2017 installé et le. **NET développement Bureau** la charge de travail.
+
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
+
+    Si vous devez installer la charge de travail, mais avez déjà Visual Studio, cliquez sur le **ouvrir Visual Studio Installer** lien dans le volet gauche de la **nouveau projet** boîte de dialogue (sélectionnez **fichier**  >  **Nouveau** > **projet**). Visual Studio Installer est lancé. Choisissez le. **Développement Bureau NET** charge de travail, puis choisissez **modifier**.
 
 ## <a name="start-the-debugger"></a>Démarrez le débogueur !
 
@@ -83,7 +92,7 @@ Pour déboguer, vous devez démarrer votre application avec le débogueur attach
 
     F5 continue l’exécution de l’application pour le point d’arrêt suivant. (Si l’application n’est pas encore en cours d’exécution, appuyez sur F5 démarre le débogueur et s’arrête au premier point d’arrêt.)
 
-    Points d’arrêt sont une fonctionnalité utile lorsque vous savez que la ligne de code ou de la section de code que vous souhaitez examiner en détail.
+    Les points d’arrêt sont une fonctionnalité utile quand vous savez quelle ligne ou section de code vous voulez examiner en détail.
 
 ## <a name="restart-your-app-quickly"></a>Redémarrez votre application rapidement
 
@@ -101,10 +110,10 @@ Essentiellement, nous utilisons ici, des raccourcis clavier, car il s’agit d�
 
      ![Utilisez la touche F11 pour le code pas à pas détaillé](../debugger/media/dbg-tour-f11.png "F11 pas à pas détaillé")
 
-     F11 est la **pas à pas détaillé** commande et avance l’instruction de l’exécution une application à la fois. F11 est une bonne solution pour examiner le flux d’exécution dans le détail la plupart des. (Pour déplacer plus rapidement dans le code, nous vous indiquons d’autres options également.) Par défaut, le débogueur ignore code non-utilisateur (si vous souhaitez plus d’informations, consultez [uniquement mon Code](../debugger/just-my-code.md)).
+     F11 est la commande **pas à pas détaillé** et elle exécute l'application une instruction à la fois. F11 est une bonne solution pour examiner le flux d’exécution en détails. (Pour déplacer plus rapidement dans le code, nous vous indiquons d’autres options également.) Par défaut, le débogueur ignore le code non-utilisateur (si vous souhaitez plus d’informations, consultez [uniquement mon Code](../debugger/just-my-code.md)).
 
      >[!NOTE]
-     > Dans le code managé, vous verrez une boîte de dialogue vous demandant si vous souhaitez être averti lorsque vous effectuez pas automatiquement dans les propriétés et les opérateurs (comportement par défaut). Si vous souhaitez modifier le paramètre de désactiver une version ultérieure, **étape dans les propriétés et les opérateurs** définition dans le **Outils > Options** menu sous **débogage**.
+     > Dans le code managé, vous verrez une boîte de dialogue vous demandant si vous souhaitez être averti quand vous effectuez automatiquement un pas à pas dans les propriétés et les opérateurs (le comportement par défaut). Si vous voulez changer cette option plus tard, désactivez **Pas à pas principal dans les propriétés et les opérateurs** dans le menu **Outils > Options** sous **Débogage**.
 
 2. Appuyez sur F10 (**Déboguer > pas à pas principal**) plusieurs fois jusqu'à ce que le débogueur s’arrête sur la première ligne de code dans le `OnApplicationStartup` Gestionnaire d’événements.
 
@@ -124,7 +133,7 @@ Essentiellement, nous utilisons ici, des raccourcis clavier, car il s’agit d�
 
      ![Utilisez l’étape dans la fonctionnalité spécifique](../debugger/media/dbg-tour-step-into-specific.png "détaillé spécifique")
 
-    Comme mentionné précédemment, par défaut, le débogueur ignore les propriétés gérées et des champs, mais la **détaillé spécifique** commande vous permet de substituer ce comportement. Pour l’instant, nous souhaitons rechercher que se passe-t-il lorsque le `Path.set` s’exécute la méthode setter de propriété. **Détaillé spécifique** obtient nous le `Path.set` code ici.
+    Comme mentionné précédemment, par défaut, le débogueur ignore les propriétés et les champs managés, mais la commande **Pas à pas détaillé spécifique** vous permet de substituer ce comportement. Pour l’instant, nous souhaitons rechercher que se passe-t-il lorsque le `Path.set` s’exécute la méthode setter de propriété. **Détaillé spécifique** obtient nous le `Path.set` code ici.
 
      ![résultat de pas à pas détaillé spécifique](../debugger/media/dbg-tour-step-into-specific-2.png "détaillé spécifique")
 

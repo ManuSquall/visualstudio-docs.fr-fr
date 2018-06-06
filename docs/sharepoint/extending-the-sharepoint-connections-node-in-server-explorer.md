@@ -17,23 +17,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0eabca43f604d92ecab78dccae281a450f7c0400
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 433923234b890564d21915d56a906fe10060e4ae
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766270"
 ---
-# <a name="extending-the-sharepoint-connections-node-in-server-explorer"></a>Extension du nœud Connexions SharePoint dans l'Explorateur de serveurs
-  Dans Visual Studio, vous pouvez vous connecter aux sites SharePoint locaux sur l’ordinateur de développement à l’aide de la **connexions SharePoint** nœud dans le**l’Explorateur de serveurs** fenêtre. Ce nœud affiche de nombreux composants de sites SharePoint locaux dans une arborescence hiérarchique. Par exemple, vous pouvez afficher les listes, les bibliothèques de documents et les types de contenu sur les sites locaux. Pour plus d’informations sur l’utilisation de **l’Explorateur de serveurs** pour vous connecter aux sites SharePoint locaux, consultez [navigation SharePoint connexions à l’aide de l’Explorateur de serveurs](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
+# <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs
+  Dans Visual Studio, vous pouvez vous connecter aux sites SharePoint locaux sur l’ordinateur de développement à l’aide de la **connexions SharePoint** nœud dans le **l’Explorateur de serveurs** fenêtre. Ce nœud affiche de nombreux composants de sites SharePoint locaux dans une arborescence hiérarchique. Par exemple, vous pouvez afficher les listes, les bibliothèques de documents et les types de contenu sur les sites locaux. Pour plus d’informations sur l’utilisation de **l’Explorateur de serveurs** pour vous connecter aux sites SharePoint locaux, consultez [navigation SharePoint connexions à l’aide de l’Explorateur de serveurs](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
   
  Vous pouvez étendre le **connexions SharePoint** nœud en créant des extensions pour les nœuds existants, ou en créant un type de nœud personnalisé et en l’ajoutant à la hiérarchie de nœuds.  
   
-## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>Tâches pour l’extension du nœud Connexions SharePoint  
+## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>Tâches pour l’extension du nœud Connexions SharePoint
  Pour étendre un nœud existant, créez une extension Visual Studio qui implémente le <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interface. Lorsque vous étendez un nœud, vous pouvez ajouter des fonctionnalités, telles que vos propres éléments de menu contextuel ou les propriétés personnalisées. Pour obtenir un exemple, consultez [Comment : étendre un nœud SharePoint dans l'Explorateur de serveurs](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
  Pour créer un type de nœud personnalisé, créez une extension Visual Studio qui implémente le <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interface. Créer un nœud personnalisé si vous souhaitez afficher les composants de sites SharePoint qui ne sont pas affichés dans **l’Explorateur de serveurs** par défaut. Par exemple, **l’Explorateur de serveurs** est ne pas afficher la galerie de composants WebPart d’un site SharePoint par défaut, mais vous pouvez ajouter un nœud personnalisé qui effectue l’opération. Pour plus d’informations, consultez [Comment : ajouter un nœud de SharePoint personnalisé à l’Explorateur de serveurs](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md) et [procédure pas à pas : extension de l’Explorateur de serveurs pour affichage WebPart](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
-## <a name="adding-custom-properties-to-nodes"></a>Ajout de propriétés personnalisées aux nœuds  
+## <a name="add-custom-properties-to-nodes"></a>Ajouter des propriétés personnalisées aux nœuds
  Lorsque vous étendez un nœud ou créez un type de nœud personnalisé, vous pouvez ajouter des propriétés personnalisées au nœud. Les propriétés s’affichent dans le **propriétés** fenêtre lorsque le nœud est sélectionné.  
   
  Il existe deux types de propriétés personnalisées, que vous pouvez ajouter à un nœud :  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Propriétés qui affichent les données en lecture/écriture personnalisée. Pour obtenir un exemple de code qui montre comment effectuer cette opération, consultez [Comment : étendre un nœud SharePoint dans l’Explorateur de serveurs](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
-## <a name="getting-data-for-built-in-nodes"></a>Obtention de données pour les nœuds intégrés  
+## <a name="get-data-for-built-in-nodes"></a>Obtenir des données pour les nœuds intégrés
  Tous les nœuds intégrés fournis par Visual Studio incluent des données relatives au composant SharePoint qu’ils représentent. Par exemple, un nœud qui représente une liste sur le site SharePoint fournit des données sur la liste, tels que le titre et l’URL de la vue par défaut pour la liste.  
   
  Pour accéder à ces données, extraire un objet de données à partir de la <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriété de la <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> objet qui représente le nœud qui vous intéressez. Le type de l’objet de données varie selon le type du nœud.  
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
  Pour plus d’informations sur l’utilisation de la <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriété, consultez [associer des données personnalisées à des Extensions d’outils SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
  [Procédure pas à pas : Extension de l’Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Comment : étendre un nœud SharePoint dans l’Explorateur de serveurs](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [Comment : ajouter un nœud SharePoint personnalisé à l’Explorateur de serveurs](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   

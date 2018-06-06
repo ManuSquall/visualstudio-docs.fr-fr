@@ -1,6 +1,7 @@
 ---
 title: Guide pratique pour modifier le point pivot d’un modèle 3D
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d39d8a9406574f3e8959818051a70660042eab92
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0a2d25029455f3e263013c4d6063ee7453a283b6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747103"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Guide pratique pour modifier le point pivot d’un modèle 3D
 
@@ -40,7 +42,7 @@ Assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont af
 
 Voici un modèle dont un point pivot est modifié :
 
-![Modèle de maison ayant un point pivot modifié](../designers/media/digit-modified-model.png "Digit-Modified-Model")
+![Modèle de maison ayant un point pivot modifié](../designers/media/digit-modified-model.png)
 
 ## <a name="see-also"></a>Voir aussi
 

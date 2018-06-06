@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 355fe0485327c5c92441cd54d42253d022c7bb6e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 0d7f04c482149cbc063a3788dd6be44c643bae6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751791"
 ---
 # <a name="content-model-view"></a>Vue de modèle de contenu
 
@@ -22,7 +23,7 @@ La vue de modèle de contenu fournit une représentation graphique des nœuds de
 
  Dans l’image suivante, le **espace de travail** panneau contient six nœuds de schéma. Le `purchaseOrder` nœud est sélectionné dans le **espace de travail** panneau et est affiché dans l’aire de conception.
 
- ![Vue de modèle de contenu du Concepteur de schémas XML](../xml-tools/media/xsddesigner_contentmodelview.gif "XSDDesigner_ContentModelView")
+ ![Vue de modèle de contenu du concepteur de schémas XML](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>Panneau espace de travail
 
@@ -78,7 +79,7 @@ La vue de modèle de contenu fournit une représentation graphique des nœuds de
 
  Les boutons de la barre d'outils du Concepteur XSD suivants sont activés lorsque la vue de modèle de contenu est active.
 
- ![Barre d’outils de Concepteur de schémas XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")
+ ![Barre d'outils du concepteur de schémas XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |Option|Description|
 |------------|-----------------|

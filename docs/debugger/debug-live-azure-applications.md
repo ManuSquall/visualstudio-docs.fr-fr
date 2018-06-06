@@ -14,24 +14,18 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 415e2ee4da01affd2d34b2bbb1aafb5de697767e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766322"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET Azure en direct à l’aide du débogueur de l’instantané
 
 Le débogueur d’instantané prend un instantané de vos applications de production lors de l’exécution de code qui vous intéresse. Pour indiquer au débogueur de prendre une capture instantanée, vous définissez des points d’ancrage et des points de journalisation dans votre code. Dans le débogueur, vous pouvez voir précisément à quel endroit le code ne s’est pas exécuté correctement, sans que cela impacte le trafic de votre application en production. Snapshot Debugger peut vous aider à résoudre beaucoup plus vite les problèmes rencontrés dans les environnements de production.
 
 Snappoints et logpoints sont similaires aux points d’arrêt, mais contrairement aux points d’arrêt, snappoints ne pas arrêter l’application lorsqu’il est atteint. En règle générale, la capture instantanée à un snappoint prend 10 à 20 millisecondes. 
-
-La fonctionnalité de capture instantanée est disponible pour les applications web suivantes qui s’exécutent dans Azure App Service :
-
-- Applications ASP.NET exécutées sur .NET Framework version 4.6.1 ou ultérieure.
-- Applications ASP.NET Core exécutées sur .NET Core version 2.0 ou ultérieure sur Windows.
-
-En outre, le débogueur de l’instantané est uniquement disponible pour Visual Studio 2017 Enterprise version 15,5 ou une version ultérieure et les plans de Service d’applications de base ou une version ultérieure. 
 
 Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
@@ -40,16 +34,27 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 > * Définir un snappoint et afficher un instantané
 > * Définir un logpoint
 
-## <a name="start-the-snapshot-debugger"></a>Démarrez le débogueur de l’instantané
+## <a name="prerequisites"></a>Prérequis
 
-1. Installer [Visual Studio 2017 Enterprise version 15.5](https://www.visualstudio.com/downloads/) ou version ultérieure. Si vous mettez à jour à partir d’une précédente installation de Visual Studio 2017, exécutez le programme d’installation Visual Studio et vérifiez le composant de débogueur de l’instantané dans la charge de travail de développement ASP.NET et web.
+* Débogueur de l’instantané n’est disponible pour Visual Studio 2017 Enterprise version 15,5 ou une version ultérieure avec le **charge de travail de développement ASP.NET et web**. Pour ASP.NET Core, vous devez également le. **NET l’essentiel du développement** installé la charge de travail.
 
-2. Ouvrez le projet pour le débogage de l’instantané. 
+    S’il n’est pas déjà installé, installez [Visual Studio 2017 Enterprise version 15.5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ou version ultérieure. Si vous mettez à jour à partir d’une précédente installation de Visual Studio 2017, exécutez le programme d’installation Visual Studio et vérifiez le composant de débogueur de l’instantané le **charge de travail de développement ASP.NET et web**.
+
+* Plan du Service d’applications Azure de base ou une version ultérieure.
+
+* La fonctionnalité de capture instantanée est disponible pour les applications web suivantes qui s’exécutent dans Azure App Service :
+
+    * Applications ASP.NET exécutées sur .NET Framework version 4.6.1 ou ultérieure.
+    * Applications ASP.NET Core exécutées sur .NET Core version 2.0 ou ultérieure sur Windows.
+
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Ouvrez votre projet et démarrer le débogueur de l’instantané
+
+1. Ouvrez le projet pour le débogage de l’instantané. 
 
     > [!IMPORTANT] 
     > Débogage de l’instantané, vous devez ouvrir le **même version de code source** qui est publié dans votre Service d’applications Azure. 
 
-3. Dans l’Explorateur de Cloud (**vue > Cloud Explorer**), avec le bouton droit de votre projet est déployé sur le Service d’applications Azure et sélectionnez **attacher le débogueur instantané**.
+1. Dans l’Explorateur de Cloud (**vue > Cloud Explorer**), avec le bouton droit de votre projet est déployé sur le Service d’applications Azure et sélectionnez **attacher le débogueur instantané**.
 
    ![Lancer le débogueur de l’instantané](../debugger/media/snapshot-launch.png)
 

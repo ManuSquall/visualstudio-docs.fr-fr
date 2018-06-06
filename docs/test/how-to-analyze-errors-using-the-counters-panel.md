@@ -1,5 +1,5 @@
 ---
-title: Analyser les erreurs de test de charge à l’aide du volet des compteurs dans Visual Studio | Microsoft Docs
+title: Analyser les erreurs de test de charge à l’aide du volet des compteurs dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,14 @@ ms.assetid: 981b4f1e-505a-4078-a06d-58ae17d996b4
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2705120f5cf0e13e94369140c256bd3c7ae1466b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bc7beb1100b5e1bfe3fd554da53520ffc9888e64
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751882"
 ---
 # <a name="how-to-analyze-errors-using-the-counters-panel"></a>Comment : analyser les erreurs dans le volet Compteurs
 
@@ -21,7 +23,7 @@ Le volet des compteurs est visible dans la vue Graphiques et la vue Tables de l'
 
  Le nœud **Erreurs** dans le volet des compteurs contient toutes les erreurs détectées pendant le test de charge. Le nœud Erreurs contient plusieurs nœuds d'erreur de sous-catégorie qui sont spécifiques à différents types d'erreurs. Par exemple, **Exceptions** et **Erreurs HTTP**.
 
- ![Nœud Erreurs du volet des compteurs](../test/media/ltest_errornode.png "LTest_ErrorNode")
+ ![Nœud d'erreur du panneau Compteur](../test/media/ltest_errornode.png)
 
 ## <a name="to-analyze-errors-in-the-counters-panel"></a>Pour analyser des erreurs dans le volet des compteurs
 

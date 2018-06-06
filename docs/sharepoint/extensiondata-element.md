@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4d49ad106ad70c3213827e1d1168f12c43b3300
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e065c64445710e6ff0a99d3bcf8a27c71425879e
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691689"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765711"
 ---
-# <a name="extensiondata-element"></a>ExtensionData, élément
+# <a name="extensiondata-element"></a>ExtensionData (élément)
   Représente une collection d’éléments de données personnalisés qui sont associés à l’élément de projet SharePoint.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -33,19 +33,19 @@ ms.locfileid: "34691689"
 </ExtensionData>  
 ```  
   
-## <a name="attributes-and-elements"></a>Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
  Aucun.  
   
-### <a name="child-elements"></a>Éléments enfants  
+### <a name="child-elements"></a>Éléments enfants
   
 |Élément|Description|  
 |-------------|-----------------|  
 |[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|Élément facultatif.<br /><br /> Représente un élément de données personnalisé qui est associé à l’élément de projet SharePoint, au format clé/valeur. La clé et la valeur doivent être des chaînes.|  
   
-### <a name="parent-elements"></a>Éléments parents  
+### <a name="parent-elements"></a>Éléments parents
   
 |Élément|Description|  
 |-------------|-----------------|  
@@ -54,7 +54,7 @@ ms.locfileid: "34691689"
 ## <a name="remarks"></a>Notes  
  Lorsque vous associez des données personnalisées à un élément de projet SharePoint à l’aide de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> propriété d’une <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> de l’objet, Visual Studio enregistre les données à la **ExtensionData** élément dans le `.spdata` fichier pour le projet élément. Pour plus d’informations, consultez [l’enregistrement des données dans les Extensions du système de projet SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-## <a name="element-information"></a>Informations sur les éléments  
+## <a name="element-information"></a>Informations sur les éléments
   
 |||  
 |-|-|  
@@ -63,7 +63,7 @@ ms.locfileid: "34691689"
 |**Fichier de validation**|ProjectItemModelSchema.xsd|  
 |**Peut être vide.**|Non|  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
  [Informations de référence sur le schéma d’élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

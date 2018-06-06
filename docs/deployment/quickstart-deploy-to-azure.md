@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: c5c172ff3ec3033b50815efdb0b4ee293853ab1e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f91fd6e8c101b674b745c120978a47adb17c9b91
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765373"
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Publier une application ASP.NET ou ASP.NET Core pour le Service d’applications Azure à l’aide de Visual Studio
 
@@ -26,9 +27,9 @@ Si vous n’avez pas déjà un compte Azure, vous pouvez [Inscrivez-vous ici](ht
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Vous devez disposer de Visual Studio 2017 installé et le **ASP.NET** et **.NET Framework** charge de travail de développement. Pour une application .NET Core, vous devez également le **.NET Core** la charge de travail.
+* Vous devez disposer de Visual Studio 2017 installé et le **ASP.NET et le développement web** la charge de travail et. **Développement de bureau NET** la charge de travail. Pour une application .NET Core, vous devez le. **NET Core** la charge de travail.
 
-    Si vous n’avez pas encore installé Visual Studio, installez-le gratuitement [ici](http://www.visualstudio.com).
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
 
 ## <a name="create-a-new-project"></a>Créer un nouveau projet 
 
@@ -81,4 +82,4 @@ Si vous n’avez pas déjà un compte Azure, vous pouvez [Inscrivez-vous ici](ht
 Dans ce démarrage rapide, vous avez appris à utiliser Visual Studio pour créer un profil de publication pour un déploiement vers Azure. Vous pouvez également configurer une publication de profil en important les paramètres à partir d’Azure App Service de publication.
 
 > [!div class="nextstepaction"]
-> [Importation des paramètres de publication et le déployer vers Azure](tutorial-import-publish-settings-azure.md)
+> [Importer des paramètres de publication et déployer sur Azure](tutorial-import-publish-settings-azure.md)

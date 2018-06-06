@@ -21,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8bc73918a2af82acab1fd465f5f80755cc594ba9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9fab7bbed25d3f308eef02b7f975e71af6fa8183
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691977"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765003"
 ---
-# <a name="creating-application-pages-for-sharepoint"></a>Création de pages d’application pour SharePoint
+# <a name="create-application-pages-for-sharepoint"></a>Créer des pages d’application pour SharePoint
   Un *page application* est une page Web ASP.NET qui est conçue pour une utilisation dans un site SharePoint Web. Pages d’application sont un type spécialisé de page ASP.NET. La principale différence entre une page d’application et une page ASP.NET standard est qu’une page d’application contient du contenu qui est fusionné avec une page maître SharePoint. Une page maître permet des pages d’application pour partager la même apparence et le même comportement que les autres pages sur un site.  
   
  Visual Studio vous permet de concevoir des pages d’application à l’aide d’un concepteur. Le concepteur affiche une zone de contenu pour chaque espace réservé de contenu qui est défini dans une page maître. Vous pouvez concevoir la page d’application en faisant glisser des contrôles pour ces zones de contenu.  
@@ -55,7 +55,7 @@ ms.locfileid: "34691977"
   
 |Fichier|Description|  
 |----------|-----------------|  
-|Fichier de page ASP.NET (.aspx)|Contient le balisage XML qui définit la page.|  
+|Fichier de page ASP.NET (*.aspx*)|Contient le balisage XML qui définit la page.|  
 |Fichier de code de page application|Contient le code-behind de la page d’application. Ajoutez le code qui gère les événements à ce fichier.|  
 |Fichier de code du Concepteur de page application|Contient le code qui est généré par le concepteur. Ne modifiez pas directement ce fichier.|  
   

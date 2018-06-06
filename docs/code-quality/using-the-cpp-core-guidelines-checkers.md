@@ -9,11 +9,12 @@ dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 607b4f2d96e809f9c8b5aedf8362c5d5f54e097d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8b031fc1251ad06fdba154c086696337e552445
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747402"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Les outils d’analyse de recommandations de base C++ à l’aide de
 Les instructions de base C++ sont un ensemble portable des instructions, les règles et les meilleures pratiques sur le codage dans C++ créés par les concepteurs et les experts de C++. Visual Studio prend actuellement en charge un sous-ensemble de ces règles dans le cadre de ses outils d’analyse de code C++. Outils d’analyse de l’indication core sont installés par défaut dans Visual Studio 2017 et sont [disponible comme package NuGet pour Visual Studio 2015](#vs2015_corecheck).
@@ -24,11 +25,11 @@ Les instructions de base C++ sont un ensemble portable des instructions, les rè
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Activer les règles C++ Core vérifie dans l’analyse du Code
  Vous pouvez activer l’analyse du code sur votre projet en sélectionnant le **activer l’analyse du Code sur la Build** case à cocher dans la **l’analyse du Code** section de la **Pages de propriétés** boîte de dialogue votre projet.
 
- ![Page de propriétés de paramètres généraux d’analyse de Code](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")
+ ![Page de propriétés de paramètres généraux d’analyse de Code](../code-quality/media/cppcorecheck_codeanalysis_general.png)
 
  Les règles C++ Core vérifie sont des extensions pour les ensembles de règles par défaut qui s’exécutent lors de l’analyse du code est activée. Étant donné que les règles C++ Core vérifie sont en cours de développement, certaines règles sont bien établies et certaines ne sont peut-être pas prêt pour une utilisation sur tout le code, mais peuvent toujours être informatif. Les règles sont divisées en deux groupes : débloqué et expérimentale. Vous pouvez choisir d’exécuter les règles publiées ou expérimentales dans les propriétés de votre projet.
 
- ![Page de propriétés de paramètres d’analyse des Extensions de Code](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")
+ ![Page de propriétés de paramètres d’analyse des Extensions de Code](../code-quality/media/cppcorecheck_codeanalysis_extensions.png)
 
  Pour activer ou désactiver les ensembles de règles C++ Core vérifie, ouvrez le **Pages de propriétés** boîte de dialogue pour votre projet. Sous **propriétés de Configuration**, développez **l’analyse du Code**, **Extensions**. Dans la liste déroulante contrôle ensuite **activer C++ Core vérifie (lancé)** ou **activer C++ Core vérifie (expérimental)**, choisissez **Oui** ou **non**. Choisissez **OK** ou **appliquer** pour enregistrer vos modifications.
 
@@ -101,7 +102,7 @@ Les rubriques de référence pour la plupart des règles sont sous [Visual Studi
   - **Pointeur règles partage** dans le cadre de [gestion des ressources](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) mise en œuvre des recommandations, nous avons ajouté de nombreuses règles spécifiques aux pointeurs partagées sont transmis à des fonctions ou utilisés localement.
   - **Règles de style** une vérification simple mais importante, qui interdictions d’utilisation de [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Il s’agit de la première étape de l’amélioration de style de codage et utiliser des expressions et des instructions en C++.
 
-  **Visual Studio 2017 version 15,6**:
+  **Visual Studio 2017 version 15.6** :
   - **Les règles arithmétiques** des règles pour détecter l’arithmétique [dépassement de capacité](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [signé en non signé des opérations](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned) et [une manipulation de bits](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
 
 
@@ -241,7 +242,7 @@ Vous devez définir quelques variables d’environnement et utilisez les options
 
 2.  Dans le **Gestionnaire de Package NuGet** fenêtre, recherchez Microsoft.CppCoreCheck.
 
-     ![Fenêtre du Gestionnaire de Package NuGet montre CppCoreCheck package](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")
+     ![Fenêtre du Gestionnaire de Package NuGet montre CppCoreCheck package](../code-quality/media/cppcorecheck_nuget_window.png)
 
 3.  Sélectionnez le package Microsoft.CppCoreCheck, puis choisissez le **installer** pour ajouter les règles à votre projet.
 

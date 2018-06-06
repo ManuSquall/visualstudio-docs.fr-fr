@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c18bb0c42138f861cf48a13777a6ee13c05148
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9208879400846d7acfa2cb89d1c30efaa65631a0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746583"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Comment : créer un nuanceur Phong de base
 
@@ -45,7 +46,7 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 > [!NOTE]
 > Pour mettre en évidence l’effet du nuanceur dans cette illustration, une couleur orange a été spécifiée à l’aide du paramètre **MaterialDiffuse** du nuanceur, et un fini d’aspect métallique a été spécifié à l’aide des paramètres **MaterialSpecular** et **MaterialSpecularPower**. Pour plus d’informations sur les paramètres de matériau, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
- ![Graphique du nuanceur et aperçu de son effet](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")
+ ![Graphique du nuanceur et un aperçu de ses effets](../designers/media/digit-lighting-graph.png)
 
  Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
@@ -56,7 +57,7 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 >
 > La propriété **MaterialSpecularPower** détermine l’intensité des mises en surbrillance spéculaires. Des puissances très spéculaires simulent des mises en surbrillance plus ternes et plus localisées. Des puissances faiblement spéculaires simulent des mises en surbrillance intenses et de grande envergure qui peuvent saturer et masquer la couleur de la surface totale.
 
- ![Éclairage Phong appliqué à un modèle](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")
+ ![Éclairage Phong appliqué à un modèle](../designers/media/digit-lighting-model.png)
 
  Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D, consultez [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

@@ -19,20 +19,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e89a919f6f93dc70f9417a23430c960f03cf92bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d3226785724f6627a962c532cea29393eb5e46e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747588"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Lier des contrôles Windows Forms à des données dans Visual Studio
 Vous pouvez afficher des données pour les utilisateurs de votre application en liant des données à des Windows Forms. Pour créer ces contrôles liés aux données, vous pouvez faire glisser des éléments à partir de la **des Sources de données** fenêtre sur le Concepteur Windows Forms dans Visual Studio.
 
-![Opération de glissement de Source de données](../data-tools/media/raddata-data-source-drag-operation.png "opération de glissement de raddata Source de données")
+![Opération de glissement de Source de données](../data-tools/media/raddata-data-source-drag-operation.png)
 
 Avant de faire glisser des éléments, vous pouvez définir le type de contrôle que vous voulez lier. Des valeurs différentes s’affichent selon que vous choisissez la table elle-même, ou une colonne individuelle.  Vous pouvez également définir des valeurs personnalisées. Pour une table, « Détails » signifie que chaque colonne est liée à une commande distincte.
 
-![Lier la source de données pour le DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata source de données liée au DataGridView")
+![Lier la source de données pour le DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png)
 
 ## <a name="bindingsource-and-bindingnavigator-controls"></a>BindingSource et contrôles de BindingNavigator
 Le composant <xref:System.Windows.Forms.BindingSource> remplit deux fonctions. Tout d’abord, il fournit une couche d’abstraction lors de la liaison des contrôles aux données. Contrôles du formulaire sont liés à la <xref:System.Windows.Forms.BindingSource> composant au lieu de directement à une source de données. En second lieu, il peut gérer une collection d’objets. Ajout d’un type à la <xref:System.Windows.Forms.BindingSource> crée une liste de ce type.
@@ -50,11 +51,11 @@ Le [contrôle BindingNavigator](/dotnet/framework/winforms/controls/bindingnavig
 ## <a name="bind-to-data-in-a-datagridview-control"></a>Lier à des données dans un contrôle DataGridView
 Pour un [contrôle DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), la table entière est liée à ce contrôle unique. Lorsque vous faites glisser un contrôle DataGridView à l’écran, un outil de la frange pour parcourir les enregistrements (<xref:System.Windows.Forms.BindingNavigator>) s’affiche également. A [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant. Dans l’illustration suivante, un TableAdapterManager est également ajouté, car la table Customers a une relation à la table Orders. Ces variables sont déclarées dans le code généré automatiquement en tant que membres privés de la classe de formulaire. Le code généré automatiquement pour remplir le contrôle DataGridView se trouve dans le Gestionnaire d’événements form_load. Le code de l’enregistrement des données pour mettre à jour la base de données se trouve dans le Gestionnaire d’événements de sauvegarde pour le BindingNavigator. Vous pouvez déplacer ou modifier ce code si nécessaire.
 
-![GridView avec BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView avec BindingNavigator")
+![GridView avec BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 
 Vous pouvez personnaliser le comportement du DataGridView et BindingNavigator en cliquant sur la balise active dans le coin supérieur droit de chaque :
 
-![DataGridView et liaison le navigateur des balises actives](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png "raddata DataGridView et liaison le navigateur des balises actives")
+![DataGridView et liaison le navigateur des balises actives](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png)
 
 Si les contrôles de votre application a besoin n’est pas disponible dans le **des Sources de données** fenêtre, vous pouvez ajouter des contrôles. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
@@ -63,14 +64,14 @@ Vous pouvez également faire glisser des éléments à partir de la **des Source
 ## <a name="bind-to-data-in-individual-controls"></a>Lier à des données dans des contrôles individuels
 Lorsque vous liez une source de données à « Détails », chaque colonne dans le jeu de données est liée à une commande distincte.
 
-![Lier la source de données vers les détails](../data-tools/media/raddata-bind-data-source-to-details.png "raddata source de données liée aux détails")
+![Lier la source de données vers les détails](../data-tools/media/raddata-bind-data-source-to-details.png)
 
 > [!IMPORTANT]
 > Notez que dans l’illustration précédente, vous faites glisser à partir de la propriété de commandes de la table Customers, et non à partir de la table Orders. En le liant à la propriété Customer.Orders, les commandes de navigation dans le contrôle DataGridView sont répercutées immédiatement dans les contrôles de détails. Si vous avez fait glisser à partir de la table Orders, les contrôles sont toujours liés au jeu de données, mais pas qu’ils ne sont pas synchronisés avec le contrôle DataGridView.
 
 L’illustration suivante montre la valeur par défaut des contrôles liés aux données qui sont ajoutés au formulaire une fois la propriété de commandes dans la table Customers est liée à « Détails » dans la **des Sources de données** fenêtre.
 
-![Table Orders est lié aux détails](../data-tools/media/raddata-orders-table-bound-to-details.png "raddata commandes tableau lié détails")
+![Table de commandes liée aux détails](../data-tools/media/raddata-orders-table-bound-to-details.png)
 
 Notez également que chaque contrôle a une balise active. Cette balise permet les personnalisations qui s’appliquent à ce contrôle uniquement.
 

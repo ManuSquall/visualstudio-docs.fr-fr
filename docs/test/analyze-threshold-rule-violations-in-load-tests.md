@@ -1,5 +1,5 @@
 ---
-title: Analyse des violations de règles de seuil dans les tests de charge dans l’analyseur de test de charge dans Visual Studio | Microsoft Docs
+title: Analyse des violations de règles de seuil dans les tests de charge dans l’analyseur de test de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,14 @@ ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 42463515a8c3da9661f22d1a39c8dd8346c63aea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750907"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analyse des violations de règles de seuil dans les tests de charge dans l'Analyseur de test de charge
 
@@ -52,15 +54,15 @@ Si des violations se produisent, un lien hypertexte **Violations de seuil** appa
 
  L'icône sera l'un des suivants :
 
- ![Aucune violation de seuil](../test/media/icon_ltest_1.gif "Icon_LTest_1") Aucune violation de seuil.
+ ![Aucune violation de seuil](../test/media/icon_ltest_1.gif) Aucune violation de seuil.
 
- ![Une violation de seuil critique sur le dernier intervalle](../test/media/icon_ltest_2.gif "Icon_LTest_2") Une violation de seuil critique s’est produite sur le dernier intervalle.
+ ![Une violation de seuil critique dans le dernier intervalle](../test/media/icon_ltest_2.gif) Une violation de seuil critique s'est produite au cours du dernier intervalle.
 
- ![Une violation de seuil critique sur un dernier précédent](../test/media/icon_ltest_3.gif "Icon_LTest_3") Une violation de seuil critique s’est produite sur un intervalle précédent.
+ ![Une violation de seuil critique dans un intervalle précédant](../test/media/icon_ltest_3.gif) Une violation de seuil critique s'est produite au cours d'un intervalle précédent.
 
- ![Une violation de seuil d’avertissement sur le dernier intervalle](../test/media/icon_ltest_4.gif "Icon_LTest_4") Une violation de seuil d’avertissement s’est produite sur le dernier intervalle.
+ ![Une violation de seuil d'avertissement dans le dernier intervalle](../test/media/icon_ltest_4.gif) Une violation de seuil d'avertissement s'est produite au cours du dernier intervalle.
 
- ![Une violation de seuil d’avertissement sur un dernier précédent](../test/media/icon_ltest_5.gif "Icon_LTest_5") Une violation de seuil d’avertissement s’est produite sur un intervalle précédent.
+ ![Une violation de seuil d'avertissement dans un intervalle précédant](../test/media/icon_ltest_5.gif) Une violation de seuil d'avertissement s'est produite au cours d'un intervalle précédent.
 
  Les violations de seuils peuvent également être indiquées sur le graphique (facultatif). L'icône de seuil apparaît sur le graphique à côté du point de données où la violation de seuil s'est produite.
 

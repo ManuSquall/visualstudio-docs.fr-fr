@@ -1,7 +1,7 @@
 ---
-title: Identification et personnalisation des raccourcis clavier dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Identifier et personnaliser les raccourcis clavier dans Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -19,13 +19,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b277c587fc92f9ce6c38815e2b07c74fa6ea3bc3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747227"
 ---
-# <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identification et personnalisation des raccourcis clavier dans Visual Studio
+# <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifier et personnaliser les raccourcis clavier dans Visual Studio
 
 Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, personnaliser ces raccourcis, et les exporter afin que d'autres utilisateurs puissent les utiliser. De nombreux raccourcis appellent toujours les mêmes commandes, mais le comportement d'un raccourci peut varier selon les conditions suivantes :
 
@@ -33,22 +34,22 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
 
 - Si vous avez personnalisé ou non le comportement du raccourci.
 
-- Le contexte dans lequel vous êtes au moment de choisir le raccourci. Par exemple, le raccourci F2 appelle la commande Edit.EditCell si vous utilisez le concepteur de paramètres et la commande File.Rename si vous utilisez Team Explorer.
+- Le contexte dans lequel vous êtes au moment de choisir le raccourci. Par exemple, le raccourci **F2** appelle la commande `Edit.EditCell` si vous utilisez le **concepteur de paramètres** et la commande `File.Rename` si vous utilisez **Team Explorer**.
 
-Indépendamment des paramètres, de la personnalisation et du contexte, vous pouvez toujours rechercher et changer un raccourci clavier dans la boîte de dialogue **Options**. Vous pouvez aussi rechercher les raccourcis clavier par défaut pour plusieurs douzaines de commandes dans [Raccourcis clavier par défaut pour les commandes fréquemment utilisées](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), et obtenir la liste complète des raccourcis par défaut (selon les Paramètres de développement généraux) dans [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Indépendamment des paramètres, de la personnalisation et du contexte, vous pouvez toujours rechercher et changer un raccourci clavier dans la boîte de dialogue **Options**. Vous pouvez aussi rechercher les raccourcis clavier par défaut pour plusieurs douzaines de commandes dans [Raccourcis clavier par défaut pour les commandes fréquemment utilisées](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), et obtenir la liste complète des raccourcis par défaut (selon les **Paramètres de développement généraux**) dans [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 Si un raccourci est affecté à une commande du contexte global et à aucun autre contexte, ce raccourci appelle toujours cette commande. Mais un raccourci peut être affecté à une commande du contexte global et à une commande différente dans un contexte spécifique. Si vous utilisez un raccourci lorsque vous êtes dans le contexte spécifique, ce raccourci appelle la commande pour ce contexte spécifique, et non le contexte global.
 
 > [!NOTE]
 > Les paramètres et l'édition de Visual Studio peuvent modifier le nom et l'emplacement des commandes de menu et les options qui apparaissent dans les boîtes de dialogue. Cette rubrique est basée sur les **Paramètres de développement généraux**.
 
-## <a name="identifying-a-keyboard-shortcut"></a>Identification d'un raccourci clavier
+## <a name="identify-a-keyboard-shortcut"></a>Identifier un raccourci clavier
 
-1. Dans la barre de menus, sélectionnez **Outils**, **Options**.
+1. Dans la barre de menus, choisissez **Outils** > **Options**.
 
 2. Développez **Environnement**, puis choisissez **Clavier**.
 
-   ![Afficher les raccourcis clavier dans la boîte de dialogue Options](../ide/media/optionskeyboard.png "OptionsKeyboard")
+   ![Afficher les raccourcis clavier dans la boîte de dialogue Options](../ide/media/optionskeyboard.png)
 
 3. Dans la zone **Afficher les commandes contenant**, entrez tout ou partie du nom de la commande sans espaces.
 
@@ -56,15 +57,15 @@ Si un raccourci est affecté à une commande du contexte global et à aucun autr
 
 4. Dans la liste, choisissez la commande correcte.
 
-    Par exemple, vous pouvez choisir **View.SolutionExplorer**.
+    Par exemple, vous pouvez choisir `View.SolutionExplorer`.
 
 5. Si la commande a un raccourci clavier, elle apparaît dans la liste **Raccourcis de la commande sélectionnée**.
 
-   ![Afficher le raccourci d’une commande spécifiée](../ide/media/viewshortcut.png "ViewShortcut")
+   ![Afficher le raccourci d'une commande spécifiée](../ide/media/viewshortcut.png)
 
-## <a name="customizing-a-keyboard-shortcut"></a>Personnalisation d'un raccourci clavier
+## <a name="customize-a-keyboard-shortcut"></a>Personnaliser un raccourci clavier
 
-1. Dans la barre de menus, sélectionnez **Outils**, **Options**.
+1. Dans la barre de menus, choisissez **Outils** > **Options**.
 
 2. Développez le dossier **Environnement**, puis choisissez **Clavier**.
 
@@ -72,34 +73,34 @@ Si un raccourci est affecté à une commande du contexte global et à aucun autr
 
 4. Dans la liste, choisissez la commande à laquelle vous souhaitez associer un raccourci clavier.
 
-Dans la liste **Utiliser un nouveau raccourci dans**, choisissez la zone de fonctionnalités dans laquelle vous voulez utiliser le raccourci.
+    Dans la liste **Utiliser un nouveau raccourci dans**, choisissez la zone de fonctionnalités dans laquelle vous voulez utiliser le raccourci.
 
-    For example, you can choose **Global** if you want the shortcut to work in all contexts. You can use any shortcut that isn't mapped (as Global) in another editor. Otherwise, the editor overrides the shortcut.
+    Par exemple, choisissez **Global** si vous voulez que le raccourci fonctionne dans tous les contextes. Vous pouvez utiliser n'importe quel raccourci qui n'est pas mappé (comme Global) dans un autre éditeur. Sinon, l'éditeur substitue le raccourci.
 
     > [!NOTE]
-    > You can't assign the following keys as part of a keyboard shortcut in **Global**: Print Scrn/Sys Rq, Scroll Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, the Windows logo key, the Application key, any of the Arrow keys, or Enter; Num Lock, Delete, or Clear on the numeric keypad; the Ctrl+Alt+Delete key combination.
+    > Vous ne pouvez pas affecter les touches suivantes dans le cadre d’un raccourci clavier dans **Global** : Impr. écran/SYSTÈME, Arrêt défil., Pause/Attn, Tab, Verr. maj, Inser, Début, Fin, Pge préc., Pge suiv., touche du logo Windows, la touche Application, touches de direction ou touche Entrée ; Verr. num., Suppr ou Effacer sur le pavé numérique ; la combinaison de touches Ctrl+Alt+Suppr.
 
 6. Dans la zone **Appuyer sur les touches de raccourci**, entrez le raccourci à utiliser.
 
     > [!NOTE]
-    > Vous pouvez créer un raccourci qui associe une lettre avec la touche Alt, la touche Ctrl, ou les deux. Vous pouvez également créer un raccourci qui associe la touche Maj et une lettre avec la touche Alt, la touche Ctrl, ou les deux.
+    > Vous pouvez créer un raccourci qui associe une lettre avec la touche **Alt**, la touche **Ctrl**, ou les deux. Vous pouvez également créer un raccourci qui associe la touche **Maj** et une lettre avec la touche **Alt**, la touche **Ctrl**, ou les deux.
 
-     Si un raccourci est déjà affecté à une autre commande, il s’affiche dans la zone **Raccourci actuellement utilisé par**. Dans ce cas, choisissez la touche Retour arrière pour supprimer ce raccourci avant d'en essayer un autre.
+     Si un raccourci est déjà affecté à une autre commande, il s’affiche dans la zone **Raccourci actuellement utilisé par**. Dans ce cas, choisissez la touche **Retour arrière** pour supprimer ce raccourci avant d’en essayer un autre.
 
-    ![Attribuer un autre raccourci à une commande](../ide/media/reassignshortcut.png "ReassignShortcut")
+    ![Attribuer un autre raccourci à une commande](../ide/media/reassignshortcut.png)
 
 7. Choisissez le bouton **Assigner**.
 
     > [!NOTE]
     > Si vous spécifiez un raccourci différent pour une commande, choisissez le bouton **Assigner**, puis choisissez le bouton **Annuler**. La boîte de dialogue se ferme, mais le changement n’est pas restauré.
 
-## <a name="sharing-custom-keyboard-shortcuts"></a>Partage des raccourcis clavier personnalisés
+## <a name="share-custom-keyboard-shortcuts"></a>Partager les raccourcis clavier personnalisés
 
 Vous pouvez partager les raccourcis clavier personnalisés en les exportant vers un fichier, puis en donnant le fichier à d'autres utilisateurs afin de pouvoir importer les données.
 
 ### <a name="to-export-only-keyboard-shortcuts"></a>Pour exporter uniquement les raccourcis clavier
 
-1. Dans la barre de menus, choisissez **Outils**, **Importation et exportation de paramètres**.
+1. Dans la barre de menus, choisissez **Outils** > **Importation et exportation de paramètres**.
 
 2. Choisissez **Exporter les paramètres d’environnement sélectionnés**, puis choisissez le bouton **Suivant**.
 
@@ -107,15 +108,15 @@ Vous pouvez partager les raccourcis clavier personnalisés en les exportant vers
 
 4. Cochez la case **Clavier**, puis choisissez le bouton **Suivant**.
 
-    ![Exporter uniquement les raccourcis clavier personnalisés](../ide/media/exportshortcuts.png "ExportShortcuts")
+    ![Exporter uniquement les raccourcis clavier personnalisés](../ide/media/exportshortcuts.png)
 
 5. Dans les zones **Comment voulez-vous appeler votre fichier des paramètres ?** et **Stocker mon fichier des paramètres dans ce répertoire**, laissez les valeurs par défaut ou spécifiez des valeurs différentes, puis choisissez le bouton **Terminer**.
 
-    Par défaut, les raccourcis sont enregistrés dans un fichier du dossier %USERPROFILE%\Documents\Visual Studio 2017\Settings. Le nom du fichier reflète la date à laquelle vous avez exporté les paramètres, et l’extension est .vssettings.
+    Par défaut, les raccourcis sont enregistrés dans un fichier du dossier *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. Le nom du fichier reflète la date à laquelle vous avez exporté les paramètres, et l’extension est *.vssettings*.
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>Pour importer uniquement les raccourcis clavier
 
-1. Dans la barre de menus, choisissez **Outils**, **Importation et exportation de paramètres**.
+1. Dans la barre de menus, choisissez **Outils** > **Importation et exportation de paramètres**.
 
 2. Choisissez la case d’option **Importer les paramètres d’environnement sélectionnés**, puis le bouton **Suivant**.
 
@@ -129,8 +130,8 @@ Vous pouvez partager les raccourcis clavier personnalisés en les exportant vers
 
 7. Cochez la case **Clavier**, puis choisissez le bouton **Terminer**.
 
-    ![Importer uniquement les raccourcis clavier personnalisés](../ide/media/importshortcuts.png "ImportShortcuts")
+    ![Importer uniquement les raccourcis clavier personnalisés](../ide/media/importshortcuts.png)
 
 ## <a name="see-also"></a>Voir aussi
 
-[Fonctionnalités d’accessibilité de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
+- [Fonctionnalités d’accessibilité de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

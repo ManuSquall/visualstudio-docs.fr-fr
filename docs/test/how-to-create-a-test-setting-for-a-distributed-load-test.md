@@ -1,5 +1,5 @@
 ---
-title: Créer un paramètre de test pour un test de charge distribué dans Visual Studio | Microsoft Docs
+title: Créer un paramètre de test pour un test de charge distribué dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,14 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30b9cf45b60b108e51cc1cbe5defd5e8d8cac0e4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29517fcf0f788150db43988fdacf54b3b8b5800c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751817"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Comment : créer un paramètre de test pour un test de charge distribué
 
@@ -73,7 +75,7 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
 
      La page **Rôles** s’affiche.
 
-     ![Rôle de paramètre de test](../test/media/load_testtestrole.png "Load_TestTestRole")
+     ![Rôle de paramètres de test](../test/media/load_testtestrole.png)
 
 10. Pour exécuter vos tests à distance, ou pour exécuter vos tests à distance et collecter des données à distance, utilisez la liste déroulante **Méthode d’exécution des tests** et sélectionnez **Exécution distante**.
 
@@ -107,7 +109,7 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
 
      La page **Données et diagnostics** s’affiche.
 
-     ![Données de paramètres de test et diagnostics](../test/media/load_testtest.png "Load_TestTest")
+     ![Données de paramètres de test et diagnostics](../test/media/load_testtest.png)
 
 18. Dans la page **Données et diagnostics**, vous définissez le rôle en sélectionnant les *adaptateurs de données de diagnostic* que le rôle utilisera pour collecter des données. Ainsi, si un ou plusieurs adaptateurs de données de diagnostic sont activés pour le rôle, le contrôleur de test choisira un ordinateur agent de test disponible pour collecter des données pour les adaptateurs de données de diagnostic spécifiés, selon les attributs définis pour le rôle. Pour sélectionner les données et les adaptateurs de données de diagnostic que vous voulez collecter pour chaque rôle, choisissez le rôle. Pour chaque rôle, sélectionnez les adaptateurs de données de diagnostic en fonction des besoins liés aux tests. Pour configurer chaque adaptateur de données de diagnostic sélectionné pour chaque rôle, choisissez **Configurer**.
 

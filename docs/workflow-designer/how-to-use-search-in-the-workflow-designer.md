@@ -10,11 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4b5dfdd4b4d05969406f93801bcf87880949e41a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3b5863e6273e96d7e0047f89cd16a69358c49cc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751661"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Procédure : utiliser la fonction de recherche dans le Concepteur de flux de travail
 
@@ -40,7 +41,7 @@ Recherche rapide identifie les éléments suivants dans le concepteur :
 
 3.  Le terme de recherche se trouve dans le workflow actif. La capture d'écran suivante affiche le nom complet de l'activité qui se trouve dans le concepteur.
 
-     ![Résultat de la recherche dans le Concepteur de flux de travail](../workflow-designer/media/designersearch.png "DesignerSearch")
+     ![Résultats de la recherche dans le concepteur de flux de travail](../workflow-designer/media/designersearch.png)
 
 ## <a name="find-in-files"></a>Rechercher dans les fichiers
 

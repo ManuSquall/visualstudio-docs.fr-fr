@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 13f06279857897ba1562c157a7ffa1c76dd3c6c8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 020bdb53a62d49eeaf3431c7cca45198c9a2266d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751778"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Utilisation d'émulateurs pour isoler des tests unitaires pour des applications Sharepoint 2010
 Le package Microsoft.SharePoint.Emulators fournit un jeu de bibliothèques qui vous aide à créer des tests unitaires isolés pour les applications Microsoft SharePoint 2010. Les émulateurs utilisent des [shims](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) du framework d’isolation [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) pour créer des objets en mémoire légers qui imitent les objets et les méthodes les plus courants de l’API SharePoint. Quand une méthode SharePoint n'est pas émulée, ou que vous voulez modifier le comportement par défaut d'un émulateur, vous pouvez créer des shims Fakes pour fournir les résultats souhaités.
@@ -33,7 +34,7 @@ Le package Microsoft.SharePoint.Emulators fournit un jeu de bibliothèques qui v
 ##  <a name="BKMK_The_AppointmentsWebPart_example"></a> Exemple d’AppointmentsWebPart
  AppointmentsWebPart vous permet d'afficher et de gérer une liste SharePoint de vos rendez-vous.
 
- ![Composant WebPart Rendez-vous](../test/media/ut_emulators_appointmentswebpart.png "UT_EMULATORS_AppointmentsWebPart")
+ ![Composant WebPart Rendez-vous](../test/media/ut_emulators_appointmentswebpart.png)
 
  Nous testerons deux méthodes du composant WebPart dans cet exemple :
 
@@ -118,7 +119,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
 3.  Recherchez la catégorie **En ligne** pour `Microsoft.SharePoint.Emulators`, puis choisissez **installer**.
 
- ![Package NuGet des émulateurs Microsoft SharePoint](../test/media/ut_emulators_nuget.png "UT_EMULATORS_Nuget")
+ ![Package NuGet des émulateurs Sharepoint](../test/media/ut_emulators_nuget.png)
 
 ###  <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> Exécution d’une méthode de test avec l’émulation
  L'installation du package ajoute des références aux bibliothèques requises à vos projets. Pour rendre les émulateurs faciles à utiliser dans une classe de test existante, ajoutez les espaces de noms `Microsoft.SharePoint.Emulators` et `Microsoft.QualityTools.Testing.Emulators`.
@@ -155,7 +156,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
  Quand la méthode de test est exécutée, le runtime de l'émulateur appelle Microsoft Fakes pour injecter dynamiquement du code dans les méthodes SharePoint afin de détourner les appels à ces méthodes vers les délégués déclarés dans Microsoft.SharePoint.Fakes.dll. Microsoft.SharePoint.Emulators.dll implémente les délégués des méthodes émulées, en reproduisant fidèlement le comportement SharePoint réel. Quand la méthode de test ou le composant testé appelle une méthode SharePoint, le comportement qui en résulte est celui de l'émulation.
 
- ![Flux d’exécution de l’émulateur](../test/media/ut_emulators_flowchart.png "UT_EMULATORS_FlowChart")
+ ![Émulateur, flux d’exécution](../test/media/ut_emulators_flowchart.png)
 
 ##  <a name="BKMK_Creating_dual_use_classes_and_methods"></a> Création de classes et de méthodes à double utilisation
  Pour définir des méthodes qui peuvent être utilisées pour les deux tests d'intégration sur la véritable API SharePoint et les tests unitaires isolés qui utilisent des émulateurs, utilisez le constructeur surchargé `SharePointEmulationScope(EmulationMode)` pour encapsuler votre code de méthode de test. Les deux valeurs de l'enum `EmulationMode` spécifient si la portée utilise des émulateurs (`EmulationMode.Enabled`) ou l'API SharePoint (`EmulationMode.Passthrough`).
@@ -266,11 +267,11 @@ namspace MySPAppTests
 
 1.  Si vous souhaitez effectuer un shim sur une classe SharePoint qui n'est pas émulée, modifiez le fichier Microsoft.SharePoint.fakes et ajoutez la classe à la liste des classes ayant fait l'objet d'un shim. Consultez la section [Configuration de la génération du code des stubs et shims](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs) de [Génération et compilation de code et conventions d’affectation de noms dans Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md).
 
-     ![Dossier Fakes dans l’Explorateur de solutions](../test/media/ut_emulators_fakesfilefolder.png "UT_EMULATORS_FakesFileFolder")
+     ![Dossier Fakes dans l’Explorateur de solutions](../test/media/ut_emulators_fakesfilefolder.png)
 
 2.  Régénérez le projet de test au moins une fois après avoir installé le package d'émulateurs Microsoft SharePoint et si vous avez modifié le fichier Microsoft.SharePoint.Fakes. La génération du projet crée et remplit un dossier **FakesAssembly** dans votre dossier racine de projet sur disque.
 
-     ![Dossier FakesAssembly](../test/media/ut_emulators_fakesassemblyfolder.png "UT_EMULATORS_FakesAssemblyFolder")
+     ![Dossier FakesAssembly](../test/media/ut_emulators_fakesassemblyfolder.png)
 
 3.  Ajoutez une référence à l’assembly **Microsoft.SharePoint.14.0.0.0.Fakes.dll** situé dans le dossier **FakesAssembly**.
 

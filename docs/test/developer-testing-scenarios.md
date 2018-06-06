@@ -1,6 +1,7 @@
 ---
-title: Outils de test pour les développeurs dans Visual Studio | Microsoft Docs
+title: Outils de test pour les développeurs dans Visual Studio
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0eb2fb58e984f5c3de172590c48a603d6ddac21b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89d09a8b01dc4179f3b9de4cbdbf1905846f7002
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691857"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Outils de test pour les développeurs, scénarios et fonctions
 
@@ -46,8 +48,7 @@ Que vous choisissiez les meilleurs tests codés de l’interface utilisateur ou 
 
 * [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](use-ui-automation-to-test-your-code.md)
 * [Bien démarrer avec la création, l’édition et la gestion d’un test codé de l’interface utilisateur](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Test des applications UWP avec des tests codés de l’interface utilisateur](test-windows-store-8-1-apps-with-coded-ui-tests.md)
-* [Tester les applications Windows Phone avec des tests codés de l’interface utilisateur](test-windows-phone-8-1-apps-with-coded-ui-tests.md)
+* [Test des applications UWP avec des tests codés de l’interface utilisateur](test-uwp-app-with-coded-ui-test.md)
 * [Tester les applications SharePoint avec des tests codés de l’interface utilisateur](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introduction aux tests codés de l’interface utilisateur avec Visual Studio Enterprise (laboratoire)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 

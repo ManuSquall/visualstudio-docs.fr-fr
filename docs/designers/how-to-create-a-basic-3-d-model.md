@@ -1,6 +1,7 @@
 ---
 title: Guide pratique pour créer un modèle 3D de base
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb448037b5baf8058860df615cd28e8cc4e26829
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6627bac92221d66bd2cc1ab32efe10d0588c3b7e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745683"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Guide pratique pour créer un modèle 3D de base
 
@@ -34,7 +36,7 @@ Cet article montre comment utiliser l’éditeur de modèle pour créer un modè
 
  Lorsque vous avez terminé, le modèle doit se présenter comme suit :
 
- ![Modèle terminé de la maison simplifiée](../designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")
+ ![Modèle terminé de la maison simplifiée](../designers/media/gfx_model_demo_house_final.png)
 
  Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
 
@@ -48,27 +50,27 @@ Cet article montre comment utiliser l’éditeur de modèle pour créer un modè
 
 4.  Subdivisez le haut du cube. En mode de sélection de face, sélectionnez le cube une fois pour l'activer pour la sélection, puis choisissez le haut du cube pour sélectionner la face supérieure. Dans la barre d’outils de l’éditeur de modèle, choisissez **Subdiviser la face**. De nouveaux sommets sont ajoutés en haut du cube qui le fractionnent en quatre partitions de même taille.
 
-     ![Le haut du cube a été subdivisé](../designers/media/gfx_model_demo_house_subdiv.png "gfx_model_demo_house_subdiv")
+     ![Le haut du cube a été subdivisé](../designers/media/gfx_model_demo_house_subdiv.png)
 
 5.  Extrudez deux côtés adjacents du cube, par exemple, les côtés avant et droit du cube. En mode de sélection de face, sélectionnez le cube une fois pour l'activer pour la sélection, puis choisissez un côté du cube. Appuyez sur la touche Contrôle de façon prolongée, choisissez un autre côté du cube adjacent au côté que vous avez sélectionné en premier, puis choisissez **Extruder la face** dans la barre d’outils de l’éditeur de modèle.
 
-     ![Les côtés du cube ont été extrudés](../designers/media/gfx_model_demo_house_extrude.png "gfx_model_demo_house_extrude")
+     ![Les côtés du cube ont été extrudés](../designers/media/gfx_model_demo_house_extrude.png)
 
 6.  Étendez une des extrusions. Choisissez l’une des faces que vous venez d’extruder, puis, dans la barre d’outils de l’éditeur de modèle, choisissez l’outil **Translater** et déplacez le manipulateur de translation dans la même direction que l’extrusion.
 
-     ![Un côté du cube a été extrudé davantage.](../designers/media/gfx_model_demo_house_extend.png "gfx_model_demo_house_extend")
+     ![Un côté du cube a été plus extrudé.](../designers/media/gfx_model_demo_house_extend.png)
 
 7.  Effectuez une triangulation du modèle. Dans la barre d’outils de l’éditeur de modèle, choisissez **Avancé**, **Outils**, **Effectuer une triangulation**.
 
 8.  Créez le toit de la maison. Passez en mode de sélection d’arête en choisissant **Sélectionner le bord** dans la barre d’outils de l’éditeur de modèle, puis choisissez le cube pour l’activer. Appuyez sur la touche Contrôle et maintenez-la enfoncée tout en sélectionnant les arêtes illustrées ici :
 
-     ![Bords qui forment la pointe du toit](../designers/media/gfx_model_demo_house_edges.png "gfx_model_demo_house_edges")
+     ![Bords qui forment la pointe du toit](../designers/media/gfx_model_demo_house_edges.png)
 
      Lorsque les bords sont sélectionnés, dans la barre d’outils de l’éditeur de modèle, choisissez l’outil **Translater**, puis déplacez le manipulateur de translation au-dessus pour créer le toit de la maison.
 
  Le modèle de maison simplifié est terminé. Voici à nouveau le modèle final, avec l'ombrage constant appliqué :
 
- ![Modèle terminé de la maison simplifiée](../designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")
+ ![Modèle terminé de la maison simplifiée](../designers/media/gfx_model_demo_house_final.png)
 
  Ensuite, vous pouvez appliquer un nuanceur à ce modèle 3D. Pour plus d’informations, consultez [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

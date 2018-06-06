@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751843"
 ---
 # <a name="start-view"></a>vue de départ
 
@@ -22,7 +23,7 @@ La vue de départ est le point de lancement du Concepteur de schémas XML (XSD).
 
 La vue de départ contient deux sections principales, le *filigrane* et **détails du schéma de document** volet. Elle comprend également la barre d'outils, qui est disponible dans toutes les vues du Concepteur XSD.
 
-![Vue de départ du Concepteur de schémas XML](../xml-tools/media/xsddesigner_startview.gif "XSDDesigner_StartView")
+![Vue de départ du concepteur de schémas XML](../xml-tools/media/xsddesigner_startview.gif)
 
 ## <a name="watermark"></a>Filigrane
 
@@ -36,7 +37,7 @@ Le **détails du schéma de document** répertorie les types de nœud de schéma
 
 Vous pouvez naviguer entre la vue de départ, la [affichage du modèle de contenu](../xml-tools/content-model-view.md) et [vue du graphique](../xml-tools/graph-view.md) à partir de la barre d’outils du Concepteur de schémas XML.
 
-![Barre d’outils de Concepteur de schémas XML](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
+![Barre d'outils du concepteur de schémas XML](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 Les boutons suivants sont activés dans la barre d'outils du Concepteur XSD lorsque la vue de départ est active :
 

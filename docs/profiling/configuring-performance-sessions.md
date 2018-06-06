@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5735c1c4cd1ec5521b9eea00bdc31ab53e67b325
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: df9ba88809303e5d093c4fb644e4b936dfbcf1f0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262150"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692198"
 ---
-# <a name="configure-performance-sessions"></a>Configurer des sessions de performances
+# <a name="configure-performance-sessions"></a>Configurer des sessions de performance
 Les outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permettent de collecter une grande variété de données de performances pour de nombreux types d’applications. Cette section vous montre comment utiliser l’Assistant Performance et les propriétés de la session de performance et du fichier binaire cible pour configurer les outils de profilage de manière à collecter les données qui vous intéressent. Vous pouvez aussi utiliser les propriétés de configuration des outils de profilage pour contrôler la quantité de données collectées dans une exécution de profilage. Pour plus d’informations, consultez [Contrôler la collecte de données](../profiling/controlling-data-collection.md).  
   
 > [!NOTE]

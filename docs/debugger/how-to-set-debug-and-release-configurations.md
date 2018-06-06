@@ -37,7 +37,7 @@ ms.openlocfilehash: 6ae43c5cab67d79450cea1dc024da98fe25c5375
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34690664"
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Comment : définir debug et release de configurations dans Visual Studio

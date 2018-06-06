@@ -23,7 +23,7 @@ ms.openlocfilehash: e279e6db1acf4cb277c8734fa24f965a8236e7ec
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692757"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>La mise à niveau, boîte de dialogue Options projet

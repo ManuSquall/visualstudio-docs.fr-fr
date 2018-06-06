@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 356f15d3d7f332f87b445c66c89f79d099031a1b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dad2ffbc162b53d4141826b6015829482f3bc2df
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746752"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procédure pas à pas : Personnalisation de l’instruction insert, update et supprimez le comportement des classes d’entité
 
@@ -74,7 +75,7 @@ Comme vous allez travailler avec les classes [!INCLUDE[vbtecdlinq](../data-tools
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **nouveau**, **projet...** .
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **de bureau Windows classique**.
+2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **l’application Windows Forms** type de projet.
 

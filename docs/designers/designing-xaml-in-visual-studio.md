@@ -1,6 +1,7 @@
 ---
 title: Conception XAML dans Visual Studio
 ms.date: 07/17/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5309bff9fdc11c5e6a2dffc470889e448aa08142
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6eb91664c78f3c11039f519a306e55a76f9c8e5a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745722"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Concevoir en XAML dans Visual Studio
 
@@ -36,7 +38,7 @@ Pour la plupart des tâches de base, l'IDE de Visual Studio et l'IDE de Blend po
 
 - **Une interface utilisateur cohérente :** vous pouvez concevoir vos applications dans le contexte familier de l'interface utilisateur de Visual Studio, ce qui rend le passage d'un IDE à un autre plus agréable et plus productif. Blend pour Visual Studio utilise le thème sombre de Visual Studio qui vous permet de vous concentrer sur le contenu que vous créez en améliorant le contraste entre le contenu et l'interface utilisateur. Consultez [Création d’une interface utilisateur à l’aide du concepteur XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-     ![Environnement IDE Blend pour Visual Studio](../designers/media/blendide.png "BlendIDE")
+     ![Environnement IDE Blend for Visual Studio](../designers/media/blendide.png)
 
 - **XAML IntelliSense :** les deux IDE prennent en charge toutes les fonctionnalités courantes que vous pouvez attendre d'IntelliSense, notamment la saisie semi-automatique des instructions, la prise en charge des opérations courantes de l'éditeur telles que l'ajout de commentaires et la mise en forme de code, ainsi que la navigation des ressources, la liaison et le code.
 
@@ -44,7 +46,7 @@ Pour la plupart des tâches de base, l'IDE de Visual Studio et l'IDE de Blend po
 
 - **Expérience de rechargement de fichier :** vous pouvez modifier vos fichiers XAML dans Blend pour Visual Studio ou dans Visual Studio. Vos fichiers modifiés sont alors rechargés automatiquement quand vous passez de l'un à l'autre. Pour minimiser les interruptions de flux de travail, vous pouvez maintenant définir vos préférences de rechargement des fichiers dans la boîte de dialogue correspondante.
 
-     ![Expérience de rechargement de fichiers](../designers/media/blendfilereload.png "BlendFileReload")
+     ![Expérience de rechargement de fichier](../designers/media/blendfilereload.png)
 
 - **Dispositions et paramètres synchronisés :** les dispositions personnalisées vous permettent d'enregistrer et d'appliquer des personnalisations de disposition de fenêtre Outil. Visual Studio synchronise ces personnalisations et ces préférences à la fois pour Visual Studio et pour Blend pour Visual Studio sur différents ordinateurs lorsque vous vous connectez avec le même compte Microsoft. Consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 

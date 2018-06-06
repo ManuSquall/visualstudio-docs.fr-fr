@@ -1,5 +1,5 @@
 ---
-title: Inclure des enregistrements de l’écran et vocaux pendant des tests à l’aide des paramètres de test dans Visual Studio | Microsoft Docs
+title: Inclure des enregistrements de l’écran et vocaux pendant des tests à l’aide des paramètres de test dans Visual Studio
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,14 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3888f9c07c02fa640c451f84f58243369ce1fda6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44994b7b643d63f548092aba9a878b939f3968af
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750992"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Comment : inclure des enregistrements de l'écran et vocaux pendant des tests à l'aide des paramètres des tests
 
@@ -37,7 +39,7 @@ L'enregistreur à l'écran et vocal peut être utilisé avec des tests manuels o
 
      La boîte de dialogue Configurer l'adaptateur de données de diagnostic – Enregistreur à l'écran et vocal s'affiche.
 
-     ![Configuration vidéo](../test/media/testsettingvideoconfiggdr.png "TestSettingVideoConfigGDR")
+     ![Configuration vidéo](../test/media/testsettingvideoconfiggdr.png)
 
 4.  (Facultatif) Sélectionnez **Activer l’enregistrement vocal** pour capturer le contenu audio dans votre enregistrement.
 

@@ -1,5 +1,5 @@
 ---
-title: Créer un contrôle utilisateur qui prend en charge la liaison de données simple
+title: Créer un contrôle utilisateur prenant en charge la liaison de données simples
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a484388223b7dae62f165e13b2fc75368b0e642f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c27316cbee2ebdb1d0000d2564891e69294ec292
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747295"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Créer un contrôle utilisateur Windows Forms qui prend en charge la liaison de données simple
 Lors de l’affichage des données sur les formulaires dans les applications Windows, vous pouvez choisir des contrôles existants à partir de la **boîte à outils**, ou vous pouvez créer des contrôles personnalisés si votre application nécessite des fonctionnalités qui ne sont pas disponible dans les contrôles standard. Cette procédure pas à pas vous indique comment créer un contrôle qui implémente l'objet <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Les contrôles qui implémentent <xref:System.ComponentModel.DefaultBindingPropertyAttribute> peuvent contenir une propriété pouvant être liée aux données. Ce type de contrôles est similaire à <xref:System.Windows.Forms.TextBox> ou <xref:System.Windows.Forms.CheckBox>.
@@ -77,7 +78,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **nouveau**, **projet...** .
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **de bureau Windows classique**.
+2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **l’application Windows Forms** type de projet.
 

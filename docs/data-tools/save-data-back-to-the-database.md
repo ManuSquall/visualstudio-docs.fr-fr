@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6ecbf8e67b2c8db1b33fa1c5228d9d94f98e48c5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691132"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748057"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
 Le dataset est une copie en mémoire des données. Si vous modifiez ces données, il est recommandé d’enregistrer ces modifications dans la base de données. Vous faire de trois manières :
@@ -60,7 +60,7 @@ Si vous êtes familiarisé avec les TableAdapters, vous pouvez accéder directem
 
  Si vous envoyez les modifications apportées à la base de données, une deuxième étape est requise. Si vous n’utilisez pas de contrôles liés aux données, vous devez appeler manuellement la méthode de mise à jour de la même TableAdapter (ou adaptateur de données) que vous avez utilisé pour remplir le dataset. Toutefois, vous pouvez également utiliser différents adaptateurs, par exemple, pour déplacer des données à partir d’une source de données à un autre ou pour mettre à jour de plusieurs sources de données. Si vous n’utilisez pas de liaison de données et enregistrez les modifications pour les tables associées, vous devez manuellement instancier une variable de la classe TableAdapterManager généré automatiquement, puis appeler sa méthode UdpateAll.
 
- ![Mises à jour du jeu de données Visual Basic](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates") deux étapes mettre à jour les processus et le rôle de DataRowVersion dans une mise à jour réussie
+ ![Mises à jour du jeu de données Visual Basic](../data-tools/media/vbdatasetupdates.gif) deux étapes mettre à jour les processus et le rôle de DataRowVersion dans une mise à jour réussie
 
  Un dataset contient des collections de tables qui contiennent des collections de lignes. Si vous envisagez de mettre à jour une source de données sous-jacente ultérieurement, vous devez utiliser les méthodes de la propriété DataTable.DataRowCollection lors de l’ajout ou la suppression de lignes. Ces méthodes effectuent le suivi des modifications de mise à jour de la source de données que nécessaire. Si vous appelez la collection RemoveAt sur la propriété de lignes, la suppression ne sont pas être communiquée en retour à la base de données.
 
