@@ -24,20 +24,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a0607bcd05fcb0d63fcc9bff40dfffeb2c45b8f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02a6daf7a3155113ecd06d991b337b54fb0d7cd4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768129"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Comment : ajouter une méthode de suppression
-  Vous pouvez activer un utilisateur final de supprimer un enregistrement de données à partir d’une liste externe sur un site SharePoint en ajoutant une *SUPPRESSEUR* méthode au modèle. Pour plus d’informations, consultez [vous concevez un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
+  Vous pouvez activer un utilisateur final de supprimer un enregistrement de données à partir d’une liste externe sur un site SharePoint en ajoutant une méthode de suppression pour le modèle. Pour plus d’informations, consultez [vous concevez un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-deleter-method"></a>Pour créer une méthode de suppression  
   
-1.  Dans le concepteur BDC, choisissez une entité.  
+1.  Sur le **concepteur BDC**, sélectionnez une entité.  
   
-2.  Dans la barre de menus, choisissez **vue**, **autres fenêtres**, **détails de méthode BDC**.  
+2.  Dans la barre de menus, choisissez **vue** > **autres fenêtres** > **détails de méthode BDC**.  
   
      Le **détails de méthode BDC** fenêtre s’ouvre. Pour plus d’informations sur cette fenêtre, consultez [vue d’ensemble des outils de conception modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
      [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
  [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Comment : ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)   
  [Comment : ajouter une méthode de recherche spécifique](../sharepoint/how-to-add-a-specific-finder-method.md)   
