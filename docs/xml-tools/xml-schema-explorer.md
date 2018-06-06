@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a398450fdf2be1dd3280c96c3b55529e14af51d4
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 110cad9883cbb129368dac4d481443a9f5d9813c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34693940"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751587"
 ---
 # <a name="xml-schema-explorer"></a>Explorateur de schémas XML
 
@@ -60,7 +60,7 @@ Le **Explorateur de schémas XML** fournit une vue hiérarchique du jeu à trave
 
 Voici un exemple d’arborescence :
 
-![Explorateur de schémas XML](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")
+![Explorateur de schémas XML](../xml-tools/media/xmlschemaexplorer.gif)
 
 ## <a name="selection-and-activation"></a>Sélection et activation
  Pour mettre en surbrillance et sélectionner un nœud, cliquez une fois dans l'Explorateur de schémas.

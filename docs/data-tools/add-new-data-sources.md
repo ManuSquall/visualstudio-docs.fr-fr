@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1c7df62a0801534f8a23f7b5cde984c75742406a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d88ba8b5648135d361a145dbc98a82dee6836e50
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745592"
 ---
 # <a name="add-new-data-sources"></a>Ajouter de nouvelles sources de données
 Dans le cadre des outils de données .NET dans Visual Studio, le terme *source de données* fait référence à des objets .NET qui se connectent à un magasin de données et exposent les données à une application .NET. Les concepteurs Visual Studio peuvent consommer la sortie de la source de données pour générer le code réutilisable qui lie les données aux formulaires lorsque vous glissez -déplacez des objets de base de données à partir de la **des Sources de données** fenêtre. Ce type de source de données peut être :
@@ -39,11 +40,11 @@ Dans le cadre des outils de données .NET dans Visual Studio, le terme *source d
 
  Vous créez et modifiez des sources de données à l’aide de la **Assistant de Configuration de Source de données** dans une application Windows Forms ou Windows Presentation Foundation. Entity Framework, tout d’abord créer vos classes d’entité, puis démarrez l’Assistant en sélectionnant **projet** > **ajouter une nouvelle Source de données** (décrite plus en détail plus loin dans cet article).
 
- ![Assistant Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png "Assistant Configuration de Source de données")
+ ![Assistant Configuration de source de données](../data-tools/media/data-source-configuration-wizard.png)
 
  Après avoir créé une source de données, il apparaît dans le **des Sources de données** fenêtre outil (Maj + Alt + D ou **vue** > **autres fenêtres**  >  **Source de données**). Vous pouvez faire glisser une source de données à partir de la **des Sources de données** fenêtre sur une aire de conception de formulaire ou un contrôle. Cela entraîne la génération de code réutilisable, le code qui affiche les données provenant de la banque de données à l’utilisateur. L’illustration suivante montre un jeu de données qui a été déposé sur un Windows form. Si vous avez sélectionné F5 sur l’application, les données à partir de la base de données sous-jacente apparaissent dans les contrôles du formulaire.
 
- ![Opération de glissement de Source de données](../data-tools/media/raddata-data-source-drag-operation.png "opération de glissement de raddata Source de données")
+ ![Opération de glissement de Source de données](../data-tools/media/raddata-data-source-drag-operation.png)
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>Source de données pour une base de données ou un fichier de base de données
 
@@ -53,15 +54,15 @@ Dans le cadre des outils de données .NET dans Visual Studio, le terme *source d
 ### <a name="entity-classes"></a>Classes d’entité
  Pour créer un modèle Entity Framework en tant que source de données, exécutez d’abord la **Assistant Entity Data Model** pour créer les classes d’entité (**projet** > **ajouter un nouvel élément**  >  **ADO.NET Entity Data Model**).
 
- ![Nouvel élément de projet de modèle Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png "élément de projet de modèle de nouvelle Entity Framework raddata")
+ ![Nouvel élément de projet de modèle Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
  Choisissez la méthode par laquelle vous souhaitez générer le modèle.
 
- ![Assistant Entity Data Model](../data-tools/media/raddata-entity-data-model-wizard.png "raddata Assistant Entity Data Model")
+ ![Entity Data Model (assistant)](../data-tools/media/raddata-entity-data-model-wizard.png)
 
  Ajouter le modèle comme source de données. Les classes qui ont été créés s’affichent dans le **Assistant de Configuration de Source de données** lorsque vous choisissez la **objets** catégorie.
 
- ![Assistant de Configuration de Source de données avec les Classes d’entité](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "raddata Assistant de Configuration de Source de données avec les Classes d’entité")
+ ![Assistant de Configuration de Source de données avec les Classes d’entité](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>Source de données pour un service
  Pour créer une source de données à partir d’un service, exécutez le **Assistant de Configuration de Source de données** et choisissez la **Service** type de source de données. Il s’agit simplement d’un raccourci vers le **ajouter une référence de Service** boîte de dialogue, vous pouvez également accéder en cliquant sur le projet dans **l’Explorateur de solutions** et en sélectionnant **ajouter une référence de service** .

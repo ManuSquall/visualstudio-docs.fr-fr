@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 11469e76464cf4177d581705004bf640d71c43a1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8ba5f5464a770342b2e2266bf0327160d37cc109
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691477"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765750"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Présentation des outils de conception modèle BDC
   Vous pouvez concevoir un modèle de connectivité de données métiers (BDC) en utilisant le concepteur BDC, le **détails de méthode BDC** fenêtre et la **Explorateur BDC**.  
@@ -56,14 +56,14 @@ ms.locfileid: "34691477"
   
  Vous pouvez générer rapidement des méthodes de recherche, recherche spécifique, créateur, mise à jour et suppression dans le **détails de méthode BDC** fenêtre. Lorsque vous générez ces méthodes, Visual Studio ajoute des métadonnées, telles que les paramètres, les instances et les descripteurs de type, à la méthode. Vous pouvez modifier ces métadonnées pour satisfaire votre scénario spécifique.  
   
- Pour ouvrir la **détails de méthode BDC** fenêtre, dans la barre de menus, choisissez **vue**, **autres fenêtres**, **détails de méthode BDC**.  
+ Pour ouvrir la **détails de méthode BDC** fenêtre, dans la barre de menus, choisissez **vue** > **autres fenêtres** > **détails de méthode BDC** .  
   
  Pour afficher les méthodes dans les **détails de méthode BDC** fenêtre, sélectionnez l’entité dans le concepteur BDC. Les méthodes de l’entité sélectionnée s’affichent dans le **détails de méthode BDC** fenêtre. Si vous ne choisissez pas une entité dans le concepteur BDC, le **détails de méthode BDC** fenêtre n’affiche aucune information.  
   
  Développer ou réduire des nœuds dans le **détails de méthode BDC** fenêtre pour définir des paramètres, des instances et les descripteurs de filtre. Utilisez le **Explorateur BDC** pour définir des descripteurs de type.  
   
 ## <a name="bdc-explorer"></a>explorateur BDC
- Le **Explorateur BDC** affiche les éléments qui composent le modèle. Pour ouvrir la **Explorateur BDC**, dans la barre de menus, choisissez **vue**, **autres fenêtres**, **Explorateur BDC**. Pour parcourir le modèle, développez les nœuds de la **Explorateur BDC**. Chaque nœud représente un élément dans le code XML du fichier de modèle.  
+ Le **Explorateur BDC** affiche les éléments qui composent le modèle. Pour ouvrir la **Explorateur BDC**, dans la barre de menus, choisissez **vue** > **autres fenêtres** > **Explorateur BDC**. Pour parcourir le modèle, développez les nœuds de la **Explorateur BDC**. Chaque nœud représente un élément dans le code XML du fichier de modèle.  
   
  Lorsque vous choisissez les nœuds dans le **Explorateur BDC**, les propriétés de chaque nœud que vous choisissez s’affichent dans le **propriétés** fenêtre. La plupart de ces propriétés correspondent aux attributs dans le fichier de modèle. Vous pouvez rechercher le modèle à l’aide de la zone de recherche en haut de la **Explorateur BDC**.  
   

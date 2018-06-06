@@ -12,11 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 202e9ce6e0a53c6967ebe1bacaa6553a1241298e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: a4e03f9a369959a5736d7030a1dac885771d7984
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746765"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Débogage distant ASP.NET Core sur IIS dans Azure dans Visual Studio 2017
 
@@ -43,7 +44,7 @@ La méthode recommandée pour le débogage distant sur Azure dépend de votre sc
 > Veillez à supprimer les ressources Azure que vous créez lorsque vous avez effectué les étapes de ce didacticiel. De cette façon, que vous pouvez éviter d’encourir de frais inutiles.
 
 
-### <a name="requirements"></a>Spécifications
+### <a name="requirements"></a>Configuration requise
 
 Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Débogage sur une latence élevée ou d’une connexion à faible bande passante, telles que les connexions à distance d’Internet, ou via Internet entre des pays n’est pas recommandé et peut échouer ou être trop faibles. Pour obtenir une liste complète des conditions requises, consultez [exigences](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -196,7 +197,7 @@ Si vous avez des difficultés à ouvrir la page avec le téléchargement du déb
 
 ### <a name="BKMK_attach"></a> Attachement à l’application ASP.NET à partir de l’ordinateur Visual Studio
 
-1. Sur l’ordinateur Visual Studio, ouvrez le **MyASPApp** solution.
+1. Sur l’ordinateur Visual Studio, ouvrez la solution que vous essayez de déboguer (**MyASPApp** si vous suivez les étapes décrites dans cet article).
 2. Dans Visual Studio, cliquez sur **Déboguer > Attacher au processus** (Ctrl + Alt + P).
 
     > [!TIP]

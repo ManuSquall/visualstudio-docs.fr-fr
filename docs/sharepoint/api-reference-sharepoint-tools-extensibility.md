@@ -19,7 +19,7 @@ ms.openlocfilehash: 1367a8850110fc720a9adfdd733a7c8cdf0aeb14
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692068"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Référence des API (extensibilité des outils SharePoint)

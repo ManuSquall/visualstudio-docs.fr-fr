@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4cfbe0a7ae0a27e41053457774217f049d5caf3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0532025fdb090c3811f09cb823745bd50e8d91c5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34694044"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765526"
 ---
-# <a name="creating-pages-for-sharepoint"></a>Création de pages pour SharePoint
+# <a name="create-pages-for-sharepoint"></a>Créer des pages pour SharePoint
   Vous pouvez créer des pages d’application, les pages de site, les pages maîtres et les mises en page pour un site SharePoint.  
   
  Vous pouvez créer des pages d’application à l’aide d’un modèle dans Visual Studio. Créer des pages de site, pages maîtres et mises en page, à l’aide de SharePoint Designer. Ensuite, vous pouvez importer ces pages dans Visual Studio pour pouvoir les utiliser dans un projet SharePoint.  
@@ -67,7 +67,7 @@ ms.locfileid: "34694044"
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Création de pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Décrit comment ajouter des pages applications : contenu .aspx fusionné avec une page maître SharePoint.|  
+|[Création de pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Décrit comment ajouter des pages applications : *.aspx* contenu est fusionné avec une page maître SharePoint.|  
 |[Guide pratique pour créer une page d’application](../sharepoint/how-to-create-an-application-page.md)|Vous montre comment créer des pages ASP.NET qui s’exécutent sur un site SharePoint.|  
 |[Procédure pas à pas : création d’une page d’application SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Vous montre comment concevoir et déboguer une page Web ASP.NET pour un site SharePoint.|  
   

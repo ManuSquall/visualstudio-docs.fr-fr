@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ba21ba5b2ce6126d29d34f5df662e9e332359ed3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d740614ed94d0fd91ba9f3e73a083791b9112919
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752025"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procédure : ajouter des commentaires à un workflow dans le Concepteur de flux de travail
 
@@ -52,11 +53,11 @@ Pour faciliter la création de flux de travail plus volumineux et plus complexes
 
    L’annotation s’affiche dans le Concepteur de l’activité. Dans la capture d'écran ci-dessous, l'annotation « Démarrage de l'activité dans le workflow » s'affiche dans le concepteur de l'activité.
 
-   ![Annotation affichée dans le Concepteur d’activités](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
+   ![Annotation affichée dans le concepteur d'activités](../workflow-designer/media/annotationindesigner.png)
 
 1. Pour afficher l’annotation en dehors du Concepteur de l’activité, placez le curseur sur la zone d’annotation dans le Concepteur de l’activité et cliquez sur le **détacher** icône
 
-   ![Annotation affichée en dehors d’un concepteur d’activités](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+   ![Annotation affichée en dehors d'un concepteur d'activités](../workflow-designer/media/annotationoutsidedesigner.png)
 
 ## <a name="showing-or-hiding-all-annotations"></a>Affichage ou masquage de toutes les annotations
 

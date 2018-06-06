@@ -18,11 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4aea2750e3900beb0aaa62156c215376ff16d1ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f870bce3abea444d6a04c0076d7110345c55ea7c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750426"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 Pour définir un langage spécifique à un domaine (DSL), vous créez une solution Visual Studio à partir d’un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.
@@ -48,7 +49,7 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
 
 1.  Créer une solution avec le **Domain-Specific Language** modèle, qui peut être trouvée sous **autres Types de projets/extensibilité** dans les **nouveau projet** boîte de dialogue.
 
-     ![Boîte de dialogue DSL créer](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Boîte de dialogue Créer DSL](../modeling/media/create_dsldialog.png)
 
      Lorsque vous cliquez sur **OK**, le **Assistant de langage spécifique à un domaine** s’ouvre et affiche la liste des solutions de modèle DSL.
 
@@ -86,7 +87,7 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
 
  L'interface utilisateur ressemble maintenant à l'image suivante.
 
- ![concepteur DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![concepteur dsl](../modeling/media/dsl_designer.png)
 
  Cette solution définit un langage spécifique à un domaine. Pour plus d’informations, consultez [vue d’ensemble de l’Interface utilisateur des outils langage spécifique à un domaine](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -99,7 +100,7 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
 
  Si vous exécutez une solution que vous avez créé à partir de la **langage minimale** modèle, votre expérimentale de Visual Studio ressemblera à l’exemple suivant :
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
  Expérimentez avec les outils. Créez des éléments et raccordez-les.
 
@@ -139,11 +140,11 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
 
  La figure suivante montre la partie classes et relations de la solution DSL qui est utilisée comme exemple dans cette rubrique.
 
- ![Relations d’incorporation et de référence](../modeling/media/music_classes.png "Music_Classes")
+ ![Relations d'incorporation et de référence](../modeling/media/music_classes.png)
 
  La figure suivante est un exemple de modèle de cette solution DSL :
 
- ![Modèle d’instance du DSL généré](../modeling/media/music_instance.png "Music_Instance")
+ ![Modèle d’instance du DSL généré](../modeling/media/music_instance.png)
 
 > [!NOTE]
 >  Le terme « modèle » fait référence à une instance de votre solution DSL créée par les utilisateurs. Elle est généralement affichée sous forme de diagramme. Cette rubrique traite du diagramme de définition DSL et des diagrammes de modèles qui apparaissent lors de l'utilisation de votre solution DSL.
@@ -235,7 +236,7 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Pour définir une classe d'éléments qui apparaissent en tant que formes sur un diagramme
 
-1.  **Définir et tester une classe de domaine, comme décrit dans**[définition des Classes de domaine](#classes) **.** 
+1.  **Définir et tester une classe de domaine, comme décrit dans**[définition des Classes de domaine](#classes) **.**
 
     -   Le parent de la classe doit être la classe racine. Autrement dit, il doit y avoir une relation d'incorporation entre la classe racine et la nouvelle classe de domaine.
 
@@ -285,7 +286,7 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
 
     4.  Vérifiez qu'une coche apparaît à côté de chaque nom de décorateur.
 
-     ![Fenêtre de mappages des formes et des détails DSL](../modeling/media/dsldetailswindow.png "DslDetailsWindow")
+     ![Fenêtre de mappages des formes et des détails DSL](../modeling/media/dsldetailswindow.png)
 
 7.  **Rendre un élément de boîte à outils pour créer des éléments de la classe de domaine.**
 
@@ -331,7 +332,7 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
 
  Par exemple, si Albums et Artistes sont affichés en tant que formes sur votre diagramme, vous pourriez définir une relation nommée ArtistesApparusSurAlbums qui relie des Artistes aux Albums sur lesquels ils ont travaillé. Voir l'exemple sur la figure.
 
- ![Modèle d’instance du DSL généré](../modeling/media/music_instance.png "Music_Instance")
+ ![Modèle d’instance du DSL généré](../modeling/media/music_instance.png)
 
  Les relations de référence peuvent aussi lier des éléments du même type. Par exemple, dans une solution DSL représentant un arbre généalogique, la relation entre les parents et leurs enfants est une relation de référence de Personne à Personne.
 
@@ -348,7 +349,7 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
 
  **Définissez la propriété autorise les doublons de la relation,** si plus d’un lien de la même classe peut exister entre la même paire d’éléments de modèle. Par exemple, vous pourriez autoriser un Enseignant à enseigner plusieurs Sujets au même Étudiant.
 
- ![Mettre en forme les mappages pour les connecteurs](../modeling/media/music_connector.png "Music_Connector")
+ ![Mappages de forme pour les connecteurs](../modeling/media/music_connector.png)
 
  Pour plus d’informations, consultez [propriétés des relations de domaine](../modeling/properties-of-domain-relationships.md) et [propriétés des rôles de domaine](../modeling/properties-of-domain-roles.md).
 
@@ -411,11 +412,11 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
 ##  <a name="compartments"></a> Définition des formes qui contiennent des listes : formes de compartiments
  Une forme de compartiment contient une ou plusieurs listes d'éléments. Par exemple, dans une solution DSL de bibliothèque musicale, vous pourriez utiliser des formes de compartiments pour représenter des albums. Dans chaque album figure une liste de morceaux.
 
- ![Forme de compartiment](../modeling/media/compartmentshape.png "CompartmentShape")
+ ![Forme de compartiment](../modeling/media/compartmentshape.png)
 
  Dans une définition DSL, le moyen le plus simple d'obtenir cet effet consiste à définir une classe de domaine pour le conteneur et une classe de domaine pour chaque liste. La classe de conteneur est mappée à la forme de compartiment.
 
- ![Carte de formes](../modeling/media/music_mapcomp.png "Music_MapComp")
+ ![Mappage de forme](../modeling/media/music_mapcomp.png)
 
  Pour plus d’informations, consultez [propriétés des formes de compartiment](../modeling/properties-of-compartment-shapes.md).
 
@@ -505,7 +506,7 @@ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab 
 
 7.  Ouvrez l'explorateur de langage. Vérifiez que les nœuds conteneurs sont visibles, avec les nœuds d'éléments de liste à l'intérieur.
 
- ![Explorateur généré de DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![Explorateur généré de DSL](../modeling/media/music_explorer.png)
 
  Après avoir testé une forme de compartiment, vous souhaiterez peut-être ajuster certaines de ses propriétés et ajouter certaines fonctionnalités avancées. Pour plus d’informations, consultez [personnalisation et l’extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
 

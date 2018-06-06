@@ -12,11 +12,12 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: fa732c8b2fbf55b1cb2c8b80a06cf1ab18d6b50c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2e74fca7109a19c789215424526eef6190b568c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752396"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Outils de données Visual Studio pour C++
 
@@ -34,11 +35,11 @@ Pour tirer parti des fonctionnalités personnalisées dans SQL Server 2005 et ve
 
 3.  Utilisez SQL Server Management Studio pour attacher le fichier Northwind.mdf décompressé à la base de données locale. Démarrage de SQL Server Management Studio, connectez-vous à (localdb) \MSSQLLocalDB.
 
-     ![Boîte de dialogue de connexion de SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS boîte de dialogue de connexion")
+     ![Boîte de dialogue de connexion de SSMS](../data-tools/media/raddata-ssms-connect-dialog.png)
 
      Avec le bouton droit sur le nœud de base de données locale dans le volet gauche, puis choisissez **attacher**.
 
-     ![SSMS attacher la base de données](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS attacher le base de données")
+     ![SSMS attacher la base de données](../data-tools/media/raddata-ssms-attach-database.png)
 
 4.  Téléchargez l’exemple de kit de développement logiciel Windows ODBC et décompressez-le vers un nouvel emplacement. Cet exemple montre les commandes ODBC de base qui sont utilisés pour se connecter à une base de données et les commandes et émettre des requêtes. Plus d’informations sur ces fonctions dans le [Microsoft ODBC Open Database Connectivity ()](/sql/odbc/microsoft-open-database-connectivity-odbc). Lorsque vous chargez tout d’abord la solution (il se trouve dans le dossier C++), Visual Studio propose de mise à niveau de la solution vers la version actuelle de Visual Studio. Cliquez sur **Oui**.
 
@@ -67,7 +68,7 @@ Et ce répertoire de la bibliothèque :
 
 8.  Appuyez sur F5 pour générer et exécuter l'application. Vous devez voir une boîte de dialogue à partir du pilote qui vous invite à entrer une base de données. Entrez `(localdb)\MSSQLLocalDB`et vérifiez **utiliser une connexion approuvée**. Press **OK**. Vous devez voir une console avec les messages qui indiquent une connexion réussie. Vous devez également voir une invite de commandes où vous pouvez taper une instruction SQL. L’écran suivant montre un exemple de requête et les résultats :
 
-     ![Résultat de la requête ODBC Sample](../data-tools/media/raddata-odbc-sample-query-output.png "raddata sortie de la requête ODBC Sample")
+     ![Résultat de la requête ODBC Sample](../data-tools/media/raddata-odbc-sample-query-output.png)
 
 ## <a name="see-also"></a>Voir aussi
 

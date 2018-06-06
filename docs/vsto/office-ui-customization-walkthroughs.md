@@ -22,7 +22,7 @@ ms.openlocfilehash: 8b4935d0256eb1a5aab57f24a884232e9d97b29c
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693154"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Procédures pas à pas personnalisation de l’interface utilisateur Office

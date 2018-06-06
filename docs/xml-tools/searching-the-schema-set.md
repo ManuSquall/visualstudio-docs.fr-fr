@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c110344499281243628d633d005506af5cd801d0
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 1133d6a67442bde5a9f949553efcffd07e2d3ffe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751739"
 ---
 # <a name="search-the-schema-set"></a>Rechercher le jeu de schémas
 
@@ -28,7 +29,7 @@ Le **Explorateur de schémas XML** vous permet de rechercher le schéma défini 
 
  Effectuer des recherches par mot clé en entrant une sous-chaîne dans la **recherche le jeu de schémas** zone de texte de la **Explorateur de schémas XML** barre d’outils.
 
- ![Recherche de mot clé de l’Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+ ![Recherche par mot clé de l'Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif)
 
  Le **Explorateur de schémas XML** recherche le schéma défini pour les attributs suivants :
 
@@ -48,7 +49,7 @@ Le **Explorateur de schémas XML** vous permet de rechercher le schéma défini 
 
  Vous pouvez ajouter les résultats de recherche à l’espace de travail en cliquant sur le **ajouter des nœuds en surbrillance à l’espace de travail** bouton dans le volet de synthèse des résultats.
 
- ![Résultat de recherche de l’Explorateur de schémas XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+ ![Résultat de la recherche de l'Explorateur de schémas XML](../xml-tools/media/schemaexplorersearchresult.gif)
 
 ## <a name="clear-search-results"></a>Résultats de recherche
 

@@ -1,5 +1,5 @@
 ---
-title: Mise à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5 | Documents Microsoft
+title: Mettre à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,23 +15,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5195e9a268a38212f12d554eb5a86f4e923af421
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97778716ad5be8e110c022048a3d04f4c980f839
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767973"
 ---
-# <a name="updating-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mise à jour de zones de formulaire dans les projets Outlook qui font l'objet d'une migration vers .NET Framework 4 ou .NET Framework 4.5
+# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mettre à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
   Si l’infrastructure cible d’un projet de complément VSTO Outlook avec une zone de formulaire passe à [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez apporter quelques changements au code de zone de formulaire généré, ainsi qu’au code qui instancie certaines classes de zone de formulaire au moment de l’exécution.  
   
-## <a name="updating-the-generated-form-region-code"></a>Mise à jour du code de zone de formulaire généré  
- Si la version cible de .NET Framework du projet est remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez changer le code de zone de formulaire généré. Les changements que vous apportez ne sont pas les mêmes pour les zones de formulaire que vous avez créées dans Visual Studio, et les zones de formulaire que vous avez importées à partir d'Outlook. Pour plus d’informations sur les différences entre ces types de zone de formulaire, consultez [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md).  
+## <a name="update-the-generated-form-region-code"></a>Mettre à jour le code de région de formulaire généré  
+ Si la version cible de .NET Framework du projet est remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez changer le code de zone de formulaire généré. Les changements que vous apportez ne sont pas les mêmes pour les zones de formulaire que vous avez créées dans Visual Studio, et les zones de formulaire que vous avez importées à partir d'Outlook. Pour plus d’informations sur les différences entre ces types de zones de formulaire, consultez [zones de formulaire Outlook de créer](../vsto/creating-outlook-form-regions.md).  
   
-#### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Pour mettre à jour le code généré d'une zone de formulaire que vous avez créée dans Visual Studio  
+### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Pour mettre à jour le code généré d'une zone de formulaire que vous avez créée dans Visual Studio  
   
 1.  Ouvrez le fichier code-behind de zone de formulaire dans l'éditeur de code. Ce fichier se nomme *VotreZoneDeFormulaire*.Designer.cs ou *VotreZoneDeFormulaire*.Designer.vb. Pour afficher ce fichier dans les projets Visual Basic, cliquez sur le bouton **Afficher tous les fichiers** dans l' **Explorateur de solutions**.  
   
-2.  Modifiez la déclaration de la classe de zone de formulaire afin qu’elle dérive <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> au lieu de Microsoft.Office.Tools.Outlook.FormRegionControl.  
+2.  Modifiez la déclaration de la classe de zone de formulaire pour qu'elle dérive de <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> au lieu de `Microsoft.Office.Tools.Outlook.FormRegionControl`.  
   
 3.  Modifiez le constructeur de la classe de zone de formulaire, comme indiqué dans les exemples de code suivants.  
   
@@ -117,7 +118,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Ouvrez le fichier code-behind de zone de formulaire dans l'éditeur de code. Ce fichier se nomme *VotreZoneDeFormulaire*.Designer.cs ou *VotreZoneDeFormulaire*.Designer.vb. Pour afficher ce fichier dans les projets Visual Basic, cliquez sur le bouton **Afficher tous les fichiers** dans l' **Explorateur de solutions**.  
   
-2.  Modifiez la déclaration de la classe de zone de formulaire afin qu’elle dérive <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> au lieu de Microsoft.Office.Tools.Outlook.ImportedFormRegion.  
+2.  Modifiez la déclaration de la classe de zone de formulaire pour qu'elle dérive de <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> au lieu de `Microsoft.Office.Tools.Outlook.ImportedFormRegion`.  
   
 3.  Modifiez le constructeur de la classe de zone de formulaire, comme indiqué dans les exemples de code suivants.  
   
@@ -157,7 +158,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Pour chaque ligne de code de la méthode `InitializeControls` qui initialise un contrôle dans la classe de zone de formulaire, modifiez le code comme indiqué ci-dessous.  
   
-     L'exemple de code suivant montre comment initialiser un contrôle dans un projet qui cible .NET Framework 3.5. Dans ce code, la méthode GetFormRegionControl a un paramètre de type qui spécifie le type du contrôle qui est retourné.  
+     L'exemple de code suivant montre comment initialiser un contrôle dans un projet qui cible .NET Framework 3.5. Dans ce code, la méthode `GetFormRegionControl` possède un paramètre de type qui spécifie le type du contrôle retourné.  
   
     ```vb  
     Me.olkTextBox1 = Me.GetFormRegionControl(Of Microsoft.Office.Interop.Outlook.OlkTextBox)("OlkTextBox1")  
@@ -185,10 +186,10 @@ ms.lasthandoff: 04/16/2018
   
 8.  Dans les classes *VotreNouvelleZoneDeFormulaire*`Factory` et `WindowFormRegionCollection` , recherchez toutes les références à la classe *VotreNouvelleZoneDeFormulaire* , puis remplacez chaque référence par la classe *VotreZoneDeFormulaireInitiale* . Par exemple, si la zone de formulaire que vous mettez à jour se nomme `SalesDataFormRegion` , et si la zone de formulaire que vous avez créée à l'étape 5 se nomme `FormRegion1`, remplacez toutes les références de `FormRegion1` par `SalesDataFormRegion`.  
   
-## <a name="instantiating-form-region-classes"></a>Instanciation des classes de zone de formulaire  
- Vous devez modifier tout code qui instancie dynamiquement certaines classes de zone de formulaire. Dans les projets qui ciblent le .NET Framework 3.5, vous pouvez instancier directement des classes de zone de formulaire telles que Microsoft.Office.Tools.Outlook.FormRegionManifest. Dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, ces classes sont des interfaces que vous ne pouvez pas instancier directement.  
+## <a name="instantiate-form-region-classes"></a>Instancier des classes de zone de formulaire  
+ Vous devez modifier tout code qui instancie dynamiquement certaines classes de zone de formulaire. Dans les projets qui ciblent .NET Framework 3.5, vous pouvez instancier directement des classes de zone de formulaire telles que `Microsoft.Office.Tools.Outlook.FormRegionManifest`. Dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, ces classes sont des interfaces que vous ne pouvez pas instancier directement.  
   
- Si le framework cible de votre projet est remplacée par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez instancier les interfaces à l’aide des méthodes fournies par la propriété Globals.Factory. Pour plus d’informations sur la propriété Globals.Factory, consultez [accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Si la version cible de .NET Framework du projet est remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez instancier les interfaces à l'aide des méthodes fournies par la propriété `Globals.Factory`. Pour plus d’informations sur la `Globals.Factory` propriété, consultez [d’accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
  Le tableau suivant répertorie les types de zone de formulaire et la méthode à utiliser pour instancier les types dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure.  
   
@@ -199,6 +200,6 @@ ms.lasthandoff: 04/16/2018
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Migration de solutions Office vers .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
- [Création de zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)  
+ [Migrer des solutions Office vers .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)  
   

@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c5daaad156b2a4372ab43a19ba2f2bdd6cdb87b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27581387b9775d2e2cf4401c811dab09b15c3722
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748671"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 Une solution DSL (Domain-Specific Language) génère une API que vous pouvez utiliser pour lire et mettre à jour des instances du DSL dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Cette API est définie dans le code généré à partir de la définition DSL. Cette rubrique décrit l'API générée.
@@ -28,7 +29,7 @@ Une solution DSL (Domain-Specific Language) génère une API que vous pouvez uti
 
  Appuyez sur F5 et expérimentez un peu, si vous ne vous êtes pas encore familiarisé avec ce modèle de solution. Notez en particulier que pour créer des ports, vous devez faire glisser un outil « port » sur un composant et que vous pouvez connecter des ports.
 
- ![Composants et ports interconnectés](../modeling/media/componentsample.png "ComponentSample")
+ ![Composants et ports interconnectés](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Structure de la solution DSL
  Le **Dsl** projet définit l’API de votre DSL. Le **DslPackage** projet définit comment il s’intègre à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez aussi ajouter vos propres projets, qui peuvent également contenir du code généré à partir du modèle.
@@ -69,7 +70,7 @@ Une solution DSL (Domain-Specific Language) génère une API que vous pouvez uti
 
  (Dans l'exemple de solution de composant, l'un des générateurs de connexions se nomme ConnectionBuilder. Il s'agit d'une coïncidence, car la relation de domaine se nomme Connection.)
 
- La relation est créée dans le *relation* `Builder.Connect()` (méthode). La version par défaut vérifie que les éléments de modèle cibles et sources sont acceptables, puis elle instancie la relation. Par exemple :
+ La relation est créée dans le *relation* `Builder.Connect()` (méthode). La version par défaut vérifie que les éléments de modèle cibles et sources sont acceptables, puis elle instancie la relation. Exemple :
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 

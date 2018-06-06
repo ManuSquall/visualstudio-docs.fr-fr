@@ -21,20 +21,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c1869f11d4202237d628ff3f15f73906822ec47
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e2108ce50cca32be707931f5bcf11d4501e8d3d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692520"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764918"
 ---
-# <a name="creating-site-columns-content-types-and-lists-for-sharepoint"></a>Création de colonnes de site, les types de contenu et listes pour SharePoint
+# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Créer des colonnes de site, les types de contenu et listes pour SharePoint
   Visual Studio fournit des modèles d’élément de projet pour nombreux différents éléments fondamentaux de SharePoint, y compris *répertorie* et *types de contenu*, qui peuvent inclure des colonnes de site (ou  *champs*). Les nouveaux concepteurs de type de contenu et de listes facilitent plus que jamais la création de ces éléments.  
   
 ## <a name="site-columns"></a>Colonnes de site
  Les colonnes de site font partie des éléments les plus critiques que vous puissiez ajouter à un projet SharePoint. Une colonne de site représente un type de données, tel qu'un numéro de téléphone, un commentaire, ou le nom d'une ville d'un contact dans une liste de contacts.  
   
- Le modèle de projet de site rend la création de colonnes de site plus facile que dans la version antérieure de Visual Studio. Après avoir créé une colonne de site, vous pouvez modifier le XML dans le fichier Elements.xml de la colonne de site pour inclure les informations souhaitées, telles que son nom complet, son type de données, et le groupe dans lequel vous voulez que la colonne de site s'affiche dans SharePoint. Pour plus d’informations sur les colonnes de site, consultez [Introduction aux colonnes](http://go.microsoft.com/fwlink/?LinkId=224996).  
+ Le modèle de projet de site rend la création de colonnes de site plus facile que dans la version antérieure de Visual Studio. Après avoir créé une nouvelle colonne de site, vous pouvez modifier le XML dans la colonne de site *Elements.xml* fichier à inclure les informations souhaitées, telles que son nom complet, son type de données et le groupe dans lequel vous souhaitez s’affichent dans la colonne de site SharePoint. Pour plus d’informations sur les colonnes de site, consultez [Introduction aux colonnes](http://go.microsoft.com/fwlink/?LinkId=224996).  
   
 ## <a name="content-types-and-lists"></a>Listes et types de contenu
  Les types de contenu et listes font partie des éléments les plus fréquemment utilisés dans SharePoint.  

@@ -28,14 +28,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2a9cb18d1b9de7f4f67f8c3d153a9dfa4598612d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691530"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765724"
 ---
-# <a name="creating-web-parts-for-sharepoint"></a>Création de composants WebPart pour SharePoint
+# <a name="create-web-parts-for-sharepoint"></a>Créer des composants WebPart pour SharePoint
   À l’aide de composants WebPart, vous pouvez modifier le contenu, l’apparence et comportement des pages d’un site SharePoint à l’aide d’un navigateur. Composants WebPart sont des contrôles côté serveur qui s’exécutent à l’intérieur d’une page WebPart : ils sont les blocs de construction des pages qui s’affichent sur un site SharePoint. Consultez [bloc de construction : composants WebPart](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Vous pouvez créer et déboguer des composants WebPart sur un site SharePoint à l’aide de modèles à partir de Visual Studio.  
@@ -50,7 +50,7 @@ ms.locfileid: "34691530"
   
 |Fichier|Description|  
 |----------|-----------------|  
-|Elements.Xml|Contient des informations utilisées par le fichier de définition de fonction dans votre projet pour déployer le composant WebPart.|  
+|*Elements.Xml*|Contient des informations utilisées par le fichier de définition de fonction dans votre projet pour déployer le composant WebPart.|  
 |fichier .webpart|Fournit les informations nécessaires pour afficher votre composant WebPart dans une galerie de composants WebPart SharePoint.|  
 |Fichier de code|Contient des méthodes qui ajoutent des contrôles au composant WebPart et qui génèrent du contenu personnalisé dans le composant WebPart.|  
   
@@ -65,14 +65,14 @@ ms.locfileid: "34691530"
 |Nom du contrôle|Description|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Insère un menu ASP. Pour plus d’informations, consultez [vue d’ensemble du contrôle de Menu](http://go.microsoft.com/fwlink/?LinkId=235316).|  
-|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Insère un **lien** élément dans la page .aspx et applique une ou plusieurs feuilles de style externes définies par **CssRegistration**.|  
-|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Insère un contrôle de date/heure dans la page .aspx.|  
-|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Insère une validation de la sécurité dans la page .aspx|  
+|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Insère un **lien** élément dans le *.aspx* page et applique une ou plusieurs feuilles de style externes définies par **CssRegistration**.|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Insère un contrôle de date/heure dans le *.aspx* page.|  
+|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Insère une validation de la sécurité dans le *.aspx* page|  
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Retourne une propriété d’une liste spécifiée.|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Retourne une propriété globale du site Web en cours.|  
-|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Insère un lien vers un flux RSS dans la page .aspx.|  
+|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Insère un lien vers un flux RSS dans le *.aspx* page.|  
 |[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Fournit des propriétés et méthodes pour l’inscription des ressources, telles que des scripts, d’une page afin que doit être demandés lorsque la page est rendue.|  
-|[Thème](http://go.microsoft.com/fwlink/?LinkId=235314)|Applique un thème à la page .aspx.|  
+|[Thème](http://go.microsoft.com/fwlink/?LinkId=235314)|Applique un thème pour le *.aspx* page.|  
   
 ## <a name="debug-a-web-part"></a>Déboguer un composant WebPart
  Vous pouvez déboguer un projet SharePoint qui contient un composant WebPart, comme vous le feriez autres projets Visual Studio. Lorsque vous démarrez le débogueur Visual Studio, Visual Studio ouvre le site SharePoint.  

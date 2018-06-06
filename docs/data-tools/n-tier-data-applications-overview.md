@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 59f273c511a24b1139b03421c2ca59871350aec3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 43e75e69899f74fb67980172c546cdc99d41d173
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747142"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d'ensemble des applications de données multicouches
 *Multicouches* applications de données sont des applications de données qui sont séparées en plusieurs *niveaux*. Également appelées « applications distribuées » et « applications à plusieurs niveaux », avec applications multicouches séparent le traitement en couches discrètes qui sont distribuées entre le client et le serveur. Lorsque vous développez des applications qui accèdent aux données, vous devez avoir une distinction claire entre les différentes couches qui composent votre application.
@@ -58,7 +59,7 @@ Le *intermédiaire* est la couche de la couche de présentation et de données u
 
 L’illustration suivante montre les fonctionnalités et technologies qui sont disponibles dans Visual Studio et où ils peuvent être intégrées dans la couche intermédiaire d’une application multicouche.
 
-![Composants de la couche de milieu](../data-tools/media/ntiermid.png "NtierMid") niveau intermédiaire
+![Composants de la couche de milieu](../data-tools/media/ntiermid.png) niveau intermédiaire
 
 En règle générale, la couche intermédiaire se connecte à la couche données à l’aide d’une connexion de données. Cette connexion de données est généralement stockée dans le composant d’accès aux données.
 
@@ -67,7 +68,7 @@ Le *couche données* est fondamentalement le serveur qui stocke les données d�
 
 L’illustration suivante montre les fonctionnalités et technologies qui sont disponibles dans Visual Studio et où ils peuvent être intégrées dans la couche données d’une application multicouche.
 
-![Composants de couche données](../data-tools/media/ntierdatatier.png "ntierdatatier") couche données
+![Composants de couche données](../data-tools/media/ntierdatatier.png) couche données
 
 La couche données ne sont pas accessibles directement depuis le client dans la couche de présentation. Au lieu de cela, le composant d’accès aux données dans la couche intermédiaire est utilisé pour la communication entre la présentation et les niveaux de données.
 

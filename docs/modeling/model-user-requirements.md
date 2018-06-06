@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89b5a5130264dc46e953ee87f048a768d756ce9c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f79e80b5b4e4e14772548ad92e8886150749b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749055"
 ---
 # <a name="model-user-requirements"></a>Modéliser les besoins des utilisateurs
 
@@ -61,9 +62,9 @@ Vous pouvez créer plusieurs vues différentes des impératifs des utilisateurs.
 
 Une règle métier est un impératif qui n’est associé à aucun cas d’usage particulier et doit être respecté à l’échelle du système.
 
- De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *statique ** des règles d’entreprise* sous forme de commentaires associés aux classes pertinentes sur un diagramme de classes conceptuel. Par exemple :
+ De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *statique ** des règles d’entreprise* sous forme de commentaires associés aux classes pertinentes sur un diagramme de classes conceptuel. Exemple :
 
- ![Règle de commentaire est associé à la classe Order. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")
+ ![Règle dans le commentaire associé à la classe Order.](../modeling/media/uml_reqmcd2.png)
 
  Les*règles métier dynamiques* contraignent les séquences d’événements autorisées. Par exemple, vous utilisez un diagramme de séquence ou d’activités pour montrer qu’un utilisateur doit se connecter avant d’effectuer d’autres opérations sur votre système.
 

@@ -19,7 +19,7 @@ ms.openlocfilehash: 53a6b138509648af102a50217a8bab4d32b27a2a
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693914"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Modifications requises pour exécuter les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5

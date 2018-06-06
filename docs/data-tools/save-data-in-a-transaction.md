@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Enregistrer des données dans une transaction'
+title: 'Procédure pas à pas : enregistrer des données dans une transaction'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec2ff00c4d355b2683c888fcdb6a333bf15e1b99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1f035fc56cd673f12ba694d6a94ec57aea1d93b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745527"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>Procédure : Enregistrer des données dans une transaction
+# <a name="walkthrough-save-data-in-a-transaction"></a>Procédure pas à pas : enregistrer des données dans une transaction
 Cette procédure pas à pas montre comment enregistrer les données dans une transaction à l’aide de la <xref:System.Transactions> espace de noms. Dans cette procédure pas à pas, vous allez créer une application Windows Forms. L’Assistant Configuration de Source de données vous permet de créer un jeu de données pour les deux tables dans la base de données Northwind. Vous allez ajouter des contrôles liés aux données à un Windows form, et vous allez modifier le code de BindingNavigator bouton Enregistrer Mettre à jour la base de données à l’intérieur de TransactionScope.
 
 ## <a name="prerequisites"></a>Prérequis
@@ -52,7 +53,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **nouveau**, **projet...** .
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **de bureau Windows classique**.
+2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **l’application Windows Forms** type de projet.
 

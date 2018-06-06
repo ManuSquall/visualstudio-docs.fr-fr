@@ -22,11 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fc7c946a89c8ba05ffed443816d6ce4e9056b88b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 808e37b6d172a63288751c28dfdcd1e43d466c08
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767416"
 ---
 # <a name="how-to-add-an-updater-method"></a>Comment : ajouter une méthode de mise à jour
   Vous pouvez activer les utilisateurs mettre à jour des données métiers dans une liste externe SharePoint en créant une *Updater* (méthode). Pour plus d’informations, consultez [vous concevez un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Dans le concepteur BDC, choisissez une entité.  
   
-2.  Dans la barre de menus, choisissez **vue**, **autres fenêtres**, **détails de méthode BDC**.  
+2.  Dans la barre de menus, choisissez **vue** > **autres fenêtres** > **détails de méthode BDC**.  
   
      La fenêtre Détails de méthode BDC s’ouvre. Pour plus d’informations sur cette fenêtre, consultez [vue d’ensemble des outils de conception modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du service fichier de code qui a été généré pour l’entité, puis choisissez **afficher le Code**.  
   
-     Le fichier de code de service entité s’ouvre dans l’éditeur de Code. Pour plus d’informations sur ce fichier, consultez [création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).  
+     Le fichier de code de service entité s’ouvre dans le **éditeur de Code**. Pour plus d’informations sur ce fichier, consultez [création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 5.  Ajoutez le code à la méthode de mise à jour pour mettre à jour des données. L’exemple suivant met à jour les informations d’un contact dans la base de données AdventureWorks pour SQL Server.  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
      [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
  [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Comment : ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)   
  [Comment : ajouter une méthode de recherche spécifique](../sharepoint/how-to-add-a-specific-finder-method.md)   
@@ -79,4 +80,4 @@ ms.lasthandoff: 04/16/2018
  [Comment : ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Guide pratique pour définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)  
   
-  
+ 

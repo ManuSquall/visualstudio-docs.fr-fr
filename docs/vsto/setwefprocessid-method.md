@@ -17,7 +17,7 @@ ms.openlocfilehash: b426237816bfee53e7c3e50c19e29168b27e16e1
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693430"
 ---
 # <a name="setwefprocessid-method"></a>Setwefprocessid, méthode

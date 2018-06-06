@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c59128fe0ed0c1053c044431bbde68fb5906de31
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76c00f33bfcf277dcad9fdda32661b29e08bbfc3
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748955"
 ---
 # <a name="create-and-configure-tableadapters"></a>Créer et configurer des TableAdapters
 Les TableAdapters fournissent une communication entre votre application et une base de données. Ils se connectent à la base de données, les requêtes exécutées ou les procédures stockées et renvoient une nouvelles données de table ou de remplissage existant <xref:System.Data.DataTable> avec les données retournées. Les TableAdapters peuvent également envoyer des données mises à jour à partir de votre application dans la base de données.
@@ -40,7 +41,7 @@ Pour une introduction aux TableAdapters, consultez [remplir des jeux de données
 ## <a name="use-the-tableadapter-configuration-wizard"></a>Utilisez l’Assistant Configuration de TableAdapter
 Exécutez le **Assistant Configuration de TableAdapter** pour créer ou modifier des TableAdapters et leurs DataTables associés. Vous pouvez configurer un TableAdapter existant en cliquant dessus dans le **Concepteur de Dataset**.
 
-![raddata Assistant de Configuration de l’adaptateur de Table](../data-tools/media/raddata-table-adapter-configuration-wizard.png "raddata Assistant de Configuration de l’adaptateur de Table")
+![raddata Assistant de Configuration de l’adaptateur de Table](../data-tools/media/raddata-table-adapter-configuration-wizard.png)
 
 Si vous faites glisser un TableAdapter à partir de la boîte à outils lorsque le **Concepteur de Dataset** est en cours se concentrer, l’Assistant démarre et vous permet de spécifier les données de source de TableAdapter des invites doivent se connecter à. Sur la page suivante, l’Assistant vous demande le type de commandes, elle doit utiliser pour communiquer avec la base de données, des instructions SQL ou procédures stockées. (Il n’apparaît pas si vous configurez un TableAdapter est déjà associé à une source de données.)
 
@@ -63,7 +64,7 @@ Le **Options avancées** dans l’Assistant permettent :
 ## <a name="configure-a-tableadapters-fill-method"></a>Configurer la méthode de remplissage d’un TableAdapter
 Parfois vous pouvez modifier le schéma de la table du TableAdapter. Pour ce faire, vous modifiez les principale du TableAdapter `Fill` (méthode). Les TableAdapters sont créés avec un serveur principal `Fill` la méthode qui définit le schéma de la table de données associée. Le serveur principal `Fill` méthode est basée sur la requête ou la procédure stockée que vous avez entré lorsque vous avez configuré à l’origine du TableAdapter. Il s’agit de la première méthode (plus haute) sous la table de données dans le Concepteur de DataSet.
 
-![TableAdapter avec plusieurs requêtes](../data-tools/media/tableadapter.gif "TableAdapter")
+![TableAdapter avec plusieurs requêtes](../data-tools/media/tableadapter.gif)
 
 Les modifications que vous apportez au TableAdapter du principal `Fill` méthode sont répercutées dans le schéma de la table de données associée. Par exemple, suppression d’une colonne de la requête dans le principal `Fill` méthode supprime également la colonne de la table de données associée. En outre, suppression de la colonne à partir de la main `Fill` méthode supprime la colonne de toutes les requêtes supplémentaires pour ce TableAdapter.
 
