@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Comment : déboguer en Mode mixte | Documents Microsoft'
 ms.custom: ''
 ms.date: 06/19/2017
@@ -50,13 +50,13 @@ Si vous n’avez pas accès au projet pour l’application appelante, vous pouve
 
     ![Activer le débogage en mode mixte](../debugger/media/dbg-mixed-mode-from-native.png "activer le débogage en mode mixte")
 
-### <a name="to-enable-mixed-mode-debugging-c-or-vb-calling-app"></a>Pour activer le débogage en mode mixte (application appelante en c# ou Visual Basic)   
+### <a name="to-enable-mixed-mode-debugging-c-or-vb-calling-app"></a>Pour activer le débogage en mode mixte (application appelante en c# ou Visual Basic)  
   
 1.  Dans **l’Explorateur de solutions**, sélectionnez le projet managé.  
   
 2.  Dans le menu **vue**, cliquez sur **Pages de propriétés**.  
   
-3.  Dans le  **\<projet > Pages de propriétés** boîte de dialogue, sélectionnez le **déboguer** onglet, puis sélectionnez **activer le débogage de code natif**
+3.  Sélectionnez l’onglet **déboguer**, puis sélectionnez **activer le débogage de code natif**
 
     ![Activer le débogage de code natif](../debugger/media/dbg-mixed-mode-from-csharp.png "activer le débogage de code natif")
   
