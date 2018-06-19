@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131611"
 ---
 # <a name="properties-window-overview"></a>Vue d'ensemble de la fenêtre Propriétés
 Le **propriétés** fenêtre est utilisée pour afficher les propriétés pour les objets sélectionnés dans les deux principaux types de fenêtres disponibles dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE). Ces deux types de fenêtres sont :  

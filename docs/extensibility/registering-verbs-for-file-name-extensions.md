@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138104"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>L’inscription des verbes aux Extensions de nom de fichier
 L’association d’une extension de nom de fichier avec une application a généralement une action par défaut qui se produit lorsqu’un utilisateur double-clique sur un fichier. Cette action est liée à un verbe, par exemple ouvrir, qui correspond à l’action de préférence.  

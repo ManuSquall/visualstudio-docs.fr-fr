@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133297"
 ---
 # <a name="include-element"></a>Élément Include
 L’élément Include spécifie un fichier qui peut se trouver sur fourni inclut le chemin d’accès pour l’insérer dans le fichier actuel.  Tous les symboles et les types définis feront partie du résultat compilé.  

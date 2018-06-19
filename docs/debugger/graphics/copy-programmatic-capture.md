@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472092"
 ---
 # <a name="copy-programmatic-capture"></a>Copier (capture par programmation)
 Copie le contenu du fichier journal (.vsglog) graphique actif dans un nouveau fichier.  

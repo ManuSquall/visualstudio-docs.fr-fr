@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475195"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Comment : restaurer les commandes masquées du débogueur
 Lorsque vous installez Visual Studio, vous êtes invité à choisir un jeu de paramètres IDE par défaut pour votre langage de programmation principal. Les paramètres IDE par défaut de quelques langages peuvent masquer certaines commandes de débogueur.  

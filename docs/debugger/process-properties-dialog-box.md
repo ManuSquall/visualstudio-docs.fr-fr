@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476807"
 ---
 # <a name="process-properties-dialog-box"></a>Boîte de dialogue Propriétés du processus
 Utilisez cette boîte de dialogue pour en savoir plus sur un processus spécifique. Pour afficher cette boîte de dialogue, déplacez le focus vers un [vue processus](../debugger/processes-view.md) fenêtre. Sélectionnez n’importe quel nœud de processus dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  

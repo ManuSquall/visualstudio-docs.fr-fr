@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134334"
 ---
 # <a name="custom-parameters"></a>Paramètres personnalisés
 Paramètres personnalisés contrôlent le fonctionnement de l’Assistant après le démarrage d’un Assistant. Un fichier .vsz connexes fournit un tableau de paramètres définis par l’utilisateur qui sont empaquetés en environnement de développement intégré (IDE) et passé à l’Assistant sous forme de tableau de chaînes au démarrage de l’Assistant. Ensuite, l’Assistant analyse le tableau de chaînes et utilise les informations pour contrôler l’opération réelle de l’Assistant. De cette manière, un Assistant peut personnaliser des fonctionnalités en fonction du contenu du fichier .vsz.  
