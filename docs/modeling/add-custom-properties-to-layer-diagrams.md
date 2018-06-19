@@ -16,6 +16,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33864188"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Ajouter des propriétés personnalisées aux diagrammes de dépendance
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120960"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 Cette interface permet à la session de débogage responsable de la joindre à un programme et obtenir le nœud de programme associé à un programme.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464964"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 Facilite le parcours de la pile à l’aide du fichier de base de données (.pdb) de débogage de programme.  

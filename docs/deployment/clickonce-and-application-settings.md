@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561699"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce et paramètres d'application
 Paramètres d’application pour Windows Forms vous permet de facilement créer, stocker et gérer des applications personnalisées et préférences utilisateur sur le client. Le document suivant explique le fonctionnement des fichiers de paramètres d’application dans une application ClickOnce, et comment ClickOnce migre les paramètres lorsque l’utilisateur met à niveau vers la version suivante.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141032"
 ---
 # <a name="vstextbuffer-object"></a>Objet de VSTextBuffer
 L’objet de mémoire tampon de texte représente un flux de texte Unicode, ce qui est généralement associé à un fichier. A <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet peut être utilisé en dehors du contexte de l’éditeur de base, comme dans le cas d’un Assistant.  

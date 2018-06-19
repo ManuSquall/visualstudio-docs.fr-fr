@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917092"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Fonctionnalités d’accessibilité Help Viewer
 Microsoft s’engage à faciliter l’utilisation de ses produits et services. Cette rubrique contient des informations sur les fonctionnalités, les produits et les services qui permettent d’accéder à Microsoft Help Viewer via un large éventail de possibilités.

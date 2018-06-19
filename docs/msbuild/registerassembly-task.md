@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569353"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly, tâche
 Lit les métadonnées dans l’assembly spécifié et ajoute les entrées nécessaires au Registre, ce qui permet aux clients COM de créer des classes [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] en toute transparence. Le comportement de cette tâche est similaire, mais pas identique, à celui de [Regasm.exe (outil Assembly Registration Tool)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).  

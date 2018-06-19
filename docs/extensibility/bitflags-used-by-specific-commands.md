@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108784"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Indicateurs de bits utilisés par des commandes spécifiques
 Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle de Source peut être modifié en définissant un ou plusieurs bits à une valeur unique. Ces valeurs sont des indicateurs de bits. Les différents indicateurs de bits utilisées par l’API de plug-in de contrôle de Source sont décrits ici, regroupés par la fonction qui les utilise.  

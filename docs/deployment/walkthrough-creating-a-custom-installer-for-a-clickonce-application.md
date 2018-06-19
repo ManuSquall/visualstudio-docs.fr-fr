@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565417"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Procédure pas à pas : création d'un programme d'installation personnalisé pour une application ClickOnce
 Toute application ClickOnce basée sur un fichier .exe peut être installée en mode silencieux et mis à jour par un programme d’installation personnalisé. Un programme d’installation personnalisé peut implémenter expérience utilisateur personnalisée pendant l’installation, y compris les boîtes de dialogue personnalisées pour les opérations de maintenance et de sécurité. Pour effectuer des opérations d’installation, le programme d’installation personnalisé utilise la <xref:System.Deployment.Application.InPlaceHostingManager> classe. Cette procédure pas à pas montre comment créer un programme d’installation personnalisé qui en mode silencieux installe une application ClickOnce.  

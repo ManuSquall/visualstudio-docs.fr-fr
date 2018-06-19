@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566132"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Comment : signer de nouveau des manifestes d'application et de déploiement
 Une fois que vous apportez des modifications aux propriétés de déploiement dans le manifeste d’application pour les applications Windows Forms, les applications Windows Presentation Foundation (xbap) ou les solutions Office, vous devez signer de nouveau l’application et les manifestes de déploiement avec un certificat. Ce processus garantit que les fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109140"
 ---
 # <a name="hitting-a-breakpoint"></a>Atteindre un point d’arrêt
 La section suivante décrit le processus lorsque le moteur de débogage (DE) accède à un point d’arrêt pendant l’exécution ou pas à pas :  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110053"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
 Spécifie les informations à récupérer sur une résolution d’échec d’un point d’arrêt.  

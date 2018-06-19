@@ -32,6 +32,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563051"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dépendance&gt; élément (déploiement ClickOnce)
 Identifie la version de l’application à installer et l’emplacement du manifeste d’application.  

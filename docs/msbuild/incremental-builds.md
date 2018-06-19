@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572974"
 ---
 # <a name="incremental-builds"></a>Builds incrémentielles
 Les builds incrémentielles sont des builds optimisées qui permettent de ne pas exécuter les cibles dont les fichiers de sortie sont à jour par rapport à leurs fichiers d’entrée correspondants. Un élément cible peut avoir à la fois un attribut `Inputs`, qui indique les éléments que la cible attend comme entrée, et un attribut `Outputs` qui indique les éléments qu’il produit comme sortie. MSBuild tente de trouver une correspondance « 1 à 1 » entre les valeurs de ces attributs. Si une correspondance « 1 à 1 » existe, MSBuild compare l’horodatage de chaque élément d’entrée avec celui de l’élément de sortie correspondant. Les fichiers de sortie sans correspondance « 1 à 1 » sont comparés à tous les fichiers d’entrée. Un élément est considéré comme à jour si son fichier de sortie a une date de création identique ou antérieure à celle du ou des fichiers d’entrée.  

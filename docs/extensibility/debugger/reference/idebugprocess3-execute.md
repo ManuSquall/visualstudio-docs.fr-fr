@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31118737"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 Continue l’exécution de ce processus à partir d’un état arrêté. N’importe quel état précédent de l’exécution (par exemple, une étape) est désactivée et que le processus commence à s’exécuter à nouveau.  
