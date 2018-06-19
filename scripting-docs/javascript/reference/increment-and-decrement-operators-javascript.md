@@ -1,12 +1,13 @@
 ---
-title: "++ (Incrémentation) et les opérateurs de décrémentation (--) (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: ++ (Incrémentation) et les opérateurs de décrémentation (--) (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - --
@@ -22,7 +23,7 @@ helpviewer_keywords:
 - decrement operators, syntax
 - -- operator
 ms.assetid: 49eaf4cf-8818-478d-a429-cdd2ece20811
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -31,6 +32,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637349"
 ---
 # <a name="increment--and-decrement----operators-javascript"></a>incrémentation (++) et décrémentation (--), opérateurs (JavaScript)
 Les incréments d’opérateur d’incrémentation et de l’opérateur de décrémentation décrémente la valeur d’une variable d’une unité.  

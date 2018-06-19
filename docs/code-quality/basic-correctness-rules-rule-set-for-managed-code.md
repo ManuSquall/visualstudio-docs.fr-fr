@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900628"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de vérification de base pour le code managé
 L’ensemble de règles de base des règles de vérification se concentre sur les erreurs de logique et les erreurs courantes lors de l’utilisation des API framework. Les règles de vérification de base incluent les règles dans l’ensemble de règles des règles minimales recommandées. Pour plus d’informations, consultez [gérés recommandé de règles défini pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) vous devez inclure cet ensemble de règles pour développer la liste d’avertissements que les règles minimales recommandées.

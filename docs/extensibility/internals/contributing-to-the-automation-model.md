@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130516"
 ---
 # <a name="contributing-to-the-automation-model"></a>Qui contribuent au modèle Automation
 Visual Studio fournit un ensemble d’interfaces d’automation pour la personnalisation de l’environnement. Le modèle automation est le modèle objet qui permet aux utilisateurs finaux de créer des extensions et les compléments Visual Studio.  

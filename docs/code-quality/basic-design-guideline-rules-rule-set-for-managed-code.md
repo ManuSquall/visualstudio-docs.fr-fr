@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31902270"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de conception de base pour le code managé
 Vous pouvez utiliser les règles de conception de base Microsoft ensemble de règles à rendre votre code plus facile à comprendre et à utiliser. Vous devez inclure cet ensemble de règles si votre projet contient du code de bibliothèque ou si vous souhaitez appliquer les meilleures pratiques pour le code qui est facile à gérer.

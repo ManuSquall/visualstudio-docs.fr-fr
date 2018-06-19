@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926377"
 ---
 # <a name="edit-data-in-datasets"></a>Modifier des données dans les jeux de données
 Pour modifier les données dans les tables de données de la même manière que vous modifiez les données dans une table dans une base de données. Le processus peut inclure insertion, mise à jour et suppression d’enregistrements dans la table. Dans un formulaire lié aux données, vous pouvez spécifier quels champs sont modifiables par l’utilisateur. Dans ce cas, l’infrastructure de liaison de données gère tout le suivi des modifications afin que les modifications puissent être envoyées à la base de données ultérieurement. Si les modifications apportées par programme aux données et que vous avez l’intention de renvoyer ces modifications à la base de données, vous devez utiliser les objets et les méthodes qui effectuent le suivi des modifications pour vous.

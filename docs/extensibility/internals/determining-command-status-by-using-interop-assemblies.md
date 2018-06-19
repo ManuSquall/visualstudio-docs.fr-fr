@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128165"
 ---
 # <a name="determining-command-status-by-using-interop-assemblies"></a>Déterminer l’état de la commande à l’aide des assemblys d’interopérabilité
 Un VSPackage doit conserver le suivi de l’état des commandes qu’il peut gérer. L’environnement ne peut pas déterminer quand une commande au sein de votre VSPackage est activée ou désactivée. Il incombe à votre VSPackage pour informer l’environnement à propos des États de la commande, par exemple, l’état général de commandes telles que **couper**, **copie**, et **coller**.  

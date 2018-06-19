@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127923"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Création d’un Package de programme d’installation de Windows
 Les lecteurs de données du modèle de programme d’installation de Windows. Au lieu d’écrire un script de procédure pour copier des fichiers et d’écrire des entrées de Registre, par exemple, vous créer des lignes et des colonnes dans les tables de base de données qui contiennent des données de fichiers et du Registre.  

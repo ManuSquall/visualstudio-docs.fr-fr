@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922440"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>Raccourcis clavier pour le concepteur XAML
 Les raccourcis clavier peuvent accélérer votre travail dans le concepteur XAML en réduisant une action, qui nécessiterait plusieurs clics de souris, à un seul raccourci clavier.

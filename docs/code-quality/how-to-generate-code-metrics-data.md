@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919290"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Comment : générer des données de métrique du code
 

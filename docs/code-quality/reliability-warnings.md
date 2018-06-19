@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916746"
 ---
 # <a name="reliability-warnings"></a>avertissements liés à la fiabilité
 Avertissements de fiabilité prennent en charge la fiabilité de bibliothèques et des applications, notamment l’utilisation de mémoire et le thread correcte.

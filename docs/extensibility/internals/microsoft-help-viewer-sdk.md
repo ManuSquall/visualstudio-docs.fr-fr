@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135409"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit de développement logiciel de Microsoft Help Viewer
 Cet article contient les tâches suivantes pour les intégrateurs de la visionneuse d’aide Visual Studio :  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949499"
 ---
 # <a name="property-pages-javascript"></a>Pages de propriétés (JavaScript)
 Les **Pages de propriétés** permettent d’accéder aux paramètres d’un projet. Vous pouvez utiliser les pages qui s’affichent dans les **Pages de propriétés** pour modifier les propriétés d’un projet.

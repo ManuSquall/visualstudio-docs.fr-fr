@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952613"
 ---
 # <a name="customizing-deletion-behavior"></a>Personnalisation du comportement de la commande de suppression
 La suppression d'un élément provoque généralement aussi la suppression des éléments associés. Toutes les relations qui y sont connectées et tous les éléments enfants sont supprimés. Ce comportement est nommé *suppression de la propagation*. Vous pouvez personnaliser la propagation de la suppression, par exemple pour que des éléments associés supplémentaires soient supprimés. En écrivant du code de programme, vous pouvez faire en sorte que la propagation de la suppression dépende de l'état du modèle. Vous pouvez aussi provoquer d'autres modifications en réponse à une suppression.

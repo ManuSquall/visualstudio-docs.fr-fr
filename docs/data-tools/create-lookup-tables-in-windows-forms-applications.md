@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917066"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Créer des tables de recherche dans les applications Windows Forms
 Le terme *table de recherche* décrit les contrôles qui sont liés aux tables de données connexes deux. Ces contrôles de recherche affichent les données à partir de la première table selon une valeur sélectionnée dans la seconde table.

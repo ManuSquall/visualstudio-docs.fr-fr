@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946596"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Paramètres avancés pour les services, boîte de dialogue
 Les services d’application cliente fournissent un accès simplifié aux services de connexion, de rôles et de profil [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] à partir des applications Windows Forms et WPF (Windows Presentation Foundation). Vous pouvez utiliser la page **Services** du **Concepteur de projet** pour configurer les services d’application cliente. Pour plus d’informations sur la page **Services**, consultez [Services, page du Concepteur de projet](../../ide/reference/services-page-project-designer.md).

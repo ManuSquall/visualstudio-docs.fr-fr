@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134771"
 ---
 # <a name="authoring-vsct-files"></a>Création. Fichiers VSCT
 Ce document montre comment créer un fichier .vsct pour ajouter des éléments de menu, les barres d’outils et autres éléments d’interface (interface utilisateur) à l’environnement de développement intégré (IDE) Visual Studio. Utilisez ces étapes lorsque vous ajoutez des éléments d’interface utilisateur à un Package Visual Studio (VSPackage) qui ne dispose pas déjà d’un fichier .vsct.  

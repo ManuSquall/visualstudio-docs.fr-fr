@@ -1,13 +1,13 @@
 ---
 title: RegExp, objet (JavaScript) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - RegExp
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - RegExp object, overview
 - RegExp object
 ms.assetid: 7f6b1073-8cbb-49ed-94b6-56833ba663c5
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640779"
 ---
 # <a name="regexp-object-javascript"></a>RegExp, objet (JavaScript)
 Un objet global intrinsèque qui stocke des informations sur les résultats du modèle d’expression régulière correspond à.  
