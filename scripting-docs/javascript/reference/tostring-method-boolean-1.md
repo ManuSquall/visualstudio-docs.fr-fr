@@ -1,19 +1,20 @@
 ---
-title: "ToString, méthode (Boolean) 1 | Documents Microsoft"
-ms.custom: 
+title: ToString, méthode (Boolean) 1 | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: c46b43c0-6946-407a-b0e0-49cba90e226a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640339"
 ---
 # <a name="tostring-method-boolean-1"></a>ToString, méthode (Boolean) 1
 Retourne la représentation d'un objet sous forme de chaîne.  

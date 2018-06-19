@@ -1,19 +1,20 @@
 ---
-title: "Gestion des détecteurs d’événements | Microsoft Docs"
-ms.custom: 
+title: Gestion des détecteurs d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 87717f5d-b0c6-4c8d-a293-476002b7bfcf
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569219"
 ---
 # <a name="managing-event-listeners"></a>Gestion des détecteurs d’événements
 Si la durée de vie d’un élément ou d’un objet DOM est différente de la durée de vie de son détecteur d’événements associé, vous devrez peut-être utiliser la méthode [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx) pour éviter les fuites de mémoire.  

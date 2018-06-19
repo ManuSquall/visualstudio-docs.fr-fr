@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 5c2dfde3fa875f7420e88a7aadde8f73748cba9a
+ms.openlocfilehash: 81c374a4605baabe50c093699a8aa8a347f08493
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
-ms.locfileid: "24565439"
+ms.locfileid: "24565369"
 ---
-Visual Studio Team Edition for Testers
+Visual Studio Team Foundation Server 2010

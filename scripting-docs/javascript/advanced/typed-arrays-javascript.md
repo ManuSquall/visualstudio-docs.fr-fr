@@ -1,19 +1,20 @@
 ---
-title: "Tableaux typés (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Tableaux typés (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: fa82c562-0ebf-4559-aecc-166e59f7fb64
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569359"
 ---
 # <a name="typed-arrays-javascript"></a>Tableaux typés (JavaScript)
 Vous pouvez utiliser les tableaux typés pour gérer des données binaires de sources telles que les protocoles réseau, les formats de fichier binaire et les mémoires tampons de graphiques brutes. Les tableaux typés peuvent également être utilisés pour gérer des données binaires en mémoire avec des dispositions d'octets connues.  

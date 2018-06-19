@@ -1,12 +1,13 @@
 ---
-title: "Contrôle du flux de programme (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Contrôle du flux de programme (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -18,7 +19,7 @@ helpviewer_keywords:
 - break statement
 - control flow, about control flow
 ms.assetid: 4ef58c82-e5d6-4b09-9458-cf0aa3b39bf5
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569709"
 ---
 # <a name="controlling-program-flow-javascript"></a>Contrôle du flux de programme (JavaScript)
 Normalement, les instructions d'un script [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] sont exécutées l'une après l'autre, selon l'ordre dans lequel elles sont écrites. C'est pourquoi on parle d'exécution séquentielle. C'est la direction par défaut du déroulement du programme.  

@@ -1,13 +1,13 @@
 ---
 title: JsGetTypedArrayInfo, fonction | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 992bc4e9-3d06-4ad2-8b6b-88a437360f81
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -16,6 +16,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568169"
 ---
 # <a name="jsgettypedarrayinfo-function"></a>Fonction JsGetTypedArrayInfo
 Obtient les propriétés fréquemment utilisées d’un tableau typé.  

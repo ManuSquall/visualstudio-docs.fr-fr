@@ -1,13 +1,13 @@
 ---
-title: "Opérateur de décalage vers la droite au niveau du bit (&gt;&gt;) (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: Opérateur de décalage vers la droite au niveau du bit (&gt;&gt;) (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '>>'
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - '>> operator, bitsets'
 - bitwise operators, right shift operator
 ms.assetid: 89dc57e0-0b0d-49a4-a8ed-56d8bb20f3e3
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634269"
 ---
 # <a name="bitwise-right-shift-operator-gtgt-javascript"></a>Opérateur de décalage vers la droite au niveau du bit (&gt;&gt;) (JavaScript)
 Décale vers la droite les bits d’une expression, en conservant le signe.  

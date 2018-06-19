@@ -1,13 +1,13 @@
 ---
-title: "Opérateur conditionnel (ternaire) ( ? :)) (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: Opérateur conditionnel (ternaire) ( ? :)) (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '?:'
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - conditional (Ternary) operator
 - ternary
 ms.assetid: 7399ac32-9324-4a9a-ae76-be9c0f9df81c
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634189"
 ---
 # <a name="conditional-ternary-operator--javascript"></a>conditionnel, opérateur (ternaire) (?:) (JavaScript)
 En fonction d'une condition, retourne l'une ou l'autre des deux expressions.  

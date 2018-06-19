@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 5c2dfde3fa875f7420e88a7aadde8f73748cba9a
+ms.openlocfilehash: ce4b6ce80e25839fc27231369f0830e184f5a77e
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
-ms.locfileid: "24565439"
+ms.locfileid: "24565419"
 ---
-Visual Studio Team Edition for Testers
+SQL Server 2008 Express

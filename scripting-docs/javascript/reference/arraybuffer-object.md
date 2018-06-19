@@ -1,19 +1,20 @@
 ---
 title: Objet ArrayBuffer | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9fda1261-f450-493b-b3db-ecfa9ca93cd7
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634319"
 ---
 # <a name="arraybuffer-object"></a>ArrayBuffer, objet
 Représente une mémoire tampon brute de données binaires, qui est utilisée pour stocker les données pour les différents tableaux typés. `ArrayBuffers`Impossible de lire à partir d’ou écrits directement, mais ils peuvent être passés à un tableau typé ou [objet DataView](../../javascript/reference/dataview-object.md) pour interpréter la mémoire tampon brute en fonction des besoins.  

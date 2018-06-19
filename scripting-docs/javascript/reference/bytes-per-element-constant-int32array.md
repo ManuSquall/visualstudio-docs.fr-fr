@@ -1,19 +1,20 @@
 ---
 title: Bytes_per_element, constante (Int32Array) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 95a84abb-c8d3-4fa9-8944-0fde9cfdb3df
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633959"
 ---
 # <a name="bytesperelement-constant-int32array"></a>BYTES_PER_ELEMENT, constante (Int32Array)
 Taille en octets de chaque élément contenu dans le tableau.  

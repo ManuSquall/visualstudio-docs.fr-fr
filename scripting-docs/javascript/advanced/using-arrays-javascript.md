@@ -1,12 +1,13 @@
 ---
 title: Utilisation de tableaux (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: 785c5acd-b8b3-4152-af9a-dd42ecdd75ba
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569159"
 ---
 # <a name="using-arrays-javascript"></a>Utilisation de tableaux (JavaScript)
 Les tableaux dans [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] sont *partiellement alloués*. Autrement dit, si vous avez un tableau avec trois éléments numérotés 0, 1 et 2, vous pouvez créer l’élément 50 sans vous soucier des éléments 3 à 49. Si le tableau a une variable de longueur automatique (pour obtenir une explication de l’analyse automatique de la longueur d’un tableau, consultez [Objets intrinsèques](../../javascript/intrinsic-objects-javascript.md)), la variable de longueur est définie avec la valeur 51 et non 4. Vous pouvez créer des tableaux sans aucun écart dans la numérotation des éléments, mais vous n’êtes pas obligé de le faire.  
