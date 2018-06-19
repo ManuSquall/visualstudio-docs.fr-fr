@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570078"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise, élément (MSBuild)
 Spécifie le bloc de code à exécuter si et seulement si les conditions de tous les éléments `When` correspondent à la valeur `false`.  

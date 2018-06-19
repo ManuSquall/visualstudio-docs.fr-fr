@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31124749"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 Cette interface fournit une interface proxy pour afficher et modifier les données d’un objet.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574257"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
 Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tous les types de projets ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier Microsoft.Build.CommonTypes.xsd.  

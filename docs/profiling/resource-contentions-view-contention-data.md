@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584137"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Mode Conflits de ressources - Données de conflit
 Le mode Conflits de ressources répertorie des données de conflit pour les ressources qui étaient la source d’événements de conflit. Un événement de conflit se produit quand une fonction dans un thread est forcée à attendre l’accès à la ressource parce qu’une fonction dans un autre thread a acquis l’accès exclusif à la ressource. Chaque ressource est le nœud racine d’une arborescence des appels qui affiche les chemins d’exécution de fonctions qui ont entraîné les événements de conflit.  

@@ -27,6 +27,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264774"
 ---
 # <a name="reduce-method-array-javascript"></a>reduce, méthode (Array) (JavaScript)
 Appelle la fonction de rappel spécifiée pour tous les éléments dans un tableau. La valeur de retour de la fonction de rappel est le résultat accumulé, et est fournie en tant qu’argument dans le prochain appel à la fonction de rappel.  

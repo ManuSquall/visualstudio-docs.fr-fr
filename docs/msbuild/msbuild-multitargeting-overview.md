@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569168"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Vue d'ensemble du multi-ciblage MSBuild
 MSBuild vous permet de compiler une application pour l’exécuter sur une version du .NET Framework donnée et sur une plateforme système donnée. Par exemple, vous pouvez compiler une application qui s’exécute sur le .NET Framework version 2.0 sur une plateforme 32 bits, et compiler la même application pour qu’elle s’exécute sur le .NET Framework version 4.5 sur une plateforme 64 bits.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475809"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Comment : déboguer à partir d’un projet DLL dans Visual Studio
 Un pour déboguer un projet DLL consiste à spécifier l’application appelante dans les propriétés de projet du projet DLL et vous pouvez ensuite démarrer le débogage à partir du projet DLL lui-même. Pour cette méthode fonctionne, l’application doit appeler la DLL, et la DLL doit être dans l’emplacement où l’application s’attend à trouver (dans le cas contraire, l’application peut rechercher une autre version de la DLL et qui charge à la place, et il ne sera pas atteint vos points d’arrêt). Pour les autres méthodes de débogage de DLL, consultez [le débogage de projets de DLL](../debugger/debugging-dll-projects.md).

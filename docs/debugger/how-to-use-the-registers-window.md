@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477009"
 ---
 # <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Afficher les valeurs de Registre et utiliser la fenêtre registres dans le débogueur Visual Studio
 La fenêtre Registres est disponible uniquement si le débogage au niveau des adresses est activé dans le **Options** boîte de dialogue, **débogage** nœud, **général** catégorie.  

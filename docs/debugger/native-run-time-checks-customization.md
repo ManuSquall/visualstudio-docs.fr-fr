@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480900"
 ---
 # <a name="native-run-time-checks-customization"></a>Personnalisation des contrôles natifs à l'exécution
 Lorsque vous compilez avec **/RTC.** (contrôles d’exécution) ou utilisez le `runtime_checks` pragma, la bibliothèque Runtime C fournit les contrôles natifs à l’exécution. Dans certains cas, il est utile de personnaliser le contrôle à l'exécution :  

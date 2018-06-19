@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562752"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Accès aux données locales et distantes dans les applications ClickOnce
 La plupart des applications consomment ou produisent des données. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vous propose diverses options pour lire et écrire les données, à la fois localement et à distance.  

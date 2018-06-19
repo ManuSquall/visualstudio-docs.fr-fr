@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31124641"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfaces (débogage de Visual Studio)
 Méthodes sont répertoriées par ordre alphabétique sous chaque interface dans la table des matières et sur la page de l’interface dans l’ordre Vtable.  

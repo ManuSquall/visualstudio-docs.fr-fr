@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704221"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;assembly&gt; élément (déploiement ClickOnce)
 L’élément de niveau supérieur pour le manifeste d’application.  

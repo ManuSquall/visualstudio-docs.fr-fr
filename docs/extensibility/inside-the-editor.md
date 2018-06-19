@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265773"
 ---
 # <a name="inside-the-editor"></a>Dans l’éditeur
 L’éditeur est composé d’un nombre de différents sous-systèmes, qui sont conçues pour conserver l’éditeur de texte modèle distinct à partir de l’affichage de texte et de l’interface utilisateur.  

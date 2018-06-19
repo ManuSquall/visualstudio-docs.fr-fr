@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575856"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference, tâche
 Détermine tous les assemblys qui dépendent des assemblys spécifiés. Cela comprend les dépendances de deuxième et `n`ième ordres.  

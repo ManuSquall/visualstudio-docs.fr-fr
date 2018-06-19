@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548386"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Comment : ajouter un lanceur de boîte de dialogue à un groupe de ruban
   Vous pouvez ajouter un lanceur de boîte de dialogue à un groupe sur un ruban. Un lanceur de boîte de dialogue est une petite icône qui apparaît dans un groupe. Les utilisateurs cliquent sur cette icône pour ouvrir des boîtes de dialogue connexes ou des volets de tâches qui fournissent des options supplémentaires qui se rapportent au groupe.  

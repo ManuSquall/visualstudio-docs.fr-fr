@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572593"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Écriture de journaux prenant en charge plusieurs processeurs
 La capacité de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] à tirer parti de plusieurs processeurs peut accélérer le temps de génération d’un projet. Toutefois, elle rend plus complexe la journalisation des événements de build. Dans un environnement à un seul processeur, les événements, messages, avertissements et erreurs arrivent au journal (logger) de manière prévisible et séquentielle. Toutefois, dans un environnement multiprocesseur, les événements provenant de différentes sources peuvent arriver en même temps ou dans le désordre. Pour résoudre ce problème, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit un journal multiprocesseur, ainsi qu’un nouveau modèle de journalisation, qui vous permet de créer des « journaux de transfert » personnalisés.  

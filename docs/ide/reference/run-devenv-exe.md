@@ -22,6 +22,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704627"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 Compile et exécute la solution ou le projet spécifié.

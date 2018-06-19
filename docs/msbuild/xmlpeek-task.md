@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570741"
 ---
 # <a name="xmlpeek-task"></a>Tâche XmlPeek
 Retourne des valeurs telles que spécifiées par la requête XPath depuis un fichier XML.  

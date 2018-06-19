@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561348"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Comment : spécifier un autre emplacement pour les mises à jour du déploiement
 Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application initialement à partir d’un CD ou un partage de fichiers, mais l’application doit rechercher des mises à jour périodiques sur le Web. Vous pouvez spécifier un autre emplacement pour les mises à jour dans votre manifeste de déploiement afin que votre application peut mettre à jour automatiquement à partir du Web après son installation initiale.  

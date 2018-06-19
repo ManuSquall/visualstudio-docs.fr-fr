@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569709"
 ---
 # <a name="tooltaskextension-base-class"></a>Classe de base ToolTaskExtension
 De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, laquelle hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>, qui hérite elle-même de la classe <xref:Microsoft.Build.Utilities.Task>. Cette chaîne d'héritage ajoute plusieurs paramètres aux tâches qui en dérivent. Ces paramètres sont répertoriés dans ce document.  

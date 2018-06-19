@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575376"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Journalisation dans un environnement multiprocesseur
 La capacité de MSBuild à utiliser plusieurs processeurs peut fortement diminuer le temps de génération d’un projet. Elle rend cependant plus complexe la journalisation. Dans un environnement à un seul processeur, le journal (logger) peut gérer les événements entrants, les messages, les avertissements et les erreurs de façon prévisible et séquentielle. Cependant, dans un environnement multiprocesseur, des événements provenant de différentes sources peuvent arriver simultanément ou dans le désordre. MSBuild fournit un nouveau journal prenant en charge plusieurs processeurs et permet la création « de journaux de transfert » personnalisés.  
