@@ -1,13 +1,13 @@
 ---
-title: "Sort, méthode (Array) (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: Sort, méthode (Array) (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sort
@@ -25,6 +25,7 @@ ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/05/2018
+ms.locfileid: "28987813"
 ---
 # <a name="sort-method-array-javascript"></a>sort, méthode (Array) (JavaScript)
 Trie une `Array`.  

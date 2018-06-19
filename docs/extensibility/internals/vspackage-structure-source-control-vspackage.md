@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142787"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Structure de VSPackage (VSPackage de contrôle de code Source)
 Le Kit de développement du Package du contrôle de Source fournit des directives pour la création d’un VSPackage qui autorisent un implémenteur de contrôle de code source d’intégrer ses propres fonctionnalités de contrôle de code source avec le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement. Un VSPackage est un composant COM qui est généralement chargé à la demande par le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) basé sur les services qui sont publiés par le package dans ses entrées de Registre. Chaque VSPackage doit implémenter la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Un VSPackage consomme généralement les services proposés par le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE et proffers certains services qui lui sont propres.  

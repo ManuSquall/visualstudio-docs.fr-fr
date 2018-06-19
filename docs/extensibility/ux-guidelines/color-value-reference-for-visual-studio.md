@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148735"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Référence de valeur de couleur pour Visual Studio
 Cette rubrique est une référence pour la création de nouveaux jetons de couleur. Lorsque vous créez une nouvelle interface utilisateur, vous pouvez utiliser des couleurs similaires à partir de l’interface utilisateur existante pour choisir les couleurs pour chaque thème principal et le nom de la couleur système pour cet élément de thèmes de contraste élevé. 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143476"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>La mise à niveau de projet personnalisés et les modèles d’élément pour Visual Studio 2017
 

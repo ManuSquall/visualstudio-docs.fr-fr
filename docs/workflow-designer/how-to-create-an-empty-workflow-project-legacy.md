@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979436"
 ---
 # <a name="how-to-create-an-empty-workflow-project-legacy"></a>Procédure : créer un projet de workflow vide (héritée)
 

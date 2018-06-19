@@ -1,5 +1,5 @@
 ---
-title: Émulation de l’utilisation réelle d’un site web pour les tests de charge dans Visual Studio | Microsoft Docs
+title: Émulation de l’utilisation réelle d’un site web pour les tests de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,14 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0458135040209f79648ca299bc56ba3acae21908
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9ec5777bc1a2bfffc650497314a219d071057beb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977042"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-models"></a>Émuler l’utilisation réelle attendue d’un site web ou d’une application dans un test de charge à l’aide de modèles de combinaison de tests
 

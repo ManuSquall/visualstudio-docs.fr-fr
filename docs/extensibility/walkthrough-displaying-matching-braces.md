@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143317"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Procédure pas à pas : Affichage des accolades correspondantes
 Vous pouvez implémenter basée sur le langage des fonctionnalités telles que les accolades correspondantes en définissant les accolades que vous souhaitez faire correspondre et en ajoutant une balise de marqueur de texte pour les accolades correspondantes lorsque le point d’insertion se trouve sur un des accolades. Vous pouvez définir des accolades dans le contexte d’une langue, ou vous pouvez définir votre propre type de contenu et d’extension de nom du fichier et appliquer les balises à uniquement ce type, ou vous pouvez appliquer les balises à un type de contenu existant (par exemple « text »). La procédure suivante montre comment appliquer des étiquettes pour le type de contenu « text » de la correspondance des accolades.  

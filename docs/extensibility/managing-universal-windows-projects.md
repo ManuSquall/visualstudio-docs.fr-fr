@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147592"
 ---
 # <a name="managing-universal-windows-projects"></a>La gestion des projets Windows universel
 Les applications Windows universelles sont des applications qui ciblent Windows 8.1 et Windows Phone 8.1, permettant aux développeurs d’utiliser du code et autres ressources sur les deux plateformes. Le code partagé et les ressources sont conservés dans un projet partagé, tandis que le code spécifique à la plateforme et les ressources sont conservées dans des projets séparés, un pour Windows et l’autre pour Windows Phone. Pour plus d’informations sur les applications Windows universelles, consultez [les applications Windows universelles](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Les extensions Visual Studio qui gèrent les projets Sachez que les projets d’application Windows universelles ont une structure différente de celle à partir d’applications de plate-forme unique. Cette procédure pas à pas montre comment naviguer dans le projet partagé et de gérer les éléments partagés.  

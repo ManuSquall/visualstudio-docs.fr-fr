@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31970123"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Développement d'applications avec Workflow Designer
 

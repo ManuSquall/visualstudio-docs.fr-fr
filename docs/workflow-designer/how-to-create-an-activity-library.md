@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974042"
 ---
 # <a name="how-to-create-an-activity-library"></a>Procédure : créer une bibliothèque d'activités
 Les activités personnalisées permettent de modeler vos processus d'entreprise particuliers dans un workflow. Le modèle de bibliothèque d’activités dans Visual Studio 2010 a été fourni pour vous permettre de créer visuellement à l’aide du Concepteur de flux de travail Windows de telles activités personnalisées.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147217"
 ---
 # <a name="walkthrough-highlighting-text"></a>Procédure pas à pas : Mise en surbrillance de texte
 Vous pouvez ajouter différents effets visuels à l’éditeur en créant des composants de Managed Extensibility Framework (MEF). Cette procédure pas à pas montre comment mettre en surbrillance toutes les occurrences du mot actuel dans un fichier texte. Si un mot apparaît plusieurs fois dans un fichier texte, et que vous placez le point d’insertion dans une seule occurrence, toutes les occurrences sont mis en surbrillance.  

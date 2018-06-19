@@ -1,5 +1,5 @@
 ---
-title: API de test de performances web dans Visual Studio | Microsoft Docs
+title: API de test de performances web dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,14 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed7cbc7375cbf416d82a56c140479925569dad8d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 330e0aa9bcf51b0ce9d57ea93a13303b7a356982
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31969127"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Comment : utiliser l'API du test des performances de site Web
 
@@ -23,7 +25,8 @@ Vous pouvez écrire du code pour vos tests de performances de site Web. L’API 
  Vous pouvez également utiliser l'API de test de performances de site Web pour créer par programmation et enregistrer des tests de performances de site Web déclaratifs. Pour ce faire, utilisez les classes <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> et <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer>.
 
 > [!TIP]
->  Utilisez l'Explorateur d'objets pour examiner l'espace de noms <xref:Microsoft.VisualStudio.TestTools.WebTesting>. Les éditeurs Visual C# et Visual Basic offrent tous deux la prise en charge IntelliSense du codage avec les classes de l'espace de noms.
+> Utilisez l'Explorateur d'objets pour examiner l'espace de noms <xref:Microsoft.VisualStudio.TestTools.WebTesting>. Les éditeurs Visual C# et Visual Basic offrent tous deux la prise en charge IntelliSense du codage avec les classes de l'espace de noms.
+
 
  Vous pouvez également créer des plug-ins pour les tests de charge. Pour plus d’informations, consultez [Guide pratique pour utiliser l’API de test de charge](../test/how-to-use-the-load-test-api.md) et [Guide pratique pour créer un plug-in de test de charge](../test/how-to-create-a-load-test-plug-in.md).
 

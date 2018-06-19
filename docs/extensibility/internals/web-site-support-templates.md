@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147126"
 ---
 # <a name="web-site-support-templates"></a>Modèles de prise en charge des sites Web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Modèles de projet et d’élément de site Web fournissent un site Web réutilisables et personnalisables des stubs qui accélèrent le processus de développement en supprimant la nécessité de créer de nouveaux projets de site Web et des éléments à partir de zéro. Pour plus d’informations sur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modèles, consultez [création de modèles de projet et élément](../../ide/creating-project-and-item-templates.md).

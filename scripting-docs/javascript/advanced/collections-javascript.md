@@ -1,19 +1,20 @@
 ---
 title: Collections (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 23c26185-6a7b-4b69-9d22-63e1841b4905
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/12/2018
+ms.locfileid: "27783050"
 ---
 # <a name="collections-javascript"></a>Collections (JavaScript)
 Vous pouvez utiliser les objets de collection [Map](../../javascript/reference/map-object-javascript.md), [Set](../../javascript/reference/set-object-javascript.md) et [WeakMap](../../javascript/reference/weakmap-object-javascript.md) pour stocker des valeurs et des objets. Ces objets fournissent des méthodes pratiques pour ajouter et extraire les membres en utilisant une clé ou une valeur au lieu d'un index. Pour accéder aux membres d'une collection à l'aide d'un index, utilisez un objet `Array`. Pour plus d’informations, consultez [Utilisation de tableaux](../../javascript/advanced/using-arrays-javascript.md).  

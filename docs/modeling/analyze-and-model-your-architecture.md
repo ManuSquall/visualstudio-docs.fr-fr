@@ -37,6 +37,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33106958"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analyser et modéliser votre architecture
 Assurez-vous que votre application répond aux impératifs de l’architecture en utilisant Visual Studio architecture et modélisation des outils permettant de concevoir et modéliser votre application.

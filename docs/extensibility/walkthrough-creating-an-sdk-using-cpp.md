@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147579"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Procédure pas à pas : Création d’un kit de développement à l’aide de C++
 Cette procédure pas à pas montre comment créer une bibliothèque C++ native mathématiques SDK, package le Kit de développement logiciel comme un Visual Studio Extension (VSIX) et l’utiliser pour créer une application. La procédure pas à pas est divisé en comme suit :  
