@@ -1,13 +1,13 @@
 ---
-title: "Au niveau du bit ou opérateur d’assignation (| =) (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: Au niveau du bit ou opérateur d’assignation (| =) (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '|='
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - bitwise operators, OR operator
 - OR operator
 ms.assetid: 9b424ff6-4442-4621-b3b6-83e7fd1e5cd5
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633889"
 ---
 # <a name="bitwise-or-assignment-operator--javascript"></a>OR, opérateur d'assignation de bits (|=) (JavaScript)
 Effectue une opération de bits OR sur la valeur d'une variable et la valeur d'une expression, puis assigne le résultat à la variable.  

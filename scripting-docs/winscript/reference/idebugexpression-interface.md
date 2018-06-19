@@ -1,16 +1,16 @@
 ---
 title: IDebugExpression (Interface) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpression interface
 ms.assetid: 36c00ffb-7160-4c30-a2c9-c9d70c8213cd
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727789"
 ---
 # <a name="idebugexpression-interface"></a>IDebugExpression, interface
 Représente une expression évaluée de façon asynchrone. En général, les moteurs de script implémentent cette interface. En règle générale, un débogueur IDE utilise cette interface pour activer une fenêtre de l’exécution immédiate ou de fenêtre Espion.  

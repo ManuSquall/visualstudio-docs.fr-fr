@@ -1,13 +1,13 @@
 ---
-title: "test, méthode (Regular Expression) (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: test, méthode (Regular Expression) (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - test
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - test method
 ms.assetid: 4f4b6e39-cb1a-4be9-a66f-7b846075580d
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640749"
 ---
 # <a name="test-method-regular-expression-javascript"></a>test, méthode (Regular Expression) (JavaScript)
 Retourne une valeur booléenne qui indique si un modèle existe dans une chaîne recherchée.  

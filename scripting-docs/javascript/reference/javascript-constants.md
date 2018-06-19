@@ -1,13 +1,13 @@
 ---
 title: JavaScript, constantes | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - constants [JavaScript]
 ms.assetid: 35b141cc-8116-47b1-bc0b-0f22e182f7e7
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637999"
 ---
 # <a name="javascript-constants"></a>JavaScript, constantes
 Le tableau suivant répertorie prédéfinies [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] constantes que vous pouvez utiliser dans les expressions.  

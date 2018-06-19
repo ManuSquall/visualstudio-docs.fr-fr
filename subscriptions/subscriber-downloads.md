@@ -14,6 +14,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065155"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Utilisation de téléchargements réservés aux abonnés dans des abonnements Visual Studio
 Dans le cadre de vos avantages réservés aux abonnés, vous avez accès à un large éventail de téléchargements de logiciels.  

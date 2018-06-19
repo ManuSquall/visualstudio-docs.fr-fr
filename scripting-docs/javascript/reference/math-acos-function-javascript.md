@@ -1,13 +1,13 @@
 ---
 title: Math.ACOS, fonction (JavaScript) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - acos
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - acos method
 - arcosine method
 ms.assetid: 828cb3c3-bdf7-4bb7-97ae-3617ce4b2d62
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638339"
 ---
 # <a name="mathacos-function-javascript"></a>Math.acos, fonction (JavaScript)
 Retourne l’arc cosinus (ou cosinus inverse) d’un nombre.  

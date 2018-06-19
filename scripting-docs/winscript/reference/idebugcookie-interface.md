@@ -1,16 +1,16 @@
 ---
 title: IDebugCookie (Interface) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugCookie interface
 ms.assetid: 0dbc75d9-6f33-400f-a5bf-9122cf534082
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725979"
 ---
 # <a name="idebugcookie-interface"></a>IDebugCookie, interface
 Permet le cookie de débogage à définir, pour une utilisation avec le `IMachineDebugManagerCookie` interface. Pour plus d’informations, consultez [IMachineDebugManagerCookie (Interface)](../../winscript/reference/imachinedebugmanagercookie-interface.md). Cette interface est implémentée par le Gestionnaire de processus déboguer (PDM) et utilisée par les débogueurs de script.  

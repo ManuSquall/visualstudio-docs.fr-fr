@@ -1,13 +1,13 @@
 ---
 title: Object.getOwnPropertyDescriptor, fonction (JavaScript) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - getOwnPropertyDescriptor method [JavaScript]
 ms.assetid: 8f0e1c90-c4f9-44c4-bf76-726bacecbc14
-caps.latest.revision: 
+caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639029"
 ---
 # <a name="objectgetownpropertydescriptor-function-javascript"></a>Object.getOwnPropertyDescriptor, fonction (JavaScript)
 Obtient le propre descripteur de propriété de l'objet spécifié. Le propre descripteur de propriété est un descripteur qui est défini directement sur l'objet et non hérité du prototype de l'objet.  

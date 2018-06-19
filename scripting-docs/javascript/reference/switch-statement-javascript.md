@@ -1,13 +1,13 @@
 ---
 title: switch, instruction (JavaScript) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - switch_JavaScriptKeyword
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords:
 - switch statement
 ms.assetid: 61f80e8b-3739-4146-a893-c2832d92b28c
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641309"
 ---
 # <a name="switch-statement-javascript"></a>switch, instruction (JavaScript)
 Active l'exécution d'une ou de plusieurs instructions quand la valeur d'une expression spécifiée correspond à une étiquette donnée.  

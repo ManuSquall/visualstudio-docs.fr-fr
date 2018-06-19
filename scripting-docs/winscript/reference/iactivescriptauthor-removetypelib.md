@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24645529"
 ---
 # <a name="iactivescriptauthorremovetypelib"></a>IActiveScriptAuthor::RemoveTypeLib
 Supprime une bibliothèque de types à partir de l’espace de noms du moteur de création de script.  

@@ -1,13 +1,13 @@
 ---
-title: "setUTCFullYear, méthode (Date) (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: setUTCFullYear, méthode (Date) (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - setUTCFullYear
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - setUTCFullYear method
 - UTC dates, setting
 ms.assetid: e6c51b49-0149-4f9a-aa74-c73c0306f98e
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640989"
 ---
 # <a name="setutcfullyear-method-date-javascript"></a>setUTCFullYear, méthode (Date) (JavaScript)
 Définit la valeur de l’année dans le `Date` de l’objet à l’aide de temps universel coordonné (UTC).  

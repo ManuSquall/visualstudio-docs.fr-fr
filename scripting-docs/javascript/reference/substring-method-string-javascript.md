@@ -1,13 +1,13 @@
 ---
-title: "SUBSTRING, méthode (String) (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: SUBSTRING, méthode (String) (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - substring
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - substrings
 - substring method
 ms.assetid: 9cf9a005-cbe3-42fd-828b-57a39f54224c
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640929"
 ---
 # <a name="substring-method-string-javascript"></a>substring, méthode (String) (JavaScript)
 Retourne la sous-chaîne à l’emplacement spécifié dans un `String` objet.  
@@ -52,7 +53,7 @@ Retourne la sous-chaîne à l’emplacement spécifié dans un `String` objet.
 ## <a name="remarks"></a>Remarques  
  Le `substring` méthode retourne une chaîne contenant la sous-chaîne à partir de `start` jusqu'à, mais non compris, `end`.  
   
- Le **sous-chaîne** méthode utilise la valeur inférieure de `start` et `end` comme point de début de la sous-chaîne. Par exemple, strvar.substring (0, 3**)** et strvar.substring (3, 0) retournent la même sous-chaîne.  
+ Le **sous-chaîne** méthode utilise la valeur inférieure de `start` et `end` comme point de début de la sous-chaîne. Par exemple, strvar.substring (0, 3 **)** et strvar.substring (3, 0) retournent la même sous-chaîne.  
   
  Si le paramètre `start` ou `end` est `NaN` ou négative, elle est remplacée par zéro.  
   

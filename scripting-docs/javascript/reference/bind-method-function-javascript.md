@@ -1,12 +1,13 @@
 ---
-title: "BIND (méthode) (fonction) (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: BIND (méthode) (fonction) (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -18,7 +19,7 @@ helpviewer_keywords:
 - bind method [JavaScript]
 - this keyword [JavaScript], bind method
 ms.assetid: 28946f47-b758-48cf-b508-610a0f2f6e19
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634309"
 ---
 # <a name="bind-method-function-javascript"></a>bind, méthode (Function) (JavaScript)
 Pour une fonction donnée, crée une fonction liée qui a le même corps que la fonction d'origine. Dans la fonction liée, l'objet `this` résout l'objet passé. La fonction liée a les paramètres initiaux spécifiés.  
