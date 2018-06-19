@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943746"
 ---
 # <a name="security-and-localized-satellite-assemblies"></a>Sécurité et assemblys satellites localisés
 

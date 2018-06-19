@@ -1,7 +1,7 @@
 ---
-title: Rechercher et remplacer dans des fichiers (Visual Studio) | Microsoft Docs
-ms.custom: ''
+title: Rechercher et remplacer dans des fichiers (Visual Studio)
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8b3dbf5582d7f19af6ee8506caacff4a14f9b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951919"
 ---
 # <a name="replace-in-files"></a>Remplacer dans les fichiers
 
 **Remplacer dans les fichiers** vous permet de rechercher une chaîne ou une expression dans le code d’un ensemble défini de fichiers, et de modifier l’ensemble ou une partie des correspondances trouvées. Les correspondances trouvées et les actions entreprises sont répertoriées dans la fenêtre **Résultats de la recherche** sélectionnée dans **Options de résultat**.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour changer vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++**, choisissez **Outils**, **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
+> Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles décrites dans l’**aide**, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++**, choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
 
 Vous pouvez utiliser l’une des méthodes suivantes pour afficher l’option **Remplacer dans les fichiers** dans la fenêtre **Rechercher et remplacer**.
 
@@ -39,18 +40,18 @@ Vous pouvez utiliser l’une des méthodes suivantes pour afficher l’option **
 
    — ou —
 
-Si la fenêtre **Rechercher et remplacer** est déjà ouverte, dans la barre d’outils, choisissez **Remplacer dans les fichiers**.
+  Si la fenêtre **Rechercher et remplacer** est déjà ouverte, dans la barre d’outils, choisissez **Remplacer dans les fichiers**.
 
 ## <a name="find-what"></a>Rechercher
 
-Pour rechercher une nouvelle chaîne de texte ou expression, entrez-la dans cette zone. Pour rechercher l’une des 20 dernières chaînes que vous avez recherchées, ouvrez la liste déroulante et choisissez la chaîne. Choisissez le bouton adjacent **Générateur d’expressions** si vous souhaitez utiliser une ou plusieurs expressions régulières dans votre chaîne de recherche. Pour plus d’informations, consultez [Utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Pour rechercher une nouvelle chaîne de texte ou expression, entrez-la dans cette zone. Pour rechercher l’une des 20 dernières chaînes que vous avez recherchées, ouvrez la liste déroulante et choisissez la chaîne. Choisissez le bouton adjacent **Générateur d’expressions** si vous souhaitez utiliser une ou plusieurs expressions régulières dans votre chaîne de recherche. Pour plus d’informations, consultez [Utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 > [!NOTE]
 > Le bouton **Générateur d’expressions** est activé uniquement si vous avez sélectionné **Expressions régulières** sous **Options de recherche**.
 
 ## <a name="replace-with"></a>Remplacer par
 
-Pour remplacer des instances de la chaîne dans la zone **Rechercher** par une autre chaîne, entrez la chaîne de remplacement dans la zone **Remplacer par**. Pour supprimer des instances de la chaîne dans la zone **Rechercher**, laissez ce champ vide. Ouvrez la liste pour afficher les 20 chaînes que vous avez recherchées le plus récemment. Choisissez le bouton adjacent **Générateur d’expressions** si vous souhaitez utiliser une ou plusieurs expressions régulières dans votre chaîne de remplacement. Pour plus d’informations, consultez [Utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Pour remplacer des instances de la chaîne dans la zone **Rechercher** par une autre chaîne, entrez la chaîne de remplacement dans la zone **Remplacer par**. Pour supprimer des instances de la chaîne dans la zone **Rechercher**, laissez ce champ vide. Ouvrez la liste pour afficher les 20 chaînes que vous avez recherchées le plus récemment. Choisissez le bouton adjacent **Générateur d’expressions** si vous souhaitez utiliser une ou plusieurs expressions régulières dans votre chaîne de remplacement. Pour plus d’informations, consultez [Utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 ## <a name="look-in"></a>Regarder dans
 
@@ -63,34 +64,40 @@ L’option choisie dans la liste déroulante **Regarder dans** détermine si l�
 
 Vous pouvez développer ou réduire la section **Options de recherche**. Les options suivantes peuvent être sélectionnées ou désélectionnées :
 
-Respecter la casse  
+**Respecter la casse**
+
 Quand vous sélectionnez cette option, les fenêtres **Résultats de la recherche** afficheront seulement les instances de la chaîne **Rechercher** dont le contenu et la casse sont identiques. Par exemple, la recherche de « MyObject » avec l’option **Respecter la casse** sélectionnée retourne « MyObject », mais pas « myobject » ni « MYOBJECT ».
 
-Mot entier  
+**Mot entier**
+
 Quand vous sélectionnez cette option, les fenêtres **Résultats de la recherche** afficheront seulement les instances de la chaîne **Rechercher** contenant les mêmes mots entiers. Par exemple, la recherche de « MyObject » retourne « MyObject », mais pas « CMyObject » ni « MyObjectC ».
 
-Utiliser des expressions régulières  
-Quand cette case est cochée, vous pouvez utiliser des notations spéciales pour définir des modèles de texte dans les zones de texte **Rechercher** ou **Remplacer par**. Pour obtenir la liste de ces notations, consultez [Utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+**Utiliser des expressions régulières**
 
-Examiner ces types de fichiers  
-Cette liste indique les types de fichiers à examiner dans les répertoires choisis dans **Regarder dans**. Si ce champ est laissé vide, tous les fichiers dans les répertoires choisis dans **Regarder dans** sont examinés.
+Quand cette case est cochée, vous pouvez utiliser des notations spéciales pour définir des modèles de texte dans les zones de texte **Rechercher** ou **Remplacer par**. Pour obtenir la liste de ces notations, consultez [Utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-Sélectionnez un élément dans la liste pour entrer une chaîne de recherche prédéfinie à rechercher dans les fichiers de ces types particuliers.
+**Examiner ces types de fichiers**
+
+Cette liste indique les types de fichiers à examiner dans les répertoires choisis dans **Regarder dans**. Si ce champ est laissé vide, tous les fichiers dans les répertoires choisis dans **Regarder dans** sont examinés. Sélectionnez un élément dans la liste pour entrer une chaîne de recherche prédéfinie à rechercher dans les fichiers de ces types particuliers.
 
 ## <a name="result-options"></a>Options de résultat
 
 Vous pouvez développer ou réduire la section **Options de résultat**. Les options suivantes peuvent être sélectionnées ou désélectionnées :
 
-Fenêtre Résultats de la recherche 1  
+Fenêtre **Résultats de la recherche 1**
+
 Si cette option est sélectionnée, les résultats de la recherche actuelle remplacent le contenu de la fenêtre **Résultats de la recherche 1**. Cette fenêtre s'ouvre automatiquement pour afficher les résultats de votre recherche. Pour ouvrir cette fenêtre manuellement, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Résultats de la recherche 1**.
 
-Fenêtre Résultats de la recherche 2  
+Fenêtre **Résultats de la recherche 2**
+
 Si cette option est sélectionnée, les résultats de la recherche actuelle remplacent le contenu de la fenêtre **Résultats de la recherche 2**. Cette fenêtre s'ouvre automatiquement pour afficher les résultats de votre recherche. Pour ouvrir cette fenêtre manuellement, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Résultats de la recherche 2**.
 
-Afficher uniquement les noms de fichier  
-Quand cette case est cochée, les fenêtres Résultats de la recherche listent les noms complets et les chemins de tous les fichiers qui contiennent la chaîne de recherche. Toutefois, les résultats ne contiennent pas la ligne de code où apparaît la chaîne. Cette case à cocher n’est disponible que pour Rechercher dans les fichiers.
+**Afficher uniquement les noms de fichier**
 
-Conserver fich. modifiés ouverts après remplacement global  
+Quand cette case est cochée, les fenêtres **Résultats de la recherche** listent les noms complets et les chemins de tous les fichiers qui contiennent la chaîne de recherche. Toutefois, les résultats ne contiennent pas la ligne de code où apparaît la chaîne. Cette case à cocher n’est disponible que pour **Rechercher dans les fichiers**.
+
+**Conserver fich. modifiés ouverts après remplacement global**
+
 Quand cette option est sélectionnée, tous les fichiers dans lesquels des remplacements ont été effectués restent ouverts et vous pouvez ainsi annuler ou enregistrer les modifications. Les contraintes de mémoire peuvent limiter le nombre de fichiers qui peuvent rester ouverts suite à une opération de remplacement.
 
 > [!CAUTION]
@@ -98,6 +105,6 @@ Quand cette option est sélectionnée, tous les fichiers dans lesquels des rempl
 
 ## <a name="see-also"></a>Voir aussi
 
-[Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)  
-[Rechercher dans les fichiers](../ide/find-in-files.md)  
-[Commandes Visual Studio](../ide/reference/visual-studio-commands.md)
+- [Rechercher et remplacer du texte](../ide/finding-and-replacing-text.md)
+- [Rechercher dans les fichiers](../ide/find-in-files.md)
+- [Commandes Visual Studio](../ide/reference/visual-studio-commands.md)

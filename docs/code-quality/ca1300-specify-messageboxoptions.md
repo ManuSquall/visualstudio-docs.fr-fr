@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31896988"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300 : Spécifier MessageBoxOptions
 |||

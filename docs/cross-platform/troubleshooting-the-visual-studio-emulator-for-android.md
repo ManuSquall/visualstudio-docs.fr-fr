@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31070010"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Résolution des problèmes liés à l’émulateur Visual Studio pour Android
 Cette rubrique contient des informations pour vous aider à résoudre les problèmes que vous pouvez rencontrer quand vous utilisez l’Émulateur Visual Studio pour Android.  

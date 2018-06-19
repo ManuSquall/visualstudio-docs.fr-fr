@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948728"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Guide pratique pour localiser et organiser les modèles de projet et d’élément
 

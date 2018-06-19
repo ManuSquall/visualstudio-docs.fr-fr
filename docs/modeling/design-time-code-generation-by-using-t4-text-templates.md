@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954090"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code au moment du design à l’aide de modèles de texte T4
 Les modèles de texte T4 au moment de la conception vous permettent de générer du code de programme et d'autres fichiers dans votre projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données d’une *modèle*. Un modèle est un fichier ou la base de données qui contient des informations clés sur les exigences de votre application.

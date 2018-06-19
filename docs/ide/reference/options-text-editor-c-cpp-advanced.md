@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953461"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
 En modifiant ces options, vous pouvez changer le comportement lié à IntelliSense et la base de données de navigation quand vous programmez en C ou C++.

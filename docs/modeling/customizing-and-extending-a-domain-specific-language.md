@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953373"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personnalisation et extension d'un langage spécifique à un domaine
 Visual Studio de modélisation et de visualisation SDK (VMSDK) fournit plusieurs niveaux à laquelle vous pouvez définir des outils de modélisation :

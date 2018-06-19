@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104629"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Ajout d’un contrôleur de Menu à une barre d’outils
 Cette procédure pas à pas repose sur le [Ajout d’une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md) procédure pas à pas et montre comment ajouter un contrôleur de menu à la barre d’outils de la fenêtre outil. Les étapes indiquées ici peuvent également être appliqués à la barre d’outils qui est créé dans le [Ajout d’une barre d’outils](../extensibility/adding-a-toolbar.md) procédure pas à pas.  

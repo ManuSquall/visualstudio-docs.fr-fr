@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953595"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 L’API immuabilité de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK permet à un programme à tout ou partie de verrouillage d’un modèle de langage de spécifique à un domaine (DSL) afin qu’elle peut être lue mais pas modifié. Cette option en lecture seule peut être utilisée, par exemple, afin qu’un utilisateur peut demander à vos collègues à annoter et passez en revue un modèle DSL, mais il peut ne pas autoriser les à partir de la modification de l’original.

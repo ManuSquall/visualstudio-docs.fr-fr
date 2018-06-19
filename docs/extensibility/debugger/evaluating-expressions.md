@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102790"
 ---
 # <a name="evaluating-expressions"></a>L’évaluation des Expressions
 Les expressions sont créées à partir de chaînes passés depuis l’automatique, Espion, Espion express ou immédiate. Lorsqu’une expression est évaluée, il génère une chaîne imprimable qui contient le nom et le type de variable ou argument et sa valeur. Cette chaîne est affichée dans la fenêtre IDE correspondante.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979449"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Tester des applications SharePoint avec des tests codés de l’interface utilisateur
 

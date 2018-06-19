@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946362"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Guide des outils d'architecture Visual Studio
 Ce guide des outils d’Architecture est un package téléchargeable de conseils pratiques sur l’utilisation des outils de modélisation dans Visual Studio 2010. Il présente une vue d’ensemble de l’utilisation de tous les outils de modélisation d’une manière intégrée et décrit les scénarios les plus courants dans lesquels les outils sont utilisés.

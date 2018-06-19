@@ -1,8 +1,9 @@
 ---
-title: Commutateurs de la ligne de commande devenv de Visual Studio │ Microsoft Docs
+title: Commutateurs de la ligne de commande devenv de Visual Studio
 ms.date: 02/28/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
 - command-line switches, Devenv
@@ -14,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3adde520b76de347da025c819ec39dce50660f2b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b6cf3bf422c861d5a649e5cfa71cf2b4a4b5fea
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951113"
 ---
 # <a name="devenv-command-line-switches"></a>Commutateurs de la ligne de commande devenv
 

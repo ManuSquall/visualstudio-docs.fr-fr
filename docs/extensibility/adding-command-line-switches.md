@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098416"
 ---
 # <a name="adding-command-line-switches"></a>Ajout de commutateurs de ligne de commande
 Vous pouvez ajouter des commutateurs de ligne de commande qui s’appliquent à votre VSPackage lors de l’exécution de devenv.exe. Utilisez <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> pour déclarer le nom du commutateur et de ses propriétés. Dans cet exemple, le commutateur MySwitch est ajouté pour une sous-classe de VSPackage nommé **AddCommandSwitchPackage** avec aucun argument et le VSPackage chargé automatiquement.  

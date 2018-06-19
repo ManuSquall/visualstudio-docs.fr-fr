@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097781"
 ---
 # <a name="accessing-thetext-view-by-using-the-legacy-api"></a>L’accès à theText vue à l’aide de l’API héritée
 Une vue de texte est une présentation du texte qui est stocké dans une mémoire tampon de texte. Vous pouvez accéder à l’affichage de texte à l’aide de l’API héritée comme indiqué dans la section suivante.

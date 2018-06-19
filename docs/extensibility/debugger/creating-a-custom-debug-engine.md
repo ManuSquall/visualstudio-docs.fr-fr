@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101376"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Création d’un moteur de débogage personnalisé
 Un moteur de débogage (DE) est un composant qui autorise le débogage d’architectures d’exécution particulières. Il y a généralement qu’une seule implémentation DE par l’environnement d’exécution.  

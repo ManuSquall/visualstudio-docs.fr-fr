@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952713"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personnaliser des cartes de code en modifiant les fichiers DGML
 Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Directed Graph Markup Language) (.dgml) d'une carte. Par exemple, vous pouvez modifier des éléments pour spécifier des styles personnalisés, affecter des propriétés et des catégories à des éléments de code et des liens, ou lier des documents ou des URL à des éléments de code ou des liens. Pour plus d’informations sur les éléments DGML, consultez [référence de balisage langage DGML (Directed Graph)](../modeling/directed-graph-markup-language-dgml-reference.md).

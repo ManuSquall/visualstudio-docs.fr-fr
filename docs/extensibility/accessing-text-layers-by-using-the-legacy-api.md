@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098665"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>L’accès à des couches de texte à l’aide de l’API héritée
 Généralement, un calque de texte encapsule un aspect de la disposition du texte. Par exemple, une couche de « fonction-à-un-temps » masque le texte avant et après une fonction contenant le point d’insertion (point d’insertion de texte).  

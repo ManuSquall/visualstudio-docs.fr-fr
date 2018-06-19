@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926533"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans les applications WPF
 Le terme *table de recherche* (parfois appelé un *liaison de correspondance*) décrit un contrôle qui affiche des informations à partir d’une table de données en fonction de la valeur d’un champ de clé étrangère dans une autre table. Vous pouvez créer une table de correspondance en faisant glisser le nœud principal d’une table parente ou de l’objet dans le **des Sources de données** fenêtre sur un contrôle qui est déjà lié à une colonne ou une propriété dans une table enfant connexe.

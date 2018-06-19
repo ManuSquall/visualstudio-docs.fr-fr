@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924715"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Enregistrer des données à partir d’un objet dans une base de données
 Vous pouvez enregistrer des données dans des objets à une base de données en passant les valeurs à partir de votre objet à une des méthodes DBDirect du TableAdapter (par exemple, `TableAdapter.Insert`). Pour plus d’informations, consultez [TableAdapter](../data-tools/create-and-configure-tableadapters.md).

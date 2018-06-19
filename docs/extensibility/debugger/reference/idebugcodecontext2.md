@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103875"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Cette interface représente la position de départ d’une instruction de code. Pour la plupart des architectures d’exécution aujourd'hui, un contexte de code peut être considéré comme une adresse dans le flux de l’exécution d’un programme.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098171"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Contrôle de l’exécution et l’état d’évaluation
 Débogage d’une application requiert en implémentant des fonctionnalités de contrôle de l’exécution pas à pas détaillé dans des fonctions, stopper aux points d’arrêt et continuer l’exécution. Bases de débogage Visual Studio son contrôle de l’exécution sur les événements envoyés entre les composants du débogueur.  

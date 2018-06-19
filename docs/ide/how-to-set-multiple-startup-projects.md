@@ -1,9 +1,8 @@
 ---
-title: Guide pratique pour définir plusieurs projets de démarrage | Microsoft Docs
-ms.custom: ''
+title: Guide pratique pour définir plusieurs projets de démarrage
 ms.date: 06/21/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - startup projects, setting multiple startup projects
@@ -13,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 322b82e37851ef78c97664df9c33db9194d9db90
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9cc601f871d3f33ca408c24cd4ed070d2e5e77b8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942739"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Guide pratique pour définir plusieurs projets de démarrage
-Visual Studio vous permet de spécifier la façon dont plusieurs projets sont exécutés quand vous démarrez le débogueur.  
 
-## <a name="to-set-multiple-startup-projects"></a>Pour définir plusieurs projets de démarrage  
+Visual Studio vous permet de spécifier la façon dont plusieurs projets sont exécutés quand vous démarrez le débogueur.
 
-1.  Dans l’**Explorateur de solutions**, sélectionnez la solution (nœud supérieur).  
+## <a name="to-set-multiple-startup-projects"></a>Pour définir plusieurs projets de démarrage
 
-2.  Choisissez le menu de contexte (clic droit) du nœud de la solution, puis choisissez **Propriétés**. La boîte de dialogue **Pages de propriétés de Solution** s’affiche.  
+1.  Dans l’**Explorateur de solutions**, sélectionnez la solution (nœud supérieur).
 
-3.  Développez le nœud **Propriétés communes** et choisissez **Projet de démarrage**.  
+2.  Choisissez le menu de contexte (clic droit) du nœud de la solution, puis choisissez **Propriétés**. La boîte de dialogue **Pages de propriétés de Solution** s’affiche.
+
+3.  Développez le nœud **Propriétés communes** et choisissez **Projet de démarrage**.
 
 4.  Choisissez l’option **Plusieurs projets de démarrage** et définissez les actions appropriées.
 

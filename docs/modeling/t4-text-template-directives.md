@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947844"
 ---
 # <a name="t4-text-template-directives"></a>Directives de modèles de texte T4
 Les directives fournissent des instructions au moteur de transformation de modèle de texte.

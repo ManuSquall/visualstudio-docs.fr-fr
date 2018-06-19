@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947935"
 ---
 # <a name="environment-options-dialog-box"></a>Environnement, boîte de dialogue Options
 Vous pouvez utiliser les pages du dossier **Environnement** de la boîte de dialogue **Options** pour définir comment certains éléments de l’environnement de développement intégré (IDE) s’affichent et se comportent. Vous pouvez accéder aux pages Environnement en choisissant **Outils** et **Options** dans la barre de menus, puis en sélectionnant **Environnement**.

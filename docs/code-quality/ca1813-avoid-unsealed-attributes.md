@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915714"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813 : Évitez les attributs unsealed
 |||

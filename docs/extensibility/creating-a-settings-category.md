@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107496"
 ---
 # <a name="creating-a-settings-category"></a>Création d’une catégorie de paramètres
 Dans cette procédure pas à pas vous créez une catégorie de paramètres de Visual Studio et l’utiliser pour enregistrer les valeurs et restaurer les valeurs à partir d’un fichier de paramètres. Une catégorie de paramètres est un groupe de propriétés connexes qui apparaissent sous la forme d’un « point de paramètres personnalisés ; » Autrement dit, en tant qu’une case à cocher dans la **importation et exportation de paramètres** Assistant. (Vous pouvez le trouver sur le **outils** menu.) Paramètres sont enregistrées ou restaurées en tant que catégorie et les paramètres individuels ne sont pas affichés dans l’Assistant. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  

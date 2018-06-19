@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953038"
 ---
 # <a name="customizing-the-model-explorer"></a>Personnalisation de l'Explorateur de modèles
 Vous pouvez modifier l’apparence et le comportement de l’Explorateur de votre Concepteur de langage spécifique à un domaine comme suit :

@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951994"
 ---
 # <a name="signing-page-project-designer"></a>Page Signature, Concepteur de projets
 Utilisez la page **Signature** du **Concepteur de projet** pour signer les manifestes d’application et de déploiement, et pour signer l’assembly (signature avec nom fort).

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103238"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Référence des API (débogage de Visual Studio)
 La section de référence inclut une vue d’ensemble conceptuelle de l’API, un guide qui montre la syntaxe et l’utilisation pour tous les éléments d’API et un assortiment d’exemples de code. Toutes les références sont répertoriées par ordre alphabétique par catégorie.  

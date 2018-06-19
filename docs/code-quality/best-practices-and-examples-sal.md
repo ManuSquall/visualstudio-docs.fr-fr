@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900992"
 ---
 # <a name="best-practices-and-examples-sal"></a>Meilleures pratiques et exemples (SAL)
 Voici quelques méthodes permettant d’obtenir le meilleur hors de la langue Annotation du Code Source (SAL) et éviter certains problèmes courants.

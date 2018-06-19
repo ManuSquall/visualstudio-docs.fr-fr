@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945153"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Boîte de dialogue Options, Projets et solutions, Projets web
 

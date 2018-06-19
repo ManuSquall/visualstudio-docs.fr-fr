@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951269"
 ---
 # <a name="text-template-control-blocks"></a>Blocs de contrôle des modèles de texte
 Les blocs de contrôle vous permettent d'écrire du code dans votre modèle de texte pour faire varier la sortie. Il existe trois types de blocs de contrôle, distingués par leurs crochets d'ouverture :

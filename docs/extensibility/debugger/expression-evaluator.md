@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102315"
 ---
 # <a name="expression-evaluator"></a>Évaluateur d’expression
 Évaluateurs d’expression (EE) examiner la syntaxe d’une langue pour analyser et évaluer les variables et les expressions au moment de l’exécution, ce qui permet à être affiché par l’utilisateur lors de l’IDE est en mode arrêt.  

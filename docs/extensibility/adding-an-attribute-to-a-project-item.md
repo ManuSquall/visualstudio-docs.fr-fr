@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104535"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>Ajout d’un attribut à un élément de projet
 Les méthodes <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> obtenir et définir la valeur des attributs d’un élément de projet. SetItemAttribute crée l’attribut si elle n’existe pas, ajoutez-le à la métadonnée d’élément de projet.  

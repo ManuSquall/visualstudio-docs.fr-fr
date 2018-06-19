@@ -1,7 +1,7 @@
 ---
-title: Déplacer la déclaration de variable près de la référence dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Déplacer la déclaration de variable près de la référence dans Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 author: kuhlenh
@@ -11,11 +11,12 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7c78904123da54fd2259558f29832742d9a103d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e98f7b7e9df0a1df3482257c70a661aa22d5980a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949265"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Déplacer la déclaration près de la référence (refactorisation)
 

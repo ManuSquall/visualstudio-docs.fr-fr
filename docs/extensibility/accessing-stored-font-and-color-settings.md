@@ -20,12 +20,13 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105790"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>L’accès à la police stockée et les paramètres de couleur
 Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) stocke les paramètres modifiés pour les polices et couleurs dans le Registre. Vous pouvez utiliser la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface pour accéder à ces paramètres.
 
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Pour initier la persistance de l’état des polices et couleurs
- Les informations de police et de couleur sont stockées par catégorie dans l’emplacement suivant : [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<version de Visual Studio >*\FontAndColors\\  *\<CategoryGUID >*], où  *\<CategoryGUID >* est le GUID de catégorie.
+ Les informations de police et de couleur sont stockées par catégorie dans l’emplacement suivant : [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<version de Visual Studio >* \FontAndColors\\  *\<CategoryGUID >*], où  *\<CategoryGUID >* est le GUID de catégorie.
 
  Par conséquent, pour lancer la persistance, un VSPackage doit :
 

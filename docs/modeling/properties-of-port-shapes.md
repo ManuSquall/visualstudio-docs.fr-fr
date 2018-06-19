@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951243"
 ---
 # <a name="properties-of-port-shapes"></a>Propriétés des formes de port
 Vous pouvez utiliser des formes port pour représenter des classes de domaine dans le concepteur généré.

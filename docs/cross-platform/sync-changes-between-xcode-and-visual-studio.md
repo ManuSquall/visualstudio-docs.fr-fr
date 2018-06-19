@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066516"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Synchroniser les modifications entre Xcode et Visual Studio
 Le composant Microsoft Visual C++ pour le développement mobile comprend des fonctionnalités distantes qui permettent de synchroniser le travail entre votre PC et votre Mac. Quand vos machines Visual Studio et Mac sont jumelées, de nouvelles options disponibles pour les projets d’application iOS dans Visual Studio vous permettent d’ouvrir votre projet dans Xcode, de déplacer votre code entre Xcode et Visual Studio et de nettoyer le répertoire de projet Xcode temporaire.  

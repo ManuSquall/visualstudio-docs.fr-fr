@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925040"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Ensemble de règles des règles de sécurité pour le code managé
 Vous devez inclure la règle de règles de sécurité de Microsoft pour optimiser le nombre de problèmes potentiels de sécurité qui sont signalés.
