@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141718"
 ---
 # <a name="supporting-multiple-document-views"></a>Prend en charge plusieurs vues de Document
 Vous pouvez fournir plusieurs vues d’un document en créant des données de document distinct et les objets de vue de document de votre éditeur. Certains cas dans lequel un affichage de document supplémentaire serait utile sont :  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463248"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Énumération (Kit de développement logiciel SDK de Debug Interface Access)
 Les énumérations sont identifiées par `SymTagEnum` symboles. Chaque valeur d’énumération apparaît comme un enfant de la classe avec un `SymTagConstant` balise.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142706"
 ---
 # <a name="localizing-menu-commands"></a>Localisation des commandes de Menu
 Vous pouvez fournir un texte localisé pour le menu et barre d’outils commandes en créant des fichiers .vsct localisées et localisée des fichiers .resx pour votre VSPackage et mise à jour des fichiers projet incorporer les modifications.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135820"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Prise en charge de la fenêtre automatique dans un Service de langage hérité
 Le **automatique** fenêtre affiche des expressions telles que des variables et des paramètres qui sont dans la portée lorsque le programme débogué est en pause (soit en raison d’un point d’arrêt ou une exception). Les expressions peuvent inclure des variables locales ou globales et les paramètres qui ont été modifiés dans l’étendue locale. Le **automatique** fenêtre peut également inclure des instanciations d’une classe, structure ou un autre type. Tout ce que l’évaluateur d’expression peut évaluer peut potentiellement être affiché dans le **automatique** fenêtre.  

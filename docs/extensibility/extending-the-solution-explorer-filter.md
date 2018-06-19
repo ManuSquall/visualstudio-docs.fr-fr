@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135503"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Étendre le filtre de l’Explorateur de solutions
 Vous pouvez étendre **l’Explorateur de solutions** filtrer les fonctionnalités pour afficher ou masquer les différents fichiers. Par exemple, vous pouvez créer un filtre qui affiche uniquement c# fabrique fichiers de classe dans le **l’Explorateur de solutions**, comme cette procédure pas à pas montre comment.  

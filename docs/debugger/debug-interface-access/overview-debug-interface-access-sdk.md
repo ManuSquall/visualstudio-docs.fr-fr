@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471438"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Vue d’ensemble (Kit de développement logiciel Debug Interface Access)
 Le SDK DIA permet d’accéder aux informations de débogage Microsoft. Le SDK DIA fournit une COM ensemble d’API qui élimine le besoin de réécrire votre code chaque fois que Microsoft modifie le format des informations de débogage. Le SDK DIA vous permet également de lire à partir d’un ensemble de versions précédentes des informations de débogage, situés dans des fichiers .pdb et .dbg générés par [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 5.0 et version ultérieure.  

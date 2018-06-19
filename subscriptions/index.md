@@ -15,6 +15,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795316"
 ---
 # <a name="visual-studio-subscriptions"></a>Abonnements Visual Studio
 Les abonnements Visual Studio sont un ensemble complet de ressources qui vous permettent de créer, déployer et gérer des applications sur vos plateformes et appareils préférés, notamment Windows, iOS, Android et Linux.  Les avantages des abonnements sont notamment l’accès aux outils de développement, à des services cloud et à des logiciels, à de la formation et à du support pour vos besoins en développement et en tests.

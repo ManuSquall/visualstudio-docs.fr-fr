@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139287"
 ---
 # <a name="using-the-settings-store"></a>À l’aide de la banque de paramètres
 Il existe deux types de magasins de paramètres :  

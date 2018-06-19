@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140993"
 ---
 # <a name="web-project-essentials"></a>Essentials du projet Web
 Projets Web créent des applications Web. Vous pouvez utiliser un projet Web pour créer une application Web qui a des pages Web actives. Une page Web active a le code côté serveur qui restitue la page Web à la demande.  
@@ -34,7 +35,7 @@ Projets Web créent des applications Web. Vous pouvez utiliser un projet Web pou
   
     -   Un projet d’application Web (WAP) produit un seul fichier exécutable qui combine le code pour toutes les pages Web actives, ainsi que tous les fichiers sources dans le dossier/App_Code.  
   
--   Le fichier de solution pour un projet Web se trouve séparément à partir du site Web lui-même. Par défaut, les fichiers solution sont situées dans \Documents and Settings\\*VotreCompte*\My Documents\\*\<Visual Studio ### >*\Projects\\ *Votresiteweb*.  
+-   Le fichier de solution pour un projet Web se trouve séparément à partir du site Web lui-même. Par défaut, les fichiers solution sont situées dans \Documents and Settings\\*VotreCompte*\My Documents\\*\<Visual Studio ### >* \Projects\\ *Votresiteweb*.  
   
     > [!NOTE]
     >  Si vous souhaitez conserver le fichier de solution avec le site Web, déplacez-y simplement et le rouvrir.  

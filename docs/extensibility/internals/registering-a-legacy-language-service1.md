@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135704"
 ---
 # <a name="registering-a-legacy-language-service"></a>L’inscription d’un Service de langage hérité
 Dans managed package framework (MPF), le service de langage est mis à disposition par un VSPackage (consultez [VSPackages](../../extensibility/internals/vspackages.md)) et est enregistré avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en ajoutant les clés de Registre et les entrées. Ce processus d’inscription est effectué dans partiellement pendant l’installation et en partie à l’exécution.  

@@ -1,16 +1,16 @@
 ---
 title: IActiveScriptSiteDebugEx (Interface) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptSiteDebugEx Interface
 ms.assetid: 76869378-1a7b-47bd-8cd0-acc31f91d58d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725039"
 ---
 # <a name="iactivescriptsitedebugex-interface"></a>IActiveScriptSiteDebugEx (interface)
 Implémentez cette interface avec le `IActiveScriptSiteDebug` si vous écrivez un hôte qui a besoin pour obtenir une notification d’une erreur d’exécution dans une application et la possibilité de joindre à l’application pour le débogage de l’interface. Le Gestionnaire de déboguer des processus fournit une notification via `IActiveScriptDebug` si un juste-à-temps débogueur de script se trouve sur l’ordinateur. Si le débogueur de script sans juste-à-temps est trouvé, PDM fournit une notification via `IActiveScriptDebugEx` à la place.  

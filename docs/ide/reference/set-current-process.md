@@ -18,6 +18,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33705084"
 ---
 # <a name="set-current-process"></a>Définir le processus actuel
 Définit le processus spécifié comme processus actif dans le débogueur.

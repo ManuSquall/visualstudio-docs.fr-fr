@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135920"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Programmes d’assistance du Kit de développement logiciel pour le débogage
 Ces fonctions et les déclarations sont des fonctions d’assistance globales pour l’implémentation des moteurs de débogage, les évaluateurs d’expression et les fournisseurs de symbole en C++.  
@@ -420,7 +421,7 @@ HRESULT EnumMetricSections(
 |*[exception]*|Un nom pour une exception : par exemple, **_com_error** ou **contrôle d’interruption**. Ces noms sont également utilisés pour identifier une exception particulière à l’utilisateur.|  
   
 ## <a name="requirements"></a>Spécifications  
- Ces fichiers se trouvent dans le [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] répertoire d’installation de kit de développement logiciel (par défaut, *[lecteur]*\Program Files\Microsoft Visual Studio 2010 SDK\\).  
+ Ces fichiers se trouvent dans le [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] répertoire d’installation de kit de développement logiciel (par défaut, *[lecteur]* \Program Files\Microsoft Visual Studio 2010 SDK\\).  
   
  En-tête : includes\dbgmetric.h  
   

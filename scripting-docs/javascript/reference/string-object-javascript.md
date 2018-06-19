@@ -1,13 +1,13 @@
 ---
-title: "Chaîne, objet (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: Chaîne, objet (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - String_JavaScript
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - String object
 - String object, overview
 ms.assetid: 8063ecd5-5778-4e87-b985-b21420171914
-caps.latest.revision: 
+caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642189"
 ---
 # <a name="string-object-javascript"></a>String, objet (JavaScript)
 Permet de manipuler et mettre en forme des chaînes de texte, ainsi que de définir et placer des sous-chaînes à l'intérieur de chaînes.  

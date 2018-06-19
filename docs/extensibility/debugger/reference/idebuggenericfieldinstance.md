@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110713"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 Représente une instance d’un champ d’un type générique de code managé.  
