@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468806"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Informations de compiland sont partagées entre les symboles avec un `SymTagCompiland` balise (détail faible) et un `SymTagCompilandDetails` balise (détail haute). `SymTagCompilandDetails` requiert le chargement de symboles supplémentaires. Toutefois, il fournit une multitude d’informations sur le module qui n’est pas disponible avec un `SymTagCompiland` symbole.  

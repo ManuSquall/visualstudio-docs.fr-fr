@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135676"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Prise en charge des extraits de Code dans un Service de langage hérité
 Un extrait de code est un fragment de code est inséré dans le fichier source. L’extrait de code est un modèle basé sur XML avec un ensemble de champs. Ces champs sont mis en surbrillance une fois l’extrait de code est inséré et peut avoir des valeurs différentes selon le contexte dans lequel l’extrait de code est inséré. Immédiatement après que l’extrait de code est inséré, le service de langage peut mettre en forme l’extrait de code.  
@@ -52,7 +53,7 @@ Un extrait de code est un fragment de code est inséré dans le fichier source. 
   
  Il existe généralement deux emplacements où sont stockés les fichiers de modèle d’extrait de code : (1) où votre langue a été installée et (2) dans le dossier de l’utilisateur. Ces emplacements sont ajoutés au Registre ainsi que Visual Studio **Gestionnaire des extraits de Code** peut rechercher les extraits de code. Dossier de l’utilisateur est où sont stockés les extraits de code créés par l’utilisateur.  
   
- La mise en page de dossier par défaut pour les fichiers de modèle d’extrait de code installé ressemble à ceci : *[InstallRoot]*\\*[TestLanguage]*\Snippets\\*[LCID]*\Snippets.  
+ La mise en page de dossier par défaut pour les fichiers de modèle d’extrait de code installé ressemble à ceci : *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
  *[InstallRoot]*  est le dossier d’installation dans votre langue.  
   
@@ -60,7 +61,7 @@ Un extrait de code est un fragment de code est inséré dans le fichier source. 
   
  *[LCID]*  est l’ID de paramètres régionaux. Voici comment les différentes versions de vos extraits de code sont stockés. Par exemple, l’ID de paramètres régionaux pour l’anglais est 1033, par conséquent, *[LCID]* est remplacé par 1033.  
   
- Un fichier supplémentaire doit être fourni et qui est un fichier d’index, généralement appelé SnippetsIndex.xml ou ExpansionsIndex.xml (vous pouvez utiliser n’importe quel nom de fichier valide se terminant par .xml). Ce fichier est généralement stocké dans le *[InstallRoot]*\\*[TestLanguage]* dossier et spécifie l’emplacement exact du dossier des extraits de code ainsi que l’ID de langue et le GUID de la langue service qui utilise les extraits de code. Le chemin d’accès exact du fichier d’index est placé dans le Registre comme décrit plus loin dans « Installation les entrées de Registre ». Voici un exemple d’un fichier SnippetsIndex.xml :  
+ Un fichier supplémentaire doit être fourni et qui est un fichier d’index, généralement appelé SnippetsIndex.xml ou ExpansionsIndex.xml (vous pouvez utiliser n’importe quel nom de fichier valide se terminant par .xml). Ce fichier est généralement stocké dans le *[InstallRoot]*\\ *[TestLanguage]* dossier et spécifie l’emplacement exact du dossier des extraits de code ainsi que l’ID de langue et le GUID de la langue service qui utilise les extraits de code. Le chemin d’accès exact du fichier d’index est placé dans le Registre comme décrit plus loin dans « Installation les entrées de Registre ». Voici un exemple d’un fichier SnippetsIndex.xml :  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -81,7 +82,7 @@ Un extrait de code est un fragment de code est inséré dans le fichier source. 
   
  Cet exemple suppose que vous avez installé votre service de langage dans le dossier d’installation de Visual Studio. Le LCID % est remplacé par actuel ID de paramètres régionaux. l’utilisateur Plusieurs \<SnippetDir > balises peuvent être ajoutés, une pour chaque autre répertoire et les paramètres régionaux. En outre, un dossier d’extrait de code peut contenir des sous-dossiers, chacun d’eux est identifié dans le fichier d’index avec la \<SnippetSubDir > balise qui est incorporé dans un \<SnippetDir > balise.  
   
- Ils peuvent également créer leurs propres extraits de code pour votre langue. Ceux-ci sont généralement stockés dans le dossier de paramètres de l’utilisateur, par exemple *[TestDocs]*\Code extraits\\*[TestLanguage]*\Test extraits de Code, où *[TestDocs]* est l’emplacement du dossier des paramètres de l’utilisateur de Visual Studio.  
+ Ils peuvent également créer leurs propres extraits de code pour votre langue. Ceux-ci sont généralement stockés dans le dossier de paramètres de l’utilisateur, par exemple *[TestDocs]* \Code extraits\\ *[TestLanguage]* \Test extraits de Code, où *[TestDocs]* est l’emplacement du dossier des paramètres de l’utilisateur de Visual Studio.  
   
  Les éléments de substitution suivants peuvent être placés dans le chemin d’accès stocké dans le \<Chemin_du_répertoire > balise dans le fichier d’index.  
   
@@ -91,7 +92,7 @@ Un extrait de code est un fragment de code est inséré dans le fichier source. 
 |%InstallRoot%|Dossier d’installation racine pour Visual Studio, par exemple, C:\Program Files\Microsoft Visual Studio 8.|  
 |% ProjDir %|Dossier contenant le projet actuel.|  
 |% ProjItem %|Dossier contenant l’élément de projet actuel.|  
-|% TestDocs %|Dossier dans le dossier des paramètres de l’utilisateur, par exemple, C:\Documents and Settings\\*[username]*documents\Visual Studio\8.|  
+|% TestDocs %|Dossier dans le dossier des paramètres de l’utilisateur, par exemple, C:\Documents and Settings\\ *[username]* documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>L’activation des extraits de Code pour votre Service de langage  
  Vous pouvez activer des extraits de code pour votre service de langage en ajoutant la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> d’attributs pour votre VSPackage (consultez [l’inscription d’un Service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md) pour plus d’informations). Le <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> et <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> paramètres sont facultatifs, mais vous devez inclure le `SearchPaths` paramètre nommé afin d’informer le **Gestionnaire des extraits de Code** de l’emplacement de vos extraits de code.  

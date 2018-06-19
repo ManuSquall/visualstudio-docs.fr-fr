@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131961"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Accolades correspondantes dans un Service de langage hérité
 Correspondance d’accolade permet le développeur à effectuer le suivi des éléments de langage doivent se produire ensemble, tels que les parenthèses et des accolades. Lorsqu’un développeur entre une accolade fermante, l’accolade ouvrante est mis en surbrillance.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129043"
 ---
 # <a name="document-windows"></a>Fenêtres de document
 Dans Visual Studio, un *fenêtre de document* est une fenêtre enfant encadré qui est associée à une fenêtre de l’interface multidocument (MDI). Fenêtres de document sont généralement utilisés pour l’affichage et la modification de code source ou de texte, mais qu’ils peuvent également héberger des autres types fonctionnelles. Fenêtres de document :  

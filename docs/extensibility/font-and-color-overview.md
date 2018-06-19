@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130223"
 ---
 # <a name="font-and-color-overview"></a>Vue d’ensemble de la couleur et de police
 Cette rubrique décrit les paramètres de police et la couleur du texte dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE). Elle présente également les concepts de catégories et les éléments d’affichage, et elle explique également comment les VSPackages et l’éditeur principal utilisent les attributs de texte.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130878"
 ---
 # <a name="project-priority"></a>Priorité de projet
 Un élément de projet appartient généralement un seul projet dans la solution. Par conséquent, l’IDE peut déterminer facilement le projet qui est utilisé pour ouvrir l’élément. Toutefois, si un élément est un membre de plusieurs projets, l’IDE utilise un schéma de priorités pour déterminer le projet meilleures pour ouvrir l’élément.  

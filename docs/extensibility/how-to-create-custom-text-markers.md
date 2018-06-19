@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132260"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Comment : créer des marqueurs de texte personnalisé
 Si vous souhaitez créer un marqueur de texte personnalisé pour mettre en évidence ou organiser le code, vous devez effectuer les étapes suivantes :  
@@ -34,9 +35,9 @@ Si vous souhaitez créer un marqueur de texte personnalisé pour mettre en évid
   
 1.  Créez une entrée de Registre comme suit :  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >*\Text Editor\External marqueurs\\*\<MarkerGUID >*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External marqueurs\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >*est un `GUID` utilisé pour identifier le marqueur ajouté  
+     *\<MarkerGUID >* est un `GUID` utilisé pour identifier le marqueur ajouté  
   
      *\<Version >* est la version de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], par exemple 8.0  
   
@@ -45,7 +46,7 @@ Si vous souhaitez créer un marqueur de texte personnalisé pour mettre en évid
     > [!NOTE]
     >  Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* peut être remplacée par une autre racine lors de l’initialisation de l’interpréteur de commandes de Visual Studio, pour plus d’informations, consultez [Commutateurs de ligne de commande](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Créer les quatre valeurs sous HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >*\Text Editor\External marqueurs\\*\<MarkerGUID >*  
+2.  Créer les quatre valeurs sous HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External marqueurs\\*\<MarkerGUID >*  
   
     -   (Default)  
   

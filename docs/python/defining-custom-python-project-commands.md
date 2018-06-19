@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31583630"
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Définition de commandes personnalisées pour les projets Python
 

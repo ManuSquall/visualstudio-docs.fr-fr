@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132000"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Spécifiant l’emplacement du fichier de VSPackage à l’interpréteur de commandes de Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit être en mesure de trouver la DLL à charger le VSPackage d’assembly. Vous pouvez le rechercher de différentes manières, comme décrit dans le tableau suivant.  

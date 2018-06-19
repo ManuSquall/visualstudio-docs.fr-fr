@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927544"
 ---
 # <a name="understanding-sal"></a>Présentation de SAL
 Le langage d’annotation du code source Microsoft (SAL) fournit un ensemble d’annotations que vous pouvez utiliser pour décrire comment une fonction utilise ses paramètres, les hypothèses sur lesquelles elle émet à leur sujet et les garanties qu’elle quand elle s’achève. Les annotations sont définies dans le fichier d’en-tête `<sal.h>`. Analyse du code Visual Studio pour C++ utilise des annotations SAL pour modifier son analyse de fonctions. Pour plus d’informations sur SAL 2.0 pour le développement de pilote Windows, consultez [Annotations SAL 2.0 pour Windows pilotes](http://go.microsoft.com/fwlink/?LinkId=250979).

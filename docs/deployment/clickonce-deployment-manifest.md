@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560321"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifeste de déploiement ClickOnce
 Un manifeste de déploiement est un fichier XML qui décrit un déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], y compris l'identification de la version actuelle de l'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à déployer.  

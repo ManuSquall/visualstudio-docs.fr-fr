@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134494"
 ---
 # <a name="how-to-update-the-status-bar"></a>Comment : mettre à jour de la barre d’état
 Le **barre d’état** une barre de contrôle se trouve en bas de nombreuses fenêtres d’application qui contient une ou plusieurs lignes de texte d’état ou des indicateurs.  

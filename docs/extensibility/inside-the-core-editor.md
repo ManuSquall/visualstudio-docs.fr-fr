@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130435"
 ---
 # <a name="inside-the-core-editor"></a>Dans l’éditeur de base
 Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal est un ensemble de plusieurs composants qui vous permettent de modifier et d’interroger les informations textuelles. Si vous avez personnalisé l’éditeur principal à l’aide de l’API héritée, vous pouvez continuer à utiliser ces personnalisations, ce qui seront routées via des cartes de l’éditeur. Il est recommandé, toutefois, que vous adapter les personnalisations de l’API de l’éditeur de nouveau.  

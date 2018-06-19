@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923427"
 ---
 # <a name="saving-data"></a>Enregistrement de données
 L’enregistrement de données est le processus consistant à rendre persistantes les données dans le modèle de données d’une application dans le magasin de données d’origine, généralement une base de données relationnel telles que SQL Server.

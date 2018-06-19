@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571553"
 ---
 # <a name="overriding-toolsversion-settings"></a>Substitution des paramètres ToolsVersion
 Vous pouvez changer l’Ensemble d’outils pour les projets et solutions de trois manières :  

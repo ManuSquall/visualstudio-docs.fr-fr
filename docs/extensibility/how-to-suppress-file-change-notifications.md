@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128770"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Comment : supprimer les Notifications de modification de fichier
 Lorsque le fichier physique qui représente la mémoire tampon de texte a été modifié, une boîte de dialogue s’affiche avec le message **vous souhaitez enregistrer les modifications apportées aux éléments suivants ?** Il s’agit en tant que notification de modification de fichier. Si de nombreuses modifications doivent se trouver dans le fichier, toutefois, cette boîte de dialogue Affichage indéfiniment peut rapidement devenir ennuyeux.  

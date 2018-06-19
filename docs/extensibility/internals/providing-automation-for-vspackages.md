@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131570"
 ---
 # <a name="providing-automation-for-vspackages"></a>Grâce à l’automatisation de VSPackages
 Il existe deux façons de fournir l’automatisation vos VSPackages : mise en œuvre des objets spécifiques au VSPackage et en implémentant des objets automation standard. En règle générale, ils sont utilisés ensemble pour étendre le modèle automation de l’environnement.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920587"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Résolution des problèmes liés à la métrique du code
 Vous pouvez rencontrer certains des problèmes suivants quand vous collectez des métriques du code :

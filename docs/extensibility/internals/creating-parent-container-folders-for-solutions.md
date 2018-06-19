@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132559"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Création de dossiers de conteneur Parent pour les Solutions
 Dans l’API de plug-in de contrôle de Source de version 1.2, un utilisateur peut spécifier une destination de contrôle de source de racine unique pour tous les projets Web dans la solution. Cette racine unique est appelée une racine d’unifiée Super (SUR).  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578846"
 ---
 # <a name="vbc-task"></a>Vbc, tâche
 Encapsule vbc.exe, qui produit des fichiers exécutables (.exe), des bibliothèques de liens dynamiques (.dll) ou des modules de code (.netmodule). Pour plus d’informations sur vbc.exe, consultez [Compilateur de ligne de commande de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  

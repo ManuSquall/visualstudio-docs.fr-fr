@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102367"
 ---
 # <a name="adding-commands-to-toolbars"></a>Ajouter des commandes aux barres d’outils
 Une barre d’outils est une barre horizontale ou verticale qui contient les boutons liés à des commandes. Vous pouvez ajouter vos propres commandes aux barres d’outils dans de nombreuses fenêtres différentes dans Visual Studio : la fenêtre principale de Visual Studio, l’Explorateur de solutions et votre propre outil personnalisé windows.  

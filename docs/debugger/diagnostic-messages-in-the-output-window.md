@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474581"
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Envoyer des Messages de Diagnostic dans la fenêtre Sortie
 Vous pouvez écrire des messages d’exécution pour le **sortie** à l’aide de la fenêtre la `Debug` classe ou la `Trace` (classe), qui font partie de la <xref:System.Diagnostics> bibliothèque de classes. Utilisez la classe Debug si vous n'utilisez que la version Debug de votre programme pour la sortie. Utilisez la classe Trace si vous souhaitez obtenir une sortie pour les versions Debug et Release.  

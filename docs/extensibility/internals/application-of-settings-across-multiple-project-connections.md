@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129204"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Application des paramètres sur plusieurs connexions de projet
 Un plug-in de contrôle de code source généré à l’aide de la 1.2 de API plug-in de contrôle Source, permet un traitement par lots pour exécuter l’opération de contrôle de code source même entre plusieurs projets ou de plusieurs contextes de connexion. Lots peuvent servir à éliminer redondant, boîtes de dialogue à partir de l’expérience utilisateur par projet.  

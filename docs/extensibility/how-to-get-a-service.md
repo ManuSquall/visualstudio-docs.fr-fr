@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132454"
 ---
 # <a name="how-to-get-a-service"></a>Comment : obtenir un Service
 Vous devez souvent obtenir des services de Visual Studio pour accéder aux différentes fonctionnalités. En règle générale, un service de Visual Studio fournit une ou plusieurs interfaces que vous pouvez utiliser. Vous pouvez obtenir la plupart des services à partir d’un VSPackage.  

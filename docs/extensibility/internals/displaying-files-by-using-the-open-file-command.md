@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130891"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Afficher les fichiers à l’aide de la commande Ouvrir un fichier
 Les étapes suivantes décrivent comment l’IDE gère le **ouvrir le fichier** commande, qui est disponible sur le **fichier** menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Les étapes décrivent également comment les projets doivent répondre aux appels provenant de cette commande.  

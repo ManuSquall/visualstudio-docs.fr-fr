@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132493"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Propriétés de Document personnalisées dans un Service de langage hérité
 Propriétés de document peuvent être affichées dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **propriétés** fenêtre. Les langages de programmation ne disposent généralement pas de propriétés associées aux fichiers sources individuelles. Toutefois, XML prend en charge les propriétés de document qui affectent l’encodage, schéma et la feuille de style.  

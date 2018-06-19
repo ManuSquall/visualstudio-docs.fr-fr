@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129327"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implémentation d’un Service de langage hérité
 Vous pouvez utiliser les classes de managed package framework (MPF) pour implémenter un service de langage hérité qui prend en charge un large éventail de fonctionnalités, telles que mise en surbrillance de la syntaxe, la correspondance d’accolade et la saisie semi-automatique IntelliSense.  
