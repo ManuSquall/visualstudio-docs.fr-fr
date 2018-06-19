@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476895"
 ---
 # <a name="threads-view"></a>vue Threads
 La vue Threads est une liste plate de tous les threads associés aux fenêtres sur votre système. L’ID de Thread et le nom du module pour chaque thread sont affichés. Ils ne sont pas inclus, mais vous pouvez facilement trouver le processus qui détient un thread sélectionné.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126226"
 ---
 # <a name="session-debug-manager"></a>Gestionnaire de session de débogage
 Le Gestionnaire de session de débogage (SDM) gère n’importe quel nombre de moteurs de débogage (DE) n’importe quel nombre de programmes dans plusieurs processus sur n’importe quel nombre d’ordinateurs de débogage. En plus de constituer un moteur de débogage multiplexeur, le SDM fournit une vue unifiée de la session de débogage à l’IDE.  

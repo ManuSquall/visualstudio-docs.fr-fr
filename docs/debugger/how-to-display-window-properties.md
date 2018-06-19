@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473184"
 ---
 # <a name="how-to-display-window-properties"></a>Comment : afficher les propriétés d'une fenêtre
 Pour plus d’informations sur une fenêtre listée dans [affichage Windows](../debugger/windows-view.md), utilisez le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md).  

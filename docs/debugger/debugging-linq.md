@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474932"
 ---
 # <a name="debugging-linq"></a>Débogage LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prend en charge le débogage du code LINQ (Language Integrated Query), avec certaines restrictions. La plupart des fonctionnalités de débogage sont compatibles avec les instructions LINQ, notamment l’exécution pas à pas, la définition de points d’arrêt et la consultation des résultats dans les fenêtres du débogueur. Cette rubrique décrit les principales restrictions liées au débogage de LINQ.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477886"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Utilisation de l'attribut DebuggerTypeProxy
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> spécifie un proxy (ou remplaçant) pour un type et modifie la façon dont le type est affiché dans les fenêtres du débogueur. Lorsque vous visualisez une variable possédant un proxy, ce dernier remplace le type d’origine dans le **afficher**. La fenêtre de variables du débogueur   n'affiche que les membres publics du type du proxy. Les membres privés ne sont pas affichés.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561553"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Comment : configurer le comportement de l'invite d'approbation ClickOnce
 Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si les utilisateurs finaux reçoivent la possibilité d’installer des applications ClickOnce, telles que les applications Windows Forms, les applications Windows Presentation Foundation, les applications console, navigateur WPF les applications et les solutions Office. Vous configurez l’invite d’approbation en définissant des clés de Registre sur l’ordinateur de chaque utilisateur final.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574683"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtention de journaux de génération avec MSBuild
 En utilisant des commutateurs avec MSBuild, vous pouvez indiquer le nombre de données de build que vous souhaitez vérifier, et spécifier si vous voulez enregistrer les données de build dans un ou plusieurs fichiers. Vous pouvez également spécifier un enregistreur d’événements personnalisé pour collecter les données de build. Pour plus d’informations sur les commutateurs de ligne de commande MSBuild que cette rubrique ne traite pas, consultez l’article [Command-Line Reference (Informations de référence sur la ligne de commande MSBuild)](../msbuild/msbuild-command-line-reference.md).  

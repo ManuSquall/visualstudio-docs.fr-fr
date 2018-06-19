@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477873"
 ---
 # <a name="graphics-log-document"></a>Document de journal Graphics
 Le document journal de graphisme est l’enregistrement des événements graphiques qui se sont produits pendant l’exécution de votre application sous une session Graphics Diagnostics. Une fois les événements enregistrés, vous pouvez examiner le journal dans Visual Studio Graphics Analyzer pour diagnostiquer les problèmes de rendu et de performances.  

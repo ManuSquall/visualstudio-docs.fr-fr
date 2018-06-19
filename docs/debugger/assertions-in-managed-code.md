@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465406"
 ---
 # <a name="assertions-in-managed-code"></a>Assertions dans du code managé
 Une assertion, ou instruction `Assert`, teste une condition, que vous spécifiez en tant qu'argument à l'instruction `Assert`. Si la condition a la valeur true, aucune action ne se produit. Si la condition a la valeur false, l'assertion échoue. S'il est exécuté avec une version Debug, votre programme passe en mode arrêt.  

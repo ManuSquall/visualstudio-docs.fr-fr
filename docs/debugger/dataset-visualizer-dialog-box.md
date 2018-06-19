@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457265"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Visualiseur DataSet (boîte de dialogue)
 Le Visualiseur DataSet vous permet d'afficher le contenu d'un objet DataSet, DataTable, DataView ou DataViewManager. Vous pouvez accéder à ce visualiseur en cliquant sur l'icône de loupe qui apparaît à côté da la Valeur d'un de ces objets dans une fenêtre de variables de débogueur ou dans un DataTip.  

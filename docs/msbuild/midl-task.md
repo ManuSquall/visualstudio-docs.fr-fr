@@ -33,6 +33,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575723"
 ---
 # <a name="midl-task"></a>Tâche MIDL
 Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), midl.exe. Pour plus d’informations, consultez « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  

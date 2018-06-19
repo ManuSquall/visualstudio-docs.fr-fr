@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480213"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecter les propriétés XAML en phase de débogage
 Vous pouvez obtenir une vue en temps réel de votre code XAML en cours d’exécution avec la **arborescence d’éléments visuels en direct** et **Explorateur de propriétés dynamique**. Ces outils affichent une arborescence des éléments de l’interface utilisateur de votre application XAML en cours d’exécution et montrent les propriétés d’exécution de tout élément d’interface utilisateur que vous sélectionnez.  

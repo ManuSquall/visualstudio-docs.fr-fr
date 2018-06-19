@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572802"
 ---
 # <a name="item-functions"></a>Fonctions d'élément
 À compter de MSBuild 4.0, le code dans les tâches et les cibles peut appeler des fonctions d’élément pour obtenir des informations sur les éléments du projet. Ces fonctions simplifient l’obtention des éléments Distinct() et sont plus rapides que l’exécution d’une boucle dans les éléments.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126794"
 ---
 # <a name="extending-projects"></a>Étendre des projets
 Projets et solutions sont les méthodes que Visual Studio organise les fichiers de code et des ressources en unités de compilation et déploiement. Vous trouverez plus d’informations sur les projets dans [projets (SDK Visual Studio)](../extensibility/extending-projects.md).  

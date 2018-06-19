@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125757"
 ---
 # <a name="sending-events"></a>Envoi d’événements
 Le mécanisme de communication entre le débogueur et le moteur de débogage (DE) est un modèle d’événement en fonction de DCOM. Les événements sont envoyés en tant qu’objets COM, et chaque événement avec des paramètres qui spécifient les éléments suivants :  

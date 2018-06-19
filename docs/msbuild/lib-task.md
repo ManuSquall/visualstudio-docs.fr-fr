@@ -32,6 +32,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574218"
 ---
 # <a name="lib-task"></a>Tâche LIB
 Encapsule l'outil Gestionnaire de bibliothèques 32 bits de Microsoft, lib.exe. Le gestionnaire de bibliothèques crée et gère une bibliothèque de fichiers objets COFF (Common Object File Format). Il peut également créer des fichiers d'exportation et des bibliothèques d'importation pour référencer des définitions exportées. Pour plus d’informations, consultez [Référence LIB](/cpp/build/reference/lib-reference) et [Exécution de LIB](/cpp/build/reference/running-lib).  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478237"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l’ordinateur Microsoft Visual Studio Remote Debugging Monitor
 Ce message peut survenir, car le remote debugging monitor n’est pas correctement configuré sur l’ordinateur distant ou l’ordinateur distant est inaccessible en raison de problèmes réseau ou de la présence d’un pare-feu.

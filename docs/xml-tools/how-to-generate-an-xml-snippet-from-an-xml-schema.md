@@ -15,6 +15,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477676"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Comment : générer un extrait XML à partir d’un schéma XML
 

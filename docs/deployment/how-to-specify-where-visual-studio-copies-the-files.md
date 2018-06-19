@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557890"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Comment : spécifier l'endroit où Visual Studio copie les fichiers
 Quand vous publiez une application à l'aide de ClickOnce, la propriété `Publish Location` indique l'emplacement de destination des fichiers d'application et du manifeste. Il peut s’agir d’un chemin d’accès de fichier ou du chemin d’accès à un serveur FTP.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454387"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>En savoir plus sur le développement pour appareils mobiles avec Xamarin
 

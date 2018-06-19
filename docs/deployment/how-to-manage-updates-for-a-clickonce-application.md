@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562544"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Comment : gérer des mises à jour pour une application ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] les mises à jour les applications peuvent vérifier automatiquement ou par programme. En tant que développeur, vous avez une grande souplesse pour spécifier quand et comment les vérifications de la mise à jour sont effectuées, si les mises à jour sont obligatoires et où l’application doit vérifier les mises à jour.  

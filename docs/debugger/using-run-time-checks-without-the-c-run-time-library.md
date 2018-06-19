@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481757"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Utilisation des vérifications à l'exécution sans la bibliothèque Runtime C
 Si vous liez votre programme sans la bibliothèque Runtime C, à l’aide **/NODEFAULTLIB**et souhaitez utiliser les contrôles d’exécution, vous devez établir une liaison avec RunTmChk.lib.  

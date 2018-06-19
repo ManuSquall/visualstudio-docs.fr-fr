@@ -21,6 +21,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268377"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Accéder aux données dans des documents sur le serveur
   Vous pouvez programmer les données dans une personnalisation au niveau du document sans avoir à utiliser le modèle objet de Microsoft Office Word ou Microsoft Office Excel. Cela signifie que vous pouvez accéder aux données contenues dans un document sur un serveur qui n’a pas de Word ou Excel est installé. Par exemple, le code sur un serveur (par exemple, dans un [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] page) peut personnaliser les données dans un document et envoyer le document personnalisé à un utilisateur final. Lorsque l’utilisateur final ouvre le document, le code de liaison de données dans l’assembly de solution lie les données personnalisées dans le document. Cela est possible car les données dans le document sont séparées de l’interface utilisateur. Pour plus d’informations, consultez [mis en cache des données dans les personnalisations au niveau du document](../vsto/cached-data-in-document-level-customizations.md).  

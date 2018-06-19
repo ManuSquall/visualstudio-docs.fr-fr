@@ -31,6 +31,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065076"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Création d'applications ClickOnce destinées à être déployées par des tiers
 Envisagez de pas tous les développeurs qui créent des déploiements ClickOnce déployer les applications elles-mêmes. Bon nombre d'entre elles simplement empaqueter leur application à l’aide de ClickOnce et ensuite remettre les fichiers à un client, par exemple une grande entreprise. Le client est alors chargé d’héberger l’application sur son réseau. Cette rubrique décrit certains des problèmes inhérents à ces déploiements dans les versions du .NET Framework antérieures à la version 3.5. Elle décrit ensuite une nouvelle solution fournie dans le .NET Framework 3.5 à l’aide de la nouvelle fonctionnalité « utiliser le manifeste pour approbation ». Enfin, elle présente les stratégies recommandées pour la création de déploiements de ClickOnce pour les clients qui utilisent encore des versions antérieures du .NET Framework.  

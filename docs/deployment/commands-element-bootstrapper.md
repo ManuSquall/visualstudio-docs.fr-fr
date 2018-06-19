@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566197"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Commandes&gt; élément (programme d’amorçage)
 Le `Commands` élément implémente les tests décrits par les éléments figurant sous le `InstallChecks` élément et déclare le package que le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] programme d’amorçage doit installer si le test échoue.  

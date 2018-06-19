@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142898"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Interfaces héritées dans l’éditeur
 Vous pouvez accéder à l’éditeur Visual Studio à partir des interfaces héritées. Le Kit de développement logiciel Visual Studio inclut des adaptateurs appelés *shims*, qui permettent à ces interfaces interagir avec le nouvel éditeur. Néanmoins, nous recommandons que vous mettez à jour votre code hérité pour utiliser l’éditeur de nouvelle API. Votre code sera plus performant, et vous pouvez utiliser les nouvelles technologies telles que Windows Presentation Foundation (WPF) et Managed Extensibility Framework (MEF).  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134436"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>En choisissant le répertoire d’Installation pour un VSPackage
 Un VSPackage et ses fichiers de prise en charge doivent être sur le système de fichiers d’un utilisateur. L’emplacement varie selon que le VSPackage est géré ou non managé, le schéma de contrôle de version côte à côte et de votre choix de l’utilisateur.  

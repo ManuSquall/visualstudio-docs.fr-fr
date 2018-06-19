@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135443"
 ---
 # <a name="legacy-language-service-essentials"></a>Langage hérité Service Essentials
 Vous devez fournir un service de langage pour intégrer un langage de programmation Visual Studio. Cette rubrique décrit les fonctionnalités disponibles dans les services de langage hérité.  

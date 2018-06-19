@@ -15,6 +15,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454421"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio et Xamarin
 

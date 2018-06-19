@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448852"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Prise en main de programmation de personnalisations au niveau du document pour Word
   Si vous êtes novice dans la création de personnalisations au niveau du document pour Microsoft Office Word à l’aide de Visual Studio, voici ce que vous devez savoir.  

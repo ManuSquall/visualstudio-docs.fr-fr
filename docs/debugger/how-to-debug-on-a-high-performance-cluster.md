@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477662"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Comment : déboguer sur un cluster hautement performant
 Le débogage d'un programme multitraitement sur un cluster hautement performant est identique au débogage d'un programme ordinaire sur un ordinateur distant. Il y a toutefois d'autres éléments à prendre en compte. Pour les exigences générales de configuration à distance, consultez [débogage distant](../debugger/remote-debugging.md).  

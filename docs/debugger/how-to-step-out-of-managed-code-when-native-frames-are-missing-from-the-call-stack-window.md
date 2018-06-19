@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472940"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Comment : effectuer un pas à pas sortant du code managé lorsque les frames natifs sont absents de la fenêtre Pile des appels
 Si votre code intègre des frames natifs invisibles dans la **pile des appels** fenêtre, pas à pas sortant du code managé peut produire des résultats inattendus. Pour résoudre ce problème, vous pouvez utiliser un point d’arrêt au lieu de **pas à pas sortant**.  
