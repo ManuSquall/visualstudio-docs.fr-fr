@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108139"
 ---
 # <a name="creating-an-options-page"></a>Création d’une Page d’Options
 Cette procédure pas à pas crée une page Outils/Options simple qui utilise une grille de propriétés pour examiner et définir des propriétés.  

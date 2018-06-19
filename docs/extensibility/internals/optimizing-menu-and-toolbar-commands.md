@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130727"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Optimisation des menus et les commandes de la barre d’outils
 L’ajout des VSPackages et leurs commandes correspondantes à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut entraîner une interface utilisateur encombrée. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Fournit des méthodes pour aider à réduire la confusion des commandes de l’interface utilisateur.  

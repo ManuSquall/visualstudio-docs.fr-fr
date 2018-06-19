@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946570"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Rechercher et remplacer, Environnement, boîte de dialogue Options
 Utilisez cette page de la boîte de dialogue **Options** pour contrôler les boîtes de message et d’autres aspects d’une opération de recherche et de remplacement. Vous pouvez accéder à cette boîte de dialogue à partir du menu **Outils** en cliquant sur **Options**, en développant **Environnement**, puis en cliquant sur **Rechercher et remplacer**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.

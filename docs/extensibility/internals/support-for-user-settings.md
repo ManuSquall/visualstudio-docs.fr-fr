@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134086"
 ---
 # <a name="support-for-user-settings"></a>Prise en charge pour les paramètres utilisateur
 Un VSPackage peut définir une ou plusieurs catégories de paramètres, qui sont des groupes de variables d’état qui demeurent lorsqu’un utilisateur choisit le **paramètres d’importation/exportation** commande sur le **outils** menu. Pour activer cette persistance, vous utilisez les paramètres API dans le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -33,14 +34,14 @@ Un VSPackage peut définir une ou plusieurs catégories de paramètres, qui sont
      Si un VSPackage unique prend en charge plusieurs Points de paramètres personnalisés, chaque Point de paramètres personnalisés est implémentée par une classe distincte, et chacun est enregistré par une instance unique de la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> classe. Par conséquent, une classe d’implémentation de paramètres peuvent prendre en charge plusieurs catégories de paramètres.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>Détails de l’entrée des paramètres personnalisés du Registre de Point  
- Points de paramètres personnalisés sont créés dans une entrée de Registre à l’emplacement suivant : HKLM\Software\Microsoft\VisualStudio\\*\<Version >*\UserSettings\\`<CSPName>`, où `<CSPName>` est le nom du Point de paramètres personnalisés le prend en charge VSPackage et  *\<Version >* est la version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], par exemple 8.0.  
+ Points de paramètres personnalisés sont créés dans une entrée de Registre à l’emplacement suivant : HKLM\Software\Microsoft\VisualStudio\\*\<Version >* \UserSettings\\`<CSPName>`, où `<CSPName>` est le nom du Point de paramètres personnalisés le prend en charge VSPackage et  *\<Version >* est la version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], par exemple 8.0.  
   
 > [!NOTE]
 >  Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* peut être remplacée par une autre racine lorsque le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est de l’environnement de développement intégré (IDE) initialisé. Pour plus d’informations, consultez [les commutateurs de ligne de commande](../../extensibility/command-line-switches-visual-studio-sdk.md).  
   
  La structure de l’entrée de Registre est illustrée ci-dessous :  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<Version >*\UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<Version >* \UserSettings\  
   
  `<CSPName`> = s '#12345'  
   

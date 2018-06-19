@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129441"
 ---
 # <a name="model-for-source-control-packages"></a>Modèle pour les Packages de contrôle de code Source
 Le modèle suivant représente un exemple d’une implémentation de contrôle de code source. Dans le modèle, vous consultez les interfaces que vous devez implémenter et les services de l’environnement que vous devez appeler. Comme tous les services, vous appelez réellement les méthodes d’une interface particulière que vous obtenez par le biais du service. Les noms des classes sont identifiées pour le rendre plus facile de déterminer la façon dont est effectuée contrôle de code source.  

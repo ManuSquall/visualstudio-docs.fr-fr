@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136079"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Comment les VSPackages ajouter les éléments d’Interface utilisateur
 Un VSPackage peut ajouter des éléments d’interface (interface utilisateur) utilisateur, par exemple, les menus, barres d’outils et fenêtres dans Visual Studio au moyen du fichier .vsct.  

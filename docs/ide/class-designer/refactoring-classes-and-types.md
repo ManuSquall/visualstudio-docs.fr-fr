@@ -26,6 +26,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957431"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactoriser des classes et des types dans le Concepteur de classes
 

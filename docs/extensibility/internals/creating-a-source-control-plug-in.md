@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127854"
 ---
 # <a name="creating-a-source-control-plug-in"></a>Création d’un contrôle de Source de plug-in
 Le Kit de développement logiciel Visual Studio fournit des ressources qui vous permettent d’ajouter la fonctionnalité de contrôle de code source pour le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE). Il vous permet d’utiliser n’importe quelle DLL de plug-in qui est compatible avec l’API de plug-in de contrôle de Source décrites dans cette documentation.  

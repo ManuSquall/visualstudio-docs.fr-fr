@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128875"
 ---
 # <a name="custom-tools"></a>Outils personnalisés
 *Des outils personnalisés* vous permettent d’associer un outil avec un élément dans un projet et d’exécuter cet outil chaque fois que le fichier est enregistré. Certains des outils personnalisés, parfois appelée *générateurs de fichier unique*, sont fréquemment utilisées pour implémenter les convertisseurs qui génèrent du code à partir des données et vice versa. Par exemple, créent des générateurs de fichier unique [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] source code les fichiers .settings et .resx. Le code source généré fournit un accès fortement typé aux données dans les fichiers .settings et .resx. Le [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] des types de projet prend en charge des outils personnalisés ; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] types de projets ne sont pas. Vos propres types de projet peuvent prendre également en charge des outils personnalisés.  

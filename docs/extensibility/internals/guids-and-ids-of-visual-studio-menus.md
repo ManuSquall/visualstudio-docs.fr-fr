@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134212"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID et ID de Menus Visual Studio
 Cette rubrique énumère les valeurs GUID et l’ID des menus et des groupes dans la barre de menus de Visual Studio. Ces valeurs sont définies dans les fichiers .vsct qui sont installés dans le cadre du SDK Visual Studio. Pour plus d’informations, consultez [IDE-Defined commandes, Menus et des groupes](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  

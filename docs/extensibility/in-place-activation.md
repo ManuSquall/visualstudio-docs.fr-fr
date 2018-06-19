@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131631"
 ---
 # <a name="in-place-activation"></a>Activation sur Place
 Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous devez l’implémenter en tant que contrôle ActiveX ou en tant qu’objet de données de document actif à l’aide du modèle d’activation en place.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952542"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Ajouter la validation d’architecture personnalisée aux diagrammes de dépendance
 Dans Visual Studio, les utilisateurs peuvent valider le code source dans un projet sur un modèle de couche afin qu’ils peuvent également vérifier que le code source est conforme aux dépendances sur un diagramme de dépendances. Il existe un algorithme de validation standard, mais vous pouvez définir vos propres extensions de validation.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33958615"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Guide pratique pour implémenter une interface dans le Concepteur de classes
 

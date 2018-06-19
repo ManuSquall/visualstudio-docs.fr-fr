@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950684"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132640"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Comment : prendre en charge le texte masqué dans un Service de langage hérité
 Vous pouvez créer des zones de texte masqué en plus des régions en mode plan. Zones de texte masqué peuvent être contrôlé par le client ou contrôlés par l’éditeur et sont utilisés pour masquer une zone de texte complètement. L’éditeur affiche une zone masquée comme des lignes horizontales. Ceci est le mode Script uniquement dans l’éditeur HTML.  

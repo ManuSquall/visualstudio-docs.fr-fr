@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130666"
 ---
 # <a name="supporting-source-control"></a>Prise en charge du contrôle de code Source
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge les extractions de fichiers, des archivages et autres opérations de contrôle de source de votre projet ou l’éditeur. Comme un client de contrôle de code source, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est conçu pour interagir avec un package de contrôle de code source, tel que [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], qui fournit l’archivage, le contrôle de version et des fonctionnalités de contrôle d’un ensemble de fichiers définis dynamiquement.  

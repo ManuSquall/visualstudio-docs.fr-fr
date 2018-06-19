@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920545"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Comment : enregistrer des données à l’aide d’une transaction
 Vous enregistrez des données dans une transaction à l’aide de la <xref:System.Transactions> espace de noms. Utilisez le <xref:System.Transactions.TransactionScope> objet de participer à une transaction qui est gérée automatiquement pour vous.

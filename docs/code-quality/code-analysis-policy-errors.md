@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922453"
 ---
 # <a name="code-analysis-policy-errors"></a>Erreurs de stratégie d’analyse du code
 Les erreurs suivantes se produisent si la stratégie d’analyse du code n’est pas satisfaite à l’archivage :

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131881"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interface utilisateur personnalisée (VSPackage de contrôle de code Source)
 Un VSPackage déclare ses éléments de menu et leur état par défaut via le fichier Visual Studio Command Table (.vsct). Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) affiche les éléments de menu dans leur état par défaut jusqu'à ce que le VSPackage est chargé. Par la suite, le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode est appelée pour activer ou désactiver des éléments de menu.  

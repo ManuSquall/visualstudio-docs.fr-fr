@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129220"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>Contribuer à la boîte de dialogue Nouvel élément Ajouter
 Un sous-type de projet peut fournir un nouveau répertoire complète des éléments pour le **ajouter un nouvel élément** boîte de dialogue en inscrivant **ajouter un élément** modèles sous la `Projects` sous-clé de Registre.  

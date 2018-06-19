@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133243"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Zone de test 2 : Obtenir à partir du contrôle de code Source
 Cette zone de test traite des cas de test pour la récupération des éléments à partir de la banque des versions via la commande Get. Ces cas de test peuvent être appliquées à locaux et aux projets Web.  

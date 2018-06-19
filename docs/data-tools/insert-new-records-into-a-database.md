@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922651"
 ---
 # <a name="insert-new-records-into-a-database"></a>Insérer de nouveaux enregistrements dans une base de données
 Pour insérer des enregistrements dans une base de données, vous pouvez utiliser la `TableAdapter.Update` méthode ou l’une des méthodes DBDirect du TableAdapter (en particulier le `TableAdapter.Insert` (méthode)). Pour plus d’informations, consultez [TableAdapter](../data-tools/create-and-configure-tableadapters.md).

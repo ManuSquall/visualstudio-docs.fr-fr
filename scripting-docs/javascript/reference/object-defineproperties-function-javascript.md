@@ -1,13 +1,13 @@
 ---
 title: Object.defineproperties, fonction (JavaScript) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - Object.defineProperties function [JavaScript]
 ms.assetid: 2dae6658-a1c9-495f-bf06-bb3e964e6762
-caps.latest.revision: 
+caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640669"
 ---
 # <a name="objectdefineproperties-function-javascript"></a>Object.defineProperties, fonction (JavaScript)
 Ajoute une ou plusieurs propriétés à un objet et/ou modifie les attributs des propriétés existantes.  
