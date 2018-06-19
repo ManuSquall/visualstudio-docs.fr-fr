@@ -1,13 +1,13 @@
 ---
-title: "toLocaleTimeString, méthode (Date) (JavaScript) | Documents Microsoft"
-ms.custom: 
+title: toLocaleTimeString, méthode (Date) (JavaScript) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - toLocaleTimeString
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - toLocaleTimeString method
 ms.assetid: 8ad75bf5-864c-4a2a-be90-220e87dce172
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641499"
 ---
 # <a name="tolocaletimestring-method-date-javascript"></a>toLocaleTimeString, méthode (Date) (JavaScript)
 Retourne une heure en tant que valeur de chaîne adaptée aux paramètres régionaux actuels de l'environnement hôte ou à des paramètres régionaux spécifiés.  

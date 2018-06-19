@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148647"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Référence de schéma 2.0 Extension VSIX
 Un fichier de manifeste de déploiement VSIX décrit le contenu d’un package VSIX. Le format de fichier est régi par un schéma. La version 2.0 de ce schéma prend en charge l’ajout d’attributs et types personnalisés.  Le schéma du manifeste est extensible. Le chargeur de manifeste ignore les éléments et attributs qui ne comprend pas XML.  

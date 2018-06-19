@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148244"
 ---
 # <a name="upgrading-projects"></a>La mise à niveau des projets
 Modifie le modèle de projet d’une version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à l’autre peut nécessiter que les projets et solutions être mis à niveau afin qu’ils puissent exécuter sur une version plus récente. Le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fournit des interfaces qui peuvent être utilisés pour implémenter la mise à niveau de prise en charge dans vos propres projets.  

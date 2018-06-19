@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461436"
 ---
 # <a name="debug-64-bit-applications"></a>Déboguer des applications 64 bits
 Vous pouvez déboguer une application 64 bits qui s'exécute sur l'ordinateur local ou sur un ordinateur distant.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31195320"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Création d’un abonnement Azure Dev/Test - Paiement à l’utilisation
 Collaborez avec votre équipe dans le cloud.  Créez plusieurs abonnements Dev/Test - Paiement à l’utilisation, pour vous permettre de collaborer avec d’autres abonnés tout en garantissant une séparation entre les équipes et les environnements.  Vous bénéficiez de tarifs horaires préférentiels exclusifs pour les droits d’utilisation Dev/Test et cloud des logiciels de votre abonnement sur Azure.

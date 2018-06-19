@@ -1,6 +1,7 @@
 ---
-title: Tests unitaires pour les méthodes génériques dans Visual Studio | Microsoft Docs
+title: Tests unitaires pour les méthodes génériques dans Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e953af66f3b03d3d2e370513f3ed7462fc1484ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4d752b66c65f10d46d57b69acc532d07ea8e2da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977281"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Tests unitaires pour les méthodes génériques
 
@@ -115,7 +117,8 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
->  Chaque fois que le test SizeOfLinkedListTest est exécuté, sa méthode TestHelper est appelée deux fois. L'instruction Assert doit chaque fois prendre la valeur True pour que le test réussisse. Si le test échoue, il peut être difficile de savoir lequel de l'appel ayant spécifié `<int>` ou de l'appel ayant spécifié `<char>` a provoqué son échec. Pour trouver la réponse, vous pouvez examiner la pile des appels ou définir des points d'arrêt dans votre méthode de test, puis déboguer pendant l'exécution du test. Pour plus d’informations, consultez [Comment : effectuer un débogage lors de l’exécution d’un test dans une solution ASP.NET](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Chaque fois que le test SizeOfLinkedListTest est exécuté, sa méthode TestHelper est appelée deux fois. L'instruction Assert doit chaque fois prendre la valeur True pour que le test réussisse. Si le test échoue, il peut être difficile de savoir lequel de l'appel ayant spécifié `<int>` ou de l'appel ayant spécifié `<char>` a provoqué son échec. Pour trouver la réponse, vous pouvez examiner la pile des appels ou définir des points d'arrêt dans votre méthode de test, puis déboguer pendant l'exécution du test. Pour plus d’informations, consultez [Comment : effectuer un débogage lors de l’exécution d’un test dans une solution ASP.NET](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+
 
 ###  <a name="TypeConstraintNotSatisfied"></a> Exemple 2 : Utilisation d’une contrainte de type
  Cet exemple montre un test unitaire pour une méthode générique qui utilise une contrainte de type non satisfaite. La première section affiche le code du projet de code sous test. La contrainte de type est mise en surbrillance.

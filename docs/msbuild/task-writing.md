@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965609"
 ---
 # <a name="task-writing"></a>Écriture de tâches
 Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches sont contenues dans les cibles. Une bibliothèque de tâches types est incluse dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. De plus, vous pouvez créer vos propres tâches. Pour plus d’informations sur la bibliothèque de tâches incluse dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consultez [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md).  

@@ -1,5 +1,5 @@
 ---
-title: Combinaison de tests de navigateur pour les tests de charge dans Visual Studio | Microsoft Docs
+title: Combinaison de tests de navigateur pour les tests de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,14 @@ ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: be0bd036c907f852028f6a9cccc798742e624184
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 121be2e1eb608bde001422282c4387bb5a7290e1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967955"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modifier la combinaison de tests pour spécifier les types de navigateur web dans un scénario de test de charge
 

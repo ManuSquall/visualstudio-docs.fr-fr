@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31456527"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
 Ignore un nombre spécifié de sources injectées dans une séquence d’énumération.  

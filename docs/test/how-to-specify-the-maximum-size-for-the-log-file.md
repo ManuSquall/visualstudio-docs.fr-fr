@@ -1,5 +1,5 @@
 ---
-title: Taille du fichier journal pour les tests de charge dans Visual Studio | Microsoft Docs
+title: Taille du fichier journal pour les tests de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,14 @@ ms.assetid: 417059bf-37ae-4e7a-b9b0-29bd71f1414f
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7ce416a587a325565a274ddb8a9f8e9bd5730c3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7faf5402f495eefe64000c67048bcb85c9197388
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965084"
 ---
 # <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Guide pratique pour spécifier la taille maximale du fichier journal pour les tests de charge
 

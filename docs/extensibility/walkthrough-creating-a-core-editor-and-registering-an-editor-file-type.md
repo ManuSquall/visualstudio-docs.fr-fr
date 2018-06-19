@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147407"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Procédure pas à pas : Création d’un éditeur de base et l’inscription d’un Type de fichier de l’éditeur
 Cette procédure pas à pas montre comment créer un VSPackage qui démarre le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal lorsqu’un fichier ayant l’extension de nom de fichier .myext est chargé.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465107"
 ---
 # <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
 Récupère le décalage de l’emplacement de symboles. Quand utiliser le [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md) est `LocIsRegRel` ou `LocIsBitField`.  

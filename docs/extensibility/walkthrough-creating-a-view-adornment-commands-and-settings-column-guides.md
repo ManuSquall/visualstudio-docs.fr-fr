@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148192"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Procédure pas à pas : Création d’un ornement de vue, les commandes et les paramètres (repères de colonne)
 Vous pouvez étendre l’éditeur de texte/code de Visual Studio avec les commandes et les effets de la vue.  Cette rubrique montre comment démarrer avec une fonctionnalité d’extension populaires, repères de colonne.  Repères de colonne sont visuellement clair lignes dessinées sur la vue de l’éditeur de texte pour vous aider à gérer votre code pour les largeurs de colonne spécifique.  Code de mise en forme en particulier peut être important pour obtenir des exemples vous incluez dans les documents, des billets de blog, ou les rapports de bogues.  

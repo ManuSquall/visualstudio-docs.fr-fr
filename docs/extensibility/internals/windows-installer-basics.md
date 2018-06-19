@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144748"
 ---
 # <a name="windows-installer-basics"></a>Concepts de base de Windows Installer
 Le programme d’installation de Windows installe et désinstalle des applications ou des logiciels sur l’ordinateur d’un utilisateur, effectuer ces tâches dans des unités appelées des composants de Windows Installer (parfois appelés WICs ou simplement des composants). Un GUID identifie chaque WIC, qui est l’unité de base de l’installation et le décompte de références pour les installations à l’aide de Windows Installer.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148699"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Procédure pas à pas : Affichage des Suggestions d’ampoule
 Les ampoules sont des icônes utilisées dans l’éditeur Visual Studio développés pour afficher un ensemble d’actions, par exemple résout des problèmes identifiés par des analyseurs de code intégrés ou de la refactorisation de code.  

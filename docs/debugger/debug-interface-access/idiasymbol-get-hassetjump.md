@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464285"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 Récupère un indicateur qui spécifie si la fonction contient une utilisation de la [setjmp](/cpp/c-runtime-library/reference/setjmp) commande (couplée avec le [longjmp](/cpp/c-runtime-library/reference/longjmp) commande, ils constituent la méthode C-style de gestion des exceptions).  

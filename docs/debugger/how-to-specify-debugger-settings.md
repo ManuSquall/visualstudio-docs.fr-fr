@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472722"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Comment : spécifier les paramètres du débogueur
 Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez utiliser divers paramètres pour spécifier le comportement du débogueur, notamment le mode d'affichage des variables, la présentation ou non des avertissements, la définition des points d'arrêt, ainsi que la manière dont les programmes sont affectés par les interruptions. Vous spécifiez les paramètres du débogueur dans le **Options** boîte de dialogue.  

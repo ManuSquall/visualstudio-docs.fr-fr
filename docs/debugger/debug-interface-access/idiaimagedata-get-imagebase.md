@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458679"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
 Récupère l’emplacement de mémoire où l’image doit être basée.  

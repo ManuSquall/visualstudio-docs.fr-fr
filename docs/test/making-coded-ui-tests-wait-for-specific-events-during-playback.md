@@ -1,6 +1,7 @@
 ---
-title: Mise en attente de tests codés de l’interface utilisateur d’événements spécifiques dans Visual Studio | Microsoft Docs
+title: Mise en attente de tests codés de l’interface utilisateur d’événements spécifiques dans Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
@@ -8,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c288958ba2864c9db962b050ad3139dbb4f7ccf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7503bc77f9cd857a0a551ff3862e2aa9824583ce
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31975844"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Suspension des tests codés de l'interface utilisateur en attendant des événements spécifiques pendant la lecture
 
@@ -23,7 +25,8 @@ Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en 
  Visual Studio Enterprise
 
 > [!TIP]
->  Vous pouvez également ajouter des délais avant les actions à l'aide de l'éditeur de test codé de l'interface utilisateur. Pour plus d’informations, consultez [Guide pratique pour insérer un délai avant une action de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0).
+> Vous pouvez également ajouter des délais avant les actions à l'aide de l'éditeur de test codé de l'interface utilisateur. Pour plus d’informations, consultez [Guide pratique pour insérer un délai avant une action de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0).
+
 
  **UITestControl.WaitForControlXXX(), méthodes**
 

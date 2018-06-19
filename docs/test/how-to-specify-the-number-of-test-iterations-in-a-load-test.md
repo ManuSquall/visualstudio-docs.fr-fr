@@ -1,5 +1,5 @@
 ---
-title: Spécifier le nombre d’itérations de tests dans un paramètre d’exécution des tests de charge dans Visual Studio | Microsoft Docs
+title: Spécifier le nombre d’itérations de tests dans un paramètre d’exécution des tests de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,14 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 06e99eafc6089853b90dd2196fb9152e2639b32b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec11561a3ebe084517d1a30266f9caa6491544a7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965560"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Comment : spécifier le nombre d'itérations de tests dans un paramètre de test de charge
 
@@ -23,7 +25,8 @@ Après avoir créé votre test de charge avec l’**Assistant Nouveau test de ch
 À l’aide de l’**éditeur de test de charge**, vous pouvez modifier la propriété **Itérations de tests** associée à une valeur de paramètres d’exécution dans la fenêtre Propriétés. La propriété **Itérations de tests** spécifie le nombre d’itérations à exécuter sur tous les tests unitaires et tests de performances web dans tous les scénarios d’un test de charge, à l’aide de l’**éditeur de test de charge**.
 
 > [!NOTE]
->  Pour obtenir une liste complète des propriétés des paramètres d’exécution et leurs descriptions, consultez [Propriétés des paramètres d’exécution pour le test de charge](../test/load-test-run-settings-properties.md).
+> Pour obtenir une liste complète des propriétés des paramètres d’exécution et leurs descriptions, consultez [Propriétés des paramètres d’exécution pour le test de charge](../test/load-test-run-settings-properties.md).
+
 
 ## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>Pour indiquer le nombre d'itérations de test dans un paramètre d'exécution
 

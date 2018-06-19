@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474074"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifier & Continuer (Visual C#)
  Avec Modifier & Continuer pour C#, vous pouvez modifier votre code en mode arrêt pendant le débogage. Les modifications peuvent être appliquées sans qu'il soit nécessaire d'arrêter et de redémarrer la session de débogage. En mode exécution, l'éditeur de code source est en lecture seule.  

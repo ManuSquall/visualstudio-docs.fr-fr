@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464701"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 Récupère un indicateur qui spécifie si le symbole de données fait partie d’un agrégat ou une collection de symboles ; le compilateur traite les symboles agrégées comme des entités distinctes, mais elles sont réellement partie d’un seul symbole supérieure.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144932"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Procédure pas à pas : Création d’un Service de langage hérité
 Utilisation des classes de langage de package managé framework (MPF) pour implémenter un service de langage dans [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] est simple. Vous avez besoin d’un VSPackage pour héberger le service de langage, le service de langage lui-même et un analyseur pour votre langue.  

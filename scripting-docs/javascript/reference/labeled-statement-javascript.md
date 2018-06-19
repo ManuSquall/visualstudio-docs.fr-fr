@@ -1,13 +1,13 @@
 ---
-title: "Une instruction (JavaScript) étiquetée | Documents Microsoft"
-ms.custom: 
+title: Une instruction (JavaScript) étiquetée | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - labeled_JavaScriptKeyword
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - labeled statement
 - identifiers, statements
 ms.assetid: 019f898e-9e27-4be4-a22f-c5927c7fcae2
-caps.latest.revision: 
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637599"
 ---
 # <a name="labeled-statement-javascript"></a>Labeled, instruction (JavaScript)
 Fournit un identificateur pour une instruction.  

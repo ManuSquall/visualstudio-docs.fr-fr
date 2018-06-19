@@ -1,5 +1,5 @@
 ---
-title: Ajouter des compteurs à des ensembles de compteurs pour un test de charge dans Visual Studio | Microsoft Docs
+title: Ajouter des compteurs à des ensembles de compteurs pour un test de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +10,22 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 153e7369397b961338b4c4c495cfd953f5271c0d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 871ba69d088e58ac1d662f254c72c406c79f86fd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967883"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Comment : ajouter des compteurs aux ensembles de compteurs à l'aide de l'éditeur de test de charge
 
 Quand vous créez un test de charge avec l’**Assistant Test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis pour votre test de charge. Pour plus d’informations, consultez [Spécification des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 > [!NOTE]
->  Si vos tests de charge sont répartis entre des ordinateurs distants, les compteurs de contrôleur et d'agent sont automatiquement mappés au contrôleur et aux ensembles de compteurs de l'agent. Pour plus d’informations sur l’utilisation de machines distantes dans votre test de charge, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
+> Si vos tests de charge sont répartis entre des ordinateurs distants, les compteurs de contrôleur et d'agent sont automatiquement mappés au contrôleur et aux ensembles de compteurs de l'agent. Pour plus d’informations sur l’utilisation de machines distantes dans votre test de charge, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
+
 
  Vous gérez vos compteurs dans l’**éditeur de test de charge**. Les ensembles de compteurs qui sont déjà ajoutés au test sont visibles dans le nœud **Ensembles de compteurs** du test de charge. Après avoir créé un test de charge, vous pouvez ajouter de nouveaux compteurs aux ensembles de compteurs existants.
 
