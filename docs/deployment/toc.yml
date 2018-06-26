@@ -8,12 +8,12 @@
   items:
     - name: Présentation du déploiement
       href: deploying-applications-services-and-components.md
-    - name: Déployer sur un dossier local
-      href: quickstart-deploy-to-local-folder.md
+    - name: Déployer sur Azure App Service
+      href: quickstart-deploy-to-azure.md
     - name: Déployer sur un site web
       href: quickstart-deploy-to-a-web-site.md
-    - name: Déployer sur Azure
-      href: quickstart-deploy-to-azure.md
+    - name: Déployer sur un dossier local
+      href: quickstart-deploy-to-local-folder.md
 - name: Didacticiels
   items:
     - name: .NET

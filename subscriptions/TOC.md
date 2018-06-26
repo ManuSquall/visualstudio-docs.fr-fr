@@ -1,4 +1,5 @@
 # [Abonnements Visual Studio](index.md)
+## [Nouveautés](whats-new-in-subscriptions.md)
 ## Expériences de l’abonné
 ### [Utilisation du portail de l’abonné](using-the-subscriber-portal.md)
 #### [Activer des abonnements commercialisés](activate-store-subscriptions.md)
