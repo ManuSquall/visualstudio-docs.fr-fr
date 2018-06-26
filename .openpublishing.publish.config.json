@@ -74,6 +74,9 @@
     }
   ],
   "notification_subscribers": [],
+  "sync_notification_subscribers": [
+    "ceicnotifications@microsoft.com"
+  ],
   "branches_to_filter": [
     "master",
     "live"
@@ -116,11 +119,7 @@
     ]
   },
   "need_generate_pdf_url_template": true,
-  "targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  },
+  "targets": {},
   "need_generate_pdf": false,
   "need_generate_intellisense": false
 }
