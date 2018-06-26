@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cc2d1da953e0c358241a06ff99e7e47b014bd29
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d227fd84cd14db165ad0253cb7ceefd4f50eb580
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269113"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690625"
 ---
 # <a name="attach"></a>Attach
-L’option **Attach** de VSPerfCmd.exe démarre le profilage par échantillonnage du processus en cours d’exécution spécifié par l’ID de processus (PID).  
+L’option **Attach** de *VSPerfCmd.exe* démarre le profilage par échantillonnage du processus en cours d’exécution spécifié par le PID (ID de processus).  
   
  Pour utiliser l’option **Attach**, vous devez spécifier la méthode **Sample** dans l’option Start.  
   

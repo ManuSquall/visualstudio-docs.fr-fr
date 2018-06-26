@@ -1,5 +1,5 @@
 ---
-title: 'DA0501 : consommation processeur moyenne par le processus en cours de profilage. | Microsoft Docs'
+title: 'DA0501 : consommation UC moyenne par le processus en cours de profilage. | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eebc0ecdb38dd1b252cac9c9bf2e1bcd007d5851
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 97e011225f84f1c5f3adcfc050260e870232fa33
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766091"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501 : Consommation UC moyenne par le processus en cours de profilage
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501 : consommation UC moyenne par le processus en cours de profilage.
 |||  
 |-|-|  
 |ID de règle|DA501|  
@@ -34,5 +35,5 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>Description de la règle  
  Ce message indique le temps, en pourcentage, pendant lequel un processeur a exécuté des instructions à partir de l’application. La valeur signalée correspond à la moyenne de tous les intervalles de mesure pendant lesquels le processus profilé était actif. Cette valeur peut être supérieure à 100 % sur les ordinateurs qui comprennent plusieurs processeurs.  
   
-## <a name="how-to-use-rule-data"></a>Comment utiliser des données de règle  
+## <a name="how-to-use-rule-data"></a>Comment utiliser les données de règle  
  Utilisez la valeur de la règle pour comparer les performances des différentes versions du programme ou pour comprendre les performances de l’application dans différents scénarios de test.

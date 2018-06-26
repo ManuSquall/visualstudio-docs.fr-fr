@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0d92e2c8e09791aa2efa4cc1d3c0df6c91ce36aa
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264454"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691022"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analyser la consommation des ressources et l’activité des threads de l’interface utilisateur (XAML)
 Utilisez le profileur **Chronologie de l'application** pour rechercher et corriger les problèmes de performances liés à l'interaction d'application dans les applications XAML. Cet outil vous aide à améliorer les performances des applications XAML en fournissant une vue détaillée de la consommation des ressources des applications. Vous pouvez analyser le temps passé par votre application à préparer les trames de l'interface utilisateur (mise en page et rendu), à traiter les demandes du réseau et des disques, et dans les scénarios comme le démarrage de l'application, le chargement des pages et le redimensionnement des fenêtres.  
@@ -35,10 +35,10 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 5.  Windows 7  
   
 > [!NOTE]
->  Vous pouvez collecter et analyser les données d'utilisation de l'UC et les données de consommation d'énergie en même temps que les données de **Chronologie de l'application** . Consultez [Exécution des outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+>  Vous pouvez collecter et analyser les données d'utilisation de l'UC et les données de consommation d'énergie en même temps que les données de **Chronologie de l'application** . Consultez [Exécution des Outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Collecter les données de chronologie de l’application  
- Vous pouvez profiler la réactivité de votre application sur votre ordinateur local, sur votre appareil connecté, sur le simulateur ou les émulateurs Visual Studio, ou sur un appareil distant. Consultez [Exécution des outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+## <a name="collect-application-timeline-data"></a>Collecter les données de chronologie de l’application  
+ Vous pouvez profiler la réactivité de votre application sur votre ordinateur local, sur votre appareil connecté, sur le simulateur ou les émulateurs Visual Studio, ou sur un appareil distant. Consultez [Exécution des Outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 > [!TIP]
 >  Si possible, exécutez l'application directement sur l'appareil. Les performances de l'application observées sur le simulateur ou via une connexion Bureau à distance peuvent ne pas être identiques aux performances réelles sur l'appareil. D'autre part, la collecte des données à l'aide des outils distants Visual Studio n'affecte pas les données de performances.  
@@ -52,7 +52,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 3.  Sélectionnez **Chronologie de l'application** , puis cliquez sur **Démarrer** dans le bas de la fenêtre.  
   
     > [!NOTE]
-    >  Il est possible qu'une fenêtre Contrôle de compte d'utilisateur apparaisse et vous demande l'autorisation d'exécuter VsEtwCollector.exe. Cliquez sur **Oui**.  
+    >  Il est possible qu’une fenêtre Contrôle de compte d’utilisateur apparaisse et vous demande l’autorisation d’exécuter *VsEtwCollector.exe*. Cliquez sur **Oui**.  
   
 4.  Exécutez le scénario qui vous intéresse quant au profilage dans votre application pour collecter des données de performances.  
   
@@ -62,7 +62,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
   
      ![Rapport du profileur de chronologie](../profiling/media/timeline_base.png "TIMELINE_Base")  
   
-##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analyser les données de profilage de la chronologie  
+## <a name="analyze-timeline-profiling-data"></a>Analyser les données de profilage de la chronologie  
  Après avoir collecté les données de profilage, vous pouvez utiliser ces étapes pour démarrer votre analyse :  
   
 1.  Consultez les informations dans les graphiques **Utilisation de threads d'interface utilisateur** et **Débit visuel (i/s)** puis utilisez les barres de navigation de la chronologie pour sélectionner une plage horaire à analyser.  
@@ -97,7 +97,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 |||  
 |-|-|  
 |**Analyse**|Temps passé à l'analyse de fichiers XAML et à la création d'objets.<br /><br /> Le développement d'un nœud **Analyse** dans **Détails de la chronologie** affiche la chaîne de dépendance de tous les fichiers XAML qui ont été analysés comme résultat de l'événement racine. Cela vous permettra d'identifier l'analyse de fichiers inutiles et la création d'objets dans les scénarios critiques de performances, et de les optimiser.|  
-|**Disposition**|Dans les grandes applications, des milliers d'éléments peuvent s'afficher en même temps sur l'écran. Ceci peut entraîner un faible débit des trames d'interface utilisateur et en conséquence, une réactivité faible de l'application. L’événement Layout détermine avec précision le coût de la disposition de chaque élément (c’est-à-dire le temps passé dans les fonctions Arrange, Measure, ApplyTemplate et ArrangeOverride) et génère les arborescences des éléments visuels qui ont participé à une passe de disposition. Vous pouvez utiliser cette visualisation pour déterminer laquelle de vos arborescences logiques doit être élaguée ou pour évaluer d'autres mécanismes de report pour optimiser votre passe de disposition.|  
+|**Disposition**|Dans les grandes applications, des milliers d'éléments peuvent s'afficher en même temps sur l'écran. Ceci peut entraîner un faible débit des trames d'interface utilisateur et en conséquence, une réactivité faible de l'application. L’événement Layout détermine avec précision le coût de la disposition de chaque élément (c’est-à-dire le temps passé dans Arrange, Measure, ApplyTemplate et ArrangeOverride) et génère les arborescences d’éléments visuels qui ont participé à une passe de disposition. Vous pouvez utiliser cette visualisation pour déterminer laquelle de vos arborescences logiques doit être élaguée ou pour évaluer d'autres mécanismes de report pour optimiser votre passe de disposition.|  
 |**Afficher**|Temps passé à dessiner les éléments XAML à l'écran.|  
 |**E/S**|Durée de récupération de données à partir du disque local ou à partir des ressources réseau qui sont accessibles par le biais de l’ [API Microsoft Windows Internet (WinINet)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Code d'application**|Indique le temps passé à l'exécution du code de l'application (utilisateur) qui n'est pas lié à l'analyse ou à la disposition.|  
@@ -117,8 +117,8 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 |![Personnaliser les informations de détails de chronologie](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permet de spécifier des annotations sur les événements.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Blog de l’équipe WPF : New UI Performance Analysis Tool for WPF Applications](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
+ [Blog de l’équipe WPF : nouvel outil d’analyse des performances de l’IU pour les applications WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
  [Bonnes pratiques pour les performances des applications UWP en C++, C# et Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [Optimisation des performances des applications WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
+ [Optimiser les performances des applications WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
  [Profilage dans Visual Studio](../profiling/index.md)  
  [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)

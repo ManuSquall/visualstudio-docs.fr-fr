@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e801404fbf3356b597471d7c3dda23264eb0c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765386"
 ---
-# <a name="how-to-choose-collection-methods"></a>Comment : choisir des méthodes de collection
+# <a name="how-to-choose-collection-methods"></a>Guide pratique pour choisir des méthodes de collecte
 
 Les Outils de profilage de Visual Studio prennent en charge trois méthodes de collecte des données de performances : l’échantillonnage, l’instrumentation et la concurrence. Vous pouvez également utiliser les méthodes d’instrumentation et d’échantillonnage pour collecter des données de durée de vie et d’allocation de la mémoire .NET.
 
@@ -52,7 +53,7 @@ Vous pouvez utiliser la propriété **Method** de session de performance pour sp
 
 1. Dans l’**Explorateur de performances**, sélectionnez la session de performance.
 
-     Le nom des fichiers de session de performance se termine par l’extension .psess.
+     Un nom de fichier de session de performance a une extension .*psess*.
 
 2. Cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Propriétés**.
 
@@ -80,7 +81,7 @@ Vous pouvez utiliser la propriété **Method** de session de performance pour sp
 
 6. (Facultatif) Cliquez sur **Collecter aussi les informations de durée de vie des objets .NET** pour collecter des données sur les générations de garbage collection dans lesquelles la mémoire d’objets a été récupérée.
 
-     Pour plus d’informations sur les autres options disponibles lorsque vous collectez des données de mémoire .NET, consultez [Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).
+     Pour plus d’informations sur les autres options disponibles quand vous collectez des données de mémoire .NET, consultez [Collecter les données liées à l’allocation et à la durée de vie de la mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Pour sélectionner la collecte de données d’accès concurrentiel à l’aide des propriétés de session de performance
 
@@ -92,6 +93,6 @@ Vous pouvez utiliser la propriété **Method** de session de performance pour sp
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)  
-[Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)  
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)  
+[Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)  
 [Propriétés d’une session de performance](../profiling/performance-session-properties.md)

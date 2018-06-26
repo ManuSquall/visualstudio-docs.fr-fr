@@ -9,24 +9,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c81443332a05fbd60a295613c5f34c579482199
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b11752200b891808f96b53e57453c0df815da3f4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766672"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Comment : attacher le profileur à une application .NET Framework autonome pour collecter des données de mémoire en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application .NET Framework autonome et collecter des données de mémoire en utilisant la ligne de commande
 
-Cette rubrique explique comment utiliser les Outils de profilage en ligne de commande de Visual Studio pour attacher le profileur à une application (cliente) .NET Framework autonome et collecter des données de mémoire.
+Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage Visual Studio pour attacher le profileur à une application .NET Framework autonome (cliente) en cours d’exécution et collecter des données de mémoire.
 
 > [!NOTE]
-> Les outils en ligne de commande des outils de profilage se trouvent dans le sous-répertoire \Team Tools\Performance Tools du répertoire d’installation de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécification du chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+> Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-Pour attacher une application .NET Framework et collecter des données de mémoire, vous devez utiliser l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour initialiser les variables d’environnement appropriées avant le démarrage de l’application cible. Quand le profileur est attaché à l’application, vous pouvez utiliser l’outil **VSPerfCmd.exe** pour suspendre et reprendre la collecte des données.
+Pour attacher une application .NET Framework et collecter des données de mémoire, vous devez utiliser l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour initialiser les variables d’environnement appropriées avant le démarrage de l’application cible. Quand le profileur est attaché à l’application, vous pouvez utiliser l’outil *VSPerfCmd.exe* pour suspendre et reprendre la collecte des données.
 
 Pour que vous puissiez mettre fin à une session de profilage, le profileur ne doit plus être attaché à un processus profilé et doit être arrêté explicitement. Dans la plupart des cas, nous vous recommandons de désactiver les variables d’environnement de profilage à la fin d’une session.
 
-## <a name="attaching-the-profiler"></a>Attachement du profileur
+## <a name="attach-the-profiler"></a>Attacher le profileur
 
 ### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Pour attacher le profileur à une application .NET Framework en cours d’exécution
 
@@ -72,9 +73,9 @@ Pour que vous puissiez mettre fin à une session de profilage, le profileur ne d
 
     - **/targetclr:** `Version` spécifie la version du common language runtime (CLR) à profiler quand plusieurs versions du runtime sont chargées dans une application. Facultative.
 
-## <a name="controlling-data-collection"></a>Contrôle de la collection de données
+## <a name="control-data-collection"></a>Contrôler la collecte des données
 
-Pendant l’exécution de l’application cible, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier à l’aide des options de **VSPerfCmd.exe**. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.
+Pendant l’exécution de l’application cible, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier à l’aide des options de *VSPerfCmd.exe*. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.
 
 ### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données
 
@@ -86,7 +87,7 @@ Pendant l’exécution de l’application cible, vous pouvez contrôler la colle
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Démarre (**/processon**) ou arrête (**/processoff**) la collecte des données pour le processus spécifié par le `PID`.|
     |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** démarre la collecte de données pour le processus spécifié par le `PID` ou par le nom du processus (ProcName). **/detach** arrête la collecte des données pour le processus spécifié ou pour tous les processus, si aucun processus n’est spécifié.|
 
-## <a name="ending-the-profiling-session"></a>Fin d’une session de profilage
+## <a name="end-the-profiling-session"></a>Arrêter la session de profilage
 
 Pour que vous puissiez mettre fin à une session de profilage, le profileur ne doit plus être attaché à un processus profilé et doit être arrêté explicitement. Vous pouvez détacher le profileur d’une application profilée avec la méthode d’échantillonnage en fermant l’application ou en appelant l’option **VSPerfCmd /detach**. Vous devez alors appeler l’option **VSPerfCmd /shutdown** pour désactiver le profileur et fermer le fichier de données de profilage. La commande **VSPerfClrEnv /off** efface les variables d’environnement de profilage.
 
@@ -110,5 +111,5 @@ Pour que vous puissiez mettre fin à une session de profilage, le profileur ne d
 
 ## <a name="see-also"></a>Voir aussi
 
-[Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)  
-[Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)
+[Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)  
+[Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)

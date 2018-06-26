@@ -10,26 +10,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c61d95758597b09b28ee5acd6268c44ea1bf0869
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c40350019d0878893568977df6db88c30fdc734
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764854"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Comment : attacher le profileur à un service natif pour collecter des statistiques d'applications en utilisant la ligne de commande
-Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à un service natif et pour collecter des statistiques de performances avec la méthode d’échantillonnage.  
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à un service natif et collecter des statistiques d’application en utilisant la ligne de commande
+Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à un service natif et collecter des statistiques de performances à l’aide de la méthode d’échantillonnage.  
   
 > [!NOTE]
 >  Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications UWP nécessitent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
->  Les outils en ligne de commande des outils de profilage se trouvent dans le sous-répertoire \Team Tools\Performance Tools du répertoire d’installation de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécification du chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes ou bien l’ajouter à la commande elle-même. Pour plus d’informations, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Lorsque le profileur est attaché au service, vous pouvez suspendre et reprendre la collecte de données.  
   
  Pour mettre fin à une session de profilage, vous devez détacher le profileur du service et l’arrêter explicitement.  
   
-## <a name="starting-the-application-with-the-profiler"></a>Démarrage de l’application avec le profileur  
+## <a name="start-the-application-with-the-profiler"></a>Démarrer l’application avec le profileur  
  Pour attacher le profileur à un service natif, utilisez les options [/start](../profiling/start.md) et [/attach](../profiling/attach.md) de **VSPerfCmd.exe** pour initialiser le profileur et l’attacher à l’application cible. Vous pouvez spécifier **/start** et **/attach** et leurs options respectives sur une même ligne de commande. Vous pouvez également ajouter l’option [/globaloff](../profiling/globalon-and-globaloff.md) pour suspendre la collecte des données au démarrage de l’application cible. Vous pouvez ensuite utiliser [/globalon](../profiling/globalon-and-globaloff.md) pour commencer à collecter les données.  
   
 #### <a name="to-attach-the-profiler-to-a-native-service"></a>Pour attacher le profileur à un service natif  
@@ -44,7 +45,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
   
     -   L’option **/start:sample** initialise le profileur.  
   
-    -   L’option **/output:**`OutputFile` est nécessaire avec **/start**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).  
+    -   L’option **/output:**`OutputFile` est nécessaire avec **/start**. `OutputFile` spécifie le nom et l’emplacement du fichier de données de profilage (.*vsp*).  
   
      Vous pouvez utiliser l’une des options suivantes avec l’option **/start:sample**.  
   
@@ -74,8 +75,8 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
     |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Remplace l’événement d’échantillonnage par des appels système du processus vers le noyau du système d’exploitation (syscalls). Si `Interval` est spécifié, définit le nombre d’appels entre chaque échantillon. La valeur par défaut est 10.|  
     |[/counter](../profiling/counter.md) **:** `Config`|Remplace l’événement et l’intervalle d’échantillonnage par le compteur de performances du processeur et l’intervalle spécifiés dans `Config`.|  
   
-## <a name="controlling-data-collection"></a>Contrôle de la collection de données  
- Pendant l’exécution de l’application cible, vous pouvez utiliser les options de **VSPerfCmd.exe** pour démarrer et arrêter l’écriture des données dans le fichier de données du profileur. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  
+## <a name="control-data-collection"></a>Contrôler la collecte des données  
+ Pendant l’exécution de l’application cible, vous pouvez utiliser les options de *VSPerfCmd.exe* pour démarrer et arrêter l’écriture des données dans le fichier de données du profileur. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données  
   
@@ -87,7 +88,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Démarre (**/processon**) ou arrête (**/processoff**) la collecte des données pour le processus spécifié par l’ID de processus (`PID`).|  
     |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** commence à collecter des données pour le processus spécifié par l’ID ou le nom de processus. **/detach** arrête la collecte des données pour le processus spécifié, ou pour tous les processus si aucun processus n’est spécifié.|  
   
-## <a name="ending-the-profiling-session"></a>Fin d’une session de profilage  
+## <a name="end-the-profiling-session"></a>Arrêter la session de profilage  
  Pour mettre fin à une session de profilage, vous devez détacher le profileur du service et l’arrêter explicitement. Vous pouvez arrêter la collecte des données d’un service natif profilé avec la méthode d’accès concurrentiel en arrêtant le service ou en appelant l’option **VSPerfCmd /detach**. Vous appelez ensuite l’option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) pour désactiver le profileur et fermer le fichier de données de profilage.  
   
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage  
@@ -105,5 +106,5 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
      **VSPerfCmd /shutdown**  
   
 ## <a name="see-also"></a>Voir aussi  
- [Profilage de services](../profiling/command-line-profiling-of-services.md)   
+ [Profiler des services](../profiling/command-line-profiling-of-services.md)   
  [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)

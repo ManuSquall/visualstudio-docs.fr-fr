@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b96005f0935f0d1a50233196aa01bf157b6e0cd
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 128fe1f59cc652d0879e346689c9e84f1c1d9e82
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477052"
 ---
 # <a name="user-vsperfcmd"></a>User (VSPerfCmd)
-L’option **User** spécifie le nom de domaine et d’utilisateur du compte propriétaire du processus profilé. Cette option n’est nécessaire que si le processus s’exécute sous le compte d’un utilisateur autre que celui connecté. Le propriétaire du processus est répertorié dans la colonne Nom d’utilisateur, sous l’onglet Processus du gestionnaire des tâches de Windows.  
+L’option **User** spécifie le nom de domaine et d’utilisateur du compte propriétaire du processus profilé. Cette option n’est nécessaire que si le processus s’exécute sous le compte d’un utilisateur autre que celui connecté. Le propriétaire de processus est listé dans la colonne Nom d’utilisateur, sous l’onglet **Processus** du Gestionnaire des tâches Windows.  
   
  Vous pouvez spécifier l’option **User** seulement sur une ligne de commande qui contient aussi l’option **Start**.  
   
@@ -49,6 +50,6 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /User:SYSTEM
   
 ## <a name="see-also"></a>Voir aussi  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilage de services](../profiling/command-line-profiling-of-services.md)
+ [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profiler des services](../profiling/command-line-profiling-of-services.md)

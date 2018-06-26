@@ -15,19 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 247a152cd04a262115cbde78a7a06ad2e95f250c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 198677eb431852d5249684d23ff0dcad025e63af
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572402"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Guide pratique pour référencer les informations de symboles Windows
-Les outils de profilage Visual Studio utilisent des fichiers de symboles (.pdb) pour résoudre les noms symboliques, tels que les noms de fonctions dans les fichiers binaires d’un programme. Vous pouvez suivre les étapes suivantes pour télécharger et mettre à jour automatiquement les fichiers .pdb correspondant à la version de Windows installée sur l’ordinateur local.  
+# <a name="how-to-reference-windows-symbol-information"></a>Comment : référencer les informations de symboles Windows
+Les Outils de profilage Visual Studio utilisent des fichiers de symboles (.*pdb*) pour résoudre les noms symboliques, par exemple les noms de fonctions dans les fichiers binaires d’un programme. Vous pouvez effectuer les étapes suivantes pour télécharger et mettre à jour automatiquement les fichiers .*pdb* correspondant à la version de Windows installée sur l’ordinateur local.  
   
 > [!NOTE]
 >  Ce paramètre n’affecte pas les rapports existants. Seuls ceux créés après la spécification du serveur de symboles auront les informations de symboles.  
   
- Pour plus d’informations, consultez [Spécifier les fichiers de symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ Pour plus d’informations, consultez [Spécifier les fichiers de symboles (.*pdb*) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>Pour utiliser le serveur de symboles Microsoft  
   
@@ -48,5 +49,5 @@ Les outils de profilage Visual Studio utilisent des fichiers de symboles (.pdb) 
      Vous pouvez également cliquer sur le bouton de sélection (**...**), puis sélectionner un répertoire dans la boîte de dialogue **Rechercher un dossier**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
- [Guide pratique pour sérialiser les informations de symboles](../profiling/how-to-serialize-symbol-information.md)
+ [Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)   
+ [Guide pratique pour sérialiser les informations de symbole](../profiling/how-to-serialize-symbol-information.md)

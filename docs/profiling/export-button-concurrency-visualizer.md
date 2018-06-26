@@ -1,5 +1,5 @@
 ---
-title: Bouton Exporter (visualiseur concurrentiel) | Microsoft Docs
+title: Exporter, bouton (visualiseur concurrentiel) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c773d3135cff3d898c93ed6d9df43b36c387747c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c977c147aa9edc7dc83e76dc3d9c07dd959c3f9c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764707"
 ---
-# <a name="export-button-concurrency-visualizer"></a>Bouton Exporter (visualiseur concurrence)
-Le bouton **Exporter** vous permet d’exporter la pile des appels dans un fichier .csv pour vos propres dossiers ou pour l’utiliser avec un autre outil, comme Microsoft Excel.  
+# <a name="export-button-concurrency-visualizer"></a>Exporter, bouton (visualiseur concurrentiel)
+Le bouton **Exporter** vous permet d’exporter la pile des appels dans un fichier .*csv* pour vos propres besoins, ou pour l’utiliser avec un autre outil, par exemple Microsoft Excel.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)   

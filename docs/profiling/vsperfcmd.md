@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448413"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573139"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
-L’outil **VSPerfCmd.exe** est utilisé pour démarrer et arrêter la collecte de données de performances. Il utilise la syntaxe suivante :  
+L’outil *VSPerfCmd.exe* est utilisé pour démarrer et arrêter la collecte de données de performances. Il utilise la syntaxe suivante :  
   
 ```cmd  
 VSPerfCmd [/U] [/options]  
 ```  
   
- Les tableaux suivants décrivent les options de l’outil **VSPerfCmd.exe**.  
+ Les tableaux suivants décrivent les options de l’outil *VSPerfCmd.exe*.  
   
 |Option|Description|  
 |------------|-----------------|  
@@ -44,7 +44,7 @@ VSPerfCmd [/U] [/options]
 |[QueryCounters](../profiling/querycounters.md)|Affiche une liste des compteurs d’UC valides pour la machine active.|  
 |[WinCounter](../profiling/wincounter.md) **:** *path*|Spécifie un événement de compteur de performance Windows à inclure avec les données de marque du profil. À utiliser uniquement avec **Start**.|  
 |[AutoMark](../profiling/automark.md)  **:** *n*|Spécifie l’intervalle de temps (en millisecondes) entre les événements de collecte des données du compteur de performances Windows. À utiliser avec **WinCounter**.|  
-|[Events](../profiling/events-vsperfcmd.md) **:** `option`|Contrôle la collecte des événements de suivi d’événements pour Windows (ETW) spécifiés. Les données ETW sont collectées dans un fichier .itl qui n’est pas le fichier de profilage de données de profilage (.vsp).|  
+|[Events](../profiling/events-vsperfcmd.md) **:** `option`|Contrôle la collecte des événements de suivi d’événements pour Windows (ETW) spécifiés. Les données ETW sont collectées dans un fichier .*itl* qui n’est pas le fichier de données de profilage (.*vsp*).|  
 |[État](../profiling/status.md)|Affiche l’état du profileur, des informations sur les processus qui sont en cours de profilage et les comptes qui sont autorisés à contrôler le profileur.|  
 |[Shutdown](../profiling/shutdown.md)[**:**`n`]|Ferme le fichier de données de profilage et désactive le profileur.|  
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Reprend la collecte de données après un appel à **VSPerfCmdGlobalOff**.|  
@@ -63,8 +63,8 @@ VSPerfCmd [/U] [/options]
 |[Launch](../profiling/launch.md) **:** *Exécutable*|Démarre l’application spécifiée et démarre le profileur.|  
 |[Args](../profiling/args.md) **:** *Arguments*|Spécifie les arguments de ligne de commande à passer à l’application lancée.|  
 |[Console](../profiling/console.md)|Démarre la commande spécifiée dans une nouvelle fenêtre d’invite de commandes.|  
-|[Attach](../profiling/attach.md)  **:** *PID*[**,***PID*]|Démarre le profilage des processus spécifiés. Les processus peuvent être identifiés par l’ID de processus ou par le nom du processus.|  
-|[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Arrête le profilage des processus spécifiés. Les processus peuvent être identifiés par l’ID de processus ou par le nom du processus. Si aucun processus n’est spécifié, le profilage est arrêté pour tous les processus.|  
+|[Attach](../profiling/attach.md)  **:** *PID*[**,***PID*]|Démarre le profilage des processus spécifiés. Vous pouvez identifier les processus par ID de processus ou par nom de processus.|  
+|[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Arrête le profilage des processus spécifiés. Vous pouvez identifier les processus par ID de processus ou par nom de processus. Si aucun processus n’est spécifié, le profilage est arrêté pour tous les processus.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Collecte les données d’allocation de mémoire et les données de durée de vie des objets de .NET. À utiliser seulement avec l’option **VSPerfCmdLaunch**.|  
   
 ### <a name="sample-interval-options"></a>Options d'intervalle d’échantillonnage  

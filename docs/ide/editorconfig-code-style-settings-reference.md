@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a61f2cd0e961aaa726f9a56cf75c4efb0ed77ae9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: caedbf46ce3d56d57a22541f1ddc042d8e41eb48
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34265999"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572645"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Paramètres des conventions de codage .NET pour EditorConfig
 
@@ -75,6 +75,7 @@ La liste suivante affiche la langue autorisée de règles de conventions de lang
         - dotnet\_style\_require\_accessibility_modifiers
         - csharp\_preferred\_modifier_order
         - visual\_basic\_preferred\_modifier_order
+        - dotnet\_style\_readonly\_field
     - [Préférences au niveau de l’expression](#expression_level)
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
@@ -239,7 +240,7 @@ Le tableau suivant indique le nom des règles, les ID de règles, les langages d
 
 | Nom de la règle | ID de règle | Langages applicables | Valeur par défaut de Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_predefined_type_for_locals_ parameters_members | IDE0012 et IDE0014 | C# et Visual Basic | true:none |
+| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 et IDE0014 | C# et Visual Basic | true:none |
 | dotnet_style_predefined_type_for_member_access | IDE0013 et IDE0015 | C# et Visual Basic | true:none |
 
 **dotnet\_style\_predefined\_type\_for\_locals\_parameters_members**
@@ -299,7 +300,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="normalize_modifiers"></a>Préférences des modificateurs
 
-Les règles de style mentionnées dans cette section concernent les préférences de modificateur, telles que l’ajout obligatoire de modificateurs d’accessibilité et la spécification de l’ordre de tri des modificateurs.
+Les règles de style de cette section concernent les préférences des modificateurs, notamment la spécification obligatoire des modificateurs d’accessibilité, l’indication de l’ordre de tri souhaité pour les modificateurs, ainsi que la spécification obligatoire du modificateur en lecture seule.
 
 Le tableau suivant indique le nom des règles, les ID de règles, les langages de programmation applicables, les valeurs par défaut et la première version de Visual Studio prise en charge :
 
@@ -308,6 +309,7 @@ Le tableau suivant indique le nom des règles, les ID de règles, les langages d
 | dotnet_style_require_ accessibility_modifiers | IDE0040 | C# et Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:none | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial, Default, Private, Protected, Public, Friend, NotOverridable, Overridable, MustOverride, Overloads, Overrides, MustInherit, NotInheritable, Static, Shared, Shadows, ReadOnly, WriteOnly, Dim, Const,WithEvents, Widening, Narrowing, Custom, Async:none | 15.5 |
+| dotnet_style_readonly_field | IDE0044 | C# et Visual Basic | true:suggestion | 15.7 |
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
@@ -316,7 +318,7 @@ Cette règle n’accepte pas une valeur **true** ou **false**, elle accepte à l
 | Value | Description |
 | ----- |:----------- |
 | always | Préférer la déclaration de modificateurs d’accessibilité |
-| for\_non\_interface_members | Préférer la déclaration de modificateurs d’accessibilité, sauf pour des membres d’interface publique. Cette valeur a le même effet que la valeur **always** et sert pour la vérification ultérieure si C# ajoute des méthodes d’interface par défaut. |
+| for\_non\_interface_members | Préférer la déclaration de modificateurs d’accessibilité, sauf pour des membres d’interface publique. Ceci est identique à **always** et a été ajouté à des fins de vérification future, si C# ajoute des méthodes d’interface par défaut. |
 | never | Ne jamais préférer la déclaration de modificateurs d’accessibilité |
 
 Exemples de code :
@@ -326,13 +328,13 @@ Exemples de code :
 // dotnet_style_require_accessibility_modifiers = for_non_interface_members
 class MyClass
 {
-    private const string thisFieldIsConst= "constant";
+    private const string thisFieldIsConst = "constant";
 }
 
 // dotnet_style_require_accessibility_modifiers = never
 class MyClass
 {
-    const string thisFieldIsConst= "constant";
+    const string thisFieldIsConst = "constant";
 }
 ```
 
@@ -365,12 +367,35 @@ Public Class MyClass
 End Class
 ```
 
+**dotnet_style_readonly_field**
+
+- Quand cette règle a la valeur **true**, les champs doivent être marqués de préférence avec `readonly` (C#) ou `ReadOnly` (Visual Basic), s’ils sont assignés inline ou dans un constructeur.
+- Quand cette règle a la valeur **false**, aucune préférence n’est spécifiée concernant le marquage des champs avec `readonly` (C#) ou `ReadOnly` (Visual Basic).
+
+Exemples de code :
+
+```csharp
+// dotnet_style_readonly_field = true
+class MyClass
+{
+    private readonly int _daysInYear = 365;
+}
+```
+
+```vb
+' dotnet_style_readonly_field = true
+Public Class MyClass
+    Private ReadOnly daysInYear As Int = 365
+End Class
+```
+
 Ces règles peuvent apparaître dans un fichier *.editorconfig* comme suit :
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_require_accessibility_modifiers = always:suggestion
+dotnet_style_readonly_field = true:warning
 
 # CSharp code style settings:
 [*.cs]

@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dca42fb108c2465db2b882957ea2bbcb25cd5ef8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7d53bd0975edfcaf02b0383834eb53db7716c982
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766192"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030 : Collecter les mesures d'interaction de couche pour les projets de base de données
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030 : collecter les mesures d’interaction de couche pour les projets de base de données
 |||  
 |-|-|  
 |ID de règle|DA0030|  
@@ -35,11 +36,11 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>Description de la règle  
  Cette règle se déclenche quand une activité importante est relevée dans les fonctions qui se trouvent dans les espaces de noms System.Data, notamment <xref:System.Data.Linq><xref:System.Data.Linq>.  
   
- Les applications multicouches utilisent des services en couche pour leurs couches présentation et leur couches données. Souvent, la couche données est un processus distinct qui exécute un système de gestion de base de données tel que Microsoft SQL Server. La couche données peut même être exécutée sur un ordinateur autre que celui de l’application. Les profils d’échantillonnage fournissent peu d’insight sur les fonctions et les services qui sont exécutés à distance ou hors processus.  
+ Les applications multicouches utilisent des services en couche pour leurs couches présentation et leur couches données. Souvent, la couche Données est un processus distinct qui exécute un système de gestion de base de données tel que Microsoft SQL Server. La couche données peut même être exécutée sur un ordinateur autre que celui de l’application. Les profils d’échantillonnage fournissent peu d’insight sur les fonctions et les services qui sont exécutés à distance ou hors processus.  
   
- Les outils de profilage peuvent collecter des informations de minutage pour les applications multicouches qui interagissent avec une couche de données Microsoft SQL Server à l’aide d’appels asynchrones aux services ADO.NET. Vous devez activer le profilage d’interaction de couche de manière explicite. En effet, ce profilage n’est pas activé par défaut.  
+ Les Outils de profilage peuvent collecter des informations de minutage pour les applications multicouches qui interagissent avec une couche Données Microsoft SQL Server à l’aide d’appels asynchrones aux services ADO.NET. Vous devez activer le profilage d’interaction de couche de manière explicite. En effet, ce profilage n’est pas activé par défaut.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Cette règle possède un caractère informatif et ne nécessite pas forcément d’action corrective.  
   
- Pour plus d’informations sur l’ajout de données d’interaction de couche aux données de profilage à partir de l’IDE de Visual Studio, consultez [Collecte de données d’interaction de couche](../profiling/collecting-tier-interaction-data.md). Pour plus d’informations sur l’ajout de données d’interaction de couche à partir de la ligne de commande, consultez [Collecte de données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md).
+ Pour plus d’informations sur l’ajout de données d’interaction de couche aux données de profilage à partir de l’IDE Visual Studio, consultez, [Collecte de données d’interaction de couche](../profiling/collecting-tier-interaction-data.md). Pour plus d’informations sur l’ajout de données d’interaction de couche à partir de la ligne de commande, consultez [Collecter les données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md).

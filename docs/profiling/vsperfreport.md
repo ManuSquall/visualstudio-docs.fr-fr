@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448072"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572213"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
-L’outil en ligne de commande VSPerfReport permet de créer des rapports à l’aide des fichiers de données des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le format de rapport par défaut est un fichier .csv.  
+L’outil en ligne de commande VSPerfReport permet de créer des rapports à l’aide des fichiers de données des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le format de rapport par défaut est un fichier .*csv*.  
   
  VSPerfReport utilise la syntaxe suivante :  
   
@@ -33,15 +33,15 @@ L’outil en ligne de commande VSPerfReport permet de créer des rapports à l�
 VSPerfReport [/U] vspfilename [/options]  
 ```  
   
- Notez que `filename` doit être un fichier .vsp ou .vsps valide.  
+ Notez que `filename` doit être un fichier .*vsp* ou .*vsps* valide.  
   
- L’outil en ligne de commande VSPerfReport est également utilisé pour comparer des fichiers .vsp ou .vsps. Pour générer un rapport de différences (« diff »), utilisez la syntaxe suivante :  
+ L’outil en ligne de commande VSPerfReport est également utilisé pour comparer des fichiers .*vsp* ou .*vsps*. Pour générer un rapport de différences (« diff »), utilisez la syntaxe suivante :  
   
 ```cmd  
 VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]  
 ```  
   
- `vspfilename1 and vspfilename2` doivent être des fichiers .vsp ou .vsps valides.  
+ `vspfilename1 and vspfilename2` doivent être des fichiers .*vsp* ou .*vsps* valides.  
   
 ## <a name="symbol-files"></a>Fichiers de symboles  
  Pour afficher les informations de symbole telles que les noms de fonction et les numéros de ligne, VSPerfReport doit accéder aux fichiers de symboles (.PDB) des composants profilés et aux fichiers de symboles Windows. Pour plus d’informations, consultez [Guide pratique pour spécifier les emplacements du fichier de symboles à partir de la ligne de commande](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
@@ -58,7 +58,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**ClearPackedSymbols**|Supprime les symboles précédemment incorporés d’un fichier de données du profileur. Exécutez cette commande avant d’exécuter PackSymbols une deuxième fois.|  
 |**SymbolPath:** `path`|Spécifie un ou plusieurs chemins de recherche ou serveurs de symboles qui contiennent les symboles pour le fichier de données du profileur.|  
 |**DebugSymPath**|Répertorie les emplacements dans lesquels la recherche des symboles est effectuée et indique si des symboles sont trouvés. Cette option est utile pour résoudre les problèmes de résolution de symboles.|  
-|**PackSymbols**|Enregistre les symboles dans le fichier de données de profilage (.vsp) pour que les fichiers de symboles (.pdb) ne soient pas nécessaires pour l’analyse.|  
+|**PackSymbols**|Enregistre les symboles dans le fichier de données de profilage (.vsp) pour que les fichiers de symboles (.*pdb*) ne soient pas nécessaires à l’analyse.|  
 |**Output:** *chemin*&#124;*nom_fichier*|Spécifie un autre emplacement pour les fichiers de rapport générés. Par défaut, les rapports sont créés dans le répertoire actif.|  
 |**SummaryFile**|Analyse et enregistre les informations analysées dans un fichier de résumé .vsps.|  
 |**PrintMarks**|Indique les noms et les horodatages pour toutes les marques du fichier de rapport spécifié.|  
@@ -85,7 +85,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |Options|Description|  
 |-------------|-----------------|  
-|**Diff**  `vspfile1 vspfile2`|Compare deux fichiers de rapports (.vsp ou .vsps). Les options de résumé sont ignorées à l’aide de l’option diff.|  
+|**Diff**  `vspfile1 vspfile2`|Compare deux fichiers de rapports (.*vsp* ou .*vsps*). Les options de résumé sont ignorées à l’aide de l’option diff.|  
 |**Diff:**[*value*]|Au-dessous de cette valeur de seuil, la différence entre deux valeurs est ignorée. De même, les nouvelles données avec des valeurs en dessous de ce seuil ne sont pas affichées.|  
 |**DiffTable:**[*tablename*]|Utilise cette table spécifique pour comparer des fichiers. La valeur par défaut est la table des fonctions.|  
 |**DiffColumn:**[*columnname*]|Utilise cette colonne spécifique pour comparer des valeurs. La valeur par défaut est la colonne de pourcentage d’échantillons exclusifs.|  

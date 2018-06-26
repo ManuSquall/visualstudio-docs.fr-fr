@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4438e7967a15384887d00503bde93b7bbd40fe6c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a10c8db7a9706c406cb192f9418c1fd8d04e888a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765698"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Guide pratique pour collecter des données d’échantillonnage au niveau ligne
 L’échantillonnage au niveau ligne permet au profileur de déterminer à quel endroit du code d’une fonction exigeant d’importantes ressources processeur (telle qu’une fonction avec de nombreux échantillons exclusifs) le processeur doit passer le plus de temps.  
@@ -39,7 +40,7 @@ L’échantillonnage au niveau ligne permet au profileur de déterminer à quel 
   
 -   Fin de ligne : numéro de la ligne source de fin. Il s’agit généralement des mêmes données que les données de début de ligne, sauf lorsqu’une instruction de programme s’étend sur plusieurs lignes de code source.  
   
--   Début de caractère : colonne de début de l’échantillon agrégé. Cette valeur est généralement égale à 0, sauf lorsqu’une ligne contient plusieurs instructions de programme.  
+-   Début de caractères : colonne de début de l’échantillon agrégé. Cette valeur est généralement égale à 0, sauf lorsqu’une ligne contient plusieurs instructions de programme.  
   
 -   Fin de caractère : colonne de fin de l’échantillon agrégé.  
   
@@ -48,7 +49,7 @@ L’échantillonnage au niveau ligne permet au profileur de déterminer à quel 
  Dans la vue **Modules**, si une fonction comporte des statistiques au niveau ligne, celles-ci sont imbriquées sous chaque fonction. Les statistiques de niveau IP qui sont imbriquées sous chaque ligne sont également affichées.  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Désactiver l’échantillonnage au niveau ligne dans du code managé  
- Par défaut, l’échantillonnage au niveau ligne est activé. Vous pouvez désactiver la collecte des données au niveau ligne dans du code managé en effectuant l’une des opérations suivantes :  
+ Par défaut, l’échantillonnage au niveau ligne est activé. Vous pouvez désactiver la collecte de données au niveau ligne pour du code managé à l’aide de l’une des commandes suivantes :  
   
 -   Avant de commencer le profilage, tapez **VSPerfCLREnv /samplelineoff**. Cela affecte à la fois les applications et les services.  
   
@@ -57,5 +58,5 @@ L’échantillonnage au niveau ligne permet au profileur de déterminer à quel 
 -   Quand vous démarrez une application, tapez **VSPerfCmd /lineoff \<autres arguments>**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
- [Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)
+ [Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)   
+ [Analyser les données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)

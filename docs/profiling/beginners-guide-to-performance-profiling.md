@@ -1,6 +1,7 @@
 ---
-title: Profiler les performances de votre application dans Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Mesurer l’utilisation de l’UC dans vos applications
+description: Analysez les problèmes de performances de l’UC dans votre application en utilisant les outils de diagnostics intégrés au débogueur.
+ms.custom: mvc
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -17,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4415956aaa819881584b4298285ff878c1d7ccf
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e295c08568e13fade750cadcea03b61d2a7ca9d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766699"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Profiler les performances de votre application dans Visual Studio
 Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cette procédure montre comment utiliser l’onglet **Utilisation de l’UC** des outils de diagnostics pour obtenir les données de performances de votre application. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
@@ -34,7 +36,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 |---------|---------|
 |  ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) sur l’utilisation des outils de diagnostics qui montre comment analyser l’utilisation de l’UC et l’utilisation de la mémoire. |
 
-Dans cette rubrique, nous allons aborder l’analyse de l’utilisation du processeur dans un flux de travail de débogage normal. Vous pouvez également analyser l’utilisation et l’UC sans débogueur ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez la section [Recueillir des données de profilage sans débogage](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) sur la page [Exécuter des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Dans cet article, nous allons décrire l’analyse de l’utilisation de l’UC dans un flux de travail de débogage normal. Vous pouvez également analyser l’utilisation et l’UC sans débogueur ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez la section [Recueillir des données de profilage sans débogage](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) sur la page [Exécuter des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 > [!NOTE]
 > Pour .NET Core et ASP.NET Core, l’outil Utilisation de l’UC ne fournit pas de résultats précis avec les fichiers PBD portables. Utilisez des fichiers PDB complets à la place.
@@ -45,7 +47,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 > * Collecter les données d'utilisation de l'UC
 > * Analyser les données d’utilisation de l’UC
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Étape 1 : Collecter les données de profilage 
+## <a name="step-1-collect-profiling-data"></a>Étape 1 : Collecter les données de profilage 
   
 1.  Ouvrez le projet que vous voulez déboguer dans Visual Studio, puis définissez un point d’arrêt dans votre application à l’endroit où vous souhaitez examiner l’utilisation du processeur.
 
@@ -96,7 +98,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
      À ce stade, vous pouvez commencer à analyser les données.
 
-## <a name="Step2"></a> Étape 2 : Analyser les données d’utilisation de l’UC
+## <a name="step-2-analyze-cpu-usage-data"></a>Étape 2 : Analyser les données d’utilisation de l’UC
 
 Nous vous recommandons de commencer à analyser vos données en examinant la liste des fonctions située sous l’onglet Utilisation de l’UC, en identifiant les fonctions qui effectuent la plus grande partie du travail, puis en analysant ces fonctions les unes après les autres.
 
@@ -142,9 +144,9 @@ Voici davantage d’informations sur les valeurs de colonne :
 
 - **Modules** Nom du module contenant la fonction, ou nombre de modules contenant les fonctions dans un nœud [Code externe].
 
-## <a name="BKMK_External_Code"></a>Afficher le code externe
+## <a name="view-external-code"></a>Afficher le code externe
 
-Le code externe correspond aux fonctions des composants système et framework exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous n’êtes pas intéressé par le code externe. L’outil Utilisation de l’UC regroupe donc les fonctions externes d’une méthode utilisateur au sein d’un même nœud **[Code externe]**.
+Le code externe correspond aux fonctions des composants système et de framework exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous n’êtes pas intéressé par le code externe. L’outil Utilisation de l’UC regroupe donc les fonctions externes d’une méthode utilisateur au sein d’un même nœud **[Code externe]**.
   
 Si vous voulez afficher les chemins d’appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue**, puis **Appliquer**.  
   
@@ -155,7 +157,7 @@ N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondém
 Utilisez la zone de recherche pour trouver le nœud que vous cherchez, puis utilisez la barre de défilement horizontal pour afficher les données dans la vue.
 
 > [!TIP]
-> Si vous profilez du code externe qui appelle des fonctions Windows, vous devez vous assurer que vous disposez des fichiers .pdb les plus récents. Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre. Pour savoir comment vérifier que vous disposez des fichiers dont vous avez besoin, consultez [Spécifier des fichiers de symboles (.pdb) et des fichiers sources dans le débogueur](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+> Si vous profilez du code externe qui appelle des fonctions Windows, vous devez vérifier que vous disposez des fichiers .*pdb* les plus récents. Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre. Pour vérifier si vous disposez des fichiers nécessaires, consultez [Spécifier des fichiers de symboles (.*pdb*) et des fichiers sources dans le débogueur](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

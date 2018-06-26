@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f90cd6b8d7fcb6a9eaf2d68f3eabe4b851979302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a6eb52273633e0b65aa4a7a7049198c49c20633d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477000"
 ---
-# <a name="understanding-sampling-data-values"></a>Fonctionnement des valeurs de données d’échantillonnage
+# <a name="understand-sampling-data-values"></a>Comprendre le fonctionnement des valeurs de données d’échantillonnage
 
 La méthode de profilage par *échantillonnage* des Outils de profilage de Visual Studio interrompt le processeur de l’ordinateur à des intervalles définis et collecte la pile des appels de fonction. Une *pile des appels* est une structure dynamique qui stocke des informations sur les fonctions qui s’exécutent sur le processeur.
 
@@ -53,4 +54,4 @@ Pourcentage du nombre total d’échantillons exclusifs lors de l’exécution d
 ## <a name="see-also"></a>Voir aussi
 
 [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)  
-[Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)
+[Analyser les données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)
