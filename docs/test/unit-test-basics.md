@@ -1,6 +1,7 @@
 ---
-title: Concepts de base des tests unitaires dans Visual Studio | Microsoft Docs
+title: Concepts de base des tests unitaires dans Visual Studio
 ms.date: 2016-01-07
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
@@ -10,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e6bfbd65a7f242a14f1aebf2c554d481aa570ee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a69f644fecd74328eb3fa007e4589ff194c8e11
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751515"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -40,7 +42,7 @@ Pour obtenir une introduction aux tests unitaires qui vous conduit directement d
 
 Dans cette rubrique, nous utilisons comme exemple le développement d’une application fictive, appelée `MyBank` . Vous n’avez pas besoin du code réel pour suivre les explications fournies dans cette rubrique. Les méthodes de test sont écrites en C# et présentées à l’aide de l’infrastructure de tests unitaires Microsoft pour le code managé. Cependant, les concepts peuvent être facilement transférés vers d’autres langages et infrastructures.
 
- ![Solution MyBank](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")
+ ![Solution MyBank](../test/media/ute_mybanksolution.png)
 
  Notre première tentative de conception de l’application `MyBank` inclut un composant Accounts (Comptes) qui représente un compte individuel et ses transactions avec la banque et un composant Database (Base de données) qui correspond à la fonction d’agrégation et de gestion des comptes individuels.
 
@@ -84,15 +86,15 @@ Il est souvent plus rapide de générer le projet de test unitaire et les stubs 
 
 1.  Dans la fenêtre de l’éditeur de code, cliquez avec le bouton droit et choisissez **Créer des tests unitaires** dans le menu contextuel.
 
-     ![À partir de la fenêtre de l’éditeur, affichez le menu contextuel](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")
+     ![À partir de la fenêtre de l'éditeur, affichez le menu contextuel](../test/media/createunittestsrightclick.png)
 
 2.  Cliquez sur OK pour accepter les valeurs par défaut pour créer vos tests unitaires, ou modifiez les valeurs utilisées pour créer et nommer le projet de test unitaire et les tests unitaires. Vous pouvez sélectionner le code qui est ajouté par défaut aux méthodes de test unitaire.
 
-     ![Cliquez avec le bouton droit dans l’éditeur et choisissez Créer des tests unitaires](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
+     ![Cliquez avec le bouton droit dans l'éditeur et choisissez Créer des tests unitaires](../test/media/createunittestsdialog.png)
 
 3.  Les stubs de test unitaire sont créés dans un nouveau projet de test unitaire pour toutes les méthodes dans la classe.
 
-     ![Les tests unitaires sont créés](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")
+     ![Les tests unitaires sont créés](../test/media/createunittestsstubs.png)
 
 4.  Poursuivez votre lecture pour savoir comment [ajouter du code aux méthodes de test unitaire](#BKMK_Writing_your_tests) et rendre votre test unitaire explicite, et des tests unitaires supplémentaires que vous pouvez ajouter pour tester votre code de manière approfondie.
 
@@ -203,7 +205,7 @@ public void My_Test ()
 
 Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
 
- ![Explorateur de tests unitaires](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Explorateur de tests unitaires](../test/media/ute_failedpassednotrunsummary.png)
 
  Tandis que vous exécutez, écrivez et réexécutez vos tests, par défaut l’explorateur de tests affiche les résultats par groupes : **Échecs de tests**, **Tests réussis**, **Tests ignorés** et **Tests non exécutés**. Vous pouvez choisir un en-tête de groupe pour ouvrir la vue qui affiche tous les tests de ce groupe.
 
@@ -213,11 +215,11 @@ Quand vous générez le projet de test, les tests s’affichent dans l’explora
 
 La barre d’outils de l’explorateur de tests vous permet de découvrir, d’organiser et d’exécuter les tests qui vous intéressent.
 
- ![Exécuter des tests à partir de la barre d’outils de l’explorateur de tests](../test/media/ute_toolbar.png "UTE_ToolBar")
+ ![Exécuter des tests à partir de la barre d'outils de l'explorateur de tests](../test/media/ute_toolbar.png)
 
  Vous pouvez choisir **Exécuter tout** pour exécuter tous vos tests ou **Exécuter** pour sélectionner un sous-ensemble de tests à exécuter. Après que vous avez exécuté un ensemble de tests, un résumé de la série de tests s’affiche en bas de la fenêtre Explorateur de tests. Sélectionnez un test pour en afficher les détails dans le volet inférieur. Choisissez **Ouvrir un test** dans le menu contextuel (ou F12) pour afficher le code source du test sélectionné.
 
- Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
+ Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
 ### <a name="run-tests-after-every-build"></a>Exécuter des tests après chaque génération
 
@@ -226,17 +228,17 @@ La barre d’outils de l’explorateur de tests vous permet de découvrir, d’o
 
 |||
 |-|-|
-|![Exécuter après génération](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|Pour exécuter vos tests unitaires après chaque génération locale, choisissez **Test** dans le menu standard, puis **Exécuter les tests après la génération** dans la barre d’outils de l’explorateur de tests.|
+|![Exécuter après les builds](../test/media/ute_runafterbuild_btn.png)|Pour exécuter vos tests unitaires après chaque génération locale, choisissez **Test** dans le menu standard, puis **Exécuter les tests après la génération** dans la barre d’outils de l’explorateur de tests.|
 
 ### <a name="filter-and-group-the-test-list"></a>Regrouper et filtrer la liste de tests
 
 Quand vous avez un grand nombre de tests, vous pouvez entrer une chaîne dans la zone de recherche de l’explorateur de tests pour filtrer la liste sur la chaîne spécifiée. Vous pouvez limiter votre filtre encore plus en choisissant parmi la liste des filtres.
 
- ![Rechercher des catégories de filtre](../test/media/ute_searchfilter.png "UTE_SearchFilter")
+ ![Rechercher des catégories de filtre](../test/media/ute_searchfilter.png)
 
 |||
 |-|-|
-|![Bouton du groupe d’explorateur de tests](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Pour regrouper vos tests par catégorie, choisissez le bouton **Grouper par** .|
+|![Bouton du groupe d'explorateur de tests](../test/media/ute_groupby_btn.png)|Pour regrouper vos tests par catégorie, choisissez le bouton **Grouper par** .|
 
  Pour plus d’informations, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md).
 
@@ -259,7 +261,7 @@ En savoir plus sur le [débogage des tests unitaires](../debugger/debugging-in-v
 
  **R :** Utilisez IntelliSense pour générer des classes et méthodes dans votre code de projet. Écrivez une instruction dans une méthode de test qui appelle la classe ou la méthode que vous souhaitez générer, puis ouvrez le menu IntelliSense dans le cadre de l’appel. Si l’appel concerne un constructeur de la nouvelle classe, choisissez **Générer un nouveau type** dans le menu et suivez l’Assistant pour insérer la classe dans votre projet de code. Si l’appel concerne une méthode, choisissez **Générer une nouvelle méthode** à partir du menu IntelliSense.
 
- ![Menu IntelliSense Générer un stub de méthode](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")
+ ![Menu IntelliSense Gérer un stud de méthode](../test/media/ute_generatemethodstubintellisense.png)
 
  **Q : Puis-je créer des tests unitaires qui utilisent plusieurs groupes de données en entrée pour exécuter le test ?**
 
@@ -303,9 +305,9 @@ La méthode attribuée s’exécute une fois pour chaque ligne de la table. L’
 
  Les résultats de la couverture apparaissent dans la fenêtre Résultats de la couverture du code.
 
- ![Résultats de la couverture du code](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")
+ ![Résultats de la couverture du code](../test/media/ute_codecoverageresults.png)
 
- Découvrez plus en détail la [couverture du code](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+ En savoir plus sur la [couverture du code](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
  **Q : Comment puis-je tester des méthodes de mon code qui ont des dépendances externes ?**
 
@@ -323,8 +325,8 @@ En savoir plus sur l’ [isolement des méthodes de test unitaire avec Microsoft
 
  **Q : Puis-je utiliser d’autres infrastructures de tests unitaires pour créer des tests unitaires ?**
 
- **R :** Oui, suivez ces étapes pour [rechercher et installer d’autres infrastructures](../test/install-third-party-unit-test-frameworks.md). Après le redémarrage de Visual Studio, rouvrez votre solution pour créer vos tests unitaires, puis sélectionnez vos frameworks installés ici :
+ **R :** Oui, suivez ces étapes pour [rechercher et installer d’autres infrastructures](../test/install-third-party-unit-test-frameworks.md). Après le redémarrage de Visual Studio, rouvrez votre solution pour créer vos tests unitaires, puis sélectionnez vos infrastructures installées ici :
 
- ![Sélectionnez un autre framework de tests unitaires installée](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")
+ ![Sélectionner un autre framework de test unitaire installé](../test/media/createunittestsdialogextensions.png)
 
- Vos stubs de test unitaire seront créés à l’aide du framework sélectionné.
+ Vos stubs de test unitaire seront créés à l’aide de l’infrastructure sélectionnée.

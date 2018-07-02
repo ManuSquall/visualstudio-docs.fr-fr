@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1ee5dd1a776647c7e480241f0982d6c21a4f32c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 357d905610b5f0fb3586a9830300dcc56f13a535
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750387"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038 : Taux élevé de conflits de verrou
 |||  
@@ -51,4 +52,4 @@ ms.lasthandoff: 04/19/2018
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement  
  Double-cliquez sur le message pour accéder à la vue [Marques](../profiling/marks-view.md) des données de profilage.  Recherchez la colonne **Verrous et threads CLR .NET\Taux de conflits/s**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles les conflits de verrou sont plus nombreux.  
   
- Cette règle se déclenche uniquement lorsque vous n’utilisez pas la méthode de profilage d’accès concurrentiel. Le profilage d’accès concurrentiel est la meilleure méthode pour diagnostiquer les problèmes de performances liés aux conflits de verrou dans votre application. Collectez des données de profilage d’accès concurrentiel pour mieux comprendre le comportement de verrouillage de votre application. Vous pourrez notamment connaître les verrous qui présentent le plus de conflits, le temps de retard de l’exécution de thread causé par l’attente de verrous en conflit, ainsi que la section de code impliquée. Les profils d’accès concurrentiel collectent des données sur tous les conflits de verrou, y compris le comportement de verrouillage des installations Windows natives, des classes .NET Framework et de toute autre bibliothèque tierce à laquelle fait référence votre application. Pour plus d’informations sur le profilage d’accès concurrentiel à partir de l’IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], consultez [Collecte de données de concurrence de threads et de processus](../profiling/collecting-thread-and-process-concurrency-data.md). Pour plus d’informations sur le profilage d’accès concurrentiel à partir de la ligne de commande, consultez la section **Utilisation de la méthode de concurrence pour collecter les données de conflit de ressources et d’activité du thread** de la rubrique [Utilisation de méthodes de profilage à partir de la ligne de commande](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).
+ Cette règle se déclenche uniquement lorsque vous n’utilisez pas la méthode de profilage d’accès concurrentiel. Le profilage d’accès concurrentiel est la meilleure méthode pour diagnostiquer les problèmes de performances liés aux conflits de verrou dans votre application. Collectez des données de profilage d’accès concurrentiel pour mieux comprendre le comportement de verrouillage de votre application. Vous pourrez notamment connaître les verrous qui présentent le plus de conflits, le temps de retard de l’exécution de thread causé par l’attente de verrous en conflit, ainsi que la section de code impliquée. Les profils d’accès concurrentiel collectent des données sur tous les conflits de verrou, y compris le comportement de verrouillage des installations Windows natives, des classes .NET Framework et de toute autre bibliothèque tierce à laquelle fait référence votre application. Pour plus d’informations sur le profilage d’accès concurrentiel à partir de l’IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], consultez [Collecte de données de concurrence de threads et de processus](../profiling/collecting-thread-and-process-concurrency-data.md). Pour plus d’informations sur le profilage d’accès concurrentiel à partir de la ligne de commande, consultez la section **Utiliser la méthode de concurrence pour collecter les données de conflit de ressources et d’activité du thread** dans [Utiliser les méthodes de profilage à partir de la ligne de commande](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).

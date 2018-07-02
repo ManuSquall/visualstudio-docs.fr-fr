@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44fbb4138c03f613e6e0d6fd1c07f7e759d07700
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b736e89bb9ec7c4bdb71ea49566cd057f7a0bd85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34476649"
 ---
 # <a name="thread-ready-connector"></a>Connecteur de thread
 Quand vous cliquez sur un segment de blocage pour afficher une pile des appels et sa pile de déblocage, le connecteur de thread peut également apparaître. Si l’événement de déblocage s’est produit sur un autre thread du processus actif, le connecteur de thread identifie visuellement le thread et le segment d’exécution qui a permis au thread bloqué de reprendre l’exécution.

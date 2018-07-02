@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5031481ddf785a85b77747c28d76e79d32a0d599
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748736"
 ---
 # <a name="cpu-and-windows-counters"></a>Compteurs UC et Windows
 
@@ -45,7 +46,7 @@ Le profileur Visual Studio continue de prendre en charge certains événements d
 
 Les événements portables sont un groupe de compteurs UC qui ne sont pas spécifiques à un processeur. Tous les autres compteurs UC sont des événements de plateforme et peuvent ne pas être pris en charge sur toutes les plateformes.
 
- Les compteurs des événements portables et des événements de plateforme sont définis dans des fichiers XML, dans lesquels sont fournies des valeurs liées aux compteurs. Ces fichiers varient selon le processeur. En effet, les données des processeurs Intel et AMD, par exemple, ne sont pas les mêmes. Le profileur [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] utilise ces informations pour présenter des compteurs appropriés (à la fois pour les événements portables et les événements de plateforme) à l’utilisateur pour qu’il puisse mesurer les performances.
+ Les compteurs des événements portables et des événements de plateforme sont définis dans des fichiers *Xml*, dans lesquels sont fournies des valeurs liées aux compteurs. Ces fichiers varient selon le processeur. En effet, les données des processeurs Intel et AMD, par exemple, ne sont pas les mêmes. Le profileur [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] utilise ces informations pour présenter des compteurs appropriés (à la fois pour les événements portables et les événements de plateforme) à l’utilisateur pour qu’il puisse mesurer les performances.
 
 ### <a name="portable-events"></a>Événements portables
 
@@ -78,7 +79,7 @@ Les événements portables contiennent les événements suivants :
 |Échecs de l'accès en lecture au cache L2|Indique le nombre d’échecs de lecture du cache de deuxième niveau (L2).|
 |Références de lecture du cache L2|Indique le nombre de références de lecture du cache de deuxième niveau (L2). Cela comprend les échecs de chargement, ainsi que les échecs et les réussites RFO (Read For Ownership).|
 
-## <a name="viewing-available-counters"></a>Affichage des compteurs disponibles
+## <a name="view-available-counters"></a>Voir les compteurs disponibles
 
 Vous pouvez obtenir la liste des compteurs UC disponibles dans l’IDE de Visual Studio, à partir d’une fenêtre d’invite de commandes.
 
@@ -126,9 +127,9 @@ L’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md) permet de 
 
      **\<Répertoire Visual Studio Performance Tools>\VSPerfCmd /querycounters**
 
-     où **\<Répertoire Visual Studio Performance Tools>** correspond au chemin du répertoire Performance Tools de votre installation de Visual Studio, généralement
+     où *\<Répertoire Visual Studio Performance Tools>* correspond au chemin du répertoire Performance Tools de votre installation de Visual Studio, généralement
 
-     C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
 
 ## <a name="see-also"></a>Voir aussi
 

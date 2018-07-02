@@ -1,5 +1,5 @@
 ---
-title: Créer un complément Visual Studio pour l’Afficheur de résultats de test de performances web | Microsoft Docs
+title: Créer un complément Visual Studio pour l’Afficheur de résultats de test de performances web
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: aa163381415060d189899e7defd64a8935c4ea94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751674"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Comment : créer un complément Visual Studio pour la visionneuse des résultats des tests de performances de site Web
 
@@ -134,7 +136,7 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 6.  Depuis la boîte à outils, faites glisser un <xref:System.Windows.Forms.DataGridView> sur la surface de userControl1.
 
-7.  Cliquez sur le glyphe d’étiquette d’action (![glyphe de balise active](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) dans le coin supérieur droit de <xref:System.Windows.Forms.DataGridView> et effectuez les étapes suivantes :
+7.  Cliquez sur le glyphe d’étiquette d’action (![Glyphe d’étiquette active](../test/media/vs_winformsmttagglyph.gif)) dans le coin supérieur droit de <xref:System.Windows.Forms.DataGridView> et suivez ces étapes :
 
     1.  Choisissez **Ancrer dans le conteneur parent**.
 

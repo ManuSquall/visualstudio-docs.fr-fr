@@ -28,11 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf87ea20c3b37ffd6998cf078a08e1ef11049be5
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 966be7ab50c2e14ae43da7cf68d7ef6168255207
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749624"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage, fonction
 Écrit un message dans le fichier de trace du visualiseur concurrentiel.  
@@ -113,7 +114,7 @@ HRESULT CvWriteMessageExVA(
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.  
   
 ## <a name="requirements"></a>Configuration requise  
- **En-tête** : cvmarkers.h  
+ **En-tête :** *cvmarkers.h*  
   
  **Unicode** : CvWriteMessageW, CvWriteMessageVW, CvWriteMessageExW, CvWriteMessageExVW  
   

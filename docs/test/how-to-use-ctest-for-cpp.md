@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ec0dd78b7bfdc3389a9867478e546c5456e42437
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 98e258c2547bbd3cd1b87d289bf643956acfdb1d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751031"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Guide pratique pour utiliser CTest pour C++ dans Visual Studio
 
@@ -29,7 +30,7 @@ Dans la version 15.6 de Visual Studio 2017, CTest est entièrement intégré à 
 
 L’illustration suivante montre les résultats d’une exécution de CTest réalisée avec l’infrastructure Google Test :
 
-![CTest avec l’infrastructure Google Test dans VS2017 15.6](media/ctest-test-explorer.png "CTest et Google Test dans l’Explorateur de tests")
+![CTest avec Google Test Framework dans VS2017 15.6](media/ctest-test-explorer.png)
 
 Si vous utilisez CTest sans les adaptateurs Google ou Boost, les résultats s’afficheront au niveau CTest plutôt qu’au niveau de chaque méthode de test. Il est possible de déboguer et de lancer pas à pas les exécutables CTest uniquement, mais les rapports des appels de procédure sur les tests individuels ne sont pas pris en charge.
 
@@ -37,7 +38,7 @@ Si vous utilisez CTest sans les adaptateurs Google ou Boost, les résultats s’
 
 Dans la **version 15.5 de Visual Studio 2017**, CTest n’est pas intégré à **l’Explorateur de tests**. Vous pouvez exécuter vos tests à partir du menu principal de CMake ou du menu contextuel sur un fichier **CMakeLists.txt** dans **l’Explorateur de solutions**. Les résultats des tests sont dirigés vers la **fenêtre Sortie** de Visual Studio.
 
-![Exécuter des tests CTest dans VS2017 15.5](media/cpp-cmake-run-tests.png "Exécuter des tests CTest dans 15.5")
+![Exécuter des tests CTest dans VS2017 15.5](media/cpp-cmake-run-tests.png)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0937af4a697b3cf789738d06b5e2ad0282a7d0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34549004"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
 
@@ -31,13 +32,13 @@ Parfois, une application parallélisée continue de s’exécuter de façon sér
 
 Comme le montre l’illustration suivante, le visualiseur concurrentiel peut également exposer ce symptôme dans la vue Utilisation de l’UC, où vous voyez que, malgré la présence de plusieurs threads, l’application n’utilise qu’un seul cœur logique.
 
-Pour plus d’informations, consultez « Performance Pattern 1: Identifying Lock Contention » dans le blog [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) d’Hazim Shafi, sur MSDN Blogs.
+Pour plus d’informations, consultez « Performance Pattern 1: Identifying Lock Contention » dans le blog [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) d’Hazim Shafi, sur le site web des blogs MSDN.
 
 ![Conflits de verrous](../profiling/media/lockcontention_2.png "LockContention_2")
 
 ## <a name="uneven-workload-distribution"></a>Distribution inégale de la charge de travail
 
-![Distribution inégale de la charge de travail](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![Distribution inégale de la charge de travail](../profiling/media/unevenworkload_1.png "UnevenWorkload_1")
 
 Lorsque la charge de travail est mal répartie entre les différents threads parallèles d’une application, un modèle typique en escalier apparaît chaque fois qu’un thread termine son travail, comme le montre l’illustration précédente. Le visualiseur concurrentiel présente souvent des heures de début très proches pour chaque thread simultané. Cependant, ces threads ne se terminent pas simultanément comme prévu. Ce modèle indique une distribution inégale de la charge de travail entre les différents threads parallèles, ce qui peut entraîner une baisse des performances. Pour ce type de problème, la meilleure approche consiste à réévaluer l’algorithme selon lequel la charge de travail est répartie entre les threads parallèles.
 

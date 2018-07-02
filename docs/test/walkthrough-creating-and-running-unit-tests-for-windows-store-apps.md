@@ -1,6 +1,7 @@
 ---
-title: Création et exécution de tests unitaires pour les applications UWP dans Visual Studio | Microsoft Docs
+title: Création et exécution de tests unitaires pour les applications UWP dans Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,11 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: bbb1da5474dcb36e9b102f85f21c4945b3ebb33c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751713"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Procédure pas à pas : Créer et exécuter des tests unitaires pour des applications UWP
 
@@ -44,11 +46,11 @@ Les procédures suivantes décrivent les étapes nécessaires pour créer, exéc
 
 6.  Laissez l'option **Créer le répertoire pour la solution** sélectionnée et choisissez le bouton **OK** .
 
-     ![Bibliothèque de test unitaire personnalisée](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")
+     ![Bibliothèque de test unitaire personnalisée](../test/media/unit_test_win8_1.png)
 
      L’Explorateur de solutions est rempli avec le projet de test unitaire UWP et l’éditeur de code affiche le test unitaire par défaut intitulé UnitTest1.
 
-     ![Nouveau projet de test unitaire personnalisé](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![Nouveau projet de test unitaire personnalisé](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Modifier le fichier manifeste de l’application UWP du projet de test unitaire
 
@@ -98,7 +100,7 @@ Dans l'Éditeur de code, modifiez le test unitaire et ajoutez les assertions et 
     >
     > De plus, vous pouvez choisir **Déboguer les tests sélectionnés**, **Ouvrir un test**, puis utiliser l'option **Propriétés** .
     >
-    > ![Explorateur de tests unitaires &#45; menu contextuel de test unitaire](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![Explorateur de tests unitaires &#45; menu contextuel des tests unitaires](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
     Le test unitaire s'exécute. Une fois l’opération terminée, l’Explorateur de tests affiche l’état du test, la durée calendaire et fournit un lien vers la source.
 
