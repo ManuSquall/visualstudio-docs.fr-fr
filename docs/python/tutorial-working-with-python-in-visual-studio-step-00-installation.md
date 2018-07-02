@@ -11,16 +11,17 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc3f85e776fa7ec45bd157a9cffe99f6ac0b1aac
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: fd9703e6d18f075cb1033a03552caa7708b719b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751386"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installer la prise en charge de Python dans Visual Studio
 
 > [!Note]
-> La prise en charge de Python est actuellement disponible seulement dans Visual Studio pour Windows ; sur Mac et Linux, la prise en charge de Python est disponible via Visual Studio Code. Consultez [Questions et réponses](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
+> La prise en charge de Python est actuellement disponible seulement dans Visual Studio pour Windows ; sur Mac et Linux, la prise en charge de Python est disponible via [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
 1. Téléchargez et exécutez la version la plus récente du programme d’installation de Visual Studio 2017 pour Windows (la prise en charge de Python est présente dans la version 15.2 et ultérieure). Si Visual Studio est déjà installé, exécutez le programme d’installation de Visual Studio et passez à la deuxième étape.
 

@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748229"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -93,7 +94,7 @@ L’opération IntelliSense **Ajouter using** ajoute automatiquement la directiv
 
 Pour lancer l’opération **Ajouter using**, positionnez le curseur sur une référence de type qui ne peut pas être résolue. Par exemple, quand vous créez une application console et que vous ajoutez ensuite `XmlTextReader` dans le corps de la méthode `Main`, une ligne ondulée rouge s’affiche sous cette ligne de code pour signaler que la référence de type ne peut pas être résolue. Vous pouvez ensuite appeler l’opération **Ajouter using** via **Actions rapides**. **Actions rapides** est visible seulement quand vous placez le curseur sur le type indépendant.
 
-![Ajouter using, image développée de l’action rapide](../ide/media/addusing-quickaction.png "AddUsing-QuickAction")
+![Ajouter using, image développée de l’action rapide](../ide/media/addusing-quickaction.png)
 
 Cliquez sur l’icône Ampoule, puis choisissez **using System.Xml;** pour ajouter automatiquement la directive using.
 
@@ -143,11 +144,11 @@ Dans l’éditeur de code, IntelliSense peut vous aider à connecter des méthod
 
 Quand vous tapez l’opérateur `+=` après un champ d’événement dans un fichier *.cs*, IntelliSense vous invite à appuyer sur la touche **Tab**. Une nouvelle instance d'un délégué pointant vers la méthode qui gère l'événement est alors insérée.
 
-![Bouton de raccordement automatique](../ide/media/vxautohookup.gif "vxAutoHookUp")
+![Bouton de raccordement automatique](../ide/media/vxautohookup.gif)
 
 Si vous appuyez sur la touche **Tab**, IntelliSense complète l’instruction automatiquement et affiche la référence du gestionnaire d’événements sous forme de texte sélectionné dans l’éditeur de code. Pour terminer la connexion d’événements automatique, IntelliSense vous invite à appuyer de nouveau sur la touche **Tab** afin de créer un stub vide pour le gestionnaire d’événements.
 
-![Générer un gestionnaire d’événements](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+![Générer un gestionnaire d'événements](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > Si un nouveau délégué créé par IntelliSense fait référence à un gestionnaire d'événements existant, IntelliSense communique cette information dans l'info-bulle. Vous pouvez ensuite modifier cette référence ; le texte est déjà sélectionné dans l’éditeur de code. Sinon, la connexion d'événements automatique se termine à ce stade.

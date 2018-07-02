@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eaa236a5cc4a11832cee3b4dfc43aa4ef0cb97c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748216"
 ---
 # <a name="walkthrough-build-an-application"></a>Procédure pas à pas : générer une application
 
@@ -33,31 +34,31 @@ Vous pouvez modifier ou créer des configurations et des paramètres de platefor
 
 1. Ouvrez la boîte de dialogue **Gestionnaire de configurations**.
 
-   ![Menu Générer, commande Gestionnaire de configurations](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+   ![Menu Générer, commande Gestionnaire de configurations](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
 1. Dans la liste **Configuration de la solution active**, choisissez **\<Nouveau...\>**.
 
 1. Dans la boîte de dialogue **Nouvelle configuration de solution**, nommez la nouvelle configuration `Test`, copiez les paramètres de la configuration **Debug** existante, puis cliquez sur le bouton **OK**.
 
-   ![Boîte de dialogue Nouvelle configuration de solution](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+   ![Boîte de dialogue Nouvelle configuration de solution](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
 1. Dans la liste **Plateforme de la solution active**, choisissez **\<Nouveau...\>**.
 
 1. Dans la boîte de dialogue **Nouvelle plateforme de solution**, choisissez **x64** et ne copiez pas les paramètres de la plateforme x86.
 
-   ![Boîte de dialogue Nouvelle plateforme de solution](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+   ![Boîte de dialogue Nouvelle plateforme de solution](../ide/media/buildwalk_newsolutionplatform.png)
 
 1. Sélectionnez le bouton **OK** .
 
    La configuration de la solution active a été changée en **Test** avec la plateforme de la solution active définie sur x64.
 
-   ![Gestionnaire de configurations avec la configuration de test](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![Gestionnaire de configurations avec configuration de test](../ide/media/buildwalk_configmanagertestconfig.png)
 
 1. Choisissez **Fermer**.
 
 Vous pouvez rapidement vérifier ou modifier la configuration de la solution active à l’aide de la liste **Configurations de solutions** présente dans la barre d’outils **Standard**.
 
-![Option Configurations de solutions de la barre d’outils Standard](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+![Barre d'outils Standard option Configuration de solution](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png)
 
 ## <a name="build-the-application"></a>Générer l’application
 
@@ -83,9 +84,9 @@ Nous présenterons ensuite du code qui provoque la génération d’un avertisse
 
 La fenêtre **Sortie** affiche les résultats de la génération. La génération a réussi, mais des avertissements ont été générés :
 
-![Fenêtre Sortie Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+![Fenêtre Sortie Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png)
 
-![Fenêtre Sortie Visual C#](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+![Fenêtre Sortie Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png)
 
 Vous pouvez temporairement masquer certains messages d’avertissement pendant la génération, pour éviter qu’ils n’encombrent la fenêtre Sortie.
 
@@ -99,7 +100,7 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
 1. Choisissez la page **Build**, puis, dans la zone **Supprimer les avertissements**, spécifiez le numéro d’avertissement **0168**.
 
-     ![Page Générer, Concepteur de projets](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")
+     ![Page Générer, Concepteur de projets](../ide/media/buildwalk_csharpsupresswarnings.png)
 
      Pour plus d’informations, consultez [Générer, page du Concepteur de projets (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -107,7 +108,7 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
      La fenêtre **Sortie** affiche uniquement le résumé de la génération.
 
-     ![Fenêtre Sortie, avertissements de génération Visual C#](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![Fenêtre Sortie, avertissements de génération Visual C&#35;](../ide/media/buildwalk_visualcsharpbuildwarnings.png)
 
 ### <a name="suppress-all-visual-basic-build-warnings"></a>Supprimer tous les avertissements de génération Visual Basic
 
@@ -119,7 +120,7 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
 1. Dans la page **Compiler**, cochez la case **Désactiver tous les avertissements**.
 
-     ![Page Compiler, Concepteur de projets](../ide/media/buildwalk_vbsupresswarnings.png "BuildWalk_VBSupressWarnings")
+     ![Page Compiler, Concepteur de projets](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Pour plus d’informations, consultez [Configurer des avertissements dans Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -127,7 +128,7 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
  La fenêtre **Sortie** affiche uniquement le résumé de la génération.
 
- ![Fenêtre Sortie, avertissements de génération de Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+ ![Fenêtre Sortie, Avertissement sur la génération Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
  Pour plus d’informations, consultez [Guide pratique pour supprimer les avertissements du compilateur](../ide/how-to-suppress-compiler-warnings.md).
 
@@ -143,7 +144,7 @@ Vous pouvez modifier la quantité d’informations relatives au processus de gé
 
 1. Ouvrez la boîte de dialogue **Options**.
 
-     ![Options de commande dans le menu outils](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
+     ![Commande Options du menu Outils](../ide/media/exploreide-toolsoptionsmenu.png)
 
 1. Sélectionnez la catégorie **Projets et solutions**, puis la page **Générer et exécuter**.
 
@@ -174,7 +175,7 @@ Pour plus d’informations, consultez [Guide pratique pour modifier le répertoi
 
 1. Ouvrez le **Concepteur de projet**.
 
-     ![Menu Affichage, commande Pages de propriétés](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Menu Afficher, commande Pages de propriété](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Choisissez la page **Compiler**.
 
@@ -191,13 +192,13 @@ Pour plus d’informations, consultez [Guide pratique pour modifier le répertoi
 
 1. Générez l'application.
 
-     ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png)
 
 ### <a name="specify-a-release-build-for-c"></a>Spécifier une version Release pour C# #
 
 1. Ouvrez le **Concepteur de projet**.
 
-     ![Menu Affichage, commande Pages de propriétés](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Menu Afficher, commande Pages de propriété](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Choisissez la page **Générer**.
 
@@ -216,7 +217,7 @@ Pour plus d’informations, consultez [Guide pratique pour modifier le répertoi
 
 1. Générez l'application.
 
-     ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png)
 
    Le fichier exécutable est copié sur le chemin réseau que vous avez spécifié. Son chemin est `\\myserver\builds\\FileName.exe`.
 

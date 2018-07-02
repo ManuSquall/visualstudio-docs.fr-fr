@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2aeea5cf70b3c9a70b9f8e80961825bfff179a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 056eae05911af2a9ae6be12f2d3d7b18106df9b1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745774"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Comment : créer un nuanceur de géométrie dégradé
 
@@ -49,13 +50,13 @@ L’illustration suivante présente le graphique du nuanceur terminé ainsi qu�
 > [!NOTE]
 > Dans cette illustration, la couleur orange est spécifiée pour mettre en évidence l’effet du nuanceur, mais comme la forme d’aperçu n’a pas de position dans l’espace universel, le nuanceur ne peut pas être entièrement visualisé dans le concepteur de nuanceur. Le nuanceur doit être visualisé dans une scène réelle pour montrer l’effet réel.
 
- ![Graphique du nuanceur et aperçu de son effet](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")
+ ![Graphique du nuanceur et un aperçu de ses effets](../designers/media/digit-gradient-effect-graph.png)
 
  Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez la section **Aperçu des nuanceurs** de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
  L’illustration suivante montre le nuanceur, décrit dans ce document, appliqué à la scène 3D qui est illustrée dans [Guide pratique pour modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md). L’intensité de la couleur augmente avec la hauteur du point dans l’espace universel.
 
- ![Effet dégradé appliqué à un modèle de terrain 3D](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-Result")
+ ![Effet dégradé appliqué à un modèle de terrain 3D](../designers/media/digit-gradient-effect-result.png)
 
  Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D, consultez [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

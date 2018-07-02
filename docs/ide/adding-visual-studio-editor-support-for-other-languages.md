@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f3178738b707069fdf885c9821b7b7f1e17b246c
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 3e139fe1858772ed0505f774ce4c36e00bc059e0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746124"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Ajouter la prise en charge de l’éditeur Visual Studio pour d’autres langages
 
@@ -32,7 +33,7 @@ Découvrez comment l’éditeur Visual Studio prend en charge la lecture et la n
 
 Des fonctionnalités de l’éditeur Visual Studio, telles que la coloration syntaxique, la saisie semi-automatique des instructions et Naviguer vers, peuvent vous aider à lire, créer et modifier votre code. La capture d’écran suivante montre un exemple de modification de script Perl dans Visual Studio. La syntaxe est colorée automatiquement. Par exemple, les remarques dans le code sont colorées en vert, le code est en noir, les chemins sont en rouge et les instructions sont en bleu. L’éditeur Visual Studio applique automatiquement la coloration syntaxique à tout langage pris en charge. De plus, quand vous commencez à entrer un mot clé de langage ou un objet connu, la saisie semi-automatique affiche une liste d’instructions et d’objets possibles. La saisie semi-automatique des instructions simplifie et accélère la création du code.
 
-![Coloration syntaxique dans un script Perl](../ide/media/vside_perledit.png "VSIDE_PerlEdit")
+![Coloration syntaxique dans un script Perl](../ide/media/vside_perledit.png)
 
 Actuellement, Visual Studio fournit la prise en charge de la coloration syntaxique et de la saisie semi-automatique des instructions de base pour les langages suivants à l’aide de [grammaires TextMate](https://manual.macromates.com/en/language_grammars). Si votre langage préféré ne figure pas dans le tableau, ne vous inquiétez pas, vous pouvez l’ajouter.
 

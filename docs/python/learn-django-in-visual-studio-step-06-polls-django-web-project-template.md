@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750491"
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Tutoriel étape 6 : utiliser le modèle de projet web Django de sondage
 
@@ -111,7 +112,7 @@ class Choice(models.Model):
         return self.text
 ```
 
-Comme vous pouvez le voir, un sondage conserve une description dans son champ `text` et une date de publication dans `pub_date`. Ces champs sont les seuls onesields qui existent pour le sondage dans la base de données ; le champ `total_votes` est calculé lors de l’exécution.
+Comme vous pouvez le voir, un sondage conserve une description dans son champ `text` et une date de publication dans `pub_date`. Ces champs sont les seuls qui existent pour le sondage dans la base de données ; le champ `total_votes` est calculé lors de l’exécution.
 
 Un choix est lié à un sondage via le champ `poll`, contient une description dans `text`et un décompte de ce choix dans `votes`. Le champ `votes_percentage` est calculé au lors de l’exécution et ne se trouve pas dans la base de données.
 
@@ -253,7 +254,7 @@ urlpatterns = [
 ]
 ```
 
-Si vous n’êtes pas familiarisé avec les expressions régulières plus complexes utilisées ici, vous pouvez coller l’expression dans [regex101.com](https://regex101.com/) pour obtenir une explication dans un langage simple. (Vous devrez échapper les barres obliques `/` en les faisant précéder d’une barre oblique inverse, `\`h ; l’échappement n’est pas nécessaire dans Python en raison du préfixe `r` dans la chaîne, qui signifie « brut »).
+Si vous n’êtes pas familiarisé avec les expressions régulières plus complexes utilisées ici, vous pouvez coller l’expression dans [regex101.com](https://regex101.com/) pour obtenir une explication dans un langage simple. (Vous devrez placer en échappement les barres obliques `/` en les faisant précéder d’une barre oblique inverse, `\` ; l’échappement n’est pas nécessaire dans Python en raison du préfixe `r` dans la chaîne, qui signifie « raw »).
 
 Dans Django, la syntaxe `?P<name>pattern` crée un groupe nommé `name`, qui sert d’argument aux affichages dans leur ordre d’apparition. Dans le code indiqué précédemment, `PollsDetailView` et `PollsResultsView` reçoivent un argument nommé `pk`, et `app.views.vote` reçoit un argument nommé `poll_id`.
 

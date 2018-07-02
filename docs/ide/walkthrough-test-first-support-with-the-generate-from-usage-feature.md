@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448335"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748190"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procédure pas à pas : développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
 
@@ -42,7 +42,7 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
 
 3.  Dans le volet central, choisissez **Projet de test unitaire** et acceptez le nom par défaut `UnitTestProject1`. L’illustration suivante montre la boîte de dialogue quand elle apparaît dans [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la boîte de dialogue a une apparence similaire.
 
-     ![Boîte de dialogue Nouveau projet de test](../ide/media/newproject_test.png "NewProject_Test")
+     ![Nouveau projet de test, boîte de dialogue ](../ide/media/newproject_test.png)
 
 4.  Choisissez **OK** pour fermer la boîte de dialogue **Nouveau projet**.
 
@@ -67,9 +67,9 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
 
 3.  Recherchez la méthode `TestMethod1()` et renommez-la `DefaultAutomobileIsInitializedCorrectly()`. Dans cette méthode, créez une instance d’une classe nommée `Automobile`, comme illustré dans les captures d’écran suivantes. Une ligne ondulée s’affiche pour signaler une erreur de compilation. Une ampoule [Actions rapides](../ide/quick-actions.md) s’affiche dans la marge de gauche (dans C# uniquement), ou directement sous la ligne ondulée si vous pointez dessus.
 
-     ![Actions rapides dans Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")
+     ![Actions rapides en Visual Basic](../ide/media/genclass_underlinevb.png)
 
-     ![Actions rapides dans C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")
+     ![Actions rapides en C&#35;](../ide/media/genclass_underline.png)
 
 4.  Choisissez l’ampoule **Actions rapides** ou cliquez sur celle-ci. Un message d’erreur s’affiche, indiquant que le type `Automobile` n’est pas défini. Des solutions vous sont également proposées.
 
@@ -77,7 +77,7 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
 
 6. Dans la liste **Projet**, cliquez sur **GFUDemo\_VB** ou **GFUDemo_CS** pour indiquer à Visual Studio d’ajouter le fichier au projet de bibliothèque de classes plutôt qu’au projet de test. S’il n’est pas déjà sélectionné, choisissez **Créer un fichier** et nommez-le *Automobile.cs* ou *Automobile.vb*.
 
-     ![Boîte de dialogue Générer un nouveau type](../ide/media/genotherdialog.png "GenOtherDialog")
+     ![Boîte de dialogue Générer un nouveau type](../ide/media/genotherdialog.png)
 
 6.  Cliquez sur **OK** pour fermer la boîte de dialogue et créer le fichier.
 
@@ -134,7 +134,7 @@ Supposez que la spécification stipule qu’un nouvel élément `Automobile` peu
 
      La fenêtre **Résultats des tests** est illustrée ci-dessous.
 
-     ![Résultats des tests qui ont échoué](../ide/media/testsfailed.png "TestsFailed")
+     ![Résultats des tests qui ont échoué](../ide/media/testsfailed.png)
 
 2.  Dans la fenêtre **Résultats des tests**, double-cliquez sur chaque ligne de résultat de test pour accéder à l’emplacement de chaque test.
 
@@ -156,7 +156,7 @@ Supposez que la spécification stipule qu’un nouvel élément `Automobile` peu
 
      Cette fois-ci, les tests réussissent. La fenêtre **Résultats des tests** est illustrée ci-dessous.
 
-     ![Résultats des tests qui ont réussi](../ide/media/testspassed.png "TestsPassed")
+     ![Résultats des tests qui ont réussi](../ide/media/testspassed.png)
 
 ## <a name="see-also"></a>Voir aussi
 

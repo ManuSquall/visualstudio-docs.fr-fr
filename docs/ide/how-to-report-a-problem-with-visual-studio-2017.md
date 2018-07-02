@@ -12,11 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0979c0e7ec0fa53879766136d27ab79b0f490a17
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745993"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Guide pratique pour signaler un problème avec Visual Studio 2017
 
@@ -30,14 +31,14 @@ Si ce n’est pas déjà fait, connectez-vous à Visual Studio avant de signaler
 2. Si vous n’avez pas ouvert de session, cliquez sur le bouton **Se connecter** situé sur le côté droit de l’outil, comme dans la capture d’écran suivante.
 3. Suivez les instructions à l’écran pour vous connecter.
 
- ![Se connecter pour signaler un problème](../ide/media/sign-in-new-ux.png "Se connecter pour signaler un problème")
+ ![Se connecter pour signaler un problème](../ide/media/sign-in-new-ux.png)
 
 ## Rechercher et voter pour des problèmes similaires<a name="search_and_vote"></a>
 
 1. Recherchez votre problème pour voir s’il a également été signalé par d’autres utilisateurs.
 2. S’il a déjà été signalé par quelqu’un d’autre, rappelez-le nous en votant.
 
-  ![Rechercher et voter pour des problèmes similaires](../ide/media/search-and-vote.png "Rechercher et voter pour des problèmes similaires")
+  ![Rechercher et voter pour des problèmes similaires](../ide/media/search-and-vote.png)
 
 ## Signaler un nouveau problème<a name="report_new_problem"></a>
 
@@ -45,7 +46,7 @@ Si ce n’est pas déjà fait, connectez-vous à Visual Studio avant de signaler
 2. Créez un titre descriptif pour le problème, qui nous permet de l’adresser à l’équipe Visual Studio appropriée.
 3. Donnez-nous des détails supplémentaires et, si possible, indiquez-nous les étapes de reproduction du problème.
 
-  ![Signaler un nouveau problème](../ide/media/report-new-problem.png "Signaler un nouveau problème")
+  ![Signaler un nouveau problème](../ide/media/report-new-problem.png)
 
 ## Fournir une capture d’écran et des pièces jointes (facultatif)<a name="provide_screenshots"></a>
 
@@ -58,7 +59,7 @@ Les fichiers heap dump et de trace nous sont utiles pour faciliter le diagnostic
 1. Choisissez l’onglet **Enregistrer**.
 2. Choisissez **Démarrer l’enregistrement**. Accordez l’autorisation d’exécuter l’outil.
 
-  ![Choisissez Démarrer l’enregistrement pour fournir un fichier d’instantané du segment de mémoire et de trace ](../ide/media/record-dialog-box.png "Fournir un fichier d’instantané du segment de mémoire et de trace")
+  ![Choisir « Démarrer l’enregistrement » pour fournir un fichier d’image mémoire de tas et de trace ](../ide/media/record-dialog-box.png)
 
 3. Quand l’outil **Enregistreur d’actions utilisateur** apparaît, effectuez les étapes qui reproduisent le problème.
 4. Quand vous avez terminé, choisissez le bouton **Arrêter l’enregistrement**.
