@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d81438ef284464fb23ebc5a41c19e59d20739cf4
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446736"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "36235347"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 
@@ -84,7 +84,7 @@ C’est ce que vous voyez quand vous utilisez Team Foundation Version Control (T
 
 ![CodeLens : obtenir l’historique des modifications de votre code dans TFVC](../ide/media/codelens-code-changes.png)
 
-La période prise en charge par défaut s'étend sur les 12 derniers mois. Si votre code est stocké dans Team Foundation Server, vous pouvez changer la période de temps en exécutant la [commande TFSConfig](/vsts/tfs-server/command-line/tfsconfig-cmd) avec la [commande CodeIndex](../ide/codeindex-command.md) et l’indicateur **/indexHistoryPeriod**.
+La période prise en charge par défaut s'étend sur les 12 derniers mois. Si votre code est stocké dans Team Foundation Server, vous pouvez changer la période de temps en exécutant la [commande TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd) avec la [commande CodeIndex](../ide/codeindex-command.md) et l’indicateur **/indexHistoryPeriod**.
 
 Pour voir un historique détaillé de toutes les modifications, notamment celles d’il y a plus d’un an, choisissez **Afficher toutes les modifications de fichier** :
 
@@ -206,23 +206,25 @@ Vous pouvez découvrir les tests unitaires qui existent pour votre code C# ou Vi
 
 1. Accédez au code d’application auquel des [tests unitaires](../test/unit-test-your-code.md) sont associés.
 
-2. Passez en revue les tests du code en appuyant sur **Alt**+**3**.
+2. Si ce n’est déjà fait, générez votre application pour charger les indicateurs de test CodeLens. Vérifiez que la [découverte par les assemblys générés](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) est activée.
+
+3. Passez en revue les tests du code en appuyant sur **Alt**+**3**.
 
      ![CodeLens - Choisir l’indicateur d’état de test dans l’éditeur de code](../ide/media/codelens-choose-test-indicator.png)
 
-3. Si une icône d'avertissement s'affiche ![Icône Avertissement](../ide/media/codelenstestwarningicon.png), cela signifie que les tests n’ont pas encore été exécutés : exécutez-les donc.
+4. Si une icône d'avertissement s'affiche ![Icône Avertissement](../ide/media/codelenstestwarningicon.png), cela signifie que les tests n’ont pas encore été exécutés : exécutez-les donc.
 
      ![CodeLens - Afficher les tests unitaires non encore exécutés](../ide/media/codelens-tests-not-yet-run.png)
 
-4. Pour passer en revue la définition d'un test, double-cliquez sur l'élément de test dans la fenêtre d'indicateur CodeLens pour ouvrir le fichier de code dans l'éditeur.
+5. Pour passer en revue la définition d'un test, double-cliquez sur l'élément de test dans la fenêtre d'indicateur CodeLens pour ouvrir le fichier de code dans l'éditeur.
 
      ![CodeLens - Accéder à la définition des tests unitaires](../ide/media/codelens-unit-test-definition.png)
 
-5. Pour passer en revue les résultats du test, choisissez l’indicateur État du test (![icône Échec du test](../ide/media/codelenstestfailedicon.png) ou ![icône Test réussi ](../ide/media/codelenstestpassedicon.png)), ou appuyez sur **Alt**+**1**.
+6. Pour passer en revue les résultats du test, choisissez l’indicateur État du test (![icône Échec du test](../ide/media/codelenstestfailedicon.png) ou ![icône Test réussi ](../ide/media/codelenstestpassedicon.png)), ou appuyez sur **Alt**+**1**.
 
      ![CodeLens - Voir le résultat des tests unitaires](../ide/media/codelens-unit-test-result.png)
 
-6. Pour connaître le nombre de personnes qui ont modifié ce test, savoir qui a modifié ce test ou connaître le nombre de modifications apportées à ce test, [recherchez l’historique de votre code et les éléments liés](#find-code-history).
+7. Pour connaître le nombre de personnes qui ont modifié ce test, savoir qui a modifié ce test ou connaître le nombre de modifications apportées à ce test, [recherchez l’historique de votre code et les éléments liés](#find-code-history).
 
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
@@ -253,7 +255,7 @@ Activez et désactivez les indicateurs de niveau fichier CodeLens à l'aide des 
 
 - Assurez-vous que CodeLens est activé. Accédez à **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **CodeLens**.
 
-- Si votre code est stocké dans TFS, assurez-vous que l'indexation de code est activée en utilisant la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](/vsts/tfs-server/command-line/tfsconfig-cmd).
+- Si votre code est stocké dans TFS, assurez-vous que l'indexation de code est activée en utilisant la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
 
 - Les indicateurs liés au TFS s'affichent uniquement si des éléments de travail sont liés au code et lorsque vous êtes autorisé à ouvrir les éléments de travail liés. Vérifiez que vous disposez des [autorisations de membre de l’équipe](/vsts/work/scale/multiple-teams).
 
@@ -321,7 +323,11 @@ Pour utiliser le clavier :
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Q : puis-je gérer la façon dont CodeLens traite le code pour afficher l'historique et les éléments liés ?
 
-**R :** Oui. Si votre code est dans TFS, utilisez la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](/vsts/tfs-server/command-line/tfsconfig-cmd).
+**R :** Oui. Si votre code est dans TFS, utilisez la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
+
+### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Q : Mes indicateurs de test CodeLens n’apparaissent plus dans mon fichier quand j’ouvre ma solution pour la première fois. Comment les charger ?
+
+**R :** Regénérez votre projet afin de charger les indicateurs de test CodeLens dans votre fichier. Vérifiez que la [découverte par les assemblys générés](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) est activée. Pour améliorer les performances, Visual Studio n’extrait plus les informations sources pour les indicateurs de test lors du chargement des fichiers de code. Les indicateurs de test sont chargés après une génération, ou quand vous accédez à un test en double-cliquant dessus dans l’**Explorateur de tests**.
 
 ## <a name="see-also"></a>Voir aussi
 

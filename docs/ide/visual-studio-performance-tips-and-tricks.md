@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6563086968cb84c0ad2177d5a1c13e051012cf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37433533"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces sur les performances dans Visual Studio
 
@@ -23,25 +24,23 @@ Les recommandations pour améliorer les performances de Visual Studio concernent
 > [!NOTE]
 > Si vous rencontrez des difficultés à utiliser le produit en raison de problèmes de mémoire, faites-le nous savoir via [l’outil de commentaires](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
-## <a name="optimize-your-environment"></a>Optimiser votre environnement
+## <a name="use-a-64-bit-os"></a>Utiliser un système d’exploitation 64 bits
 
-- **Utiliser un système d’exploitation 64 bits**
+Si vous mettez à niveau votre système d’une version 32 bits de Windows vers une version 64 bits, vous passez de 2 Go à 4 Go la quantité de mémoire virtuelle disponible pour Visual Studio. Cela permet à Visual Studio de gérer des charges de travail beaucoup plus importantes, même avec un processus 32 bits.
 
-    Si vous mettez à niveau votre système d’une version 32 bits de Windows vers une version 64 bits, vous passez de 2 Go à 4 Go la quantité de mémoire virtuelle disponible pour Visual Studio. Cela permet à Visual Studio de gérer des charges de travail beaucoup plus importantes, même avec un processus 32 bits.
+Pour plus d’informations, consultez [Limites de mémoire](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) et [Use /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
-    Pour plus d’informations, consultez [Limites de mémoire](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) et [Use /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+## <a name="disable-automatic-file-restore"></a>Désactiver la restauration automatique de fichiers
 
-## <a name="configure-solution-and-projects"></a>Configurer des solutions et des projets
+Visual Studio rouvre automatiquement les documents qui ont été laissés ouverts dans la session précédente. Cela peut prolonger la durée nécessaire au chargement d’une solution de 30 % ou plus, en fonction du type de projet et des documents en cours d’ouverture. Des concepteurs tels que Windows Forms et XAML, ainsi que certains fichiers JavaScript et typescript, peuvent être lents à ouvrir.
 
-Si votre solution est très volumineuse et contient de nombreux projets, vous pouvez apporter les optimisations suivantes :
+Visual Studio affiche un avertissement dans une barre jaune quand la restauration automatique de documents ralentit de manière significative le chargement d’une solution. Vous pouvez désactiver la réouverture automatique des fichiers en effectuant les étapes suivantes :
 
-- **Déchargement de projets**
+1. Sélectionnez **Outils** > **Options** pour ouvrir la boîte de dialogue **Options**.
 
-    Vous pouvez décharger manuellement les projets individuels rarement utilisés à partir de **l’Explorateur de solutions** à l’aide du menu contextuel.
+1. Dans la page **Projets et solutions** > **Général**, désactivez l’option **Rouvrir les documents au chargement de la solution**.
 
-- **Refactoriser la solution**
-
-    Vous pouvez fractionner votre solution en plusieurs petits fichiers solution dans les projets couramment utilisés. Cette refactorisation doit réduire considérablement l’utilisation de mémoire pour votre flux de travail. Les solutions plus petites se chargent également plus vite.
+Si vous désactivez la restauration automatique de fichiers, un moyen rapide de naviguer jusqu’aux fichiers que vous souhaitez ouvrir est d’utiliser l’option [Atteindre](../ide/go-to.md). Sélectionnez **Edition** > **Atteindre** > **Atteindre tout**, ou appuyez sur **Ctrl**+**T**.
 
 ## <a name="configure-debugging-options"></a>Configurer les options de débogage
 
@@ -69,7 +68,7 @@ En règle générale, si vous manquez de mémoire pendant le débogage des sessi
 
     Pour désactiver les **Outils de diagnostic**, démarrez une session de débogage, choisissez **Outils** > **Options** > **Activer les outils de diagnostic** et désélectionnez l’option.
 
-    Pour plus d’informations, consultez [Outils de profilage](../profiling/profiling-tools.md).
+    Pour plus d’informations, consultez [Outils de profilage](../profiling/profiling-feature-tour.md).
 
 ## <a name="disable-tools-and-extensions"></a>Désactiver des outils et des extensions
 
@@ -78,23 +77,24 @@ Certains outils ou extensions peuvent être désactivés pour améliorer les per
 > [!TIP]
 > Vous pouvez souvent isoler les problèmes de performances en désactivant une par une les extensions et en revérifiant les performances.
 
-### <a name="managed-language-services-roslyn"></a>Services de langage gérés (Roslyn)
+### <a name="managed-language-service-roslyn"></a>Service de langage géré (Roslyn)
 
 Pour plus d’informations sur les performances de .NET Compiler Platform (« Roslyn »), consultez [Performance considerations for large solutions](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Désactiver l’analyse complète de la solution**
 
-    Visual Studio analyse l’ensemble de votre solution afin d’offrir une expérience complète sur les erreurs avant d’appeler une génération. Cette fonctionnalité est utile pour identifier les erreurs dès que possible. Toutefois, pour les solutions très volumineuses, cette fonctionnalité peut consommer des ressources de mémoire considérables. Si vous rencontrez des problèmes de mémoire ou du même type, vous pouvez désactiver cette expérience pour libérer ces ressources. Par défaut, cette option est activée pour Visual Basic et désactivée pour C#.
+    Visual Studio analyse l’ensemble de votre solution afin d’offrir une expérience complète sur les erreurs avant d’appeler une génération. Cette fonctionnalité est utile pour identifier les erreurs dès que possible. Toutefois, pour les solutions volumineuses, cette fonctionnalité peut consommer des ressources de mémoire considérables. Si vous rencontrez des problèmes de mémoire ou du même type, vous pouvez désactiver cette expérience pour libérer ces ressources. Par défaut, cette option est activée pour Visual Basic et désactivée pour C#.
 
-    Pour désactiver **Analyse complète de la solution**, choisissez **Outils** > **Options** > **Éditeur de texte** > **<Visual Basic ou C#>**. Ensuite, choisissez **Avancé** et décochez **Activer l’analyse complète de la solution**.
+    Pour désactiver **Analyse complète de la solution**, choisissez **Outils** > **Options** > **Éditeur de texte**, puis sélectionnez **Visual Basic** ou **C#**. Choisissez **Avancé** et décochez la case **Activer l’analyse complète de la solution**.
 
 - **Désactiver CodeLens**
 
-    Visual Studio effectue une tâche **Rechercher toutes les références** sur chaque méthode qui s’affiche. CodeLens fournit des fonctionnalités comme l’affichage en ligne du nombre de références. Le travail est exécuté dans un processus distinct (par exemple, *ServiceHub.RoslynCodeAnalysisService32*). Dans les solutions très volumineuses ou sur des systèmes limités en ressources, cette fonctionnalité peut avoir un impact significatif sur les performances, même si elle est exécutée avec une priorité basse. Si ce processus utilise une grande partie de l’UC ou que vous rencontrez des problèmes de mémoire (par exemple, quand vous chargez une solution volumineuse sur un ordinateur de 4 Go), vous pouvez essayer de désactiver cette fonctionnalité pour libérer des ressources.
+    Visual Studio effectue une tâche **Rechercher toutes les références** sur chaque méthode qui s’affiche. CodeLens fournit des fonctionnalités comme l’affichage en ligne du nombre de références. Le travail est exécuté dans un processus distinct, tel que *ServiceHub.RoslynCodeAnalysisService32*. Dans les solutions volumineuses ou sur des systèmes limités en ressources, cette fonctionnalité peut avoir un impact significatif sur les performances. Si vous rencontrez des problèmes de mémoire (par exemple quand vous chargez une solution volumineuse sur un ordinateur de 4 Go) ou si ce processus utilise l’UC de manière intensive, vous pouvez désactiver CodeLens afin de libérer des ressources.
 
     Pour désactiver **CodeLens**, choisissez **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **CodeLens** et désélectionnez la fonctionnalité.
 
-    Cette fonctionnalité est disponible dans Visual Studio Enterprise et Visual Studio Professional.
+    > [!NOTE]
+    > CodeLens est disponible dans les éditions Professional et Enterprise de Visual Studio.
 
 ### <a name="other-tools-and-extensions"></a>Autres outils et extensions
 
@@ -127,4 +127,4 @@ Pour obtenir une description détaillée du récupérateur de mémoire CLR, cons
 ## <a name="see-also"></a>Voir aussi
 
 - [Optimiser les performances de Visual Studio](../ide/optimize-visual-studio-performance.md)
-- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Charger des solutions plus rapidement (blog Visual Studio)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
