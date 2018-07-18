@@ -1,5 +1,5 @@
 ---
-title: 'Comment : mapper des schémas à des Documents Word dans Visual Studio | Documents Microsoft'
+title: 'Comment : mapper des schémas à des documents Word dans Visual Studio'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,31 +17,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 629149eab19dbd717cdc663a58a53659ae18a4af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3bec0437fb9bcd55821e27b22b118430024f751
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255429"
 ---
 # <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Comment : mapper des schémas à des documents Word dans Visual Studio
-  **Important** les informations mentionnées dans cette rubrique concernant Microsoft Word sont présenté exclusivement pour le bénéfice et l’utilisation des personnes et des organisations qui se trouvent en dehors des États-Unis et ses territoires ou qui sont à l’aide d’ou de développement programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédé sous licence par Microsoft avant de janvier 2010, lorsque Microsoft supprimé une implémentation de fonctionnalités spécifiques liées à XML personnalisées à partir de Microsoft Word. Ces informations concernant Microsoft Word ne peuvent pas lire ou utilisées par des individus ou organisations États-Unis ou dans ses territoires qui utilisent, ou développent des programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédé sous licence par Microsoft après le 10 janvier 2010 ; ces produits ne comportent pas le même que les produits sous licence avant cette date ou acheté et une licence d’utilisation en dehors des États-Unis.  
+  **Important** les informations mentionnées dans cette rubrique concernant Microsoft Word sont présentée exclusivement pour le bénéfice et l’utilisation des individus et les organisations qui se trouvent en dehors des États-Unis et ses territoires ou qui utilisent ou développement les programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft avant janvier 2010, lorsque Microsoft supprimé une implémentation de fonctionnalités spécifiques liés à XML personnalisé à partir de Microsoft Word. Ces informations concernant Microsoft Word ne peuvent pas être lues ou utilisées par les individus ou organisations dans les États-Unis ou dans ses territoires qui sont à l’aide d’ou de développer des programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft après le 10 janvier 2010 ; ces produits ne comportent pas le même que les produits sous licence avant cette date ou acheté et concédés sous licence pour une utilisation en dehors des États-Unis.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- Vous pouvez mapper un schéma XML à un document lorsque le document est ouvert dans Visual Studio. Vous utilisez les mêmes outils Microsoft Office Word que vous utilisez lorsque le document est ouvert en dehors de Visual Studio. Le projet Office crée les mêmes objets que vous mappiez le schéma au document avant ou après avoir créé votre solution Word.  
+ Vous pouvez mapper un schéma XML à un document pendant que le document est ouvert dans Visual Studio. Vous utilisez les mêmes outils de Microsoft Office Word que vous utilisez lorsque le document est ouvert en dehors de Visual Studio. Le projet Office crée les mêmes objets que vous mappiez le schéma pour le document avant ou après avoir créé votre solution Word.  
   
-### <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>Pour mapper un schéma XML à un document Word dans Visual Studio  
+## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>Pour mapper un schéma XML à un document Word dans Visual Studio  
   
-1.  Ouvrez le projet de document ou un modèle Word dans Visual Studio.  
+1.  Ouvrez le projet de document ou modèle Word dans Visual Studio.  
   
 2.  Cliquez dans le document pour déplacer le focus vers le concepteur.  
   
-3.  Dans le ruban, cliquez sur l'onglet **Développeur** .  
+3.  Dans le ruban, cliquez sur le **développeur** onglet.  
   
     > [!NOTE]  
-    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, consultez [Comment : afficher l'onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d’informations, consultez [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-4.  Dans le **XML** , cliquez sur **schéma**.  
+4.  Dans le **XML** de groupe, cliquez sur **schéma**.  
   
      Le **modèles et compléments** boîte de dialogue s’ouvre.  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
      Le **ajouter un schéma** boîte de dialogue s’ouvre.  
   
-7.  Accédez à votre fichier de schéma, sélectionnez-le, puis cliquez sur **ouvrir**.  
+7.  Accédez à votre fichier de schéma, sélectionnez-le, puis cliquez sur **Open**.  
   
      Le **les paramètres de schéma** boîte de dialogue s’ouvre.  
   
@@ -65,6 +66,6 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment : mapper des schémas à des feuilles de calcul à l’intérieur de Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
- [Schémas et données XML dans les personnalisations au niveau du document](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
+ [Schémas XML et des données dans les personnalisations au niveau du document](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
   
   

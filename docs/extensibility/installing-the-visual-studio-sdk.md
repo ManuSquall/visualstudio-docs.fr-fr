@@ -1,7 +1,7 @@
 ---
-title: L’installation du Kit de développement logiciel Visual Studio | Documents Microsoft
+title: Installer le SDK Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/12/2018
 ms.technology: vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
@@ -10,28 +10,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 259646e0dbee4831db83a7098954d1c5144d8ead
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fc2d0accfdae3587d43727ec1e0eda0785510c85
+ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129074"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39030427"
 ---
-# <a name="installing-the-visual-studio-sdk"></a>Installer le Kit de développement logiciel de Visual Studio
-Le Kit de développement logiciel Visual Studio est une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement.  
+# <a name="installing-the-visual-studio-sdk"></a>Installer le SDK Visual Studio
+
+Le SDK Visual Studio (Kit de développement logiciel) est une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite.  
   
-## <a name="installing-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>L’installation du Kit de développement logiciel Visual Studio en tant que partie d’une Installation de Visual Studio  
- Si vous souhaitez inclure l’extensibilité de Visual Studio dans votre installation de Visual Studio, vous devez installer le **le développement d’extensions Visual Studio** la charge de travail sous **des ensembles d’outils autres**. Cela installe le Kit de développement logiciel Visual Studio, ainsi que les conditions préalables. Vous pouvez affiner l’installation en sélectionnant ou désélectionnant les composants à partir du résumé afficher. 
+## <a name="installing-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Installer le SDK Visual Studio en tant que partie d’une installation de Visual Studio
+
+Pour inclure le SDK de Visual Studio dans votre installation de Visual Studio, vous devez installer le **développement d’extensions Visual Studio** charge de travail sous **autres ensembles d’outils**. Cette charge de travail va installer le SDK Visual Studio et la configuration requise. Vous pouvez affiner l’installation en sélectionnant ou désélectionnant les composants à partir de la **Résumé** vue.
   
-## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>L’installation du Kit de développement logiciel Visual Studio après l’installation de Visual Studio  
- Si vous décidez d’installer le Kit de développement logiciel Visual Studio après avoir effectué votre installation de Visual Studio, réexécutez le programme d’installation de Visual Studio et sélectionnez le **le développement d’extensions Visual Studio** la charge de travail.  
+## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>Installer le SDK Visual Studio après l’installation de Visual Studio
+
+Pour installer le SDK Visual Studio après avoir effectué votre installation de Visual Studio, réexécutez le programme d’installation de Visual Studio et sélectionnez le **développement d’extensions Visual Studio** charge de travail.  
   
-## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>L’installation de Visual Studio SDK à partir d’une Solution  
- Si vous ouvrez une solution avec un projet d’extensibilité sans d’abord installer l’extensibilité de Visual Studio, vous êtes invité par une barre d’informations en surbrillance au-dessus de l’Explorateur de solutions. Il doit se présenter comme suit :  
+## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>Installer le SDK Visual Studio à partir d’une Solution
+
+Si vous ouvrez une solution avec un projet d’extensibilité sans d’abord installer le Kit de développement Visual Studio, vous êtes invité par un **installer la fonctionnalité manquante** boîte de dialogue pour installer le **développement d’extensions Visual Studio** charge de travail :
+
+![Installer le développement d’extensions](../extensibility/media/install-extension-development.png "installer le développement d’extensions")  
   
- ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
+## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>L’installation de Visual Studio SDK à partir de la ligne de commande
+
+Comme avec toute charge de travail de Visual Studio ou le composant, vous pouvez également installer le **développement d’extensions Visual Studio** charge de travail (ID : Microsoft.VisualStudio.Workload.VisualStudioExtension) à partir de la ligne de commande. Consultez [utiliser des paramètres de ligne de commande pour installer Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) pour plus d’informations sur les commutateurs de ligne de commande appropriés et obtenir des instructions générales sur la détermination des identificateurs de charge de travail ou composant.
   
-## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>L’installation de Visual Studio SDK à partir de la ligne de commande  
-Comme avec une charge de travail de Visual Studio ou un composant, vous pouvez également installer le **le développement d’extensions Visual Studio** la charge de travail (ID : Microsoft.VisualStudio.Workload.VisualStudioExtension) à partir de la ligne de commande. Consultez [utiliser les paramètres de ligne de commande pour installer Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) pour plus d’informations sur les commutateurs de ligne de commande appropriée et obtenir des instructions générales sur la détermination des identificateurs de charge de travail ou un composant.
-  
- Notez que vous devez utiliser le programme d’installation de Visual Studio qui correspond à votre version installée de Visual Studio. Par exemple, si vous avez Visual Studio Enterprise est installé sur votre ordinateur, vous devez exécuter le programme d’installation de Visual Studio Enterprise (vs_enterprise.exe).
+Notez que vous devez utiliser le programme d’installation de Visual Studio qui correspond à votre version installée de Visual Studio. Par exemple, si vous avez Visual Studio Enterprise est installé sur votre ordinateur, vous devez exécuter le programme d’installation de Visual Studio Enterprise (vs_enterprise.exe).

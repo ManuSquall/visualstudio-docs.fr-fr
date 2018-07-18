@@ -1,5 +1,5 @@
 ---
-title: BasicType | Documents Microsoft
+title: BasicType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfccb444eab802f7caa5cf83faff0ddc7a51c389
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3e477afc77b1f6118fb021e930cd19b740763d3b
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458773"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433078"
 ---
 # <a name="basictype"></a>BasicType
 Spécifie le type de base du symbole.  
@@ -46,6 +46,8 @@ enum BasicType {
    btBit      = 29,  
    btBSTR     = 30,  
    btHresult  = 31  
+   btChar16   = 32,  // char16_t
+   btChar32   = 33,  // char32_t
 };  
 ```  
   
@@ -60,7 +62,7 @@ enum BasicType {
  Type de base est un `char` (type C/C++).  
   
  btWChar  
- Type de base est un caractère (Unicode) large (`WCHAR`).  
+ Type de base est un caractère (Unicode) de large (`WCHAR`).  
   
  btInt  
  Type de base est `signed int` (type C/C++).  
@@ -72,7 +74,7 @@ enum BasicType {
  Type de base est un nombre à virgule flottante (`FLOAT`).  
   
  btBCD  
- Type de base est un nombre décimal codé en binaire (`BCD`).  
+ Type de base est un nombre décimal codée en binaire (`BCD`).  
   
  btBool  
  Type de base est une valeur booléenne (`BOOL`).  
@@ -96,18 +98,18 @@ enum BasicType {
  Type de base est un nombre complexe.  
   
  btBit  
- Type de base est un bit.  
+ Type de base est un peu plus tard.  
   
  btBSTR  
- Type de base est une chaîne binaire ou de base (`BSTR`).  
+ Type de base est une chaîne binaire ou base (`BSTR`).  
   
  btHresult  
  Type de base est un `HRESULT`.  
   
 ## <a name="remarks"></a>Notes  
- Les valeurs de cette énumération sont retournées par la [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) (méthode).  
+ Les valeurs dans cette énumération sont retournées par la [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : cvconst.h  
   
 ## <a name="see-also"></a>Voir aussi  
