@@ -1,5 +1,5 @@
 ---
-title: Modification des scénarios de test de charge dans Visual Studio | Microsoft Docs
+title: Modification des scénarios de test de charge dans Visual Studio
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,14 @@ ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 69416ed6a4e06cccd606e705d97bef94d0825bd7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 91d314d1903598392737d9f72fdfc9fa02239a47
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668596"
 ---
 # <a name="edit-load-test-scenarios"></a>Modifier les scénarios de test de charge
 
@@ -31,9 +33,8 @@ Les options et paramètres de configuration initiaux que vous spécifiez quand v
 
 Les scénarios contiennent les composants suivants :
 
-|||
-|-|-|
 |Terme|Définition|
+|-|-|
 |Combinaison de navigateurs|Simule l’accès des utilisateurs virtuels à un site web via divers navigateurs web.|
 |Modèle de charge|Spécifie le nombre d’utilisateurs virtuels actifs pendant un test de charge, ainsi que le taux de démarrage des nouveaux utilisateurs. Par exemple : étape, constante et en fonction des objectifs.|
 |Modèle de combinaison de tests|Spécifie la probabilité qu'un utilisateur virtuel exécute un test donné dans un scénario de test de charge. Par exemple : 20 % de chance d'exécuter le TestA et 80 % de chance d'exécuter le TestB. Le modèle de combinaison de tests doit refléter les objectifs de votre test pour un scénario particulier.|
