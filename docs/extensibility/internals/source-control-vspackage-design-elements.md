@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130220"
 ---
 # <a name="source-control-vspackage-design-elements"></a>Éléments de conception de VSPackage de contrôle de source
 Les rubriques de cette section décrivent la structure du contrôle de code source VSPackage doit implémenter pour l’intégration en profondeur. Il répertorie également les interfaces et les services que la contrôle de code source VSPackage peuvent implémenter les interfaces et les services du contrôle de code source VSPackage peut utiliser à partir d’autres [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] composants pour prendre en charge de sa source de contrôlent le modèle et les fonctionnalités.  

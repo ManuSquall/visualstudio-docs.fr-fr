@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128985"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Suppression des informations de contrôle de code Source. Proj et. Fichiers sln
 Dans la version 1.2 de l’API de plug-in du contrôle Source le contrôle de code source, les informations sont stockées dans un MSSCCPRJ. Fichier de contrôle de code source. L’avantage de le MSSCCPRJ. Fichier de contrôle de code source est que les informations de contrôle de code source n'est pas de source - contrôlés, comme dans les fichiers .proj et .sln.  

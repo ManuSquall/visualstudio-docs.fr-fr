@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131312"
 ---
 # <a name="source-control-design-decisions"></a>Décisions de conception du contrôle source
 Les décisions de conception suivantes doivent être considérées pour les projets lors de l’implémentation du contrôle de code source.  

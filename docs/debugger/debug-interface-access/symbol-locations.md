@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480265"
 ---
 # <a name="symbol-locations"></a>Emplacements des symboles
 La plupart des symboles ont un emplacement défini dans le fichier image. Emplacement d’un symbole est spécifié avec une valeur à partir de la [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md) énumération. Le symbole peut-être prendre en charge des propriétés supplémentaires en fonction de son emplacement.  

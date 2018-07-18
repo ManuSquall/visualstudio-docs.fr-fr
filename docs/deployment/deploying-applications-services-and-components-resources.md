@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31556171"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Vue d’ensemble du déploiement dans Visual Studio
 

@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482059"
 ---
 # <a name="debugging-native-code-faqs"></a>Forum Aux Questions sur le débogage du code natif
 Les rubriques suivantes contiennent des réponses à quelques questions fréquemment posées :  

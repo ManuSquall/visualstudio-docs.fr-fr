@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131578"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Prise en main de Service de langage et les Extensions de l’éditeur
 Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnalités de service de langage telles que le mode plan, la correspondance des accolades, IntelliSense et les ampoules pour votre propre langage de programmation ou à n’importe quel type de contenu. Vous pouvez également personnaliser l’apparence et le comportement de l’éditeur Visual Studio, par exemple texte coloration, les marges, les ornements et les autres éléments visuels. Vous pouvez également définir votre propre type de contenu et spécifier l’apparence et le comportement des vues de texte dans laquelle votre contenu s’affiche.  
@@ -66,7 +67,7 @@ Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnal
 ## <a name="running-extensions-in-the-experimental-instance"></a>Extensions en cours d’exécution dans l’Instance expérimentale  
  Vous pouvez isoler votre version de travail de Visual Studio lorsque vous développez une extension en la déployant dans le dossier suivant expérimental (sur Windows Vista et Windows 7) :  
   
- *%LocalAppData%*\VisualStudio\10.0Exp\Extensions\\*société*\\*ExtensionID*  
+ *%LocalAppData%* \VisualStudio\10.0Exp\Extensions\\*société*\\*ExtensionID*  
   
  où *%LocalAppData%* est le nom de l’utilisateur connecté, *société* est le nom de la société qui possède l’extension, et *ExtensionID* est l’ID de l’extension.  
   

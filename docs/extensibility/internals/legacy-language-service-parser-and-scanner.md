@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134577"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analyseur et l’Analyseur de Service de langage hérité
 L’analyseur est au cœur du service de langage. Les classes de langage Managed Package Framework (MPF) requièrent un analyseur de langage pour sélectionner plus d’informations sur le code qui est affiché. Un analyseur sépare le texte en jetons lexicaux et identifie ces jetons par type et de fonctionnalités.  

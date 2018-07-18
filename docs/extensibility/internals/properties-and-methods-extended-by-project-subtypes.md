@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132089"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Propriétés et méthodes étendues aux sous-types de projet
 Un sous-type de projet a un grand nombre de puissance pour influencer le comportement du projet, car il est construit comme un agrégateur d’un projet de base. Cette section présente certaines des fonctionnalités qui peuvent être améliorées ou modifiées par les sous-types de projet.  

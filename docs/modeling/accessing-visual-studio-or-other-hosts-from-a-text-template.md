@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946515"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Accéder à Visual Studio ou autres hôtes à partir d’un modèle de texte
 

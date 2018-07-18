@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482176"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>Créer des vues personnalisées de données dans le débogueur Visual Studio
 Le débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fournit tout un ensemble d’outils permettant d’examiner et de modifier l’état de votre programme. La plupart de ces outils ne fonctionnent qu’en mode arrêt.

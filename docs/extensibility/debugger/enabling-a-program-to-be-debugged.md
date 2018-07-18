@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100528"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>L’activation d’un programme à déboguer
 Avant votre moteur de débogage (DE) peut déboguer un programme, vous devez tout d’abord lancer la DE ou attacher à un programme existant.  

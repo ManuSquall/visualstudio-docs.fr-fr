@@ -1,13 +1,13 @@
 ---
 title: Objet attendu | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5007
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632809"
 ---
 # <a name="object-expected"></a>Objet attendu
 Vous avez tenté d'appeler une méthode ou propriété sur un objet d'un type autre qu'`Object`, ou vous avez passé un argument d'un type autre qu'`Object` quand un `Object` était nécessaire.  

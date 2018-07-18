@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53c8caa101b51a9d26d555787e710408cf315a0e
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ba2590c17a41d200f0a8dd3c38c7c9ae8c8a85cc
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447659"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572096"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Informations de référence sur l’API du profileur Visual Studio (native)
-Les API du profileur Visual Studio vous permettent de contrôler par programmation la quantité de données collectées et d’insérer des marques d’horodateur et de profil durant le profilage. Pour utiliser des API natives, vous devez inclure le fichier d’en-tête VSPerf.h et ajouter VSPerf.lib dans votre projet.  
+Les API du profileur Visual Studio vous permettent de contrôler par programmation la quantité de données collectées et d’insérer des marques d’horodatage et de profil durant le profilage. Pour utiliser des API natives, vous devez inclure le fichier d’en-tête *VSPerf.h* et ajouter *VSPerf.lib* dans votre projet.  
   
 > [!NOTE]
->  Par défaut, VSPerf.h et VSPerf.lib se trouvent dans un dossier nommé PerfSDK. Répertoire \<lecteur>:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\PerfSDK, par exemple.  
+>  Par défaut, *VSPerf.h* et *VSPerf.lib* se trouvent dans un dossier nommé *PerfSDK*. Répertoire *\<lecteur>:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\PerfSDK*, par exemple.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  

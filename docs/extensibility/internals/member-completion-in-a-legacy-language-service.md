@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134030"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Achèvement de membre dans un Service de langage hérité
 La saisie semi-automatique IntelliSense membre est une info-bulle qui affiche une liste de membres possibles d’une étendue particulière comme une classe, une structure, une énumération ou une espace de noms. Par exemple, en c#, si l’utilisateur tape « this » suivi d’un point, une liste de tous les membres de la classe ou structure dans l’étendue actuelle est présentée dans une liste à partir de laquelle l’utilisateur peut sélectionner.  

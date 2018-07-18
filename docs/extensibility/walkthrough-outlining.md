@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143889"
 ---
 # <a name="walkthrough-outlining"></a>Procédure pas à pas : mise en relief
 Vous pouvez implémenter basée sur le langage des fonctionnalités telles que le mode plan en définissant les types de zones de texte que vous souhaitez développer ou réduire. Vous pouvez définir des régions dans le contexte d’un service de langage, ou vous pouvez définir votre propre type de contenu et d’extension de nom du fichier et appliquer la définition de la région uniquement à ce type, ou vous pouvez appliquer les définitions de zone à un type de contenu existant (par exemple « text »). Cette procédure pas à pas montre comment définir et afficher les régions en mode plan.  

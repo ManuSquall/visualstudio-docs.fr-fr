@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137600"
 ---
 # <a name="vscodewindowmanager-object"></a>Objet de VSCodeWindowManager
 Le service de langage implémente le Gestionnaire de fenêtre de code et est chargé de gérer les motifs (par exemple, la barre déroulante). Pour plus d’informations, consultez [personnalisation des fenêtres de Code à l’aide de l’API héritée](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  

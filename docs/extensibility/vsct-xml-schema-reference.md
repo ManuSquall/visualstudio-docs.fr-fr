@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143538"
 ---
 # <a name="vsct-xml-schema-reference"></a>Référence du schéma XML de VSCT
 Fournit un tableau d’éléments de schéma du compilateur Table de commande, avec l’enfant autorisé éléments et attributs pour chacun.  

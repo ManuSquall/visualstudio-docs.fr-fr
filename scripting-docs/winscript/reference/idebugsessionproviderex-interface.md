@@ -1,14 +1,14 @@
 ---
 title: Idebugsessionproviderex, Interface | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 26c5da2d-8c93-4d2b-94d2-97aaa377dcfe
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726929"
 ---
 # <a name="idebugsessionproviderex-interface"></a>IDebugSessionProviderEx, interface
 L’interface principale fournie par un débogueur IDE pour activer le débogage d’initiée par l’hôte et par le langage. Il établit une session de débogage pour une application en cours d’exécution. Cette interface est implémentée par la Machine Debug Manager.  

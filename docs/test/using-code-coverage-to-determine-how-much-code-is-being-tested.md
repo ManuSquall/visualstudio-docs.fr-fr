@@ -1,6 +1,7 @@
 ---
-title: Couverture du code dans Visual Studio | Microsoft Docs
+title: Couverture du code dans Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d2495c95dfd30727c4c4542903fb00e8b693c1a6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752090"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 
@@ -83,7 +85,7 @@ Dans certains cas, différents blocs de votre code seront utilisés, en fonction
 
  Supposons par exemple que, lorsque vous exécutez un test avec l'entrée « 2 », vous constatez que 50 % d'une fonction spécifique est couvert. Lorsque vous exécutez le test une deuxième fois avec l'entrée « -2 », vous constatez dans la vue de coloration de couverture que le reste de la fonction (50 %) est couvert. Fusionnez maintenant les résultats des deux séries de tests. Le rapport et la vue de coloration de couverture indiquent que la fonction a été couverte à 100 %.
 
- Pour cela, utilisez ![Icône du bouton de fusion dans la fenêtre Couverture du code](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Fusionner les résultats de la couverture du code**. Vous pouvez choisir n'importe quelle combinaison de séries récentes ou de résultats importés. Si vous souhaitez combiner des résultats exportés, vous devez d'abord les importer.
+ Pour cela, utilisez ![Icône du bouton de fusion dans la fenêtre Couverture du code](../test/media/codecoverage-mergeicon.png)**Fusionner les résultats de la couverture du code**. Vous pouvez choisir n'importe quelle combinaison de séries récentes ou de résultats importés. Si vous souhaitez combiner des résultats exportés, vous devez d'abord les importer.
 
  Utilisez **Exporter les résultats de la couverture du code** pour enregistrer les résultats d’une opération de fusion.
 
@@ -257,7 +259,7 @@ Lorsque vous archivez votre code, vos tests s’exécutent sur le serveur de bui
 
    Si vous avez plusieurs définitions de source de test, répétez cette étape pour chaque définition.
 
-   ![Définition de build pour la couverture du code](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
+   ![Définition de build pour la couverture du code](../test/media/codecoverage-plaincc.png)
 
 > [!TIP]
 > S’il n’existe aucun champ nommé **Type de fichier de paramètres d’exécution**, changez la propriété **Test Runner**. Sous **Tests automatisés**, sélectionnez **Assembly de test**, puis choisissez le bouton de sélection **[...]** situé à la fin de la ligne. Dans la boîte de dialogue **Ajouter/Modifier une série de tests**, sous **Test Runner**, choisissez **Visual Studio Test Runner**.

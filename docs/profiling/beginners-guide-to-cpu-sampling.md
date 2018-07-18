@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1461e90ebbd32483eb6d8e2925e1e226faf5ea4
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267947"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573178"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guide du débutant en échantillonnage de l’UC
 Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cette procédure montre comment utiliser des données **d’échantillonnage**.
@@ -36,12 +36,12 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
  Si **l’échantillonnage** ne vous fournit pas les données dont vous avez besoin, les méthodes de collecte d’autres outils de profilage fournissent des types d’informations différents qui peuvent vous être utiles. Pour plus d’informations sur ces autres méthodes, consultez [Guide pratique pour choisir une méthode de collecte](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Si vous profilez du code qui appelle des fonctions Windows, vous devez vous assurer que vous disposez des fichiers .pdb les plus récents. Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre. Pour savoir comment vérifier que vous disposez des fichiers dont vous avez besoin, consultez [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+>  Si vous profilez du code qui appelle des fonctions Windows, vous devez vérifier que vous disposez des fichiers .*pdb* les plus récents. Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre. Pour savoir comment vérifier que vous disposez des fichiers dont vous avez besoin, consultez [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
-##  <a name="Step1"></a> Créer et exécuter une session de performance  
+## <a name="create-and-run-a-performance-session"></a>Créer et exécuter une session de performance  
  Pour obtenir les données que vous devez analyser, vous devez d'abord créer une session de performance, puis exécuter cette session. **L’Assistant Performance** vous permet de faire les deux.  
   
- Si vous ne profilez pas une application de bureau Windows ou ASP.NET, vous devez utiliser un autre outil de profilage. Consultez [Outils de profilage](../profiling/profiling-tools.md).  
+ Si vous ne profilez pas une application de bureau Windows ou ASP.NET, vous devez utiliser un autre outil de profilage. Consultez [Découvrir les outils de profilage](../profiling/profiling-tools.md).  
   
 #### <a name="to-create-and-run-a-performance-session"></a>Pour créer et exécuter une session de performance  
   
@@ -64,7 +64,7 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
   
      Une fois que vous avez terminé d’exécuter l’application, la vue **Résumé** des données de profilage s’affiche dans la fenêtre principale de Visual Studio et une icône s’affiche pour la nouvelle session dans la fenêtre **Explorateur de performances**.  
   
-##  <a name="Step2"></a> Étape 2 : Analyser les données d’échantillonnage  
+## <a name="step-2-analyze-sampling-data"></a>Étape 2 : Analyser les données d'échantillonnage  
  Lorsque vous terminez d’exécuter une session de performance, la vue **Résumé** du rapport de profilage s’affiche dans la fenêtre principale de Visual Studio.  
   
  Nous vous recommandons de commencer à analyser vos données en examinant le **chemin réactif**, puis la liste des fonctions qui effectuent la majeure partie du travail, et enfin, en vous concentrant sur d’autres fonctions à l’aide de la **chronologie Résumé**. Vous pouvez également consulter des avertissements et des suggestions de profilage dans la fenêtre **Liste d’erreurs**.  
@@ -93,13 +93,13 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
   
     -   Le volet inférieur des fenêtres **Informations relatives à la fonction** affiche le code de la fonction. Si vous examinez le code et recherchez une possibilité d’optimiser ses performances, cliquez sur le nom du fichier source pour ouvrir le fichier dans l’éditeur Visual Studio.  
   
-3.  Pour continuer votre analyse, retournez à la vue **Résumé** en sélectionnant **Résumé** dans la liste déroulante des vues. Examinez ensuite les fonctions dans **Fonctions faisant le plus de travail individuel**. Cette liste affiche les fonctions avec les échantillons exclusifs les plus élevés. Le code du corps de fonction de ces fonctions a effectué un travail significatif et vous pouvez peut-être l'optimiser. Pour analyser davantage une fonction particulière, cliquez sur le nom de la fonction pour l’afficher dans la vue **Informations relatives à la fonction**.  
+3.  Pour continuer votre analyse, retournez à la vue **Résumé** en sélectionnant **Résumé** dans la liste déroulante **Vue**. Examinez ensuite les fonctions dans **Fonctions faisant le plus de travail individuel**. Cette liste affiche les fonctions avec les échantillons exclusifs les plus élevés. Le code du corps de fonction de ces fonctions a effectué un travail significatif et vous pouvez peut-être l'optimiser. Pour approfondir l’analyse d’une fonction particulière, cliquez sur le nom de la fonction afin de l’afficher dans la vue **Informations relatives à la fonction**.  
   
      ![Liste des fonctions effectuant le plus de travail](../profiling/media/functions_mostwork.png "Functions_MostWork")  
   
      Pour continuer votre examen de l’exécution du profilage, vous pouvez réanalyser un segment des données de profilage en utilisant la chronologie dans la vue **Résumé** afin d’afficher le **Chemin réactif** et les **Fonctions faisant le plus de travail individuel** d’un segment sélectionné. Par exemple, si vous vous concentrez sur un pic plus petit dans la chronologie, vous pouvez noter des arborescences des appels coûteuses et des fonctions qui n’étaient pas affichées dans l’analyse de l’exécution du profilage toute entière.  
   
-     Pour réanalyser un segment, sélectionnez un segment dans la zone Chronologie Résumé, puis cliquez sur **Filtrer par sélection**.  
+     Pour réanalyser un segment, sélectionnez-le dans la zone **Chronologie Résumé**, puis cliquez sur **Filtrer par sélection**.  
   
      ![Chronologie de la vue Résumé de performance](../profiling/media/performancesummary.png "PerformanceSummary")  
   
@@ -109,7 +109,7 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
   
     -   Pour afficher des informations détaillées sur l’avertissement, cliquez avec le bouton droit sur l’erreur, puis cliquez sur **Afficher l’aide sur l’erreur**.  
   
-##  <a name="Step3"></a> Étape 3 : Réviser le code et réexécuter une session  
+## <a name="step-3-revise-code-and-rerun-a-session"></a>Étape 3 : Réviser le code et réexécuter une session  
  Après avoir recherché et optimisé une ou plusieurs fonctions, vous pouvez répéter l'exécution du profilage et comparer les données pour afficher les différences de performances de votre application suite aux modifications que vous avez apportées.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Pour réviser le code et réexécuter le profileur  
@@ -120,7 +120,7 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
   
 3.  Dans **l’Explorateur de performances**, cliquez avec le bouton droit sur la session que vous voulez réexécuter, puis cliquez sur **Démarrer avec le profilage**.  
   
-4.  Une fois que vous avez réexécuté la session, un autre fichier de données est ajouté au dossier **Rapports** de la session dans **l’Explorateur de performances**. Sélectionnez les données de profilage d’origine et les nouvelles données de profilage, cliquez avec le bouton droit sur la sélection, puis cliquez sur **Comparer les rapports de performances**.  
+4.  Une fois que vous avez réexécuté la session, un autre fichier de données est ajouté au dossier *Rapports* de la session dans **l’Explorateur de performances**. Sélectionnez les données de profilage d’origine et les nouvelles données de profilage, cliquez avec le bouton droit sur la sélection, puis cliquez sur **Comparer les rapports de performances**.  
   
      Une nouvelle fenêtre de rapport s'ouvre et affiche les résultats de la comparaison. Pour plus d’informations sur l’utilisation de la vue de comparaison, consultez [Guide pratique pour comparer des fichiers de données du profileur](../profiling/how-to-compare-performance-data-files.md).
   

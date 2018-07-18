@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921443"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Jeux de données distincts et les TableAdapters dans différents projets
 Datasets typés ont été améliorés afin que les [TableAdapters](create-and-configure-tableadapters.md) et les classes dataset puissent être générées dans des projets distincts. Cela vous permet de rapidement séparer les couches d’application et de générer des applications de données multicouches.

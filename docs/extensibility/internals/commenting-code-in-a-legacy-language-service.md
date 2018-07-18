@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128718"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Commentaires de Code dans un Service de langage hérité
 En général, les langages de programmation fournissent un moyen d’annoter le code de commentaire. Un commentaire est une section de texte qui fournit des informations supplémentaires sur le code, mais est ignoré pendant la compilation ou une interprétation supplémentaire.  

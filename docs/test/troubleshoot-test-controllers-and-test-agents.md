@@ -1,7 +1,7 @@
 ---
-title: Dépannage des contrôleurs de test et des agents de test dans Visual Studio | Microsoft Docs
+title: Dépannage des contrôleurs de test et des agents de test dans Visual Studio
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -11,12 +11,14 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c1ddfedc1a88300bb01b5113304f2b8893e2857
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668705"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Stratégies de dépannage des contrôleurs de test et des agents de test lors de tests de charge
 
@@ -27,7 +29,8 @@ Cet article décrit certains problèmes courants que vous pouvez rencontrer quan
  Lors de l’exécution d’un test de charge, vous pouvez recevoir des erreurs si vous tentez de vous connecter à un ordinateur d’agent de test et de collecter les compteurs de performance. Le service Registre distant est le service chargé de fournir les données de compteur de performance à un ordinateur distant. Sur certains systèmes d’exploitation, le service Registre à distance ne démarre pas automatiquement. Pour résoudre ce problème, démarrez manuellement le service Registre distant.
 
 > [!NOTE]
->  Vous pouvez accéder au service Registre à distance dans le **Panneau de configuration**. Choisissez **Outils d’administration**, puis **Services**.
+> Vous pouvez accéder au service Registre à distance dans le **Panneau de configuration**. Choisissez **Outils d’administration**, puis **Services**.
+
 
  Ce problème peut être également dû au fait que vous ne disposez pas d'autorisations suffisantes pour lire les compteurs de performance. Pour les séries de tests locales, le compte de l'utilisateur qui exécute le test doit être membre du groupe Utilisateurs avec pouvoir (ou d'un groupe disposant d'autorisations supérieures) ou du groupe Utilisateurs de l'Analyseur de performances. Pour les séries de tests distantes, le contrôleur est configuré pour s'exécuter sous un compte qui doit être membre du groupe Utilisateurs avec pouvoir (ou d'un groupe disposant d'autorisations supérieures) ou du groupe Utilisateurs de l'Analyseur de performances.
 
@@ -42,7 +45,7 @@ Cet article décrit certains problèmes courants que vous pouvez rencontrer quan
 
 3.  Modifiez l'entrée pour le commutateur `EqtTraceLevel` dans la section des diagnostics du système du fichier. Votre code doit être semblable au suivant :
 
-    ```
+    ```xml
     <system.diagnostics>
         <trace autoflush="true" indentsize="4">
             <listeners>
@@ -87,7 +90,8 @@ Cet article décrit certains problèmes courants que vous pouvez rencontrer quan
  Cette erreur peut être provoquée par l'installation du contrôleur de test sur un ordinateur doté de plusieurs cartes réseau.
 
 > [!NOTE]
->  Il est également possible que vous réussissiez à installer les agents de test et que nous ne rencontriez pas ce problème tant que vous n’essayez pas d’exécuter un test.
+> Il est également possible que vous réussissiez à installer les agents de test et que nous ne rencontriez pas ce problème tant que vous n’essayez pas d’exécuter un test.
+
 
  Pour corriger cette erreur, vous devez lier le contrôleur de test à l'une des cartes réseau. Vous devez définir la propriété `BindTo` sur le contrôleur de test, puis modifier l'agent de test de sorte qu'il fasse référence au contrôleur de test par son adresse IP, plutôt que par son nom. Les étapes sont indiquées dans les procédures suivantes.
 
@@ -133,7 +137,7 @@ Cet article décrit certains problèmes courants que vous pouvez rencontrer quan
 
 -   Réexécutez l'installation de l'agent de test. Cette fois, spécifiez l'adresse IP du contrôleur de test à la place de son nom.
 
- Cette procédure s’applique aux processus du contrôleur de test, du service d’agent de test et de l’agent de test. La propriété `BindTo` doit être définie pour chaque processus qui s'exécute sur un ordinateur doté de plusieurs cartes réseau. La procédure permettant de définir la propriété `BindTo` est la même pour les trois processus et correspond à celle spécifiée précédemment pour le contrôleur de test. Pour définir les niveaux de journalisation pour les processus du service d’agent de test et de l’agent, utilisez les fichiers de configuration répertoriés dans [Définition du niveau de journalisation sur un ordinateur contrôleur de test](#Logging).
+ Cette procédure s’applique aux processus du contrôleur de test, du service d’agent de test et de l’agent de test. La propriété `BindTo` doit être définie pour chaque processus qui s'exécute sur un ordinateur doté de plusieurs cartes réseau. La procédure permettant de définir la propriété `BindTo` est la même pour les trois processus et correspond à celle spécifiée précédemment pour le contrôleur de test. Pour définir les niveaux de journalisation pour les processus du service d’agent de test et de l’agent, utilisez les fichiers de configuration répertoriés dans [Définition du niveau de journalisation sur un ordinateur contrôleur de test](#setting-the-logging-level-on-a-test-controller-computer).
 
 ## <a name="see-also"></a>Voir aussi
 

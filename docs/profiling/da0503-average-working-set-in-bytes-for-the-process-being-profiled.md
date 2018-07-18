@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19e9bfac449598e9edb203dadbf2a49b0047f098
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d45e5ea6e4739e4be7242c97489abaf412652a1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764954"
 ---
-# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503 : Jeu de travail moyen en octets pour le processus en cours de profilage
+# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503 : Jeu de travail moyenne en octets pour le processus en cours de profilage
 |||  
 |-|-|  
 |ID de règle|DA0503|  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/19/2018
   
  Pour plus d’informations sur les jeux de travail de processus, consultez [Jeu de travail](http://go.microsoft.com/fwlink/?LinkId=177830) dans la documentation MSDN relative à la gestion de la mémoire dans Windows.  
   
-## <a name="how-to-use-rule-data"></a>Comment utiliser des données de règle  
+## <a name="how-to-use-rule-data"></a>Comment utiliser les données de règle  
  Utilisez la valeur de la règle pour comparer les performances des différentes versions du programme ou pour comprendre les performances de l’application dans différents scénarios de profilage.  
   
  Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la vue [Marques](../profiling/marks-view.md) des données de profilage. Accédez aux colonnes **Processus\Jeu de travail** et **Mémoire\Pages/s**. Comparez les deux colonnes et déterminez si des phases de l’exécution du programme ont connu une augmentation de l’activité d’E/S de pagination.

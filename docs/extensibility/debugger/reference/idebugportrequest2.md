@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114902"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 Cette interface décrit un port. Cette description est utilisée pour ajouter le port à un fournisseur de port.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127097"
 ---
 # <a name="how-to-use-the-activity-log"></a>Comment : utiliser le journal d’activité
 Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette fonctionnalité est particulièrement utile pour déboguer les VSPackages dans les environnements de vente au détail.  
@@ -48,7 +49,7 @@ Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette
   
 1.  Exécutez Visual Studio avec le [/journaux](../ide/reference/log-devenv-exe.md) commutateur de ligne de commande pour écrire ActivityLog.xml sur le disque pendant votre session.
 
-2.  Après la fermeture de Visual Studio, recherchez le journal d’activité dans le sous-dossier pour les données de Visual Studio : *%AppData%*\Microsoft\VisualStudio\15.0\ActivityLog.xml.  
+2.  Après la fermeture de Visual Studio, recherchez le journal d’activité dans le sous-dossier pour les données de Visual Studio : *%AppData%* \Microsoft\VisualStudio\15.0\ActivityLog.xml.  
   
 3.  Ouvrez le journal d’activité avec n’importe quel éditeur de texte. Voici une entrée de type :  
   

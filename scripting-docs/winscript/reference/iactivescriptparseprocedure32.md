@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645869"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
 Si le moteur de Script Windows autorise le texte du code source pour les procédures à ajouter au script, il implémente la `IActiveScriptParseProcedure32` interface. Pour les langages de script interprétés ayant aucun environnement de programmation indépendant, tel que VBScript, cela fournit un mécanisme de remplacement (autre que `IActiveScriptParse32` ou `IPersist`*) pour ajouter des procédures de script à l’espace de noms.  

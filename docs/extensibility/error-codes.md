@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130772"
 ---
 # <a name="error-codes"></a>Codes d'erreur
 Lorsqu’une fonction de l’API de plug-in de contrôle de code Source retourne une erreur, il est censé être un des codes d’erreur suivants. Toutes les erreurs sont négatifs, les avertissements ou les codes d’erreur d’information sont positives, et de réussite est 0.  

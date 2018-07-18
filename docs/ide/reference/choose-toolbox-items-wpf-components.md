@@ -1,9 +1,9 @@
 ---
-title: Choisir des éléments de boîte à outils, Composants WPF | Microsoft Docs
-ms.custom: ''
+title: Choisir des éléments de boîte à outils, Composants WPF
 ms.date: 06/21/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.chooseitems.wpfcomponents
 helpviewer_keywords:
@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 955d0ab74d59606e63a4772aee5de96c920544ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d05e69acb414c08e752593fbfdb08246c3d14a2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949618"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Choisir des éléments de boîte à outils, composants WPF
 
@@ -36,16 +37,20 @@ Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils
 
 Les colonnes de l’onglet **Composants WPF** contient les informations suivantes :
 
-Name  
+**Name**
+
 Répertorie les noms des contrôles WPF dont les entrées correspondantes se trouvent dans le Registre de votre ordinateur.
 
-Espace de noms  
+**Espace de noms**
+
 Affiche la hiérarchie de l’espace de noms de l’[API de classe .NET Framework](/dotnet/api/?view=netframework-4.7) qui définit la structure du composant. Triez cette colonne pour répertorier les composants disponibles dans chaque espace de noms .NET Framework installé sur votre ordinateur.
 
-Nom de l'assembly  
+**Nom de l'assembly**
+
 Affiche le nom de l’assembly .NET Framework qui comprend l’espace de noms de chaque composant. Triez cette colonne pour répertorier les espaces de noms contenus dans chaque assembly .NET Framework installé sur votre ordinateur.
 
-Répertoire  
+**Répertoire**
+
 Affiche l’emplacement de l’assembly .NET Framework. L'emplacement par défaut de tous les assemblys est le Global Assembly Cache. Pour plus d’informations sur le Global Assembly Cache, consultez [Utilisation d’assemblys et du Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Liste des éléments d’interface
@@ -54,15 +59,15 @@ Affiche l’emplacement de l’assembly .NET Framework. L'emplacement par défau
 
 Filtre la liste des contrôles WPF en fonction de la chaîne que vous entrez dans la zone de texte. Toutes les correspondances des quatre colonnes sont affichées.
 
-### <a name="clear"></a>Effacer
+**Effacer**
 
 Efface la chaîne de filtrage.
 
-### <a name="browse"></a>Parcourir
+**Parcourir**
 
 Ouvre la boîte de dialogue **Ouvrir** qui permet d’accéder aux assemblys contenant des contrôles WPF. Utilisez cette boîte de dialogue pour charger les assemblys qui ne se trouvent pas dans le Global Assembly Cache.
 
-### <a name="language"></a>Langue
+**Language**
 
 Affiche la langue localisée de l’assembly qui contient le contrôle WPF sélectionné.
 
@@ -80,5 +85,5 @@ Vous pouvez référencer directement vos contrôles dans la vue XAML en mappant
 
 ## <a name="see-also"></a>Voir aussi
 
-[Boîte à outils](../../ide/reference/toolbox.md)  
-[Prise en main de WPF](../../designers/getting-started-with-wpf.md)
+- [Boîte à outils](../../ide/reference/toolbox.md)
+- [Prise en main de WPF](../../designers/getting-started-with-wpf.md)

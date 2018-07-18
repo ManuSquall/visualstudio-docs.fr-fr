@@ -2,7 +2,7 @@
   href: index.md
 - name: Vue d'ensemble
   href: debugger-overview.md
-- name: Guides de démarrage rapide
+- name: Démarrages rapides
   items:
     - name: Présentation du débogueur
       href: debugger-feature-tour.md
@@ -12,7 +12,7 @@
       href: quickstart-debug-with-cplusplus.md
     - name: Déboguer une application ASP.NET
       href: quickstart-debug-aspnet.md
-- name: Tutoriels
+- name: Didacticiels
   items:
     - name: Apprendre à déboguer avec Visual Studio
       href: getting-started-with-the-debugger.md
@@ -371,7 +371,7 @@
               href: debug-installed-app-package.md
             - name: Déboguer XAML dans Blend
               href: debug-xaml-in-blend.md
-            - name: "Déboguer du code\_HTML et\_CSS"
+            - name: "déboguer du code\_HTML et\_CSS\_;"
               href: quickstart-debug-html-and-css.md
               items:
                 - name: Actualiser une application (JavaScript)
@@ -385,7 +385,7 @@
             - name: Déboguer du code JavaScript à l’aide de la console
               href: quickstart-debug-javascript-using-the-console.md
               items:
-                - name: Commandes de la console JavaScript
+                - name: JavaScript Console commands
                   href: javascript-console-commands.md
             - name: 'Guide pratique pour déclencher, suspendre, reprendre et mettre en arrière-plan des événements'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
@@ -532,7 +532,7 @@
               href: how-to-find-the-name-of-the-aspnet-process.md
             - name: Déboguer des applications web déployées
               href: debugging-deployed-web-applications.md
-            - name: "Procédure pas à pas\_: débogage d'un formulaire web"
+            - name: "Procédure pas à pas\_: débogage d'un formulaire Web"
               href: walkthrough-debugging-a-web-form.md
             - name: Déboguer des exceptions ASP.NET
               href: how-to-debug-aspnet-exceptions.md
@@ -711,7 +711,7 @@
                   href: how-to-search-for-a-window-in-windows-view.md
                 - name: Afficher les propriétés d’une fenêtre
                   href: how-to-display-window-properties.md
-            - name: Vue Messages
+            - name: Affichage Messages
               href: messages-view.md
               items:
                 - name: Contrôler la vue Messages
@@ -733,7 +733,7 @@
                   href: how-to-search-for-a-process-in-processes-view.md
                 - name: Afficher les propriétés d’un processus
                   href: how-to-display-process-properties.md
-            - name: Vue Threads
+            - name: vue Threads
               href: threads-view.md
               items:
                 - name: Rechercher un thread dans la vue Threads
@@ -769,13 +769,13 @@
                   href: find-window-dialog-box.md
                 - name: Boîte de dialogue Recherche d’une fenêtre
                   href: window-search-dialog-box.md
-                - name: Boîte de dialogue Recherche d'un message
+                - name: boîte de dialogue Recherche d'un message
                   href: message-search-dialog-box.md
                 - name: Boîte de dialogue Recherche d’un processus
                   href: process-search-dialog-box.md
                 - name: Boîte de dialogue Recherche d’un thread
                   href: thread-search-dialog-box.md
-            - name: Boîte de dialogue Propriétés de la fenêtre
+            - name: boîte de dialogue Propriétés de la fenêtre
               href: window-properties-dialog-box.md
               items:
                 - name: Onglet Général de la boîte de dialogue Propriétés de la fenêtre
@@ -826,3 +826,5 @@
   items:
     - name: Nouveautés du débogueur dans Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
+    - name: Débogage pour grands débutants
+      href: debugging-absolute-beginners.md

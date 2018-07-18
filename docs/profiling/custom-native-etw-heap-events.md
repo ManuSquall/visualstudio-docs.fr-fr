@@ -12,11 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d08abca1d20641a8e12261577ec1fdcf8179e080
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749458"
 ---
 # <a name="custom-native-etw-heap-events"></a>Événements de tas ETW natifs personnalisés
 
@@ -136,7 +137,7 @@ Cette bibliothèque peut facilement être utilisée en C et C++.
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>Suivi de l’utilisation de la mémoire
+## <a name="track-memory-usage"></a>Suivre l’utilisation de la mémoire
 Une fois ces appels en place, vous pouvez effectuer le suivi de l’utilisation du tas personnalisé à l’aide de l’outil **Utilisation de la mémoire** standard disponible dans Visual Studio.  Pour plus d’informations sur l’utilisation de cet outil, consultez la documentation [Memory Usage](../profiling/memory-usage.md) (Utilisation de la mémoire). Vous devez activer le profilage du tas avec des instantanés pour que l’utilisation du tas personnalisé s’affiche. 
 
 ![Activer le profilage du tas](media/heap-enable-heap.png)
@@ -145,7 +146,7 @@ Pour afficher le suivi de votre tas personnalisé, dans le coin supérieur droit
 
 ![Sélection du tas](media/heap-example-custom-heap.png)
 
-À l’aide de l’exemple de code ci-dessus, avec `MemoryPool` créant un objet `VSHeapTracker::CHeapTracker` et notre propre méthode `allocate` appelant maintenant la méthode `AllocateEvent`, vous pouvez maintenant voir le résultat de cette allocation personnalisée, qui affiche 3 instances pour un total de 24 octets, toutes de type `Foo`.
+À l’aide de l’exemple de code ci-dessus, avec `MemoryPool` créant un objet `VSHeapTracker::CHeapTracker` et notre propre méthode `allocate` appelant la méthode `AllocateEvent`, vous pouvez maintenant voir le résultat de cette allocation personnalisée, qui affiche trois instances pour un total de 24 octets, toutes de type `Foo`.
 
 Le tas *Tas NT* par défaut a le même aspect qu’auparavant, à ceci près que notre objet `CHeapTracker` lui a été ajouté.
 
@@ -154,7 +155,7 @@ Le tas *Tas NT* par défaut a le même aspect qu’auparavant, à ceci près que
 Comme avec le tas Windows standard, vous pouvez également utiliser cet outil pour comparer des instantanés et rechercher des fuites et des défaillances dans votre tas personnalisé, comme le décrit la documentation principale [Memory Usage](../profiling/memory-usage.md) (Utilisation de la mémoire).
 
 > [!TIP]
-> Visual Studio contient également un outil **Utilisation de la mémoire** dans l’ensemble d’outils de **profilage des performances**, que vous pouvez activer à l’aide de l’option de menu **Déboguer > Profileur de performances** ou de la combinaison de touches **Alt+F2**.  Cette fonctionnalité n’inclut pas le suivi de tas et n’affiche pas votre tas personnalisé comme décrit ici.  Cette fonctionnalité est uniquement disponible dans la fenêtre **Outils de diagnostic**, que vous pouvez activer avec le menu **Déboguer > Fenêtres > Afficher les outils de diagnostic** ou la combinaison de touches **Ctrl+Alt+F2**.
+> Visual Studio contient également un outil **Utilisation de la mémoire** dans l’ensemble d’outils de **profilage des performances**, que vous pouvez activer à l’aide de l’option de menu **Déboguer**>**Profileur de performances** ou de la combinaison de touches **Alt**+**F2**.  Cette fonctionnalité n’inclut pas le suivi de tas et n’affiche pas votre tas personnalisé comme décrit ici.  Cette fonctionnalité est uniquement disponible dans la fenêtre **Outils de diagnostic**, que vous pouvez activer avec le menu **Déboguer**>**Fenêtres**>**Afficher les outils de diagnostic** ou la combinaison de touches **Ctrl**+**Alt**+**F2**.
 
 ## <a name="see-also"></a>Voir aussi
 [Outils de profilage](../profiling/profiling-tools.md)  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134732"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Zone de test 1 : Ajouter / ouvrir à partir du contrôle de code Source
 Ce contrôle de code source du plug-in de test couvre zone placement des solutions ou projets sous contrôle de code source et de les récupérer à partir du contrôle de code source.  

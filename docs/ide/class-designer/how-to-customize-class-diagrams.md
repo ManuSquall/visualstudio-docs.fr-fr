@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33956755"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Guide pratique pour personnaliser des diagrammes de classes
 

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24633699"
 ---
 # <a name="unterminated-comment"></a>Commentaire inachevé
 Vous a commencé un bloc de commentaire de plusieurs lignes, mais que vous n’avez pas correctement terminé. Commentaires sur plusieurs lignes commencent par un « / * » combinaison et se terminent par l’inverse «\*/ « combinaison. Voici un exemple :  

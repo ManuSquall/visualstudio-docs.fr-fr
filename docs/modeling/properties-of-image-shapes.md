@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952626"
 ---
 # <a name="properties-of-image-shapes"></a>Propriétés des formes d'image
 Vous pouvez utiliser des formes d’image pour spécifier l’aspect des classes de domaine dans un concepteur généré. Définir une forme de l’image en définissant le `Image` propriété de la classe dans un fichier image prédéfinie. Les formats suivants sont pris en charge :

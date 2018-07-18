@@ -1,25 +1,28 @@
 ---
 title: Abonnements Visual Studio
 Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
+Ms.author: tglee
+Manager: lank
 layout: LandingPage
-Ms.date: 02/26/2018
+Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946924"
 ---
 # <a name="visual-studio-subscriptions"></a>Abonnements Visual Studio
+
 Les abonnements Visual Studio sont un ensemble complet de ressources qui vous permettent de créer, déployer et gérer des applications sur vos plateformes et appareils préférés, notamment Windows, iOS, Android et Linux.  Les avantages des abonnements sont notamment l’accès aux outils de développement, à des services cloud et à des logiciels, à de la formation et à du support pour vos besoins en développement et en tests.
 
-##  <a name="get-started"></a>Bien démarrer
+## <a name="get-started"></a>Bien démarrer
+
 Les administrateurs se connectent à [https://manage.visualstudio.com](https://manage.visualstudio.com) pour affecter des abonnements à votre équipe.<br>
 Les abonnés se connectent à [https://my.visualstudio.com](https://my.visualstudio.com) pour accéder aux avantages de leur abonnement.
 
@@ -136,6 +139,12 @@ Les abonnés se connectent à [https://my.visualstudio.com](https://my.visualstu
 
 ---
 
+## <a name="whats-new"></a>Nouveautés
+
+Pour rendre votre abonnement encore plus utile, nous ajoutons et mettons souvent à jour les avantages de l’abonnement. Pour plus d’informations, consultez la page [Nouveautés des abonnements](whats-new-in-subscriptions.md).
+
+---
+
 <h2>Avantages</h2>
 <ul class="cardsD cols cols3">
     <li>
@@ -148,7 +157,6 @@ Les abonnés se connectent à [https://my.visualstudio.com](https://my.visualstu
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio pour Mac</li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li>Team Foundation Server et licence d’accès client TFS</li>
                         </ul>                        
                     </div>
@@ -165,8 +173,8 @@ Les abonnés se connectent à [https://my.visualstudio.com](https://my.visualstu
                         <p>Avec votre abonnement Visual Studio, vous pouvez recevoir un                         crédit Azure mensuel et un accès gratuit aux services Azure,                         des tarifs réduits pour le développement et les tests, ainsi qu’un accès                            exclusif à la bibliothèque d’images réservée aux abonnés                                  avec des machines virtuelles préconfigurées. En fonction de votre                               abonnement, les services cloud peuvent inclure :</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Abonnement développeur à Office 365</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Compte de développeur Windows</a></li>
                             <li>PowerBI Pro</li>

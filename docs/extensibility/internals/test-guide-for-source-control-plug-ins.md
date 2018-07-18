@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145956"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guide de test de Plug-ins de contrôle de code Source
 Cette section fournit des conseils pour le test de votre contrôle de source de plug-in avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Une vue d’ensemble complète de test les plus courants, ainsi que certaines zones plus complexes qui peuvent être problématiques est fournie. Cette vue d’ensemble n’est pas censée être une liste exhaustive des cas de test.  

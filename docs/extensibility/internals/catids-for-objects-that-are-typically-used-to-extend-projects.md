@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135410"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID d’extendeurs pour les objets qui sont généralement utilisés pour étendre des projets
 Le tableau suivant répertorie les CATID d’extendeurs qui permet d’étendre `Project` et `ProjectItem` objets automation [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], et [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projets. Ces CATID d’extendeurs est définis dans VSLangProj.olb.  

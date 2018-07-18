@@ -1,9 +1,8 @@
 ---
-title: Guide pratique pour spécifier une icône d’application (Visual Basic, C#) | Microsoft Docs
-ms.custom: ''
+title: Guide pratique pour spécifier une icône d’application (Visual Basic, C#)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], application
@@ -14,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd8616e1f16e12ab07bd30a2d88f728bc79212f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8da1de87031db962ede178a742325d9206e808c3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945218"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Guide pratique pour spécifier une icône d’application (Visual Basic, C#)
 
@@ -43,5 +43,5 @@ La propriété `Icon` est accessible dans le volet **Application** du **Concepte
 
 ## <a name="see-also"></a>Voir aussi
 
-[Application, page du Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
-[Application, page du Concepteur de projet (C#)](../ide/reference/application-page-project-designer-csharp.md)
+- [Application, page du Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+- [Application, page du Concepteur de projet (C#)](../ide/reference/application-page-project-designer-csharp.md)

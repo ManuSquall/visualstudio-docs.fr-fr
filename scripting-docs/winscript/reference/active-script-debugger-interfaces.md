@@ -1,17 +1,17 @@
 ---
-title: "Débogueur de Script actif, Interfaces | Documents Microsoft"
-ms.custom: 
+title: Débogueur de Script actif, Interfaces | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Active Script Debugger interfaces
 - activdbg.h
 ms.assetid: bf4750b1-4e58-442b-ab56-254e640de61d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -20,6 +20,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642669"
 ---
 # <a name="active-script-debugger-interfaces"></a>Débogueur de script actif, interfaces
 Les fichiers d’en-tête activdbg.h et activdbg100.h fournissent les interfaces, les énumérations et les structures répertoriés dans cette section. Ils servent de débogage de script.  

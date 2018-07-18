@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951893"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Substitution et extension des classes générées
 Définition de votre DSL est une plateforme sur laquelle vous pouvez créer un ensemble puissant d’outils qui sont basées sur un langage spécifique à un domaine. Plusieurs extensions et les adaptations est possible en substituant et en étendant les classes générées à partir de la définition DSL. Ces classes incluent non seulement les classes de domaine que vous avez définis explicitement dans le schéma de définition DSL, mais également d’autres classes qui définissent la boîte à outils, l’Explorateur, sérialisation et ainsi de suite.

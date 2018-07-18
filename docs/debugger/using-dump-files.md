@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481825"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Utiliser des fichiers Dump avec Visual Studio
 Fichiers dump avec ou sans tas ; créer un fichier dump ; ouvrir un fichier dump ; Rechercher les fichiers binaires, du fichier pdb et fichier source pour un fichier de vidage.

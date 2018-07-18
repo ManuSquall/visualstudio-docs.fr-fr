@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942652"
 ---
 # <a name="keyboard-environment-options-dialog-box"></a>Clavier, Environnement, boîte de dialogue Options
 Utilisez cette page pour définir les mappages du clavier. Pour plus d’informations sur les mappages, consultez [Identification et personnalisation des raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568434"
 ---
 # <a name="warning-task"></a>Warning, tâche
 Enregistre un avertissement durant une génération en fonction d’une instruction conditionnelle évaluée.  

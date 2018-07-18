@@ -22,6 +22,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33865575"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Répertoire de composants Visual Studio Enterprise 2017
 

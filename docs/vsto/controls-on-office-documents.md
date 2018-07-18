@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263135"
 ---
 # <a name="controls-on-office-documents"></a>Contrôles sur des documents Office
   Vous pouvez utiliser les Outils de développement Office dans Visual Studio pour ajouter des contrôles Windows Forms et des *contrôles hôtes* à des documents Word et à des feuilles de calcul Excel. Les contrôles hôtes sont des objets qui étendent différents objets d'interface utilisateur dans les modèles objet Word et Excel.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099836"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Sources d’événements (Kit de développement logiciel Visual Studio)
 Il existe deux sources d’événements : le moteur de débogage (DE) et la session de débogage responsable de la. Événements envoyés à partir d’un D’ont un moteur non NULL, tandis que les événements envoyés par le SDM ont un moteur NULL.  

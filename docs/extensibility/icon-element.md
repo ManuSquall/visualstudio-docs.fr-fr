@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126871"
 ---
 # <a name="icon-element"></a>Icon, élément
 L’attribut guid de la balise de l’icône est le guid d’une image bitmap défini.  L’attribut id sélectionne l’emplacement de la bande d’image bitmap. Cet élément est facultatif.  Si cet élément est omis la valeur de **guidOfficeIcon:msotcidNoIcon** sera être déduit.  

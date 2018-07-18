@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471019"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API d'extensibilité du résumé de fichier dump
 À l’aide de l’API d’extensibilité de cette section, vous pouvez étendre le. Système de projet EXE et **résumé du Dump** page pour une utilisation avec votre propre moteur de débogage personnalisé.  

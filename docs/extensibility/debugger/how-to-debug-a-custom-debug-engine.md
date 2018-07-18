@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106979"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Comment : Déboguer un moteur de débogage personnalisé
 Un type de projet lance le moteur de débogage (DE) à partir de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> (méthode). Cela signifie que la D’est démarrée sous le contrôle de l’instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] contrôle le type de projet. Toutefois, cette instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ne peut pas déboguer le DE. Voici les étapes permettant de vous permettent de déboguer votre DE personnalisé.  
@@ -59,7 +60,7 @@ Un type de projet lance le moteur de débogage (DE) à partir de la <xref:Micros
   
 1.  Démarrer [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dans la ruche du Registre normal et le chargement de votre projet type projet (il s’agit, la source de votre type de projet, pas une instanciation de votre type de projet).  
   
-2.  Ouvrez les propriétés du projet et accédez à la **déboguer** page. Pour le **commande**, tapez le chemin d’accès à la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (par défaut, il s’agit de *[lecteur]*\Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
+2.  Ouvrez les propriétés du projet et accédez à la **déboguer** page. Pour le **commande**, tapez le chemin d’accès à la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (par défaut, il s’agit de *[lecteur]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
   
 3.  Pour le **Arguments de commande**, type `/rootsuffix exp` pour la ruche du Registre expérimentale (créée lors de l’installation VSIP).  
   

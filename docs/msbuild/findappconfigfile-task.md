@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567471"
 ---
 # <a name="findappconfigfile-task"></a>Tâche FindAppConfigFile
 Recherche le fichier app.config, le cas échéant, dans les listes fournies.  

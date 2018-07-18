@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101457"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 Spécifie l’ID de processus, ce qui peut être un ID système ou un GUID.  

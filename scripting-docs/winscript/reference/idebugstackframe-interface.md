@@ -1,16 +1,16 @@
 ---
 title: IDebugStackFrame (Interface) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugStackFrame interface
 ms.assetid: e95c1b4f-17c1-490c-a56b-c25fa45d4822
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727529"
 ---
 # <a name="idebugstackframe-interface"></a>IDebugStackFrame, interface
 Représente un frame de pile logique sur la pile des threads. Appelez le `IDebugStackFrame::QueryInterface` méthode pour obtenir le `IDebugExpressionContext` interface, ce qui autorise l’expression d’évaluation et de surveillance de windows.  

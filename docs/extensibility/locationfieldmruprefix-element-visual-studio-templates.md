@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136337"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix, élément (modèles Visual Studio)
 Spécifie les chemins des derniers fichiers utilisés (MRU) dans le **nouveau projet** et **ajouter un nouvel élément** boîte de dialogue.  

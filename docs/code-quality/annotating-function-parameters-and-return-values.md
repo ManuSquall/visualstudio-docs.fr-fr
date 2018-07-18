@@ -132,6 +132,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900444"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
 Cet article décrit les utilisations courantes des annotations pour les paramètres de fonction simple, les scalaires et les pointeurs vers des structures et des classes et la plupart des types de mémoires tampons.  Cet article présente également des modèles d’utilisation courants pour les annotations. Pour les annotations supplémentaires qui sont liées à des fonctions, consultez [annotation du comportement de la fonction](../code-quality/annotating-function-behavior.md)

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468700"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Debug Interface Access, référence du SDK
 Une référence complète à toutes les interfaces et prise en charge les énumérations et les structures dans le SDK DIA.  

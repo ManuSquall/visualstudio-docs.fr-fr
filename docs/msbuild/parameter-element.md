@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567939"
 ---
 # <a name="parameter-element"></a>Parameter, élément
 Contient des informations sur un paramètre spécifique pour une tâche générée par un `UsingTask``TaskFactory`.  Le nom de l’élément est le nom du paramètre.  Pour plus d’informations, consultez l’article [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  

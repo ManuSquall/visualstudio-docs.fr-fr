@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107918"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Attache un moteur de débogage (DE) à un programme ou des programmes. Appelée par le Gestionnaire de session de débogage (SDM) lors de la D’est en cours d’exécution in-process pour le SDM.  

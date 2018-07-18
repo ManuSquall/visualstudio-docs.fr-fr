@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134275"
 ---
 # <a name="extending-solutions"></a>Extension de Solutions
 Une solution est un regroupement d’un ou plusieurs projets qui travaillent conjointement pour créer une application.  

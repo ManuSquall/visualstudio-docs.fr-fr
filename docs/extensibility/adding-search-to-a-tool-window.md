@@ -18,6 +18,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032068"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Ajout de recherche à une fenêtre outil
 Lorsque vous créez ou mettez à jour une fenêtre outil dans votre extension, vous pouvez ajouter les mêmes fonctionnalités de recherche apparaît ailleurs dans Visual Studio. Cette fonctionnalité comprend les fonctionnalités suivantes :  

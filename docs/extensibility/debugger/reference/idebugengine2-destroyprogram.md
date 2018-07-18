@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105864"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 Informe un moteur de débogage (DE) que le programme spécifié a été arrêté anormalement et que le DE doit nettoyer toutes les références au programme et envoi d’un programme détruire l’événement.  

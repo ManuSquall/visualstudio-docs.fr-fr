@@ -1,6 +1,6 @@
 ---
-title: "Former un modèle TensorFlow localement"
-description: "Exécuter un modèle TensorFlow localement dans Visual Studio Tools pour IA"
+title: Former un modèle TensorFlow localement
+description: Exécuter un modèle TensorFlow localement dans Visual Studio Tools pour IA
 keywords: ia, visual studio, tensorflow, local
 author: lisawong19
 ms.author: liwong
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29708931"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Former un modèle TensorFlow localement
 

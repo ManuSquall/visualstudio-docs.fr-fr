@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137509"
 ---
 # <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>La gestion des annulations et restauration par progression à l’aide de l’API héritée
 Éditeurs doivent prendre en charge les opérations d’annulation qui permettent aux utilisateurs d’annuler leurs modifications récentes lorsqu’ils modifient le code. La plupart des éditeurs implémentés sous [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] peuvent avoir des annulations prises en charge automatiquement par l’environnement de développement intégré (IDE).  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134963"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Zone de test 3 : Extraire / annuler l’extraction
 Cette zone de plug-in de test de contrôle de code source traite les éléments de modification et de restauration à partir de la banque des versions via le **Check Out** et **annuler l’extraction** commandes.  

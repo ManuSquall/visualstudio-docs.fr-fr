@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131325"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Saisie semi-automatique des instructions dans un Service de langage hérité
 Saisie semi-automatique des instructions sont le processus par lequel le service de langage aide les utilisateurs à terminer un élément de qui ils ont commencé à taper dans l’éditeur principal ou le mot clé de langage. Cette rubrique explique comment fonctionnement la saisie semi-automatique des instructions et comment l’implémenter dans votre service de langage.  

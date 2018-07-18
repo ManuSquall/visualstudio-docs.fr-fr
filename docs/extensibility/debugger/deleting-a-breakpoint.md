@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104428"
 ---
 # <a name="deleting-a-breakpoint"></a>Suppression d’un point d’arrêt
 La section suivante décrit le processus lors de la suppression d’un point d’arrêt en attente :  

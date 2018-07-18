@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578807"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath, tâche
 Convertit une référence ou un chemin relatif en chemin absolu.  

@@ -1,16 +1,18 @@
 ---
 title: Structure JS_NATIVE_FRAME | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: JS_NATIVE_FRAME
-apilocation: jscript9diag.dll
+apiname:
+- JS_NATIVE_FRAME
+apilocation:
+- jscript9diag.dll
 ms.assetid: 5afa2ee1-b3e2-47cb-b304-84f96e6fbb14
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733839"
 ---
 # <a name="jsnativeframe-structure"></a>Structure JS_NATIVE_FRAME
 Représente un frame de pile.  

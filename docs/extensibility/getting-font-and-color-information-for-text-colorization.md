@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129694"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Mise en route de la police et les informations de couleur de colorisation de texte
 Le processus qui effectue le rendu ou affiche du texte impriment dans les éléments d’interface utilisateur utilisateur varie selon le type de projet, sa technologie et developer de préférences. Le **polices et couleurs** page de propriétés stocke les paramètres.

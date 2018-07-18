@@ -1,6 +1,7 @@
 ---
 title: Guide pratique pour modéliser un terrain 3D
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3108ff6c04ccae459e977601446d3d16efa8ebfa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745576"
 ---
 # <a name="how-to-model-3d-terrain"></a>Guide pratique pour modéliser un terrain 3D
 
@@ -25,7 +27,7 @@ Vous pouvez créer un terrain 3D en subdivisant un plan pour obtenir des faces s
 
 Lorsque vous avez terminé, le modèle doit se présenter comme suit :
 
-![Scène 3D illustrant un modèle de terrain](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![Scène 3D illustrant un modèle de terrain](../designers/media/digit-terrain-model.png)
 
 Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
 
@@ -51,7 +53,7 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 
 Le modèle de terrain est terminé. Voici à nouveau le modèle final, avec l’ombrage Phong appliqué :
 
-![Scène 3D illustrant un modèle de terrain](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![Scène 3D illustrant un modèle de terrain](../designers/media/digit-terrain-model.png)
 
 Vous pouvez utiliser ce modèle de terrain pour montrer l’effet du nuanceur de dégradé décrit dans l’article [Comment : créer un nuanceur de géométrie dégradé](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 

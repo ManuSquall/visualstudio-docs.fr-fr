@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942576"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 Affiche une boîte de message répertoriant tous les commutateurs `devenv`, avec une brève description de chacun d’eux.

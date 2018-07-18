@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cddeb5800854d0461fbf96c895f64216f01843f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9fc4281042b34113a17dfde2c94990642f2f98b7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690911"
 ---
-# <a name="copy-selection"></a>Copier une sélection
+# <a name="copy-selection"></a>Copier la sélection
 Pour copier l’intégralité de la pile des appels à partir de l’onglet Rapport, cliquez sur **Copier**. Vous pouvez ensuite coller la pile des appels dans n’importe quel programme prenant en charge cette action.  
   
 ## <a name="see-also"></a>Voir aussi  

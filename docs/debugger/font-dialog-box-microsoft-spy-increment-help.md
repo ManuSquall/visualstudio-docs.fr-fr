@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471162"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Boîte de dialogue Police (aide de Microsoft Spy++)
 Utilisez cette boîte de dialogue pour configurer la police de caractères dans un [vues Spy ++](../debugger/spy-increment-views.md) fenêtre. Pour afficher cette boîte de dialogue, développez le **vue** menu et choisissez **police**.  

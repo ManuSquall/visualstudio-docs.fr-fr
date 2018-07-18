@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099335"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Modification des paramètres de la vue à l’aide de l’API héritée
 Paramètres pour les fonctionnalités de l’éditeur de base, telles que le retour automatique à la marge de sélection et l’espace virtuel, peuvent être modifiés par l’utilisateur à l’aide de la **Options** boîte de dialogue. Toutefois, il est également possible de modifier ces paramètres par programmation.  

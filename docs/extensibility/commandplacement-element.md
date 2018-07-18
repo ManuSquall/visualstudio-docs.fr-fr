@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267973"
 ---
 # <a name="commandplacement-element"></a>Élément de CommandPlacement
 L’élément CommandPlacement permet de boutons, des groupes et des menus être inclus dans plus d’un groupe ou un menu. À l’aide de l’élément CommandPlacement, vous n’avez pas complètement redéfinir ces éléments afin de modifier l’apparence d’une interface utilisateur.  

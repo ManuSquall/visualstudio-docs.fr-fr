@@ -31,6 +31,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578755"
 ---
 # <a name="mt-task"></a>MT, tâche
 Inclut l’outil Manifeste (mt.exe) de Microsoft dans un wrapper. Pour plus d’informations, consultez « Mt.exe » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  

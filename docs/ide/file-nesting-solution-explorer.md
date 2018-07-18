@@ -1,0 +1,161 @@
+---
+title: Règles d’imbrication de fichiers pour l’Explorateur de solutions
+ms.date: 05/25/2018
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+helpviewer_keywords:
+- file nesting
+- Solution Explorer, file nesting
+author: angelosp
+ms.author: angelpe
+manager: douge
+ms.openlocfilehash: 3dc06a19abdde00d4572e5c58895dc9b406ae6ba
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34582594"
+---
+# <a name="customize-file-nesting-in-solution-explorer"></a>Personnaliser l’imbrication de fichiers dans l’Explorateur de solutions
+
+L’imbrication de fichiers associés dans l’**Explorateur de solutions** n’est pas une nouveauté. Toutefois, jusqu’à présent, vous n’aviez aucun contrôle sur les règles d’imbrication. Vous pouvez choisir l’un des paramètres prédéfinis, **Désactivé**, **Par défaut** ou **Web**, mais vous pouvez également personnaliser l’imbrication selon vos préférences. Vous pouvez même créer des paramètres spécifiques à la solution et au projet, mais nous y reviendrons plus tard. Tout d’abord, voyons ce qui vous est fourni.
+
+> [!NOTE]
+> La fonctionnalité est prise en charge uniquement pour les projets ASP.NET Core.
+
+## <a name="file-nesting-options"></a>Options d’imbrication de fichiers
+
+![Bouton permettant d’activer/de désactiver l’imbrication de fichiers](media/filenesting_onoff.png)
+
+Les options disponibles pour l’imbrication de fichiers non personnalisée sont les suivantes :
+
+* **Désactivé** : cette option vous permet d’obtenir une liste de fichiers sans imbrication.
+
+* **Par défaut** : cette option vous permet d’obtenir le comportement d’imbrication de fichiers par défaut dans l’**Explorateur de solutions**. S’il n’existe aucun paramètre pour un type de projet donné, aucun fichier du projet n’est imbriqué. S’il existe des paramètres, par exemple, pour un projet web, l’imbrication est appliquée.
+
+* **Web** : cette option applique le comportement d’imbrication de fichiers **web** à tous les projets de la solution actuelle. Elle comporte de nombreuses règles. Nous vous encourageons à y jeter un coup d’œil pour nous dire ce que vous en pensez. La capture d’écran suivante présente quelques exemples du comportement d’imbrication de fichiers lié cette option :
+
+   ![Imbrication de fichiers dans l’Explorateur de solutions](media/filenesting.png)
+
+## <a name="customize-file-nesting"></a>Personnaliser l’imbrication de fichiers
+
+Si vous n’aimez pas ce qui vous est proposé, vous pouvez créer vos propres paramètres d’imbrication de fichiers personnalisés pour indiquer à l’**Explorateur de solutions** comment imbriquer les fichiers. Vous pouvez ajouter autant de paramètres d’imbrication de fichiers personnalisés que vous le souhaitez, et vous pouvez passer de l’un à l’autre comme bon vous semble. Pour créer un paramètre personnalisé, commencez avec un fichier vide ou utilisez les paramètres **web** comme point de départ :
+
+![Ajouter des règles d’imbrication de fichiers personnalisées](media/filenesting_addcustom.png)
+
+Nous vous recommandons d’utiliser les paramètres **web** comme point de départ, car il est plus facile de travailler avec quelque chose qui fonctionne déjà. Si vous utilisez les paramètres **web** comme point de départ, le fichier *.filenesting.json* ressemble au fichier suivant :
+
+![Utiliser les règles d’imbrication de fichiers existantes en tant que base pour des paramètres personnalisés](media/filenesting_editcustom.png)
+
+Concentrons-nous sur le nœud **dependentFileProviders** et ses nœuds enfants. Chaque nœud enfant est un type de règle que Visual Studio peut utiliser pour imbriquer des fichiers. Par exemple, **a le même nom de fichier mais avec une extension différente** est un type de règle. Les règles disponibles sont les suivantes :
+
+* **extensionToExtension** : utilisez ce type de règle pour imbriquer *file.js* sous *file.ts*
+
+* **fileSuffixToExtension** : utilisez ce type de règle pour imbriquer *file-vsdoc.js* sous *file.js*
+
+* **addedExtension** : utilisez ce type de règle pour imbriquer *file.html.css* sous *file.html*
+
+* **pathSegment** : utilisez ce type de règle pour imbriquer *jquery.min.js* sous *jquery.js*
+
+* **allExtensions** : utilisez ce type de règle pour imbriquer *file.** sous *file.js*
+
+* **fileToFile** : utilisez ce type de règle pour imbriquer *bower.json* sous *.bowerrc*
+
+### <a name="the-extensiontoextension-provider"></a>Fournisseur extensionToExtension
+
+Ce fournisseur vous permet de définir des règles d’imbrication de fichiers à l’aide d’extensions de fichiers spécifiques. Prenons l'exemple suivant :
+
+![Règles de l’exemple extentionToExtension](media/filenesting_extensiontoextension.png) ![Effet de l’exemple extentionToExtension](media/filenesting_extensiontoextension_effect.png)
+
+* *cart.js* est imbriqué sous *cart.ts* en raison de la première règle **extensionToExtension**
+
+* *cart.js* n’est pas imbriqué sous *cart.tsx*, car **.ts** vient avant **.tsx** dans les règles, et il ne peut exister qu’un seul parent
+
+* *light.css* est imbriqué sous *light.sass* en raison de la deuxième règle **extensionToExtension**
+
+* *home.html* est imbriqué sous *home.md* en raison de la troisième règle **extensionToExtension**
+
+### <a name="the-filesuffixtoextension-provider"></a>Fournisseur fileSuffixToExtension
+
+Ce fournisseur fonctionne exactement comme le fournisseur **extensionToExtension**, la seule différence étant que la règle examine le suffixe du fichier et non simplement l’extension. Prenons l'exemple suivant :
+
+![Règles de l’exemple fileSuffixToExtension](media/filenesting_filesuffixtoextension.png) ![Effet de l’exemple fileSuffixToExtension](media/filenesting_filesuffixtoextension_effect.png)
+
+* *portal-vsdoc.js* est imbriqué sous *portal.js* en raison de la règle **fileSuffixToExtension**
+
+* tous les autres aspects de la règle fonctionnent de la même manière que **extensionToExtension**
+
+### <a name="the-addedextension-provider"></a>Fournisseur addedExtension
+
+Ce fournisseur imbrique les fichiers avec une extension supplémentaire sous le fichier sans extension supplémentaire. L’extension supplémentaire doit apparaître uniquement à la fin du nom de fichier complet. Prenons l'exemple suivant :
+
+![Règles de l’exemple addedExtension](media/filenesting_addedextension.png) ![Effet de l’exemple addedExtension](media/filenesting_addedextension_effect.png)
+
+* *file.html.css* est imbriqué sous *file.html* en raison de la règle **addedExtension**
+
+### <a name="the-pathsegment-provider"></a>Fournisseur pathSegment
+
+Ce fournisseur imbrique les fichiers avec une extension supplémentaire sous un fichier sans extension supplémentaire. L’extension supplémentaire doit apparaître uniquement au milieu du nom de fichier complet. Prenons l'exemple suivant :
+
+![Règles de l’exemple pathSegment](media/filenesting_pathsegment.png) ![Effet de l’exemple pathSegment](media/filenesting_pathsegment_effect.png)
+
+* *jquery.min.js* est imbriqué sous *jquery.js* en raison de la règle **pathSegment**
+
+### <a name="the-allextensions-provider"></a>Fournisseur allExtensions
+
+Ce fournisseur vous permet de définir des règles d’imbrication de fichiers pour les fichiers ayant une extension quelconque mais le même nom de fichier de base. Prenons l'exemple suivant :
+
+![Règles de l’exemple allExtensions](media/filenesting_allextensions.png) ![Effet de l’exemple allExtensions](media/filenesting_allextensions_effect.png)
+
+* *template.cs* et *template.doc* sont imbriqués sous *template.tt* en raison de la règle **allExtensions**.
+
+### <a name="the-filetofile-provider"></a>Fournisseur fileToFile
+
+Ce fournisseur vous permet de définir des règles d’imbrication de fichiers basées sur des noms de fichiers entiers. Prenons l'exemple suivant :
+
+![Règles de l’exemple fileToFile](media/filenesting_filetofile.png) ![Effet de l’exemple fileToFile](media/filenesting_filetofile_effect.png)
+
+* *bower.json* est imbriqué sous *.bowerrc* en raison de la règle **fileToFile**
+
+### <a name="rule-order"></a>Ordre des règles
+
+L’ordre a son importance dans toutes les parties de votre fichier de paramètres personnalisés. Vous pouvez changer l’ordre dans lequel les règles sont exécutées en les déplaçant vers le haut ou vers le bas dans le nœud **dependentFileProvider**. Par exemple, si vous avez une règle qui fait de **file.js** le parent de **file.ts**, et une autre règle qui fait de **file.coffee** le parent de **file.ts**, l’ordre dans lequel ils apparaissent dans le fichier dicte le comportement d’imbrication quand les trois fichiers sont présents. Dans la mesure où **file.ts** ne peut avoir qu’un seul parent, la première règle qui s’exécute l’emporte.
+
+L’ordre a également son importance pour les sections de règle elles-mêmes, pas seulement pour les fichiers présents dans une section. Dès qu’une paire de fichiers est associée à une règle d’imbrication de fichiers, les autres règles situées plus bas dans le fichier sont ignorées, et la paire de fichiers suivante est traitée.
+
+### <a name="file-nesting-button"></a>Bouton d’imbrication de fichiers
+
+Vous pouvez gérer tous les paramètres, notamment vos paramètres personnalisés, via le même bouton dans l’**Explorateur de solutions** :
+
+![Activer des règles d’imbrication de fichiers personnalisées](media/filenesting_activatecustom.png)
+
+## <a name="create-solution-specific-and-project-specific-settings"></a>Créer des paramètres spécifiques à la solution et au projet
+
+Vous pouvez créer des paramètres spécifiques à la solution et au projet via le menu contextuel de chaque solution et projet :
+
+![Règles d’imbrication spécifiques à la solution et au projet](media/filenesting_solutionprojectspecific.png)
+
+Les paramètres spécifiques à la solution et au projet sont associés aux paramètres actifs de Visual Studio. Par exemple, même si vous avez un fichier de paramètres vide spécifique au projet, l’**Explorateur de solutions** imbrique quand même les fichiers. Le comportement d’imbrication provient des paramètres spécifiques à la solution ou des paramètres de Visual Studio. La priorité de fusion des paramètres d’imbrication de fichiers est la suivante : Visual Studio > Solution > Projet.
+
+Vous pouvez indiquer à Visual Studio d’ignorer les paramètres spécifiques à la solution et au projet, même si les fichiers existent sur le disque, en activant l’option **Ignorer les paramètres de solution et de projet** sous **Outils** > **Options** > **ASP.NET Core** > **Imbrication de fichiers**.
+
+Vous pouvez faire le contraire et indiquer à Visual Studio d’utiliser *uniquement* les paramètres spécifiques à la solution ou au projet, en affectant au nœud **racine** la valeur **true**. Visual Studio cesse de fusionner les fichiers à ce niveau et de les associer à des fichiers situés plus haut dans la hiérarchie.
+
+Vous pouvez archiver les paramètres spécifiques à la solution et au projet dans le contrôle de code source. Ainsi, toute l’équipe qui travaille sur la base de code peut les partager.
+
+## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>Désactiver les règles d’imbrication de fichiers globales pour une solution ou un projet particulier
+
+Vous pouvez désactiver les règles d’imbrication de fichiers globales pour des solutions ou des projets spécifiques. Pour ce faire, utilisez l’action **remove** sur un fournisseur au lieu de l’action **add**. Par exemple, si vous ajoutez à un projet le code suivant pour des paramètres, toutes les règles **pathSegment** qui peuvent exister globalement pour ce projet spécifique sont désactivées :
+
+```json
+"dependentFileProviders": {
+  "remove": {
+    "pathSegment": {}
+  }
+}
+```
+
+## <a name="see-also"></a>Voir aussi
+
+- [Personnaliser l’IDE](../ide/personalizing-the-visual-studio-ide.md)

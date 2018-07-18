@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476950"
 ---
 # <a name="visualizer-api-reference"></a>Référence des API du visualiseur
 Les API de visualiseur sont fournies aux utilisateurs qui souhaitent écrire un visualiseur pour le débogueur Visual Studio. Une visualiseur est une petite application qui étend les fonctionnalités de l'interface utilisateur du débogueur Visual Studio. Un visualiseur peut afficher (et éventuellement modifier) un objet de données d’un type spécifique pour lequel le visualiseur est conçu.  

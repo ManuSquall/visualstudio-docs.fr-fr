@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704796"
 ---
 # <a name="set-current-stack-frame-command"></a>Définir le frame de pile en cours, commande
 Vous permet de définir un frame de pile spécifique.

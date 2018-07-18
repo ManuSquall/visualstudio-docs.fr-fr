@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: dac63faa3c34983a8ac0be9ccd7cbd9fae9a1cbe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751687"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Utiliser le framework de tests unitaires Microsoft pour C++ dans Visual Studio
 
@@ -55,7 +56,7 @@ Utilisez les méthodes statiques de la classe [Assert](microsoft-visualstudio-te
 2.  Dans l’Explorateur de tests, choisissez **Exécuter tout** ou sélectionnez les tests spécifiques à exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
 3. Dans la **fenêtre Sortie**, choisissez **Tests** dans la liste déroulante pour afficher les messages écrits par la classe `Logger` :
 
-  ![Fenêtre Sortie C++ affichant des messages de test](media/cpp-test-output-window.png "Fenêtre Sortie")
+  ![Fenêtre Sortie C++ affichant des messages de test](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Définir des caractéristiques pour permettre le regroupement
 Vous pouvez définir des caractéristiques sur des méthodes de test, qui vous permettent de catégoriser et de regrouper les tests dans **l’Explorateur de tests**. Pour définir une caractéristique, utilisez la macro `TEST_METHOD_ATTRIBUTE` . Par exemple, pour définir une caractéristique nommée `TEST_MY_TRAIT`:

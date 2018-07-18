@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133124"
 ---
 # <a name="test-area-4-check-in"></a>Zone de test 4 : Archivage de
 Cette zone de plug-in de test de contrôle de code source couvre l’envoi des éléments mis à jour à la banque des versions via le **archiver** commande.  

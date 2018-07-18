@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31111236"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
 Cette méthode annule l’évaluation de l’expression asynchrone que démarrée par un appel à la [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) (méthode).  

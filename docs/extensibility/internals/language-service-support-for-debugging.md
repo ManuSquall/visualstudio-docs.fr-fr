@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128651"
 ---
 # <a name="language-service-support-for-debugging"></a>Prise en charge du Service de langage pour le débogage
 Un service de langage peut fournir des fonctionnalités qui prennent en charge un débogueur via le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> interface. Ces fonctionnalités incluent la validation des points d’arrêt et en fournissant une liste d’expressions à la **automatique** fenêtre.  

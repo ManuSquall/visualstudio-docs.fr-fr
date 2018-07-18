@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d12279badb0d6898dca3dc06d23eb67a054cc1eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751999"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Comment : sélectionner un référentiel de résultats des tests de charge
 
@@ -37,7 +38,7 @@ Pour plus d’informations sur les agents, consultez [Contrôleurs de test et ag
 
 2.  Dans la barre d’outils **Test de charge**, sélectionnez **Gérer les contrôleurs de test**. La boîte de dialogue Gérer le contrôleur de test s'affiche. Si vous utilisez un agent à distance, vous devez sélectionner un contrôleur.
 
-     ![Propriétés de connexion du magasin des résultats du test de charge](../test/media/loadtestconnectionproperties.png "LoadTestConnectionProperties") Propriétés de connexion du magasin des résultats du test de charge
+     ![Propriétés de connexion du magasin des résultats du test de charge](../test/media/loadtestconnectionproperties.png) Propriétés de connexion du magasin des résultats du test de charge
 
 3.  Dans le **Magasin des résultats des tests de charge**, cliquez sur (…) pour afficher la boîte de dialogue **Propriétés de connexion**.
 

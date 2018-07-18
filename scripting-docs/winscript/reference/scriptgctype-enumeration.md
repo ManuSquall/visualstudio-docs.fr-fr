@@ -1,14 +1,14 @@
 ---
-title: "Scriptgctype, énumération | Documents Microsoft"
-ms.custom: 
+title: Scriptgctype, énumération | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: f289cc7d-2a69-4720-bee0-ea27d054f308
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734169"
 ---
 # <a name="scriptgctype-enumeration"></a>SCRIPTGCTYPE, énumération
 Le type de garbage collection à effectuer. Utilisé dans le [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) (méthode).  

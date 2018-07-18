@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476440"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Débogage managé : paramètres de propriété recommandés
 Certaines propriétés doivent être définies de la même manière pour tous les scénarios de débogage managé.  

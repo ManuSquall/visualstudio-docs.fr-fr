@@ -1,5 +1,5 @@
 ---
-title: Utilisation du graphique d’activités des utilisateurs virtuels pour les tests de charge dans Visual Studio | Microsoft Docs
+title: Utilisation du graphique d’activités des utilisateurs virtuels pour les tests de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,14 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7cf4d2d31bb037aba8af95caf5ffab1d7be2c132
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fedc9aebb4d57e258370179bbf820abdc8978940
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31976430"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procédure pas à pas : utilisation du graphique d'activités des utilisateurs virtuels pour isoler les problèmes de performances
 

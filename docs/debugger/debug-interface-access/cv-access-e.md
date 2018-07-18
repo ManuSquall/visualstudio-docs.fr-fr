@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457925"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 Spécifie l’étendue de visibilité (niveau d’accès) des variables et fonctions membres.  

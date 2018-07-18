@@ -1,11 +1,11 @@
 ---
 title: IDebugStackFrameSnifferEx::EnumStackFramesEx | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugStackFrameSnifferEx.EnumStackFramesEx
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugStackFrameSnifferEx::EnumStackFramesEx
 ms.assetid: b656b581-aff0-4984-8d8a-a1c7a8e6558a
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727579"
 ---
 # <a name="idebugstackframesnifferexenumstackframesex"></a>IDebugStackFrameSnifferEx::EnumStackFramesEx
 Retourne un énumérateur de frames de pile du thread actuel.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127501"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>Lors de l’obtention des informations de Service à partir du magasin de paramètres
 Vous pouvez utiliser le stockage de paramètres pour rechercher tous les services disponibles ou pour déterminer si un service particulier est installé. Vous devez connaître le type de la classe de service.  

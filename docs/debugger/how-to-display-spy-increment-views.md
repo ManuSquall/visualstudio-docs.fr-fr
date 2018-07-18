@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471685"
 ---
 # <a name="how-to-display-spy-views"></a>Comment : afficher des vues Spy++
 Lorsque Spy ++ démarre, il s’ouvre dans [affichage Windows](../debugger/windows-view.md), une arborescence de toutes les fenêtres et les contrôles disponibles sur votre ordinateur. Cette fenêtre racine a pour titre « Windows 1 ». Il existe également trois autres vues Spy ++ : [vue Messages](../debugger/messages-view.md), [vue processus](../debugger/processes-view.md), et [vue Threads](../debugger/threads-view.md). Vous pouvez afficher la vue souhaitée à partir de la **Spy** menu. Pour plus d’informations, consultez [vues Spy ++](../debugger/spy-increment-views.md).  

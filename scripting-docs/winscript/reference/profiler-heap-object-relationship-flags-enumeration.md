@@ -1,14 +1,14 @@
 ---
-title: "Profiler_heap_object_relationship_flags, énumération | Documents Microsoft"
-ms.custom: 
+title: Profiler_heap_object_relationship_flags, énumération | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 1a41b642-c9a9-4d83-b943-d59b232eebf6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734009"
 ---
 # <a name="profilerheapobjectrelationshipflags-enumeration"></a>PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS, énumération
 Indicateurs qui représentent des si un objet de tas pointé dans une relation d’objet est une méthode d’accesseur Get ou Set. Utilisé dans le [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) méthode lorsque la valeur PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS est spécifiée dans le `enumFlags` paramètre.  

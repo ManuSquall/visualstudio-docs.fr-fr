@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481786"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Modifier et continuer, boîte de dialogue (C++)
 Modifier & Continuer n'a pas pu appliquer les modifications que vous avez apportées au code natif. Il peut d'agit d'une condition temporaire. Parfois, Modifier & Continuer ne peut pas appliquer immédiatement les modifications du code natif, mais peut le faire plus tard au cours de la session de débogage (par exemple, après avoir terminé l'appel à la procédure en cours d'exécution). Pour plus d’informations, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).  

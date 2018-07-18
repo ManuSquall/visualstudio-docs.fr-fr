@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138923"
 ---
 # <a name="the-experimental-instance"></a>L’Instance expérimentale
 Pour protéger votre environnement de développement Visual Studio à partir d’applications non testées susceptible du modifier, l’extensibilité Visual Studio fournit un espace d’expérimentation que vous pouvez utiliser pour faire des essais. Vous développez des applications à l’aide de Visual Studio comme d’habitude, mais les exécuter à l’aide de cette instance expérimentale.  
@@ -28,7 +29,7 @@ Pour protéger votre environnement de développement Visual Studio à partir d�
   
  Si vous souhaitez démarrer l’instance expérimentale de Visual Studio en dehors d’une solution spécifique, exécutez la commande suivante dans la fenêtre de commande :  
   
- «*\<Chemin d’installation de visual studio >*\Common7\IDE\devenv.exe « RootSuffix Exp  
+ «*\<Chemin d’installation de visual studio >* \Common7\IDE\devenv.exe « RootSuffix Exp  
   
 > [!NOTE]
 >  L’instance expérimentale est écrit dans le Registre sous le `<version number>Exp` et `<version number>Exp_Config` nœuds. Par exemple la zone de Registre expérimentale de Visual Studio 2015 est  

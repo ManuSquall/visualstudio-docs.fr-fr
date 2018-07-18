@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125435"
 ---
 # <a name="visual-studio-debugging-samples"></a>Exemples de débogage Visual Studio
 Deux exemples montrent comment étendre le débogueur Visual Studio à l’aide de [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  

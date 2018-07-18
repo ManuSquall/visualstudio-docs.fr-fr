@@ -5,15 +5,16 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 54f178a35d95819b13b1d477c3415fd02b8298f5
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34693690"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Présentation de Visual Studio pour Mac
 
-Visual Studio pour Mac est un IDE moderne et élaboré avec de nombreuses fonctionnalités permettant de créer des applications mobiles, de poste de travail et web. Il prend en charge les développements suivants :
+Visual Studio pour Mac est un IDE moderne et élaboré avec de nombreuses fonctionnalités permettant de créer des applications mobiles, de poste de travail et web. Il prend en charge les types de développement suivants :
 
 * Applications mobiles avec .NET : Android, iOS, tvOS, watchOS
 * Applications de poste de travail pour Mac
@@ -21,7 +22,7 @@ Visual Studio pour Mac est un IDE moderne et élaboré avec de nombreuses foncti
 * Applications web ASP.NET Core
 * Jeux Unity multiplateformes
 
-Il inclut des fonctionnalités comme un éditeur enrichi, le débogage, l’intégration de plateforme native avec iOS, Mac et Android, et un contrôle du code source intégré.
+Il inclut des fonctionnalités comme un éditeur avancé, le débogage, l’intégration de plateforme native avec iOS, Mac et Android, et un contrôle du code source intégré.
 
 Cet article traite de différents aspects de Visual Studio pour Mac et présente certaines des fonctionnalités qui en font un outil puissant pour créer des applications multiplateformes.
 

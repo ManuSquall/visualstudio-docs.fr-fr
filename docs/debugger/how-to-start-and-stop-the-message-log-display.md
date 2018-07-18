@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481072"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Comment : démarrer et arrêter l'affichage du journal des messages
 Lorsqu’un [vue Messages](../debugger/messages-view.md) fenêtre est active, un **Start Logging** ou **arrêter l’enregistrement** choix s’affiche dans Spy ++ **Messages** menu et le correspondant **Start Logging** ou **Stop Logging** bouton de barre d’outils devient actif.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128856"
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>Le filtrage de la boîte de dialogue AddItem pour les projets imbriqués
 Lorsque vous affichez un **AddItem** boîte de dialogue pour un projet imbriqué, le projet parent peut contrôler les éléments affichés dans la boîte de dialogue.  

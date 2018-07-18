@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135908"
 ---
 # <a name="list-of-available-services"></a>Liste des Services disponibles
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et le Kit de développement logiciel Visual Studio prend en charge les services suivants. Certains packages offrent leurs propres services qui ne sont pas répertoriées ici, par exemple, les services de langage n’ont pas un GUID de service unique. Vous devez utiliser le nom de la langue pour rechercher le GUID du service de langage dans le Registre.  

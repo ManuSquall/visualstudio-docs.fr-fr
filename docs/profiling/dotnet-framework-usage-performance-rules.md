@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ddfe3d7bdc4cb274a7b70dca48e45794d5f1cac
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1903b61fce39bdd68b471472530857d720bac906
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766020"
 ---
-# <a name="net-framework-usage-performance-rules"></a>Règles de performance de l'utilisation du .NET Framework
+# <a name="net-framework-usage-performance-rules"></a>Règles de performance de l’utilisation du .NET Framework
 Les règles de performances de la catégorie Utilisation du .NET Framework permettent d’identifier les méthodes qui peuvent être optimisées, ainsi que des modèles d’utilisation plus généraux, tels que le garbage collection et les conflits de verrou, qui peuvent être examinés pour comprendre les problèmes de performances.  
   
 |||  
@@ -33,6 +34,6 @@ Les règles de performances de la catégorie Utilisation du .NET Framework perme
 |[DA0021 : Taux élevé de garbage collection Gen 1](../profiling/da0021-high-rate-of-gen-1-garbage-collections.md)|Un nombre relativement élevé d’objets mémoire .NET est actuellement récupéré dans le cadre d’un garbage collection de génération 1. Si un trop grand nombre d’objets à courte durée de vie survivent au garbage collection de génération 0, le coût de la gestion de mémoire peut facilement devenir excessif.|  
 |[DA0022 : taux élevé de garbage collection Gen 2](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md)|Un nombre élevé d’objets mémoire .NET est actuellement récupéré dans le cadre d’un garbage collection de génération 2. Si un trop grand nombre d’objets à courte durée de vie survivent au garbage collection de génération 1, le coût de la gestion de mémoire peut facilement devenir excessif. Cette règle se déclenche lorsque le taux de conflits de verrou dépasse le seuil défini par la règle DA0005.|  
 |[DA0023 : temps processeur GC élevé](../profiling/da0023-high-gc-cpu-time.md)|Les données relatives aux performances système qui sont collectées pendant le profilage indiquent que le temps consacré au garbage collection est très important, par rapport au temps total de traitement de l’application.|  
-|[DA0024 : Temps UC GC excessif](../profiling/da0024-excessive-gc-cpu-time.md)|Les données relatives aux performances système qui sont collectées pendant le profilage indiquent que le temps consacré au garbage collection est extrêmement important, par rapport au temps total de traitement de l’application. Cette règle se déclenche lorsque le temps consacré au garbage collection dépasse le seuil défini par la règle DA0023.|  
-|[DA0038 : taux élevé de conflits de verrouillage](../profiling/da0038-high-rate-of-lock-contentions.md)|Les données relatives aux performances système qui sont collectées avec les données de profilage indiquent qu’un taux très élevé de conflits de verrouillage a été relevé lors de l’exécution de l’application. Effectuez un nouveau profilage à l’aide de la méthode de profilage d’accès concurrentiel pour rechercher la cause des conflits.|  
-|[DA0039 : Taux très élevé de conflits de verrouillage](../profiling/da0039-very-high-rate-of-lock-contentions.md)|Les données relatives aux performances système qui sont collectées avec les données de profilage indiquent qu’un taux excessif de conflits de verrouillage a été relevé lors de l’exécution de l’application. Effectuez un nouveau profilage à l’aide de la méthode de profilage d’accès concurrentiel pour rechercher la cause des conflits. Cette règle se déclenche lorsque le taux de conflits de verrou dépasse le seuil défini par la règle DA0038.|
+|[DA0024 : temps processeur GC excessif](../profiling/da0024-excessive-gc-cpu-time.md)|Les données relatives aux performances système qui sont collectées pendant le profilage indiquent que le temps consacré au garbage collection est extrêmement important, par rapport au temps total de traitement de l’application. Cette règle se déclenche lorsque le temps consacré au garbage collection dépasse le seuil défini par la règle DA0023.|  
+|[DA0038 : taux élevé de conflits de verrou](../profiling/da0038-high-rate-of-lock-contentions.md)|Les données relatives aux performances système qui sont collectées avec les données de profilage indiquent qu’un taux très élevé de conflits de verrouillage a été relevé lors de l’exécution de l’application. Effectuez un nouveau profilage à l’aide de la méthode de profilage d’accès concurrentiel pour rechercher la cause des conflits.|  
+|[DA0039 : taux très élevé de conflits de verrou](../profiling/da0039-very-high-rate-of-lock-contentions.md)|Les données relatives aux performances système qui sont collectées avec les données de profilage indiquent qu’un taux excessif de conflits de verrouillage a été relevé lors de l’exécution de l’application. Effectuez un nouveau profilage à l’aide de la méthode de profilage d’accès concurrentiel pour rechercher la cause des conflits. Cette règle se déclenche lorsque le taux de conflits de verrou dépasse le seuil défini par la règle DA0038.|

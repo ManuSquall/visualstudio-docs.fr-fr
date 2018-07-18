@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132332"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>L’instanciation de l’éditeur principal à l’aide de l’API héritée
 L’éditeur est responsable de la modification des fonctions telles que l’insertion, suppression, copie et collage de texte. Il combine ces fonctions avec celles fournies par les services de langage, telles que la coloration du texte, de mise en retrait et de saisie semi-automatique des instructions IntelliSense.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133797"
 ---
 # <a name="project-subtypes-design"></a>Conception des sous-types de projet
 Les sous-types de projet permettent VSPackages d’étendre des projets basés sur Microsoft Build Engine (MSBuild). L’utilisation d’agrégation vous permet de réutiliser la majeure partie du système de projet de base managées implémentée dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] toujours personnaliser le comportement pour un scénario particulier.  

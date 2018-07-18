@@ -1,6 +1,7 @@
 ---
-title: Analyser les données d’utilisation de l’UC (code managé) | Microsoft Docs
-ms.custom: ''
+title: Analyser les données d’utilisation de l’UC (code managé)
+description: Mesurer les performances des applications en C# et Visual Basic à l’aide de l’outil de diagnostic de l’utilisation de l’UC
+ms.custom: mvc
 ms.date: 12/05/2017
 ms.technology: vs-ide-debug
 ms.topic: quickstart
@@ -12,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cac26376df6a5e7dc26b55e07fbebe240b1511de
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750283"
 ---
-# <a name="analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Analyser les données d’utilisation de l’UC dans Visual Studio (code managé)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (code managé)
 
 Visual Studio fournit de nombreuses fonctionnalités puissantes qui vous permettent d’analyser les problèmes de performances dans votre application. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base. Ici, nous allons examiner l’outil pour identifier les goulots d’étranglement de performances liés à une utilisation élevée de l’UC. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
 
@@ -31,7 +33,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
 1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 
-2. Sous **Visual C#** ou **Visual Basic**, choisissez **Bureau classique Windows** puis, dans le volet central, choisissez **Application console (.NET Framework)**.
+2. Sous **Visual C#** ou **Visual Basic**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console (.NET Framework)**.
 
 3. Tapez un nom tel que **MyProfilerApp** et cliquez sur **OK**.
 
@@ -39,14 +41,14 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
 2. Ouvrez le fichier Program.cs et remplacez tout le code par le code suivant :
 
-    ```cs
+    ```csharp
     using System;
     using System.Threading;
     public class ServerClass
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
         const int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
         long m_totalIterations = 0;
         readonly object m_totalItersLock = new object();
         // The method that will be called when the thread is started.
@@ -54,10 +56,10 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
         {
             Console.WriteLine(
                 "ServerClass.InstanceMethod is running on another thread.");
-    
+
             var x = GetNumber();
         }
-    
+
         private int GetNumber()
         {
             var rand = new Random();
@@ -67,8 +69,8 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -76,7 +78,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
             return result;
         }
     }
-    
+
     public class Simple
     {
         public static void Main()
@@ -89,14 +91,14 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
         public static void CreateThreads()
         {
             ServerClass serverObject = new ServerClass();
-    
+
             Thread InstanceCaller = new Thread(new ThreadStart(serverObject.DoWork));
             // Start the thread.
             InstanceCaller.Start();
-    
+
             Console.WriteLine("The Main() thread calls this after "
                 + "starting the new InstanceCaller thread.");
-    
+
         }
     }
     ```
@@ -104,21 +106,21 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
     ```vb
     Imports System
     Imports System.Threading
-    
+
     Namespace MyProfilerApp
         Public Class ServerClass
             Const MIN_ITERATIONS As Integer = Integer.MaxValue / 1000
             Const MAX_ITERATIONS As Integer = MIN_ITERATIONS + 10000
-    
+
             Private m_totalIterations As Long = 0
             ReadOnly m_totalItersLock As New Object()
             ' The method that will be called when the thread is started.
             Public Sub DoWork()
                 Console.WriteLine("ServerClass.InstanceMethod is running on another thread.")
-    
+
                 Dim x = GetNumber()
             End Sub
-    
+
             Private Function GetNumber() As Integer
                 Dim rand = New Random()
                 Dim iters = rand.[Next](MIN_ITERATIONS, MAX_ITERATIONS)
@@ -126,15 +128,15 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
                 SyncLock m_totalItersLock
                     m_totalIterations += iters
                 End SyncLock
-                ' we're just spinning here  
-                ' and using Random to frustrate compiler optimizations  
+                ' we're just spinning here
+                ' and using Random to frustrate compiler optimizations
                 For i As Integer = 0 To iters - 1
                     result = rand.[Next]()
                 Next
                 Return result
             End Function
         End Class
-    
+
         Public Class Simple
             Public Shared Sub Main()
                 For i As Integer = 0 To 199
@@ -143,13 +145,13 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
             End Sub
             Public Shared Sub CreateThreads()
                 Dim serverObject As New ServerClass()
-    
+
                 Dim InstanceCaller As New Thread(New ThreadStart(AddressOf serverObject.DoWork))
                 ' Start the thread.
                 InstanceCaller.Start()
-    
+
                 Console.WriteLine("The Main() thread calls this after " + "starting the new InstanceCaller thread.")
-    
+
             End Sub
         End Class
     End Namespace
@@ -158,8 +160,8 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
     > [!NOTE]
     > En Visual Basic, vérifiez que l’objet de démarrage est défini sur `Sub Main` (**Propriétés > Applications > Objet de démarrage**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Étape 1 : Collecter les données de profilage 
-  
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Étape 1 : Collecter les données de profilage
+
 1.  Tout d’abord, définissez un point d’arrêt dans votre application sur cette ligne de code dans la fonction `Main` :
 
     `for (int i = 0; i < 200; i++)`
@@ -176,7 +178,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
     > [!TIP]
     > En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
-  
+
 3.  La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**.
 
 4.  Cliquez sur **Déboguer / Démarrer le débogage** (ou **Démarrer** dans la barre d’outils, ou **F5**).
@@ -196,7 +198,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
      Vous disposez maintenant de données de performances pour votre application, et plus spécifiquement pour la région de code qui s’exécute entre les deux points d’arrêt.
 
      Le profileur commence la préparation des données de thread. Attendez qu’elle se termine.
-  
+
      L’outil Utilisation de l’UC affiche le rapport sous l’onglet **Utilisation de l’UC**.
 
      À ce stade, vous pouvez commencer à analyser les données.
@@ -214,7 +216,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
 2. Dans la liste des fonctions, double-cliquez sur la fonction `ServerClass::GetNumber`.
 
-    Quand vous double-cliquez sur la fonction, la vue **Appelant/appelé** s’ouvre dans le volet gauche. 
+    Quand vous double-cliquez sur la fonction, la vue **Appelant/appelé** s’ouvre dans le volet gauche.
 
     ![Outils de diagnostics - Vue Appelant/appelé](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
 
@@ -233,7 +235,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 - [Analyser l’utilisation de l’UC](../profiling/cpu-usage.md) pour obtenir des informations détaillées sur l’outil d’utilisation de l’UC.
 - Analyser l’utilisation de l’UC sans débogueur ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez la section [Recueillir des données de profilage sans débogage](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) dans [Exécuter des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
 
- [Profilage dans Visual Studio](../profiling/index.md)  
- [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)
+- [Profilage dans Visual Studio](../profiling/index.md)
+- [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)

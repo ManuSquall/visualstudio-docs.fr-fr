@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142628"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>Procédure pas à pas : Création d’un glyphe de marge
 Vous pouvez personnaliser l’apparence des marges d’éditeur à l’aide des extensions de l’éditeur personnalisé. Cette procédure pas à pas place un glyphe personnalisé sur la marge des indicateurs à chaque fois que le mot « todo » s’affiche dans un commentaire de code.  

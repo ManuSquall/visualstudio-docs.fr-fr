@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 6fabaa7b1df2522abd9e76a8e4772a2f8111cfe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748083"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
@@ -35,29 +36,29 @@ Quand vous commencez à taper un mot clé, un type, une fonction, un nom de vari
 
 Pour obtenir la liste des icônes et leurs significations, consultez [Affichage de classes et Explorateur d’objets, icônes](../ide/class-view-and-object-browser-icons.md).
 
-![Fenêtre Compléter le mot Visual C++](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
+![Fenêtre Compléter le mot de Visual C&#43;&#43;](../ide/media/vs2015_cpp_complete_word.png)
 
 Au premier appel de la liste des membres, cette liste affiche uniquement les membres qui sont accessibles pour le contexte actuel. Si vous appuyez ensuite sur **Ctrl**+**J**, elle affiche tous les membres indépendamment de leur accessibilité. Si vous l'appelez une troisième fois, la liste qui s'affiche présente encore plus d'éléments de code. Vous pouvez désactiver la liste des membres dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Général**  >  **Répertorier automatiquement les membres**.
 
-![Liste de membres Visual C++](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
+![Liste de membres Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 
 ### <a name="parameter-help"></a>Aide sur les paramètres
 
 Quand vous tapez une accolade ouvrante dans un appel de fonction, ou un crochet pointu dans une déclaration de variable de modèle de classe, l'éditeur ouvre une petite fenêtre qui affiche les types de paramètre pour chaque surcharge de la fonction ou du constructeur. Le paramètre « actuel »&mdash;basé sur l'emplacement du curseur&mdash;est indiqué en gras. Vous pouvez désactiver les informations de paramètre dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Général**  >  **Informations de paramètre**.
 
-![Aide sur les paramètres Visual C++](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
+![Aide sur les paramètres Visual C&#43;&#43;](../ide/media/vs_2015_cpp_param_help.png)
 
 ### <a name="quick-info"></a>Info express
 
 Quand vous placez le curseur sur une variable, une petite fenêtre inline s'affiche, présentant les informations de type et l'en-tête où le type est défini. Placez le curseur sur un appel de fonction pour afficher la signature de la fonction. Vous pouvez désactiver la fonctionnalité Info express dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé** > **Info express auto**.
 
-![Info Express Visual C++](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
+![Info Express Visual C&#43;&#43;](../ide/media/vs2015_cpp_quickinfo.png)
 
 ### <a name="error-squiggles"></a>Tildes d'erreur
 
 Les tildes affichés sous un élément de code (variable, mot clé, accolade, nom de type, etc.) signalent une erreur réelle ou potentielle dans le code. Quand vous écrivez une déclaration anticipée, un tilde vert s'affiche pour vous rappeler que vous devez encore écrire l'implémentation. Un tilde violet s'affiche dans un projet partagé pour signaler une erreur dans du code qui n'est pas encore actif. C'est le cas, par exemple, quand vous travaillez dans le contexte Windows et que vous entrez du code qui serait erroné dans un contexte Android. Un tilde rouge indique une erreur ou un avertissement de compilateur, dans le code actif, que vous devez traiter.
 
-![Tildes d’erreur Visual C++](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
+![Tildes d’erreur Visual C&#43;&#43;](../ide/media/vs2015_cpp_error_quiggles.png)
 
 ### <a name="code-colorization-and-fonts"></a>Colorisation et polices du code
 
@@ -69,7 +70,7 @@ Dans un projet de code partagé, certaines fonctionnalités IntelliSense, telles
 
 Voici une application OpenGLES configurée pour la génération Android et iOS. L'illustration montre le code partagé en cours de modification. Dans la première image, Android est le projet actif :
 
-![Le projet Android est le projet actif](../ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")
+![Le projet Android est le projet actif.](../ide/media/intellisensecppcrossplatform.png)
 
 Notez les points suivants :
 
@@ -81,7 +82,7 @@ Notez les points suivants :
 
 À présent, changez le projet actif en **iOS.StaticLibrary**, et notez la façon dont les tildes changent.
 
-![iOS est sélectionné comme projet actif](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
+![iOS est sélectionné comme projet actif.](../ide/media/intellisensecppcrossplatform2.png)
 
 Notez les points suivants :
 
@@ -95,11 +96,11 @@ Notez les points suivants :
 
 IntelliSense est également disponible quand vous ouvrez un seul fichier en dehors de tout projet. Vous pouvez activer ou désactiver les fonctionnalités IntelliSense dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé**. Si vous souhaitez configurer IntelliSense pour des fichiers individuels qui ne font pas partie d’un projet, recherchez la section **IntelliSense et accès aux fichiers hors projet**.
 
-![IntelliSense avec un fichier unique](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
+![IntelliSense avec un fichier unique Visual C&#43;&#43;](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
 Par défaut, IntelliSense pour fichier unique utilise uniquement les répertoires Include standard pour rechercher les fichiers d'en-tête. Pour ajouter d’autres répertoires, ouvrez le menu contextuel du nœud **Solution**, puis ajoutez votre répertoire à la liste **Déboguer le code source**, comme le montre l’illustration suivante :
 
-![Ajout d’un chemin à un fichier d’en-tête](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
+![Ajout d'un chemin d'accès à un fichier d'en-tête.](../ide/media/intellisensedebugyourcode.jpg)
 
 ## <a name="see-also"></a>Voir aussi
 

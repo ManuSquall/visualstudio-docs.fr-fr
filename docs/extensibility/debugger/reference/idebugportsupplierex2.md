@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115897"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 Fournit la prise en charge pour un fournisseur de port sélectionner et d’interagir avec un serveur de base.  

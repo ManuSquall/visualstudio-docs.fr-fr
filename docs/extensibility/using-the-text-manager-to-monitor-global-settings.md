@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141670"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>À l’aide du Gestionnaire de texte pour surveiller des paramètres globaux
 Si vous implémentez un éditeur principal, vous devez surveiller les modifications apportées aux paramètres globaux, étant donné que ces modifications peuvent affecter votre instance de l’éditeur. Vous pouvez suivre les modifications en écoutant les événements déclenchés par le Gestionnaire de texte. Par exemple, lorsque vous spécifiez une préférence globale pour l’apparence ou le comportement d’un composant dans l’éditeur de base, telles que l’objet de données de document, le Gestionnaire de texte stocke ces informations et communique à tous les clients concernés.  

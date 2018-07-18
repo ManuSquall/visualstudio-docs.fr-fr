@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143450"
 ---
 # <a name="menu-element"></a>Élément de menu
 Définit un élément de menu. Voici les six types de menus : contexte, un Menu, MenuController, MenuControllerLatched, barre d’outils et ToolWindowToolbar.  

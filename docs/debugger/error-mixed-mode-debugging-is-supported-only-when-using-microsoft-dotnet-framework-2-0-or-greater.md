@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473652"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Erreur : Le débogage en mode mixte est uniquement pris en charge lorsque vous utilisez Microsoft .NET Framework 2.0 ou version ultérieure
 Pour déboguer du code natif et managé mixte, vous devez disposer de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] version 2.0, 3.0, 3.5 ou 4. Le débogage en mode mixte avec les versions antérieures de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] n’est pas pris en charge.  

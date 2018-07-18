@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148439"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Les notifications et progression pour Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Systèmes de notification  

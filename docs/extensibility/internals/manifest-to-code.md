@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132905"
 ---
 # <a name="manifest-to-code"></a>Manifeste pour le Code
 Le manifeste de l’outil du Code est une application console qui accepte un fichier .imagemanifest pour le Service d’images Visual Studio et génère un wrapper ou les fichiers pour faire référence aux valeurs du manifeste de l’image en C++, c#, VB ou fichiers .vsct des extensions Visual Studio. Cet outil génère des fichiers de wrapper qui peuvent être utilisées pour les images de demandeurs à partir de Visual Studio Image celui-ci directement, ou en passant les valeurs de manifeste via des API si le code ne gère pas un de sa propre interface utilisateur et le rendu.  

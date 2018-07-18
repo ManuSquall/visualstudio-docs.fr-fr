@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103862"
 ---
 # <a name="launching-a-program"></a>Lancement d’un programme
 Les utilisateurs qui souhaitent déboguer un programme peuvent appuyer sur F5 pour exécuter le débogueur à partir de l’IDE. Commence une série d’événements d’aboutir à l’IDE se connecter à un moteur de débogage (DE), qui est à son tour connecté ou attaché, le programme comme suit :  

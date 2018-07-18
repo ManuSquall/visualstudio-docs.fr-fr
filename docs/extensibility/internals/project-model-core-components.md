@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133106"
 ---
 # <a name="project-model-core-components"></a>Composants de modèle de projet
 Les tableaux suivants décrivent le modèle de projet. Les tables présentent des brèves descriptions des interfaces et des services identifiés dans le modèle et les interfaces et les services associés à des objets spécifiques. En outre, les tables de détaillent des autres interfaces qui sont facultatifs dans la création du projet et de maintenance selon les besoins de votre type de projet spécifique.  

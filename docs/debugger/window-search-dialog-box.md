@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476629"
 ---
 # <a name="window-search-dialog-box"></a>Boîte de dialogue Recherche d'une fenêtre
 Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud pour une fenêtre spécifique dans [affichage Windows](../debugger/windows-view.md). Pour afficher cette boîte de dialogue, déplacez le focus à la fenêtre d’affichage de Windows. Puis choisissez **rechercher une fenêtre** à partir de la **recherche** menu.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131731"
 ---
 # <a name="legacy-language-service-features"></a>Fonctionnalités de Service de langage hérité
 Un service de langage managé package framework (MPF) peut prendre en charge un ou plusieurs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fonctionnalités, telles que la mise en surbrillance de syntaxe, IntelliSense et validation de point d’arrêt. Chaque fonctionnalité peut être implémentée indépendant des autres, mais tous requièrent un analyseur et un analyseur à l’exception de la mise en surbrillance de syntaxe, ce qui nécessite uniquement un scanneur.  

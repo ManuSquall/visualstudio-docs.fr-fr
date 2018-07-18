@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927163"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Créer des vues personnalisées d’objets natifs dans le débogueur Visual Studio
 L’infrastructure Natvis de Visual Studio vous permet de personnaliser la façon dont Visual Studio affiche les types natifs dans les fenêtres de variables du débogueur (par exemple, le **espion** fenêtre, **variables locales** fenêtre et dans  **Les DataTips**.

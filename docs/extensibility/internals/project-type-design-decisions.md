@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131490"
 ---
 # <a name="project-type-design-decisions"></a>Décisions de conception de Type de projet
 Avant de créer un nouveau type de projet, vous devez prendre des décisions de conception plusieurs concernant votre type de projet. Vous devez décider quels types d’éléments de vos projets, mode de conservation des fichiers projet et quel modèle d’engagement que vous allez utiliser.  

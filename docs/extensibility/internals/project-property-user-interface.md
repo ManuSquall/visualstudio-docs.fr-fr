@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132425"
 ---
 # <a name="project-property-user-interface"></a>Interface d’utilisateur de propriétés de projet
 Un sous-type de projet permettre utiliser les éléments dans le projet **Pages de propriétés** boîte de dialogue comme ils sont fournis par le projet de base, masquer rendre des contrôles en lecture seule et des pages entières fournie ou ajouter des pages spécifiques au sous-type de projet à la **Pages de propriétés** boîte de dialogue.

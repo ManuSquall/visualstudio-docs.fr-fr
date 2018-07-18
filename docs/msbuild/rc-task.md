@@ -29,6 +29,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574566"
 ---
 # <a name="rc-task"></a>RC, tâche
 Encapsule l’outil Compilateur de ressources Microsoft Windows (rc.exe). La tâche **RC** compile des ressources, telles que des curseurs, des icônes, des images bitmap, des boîtes de dialogue et des polices, dans un fichier de ressources (.res). Pour plus d’informations, consultez « Compilateur de ressources » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  

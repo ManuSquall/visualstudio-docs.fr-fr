@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565690"
 ---
 # <a name="application-deployment-prerequisites"></a>Composants requis pour le déploiement d'applications
 Pour vous assurer que votre application sera installée et exécutée correctement, vérifiez que tous les composants dont dépend votre application sont déjà installés sur l'ordinateur cible. Par exemple, la plupart des applications créées à l'aide de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ont une dépendance par rapport au [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ; la version appropriée du Common Language Runtime doit être présente sur l'ordinateur de destination avant que l'application ne soit installée.  

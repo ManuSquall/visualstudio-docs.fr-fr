@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144367"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Fonctions d’API de plug-in de contrôle de source
 L’API de plug-in de contrôle de Source fournit les fonctions suivantes, qui doivent être implémentées par le plug-in conformément à cette API de contrôle de code source. Les signatures de chaque fonction et la sémantique associées avec les indicateurs de bits et autres paramètres sont décrits en détail dans cette référence.  
@@ -85,7 +86,7 @@ L’API de plug-in de contrôle de Source fournit les fonctions suivantes, qui d
 ## <a name="requirements"></a>Spécifications  
  En-tête : scc.h  
   
- (Fourni dans le SDK de l’environnement commun inclut le dossier, par défaut *[lecteur]*\Program Files\VSIP 8.0\EnvSDK\common\inc ; également fourni dans le dossier VSIP avec l’exemple MSSCCI, *[lecteur]*\Program 8.0\MSSCCI Files\VSIP).  
+ (Fourni dans le SDK de l’environnement commun inclut le dossier, par défaut *[lecteur]* \Program Files\VSIP 8.0\EnvSDK\common\inc ; également fourni dans le dossier VSIP avec l’exemple MSSCCI, *[lecteur]* \Program 8.0\MSSCCI Files\VSIP).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Plug-ins de contrôle de code source](../extensibility/source-control-plug-ins.md)   

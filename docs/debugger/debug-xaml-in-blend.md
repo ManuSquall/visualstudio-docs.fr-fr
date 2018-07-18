@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477451"
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] pour déboguer le code XAML dans votre application. Lorsque vous générez un projet, des erreurs s’affichent dans le **résultats** Panneau de configuration. Double-cliquez sur une erreur pour localiser le balisage associé à l'erreur. Si vous avez besoin de plus d’espace de travail, vous pouvez masquer la **résultats** Panneau de configuration en appuyant sur F12.  

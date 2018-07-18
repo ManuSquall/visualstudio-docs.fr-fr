@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100609"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Éléments internes d’Extension parallèle pour le .NET Framework
 Cette section décrit les types internes, méthodes et champs de classes qui vous aident à implémentent un débogueur personnalisé pour les extensions parallèles au .NET Framework.  

@@ -7,6 +7,7 @@ ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2018
+ms.locfileid: "29989211"
 ---
 # <a name="scripting-technologies"></a>Technologies de script
 

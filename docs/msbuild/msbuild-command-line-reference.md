@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576012"
 ---
 # <a name="msbuild-command-line-reference"></a>Informations de référence sur la ligne de commande MSBuild
 Quand vous utilisez MSBuild.exe pour générer un fichier projet ou solution, vous pouvez inclure plusieurs commutateurs pour définir différents aspects du processus.  

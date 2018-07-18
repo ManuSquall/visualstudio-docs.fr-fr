@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476183"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Comment : utiliser l'outil Recherche
 Vous pouvez utiliser l’outil de recherche dans les **rechercher une fenêtre** boîte de dialogue pour afficher la fenêtre Propriétés ou messages. L’outil recherche peut également localiser les fenêtres enfants désactivées et déterminer la fenêtre à mettre en surbrillance si désactivé enfant windows chevauchement.  

@@ -1,7 +1,7 @@
 ---
 title: Modèles d’application web pour Python
 description: Vue d’ensemble des modèles Visual Studio pour les applications web écrites dans Python à l’aide des infrastructures Bottle, Flask et Django, y compris les configurations de débogage et la publication sur Azure App Service.
-ms.date: 04/17/2018
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d76bc7868c78b1def09376cb2382aa39cff1cda
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752038"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
@@ -41,7 +42,7 @@ Tous les modèles « Projet web (framework) vide » créent un projet contenan
 | --- | --- |
 | Projet web Bottle vide | Génère une application minimale dans `app.py` avec une page d’accueil pour `/` et une page `/hello/<name>` qui répercute `<name>` en utilisant un modèle de page inline succint. |
 | Projet web Django vide | Génère un projet Django avec la structure de site Django de base mais aucune application Django. Pour plus d'informations, voir [Modèles Django](python-django-web-application-project-template.md) et [Apprentissage de Django - Étape 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| Projet web Flask vide | Génère une application minimale contenant une page « Hello World! » unique pour `/`. Cette application est similaire au résultat obtenu en suivant les étapes détaillées dans [Démarrage rapide : Utiliser Visual Studio pour créer votre première application web Python](../ide/quickstart-python.md?context=visualstudio/python/default).
+| Projet web Flask vide | Génère une application minimale contenant une page « Hello World! » unique pour `/`. Cette application est similaire au résultat obtenu en suivant les étapes détaillées dans [Démarrage rapide : Utiliser Visual Studio pour créer votre première application web Python](../ide/quickstart-python.md?context=visualstudio/python/default). Consultez également [Découverte de Flask - Étape 1](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Groupe web
 
@@ -51,19 +52,19 @@ Tous les modèles « Projet web (Framework) » créent une application web de 
 | --- | --- |
 | Projet web Bottle | Génère une application dont les fichiers statiques sont contenus dans le dossier `static` et gérés par le biais de code dans `app.py`. Le routage des pages individuelles est contenu dans `routes.py` et le dossier `views` contient les modèles de page.|
 | Projet web Django | Génère un projet Django et une application Django avec trois pages, la prise en charge de l’authentification et une base de données SQLite (mais aucun modèle de données). Pour plus d'informations, voir [Modèles Django](python-django-web-application-project-template.md) et [Apprentissage de Django - Étape 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
-| Projet web Flask | Génère une application dont les fichiers statiques sont contenus dans le dossier `static`. Le code contenu dans `views.py` gère le routage et les modèles de page utilisant le moteur Jinja sont contenus dans le dossier `templates`. Le fichier `runserver.py` fournit le code de démarrage. |
-| Projet web Flask/Jade | Génère la même application que le modèle « Projet web Flask » mais en utilisant le moteur de création de modèles Jade. |
+| Projet web Flask | Génère une application dont les fichiers statiques sont contenus dans le dossier `static`. Le code contenu dans `views.py` gère le routage et les modèles de page utilisant le moteur Jinja sont contenus dans le dossier `templates`. Le fichier `runserver.py` fournit le code de démarrage. Consultez [Découverte de Flask - Étape 4](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
+| Projet web Flask/Jade | Génère la même application qu’avec le modèle « Projet web Flask », mais en utilisant l’extension Jade pour le moteur de création de modèles Jinja. |
 
 ### <a name="polls-group"></a>Groupe Sondages
 
-Les modèles « Projet web (framework) de sondage » crée une application web de démarrage via laquelle les utilisateurs peuvent voter sur différentes questions de sondage. Chaque application repose sur la structure des modèles de projet « web » et utilise une base de données pour gérer les sondages et les réponses des utilisateurs. Les applications contiennent les modèles de données appropriés et une page d’application spéciale (« /seed) qui charge les sondages à partir d’un fichier `samples.json`.
+Les modèles « Projet web (framework) de sondage » crée une application web de démarrage via laquelle les utilisateurs peuvent voter sur différentes questions de sondage. Chaque application repose sur la structure des modèles de projet « web » et utilise une base de données pour gérer les sondages et les réponses des utilisateurs. Les applications contiennent les modèles de données appropriés et une page d’application spéciale (/seed) qui charge les sondages à partir d’un fichier `samples.json`.
 
 | Modèle | Description |
 | --- | --- |
 | Projet web Bottle de sondage | Génère une application qui peut s’exécuter sur une base de données en mémoire, MongoDB ou Stockage Table Azure, qui est configurée à l’aide de la variable d’environnement `REPOSITORY_NAME`. Les modèles de données et le code de magasin de données sont contenus dans le dossier `models` et le fichier `settings.py` contient le code permettant de déterminer quel magasin de données est utilisé. |
 | Projet web Django de sondage | Génère un projet Django et une application Django contenant trois pages et une base de données SQLite. Inclut des personnalisations de l’interface administrative Django pour permettre à un administrateur authentifié de créer et de gérer des sondages. Pour plus d'informations, voir [Modèles Django](python-django-web-application-project-template.md) et [Apprentissage de Django - Étape 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
-| Projet web Flask de sondage | Génère une application qui peut s’exécuter sur une base de données en mémoire, MongoDB ou Stockage Table Azure, qui est configurée à l’aide de la variable d’environnement `REPOSITORY_NAME`. Les modèles de données et le code de magasin de données sont contenus dans le dossier `models` et le fichier `settings.py` contient le code permettant de déterminer quel magasin de données est utilisé. L’application utilise le moteur Jinja pour les modèles de page. |
-| Projet web Flask/Jade de sondage | Génère la même application que le modèle « Projet web Flask de sondage » mais en utilisant le moteur de création de modèles Jade. |
+| Projet web Flask de sondage | Génère une application qui peut s’exécuter sur une base de données en mémoire, MongoDB ou Stockage Table Azure, qui est configurée à l’aide de la variable d’environnement `REPOSITORY_NAME`. Les modèles de données et le code de magasin de données sont contenus dans le dossier `models` et le fichier `settings.py` contient le code permettant de déterminer quel magasin de données est utilisé. L’application utilise le moteur Jinja pour les modèles de page. Consultez [Découverte de Flask - Étape 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
+| Projet web Flask/Jade de sondage | Génère la même application qu’avec le modèle « Projet web Flask de sondage », mais en utilisant l’extension Jade pour le moteur de création de modèles Jinja. |
 
 ## <a name="installing-project-requirements"></a>Installation des spécifications du projet
 
@@ -71,7 +72,7 @@ Quand vous créez un projet à partir d’un modèle propre au framework, une bo
 
 ![Boîte de dialogue installant les packages nécessaires pour un modèle de projet](media/template-web-requirements-txt-wizard.png)
 
-Si vous utilisez le contrôle de code source, vous pouvez généralement ignorer le dossier d’environnement virtuel car cet environnement peut être recréé en utilisant uniquement `requirements.txt`. La meilleure façon d’exclure le dossier est de commencer par sélectionner l’option **I will install them myself** (Je les installerai moi-même) dans l’invite illustrée ci-dessus, puis de désactiver la validation automatique avant de créer l’environnement virtuel. Pour plus d’informations, consultez [Didacticiel d’apprentissage de Django - Étapes 1-2 et 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
+Si vous utilisez le contrôle de code source, vous pouvez généralement ignorer le dossier d’environnement virtuel car cet environnement peut être recréé en utilisant uniquement `requirements.txt`. La meilleure façon d’exclure le dossier est de commencer par sélectionner l’option **I will install them myself** (Je les installerai moi-même) dans l’invite illustrée ci-dessus, puis de désactiver la validation automatique avant de créer l’environnement virtuel. Pour plus d’informations, consultez [Tutoriel d’apprentissage de Django - Étapes 1-2 et 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) et [Tutoriel d’apprentissage de Flask - Étapes 1-2 et 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
 
 Lors du déploiement sur Microsoft Azure App Service, sélectionnez une version de Python comme [extension de site](https://aka.ms/PythonOnAppService) et installez manuellement les packages. En outre, étant donné qu’Azure App Service n’installe **pas** automatiquement les packages à partir d’un fichier `requirements.txt` en cas de déploiement à partir de Visual Studio, suivez les instructions de configuration fournies sur la page [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 

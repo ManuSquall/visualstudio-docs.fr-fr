@@ -1,5 +1,5 @@
 ---
-title: Analyser les résultats des tests de charge dans Visual Studio | Microsoft Docs
+title: Analyser les résultats des tests de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,14 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d3a1e3f54544215ed89f07a64d440ae3844c996f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d20754bc61a003b1b7f6d1eb84ce419c2c6e442b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31966685"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Comment : accéder aux résultats des test de charge pour l'analyse
 

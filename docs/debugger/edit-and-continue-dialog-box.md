@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473135"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Boîte de dialogue Modifier & Continuer
 (Natif uniquement) Cette boîte de dialogue s’affiche lorsque vous avez modifié le code pendant le débogage et **Modifier & Continuer** reconnaît pouvoir appliquer les modifications du code. Pour plus d’informations, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).  

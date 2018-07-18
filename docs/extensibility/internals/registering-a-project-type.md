@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134631"
 ---
 # <a name="registering-a-project-type"></a>L’inscription d’un Type de projet
 Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de Registre qui permet à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de reconnaître et de travailler avec votre type de projet. En règle générale, vous créez ces entrées de Registre à l’aide d’un fichier de script (.rgs) du Registre.  

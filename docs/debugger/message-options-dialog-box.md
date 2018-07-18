@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474919"
 ---
 # <a name="message-options-dialog-box"></a>Options des messages, boîte de dialogue
 Utilisez cette boîte de dialogue pour sélectionner les messages répertoriés dans [vue Messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, choisissez **des Messages de journal** à partir de la **Spy** menu.  

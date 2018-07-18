@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138478"
 ---
 # <a name="language-services-and-the-core-editor"></a>Services de langage et de l’éditeur principal
 Les éditeurs dans Visual Studio sont souvent associés à un service de langage. Entre autres choses, un service de langage fournit la coloration de syntaxe, la saisie semi-automatique des instructions, IntelliSense et la mise en forme du texte.  

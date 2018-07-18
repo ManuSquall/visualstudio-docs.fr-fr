@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473275"
 ---
 # <a name="how-to-display-message-properties"></a>Comment : afficher les propriétés d'un message
 Pour plus d’informations sur un message répertorié dans [vue Messages](../debugger/messages-view.md), utilisez le [boîte de dialogue Propriétés de Message](../debugger/message-properties-dialog-box.md).  

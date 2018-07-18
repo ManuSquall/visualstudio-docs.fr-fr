@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101142"
 ---
 # <a name="debugging-tasks"></a>Tâches de débogage
 Pour déboguer un programme, il doit être lancé et un moteur de débogage (DE) doit être attaché à ce dernier, sans quoi le DE doit être attaché à un programme précédemment exécuté. Une fois attaché, le DE doit générer certains événements de démarrage. En réponse, le package de débogage tente de lier les points d’arrêt définis dans l’IDE. Lorsque le programme atteint un point d’arrêt lié, il s’arrête et attend l’entrée d’utilisateur.  

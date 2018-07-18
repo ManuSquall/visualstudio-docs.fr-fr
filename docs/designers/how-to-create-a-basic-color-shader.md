@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c70f1ba622e8fb24c2ece0f52c9c653051d588
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fba456d6a06281e0472e907b27bcd76b57b17e93
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747116"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Comment : créer un nuanceur de couleur de base
 
@@ -41,7 +42,7 @@ L’illustration suivante présente le graphique du nuanceur terminé ainsi qu�
 > [!NOTE]
 > Une couleur orange a été spécifiée dans l’illustration pour mettre en évidence l’effet du nuanceur.
 
-![Graphique du nuanceur et résultats associés sur un modèle 3D](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")
+![Graphique du nuanceur et ses résultats sur un modèle 3D](../designers/media/digit-flat-color-effect.png)
 
 Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 

@@ -1,13 +1,13 @@
 ---
-title: "Array ou arguments attendu d’objet | Documents Microsoft"
-ms.custom: 
+title: Array ou arguments attendu d’objet | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5028
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 22b83e2f-8916-46db-8d8c-50c8481b7c90
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632739"
 ---
 # <a name="array-or-arguments-object-expected"></a>Objet Array ou Arguments attendu
 Vous n’avez pas fourni un tableau en tant qu’argument. Cette erreur s’applique à la **Function.prototype.apply** méthode uniquement. Si spécifié, le deuxième argument à cette fonction doit être un `Array` objet ou un **Arguments** objet.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102926"
 ---
 # <a name="debug-engine"></a>Moteur de débogage
 Un moteur de débogage (DE) fonctionne avec l’interpréteur ou à un système d’exploitation pour fournir des services de débogage telles que de l’évaluation d’expression, points d’arrêt et contrôle l’exécution. Le D’est responsable de l’analyse de l’état d’un programme en cours de débogage. Pour cela, le D’utilise toutes les méthodes sont disponibles dans le runtime pris en charge, si de l’unité centrale ou à partir de l’API fournie par le runtime.  

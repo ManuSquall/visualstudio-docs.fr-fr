@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130542"
 ---
 # <a name="document-lock-holder-management"></a>Gestion du détenteur du verrouillage du document
 Un décompte des documents ouverts et tous les verrous de modification de que disposent la Table de Document en cours d’exécution (r & DT). Vous pouvez placer un verrou de modification d’un document dans la r & DT lorsqu’il est par programme modifié en arrière-plan sans que l’utilisateur de voir un document ouvert dans une fenêtre de document. Cette fonctionnalité est souvent utilisée par les concepteurs qui modifient plusieurs fichiers via une interface utilisateur graphique.  

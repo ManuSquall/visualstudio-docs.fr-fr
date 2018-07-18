@@ -1,5 +1,5 @@
 ---
-title: Codage d’une règle de validation personnalisée pour un test de performances web dans Visual Studio | Microsoft Docs
+title: Codage d’une règle de validation personnalisée pour un test de performances web dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,14 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0c2e3eb6d9b0411a078c5d7531105230dfc82457
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c95e461f99a78a3241a091f7b590137e4dbc7066
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31971395"
 ---
 # <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>Codage d’une règle de validation personnalisée pour un test de performances de site Web
 
@@ -59,7 +61,7 @@ Vous pouvez créer vos propres règles de validation. Pour cela, vous dérivez v
 Le code suivant illustre une implémentation d’une règle de validation personnalisée. Cette règle de validation reproduit le comportement de la règle de validation prédéfinie Balise obligatoire. Utilisez cet exemple comme point de départ pour la définition de vos propres règles de validation personnalisées.
 
 > [!WARNING]
->  Les propriétés publiques du code d'un validateur personnalisé ne peuvent pas avoir de valeurs Null.
+> Les propriétés publiques du code d'un validateur personnalisé ne peuvent pas avoir de valeurs Null.
 
 ```csharp
 using System;

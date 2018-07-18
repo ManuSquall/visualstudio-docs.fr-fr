@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965175"
 ---
 # <a name="writing-user-commands-and-actions"></a>Écriture de commandes et d'actions utilisateur
 Vous pouvez personnaliser un langage spécifique à un domaine en ajoutant des commandes au diagramme et en répondant à des mouvements tels que des événements de clic, de double clic et glisser-déplacer.

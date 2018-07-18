@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449180"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752077"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -52,19 +52,19 @@ Les sections suivantes décrivent les étapes de base pour vous familiariser ave
 
 Vous définissez et vous exécutez des tests au sein d’un ou plusieurs projets de test qui se trouvent dans la même solution que le code que vous voulez tester. Pour ajouter un nouveau projet de test à une solution existante, cliquez avec le bouton droit sur le nœud de la solution dans **l’Explorateur de solutions**, puis choisissez **Ajouter | Nouveau projet**. Ensuite, dans le volet gauche, choisissez **Test Visual C++** et choisissez un des types de projet dans le volet central. L’illustration suivante montre les projets de test qui sont disponibles quand la charge de travail **Développement Desktop en C++** est installée :
 
-![Projets de test C++](media/cpp-new-test-project.png "Modèles de nouveaux projets de test C++")
+![Projets de test C++](media/cpp-new-test-project.png)
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Créer des références à d’autres projets de la solution
 
 Pour permettre à votre code de test d’accéder aux fonctions du projet à tester, ajoutez une référence au projet dans votre projet de test. Cliquez avec le bouton droit sur le nœud du projet de test dans **l’Explorateur de solutions**, puis choisissez **Ajouter | Référence**. Ensuite, dans la boîte de dialogue, choisissez le ou les projets que vous voulez tester.
 
-![Ajouter une référence](media/cpp-add-ref-test-project.png "Test C++ : ajouter une référence à des projets à tester")
+![Ajouter une référence](media/cpp-add-ref-test-project.png)
 
 ### <a name="add-include-directives-for-header-files"></a>Ajouter des directives #include pour les fichiers d’en-tête
 
 Ensuite, dans votre fichier .cpp de test unitaire, ajoutez une directive `#include` pour les fichiers d’en-tête qui déclarent les types et les fonctions que vous voulez tester. Tapez `#include "` : IntelliSense s’active alors pour vous aider à choisir. Répétez cette opération pour les autres en-têtes.
 
-![Ajouter des directives include](media/cpp-add-includes-test-project.png "Test C++ : ajouter des directives include pour les fichiers d’en-tête")
+![Ajouter des directives include](media/cpp-add-includes-test-project.png)
 
 ### <a name="write-test-methods"></a>Écrire des méthodes de test
 
@@ -73,7 +73,7 @@ Ensuite, dans votre fichier .cpp de test unitaire, ajoutez une directive `#inclu
 
 Le fichier .cpp de votre projet de test a une classe et une méthode stub définies pour vous, à titre d’exemple de la façon d’écrire du code de test. Notez que les signatures utilisent les macros TEST_CLASS et TEST_METHOD, qui rendent les méthodes découvrables à partir de la fenêtre Explorateur de tests.
 
-![Ajouter des directives include](media/cpp-write-test-methods.png "Test C++ : ajouter des directives include pour les fichiers d’en-tête")
+![Ajouter des directives include](media/cpp-write-test-methods.png)
 
 TEST_CLASS et TEST_METHOD font partie du [framework de test natif Microsoft](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **L’Explorateur de tests** découvre de la même façon les méthodes de test dans les autres frameworks pris en charge.
 
@@ -95,7 +95,7 @@ Vous pouvez ajouter des *caractéristiques* aux méthodes de test pour spécifie
 
 1. Dans le menu **Test**, choisissez **Fenêtres** > **Explorateur de tests**. L’illustration suivante montre un projet de test dont les tests n’ont pas encore été exécutés.
 
-   ![L’Explorateur de tests avant l’exécution des tests](media/cpp-test-explorer.png "Explorateur de tests C++")
+   ![L’Explorateur de tests avant l’exécution des tests](media/cpp-test-explorer.png)
 
    > [!NOTE]
    > L’intégration de CTest à **l’Explorateur de tests** n’est pas encore disponible. Exécutez des tests CTest à partir du menu principal de CMake.
@@ -104,7 +104,7 @@ Vous pouvez ajouter des *caractéristiques* aux méthodes de test pour spécifie
 
 1. Dans l’Explorateur de tests, choisissez **Exécuter tout** ou sélectionnez les tests spécifiques à exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés. Une fois tous les tests exécutés, la fenêtre montre quels tests ont réussi et ceux qui ont échoué :
 
-![L’Explorateur de tests après l’exécution des tests](media/cpp-test-explorer-passed.png "Explorateur de tests C++ après l’exécution des tests")
+![L’Explorateur de tests après l’exécution des tests](media/cpp-test-explorer-passed.png)
 
 Pour les tests ayant échoué, le message montre des détails qui vous aident à diagnostiquer la cause de l’échec. Vous pouvez cliquer avec le bouton droit sur le test qui a échoué et choisir **Déboguer les tests sélectionnés** pour exécuter un pas à pas détaillé de la fonction où l’échec s’est produit.
 

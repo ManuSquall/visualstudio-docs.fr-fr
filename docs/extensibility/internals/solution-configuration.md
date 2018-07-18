@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132719"
 ---
 # <a name="solution-configuration"></a>Configuration de la solution
 Les configurations de solution stockent les propriétés au niveau de la solution. Elles indiquent le comportement de la **Démarrer** touche (F5) et **générer** commandes. Par défaut, ces commandes générer et démarrer la configuration debug. Les deux commandes s’exécutent dans le contexte d’une configuration de solution. Cela signifie que l’utilisateur peut attendre F5 pour démarrer et quelle que soit la solution active est configurée via les paramètres de build. L’environnement est conçu pour optimiser pour les solutions plutôt que des projets en matière de création et l’exécution.  

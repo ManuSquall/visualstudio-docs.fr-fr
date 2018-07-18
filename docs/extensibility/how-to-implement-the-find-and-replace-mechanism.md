@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128938"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>Comment : implémenter la rechercher et remplacer le mécanisme
 Visual Studio fournit deux méthodes d’implémentation de la recherche et le remplacement. Une façon consiste à passer d’une image de texte à l’interpréteur de commandes et qu’il traite la recherche, la mise en surbrillance et le texte de remplacement. Cela permet aux utilisateurs de spécifier plusieurs plages de texte. Votre VSPackage peut également contrôler cette fonctionnalité lui-même. Dans les deux cas, vous devez informer l’interpréteur de commandes sur la cible actuelle et les cibles pour tous les documents ouverts.  

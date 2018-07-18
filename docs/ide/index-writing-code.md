@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704510"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Écrire et gérer du code à l’aide de Visual Studio
 

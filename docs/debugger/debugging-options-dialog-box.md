@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472882"
 ---
 # <a name="debugging-options-dialog-box"></a>Débogage, boîte de dialogue Options
 Le **débogage** dossier, dans le **Options** boîte de dialogue sur le **outils** menu, fournit les pages suivantes, qui vous permettent de spécifier le débogueur, options de l’outil.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144705"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Ce que&#39;nouveauté dans le Kit de développement logiciel Visual Studio 2015
 Le Kit de développement logiciel Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes pour Visual Studio 2015, Visual Studio 2015 mise à jour et Visual Studio 2017.  
