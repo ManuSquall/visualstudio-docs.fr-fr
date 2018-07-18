@@ -1,5 +1,5 @@
 ---
-title: 'Comment : exposer du Code à VBA dans un projet Visual Basic | Documents Microsoft'
+title: 'Comment : exposer du code à VBA dans un projet Visual Basic'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,18 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 39dc659f7c8841bcf350249332278091232a32d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a979d62c8320d57c3243e4d60ef93ee56eb06cf
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256095"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Comment : exposer du code à VBA dans un projet Visual Basic
-  Vous pouvez exposer du code dans un [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projet Visual Basic pour Applications (VBA) si vous souhaitez que les deux types de code interagissent entre eux.  
+  Vous pouvez exposer du code dans un [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projet vers Visual Basic pour Applications (VBA), si vous souhaitez que les deux types de code pour interagir avec eux.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Le processus de Visual Basic est différent du processus Visual c#. Pour plus d’informations, consultez [Comment : exposer du Code à VBA dans un Visual C&#35; projet](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+ Le processus de Visual Basic est différent du processus Visual c#. Pour plus d’informations, consultez [Comment : exposer du code à VBA dans un Visual C&#35; projet](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
  Le processus est différent pour le code dans une classe d’élément hôte pour le code dans d’autres classes :  
   
@@ -38,23 +39,23 @@ ms.lasthandoff: 04/16/2018
   
 -   [Exposer du code qui n’est pas dans une classe d’élément hôte](#NonHostItem)  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vidéo") pour une démonstration vidéo connexe, consultez [comment faire I: Call VSTO Code à partir de VBA ?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+ ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment coder les i : appelez VSTO à partir de VBA ?](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
-##  <a name="HostItemCode"></a> Exposer du Code dans une classe d’élément hôte  
- Pour permettre au code VBA d’appeler du code Visual Basic dans une classe d’élément hôte, définissez le **EnableVbaCallers** propriété de l’élément hôte la valeur **True**.  
+##  <a name="HostItemCode"></a> Exposer du code dans une classe d’élément hôte  
+ Pour permettre au code VBA d’appeler du code de Visual Basic dans une classe d’élément hôte, définissez le **EnableVbaCallers** propriété de l’élément hôte la valeur **True**.  
   
- Pour une procédure pas à pas qui montre comment exposer une méthode d’une classe d’élément hôte et puis l’appeler à partir de VBA, consultez [procédure pas à pas : appel de Code à partir de VBA dans un projet Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Pour plus d’informations sur les éléments hôtes, consultez [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
+ Pour une procédure pas à pas qui montre comment exposer une méthode d’une classe d’élément hôte et puis l’appeler à partir de VBA, consultez [procédure pas à pas : appeler du code à partir de VBA dans un projet Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Pour plus d’informations sur les éléments hôtes, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md).  
   
 #### <a name="to-expose-code-in-a-host-item-to-vba"></a>Pour exposer le code dans un élément hôte à VBA  
   
-1.  Ouvrez ou créez au niveau du document [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projet basé sur un document Word, un classeur Excel ou un modèle Excel qui prend en charge les macros et qui contient déjà du code VBA.  
+1.  Ouvrez ou créez au niveau du document [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projet basé sur un document Word, un classeur Excel ou un modèle Excel qui prend en charge les macros, et qui contient déjà du code VBA.  
   
-     Pour plus d’informations sur les formats de fichier de document qui prennent en charge les macros, consultez [combinaison de VBA et de personnalisations au niveau du Document](../vsto/combining-vba-and-document-level-customizations.md).  
+     Pour plus d’informations sur les formats de fichier de document qui prennent en charge les macros, consultez [combiner de VBA et de personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md).  
   
     > [!NOTE]  
     >  Cette fonctionnalité ne peut pas être utilisée dans les projets de modèle Word.  
   
-2.  Assurez-vous que du code VBA dans le document est autorisé à s’exécuter sans inviter l’utilisateur à activer les macros. Vous pouvez approuver le code VBA à exécuter en ajoutant l'emplacement du projet Office à la liste des emplacements approuvés dans les paramètres du Centre de gestion de la confidentialité pour Word ou Excel.  
+2.  Assurez-vous que le code VBA dans le document est autorisé à s’exécuter sans inviter l’utilisateur à activer les macros. Vous pouvez approuver le code VBA à exécuter en ajoutant l'emplacement du projet Office à la liste des emplacements approuvés dans les paramètres du Centre de gestion de la confidentialité pour Word ou Excel.  
   
 3.  Ajoutez la propriété, une méthode ou un événement que vous souhaitez exposer à VBA à une des classes d’élément hôte dans votre projet et déclarez le nouveau membre en tant que **Public**. Le nom de la classe dépend de l’application :  
   
@@ -67,31 +68,31 @@ ms.lasthandoff: 04/16/2018
      Une fois que vous définissez cette propriété, Visual Studio définit automatiquement le **ReferenceAssemblyFromVbaProject** propriété **True**.  
   
     > [!NOTE]  
-    >  Si le classeur ou le document ne contient pas déjà du code VBA, ou si le code VBA dans le document n’est pas approuvé, vous recevrez un message d’erreur lorsque vous définissez la **EnableVbaCallers** propriété **True**. Cela est dû au fait que Visual Studio ne peut pas modifier le projet VBA dans le document dans cette situation.  
+    >  Si le classeur ou le document ne contient-elle pas déjà du code VBA, ou si le code VBA dans le document n’est pas approuvé, vous recevrez un message d’erreur lorsque vous définissez la **EnableVbaCallers** propriété **True**. Cela est dû au fait que Visual Studio ne peut pas modifier le projet VBA dans le document dans cette situation.  
   
-5.  Cliquez sur **OK** dans le message qui s'affiche. Ce message vous rappelle que si vous ajoutez du code VBA au classeur ou au document lors vous exécutez le projet à partir de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], le code VBA seront perdu lors de la prochaine fois que vous générez le projet. Il s’agit, car le document dans le dossier de sortie de génération est remplacé chaque fois que vous générez le projet.  
+5.  Cliquez sur **OK** dans le message qui s'affiche. Ce message vous rappelle que si vous ajoutez du code VBA au classeur ou un document lorsque vous exécutez le projet à partir de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], le code VBA seront perdu lors de la prochaine fois que vous générez le projet. Il s’agit, car le document dans le dossier de sortie de génération est remplacé chaque fois que vous générez le projet.  
   
      À ce stade, Visual Studio configure le projet afin que le projet VBA peut appeler l’assembly. Visual Studio ajoute également une propriété nommée `CallVSTOAssembly` à la `ThisDocument`, `ThisWorkbook`, `Sheet1`, `Sheet2`, ou `Sheet3` module dans le projet VBA. Vous pouvez utiliser cette propriété pour accéder aux membres publics de la classe que vous avez exposée à VBA.  
   
 6.  Générez le projet.  
   
-##  <a name="NonHostItem"></a> Exposer du Code qui n’est pas dans une classe d’élément hôte  
+##  <a name="NonHostItem"></a> Exposer du code qui n’est pas dans une classe d’élément hôte  
  Pour permettre au code VBA d’appeler du code Visual Basic qui n’est pas dans une classe d’élément hôte, modifiez le code afin qu’il est visible à VBA.  
   
-#### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>Pour exposer le code qui n’est pas dans une classe d’élément hôte à VBA  
+### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>Pour exposer le code qui n’est pas dans une classe d’élément hôte à VBA  
   
-1.  Ouvrez ou créez au niveau du document [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projet basé sur un document Word, un classeur Excel ou un modèle Excel qui prend en charge les macros et qui contient déjà du code VBA.  
+1.  Ouvrez ou créez au niveau du document [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projet basé sur un document Word, un classeur Excel ou un modèle Excel qui prend en charge les macros, et qui contient déjà du code VBA.  
   
-     Pour plus d’informations sur les formats de fichier de document qui prennent en charge les macros, consultez [combinaison de VBA et de personnalisations au niveau du Document](../vsto/combining-vba-and-document-level-customizations.md).  
+     Pour plus d’informations sur les formats de fichier de document qui prennent en charge les macros, consultez [combiner de VBA et de personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md).  
   
     > [!NOTE]  
     >  Cette fonctionnalité ne peut pas être utilisée dans les projets de modèle Word.  
   
-2.  Assurez-vous que du code VBA dans le document est autorisé à s’exécuter sans inviter l’utilisateur à activer les macros. Vous pouvez approuver le code VBA à exécuter en ajoutant l'emplacement du projet Office à la liste des emplacements approuvés dans les paramètres du Centre de gestion de la confidentialité pour Word ou Excel.  
+2.  Assurez-vous que le code VBA dans le document est autorisé à s’exécuter sans inviter l’utilisateur à activer les macros. Vous pouvez approuver le code VBA à exécuter en ajoutant l'emplacement du projet Office à la liste des emplacements approuvés dans les paramètres du Centre de gestion de la confidentialité pour Word ou Excel.  
   
-3.  Ajouter le membre que vous souhaitez exposer à VBA à une classe publique dans votre projet et déclarez le nouveau membre en tant que **public**.  
+3.  Ajoutez le membre que vous souhaitez exposer à VBA à une classe publique dans votre projet et déclarez le nouveau membre en tant que **public**.  
   
-4.  Appliquez ce qui suit <xref:System.Runtime.InteropServices.ComVisibleAttribute> et <xref:Microsoft.VisualBasic.ComClassAttribute> des attributs à la classe que vous exposez à VBA. Ces attributs rendent la classe visible pour VBA.  
+4.  Appliquer les éléments suivants <xref:System.Runtime.InteropServices.ComVisibleAttribute> et <xref:Microsoft.VisualBasic.ComClassAttribute> des attributs à la classe que vous exposez à VBA. Ces attributs rendent la classe visible pour VBA.  
   
     ```vb  
     <Microsoft.VisualBasic.ComClass()> _  
@@ -106,24 +107,24 @@ ms.lasthandoff: 04/16/2018
     End Function  
     ```  
   
-6.  Ouvrez le document (pour Word) ou le Concepteur de feuille de calcul (pour Excel) dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+6.  Ouvrir le document (pour Word) ou le Concepteur de feuille de calcul (pour Excel) dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 7.  Dans la fenêtre **Propriétés** , sélectionnez la propriété **ReferenceAssemblyFromVbaProject** et remplacez sa valeur par **True**.  
   
     > [!NOTE]  
-    >  Si le classeur ou le document ne contient pas déjà du code VBA, ou si le code VBA dans le document n’est pas approuvé, vous recevrez un message d’erreur lorsque vous définissez la **ReferenceAssemblyFromVbaProject** propriété **True** . Cela est dû au fait que Visual Studio ne peut pas modifier le projet VBA dans le document dans cette situation.  
+    >  Si le classeur ou le document ne contient-elle pas déjà du code VBA, ou si le code VBA dans le document n’est pas approuvé, vous recevrez un message d’erreur lorsque vous définissez la **ReferenceAssemblyFromVbaProject** propriété **True** . Cela est dû au fait que Visual Studio ne peut pas modifier le projet VBA dans le document dans cette situation.  
   
-8.  Cliquez sur **OK** dans le message qui s'affiche. Ce message vous rappelle que si vous ajoutez du code VBA au classeur ou au document lors vous exécutez le projet à partir de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], le code VBA seront perdu lors de la prochaine fois que vous générez le projet. Il s’agit, car le document dans le dossier de sortie de génération est remplacé chaque fois que vous générez le projet.  
+8.  Cliquez sur **OK** dans le message qui s'affiche. Ce message vous rappelle que si vous ajoutez du code VBA au classeur ou un document lorsque vous exécutez le projet à partir de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], le code VBA seront perdu lors de la prochaine fois que vous générez le projet. Il s’agit, car le document dans le dossier de sortie de génération est remplacé chaque fois que vous générez le projet.  
   
-     À ce stade, Visual Studio configure le projet afin que le projet VBA peut appeler l’assembly. Visual Studio ajoute également une méthode nommée `GetManagedClass` au projet VBA. Vous pouvez appeler cette méthode à partir de n’importe où dans le projet VBA pour accéder à la classe que vous avez exposée à VBA.  
+     À ce stade, Visual Studio configure le projet afin que le projet VBA peut appeler l’assembly. Visual Studio ajoute également une méthode nommée `GetManagedClass` au projet VBA. Vous pouvez appeler cette méthode depuis n’importe où dans le projet VBA pour accéder à la classe que vous avez exposée à VBA.  
   
 9. Générez le projet.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Conception et création de Solutions Office](../vsto/designing-and-creating-office-solutions.md)   
- [Combinaison de VBA et de personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md)   
- [Procédure pas à pas : Appel de Code à partir de VBA dans un projet Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [Comment : exposer du Code à VBA dans un Visual C&#35; projet](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
+ [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Combiner VBA et personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Procédure pas à pas : Appeler du code à partir de VBA dans un projet Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
+ [Comment : exposer du code à VBA dans un Visual C&#35; projet](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
   
   

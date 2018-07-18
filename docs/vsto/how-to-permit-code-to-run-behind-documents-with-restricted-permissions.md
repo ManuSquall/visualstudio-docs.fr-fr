@@ -1,5 +1,5 @@
 ---
-title: 'Comment : permettre au Code de s’exécuter derrière des Documents avec des autorisations restreintes | Documents Microsoft'
+title: 'Comment : permettre au code à exécuter derrière des documents avec des autorisations restreintes'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,40 +20,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb5b9421bd6d0228a93ba7ba7516c9ebc7b7c761
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b02afb7008233c720feae179b4726f9958a44af
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255284"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Comment : permettre au code de s'exécuter derrière des documents dotés d'autorisations restreintes
-  Vous pouvez utiliser la fonctionnalité Information Rights Management (IRM) de Microsoft Office pour limiter les autorisations à un document ou le classeur. Par défaut, le code derrière un document Microsoft Office Word restreint ou un classeur Microsoft Office Excel n’est pas autorisé à s’exécuter. Vous pouvez modifier la valeur par défaut afin que vos extensions de code managé peuvent accéder au modèle objet, et que votre solution ne fonctionnera pas.  
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Comment : permettre au code à exécuter derrière des documents avec des autorisations restreintes
+  Vous pouvez utiliser la fonctionnalité Information Rights Management (IRM) de Microsoft Office pour restreindre les autorisations à un document ou classeur. Par défaut, le code derrière un document Microsoft Office Word restreint ou un classeur Microsoft Office Excel n’est pas autorisé à exécuter. Vous pouvez modifier la valeur par défaut afin que vos extensions de code managé peuvent accéder au modèle objet, et votre solution fonctionnera.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Vous devez être l’auteur du document ou classeur ou avoir accès en contrôle total pour pouvoir modifier les paramètres d’autorisation.  
+ Vous devez être l’auteur du document ou classeur ou ont un accès contrôle total pour pouvoir modifier les paramètres d’autorisation.  
   
-### <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Pour permettre au code à exécuter derrière des documents avec des autorisations restreintes  
+## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Pour autoriser le code de s’exécuter derrière des documents avec des autorisations restreintes  
   
 1.  Ouvrez le document ou le classeur dans Word ou Excel.  
   
 2.  Cliquez sur le **fichier** onglet, pointez sur **préparation**, pointez sur **restreindre l’autorisation**, puis cliquez sur **accès restreint**.  
   
     > [!NOTE]  
-    >  La première utilisation, vous êtes invité à installer le client Windows Rights Management. Après avoir installé le client, vous devrez peut-être répéter les étapes.  
+    >  À la première utilisation, vous êtes invité à installer le client Windows Rights Management. Après avoir installé le client, vous devrez peut-être répéter ces étapes.  
   
 3.  Dans le **autorisation** boîte de dialogue, sélectionnez **restreindre l’autorisation à ce document**, puis cliquez sur **plus d’Options**.  
   
-4.  Sous **des autorisations supplémentaires pour les utilisateurs**, sélectionnez **accéder par programme au contenu**.  
+4.  Sous **des autorisations supplémentaires pour les utilisateurs**, sélectionnez **accéder par programmation au contenu**.  
   
- Word ou Excel autorise l’accès par programme au modèle objet.  
+ Word ou Excel autorise un accès par programmation au modèle objet.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Information Rights Management et vue d’ensemble des Extensions de Code managé](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Protection des documents dans les Solutions au niveau du Document](../vsto/document-protection-in-document-level-solutions.md)   
- [Mot de passe sur des Documents Office](../vsto/password-protection-on-office-documents.md)   
- [Conception et création de Solutions Office](../vsto/designing-and-creating-office-solutions.md)   
- [Sécurisation des Solutions Office](../vsto/securing-office-solutions.md)   
- [Déploiement d’une solution Office](../vsto/deploying-an-office-solution.md)  
+ [Information rights management et vue d’ensemble des extensions de code managé](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [Protection des documents dans les solutions au niveau du document](../vsto/document-protection-in-document-level-solutions.md)   
+ [Protection de mot de passe des documents Office](../vsto/password-protection-on-office-documents.md)   
+ [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)   
+ [Déployer une solution Office](../vsto/deploying-an-office-solution.md)  
   
   

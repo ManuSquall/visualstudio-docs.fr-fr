@@ -1,5 +1,5 @@
 ---
-title: 'Comment : remplir des contrôles ListObject données | Documents Microsoft'
+title: 'Comment : contrôle le ListObject de remplissage avec des données'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,18 +20,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 433928cd817e3ef796d9f6e2f4b4aab27cda2346
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9e255d4099a90173b9dbc7ff6fd7b2225d0622d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255702"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>Comment : remplir de données des contrôles ListObject
+# <a name="how-to-fill-listobject-controls-with-data"></a>Comment : contrôle le ListObject de remplissage avec des données
   Vous pouvez utiliser la liaison de données comme moyen pour ajouter rapidement des données à votre document. Après avoir lié les données à un objet de liste, vous pouvez déconnecter celui-ci de manière à ce qu’il affiche les données mais ne soit plus lié à leur source.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vidéo") pour une démonstration vidéo connexe, consultez [comment faire pour créer une liste dans Excel qui est connecté à une liste SharePoint ?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment faire : créer une liste dans Excel qui est connecté à une liste SharePoint ?](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ### <a name="to-bind-data-to-a-listobject-control"></a>Pour lier des données à un contrôle ListObject  
   
@@ -57,18 +58,18 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#23)]
      [!code-vb[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#23)]  
   
-## <a name="compiling-the-code"></a>Compilation du code  
+## <a name="compile-the-code"></a>Compiler le code  
  Cet exemple de code suppose qu’un <xref:Microsoft.Office.Tools.Excel.ListObject> nommé `list1` existe dans la feuille de calcul dans laquelle ce code apparaît.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Extension de Documents Word et classeurs Excel dans des Compléments VSTO au moment de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
- [Contrôles sur des Documents Office](../vsto/controls-on-office-documents.md)   
- [Ajout de contrôles aux Documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Comment : mapper des colonnes ListObject aux données](../vsto/how-to-map-listobject-columns-to-data.md)   
- [Automatisation d’Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Étendre des documents Word et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [Contrôles sur des documents Office](../vsto/controls-on-office-documents.md)   
+ [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Comment : colonnes carte ListObject aux données](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject (contrôle)](../vsto/listobject-control.md)   
- [Liaison de données aux contrôles dans les Solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Comment : remplir des feuilles de calcul avec des données à partir d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [Guide pratique pour remplir des documents avec des données provenant de services](../vsto/how-to-populate-documents-with-data-from-services.md)  
+ [Comment : remplir des documents avec des données à partir des services](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
   
