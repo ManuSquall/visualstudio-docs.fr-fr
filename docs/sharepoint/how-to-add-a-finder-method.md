@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ajouter une méthode de recherche | Documents Microsoft'
+title: 'Comment : ajouter une méthode de recherche | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,36 +22,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7773c2c81527e065652486eb851f3c27828bf76d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 3c7233f344282b5ce5793f7b6733e5e657534023
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767130"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756978"
 ---
 # <a name="how-to-add-a-finder-method"></a>Comment : ajouter une méthode de recherche
-  Pour activer le service de connectivité de données métiers (BDC) afficher la liste des entités dans une liste ou un composant WebPart, vous devez créer un *recherche* (méthode). Une méthode de recherche est une méthode spéciale qui retourne une collection d’instances d’entité. Pour plus d’informations, consultez [vous concevez un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
+  Pour activer le service de connectivité de données métiers (BDC) afficher une liste d’entités dans une liste ou un composant WebPart, vous devez créer un *Finder* (méthode). Une méthode de recherche est une méthode spéciale qui retourne une collection d’instances d’entité. Pour plus d’informations, consultez [conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-finder-method"></a>Pour créer une méthode de recherche  
   
-1.  Sur le **concepteur BDC**, sélectionnez une entité.  
+1.  Sur le **concepteur BDC**, choisir une entité.  
   
      Pour plus d’informations, consultez [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
-2.  Dans la barre de menus, choisissez **vue** > **autres fenêtres** > **détails de méthode BDC**.  
+2.  Dans la barre de menus, choisissez **vue** > **Windows autres** > **détails de méthode BDC**.  
   
-     Le **détails de méthode BDC** fenêtre s’ouvre. Pour plus d’informations sur la **détails de méthode BDC** fenêtre, consultez [vue d’ensemble des outils de conception modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).  
+     Le **détails de méthode BDC** fenêtre s’ouvre. Pour plus d’informations sur la **détails de méthode BDC** fenêtre, consultez [vue d’ensemble des outils de conception du modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
 3.  Dans le **ajouter une méthode** , choisissez **créer une méthode de recherche**.  
   
      Visual Studio ajoute une méthode, un paramètre de retour et un descripteur de type.  
   
-4.  Configurez le descripteur de type en tant que descripteur de type entité collection. Pour plus d’informations sur la création d’un descripteur de type de collection entité, consultez [Comment : définir le descripteur de Type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+4.  Configurez le descripteur de type en tant qu’un descripteur de type de collection entité. Pour plus d’informations sur la création d’un descripteur de type de collection entité, consultez [Comment : définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
     > [!NOTE]  
-    >  Vous n’avez pas à effectuer cette étape si vous avez ajouté une méthode de recherche spécifique à l’entité. Visual Studio utilise le descripteur de type que vous avez définie dans la méthode de recherche spécifique.  
+    >  Il est inutile d’effectuer cette étape si vous avez ajouté une méthode de recherche spécifique à l’entité. Visual Studio utilise le descripteur de type que vous avez défini dans la méthode de recherche spécifique.  
   
-5.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du service fichier de code qui a été généré pour l’entité, puis choisissez **afficher le Code**. Pour plus d’informations sur le fichier de code de service, consultez [création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).  
+5.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du service du fichier de code qui a été généré pour l’entité, puis choisissez **afficher le Code**. Pour plus d’informations sur le fichier de code de service, consultez [créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 6.  Ajoutez le code à la méthode de recherche. Ce code exécute les tâches suivantes :  
   
@@ -68,13 +68,13 @@ ms.locfileid: "34767130"
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]  
   
 ## <a name="see-also"></a>Voir aussi
- [Présentation des outils de conception modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [Vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)   
+ [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Comment : ajouter une méthode de recherche spécifique](../sharepoint/how-to-add-a-specific-finder-method.md)   
  [Comment : ajouter une méthode de création](../sharepoint/how-to-add-a-creator-method.md)   
  [Comment : ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md)   
  [Comment : ajouter une méthode de mise à jour](../sharepoint/how-to-add-an-updater-method.md)   
  [Comment : ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Guide pratique pour définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)  
+ [Comment : définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)  
   
   

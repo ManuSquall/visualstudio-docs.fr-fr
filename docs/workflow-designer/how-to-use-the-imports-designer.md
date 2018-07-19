@@ -1,5 +1,5 @@
 ---
-title: 'Le Concepteur de flux de travail - Comment : utiliser le Concepteur d’importations'
+title: 'Concepteur de flux de travail - Comment : utiliser le Concepteur d’importations'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de974ebba6fbe746a4d7acb4c1a20fefa5488a8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d50267ca8899343d2b704aa28beabc07ed432936
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970646"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755860"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Procédure : utiliser le concepteur d'importations
 
-Le concepteur d'importations vous permet d'entrer des espaces de noms pour les types que vous utiliserez dans vos expressions. Tout comme le **importe** ou **à l’aide de** mots clés dans Visual Basic et c#, en spécifiant les espaces de noms dans le Concepteur d’importations vous permet d’entrer simplement un nom de type dans votre expression plutôt qu’un complet activer nom de type version.
+Le concepteur d'importations vous permet d'entrer des espaces de noms pour les types que vous utiliserez dans vos expressions. Comme beaucoup le **importe** ou **à l’aide de** activer de mots clés dans Visual Basic et c#, en spécifiant les espaces de noms dans le Concepteur d’importations vous permet d’entrer simplement un nom de type dans votre expression plutôt qu’un qualifié complet nom du type de version.
 
 Le concepteur d'importations réagit aux modifications apportées à l'interface utilisateur ainsi qu'aux modifications apportées lors de l'enregistrement du workflow. Lorsque le workflow est enregistré, des espaces de noms peuvent être automatiquement ajoutés au concepteur d'importations. Notamment :
 
@@ -35,7 +35,7 @@ Le concepteur d'importations réagit aux modifications apportées à l'interface
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Pour ajouter un espace de noms à la liste d'espaces de noms importés
 
-1.  Ouvrez une application de service de Workflow WCF, une application console de workflow ou un projet de bibliothèque d’activités dans Visual Studio 2010 ou une application de workflow réhébergé.
+1.  Ouvrez une application de service de Workflow WCF, une application console de workflow ou un projet de bibliothèque d’activité dans Visual Studio ou d’une application de workflow réhébergé.
 
 2.  Cliquez sur **importations** au bas de la zone de dessin principale. Le concepteur d'importations s'affiche.
 

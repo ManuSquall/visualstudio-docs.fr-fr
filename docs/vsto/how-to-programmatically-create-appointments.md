@@ -1,5 +1,5 @@
 ---
-title: 'Comment : créer des rendez-vous par programmation | Documents Microsoft'
+title: 'Comment : créer des rendez-vous par programmation'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15fc247e088e435e19ea42b5920fe01f62d66859
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f39584841638a242ab06323736556bc22260f91d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257746"
 ---
 # <a name="how-to-programmatically-create-appointments"></a>Comment : créer des rendez-vous par programmation
-  Cet exemple montre comment crée un rendez-vous et ajoute des destinataires à la demande de réunion du rendez-vous.  
+  Cet exemple crée un rendez-vous et ajoute des destinataires à la demande de réunion de rendez-vous.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -31,8 +32,8 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_OL_CreateAppts#1](../vsto/codesnippet/CSharp/Trin_OL_CreateAppts/thisaddin.cs#1)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation des éléments de calendrier](../vsto/working-with-calendar-items.md)   
- [Comment : créer par programmation un calendrier personnalisé](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
- [Guide pratique pour ajouter une entrée aux contacts Outlook par programmation](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
+ [Utiliser des éléments de calendrier](../vsto/working-with-calendar-items.md)   
+ [Comment : créer un calendrier personnalisé par programmation](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
+ [Comment : ajouter par programmation une entrée aux contacts Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
   
   

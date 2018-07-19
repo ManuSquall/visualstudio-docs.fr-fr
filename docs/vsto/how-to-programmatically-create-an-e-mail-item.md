@@ -1,5 +1,5 @@
 ---
-title: 'Comment : créer par programme un élément de messagerie | Documents Microsoft'
+title: 'Comment : créer par programmation un élément de courrier électronique'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3e6fedb9024dcb965917492b3eb8f759c0f6c8ee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28b6b1dac69199ff7431eacbe05d8a17a1734763
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256596"
 ---
-# <a name="how-to-programmatically-create-an-e-mail-item"></a>Comment : créer un élément de messagerie par programmation
+# <a name="how-to-programmatically-create-an-email-item"></a>Comment : créer par programmation un élément de courrier électronique
   Cet exemple crée un message électronique dans Microsoft Office Outlook.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_OL_CreateMailItem#1](../vsto/codesnippet/CSharp/Trin_OL_CreateMailItem/thisaddin.cs#1)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation des éléments de messagerie](../vsto/working-with-mail-items.md)   
- [Bien démarrer avec la programmation des compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [Travailler avec des éléments de messagerie](../vsto/working-with-mail-items.md)   
+ [Commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   
