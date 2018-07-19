@@ -1,5 +1,5 @@
 ---
-title: Affichage Threads GPU dans le débogueur | Documents Microsoft
+title: Affichage des Threads GPU dans le débogueur | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,11 +21,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: c99e0e1bf64a6a88778d4bfcf27a796916a0f044
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476726"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38800917"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Comment : utiliser la fenêtre Threads GPU
 Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui s'exécutent sur le GPU dans l'application que vous déboguez. Pour plus d’informations sur les applications qui s’exécutent sur le GPU, consultez [présentation de C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
@@ -34,19 +34,19 @@ Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui
   
 -   La colonne d'indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale.  
   
--   Colonne de thread active, dans laquelle une flèche jaune indique que le thread actuel.  
+-   Colonne de thread active, dans lequel une flèche jaune indique que le thread actuel.  
   
--   Le **le nombre de threads** colonne, qui affiche le nombre de threads au même emplacement.  
+-   Le **le nombre de threads** colonne qui affiche le nombre de threads au même emplacement.  
   
--   Le **ligne** colonne, qui affiche la ligne de code où se trouve chaque groupe de threads.  
+-   Le **ligne** colonne qui affiche la ligne de code où se trouve chaque groupe de threads.  
   
--   Le **adresse** colonne qui affiche l’adresse d’instruction où chaque groupe de threads est localisé. Par défaut, cette colonne est masquée.  
+-   Le **adresse** colonne qui affiche l’adresse d’instruction où se trouve chaque groupe de threads. Par défaut, cette colonne est masquée.  
   
 -   Le **emplacement** colonne, qui est l’emplacement dans le code source.  
   
--   Le **état** colonne, ce qui indique si le thread est actif, bloqué, non démarré ou terminé.  
+-   Le **état** colonne, ce qui indique si le thread est actif, bloqué, non démarré ou complète.  
   
--   Le **vignette** colonne, ce qui indique l’index de mosaïque des threads dans la ligne.  
+-   Le **vignette** colonne, ce qui indique l’index de la mosaïque pour les threads dans la ligne.  
   
  L'en-tête du tableau montre la mosaïque et le thread en cours d'affichage.  
   
@@ -68,13 +68,13 @@ Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui
   
 7.  Une barre de menus, choisissez **déboguer**, **Windows**, **Threads GPU**.  
   
-### <a name="to-switch-to-a-different-thread"></a>Pour basculer vers un autre thread.  
+### <a name="to-switch-to-a-different-thread"></a>Pour basculer vers un autre thread  
   
 -   Double-cliquez sur la colonne. (Raccourci : sélectionnez la ligne et choisissez Entrée.)  
   
 ### <a name="to-display-a-particular-tile-and-thread"></a>Pour afficher une mosaïque et un thread particuliers  
   
-1.  Choisissez le **développer le sélecteur de Thread** dans la fenêtre Threads GPU.  
+1.  Choisissez le **développer le sélecteur de Thread** bouton dans la fenêtre Threads GPU.  
   
 2.  Entrez les valeurs de mosaïque et de threads dans les zones de texte.  
   
@@ -105,6 +105,6 @@ Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui
 -   Cliquez sur le bouton indicateur dans la fenêtre Threads GPU.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage d’Applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Déboguer les Applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Comment : utiliser la fenêtre Espion parallèle](../debugger/how-to-use-the-parallel-watch-window.md)   
  [Procédure pas-à-pas : débogage d’une application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

@@ -1,5 +1,5 @@
 ---
-title: Service et le catalogue de l’image | Documents Microsoft
+title: Service et le catalogue de l’image | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,69 +9,69 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b393d9dcf732d9042338dc0786d824351deca3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ab9a2e602bf1c92fb7dee7fe35b9d33f2d578fa
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134669"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079078"
 ---
-# <a name="image-service-and-catalog"></a>Catalogue et le Service d’images
-Ce guide contient des conseils et meilleures pratiques pour arrêter le Service d’images Visual Studio et le catalogue d’Image introduite dans Visual Studio 2015.  
+# <a name="image-service-and-catalog"></a>Catalogue et service d’images
+Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter le Service d’images Visual Studio et le catalogue d’Image introduite dans Visual Studio 2015.  
   
- Le service d’images introduit dans Visual Studio 2015 permet aux développeurs d’obtenir les meilleures images pour l’appareil et le thème sélectionné de l’utilisateur pour afficher l’image, y compris les thèmes correct pour le contexte dans lequel ils sont affichés. Arrêter le service d’images aidera à éliminer les principaux points faibles liés à la gestion des actifs, mise à l’échelle HDPI et thèmes.  
+ Le service d’images introduit dans Visual Studio 2015 permet aux développeurs d’obtenir les meilleures images pour l’appareil et le thème choisi de l’utilisateur pour afficher l’image, y compris les thèmes correct pour le contexte dans lequel ils sont affichés. Adopter le service d’images aidera à éliminer les principaux points faibles liés à la maintenance de l’élément multimédia, mise à l’échelle HDPI et thèmes.  
   
 |||  
 |-|-|  
-|**Problèmes aujourd'hui**|**Solutions**|  
+|**Problèmes dès aujourd'hui**|**Solutions**|  
 |Fusion de la couleur d’arrière-plan|Fusion alpha intégrés|  
-|Images de thèmes (certains)|Métadonnées de thème|  
+|Images de thèmes (certaines)|Métadonnées de thème|  
 |Mode de contraste élevé|Autres ressources de contraste élevé|  
-|Besoin de plusieurs ressources pour les différents modes de PPP|Ressources sélectionnables avec vectorielle de secours|  
+|Avez besoin de plusieurs ressources pour différents modes de PPP|Ressources sélectionnables avec vectoriel de secours|  
 |Images dupliquées|Un seul identificateur par le concept d’image|  
   
  Pourquoi adopter le service d’images ?  
   
--   Toujours obtenir la dernière image « pixel parfaite » à partir de Visual Studio  
+-   Toujours obtenir la dernière image de « pixel-perfect » à partir de Visual Studio  
   
--   Vous pouvez envoyer et utiliser vos propres images  
+-   Vous pouvez soumettre et utiliser vos propres images  
   
--   Pas nécessaire de tester vos images out lorsque Windows ajoute la nouvelle échelle en PPP  
+-   Aucune nécessité de tester vos images out lorsque Windows ajoute la nouvelle échelle en PPP  
   
 -   Ancien obstacles architecturales dans vos implémentations d’adresses  
   
- Le Visual Studio shell barre d’outils avant et après l’utilisation du service de l’image :  
+ Le Visual Studio shell barre d’outils avant et après avoir utilisé le service d’images :  
   
  ![Service d’images avant et après](../extensibility/media/image-service-before-and-after.png "Service d’images avant et après")  
   
-## <a name="how-it-works"></a>Son fonctionnement  
- Le service d’images peut fournir une image bitmap appropriée pour une infrastructure d’interface utilisateur pris en charge :  
+## <a name="how-it-works"></a>Son fonctionnement
+ Le service d’images peut fournir une image bitmap adaptée à n’importe quel framework d’interface utilisateur pris en charge :  
   
 -   WPF : BitmapSource  
   
--   Windows Forms : System.Drawing.Bitmap  
+-   WinForms : System.Drawing.Bitmap  
   
 -   Win32 : HBITMAP  
   
- Image du diagramme de flux de service  
+ Diagramme de flux de service image  
   
- ![Diagramme de flux de Service de l’image](../extensibility/media/image-service-flow-diagram.png "Organigramme du Service de l’Image")  
+ ![Diagramme de flux de Service de l’image](../extensibility/media/image-service-flow-diagram.png "diagramme de flux de Service de l’Image")  
   
  **Monikers d’image**  
   
- Un moniker d’image (ou moniker pour la forme courte) est une paire GUID/ID qui identifie de façon unique un composant de l’image ou le composant de liste l’image dans la bibliothèque d’images.  
+ Un moniker d’image (ou moniker en abrégé) est une paire GUID/ID qui identifie de façon unique un composant de l’image ou le composant de liste l’image dans la bibliothèque d’images.  
   
  **Monikers connus**  
   
- L’ensemble des monikers image contenue dans le catalogue d’images Visual Studio et publiquement consommable par n’importe quel composant de Visual Studio ou l’extension.  
+ L’ensemble des monikers image contenue dans le catalogue des images de Visual Studio et publiquement consommable par n’importe quel composant de Visual Studio ou l’extension.  
   
- **Fichiers manifestes d’image**  
+ **Fichiers de manifeste d’image**  
   
- Les fichiers image manifeste (.imagemanifest) sont des fichiers XML qui définissent un ensemble de composants de l’image, les monikers qui représentent ces ressources et l’image réelle ou des images qui représentent chaque élément multimédia. Manifestes d’images peuvent définir des images autonomes ou les listes d’images pour la prise en charge héritée de l’interface utilisateur. En outre, il existe des attributs qui peuvent être définies sur l’élément multimédia ou sur des images individuelles derrière chaque élément multimédia pour modifier quand et comment ces éléments sont affichés.  
+ Manifeste de l’image (*.imagemanifest*) sont des fichiers XML qui définissent un ensemble de ressources d’image, les monikers qui représentent ces actifs et l’image réelle ou des images qui représentent chaque élément multimédia. Manifestes d’images peuvent définir des images autonomes ou les listes d’images pour la prise en charge héritée de l’interface utilisateur. En outre, il existe des attributs qui peuvent être définies sur l’élément multimédia ou sur des images individuelles derrière chaque élément multimédia pour modifier quand et comment ces actifs sont affichés.  
   
  **Schéma de manifeste d’image**  
   
- Un manifeste de l’image complète ressemble à ceci :  
+ Un manifeste de finalisation d’image se présente comme suit :  
   
 ```xml  
 <ImageManifest>  
@@ -92,7 +92,7 @@ Ce guide contient des conseils et meilleures pratiques pour arrêter le Service 
   
  **Symboles**  
   
- Faciliter la lisibilité et la maintenance, le manifeste de l’image permet les symboles pour les valeurs d’attribut. Symboles qui sont définis comme suit :  
+ Comme une meilleure lisibilité et la maintenance d’aide, le manifeste de l’image peut utiliser les symboles pour les valeurs d’attribut. Symboles qui sont définis comme suit :  
   
 ```xml  
 <Symbols>  
@@ -106,12 +106,12 @@ Ce guide contient des conseils et meilleures pratiques pour arrêter le Service 
 |||  
 |-|-|  
 |**Sous-élément**|**Définition**|  
-|Import|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel|  
-|GUID|Le symbole représente un GUID et doit correspondre au GUID de mise en forme|  
+|Import|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste en cours|  
+|GUID|Le symbole représente un GUID et doit correspondre à la mise en forme de GUID|  
 |Id|Le symbole représente un ID et doit être un entier non négatif|  
 |Chaîne|Le symbole représente une valeur de chaîne arbitraire|  
   
- Symboles respectent la casse et référencés à l’aide de la syntaxe de $(symbol-name) :  
+ Symboles respectent la casse et référencée à l’aide de la syntaxe de $(symbol-name) :  
   
 ```xml  
 <Image Guid="$(ShellCommandGuid)" ID="$(cmdidSaveAll)" >  
@@ -119,24 +119,24 @@ Ce guide contient des conseils et meilleures pratiques pour arrêter le Service 
 </Image>  
 ```  
   
- Certains symboles sont prédéfinis pour tous les manifestes. Ils peuvent être utilisés dans l’attribut Uri de la \<Source > ou \<importation > élément aux chemins d’accès de référence sur l’ordinateur local.  
+ Certains symboles sont prédéfinis pour tous les manifestes. Celles-ci peuvent être utilisées dans l’attribut Uri de la \<Source > ou \<importation > élément aux chemins d’accès de référence sur l’ordinateur local.  
   
 |||  
 |-|-|  
 |**Symbole**|**Description**|  
-|CommonProgramFiles|La valeur de la variable d’environnement % %CommonProgramFiles|  
+|CommonProgramFiles|La valeur de la variable d’environnement % %CommonProgramFiles%|  
 |LocalAppData|La valeur de la variable d’environnement % LocalAppData|  
 |ManifestFolder|Le dossier contenant le fichier manifest|  
 |Mes documents|Le chemin d’accès complet du dossier Mes Documents de l’utilisateur actuel|  
-|ProgramFiles|La valeur de la variable d’environnement % ProgramFiles|  
-|Système|Le dossier Windows\System32|  
+|ProgramFiles|La valeur de la variable d’environnement % ProgramFiles %|  
+|Système|Le *Windows\System32* dossier|  
 |WinDir|La valeur de la variable d’environnement % WinDir %|  
   
  **Image**  
   
- Le \<Image > élément définit une image qui peut être référencée par un moniker. Le GUID et l’ID d’ensemble forment le moniker d’image. Le moniker de l’image doit être unique dans la bibliothèque de l’intégralité de l’image. Si plusieurs images a un moniker donné, la première rencontré lors de la génération de la bibliothèque est celui qui est conservé.  
+ Le \<Image > élément définit une image qui peut être référencée par un moniker. Le GUID et l’ID d’ensemble forment le moniker d’image. Le moniker de l’image doit être unique dans la bibliothèque de l’intégralité de l’image. Si plusieurs images a un moniker donné, le premier a rencontré lors de la création de la bibliothèque est celui qui est conservé.  
   
- Il doit contenir au moins une source. Indépendant de la taille des sources donnera les meilleurs résultats sur un large éventail de tailles, mais ils ne sont pas requis. Si le service est demandé pour une image d’une taille non définie dans le \<Image > élément et qu’aucune source indépendant de la taille, le service de choisir la meilleure source spécifique à la taille et mettre à l’échelle à la taille demandée.  
+ Il doit contenir au moins une source. Indépendant de la taille des sources donnera les meilleurs résultats sur un large éventail de tailles, mais ils ne sont pas requis. Si le service est demandé pour une image d’une taille non définie dans le \<Image > élément et qu’aucune source indépendant de la taille, le service de choisir la meilleure source spécifiques à la taille et l’échelle à la taille demandée.  
   
 ```xml  
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">  
@@ -148,9 +148,9 @@ Ce guide contient des conseils et meilleures pratiques pour arrêter le Service 
 |||  
 |-|-|  
 |**Attribut**|**Définition**|  
-|GUID|[Obligatoire] Le GUID du moniker d’image|  
+|GUID|[Obligatoire] La partie GUID du moniker d’image|  
 |Id|[Obligatoire] La partie de l’ID du moniker d’image|  
-|AllowColorInversion|[Facultatif, par défaut la valeur true] Indique si l’image peut avoir ses couleurs inversées par programmation les lorsqu’il est utilisé sur un arrière-plan sombre.|  
+|AllowColorInversion|[Facultatif, par défaut la valeur true] Indique si l’image peut avoir ses couleurs inversées par programme lorsqu’il est utilisé sur un arrière-plan sombre.|  
   
  **Source**  
   
@@ -165,21 +165,21 @@ Ce guide contient des conseils et meilleures pratiques pour arrêter le Service 
 |||  
 |-|-|  
 |**Attribut**|**Définition**|  
-|URI|[Obligatoire] URI qui définit où l’image peut être chargée à partir de. Il peut avoir l'une des valeurs suivantes :<br /><br /> -A [URI à en-tête Pack](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) à l’aide de l’application : / / / autorité<br />-Une référence de ressource du composant absolu<br />: Un chemin d’accès à un fichier contenant une ressource native|  
-|Présentation|[Facultatif] Indique quel type d’arrière-plan de que la source est destinée à être utilisée.<br /><br /> Il peut avoir l'une des valeurs suivantes :<br /><br /> *Lumière :* la source peut être utilisée sur un arrière-plan clair.<br /><br /> *Dark :* la source peut être utilisée sur un arrière-plan sombre.<br /><br /> *Contraste élevé :* la source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> *HighContrastLight :* la source peut être utilisée sur un arrière-plan clair en mode de contraste élevé.<br /><br /> *HighContrastDark :* la source peut être utilisée sur un arrière-plan sombre dans le mode de contraste élevé.<br /><br /> Si l’attribut de l’arrière-plan est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si l’arrière-plan est *Light*, *foncé*, *HighContrastLight*, ou *HighContrastDark*, les couleurs de la source ne sont jamais inversés. Si l’arrière-plan est omis ou a la valeur *contraste élevé*, l’inversion des couleurs de la source est contrôlée par l’image **AllowColorInversion** attribut.|  
+|URI|[Obligatoire] URI qui définit où l’image peut être chargé à partir de. Il peut avoir l'une des valeurs suivantes :<br /><br /> -A [URI à en-tête Pack](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) à l’aide de l’application : / / / autorité<br />-Une référence de ressource du composant absolu<br />-Un chemin d’accès à un fichier contenant une ressource native|  
+|Présentation|[Facultatif] Indique quel type d’arrière-plan de que la source est destinée à être utilisée.<br /><br /> Il peut avoir l'une des valeurs suivantes :<br /><br /> *Lumière :* la source peut être utilisée sur un arrière-plan clair.<br /><br /> *Foncé :* la source peut être utilisée sur un arrière-plan sombre.<br /><br /> *Contraste élevé :* la source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> *HighContrastLight :* la source peut être utilisée sur un arrière-plan clair en mode de contraste élevé.<br /><br /> *HighContrastDark :* la source peut être utilisée sur un arrière-plan sombre en mode de contraste élevé.<br /><br /> Si l’attribut d’arrière-plan est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si l’arrière-plan est *Light*, *foncé*, *HighContrastLight*, ou *HighContrastDark*, les couleurs de la source ne sont jamais inversés. Si l’arrière-plan est omis ou défini sur *contraste élevé*, l’inversion des couleurs de la source est contrôlée par l’image **AllowColorInversion** attribut.|  
 |||  
   
- A \<Source > élément peut avoir un seul des sous-éléments facultatives suivantes :  
+ Un \<Source > élément peut avoir un seul des sous-éléments facultatives suivantes :  
   
 ||||  
 |-|-|-|  
 |**Élément**|**Attributs (tous requis)**|**Définition**|  
-|\<Taille >|Value|La source est utilisée pour les images de la taille donnée (en unités de l’appareil). L’image sera carrée.|  
-|\<SizeRange >|MinSize, MaxSize|La source servira pour les images à partir de MinSize à MaxSize (en unités de périphérique) (inclus). L’image sera carrée.|  
-|\<Dimensions >|Largeur, hauteur|La source est utilisée pour les images de donnée de largeur et hauteur (en unités de l’appareil).|  
+|\<Taille >|Value|La source sera utilisée pour les images de la taille spécifiée (en unités de périphérique). L’image sera carré.|  
+|\<SizeRange >|MinSize, MaxSize|La source servira pour les images à partir de MinSize vers taille maximale (en unités de périphérique) (inclus). L’image sera carré.|  
+|\<Dimensions >|Largeur, hauteur|La source sera utilisée pour les images de la donnée de la largeur et la hauteur (en unités de périphérique).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source servira pour les images à partir de la largeur/hauteur minimale de la largeur/hauteur maximale (en unités de périphérique) (inclus).|  
   
- A \<Source > élément peut également avoir facultatif \<NativeResource > sous-élément qui définit un \<Source > qui est chargé à partir d’un assembly natif plutôt qu’un assembly managé.  
+ Un \<Source > élément peut également avoir un facultatif \<NativeResource > sous-élément qui définit un \<Source > qui est chargé à partir d’un assembly natif plutôt qu’un assembly managé.  
   
 ```xml  
 <NativeResource Type="type" ID="int" />  
@@ -189,7 +189,7 @@ Ce guide contient des conseils et meilleures pratiques pour arrêter le Service 
 |-|-|  
 |**Attribut**|**Définition**|  
 |Type|[Obligatoire] Le type de la ressource native, XAML ou PNG|  
-|Id|[Obligatoire] La partie ID entier de la ressource native|  
+|Id|[Obligatoire] La partie ID d’entier de la ressource native|  
   
  **ImageList**  
   
@@ -205,53 +205,53 @@ Ce guide contient des conseils et meilleures pratiques pour arrêter le Service 
 |||  
 |-|-|  
 |**Attribut**|**Définition**|  
-|GUID|[Obligatoire] Le GUID du moniker d’image|  
+|GUID|[Obligatoire] La partie GUID du moniker d’image|  
 |Id|[Obligatoire] La partie de l’ID du moniker d’image|  
-|Ressource externe|[Facultatif, false de valeur par défaut] Indique si le moniker d’image fait référence à une image dans le manifeste actuel.|  
+|Ressource externe|[False par défaut facultative] Indique si le moniker d’image fait référence à une image dans le manifeste en cours.|  
   
- Le moniker de l’image de relation contenant-contenu n’a pas à faire référence à une image définie dans le manifeste en cours. Si l’image de relation contenant-contenu est introuvable dans la bibliothèque d’images, une image d’espace réservé vide sera utilisée à la place.  
+ Le moniker de l’image de relation contenant-contenu n’a pas référencer une image définie dans le manifeste en cours. Si l’image de relation contenant-contenu est introuvable dans la bibliothèque d’images, une image d’espace réservé vide sera utilisée à la place.  
   
 ## <a name="using-the-image-service"></a>À l’aide du service d’images  
   
-### <a name="first-steps-managed"></a>Premières étapes (gérées)  
+### <a name="first-steps-managed"></a>Premières étapes (gérés)  
  Pour utiliser le service d’images, vous devez ajouter des références à certains ou tous les assemblys suivants à votre projet :  
   
--   **Microsoft.VisualStudio.ImageCatalog.dll**  
+-   *Microsoft.VisualStudio.ImageCatalog.dll*  
   
-    -   Requis si vous utilisez le catalogue de l’image intégrée KnownMonikers  
+    -   Requis si vous utilisez le catalogue de l’image intégrée **KnownMonikers**.  
   
--   **Microsoft.VisualStudio.Imaging.dll**  
+-   *Microsoft.VisualStudio.Imaging.dll*  
   
-    -   Requis si vous utilisez **CrispImage** et **ImageThemingUtilities** dans votre UI WPF  
+    -   Requis si vous utilisez **CrispImage** et **ImageThemingUtilities** dans votre UI WPF.
   
--   **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
+-   *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll*  
   
-    -   Requis si vous utilisez la **ImageMoniker** et **ImageAttributes** types  
+    -   Requis si vous utilisez le **ImageMoniker** et **ImageAttributes** types.  
   
-    -   **EmbedInteropTypes** doit être définie sur true  
+    -   **EmbedInteropTypes** doit être définie sur true.  
   
--   **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
+-   *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime*  
   
-    -   Requis si vous utilisez la **IVsImageService2** type  
+    -   Requis si vous utilisez le **IVsImageService2** type.  
   
-    -   **EmbedInteropTypes** doit être définie sur true  
+    -   **EmbedInteropTypes** doit être définie sur true.  
   
--   **Microsoft.VisualStudio.Utilities.dll**  
+-   *Microsoft.VisualStudio.Utilities.dll*  
   
-    -   Requis si vous utilisez la **BrushToColorConverter** pour le ImageThemingUtilities. **ImageBackgroundColor** dans votre interface utilisateur WPF  
+    -   Requis si vous utilisez le **BrushToColorConverter** pour le **ImageThemingUtilities.ImageBackgroundColor** dans votre UI WPF.  
   
--   **Microsoft.VisualStudio.Shell. \<VSVersion >.0**  
+-   *Microsoft.VisualStudio.Shell. \<VSVersion >.0*  
   
-    -   Requis si vous utilisez la **IVsUIObject** type  
+    -   Requis si vous utilisez le **IVsUIObject** type.  
   
--   **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
+-   *Microsoft.VisualStudio.Shell.Interop.10.0.dll*  
   
-    -   Requis si vous utilisez les programmes d’assistance de l’interface utilisateur associée WinForms  
+    -   Requis si vous utilisez les programmes d’assistance de l’interface utilisateur associée WinForms.  
   
     -   **EmbedInteropTypes** doit être définie sur true  
   
 ### <a name="first-steps-native"></a>Premières étapes (natif)  
- Pour utiliser le service d’images, vous devez inclure certains ou tous les en-têtes suivants à votre projet :  
+ Pour utiliser le service d’images, vous devez inclure tout ou partie des en-têtes suivants à votre projet :  
   
 -   **KnownImageIds.h**  
   
@@ -263,31 +263,31 @@ Ce guide contient des conseils et meilleures pratiques pour arrêter le Service 
   
 -   **ImageParameters140.h**  
   
-    -   Requis si vous utilisez la **ImageMoniker** et **ImageAttributes** types.  
+    -   Requis si vous utilisez le **ImageMoniker** et **ImageAttributes** types.  
   
 -   **VSShell140.h**  
   
-    -   Requis si vous utilisez la **IVsImageService2** type.  
+    -   Requis si vous utilisez le **IVsImageService2** type.  
   
 -   **ImageThemingUtilities.h**  
   
-    -   Requis si vous ne pouvez pas le service d’images permettent de gérer les thèmes pour vous.  
+    -   Requis si vous ne pouvez pas le service d’images permettent de gérer des thèmes pour vous.  
   
     -   Si le service d’images peut gérer les thèmes de votre image, n’utilisez pas cet en-tête.  
   
 -   **VSUIDPIHelper.h**  
   
-    -   Requis si vous utilisez les programmes d’assistance PPP pour obtenir la résolution en cours.  
+    -   Requis si vous utilisez les programmes d’assistance PPP pour obtenir la résolution actuelle.  
   
-## <a name="how-do-i-write-new-wpf-ui"></a>Comment écrire les nouvelles WPF UI ?  
+## <a name="how-do-i-write-new-wpf-ui"></a>Comment écrire les nouvelles UI WPF ?  
   
-1.  Commencez par ajouter les références d’assembly requises ci-dessus tout d’abord les étapes de section pour votre projet. Vous n’avez pas besoin de tous les ajouter, ajoutez simplement les références que vous avez besoin. (Remarque : Si vous utilisez ou que vous avez accès à **couleurs** au lieu de **pinceaux**, vous pouvez ignorer la référence à **utilitaires**, car vous n’avez pas besoin du convertisseur.)  
+1.  Commencez par ajouter les références d’assembly requises dans l’exemple ci-dessus tout d’abord les étapes section à votre projet. Vous n’avez pas besoin de tous les ajouter, ajoutez simplement les références que vous avez besoin. (Remarque : Si vous utilisez ou que vous avez accès à **couleurs** au lieu de **pinceaux**, vous pouvez ignorer la référence à **utilitaires**, étant donné que vous n’aurez pas le convertisseur.)  
   
-2.  Sélectionnez l’image souhaitée et obtenir son nom. Utiliser un **KnownMoniker**, ou utiliser votre propre si vous disposez de vos propres images personnalisées et les monikers.  
+2.  Sélectionnez l’image souhaitée et obtenir son moniker. Utiliser un **KnownMoniker**, ou utiliser votre propre si vous avez vos propres images personnalisées et des monikers.  
   
-3.  Ajouter **CrispImages** à votre code XAML. (Voir exemple ci-dessous).  
+3.  Ajouter **CrispImages** à votre XAML. (Voir exemple ci-dessous).  
   
-4.  Définir le **ImageThemingUtilities.ImageBackgroundColor** propriété dans votre hiérarchie de l’interface utilisateur. (Elle doit être définie à l’emplacement où la couleur d’arrière-plan est connue, pas nécessairement sur le **CrispImage**.) (Voir exemple ci-dessous).  
+4.  Définir le **ImageThemingUtilities.ImageBackgroundColor** propriété dans votre hiérarchie de l’interface utilisateur. (Elle doit être définie à l’emplacement où la couleur d’arrière-plan est connue, non pas nécessairement sur le **CrispImage**.) (Voir exemple ci-dessous).  
   
 ```xaml  
 <Window  
@@ -309,26 +309,26 @@ Ce guide contient des conseils et meilleures pratiques pour arrêter le Service 
 </Window>  
 ```  
   
- **Comment mettre à jour existant WPF UI ?**  
+ **Comment mettre à jour les UI WPF existants ?**  
   
- Mise à jour existant WPF UI est un processus relativement simple qui se compose de trois étapes de base :  
+ La mise à jour existant UI WPF est un processus relativement simple qui se compose de trois étapes de base :  
   
-1.  Remplacer tout \<Image > éléments dans votre interface utilisateur avec \<CrispImage > éléments  
+1.  Remplacer tout \<Image > éléments dans votre interface utilisateur avec \<CrispImage > éléments.  
   
-2.  Modifier tous les attributs de Source aux attributs du Moniker  
+2.  Modifier tous les attributs de Source aux attributs de Moniker.  
   
-    -   Si l’image ne change jamais et que vous utilisez **KnownMonikers**, puis lier statiquement cette propriété à la **KnownMoniker**. (Consultez l’exemple ci-dessus.)  
+    -   Si l’image ne change jamais, et que vous utilisez **KnownMonikers**, puis lier statiquement cette propriété pour le **KnownMoniker**. (Voir l’exemple ci-dessus.)  
   
-    -   Si l’image ne change jamais et que vous utilisez votre propre image personnalisée, puis lier statiquement à votre propre moniker.  
+    -   Si l’image ne change jamais, et que vous utilisez votre propre image personnalisée, puis lier statiquement à votre propre moniker.  
   
-    -   Si l’image peut changer, lier l’attribut de nom à une propriété de code qui notifie des modifications de propriété.  
+    -   Si l’image peut changer, lier l’attribut de Moniker à une propriété de code qui envoie une notification à des modifications de propriété.  
   
 3.  Quelque part dans la hiérarchie de l’interface utilisateur, définissez **ImageThemingUtilities.ImageBackgroundColor** pour rendre l’inversion des couleurs que fonctionne correctement.  
   
-    -   Cela peut nécessiter l’utilisation de la **BrushToColorConverter** classe. (Consultez l’exemple ci-dessus.)  
+    -   Cela peut nécessiter l’utilisation de la **BrushToColorConverter** classe. (Voir l’exemple ci-dessus.)  
   
 ## <a name="how-do-i-update-win32-ui"></a>Comment mettre à jour l’interface utilisateur Win32 ?  
- Ajoutez le code suivant à votre code, le cas échéant remplacer le brut lors du chargement des images. Passer des valeurs de retour HBITMAP et HICONs et HIMAGELIST en fonction des besoins.  
+ Ajoutez le code suivant à votre code dans la mesure appropriée pour remplacer le chargement brutes des images. Passer des valeurs de retour HBITMAP par rapport aux éléments HICON et HIMAGELIST en fonction des besoins.  
   
  **Obtenir le service d’images**  
   
@@ -359,7 +359,7 @@ spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);
 ```  
   
 ## <a name="how-do-i-update-winforms-ui"></a>Comment mettre à jour WinForms UI ?  
- Ajoutez le code suivant à votre code, le cas échéant remplacer le brut lors du chargement des images. Passer des valeurs de retour des Bitmaps et icônes en fonction des besoins.  
+ Ajoutez le code suivant à votre code dans la mesure appropriée pour remplacer le chargement brutes des images. Passer des valeurs de retour des Bitmaps et icônes en fonction des besoins.  
   
  **Utile à l’aide d’instruction**  
   
@@ -399,14 +399,14 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
 ```  
   
-## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>Utilisation de monikers de l’image dans une nouvelle fenêtre outil  
- Le modèle de projet de package VSIX a été mis à jour pour Visual Studio 2015. Pour créer une nouvelle fenêtre outil, avec le bouton droit sur le projet VSIX, puis sélectionnez « Ajouter un élément nouveau... » (Ctrl + Maj + A). Sous le nœud d’extensibilité pour le langage du projet, sélectionnez « Fenêtre de l’outil personnalisé », donnez un nom à la fenêtre outil, appuyez sur le bouton « Ajouter ».  
+## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>Comment utiliser des monikers d’image dans une nouvelle fenêtre outil ?  
+ Le modèle de projet de package VSIX a été mis à jour pour Visual Studio 2015. Pour créer une nouvelle fenêtre outil, avec le bouton droit sur le projet VSIX, puis sélectionnez **ajouter** > **un nouvel élément** (**Ctrl**+**MAJ** + **A**). Sous le nœud d’extensibilité pour le langage du projet, sélectionnez **fenêtre d’outil personnalisé**, donnez à la fenêtre outil, un nom, puis appuyez sur la **ajouter** bouton.  
   
- Ce sont les emplacements de clé à utiliser les monikers dans une fenêtre outil. Suivez les instructions pour chacun :  
+ Il s’agit des emplacements les clés pour utiliser des monikers dans une fenêtre outil. Suivez les instructions pour chacun :  
   
-1.  L’onglet de fenêtre outil lorsque les onglets obtenez small suffisamment (également utilisé dans le sélecteur de fenêtre Ctrl + Tab).  
+1.  L’onglet de fenêtre outil lorsque les onglets obtenir suffisamment petits (également utilisé dans le **Ctrl**+**onglet** sélecteur de fenêtre).  
   
-     Ajoutez cette ligne au constructeur de la classe qui dérive de la **ToolWindowPane** type :  
+     Ajoutez cette ligne au constructeur pour la classe qui dérive de la **ToolWindowPane** type :  
   
     ```csharp  
     // Replace this KnownMoniker with your desired ImageMoniker  
@@ -415,7 +415,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
 2.  La commande pour ouvrir la fenêtre outil.  
   
-     Dans le fichier .vsct pour le package, modifiez le bouton de commande de la fenêtre d’outil :  
+     Dans le *.vsct* de fichier pour le package, bouton de commande de la fenêtre outil modifier :  
   
     ```xml  
     <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
@@ -430,29 +430,29 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
     </Button>  
     ```  
   
- **Comment utiliser les monikers de l’image dans une fenêtre outil existante ?**  
+ **Comment utiliser des monikers d’image dans une fenêtre outil existante ?**  
   
- Mise à jour d’une fenêtre outil existante pour utiliser les monikers de l’image est semblable à la procédure de création d’une nouvelle fenêtre outil.  
+ La mise à jour d’une fenêtre outil existante pour utiliser des monikers de l’image est similaire à la procédure de création d’une nouvelle fenêtre outil.  
   
- Ce sont les emplacements de clé à utiliser les monikers dans une fenêtre outil. Suivez les instructions pour chacun :  
+ Il s’agit des emplacements les clés pour utiliser des monikers dans une fenêtre outil. Suivez les instructions pour chacun :  
   
-1.  L’onglet de fenêtre outil lorsque les onglets obtenez small suffisamment (également utilisé dans le sélecteur de fenêtre Ctrl + Tab).  
+1.  L’onglet de fenêtre outil lorsque les onglets obtenir suffisamment petits (également utilisé dans le **Ctrl**+**onglet** sélecteur de fenêtre).  
   
-    1.  Supprimez ces lignes (s’ils existent) dans le constructeur de la classe qui dérive de la **ToolWindowPane** type :  
+    1.  Supprimer ces lignes (s’ils existent) dans le constructeur de la classe qui dérive de la **ToolWindowPane** type :  
   
         ```csharp  
         this.BitmapResourceID = <Value>;  
         this.BitmapIndex = <Value>;  
         ```  
   
-    2.  Consultez l’étape #1 de la « Comment utiliser les Monikers Image dans une nouvelle fenêtre outil ? » section ci-dessus.  
+    2.  Consultez l’étape #1 le « Comment utiliser les monikers d’image dans une nouvelle fenêtre outil ? » section ci-dessus.  
   
 2.  La commande pour ouvrir la fenêtre outil.  
   
-    -   Consultez l’étape #2 de la « Comment utiliser les Monikers Image dans une nouvelle fenêtre outil ? » section ci-dessus.  
+    -   Consultez l’étape #2 de la « Comment utiliser les monikers d’image dans une nouvelle fenêtre outil ? » section ci-dessus.  
   
-## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Comment utiliser des monikers de l’image dans un fichier .vsct ?  
- Mettre à jour votre fichier .vsct comme indiqué par les lignes commentées ci-dessous :  
+## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Comment utiliser des monikers d’image dans un fichier .vsct ?  
+ Mise à jour votre *.vsct* fichier comme indiqué par les lignes commentées ci-dessous :  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -492,11 +492,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 </CommandTable>  
 ```  
   
- **Que se passe-t-il si mon fichier .vsct doit également être lu par des versions antérieures de Visual Studio ?**  
+ **Que se passe-t-il si mon fichier .vsct doit également être lue par les versions antérieures de Visual Studio ?**  
   
- Les versions antérieures de Visual Studio ne reconnaissent pas le **IconIsMoniker** indicateur de commande. Vous pouvez utiliser des images à partir du service d’images sur des versions de Visual Studio qui prennent en charge, mais continuent à utiliser des images de style ancien sur des versions antérieures de Visual Studio. Pour ce faire, vous conservez le fichier .vsct inchangée (et par conséquent, compatible avec les versions antérieures de Visual Studio) et créer un fichier CSV (valeurs séparées par des virgules) qui est mappé à partir des paires/ID GUID définis dans un fichier de .vsct \<Bitmaps > élément d’image paires GUID/ID de moniker.  
+ Les versions antérieures de Visual Studio ne reconnaissent pas le **IconIsMoniker** indicateur de commande. Vous pouvez utiliser des images à partir du service d’images sur des versions de Visual Studio qui prennent en charge, mais continuent à utiliser des images de style ancien sur les versions antérieures de Visual Studio. Pour ce faire, vous la laisseriez le *.vsct* fichier inchangé (et par conséquent compatible avec les versions antérieures de Visual Studio) et créer un fichier CSV (valeurs séparées par des virgules) qui est mappé à partir des paires ID/GUID définis dans un *.vsct* du fichier \<Bitmaps > élément aux paires GUID/ID image moniker.  
   
- Le format du fichier CSV de mappage est :  
+ Le format du fichier CSV mappage est :  
   
 ```  
 Icon guid, Icon id, Moniker guid, Moniker id  
@@ -504,40 +504,40 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,1,fda30684-682d-421c-8be4-650a2967058e,100
 b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200  
 ```  
   
- Le fichier CSV est déployé avec le package et son emplacement est spécifié par le **IconMappingFilename** propriété de la **ProvideMenuResource** attribut package :  
+ Le fichier CSV est déployé avec le package et son emplacement est spécifié par le **IconMappingFilename** propriété de la **ProvideMenuResource** attribut de package :  
   
 ```csharp  
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]  
 ```  
   
- Le **IconMappingFilename** est un chemin d’accès relatif enraciné implicitement à $ $PackageFolder (comme dans l’exemple ci-dessus) ou un chemin d’accès absolu explicitement située dans le répertoire défini par une variable d’environnement, telles que @"%UserProfile%\dir1\dir2\MyMappingFile.csv".  
+ Le **IconMappingFilename** est d’un chemin d’accès relatif implicitement enracinée à $ $PackageFolder (comme dans l’exemple ci-dessus), ou un chemin d’accès absolu à un répertoire défini par une variable d’environnement, comme racine explicitement *@ « % UserProfile%\dir1\dir2\MyMappingFile.csv »*.  
   
-## <a name="how-do-i-port-a-project-system"></a>Comment de port d’un système de projet  
+## <a name="how-do-i-port-a-project-system"></a>Comment migrer un système de projet ?  
  **Comment fournir ImageMonikers pour un projet**  
   
-1.  Implémentez **VSHPROPID_SupportsIconMonikers** sur du projet **IVsHierarchy**et retourne la valeur true.  
+1.  Implémentez **VSHPROPID_SupportsIconMonikers** sur le projet **IVsHierarchy**et retournent la valeur true.  
   
-2.  Implémenter le **VSHPROPID_IconMonikerImageList** (si le projet d’origine utilisé **VSHPROPID_IconImgList**) ou **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (si le projet d’origine utilisé  **VSHPROPID_IconHandle** et **VSHPROPID_OpenFolderIconHandle**).  
+2.  Implémentent le **VSHPROPID_IconMonikerImageList** (si le projet d’origine utilisé **VSHPROPID_IconImgList**) ou **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (si le projet d’origine utilisé  **VSHPROPID_IconHandle** et **VSHPROPID_OpenFolderIconHandle**).  
   
-3.  Modifier l’implémentation des VSHPROPIDs d’origine pour les icônes pour créer des versions « héritées » des icônes si des points d’extension font la demande. **IVsImageService2** fournit les fonctionnalités nécessaires pour obtenir ces icônes  
+3.  Modifier l’implémentation des VSHPROPIDs d’origine pour les icônes pour créer des versions « héritées » des icônes si les points d’extension les demandent. **IVsImageService2** fournit les fonctionnalités nécessaires pour obtenir ces icônes  
   
  **Exigences supplémentaires pour VB / C# types**  
   
- Uniquement implémenter **VSHPROPID_SupportsIconMonikers** si vous détectez que votre projet est la **flavor extérieur**. Dans le cas contraire, la version extérieur réelle n’acceptent pas les monikers de l’image en réalité, et votre version de base peut-être efficacement « masquer » des images personnalisées.  
+ Uniquement implémenter **VSHPROPID_SupportsIconMonikers** si vous détectez que votre projet est la **flavor extérieur**. Sinon, la version extérieur réelle n’acceptent pas les monikers de l’image en réalité, et votre version de base peut efficacement « masquer » des images personnalisées.  
   
- **Comment utiliser les monikers de l’image dans le CPS ?**  
+ **Comment utiliser des monikers d’image dans le CPS ?**  
   
- Définition des images personnalisées dans une déclaration CPS (système de projet commun) peut être effectuée manuellement ou via un modèle d’élément qui est fourni avec le Kit de développement d’extensibilité de système de projet.  
+ Définition des images personnalisées dans le CPS (système de projet commun) peut être effectuée manuellement ou via un modèle d’élément qui est fourni avec le Kit de développement d’extensibilité de système de projet.  
   
  **À l’aide de l’extensibilité de système de projet SDK**  
   
- Suivez les instructions à [fournir des icônes personnalisées pour le type de projet/élément de Type](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) pour personnaliser les images de votre déclaration CPS. Vous trouverez plus d’informations sur la déclaration CPS sur [Documentation d’extensibilité de système de projet Visual Studio](https://github.com/Microsoft/VSProjectSystem)  
+ Suivez les instructions de [fournir des icônes personnalisées pour le type de projet/élément de Type](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) pour personnaliser vos images CPS. Vous trouverez plus d’informations sur CPS à [documentation sur l’extensibilité système de projet Visual Studio](https://github.com/Microsoft/VSProjectSystem)  
   
  **Utiliser manuellement ImageMonikers**  
   
-1.  Implémentez et exportez le **IProjectTreeModifier** interface dans votre système de projet.  
+1.  Exportez et implémentez la **IProjectTreeModifier** interface dans votre système de projet.  
   
-2.  Déterminer quelles **KnownMoniker** ou moniker d’image personnalisée à utiliser.  
+2.  Déterminer quel **KnownMoniker** ou moniker d’image personnalisée à utiliser.  
   
 3.  Dans le **ApplyModifications** (méthode), procédez comme suit quelque part dans la méthode avant de retourner la nouvelle arborescence, similaire à l’exemple ci-dessous :  
   
@@ -560,12 +560,12 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
                                                  expandedIcon);  
     ```  
   
-## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>Comment convertir à partir d’une bande d’images réelle pour une bande basée sur le moniker de l’image ?  
- **J’ai besoin prendre en charge HIMAGELISTs**  
+## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>Comment convertir à partir d’une bande d’image réel à une bande d’image basée sur le moniker ?  
+ **J’ai besoin pour prendre en charge HIMAGELISTs**  
   
- S’il existe une bande d’image existant pour votre code que vous souhaitez mettre à jour pour utiliser le service d’images, mais vous êtes limité par les API qui nécessitent de passer des listes d’images, vous pouvez toujours obtenir les avantages du service de l’image. Pour créer une bande basée sur le moniker de l’image, suivez les étapes ci-dessous pour créer un manifeste à partir des monikers existants.  
+ En l’absence d’une bande d’image déjà existant pour votre code que vous souhaitez mettre à jour pour utiliser le service d’images, mais vous êtes limité par les API qui nécessitent le fait de passer des listes d’images, vous pouvez toujours obtenir les avantages du service d’image. Pour créer une bande d’image basée sur un moniker, suivez les étapes ci-dessous pour créer un manifeste à partir de monikers existants.  
   
-1.  Exécutez le **ManifestFromResources** outil, en lui passant la bande d’images. Cette opération génère un manifeste pour la bande.  
+1.  Exécutez le **ManifestFromResources** outil, en lui passant la bande d’image. Cette opération génère un manifeste pour la bande.  
   
     -   Recommandé : fournir un nom non par défaut pour le manifeste en fonction de son utilisation.  
   
@@ -573,25 +573,25 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
   
     -   Remplacez le \<Images > section du manifeste avec \<Images / >.  
   
-    -   Supprimer tous les ID de sous-image (n’est pas défini avec \<imagestrip nom > _ ##).  
+    -   Supprimer tous les ID de sous-image (quoi que ce soit avec \<imagestrip nom > _ ##).  
   
     -   Recommandé : renommer le symbole de AssetsGuid et le symbole de bande d’image en fonction de son utilisation.  
   
-    -   Remplacez chaque **ContainedImage**du GUID à l’aide de $(ImageCatalogGuid), remplacez chaque **ContainedImage**d’ID avec $(\<moniker >) et ajoutez l’attribut « true » = externe à chaque **ContainedImage**  
+    -   Remplacez chaque **ContainedImage**du GUID avec $(ImageCatalogGuid), remplacez chaque **ContainedImage**d’ID avec $(\<moniker >) et ajoutez l’attribut « true » = externe à chaque **ContainedImage**  
   
-        -   \<moniker > doit être remplacé par le **KnownMoniker** qui correspond à l’image, mais avec le « KnownMonikers ». supprimés du nom.  
+        -   \<moniker > doit être remplacé par le **KnownMoniker** qui correspond à l’image, mais avec le « KnownMonikers ». supprimé à partir du nom.  
   
-    -   Ajouter < Import Manifest="$(ManifestFolder)\\< Relative installer le chemin d’accès du répertoire à\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest » /\> vers le haut de la \<symboles > section.  
+    -   Ajouter < Import Manifest="$(ManifestFolder)\\< relatif installer le chemin d’accès du répertoire à *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest » /\*> vers le haut de la \<symboles > section.  
   
-        -   Le chemin d’accès relatif est déterminé par l’emplacement de déploiement défini dans le programme d’installation pour le manifeste de création.  
+        -   Le chemin d’accès relatif est déterminé par l’emplacement de déploiement définie dans la configuration de création pour le manifeste.  
   
-3.  Exécutez le **ManifestToCode** outil pour générer des wrappers et que le code existant a un moniker, il peut utiliser pour interroger le service d’images pour la bande d’images.  
+3.  Exécutez le **ManifestToCode** outil pour générer des wrappers pour que le code existant a un moniker, il peut utiliser pour interroger le service d’images pour la bande d’image.  
   
-    -   Recommandé : fournir des noms par défaut pour les wrappers et les espaces de noms en fonction de leur utilisation.  
+    -   Recommandé : fournir des noms non défini par défaut pour les wrappers et les espaces de noms en fonction de leur utilisation.  
   
-4.  Effectuez toutes les ajoute, installation de création et le déploiement et autres modifications de code pour travailler avec le service d’images et les nouveaux fichiers.  
+4.  Effectuez toutes les ajoute, le programme d’installation de création/de déploiement et d’autres modifications de code pour travailler avec le service d’images et les nouveaux fichiers.  
   
- Manifeste de l’exemple, y compris les images internes et externes pour voir qu’il doit ressembler à :  
+ Exemple de fichier manifeste, y compris des images internes et externes pour voir à quoi il doit ressembler :  
   
 ```xml  
 <?xml version="1.0"?>  
@@ -642,54 +642,54 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 </ImageManifest>  
 ```  
   
- **Vous n’avez pas besoin prendre en charge HIMAGELISTs**  
+ **Je n’ai besoin pour prendre en charge HIMAGELISTs**  
   
-1.  Déterminer l’ensemble de **KnownMonikers** qui correspondent aux images dans votre bande d’image, ou créer votre propre monikers pour les images dans votre bande d’image.  
+1.  Déterminer l’ensemble des **KnownMonikers** qui correspondent à des images dans votre bande d’image, ou créer vos propres monikers pour les images dans votre bande d’image.  
   
-2.  Mettre à jour le mappage vous permet d’obtenir de l’image à l’index requis dans la bande d’images à utiliser les monikers à la place.  
+2.  Mettre à jour le mappage vous permettant d’obtenir de l’image à l’index requis dans la bande d’image à utiliser les monikers à la place.  
   
-3.  Mettre à jour votre code pour utiliser le service d’images pour demander des monikers via le mappage de mise à jour. (Cela peut signifier que la mise à jour vers **CrispImages** pour code managé, ou demande HBITMAP ou HICONs à partir du service de l’image et en les passant autour du code natif.)  
+3.  Mettre à jour votre code pour utiliser le service d’images pour demander des monikers via le mappage mis à jour. (Cela peut signifier la mise à jour vers **CrispImages** pour code managé, ou demandant HBITMAP ou éléments HICON le service de l’image et en les passant autour du code natif.)  
   
-## <a name="testing-your-images"></a>Testez vos images  
- Vous pouvez utiliser l’outil Visionneuse de bibliothèque d’images pour tester vos manifestes d’images pour vous assurer que tout a été correctement créé. Vous le trouverez dans le [SDK Visual Studio 2015](http://msdn.microsoft.com/library/bb166441.aspx). Documentation pour cet outil et d’autres sont accessibles [ici](http://aka.ms/VSImageThemeTools).  
+## <a name="testing-your-images"></a>Test de vos images  
+ Vous pouvez utiliser l’outil Visionneuse de bibliothèque d’images pour tester vos manifestes de l’image pour vous assurer que tout est correctement créé. Vous pouvez trouver l’outil dans le [SDK Visual Studio 2015](http://msdn.microsoft.com/library/bb166441.aspx). Vous pouvez trouver la documentation de cet outil et d’autres [ici](http://aka.ms/VSImageThemeTools).  
   
 ## <a name="additional-resources"></a>Ressources supplémentaires  
   
 ### <a name="samples"></a>Exemples  
- Plusieurs exemples Visual Studio sur GitHub ont été mis à jour pour montrer comment utiliser le service d’images dans le cadre de divers points d’extensibilité de Visual Studio.  
+ Plusieurs exemples Visual Studio sur GitHub ont été mis à jour pour montrer comment utiliser le service d’images dans le cadre de différents points d’extensibilité de Visual Studio.  
   
- Vérifiez [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) pour les exemples les plus récentes.  
+ Vérifiez [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) pour les derniers exemples.  
   
 ### <a name="tooling"></a>Outillage  
  Un ensemble d’outils de prise en charge pour le Service d’images a été créé pour faciliter la création/mise à jour l’interface utilisateur qui fonctionne avec le Service d’images. Pour plus d’informations sur chaque outil, consultez la documentation fournie avec les outils. Les outils sont inclus dans le cadre de la [SDK Visual Studio 2015.](http://msdn.microsoft.com/library/bb166441.aspx)  
   
  **ManifestFromResources**  
   
- Le manifeste à partir de l’outil de ressources utilise une liste de ressources d’image (PNG ou XAML) et génère un fichier de manifeste d’image pour l’utilisation de ces images avec le service d’images.  
+ Le manifeste à partir de l’outil de ressources prend une liste des ressources d’image (PNG ou XAML) et génère un fichier de manifeste d’image pour l’utilisation de ces images avec le service d’images.  
   
  **ManifestToCode**  
   
- Le manifeste de l’outil Code prend un fichier de manifeste d’image et génère un fichier de wrapper pour faire référence à des valeurs de manifeste dans le code (C++, c# ou Visual Basic) ou des fichiers .vsct.  
+ Le manifeste de l’outil de Code prend un fichier de manifeste d’image et génère un fichier de wrapper pour référencer les valeurs de manifeste dans le code (C++, c# ou VB) ou *.vsct* fichiers.  
   
  **ImageLibraryViewer**  
   
- L’outil Visionneuse de bibliothèque images peut charger des manifestes d’images et permet à l’utilisateur pour les manipuler dans la même façon Visual Studio pour vous assurer que le manifeste a été créé correctement. L’utilisateur peut modifier en arrière-plan, tailles, paramètre PPP, contraste élevé et autres paramètres. Aussi, il affiche des informations de chargement pour trouver les erreurs dans les manifestes et affiche des informations de source pour chaque image dans le manifeste.  
+ L’outil Visionneuse de bibliothèque d’images peut charger des manifestes d’images et permet à l’utilisateur pour les manipuler dans la même façon Visual Studio pour vous assurer que le manifeste a été créé correctement. L’utilisateur peut modifier en arrière-plan, de tailles, de paramètre PPP, de contraste élevé et d’autres paramètres. Également, il affiche des informations de chargement pour rechercher des erreurs dans les manifestes et affiche des informations de source de chaque image dans le manifeste.  
   
 ## <a name="faq"></a>FAQ  
   
--   Y a-t-il des dépendances que vous devez inclure lors du chargement de \<Include="Microsoft.VisualStudio.* de référence. Interop.14.0.designTime » / > ?  
+-   Y a-t-il des dépendances que vous devez inclure lors du chargement \<Include="Microsoft.VisualStudio.* de référence. Interop.14.0.designTime » / > ?  
   
     -   Définir EmbedInteropTypes = « true » sur toutes les DLL d’interopérabilité.  
   
--   Comment déployer un manifeste de l’image avec l’extension de my ?  
+-   Comment déployer un manifeste d’image avec mon extension ?  
   
-    -   Ajoutez le fichier .imagemanifest à votre projet.  
+    -   Ajouter le *.imagemanifest* fichier à votre projet.  
   
-    -   La valeur « Inclure dans VSIX » la valeur True.  
+    -   Définissez l’option « Inclure dans VSIX » sur True.  
   
--   Je mets à jour mon système de projet CPS. Qu’est-il advenu de **ImageName** et **StockIconService**?  
+-   Je mets à jour mon système de projet CPS. Qu’est-il arrivé à **ImageName** et **StockIconService**?  
   
-    -   o que ceux-ci ont été supprimés lors de la déclaration CPS a été mis à jour pour utiliser les monikers. Vous n’avez plus besoin d’appeler le **StockIconService**, simplement transmettre souhaité **KnownMoniker** à la méthode ou propriété à l’aide du **ToProjectSystemType()** méthode d’extension dans les utilitaires de la déclaration CPS. Vous pouvez trouver un mappage à partir de **ImageName** à **KnownMonikers** ci-dessous :  
+    -   Ils ont été supprimés lors de la mise à jour CPS à utiliser des monikers. Vous n’avez plus besoin d’appeler le **StockIconService**, transmettez simplement le texte souhaité **KnownMoniker** à la méthode ou propriété à l’aide du **ToProjectSystemType()** méthode d’extension dans les utilitaires CPS. Vous pouvez trouver un mappage à partir de **ImageName** à **KnownMonikers** ci-dessous :  
   
         |||  
         |-|-|  
@@ -965,7 +965,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphReference||ClassMethodReference|  
         |GlyphRecursion||Récursivité|  
         |GlyphXmlItem||Balise|  
-        |GlyphJSharpProject||DocumentCollection|  
+        |GlyphJSharpProject||Collection DocumentCollection|  
         |GlyphJSharpDocument||Document|  
         |GlyphForwardType||GoToNext|  
         |GlyphCallersGraph||CallTo|  
@@ -983,7 +983,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphXmlAttribute||XmlAttribute|  
         |GlyphXmlChild||XmlElement|  
         |GlyphXmlDescendant||XmlDescendant|  
-        |GlyphXmlNamespace||xmlNamespace|  
+        |GlyphXmlNamespace||XmlNamespace|  
         |GlyphXmlAttributeQuestion||XmlAttributeLowConfidence|  
         |GlyphXmlAttributeCheck||XmlAttributeHighConfidence|  
         |GlyphXmlChildQuestion||XmlElementLowConfidence|  

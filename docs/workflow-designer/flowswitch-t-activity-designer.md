@@ -15,30 +15,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c655987f3cafd77b284d9d11eafefd56a188fc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d3e811e9d5463771b2a25b06b47e0a411f5dcd7
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978003"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757220"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T > Concepteur d’activités
 
 L'activité <xref:System.Activities.Statements.FlowSwitch%601> est un nœud conditionnel qui fournit la création de branches pour le flux de contrôle selon un critère de correspondance lorsque plus de deux branches sont requises. Si la création de branches de flux requiert uniquement deux chemins d'accès, utilisez l'activité <xref:System.Activities.Statements.FlowDecision> à la place.
 
-## <a name="the-flowswitcht-activity"></a>Le FlowSwitch\<T > activité
+## <a name="the-flowswitcht-activity"></a>FlowSwitch\<T > activité
 
 Le <xref:System.Activities.Statements.FlowSwitch%601> activité contient un <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> qui retourne une valeur de type *T* (spécifié par le paramètre générique) lors de l’évaluation. L'activité contient également un jeu de propriétés <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>, qui spécifie un mappage unique, à partir des résultats possibles de cette évaluation, à un jeu d'objets <xref:System.Activities.Statements.FlowNode>. Le <xref:System.Activities.Statements.FlowNode> exécuté est celui dont l’objet de type *T* correspond à la valeur de la liste évaluée <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Un cas <xref:System.Activities.Statements.FlowSwitch%601.Default%2A> peut être fourni (éventuellement) pour le cas dans lequel aucune correspondance n'est obtenue.
 
-### <a name="using-the-flowswitcht-activity-designer"></a>À l’aide de la FlowSwitch\<T > Concepteur d’activités
+### <a name="using-the-flowswitcht-activity-designer"></a>À l’aide de FlowSwitch\<T > Concepteur d’activités
 
-Le **FlowSwitch\<T >** Concepteur d’activités peut être trouvé dans le **organigramme** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **Boîte à outils** onglet sur le côté gauche du Concepteur de flux de travail (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)
+Le **FlowSwitch\<T >** Concepteur d’activités peut être trouvé dans le **organigramme** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **Boîte à outils** onglet sur le côté gauche du Concepteur de Workflow. Vous pouvez également sélectionner **boîte à outils** à partir de la **vue** menu, ou appuyez sur **Ctrl**+**Alt** + **X**.
 
-Le **FlowSwitch\<T >** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail au sein d’un **organigramme** Concepteur d’activités. Utilisez le **sélectionner les Types** fenêtre qui s’affiche pour spécifier le type (associé dans le code avec le <xref:System.Activities.Statements.FlowSwitch%601> par son paramètre générique) obtenu à partir de l’évaluation de la <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Cette procédure crée un <xref:System.Activities.Statements.FlowSwitch%601> activité intitulée **commutateur** dans le <xref:System.Activities.Statements.Flowchart> activité. Le <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> peuvent être tapés dans le **Expression** zone de la **propriétés** fenêtre en cliquant sur « Entrer une expression VB » où le texte d’information indique que.
+Le **FlowSwitch\<T >** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail au sein d’un **organigramme** Concepteur d’activités. Utilisez le **sélectionner les Types** fenêtre qui s’affiche pour spécifier le type (associé dans le code avec le <xref:System.Activities.Statements.FlowSwitch%601> par son paramètre générique) obtenu à partir de l’évaluation de la <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Cette procédure crée un <xref:System.Activities.Statements.FlowSwitch%601> activité intitulée **commutateur** au sein de la <xref:System.Activities.Statements.Flowchart> activité. Le <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> peuvent être tapés dans le **Expression** boîte de le **propriétés** fenêtre en cliquant sur où le texte d’indication est « Entrer une expression VB ».
 
-Placez la souris sur le **FlowSwitch\<T >** Concepteur d’activités pour provoquer des poignées carrées utilisées pour la liaison <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> apparaissent autour de ses bords. Après avoir fait glisser le **FlowSwitch < T\>**  Concepteur d’activités et d’autres concepteurs d’activités sur le **organigramme**, le <xref:System.Activities.Activity> objets qu’ils représentent sont prêts à être liés ensemble Pour spécifier l’ordre d’exécution. Pour créer l’un de le <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> associé à la <xref:System.Activities.Statements.FlowSwitch%601>, cliquez sur une des poignées de cas carrées sur le périmètre de la **FlowSwitch < T\>**  et faites-la glisser (en maintenant le bouton de la souris enfoncé) à une poignées de qui apparaît de façon semblable autour de l’activité de destination lorsque la souris pointe sur son concepteur. Relâchez le bouton de la souris et une flèche à partir de la **FlowSwitch < T\>**  au Concepteur de destination apparaît représentant ce cas. La valeur par défaut pour ce cas s’affiche sur la flèche et elle peut être modifiée dans le **cas** zone de la **propriétés** fenêtre.
+Placez la souris sur le **FlowSwitch\<T >** Concepteur d’activités pour provoquer des poignées carrées utilisées pour la liaison <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> à apparaître sur ses bords. Après avoir fait glisser le **FlowSwitch < T\>**  Concepteur d’activités et d’autres concepteurs d’activités sur le **organigramme**, le <xref:System.Activities.Activity> objets qu’ils représentent sont prêts à être liées Pour spécifier l’ordre d’exécution. Pour créer un de la <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> associé à la <xref:System.Activities.Statements.FlowSwitch%601>, cliquez sur une des poignées de cas carrées sur le périmètre de la **FlowSwitch < T\>**  et faites-la glisser (en maintenant enfoncé le bouton de la souris) à une des poignées qui apparaît de façon semblable autour de l’activité de destination lorsque la souris pointe sur son concepteur. Relâchez le bouton de la souris, une flèche à partir de la **FlowSwitch < T\>**  au Concepteur de destination s’affiche représentant ce cas. La valeur par défaut pour ce cas s’affiche sur la flèche et il peut être modifié dans le **cas** zone de la **propriétés** fenêtre.
 
-### <a name="the-flowswitcht-properties"></a>Le FlowSwitch\<T > Propriétés
+### <a name="the-flowswitcht-properties"></a>FlowSwitch\<T > Propriétés
 
 Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.FlowSwitch%601> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés ou dans l'aire du concepteur.
 

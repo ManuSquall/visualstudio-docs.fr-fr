@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Ajout d’une Page d’Application à un flux de travail | Documents Microsoft'
+title: 'Procédure pas à pas : Ajouter une Page d’Application à un flux de travail | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ed3278a237633cbf7f15806fa0efa9b3bc33bb6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 937fb2d5b41c2fce9fb11cc683f7abd771718e89
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118930"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procédure pas à pas : ajout d'une page d'application à un flux de travail
-  Cette procédure pas à pas montre comment ajouter une page d’application qui affiche des données dérivées d’un flux de travail dans un projet de flux de travail. Il repose sur le projet décrit dans la rubrique [procédure pas à pas : création d’un flux de travail avec l’Association et des formulaires d’Initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procédure pas à pas : Ajouter une page d’application à un flux de travail
+  Cette procédure pas à pas montre comment ajouter une page d’application qui affiche les données dérivées d’un flux de travail dans un projet de flux de travail. Il s’appuie sur le projet décrit dans la rubrique [procédure pas à pas : créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
@@ -33,29 +34,29 @@ ms.lasthandoff: 05/22/2018
   
 -   Obtention de données à partir du projet de flux de travail et la manipulation.  
   
--   Affichage des données dans une table dans la page de l’application.  
+-   Affichage des données dans une table sur la page d’application.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
--   Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint. Pour plus d’informations, consultez [configuration requise pour le développement de Solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint. Pour plus d’informations, consultez [configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
--   Vous devez également terminer le projet dans la rubrique [procédure pas à pas : création d’un flux de travail avec l’Association et des formulaires d’Initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
+-   Vous devez également terminer le projet dans la rubrique [procédure pas à pas : créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
   
-## <a name="amending-the-workflow-code"></a>Modifiant le Code de flux de travail  
- Tout d’abord, ajoutez une ligne de code pour le flux de travail pour définir la valeur de la colonne de résultat à la quantité de la note de frais. Cette valeur est utilisée ultérieurement dans le calcul de synthèse d’état dépenses.  
+## <a name="ammend-the-workflow-code"></a>Ammend le code de flux de travail
+ Tout d’abord, ajoutez une ligne de code pour le flux de travail pour définir la valeur de la colonne de résultat à la quantité de la note de frais. Cette valeur est utilisée ultérieurement dans le calcul de résumé de rapport de dépenses.  
   
-#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Pour définir la valeur de la colonne de résultat dans le flux de travail  
+#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Pour définir la valeur de la colonne de résultat dans le flux de travail
   
-1.  Charger le projet terminé à partir de la rubrique [procédure pas à pas : création d’un flux de travail avec l’Association et des formulaires d’Initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Charger le projet terminé à partir de la rubrique [procédure pas à pas : création d’un Workflow avec les formulaires d’Association et Initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Ouvrez le code de Workflow1.cs ou Workflow1.vb (selon votre langage de programmation).  
+2.  Ouvrez le code *Workflow1.cs* ou *Workflow1.vb* (selon votre langage de programmation).  
   
-3.  Au bas de la `createTask1_MethodInvoking` méthode, ajoutez le code suivant :  
+3.  Au bas de la `createTask1_MethodInvoking` (méthode), ajoutez le code suivant :  
   
     ```vb  
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =   
@@ -67,14 +68,14 @@ ms.lasthandoff: 05/22/2018
       workflowProperties.InitiationData;  
     ```  
   
-## <a name="creating-an-application-page"></a>Création d’une Page d’Application  
- Ensuite, ajoutez un formulaire ASPX au projet. Cet écran affiche les données obtenues à partir du projet de flux de travail Rapport dépenses. Pour ce faire, vous allez ajouter une page d’application. Une page d’application utilise la même page maître que les autres pages SharePoint, ce qui signifie que qu’elle sera semblable à des autres pages sur le site SharePoint.  
+## <a name="create-an-application-page"></a>Créer une page d’application
+ Ensuite, ajoutez un formulaire ASPX au projet. Cet écran affiche les données obtenues à partir du projet de flux de travail de rapport dépenses. Pour ce faire, vous allez ajouter une page d’application. Une page d’application utilise la même page maître en tant que d’autres pages SharePoint, ce qui signifie qu’elle sera semblable à autres pages sur le site SharePoint.  
   
 #### <a name="to-add-an-application-page-to-the-project"></a>Pour ajouter une page d’application au projet  
   
-1.  Choisissez le projet ExpenseReport, puis, dans la barre de menus, **projet**, **ajouter un nouvel élément**.  
+1.  Choisissez le projet ExpenseReport, puis, dans la barre de menus, **projet** > **ajouter un nouvel élément**.  
   
-2.  Dans le **modèles** volet, choisissez la **Page Application** modèle, le nom par défaut pour l’élément de projet (**ApplicaitonPage1.aspx**) et choisissez la **Ajouter** bouton.  
+2.  Dans le **modèles** volet, choisissez le **Page Application** modèle, utilisez le nom par défaut pour l’élément de projet (**ApplicaitonPage1.aspx**) et choisissez la **Ajouter** bouton.  
   
 3.  Dans le [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] de ApplicationPage1.aspx, remplacez la `PlaceHolderMain` section avec les éléments suivants :  
   
@@ -98,14 +99,14 @@ ms.lasthandoff: 05/22/2018
     </asp:Content>  
     ```  
   
-## <a name="coding-the-application-page"></a>Codage de la Page d’Application  
- Ensuite, ajoutez le code à la page d’application du résumé de rapport dépenses. Lorsque vous ouvrez la page, le code d’analyse de la liste des tâches dans SharePoint pour les dépenses ayant dépassé la limite de dépense allouée. Le rapport répertorie chaque élément ainsi que la somme des frais.  
+## <a name="code-the-application-page"></a>Code de la page d’application
+ Ensuite, ajoutez le code à la page de résumé d’application de rapport de frais. Lorsque vous ouvrez la page, le code analyse la liste des tâches dans SharePoint pour les dépenses ayant dépassé la limite de dépense allouée. Le rapport répertorie chaque élément avec la somme des frais.  
   
 #### <a name="to-code-the-application-page"></a>Code de la page d’application  
   
-1.  Choisissez le **ApplicationPage1.aspx** nœud, puis, dans la barre de menus, choisissez **vue**, **Code** pour afficher le code-behind de la page d’application.  
+1.  Choisissez le **ApplicationPage1.aspx** nœud, puis, dans la barre de menus, choisissez **vue** > **Code** pour afficher le code-behind de la page d’application.  
   
-2.  Remplacez le **à l’aide de** ou **importation** instructions (selon votre langage de programmation) en haut de la classe avec les éléments suivants :  
+2.  Remplacez le **à l’aide de** ou **importation** instructions (selon votre langage de programmation) en haut de la classe par le code suivant :  
   
     ```vb  
     Imports System  
@@ -297,62 +298,61 @@ ms.lasthandoff: 05/22/2018
     ```  
   
     > [!WARNING]  
-    >  Veillez à remplacer « TestServer » dans le code avec le nom de serveur qui exécute SharePoint valide.  
+    >  Veillez à remplacer « TestServer » dans le code par le nom d’un serveur valid qui exécute SharePoint.  
   
-## <a name="testing-the-application-page"></a>Test de la Page d’Application  
- Ensuite, déterminez si la page d’application affiche les données de frais correctement.  
+## <a name="test-the-application-page"></a>Tester la page d’application
+ Ensuite, déterminez si la page d’application affiche les données de dépenses correctement.  
   
 #### <a name="to-test-the-application-page"></a>Pour tester la page d’application  
   
-1.  Choisissez la touche F5 pour exécuter et déployer le projet vers SharePoint.  
+1.  Choisissez le **F5** touche pour exécuter et déployer le projet dans SharePoint.  
   
 2.  Choisissez le **accueil** bouton, puis choisissez le **Documents partagés** lien dans la barre de lancement rapide pour afficher la liste de Documents partagés sur le site SharePoint.  
   
-3.  Pour représenter les notes de frais de cet exemple, téléchargez de nouveaux documents dans la liste des Documents en choisissant le **Documents** lien sur le **outils de bibliothèque** onglet en haut de la page, puis en choisissant le  **Télécharger un Document** bouton dans la barre d’outils.  
+3.  Pour représenter les notes de frais de cet exemple, téléchargez de nouveaux documents dans la liste de Documents en choisissant le **Documents** lien sur le **outils de bibliothèque** onglet en haut de la page, puis en choisissant le  **Télécharger un Document** bouton sur la barre d’outils.  
   
-4.  Après avoir téléchargé des documents, instanciez le flux de travail en choisissant le **bibliothèque** lien sur le **outils de bibliothèque** onglet en haut de la page, puis en sélectionnant le **paramètres de la bibliothèque**bouton dans la barre d’outils.  
+4.  Une fois que vous téléchargez des documents, instanciez le flux de travail en choisissant le **bibliothèque** lien sur le **outils de bibliothèque** onglet en haut de la page, puis en sélectionnant le **paramètres de la bibliothèque**bouton sur la barre d’outils.  
   
-5.  Dans le **paramètres de la bibliothèque** page, choisissez la **les paramètres de flux de travail** lien dans le **autorisations et gestion** section.  
+5.  Dans le **Document Library Settings** page, choisissez le **les paramètres de flux de travail** lien dans le **autorisations et gestion** section.  
   
-6.  Dans le **les paramètres de flux de travail** page, choisissez la **ajouter un flux de travail** lien.  
+6.  Dans le **les paramètres de flux de travail** page, choisissez le **ajouter un flux de travail** lien.  
   
-7.  Dans le **ajouter un flux de travail** page, choisissez la **ExpenseReport - Workflow1** flux de travail, entrez un nom pour le flux de travail, tel que **TestNotedefrais**, puis choisissez le **Suivant** bouton.  
+7.  Dans le **ajouter un flux de travail** page, choisissez le **ExpenseReport - Workflow1** flux de travail, entrez un nom pour le flux de travail, tel que **TestNotedefrais**, puis choisissez le **Suivant** bouton.  
   
-     Le formulaire d’Association de flux de travail s’affiche. Il permet de signaler le montant de limite de dépense.  
+     Le formulaire d’Association de flux de travail s’affiche. Utilisez-le pour signaler la quantité de limite de dépense.  
   
-8.  Dans le formulaire d’Association, entrez **1000** dans les **limite d’approbation automatique** zone, puis choisissez le **associer le flux de travail** bouton.  
+8.  Dans le formulaire d’Association, entrez **1000** dans le **limite d’approbation automatique** zone, puis choisissez le **associer le flux de travail** bouton.  
   
 9. Choisissez le **domestique** bouton pour revenir à la page d’accueil SharePoint.  
   
 10. Choisissez le **Documents partagés** lien dans la barre de lancement rapide.  
   
-11. Choisissez un des documents téléchargés pour afficher une flèche de déroulement, sélectionnez-le, puis choisissez le **Workflows** élément.  
+11. Choisissez un des documents téléchargés pour afficher une flèche de liste déroulante, choisissez-la, puis choisissez le **Workflows** élément.  
   
-12. Sélectionnez l’image en regard de la TestNotedefrais pour afficher le formulaire d’Initiation de flux de travail.  
+12. Choisissez l’image en regard de la TestNotedefrais pour afficher le formulaire d’Initiation de flux de travail.  
   
 13. Dans le **Total des dépenses** zone de texte, entrez une valeur qui est supérieure à 1 000, puis choisissez le **démarrer le flux de travail** bouton.  
   
-     Lorsqu’une note de frais dépasse le montant de frais alloué, une tâche est ajoutée à la liste des tâches. Une colonne nommée **TestNotedefrais** avec la valeur **terminé** est également ajouté à l’élément de rapport de dépenses dans la liste de Documents partagés.  
+     Lorsqu’une note de frais dépasse le montant des dépenses alloué, une tâche est ajoutée à la liste des tâches. Une colonne nommée **TestNotedefrais** avec la valeur **terminé** est également ajouté à l’élément de rapport de notes de frais dans la liste de Documents partagés.  
   
-14. Répétez les étapes 11 à 13 avec d’autres documents dans la liste de Documents partagés. (Le nombre exact de documents n’est pas important).  
+14. Répétez les étapes 11 à 13 avec d’autres documents dans la liste de Documents partagés. (Le nombre exact de documents n’est pas important.)  
   
-15. Afficher la page d’application du résumé de rapport frais en ouvrant l’URL suivante dans un navigateur Web : **http://***Nom_système***/_layouts/ExpenseReport/ApplicationPage1.aspx**.  
+15. Afficher la page de résumé d’application de rapport de frais en ouvrant l’URL suivante dans un navigateur Web : **http://***Nom_système***/_layouts/ExpenseReport/ApplicationPage1.aspx**.  
   
-     La page de résumé du rapport dépenses répertorie tous les États de dépenses qui a dépassé la quantité allouée, le montant par qu'ils dépassaient et la quantité totale de tous les rapports.  
+     La page de résumé de rapport de notes de frais répertorie tous les rapports de dépenses ayant dépassé la quantité allouée, la quantité par qu'il dépassait et la quantité totale de tous les rapports.  
   
-## <a name="next-steps"></a>Étapes suivantes  
- Pour plus d’informations sur les pages d’application SharePoint, consultez [création de Pages d’Application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
+## <a name="next-steps"></a>Étapes suivantes
+ Pour plus d’informations sur les pages d’application SharePoint, consultez [créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
- Vous pouvez en savoir plus sur la conception de contenu de la page SharePoint à l’aide du Concepteur Web visuel dans Visual Studio à partir de ces rubriques :  
+ Vous pouvez en savoir plus sur la conception de contenu de la page SharePoint à l’aide de Visual Web Designer dans Visual Studio à partir de ces rubriques :  
   
--   [Création de composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
+-   [Créer des composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
   
--   [Création de contrôles réutilisables pour les composants WebPart ou les Pages d’Application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
+-   [Créer des contrôles réutilisables pour les composants WebPart ou les pages d’application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
   
-## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Création d’un flux de travail avec l’Association et des formulaires d’Initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
- [Comment : créer une Page d’Application](../sharepoint/how-to-create-an-application-page.md)   
- [Création de Pages d’Application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
- [Développement de solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
+## <a name="see-also"></a>Voir aussi
+ [Procédure pas à pas : Créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
+ [Comment : créer une page d’application](../sharepoint/how-to-create-an-application-page.md)   
+ [Créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
+ [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   

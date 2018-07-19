@@ -1,5 +1,5 @@
 ---
-title: 'Comment : insérer du texte dans des Documents Word par programmation | Documents Microsoft'
+title: 'Comment : insérer du texte dans les documents Word par programmation'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bbbcc0543ce6017ac83ed2d1fcc09fed201e466f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 331fa8a91bb4fff51cb59b7a9f3cce23a38b3d2e
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257210"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Comment : insérer du texte dans les documents Word par programmation
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Comment : insérer du texte dans les documents Word par programmation
   Il existe trois principaux moyens pour insérer du texte dans des documents Microsoft Office Word :  
   
 -   insérer du texte dans une plage ;  
@@ -35,14 +36,14 @@ ms.lasthandoff: 04/16/2018
 -   utiliser la méthode <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> d'un objet <xref:Microsoft.Office.Interop.Word.Selection> pour insérer du texte au niveau du curseur ou de la sélection.  
   
 > [!NOTE]  
->  Vous pouvez également insérer du texte dans les contrôles de contenu et les signets. Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md) et [contrôle Bookmark](../vsto/bookmark-control.md).  
+>  Vous pouvez également insérer du texte dans les contrôles de contenu et les signets. Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md) et [Bookmark (contrôle)](../vsto/bookmark-control.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="inserting-text-in-a-range"></a>Insertion de texte dans une plage  
+## <a name="insert-text-in-a-range"></a>Insérer du texte dans une plage  
  Utilisez la propriété <xref:Microsoft.Office.Interop.Word.Range.Text%2A> d'un objet <xref:Microsoft.Office.Interop.Word.Range> pour insérer du texte dans un document.  
   
-#### <a name="to-insert-text-in-a-range"></a>Pour insérer du texte dans une plage  
+### <a name="to-insert-text-in-a-range"></a>Pour insérer du texte dans une plage  
   
 1.  Spécifiez une plage au début d’un document et insérer le texte **New Text**.  
   
@@ -61,10 +62,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]  
   
-## <a name="replacing-text-in-a-range"></a>Remplacement de texte dans une plage  
+## <a name="replace-text-in-a-range"></a>Remplacer du texte dans une plage  
  Si la plage spécifiée contient du texte, tout le texte de la plage est remplacé par le texte inséré.  
   
-#### <a name="to-replace-text-in-a-range"></a>Pour remplacer du texte dans une plage  
+### <a name="to-replace-text-in-a-range"></a>Pour remplacer du texte dans une plage  
   
 1.  Créez un objet <xref:Microsoft.Office.Interop.Word.Range> comprenant les 12 premiers caractères du document.  
   
@@ -88,10 +89,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]  
   
-## <a name="inserting-text-using-typetext"></a>Insertion de texte à l'aide de TypeText  
+## <a name="insert-text-using-typetext"></a>Insérer du texte à l’aide de TypeText  
  La méthode <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> insère du texte au niveau de la sélection. <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> se comporte différemment selon les options définies sur l'ordinateur de l'utilisateur. Le code de la procédure suivante déclare une variable objet <xref:Microsoft.Office.Interop.Word.Selection> , puis désactive l'option **Overtype** , si elle est activée. Si l'option **Overtype** est activée, le texte situé à proximité du curseur est remplacé.  
   
-#### <a name="to-insert-text-using-the-typetext-method"></a>Pour insérer du texte à l'aide de la méthode TypeText  
+### <a name="to-insert-text-using-the-typetext-method"></a>Pour insérer du texte à l'aide de la méthode TypeText  
   
 1.  Déclarez une variable objet <xref:Microsoft.Office.Interop.Word.Selection> .  
   
@@ -120,7 +121,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
      [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
   
- Vous pouvez également utiliser la méthode <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> de l'objet <xref:Microsoft.Office.Interop.Word.Selection> , qui reproduit la fonctionnalité de la touche Retour arrière de votre clavier. Toutefois, quand il s'agit d'insérer et de manipuler du texte, l'objet <xref:Microsoft.Office.Interop.Word.Range> vous offre davantage de contrôle.  
+ Vous pouvez également utiliser le <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> méthode de la <xref:Microsoft.Office.Interop.Word.Selection> objet, qui reproduit la fonctionnalité de la **retour arrière** clé de votre clavier. Toutefois, quand il s'agit d'insérer et de manipuler du texte, l'objet <xref:Microsoft.Office.Interop.Word.Range> vous offre davantage de contrôle.  
   
  L'exemple suivant montre le code complet. Pour utiliser cet exemple, exécutez le code à partir de la classe `ThisDocument` ou `ThisAddIn` dans votre projet.  
   
@@ -128,8 +129,8 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : mettre en forme le texte dans des Documents par programmation](../vsto/how-to-programmatically-format-text-in-documents.md)   
- [Comment : définir par programme et sélectionner des plages dans des Documents](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Guide pratique pour étendre des plages dans des documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
+ [Comment : mettre en forme dans les documents par programmation](../vsto/how-to-programmatically-format-text-in-documents.md)   
+ [Comment : définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Comment : étendre des plages dans des documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
   
   

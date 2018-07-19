@@ -10,22 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98f95c489758b808ae7a210f7d83332f84571d1f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6ed6b14f64d16d1f18d4b358761169c3d424cee8
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924137"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174060"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>La propriété &lt;nom de la propriété&gt; ne peut pas être supprimé, car il participe à l’association &lt;nom de l’association&gt;
 
-La propriété sélectionnée est définie comme la **propriété d’Association** pour l’association entre les classes indiquée dans le message d’erreur. Les propriétés ne peuvent pas être supprimées si elles participent à une association entre des classes de données.
+La propriété sélectionnée est définie comme le **propriété d’Association** pour l’association entre les classes indiquées dans le message d’erreur. Les propriétés ne peuvent pas être supprimées si elles participent à une association entre des classes de données.
 
 Définir le **propriété d’Association** à une autre propriété de la classe de données pour permettre la suppression de la propriété désirée.
 
 ## <a name="to-correct-this-error"></a>Pour corriger cette erreur
 
-1. Dans le Concepteur O/R, sélectionnez la ligne d'association qui connecte les classes de données indiquées dans le message d'erreur.
+1. Sélectionnez la ligne d’association sur le **Concepteur O/R** qui connecte les classes de données indiquées dans le message d’erreur.
 
 2. Double-cliquez sur la ligne pour ouvrir la **Éditeur d’associations** boîte de dialogue.
 
@@ -36,4 +36,4 @@ Définir le **propriété d’Association** à une autre propriété de la class
 ## <a name="see-also"></a>Voir aussi
 
 - [Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL des outils dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

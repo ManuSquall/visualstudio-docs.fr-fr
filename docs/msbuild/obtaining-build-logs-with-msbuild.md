@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6953017a034257900c467e7f2fac89897fa0d9e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fe22717ffa734e5f79efd73a6ee032ef447056c
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574683"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303307"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtention de journaux de génération avec MSBuild
 En utilisant des commutateurs avec MSBuild, vous pouvez indiquer le nombre de données de build que vous souhaitez vérifier, et spécifier si vous voulez enregistrer les données de build dans un ou plusieurs fichiers. Vous pouvez également spécifier un enregistreur d’événements personnalisé pour collecter les données de build. Pour plus d’informations sur les commutateurs de ligne de commande MSBuild que cette rubrique ne traite pas, consultez l’article [Command-Line Reference (Informations de référence sur la ligne de commande MSBuild)](../msbuild/msbuild-command-line-reference.md).  
@@ -39,20 +39,20 @@ En utilisant des commutateurs avec MSBuild, vous pouvez indiquer le nombre de do
   
  Le processus de génération peut être plus lent si vous définissez le commutateur **/verbosity** sur `detailed`, et même encore plus lent si vous définissez le commutateur **/verbosity** sur `diagnostic`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
 
 ## <a name="saving-the-build-log-to-a-file"></a>Enregistrement du journal de la génération dans un fichier  
  Vous pouvez utiliser le commutateur **/fileLogger** (**fl**) pour enregistrer les données de build dans un fichier. Dans l’exemple suivant, les données de build sont enregistrées dans un fichier nommé `msbuild.log`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fileLogger  
 ```  
   
  Dans l’exemple suivant, le fichier journal est nommé `MyProjectOutput.log`, et le niveau de détail de sa sortie est défini sur `diagnostic`. Le commutateur **/filelogparameters** (`flp`) vous permet de spécifier ces deux paramètres.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
@@ -63,7 +63,7 @@ msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diag
   
  Les commutateurs **/filelogparameters** (`flp`) des fichiers 2 et 3 indiquent comment nommer chaque fichier et les éléments à y inclure. Comme aucun nom n’est spécifié pour le fichier 1, le nom par défaut `msbuild1.log` est utilisé.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
@@ -76,7 +76,7 @@ Vous pouvez enregistrer le journal dans un format binaire compressé à l’aide
 
 Dans l’exemple suivant, un fichier journal binaire est créé avec le nom `binarylogfilename`.
 
-```  
+```cmd  
 /bl:binarylogfilename.binlog
 ``` 
  

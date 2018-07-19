@@ -1,7 +1,7 @@
 ---
-title: Publier sur Azure App Service - Visual Studio | Documents Microsoft
+title: Publier sur Azure App Service
 ms.custom: ''
-ms.date: 11/22/2017
+ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,74 +12,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f91fd6e8c101b674b745c120978a47adb17c9b91
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7761164182188366425a81518f3d0513361b6f19
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765373"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077841"
 ---
-# <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Publier une application ASP.NET ou ASP.NET Core pour le Service d’applications Azure à l’aide de Visual Studio
+# <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publier une application Web sur Azure App Service à l’aide de Visual Studio
 
-Vous pouvez utiliser la **publier** outil pour publier des applications ASP.NET, ASP.NET Core, Python, Node.js et .NET Core pour le Service d’applications Azure.
+Vous pouvez utiliser la **publier** outil pour publier des applications ASP.NET, ASP.NET Core, Node.js et .NET Core sur Azure App Service ou Azure App Service Linux (à l’aide de conteneurs). Pour les applications Python, suivez les étapes [Python - publier sur Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-Si vous n’avez pas déjà un compte Azure, vous pouvez [Inscrivez-vous ici](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
-
-## <a name="prerequisites"></a>Prérequis
-
-* Vous devez disposer de Visual Studio 2017 installé et le **ASP.NET et le développement web** la charge de travail et. **Développement de bureau NET** la charge de travail. Pour une application .NET Core, vous devez le. **NET Core** la charge de travail.
-
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
-
-## <a name="create-a-new-project"></a>Créer un nouveau projet 
-
-1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
-
-1. Sous **Visual C#** ou **Visual Basic**, choisissez **Web**, puis dans le volet central, choisissez soit **ASP.NET Web Applications (.NET Framework)** ou (c# uniquement) **Application ASP.NET Core Web**, puis cliquez sur **OK**.
-
-1. Choisissez **MVC** (ou choisissez **l’Application Web (Model-View-Controller)** pour .NET Core), assurez-vous que **aucune authentification** est sélectionné, puis cliquez sur **OK** .
-
-1. Tapez un nom tel que **MyWebApp** et cliquez sur **OK**.
-
-    Visual Studio crée le projet.
-
-1. Choisissez **Générer > Générer la Solution** pour générer le projet.
+[!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
 ## <a name="publish-to-azure-app-service"></a>Publier sur Azure App Service
 
-1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**.
+1. Dans l’Explorateur de solutions, cliquez sur le projet et choisissez **publier** (ou utilisez le **Build** > **publier** élément de menu).
 
-    ![Choisissez publier](../deployment/media/quickstart-publish-aspnet.png "choisissez Publier")
+    ![La commande Publier sur le menu contextuel du projet dans l’Explorateur de solutions](../deployment/media/quickstart-publish.png "choisissez Publier")
 
-1. Si vous avez déjà configuré des profils de publication, le **publier** volet s’affiche. Cliquez sur **créer nouveau profil**.
+1. Si vous avez déjà configuré des profils de publication, le **publier** volet s’affiche, dans les cas, sélectionnez **créer nouveau profil**.
 
-1. Dans le **choisir une cible de publication** boîte de dialogue, choisissez **du Service d’applications**.
+1. Dans le **choisir une cible de publication** boîte de dialogue, sélectionnez **App Service**.
 
-    ![Choisissez le Service d’applications Azure](../deployment/media/quickstart-publish-azure.png "choisissez Azure App Service")
+    ![Choisissez Azure App Service](../deployment/media/quickstart-publish-azure.png "choisir Azure App Service")
 
-1. Cliquez sur **Publier**.
+1. Sélectionnez **Publier**. Le **créer App Service** boîte de dialogue s’affiche. Connectez-vous avec votre compte Azure, si nécessaire, puis les paramètres de service d’application par défaut remplissent les champs.
 
-    Le **créer un Service application** boîte de dialogue s’affiche.
+    ![Créer App Service](../deployment/media/quickstart-publish-settings-app-service.png "créer Azure App Service")
 
-    ![Créer le Service d’applications](../deployment/media/quickstart-publish-settings-app-service.png "créer Azure App Service")
-    
-1. Si vous n’êtes pas connecté à Visual Studio, connectez-vous, puis les paramètres de service d’application par défaut pour remplir les champs.
+1. Sélectionnez **Créer**. Visual Studio déploie l’application sur votre Azure App Service, et l’application web se charge dans votre navigateur. Les propriétés du projet **publier** volet affiche l’URL du site et autres détails.
 
-    Le profil de paramètres ouvre la boîte de dialogue de publication.
-
-    ![Choisissez le dossier](../deployment/media/quickstart-publish-settings-web.png "dossier")
-
-    Dans cette boîte de dialogue, vous pouvez sélectionner l’abonnement que vous utilisez, sélectionnez ou créez un groupe de ressources Azure, un etc.
-
-1. Cliquez sur **Créer**.
-
-    Visual Studio déploie l’application sur votre Service d’applications Azure, et l’application web est chargé dans votre navigateur.
-
-    Dans le résumé de la **publier** volet, vous voyez l’URL du Site pour le nouveau Service d’application Azure.
+    ![Publier le volet des propriétés affichant un profil de résumé](../deployment/media/quickstart-publish-app-service-summary.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce démarrage rapide, vous avez appris à utiliser Visual Studio pour créer un profil de publication pour un déploiement vers Azure. Vous pouvez également configurer une publication de profil en important les paramètres à partir d’Azure App Service de publication.
+Dans ce démarrage rapide, vous avez appris à utiliser Visual Studio pour créer un profil de publication pour le déploiement vers Azure. Vous pouvez également configurer une publication profil en important les paramètres à partir d’Azure App Service de publication.
 
 > [!div class="nextstepaction"]
 > [Importer des paramètres de publication et déployer sur Azure](tutorial-import-publish-settings-azure.md)

@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a46ab4db647c60f451ae2f9d5c9d68e654de7084
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747428"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757251"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Créer des applications Xamarin avec une interface utilisateur native dans Visual Studio
 
@@ -50,7 +50,7 @@ Vous allez effectuer les opérations suivantes pour la générer :
 >  -   Applications Xamarin avec une interface utilisateur native :
 >     -   [Hello, Android](/xamarin/android/get-started/hello-android/) (application simple avec un seul écran)
 >     -   [Hello, Android Multiscreen](/xamarin/android/get-started/hello-android-multiscreen/) (application avec une navigation entre des écrans)
->     -   [Android Fragments Walkthrough](/xamarin/android/platform/fragments/fragments/implementing-with-fragments/walkthrough/) (utilisé entre autres choses pour des écrans maître/détails)
+>     -   [Android Fragments Walkthrough](/xamarin/android/platform/fragments/implementing-with-fragments/) (utilisé entre autres choses pour des écrans maître/détails)
 >     -   [Hello, iOS](/xamarin/ios/get-started/hello-iOS/)
 >     -   [Hello, iOS Multiscreen](/xamarin/ios/get-started/hello-iOS-multiscreen/)
 
@@ -247,7 +247,7 @@ Visual Studio n’a pas de modèle de solution pour la création d’application
 
 6.  Dans la fenêtre **Propriétés**, définissez les propriétés suivantes. (Vous pouvez éventuellement trier la liste par ordre alphabétique à l’aide du bouton de tri situé dans la barre d’outils de la fenêtre Propriétés.)
 
-    |Propriété|Value|
+    |Property|Value|
     |--------------|-----------|
     |**text**|**Search by Zip Code**|
     |**ID**|`@+id/ZipCodeSearchLabel`|
@@ -280,7 +280,7 @@ Visual Studio n’a pas de modèle de solution pour la création d’application
 
     |Propriété|Value|
     |--------------|-----------|
-    |**text**|**Code postal**|
+    |**texte**|**Code postal**|
     |**ID**|`@+id/ZipCodeLabel`|
     |**layout_marginStart**|`10dp`|
     |**layout_marginTop**|`6dp`|
@@ -302,7 +302,7 @@ Visual Studio n’a pas de modèle de solution pour la création d’application
 
 9. À partir de la **Boîte à outils**, faites glisser un contrôle **Number** sur **RelativeLayout**, placez-le sous l’étiquette **Zip Code**. Définissez ensuite les propriétés suivantes :
 
-    |Propriété|Value|
+    |Property|Value|
     |--------------|-----------|
     |**ID**|`@+id/zipCodeEntry`|
     |**layout_marginStart**|`10dp`|
@@ -327,10 +327,10 @@ Visual Studio n’a pas de modèle de solution pour la création d’application
 
 10. À partir de la **Boîte à outils**, faites glisser un contrôle **Button** sur le contrôle **RelativeLayout**, puis placez-le à droite du contrôle zipCodeEntry. Définissez ensuite ces propriétés :
 
-    |Propriété|Value|
+    |Property|Value|
     |--------------|-----------|
     |**ID**|`@+id/weatherBtn`|
-    |**text**|**Obtenir la météo**|
+    |**texte**|**Obtenir la météo**|
     |**layout_marginStart**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
     |**width**|`165dp`|
@@ -347,7 +347,7 @@ Visual Studio n’a pas de modèle de solution pour la création d’application
         android:width="165dp" />
     ```
 
-11. Vous avez maintenant suffisamment de connaissances pour générer une interface utilisateur de base à l’aide du concepteur Android. Vous pouvez également créer une interface utilisateur en ajoutant un balisage directement au fichier Main.axml de la page. Pour créer le reste de l’interface utilisateur de cette façon, passez en mode Source dans le concepteur, puis collez le balisage suivant *sous* la balise de fin `</RelativeLayout>`. (Ces éléments doivent être sous la balise, car ils ne sont *pas* inclus dans le contrôle `RelativeLayout`.)
+11. Vous avez maintenant suffisamment de connaissances pour générer une interface utilisateur de base à l’aide du concepteur Android. Vous pouvez également créer une interface utilisateur en ajoutant un balisage directement au fichier Main.axml de la page. Pour créer le reste de l’interface utilisateur de cette façon, passez en mode Source dans le concepteur, puis collez le balisage suivant *sous* la balise de fin `</RelativeLayout>`. (Ces éléments doivent être sous la balise, car il ne sont *pas* inclus dans le contrôle `RelativeLayout`.)
 
     ```xml
     <TextView

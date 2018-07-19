@@ -1,5 +1,5 @@
 ---
-title: 'Comment : regrouper des lignes dans une feuille de calcul par programmation | Documents Microsoft'
+title: 'Comment : regrouper des lignes dans une feuille de calcul par programmation'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -23,21 +23,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 894e3971c257a6461aa975a9d6bb1cf933234440
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa9624f90a337fb85ba2868b3b5c4f3cb1553ffb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258734"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Comment : regrouper des lignes dans une feuille de calcul par programmation
-  Vous pouvez regrouper une ou plusieurs lignes entières. Pour créer un groupe dans une feuille de calcul, utilisez un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.  
+  Vous pouvez regrouper un ou plusieurs lignes entières. Pour créer un groupe dans une feuille de calcul, utilisez un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-a-namedrange-control"></a>À l’aide d’un contrôle NamedRange  
+## <a name="use-a-namedrange-control"></a>Utiliser un contrôle NamedRange  
  Si vous ajoutez un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle à un projet au niveau du document au moment du design, vous pouvez utiliser le contrôle à créer par programmation un groupe. L’exemple suivant suppose qu’il existe trois <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôles sur la feuille de calcul : `data2001`, `data2002`, et `dataAll`. Chaque plage nommée fait référence à une ligne entière dans la feuille de calcul.  
   
-#### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Pour créer un groupe de contrôles NamedRange sur une feuille de calcul  
+### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Pour créer un groupe de contrôles NamedRange sur une feuille de calcul  
   
 1.  Regrouper les trois plages nommées en appelant le <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> méthode de chaque plage. Ce code doit être placé dans une classe Sheet et non pas dans la classe `ThisWorkbook` .  
   
@@ -47,12 +48,12 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Pour dissocier des lignes, appelez le <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> (méthode).  
   
-## <a name="using-native-excel-ranges"></a>À l’aide de plages Excel natives  
- Le code suppose que vous avez trois plages Excel nommées `data2001`, `data2002`, et `dataAll` sur une feuille de calcul.  
+## <a name="use-native-excel-ranges"></a>Utiliser des plages Excel natifs  
+ Le code suppose que vous avez trois plages Excel nommés `data2001`, `data2002`, et `dataAll` sur une feuille de calcul.  
   
-#### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Pour créer un groupe de plages Excel dans une feuille de calcul  
+### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Pour créer un groupe de plages Excel dans une feuille de calcul  
   
-1.  Regrouper les trois plages nommées en appelant le <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> méthode de chaque plage. L’exemple suivant suppose qu’il existe trois <xref:Microsoft.Office.Interop.Excel.Range> contrôles nommés `data2001`, `data2002`, et `dataAll` sur la même feuille de calcul. Chaque plage nommée fait référence à une ligne entière dans la feuille de calcul.  
+1.  Regrouper les trois plages nommées en appelant le <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> méthode de chaque plage. L’exemple suivant suppose qu’il existe trois <xref:Microsoft.Office.Interop.Excel.Range> contrôles nommés `data2001`, `data2002`, et `dataAll` sur la feuille de calcul. Chaque plage nommée fait référence à une ligne entière dans la feuille de calcul.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/16/2018
     >  Pour dissocier des lignes, appelez le <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation des feuilles de calcul](../vsto/working-with-worksheets.md)   
+ [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)   
  [NamedRange (contrôle)](../vsto/namedrange-control.md)   
  [Comment : ajouter des contrôles NamedRange aux feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  

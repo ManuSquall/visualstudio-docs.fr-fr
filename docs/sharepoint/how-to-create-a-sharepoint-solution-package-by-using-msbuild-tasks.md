@@ -1,5 +1,5 @@
 ---
-title: 'Comment : créer un Package de Solution SharePoint à l’aide de tâches MSBuild | Documents Microsoft'
+title: 'Comment : créer un Package de Solution SharePoint à l’aide de tâches MSBuild | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 392724510e3145450cbea8ee70d23037ded073a1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 5a95eb80b860a1447fe6e958edb9c98b66805a90
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118858"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Comment : créer un package de solution SharePoint à l’aide de tâches MSBuild
-  Vous pouvez générer, nettoyer et valider un package SharePoint (.wsp) à l’aide des tâches MSBuild de ligne de commande sur un ordinateur de développement. Vous pouvez également utiliser ces commandes pour automatiser le processus de génération à l’aide de Team Foundation Server sur un ordinateur de build.  
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Comment : créer un Package de Solution SharePoint à l’aide de tâches MSBuild
+  Vous pouvez générer, nettoyer et valider un package SharePoint (*.wsp*) à l’aide des tâches MSBuild de ligne de commande sur un ordinateur de développement. Vous pouvez également utiliser ces commandes pour automatiser le processus de génération à l’aide de Team Foundation Server sur un ordinateur de build.  
   
-## <a name="building-a-sharepoint-package"></a>Création d’un Package SharePoint  
+## <a name="build-a-sharepoint-package"></a>Créer un package SharePoint  
   
-#### <a name="to-build-a-sharepoint-package"></a>Pour créer un package SharePoint  
+#### <a name="to-build-a-sharepoint-package"></a>Pour générer un package SharePoint  
   
-1.  Sur les fenêtres **Démarrer** menu, choisissez **tous les programmes**, **Accessoires**, **invite de commandes**.  
+1.  Sur le Windows **Démarrer** menu, choisissez **tous les programmes** > **Accessoires** > **invite de commandes**.  
   
 2.  Accédez au répertoire où se trouve votre projet SharePoint.  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 05/22/2018
     msbuild /t:Package ListDefinition1.csproj  
     ```  
   
-## <a name="cleaning-a-sharepoint-package"></a>Nettoyage d’un Package SharePoint  
+## <a name="clean-a-sharepoint-package"></a>Nettoyer un package SharePoint  
   
 #### <a name="to-clean-a-sharepoint-package"></a>Pour nettoyer un package SharePoint  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 05/22/2018
     msbuild /t:CleanPackage ListDefinition1.csproj  
     ```  
   
-## <a name="validating-a-sharepoint-package"></a>Validation d’un Package SharePoint  
+## <a name="validate-a-sharepoint-package"></a>Valider un package SharePoint  
   
 #### <a name="to-validate-a-sharepoint-package"></a>Pour valider un package SharePoint  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 05/22/2018
     msbuild /t:ValidatePackage ListDefinition1.csproj  
     ```  
   
-## <a name="setting-properties-in-a-sharepoint-package"></a>Définition des propriétés dans un Package SharePoint  
+## <a name="set-properties-in-a-sharepoint-package"></a>Définir les propriétés dans un package SharePoint  
   
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>Pour définir une propriété dans un package SharePoint  
   
@@ -103,15 +104,13 @@ ms.lasthandoff: 05/22/2018
     msbuild /property:PropertyName=Value  
     ```  
   
-     Par exemple, vous pourriez exécuter la commande suivante pour définir le niveau d’avertissement.  
+     Par exemple, vous pouvez exécutez la commande suivante pour définir le niveau d’avertissement.  
   
     ```cmd  
     msbuild /property:WarningLevel = 2  
     ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Création de fonctionnalités SharePoint](../sharepoint/creating-sharepoint-features.md)   
+## <a name="see-also"></a>Voir aussi
+ [Créer des fonctionnalités de SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Guide pratique pour ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
-  
-  
+ [Comment : ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

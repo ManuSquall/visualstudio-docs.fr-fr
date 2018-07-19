@@ -1,8 +1,9 @@
 ---
-title: Limites de l’exploration | Outil de test Microsoft IntelliTest pour les développeurs | Microsoft Docs
+title: Limites de l’exploration | Outil de test Microsoft IntelliTest pour les développeurs
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
@@ -10,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f152f128fed04abee44ca8c57c89b9f1c2f12ae6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eaa3a852ad67b0d1ffb4e0fb5c121adca81091a9
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815163"
 ---
 # <a name="exploration-bounds"></a>Limites de l’exploration
 
@@ -22,7 +24,7 @@ ms.lasthandoff: 04/16/2018
 
 Vous pouvez modifier les paramètres à l’aide des propriétés nommées de cet attribut et de ses attributs dérivés :
 
-```
+```csharp
 [PexClass(MaxRuns = 10)]
 public partial class FooTest {...}
 ```
@@ -57,7 +59,7 @@ En règle générale, un délai d’expiration est établi parce qu’IntelliTes
 <a name="maxconstraintsolvermemory"></a>
 ## <a name="maxconstraintsolvermemory"></a>MaxConstraintSolverMemory
 
-Nombre de mégaoctets que le [solveur de contrainte](input-generation.md#constraint-solver) peut utiliser pour calculer les entrées qui vont inciter à suivre un chemin d’exécution nouveau et différent. Il s’agit d’une option de **PexSettingsAttributeBase** et ses types dérivés.
+Nombre de mégaoctets que le [solveur de contrainte](input-generation.md#constraint-solver) peut utiliser pour calculer les entrées qui vont inciter à suivre un chemin d’exécution nouveau et différent. Il s’agit d’une option de *PexSettingsAttributeBase** et ses types dérivés.
 
 Plus IntelliTest explore les chemins d’exécution d’un programme, plus les systèmes de contraintes créés par IntelliTest à partir du flux de contrôle et du flux de données du programme deviennent complexes. En fonction de la mémoire disponible sur votre ordinateur, vous pouvez définir cette valeur pour permettre à IntelliTest de s’attaquer à des systèmes de contraintes plus complexes.
 
@@ -74,7 +76,7 @@ Chaque branche conditionnelle et inconditionnelle du code exécuté et surveill�
 
 Par exemple, le code suivant consomme des branches dans la limite de 100 :
 
-```
+```csharp
 for (int i=0; i<100; i++) { }
 ```
 
@@ -103,7 +105,7 @@ La motivation derrière cette limite de l’exploration est de restreindre la co
 
 Par exemple, chaque chemin dans le code suivant consomme n+1 conditions :
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) 
 {
@@ -121,13 +123,12 @@ void ParameterizedTest(int n)
 
 Nombre maximal d’exécutions qu’IntelliTest va tenter au cours de l’exploration d’un test.
 
-La motivation derrière cette limite de l’exploration est que tout code qui contient des boucles ou une récursivité peut avoir un nombre infini de chemins d’exécution et IntelliTest doit donc être limité pendant la [génération d’entrées](input-generation.md). 
+La motivation derrière cette limite de l’exploration est que tout code qui contient des boucles ou une récursivité peut avoir un nombre infini de chemins d’exécution et IntelliTest doit donc être limité pendant la [génération d’entrées](input-generation.md).
 
-Les deux paramètres **MaxRuns** et **MaxRunsWithUniquePaths** sont liés de la manière suivante : 
+Les deux paramètres **MaxRuns** et **MaxRunsWithUniquePaths** sont liés de la manière suivante :
 
 * IntelliTest appelle une méthode de test paramétrable jusqu’à **MaxRuns** fois avec des entrées de test différentes.
-* Si le code exécuté est déterministe, IntelliTest prend chaque fois un chemin d’exécution différent. 
-  Toutefois, sous certaines conditions, le code exécuté peut suivre un chemin d’exécution qu’il a déjà pris auparavant, avec des entrées différentes. 
+* Si le code exécuté est déterministe, IntelliTest prend chaque fois un chemin d’exécution différent. Toutefois, sous certaines conditions, le code exécuté peut suivre un chemin d’exécution qu’il a déjà pris auparavant, avec des entrées différentes.
 * IntelliTest compte le nombre de chemins d’exécution uniques qu’il trouve ; ce nombre est limité par l’option **MaxRunsWithUniquePaths**.
 
 <a name="maxrunswithoutnewtests"></a>
@@ -135,7 +136,7 @@ Les deux paramètres **MaxRuns** et **MaxRunsWithUniquePaths** sont liés de la 
 
 Nombre maximal d’exécutions consécutives sans émettre un nouveau test.
 
-Même si IntelliTest peut souvent trouver de nombreuses entrées de test intéressantes dans un court délai, il n’en trouve plus de nouvelles après un certain temps et n’émet plus de tests unitaires. Cette option de configuration place une limite sur le nombre de tentatives consécutives qu’IntelliTest peut effectuer sans émettre un nouveau test. Une fois atteinte, l’exploration s’arrête. 
+Même si IntelliTest peut souvent trouver de nombreuses entrées de test intéressantes dans un court délai, il n’en trouve plus de nouvelles après un certain temps et n’émet plus de tests unitaires. Cette option de configuration place une limite sur le nombre de tentatives consécutives qu’IntelliTest peut effectuer sans émettre un nouveau test. Une fois atteinte, l’exploration s’arrête.
 
 <a name="maxrunswithuniquepaths"></a>
 ## <a name="maxrunswithuniquepaths"></a>MaxRunsWithUniquePaths
@@ -147,8 +148,7 @@ La motivation derrière cette limite de l’exploration est que tout code conten
 Les deux paramètres **MaxRuns** et **MaxRunsWithUniquePaths** sont liés de la manière suivante : 
 
 * IntelliTest appelle une méthode de test paramétrable jusqu’à **MaxRuns** fois avec des entrées de test différentes.
-* Si le code exécuté est déterministe, IntelliTest prend chaque fois un chemin d’exécution différent. 
-  Toutefois, sous certaines conditions, le code exécuté peut suivre un chemin d’exécution qu’il a déjà pris auparavant, avec des entrées différentes. 
+* Si le code exécuté est déterministe, IntelliTest prend chaque fois un chemin d’exécution différent. Toutefois, sous certaines conditions, le code exécuté peut suivre un chemin d’exécution qu’il a déjà pris auparavant, avec des entrées différentes. 
 * IntelliTest compte le nombre de chemins d’exécution uniques qu’il trouve ; ce nombre est limité par l’option **MaxRunsWithUniquePaths**.
 
 <a name="maxexceptions"></a>
@@ -156,16 +156,14 @@ Les deux paramètres **MaxRuns** et **MaxRunsWithUniquePaths** sont liés de la 
 
 Nombre maximal d’exceptions qui peuvent être rencontrées avant d’arrêter l’exploration.
 
-La motivation derrière cette limite de l’exploration est d’arrêter l’exploration de code qui contient de nombreux bogues.
-Si IntelliTest détecte trop d’erreurs dans le code, l’exploration est arrêtée.
+La motivation derrière cette limite de l’exploration est d’arrêter l’exploration de code qui contient de nombreux bogues. Si IntelliTest détecte trop d’erreurs dans le code, l’exploration est arrêtée.
 
 <a name="testexcludepathboundsexceeded"></a>
 ## <a name="testexcludepathboundsexceeded"></a>TestExcludePathBoundsExceeded
 
 Les chemins d’exécution qui dépassent les limites de chemin configurées [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack) et [MaxConditions](#maxconditions) sont ignorés.
 
-La motivation derrière cette limite de l’exploration est de traiter (très probablement) les tests sans fin d’exécution. Quand IntelliTest atteint une limite de l’exploration comme [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack) ou [MaxConditions](#maxconditions), il suppose que le test ne sera pas un processus sans fin d’exécution et n’entraînera pas de dépassement de capacité de la pile ultérieurement.
-De tels cas de test peuvent poser des problèmes à d’autres frameworks de tests et cet attribut fournit un moyen d’empêcher IntelliTest d’émettre des cas de test pour des processus potentiellement sans fin d’exécution ou qui risquent de provoquer un dépassement de capacité de la pile.
+La motivation derrière cette limite de l’exploration est de traiter (très probablement) les tests sans fin d’exécution. Quand IntelliTest atteint une limite de l’exploration comme [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack) ou [MaxConditions](#maxconditions), il suppose que le test ne sera pas un processus sans fin d’exécution et n’entraînera pas de dépassement de capacité de la pile ultérieurement. De tels cas de test peuvent poser des problèmes à d’autres frameworks de tests et cet attribut fournit un moyen d’empêcher IntelliTest d’émettre des cas de test pour des processus potentiellement sans fin d’exécution ou qui risquent de provoquer un dépassement de capacité de la pile.
 
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
@@ -184,10 +182,10 @@ Selon le paramètre [TestEmissionFilter](#testemissionfilter) actuel, IntelliTes
 
 Le paramètre **TestEmissionBranchHits** détermine si IntelliTest doit juste prendre en compte si une branche a été couverte (**TestEmissionBranchHits=1**), si un test l’a couverte une ou deux fois (**TestEmissionBranchHits=2**), et ainsi de suite.
 
-**TestEmissionBranchHits=1** produit une très petite suite de tests qui couvre toutes les branches qu’IntelliTest peut atteindre. En particulier, cette suite de tests couvre également l’ensemble des instructions et blocs de base atteints. 
+**TestEmissionBranchHits=1** produit une très petite suite de tests qui couvre toutes les branches qu’IntelliTest peut atteindre. En particulier, cette suite de tests couvre également l’ensemble des instructions et blocs de base atteints.
 
 La valeur par défaut de cette option est **TestEmissionBranchHits=2**, qui génère une suite de tests plus expressive et également mieux adaptée pour détecter de futures erreurs de régression.
 
 ## <a name="got-feedback"></a>Vous avez des commentaires ?
 
-Postez vos idées et demandes de fonctionnalités sur **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Postez vos idées et demandes de fonctionnalités sur [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

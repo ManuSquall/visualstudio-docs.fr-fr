@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ajouter une entité à un modèle | Documents Microsoft'
+title: 'Comment : ajouter une entité à un modèle | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,23 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 264fb0617f22f5112b28576416ab6b5c772f9a1e
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 72dbebd8ff9b2e7bf7b001d540158656271c0556
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766917"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757707"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Comment : ajouter une entité à un modèle
   Pour créer une entité, ajoutez un contrôle de l’entité à partir de Visual Studio **boîte à outils** sur le Concepteur de connectivité de données métiers (BDC).  
   
 ### <a name="to-add-an-entity-to-the-model"></a>Pour ajouter une entité au modèle  
   
-1.  Créez un projet BDC ou ouvrez un projet BDC existant. Pour plus d’informations, consultez [création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).  
+1.  Créer un projet BDC ou ouvrez un projet BDC existant. Pour plus d’informations, consultez [créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 2.  Dans le **boîte à outils**, à partir de la **BusinessDataCatalog** de groupe, ajoutez un **entité** contrôle sur le concepteur.  
   
-     La nouvelle entité s’affiche dans le concepteur. Visual Studio ajoute un `<Entity>` élément dans le XML du fichier de modèle BDC dans votre projet. Pour plus d’informations sur les attributs d’un élément d’entité, consultez [entité](http://go.microsoft.com/fwlink/?LinkId=169296).  
+     La nouvelle entité s’affiche dans le concepteur. Visual Studio ajoute un `<Entity>` élément pour le code XML du fichier de modèle BDC dans votre projet. Pour plus d’informations sur les attributs d’un élément d’entité, consultez [entité](http://go.microsoft.com/fwlink/?LinkId=169296).  
   
 3.  Dans le concepteur, ouvrez le menu contextuel de l’entité, choisissez **ajouter**, puis choisissez **identificateur**.  
   
@@ -57,6 +57,6 @@ ms.locfileid: "34766917"
  [Comment : ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md)   
  [Comment : ajouter une méthode de mise à jour](../sharepoint/how-to-add-an-updater-method.md)   
  [Comment : ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)   
- [Guide pratique pour ajouter une méthode de recherche spécifique](../sharepoint/how-to-add-a-specific-finder-method.md)  
+ [Comment : ajouter une méthode de recherche spécifique](../sharepoint/how-to-add-a-specific-finder-method.md)  
   
  

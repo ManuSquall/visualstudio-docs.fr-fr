@@ -39,7 +39,7 @@
       href: install/repair-visual-studio.md
     - name: Désinstaller Visual Studio
       href: install/uninstall-visual-studio.md
-    - name: Visual Studio Administrator Guide
+    - name: Guide de l’administrateur Visual Studio
       href: install/visual-studio-administrator-guide.md
       items:
         - name: Utiliser la ligne de commande
@@ -57,7 +57,7 @@
             - name: Installer et utiliser Visual Studio derrière un pare-feu ou un serveur proxy
               href: install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md
               items:
-                - name: Résolution des erreurs de réseau lorsque vous installez ou utilisez Visual Studio
+                - name: Résoudre les erreurs de réseau quand vous installez ou utilisez Visual Studio
                   href: install/troubleshooting-network-related-errors-in-visual-studio.md
         - name: Déployer dans une entreprise
           items:
@@ -132,7 +132,7 @@
     - name: R dans Visual Studio...
       href: rtvs/getting-started-with-r.md
     - name: Node.js dans Visual Studio
-      href: nodejs/tutorial-nodejs.md
+      href: javascript/tutorial-nodejs.md
     - name: 'C# dans Visual Studio'
       href: ide/tutorial-csharp-aspnet-core.md
     - name: Visual Basic dans Visual Studio
@@ -153,8 +153,6 @@
               href: ide/creating-solutions-and-projects.md
             - name: 'Porter, migrer et mettre à niveau des projets'
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-            - name: Ajouter et supprimer des éléments de projet
-              href: ide/adding-and-removing-project-items.md
             - name: Gérer les propriétés des projets et des solutions
               href: ide/managing-project-and-solution-properties.md
             - name: Gérer les références dans un projet
@@ -344,9 +342,6 @@
               items:
                 - name: Visual Basic IntelliSense
                   href: ide/visual-basic-specific-intellisense.md
-                  items:
-                    - name: Listes de saisie semi-automatique filtrées en Visual Basic
-                      href: ide/filtered-completion-lists-in-visual-basic.md
                 - name: 'C# IntelliSense'
                   href: ide/visual-csharp-intellisense.md
                 - name: IntelliSense JavaScript
@@ -475,6 +470,11 @@
           href: ide/find-and-fix-code-errors.md
         - name: Développement mobile multiplateforme
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
+        - name: 'Développement F#'
+          href: ide/fsharp-visual-studio.md
+          items:
+            - name: Cibler les versions antérieures du .NET
+              href: ide/fsharp-target-older-dotnet-versions.md
         - name: Développement Office et SharePoint
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: Utiliser des fichiers XML et XSLT
@@ -605,15 +605,15 @@
         - name: "Procédure pas à pas\_: créer un environnement de build sur plusieurs ordinateurs"
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Déboguer...
-      href: debugger/debugger-feature-tour.md
+      href: debugger/index.md
     - name: Tester...
       href: test/improve-code-quality.md
     - name: Mesurer les performances...
-      href: profiling/profiling-feature-tour.md
+      href: profiling/index.md
     - name: Analyser la qualité du code...
-      href: code-quality/analyzing-application-quality-by-using-code-analysis-tools.md
+      href: code-quality/index.md
     - name: Déployer...
-      href: deployment/deploying-applications-services-and-components.md
+      href: deployment/index.md
     - name: Étendre Visual Studio...
       href: extensibility/visual-studio-sdk.md
     - name: Analyser et modéliser l’architecture...
@@ -686,8 +686,6 @@
       items:
         - name: Paramètres de modèle
           href: ide/template-parameters.md
-        - name: Informations de référence sur les schémas de modèles (extensibilité)
-          href: extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default
     - name: Éléments généraux de l’interface utilisateur
       items:
         - name: Hiérarchie d'appels
@@ -957,8 +955,6 @@
           href: ide/reference/open-file-command.md
         - name: 'Ouvrir un projet, commande'
           href: ide/reference/open-project-command.md
-        - name: 'Ouvrir une solution, commande'
-          href: ide/reference/open-solution-command.md
         - name: 'Imprimer, commande'
           href: ide/reference/print-command.md
         - name: 'Espion express, commande'

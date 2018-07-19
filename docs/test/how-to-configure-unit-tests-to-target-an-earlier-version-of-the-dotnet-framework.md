@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750738"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233488"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Comment : configurer des tests unitaires pour cibler une version antérieure du .NET Framework
 
@@ -32,7 +32,7 @@ Vous pouvez créer des projets de test unitaire qui ciblent des versions spécif
 
 **Test des applications SharePoint**
 
-Les fonctionnalités listées ci-dessus vous permettent également d’écrire des tests unitaires et des tests d’intégration pour les applications SharePoint à l’aide de Visual Studio. Pour plus d’informations sur le développement d’applications SharePoint à l’aide de Visual Studio, consultez [Créer des solutions SharePoint](/office-dev/office-dev/create-sharepoint-solutions), [Génération et débogage de solutions SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions) et [Vérification et débogage du code SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code).
+Les fonctionnalités listées ci-dessus vous permettent également d’écrire des tests unitaires et des tests d’intégration pour les applications SharePoint à l’aide de Visual Studio. Pour plus d’informations sur le développement d’applications SharePoint à l’aide de Visual Studio, consultez [Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md), [Génération et débogage de solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) et [Vérification et débogage du code SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
 **Limitations**
 
@@ -126,6 +126,6 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Créer des solutions SharePoint](/office-dev/office-dev/create-sharepoint-solutions)
-- [Génération et débogage de solutions SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)
+- [Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md)
+- [Génération et débogage de solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

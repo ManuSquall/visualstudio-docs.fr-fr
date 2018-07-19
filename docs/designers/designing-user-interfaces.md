@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 192010763a5a00981ca65adc2cbb5fe8fa024aab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82b44b024b3914061bf79f70fedf76c81a3ebffc
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920890"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890020"
 ---
 # <a name="design-user-interfaces"></a>Concevoir des interfaces utilisateur
 
@@ -23,7 +23,7 @@ Vous pouvez créer et concevoir l’interface utilisateur de votre application �
 
 |Pour en savoir plus sur les sujets suivants|Voir|
 |-------------------------|---------|
-| Fonctionnalités des concepteurs XAML dans Visual Studio et Blend pour Visual Studio | [Conception XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md) |
+| Fonctionnalités des concepteurs XAML dans Visual Studio et Blend pour Visual Studio | [Concevoir du code XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md) |
 | Conception d’une application XAML à l’aide de Visual Studio|[Créer une interface utilisateur à l’aide du concepteur XAML dans Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) |
 | Conception d’une application XAML à l’aide de Blend pour Visual Studio | [Créer une IU à l’aide de Blend pour Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md) |
 |Conception d’applications de bureau qui utilisent la version WPF de XAML | [Bien démarrer avec WPF](../designers/getting-started-with-wpf.md) |

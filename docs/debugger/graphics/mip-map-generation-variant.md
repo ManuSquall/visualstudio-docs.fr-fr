@@ -1,5 +1,5 @@
 ---
-title: Variante de génération mipmap | Documents Microsoft
+title: Variante de génération de mipmap | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8804c4b559d2755dd0caec000a58751b9697b23
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475716"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433166"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de génération mipmap
 Active les mipmaps sur les textures qui ne sont pas des cibles de rendu.  
@@ -47,7 +47,7 @@ Active les mipmaps sur les textures qui ne sont pas des cibles de rendu.
 ## <a name="example"></a>Exemple  
  Le **génération mipmap** variante peut être reproduite à l’aide de code similaire à celui-ci :  
   
-```  
+```cpp
 D3D11_TEXTURE2D_DESC texture_description;  
   
 // ...  
@@ -72,4 +72,4 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 >  Si vous voulez fournir votre propre contenu de niveau MIP au lieu de le générer automatiquement, vous devez créer vos textures à l'aide d'un éditeur d'image qui prend en charge les textures mipmappées, puis charger le fichier et passer les niveaux MIP à `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Variante de Dimensions de Texture de moitié/un quart](half-quarter-texture-dimensions-variant.md)
+ [Variante de Dimensions de Texture moitié/un quart](half-quarter-texture-dimensions-variant.md)

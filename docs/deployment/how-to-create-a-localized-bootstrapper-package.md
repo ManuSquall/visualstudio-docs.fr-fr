@@ -1,5 +1,5 @@
 ---
-title: 'Comment : créer un Package de programme d’amorçage localisé | Documents Microsoft'
+title: 'Comment : créer un Package de programme d’amorçage localisé | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 6948bd0a9cb3469141ea8c879effa130e7b00e86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566015"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38785236"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Comment : créer un package du programme d'amorçage localisé
 Après avoir créé un package de programme d'amorçage, vous pouvez créer des versions localisées de ce dernier en créant deux fichiers de plus pour chacun des paramètres régionaux : un fichier des termes du contrat de licence logiciel (par exemple eula.rtf) et un manifeste du package (package.xml).  
@@ -93,6 +93,6 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
 6.  Enregistrez le fichier package.xml.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création de Packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md)   
+ [Création de packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md)   
  [Prérequis pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)   
  [Guide pratique pour créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md)

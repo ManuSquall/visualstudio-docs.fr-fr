@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisherIdentity&gt; élément (déploiement ClickOnce) | Documents Microsoft'
+title: '&lt;publisherIdentity&gt; , élément (déploiement ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92b0082d7a2b062d946d132c5a86fbceb5208802
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: f33772a35e8e47a77e0fdaddd28b7471ef5abcce
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815140"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081408"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; élément (déploiement ClickOnce)
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; , élément (déploiement ClickOnce)
 Contient des informations sur l'éditeur qui a signé ce manifeste de déploiement.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -38,7 +38,7 @@ Contient des informations sur l'éditeur qui a signé ce manifeste de déploieme
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le `publisherIdentity` élément est requis pour les manifestes signés. Le tableau suivant montre les attributs que la `publisherIdentity` élément prend en charge.  
+ Le `publisherIdentity` élément est requis pour les manifestes signés. Le tableau suivant montre les attributs que le `publisherIdentity` élément prend en charge.  
   
 |Attribut|Description|  
 |---------------|-----------------|  

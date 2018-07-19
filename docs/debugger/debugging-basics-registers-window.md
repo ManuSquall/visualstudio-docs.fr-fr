@@ -1,5 +1,5 @@
 ---
-title: À propos de la fenêtre Registres | Documents Microsoft
+title: À propos de la fenêtre Registres | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b2c34971750d8e6db0173f6034342b9efbfd97
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474412"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056295"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>À propos de la fenêtre registres dans Visual Studio
 Le **inscrit** fenêtre est disponible uniquement si le débogage au niveau des adresses est activé dans le **Options** boîte de dialogue, **débogage** nœud.  
@@ -37,17 +37,13 @@ Le **inscrit** fenêtre est disponible uniquement si le débogage au niveau des 
   
  Un processeur contient généralement deux jeux de registres à caractère général, un qui est optimisé pour les opérations en virgule flottante et un second pour les opérations sur les entiers. Logiquement, ils sont appelés Registre à virgule flottante et Registre entier.  
   
- Le code managé est compilé pendant l'exécution en code natif, qui accède aux registres physiques du microprocesseur. Le **inscrit** affiche ces registres physiques pour le common language runtime ou le code natif. Le **inscrit** fenêtre n’affiche pas les informations de Registre pour le script ou d’une application SQL, car le script et SQL sont des langages qui ne prennent pas en charge le concept de registres.  
+ Le code managé est compilé pendant l'exécution en code natif, qui accède aux registres physiques du microprocesseur. Le **inscrit** fenêtre affiche ces registres physiques pour le common language runtime ou le code natif. Le **inscrit** fenêtre n’affiche pas les informations de Registre pour le script ou une application SQL, car le script et SQL sont des langages qui ne prennent pas en charge le concept de registres.  
   
  Pour plus d’informations sur l’affichage de la **inscrit** fenêtre, consultez [à l’aide de la fenêtre Registres](../debugger/how-to-use-the-registers-window.md).  
   
- Lorsque vous examinez le **inscrit** fenêtre, vous pouvez consulter des entrées telles que cet exemple :  
+ Lorsque vous examinez le **inscrit** fenêtre, vous verrez des entrées telles que `EAX = 003110D8`.  
   
-```  
-EAX = 003110D8  
-```  
-  
- Le symbole à gauche du signe = est le nom de registre, EAX, dans ce cas. Le nombre à droite du signe = représente le contenu du Registre.  
+ Le symbole à gauche de la `=` signe est le nom du Registre, `EAX`, dans ce cas. Le nombre à droite de la `=` connexion représente le contenu du Registre.  
   
  Le **inscrit** fenêtre vous permet de faire plus que simplement afficher le contenu d’un Registre. Lorsque vous êtes en mode arrêt dans du code natif, vous pouvez cliquer sur le contenu d'un Registre et modifier la valeur. Cette opération ne doit pas être réalisée à l'aveuglette. Sauf si vous comprenez le Registre que vous êtes en train de modifier et les données qu'il contient, la modification inconsidérée peut provoquer un incident du programme ou avoir d'autres conséquences non désirées. Malheureusement, l'explication détaillée des jeux de registres des différents processeurs Intel et compatibles va bien au-delà de l'objet de cette brève introduction.  
   

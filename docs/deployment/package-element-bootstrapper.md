@@ -1,5 +1,5 @@
 ---
-title: '&lt;Package&gt; élément (programme d’amorçage) | Documents Microsoft'
+title: '&lt;Package&gt; élément (programme d’amorçage) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b304cc3bee93b367cc3b401328749ee6aca89625
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a0c1ab7a2e304fcaede2a51a1047691343f34783
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815598"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080784"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package&gt; élément (programme d’amorçage)
 Le `Package` élément est l’élément XML de niveau supérieur à l’intérieur d’un fichier de package.  
@@ -143,13 +143,13 @@ Le `Package` élément est l’élément XML de niveau supérieur à l’intéri
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le `Package` élément est requis. Il possède les attributs suivants.  
+ Le `Package` élément est requis. Il a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Culture`|Obligatoire. Définit la culture pour ce package, qui détermine la langue à utiliser. Cet attribut est une clé dans le `Strings` élément, qui répertorie des chaînes spécifiques à la culture pour les noms de produits et les messages d’erreur pendant l’installation.|  
 |`Name`|Obligatoire. Le nom du package affiché au développeur dans un outil tel que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Cet attribut est une clé dans le `Strings` élément, qui doit contenir un `String` élément avec la `Name` et `Culture` propriétés définies pour correspondre à la `Name` et `Culture` propriétés de `Package`.|  
-|`LicenseAgreement`|Facultatif. Spécifie le nom du fichier dans le package de distribution qui contient le contrat de licence utilisateur final (CLUF).  Ce fichier peut être en texte brut (.txt) ou au Format RTF. (.rtf)|  
+|`LicenseAgreement`|Facultatif. Spécifie le nom du fichier dans le package de distribution qui contient le contrat de licence utilisateur final (CLUF).  Ce fichier peut être soit du texte brut (*.txt*) ou au Format RTF. (*.rtf*)|  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant montre un fichier de package complet pour la redistribution du [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
@@ -190,4 +190,4 @@ Le `Package` élément est l’élément XML de niveau supérieur à l’intéri
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)
+ [Référence du schéma de produit et du package](../deployment/product-and-package-schema-reference.md)

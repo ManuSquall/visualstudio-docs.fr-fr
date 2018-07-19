@@ -1,5 +1,5 @@
 ---
-title: Événements de mémoire tampon de texte dans l’API hérité | Documents Microsoft
+title: Événements de mémoire tampon de texte dans l’API héritée | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,45 +13,44 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab2812d30c0f02063e9ed3672e9b01855c77da22
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f147171d8af075029a4a763a84fd48c5209f8fe1
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31143070"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080606"
 ---
-# <a name="text-buffer-events-in-the-legacy-api"></a>Événements de mémoire tampon de texte dans l’API hérité
+# <a name="text-buffer-events-in-the-legacy-api"></a>Événements de mémoire tampon de texte dans l’API héritée
 L’objet de mémoire tampon de texte émet plusieurs événements différents qui vous permettent de répondre à différentes situations.  
   
- Lorsque vous utilisez l’API héritée, vous devez implémenter les interfaces suivantes afin de recevoir des notifications de modification de la mémoire tampon de texte. Exposer les interfaces dans la mémoire tampon de texte à l’aide de la `IConnectionPointContainer` interface sur la mémoire tampon de texte pour recevoir une notification de la ligne modifiée à partir de la mémoire tampon. Pour plus d’informations, consultez [Comment : s’inscrire aux événements de mémoire tampon de texte avec l’API héritée](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Dans le cas de `IVsTextStreamEvents` ou `IVsTextLinesEvents` interfaces, les modifications sont retournées dans l’une ou deux dimensions coordonnées, respectivement.  
+ Lorsque vous utilisez l’API héritée, vous devez implémenter les interfaces suivantes afin de recevoir des notifications de modification de la mémoire tampon de texte. Exposer les interfaces de la mémoire tampon de texte en utilisant le `IConnectionPointContainer` modifications de l’interface sur la mémoire tampon pour recevoir une notification de ligne à partir de la mémoire tampon. Pour plus d’informations, consultez [Comment : s’inscrire aux événements de mémoire tampon de texte avec l’API héritée](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Dans le cas de `IVsTextStreamEvents` ou `IVsTextLinesEvents` interfaces, les modifications sont retournées dans l’une ou deux dimensions coordonnées, respectivement.  
   
 ## <a name="text-buffer-interfaces"></a>Interfaces de mémoire tampon de texte  
  Voici les interfaces implémentées par l’objet de mémoire tampon de texte.  
   
 |Interface|Description|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Permet la création d’actions composées (autrement dit, les actions qui sont regroupées dans une unité d’annulation/de rétablissement unique).|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Active la persistance des données du document gérées par la mémoire tampon de texte.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Permet la création d’actions composites (autrement dit, les actions qui sont regroupées dans une unité d’annulation/de rétablissement unique).|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Active la persistance des données de document gérées par la mémoire tampon de texte.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Fournit des services de base ; utilisé par de nombreux clients.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Fournit de lecture et en écriture à l’aide de coordonnées à deux dimensions. Hérite de `IVsTextBuffer`.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Offre un accès séquentiel, orienté flux de données à du texte dans la mémoire tampon rapide.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Fournit des lire et écrire des fonctions à l’aide de coordonnées unidimensionnelles. Hérite de `IVsTextBuffer`.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Fournit lire et écrire des fonctionnalités à l’aide de coordonnées à deux dimensions. Hérite de `IVsTextBuffer`.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Offre un accès séquentiel, orienté flux et à du texte dans la mémoire tampon rapide.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Fournit lire et écrire des fonctionnalités à l’aide des coordonnées unidimensionnelles. Hérite de `IVsTextBuffer`.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Fournit l’accès à une collection générique de propriétés. La propriété la plus importante est le nom ou le moniker, de la mémoire tampon. Vous pouvez stocker vos propres données aléatoires dans la mémoire tampon avec cette interface par la création d’un GUID et l’utiliser en tant que clé.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Prend en charge les points de connexion pour les événements.|  
   
-## <a name="text-buffer-event-interfaces"></a>Interfaces d’événements de mémoire tampon de texte  
- Voici les interfaces de notification d’événement de mémoire tampon de texte.  
+## <a name="text-buffer-event-interfaces"></a>Interfaces d’événement de mémoire tampon de texte  
+ Voici les interfaces pour la notification d’événement de mémoire tampon de texte.  
   
 |Interface|Description|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferEvents>|Notifie les clients lorsqu’un nouveau service de langage est associé à une mémoire tampon de texte.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferDataEvents>|Notifie les clients lors de l’initialisation de mémoire tampon de texte et lorsque des modifications sont apportées aux données dans la mémoire tampon de texte.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents>|Notifie les clients des modifications apportées à la mémoire tampon sous-jacente dans les coordonnées de la dimension.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>|Notifie les clients des modifications apportées à la mémoire tampon sous-jacente en utilisant les coordonnées à deux dimensions.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserDataEvents>|Notifie les clients des modifications apportées aux données utilisateur.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Notifie les clients du dernier mouvement de la validation de déclencher l’événement et fournit la plage de texte modifié. Le `IVsPreliminaryTextChangeCommitEvents` interface n’est pas déclenché en réponse à annuler ou rétablir les commandes. Événements se déclenchent uniquement pour les mémoires tampons qui ont un gestionnaire d’annulation. `IVsPreliminaryTextChangeCommitEvents` se déclenche avant les autres événements, tels que de tabulation, afin de vous assurer que les autres événements ne modifient pas le texte avant que les modifications soient validées. Votre VSPackage doit surveiller un le `IVsPreliminaryTextChangeCommitEvents` interface ou le `IVsFinalTextChangeCommitEvents` interface, mais pas les deux.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Notifie les clients du dernier mouvement de la validation de déclencher l’événement et fournit la plage de texte modifié. Le `IVsFinalTextChangeCommitEvents` interface n’est pas déclenché en réponse à annuler ou rétablir les commandes. Événements se déclenchent uniquement pour les mémoires tampons qui ont un gestionnaire d’annulation. `IVsFinalTextChangeCommitEvents` est destinée uniquement aux services de langage ou d’autres objets qui ont un contrôle complet sur la modification. Votre VSPackage doit surveiller un le `IVsPreliminaryTextChangeCommitEvents` interface ou le `IVsFinalTextChangeCommitEvents` interface, mais pas les deux.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferEvents>|Avertit les clients lorsqu’un nouveau service de langage est associé à une mémoire tampon de texte.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferDataEvents>|Avertit les clients lors de la mémoire tampon de texte est initialisée et lorsque des modifications sont apportées aux données dans la mémoire tampon de texte.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents>|Avertit les clients des modifications apportées à la mémoire tampon sous-jacente dans les coordonnées unidimensionnelles.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>|Avertit les clients des modifications apportées à la mémoire tampon sous-jacente dans les coordonnées à deux dimensions.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserDataEvents>|Avertit les clients des modifications apportées aux données de l’utilisateur.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Avertit les clients du dernier mouvement de validation pour déclencher l’événement et fournit la plage de texte modifié. Le `IVsPreliminaryTextChangeCommitEvents` interface n’est pas déclenchée en réponse à annuler ou rétablir les commandes. Événements se déclenchent uniquement pour les mémoires tampons qui ont un gestionnaire d’annulation. `IVsPreliminaryTextChangeCommitEvents` est déclenché avant les autres événements, tels que de tabulation, afin de vous assurer que les autres événements ne modifient pas le texte avant que les modifications soient validées. Votre VSPackage doit surveiller un le `IVsPreliminaryTextChangeCommitEvents` interface ou le `IVsFinalTextChangeCommitEvents` interface, mais pas les deux.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Avertit les clients du dernier mouvement de validation pour déclencher l’événement et fournit la plage de texte modifié. Le `IVsFinalTextChangeCommitEvents` interface n’est pas déclenchée en réponse à annuler ou rétablir les commandes. Événements se déclenchent uniquement pour les mémoires tampons qui ont un gestionnaire d’annulation. `IVsFinalTextChangeCommitEvents` est destiné uniquement par les services de langage ou d’autres objets qui ont un contrôle complet sur la modification. Votre VSPackage doit surveiller un le `IVsPreliminaryTextChangeCommitEvents` interface ou le `IVsFinalTextChangeCommitEvents` interface, mais pas les deux.|  
   
-## <a name="see-also"></a>Voir aussi  
- [L’accès à la mémoire tampon de texte à l’aide de l’API héritée](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [Comment : s’inscrire aux événements de mémoire tampon de texte avec l’API hérité](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+## <a name="see-also"></a>Voir aussi
+ [Accéder à la mémoire tampon de texte à l’aide de l’API héritée](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md) [Comment : s’inscrire aux événements de mémoire tampon de texte avec l’API héritée](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

@@ -18,23 +18,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f4c865dcf55f8796748308822b8a6dde5f96ef8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c5d8d9f961db7c6560f1dd7a73f2ea62a974bac
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920545"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174209"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Comment : enregistrer des données à l’aide d’une transaction
-Vous enregistrez des données dans une transaction à l’aide de la <xref:System.Transactions> espace de noms. Utilisez le <xref:System.Transactions.TransactionScope> objet de participer à une transaction qui est gérée automatiquement pour vous.
+Vous enregistrez des données dans une transaction en utilisant le <xref:System.Transactions> espace de noms. Utilisez le <xref:System.Transactions.TransactionScope> objet de participer à une transaction qui est gérée automatiquement pour vous.
 
-Projets ne sont pas créés avec une référence à l’assembly System.Transactions, donc vous devez ajouter manuellement une référence aux projets qui utilisent des transactions.
+Projets ne sont pas créés avec une référence à la *System.Transactions* assembly, vous devez ajouter manuellement une référence aux projets qui utilisent des transactions.
 
-Le moyen le plus simple d’implémenter une transaction consiste à instancier un <xref:System.Transactions.TransactionScope> de l’objet dans un `using` instruction. (Pour plus d’informations, consultez [à l’aide de l’instruction](/dotnet/visual-basic/language-reference/statements/using-statement), et [à l’aide d’instruction](/dotnet/csharp/language-reference/keywords/using-statement).) Le code qui s’exécute dans le `using` instruction participe à la transaction.
+Le moyen le plus simple d’implémenter une transaction consiste à instancier un <xref:System.Transactions.TransactionScope> de l’objet dans un `using` instruction. (Pour plus d’informations, consultez [à l’aide d’instruction](/dotnet/visual-basic/language-reference/statements/using-statement), et [à l’aide d’instruction](/dotnet/csharp/language-reference/keywords/using-statement).) Le code qui s’exécute dans le `using` instruction participe à la transaction.
 
-Pour valider la transaction, appelez le <xref:System.Transactions.TransactionScope.Complete%2A> bloquer de la dernière instruction à l’aide de la méthode.
+Pour valider la transaction, appelez le <xref:System.Transactions.TransactionScope.Complete%2A> bloquer la dernière instruction dans l’à l’aide de la méthode.
 
-Pour restaurer la transaction, levez une exception avant d’appeler le <xref:System.Transactions.TransactionScope.Complete%2A> (méthode).
+Pour restaurer la transaction, lève une exception avant d’appeler le <xref:System.Transactions.TransactionScope.Complete%2A> (méthode).
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Pour ajouter une référence à la System.Transactions.dll.
 
@@ -42,11 +42,11 @@ Pour restaurer la transaction, levez une exception avant d’appeler le <xref:Sy
 
 2.  Sur le **.NET** onglet (**SQL Server** onglet pour les projets SQL Server), sélectionnez **System.Transactions**, puis sélectionnez **OK**.
 
-     Une référence à System.Transactions.dll est ajoutée au projet.
+     Une référence à *System.Transactions.dll* est ajouté au projet.
 
 ## <a name="to-save-data-in-a-transaction"></a>Pour enregistrer les données dans une transaction
 
--   Ajoutez le code pour enregistrer des données dans à l’aide de l’instruction qui contient la transaction. Le code suivant montre comment créer et instancier une <xref:System.Transactions.TransactionScope> objet à l’aide d’une instruction :
+-   Ajoutez du code pour enregistrer des données dans à l’aide de l’instruction qui contient la transaction. Le code suivant montre comment créer et instancier un <xref:System.Transactions.TransactionScope> objet dans un à l’aide de déclaration :
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]

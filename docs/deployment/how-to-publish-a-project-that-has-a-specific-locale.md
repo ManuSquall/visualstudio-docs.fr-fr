@@ -1,5 +1,5 @@
 ---
-title: 'Comment : publier un projet qui a des paramètres régionaux spécifiques | Documents Microsoft'
+title: 'Comment : publier un projet qui a des paramètres régionaux spécifique | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8975c362039e347700e4256036998e8386c2e2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4752556fadead75bb29b6920d51ebbb54a5679aa
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561608"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080797"
 ---
-# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Comment : publier un projet qui a des paramètres régionaux spécifiques
+# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Comment : publier un projet qui a des paramètres régionaux spécifique
 Une application peut contenir des composants ayant des paramètres régionaux différents. Dans ce scénario, vous devez créer une solution avec plusieurs projets, puis publier des projets distincts pour chacun des paramètres régionaux. Cette procédure montre comment utiliser une macro pour publier le premier projet dans une solution avec les paramètres régionaux « en ». Si vous souhaitez essayer cette procédure avec d'autres paramètres régionaux, veillez à définir `localeString` dans la macro pour que sa valeur corresponde aux paramètres régionaux que vous utilisez (par exemple, « fr » ou « fr-FR »).  
   
 > [!NOTE]
@@ -37,7 +37,7 @@ Une application peut contenir des composants ayant des paramètres régionaux di
   
 ### <a name="to-create-the-publishing-macro"></a>Pour créer la macro de publication  
   
-1.  Pour ouvrir l’Explorateur de macros, dans le **outils** menu, pointez sur **Macros**, puis cliquez sur **Explorateur de macros**.  
+1.  Pour ouvrir l’Explorateur de macros, sur le **outils** menu, pointez sur **Macros**, puis cliquez sur **Explorateur de macros**.  
   
 2.  Créez un module de macro. Dans l’Explorateur de macros, sélectionnez **MyMacros**. Sur le **outils** menu, pointez sur **Macros**, puis cliquez sur **nouveau Module de Macro**. Nommez le module **PublishSpecificCulture**.  
   
@@ -141,30 +141,30 @@ Une application peut contenir des composants ayant des paramètres régionaux di
   
 ### <a name="to-publish-a-project-for-a-specific-locale"></a>Pour publier un projet avec des paramètres régionaux spécifiques  
   
-1.  Pour créer un projet d’Application Windows Visual Basic, sur le **fichier** menu, pointez sur **nouveau**, puis cliquez sur **projet**.  
+1.  Pour créer un projet d’Application Windows de Visual Basic, sur le **fichier** menu, pointez sur **New**, puis cliquez sur **projet**.  
   
-2.  Dans le **nouveau projet** boîte de dialogue, sélectionnez **Application Windows** à partir de la **Visual Basic** nœud. Nommez le projet **PublishLocales**.  
+2.  Dans le **nouveau projet** boîte de dialogue, sélectionnez **Windows Application** à partir de la **Visual Basic** nœud. Nommez le projet *PublishLocales*.  
   
-3.  Cliquez sur Form1. Dans le **propriétés** fenêtre, sous **conception**, modifiez le **langage** propriété à partir de **(par défaut)** à **anglais**. Modifier la **texte** propriété du formulaire **MyForm**.  
+3.  Cliquez sur Form1. Dans le **propriétés** fenêtre, sous **conception**, modifier le **langage** propriété à partir de **(par défaut)** à **anglais**. Modifier le **texte** propriété du formulaire à **MyForm**.  
   
      Notez que les DLL de ressource localisées ne sont pas créées tant qu'elles ne sont pas requises. Par exemple, elles sont créées quand vous modifiez le texte du formulaire ou l'un de ses contrôles, une fois les nouveaux paramètres régionaux spécifiés.  
   
-4.  Publiez PublishLocales à l'aide de l'IDE de Visual Studio.  
+4.  Publier *PublishLocales* à l’aide de l’IDE Visual Studio.  
   
-     Dans **l’Explorateur de solutions**, sélectionnez PublishLocales. Sur le **projet** menu, sélectionnez **propriétés**. Dans le Concepteur de projets, sur le **publier** , spécifiez un emplacement de publication de **http://localhost/PublishLocales**, puis cliquez sur **publier maintenant**.  
+     Dans **l’Explorateur de solutions**, sélectionnez *PublishLocales*. Sur le **projet** menu, sélectionnez **propriétés**. Dans le Concepteur de projets, sur le **publier** , spécifiez un emplacement de publication de **http://localhost/PublishLocales**, puis cliquez sur **publier maintenant**.  
   
      Quand la page web de publication apparaît, fermez-la. (Pour cette étape, vous devez uniquement publier le projet, sans l'installer.)  
   
-5.  Publiez à nouveau PublishLocales en appelant la macro dans la fenêtre d'invite de commandes Visual Studio. Pour afficher la fenêtre d’invite de commandes, sur le **vue** menu, pointez sur **autres fenêtres** puis cliquez sur **fenêtre commande**, ou appuyez sur CTRL + ALT + A. Dans la fenêtre d’invite de commandes, tapez `macros`; saisie semi-automatique propose la liste des macros disponibles. Sélectionnez la macro suivante et appuyez sur ENTRÉE :  
+5.  Publier *PublishLocales* à nouveau en appelant la macro dans la fenêtre d’invite de commandes Visual Studio. Pour afficher la fenêtre d’invite de commandes, sur le **vue** menu, pointez sur **Windows autres** puis cliquez sur **fenêtre de commande**, ou appuyez sur **Ctrl** + **Alt**+**A**. Dans la fenêtre d’invite de commandes, tapez `macros`; saisie semi-automatique fournit une liste des macros disponibles. Sélectionnez la macro suivante et appuyez sur ENTRÉE :  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
-6.  Une fois le processus de publication terminé, un message confirme que la publication de PublishLocales\PublishLocales.vbproj a été correctement effectuée. La langue de publication était « en ». Cliquez sur **OK** dans la boîte de message. Lorsque la page Web de publication apparaît, cliquez sur **installer**.  
+6.  Lorsque le processus de publication réussit, il génère un message indiquant « publication a réussi pour *Publierparamètresrégionaux\publierparamètresrégionaux*. La langue de publication était « en ». Cliquez sur **OK** dans la boîte de message. Lorsque la page Web de publication s’affiche, cliquez sur **installer**.  
   
-7.  Consultez C:\Inetpub\wwwroot\PublishLocales\en. Les fichiers installés tels que les manifestes, setup.exe et le fichier de page web de publication doivent s'afficher, en plus de la DLL de ressource localisée. (Par défaut, ClickOnce ajoute une extension .deploy aux fichiers EXE et DLL. Vous pouvez supprimer cette extension après le déploiement.)  
+7.  Regarder dans *C:\Inetpub\wwwroot\PublishLocales\en*. Vous devez voir les fichiers installés tels que les manifestes, *setup.exe*et le fichier de page Web de publication, en plus de la DLL de ressource localisée. (Par défaut, ClickOnce ajoute un *.deploy* extension fichiers exe et DLL ; vous pouvez supprimer cette extension après le déploiement.)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Environnement de développement de macros](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Environnement de développement des macros](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
  [Fenêtre Explorateur de macros](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Comment : modifier et créer des Macros par programmation](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [Comment : modifier et créer des macros par programmation](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)

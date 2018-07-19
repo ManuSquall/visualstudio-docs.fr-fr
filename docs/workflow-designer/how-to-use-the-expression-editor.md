@@ -1,5 +1,5 @@
 ---
-title: 'Le Concepteur de flux de travail - Comment : utiliser l’éditeur d’Expression'
+title: 'Concepteur de flux de travail - Comment : utiliser l’éditeur d’expressions'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -12,33 +12,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e14a967b9721973d8d545e10f58cab3c68b8e15
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1f2ab9cad6f54b8d1106fd68eb017434cf5cfef
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976502"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756140"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procédure : utiliser l'éditeur d'expressions
 
-L’éditeur d’Expression est un contrôle du Concepteur de flux de travail Windows qui est utilisé dans de nombreuses activités de flux de travail comme un moyen d’entrer et évaluer ces expressions. Il fournit une expérience d’édition IDE complète, comprenant, entre autres fonctionnalités, IntelliSense, la colorisation, ParamInfo et les tildes d’erreur. Le compilateur valide l'expression après sa saisie. Si l'expression n'est pas valide, une icône d'erreur s'affiche. Vous pouvez également ouvrir l’éditeur comme un **l’éditeur d’Expression** boîte de dialogue.
+L’éditeur d’Expression est un contrôle de Concepteur de Workflow qui est utilisé dans de nombreuses activités de flux de travail pour entrer et évaluer des expressions. L’éditeur d’Expression fournit un IDE à part entière, modification de l’expérience, notamment IntelliSense, la colorisation, paraminfo et les tildes d’erreur, entre autres fonctionnalités. Le compilateur valide l’expression après sa saisie. Si l'expression n'est pas valide, une icône d'erreur s'affiche. L’éditeur peut également être ouvert comme un **Éditeur d’Expression** boîte de dialogue.
 
- Les expressions sont des valeurs littérales ou du code Visual Basic liés à des arguments ou des propriétés. Elles contiennent des éléments de valeur (par exemple, des variables, des constantes, des littéraux ou des propriétés) combinés avec des opérations afin de produire une nouvelle valeur. Les expressions sont écrites à l'aide de la syntaxe VB.NET même si l'application se trouve dans un programme utilisant C#. Cela signifie que les majuscules ne sont pas, la comparaison est effectuée à l’aide un seul égal (« = ») au lieu de (« == »), les opérateurs booléens sont les mots « et » et « ou » au lieu des symboles « & & » et «&#124;&#124;», et **Nothing**  est utilisé à la place de **null**. Pour plus d’informations sur les expressions et opérateurs en Visual Basic et pour obtenir des exemples, consultez [opérateurs et Expressions en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).
+Les expressions sont des valeurs littérales ou du code Visual Basic liés à des arguments ou des propriétés. Elles contiennent des éléments de valeur (par exemple, variables, constantes, littéraux, propriétés) combinés à des opérations afin de produire une nouvelle valeur. Les expressions sont écrites à l'aide de la syntaxe VB.NET même si l'application se trouve dans un programme utilisant C#. Cela signifie que les majuscules ne sont pas, la comparaison est effectuée à l’aide d’une seule égale signer (« = » au lieu de « == »), les opérateurs booléens sont les mots « et » et « or » au lieu des symboles » & & » et « || », et **rien** est utilisé au lieu de **null**. Pour plus d’informations sur les expressions et opérateurs en Visual Basic et pour obtenir des exemples, consultez [opérateurs et expressions en Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
 
- Le **l’éditeur d’Expression** se comporte comme suit :
+Le **Éditeur d’Expression** se comporte comme suit :
 
--   Si le focus n'est pas sur l'éditeur d'expressions, celui-ci a l'apparence d'un contrôle TextBlock normal.
+- Si le focus n'est pas sur l'éditeur d'expressions, celui-ci a l'apparence d'un contrôle TextBlock normal.
 
--   Lorsque le focus se trouve sur l'éditeur d'expressions, celui-ci adopte l'apparence et le comportement du contrôle de l'éditeur d'expressions. Lorsqu'il perd le focus, il reprend l'apparence d'un TextBlock classique.
+- Lorsque le focus se trouve sur l'éditeur d'expressions, celui-ci adopte l'apparence et le comportement du contrôle de l'éditeur d'expressions. Lorsqu’il perd le focus, l’éditeur d’Expression ressemble à un TextBlock normal à nouveau.
 
--   Si vous placez le focus sur l'éditeur d'expressions dans un Workflow Designer réhébergé, il se comporte comme un contrôle TextBox. Lorsque le Workflow Designer réhébergé perd le focus, l'éditeur d'expressions reprend l'apparence d'un TextBlock normal.
+- Si vous placez le focus sur l'éditeur d'expressions dans un Workflow Designer réhébergé, il se comporte comme un contrôle TextBox. Lorsque le Workflow Designer réhébergé perd le focus, l'éditeur d'expressions reprend l'apparence d'un TextBlock normal.
 
 > [!NOTE]
-> IntelliSense pour l’éditeur d’Expression est disponible uniquement à l’intérieur de Visual Studio 2010. Dans Visual Studio 2010 et réhébergé, le compilateur valide l’expression une fois que son entrée et l’éditeur d’expressions affiche une icône d’erreur si l’expression n’est pas valide.
+> IntelliSense pour l’éditeur d’expressions est disponible uniquement dans Visual Studio. Dans Visual Studio et réhébergé, le compilateur valide l’expression après sa saisie et de l’éditeur d’expressions affiche une icône d’erreur si l’expression n’est pas valide.
 
-## <a name="use-the-expression-editor"></a>Utilisez l’éditeur d’Expression
+## <a name="use-the-expression-editor"></a>Utiliser l’éditeur d’expressions
 
-1.  Dans Visual Studio 2010, ouvrez un projet de flux de travail nouveau ou existant.
+1.  Dans Visual Studio, ouvrez un projet de flux de travail nouveau ou existant.
 
 2.  Par exemple, ajoutez l'activité <xref:System.Activities.Statements.Assign> à votre flux de travail.
 
@@ -49,11 +49,11 @@ L’éditeur d’Expression est un contrôle du Concepteur de flux de travail Wi
 
      Les chaînes en filigrane grises  **\<à >** et  **\<entrer une Expression VB >** est des chaînes de texte de la valeur par défaut pour les éditeurs d’expressions dans le <xref:System.Activities.Statements.Assign> activité.
 
-4.  Entrez votre expression. Si vous entrez une chaîne, n'oubliez pas de l'entourer de guillemets. Si vous choisissez de lier l'argument Expression à une variable, n'utilisez pas de guillemets.
+4.  Entrez votre expression. Si vous entrez une chaîne, n'oubliez pas de l'entourer de guillemets. Si vous choisissez de lier l’argument Expression à une variable, n’utilisez pas de guillemets.
 
-     Lorsque vous avez fini, sélectionnez une région ou une zone en dehors de l'éditeur d'expressions pour déplacer le focus vers une autre partie du concepteur. Le compilateur valide alors l'expression, comme décrit précédemment.
+     Lorsque vous avez terminé, sélectionnez une région ou une zone en dehors de l’éditeur d’expressions pour déplacer le focus vers une autre partie du concepteur. Un décalage le focus d’indique au compilateur de valider l’expression, comme décrit précédemment.
 
-     Un autre manière d'entrer/modifier une expression consiste à cliquer sur les points de suspension en regard du nom de propriété dans la grille des propriétés. Cela ouvre le **l’éditeur d’Expression** en tant que boîte de dialogue.
+     Une autre façon pour entrer ou modifier une expression consiste à cliquer sur les points de suspension en regard du nom de propriété dans la grille des propriétés. Cliquez sur le bouton de sélection ouvre le **Éditeur d’Expression** comme une boîte de dialogue.
 
 ## <a name="see-also"></a>Voir aussi
 

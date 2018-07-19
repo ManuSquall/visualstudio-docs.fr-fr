@@ -14,17 +14,18 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 0f23b4a602b707dbe126d0a97824694fc51d3ddf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38809251"
 ---
 ### <a name="supported-operating-systems"></a>Supported Operating Systems  
 L’ordinateur distant doit exécuter l’un des systèmes d’exploitation suivants :  
   
--   Windows 10 (pas de téléphone) 
+-   Windows 10 (pas le téléphone) 
   
--   Windows 8 ou 8.1 (pas de téléphone)
+-   Windows 8 ou 8.1 (pas le téléphone)
   
 -   Windows 7 Service Pack 1  
   
@@ -43,9 +44,9 @@ L’ordinateur distant doit exécuter l’un des systèmes d’exploitation suiv
   
 -   1 Go d’espace disque disponible  
   
--   Disque dur de 5400-tr/min  
+-   Disque dur 5400 tr/min  
   
 -   Carte vidéo DirectX 9 s’exécutant avec une résolution d’affichage de 1024 x 768 ou supérieure  
   
 ### <a name="network-configuration"></a>Configuration réseau  
- L’ordinateur distant et l’ordinateur Visual Studio doivent être connectés sur un réseau, un groupe de travail, un groupe résidentiel ou directement connectés à l’aide d’un câble Ethernet. Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Débogage sur une latence élevée ou d’une connexion à faible bande passante, telles que les connexions à distance d’Internet, ou via Internet entre des pays n’est pas recommandé et peut échouer ou être trop faibles.
+ L’ordinateur distant et l’ordinateur Visual Studio doivent être connectés sur un réseau, un groupe de travail, un groupe résidentiel ou directement connectés à l’aide d’un câble Ethernet. Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Débogage sur une latence élevée ou faible bande passante, telles que la numérotation Internet, ou via Internet entre les pays n’est pas recommandé et peut échouer ou être trop faibles.

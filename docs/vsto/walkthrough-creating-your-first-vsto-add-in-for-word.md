@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création de votre complément VSTO pour Word | Documents Microsoft'
+title: 'Procédure pas à pas : Créer votre premier complément pour Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7bddcf43d275dc30b0f3825fbb2dbe665e46025
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22e44ace13e0f70bf74b71f17975b3a45cb76471
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808896"
 ---
-# <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>Procédure pas à pas : création de votre premier complément VSTO pour Word
+# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Procédure pas à pas : Créer votre premier complément pour Word
   Cette première procédure pas à pas montre comment créer un complément VSTO pour Microsoft Office Word. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l’application, quels que soient les documents ouverts.  
   
  [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]  
@@ -48,9 +49,9 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Word  
   
-## <a name="creating-the-project"></a>Création du projet  
+## <a name="create-the-project"></a>Créer le projet  
   
-#### <a name="to-create-a-new-word-vsto-add-in-project-in-visual-studio"></a>Pour créer un projet de complément VSTO Word dans Visual Studio  
+### <a name="to-create-a-new-word-vsto-add-in-project-in-visual-studio"></a>Pour créer un projet de complément VSTO Word dans Visual Studio  
   
 1.  Démarrez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -68,14 +69,14 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée le **Premiercomplémentexcel** de projet et ouvre le fichier de code ThisAddIn dans l’éditeur.  
   
-## <a name="writing-code-to-add-text-to-the-saved-document"></a>Écriture d'un code pour ajouter du texte au document enregistré  
+## <a name="write-code-to-add-text-to-the-saved-document"></a>Écrire du code pour ajouter du texte au document enregistré  
  L'étape suivante consiste à ajouter du code au fichier de code ThisAddIn. Le nouveau code utilise le modèle objet de Word pour ajouter du texte réutilisable dans chaque document enregistré. Par défaut, le fichier de code ThisAddIn contient le code généré suivant :  
   
--   Une définition partielle de la classe `ThisAddIn` . Cette classe fournit un point d'entrée pour votre code et offre un accès au modèle objet de Word. Pour plus d'informations, consultez [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). Le reste de la classe `ThisAddIn` est défini dans un fichier de code masqué que vous ne devez pas modifier.  
+-   Une définition partielle de la classe `ThisAddIn` . Cette classe fournit un point d'entrée pour votre code et offre un accès au modèle objet de Word. Pour plus d’informations, consultez [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Le reste de la classe `ThisAddIn` est défini dans un fichier de code masqué que vous ne devez pas modifier.  
   
--   Les gestionnaires d'événements `ThisAddIn_Startup` et `ThisAddIn_Shutdown` . Ces gestionnaires d'événements sont appelés quand Word charge et décharge votre complément VSTO. Utilisez ces gestionnaires d'événements pour initialiser votre complément VSTO quand il est chargé, ainsi que pour nettoyer les ressources utilisées par votre complément VSTO quand il est déchargé. Pour plus d'informations, consultez [Events in Office Projects](../vsto/events-in-office-projects.md).  
+-   Les gestionnaires d'événements `ThisAddIn_Startup` et `ThisAddIn_Shutdown` . Ces gestionnaires d'événements sont appelés quand Word charge et décharge votre complément VSTO. Utilisez ces gestionnaires d'événements pour initialiser votre complément VSTO quand il est chargé, ainsi que pour nettoyer les ressources utilisées par votre complément VSTO quand il est déchargé. Pour plus d’informations, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md).  
   
-#### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>Pour ajouter un paragraphe de texte au document enregistré  
+### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>Pour ajouter un paragraphe de texte au document enregistré  
   
 1.  Dans le fichier de code ThisAddIn, ajoutez le code suivant à la classe `ThisAddIn` . Le nouveau code définit un gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>, qui est déclenché quand un document est enregistré.  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
   
     > [!NOTE]  
-    >  Ce code utilise une valeur d'index 1 pour accéder au premier paragraphe de la collection <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A>. Bien que Visual Basic et Visual C# utilisent des tableaux basés sur 0, les limites d’index de tableau inférieures de la plupart des collections du modèle objet Word ont la valeur 1. Pour plus d'informations, consultez [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
+    >  Ce code utilise une valeur d'index 1 pour accéder au premier paragraphe de la collection <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A>. Bien que Visual Basic et Visual C# utilisent des tableaux basés sur 0, les limites d’index de tableau inférieures de la plupart des collections du modèle objet Word ont la valeur 1. Pour plus d’informations, consultez [écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md).  
   
 2.  Si vous utilisez C#, ajoutez le code requis suivant au gestionnaire d'événements `ThisAddIn_Startup` . Ce code permet de connecter le gestionnaire d'événements `Application_DocumentBeforeSave` à l'événement <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>.  
   
@@ -95,15 +96,15 @@ ms.lasthandoff: 04/16/2018
   
 -   Le champ `Application` de la classe `ThisAddIn`. Le champ `Application` retourne un objet <xref:Microsoft.Office.Interop.Word.Application>, qui représente l'instance actuelle de Word.  
   
--   Le paramètre `Doc` du gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>. Le paramètre `Doc` est un objet <xref:Microsoft.Office.Interop.Word.Document> qui représente le document enregistré. Pour plus d'informations, consultez [Word Object Model Overview](../vsto/word-object-model-overview.md).  
+-   Le paramètre `Doc` du gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>. Le paramètre `Doc` est un objet <xref:Microsoft.Office.Interop.Word.Document> qui représente le document enregistré. Pour plus d’informations, consultez [vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md).  
   
-## <a name="testing-the-project"></a>Test du projet  
+## <a name="test-the-project"></a>Le projet de test  
   
-#### <a name="to-test-the-project"></a>Pour tester le projet  
+### <a name="to-test-the-project"></a>Pour tester le projet  
   
 1.  Appuyez sur **F5** pour générer et exécuter votre projet.  
   
-     Quand vous générez le projet, le code est compilé dans un assembly qui est inclus dans le dossier de sortie de la génération du projet. Visual Studio crée également un jeu d’entrées du Registre qui permet à Word de détecter et de charger le complément VSTO, et il configure les paramètres de sécurité de l’ordinateur de développement pour permettre au complément VSTO de s’exécuter. Pour plus d’informations, consultez [génération de Solutions Office](../vsto/building-office-solutions.md).  
+     Quand vous générez le projet, le code est compilé dans un assembly qui est inclus dans le dossier de sortie de la génération du projet. Visual Studio crée également un jeu d’entrées du Registre qui permet à Word de détecter et de charger le complément VSTO, et il configure les paramètres de sécurité de l’ordinateur de développement pour permettre au complément VSTO de s’exécuter. Pour plus d’informations, consultez [solutions Office Build](../vsto/building-office-solutions.md).  
   
 2.  Dans Word, enregistrez le document actif.  
   
@@ -113,36 +114,36 @@ ms.lasthandoff: 04/16/2018
   
 4.  Fermez Word.  
   
-## <a name="cleaning-up-the-project"></a>Nettoyage du projet  
- Une fois que vous avez terminé de développer un projet, supprimez l'assembly de complément VSTO, les entrées du Registre et les paramètres de sécurité de votre ordinateur de développement. Sinon, le complément VSTO s'exécutera chaque fois que vous ouvrirez Word sur votre ordinateur de développement.  
+## <a name="clean-up-the-project"></a>Nettoyer le projet  
+ Une fois que vous avez terminé de développer un projet, supprimez l'assembly du complément VSTO, les entrées de Registre et les paramètres de sécurité de votre ordinateur de développement. Sinon, le complément VSTO s'exécutera chaque fois que vous ouvrirez Word sur votre ordinateur de développement.  
   
-#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Pour nettoyer le projet terminé sur votre ordinateur de développement  
+### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Pour nettoyer le projet terminé sur votre ordinateur de développement  
   
 1.  Dans Visual Studio, dans le menu **Générer** , cliquez sur **Nettoyer la solution**.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
  Maintenant que vous avez créé un complément VSTO de base pour Word, vous pouvez perfectionner votre connaissance du développement des compléments VSTO en consultant les rubriques suivantes :  
   
--   Tâches de programmation générales que vous pouvez effectuer dans les compléments VSTO : [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+-   Les tâches de programmation générales que vous pouvez effectuer dans les Compléments VSTO : [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
   
--   Tâches de programmation propres aux compléments VSTO Word : [Solutions Word](../vsto/word-solutions.md).  
+-   Tâches de programmation qui sont spécifiques aux compléments VSTO Word : [Word solutions](../vsto/word-solutions.md).  
   
--   À l’aide du modèle objet de Word : [présentation du modèle objet de Word](../vsto/word-object-model-overview.md).  
+-   À l’aide du modèle objet de Word : [vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md).  
   
 -   Personnalisation de l’interface utilisateur de Word, par exemple, en ajoutant un onglet personnalisé au ruban ou en créant votre propre volet de tâches personnalisé : [personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md).  
   
--   Génération et débogage des Compléments VSTO pour Word : [génération de Solutions Office](../vsto/building-office-solutions.md).  
+-   Génération et débogage des Compléments VSTO pour Word : [solutions Office Build](../vsto/building-office-solutions.md).  
   
--   Déploiement de compléments VSTO pour Word : [déploiement d’une Solution Office](../vsto/deploying-an-office-solution.md).  
+-   Déploiement de compléments VSTO pour Word : [déployer une solution Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Présentation du développement de Solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Solutions Word](../vsto/word-solutions.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)   
  [Vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md)   
  [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)   
- [Génération de Solutions Office](../vsto/building-office-solutions.md)   
- [Déploiement d’une Solution Office](../vsto/deploying-an-office-solution.md)   
+ [Générer des solutions Office](../vsto/building-office-solutions.md)   
+ [Déployer une solution Office](../vsto/deploying-an-office-solution.md)   
  [Vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md)  
   
   

@@ -2,7 +2,7 @@
   href: index.md
 - name: Vue d'ensemble
   href: profiling-overview.md
-- name: Guides de démarrage rapide
+- name: Démarrages rapides
   items:
     - name: Présentation du profilage
       href: profiling-feature-tour.md
@@ -26,9 +26,6 @@
   items:
     - name: Analyser l’utilisation de l’UC
       href: cpu-usage.md
-      items:
-        - name: Analyser l’utilisation du processeur dans une application Windows universelle (UWP)
-          href: analyze-cpu-usage-in-a-windows-universal-app.md
     - name: Analyser l’utilisation de la mémoire
       href: analyze-memory-usage.md
       items:
@@ -44,16 +41,10 @@
       href: perftips.md
     - name: Analyser la mémoire JavaScript
       href: javascript-memory.md
-      items:
-        - name: 'Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)'
-          href: walkthrough-find-a-memory-leak-javascript.md
     - name: Analyser l’utilisation du réseau
       href: network-usage.md
     - name: Analyser la réactivité de l’interface utilisateur HTML
       href: html-ui-responsiveness.md
-      items:
-        - name: "Procédure pas à pas\_: améliorer la réactivité de l’interface utilisateur (HTML)"
-          href: walkthrough-improving-ui-responsiveness-html.md
     - name: Utiliser l’Explorateur de performances
       href: performance-explorer.md
       items:

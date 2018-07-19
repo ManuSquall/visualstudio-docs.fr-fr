@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Capture d’informations graphiques par programmation | Documents Microsoft'
+title: 'Procédure pas à pas : Capture d’informations graphiques par programmation | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a2caae8a3ef2a6342cf98094994d5ebccbe3275
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 641e98d1bbe5d54f69f458cec6642ceac484eff1
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477392"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433206"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d'informations Graphics par programmation
 Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour capturer par programmation les informations graphiques d'une application Direct3D.  
@@ -48,7 +48,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
   
 -   Incluez les en-têtes suivants dans le fichier source où sera définie l'interface IDXGraphicsAnalysis :  
   
-    ```  
+    ```cpp
     #include <DXGItype.h>  
     #include <dxgi1_2.h>  
     #include <dxgi1_3.h>  
@@ -56,7 +56,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
     ```  
   
     > [!IMPORTANT]
-    >  N’incluez pas l’en-tête vsgcapture.h—which prend en charge par programmation capture de fichiers dans Windows 8.0 et versions antérieures, pour effectuer la capture par programmation dans vos applications Windows 10. Cet en-tête est incompatible avec DirectX 11.2. Si ce fichier est inclus après que l’en-tête d3d11_2.h est inclus, le compilateur émet un avertissement. Si vsgcapture.h est inclus avant d3d11_2.h, l’application ne démarrera pas.  
+    >  N’incluez pas l’en-tête vsgcapture.h—which prend en charge la programmation capture de fichiers sur Windows 8.0 et versions antérieures, pour effectuer la capture par programmation dans vos applications Windows 10. Cet en-tête est incompatible avec DirectX 11.2. Si ce fichier est inclus après que l’en-tête d3d11_2.h est inclus, le compilateur émet un avertissement. Si vsgcapture.h est inclus avant d3d11_2.h, l’application ne démarre pas.  
   
     > [!NOTE]
     >  Si le Kit de développement logiciel (SDK) DirectX de juin 2010 est installé sur votre machine et que le chemin include de votre projet contient `%DXSDK_DIR%includex86`, déplacez-le à la fin du chemin include. Faites-en autant pour le chemin d'accès à votre bibliothèque.  
@@ -65,20 +65,20 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
  Avant de pouvoir capturer les informations graphiques de DirectX 11.2, vous devez obtenir l'interface de débogage DXGI.  
   
 > [!IMPORTANT]
->  Lorsque vous utilisez la capture par programmation, vous devez toujours exécuter votre application dans graphics diagnostics (Alt + F5 dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) ou sous la [outil de Capture de ligne de commande](command-line-capture-tool.md).  
+>  Lorsque vous utilisez la capture par programmation, vous devez toujours exécuter votre application dans graphics diagnostics (Alt + F5 dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) ou sous la [l’outil de ligne de commande de Capture](command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Pour obtenir l'interface IDXGraphicsAnalysis  
   
 -   Utilisez le code suivant pour raccorder l'interface IDXGraphicsAnalysis à l'interface de débogage DXGI.  
   
-    ```  
+    ```cpp
     IDXGraphicsAnalysis* pGraphicsAnalysis;  
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
      Veillez à consulter le `HRESULT` retourné par [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) pour vous assurer d’obtenir une interface valide avant de l’utiliser :  
   
-    ```  
+    ```cpp
     if (FAILED(getAnalysis))  
     {  
         // Abort program or disable programmatic capture in your app.  
@@ -95,7 +95,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
   
 - Pour commencer à capturer des informations graphiques, utilisez `BeginCapture`:  
   
-    ```  
+    ```cpp
     ...  
     pGraphicsAnalysis->BeginCapture();  
     ...  
@@ -103,13 +103,13 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../
   
      La capture commence de suite après l'appel de `BeginCapture` ; il n'attend pas le frame suivant pour commencer. La capture s'arrête dès la présentation du frame actif ou l'appel de `EndCapture`:  
   
-    ```  
+    ```cpp
     ...  
     pGraphicsAnalysis->EndCapture();  
     ...  
     ```  
 
-- Après l’appel à `EndCapture`, libérer l’objet graphique. 
+- Après l’appel à `EndCapture`, libérer l’objet graphics. 
   
 ## <a name="next-steps"></a>Étapes suivantes  
  Cette procédure pas à pas vous a montré comment capturer des informations graphiques par programmation. Pour franchir une étape supplémentaire, envisagez cette possibilité :  

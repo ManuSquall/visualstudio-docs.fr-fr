@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 068e49c1fb095691cfa68f7a744a2159a8c173a3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751687"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845491"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Utiliser le framework de tests unitaires Microsoft pour C++ dans Visual Studio
 
@@ -32,7 +32,7 @@ Dans certains cas, par exemple lors du test de fonctions non exportées dans une
 
     3.  Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **<Edit>** :
 
-        |||
+        |Répertoire|Property|
         |-|-|
         |**Répertoires Include**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
         |**Répertoires de bibliothèques**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -67,7 +67,7 @@ Vous pouvez définir des caractéristiques sur des méthodes de test, qui vous p
 
  Pour utiliser la caractéristique définie dans vos tests unitaires :
 
-```
+```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)
     TEST_OWNER(L"OwnerName")
     TEST_PRIORITY(1)

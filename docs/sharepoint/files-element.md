@@ -1,5 +1,5 @@
 ---
-title: Fichiers d’élément | Documents Microsoft
+title: Fichiers d’élément | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 330c408aa0e283eb282b93f77726ccc5d9547795
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 37fc7bb582482f645fe5699196ca33d79304a5c3
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766904"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327292"
 ---
 # <a name="files-element"></a>Files (élément)
-  Spécifie les fichiers à déployer avec l’élément de projet SharePoint, tels que les fichiers d’élément de fonctionnalité et de la sortie des projets non-SharePoint dépendants.  
+  Spécifie les fichiers à déployer avec l’élément de projet SharePoint, tels que les fichiers d’élément de fonctionnalité et la sortie des projets non-SharePoint dépendants.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,8 +47,8 @@ ms.locfileid: "34766904"
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Facultatif **ProjectItemFileType** élément.<br /><br /> Représente un fichier de SharePoint, comme fichier d’élément de fonctionnalité, à inclure avec l’élément de projet lorsqu’il est déployé dans SharePoint.|  
-|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Facultatif **ProjectOutputFileType** élément.<br /><br /> Représente la sortie d’un projet à inclure avec l’élément de projet lorsqu’il est déployé dans SharePoint.|  
+|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Facultatif **ProjectItemFileType** élément.<br /><br /> Représente un fichier SharePoint, par exemple de fichier d’élément de fonctionnalité, à inclure avec l’élément de projet lorsqu’elle est déployée vers SharePoint.|  
+|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Facultatif **ProjectOutputFileType** élément.<br /><br /> Représente la sortie d’un projet à inclure avec l’élément de projet lorsqu’elle est déployée vers SharePoint.|  
   
 ### <a name="parent-elements"></a>Éléments parents
   
@@ -61,11 +61,11 @@ ms.locfileid: "34766904"
 |||  
 |-|-|  
 |**Espace de noms**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
-|**Nom du schéma**|Schéma d’élément de projet SharePoint|  
+|**Nom de schéma**|Schéma d’élément de projet SharePoint|  
 |**Fichier de validation**|ProjectItemModelSchema.xsd|  
-|**Peut être vide.**|Non|  
+|**Peut être vide**|Non|  
   
 ## <a name="see-also"></a>Voir aussi
- [Informations de référence sur le schéma d’élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [Référence de schéma élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Comment : définir une Instance de méthode | Documents Microsoft'
+title: 'Comment : définir une Instance de méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,11 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44a31af455b09db5fb359339cee8da7b3ca0c77e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e6dd6c0d7676c6b3c2071f0fcb07e8073313633
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118852"
 ---
 # <a name="how-to-define-a-method-instance"></a>Comment : définir une instance de méthode
   Vous devez définir au moins une instance de méthode pour chaque méthode dans votre modèle.  
@@ -37,17 +38,16 @@ ms.lasthandoff: 04/16/2018
   
 2.  Dans le **ajouter une Instance de méthode** , choisissez **créer une Instance de recherche**.  
   
-     Une nouvelle instance de méthode s’affiche sous le **Instances** nœud.  
+     Une nouvelle instance de méthode apparaît sous le **Instances** nœud.  
   
-3.  Dans la barre de menus, choisissez **vue**, choisissez **fenêtre Propriétés**.  
+3.  Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.  
   
 4.  Dans le **propriétés** fenêtre, définissez les propriétés de l’instance de méthode. Pour plus d’informations sur chaque propriété, consultez [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).  
   
-## <a name="see-also"></a>Voir aussi  
- [Présentation des outils de conception modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)   
+## <a name="see-also"></a>Voir aussi
+ [Vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Comment : ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Comment : définir le descripteur de Type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
+ [Comment : définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)  
   

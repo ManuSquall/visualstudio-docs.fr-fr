@@ -1,6 +1,7 @@
 ---
-title: Vue d’ensemble | Outil de test Microsoft IntelliTest pour les développeurs | Microsoft Docs
+title: Vue d’ensemble | Outil de test Microsoft IntelliTest pour les développeurs
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c5e95091b9305e6802976d19570783459cc47179
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50baf803cb6669640c9ffe2c0e94ea43b56f5341
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815481"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Vue d’ensemble de Microsoft IntelliTest
 
@@ -102,7 +104,7 @@ Cette section décrit les limitations d’IntelliTest :
 * [Plateforme](#platform)
 * [Language](#language)
 * [Raisonnement symbolique](#symbolic-reasoning)
-* [Traces de pile](#incorrect-stack)
+* [Traces de pile](#incorrect-stack-traces)
 
 ### <a name="nondeterminism"></a>Non déterminisme
 

@@ -1,6 +1,8 @@
+- name: Documentation d’analyse du code
+  href: index.md
 - name: Vue d'ensemble
   items:
-    - name: Analyse du code managé
+    - name: Analyse du code pour le code managé
       href: code-analysis-for-managed-code-overview.md
     - name: Analyseurs Roslyn
       href: roslyn-analyzers-overview.md
@@ -8,11 +10,11 @@
       href: code-analysis-for-c-cpp-overview.md
     - name: Mesurer la facilité de maintenance du code avec des métriques de code
       href: code-metrics-values.md
-- name: Guides de démarrage rapide
+- name: Démarrages rapides
   items:
     - name: "Démarrage rapide\_: analyse du code pour C/C++"
       href: quick-start-code-analysis-for-c-cpp.md
-- name: Tutoriels
+- name: Didacticiels
   items:
     - name: Analyser le code managé pour détecter les erreurs de code
       href: walkthrough-analyzing-managed-code-for-code-defects.md
@@ -23,7 +25,7 @@
           href: demo-sample.md
 - name: Guides pratiques
   items:
-    - name: Analyse du code managé
+    - name: Analyse du code pour le code managé
       items:
         - name: Installer les analyseurs Roslyn
           href: install-roslyn-analyzers.md
@@ -71,7 +73,7 @@
               href: specifying-when-and-where-an-annotation-applies.md
             - name: Fonctions intrinsèques
               href: intrinsic-functions.md
-            - name: Bonnes pratiques et exemples (SAL)
+            - name: Meilleures pratiques et exemples (SAL)
               href: best-practices-and-examples-sal.md
         - name: Spécifier des informations de code supplémentaire en utilisant _Analysis_assume
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
@@ -149,7 +151,7 @@
               href: ca5350-do-not-use-weak-cryptographic-algorithms.md
             - name: CA5351 N’utilisez pas les algorithmes de chiffrement cassés
               href: ca5351-do-not-use-broken-cryptographic-algorithms.md
-        - name: Avertissements liés au design
+        - name: Avertissements liés à la conception
           href: design-warnings.md
           items:
             - name: "CA1000\_: Ne pas déclarer de membres statiques sur les types génériques"

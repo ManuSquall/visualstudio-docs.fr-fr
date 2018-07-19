@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Objets manquants en raison Vertex Shader | Documents Microsoft'
+title: 'Procédure pas à pas : Objets manquants en raison Vertex Shader | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b669962fe1a0668b42aec29745072f3451966323
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0bc2ded6217346de3f1633f31a7e03d25f012aa8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482007"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234255"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procédure pas à pas : objets manquants en raison de Vertex Shader
 Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnostics dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour examiner un objet qui est manquant à cause d’une erreur survenue à l’étape du nuanceur de sommets.  
@@ -35,7 +35,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
  Dans ce scénario, quand l’application est exécutée pour être testée, l’arrière-plan est affiché comme prévu, mais l’un des objets ne s’affiche pas. À l’aide de Graphics Diagnostics, vous capturez le problème dans un journal de graphisme pour déboguer l’application. Le problème se présente ainsi dans l'application :  
   
- ![L’objet ne peut pas être visualisé. ] (media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")  
+ ![L’objet n’est pas visible. ] (media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")  
   
 ## <a name="investigation"></a>Examen  
  À l’aide des outils Graphics Diagnostics, vous pouvez charger le fichier journal de graphisme pour examiner les frames capturés pendant le test.  
@@ -67,7 +67,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
 4.  Arrêtez quand vous atteignez l’appel de dessin qui correspond à l’objet manquant. Dans ce scénario, la fenêtre **Étapes de canalisation Graphics** indique que la géométrie a été émise vers le GPU (indiqué par la présence de l’aperçu Assembleur d’entrée), mais elle n’apparaît pas dans la cible de rendu à cause d’une erreur survenue à l’étape du nuanceur de sommets (indiquée par l’aperçu Nuanceur de sommets) :  
   
-     ![Événement DrawIndexed et son effet sur le pipeline](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")  
+     ![Un événement DrawIndexed et son effet sur le pipeline](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")  
   
  Une fois que vous avez constaté que l’application a effectué un appel de dessin pour la géométrie de l’objet manquant et que vous avez découvert que le problème se produit à l’étape du nuanceur de sommets, vous pouvez utiliser le débogueur HLSL pour examiner le nuanceur de sommets et comprendre ce qui s’est passé avec la géométrie de l’objet. Le débogueur HLSL vous permet d’examiner l’état des variables HLSL pendant l’exécution, d’exécuter pas à pas le code HLSL et de définir des points d’arrêt pour vous aider à diagnostiquer le problème.  
   
@@ -108,7 +108,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
     > [!TIP]
     >  Si vous déboguez simultanément votre application, vous pouvez définir un point d’arrêt à cet emplacement, qui sera atteint lorsque le frame suivant sera affiché. En examinant ensuite les membres de `m_marbleConstantBufferData` , vous constatez que le membre `projection` a une valeur composée uniquement de zéros quand la mémoire tampon constante est remplie.  
   
- Vous avez trouvé l’endroit où la mémoire tampon constante est remplie et découvert que ses valeurs proviennent de la variable `m_marbleConstantBufferData`. Vous devez maintenant trouver l’endroit où le membre `m_marbleConstantBufferData.projection` a une valeur composée de zéros. Vous pouvez utiliser **Rechercher toutes les références** pour rechercher rapidement le code qui modifie la valeur de `m_marbleConstantBufferData.projection`.  
+ Une fois que vous recherchez l’emplacement où la mémoire tampon constante est remplie et que vous découvrez que ses valeurs proviennent de la variable `m_marbleConstantBufferData`, l’étape suivante consiste à trouver l’endroit où le `m_marbleConstantBufferData.projection` membre est défini sur tous les zéros non significatifs. Vous pouvez utiliser **Rechercher toutes les références** pour rechercher rapidement le code qui modifie la valeur de `m_marbleConstantBufferData.projection`.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Pour rechercher où le membre projection est défini dans le code source de votre application  
   
@@ -122,7 +122,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
  Pour résoudre le problème, déplacez la ligne de code qui définit la valeur de `m_marbleConstantBufferData.projection` après la ligne qui initialise la valeur de la variable locale `projection`.  
   
- ![La correction C&#43; &#43; code source](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
+ ![Le C corrigé&#43; &#43; code source](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
  Après avoir corrigé le code, vous pouvez le régénérer, puis réexécuter l’application pour vérifier que le problème d’affichage est résolu :  
   

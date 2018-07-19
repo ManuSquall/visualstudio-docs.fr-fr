@@ -1,5 +1,5 @@
 ---
-title: Définissez un espion sur les Variables dans Visual Studio | Documents Microsoft
+title: Définir un espion sur les Variables dans Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
 ms.technology: vs-ide-debug
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 187c9e682877a0f0633e7d3210454d40cae9de0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 71a29a5d8961688f710181dce553d0895a4bb475
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478761"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057159"
 ---
-# <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Définissez un espion dans des Variables à l’aide de l’espion et Espion express, fenêtres dans Visual Studio
-Pendant le débogage, vous pouvez utiliser la **espion** et **Espion express** pour observer les variables et les expressions.  La fenêtre **Espion** permet d’afficher plusieurs variables, à la différence de la fenêtre **Espion express** , qui n’en affiche qu’une à la fois. 
+# <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Définir un espion sur les Variables à l’aide d’espion et Espion express des Windows dans Visual Studio
+Pendant le débogage, vous pouvez utiliser la **espion** et **Espion express** pour observer les variables et expressions.  La fenêtre **Espion** permet d’afficher plusieurs variables, à la différence de la fenêtre **Espion express** , qui n’en affiche qu’une à la fois. 
 
-Les fenêtres sont disponibles uniquement pendant une session de débogage. Pour ouvrir la **espion** fenêtre, choisissez **Déboguer > Windows > espion > espion (1, 2, 3, 4)**). Pour ouvrir la **Espion express** fenêtre, soit avec le bouton droit sur la variable et choisissez **Espion express** ou choisissez **Déboguer > Espion express**.
+Les fenêtres sont disponibles uniquement pendant une session de débogage. Pour ouvrir le **espion** fenêtre, choisissez **Déboguer > Windows > espion > espion (1, 2, 3, 4)**). Pour ouvrir le **Espion express** fenêtre, soit avec le bouton droit sur la variable et choisissez **Espion express** ou choisissez **Déboguer > Espion express**.
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Observation d’une variable dans la fenêtre Espion express  
  Vous pouvez utiliser la fenêtre **Espion express** pour observer une variable déterminée. Par exemple, si vous avez le code suivant :  
@@ -54,16 +54,16 @@ static void Main(string[] args)
   
 3.  Ouvrez le **Espion express** fenêtre (avec le bouton droit sur `a`, puis choisissez **Espion express**, ou sélectionnez `a` et appuyez sur **MAJ + F9**).
 
-    Vous devez voir une variable dans le **valeurs** fenêtre, avec la valeur 1.
+    Vous devez voir une variable dans le **valeurs** fenêtre, avec une valeur de 1.
 
     ![Expression Espion express](../debugger/media/watchexpression.png "QuickWatchExpression")  
 
     Si vous souhaitez évaluer une expression à l’aide de la variable, ajoutez une expression comme `a + b` à la **Expression** fenêtre et cliquez sur **réévaluer**. 
   
-4.  Ajoutez la variable à la **espion** fenêtre à partir de **Espion express** en cliquant sur **ajouter un espion**. 
+4.  Ajouter la variable à la **espion** fenêtre à partir de **Espion express** en cliquant sur **ajouter un espion**. 
 
     > [!NOTE]
-    > Le **Espion express** fenêtre est une fenêtre de la boîte de dialogue modale, vous ne peut pas continuer le débogage tant qu’il n’est ouvert.  
+    > Le **Espion express** fenêtre est une fenêtre de la boîte de dialogue modale, vous ne pouvez pas poursuivre le débogage tant qu’il est ouvert.  
   
 5.  Fermez la fenêtre **Espion express** . Dès lors, vous pouvez poursuivre le débogage pendant que vous observez la valeur dans la fenêtre **Espion** .  
   
@@ -109,7 +109,7 @@ int main()
  Si vous programmez en code natif, vous devrez peut-être parfois qualifier le contexte d’un nom de variable ou d’une expression contenant un nom de variable. Le contexte est la fonction, le fichier source et le module où se trouve une variable. Si vous devez qualifier le contexte, vous pouvez utiliser la syntaxe d’opérateur de contexte. Pour plus d’informations, consultez [Context Operator (C++)](../debugger/context-operator-cpp.md).  
   
 ## <a name="observing-expressions-with-the-watch-window"></a>Observation d’expressions dans la fenêtre Espion  
- Maintenant nous allons essayez plutôt d’utiliser une expression. Vous pouvez ajouter n’importe quelle expression valide reconnue par le débogueur.  
+ Maintenant nous allons essayer à l’aide d’une expression à la place. Vous pouvez ajouter n’importe quelle expression valide reconnue par le débogueur.  
   
  Par exemple, si vous avez le code présenté dans la section précédente, vous pouvez obtenir la moyenne des trois valeurs comme ceci :  
   
@@ -117,10 +117,10 @@ int main()
   
  En général, les règles d’évaluation des expressions dans la fenêtre **Espion** sont les mêmes que dans votre langage de codage. Si votre expression contient une erreur de syntaxe, vous pouvez vous attendre à voir la même erreur de compilateur dans l’éditeur de code. Voici un exemple :  
   
- ![Regardez erreur Expression](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
+ ![Regardez l’erreur d’Expression](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
 ##  <a name="bkmk_refreshWatch"></a> Actualisation des valeurs obsolètes dans la fenêtre Espion  
- Dans certaines circonstances, vous pouvez voir une icône d’actualisation (une flèche circulaire) lorsque l’expression est évaluée dans le **espion** fenêtre.  Par exemple, si vous avez désactivé l’évaluation propriété (**Outils > Options > Débogage > Activer l’évaluation de la propriété et d’autres appels de fonction implicite**), et vous avez le code suivant :  
+ Dans certaines circonstances, vous pouvez voir une icône d’actualisation (une flèche circulaire) quand une expression est évaluée dans le **espion** fenêtre.  Par exemple, si vous avez désactivée l’évaluation de propriété (**Outils > Options > Débogage > Activer l’évaluation de la propriété et d’autres appels de fonction implicite**), et vous avez le code suivant :  
   
 ```csharp  
 static void Main(string[] args)  
@@ -144,35 +144,35 @@ static void Main(string[] args)
   
 -   L’expression contient un appel de fonction susceptible de produire un effet secondaire dans l’application (consultez [effets secondaires et Expressions](#bkmk_sideEffects)).  
   
--   L’évaluation automatique des propriétés et des appels de fonctions implicites par le débogueur est désactivée (**Outils > Options > Débogage > Activer l’évaluation de la propriété et d’autres appels de fonction implicite**), puis l’expression ne peut pas être évaluer automatiquement.  
+-   L’évaluation automatique des propriétés et appels de fonctions implicites par le débogueur est désactivée (**Outils > Options > Débogage > Activer l’évaluation de la propriété et d’autres appels de fonction implicite**), puis l’expression ne peut pas être évalués automatiquement.  
   
- Pour actualiser la valeur, cliquez sur l’icône d’actualisation ou appuyez sur la barre d’espace. Le débogueur essaie de réévaluer l'expression. Si l’icône de rafraîchissement est apparue parce que l’évaluation automatique des propriétés et d’autres appels de fonction implicite a été désactivée, l’expression peut être évaluée.  
+ Pour actualiser la valeur, cliquez sur l’icône d’actualisation ou appuyez sur la barre d’espace. Le débogueur essaie de réévaluer l'expression. Si l’icône de rafraîchissement est apparue parce que l’évaluation automatique des propriétés et d’autres appels de fonction implicite a été mises hors tension, l’expression peut être évaluée.  
   
  Si vous voyez une icône représentant un cercle avec deux lignes ondulées qui s’apparentent à des fils, c’est que l’expression n’a pas été évaluée en raison d’une possible dépendance inter-threads. En d’autres termes, l’évaluation du code nécessite l’exécution temporaire d’autres threads dans votre application. Quand vous êtes en mode arrêt, tous les threads de votre application sont généralement arrêtés. Permettre à d’autres threads de s’exécuter temporairement peut avoir des effets inattendus sur l’état de votre programme et pousse le débogueur à ignorer certains événements tels que les points d’arrêt et les exceptions levées sur ces threads.  
   
 ##  <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
  Évaluer certaines expressions peut modifier la valeur d’une variable ou affecter d’une manière ou d’une autre l’état de votre programme. Par exemple, l’évaluation de l’expression suivante modifie la valeur de `var1`:  
   
-```  
+```csharp
 var1 = var2  
 ```  
   
  Ce code peut entraîner un [effet secondaire](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Les effets secondaires peuvent rendre le débogage plus difficile en altérant le fonctionnement de votre programme.  
   
- Une expression connue pour avoir des effets secondaires est évaluée qu’une seule fois, lorsque vous la saisissez. Les évaluations suivantes sont désactivées. Vous pouvez substituer manuellement ce comportement en cliquant sur l’icône de mise à jour qui s’affiche à côté de la valeur.  
+ Une expression connue pour avoir des effets secondaires est évaluée une seule fois, lorsque vous la saisissez. Les évaluations suivantes sont désactivées. Vous pouvez substituer manuellement ce comportement en cliquant sur l’icône de mise à jour qui s’affiche à côté de la valeur.  
   
- Pour éviter de tous les effets consiste à désactiver l’évaluation de fonction automatique (**Outils > Options > Débogage > Activer l’évaluation de la propriété et d’autres appels de fonction implicite**).  
+ La première consiste à éviter tous les effets à désactiver l’évaluation de fonction automatique (**Outils > Options > Débogage > Activer l’évaluation de la propriété et d’autres appels de fonction implicite**).  
   
  Quand l’évaluation des propriétés ou des appels de fonctions implicites est désactivée, vous pouvez forcer l’évaluation en utilisant le modificateur de format **ac** (pour C# uniquement). Consultez [Format Specifiers in C#](../debugger/format-specifiers-in-csharp.md).  
   
 ## <a name="bkmk_objectIds"></a> Utilisation d’ID d’objet dans la fenêtre Espion (C# et Visual Basic)  
 
- Il existe des cas lorsque vous voulez observer le comportement d’un objet spécifique. Par exemple, vous souhaiterez effectuer le suivi d’un objet référencé par une variable locale une fois que cette variable est devenu hors de portée. En C# et Visual Basic, vous pouvez créer des ID d’objet pour des instances spécifiques de types de références et les utiliser dans la fenêtre Espion et dans les conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.  
+ Il est parfois lorsque vous souhaitez observer le comportement d’un objet spécifique. Par exemple, vous souhaiterez peut-être suivre un objet référencé par une variable locale une fois que cette variable a hors de portée. En C# et Visual Basic, vous pouvez créer des ID d’objet pour des instances spécifiques de types de références et les utiliser dans la fenêtre Espion et dans les conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.  
   
 > [!NOTE]
 >  Les ID d’objet créent des références faibles et n’empêchent pas l’objet de subir une récupération de mémoire. Leur validité ne vaut que pour la session de débogage active.  
   
- Dans le code suivant, une méthode crée un `Person` à l’aide d’une variable locale, mais vous souhaitez en savoir plus que le `Person`du nom est une autre méthode :  
+ Dans le code suivant, une méthode crée un `Person` à l’aide d’une variable locale, mais vous souhaitez en savoir plus ce que le `Person`du nom est dans une autre méthode :  
   
 ```csharp  
 class Person  
@@ -218,7 +218,7 @@ public class Program
   
 4.  Ajoutez l’ID d’objet à la fenêtre Espion.  
   
-5.  Définissez un point d’arrêt où vous voulez observer le comportement de l’objet.  Dans le code précédent, qui serait le `DoSomething()` (méthode).  
+5.  Définissez un point d’arrêt dans lequel vous voulez observer le comportement de l’objet.  Dans le code précédent, qui serait le `DoSomething()` (méthode).  
   
 6.  Poursuivez le débogage et quand l’exécution s’arrête dans la méthode `DoSomething()` , la fenêtre **Espion** affiche l’objet `Person` .  
   
@@ -229,7 +229,7 @@ public class Program
  Si vous déboguez du code natif, vous pouvez ajouter des noms de registres, ainsi que les noms de variables à l’aide de  **$ \<inscrire nom >** ou  **@ \<inscrire nom >**.  Pour plus d’informations, consultez [Pseudovariables](../debugger/pseudovariables.md).  
   
 ## <a name="dynamic-view-and-the-watch-window"></a>Affichage dynamique et la fenêtre Espion  
- Certains langages de script (par exemple, JavaScript ou Python) utilisent dynamique ou [canard en tapant](https://en.wikipedia.org/wiki/Duck_typing), et les langages .NET (version 4.0 et versions ultérieur) prennent en charge les objets qui sont difficiles à observer dans les fenêtres de débogage normales, car ils peut avoir des propriétés d’exécution et les méthodes qui ne peut pas être affichées.  
+ Certains langages de script (par exemple, JavaScript ou Python) utilisent dynamique ou [canard tapant](https://en.wikipedia.org/wiki/Duck_typing), et les langages .NET (version 4.0 et versions ultérieur) prennent en charge les objets qui sont difficiles à observer dans les fenêtres de débogage normales, car ils peut avoir des propriétés d’exécution et des méthodes qui ne peut pas être affichées.  
   
  Lorsque la fenêtre Espion affiche un objet créé à partir d’un type qui implémente le [IDynamicMetaObjectProvider Interface](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), le débogueur ajoute un spécial **affichage dynamique** nœud à la **automatique**  afficher. Ce nœud affiche les membres dynamiques de l’objet dynamique, mais n’autorise pas la modification des valeurs des membres.  
   

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f4fed2cbf00717e4eaf9c1353370dbd96037491
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fa6195a531c74aebbcb7884cc8e3158df6b9ca96
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425499"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089397"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Génération de code et modèles de texte T4
 
@@ -30,9 +30,9 @@ Dans Visual Studio, un *modèle de texte T4* est un mélange de blocs de texte e
 
 Il existe deux types de modèles de texte T4 : temps d’exécution et moment du design.
 
-## <a name="run-time-t4-text-templates"></a>Exécuter des modèles de texte T4 au moment
+## <a name="run-time-t4-text-templates"></a>Modèles de texte T4 exécution
 
-Également appelée modèles « prétraités », exécuter des modèles de temps sont exécutées dans votre application pour produire des chaînes de texte, généralement dans le cadre de sa sortie. Par exemple, vous pouvez créer un modèle pour définir une page HTML :
+Également connu sous les modèles « prétraités », modèles d’exécution sont exécutées dans votre application pour produire des chaînes de texte, généralement dans le cadre de sa sortie. Par exemple, vous pouvez créer un modèle pour définir une page HTML :
 
 ```
 <html><body>
@@ -44,7 +44,7 @@ Remarquez que le modèle ressemble à la sortie générée. La ressemblance du m
 
 De plus, le modèle contient des fragments de code du programme. Vous pouvez utiliser ces fragments pour répéter des sections de texte, organiser des sections conditionnelles et afficher des données de votre application.
 
-Pour générer la sortie, votre application appelle une fonction générée par le modèle. Par exemple :
+Pour générer la sortie, votre application appelle une fonction générée par le modèle. Exemple :
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();
@@ -54,13 +54,13 @@ Votre application peut s’exécuter sur un ordinateur qui n’a pas installé V
 
 Pour créer un modèle au moment de l’exécution, ajoutez un fichier **Modèle de texte prétraité** à votre projet. Vous pouvez également ajouter un fichier texte brut et affecter à sa propriété **Outil personnalisé** la valeur **TextTemplatingFilePreprocessor**.
 
-Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md). Pour plus d’informations sur la syntaxe des modèles, consultez [l’écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
+Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md). Pour plus d’informations sur la syntaxe des modèles, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
-## <a name="design-time-t4-text-templates"></a>Modèles de texte T4 au moment de la conception
+## <a name="design-time-t4-text-templates"></a>Concevoir des modèles de texte T4 de temps
 
-Conception temps communiquées définissent la partie du code source et autres ressources de votre application. En général, vous utilisez plusieurs modèles qui lisent les données dans un seul fichier d’entrée ou de la base de données et génèrent une partie de votre *.cs*, *.vb*, ou d’autres fichiers sources. Chaque modèle génère un fichier. Ils sont exécutés dans Visual Studio ou MSBuild.
+Modèles de temps de conception définissent une partie du code source et autres ressources de votre application. En général, vous utilisez plusieurs modèles qui lisent les données dans un seul fichier d’entrée ou de la base de données et générer certaines de vos *.cs*, *.vb*, ou d’autres fichiers sources. Chaque modèle génère un fichier. Ils sont exécutés dans Visual Studio ou MSBuild.
 
-Par exemple, vos données d’entrée peuvent être un fichier XML de données de configuration. Chaque fois que vous modifiez le fichier XML pendant le développement, les modèles de texte de régénération de la partie du code d’application. L’un des modèles peut ressembler à l’exemple suivant :
+Par exemple, vos données d’entrée peuvent être un fichier XML de données de configuration. Chaque fois que vous modifiez le fichier XML pendant le développement, les modèles de texte régénérer la partie du code d’application. L’un des modèles peut ressembler à l’exemple suivant :
 
 ```
 <#@ output extension=".cs" #>
@@ -74,7 +74,7 @@ namespace Fabrikam.<#= configurationData.SelectSingleNode("jobName").Value #>
 }
 ```
 
-En fonction des valeurs dans le fichier XML, généré *.cs* fichier peut se présenter comme suit :
+En fonction des valeurs dans le fichier XML, généré *.cs* fichier se présente comme suit :
 
 ```
 namespace Fabrikam.FirstJob
@@ -89,7 +89,7 @@ Les modèles au moment du design rendent la modification de la configuration plu
 
 Pour créer un modèle au moment du design, ajoutez un fichier **Modèle de texte** à votre projet. Vous pouvez également ajouter un fichier texte brut et affecter à sa propriété **Outil personnalisé** la valeur **TextTemplatingFileGenerator**.
 
-Pour plus d’informations, consultez [génération du Code à l’aide de modèles de texte T4 au moment du Design](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Pour plus d’informations sur la syntaxe des modèles, consultez [l’écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
+Pour plus d’informations, consultez [génération de Code au moment du Design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Pour plus d’informations sur la syntaxe des modèles, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
 > Le terme *modèle* est parfois utilisé pour décrire les données lues par un ou plusieurs modèles. Le modèle peut se présenter sous n’importe quel format, dans tout type de fichier ou de base de données. Il n’est pas tenu d’être un modèle UML ni un modèle de langage spécifique à un domaine. Le terme « modèle » indique seulement que les données peuvent être définies en termes de concepts d’entreprise, plutôt que de ressembler au code.

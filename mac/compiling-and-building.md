@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 29c6baaa4da4eae4a2302ec3916a156b59a49272
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 89463ca785a995f475519eeba5e2d4af07563428
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453881"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283146"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilation et génération dans Visual Studio pour Mac
 
@@ -20,7 +20,7 @@ Vous pouvez utiliser Visual Studio pour Mac pour générer des applications et c
 
 Vous pouvez utiliser Visual Studio pour Mac pour créer et exécuter des builds instantanément, tout en gardant le contrôle sur les fonctionnalités de génération. Visual Studio pour Mac utilise MSBuild comme système de génération sous-jacent.
 
-Tous les projets et toutes les solutions créées dans l’IDE ont une configuration de build par défaut, qui définit le contexte des builds. Vous pouvez modifier ces configurations ou créer les vôtres. La création ou la modification de ces configurations met automatiquement à jour le fichier projet, qui est ensuite utilisé par MSBuild pour générer votre projet.  
+Tous les projets et toutes les solutions créées dans l’IDE ont une configuration de build par défaut, qui définit le contexte des builds. Vous pouvez modifier ces configurations ou créer les vôtres. La création ou la modification de ces configurations met automatiquement à jour le fichier projet, qui est ensuite utilisé par MSBuild pour générer votre projet.
 
 Pour plus d’informations sur la génération de projets et de solutions dans l’IDE, consultez le guide [Génération et nettoyage des projets et des solutions](building-and-cleaning-projects-and-solutions.md).
 
@@ -42,9 +42,9 @@ Vous pouvez aussi utiliser Visual Studio pour Mac pour :
 
 Vous pouvez utiliser le moteur de génération MSBuild pour générer des applications via la ligne de commande.
 
-Pour plus d’informations sur l’utilisation de MSBuild, consultez [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild).
+Pour plus d’informations sur l’utilisation de MSBuild, consultez [MSBuild](/visualstudio/msbuild/msbuild).
 
 ## <a name="building-from-visual-studio-team-services"></a>Génération à partir de Visual Studio Team Services
 
-* [Générer votre application Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)
+* [Générer votre application Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
 * [Intégration continue avec Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)

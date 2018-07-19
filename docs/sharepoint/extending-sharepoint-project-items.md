@@ -1,5 +1,5 @@
 ---
-title: Étendre des éléments de projet SharePoint | Documents Microsoft
+title: Extension d’éléments de projet SharePoint | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,40 +17,40 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45127afaeeadd6046c9726c8c56de9a4acf2338a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 2be6c99f8601ae8dfaa819a3b70119a7b5921214
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765601"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326983"
 ---
 # <a name="extend-sharepoint-project-items"></a>Étendre des éléments de projet SharePoint
-  Créer une extension d’élément de projet lorsque vous souhaitez ajouter des fonctionnalités à un type d’élément de projet SharePoint est déjà installé dans Visual Studio. Par exemple, vous pouvez créer une extension pour la fonction intégrée **récepteur d’événements** ou **définition de liste** les éléments de projet dans Visual Studio, ou vous pouvez créer une extension pour un type d’élément de projet personnalisé. Vous pouvez également créer une extension pour tous les types d’éléments de projet SharePoint.  
+  Créer une extension d’élément de projet lorsque vous souhaitez ajouter des fonctionnalités à un type d’élément de projet SharePoint qui est déjà installé dans Visual Studio. Par exemple, vous pouvez créer une extension pour intégrés **récepteur d’événements** ou **définition de liste** les éléments de projet dans Visual Studio, ou vous pouvez créer une extension pour un type d’élément de projet personnalisé. Vous pouvez également créer une extension pour tous les types d’éléments de projet SharePoint.  
   
-## <a name="tasks-for-extending-sharepoint-project-items"></a>Tâches pour l’extension d’éléments de projet SharePoint
- Pour étendre un élément de projet, créez un assembly d’extension Visual Studio qui implémente le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interface. Pour plus d’informations, consultez [Comment : créer une Extension d’élément de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+## <a name="tasks-for-extending-sharepoint-project-items"></a>Tâches permettant d’étendre les éléments de projet SharePoint
+ Pour étendre un élément de projet, créez un assembly d’extension Visual Studio qui implémente le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interface. Pour plus d’informations, consultez [Comment : créer une extension d’élément de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
  Lorsque vous étendez un élément de projet, vous pouvez également ajouter les fonctionnalités suivantes à l’élément de projet :  
   
--   Ajouter un élément de menu contextuel pour l’élément de projet. L’élément de menu s’affiche lorsque vous ouvrez le menu contextuel pour l’élément de projet dans **l’Explorateur de solutions**. Vous ouvrez le menu contextuel en cliquant sur l’élément de projet ou en sélectionnant puis en choisissant le **MAJ**+**F10** clés. Pour plus d’informations, consultez [Comment : ajouter un élément de Menu contextuel à une Extension d’élément de projet SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).  
+-   Ajouter un élément de menu contextuel à l’élément de projet. L’élément de menu s’affiche lorsque vous ouvrez le menu contextuel de l’élément de projet dans **l’Explorateur de solutions**. Vous ouvrez le menu contextuel en cliquant sur l’élément de projet ou en sélectionnant puis en choisissant le **MAJ**+**F10** clés. Pour plus d’informations, consultez [Comment : ajouter un élément de menu contextuel à une extension d’élément de projet SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).  
   
--   Ajouter une propriété personnalisée à l’élément de projet. La propriété apparaît dans le **propriétés** fenêtre lorsque vous choisissez l’élément de projet dans **l’Explorateur de solutions**. Pour plus d’informations, consultez [Comment : ajouter une propriété à une Extension d’élément de projet SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).  
+-   Ajouter une propriété personnalisée à l’élément de projet. La propriété apparaît dans le **propriétés** fenêtre lorsque vous choisissez l’élément de projet dans **l’Explorateur de solutions**. Pour plus d’informations, consultez [Comment : ajouter une propriété à une extension d’élément de projet SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).  
   
- Pour une procédure pas à pas qui montre comment créer, déployer et tester une extension d’élément de projet, consultez [procédure pas à pas : étendre un Type d’élément de projet SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).  
+ Pour une procédure pas à pas qui montre comment créer, déployer et tester une extension d’élément de projet, consultez [procédure pas à pas : étendre un type d’élément de projet SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).  
   
 ## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>Comprendre la relation entre les extensions d’élément de projet et les instances d’élément de projet
- Lorsque vous créez une extension d’élément de projet, Visual Studio charge votre extension lorsqu’un élément de projet du type associé est ajouté à un projet SharePoint. Par exemple, si vous créez une extension pour **récepteur d’événements** des éléments de projet, Visual Studio charge votre extension lorsqu’un utilisateur ajoute un **récepteur d’événements** élément de projet pour un projet. Visual Studio utilise la même instance de votre extension pour toutes les instances du type d’élément de projet associé. Dans l’exemple précédent, si l’utilisateur ajoute un deuxième **récepteur d’événements** d’éléments de projet au projet, la même instance de votre extension est utilisée pour personnaliser le deuxième élément de projet.  
+ Lorsque vous créez une extension d’élément de projet, Visual Studio charge votre extension lors de l’ajout d’un élément de projet du type associé à un projet SharePoint. Par exemple, si vous créez une extension pour **récepteur d’événements** des éléments de projet, Visual Studio charge votre extension lorsqu’un utilisateur ajoute un **récepteur d’événements** élément de projet à un projet. Visual Studio utilise la même instance de votre extension pour toutes les instances du type d’élément de projet associé. Dans l’exemple précédent, si l’utilisateur ajoute un deuxième **récepteur d’événements** l’élément de projet au projet, la même instance de votre extension est utilisée pour personnaliser le deuxième élément de projet.  
   
- Pour accéder à une instance spécifique du type d’élément de projet vous étendez, gérez l’un de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> les événements de la *projectItemType* paramètre dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> (méthode). Par exemple, pour déterminer quand un élément de projet du type que vous étendez est ajouté à un projet, gérer les <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> événement. Pour plus d’informations, consultez [Comment : créer une Extension d’élément de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+ Pour accéder à une instance spécifique du type d’élément de projet que vous étendez, gérez l’un de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> événements de la *projectItemType* paramètre dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> (méthode). Par exemple, pour déterminer quand un élément de projet du type que vous étendez est ajouté à un projet, gérez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> événement. Pour plus d’informations, consultez [Comment : créer une extension d’élément de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
-## <a name="identifiers-for-sharepoint-project-items"></a>Identificateurs d’éléments de projet SharePoint
- Chaque élément de projet SharePoint a un identificateur de chaîne correspondante. Vous devez connaître l’identificateur pour un élément de projet si vous souhaitez effectuer les tâches suivantes :  
+## <a name="identifiers-for-sharepoint-project-items"></a>Identificateurs pour les éléments de projet SharePoint
+ Chaque élément de projet SharePoint a un identificateur de chaîne. Vous devez connaître l’identificateur pour un élément de projet si vous souhaitez effectuer les tâches suivantes :  
   
--   Créer une extension pour l’élément de projet. Dans ce cas, vous devez passer l’identificateur de l’élément de projet que vous souhaitez étendre au constructeur de la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Pour créer une extension pour tous les types de projet élément, transmettez la **\*** valeur de chaîne.  
+-   Créer une extension pour l’élément de projet. Dans ce cas, vous devez passer l’identificateur de l’élément de projet que vous souhaitez étendre au constructeur de la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Pour créer une extension pour tous les types de projet élément, transmettez le **\*** valeur de chaîne.  
   
--   Ajouter l’élément de projet à un projet par programmation. Dans ce cas, vous devez passer l’identificateur de l’élément de projet pour le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> (méthode).  
+-   Ajouter l’élément de projet à un projet par programmation. Dans ce cas, vous devez passer l’identificateur pour l’élément de projet à la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> (méthode).  
   
- Le tableau suivant répertorie les identificateurs pour les éléments de projet SharePoint qui sont inclus dans Visual Studio.  
+ Le tableau suivant répertorie les identificateurs pour les éléments de projet SharePoint qui sont inclus avec Visual Studio.  
   
 |Nom d’élément de projet|Identificateur de chaîne|  
 |-----------------------|-----------------------|  
@@ -68,9 +68,9 @@ ms.locfileid: "34765601"
 |Formulaire d’Association de flux de travail|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|  
   
 ## <a name="see-also"></a>Voir aussi
- [Comment : créer une Extension d’élément de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [Comment : ajouter un élément de Menu contextuel à une Extension d’élément de projet SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
- [Comment : ajouter une propriété à une Extension d’élément de projet SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
- [Procédure pas à pas : Étendre un Type d’élément de projet SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
- [Extension du système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  
+ [Comment : créer une extension d’élément de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [Comment : ajouter un élément de menu contextuel à une extension d’élément de projet SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
+ [Comment : ajouter une propriété à une extension d’élément de projet SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
+ [Procédure pas à pas : Étendre un type d’élément de projet SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
+ [Étendre le système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  
   

@@ -9,21 +9,21 @@ description: Informations destinées aux fournisseurs de solutions cloud concern
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdf956b02c4bfc5125b452b6eece0cb39e454bc3
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199077"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283375"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acheter et gérer des abonnements cloud Visual Studio pour vos clients
 
-Les partenaires du programme [Fournisseur de solutions Cloud](https://partner.microsoft.com/en-US/cloud-solution-provider) peuvent acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional pour leurs clients. 
+Les partenaires du programme [Fournisseur de solutions Cloud](https://partner.microsoft.com/en-US/cloud-solution-provider) peuvent acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional pour leurs clients.
 
-[Comparer les options d’abonnement cloud](https://www.visualstudio.com/vs/pricing)
+[Comparer les options d’abonnement cloud](https://visualstudio.microsoft.com/vs/pricing)
 
 ## <a name="prerequisites"></a>Prérequis
-Vous devez tout d’abord configurer votre locataire de clients dans l’Espace partenaires et créer un abonnement Azure pour ce locataire. 
+Vous devez tout d’abord configurer votre locataire de clients dans l’Espace partenaires et créer un abonnement Azure pour ce locataire.
 [En savoir plus](https://docs.microsoft.com/vsts/billing/csp/set-up-csp-customer)
 
 ## <a name="how-to-buy"></a>Comment acheter
@@ -58,9 +58,10 @@ Après avoir confirmé l’achat, vous pouvez choisir **Gérer** pour affecter d
 
 Si vous avez plusieurs abonnements Azure pour ce client, utilisez le menu déroulant pour choisir celui par le biais duquel vous avez effectué les achats.  Le **Récapitulatif des licences** indique combien d’abonnements ont été affectés et combien sont disponibles pour chaque option d’abonnement cloud Visual Studio.  Le récapitulatif vous permet également d’acheter des abonnements supplémentaires ou de réduire le nombre d’abonnements.
 
-Choisissez **Ajouter** pour affecter un abonnement à un nouvel utilisateur.  La quantité affichée est mise à jour, et l’utilisateur final reçoit une notification par e-mail. Il peut ensuite se connecter avec l’adresse e-mail que vous avez fournie pour activer son abonnement Visual Studio dans le [portail des abonnés Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+Choisissez **Ajouter** pour affecter un abonnement à un nouvel utilisateur.  La quantité affichée est mise à jour, et l’utilisateur final reçoit une notification par e-mail.
+Il peut ensuite se connecter avec l’adresse e-mail que vous avez fournie pour activer son abonnement Visual Studio dans le [portail des abonnés Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 
-Pour réaffecter un abonnement Visual Studio à un autre utilisateur, vous pouvez supprimer l’abonné actuel et ajouter un nouvel abonné. 
+Pour réaffecter un abonnement Visual Studio à un autre utilisateur, vous pouvez supprimer l’abonné actuel et ajouter un nouvel abonné.
 
 Si un abonné n’a pas activé son abonnement Visual Studio, c’est peut-être parce qu’il n’a pas vu l’e-mail d’invitation.  Vous pouvez nous demander de renvoyer l’invitation d’activation à l’utilisateur à partir du portail d’administration de Visual Studio.
 
@@ -81,15 +82,17 @@ Nous offrons une remise de 5 % sur la sixième unité que vous achetez (pour un
 
 ## <a name="frequently-asked-questions"></a>FAQ
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Q : Comment les frais d’abonnement cloud **mensuels** sont-ils traités ?
-R : Lors du premier achat, nous facturons une quantité au prorata pour couvrir les jours restants du mois en cours. Par exemple, si un achat de 10 abonnements cloud mensuels Visual Studio Professional a été effectué le 15 avril, nous facturons cinq unités, car il reste 15 jours sur les 30 du mois d’avril (soit 50 %), et nous facturons donc les unités au prorata de 50 %. Le premier mai et chaque mois suivant jusqu’à ce que vous annuliez, les dix unités seront facturées.
+R : Lors du premier achat, nous facturons une quantité au prorata pour couvrir les jours restants du mois en cours. Par exemple, si un achat de 10 abonnements cloud mensuels Visual Studio Professional a été effectué le 15 avril, nous facturons cinq unités, car il reste 15 jours sur les 30 du mois d’avril (soit 50 %), et nous facturons donc les unités au prorata de 50 %.
+Le premier mai et chaque mois suivant jusqu’à ce que vous annuliez, les dix unités seront facturées.
 
-Quand vous augmentez la quantité payée ultérieurement, nous calculons également au prorata les unités accrues afin de couvrir les jours restants dans le mois en cours. Ainsi, si vous avez acheté un abonnement cloud Visual Studio Professional mensuel en plus le 10 mai, nous facturerons environ 0,677 unité (21 jours restants sur les 31 jours du mois de mai). 
+Quand vous augmentez la quantité payée ultérieurement, nous calculons également au prorata les unités accrues afin de couvrir les jours restants dans le mois en cours. Ainsi, si vous avez acheté un abonnement cloud Visual Studio Professional mensuel en plus le 10 mai, nous facturerons environ 0,677 unité (21 jours restants sur les 31 jours du mois de mai).
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>Q : Comment les frais d’abonnement cloud **annuels** sont-ils traités ?
 R : Lors de chaque achat, nous facturons immédiatement la quantité totale achetée. Les frais ne sont pas répartis sur l’année, et il n’existe aucun prorata. Si vous achetez des abonnements cloud annuels à différents moments de l’année, vous devrez renouveler vos abonnements à des dates différentes. Nous ne faisons pas en sorte que tous les abonnements cloud annuels d’un client se terminent en même temps, comme cela est courant avec les achats Contrat de licence en volume Microsoft.
 
 ### <a name="q-how-do-cancelations-work"></a>Q : Que se passe-t-il en cas d’annulation ?
-R : Quand vous annulez un abonnement cloud Visual Studio, vous annulez le renouvellement automatique. L’abonnement continue jusqu’à sa date de renouvellement normale, puis il arrive simplement à expiration. À l’expiration, l’abonné Visual Studio ne peut plus utiliser Visual Studio ni d’autres avantages de l’abonnement.
+R : Quand vous annulez un abonnement cloud Visual Studio, vous annulez le renouvellement automatique. L’abonnement continue jusqu’à sa date de renouvellement normale, puis il arrive simplement à expiration.
+À l’expiration, l’abonné Visual Studio ne peut plus utiliser Visual Studio ni d’autres avantages de l’abonnement.
 
 Avec les abonnements cloud mensuels, les annulations prennent effet le premier jour du mois suivant. Si vous annulez uniquement certains des abonnements cloud mensuels de vos clients, veillez à supprimer les utilisateurs le premier jour du mois suivant pour vous assurer que des abonnements actifs sont toujours affectés aux personnes appropriées.
 
@@ -108,7 +111,7 @@ Par exemple, si vous achetez six abonnements mensuels Visual Studio Professional
 
 En outre, la remise s’applique uniquement aux frais durant une période de facturation mensuelle donnée. Ainsi, si vous achetez cinq abonnements annuels Visual Studio Professional durant un mois, et que vous achetez ensuite cinq abonnements supplémentaires le mois suivant, vous payez le prix normal pour les dix abonnements.
 
-Ces remises sont reflétées dans les données tarifaires mentionnées dans l’[Espace partenaires](https://partnercenter.microsoft.com). 
+Ces remises sont reflétées dans les données tarifaires mentionnées dans l’[Espace partenaires](https://partnercenter.microsoft.com).
 
 ### <a name="q-are-there-renewal-discounts"></a>Q : Y a-t-il des remises pour le renouvellement ?
 

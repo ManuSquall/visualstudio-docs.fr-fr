@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Déploiement d’une définition de liste de tâches de projet | Documents Microsoft'
+title: 'Procédure pas à pas : Déploiement d’une définition de liste de tâches de projet | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fb7f8445cf43209ffed47140b1d8d204c68eaa4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2af59e2d5d26a6db1ecde24ca93c3f0d737eb31d
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118901"
 ---
-# <a name="walkthrough-deploying-a-project-task-list-definition"></a>Procédure pas à pas : déploiement d’une définition de liste de tâches de projet
+# <a name="walkthrough-deploy-a-project-task-list-definition"></a>Procédure pas à pas : Déployer une définition de liste de tâches de projet
 
 Cette procédure pas à pas explique comment créer, personnaliser, déboguer et déployer une liste SharePoint à l'aide de [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] en vue d'effectuer le suivi des tâches du projet.
 
@@ -31,35 +32,35 @@ Cette procédure pas à pas explique comment créer, personnaliser, déboguer et
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Éditions prises en charge de Microsoft Windows et SharePoint. Pour plus d’informations, consultez [configuration requise pour le développement de Solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Éditions prises en charge de Microsoft Windows et SharePoint. Pour plus d’informations, consultez [configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
 
 - Visual Studio 2017 ou une édition de Visual Studio Application Lifecycle Management (ALM).
 
-## <a name="CreatingListDef"></a> Création d’une liste SharePoint
+## <a name="create-a-sharepoint-list"></a>Créer une liste SharePoint
 
 Créez un projet de liste SharePoint et associez la définition de liste aux tâches.
 
 1. Ouvrir le **nouveau projet** boîte de dialogue, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.
 
-2. Dans le **modèles** volet, choisissez la **projet SharePoint 2010** modèle, nommez le projet **ProjectTaskList**, puis choisissez le **OK**bouton.
+2. Dans le **modèles** volet, choisissez le **projet SharePoint 2010** modèle, nommez le projet **ProjectTaskList**, puis choisissez le **OK**bouton.
 
      Le **Assistant Personnalisation de SharePoint** s’affiche.
 
-3. Spécifiez le site SharePoint local que vous utilisez pour le débogage, choisissez le **déployer une solution de batterie de serveurs** case d’option, puis choisissez le **Terminer** bouton.
+3. Spécifiez le site SharePoint local que vous utilisez pour le débogage, choisissez le **déployer en tant que solution de batterie** case d’option, puis choisissez le **Terminer** bouton.
 
-4. Ouvrez le menu contextuel du projet, puis choisissez **ajouter**, **un nouvel élément**.
+4. Ouvrez le menu contextuel du projet, puis choisissez **ajouter** > **un nouvel élément**.
 
-5. Dans le **modèles** volet, choisissez la **liste** modèle, puis choisissez le **ajouter** bouton.
+5. Dans le **modèles** volet, choisissez le **liste** modèle, puis choisissez le **ajouter** bouton.
 
      Le **Assistant Personnalisation de SharePoint** s’affiche.
 
 6. Dans le **quel nom voulez-vous afficher pour votre liste ?** , entrez **liste des tâches de projet**.
 
-7. Choisissez le **créer une liste non personnalisable basée sur un type de liste existant** case d’option, puis, dans la liste, choisissez **tâches**, puis choisissez le **Terminer** bouton.
+7. Choisissez le **créer une liste non personnalisable basée sur un type de liste existant** case d’option et, dans sa liste, choisissez **tâches**, puis choisissez le **Terminer** bouton.
 
      La liste, la fonctionnalité et le package s’affichent dans **l’Explorateur de solutions**.
 
-## <a name="AddEventRcvr"></a> Ajout d’un récepteur d’événements
+## <a name="add-an-event-receiver"></a>Ajouter un récepteur d’événements
 
 Dans la liste de tâches, vous pouvez ajouter un récepteur d’événements permettant de déterminer automatiquement la date d’échéance et la description de la tâche. La procédure suivante ajoute un gestionnaire d’événements simple à l’instance de liste comme un récepteur d’événements.
 
@@ -69,7 +70,7 @@ Dans la liste de tâches, vous pouvez ajouter un récepteur d’événements per
 
      Le **Assistant Personnalisation de SharePoint** s’affiche.
 
-3. Sur le **choisir les paramètres de récepteur d’événements** page, choisissez **événements d’élément de liste** comme type de récepteur d’événements dans le **le type de récepteur d’événements voulez-vous** liste.
+3. Sur le **choisir les paramètres de récepteur d’événements** page, choisissez **événements d’élément de liste** comme type de récepteur d’événements dans le **quel type de récepteur d’événements voulez-vous** liste.
 
 4. Dans le **quel élément doit être la source d’événements** , choisissez **tâches**.
 
@@ -82,13 +83,13 @@ Dans la liste de tâches, vous pouvez ajouter un récepteur d’événements per
      [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
      [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
 
-## <a name="CustomizeFeature"></a> Personnalisation de la fonctionnalité de liste des tâches de projet
+## <a name="customize-the-project-task-list-feature"></a>Personnaliser la fonctionnalité de liste des tâches de projet
 
-Lorsque vous créez une solution SharePoint, Visual Studio crée automatiquement les fonctionnalités pour la valeur par défaut des éléments de projet. Vous pouvez personnaliser les paramètres de liste des tâches de projet pour le site SharePoint à l’aide du Concepteur de fonctionnalités.
+Lorsque vous créez une solution SharePoint, Visual Studio crée automatiquement des fonctionnalités pour la valeur par défaut des éléments de projet. Vous pouvez personnaliser les paramètres de liste de tâches de projet pour le site SharePoint à l’aide du Concepteur de fonctionnalités.
 
 1. Dans **l’Explorateur de solutions**, développez **fonctionnalités**.
 
-2. Ouvrez le menu contextuel pour **Feature1**, puis choisissez **Concepteur de vue**.
+2. Ouvrez le menu contextuel pour **Feature1**, puis choisissez **Concepteur de vues**.
 
 3. Dans le **titre** , entrez **fonctionnalité liste des tâches projet**.
 
@@ -96,21 +97,21 @@ Lorsque vous créez une solution SharePoint, Visual Studio crée automatiquement
 
 5. Dans le **propriétés** fenêtre, entrez **1.0.0.0** comme valeur pour le **Version** propriété.
 
-## <a name="CustomizePackage"></a> Personnalisation du Package de liste des tâches de projet
+## <a name="customize-the-project-task-list-package"></a>Personnaliser le package de liste de tâches de projet
 
-Lorsque vous créez un projet SharePoint, Visual Studio ajoute automatiquement les fonctionnalités qui contiennent les éléments de projet par défaut pour le package. Vous pouvez personnaliser les paramètres de liste des tâches de projet pour le site SharePoint à l’aide du Concepteur de packages.
+Lorsque vous créez un projet SharePoint, Visual Studio ajoute automatiquement les fonctionnalités qui contiennent les éléments de projet par défaut pour le package. Vous pouvez personnaliser les paramètres de liste de tâches de projet pour le site SharePoint à l’aide du Concepteur de packages.
 
-1. Dans **SolutionExplorer**, ouvrez le menu contextuel pour **Package**, puis choisissez **Concepteur de vue**.
+1. Dans **SolutionExplorer**, ouvrez le menu contextuel pour **Package**, puis choisissez **Concepteur de vues**.
 
 2. Dans le **nom** , entrez **ProjectTaskListPackage**.
 
 3. Sélectionnez le **réinitialiser le serveur Web** case à cocher.
 
-## <a name="BuildTest"></a> Génération et test de la liste de tâches de projet
+## <a name="build-and-test-the-project-task-list"></a>Générer et tester la liste de tâches de projet
 
 Lorsque vous exécutez le projet, le site SharePoint s’ouvre. Toutefois, vous devez accéder manuellement à l’emplacement de la liste des tâches.
 
-1. Sélectionnez la touche F5 pour générer et déployer votre liste des tâches du projet.
+1. Choisissez le **F5** clé pour générer et déployer votre liste de tâches de projet.
 
      Le site SharePoint s’ouvre.
 
@@ -122,7 +123,7 @@ Lorsque vous exécutez le projet, le site SharePoint s’ouvre. Toutefois, vous 
 
 4. Dans le **outils de liste** , choisir le **éléments** onglet.
 
-5. Dans le **éléments** groupe, choisissez le **un nouvel élément** bouton.
+5. Dans le **éléments** de groupe, choisissez le **un nouvel élément** bouton.
 
 6. Dans le **titre** texte, entrez **Task1**.
 
@@ -132,52 +133,51 @@ Lorsque vous exécutez le projet, le site SharePoint s’ouvre. Toutefois, vous 
 
 8. Choisissez **Task1**.
 
-     La vue détaillée de la tâche apparaît et la description indique « Il s’agit d’une tâche critique. »
+     La vue détaillée de la tâche s’affiche, et la description indique « Il s’agit d’une tâche critique. »
 
-## <a name="Deploy"></a> Déploiement de la liste de tâches de projet
+## <a name="deploy-the-project-task-list"></a>Déployer la liste de tâches de projet
 
-Une fois que vous générez et testez la liste de tâches du projet, vous pouvez le déployer à la *système local* ou un *système distant*. Le système local est le même ordinateur que celui sur lequel vous avez développé la solution, tandis qu’un système distant est un autre ordinateur.
+Une fois que vous générez et testez la liste de tâches de projet, vous pouvez la déployer vers le *système local* ou un *système distant*. Le système local est le même ordinateur que celui sur lequel vous avez développé la solution, tandis qu’un système distant est un autre ordinateur.
 
 ### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>Pour déployer la liste des tâches projet sur le système local
 
-Dans la barre de menus de Visual Studio, choisissez **générer**, **déployer la Solution**.
+Dans la barre de menus de Visual Studio, choisissez **Build** > **déployer la Solution**.
 
-Visual Studio recycle le pool d’applications IIS, retire toutes les versions existantes de la solution, copie le fichier de package (.wsp) de solution SharePoint, puis active ses fonctionnalités. Vous pouvez maintenant utiliser la solution dans SharePoint. Pour plus d’informations sur les étapes de configuration de déploiement, consultez [Comment : modifier une Configuration de déploiement SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+Visual Studio recycle le pool d’applications IIS, retire toutes les versions existantes de la solution, copie le package de solution (*.wsp*) de fichiers sur SharePoint et ensuite activer ses fonctionnalités. Vous pouvez maintenant utiliser la solution dans SharePoint. Pour plus d’informations sur les étapes de configuration de déploiement, consultez [Comment : modifier une configuration de déploiement SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
-### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Pour déployer la liste des tâches projet vers un système distant
+### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Pour déployer la liste des tâches projet sur un système distant
 
-1. Dans la barre de menus de Visual Studio, choisissez **générer**, **publier**.
+1. Dans la barre de menus de Visual Studio, choisissez **Build** > **publier**.
 
-2. Dans le **publier** boîte de dialogue, choisissez le **publier sur le système de fichiers** case d’option.
+2. Dans le **publier** boîte de dialogue, sélectionnez le **publier sur le système de fichiers** case d’option.
 
-     Vous pouvez modifier l’emplacement cible dans le **publier** boîte de dialogue en cliquant sur le bouton de sélection ![icône des points de suspension](../sharepoint/media/ellipsisicon.gif "icône des points de suspension") et puis navigué vers un autre emplacement.
+     Vous pouvez modifier l’emplacement cible dans le **publier** boîte de dialogue en choisissant le bouton de sélection ![icône des points de suspension](../sharepoint/media/ellipsisicon.gif "icône des points de suspension") et en accédant à un autre emplacement.
 
 3. Choisissez le **publier** bouton.
 
-     Un fichier .wsp est créé pour la solution.
+     Un *.wsp* fichier est créé pour la solution.
 
-4. Copiez le fichier .wsp sur le système de SharePoint à distance.
+4. Copie le *.wsp* fichier sur le système SharePoint distant.
 
-5. Utilisez le PowerShell `Add-SPUserSolution` commande pour installer le package sur l’installation de SharePoint à distance. (Pour les solutions de batterie de serveurs, utilisez la `Add-SPSolution` commande.)
+5. Utilisez la commande PowerShell `Add-SPUserSolution` commande pour installer le package sur l’installation SharePoint distante. (Pour les solutions de batterie de serveurs, utilisez le `Add-SPSolution` commande.)
 
      Par exemple, `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
 
-6. Utilisez le PowerShell `Install-SPUserSolution` commande pour déployer la solution. (Pour les solutions de batterie de serveurs, utilisez la `Install-SPSolution` commande.)
+6. Utilisez la commande PowerShell `Install-SPUserSolution` commande pour déployer la solution. (Pour les solutions de batterie de serveurs, utilisez le `Install-SPSolution` commande.)
 
      Par exemple, `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
 
-     Pour plus d’informations sur le déploiement distant, consultez [à l’aide des Solutions](http://go.microsoft.com/fwlink/?LinkId=217680) et [Ajout et déploiement de Solutions avec PowerShell dans SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=217682).
+     Pour plus d’informations sur le déploiement distant, consultez [à l’aide de Solutions](http://go.microsoft.com/fwlink/?LinkId=217680) et [Ajout et déploiement de Solutions avec PowerShell dans SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=217682).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Pour plus d’informations sur comment personnaliser et déployer des solutions SharePoint, les rubriques suivantes :
 
-- [Procédure pas à pas : création d’une colonne de site, d’un type de contenu et d’une liste pour SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
+- [Procédure pas à pas : Créer une colonne de site, le type de contenu et la liste pour SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [Guide pratique pour créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)
+- [Comment : créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)
 
-- [Windows PowerShell pour SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=217684)
+- [PowerShell de Windows pour SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=217684)
 
 ## <a name="see-also"></a>Voir aussi
-
-[Empaquetage et déploiement de solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+[Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

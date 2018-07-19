@@ -1,5 +1,5 @@
 ---
-title: 'Comment : copier par programmation les données et la mise en forme des feuilles de calcul | Documents Microsoft'
+title: 'Comment : copier des données et la mise en forme entre feuilles de calcul par programmation'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10a710af8120ab789ec3a9c3ccb2b7e4398e82f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4a4cce083bee8b57ff37276ae909799a9a6791d7
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256680"
 ---
-# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Comment : copier des données et une mise en forme d'une feuille de calcul à l'autre par programmation
-  Vous pouvez copier des données à partir d’une plage d’une feuille à toutes les autres feuilles dans un classeur à l’aide de la <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> (méthode). Spécifiez une plage, et si vous souhaitez copier des données, la mise en forme ou les deux.  
+# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Comment : copier des données et la mise en forme entre feuilles de calcul par programmation
+  Vous pouvez copier des données à partir d’une plage d’une feuille à toutes les autres feuilles dans un classeur à l’aide de la <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> (méthode). Spécifier une plage, et si vous souhaitez copier des données, la mise en forme ou les deux.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
@@ -33,13 +34,13 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#44)]
  [!code-vb[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#44)]  
   
-## <a name="compiling-the-code"></a>Compilation du code  
+## <a name="compile-the-code"></a>Compiler le code  
  Cet exemple requiert une plage nommée `rangeData` dans une feuille de calcul.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation des feuilles de calcul](../vsto/working-with-worksheets.md)   
+ [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)   
  [Comment : ajouter par programmation des feuilles de calcul à des classeurs](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [Comment : modifier par programmation la mise en forme dans les lignes de feuille de calcul contenant des cellules sélectionnées](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)   
+ [Comment : modifier la mise en forme dans les lignes de feuille de calcul contenant des cellules sélectionnées par programmation](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

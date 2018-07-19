@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 738964deed9aa1e51d5a6e4788879bc3165284a7
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693690"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37889883"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Présentation de Visual Studio pour Mac
 
@@ -24,7 +24,7 @@ Visual Studio pour Mac est un IDE moderne et élaboré avec de nombreuses foncti
 
 Il inclut des fonctionnalités comme un éditeur avancé, le débogage, l’intégration de plateforme native avec iOS, Mac et Android, et un contrôle du code source intégré.
 
-Cet article traite de différents aspects de Visual Studio pour Mac et présente certaines des fonctionnalités qui en font un outil puissant pour créer des applications multiplateformes.
+Cet article traite de différents aspects de Visual Studio pour Mac et présente des fonctionnalités qui en font un outil puissant pour créer des applications multiplateformes.
 
 ## <a name="installation"></a>Installation
 
@@ -36,7 +36,7 @@ Visual Studio pour Mac prend en charge par défaut le développement en C# et en
 
 ### <a name="c"></a>C#
 
-C# est le langage le plus couramment utilisé pour la création d’applications multiplateformes dans Visual Studio pour Mac. L’IDE prend entièrement en charge toutes les fonctionnalités de C# 7.
+C# est le langage le plus couramment utilisé pour créer des applications multiplateformes dans Visual Studio pour Mac. L’IDE prend entièrement en charge toutes les fonctionnalités de C# 7.
 
 ### <a name="f"></a>F#
 
@@ -46,7 +46,7 @@ F# est un langage de programmation fonctionnel fortement typé conçu pour s’e
 
 ## <a name="net-core"></a>.NET Core
 
-[.NET Core](https://www.microsoft.com/net/core#macos) est une plateforme de création d’applications qui s’exécutent sur Windows, Linux et Mac. Visual Studio pour Mac prend en charge le chargement, la création, l’exécution et le débogage de projets .NET Core.
+[.NET Core](https://www.microsoft.com/net/core#macos) est une plateforme qui permet de créer des applications s’exécutant sur Windows, Linux et Mac. Visual Studio pour Mac prend en charge le chargement, la création, l’exécution et le débogage des projets .NET Core. 
 
 Pour exécuter des projets .NET Core, vous devez télécharger et installer le SDK .NET Core.
 
@@ -56,7 +56,7 @@ La prise en charge de .NET Core inclut :
 * Modèles de projet .NET Core pour applications console, bibliothèque et web.
 * Prise en charge complète du débogage, notamment des points d’arrêt, de la pile d’appels, de la fenêtre Espion, etc.
 * NuGet PackageReferences et restauration MSBuild.
-* Prise en charge intégrée des tests unitaires pour l’exécution et le débogage de tests avec la plateforme de test Visual Studio fournie avec le SDK .NET Core.
+* Prise en charge des tests unitaires intégrés pour l’exécution et le débogage de tests avec la plateforme de test Visual Studio fournie avec le SDK .NET Core.
 * Migration depuis l’ancien format project.json.
 
 Pour commencer, découvrez les [ateliers pratiques](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) consacrés aux applications web ASP.NET Core.
@@ -93,7 +93,7 @@ Pour plus d’informations sur l’écriture d’applications Mac avec Visual St
 
 ## <a name="gaming"></a>Jeux
 
-Visual Studio pour Mac prend en charge le développement de jeux multiplateformes avec Unity 5.6.1.
+Visual Studio pour Mac prend en charge le développement de jeux multiplateformes avec Unity 5.6.1.
 
 Pour commencer, découvrez les [ateliers pratiques](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started) consacrés à Unity.
 
@@ -108,11 +108,11 @@ Xamarin Profiler a trois instruments disponibles pour le profilage. Le guide [In
 
 ### <a name="inspector"></a>Inspector
 
-Xamarin Inspector fournit une console C# interactive avec des outils pour les utilisateurs. Il peut être utilisé comme aide au débogage ou au diagnostic lors de l’inspection des applications dynamiques, comme outil d’apprentissage, comme outil de documentation ou comme outil d’expérimentation.
+Xamarin Inspector fournit une console C# interactive avec des outils utilisateur. Il peut être utilisé comme aide au débogage ou au diagnostic lors de l’inspection des applications dynamiques, comme outil d’apprentissage, comme outil de documentation ou comme outil d’expérimentation.
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-Il consiste en une application autonome qui fournit une console C# enrichie, qui peut cibler différentes plateformes de programmation (Android, iOS, Mac et Windows) et s’intégrer au flux de travail de débogage de votre IDE.
+Il consiste en une application autonome qui fournit une console C# enrichie, qui peut cibler différentes plateformes de programmation (Android, iOS, Mac et Windows) et s’intégrer au flux de travail de débogage de vos IDE. 
 
 Pour plus d’informations, consultez le guide [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/).
 
