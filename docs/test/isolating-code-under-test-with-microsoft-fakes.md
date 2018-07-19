@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 0ac6bd2e9b2c15f64e0232e46267a87c210b5b69
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3ea3669f3c66a36a10e63dde9d98b0f951d58f1e
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751453"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844929"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolation du code sous test avec Microsoft Fakes
 
@@ -240,7 +240,7 @@ Pour utiliser des shims, vous ne devez pas modifier le code de l’application n
 
 L'exemple précédent utilise un shim pour une méthode statique. Pour utiliser un shim pour une méthode d'instance, écrivez `AllInstances` entre le nom du type et le nom de la méthode :
 
-```
+```vb
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ```
 

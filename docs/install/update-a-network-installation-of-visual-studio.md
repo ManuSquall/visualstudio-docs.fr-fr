@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad8cfdb54b690dd9f5639bea71d790ef0d79a19a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 64a8fbd599667c7c28a48f80ff97932161c9e2f7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31620451"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282559"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Mettre à jour une installation réseau de Visual Studio
 
@@ -41,10 +41,10 @@ Intéressons-nous de plus près à la création et à la mise à jour d’une di
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
-* Voici comment mettre à jour cette même disposition vers une version plus récente. Vous n’êtes pas obligé de spécifier les paramètres de ligne de commande supplémentaires. Les paramètres précédents étaient enregistrés et ils vont être utilisés par toutes les commandes de disposition suivantes dans ce dossier de disposition.  
+* Voici comment mettre à jour cette même disposition vers une version plus récente. Vous n’êtes pas obligé de spécifier les paramètres de ligne de commande supplémentaires. Les paramètres précédents étaient enregistrés et ils vont être utilisés par toutes les commandes de disposition suivantes dans ce dossier de disposition.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout  
+  vs_enterprise.exe --layout c:\VS2017Layout
   ```
 
 * Voici comment mettre à jour votre disposition avec une version plus récente en mode sans assistance. L’opération de disposition exécute le processus d’installation dans une nouvelle fenêtre de console. La fenêtre reste ouverte pour que les utilisateurs puissent voir le résultat final, ainsi qu’un récapitulatif des erreurs qui se sont produites. Si vous effectuez une opération de disposition en mode sans assistance (par exemple, si vous avez un script qui est exécuté régulièrement pour mettre à jour votre disposition vers la version la plus récente), utilisez le paramètre `--passive` pour que le processus ferme automatiquement la fenêtre.
@@ -96,7 +96,7 @@ Le fichier vs_enterprise.exe peut être appelé à l’intérieur du répertoire
 > [!NOTE]
 > Certains fichiers de métadonnées importantes, qui sont nécessaires à l’option `--verify`, doivent se trouver dans le cache hors connexion de la disposition. Si ces fichiers de métadonnées sont manquants, "--verify" ne peut pas s’exécuter et le programme d’installation signale une erreur. Si vous rencontrez cette erreur, recréez une nouvelle disposition en mode hors connexion dans un dossier différent (ou dans le même dossier de cache hors connexion). Pour cela, exécutez la même commande de disposition que celle que vous avez utilisée pour créer la disposition hors connexion initiale. Par exemple, `Vs_enterprise.exe --layout <layoutDir>`.
 
-Comme Microsoft fournit régulièrement des mises à jour de Visual Studio, la version de la nouvelle disposition que vous créez peut donc être différente de celle de la disposition initiale.  
+Comme Microsoft fournit régulièrement des mises à jour de Visual Studio, la version de la nouvelle disposition que vous créez peut donc être différente de celle de la disposition initiale.
 
 ## <a name="how-to-fix-a-layout"></a>Comment corriger une disposition
 
@@ -114,9 +114,9 @@ Suite aux mises à jour de disposition que vous avez effectuées vers un cache h
 
 Pour ce faire, vous avez besoin du chemin de fichier du ou des manifestes de catalogue qui contiennent les packages obsolètes. Vous pouvez trouver les manifestes de catalogue dans un dossier Archive situé dans le cache de disposition en mode hors connexion. Ils sont enregistrés à cet endroit lorsque vous mettez à jour une disposition. Dans le dossier Archive, il existe un ou plusieurs dossiers nommés GUID qui contiennent chacun un manifeste de catalogue obsolète. Le nombre de dossiers GUID doit être le même que le nombre de mises à jour apportées à votre cache hors connexion.
 
-Quelques fichiers sont enregistrés à l’intérieur de chaque dossier GUID. Les deux fichiers les plus intéressants sont « catalog.json » et « version.txt ». Le fichier catalog.json est le manifeste de catalogue obsolète que vous devez passer à l’option `--clean`. L’autre fichier, version.txt, contient la version de ce manifeste de catalogue obsolète. En fonction du numéro de version, vous pouvez décider de supprimer ou non les packages obsolètes à partir de ce manifeste de catalogue. Vous pouvez en faire de même lorsque vous parcourez les autres dossiers GUID. Après avoir décidé du ou des catalogues à nettoyer, exécutez la commande `--clean` en spécifiant les chemins de fichier de ces catalogues.  
+Quelques fichiers sont enregistrés à l’intérieur de chaque dossier GUID. Les deux fichiers les plus intéressants sont « catalog.json » et « version.txt ». Le fichier catalog.json est le manifeste de catalogue obsolète que vous devez passer à l’option `--clean`. L’autre fichier, version.txt, contient la version de ce manifeste de catalogue obsolète. En fonction du numéro de version, vous pouvez décider de supprimer ou non les packages obsolètes à partir de ce manifeste de catalogue. Vous pouvez en faire de même lorsque vous parcourez les autres dossiers GUID. Après avoir décidé du ou des catalogues à nettoyer, exécutez la commande `--clean` en spécifiant les chemins de fichier de ces catalogues.
 
-Voici quelques exemples montrant comment utiliser l’option--clean :   
+Voici quelques exemples montrant comment utiliser l’option--clean :
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
@@ -128,7 +128,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 
 Vous pouvez aussi appeler le fichier vs_enterprise.exe à l’intérieur du répertoire &lt;layoutDir&gt;. Voici un exemple :
 
-```cmd   
+```cmd
 c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
@@ -136,7 +136,7 @@ Lorsque vous exécutez cette commande, le programme d’installation analyse vot
 
 ## <a name="get-support"></a>Obtenir de l’aide
 
-Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Voici d’autres options de support :
 

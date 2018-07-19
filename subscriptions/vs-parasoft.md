@@ -9,16 +9,16 @@ description: Découvrez comment activer l’abonnement Virtualize/SOA Test Profe
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 75ce02de0f7d534154ac075462484b2fc40f9328
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b03c5a5f47be44f6ae15c0a6d28d7155a37ea34d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199360"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280557"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Avantages de Parasoft Virtualize/SOAtest Professional Desktop dans les abonnements Visual Studio
 
-Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportement de systèmes et applications non disponibles en constante évolution.  Votre avantage comprend un abonnement gratuit de six mois.  À la fin de votre abonnement de six mois, vous pourrez bénéficier d’une remise de 25 % sur le prix d’un abonnement annuel.  
+Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportement de systèmes et applications non disponibles en constante évolution.  Votre avantage comprend un abonnement gratuit de six mois.  À la fin de votre abonnement de six mois, vous pourrez bénéficier d’une remise de 25 % sur le prix d’un abonnement annuel.
 
 
 ## <a name="activation-steps"></a>Étapes d’activation
@@ -29,20 +29,20 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 
     ![Vignette de l’avantage Parasoft](_img\vs-parasoft\vs-parasoft-tile.png)
 
-2.  Vous êtes ensuite redirigé vers le site web Parasoft pour créer un compte.  Entrez simplement vos coordonnées, puis cliquez sur **Envoyer**. 
+2.  Vous êtes ensuite redirigé vers le site web Parasoft pour créer un compte.  Entrez simplement vos coordonnées, puis cliquez sur **Envoyer**.
 
     ![Avantage Parasoft, Créer un compte](_img\vs-parasoft\vs-parasoft-account-cropped.png)
 
 
 3.  Une fois que vous avez créé votre compte, vous voyez s’afficher une notification indiquant qu’un e-mail avec des instructions de téléchargement vous a été envoyé.  (N’oubliez pas de vérifier vos dossiers de courrier indésirable si vous ne trouvez pas cet e-mail dans votre boîte de réception.)
 
-4.  Ouvrez l’e-mail et copiez le **code d’activation** dans le Presse-papiers. 
+4.  Ouvrez l’e-mail et copiez le **code d’activation** dans le Presse-papiers.
 
-5.  Cliquez sur le lien correspondant à votre système d’exploitation.  
+5.  Cliquez sur le lien correspondant à votre système d’exploitation.
 
     ![Avantage Parasoft, E-mail de bienvenue](_img\vs-parasoft\vs-parasoft-email.png)
 
-6.  Selon le navigateur que vous utilisez, vous pouvez voir des boîtes de dialogue différentes qui vous invitent à exécuter le programme d’installation.  Dans Internet Explorer, par exemple, vous verrez une liste des téléchargements récents, en haut de laquelle figure parasoft_soavirt_9.10.2_win32_x86_64.exe. Cliquez sur **Exécuter** pour démarrer le programme d’installation. 
+6.  Selon le navigateur que vous utilisez, vous pouvez voir des boîtes de dialogue différentes qui vous invitent à exécuter le programme d’installation.  Dans Internet Explorer, par exemple, vous verrez une liste des téléchargements récents, en haut de laquelle figure parasoft_soavirt_9.10.2_win32_x86_64.exe. Cliquez sur **Exécuter** pour démarrer le programme d’installation.
 
 7.  Dans la boîte de dialogue Contrôle de compte d’utilisateur qui s’ouvre, cliquez sur **Oui**.
 
@@ -52,21 +52,21 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 
     ![Avantage Parasoft, Démarrage de l’installation](_img\vs-parasoft\vs-parasoft-start-install.png)
 
-10. Cliquez sur **I accept the agreement** (J’accepte le contrat), puis cliquez sur **Next** (Suivant). 
+10. Cliquez sur **I accept the agreement** (J’accepte le contrat), puis cliquez sur **Next** (Suivant).
 
-11. Choisissez l’emplacement où vous souhaitez installer les fichiers, puis cliquez sur **Next** (Suivant). 
+11. Choisissez l’emplacement où vous souhaitez installer les fichiers, puis cliquez sur **Next** (Suivant).
 
-12. Ensuite, vous pouvez choisir d’installer certains composants uniquement, ou de tous les installer (option par défaut).  Effectuez vos sélections et cliquez sur **Next** (Suivant).  
+12. Ensuite, vous pouvez choisir d’installer certains composants uniquement, ou de tous les installer (option par défaut).  Effectuez vos sélections et cliquez sur **Next** (Suivant).
 
-13. Spécifiez où vous voulez installer le raccourci de l’application, puis cliquez sur **Next** (Suivant). 
+13. Spécifiez où vous voulez installer le raccourci de l’application, puis cliquez sur **Next** (Suivant).
 
-14. Le certificat d’autorité de certification racine web SOAtest est obligatoire pour certains tests fonctionnels effectués sur des sites HTTPS.  Choisissez si vous voulez installer le certificat d’autorité de certification racine, puis cliquez sur **Next** (Suivant).  
+14. Le certificat d’autorité de certification racine web SOAtest est obligatoire pour certains tests fonctionnels effectués sur des sites HTTPS.  Choisissez si vous voulez installer le certificat d’autorité de certification racine, puis cliquez sur **Next** (Suivant).
 
     ![Avantage Parasoft, Certificat d’autorité de certification racine](_img\vs-parasoft\vs-parasoft-install-root-ca.png)
 
-15. Choisissez si vous voulez que des icônes de lancement rapide et de Bureau soient créées pendant l’installation, puis cliquez sur **Next** (Suivant). 
+15. Choisissez si vous voulez que des icônes de lancement rapide et de Bureau soient créées pendant l’installation, puis cliquez sur **Next** (Suivant).
 
-16. Confirmez les options que vous avez sélectionnées, puis cliquez sur **Install** (Installer) pour démarrer l’installation du logiciel. 
+16. Confirmez les options que vous avez sélectionnées, puis cliquez sur **Install** (Installer) pour démarrer l’installation du logiciel.
 
     ![Avantage Parasoft, Prêt à installer](_img\vs-parasoft\vs-parasoft-ready-to-install.png)
 
@@ -88,7 +88,7 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 
 ## <a name="support-resources"></a>Ressources de support technique
 -  Besoin d’aide sur les produits Parasoft ?  Consultez les ressources suivantes :
-    - Support technique : https://www.parasoft.com/support/ 
-    - Centre de ressources Parasoft : https://www.parasoft.com/resources/ 
--  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://www.visualstudio.com/support/). 
+    - Support technique : https://www.parasoft.com/support/
+    - Centre de ressources Parasoft : https://www.parasoft.com/resources/
+-  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+-  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

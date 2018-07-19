@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948338"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282226"
 ---
 # <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 
@@ -26,7 +26,7 @@ Vous pouvez éventuellement personnaliser et optimiser votre expérience de dév
 
 Quand vous vous connectez, vous bénéficiez de nombreux avantages supplémentaires dans Visual Studio. Une fois que vous êtes connecté, vous pouvez synchroniser vos paramètres sur tous vos appareils, prolonger une version d’évaluation et vous connecter automatiquement à un service Azure, pour ne citer que quelques exemples.
 
-Voici une liste complète de tous les avantages dont vous pouvez éventuellement bénéficier après votre connexion :  
+Voici une liste complète de tous les avantages dont vous pouvez éventuellement bénéficier après votre connexion :
 
 - **Accédez à Visual Studio Dev Essentials** : ce programme inclut des logiciels gratuits, des formations, un support technique, et plus encore. Voir [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) pour obtenir de plus amples informations.
 
@@ -62,9 +62,9 @@ Après avoir fourni les paramètres, Visual Studio démarre et vous êtes enregi
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-Si vous rencontrez des problèmes pendant la connexion, consultez la [page de support technique des comptes](https://www.visualstudio.com/subscriptions/support/) pour obtenir de l’aide.
+Si vous rencontrez des problèmes pendant la connexion, consultez la [page de support technique des comptes](https://visualstudio.microsoft.com/subscriptions/support/) pour obtenir de l’aide.
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Guide pratique pour déverrouiller Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Guide pratique pour déverrouiller Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Vue d’ensemble de l’IDE Visual Studio](../ide/visual-studio-ide.md)

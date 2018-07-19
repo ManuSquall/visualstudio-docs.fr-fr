@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e50bd5231387261e56a62234858d10c3806de3dc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694067"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282523"
 ---
 # <a name="features-of-visual-studio-2017"></a>Fonctionnalités de Visual Studio 2017
 
@@ -24,7 +24,7 @@ La rubrique [Vue d’ensemble de l’IDE de Visual Studio](../ide/visual-studio-
 
 Le programme d’installation modulaire de Visual Studio vous permet de choisir et d’installer des *charges de travail*, qui sont des groupes de fonctionnalités nécessaires pour le langage de programmation ou la plateforme de votre choix. Cette stratégie permet de réduire l’espace dédié à l’installation de Visual Studio, ce qui implique également une installation et des mises à jour plus rapides.
 
-Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page [Téléchargements Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
 
 Pour en savoir plus sur la configuration de Visual Studio sur votre système, consultez [Installer Visual Studio 2017](../install/install-visual-studio.md).
 
@@ -52,17 +52,17 @@ Les **services connectés** disponibles dépendent du type de votre projet. Ajou
 
 ![Services connectés de Visual Studio](media/connected-services.png)
 
-Pour plus d’informations, consultez [Accéder au cloud avec Visual Studio et Azure](https://www.visualstudio.com/vs/azure-tools/).
+Pour plus d’informations, consultez [Accéder au cloud avec Visual Studio et Azure](https://visualstudio.microsoft.com/vs/azure-tools/).
 
 ## <a name="create-apps-for-the-web"></a>Créer des applications pour le web
 
 Le web est le moteur de notre monde moderne et Visual Studio peut vous aider à écrire des applications conçues pour lui. Vous pouvez créer des applications web à l’aide de ASP.NET, Node.js, Python, JavaScript et TypeScript. Visual Studio comprend les frameworks web, telles que Angular, jQuery, Express et plus encore. ASP.NET Core et .NET Core s’exécutent sur les systèmes d’exploitation Windows, Mac et Linux. [ASP.NET Core](http://www.asp.net/core/overview) est une mise à jour majeure de MVC, WebAPI et SignalR, qui s’exécute sur Windows, Mac et Linux.  ASP.NET Core a été spécialement conçu pour vous fournir une pile .NET adaptée et composable servant à générer des services et des applications web cloud modernes.
 
-Pour plus d’informations, consultez [Outils web modernes](https://www.visualstudio.com/vs/modern-web-tooling/).
+Pour plus d’informations, consultez [Outils web modernes](https://visualstudio.microsoft.com/vs/modern-web-tooling/).
 
 ## <a name="build-cross-platform-apps-and-games"></a>Créer des applications et des jeux multiplateformes
 
-Visual Studio vous permet de générer des applications et des jeux pour les appareils macOS, Linux et Windows, ainsi qu’Android, iOS et d’autres [appareils mobiles](https://www.visualstudio.com/vs/mobile-app-development/).
+Visual Studio vous permet de générer des applications et des jeux pour les appareils macOS, Linux et Windows, ainsi qu’Android, iOS et d’autres [appareils mobiles](https://visualstudio.microsoft.com/vs/mobile-app-development/).
 
 - Générez des applications [.NET Core](/dotnet/core/) qui s’exécutent sur Windows, macOS et Linux.
 
@@ -70,7 +70,7 @@ Visual Studio vous permet de générer des applications et des jeux pour les app
 
 - Utilisez des technologies Web standard&mdash;HTML, CSS et JavaScript&mdash;pour générer des applications mobiles pour iOS, Android et Windows à l’aide de [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 
-- Générez des jeux en 2D et 3D en C# à l’aide de [Visual Studio Tools pour Unity](../cross-platform/visual-studio-tools-for-unity.md).
+- Générez des jeux en 2D et 3D en c# à l’aide de [Visual Studio Tools pour Unity](../cross-platform/visual-studio-tools-for-unity.md).
 
 - Générez des applications C++ natives pour les appareils iOS, Android et Windows et partagez du code commun dans des bibliothèques pour iOS, Android et Windows en utilisant [C++ pour le développement multiplateforme](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
 
@@ -122,7 +122,7 @@ Vous pouvez utiliser « Roslyn » (.NET Compiler Platform) pour écrire vos prop
 
 Découvrez les [extensions existantes](https://marketplace.visualstudio.com/vs) pour Visual Studio créées par des développeurs Microsoft et notre communauté de développement.
 
-Pour en savoir plus sur l’extension de Visual Studio, consultez [Étendre l’IDE de Visual Studio](https://www.visualstudio.com/vs/extend/).
+Pour en savoir plus sur l’extension de Visual Studio, consultez [Étendre l’IDE de Visual Studio](https://visualstudio.microsoft.com/vs/extend/).
 
 ## <a name="see-also"></a>Voir aussi
 

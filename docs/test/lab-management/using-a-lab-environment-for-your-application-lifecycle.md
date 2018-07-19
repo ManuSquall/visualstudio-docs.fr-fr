@@ -1,6 +1,7 @@
 ---
-title: Utiliser un environnement lab pour DevOps dans Visual Studio | Microsoft Docs
+title: Utiliser un environnement lab pour DevOps dans Visual Studio
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 63fb02f0133055611ef18bbf9d5fe7888df7473f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844301"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Utiliser un environnement lab pour votre DevOps
 
@@ -34,8 +36,8 @@ Voici quelques-unes des topologies d’environnements lab les plus courantes :
 |![Environnement lab cloud](../media/topology_cloud.png)| Cet environnement lab fournit des fonctionnalités similaires, ainsi que des fonctionnalités comme la _topologie de type serveur_, mais élimine l’obligation pour les machines physiques ou virtuelles de s’exécuter dans un environnement local, ce qui peut réduire les temps d’installation, simplifier la maintenance et réduire les coûts. La configuration de plusieurs sites web et plusieurs machines virtuelles en même temps qu’une mise en réseau personnalisée est rapide et facile dans un environnement cloud comme Microsoft Azure.|
 |![Environnement lab du client serveur](../media/topology_clientserver.png)| Cet environnement lab a une *topologie de type client-serveur*, qui est souvent utilisée pour tester une application comprenant à la fois des composants serveur et client. Dans une topologie de type client/serveur, tous les ordinateurs clients et serveurs utilisés pour tester l'application se trouvent dans l'environnement lab. Cette topologie vous permet de collecter des données de test sur tous les ordinateurs concernés par vos tests.|
 
-|         |         |
-|---------|---------|
+|   |   |
+|---|---|
 |  ![Icône représentant une caméra pour les vidéos](../../install/media/video-icon.png)  |    [Regardez une vidéo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sur la gestion des environnements lab en vue de tests. |
 
 ## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Utiliser le cloud avec Build ou Mise en production de Team Services ou Team Foundation Server

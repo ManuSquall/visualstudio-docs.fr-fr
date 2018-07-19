@@ -1,6 +1,7 @@
 ---
-title: Génération de tests | Outil de test Microsoft IntelliTest pour les développeurs | Microsoft Docs
+title: Génération de tests | Outil de test Microsoft IntelliTest pour les développeurs
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +11,24 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 259ff0818cebde6d7c603428c6cdb88cd51ca293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2eab01a560cebb3bed644df044fcee0af4039ffb
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815020"
 ---
 # <a name="test-generation"></a>Génération de tests
 
-Dans les tests unitaires traditionnels, plusieurs ingrédients sont nécessaires pour établir un test :
+Dans les tests unitaires traditionnels, un test se compose de plusieurs choses :
 
-```
+* Une [séquence d’appels de méthode](test-generation.md#test-generators)
+* Les arguments avec lesquels les méthodes sont appelées ; les arguments sont les [entrées du test](input-generation.md).
+* La validation du comportement prévu de l’application testée en établissant un ensemble [d’assertions](#assumptions-and-assertions)
+
+Voici un exemple de structure de test :
+
+```csharp
 [Test]
 void MyTest() {
     // data
@@ -34,12 +42,6 @@ void MyTest() {
     Assert.AreEqual(a[0], 5);
 }
 ```
-
-Le test se compose de différents aspects :
-
-* Il établit une [séquence d’appels de méthode](test-generation.md#test-generators).
-* Il établit les arguments avec lesquels les méthodes sont appelées ; les arguments sont les [entrées du test](input-generation.md).
-* Il vérifie le comportement prévu de l’application testée en établissant un ensemble d’[assertions](#assumptions-and-assertions).
 
 IntelliTest peut souvent déterminer automatiquement les valeurs appropriées des arguments pour des [tests unitaires paramétrables](#parameterized-unit-testing) plus généraux, qui fournissent la séquence des appels de méthode et des assertions.
 
@@ -59,7 +61,7 @@ Les *tests unitaires paramétrables* sont des tests qui prennent des paramètres
 
 Les tests unitaires paramétrables sont définis à l’aide de l’attribut personnalisé [PexMethod](attribute-glossary.md#pexmethod), d’une façon similaire à MSTest (ou NUnit ou xUnit). Les tests unitaires paramétrables sont regroupés logiquement dans des classes marquées avec [PexClass](attribute-glossary.md#pexclass). L’exemple suivant montre un test unitaire paramétrable simple stocké dans la classe **MyPexTest** :
 
-```
+```csharp
 [PexMethod]
 void ReplaceFirstChar(string target, char c) {
 
@@ -71,7 +73,7 @@ void ReplaceFirstChar(string target, char c) {
 
 où **ReplaceFirstChar** est une méthode qui remplace le premier caractère d’une chaîne :
 
-```
+```csharp
 class StringHelper {
     static string ReplaceFirstChar(string target, char c) {
         if (target == null) throw new ArgumentNullException();
@@ -83,7 +85,7 @@ class StringHelper {
 
 À partir de ce test, IntelliTest peut automatiquement [générer des entrées](input-generation.md) pour un test unitaire paramétrable qui couvre de nombreux chemins d’exécution du code testé. Chaque entrée couvrant un chemin d’exécution différent est « sérialisé » sous forme de test unitaire :
 
-```
+```csharp
 [TestMethod, ExpectedException(typeof(ArgumentNullException))]
 void ReplaceFirstChar0() {
     this.ReplaceFirstChar(null, 0);
@@ -100,7 +102,7 @@ void ReplaceFirstChar10() {
 
 Les tests unitaires paramétrables peuvent être des méthodes génériques. Dans ce cas, l’utilisateur doit spécifier les types utilisés pour instancier la méthode en utilisant [PexGenericArguments](attribute-glossary.md#pexgenericarguments).
 
-```
+```csharp
 [PexClass]
 public partial class ListTest {
     [PexMethod]
@@ -118,7 +120,7 @@ IntelliTest fournit de nombreux attributs de validation pour aider au triage des
 
 Les exceptions attendues génèrent des cas de test négatifs avec l’annotation appropriée, par exemple **ExpectedException(typeof(*xxx*))**, alors que les exceptions inattendues génèrent des cas de test non réussis.
 
-```
+```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
 void SomeTest() {...}
 ```
@@ -135,7 +137,7 @@ Les validateurs sont :
 
 IntelliTest peut « tester » des types internes dès lors qu’il peut les voir. Pour qu’IntelliTest voie les types, l’attribut suivant est ajouté à votre produit ou votre projet de test par les Assistants IntelliTest de Visual Studio :
 
-```
+```csharp
 [assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
 ```
 
@@ -146,7 +148,7 @@ Les utilisateurs peuvent utiliser des hypothèses et des assertions pour exprime
 
 Les assertions sont un concept bien connu dans les frameworks de tests unitaires standard : IntelliTest « comprend » donc déjà les classes **Assert** prédéfinies fournies par chaque framework de test pris en charge. Cependant, la plupart des frameworks ne fournissent pas de classe **Assume**. Dans ce cas, IntelliTest fournit la classe [PexAssume](static-helper-classes.md#pexassume). Si vous ne voulez pas utiliser un framework de tests, IntelliTest a également la classe [PexAssert](static-helper-classes.md#pexassert).
 
-```
+```csharp
 [PexMethod]
 public void Test1(object o) {
     // precondition: o should not be null
@@ -158,7 +160,7 @@ public void Test1(object o) {
 
 En particulier, l’hypothèse de non-égalité à Null peut être encodée comme attribut personnalisé :
 
-```
+```csharp
 [PexMethod]
 public void Test2([PexAssumeNotNull] object o)
 // precondition: o should not be null
@@ -204,7 +206,7 @@ Dans le cadre de l’intégration à des frameworks de tests, IntelliTest prend 
 
 **Exemple**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 using NUnit.Framework;
 
@@ -243,4 +245,4 @@ namespace MyTests
 
 ## <a name="got-feedback"></a>Vous avez des commentaires ?
 
-Postez vos idées et demandes de fonctionnalités sur **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Postez vos idées et demandes de fonctionnalités sur [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f124ccc0a4eb7af470a9631bc2291dbeb089711e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4cfc5c90e8fbc1a08eddaab2fad3bca1ba16a414
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951789"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924264"
 ---
 # <a name="visual-studio-commands"></a>Commandes Visual Studio
 Les commandes Visual Studio vous permettent d’appeler une commande depuis la fenêtre **Commande** , depuis la fenêtre **Exécution** ou depuis la zone **Rechercher/Commande** . Dans chaque cas, le signe Supérieur à (`>`) est utilisé pour indiquer qu’une commande doit suivre, et non pas une opération de recherche ou de débogage.
@@ -61,7 +61,6 @@ Les commandes Visual Studio vous permettent d’appeler une commande depuis la f
 |[Nouveau fichier](../../ide/reference/new-file-command.md)|Crée un fichier et l’ajoute au projet actuellement sélectionné.|
 |[Ouvrir un fichier](../../ide/reference/open-file-command.md)|Ouvre un fichier existant et vous permet de spécifier un éditeur.|
 |[Ouvrir un projet](../../ide/reference/open-project-command.md)|Ouvre un projet existant et vous permet de l’ajouter à la solution actuelle.|
-|[Ouvrir une solution](../../ide/reference/open-solution-command.md)|Ouvre une solution existante.|
 |[Imprimer](../../ide/reference/print-command.md)|Évalue l’expression, et affiche le résultat ou le texte spécifié.|
 |[Espion express, commande](../../ide/reference/quick-watch-command.md)|Affiche le texte sélectionné ou spécifié dans le champ **Expression** de la boîte de dialogue **Espion instantané** .|
 |[Remplacer](../../ide/reference/replace-command.md)|Remplace du texte dans des fichiers en utilisant un sous-ensemble des options disponibles sur le contrôle **Rechercher et remplacer** .|

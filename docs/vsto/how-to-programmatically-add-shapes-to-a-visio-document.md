@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ajouter par programmation des formes à un Document Visio | Documents Microsoft'
+title: 'Comment : ajouter par programmation des formes à un document Visio'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1cc4369977e1989960fe9448d4dd7d56e67ed7a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32fc1b61505711cbcf353819372bcd1452bf3716
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256667"
 ---
-# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Comment : ajouter des formes à un document Visio par programmation
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Comment : ajouter par programmation des formes à un document Visio
   Vous pouvez ajouter des formes à un document Microsoft Office Visio en récupérant les formes de base d’un gabarit et en déplaçant les formes sur la page active.  
   
  Pour plus d’informations, consultez la documentation de référence de VBA pour la méthode [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) , la propriété [Microsoft.Office.Interop.Visio.Application.ActivePage](http://msdn.microsoft.com/library/office/ff765484.aspx) et la méthode [Microsoft.Office.Interop.Visio.Page.Drop](http://msdn.microsoft.com/library/office/ff765054.aspx) .  
   
-## <a name="adding-shapes-to-a-visio-document"></a>Ajout de formes à un document Visio  
+## <a name="add-shapes-to-a-visio-document"></a>Ajouter des formes à un Visio Document  
   
-#### <a name="to-add-shapes-to-a-visio-document"></a>Pour ajouter des formes à un document Visio  
+### <a name="to-add-shapes-to-a-visio-document"></a>Pour ajouter des formes à un document Visio  
   
 -   Dans un document actif, récupérez les formes de base de la collection Documents.Masters et déplacez les formes sur celui-ci. Vous pouvez récupérer une forme de base à l’aide du nom de l’index ou de la forme de base.  
   
@@ -40,8 +41,8 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Solutions Visio](../vsto/visio-solutions.md)   
- [Vue d’ensemble du modèle objet Visio](../vsto/visio-object-model-overview.md)   
- [Utilisation des formes Visio](../vsto/working-with-visio-shapes.md)   
- [Guide pratique pour copier et coller des formes dans un document Visio par programmation](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
+ [Présentation du modèle objet de Visio](../vsto/visio-object-model-overview.md)   
+ [Utilisez des formes Visio](../vsto/working-with-visio-shapes.md)   
+ [Comment : copier et coller des formes dans un document Visio par programme](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
   
   

@@ -9,12 +9,12 @@ description: Découvrez l’avantage Office 365 Développeur inclus dans votre 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3f97d5b3d704c65ba0f18f653a1554c47175a09c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d7bd3c76bc92bd10b7ec7a814fb4819f48b5c4b
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199866"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280544"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Avantage de l’abonnement Office 365 Développeur dans les abonnements Visual Studio
 
@@ -26,21 +26,21 @@ Les abonnés avec des abonnements Visual Studio Enterprise sélectionnés reçoi
 
 2. En fonction de votre compte, vous êtes redirigé vers la page de connexion de votre organisation ou vers la page de connexion du compte Microsoft.   Dans les deux cas, entrez votre nom d’utilisateur et votre mot de passe, puis cliquez sur **Suivant**.
 
-3. Une fois le processus de connexion terminé, la page des avantages des abonnements est normalement affichée.  Si vous avez plusieurs abonnements, vous pouvez basculer entre les abonnements en cliquant sur la flèche déroulante dans le coin supérieur droit, sous le ruban noir.  La vignette de l’avantage Abonnement Office 365 Développeur se trouve dans la catégorie Outils.  Utilisez la flèche à droite de la ligne de vignettes pour faire défiler jusqu’à ce que la vignette Office soit visible. 
+3. Une fois le processus de connexion terminé, la page des avantages des abonnements est normalement affichée.  Si vous avez plusieurs abonnements, vous pouvez basculer entre les abonnements en cliquant sur la flèche déroulante dans le coin supérieur droit, sous le ruban noir.  La vignette de l’avantage Abonnement Office 365 Développeur se trouve dans la catégorie Outils.  Utilisez la flèche à droite de la ligne de vignettes pour faire défiler jusqu’à ce que la vignette Office soit visible.
 
-4. Recherchez la vignette de l’abonnement Office 365 Développeur dans la section Outils.  Cliquez sur le lien **Obtenir un code** en bas de la vignette de l’avantage.   Une fois le code récupéré, cliquez sur **Activer**. 
+4. Recherchez la vignette de l’abonnement Office 365 Développeur dans la section Outils.  Cliquez sur le lien **Obtenir un code** en bas de la vignette de l’avantage.   Une fois le code récupéré, cliquez sur **Activer**.
 
     ![Vignette Avantage Office 365 Développeur](_img\vs-office-dev\vs-office-dev-tile.png)
 
-5.  L’étape suivante consiste à créer un compte.  Entrez vos informations de contact, puis cliquez sur **Suivant**. 
+5.  L’étape suivante consiste à créer un compte.  Entrez vos informations de contact, puis cliquez sur **Suivant**.
 
     ![Compte Avantage Office 365 Développeur](_img\vs-office-dev\vs-office-dev-account-cropped.png)
 
-6.  Spécifiez les informations demandées sur l’endroit où vous voulez utiliser l’abonnement, puis cliquez sur **Suivant**.  Les informations sont utilisées pour déterminer la disponibilité de l’abonnement et les taxes applicables.  
+6.  Spécifiez les informations demandées sur l’endroit où vous voulez utiliser l’abonnement, puis cliquez sur **Suivant**.  Les informations sont utilisées pour déterminer la disponibilité de l’abonnement et les taxes applicables.
 
     ![Avantage Office 365 Développeur : Informations de contact](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
 
-7.  Créez le nom d’utilisateur et le mot de passe pour votre compte.  
+7.  Créez le nom d’utilisateur et le mot de passe pour votre compte.
 
     ![Avantage Office 365 Développeur : Nom d’utilisateur](_img\vs-office-dev\vs-office-dev-username-cropped.png)
 
@@ -48,16 +48,16 @@ Les abonnés avec des abonnements Visual Studio Enterprise sélectionnés reçoi
 
 9.  À ce stade, vous pouvez être invité à vous connecter.  Si plusieurs comptes apparaissent sur la page de connexion d’Office 365, choisissez le compte que vous avez associé à cet abonnement.
 
-10. La page suivante confirme que votre abonnement est disponible pour vous gratuitement.  Cliquez sur **Suivant** pour continuer.  
+10. La page suivante confirme que votre abonnement est disponible pour vous gratuitement.  Cliquez sur **Suivant** pour continuer.
 
     ![Avantage Office 365 Développeur : Apparence](_img\vs-office-dev\vs-office-dev-price.png)
 
-11. Lors de la finalisation de « l’étape 3 », vous devez sélectionner une « Méthode de paiement ».  Deux options de paiement sont disponibles.  La première option consiste à ajouter une **Carte de crédit** (comme illustré ci-dessous) ; la deuxième option est **Facture**.  Dans les deux cas, une commande de 0,00 $ est envoyée quand vous cliquez sur **Passer une commande**.   
+11. Lors de la finalisation de « l’étape 3 », vous devez sélectionner une « Méthode de paiement ».  Deux options de paiement sont disponibles.  La première option consiste à ajouter une **Carte de crédit** (comme illustré ci-dessous) ; la deuxième option est **Facture**.  Dans les deux cas, une commande de 0,00 $ est envoyée quand vous cliquez sur **Passer une commande**.
 
     > [!NOTE]
     > Les abonnés qui ne souhaitent pas fournir de carte de crédit peuvent sélectionner la méthode de paiement **Facture**.  Vous pouvez également sélectionner **Payer à l’année** pour ne recevoir qu’une seule facture chaque année.
 
-12. À ce stade, vous avez échangé votre avantage Abonnement Office 365 Développeur.  Vous voyez une page confirmant votre commande.  La page contient un lien pour accéder à la [page de connexion](https://portal.office.com "Page de connexion Office 365").  Nous vous recommandons de créer un signet pour la page, pour une utilisation ultérieure.  Il est également recommandé de noter l’ID utilisateur indiqué dans la page.  (Vous recevez aussi un e-mail de bienvenue à l’adresse que vous avez fournie lors de la configuration du compte.)  Cliquez sur **Démarrer la configuration** pour continuer.  
+12. À ce stade, vous avez échangé votre avantage Abonnement Office 365 Développeur.  Vous voyez une page confirmant votre commande.  La page contient un lien pour accéder à la [page de connexion](https://portal.office.com "Page de connexion Office 365").  Nous vous recommandons de créer un signet pour la page, pour une utilisation ultérieure.  Il est également recommandé de noter l’ID utilisateur indiqué dans la page.  (Vous recevez aussi un e-mail de bienvenue à l’adresse que vous avez fournie lors de la configuration du compte.)  Cliquez sur **Démarrer la configuration** pour continuer.
 
     ![Avantage Office 365 Développeur : Commande confirmée](_img\vs-office-dev\vs-office-dev-confirm.png)
 
@@ -73,7 +73,7 @@ Les abonnés avec des abonnements Visual Studio Enterprise sélectionnés reçoi
 
 <sup>1</sup> *Inclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, BizSpark, MCT Software & Services Developer, MCT Software & Services.  Exclut : MPN (Microsoft Partner Network), Imagine, MVP (Microsoft Valued Partner), RD (Region Director).*
 
-Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="frequently-asked-questions"></a>FAQ
 
@@ -90,7 +90,7 @@ R : Configuration de l’avantage de l’abonnement Office 365 Développeur
     ![Avantage Office 365 Développeur : Centre d’administration](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
 
 
-3.  L’étape 2 permet aux administrateurs d’ajouter des utilisateurs au compte Office 365.  Ajoutez les utilisateurs souhaités, puis cliquez sur **Suivant**.  
+3.  L’étape 2 permet aux administrateurs d’ajouter des utilisateurs au compte Office 365.  Ajoutez les utilisateurs souhaités, puis cliquez sur **Suivant**.
 
 4.  L’étape 3 vous permet d’installer vos applications Office.  Vous pouvez choisir d’installer maintenant ou ultérieurement.  Pour installer Office Professionnel Plus ou Skype Entreprise, cliquez simplement sur un des boutons **Installer maintenant** correspondants.  Votre abonnement Office 365 ProPlus inclut :
     - Word
@@ -103,18 +103,18 @@ R : Configuration de l’avantage de l’abonnement Office 365 Développeur
     - Skype Entreprise
     - OneDrive Entreprise
 
-5.  Choisissez votre langue préférée et cliquez sur **Installer**. 
+5.  Choisissez votre langue préférée et cliquez sur **Installer**.
 
     ![Avantage Office 365 Développeur : Installer des applications](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
 
 6. Cliquez sur **Exécuter** pour commencer l’installation immédiatement, ou cliquez sur **Enregistrer** pour enregistrer le package d’installation sur votre PC et installer plus tard.
 
-7.  Quand la boîte de dialogue Contrôle de compte d’utilisateur s’affiche, cliquez sur **Oui** pour autoriser l’installation d’Office sur votre ordinateur.  
+7.  Quand la boîte de dialogue Contrôle de compte d’utilisateur s’affiche, cliquez sur **Oui** pour autoriser l’installation d’Office sur votre ordinateur.
 
 
 ### <a name="q-how-do-i-update-the-number-of-users-from-the-office-365-admin-portal"></a>Q : Comment puis-je mettre à jour le nombre d’utilisateurs dans le portail d’administration d’Office 365 ?
-R : Si vous n’avez pas attribué le nombre nécessaire d’utilisateurs pendant le processus d’échange et si vous voulez augmenter ce nombre à un moment ultérieur, procédez comme suit. 
+R : Si vous n’avez pas attribué le nombre nécessaire d’utilisateurs pendant le processus d’échange et si vous voulez augmenter ce nombre à un moment ultérieur, procédez comme suit.
 
 1. Pour augmenter le nombre d’utilisateurs une fois le processus d’échange effectué, vous devez accéder à [https://portal.office.com](https://portal.office.com) et vous connecter avec l’« identifiant utilisateur » obtenu durant les étapes de création du locataire.
 
@@ -136,5 +136,5 @@ R : Si vous n’avez pas attribué le nombre nécessaire d’utilisateurs pendan
 
 ## <a name="support-resources"></a>Ressources de support technique
 -  Besoin d’aide avec votre abonnement Office Développeur ? Consultez les ressources de [support](https://developer.microsoft.com/office/support) du [Centre de développement Office](https://developer.microsoft.com/office).
--  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://www.visualstudio.com/support/). 
+-  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+-  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

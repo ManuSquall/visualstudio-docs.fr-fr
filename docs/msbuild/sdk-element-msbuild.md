@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e22233d58cdb02194b5d5efe21bc397e9ae3a9c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3d674e7613898816f905e0d0a11bdc2484cf4f25
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568043"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325321"
 ---
 # <a name="sdk-element-msbuild"></a>Élément Sdk (MSBuild)
 Référence un kit SDK de projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -35,7 +35,7 @@ Référence un kit SDK de projet [!INCLUDE[vstecmsbuild](../extensibility/intern
 
 ## <a name="syntax"></a>Syntaxe  
 
-```  
+```xml  
 <Sdk Name="My.Custom.Sdk"
      Version="1.0.0" />  
 ```  

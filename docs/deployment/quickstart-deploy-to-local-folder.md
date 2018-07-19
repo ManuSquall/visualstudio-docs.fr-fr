@@ -1,7 +1,7 @@
 ---
-title: Déployer vers un dossier local - Visual Studio | Documents Microsoft
+title: Déployer sur un dossier local
 ms.custom: ''
-ms.date: 05/08/2018
+ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,67 +12,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 016538bded47a5186294c161cc7f310b26818d15
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 517698aa2e042d74138579dae3633930b338cd61
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764217"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38781911"
 ---
-# <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Déployer une application web ou .NET Core vers un dossier local à l’aide de l’outil de publication de Visual Studio
+# <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Déployer une application dans un dossier local à l’aide de Visual Studio
 
-Vous pouvez utiliser l'outil de **publication** pour publier votre application vers un dossier local.  
+Vous pouvez utiliser la **publier** outil pour publier des applications ASP.NET, ASP.NET Core, .NET Core et Python dans un dossier local à partir de Visual Studio. Pour Node.js, les étapes sont pris en charge, mais l’interface utilisateur est différente.
 
-Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core, .NET Core et Python dans Visual Studio. Pour Node.js, les étapes sont prises en charge, mais l’interface utilisateur est différente. Pour Node.js, les étapes sont pris en charge, mais l’interface utilisateur est différent.
-
-## <a name="prerequisites"></a>Prérequis
-
-* Vous devez disposer de Visual Studio 2017 installé et le. **Développement Bureau NET** la charge de travail et. **NET Core** la charge de travail.
-
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
-
-## <a name="create-a-new-project"></a>Créer un nouveau projet 
-
-1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
-
-1. Sous **Visual C#** ou **Visual Basic**, choisissez **.NET Core**, puis, dans le volet central **l’application Console (.NET Core)**.
-
-1. Tapez un nom tel que **MonApplicationLocale** et cliquez sur **OK**.
-
-    Visual Studio crée le projet.
+[!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 ## <a name="deploy-to-a-local-folder"></a>Déployer sur un dossier local
 
-1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**.
+1. Dans l’Explorateur de solutions, cliquez sur le projet et choisissez **publier** (ou utilisez le **Build** > **publier** élément de menu).
 
-    ![Choisissez publier](../deployment/media/quickstart-publish.png "choisissez Publier")
+    ![La commande Publier sur le menu contextuel du projet dans l’Explorateur de solutions](../deployment/media/quickstart-publish.png "choisissez Publier")
 
-1. Si vous avez déjà configuré des profils de publication, le **publier** volet s’affiche. Cliquez sur **créer nouveau profil**.
+1. Si vous avez déjà configuré des profils de publication, le **publier** volet s’affiche. Sélectionnez **créer nouveau profil**.
 
-1. Dans le **choisir une cible de publication** boîte de dialogue, choisissez **dossier**.
+1. Dans le **choisir une cible de publication** boîte de dialogue, sélectionnez **dossier**.
 
-    ![Choisissez le dossier](../deployment/media/quickstart-publish-folder.png "dossier")
+    ![Choisir un dossier local comme un cibles de publication](../deployment/media/quickstart-publish-folder.png "choisir un dossier")
 
-1. Entrez un chemin d’accès ou cliquez sur **Parcourir** pour accéder à un dossier local.
+1. Entrez un chemin d’accès ou sélectionnez **Parcourir** pour spécifier un dossier local.
 
-1. Cliquez sur **Publier**.
+1. Sélectionnez **Publier**. Visual Studio génère le projet et le publie dans le dossier spécifié. Les propriétés du projet **publier** volet apparaît, affichant un profil de résumé.
 
-    Visual Studio génère le projet et le publie dans le dossier spécifié.
+    ![Publier le volet des propriétés affichant un profil de résumé](../deployment/media/quickstart-publish-folder-summary.png)
 
-    Le volet Publier affiche un résumé du profil.
+1. Pour configurer les paramètres de déploiement, sélectionnez **configurer** dans le profil de résumé et sélectionnez le **paramètres** onglet.
 
-1. Pour configurer les paramètres de déploiement, cliquez sur **Paramètres** dans le résumé du profil.
+    ![Paramètres de profil](../deployment/media/quickstart-profile-settings.png "paramètres de profil")
 
-    ![Paramètres de profil](../deployment/media/quickstart-profile-settings.png "paramètres de profil") 
+1. Configurer des options comme s’il faut déployer une configuration Debug ou Release, puis sélectionnez **enregistrer**.
 
-1. Configurez des options telles que la configuration de déploiement Debug ou Release, puis cliquez sur **Enregistrer**.
+1. Pour publier à nouveau, sélectionnez **publier**.
 
-1. Pour publier à nouveau, cliquez sur **publier**.
-
-Déployez les fichiers publiés de la façon qui vous convient. Par exemple, vous pouvez les empaqueter dans un fichier Zip, utiliser une simple commande `copy`, ou les déployer avec le package d’installation de votre choix.
+Déployez les fichiers publiés de la façon qui vous convient. Par exemple, vous pouvez les empaqueter dans un *.zip* de fichiers, utilisez une commande de copie simple ou les déployer avec n’importe quel package d’installation de votre choix.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Déployer une application .NET Core avec l’outil de publication](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Empaqueter une application de bureau pour Microsoft Store (pont de bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- (.NET) [Déployer le .NET Framework et les applications en cours...](/dotnet/framework/deployment/)
+- (.NET) [Déployer des applications et du .NET Framework](/dotnet/framework/deployment/)
