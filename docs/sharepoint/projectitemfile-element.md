@@ -1,5 +1,5 @@
 ---
-title: ProjectItemFile (élément) | Documents Microsoft
+title: ProjectItemFile, élément | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 60ae46f981bc0377c93f1e00d09094604b5d776c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0b66849f9df9ed4de7725bca842c38f4f5a52582
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694002"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119218"
 ---
-# <a name="projectitemfile-element"></a>ProjectItemFile, élément
-  Représente un fichier de SharePoint, comme fichier d’élément de fonctionnalité, à inclure avec l’élément de projet lorsqu’il est déployé dans SharePoint.  
+# <a name="projectitemfile-element"></a>ProjectItemFile (élément)
+  Représente un fichier SharePoint, par exemple de fichier d’élément de fonctionnalité, à inclure avec l’élément de projet lorsqu’elle est déployée vers SharePoint.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,7 +36,7 @@ ms.locfileid: "34694002"
 ## <a name="type"></a>Type  
  **ProjectItemFileType**  
   
-## <a name="attributes-and-elements"></a>Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
@@ -44,31 +44,30 @@ ms.locfileid: "34694002"
 |Attribut|Description|  
 |---------------|-----------------|  
 |**Source**|Requis **xs : String** attribut.<br /><br /> Le nom du fichier à déployer avec l’élément de projet.|  
-|**Target**|Facultatif **xs : String** attribut.<br /><br /> Le chemin d’accès où le fichier sera déployé dans SharePoint, relatif au dossier racine de déploiement. Dossier racine de déploiement est déterminé par le type de déploiement spécifié par le **Type** attribut. Si le **cible** attribut n’est pas spécifié, le fichier sera déployé dans un dossier portant le nom spécifié dans le **Source** attribut.<br /><br /> Pour plus d’informations, consultez les descriptions pour le **le chemin de déploiement** et **racine du déploiement** propriétés de SharePoint dans les éléments de projet [développement de Solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Type**|Requis **xs : String** attribut.<br /><br /> Le type de déploiement pour le fichier. Pour plus d’informations sur les valeurs possibles, consultez la description de la **Type de déploiement** propriété des éléments de projet SharePoint dans [développement de Solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Target**|Facultatif **xs : String** attribut.<br /><br /> Le chemin d’accès où le fichier sera déployé sur SharePoint, relatif au dossier racine de déploiement. Le dossier racine de déploiement est déterminé par le type de déploiement spécifié par le **Type** attribut. Si le **cible** attribut n’est pas spécifié, le fichier sera déployé dans un dossier portant le nom spécifié dans le **Source** attribut.<br /><br /> Pour plus d’informations, consultez les descriptions pour le **Deployment Path** et **Deployment Root** propriétés de SharePoint éléments de projet des [SharePoint de développer des solutions](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Type**|Requis **xs : String** attribut.<br /><br /> Le type de déploiement pour le fichier. Pour plus d’informations sur les valeurs possibles, consultez la description de la **Type de déploiement** propriété des éléments de projet SharePoint dans [SharePoint de développer des solutions](../sharepoint/developing-sharepoint-solutions.md).|  
   
-### <a name="child-elements"></a>Éléments enfants  
+### <a name="child-elements"></a>Éléments enfants
  Aucun.  
   
-### <a name="parent-elements"></a>Éléments parents  
+### <a name="parent-elements"></a>Éléments parents
   
 |Élément|Description|  
 |-------------|-----------------|  
 |[Fichiers](../sharepoint/files-element.md)|Spécifie les fichiers à inclure avec l’élément de projet SharePoint lorsqu’elle est déployée vers SharePoint.|  
   
 ## <a name="remarks"></a>Notes  
- Les fichiers SharePoint généralement référencés dans **ProjectItemFile** éléments incluent des fichiers d’éléments de fonctionnalité (Elements.xml), des fichiers de schéma pour les définitions de listes (Schema.xml) et des fichiers de définition de composant WebPart des composants WebPart (.webpart).  
+ Les fichiers SharePoint qui sont en général référencés dans **ProjectItemFile** éléments incluent des fichiers d’éléments de fonctionnalité (*Elements.xml*), les fichiers de schéma pour les définitions de liste (*Schema.xml*) et les fichiers de définition de composant WebPart de composants WebPart (*.webpart*).  
   
-## <a name="element-information"></a>Informations sur les éléments  
+## <a name="element-information"></a>Informations sur les éléments
   
 |||  
 |-|-|  
 |**Espace de noms**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
-|**Nom du schéma**|Schéma d’élément de projet SharePoint|  
+|**Nom de schéma**|Schéma d’élément de projet SharePoint|  
 |**Fichier de validation**|ProjectItemModelSchema.xsd|  
-|**Peut être vide.**|Non|  
+|**Peut être vide**|Non|  
   
-## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur le schéma d’élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  
+## <a name="see-also"></a>Voir aussi
+ [Référence de schéma élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   

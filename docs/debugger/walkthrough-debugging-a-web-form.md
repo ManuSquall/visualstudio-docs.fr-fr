@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Débogage d’un formulaire Web | Documents Microsoft'
+title: 'Procédure pas à pas : Débogage d’un formulaire Web | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22fd6f033dd76e15311912256bc0597dfc3260c6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fe3b8333f116ea5606a354dd9d0f88f111077a1b
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480330"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057172"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Procédure pas à pas : débogage d'un formulaire Web
 Les étapes de cette procédure pas à pas vous expliquent comment déboguer une application Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], également connue sous le nom de Web Form. Il vous montre comment démarrer et arrêter l’exécution, définir des points d’arrêt et examiner des variables dans le **espion** fenêtre.  
@@ -43,13 +43,13 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
 1.  Si une solution est déjà ouverte, fermez-la.  
   
-2.  Sur le **fichier** menu, cliquez sur **nouveau**, puis cliquez sur **Site Web**.  
+2.  Sur le **fichier** menu, cliquez sur **New**, puis cliquez sur **Site Web**.  
   
      Le **nouveau Site Web** boîte de dialogue s’affiche.  
   
 3.  Dans le **modèles** volet, cliquez sur **Site Web ASP.NET**.  
   
-4.  Sur le **emplacement** de ligne, cliquez sur **HTTP** dans la liste et dans la zone de texte, tapez **http://localhost/WebSite**.  
+4.  Sur le **emplacement** ligne, cliquez sur **HTTP** dans la liste et dans la zone de texte, tapez **http://localhost/WebSite**.  
   
 5.  Dans le **langage** , cliquez sur **Visual C#** ou **Visual Basic**.  
   
@@ -57,15 +57,15 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crée un projet et affiche le code source HTML par défaut. Il crée également un nouveau répertoire virtuel nommé **site Web** sous **Site Web par défaut** dans IIS.  
   
-7.  Cliquez sur le **conception** onglet dans la marge inférieure.  
+7.  Cliquez sur le **conception** onglet sur la marge inférieure.  
   
 8.  Cliquez sur le **boîte à outils** onglet dans la marge gauche ou sélectionnez-le dans la **vue** menu.  
   
      La **Boîte à outils** s'ouvre.  
   
-9. Dans le **boîte à outils**, cliquez sur le **bouton** de contrôle et l’ajouter à l’aire de conception principale, Default.aspx.  
+9. Dans le **boîte à outils**, cliquez sur le **bouton** contrôler et ajoutez-le à l’aire de conception principale, Default.aspx.  
   
-10. Dans le **boîte à outils**, cliquez sur le **Textbox** contrôler et faites glisser le contrôle sur l’aire de conception principale, Default.aspx.  
+10. Dans le **boîte à outils**, cliquez sur le **zone de texte** contrôler et faites glisser le contrôle vers l’aire de conception principale, Default.aspx.  
   
 11. Double-cliquez sur le contrôle Button que vous avez déposé.  
   
@@ -73,11 +73,11 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
 12. Dans la fonction `Button1_Click`, ajoutez le code suivant :  
   
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
   
-    // C#  
+    ```csharp
     TextBox1.Text = "Button was clicked!";  
     ```  
   
@@ -91,15 +91,15 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
 1.  Dans la fenêtre Default.aspx.cs ou Default.aspx.vb, cliquez sur la marge gauche de la ligne sur laquelle vous avez ajouté le texte :  
   
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
-  
-    // C#  
+
+    ```csharp  
     textBox1.Text = "Button was clicked!";  
     ```  
   
-     Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer. Pour plus d’informations, consultez [points d’arrêt](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer. Pour plus d’informations, consultez [des points d’arrêt](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2.  Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.  
   
@@ -117,17 +117,13 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
      Le **espion** fenêtre affiche la valeur de la variable `TextBox1.Text`:  
   
-    ```  
-    ""  
-    ```  
+    '""' 
   
 7.  Sur le **déboguer** menu, cliquez sur **pas à pas principal**.  
   
      La valeur de `TextBox1.Text` change dans le **espion** fenêtre à lire :  
   
-    ```  
-    "Button was clicked!"  
-    ```  
+    `"Button was clicked!"`  
   
 8.  Sur le **déboguer** menu, cliquez sur **continuer**.  
   
@@ -147,11 +143,11 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
 2.  Dans la fenêtre Default.aspx.cs ou Default.aspx.vb, cliquez dans la marge de gauche pour définir à nouveau un point d'arrêt à la ligne que vous avez ajoutée :  
   
-    ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
+    ```
   
-    // C#  
+    ```csharp  
     textBox1.Text = "Button was clicked!";  
     ```  
   
@@ -159,7 +155,7 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
      Le Web Form commence à s'exécuter sous Internet Explorer, mais le débogueur n'est pas attaché.  
   
-4.  Attachez-le au processus [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Pour plus d’informations, consultez [débogage d’Applications Web déployées](../debugger/debugging-deployed-web-applications.md).  
+4.  Attachez-le au processus [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Pour plus d’informations, consultez [débogage des Applications Web déployées](../debugger/debugging-deployed-web-applications.md).  
   
 5.  Dans Internet Explorer, cliquez sur le bouton sur votre formulaire.  
   
@@ -168,4 +164,4 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
 6.  Lorsque vous avez terminé le débogage, dans le **déboguer** menu, cliquez sur **arrêter le débogage**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage d’Applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+ [Déboguer des Applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

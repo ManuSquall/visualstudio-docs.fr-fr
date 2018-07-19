@@ -1,5 +1,5 @@
 ---
-title: Manifeste de déploiement ClickOnce | Documents Microsoft
+title: Manifeste de déploiement ClickOnce | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd67f3db61662535a0a8522575e716886602f5b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e36f57857376d62beffe46b2ee4ccc7e4825023d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560321"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077891"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifeste de déploiement ClickOnce
 Un manifeste de déploiement est un fichier XML qui décrit un déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], y compris l'identification de la version actuelle de l'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à déployer.  
@@ -38,7 +38,7 @@ Un manifeste de déploiement est un fichier XML qui décrit un déploiement [!IN
 |[\<compatibleFrameworks > élément](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Obligatoire. Identifie les versions du .NET Framework pour lesquelles cette application peut s'installer et s'exécuter.|`SupportUrl`|  
 |[\<dépendance > élément](../deployment/dependency-element-clickonce-deployment.md)|Obligatoire. Identifie la version de l'application à installer pour le déploiement et l'emplacement du manifeste d'application.|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
 |[\<publisherIdentity > élément](../deployment/publisheridentity-element-clickonce-deployment.md)|Requis pour les manifestes signés. Contient des informations sur l'éditeur qui a signé ce manifeste de déploiement.|`Name`<br /><br /> `issuerKeyHash`|  
-|[\<Signature > élément](../deployment/signature-element-clickonce-deployment.md)|Facultatif. Contient les informations nécessaires pour signer numériquement ce manifeste de déploiement.|Aucun|  
+|[\<Signature > élément](../deployment/signature-element-clickonce-deployment.md)|Facultatif. Contient les informations nécessaires pour signer numériquement ce manifeste de déploiement.|Aucun.|  
 |[\<customErrorReporting > élément](../deployment/customerrorreporting-element-clickonce-deployment.md)|Facultatif. Spécifie un URI à afficher en cas d'erreur.|URI|  
   
 ## <a name="remarks"></a>Notes  
@@ -49,15 +49,15 @@ Un manifeste de déploiement est un fichier XML qui décrit un déploiement [!IN
 ## <a name="file-location"></a>Emplacement du fichier  
  Le fichier manifeste de déploiement fait référence au manifeste d'application correct pour la version actuelle de l'application. Quand vous mettez à disposition une nouvelle version d'un déploiement d'application, vous devez mettre à jour le manifeste de déploiement pour faire référence au nouveau manifeste d'application.  
   
- Le fichier manifeste de déploiement doit avoir un nom fort et peut également contenir des certificats pour la validation de l'éditeur.  
+ Le fichier manifeste de déploiement doit avoir un nom fort et peut également contenir des certificats pour la validation de l’éditeur.  
   
 ## <a name="file-name-syntax"></a>Syntaxe du nom de fichier  
- Le nom d'un fichier manifeste de déploiement doit se terminer par l'extension .application.  
+ Le nom d’un fichier de manifeste de déploiement doit se terminer par le *.application* extension.  
   
 ## <a name="examples"></a>Exemples  
  L'exemple de code suivant illustre un manifeste de déploiement.  
   
-```  
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"  
   manifestVersion="1.0"  
@@ -120,4 +120,4 @@ Un manifeste de déploiement est un fichier XML qui décrit un déploiement [!IN
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)
+ [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)

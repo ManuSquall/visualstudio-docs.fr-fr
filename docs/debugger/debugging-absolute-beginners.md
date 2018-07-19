@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cba770195ced84083e67ae42afbef53631e5ba1
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
-ms.translationtype: HT
+ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890212"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131867"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Le débogage pour les débutants
 
@@ -41,7 +41,7 @@ Cela permet de clarifier le problème que vous avez rencontré avant d’essayer
 
 ## <a name="examine-your-assumptions"></a>Examinez vos hypothèses
 
-Avant d’examiner un bogue ou une erreur, considérez les hypothèses que vous apportées à certains résultats. Hypothèses masqués ou inconnus peuvent interférer avec identification d’un problème même lorsque vous cherchez directement à la cause du problème dans un débogueur. Avoir une longue liste d’hypothèses possible ! Voici des questions à se poser en question vos hypothèses.
+Avant d’examiner un bogue ou une erreur, considérez les hypothèses que vous apportées à certains résultats. Hypothèses masqués ou inconnus peuvent interférer avec identification d’un problème même lorsque vous cherchez directement à la cause du problème dans un débogueur. Avoir une longue liste d’hypothèses possible ! Voici quelques questions à se poser en question vos hypothèses.
 
 * Vous utilisez l’API de droite (autrement dit, l’objet droit, fonction, méthode ou propriété) ? Une API que vous utilisez peut ne pas faire ce que vous pensez qu’il fait. (Une fois que vous examinez l’appel d’API dans le débogueur, sa correction peut nécessiter un aller-retour vers la documentation pour aider à identifier l’API appropriée.)
 
@@ -322,7 +322,7 @@ Lorsque vous trouvez la région de code avec le problème, utilisez le débogueu
 
 * [Inspecter les variables](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) et vérifier s’ils contiennent le type de valeurs qu’ils doivent contenir. Si vous trouvez une valeur incorrecte, Découvrez où la valeur incorrecte a été définie (pour rechercher où la valeur a été définie, vous devrez peut-être soit redémarrer le débogueur, examinez le [pile des appels](../debugger/how-to-use-the-call-stack-window.md), ou les deux).
 
-* Vérifiez si votre application s’exécute le code que vous attendez. (Par exemple, dans l’exemple d’application, nous attendions le code pour l’instruction switch définir le type de galaxy à anormale, mais le l’application ignorée le code en raison de la faute de frappe.)
+* Vérifiez si votre application s’exécute le code que vous attendez. (Par exemple, dans l’exemple d’application, nous attendions le code pour l’instruction switch définir le type de galaxy à irréguliers, mais l’application ignorée le code en raison de la faute de frappe.)
 
 > [!TIP]
 > Vous utilisez un débogueur pour vous aider à trouver des bogues. Un outil de débogage peut trouver des bogues *vous* uniquement s’il en connaît l’objectif de votre code. Un outil ne peut avoir connaissance l’objectif de votre code si vous, le développeur, exprimer cette intention. Écriture [tests unitaires](../test/improve-code-quality.md) est comment procéder.

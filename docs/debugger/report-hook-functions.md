@@ -1,5 +1,5 @@
 ---
-title: Fonctions de raccordement de rapport | Documents Microsoft
+title: Fonctions de raccordement de rapport | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,27 +25,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 562944404d3e02a2e5768fcd74c67302475e6190
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 093b7732f78f7257a2e58812ca2697496d65682f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481176"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056480"
 ---
 # <a name="report-hook-functions"></a>Fonctions de raccordement de rapport
-Une fonction de raccordement de rapport, installée à l’aide de [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), est appelée chaque fois [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) génère un rapport de débogage. Vous pouvez vous en servir, entre autres, pour filtrer les rapports de façon à vous concentrer sur des types d'allocations spécifiques. Une fonction de raccordement de rapport doit avoir un prototype similaire au suivant :  
+Une fonction de raccordement de rapport, installée à l’aide [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), est appelée chaque fois [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) génère un rapport de débogage. Vous pouvez vous en servir, entre autres, pour filtrer les rapports de façon à vous concentrer sur des types d'allocations spécifiques. Une fonction de raccordement de rapport doit avoir un prototype similaire au suivant :  
   
-```  
+```cpp
 int YourReportHook(int nRptType, char *szMsg, int *retVal);  
 ```  
   
- Le pointeur que vous passez à **_CrtSetReportHook** est de type **_CRT_REPORT_HOOK**, comme défini dans CRTDBG. H :  
+ Le pointeur que vous passez à **_CrtSetReportHook** est de type **_CRT_REPORT_HOOK**, tel que défini dans CRTDBG. H :  
   
-```  
+```cpp
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
 ```  
   
- Lorsque la bibliothèque Runtime appelle votre fonction de raccordement, le *nRptType* argument contient la catégorie du rapport (**_CRT_WARN**, **_CRT_ERROR**, ou **_CRT _ASSERT**), *szMsg* contient un pointeur vers une chaîne de message de rapport entièrement assemblé et *retVal* Spécifie si `_CrtDbgReport` doivent poursuivre leur exécution normale Après avoir généré le rapport ou démarrer le débogueur. (A *retVal* l’exécution poursuit la valeur zéro, une valeur de 1 démarre le débogueur.)  
+ Lorsque la bibliothèque Runtime appelle votre fonction de raccordement, le *nRptType* argument contient la catégorie du rapport (**_CRT_WARN**, **_CRT_ERROR**, ou **_CRT _ASSERT**), *szMsg* contient un pointeur vers une chaîne de message de rapport entièrement assemblé et *retVal* Spécifie si `_CrtDbgReport` doivent poursuivre leur exécution normale Après avoir généré le rapport ou démarrez le débogueur. (Un *retVal* valeur zéro continue l’exécution, la valeur 1 démarre le débogueur.)  
   
  Si le raccordement gère intégralement le message concerné et qu’aucun rapport supplémentaire n’est requis, il doit retourner **TRUE**. Si elle retourne **FALSE**, `_CrtDbgReport` communiquera le message normalement.  
   

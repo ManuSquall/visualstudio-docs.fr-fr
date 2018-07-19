@@ -10,26 +10,26 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76f7fcff3f05d38dff230799785e659417c6dcc1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 21ef0f86d701c899328044a03cde8035a1e7292d
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921008"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174205"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Impossible de supprimer la classe sélectionnée car elle est utilisée comme type de retour pour une ou plusieurs méthodes DataContext
 
-Le type de retour d'une ou plusieurs méthodes <xref:System.Data.Linq.DataContext> est la classe d'entité sélectionnée. La suppression d'une classe d'entité utilisée comme type de retour pour une méthode <xref:System.Data.Linq.DataContext> fait échouer la compilation du projet. Pour supprimer la classe d'entité sélectionnée, identifiez les méthodes <xref:System.Data.Linq.DataContext> qui l'utilisent et affectez à leurs types de retour une classe d'entité différente.
+Le type de retour d'une ou plusieurs méthodes <xref:System.Data.Linq.DataContext> est la classe d'entité sélectionnée. Suppression d’une classe d’entité qui est utilisée comme type de retour pour une <xref:System.Data.Linq.DataContext> méthode provoque la compilation du projet échoue. Pour supprimer la classe d'entité sélectionnée, identifiez les méthodes <xref:System.Data.Linq.DataContext> qui l'utilisent et affectez à leurs types de retour une classe d'entité différente.
 
-Pour rétablir les types de retournés de <xref:System.Data.Linq.DataContext> méthodes à leurs types générés automatiquement d’origine, supprimez d’abord le <xref:System.Data.Linq.DataContext> (méthode) à partir du volet de méthodes puis faites glisser l’objet à partir de **l’Explorateur de serveurs** / **L’Explorateur de base de données** vers le Concepteur O/R.
+Pour rétablir les types de retour de <xref:System.Data.Linq.DataContext> méthodes vers leurs types d’origine généré automatiquement, tout d’abord supprimer la <xref:System.Data.Linq.DataContext> méthode à partir de la **méthodes** volet puis faites glisser l’objet à partir de **Explorateur de serveurs** / **Database Explorer** sur le **Concepteur O/R** à nouveau.
 
 ## <a name="to-correct-this-error"></a>Pour corriger cette erreur
 
-1. Identifier les <xref:System.Data.Linq.DataContext> les méthodes qui utilisent la classe d’entité comme type de retour en sélectionnant un <xref:System.Data.Linq.DataContext> méthode dans les méthodes volet et en inspectant la **Type de retour** propriété dans le **propriétés** fenêtre .
+1. Identifier <xref:System.Data.Linq.DataContext> les méthodes qui utilisent la classe d’entité comme type de retour en sélectionnant un <xref:System.Data.Linq.DataContext> méthode dans le **méthodes** volet et en inspectant le **Type de retour** propriété dans le **Propriétés** fenêtre.
 
-2. Définir le **Type de retour** à une classe d’entité différente ou supprimez la <xref:System.Data.Linq.DataContext> méthode à partir du volet de méthodes.
+2. Définir le **Type de retour** à une classe d’entité différente ou une suppression le <xref:System.Data.Linq.DataContext> méthode à partir du volet de méthodes.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL des outils dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

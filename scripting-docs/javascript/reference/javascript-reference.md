@@ -1,13 +1,13 @@
 ---
-title: "Référence JavaScript | Documents Microsoft"
-ms.custom: 
+title: Référence JavaScript | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - vs.htmldesigner.html
@@ -18,18 +18,22 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript, reference
 ms.assetid: 29f83a2c-48c5-49e2-9ae0-7371d2cda2ff
-caps.latest.revision: 
+caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4fd8a514abcc42b7ec34340f963326cd9a66762
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 41d2a3f72b07c947faae2f70f1f5f0b0dffac9ad
+ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36962782"
 ---
 # <a name="javascript-reference"></a>JavaScript, référence
 Les sections suivantes expliquent les éléments qui composent le langage [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+
+> [!NOTE]
+> Nous avons joint leurs efforts à l’échelle de la Communauté se [docs de web MDN](https://developer.mozilla.org/en-US/) ressources de développement unique, premiere du web, en redirigeant toutes les (plus de 500 pages) de référence d’API JavaScript de Microsoft à partir de docs.microsoft.com pour leur MDN équivalents. Pour plus d’informations, consultez ce [annonce](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
   
  Dans Internet Explorer, le code [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] peut interagir avec le code HTML, CSS et le modèle DOM (Document Object Model) qui représente HTML et les objets du navigateur.  
   
@@ -41,15 +45,15 @@ Les sections suivantes expliquent les éléments qui composent le langage [!INCL
   
  Le code [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] peut être utilisé dans les applications de navigateur et les applications [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]. Les applications [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] sont prises en charge dans [!INCLUDE[win8](../../javascript/includes/win8-md.md)] avec [!INCLUDE[vs_dev11_long](../../javascript/includes/vs-dev11-long-md.md)] et dans [!INCLUDE[win81](../../javascript/includes/win81-md.md)] avec [!INCLUDE[vs_dev12](../../javascript/includes/vs-dev12-md.md)].  
   
--   Pour plus d’informations sur JavaScript dans [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] applications, consultez [feuille de route JavaScript](http://msdn.microsoft.com/en-us/4f28182b-1e4b-4bbd-8ae9-dcc504de4341).  
+-   Pour plus d’informations sur JavaScript dans [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] apps, consultez l’article [feuille de route JavaScript](http://msdn.microsoft.com/en-us/4f28182b-1e4b-4bbd-8ae9-dcc504de4341).  
   
--   Pour plus d’informations sur le code HTML et CSS dans [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] applications, consultez [HTML/CSS pour les applications du Windows Store](http://go.microsoft.com/fwlink/p/?LinkId=250939).  
+-   Pour plus d’informations sur HTML et CSS dans [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] apps, consultez l’article [HTML/CSS pour les applications du Windows Store](http://go.microsoft.com/fwlink/p/?LinkId=250939).  
   
--   Pour plus d’informations sur [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] API, consultez [référence API pour le Windows Runtime et la bibliothèque Windows pour JavaScript](http://go.microsoft.com/fwlink/p/?LinkID=250938).  
+-   Pour plus d’informations sur [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] API, consultez [référence des API pour Windows Runtime et bibliothèque Windows pour JavaScript](http://go.microsoft.com/fwlink/p/?LinkID=250938).  
   
- L'éditeur JavaScript dans Visual Studio fournit la prise en charge IntelliSense. Pour plus d’informations, consultez [JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense.md).  
+ L'éditeur JavaScript dans Visual Studio fournit la prise en charge IntelliSense. Pour plus d’informations, consultez [JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense).  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="reference-information"></a>Informations de référence
  [Informations de version](../../javascript/reference/javascript-version-information.md)  
  Fournit la liste des fonctionnalités du langage [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] et des versions d'Internet Explorer dans lesquelles elles ont été ajoutées.  
   
@@ -87,8 +91,6 @@ Les sections suivantes expliquent les éléments qui composent le langage [!INCL
  Fournit la liste des futurs mots réservés. Ces mots ne peuvent pas servir d'identificateurs.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Notions de base JavaScript](../../javascript/javascript-fundamentals.md)  
- Fournit des informations sur l'utilisation de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
-  
+
  [Référence HTML et DHTML](http://go.microsoft.com/fwlink/?LinkId=148095)  
- Fournit des informations de référence sur Dynamic HTML (DHTML) API.
+ Fournit des informations de référence sur DHTML (Dynamic HTML) API.

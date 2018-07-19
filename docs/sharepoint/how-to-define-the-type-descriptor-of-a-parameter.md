@@ -1,5 +1,5 @@
 ---
-title: 'Comment : définir le descripteur de Type d’un paramètre | Documents Microsoft'
+title: 'Comment : définir le descripteur de Type d’un paramètre | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6ebdd8e968d631cf1d53515449c7e705c2978087
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1709ea21fa785a573dae03ad8c89814c9952b50
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118918"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Comment : définir le descripteur de type d'un paramètre
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Comment : définir le descripteur de type d’un paramètre
   Un descripteur de type contient des propriétés qui décrivent le type de données d'un paramètre. Un descripteur de type peut définir un champ, une entité ou une collection d’entités. Pour plus d’informations, consultez [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Pour définir le descripteur de type d'un paramètre  
@@ -41,19 +42,19 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="to-define-a-field"></a>Pour définir un champ  
   
-1.  Dans le **propriétés** , configurez la **nom** propriété du descripteur de type pour le nom d’un champ dans le type qui représente l’entité (par exemple : **FirstName**).  
+1.  Dans le **propriétés** fenêtre, définissez la **nom** propriété du descripteur de type pour le nom d’un champ dans le type qui représente l’entité (par exemple : **FirstName**).  
   
 2.  Dans la liste à côté du **TypeName** propriété, choisissez le type de données approprié (par exemple, **Int32**).  
   
-     Pour plus d’informations sur d’autres paramètres optionnels, consultez [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  
+     Pour plus d’informations sur les autres paramètres facultatifs, consultez [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  
   
 ### <a name="to-define-an-entity"></a>Pour définir une entité  
   
-1.  Dans le **propriétés** , configurez la **nom** propriété un nom qui décrit l’entité (par exemple : **Contact**).  
+1.  Dans le **propriétés** fenêtre, définissez la **nom** propriété à un nom qui décrit l’entité (par exemple : **Contact**).  
   
 2.  Définir le **TypeName** propriété le nom qualifié complet du type qui représente l’entité. Ce type peut être une classe dans votre projet, un type défini dans un assembly que vous référencez dans votre solution ou un type défini dans le modèle d'objet BDC.  
   
-    -   Pour une classe dans votre projet, cliquez sur la flèche bas à côté du **TypeName** propriété, choisissez le **projet actuel** onglet dans la boîte de dialogue qui s’affiche, puis choisissez la classe dans votre projet.  
+    -   Pour une classe dans votre projet, choisissez la flèche bas à côté du **TypeName** propriété, choisissez le **projet actuel** onglet dans la boîte de dialogue qui s’affiche, puis choisissez la classe dans votre projet.  
   
          Le nom qualifié complet inclut l'espace de noms et le nom de la classe, suivis du nom du système LOB. L’exemple suivant définit la valeur de la **TypeName** propriété à une classe dans votre projet.  
   
@@ -83,17 +84,17 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="to-define-a-collection-of-entities"></a>Pour définir une collection d’entités  
   
-1.  Dans le **détails de méthode BDC** fenêtre, choisissez le descripteur de type du paramètre souhaité.  
+1.  Dans le **détails de méthode BDC** fenêtre, choisissez le descripteur de type du paramètre que vous souhaitez.  
   
 2.  Dans la barre de menus, choisissez **vue**, **fenêtre Propriétés**.  
   
-3.  Dans le **propriétés** , configurez la **nom** propriété un nom qui décrit l’entité (par exemple : **Contacts**).  
+3.  Dans le **propriétés** fenêtre, définissez la **nom** propriété à un nom qui décrit l’entité (par exemple : **Contacts**).  
   
 4.  Définir le **IsCollection** propriété **True**. Cela indique que ce descripteur de type est une collection d’entités.  
   
-5.  Définir le **TypeName** propriété dans une chaîne qui contient une référence à la <xref:System.Collections.Generic.IEnumerable%601> interface et le nom qualifié complet du type qui représente l’entité. Ce type peut être une classe dans votre projet, un type défini dans un assembly que vous référencez dans votre solution ou un type défini dans le modèle d'objet BDC.  
+5.  Définir le **TypeName** en une chaîne qui contient une référence à la <xref:System.Collections.Generic.IEnumerable%601> interface et le nom qualifié complet du type qui représente l’entité. Ce type peut être une classe dans votre projet, un type défini dans un assembly que vous référencez dans votre solution ou un type défini dans le modèle d'objet BDC.  
   
-    -   Pour une classe dans votre projet, cliquez sur la flèche bas à côté du **TypeName** propriété, choisissez le **projet actuel** onglet dans la boîte de dialogue qui s’affiche, puis choisissez la classe dans votre projet.  
+    -   Pour une classe dans votre projet, choisissez la flèche bas à côté du **TypeName** propriété, choisissez le **projet actuel** onglet dans la boîte de dialogue qui s’affiche, puis choisissez la classe dans votre projet.  
   
          Le nom qualifié complet inclut l'espace de noms et le nom de la classe, suivis du nom du système LOB.  
   
@@ -121,11 +122,10 @@ ms.lasthandoff: 04/16/2018
   
      Un nouveau descripteur de type est ajouté en tant qu’enfant au descripteur de type de collection. Configurez ce descripteur de type comme une entité.  
   
-## <a name="see-also"></a>Voir aussi  
- [Présentation des outils de conception modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)   
+## <a name="see-also"></a>Voir aussi
+ [Vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Comment : ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Comment : définir une Instance de méthode](../sharepoint/how-to-define-a-method-instance.md)   
- [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
+ [Comment : définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)   
+ [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)  
   

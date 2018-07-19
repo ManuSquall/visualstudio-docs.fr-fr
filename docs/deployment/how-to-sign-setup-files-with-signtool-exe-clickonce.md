@@ -1,5 +1,5 @@
 ---
-title: 'Comment : se connecter fichiers d’installation avec SignTool.exe (ClickOnce) | Documents Microsoft'
+title: 'Comment : signer des fichiers avec SignTool.exe (ClickOnce) d’installation | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc4dc7b2f96b1d36e91e8114458a7a8e9f3231f3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b66d9440ebcf62c59049b45769a2244fc773480e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566119"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081499"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Comment : signer des fichiers d'installation avec SignTool.exe (ClickOnce)
-Vous pouvez utiliser SignTool.exe pour signer un programme d'installation (setup.exe). Ce processus aide à garantir que les fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.  
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Comment : connexion fichiers d’installation avec SignTool.exe (ClickOnce)
+Vous pouvez utiliser *SignTool.exe* pour signer un programme d’installation (*setup.exe*). Ce processus aide à garantir que les fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.  
   
  Par défaut, ClickOnce dispose de manifestes signés, ainsi que d'un programme d'installation signé. Toutefois, si vous souhaitez modifier ultérieurement les paramètres du programme d'installation, vous devrez également signer le programme d'installation. Si vous modifiez les paramètres après avoir signé le programme d'installation, la signature sera endommagée.  
   
@@ -54,7 +54,7 @@ Vous pouvez utiliser SignTool.exe pour signer un programme d'installation (setup
   
 8.  Dans le **publier** , cliquez sur **conditions préalables**.  
   
-9. Dans le **conditions préalables** boîte de dialogue, désactivez **créer un programme d’installation pour installer les composants requis**.  
+9. Dans le **prérequis** boîte de dialogue, décochez **créer un programme d’installation pour installer les composants prérequis**.  
   
 10. Dans le **publier** page, vérifiez les paramètres de publication, puis sur **publier maintenant**.  
   
@@ -62,21 +62,21 @@ Vous pouvez utiliser SignTool.exe pour signer un programme d'installation (setup
   
 11. Sur le site du client, ouvrez une invite de commandes.  
   
-12. Accédez au répertoire qui contient le fichier .exe.  
+12. Accédez au répertoire qui contient le *.exe* fichier.  
   
-13. Signez le fichier .exe à l'aide de la commande suivante :  
+13. Signe le *.exe* fichier avec la commande suivante :  
   
-    ```  
+    ```cmd  
     signtool sign /sha1 CertificateHash Setup.exe  
     signtool sign /f CertFileName Setup.exe  
     ```  
   
      Par exemple, pour signer le programme d'installation, utilisez l'une des commandes suivantes :  
   
-    ```  
+    ```cmd  
     signtool sign /sha1 CCB... Setup.exe  
     signtool sign /f CertFileName Setup.exe  
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour resigner des manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [Comment : signer à nouveau les manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

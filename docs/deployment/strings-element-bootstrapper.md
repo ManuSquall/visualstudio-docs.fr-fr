@@ -1,5 +1,5 @@
 ---
-title: '&lt;Chaînes&gt; élément (programme d’amorçage) | Documents Microsoft'
+title: '&lt;Chaînes&gt; élément (programme d’amorçage) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fccc928efe8d30ef5a2ee99b476a5b0e35b2090e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815442"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077670"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Chaînes&gt; élément (programme d’amorçage)
 Définit des chaînes localisées pour les noms de produits, les noms de package et les messages d’erreur d’installation.  
@@ -42,10 +42,10 @@ Définit des chaînes localisées pour les noms de produits, les noms de package
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le `Strings` élément est un enfant de le `Package` élément. Il possède pas d’attributs.  
+ Le `Strings` élément est un enfant de le `Package` élément. Il a pas d’attributs.  
   
 ## <a name="string"></a>Chaîne  
- Le `String` élément est un enfant de le `Strings` élément. A `Strings` élément peut avoir un ou plusieurs `String` éléments.  
+ Le `String` élément est un enfant de le `Strings` élément. Un `Strings` élément peut avoir un ou plusieurs `String` éléments.  
   
  `String` a l’attribut suivant.  
   

@@ -1,6 +1,6 @@
 ---
-title: Ressources supplémentaires pour le dépannage des erreurs d’accès aux données
-ms.date: 11/04/2016
+title: Accéder à des forums
+ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
@@ -222,36 +222,36 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 author: gewarren
 ms.author: gewarren
 manager: douge
-robots: noindex,nofollow
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee3b5654bfb147c8ec04c28438784e576205de3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089074"
 ---
-# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Ressources supplémentaires pour le dépannage des erreurs d’accès aux données
+# <a name="troubleshoot-data-access-errors-on-the-forums"></a>Résoudre les erreurs d’accès aux données sur les forums
 
-Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Le tableau suivant répertorie les forums liées aux données disponibles sur MSDN.
+Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Voici certains forums liées aux données disponibles sur MSDN :
 
- [Liaison de données et les contrôles de données Windows Forms](http://go.microsoft.com/fwlink/?LinkId=160179) propose un forum de questions et de discussions générales de l’accès aux données dans les Windows Forms.
+- [Contrôles de données Windows Forms et la liaison de données](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
- [DataSet Forum ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160180) propose un forum de questions et de discussions générales des jeux de données.
+- [Forum du jeu de données ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
- [ADO.NET Entity Framework et LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520) propose un forum de questions et de discussions générales des applications Entity Framework et le langage LINQ to Entities.
+- [ADO.NET Entity Framework et LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
- [Forum des Services de données WCF](http://go.microsoft.com/fwlink/?LinkId=160181) propose un forum de questions et de discussions générales des services de données.
+- [Forum WCF data services](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
- [Forum d’accès aux données SQL Server](http://go.microsoft.com/fwlink/?LinkID=160184) propose un forum de questions et de discussions générales de l’accès aux données dans Microsoft SQL Server.
+- [Forum d’accès aux données SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
- [Forum LINQ to SQL](http://go.microsoft.com/fwlink/?LinkId=160183) propose un forum de questions et de discussions générales de Linq to SQL.
+- [Forum LINQ to SQL](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
- [Forum des fournisseurs de données ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160182) propose un forum de questions et de discussions générales des fournisseurs de données .NET Framework différents.
+- [Forum de fournisseurs de données ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
- Pour plus d’informations sur la façon de résoudre les problèmes de connectivité à SQL Server, consultez [comment résoudre les problèmes de connexion pour le moteur de base de données SQL Server](http://go.microsoft.com/fwlink/?LinkID=246151).
+Pour plus d’informations sur la façon de résoudre les problèmes de connectivité à SQL Server, consultez [résoudre les problèmes de connexion au moteur de base de données SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>Voir aussi
 

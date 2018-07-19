@@ -1,5 +1,5 @@
 ---
-title: '&lt;Description&gt; élément (déploiement ClickOnce) | Documents Microsoft'
+title: '&lt;Description&gt; , élément (déploiement ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a8f1a1e5ec5f4663ed999566158d104c6a7364
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b8985bc83299f55cec3c5f41fd3d76c8801fdf34
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31564244"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079808"
 ---
-# <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Description&gt; élément (déploiement ClickOnce)
+# <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Description&gt; , élément (déploiement ClickOnce)
 Identifie les informations de l’application utilisées pour créer la présence d’un shell et un **Ajout / Suppression de programmes** élément dans le panneau de configuration.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
   
       <description   
    publisher   
@@ -41,22 +41,22 @@ Identifie les informations de l’application utilisées pour créer la présenc
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- L’élément `description` est obligatoire et se trouve dans l’espace de noms `urn:schemas-microsoft-com:asm.v1`. Il ne contienne aucun élément enfant et possède les attributs suivants.  
+ L’élément `description` est obligatoire et se trouve dans l’espace de noms `urn:schemas-microsoft-com:asm.v1`. Il ne contient aucun élément enfant et a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`publisher`|Obligatoire. Identifie le nom de société utilisé pour la sélection élective de l’icône dans les fenêtres **Démarrer** menu et **Ajout / Suppression de programmes** élément dans le panneau de configuration, lorsque le déploiement est configuré pour l’installation.|  
-|`product`|Obligatoire. Identifie le nom complet du produit. Utilisé comme titre de l’icône installée dans les fenêtres **Démarrer** menu.|  
-|`suiteName`|Facultatif. Identifie un sous-dossier dans le `publisher` dossier dans les fenêtres **Démarrer** menu.|  
-|`supportUrl`|Facultatif. Spécifie une URL de prise en charge qui est indiquée dans le **Ajout / Suppression de programmes** élément dans le panneau de configuration. Un raccourci vers cette URL est également créé pour la prise en charge de l’application dans les fenêtres **Démarrer** menu, lorsque le déploiement est configuré pour l’installation.|  
+|`publisher`|Obligatoire. Identifie le nom de société utilisé pour la sélection élective d’icône dans le Windows **Démarrer** menu et le **Ajout / Suppression de programmes** élément dans le panneau de configuration, lorsque le déploiement est configuré pour l’installation.|  
+|`product`|Obligatoire. Identifie le nom de produit complet. Utilisé en tant que le titre de l’icône installée dans le Windows **Démarrer** menu.|  
+|`suiteName`|Facultatif. Identifie un sous-dossier dans le `publisher` dossier dans le Windows **Démarrer** menu.|  
+|`supportUrl`|Facultatif. Spécifie une URL de prise en charge qui est indiquée dans le **Ajout / Suppression de programmes** élément dans le panneau de configuration. Un raccourci vers cette URL est également créé pour la prise en charge de l’application dans le Windows **Démarrer** menu, lorsque le déploiement est configuré pour l’installation.|  
   
 ## <a name="remarks"></a>Notes  
  L’élément description est requis dans toutes les configurations de déploiement.  
   
 ## <a name="example"></a>Exemple  
- L’exemple de code suivant illustre un `description` élément dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Cet exemple de code fait partie d’un exemple plus complet fourni pour le [le manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) rubrique.  
+ L’exemple de code suivant illustre un `description` élément dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Cet exemple de code fait partie d’un exemple plus complet fourni pour le [du manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) rubrique.  
   
-```  
+```xml  
 <description   
   asmv2:publisher="My Company Name"  
   asmv2:product="My Application"  

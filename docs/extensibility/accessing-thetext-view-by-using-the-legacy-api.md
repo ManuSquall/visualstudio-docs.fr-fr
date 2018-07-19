@@ -1,5 +1,5 @@
 ---
-title: L’accès à theText vue à l’aide de l’API héritée | Documents Microsoft
+title: L’accès à theText vue à l’aide de l’API héritée | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,33 +13,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 534016bda397ca998740c9fcc8252f4efbc8ccc2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3fe57ab7ef5ac113f1248f89cd62ef5b9ec33ca3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097781"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081821"
 ---
-# <a name="accessing-thetext-view-by-using-the-legacy-api"></a>L’accès à theText vue à l’aide de l’API héritée
+# <a name="access-the-text-view-by-using-the-legacy-api"></a>Accéder à l’affichage de texte à l’aide de l’API héritée
 Une vue de texte est une présentation du texte qui est stocké dans une mémoire tampon de texte. Vous pouvez accéder à l’affichage de texte à l’aide de l’API héritée comme indiqué dans la section suivante.
 
 ## <a name="text-view-object"></a>Objet de vue de texte
- Chaque vue est associé à sa propre mémoire tampon de texte, et la vue est une fenêtre sur les données dans la mémoire tampon. Le diagramme suivant montre les interfaces de clé de l’objet de vue de texte, qui est représenté par <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
+ Chaque vue est associé à sa propre mémoire tampon de texte, et la vue est une fenêtre sur les données dans la mémoire tampon. Le diagramme suivant illustre les interfaces de clé de l’objet de vue de texte, qui est représentée par <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
 
- ![Objet de vue de Visual Studio texte](../extensibility/media/vstextview.gif "vstextview") objet de vue de texte
+ ![Objet vue de texte Visual Studio](../extensibility/media/vstextview.gif "vstextview") objet de vue de texte
 
  La vue est une façon de présenter le texte dans la mémoire tampon. Il inclut des fonctionnalités telles que le retour automatique à et le mode plan, afin que ce que vous voyez dans la vue n’est pas une représentation exacte du texte dans la mémoire tampon.
 
- Une vue permet d’autres services ou un processus pour intercepter les commandes entrantes et agir sur ces derniers avant de la vue agit sur les. Le service courants pour ce faire est un service de langage. Un service de langage, par exemple, devra peut-être intercepter la commande pour la touche entrée fournir des conseils de comportement ou l’outil de mise en retrait personnalisées.
+ Un affichage permet à d’autres services ou processus d’intercepter les commandes entrantes et d’agir sur ces derniers avant de la vue agit en conséquence. Le service plus courants pour ce faire est un service de langage. Un service de langage peut devoir, par exemple, intercepter la commande pour la touche entrée pour fournir des conseils personnalisés de comportement ou l’outil de mise en retrait.
 
-## <a name="adding-functionality-to-the-text-view"></a>Ajout de fonctionnalités à l’affichage de texte
- Vous pouvez personnaliser le comportement d’affichage de texte en gérant les séquences de touches spécifiques. Pour intercepter les séquences de touches, vous implémentez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> sur votre objet et fournissent une cible de commande (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) pour surveiller et intercepter des commandes.
+## <a name="add-functionality-to-the-text-view"></a>Ajouter des fonctionnalités à l’affichage de texte
+ Vous pouvez personnaliser le comportement d’affichage de texte en gérant les séquences de touches spécifiques. Pour intercepter les séquences de touches, vous implémentez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> sur votre objet et fournir une cible de commande (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) pour surveiller et intercepter des commandes.
 
- L’affichage de texte utilise une architecture séquentiel pour les filtres de la commande. Nouveaux filtres de commande (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> objets) sont ajoutés à la séquence en appelant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> (méthode).
+ L’affichage de texte utilise une architecture séquentiel pour les filtres de commande. Nouveaux filtres de commande (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> objets) sont ajoutés à la séquence en appelant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> (méthode).
 
  Notification d’événement pour l’affichage de texte est fournie à l’aide de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents> interface. Implémentez cette interface sur votre objet client pour recevoir une notification des modifications apportées à l’affichage de texte. Exposer cette interface pour l’affichage de texte à l’aide de la <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interface sur l’affichage de texte pour recevoir une notification de modifications à partir de la vue.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Modification des paramètres de la vue à l’aide de l’API héritée](../extensibility/changing-view-settings-by-using-the-legacy-api.md)
-- [À l’aide du Gestionnaire de texte pour surveiller des paramètres globaux](../extensibility/using-the-text-manager-to-monitor-global-settings.md)
+- [Modifier les paramètres de vue à l’aide de l’API héritée](../extensibility/changing-view-settings-by-using-the-legacy-api.md)
+- [Utilisez le Gestionnaire de texte pour surveiller les paramètres globaux](../extensibility/using-the-text-manager-to-monitor-global-settings.md)
